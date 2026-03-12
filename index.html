@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GASI — Global Attack Surface Index</title>
+  <meta name="description" content="Daily threat intelligence dashboard. Aggregates CISA KEV, NIST NVD, AbuseIPDB, URLhaus and AlienVault OTX into a single pane of glass." />
+
+  <!--
+    DESIGN SYSTEM: THE INTELLIGENCE BRIEF
+    ──────────────────────────────────────
+    Aesthetic: Cold War–era classified document. Warm newsprint paper,
+    near-black ink, classified-red as the sole accent.
+    Fonts:  Bebas Neue   — stencil display, section stamps
+            Oswald 700   — newspaper section headers
+            Share Tech Mono — terminal data, IP addresses, CVE IDs
+            Cormorant Garamond — editorial body copy
+    Motion: Staggered reveal (papers landing on a desk), count-up numbers,
+            horizontal ticker tape for the CVE feed.
+    Banned: dark mode by default, gradients, rounded corners, soft shadows.
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Share+Tech+Mono&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ═══════════════════════════════════════════════════
+       DESIGN TOKENS
+       ═══════════════════════════════════════════════════ */
+    :root {
+      --paper:        #F2EDE3;
+      --paper-mid:    #E8E2D4;
+      --paper-dark:   #D8D1C3;
+      --ink:          #0D0C0A;
+      --ink-mid:      #3A3530;
+      --ink-ghost:    #7A756E;
+      --red:          #BE0000;
+      --red-dark:     #7A0000;
+      --amber:        #B86800;
+      --green:        #264A18;
+
+      --border:       2px solid var(--ink);
+      --border-thin:  1px solid var(--ink);
+      --border-ghost: 1px solid var(--paper-dark);
+
+      --shadow-hard:  3px 3px 0 var(--ink);
+      --shadow-red:   3px 3px 0 var(--red);
+
+      --font-display: 'Bebas Neue', 'Impact', sans-serif;
+      --font-header:  'Oswald', 'Arial Narrow', sans-serif;
+      --font-mono:    'Share Tech Mono', 'Courier New', monospace;
+      --font-body:    'Cormorant Garamond', 'Georgia', serif;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       RESET
+       ═══════════════════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { font-size: 16px; scroll-behavior: smooth; }
+
+    body {
+      background-color: var(--paper);
+      color: var(--ink);
+      font-family: var(--font-body);
+      min-height: 100vh;
+      /* SVG paper-grain overlay — no external image load */
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23g)' opacity='0.035'/%3E%3C/svg%3E");
+    }
+
+    a { color: inherit; }
+
+    /* ═══════════════════════════════════════════════════
+       LOADING SCREEN
+       ═══════════════════════════════════════════════════ */
+    #loadingScreen {
+      position: fixed;
+      inset: 0;
+      background: var(--paper);
+      z-index: 200;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      transition: opacity 0.6s ease;
+    }
+    #loadingScreen.fade-out {
+      opacity: 0;
+      pointer-events: none;
+    }
+    .load-title {
+      font-family: var(--font-display);
+      font-size: clamp(4rem, 10vw, 7rem);
+      letter-spacing: 0.12em;
+      color: var(--ink);
+      line-height: 1;
+    }
+    .load-bar {
+      width: 280px;
+      height: 2px;
+      background: var(--paper-dark);
+      position: relative;
+      overflow: hidden;
+    }
+    .load-bar-fill {
+      position: absolute;
+      top: 0; left: 0;
+      height: 100%;
+      background: var(--red);
+      width: 0;
+      animation: loadProgress 1.1s cubic-bezier(.4,0,.2,1) forwards;
+    }
+    @keyframes loadProgress { to { width: 100%; } }
+    .load-status {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--ink-ghost);
+      animation: blink 1s step-end infinite;
+    }
+    @keyframes blink { 50% { opacity: 0; } }
+
+    /* ═══════════════════════════════════════════════════
+       CLASSIFICATION BANNER
+       ═══════════════════════════════════════════════════ */
+    .class-banner {
+      background: var(--red);
+      color: #fff;
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.25em;
+      text-align: center;
+      padding: 5px 1rem;
+      text-transform: uppercase;
+      user-select: none;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       DOCUMENT HEADER
+       ═══════════════════════════════════════════════════ */
+    .doc-header {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: start;
+      gap: 1.5rem;
+      padding: 1.75rem 2.5rem 1.5rem;
+      border-bottom: var(--border);
+    }
+    .doc-meta {
+      font-family: var(--font-mono);
+      font-size: 0.6rem;
+      letter-spacing: 0.12em;
+      color: var(--ink-mid);
+      text-transform: uppercase;
+      line-height: 1.9;
+    }
+    .doc-meta-right { text-align: right; }
+    .doc-title-block { text-align: center; }
+    .doc-title-block h1 {
+      font-family: var(--font-display);
+      font-size: clamp(3.5rem, 7vw, 5.5rem);
+      letter-spacing: 0.1em;
+      line-height: 0.88;
+      color: var(--ink);
+    }
+    .doc-subtitle {
+      font-family: var(--font-mono);
+      font-size: 0.58rem;
+      letter-spacing: 0.35em;
+      color: var(--ink-ghost);
+      text-transform: uppercase;
+      margin-top: 0.45rem;
+    }
+    .threat-badge {
+      display: inline-block;
+      font-family: var(--font-header);
+      font-weight: 700;
+      font-size: 0.75rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 2px 10px;
+      margin-top: 0.4rem;
+      background: var(--ink-ghost);
+      color: #fff;
+    }
+    .threat-badge.moderate { background: var(--green); }
+    .threat-badge.elevated { background: var(--amber); }
+    .threat-badge.high     { background: var(--red-dark); }
+    .threat-badge.critical { background: var(--red); }
+
+    /* ═══════════════════════════════════════════════════
+       NVD STRIP — inverted black bar
+       ═══════════════════════════════════════════════════ */
+    .nvd-strip {
+      background: var(--ink);
+      color: var(--paper);
+      display: flex;
+      align-items: center;
+      gap: 0;
+      border-bottom: var(--border);
+      overflow: hidden;
+    }
+    .nvd-strip-label {
+      font-family: var(--font-mono);
+      font-size: 0.55rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--paper-dark);
+      white-space: nowrap;
+      padding: 0 1.5rem;
+      border-right: 1px solid rgba(255,255,255,0.12);
+    }
+    .nvd-stat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0.65rem 1.5rem;
+      border-right: 1px solid rgba(255,255,255,0.12);
+      gap: 0;
+    }
+    .nvd-num {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      line-height: 1;
+    }
+    .nvd-num.crit  { color: #FF4040; }
+    .nvd-num.high  { color: #FF8A00; }
+    .nvd-num.total { color: var(--paper); }
+    .nvd-stat-lbl {
+      font-family: var(--font-mono);
+      font-size: 0.48rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(242,237,227,0.5);
+      margin-top: 1px;
+    }
+    .nvd-ticker-wrap {
+      flex: 1;
+      overflow: hidden;
+      position: relative;
+      padding: 0;
+    }
+    .nvd-ticker-wrap::before,
+    .nvd-ticker-wrap::after {
+      content: '';
+      position: absolute;
+      top: 0; bottom: 0;
+      width: 40px;
+      z-index: 2;
+      pointer-events: none;
+    }
+    .nvd-ticker-wrap::before { left: 0; background: linear-gradient(to right, var(--ink), transparent); }
+    .nvd-ticker-wrap::after  { right: 0; background: linear-gradient(to left,  var(--ink), transparent); }
+    .nvd-ticker {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      white-space: nowrap;
+      padding: 0.65rem 0;
+      animation: ticker 55s linear infinite;
+    }
+    @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    .nvd-tick-item {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      color: rgba(242,237,227,0.65);
+      padding: 0 2rem;
+      border-right: 1px solid rgba(255,255,255,0.08);
+    }
+    .nvd-tick-item .sc  { color: #FF4040; }
+    .nvd-tick-item .sh  { color: #FF8A00; }
+    .nvd-tick-item .sm  { color: #FFCC44; }
+    .nvd-tick-sep {
+      font-family: var(--font-mono);
+      font-size: 0.5rem;
+      color: rgba(255,255,255,0.2);
+      padding: 0 1rem;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       SECTION ANIMATION
+       ═══════════════════════════════════════════════════ */
+    .section {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.45s ease, transform 0.45s ease;
+    }
+    .section.show { opacity: 1; transform: translateY(0); }
+
+    /* Section header shared style */
+    .sec-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      border-bottom: var(--border-thin);
+      padding-bottom: 0.65rem;
+      margin-bottom: 1.1rem;
+    }
+    .sec-title {
+      font-family: var(--font-header);
+      font-weight: 700;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+    .sec-id {
+      font-family: var(--font-mono);
+      font-size: 0.55rem;
+      color: var(--ink-ghost);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       MAIN GRID
+       ═══════════════════════════════════════════════════ */
+    .grid-main {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      grid-template-rows: auto auto;
+      border-bottom: var(--border);
+    }
+
+    /* ═══════════════════════════════════════════════════
+       WIDGET 1 — THREAT THERMOMETER
+       (left column, spans both rows)
+       ═══════════════════════════════════════════════════ */
+    .w-thermo {
+      grid-column: 1;
+      grid-row: 1 / 3;
+      border-right: var(--border);
+      display: flex;
+      flex-direction: column;
+    }
+    .thermo-head {
+      padding: 1.25rem 1.4rem 0.65rem;
+      border-bottom: var(--border-thin);
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+    .thermo-score-block {
+      padding: 1.5rem 1.4rem 0.5rem;
+      text-align: center;
+      border-bottom: var(--border-thin);
+    }
+    .thermo-number {
+      font-family: var(--font-display);
+      font-size: 9rem;
+      line-height: 0.88;
+      letter-spacing: -2px;
+      color: var(--ink);
+      display: block;
+      transition: color 0.6s ease;
+    }
+    .thermo-number.high     { color: var(--red-dark); }
+    .thermo-number.critical { color: var(--red); }
+    .thermo-number.elevated { color: var(--amber); }
+    .thermo-number.moderate { color: var(--green); }
+    .thermo-denom {
+      font-family: var(--font-mono);
+      font-size: 0.55rem;
+      letter-spacing: 0.25em;
+      color: var(--ink-ghost);
+      margin-top: 0.35rem;
+      text-transform: uppercase;
+    }
+    .thermo-stamp {
+      font-family: var(--font-mono);
+      font-size: 0.58rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      border: 1px solid;
+      padding: 2px 8px;
+      display: inline-block;
+      margin-top: 0.5rem;
+      transform: rotate(-2deg);
+    }
+    .thermo-stamp.moderate { color: var(--green); border-color: var(--green); }
+    .thermo-stamp.elevated { color: var(--amber); border-color: var(--amber); }
+    .thermo-stamp.high     { color: var(--red-dark); border-color: var(--red-dark); }
+    .thermo-stamp.critical { color: var(--red); border-color: var(--red); }
+
+    /* progress rail */
+    .thermo-rail {
+      height: 10px;
+      background: var(--paper-mid);
+      border-top: var(--border-thin);
+      border-bottom: var(--border-thin);
+      position: relative;
+      overflow: hidden;
+    }
+    .thermo-fill {
+      height: 100%;
+      width: 0;
+      background: var(--ink);
+      transition: width 1.6s cubic-bezier(.22,1,.36,1);
+    }
+    .thermo-fill.moderate { background: var(--green); }
+    .thermo-fill.elevated { background: var(--amber); }
+    .thermo-fill.high     { background: var(--red-dark); }
+    .thermo-fill.critical { background: var(--red); }
+    .thermo-rail-labels {
+      display: flex;
+      justify-content: space-between;
+      padding: 3px 1.4rem;
+      font-family: var(--font-mono);
+      font-size: 0.48rem;
+      color: var(--ink-ghost);
+      letter-spacing: 0.1em;
+    }
+
+    /* factors */
+    .thermo-factors { padding: 1.1rem 1.4rem; flex: 1; }
+    .factor { margin-bottom: 1.1rem; }
+    .factor-lbl {
+      font-family: var(--font-mono);
+      font-size: 0.58rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-mid);
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 4px;
+    }
+    .factor-rail {
+      height: 4px;
+      background: var(--paper-dark);
+    }
+    .factor-fill {
+      height: 100%;
+      background: var(--ink);
+      width: 0;
+      transition: width 1.6s cubic-bezier(.22,1,.36,1) 0.25s;
+    }
+
+    /* footer */
+    .thermo-foot {
+      padding: 0.65rem 1.4rem;
+      border-top: var(--border-thin);
+      font-family: var(--font-mono);
+      font-size: 0.52rem;
+      color: var(--ink-ghost);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .pulse-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--red);
+      flex-shrink: 0;
+      animation: pulseDot 1.6s ease-in-out infinite;
+    }
+    @keyframes pulseDot { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.35; transform: scale(0.75); } }
+
+    /* ═══════════════════════════════════════════════════
+       WIDGET 2 — PATCH PRIORITY / KEV
+       ═══════════════════════════════════════════════════ */
+    .w-kev {
+      grid-column: 2;
+      grid-row: 1;
+      border-bottom: var(--border);
+      padding: 1.25rem 1.6rem 1.4rem;
+    }
+    .kev-stats {
+      display: flex;
+      gap: 0;
+      border: var(--border-thin);
+      margin-bottom: 1rem;
+    }
+    .kev-stat-cell {
+      padding: 0.5rem 1.1rem;
+      border-right: var(--border-thin);
+      flex: 1;
+    }
+    .kev-stat-cell:last-child { border-right: none; }
+    .kev-stat-num {
+      font-family: var(--font-display);
+      font-size: 2.1rem;
+      line-height: 1;
+      color: var(--red);
+      display: block;
+    }
+    .kev-stat-lbl {
+      font-family: var(--font-mono);
+      font-size: 0.5rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--ink-ghost);
+    }
+
+    /* scrollable list */
+    .kev-list {
+      max-height: 340px;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: var(--ink) var(--paper-mid);
+    }
+    .kev-list::-webkit-scrollbar      { width: 4px; }
+    .kev-list::-webkit-scrollbar-track { background: var(--paper-mid); }
+    .kev-list::-webkit-scrollbar-thumb { background: var(--ink); }
+
+    .kev-item {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 0 0.9rem;
+      align-items: start;
+      padding: 0.7rem 0;
+      border-bottom: var(--border-ghost);
+      transition: background 0.12s;
+    }
+    .kev-item:last-child { border-bottom: none; }
+    .kev-item:hover { background: rgba(190,0,0,0.04); }
+    .kev-badge-col { padding-top: 2px; }
+    .kev-badge {
+      font-family: var(--font-mono);
+      font-size: 0.52rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      border: 1px solid var(--red);
+      color: var(--red);
+      padding: 1px 5px;
+      white-space: nowrap;
+    }
+    .kev-badge.ransomware { background: var(--red); color: #fff; border-color: var(--red); }
+    .kev-cve {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: bold;
+      color: var(--red);
+      display: block;
+      margin-bottom: 1px;
+    }
+    .kev-name {
+      font-family: var(--font-header);
+      font-weight: 600;
+      font-size: 0.78rem;
+      display: block;
+      margin-bottom: 2px;
+    }
+    .kev-vendor {
+      font-family: var(--font-body);
+      font-size: 0.7rem;
+      color: var(--ink-ghost);
+    }
+    .kev-date-col {
+      text-align: right;
+      font-family: var(--font-mono);
+      font-size: 0.55rem;
+      color: var(--ink-ghost);
+      white-space: nowrap;
+      line-height: 1.7;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       WIDGET 3 — TOP 10 AGGRESSIVE IPs
+       ═══════════════════════════════════════════════════ */
+    .w-ips {
+      grid-column: 2;
+      grid-row: 2;
+      padding: 1.25rem 1.6rem 1.4rem;
+    }
+    .ip-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .ip-table thead tr {
+      background: var(--paper-mid);
+      border-bottom: var(--border);
+    }
+    .ip-table th {
+      font-family: var(--font-mono);
+      font-size: 0.5rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--ink-mid);
+      padding: 0.45rem 0.7rem;
+      text-align: left;
+      white-space: nowrap;
+    }
+    .ip-table td {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      padding: 0.55rem 0.7rem;
+      border-bottom: var(--border-ghost);
+      vertical-align: middle;
+    }
+    .ip-table tbody tr { transition: background 0.12s; }
+    .ip-table tbody tr:hover { background: rgba(190,0,0,0.04); }
+    .ip-table tbody tr:hover td:first-child { border-left: 3px solid var(--red); }
+    .ip-addr { color: var(--red-dark); font-weight: bold; }
+    .conf-bar-wrap { display: flex; align-items: center; gap: 5px; }
+    .conf-bar {
+      width: 60px; height: 3px;
+      background: var(--paper-dark);
+      flex-shrink: 0;
+    }
+    .conf-fill {
+      height: 100%;
+      background: var(--red);
+      transition: width 1s ease 0.6s;
+    }
+    .isp-cell {
+      max-width: 180px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: var(--ink-mid);
+      font-size: 0.6rem;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       WIDGET 4 — TRENDING MALWARE FAMILIES
+       (full width, below the 2-column grid)
+       ═══════════════════════════════════════════════════ */
+    .w-malware {
+      border-top: var(--border);
+      padding: 1.25rem 2.5rem 1.6rem;
+    }
+    .malware-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      padding-top: 0.25rem;
+    }
+    .m-tag {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border: 1px solid var(--ink);
+      padding: 4px 10px;
+      background: var(--paper);
+      cursor: default;
+      transition: background 0.12s, transform 0.12s, box-shadow 0.12s;
+    }
+    .m-tag:hover {
+      background: var(--ink);
+      color: var(--paper);
+      transform: translate(-2px, -2px);
+      box-shadow: var(--shadow-hard);
+    }
+    .m-tag.hot { border-color: var(--red); color: var(--red); }
+    .m-tag.hot:hover { background: var(--red); color: #fff; box-shadow: var(--shadow-red); }
+    .m-tag-count { font-size: 0.48rem; opacity: 0.55; margin-left: 4px; }
+
+    /* ═══════════════════════════════════════════════════
+       FOOTER
+       ═══════════════════════════════════════════════════ */
+    .doc-footer {
+      border-top: var(--border);
+      padding: 0.85rem 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .footer-txt {
+      font-family: var(--font-mono);
+      font-size: 0.52rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--ink-ghost);
+    }
+    .footer-txt a { text-decoration: none; }
+    .footer-txt a:hover { color: var(--ink); }
+
+    /* ═══════════════════════════════════════════════════
+       NO-DATA PLACEHOLDER
+       ═══════════════════════════════════════════════════ */
+    .no-data {
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      color: var(--ink-ghost);
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    /* ═══════════════════════════════════════════════════
+       RESPONSIVE
+       ═══════════════════════════════════════════════════ */
+    @media (max-width: 860px) {
+      .grid-main {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+      }
+      .w-thermo  { grid-column: 1; grid-row: 1; border-right: none; border-bottom: var(--border); }
+      .w-kev     { grid-column: 1; grid-row: 2; }
+      .w-ips     { grid-column: 1; grid-row: 3; }
+      .doc-header { grid-template-columns: 1fr; text-align: center; }
+      .doc-meta-right { text-align: center; }
+      .doc-meta   { text-align: center; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════════════════
+       LOADING SCREEN
+       ══════════════════════════════════════════════════ -->
+  <div id="loadingScreen">
+    <div class="load-title">GASI</div>
+    <div class="load-bar"><div class="load-bar-fill"></div></div>
+    <div class="load-status">Decrypting threat matrix&hellip;</div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       CLASSIFICATION BANNER
+       ══════════════════════════════════════════════════ -->
+  <div class="class-banner">
+    ░ GASI — OPEN SOURCE THREAT INTELLIGENCE ░ FOR AUTHORIZED SECURITY PERSONNEL ░ UNCLASSIFIED // OPEN SOURCE ░
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       DOCUMENT HEADER
+       ══════════════════════════════════════════════════ -->
+  <header class="doc-header">
+    <div class="doc-meta">
+      <div>DOC&nbsp;&nbsp;GASI-DAILY-001</div>
+      <div>CLASS&nbsp;OPEN SOURCE</div>
+      <div>DIST&nbsp;&nbsp;UNRESTRICTED</div>
+    </div>
+
+    <div class="doc-title-block">
+      <h1>GASI</h1>
+      <div class="doc-subtitle">Global Attack Surface Index — Daily Threat Assessment</div>
+    </div>
+
+    <div class="doc-meta doc-meta-right">
+      <div>DATE&nbsp;&nbsp;<span id="hdrDate">—</span></div>
+      <div>TIME&nbsp;&nbsp;<span id="hdrTime">—</span> UTC</div>
+      <div>SRC&nbsp;&nbsp;&nbsp;CISA · NVD · ABUSEIPDB · OTX</div>
+      <div><span class="threat-badge" id="hdrBadge">ASSESSING…</span></div>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════
+       NVD STRIP — inverted, full width
+       ══════════════════════════════════════════════════ -->
+  <div class="nvd-strip">
+    <div class="nvd-strip-label">24H CVE<br>PIPELINE</div>
+
+    <div class="nvd-stat">
+      <span class="nvd-num crit"  id="nvdCrit">—</span>
+      <span class="nvd-stat-lbl">CRITICAL</span>
+    </div>
+    <div class="nvd-stat">
+      <span class="nvd-num high"  id="nvdHigh">—</span>
+      <span class="nvd-stat-lbl">HIGH</span>
+    </div>
+    <div class="nvd-stat">
+      <span class="nvd-num total" id="nvdTotal">—</span>
+      <span class="nvd-stat-lbl">TOTAL NEW</span>
+    </div>
+
+    <div class="nvd-ticker-wrap">
+      <div class="nvd-ticker" id="nvdTicker">
+        <span class="nvd-tick-item">LOADING CVE FEED…</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       MAIN GRID
+       ══════════════════════════════════════════════════ -->
+  <div class="grid-main">
+
+    <!-- ── WIDGET 1: THREAT THERMOMETER ────────────────── -->
+    <section class="w-thermo section" id="secThermo">
+      <div class="thermo-head sec-head">
+        <span class="sec-title">Threat Thermometer</span>
+        <span class="sec-id">01</span>
+      </div>
+
+      <div class="thermo-score-block">
+        <span class="thermo-number" id="thermoNum">0</span>
+        <div class="thermo-denom">/ 10.0 — composite threat index</div>
+        <span class="thermo-stamp" id="thermoStamp">Assessing…</span>
+      </div>
+
+      <div class="thermo-rail">
+        <div class="thermo-fill" id="thermoFill"></div>
+      </div>
+      <div class="thermo-rail-labels">
+        <span>1 QUIET</span><span>5</span><span>10 CRITICAL</span>
+      </div>
+
+      <div class="thermo-factors" id="thermoFactors">
+        <div class="no-data">Loading factors…</div>
+      </div>
+
+      <div class="thermo-foot">
+        <div class="pulse-dot"></div>
+        Last updated: <span id="thermoTs">—</span>
+      </div>
+    </section>
+
+    <!-- ── WIDGET 2: PATCH PRIORITY / KEV ──────────────── -->
+    <section class="w-kev section" id="secKev">
+      <div class="sec-head">
+        <span class="sec-title">
+          <span class="pulse-dot" style="display:inline-block;"></span>
+          Active Exploit Alert — CISA KEV
+        </span>
+        <span class="sec-id">02 / PATCH PRIORITY</span>
+      </div>
+
+      <div class="kev-stats" id="kevStats">
+        <div class="kev-stat-cell">
+          <span class="kev-stat-num" id="kevTotal">—</span>
+          <span class="kev-stat-lbl">Total in catalog</span>
+        </div>
+        <div class="kev-stat-cell">
+          <span class="kev-stat-num" id="kevRecent">—</span>
+          <span class="kev-stat-lbl">Added last 30 days</span>
+        </div>
+      </div>
+
+      <div class="kev-list" id="kevList">
+        <div class="no-data">Loading…</div>
+      </div>
+    </section>
+
+    <!-- ── WIDGET 3: TOP 10 AGGRESSIVE IPs ─────────────── -->
+    <section class="w-ips section" id="secIps">
+      <div class="sec-head">
+        <span class="sec-title">Top 10 Most Aggressive IPs</span>
+        <span class="sec-id">03 / THREAT ACTORS</span>
+      </div>
+
+      <div style="overflow-x:auto;">
+        <table class="ip-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>IP Address</th>
+              <th>Country</th>
+              <th>Confidence</th>
+              <th>Reports</th>
+              <th>ISP / Usage</th>
+            </tr>
+          </thead>
+          <tbody id="ipBody">
+            <tr><td colspan="6"><div class="no-data">Loading…</div></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </div><!-- /grid-main -->
+
+  <!-- ══════════════════════════════════════════════════
+       WIDGET 4: TRENDING MALWARE FAMILIES (full-width)
+       ══════════════════════════════════════════════════ -->
+  <section class="w-malware section" id="secMalware">
+    <div class="sec-head">
+      <div>
+        <span class="sec-title">Trending Malware Families</span>
+        <div style="font-family:var(--font-mono);font-size:0.5rem;color:var(--ink-ghost);letter-spacing:0.14em;text-transform:uppercase;margin-top:3px;">
+          Sources: URLhaus &amp; AlienVault OTX
+        </div>
+      </div>
+      <span class="sec-id">04 / THREAT TAXONOMY</span>
+    </div>
+    <div class="malware-cloud" id="malwareCloud">
+      <div class="no-data">Loading threat taxonomy…</div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       FOOTER
+       ══════════════════════════════════════════════════ -->
+  <footer class="doc-footer">
+    <span class="footer-txt">GASI — Global Attack Surface Index — Open Source</span>
+    <span class="footer-txt">Data: CISA KEV · NIST NVD · AbuseIPDB · URLhaus · AlienVault OTX</span>
+    <span class="footer-txt"><a href="https://github.com/wilfgrainger/gasi-dashboard" target="_blank" rel="noopener">GitHub ↗</a></span>
+  </footer>
+
+
+  <!-- ══════════════════════════════════════════════════
+       JAVASCRIPT
+       ══════════════════════════════════════════════════ -->
+  <script>
+    'use strict';
+
+    // ─── Helpers ──────────────────────────────────────────────────────────────
+
+    function flag(cc) {
+      if (!cc || cc.length !== 2) return '🌐';
+      return String.fromCodePoint(...[...cc.toUpperCase()].map(c => 0x1F1E6 + c.charCodeAt(0) - 65));
+    }
+
+    function fmtDate(iso) {
+      if (!iso) return '—';
+      return new Date(iso).toLocaleDateString('en-GB', { day:'2-digit', month:'short', year:'numeric' }).toUpperCase();
+    }
+
+    function fmtTime(iso) {
+      if (!iso) return '—';
+      const d = new Date(iso);
+      return d.toISOString().slice(11, 16); // HH:MM
+    }
+
+    function countUp(el, target, ms, isFloat) {
+      const t0 = performance.now();
+      (function step(now) {
+        const p  = Math.min((now - t0) / ms, 1);
+        const ep = 1 - Math.pow(1 - p, 3);
+        const v  = ep * target;
+        el.textContent = isFloat ? v.toFixed(1) : Math.floor(v).toString();
+        if (p < 1) requestAnimationFrame(step);
+        else el.textContent = isFloat ? target.toFixed(1) : target.toString();
+      })(performance.now());
+    }
+
+    // ─── Render: Threat Thermometer ───────────────────────────────────────────
+
+    function renderThermo(data) {
+      const ts = data.threat_score;
+      if (!ts) return;
+      const lv = (ts.level_color || 'moderate').toLowerCase();
+      const sc = ts.score || 0;
+
+      const numEl = document.getElementById('thermoNum');
+      numEl.className = 'thermo-number ' + lv;
+      countUp(numEl, sc, 1800, true);
+
+      const stamp = document.getElementById('thermoStamp');
+      stamp.textContent = ts.level || '—';
+      stamp.className = 'thermo-stamp ' + lv;
+
+      const fill = document.getElementById('thermoFill');
+      fill.className = 'thermo-fill ' + lv;
+      setTimeout(() => fill.style.width = ((sc / 10) * 100) + '%', 350);
+
+      const badge = document.getElementById('hdrBadge');
+      badge.textContent = ts.level || '—';
+      badge.className = 'threat-badge ' + lv;
+
+      const factors = ts.factors || [];
+      if (factors.length) {
+        document.getElementById('thermoFactors').innerHTML = factors.map(f => `
+          <div class="factor">
+            <div class="factor-lbl">
+              <span>${f.name}</span>
+              <span>${f.value}</span>
+            </div>
+            <div class="factor-rail">
+              <div class="factor-fill" style="width:${(f.score / f.max) * 100}%"></div>
+            </div>
+          </div>
+        `).join('');
+      }
+    }
+
+    // ─── Render: KEV ─────────────────────────────────────────────────────────
+
+    function renderKev(data) {
+      const kev = data.cisa_kev;
+      if (!kev) return;
+
+      countUp(document.getElementById('kevTotal'),  kev.total_catalog_count || 0, 1500, false);
+      countUp(document.getElementById('kevRecent'), kev.recent_30d_count    || 0, 1500, false);
+
+      const items = kev.recent || [];
+      if (!items.length) {
+        document.getElementById('kevList').innerHTML = '<div class="no-data">No recent entries.</div>';
+        return;
+      }
+
+      document.getElementById('kevList').innerHTML = items.map(it => {
+        const isRsw = it.ransomware_use === 'Known';
+        return `
+          <div class="kev-item">
+            <div class="kev-badge-col">
+              <span class="kev-badge ${isRsw ? 'ransomware' : ''}">${isRsw ? '⚠ RANSOMWARE' : 'ACTIVE'}</span>
+            </div>
+            <div>
+              <span class="kev-cve">${it.cve_id}</span>
+              <span class="kev-name">${it.name || 'Unknown Vulnerability'}</span>
+              <span class="kev-vendor">${it.vendor} — ${it.product}</span>
+            </div>
+            <div class="kev-date-col">
+              ${it.date_added}<br>
+              <span style="opacity:.5">Due: ${it.due_date}</span>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // ─── Render: NVD Strip ───────────────────────────────────────────────────
+
+    function renderNvd(data) {
+      const nvd = data.nvd;
+      if (!nvd) return;
+
+      countUp(document.getElementById('nvdCrit'),  nvd.critical_count || 0, 1400, false);
+      countUp(document.getElementById('nvdHigh'),  nvd.high_count     || 0, 1400, false);
+      countUp(document.getElementById('nvdTotal'), nvd.total          || 0, 1400, false);
+
+      const cves = nvd.cves || [];
+      if (!cves.length) return;
+
+      const sevClass = { CRITICAL: 'sc', HIGH: 'sh', MEDIUM: 'sm' };
+      const items = [...cves, ...cves].map(c => {
+        const sc = sevClass[c.severity] || '';
+        const desc = (c.description || '').substring(0, 70);
+        return `<span class="nvd-tick-item"><span class="${sc}">[${c.severity}]</span> ${c.cve_id} — ${desc}…</span>`;
+      }).join('');
+
+      document.getElementById('nvdTicker').innerHTML = items;
+    }
+
+    // ─── Render: IP Table ────────────────────────────────────────────────────
+
+    function renderIps(data) {
+      const tbody = document.getElementById('ipBody');
+      const ips = (data.top_ips || {}).ips || [];
+
+      if (!ips.length) {
+        tbody.innerHTML = `<tr><td colspan="6"><div class="no-data" style="padding:.8rem 0;">
+          No data — add ABUSEIPDB_KEY to GitHub Secrets to enable this widget.
+        </div></td></tr>`;
+        return;
+      }
+
+      tbody.innerHTML = ips.map((ip, i) => `
+        <tr>
+          <td style="color:var(--ink-ghost);font-size:.58rem;">${String(i + 1).padStart(2, '0')}</td>
+          <td class="ip-addr">${ip.ip}</td>
+          <td>${flag(ip.country)} ${ip.country}</td>
+          <td>
+            <div class="conf-bar-wrap">
+              <div class="conf-bar"><div class="conf-fill" style="width:${ip.confidence}%"></div></div>
+              <span>${ip.confidence}%</span>
+            </div>
+          </td>
+          <td>${(ip.total_reports || 0).toLocaleString()}</td>
+          <td class="isp-cell">${ip.isp || '—'}</td>
+        </tr>
+      `).join('');
+    }
+
+    // ─── Render: Malware Cloud ───────────────────────────────────────────────
+
+    function renderMalware(data) {
+      const families = data.malware_families || [];
+      const cloud = document.getElementById('malwareCloud');
+
+      if (!families.length) {
+        cloud.innerHTML = '<div class="no-data">No malware family data available.</div>';
+        return;
+      }
+
+      const maxC = Math.max(...families.map(f => f.count), 1);
+      const hot  = maxC * 0.45;
+
+      cloud.innerHTML = families.map(f => {
+        const size = (0.58 + (f.count / maxC) * 0.52).toFixed(2);
+        return `<span class="m-tag ${f.count >= hot ? 'hot' : ''}" style="font-size:${size}rem" title="${f.count} reports">
+          ${f.name}<span class="m-tag-count">${f.count}</span>
+        </span>`;
+      }).join('');
+    }
+
+    // ─── Staggered section reveal ─────────────────────────────────────────────
+
+    function revealSections() {
+      document.querySelectorAll('.section').forEach((s, i) => {
+        setTimeout(() => s.classList.add('show'), 180 + i * 110);
+      });
+    }
+
+    // ─── Main data loader ────────────────────────────────────────────────────
+
+    async function init() {
+      try {
+        const res = await fetch('daily_threat_data.json?t=' + Date.now());
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const data = await res.json();
+
+        // Header timestamps
+        document.getElementById('hdrDate').textContent = fmtDate(data.generated_at);
+        document.getElementById('hdrTime').textContent = fmtTime(data.generated_at);
+        document.getElementById('thermoTs').textContent =
+          fmtDate(data.generated_at) + ' ' + fmtTime(data.generated_at);
+
+        renderThermo(data);
+        renderKev(data);
+        renderNvd(data);
+        renderIps(data);
+        renderMalware(data);
+
+      } catch (err) {
+        console.error('[GASI] Failed to load data:', err);
+        document.querySelector('.load-status').textContent = 'ERROR: data unavailable';
+      } finally {
+        setTimeout(() => {
+          document.getElementById('loadingScreen').classList.add('fade-out');
+          // Remove from DOM after transition ends
+          document.getElementById('loadingScreen').addEventListener(
+            'transitionend', e => e.target.remove(), { once: true }
+          );
+          revealSections();
+        }, 1300);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', init);
+  </script>
+
+</body>
+</html>

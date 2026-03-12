@@ -1,0 +1,44 @@
+name: Fetch Threat Intelligence Data
+
+on:
+  schedule:
+    # Runs every 4 hours
+    - cron: "0 */4 * * *"
+  # Allow manual trigger from the GitHub Actions UI
+  workflow_dispatch:
+
+jobs:
+  fetch-data:
+    name: Ingest & Commit Threat Data
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write   # needed to commit daily_threat_data.json back to the repo
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run data ingestion script
+        env:
+          ABUSEIPDB_KEY: ${{ secrets.ABUSEIPDB_KEY }}
+          OTX_API_KEY: ${{ secrets.OTX_API_KEY }}
+          NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
+        run: python fetch_intel.py
+
+      - name: Commit updated threat data
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add daily_threat_data.json
+          git diff --staged --quiet \
+            || git commit -m "chore: update threat intelligence data [skip ci]"
+          git push

@@ -1,0 +1,95 @@
+{
+  "generated_at": "2026-03-12T21:00:00+00:00",
+  "_note": "Sample data. Replaced automatically by the GitHub Actions workflow every 4 hours.",
+  "threat_score": {
+    "score": 7.5,
+    "level": "HIGH",
+    "level_color": "high",
+    "factors": [
+      { "name": "Active Exploits (CISA KEV)", "value": 9,  "score": 2.5, "max": 3 },
+      { "name": "Critical CVEs (24h)",        "value": 4,  "score": 2.0, "max": 3 },
+      { "name": "Malware URLs (URLhaus)",     "value": 87, "score": 1.5, "max": 2 },
+      { "name": "Threat Campaigns (OTX)",     "value": 23, "score": 1.5, "max": 2 }
+    ]
+  },
+  "cisa_kev": {
+    "total_catalog_count": 1247,
+    "recent_30d_count": 9,
+    "recent": [
+      { "cve_id": "CVE-2024-21412", "vendor": "Microsoft", "product": "Windows SmartScreen", "name": "Microsoft Windows SmartScreen Security Feature Bypass Vulnerability", "date_added": "2026-03-10", "due_date": "2026-03-31", "description": "Microsoft Windows SmartScreen contains a security feature bypass vulnerability that allows attackers to bypass the SmartScreen protection mechanism.", "ransomware_use": "Known" },
+      { "cve_id": "CVE-2024-1709",  "vendor": "ConnectWise", "product": "ScreenConnect", "name": "ConnectWise ScreenConnect Authentication Bypass Vulnerability", "date_added": "2026-03-09", "due_date": "2026-03-29", "description": "ConnectWise ScreenConnect contains an authentication bypass vulnerability that allows an attacker with network access to the management interface to create a new administrator account.", "ransomware_use": "Known" },
+      { "cve_id": "CVE-2024-20353", "vendor": "Cisco", "product": "Adaptive Security Appliance", "name": "Cisco ASA and FTD Software Web Services Denial-of-Service Vulnerability", "date_added": "2026-03-08", "due_date": "2026-03-28", "description": "Cisco Adaptive Security Appliance and Firepower Threat Defense Software contains a vulnerability in the management and VPN web servers.", "ransomware_use": "Unknown" },
+      { "cve_id": "CVE-2024-3400",  "vendor": "Palo Alto Networks", "product": "PAN-OS", "name": "Palo Alto Networks PAN-OS Command Injection Vulnerability", "date_added": "2026-03-07", "due_date": "2026-03-27", "description": "A command injection vulnerability in Palo Alto Networks PAN-OS software enables an unauthenticated attacker to execute arbitrary code with root privileges on the firewall.", "ransomware_use": "Known" },
+      { "cve_id": "CVE-2023-46805", "vendor": "Ivanti", "product": "Connect Secure and Policy Secure Gateways", "name": "Ivanti Connect Secure and Policy Secure Authentication Bypass Vulnerability", "date_added": "2026-03-06", "due_date": "2026-03-26", "description": "Ivanti Connect Secure and Policy Secure gateways contain an authentication bypass vulnerability in the web component.", "ransomware_use": "Known" },
+      { "cve_id": "CVE-2024-27198", "vendor": "JetBrains", "product": "TeamCity", "name": "JetBrains TeamCity Authentication Bypass Vulnerability", "date_added": "2026-03-05", "due_date": "2026-03-25", "description": "JetBrains TeamCity contains an authentication bypass vulnerability that allows an attacker with HTTP(S) access to a TeamCity server to bypass authentication checks.", "ransomware_use": "Known" },
+      { "cve_id": "CVE-2024-21887", "vendor": "Ivanti", "product": "Connect Secure and Policy Secure", "name": "Ivanti Connect Secure and Policy Secure Command Injection Vulnerability", "date_added": "2026-03-04", "due_date": "2026-03-24", "description": "Ivanti Connect Secure and Policy Secure contain a command injection vulnerability in web components that allows an authenticated administrator to execute arbitrary commands.", "ransomware_use": "Unknown" },
+      { "cve_id": "CVE-2024-4947",  "vendor": "Google", "product": "Chromium V8 Engine", "name": "Google Chromium V8 Type Confusion Vulnerability", "date_added": "2026-03-03", "due_date": "2026-03-23", "description": "Google Chromium V8 Engine contains a type confusion vulnerability that allows a remote attacker to execute arbitrary code via a crafted HTML page.", "ransomware_use": "Unknown" },
+      { "cve_id": "CVE-2024-0519",  "vendor": "Google", "product": "Chromium V8 Engine", "name": "Google Chromium V8 Out-of-Bounds Memory Access Vulnerability", "date_added": "2026-03-01", "due_date": "2026-03-21", "description": "Google Chromium V8 Engine contains an out-of-bounds memory access vulnerability that allows a remote attacker to potentially exploit heap corruption via a crafted HTML page.", "ransomware_use": "Unknown" }
+    ]
+  },
+  "nvd": {
+    "total": 47,
+    "critical_count": 4,
+    "high_count": 11,
+    "cves": [
+      { "cve_id": "CVE-2026-12345", "severity": "CRITICAL", "base_score": 9.8, "description": "A remote code execution vulnerability exists in a widely deployed middleware component. Unauthenticated attackers can execute arbitrary code via a specially crafted request.", "published": "2026-03-12T18:00:00.000" },
+      { "cve_id": "CVE-2026-11892", "severity": "CRITICAL", "base_score": 9.6, "description": "SQL injection vulnerability in a popular open source CMS allows unauthenticated attackers to execute arbitrary SQL commands and extract sensitive data.", "published": "2026-03-12T15:30:00.000" },
+      { "cve_id": "CVE-2026-10043", "severity": "CRITICAL", "base_score": 9.3, "description": "Authentication bypass in enterprise VPN gateway allows remote attackers to gain administrative access without valid credentials.", "published": "2026-03-12T12:00:00.000" },
+      { "cve_id": "CVE-2026-09871", "severity": "CRITICAL", "base_score": 9.1, "description": "Heap buffer overflow in network protocol parser allows remote code execution. Affects multiple vendor implementations.", "published": "2026-03-12T09:00:00.000" },
+      { "cve_id": "CVE-2026-08443", "severity": "HIGH",     "base_score": 8.8, "description": "Privilege escalation vulnerability allows local attackers to gain SYSTEM-level privileges through improper handle duplication.", "published": "2026-03-12T07:00:00.000" },
+      { "cve_id": "CVE-2026-07221", "severity": "HIGH",     "base_score": 8.6, "description": "Cross-site scripting in widely-used JavaScript framework allows attackers to inject malicious scripts in the context of the application.", "published": "2026-03-12T06:30:00.000" },
+      { "cve_id": "CVE-2026-06981", "severity": "HIGH",     "base_score": 8.4, "description": "Server-side request forgery in cloud management portal allows attackers to perform requests to internal network services.", "published": "2026-03-12T05:00:00.000" }
+    ]
+  },
+  "top_ips": {
+    "ips": [
+      { "ip": "198.51.100.42",  "confidence": 100, "country": "CN", "usage_type": "Data Center/Web Hosting/Transit", "isp": "ChinaNet Backbone Nodes",             "total_reports": 4821, "last_reported": "2026-03-12T20:45:00+00:00" },
+      { "ip": "203.0.113.17",   "confidence": 100, "country": "RU", "usage_type": "Data Center/Web Hosting/Transit", "isp": "Rostelecom PJSC",                     "total_reports": 3994, "last_reported": "2026-03-12T20:12:00+00:00" },
+      { "ip": "192.0.2.88",     "confidence": 98,  "country": "IR", "usage_type": "Data Center/Web Hosting/Transit", "isp": "Telecommunication Infrastructure Co.", "total_reports": 3105, "last_reported": "2026-03-12T19:57:00+00:00" },
+      { "ip": "198.51.100.114", "confidence": 98,  "country": "BR", "usage_type": "Fixed Line ISP",                  "isp": "Claro S.A.",                          "total_reports": 2783, "last_reported": "2026-03-12T19:33:00+00:00" },
+      { "ip": "203.0.113.200",  "confidence": 97,  "country": "US", "usage_type": "Data Center/Web Hosting/Transit", "isp": "Amazon Technologies Inc.",             "total_reports": 2441, "last_reported": "2026-03-12T19:18:00+00:00" },
+      { "ip": "192.0.2.7",      "confidence": 96,  "country": "KP", "usage_type": "Data Center/Web Hosting/Transit", "isp": "Korea Computer Center",               "total_reports": 2218, "last_reported": "2026-03-12T19:04:00+00:00" },
+      { "ip": "198.51.100.63",  "confidence": 95,  "country": "NL", "usage_type": "Data Center/Web Hosting/Transit", "isp": "AS-COLOCROSSING",                     "total_reports": 1887, "last_reported": "2026-03-12T18:51:00+00:00" },
+      { "ip": "203.0.113.91",   "confidence": 94,  "country": "DE", "usage_type": "Data Center/Web Hosting/Transit", "isp": "Hetzner Online GmbH",                 "total_reports": 1645, "last_reported": "2026-03-12T18:39:00+00:00" },
+      { "ip": "192.0.2.155",    "confidence": 93,  "country": "IN", "usage_type": "Fixed Line ISP",                  "isp": "BSNL-NIB",                            "total_reports": 1423, "last_reported": "2026-03-12T18:22:00+00:00" },
+      { "ip": "198.51.100.230", "confidence": 91,  "country": "TR", "usage_type": "Data Center/Web Hosting/Transit", "isp": "Turk Telekom",                        "total_reports": 1198, "last_reported": "2026-03-12T18:07:00+00:00" }
+    ],
+    "total": 10
+  },
+  "malware_families": [
+    { "name": "cobalt strike",   "count": 42 },
+    { "name": "qakbot",          "count": 38 },
+    { "name": "emotet",          "count": 31 },
+    { "name": "redline",         "count": 29 },
+    { "name": "asyncrat",        "count": 27 },
+    { "name": "agent tesla",     "count": 24 },
+    { "name": "lockbit",         "count": 21 },
+    { "name": "remcos",          "count": 19 },
+    { "name": "njrat",           "count": 17 },
+    { "name": "formbook",        "count": 16 },
+    { "name": "icedid",          "count": 14 },
+    { "name": "raccoon stealer", "count": 13 },
+    { "name": "darkcomet",       "count": 12 },
+    { "name": "metasploit",      "count": 11 },
+    { "name": "blackcat",        "count": 10 },
+    { "name": "sliver",          "count":  9 },
+    { "name": "mirai",           "count":  8 },
+    { "name": "bazarloader",     "count":  7 },
+    { "name": "xworm",           "count":  7 },
+    { "name": "vidar",           "count":  6 },
+    { "name": "trickbot",        "count":  5 },
+    { "name": "clop",            "count":  5 },
+    { "name": "netcat",          "count":  4 },
+    { "name": "lumma",           "count":  4 },
+    { "name": "dcrat",           "count":  3 }
+  ],
+  "urlhaus": { "url_count": 87 },
+  "otx": {
+    "pulse_count": 23,
+    "pulses": [
+      { "name": "APT28 Credential Harvesting Campaign Targeting NATO Allies",  "description": "Ongoing spear-phishing campaign attributed to APT28 targeting defense ministries and foreign affairs agencies across NATO member states.", "author": "alienvault",  "indicator_count": 47, "tags": ["apt28","phishing","nato","russia","credential-harvesting"], "modified": "2026-03-12T19:30:00.000000", "tlp": "white" },
+      { "name": "Lazarus Group Deploying Updated BLINDINGCAN Backdoor",         "description": "North Korean threat actor deploying new variant of BLINDINGCAN remote access trojan via trojanized software installers.",                   "author": "mandiant",    "indicator_count": 63, "tags": ["lazarus","blindingcan","north-korea","apt","backdoor"],       "modified": "2026-03-12T17:15:00.000000", "tlp": "white" },
+      { "name": "LockBit 3.0 New Wave — Healthcare Sector Targeting",           "description": "LockBit ransomware group has launched a new campaign specifically targeting healthcare organizations across North America and Europe.",          "author": "crowdstrike", "indicator_count": 29, "tags": ["lockbit","ransomware","healthcare","double-extortion"],      "modified": "2026-03-12T15:00:00.000000", "tlp": "white" }
+    ]
+  }
+}
