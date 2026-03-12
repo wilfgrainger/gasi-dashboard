@@ -790,7 +790,7 @@
       .w-thermo  { grid-column: 1; grid-row: 1; border-right: none; border-bottom: var(--border); }
       .w-kev     { grid-column: 1; grid-row: 2; }
       .w-ips     { grid-column: 1; grid-row: 3; }
-      .doc-header { grid-template-columns: 1fr; text-align: center; padding: 1.25rem 1rem; }
+      .doc-header { grid-template-columns: 1fr; text-align: center; padding: 1rem 1rem; }
       .doc-meta-right { text-align: center; }
       .doc-meta   { text-align: center; }
       .w-malware { padding: 1rem 1rem; }
@@ -1026,7 +1026,7 @@
         <line class="heatmap-grid" x1="0" y1="133.3" x2="800" y2="133.3" />
         <line class="heatmap-grid" x1="0" y1="266.7" x2="800" y2="266.7" />
         <line class="heatmap-grid" x1="0" y1="333.3" x2="800" y2="333.3" />
-        <!-- Equator -->
+        <!-- Equator (0° latitude → y = 200) -->
         <line class="heatmap-equator" x1="0" y1="200" x2="800" y2="200" />
 
         <!-- Continent outlines (equirectangular projection) -->
@@ -1327,7 +1327,7 @@
 
         const pos = toSvg(center[0], center[1]);
         const conf = ip.confidence || 0;
-        // Radius scales linearly: 3px at 0% confidence → 10px at 100%
+        // Radius scales linearly: 3 to 10 SVG units (responsive)
         const r = 3 + (conf / 100) * 7;
         const isHigh = conf >= 90;
         const colorClass = isHigh ? '' : 'orange';
@@ -1348,6 +1348,7 @@
       dotsSvg.innerHTML = html;
 
       dotsSvg.querySelectorAll('.heatmap-dot').forEach(dot => {
+        const tooltipOffset = 28;
         dot.addEventListener('mouseenter', function () {
           const rect = wrap.getBoundingClientRect();
           const dotRect = dot.getBoundingClientRect();
@@ -1356,7 +1357,7 @@
             + Number(dot.dataset.reports).toLocaleString() + ' REPORTS';
           tooltip.style.display = 'block';
           tooltip.style.left = (dotRect.left - rect.left + dotRect.width / 2) + 'px';
-          tooltip.style.top  = (dotRect.top  - rect.top  - 28) + 'px';
+          tooltip.style.top  = (dotRect.top  - rect.top  - tooltipOffset) + 'px';
         });
         dot.addEventListener('mouseleave', function () {
           tooltip.style.display = 'none';
