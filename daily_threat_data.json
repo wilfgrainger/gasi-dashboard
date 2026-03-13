@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-03-13T16:29:46.563789+00:00",
+  "generated_at": "2026-03-13T20:24:22.954010+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 27,
+        "value": 29,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 8,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -32,9 +32,29 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1540,
-    "recent_30d_count": 27,
+    "total_catalog_count": 1542,
+    "recent_30d_count": 29,
     "recent": [
+      {
+        "cve_id": "CVE-2026-3910",
+        "vendor": "Google",
+        "product": "Chromium V8",
+        "name": "Google Chromium V8 Improper Restriction of Operations Within the Bounds of a Memory Buffer Vulnerability",
+        "date_added": "2026-03-13",
+        "due_date": "2026-03-27",
+        "description": "Google Chromium V8 contains an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow a remote attacker to execute arbitrary code inside a sandbox via a",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-3909",
+        "vendor": "Google",
+        "product": "Skia",
+        "name": "Google Skia Out-of-Bounds Write Vulnerability",
+        "date_added": "2026-03-13",
+        "due_date": "2026-03-27",
+        "description": "Google Skia contains an out-of-bounds write vulnerability that could allow a remote attacker to perform out of bounds memory access via a crafted HTML page. This vulnerability affects Google Chrome an",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2025-68613",
         "vendor": "n8n",
@@ -214,33 +234,13 @@
         "due_date": "2026-02-21",
         "description": "Dell RecoverPoint for Virtual Machines (RP4VMs) contains an use of hard-coded credentials vulnerability that could allow an unauthenticated remote attacker to gain unauthorized access to the underlyin",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2020-7796",
-        "vendor": "Synacor",
-        "product": "Zimbra Collaboration Suite",
-        "name": "Synacor Zimbra Collaboration Suite (ZCS) Server-Side Request Forgery Vulnerability",
-        "date_added": "2026-02-17",
-        "due_date": "2026-03-10",
-        "description": "Synacor Zimbra Collaboration Suite (ZCS) contains a server-side request forgery vulnerability if WebEx zimlet installed and zimlet JSP is enabled.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2024-7694",
-        "vendor": "TeamT5",
-        "product": "ThreatSonar Anti-Ransomware",
-        "name": "TeamT5 ThreatSonar Anti-Ransomware Unrestricted Upload of File with Dangerous Type Vulnerability",
-        "date_added": "2026-02-17",
-        "due_date": "2026-03-10",
-        "description": "TeamT5 ThreatSonar Anti-Ransomware contains an unrestricted upload of file with dangerous type vulnerability. ThreatSonar Anti-Ransomware does not properly validate the content of uploaded files. Remo",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 70,
-    "critical_count": 4,
-    "high_count": 18,
+    "total": 254,
+    "critical_count": 8,
+    "high_count": 23,
     "cves": [
       {
         "cve_id": "CVE-2026-3611",
@@ -250,137 +250,137 @@
         "published": "2026-03-12T21:16:27.693"
       },
       {
-        "cve_id": "CVE-2026-21708",
+        "cve_id": "CVE-2026-26954",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "SandboxJS is a JavaScript sandboxing library. Prior to 0.8.34, it is possible to obtain arrays containing Function, which allows escaping the sandbox. Given an array containing Function, and Object.fr",
+        "published": "2026-03-13T19:54:31.143"
+      },
+      {
+        "cve_id": "CVE-2026-32306",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "A vulnerability allowing a Backup Viewer to perform remote code execution (RCE) as the postgres user.",
-        "published": "2026-03-12T17:16:36.683"
+        "description": "OneUptime is a solution for monitoring and managing online services. Prior to 10.0.23, the telemetry aggregation API accepts user-controlled aggregationType, aggregateColumnName, and aggregationTimest",
+        "published": "2026-03-13T19:54:42.000"
       },
       {
-        "cve_id": "CVE-2026-26793",
+        "cve_id": "CVE-2026-25823",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "GL-iNet GL-AR300M16 v4.3.11 was discovered to contain a command injection vulnerability via the set_config function. This vulnerability allows attackers to execute arbitrary commands via a crafted inp",
-        "published": "2026-03-12T19:16:16.073"
+        "description": "HMS Networks Ewon Flexy with firmware before 15.0s4, Cosy+ with firmware 22.xx before 22.1s6, and Cosy+ with firmware 23.xx before 23.0s3 have a stack buffer overflow that leads to a Denial of Service",
+        "published": "2026-03-13T19:54:27.790"
       },
       {
-        "cve_id": "CVE-2026-28792",
+        "cve_id": "CVE-2026-32304",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Tina is a headless content management system. Prior to 2.1.8 , the TinaCMS CLI dev server combines a permissive CORS configuration (Access-Control-Allow-Origin: *) with the path traversal vulnerabilit",
-        "published": "2026-03-12T17:16:50.387"
+        "base_score": 9.8,
+        "description": "Locutus brings stdlibs of other programming languages to JavaScript for educational purposes. Prior to 3.0.14, the create_function(args, code) function passes both parameters directly to the Function ",
+        "published": "2026-03-13T19:54:41.830"
       },
       {
-        "cve_id": "CVE-2026-21672",
+        "cve_id": "CVE-2026-32301",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Centrifugo is an open-source scalable real-time messaging server. Prior to 6.7.0, Centrifugo is vulnerable to Server-Side Request Forgery (SSRF) when configured with a dynamic JWKS endpoint URL using ",
+        "published": "2026-03-13T19:54:41.477"
+      },
+      {
+        "cve_id": "CVE-2026-25818",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "HMS Networks Ewon Flexy with firmware before 15.0s4, Cosy+ with firmware 22.xx before 22.1s6, and Cosy+ with firmware 23.xx before 23.0s3 have weak entropy for authentication cookies, allowing an atta",
+        "published": "2026-03-13T19:54:27.353"
+      },
+      {
+        "cve_id": "CVE-2026-31886",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Dagu is a workflow engine with a built-in Web user interface. Prior to 2.2.4, the dagRunId request field accepted by the inline DAG execution endpoints is passed directly into filepath.Join to constru",
+        "published": "2026-03-13T19:54:37.690"
+      },
+      {
+        "cve_id": "CVE-2026-25817",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A vulnerability allowing local privilege escalation on Windows-based Veeam Backup & Replication servers.",
-        "published": "2026-03-12T17:16:35.633"
+        "description": "HMS Networks Ewon Flexy with firmware before 15.0s4, Cosy+ with firmware 22.xx before 22.1s6, and Cosy+ with firmware 23.xx before 23.0s3 have improper neutralization of special elements used in an OS",
+        "published": "2026-03-13T19:54:25.283"
       },
       {
-        "cve_id": "CVE-2026-32137",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Dataease is an open source data visualization analysis tool. Prior to 2.10.20, The table parameter for /de2api/datasource/previewData is directly concatenated into the SQL statement without any filter",
-        "published": "2026-03-12T18:16:25.257"
-      },
-      {
-        "cve_id": "CVE-2026-32140",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Dataease is an open source data visualization analysis tool. Prior to 2.10.20, By controlling the IniFile parameter, an attacker can force the JDBC driver to load an attacker-controlled configuration ",
-        "published": "2026-03-12T18:16:25.573"
-      },
-      {
-        "cve_id": "CVE-2026-32246",
+        "cve_id": "CVE-2026-31917",
         "severity": "HIGH",
         "base_score": 8.5,
-        "description": "Tinyauth is an authentication and authorization server. Prior to 5.0.3, the OIDC authorization endpoint allows users with a TOTP-pending session (password verified, TOTP not yet completed) to obtain a",
-        "published": "2026-03-12T19:16:19.577"
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in weDevs WP ERP erp allows SQL Injection.This issue affects WP ERP: from n/a through <= 1.16.10.",
+        "published": "2026-03-13T19:54:38.807"
       },
       {
-        "cve_id": "CVE-2026-28793",
+        "cve_id": "CVE-2026-31922",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Tina is a headless content management system. Prior to 2.1.8, the TinaCMS CLI development server exposes media endpoints that are vulnerable to path traversal, allowing attackers to read and write arb",
-        "published": "2026-03-12T17:16:50.543"
+        "base_score": 8.5,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Ays Pro Fox LMS fox-lms allows Blind SQL Injection.This issue affects Fox LMS: from n/a through <=",
+        "published": "2026-03-13T19:54:39.393"
       },
       {
-        "cve_id": "CVE-2026-32138",
+        "cve_id": "CVE-2025-13777",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "NEXULEAN is a cybersecurity portfolio & service platform for an Ethical Hacker, AI Enthusiast, and Penetration Tester. Prior to 2.0.0, a security vulnerability was identified where Firebase and Web3Fo",
-        "published": "2026-03-12T19:16:16.427"
+        "base_score": 8.3,
+        "description": "Authentication bypass by capture-replay vulnerability in ABB AWIN GW100 rev.2, ABB AWIN GW120.This issue affects AWIN GW100 rev.2: 2.0-0, 2.0-1; AWIN GW120: 1.2-0, 1.2-1.",
+        "published": "2026-03-13T19:53:49.073"
       },
       {
-        "cve_id": "CVE-2026-32231",
+        "cve_id": "CVE-2025-13779",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "ZeptoClaw is a personal AI assistant. Prior to 0.7.6, the generic webhook channel trusts caller-supplied identity fields (sender, chat_id) from the request body and applies authorization checks to tho",
-        "published": "2026-03-12T19:16:17.027"
+        "base_score": 8.3,
+        "description": "Missing authentication for critical function vulnerability in ABB AWIN GW100 rev.2, ABB AWIN GW120.This issue affects AWIN GW100 rev.2: 2.0-0, 2.0-1; AWIN GW120: 1.2-0, 1.2-1.",
+        "published": "2026-03-13T19:53:49.480"
       },
       {
-        "cve_id": "CVE-2026-25529",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Postal is an open source SMTP server. Postal versions less than 3.3.5 had a HTML injection vulnerability that allowed unescaped data to be included in the admin interface. The primary way for unescape",
-        "published": "2026-03-12T17:16:46.953"
-      },
-      {
-        "cve_id": "CVE-2026-32247",
+        "cve_id": "CVE-2026-22193",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Graphiti is a framework for building and querying temporal context graphs for AI agents. Graphiti versions before 0.28.2 contained a Cypher injection vulnerability in shared search-filter construction",
-        "published": "2026-03-12T19:16:19.733"
+        "description": "wpDiscuz before 7.6.47 contains an SQL injection vulnerability in the getAllSubscriptions() function where string parameters lack proper quote escaping in SQL queries. Attackers can inject malicious S",
+        "published": "2026-03-13T19:54:09.720"
       },
       {
-        "cve_id": "CVE-2026-32260",
+        "cve_id": "CVE-2026-22202",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Deno is a JavaScript, TypeScript, and WebAssembly runtime. From 2.7.0 to 2.7.1,  A command injection vulnerability exists in Deno's node:child_process polyfill (shell: true mode) that bypasses the fix",
-        "published": "2026-03-12T20:16:06.020"
+        "description": "wpDiscuz before 7.6.47 contains a cross-site request forgery vulnerability that allows attackers to delete all comments associated with an email address by crafting a malicious GET request with a vali",
+        "published": "2026-03-13T19:54:10.353"
       },
       {
-        "cve_id": "CVE-2026-27940",
+        "cve_id": "CVE-2026-32302",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "OpenClaw is a personal AI assistant. Prior to 2026.3.11, browser-originated WebSocket connections could bypass origin validation when gateway.auth.mode was set to trusted-proxy and the request arrived",
+        "published": "2026-03-13T19:54:41.650"
+      },
+      {
+        "cve_id": "CVE-2026-0954",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "llama.cpp is an inference of several LLM models in C/C++. Prior to b8146, the gguf_init_from_file_impl() in gguf.cpp is vulnerable to an Integer overflow, leading to an undersized heap allocation. Usi",
-        "published": "2026-03-12T17:16:49.920"
+        "description": "There is a memory corruption vulnerability due to an out-of-bounds write when loading a corrupted DSB file in Digilent DASYLab. \u00a0This vulnerability may result in information disclosure or arbitrary co",
+        "published": "2026-03-13T19:53:57.210"
       },
       {
-        "cve_id": "CVE-2026-21887",
+        "cve_id": "CVE-2026-0955",
         "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "OpenCTI is an open source platform for managing cyber threat intelligence knowledge and observables. Prior to 6.8.16, the OpenCTI platform\u2019s data ingestion feature accepts user-supplied URLs without v",
-        "published": "2026-03-12T17:16:36.813"
+        "base_score": 7.8,
+        "description": "There is a memory corruption vulnerability due to an out-of-bounds read when loading a corrupted file in Digilent DASYLab. \u00a0This vulnerability may result in information disclosure or arbitrary code ex",
+        "published": "2026-03-13T19:53:57.400"
       },
       {
-        "cve_id": "CVE-2026-28356",
+        "cve_id": "CVE-2026-0956",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "multipart is a fast multipart/form-data parser for python. Prior to 1.2.2, 1.3.1 and 1.4.0-dev, the parse_options_header() function in multipart.py uses a regular expression with an ambiguous alternat",
-        "published": "2026-03-12T17:16:50.080"
+        "base_score": 7.8,
+        "description": "There is a memory corruption vulnerability due to an out-of-bounds read when loading a corrupted file in Digilent DASYLab. \u00a0This vulnerability may result in information disclosure or arbitrary code ex",
+        "published": "2026-03-13T19:53:57.563"
       },
       {
-        "cve_id": "CVE-2026-32141",
+        "cve_id": "CVE-2026-0957",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "flatted is a circular JSON parser. Prior to 3.4.0, flatted's parse() function uses a recursive revive() phase to resolve circular references in deserialized JSON. When given a crafted payload with dee",
-        "published": "2026-03-12T18:16:25.837"
-      },
-      {
-        "cve_id": "CVE-2026-1526",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The undici WebSocket client is vulnerable to a denial-of-service attack via unbounded memory consumption during permessage-deflate decompression. When a WebSocket connection negotiates the permessage-",
-        "published": "2026-03-12T21:16:23.933"
-      },
-      {
-        "cve_id": "CVE-2026-1528",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "ImpactA server can reply with a WebSocket frame using the 64-bit length form and an extremely large length. undici's ByteParser overflows internal math, ends up in an invalid state, and throws a fatal",
-        "published": "2026-03-12T21:16:25.330"
+        "base_score": 7.8,
+        "description": "There is a memory corruption vulnerability due to an out-of-bounds write when loading a corrupted file in Digilent DASYLab. \u00a0This vulnerability may result in information disclosure or arbitrary code e",
+        "published": "2026-03-13T19:53:57.730"
       }
     ]
   },
