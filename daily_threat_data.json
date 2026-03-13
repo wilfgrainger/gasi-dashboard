@@ -1,95 +1,399 @@
 {
-  "generated_at": "2026-03-12T21:00:00+00:00",
-  "_note": "Sample data. Replaced automatically by the GitHub Actions workflow every 4 hours.",
+  "generated_at": "2026-03-13T01:14:25.885439+00:00",
   "threat_score": {
-    "score": 7.5,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
-      { "name": "Active Exploits (CISA KEV)", "value": 9,  "score": 2.5, "max": 3 },
-      { "name": "Critical CVEs (24h)",        "value": 4,  "score": 2.0, "max": 3 },
-      { "name": "Malware URLs (URLhaus)",     "value": 87, "score": 1.5, "max": 2 },
-      { "name": "Threat Campaigns (OTX)",     "value": 23, "score": 1.5, "max": 2 }
+      {
+        "name": "Active Exploits (CISA KEV)",
+        "value": 27,
+        "score": 3.0,
+        "max": 3
+      },
+      {
+        "name": "Critical CVEs (24h)",
+        "value": 6,
+        "score": 2.5,
+        "max": 3
+      },
+      {
+        "name": "Malware URLs (URLhaus)",
+        "value": 0,
+        "score": 0.5,
+        "max": 2
+      },
+      {
+        "name": "Threat Campaigns (OTX)",
+        "value": 0,
+        "score": 0.5,
+        "max": 2
+      }
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1247,
-    "recent_30d_count": 9,
+    "total_catalog_count": 1540,
+    "recent_30d_count": 27,
     "recent": [
-      { "cve_id": "CVE-2024-21412", "vendor": "Microsoft", "product": "Windows SmartScreen", "name": "Microsoft Windows SmartScreen Security Feature Bypass Vulnerability", "date_added": "2026-03-10", "due_date": "2026-03-31", "description": "Microsoft Windows SmartScreen contains a security feature bypass vulnerability that allows attackers to bypass the SmartScreen protection mechanism.", "ransomware_use": "Known" },
-      { "cve_id": "CVE-2024-1709",  "vendor": "ConnectWise", "product": "ScreenConnect", "name": "ConnectWise ScreenConnect Authentication Bypass Vulnerability", "date_added": "2026-03-09", "due_date": "2026-03-29", "description": "ConnectWise ScreenConnect contains an authentication bypass vulnerability that allows an attacker with network access to the management interface to create a new administrator account.", "ransomware_use": "Known" },
-      { "cve_id": "CVE-2024-20353", "vendor": "Cisco", "product": "Adaptive Security Appliance", "name": "Cisco ASA and FTD Software Web Services Denial-of-Service Vulnerability", "date_added": "2026-03-08", "due_date": "2026-03-28", "description": "Cisco Adaptive Security Appliance and Firepower Threat Defense Software contains a vulnerability in the management and VPN web servers.", "ransomware_use": "Unknown" },
-      { "cve_id": "CVE-2024-3400",  "vendor": "Palo Alto Networks", "product": "PAN-OS", "name": "Palo Alto Networks PAN-OS Command Injection Vulnerability", "date_added": "2026-03-07", "due_date": "2026-03-27", "description": "A command injection vulnerability in Palo Alto Networks PAN-OS software enables an unauthenticated attacker to execute arbitrary code with root privileges on the firewall.", "ransomware_use": "Known" },
-      { "cve_id": "CVE-2023-46805", "vendor": "Ivanti", "product": "Connect Secure and Policy Secure Gateways", "name": "Ivanti Connect Secure and Policy Secure Authentication Bypass Vulnerability", "date_added": "2026-03-06", "due_date": "2026-03-26", "description": "Ivanti Connect Secure and Policy Secure gateways contain an authentication bypass vulnerability in the web component.", "ransomware_use": "Known" },
-      { "cve_id": "CVE-2024-27198", "vendor": "JetBrains", "product": "TeamCity", "name": "JetBrains TeamCity Authentication Bypass Vulnerability", "date_added": "2026-03-05", "due_date": "2026-03-25", "description": "JetBrains TeamCity contains an authentication bypass vulnerability that allows an attacker with HTTP(S) access to a TeamCity server to bypass authentication checks.", "ransomware_use": "Known" },
-      { "cve_id": "CVE-2024-21887", "vendor": "Ivanti", "product": "Connect Secure and Policy Secure", "name": "Ivanti Connect Secure and Policy Secure Command Injection Vulnerability", "date_added": "2026-03-04", "due_date": "2026-03-24", "description": "Ivanti Connect Secure and Policy Secure contain a command injection vulnerability in web components that allows an authenticated administrator to execute arbitrary commands.", "ransomware_use": "Unknown" },
-      { "cve_id": "CVE-2024-4947",  "vendor": "Google", "product": "Chromium V8 Engine", "name": "Google Chromium V8 Type Confusion Vulnerability", "date_added": "2026-03-03", "due_date": "2026-03-23", "description": "Google Chromium V8 Engine contains a type confusion vulnerability that allows a remote attacker to execute arbitrary code via a crafted HTML page.", "ransomware_use": "Unknown" },
-      { "cve_id": "CVE-2024-0519",  "vendor": "Google", "product": "Chromium V8 Engine", "name": "Google Chromium V8 Out-of-Bounds Memory Access Vulnerability", "date_added": "2026-03-01", "due_date": "2026-03-21", "description": "Google Chromium V8 Engine contains an out-of-bounds memory access vulnerability that allows a remote attacker to potentially exploit heap corruption via a crafted HTML page.", "ransomware_use": "Unknown" }
+      {
+        "cve_id": "CVE-2025-68613",
+        "vendor": "n8n",
+        "product": "n8n",
+        "name": "n8n Improper Control of Dynamically-Managed Code Resources Vulnerability",
+        "date_added": "2026-03-11",
+        "due_date": "2026-03-25",
+        "description": "n8n contains an improper control of dynamically managed code resources vulnerability in its workflow expression evaluation system that allows for remote code execution.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2021-22054",
+        "vendor": "Omnissa",
+        "product": "Workspace One UEM",
+        "name": "Omnissa Workspace ONE Server-Side Request Forgery",
+        "date_added": "2026-03-09",
+        "due_date": "2026-03-23",
+        "description": "Omnissa Workspace One UEM formerly known as VMware Workspace One UEM contains a server-side request forgery (SSRF) vulnerability that could allow a malicious actor with network access to UEM to send t",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2025-26399",
+        "vendor": "SolarWinds",
+        "product": "Web Help Desk",
+        "name": "SolarWinds Web Help Desk Deserialization of Untrusted Data Vulnerability",
+        "date_added": "2026-03-09",
+        "due_date": "2026-03-12",
+        "description": "SolarWinds Web Help Desk contain a deserialization of untrusted data vulnerability in AjaxProxy that could allow an attacker to run commands on the host machine.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-1603",
+        "vendor": "Ivanti",
+        "product": " Endpoint Manager (EPM)",
+        "name": "Ivanti Endpoint Manager (EPM) Authentication Bypass Vulnerability",
+        "date_added": "2026-03-09",
+        "due_date": "2026-03-23",
+        "description": "Ivanti Endpoint Manager (EPM) contains an authentication bypass using an alternate path or channel vulnerability that could allow a remote unauthenticated attacker to leak specific stored credential d",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2017-7921",
+        "vendor": "Hikvision",
+        "product": "Multiple Products",
+        "name": "Hikvision Multiple Products Improper Authentication Vulnerability",
+        "date_added": "2026-03-05",
+        "due_date": "2026-03-26",
+        "description": "Multiple Hikvision products contain an improper authentication vulnerability that could allow a malicious user to escalate privileges on the system and gain access to sensitive information.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2021-22681",
+        "vendor": "Rockwell",
+        "product": "Multiple Products",
+        "name": "Rockwell Multiple Products Insufficient Protected Credentials Vulnerability",
+        "date_added": "2026-03-05",
+        "due_date": "2026-03-26",
+        "description": "Multiple Rockwell products contain an insufficient protected credentials vulnerability. Studio 5000 Logix Designer software may allow a key to be discovered. This key is used to verify Logix controlle",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2023-43000",
+        "vendor": "Apple",
+        "product": "Multiple Products",
+        "name": "Apple Multiple products Use-After-Free Vulnerability",
+        "date_added": "2026-03-05",
+        "due_date": "2026-03-26",
+        "description": "Apple macOS, iOS, iPadOS, and Safari 16.6 contain a use-after-free vulnerability due to the processing of maliciously crafted web content that may lead to memory corruption.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2021-30952",
+        "vendor": "Apple",
+        "product": "Multiple Products",
+        "name": "Apple Multiple Products Integer Overflow or Wraparound Vulnerability",
+        "date_added": "2026-03-05",
+        "due_date": "2026-03-26",
+        "description": "Apple tvOS, macOS, Safari, iPadOS and watchOS contain an integer overflow or wraparound vulnerability due to the processing of maliciously crafted web content that may lead to arbitrary code execution",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2023-41974",
+        "vendor": "Apple",
+        "product": "iOS and iPadOS",
+        "name": "Apple iOS and iPadOS Use-After-Free Vulnerability",
+        "date_added": "2026-03-05",
+        "due_date": "2026-03-26",
+        "description": "Apple iOS and iPadOS contain a use-after-free vulnerability. An app may be able to execute arbitrary code with kernel privileges.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-22719",
+        "vendor": "Broadcom",
+        "product": "VMware Aria Operations",
+        "name": "Broadcom VMware Aria Operations Command Injection Vulnerability",
+        "date_added": "2026-03-03",
+        "due_date": "2026-03-24",
+        "description": "Broadcom VMware Aria Operations formerly known as vRealize Operations (vROps) contains a command injection vulnerability that allows an unauthenticated attacker to execute arbitrary commands, potentia",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-21385",
+        "vendor": "Qualcomm",
+        "product": "Multiple Chipsets",
+        "name": "Qualcomm Multiple Chipsets Memory Corruption Vulnerability",
+        "date_added": "2026-03-03",
+        "due_date": "2026-03-24",
+        "description": "Multiple Qualcomm chipsets contain a memory corruption vulnerability while using alignments for memory allocation. ",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2022-20775",
+        "vendor": "Cisco",
+        "product": "SD-WAN",
+        "name": "Cisco SD-WAN Path Traversal Vulnerability",
+        "date_added": "2026-02-25",
+        "due_date": "2026-02-27",
+        "description": "Cisco SD-WAN CLI contains a path traversal vulnerability that could allow an authenticated local attacker to gain elevated privileges via improper access controls on commands within the application CL",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-20127",
+        "vendor": "Cisco",
+        "product": "Catalyst SD-WAN Controller and Manager",
+        "name": "Cisco Catalyst SD-WAN Controller and Manager Authentication Bypass Vulnerability",
+        "date_added": "2026-02-25",
+        "due_date": "2026-02-27",
+        "description": "Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, and Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, contain an authentication bypass vulnerability could allow an unauthenticated, rem",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-25108",
+        "vendor": "Soliton Systems K.K",
+        "product": "FileZen",
+        "name": "Soliton Systems K.K FileZen OS Command Injection Vulnerability",
+        "date_added": "2026-02-24",
+        "due_date": "2026-03-17",
+        "description": "Soliton Systems K.K FileZen contains an OS command injection vulnerability when an user logs-in to the affected product and sends a specially crafted HTTP request.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2025-49113",
+        "vendor": "Roundcube",
+        "product": "Webmail",
+        "name": "RoundCube Webmail Deserialization of Untrusted Data Vulnerability",
+        "date_added": "2026-02-20",
+        "due_date": "2026-03-13",
+        "description": "RoundCube Webmail contains a deserialization of untrusted data vulnerability that allows remote code execution by authenticated users because the _from parameter in a URL is not validated in program/a",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2025-68461",
+        "vendor": "Roundcube",
+        "product": "Webmail",
+        "name": "RoundCube Webmail Cross-site Scripting Vulnerability",
+        "date_added": "2026-02-20",
+        "due_date": "2026-03-13",
+        "description": "RoundCube Webmail contains a cross-site scripting vulnerability via the animate tag in an SVG document.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2021-22175",
+        "vendor": "GitLab",
+        "product": "GitLab",
+        "name": "GitLab Server-Side Request Forgery (SSRF) Vulnerability",
+        "date_added": "2026-02-18",
+        "due_date": "2026-03-11",
+        "description": "GitLab contains a server-side request forgery (SSRF) vulnerability when requests to the internal network for webhooks are enabled.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-22769",
+        "vendor": "Dell",
+        "product": "RecoverPoint for Virtual Machines (RP4VMs)",
+        "name": "Dell RecoverPoint for Virtual Machines (RP4VMs) Use of Hard-coded Credentials Vulnerability",
+        "date_added": "2026-02-18",
+        "due_date": "2026-02-21",
+        "description": "Dell RecoverPoint for Virtual Machines (RP4VMs) contains an use of hard-coded credentials vulnerability that could allow an unauthenticated remote attacker to gain unauthorized access to the underlyin",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2020-7796",
+        "vendor": "Synacor",
+        "product": "Zimbra Collaboration Suite",
+        "name": "Synacor Zimbra Collaboration Suite (ZCS) Server-Side Request Forgery Vulnerability",
+        "date_added": "2026-02-17",
+        "due_date": "2026-03-10",
+        "description": "Synacor Zimbra Collaboration Suite (ZCS) contains a server-side request forgery vulnerability if WebEx zimlet installed and zimlet JSP is enabled.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2024-7694",
+        "vendor": "TeamT5",
+        "product": "ThreatSonar Anti-Ransomware",
+        "name": "TeamT5 ThreatSonar Anti-Ransomware Unrestricted Upload of File with Dangerous Type Vulnerability",
+        "date_added": "2026-02-17",
+        "due_date": "2026-03-10",
+        "description": "TeamT5 ThreatSonar Anti-Ransomware contains an unrestricted upload of file with dangerous type vulnerability. ThreatSonar Anti-Ransomware does not properly validate the content of uploaded files. Remo",
+        "ransomware_use": "Unknown"
+      }
     ]
   },
   "nvd": {
-    "total": 47,
-    "critical_count": 4,
-    "high_count": 11,
+    "total": 174,
+    "critical_count": 6,
+    "high_count": 59,
     "cves": [
-      { "cve_id": "CVE-2026-12345", "severity": "CRITICAL", "base_score": 9.8, "description": "A remote code execution vulnerability exists in a widely deployed middleware component. Unauthenticated attackers can execute arbitrary code via a specially crafted request.", "published": "2026-03-12T18:00:00.000" },
-      { "cve_id": "CVE-2026-11892", "severity": "CRITICAL", "base_score": 9.6, "description": "SQL injection vulnerability in a popular open source CMS allows unauthenticated attackers to execute arbitrary SQL commands and extract sensitive data.", "published": "2026-03-12T15:30:00.000" },
-      { "cve_id": "CVE-2026-10043", "severity": "CRITICAL", "base_score": 9.3, "description": "Authentication bypass in enterprise VPN gateway allows remote attackers to gain administrative access without valid credentials.", "published": "2026-03-12T12:00:00.000" },
-      { "cve_id": "CVE-2026-09871", "severity": "CRITICAL", "base_score": 9.1, "description": "Heap buffer overflow in network protocol parser allows remote code execution. Affects multiple vendor implementations.", "published": "2026-03-12T09:00:00.000" },
-      { "cve_id": "CVE-2026-08443", "severity": "HIGH",     "base_score": 8.8, "description": "Privilege escalation vulnerability allows local attackers to gain SYSTEM-level privileges through improper handle duplication.", "published": "2026-03-12T07:00:00.000" },
-      { "cve_id": "CVE-2026-07221", "severity": "HIGH",     "base_score": 8.6, "description": "Cross-site scripting in widely-used JavaScript framework allows attackers to inject malicious scripts in the context of the application.", "published": "2026-03-12T06:30:00.000" },
-      { "cve_id": "CVE-2026-06981", "severity": "HIGH",     "base_score": 8.4, "description": "Server-side request forgery in cloud management portal allows attackers to perform requests to internal network services.", "published": "2026-03-12T05:00:00.000" }
+      {
+        "cve_id": "CVE-2026-21666",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A vulnerability allowing an authenticated domain user to perform remote code execution (RCE) on the Backup Server.",
+        "published": "2026-03-12T15:16:13.007"
+      },
+      {
+        "cve_id": "CVE-2026-21667",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A vulnerability allowing an authenticated domain user to perform remote code execution (RCE) on the Backup Server.",
+        "published": "2026-03-12T15:16:13.133"
+      },
+      {
+        "cve_id": "CVE-2026-21669",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A vulnerability allowing an authenticated domain user to perform remote code execution (RCE) on the Backup Server.",
+        "published": "2026-03-12T15:16:13.383"
+      },
+      {
+        "cve_id": "CVE-2026-3059",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "SGLang's multimodal generation module is vulnerable to unauthenticated remote code execution through the ZMQ broker, which deserializes untrusted data using pickle.loads() without authentication.",
+        "published": "2026-03-12T12:15:59.420"
+      },
+      {
+        "cve_id": "CVE-2026-3060",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "SGLang' encoder parallel disaggregation system is vulnerable to unauthenticated remote code execution through the disaggregation module, which deserializes untrusted data using pickle.loads() without ",
+        "published": "2026-03-12T12:15:59.530"
+      },
+      {
+        "cve_id": "CVE-2026-21671",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "A vulnerability allowing an authenticated user with the Backup Administrator role to perform remote code execution (RCE) in high availability (HA) deployments of Veeam Backup & Replication.",
+        "published": "2026-03-12T15:16:13.630"
+      },
+      {
+        "cve_id": "CVE-2023-43010",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The issue was addressed with improved memory handling. This issue is fixed in iOS 17.2 and iPadOS 17.2, macOS Sonoma 14.2, Safari 17.2, iOS 16.7.15 and iPadOS 16.7.15, iOS 15.8.7 and iPadOS 15.8.7. Pr",
+        "published": "2026-03-12T01:15:54.493"
+      },
+      {
+        "cve_id": "CVE-2026-3970",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A flaw has been found in Tenda i3 1.0.0.6(2204). Affected is the function formwrlSSIDget of the file /goform/wifiSSIDget. Executing a manipulation of the argument index can lead to stack-based buffer ",
+        "published": "2026-03-12T01:15:55.420"
+      },
+      {
+        "cve_id": "CVE-2026-3971",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability has been found in Tenda i3 1.0.0.6(2204). Affected by this vulnerability is the function formwrlSSIDset of the file /goform/wifiSSIDset. The manipulation of the argument index/GO leads",
+        "published": "2026-03-12T01:15:55.650"
+      },
+      {
+        "cve_id": "CVE-2026-3972",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was found in Tenda W3 1.0.0.3(2204). Affected by this issue is the function formSetCfm of the file /goform/setcfm of the component HTTP Handler. The manipulation of the argument funcpa",
+        "published": "2026-03-12T02:15:58.607"
+      },
+      {
+        "cve_id": "CVE-2026-3973",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was determined in Tenda W3 1.0.0.3(2204). This affects the function formSetAutoPing of the file /goform/setAutoPing of the component POST Parameter Handler. This manipulation of the ar",
+        "published": "2026-03-12T02:15:58.817"
+      },
+      {
+        "cve_id": "CVE-2026-3974",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was identified in Tenda W3 1.0.0.3(2204). This vulnerability affects the function formexeCommand of the file /goform/exeCommand of the component HTTP Handler. Such manipulation of the ",
+        "published": "2026-03-12T03:15:58.120"
+      },
+      {
+        "cve_id": "CVE-2026-3975",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A security flaw has been discovered in Tenda W3 1.0.0.3(2204). This issue affects the function formWifiMacFilterGet of the file /goform/WifiMacFilterGet of the component POST Parameter Handler. Perfor",
+        "published": "2026-03-12T03:15:58.523"
+      },
+      {
+        "cve_id": "CVE-2026-3976",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A weakness has been identified in Tenda W3 1.0.0.3(2204). Impacted is the function formWifiMacFilterSet of the file /goform/WifiMacFilterSet of the component POST Parameter Handler. Executing a manipu",
+        "published": "2026-03-12T03:15:58.740"
+      },
+      {
+        "cve_id": "CVE-2026-3978",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was detected in D-Link DIR-513 1.10. The impacted element is an unknown function of the file /goform/formEasySetupWizard3. The manipulation of the argument wan_connected results in sta",
+        "published": "2026-03-12T04:16:40.173"
+      },
+      {
+        "cve_id": "CVE-2026-4007",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was detected in Tenda W3 1.0.0.3(2204). This vulnerability affects unknown code of the file /goform/wifiSSIDget of the component POST Parameter Handler. Performing a manipulation of th",
+        "published": "2026-03-12T07:16:18.583"
+      },
+      {
+        "cve_id": "CVE-2026-4008",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A flaw has been found in Tenda W3 1.0.0.3(2204). This issue affects some unknown processing of the file /goform/wifiSSIDset of the component POST Parameter Handler. Executing a manipulation of the arg",
+        "published": "2026-03-12T07:16:18.827"
+      },
+      {
+        "cve_id": "CVE-2026-21668",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability allowing an authenticated domain user to bypass restrictions and manipulate arbitrary files on a Backup Repository.",
+        "published": "2026-03-12T15:16:13.260"
+      },
+      {
+        "cve_id": "CVE-2026-4041",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A security flaw has been discovered in Tenda i12 1.0.0.6(2204). Impacted is the function vos_strcpy of the file /goform/exeCommand. The manipulation of the argument cmdinput results in stack-based buf",
+        "published": "2026-03-12T15:16:33.550"
+      },
+      {
+        "cve_id": "CVE-2026-4042",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A weakness has been identified in Tenda i12 1.0.0.6(2204). The affected element is the function formWifiMacFilterGet of the file /goform/WifiMacFilterGet. This manipulation of the argument index cause",
+        "published": "2026-03-12T15:16:34.180"
+      }
     ]
   },
   "top_ips": {
-    "ips": [
-      { "ip": "198.51.100.42",  "confidence": 100, "country": "CN", "usage_type": "Data Center/Web Hosting/Transit", "isp": "ChinaNet Backbone Nodes",             "total_reports": 4821, "last_reported": "2026-03-12T20:45:00+00:00" },
-      { "ip": "203.0.113.17",   "confidence": 100, "country": "RU", "usage_type": "Data Center/Web Hosting/Transit", "isp": "Rostelecom PJSC",                     "total_reports": 3994, "last_reported": "2026-03-12T20:12:00+00:00" },
-      { "ip": "192.0.2.88",     "confidence": 98,  "country": "IR", "usage_type": "Data Center/Web Hosting/Transit", "isp": "Telecommunication Infrastructure Co.", "total_reports": 3105, "last_reported": "2026-03-12T19:57:00+00:00" },
-      { "ip": "198.51.100.114", "confidence": 98,  "country": "BR", "usage_type": "Fixed Line ISP",                  "isp": "Claro S.A.",                          "total_reports": 2783, "last_reported": "2026-03-12T19:33:00+00:00" },
-      { "ip": "203.0.113.200",  "confidence": 97,  "country": "US", "usage_type": "Data Center/Web Hosting/Transit", "isp": "Amazon Technologies Inc.",             "total_reports": 2441, "last_reported": "2026-03-12T19:18:00+00:00" },
-      { "ip": "192.0.2.7",      "confidence": 96,  "country": "KP", "usage_type": "Data Center/Web Hosting/Transit", "isp": "Korea Computer Center",               "total_reports": 2218, "last_reported": "2026-03-12T19:04:00+00:00" },
-      { "ip": "198.51.100.63",  "confidence": 95,  "country": "NL", "usage_type": "Data Center/Web Hosting/Transit", "isp": "AS-COLOCROSSING",                     "total_reports": 1887, "last_reported": "2026-03-12T18:51:00+00:00" },
-      { "ip": "203.0.113.91",   "confidence": 94,  "country": "DE", "usage_type": "Data Center/Web Hosting/Transit", "isp": "Hetzner Online GmbH",                 "total_reports": 1645, "last_reported": "2026-03-12T18:39:00+00:00" },
-      { "ip": "192.0.2.155",    "confidence": 93,  "country": "IN", "usage_type": "Fixed Line ISP",                  "isp": "BSNL-NIB",                            "total_reports": 1423, "last_reported": "2026-03-12T18:22:00+00:00" },
-      { "ip": "198.51.100.230", "confidence": 91,  "country": "TR", "usage_type": "Data Center/Web Hosting/Transit", "isp": "Turk Telekom",                        "total_reports": 1198, "last_reported": "2026-03-12T18:07:00+00:00" }
-    ],
-    "total": 10
+    "ips": [],
+    "total": 0
   },
-  "malware_families": [
-    { "name": "cobalt strike",   "count": 42 },
-    { "name": "qakbot",          "count": 38 },
-    { "name": "emotet",          "count": 31 },
-    { "name": "redline",         "count": 29 },
-    { "name": "asyncrat",        "count": 27 },
-    { "name": "agent tesla",     "count": 24 },
-    { "name": "lockbit",         "count": 21 },
-    { "name": "remcos",          "count": 19 },
-    { "name": "njrat",           "count": 17 },
-    { "name": "formbook",        "count": 16 },
-    { "name": "icedid",          "count": 14 },
-    { "name": "raccoon stealer", "count": 13 },
-    { "name": "darkcomet",       "count": 12 },
-    { "name": "metasploit",      "count": 11 },
-    { "name": "blackcat",        "count": 10 },
-    { "name": "sliver",          "count":  9 },
-    { "name": "mirai",           "count":  8 },
-    { "name": "bazarloader",     "count":  7 },
-    { "name": "xworm",           "count":  7 },
-    { "name": "vidar",           "count":  6 },
-    { "name": "trickbot",        "count":  5 },
-    { "name": "clop",            "count":  5 },
-    { "name": "netcat",          "count":  4 },
-    { "name": "lumma",           "count":  4 },
-    { "name": "dcrat",           "count":  3 }
-  ],
-  "urlhaus": { "url_count": 87 },
+  "malware_families": [],
+  "urlhaus": {
+    "url_count": 0
+  },
   "otx": {
-    "pulse_count": 23,
-    "pulses": [
-      { "name": "APT28 Credential Harvesting Campaign Targeting NATO Allies",  "description": "Ongoing spear-phishing campaign attributed to APT28 targeting defense ministries and foreign affairs agencies across NATO member states.", "author": "alienvault",  "indicator_count": 47, "tags": ["apt28","phishing","nato","russia","credential-harvesting"], "modified": "2026-03-12T19:30:00.000000", "tlp": "white" },
-      { "name": "Lazarus Group Deploying Updated BLINDINGCAN Backdoor",         "description": "North Korean threat actor deploying new variant of BLINDINGCAN remote access trojan via trojanized software installers.",                   "author": "mandiant",    "indicator_count": 63, "tags": ["lazarus","blindingcan","north-korea","apt","backdoor"],       "modified": "2026-03-12T17:15:00.000000", "tlp": "white" },
-      { "name": "LockBit 3.0 New Wave — Healthcare Sector Targeting",           "description": "LockBit ransomware group has launched a new campaign specifically targeting healthcare organizations across North America and Europe.",          "author": "crowdstrike", "indicator_count": 29, "tags": ["lockbit","ransomware","healthcare","double-extortion"],      "modified": "2026-03-12T15:00:00.000000", "tlp": "white" }
-    ]
+    "pulse_count": 0,
+    "pulses": []
   }
 }
