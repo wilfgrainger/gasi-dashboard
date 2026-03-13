@@ -649,6 +649,102 @@
     .m-tag-count { font-size: 0.48rem; opacity: 0.55; margin-left: 4px; }
 
     /* ═══════════════════════════════════════════════════
+       WIDGET 5 — GLOBAL THREAT HEAT MAP
+       ═══════════════════════════════════════════════════ */
+    .w-heatmap {
+      background: var(--ink);
+      color: var(--paper);
+      padding: 1.5rem 2.5rem 2rem;
+      border-top: var(--border);
+      border-bottom: var(--border);
+    }
+    .w-heatmap .sec-head {
+      border-bottom-color: rgba(255,255,255,0.12);
+      margin-bottom: 1.25rem;
+    }
+    .w-heatmap .sec-title { color: var(--paper); }
+    .w-heatmap .sec-id { color: rgba(242,237,227,0.4); }
+    .heatmap-wrap {
+      position: relative;
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .heatmap-svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .heatmap-grid { stroke: rgba(242,237,227,0.06); stroke-width: 0.5; }
+    .heatmap-equator { stroke: rgba(242,237,227,0.12); stroke-width: 0.8; stroke-dasharray: 6 3; }
+    .heatmap-continent {
+      fill: rgba(242,237,227,0.07);
+      stroke: rgba(242,237,227,0.18);
+      stroke-width: 0.7;
+      stroke-linejoin: round;
+    }
+    .heatmap-dot {
+      fill: var(--red);
+      opacity: 0.85;
+      cursor: pointer;
+      transition: opacity 0.2s, r 0.2s;
+      filter: drop-shadow(0 0 3px rgba(190,0,0,0.6));
+    }
+    .heatmap-dot:hover {
+      opacity: 1;
+      filter: drop-shadow(0 0 8px rgba(190,0,0,0.9));
+    }
+    .heatmap-dot.orange { fill: #FF8A00; filter: drop-shadow(0 0 3px rgba(255,138,0,0.6)); }
+    .heatmap-dot.orange:hover { filter: drop-shadow(0 0 8px rgba(255,138,0,0.9)); }
+    .heatmap-tooltip {
+      position: absolute;
+      background: rgba(13,12,10,0.92);
+      border: 1px solid rgba(242,237,227,0.2);
+      padding: 6px 10px;
+      font-family: var(--font-mono);
+      font-size: 0.58rem;
+      color: var(--paper);
+      letter-spacing: 0.06em;
+      pointer-events: none;
+      white-space: nowrap;
+      z-index: 10;
+      display: none;
+    }
+    .heatmap-legend {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.8rem;
+      margin-top: 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.5rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(242,237,227,0.45);
+    }
+    .heatmap-legend-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .heatmap-legend-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .heatmap-svg-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+    }
+    .heatmap-legend-dot.red { background: var(--red); box-shadow: 0 0 4px rgba(190,0,0,0.5); }
+    .heatmap-legend-dot.orange { background: #FF8A00; box-shadow: 0 0 4px rgba(255,138,0,0.5); }
+    .heatmap-legend-dot.sm { width: 5px; height: 5px; }
+    .heatmap-legend-dot.lg { width: 11px; height: 11px; }
+
+    /* ═══════════════════════════════════════════════════
        FOOTER
        ═══════════════════════════════════════════════════ */
     .doc-footer {
@@ -694,9 +790,36 @@
       .w-thermo  { grid-column: 1; grid-row: 1; border-right: none; border-bottom: var(--border); }
       .w-kev     { grid-column: 1; grid-row: 2; }
       .w-ips     { grid-column: 1; grid-row: 3; }
-      .doc-header { grid-template-columns: 1fr; text-align: center; }
+      .doc-header { grid-template-columns: 1fr; text-align: center; padding: 1rem 1rem; }
       .doc-meta-right { text-align: center; }
       .doc-meta   { text-align: center; }
+      .w-malware { padding: 1rem 1rem; }
+      .w-heatmap { padding: 1rem 1rem 1.25rem; }
+      .doc-footer {
+        padding: 0.65rem 1rem;
+        flex-direction: column;
+        text-align: center;
+      }
+      .nvd-strip-label { display: none; }
+      .nvd-stat { padding: 0.5rem 0.8rem; }
+      .ip-table th { font-size: 0.42rem; padding: 0.35rem 0.4rem; }
+      .ip-table td { font-size: 0.58rem; padding: 0.4rem 0.4rem; }
+      .isp-cell { max-width: 100px; font-size: 0.5rem; }
+      .kev-item { padding: 0.5rem 0; gap: 0 0.5rem; }
+      .w-kev, .w-ips { padding: 1rem 1rem; }
+      .thermo-number { font-size: 6rem; }
+    }
+    @media (max-width: 480px) {
+      .class-banner { font-size: 0.45rem; letter-spacing: 0.12em; padding: 4px 0.5rem; }
+      .doc-title-block h1 { font-size: 2.8rem; }
+      .doc-subtitle { font-size: 0.48rem; letter-spacing: 0.2em; }
+      .nvd-stat { padding: 0.4rem 0.5rem; }
+      .nvd-num { font-size: 1.6rem; }
+      .thermo-number { font-size: 5rem; }
+      .kev-stat-cell { padding: 0.35rem 0.6rem; }
+      .kev-stat-num { font-size: 1.6rem; }
+      .sec-head { flex-direction: column; gap: 0.25rem; }
+      .heatmap-legend { flex-wrap: wrap; gap: 0.8rem; }
     }
   </style>
 </head>
@@ -876,11 +999,102 @@
   </section>
 
   <!-- ══════════════════════════════════════════════════
+       WIDGET 5: GLOBAL THREAT ORIGIN MAP (full-width, dark)
+       ══════════════════════════════════════════════════ -->
+  <section class="w-heatmap section" id="secHeatmap">
+    <div class="sec-head">
+      <span class="sec-title">Global Threat Origin Map</span>
+      <span class="sec-id">05 / GEOSPATIAL</span>
+    </div>
+
+    <div class="heatmap-wrap">
+      <svg class="heatmap-svg" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+        <!-- Grid lines — longitude (every 30°, ~66.7px) -->
+        <line class="heatmap-grid" x1="66.7"  y1="0" x2="66.7"  y2="400" />
+        <line class="heatmap-grid" x1="133.3" y1="0" x2="133.3" y2="400" />
+        <line class="heatmap-grid" x1="200"   y1="0" x2="200"   y2="400" />
+        <line class="heatmap-grid" x1="266.7" y1="0" x2="266.7" y2="400" />
+        <line class="heatmap-grid" x1="333.3" y1="0" x2="333.3" y2="400" />
+        <line class="heatmap-grid" x1="400"   y1="0" x2="400"   y2="400" />
+        <line class="heatmap-grid" x1="466.7" y1="0" x2="466.7" y2="400" />
+        <line class="heatmap-grid" x1="533.3" y1="0" x2="533.3" y2="400" />
+        <line class="heatmap-grid" x1="600"   y1="0" x2="600"   y2="400" />
+        <line class="heatmap-grid" x1="666.7" y1="0" x2="666.7" y2="400" />
+        <line class="heatmap-grid" x1="733.3" y1="0" x2="733.3" y2="400" />
+        <!-- Grid lines — latitude (every 30°, ~66.7px) -->
+        <line class="heatmap-grid" x1="0" y1="66.7"  x2="800" y2="66.7"  />
+        <line class="heatmap-grid" x1="0" y1="133.3" x2="800" y2="133.3" />
+        <line class="heatmap-grid" x1="0" y1="266.7" x2="800" y2="266.7" />
+        <line class="heatmap-grid" x1="0" y1="333.3" x2="800" y2="333.3" />
+        <!-- Equator (0° latitude → y = 200) -->
+        <line class="heatmap-equator" x1="0" y1="200" x2="800" y2="200" />
+
+        <!-- Continent outlines (equirectangular projection) -->
+        <!-- North America -->
+        <path class="heatmap-continent" d="M90,62 C95,58 108,52 120,50 C132,48 148,52 158,50 C168,48 175,42 182,40 C190,42 196,48 198,55 C202,60 210,62 218,68 C224,74 228,80 232,88 C234,95 236,104 234,112 C230,118 222,122 216,128 C210,135 206,142 200,148 C196,154 188,160 182,168 C176,174 172,180 166,186 C160,188 154,186 148,184 C142,182 136,180 130,178 C122,176 112,172 106,166 C100,158 96,148 92,138 C88,128 86,118 88,108 C90,98 92,88 92,78 C92,70 90,66 90,62 Z" />
+        <!-- Greenland -->
+        <path class="heatmap-continent" d="M168,28 C176,24 188,22 198,24 C206,26 212,32 214,38 C212,44 206,48 198,48 C190,48 182,44 176,40 C170,36 168,32 168,28 Z" />
+        <!-- South America -->
+        <path class="heatmap-continent" d="M188,208 C194,204 202,202 210,204 C218,206 226,212 232,220 C236,228 240,238 242,250 C244,262 242,274 238,286 C234,296 228,306 220,314 C212,320 206,324 198,322 C190,318 184,310 180,298 C176,286 174,272 174,258 C174,244 176,232 180,222 C184,214 186,210 188,208 Z" />
+        <!-- Europe -->
+        <path class="heatmap-continent" d="M365,72 C370,68 378,64 388,62 C398,62 408,66 416,70 C422,74 428,80 432,88 C434,94 432,100 426,106 C420,110 412,114 404,116 C396,116 388,114 380,110 C374,106 368,100 366,92 C364,84 364,76 365,72 Z" />
+        <!-- British Isles -->
+        <path class="heatmap-continent" d="M354,68 C358,64 364,62 368,64 C370,68 368,72 364,74 C360,76 356,74 354,70 Z" />
+        <!-- Africa -->
+        <path class="heatmap-continent" d="M368,142 C374,138 384,136 394,136 C404,138 414,142 422,150 C430,160 436,172 440,188 C442,204 440,220 434,236 C428,248 420,258 410,264 C400,268 392,268 382,262 C374,256 366,246 362,232 C358,218 356,202 356,186 C356,170 360,156 364,148 C366,144 368,142 368,142 Z" />
+        <!-- Asia -->
+        <path class="heatmap-continent" d="M432,60 C446,54 464,48 486,44 C508,42 532,42 556,44 C578,48 598,54 616,62 C632,70 646,80 656,92 C662,102 664,112 660,122 C654,130 644,136 632,140 C620,142 606,140 592,134 C580,128 570,126 558,130 C546,136 534,142 520,148 C508,150 496,148 484,142 C472,136 462,128 452,118 C444,108 438,96 434,84 C432,74 432,66 432,60 Z" />
+        <!-- India -->
+        <path class="heatmap-continent" d="M528,148 C536,144 544,144 550,148 C556,154 560,164 558,176 C556,188 550,198 542,206 C534,210 526,206 522,196 C518,186 518,174 520,162 C522,154 524,150 528,148 Z" />
+        <!-- Southeast Asia / Malay -->
+        <path class="heatmap-continent" d="M586,168 C596,164 608,162 620,166 C630,170 640,178 648,188 C652,196 650,202 642,204 C632,204 620,200 608,194 C598,188 590,180 586,172 Z" />
+        <!-- Japan -->
+        <path class="heatmap-continent" d="M668,78 C672,74 678,72 682,76 C684,82 682,90 678,96 C674,100 670,98 668,92 C666,86 666,82 668,78 Z" />
+        <!-- Australia -->
+        <path class="heatmap-continent" d="M618,252 C632,246 650,242 668,244 C686,248 700,256 710,268 C716,278 714,290 704,298 C692,304 678,306 662,304 C648,300 636,292 628,282 C622,272 618,262 618,252 Z" />
+        <!-- New Zealand -->
+        <path class="heatmap-continent" d="M720,304 C724,300 730,300 732,304 C734,310 732,316 728,320 C724,322 720,318 720,312 Z" />
+      </svg>
+
+      <!-- JS-generated threat dots layer -->
+      <svg class="heatmap-svg heatmap-svg-overlay" id="heatmapDots" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+      </svg>
+
+      <div class="heatmap-tooltip" id="heatmapTooltip"></div>
+    </div>
+
+    <div class="heatmap-legend">
+      <div class="heatmap-legend-item">
+        <span class="heatmap-legend-dot red sm"></span>
+        <span>Confidence ≥ 90%</span>
+      </div>
+      <div class="heatmap-legend-item">
+        <span class="heatmap-legend-dot orange"></span>
+        <span>Confidence &lt; 90%</span>
+      </div>
+      <div class="heatmap-legend-item">
+        <span style="font-size:0.48rem;opacity:0.6;">Dot size scales with confidence</span>
+      </div>
+    </div>
+  </section>
+
+  <!--
+    ════════════════════════════════════════════════════════
+    DATA SOURCE DOCUMENTATION — ALL FREE PUBLIC APIs
+    ════════════════════════════════════════════════════════
+    • CISA KEV          — https://www.cisa.gov/known-exploited-vulnerabilities-catalog (free, public)
+    • NIST NVD          — https://nvd.nist.gov/developers (free, public, rate-limited)
+    • AbuseIPDB         — https://www.abuseipdb.com/api (free tier: 1000 req/day)
+    • URLhaus           — https://urlhaus-api.abuse.ch/ (free, public, no key required)
+    • AlienVault OTX    — https://otx.alienvault.com/api (free tier available)
+  -->
+
+  <!-- ══════════════════════════════════════════════════
        FOOTER
        ══════════════════════════════════════════════════ -->
   <footer class="doc-footer">
     <span class="footer-txt">GASI — Global Attack Surface Index — Open Source</span>
-    <span class="footer-txt">Data: CISA KEV · NIST NVD · AbuseIPDB · URLhaus · AlienVault OTX</span>
+    <span class="footer-txt">Data: CISA KEV · NIST NVD · AbuseIPDB · URLhaus · AlienVault OTX — All free public APIs</span>
     <span class="footer-txt"><a href="https://github.com/wilfgrainger/gasi-dashboard" target="_blank" rel="noopener">GitHub ↗</a></span>
   </footer>
 
@@ -1072,6 +1286,85 @@
       }).join('');
     }
 
+    // ─── Render: Heat Map ──────────────────────────────────────────────────
+
+    function renderHeatMap(data) {
+      const ips = ((data.top_ips || {}).ips || []);
+      if (!ips.length) return;
+
+      const COUNTRY_CENTERS = {
+        'CN': [35.86, 104.20], 'RU': [61.52, 105.32], 'IR': [32.43, 53.69],
+        'BR': [-14.24, -51.93], 'US': [37.09, -95.71], 'KP': [40.34, 127.51],
+        'NL': [52.13, 5.29], 'DE': [51.17, 10.45], 'IN': [20.59, 78.96],
+        'TR': [38.96, 35.24], 'UA': [48.38, 31.17], 'GB': [55.38, -3.44],
+        'FR': [46.23, 2.21], 'JP': [36.20, 138.25], 'KR': [35.91, 127.77],
+        'AU': [-25.27, 133.78], 'CA': [56.13, -106.35], 'ZA': [-30.56, 22.94],
+        'SG': [1.35, 103.82], 'HK': [22.40, 114.11], 'VN': [14.06, 108.28],
+        'ID': [-0.79, 113.92], 'PK': [30.38, 69.35], 'BD': [23.68, 90.36],
+        'MX': [23.63, -102.55], 'AR': [-38.42, -63.62], 'EG': [26.82, 30.80],
+        'SA': [23.89, 45.08], 'TH': [15.87, 100.99], 'PH': [12.88, 121.77],
+        'PL': [51.92, 19.15], 'RO': [45.94, 24.97], 'CZ': [49.82, 15.47],
+        'IT': [41.87, 12.57], 'ES': [40.46, -3.75], 'SE': [60.13, 18.64],
+      };
+
+      function toSvg(lat, lon) {
+        return {
+          x: ((lon + 180) / 360) * 800,
+          y: ((90 - lat) / 180) * 400
+        };
+      }
+
+      const dotsSvg = document.getElementById('heatmapDots');
+      const tooltip = document.getElementById('heatmapTooltip');
+      const wrap = dotsSvg.closest('.heatmap-wrap');
+      const ns = 'http://www.w3.org/2000/svg';
+      let html = '';
+
+      ips.forEach(ip => {
+        const cc = (ip.country || '').toUpperCase();
+        const center = COUNTRY_CENTERS[cc];
+        if (!center) return;
+
+        const pos = toSvg(center[0], center[1]);
+        const conf = ip.confidence || 0;
+        // Radius scales linearly: 3 to 10 SVG units (responsive)
+        const r = 3 + (conf / 100) * 7;
+        const isHigh = conf >= 90;
+        const colorClass = isHigh ? '' : 'orange';
+        const fillColor  = isHigh ? '#BE0000' : '#FF8A00';
+
+        html += '<circle class="heatmap-dot ' + colorClass + '" '
+          + 'cx="' + pos.x.toFixed(1) + '" '
+          + 'cy="' + pos.y.toFixed(1) + '" '
+          + 'r="' + r.toFixed(1) + '" '
+          + 'fill="' + fillColor + '" '
+          + 'data-ip="' + (ip.ip || '') + '" '
+          + 'data-cc="' + cc + '" '
+          + 'data-conf="' + conf + '" '
+          + 'data-reports="' + (ip.total_reports || 0) + '" '
+          + 'style="pointer-events:all;" />';
+      });
+
+      dotsSvg.innerHTML = html;
+
+      dotsSvg.querySelectorAll('.heatmap-dot').forEach(dot => {
+        const tooltipOffset = 28;
+        dot.addEventListener('mouseenter', function () {
+          const rect = wrap.getBoundingClientRect();
+          const dotRect = dot.getBoundingClientRect();
+          tooltip.textContent = dot.dataset.ip + ' (' + dot.dataset.cc + ') — '
+            + dot.dataset.conf + '% CONF — '
+            + Number(dot.dataset.reports).toLocaleString() + ' REPORTS';
+          tooltip.style.display = 'block';
+          tooltip.style.left = (dotRect.left - rect.left + dotRect.width / 2) + 'px';
+          tooltip.style.top  = (dotRect.top  - rect.top  - tooltipOffset) + 'px';
+        });
+        dot.addEventListener('mouseleave', function () {
+          tooltip.style.display = 'none';
+        });
+      });
+    }
+
     // ─── Staggered section reveal ─────────────────────────────────────────────
 
     function revealSections() {
@@ -1099,6 +1392,7 @@
         renderNvd(data);
         renderIps(data);
         renderMalware(data);
+        renderHeatMap(data);
 
       } catch (err) {
         console.error('[GASI] Failed to load data:', err);
