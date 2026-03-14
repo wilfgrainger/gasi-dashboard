@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-03-14T16:19:55.949520+00:00",
+  "generated_at": "2026-03-14T20:18:09.555526+00:00",
   "threat_score": {
-    "score": 6.5,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 4.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
-        "score": 2.5,
+        "value": 0,
+        "score": 0.5,
         "max": 3
       },
       {
@@ -238,151 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 248,
-    "critical_count": 7,
-    "high_count": 22,
-    "cves": [
-      {
-        "cve_id": "CVE-2026-26954",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "SandboxJS is a JavaScript sandboxing library. Prior to 0.8.34, it is possible to obtain arrays containing Function, which allows escaping the sandbox. Given an array containing Function, and Object.fr",
-        "published": "2026-03-13T19:54:31.143"
-      },
-      {
-        "cve_id": "CVE-2026-32306",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "OneUptime is a solution for monitoring and managing online services. Prior to 10.0.23, the telemetry aggregation API accepts user-controlled aggregationType, aggregateColumnName, and aggregationTimest",
-        "published": "2026-03-13T19:54:42.000"
-      },
-      {
-        "cve_id": "CVE-2026-25823",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "HMS Networks Ewon Flexy with firmware before 15.0s4, Cosy+ with firmware 22.xx before 22.1s6, and Cosy+ with firmware 23.xx before 23.0s3 have a stack buffer overflow that leads to a Denial of Service",
-        "published": "2026-03-13T19:54:27.790"
-      },
-      {
-        "cve_id": "CVE-2026-32304",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Locutus brings stdlibs of other programming languages to JavaScript for educational purposes. Prior to 3.0.14, the create_function(args, code) function passes both parameters directly to the Function ",
-        "published": "2026-03-13T19:54:41.830"
-      },
-      {
-        "cve_id": "CVE-2026-32301",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Centrifugo is an open-source scalable real-time messaging server. Prior to 6.7.0, Centrifugo is vulnerable to Server-Side Request Forgery (SSRF) when configured with a dynamic JWKS endpoint URL using ",
-        "published": "2026-03-13T19:54:41.477"
-      },
-      {
-        "cve_id": "CVE-2026-25818",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "HMS Networks Ewon Flexy with firmware before 15.0s4, Cosy+ with firmware 22.xx before 22.1s6, and Cosy+ with firmware 23.xx before 23.0s3 have weak entropy for authentication cookies, allowing an atta",
-        "published": "2026-03-13T19:54:27.353"
-      },
-      {
-        "cve_id": "CVE-2026-31886",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Dagu is a workflow engine with a built-in Web user interface. Prior to 2.2.4, the dagRunId request field accepted by the inline DAG execution endpoints is passed directly into filepath.Join to constru",
-        "published": "2026-03-13T19:54:37.690"
-      },
-      {
-        "cve_id": "CVE-2026-25817",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "HMS Networks Ewon Flexy with firmware before 15.0s4, Cosy+ with firmware 22.xx before 22.1s6, and Cosy+ with firmware 23.xx before 23.0s3 have improper neutralization of special elements used in an OS",
-        "published": "2026-03-13T19:54:25.283"
-      },
-      {
-        "cve_id": "CVE-2026-31917",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in weDevs WP ERP erp allows SQL Injection.This issue affects WP ERP: from n/a through <= 1.16.10.",
-        "published": "2026-03-13T19:54:38.807"
-      },
-      {
-        "cve_id": "CVE-2026-31922",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Ays Pro Fox LMS fox-lms allows Blind SQL Injection.This issue affects Fox LMS: from n/a through <=",
-        "published": "2026-03-13T19:54:39.393"
-      },
-      {
-        "cve_id": "CVE-2025-13777",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Authentication bypass by capture-replay vulnerability in ABB AWIN GW100 rev.2, ABB AWIN GW120.This issue affects AWIN GW100 rev.2: 2.0-0, 2.0-1; AWIN GW120: 1.2-0, 1.2-1.",
-        "published": "2026-03-13T19:53:49.073"
-      },
-      {
-        "cve_id": "CVE-2025-13779",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Missing authentication for critical function vulnerability in ABB AWIN GW100 rev.2, ABB AWIN GW120.This issue affects AWIN GW100 rev.2: 2.0-0, 2.0-1; AWIN GW120: 1.2-0, 1.2-1.",
-        "published": "2026-03-13T19:53:49.480"
-      },
-      {
-        "cve_id": "CVE-2026-22193",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "wpDiscuz before 7.6.47 contains an SQL injection vulnerability in the getAllSubscriptions() function where string parameters lack proper quote escaping in SQL queries. Attackers can inject malicious S",
-        "published": "2026-03-13T19:54:09.720"
-      },
-      {
-        "cve_id": "CVE-2026-22202",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "wpDiscuz before 7.6.47 contains a cross-site request forgery vulnerability that allows attackers to delete all comments associated with an email address by crafting a malicious GET request with a vali",
-        "published": "2026-03-13T19:54:10.353"
-      },
-      {
-        "cve_id": "CVE-2026-32302",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "OpenClaw is a personal AI assistant. Prior to 2026.3.11, browser-originated WebSocket connections could bypass origin validation when gateway.auth.mode was set to trusted-proxy and the request arrived",
-        "published": "2026-03-13T19:54:41.650"
-      },
-      {
-        "cve_id": "CVE-2026-0954",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "There is a memory corruption vulnerability due to an out-of-bounds write when loading a corrupted DSB file in Digilent DASYLab. \u00a0This vulnerability may result in information disclosure or arbitrary co",
-        "published": "2026-03-13T19:53:57.210"
-      },
-      {
-        "cve_id": "CVE-2026-0955",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "There is a memory corruption vulnerability due to an out-of-bounds read when loading a corrupted file in Digilent DASYLab. \u00a0This vulnerability may result in information disclosure or arbitrary code ex",
-        "published": "2026-03-13T19:53:57.400"
-      },
-      {
-        "cve_id": "CVE-2026-0956",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "There is a memory corruption vulnerability due to an out-of-bounds read when loading a corrupted file in Digilent DASYLab. \u00a0This vulnerability may result in information disclosure or arbitrary code ex",
-        "published": "2026-03-13T19:53:57.563"
-      },
-      {
-        "cve_id": "CVE-2026-0957",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "There is a memory corruption vulnerability due to an out-of-bounds write when loading a corrupted file in Digilent DASYLab. \u00a0This vulnerability may result in information disclosure or arbitrary code e",
-        "published": "2026-03-13T19:53:57.730"
-      },
-      {
-        "cve_id": "CVE-2026-31944",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "LibreChat is a ChatGPT clone with additional features. From 0.8.2 to 0.8.2-rc3, The MCP (Model Context Protocol) OAuth callback endpoint accepts the redirect from the identity provider and stores OAut",
-        "published": "2026-03-13T19:54:39.590"
-      }
-    ]
+    "total": 0,
+    "critical_count": 0,
+    "high_count": 0,
+    "cves": []
   },
   "top_ips": {
     "ips": [],
