@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-03-16T12:50:26.880034+00:00",
+  "generated_at": "2026-03-16T16:54:06.384319+00:00",
   "threat_score": {
-    "score": 4.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.5,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 24,
+        "value": 25,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 0.5,
+        "value": 6,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1542,
-    "recent_30d_count": 24,
+    "total_catalog_count": 1543,
+    "recent_30d_count": 25,
     "recent": [
+      {
+        "cve_id": "CVE-2025-47813",
+        "vendor": "Wing FTP Server",
+        "product": "Wing FTP Server",
+        "name": "Wing FTP Server Information Disclosure Vulnerability",
+        "date_added": "2026-03-16",
+        "due_date": "2026-03-30",
+        "description": "Wing FTP Server contains a generation of error message containing sensitive information vulnerability when using a long value in the UID cookie.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-3910",
         "vendor": "Google",
@@ -224,24 +234,155 @@
         "due_date": "2026-03-11",
         "description": "GitLab contains a server-side request forgery (SSRF) vulnerability when requests to the internal network for webhooks are enabled.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-22769",
-        "vendor": "Dell",
-        "product": "RecoverPoint for Virtual Machines (RP4VMs)",
-        "name": "Dell RecoverPoint for Virtual Machines (RP4VMs) Use of Hard-coded Credentials Vulnerability",
-        "date_added": "2026-02-18",
-        "due_date": "2026-02-21",
-        "description": "Dell RecoverPoint for Virtual Machines (RP4VMs) contains an use of hard-coded credentials vulnerability that could allow an unauthenticated remote attacker to gain unauthorized access to the underlyin",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 0,
-    "critical_count": 0,
-    "high_count": 0,
-    "cves": []
+    "total": 278,
+    "critical_count": 6,
+    "high_count": 21,
+    "cves": [
+      {
+        "cve_id": "CVE-2016-20024",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "ZKTeco ZKTime.Net 3.0.1.6 contains an insecure file permissions vulnerability that allows unprivileged users to escalate privileges by modifying executable files. Attackers can exploit world-writable ",
+        "published": "2026-03-16T14:17:48.350"
+      },
+      {
+        "cve_id": "CVE-2016-20026",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "ZKTeco ZKBioSecurity 3.0 contains hardcoded credentials in the bundled Apache Tomcat server that allow unauthenticated attackers to access the manager application. Attackers can authenticate with hard",
+        "published": "2026-03-16T14:17:48.777"
+      },
+      {
+        "cve_id": "CVE-2016-20030",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "ZKTeco ZKBioSecurity 3.0 contains a user enumeration vulnerability that allows unauthenticated attackers to discover valid usernames by submitting partial characters via the username parameter. Attack",
+        "published": "2026-03-16T14:17:49.727"
+      },
+      {
+        "cve_id": "CVE-2017-20223",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Telesquare SKT LTE Router SDT-CS3B1 firmware version 1.2.0 contains an insecure direct object reference vulnerability that allows attackers to bypass authorization and access resources by manipulating",
+        "published": "2026-03-16T14:17:52.347"
+      },
+      {
+        "cve_id": "CVE-2017-20224",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Telesquare SKT LTE Router SDT-CS3B1 version 1.2.0 contains an arbitrary file upload vulnerability that allows unauthenticated attackers to upload malicious content by exploiting enabled WebDAV HTTP me",
+        "published": "2026-03-16T14:17:52.560"
+      },
+      {
+        "cve_id": "CVE-2025-15060",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "claude-hovercraft executeClaudeCode Command Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of claude-hove",
+        "published": "2026-03-16T14:17:55.780"
+      },
+      {
+        "cve_id": "CVE-2016-20025",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "ZKTeco ZKAccess Professional 3.5.3 contains an insecure file permissions vulnerability that allows authenticated users to escalate privileges by modifying executable files. Attackers can leverage the ",
+        "published": "2026-03-16T14:17:48.573"
+      },
+      {
+        "cve_id": "CVE-2016-20034",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Wowza Streaming Engine 4.5.0 contains a privilege escalation vulnerability that allows authenticated read-only users to elevate privileges to administrator by manipulating POST parameters. Attackers c",
+        "published": "2026-03-16T14:17:50.507"
+      },
+      {
+        "cve_id": "CVE-2026-28519",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "arduino-TuyaOpen before version 1.2.1 contains a heap-based buffer overflow vulnerability in the DnsServer component. An attacker on the same local area network who controls the LAN DNS server can sen",
+        "published": "2026-03-16T14:19:28.127"
+      },
+      {
+        "cve_id": "CVE-2026-28520",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "arduino-TuyaOpen before version 1.2.1 contains a single-byte buffer overflow vulnerability in the WiFiMulti component. When the victim's smart hardware connects to an attacker-controlled AP hotspot, t",
+        "published": "2026-03-16T14:19:28.343"
+      },
+      {
+        "cve_id": "CVE-2026-25083",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "GROWI OpenAI thread/message API endpoints do not perform authorization. Affected are v7.4.5 and earlier versions. A logged-in user who knows a shared AI assistant's identifier may view and/or tamper t",
+        "published": "2026-03-16T14:18:18.177"
+      },
+      {
+        "cve_id": "CVE-2015-20120",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Next Click Ventures RealtyScript 4.0.2 contains multiple time-based blind SQL injection vulnerabilities that allow unauthenticated attackers to extract database information by injecting SQL code into ",
+        "published": "2026-03-16T14:17:47.957"
+      },
+      {
+        "cve_id": "CVE-2015-20121",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Next Click Ventures RealtyScript 4.0.2 contains SQL injection vulnerabilities that allow unauthenticated attackers to manipulate database queries by injecting arbitrary SQL code through the GET parame",
+        "published": "2026-03-16T14:17:48.160"
+      },
+      {
+        "cve_id": "CVE-2016-20033",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Wowza Streaming Engine 4.5.0 contains a local privilege escalation vulnerability that allows authenticated users to escalate privileges by replacing executable files due to improper file permissions g",
+        "published": "2026-03-16T14:17:50.297"
+      },
+      {
+        "cve_id": "CVE-2017-20218",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Serviio PRO 1.8 contains an unquoted search path vulnerability in the Windows service that allows local users to execute arbitrary code with elevated privileges by placing malicious executables in the",
+        "published": "2026-03-16T14:17:51.317"
+      },
+      {
+        "cve_id": "CVE-2026-28521",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "arduino-TuyaOpen before version 1.2.1 contains an out-of-bounds memory read vulnerability in the TuyaIoT component. An attacker who hijacks or controls the Tuya cloud service can issue malicious DP ev",
+        "published": "2026-03-16T14:19:28.557"
+      },
+      {
+        "cve_id": "CVE-2013-20006",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Qool CMS contains multiple persistent cross-site scripting vulnerabilities in several administrative scripts where POST parameters are not properly sanitized before being stored and returned to users.",
+        "published": "2026-03-16T14:17:46.170"
+      },
+      {
+        "cve_id": "CVE-2017-20217",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Serviio PRO 1.8 contains an information disclosure vulnerability due to improper access control enforcement in the Configuration REST API that allows unauthenticated attackers to access sensitive info",
+        "published": "2026-03-16T14:17:51.090"
+      },
+      {
+        "cve_id": "CVE-2017-20220",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Serviio PRO 1.8 contains an improper access control vulnerability in the Configuration REST API that allows unauthenticated attackers to change the mediabrowser login password. Attackers can send spec",
+        "published": "2026-03-16T14:17:51.730"
+      },
+      {
+        "cve_id": "CVE-2017-20222",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Telesquare SKT LTE Router SDT-CS3B1 software version 1.2.0 contains an unauthenticated remote reboot vulnerability that allows attackers to trigger device reboot without authentication. Attackers can ",
+        "published": "2026-03-16T14:17:52.137"
+      }
+    ]
   },
   "top_ips": {
     "ips": [],
