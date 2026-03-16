@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-16T16:54:06.384319+00:00",
+  "generated_at": "2026-03-16T20:29:15.998063+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
+        "value": 7,
         "score": 2.5,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 278,
-    "critical_count": 6,
-    "high_count": 21,
+    "total": 320,
+    "critical_count": 7,
+    "high_count": 22,
     "cves": [
       {
         "cve_id": "CVE-2016-20024",
@@ -285,6 +285,13 @@
         "published": "2026-03-16T14:17:55.780"
       },
       {
+        "cve_id": "CVE-2025-69246",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Raytha CMS does not have any brute force protection mechanism implemented. It allows an attacker to send multiple automated logon requests without triggering lockout, throttling, or step-up challenges",
+        "published": "2026-03-16T14:18:02.093"
+      },
+      {
         "cve_id": "CVE-2016-20025",
         "severity": "HIGH",
         "base_score": 8.8,
@@ -297,6 +304,13 @@
         "base_score": 8.8,
         "description": "Wowza Streaming Engine 4.5.0 contains a privilege escalation vulnerability that allows authenticated read-only users to elevate privileges to administrator by manipulating POST parameters. Attackers c",
         "published": "2026-03-16T14:17:50.507"
+      },
+      {
+        "cve_id": "CVE-2025-69240",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Raytha CMS allows an attacker to spoof `X-Forwarded-Host` or `Host` headers to attacker controlled domain. The attacker (who knows the victim's email address)\u00a0can force the server to send an email wit",
+        "published": "2026-03-16T14:18:01.207"
       },
       {
         "cve_id": "CVE-2026-28519",
@@ -367,20 +381,6 @@
         "base_score": 7.5,
         "description": "Serviio PRO 1.8 contains an information disclosure vulnerability due to improper access control enforcement in the Configuration REST API that allows unauthenticated attackers to access sensitive info",
         "published": "2026-03-16T14:17:51.090"
-      },
-      {
-        "cve_id": "CVE-2017-20220",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Serviio PRO 1.8 contains an improper access control vulnerability in the Configuration REST API that allows unauthenticated attackers to change the mediabrowser login password. Attackers can send spec",
-        "published": "2026-03-16T14:17:51.730"
-      },
-      {
-        "cve_id": "CVE-2017-20222",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Telesquare SKT LTE Router SDT-CS3B1 software version 1.2.0 contains an unauthenticated remote reboot vulnerability that allows attackers to trigger device reboot without authentication. Attackers can ",
-        "published": "2026-03-16T14:17:52.137"
       }
     ]
   },
