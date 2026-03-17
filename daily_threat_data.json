@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-17T16:56:41.140946+00:00",
+  "generated_at": "2026-03-17T20:30:03.189392+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 10,
-        "score": 3.0,
+        "value": 8,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,31 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 90,
-    "critical_count": 10,
-    "high_count": 22,
+    "total": 96,
+    "critical_count": 8,
+    "high_count": 23,
     "cves": [
-      {
-        "cve_id": "CVE-2026-4252",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A vulnerability was identified in Tenda AC8 16.03.50.11. Affected by this issue is the function check_is_ipv6 of the component IPv6 Handler. The manipulation leads to reliance on ip address for authen",
-        "published": "2026-03-16T17:16:32.057"
-      },
-      {
-        "cve_id": "CVE-2026-4254",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A weakness has been identified in Tenda AC8 up to 16.03.50.11. This vulnerability affects the function doSystemCmd of the file /goform/SysToolChangePwd of the component HTTP Endpoint. This manipulatio",
-        "published": "2026-03-16T18:16:10.773"
-      },
-      {
-        "cve_id": "CVE-2025-69809",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A write-what-where condition in p2r3 Bareiron commit 8e4d40 allows unauthenticated attackers to write arbitrary values to memory, enabling arbitrary code execution via a crafted packet.",
-        "published": "2026-03-16T19:16:14.960"
-      },
       {
         "cve_id": "CVE-2025-69902",
         "severity": "CRITICAL",
@@ -278,27 +257,6 @@
         "published": "2026-03-17T08:15:57.417"
       },
       {
-        "cve_id": "CVE-2026-23489",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Fields is a GLPI plugin that allows users to add custom fields on GLPI items forms. Prior to version 1.23.3, it is possible to execute arbitrary PHP code from users that are allowed to create dropdown",
-        "published": "2026-03-16T18:16:06.800"
-      },
-      {
-        "cve_id": "CVE-2026-27962",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Authlib is a Python library which builds OAuth and OpenID Connect servers. Prior to version 1.6.9, a JWK Header Injection vulnerability in authlib's JWS implementation allows an unauthenticated attack",
-        "published": "2026-03-16T18:16:07.383"
-      },
-      {
-        "cve_id": "CVE-2025-69808",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "An out-of-bounds memory access (OOB) in p2r3 Bareiron commit 8e4d40 allows unauthenticated attackers to access sensitive information and cause a Denial of Service (DoS) via supplying a crafted packet.",
-        "published": "2026-03-16T19:16:14.850"
-      },
-      {
         "cve_id": "CVE-2026-4177",
         "severity": "CRITICAL",
         "base_score": 9.1,
@@ -306,25 +264,39 @@
         "published": "2026-03-16T23:16:21.543"
       },
       {
+        "cve_id": "CVE-2026-25534",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "### Impact\nSpinnaker updated URL Validation logic on user input to provide sanitation on user inputted URLs for clouddriver.  However, they missed that Java URL objects do not correctly handle undersc",
+        "published": "2026-03-17T18:16:15.063"
+      },
+      {
+        "cve_id": "CVE-2026-25769",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Wazuh is a free and open source platform used for threat prevention, detection, and response. Versions 4.0.0 through 4.14.2 have a Remote Code Execution (RCE) vulnerability due to Deserialization of U",
+        "published": "2026-03-17T18:16:15.267"
+      },
+      {
+        "cve_id": "CVE-2026-25770",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Wazuh is a free and open source platform used for threat prevention, detection, and response. Starting in version 3.9.0 and prior to version 4.14.3, a privilege escalation vulnerability exists in the ",
+        "published": "2026-03-17T18:16:15.437"
+      },
+      {
+        "cve_id": "CVE-2026-32298",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The Angeet ES3 KVM does not properly sanitize user-supplied variables parsed by the 'cfg.lua' script, allowing an authenticated attacker to execute OS-level commands.",
+        "published": "2026-03-17T18:16:17.313"
+      },
+      {
         "cve_id": "CVE-2026-3564",
         "severity": "CRITICAL",
         "base_score": 9.0,
         "description": "A condition in ScreenConnect may allow an actor with access to server-level cryptographic material used for authentication to obtain unauthorized access, including elevated privileges, in certain scen",
         "published": "2026-03-17T15:16:19.253"
-      },
-      {
-        "cve_id": "CVE-2026-30875",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Chamilo LMS is a learning management system. Prior to version 1.11.36, an arbitrary file upload vulnerability in the H5P Import feature allows authenticated users with Teacher role to achieve Remote C",
-        "published": "2026-03-16T20:16:18.330"
-      },
-      {
-        "cve_id": "CVE-2026-30881",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Chamilo LMS is a learning management system. Version 1.11.34 and prior contains a SQL Injection vulnerability in the statistics AJAX endpoint. The parameters date_start and date_end from $_REQUEST are",
-        "published": "2026-03-16T20:16:18.640"
       },
       {
         "cve_id": "CVE-2025-50881",
@@ -355,6 +327,13 @@
         "published": "2026-03-17T04:16:07.750"
       },
       {
+        "cve_id": "CVE-2026-32296",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Sipeed NanoKVM before 2.3.1 exposes a Wi-Fi configuration endpoint without proper security checks, allowing an unauthenticated attacker with network access to change the saved configured Wi-Fi network",
+        "published": "2026-03-17T18:16:16.960"
+      },
+      {
         "cve_id": "CVE-2026-30911",
         "severity": "HIGH",
         "base_score": 8.1,
@@ -369,18 +348,39 @@
         "published": "2026-03-17T16:16:20.350"
       },
       {
-        "cve_id": "CVE-2026-23862",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Dell ThinOS 10 versions prior to ThinOS 2602_10.0573, contain an Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability. A low privileged attacker with local",
-        "published": "2026-03-16T18:16:06.980"
-      },
-      {
         "cve_id": "CVE-2026-3888",
         "severity": "HIGH",
         "base_score": 7.8,
         "description": "Local privilege escalation in snapd on Linux allows local attackers to get root privilege by re-creating snap's private /tmp directory when systemd-tmpfiles is configured to automatically clean up thi",
         "published": "2026-03-17T14:16:17.410"
+      },
+      {
+        "cve_id": "CVE-2025-64301",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "An out\u2011of\u2011bounds write vulnerability exists in the EMF functionality of Canva Affinity. By using a specially crafted EMF file, an attacker could exploit this vulnerability to perform an out\u2011of\u2011bounds ",
+        "published": "2026-03-17T19:15:58.587"
+      },
+      {
+        "cve_id": "CVE-2025-66342",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "A type confusion vulnerability exists in the EMF functionality of Canva Affinity. A specially crafted EMF file can trigger this vulnerability, which can lead to memory corruption and result in arbitra",
+        "published": "2026-03-17T19:15:59.750"
+      },
+      {
+        "cve_id": "CVE-2026-4295",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Improper trust boundary enforcement in Kiro IDE before version 0.8.0 on all supported platforms might allow a remote unauthenticated threat actor to execute arbitrary code via maliciously crafted proj",
+        "published": "2026-03-17T20:16:14.840"
+      },
+      {
+        "cve_id": "CVE-2026-2579",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The WowStore \u2013 Store Builder & Product Blocks for WooCommerce plugin for WordPress is vulnerable to SQL Injection via the \u2018search\u2019 parameter in all versions up to, and including, 4.4.3 due to insuffic",
+        "published": "2026-03-17T02:16:13.860"
       }
     ]
   },
