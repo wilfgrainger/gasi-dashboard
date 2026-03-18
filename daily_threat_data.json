@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-03-18T16:50:47.832988+00:00",
+  "generated_at": "2026-03-18T20:27:32.506284+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 25,
+        "value": 27,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
-        "score": 2.5,
+        "value": 3,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -32,9 +32,29 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1543,
-    "recent_30d_count": 25,
+    "total_catalog_count": 1545,
+    "recent_30d_count": 27,
     "recent": [
+      {
+        "cve_id": "CVE-2025-66376",
+        "vendor": "Synacor",
+        "product": "Zimbra Collaboration Suite (ZCS)",
+        "name": "Synacor Zimbra Collaboration Suite (ZCS) Cross-Site Scripting Vulnerability",
+        "date_added": "2026-03-18",
+        "due_date": "2026-04-01",
+        "description": "Synacor Zimbra Collaboration Suite (ZCS) contains a cross-site scripting vulnerability in the Classic UI where attackers could abuse Cascading Style Sheets (CSS) @import directives in email HTML.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-20963",
+        "vendor": "Microsoft",
+        "product": "SharePoint",
+        "name": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability",
+        "date_added": "2026-03-18",
+        "due_date": "2026-03-21",
+        "description": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability that allows an unauthorized attacker to execute code over a network.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2025-47813",
         "vendor": "Wing FTP Server",
@@ -214,33 +234,13 @@
         "due_date": "2026-03-13",
         "description": "RoundCube Webmail contains a deserialization of untrusted data vulnerability that allows remote code execution by authenticated users because the _from parameter in a URL is not validated in program/a",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2025-68461",
-        "vendor": "Roundcube",
-        "product": "Webmail",
-        "name": "RoundCube Webmail Cross-site Scripting Vulnerability",
-        "date_added": "2026-02-20",
-        "due_date": "2026-03-13",
-        "description": "RoundCube Webmail contains a cross-site scripting vulnerability via the animate tag in an SVG document.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2021-22175",
-        "vendor": "GitLab",
-        "product": "GitLab",
-        "name": "GitLab Server-Side Request Forgery (SSRF) Vulnerability",
-        "date_added": "2026-02-18",
-        "due_date": "2026-03-11",
-        "description": "GitLab contains a server-side request forgery (SSRF) vulnerability when requests to the internal network for webhooks are enabled.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 180,
-    "critical_count": 5,
-    "high_count": 25,
+    "total": 192,
+    "critical_count": 3,
+    "high_count": 33,
     "cves": [
       {
         "cve_id": "CVE-2026-21994",
@@ -250,32 +250,18 @@
         "published": "2026-03-17T23:16:17.310"
       },
       {
-        "cve_id": "CVE-2026-25534",
+        "cve_id": "CVE-2026-30884",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "### Impact\nSpinnaker updated URL Validation logic on user input to provide sanitation on user inputted URLs for clouddriver.  However, they missed that Java URL objects do not correctly handle undersc",
-        "published": "2026-03-17T18:16:15.063"
+        "base_score": 9.6,
+        "description": "mdjnelson/moodle-mod_customcert is a Moodle plugin for creating dynamically generated certificates with complete customization via the web browser. Prior to versions 4.4.9 and 5.0.3, a teacher who hol",
+        "published": "2026-03-18T04:17:18.030"
       },
       {
-        "cve_id": "CVE-2026-25769",
+        "cve_id": "CVE-2026-31938",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Wazuh is a free and open source platform used for threat prevention, detection, and response. Versions 4.0.0 through 4.14.2 have a Remote Code Execution (RCE) vulnerability due to Deserialization of U",
-        "published": "2026-03-17T18:16:15.267"
-      },
-      {
-        "cve_id": "CVE-2026-25770",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Wazuh is a free and open source platform used for threat prevention, detection, and response. Starting in version 3.9.0 and prior to version 4.14.3, a privilege escalation vulnerability exists in the ",
-        "published": "2026-03-17T18:16:15.437"
-      },
-      {
-        "cve_id": "CVE-2026-32298",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The Angeet ES3 KVM does not properly sanitize user-supplied variables parsed by the 'cfg.lua' script, allowing an authenticated attacker to execute OS-level commands.",
-        "published": "2026-03-17T18:16:17.313"
+        "base_score": 9.6,
+        "description": "jsPDF is a library to generate PDFs in JavaScript. Prior to version 4.2.1, user control of the `options` argument of the `output` function allows attackers to inject arbitrary HTML (such as scripts) i",
+        "published": "2026-03-18T04:17:23.507"
       },
       {
         "cve_id": "CVE-2026-27811",
@@ -292,6 +278,20 @@
         "published": "2026-03-18T00:16:19.607"
       },
       {
+        "cve_id": "CVE-2026-29056",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Kanboard is project management software focused on Kanban methodology. Prior to 1.2.51, Kanboard's user invite registration endpoint (`UserInviteController::register()`) accepts all POST parameters an",
+        "published": "2026-03-18T02:16:24.407"
+      },
+      {
+        "cve_id": "CVE-2026-22730",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A critical SQL injection vulnerability in Spring AI's MariaDBFilterExpressionConverter allows attackers to bypass metadata-based access controls and execute arbitrary SQL commands.\n\nThe vulnerability ",
+        "published": "2026-03-18T08:16:31.170"
+      },
+      {
         "cve_id": "CVE-2026-28500",
         "severity": "HIGH",
         "base_score": 8.6,
@@ -299,18 +299,11 @@
         "published": "2026-03-18T02:16:24.227"
       },
       {
-        "cve_id": "CVE-2026-4064",
+        "cve_id": "CVE-2026-22729",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Missing authorization checks on multiple gRPC service endpoints in PowerShell Universal before 2026.1.4 allows an authenticated user with any valid token to bypass role-based access controls and perfo",
-        "published": "2026-03-17T20:16:14.717"
-      },
-      {
-        "cve_id": "CVE-2026-32296",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Sipeed NanoKVM before 2.3.1 exposes a Wi-Fi configuration endpoint without proper security checks, allowing an unauthenticated attacker with network access to change the saved configured Wi-Fi network",
-        "published": "2026-03-17T18:16:16.960"
+        "base_score": 8.6,
+        "description": "A JSONPath injection vulnerability in Spring AI's AbstractFilterExpressionConverter allows authenticated users to bypass metadata-based access controls through crafted filter expressions. User-control",
+        "published": "2026-03-18T08:16:31.000"
       },
       {
         "cve_id": "CVE-2026-22171",
@@ -320,13 +313,6 @@
         "published": "2026-03-18T02:16:21.310"
       },
       {
-        "cve_id": "CVE-2026-30707",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "An issue was discovered in SpeedExam Online Examination System (SaaS) after v.FEV2026. It allows Broken Access Control via the ReviewAnswerDetails ASP.NET PageMethod. Authenticated attackers can bypas",
-        "published": "2026-03-17T20:16:13.870"
-      },
-      {
         "cve_id": "CVE-2026-32841",
         "severity": "HIGH",
         "base_score": 8.1,
@@ -334,53 +320,67 @@
         "published": "2026-03-17T22:16:15.043"
       },
       {
-        "cve_id": "CVE-2025-64301",
+        "cve_id": "CVE-2026-2603",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "An out\u2011of\u2011bounds write vulnerability exists in the EMF functionality of Canva Affinity. By using a specially crafted EMF file, an attacker could exploit this vulnerability to perform an out\u2011of\u2011bounds ",
-        "published": "2026-03-17T19:15:58.587"
+        "base_score": 8.1,
+        "description": "A flaw was found in Keycloak. A remote attacker could bypass security controls by sending a valid SAML response from an external Identity Provider (IdP) to the Keycloak SAML endpoint for IdP-initiated",
+        "published": "2026-03-18T02:16:24.813"
       },
       {
-        "cve_id": "CVE-2025-66342",
+        "cve_id": "CVE-2026-31898",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A type confusion vulnerability exists in the EMF functionality of Canva Affinity. A specially crafted EMF file can trigger this vulnerability, which can lead to memory corruption and result in arbitra",
-        "published": "2026-03-17T19:15:59.750"
+        "base_score": 8.1,
+        "description": "jsPDF is a library to generate PDFs in JavaScript. Prior to version 4.2.1, user control of arguments of the `createAnnotation` method allows users to inject arbitrary PDF objects, such as JavaScript a",
+        "published": "2026-03-18T04:17:21.050"
       },
       {
-        "cve_id": "CVE-2026-4295",
+        "cve_id": "CVE-2026-2092",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Improper trust boundary enforcement in Kiro IDE before version 0.8.0 on all supported platforms might allow a remote unauthenticated threat actor to execute arbitrary code via maliciously crafted proj",
-        "published": "2026-03-17T20:16:14.840"
+        "base_score": 7.7,
+        "description": "A flaw was found in Keycloak. Keycloak's Security Assertion Markup Language (SAML) broker endpoint does not properly validate encrypted assertions when the overall SAML response is not signed. An atta",
+        "published": "2026-03-18T02:16:24.577"
       },
       {
-        "cve_id": "CVE-2026-32292",
+        "cve_id": "CVE-2026-31891",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "Cockpit is a headless content management system. Any Cockpit CMS instance running version 2.13.4 or earlier with API access enabled is potentially affected by a a SQL Injection vulnerability in the Mo",
+        "published": "2026-03-18T04:17:19.570"
+      },
+      {
+        "cve_id": "CVE-2026-32606",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "IncusOS is an immutable OS image dedicated to running Incus. Prior to 202603142010, the default configuration of systemd-cryptenroll as used by IncusOS through mkosi allows for an attacker with physic",
+        "published": "2026-03-18T06:16:18.970"
+      },
+      {
+        "cve_id": "CVE-2026-1376",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "The GL-iNet Comet (GL-RM1) KVM web interface does not limit login requests, enabling brute-force attempts to guess credentials.",
-        "published": "2026-03-17T18:16:16.227"
+        "description": "IBM i 7.6 could allow a remote attacker to cause a denial of service using failed authentication connections due to improper allocation of resources.",
+        "published": "2026-03-17T22:16:14.287"
       },
       {
-        "cve_id": "CVE-2026-32295",
+        "cve_id": "CVE-2026-32838",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "JetKVM before 0.5.4 does not rate limit login requests, enabling brute-force attempts to guess credentials.",
-        "published": "2026-03-17T18:16:16.790"
+        "description": "Edimax GS-5008PL firmware version 1.00.54 and prior use cleartext HTTP for the web management interface without implementing TLS or SSL encryption. Attackers on the same network can intercept manageme",
+        "published": "2026-03-17T22:16:14.457"
       },
       {
-        "cve_id": "CVE-2026-32297",
+        "cve_id": "CVE-2025-14031",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "The Angeet ES3 KVM allows a remote, unauthenticated attacker to write arbitrary files, including configuration files or system binaries. Modified configuration files or system binaries could allow an ",
-        "published": "2026-03-17T18:16:17.137"
+        "description": "IBM Sterling B2B Integrator and\u00a0and IBM Sterling File Gateway\u00a06.1.0.0 through 6.1.2.7_2, 6.2.0.0 through 6.2.0.5_1, 6.2.1.0 through 6.2.1.1_1, and 6.2.2.0 could allow an unauthenticated attacker to se",
+        "published": "2026-03-17T23:16:15.863"
       },
       {
-        "cve_id": "CVE-2026-32981",
+        "cve_id": "CVE-2026-22727",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "A path traversal vulnerability was identified in Ray Dashboard (default port 8265) in Ray versions prior to 2.8.1. Due to improper validation and sanitization of user-supplied paths in the static file",
-        "published": "2026-03-17T20:16:14.373"
+        "description": "Unprotected internal endpoints in Cloud Foundry Capi Release 1.226.0 and below, and CF Deployment v54.9.0 and below on all platforms allows any user who has bypassed the firewall to potentially replac",
+        "published": "2026-03-17T23:16:17.470"
       }
     ]
   },
