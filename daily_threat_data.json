@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-03-19T12:40:56.003475+00:00",
+  "generated_at": "2026-03-19T16:47:51.295644+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 23,
+        "value": 24,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
-        "score": 2.5,
+        "value": 10,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1545,
-    "recent_30d_count": 23,
+    "total_catalog_count": 1546,
+    "recent_30d_count": 24,
     "recent": [
+      {
+        "cve_id": "CVE-2026-20131",
+        "vendor": "Cisco",
+        "product": "Secure Firewall Management Center (FMC)",
+        "name": "Cisco Secure Firewall Management Center (FMC) Software and Cisco Security Cloud Control (SCC) Firewall Management Deserialization of Untrusted Data Vulnerability",
+        "date_added": "2026-03-19",
+        "due_date": "2026-03-22",
+        "description": "Cisco Secure Firewall Management Center (FMC) Software and Cisco Security Cloud Control (SCC) Firewall Management contain a deserialization of untrusted data vulnerability in the web-based management ",
+        "ransomware_use": "Known"
+      },
       {
         "cve_id": "CVE-2025-66376",
         "vendor": "Synacor",
@@ -224,37 +234,34 @@
         "due_date": "2026-03-17",
         "description": "Soliton Systems K.K FileZen contains an OS command injection vulnerability when an user logs-in to the affected product and sends a specially crafted HTTP request.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2025-49113",
-        "vendor": "Roundcube",
-        "product": "Webmail",
-        "name": "RoundCube Webmail Deserialization of Untrusted Data Vulnerability",
-        "date_added": "2026-02-20",
-        "due_date": "2026-03-13",
-        "description": "RoundCube Webmail contains a deserialization of untrusted data vulnerability that allows remote code execution by authenticated users because the _from parameter in a URL is not validated in program/a",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 182,
-    "critical_count": 6,
-    "high_count": 16,
+    "total": 179,
+    "critical_count": 10,
+    "high_count": 24,
     "cves": [
       {
-        "cve_id": "CVE-2026-25449",
+        "cve_id": "CVE-2026-32731",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Deserialization of Untrusted Data vulnerability in Shinetheme Traveler allows Object Injection.This issue affects Traveler: from n/a before 3.2.8.1.",
-        "published": "2026-03-18T14:16:39.297"
+        "base_score": 9.9,
+        "description": "ApostropheCMS is an open-source content management framework. Prior to version 3.5.3 of `@apostrophecms/import-export`,\nThe `extract()` function in `gzip.js` constructs file-write paths using `fs.crea",
+        "published": "2026-03-18T23:17:29.543"
       },
       {
-        "cve_id": "CVE-2026-2991",
+        "cve_id": "CVE-2025-67830",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "The KiviCare \u2013 Clinic & Patient Management System (EHR) plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 4.1.2. This is due to the `patientSocialLogin(",
-        "published": "2026-03-18T16:16:27.400"
+        "description": "Mura before 10.1.14 allows beanFeed.cfc getQuery sortby SQL injection.",
+        "published": "2026-03-18T17:16:04.593"
+      },
+      {
+        "cve_id": "CVE-2026-29859",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An arbitrary file upload vulnerability in aaPanel v7.57.0 allows attackers to execute arbitrary code via uploading a crafted file.",
+        "published": "2026-03-18T18:16:27.347"
       },
       {
         "cve_id": "CVE-2026-25873",
@@ -264,11 +271,32 @@
         "published": "2026-03-18T21:16:25.220"
       },
       {
+        "cve_id": "CVE-2026-30704",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The WiFi Extender WDR201A (HW V2.1, FW LFMZX28040922V1.02) exposes an unprotected UART interface through accessible hardware pads on the PCB",
+        "published": "2026-03-18T18:16:28.077"
+      },
+      {
         "cve_id": "CVE-2026-32633",
         "severity": "CRITICAL",
         "base_score": 9.1,
         "description": "Glances is an open-source system cross-platform monitoring tool. Prior to version 4.5.2, in Central Browser mode, the `/api/4/serverslist` endpoint returns raw server objects from `GlancesServersList.",
         "published": "2026-03-18T18:16:28.933"
+      },
+      {
+        "cve_id": "CVE-2026-31966",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "HTSlib is a library for reading and writing bioinformatics file formats. CRAM is a compressed format which stores DNA sequence alignment data. As one method of removing redundant data, CRAM uses refer",
+        "published": "2026-03-18T20:16:21.060"
+      },
+      {
+        "cve_id": "CVE-2026-31967",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "HTSlib is a library for reading and writing bioinformatics file formats. CRAM is a compressed format which stores DNA sequence alignment data. In the `cram_decode_slice()` function called while readin",
+        "published": "2026-03-18T20:16:21.280"
       },
       {
         "cve_id": "CVE-2026-32698",
@@ -285,25 +313,18 @@
         "published": "2026-03-18T22:16:24.517"
       },
       {
-        "cve_id": "CVE-2026-32693",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "In Juju from version 3.0.0 through 3.6.18, the authorization of the \"secret-set\" tool is not performed correctly, which allows a grantee to update the secret content, and can lead to reading or updati",
-        "published": "2026-03-18T13:16:18.860"
-      },
-      {
-        "cve_id": "CVE-2025-55040",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The import form CSRF vulnerability in MuraCMS through 10.1.10 allows attackers to upload and install malicious form definitions through a CSRF attack. The vulnerable cForm.importform function lacks CS",
-        "published": "2026-03-18T16:16:23.170"
-      },
-      {
         "cve_id": "CVE-2026-1463",
         "severity": "HIGH",
         "base_score": 8.8,
         "description": "The Photo Gallery, Sliders, Proofing and Themes \u2013 NextGEN Gallery plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 4.0.3 via the 'template' parameter in",
         "published": "2026-03-18T17:16:05.510"
+      },
+      {
+        "cve_id": "CVE-2025-58112",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Microsoft Dynamics 365 Customer Engagement (on-premises) 1612 (9.0.2.3034) allows the generation of customized reports via raw SQL queries in an upload of a .rdl (Report Definition Language) file; thi",
+        "published": "2026-03-18T19:16:03.497"
       },
       {
         "cve_id": "CVE-2026-32321",
@@ -313,6 +334,13 @@
         "published": "2026-03-18T21:16:26.410"
       },
       {
+        "cve_id": "CVE-2026-32255",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Kan is an open-source project management tool. In versions 0.5.4 and below, the /api/download/attatchment endpoint has no authentication and no URL validation. The Attachment Download endpoint accepts",
+        "published": "2026-03-19T00:16:18.003"
+      },
+      {
         "cve_id": "CVE-2026-4396",
         "severity": "HIGH",
         "base_score": 8.3,
@@ -320,25 +348,18 @@
         "published": "2026-03-18T20:16:22.933"
       },
       {
-        "cve_id": "CVE-2026-24063",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "When a plugin is installed using the Arturia Software Center (MacOS), it also installs an uninstall.sh bash script in a root owned path. This script is written to disk with the file permissions 777, m",
-        "published": "2026-03-18T16:16:26.527"
-      },
-      {
-        "cve_id": "CVE-2026-2992",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "The KiviCare \u2013 Clinic & Patient Management System (EHR) plugin for WordPress is vulnerable to Privilege Escalation due to missing authorization on the `/wp-json/kivicare/v1/setup-wizard/clinic` REST A",
-        "published": "2026-03-18T16:16:27.583"
-      },
-      {
         "cve_id": "CVE-2026-26740",
         "severity": "HIGH",
         "base_score": 8.2,
         "description": "Buffer Overflow vulnerability in giflib v.5.2.2 allows a remote attacker to cause a denial of service via the EGifGCBToExtension overwriting an existing Graphic Control Extension block without validat",
         "published": "2026-03-18T18:16:26.220"
+      },
+      {
+        "cve_id": "CVE-2026-31965",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "HTSlib is a library for reading and writing bioinformatics file formats. CRAM is a compressed format which stores DNA sequence alignment data. In the `cram_decode_slice()` function called while readin",
+        "published": "2026-03-18T19:16:04.823"
       },
       {
         "cve_id": "CVE-2026-32610",
@@ -355,32 +376,11 @@
         "published": "2026-03-18T18:16:29.097"
       },
       {
-        "cve_id": "CVE-2026-24062",
+        "cve_id": "CVE-2026-31963",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "The \"Privileged Helper\" component of the Arturia Software Center (MacOS) does not perform sufficient client code signature validation when a client connects.\u00a0This leads to an attacker being able to co",
-        "published": "2026-03-18T16:16:26.300"
-      },
-      {
-        "cve_id": "CVE-2026-32692",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "An authorization bypass vulnerability in the Vault secrets back-end implementation of Juju versions 3.1.6 through 3.6.18 allows an authenticated unit agent to perform unauthorized updates to secret re",
-        "published": "2026-03-18T13:16:18.710"
-      },
-      {
-        "cve_id": "CVE-2026-32609",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Glances is an open-source system cross-platform monitoring tool. The GHSA-gh4x fix (commit 5d3de60) addressed unauthenticated configuration secrets exposure on the `/api/v4/config` endpoints by introd",
-        "published": "2026-03-18T15:16:30.780"
-      },
-      {
-        "cve_id": "CVE-2026-27135",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "nghttp2 is an implementation of the Hypertext Transfer Protocol version 2 in C. Prior to version 1.68.1, the nghttp2 library stops reading the incoming data when user facing public API `nghttp2_sessio",
-        "published": "2026-03-18T18:16:26.723"
+        "base_score": 8.1,
+        "description": "HTSlib is a library for reading and writing bioinformatics file formats. CRAM is a compressed format which stores DNA sequence alignment data. As one method of removing redundant data, CRAM uses refer",
+        "published": "2026-03-18T19:16:04.440"
       }
     ]
   },
