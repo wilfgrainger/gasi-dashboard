@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-19T05:19:19.578620+00:00",
+  "generated_at": "2026-03-19T08:32:01.152754+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
+        "value": 3,
         "score": 2.0,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 174,
-    "critical_count": 2,
-    "high_count": 21,
+    "total": 175,
+    "critical_count": 3,
+    "high_count": 16,
     "cves": [
       {
         "cve_id": "CVE-2026-25449",
@@ -257,11 +257,11 @@
         "published": "2026-03-18T16:16:27.400"
       },
       {
-        "cve_id": "CVE-2026-22730",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A critical SQL injection vulnerability in Spring AI's MariaDBFilterExpressionConverter allows attackers to bypass metadata-based access controls and execute arbitrary SQL commands.\n\nThe vulnerability ",
-        "published": "2026-03-18T08:16:31.170"
+        "cve_id": "CVE-2026-32633",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Glances is an open-source system cross-platform monitoring tool. Prior to version 4.5.2, in Central Browser mode, the `/api/4/serverslist` endpoint returns raw server objects from `GlancesServersList.",
+        "published": "2026-03-18T18:16:28.933"
       },
       {
         "cve_id": "CVE-2026-32693",
@@ -285,11 +285,11 @@
         "published": "2026-03-18T17:16:05.510"
       },
       {
-        "cve_id": "CVE-2026-22729",
+        "cve_id": "CVE-2026-4396",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "A JSONPath injection vulnerability in Spring AI's AbstractFilterExpressionConverter allows authenticated users to bypass metadata-based access controls through crafted filter expressions. User-control",
-        "published": "2026-03-18T08:16:31.000"
+        "base_score": 8.3,
+        "description": "Improper certificate validation in Devolutions Hub Reporting Service \n2025.3.1.1 and earlier allows a network attacker to perform a \nman-in-the-middle attack via disabled TLS certificate verification.",
+        "published": "2026-03-18T20:16:22.933"
       },
       {
         "cve_id": "CVE-2026-24063",
@@ -320,6 +320,13 @@
         "published": "2026-03-18T17:16:06.947"
       },
       {
+        "cve_id": "CVE-2026-32634",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Glances is an open-source system cross-platform monitoring tool. Prior to version 4.5.2, in Central Browser mode, Glances stores both the Zeroconf-advertised server name and the discovered IP address ",
+        "published": "2026-03-18T18:16:29.097"
+      },
+      {
         "cve_id": "CVE-2025-41258",
         "severity": "HIGH",
         "base_score": 8.0,
@@ -334,25 +341,11 @@
         "published": "2026-03-18T16:16:26.300"
       },
       {
-        "cve_id": "CVE-2026-32606",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "IncusOS is an immutable OS image dedicated to running Incus. Prior to 202603142010, the default configuration of systemd-cryptenroll as used by IncusOS through mkosi allows for an attacker with physic",
-        "published": "2026-03-18T06:16:18.970"
-      },
-      {
         "cve_id": "CVE-2026-32692",
         "severity": "HIGH",
         "base_score": 7.6,
         "description": "An authorization bypass vulnerability in the Vault secrets back-end implementation of Juju versions 3.1.6 through 3.6.18 allows an authenticated unit agent to perform unauthorized updates to secret re",
         "published": "2026-03-18T13:16:18.710"
-      },
-      {
-        "cve_id": "CVE-2026-32596",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Glances is an open-source system cross-platform monitoring tool. Prior to 4.5.2, Glances web server runs without authentication by default when started with `glances -w`, exposing REST API with sensit",
-        "published": "2026-03-18T06:16:18.800"
       },
       {
         "cve_id": "CVE-2026-32609",
@@ -369,18 +362,25 @@
         "published": "2026-03-18T18:16:26.723"
       },
       {
-        "cve_id": "CVE-2026-22317",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "A command injection vulnerability in the device\u2019s Root CA certificate transfer workflow allows a high-privileged attacker to send crafted HTTP POST requests that result in arbitrary command execution ",
-        "published": "2026-03-18T08:16:27.580"
-      },
-      {
         "cve_id": "CVE-2026-3090",
         "severity": "HIGH",
         "base_score": 7.2,
         "description": "The Post SMTP \u2013 Complete Email Deliverability and SMTP Solution with Email Logs, Alerts, Backup SMTP & Mobile App plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the \u2018event_type\u2019",
         "published": "2026-03-18T16:16:28.560"
+      },
+      {
+        "cve_id": "CVE-2026-32611",
+        "severity": "HIGH",
+        "base_score": 7.0,
+        "description": "Glances is an open-source system cross-platform monitoring tool. The GHSA-x46r fix (commit 39161f0) addressed SQL injection in the TimescaleDB export module by converting all SQL operations to use par",
+        "published": "2026-03-18T18:16:28.593"
+      },
+      {
+        "cve_id": "CVE-2026-32694",
+        "severity": "MEDIUM",
+        "base_score": 6.6,
+        "description": "In Juju from version 3.0.0 through 3.6.18, when a secret owner grants permissions to a secret to a grantee, the secret owner relies exclusively on a predictable XID of the secret to verify ownership. ",
+        "published": "2026-03-18T14:16:40.503"
       }
     ]
   },
