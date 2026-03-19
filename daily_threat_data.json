@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-19T08:32:01.152754+00:00",
+  "generated_at": "2026-03-19T12:40:56.003475+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
-        "score": 2.0,
+        "value": 6,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,8 +238,8 @@
     ]
   },
   "nvd": {
-    "total": 175,
-    "critical_count": 3,
+    "total": 182,
+    "critical_count": 6,
     "high_count": 16,
     "cves": [
       {
@@ -257,11 +257,32 @@
         "published": "2026-03-18T16:16:27.400"
       },
       {
+        "cve_id": "CVE-2026-25873",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "OmniGen2-RL contains an unauthenticated remote code execution vulnerability in the reward server component that allows remote attackers to execute arbitrary commands by sending malicious HTTP POST req",
+        "published": "2026-03-18T21:16:25.220"
+      },
+      {
         "cve_id": "CVE-2026-32633",
         "severity": "CRITICAL",
         "base_score": 9.1,
         "description": "Glances is an open-source system cross-platform monitoring tool. Prior to version 4.5.2, in Central Browser mode, the `/api/4/serverslist` endpoint returns raw server objects from `GlancesServersList.",
         "published": "2026-03-18T18:16:28.933"
+      },
+      {
+        "cve_id": "CVE-2026-32698",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "OpenProject is an open-source, web-based project management software. Versions prior to 16.6.9, 17.0.6, 17.1.3, and 17.2.1 are vulnerable to an SQL injection attack via a custom field's name. When tha",
+        "published": "2026-03-18T22:16:24.223"
+      },
+      {
+        "cve_id": "CVE-2026-32703",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "OpenProject is an open-source, web-based project management software. In versions prior to 16.6.9, 17.0.6, 17.1.3, and 17.2.1, the Repositories module did not properly escape filenames displayed from ",
+        "published": "2026-03-18T22:16:24.517"
       },
       {
         "cve_id": "CVE-2026-32693",
@@ -283,6 +304,13 @@
         "base_score": 8.8,
         "description": "The Photo Gallery, Sliders, Proofing and Themes \u2013 NextGEN Gallery plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 4.0.3 via the 'template' parameter in",
         "published": "2026-03-18T17:16:05.510"
+      },
+      {
+        "cve_id": "CVE-2026-32321",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "ClipBucket v5 is an open source video sharing platform. An authenticated time-based blind SQL injection vulnerability exists in ClipBucket prior to 5.5.3 #80 within the `actions/ajax.php` endpoint. Du",
+        "published": "2026-03-18T21:16:26.410"
       },
       {
         "cve_id": "CVE-2026-4396",
@@ -327,13 +355,6 @@
         "published": "2026-03-18T18:16:29.097"
       },
       {
-        "cve_id": "CVE-2025-41258",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "LibreChat version 0.8.1-rc2 uses the same JWT secret for the user session mechanism and RAG API which compromises the service-level authentication of the RAG API.",
-        "published": "2026-03-18T12:16:18.713"
-      },
-      {
         "cve_id": "CVE-2026-24062",
         "severity": "HIGH",
         "base_score": 7.8,
@@ -360,27 +381,6 @@
         "base_score": 7.5,
         "description": "nghttp2 is an implementation of the Hypertext Transfer Protocol version 2 in C. Prior to version 1.68.1, the nghttp2 library stops reading the incoming data when user facing public API `nghttp2_sessio",
         "published": "2026-03-18T18:16:26.723"
-      },
-      {
-        "cve_id": "CVE-2026-3090",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The Post SMTP \u2013 Complete Email Deliverability and SMTP Solution with Email Logs, Alerts, Backup SMTP & Mobile App plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the \u2018event_type\u2019",
-        "published": "2026-03-18T16:16:28.560"
-      },
-      {
-        "cve_id": "CVE-2026-32611",
-        "severity": "HIGH",
-        "base_score": 7.0,
-        "description": "Glances is an open-source system cross-platform monitoring tool. The GHSA-x46r fix (commit 39161f0) addressed SQL injection in the TimescaleDB export module by converting all SQL operations to use par",
-        "published": "2026-03-18T18:16:28.593"
-      },
-      {
-        "cve_id": "CVE-2026-32694",
-        "severity": "MEDIUM",
-        "base_score": 6.6,
-        "description": "In Juju from version 3.0.0 through 3.6.18, when a secret owner grants permissions to a secret to a grantee, the secret owner relies exclusively on a predictable XID of the secret to verify ownership. ",
-        "published": "2026-03-18T14:16:40.503"
       }
     ]
   },
