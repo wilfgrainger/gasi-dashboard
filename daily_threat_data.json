@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-18T20:27:32.506284+00:00",
+  "generated_at": "2026-03-19T01:19:58.535167+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 27,
+        "value": 23,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
+        "value": 4,
         "score": 2.0,
         "max": 3
       },
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1545,
-    "recent_30d_count": 27,
+    "recent_30d_count": 23,
     "recent": [
       {
         "cve_id": "CVE-2025-66376",
@@ -238,16 +238,23 @@
     ]
   },
   "nvd": {
-    "total": 192,
-    "critical_count": 3,
-    "high_count": 33,
+    "total": 191,
+    "critical_count": 4,
+    "high_count": 29,
     "cves": [
       {
-        "cve_id": "CVE-2026-21994",
+        "cve_id": "CVE-2026-25449",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Vulnerability in the Oracle Edge Cloud Infrastructure Designer and Visualisation Toolkit product of Oracle Open Source Projects (component: Desktop).   The supported version that is affected is 0.3.0.",
-        "published": "2026-03-17T23:16:17.310"
+        "description": "Deserialization of Untrusted Data vulnerability in Shinetheme Traveler allows Object Injection.This issue affects Traveler: from n/a before 3.2.8.1.",
+        "published": "2026-03-18T14:16:39.297"
+      },
+      {
+        "cve_id": "CVE-2026-2991",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The KiviCare \u2013 Clinic & Patient Management System (EHR) plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 4.1.2. This is due to the `patientSocialLogin(",
+        "published": "2026-03-18T16:16:27.400"
       },
       {
         "cve_id": "CVE-2026-30884",
@@ -264,20 +271,6 @@
         "published": "2026-03-18T04:17:23.507"
       },
       {
-        "cve_id": "CVE-2026-27811",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Roxy-WI is a web interface for managing Haproxy, Nginx, Apache and Keepalived servers. Prior to version 8.2.6.3, a command injection vulnerability exists in the `/config/compare/<service>/<server_ip>/",
-        "published": "2026-03-18T00:16:19.427"
-      },
-      {
-        "cve_id": "CVE-2026-27894",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "LDAP Account Manager (LAM) is a webfrontend for managing entries (e.g. users, groups, DHCP settings) stored in an LDAP directory. Prior to version 9.5, a local file inclusion was detected in the PDF e",
-        "published": "2026-03-18T00:16:19.607"
-      },
-      {
         "cve_id": "CVE-2026-29056",
         "severity": "HIGH",
         "base_score": 8.8,
@@ -290,6 +283,20 @@
         "base_score": 8.8,
         "description": "A critical SQL injection vulnerability in Spring AI's MariaDBFilterExpressionConverter allows attackers to bypass metadata-based access controls and execute arbitrary SQL commands.\n\nThe vulnerability ",
         "published": "2026-03-18T08:16:31.170"
+      },
+      {
+        "cve_id": "CVE-2026-32693",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In Juju from version 3.0.0 through 3.6.18, the authorization of the \"secret-set\" tool is not performed correctly, which allows a grantee to update the secret content, and can lead to reading or updati",
+        "published": "2026-03-18T13:16:18.860"
+      },
+      {
+        "cve_id": "CVE-2025-55040",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The import form CSRF vulnerability in MuraCMS through 10.1.10 allows attackers to upload and install malicious form definitions through a CSRF attack. The vulnerable cForm.importform function lacks CS",
+        "published": "2026-03-18T16:16:23.170"
       },
       {
         "cve_id": "CVE-2026-28500",
@@ -313,11 +320,18 @@
         "published": "2026-03-18T02:16:21.310"
       },
       {
-        "cve_id": "CVE-2026-32841",
+        "cve_id": "CVE-2026-24063",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Edimax GS-5008PL firmware version 1.00.54 and prior contain an authentication bypass vulnerability that allows unauthenticated attackers to access the management interface. Attackers can exploit the g",
-        "published": "2026-03-17T22:16:15.043"
+        "base_score": 8.2,
+        "description": "When a plugin is installed using the Arturia Software Center (MacOS), it also installs an uninstall.sh bash script in a root owned path. This script is written to disk with the file permissions 777, m",
+        "published": "2026-03-18T16:16:26.527"
+      },
+      {
+        "cve_id": "CVE-2026-2992",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "The KiviCare \u2013 Clinic & Patient Management System (EHR) plugin for WordPress is vulnerable to Privilege Escalation due to missing authorization on the `/wp-json/kivicare/v1/setup-wizard/clinic` REST A",
+        "published": "2026-03-18T16:16:27.583"
       },
       {
         "cve_id": "CVE-2026-2603",
@@ -332,6 +346,20 @@
         "base_score": 8.1,
         "description": "jsPDF is a library to generate PDFs in JavaScript. Prior to version 4.2.1, user control of arguments of the `createAnnotation` method allows users to inject arbitrary PDF objects, such as JavaScript a",
         "published": "2026-03-18T04:17:21.050"
+      },
+      {
+        "cve_id": "CVE-2025-41258",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "LibreChat version 0.8.1-rc2 uses the same JWT secret for the user session mechanism and RAG API which compromises the service-level authentication of the RAG API.",
+        "published": "2026-03-18T12:16:18.713"
+      },
+      {
+        "cve_id": "CVE-2026-24062",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "The \"Privileged Helper\" component of the Arturia Software Center (MacOS) does not perform sufficient client code signature validation when a client connects.\u00a0This leads to an attacker being able to co",
+        "published": "2026-03-18T16:16:26.300"
       },
       {
         "cve_id": "CVE-2026-2092",
@@ -353,34 +381,6 @@
         "base_score": 7.6,
         "description": "IncusOS is an immutable OS image dedicated to running Incus. Prior to 202603142010, the default configuration of systemd-cryptenroll as used by IncusOS through mkosi allows for an attacker with physic",
         "published": "2026-03-18T06:16:18.970"
-      },
-      {
-        "cve_id": "CVE-2026-1376",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "IBM i 7.6 could allow a remote attacker to cause a denial of service using failed authentication connections due to improper allocation of resources.",
-        "published": "2026-03-17T22:16:14.287"
-      },
-      {
-        "cve_id": "CVE-2026-32838",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Edimax GS-5008PL firmware version 1.00.54 and prior use cleartext HTTP for the web management interface without implementing TLS or SSL encryption. Attackers on the same network can intercept manageme",
-        "published": "2026-03-17T22:16:14.457"
-      },
-      {
-        "cve_id": "CVE-2025-14031",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "IBM Sterling B2B Integrator and\u00a0and IBM Sterling File Gateway\u00a06.1.0.0 through 6.1.2.7_2, 6.2.0.0 through 6.2.0.5_1, 6.2.1.0 through 6.2.1.1_1, and 6.2.2.0 could allow an unauthenticated attacker to se",
-        "published": "2026-03-17T23:16:15.863"
-      },
-      {
-        "cve_id": "CVE-2026-22727",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Unprotected internal endpoints in Cloud Foundry Capi Release 1.226.0 and below, and CF Deployment v54.9.0 and below on all platforms allows any user who has bypassed the firewall to potentially replac",
-        "published": "2026-03-17T23:16:17.470"
       }
     ]
   },
