@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-20T16:32:51.682444+00:00",
+  "generated_at": "2026-03-20T20:22:05.314709+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 7,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 342,
-    "critical_count": 4,
-    "high_count": 20,
+    "total": 363,
+    "critical_count": 7,
+    "high_count": 22,
     "cves": [
       {
         "cve_id": "CVE-2026-30836",
@@ -264,11 +264,32 @@
         "published": "2026-03-19T21:17:10.400"
       },
       {
-        "cve_id": "CVE-2026-32238",
+        "cve_id": "CVE-2026-32038",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "OpenClaw before 2026.2.24 contains a sandbox network isolation bypass vulnerability that allows trusted operators to join another container's network namespace. Attackers can configure the docker.netw",
+        "published": "2026-03-19T22:16:39.997"
+      },
+      {
+        "cve_id": "CVE-2026-32194",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Improper neutralization of special elements used in a command ('command injection') in Microsoft Bing Images allows an unauthorized attacker to execute code over a network.",
+        "published": "2026-03-19T22:16:41.130"
+      },
+      {
+        "cve_id": "CVE-2026-32754",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "FreeScout is a free help desk and shared inbox built with PHP's Laravel framework. Versions 1.8.208 and below are vulnerable to Stored Cross-Site Scripting (XSS) through FreeScout's email notification",
+        "published": "2026-03-19T22:16:41.997"
+      },
+      {
+        "cve_id": "CVE-2026-22732",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Versions prior to 8.0.0.2 contain a Command injection vulnerability in the backup functionality",
-        "published": "2026-03-19T20:16:14.057"
+        "description": "When applications specify HTTP response headers for servlet applications using Spring Security, there is the possibility that the HTTP Headers will not be written.\u00a0\nThis issue affects Spring Security:",
+        "published": "2026-03-19T23:16:41.253"
       },
       {
         "cve_id": "CVE-2026-26137",
@@ -283,6 +304,13 @@
         "base_score": 8.8,
         "description": "OpenClaw versions prior to 2026.2.25 contain a symlink traversal vulnerability in the agents.files.get and agents.files.set methods that allows reading and writing files outside the agent workspace. A",
         "published": "2026-03-19T22:16:34.410"
+      },
+      {
+        "cve_id": "CVE-2026-4342",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A security issue was discovered in ingress-nginx where a combination of Ingress annotations can be used to inject configuration into nginx. This can lead to arbitrary code execution in the context of ",
+        "published": "2026-03-19T22:16:43.143"
       },
       {
         "cve_id": "CVE-2026-33346",
@@ -320,6 +348,13 @@
         "published": "2026-03-19T21:17:08.377"
       },
       {
+        "cve_id": "CVE-2026-22731",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Spring Boot applications with Actuator can be vulnerable to an \"Authentication Bypass\" vulnerability when an application endpoint that requires authentication is declared under a specific path, alread",
+        "published": "2026-03-19T23:16:41.080"
+      },
+      {
         "cve_id": "CVE-2026-33301",
         "severity": "HIGH",
         "base_score": 8.1,
@@ -346,41 +381,6 @@
         "base_score": 7.6,
         "description": "SiYuan is a personal knowledge management system. In versions 3.6.0 and below, POST /api/import/importSY and POST /api/import/importZipMd write uploaded archives to a path derived from the multipart f",
         "published": "2026-03-19T21:17:10.910"
-      },
-      {
-        "cve_id": "CVE-2026-33321",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Prior to 8.0.0.2, users with the `Notes - my encounters` role can fill Eye Exam forms in patien",
-        "published": "2026-03-19T21:17:12.017"
-      },
-      {
-        "cve_id": "CVE-2026-3547",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Out-of-bounds read in ALPN parsing due to incomplete validation. wolfSSL 5.8.4 and earlier contained an out-of-bounds read in ALPN handling when built with ALPN enabled (HAVE_ALPN / --enable-alpn). A ",
-        "published": "2026-03-19T21:17:12.653"
-      },
-      {
-        "cve_id": "CVE-2026-32011",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "OpenClaw versions prior to 2026.3.2 contain a denial of service vulnerability in webhook handlers for BlueBubbles and Google Chat that parse request bodies before performing authentication and signatu",
-        "published": "2026-03-19T22:16:34.197"
-      },
-      {
-        "cve_id": "CVE-2026-32025",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "OpenClaw versions prior to 2026.2.25 contain an authentication hardening gap in browser-origin WebSocket clients that allows attackers to bypass origin checks and auth throttling on loopback deploymen",
-        "published": "2026-03-19T22:16:37.210"
-      },
-      {
-        "cve_id": "CVE-2026-4428",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "A logic error in CRL distribution point validation in AWS-LC before 1.71.0 causes partitioned CRLs to be incorrectly rejected as out of scope, which allows  a revoked certificate to bypass certificate",
-        "published": "2026-03-19T21:17:14.170"
       }
     ]
   },
