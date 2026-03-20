@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-03-20T12:37:22.782343+00:00",
+  "generated_at": "2026-03-20T16:32:51.682444+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 22,
+        "value": 27,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
-        "score": 2.5,
+        "value": 4,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -32,9 +32,59 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1546,
-    "recent_30d_count": 22,
+    "total_catalog_count": 1551,
+    "recent_30d_count": 27,
     "recent": [
+      {
+        "cve_id": "CVE-2025-32432",
+        "vendor": "Craft CMS",
+        "product": "Craft CMS",
+        "name": "Craft CMS Code Injection Vulnerability",
+        "date_added": "2026-03-20",
+        "due_date": "2026-04-03",
+        "description": "Craft CMS contains a code injection vulnerability that allows a remote attacker to execute arbitrary code.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2025-54068",
+        "vendor": "Laravel",
+        "product": "Livewire",
+        "name": "Laravel Livewire Code Injection Vulnerability",
+        "date_added": "2026-03-20",
+        "due_date": "2026-04-03",
+        "description": "Laravel Livewire contain a code injection vulnerability that could allow unauthenticated attackers to achieve remote command execution in specific scenarios.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2025-43510",
+        "vendor": "Apple",
+        "product": "Multiple Products",
+        "name": "Apple Multiple Products Improper Locking Vulnerability",
+        "date_added": "2026-03-20",
+        "due_date": "2026-04-03",
+        "description": "Apple watchOS, iOS, iPadOS, macOS, visionOS, and tvOS contain an improper locking vulnerability that could allow a malicious application to cause unexpected changes in memory shared between processes.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2025-43520",
+        "vendor": "Apple",
+        "product": "Multiple Products",
+        "name": "Apple Multiple Products Classic Buffer Overflow Vulnerability",
+        "date_added": "2026-03-20",
+        "due_date": "2026-04-03",
+        "description": "Apple watchOS, iOS, iPadOS, macOS, visionOS, tvOS, and iPadOS contain a classic buffer overflow vulnerability which could allow a malicious application to cause unexpected system termination or write ",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2025-31277",
+        "vendor": "Apple",
+        "product": "Multiple Products",
+        "name": "Apple Multiple Products Buffer Overflow Vulnerability",
+        "date_added": "2026-03-20",
+        "due_date": "2026-04-03",
+        "description": "Apple Safari, iOS, watchOS, visionOS, iPadOS, macOS, and tvOS contain a buffer overflow vulnerability that could allow the processing of maliciously crafted web content which may lead to memory corrup",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-20131",
         "vendor": "Cisco",
@@ -184,71 +234,14 @@
         "due_date": "2026-03-26",
         "description": "Apple iOS and iPadOS contain a use-after-free vulnerability. An app may be able to execute arbitrary code with kernel privileges.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-22719",
-        "vendor": "Broadcom",
-        "product": "VMware Aria Operations",
-        "name": "Broadcom VMware Aria Operations Command Injection Vulnerability",
-        "date_added": "2026-03-03",
-        "due_date": "2026-03-24",
-        "description": "Broadcom VMware Aria Operations formerly known as vRealize Operations (vROps) contains a command injection vulnerability that allows an unauthenticated attacker to execute arbitrary commands, potentia",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-21385",
-        "vendor": "Qualcomm",
-        "product": "Multiple Chipsets",
-        "name": "Qualcomm Multiple Chipsets Memory Corruption Vulnerability",
-        "date_added": "2026-03-03",
-        "due_date": "2026-03-24",
-        "description": "Multiple Qualcomm chipsets contain a memory corruption vulnerability while using alignments for memory allocation. ",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2022-20775",
-        "vendor": "Cisco",
-        "product": "SD-WAN",
-        "name": "Cisco SD-WAN Path Traversal Vulnerability",
-        "date_added": "2026-02-25",
-        "due_date": "2026-02-27",
-        "description": "Cisco SD-WAN CLI contains a path traversal vulnerability that could allow an authenticated local attacker to gain elevated privileges via improper access controls on commands within the application CL",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-20127",
-        "vendor": "Cisco",
-        "product": "Catalyst SD-WAN Controller and Manager",
-        "name": "Cisco Catalyst SD-WAN Controller and Manager Authentication Bypass Vulnerability",
-        "date_added": "2026-02-25",
-        "due_date": "2026-02-27",
-        "description": "Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, and Cisco Catalyst SD-WAN Manager, formerly SD-WAN vManage, contain an authentication bypass vulnerability could allow an unauthenticated, rem",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-25108",
-        "vendor": "Soliton Systems K.K",
-        "product": "FileZen",
-        "name": "Soliton Systems K.K FileZen OS Command Injection Vulnerability",
-        "date_added": "2026-02-24",
-        "due_date": "2026-03-17",
-        "description": "Soliton Systems K.K FileZen contains an OS command injection vulnerability when an user logs-in to the affected product and sends a specially crafted HTTP request.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 341,
-    "critical_count": 7,
-    "high_count": 17,
+    "total": 342,
+    "critical_count": 4,
+    "high_count": 20,
     "cves": [
-      {
-        "cve_id": "CVE-2026-22557",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "A malicious actor with access to the network could exploit a Path Traversal vulnerability found in the UniFi Network Application to access files on the underlying system that could be manipulated to a",
-        "published": "2026-03-19T15:16:23.533"
-      },
       {
         "cve_id": "CVE-2026-30836",
         "severity": "CRITICAL",
@@ -262,20 +255,6 @@
         "base_score": 10.0,
         "description": "Server-side request forgery (ssrf) in Azure Cloud Shell allows an unauthorized attacker to elevate privileges over a network.",
         "published": "2026-03-19T21:17:10.233"
-      },
-      {
-        "cve_id": "CVE-2026-30402",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An issue in wgcloud v.2.3.7 and before allows a remote attacker to execute arbitrary code via the test connection function",
-        "published": "2026-03-19T15:16:26.190"
-      },
-      {
-        "cve_id": "CVE-2026-32865",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "OPEXUS eComplaint and eCASE before version 10.1.0.0 include the secret verification code in the HTTP response when requesting a password reset via 'ForcePasswordReset.aspx'. An attacker who knows an e",
-        "published": "2026-03-19T16:16:03.260"
       },
       {
         "cve_id": "CVE-2026-32191",
@@ -299,11 +278,11 @@
         "published": "2026-03-19T21:17:08.050"
       },
       {
-        "cve_id": "CVE-2025-71260",
+        "cve_id": "CVE-2026-32013",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "BMC FootPrints ITSM versions 20.20.02 through 20.24.01.001 contain a deserialization of untrusted data vulnerability in the ASP.NET servlet's VIEWSTATE handling that allows authenticated attackers to ",
-        "published": "2026-03-19T14:16:13.583"
+        "description": "OpenClaw versions prior to 2026.2.25 contain a symlink traversal vulnerability in the agents.files.get and agents.files.set methods that allows reading and writing files outside the agent workspace. A",
+        "published": "2026-03-19T22:16:34.410"
       },
       {
         "cve_id": "CVE-2026-33346",
@@ -341,11 +320,25 @@
         "published": "2026-03-19T21:17:08.377"
       },
       {
-        "cve_id": "CVE-2026-22558",
+        "cve_id": "CVE-2026-33301",
         "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "An Authenticated NoSQL Injection vulnerability found in UniFi Network Application could allow a malicious actor with authenticated access to the network to escalate privileges.",
-        "published": "2026-03-19T15:16:23.697"
+        "base_score": 8.1,
+        "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Prior to 8.0.0.2,  users with the `Notes - my encounters` role can fill Eye Exam forms in patie",
+        "published": "2026-03-19T21:17:11.230"
+      },
+      {
+        "cve_id": "CVE-2026-33302",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Prior to 8.0.0.2, the module ACL function `AclMain::zhAclCheck()` only checks for the presence ",
+        "published": "2026-03-19T21:17:11.380"
+      },
+      {
+        "cve_id": "CVE-2026-32014",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "OpenClaw versions prior to 2026.2.26 contain a metadata spoofing vulnerability where reconnect platform and deviceFamily fields are accepted from the client without being bound into the device-auth si",
+        "published": "2026-03-19T22:16:34.610"
       },
       {
         "cve_id": "CVE-2026-32749",
@@ -355,18 +348,11 @@
         "published": "2026-03-19T21:17:10.910"
       },
       {
-        "cve_id": "CVE-2026-4424",
+        "cve_id": "CVE-2026-33321",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A flaw was found in libarchive. This heap out-of-bounds read vulnerability exists in the RAR archive processing logic due to improper validation of the LZSS sliding window size after transitions betwe",
-        "published": "2026-03-19T15:16:28.300"
-      },
-      {
-        "cve_id": "CVE-2026-4427",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A flaw was found in pgproto3. A malicious or compromised PostgreSQL server can exploit this by sending a DataRow message with a negative field length. This input validation vulnerability can lead to a",
-        "published": "2026-03-19T15:16:28.710"
+        "base_score": 7.6,
+        "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Prior to 8.0.0.2, users with the `Notes - my encounters` role can fill Eye Exam forms in patien",
+        "published": "2026-03-19T21:17:12.017"
       },
       {
         "cve_id": "CVE-2026-3547",
@@ -381,6 +367,20 @@
         "base_score": 7.5,
         "description": "OpenClaw versions prior to 2026.3.2 contain a denial of service vulnerability in webhook handlers for BlueBubbles and Google Chat that parse request bodies before performing authentication and signatu",
         "published": "2026-03-19T22:16:34.197"
+      },
+      {
+        "cve_id": "CVE-2026-32025",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "OpenClaw versions prior to 2026.2.25 contain an authentication hardening gap in browser-origin WebSocket clients that allows attackers to bypass origin checks and auth throttling on loopback deploymen",
+        "published": "2026-03-19T22:16:37.210"
+      },
+      {
+        "cve_id": "CVE-2026-4428",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "A logic error in CRL distribution point validation in AWS-LC before 1.71.0 causes partitioned CRLs to be incorrectly rejected as out of scope, which allows  a revoked certificate to bypass certificate",
+        "published": "2026-03-19T21:17:14.170"
       }
     ]
   },
