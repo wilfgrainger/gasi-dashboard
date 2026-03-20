@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-19T20:27:56.601661+00:00",
+  "generated_at": "2026-03-20T01:15:49.625534+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 24,
+        "value": 22,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 13,
+        "value": 11,
         "score": 3.0,
         "max": 3
       },
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1546,
-    "recent_30d_count": 24,
+    "recent_30d_count": 22,
     "recent": [
       {
         "cve_id": "CVE-2026-20131",
@@ -238,30 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 142,
-    "critical_count": 13,
-    "high_count": 36,
+    "total": 250,
+    "critical_count": 11,
+    "high_count": 32,
     "cves": [
       {
-        "cve_id": "CVE-2026-32731",
+        "cve_id": "CVE-2026-22557",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "ApostropheCMS is an open-source content management framework. Prior to version 3.5.3 of `@apostrophecms/import-export`,\nThe `extract()` function in `gzip.js` constructs file-write paths using `fs.crea",
-        "published": "2026-03-18T23:17:29.543"
-      },
-      {
-        "cve_id": "CVE-2026-25873",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "OmniGen2-RL contains an unauthenticated remote code execution vulnerability in the reward server component that allows remote attackers to execute arbitrary commands by sending malicious HTTP POST req",
-        "published": "2026-03-18T21:16:25.220"
-      },
-      {
-        "cve_id": "CVE-2026-31972",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "SAMtools is a program for reading, manipulating and writing bioinformatics file formats. The `mpileup` command outputs DNA sequences that have been aligned against a known reference. On each output li",
-        "published": "2026-03-18T21:16:26.070"
+        "base_score": 10.0,
+        "description": "A malicious actor with access to the network could exploit a Path Traversal vulnerability found in the UniFi Network Application to access files on the underlying system that could be manipulated to a",
+        "published": "2026-03-19T15:16:23.533"
       },
       {
         "cve_id": "CVE-2026-27542",
@@ -299,18 +285,25 @@
         "published": "2026-03-19T12:16:17.047"
       },
       {
+        "cve_id": "CVE-2026-30402",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An issue in wgcloud v.2.3.7 and before allows a remote attacker to execute arbitrary code via the test connection function",
+        "published": "2026-03-19T15:16:26.190"
+      },
+      {
+        "cve_id": "CVE-2026-32865",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "OPEXUS eComplaint and eCASE before version 10.1.0.0 include the secret verification code in the HTTP response when requesting a password reset via 'ForcePasswordReset.aspx'. An attacker who knows an e",
+        "published": "2026-03-19T16:16:03.260"
+      },
+      {
         "cve_id": "CVE-2026-27413",
         "severity": "CRITICAL",
         "base_score": 9.3,
         "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Cozmoslabs Profile Builder Pro allows Blind SQL Injection.This issue affects Profile Builder Pro: ",
         "published": "2026-03-19T06:16:25.600"
-      },
-      {
-        "cve_id": "CVE-2026-32698",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "OpenProject is an open-source, web-based project management software. Versions prior to 16.6.9, 17.0.6, 17.1.3, and 17.2.1 are vulnerable to an SQL injection attack via a custom field's name. When tha",
-        "published": "2026-03-18T22:16:24.223"
       },
       {
         "cve_id": "CVE-2026-27067",
@@ -320,25 +313,11 @@
         "published": "2026-03-19T09:16:17.980"
       },
       {
-        "cve_id": "CVE-2026-32703",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "OpenProject is an open-source, web-based project management software. In versions prior to 16.6.9, 17.0.6, 17.1.3, and 17.2.1, the Repositories module did not properly escape filenames displayed from ",
-        "published": "2026-03-18T22:16:24.517"
-      },
-      {
         "cve_id": "CVE-2026-27540",
         "severity": "CRITICAL",
         "base_score": 9.0,
         "description": "Unrestricted Upload of File with Dangerous Type vulnerability in Rymera Web Co Pty Ltd. Woocommerce Wholesale Lead Capture allows Using Malicious Files.This issue affects Woocommerce Wholesale Lead Ca",
         "published": "2026-03-19T06:16:25.787"
-      },
-      {
-        "cve_id": "CVE-2026-32321",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "ClipBucket v5 is an open source video sharing platform. An authenticated time-based blind SQL injection vulnerability exists in ClipBucket prior to 5.5.3 #80 within the `actions/ajax.php` endpoint. Du",
-        "published": "2026-03-18T21:16:26.410"
       },
       {
         "cve_id": "CVE-2026-25445",
@@ -348,11 +327,11 @@
         "published": "2026-03-19T09:16:17.630"
       },
       {
-        "cve_id": "CVE-2026-32255",
+        "cve_id": "CVE-2025-71260",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Kan is an open-source project management tool. In versions 0.5.4 and below, the /api/download/attatchment endpoint has no authentication and no URL validation. The Attachment Download endpoint accepts",
-        "published": "2026-03-19T00:16:18.003"
+        "base_score": 8.8,
+        "description": "BMC FootPrints ITSM versions 20.20.02 through 20.24.01.001 contain a deserialization of untrusted data vulnerability in the ASP.NET servlet's VIEWSTATE handling that allows authenticated attackers to ",
+        "published": "2026-03-19T14:16:13.583"
       },
       {
         "cve_id": "CVE-2026-3511",
@@ -362,25 +341,46 @@
         "published": "2026-03-19T12:16:18.647"
       },
       {
-        "cve_id": "CVE-2025-15031",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "A vulnerability in MLflow's pyfunc extraction process allows for arbitrary file writes due to improper handling of tar archive entries. Specifically, the use of `tarfile.extractall` without path valid",
-        "published": "2026-03-18T23:17:28.693"
-      },
-      {
-        "cve_id": "CVE-2026-32730",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "ApostropheCMS is an open-source content management framework. Prior to version 4.28.0, the bearer token authentication middleware in `@apostrophecms/express/index.js` (lines 386-389) contains an incor",
-        "published": "2026-03-18T23:17:29.370"
-      },
-      {
         "cve_id": "CVE-2026-27096",
         "severity": "HIGH",
         "base_score": 8.1,
         "description": "Deserialization of Untrusted Data vulnerability in BuddhaThemes ColorFolio - Freelance Designer WordPress Theme allows Object Injection.This issue affects ColorFolio - Freelance Designer WordPress The",
         "published": "2026-03-19T06:16:25.190"
+      },
+      {
+        "cve_id": "CVE-2026-27093",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in Ovatheme Tripgo allows PHP Local File Inclusion.This issue affects Tripgo: from",
+        "published": "2026-03-19T07:15:59.410"
+      },
+      {
+        "cve_id": "CVE-2026-25471",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in Themepaste Admin Safety Guard allows Password Recovery Exploitation.This issue affects Admin Safety Guard: from n/a through 1.",
+        "published": "2026-03-19T08:16:19.140"
+      },
+      {
+        "cve_id": "CVE-2026-22558",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "An Authenticated NoSQL Injection vulnerability found in UniFi Network Application could allow a malicious actor with authenticated access to the network to escalate privileges.",
+        "published": "2026-03-19T15:16:23.697"
+      },
+      {
+        "cve_id": "CVE-2024-42210",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "A Stored cross-site scripting (XSS) vulnerability affects HCL Unica Marketing Operations v12.1.8 and lower. \u00a0Stored cross-site scripting (also known as second-order or persistent XSS) arises when an a",
+        "published": "2026-03-19T08:16:18.700"
+      },
+      {
+        "cve_id": "CVE-2026-28461",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "OpenClaw versions prior to 2026.3.1 contain an unbounded memory growth vulnerability in the Zalo webhook endpoint that allows unauthenticated attackers to trigger in-memory key accumulation by varying",
+        "published": "2026-03-19T02:16:02.810"
       }
     ]
   },
