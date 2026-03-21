@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-21T16:18:38.387601+00:00",
+  "generated_at": "2026-03-21T20:16:20.292521+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 5,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 281,
-    "critical_count": 4,
-    "high_count": 34,
+    "total": 248,
+    "critical_count": 5,
+    "high_count": 32,
     "cves": [
       {
         "cve_id": "CVE-2026-3584",
@@ -271,32 +271,25 @@
         "published": "2026-03-20T23:16:45.180"
       },
       {
-        "cve_id": "CVE-2026-4490",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw has been found in Tenda A18 Pro 02.03.02.28. This issue affects the function setSchedWifi of the file /goform/openSchedWifi. This manipulation causes stack-based buffer overflow. Remote exploit",
-        "published": "2026-03-20T17:17:00.030"
+        "cve_id": "CVE-2026-24060",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Service information is not encrypted when transmitted as BACnet packets \nover the wire, and can be sniffed, intercepted, and modified by an \nattacker. Valuable information such as the File Start Posit",
+        "published": "2026-03-21T00:16:25.483"
       },
       {
-        "cve_id": "CVE-2026-4491",
+        "cve_id": "CVE-2026-32042",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A vulnerability has been found in Tenda A18 Pro 02.03.02.28. Impacted is the function fromSetIpMacBind of the file /goform/SetIpMacBind. Such manipulation of the argument list leads to stack-based buf",
-        "published": "2026-03-20T17:17:00.240"
+        "description": "OpenClaw versions 2026.2.22 prior to 2026.2.25 contain a privilege escalation vulnerability allowing unpaired device identities to bypass operator pairing requirements and self-assign elevated operato",
+        "published": "2026-03-21T01:17:06.547"
       },
       {
-        "cve_id": "CVE-2026-4492",
+        "cve_id": "CVE-2026-32051",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A vulnerability was found in Tenda A18 Pro 02.03.02.28. The affected element is the function set_qosMib_list of the file /goform/formSetQosBand. Performing a manipulation of the argument list results ",
-        "published": "2026-03-20T18:16:17.383"
-      },
-      {
-        "cve_id": "CVE-2026-4493",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was determined in Tenda A18 Pro 02.03.02.28. The impacted element is the function sub_423B50 of the file /goform/setMacFilterCfg of the component MAC Filtering Configuration Endpoint. ",
-        "published": "2026-03-20T18:16:17.597"
+        "description": "OpenClaw versions prior to 2026.3.1 contain an authorization mismatch vulnerability that allows authenticated callers with operator.write scope to invoke owner-only tool surfaces including gateway and",
+        "published": "2026-03-21T01:17:08.087"
       },
       {
         "cve_id": "CVE-2026-33172",
@@ -320,32 +313,11 @@
         "published": "2026-03-20T22:16:28.660"
       },
       {
-        "cve_id": "CVE-2026-32710",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "MariaDB server is a community developed fork of MySQL server. An authenticated user can crash MariaDB versions 11.4 before 11.4.10 and 11.8 before 11.8.6 via a bug in JSON_SCHEMA_VALID() function. Und",
-        "published": "2026-03-20T19:16:16.670"
-      },
-      {
         "cve_id": "CVE-2026-33243",
         "severity": "HIGH",
         "base_score": 8.2,
         "description": "barebox is a bootloader. In barebox from version 2016.03.0 to before version 2025.09.3 and from version 2025.10.0 to before version 2026.03.1, when creating a FIT, mkimage(1) sets the hashed-nodes pro",
         "published": "2026-03-20T23:16:47.167"
-      },
-      {
-        "cve_id": "CVE-2026-31836",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Checkmate is an open-source, self-hosted tool designed to track and monitor server hardware, uptime, response times, and incidents in real-time with beautiful visualizations. In versions from 3.5.1 an",
-        "published": "2026-03-20T18:16:13.540"
-      },
-      {
-        "cve_id": "CVE-2026-33010",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "mcp-memory-service is an open-source memory backend for multi-agent systems. Prior to version 10.25.1, when the HTTP server is enabled (MCP_HTTP_ENABLED=true), the application configures FastAPI's COR",
-        "published": "2026-03-20T19:16:17.813"
       },
       {
         "cve_id": "CVE-2026-33142",
@@ -376,11 +348,39 @@
         "published": "2026-03-20T21:17:16.070"
       },
       {
-        "cve_id": "CVE-2026-32303",
+        "cve_id": "CVE-2026-25086",
         "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "Cryptomator encrypts data being stored on cloud infrastructure. Prior to version 1.19.1, an integrity check vulnerability allows an attacker to tamper with the vault configuration file leading to a ma",
-        "published": "2026-03-20T18:16:14.593"
+        "base_score": 7.7,
+        "description": "Under certain conditions, an attacker could bind to the same port used \nby WebCTRL. This could allow the attacker to craft and send malicious \npackets and impersonate the WebCTRL service without requi",
+        "published": "2026-03-21T00:16:25.683"
+      },
+      {
+        "cve_id": "CVE-2026-33154",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "dynaconf is a configuration management tool for Python. Prior to version 3.2.13, Dynaconf is vulnerable to Server-Side Template Injection (SSTI) due to unsafe template evaluation in the @Jinja resolve",
+        "published": "2026-03-20T21:17:15.740"
+      },
+      {
+        "cve_id": "CVE-2026-23536",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A security issue was discovered in the Feast Feature Server's `/read-document` endpoint that allows an unauthenticated remote attacker to read any file accessible to the server process. By sending a s",
+        "published": "2026-03-20T22:16:27.087"
+      },
+      {
+        "cve_id": "CVE-2026-31903",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The WebSocket Application Programming Interface lacks restrictions on the number of authentication requests. This absence of rate limiting may allow an attacker to conduct denial-of-service attacks by",
+        "published": "2026-03-20T23:16:43.813"
+      },
+      {
+        "cve_id": "CVE-2026-31904",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The WebSocket Application Programming Interface lacks restrictions on the number of\u00a0authentication requests. This absence of rate limiting may allow an attacker to conduct\u00a0denial-of-service attacks by",
+        "published": "2026-03-20T23:16:44.060"
       }
     ]
   },
