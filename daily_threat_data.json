@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-21T05:02:34.442027+00:00",
+  "generated_at": "2026-03-21T08:21:28.605607+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
-        "score": 2.5,
+        "value": 4,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,30 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 342,
-    "critical_count": 6,
-    "high_count": 22,
+    "total": 303,
+    "critical_count": 4,
+    "high_count": 27,
     "cves": [
-      {
-        "cve_id": "CVE-2026-33054",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Mesop is a Python-based UI framework that allows users to build web applications. Versions 1.2.2 and below contain a Path Traversal vulnerability that allows any user supplying an untrusted state_toke",
-        "published": "2026-03-20T07:16:13.363"
-      },
       {
         "cve_id": "CVE-2026-22172",
         "severity": "CRITICAL",
         "base_score": 9.9,
         "description": "OpenClaw versions prior to 2026.3.12 contain an authorization bypass vulnerability in the WebSocket connect path that allows shared-token or password-authenticated connections to self-declare elevated",
         "published": "2026-03-20T15:16:15.490"
-      },
-      {
-        "cve_id": "CVE-2026-33057",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Mesop is a Python-based UI framework that allows users to build web applications. In versions 1.2.2 and below, an explicit web endpoint inside the ai/ testing module infrastructure directly ingests un",
-        "published": "2026-03-20T08:16:11.763"
       },
       {
         "cve_id": "CVE-2026-33134",
@@ -285,20 +271,6 @@
         "published": "2026-03-20T11:18:03.527"
       },
       {
-        "cve_id": "CVE-2026-33053",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Langflow is a tool for building and deploying AI-powered agents and workflows. In versions prior to 1.9.0, the delete_api_key_route() endpoint accepts an api_key_id path parameter and deletes it with ",
-        "published": "2026-03-20T07:16:13.160"
-      },
-      {
-        "cve_id": "CVE-2026-4475",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability has been found in Yi Technology YI Home Camera 2 2.1.1_20171024151200. The affected element is an unknown function of the file home/web/ipc. Such manipulation leads to hard-coded crede",
-        "published": "2026-03-20T07:16:14.043"
-      },
-      {
         "cve_id": "CVE-2026-4486",
         "severity": "HIGH",
         "base_score": 8.8,
@@ -306,11 +278,67 @@
         "published": "2026-03-20T14:16:16.907"
       },
       {
-        "cve_id": "CVE-2026-33039",
+        "cve_id": "CVE-2026-4487",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "WWBN AVideo is an open source video platform. In versions 25.0 and below, the plugin/LiveLinks/proxy.php endpoint validates user-supplied URLs against internal/private networks using isSSRFSafeURL(), ",
-        "published": "2026-03-20T06:16:12.150"
+        "base_score": 8.8,
+        "description": "A vulnerability was determined in UTT HiPER 1200GW up to 2.5.3-170306. This impacts the function strcpy of the file /goform/websHostFilter. This manipulation causes buffer overflow. It is possible to ",
+        "published": "2026-03-20T15:16:23.850"
+      },
+      {
+        "cve_id": "CVE-2026-32989",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Precurio Intranet Portal 4.4 contains a cross-site request forgery vulnerability that allows attackers to induce authenticated users to submit crafted requests to a profile update endpoint handling fi",
+        "published": "2026-03-20T16:16:17.770"
+      },
+      {
+        "cve_id": "CVE-2026-4488",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was identified in UTT HiPER 1250GW up to 3.2.7-210907-180535. Affected is the function strcpy of the file /goform/setSysAdm. Such manipulation of the argument GroupName leads to buffer",
+        "published": "2026-03-20T16:16:19.093"
+      },
+      {
+        "cve_id": "CVE-2026-4489",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was detected in Tenda A18 Pro 02.03.02.28. This vulnerability affects the function form_fast_setting_wifi_set of the file /goform/fast_setting_wifi_set. The manipulation results in sta",
+        "published": "2026-03-20T16:16:19.303"
+      },
+      {
+        "cve_id": "CVE-2026-4490",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A flaw has been found in Tenda A18 Pro 02.03.02.28. This issue affects the function setSchedWifi of the file /goform/openSchedWifi. This manipulation causes stack-based buffer overflow. Remote exploit",
+        "published": "2026-03-20T17:17:00.030"
+      },
+      {
+        "cve_id": "CVE-2026-4491",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability has been found in Tenda A18 Pro 02.03.02.28. Impacted is the function fromSetIpMacBind of the file /goform/SetIpMacBind. Such manipulation of the argument list leads to stack-based buf",
+        "published": "2026-03-20T17:17:00.240"
+      },
+      {
+        "cve_id": "CVE-2026-4492",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was found in Tenda A18 Pro 02.03.02.28. The affected element is the function set_qosMib_list of the file /goform/formSetQosBand. Performing a manipulation of the argument list results ",
+        "published": "2026-03-20T18:16:17.383"
+      },
+      {
+        "cve_id": "CVE-2026-4493",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was determined in Tenda A18 Pro 02.03.02.28. The impacted element is the function sub_423B50 of the file /goform/setMacFilterCfg of the component MAC Filtering Configuration Endpoint. ",
+        "published": "2026-03-20T18:16:17.597"
+      },
+      {
+        "cve_id": "CVE-2026-32710",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "MariaDB server is a community developed fork of MySQL server. An authenticated user can crash MariaDB versions 11.4 before 11.4.10 and 11.8 before 11.8.6 via a bug in JSON_SCHEMA_VALID() function. Und",
+        "published": "2026-03-20T19:16:16.670"
       },
       {
         "cve_id": "CVE-2026-33072",
@@ -318,34 +346,6 @@
         "base_score": 8.2,
         "description": "FileRise is a self-hosted web file manager / WebDAV server. In versions prior to 3.9.0, a hardcoded default encryption key (default_please_change_this_key) is used for all cryptographic operations \u2014 H",
         "published": "2026-03-20T09:16:15.710"
-      },
-      {
-        "cve_id": "CVE-2026-33037",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "WWBN AVideo is an open source video platform. In versions 25.0 and below, the official Docker deployment files (docker-compose.yml, env.example) ship with the admin password set to \"password\", which i",
-        "published": "2026-03-20T06:16:11.817"
-      },
-      {
-        "cve_id": "CVE-2026-33038",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "WWBN AVideo is an open source video platform. Versions 25.0 and below are vulnerable to unauthenticated application takeover through the install/checkConfiguration.php endpoint. install/checkConfigura",
-        "published": "2026-03-20T06:16:11.983"
-      },
-      {
-        "cve_id": "CVE-2026-33043",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "WWBN AVideo is an open source video platform. In versions 25.0 and below, /objects/phpsessionid.json.php exposes the current PHP session ID to any unauthenticated request. The allowOrigin() function r",
-        "published": "2026-03-20T06:16:12.670"
-      },
-      {
-        "cve_id": "CVE-2026-4478",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "A vulnerability was identified in Yi Technology YI Home Camera 2 2.1.1_20171024151200. This impacts an unknown function of the file home/web/ipc of the component HTTP Firmware Update Handler. The mani",
-        "published": "2026-03-20T07:16:14.713"
       },
       {
         "cve_id": "CVE-2026-27625",
@@ -362,25 +362,25 @@
         "published": "2026-03-20T10:16:18.413"
       },
       {
-        "cve_id": "CVE-2026-33012",
+        "cve_id": "CVE-2026-31836",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Micronaut Framework is a JVM-based full stack Java framework designed for building modular, easily testable JVM applications.  Versions 4.7.0 through 4.10.16 used an unbounded ConcurrentHashMap cache ",
-        "published": "2026-03-20T05:16:15.200"
+        "base_score": 8.1,
+        "description": "Checkmate is an open-source, self-hosted tool designed to track and monitor server hardware, uptime, response times, and incidents in real-time with beautiful visualizations. In versions from 3.5.1 an",
+        "published": "2026-03-20T18:16:13.540"
       },
       {
-        "cve_id": "CVE-2026-33036",
+        "cve_id": "CVE-2026-33010",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "fast-xml-parser allows users to process XML from JS object without C/C++ based libraries or callbacks. Versions 4.0.0-beta.3 through 5.5.5 contain a bypass vulnerability where numeric character refere",
-        "published": "2026-03-20T06:16:11.630"
+        "base_score": 8.1,
+        "description": "mcp-memory-service is an open-source memory backend for multi-agent systems. Prior to version 10.25.1, when the HTTP server is enabled (MCP_HTTP_ENABLED=true), the application configures FastAPI's COR",
+        "published": "2026-03-20T19:16:17.813"
       },
       {
-        "cve_id": "CVE-2026-32701",
+        "cve_id": "CVE-2026-32303",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Qwik is a performance-focused JavaScript framework. Versions prior to 1.19.2 improperly inferred arrays from dotted form field names during FormData parsing. By submitting mixed array-index and object",
-        "published": "2026-03-20T09:16:14.520"
+        "base_score": 7.6,
+        "description": "Cryptomator encrypts data being stored on cloud infrastructure. Prior to version 1.19.1, an integrity check vulnerability allows an attacker to tamper with the vault configuration file leading to a ma",
+        "published": "2026-03-20T18:16:14.593"
       }
     ]
   },
