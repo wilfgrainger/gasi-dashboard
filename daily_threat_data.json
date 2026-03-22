@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-22T01:19:50.002791+00:00",
+  "generated_at": "2026-03-22T05:15:52.430207+00:00",
   "threat_score": {
-    "score": 5.0,
+    "score": 5.5,
     "level": "ELEVATED",
     "level_color": "elevated",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 1.0,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -238,58 +238,72 @@
     ]
   },
   "nvd": {
-    "total": 145,
-    "critical_count": 0,
+    "total": 67,
+    "critical_count": 1,
     "high_count": 14,
     "cves": [
       {
-        "cve_id": "CVE-2026-2941",
+        "cve_id": "CVE-2019-25568",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Memu Play 6.0.7 contains an insecure file permissions vulnerability that allows low-privilege users to escalate privileges by replacing the MemuService.exe executable. Attackers can rename and overwri",
+        "published": "2026-03-21T13:16:20.470"
+      },
+      {
+        "cve_id": "CVE-2026-4529",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The Linksy Search and Replace plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the 'linksy_search_and_replace_item_details' function in all ",
-        "published": "2026-03-21T04:17:13.620"
+        "description": "A vulnerability was identified in D-Link DHP-1320 1.00WWB04. This affects the function redirect_count_down_page of the component SOAP Handler. Such manipulation leads to stack-based buffer overflow. T",
+        "published": "2026-03-21T23:16:51.577"
       },
       {
-        "cve_id": "CVE-2026-3334",
+        "cve_id": "CVE-2026-4314",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The CMS Commander plugin for WordPress is vulnerable to SQL Injection via the 'or_blogname', 'or_blogdescription', and 'or_admin_email' parameters in all versions up to, and including, 2.288. This is ",
-        "published": "2026-03-21T04:17:20.330"
+        "description": "The 'The Ultimate WordPress Toolkit \u2013 WP Extended' plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 3.2.4. This is due to the `isDashboardOrProfileReque",
+        "published": "2026-03-22T04:16:26.180"
       },
       {
-        "cve_id": "CVE-2026-4261",
+        "cve_id": "CVE-2019-25575",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Expire Users plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 1.2.2. This is due to the plugin allowing a user to update the 'on_expire_default_to_r",
-        "published": "2026-03-21T04:17:44.223"
+        "base_score": 8.2,
+        "description": "SimplePress CMS 1.0.7 contains an SQL injection vulnerability that allows unauthenticated attackers to execute arbitrary SQL queries by injecting malicious code through the 'p' and 's' parameters. Att",
+        "published": "2026-03-21T16:16:01.147"
       },
       {
-        "cve_id": "CVE-2026-1313",
+        "cve_id": "CVE-2019-25576",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "The MimeTypes Link Icons plugin for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including, 3.2.20. This is due to the plugin making outbound HTTP requests to user",
-        "published": "2026-03-21T04:16:52.630"
+        "base_score": 8.2,
+        "description": "Kepler Wallpaper Script 1.1 contains an SQL injection vulnerability that allows unauthenticated attackers to execute arbitrary SQL queries by injecting malicious code into the category parameter. Atta",
+        "published": "2026-03-21T16:16:01.333"
       },
       {
-        "cve_id": "CVE-2025-14037",
+        "cve_id": "CVE-2019-25578",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "phpTransformer 2016.9 contains an SQL injection vulnerability that allows remote attackers to execute arbitrary SQL queries by injecting malicious code through the idnews parameter. Attackers can send",
+        "published": "2026-03-21T16:16:01.730"
+      },
+      {
+        "cve_id": "CVE-2019-25580",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "ownDMS 4.7 contains an SQL injection vulnerability that allows unauthenticated attackers to execute arbitrary SQL queries by injecting malicious code through the IMG parameter. Attackers can send GET ",
+        "published": "2026-03-21T16:16:02.110"
+      },
+      {
+        "cve_id": "CVE-2019-25581",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "i-doit CMDB 1.12 contains an SQL injection vulnerability that allows unauthenticated attackers to execute arbitrary SQL queries by injecting malicious code through the objGroupID parameter. Attackers ",
+        "published": "2026-03-21T16:16:02.303"
+      },
+      {
+        "cve_id": "CVE-2026-3629",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "The Invelity Product Feeds plugin for WordPress is vulnerable to arbitrary file deletion via path traversal in all versions up to, and including, 1.2.6. This is due to missing validation and sanitizat",
-        "published": "2026-03-21T04:16:51.263"
-      },
-      {
-        "cve_id": "CVE-2026-1800",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Fonts Manager | Custom Fonts plugin for WordPress is vulnerable to time-based SQL Injection via the \u2018fmcfIdSelectedFnt\u2019 parameter in all versions up to, and including, 1.2 due to insufficient esca",
-        "published": "2026-03-21T04:16:54.520"
-      },
-      {
-        "cve_id": "CVE-2026-2468",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Quentn WP plugin for WordPress is vulnerable to SQL Injection via the 'qntn_wp_access' cookie in all versions up to, and including, 1.2.12. This is due to insufficient escaping on the user supplie",
-        "published": "2026-03-21T04:17:02.577"
+        "description": "The Import and export users and customers plugin for WordPress is vulnerable to privilege escalation in all versions up to, and including, 1.29.7. This is due to the 'save_extra_user_profile_fields' f",
+        "published": "2026-03-21T23:16:51.393"
       },
       {
         "cve_id": "CVE-2026-4373",
@@ -299,88 +313,74 @@
         "published": "2026-03-21T07:16:10.380"
       },
       {
-        "cve_id": "CVE-2026-4302",
+        "cve_id": "CVE-2019-25552",
         "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The WowOptin: Next-Gen Popup Maker plugin for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including, 1.4.29. This is due to the plugin exposing a publicly accessi",
-        "published": "2026-03-21T02:16:18.260"
+        "base_score": 7.5,
+        "description": "CEWE PHOTO SHOW 6.4.3 contains a denial of service vulnerability that allows attackers to crash the application by submitting an excessively long buffer to the password field. Attackers can paste a la",
+        "published": "2026-03-21T13:16:17.507"
       },
       {
-        "cve_id": "CVE-2026-1648",
+        "cve_id": "CVE-2019-25560",
         "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The Performance Monitor plugin for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including, 1.0.6. This is due to insufficient validation of the 'url' parameter in ",
-        "published": "2026-03-21T04:16:54.310"
+        "base_score": 7.5,
+        "description": "Lyric Video Creator 2.1 contains a denial of service vulnerability that allows attackers to crash the application by processing malformed MP3 files. Attackers can create a crafted MP3 file with an ove",
+        "published": "2026-03-21T13:16:18.957"
       },
       {
-        "cve_id": "CVE-2026-2279",
+        "cve_id": "CVE-2019-25579",
         "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The myLinksDump plugin for WordPress is vulnerable to SQL Injection via the 'sort_by' and 'sort_order' parameters in all versions up to, and including, 1.6 due to insufficient escaping on the user sup",
-        "published": "2026-03-21T04:16:57.990"
+        "base_score": 7.5,
+        "description": "phpTransformer 2016.9 contains a directory traversal vulnerability that allows unauthenticated attackers to access arbitrary files by manipulating the path parameter. Attackers can send requests to th",
+        "published": "2026-03-21T16:16:01.923"
       },
       {
-        "cve_id": "CVE-2026-2440",
+        "cve_id": "CVE-2026-4528",
         "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The SurveyJS plugin for WordPress is vulnerable to Stored Cross-Site Scripting in all versions up to, and including, 2.5.3 via survey result submissions. This is due to insufficient input sanitization",
-        "published": "2026-03-21T04:17:02.220"
+        "base_score": 7.3,
+        "description": "A vulnerability was determined in trueleaf ApiFlow 0.9.7. The impacted element is the function validateUrlSecurity of the file packages/server/src/service/proxy/http_proxy.service.ts of the component ",
+        "published": "2026-03-21T22:16:20.137"
       },
       {
-        "cve_id": "CVE-2026-3003",
+        "cve_id": "CVE-2019-25573",
         "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The Vagaro Booking Widget plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the \u2018vagaro_code\u2019 parameter in all versions up to, and including, 0.3 due to insufficient input sanitiza",
-        "published": "2026-03-21T04:17:18.623"
+        "base_score": 7.1,
+        "description": "Green CMS 2.x contains an SQL injection vulnerability that allows authenticated attackers to execute arbitrary SQL queries by injecting malicious code through the cat parameter. Attackers can send GET",
+        "published": "2026-03-21T16:16:00.753"
       },
       {
-        "cve_id": "CVE-2026-3478",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The Content Syndication Toolkit plugin for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including, 1.3 via the redux_p AJAX action in the bundled ReduxFramework li",
-        "published": "2026-03-21T04:17:25.807"
+        "cve_id": "CVE-2026-33549",
+        "severity": "MEDIUM",
+        "base_score": 6.7,
+        "description": "SPIP 4.4.10 through 4.4.12 before 4.4.13 allows unintended privilege assignment (of administrator privileges) during the editing of an author data structure because of STATUT mishandling.",
+        "published": "2026-03-22T03:16:01.237"
       },
       {
-        "cve_id": "CVE-2026-2290",
+        "cve_id": "CVE-2019-25574",
         "severity": "MEDIUM",
         "base_score": 6.5,
-        "description": "The Post Affiliate Pro plugin for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including, 1.28.0. This makes it possible for authenticated attackers, with Administ",
-        "published": "2026-03-21T04:16:58.187"
+        "description": "Green CMS 2.x contains a path traversal vulnerability that allows authenticated attackers to download arbitrary files and directories by injecting directory traversal sequences. Attackers can manipula",
+        "published": "2026-03-21T16:16:00.960"
       },
       {
-        "cve_id": "CVE-2026-2351",
+        "cve_id": "CVE-2019-25582",
         "severity": "MEDIUM",
         "base_score": 6.5,
-        "description": "The Task Manager plugin for WordPress is vulnerable to Arbitrary File Read in all versions up to, and including, 3.0.2 via the callback_get_text_from_url() function. This makes it possible for authent",
-        "published": "2026-03-21T04:16:58.533"
+        "description": "i-doit CMDB 1.12 contains an arbitrary file download vulnerability that allows authenticated attackers to download sensitive files by manipulating the file parameter in index.php. Attackers can send G",
+        "published": "2026-03-21T16:16:02.497"
       },
       {
-        "cve_id": "CVE-2026-2375",
+        "cve_id": "CVE-2025-71276",
         "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "The App Builder \u2013 Create Native Android & iOS Apps On The Flight plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 5.5.10. This is due to the `verify_rol",
-        "published": "2026-03-21T04:16:58.727"
+        "base_score": 6.4,
+        "description": "SOGo before 5.12.5 is prone to a XSS vulnerability with events, tasks, and contacts categories.",
+        "published": "2026-03-22T03:16:00.233"
       },
       {
-        "cve_id": "CVE-2026-2503",
+        "cve_id": "CVE-2026-3427",
         "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "The ElementCamp plugin for WordPress is vulnerable to time-based SQL Injection via the 'meta_query[compare]' parameter in the 'tcg_select2_search_post' AJAX action in all versions up to, and including",
-        "published": "2026-03-21T04:17:09.407"
-      },
-      {
-        "cve_id": "CVE-2026-2720",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "The Hr Press Lite plugin for WordPress is vulnerable to unauthorized access of sensitive employee data due to a missing capability check on the `hrp-fetch-employees` AJAX action in all versions up to,",
-        "published": "2026-03-21T04:17:11.840"
-      },
-      {
-        "cve_id": "CVE-2026-4004",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "The Task Manager plugin for WordPress is vulnerable to arbitrary shortcode execution via the 'search' AJAX action in all versions up to, and including, 3.0.2. This is due to missing capability checks ",
-        "published": "2026-03-21T04:17:39.033"
+        "base_score": 6.4,
+        "description": "The Yoast SEO \u2013 Advanced SEO with real-time guidance and built-in AI plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the the `jsonText` block attribute in all versions up to, and",
+        "published": "2026-03-22T04:16:24.197"
       }
     ]
   },
