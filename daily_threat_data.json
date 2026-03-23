@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-23T05:26:38.364058+00:00",
+  "generated_at": "2026-03-23T08:44:37.281348+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
+        "value": 4,
         "score": 2.0,
         "max": 3
       },
@@ -238,10 +238,17 @@
     ]
   },
   "nvd": {
-    "total": 70,
-    "critical_count": 2,
-    "high_count": 25,
+    "total": 90,
+    "critical_count": 4,
+    "high_count": 30,
     "cves": [
+      {
+        "cve_id": "CVE-2026-3587",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "An unauthenticated remote attacker can exploit a hidden function in the CLI prompt to escape the restricted interface and gain root access to the underlying Linux based OS, leading to full compromise ",
+        "published": "2026-03-23T08:16:17.360"
+      },
       {
         "cve_id": "CVE-2019-25614",
         "severity": "CRITICAL",
@@ -255,6 +262,13 @@
         "base_score": 9.8,
         "description": "A vulnerability has been found in Tenda A15 15.13.07.13. The impacted element is the function UploadCfg of the file /cgi-bin/UploadCfg. The manipulation of the argument File leads to stack-based buffe",
         "published": "2026-03-23T03:16:00.387"
+      },
+      {
+        "cve_id": "CVE-2026-4599",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Versions of the package jsrsasign from 7.0.0 and before 11.1.1 are vulnerable to Incomplete Comparison with Missing Factors via the getRandomBigIntegerZeroToMax and getRandomBigIntegerMinToMax functio",
+        "published": "2026-03-23T06:16:21.513"
       },
       {
         "cve_id": "CVE-2026-4551",
@@ -304,6 +318,13 @@
         "base_score": 8.8,
         "description": "A flaw has been found in Belkin F9K1122 1.00.33. The affected element is the function formWISP5G of the file /goform/formWISP5G. Executing a manipulation of the argument webpage can lead to stack-base",
         "published": "2026-03-23T03:16:00.083"
+      },
+      {
+        "cve_id": "CVE-2026-4601",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "Versions of the package jsrsasign before 11.1.1 are vulnerable to Missing Cryptographic Step via the KJUR.crypto.DSA.signWithMessageHash process in the DSA signing implementation. An attacker can reco",
+        "published": "2026-03-23T06:16:21.893"
       },
       {
         "cve_id": "CVE-2019-25603",
@@ -360,27 +381,6 @@
         "base_score": 8.4,
         "description": "FTP Shell Server 6.83 contains a buffer overflow vulnerability in the 'Account name to ban' field that allows local attackers to execute arbitrary code by supplying a crafted string. Attackers can inj",
         "published": "2026-03-22T14:16:30.873"
-      },
-      {
-        "cve_id": "CVE-2026-33293",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "WWBN AVideo is an open source video platform. Prior to version 26.0, the `deleteDump` parameter in `plugin/CloneSite/cloneServer.json.php` is passed directly to `unlink()` without any path sanitizatio",
-        "published": "2026-03-22T17:17:08.950"
-      },
-      {
-        "cve_id": "CVE-2019-25612",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Admin Express 1.2.5.485 contains a local structured exception handling buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying an alphanumeric encoded payload ",
-        "published": "2026-03-22T14:16:29.550"
-      },
-      {
-        "cve_id": "CVE-2019-25605",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "EquityPandit 1.0 contains an insecure logging vulnerability that allows attackers to capture sensitive user credentials by accessing developer console logs via Android Debug Bridge. Attackers can use ",
-        "published": "2026-03-22T14:16:28.260"
       }
     ]
   },
