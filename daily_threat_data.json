@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-03-23T01:20:36.204003+00:00",
+  "generated_at": "2026-03-23T05:26:38.364058+00:00",
   "threat_score": {
-    "score": 5.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 2,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 74,
-    "critical_count": 1,
-    "high_count": 28,
+    "total": 70,
+    "critical_count": 2,
+    "high_count": 25,
     "cves": [
       {
         "cve_id": "CVE-2019-25614",
@@ -250,25 +250,11 @@
         "published": "2026-03-22T14:16:29.930"
       },
       {
-        "cve_id": "CVE-2026-4314",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The 'The Ultimate WordPress Toolkit \u2013 WP Extended' plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 3.2.4. This is due to the `isDashboardOrProfileReque",
-        "published": "2026-03-22T04:16:26.180"
-      },
-      {
-        "cve_id": "CVE-2026-4534",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw has been found in Tenda FH451 1.0.0.9. This affects the function formWrlExtraSet of the file /goform/WrlExtraSet. This manipulation of the argument GO causes stack-based buffer overflow. The at",
-        "published": "2026-03-22T05:16:19.273"
-      },
-      {
-        "cve_id": "CVE-2026-4535",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability has been found in Tenda FH451 1.0.0.9. This vulnerability affects the function WrlclientSet of the file /goform/WrlclientSet. Such manipulation of the argument GO leads to stack-based ",
-        "published": "2026-03-22T05:16:19.640"
+        "cve_id": "CVE-2026-4567",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A vulnerability has been found in Tenda A15 15.13.07.13. The impacted element is the function UploadCfg of the file /cgi-bin/UploadCfg. The manipulation of the argument File leads to stack-based buffe",
+        "published": "2026-03-23T03:16:00.387"
       },
       {
         "cve_id": "CVE-2026-4551",
@@ -311,6 +297,13 @@
         "base_score": 8.8,
         "description": "A vulnerability was detected in Tenda AC21 16.03.08.16. Impacted is the function formSetQosBand of the file /goform/SetNetControlList. Performing a manipulation of the argument list results in buffer ",
         "published": "2026-03-23T01:16:43.803"
+      },
+      {
+        "cve_id": "CVE-2026-4566",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A flaw has been found in Belkin F9K1122 1.00.33. The affected element is the function formWISP5G of the file /goform/formWISP5G. Executing a manipulation of the argument webpage can lead to stack-base",
+        "published": "2026-03-23T03:16:00.083"
       },
       {
         "cve_id": "CVE-2019-25603",
@@ -381,6 +374,13 @@
         "base_score": 7.8,
         "description": "Admin Express 1.2.5.485 contains a local structured exception handling buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying an alphanumeric encoded payload ",
         "published": "2026-03-22T14:16:29.550"
+      },
+      {
+        "cve_id": "CVE-2019-25605",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "EquityPandit 1.0 contains an insecure logging vulnerability that allows attackers to capture sensitive user credentials by accessing developer console logs via Android Debug Bridge. Attackers can use ",
+        "published": "2026-03-22T14:16:28.260"
       }
     ]
   },
