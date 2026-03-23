@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-23T08:44:37.281348+00:00",
+  "generated_at": "2026-03-23T12:43:39.039032+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 6,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 90,
-    "critical_count": 4,
-    "high_count": 30,
+    "total": 97,
+    "critical_count": 6,
+    "high_count": 32,
     "cves": [
       {
         "cve_id": "CVE-2026-3587",
@@ -262,6 +262,20 @@
         "base_score": 9.8,
         "description": "A vulnerability has been found in Tenda A15 15.13.07.13. The impacted element is the function UploadCfg of the file /cgi-bin/UploadCfg. The manipulation of the argument File leads to stack-based buffe",
         "published": "2026-03-23T03:16:00.387"
+      },
+      {
+        "cve_id": "CVE-2026-32968",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Due to the improper neutralisation of special elements used in an OS command, an unauthenticated remote attacker can exploit an RCE vulnerability in the com_mb24sysapi module, resulting in full system",
+        "published": "2026-03-23T12:16:08.407"
+      },
+      {
+        "cve_id": "CVE-2026-4585",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A vulnerability has been found in Tiandy Easy7 Integrated Management Platform up to 7.17.0. This vulnerability affects unknown code of the file /Easy7/apps/WebService/ImportSystemConfiguration.jsp of ",
+        "published": "2026-03-23T12:16:25.973"
       },
       {
         "cve_id": "CVE-2026-4599",
@@ -367,20 +381,6 @@
         "base_score": 8.4,
         "description": "MiniFtp contains a buffer overflow vulnerability in the parseconf_load_setting function that allows local attackers to execute arbitrary code by supplying oversized configuration values. Attackers can",
         "published": "2026-03-22T14:16:29.360"
-      },
-      {
-        "cve_id": "CVE-2019-25615",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Lavavo CD Ripper 4.20 contains a structured exception handling (SEH) buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying a malicious string in the License ",
-        "published": "2026-03-22T14:16:30.117"
-      },
-      {
-        "cve_id": "CVE-2019-25619",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "FTP Shell Server 6.83 contains a buffer overflow vulnerability in the 'Account name to ban' field that allows local attackers to execute arbitrary code by supplying a crafted string. Attackers can inj",
-        "published": "2026-03-22T14:16:30.873"
       }
     ]
   },
