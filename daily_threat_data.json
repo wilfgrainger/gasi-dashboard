@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-24T16:52:20.115583+00:00",
+  "generated_at": "2026-03-24T20:32:29.421557+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
+        "value": 7,
         "score": 2.5,
         "max": 3
       },
@@ -238,30 +238,30 @@
     ]
   },
   "nvd": {
-    "total": 303,
-    "critical_count": 5,
-    "high_count": 27,
+    "total": 309,
+    "critical_count": 7,
+    "high_count": 39,
     "cves": [
       {
-        "cve_id": "CVE-2026-33716",
+        "cve_id": "CVE-2026-33195",
         "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "WWBN AVideo is an open source video platform. In versions up to and including 26.0, the standalone live stream control endpoint at `plugin/Live/standAloneFiles/control.json.php` accepts a user-supplie",
-        "published": "2026-03-23T19:16:42.323"
+        "base_score": 9.8,
+        "description": "Active Storage allows users to attach cloud and local files in Rails applications. Prior to versions 8.1.2.1, 8.0.4.1, and 7.2.3.1, Active Storage's `DiskService#path_for` does not validate that the r",
+        "published": "2026-03-24T00:16:28.987"
       },
       {
-        "cve_id": "CVE-2026-2298",
+        "cve_id": "CVE-2026-4001",
         "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "Improper Neutralization of Argument Delimiters in a Command ('Argument Injection') vulnerability in Salesforce Marketing Cloud Engagement allows Web Services Protocol Manipulation. This issue affects ",
-        "published": "2026-03-23T20:16:25.523"
+        "base_score": 9.8,
+        "description": "The Woocommerce Custom Product Addons Pro plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 5.4.1 via the custom pricing formula eval() in the process_c",
+        "published": "2026-03-24T00:16:31.040"
       },
       {
-        "cve_id": "CVE-2026-33502",
+        "cve_id": "CVE-2026-33211",
         "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "WWBN AVideo is an open source video platform. In versions up to and including 26.0, an unauthenticated server-side request forgery vulnerability in `plugin/Live/test.php` allows any remote user to mak",
-        "published": "2026-03-23T17:16:51.653"
+        "base_score": 9.6,
+        "description": "Tekton Pipelines project provides k8s-style resources for declaring CI/CD-style pipelines. Starting in version 1.0.0 and prior to versions 1.0.1, 1.3.3, 1.6.1, 1.9.2, and 1.10.2, the Tekton Pipelines ",
+        "published": "2026-03-24T00:16:29.320"
       },
       {
         "cve_id": "CVE-2026-32913",
@@ -278,39 +278,25 @@
         "published": "2026-03-23T22:16:23.130"
       },
       {
-        "cve_id": "CVE-2026-24516",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A command injection vulnerability exists in DigitalOcean Droplet Agent through 1.3.2. The troubleshooting actioner component (internal/troubleshooting/actioner/actioner.go) processes metadata from the",
-        "published": "2026-03-23T17:16:37.863"
+        "cve_id": "CVE-2026-33202",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Active Storage allows users to attach cloud and local files in Rails applications. Prior to versions 8.1.2.1, 8.0.4.1, and 7.2.3.1, Active Storage's `DiskService#delete_prefixed` passes blob keys dire",
+        "published": "2026-03-24T00:16:29.157"
       },
       {
-        "cve_id": "CVE-2026-33507",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "WWBN AVideo is an open source video platform. In versions up to and including 26.0, the `objects/pluginImport.json.php` endpoint allows admin users to upload and install plugin ZIP files containing ex",
-        "published": "2026-03-23T17:16:51.803"
+        "cve_id": "CVE-2026-33286",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Graphiti is a framework that sits on top of models and exposes them via a JSON:API-compliant interface. Versions prior to 1.10.2 have an arbitrary method execution vulnerability that affects Graphiti'",
+        "published": "2026-03-24T00:16:30.683"
       },
       {
-        "cve_id": "CVE-2026-33647",
+        "cve_id": "CVE-2026-23480",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "WWBN AVideo is an open source video platform. In versions up to and including 26.0, the `ImageGallery::saveFile()` method validates uploaded file content using `finfo` MIME type detection but derives ",
-        "published": "2026-03-23T19:16:40.750"
-      },
-      {
-        "cve_id": "CVE-2026-33648",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "WWBN AVideo is an open source video platform. In versions up to and including 26.0, the restreamer endpoint constructs a log file path by embedding user-controlled `users_id` and `liveTransmitionHisto",
-        "published": "2026-03-23T19:16:40.907"
-      },
-      {
-        "cve_id": "CVE-2026-33717",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "WWBN AVideo is an open source video platform. In versions up to and including 26.0, the `downloadVideoFromDownloadURL()` function in `objects/aVideoEncoder.json.php` saves remote content to a web-acce",
-        "published": "2026-03-23T19:16:42.497"
+        "description": "Blinko is an AI-powered card note-taking project. Prior to version 1.8.4, there is a privilege escalation vulnerability. The upsertUser endpoint has 3 issues: it is missing superAdminAuthMiddleware, a",
+        "published": "2026-03-23T21:17:01.940"
       },
       {
         "cve_id": "CVE-2025-60946",
@@ -334,53 +320,67 @@
         "published": "2026-03-23T22:16:27.050"
       },
       {
-        "cve_id": "CVE-2026-32277",
+        "cve_id": "CVE-2026-3533",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "Connect-CMS is a content management system. In versions 1.35.0 through 1.41.0 and 2.35.0 through 2.41.0, a DOM-based Cross-Site Scripting (XSS) issue exists in the Cabinet Plugin list view. Versions 1",
-        "published": "2026-03-23T22:16:27.260"
+        "base_score": 8.8,
+        "description": "The Jupiter X Core plugin for WordPress is vulnerable to limited file uploads due to missing authorization on import_popup_templates() function as well as insufficient file type validation in the uplo",
+        "published": "2026-03-24T00:16:30.867"
       },
       {
-        "cve_id": "CVE-2026-33513",
+        "cve_id": "CVE-2026-4673",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "WWBN AVideo is an open source video platform. In versions up to and including 26.0, an unauthenticated API endpoint (`APIName=locale`) concatenates user input into an `include` path with no canonicali",
-        "published": "2026-03-23T19:16:40.593"
+        "base_score": 8.8,
+        "description": "Heap buffer overflow in WebAudio in Google Chrome prior to 146.0.7680.165 allowed a remote attacker to perform an out of bounds memory write via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-03-24T01:17:02.813"
       },
       {
-        "cve_id": "CVE-2026-33719",
+        "cve_id": "CVE-2026-4674",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "WWBN AVideo is an open source video platform. In versions up to and including 26.0, the CDN plugin endpoints `plugin/CDN/status.json.php` and `plugin/CDN/disable.json.php` use key-based authentication",
-        "published": "2026-03-23T19:16:42.647"
+        "base_score": 8.8,
+        "description": "Out of bounds read in CSS in Google Chrome prior to 146.0.7680.165 allowed a remote attacker to perform out of bounds memory access via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-03-24T01:17:02.960"
       },
       {
-        "cve_id": "CVE-2026-32278",
+        "cve_id": "CVE-2026-4675",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Connect-CMS is a content management system. In versions on the 1.x series up to and including 1.41.0 and versions on the 2.x series up to and including 2.41.0, a Stored Cross-site Scripting (XSS) issu",
-        "published": "2026-03-23T22:16:27.443"
+        "base_score": 8.8,
+        "description": "Heap buffer overflow in WebGL in Google Chrome prior to 146.0.7680.165 allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-03-24T01:17:03.090"
       },
       {
-        "cve_id": "CVE-2026-33649",
+        "cve_id": "CVE-2026-4676",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "WWBN AVideo is an open source video platform. In versions up to and including 26.0, the `plugin/Permissions/setPermission.json.php` endpoint accepts GET parameters for a state-changing operation that ",
-        "published": "2026-03-23T19:16:41.070"
+        "base_score": 8.8,
+        "description": "Use after free in Dawn in Google Chrome prior to 146.0.7680.165 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-03-24T01:17:03.217"
       },
       {
-        "cve_id": "CVE-2026-33651",
+        "cve_id": "CVE-2026-4677",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "WWBN AVideo is an open source video platform. In versions up to and including 26.0, the `remindMe.json.php` endpoint passes `$_REQUEST['live_schedule_id']` through multiple functions without sanitizat",
-        "published": "2026-03-23T19:16:41.383"
+        "base_score": 8.8,
+        "description": "Inappropriate implementation in WebAudio in Google Chrome prior to 146.0.7680.165 allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page. (Chromium security severity",
+        "published": "2026-03-24T01:17:03.343"
       },
       {
-        "cve_id": "CVE-2026-32300",
+        "cve_id": "CVE-2026-4678",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Connect-CMS is a content management system. In versions on the 1.x series up to and including 1.41.0 and versions on the 2.x series up to and including 2.41.0, an improper authorization issue in the M",
-        "published": "2026-03-23T22:16:27.933"
+        "base_score": 8.8,
+        "description": "Use after free in WebGPU in Google Chrome prior to 146.0.7680.165 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-03-24T01:17:03.477"
+      },
+      {
+        "cve_id": "CVE-2026-4679",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Integer overflow in Fonts in Google Chrome prior to 146.0.7680.165 allowed a remote attacker to perform an out of bounds memory write via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-03-24T01:17:03.607"
+      },
+      {
+        "cve_id": "CVE-2026-4680",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in FedCM in Google Chrome prior to 146.0.7680.165 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-03-24T01:17:03.743"
       }
     ]
   },
