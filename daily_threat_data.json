@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-24T12:49:49.651340+00:00",
+  "generated_at": "2026-03-24T16:52:20.115583+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
+        "value": 5,
         "score": 2.5,
         "max": 3
       },
@@ -238,37 +238,23 @@
     ]
   },
   "nvd": {
-    "total": 264,
-    "critical_count": 7,
-    "high_count": 28,
+    "total": 303,
+    "critical_count": 5,
+    "high_count": 27,
     "cves": [
-      {
-        "cve_id": "CVE-2026-33478",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "WWBN AVideo is an open source video platform. In versions up to and including 26.0, multiple vulnerabilities in AVideo's CloneSite plugin chain together to allow a completely unauthenticated attacker ",
-        "published": "2026-03-23T15:16:34.063"
-      },
-      {
-        "cve_id": "CVE-2026-33352",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "WWBN AVideo is an open source video platform. Prior to version 26.0, an unauthenticated SQL injection vulnerability exists in `objects/category.php` in the `getAllCategories()` method. The `doNotShowC",
-        "published": "2026-03-23T14:16:33.580"
-      },
-      {
-        "cve_id": "CVE-2026-4404",
-        "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "Use of hard coded credentials in GoHarbor Harbor version 2.15.0 and below, allows attackers to use the default password and gain access to the web UI.",
-        "published": "2026-03-23T15:16:35.403"
-      },
       {
         "cve_id": "CVE-2026-33716",
         "severity": "CRITICAL",
         "base_score": 9.4,
         "description": "WWBN AVideo is an open source video platform. In versions up to and including 26.0, the standalone live stream control endpoint at `plugin/Live/standAloneFiles/control.json.php` accepts a user-supplie",
         "published": "2026-03-23T19:16:42.323"
+      },
+      {
+        "cve_id": "CVE-2026-2298",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "Improper Neutralization of Argument Delimiters in a Command ('Argument Injection') vulnerability in Salesforce Marketing Cloud Engagement allows Web Services Protocol Manipulation. This issue affects ",
+        "published": "2026-03-23T20:16:25.523"
       },
       {
         "cve_id": "CVE-2026-33502",
@@ -278,25 +264,25 @@
         "published": "2026-03-23T17:16:51.653"
       },
       {
-        "cve_id": "CVE-2026-33297",
+        "cve_id": "CVE-2026-32913",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "WWBN AVideo is an open source video platform. Prior to version 26.0, the `setPassword.json.php` endpoint in the CustomizeUser plugin allows administrators to set a channel password for any user. Due t",
-        "published": "2026-03-23T14:16:33.273"
+        "base_score": 9.3,
+        "description": "OpenClaw before 2026.3.7 contains an improper header validation vulnerability in fetchWithSsrFGuard that forwards custom authorization headers across cross-origin redirects. Attackers can trigger redi",
+        "published": "2026-03-23T22:16:30.433"
       },
       {
-        "cve_id": "CVE-2026-33351",
+        "cve_id": "CVE-2025-60949",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "WWBN AVideo is an open source video platform. Prior to version 26.0, a Server-Side Request Forgery (SSRF) vulnerability exists in `plugin/Live/standAloneFiles/saveDVR.json.php`. When the AVideo Live p",
-        "published": "2026-03-23T14:16:33.423"
+        "description": "Census CSWeb 8.0.1 allows \"app/config\" to be reachable via HTTP in some deployments. A remote, unauthenticated attacker could send requests to configuration files and obtain leaked secrets. Fixed in 8",
+        "published": "2026-03-23T22:16:23.130"
       },
       {
-        "cve_id": "CVE-2026-33479",
+        "cve_id": "CVE-2026-24516",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "WWBN AVideo is an open source video platform. In versions up to and including 26.0, the Gallery plugin's `saveSort.json.php` endpoint passes unsanitized user input from `$_REQUEST['sections']` array v",
-        "published": "2026-03-23T15:16:34.220"
+        "description": "A command injection vulnerability exists in DigitalOcean Droplet Agent through 1.3.2. The troubleshooting actioner component (internal/troubleshooting/actioner/actioner.go) processes metadata from the",
+        "published": "2026-03-23T17:16:37.863"
       },
       {
         "cve_id": "CVE-2026-33507",
@@ -327,11 +313,32 @@
         "published": "2026-03-23T19:16:42.497"
       },
       {
-        "cve_id": "CVE-2026-33480",
+        "cve_id": "CVE-2025-60946",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "WWBN AVideo is an open source video platform. In versions up to and including 26.0, the `isSSRFSafeURL()` function in AVideo can be bypassed using IPv4-mapped IPv6 addresses (`::ffff:x.x.x.x`). The un",
-        "published": "2026-03-23T15:16:34.400"
+        "base_score": 8.8,
+        "description": "Census CSWeb 8.0.1 allows arbitrary file path input. A remote, authenticated attacker could access unintended file directories. Fixed in 8.1.0 alpha.",
+        "published": "2026-03-23T22:16:22.583"
+      },
+      {
+        "cve_id": "CVE-2025-60947",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Census CSWeb 8.0.1 allows arbitrary file upload. A remote, authenticated attacker could upload a malicious file, possibly leading to remote code execution. Fixed in 8.1.0 alpha.",
+        "published": "2026-03-23T22:16:22.793"
+      },
+      {
+        "cve_id": "CVE-2026-32276",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Connect-CMS is a content management system. In versions on the 1.x series up to and including 1.41.0 and versions on the 2.x series up to and including 2.41.0, an authenticated user may be able to exe",
+        "published": "2026-03-23T22:16:27.050"
+      },
+      {
+        "cve_id": "CVE-2026-32277",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "Connect-CMS is a content management system. In versions 1.35.0 through 1.41.0 and 2.35.0 through 2.41.0, a DOM-based Cross-Site Scripting (XSS) issue exists in the Cabinet Plugin list view. Versions 1",
+        "published": "2026-03-23T22:16:27.260"
       },
       {
         "cve_id": "CVE-2026-33513",
@@ -348,18 +355,11 @@
         "published": "2026-03-23T19:16:42.647"
       },
       {
-        "cve_id": "CVE-2026-32845",
+        "cve_id": "CVE-2026-32278",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "cgltf version 1.15 and prior contain an integer overflow vulnerability in the cgltf_validate() function when validating sparse accessors that allows attackers to trigger out-of-bounds reads by supplyi",
-        "published": "2026-03-23T16:16:48.583"
-      },
-      {
-        "cve_id": "CVE-2026-33482",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "WWBN AVideo is an open source video platform. In versions up to and including 26.0, the `sanitizeFFmpegCommand()` function in `plugin/API/standAlone/functions.php` is designed to prevent OS command in",
-        "published": "2026-03-23T15:16:34.560"
+        "base_score": 8.2,
+        "description": "Connect-CMS is a content management system. In versions on the 1.x series up to and including 1.41.0 and versions on the 2.x series up to and including 2.41.0, a Stored Cross-site Scripting (XSS) issu",
+        "published": "2026-03-23T22:16:27.443"
       },
       {
         "cve_id": "CVE-2026-33649",
@@ -376,11 +376,11 @@
         "published": "2026-03-23T19:16:41.383"
       },
       {
-        "cve_id": "CVE-2026-33354",
+        "cve_id": "CVE-2026-32300",
         "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "WWBN AVideo is an open source video platform. In versions up to and including 26.0, `POST /objects/aVideoEncoder.json.php` accepts a requester-controlled `chunkFile` parameter intended for staged uplo",
-        "published": "2026-03-23T15:16:33.897"
+        "base_score": 8.1,
+        "description": "Connect-CMS is a content management system. In versions on the 1.x series up to and including 1.41.0 and versions on the 2.x series up to and including 2.41.0, an improper authorization issue in the M",
+        "published": "2026-03-23T22:16:27.933"
       }
     ]
   },
