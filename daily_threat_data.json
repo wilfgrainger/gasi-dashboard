@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-24T05:19:45.329689+00:00",
+  "generated_at": "2026-03-24T08:40:42.655259+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 10,
-        "score": 3.0,
+        "value": 9,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,17 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 253,
-    "critical_count": 10,
-    "high_count": 30,
+    "total": 252,
+    "critical_count": 9,
+    "high_count": 31,
     "cves": [
-      {
-        "cve_id": "CVE-2026-3587",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "An unauthenticated remote attacker can exploit a hidden function in the CLI prompt to escape the restricted interface and gain root access to the underlying Linux based OS, leading to full compromise ",
-        "published": "2026-03-23T08:16:17.360"
-      },
       {
         "cve_id": "CVE-2026-33478",
         "severity": "CRITICAL",
@@ -285,18 +278,18 @@
         "published": "2026-03-23T15:16:35.403"
       },
       {
+        "cve_id": "CVE-2026-33716",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "WWBN AVideo is an open source video platform. In versions up to and including 26.0, the standalone live stream control endpoint at `plugin/Live/standAloneFiles/control.json.php` accepts a user-supplie",
+        "published": "2026-03-23T19:16:42.323"
+      },
+      {
         "cve_id": "CVE-2026-33502",
         "severity": "CRITICAL",
         "base_score": 9.3,
         "description": "WWBN AVideo is an open source video platform. In versions up to and including 26.0, an unauthenticated server-side request forgery vulnerability in `plugin/Live/test.php` allows any remote user to mak",
         "published": "2026-03-23T17:16:51.653"
-      },
-      {
-        "cve_id": "CVE-2026-4599",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Versions of the package jsrsasign from 7.0.0 and before 11.1.1 are vulnerable to Incomplete Comparison with Missing Factors via the getRandomBigIntegerZeroToMax and getRandomBigIntegerMinToMax functio",
-        "published": "2026-03-23T06:16:21.513"
       },
       {
         "cve_id": "CVE-2026-33297",
@@ -327,11 +320,25 @@
         "published": "2026-03-23T17:16:51.803"
       },
       {
-        "cve_id": "CVE-2026-4601",
+        "cve_id": "CVE-2026-33647",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "Versions of the package jsrsasign before 11.1.1 are vulnerable to Missing Cryptographic Step via the KJUR.crypto.DSA.signWithMessageHash process in the DSA signing implementation. An attacker can reco",
-        "published": "2026-03-23T06:16:21.893"
+        "base_score": 8.8,
+        "description": "WWBN AVideo is an open source video platform. In versions up to and including 26.0, the `ImageGallery::saveFile()` method validates uploaded file content using `finfo` MIME type detection but derives ",
+        "published": "2026-03-23T19:16:40.750"
+      },
+      {
+        "cve_id": "CVE-2026-33648",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "WWBN AVideo is an open source video platform. In versions up to and including 26.0, the restreamer endpoint constructs a log file path by embedding user-controlled `users_id` and `liveTransmitionHisto",
+        "published": "2026-03-23T19:16:40.907"
+      },
+      {
+        "cve_id": "CVE-2026-33717",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "WWBN AVideo is an open source video platform. In versions up to and including 26.0, the `downloadVideoFromDownloadURL()` function in `objects/aVideoEncoder.json.php` saves remote content to a web-acce",
+        "published": "2026-03-23T19:16:42.497"
       },
       {
         "cve_id": "CVE-2026-33480",
@@ -348,6 +355,13 @@
         "published": "2026-03-23T19:16:40.593"
       },
       {
+        "cve_id": "CVE-2026-33719",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "WWBN AVideo is an open source video platform. In versions up to and including 26.0, the CDN plugin endpoints `plugin/CDN/status.json.php` and `plugin/CDN/disable.json.php` use key-based authentication",
+        "published": "2026-03-23T19:16:42.647"
+      },
+      {
         "cve_id": "CVE-2026-32845",
         "severity": "HIGH",
         "base_score": 8.4,
@@ -362,25 +376,11 @@
         "published": "2026-03-23T15:16:34.560"
       },
       {
-        "cve_id": "CVE-2026-23554",
+        "cve_id": "CVE-2026-33649",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "The Intel EPT paging code uses an optimization to defer flushing of any cached\nEPT state until the p2m lock is dropped, so that multiple modifications done\nunder the same locked region only issue a si",
-        "published": "2026-03-23T07:16:07.200"
-      },
-      {
-        "cve_id": "CVE-2026-33354",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "WWBN AVideo is an open source video platform. In versions up to and including 26.0, `POST /objects/aVideoEncoder.json.php` accepts a requester-controlled `chunkFile` parameter intended for staged uplo",
-        "published": "2026-03-23T15:16:33.897"
-      },
-      {
-        "cve_id": "CVE-2026-4598",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Versions of the package jsrsasign before 11.1.1 are vulnerable to Infinite loop via the bnModInverse function in ext/jsbn2.js when the BigInteger.modInverse implementation receives zero or negative in",
-        "published": "2026-03-23T06:16:21.300"
+        "base_score": 8.1,
+        "description": "WWBN AVideo is an open source video platform. In versions up to and including 26.0, the `plugin/Permissions/setPermission.json.php` endpoint accepts GET parameters for a state-changing operation that ",
+        "published": "2026-03-23T19:16:41.070"
       }
     ]
   },
