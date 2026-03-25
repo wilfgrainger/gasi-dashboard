@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-25T16:54:31.953106+00:00",
+  "generated_at": "2026-03-25T20:30:13.358777+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -7,7 +7,7 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 25,
+        "value": 26,
         "score": 3.0,
         "max": 3
       },
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1551,
-    "recent_30d_count": 25,
+    "total_catalog_count": 1552,
+    "recent_30d_count": 26,
     "recent": [
+      {
+        "cve_id": "CVE-2026-33017",
+        "vendor": "Langflow",
+        "product": "Langflow",
+        "name": "Langflow Code Injection Vulnerability",
+        "date_added": "2026-03-25",
+        "due_date": "2026-04-08",
+        "description": "Langflow contains a code injection vulnerability that could allow building public flows without requiring authentication.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2025-32432",
         "vendor": "Craft CMS",
@@ -224,30 +234,20 @@
         "due_date": "2026-03-26",
         "description": "Apple tvOS, macOS, Safari, iPadOS and watchOS contain an integer overflow or wraparound vulnerability due to the processing of maliciously crafted web content that may lead to arbitrary code execution",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2023-41974",
-        "vendor": "Apple",
-        "product": "iOS and iPadOS",
-        "name": "Apple iOS and iPadOS Use-After-Free Vulnerability",
-        "date_added": "2026-03-05",
-        "due_date": "2026-03-26",
-        "description": "Apple iOS and iPadOS contain a use-after-free vulnerability. An app may be able to execute arbitrary code with kernel privileges.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 351,
+    "total": 592,
     "critical_count": 2,
-    "high_count": 19,
+    "high_count": 20,
     "cves": [
       {
-        "cve_id": "CVE-2026-33340",
+        "cve_id": "CVE-2026-28858",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "LoLLMs WEBUI provides the Web user interface for Lord of Large Language and Multi modal Systems. A critical Server-Side Request Forgery (SSRF) vulnerability has been identified in all known existing v",
-        "published": "2026-03-24T17:16:44.423"
+        "base_score": 9.8,
+        "description": "A buffer overflow was addressed with improved bounds checking. This issue is fixed in iOS 26.4 and iPadOS 26.4. A remote user may be able to cause unexpected system termination or corrupt kernel memor",
+        "published": "2026-03-25T01:17:09.920"
       },
       {
         "cve_id": "CVE-2025-33244",
@@ -257,39 +257,11 @@
         "published": "2026-03-24T21:16:24.437"
       },
       {
-        "cve_id": "CVE-2026-22559",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "An Improper Input Validation vulnerability in UniFi Network Server may allow unauthorized access to an account if the account owner is socially engineered into clicking a malicious link.\r\n\r\n\r\nAffected",
-        "published": "2026-03-24T20:16:26.253"
-      },
-      {
-        "cve_id": "CVE-2026-33331",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "oRPC is an tool that helps build APIs that are end-to-end type-safe and adhere to OpenAPI standards. Prior to version 1.13.9, a stored cross-site scripting (XSS) vulnerability exists in the OpenAPI do",
-        "published": "2026-03-24T20:16:28.547"
-      },
-      {
-        "cve_id": "CVE-2026-33329",
+        "cve_id": "CVE-2026-28817",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "FileRise is a self-hosted web file manager / WebDAV server. From version 1.0.1 to before version 3.10.0, the resumableIdentifier parameter in the Resumable.js chunked upload handler (UploadModel::hand",
-        "published": "2026-03-24T20:16:28.217"
-      },
-      {
-        "cve_id": "CVE-2026-33344",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Dagu is a workflow engine with a built-in Web user interface. From version 2.0.0 to before version 2.3.1, the fix for CVE-2026-27598 added ValidateDAGName to CreateNewDAG and rewrote generateFilePath ",
-        "published": "2026-03-24T20:16:28.910"
-      },
-      {
-        "cve_id": "CVE-2026-1995",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "IDrive\u2019s id_service.exe process runs with elevated privileges and regularly reads from several files under the C:\\ProgramData\\IDrive\\ directory. The UTF16-LE encoded contents of these files are used a",
-        "published": "2026-03-24T19:16:49.033"
+        "description": "A race condition was addressed with improved state handling. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4. A sandboxed process may be able to circumvent sandbox r",
+        "published": "2026-03-25T01:17:06.980"
       },
       {
         "cve_id": "CVE-2025-33247",
@@ -348,20 +320,6 @@
         "published": "2026-03-24T21:16:28.153"
       },
       {
-        "cve_id": "CVE-2026-33399",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Wallos is an open-source, self-hostable personal subscription tracker. Prior to version 4.7.0, the SSRF fix applied in version 4.6.2 for CVE-2026-30839 and CVE-2026-30840 is incomplete. The validate_w",
-        "published": "2026-03-24T18:16:11.153"
-      },
-      {
-        "cve_id": "CVE-2026-33509",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "pyLoad is a free and open-source download manager written in Python. From version 0.4.0 to before version 0.5.0b3.dev97, the set_config_value() API endpoint allows users with the non-admin SETTINGS pe",
-        "published": "2026-03-24T20:16:30.053"
-      },
-      {
         "cve_id": "CVE-2025-33238",
         "severity": "HIGH",
         "base_score": 7.5,
@@ -381,6 +339,48 @@
         "base_score": 7.5,
         "description": "NVIDIA Triton Inference Server contains a vulnerability in the HTTP endpoint where an attacker may cause a denial of service by providing a large compressed payload. A successful exploit of this vulne",
         "published": "2026-03-24T21:16:27.997"
+      },
+      {
+        "cve_id": "CVE-2026-20639",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "An integer overflow was addressed with improved input validation. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.3. Processing a maliciously crafted string may lead t",
+        "published": "2026-03-25T01:17:04.443"
+      },
+      {
+        "cve_id": "CVE-2026-20701",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "An access issue was addressed with additional sandbox restrictions. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4. An app may be able to connect to a network share",
+        "published": "2026-03-25T01:17:06.757"
+      },
+      {
+        "cve_id": "CVE-2026-28865",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "An authentication issue was addressed with improved state management. This issue is fixed in iOS 18.7.7 and iPadOS 18.7.7, iOS 26.4 and iPadOS 26.4, macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Ta",
+        "published": "2026-03-25T01:17:10.563"
+      },
+      {
+        "cve_id": "CVE-2026-28874",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The issue was addressed with improved checks. This issue is fixed in iOS 26.4 and iPadOS 26.4. A remote attacker may cause an unexpected app termination.",
+        "published": "2026-03-25T01:17:11.210"
+      },
+      {
+        "cve_id": "CVE-2026-28875",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A buffer overflow was addressed with improved bounds checking. This issue is fixed in iOS 26.4 and iPadOS 26.4. A remote attacker may be able to cause a denial-of-service.",
+        "published": "2026-03-25T01:17:11.307"
+      },
+      {
+        "cve_id": "CVE-2026-4371",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "A malicious mail server could send malformed strings with negative lengths, causing the parser to read memory outside the buffer. If a mail server or connection to a mail server were compromised, an a",
+        "published": "2026-03-24T21:16:29.583"
       }
     ]
   },
