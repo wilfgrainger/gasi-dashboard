@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-26T05:28:07.892274+00:00",
+  "generated_at": "2026-03-26T08:43:47.502401+00:00",
   "threat_score": {
     "score": 5.0,
     "level": "ELEVATED",
@@ -238,44 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 564,
+    "total": 577,
     "critical_count": 0,
-    "high_count": 2,
+    "high_count": 1,
     "cves": [
-      {
-        "cve_id": "CVE-2026-26306",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "The installer for OM Workspace (Windows Edition) Ver 2.4 and earlier insecurely loads Dynamic Link Libraries (DLLs), which could allow an attacker to execute arbitrary code with the privileges of the ",
-        "published": "2026-03-25T06:16:28.000"
-      },
       {
         "cve_id": "CVE-2026-3608",
         "severity": "HIGH",
         "base_score": 7.5,
         "description": "Sending a maliciously crafted message to the kea-ctrl-agent, kea-dhcp-ddns, kea-dhcp4, or kea-dhcp6 daemons over any configured API socket or HA listener can cause the receiving daemon to exit with a ",
         "published": "2026-03-25T09:16:25.810"
-      },
-      {
-        "cve_id": "CVE-2026-33253",
-        "severity": "MEDIUM",
-        "base_score": 6.7,
-        "description": "SANUPS SOFTWARE provided by SANYO DENKI CO., LTD. registers Windows services with unquoted file paths. A user with the write permission on the root directory of the system drive may execute arbitrary ",
-        "published": "2026-03-25T06:16:28.527"
-      },
-      {
-        "cve_id": "CVE-2026-32326",
-        "severity": "MEDIUM",
-        "base_score": 5.7,
-        "description": "SHARP routers do not perform authentication for some web APIs. The device information may be retrieved without authentication. If the administrative password of the device is left as the initial one, ",
-        "published": "2026-03-25T08:16:22.547"
-      },
-      {
-        "cve_id": "CVE-2026-2343",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "The PeproDev Ultimate Invoice WordPress plugin through 2.2.5 has a bulk download invoices action that generates ZIP archives containing exported invoice PDFs. The ZIP files are named predictably makin",
-        "published": "2026-03-25T06:16:28.407"
       },
       {
         "cve_id": "CVE-2026-23279",
@@ -381,6 +353,34 @@
         "base_score": null,
         "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: vxlan: fix nd_tbl NULL dereference when IPv6 is disabled\n\nWhen booting with the 'ipv6.disable=1' parameter, the nd_tbl is neve",
         "published": "2026-03-25T11:16:24.520"
+      },
+      {
+        "cve_id": "CVE-2026-23294",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nbpf: Fix race in devmap on PREEMPT_RT\n\nOn PREEMPT_RT kernels, the per-CPU xdp_dev_bulk_queue (bq) can be\naccessed concurrently by m",
+        "published": "2026-03-25T11:16:24.697"
+      },
+      {
+        "cve_id": "CVE-2026-23295",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\naccel/amdxdna: Fix dead lock for suspend and resume\n\nWhen an application issues a query IOCTL while auto suspend is running,\na dead",
+        "published": "2026-03-25T11:16:24.853"
+      },
+      {
+        "cve_id": "CVE-2026-23296",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nscsi: core: Fix refcount leak for tagset_refcnt\n\nThis leak will cause a hang when tearing down the SCSI host. For example,\niscsid h",
+        "published": "2026-03-25T11:16:24.980"
+      },
+      {
+        "cve_id": "CVE-2026-23297",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnfsd: Fix cred ref leak in nfsd_nl_threads_set_doit().\n\nsyzbot reported memory leak of struct cred. [0]\n\nnfsd_nl_threads_set_doit()",
+        "published": "2026-03-25T11:16:25.167"
       }
     ]
   },
