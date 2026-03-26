@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-03-25T20:30:13.358777+00:00",
+  "generated_at": "2026-03-26T01:24:08.060917+00:00",
   "threat_score": {
-    "score": 6.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.0,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 26,
+        "value": 25,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
-        "score": 2.0,
+        "value": 0,
+        "score": 1.0,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1552,
-    "recent_30d_count": 26,
+    "recent_30d_count": 25,
     "recent": [
       {
         "cve_id": "CVE-2026-33017",
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 592,
-    "critical_count": 2,
-    "high_count": 20,
+    "total": 544,
+    "critical_count": 0,
+    "high_count": 4,
     "cves": [
       {
-        "cve_id": "CVE-2026-28858",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A buffer overflow was addressed with improved bounds checking. This issue is fixed in iOS 26.4 and iPadOS 26.4. A remote user may be able to cause unexpected system termination or corrupt kernel memor",
-        "published": "2026-03-25T01:17:09.920"
-      },
-      {
-        "cve_id": "CVE-2025-33244",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "NVIDIA APEX for Linux contains a vulnerability where an unauthorized attacker could cause a deserialization of untrusted data. This vulnerability affects environments that use PyTorch versions earlier",
-        "published": "2026-03-24T21:16:24.437"
-      },
-      {
-        "cve_id": "CVE-2026-28817",
+        "cve_id": "CVE-2026-2072",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "A race condition was addressed with improved state handling. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4. A sandboxed process may be able to circumvent sandbox r",
-        "published": "2026-03-25T01:17:06.980"
+        "base_score": 8.2,
+        "description": "Cross-Site Scripting vulnerability in Hitachi Infrastructure Analytics Advisor (Analytics probe component), Hitachi Ops Center Analyzer.This issue affects Hitachi Infrastructure Analytics Advisor:; Hi",
+        "published": "2026-03-25T03:16:05.850"
       },
       {
-        "cve_id": "CVE-2025-33247",
+        "cve_id": "CVE-2026-26306",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "NVIDIA Megatron LM contains a vulnerability in quantization configuration loading, which could allow remote code execution. A successful exploit of this vulnerability might lead to code execution, esc",
-        "published": "2026-03-24T21:16:24.610"
+        "description": "The installer for OM Workspace (Windows Edition) Ver 2.4 and earlier insecurely loads Dynamic Link Libraries (DLLs), which could allow an attacker to execute arbitrary code with the privileges of the ",
+        "published": "2026-03-25T06:16:28.000"
       },
       {
-        "cve_id": "CVE-2025-33248",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "NVIDIA Megatron-LM contains a vulnerability in the hybrid conversion script where an Attacker may cause an RCE by convincing a user to load a maliciously crafted file. A successful exploit of this vul",
-        "published": "2026-03-24T21:16:24.767"
-      },
-      {
-        "cve_id": "CVE-2026-24141",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "NVIDIA Model Optimizer for Windows and Linux contains a vulnerability in the ONNX quantization feature, where a user could cause unsafe deserialization by providing a specially crafted input file. A s",
-        "published": "2026-03-24T21:16:27.203"
-      },
-      {
-        "cve_id": "CVE-2026-24150",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "NVIDIA Megatron-LM contains a vulnerability in checkpoint loading where an Attacker may cause an RCE by convincing a user to load a maliciously crafted file. A successful exploit of this vulnerability",
-        "published": "2026-03-24T21:16:27.357"
-      },
-      {
-        "cve_id": "CVE-2026-24151",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "NVIDIA Megatron-LM contains a vulnerability in inferencing where an Attacker may cause an RCE by convincing a user to load a maliciously crafted input. A successful exploit of this vulnerability may l",
-        "published": "2026-03-24T21:16:27.517"
-      },
-      {
-        "cve_id": "CVE-2026-24152",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "NVIDIA Megatron-LM contains a vulnerability in checkpoint loading where an Attacker may cause an RCE by convincing a user to load a maliciously crafted file. A successful exploit of this vulnerability",
-        "published": "2026-03-24T21:16:27.670"
-      },
-      {
-        "cve_id": "CVE-2026-24157",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "NVIDIA NeMo Framework contains a vulnerability in checkpoint loading where an attacker could cause remote code execution. A successful exploit of this vulnerability might lead to code execution, escal",
-        "published": "2026-03-24T21:16:27.823"
-      },
-      {
-        "cve_id": "CVE-2026-24159",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "NVIDIA NeMo Framework contains a vulnerability where an attacker may cause remote code execution. A successful exploit of this vulnerability might lead to code execution, escalation of privileges, inf",
-        "published": "2026-03-24T21:16:28.153"
-      },
-      {
-        "cve_id": "CVE-2025-33238",
+        "cve_id": "CVE-2026-3608",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "NVIDIA Triton Inference Server Sagemaker HTTP server contains a vulnerability where an attacker may cause an exception. A successful exploit of this vulnerability may lead to denial of service.",
-        "published": "2026-03-24T21:16:24.083"
+        "description": "Sending a maliciously crafted message to the kea-ctrl-agent, kea-dhcp-ddns, kea-dhcp4, or kea-dhcp6 daemons over any configured API socket or HA listener can cause the receiving daemon to exit with a ",
+        "published": "2026-03-25T09:16:25.810"
       },
       {
-        "cve_id": "CVE-2025-33254",
+        "cve_id": "CVE-2026-4784",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "NVIDIA Triton Inference Server contains a vulnerability where an attacker may cause internal state corruption. A successful exploit of this vulnerability may lead to a denial of service.",
-        "published": "2026-03-24T21:16:24.917"
+        "base_score": 7.3,
+        "description": "A vulnerability was found in code-projects Simple Laundry System 1.0. This affects an unknown function of the file /checkcheckout.php of the component Parameter Handler. The manipulation of the argume",
+        "published": "2026-03-25T02:16:06.350"
       },
       {
-        "cve_id": "CVE-2026-24158",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "NVIDIA Triton Inference Server contains a vulnerability in the HTTP endpoint where an attacker may cause a denial of service by providing a large compressed payload. A successful exploit of this vulne",
-        "published": "2026-03-24T21:16:27.997"
+        "cve_id": "CVE-2026-33253",
+        "severity": "MEDIUM",
+        "base_score": 6.7,
+        "description": "SANUPS SOFTWARE provided by SANYO DENKI CO., LTD. registers Windows services with unquoted file paths. A user with the write permission on the root directory of the system drive may execute arbitrary ",
+        "published": "2026-03-25T06:16:28.527"
       },
       {
-        "cve_id": "CVE-2026-20639",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "An integer overflow was addressed with improved input validation. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.3. Processing a maliciously crafted string may lead t",
-        "published": "2026-03-25T01:17:04.443"
+        "cve_id": "CVE-2026-4766",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "The Easy Image Gallery plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Gallery shortcode post meta field in all versions up to, and including, 1.5.3. This is due to insuffici",
+        "published": "2026-03-25T02:16:06.137"
       },
       {
-        "cve_id": "CVE-2026-20701",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "An access issue was addressed with additional sandbox restrictions. This issue is fixed in macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4. An app may be able to connect to a network share",
-        "published": "2026-03-25T01:17:06.757"
+        "cve_id": "CVE-2026-32326",
+        "severity": "MEDIUM",
+        "base_score": 5.7,
+        "description": "SHARP routers do not perform authentication for some web APIs. The device information may be retrieved without authentication. If the administrative password of the device is left as the initial one, ",
+        "published": "2026-03-25T08:16:22.547"
       },
       {
-        "cve_id": "CVE-2026-28865",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "An authentication issue was addressed with improved state management. This issue is fixed in iOS 18.7.7 and iPadOS 18.7.7, iOS 26.4 and iPadOS 26.4, macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Ta",
-        "published": "2026-03-25T01:17:10.563"
+        "cve_id": "CVE-2026-2343",
+        "severity": "MEDIUM",
+        "base_score": 5.3,
+        "description": "The PeproDev Ultimate Invoice WordPress plugin through 2.2.5 has a bulk download invoices action that generates ZIP archives containing exported invoice PDFs. The ZIP files are named predictably makin",
+        "published": "2026-03-25T06:16:28.407"
       },
       {
-        "cve_id": "CVE-2026-28874",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The issue was addressed with improved checks. This issue is fixed in iOS 26.4 and iPadOS 26.4. A remote attacker may cause an unexpected app termination.",
-        "published": "2026-03-25T01:17:11.210"
+        "cve_id": "CVE-2026-1166",
+        "severity": "MEDIUM",
+        "base_score": 4.3,
+        "description": "Open Redirect vulnerability in Hitachi Ops Center Administrator.This issue affects Hitachi Ops Center Administrator: from 10.2.0 before 11.0.8.",
+        "published": "2026-03-25T03:16:05.643"
       },
       {
-        "cve_id": "CVE-2026-28875",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A buffer overflow was addressed with improved bounds checking. This issue is fixed in iOS 26.4 and iPadOS 26.4. A remote attacker may be able to cause a denial-of-service.",
-        "published": "2026-03-25T01:17:11.307"
+        "cve_id": "CVE-2026-23279",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nwifi: mac80211: fix NULL pointer dereference in mesh_rx_csa_frame()\n\nIn mesh_rx_csa_frame(), elems->mesh_chansw_params_ie is derefe",
+        "published": "2026-03-25T11:16:22.333"
       },
       {
-        "cve_id": "CVE-2026-4371",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "A malicious mail server could send malformed strings with negative lengths, causing the parser to read memory outside the buffer. If a mail server or connection to a mail server were compromised, an a",
-        "published": "2026-03-24T21:16:29.583"
+        "cve_id": "CVE-2026-23280",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\naccel/amdxdna: Prevent ubuf size overflow\n\nThe ubuf size calculation may overflow, resulting in an undersized\nallocation and possib",
+        "published": "2026-03-25T11:16:22.523"
+      },
+      {
+        "cve_id": "CVE-2026-23281",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nwifi: libertas: fix use-after-free in lbs_free_adapter()\n\nThe lbs_free_adapter() function uses timer_delete() (non-synchronous)\nfor",
+        "published": "2026-03-25T11:16:22.657"
+      },
+      {
+        "cve_id": "CVE-2026-23282",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: client: fix oops due to uninitialised var in smb2_unlink()\n\nIf SMB2_open_init() or SMB2_close_init() fails (e.g. reconnect), t",
+        "published": "2026-03-25T11:16:22.823"
+      },
+      {
+        "cve_id": "CVE-2026-23283",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nregulator: fp9931: Fix PM runtime reference leak in fp9931_hwmon_read()\n\nIn fp9931_hwmon_read(), if regmap_read() failed, the funct",
+        "published": "2026-03-25T11:16:22.957"
+      },
+      {
+        "cve_id": "CVE-2026-23284",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: ethernet: mtk_eth_soc: Reset prog ptr to old_prog in case of error in mtk_xdp_setup()\n\nReset eBPF program pointer to old_prog ",
+        "published": "2026-03-25T11:16:23.080"
+      },
+      {
+        "cve_id": "CVE-2026-23285",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrbd: fix null-pointer dereference on local read error\n\nIn drbd_request_endio(), READ_COMPLETED_WITH_ERROR is passed to\n__req_mod()",
+        "published": "2026-03-25T11:16:23.247"
+      },
+      {
+        "cve_id": "CVE-2026-23286",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\natm: lec: fix null-ptr-deref in lec_arp_clear_vccs\n\nsyzkaller reported a null-ptr-deref in lec_arp_clear_vccs().\nThis issue can be ",
+        "published": "2026-03-25T11:16:23.393"
+      },
+      {
+        "cve_id": "CVE-2026-23287",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nirqchip/sifive-plic: Fix frozen interrupt due to affinity setting\n\nPLIC ignores interrupt completion message for disabled interrupt",
+        "published": "2026-03-25T11:16:23.583"
+      },
+      {
+        "cve_id": "CVE-2026-23288",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\naccel/amdxdna: Fix out-of-bounds memset in command slot handling\n\nThe remaining space in a command slot may be smaller than the siz",
+        "published": "2026-03-25T11:16:23.767"
+      },
+      {
+        "cve_id": "CVE-2026-23289",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nIB/mthca: Add missed mthca_unmap_user_db() for mthca_create_srq()\n\nFix a user triggerable leak on the system call failure path.",
+        "published": "2026-03-25T11:16:23.887"
       }
     ]
   },
