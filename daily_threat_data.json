@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-03-26T08:43:47.502401+00:00",
+  "generated_at": "2026-03-26T12:53:45.980820+00:00",
   "threat_score": {
-    "score": 5.0,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 1.0,
+        "value": 3,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 577,
-    "critical_count": 0,
-    "high_count": 1,
+    "total": 483,
+    "critical_count": 3,
+    "high_count": 21,
     "cves": [
       {
-        "cve_id": "CVE-2026-3608",
+        "cve_id": "CVE-2026-26830",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "pdf-image (npm package) through version 2.0.0 allows OS command injection via the pdfFilePath parameter. The constructGetInfoCommand and constructConvertCommandForPage functions use util.format() to i",
+        "published": "2026-03-25T15:16:38.620"
+      },
+      {
+        "cve_id": "CVE-2026-26832",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "node-tesseract-ocr is an npm package that provides a Node.js wrapper for Tesseract OCR. In all versions through 2.2.1, the recognize() function in src/index.js is vulnerable to OS Command Injection. T",
+        "published": "2026-03-25T16:16:21.240"
+      },
+      {
+        "cve_id": "CVE-2025-32991",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "In N2WS Backup & Recovery before 4.4.0, a two-step attack against the RESTful API results in remote code execution.",
+        "published": "2026-03-25T15:16:28.507"
+      },
+      {
+        "cve_id": "CVE-2024-51348",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A stack-based buffer overflow vulnerability in the P2P API service in BS Producten Petcam with firmware 33.1.0.0818 allows unauthenticated attackers within network range to overwrite the instruction p",
+        "published": "2026-03-25T14:16:29.210"
+      },
+      {
+        "cve_id": "CVE-2026-23514",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Kiteworks is a private data network (PDN). Versions 9.2.0 and 9.2.1 of Kiteworks Core have an access control vulnerability that allows authenticated users to access unauthorized content. Upgrade Kitew",
+        "published": "2026-03-25T15:16:37.967"
+      },
+      {
+        "cve_id": "CVE-2026-20012",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "A vulnerability in the Internet Key Exchange version 2 (IKEv2) feature of Cisco IOS Software, Cisco IOS XE Software, Cisco Secure Firewall Adaptive Security Appliance (ASA) Software, and Cisco Secure ",
+        "published": "2026-03-25T16:16:10.957"
+      },
+      {
+        "cve_id": "CVE-2026-20084",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "A vulnerability in the DHCP snooping feature of Cisco IOS XE Software could allow an unauthenticated, remote attacker to cause BOOTP packets to be forwarded between VLANs, resulting in a denial of ser",
+        "published": "2026-03-25T16:16:13.563"
+      },
+      {
+        "cve_id": "CVE-2026-20086",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "A vulnerability in the processing of Control and Provisioning of Wireless Access Points (CAPWAP) packets of Cisco IOS XE Wireless Controller Software for the Catalyst CW9800 Family could allow an unau",
+        "published": "2026-03-25T16:16:13.920"
+      },
+      {
+        "cve_id": "CVE-2024-58341",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "OpenCart Core 4.0.2.3 contains a SQL injection vulnerability that allows unauthenticated attackers to manipulate database queries by injecting SQL code through the 'search' parameter. Attackers can se",
+        "published": "2026-03-25T16:16:07.400"
+      },
+      {
+        "cve_id": "CVE-2024-51346",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "An issue in Eufy Homebase 2 version 3.3.4.1h allows a local attacker to obtain sensitive information via the cryptographic scheme.",
+        "published": "2026-03-25T14:16:28.967"
+      },
+      {
+        "cve_id": "CVE-2026-20125",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "A vulnerability in the HTTP Server feature of Cisco IOS Software and Cisco IOS XE Software Release 3E could allow an authenticated, remote attacker to cause an affected device to reload unexpectedly, ",
+        "published": "2026-03-25T16:16:16.750"
+      },
+      {
+        "cve_id": "CVE-2026-24750",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "Kiteworks is a private data network (PDN). In Kiteworks Secure Data Forms prior to version 9.2.1, an authenticated attacker could exploit an Improper Neutralization of Input During Web Page Generation",
+        "published": "2026-03-25T16:16:20.967"
+      },
+      {
+        "cve_id": "CVE-2026-1519",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Sending a maliciously crafted message to the kea-ctrl-agent, kea-dhcp-ddns, kea-dhcp4, or kea-dhcp6 daemons over any configured API socket or HA listener can cause the receiving daemon to exit with a ",
-        "published": "2026-03-25T09:16:25.810"
+        "description": "If a BIND resolver is performing DNSSEC validation and encounters a maliciously crafted zone, the resolver may consume excessive CPU. Authoritative-only servers are generally unaffected, although ther",
+        "published": "2026-03-25T14:16:33.110"
       },
       {
-        "cve_id": "CVE-2026-23279",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nwifi: mac80211: fix NULL pointer dereference in mesh_rx_csa_frame()\n\nIn mesh_rx_csa_frame(), elems->mesh_chansw_params_ie is derefe",
-        "published": "2026-03-25T11:16:22.333"
+        "cve_id": "CVE-2026-3104",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A specially crafted domain can be used to cause a memory leak in a BIND resolver simply by querying this domain.\nThis issue affects BIND 9 versions 9.20.0 through 9.20.20, 9.21.0 through 9.21.19, and ",
+        "published": "2026-03-25T14:16:36.890"
       },
       {
-        "cve_id": "CVE-2026-23280",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\naccel/amdxdna: Prevent ubuf size overflow\n\nThe ubuf size calculation may overflow, resulting in an undersized\nallocation and possib",
-        "published": "2026-03-25T11:16:22.523"
+        "cve_id": "CVE-2026-20004",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "A vulnerability in the TLS library of Cisco IOS XE Software could allow an unauthenticated, adjacent attacker to exhaust the available memory of an affected device.\r\n\r This vulnerability is due to imp",
+        "published": "2026-03-25T16:16:10.520"
       },
       {
-        "cve_id": "CVE-2026-23281",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nwifi: libertas: fix use-after-free in lbs_free_adapter()\n\nThe lbs_free_adapter() function uses timer_delete() (non-synchronous)\nfor",
-        "published": "2026-03-25T11:16:22.657"
+        "cve_id": "CVE-2026-1917",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in Drupal Login Disable allows Functionality Bypass.This issue affects Login Disable: from 0.0.0 before 2.1.3.",
+        "published": "2026-03-25T16:16:10.370"
       },
       {
-        "cve_id": "CVE-2026-23282",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: client: fix oops due to uninitialised var in smb2_unlink()\n\nIf SMB2_open_init() or SMB2_close_init() fails (e.g. reconnect), t",
-        "published": "2026-03-25T11:16:22.823"
+        "cve_id": "CVE-2024-51347",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "A buffer overflow vulnerability in the dgiot binary in LSC Smart Indoor IP Camera V7.6.32. The flaw exists in the handling of the Time Zone (TZ) parameter within the ONVIF configuration interface. The",
+        "published": "2026-03-25T14:16:29.097"
       },
       {
-        "cve_id": "CVE-2026-23283",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nregulator: fp9931: Fix PM runtime reference leak in fp9931_hwmon_read()\n\nIn fp9931_hwmon_read(), if regmap_read() failed, the funct",
-        "published": "2026-03-25T11:16:22.957"
+        "cve_id": "CVE-2025-69096",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in G5Theme Zorka zorka allows Reflected XSS.This issue affects Zorka: from n/a through <= 1.5.7.",
+        "published": "2026-03-25T17:16:27.540"
       },
       {
-        "cve_id": "CVE-2026-23284",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: ethernet: mtk_eth_soc: Reset prog ptr to old_prog in case of error in mtk_xdp_setup()\n\nReset eBPF program pointer to old_prog ",
-        "published": "2026-03-25T11:16:23.080"
+        "cve_id": "CVE-2026-22491",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in wphocus My auctions allegro my-auctions-allegro-free-edition allows Reflected XSS.This issue affec",
+        "published": "2026-03-25T17:16:31.087"
       },
       {
-        "cve_id": "CVE-2026-23285",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrbd: fix null-pointer dereference on local read error\n\nIn drbd_request_endio(), READ_COMPLETED_WITH_ERROR is passed to\n__req_mod()",
-        "published": "2026-03-25T11:16:23.247"
-      },
-      {
-        "cve_id": "CVE-2026-23286",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\natm: lec: fix null-ptr-deref in lec_arp_clear_vccs\n\nsyzkaller reported a null-ptr-deref in lec_arp_clear_vccs().\nThis issue can be ",
-        "published": "2026-03-25T11:16:23.393"
-      },
-      {
-        "cve_id": "CVE-2026-23287",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nirqchip/sifive-plic: Fix frozen interrupt due to affinity setting\n\nPLIC ignores interrupt completion message for disabled interrupt",
-        "published": "2026-03-25T11:16:23.583"
-      },
-      {
-        "cve_id": "CVE-2026-23288",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\naccel/amdxdna: Fix out-of-bounds memset in command slot handling\n\nThe remaining space in a command slot may be smaller than the siz",
-        "published": "2026-03-25T11:16:23.767"
-      },
-      {
-        "cve_id": "CVE-2026-23289",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nIB/mthca: Add missed mthca_unmap_user_db() for mthca_create_srq()\n\nFix a user triggerable leak on the system call failure path.",
-        "published": "2026-03-25T11:16:23.887"
-      },
-      {
-        "cve_id": "CVE-2026-23290",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: usb: pegasus: validate USB endpoints\n\nThe pegasus driver should validate that the device it is probing has the\nproper number a",
-        "published": "2026-03-25T11:16:24.043"
-      },
-      {
-        "cve_id": "CVE-2026-23291",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnfc: pn533: properly drop the usb interface reference on disconnect\n\nWhen the device is disconnected from the driver, there is a \"d",
-        "published": "2026-03-25T11:16:24.197"
-      },
-      {
-        "cve_id": "CVE-2026-23292",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nscsi: target: Fix recursive locking in __configfs_open_file()\n\nIn flush_write_buffer, &p->frag_sem is acquired and then the loaded ",
-        "published": "2026-03-25T11:16:24.357"
-      },
-      {
-        "cve_id": "CVE-2026-23293",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: vxlan: fix nd_tbl NULL dereference when IPv6 is disabled\n\nWhen booting with the 'ipv6.disable=1' parameter, the nd_tbl is neve",
-        "published": "2026-03-25T11:16:24.520"
-      },
-      {
-        "cve_id": "CVE-2026-23294",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nbpf: Fix race in devmap on PREEMPT_RT\n\nOn PREEMPT_RT kernels, the per-CPU xdp_dev_bulk_queue (bq) can be\naccessed concurrently by m",
-        "published": "2026-03-25T11:16:24.697"
-      },
-      {
-        "cve_id": "CVE-2026-23295",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\naccel/amdxdna: Fix dead lock for suspend and resume\n\nWhen an application issues a query IOCTL while auto suspend is running,\na dead",
-        "published": "2026-03-25T11:16:24.853"
-      },
-      {
-        "cve_id": "CVE-2026-23296",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nscsi: core: Fix refcount leak for tagset_refcnt\n\nThis leak will cause a hang when tearing down the SCSI host. For example,\niscsid h",
-        "published": "2026-03-25T11:16:24.980"
-      },
-      {
-        "cve_id": "CVE-2026-23297",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnfsd: Fix cred ref leak in nfsd_nl_threads_set_doit().\n\nsyzbot reported memory leak of struct cred. [0]\n\nnfsd_nl_threads_set_doit()",
-        "published": "2026-03-25T11:16:25.167"
+        "cve_id": "CVE-2026-22520",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in G5Theme Handmade Framework handmade-framework allows Reflected XSS.This issue affects Handmade Fra",
+        "published": "2026-03-25T17:16:34.227"
       }
     ]
   },
