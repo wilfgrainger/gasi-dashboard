@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-26T16:53:15.900607+00:00",
+  "generated_at": "2026-03-26T20:27:50.936489+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 25,
+        "value": 26,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
+        "value": 2,
         "score": 2.0,
         "max": 3
       },
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1552,
-    "recent_30d_count": 25,
+    "total_catalog_count": 1553,
+    "recent_30d_count": 26,
     "recent": [
+      {
+        "cve_id": "CVE-2026-33634",
+        "vendor": "Aquasecurity",
+        "product": "Trivy",
+        "name": "Aquasecurity Trivy Embedded Malicious Code Vulnerability",
+        "date_added": "2026-03-26",
+        "due_date": "2026-04-09",
+        "description": "Aquasecurity Trivy contains an embedded malicious code vulnerability that could allow an attacker to gain access to everything in the CI/CD environment, including all tokens, SSH keys, cloud credentia",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-33017",
         "vendor": "Langflow",
@@ -82,7 +92,7 @@
         "name": "Apple Multiple Products Classic Buffer Overflow Vulnerability",
         "date_added": "2026-03-20",
         "due_date": "2026-04-03",
-        "description": "Apple watchOS, iOS, iPadOS, macOS, visionOS, tvOS, and iPadOS contain a classic buffer overflow vulnerability which could allow a malicious application to cause unexpected system termination or write ",
+        "description": "Apple watchOS, iOS, iPadOS, macOS, visionOS, and tvOS contain a classic buffer overflow vulnerability which could allow a malicious application to cause unexpected system termination or write kernel m",
         "ransomware_use": "Unknown"
       },
       {
@@ -224,163 +234,153 @@
         "due_date": "2026-03-26",
         "description": "Apple macOS, iOS, iPadOS, and Safari 16.6 contain a use-after-free vulnerability due to the processing of maliciously crafted web content that may lead to memory corruption.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2021-30952",
-        "vendor": "Apple",
-        "product": "Multiple Products",
-        "name": "Apple Multiple Products Integer Overflow or Wraparound Vulnerability",
-        "date_added": "2026-03-05",
-        "due_date": "2026-03-26",
-        "description": "Apple tvOS, macOS, Safari, iPadOS and watchOS contain an integer overflow or wraparound vulnerability due to the processing of maliciously crafted web content that may lead to arbitrary code execution",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 491,
-    "critical_count": 4,
-    "high_count": 25,
+    "total": 271,
+    "critical_count": 2,
+    "high_count": 32,
     "cves": [
       {
-        "cve_id": "CVE-2026-24378",
+        "cve_id": "CVE-2026-4484",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Deserialization of Untrusted Data vulnerability in Metagauss EventPrime eventprime-event-calendar-management allows Object Injection.This issue affects EventPrime: from n/a through <= 4.2.8.0.",
-        "published": "2026-03-25T17:16:38.073"
+        "description": "The Masteriyo LMS plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 2.1.6. This is due to the plugin allowing a user to update the user role through the ",
+        "published": "2026-03-26T02:16:07.913"
       },
       {
-        "cve_id": "CVE-2026-24989",
+        "cve_id": "CVE-2014-125112",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Deserialization of Untrusted Data vulnerability in FantasticPlugins SUMO Affiliates Pro affs allows Object Injection.This issue affects SUMO Affiliates Pro: from n/a through < 11.4.0.",
-        "published": "2026-03-25T17:16:41.040"
+        "description": "Plack::Middleware::Session::Cookie versions through 0.21 for Perl allows remote code execution.\n\nPlack::Middleware::Session::Cookie versions through 0.21 has a security vulnerability where it allows a",
+        "published": "2026-03-26T03:16:00.423"
       },
       {
-        "cve_id": "CVE-2026-25030",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Deserialization of Untrusted Data vulnerability in park_of_ideas Goldish goldish allows Object Injection.This issue affects Goldish: from n/a through < 3.47.",
-        "published": "2026-03-25T17:16:42.710"
-      },
-      {
-        "cve_id": "CVE-2026-25032",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Deserialization of Untrusted Data vulnerability in park_of_ideas Ricky ricky allows Object Injection.This issue affects Ricky: from n/a through < 2.31.",
-        "published": "2026-03-25T17:16:42.967"
-      },
-      {
-        "cve_id": "CVE-2026-24974",
+        "cve_id": "CVE-2026-33917",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Deserialization of Untrusted Data vulnerability in NooTheme CitiLights noo-citilights allows Object Injection.This issue affects CitiLights: from n/a through <= 3.7.1.",
-        "published": "2026-03-25T17:16:39.620"
+        "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Versions prior to 8.0.0.3 contais a SQL injection vulnerability in the ajax_save CAMOS form tha",
+        "published": "2026-03-26T00:16:39.470"
       },
       {
-        "cve_id": "CVE-2026-24976",
+        "cve_id": "CVE-2026-4758",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Deserialization of Untrusted Data vulnerability in NooTheme Organici Library noo-organici-library allows Object Injection.This issue affects Organici Library: from n/a through <= 2.1.2.",
-        "published": "2026-03-25T17:16:39.897"
+        "description": "The WP Job Portal plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the 'WPJOBPORTALcustomfields::removeFileCustom' function in all versions up ",
+        "published": "2026-03-26T00:16:41.570"
       },
       {
-        "cve_id": "CVE-2026-24978",
+        "cve_id": "CVE-2025-15101",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Deserialization of Untrusted Data vulnerability in NooTheme Jobica Core jobica-core allows Object Injection.This issue affects Jobica Core: from n/a through <= 1.4.1.",
-        "published": "2026-03-25T17:16:40.180"
+        "description": "A Cross-Site Request Forgery (CSRF) vulnerability has been identified in the Web management interface of certain ASUS router models. This vulnerability potentially allows actions to be performed with ",
+        "published": "2026-03-26T03:16:02.400"
       },
       {
-        "cve_id": "CVE-2025-69347",
+        "cve_id": "CVE-2026-2931",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Authorization Bypass Through User-Controlled Key vulnerability in Convers Lab WPSubscription subscription allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WPS",
-        "published": "2026-03-25T17:16:27.690"
+        "base_score": 8.8,
+        "description": "The Amelia Booking plugin for WordPress is vulnerable to Insecure Direct Object References in versions up to, and including, 9.1.2. This is due to the plugin providing user-controlled access to object",
+        "published": "2026-03-26T05:16:39.030"
       },
       {
-        "cve_id": "CVE-2026-25001",
+        "cve_id": "CVE-2026-4840",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Improper Control of Generation of Code ('Code Injection') vulnerability in Saad Iqbal Post Snippets post-snippets allows Remote Code Inclusion.This issue affects Post Snippets: from n/a through <= 4.0",
-        "published": "2026-03-25T17:16:41.320"
+        "base_score": 8.8,
+        "description": "A security flaw has been discovered in Netcore Power 15AX up to 3.0.0.6938. Affected by this issue is the function setTools of the file /bin/netis.cgi of the component Diagnostic Tool Interface. Perfo",
+        "published": "2026-03-26T05:16:40.840"
       },
       {
-        "cve_id": "CVE-2025-69096",
+        "cve_id": "CVE-2026-33348",
         "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in G5Theme Zorka zorka allows Reflected XSS.This issue affects Zorka: from n/a through <= 1.5.7.",
-        "published": "2026-03-25T17:16:27.540"
+        "base_score": 8.7,
+        "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Users with the\u00a0`Notes - my encounters`\u00a0role can fill\u00a0Eye Exam\u00a0forms in patient encounters. The ",
+        "published": "2026-03-25T23:17:09.840"
       },
       {
-        "cve_id": "CVE-2026-22491",
+        "cve_id": "CVE-2026-30976",
         "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in wphocus My auctions allegro my-auctions-allegro-free-edition allows Reflected XSS.This issue affec",
-        "published": "2026-03-25T17:16:31.087"
+        "base_score": 8.6,
+        "description": "Sonarr is a PVR for Usenet and BitTorrent users. In versions on the 4.x branch prior to 4.0.17.2950, an unauthenticated remote attacker can potentially read any file readable by the Sonarr process. Th",
+        "published": "2026-03-25T21:16:41.623"
       },
       {
-        "cve_id": "CVE-2026-22520",
+        "cve_id": "CVE-2026-30975",
         "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in G5Theme Handmade Framework handmade-framework allows Reflected XSS.This issue affects Handmade Fra",
-        "published": "2026-03-25T17:16:34.227"
+        "base_score": 8.1,
+        "description": "Sonarr is a PVR for Usenet and BitTorrent users. Versions prior to 4.0.16.2942 have an authentication bypass that affected users that had disabled authentication for local addresses (Authentication Re",
+        "published": "2026-03-25T21:16:41.453"
       },
       {
-        "cve_id": "CVE-2026-22523",
+        "cve_id": "CVE-2026-29187",
         "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in themepassion Ultra WordPress Admin ultra-admin allows Reflected XSS.This issue affects Ultra WordP",
-        "published": "2026-03-25T17:16:34.363"
+        "base_score": 8.1,
+        "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, a Blind SQL Injection vulnerability exists in the Patient Search func",
+        "published": "2026-03-25T23:17:09.340"
       },
       {
-        "cve_id": "CVE-2026-22524",
+        "cve_id": "CVE-2026-34055",
         "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in themepassion Legacy Admin legacy-admin allows Reflected XSS.This issue affects Legacy Admin: from ",
-        "published": "2026-03-25T17:16:34.497"
+        "base_score": 8.1,
+        "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, the legacy patient notes functions in `library/pnotes.inc.php` perfor",
+        "published": "2026-03-26T00:16:41.227"
       },
       {
-        "cve_id": "CVE-2026-23807",
+        "cve_id": "CVE-2026-28760",
         "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in WP Socio WP Telegram Widget and Join Link wptelegram-widget allows Reflected XSS.This issue affect",
-        "published": "2026-03-25T17:16:36.000"
+        "base_score": 7.8,
+        "description": "The installer of RATOC RAID Monitoring Manager for Windows searches the current directory to load certain DLLs. If a user is directed to place a crafted DLL with the installer, an arbitrary code may b",
+        "published": "2026-03-26T07:16:20.030"
       },
       {
-        "cve_id": "CVE-2026-23973",
+        "cve_id": "CVE-2026-32680",
         "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in uxper Golo golo allows Reflected XSS.This issue affects Golo: from n/a through < 1.7.5.",
-        "published": "2026-03-25T17:16:36.420"
+        "base_score": 7.8,
+        "description": "The installer of RATOC RAID Monitoring Manager for Windows allows to customize the installation folder. If the installation folder is customized to some non-default one, the folder may be left with un",
+        "published": "2026-03-26T07:16:20.220"
       },
       {
-        "cve_id": "CVE-2026-23979",
+        "cve_id": "CVE-2026-33913",
         "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Softwebmedia Gyan Elements gyan-elements allows Reflected XSS.This issue affects Gyan Elements: fr",
-        "published": "2026-03-25T17:16:36.707"
+        "base_score": 7.7,
+        "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, an authenticated user with access to the Carecoordination module can ",
+        "published": "2026-03-25T23:17:10.660"
       },
       {
-        "cve_id": "CVE-2026-24391",
+        "cve_id": "CVE-2026-34056",
         "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in ThemeMakers Car Dealer cardealer allows Reflected XSS.This issue affects Car Dealer: from n/a thro",
-        "published": "2026-03-25T17:16:38.383"
+        "base_score": 7.7,
+        "description": "OpenEMR is a free and open source electronic health records and medical practice management application. A Broken Access Control vulnerability in OpenEMR up to and including version 8.0.0.3 allows low",
+        "published": "2026-03-26T00:16:41.400"
       },
       {
-        "cve_id": "CVE-2026-24973",
+        "cve_id": "CVE-2026-33918",
         "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in NooTheme CitiLights noo-citilights allows Reflected XSS.This issue affects CitiLights: from n/a th",
-        "published": "2026-03-25T17:16:39.370"
+        "base_score": 7.6,
+        "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, the billing file-download endpoint `interface/billing/get_claim_file.",
+        "published": "2026-03-26T00:16:39.627"
       },
       {
-        "cve_id": "CVE-2026-24975",
+        "cve_id": "CVE-2026-33932",
         "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in NooTheme Organici Library noo-organici-library allows Reflected XSS.This issue affects Organici Li",
-        "published": "2026-03-25T17:16:39.760"
+        "base_score": 7.6,
+        "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, a stored cross-site scripting vulnerability in the CCDA document prev",
+        "published": "2026-03-26T00:16:39.953"
+      },
+      {
+        "cve_id": "CVE-2026-33285",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "LiquidJS is a Shopify / GitHub Pages compatible template engine in pure JavaScript. Prior to version 10.25.1, LiquidJS's `memoryLimit` security mechanism can be completely bypassed by using reverse ra",
+        "published": "2026-03-26T01:16:27.363"
+      },
+      {
+        "cve_id": "CVE-2026-33287",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "LiquidJS is a Shopify / GitHub Pages compatible template engine in pure JavaScript. Prior to version 10.25.1, the `replace_first` filter in LiquidJS uses JavaScript's `String.prototype.replace()` whic",
+        "published": "2026-03-26T01:16:27.530"
       }
     ]
   },
