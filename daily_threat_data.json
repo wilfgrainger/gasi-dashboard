@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-26T20:27:50.936489+00:00",
+  "generated_at": "2026-03-27T01:24:10.483767+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 26,
+        "value": 24,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
+        "value": 3,
         "score": 2.0,
         "max": 3
       },
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1553,
-    "recent_30d_count": 26,
+    "recent_30d_count": 24,
     "recent": [
       {
         "cve_id": "CVE-2026-33634",
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 271,
-    "critical_count": 2,
-    "high_count": 32,
+    "total": 300,
+    "critical_count": 3,
+    "high_count": 46,
     "cves": [
       {
         "cve_id": "CVE-2026-4484",
@@ -257,18 +257,11 @@
         "published": "2026-03-26T03:16:00.423"
       },
       {
-        "cve_id": "CVE-2026-33917",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Versions prior to 8.0.0.3 contais a SQL injection vulnerability in the ajax_save CAMOS form tha",
-        "published": "2026-03-26T00:16:39.470"
-      },
-      {
-        "cve_id": "CVE-2026-4758",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The WP Job Portal plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the 'WPJOBPORTALcustomfields::removeFileCustom' function in all versions up ",
-        "published": "2026-03-26T00:16:41.570"
+        "cve_id": "CVE-2026-4809",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "plank/laravel-mediable through version 6.4.0 can allow upload of a dangerous file type when an application using the package accepts or prefers a client-supplied MIME type during file upload handling.",
+        "published": "2026-03-26T11:16:21.440"
       },
       {
         "cve_id": "CVE-2025-15101",
@@ -292,95 +285,102 @@
         "published": "2026-03-26T05:16:40.840"
       },
       {
-        "cve_id": "CVE-2026-33348",
+        "cve_id": "CVE-2026-4747",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Users with the\u00a0`Notes - my encounters`\u00a0role can fill\u00a0Eye Exam\u00a0forms in patient encounters. The ",
-        "published": "2026-03-25T23:17:09.840"
+        "base_score": 8.8,
+        "description": "Each RPCSEC_GSS data packet is validated by a routine which checks a signature in the packet.  This routine copies a portion of the packet into a stack buffer, but fails to ensure that the buffer is s",
+        "published": "2026-03-26T07:16:20.670"
       },
       {
-        "cve_id": "CVE-2026-30976",
+        "cve_id": "CVE-2026-4861",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Sonarr is a PVR for Usenet and BitTorrent users. In versions on the 4.x branch prior to 4.0.17.2950, an unauthenticated remote attacker can potentially read any file readable by the Sonarr process. Th",
-        "published": "2026-03-25T21:16:41.623"
+        "base_score": 8.8,
+        "description": "A weakness has been identified in Wavlink WL-NU516U1 260227. This vulnerability affects the function ftext of the file /cgi-bin/nas.cgi. This manipulation of the argument Content-Length causes stack-b",
+        "published": "2026-03-26T09:16:06.720"
       },
       {
-        "cve_id": "CVE-2026-30975",
+        "cve_id": "CVE-2026-4862",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Sonarr is a PVR for Usenet and BitTorrent users. Versions prior to 4.0.16.2942 have an authentication bypass that affected users that had disabled authentication for local addresses (Authentication Re",
-        "published": "2026-03-25T21:16:41.453"
+        "base_score": 8.8,
+        "description": "A security vulnerability has been detected in UTT HiPER 1250GW up to 3.2.7-210907-180535. This issue affects the function strcpy of the file /goform/formConfigDnsFilterGlobal of the component Paramete",
+        "published": "2026-03-26T10:16:26.850"
       },
       {
-        "cve_id": "CVE-2026-29187",
+        "cve_id": "CVE-2026-24068",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, a Blind SQL Injection vulnerability exists in the Patient Search func",
-        "published": "2026-03-25T23:17:09.340"
+        "base_score": 8.8,
+        "description": "The VSL privileged helper does utilize NSXPC for IPC. The implementation of the \"shouldAcceptNewConnection\" function, which is used by the NSXPC framework to validate if a client should be allowed to ",
+        "published": "2026-03-26T11:16:20.097"
       },
       {
-        "cve_id": "CVE-2026-34055",
+        "cve_id": "CVE-2018-25212",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, the legacy patient notes functions in `library/pnotes.inc.php` perfor",
-        "published": "2026-03-26T00:16:41.227"
+        "base_score": 8.4,
+        "description": "Boxoft wav-wma Converter 1.0 contains a local buffer overflow vulnerability in structured exception handling that allows attackers to execute arbitrary code by crafting malicious WAV files. Attackers ",
+        "published": "2026-03-26T14:16:04.740"
       },
       {
-        "cve_id": "CVE-2026-28760",
+        "cve_id": "CVE-2018-25213",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "The installer of RATOC RAID Monitoring Manager for Windows searches the current directory to load certain DLLs. If a user is directed to place a crafted DLL with the installer, an arbitrary code may b",
-        "published": "2026-03-26T07:16:20.030"
+        "base_score": 8.4,
+        "description": "Nsauditor 3.0.28.0 contains a structured exception handling buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying malicious input to the DNS Lookup tool. Att",
+        "published": "2026-03-26T14:16:04.933"
       },
       {
-        "cve_id": "CVE-2026-32680",
+        "cve_id": "CVE-2018-25217",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "The installer of RATOC RAID Monitoring Manager for Windows allows to customize the installation folder. If the installation folder is customized to some non-default one, the folder may be left with un",
-        "published": "2026-03-26T07:16:20.220"
+        "base_score": 8.4,
+        "description": "PDF Explorer 1.5.66.2 contains a structured exception handler (SEH) overflow vulnerability that allows local attackers to execute arbitrary code by overwriting SEH records with malicious data. Attacke",
+        "published": "2026-03-26T14:16:05.693"
       },
       {
-        "cve_id": "CVE-2026-33913",
+        "cve_id": "CVE-2018-25218",
         "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, an authenticated user with access to the Carecoordination module can ",
-        "published": "2026-03-25T23:17:10.660"
+        "base_score": 8.4,
+        "description": "PassFab RAR Password Recovery 9.3.2 contains a structured exception handler (SEH) buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying a malicious payload. ",
+        "published": "2026-03-26T14:16:05.900"
       },
       {
-        "cve_id": "CVE-2026-34056",
+        "cve_id": "CVE-2018-25219",
         "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "OpenEMR is a free and open source electronic health records and medical practice management application. A Broken Access Control vulnerability in OpenEMR up to and including version 8.0.0.3 allows low",
-        "published": "2026-03-26T00:16:41.400"
+        "base_score": 8.4,
+        "description": "PassFab Excel Password Recovery 8.3.1 contains a structured exception handling buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying a malicious payload in t",
+        "published": "2026-03-26T14:16:06.090"
       },
       {
-        "cve_id": "CVE-2026-33918",
+        "cve_id": "CVE-2019-25650",
         "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, the billing file-download endpoint `interface/billing/get_claim_file.",
-        "published": "2026-03-26T00:16:39.627"
+        "base_score": 8.4,
+        "description": "River Past CamDo 3.7.6 contains a structured exception handler (SEH) buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying a malicious string in the Lame_enc",
+        "published": "2026-03-26T14:16:06.663"
       },
       {
-        "cve_id": "CVE-2026-33932",
+        "cve_id": "CVE-2025-55262",
         "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.3, a stored cross-site scripting vulnerability in the CCDA document prev",
-        "published": "2026-03-26T00:16:39.953"
+        "base_score": 8.3,
+        "description": "HCL Aftermarket DPC is affected by SQL Injection which allows attacker to exploit this vulnerability to retrieve sensitive information from the database.",
+        "published": "2026-03-26T14:16:07.863"
       },
       {
-        "cve_id": "CVE-2026-33285",
+        "cve_id": "CVE-2018-25183",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "LiquidJS is a Shopify / GitHub Pages compatible template engine in pure JavaScript. Prior to version 10.25.1, LiquidJS's `memoryLimit` security mechanism can be completely bypassed by using reverse ra",
-        "published": "2026-03-26T01:16:27.363"
+        "base_score": 8.2,
+        "description": "Shipping System CMS 1.0 contains an SQL injection vulnerability that allows unauthenticated attackers to bypass authentication by injecting SQL code through the username parameter. Attackers can submi",
+        "published": "2026-03-26T12:16:03.197"
       },
       {
-        "cve_id": "CVE-2026-33287",
+        "cve_id": "CVE-2018-25185",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "LiquidJS is a Shopify / GitHub Pages compatible template engine in pure JavaScript. Prior to version 10.25.1, the `replace_first` filter in LiquidJS uses JavaScript's `String.prototype.replace()` whic",
-        "published": "2026-03-26T01:16:27.530"
+        "base_score": 8.2,
+        "description": "Wecodex Restaurant CMS 1.0 contains an SQL injection vulnerability that allows unauthenticated attackers to manipulate database queries by injecting SQL code through the username parameter. Attackers ",
+        "published": "2026-03-26T12:16:04.270"
+      },
+      {
+        "cve_id": "CVE-2018-25195",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Wecodex Hotel CMS 1.0 contains an SQL injection vulnerability in the admin login functionality that allows unauthenticated attackers to bypass authentication by injecting SQL code. Attackers can submi",
+        "published": "2026-03-26T12:16:04.467"
       }
     ]
   },
