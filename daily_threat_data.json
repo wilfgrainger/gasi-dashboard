@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-27T08:41:10.146031+00:00",
+  "generated_at": "2026-03-27T12:42:08.228311+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -238,44 +238,23 @@
     ]
   },
   "nvd": {
-    "total": 277,
+    "total": 273,
     "critical_count": 2,
-    "high_count": 40,
+    "high_count": 30,
     "cves": [
+      {
+        "cve_id": "CVE-2026-33494",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "ORY Oathkeeper is an Identity & Access Proxy (IAP) and Access Control Decision API that authorizes HTTP requests based on sets of Access Rules. Versions prior to 26.2.0 are vulnerable to an authorizat",
+        "published": "2026-03-26T18:16:30.400"
+      },
       {
         "cve_id": "CVE-2026-33396",
         "severity": "CRITICAL",
         "base_score": 9.9,
         "description": "OneUptime is an open-source monitoring and observability platform. Prior to version 10.0.35, a low-privileged authenticated user (ProjectMember) can achieve remote command execution on the Probe conta",
         "published": "2026-03-26T14:16:13.310"
-      },
-      {
-        "cve_id": "CVE-2026-4809",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "plank/laravel-mediable through version 6.4.0 can allow upload of a dangerous file type when an application using the package accepts or prefers a client-supplied MIME type during file upload handling.",
-        "published": "2026-03-26T11:16:21.440"
-      },
-      {
-        "cve_id": "CVE-2026-4861",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A weakness has been identified in Wavlink WL-NU516U1 260227. This vulnerability affects the function ftext of the file /cgi-bin/nas.cgi. This manipulation of the argument Content-Length causes stack-b",
-        "published": "2026-03-26T09:16:06.720"
-      },
-      {
-        "cve_id": "CVE-2026-4862",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A security vulnerability has been detected in UTT HiPER 1250GW up to 3.2.7-210907-180535. This issue affects the function strcpy of the file /goform/formConfigDnsFilterGlobal of the component Paramete",
-        "published": "2026-03-26T10:16:26.850"
-      },
-      {
-        "cve_id": "CVE-2026-24068",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The VSL privileged helper does utilize NSXPC for IPC. The implementation of the \"shouldAcceptNewConnection\" function, which is used by the NSXPC framework to validate if a client should be allowed to ",
-        "published": "2026-03-26T11:16:20.097"
       },
       {
         "cve_id": "CVE-2026-33413",
@@ -355,32 +334,53 @@
         "published": "2026-03-26T14:16:07.863"
       },
       {
-        "cve_id": "CVE-2018-25183",
+        "cve_id": "CVE-2026-33009",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "Shipping System CMS 1.0 contains an SQL injection vulnerability that allows unauthenticated attackers to bypass authentication by injecting SQL code through the username parameter. Attackers can submi",
-        "published": "2026-03-26T12:16:03.197"
+        "description": "EVerest is an EV charging software stack. Versions prior to 2026.02.0 have a data race leading to C++ UB (potential memory corruption). This is triggered by an MQTT `everest_external/nodered/{connecto",
+        "published": "2026-03-26T17:16:37.813"
       },
       {
-        "cve_id": "CVE-2018-25185",
+        "cve_id": "CVE-2025-55261",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Wecodex Restaurant CMS 1.0 contains an SQL injection vulnerability that allows unauthenticated attackers to manipulate database queries by injecting SQL code through the username parameter. Attackers ",
-        "published": "2026-03-26T12:16:04.270"
+        "base_score": 8.1,
+        "description": "HCL Aftermarket DPC is affected by Missing Functional Level Access Control which will allow attacker to escalate his privileges and may compromise the application and may steal and manipulate the data",
+        "published": "2026-03-26T14:16:07.710"
       },
       {
-        "cve_id": "CVE-2018-25195",
+        "cve_id": "CVE-2026-33442",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Wecodex Hotel CMS 1.0 contains an SQL injection vulnerability in the admin login functionality that allows unauthenticated attackers to bypass authentication by injecting SQL code. Attackers can submi",
-        "published": "2026-03-26T12:16:04.467"
+        "base_score": 8.1,
+        "description": "Kysely is a type-safe TypeScript SQL query builder. In versions 0.28.12 and 0.28.13, the `sanitizeStringLiteral` method in Kysely's query compiler escapes single quotes (`'` \u2192 `''`) but does not escap",
+        "published": "2026-03-26T17:16:40.850"
       },
       {
-        "cve_id": "CVE-2018-25202",
+        "cve_id": "CVE-2026-33468",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "SAT CFDI 3.3 contains an SQL injection vulnerability that allows attackers to manipulate database queries by injecting SQL code through the 'id' parameter in the signIn endpoint. Attackers can submit ",
-        "published": "2026-03-26T12:16:04.850"
+        "base_score": 8.1,
+        "description": "Kysely is a type-safe TypeScript SQL query builder. Prior to version 0.28.14, Kysely's `DefaultQueryCompiler.sanitizeStringLiteral()` only escapes single quotes by doubling them (`'` \u2192 `''`) but does ",
+        "published": "2026-03-26T17:16:41.007"
+      },
+      {
+        "cve_id": "CVE-2026-1961",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "A flaw was found in Foreman. A remote attacker could exploit a command injection vulnerability in Foreman's WebSocket proxy implementation. This vulnerability arises from the system's use of unsanitiz",
+        "published": "2026-03-26T13:16:27.650"
+      },
+      {
+        "cve_id": "CVE-2026-3108",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "Mattermost versions 11.2.x <= 11.2.2, 10.11.x <= 10.11.10, 11.4.x <= 11.4.0, 11.3.x <= 11.3.1 fail to sanitize user-controlled post content in the mmctl commands terminal output which allows attackers",
+        "published": "2026-03-26T17:16:41.797"
+      },
+      {
+        "cve_id": "CVE-2025-41359",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Vulnerability related to an unquoted service path in Small HTTP Server 3.06.36, specifically affecting the executable located at 'C:\\Program Files (x86)\\shttps_mg\\http.exe service'. This misconfigurat",
+        "published": "2026-03-26T13:16:25.277"
       }
     ]
   },
