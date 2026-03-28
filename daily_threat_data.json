@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-27T20:28:46.695474+00:00",
+  "generated_at": "2026-03-28T01:17:58.174528+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 9,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -42,7 +42,7 @@
         "name": "F5 BIG-IP Unspecified Vulnerability",
         "date_added": "2026-03-27",
         "due_date": "2026-03-30",
-        "description": "F5 BIG-IP AMP contains an unspecified vulnerability that could allow a threat actor to achieve remote code execution.",
+        "description": "F5 BIG-IP APM contains an unspecified vulnerability that could allow a threat actor to achieve remote code execution.",
         "ransomware_use": "Unknown"
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 263,
-    "critical_count": 4,
-    "high_count": 27,
+    "total": 223,
+    "critical_count": 9,
+    "high_count": 29,
     "cves": [
       {
-        "cve_id": "CVE-2026-33897",
+        "cve_id": "CVE-2026-30302",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Incus is a system container and virtual machine manager. Prior to version 6.23.0, instance template files can be used to cause arbitrary read or writes as root on the host server. Incus allows for pon",
-        "published": "2026-03-26T23:16:20.743"
+        "base_score": 10.0,
+        "description": "The command auto-approval module in CodeRider-Kilo contains an OS Command Injection vulnerability, rendering its whitelist security mechanism ineffective. The vulnerability stems from the incorrect us",
+        "published": "2026-03-27T16:16:23.210"
       },
       {
-        "cve_id": "CVE-2026-33945",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Incus is a system container and virtual machine manager. Incus instances have an option to provide credentials to systemd in the guest. For containers, this is handled through a shared directory. Prio",
-        "published": "2026-03-27T00:16:23.633"
-      },
-      {
-        "cve_id": "CVE-2026-33669",
+        "cve_id": "CVE-2026-22738",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "SiYuan is a personal knowledge management system. Prior to version 3.6.2, document IDs were retrieved via the /api/file/readDir interface, and then the /api/block/getChildBlocks interface was used to ",
-        "published": "2026-03-26T22:16:29.887"
+        "description": "In Spring AI, a SpEL injection vulnerability exists in\u00a0SimpleVectorStore\u00a0when a user-supplied value is used as a filter expression key. A malicious actor could exploit this to execute arbitrary code.\u00a0",
+        "published": "2026-03-27T06:16:37.663"
       },
       {
-        "cve_id": "CVE-2026-33670",
+        "cve_id": "CVE-2026-30303",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "SiYuan is a personal knowledge management system. Prior to version 3.6.2, the /api/file/readDir interface was used to traverse and retrieve the file names of all documents under a notebook. Version 3.",
-        "published": "2026-03-26T22:16:30.050"
+        "description": "The command auto-approval module in Axon Code contains an OS Command Injection vulnerability, rendering its whitelist security mechanism ineffective. The vulnerability stems from the incorrect use of ",
+        "published": "2026-03-27T15:16:52.513"
       },
       {
-        "cve_id": "CVE-2026-33686",
+        "cve_id": "CVE-2026-30530",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A SQL Injection vulnerability exists in SourceCodester Online Food Ordering System v1.0 in the Actions.php file (specifically the save_customer action). The application fails to properly sanitize user",
+        "published": "2026-03-27T16:16:23.567"
+      },
+      {
+        "cve_id": "CVE-2026-30532",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A SQL Injection vulnerability exists in SourceCodester Online Food Ordering System v1.0 in the admin/view_product.php file via the \"id\" parameter.",
+        "published": "2026-03-27T16:16:23.803"
+      },
+      {
+        "cve_id": "CVE-2026-30533",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A SQL Injection vulnerability exists in SourceCodester Online Food Ordering System v1.0 in the admin/manage_product.php file via the \"id\" parameter.",
+        "published": "2026-03-27T16:16:23.917"
+      },
+      {
+        "cve_id": "CVE-2026-30304",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "In its design for automatic terminal command execution, AI Code offers two options: Execute safe commands and execute all commands. The description for the former states that commands determined by th",
+        "published": "2026-03-27T15:16:53.263"
+      },
+      {
+        "cve_id": "CVE-2026-33757",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "OpenBao is an open source identity-based secrets management system. Prior to version 2.5.2, OpenBao does not prompt for user confirmation when logging in via JWT/OIDC and a role with `callback_mode` s",
+        "published": "2026-03-27T15:16:57.690"
+      },
+      {
+        "cve_id": "CVE-2026-27876",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "A chained attack via SQL Expressions and a Grafana Enterprise plugin can lead to a remote arbitrary code execution impact (RCE). This is enabled by a feature in Grafana (OSS), so all users are always ",
+        "published": "2026-03-27T15:16:50.920"
+      },
+      {
+        "cve_id": "CVE-2026-27650",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Sharp is a content management framework built for Laravel as a package. Versions prior to 9.20.0 have a path traversal vulnerability  in the FileUtil class. The application fails to sanitize file exte",
-        "published": "2026-03-26T22:16:31.050"
+        "description": "OS Command Injection vulnerability exists in BUFFALO Wi-Fi router products. If this vulnerability is exploited, an arbitrary OS command may be executed on the products.",
+        "published": "2026-03-27T06:16:38.257"
       },
       {
-        "cve_id": "CVE-2026-33687",
+        "cve_id": "CVE-2026-32669",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Sharp is a content management framework built for Laravel as a package. Versions prior to 9.20.0 contain a vulnerability in the file upload endpoint that allows authenticated users to bypass all file ",
-        "published": "2026-03-26T22:16:31.203"
+        "description": "Code injection vulnerability exists in BUFFALO Wi-Fi router products. If this vulnerability is exploited, an arbitrary code may be executed on the products.",
+        "published": "2026-03-27T06:16:38.450"
       },
       {
-        "cve_id": "CVE-2026-4902",
+        "cve_id": "CVE-2026-33755",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A vulnerability was detected in Tenda AC5 15.03.06.47. This affects the function fromAddressNat of the file /goform/addressNat of the component POST Request Handler. The manipulation of the argument p",
-        "published": "2026-03-26T23:16:21.090"
+        "description": "Group-Office is an enterprise customer relationship management and groupware tool. Prior to versions 6.8.158, 25.0.92, and 26.0.17, an authenticated SQL Injection vulnerability in the JMAP `Contact/qu",
+        "published": "2026-03-27T15:16:57.527"
       },
       {
-        "cve_id": "CVE-2026-4903",
+        "cve_id": "CVE-2026-5027",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A flaw has been found in Tenda AC5 15.03.06.47. This vulnerability affects the function formQuickIndex of the file /goform/QuickIndex of the component POST Request Handler. This manipulation of the ar",
-        "published": "2026-03-26T23:16:21.307"
+        "description": "The 'POST /api/v2/files' endpoint does not sanitize the 'filename' parameter from the multipart form data, allowing an attacker to write files to arbitrary locations on the filesystem using path trave",
+        "published": "2026-03-27T15:17:04.743"
       },
       {
-        "cve_id": "CVE-2026-27893",
+        "cve_id": "CVE-2026-30529",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "vLLM is an inference and serving engine for large language models (LLMs). Starting in version 0.10.1 and prior to version 0.18.0, two model implementation files hardcode `trust_remote_code=True` when ",
-        "published": "2026-03-27T00:16:22.333"
+        "description": "A SQL Injection vulnerability exists in SourceCodester Online Food Ordering System v1.0 in the Actions.php file (specifically the save_user action). The application fails to properly sanitize user inp",
+        "published": "2026-03-27T16:16:23.447"
       },
       {
-        "cve_id": "CVE-2026-33898",
+        "cve_id": "CVE-2026-30531",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Incus is a system container and virtual machine manager. Prior to version 6.23.0, the web server spawned by `incus webui` incorrectly validates the authentication token such that an invalid value will",
-        "published": "2026-03-27T00:16:23.333"
+        "description": "A SQL Injection vulnerability exists in SourceCodester Online Food Ordering System v1.0 in the Actions.php file (specifically the save_category action). The application fails to properly sanitize user",
+        "published": "2026-03-27T16:16:23.687"
       },
       {
-        "cve_id": "CVE-2026-4904",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability has been found in Tenda AC5 15.03.06.47. This issue affects the function formSetCfm of the file /goform/setcfm of the component POST Request Handler. Such manipulation of the argument ",
-        "published": "2026-03-27T00:16:24.170"
-      },
-      {
-        "cve_id": "CVE-2026-4905",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was found in Tenda AC5 15.03.06.47. Impacted is the function formWifiWpsOOB of the file /goform/WifiWpsOOB of the component POST Request Handler. Performing a manipulation of the argum",
-        "published": "2026-03-27T00:16:24.393"
-      },
-      {
-        "cve_id": "CVE-2026-4906",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was determined in Tenda AC5 15.03.06.47. The affected element is the function decodePwd of the file /goform/WizardHandle of the component POST Request Handler. Executing a manipulation",
-        "published": "2026-03-27T01:16:21.807"
-      },
-      {
-        "cve_id": "CVE-2026-33661",
+        "cve_id": "CVE-2026-22742",
         "severity": "HIGH",
         "base_score": 8.6,
-        "description": "Pay is an open-source payment SDK extension package for various Chinese payment services. Prior to version 3.7.20, the `verify_wechat_sign()` function in `src/Functions.php` unconditionally skips all ",
-        "published": "2026-03-26T22:16:29.560"
+        "description": "Spring AI's spring-ai-bedrock-converse\u00a0contains a Server-Side Request Forgery (SSRF) vulnerability in\u00a0BedrockProxyChatModel\u00a0when processing multimodal messages that include user-supplied media URLs. I",
+        "published": "2026-03-27T06:16:37.833"
       },
       {
-        "cve_id": "CVE-2026-34352",
+        "cve_id": "CVE-2026-30534",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "In TigerVNC before 1.16.2, Image.cxx in x0vncserver allows other users to observe or manipulate the screen contents, or cause an application crash, because of incorrect permissions.",
-        "published": "2026-03-26T23:16:20.903"
+        "base_score": 8.3,
+        "description": "A SQL Injection vulnerability exists in SourceCodester Online Food Ordering System v1.0 in admin/manage_category.php via the \"id\" parameter.",
+        "published": "2026-03-27T16:16:24.030"
       },
       {
-        "cve_id": "CVE-2026-33747",
+        "cve_id": "CVE-2026-4984",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "BuildKit is a toolkit for converting source code to build artifacts in an efficient, expressive and repeatable manner. Prior to version 0.28.1, when using a custom BuildKit frontend, the frontend can ",
-        "published": "2026-03-27T01:16:21.330"
+        "base_score": 8.2,
+        "description": "The Twilio integration webhook handler accepts any POST request without validating Twilio's 'X-Twilio-Signature'.\n\nWhen processing media messages, it fetches user-controlled URLs ('MediaUrlN' paramete",
+        "published": "2026-03-27T15:17:03.953"
       },
       {
-        "cve_id": "CVE-2025-12805",
+        "cve_id": "CVE-2025-15381",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "A flaw was found in Red Hat OpenShift AI (RHOAI) llama-stack-operator. This vulnerability allows unauthorized access to Llama Stack services deployed in other namespaces via direct network requests, b",
-        "published": "2026-03-26T22:16:25.920"
+        "description": "In the latest version of mlflow/mlflow, when the `basic-auth` app is enabled, tracing and assessment endpoints are not protected by permission validators. This allows any authenticated user, including",
+        "published": "2026-03-27T17:16:26.573"
       },
       {
-        "cve_id": "CVE-2026-33744",
+        "cve_id": "CVE-2026-24031",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "BentoML is a Python library for building online serving systems optimized for AI apps and model inference. Prior to 1.4.37, the `docker.system_packages` field in `bentofile.yaml` accepts arbitrary str",
-        "published": "2026-03-27T01:16:21.007"
-      },
-      {
-        "cve_id": "CVE-2026-33673",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "PrestaShop is an open source e-commerce web application. Versions prior to 8.2.5 and 9.1.0 are vulnerable to stored Cross-Site Scripting (stored XSS) vulnerabilities in the BO. An attacker who can inj",
-        "published": "2026-03-26T22:16:30.553"
-      },
-      {
-        "cve_id": "CVE-2026-33718",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "OpenHands is software for AI-driven development. Starting in version 1.5.0, a Command Injection vulnerability exists in the `get_git_diff()` method at `openhands/runtime/utils/git_handler.py:134`. The",
-        "published": "2026-03-27T01:16:19.483"
+        "base_score": 7.7,
+        "description": "Dovecot SQL based authentication can be bypassed when auth_username_chars is cleared by admin. This vulnerability allows bypassing authentication for any user and user enumeration. Do not clear auth_u",
+        "published": "2026-03-27T09:16:19.447"
       }
     ]
   },
