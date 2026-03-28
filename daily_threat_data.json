@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-28T16:22:52.092198+00:00",
+  "generated_at": "2026-03-28T20:19:51.534443+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 10,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 165,
-    "critical_count": 4,
-    "high_count": 32,
+    "total": 105,
+    "critical_count": 10,
+    "high_count": 50,
     "cves": [
       {
         "cve_id": "CVE-2026-33937",
@@ -250,11 +250,60 @@
         "published": "2026-03-27T21:17:27.417"
       },
       {
-        "cve_id": "CVE-2026-34205",
+        "cve_id": "CVE-2016-20049",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "JAD 1.5.8e-1kali1 and prior contains a stack-based buffer overflow vulnerability that allows attackers to execute arbitrary code by supplying oversized input that exceeds buffer boundaries. Attackers ",
+        "published": "2026-03-28T12:16:01.407"
+      },
+      {
+        "cve_id": "CVE-2017-20225",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "TiEmu 2.08 and prior contains a stack-based buffer overflow vulnerability that allows attackers to execute arbitrary code by exploiting inadequate boundary checks on user-supplied input. Attackers can",
+        "published": "2026-03-28T12:16:01.613"
+      },
+      {
+        "cve_id": "CVE-2017-20227",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "JAD Java Decompiler 1.5.8e-1kali1 and prior contains a stack-based buffer overflow vulnerability that allows attackers to execute arbitrary code by supplying overly long input that exceeds buffer boun",
+        "published": "2026-03-28T12:16:01.993"
+      },
+      {
+        "cve_id": "CVE-2017-20229",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "MAWK 1.3.3-17 and prior contains a stack-based buffer overflow vulnerability that allows attackers to execute arbitrary code by exploiting inadequate boundary checks on user-supplied input. Attackers ",
+        "published": "2026-03-28T12:16:02.400"
+      },
+      {
+        "cve_id": "CVE-2018-25220",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Bochs 2.6-5 contains a stack-based buffer overflow vulnerability that allows attackers to execute arbitrary code by supplying an oversized input string to the application. Attackers can craft a malici",
+        "published": "2026-03-28T12:16:02.600"
+      },
+      {
+        "cve_id": "CVE-2018-25221",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "EChat Server 3.1 contains a buffer overflow vulnerability in the chat.ghp endpoint that allows remote attackers to execute arbitrary code by supplying an oversized username parameter. Attackers can se",
+        "published": "2026-03-28T12:16:02.793"
+      },
+      {
+        "cve_id": "CVE-2018-25223",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Crashmail 1.6 contains a stack-based buffer overflow vulnerability that allows remote attackers to execute arbitrary code by sending malicious input to the application. Attackers can craft payloads wi",
+        "published": "2026-03-28T12:16:03.170"
+      },
+      {
+        "cve_id": "CVE-2026-33976",
         "severity": "CRITICAL",
         "base_score": 9.6,
-        "description": "Home Assistant is open source home automation software that puts local control and privacy first. Home Assistant apps (formerly add-ons) configured with host network mode expose unauthenticated endpoi",
-        "published": "2026-03-27T20:16:35.360"
+        "description": "Notesnook is a note-taking app. Prior to version 3.3.11 on Web/Desktop and 3.3.17 on Android/iOS, a stored XSS in the Web Clipper rendering flow can be escalated to remote code execution in the deskto",
+        "published": "2026-03-27T22:16:22.250"
       },
       {
         "cve_id": "CVE-2026-33875",
@@ -264,41 +313,6 @@
         "published": "2026-03-27T21:17:24.377"
       },
       {
-        "cve_id": "CVE-2026-34374",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "WWBN AVideo is an open source video platform. In versions up to and including 26.0, the `Live_schedule::keyExists()` method constructs a SQL query by interpolating a stream key directly into the query",
-        "published": "2026-03-27T19:16:42.930"
-      },
-      {
-        "cve_id": "CVE-2026-4960",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was determined in Tenda AC6 15.03.05.16. Affected is the function fromWizardHandle of the file /goform/WizardHandle of the component POST Request Handler. Executing a manipulation of t",
-        "published": "2026-03-27T17:16:30.750"
-      },
-      {
-        "cve_id": "CVE-2026-4961",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was identified in Tenda AC6 15.03.05.16. Affected by this vulnerability is the function formQuickIndex of the file /goform/QuickIndex of the component POST Request Handler. The manipul",
-        "published": "2026-03-27T17:16:31.090"
-      },
-      {
-        "cve_id": "CVE-2026-4974",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw has been found in Tenda AC7 15.03.06.44. Affected by this issue is the function fromSetSysTime of the file /goform/SetSysTimeCfg of the component POST Request Handler. Executing a manipulation ",
-        "published": "2026-03-27T20:16:38.473"
-      },
-      {
-        "cve_id": "CVE-2026-4975",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability has been found in Tenda AC15 15.03.05.19. This affects the function formSetCfm of the file /goform/setcfm of the component POST Request Handler. The manipulation of the argument funcpa",
-        "published": "2026-03-27T20:16:38.707"
-      },
-      {
         "cve_id": "CVE-2026-4976",
         "severity": "HIGH",
         "base_score": 8.8,
@@ -306,81 +320,67 @@
         "published": "2026-03-27T21:17:28.123"
       },
       {
-        "cve_id": "CVE-2026-28367",
+        "cve_id": "CVE-2026-33943",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "A flaw was found in Undertow. A remote attacker can exploit this vulnerability by sending `\\r\\r\\r` as a header block terminator. This can be used for request smuggling with certain proxy servers, such",
-        "published": "2026-03-27T17:16:27.750"
+        "base_score": 8.8,
+        "description": "Happy DOM is a JavaScript implementation of a web browser without its graphical user interface. In versions 15.10.0 through 20.8.7, a code injection vulnerability in `ECMAScriptModuleCompiler` allows ",
+        "published": "2026-03-27T22:16:21.393"
       },
       {
-        "cve_id": "CVE-2026-28368",
+        "cve_id": "CVE-2026-33991",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "A flaw was found in Undertow. This vulnerability allows a remote attacker to construct specially crafted requests where header names are parsed differently by Undertow compared to upstream proxies. Th",
-        "published": "2026-03-27T17:16:27.993"
+        "base_score": 8.8,
+        "description": "WeGIA is a web manager for charitable institutions. Prior to version 3.6.7, the file `html/socio/sistema/deletar_tag.php` uses `extract($_REQUEST)` on line 14 and directly concatenates the `$id_tag` v",
+        "published": "2026-03-27T23:17:13.913"
       },
       {
-        "cve_id": "CVE-2026-28369",
+        "cve_id": "CVE-2026-5004",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "A flaw was found in Undertow. When Undertow receives an HTTP request where the first header line starts with one or more spaces, it incorrectly processes the request by stripping these leading spaces.",
-        "published": "2026-03-27T17:16:28.240"
+        "base_score": 8.8,
+        "description": "A vulnerability was determined in Wavlink WL-WN579X3-C 231124. This impacts the function sub_4019FC of the file /cgi-bin/firewall.cgi of the component UPNP Handler. Executing a manipulation of the arg",
+        "published": "2026-03-28T18:15:57.917"
       },
       {
-        "cve_id": "CVE-2026-31943",
+        "cve_id": "CVE-2026-33955",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Notesnook is a note-taking app. Prior to version 3.3.11 on Web/Desktop, a cross-site scripting vulnerability stored in the note history comparison viewer can escalate to remote code execution in a des",
+        "published": "2026-03-27T22:16:22.083"
+      },
+      {
+        "cve_id": "CVE-2026-33953",
         "severity": "HIGH",
         "base_score": 8.5,
-        "description": "LibreChat is a ChatGPT clone with additional features. Prior to version 0.8.3, `isPrivateIP()` in `packages/api/src/auth/domain.ts` fails to detect IPv4-mapped IPv6 addresses in their hex-normalized f",
-        "published": "2026-03-27T20:16:29.897"
+        "description": "LinkAce is a self-hosted archive to collect website links. Versions prior to 2.5.3 block direct requests to private IP literals, but still performs server-side requests to internal-only resources when",
+        "published": "2026-03-27T22:16:21.760"
       },
       {
-        "cve_id": "CVE-2019-25651",
+        "cve_id": "CVE-2016-20037",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Ubiquiti UniFi Network Controller prior to 5.10.12 (excluding 5.6.42), UAP FW prior to 4.0.6, UAP-AC, UAP-AC v2, and UAP-AC Outdoor FW prior to 3.8.17, USW FW prior to 4.0.6, USG FW prior to 4.4.34 us",
-        "published": "2026-03-27T22:16:19.107"
+        "base_score": 8.4,
+        "description": "xwpe 1.5.30a-2.1 and prior contains a stack-based buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying overly long input strings that exceed buffer boundari",
+        "published": "2026-03-28T12:15:58.500"
       },
       {
-        "cve_id": "CVE-2026-34375",
+        "cve_id": "CVE-2016-20038",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "WWBN AVideo is an open source video platform. In versions up to and including 26.0, the YPTWallet Stripe payment confirmation page directly echoes the `$_REQUEST['plugin']` parameter into a JavaScript",
-        "published": "2026-03-27T19:16:43.107"
+        "base_score": 8.4,
+        "description": "yTree 1.94-1.1 contains a stack-based buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying an excessively long argument to the application. Attackers can cr",
+        "published": "2026-03-28T12:15:59.277"
       },
       {
-        "cve_id": "CVE-2026-33941",
+        "cve_id": "CVE-2016-20039",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Handlebars provides the power necessary to let users build semantic templates. In versions 4.0.0 through 4.7.8, the Handlebars CLI precompiler (`bin/handlebars` / `lib/precompiler.js`) concatenates us",
-        "published": "2026-03-27T22:16:21.203"
+        "base_score": 8.4,
+        "description": "Multi Emulator Super System 0.154-3.1 contains a buffer overflow vulnerability in the gamma parameter handling that allows local attackers to crash the application or execute arbitrary code. Attackers",
+        "published": "2026-03-28T12:15:59.473"
       },
       {
-        "cve_id": "CVE-2025-15381",
+        "cve_id": "CVE-2016-20040",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "In the latest version of mlflow/mlflow, when the `basic-auth` app is enabled, tracing and assessment endpoints are not protected by permission validators. This allows any authenticated user, including",
-        "published": "2026-03-27T17:16:26.573"
-      },
-      {
-        "cve_id": "CVE-2026-33938",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Handlebars provides the power necessary to let users build semantic templates. In versions 4.0.0 through 4.7.8, the `@partial-block` special variable is stored in the template data context and is reac",
-        "published": "2026-03-27T21:17:27.587"
-      },
-      {
-        "cve_id": "CVE-2026-33940",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Handlebars provides the power necessary to let users build semantic templates. In versions 4.0.0 through 4.7.8, a crafted object placed in the template context can bypass all conditional guards in `re",
-        "published": "2026-03-27T22:16:21.030"
-      },
-      {
-        "cve_id": "CVE-2026-33874",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Gematik Authenticator securely authenticates users for login to digital health applications. Starting in version 4.12.0 and prior to version 4.16.0, the Mac OS version of the Authenticator is vulnerab",
-        "published": "2026-03-27T21:17:24.213"
+        "base_score": 8.4,
+        "description": "TiEmu 3.03-nogdb+dfsg-3 contains a buffer overflow vulnerability in the ROM parameter handling that allows local attackers to crash the application or execute arbitrary code. Attackers can supply an o",
+        "published": "2026-03-28T12:15:59.670"
       }
     ]
   },
