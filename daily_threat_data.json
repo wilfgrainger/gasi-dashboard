@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-28T05:17:55.537261+00:00",
+  "generated_at": "2026-03-28T08:28:32.530884+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
+        "value": 8,
         "score": 2.5,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 220,
-    "critical_count": 9,
-    "high_count": 30,
+    "total": 210,
+    "critical_count": 8,
+    "high_count": 26,
     "cves": [
       {
         "cve_id": "CVE-2026-30302",
@@ -248,13 +248,6 @@
         "base_score": 10.0,
         "description": "The command auto-approval module in CodeRider-Kilo contains an OS Command Injection vulnerability, rendering its whitelist security mechanism ineffective. The vulnerability stems from the incorrect us",
         "published": "2026-03-27T16:16:23.210"
-      },
-      {
-        "cve_id": "CVE-2026-22738",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "In Spring AI, a SpEL injection vulnerability exists in\u00a0SimpleVectorStore\u00a0when a user-supplied value is used as a filter expression key. A malicious actor could exploit this to execute arbitrary code.\u00a0",
-        "published": "2026-03-27T06:16:37.663"
       },
       {
         "cve_id": "CVE-2026-30303",
@@ -306,20 +299,6 @@
         "published": "2026-03-27T15:16:50.920"
       },
       {
-        "cve_id": "CVE-2026-27650",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OS Command Injection vulnerability exists in BUFFALO Wi-Fi router products. If this vulnerability is exploited, an arbitrary OS command may be executed on the products.",
-        "published": "2026-03-27T06:16:38.257"
-      },
-      {
-        "cve_id": "CVE-2026-32669",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Code injection vulnerability exists in BUFFALO Wi-Fi router products. If this vulnerability is exploited, an arbitrary code may be executed on the products.",
-        "published": "2026-03-27T06:16:38.450"
-      },
-      {
         "cve_id": "CVE-2026-33755",
         "severity": "HIGH",
         "base_score": 8.8,
@@ -369,18 +348,39 @@
         "published": "2026-03-27T17:16:28.240"
       },
       {
-        "cve_id": "CVE-2026-22742",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Spring AI's spring-ai-bedrock-converse\u00a0contains a Server-Side Request Forgery (SSRF) vulnerability in\u00a0BedrockProxyChatModel\u00a0when processing multimodal messages that include user-supplied media URLs. I",
-        "published": "2026-03-27T06:16:37.833"
-      },
-      {
         "cve_id": "CVE-2026-30534",
         "severity": "HIGH",
         "base_score": 8.3,
         "description": "A SQL Injection vulnerability exists in SourceCodester Online Food Ordering System v1.0 in admin/manage_category.php via the \"id\" parameter.",
         "published": "2026-03-27T16:16:24.030"
+      },
+      {
+        "cve_id": "CVE-2026-4984",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "The Twilio integration webhook handler accepts any POST request without validating Twilio's 'X-Twilio-Signature'.\n\nWhen processing media messages, it fetches user-controlled URLs ('MediaUrlN' paramete",
+        "published": "2026-03-27T15:17:03.953"
+      },
+      {
+        "cve_id": "CVE-2025-15381",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "In the latest version of mlflow/mlflow, when the `basic-auth` app is enabled, tracing and assessment endpoints are not protected by permission validators. This allows any authenticated user, including",
+        "published": "2026-03-27T17:16:26.573"
+      },
+      {
+        "cve_id": "CVE-2026-24031",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "Dovecot SQL based authentication can be bypassed when auth_username_chars is cleared by admin. This vulnerability allows bypassing authentication for any user and user enumeration. Do not clear auth_u",
+        "published": "2026-03-27T09:16:19.447"
+      },
+      {
+        "cve_id": "CVE-2025-59032",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "ManageSieve AUTHENTICATE command crashes when using literal as SASL initial response. This can be used to crash ManageSieve service repeatedly, making it unavailable for other users. Control access to",
+        "published": "2026-03-27T09:16:18.933"
       }
     ]
   },
