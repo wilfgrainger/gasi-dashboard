@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-28T12:34:06.191860+00:00",
+  "generated_at": "2026-03-28T16:22:52.092198+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
-        "score": 2.5,
+        "value": 4,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,65 +238,30 @@
     ]
   },
   "nvd": {
-    "total": 220,
-    "critical_count": 9,
-    "high_count": 27,
+    "total": 165,
+    "critical_count": 4,
+    "high_count": 32,
     "cves": [
       {
-        "cve_id": "CVE-2026-30302",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "The command auto-approval module in CodeRider-Kilo contains an OS Command Injection vulnerability, rendering its whitelist security mechanism ineffective. The vulnerability stems from the incorrect us",
-        "published": "2026-03-27T16:16:23.210"
-      },
-      {
-        "cve_id": "CVE-2026-30303",
+        "cve_id": "CVE-2026-33937",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "The command auto-approval module in Axon Code contains an OS Command Injection vulnerability, rendering its whitelist security mechanism ineffective. The vulnerability stems from the incorrect use of ",
-        "published": "2026-03-27T15:16:52.513"
+        "description": "Handlebars provides the power necessary to let users build semantic templates. In versions 4.0.0 through 4.7.8, `Handlebars.compile()` accepts a pre-parsed AST object in addition to a template string.",
+        "published": "2026-03-27T21:17:27.417"
       },
       {
-        "cve_id": "CVE-2026-30530",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A SQL Injection vulnerability exists in SourceCodester Online Food Ordering System v1.0 in the Actions.php file (specifically the save_customer action). The application fails to properly sanitize user",
-        "published": "2026-03-27T16:16:23.567"
-      },
-      {
-        "cve_id": "CVE-2026-30532",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A SQL Injection vulnerability exists in SourceCodester Online Food Ordering System v1.0 in the admin/view_product.php file via the \"id\" parameter.",
-        "published": "2026-03-27T16:16:23.803"
-      },
-      {
-        "cve_id": "CVE-2026-30533",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A SQL Injection vulnerability exists in SourceCodester Online Food Ordering System v1.0 in the admin/manage_product.php file via the \"id\" parameter.",
-        "published": "2026-03-27T16:16:23.917"
-      },
-      {
-        "cve_id": "CVE-2026-30304",
+        "cve_id": "CVE-2026-34205",
         "severity": "CRITICAL",
         "base_score": 9.6,
-        "description": "In its design for automatic terminal command execution, AI Code offers two options: Execute safe commands and execute all commands. The description for the former states that commands determined by th",
-        "published": "2026-03-27T15:16:53.263"
+        "description": "Home Assistant is open source home automation software that puts local control and privacy first. Home Assistant apps (formerly add-ons) configured with host network mode expose unauthenticated endpoi",
+        "published": "2026-03-27T20:16:35.360"
       },
       {
-        "cve_id": "CVE-2026-33757",
+        "cve_id": "CVE-2026-33875",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "OpenBao is an open source identity-based secrets management system. Prior to version 2.5.2, OpenBao does not prompt for user confirmation when logging in via JWT/OIDC and a role with `callback_mode` s",
-        "published": "2026-03-27T15:16:57.690"
-      },
-      {
-        "cve_id": "CVE-2026-27876",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A chained attack via SQL Expressions and a Grafana Enterprise plugin can lead to a remote arbitrary code execution impact (RCE). This is enabled by a feature in Grafana (OSS), so all users are always ",
-        "published": "2026-03-27T15:16:50.920"
+        "base_score": 9.3,
+        "description": "Gematik Authenticator securely authenticates users for login to digital health applications. Versions prior to 4.16.0 are vulnerable to authentication flow hijacking, potentially allowing attackers to",
+        "published": "2026-03-27T21:17:24.377"
       },
       {
         "cve_id": "CVE-2026-34374",
@@ -304,34 +269,6 @@
         "base_score": 9.1,
         "description": "WWBN AVideo is an open source video platform. In versions up to and including 26.0, the `Live_schedule::keyExists()` method constructs a SQL query by interpolating a stream key directly into the query",
         "published": "2026-03-27T19:16:42.930"
-      },
-      {
-        "cve_id": "CVE-2026-33755",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Group-Office is an enterprise customer relationship management and groupware tool. Prior to versions 6.8.158, 25.0.92, and 26.0.17, an authenticated SQL Injection vulnerability in the JMAP `Contact/qu",
-        "published": "2026-03-27T15:16:57.527"
-      },
-      {
-        "cve_id": "CVE-2026-5027",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The 'POST /api/v2/files' endpoint does not sanitize the 'filename' parameter from the multipart form data, allowing an attacker to write files to arbitrary locations on the filesystem using path trave",
-        "published": "2026-03-27T15:17:04.743"
-      },
-      {
-        "cve_id": "CVE-2026-30529",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A SQL Injection vulnerability exists in SourceCodester Online Food Ordering System v1.0 in the Actions.php file (specifically the save_user action). The application fails to properly sanitize user inp",
-        "published": "2026-03-27T16:16:23.447"
-      },
-      {
-        "cve_id": "CVE-2026-30531",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A SQL Injection vulnerability exists in SourceCodester Online Food Ordering System v1.0 in the Actions.php file (specifically the save_category action). The application fails to properly sanitize user",
-        "published": "2026-03-27T16:16:23.687"
       },
       {
         "cve_id": "CVE-2026-4960",
@@ -346,6 +283,27 @@
         "base_score": 8.8,
         "description": "A vulnerability was identified in Tenda AC6 15.03.05.16. Affected by this vulnerability is the function formQuickIndex of the file /goform/QuickIndex of the component POST Request Handler. The manipul",
         "published": "2026-03-27T17:16:31.090"
+      },
+      {
+        "cve_id": "CVE-2026-4974",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A flaw has been found in Tenda AC7 15.03.06.44. Affected by this issue is the function fromSetSysTime of the file /goform/SetSysTimeCfg of the component POST Request Handler. Executing a manipulation ",
+        "published": "2026-03-27T20:16:38.473"
+      },
+      {
+        "cve_id": "CVE-2026-4975",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability has been found in Tenda AC15 15.03.05.19. This affects the function formSetCfm of the file /goform/setcfm of the component POST Request Handler. The manipulation of the argument funcpa",
+        "published": "2026-03-27T20:16:38.707"
+      },
+      {
+        "cve_id": "CVE-2026-4976",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was found in Totolink LR350 9.3.5u.6369_B20220309. This vulnerability affects the function setWiFiGuestCfg of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument ssid resul",
+        "published": "2026-03-27T21:17:28.123"
       },
       {
         "cve_id": "CVE-2026-28367",
@@ -369,18 +327,60 @@
         "published": "2026-03-27T17:16:28.240"
       },
       {
-        "cve_id": "CVE-2026-30534",
+        "cve_id": "CVE-2026-31943",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "A SQL Injection vulnerability exists in SourceCodester Online Food Ordering System v1.0 in admin/manage_category.php via the \"id\" parameter.",
-        "published": "2026-03-27T16:16:24.030"
+        "base_score": 8.5,
+        "description": "LibreChat is a ChatGPT clone with additional features. Prior to version 0.8.3, `isPrivateIP()` in `packages/api/src/auth/domain.ts` fails to detect IPv4-mapped IPv6 addresses in their hex-normalized f",
+        "published": "2026-03-27T20:16:29.897"
       },
       {
-        "cve_id": "CVE-2026-4984",
+        "cve_id": "CVE-2019-25651",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "Ubiquiti UniFi Network Controller prior to 5.10.12 (excluding 5.6.42), UAP FW prior to 4.0.6, UAP-AC, UAP-AC v2, and UAP-AC Outdoor FW prior to 3.8.17, USW FW prior to 4.0.6, USG FW prior to 4.4.34 us",
+        "published": "2026-03-27T22:16:19.107"
+      },
+      {
+        "cve_id": "CVE-2026-34375",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "The Twilio integration webhook handler accepts any POST request without validating Twilio's 'X-Twilio-Signature'.\n\nWhen processing media messages, it fetches user-controlled URLs ('MediaUrlN' paramete",
-        "published": "2026-03-27T15:17:03.953"
+        "description": "WWBN AVideo is an open source video platform. In versions up to and including 26.0, the YPTWallet Stripe payment confirmation page directly echoes the `$_REQUEST['plugin']` parameter into a JavaScript",
+        "published": "2026-03-27T19:16:43.107"
+      },
+      {
+        "cve_id": "CVE-2026-33941",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Handlebars provides the power necessary to let users build semantic templates. In versions 4.0.0 through 4.7.8, the Handlebars CLI precompiler (`bin/handlebars` / `lib/precompiler.js`) concatenates us",
+        "published": "2026-03-27T22:16:21.203"
+      },
+      {
+        "cve_id": "CVE-2025-15381",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "In the latest version of mlflow/mlflow, when the `basic-auth` app is enabled, tracing and assessment endpoints are not protected by permission validators. This allows any authenticated user, including",
+        "published": "2026-03-27T17:16:26.573"
+      },
+      {
+        "cve_id": "CVE-2026-33938",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Handlebars provides the power necessary to let users build semantic templates. In versions 4.0.0 through 4.7.8, the `@partial-block` special variable is stored in the template data context and is reac",
+        "published": "2026-03-27T21:17:27.587"
+      },
+      {
+        "cve_id": "CVE-2026-33940",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Handlebars provides the power necessary to let users build semantic templates. In versions 4.0.0 through 4.7.8, a crafted object placed in the template context can bypass all conditional guards in `re",
+        "published": "2026-03-27T22:16:21.030"
+      },
+      {
+        "cve_id": "CVE-2026-33874",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Gematik Authenticator securely authenticates users for login to digital health applications. Starting in version 4.12.0 and prior to version 4.16.0, the Mac OS version of the Authenticator is vulnerab",
+        "published": "2026-03-27T21:17:24.213"
       }
     ]
   },
