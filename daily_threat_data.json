@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-28T01:17:58.174528+00:00",
+  "generated_at": "2026-03-28T05:17:55.537261+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 223,
+    "total": 220,
     "critical_count": 9,
-    "high_count": 29,
+    "high_count": 30,
     "cves": [
       {
         "cve_id": "CVE-2026-30302",
@@ -348,6 +348,27 @@
         "published": "2026-03-27T16:16:23.687"
       },
       {
+        "cve_id": "CVE-2026-28367",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "A flaw was found in Undertow. A remote attacker can exploit this vulnerability by sending `\\r\\r\\r` as a header block terminator. This can be used for request smuggling with certain proxy servers, such",
+        "published": "2026-03-27T17:16:27.750"
+      },
+      {
+        "cve_id": "CVE-2026-28368",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "A flaw was found in Undertow. This vulnerability allows a remote attacker to construct specially crafted requests where header names are parsed differently by Undertow compared to upstream proxies. Th",
+        "published": "2026-03-27T17:16:27.993"
+      },
+      {
+        "cve_id": "CVE-2026-28369",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "A flaw was found in Undertow. When Undertow receives an HTTP request where the first header line starts with one or more spaces, it incorrectly processes the request by stripping these leading spaces.",
+        "published": "2026-03-27T17:16:28.240"
+      },
+      {
         "cve_id": "CVE-2026-22742",
         "severity": "HIGH",
         "base_score": 8.6,
@@ -360,27 +381,6 @@
         "base_score": 8.3,
         "description": "A SQL Injection vulnerability exists in SourceCodester Online Food Ordering System v1.0 in admin/manage_category.php via the \"id\" parameter.",
         "published": "2026-03-27T16:16:24.030"
-      },
-      {
-        "cve_id": "CVE-2026-4984",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "The Twilio integration webhook handler accepts any POST request without validating Twilio's 'X-Twilio-Signature'.\n\nWhen processing media messages, it fetches user-controlled URLs ('MediaUrlN' paramete",
-        "published": "2026-03-27T15:17:03.953"
-      },
-      {
-        "cve_id": "CVE-2025-15381",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "In the latest version of mlflow/mlflow, when the `basic-auth` app is enabled, tracing and assessment endpoints are not protected by permission validators. This allows any authenticated user, including",
-        "published": "2026-03-27T17:16:26.573"
-      },
-      {
-        "cve_id": "CVE-2026-24031",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Dovecot SQL based authentication can be bypassed when auth_username_chars is cleared by admin. This vulnerability allows bypassing authentication for any user and user enumeration. Do not clear auth_u",
-        "published": "2026-03-27T09:16:19.447"
       }
     ]
   },
