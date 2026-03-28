@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-28T08:28:32.530884+00:00",
+  "generated_at": "2026-03-28T12:34:06.191860+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
+        "value": 9,
         "score": 2.5,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 210,
-    "critical_count": 8,
-    "high_count": 26,
+    "total": 220,
+    "critical_count": 9,
+    "high_count": 27,
     "cves": [
       {
         "cve_id": "CVE-2026-30302",
@@ -299,6 +299,13 @@
         "published": "2026-03-27T15:16:50.920"
       },
       {
+        "cve_id": "CVE-2026-34374",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "WWBN AVideo is an open source video platform. In versions up to and including 26.0, the `Live_schedule::keyExists()` method constructs a SQL query by interpolating a stream key directly into the query",
+        "published": "2026-03-27T19:16:42.930"
+      },
+      {
         "cve_id": "CVE-2026-33755",
         "severity": "HIGH",
         "base_score": 8.8,
@@ -325,6 +332,20 @@
         "base_score": 8.8,
         "description": "A SQL Injection vulnerability exists in SourceCodester Online Food Ordering System v1.0 in the Actions.php file (specifically the save_category action). The application fails to properly sanitize user",
         "published": "2026-03-27T16:16:23.687"
+      },
+      {
+        "cve_id": "CVE-2026-4960",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was determined in Tenda AC6 15.03.05.16. Affected is the function fromWizardHandle of the file /goform/WizardHandle of the component POST Request Handler. Executing a manipulation of t",
+        "published": "2026-03-27T17:16:30.750"
+      },
+      {
+        "cve_id": "CVE-2026-4961",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was identified in Tenda AC6 15.03.05.16. Affected by this vulnerability is the function formQuickIndex of the file /goform/QuickIndex of the component POST Request Handler. The manipul",
+        "published": "2026-03-27T17:16:31.090"
       },
       {
         "cve_id": "CVE-2026-28367",
@@ -360,27 +381,6 @@
         "base_score": 8.2,
         "description": "The Twilio integration webhook handler accepts any POST request without validating Twilio's 'X-Twilio-Signature'.\n\nWhen processing media messages, it fetches user-controlled URLs ('MediaUrlN' paramete",
         "published": "2026-03-27T15:17:03.953"
-      },
-      {
-        "cve_id": "CVE-2025-15381",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "In the latest version of mlflow/mlflow, when the `basic-auth` app is enabled, tracing and assessment endpoints are not protected by permission validators. This allows any authenticated user, including",
-        "published": "2026-03-27T17:16:26.573"
-      },
-      {
-        "cve_id": "CVE-2026-24031",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Dovecot SQL based authentication can be bypassed when auth_username_chars is cleared by admin. This vulnerability allows bypassing authentication for any user and user enumeration. Do not clear auth_u",
-        "published": "2026-03-27T09:16:19.447"
-      },
-      {
-        "cve_id": "CVE-2025-59032",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "ManageSieve AUTHENTICATE command crashes when using literal as SASL initial response. This can be used to crash ManageSieve service repeatedly, making it unavailable for other users. Control access to",
-        "published": "2026-03-27T09:16:18.933"
       }
     ]
   },
