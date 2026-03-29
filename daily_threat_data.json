@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-28T20:19:51.534443+00:00",
+  "generated_at": "2026-03-29T01:27:38.124886+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 10,
-        "score": 3.0,
+        "value": 7,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,17 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 105,
-    "critical_count": 10,
-    "high_count": 50,
+    "total": 58,
+    "critical_count": 7,
+    "high_count": 30,
     "cves": [
-      {
-        "cve_id": "CVE-2026-33937",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Handlebars provides the power necessary to let users build semantic templates. In versions 4.0.0 through 4.7.8, `Handlebars.compile()` accepts a pre-parsed AST object in addition to a template string.",
-        "published": "2026-03-27T21:17:27.417"
-      },
       {
         "cve_id": "CVE-2016-20049",
         "severity": "CRITICAL",
@@ -299,60 +292,11 @@
         "published": "2026-03-28T12:16:03.170"
       },
       {
-        "cve_id": "CVE-2026-33976",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Notesnook is a note-taking app. Prior to version 3.3.11 on Web/Desktop and 3.3.17 on Android/iOS, a stored XSS in the Web Clipper rendering flow can be escalated to remote code execution in the deskto",
-        "published": "2026-03-27T22:16:22.250"
-      },
-      {
-        "cve_id": "CVE-2026-33875",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Gematik Authenticator securely authenticates users for login to digital health applications. Versions prior to 4.16.0 are vulnerable to authentication flow hijacking, potentially allowing attackers to",
-        "published": "2026-03-27T21:17:24.377"
-      },
-      {
-        "cve_id": "CVE-2026-4976",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was found in Totolink LR350 9.3.5u.6369_B20220309. This vulnerability affects the function setWiFiGuestCfg of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument ssid resul",
-        "published": "2026-03-27T21:17:28.123"
-      },
-      {
-        "cve_id": "CVE-2026-33943",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Happy DOM is a JavaScript implementation of a web browser without its graphical user interface. In versions 15.10.0 through 20.8.7, a code injection vulnerability in `ECMAScriptModuleCompiler` allows ",
-        "published": "2026-03-27T22:16:21.393"
-      },
-      {
-        "cve_id": "CVE-2026-33991",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "WeGIA is a web manager for charitable institutions. Prior to version 3.6.7, the file `html/socio/sistema/deletar_tag.php` uses `extract($_REQUEST)` on line 14 and directly concatenates the `$id_tag` v",
-        "published": "2026-03-27T23:17:13.913"
-      },
-      {
         "cve_id": "CVE-2026-5004",
         "severity": "HIGH",
         "base_score": 8.8,
         "description": "A vulnerability was determined in Wavlink WL-WN579X3-C 231124. This impacts the function sub_4019FC of the file /cgi-bin/firewall.cgi of the component UPNP Handler. Executing a manipulation of the arg",
         "published": "2026-03-28T18:15:57.917"
-      },
-      {
-        "cve_id": "CVE-2026-33955",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Notesnook is a note-taking app. Prior to version 3.3.11 on Web/Desktop, a cross-site scripting vulnerability stored in the note history comparison viewer can escalate to remote code execution in a des",
-        "published": "2026-03-27T22:16:22.083"
-      },
-      {
-        "cve_id": "CVE-2026-33953",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "LinkAce is a self-hosted archive to collect website links. Versions prior to 2.5.3 block direct requests to private IP literals, but still performs server-side requests to internal-only resources when",
-        "published": "2026-03-27T22:16:21.760"
       },
       {
         "cve_id": "CVE-2016-20037",
@@ -381,6 +325,62 @@
         "base_score": 8.4,
         "description": "TiEmu 3.03-nogdb+dfsg-3 contains a buffer overflow vulnerability in the ROM parameter handling that allows local attackers to crash the application or execute arbitrary code. Attackers can supply an o",
         "published": "2026-03-28T12:15:59.670"
+      },
+      {
+        "cve_id": "CVE-2016-20041",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "Yasr 0.6.9-5 contains a buffer overflow vulnerability that allows local attackers to crash the application or execute arbitrary code by supplying an oversized argument to the -p parameter. Attackers c",
+        "published": "2026-03-28T12:15:59.860"
+      },
+      {
+        "cve_id": "CVE-2016-20042",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "TRN 3.6-23 contains a stack buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying an oversized argument to the application. Attackers can craft a malicious c",
+        "published": "2026-03-28T12:16:00.057"
+      },
+      {
+        "cve_id": "CVE-2016-20043",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "NRSS RSS Reader 0.3.9-1 contains a stack buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying an oversized argument to the -F parameter. Attackers can craft",
+        "published": "2026-03-28T12:16:00.250"
+      },
+      {
+        "cve_id": "CVE-2016-20044",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "PInfo 0.6.9-5.1 contains a local buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying an oversized argument to the -m parameter. Attackers can craft a malic",
+        "published": "2026-03-28T12:16:00.447"
+      },
+      {
+        "cve_id": "CVE-2016-20045",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "HNB Organizer 1.9.18-10 contains a local buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying an oversized argument to the -rc command-line parameter. Attac",
+        "published": "2026-03-28T12:16:00.630"
+      },
+      {
+        "cve_id": "CVE-2016-20046",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "zFTP Client 20061220+dfsg3-4.1 contains a buffer overflow vulnerability in the NAME parameter handling of FTP connections that allows local attackers to crash the application or execute arbitrary code",
+        "published": "2026-03-28T12:16:00.827"
+      },
+      {
+        "cve_id": "CVE-2016-20047",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "EKG Gadu 1.9~pre+r2855-3+b1 contains a local buffer overflow vulnerability in the username handling that allows local attackers to execute arbitrary code by supplying an oversized username string. Att",
+        "published": "2026-03-28T12:16:01.013"
+      },
+      {
+        "cve_id": "CVE-2016-20048",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "iSelect 1.4.0-2+b1 contains a local buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying an oversized value to the -k/--key parameter. Attackers can craft a",
+        "published": "2026-03-28T12:16:01.210"
       }
     ]
   },
