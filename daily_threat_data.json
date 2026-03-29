@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-03-29T12:34:35.739585+00:00",
+  "generated_at": "2026-03-29T16:25:23.504012+00:00",
   "threat_score": {
-    "score": 5.0,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.5,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 1.0,
+        "value": 5,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,10 +238,45 @@
     ]
   },
   "nvd": {
-    "total": 36,
-    "critical_count": 0,
-    "high_count": 18,
+    "total": 54,
+    "critical_count": 5,
+    "high_count": 29,
     "cves": [
+      {
+        "cve_id": "CVE-2026-32922",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "OpenClaw before 2026.3.11 contains a privilege escalation vulnerability in device.token.rotate that allows callers with operator.pairing scope to mint tokens with broader scopes by failing to constrai",
+        "published": "2026-03-29T13:17:00.573"
+      },
+      {
+        "cve_id": "CVE-2026-32924",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "OpenClaw before 2026.3.12 contains an authorization bypass vulnerability where Feishu reaction events with omitted chat_type are misclassified as p2p conversations instead of group chats. Attackers ca",
+        "published": "2026-03-29T13:17:00.963"
+      },
+      {
+        "cve_id": "CVE-2026-32973",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "OpenClaw before 2026.3.11 contains an exec allowlist bypass vulnerability where matchesExecAllowlistPattern improperly normalizes patterns with lowercasing and glob matching that overmatches on POSIX ",
+        "published": "2026-03-29T13:17:01.367"
+      },
+      {
+        "cve_id": "CVE-2026-32975",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "OpenClaw before 2026.3.12 contains a weak authorization vulnerability in Zalouser allowlist mode that matches mutable group display names instead of stable group identifiers. Attackers can create grou",
+        "published": "2026-03-29T13:17:01.763"
+      },
+      {
+        "cve_id": "CVE-2026-32987",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "OpenClaw before 2026.3.13 allows bootstrap setup codes to be replayed during device pairing verification in src/infra/device-bootstrap.ts. Attackers can verify a valid bootstrap code multiple times be",
+        "published": "2026-03-29T13:17:02.563"
+      },
       {
         "cve_id": "CVE-2026-5004",
         "severity": "HIGH",
@@ -285,102 +320,67 @@
         "published": "2026-03-29T12:15:57.937"
       },
       {
-        "cve_id": "CVE-2026-4998",
+        "cve_id": "CVE-2026-32914",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A weakness has been identified in Sinaptik AI PandasAI up to 3.0.0. This vulnerability affects the function CodeExecutor.execute of the file pandasai/core/code_execution/code_executor.py of the compon",
-        "published": "2026-03-28T14:15:58.987"
+        "base_score": 8.8,
+        "description": "OpenClaw before 2026.3.12 contains an insufficient access control vulnerability in the /config and /debug command handlers that allows command-authorized non-owners to access owner-only surfaces. Atta",
+        "published": "2026-03-29T13:16:59.767"
       },
       {
-        "cve_id": "CVE-2026-5000",
+        "cve_id": "CVE-2026-32915",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was detected in PromtEngineer localGPT up to 4d41c7d1713b16b216d8e062e51a5dd88b20b054. Impacted is the function LocalGPTHandler of the file backend/server.py of the component API Endpo",
-        "published": "2026-03-28T15:16:38.563"
+        "base_score": 8.8,
+        "description": "OpenClaw before 2026.3.11 contains a sandbox boundary bypass vulnerability allowing leaf subagents to access the subagents control surface and resolve against parent requester scope instead of their o",
+        "published": "2026-03-29T13:16:59.973"
       },
       {
-        "cve_id": "CVE-2026-5001",
+        "cve_id": "CVE-2026-33573",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A flaw has been found in PromtEngineer localGPT up to 4d41c7d1713b16b216d8e062e51a5dd88b20b054. The affected element is the function do_POST of the file backend/server.py. This manipulation causes unr",
-        "published": "2026-03-28T16:15:58.260"
+        "base_score": 8.8,
+        "description": "OpenClaw before 2026.3.11 contains an authorization bypass vulnerability in the gateway agent RPC that allows authenticated operators with operator.write permission to override workspace boundaries by",
+        "published": "2026-03-29T13:17:02.980"
       },
       {
-        "cve_id": "CVE-2026-5002",
+        "cve_id": "CVE-2026-5044",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability has been found in PromtEngineer localGPT up to 4d41c7d1713b16b216d8e062e51a5dd88b20b054. The impacted element is the function _route_using_overviews of the file backend/server.py of th",
-        "published": "2026-03-28T17:16:45.450"
+        "base_score": 8.8,
+        "description": "A security vulnerability has been detected in Belkin F9K1122 1.00.33. This affects the function formSetSystemSettings of the file /goform/formSetSystemSettings of the component Setting Handler. Such m",
+        "published": "2026-03-29T13:17:03.573"
       },
       {
-        "cve_id": "CVE-2026-5012",
+        "cve_id": "CVE-2026-5045",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A flaw has been found in elecV2 elecV2P up to 3.8.3. This issue affects the function pm2run of the file /rpc. Executing a manipulation can lead to os command injection. The attack can be executed remo",
-        "published": "2026-03-28T20:16:16.237"
+        "base_score": 8.8,
+        "description": "A vulnerability was detected in Tenda FH1201 1.2.0.14(408). This impacts the function WrlclientSet of the file /goform/WrlclientSet of the component Parameter Handler. Performing a manipulation of the",
+        "published": "2026-03-29T14:16:32.547"
       },
       {
-        "cve_id": "CVE-2026-5016",
+        "cve_id": "CVE-2026-5046",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was identified in elecV2 elecV2P up to 3.8.3. This affects the function eAxios of the file /mock of the component URL Handler. Such manipulation of the argument req leads to server-sid",
-        "published": "2026-03-28T22:15:58.120"
+        "base_score": 8.8,
+        "description": "A flaw has been found in Tenda FH1201 1.2.0.14(408). Affected is the function formWrlExtraSet of the file /goform/WrlExtraSet of the component Parameter Handler. Executing a manipulation of the argume",
+        "published": "2026-03-29T15:16:36.990"
       },
       {
-        "cve_id": "CVE-2026-5017",
+        "cve_id": "CVE-2026-32974",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security flaw has been discovered in code-projects Simple Food Order System 1.0. This impacts an unknown function of the file /all-tickets.php of the component Parameter Handler. Performing a manipu",
-        "published": "2026-03-28T23:16:43.597"
+        "base_score": 8.6,
+        "description": "OpenClaw before 2026.3.12 contains an authentication bypass vulnerability in Feishu webhook mode when only verificationToken is configured without encryptKey, allowing acceptance of forged events. Una",
+        "published": "2026-03-29T13:17:01.570"
       },
       {
-        "cve_id": "CVE-2026-5018",
+        "cve_id": "CVE-2026-32918",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A weakness has been identified in code-projects Simple Food Order System 1.0. Affected is an unknown function of the file register-router.php of the component Parameter Handler. Executing a manipulati",
-        "published": "2026-03-28T23:16:44.663"
+        "base_score": 8.4,
+        "description": "OpenClaw before 2026.3.11 contains a session sandbox escape vulnerability in the session_status tool that allows sandboxed subagents to access parent or sibling session state. Attackers can supply arb",
+        "published": "2026-03-29T13:17:00.173"
       },
       {
-        "cve_id": "CVE-2026-5019",
+        "cve_id": "CVE-2026-33572",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security vulnerability has been detected in code-projects Simple Food Order System 1.0. Affected by this vulnerability is an unknown functionality of the file all-orders.php of the component Paramet",
-        "published": "2026-03-29T00:16:13.673"
-      },
-      {
-        "cve_id": "CVE-2026-5033",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was detected in code-projects Accounting System 1.0. Affected by this vulnerability is an unknown functionality of the file /view_costumer.php of the component Parameter Handler. The m",
-        "published": "2026-03-29T06:16:11.703"
-      },
-      {
-        "cve_id": "CVE-2026-5034",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A flaw has been found in code-projects Accounting System 1.0. Affected by this issue is some unknown functionality of the file /edit_costumer.php of the component Parameter Handler. This manipulation ",
-        "published": "2026-03-29T06:16:12.870"
-      },
-      {
-        "cve_id": "CVE-2026-5035",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability has been found in code-projects Accounting System 1.0. This affects an unknown part of the file /view_work.php of the component Parameter Handler. Such manipulation of the argument en_",
-        "published": "2026-03-29T07:15:56.793"
-      },
-      {
-        "cve_id": "CVE-2026-2602",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The Twentig plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'featuredImageSizeWidth' parameter in versions up to, and including, 1.9.7 due to insufficient input sanitization ",
-        "published": "2026-03-29T02:16:16.360"
-      },
-      {
-        "cve_id": "CVE-2026-4999",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A security vulnerability has been detected in z-9527 admin up to 72aaf2dd05cf4ec2e98f390668b41e128eec5ad2. This issue affects the function uploadFile of the file /server/utils/upload.js of the compone",
-        "published": "2026-03-28T15:16:38.330"
+        "base_score": 8.4,
+        "description": "OpenClaw before 2026.2.17 creates session transcript JSONL files with overly broad default permissions, allowing local users to read transcript contents. Attackers with local access can read transcrip",
+        "published": "2026-03-29T13:17:02.770"
       }
     ]
   },
