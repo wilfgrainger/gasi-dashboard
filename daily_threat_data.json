@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-30T01:28:20.447865+00:00",
+  "generated_at": "2026-03-30T05:55:05.368186+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
+        "value": 6,
         "score": 2.5,
         "max": 3
       },
@@ -239,8 +239,8 @@
   },
   "nvd": {
     "total": 47,
-    "critical_count": 5,
-    "high_count": 28,
+    "critical_count": 6,
+    "high_count": 27,
     "cves": [
       {
         "cve_id": "CVE-2026-32922",
@@ -278,18 +278,11 @@
         "published": "2026-03-29T13:17:02.563"
       },
       {
-        "cve_id": "CVE-2026-5021",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw has been found in Tenda F453 1.0.0.3. This affects the function fromPPTPUserSetting of the file /goform/PPTPUserSetting of the component httpd. This manipulation of the argument delno causes st",
-        "published": "2026-03-29T02:16:17.377"
-      },
-      {
-        "cve_id": "CVE-2026-5024",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was found in D-Link DIR-513 1.10. This issue affects the function formSetEmail of the file /goform/formSetEmail. Performing a manipulation of the argument curTime results in stack-base",
-        "published": "2026-03-29T04:16:00.537"
+        "cve_id": "CVE-2025-15036",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "A path traversal vulnerability exists in the `extract_archive_to_dir` function within the `mlflow/pyfunc/dbconnect_artifact_cache.py` file of the mlflow/mlflow repository. This vulnerability, present ",
+        "published": "2026-03-30T02:16:14.413"
       },
       {
         "cve_id": "CVE-2026-5036",
@@ -381,6 +374,13 @@
         "base_score": 8.4,
         "description": "OpenClaw before 2026.3.11 contains a session sandbox escape vulnerability in the session_status tool that allows sandboxed subagents to access parent or sibling session state. Attackers can supply arb",
         "published": "2026-03-29T13:17:00.173"
+      },
+      {
+        "cve_id": "CVE-2026-33572",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "OpenClaw before 2026.2.17 creates session transcript JSONL files with overly broad default permissions, allowing local users to read transcript contents. Attackers with local access can read transcrip",
+        "published": "2026-03-29T13:17:02.770"
       }
     ]
   },
