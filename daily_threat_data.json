@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-03-30T16:47:03.797941+00:00",
+  "generated_at": "2026-03-30T20:35:54.159510+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 25,
+        "value": 26,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 7,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1554,
-    "recent_30d_count": 25,
+    "total_catalog_count": 1555,
+    "recent_30d_count": 26,
     "recent": [
+      {
+        "cve_id": "CVE-2026-3055",
+        "vendor": "Citrix",
+        "product": "NetScaler",
+        "name": "Citrix NetScaler Out-of-Bounds Read Vulnerability",
+        "date_added": "2026-03-30",
+        "due_date": "2026-04-02",
+        "description": "Citrix NetScaler ADC (formerly Citrix ADC), NetScaler Gateway (formerly Citrix Gateway) and NetScaler ADC FIPS and NDcPP contain an out-of-bounds reads vulnerability when configured as a SAML IDP lead",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2025-53521",
         "vendor": "F5",
@@ -224,23 +234,13 @@
         "due_date": "2026-03-26",
         "description": "Multiple Hikvision products contain an improper authentication vulnerability that could allow a malicious user to escalate privileges on the system and gain access to sensitive information.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2021-22681",
-        "vendor": "Rockwell",
-        "product": "Multiple Products",
-        "name": "Rockwell Multiple Products Insufficient Protected Credentials Vulnerability",
-        "date_added": "2026-03-05",
-        "due_date": "2026-03-26",
-        "description": "Multiple Rockwell products contain an insufficient protected credentials vulnerability. Studio 5000 Logix Designer software may allow a key to be discovered. This key is used to verify Logix controlle",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 75,
-    "critical_count": 4,
-    "high_count": 13,
+    "total": 112,
+    "critical_count": 7,
+    "high_count": 21,
     "cves": [
       {
         "cve_id": "CVE-2025-15379",
@@ -264,6 +264,13 @@
         "published": "2026-03-29T21:16:15.717"
       },
       {
+        "cve_id": "CVE-2026-33032",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Nginx UI is a web user interface for the Nginx web server. In versions 2.3.5 and prior, the nginx-ui MCP (Model Context Protocol) integration exposes two HTTP endpoints: /mcp and /mcp_message. While /",
+        "published": "2026-03-30T18:16:19.410"
+      },
+      {
         "cve_id": "CVE-2025-15036",
         "severity": "CRITICAL",
         "base_score": 9.6,
@@ -271,25 +278,32 @@
         "published": "2026-03-30T02:16:14.413"
       },
       {
-        "cve_id": "CVE-2026-34005",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "In Sofia on Xiongmai DVR/NVR (AHB7008T-MH-V2 and NBD7024H-P) 4.03.R11 devices, root OS command injection can occur via shell metacharacters in the HostName value via an authenticated DVRIP protocol (T",
-        "published": "2026-03-29T17:16:44.257"
+        "cve_id": "CVE-2026-30562",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "A Reflected Cross-Site Scripting (XSS) vulnerability exists in SourceCodester Sales and Inventory System 1.0. The vulnerability is located in the add_stock.php file via the \"msg\" parameter. The applic",
+        "published": "2026-03-30T16:16:05.840"
       },
       {
-        "cve_id": "CVE-2026-4946",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Ghidra versions prior to 12.0.3 improperly process annotation directives embedded in automatically extracted binary data, resulting in arbitrary command execution when an analyst interacts with the UI",
-        "published": "2026-03-29T20:16:12.723"
+        "cve_id": "CVE-2026-34714",
+        "severity": "CRITICAL",
+        "base_score": 9.2,
+        "description": "Vim before 9.2.0272 allows code execution that happens immediately upon opening a crafted file in the default configuration, because %{expr} injection occurs with tabpanel lacking P_MLE.",
+        "published": "2026-03-30T19:16:26.853"
       },
       {
-        "cve_id": "CVE-2026-0562",
+        "cve_id": "CVE-2026-33030",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "A critical security vulnerability in parisneo/lollms versions up to 2.2.0 allows any authenticated user to accept or reject friend requests belonging to other users. The `respond_request()` function i",
-        "published": "2026-03-29T18:16:14.460"
+        "base_score": 8.8,
+        "description": "Nginx UI is a web user interface for the Nginx web server. In versions 2.3.3 and prior, Nginx-UI contains an Insecure Direct Object Reference (IDOR) vulnerability that allows any authenticated user to",
+        "published": "2026-03-30T18:16:19.243"
+      },
+      {
+        "cve_id": "CVE-2026-29872",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "A cross-session information disclosure vulnerability exists in the awesome-llm-apps project in commit e46690f99c3f08be80a9877fab52acacf7ab8251 (2026-01-19). The affected Streamlit-based GitHub MCP Age",
+        "published": "2026-03-30T18:16:18.523"
       },
       {
         "cve_id": "CVE-2026-2370",
@@ -313,18 +327,39 @@
         "published": "2026-03-30T08:16:18.360"
       },
       {
-        "cve_id": "CVE-2026-0558",
+        "cve_id": "CVE-2026-3502",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A vulnerability in parisneo/lollms, up to and including version 2.2.0, allows unauthenticated users to upload and process files through the `/api/files/extract-text` endpoint. This endpoint does not e",
-        "published": "2026-03-29T18:16:13.250"
+        "base_score": 7.8,
+        "description": "TrueConf Client downloads application update code and applies it without performing verification. An attacker who is able to influence the update delivery path can substitute a tampered update payload",
+        "published": "2026-03-30T19:16:27.053"
       },
       {
-        "cve_id": "CVE-2026-0560",
+        "cve_id": "CVE-2026-3991",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A Server-Side Request Forgery (SSRF) vulnerability exists in parisneo/lollms versions prior to 2.2.0, specifically in the `/api/files/export-content` endpoint. The `_download_image_to_temp()` function",
-        "published": "2026-03-29T18:16:14.303"
+        "base_score": 7.8,
+        "description": "Symantec Data Loss Prevention Windows Endpoint, prior to 25.1 MP1, 16.1 MP2, 16.0 RU2 HF9, 16.0 RU1 MP1 HF12, and 16.0 MP2 HF15, may be susceptible to a Elevation of Privilege vulnerability, which is ",
+        "published": "2026-03-30T19:16:27.207"
+      },
+      {
+        "cve_id": "CVE-2026-29925",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "Invoice Ninja v5.12.46 and v5.12.48 is vulnerable to Server-Side Request Forgery (SSRF) in CheckDatabaseRequest.php.",
+        "published": "2026-03-30T19:16:24.600"
+      },
+      {
+        "cve_id": "CVE-2026-29954",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "In KubePlus 4.1.4, the mutating webhook and kubeconfiggenerator components have an SSRF vulnerability when processing the chartURL field of ResourceComposition resources. The field is only URL-encoded",
+        "published": "2026-03-30T17:16:15.867"
+      },
+      {
+        "cve_id": "CVE-2026-29924",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "Grav CMS v1.7.x and before is vulnerable to XML External Entity (XXE) through the SVG file upload functionality in the admin panel and File Manager plugin.",
+        "published": "2026-03-30T19:16:24.470"
       },
       {
         "cve_id": "CVE-2026-3124",
@@ -346,41 +381,6 @@
         "base_score": 7.5,
         "description": "An integer overflow vulnerability in the HTTP chunked transfer encoding parser in tinyproxy up to and including version 1.11.3 allows an unauthenticated remote attacker to cause a denial of service (D",
         "published": "2026-03-30T08:16:17.653"
-      },
-      {
-        "cve_id": "CVE-2019-25654",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Core FTP/SFTP Server 1.2 contains a buffer overflow vulnerability that allows attackers to crash the service by supplying an excessively long string in the User domain field. Attackers can paste a mal",
-        "published": "2026-03-30T12:16:18.150"
-      },
-      {
-        "cve_id": "CVE-2026-34472",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Unauthenticated credential disclosure in the wizard interface in ZTE ZXHN H188A V6.0.10P2_TE and V6.0.10P3N3_TE allows unauthenticated attackers on the local network to retrieve sensitive credentials ",
-        "published": "2026-03-30T16:16:07.703"
-      },
-      {
-        "cve_id": "CVE-2026-5164",
-        "severity": "MEDIUM",
-        "base_score": 6.7,
-        "description": "A flaw was found in virtio-win. The `RhelDoUnMap()` function does not properly validate the number of descriptors provided by a user during an unmap request. A local user could exploit this input vali",
-        "published": "2026-03-30T15:16:36.180"
-      },
-      {
-        "cve_id": "CVE-2026-5165",
-        "severity": "MEDIUM",
-        "base_score": 6.7,
-        "description": "A flaw was found in virtio-win, specifically within the VirtIO Block (BLK) device. When the device undergoes a reset, it fails to properly manage memory, resulting in a use-after-free vulnerability. T",
-        "published": "2026-03-30T15:16:36.520"
-      },
-      {
-        "cve_id": "CVE-2026-5101",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A vulnerability was identified in Totolink A3300R 17.0.0cu.557_b20221024. This affects the function setLanCfg of the file /cgi-bin/cstecgi.cgi of the component Parameter Handler. The manipulation of t",
-        "published": "2026-03-29T23:16:48.597"
       }
     ]
   },
