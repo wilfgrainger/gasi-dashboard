@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-31T12:55:35.645947+00:00",
+  "generated_at": "2026-03-31T16:49:13.838829+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
-        "score": 2.5,
+        "value": 10,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 197,
-    "critical_count": 6,
-    "high_count": 22,
+    "total": 223,
+    "critical_count": 10,
+    "high_count": 33,
     "cves": [
       {
         "cve_id": "CVE-2026-33032",
@@ -257,11 +257,25 @@
         "published": "2026-03-30T21:17:09.440"
       },
       {
-        "cve_id": "CVE-2026-30562",
+        "cve_id": "CVE-2026-4257",
         "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "A Reflected Cross-Site Scripting (XSS) vulnerability exists in SourceCodester Sales and Inventory System 1.0. The vulnerability is located in the add_stock.php file via the \"msg\" parameter. The applic",
-        "published": "2026-03-30T16:16:05.840"
+        "base_score": 9.8,
+        "description": "The Contact Form by Supsystic plugin for WordPress is vulnerable to Server-Side Template Injection (SSTI) leading to Remote Code Execution (RCE) in all versions up to, and including, 1.7.36. This is d",
+        "published": "2026-03-30T22:16:20.313"
+      },
+      {
+        "cve_id": "CVE-2026-3300",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Everest Forms Pro plugin for WordPress is vulnerable to Remote Code Execution via PHP Code Injection in all versions up to, and including, 1.9.12. This is due to the Calculation Addon's process_fi",
+        "published": "2026-03-31T02:15:59.267"
+      },
+      {
+        "cve_id": "CVE-2026-32714",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "SciTokens is a reference library for generating and using SciTokens. Prior to version 1.9.6, the KeyCache class in scitokens was vulnerable to SQL Injection because it used Python's str.format() to co",
+        "published": "2026-03-31T03:15:55.970"
       },
       {
         "cve_id": "CVE-2026-34714",
@@ -285,6 +299,20 @@
         "published": "2026-03-30T21:17:10.493"
       },
       {
+        "cve_id": "CVE-2026-21861",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "baserCMS is a website development framework. Prior to version 5.2.3, baserCMS contains an OS command injection vulnerability in the core update functionality. An authenticated administrator can execut",
+        "published": "2026-03-31T01:16:35.540"
+      },
+      {
+        "cve_id": "CVE-2026-30877",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "baserCMS is a website development framework. Prior to version 5.2.3, there is an OS command injection vulnerability in the update functionality. Due to this issue, an authenticated user with administr",
+        "published": "2026-03-31T01:16:35.830"
+      },
+      {
         "cve_id": "CVE-2026-33030",
         "severity": "HIGH",
         "base_score": 8.8,
@@ -306,81 +334,53 @@
         "published": "2026-03-30T21:17:11.057"
       },
       {
+        "cve_id": "CVE-2026-5130",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Debugger & Troubleshooter plugin for WordPress was vulnerable to Unauthenticated Privilege Escalation in versions up to and including 1.3.2. This was due to the plugin accepting the wp_debug_troub",
+        "published": "2026-03-30T23:17:04.177"
+      },
+      {
+        "cve_id": "CVE-2026-5154",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability has been found in Tenda CH22 1.0.0.1/1.If. The impacted element is the function fromSetCfm of the file /goform/setcfm of the component Parameter Handler. The manipulation of the argume",
+        "published": "2026-03-30T23:17:04.830"
+      },
+      {
+        "cve_id": "CVE-2026-5155",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was found in Tenda CH22 1.0.0.1. This affects the function fromAdvSetWan of the file /goform/AdvSetWan of the component Parameter Handler. The manipulation of the argument wanmode resu",
+        "published": "2026-03-30T23:17:05.123"
+      },
+      {
+        "cve_id": "CVE-2026-5156",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was determined in Tenda CH22 1.0.0.1. This impacts the function formQuickIndex of the file /goform/QuickIndex of the component Parameter Handler. This manipulation of the argument mit_",
+        "published": "2026-03-31T00:16:15.303"
+      },
+      {
+        "cve_id": "CVE-2026-34040",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Moby is an open source container framework. Prior to version 29.3.1, a security vulnerability has been detected that allows attackers to bypass authorization plugins (AuthZ). This issue has been patch",
+        "published": "2026-03-31T03:15:57.883"
+      },
+      {
+        "cve_id": "CVE-2025-32957",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "baserCMS is a website development framework. Prior to version 5.2.3, the application's restore function allows users to upload a .zip file, which is then automatically extracted. A PHP file inside the",
+        "published": "2026-03-31T01:16:34.530"
+      },
+      {
         "cve_id": "CVE-2026-29872",
         "severity": "HIGH",
         "base_score": 8.2,
         "description": "A cross-session information disclosure vulnerability exists in the awesome-llm-apps project in commit e46690f99c3f08be80a9877fab52acacf7ab8251 (2026-01-19). The affected Streamlit-based GitHub MCP Age",
         "published": "2026-03-30T18:16:18.523"
-      },
-      {
-        "cve_id": "CVE-2026-32877",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Botan is a C++ cryptography library. From version 2.3.0 to before version 3.11.0, during SM2 decryption, the code that checked the authentication code value (C3) failed to check that the encoded value",
-        "published": "2026-03-30T21:17:09.767"
-      },
-      {
-        "cve_id": "CVE-2026-3502",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "TrueConf Client downloads application update code and applies it without performing verification. An attacker who is able to influence the update delivery path can substitute a tampered update payload",
-        "published": "2026-03-30T19:16:27.053"
-      },
-      {
-        "cve_id": "CVE-2026-3991",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Symantec Data Loss Prevention Windows Endpoint, prior to 25.1 MP1, 16.1 MP2, 16.0 RU2 HF9, 16.0 RU1 MP1 HF12, and 16.0 MP2 HF15, may be susceptible to a Elevation of Privilege vulnerability, which is ",
-        "published": "2026-03-30T19:16:27.207"
-      },
-      {
-        "cve_id": "CVE-2026-29925",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Invoice Ninja v5.12.46 and v5.12.48 is vulnerable to Server-Side Request Forgery (SSRF) in CheckDatabaseRequest.php.",
-        "published": "2026-03-30T19:16:24.600"
-      },
-      {
-        "cve_id": "CVE-2026-29954",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "In KubePlus 4.1.4, the mutating webhook and kubeconfiggenerator components have an SSRF vulnerability when processing the chartURL field of ResourceComposition resources. The field is only URL-encoded",
-        "published": "2026-03-30T17:16:15.867"
-      },
-      {
-        "cve_id": "CVE-2026-29924",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "Grav CMS v1.7.x and before is vulnerable to XML External Entity (XXE) through the SVG file upload functionality in the admin panel and File Manager plugin.",
-        "published": "2026-03-30T19:16:24.470"
-      },
-      {
-        "cve_id": "CVE-2026-30077",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "OpenAirInterface V2.2.0 AMF crashes when it fails to decode the message. Not all decode failures result in a crash. But the crash is consistent for particular inputs. An example input in hex stream is",
-        "published": "2026-03-30T18:16:18.660"
-      },
-      {
-        "cve_id": "CVE-2026-4046",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The iconv() function in the GNU C Library versions 2.43 and earlier may crash due to an assertion failure when converting inputs from the IBM1390 or IBM1399 character sets, which may be used to remote",
-        "published": "2026-03-30T18:16:19.573"
-      },
-      {
-        "cve_id": "CVE-2026-21710",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A flaw in Node.js HTTP request handling causes an uncaught `TypeError` when a request is received with a header named `__proto__` and the application accesses `req.headersDistinct`.\r\n\r\nWhen this occur",
-        "published": "2026-03-30T20:16:18.210"
-      },
-      {
-        "cve_id": "CVE-2026-33984",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to version 3.24.2, in resize_vbar_entry() in libfreerdp/codec/clear.c, vBarEntry->size is updated to vBarEntry->count before the ",
-        "published": "2026-03-30T22:16:19.567"
       }
     ]
   },
