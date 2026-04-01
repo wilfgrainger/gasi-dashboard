@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-01T01:46:00.272588+00:00",
+  "generated_at": "2026-04-01T05:50:59.590570+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
+        "value": 6,
         "score": 2.5,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 275,
-    "critical_count": 8,
-    "high_count": 29,
+    "total": 287,
+    "critical_count": 6,
+    "high_count": 23,
     "cves": [
       {
         "cve_id": "CVE-2026-34162",
@@ -255,20 +255,6 @@
         "base_score": 9.9,
         "description": "NocoBase is an AI-powered no-code/low-code platform for building business applications and enterprise solutions. Prior to version 2.0.28, NocoBase's Workflow Script Node executes user-supplied JavaScr",
         "published": "2026-03-31T14:16:12.170"
-      },
-      {
-        "cve_id": "CVE-2026-3300",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Everest Forms Pro plugin for WordPress is vulnerable to Remote Code Execution via PHP Code Injection in all versions up to, and including, 1.9.12. This is due to the Calculation Addon's process_fi",
-        "published": "2026-03-31T02:15:59.267"
-      },
-      {
-        "cve_id": "CVE-2026-32714",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "SciTokens is a reference library for generating and using SciTokens. Prior to version 1.9.6, the KeyCache class in scitokens was vulnerable to SQL Injection because it used Python's str.format() to co",
-        "published": "2026-03-31T03:15:55.970"
       },
       {
         "cve_id": "CVE-2026-32917",
@@ -299,13 +285,6 @@
         "published": "2026-03-31T11:16:11.950"
       },
       {
-        "cve_id": "CVE-2026-34040",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Moby is an open source container framework. Prior to version 29.3.1, a security vulnerability has been detected that allows attackers to bypass authorization plugins (AuthZ). This issue has been patch",
-        "published": "2026-03-31T03:15:57.883"
-      },
-      {
         "cve_id": "CVE-2025-10551",
         "severity": "HIGH",
         "base_score": 8.7,
@@ -327,25 +306,11 @@
         "published": "2026-03-31T12:16:28.727"
       },
       {
-        "cve_id": "CVE-2026-34042",
+        "cve_id": "CVE-2026-34504",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "act is a project which allows for local running of github actions. Prior to version 0.2.86, act's built in actions/cache server listens to connections on all interfaces and allows anyone who can conne",
-        "published": "2026-03-31T03:15:58.220"
-      },
-      {
-        "cve_id": "CVE-2026-32716",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "SciTokens is a reference library for generating and using SciTokens. Prior to version 1.9.6, the Enforcer incorrectly validates scope paths by using a simple prefix match (startswith). This allows a t",
-        "published": "2026-03-31T03:15:57.143"
-      },
-      {
-        "cve_id": "CVE-2026-32727",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "SciTokens is a reference library for generating and using SciTokens. Prior to version 1.9.7, the Enforcer is vulnerable to a path traversal attack where an attacker can use dot-dot (..) in the scope c",
-        "published": "2026-03-31T03:15:57.340"
+        "base_score": 8.3,
+        "description": "OpenClaw before 2026.3.28 contains a server-side request forgery vulnerability in the fal provider image-generation-provider.ts component that allows attackers to fetch internal URLs. A malicious or c",
+        "published": "2026-03-31T15:16:19.687"
       },
       {
         "cve_id": "CVE-2024-14030",
@@ -376,11 +341,46 @@
         "published": "2026-03-31T15:16:14.960"
       },
       {
-        "cve_id": "CVE-2026-34054",
+        "cve_id": "CVE-2026-34503",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "OpenClaw before 2026.3.28 fails to disconnect active WebSocket sessions when devices are removed or tokens are revoked. Attackers with revoked credentials can maintain unauthorized access through exis",
+        "published": "2026-03-31T15:16:19.470"
+      },
+      {
+        "cve_id": "CVE-2026-30309",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "vcpkg is a free and open-source C/C++ package manager. Prior to version 3.6.1#3, vcpkg's Windows builds of OpenSSL set openssldir to a path on the build machine, making that path be attackable later o",
-        "published": "2026-03-31T03:15:58.593"
+        "description": "InfCode's terminal auto-execution module contains a critical command filtering vulnerability that renders its blacklist security mechanism completely ineffective. The predefined blocklist fails to cov",
+        "published": "2026-03-31T15:16:12.863"
+      },
+      {
+        "cve_id": "CVE-2026-34163",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "FastGPT is an AI Agent building platform. Prior to version 4.14.9.5, FastGPT's MCP (Model Context Protocol) tools endpoints (/api/core/app/mcpTools/getTools and /api/core/app/mcpTools/runTool) accept ",
+        "published": "2026-03-31T15:16:17.170"
+      },
+      {
+        "cve_id": "CVE-2026-34214",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "Trino is a distributed SQL query engine for big data analytics. From version 439 to before version 480, Iceberg connector REST catalog static credentials (access key) or vended credentials (temporary ",
+        "published": "2026-03-31T15:16:18.400"
+      },
+      {
+        "cve_id": "CVE-2026-29870",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "A directory traversal vulnerability in the agentic-context-engine project versions up to 0.7.1 allows arbitrary file writes via the checkpoint_dir parameter in OfflineACE.run. The save_to_file method ",
+        "published": "2026-03-31T15:16:12.733"
+      },
+      {
+        "cve_id": "CVE-2026-5201",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A flaw was found in the gdk-pixbuf library. This heap-based buffer overflow vulnerability occurs in the JPEG image loader due to improper validation of color component counts when processing a special",
+        "published": "2026-03-31T09:16:23.440"
       }
     ]
   },
