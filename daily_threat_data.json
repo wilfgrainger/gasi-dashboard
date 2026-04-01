@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-04-01T16:44:23.172960+00:00",
+  "generated_at": "2026-04-01T20:35:48.389705+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 26,
+        "value": 27,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
-        "score": 2.5,
+        "value": 4,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1555,
-    "recent_30d_count": 26,
+    "total_catalog_count": 1556,
+    "recent_30d_count": 27,
     "recent": [
+      {
+        "cve_id": "CVE-2026-5281",
+        "vendor": "Google",
+        "product": "Dawn",
+        "name": "Google Dawn Use-After-Free Vulnerability",
+        "date_added": "2026-04-01",
+        "due_date": "2026-04-15",
+        "description": "Google Dawn contains an use-after-free vulnerability that could allow a remote attacker who had compromised the renderer process to execute arbitrary code via a crafted HTML page. This vulnerability c",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-3055",
         "vendor": "Citrix",
@@ -224,23 +234,13 @@
         "due_date": "2026-03-23",
         "description": "Ivanti Endpoint Manager (EPM) contains an authentication bypass using an alternate path or channel vulnerability that could allow a remote unauthenticated attacker to leak specific stored credential d",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2017-7921",
-        "vendor": "Hikvision",
-        "product": "Multiple Products",
-        "name": "Hikvision Multiple Products Improper Authentication Vulnerability",
-        "date_added": "2026-03-05",
-        "due_date": "2026-03-26",
-        "description": "Multiple Hikvision products contain an improper authentication vulnerability that could allow a malicious user to escalate privileges on the system and gain access to sensitive information.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 244,
-    "critical_count": 5,
-    "high_count": 20,
+    "total": 248,
+    "critical_count": 4,
+    "high_count": 21,
     "cves": [
       {
         "cve_id": "CVE-2026-1579",
@@ -250,6 +250,13 @@
         "published": "2026-03-31T21:16:27.897"
       },
       {
+        "cve_id": "CVE-2025-71279",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "XenForo before 2.3.7 contains a security issue affecting Passkeys that have been added to user accounts. An attacker may be able to compromise the security of Passkey-based authentication.",
+        "published": "2026-04-01T01:16:40.200"
+      },
+      {
         "cve_id": "CVE-2026-34449",
         "severity": "CRITICAL",
         "base_score": 9.6,
@@ -257,39 +264,11 @@
         "published": "2026-03-31T22:16:19.830"
       },
       {
-        "cve_id": "CVE-2026-34361",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "HAPI FHIR is a complete implementation of the HL7 FHIR standard for healthcare interoperability in Java. Prior to version 6.9.4, the FHIR Validator HTTP service exposes an unauthenticated \"/loadIG\" en",
-        "published": "2026-03-31T17:16:32.923"
-      },
-      {
-        "cve_id": "CVE-2026-30282",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "An arbitrary file overwrite vulnerability in UXGROUP LLC Cast to TV Screen Mirroring v2.2.77 allows attackers to overwrite critical internal files via the file import process, leading to arbtrary code",
-        "published": "2026-03-31T18:16:47.123"
-      },
-      {
         "cve_id": "CVE-2026-34448",
         "severity": "CRITICAL",
         "base_score": 9.0,
         "description": "SiYuan is a personal knowledge management system. Prior to version 3.6.2, an attacker who can place a malicious URL in an Attribute View mAsse field can trigger stored XSS when a victim opens the Gall",
         "published": "2026-03-31T22:16:19.657"
-      },
-      {
-        "cve_id": "CVE-2026-24164",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "NVIDIA BioNeMo contains a vulnerability where a user could cause a deserialization of untrusted data. A successful exploit of this vulnerability might lead to code execution, denial of service, inform",
-        "published": "2026-03-31T17:16:30.937"
-      },
-      {
-        "cve_id": "CVE-2026-5211",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw has been found in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-320L, DNS-320LW, DNS-321, DNR-322L, DNS-323, DNS-325, DNS-326, DNS-327L, DNR-326, DNS-340L, DNS-343, DNS-345, DNS-726-4, DNS-1",
-        "published": "2026-03-31T20:16:29.873"
       },
       {
         "cve_id": "CVE-2026-5212",
@@ -306,32 +285,32 @@
         "published": "2026-03-31T21:16:34.167"
       },
       {
-        "cve_id": "CVE-2026-24148",
+        "cve_id": "CVE-2026-5214",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "NVIDIA Jetson for JetPack contains a vulnerability in the system initialization logic, where an unprivileged attacker could cause the initialization of a resource with an insecure default. A successfu",
-        "published": "2026-03-31T17:16:29.180"
+        "base_score": 8.8,
+        "description": "A vulnerability was found in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-320L, DNS-320LW, DNS-321, DNR-322L, DNS-323, DNS-325, DNS-326, DNS-327L, DNR-326, DNS-340L, DNS-343, DNS-345, DNS-726-4, D",
+        "published": "2026-03-31T22:16:22.417"
       },
       {
-        "cve_id": "CVE-2026-32725",
+        "cve_id": "CVE-2025-71278",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "SciTokens C++ is a minimal library for creating and using SciTokens from C or C++. Prior to version 1.4.1, scitokens-cpp is vulnerable to an authorization bypass when processing path-based scopes in t",
-        "published": "2026-03-31T18:16:50.837"
+        "base_score": 8.8,
+        "description": "XenForo before 2.3.5 allows OAuth2 client applications to request unauthorized scopes. This affects any customer using OAuth2 clients on any version of XenForo 2.3 prior to 2.3.5, potentially allowing",
+        "published": "2026-04-01T01:16:40.000"
       },
       {
-        "cve_id": "CVE-2026-32726",
+        "cve_id": "CVE-2025-71281",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "SciTokens C++ is a minimal library for creating and using SciTokens from C or C++. Prior to version 1.4.1, scitokens-cpp is vulnerable to an authorization bypass in path-based scope validation. The en",
-        "published": "2026-03-31T18:16:50.997"
+        "base_score": 8.8,
+        "description": "XenForo before 2.3.7 does not properly restrict methods callable from within templates. A loose prefix match was used instead of a stricter first-word match for methods accessible through callbacks an",
+        "published": "2026-04-01T01:16:40.590"
       },
       {
-        "cve_id": "CVE-2026-4800",
+        "cve_id": "CVE-2026-34585",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Impact:\n\nThe fix for CVE-2021-23337 (https://github.com/advisories/GHSA-35jh-r3h4-6jhm) added validation for the variable option in _.template but did not apply the same validation to options.imports ",
-        "published": "2026-03-31T20:16:29.660"
+        "base_score": 8.6,
+        "description": "SiYuan is a personal knowledge management system. Prior to version 3.6.2, a vulnerability allows crafted block attribute values to bypass server-side attribute escaping when an HTML entity is mixed wi",
+        "published": "2026-03-31T22:16:22.080"
       },
       {
         "cve_id": "CVE-2026-34394",
@@ -341,25 +320,18 @@
         "published": "2026-03-31T21:16:30.660"
       },
       {
-        "cve_id": "CVE-2026-24165",
+        "cve_id": "CVE-2026-3775",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "NVIDIA BioNeMo contains a vulnerability where a user could cause a deserialization of untrusted data. A successful exploit of this vulnerability might lead to code execution, denial of service, inform",
-        "published": "2026-03-31T17:16:31.727"
+        "description": "The application's update service, when checking for updates, loads certain system libraries from a search path that includes directories writable by low\u2011privileged users and is not strictly restricted",
+        "published": "2026-04-01T02:16:02.440"
       },
       {
-        "cve_id": "CVE-2026-24154",
+        "cve_id": "CVE-2026-3779",
         "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "NVIDIA Jetson Linux has vulnerability in initrd, where an unprivileged attacker with physical access coul inject incorrect command line arguments. A successful exploit of this vulnerability might lead",
-        "published": "2026-03-31T17:16:30.680"
-      },
-      {
-        "cve_id": "CVE-2026-34365",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "InvoiceShelf is an open-source web & mobile app that helps track expenses, payments and create professional invoices and estimates. Prior to version 2.2.0, a Server-Side Request Forgery (SSRF) vulnera",
-        "published": "2026-03-31T20:16:29.307"
+        "base_score": 7.8,
+        "description": "The application's list box calculate array logic keeps stale references to page or form objects after they are deleted or re-created, which allows crafted documents to trigger a use-after-free when th",
+        "published": "2026-04-01T02:16:03.043"
       },
       {
         "cve_id": "CVE-2026-34366",
@@ -376,11 +348,39 @@
         "published": "2026-03-31T21:16:29.687"
       },
       {
-        "cve_id": "CVE-2026-5190",
+        "cve_id": "CVE-2025-13855",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "IBM Storage Protect Server 8.2.0 IBM Storage Protect Plus Server is vulnerable to SQL injection. A remote attacker could send specially crafted SQL statements, which could allow the attacker to view, ",
+        "published": "2026-04-01T01:16:39.360"
+      },
+      {
+        "cve_id": "CVE-2026-34381",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Out-of-bounds write in the streaming decoder component in aws-c-event-stream before 0.6.0 might allow a third party operating a server to cause memory corruption leading to arbitrary code execution on",
-        "published": "2026-03-31T18:16:59.080"
+        "description": "Admidio is an open-source user management solution. From version 5.0.0 to before version 5.0.8, Admidio relies on adm_my_files/.htaccess to deny direct HTTP access to uploaded documents. The Docker im",
+        "published": "2026-03-31T21:16:30.013"
+      },
+      {
+        "cve_id": "CVE-2026-34731",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "WWBN AVideo is an open source video platform. In versions 26.0 and prior, the AVideo on_publish_done.php endpoint in the Live plugin allows unauthenticated users to terminate any active live stream. T",
+        "published": "2026-03-31T21:16:31.760"
+      },
+      {
+        "cve_id": "CVE-2026-34453",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "SiYuan is a personal knowledge management system. Prior to version 3.6.2, the publish service exposes bookmarked blocks from password-protected documents to unauthenticated visitors. In publish/read-o",
+        "published": "2026-03-31T22:16:20.483"
+      },
+      {
+        "cve_id": "CVE-2025-71282",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "XenForo before 2.3.7 discloses filesystem paths through exception messages triggered by open_basedir restrictions. This allows an attacker to obtain information about the server's directory structure.",
+        "published": "2026-04-01T01:16:40.797"
       }
     ]
   },
