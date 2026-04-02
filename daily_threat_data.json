@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-04-01T20:35:48.389705+00:00",
+  "generated_at": "2026-04-02T01:22:16.640980+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 27,
+        "value": 25,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 7,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1556,
-    "recent_30d_count": 27,
+    "recent_30d_count": 25,
     "recent": [
       {
         "cve_id": "CVE-2026-5281",
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 248,
-    "critical_count": 4,
-    "high_count": 21,
+    "total": 228,
+    "critical_count": 7,
+    "high_count": 36,
     "cves": [
       {
-        "cve_id": "CVE-2026-1579",
+        "cve_id": "CVE-2026-4370",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The MAVLink communication protocol does not require cryptographic \nauthentication by default. When MAVLink 2.0 message signing is not \nenabled, any message -- including SERIAL_CONTROL, which provides ",
-        "published": "2026-03-31T21:16:27.897"
+        "base_score": 10.0,
+        "description": "A vulnerability was identified in Juju from version 3.2.0 until 3.6.19 and from version 4.0 until 4.0.4, where the internal Dqlite database cluster fails to perform proper TLS client and server authen",
+        "published": "2026-04-01T09:16:17.717"
       },
       {
-        "cve_id": "CVE-2025-71279",
+        "cve_id": "CVE-2026-29014",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "XenForo before 2.3.7 contains a security issue affecting Passkeys that have been added to user accounts. An attacker may be able to compromise the security of Passkey-based authentication.",
-        "published": "2026-04-01T01:16:40.200"
+        "description": "MetInfo CMS versions 7.9, 8.0, and 8.1 contain an unauthenticated PHP code injection vulnerability that allows remote attackers to execute arbitrary code by sending crafted requests with malicious PHP",
+        "published": "2026-04-01T13:16:35.063"
       },
       {
-        "cve_id": "CVE-2026-34449",
+        "cve_id": "CVE-2026-31027",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "TOTOlink A3600R v5.9c.4959 contains a buffer overflow vulnerability in the setAppEasyWizardConfig interface of /lib/cste_modules/app.so. The vulnerability occurs because the rootSsid parameter is not ",
+        "published": "2026-04-01T16:23:49.787"
+      },
+      {
+        "cve_id": "CVE-2026-5288",
         "severity": "CRITICAL",
         "base_score": 9.6,
-        "description": "SiYuan is a personal knowledge management system. Prior to version 3.6.2, a malicious website can achieve Remote Code Execution (RCE) on any desktop running SiYuan by exploiting the permissive CORS po",
-        "published": "2026-03-31T22:16:19.830"
+        "description": "Use after free in WebView in Google Chrome on Android prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted H",
+        "published": "2026-04-01T05:16:02.343"
       },
       {
-        "cve_id": "CVE-2026-34448",
+        "cve_id": "CVE-2026-5289",
         "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "SiYuan is a personal knowledge management system. Prior to version 3.6.2, an attacker who can place a malicious URL in an Attribute View mAsse field can trigger stored XSS when a victim opens the Gall",
-        "published": "2026-03-31T22:16:19.657"
+        "base_score": 9.6,
+        "description": "Use after free in Navigation in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page",
+        "published": "2026-04-01T05:16:02.480"
       },
       {
-        "cve_id": "CVE-2026-5212",
+        "cve_id": "CVE-2026-5290",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Use after free in Compositing in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML pag",
+        "published": "2026-04-01T05:16:02.607"
+      },
+      {
+        "cve_id": "CVE-2025-15484",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The Order Notification for WooCommerce  WordPress plugin before 3.6.3 overrides WooCommerce's permission checks to grant full access to all unauthenticated requests, enabling complete read/write acces",
+        "published": "2026-04-01T06:16:14.133"
+      },
+      {
+        "cve_id": "CVE-2026-5272",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A vulnerability has been found in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-320L, DNS-320LW, DNS-321, DNR-322L, DNS-323, DNS-325, DNS-326, DNS-327L, DNR-326, DNS-340L, DNS-343, DNS-345, DNS-726",
-        "published": "2026-03-31T21:16:33.890"
+        "description": "Heap buffer overflow in GPU in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-04-01T05:16:00.287"
       },
       {
-        "cve_id": "CVE-2026-5213",
+        "cve_id": "CVE-2026-5274",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A vulnerability was determined in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-320L, DNS-320LW, DNS-321, DNR-322L, DNS-323, DNS-325, DNS-326, DNS-327L, DNR-326, DNS-340L, DNS-343, DNS-345, DNS-726",
-        "published": "2026-03-31T21:16:34.167"
+        "description": "Integer overflow in Codecs in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to perform arbitrary read/write via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-04-01T05:16:00.560"
       },
       {
-        "cve_id": "CVE-2026-5214",
+        "cve_id": "CVE-2026-5275",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A vulnerability was found in D-Link DNS-120, DNR-202L, DNS-315L, DNS-320, DNS-320L, DNS-320LW, DNS-321, DNR-322L, DNS-323, DNS-325, DNS-326, DNS-327L, DNR-326, DNS-340L, DNS-343, DNS-345, DNS-726-4, D",
-        "published": "2026-03-31T22:16:22.417"
+        "description": "Heap buffer overflow in ANGLE in Google Chrome on Mac prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-04-01T05:16:00.693"
       },
       {
-        "cve_id": "CVE-2025-71278",
+        "cve_id": "CVE-2026-5278",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "XenForo before 2.3.5 allows OAuth2 client applications to request unauthorized scopes. This affects any customer using OAuth2 clients on any version of XenForo 2.3 prior to 2.3.5, potentially allowing",
-        "published": "2026-04-01T01:16:40.000"
+        "description": "Use after free in Web MIDI in Google Chrome on Android prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-04-01T05:16:01.070"
       },
       {
-        "cve_id": "CVE-2025-71281",
+        "cve_id": "CVE-2026-5279",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "XenForo before 2.3.7 does not properly restrict methods callable from within templates. A loose prefix match was used instead of a stricter first-word match for methods accessible through callbacks an",
-        "published": "2026-04-01T01:16:40.590"
+        "description": "Object corruption in V8 in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-04-01T05:16:01.200"
       },
       {
-        "cve_id": "CVE-2026-34585",
+        "cve_id": "CVE-2026-5280",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "SiYuan is a personal knowledge management system. Prior to version 3.6.2, a vulnerability allows crafted block attribute values to bypass server-side attribute escaping when an HTML entity is mixed wi",
-        "published": "2026-03-31T22:16:22.080"
+        "base_score": 8.8,
+        "description": "Use after free in WebCodecs in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-04-01T05:16:01.310"
       },
       {
-        "cve_id": "CVE-2026-34394",
+        "cve_id": "CVE-2026-5281",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "WWBN AVideo is an open source video platform. In versions 26.0 and prior, AVideo's admin plugin configuration endpoint (admin/save.json.php) lacks any CSRF token validation. There is no call to isGlob",
-        "published": "2026-03-31T21:16:30.660"
+        "base_score": 8.8,
+        "description": "Use after free in Dawn in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to execute arbitrary code via a crafted HTML page. (Chromium security",
+        "published": "2026-04-01T05:16:01.440"
       },
       {
-        "cve_id": "CVE-2026-3775",
+        "cve_id": "CVE-2026-5285",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "The application's update service, when checking for updates, loads certain system libraries from a search path that includes directories writable by low\u2011privileged users and is not strictly restricted",
-        "published": "2026-04-01T02:16:02.440"
+        "base_score": 8.8,
+        "description": "Use after free in WebGL in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-04-01T05:16:01.953"
       },
       {
-        "cve_id": "CVE-2026-3779",
+        "cve_id": "CVE-2026-5286",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "The application's list box calculate array logic keeps stale references to page or form objects after they are deleted or re-created, which allows crafted documents to trigger a use-after-free when th",
-        "published": "2026-04-01T02:16:03.043"
+        "base_score": 8.8,
+        "description": "Use after free in Dawn in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-04-01T05:16:02.080"
       },
       {
-        "cve_id": "CVE-2026-34366",
+        "cve_id": "CVE-2026-5287",
         "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "InvoiceShelf is an open-source web & mobile app that helps track expenses, payments and create professional invoices and estimates. Prior to version 2.2.0, a Server-Side Request Forgery (SSRF) vulnera",
-        "published": "2026-03-31T21:16:29.537"
+        "base_score": 8.8,
+        "description": "Use after free in PDF in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted PDF file. (Chromium security severity: High)",
+        "published": "2026-04-01T05:16:02.213"
       },
       {
-        "cve_id": "CVE-2026-34367",
+        "cve_id": "CVE-2026-5292",
         "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "InvoiceShelf is an open-source web & mobile app that helps track expenses, payments and create professional invoices and estimates. Prior to version 2.2.0, a Server-Side Request Forgery (SSRF) vulnera",
-        "published": "2026-03-31T21:16:29.687"
+        "base_score": 8.8,
+        "description": "Out of bounds read in WebCodecs in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page. (Chromium security severity: Medium)",
+        "published": "2026-04-01T05:16:02.853"
       },
       {
-        "cve_id": "CVE-2025-13855",
+        "cve_id": "CVE-2026-34430",
         "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "IBM Storage Protect Server 8.2.0 IBM Storage Protect Plus Server is vulnerable to SQL injection. A remote attacker could send specially crafted SQL statements, which could allow the attacker to view, ",
-        "published": "2026-04-01T01:16:39.360"
+        "base_score": 8.8,
+        "description": "ByteDance Deer-Flow versions prior to commit 92c7a20 contain\u00a0a sandbox escape vulnerability in bash tool handling that allows attackers to execute arbitrary commands on the host system by bypassing re",
+        "published": "2026-04-01T14:16:52.773"
       },
       {
-        "cve_id": "CVE-2026-34381",
+        "cve_id": "CVE-2026-35093",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Admidio is an open-source user management solution. From version 5.0.0 to before version 5.0.8, Admidio relies on adm_my_files/.htaccess to deny direct HTTP access to uploaded documents. The Docker im",
-        "published": "2026-03-31T21:16:30.013"
-      },
-      {
-        "cve_id": "CVE-2026-34731",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "WWBN AVideo is an open source video platform. In versions 26.0 and prior, the AVideo on_publish_done.php endpoint in the Live plugin allows unauthenticated users to terminate any active live stream. T",
-        "published": "2026-03-31T21:16:31.760"
-      },
-      {
-        "cve_id": "CVE-2026-34453",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "SiYuan is a personal knowledge management system. Prior to version 3.6.2, the publish service exposes bookmarked blocks from password-protected documents to unauthenticated visitors. In publish/read-o",
-        "published": "2026-03-31T22:16:20.483"
-      },
-      {
-        "cve_id": "CVE-2025-71282",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "XenForo before 2.3.7 discloses filesystem paths through exception messages triggered by open_basedir restrictions. This allows an attacker to obtain information about the server's directory structure.",
-        "published": "2026-04-01T01:16:40.797"
+        "base_score": 8.8,
+        "description": "A flaw was found in libinput. A local attacker who can place a specially crafted Lua bytecode file in certain system or user configuration directories can bypass security restrictions. This allows the",
+        "published": "2026-04-01T14:16:57.443"
       }
     ]
   },
