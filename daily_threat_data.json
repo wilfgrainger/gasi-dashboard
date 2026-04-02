@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-02T16:46:49.532517+00:00",
+  "generated_at": "2026-04-02T20:26:30.610030+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 20,
+        "value": 12,
         "score": 3.0,
         "max": 3
       },
@@ -59,10 +59,10 @@
         "cve_id": "CVE-2025-53521",
         "vendor": "F5",
         "product": "BIG-IP",
-        "name": "F5 BIG-IP Unspecified Vulnerability",
+        "name": "F5 BIG-IP Stack-Based Buffer Overflow Vulnerability",
         "date_added": "2026-03-27",
         "due_date": "2026-03-30",
-        "description": "F5 BIG-IP APM contains an unspecified vulnerability that could allow a threat actor to achieve remote code execution.",
+        "description": "F5 BIG-IP APM contains a stack-based buffer overflow vulnerability that could allow a threat actor to achieve remote code execution.",
         "ransomware_use": "Unknown"
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 250,
-    "critical_count": 20,
-    "high_count": 24,
+    "total": 306,
+    "critical_count": 12,
+    "high_count": 22,
     "cves": [
       {
         "cve_id": "CVE-2026-34569",
@@ -257,74 +257,11 @@
         "published": "2026-04-01T22:16:21.030"
       },
       {
-        "cve_id": "CVE-2024-40489",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "There is an injection vulnerability in jeecg boot versions 3.0.0 to 3.5.3 due to lax character filtering, which allows attackers to execute arbitrary code on components through specially crafted HTTP ",
-        "published": "2026-04-01T17:16:57.070"
-      },
-      {
-        "cve_id": "CVE-2024-43028",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A command injection vulnerability in the component /jmreport/show of jeecg boot v3.0.0 to v3.5.3 allows attackers to execute arbitrary code via a crafted HTTP request.",
-        "published": "2026-04-01T17:16:57.220"
-      },
-      {
-        "cve_id": "CVE-2026-20093",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A vulnerability in the change password functionality of Cisco Integrated Management Controller (IMC) could allow an unauthenticated, remote attacker to bypass authentication and gain access to the sys",
-        "published": "2026-04-01T17:28:29.027"
-      },
-      {
-        "cve_id": "CVE-2026-20160",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A vulnerability in Cisco Smart Software Manager On-Prem (SSM On-Prem) could allow an unauthenticated, remote attacker to execute arbitrary commands on the underlying operating system of an affected SS",
-        "published": "2026-04-01T17:28:31.760"
-      },
-      {
-        "cve_id": "CVE-2026-30643",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An issue was discovered in DedeCMS 5.7.118 allowing attackers to execute code via crafted setup tag values in a module upload.",
-        "published": "2026-04-01T17:28:39.003"
-      },
-      {
-        "cve_id": "CVE-2026-34159",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "llama.cpp is an inference of several LLM models in C/C++. Prior to version b8492, the RPC backend's deserialize_tensor() skips all bounds validation when a tensor's buffer field is 0. An unauthenticat",
-        "published": "2026-04-01T18:16:29.687"
-      },
-      {
-        "cve_id": "CVE-2026-34875",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An issue was discovered in Mbed TLS through 3.6.5 and TF-PSA-Crypto 1.0.0. A buffer overflow can occur in public key export for FFDH keys.",
-        "published": "2026-04-01T18:16:31.433"
-      },
-      {
-        "cve_id": "CVE-2026-34751",
+        "cve_id": "CVE-2026-34873",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Payload is a free and open source headless content management system. Prior to version 3.79.1 in @payloadcms/graphql and payload, a vulnerability in the password recovery flow could allow an unauthent",
-        "published": "2026-04-01T18:16:31.277"
-      },
-      {
-        "cve_id": "CVE-2026-34456",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Reviactyl is an open-source game server management panel built using Laravel, React, FilamentPHP, Vite, and Go. From version 26.2.0-beta.1 to before version 26.2.0-beta.5, a vulnerability in the OAuth",
-        "published": "2026-04-01T20:16:26.120"
-      },
-      {
-        "cve_id": "CVE-2026-34872",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "An issue was discovered in Mbed TLS 3.5.x and 3.6.x through 3.6.5 and TF-PSA-Crypto 1.0. There is a lack of contributory behavior in FFDH due to improper input validation. Using finite-field Diffie-He",
-        "published": "2026-04-01T20:16:27.493"
+        "description": "An issue was discovered in Mbed TLS 3.5.0 through 4.0.0. Client impersonation can occur while resuming a TLS 1.3 session.",
+        "published": "2026-04-01T21:17:01.990"
       },
       {
         "cve_id": "CVE-2026-34559",
@@ -381,6 +318,69 @@
         "base_score": 9.1,
         "description": "CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, modular architecture with RBAC authorization and theme support. Prior to version 0.31.0.0, the application fails to proper",
         "published": "2026-04-01T22:16:20.570"
+      },
+      {
+        "cve_id": "CVE-2026-33615",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "An unauthenticated remote attacker can exploit an unauthenticated SQL Injection vulnerability in the setinfo endpoint due to improper neutralization of special elements in a SQL UPDATE command. This c",
+        "published": "2026-04-02T10:16:16.910"
+      },
+      {
+        "cve_id": "CVE-2026-34572",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, modular architecture with RBAC authorization and theme support. Prior to version 0.31.0.0, the application fails to immedi",
+        "published": "2026-04-01T22:16:21.180"
+      },
+      {
+        "cve_id": "CVE-2026-21765",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "HCL BigFix Platform is affected by insecure permissions on private cryptographic keys.\u00a0 The private cryptographic keys located on a Windows host machine might be subject to overly permissive file syst",
+        "published": "2026-04-02T00:16:23.953"
+      },
+      {
+        "cve_id": "CVE-2026-34528",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "File Browser is a file managing interface for uploading, deleting, previewing, renaming, and editing files within a specified directory. Prior to version 2.62.2, the signupHandler in File Browser appl",
+        "published": "2026-04-01T21:17:00.660"
+      },
+      {
+        "cve_id": "CVE-2026-4101",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "IBM Verify Identity Access Container 11.0 through 11.0.2 and IBM Security Verify Access Container 10.0 through 10.0.9.1 and IBM Verify Identity Access 11.0 through 11.0.2 and IBM Security Verify Acces",
+        "published": "2026-04-01T21:17:02.417"
+      },
+      {
+        "cve_id": "CVE-2026-4347",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The MW WP Form plugin for WordPress is vulnerable to arbitrary file moving due to insufficient file path validation via the 'generate_user_filepath' function and the 'move_temp_file_to_upload_dir' fun",
+        "published": "2026-04-02T06:16:23.297"
+      },
+      {
+        "cve_id": "CVE-2026-32925",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "V-SFT versions 6.2.10.0 and prior contain a stack-based buffer overflow in VS6ComFile!CV7BaseMap::WriteV7DataToRom. Opening a crafted V7 file may lead to arbitrary code execution on the affected produ",
+        "published": "2026-04-01T23:17:02.783"
+      },
+      {
+        "cve_id": "CVE-2026-32926",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "V-SFT versions 6.2.10.0 and prior contain an out-of-bounds read vulnerability in VS6ComFile!load_link_inf. Opening a crafted V7 file may lead to information disclosure from the affected product.",
+        "published": "2026-04-01T23:17:02.960"
+      },
+      {
+        "cve_id": "CVE-2026-32927",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "V-SFT versions 6.2.10.0 and prior contain an out-of-bounds read vulnerability in VS6MemInIF!set_temp_type_default. Opening a crafted V7 file may lead to information disclosure from the affected produc",
+        "published": "2026-04-01T23:17:03.110"
       }
     ]
   },
