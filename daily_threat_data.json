@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-04T05:17:52.223983+00:00",
+  "generated_at": "2026-04-04T08:30:38.050930+00:00",
   "threat_score": {
-    "score": 5.0,
+    "score": 5.5,
     "level": "ELEVATED",
     "level_color": "elevated",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 1.0,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -238,23 +238,30 @@
     ]
   },
   "nvd": {
-    "total": 213,
-    "critical_count": 0,
-    "high_count": 13,
+    "total": 214,
+    "critical_count": 1,
+    "high_count": 12,
     "cves": [
+      {
+        "cve_id": "CVE-2026-31818",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Budibase is an open-source low-code platform. Prior to version 3.33.4, a server-side request forgery (SSRF) vulnerability exists in Budibase's REST datasource connector. The platform's SSRF protection",
+        "published": "2026-04-03T16:16:39.800"
+      },
+      {
+        "cve_id": "CVE-2026-35214",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "Budibase is an open-source low-code platform. Prior to version 3.33.4, the plugin file upload endpoint (POST /api/plugin/upload) passes the user-supplied filename directly to createTempFolder() withou",
+        "published": "2026-04-03T16:16:41.607"
+      },
       {
         "cve_id": "CVE-2025-59711",
         "severity": "HIGH",
         "base_score": 8.3,
         "description": "An issue was discovered in Biztalk360 before 11.5. Because of mishandling of user-provided input in an upload mechanism, an authenticated attacker is able to write files outside of the destination dir",
         "published": "2026-04-03T15:16:04.637"
-      },
-      {
-        "cve_id": "CVE-2026-4350",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Perfmatters plugin for WordPress is vulnerable to arbitrary file deletion via path traversal in all versions up to, and including, 2.5.9.1. This is due to the `PMCS::action_handler()` method proce",
-        "published": "2026-04-03T08:16:17.547"
       },
       {
         "cve_id": "CVE-2026-25773",
@@ -269,13 +276,6 @@
         "base_score": 7.5,
         "description": "An issue in Dokuwiki v.2025-05-14b 'Librarian' allows a remote attacker to cause a denial of service via the media_upload_xhr() function in the media.php file",
         "published": "2026-04-03T15:16:05.093"
-      },
-      {
-        "cve_id": "CVE-2025-7024",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "Incorrect Default Permissions vulnerability in AIRBUS PSS TETRA Connectivity Server on Windows Server OS allows Privilege Abuse.\n\n\nAn attacker may execute arbitrary code with SYSTEM privileges if a us",
-        "published": "2026-04-03T08:16:17.290"
       },
       {
         "cve_id": "CVE-2026-28754",
@@ -376,11 +376,11 @@
         "published": "2026-04-03T14:16:33.837"
       },
       {
-        "cve_id": "CVE-2026-5455",
-        "severity": "LOW",
-        "base_score": 3.3,
-        "description": "A vulnerability was determined in Dialogue App up to 4.3.2 on Android. The affected element is an unknown function of the file file\u00a0res/raw/config.json of the component ca.diagram.dialogue. Executing ",
-        "published": "2026-04-03T07:16:20.210"
+        "cve_id": "CVE-2026-23418",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/xe/reg_sr: Fix leak on xa_store failure\n\nFree the newly allocated entry when xa_store() fails to avoid a memory\nleak on the err",
+        "published": "2026-04-03T14:16:27.713"
       }
     ]
   },
