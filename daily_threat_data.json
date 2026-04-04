@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-04T12:34:27.901010+00:00",
+  "generated_at": "2026-04-04T16:24:30.996336+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
-        "score": 2.0,
+        "value": 19,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,16 +238,79 @@
     ]
   },
   "nvd": {
-    "total": 216,
-    "critical_count": 3,
-    "high_count": 6,
+    "total": 147,
+    "critical_count": 19,
+    "high_count": 33,
     "cves": [
       {
-        "cve_id": "CVE-2026-31818",
+        "cve_id": "CVE-2026-34938",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Budibase is an open-source low-code platform. Prior to version 3.33.4, a server-side request forgery (SSRF) vulnerability exists in Budibase's REST datasource connector. The platform's SSRF protection",
-        "published": "2026-04-03T16:16:39.800"
+        "base_score": 10.0,
+        "description": "PraisonAI is a multi-agent teams system. Prior to version 1.5.90, execute_code() in praisonai-agents runs attacker-controlled Python inside a three-layer sandbox that can be fully bypassed by passing ",
+        "published": "2026-04-03T23:17:06.170"
+      },
+      {
+        "cve_id": "CVE-2026-34612",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Kestra is an open-source, event-driven orchestration platform. Prior to version 1.3.7, Kestra (default docker-compose deployment) contains a SQL Injection vulnerability that leads to Remote Code Execu",
+        "published": "2026-04-03T23:17:04.587"
+      },
+      {
+        "cve_id": "CVE-2017-20237",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Hirschmann Industrial HiVision versions prior to 06.0.07 and 07.0.03 contains an authentication bypass vulnerability in the master service that allows unauthenticated remote attackers to execute arbit",
+        "published": "2026-04-03T21:17:07.103"
+      },
+      {
+        "cve_id": "CVE-2018-25237",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Hirschmann HiSecOS devices versions prior to 05.3.03 contain a buffer overflow vulnerability in the HTTPS login interface when RADIUS authentication is enabled that allows remote attackers to crash th",
+        "published": "2026-04-03T22:16:24.740"
+      },
+      {
+        "cve_id": "CVE-2017-20234",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "GarrettCom Magnum 6K and 10K managed switches contain an authentication bypass vulnerability that allows unauthenticated attackers to gain unauthorized access by exploiting a hardcoded string in the a",
+        "published": "2026-04-03T23:17:00.087"
+      },
+      {
+        "cve_id": "CVE-2017-20236",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "ProSoft Technology ICX35-HWC versions 1.3 and prior cellular gateways contain an input validation vulnerability in the web user interface that allows remote attackers to inject and execute system comm",
+        "published": "2026-04-03T23:17:00.447"
+      },
+      {
+        "cve_id": "CVE-2018-25236",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Hirschmann HiOS and HiSecOS products RSP, RSPE, RSPS, RSPL, MSP, EES, EESX, GRS, OS, RED, EAGLE contain an authentication bypass vulnerability in the HTTP(S) management module that allows unauthentica",
+        "published": "2026-04-03T23:17:00.823"
+      },
+      {
+        "cve_id": "CVE-2026-34934",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "PraisonAI is a multi-agent teams system. Prior to version 4.5.90, the get_all_user_threads function constructs raw SQL queries using f-strings with unescaped thread IDs fetched from the database. An a",
+        "published": "2026-04-03T23:17:05.533"
+      },
+      {
+        "cve_id": "CVE-2026-34935",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "PraisonAI is a multi-agent teams system. From version 4.5.15 to before version 4.5.69, the --mcp CLI argument is passed directly to shlex.split() and forwarded through the call chain to anyio.open_pro",
+        "published": "2026-04-03T23:17:05.693"
+      },
+      {
+        "cve_id": "CVE-2026-35616",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A improper access control vulnerability in Fortinet FortiClientEMS 7.4.5 through 7.4.6 may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests.",
+        "published": "2026-04-04T01:16:39.720"
       },
       {
         "cve_id": "CVE-2026-28373",
@@ -257,130 +320,67 @@
         "published": "2026-04-03T17:16:42.140"
       },
       {
-        "cve_id": "CVE-2026-35216",
+        "cve_id": "CVE-2026-28766",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "A specific endpoint exposes all user account information for registered Gardyn users without requiring authentication.",
+        "published": "2026-04-03T21:17:10.387"
+      },
+      {
+        "cve_id": "CVE-2026-0545",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "In mlflow/mlflow, the FastAPI job endpoints under `/ajax-api/3.0/jobs/*` are not protected by authentication or authorization when the `basic-auth` app is enabled. This vulnerability affects the lates",
+        "published": "2026-04-03T18:16:21.540"
+      },
+      {
+        "cve_id": "CVE-2026-25197",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "A specific endpoint allows authenticated users to pivot to other user profiles by modifying the id number in the API call.",
+        "published": "2026-04-03T21:17:09.867"
+      },
+      {
+        "cve_id": "CVE-2017-20235",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "ProSoft Technology ICX35-HWC version 1.3 and prior cellular gateways contain an authentication bypass vulnerability in the web user interface that allows unauthenticated attackers to gain access to ad",
+        "published": "2026-04-03T23:17:00.267"
+      },
+      {
+        "cve_id": "CVE-2021-4477",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Hirschmann HiLCOS OpenBAT and BAT450 products contain a firewall bypass vulnerability in IPv6 IPsec deployments that allows traffic from VPN connections to bypass configured firewall rules. Attackers ",
+        "published": "2026-04-03T23:17:01.043"
+      },
+      {
+        "cve_id": "CVE-2026-34952",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "PraisonAI is a multi-agent teams system. Prior to version 4.5.97, the PraisonAI Gateway server accepts WebSocket connections at /ws and serves agent topology at /info with no authentication. Any netwo",
+        "published": "2026-04-03T23:17:06.490"
+      },
+      {
+        "cve_id": "CVE-2026-34953",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "PraisonAI is a multi-agent teams system. Prior to version 4.5.97, OAuthManager.validate_token() returns True for any token not found in its internal store, which is empty by default. Any HTTP request ",
+        "published": "2026-04-03T23:17:06.653"
+      },
+      {
+        "cve_id": "CVE-2026-28798",
         "severity": "CRITICAL",
         "base_score": 9.0,
-        "description": "Budibase is an open-source low-code platform. Prior to version 3.33.4, an unauthenticated attacker can achieve Remote Code Execution (RCE) on the Budibase server by triggering an automation that conta",
-        "published": "2026-04-03T16:16:41.800"
+        "description": "ZimaOS is a fork of CasaOS, an operating system for Zima devices and x86-64 systems with UEFI. Prior to version 1.5.3, a proxy endpoint (/v1/sys/proxy) exposed by ZimaOS's web interface can be abused ",
+        "published": "2026-04-03T20:16:02.433"
       },
       {
-        "cve_id": "CVE-2026-35214",
+        "cve_id": "CVE-2026-33175",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "Budibase is an open-source low-code platform. Prior to version 3.33.4, the plugin file upload endpoint (POST /api/plugin/upload) passes the user-supplied filename directly to createTempFolder() withou",
-        "published": "2026-04-03T16:16:41.607"
-      },
-      {
-        "cve_id": "CVE-2026-35218",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "Budibase is an open-source low-code platform. Prior to version 3.32.5, Budibase's Builder Command Palette renders entity names (tables, views, queries, automations) using Svelte's {@html} directive wi",
-        "published": "2026-04-03T16:16:41.977"
-      },
-      {
-        "cve_id": "CVE-2025-59711",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "An issue was discovered in Biztalk360 before 11.5. Because of mishandling of user-provided input in an upload mechanism, an authenticated attacker is able to write files outside of the destination dir",
-        "published": "2026-04-03T15:16:04.637"
-      },
-      {
-        "cve_id": "CVE-2026-25773",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "** UNSUPPORTED WHEN ASSIGNED ** Focalboard version 8.0 fails to sanitize category IDs before incorporating them into dynamic SQL statements when reordering categories. An attacker can inject a malicio",
-        "published": "2026-04-03T14:16:29.127"
-      },
-      {
-        "cve_id": "CVE-2026-26477",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "An issue in Dokuwiki v.2025-05-14b 'Librarian' allows a remote attacker to cause a denial of service via the media_upload_xhr() function in the media.php file",
-        "published": "2026-04-03T15:16:05.093"
-      },
-      {
-        "cve_id": "CVE-2026-27655",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "Zohocorp ManageEngine Exchange Reporter Plus versions before 5802 are vulnerable to Stored XSS in\u00a0Permissions Based on Mailboxes\u00a0report.",
-        "published": "2026-04-03T13:17:07.903"
-      },
-      {
-        "cve_id": "CVE-2025-64340",
-        "severity": "MEDIUM",
-        "base_score": 6.7,
-        "description": "FastMCP is the standard framework for building MCP applications. Prior to version 3.2.0, server names containing shell metacharacters (e.g., &) can cause command injection on Windows when passed to fa",
-        "published": "2026-04-03T16:16:23.010"
-      },
-      {
-        "cve_id": "CVE-2026-5470",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A security vulnerability has been detected in mixelpixx Google-Research-MCP 1e062d7bd887bfe5f6e582b6cc288bb897b35cf2/ca613b736ab787bc926932f59cddc69457185a83. This issue affects the function extractCo",
-        "published": "2026-04-03T16:16:43.787"
-      },
-      {
-        "cve_id": "CVE-2026-5472",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A flaw has been found in ProjectsAndPrograms School Management System up to 6b6fae5426044f89c08d0dd101c7fa71f9042a59. The affected element is an unknown function of the file /admin_panel/settings.php ",
-        "published": "2026-04-03T16:16:45.740"
-      },
-      {
-        "cve_id": "CVE-2026-5474",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A vulnerability was found in NASA cFS up to 7.0.0. This affects the function CFE_MSG_GetSize of the file apps/to_lab/fsw/src/to_lab_passthru_encode.c of the component CCSDS Packet Header Handler. Perf",
-        "published": "2026-04-03T17:16:54.450"
-      },
-      {
-        "cve_id": "CVE-2026-25043",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "Budibase is an open-source low-code platform. Prior to version 3.23.25, a business logic vulnerability exists in Budibase\u2019s password reset functionality due to the absence of rate limiting, CAPTCHA, o",
-        "published": "2026-04-03T16:16:35.607"
-      },
-      {
-        "cve_id": "CVE-2026-5469",
-        "severity": "MEDIUM",
-        "base_score": 4.7,
-        "description": "A weakness has been identified in Casdoor 2.356.0. This vulnerability affects unknown code of the component Webhook URL Handler. Executing a manipulation can lead to server-side request forgery. The a",
-        "published": "2026-04-03T15:16:06.420"
-      },
-      {
-        "cve_id": "CVE-2026-5473",
-        "severity": "MEDIUM",
-        "base_score": 4.5,
-        "description": "A vulnerability has been found in NASA cFS up to 7.0.0. The impacted element is the function pickle.load of the component Pickle Module. Such manipulation leads to deserialization. The attack needs to",
-        "published": "2026-04-03T17:16:54.203"
-      },
-      {
-        "cve_id": "CVE-2026-28736",
-        "severity": "MEDIUM",
-        "base_score": 4.3,
-        "description": "** UNSUPPORTED WHEN ASSIGNED ** Focalboard version 8.0 fails to validate file ownership when serving uploaded files. This allows an authenticated attacker who knows a victim's fileID to read the conte",
-        "published": "2026-04-03T14:16:29.517"
-      },
-      {
-        "cve_id": "CVE-2026-5468",
-        "severity": "LOW",
-        "base_score": 3.5,
-        "description": "A security flaw has been discovered in Casdoor 2.356.0. This affects the function dangerouslySetInnerHTML. Performing a manipulation of the argument formCss/formCssMobile/formSideHtml results in cross",
-        "published": "2026-04-03T14:16:33.837"
-      },
-      {
-        "cve_id": "CVE-2026-5471",
-        "severity": "LOW",
-        "base_score": 3.3,
-        "description": "A vulnerability was detected in Investory Toy Planet Trouble App up to 1.5.5 on Android. Impacted is an unknown function of the file assets/google-services-desktop.json of the component app.investory.",
-        "published": "2026-04-03T16:16:45.540"
-      },
-      {
-        "cve_id": "CVE-2026-23418",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/xe/reg_sr: Fix leak on xa_store failure\n\nFree the newly allocated entry when xa_store() fails to avoid a memory\nleak on the err",
-        "published": "2026-04-03T14:16:27.713"
+        "base_score": 8.8,
+        "description": "OAuthenticator is software that allows OAuth2 identity providers to be plugged in and used with JupyterHub. Prior to version 17.4.0, an authentication bypass vulnerability in oauthenticator allows an ",
+        "published": "2026-04-03T22:16:26.483"
       }
     ]
   },
