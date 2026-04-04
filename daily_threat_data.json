@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-04T08:30:38.050930+00:00",
+  "generated_at": "2026-04-04T12:34:27.901010+00:00",
   "threat_score": {
-    "score": 5.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 3,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 214,
-    "critical_count": 1,
-    "high_count": 12,
+    "total": 216,
+    "critical_count": 3,
+    "high_count": 6,
     "cves": [
       {
         "cve_id": "CVE-2026-31818",
@@ -250,11 +250,32 @@
         "published": "2026-04-03T16:16:39.800"
       },
       {
+        "cve_id": "CVE-2026-28373",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "The Stackfield Desktop App before 1.10.2 for macOS and Windows contains a path traversal vulnerability in certain decryption functionality when processing the filePath property. A malicious export can",
+        "published": "2026-04-03T17:16:42.140"
+      },
+      {
+        "cve_id": "CVE-2026-35216",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "Budibase is an open-source low-code platform. Prior to version 3.33.4, an unauthenticated attacker can achieve Remote Code Execution (RCE) on the Budibase server by triggering an automation that conta",
+        "published": "2026-04-03T16:16:41.800"
+      },
+      {
         "cve_id": "CVE-2026-35214",
         "severity": "HIGH",
         "base_score": 8.7,
         "description": "Budibase is an open-source low-code platform. Prior to version 3.33.4, the plugin file upload endpoint (POST /api/plugin/upload) passes the user-supplied filename directly to createTempFolder() withou",
         "published": "2026-04-03T16:16:41.607"
+      },
+      {
+        "cve_id": "CVE-2026-35218",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "Budibase is an open-source low-code platform. Prior to version 3.32.5, Budibase's Builder Command Palette renders entity names (tables, views, queries, automations) using Svelte's {@html} directive wi",
+        "published": "2026-04-03T16:16:41.977"
       },
       {
         "cve_id": "CVE-2025-59711",
@@ -278,55 +299,6 @@
         "published": "2026-04-03T15:16:05.093"
       },
       {
-        "cve_id": "CVE-2026-28754",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "Zohocorp ManageEngine Exchange Reporter Plus\u00a0versions before 5802 are vulnerable to\u00a0Stored XSS\u00a0in\u00a0Distribution Lists\u00a0report.",
-        "published": "2026-04-03T11:17:05.543"
-      },
-      {
-        "cve_id": "CVE-2026-28756",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "Zohocorp ManageEngine Exchange Reporter Plus\u00a0versions before 5802 are vulnerable to\u00a0Stored XSS\u00a0in\u00a0Permissions based on Distribution Groups\u00a0report.",
-        "published": "2026-04-03T11:17:05.767"
-      },
-      {
-        "cve_id": "CVE-2026-28703",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "Zohocorp ManageEngine Exchange Reporter Plus\u00a0versions before 5802 are vulnerable to\u00a0Stored XSS\u00a0in\u00a0Mails Exchanged Between Users\u00a0report.",
-        "published": "2026-04-03T12:16:17.490"
-      },
-      {
-        "cve_id": "CVE-2026-3879",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "Zohocorp ManageEngine Exchange Reporter Plus versions before 5802 are vulnerable to Stored XSS in\u00a0Equipment Mailbox Details\u00a0report.",
-        "published": "2026-04-03T12:16:18.743"
-      },
-      {
-        "cve_id": "CVE-2026-3880",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "Zohocorp ManageEngine Exchange Reporter Plus versions before 5802 are vulnerable to Stored XSS in\u00a0Public Folder Client Permissions\u00a0report.",
-        "published": "2026-04-03T12:16:18.933"
-      },
-      {
-        "cve_id": "CVE-2026-4107",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "Zohocorp ManageEngine Exchange Reporter Plus versions before 5802 are vulnerable to Stored XSS in\u00a0Folder Message Count and Size\u00a0report.",
-        "published": "2026-04-03T12:16:19.067"
-      },
-      {
-        "cve_id": "CVE-2026-4108",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "Zohocorp ManageEngine Exchange Reporter Plus versions before 5802 are vulnerable to Stored XSS in\u00a0Non-Owner Mailbox\u00a0Permission\u00a0report.",
-        "published": "2026-04-03T12:16:19.207"
-      },
-      {
         "cve_id": "CVE-2026-27655",
         "severity": "HIGH",
         "base_score": 7.3,
@@ -339,6 +311,27 @@
         "base_score": 6.7,
         "description": "FastMCP is the standard framework for building MCP applications. Prior to version 3.2.0, server names containing shell metacharacters (e.g., &) can cause command injection on Windows when passed to fa",
         "published": "2026-04-03T16:16:23.010"
+      },
+      {
+        "cve_id": "CVE-2026-5470",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A security vulnerability has been detected in mixelpixx Google-Research-MCP 1e062d7bd887bfe5f6e582b6cc288bb897b35cf2/ca613b736ab787bc926932f59cddc69457185a83. This issue affects the function extractCo",
+        "published": "2026-04-03T16:16:43.787"
+      },
+      {
+        "cve_id": "CVE-2026-5472",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A flaw has been found in ProjectsAndPrograms School Management System up to 6b6fae5426044f89c08d0dd101c7fa71f9042a59. The affected element is an unknown function of the file /admin_panel/settings.php ",
+        "published": "2026-04-03T16:16:45.740"
+      },
+      {
+        "cve_id": "CVE-2026-5474",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A vulnerability was found in NASA cFS up to 7.0.0. This affects the function CFE_MSG_GetSize of the file apps/to_lab/fsw/src/to_lab_passthru_encode.c of the component CCSDS Packet Header Handler. Perf",
+        "published": "2026-04-03T17:16:54.450"
       },
       {
         "cve_id": "CVE-2026-25043",
@@ -355,11 +348,11 @@
         "published": "2026-04-03T15:16:06.420"
       },
       {
-        "cve_id": "CVE-2026-5467",
+        "cve_id": "CVE-2026-5473",
         "severity": "MEDIUM",
-        "base_score": 4.3,
-        "description": "A vulnerability was identified in Casdoor 2.356.0. Affected by this issue is some unknown functionality of the component OAuth Authorization Request Handler. Such manipulation of the argument redirect",
-        "published": "2026-04-03T12:16:19.593"
+        "base_score": 4.5,
+        "description": "A vulnerability has been found in NASA cFS up to 7.0.0. The impacted element is the function pickle.load of the component Pickle Module. Such manipulation leads to deserialization. The attack needs to",
+        "published": "2026-04-03T17:16:54.203"
       },
       {
         "cve_id": "CVE-2026-28736",
@@ -374,6 +367,13 @@
         "base_score": 3.5,
         "description": "A security flaw has been discovered in Casdoor 2.356.0. This affects the function dangerouslySetInnerHTML. Performing a manipulation of the argument formCss/formCssMobile/formSideHtml results in cross",
         "published": "2026-04-03T14:16:33.837"
+      },
+      {
+        "cve_id": "CVE-2026-5471",
+        "severity": "LOW",
+        "base_score": 3.3,
+        "description": "A vulnerability was detected in Investory Toy Planet Trouble App up to 1.5.5 on Android. Impacted is an unknown function of the file assets/google-services-desktop.json of the component app.investory.",
+        "published": "2026-04-03T16:16:45.540"
       },
       {
         "cve_id": "CVE-2026-23418",
