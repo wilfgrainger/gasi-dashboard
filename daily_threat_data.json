@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-05T12:36:52.879289+00:00",
+  "generated_at": "2026-04-05T16:26:05.560804+00:00",
   "threat_score": {
-    "score": 6.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.0,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
-        "score": 2.0,
+        "value": 0,
+        "score": 1.0,
         "max": 3
       },
       {
@@ -238,24 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 69,
-    "critical_count": 2,
-    "high_count": 26,
+    "total": 57,
+    "critical_count": 0,
+    "high_count": 21,
     "cves": [
-      {
-        "cve_id": "CVE-2016-20052",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Snews CMS 1.7 contains an unrestricted file upload vulnerability that allows unauthenticated attackers to upload arbitrary files including PHP executables to the snews_files directory. Attackers can u",
-        "published": "2026-04-04T14:16:17.520"
-      },
-      {
-        "cve_id": "CVE-2018-25254",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "NICO-FTP 3.0.1.19 contains a structured exception handler buffer overflow vulnerability that allows remote attackers to execute arbitrary code by sending crafted FTP commands. Attackers can connect to",
-        "published": "2026-04-04T14:16:21.743"
-      },
       {
         "cve_id": "CVE-2026-5544",
         "severity": "HIGH",
@@ -278,81 +264,18 @@
         "published": "2026-04-05T08:16:25.100"
       },
       {
-        "cve_id": "CVE-2018-25251",
+        "cve_id": "CVE-2026-5566",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Snes9K 0.0.9z contains a buffer overflow vulnerability in the Netplay Socket Port Number field that allows local attackers to trigger a structured exception handler (SEH) overwrite. Attackers can craf",
-        "published": "2026-04-04T14:16:21.203"
+        "base_score": 8.8,
+        "description": "A vulnerability was detected in UTT HiPER 1250GW up to 3.2.7-210907-180535. This affects the function strcpy of the file /goform/formNatStaticMap. Performing a manipulation of the argument NatBind res",
+        "published": "2026-04-05T13:17:14.520"
       },
       {
-        "cve_id": "CVE-2018-25255",
+        "cve_id": "CVE-2026-5567",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "10-Strike LANState 8.8 contains a local buffer overflow vulnerability in structured exception handling that allows local attackers to execute arbitrary code by crafting malicious LSM map files. Attack",
-        "published": "2026-04-04T14:16:21.907"
-      },
-      {
-        "cve_id": "CVE-2016-20055",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "IObit Advanced SystemCare 10.0.2 contains an unquoted service path vulnerability in the AdvancedSystemCareService10 service that allows local attackers to escalate privileges. Attackers can place a ma",
-        "published": "2026-04-04T14:16:17.863"
-      },
-      {
-        "cve_id": "CVE-2016-20056",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Spy Emergency build 23.0.205 contains an unquoted service path vulnerability in the SpyEmrgHealth and SpyEmrgSrv services that allows local attackers to escalate privileges by inserting malicious exec",
-        "published": "2026-04-04T14:16:18.057"
-      },
-      {
-        "cve_id": "CVE-2016-20057",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "NETGATE Registry Cleaner build 16.0.205 contains an unquoted service path vulnerability in the NGRegClnSrv service that allows local attackers to escalate privileges by exploiting the service binary p",
-        "published": "2026-04-04T14:16:18.223"
-      },
-      {
-        "cve_id": "CVE-2016-20058",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Netgate AMITI Antivirus build 23.0.305 contains an unquoted service path vulnerability in the AmitiAvSrv and AmitiAntivirusHealth services that allows local attackers to escalate privileges. Attackers",
-        "published": "2026-04-04T14:16:18.390"
-      },
-      {
-        "cve_id": "CVE-2016-20059",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "IObit Malware Fighter 4.3.1 contains an unquoted service path vulnerability in the IMFservice and LiveUpdateSvc services that allows local attackers to escalate privileges. Attackers can insert a mali",
-        "published": "2026-04-04T14:16:18.557"
-      },
-      {
-        "cve_id": "CVE-2016-20060",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Hotspot Shield 6.0.3 contains an unquoted service path vulnerability in the hshld service binary that allows local attackers to escalate privileges by injecting malicious executables. Attackers can pl",
-        "published": "2026-04-04T14:16:18.757"
-      },
-      {
-        "cve_id": "CVE-2016-20061",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "sheed AntiVirus 2.3 contains an unquoted service path vulnerability in the ShavProt service that allows local attackers to escalate privileges by exploiting the service binary path. Attackers can inse",
-        "published": "2026-04-04T14:16:18.930"
-      },
-      {
-        "cve_id": "CVE-2018-25241",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "VPN Browser+ 1.1.0.0 contains a denial of service vulnerability that allows unauthenticated attackers to crash the application by submitting oversized input through the search functionality. Attackers",
-        "published": "2026-04-04T14:16:19.623"
-      },
-      {
-        "cve_id": "CVE-2018-25245",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "7 Tik 1.0.1.0 contains a denial of service vulnerability that allows attackers to crash the application by submitting excessively long input strings to the search functionality. Attackers can paste a ",
-        "published": "2026-04-04T14:16:20.330"
+        "base_score": 8.8,
+        "description": "A flaw has been found in Tenda M3 1.0.0.10. This vulnerability affects the function setAdvPolicyData of the file /goform/setAdvPolicyData of the component Destination Handler. Executing a manipulation",
+        "published": "2026-04-05T13:17:14.707"
       },
       {
         "cve_id": "CVE-2018-25246",
@@ -381,6 +304,83 @@
         "base_score": 7.3,
         "description": "A weakness has been identified in FedML-AI FedML up to 0.8.9. Affected is the function sendMessage of the file grpc_server.py of the component gRPC server. Executing a manipulation can lead to deseria",
         "published": "2026-04-05T04:16:09.487"
+      },
+      {
+        "cve_id": "CVE-2026-5540",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability has been found in code-projects Simple Laundry System 1.0. This vulnerability affects unknown code of the file /modifymember.php of the component Parameter Handler. Such manipulation o",
+        "published": "2026-04-05T05:16:03.100"
+      },
+      {
+        "cve_id": "CVE-2026-5551",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A security flaw has been discovered in itsourcecode Free Hotel Reservation System 1.0. This vulnerability affects unknown code of the file /hotel/admin/login.php of the component Parameter Handler. Th",
+        "published": "2026-04-05T09:16:17.767"
+      },
+      {
+        "cve_id": "CVE-2026-5554",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A security flaw has been discovered in code-projects Concert Ticket Reservation System 1.0. Affected by this issue is some unknown functionality of the file /ConcertTicketReservationSystem-master/proc",
+        "published": "2026-04-05T10:16:18.517"
+      },
+      {
+        "cve_id": "CVE-2026-5555",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A weakness has been identified in code-projects Concert Ticket Reservation System 1.0. This affects an unknown part of the file /ConcertTicketReservationSystem-master/login.php of the component Parame",
+        "published": "2026-04-05T10:16:19.307"
+      },
+      {
+        "cve_id": "CVE-2026-5562",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was identified in provectus kafka-ui up to 0.7.2. This impacts the function validateAccess of the file /api/smartfilters/testexecutions of the component Endpoint. The manipulation lead",
+        "published": "2026-04-05T11:16:56.993"
+      },
+      {
+        "cve_id": "CVE-2026-5564",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A weakness has been identified in code-projects Simple Laundry System 1.0. Affected by this vulnerability is an unknown functionality of the file /searchguest.php of the component Parameter Handler. T",
+        "published": "2026-04-05T12:16:18.927"
+      },
+      {
+        "cve_id": "CVE-2026-5565",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A security vulnerability has been detected in code-projects Simple Laundry System 1.0. Affected by this issue is some unknown functionality of the file /delmemberinfo.php of the component Parameter Ha",
+        "published": "2026-04-05T13:17:13.433"
+      },
+      {
+        "cve_id": "CVE-2026-5569",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was found in Technostrobe HI-LED-WR120-G2 5.5.0.1R6.03.30. Impacted is an unknown function of the file /Technostrobe/ of the component Endpoint. The manipulation results in improper ac",
+        "published": "2026-04-05T14:16:17.727"
+      },
+      {
+        "cve_id": "CVE-2026-5570",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was determined in Technostrobe HI-LED-WR120-G2 5.5.0.1R6.03.30. The affected element is the function index_config of the file /LoginCB. This manipulation causes improper authentication",
+        "published": "2026-04-05T14:16:17.940"
+      },
+      {
+        "cve_id": "CVE-2026-5573",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A weakness has been identified in Technostrobe HI-LED-WR120-G2 5.5.0.1R6.03.30. This impacts an unknown function of the file /fs. Executing a manipulation of the argument cwd can lead to unrestricted ",
+        "published": "2026-04-05T15:16:41.880"
+      },
+      {
+        "cve_id": "CVE-2026-5575",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was detected in SourceCodester/jkev Record Management System 1.0. Affected by this vulnerability is an unknown functionality of the file index.php of the component Login. The manipulat",
+        "published": "2026-04-05T15:16:43.010"
       }
     ]
   },
