@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-06T12:50:12.550156+00:00",
+  "generated_at": "2026-04-06T16:36:15.637056+00:00",
   "threat_score": {
     "score": 5.5,
     "level": "ELEVATED",
@@ -7,7 +7,7 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 21,
+        "value": 22,
         "score": 3.0,
         "max": 3
       },
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1557,
-    "recent_30d_count": 21,
+    "total_catalog_count": 1558,
+    "recent_30d_count": 22,
     "recent": [
+      {
+        "cve_id": "CVE-2026-35616",
+        "vendor": "Fortinet",
+        "product": "FortiClient EMS",
+        "name": "Fortinet FortiClient EMS Improper Access Control Vulnerability",
+        "date_added": "2026-04-06",
+        "due_date": "2026-04-09",
+        "description": "Fortinet FortiClient EMS contains an improper access control vulnerability that may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-3502",
         "vendor": "TrueConf",
@@ -224,23 +234,13 @@
         "due_date": "2026-03-23",
         "description": "Omnissa Workspace One UEM formerly known as VMware Workspace One UEM contains a server-side request forgery (SSRF) vulnerability that could allow a malicious actor with network access to UEM to send t",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2025-26399",
-        "vendor": "SolarWinds",
-        "product": "Web Help Desk",
-        "name": "SolarWinds Web Help Desk Deserialization of Untrusted Data Vulnerability",
-        "date_added": "2026-03-09",
-        "due_date": "2026-03-12",
-        "description": "SolarWinds Web Help Desk contain a deserialization of untrusted data vulnerability in AjaxProxy that could allow an attacker to run commands on the host machine.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 125,
+    "total": 191,
     "critical_count": 1,
-    "high_count": 53,
+    "high_count": 49,
     "cves": [
       {
         "cve_id": "CVE-2019-25687",
@@ -248,20 +248,6 @@
         "base_score": 9.8,
         "description": "Pegasus CMS 1.0 contains a remote code execution vulnerability in the extra_fields.php plugin that allows unauthenticated attackers to execute arbitrary commands by exploiting unsafe eval functionalit",
         "published": "2026-04-05T21:16:47.490"
-      },
-      {
-        "cve_id": "CVE-2026-5566",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was detected in UTT HiPER 1250GW up to 3.2.7-210907-180535. This affects the function strcpy of the file /goform/formNatStaticMap. Performing a manipulation of the argument NatBind res",
-        "published": "2026-04-05T13:17:14.520"
-      },
-      {
-        "cve_id": "CVE-2026-5567",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw has been found in Tenda M3 1.0.0.10. This vulnerability affects the function setAdvPolicyData of the file /goform/setAdvPolicyData of the component Destination Handler. Executing a manipulation",
-        "published": "2026-04-05T13:17:14.707"
       },
       {
         "cve_id": "CVE-2019-25671",
@@ -381,6 +367,20 @@
         "base_score": 8.4,
         "description": "Xlight FTP Server 3.9.1 contains a structured exception handler (SEH) overwrite vulnerability that allows local attackers to crash the application and overwrite SEH pointers by supplying a crafted buf",
         "published": "2026-04-05T21:16:46.457"
+      },
+      {
+        "cve_id": "CVE-2019-25662",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "ResourceSpace 8.6 contains an SQL injection vulnerability that allows unauthenticated attackers to execute arbitrary SQL queries by injecting malicious code through the 'ref' parameter. Attackers can ",
+        "published": "2026-04-05T21:16:43.223"
+      },
+      {
+        "cve_id": "CVE-2019-25668",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "News Website Script 2.0.5 contains an SQL injection vulnerability that allows unauthenticated attackers to manipulate database queries by injecting SQL code through the news ID parameter. Attackers ca",
+        "published": "2026-04-05T21:16:44.240"
       }
     ]
   },
