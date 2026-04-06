@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-05T20:22:37.553947+00:00",
+  "generated_at": "2026-04-06T01:28:16.450087+00:00",
   "threat_score": {
-    "score": 5.0,
+    "score": 5.5,
     "level": "ELEVATED",
     "level_color": "elevated",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 1.0,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -238,10 +238,17 @@
     ]
   },
   "nvd": {
-    "total": 63,
-    "critical_count": 0,
-    "high_count": 21,
+    "total": 112,
+    "critical_count": 1,
+    "high_count": 49,
     "cves": [
+      {
+        "cve_id": "CVE-2019-25687",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Pegasus CMS 1.0 contains a remote code execution vulnerability in the extra_fields.php plugin that allows unauthenticated attackers to execute arbitrary commands by exploiting unsafe eval functionalit",
+        "published": "2026-04-05T21:16:47.490"
+      },
       {
         "cve_id": "CVE-2026-5544",
         "severity": "HIGH",
@@ -278,109 +285,102 @@
         "published": "2026-04-05T13:17:14.707"
       },
       {
-        "cve_id": "CVE-2026-5526",
+        "cve_id": "CVE-2019-25671",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security flaw has been discovered in Tenda 4G03 Pro up to 1.0/1.1/04.03.01.53/192.168.0.1. Affected by this vulnerability is an unknown functionality of the file /bin/httpd. The manipulation results",
-        "published": "2026-04-04T23:16:44.290"
+        "base_score": 8.8,
+        "description": "VA MAX 8.3.4 contains a remote code execution vulnerability that allows authenticated attackers to execute arbitrary commands by injecting shell metacharacters into the mtu_eth0 parameter. Attackers c",
+        "published": "2026-04-05T21:16:44.780"
       },
       {
-        "cve_id": "CVE-2026-5534",
+        "cve_id": "CVE-2019-25673",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was identified in itsourcecode Online Enrollment System 1.0. This affects an unknown function of the file /sms/user/index.php?view=edit&id=10 of the component Parameter Handler. Such m",
-        "published": "2026-04-05T03:16:00.800"
+        "base_score": 8.8,
+        "description": "UniSharp Laravel File Manager v2.0.0-alpha7 and v2.0 contain an arbitrary file upload vulnerability that allows authenticated attackers to upload malicious files by sending multipart form data to the ",
+        "published": "2026-04-05T21:16:45.113"
       },
       {
-        "cve_id": "CVE-2026-5536",
+        "cve_id": "CVE-2019-25685",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A weakness has been identified in FedML-AI FedML up to 0.8.9. Affected is the function sendMessage of the file grpc_server.py of the component gRPC server. Executing a manipulation can lead to deseria",
-        "published": "2026-04-05T04:16:09.487"
+        "base_score": 8.8,
+        "description": "phpBB contains an arbitrary file upload vulnerability that allows authenticated attackers to upload malicious files by exploiting the plupload functionality and phar:// stream wrapper. Attackers can u",
+        "published": "2026-04-05T21:16:47.140"
       },
       {
-        "cve_id": "CVE-2026-5540",
+        "cve_id": "CVE-2019-25656",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability has been found in code-projects Simple Laundry System 1.0. This vulnerability affects unknown code of the file /modifymember.php of the component Parameter Handler. Such manipulation o",
-        "published": "2026-04-05T05:16:03.100"
+        "base_score": 8.4,
+        "description": "R i386 3.5.0 contains a local buffer overflow vulnerability in the GUI Preferences dialog that allows local attackers to trigger a structured exception handler (SEH) overwrite by supplying malicious i",
+        "published": "2026-04-05T21:16:42.173"
       },
       {
-        "cve_id": "CVE-2026-5551",
+        "cve_id": "CVE-2019-25670",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security flaw has been discovered in itsourcecode Free Hotel Reservation System 1.0. This vulnerability affects unknown code of the file /hotel/admin/login.php of the component Parameter Handler. Th",
-        "published": "2026-04-05T09:16:17.767"
+        "base_score": 8.4,
+        "description": "River Past Video Cleaner 7.6.3 contains a structured exception handler buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying a malicious string in the Lame_e",
+        "published": "2026-04-05T21:16:44.610"
       },
       {
-        "cve_id": "CVE-2026-5554",
+        "cve_id": "CVE-2019-25681",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security flaw has been discovered in code-projects Concert Ticket Reservation System 1.0. Affected by this issue is some unknown functionality of the file /ConcertTicketReservationSystem-master/proc",
-        "published": "2026-04-05T10:16:18.517"
+        "base_score": 8.4,
+        "description": "Xlight FTP Server 3.9.1 contains a structured exception handler (SEH) overwrite vulnerability that allows local attackers to crash the application and overwrite SEH pointers by supplying a crafted buf",
+        "published": "2026-04-05T21:16:46.457"
       },
       {
-        "cve_id": "CVE-2026-5555",
+        "cve_id": "CVE-2019-25662",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A weakness has been identified in code-projects Concert Ticket Reservation System 1.0. This affects an unknown part of the file /ConcertTicketReservationSystem-master/login.php of the component Parame",
-        "published": "2026-04-05T10:16:19.307"
+        "base_score": 8.2,
+        "description": "ResourceSpace 8.6 contains an SQL injection vulnerability that allows unauthenticated attackers to execute arbitrary SQL queries by injecting malicious code through the 'ref' parameter. Attackers can ",
+        "published": "2026-04-05T21:16:43.223"
       },
       {
-        "cve_id": "CVE-2026-5562",
+        "cve_id": "CVE-2019-25668",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was identified in provectus kafka-ui up to 0.7.2. This impacts the function validateAccess of the file /api/smartfilters/testexecutions of the component Endpoint. The manipulation lead",
-        "published": "2026-04-05T11:16:56.993"
+        "base_score": 8.2,
+        "description": "News Website Script 2.0.5 contains an SQL injection vulnerability that allows unauthenticated attackers to manipulate database queries by injecting SQL code through the news ID parameter. Attackers ca",
+        "published": "2026-04-05T21:16:44.240"
       },
       {
-        "cve_id": "CVE-2026-5564",
+        "cve_id": "CVE-2019-25669",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A weakness has been identified in code-projects Simple Laundry System 1.0. Affected by this vulnerability is an unknown functionality of the file /searchguest.php of the component Parameter Handler. T",
-        "published": "2026-04-05T12:16:18.927"
+        "base_score": 8.2,
+        "description": "qdPM 9.1 contains an SQL injection vulnerability that allows attackers to manipulate database queries by injecting SQL code through the search_by_extrafields[] parameter. Attackers can send POST reque",
+        "published": "2026-04-05T21:16:44.430"
       },
       {
-        "cve_id": "CVE-2026-5565",
+        "cve_id": "CVE-2019-25672",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security vulnerability has been detected in code-projects Simple Laundry System 1.0. Affected by this issue is some unknown functionality of the file /delmemberinfo.php of the component Parameter Ha",
-        "published": "2026-04-05T13:17:13.433"
+        "base_score": 8.2,
+        "description": "PilusCart 1.4.1 contains a SQL injection vulnerability that allows unauthenticated attackers to manipulate database queries by injecting SQL code through the 'send' parameter. Attackers can submit POS",
+        "published": "2026-04-05T21:16:44.943"
       },
       {
-        "cve_id": "CVE-2026-5569",
+        "cve_id": "CVE-2019-25674",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was found in Technostrobe HI-LED-WR120-G2 5.5.0.1R6.03.30. Impacted is an unknown function of the file /Technostrobe/ of the component Endpoint. The manipulation results in improper ac",
-        "published": "2026-04-05T14:16:17.727"
+        "base_score": 8.2,
+        "description": "CMSsite 1.0 contains an SQL injection vulnerability that allows unauthenticated attackers to manipulate database queries by injecting SQL code through the 'post' parameter. Attackers can send GET requ",
+        "published": "2026-04-05T21:16:45.280"
       },
       {
-        "cve_id": "CVE-2026-5570",
+        "cve_id": "CVE-2019-25675",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was determined in Technostrobe HI-LED-WR120-G2 5.5.0.1R6.03.30. The affected element is the function index_config of the file /LoginCB. This manipulation causes improper authentication",
-        "published": "2026-04-05T14:16:17.940"
+        "base_score": 8.2,
+        "description": "eDirectory contains multiple SQL injection vulnerabilities that allow unauthenticated attackers to bypass administrator authentication and disclose sensitive files by injecting SQL code into parameter",
+        "published": "2026-04-05T21:16:45.453"
       },
       {
-        "cve_id": "CVE-2026-5573",
+        "cve_id": "CVE-2019-25676",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A weakness has been identified in Technostrobe HI-LED-WR120-G2 5.5.0.1R6.03.30. This impacts an unknown function of the file /fs. Executing a manipulation of the argument cwd can lead to unrestricted ",
-        "published": "2026-04-05T15:16:41.880"
+        "base_score": 8.2,
+        "description": "Ask Expert Script 3.0.5 contains cross-site scripting and SQL injection vulnerabilities that allow unauthenticated attackers to inject malicious code by manipulating URL parameters. Attackers can inje",
+        "published": "2026-04-05T21:16:45.620"
       },
       {
-        "cve_id": "CVE-2026-5575",
+        "cve_id": "CVE-2019-25678",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was detected in SourceCodester/jkev Record Management System 1.0. Affected by this vulnerability is an unknown functionality of the file index.php of the component Login. The manipulat",
-        "published": "2026-04-05T15:16:43.010"
-      },
-      {
-        "cve_id": "CVE-2026-5577",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability has been found in Song-Li cross_browser up to ca690f0fe6954fd9bcda36d071b68ed8682a786a. This affects an unknown part of the file flask/uniquemachine_app.py of the component details End",
-        "published": "2026-04-05T16:16:19.683"
+        "base_score": 8.2,
+        "description": "C4G Basic Laboratory Information System 3.4 contains multiple SQL injection vulnerabilities that allow unauthenticated attackers to execute arbitrary SQL commands by injecting malicious code through t",
+        "published": "2026-04-05T21:16:45.967"
       }
     ]
   },
