@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-07T12:59:14.396909+00:00",
+  "generated_at": "2026-04-07T16:46:00.749588+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
-        "score": 2.5,
+        "value": 12,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,23 +238,23 @@
     ]
   },
   "nvd": {
-    "total": 235,
-    "critical_count": 6,
-    "high_count": 40,
+    "total": 242,
+    "critical_count": 12,
+    "high_count": 38,
     "cves": [
-      {
-        "cve_id": "CVE-2026-34208",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "SandboxJS is a JavaScript sandboxing library. Prior to 0.8.36, SandboxJS blocks direct assignment to global objects (for example Math.random = ...), but this protection can be bypassed through an expo",
-        "published": "2026-04-06T16:16:34.580"
-      },
       {
         "cve_id": "CVE-2026-34976",
         "severity": "CRITICAL",
         "base_score": 10.0,
         "description": "Dgraph is an open source distributed GraphQL database. Prior to 25.3.1, the restoreTenant admin mutation is missing from the authorization middleware config (admin.go), making it completely unauthenti",
         "published": "2026-04-06T17:17:11.370"
+      },
+      {
+        "cve_id": "CVE-2025-54328",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "An issue was discovered in SMS in Samsung Mobile Processor, Wearable Processor, and Modem Exynos 980, 990, 850, 1080, 2100, 1280, 2200, 1330, 1380, 1480, 2400, 1580, 2500, 9110, W920, W930, W1000, Mod",
+        "published": "2026-04-06T20:16:20.490"
       },
       {
         "cve_id": "CVE-2026-34841",
@@ -264,18 +264,39 @@
         "published": "2026-04-06T17:17:10.590"
       },
       {
-        "cve_id": "CVE-2026-26026",
+        "cve_id": "CVE-2026-35171",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "GLPI is a free asset and IT management software package. From 11.0.0 to before 11.0.6, template injection by an administrator lead to RCE. This vulnerability is fixed in 11.0.6.",
-        "published": "2026-04-06T15:17:07.093"
+        "base_score": 9.8,
+        "description": "Kedro is a toolbox for production-ready data science. Prior to 1.3.0, Kedro allows the logging configuration file path to be set via the KEDRO_LOGGING_CONFIG environment variable and loads it without ",
+        "published": "2026-04-06T18:16:43.373"
       },
       {
-        "cve_id": "CVE-2026-34950",
+        "cve_id": "CVE-2026-35022",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Anthropic Claude Code CLI and Claude Agent SDK contain an OS command injection vulnerability in authentication helper execution where helper configuration values are executed using shell=true without ",
+        "published": "2026-04-06T20:16:25.260"
+      },
+      {
+        "cve_id": "CVE-2026-35392",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "goshs is a SimpleHTTPServer written in Go. Prior to 2.0.0-beta.3, PUT upload in httpserver/updown.go has no path sanitization. This vulnerability is fixed in 2.0.0-beta.3.",
+        "published": "2026-04-06T21:16:21.013"
+      },
+      {
+        "cve_id": "CVE-2026-35393",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "goshs is a SimpleHTTPServer written in Go. Prior to 2.0.0-beta.3, the POST multipart upload directory not sanitized. This vulnerability is fixed in 2.0.0-beta.3.",
+        "published": "2026-04-06T21:16:21.163"
+      },
+      {
+        "cve_id": "CVE-2026-35030",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "fast-jwt provides fast JSON Web Token (JWT) implementation. In 6.1.0 and earlier, the publicKeyPemMatcher regex in fast-jwt/src/crypto.js uses a ^ anchor that is defeated by any leading whitespace in ",
-        "published": "2026-04-06T16:16:38.017"
+        "description": "LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) format. Prior to 1.83.0, when JWT authentication is enabled (enable_jwt_auth: true), the OIDC userinfo cache uses token[:2",
+        "published": "2026-04-06T17:17:12.650"
       },
       {
         "cve_id": "CVE-2026-35039",
@@ -285,39 +306,67 @@
         "published": "2026-04-06T17:17:13.243"
       },
       {
-        "cve_id": "CVE-2026-3524",
+        "cve_id": "CVE-2026-35050",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "text-generation-webui is an open-source web interface for running Large Language Models. Prior to 4.1.1, users can save extention settings in \"py\" format and in the app root directory. This allows to ",
+        "published": "2026-04-06T18:16:42.583"
+      },
+      {
+        "cve_id": "CVE-2026-35174",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Chyrp Lite is an ultra-lightweight blogging engine. Prior to 2026.01, a path traversal vulnerability exists in the administration console that allows an administrator or a user with Change Settings pe",
+        "published": "2026-04-06T18:16:43.677"
+      },
+      {
+        "cve_id": "CVE-2025-58349",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "An issue was discovered in L2 in Samsung Mobile Processor, Wearable Processor, and Modem Exynos 980, 990, 850, 1080, 2100, 1280, 2200, 1330, 1380, 1480, 2400, 1580, 2500, 9110, W920, W930, W1000, Mode",
+        "published": "2026-04-06T19:16:26.157"
+      },
+      {
+        "cve_id": "CVE-2026-35044",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Mattermost Plugin Legal Hold versions <=1.1.4 fail to halt request processing after a failed authorization check in ServeHTTP which allows an authenticated attacker to access, create, download, and de",
-        "published": "2026-04-06T13:17:18.417"
+        "description": "BentoML is a Python library for building online serving systems optimized for AI apps and model inference. Prior to 1.4.38, the Dockerfile generation function generate_containerfile() in src/bentoml/_",
+        "published": "2026-04-06T18:16:41.990"
       },
       {
-        "cve_id": "CVE-2026-33510",
+        "cve_id": "CVE-2026-35164",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Homarr is an open-source dashboard. Prior to 1.57.0, a DOM-based Cross-Site Scripting (XSS) vulnerability has been discovered in Homarr's /auth/login page. The application improperly trusts a URL para",
-        "published": "2026-04-06T15:17:10.790"
+        "description": "Brave CMS is an open-source CMS. Prior to 2.0.6, an unrestricted file upload vulnerability exists in the CKEditor upload functionality. It is found in app/Http/Controllers/Dashboard/CkEditorController",
+        "published": "2026-04-06T18:16:42.900"
       },
       {
-        "cve_id": "CVE-2025-47392",
+        "cve_id": "CVE-2026-35470",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Memory corruption when decoding corrupted satellite data files with invalid signature offsets.",
-        "published": "2026-04-06T16:16:28.223"
+        "description": "OpenSTAManager is an open source management software for technical assistance and invoicing. Prior to 2.10.2, confronta_righe.php files across different modules in OpenSTAManager contain an SQL Inject",
+        "published": "2026-04-06T18:16:44.400"
       },
       {
-        "cve_id": "CVE-2026-33752",
+        "cve_id": "CVE-2026-35182",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "curl_cffi is the a Python binding for curl. Prior to 0.15.0, curl_cffi does not restrict requests to internal IP ranges, and follows redirects automatically via the underlying libcurl. Because of this",
-        "published": "2026-04-06T16:16:34.140"
+        "base_score": 8.8,
+        "description": "Brave CMS is an open-source CMS. Prior to 2.0.6, this vulnerability is a missing authorization check found in the update role endpoint at routes/web.php. The POST route for /rights/update-role/{id} la",
+        "published": "2026-04-06T20:16:26.553"
       },
       {
-        "cve_id": "CVE-2026-34885",
+        "cve_id": "CVE-2026-35395",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in David Lingren Media LIbrary Assistant allows SQL Injection.This issue affects Media LIbrary Assist",
-        "published": "2026-04-06T15:17:11.130"
+        "base_score": 8.8,
+        "description": "WeGIA is a Web manager for charitable institutions. Prior to 3.6.9, WeGIA (Web gerenciador para institui\u00e7\u00f5es assistenciais) contains a SQL injection vulnerability in dao/memorando/DespachoDAO.php. The",
+        "published": "2026-04-06T21:16:21.450"
+      },
+      {
+        "cve_id": "CVE-2026-35408",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "Directus is a real-time API and App dashboard for managing SQL database content. Prior to 11.17.0, Directus's Single Sign-On (SSO) login pages lacked a Cross-Origin-Opener-Policy (COOP) HTTP response ",
+        "published": "2026-04-06T22:16:21.557"
       },
       {
         "cve_id": "CVE-2026-34975",
@@ -327,60 +376,11 @@
         "published": "2026-04-06T17:17:11.210"
       },
       {
-        "cve_id": "CVE-2026-34982",
+        "cve_id": "CVE-2026-35020",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Vim is an open source, command line text editor. Prior to version 9.2.0276, a modeline sandbox bypass in Vim allows arbitrary OS command execution when a user opens a crafted file. The `complete`, `gu",
-        "published": "2026-04-06T16:16:38.777"
-      },
-      {
-        "cve_id": "CVE-2026-26263",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "GLPI is a free asset and IT management software package. From 11.0.0 to before 11.0.6, an unauthenticated time-based blind SQL injection exists in GLPI's Search engine. This vulnerability is fixed in ",
-        "published": "2026-04-06T15:17:07.430"
-      },
-      {
-        "cve_id": "CVE-2026-34402",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "ChurchCRM is an open-source church management system. Prior to 7.1.0, authenticated users with Edit Records or Manage Groups permissions can exploit a time-based blind SQL injection vulnerability in t",
-        "published": "2026-04-06T16:16:35.560"
-      },
-      {
-        "cve_id": "CVE-2026-34783",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Ferret is a declarative system for working with web data. Prior to 2.0.0-alpha.4, a path traversal vulnerability in Ferret's IO::FS::WRITE standard library function allows a malicious website to write",
-        "published": "2026-04-06T17:17:10.430"
-      },
-      {
-        "cve_id": "CVE-2024-14032",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Twitch Studio version 0.114.8 and prior contain a privilege escalation vulnerability in its privileged helper tool that allows local attackers to execute arbitrary code as root by exploiting an unprot",
-        "published": "2026-04-06T16:16:26.470"
-      },
-      {
-        "cve_id": "CVE-2025-47389",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Memory corruption when buffer copy operation fails due to integer overflow during attestation report generation.",
-        "published": "2026-04-06T16:16:27.373"
-      },
-      {
-        "cve_id": "CVE-2025-47390",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Memory corruption while preprocessing IOCTL request in JPEG driver.",
-        "published": "2026-04-06T16:16:27.777"
-      },
-      {
-        "cve_id": "CVE-2025-47391",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Memory corruption while processing a frame request from user.",
-        "published": "2026-04-06T16:16:27.950"
+        "base_score": 8.4,
+        "description": "Anthropic Claude Code CLI and Claude Agent SDK contain an OS command injection vulnerability in the command lookup helper and deep-link terminal launcher that allows local attackers to execute arbitra",
+        "published": "2026-04-06T20:16:24.863"
       }
     ]
   },
