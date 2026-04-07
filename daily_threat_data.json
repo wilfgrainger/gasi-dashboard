@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-07T08:52:49.550412+00:00",
+  "generated_at": "2026-04-07T12:59:14.396909+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
-        "score": 2.0,
+        "value": 6,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 242,
-    "critical_count": 3,
-    "high_count": 39,
+    "total": 235,
+    "critical_count": 6,
+    "high_count": 40,
     "cves": [
       {
         "cve_id": "CVE-2026-34208",
@@ -248,6 +248,20 @@
         "base_score": 10.0,
         "description": "SandboxJS is a JavaScript sandboxing library. Prior to 0.8.36, SandboxJS blocks direct assignment to global objects (for example Math.random = ...), but this protection can be bypassed through an expo",
         "published": "2026-04-06T16:16:34.580"
+      },
+      {
+        "cve_id": "CVE-2026-34976",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Dgraph is an open source distributed GraphQL database. Prior to 25.3.1, the restoreTenant admin mutation is missing from the authorization middleware config (admin.go), making it completely unauthenti",
+        "published": "2026-04-06T17:17:11.370"
+      },
+      {
+        "cve_id": "CVE-2026-34841",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Bruno is an open source IDE for exploring and testing APIs. Prior to 3.2.1, Bruno was affected by a supply chain attack involving compromised versions of the axios npm package, which introduced a hidd",
+        "published": "2026-04-06T17:17:10.590"
       },
       {
         "cve_id": "CVE-2026-26026",
@@ -262,6 +276,13 @@
         "base_score": 9.1,
         "description": "fast-jwt provides fast JSON Web Token (JWT) implementation. In 6.1.0 and earlier, the publicKeyPemMatcher regex in fast-jwt/src/crypto.js uses a ^ anchor that is defeated by any leading whitespace in ",
         "published": "2026-04-06T16:16:38.017"
+      },
+      {
+        "cve_id": "CVE-2026-35039",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "fast-jwt provides fast JSON Web Token (JWT) implementation. From 0.0.1 to before 6.1.0, setting up a custom cacheKeyBuilder method which does not properly create unique keys for different tokens can l",
+        "published": "2026-04-06T17:17:13.243"
       },
       {
         "cve_id": "CVE-2026-3524",
@@ -297,6 +318,13 @@
         "base_score": 8.5,
         "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in David Lingren Media LIbrary Assistant allows SQL Injection.This issue affects Media LIbrary Assist",
         "published": "2026-04-06T15:17:11.130"
+      },
+      {
+        "cve_id": "CVE-2026-34975",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "Plunk is an open-source email platform built on top of AWS SES. Prior to 0.8.0, a CRLF header injection vulnerability was discovered in SESService.ts, where user-supplied values for from.name, subject",
+        "published": "2026-04-06T17:17:11.210"
       },
       {
         "cve_id": "CVE-2026-34982",
@@ -353,34 +381,6 @@
         "base_score": 7.8,
         "description": "Memory corruption while processing a frame request from user.",
         "published": "2026-04-06T16:16:27.950"
-      },
-      {
-        "cve_id": "CVE-2026-21371",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Memory Corruption when retrieving output buffer with insufficient size validation.",
-        "published": "2026-04-06T16:16:29.563"
-      },
-      {
-        "cve_id": "CVE-2026-21372",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Memory Corruption when sending IOCTL requests with invalid buffer sizes during memcpy operations.",
-        "published": "2026-04-06T16:16:29.767"
-      },
-      {
-        "cve_id": "CVE-2026-21373",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Memory Corruption when accessing an output buffer without validating its size during IOCTL processing.",
-        "published": "2026-04-06T16:16:29.933"
-      },
-      {
-        "cve_id": "CVE-2026-21374",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Memory Corruption when processing auxiliary sensor input/output control commands with insufficient buffer size validation.",
-        "published": "2026-04-06T16:16:30.137"
       }
     ]
   },
