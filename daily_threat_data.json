@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-08T16:51:47.096093+00:00",
+  "generated_at": "2026-04-08T20:33:50.050087+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 19,
+        "value": 20,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
+        "value": 7,
         "score": 2.5,
         "max": 3
       },
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1558,
-    "recent_30d_count": 19,
+    "total_catalog_count": 1559,
+    "recent_30d_count": 20,
     "recent": [
+      {
+        "cve_id": "CVE-2026-1340",
+        "vendor": "Ivanti",
+        "product": "Endpoint Manager Mobile (EPMM)",
+        "name": "Ivanti Endpoint Manager Mobile (EPMM) Code Injection Vulnerability",
+        "date_added": "2026-04-08",
+        "due_date": "2026-04-11",
+        "description": "Ivanti Endpoint Manager Mobile (EPMM) contains a code injection vulnerability that could allow attackers to achieve unauthenticated remote code execution.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-35616",
         "vendor": "Fortinet",
@@ -228,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 442,
-    "critical_count": 8,
-    "high_count": 45,
+    "total": 414,
+    "critical_count": 7,
+    "high_count": 15,
     "cves": [
       {
-        "cve_id": "CVE-2026-39337",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "ChurchCRM is an open-source church management system. Prior to 7.1.0, critical pre-authentication remote code execution vulnerability in ChurchCRM's setup wizard allows unauthenticated attackers to in",
-        "published": "2026-04-07T18:16:45.630"
-      },
-      {
-        "cve_id": "CVE-2026-23696",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Windmill CE and EE versions 1.276.0 through 1.603.2 contain an SQL injection vulnerability in the folder ownership management functionality that allows authenticated attackers to inject SQL through th",
-        "published": "2026-04-07T17:16:27.247"
-      },
-      {
-        "cve_id": "CVE-2026-39355",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Genealogy is a family tree PHP application. Prior to 5.9.1, a critical broken access control vulnerability in the genealogy application allows any authenticated user to transfer ownership of arbitrary",
-        "published": "2026-04-07T19:16:46.523"
-      },
-      {
-        "cve_id": "CVE-2026-4631",
+        "cve_id": "CVE-2026-3296",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Cockpit's remote login feature passes user-supplied hostnames and usernames from the web interface to the SSH client without validation or sanitization. An attacker with network access to the Cockpit ",
-        "published": "2026-04-07T17:16:38.010"
+        "description": "The Everest Forms plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 3.4.3 via deserialization of untrusted input from form entry metadata. This is due to",
+        "published": "2026-04-08T02:16:04.067"
       },
       {
-        "cve_id": "CVE-2026-35580",
+        "cve_id": "CVE-2026-4003",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Users manager \u2013 PN plugin for WordPress is vulnerable to Privilege Escalation via Arbitrary User Meta Update in all versions up to and including 1.1.15. This is due to a flawed authorization logic",
+        "published": "2026-04-08T05:16:06.347"
+      },
+      {
+        "cve_id": "CVE-2026-3535",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The DSGVO Google Web Fonts GDPR plugin for WordPress is vulnerable to arbitrary file upload due to missing file type validation in the `DSGVOGWPdownloadGoogleFonts()` function in all versions up to, a",
+        "published": "2026-04-08T07:16:21.417"
+      },
+      {
+        "cve_id": "CVE-2026-39397",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "@delmaredigital/payload-puck is a PayloadCMS plugin for integrating Puck visual page builder. Prior to 0.6.23, all /api/puck/* CRUD endpoint handlers registered by createPuckPlugin() called Payload's ",
+        "published": "2026-04-07T21:17:18.160"
+      },
+      {
+        "cve_id": "CVE-2026-1346",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "IBM Verify Identity Access Container 11.0 through 11.0.2 and IBM Security Verify Access Container 10.0 through 10.0.9.1 and IBM Verify Identity Access 11.0 through 11.0.2 and IBM Security Verify Acces",
+        "published": "2026-04-08T01:16:40.750"
+      },
+      {
+        "cve_id": "CVE-2026-39847",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Emissary is a P2P based data-driven workflow engine. Prior to 8.39.0, GitHub Actions workflow files contained shell injection points where user-controlled workflow_dispatch inputs were interpolated di",
-        "published": "2026-04-07T17:16:33.307"
+        "description": "Emmett is a full-stack Python web framework designed with simplicity. From 2.5.0 to before 2.8.1, the RSGI static handler for Emmett's internal assets (/__emmett__ paths) is vulnerable to path travers",
+        "published": "2026-04-07T22:16:23.793"
       },
       {
-        "cve_id": "CVE-2026-35573",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "ChurchCRM is an open-source church management system. Prior to 6.5.3, a path traversal vulnerability in ChurchCRM's backup restore functionality allows authenticated administrators to upload arbitrary",
-        "published": "2026-04-07T18:16:41.760"
-      },
-      {
-        "cve_id": "CVE-2026-39339",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "ChurchCRM is an open-source church management system. Prior to 7.1.0, a  critical authentication bypass vulnerability in ChurchCRM's API middleware (ChurchCRM/Slim/Middleware/AuthMiddleware.php) allow",
-        "published": "2026-04-07T18:16:45.880"
-      },
-      {
-        "cve_id": "CVE-2026-39305",
+        "cve_id": "CVE-2026-39846",
         "severity": "CRITICAL",
         "base_score": 9.0,
-        "description": "PraisonAI is a multi-agent teams system. Prior to 1.5.113, the Action Orchestrator feature contains a Path Traversal vulnerability that allows an attacker (or compromised agent) to write to arbitrary ",
-        "published": "2026-04-07T17:16:36.323"
+        "description": "SiYuan is a personal knowledge management system. Prior to 3.6.4, a malicious note synced to another user can trigger remote code execution in the SiYuan Electron desktop client. The root cause is tha",
+        "published": "2026-04-07T22:16:23.597"
       },
       {
-        "cve_id": "CVE-2026-39328",
-        "severity": "HIGH",
-        "base_score": 8.9,
-        "description": "ChurchCRM is an open-source church management system. Prior to 7.1.0, a stored cross-site scripting vulnerability exists in ChurchCRM's person profile editing functionality. Non-administrative users w",
-        "published": "2026-04-07T18:16:44.043"
-      },
-      {
-        "cve_id": "CVE-2026-22683",
+        "cve_id": "CVE-2026-3357",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Windmill versions 1.56.0 through 1.614.0 contain a missing authorization vulnerability that allows users with the Operator role to perform prohibited entity creation and modification actions via the b",
-        "published": "2026-04-07T17:16:27.037"
+        "description": "IBM Langflow Desktop 1.6.0 through 1.8.2 Langflow could allow an authenticated user to execute arbitrary code on the system, caused by an insecure default setting which permits the deserialization of ",
+        "published": "2026-04-08T01:16:41.057"
       },
       {
-        "cve_id": "CVE-2026-27314",
+        "cve_id": "CVE-2026-3499",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Privilege escalation\u00a0in Apache Cassandra 5.0 on an mTLS environment using MutualTlsAuthenticator\u00a0allows a user with only CREATE permission\u00a0to associate their own certificate identity with an arbitrary",
-        "published": "2026-04-07T17:16:27.693"
+        "description": "The Product Feed PRO for WooCommerce by AdTribes \u2013 Product Feeds for WooCommerce plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions 13.4.6 through 13.5.2.1. This is due to mi",
+        "published": "2026-04-08T02:16:04.237"
       },
       {
-        "cve_id": "CVE-2026-35610",
+        "cve_id": "CVE-2026-24913",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "PolarLearn is a free and open-source learning program. In 0-PRERELEASE-14 and earlier, setCustomPassword(userId, password) and deleteUser(userId)  in the account-management module used an inverted adm",
-        "published": "2026-04-07T17:16:35.260"
+        "description": "SQL Injection vulnerability exists in MATCHA INVOICE 2.6.6 and earlier. If this vulnerability is exploited, information stored in the database may be obtained or altered by a user who can log in to th",
+        "published": "2026-04-08T06:16:27.073"
       },
       {
-        "cve_id": "CVE-2026-39317",
+        "cve_id": "CVE-2026-1342",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "ChurchCRM is an open-source church management system. Prior to 7.1.0, a SQL injection vulnerability exists in ChurchCRM's SettingsIndividual.php where user-controlled array keys from the type POST par",
-        "published": "2026-04-07T18:16:42.667"
+        "base_score": 8.5,
+        "description": "IBM Verify Identity Access Container 11.0 through 11.0.2 and IBM Security Verify Access Container 10.0 through 10.0.9.1 and IBM Verify Identity Access 11.0 through 11.0.2 and IBM Security Verify Acces",
+        "published": "2026-04-08T00:16:03.860"
       },
       {
-        "cve_id": "CVE-2026-39318",
+        "cve_id": "CVE-2026-4788",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "ChurchCRM is an open-source church management system. Prior to 7.1.0, the GroupPropsFormRowOps.php file contains a SQL injection vulnerability. User input in the Field parameter is directly inserted i",
-        "published": "2026-04-07T18:16:42.810"
+        "base_score": 8.4,
+        "description": "IBM Tivoli Netcool Impact 7.1.0.0 through 7.1.0.37 stores sensitive information in log files that could be read by a local user.",
+        "published": "2026-04-08T01:16:41.220"
       },
       {
-        "cve_id": "CVE-2026-39319",
+        "cve_id": "CVE-2026-34045",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "ChurchCRM is an open-source church management system. Prior to 7.1.0, a second order SQL injection vulnerability was found in the endpoint /FundRaiserEditor.php in ChurchCRM. A user has to be authenti",
-        "published": "2026-04-07T18:16:42.950"
+        "base_score": 8.2,
+        "description": "Podman Desktop is a graphical tool for developing on containers and Kubernetes. Prior to 1.26.2, an unauthenticated HTTP server exposed by Podman Desktop allows any network attacker to remotely trigge",
+        "published": "2026-04-07T21:17:17.557"
       },
       {
-        "cve_id": "CVE-2026-39323",
+        "cve_id": "CVE-2026-5726",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "ChurchCRM is an open-source church management system. Prior to 7.1.0, a critical SQL injection vulnerability exists in ChurchCRM's PropertyTypeEditor.php where the Name and Description POST parameters",
-        "published": "2026-04-07T18:16:43.240"
+        "base_score": 7.8,
+        "description": "ASDA-Soft Stack-based Buffer Overflow Vulnerability",
+        "published": "2026-04-08T03:16:07.700"
       },
       {
-        "cve_id": "CVE-2026-39326",
+        "cve_id": "CVE-2026-35533",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "ChurchCRM is an open-source church management system. Prior to 7.1.0, an SQL injection vulnerability was found in the endpoint /PropertyTypeEditor.php in ChurchCRM. Authenticated users with the role i",
-        "published": "2026-04-07T18:16:43.690"
+        "base_score": 7.7,
+        "description": "mise manages dev tools like node, python, cmake, and terraform. From 2026.2.18 through 2026.4.5, mise loads trust-control settings from a local project .mise.toml before the trust check runs. An attac",
+        "published": "2026-04-07T21:17:17.870"
       },
       {
-        "cve_id": "CVE-2026-39327",
+        "cve_id": "CVE-2026-29181",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "ChurchCRM is an open-source church management system. Prior to 7.1.0, an SQL injection vulnerability was found in the endpoint /MemberRoleChange.php in ChurchCRM 7.0.5. Authenticated users with the ro",
-        "published": "2026-04-07T18:16:43.883"
+        "base_score": 7.5,
+        "description": "OpenTelemetry-Go is the Go implementation of OpenTelemetry. From 1.36.0 to 1.40.0, multi-value baggage: header extraction parses each header field-value independently and aggregates members across val",
+        "published": "2026-04-07T21:17:16.003"
       },
       {
-        "cve_id": "CVE-2026-39329",
+        "cve_id": "CVE-2026-31790",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "ChurchCRM is an open-source church management system. Prior to 7.1.0, an SQL injection vulnerability was identified in /EventNames.php in ChurchCRM. Authenticated users with AddEvent privileges can in",
-        "published": "2026-04-07T18:16:44.187"
+        "base_score": 7.5,
+        "description": "Issue summary: Applications using RSASVE key encapsulation to establish\na secret encryption key can send contents of an uninitialized memory buffer to\na malicious peer.\n\nImpact summary: The uninitiali",
+        "published": "2026-04-07T22:16:21.770"
       },
       {
-        "cve_id": "CVE-2026-39330",
+        "cve_id": "CVE-2026-5747",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "ChurchCRM is an open-source church management system. Prior to 7.1.0, an SQL injection vulnerability was found in the endpoint /PropertyAssign.php in ChurchCRM. Authenticated users with the role Manag",
-        "published": "2026-04-07T18:16:44.327"
+        "base_score": 7.5,
+        "description": "An out-of-bounds write issue in the virtio PCI transport in Amazon Firecracker 1.13.0 through 1.14.3 and 1.15.0 on x86_64 and aarch64 might allow a local guest user with root privileges to crash the F",
+        "published": "2026-04-08T00:16:05.657"
+      },
+      {
+        "cve_id": "CVE-2026-32280",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "During chain building, the amount of work that is done is not correctly limited when a large number of intermediate certificates are passed in VerifyOptions.Intermediates, which can lead to a denial o",
+        "published": "2026-04-08T02:16:03.247"
+      },
+      {
+        "cve_id": "CVE-2026-4338",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The ActivityPub WordPress plugin before 8.0.2 does not properly filter posts to be displayed, allowed unauthenticated users to access drafts/scheduled/pending posts",
+        "published": "2026-04-08T07:16:22.400"
       }
     ]
   },
