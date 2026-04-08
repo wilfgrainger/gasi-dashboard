@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-08T13:00:07.824356+00:00",
+  "generated_at": "2026-04-08T16:51:47.096093+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 11,
-        "score": 3.0,
+        "value": 8,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -228,10 +228,17 @@
     ]
   },
   "nvd": {
-    "total": 497,
-    "critical_count": 11,
-    "high_count": 34,
+    "total": 442,
+    "critical_count": 8,
+    "high_count": 45,
     "cves": [
+      {
+        "cve_id": "CVE-2026-39337",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "ChurchCRM is an open-source church management system. Prior to 7.1.0, critical pre-authentication remote code execution vulnerability in ChurchCRM's setup wizard allows unauthenticated attackers to in",
+        "published": "2026-04-07T18:16:45.630"
+      },
       {
         "cve_id": "CVE-2026-23696",
         "severity": "CRITICAL",
@@ -240,137 +247,130 @@
         "published": "2026-04-07T17:16:27.247"
       },
       {
-        "cve_id": "CVE-2021-4473",
+        "cve_id": "CVE-2026-39355",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Tianxin Internet Behavior Management System contains a command injection vulnerability in the Reporter component endpoint that allows unauthenticated attackers to execute arbitrary commands by supplyi",
-        "published": "2026-04-07T13:16:44.540"
+        "base_score": 9.9,
+        "description": "Genealogy is a family tree PHP application. Prior to 5.9.1, a critical broken access control vulnerability in the genealogy application allows any authenticated user to transfer ownership of arbitrary",
+        "published": "2026-04-07T19:16:46.523"
       },
       {
-        "cve_id": "CVE-2026-22679",
+        "cve_id": "CVE-2026-4631",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Weaver (Fanwei) E-cology 10.0 versions prior to\u00a020260312 contain an unauthenticated remote code execution vulnerability in the /papi/esearch/data/devops/dubboApi/debug/method endpoint that allows atta",
-        "published": "2026-04-07T13:16:45.400"
+        "description": "Cockpit's remote login feature passes user-supplied hostnames and usernames from the web interface to the SSH client without validation or sanitization. An attacker with network access to the Cockpit ",
+        "published": "2026-04-07T17:16:38.010"
       },
       {
-        "cve_id": "CVE-2026-5731",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Memory safety bugs present in Firefox ESR 115.34.0, Firefox ESR 140.9.0, Thunderbird ESR 140.9.0, Firefox 149.0.1 and Thunderbird 149.0.1. Some of these bugs showed evidence of memory corruption and w",
-        "published": "2026-04-07T13:16:47.347"
-      },
-      {
-        "cve_id": "CVE-2026-5734",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Memory safety bugs present in Firefox ESR 140.9.0, Thunderbird ESR 140.9.0, Firefox 149.0.1 and Thunderbird 149.0.1. Some of these bugs showed evidence of memory corruption and we presume that with en",
-        "published": "2026-04-07T13:16:47.667"
-      },
-      {
-        "cve_id": "CVE-2026-5735",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Memory safety bugs present in Firefox 149.0.1 and Thunderbird 149.0.1. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been expl",
-        "published": "2026-04-07T13:16:47.763"
-      },
-      {
-        "cve_id": "CVE-2026-20889",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A heap-based buffer overflow vulnerability exists in the x3f_thumb_loader functionality of LibRaw Commit d20315b. A specially crafted malicious file can lead to a heap buffer overflow. An attacker can",
-        "published": "2026-04-07T15:17:35.300"
-      },
-      {
-        "cve_id": "CVE-2026-20911",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A heap-based buffer overflow vulnerability exists in the HuffTable::initval functionality of LibRaw Commit 0b56545 and Commit d20315b. A specially crafted malicious file can lead to a heap buffer over",
-        "published": "2026-04-07T15:17:35.467"
-      },
-      {
-        "cve_id": "CVE-2026-21413",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A heap-based buffer overflow vulnerability exists in the lossless_jpeg_load_raw functionality of LibRaw Commit 0b56545 and Commit d20315b. A specially crafted malicious file can lead to a heap buffer ",
-        "published": "2026-04-07T15:17:35.633"
-      },
-      {
-        "cve_id": "CVE-2026-35490",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "changedetection.io is a free open source web page change detection tool. Prior to 0.54.8, the @login_optionally_required decorator is placed before (outer to) @blueprint.route() instead of after it. I",
-        "published": "2026-04-07T16:16:27.317"
-      },
-      {
-        "cve_id": "CVE-2026-5627",
+        "cve_id": "CVE-2026-35580",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "A path traversal vulnerability exists in mintplex-labs/anything-llm versions up to and including 1.9.1, within the `AgentFlows` component. The vulnerability arises from improper handling of user input",
-        "published": "2026-04-07T14:16:24.460"
+        "description": "Emissary is a P2P based data-driven workflow engine. Prior to 8.39.0, GitHub Actions workflow files contained shell injection points where user-controlled workflow_dispatch inputs were interpolated di",
+        "published": "2026-04-07T17:16:33.307"
       },
       {
-        "cve_id": "CVE-2026-23818",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability has been identified in the graphical user interface (GUI) of HPE Aruba Networking Private 5G Core On-Prem that could allow an attacker to abuse an open redirect vulnerability in the lo",
-        "published": "2026-04-07T13:16:45.587"
+        "cve_id": "CVE-2026-35573",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "ChurchCRM is an open-source church management system. Prior to 6.5.3, a path traversal vulnerability in ChurchCRM's backup restore functionality allows authenticated administrators to upload arbitrary",
+        "published": "2026-04-07T18:16:41.760"
       },
       {
-        "cve_id": "CVE-2026-5732",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Incorrect boundary conditions, integer overflow in the Graphics: Text component. This vulnerability affects Firefox < 149.0.2, Firefox ESR < 140.9.1, Thunderbird < 149.0.2, and Thunderbird < 140.9.1.",
-        "published": "2026-04-07T13:16:47.463"
+        "cve_id": "CVE-2026-39339",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "ChurchCRM is an open-source church management system. Prior to 7.1.0, a  critical authentication bypass vulnerability in ChurchCRM's API middleware (ChurchCRM/Slim/Middleware/AuthMiddleware.php) allow",
+        "published": "2026-04-07T18:16:45.880"
       },
       {
-        "cve_id": "CVE-2026-5733",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Incorrect boundary conditions in the Graphics: WebGPU component. This vulnerability affects Firefox < 149.0.2 and Thunderbird < 149.0.2.",
-        "published": "2026-04-07T13:16:47.567"
+        "cve_id": "CVE-2026-39305",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "PraisonAI is a multi-agent teams system. Prior to 1.5.113, the Action Orchestrator feature contains a Path Traversal vulnerability that allows an attacker (or compromised agent) to write to arbitrary ",
+        "published": "2026-04-07T17:16:36.323"
       },
       {
-        "cve_id": "CVE-2026-35463",
+        "cve_id": "CVE-2026-39328",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "pyLoad is a free and open-source download manager written in Python. In 0.5.0b3.dev96 and earlier, the ADMIN_ONLY_OPTIONS protection mechanism restricts security-critical configuration values (reconne",
-        "published": "2026-04-07T15:17:44.363"
+        "base_score": 8.9,
+        "description": "ChurchCRM is an open-source church management system. Prior to 7.1.0, a stored cross-site scripting vulnerability exists in ChurchCRM's person profile editing functionality. Non-administrative users w",
+        "published": "2026-04-07T18:16:44.043"
       },
       {
-        "cve_id": "CVE-2026-35517",
+        "cve_id": "CVE-2026-22683",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "FTLDNS (pihole-FTL) provides an interactive API and also generates statistics for Pi-hole's Web interface. From 6.0 to before 6.6, the Pi-hole FTL engine contains a Remote Code Execution (RCE) vulnera",
-        "published": "2026-04-07T16:16:28.093"
+        "description": "Windmill versions 1.56.0 through 1.614.0 contain a missing authorization vulnerability that allows users with the Operator role to perform prohibited entity creation and modification actions via the b",
+        "published": "2026-04-07T17:16:27.037"
       },
       {
-        "cve_id": "CVE-2026-35518",
+        "cve_id": "CVE-2026-27314",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "FTLDNS (pihole-FTL) provides an interactive API and also generates statistics for Pi-hole's Web interface. From 6.0 to before 6.6, the Pi-hole FTL engine contains a Remote Code Execution (RCE) vulnera",
-        "published": "2026-04-07T16:16:28.243"
+        "description": "Privilege escalation\u00a0in Apache Cassandra 5.0 on an mTLS environment using MutualTlsAuthenticator\u00a0allows a user with only CREATE permission\u00a0to associate their own certificate identity with an arbitrary",
+        "published": "2026-04-07T17:16:27.693"
       },
       {
-        "cve_id": "CVE-2026-35519",
+        "cve_id": "CVE-2026-35610",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "FTLDNS (pihole-FTL) provides an interactive API and also generates statistics for Pi-hole's Web interface. From 6.0 to before 6.6, the Pi-hole FTL engine contains a Remote Code Execution (RCE) vulnera",
-        "published": "2026-04-07T16:16:28.397"
+        "description": "PolarLearn is a free and open-source learning program. In 0-PRERELEASE-14 and earlier, setCustomPassword(userId, password) and deleteUser(userId)  in the account-management module used an inverted adm",
+        "published": "2026-04-07T17:16:35.260"
       },
       {
-        "cve_id": "CVE-2026-35520",
+        "cve_id": "CVE-2026-39317",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "FTLDNS (pihole-FTL) provides an interactive API and also generates statistics for Pi-hole's Web interface. From 6.0 to before 6.6, the Pi-hole FTL engine contains a Remote Code Execution (RCE) vulnera",
-        "published": "2026-04-07T16:16:28.550"
+        "description": "ChurchCRM is an open-source church management system. Prior to 7.1.0, a SQL injection vulnerability exists in ChurchCRM's SettingsIndividual.php where user-controlled array keys from the type POST par",
+        "published": "2026-04-07T18:16:42.667"
       },
       {
-        "cve_id": "CVE-2026-35521",
+        "cve_id": "CVE-2026-39318",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "FTLDNS (pihole-FTL) provides an interactive API and also generates statistics for Pi-hole's Web interface. From 6.0 to before 6.6, the Pi-hole FTL engine contains a Remote Code Execution (RCE) vulnera",
-        "published": "2026-04-07T16:16:28.693"
+        "description": "ChurchCRM is an open-source church management system. Prior to 7.1.0, the GroupPropsFormRowOps.php file contains a SQL injection vulnerability. User input in the Field parameter is directly inserted i",
+        "published": "2026-04-07T18:16:42.810"
+      },
+      {
+        "cve_id": "CVE-2026-39319",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "ChurchCRM is an open-source church management system. Prior to 7.1.0, a second order SQL injection vulnerability was found in the endpoint /FundRaiserEditor.php in ChurchCRM. A user has to be authenti",
+        "published": "2026-04-07T18:16:42.950"
+      },
+      {
+        "cve_id": "CVE-2026-39323",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "ChurchCRM is an open-source church management system. Prior to 7.1.0, a critical SQL injection vulnerability exists in ChurchCRM's PropertyTypeEditor.php where the Name and Description POST parameters",
+        "published": "2026-04-07T18:16:43.240"
+      },
+      {
+        "cve_id": "CVE-2026-39326",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "ChurchCRM is an open-source church management system. Prior to 7.1.0, an SQL injection vulnerability was found in the endpoint /PropertyTypeEditor.php in ChurchCRM. Authenticated users with the role i",
+        "published": "2026-04-07T18:16:43.690"
+      },
+      {
+        "cve_id": "CVE-2026-39327",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "ChurchCRM is an open-source church management system. Prior to 7.1.0, an SQL injection vulnerability was found in the endpoint /MemberRoleChange.php in ChurchCRM 7.0.5. Authenticated users with the ro",
+        "published": "2026-04-07T18:16:43.883"
+      },
+      {
+        "cve_id": "CVE-2026-39329",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "ChurchCRM is an open-source church management system. Prior to 7.1.0, an SQL injection vulnerability was identified in /EventNames.php in ChurchCRM. Authenticated users with AddEvent privileges can in",
+        "published": "2026-04-07T18:16:44.187"
+      },
+      {
+        "cve_id": "CVE-2026-39330",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "ChurchCRM is an open-source church management system. Prior to 7.1.0, an SQL injection vulnerability was found in the endpoint /PropertyAssign.php in ChurchCRM. Authenticated users with the role Manag",
+        "published": "2026-04-07T18:16:44.327"
       }
     ]
   },
