@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-09T05:45:04.274535+00:00",
+  "generated_at": "2026-04-09T09:02:29.282500+00:00",
   "threat_score": {
-    "score": 6.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
-        "score": 2.0,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -238,37 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 488,
-    "critical_count": 2,
-    "high_count": 4,
+    "total": 468,
+    "critical_count": 1,
+    "high_count": 1,
     "cves": [
-      {
-        "cve_id": "CVE-2026-3535",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The DSGVO Google Web Fonts GDPR plugin for WordPress is vulnerable to arbitrary file upload due to missing file type validation in the `DSGVOGWPdownloadGoogleFonts()` function in all versions up to, a",
-        "published": "2026-04-08T07:16:21.417"
-      },
       {
         "cve_id": "CVE-2026-25776",
         "severity": "CRITICAL",
         "base_score": 9.8,
         "description": "Movable Type provided by Six Apart Ltd. contains a code injection vulnerability which may allow an attacker to execute arbitrary Perl script.",
         "published": "2026-04-08T09:16:20.360"
-      },
-      {
-        "cve_id": "CVE-2026-24913",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "SQL Injection vulnerability exists in MATCHA INVOICE 2.6.6 and earlier. If this vulnerability is exploited, information stored in the database may be obtained or altered by a user who can log in to th",
-        "published": "2026-04-08T06:16:27.073"
-      },
-      {
-        "cve_id": "CVE-2026-4338",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The ActivityPub WordPress plugin before 8.0.2 does not properly filter posts to be displayed, allowed unauthenticated users to access drafts/scheduled/pending posts",
-        "published": "2026-04-08T07:16:22.400"
       },
       {
         "cve_id": "CVE-2026-33088",
@@ -278,69 +257,6 @@
         "published": "2026-04-08T09:16:21.213"
       },
       {
-        "cve_id": "CVE-2026-4808",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The Gerador de Certificados \u2013 DevApps plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the moveUploadedFile() function in all versions up to, and inc",
-        "published": "2026-04-08T07:16:22.517"
-      },
-      {
-        "cve_id": "CVE-2026-3480",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "The WP Blockade plugin for WordPress is vulnerable to Missing Authorization in all versions up to and including 0.9.14. The plugin registers an admin_post action hook 'wp-blockade-shortcode-render' th",
-        "published": "2026-04-08T07:16:21.243"
-      },
-      {
-        "cve_id": "CVE-2026-3311",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The The Plus Addons for Elementor \u2013 Addons for Elementor, Page Templates, Widgets, Mega Menu, WooCommerce plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's Progress Ba",
-        "published": "2026-04-08T06:16:28.807"
-      },
-      {
-        "cve_id": "CVE-2026-3142",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The Pinterest Site Verification plugin using Meta Tag plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'post_var' parameter in versions up to, and including, 1.8 due to insuff",
-        "published": "2026-04-08T07:16:20.870"
-      },
-      {
-        "cve_id": "CVE-2026-3618",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The Columns by BestWebSoft plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'id' shortcode attribute of the [print_clmns] shortcode in all versions up to and including 1.0.3. ",
-        "published": "2026-04-08T07:16:21.887"
-      },
-      {
-        "cve_id": "CVE-2026-4871",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The Sports Club Management plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'before' and 'after' attributes of the `scm_member_data` shortcode in all versions up to, and inclu",
-        "published": "2026-04-08T07:16:22.690"
-      },
-      {
-        "cve_id": "CVE-2026-5506",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The Wavr plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's `wave` shortcode in all versions up to, and including, 0.2.6. This is due to insufficient input sanitization",
-        "published": "2026-04-08T07:16:23.203"
-      },
-      {
-        "cve_id": "CVE-2026-5508",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The WowPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's `wowpress` shortcode in all versions up to, and including, 1.0.0. This is due to insufficient input sani",
-        "published": "2026-04-08T07:16:23.367"
-      },
-      {
-        "cve_id": "CVE-2026-4655",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The Element Pack Addons for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the SVG Image Widget in versions up to and including 8.4.2. This is due to insufficient inpu",
-        "published": "2026-04-08T08:16:24.407"
-      },
-      {
         "cve_id": "CVE-2026-1396",
         "severity": "MEDIUM",
         "base_score": 6.4,
@@ -348,39 +264,123 @@
         "published": "2026-04-08T09:16:20.167"
       },
       {
-        "cve_id": "CVE-2026-27787",
-        "severity": "MEDIUM",
-        "base_score": 5.4,
-        "description": "Cross-site scripting vulnerability exists in MATCHA SNS 1.3.9 and earlier. If this vulnerability is exploited, an arbitrary script may be executed on the web browser of the user who accessed the websi",
-        "published": "2026-04-08T06:16:28.480"
+        "cve_id": "CVE-2026-39464",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "Server-Side Request Forgery (SSRF) vulnerability in SeedProd Coming Soon Page, Under Construction & Maintenance Mode by SeedProd coming-soon allows Server Side Request Forgery.This issue affects Comin",
+        "published": "2026-04-08T09:16:21.667"
       },
       {
-        "cve_id": "CVE-2025-1794",
-        "severity": "MEDIUM",
-        "base_score": 5.4,
-        "description": "The AM LottiePlayer plugin for WordPress is vulnerable to Stored Cross-Site Scripting via uploaded SVG files in all versions up to, and including, 3.6.0 due to insufficient input sanitization and outp",
-        "published": "2026-04-08T07:16:19.643"
+        "cve_id": "CVE-2026-39466",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in WPMU DEV - Your All-in-One WordPress Platform Broken Link Checker broken-link-checker allows Blind",
+        "published": "2026-04-08T09:16:21.830"
       },
       {
-        "cve_id": "CVE-2026-3781",
-        "severity": "MEDIUM",
-        "base_score": 5.4,
-        "description": "The Attendance Manager plugin for WordPress is vulnerable to SQL Injection via the 'attmgr_off' parameter in all versions up to, and including, 0.6.2. This is due to insufficient escaping on the user ",
-        "published": "2026-04-08T07:16:22.067"
+        "cve_id": "CVE-2026-39469",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "Exposure of Sensitive System Information to an Unauthorized Control Sphere vulnerability in Softaculous PageLayer pagelayer allows Retrieve Embedded Sensitive Data.This issue affects PageLayer: from n",
+        "published": "2026-04-08T09:16:21.970"
       },
       {
-        "cve_id": "CVE-2026-5082",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "Amon2::Plugin::Web::CSRFDefender versions from 7.00 through 7.03 for Perl generate an insecure session id.\n\nThe generate_session_id function will attempt to read bytes from the /dev/urandom device, bu",
-        "published": "2026-04-08T06:16:28.993"
+        "cve_id": "CVE-2026-39473",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "Insertion of Sensitive Information Into Sent Data vulnerability in P\u00e4r Thernstr\u00f6m Simple History simple-history allows Retrieve Embedded Sensitive Data.This issue affects Simple History: from n/a thro",
+        "published": "2026-04-08T09:16:22.110"
       },
       {
-        "cve_id": "CVE-2026-5083",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "Ado::Sessions versions through 0.935 for Perl generates insecure session ids.\n\nThe session id is generated from a SHA-1 hash seeded with the built-in rand function, the epoch time, and the PID. The PI",
-        "published": "2026-04-08T06:16:29.163"
+        "cve_id": "CVE-2026-39475",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Syed Balkhi User Feedback userfeedback-lite allows Blind SQL Injection.This issue affects User Fee",
+        "published": "2026-04-08T09:16:22.257"
+      },
+      {
+        "cve_id": "CVE-2026-39476",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "Missing Authorization vulnerability in Syed Balkhi User Feedback userfeedback-lite allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects User Feedback: from n/a th",
+        "published": "2026-04-08T09:16:22.393"
+      },
+      {
+        "cve_id": "CVE-2026-39477",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "Missing Authorization vulnerability in Brainstorm Force CartFlows cartflows allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects CartFlows: from n/a through <= 2.",
+        "published": "2026-04-08T09:16:22.527"
+      },
+      {
+        "cve_id": "CVE-2026-39479",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Brainstorm Force OttoKit suretriggers allows Blind SQL Injection.This issue affects OttoKit: from ",
+        "published": "2026-04-08T09:16:22.670"
+      },
+      {
+        "cve_id": "CVE-2026-39482",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in PublishPress Post Expirator post-expirator allows DOM-Based XSS.This issue affects Post Expirator:",
+        "published": "2026-04-08T09:16:22.830"
+      },
+      {
+        "cve_id": "CVE-2026-39483",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Hidekazu Ishikawa VK All in One Expansion Unit vk-all-in-one-expansion-unit allows Stored XSS.This",
+        "published": "2026-04-08T09:16:22.970"
+      },
+      {
+        "cve_id": "CVE-2026-39484",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "URL Redirection to Untrusted Site ('Open Redirect') vulnerability in John Darrel Hide My WP Ghost hide-my-wp allows Phishing.This issue affects Hide My WP Ghost: from n/a through < 7.0.00.",
+        "published": "2026-04-08T09:16:23.110"
+      },
+      {
+        "cve_id": "CVE-2026-39485",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "Missing Authorization vulnerability in embedplus Youtube Embed Plus youtube-embed-plus allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Youtube Embed Plus: fr",
+        "published": "2026-04-08T09:16:23.253"
+      },
+      {
+        "cve_id": "CVE-2026-39486",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in WP Chill Download Monitor download-monitor allows Blind SQL Injection.This issue affects Download ",
+        "published": "2026-04-08T09:16:23.393"
+      },
+      {
+        "cve_id": "CVE-2026-39487",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in ameliabooking Amelia ameliabooking allows Blind SQL Injection.This issue affects Amelia: from n/a ",
+        "published": "2026-04-08T09:16:23.533"
+      },
+      {
+        "cve_id": "CVE-2026-39488",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "Missing Authorization vulnerability in SureCart SureCart surecart allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects SureCart: from n/a through <= 4.0.2.",
+        "published": "2026-04-08T09:16:23.670"
+      },
+      {
+        "cve_id": "CVE-2026-39495",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in NSquared Simply Schedule Appointments simply-schedule-appointments allows Blind SQL Injection.This",
+        "published": "2026-04-08T09:16:23.800"
+      },
+      {
+        "cve_id": "CVE-2026-39496",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in YayCommerce YayMail yaymail allows Blind SQL Injection.This issue affects YayMail: from n/a throug",
+        "published": "2026-04-08T09:16:23.953"
       }
     ]
   },
