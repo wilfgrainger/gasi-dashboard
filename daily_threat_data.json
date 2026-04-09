@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-09T16:57:22.702709+00:00",
+  "generated_at": "2026-04-09T20:40:02.540428+00:00",
   "threat_score": {
-    "score": 5.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 4,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 306,
-    "critical_count": 1,
-    "high_count": 18,
+    "total": 285,
+    "critical_count": 4,
+    "high_count": 24,
     "cves": [
       {
-        "cve_id": "CVE-2026-2942",
+        "cve_id": "CVE-2026-39888",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "PraisonAI is a multi-agent teams system. Prior to 1.5.115, execute_code() in praisonaiagents.tools.python_tools defaults to sandbox_mode=\"sandbox\", which runs user code in a subprocess wrapped with a ",
+        "published": "2026-04-08T21:17:00.990"
+      },
+      {
+        "cve_id": "CVE-2026-39890",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "The ProSolution WP Client plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'proSol_fileUploadProcess' function in all versions up to, and includi",
-        "published": "2026-04-08T19:25:19.820"
+        "description": "PraisonAI is a multi-agent teams system. Prior to 4.5.115, the AgentService.loadAgentFromFile method uses the js-yaml library to parse YAML files without disabling dangerous tags (such as !!js/functio",
+        "published": "2026-04-08T21:17:01.267"
       },
       {
-        "cve_id": "CVE-2026-35169",
+        "cve_id": "CVE-2026-40035",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Unfurl through 2025.08 contains an improper input validation vulnerability in config parsing that enables Flask debug mode by default. The debug configuration value is read as a string and passed dire",
+        "published": "2026-04-08T22:16:24.010"
+      },
+      {
+        "cve_id": "CVE-2026-39860",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "Nix is a package manager for Linux and other Unix systems. A bug in the fix for CVE-2024-27297 allowed for arbitrary overwrites of files writable by the Nix process orchestrating the builds (typically",
+        "published": "2026-04-08T21:17:00.157"
+      },
+      {
+        "cve_id": "CVE-2026-39891",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "LORIS (Longitudinal Online Research and Imaging System) is a self-hosted web application that provides data- and project-management for neuroimaging research. From  to before 27.0.3 and 28.0.1, the he",
-        "published": "2026-04-08T19:25:23.447"
+        "base_score": 8.8,
+        "description": "PraisonAI is a multi-agent teams system. Prior to 4.5.115, the create_agent_centric_tools() function returns tools (like acp_create_file) that process file content using template rendering. When user ",
+        "published": "2026-04-08T21:17:01.403"
       },
       {
-        "cve_id": "CVE-2026-35478",
+        "cve_id": "CVE-2026-5866",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "InvenTree is an Open Source Inventory Management System. From 0.16.0 to before 1.2.7, any authenticated InvenTree user can create a valid API token attributed to any other user in the system \u2014 includi",
-        "published": "2026-04-08T20:16:24.630"
+        "base_score": 8.8,
+        "description": "Use after free in Media in Google Chrome prior to 147.0.7727.55 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-04-08T22:16:26.130"
       },
       {
-        "cve_id": "CVE-2026-33466",
+        "cve_id": "CVE-2026-5908",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Integer overflow in Media in Google Chrome prior to 147.0.7727.55 allowed a remote attacker to potentially exploit heap corruption via a crafted video file. (Chromium security severity: Low)",
+        "published": "2026-04-08T22:16:30.677"
+      },
+      {
+        "cve_id": "CVE-2026-5909",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Integer overflow in Media in Google Chrome prior to 147.0.7727.55 allowed a remote attacker to potentially exploit heap corruption via a crafted video file. (Chromium security severity: Low)",
+        "published": "2026-04-08T22:16:30.790"
+      },
+      {
+        "cve_id": "CVE-2026-5910",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Integer overflow in Media in Google Chrome prior to 147.0.7727.55 allowed a remote attacker to potentially exploit heap corruption via a crafted video file. (Chromium security severity: Low)",
+        "published": "2026-04-08T22:16:30.900"
+      },
+      {
+        "cve_id": "CVE-2026-5912",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Integer overflow in WebRTC in Google Chrome prior to 147.0.7727.55 allowed a remote attacker to perform an out of bounds memory write via a crafted HTML page. (Chromium security severity: Low)",
+        "published": "2026-04-08T22:16:31.110"
+      },
+      {
+        "cve_id": "CVE-2026-5914",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Type Confusion in CSS in Google Chrome prior to 147.0.7727.55 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted Chrome Exte",
+        "published": "2026-04-08T22:16:31.343"
+      },
+      {
+        "cve_id": "CVE-2026-39429",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "kcp is a Kubernetes-like control plane for form-factors and use-cases beyond Kubernetes and container workloads. Prior to 0.30.3 and 0.29.3, the cache server is directly exposed by the root shard and ",
+        "published": "2026-04-08T21:16:59.313"
+      },
+      {
+        "cve_id": "CVE-2026-5436",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Improper Limitation of a Pathname to a Restricted Directory (CWE-22) in Logstash can lead to arbitrary file write and potentially remote code execution via Relative Path Traversal (CAPEC-139). The arc",
-        "published": "2026-04-08T18:26:00.557"
+        "description": "The MW WP Form plugin for WordPress is vulnerable to Arbitrary File Move/Read in all versions up to and including 5.1.1. This is due to insufficient validation of the $name parameter (upload field key",
+        "published": "2026-04-08T21:17:01.690"
       },
       {
-        "cve_id": "CVE-2026-27806",
+        "cve_id": "CVE-2026-5907",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Insufficient data validation in Media in Google Chrome prior to 147.0.7727.55 allowed a remote attacker to perform an out of bounds memory read via a crafted video file. (Chromium security severity: L",
+        "published": "2026-04-08T22:16:30.580"
+      },
+      {
+        "cve_id": "CVE-2026-5915",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Insufficient validation of untrusted input in WebML in Google Chrome prior to 147.0.7727.55 allowed a remote attacker to perform an out of bounds memory write via a crafted HTML page. (Chromium securi",
+        "published": "2026-04-08T22:16:31.460"
+      },
+      {
+        "cve_id": "CVE-2026-40029",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "Fleet is open source device management software. Prior to 4.81.1, the Orbit agent's FileVault disk encryption key rotation flow on collects a local user's password via a GUI dialog and interpolates it",
-        "published": "2026-04-08T19:25:13.543"
+        "description": "parseusbs before 1.9 contains an OS command injection vulnerability in parseUSBs.py where LNK file paths are passed unsanitized into an os.popen() shell command, allowing arbitrary command execution v",
+        "published": "2026-04-08T22:16:23.303"
       },
       {
-        "cve_id": "CVE-2026-33461",
+        "cve_id": "CVE-2026-40030",
         "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Incorrect Authorization (CWE-863) in Kibana can lead to information disclosure via Privilege Abuse (CAPEC-122). A user with limited Fleet privileges can exploit an internal API endpoint to retrieve se",
-        "published": "2026-04-08T17:21:19.153"
+        "base_score": 7.8,
+        "description": "parseusbs before 1.9 contains an OS command injection vulnerability where the volume listing path argument (-v flag) is passed unsanitized into an os.popen() shell command with ls, allowing arbitrary ",
+        "published": "2026-04-08T22:16:23.483"
       },
       {
-        "cve_id": "CVE-2026-4498",
+        "cve_id": "CVE-2026-40031",
         "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Execution with Unnecessary Privileges (CWE-250) in Kibana\u2019s Fleet plugin debug route handlers can lead reading index data beyond their direct Elasticsearch RBAC scope via Privilege Abuse (CAPEC-122). ",
-        "published": "2026-04-08T17:21:24.300"
+        "base_score": 7.8,
+        "description": "MemProcFS before 5.17 contains multiple unsafe library-loading patterns that enable DLL and shared-library hijacking across six attack surfaces, including bare-name LoadLibraryU and dlopen calls witho",
+        "published": "2026-04-08T22:16:23.650"
       },
       {
-        "cve_id": "CVE-2026-35446",
+        "cve_id": "CVE-2026-40032",
         "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "LORIS (Longitudinal Online Research and Imaging System) is a self-hosted web application that provides data- and project-management for neuroimaging research. From 24.0.0 to before 27.0.3 and 28.0.1, ",
-        "published": "2026-04-08T19:25:24.217"
+        "base_score": 7.8,
+        "description": "UAC (Unix-like Artifacts Collector) before 3.3.0-rc1 contains a command injection vulnerability in the placeholder substitution and command execution pipeline where the _run_command() function passes ",
+        "published": "2026-04-08T22:16:23.827"
       },
       {
-        "cve_id": "CVE-2026-33756",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Saleor is an e-commerce platform. From 2.0.0 to before 3.23.0a3, 3.22.47, 3.21.54, and 3.20.118, Saleor supports query batching by submitting multiple GraphQL operations in a single HTTP request as a ",
-        "published": "2026-04-08T18:26:00.700"
-      },
-      {
-        "cve_id": "CVE-2026-33350",
+        "cve_id": "CVE-2026-39885",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "LORIS (Longitudinal Online Research and Imaging System) is a self-hosted web application that provides data- and project-management for neuroimaging research. Prior to 27.0.3 and 28.0.1, a SQL injecti",
-        "published": "2026-04-08T19:25:21.163"
-      },
-      {
-        "cve_id": "CVE-2026-34392",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "LORIS (Longitudinal Online Research and Imaging System) is a self-hosted web application that provides data- and project-management for neuroimaging research. From 20.0.0 to before 27.0.3 and 28.0.1, ",
-        "published": "2026-04-08T19:25:21.723"
-      },
-      {
-        "cve_id": "CVE-2026-35401",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Saleor is an e-commerce platform. From 2.0.0 to before 3.23.0a3, 3.22.47, 3.21.54, and 3.20.118, a malicious actor can include many GraphQL mutations or queries in a single API call using aliases or c",
-        "published": "2026-04-08T19:25:23.740"
-      },
-      {
-        "cve_id": "CVE-2026-23869",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A denial of service vulnerability exists in React Server Components, affecting the following packages: react-server-dom-parcel, react-server-dom-turbopack and react-server-dom-webpack (versions 19.0.0",
-        "published": "2026-04-08T20:16:23.003"
-      },
-      {
-        "cve_id": "CVE-2026-39863",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Kamailio is an open source implementation of a SIP Signaling Server. Prior to 6.1.1, 6.0.6, and 5.8.8, an out-of-bounds access in the core of Kamailio (formerly OpenSER and SER) allows remote attacker",
-        "published": "2026-04-08T20:16:26.550"
-      },
-      {
-        "cve_id": "CVE-2026-35455",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "immich is a high performance self-hosted photo and video management solution. Prior to 2.7.0, sStored Cross-Site Scripting (XSS) in the 360\u00b0 panorama viewer allows any authenticated user to execute ar",
-        "published": "2026-04-08T19:25:24.357"
-      },
-      {
-        "cve_id": "CVE-2026-5802",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was identified in idachev mcp-javadc up to 1.2.4. Impacted is an unknown function of the component HTTP Interface. Such manipulation of the argument jarFilePath leads to os command inj",
-        "published": "2026-04-08T20:16:27.340"
-      },
-      {
-        "cve_id": "CVE-2026-35476",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "InvenTree is an Open Source Inventory Management System. Prior to 1.2.7 and 1.3.0, a non-staff authenticated user can elevate their account to a staff level via a POST request against their user accou",
-        "published": "2026-04-08T20:16:24.323"
-      },
-      {
-        "cve_id": "CVE-2026-32589",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "A flaw was found in Red Hat Quay's container image upload process. An authenticated user with push access to any repository on the registry can interfere with image uploads in progress by other users,",
-        "published": "2026-04-08T18:25:59.790"
-      },
-      {
-        "cve_id": "CVE-2026-32590",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "A flaw was found in Red Hat Quay's handling of resumable container image layer uploads. The upload process stores intermediate data in the database using a format that, if tampered with, could allow a",
-        "published": "2026-04-08T18:25:59.947"
-      },
-      {
-        "cve_id": "CVE-2025-30650",
-        "severity": "MEDIUM",
-        "base_score": 6.7,
-        "description": "A\u00a0Missing Authentication for Critical Function vulnerability in command processing of Juniper Networks Junos OS allows a privileged local attacker to gain access to line cards running Junos OS Evolved",
-        "published": "2026-04-08T19:24:00.440"
+        "description": "FrontMCP is a TypeScript-first framework for the Model Context Protocol (MCP). Prior to 2.3.0, the mcp-from-openapi library uses @apidevtools/json-schema-ref-parser to dereference $ref pointers in Ope",
+        "published": "2026-04-08T21:17:00.833"
       }
     ]
   },
