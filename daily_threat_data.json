@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-10T08:59:49.718612+00:00",
+  "generated_at": "2026-04-10T12:48:18.536613+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
-        "score": 2.5,
+        "value": 3,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -228,37 +228,16 @@
     ]
   },
   "nvd": {
-    "total": 298,
-    "critical_count": 5,
-    "high_count": 22,
+    "total": 300,
+    "critical_count": 3,
+    "high_count": 20,
     "cves": [
       {
-        "cve_id": "CVE-2026-34177",
+        "cve_id": "CVE-2025-13926",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Canonical LXD versions 4.12 through 6.7 contain an incomplete denylist in isVMLowLevelOptionForbidden (lxd/project/limits/permissions.go), which omits raw.apparmor and raw.qemu.conf from the set of ke",
-        "published": "2026-04-09T10:16:21.653"
-      },
-      {
-        "cve_id": "CVE-2026-34178",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "In Canonical LXD before 6.8, the backup import path validates project restrictions against backup/index.yaml in the supplied tar archive but creates the instance from backup/container/backup.yaml, a s",
-        "published": "2026-04-09T10:16:21.820"
-      },
-      {
-        "cve_id": "CVE-2026-34179",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "In Canonical LXD versions 4.12 through 6.7, the doCertificateUpdate function in lxd/certificates.go does not validate the Type field when handling PUT/PATCH requests to /1.0/certificates/{fingerprint}",
-        "published": "2026-04-09T10:16:21.963"
-      },
-      {
-        "cve_id": "CVE-2025-57735",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "When user logged out, the JWT token the user had authtenticated with was not invalidated, which could lead to reuse of that token in case it was intercepted. In Airflow 3.2 we implemented the mechanis",
-        "published": "2026-04-09T11:16:20.757"
+        "base_score": 9.8,
+        "description": "An attacker could use data obtained by sniffing the network traffic to \nforge packets in order to make arbitrary requests to Contemporary \nControls BASC 20T.",
+        "published": "2026-04-09T20:16:23.807"
       },
       {
         "cve_id": "CVE-2026-39980",
@@ -266,6 +245,13 @@
         "base_score": 9.1,
         "description": "OpenCTI is an open source platform for managing cyber threat intelligence knowledge and observables. Prior to 6.9.5, the safeEjs.ts file does not properly sanitize EJS templates. Users with the Manage",
         "published": "2026-04-09T18:17:02.203"
+      },
+      {
+        "cve_id": "CVE-2026-39912",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "V2Board 1.6.1 through 1.7.4 and Xboard through 0.1.9 expose authentication tokens in HTTP response bodies of the loginWithMailLink endpoint when the login_with_mail_link_enable feature is active. Unau",
+        "published": "2026-04-09T19:16:25.920"
       },
       {
         "cve_id": "CVE-2026-30478",
@@ -345,13 +331,6 @@
         "published": "2026-04-09T16:16:31.087"
       },
       {
-        "cve_id": "CVE-2025-62188",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "An Exposure of Sensitive Information to an Unauthorized Actor vulnerability exists in Apache DolphinScheduler.\n\nThis vulnerability may allow unauthorized actors to access sensitive information, includ",
-        "published": "2026-04-09T10:16:20.260"
-      },
-      {
         "cve_id": "CVE-2026-4660",
         "severity": "HIGH",
         "base_score": 7.5,
@@ -371,6 +350,27 @@
         "base_score": 7.5,
         "description": "BSV Ruby SDK is the Ruby SDK for the BSV blockchain. From 0.1.0 to before 0.8.2, BSV::Network::ARC's failure detection only recognises REJECTED and DOUBLE_SPEND_ATTEMPTED. ARC responses with txStatus ",
         "published": "2026-04-09T18:17:03.043"
+      },
+      {
+        "cve_id": "CVE-2026-5961",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A security vulnerability has been detected in code-projects Simple IT Discussion Forum 1.0. This vulnerability affects unknown code of the file /topic-details.php. The manipulation of the argument pos",
+        "published": "2026-04-09T17:16:33.957"
+      },
+      {
+        "cve_id": "CVE-2026-5962",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was detected in Tenda CH22 1.0.0.6(468). This issue affects the function R7WebsSecurityHandlerfunction of the component httpd. The manipulation results in path traversal. The attack ma",
+        "published": "2026-04-09T17:16:35.037"
+      },
+      {
+        "cve_id": "CVE-2026-5970",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was detected in FoundationAgents MetaGPT up to 0.8.1. This affects the function check_solution of the component HumanEvalBenchmark/MBPPBenchmark. Performing a manipulation results in c",
+        "published": "2026-04-09T18:17:04.497"
       }
     ]
   },
