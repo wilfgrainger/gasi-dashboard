@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-11T01:22:20.377417+00:00",
+  "generated_at": "2026-04-11T05:21:31.505913+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 10,
-        "score": 3.0,
+        "value": 8,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -228,9 +228,9 @@
     ]
   },
   "nvd": {
-    "total": 232,
-    "critical_count": 10,
-    "high_count": 28,
+    "total": 208,
+    "critical_count": 8,
+    "high_count": 26,
     "cves": [
       {
         "cve_id": "CVE-2026-5412",
@@ -238,20 +238,6 @@
         "base_score": 9.9,
         "description": "In Juju versions prior to 2.9.57 and 3.6.21, an authorization issue exists in the Controller facade. An authenticated user can call the CloudSpec API method to extract the cloud credentials used to bo",
         "published": "2026-04-10T13:16:45.780"
-      },
-      {
-        "cve_id": "CVE-2026-5996",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A security vulnerability has been detected in Totolink A7100RU 7.4cu.2313_b20191024. The affected element is the function setAdvancedInfoShow of the file /cgi-bin/cstecgi.cgi of the component CGI Hand",
-        "published": "2026-04-10T02:16:04.043"
-      },
-      {
-        "cve_id": "CVE-2026-5997",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A vulnerability was detected in Totolink A7100RU 7.4cu.2313_b20191024. The impacted element is the function setLoginPasswordCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. The manip",
-        "published": "2026-04-10T02:16:04.247"
       },
       {
         "cve_id": "CVE-2026-6025",
@@ -303,27 +289,6 @@
         "published": "2026-04-10T07:16:20.750"
       },
       {
-        "cve_id": "CVE-2026-6012",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A security vulnerability has been detected in D-Link DIR-513 1.10. This affects the function formSetPassword of the file /goform/formSetPassword of the component POST Request Handler. The manipulation",
-        "published": "2026-04-10T05:16:07.027"
-      },
-      {
-        "cve_id": "CVE-2026-6013",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was detected in D-Link DIR-513 1.10. This vulnerability affects the function formSetRoute of the file /goform/formSetRoute of the component POST Request Handler. The manipulation of th",
-        "published": "2026-04-10T05:16:07.303"
-      },
-      {
-        "cve_id": "CVE-2026-6014",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw has been found in D-Link DIR-513 1.10. This issue affects the function formAdvanceSetup of the file /goform/formAdvanceSetup of the component POST Request Handler. This manipulation of the argu",
-        "published": "2026-04-10T05:16:07.510"
-      },
-      {
         "cve_id": "CVE-2026-6015",
         "severity": "HIGH",
         "base_score": 8.8,
@@ -345,11 +310,18 @@
         "published": "2026-04-10T14:16:36.307"
       },
       {
-        "cve_id": "CVE-2026-4351",
+        "cve_id": "CVE-2026-35643",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Perfmatters plugin for WordPress is vulnerable to arbitrary file overwrite via path traversal in all versions up to, and including, 2.5.9. This is due to the `PMCS::action_handler()` method proces",
-        "published": "2026-04-10T02:16:03.553"
+        "base_score": 8.8,
+        "description": "OpenClaw before 2026.3.22 contains an unvalidated WebView JavascriptInterface vulnerability allowing attackers to inject arbitrary instructions. Untrusted pages can invoke the canvas bridge to execute",
+        "published": "2026-04-10T17:17:04.887"
+      },
+      {
+        "cve_id": "CVE-2026-35595",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "Vikunja is an open-source self-hosted task management platform. Prior to 2.3.0, the CanUpdate check at pkg/models/project_permissions.go:139-148 only requires CanWrite on the new parent project when c",
+        "published": "2026-04-10T17:17:02.910"
       },
       {
         "cve_id": "CVE-2021-47961",
@@ -366,11 +338,39 @@
         "published": "2026-04-10T14:16:25.127"
       },
       {
-        "cve_id": "CVE-2026-25203",
+        "cve_id": "CVE-2026-35653",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "OpenClaw before 2026.3.24 contains an incorrect authorization vulnerability in the POST /reset-profile endpoint that allows authenticated callers with operator.write access to browser.request to bypas",
+        "published": "2026-04-10T17:17:06.170"
+      },
+      {
+        "cve_id": "CVE-2026-28704",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "Samsung MagicINFO 9 Server Incorrect Default Permissions Local Privilege Escalation Vulnerability\n\n\nThis issue affects MagicINFO 9 Server: less than 21.1091.1.",
-        "published": "2026-04-10T02:16:02.767"
+        "description": "Emocheck insecurely loads Dynamic Link Libraries (DLLs). If a crafted DLL file is placed to the same directory, an arbitrary code may be executed with the privilege of the user invoking EmoCheck.",
+        "published": "2026-04-10T07:16:21.023"
+      },
+      {
+        "cve_id": "CVE-2026-33092",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Local privilege escalation due to improper handling of environment variables. The following products are affected: Acronis True Image OEM (macOS) before build 42571, Acronis True Image (macOS) before ",
+        "published": "2026-04-10T14:16:34.880"
+      },
+      {
+        "cve_id": "CVE-2026-35641",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "OpenClaw before 2026.3.24 contains an arbitrary code execution vulnerability in local plugin and hook installation that allows attackers to execute malicious code by crafting a .npmrc file with a git ",
+        "published": "2026-04-10T17:17:04.697"
+      },
+      {
+        "cve_id": "CVE-2026-22750",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "When configuring SSL bundles in Spring Cloud Gateway by using the configuration property\u00a0spring.ssl.bundle, the configuration was silently ignored and the default SSL configuration was used instead.\nN",
+        "published": "2026-04-10T08:16:24.787"
       }
     ]
   },
