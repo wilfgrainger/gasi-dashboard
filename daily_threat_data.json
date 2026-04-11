@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-11T12:36:14.464962+00:00",
+  "generated_at": "2026-04-11T16:26:16.292740+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
+        "value": 3,
         "score": 2.0,
         "max": 3
       },
@@ -228,16 +228,23 @@
     ]
   },
   "nvd": {
-    "total": 174,
-    "critical_count": 2,
-    "high_count": 28,
+    "total": 138,
+    "critical_count": 3,
+    "high_count": 32,
     "cves": [
       {
-        "cve_id": "CVE-2026-5412",
+        "cve_id": "CVE-2026-40175",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "In Juju versions prior to 2.9.57 and 3.6.21, an authorization issue exists in the Controller facade. An authenticated user can call the CloudSpec API method to extract the cloud credentials used to bo",
-        "published": "2026-04-10T13:16:45.780"
+        "base_score": 10.0,
+        "description": "Axios is a promise based HTTP client for the browser and Node.js. Prior to 1.15.0, the Axios library is vulnerable to a specific \"Gadget\" attack chain that allows Prototype Pollution in any third-part",
+        "published": "2026-04-10T20:16:22.800"
+      },
+      {
+        "cve_id": "CVE-2026-33707",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "Chamilo LMS is a learning management system. Prior to 1.11.38 and 2.0.0-RC.3, the default password reset mechanism generates tokens using sha1($email) with no random component, no expiration, and no r",
+        "published": "2026-04-10T19:16:23.950"
       },
       {
         "cve_id": "CVE-2026-32892",
@@ -245,13 +252,6 @@
         "base_score": 9.1,
         "description": "Chamilo LMS is a learning management system. Prior to 1.11.38 and 2.0.0-RC.3, Chamilo LMS contains an OS Command Injection vulnerability in the file move function. The move() function in fileManage.li",
         "published": "2026-04-10T18:16:41.797"
-      },
-      {
-        "cve_id": "CVE-2026-40217",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "LiteLLM through 2026-04-08 allows remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI.",
-        "published": "2026-04-10T14:16:36.307"
       },
       {
         "cve_id": "CVE-2026-35643",
@@ -282,11 +282,25 @@
         "published": "2026-04-10T17:17:09.240"
       },
       {
+        "cve_id": "CVE-2026-33618",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Chamilo LMS is a learning management system. Prior to .0.0-RC.3, the PlatformConfigurationController::decodeSettingArray() method uses PHP's eval() to parse platform settings from the database. An att",
+        "published": "2026-04-10T19:16:22.853"
+      },
+      {
         "cve_id": "CVE-2026-40158",
         "severity": "HIGH",
         "base_score": 8.6,
         "description": "PraisonAI is a multi-agent teams system. Prior to 4.5.128, PraisonAI's AST-based Python sandbox can be bypassed using type.__getattribute__ trampoline, allowing arbitrary code execution when running u",
         "published": "2026-04-10T17:17:13.603"
+      },
+      {
+        "cve_id": "CVE-2026-5483",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "A flaw was found in odh-dashboard in Red Hat Openshift AI. This vulnerability in the `odh-dashboard` component of Red Hat OpenShift AI (RHOAI) allows for the disclosure of Kubernetes Service Account t",
+        "published": "2026-04-10T18:16:46.567"
       },
       {
         "cve_id": "CVE-2026-35595",
@@ -303,11 +317,18 @@
         "published": "2026-04-10T18:16:41.313"
       },
       {
-        "cve_id": "CVE-2025-58913",
+        "cve_id": "CVE-2026-40163",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in CactusThemes VideoPro allows PHP Local File Inclusion.This issue affects VideoP",
-        "published": "2026-04-10T14:16:25.127"
+        "base_score": 8.2,
+        "description": "Saltcorn is an extensible, open source, no-code database application builder. Prior to 1.4.5, 1.5.5, and 1.6.0-beta.4, the POST /sync/offline_changes endpoint allows an unauthenticated attacker to cre",
+        "published": "2026-04-10T18:16:46.233"
+      },
+      {
+        "cve_id": "CVE-2026-40168",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Postiz is an AI social media scheduling tool. Prior to 2.21.5, the /api/public/stream endpoint is vulnerable to SSRF. Although the application validates the initially supplied URL and blocks direct pr",
+        "published": "2026-04-10T20:16:22.643"
       },
       {
         "cve_id": "CVE-2026-35653",
@@ -331,13 +352,6 @@
         "published": "2026-04-10T17:17:14.107"
       },
       {
-        "cve_id": "CVE-2026-33092",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Local privilege escalation due to improper handling of environment variables. The following products are affected: Acronis True Image OEM (macOS) before build 42571, Acronis True Image (macOS) before ",
-        "published": "2026-04-10T14:16:34.880"
-      },
-      {
         "cve_id": "CVE-2026-35641",
         "severity": "HIGH",
         "base_score": 7.8,
@@ -357,20 +371,6 @@
         "base_score": 7.7,
         "description": "OpenClaw before 2026.3.24 contains a path traversal vulnerability in sandbox enforcement allowing sandboxed agents to read arbitrary files from other agents' workspaces via unnormalized mediaUrl or fi",
         "published": "2026-04-10T17:17:09.060"
-      },
-      {
-        "cve_id": "CVE-2026-31941",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Chamilo LMS is a learning management system. Prior to 1.11.38 and 2.0.0-RC.3, Chamilo LMS contains a Server-Side Request Forgery (SSRF) vulnerability in the Social Wall feature. The endpoint read_url_",
-        "published": "2026-04-10T18:16:41.640"
-      },
-      {
-        "cve_id": "CVE-2025-5804",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in Case Themes Case Theme User allows PHP Local File Inclusion.This issue affects ",
-        "published": "2026-04-10T14:16:25.450"
       }
     ]
   },
