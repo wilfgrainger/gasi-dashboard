@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-04-11T20:22:11.443292+00:00",
+  "generated_at": "2026-04-12T01:45:23.397377+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 19,
+        "value": 17,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
-        "score": 2.5,
+        "value": 2,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1559,
-    "recent_30d_count": 19,
+    "recent_30d_count": 17,
     "recent": [
       {
         "cve_id": "CVE-2026-1340",
@@ -204,55 +204,14 @@
         "due_date": "2026-03-30",
         "description": "Wing FTP Server contains a generation of error message containing sensitive information vulnerability when using a long value in the UID cookie.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-3910",
-        "vendor": "Google",
-        "product": "Chromium V8",
-        "name": "Google Chromium V8 Improper Restriction of Operations Within the Bounds of a Memory Buffer Vulnerability",
-        "date_added": "2026-03-13",
-        "due_date": "2026-03-27",
-        "description": "Google Chromium V8 contains an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow a remote attacker to execute arbitrary code inside a sandbox via a",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-3909",
-        "vendor": "Google",
-        "product": "Skia",
-        "name": "Google Skia Out-of-Bounds Write Vulnerability",
-        "date_added": "2026-03-13",
-        "due_date": "2026-03-27",
-        "description": "Google Skia contains an out-of-bounds write vulnerability that could allow a remote attacker to perform out of bounds memory access via a crafted HTML page. This vulnerability affects Google Chrome an",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 46,
-    "critical_count": 5,
-    "high_count": 21,
+    "total": 18,
+    "critical_count": 2,
+    "high_count": 4,
     "cves": [
-      {
-        "cve_id": "CVE-2026-4149",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Sonos Era 300 SMB Response Out-Of-Bounds Access Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Sonos Era 300. Au",
-        "published": "2026-04-11T01:16:16.430"
-      },
-      {
-        "cve_id": "CVE-2026-5058",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "aws-mcp-server Command Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of aws-mcp-server. Authentication i",
-        "published": "2026-04-11T01:16:18.157"
-      },
-      {
-        "cve_id": "CVE-2026-5059",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "aws-mcp-server AWS CLI Command Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of aws-mcp-server. Authenti",
-        "published": "2026-04-11T01:16:18.293"
-      },
       {
         "cve_id": "CVE-2026-34621",
         "severity": "CRITICAL",
@@ -275,102 +234,109 @@
         "published": "2026-04-11T02:16:02.633"
       },
       {
-        "cve_id": "CVE-2026-4150",
+        "cve_id": "CVE-2026-6105",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "GIMP PSD File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is ",
-        "published": "2026-04-11T01:16:16.560"
+        "base_score": 7.3,
+        "description": "A security vulnerability has been detected in perfree go-fastdfs-web up to 1.3.7. This affects an unknown part of the file src/main/java/com/perfree/controller/InstallController.java of the component ",
+        "published": "2026-04-11T22:16:01.417"
       },
       {
-        "cve_id": "CVE-2026-4151",
+        "cve_id": "CVE-2026-5217",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "GIMP ANI File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is ",
-        "published": "2026-04-11T01:16:16.697"
+        "base_score": 7.2,
+        "description": "The Optimole \u2013 Optimize Images | Convert WebP & AVIF | CDN & Lazy Load | Image Optimization plugin for WordPress is vulnerable to Stored Cross-Site Scripting in all versions up to, and including, 4.2.",
+        "published": "2026-04-11T02:16:02.953"
       },
       {
-        "cve_id": "CVE-2026-4152",
+        "cve_id": "CVE-2026-5809",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "GIMP JP2 File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User inter",
-        "published": "2026-04-11T01:16:16.830"
+        "base_score": 7.1,
+        "description": "The wpForo Forum plugin for WordPress is vulnerable to Arbitrary File Deletion in versions up to and including 3.0.2. This is due to a two-step logic flaw: the topic_add() and topic_edit() action hand",
+        "published": "2026-04-11T08:16:05.503"
       },
       {
-        "cve_id": "CVE-2026-4153",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "GIMP PSP File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User inter",
-        "published": "2026-04-11T01:16:16.963"
+        "cve_id": "CVE-2026-5207",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "The LifterLMS plugin for WordPress is vulnerable to SQL Injection via the 'order' parameter in all versions up to, and including, 9.2.1. This is due to insufficient escaping on the user supplied param",
+        "published": "2026-04-11T02:16:02.800"
       },
       {
-        "cve_id": "CVE-2026-4154",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "GIMP XPM File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is ",
-        "published": "2026-04-11T01:16:17.093"
+        "cve_id": "CVE-2026-3498",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "The BlockArt Blocks plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'clientId' block attribute in all versions up to, and including, 2.2.15. This is due to insufficient input",
+        "published": "2026-04-11T02:16:02.117"
       },
       {
-        "cve_id": "CVE-2026-5054",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "NoMachine External Control of File Path Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of NoMachine. An attacker m",
-        "published": "2026-04-11T01:16:17.890"
+        "cve_id": "CVE-2026-4895",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "The GreenShift - Animation and Page Builder Blocks plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions up to, and including, 12.8.9 This is due to insufficient input sanitiza",
+        "published": "2026-04-11T02:16:02.270"
       },
       {
-        "cve_id": "CVE-2026-5055",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "NoMachine Uncontrolled Search Path Element Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of NoMachine.  An attack",
-        "published": "2026-04-11T01:16:18.017"
+        "cve_id": "CVE-2026-6108",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A vulnerability was found in 1Panel-dev MaxKB up to 2.6.1. The affected element is the function execute of the file apps/application/flow/step_node/mcp_node/impl/base_mcp_node.py of the component Mode",
+        "published": "2026-04-12T01:16:16.807"
       },
       {
-        "cve_id": "CVE-2026-5493",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Labcenter Electronics Proteus PDSPRJ File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installation",
-        "published": "2026-04-11T01:16:18.427"
+        "cve_id": "CVE-2026-5226",
+        "severity": "MEDIUM",
+        "base_score": 6.1,
+        "description": "The Optimole \u2013 Optimize Images in Real Time plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via URL paths in versions up to, and including, 4.2.3 This is due to insufficient outpu",
+        "published": "2026-04-11T02:16:03.120"
       },
       {
-        "cve_id": "CVE-2026-5494",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Labcenter Electronics Proteus PDSPRJ File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installation",
-        "published": "2026-04-11T01:16:18.563"
+        "cve_id": "CVE-2026-3358",
+        "severity": "MEDIUM",
+        "base_score": 5.4,
+        "description": "The Tutor LMS \u2013 eLearning and online course solution plugin for WordPress is vulnerable to unauthorized private course enrollment in all versions up to, and including, 3.9.7. This is due to missing po",
+        "published": "2026-04-11T02:16:01.770"
       },
       {
-        "cve_id": "CVE-2026-5495",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Labcenter Electronics Proteus PDSPRJ File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installation",
-        "published": "2026-04-11T01:16:18.697"
+        "cve_id": "CVE-2026-4979",
+        "severity": "MEDIUM",
+        "base_score": 5.0,
+        "description": "The UsersWP \u2013 Front-end login form, User Registration, User Profile & Members Directory plugin for WP plugin for WordPress is vulnerable to blind Server-Side Request Forgery in all versions up to, and",
+        "published": "2026-04-11T02:16:02.463"
       },
       {
-        "cve_id": "CVE-2026-5496",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Labcenter Electronics Proteus PDSPRJ File Parsing Type Confusion Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of ",
-        "published": "2026-04-11T01:16:18.830"
+        "cve_id": "CVE-2026-3371",
+        "severity": "MEDIUM",
+        "base_score": 4.3,
+        "description": "The Tutor LMS \u2013 eLearning and online course solution plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 3.9.7. This is due to missing authoriz",
+        "published": "2026-04-11T02:16:01.963"
       },
       {
-        "cve_id": "CVE-2026-4155",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "ChargePoint Home Flex Inclusion of Sensitive Information in Source Code Information Disclosure Vulnerability. This vulnerability allows remote attackers to disclose sensitive information on affected i",
-        "published": "2026-04-11T01:16:17.230"
+        "cve_id": "CVE-2026-6106",
+        "severity": "LOW",
+        "base_score": 3.5,
+        "description": "A vulnerability was detected in 1Panel-dev MaxKB up to 2.2.1. This vulnerability affects the function StaticHeadersMiddleware of the file apps/common/middleware/static_headers_middleware.py of the com",
+        "published": "2026-04-11T23:16:05.823"
       },
       {
-        "cve_id": "CVE-2026-4156",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "ChargePoint Home Flex OCPP getpreq Stack-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installat",
-        "published": "2026-04-11T01:16:17.360"
+        "cve_id": "CVE-2026-6107",
+        "severity": "LOW",
+        "base_score": 3.5,
+        "description": "A flaw has been found in 1Panel-dev MaxKB up to 2.6.1. This issue affects some unknown processing of the file apps/common/middleware/chat_headers_middleware.py of the component ChatHeadersMiddleware. ",
+        "published": "2026-04-12T01:16:16.583"
       },
       {
-        "cve_id": "CVE-2026-4157",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "ChargePoint Home Flex revssh Service Command Injection Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of ",
-        "published": "2026-04-11T01:16:17.487"
+        "cve_id": "CVE-2026-23900",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "Various stored XSS vulnerabilities in the maps- and icon rendering logic in Phoca Maps component 5.0.0-6.0.2 have been discovered.",
+        "published": "2026-04-11T14:16:03.377"
+      },
+      {
+        "cve_id": "CVE-2026-32146",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "Improper path validation vulnerability in the Gleam compiler's handling of git dependencies allows arbitrary file system modification during dependency download.\n\nDependency names from gleam.toml and ",
+        "published": "2026-04-11T14:16:03.640"
       }
     ]
   },
