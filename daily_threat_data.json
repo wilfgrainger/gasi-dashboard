@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-12T01:45:23.397377+00:00",
+  "generated_at": "2026-04-12T05:50:01.371300+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
-        "score": 2.0,
+        "value": 6,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -208,16 +208,44 @@
     ]
   },
   "nvd": {
-    "total": 18,
-    "critical_count": 2,
-    "high_count": 4,
+    "total": 20,
+    "critical_count": 6,
+    "high_count": 5,
     "cves": [
       {
-        "cve_id": "CVE-2026-34621",
+        "cve_id": "CVE-2026-6112",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Acrobat Reader versions 24.001.30356, 26.001.21367 and earlier are affected by an Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution') vulnerability that could res",
-        "published": "2026-04-11T07:16:03.633"
+        "base_score": 9.8,
+        "description": "A weakness has been identified in Totolink A7100RU 7.4cu.2313_b20191024. Affected is the function setRadvdCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. This manipulation of the ar",
+        "published": "2026-04-12T04:16:47.133"
+      },
+      {
+        "cve_id": "CVE-2026-6113",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A security vulnerability has been detected in Totolink A7100RU 7.4cu.2313_b20191024. Affected by this vulnerability is the function setTtyServiceCfg of the file /cgi-bin/cstecgi.cgi of the component C",
+        "published": "2026-04-12T04:16:49.037"
+      },
+      {
+        "cve_id": "CVE-2026-6114",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A vulnerability was detected in Totolink A7100RU 7.4cu.2313_b20191024. Affected by this issue is the function setNetworkCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Performing a ",
+        "published": "2026-04-12T04:16:49.267"
+      },
+      {
+        "cve_id": "CVE-2026-6115",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A flaw has been found in Totolink A7100RU 7.4cu.2313_b20191024. This affects the function setAppCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Executing a manipulation of the argum",
+        "published": "2026-04-12T05:16:00.807"
+      },
+      {
+        "cve_id": "CVE-2026-6116",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A vulnerability has been found in Totolink A7100RU 7.4cu.2313_b20191024. This vulnerability affects the function setDiagnosisCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. The mani",
+        "published": "2026-04-12T05:16:01.060"
       },
       {
         "cve_id": "CVE-2026-31845",
@@ -227,11 +255,18 @@
         "published": "2026-04-11T19:16:28.537"
       },
       {
-        "cve_id": "CVE-2026-5144",
+        "cve_id": "CVE-2026-34621",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The BuddyPress Groupblog plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 1.9.3. This is due to the group blog settings handler accepting the `groupblog",
-        "published": "2026-04-11T02:16:02.633"
+        "base_score": 8.6,
+        "description": "Acrobat Reader versions 24.001.30356, 26.001.21367 and earlier are affected by an Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution') vulnerability that could res",
+        "published": "2026-04-11T07:16:03.633"
+      },
+      {
+        "cve_id": "CVE-2026-1116",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "A Cross-site Scripting (XSS) vulnerability was identified in the `from_dict` method of the `AppLollmsMessage` class in parisneo/lollms prior to version 2.2.0. The vulnerability arises from the lack of",
+        "published": "2026-04-12T03:16:07.600"
       },
       {
         "cve_id": "CVE-2026-6105",
@@ -241,11 +276,11 @@
         "published": "2026-04-11T22:16:01.417"
       },
       {
-        "cve_id": "CVE-2026-5217",
+        "cve_id": "CVE-2026-6110",
         "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The Optimole \u2013 Optimize Images | Convert WebP & AVIF | CDN & Lazy Load | Image Optimization plugin for WordPress is vulnerable to Stored Cross-Site Scripting in all versions up to, and including, 4.2.",
-        "published": "2026-04-11T02:16:02.953"
+        "base_score": 7.3,
+        "description": "A vulnerability was identified in FoundationAgents MetaGPT up to 0.8.1. This affects the function generate_thoughts of the file metagpt/strategy/tot.py of the component Tree-of-Thought Solver. The man",
+        "published": "2026-04-12T03:16:08.630"
       },
       {
         "cve_id": "CVE-2026-5809",
@@ -255,27 +290,6 @@
         "published": "2026-04-11T08:16:05.503"
       },
       {
-        "cve_id": "CVE-2026-5207",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "The LifterLMS plugin for WordPress is vulnerable to SQL Injection via the 'order' parameter in all versions up to, and including, 9.2.1. This is due to insufficient escaping on the user supplied param",
-        "published": "2026-04-11T02:16:02.800"
-      },
-      {
-        "cve_id": "CVE-2026-3498",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The BlockArt Blocks plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'clientId' block attribute in all versions up to, and including, 2.2.15. This is due to insufficient input",
-        "published": "2026-04-11T02:16:02.117"
-      },
-      {
-        "cve_id": "CVE-2026-4895",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The GreenShift - Animation and Page Builder Blocks plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions up to, and including, 12.8.9 This is due to insufficient input sanitiza",
-        "published": "2026-04-11T02:16:02.270"
-      },
-      {
         "cve_id": "CVE-2026-6108",
         "severity": "MEDIUM",
         "base_score": 6.3,
@@ -283,32 +297,32 @@
         "published": "2026-04-12T01:16:16.807"
       },
       {
-        "cve_id": "CVE-2026-5226",
+        "cve_id": "CVE-2026-6111",
         "severity": "MEDIUM",
-        "base_score": 6.1,
-        "description": "The Optimole \u2013 Optimize Images in Real Time plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via URL paths in versions up to, and including, 4.2.3 This is due to insufficient outpu",
-        "published": "2026-04-11T02:16:03.120"
+        "base_score": 6.3,
+        "description": "A security flaw has been discovered in FoundationAgents MetaGPT up to 0.8.1. This impacts the function decode_image of the file metagpt/utils/common.py. The manipulation of the argument img_url_or_b64",
+        "published": "2026-04-12T03:16:08.827"
       },
       {
-        "cve_id": "CVE-2026-3358",
+        "cve_id": "CVE-2026-6117",
         "severity": "MEDIUM",
-        "base_score": 5.4,
-        "description": "The Tutor LMS \u2013 eLearning and online course solution plugin for WordPress is vulnerable to unauthorized private course enrollment in all versions up to, and including, 3.9.7. This is due to missing po",
-        "published": "2026-04-11T02:16:01.770"
+        "base_score": 6.3,
+        "description": "A vulnerability was found in AstrBotDevs AstrBot up to 4.22.1. This issue affects the function install_plugin_upload of the file astrbot/dashboard/routes/plugin.py of the component install-upload Endp",
+        "published": "2026-04-12T05:16:01.287"
       },
       {
-        "cve_id": "CVE-2026-4979",
+        "cve_id": "CVE-2026-6118",
         "severity": "MEDIUM",
-        "base_score": 5.0,
-        "description": "The UsersWP \u2013 Front-end login form, User Registration, User Profile & Members Directory plugin for WP plugin for WordPress is vulnerable to blind Server-Side Request Forgery in all versions up to, and",
-        "published": "2026-04-11T02:16:02.463"
+        "base_score": 6.3,
+        "description": "A vulnerability was determined in AstrBotDevs AstrBot up to 4.22.1. Impacted is the function add_mcp_server of the file astrbot/dashboard/routes/tools.py of the component MCP Endpoint. This manipulati",
+        "published": "2026-04-12T05:16:01.560"
       },
       {
-        "cve_id": "CVE-2026-3371",
+        "cve_id": "CVE-2026-6109",
         "severity": "MEDIUM",
         "base_score": 4.3,
-        "description": "The Tutor LMS \u2013 eLearning and online course solution plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 3.9.7. This is due to missing authoriz",
-        "published": "2026-04-11T02:16:01.963"
+        "description": "A vulnerability was determined in FoundationAgents MetaGPT up to 0.8.1. The impacted element is the function evaluateCode of the file metagpt/environment/minecraft/mineflayer/index.js of the component",
+        "published": "2026-04-12T02:16:00.790"
       },
       {
         "cve_id": "CVE-2026-6106",
