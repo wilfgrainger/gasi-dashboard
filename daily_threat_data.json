@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-13T16:55:04.997783+00:00",
+  "generated_at": "2026-04-13T20:43:10.091269+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,7 +7,7 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 17,
+        "value": 24,
         "score": 3.0,
         "max": 3
       },
@@ -32,9 +32,79 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1559,
-    "recent_30d_count": 17,
+    "total_catalog_count": 1566,
+    "recent_30d_count": 24,
     "recent": [
+      {
+        "cve_id": "CVE-2012-1854",
+        "vendor": "Microsoft",
+        "product": "Visual Basic for Applications (VBA)",
+        "name": "Microsoft Visual Basic for Applications Insecure Library Loading Vulnerability",
+        "date_added": "2026-04-13",
+        "due_date": "2026-04-27",
+        "description": "Microsoft Visual Basic for Applications (VBA) contains an insecure library loading vulnerability that could allow for remote code execution.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2025-60710",
+        "vendor": "Microsoft",
+        "product": "Windows",
+        "name": "Microsoft Windows Link Following Vulnerability",
+        "date_added": "2026-04-13",
+        "due_date": "2026-04-27",
+        "description": "Microsoft Windows contains a link following vulnerability that allows for privilege escalation",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2023-21529",
+        "vendor": "Microsoft",
+        "product": "Exchange Server",
+        "name": "Microsoft Exchange Server Deserialization of Untrusted Data Vulnerability",
+        "date_added": "2026-04-13",
+        "due_date": "2026-04-27",
+        "description": "Microsoft Exchange Server contains a deserialization of untrusted data that allows an authenticated attacker to achieve remote code execution.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2023-36424",
+        "vendor": "Microsoft",
+        "product": "Windows",
+        "name": "Microsoft Windows Out-of-Bounds Read Vulnerability",
+        "date_added": "2026-04-13",
+        "due_date": "2026-04-27",
+        "description": "Microsoft Windows Common Log File System Driver contains an out-of-bounds read vulnerability that could allow a threat actor for privileges escalation",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2020-9715",
+        "vendor": "Adobe",
+        "product": "Acrobat",
+        "name": "Adobe Acrobat Use-After-Free Vulnerability",
+        "date_added": "2026-04-13",
+        "due_date": "2026-04-27",
+        "description": "Adobe Acrobat contains a use-after-free vulnerability that allows for code execution",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-21643",
+        "vendor": "Fortinet",
+        "product": "FortiClient EMS",
+        "name": "Fortinet SQL Injection Vulnerability",
+        "date_added": "2026-04-13",
+        "due_date": "2026-04-16",
+        "description": "Fortinet FortiClient EMS contains a SQL injection vulnerability that may allow an unauthenticated attacker to execute unauthorized code or commands via specifically crafted HTTP requests.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-34621",
+        "vendor": "Adobe",
+        "product": "Acrobat and Reader",
+        "name": "Adobe Acrobat and Reader Prototype Pollution Vulnerability",
+        "date_added": "2026-04-13",
+        "due_date": "2026-04-27",
+        "description": "Adobe Acrobat and Reader contain a prototype pollution vulnerability that allows for arbitrary code execution.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-1340",
         "vendor": "Ivanti",
@@ -164,53 +234,13 @@
         "due_date": "2026-04-03",
         "description": "Apple Safari, iOS, watchOS, visionOS, iPadOS, macOS, and tvOS contain a buffer overflow vulnerability that could allow the processing of maliciously crafted web content which may lead to memory corrup",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-20131",
-        "vendor": "Cisco",
-        "product": "Secure Firewall Management Center (FMC)",
-        "name": "Cisco Secure Firewall Management Center (FMC) Software and Cisco Security Cloud Control (SCC) Firewall Management Deserialization of Untrusted Data Vulnerability",
-        "date_added": "2026-03-19",
-        "due_date": "2026-03-22",
-        "description": "Cisco Secure Firewall Management Center (FMC) Software and Cisco Security Cloud Control (SCC) Firewall Management contain a deserialization of untrusted data vulnerability in the web-based management ",
-        "ransomware_use": "Known"
-      },
-      {
-        "cve_id": "CVE-2025-66376",
-        "vendor": "Synacor",
-        "product": "Zimbra Collaboration Suite (ZCS)",
-        "name": "Synacor Zimbra Collaboration Suite (ZCS) Cross-Site Scripting Vulnerability",
-        "date_added": "2026-03-18",
-        "due_date": "2026-04-01",
-        "description": "Synacor Zimbra Collaboration Suite (ZCS) contains a cross-site scripting vulnerability in the Classic UI where attackers could abuse Cascading Style Sheets (CSS) @import directives in email HTML.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-20963",
-        "vendor": "Microsoft",
-        "product": "SharePoint",
-        "name": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability",
-        "date_added": "2026-03-18",
-        "due_date": "2026-03-21",
-        "description": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability that allows an unauthorized attacker to execute code over a network.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2025-47813",
-        "vendor": "Wing FTP Server",
-        "product": "Wing FTP Server",
-        "name": "Wing FTP Server Information Disclosure Vulnerability",
-        "date_added": "2026-03-16",
-        "due_date": "2026-03-30",
-        "description": "Wing FTP Server contains a generation of error message containing sensitive information vulnerability when using a long value in the UID cookie.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 158,
+    "total": 189,
     "critical_count": 9,
-    "high_count": 33,
+    "high_count": 31,
     "cves": [
       {
         "cve_id": "CVE-2026-6131",
@@ -346,11 +376,11 @@
         "published": "2026-04-13T07:16:50.710"
       },
       {
-        "cve_id": "CVE-2026-40393",
+        "cve_id": "CVE-2026-25208",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "In Mesa before 25.3.6 and 26 before 26.0.1, out-of-bounds memory access can occur in WebGPU because the amount of to-be-allocated data depends on an untrusted party, and is then used for alloca.",
-        "published": "2026-04-12T19:16:20.797"
+        "description": "Integer overflow vulnerability in Samsung Open Source Escargot allows Overflow Buffers.This issue affects Escargot: 97e8115ab1110bc502b4b5e4a0c689a71520d335.",
+        "published": "2026-04-13T05:16:02.800"
       }
     ]
   },
