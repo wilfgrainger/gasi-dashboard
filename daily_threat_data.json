@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-14T01:45:06.983773+00:00",
+  "generated_at": "2026-04-14T05:55:16.044624+00:00",
   "threat_score": {
-    "score": 6.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -238,44 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 238,
-    "critical_count": 4,
-    "high_count": 24,
+    "total": 213,
+    "critical_count": 1,
+    "high_count": 23,
     "cves": [
-      {
-        "cve_id": "CVE-2026-6154",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A security flaw has been discovered in Totolink A7100RU 7.4cu.2313_b20191024. The affected element is the function setWizardCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Performin",
-        "published": "2026-04-13T04:16:14.993"
-      },
-      {
-        "cve_id": "CVE-2026-6155",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A weakness has been identified in Totolink A7100RU 7.4cu.2313. The impacted element is the function setWanCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Executing a manipulation of",
-        "published": "2026-04-13T04:16:15.237"
-      },
-      {
-        "cve_id": "CVE-2026-6156",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A security vulnerability has been detected in Totolink A7100RU 7.4cu.2313_b20191024. This affects the function setIpQosRules of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. The manipula",
-        "published": "2026-04-13T04:16:15.450"
-      },
       {
         "cve_id": "CVE-2026-5085",
         "severity": "CRITICAL",
         "base_score": 9.1,
         "description": "Solstice::Session versions through 1440 for Perl generates session ids insecurely.\n\nThe _generateSessionID method returns an MD5 digest seeded by the epoch time, a random hash reference, a call to the",
         "published": "2026-04-13T07:16:50.543"
-      },
-      {
-        "cve_id": "CVE-2026-6157",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was detected in Totolink A800R 4.1.2cu.5137_B20200730. This impacts the function setAppEasyWizardConfig in the library /lib/cste_modules/app.so. The manipulation of the argument apcliS",
-        "published": "2026-04-13T04:16:16.817"
       },
       {
         "cve_id": "CVE-2026-6168",
@@ -292,6 +264,27 @@
         "published": "2026-04-13T10:16:11.610"
       },
       {
+        "cve_id": "CVE-2026-1462",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability in the `TFSMLayer` class of the `keras` package, version 3.13.0, allows attacker-controlled TensorFlow SavedModels to be loaded during deserialization of `.keras` models, even when `sa",
+        "published": "2026-04-13T15:17:18.967"
+      },
+      {
+        "cve_id": "CVE-2026-33858",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Dag Authors, who normally should not be able to execute code in the webserver context could craft XCom payload causing the webserver to execute arbitrary code. Since Dag Authors are already highly tru",
+        "published": "2026-04-13T15:17:33.343"
+      },
+      {
+        "cve_id": "CVE-2026-6186",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A security vulnerability has been detected in UTT HiPER 1200GW up to 2.5.3-170306. This vulnerability affects the function strcpy of the file /goform/formNatStaticMap. The manipulation of the argument",
+        "published": "2026-04-13T16:16:35.827"
+      },
+      {
         "cve_id": "CVE-2026-3830",
         "severity": "HIGH",
         "base_score": 8.6,
@@ -306,81 +299,88 @@
         "published": "2026-04-13T07:16:50.710"
       },
       {
-        "cve_id": "CVE-2026-25208",
+        "cve_id": "CVE-2026-30997",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Integer overflow vulnerability in Samsung Open Source Escargot allows Overflow Buffers.This issue affects Escargot: 97e8115ab1110bc502b4b5e4a0c689a71520d335.",
-        "published": "2026-04-13T05:16:02.800"
+        "base_score": 7.5,
+        "description": "An out-of-bounds read in the read_global_param() function (libavcodec/av1dec.c) of FFmpeg v8.0.1 allows attackers to cause a Denial of Service (DoS) via a crafted input.",
+        "published": "2026-04-13T15:17:32.570"
       },
       {
-        "cve_id": "CVE-2026-34853",
+        "cve_id": "CVE-2026-30998",
         "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Permission bypass vulnerability in the LBS module.\nImpact: Successful exploitation of this vulnerability may affect availability.",
-        "published": "2026-04-13T04:16:12.217"
+        "base_score": 7.5,
+        "description": "An improper resource deallocation and closure vulnerability in the tools/zmqsend.c component of FFmpeg v8.0.1 allows attackers to cause a Denial of Service (DoS) via supplying a crafted input file.",
+        "published": "2026-04-13T15:17:32.697"
       },
       {
-        "cve_id": "CVE-2026-25205",
+        "cve_id": "CVE-2026-30999",
         "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "Heap-based buffer overflow vulnerability in Samsung Open Source Escargot allows out-of-bounds write.This issue affects Escargot:commit hash\u00a0\n97e8115ab1110bc502b4b5e4a0c689a71520d335\n\n.",
-        "published": "2026-04-13T05:16:02.407"
+        "base_score": 7.5,
+        "description": "A heap buffer overflow in the av_bprint_finalize() function of FFmpeg v8.0.1 allows attackers to cause a Denial of Service (DoS) via a crafted input.",
+        "published": "2026-04-13T15:17:32.827"
       },
       {
-        "cve_id": "CVE-2026-25207",
+        "cve_id": "CVE-2025-66769",
         "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "Out-of-bounds write vulnerability in Samsung Open Source Escargot allows Overflow Buffers.This issue affects Escargot: 97e8115ab1110bc502b4b5e4a0c689a71520d335.",
-        "published": "2026-04-13T05:16:02.670"
+        "base_score": 7.5,
+        "description": "A NULL pointer dereference in Nitro PDF Pro for Windows v14.41.1.4 allows attackers to cause a Denial of Service (DoS) via a crafted XFA packet.",
+        "published": "2026-04-13T16:16:24.620"
       },
       {
-        "cve_id": "CVE-2026-6148",
+        "cve_id": "CVE-2025-69624",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Nitro PDF Pro for Windows 14.41.1.4 contains a NULL pointer dereference vulnerability in the JavaScript implementation of app.alert(). When app.alert() is called with more than one argument and the fi",
+        "published": "2026-04-13T16:16:24.740"
+      },
+      {
+        "cve_id": "CVE-2026-6163",
         "severity": "HIGH",
         "base_score": 7.3,
-        "description": "A vulnerability was detected in code-projects Vehicle Showroom Management System 1.0. Affected by this vulnerability is an unknown functionality of the file /util/MonthTotalReportUpdateFunction.php. P",
-        "published": "2026-04-13T02:16:05.483"
+        "description": "A vulnerability was identified in code-projects Lost and Found Thing Management 1.0. Affected by this issue is some unknown functionality of the file /catageory.php. Such manipulation of the argument ",
+        "published": "2026-04-13T06:16:06.927"
       },
       {
-        "cve_id": "CVE-2026-6149",
+        "cve_id": "CVE-2026-6164",
         "severity": "HIGH",
         "base_score": 7.3,
-        "description": "A flaw has been found in code-projects Vehicle Showroom Management System 1.0. Affected by this issue is some unknown functionality of the file /util/BookVehicleFunction.php. Executing a manipulation ",
-        "published": "2026-04-13T02:16:05.697"
+        "description": "A security flaw has been discovered in code-projects Lost and Found Thing Management 1.0. This affects an unknown part of the file /addcat.php. Performing a manipulation of the argument cata results i",
+        "published": "2026-04-13T06:16:07.160"
       },
       {
-        "cve_id": "CVE-2026-6151",
+        "cve_id": "CVE-2026-6165",
         "severity": "HIGH",
         "base_score": 7.3,
-        "description": "A vulnerability was found in code-projects Vehicle Showroom Management System 1.0. This vulnerability affects unknown code of the file /util/PaymentStatusFunction.php. The manipulation of the argument",
-        "published": "2026-04-13T03:16:02.893"
+        "description": "A weakness has been identified in code-projects Vehicle Showroom Management System 1.0. This vulnerability affects unknown code of the file /util/Login_check.php. Executing a manipulation of the argum",
+        "published": "2026-04-13T06:16:07.373"
       },
       {
-        "cve_id": "CVE-2026-6152",
+        "cve_id": "CVE-2026-6166",
         "severity": "HIGH",
         "base_score": 7.3,
-        "description": "A vulnerability was determined in code-projects Vehicle Showroom Management System 1.0. This issue affects some unknown processing of the file /util/StaffAddingFunction.php. This manipulation of the a",
-        "published": "2026-04-13T03:16:03.097"
+        "description": "A security vulnerability has been detected in code-projects Vehicle Showroom Management System 1.0. This issue affects some unknown processing of the file /util/UpdateVehicleFunction.php. The manipula",
+        "published": "2026-04-13T07:16:50.860"
       },
       {
-        "cve_id": "CVE-2026-34856",
+        "cve_id": "CVE-2026-6167",
         "severity": "HIGH",
         "base_score": 7.3,
-        "description": "UAF vulnerability in the communication module.\nImpact: Successful exploitation of this vulnerability may affect availability.",
-        "published": "2026-04-13T04:16:12.437"
+        "description": "A vulnerability was detected in code-projects Faculty Management System 1.0. Impacted is an unknown function of the file /subject-print.php. The manipulation of the argument ID results in sql injectio",
+        "published": "2026-04-13T07:16:51.077"
       },
       {
-        "cve_id": "CVE-2026-6153",
+        "cve_id": "CVE-2026-6182",
         "severity": "HIGH",
         "base_score": 7.3,
-        "description": "A vulnerability was identified in code-projects Vehicle Showroom Management System 1.0. Impacted is an unknown function of the file /util/StaffDetailsFunction.php. Such manipulation of the argument ST",
-        "published": "2026-04-13T04:16:13.403"
+        "description": "A vulnerability was identified in code-projects Simple Content Management System 1.0. Affected by this vulnerability is an unknown functionality of the file /web/admin/login.php. Such manipulation of ",
+        "published": "2026-04-13T15:17:49.487"
       },
       {
-        "cve_id": "CVE-2026-6158",
+        "cve_id": "CVE-2026-6183",
         "severity": "HIGH",
         "base_score": 7.3,
-        "description": "A flaw has been found in Totolink N300RH 6.1c.1353_B20190305. Affected is the function setUpgradeUboot of the file upgrade.so. This manipulation of the argument FileName causes os command injection. T",
-        "published": "2026-04-13T05:16:05.003"
+        "description": "A security flaw has been discovered in code-projects Simple Content Management System 1.0. Affected by this issue is some unknown functionality of the file /web/index.php. Performing a manipulation of",
+        "published": "2026-04-13T15:17:49.697"
       }
     ]
   },
