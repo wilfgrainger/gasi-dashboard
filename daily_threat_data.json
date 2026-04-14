@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T16:56:07.530579+00:00",
+  "generated_at": "2026-04-14T20:43:27.753568+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 24,
+        "value": 26,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
+        "value": 9,
         "score": 2.5,
         "max": 3
       },
@@ -32,9 +32,29 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1566,
-    "recent_30d_count": 24,
+    "total_catalog_count": 1568,
+    "recent_30d_count": 26,
     "recent": [
+      {
+        "cve_id": "CVE-2009-0238",
+        "vendor": "Microsoft",
+        "product": "Office",
+        "name": "Microsoft Office Remote Code Execution",
+        "date_added": "2026-04-14",
+        "due_date": "2026-04-28",
+        "description": "Microsoft Office Excel contains a remote code execution vulnerability that could allow an attacker to take complete control of an affected system if a user opens a specially crafted Excel file that in",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-32201",
+        "vendor": "Microsoft",
+        "product": "SharePoint Server",
+        "name": "Microsoft SharePoint Server Improper Input Validation Vulnerability",
+        "date_added": "2026-04-14",
+        "due_date": "2026-04-28",
+        "description": "Microsoft SharePoint Server contains an improper input validation vulnerability that allows an unauthorized attacker to perform spoofing over a network.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2012-1854",
         "vendor": "Microsoft",
@@ -214,33 +234,13 @@
         "due_date": "2026-04-03",
         "description": "Apple watchOS, iOS, iPadOS, macOS, visionOS, and tvOS contain an improper locking vulnerability that could allow a malicious application to cause unexpected changes in memory shared between processes.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2025-43520",
-        "vendor": "Apple",
-        "product": "Multiple Products",
-        "name": "Apple Multiple Products Classic Buffer Overflow Vulnerability",
-        "date_added": "2026-03-20",
-        "due_date": "2026-04-03",
-        "description": "Apple watchOS, iOS, iPadOS, macOS, visionOS, and tvOS contain a classic buffer overflow vulnerability which could allow a malicious application to cause unexpected system termination or write kernel m",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2025-31277",
-        "vendor": "Apple",
-        "product": "Multiple Products",
-        "name": "Apple Multiple Products Buffer Overflow Vulnerability",
-        "date_added": "2026-03-20",
-        "due_date": "2026-04-03",
-        "description": "Apple Safari, iOS, watchOS, visionOS, iPadOS, macOS, and tvOS contain a buffer overflow vulnerability that could allow the processing of maliciously crafted web content which may lead to memory corrup",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 212,
-    "critical_count": 7,
-    "high_count": 20,
+    "total": 379,
+    "critical_count": 9,
+    "high_count": 17,
     "cves": [
       {
         "cve_id": "CVE-2026-27681",
@@ -248,27 +248,6 @@
         "base_score": 9.9,
         "description": "Due to insufficient authorization checks in SAP Business Planning and Consolidation and SAP Business Warehouse, an authenticated user can execute crafted SQL statements to read, modify, and delete dat",
         "published": "2026-04-14T00:16:06.560"
-      },
-      {
-        "cve_id": "CVE-2026-6195",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A security vulnerability has been detected in Totolink A7100RU 7.4cu.2313_b20191024. Affected by this issue is the function setPasswordCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler",
-        "published": "2026-04-13T18:16:32.353"
-      },
-      {
-        "cve_id": "CVE-2026-40042",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Pachno 1.0.6 contains an XML external entity injection vulnerability that allows unauthenticated attackers to read arbitrary files by exploiting unsafe XML parsing in the TextParser helper. Attackers ",
-        "published": "2026-04-13T19:16:51.960"
-      },
-      {
-        "cve_id": "CVE-2026-40044",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Pachno 1.0.6 contains a deserialization vulnerability that allows unauthenticated attackers to execute arbitrary code by injecting malicious serialized objects into cache files. Attackers can write PH",
-        "published": "2026-04-13T19:16:52.290"
       },
       {
         "cve_id": "CVE-2026-22562",
@@ -292,74 +271,60 @@
         "published": "2026-04-13T22:16:28.187"
       },
       {
-        "cve_id": "CVE-2026-6194",
+        "cve_id": "CVE-2026-6264",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A critical vulnerability in the Talend JobServer and Talend Runtime allows unauthenticated remote code execution via the JMX monitoring port. The attack vector is the JMX monitoring port of the Talend",
+        "published": "2026-04-14T03:16:09.050"
+      },
+      {
+        "cve_id": "CVE-2026-40288",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "PraisonAI is a multi-agent teams system. In versions below 4.5.139 of PraisonAI and 1.5.140 of praisonaiagents, the workflow engine is vulnerable to arbitrary command and code execution through untrus",
+        "published": "2026-04-14T04:17:12.210"
+      },
+      {
+        "cve_id": "CVE-2026-4365",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The LearnPress plugin for WordPress is vulnerable to unauthorized data deletion due to a missing capability check on the `delete_question_answer()` function in all versions up to, and including, 4.3.2",
+        "published": "2026-04-14T02:16:05.767"
+      },
+      {
+        "cve_id": "CVE-2026-40289",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "PraisonAI is a multi-agent teams system. In versions below 4.5.139 of PraisonAI and 1.5.140 of praisonaiagents, the browser bridge (praisonai browser start) is vulnerable to unauthenticated remote ses",
+        "published": "2026-04-14T04:17:12.710"
+      },
+      {
+        "cve_id": "CVE-2026-40313",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "PraisonAI is a multi-agent teams system. In versions 4.5.139 and below, the GitHub Actions workflows are vulnerable to ArtiPACKED attack, a known credential leakage vector caused by using actions/chec",
+        "published": "2026-04-14T04:17:13.890"
+      },
+      {
+        "cve_id": "CVE-2026-25654",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A weakness has been identified in Totolink A3002MU B20211125.1046. Affected by this vulnerability is the function sub_410188 of the file /boafrm/formWlanSetup of the component HTTP Request Handler. Th",
-        "published": "2026-04-13T18:16:32.107"
+        "description": "A vulnerability has been identified in SINEC NMS (All versions < V4.0 SP3). Affected products do not properly validate user authorization when processing password reset requests. This could allow an a",
+        "published": "2026-04-14T09:16:35.150"
       },
       {
-        "cve_id": "CVE-2026-6196",
+        "cve_id": "CVE-2026-27668",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A vulnerability was detected in Tenda F456 1.0.0.5. This affects the function fromexeCommand of the file /goform/exeCommand. Performing a manipulation of the argument cmdinput results in stack-based b",
-        "published": "2026-04-13T18:16:32.560"
+        "description": "A vulnerability has been identified in RUGGEDCOM CROSSBOW Secure Access Manager Primary (SAM-P) (All versions < V5.8). User Administrators are allowed to administer groups they belong to. This could a",
+        "published": "2026-04-14T09:16:35.480"
       },
       {
-        "cve_id": "CVE-2026-40040",
+        "cve_id": "CVE-2026-40287",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Pachno 1.0.6 contains an unrestricted file upload vulnerability that allows authenticated users to upload arbitrary file types by bypassing ineffective extension filtering to the /uploadfile endpoint.",
-        "published": "2026-04-13T19:16:51.617"
-      },
-      {
-        "cve_id": "CVE-2026-6197",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw has been found in Tenda F456 1.0.0.5. This vulnerability affects the function formWrlsafeset of the file /goform/AdvSetWrlsafeset. Executing a manipulation of the argument mit_ssid can lead to ",
-        "published": "2026-04-13T19:16:57.610"
-      },
-      {
-        "cve_id": "CVE-2026-6198",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability has been found in Tenda F456 1.0.0.5. This issue affects the function fromNatStaticSetting of the file /goform/NatStaticSetting. The manipulation of the argument page leads to stack-ba",
-        "published": "2026-04-13T19:16:57.817"
-      },
-      {
-        "cve_id": "CVE-2026-6199",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was found in Tenda F456 1.0.0.5. Impacted is the function fromqossetting of the file /goform/qossetting. The manipulation of the argument page results in stack-based buffer overflow. I",
-        "published": "2026-04-13T19:16:58.033"
-      },
-      {
-        "cve_id": "CVE-2026-6200",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was determined in Tenda F456 1.0.0.5. The affected element is the function formwebtypelibrary of the file /goform/webtypelibrary. This manipulation of the argument menufacturer/Go caus",
-        "published": "2026-04-13T19:16:58.240"
-      },
-      {
-        "cve_id": "CVE-2026-32316",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "jq is a command-line JSON processor. An integer overflow vulnerability exists through version 1.8.1 within the jvp_string_append() and jvp_string_copy_replace_bad functions, where concatenating string",
-        "published": "2026-04-13T18:16:29.420"
-      },
-      {
-        "cve_id": "CVE-2026-28291",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "simple-git enables running native Git commands from JavaScript. Versions up to and including 3.31.1 allow execution of arbitrary commands through Git option manipulation, bypassing safety checks meant",
-        "published": "2026-04-13T18:16:28.760"
-      },
-      {
-        "cve_id": "CVE-2026-32605",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "nimiq/core-rs-albatross is a Rust implementation of the Nimiq Proof-of-Stake protocol based on the Albatross consensus algorithm. Prior to version 1.3.0, an untrusted peer could crash a validator by p",
-        "published": "2026-04-13T20:16:33.787"
+        "base_score": 8.4,
+        "description": "PraisonAI is a multi-agent teams system. Versions 4.5.138 and below are vulnerable to arbitrary code execution through automatic, unsanitized import of a tools.py file from the current working directo",
+        "published": "2026-04-14T04:17:11.977"
       },
       {
         "cve_id": "CVE-2026-33901",
@@ -381,6 +346,41 @@
         "base_score": 7.5,
         "description": "ImageMagick is free and open-source software used for editing and manipulating digital images. In versions below both 7.1.2-19 and 6.9.13-44, Magick frees the memory of the XML tree via the `DestroyXM",
         "published": "2026-04-13T22:16:28.997"
+      },
+      {
+        "cve_id": "CVE-2026-40164",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "jq is a command-line JSON processor. Before commit 0c7d133c3c7e37c00b6d46b658a02244fdd3c784, jq used MurmurHash3 with a hardcoded, publicly visible seed (0x432A9843) for all JSON object hash table ope",
+        "published": "2026-04-14T00:16:07.360"
+      },
+      {
+        "cve_id": "CVE-2026-4352",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The JetEngine plugin for WordPress is vulnerable to SQL Injection via the Custom Content Type (CCT) REST API search endpoint in all versions up to, and including, 3.8.6.1. This is due to the `_cct_sea",
+        "published": "2026-04-14T02:16:05.613"
+      },
+      {
+        "cve_id": "CVE-2026-31923",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Cleartext Transmission of Sensitive Information vulnerability in Apache APISIX.\n\nThis can occur due to `ssl_verify` in openid-connect plugin configuration being set to false by default.\nThis issue aff",
+        "published": "2026-04-14T09:16:35.817"
+      },
+      {
+        "cve_id": "CVE-2026-2332",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "In Eclipse Jetty, the HTTP/1.1 parser is vulnerable to request smuggling when chunk extensions are used, similar to the \"funky chunks\" techniques outlined here:\n  *  https://w4ke.info/2025/06/18/funky",
+        "published": "2026-04-14T12:16:21.333"
+      },
+      {
+        "cve_id": "CVE-2026-6224",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A security flaw has been discovered in nocobase plugin-workflow-javascript up to 2.0.23. This issue affects the function createSafeConsole of the file packages/plugins/@nocobase/plugin-workflow-javasc",
+        "published": "2026-04-13T22:16:30.757"
       }
     ]
   },
