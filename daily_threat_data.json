@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-14T13:04:14.202071+00:00",
+  "generated_at": "2026-04-14T16:56:07.530579+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
-        "score": 2.0,
+        "value": 7,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,10 +238,17 @@
     ]
   },
   "nvd": {
-    "total": 197,
-    "critical_count": 3,
-    "high_count": 26,
+    "total": 212,
+    "critical_count": 7,
+    "high_count": 20,
     "cves": [
+      {
+        "cve_id": "CVE-2026-27681",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Due to insufficient authorization checks in SAP Business Planning and Consolidation and SAP Business Warehouse, an authenticated user can execute crafted SQL statements to read, modify, and delete dat",
+        "published": "2026-04-14T00:16:06.560"
+      },
       {
         "cve_id": "CVE-2026-6195",
         "severity": "CRITICAL",
@@ -264,25 +271,25 @@
         "published": "2026-04-13T19:16:52.290"
       },
       {
-        "cve_id": "CVE-2026-1462",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability in the `TFSMLayer` class of the `keras` package, version 3.13.0, allows attacker-controlled TensorFlow SavedModels to be loaded during deserialization of `.keras` models, even when `sa",
-        "published": "2026-04-13T15:17:18.967"
+        "cve_id": "CVE-2026-22562",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A malicious actor with access to the UniFi Play network could exploit a Path Traversal vulnerability found in the device firmware to write files on the system that could be used for a remote code exec",
+        "published": "2026-04-13T22:16:27.870"
       },
       {
-        "cve_id": "CVE-2026-33858",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Dag Authors, who normally should not be able to execute code in the webserver context could craft XCom payload causing the webserver to execute arbitrary code. Since Dag Authors are already highly tru",
-        "published": "2026-04-13T15:17:33.343"
+        "cve_id": "CVE-2026-22563",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A series of Improper Input Validation vulnerabilities could allow a Command Injection by a malicious actor with access to the UniFi Play network.\n \nAffected Products:\nUniFi Play PowerAmp (Version 1.0.",
+        "published": "2026-04-13T22:16:28.050"
       },
       {
-        "cve_id": "CVE-2026-6186",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A security vulnerability has been detected in UTT HiPER 1200GW up to 2.5.3-170306. This vulnerability affects the function strcpy of the file /goform/formNatStaticMap. The manipulation of the argument",
-        "published": "2026-04-13T16:16:35.827"
+        "cve_id": "CVE-2026-22564",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An Improper Access Control vulnerability could allow a malicious actor with access to the UniFi Play network to enable SSH to make unauthorized changes to the system.\u2028 \n\nAffected Products:\nUniFi Play ",
+        "published": "2026-04-13T22:16:28.187"
       },
       {
         "cve_id": "CVE-2026-6194",
@@ -348,39 +355,32 @@
         "published": "2026-04-13T18:16:28.760"
       },
       {
-        "cve_id": "CVE-2026-30997",
+        "cve_id": "CVE-2026-32605",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "An out-of-bounds read in the read_global_param() function (libavcodec/av1dec.c) of FFmpeg v8.0.1 allows attackers to cause a Denial of Service (DoS) via a crafted input.",
-        "published": "2026-04-13T15:17:32.570"
+        "description": "nimiq/core-rs-albatross is a Rust implementation of the Nimiq Proof-of-Stake protocol based on the Albatross consensus algorithm. Prior to version 1.3.0, an untrusted peer could crash a validator by p",
+        "published": "2026-04-13T20:16:33.787"
       },
       {
-        "cve_id": "CVE-2026-30998",
+        "cve_id": "CVE-2026-33901",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "An improper resource deallocation and closure vulnerability in the tools/zmqsend.c component of FFmpeg v8.0.1 allows attackers to cause a Denial of Service (DoS) via supplying a crafted input file.",
-        "published": "2026-04-13T15:17:32.697"
+        "description": "ImageMagick is free and open-source software used for editing and manipulating digital images. In versions below both 7.1.2-19 and 6.9.13-44, a heap buffer overflow occurs in the MVG decoder that coul",
+        "published": "2026-04-13T21:16:25.497"
       },
       {
-        "cve_id": "CVE-2026-30999",
+        "cve_id": "CVE-2026-22566",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "A heap buffer overflow in the av_bprint_finalize() function of FFmpeg v8.0.1 allows attackers to cause a Denial of Service (DoS) via a crafted input.",
-        "published": "2026-04-13T15:17:32.827"
+        "description": "An Improper Access Control vulnerability could allow a malicious actor with access to the UniFi Play network to obtain UniFi Play WiFi credentials.\u2028 \n\nAffected Products:\nUniFi Play PowerAmp (Version 1",
+        "published": "2026-04-13T22:16:28.437"
       },
       {
-        "cve_id": "CVE-2025-66769",
+        "cve_id": "CVE-2026-33908",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "A NULL pointer dereference in Nitro PDF Pro for Windows v14.41.1.4 allows attackers to cause a Denial of Service (DoS) via a crafted XFA packet.",
-        "published": "2026-04-13T16:16:24.620"
-      },
-      {
-        "cve_id": "CVE-2025-69624",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Nitro PDF Pro for Windows 14.41.1.4 contains a NULL pointer dereference vulnerability in the JavaScript implementation of app.alert(). When app.alert() is called with more than one argument and the fi",
-        "published": "2026-04-13T16:16:24.740"
+        "description": "ImageMagick is free and open-source software used for editing and manipulating digital images. In versions below both 7.1.2-19 and 6.9.13-44, Magick frees the memory of the XML tree via the `DestroyXM",
+        "published": "2026-04-13T22:16:28.997"
       }
     ]
   },
