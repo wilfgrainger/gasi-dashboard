@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-14T05:55:16.044624+00:00",
+  "generated_at": "2026-04-14T09:09:20.179050+00:00",
   "threat_score": {
-    "score": 5.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 3,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,23 +238,30 @@
     ]
   },
   "nvd": {
-    "total": 213,
-    "critical_count": 1,
-    "high_count": 23,
+    "total": 189,
+    "critical_count": 3,
+    "high_count": 26,
     "cves": [
       {
-        "cve_id": "CVE-2026-5085",
+        "cve_id": "CVE-2026-6195",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Solstice::Session versions through 1440 for Perl generates session ids insecurely.\n\nThe _generateSessionID method returns an MD5 digest seeded by the epoch time, a random hash reference, a call to the",
-        "published": "2026-04-13T07:16:50.543"
+        "base_score": 9.8,
+        "description": "A security vulnerability has been detected in Totolink A7100RU 7.4cu.2313_b20191024. Affected by this issue is the function setPasswordCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler",
+        "published": "2026-04-13T18:16:32.353"
       },
       {
-        "cve_id": "CVE-2026-6168",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw has been found in TOTOLINK A7000R up to 9.1.0u.6115. The affected element is the function setWiFiEasyGuestCfg of the file /cgi-bin/cstecgi.cgi. This manipulation of the argument ssid5g causes s",
-        "published": "2026-04-13T07:16:51.283"
+        "cve_id": "CVE-2026-40042",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Pachno 1.0.6 contains an XML external entity injection vulnerability that allows unauthenticated attackers to read arbitrary files by exploiting unsafe XML parsing in the TextParser helper. Attackers ",
+        "published": "2026-04-13T19:16:51.960"
+      },
+      {
+        "cve_id": "CVE-2026-40044",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Pachno 1.0.6 contains a deserialization vulnerability that allows unauthenticated attackers to execute arbitrary code by injecting malicious serialized objects into cache files. Attackers can write PH",
+        "published": "2026-04-13T19:16:52.290"
       },
       {
         "cve_id": "CVE-2026-35337",
@@ -285,18 +292,67 @@
         "published": "2026-04-13T16:16:35.827"
       },
       {
-        "cve_id": "CVE-2026-3830",
+        "cve_id": "CVE-2026-6194",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "The Product Filter for WooCommerce by WBW WordPress plugin before 3.1.3 does not sanitize and escape a parameter before using it in a SQL statement, allowing unauthenticated users to perform SQL injec",
-        "published": "2026-04-13T07:16:50.270"
+        "base_score": 8.8,
+        "description": "A weakness has been identified in Totolink A3002MU B20211125.1046. Affected by this vulnerability is the function sub_410188 of the file /boafrm/formWlanSetup of the component HTTP Request Handler. Th",
+        "published": "2026-04-13T18:16:32.107"
       },
       {
-        "cve_id": "CVE-2026-5936",
+        "cve_id": "CVE-2026-6196",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "An attacker can control a server-side HTTP request by supplying a crafted URL, causing the server to initiate requests to arbitrary destinations. This behavior may be exploited to probe internal netwo",
-        "published": "2026-04-13T07:16:50.710"
+        "base_score": 8.8,
+        "description": "A vulnerability was detected in Tenda F456 1.0.0.5. This affects the function fromexeCommand of the file /goform/exeCommand. Performing a manipulation of the argument cmdinput results in stack-based b",
+        "published": "2026-04-13T18:16:32.560"
+      },
+      {
+        "cve_id": "CVE-2026-40040",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Pachno 1.0.6 contains an unrestricted file upload vulnerability that allows authenticated users to upload arbitrary file types by bypassing ineffective extension filtering to the /uploadfile endpoint.",
+        "published": "2026-04-13T19:16:51.617"
+      },
+      {
+        "cve_id": "CVE-2026-6197",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A flaw has been found in Tenda F456 1.0.0.5. This vulnerability affects the function formWrlsafeset of the file /goform/AdvSetWrlsafeset. Executing a manipulation of the argument mit_ssid can lead to ",
+        "published": "2026-04-13T19:16:57.610"
+      },
+      {
+        "cve_id": "CVE-2026-6198",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability has been found in Tenda F456 1.0.0.5. This issue affects the function fromNatStaticSetting of the file /goform/NatStaticSetting. The manipulation of the argument page leads to stack-ba",
+        "published": "2026-04-13T19:16:57.817"
+      },
+      {
+        "cve_id": "CVE-2026-6199",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was found in Tenda F456 1.0.0.5. Impacted is the function fromqossetting of the file /goform/qossetting. The manipulation of the argument page results in stack-based buffer overflow. I",
+        "published": "2026-04-13T19:16:58.033"
+      },
+      {
+        "cve_id": "CVE-2026-6200",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was determined in Tenda F456 1.0.0.5. The affected element is the function formwebtypelibrary of the file /goform/webtypelibrary. This manipulation of the argument menufacturer/Go caus",
+        "published": "2026-04-13T19:16:58.240"
+      },
+      {
+        "cve_id": "CVE-2026-32316",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "jq is a command-line JSON processor. An integer overflow vulnerability exists through version 1.8.1 within the jvp_string_append() and jvp_string_copy_replace_bad functions, where concatenating string",
+        "published": "2026-04-13T18:16:29.420"
+      },
+      {
+        "cve_id": "CVE-2026-28291",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "simple-git enables running native Git commands from JavaScript. Versions up to and including 3.31.1 allow execution of arbitrary commands through Git option manipulation, bypassing safety checks meant",
+        "published": "2026-04-13T18:16:28.760"
       },
       {
         "cve_id": "CVE-2026-30997",
@@ -325,62 +381,6 @@
         "base_score": 7.5,
         "description": "A NULL pointer dereference in Nitro PDF Pro for Windows v14.41.1.4 allows attackers to cause a Denial of Service (DoS) via a crafted XFA packet.",
         "published": "2026-04-13T16:16:24.620"
-      },
-      {
-        "cve_id": "CVE-2025-69624",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Nitro PDF Pro for Windows 14.41.1.4 contains a NULL pointer dereference vulnerability in the JavaScript implementation of app.alert(). When app.alert() is called with more than one argument and the fi",
-        "published": "2026-04-13T16:16:24.740"
-      },
-      {
-        "cve_id": "CVE-2026-6163",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was identified in code-projects Lost and Found Thing Management 1.0. Affected by this issue is some unknown functionality of the file /catageory.php. Such manipulation of the argument ",
-        "published": "2026-04-13T06:16:06.927"
-      },
-      {
-        "cve_id": "CVE-2026-6164",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security flaw has been discovered in code-projects Lost and Found Thing Management 1.0. This affects an unknown part of the file /addcat.php. Performing a manipulation of the argument cata results i",
-        "published": "2026-04-13T06:16:07.160"
-      },
-      {
-        "cve_id": "CVE-2026-6165",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A weakness has been identified in code-projects Vehicle Showroom Management System 1.0. This vulnerability affects unknown code of the file /util/Login_check.php. Executing a manipulation of the argum",
-        "published": "2026-04-13T06:16:07.373"
-      },
-      {
-        "cve_id": "CVE-2026-6166",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security vulnerability has been detected in code-projects Vehicle Showroom Management System 1.0. This issue affects some unknown processing of the file /util/UpdateVehicleFunction.php. The manipula",
-        "published": "2026-04-13T07:16:50.860"
-      },
-      {
-        "cve_id": "CVE-2026-6167",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was detected in code-projects Faculty Management System 1.0. Impacted is an unknown function of the file /subject-print.php. The manipulation of the argument ID results in sql injectio",
-        "published": "2026-04-13T07:16:51.077"
-      },
-      {
-        "cve_id": "CVE-2026-6182",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was identified in code-projects Simple Content Management System 1.0. Affected by this vulnerability is an unknown functionality of the file /web/admin/login.php. Such manipulation of ",
-        "published": "2026-04-13T15:17:49.487"
-      },
-      {
-        "cve_id": "CVE-2026-6183",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security flaw has been discovered in code-projects Simple Content Management System 1.0. Affected by this issue is some unknown functionality of the file /web/index.php. Performing a manipulation of",
-        "published": "2026-04-13T15:17:49.697"
       }
     ]
   },
