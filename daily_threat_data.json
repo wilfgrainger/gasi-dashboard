@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T20:43:27.753568+00:00",
+  "generated_at": "2026-04-15T01:27:21.594886+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 26,
+        "value": 25,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
+        "value": 8,
         "score": 2.5,
         "max": 3
       },
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1568,
-    "recent_30d_count": 26,
+    "recent_30d_count": 25,
     "recent": [
       {
         "cve_id": "CVE-2009-0238",
@@ -238,37 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 379,
-    "critical_count": 9,
-    "high_count": 17,
+    "total": 370,
+    "critical_count": 8,
+    "high_count": 22,
     "cves": [
       {
-        "cve_id": "CVE-2026-27681",
+        "cve_id": "CVE-2026-38526",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "Due to insufficient authorization checks in SAP Business Planning and Consolidation and SAP Business Warehouse, an authenticated user can execute crafted SQL statements to read, modify, and delete dat",
-        "published": "2026-04-14T00:16:06.560"
-      },
-      {
-        "cve_id": "CVE-2026-22562",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A malicious actor with access to the UniFi Play network could exploit a Path Traversal vulnerability found in the device firmware to write files on the system that could be used for a remote code exec",
-        "published": "2026-04-13T22:16:27.870"
-      },
-      {
-        "cve_id": "CVE-2026-22563",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A series of Improper Input Validation vulnerabilities could allow a Command Injection by a malicious actor with access to the UniFi Play network.\n \nAffected Products:\nUniFi Play PowerAmp (Version 1.0.",
-        "published": "2026-04-13T22:16:28.050"
-      },
-      {
-        "cve_id": "CVE-2026-22564",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An Improper Access Control vulnerability could allow a malicious actor with access to the UniFi Play network to enable SSH to make unauthorized changes to the system.\u2028 \n\nAffected Products:\nUniFi Play ",
-        "published": "2026-04-13T22:16:28.187"
+        "description": "An authenticated arbitrary file upload vulnerability in the /admin/tinymce/upload endpoint of Webkul Krayin CRM v2.2.x allows attackers to execute arbitrary code via uploading a crafted PHP file.",
+        "published": "2026-04-14T16:16:43.127"
       },
       {
         "cve_id": "CVE-2026-6264",
@@ -283,6 +262,20 @@
         "base_score": 9.8,
         "description": "PraisonAI is a multi-agent teams system. In versions below 4.5.139 of PraisonAI and 1.5.140 of praisonaiagents, the workflow engine is vulnerable to arbitrary command and code execution through untrus",
         "published": "2026-04-14T04:17:12.210"
+      },
+      {
+        "cve_id": "CVE-2025-63939",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Improper input handling in /Grocery/search_products_itname.php, in anirudhkannan Grocery Store Management System 1.0, allows SQL injection via the sitem_name POST parameter.",
+        "published": "2026-04-14T16:16:33.660"
+      },
+      {
+        "cve_id": "CVE-2025-65135",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "In manikandan580 School-management-system 1.0, a time-based blind SQL injection vulnerability exists in /studentms/admin/between-date-reprtsdetails.php through the fromdate POST parameter.",
+        "published": "2026-04-14T16:16:34.503"
       },
       {
         "cve_id": "CVE-2026-4365",
@@ -320,6 +313,20 @@
         "published": "2026-04-14T09:16:35.480"
       },
       {
+        "cve_id": "CVE-2026-38529",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A Broken Object-Level Authorization (BOLA) in the /Settings/UserController.php endpoint of Webkul Krayin CRM v2.2.x allows authenticated attackers to arbitrarily reset user passwords and perform a ful",
+        "published": "2026-04-14T16:16:43.557"
+      },
+      {
+        "cve_id": "CVE-2026-38527",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "A Server-Side Request Forgery (SSRF) in the /settings/webhooks/create component of Webkul Krayin CRM v2.2.x allows attackers to scan internal resources via supplying a crafted POST request.",
+        "published": "2026-04-14T16:16:43.270"
+      },
+      {
         "cve_id": "CVE-2026-40287",
         "severity": "HIGH",
         "base_score": 8.4,
@@ -327,32 +334,25 @@
         "published": "2026-04-14T04:17:11.977"
       },
       {
-        "cve_id": "CVE-2026-33901",
+        "cve_id": "CVE-2026-22828",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "ImageMagick is free and open-source software used for editing and manipulating digital images. In versions below both 7.1.2-19 and 6.9.13-44, a heap buffer overflow occurs in the MVG decoder that coul",
-        "published": "2026-04-13T21:16:25.497"
+        "base_score": 8.1,
+        "description": "A heap-based buffer overflow vulnerability in Fortinet FortiAnalyzer Cloud 7.6.2 through 7.6.4, FortiManager Cloud 7.6.2 through 7.6.4 may allow a remote unauthenticated attacker to execute arbitrary ",
+        "published": "2026-04-14T16:16:37.110"
       },
       {
-        "cve_id": "CVE-2026-22566",
+        "cve_id": "CVE-2026-38530",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "An Improper Access Control vulnerability could allow a malicious actor with access to the UniFi Play network to obtain UniFi Play WiFi credentials.\u2028 \n\nAffected Products:\nUniFi Play PowerAmp (Version 1",
-        "published": "2026-04-13T22:16:28.437"
+        "base_score": 8.1,
+        "description": "A Broken Object-Level Authorization (BOLA) in the /Controllers/Lead/LeadController.php endpoint of Webkul Krayin CRM v2.2.x allows authenticated attackers to arbitrarily read, modify, and permanently ",
+        "published": "2026-04-14T16:16:43.697"
       },
       {
-        "cve_id": "CVE-2026-33908",
+        "cve_id": "CVE-2026-38532",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "ImageMagick is free and open-source software used for editing and manipulating digital images. In versions below both 7.1.2-19 and 6.9.13-44, Magick frees the memory of the XML tree via the `DestroyXM",
-        "published": "2026-04-13T22:16:28.997"
-      },
-      {
-        "cve_id": "CVE-2026-40164",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "jq is a command-line JSON processor. Before commit 0c7d133c3c7e37c00b6d46b658a02244fdd3c784, jq used MurmurHash3 with a hardcoded, publicly visible seed (0x432A9843) for all JSON object hash table ope",
-        "published": "2026-04-14T00:16:07.360"
+        "base_score": 8.1,
+        "description": "A Broken Object-Level Authorization (BOLA) in the /Contact/Persons/PersonController.php endpoint of Webkul Krayin CRM v2.2.x allows authenticated attackers to arbitrarily read, modify, and permanently",
+        "published": "2026-04-14T16:16:43.830"
       },
       {
         "cve_id": "CVE-2026-4352",
@@ -369,18 +369,18 @@
         "published": "2026-04-14T09:16:35.817"
       },
       {
+        "cve_id": "CVE-2026-23708",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A improper authentication vulnerability in Fortinet FortiSOAR PaaS 7.6.0 through 7.6.3, FortiSOAR PaaS 7.5.0 through 7.5.2, FortiSOAR on-premise 7.6.0 through 7.6.3, FortiSOAR on-premise 7.5.0 through",
+        "published": "2026-04-14T16:16:37.277"
+      },
+      {
         "cve_id": "CVE-2026-2332",
         "severity": "HIGH",
         "base_score": 7.4,
         "description": "In Eclipse Jetty, the HTTP/1.1 parser is vulnerable to request smuggling when chunk extensions are used, similar to the \"funky chunks\" techniques outlined here:\n  *  https://w4ke.info/2025/06/18/funky",
         "published": "2026-04-14T12:16:21.333"
-      },
-      {
-        "cve_id": "CVE-2026-6224",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security flaw has been discovered in nocobase plugin-workflow-javascript up to 2.0.23. This issue affects the function createSafeConsole of the file packages/plugins/@nocobase/plugin-workflow-javasc",
-        "published": "2026-04-13T22:16:30.757"
       }
     ]
   },
