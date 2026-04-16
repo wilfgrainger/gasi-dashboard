@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-15T20:38:54.035131+00:00",
+  "generated_at": "2026-04-16T01:49:40.118511+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
-        "score": 2.5,
+        "value": 4,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,17 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 241,
-    "critical_count": 7,
-    "high_count": 41,
+    "total": 211,
+    "critical_count": 4,
+    "high_count": 27,
     "cves": [
-      {
-        "cve_id": "CVE-2026-35031",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Jellyfin is an open source self hosted media server. Versions prior to 10.11.7 contain a vulnerability chain in the subtitle upload endpoint (POST /Videos/{itemId}/Subtitles), where the Format field i",
-        "published": "2026-04-14T23:16:28.490"
-      },
       {
         "cve_id": "CVE-2026-39842",
         "severity": "CRITICAL",
@@ -271,25 +264,11 @@
         "published": "2026-04-15T09:16:31.383"
       },
       {
-        "cve_id": "CVE-2026-39399",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "NuGet Gallery is a package repository that powers nuget.org. A security vulnerability exists in the NuGetGallery backend job\u2019s handling of .nuspec files within NuGet packages. An attacker can supply a",
-        "published": "2026-04-14T23:16:29.460"
-      },
-      {
-        "cve_id": "CVE-2026-27304",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "ColdFusion versions 2023.18, 2025.6 and earlier are affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. Exploitatio",
-        "published": "2026-04-14T22:16:29.417"
-      },
-      {
-        "cve_id": "CVE-2026-34457",
+        "cve_id": "CVE-2026-33807",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "OAuth2 Proxy is a reverse proxy that provides authentication using OAuth2 providers. Versions prior to 7.15.2 contain a configuration-dependent authentication bypass in deployments where OAuth2 Proxy ",
-        "published": "2026-04-14T23:16:28.330"
+        "description": "@fastify/express v4.0.4 and earlier contains a path handling bug in the onRegister function that causes middleware paths to be doubled when inherited by child plugins. When a child plugin is registere",
+        "published": "2026-04-15T10:16:48.310"
       },
       {
         "cve_id": "CVE-2025-40899",
@@ -299,27 +278,6 @@
         "published": "2026-04-15T09:16:30.837"
       },
       {
-        "cve_id": "CVE-2026-24893",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "openITCOCKPIT is an open source monitoring tool built for different monitoring engines. openITCOCKPIT Community Edition prior to version 5.5.2 contains a command injection vulnerability that allows an",
-        "published": "2026-04-14T21:16:24.987"
-      },
-      {
-        "cve_id": "CVE-2026-35196",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Chamilo LMS is an open-source learning management system. In versions prior to 2.0.0-RC.3, an OS Command Injection vulnerability exists in the main/inc/ajax/gradebook.ajax.php endpoint within the expo",
-        "published": "2026-04-14T22:16:31.993"
-      },
-      {
-        "cve_id": "CVE-2026-40291",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Chamilo LMS is an open-source learning management system. In versions prior to 2.0.0-RC.3, an insecure direct object modification vulnerability in the PUT /api/users/{id} endpoint allows any authentic",
-        "published": "2026-04-14T22:16:32.507"
-      },
-      {
         "cve_id": "CVE-2026-5617",
         "severity": "HIGH",
         "base_score": 8.8,
@@ -327,32 +285,25 @@
         "published": "2026-04-15T09:16:33.210"
       },
       {
-        "cve_id": "CVE-2026-34160",
+        "cve_id": "CVE-2026-30617",
         "severity": "HIGH",
         "base_score": 8.6,
-        "description": "Chamilo LMS is an open-source learning management system. In versions prior to 2.0.0-RC.3, the PENS (Package Exchange Notification Services) plugin endpoint at public/plugin/Pens/pens.php is accessibl",
-        "published": "2026-04-14T21:16:26.227"
+        "description": "LangChain-ChatChat 0.3.1 contains a remote code execution vulnerability in its MCP STDIO server configuration and execution handling. A remote attacker can access the publicly exposed MCP management i",
+        "published": "2026-04-15T16:16:36.453"
       },
       {
-        "cve_id": "CVE-2026-27305",
+        "cve_id": "CVE-2026-30624",
         "severity": "HIGH",
         "base_score": 8.6,
-        "description": "ColdFusion versions 2023.18, 2025.6 and earlier are affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could lead to arbitrary file system",
-        "published": "2026-04-14T22:16:29.573"
+        "description": "Agent Zero 0.9.8 contains a remote code execution vulnerability in its External MCP Servers configuration feature. The application allows users to define MCP servers using a JSON configuration contain",
+        "published": "2026-04-15T16:16:36.677"
       },
       {
-        "cve_id": "CVE-2026-27290",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Adobe Framemaker versions 2022.8 and earlier are affected by an Untrusted Search Path vulnerability that might allow attackers to execute arbitrary code in the context of the current user. If the appl",
-        "published": "2026-04-14T23:16:25.813"
-      },
-      {
-        "cve_id": "CVE-2026-27306",
+        "cve_id": "CVE-2024-53412",
         "severity": "HIGH",
         "base_score": 8.4,
-        "description": "ColdFusion versions 2023.18, 2025.6 and earlier are affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. Attacker re",
-        "published": "2026-04-14T22:16:29.730"
+        "description": "Command injection in the connect function in NietThijmen ShoppingCart 0.0.2 allows an attacker to execute arbitrary shell commands and achieve remote code execution via injection of malicious payloads",
+        "published": "2026-04-15T15:16:39.710"
       },
       {
         "cve_id": "CVE-2026-39884",
@@ -369,18 +320,67 @@
         "published": "2026-04-15T09:16:29.777"
       },
       {
-        "cve_id": "CVE-2026-35589",
+        "cve_id": "CVE-2026-40764",
         "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "nanobot is a personal AI assistant. Versions prior to 0.1.5 contain a Cross-Site WebSocket Hijacking (CSWSH) vulnerability exists in the bridge's WebSocket server in bridge/src/server.ts, resulting fr",
-        "published": "2026-04-14T23:16:29.130"
+        "base_score": 8.1,
+        "description": "Cross-Site Request Forgery (CSRF) vulnerability in Syed Balkhi Contact Form by WPForms wpforms-lite allows Cross Site Request Forgery.This issue affects Contact Form by WPForms: from n/a through <= 1.",
+        "published": "2026-04-15T11:16:36.773"
       },
       {
-        "cve_id": "CVE-2026-27287",
+        "cve_id": "CVE-2026-40784",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Authorization Bypass Through User-Controlled Key vulnerability in Mahmudul Hasan Arif FluentBoards fluent-boards allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affe",
+        "published": "2026-04-15T11:16:37.030"
+      },
+      {
+        "cve_id": "CVE-2026-30615",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "A prompt injection vulnerability in Windsurf 1.9544.26 allows remote attackers to execute arbitrary commands on a victim system. When Windsurf processes attacker-controlled HTML content, malicious ins",
+        "published": "2026-04-15T16:16:36.177"
+      },
+      {
+        "cve_id": "CVE-2026-5397",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "InCopy versions 20.5.2, 21.2 and earlier are affected by an out-of-bounds read vulnerability when parsing a crafted file, which could result in a read past the end of an allocated memory structure. An",
-        "published": "2026-04-14T21:16:25.497"
+        "description": "It has been identified that a vulnerability (CWE-427) exists in the UPS (Uninterruptible Power Supply) management application, whereby improper permissions on the installation directory allow a malici",
+        "published": "2026-04-15T05:16:45.740"
+      },
+      {
+        "cve_id": "CVE-2026-4145",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "During an internal security assessment, a potential vulnerability was discovered in Lenovo Software Fix that could allow a local authenticated user to perform arbitrary code execution with elevated pr",
+        "published": "2026-04-15T13:16:24.837"
+      },
+      {
+        "cve_id": "CVE-2026-40745",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in bdthemes Element Pack Elementor Addons bdthemes-element-pack-lite allows Blind SQL Injection.This ",
+        "published": "2026-04-15T11:16:36.533"
+      },
+      {
+        "cve_id": "CVE-2026-33806",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Impact:\n\nFastify applications using schema.body.content for per-content-type body validation can have validation bypassed entirely by prepending a space to the Content-Type header. The body is still p",
+        "published": "2026-04-15T04:17:36.650"
+      },
+      {
+        "cve_id": "CVE-2026-40719",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Deadwood in MaraDNS 3.5.0036 allows attackers to exhaust connection slots via a zone whose authoritative nameserver address cannot be resolved.",
+        "published": "2026-04-15T07:16:11.193"
+      },
+      {
+        "cve_id": "CVE-2024-33618",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Uncontrolled Resource Consumption in Bosch VMS Central Server in Bosch VMS 12.0.1 \r\nallows attackers to consume excessive amounts of disk space via network interface.",
+        "published": "2026-04-15T10:16:37.120"
       }
     ]
   },
