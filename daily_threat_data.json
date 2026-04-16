@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-16T13:08:07.971218+00:00",
+  "generated_at": "2026-04-16T17:04:07.471138+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
+        "value": 9,
         "score": 2.5,
         "max": 3
       },
@@ -109,7 +109,7 @@
         "cve_id": "CVE-2026-21643",
         "vendor": "Fortinet",
         "product": "FortiClient EMS",
-        "name": "Fortinet SQL Injection Vulnerability",
+        "name": "Fortinet FortiClient EMS SQL Injection Vulnerability",
         "date_added": "2026-04-13",
         "due_date": "2026-04-16",
         "description": "Fortinet FortiClient EMS contains a SQL injection vulnerability that may allow an unauthenticated attacker to execute unauthorized code or commands via specifically crafted HTTP requests.",
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 192,
-    "critical_count": 6,
-    "high_count": 40,
+    "total": 197,
+    "critical_count": 9,
+    "high_count": 43,
     "cves": [
       {
         "cve_id": "CVE-2026-20147",
@@ -271,6 +271,13 @@
         "published": "2026-04-15T17:17:03.677"
       },
       {
+        "cve_id": "CVE-2026-30993",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Slah CMS v1.5.0 and below was discovered to contain a remote code execution (RCE) vulnerability in the session() function at config.php. This vulnerability is exploitable via a crafted input.",
+        "published": "2026-04-15T18:16:59.913"
+      },
+      {
         "cve_id": "CVE-2026-6296",
         "severity": "CRITICAL",
         "base_score": 9.6,
@@ -278,11 +285,25 @@
         "published": "2026-04-15T20:16:38.353"
       },
       {
+        "cve_id": "CVE-2026-40173",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "Dgraph is an open source distributed GraphQL database. Versions 25.3.1 and prior contain an unauthenticated credential disclosure vulnerability where the /debug/pprof/cmdline endpoint is registered on",
+        "published": "2026-04-15T21:17:27.197"
+      },
+      {
         "cve_id": "CVE-2025-41118",
         "severity": "CRITICAL",
         "base_score": 9.1,
         "description": "Pyroscope is an open-source continuous profiling database. The database supports various storage backends, including Tencent Cloud Object Storage (COS).\n\nIf the database is configured to use Tencent C",
         "published": "2026-04-15T20:16:32.933"
+      },
+      {
+        "cve_id": "CVE-2026-6388",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "A flaw was found in ArgoCD Image Updater. This vulnerability allows an attacker, with permissions to create or modify an ImageUpdater resource in a multi-tenant environment, to bypass namespace bounda",
+        "published": "2026-04-15T22:17:22.583"
       },
       {
         "cve_id": "CVE-2026-34393",
@@ -348,39 +369,18 @@
         "published": "2026-04-15T20:16:39.990"
       },
       {
-        "cve_id": "CVE-2026-35569",
+        "cve_id": "CVE-2026-6315",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "ApostropheCMS is an open-source Node.js content management system. Versions 4.28.0 and prior contain a stored cross-site scripting vulnerability in SEO-related fields (SEO Title and Meta Description),",
-        "published": "2026-04-15T20:16:36.353"
+        "base_score": 8.8,
+        "description": "Use after free in Permissions in Google Chrome on Android prior to 147.0.7727.101 allowed a remote attacker who convinced a user to engage in specific UI gestures to execute arbitrary code via a craft",
+        "published": "2026-04-15T20:16:41.417"
       },
       {
-        "cve_id": "CVE-2026-30617",
+        "cve_id": "CVE-2026-6316",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "LangChain-ChatChat 0.3.1 contains a remote code execution vulnerability in its MCP STDIO server configuration and execution handling. A remote attacker can access the publicly exposed MCP management i",
-        "published": "2026-04-15T16:16:36.453"
-      },
-      {
-        "cve_id": "CVE-2026-30624",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Agent Zero 0.9.8 contains a remote code execution vulnerability in its External MCP Servers configuration feature. The application allows users to define MCP servers using a JSON configuration contain",
-        "published": "2026-04-15T16:16:36.677"
-      },
-      {
-        "cve_id": "CVE-2026-30995",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Slah CMS v1.5.0 and below was discovered to contain a SQL injection vulnerability via the id parameter in the vereador_ver.php endpoint.",
-        "published": "2026-04-15T17:17:04.337"
-      },
-      {
-        "cve_id": "CVE-2024-53412",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Command injection in the connect function in NietThijmen ShoppingCart 0.0.2 allows an attacker to execute arbitrary shell commands and achieve remote code execution via injection of malicious payloads",
-        "published": "2026-04-15T15:16:39.710"
+        "base_score": 8.8,
+        "description": "Use after free in Forms in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-04-15T20:16:41.580"
       }
     ]
   },
