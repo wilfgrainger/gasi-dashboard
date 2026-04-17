@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-17T16:44:12.858751+00:00",
+  "generated_at": "2026-04-17T20:36:00.262808+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
+        "value": 4,
         "score": 2.0,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 115,
-    "critical_count": 2,
-    "high_count": 22,
+    "total": 133,
+    "critical_count": 4,
+    "high_count": 27,
     "cves": [
       {
         "cve_id": "CVE-2026-6443",
@@ -250,11 +250,32 @@
         "published": "2026-04-17T07:16:03.160"
       },
       {
+        "cve_id": "CVE-2026-37749",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A SQL injection vulnerability in CodeAstro Simple Attendance Management System v1.0 allows remote unauthenticated attackers to bypass authentication via the username parameter in index.php.",
+        "published": "2026-04-17T15:16:51.763"
+      },
+      {
+        "cve_id": "CVE-2026-6284",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "An attacker with network access to the PLC is able to brute force discover passwords to gain unauthorized access to systems and services. The limited password complexity and no password input limiters",
+        "published": "2026-04-17T16:17:07.620"
+      },
+      {
         "cve_id": "CVE-2026-40322",
         "severity": "CRITICAL",
         "base_score": 9.0,
         "description": "SiYuan is an open-source personal knowledge management system. In versions 3.6.3 and below, Mermaid diagrams are rendered with securityLevel set to \"loose\", and the resulting SVG is injected into the ",
         "published": "2026-04-16T23:16:33.733"
+      },
+      {
+        "cve_id": "CVE-2026-3464",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The WP Customer Area plugin for WordPress is vulnerable to arbitrary file read and deletion due to insufficient file path validation in the 'ajax_attach_file' function in all versions up to, and inclu",
+        "published": "2026-04-17T17:17:07.217"
       },
       {
         "cve_id": "CVE-2026-40262",
@@ -285,11 +306,11 @@
         "published": "2026-04-17T08:16:16.900"
       },
       {
-        "cve_id": "CVE-2026-6442",
+        "cve_id": "CVE-2026-40516",
         "severity": "HIGH",
         "base_score": 8.3,
-        "description": "Improper validation of bash commands in Snowflake Cortex Code CLI versions prior to 1.0.25 allowed subsequent commands to execute outside the sandbox. An attacker could exploit this by embedding speci",
-        "published": "2026-04-16T19:16:35.560"
+        "description": "OpenHarness before commit\u00a0bd4df81 contains a server-side request forgery vulnerability in the web_fetch and web_search tools that allows attackers to access private and localhost HTTP services by mani",
+        "published": "2026-04-17T17:17:09.327"
       },
       {
         "cve_id": "CVE-2026-41113",
@@ -355,32 +376,11 @@
         "published": "2026-04-17T07:16:01.967"
       },
       {
-        "cve_id": "CVE-2026-41082",
+        "cve_id": "CVE-2026-6507",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "In OCaml opam before 2.5.1, a .install field containing a destination filepath can use ../ to reach a parent directory.",
-        "published": "2026-04-16T18:16:45.980"
-      },
-      {
-        "cve_id": "CVE-2026-5231",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The WP Statistics plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'utm_source' parameter in all versions up to, and including, 14.16.4. This is due to insufficient input sani",
-        "published": "2026-04-17T02:16:06.227"
-      },
-      {
-        "cve_id": "CVE-2026-21719",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "An OS command injection vulnerability exists in CubeCart prior to 6.6.0, which may allow a user with an administrative privilege to execute an arbitrary OS command.",
-        "published": "2026-04-17T06:16:29.430"
-      },
-      {
-        "cve_id": "CVE-2026-33392",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "In JetBrains YouTrack before 2025.3.131383 high privileged user can achieve RCE via sandbox bypass",
-        "published": "2026-04-17T08:16:17.877"
+        "base_score": 7.5,
+        "description": "A flaw was found in dnsmasq. A remote attacker could exploit an out-of-bounds write vulnerability by sending a specially crafted BOOTREPLY (Bootstrap Protocol Reply) packet to a dnsmasq server configu",
+        "published": "2026-04-17T13:16:14.967"
       }
     ]
   },
