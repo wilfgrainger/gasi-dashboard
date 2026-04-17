@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-17T05:58:56.223505+00:00",
+  "generated_at": "2026-04-17T09:08:27.052431+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -238,17 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 123,
+    "total": 112,
     "critical_count": 6,
     "high_count": 23,
     "cves": [
-      {
-        "cve_id": "CVE-2026-3596",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Riaxe Product Customizer plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 2.1.2. The plugin registers an unauthenticated AJAX action ('wp_ajax_nopri",
-        "published": "2026-04-16T06:16:15.667"
-      },
       {
         "cve_id": "CVE-2026-31843",
         "severity": "CRITICAL",
@@ -285,25 +278,32 @@
         "published": "2026-04-16T15:17:37.670"
       },
       {
-        "cve_id": "CVE-2026-3614",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The AcyMailing plugin for WordPress is vulnerable to privilege escalation in all versions From 9.11.0 up to, and including, 10.8.1 due to a missing capability check on the `wp_ajax_acymailing_router` ",
-        "published": "2026-04-16T06:16:18.167"
+        "cve_id": "CVE-2026-40322",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "SiYuan is an open-source personal knowledge management system. In versions 3.6.3 and below, Mermaid diagrams are rendered with securityLevel set to \"loose\", and the resulting SVG is injected into the ",
+        "published": "2026-04-16T23:16:33.733"
       },
       {
-        "cve_id": "CVE-2026-1620",
+        "cve_id": "CVE-2026-40262",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Livemesh Addons for Elementor plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 9.0. This is due to insufficient sanitization of the template name pa",
-        "published": "2026-04-16T07:16:29.787"
+        "base_score": 8.7,
+        "description": "Note Mark is an open-source note-taking application. In versions 0.19.1 and prior, the asset delivery handler serves uploaded files inline and relies on magic-byte detection for content type, which do",
+        "published": "2026-04-17T01:17:39.950"
       },
       {
-        "cve_id": "CVE-2025-14868",
+        "cve_id": "CVE-2026-22734",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Career Section plugin for WordPress is vulnerable to Cross-Site Request Forgery leading to Path Traversal and Arbitrary File Deletion in all versions up to, and including, 1.6. This is due to miss",
-        "published": "2026-04-16T08:16:26.773"
+        "base_score": 8.6,
+        "description": "Cloud Foundry UUA is\u00a0vulnerable to a bypass that allows an attacker to obtain a token for any user and gain access to UAA-protected systems. This vulnerability exists when SAML 2.0 bearer assertions a",
+        "published": "2026-04-17T01:17:37.107"
+      },
+      {
+        "cve_id": "CVE-2026-40318",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "SiYuan is an open-source personal knowledge management system. In versions 3.6.3 and prior, the /api/av/removeUnusedAttributeView endpoint constructs a filesystem path using the user-controlled id par",
+        "published": "2026-04-16T23:16:33.590"
       },
       {
         "cve_id": "CVE-2026-6442",
@@ -341,25 +341,11 @@
         "published": "2026-04-16T23:16:33.430"
       },
       {
-        "cve_id": "CVE-2026-22619",
+        "cve_id": "CVE-2026-3605",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Eaton Intelligent Power Protector (IPP) is affected by insecure library loading in its executable, which could lead to arbitrary code execution by an attacker with access to the software package.\u00a0This",
-        "published": "2026-04-16T06:16:10.413"
-      },
-      {
-        "cve_id": "CVE-2026-3599",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Riaxe Product Customizer plugin for WordPress is vulnerable to SQL Injection via the 'options' parameter keys within 'product_data' of the /wp-json/InkXEProductDesignerLite/add-item-to-cart REST A",
-        "published": "2026-04-16T06:16:17.063"
-      },
-      {
-        "cve_id": "CVE-2026-5050",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Payment Gateway for Redsys & WooCommerce Lite plugin for WordPress is vulnerable to Improper Verification of Cryptographic Signature in versions up to, and including, 7.0.0 due to successful_reque",
-        "published": "2026-04-16T06:16:20.587"
+        "base_score": 8.1,
+        "description": "An authenticated user with access to a kvv2 path through a policy containing a glob may be able to delete secrets they were not authorized to read or write, resulting in denial-of-service. This vulner",
+        "published": "2026-04-17T04:16:03.263"
       },
       {
         "cve_id": "CVE-2024-2374",
@@ -381,6 +367,20 @@
         "base_score": 7.5,
         "description": "A NULL pointer dereference vulnerability exists in fio (Flexible I/O Tester) v3.41 when parsing job files containing the fdp_pli option. The callback function str_fdp_pli_cb() does not validate the in",
         "published": "2026-04-16T15:17:17.873"
+      },
+      {
+        "cve_id": "CVE-2026-40170",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "ngtcp2 is a C implementation of the IETF QUIC protocol. In versions prior to 1.22.1, ngtcp2_qlog_parameters_set_transport_params() serializes peer transport parameters into a fixed 1024-byte stack buf",
+        "published": "2026-04-16T22:16:38.220"
+      },
+      {
+        "cve_id": "CVE-2026-4525",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "If a Vault auth mount is configured to pass through the \"Authorization\" header, and the \"Authorization\" header is used to authenticate to Vault, Vault forwarded the Vault token to the auth plugin back",
+        "published": "2026-04-17T04:16:09.997"
       }
     ]
   },
