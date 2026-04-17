@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-17T12:57:58.198400+00:00",
+  "generated_at": "2026-04-17T16:44:12.858751+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
-        "score": 2.5,
+        "value": 2,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,51 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 125,
-    "critical_count": 7,
-    "high_count": 24,
+    "total": 115,
+    "critical_count": 2,
+    "high_count": 22,
     "cves": [
-      {
-        "cve_id": "CVE-2026-31843",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The goodoneuz/pay-uz Laravel package (<= 2.2.24) contains a critical vulnerability in the /payment/api/editable/update endpoint that allows unauthenticated attackers to overwrite existing PHP payment ",
-        "published": "2026-04-16T13:16:48.473"
-      },
-      {
-        "cve_id": "CVE-2026-37345",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "SourceCodester Vehicle Parking Area Management System v1.0 is vulnerable to SQL Injection in the file /parking/manage_park.php.",
-        "published": "2026-04-16T15:17:37.447"
-      },
       {
         "cve_id": "CVE-2026-6443",
         "severity": "CRITICAL",
         "base_score": 9.8,
         "description": "The Accordion and Accordion Slider plugin for WordPress is vulnerable to an injected backdoor in version 1.4.6. This is due to the plugin being sold to a malicious threat actor that embedded a backdoo",
         "published": "2026-04-17T07:16:03.160"
-      },
-      {
-        "cve_id": "CVE-2026-37338",
-        "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "SourceCodester Simple Music Cloud Community System v1.0 is vulnerable to SQL Injection in the file /music/view_user.php.",
-        "published": "2026-04-16T15:17:36.680"
-      },
-      {
-        "cve_id": "CVE-2026-6270",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "@fastify/middie versions 9.3.1 and earlier do not register inherited middleware directly on child plugin engine instances. When a Fastify application registers authentication middleware in a parent sc",
-        "published": "2026-04-16T14:16:19.433"
-      },
-      {
-        "cve_id": "CVE-2026-37347",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "SourceCodester Payroll Management and Information System v1.0 is vulnerable to SQL Injection in the file /payroll/view_employee.php.",
-        "published": "2026-04-16T15:17:37.670"
       },
       {
         "cve_id": "CVE-2026-40322",
@@ -327,20 +292,6 @@
         "published": "2026-04-16T19:16:35.560"
       },
       {
-        "cve_id": "CVE-2026-3324",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Zohocorp ManageEngine Log360 versions 13000 through 13013 are vulnerable to authentication bypass on certain actions due to improper filter configuration.",
-        "published": "2026-04-16T15:17:38.010"
-      },
-      {
-        "cve_id": "CVE-2026-5785",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Zohocorp ManageEngine PAM360 versions before 8531 and ManageEngine Password Manager Pro versions from 8600 to 13230 are vulnerable to Authenticated SQL injection in the query report module.",
-        "published": "2026-04-16T14:16:18.430"
-      },
-      {
         "cve_id": "CVE-2026-41113",
         "severity": "HIGH",
         "base_score": 8.1,
@@ -362,11 +313,18 @@
         "published": "2026-04-17T04:16:03.263"
       },
       {
-        "cve_id": "CVE-2026-30656",
+        "cve_id": "CVE-2025-36568",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A NULL pointer dereference vulnerability exists in fio (Flexible I/O Tester) v3.41 when parsing job files containing the fdp_pli option. The callback function str_fdp_pli_cb() does not validate the in",
-        "published": "2026-04-16T15:17:17.873"
+        "base_score": 7.8,
+        "description": "Dell PowerProtect Data Domain BoostFS for client of Feature Release versions 7.7.1.0 through 8.5, LTS2025 release version 8.3.1.0 through 8.3.1.20, LTS2024 release versions 7.13.1.0 through 7.13.1.50,",
+        "published": "2026-04-17T09:16:05.000"
+      },
+      {
+        "cve_id": "CVE-2026-23775",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "Dell PowerProtect Data Domain appliances with Data Domain Operating System (DD OS) of Feature Release versions 8.0 through 8.5, LTS2025 release version 8.3.1.0 through 8.3.1.10 contain an insertion of",
+        "published": "2026-04-17T09:16:05.153"
       },
       {
         "cve_id": "CVE-2026-40170",
@@ -381,6 +339,48 @@
         "base_score": 7.5,
         "description": "If a Vault auth mount is configured to pass through the \"Authorization\" header, and the \"Authorization\" header is used to authenticate to Vault, Vault forwarded the Vault token to the auth plugin back",
         "published": "2026-04-17T04:16:09.997"
+      },
+      {
+        "cve_id": "CVE-2026-5807",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Vault is vulnerable to a denial-of-service condition where an unauthenticated attacker can repeatedly initiate or cancel root token generation or rekey operations, occupying the single in-progress ope",
+        "published": "2026-04-17T05:16:19.303"
+      },
+      {
+        "cve_id": "CVE-2026-4659",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Unlimited Elements for Elementor plugin for WordPress is vulnerable to Arbitrary File Read via the Repeater JSON/CSV URL parameter in versions up to, and including, 2.0.6. This is due to insuffici",
+        "published": "2026-04-17T07:16:01.967"
+      },
+      {
+        "cve_id": "CVE-2026-41082",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "In OCaml opam before 2.5.1, a .install field containing a destination filepath can use ../ to reach a parent directory.",
+        "published": "2026-04-16T18:16:45.980"
+      },
+      {
+        "cve_id": "CVE-2026-5231",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The WP Statistics plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'utm_source' parameter in all versions up to, and including, 14.16.4. This is due to insufficient input sani",
+        "published": "2026-04-17T02:16:06.227"
+      },
+      {
+        "cve_id": "CVE-2026-21719",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "An OS command injection vulnerability exists in CubeCart prior to 6.6.0, which may allow a user with an administrative privilege to execute an arbitrary OS command.",
+        "published": "2026-04-17T06:16:29.430"
+      },
+      {
+        "cve_id": "CVE-2026-33392",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "In JetBrains YouTrack before 2025.3.131383 high privileged user can achieve RCE via sandbox bypass",
+        "published": "2026-04-17T08:16:17.877"
       }
     ]
   },
