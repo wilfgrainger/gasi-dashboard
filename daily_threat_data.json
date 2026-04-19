@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-19T01:48:58.128059+00:00",
+  "generated_at": "2026-04-19T05:53:15.419690+00:00",
   "threat_score": {
-    "score": 6.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.0,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
-        "score": 2.0,
+        "value": 0,
+        "score": 1.0,
         "max": 3
       },
       {
@@ -218,93 +218,16 @@
     ]
   },
   "nvd": {
-    "total": 26,
-    "critical_count": 3,
-    "high_count": 3,
+    "total": 14,
+    "critical_count": 0,
+    "high_count": 0,
     "cves": [
-      {
-        "cve_id": "CVE-2026-40492",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "SAIL is a cross-platform library for loading and saving images with support for animation, metadata, and ICC profiles. Prior to commit 36aa5c7ec8a2bb35f6fb867a1177a6f141156b02, the XWD codec resolves ",
-        "published": "2026-04-18T03:16:13.300"
-      },
-      {
-        "cve_id": "CVE-2026-40493",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "SAIL is a cross-platform library for loading and saving images with support for animation, metadata, and ICC profiles. Prior to commit c930284445ea3ff94451ccd7a57c999eca3bc979, the PSD codec computes ",
-        "published": "2026-04-18T03:16:13.440"
-      },
-      {
-        "cve_id": "CVE-2026-40494",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "SAIL is a cross-platform library for loading and saving images with support for animation, metadata, and ICC profiles. Prior to commit 45d48d1f2e8e0d73e80bc1fd5310cb57f4547302, the TGA codec's RLE dec",
-        "published": "2026-04-18T03:16:13.590"
-      },
-      {
-        "cve_id": "CVE-2026-40487",
-        "severity": "HIGH",
-        "base_score": 8.9,
-        "description": "Postiz is an AI social media scheduling tool. Prior to version 2.21.6, a file upload validation bypass allows any authenticated user to upload arbitrary HTML, SVG, or other executable file types to th",
-        "published": "2026-04-18T02:16:11.670"
-      },
-      {
-        "cve_id": "CVE-2026-35582",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Emissary is a P2P based data-driven workflow engine. In versions 8.42.0 and below, Executrix.getCommand() is vulnerable to OS command injection  because it interpolates temporary file paths into a /bi",
-        "published": "2026-04-18T02:16:11.510"
-      },
-      {
-        "cve_id": "CVE-2026-6518",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The CMP \u2013 Coming Soon & Maintenance Plugin by NiteoThemes plugin for WordPress is vulnerable to arbitrary file upload and remote code execution in all versions up to, and including, 4.1.16 via the `cm",
-        "published": "2026-04-18T05:16:24.377"
-      },
       {
         "cve_id": "CVE-2026-41253",
         "severity": "MEDIUM",
         "base_score": 6.9,
         "description": "In iTerm2 through 3.6.9, displaying a .txt file can cause code execution via DCS 2000p and OSC 135 data, if the working directory contains a malicious file whose name is valid output from the conducto",
         "published": "2026-04-18T06:16:17.427"
-      },
-      {
-        "cve_id": "CVE-2026-40490",
-        "severity": "MEDIUM",
-        "base_score": 6.8,
-        "description": "The AsyncHttpClient (AHC) library allows Java applications to easily execute HTTP requests and asynchronously process HTTP responses. When redirect following is enabled (followRedirect(true)), version",
-        "published": "2026-04-18T02:16:11.977"
-      },
-      {
-        "cve_id": "CVE-2026-40491",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "gdown is a Google Drive public file/folder downloader. Versions prior to 5.2.2 are vulnerable to a Path Traversal attack within the extractall functionality. When extracting a maliciously crafted ZIP ",
-        "published": "2026-04-18T03:16:13.157"
-      },
-      {
-        "cve_id": "CVE-2026-1559",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The Youzify plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'checkin_place_id' parameter in all versions up to, and including, 1.3.6 due to insufficient input sanitization an",
-        "published": "2026-04-18T02:16:11.187"
-      },
-      {
-        "cve_id": "CVE-2026-4801",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The Page Builder Gutenberg Blocks \u2013 CoBlocks plugin for WordPress is vulnerable to Stored Cross-Site Scripting via external iCal feed data in all versions up to, and including, 3.1.16 due to insuffici",
-        "published": "2026-04-18T05:16:23.987"
-      },
-      {
-        "cve_id": "CVE-2026-6048",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The Flipbox Addon for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the Flipbox widget's button URL `custom_attributes` field in all versions up to, and including, 2.",
-        "published": "2026-04-18T05:16:24.157"
       },
       {
         "cve_id": "CVE-2026-0894",
@@ -321,11 +244,11 @@
         "published": "2026-04-18T12:16:11.600"
       },
       {
-        "cve_id": "CVE-2026-1838",
+        "cve_id": "CVE-2026-0868",
         "severity": "MEDIUM",
-        "base_score": 6.1,
-        "description": "The Hostel plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'shortcode_id' parameter in all versions up to, and including, 1.1.6 due to insufficient input sanitization and ",
-        "published": "2026-04-18T02:16:11.337"
+        "base_score": 6.4,
+        "description": "The EMC \u2013 Easily Embed Calendly Scheduling Features plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's calendly shortcode in all versions up to, and including, 4.4 due ",
+        "published": "2026-04-19T04:16:10.670"
       },
       {
         "cve_id": "CVE-2026-2505",
@@ -342,13 +265,6 @@
         "published": "2026-04-18T07:16:10.807"
       },
       {
-        "cve_id": "CVE-2026-40489",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "editorconfig-core-c  is an EditorConfig core library for use by plugins supporting EditorConfig parsing. Versions up to and including 0.12.10 have a stack-based buffer overflow in ec_glob() that allow",
-        "published": "2026-04-18T02:16:11.827"
-      },
-      {
         "cve_id": "CVE-2026-25917",
         "severity": "UNKNOWN",
         "base_score": null,
@@ -361,6 +277,48 @@
         "base_score": null,
         "description": "An example of BashOperator in Airflow documentation suggested a way of passing dag_run.conf in the way that could cause unsanitized user input to be used to escalate privileges of UI user to allow exe",
         "published": "2026-04-18T07:16:10.297"
+      },
+      {
+        "cve_id": "CVE-2026-30912",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In case of SQL errors, exception/stack trace of errors was exposed in API even if \"api/expose_stack_traces\" was set to false. That could lead to exposing additional information to potential attacker. ",
+        "published": "2026-04-18T07:16:10.427"
+      },
+      {
+        "cve_id": "CVE-2026-32228",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "UI / API User with asset materialize permission could trigger dags they had no access to.\nUsers are advised to migrate to Airflow version 3.2.0 that fixes the issue.",
+        "published": "2026-04-18T07:16:10.560"
+      },
+      {
+        "cve_id": "CVE-2026-32690",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "Secrets in Variables saved as JSON dictionaries were not properly redacted - in case thee variables were retrieved by the user the secrets stored as nested fields were not masked.\n\nIf you do not store",
+        "published": "2026-04-18T07:16:10.683"
+      },
+      {
+        "cve_id": "CVE-2026-40948",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "The Keycloak authentication manager in `apache-airflow-providers-keycloak` did not generate or validate the OAuth 2.0 `state` parameter on the login / login-callback flow, and did not use PKCE. An att",
+        "published": "2026-04-18T14:16:10.897"
+      },
+      {
+        "cve_id": "CVE-2026-41242",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "protobufjs compiles protobuf definitions into JavaScript (JS) functions. In versions prior to 8.0.1 and 7.5.5, attackers can inject arbitrary code in the \"type\" fields of protobuf definitions, which w",
+        "published": "2026-04-18T17:16:13.983"
+      },
+      {
+        "cve_id": "CVE-2026-6056",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
+        "published": "2026-04-18T23:16:12.537"
       }
     ]
   },
