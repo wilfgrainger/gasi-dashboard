@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-20T01:50:43.421378+00:00",
+  "generated_at": "2026-04-20T06:08:59.457498+00:00",
   "threat_score": {
-    "score": 5.0,
+    "score": 5.5,
     "level": "ELEVATED",
     "level_color": "elevated",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 1.0,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -218,10 +218,17 @@
     ]
   },
   "nvd": {
-    "total": 30,
-    "critical_count": 0,
-    "high_count": 10,
+    "total": 56,
+    "critical_count": 1,
+    "high_count": 20,
     "cves": [
+      {
+        "cve_id": "CVE-2026-32956",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "SD-330AC and AMC Manager provided by silex technology, Inc. contain a heap-based buffer overflow vulnerability in processing the redirect URLs. Arbitrary code may be executed on the device.",
+        "published": "2026-04-20T04:16:34.810"
+      },
       {
         "cve_id": "CVE-2026-6560",
         "severity": "HIGH",
@@ -242,6 +249,20 @@
         "base_score": 8.8,
         "description": "A vulnerability was detected in H3C Magic B1 up to 100R004. Affected by this vulnerability is the function SetMobileAPInfoById of the file /goform/aspForm. Performing a manipulation of the argument pa",
         "published": "2026-04-19T23:16:33.893"
+      },
+      {
+        "cve_id": "CVE-2026-32955",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "SD-330AC and AMC Manager provided by silex technology, Inc. contain a stack-based buffer overflow vulnerability in processing the redirect URLs. Arbitrary code may be executed on the device.",
+        "published": "2026-04-20T04:16:29.113"
+      },
+      {
+        "cve_id": "CVE-2026-32965",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Initialization of a resource with an insecure default vulnerability exists in SD-330AC and AMC Manager provided by silex technology, Inc. When the affected device is connected to the network with the ",
+        "published": "2026-04-20T04:16:45.583"
       },
       {
         "cve_id": "CVE-2026-6562",
@@ -293,74 +314,53 @@
         "published": "2026-04-19T23:16:34.080"
       },
       {
-        "cve_id": "CVE-2026-6579",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "A weakness has been identified in liangliangyy DjangoBlog up to 2.1.0.0. This impacts an unknown function of the file blog/views.py of the component Clean Endpoint. This manipulation causes missing au",
-        "published": "2026-04-19T22:16:35.320"
+        "cve_id": "CVE-2026-6594",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was determined in brikcss merge up to 1.3.0. This affects an unknown part. Executing a manipulation of the argument __proto__/constructor.prototype/prototype can lead to improperly con",
+        "published": "2026-04-20T02:16:15.633"
       },
       {
-        "cve_id": "CVE-2026-6588",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "A weakness has been identified in serge-chat serge up to 1.4TB. The impacted element is the function download_model/delete_model of the file api/src/serge/routers/model.py of the component Model API E",
-        "published": "2026-04-20T01:16:30.867"
+        "cve_id": "CVE-2026-6595",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was identified in ProjectsAndPrograms School Management System up to 6b6fae5426044f89c08d0dd101c7fa71f9042a59. This vulnerability affects unknown code of the file buslocation.php of th",
+        "published": "2026-04-20T03:16:16.777"
       },
       {
-        "cve_id": "CVE-2026-0868",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The EMC \u2013 Easily Embed Calendly Scheduling Features plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's calendly shortcode in all versions up to, and including, 4.4 due ",
-        "published": "2026-04-19T04:16:10.670"
+        "cve_id": "CVE-2026-6596",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A security flaw has been discovered in langflow-ai langflow up to 1.1.0. This issue affects the function create_upload_file of the file src/backend/base/Langflow/api/v1/endpoints.py of the component A",
+        "published": "2026-04-20T03:16:16.967"
       },
       {
-        "cve_id": "CVE-2026-6571",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A weakness has been identified in kodcloud KodExplorer up to 4.52. Affected by this vulnerability is the function roleGroupAction of the file /app/controller/systemRole.class.php. Executing a manipula",
-        "published": "2026-04-19T12:16:33.607"
+        "cve_id": "CVE-2026-6602",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was found in rickxy Hospital Management System up to 88a4290d957dc5bdde8a56e5ad451ad14f7f90f4. Affected is an unknown function of the file /backend/admin/his_admin_account.php. The man",
+        "published": "2026-04-20T04:16:58.933"
       },
       {
-        "cve_id": "CVE-2026-6573",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A vulnerability was detected in PHPEMS 11.0. This affects the function temppage of the file /app/exam/controller/exams.master.php of the component Instant Exam Creation Handler. The manipulation of th",
-        "published": "2026-04-19T13:16:46.187"
+        "cve_id": "CVE-2026-6603",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was determined in modelscope agentscope up to 1.0.18. Affected by this vulnerability is the function execute_python_code/execute_shell_command of the file src/AgentScope/tool/_coding/_",
+        "published": "2026-04-20T05:16:15.353"
       },
       {
-        "cve_id": "CVE-2026-6576",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A vulnerability was determined in liangliangyy DjangoBlog up to 2.1.0.0. The affected element is the function CommandHandler of the file servermanager/api/commonapi.py of the component WeChat Bot Inte",
-        "published": "2026-04-19T19:16:14.347"
+        "cve_id": "CVE-2026-6604",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was identified in modelscope agentscope up to 1.0.18. Affected by this issue is the function _parse_url/prepare_image/openai_audio_to_text of the file src/agentscope/tool/_multi_modali",
+        "published": "2026-04-20T05:16:15.567"
       },
       {
-        "cve_id": "CVE-2026-6586",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A vulnerability was identified in TransformerOptimus SuperAGI up to 0.0.14. Impacted is the function get_budget/update_budget of the file superagi/controllers/budget.py of the component Budget Endpoin",
-        "published": "2026-04-20T00:16:34.507"
-      },
-      {
-        "cve_id": "CVE-2026-6587",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A security flaw has been discovered in vibrantlabsai RAGAS up to 0.4.3. The affected element is the function _try_process_local_file/_try_process_url of the file src/ragas/metrics/collections/multi_mo",
-        "published": "2026-04-20T00:16:34.703"
-      },
-      {
-        "cve_id": "CVE-2026-6572",
-        "severity": "MEDIUM",
-        "base_score": 5.6,
-        "description": "A security vulnerability has been detected in Collabora KodExplorer up to 4.52. Affected by this issue is some unknown functionality of the file /app/controller/share.class.php of the component fileUp",
-        "published": "2026-04-19T13:16:45.650"
-      },
-      {
-        "cve_id": "CVE-2026-6578",
-        "severity": "MEDIUM",
-        "base_score": 5.6,
-        "description": "A security flaw has been discovered in liangliangyy DjangoBlog up to 2.1.0.0. This affects an unknown function of the file djangoblog/settings.py of the component Setting Handler. The manipulation of ",
-        "published": "2026-04-19T22:16:35.133"
+        "cve_id": "CVE-2026-6605",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A security flaw has been discovered in modelscope agentscope up to 1.0.18. This affects the function _get_bytes_from_web_url of the file src/agentscope/_utils/_common.py of the component Internal Serv",
+        "published": "2026-04-20T05:16:15.780"
       }
     ]
   },
