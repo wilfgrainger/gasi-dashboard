@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T16:49:04.080730+00:00",
+  "generated_at": "2026-04-21T20:40:14.417406+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
+        "value": 9,
         "score": 2.5,
         "max": 3
       },
@@ -73,7 +73,7 @@
         "date_added": "2026-04-20",
         "due_date": "2026-05-04",
         "description": "PaperCut NG/MF contains an improper authentication vulnerability that could allow remote attackers to bypass authentication on affected installations via the SecurityRequestFilter class.",
-        "ransomware_use": "Unknown"
+        "ransomware_use": "Known"
       },
       {
         "cve_id": "CVE-2025-48700",
@@ -113,7 +113,7 @@
         "date_added": "2026-04-20",
         "due_date": "2026-05-04",
         "description": "JetBrains TeamCity contains a relative path traversal vulnerability that could allow limited admin actions to be performed.",
-        "ransomware_use": "Unknown"
+        "ransomware_use": "Known"
       },
       {
         "cve_id": "CVE-2026-34197",
@@ -173,7 +173,7 @@
         "date_added": "2026-04-13",
         "due_date": "2026-04-27",
         "description": "Microsoft Exchange Server contains a deserialization of untrusted data that allows an authenticated attacker to achieve remote code execution.",
-        "ransomware_use": "Unknown"
+        "ransomware_use": "Known"
       },
       {
         "cve_id": "CVE-2023-36424",
@@ -238,17 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 179,
-    "critical_count": 7,
-    "high_count": 26,
+    "total": 227,
+    "critical_count": 9,
+    "high_count": 29,
     "cves": [
-      {
-        "cve_id": "CVE-2026-30269",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Improper access control in Doorman v0.1.0 and v1.0.2 allows any authenticated user to update their own account role to a non-admin privileged role via /platform/user/{username}. The `role` field is ac",
-        "published": "2026-04-20T17:16:33.483"
-      },
       {
         "cve_id": "CVE-2026-32604",
         "severity": "CRITICAL",
@@ -271,6 +264,20 @@
         "published": "2026-04-21T00:16:31.390"
       },
       {
+        "cve_id": "CVE-2026-29646",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "In OpenXiangShan NEMU prior to 55295c4, when running with RVH (Hypervisor extension) enabled, a VS-mode guest write to the supervisor interrupt-enable CSR (sie) may be handled incorrectly and can infl",
+        "published": "2026-04-20T21:16:19.503"
+      },
+      {
+        "cve_id": "CVE-2026-5450",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Calling the scanf family of functions with a %mc (malloc'd character match) in the GNU C Library version 2.7 to version 2.43 with a format width specifier with an explicit width greater than 1024 coul",
+        "published": "2026-04-20T21:16:36.850"
+      },
+      {
         "cve_id": "CVE-2026-5965",
         "severity": "CRITICAL",
         "base_score": 9.8,
@@ -278,32 +285,32 @@
         "published": "2026-04-21T04:16:13.443"
       },
       {
-        "cve_id": "CVE-2026-39109",
+        "cve_id": "CVE-2026-6748",
         "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "SQL Injection vulnerability in Apartment Visitors Management System Apartment Visitors Management System V1.1 within the username parameter of the login page (index.php). This allows an unauthenticate",
-        "published": "2026-04-20T18:16:27.043"
+        "base_score": 9.8,
+        "description": "Uninitialized memory in the Audio/Video: Web Codecs component. This vulnerability was fixed in Firefox 150 and Firefox ESR 140.10.",
+        "published": "2026-04-21T13:16:20.910"
       },
       {
-        "cve_id": "CVE-2026-6257",
+        "cve_id": "CVE-2026-6768",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Mitigation bypass in the Networking: Cookies component. This vulnerability was fixed in Firefox 150.",
+        "published": "2026-04-21T13:16:22.667"
+      },
+      {
+        "cve_id": "CVE-2026-5358",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Vvveb CMS v1.0.8 contains a remote code execution vulnerability in its media management functionality where a missing return statement in the file rename handler allows authenticated attackers to rena",
-        "published": "2026-04-20T20:16:49.107"
+        "description": "The obsolete nis_local_principal function in the GNU C Library version 2.43 and older may overflow a buffer in the data section, which could allow an attacker to spoof a crafted response to a UDP requ",
+        "published": "2026-04-20T21:16:36.713"
       },
       {
-        "cve_id": "CVE-2026-41445",
+        "cve_id": "CVE-2026-29648",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "KissFFT before commit\u00a08a8e66e contains an integer overflow vulnerability in the kiss_fftndr_alloc() function in kiss_fftndr.c where the allocation size calculation dimOther*(dimReal+2)*sizeof(kiss_fft",
-        "published": "2026-04-20T17:16:37.160"
-      },
-      {
-        "cve_id": "CVE-2026-6249",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Vvveb CMS 1.0.8 contains a remote code execution vulnerability in its media upload handler that allows authenticated attackers to execute arbitrary operating system commands by uploading a PHP webshel",
-        "published": "2026-04-20T20:16:48.943"
+        "description": "In OpenXiangShan NEMU, when Smstateen is enabled, clearing mstateen0.ENVCFG does not correctly restrict access to henvcfg and senvcfg. As a result, less-privileged code may read or write these CSRs wi",
+        "published": "2026-04-20T21:16:19.733"
       },
       {
         "cve_id": "CVE-2026-41303",
@@ -334,39 +341,11 @@
         "published": "2026-04-21T00:16:28.877"
       },
       {
-        "cve_id": "CVE-2026-39110",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "SQL Injection vulnerability in Apartment Visitors Management System Apartment Visitors Management System V1.1 in the contactno parameter of the forgot password page (forgot-password.php). This allows ",
-        "published": "2026-04-20T18:16:27.167"
-      },
-      {
         "cve_id": "CVE-2026-41296",
         "severity": "HIGH",
         "base_score": 8.2,
         "description": "OpenClaw before 2026.3.31 contains a time-of-check-time-of-use race condition in the remote filesystem bridge readFile function that allows sandbox escape. Attackers can exploit the separate path vali",
         "published": "2026-04-21T00:16:29.993"
-      },
-      {
-        "cve_id": "CVE-2026-25524",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Magento Long Term Support (LTS) is an unofficial, community-driven project provides an alternative to the Magento Community Edition e-commerce platform with a high level of backward compatibility. Pri",
-        "published": "2026-04-20T17:16:32.290"
-      },
-      {
-        "cve_id": "CVE-2026-6248",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The wpForo Forum plugin for WordPress is vulnerable to Arbitrary File Deletion in versions up to and including 3.0.5. This is due to two compounding flaws: the Members::update() method does not valida",
-        "published": "2026-04-20T19:16:11.230"
-      },
-      {
-        "cve_id": "CVE-2026-5478",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Everest Forms plugin for WordPress is vulnerable to Arbitrary File Read and Deletion in all versions up to, and including, 3.4.4. This is due to the plugin trusting attacker-controlled old_files d",
-        "published": "2026-04-20T20:16:48.800"
       },
       {
         "cve_id": "CVE-2026-40497",
@@ -376,11 +355,32 @@
         "published": "2026-04-21T03:16:08.403"
       },
       {
-        "cve_id": "CVE-2026-30266",
+        "cve_id": "CVE-2026-29642",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "Insecure Permissions vulnerability in DeepCool DeepCreative v.1.2.7 and before allows a local attacker to execute arbitrary code via a crafted file",
-        "published": "2026-04-20T17:16:33.377"
+        "description": "A local attacker who can execute privileged CSR operations (or can induce firmware to do so) performs carefully crafted reads/writes to menvcfg (e.g., csrrs in M-mode). On affected XiangShan versions ",
+        "published": "2026-04-20T21:16:19.393"
+      },
+      {
+        "cve_id": "CVE-2026-41295",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "OpenClaw before 2026.4.2 contains an improper trust boundary vulnerability allowing untrusted workspace channel shadows to execute during built-in channel setup and login. Attackers can clone a worksp",
+        "published": "2026-04-21T00:16:29.803"
+      },
+      {
+        "cve_id": "CVE-2026-31368",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "AiAssistant is affected by type privilege bypass, successful exploitation of this vulnerability may affect service availability.",
+        "published": "2026-04-21T07:16:07.923"
+      },
+      {
+        "cve_id": "CVE-2026-41297",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "OpenClaw before 2026.3.31 contains a server-side request forgery vulnerability in the marketplace plugin download functionality that allows attackers to access internal resources by following unvalida",
+        "published": "2026-04-21T00:16:30.163"
       }
     ]
   },
