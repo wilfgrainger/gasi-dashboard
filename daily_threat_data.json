@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T13:02:16.453111+00:00",
+  "generated_at": "2026-04-21T16:49:04.080730+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
+        "value": 7,
         "score": 2.5,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 143,
-    "critical_count": 9,
-    "high_count": 29,
+    "total": 179,
+    "critical_count": 7,
+    "high_count": 26,
     "cves": [
       {
         "cve_id": "CVE-2026-30269",
@@ -264,18 +264,18 @@
         "published": "2026-04-20T21:16:32.623"
       },
       {
-        "cve_id": "CVE-2026-5760",
+        "cve_id": "CVE-2026-41329",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "SGLang's reranking endpoint (/v1/rerank) achieves Remote Code Execution (RCE) when a model file containing a malcious tokenizer.chat_template is loaded, as the Jinja2 chat templates are rendered using",
-        "published": "2026-04-20T14:16:21.680"
+        "base_score": 9.9,
+        "description": "OpenClaw before 2026.3.31 contains a sandbox bypass vulnerability allowing attackers to escalate privileges via heartbeat context inheritance and senderIsOwner parameter manipulation. Attackers can ex",
+        "published": "2026-04-21T00:16:31.390"
       },
       {
-        "cve_id": "CVE-2026-39918",
+        "cve_id": "CVE-2026-5965",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Vvveb prior to\u00a01.0.8.1 contains a code injection vulnerability in the installation endpoint where the subdir POST parameter is written unsanitized into the env.php configuration file without escaping ",
-        "published": "2026-04-20T16:16:45.243"
+        "description": "NewSoftOA developed by NewSoft has an OS Command Injection vulnerability, allowing unauthenticated local attackers to inject arbitrary OS commands and execute them on the server.",
+        "published": "2026-04-21T04:16:13.443"
       },
       {
         "cve_id": "CVE-2026-39109",
@@ -285,39 +285,11 @@
         "published": "2026-04-20T18:16:27.043"
       },
       {
-        "cve_id": "CVE-2026-33557",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A possible security vulnerability has been identified in Apache Kafka.\n\nBy default, the broker property `sasl.oauthbearer.jwt.validator.class` is\u00a0set to `org.apache.kafka.common.security.oauthbearer.D",
-        "published": "2026-04-20T14:16:18.780"
-      },
-      {
         "cve_id": "CVE-2026-6257",
         "severity": "CRITICAL",
         "base_score": 9.1,
         "description": "Vvveb CMS v1.0.8 contains a remote code execution vulnerability in its media management functionality where a missing return statement in the file rename handler allows authenticated attackers to rena",
         "published": "2026-04-20T20:16:49.107"
-      },
-      {
-        "cve_id": "CVE-2026-24467",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "OpenAEV is an open source platform allowing organizations to plan, schedule and conduct cyber adversary simulation campaign and tests. Starting in version 1.0.0 and prior to version 2.0.13, OpenAEV's ",
-        "published": "2026-04-20T16:16:41.447"
-      },
-      {
-        "cve_id": "CVE-2026-26944",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Dell PowerProtect Data Domain, versions 7.7.1.0 through 8.6, LTS2025 release version 8.3.1.0 through 8.3.1.20, LTS2024 release versions 7.13.1.0 through 7.13.1.60 contain a missing authentication for ",
-        "published": "2026-04-20T16:16:42.223"
-      },
-      {
-        "cve_id": "CVE-2026-34427",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Vvveb prior to\u00a01.0.8.1 contains a privilege escalation vulnerability in the admin user profile save endpoint that allows authenticated users to modify privileged fields on their own profile. Attackers",
-        "published": "2026-04-20T16:16:44.250"
       },
       {
         "cve_id": "CVE-2026-41445",
@@ -334,39 +306,25 @@
         "published": "2026-04-20T20:16:48.943"
       },
       {
+        "cve_id": "CVE-2026-41303",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "OpenClaw before 2026.3.28 contains an authorization bypass vulnerability in Discord text approval commands that allows non-approvers to resolve pending exec approvals. Attackers can send Discord text ",
+        "published": "2026-04-21T00:16:31.223"
+      },
+      {
+        "cve_id": "CVE-2026-39386",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Neko is a a self-hosted virtual browser that runs in Docker and uses WebRTC In versions 3.0.0 through 3.0.10 and 3.1.0 through 3.1.1, any authenticated user can immediately obtain full administrative ",
+        "published": "2026-04-21T01:16:06.217"
+      },
+      {
         "cve_id": "CVE-2026-41294",
         "severity": "HIGH",
         "base_score": 8.6,
         "description": "OpenClaw before 2026.3.28 loads the current working directory .env file before trusted state-dir configuration, allowing environment variable injection. Attackers can place a malicious .env file in a ",
         "published": "2026-04-21T00:16:29.637"
-      },
-      {
-        "cve_id": "CVE-2026-3517",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "OS Command Injection Remote Code Execution Vulnerability in API in Progress ADC Products allows an authenticated attacker with \u201cGeo Administration\u201d permissions to execute arbitrary commands on the Loa",
-        "published": "2026-04-20T14:16:19.330"
-      },
-      {
-        "cve_id": "CVE-2026-3518",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "OS Command Injection Remote Code Execution Vulnerability in API in Progress ADC Products allows an authenticated attacker with \u201cAll\u201d permissions to execute arbitrary commands on the LoadMaster applian",
-        "published": "2026-04-20T14:16:19.517"
-      },
-      {
-        "cve_id": "CVE-2026-3519",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "OS Command Injection Remote Code Execution Vulnerability in API in Progress ADC Products allows an authenticated attacker with \u201cVS Administration\u201d permissions to execute arbitrary commands on the Load",
-        "published": "2026-04-20T14:16:19.683"
-      },
-      {
-        "cve_id": "CVE-2026-4048",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "OS Command Injection Remote Code Execution Vulnerability in UI in Progress ADC Products allows an authenticated attacker with \u201cAll\u201d permissions to execute arbitrary commands on the LoadMaster applianc",
-        "published": "2026-04-20T14:16:20.700"
       },
       {
         "cve_id": "CVE-2026-35570",
@@ -381,6 +339,48 @@
         "base_score": 8.2,
         "description": "SQL Injection vulnerability in Apartment Visitors Management System Apartment Visitors Management System V1.1 in the contactno parameter of the forgot password page (forgot-password.php). This allows ",
         "published": "2026-04-20T18:16:27.167"
+      },
+      {
+        "cve_id": "CVE-2026-41296",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "OpenClaw before 2026.3.31 contains a time-of-check-time-of-use race condition in the remote filesystem bridge readFile function that allows sandbox escape. Attackers can exploit the separate path vali",
+        "published": "2026-04-21T00:16:29.993"
+      },
+      {
+        "cve_id": "CVE-2026-25524",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Magento Long Term Support (LTS) is an unofficial, community-driven project provides an alternative to the Magento Community Edition e-commerce platform with a high level of backward compatibility. Pri",
+        "published": "2026-04-20T17:16:32.290"
+      },
+      {
+        "cve_id": "CVE-2026-6248",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The wpForo Forum plugin for WordPress is vulnerable to Arbitrary File Deletion in versions up to and including 3.0.5. This is due to two compounding flaws: the Members::update() method does not valida",
+        "published": "2026-04-20T19:16:11.230"
+      },
+      {
+        "cve_id": "CVE-2026-5478",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The Everest Forms plugin for WordPress is vulnerable to Arbitrary File Read and Deletion in all versions up to, and including, 3.4.4. This is due to the plugin trusting attacker-controlled old_files d",
+        "published": "2026-04-20T20:16:48.800"
+      },
+      {
+        "cve_id": "CVE-2026-40497",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "FreeScout is a free self-hosted help desk and shared mailbox. Prior to version 1.8.213, FreeScout's `Helper::stripDangerousTags()` removes `<script>`, `<form>`, `<iframe>`, `<object>` but does NOT str",
+        "published": "2026-04-21T03:16:08.403"
+      },
+      {
+        "cve_id": "CVE-2026-30266",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Insecure Permissions vulnerability in DeepCool DeepCreative v.1.2.7 and before allows a local attacker to execute arbitrary code via a crafted file",
+        "published": "2026-04-20T17:16:33.377"
       }
     ]
   },
