@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-21T20:40:14.417406+00:00",
+  "generated_at": "2026-04-22T01:30:06.568856+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
+        "value": 6,
         "score": 2.5,
         "max": 3
       },
@@ -238,44 +238,23 @@
     ]
   },
   "nvd": {
-    "total": 227,
-    "critical_count": 9,
-    "high_count": 29,
+    "total": 348,
+    "critical_count": 6,
+    "high_count": 31,
     "cves": [
       {
-        "cve_id": "CVE-2026-32604",
+        "cve_id": "CVE-2017-20230",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Spinnaker is an open source, multi-cloud continuous delivery platform. In versions prior to 2026.1.0, 2026.0.1, 2025.4.2, and 2025.3.2, a bad actor can execute arbitrary commands very simply on the cl",
-        "published": "2026-04-20T21:16:32.457"
+        "base_score": 10.0,
+        "description": "Storable versions before 3.05 for Perl has a stack overflow.\n\nThe retrieve_hook function stored the length of the class name into a signed integer but in read operations treated the length as unsigned",
+        "published": "2026-04-21T16:16:18.077"
       },
       {
-        "cve_id": "CVE-2026-32613",
+        "cve_id": "CVE-2025-15638",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Spinnaker is an open source, multi-cloud continuous delivery platform. Echo like some other services, uses SPeL (Spring Expression Language) to process information - specifically around expected artif",
-        "published": "2026-04-20T21:16:32.623"
-      },
-      {
-        "cve_id": "CVE-2026-41329",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "OpenClaw before 2026.3.31 contains a sandbox bypass vulnerability allowing attackers to escalate privileges via heartbeat context inheritance and senderIsOwner parameter manipulation. Attackers can ex",
-        "published": "2026-04-21T00:16:31.390"
-      },
-      {
-        "cve_id": "CVE-2026-29646",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "In OpenXiangShan NEMU prior to 55295c4, when running with RVH (Hypervisor extension) enabled, a VS-mode guest write to the supervisor interrupt-enable CSR (sie) may be handled incorrectly and can infl",
-        "published": "2026-04-20T21:16:19.503"
-      },
-      {
-        "cve_id": "CVE-2026-5450",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Calling the scanf family of functions with a %mc (malloc'd character match) in the GNU C Library version 2.7 to version 2.43 with a format width specifier with an explicit width greater than 1024 coul",
-        "published": "2026-04-20T21:16:36.850"
+        "base_score": 10.0,
+        "description": "Net::Dropbear versions before 0.14 for Perl contains a vulnerable version of libtomcrypt.\n\nNet::Dropbear versions before 0.14 includes versions of Dropbear 2019.78 or earlier. These include versions o",
+        "published": "2026-04-21T16:16:19.030"
       },
       {
         "cve_id": "CVE-2026-5965",
@@ -288,64 +267,64 @@
         "cve_id": "CVE-2026-6748",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Uninitialized memory in the Audio/Video: Web Codecs component. This vulnerability was fixed in Firefox 150 and Firefox ESR 140.10.",
+        "description": "Uninitialized memory in the Audio/Video: Web Codecs component. This vulnerability was fixed in Firefox 150, Firefox ESR 140.10, Thunderbird 150, and Thunderbird 140.10.",
         "published": "2026-04-21T13:16:20.910"
       },
       {
         "cve_id": "CVE-2026-6768",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Mitigation bypass in the Networking: Cookies component. This vulnerability was fixed in Firefox 150.",
+        "description": "Mitigation bypass in the Networking: Cookies component. This vulnerability was fixed in Firefox 150 and Thunderbird 150.",
         "published": "2026-04-21T13:16:22.667"
       },
       {
-        "cve_id": "CVE-2026-5358",
+        "cve_id": "CVE-2026-6771",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The obsolete nis_local_principal function in the GNU C Library version 2.43 and older may overflow a buffer in the data section, which could allow an attacker to spoof a crafted response to a UDP requ",
-        "published": "2026-04-20T21:16:36.713"
+        "base_score": 9.8,
+        "description": "Mitigation bypass in the DOM: Security component. This vulnerability was fixed in Firefox 150, Firefox ESR 140.10, Thunderbird 150, and Thunderbird 140.10.",
+        "published": "2026-04-21T13:16:22.927"
       },
       {
-        "cve_id": "CVE-2026-29648",
+        "cve_id": "CVE-2026-6750",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "In OpenXiangShan NEMU, when Smstateen is enabled, clearing mstateen0.ENVCFG does not correctly restrict access to henvcfg and senvcfg. As a result, less-privileged code may read or write these CSRs wi",
-        "published": "2026-04-20T21:16:19.733"
+        "description": "Privilege escalation in the Graphics: WebRender component. This vulnerability was fixed in Firefox 150, Firefox ESR 115.35, Firefox ESR 140.10, Thunderbird 150, and Thunderbird 140.10.",
+        "published": "2026-04-21T13:16:21.073"
       },
       {
-        "cve_id": "CVE-2026-41303",
+        "cve_id": "CVE-2026-6761",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "OpenClaw before 2026.3.28 contains an authorization bypass vulnerability in Discord text approval commands that allows non-approvers to resolve pending exec approvals. Attackers can send Discord text ",
-        "published": "2026-04-21T00:16:31.223"
+        "description": "Privilege escalation in the Networking component. This vulnerability was fixed in Firefox 150, Firefox ESR 140.10, Thunderbird 150, and Thunderbird 140.10.",
+        "published": "2026-04-21T13:16:22.040"
       },
       {
-        "cve_id": "CVE-2026-39386",
+        "cve_id": "CVE-2026-6769",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Neko is a a self-hosted virtual browser that runs in Docker and uses WebRTC In versions 3.0.0 through 3.0.10 and 3.1.0 through 3.1.1, any authenticated user can immediately obtain full administrative ",
-        "published": "2026-04-21T01:16:06.217"
+        "description": "Privilege escalation in the Debugger component. This vulnerability was fixed in Firefox 150, Firefox ESR 140.10, Thunderbird 150, and Thunderbird 140.10.",
+        "published": "2026-04-21T13:16:22.753"
       },
       {
-        "cve_id": "CVE-2026-41294",
+        "cve_id": "CVE-2026-31018",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "OpenClaw before 2026.3.28 loads the current working directory .env file before trusted state-dir configuration, allowing environment variable injection. Attackers can place a malicious .env file in a ",
-        "published": "2026-04-21T00:16:29.637"
+        "base_score": 8.8,
+        "description": "In Dolibarr ERP & CRM <= 22.0.4, PHP code detection and editing permission enforcement in the Website module is not applied consistently to all input parameters, allowing an authenticated user restric",
+        "published": "2026-04-21T15:16:36.443"
       },
       {
-        "cve_id": "CVE-2026-35570",
+        "cve_id": "CVE-2026-31019",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "OpenClaude is an open-source coding-agent command line interface for cloud and local model providers. Versions prior to 0.5.1 have a logic flaw in `bashToolHasPermission()` inside `src/tools/BashTool/",
-        "published": "2026-04-21T00:16:28.877"
+        "base_score": 8.8,
+        "description": "In the Website module of Dolibarr ERP & CRM 22.0.4 and below, the application uses blacklist-based filtering to restrict dangerous PHP functions related to system command execution. An authenticated u",
+        "published": "2026-04-21T15:16:36.560"
       },
       {
-        "cve_id": "CVE-2026-41296",
+        "cve_id": "CVE-2026-24189",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "OpenClaw before 2026.3.31 contains a time-of-check-time-of-use race condition in the remote filesystem bridge readFile function that allows sandbox escape. Attackers can exploit the separate path vali",
-        "published": "2026-04-21T00:16:29.993"
+        "description": "NVIDIA CUDA-Q contains a vulnerability in an endpoint, where an unauthenticated attacker could cause an out-of-bounds read by sending a maliciously crafted request. A successful exploit of this vulner",
+        "published": "2026-04-21T17:16:23.933"
       },
       {
         "cve_id": "CVE-2026-40497",
@@ -355,20 +334,6 @@
         "published": "2026-04-21T03:16:08.403"
       },
       {
-        "cve_id": "CVE-2026-29642",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A local attacker who can execute privileged CSR operations (or can induce firmware to do so) performs carefully crafted reads/writes to menvcfg (e.g., csrrs in M-mode). On affected XiangShan versions ",
-        "published": "2026-04-20T21:16:19.393"
-      },
-      {
-        "cve_id": "CVE-2026-41295",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "OpenClaw before 2026.4.2 contains an improper trust boundary vulnerability allowing untrusted workspace channel shadows to execute during built-in channel setup and login. Attackers can clone a worksp",
-        "published": "2026-04-21T00:16:29.803"
-      },
-      {
         "cve_id": "CVE-2026-31368",
         "severity": "HIGH",
         "base_score": 7.8,
@@ -376,11 +341,46 @@
         "published": "2026-04-21T07:16:07.923"
       },
       {
-        "cve_id": "CVE-2026-41297",
+        "cve_id": "CVE-2026-6776",
         "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "OpenClaw before 2026.3.31 contains a server-side request forgery vulnerability in the marketplace plugin download functionality that allows attackers to access internal resources by following unvalida",
-        "published": "2026-04-21T00:16:30.163"
+        "base_score": 7.8,
+        "description": "Incorrect boundary conditions in the WebRTC: Networking component. This vulnerability was fixed in Firefox 150, Firefox ESR 140.10, Thunderbird 150, and Thunderbird 140.10.",
+        "published": "2026-04-21T13:16:23.350"
+      },
+      {
+        "cve_id": "CVE-2026-24177",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "NVIDIA KAI Scheduler contains a vulnerability where an attacker could access API endpoints without authorization. A successful exploit of this vulnerability might lead to information disclosure.",
+        "published": "2026-04-21T17:16:23.787"
+      },
+      {
+        "cve_id": "CVE-2026-6746",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Use-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox 150, Firefox ESR 115.35, Firefox ESR 140.10, Thunderbird 150, and Thunderbird 140.10.",
+        "published": "2026-04-21T13:16:20.720"
+      },
+      {
+        "cve_id": "CVE-2026-6747",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Use-after-free in the WebRTC component. This vulnerability was fixed in Firefox 150, Firefox ESR 140.10, Thunderbird 150, and Thunderbird 140.10.",
+        "published": "2026-04-21T13:16:20.813"
+      },
+      {
+        "cve_id": "CVE-2026-6749",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Information disclosure due to uninitialized memory in the Graphics: Canvas2D component. This vulnerability was fixed in Firefox 150, Firefox ESR 115.35, Firefox ESR 140.10, Thunderbird 150, and Thunde",
+        "published": "2026-04-21T13:16:20.993"
+      },
+      {
+        "cve_id": "CVE-2026-6754",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Use-after-free in the JavaScript Engine component. This vulnerability was fixed in Firefox 150, Firefox ESR 115.35, Firefox ESR 140.10, Thunderbird 150, and Thunderbird 140.10.",
+        "published": "2026-04-21T13:16:21.420"
       }
     ]
   },
