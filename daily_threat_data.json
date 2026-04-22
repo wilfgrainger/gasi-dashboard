@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-22T13:03:36.021005+00:00",
+  "generated_at": "2026-04-22T16:49:49.075485+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
-        "score": 2.5,
+        "value": 10,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,44 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 411,
-    "critical_count": 8,
-    "high_count": 37,
+    "total": 500,
+    "critical_count": 10,
+    "high_count": 27,
     "cves": [
       {
-        "cve_id": "CVE-2017-20230",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Storable versions before 3.05 for Perl has a stack overflow.\n\nThe retrieve_hook function stored the length of the class name into a signed integer but in read operations treated the length as unsigned",
-        "published": "2026-04-21T16:16:18.077"
-      },
-      {
-        "cve_id": "CVE-2025-15638",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Net::Dropbear versions before 0.14 for Perl contains a vulnerable version of libtomcrypt.\n\nNet::Dropbear versions before 0.14 includes versions of Dropbear 2019.78 or earlier. These include versions o",
-        "published": "2026-04-21T16:16:19.030"
-      },
-      {
-        "cve_id": "CVE-2026-6748",
+        "cve_id": "CVE-2026-38835",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Uninitialized memory in the Audio/Video: Web Codecs component. This vulnerability was fixed in Firefox 150, Firefox ESR 140.10, Thunderbird 150, and Thunderbird 140.10.",
-        "published": "2026-04-21T13:16:20.910"
-      },
-      {
-        "cve_id": "CVE-2026-6768",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Mitigation bypass in the Networking: Cookies component. This vulnerability was fixed in Firefox 150 and Thunderbird 150.",
-        "published": "2026-04-21T13:16:22.667"
-      },
-      {
-        "cve_id": "CVE-2026-6771",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Mitigation bypass in the DOM: Security component. This vulnerability was fixed in Firefox 150, Firefox ESR 140.10, Thunderbird 150, and Thunderbird 140.10.",
-        "published": "2026-04-21T13:16:22.927"
+        "description": "Tenda W30E V2.0 V16.01.0.21 was found to contain a command injection vulnerability in the formSetUSBPartitionUmount function via the usbPartitionName parameter. This vulnerability allows attackers to ",
+        "published": "2026-04-21T17:16:53.357"
       },
       {
         "cve_id": "CVE-2026-40050",
@@ -285,11 +257,46 @@
         "published": "2026-04-21T17:16:53.610"
       },
       {
+        "cve_id": "CVE-2026-40884",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "goshs is a SimpleHTTPServer written in Go. Prior to 2.0.0-beta.6, goshs contains an SFTP authentication bypass when the documented empty-username basic-auth syntax is used. If the server is started wi",
+        "published": "2026-04-21T20:17:02.107"
+      },
+      {
         "cve_id": "CVE-2026-40576",
         "severity": "CRITICAL",
         "base_score": 9.4,
         "description": "excel-mcp-server is a Model Context Protocol server for Excel file manipulation. A path traversal vulnerability exists in excel-mcp-server versions up to and including 0.1.7. When running in SSE or St",
         "published": "2026-04-21T17:16:55.870"
+      },
+      {
+        "cve_id": "CVE-2026-41193",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "FreeScout is a free self-hosted help desk and shared mailbox. Prior to version 1.8.215, FreeScout's module installation feature extracts ZIP archives without validating file paths, allowing an authent",
+        "published": "2026-04-21T18:16:53.253"
+      },
+      {
+        "cve_id": "CVE-2026-40372",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Improper verification of cryptographic signature in ASP.NET Core allows an unauthorized attacker to elevate privileges over a network.",
+        "published": "2026-04-21T20:16:59.133"
+      },
+      {
+        "cve_id": "CVE-2026-40887",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Vendure is an open-source headless commerce platform. Starting in version 1.7.4 and prior to versions 2.3.4, 3.5.7, and 3.6.2, an unauthenticated SQL injection vulnerability exists in the Vendure Shop",
+        "published": "2026-04-21T20:17:02.397"
+      },
+      {
+        "cve_id": "CVE-2026-40903",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "goshs is a SimpleHTTPServer written in Go. Prior to 2.0.0-beta.6, goshs has an ArtiPACKED vulnerability. ArtiPACKED can lead to leakage of the GITHUB_TOKEN through workflow artifacts, even though the ",
+        "published": "2026-04-21T20:17:02.947"
       },
       {
         "cve_id": "CVE-2026-40569",
@@ -299,39 +306,39 @@
         "published": "2026-04-21T17:16:55.450"
       },
       {
-        "cve_id": "CVE-2026-6750",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Privilege escalation in the Graphics: WebRender component. This vulnerability was fixed in Firefox 150, Firefox ESR 115.35, Firefox ESR 140.10, Thunderbird 150, and Thunderbird 140.10.",
-        "published": "2026-04-21T13:16:21.073"
+        "cve_id": "CVE-2026-5652",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "An insecure direct object reference vulnerability in the Users API component of Crafty Controller allows a remote, authenticated attacker to perform user modification actions via improper API permissi",
+        "published": "2026-04-21T17:16:57.793"
       },
       {
-        "cve_id": "CVE-2026-6761",
+        "cve_id": "CVE-2026-40611",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Privilege escalation in the Networking component. This vulnerability was fixed in Firefox 150, Firefox ESR 140.10, Thunderbird 150, and Thunderbird 140.10.",
-        "published": "2026-04-21T13:16:22.040"
+        "description": "Let's Encrypt client and ACME library written in Go (Lego). Prior to 4.34.0, the webroot HTTP-01 challenge provider in lego is vulnerable to arbitrary file write and deletion via path traversal. A mal",
+        "published": "2026-04-21T18:16:52.457"
       },
       {
-        "cve_id": "CVE-2026-6769",
+        "cve_id": "CVE-2026-6819",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Privilege escalation in the Debugger component. This vulnerability was fixed in Firefox 150, Firefox ESR 140.10, Thunderbird 150, and Thunderbird 140.10.",
-        "published": "2026-04-21T13:16:22.753"
+        "description": "HKUDS OpenHarness prior to PR #156 remediation exposes plugin lifecycle commands including /plugin install, /plugin enable, /plugin disable, and /reload-plugins to remote senders by default. Attackers",
+        "published": "2026-04-21T20:17:05.780"
       },
       {
-        "cve_id": "CVE-2026-31018",
+        "cve_id": "CVE-2025-70420",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "In Dolibarr ERP & CRM <= 22.0.4, PHP code detection and editing permission enforcement in the Website module is not applied consistently to all input parameters, allowing an authenticated user restric",
-        "published": "2026-04-21T15:16:36.443"
+        "description": "A SQL injection vulnerability exists in Genesys Latitude v25.1.0.420 that allows an authenticated attacker to execute arbitrary SQL queries against the backend database. The vulnerability is caused by",
+        "published": "2026-04-21T21:16:22.900"
       },
       {
-        "cve_id": "CVE-2026-31019",
+        "cve_id": "CVE-2026-40909",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "In the Website module of Dolibarr ERP & CRM 22.0.4 and below, the application uses blacklist-based filtering to restrict dangerous PHP functions related to system command execution. An authenticated u",
-        "published": "2026-04-21T15:16:36.560"
+        "base_score": 8.7,
+        "description": "WWBN AVideo is an open source video platform. In versions 29.0 and prior, the locale save endpoint (`locale/save.php`) constructs a file path by directly concatenating `$_POST['flag']` into the path a",
+        "published": "2026-04-21T20:17:03.347"
       },
       {
         "cve_id": "CVE-2026-40568",
@@ -341,6 +348,13 @@
         "published": "2026-04-21T17:16:55.297"
       },
       {
+        "cve_id": "CVE-2026-21997",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "Vulnerability in the Oracle Life Sciences Empirica Signal product of Oracle Life Science Applications (component: Common Core).  Supported versions that are affected are 9.2.1-9.2.3. Easily exploitabl",
+        "published": "2026-04-21T21:16:24.653"
+      },
+      {
         "cve_id": "CVE-2026-24189",
         "severity": "HIGH",
         "base_score": 8.2,
@@ -348,11 +362,18 @@
         "published": "2026-04-21T17:16:23.933"
       },
       {
-        "cve_id": "CVE-2026-6776",
+        "cve_id": "CVE-2026-40588",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Incorrect boundary conditions in the WebRTC: Networking component. This vulnerability was fixed in Firefox 150, Firefox ESR 140.10, Thunderbird 150, and Thunderbird 140.10.",
-        "published": "2026-04-21T13:16:23.350"
+        "base_score": 8.1,
+        "description": "blueprintUE is a tool to help Unreal Engine developers. Prior to 4.2.0, the password change form at /profile/{slug}/edit/ does not include a current_password field and does not verify the user's exist",
+        "published": "2026-04-21T18:16:51.207"
+      },
+      {
+        "cve_id": "CVE-2026-40868",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Kyverno is a policy engine designed for cloud native platform engineering teams. Prior to 1.16.4, kyverno\u2019s apiCall servicecall helper implicitly injects Authorization: Bearer ... using the kyverno co",
+        "published": "2026-04-21T19:16:18.420"
       },
       {
         "cve_id": "CVE-2026-24177",
@@ -360,27 +381,6 @@
         "base_score": 7.7,
         "description": "NVIDIA KAI Scheduler contains a vulnerability where an attacker could access API endpoints without authorization. A successful exploit of this vulnerability might lead to information disclosure.",
         "published": "2026-04-21T17:16:23.787"
-      },
-      {
-        "cve_id": "CVE-2026-40161",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Tekton Pipelines project provides k8s-style resources for declaring CI/CD-style pipelines. From 1.0.0 to 1.10.0, the Tekton Pipelines git resolver in API mode sends the system-configured Git API token",
-        "published": "2026-04-21T17:16:53.790"
-      },
-      {
-        "cve_id": "CVE-2026-40589",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "FreeScout is a free self-hosted help desk and shared mailbox. Prior to version 1.8.214, a low-privileged agent can edit a visible customer and add an email address already owned by a hidden customer i",
-        "published": "2026-04-21T17:16:56.660"
-      },
-      {
-        "cve_id": "CVE-2026-6746",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Use-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox 150, Firefox ESR 115.35, Firefox ESR 140.10, Thunderbird 150, and Thunderbird 140.10.",
-        "published": "2026-04-21T13:16:20.720"
       }
     ]
   },
