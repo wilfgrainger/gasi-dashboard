@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-04-22T16:49:49.075485+00:00",
+  "generated_at": "2026-04-22T20:43:13.023980+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 26,
+        "value": 27,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 10,
-        "score": 3.0,
+        "value": 7,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1577,
-    "recent_30d_count": 26,
+    "total_catalog_count": 1578,
+    "recent_30d_count": 27,
     "recent": [
+      {
+        "cve_id": "CVE-2026-33825",
+        "vendor": "Microsoft",
+        "product": "Defender",
+        "name": "Microsoft Defender Insufficient Granularity of Access Control Vulnerability",
+        "date_added": "2026-04-22",
+        "due_date": "2026-05-06",
+        "description": "Microsoft Defender contains an insufficient granularity of access control vulnerability that could allow an authorized attacker to escalate privileges locally.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-20122",
         "vendor": "Cisco",
@@ -224,107 +234,62 @@
         "due_date": "2026-04-11",
         "description": "Ivanti Endpoint Manager Mobile (EPMM) contains a code injection vulnerability that could allow attackers to achieve unauthenticated remote code execution.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-35616",
-        "vendor": "Fortinet",
-        "product": "FortiClient EMS",
-        "name": "Fortinet FortiClient EMS Improper Access Control Vulnerability",
-        "date_added": "2026-04-06",
-        "due_date": "2026-04-09",
-        "description": "Fortinet FortiClient EMS contains an improper access control vulnerability that may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 500,
-    "critical_count": 10,
-    "high_count": 27,
+    "total": 485,
+    "critical_count": 7,
+    "high_count": 21,
     "cves": [
       {
-        "cve_id": "CVE-2026-38835",
+        "cve_id": "CVE-2026-33518",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Tenda W30E V2.0 V16.01.0.21 was found to contain a command injection vulnerability in the formSetUSBPartitionUmount function via the usbPartitionName parameter. This vulnerability allows attackers to ",
-        "published": "2026-04-21T17:16:53.357"
+        "description": "An incorrect privilege assignment vulnerability exists in Esri Portal for ArcGIS 11.5 in Windows and Linux that allows highly privileged users to create developer credentials that may grant more privi",
+        "published": "2026-04-21T21:16:29.490"
       },
       {
-        "cve_id": "CVE-2026-40050",
+        "cve_id": "CVE-2026-33519",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "CrowdStrike has released security updates to address a critical unauthenticated path traversal vulnerability (CVE-2026-40050) in LogScale. This vulnerability only requires mitigation by customers that",
-        "published": "2026-04-21T17:16:53.610"
+        "description": "An incorrect authorization vulnerability exists in Esri Portal for ArcGIS 11.4, 11.5 and 12.0 on Windows, Linux and Kubernetes that did not correctly check permissions assigned to developer credential",
+        "published": "2026-04-21T21:16:29.673"
       },
       {
-        "cve_id": "CVE-2026-40884",
+        "cve_id": "CVE-2026-34275",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "goshs is a SimpleHTTPServer written in Go. Prior to 2.0.0-beta.6, goshs contains an SFTP authentication bypass when the documented empty-username basic-auth syntax is used. If the server is started wi",
-        "published": "2026-04-21T20:17:02.107"
+        "description": "Vulnerability in the Oracle Advanced Inbound Telephony product of Oracle E-Business Suite (component: Setup and Administration).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploi",
+        "published": "2026-04-21T21:16:31.550"
       },
       {
-        "cve_id": "CVE-2026-40576",
-        "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "excel-mcp-server is a Model Context Protocol server for Excel file manipulation. A path traversal vulnerability exists in excel-mcp-server versions up to and including 0.1.7. When running in SSE or St",
-        "published": "2026-04-21T17:16:55.870"
-      },
-      {
-        "cve_id": "CVE-2026-41193",
+        "cve_id": "CVE-2026-34279",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "FreeScout is a free self-hosted help desk and shared mailbox. Prior to version 1.8.215, FreeScout's module installation feature extracts ZIP archives without validating file paths, allowing an authent",
-        "published": "2026-04-21T18:16:53.253"
+        "description": "Vulnerability in the Oracle Enterprise Manager Base Platform product of Oracle Enterprise Manager (component: Event Management).  Supported versions that are affected are 13.5 and  24.1. Easily exploi",
+        "published": "2026-04-21T21:16:32.180"
       },
       {
-        "cve_id": "CVE-2026-40372",
+        "cve_id": "CVE-2026-34285",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Improper verification of cryptographic signature in ASP.NET Core allows an unauthorized attacker to elevate privileges over a network.",
-        "published": "2026-04-21T20:16:59.133"
+        "description": "Vulnerability in the Oracle Identity Manager Connector product of Oracle Fusion Middleware (component: Core).   The supported version that is affected is 12.2.1.4.0. Easily exploitable vulnerability a",
+        "published": "2026-04-21T21:16:33.130"
       },
       {
-        "cve_id": "CVE-2026-40887",
+        "cve_id": "CVE-2026-34286",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Vendure is an open-source headless commerce platform. Starting in version 1.7.4 and prior to versions 2.3.4, 3.5.7, and 3.6.2, an unauthenticated SQL injection vulnerability exists in the Vendure Shop",
-        "published": "2026-04-21T20:17:02.397"
+        "description": "Vulnerability in the Oracle Identity Manager Connector product of Oracle Fusion Middleware (component: Core).   The supported version that is affected is 12.2.1.4.0. Easily exploitable vulnerability a",
+        "published": "2026-04-21T21:16:33.277"
       },
       {
-        "cve_id": "CVE-2026-40903",
+        "cve_id": "CVE-2026-34287",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "goshs is a SimpleHTTPServer written in Go. Prior to 2.0.0-beta.6, goshs has an ArtiPACKED vulnerability. ArtiPACKED can lead to leakage of the GITHUB_TOKEN through workflow artifacts, even though the ",
-        "published": "2026-04-21T20:17:02.947"
-      },
-      {
-        "cve_id": "CVE-2026-40569",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "FreeScout is a free self-hosted help desk and shared mailbox. Versions prior to 1.8.213 have a mass assignment vulnerability in the mailbox connection settings endpoints of FreeScout (`connectionIncom",
-        "published": "2026-04-21T17:16:55.450"
-      },
-      {
-        "cve_id": "CVE-2026-5652",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "An insecure direct object reference vulnerability in the Users API component of Crafty Controller allows a remote, authenticated attacker to perform user modification actions via improper API permissi",
-        "published": "2026-04-21T17:16:57.793"
-      },
-      {
-        "cve_id": "CVE-2026-40611",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Let's Encrypt client and ACME library written in Go (Lego). Prior to 4.34.0, the webroot HTTP-01 challenge provider in lego is vulnerable to arbitrary file write and deletion via path traversal. A mal",
-        "published": "2026-04-21T18:16:52.457"
-      },
-      {
-        "cve_id": "CVE-2026-6819",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "HKUDS OpenHarness prior to PR #156 remediation exposes plugin lifecycle commands including /plugin install, /plugin enable, /plugin disable, and /reload-plugins to remote senders by default. Attackers",
-        "published": "2026-04-21T20:17:05.780"
+        "description": "Vulnerability in the Oracle Identity Manager Connector product of Oracle Fusion Middleware (component: Core).   The supported version that is affected is 12.2.1.4.0. Easily exploitable vulnerability a",
+        "published": "2026-04-21T21:16:33.417"
       },
       {
         "cve_id": "CVE-2025-70420",
@@ -334,18 +299,11 @@
         "published": "2026-04-21T21:16:22.900"
       },
       {
-        "cve_id": "CVE-2026-40909",
+        "cve_id": "CVE-2026-34291",
         "severity": "HIGH",
         "base_score": 8.7,
-        "description": "WWBN AVideo is an open source video platform. In versions 29.0 and prior, the locale save endpoint (`locale/save.php`) constructs a file path by directly concatenating `$_POST['flag']` into the path a",
-        "published": "2026-04-21T20:17:03.347"
-      },
-      {
-        "cve_id": "CVE-2026-40568",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "FreeScout is a free self-hosted help desk and shared mailbox. Versions prior to 1.8.213 have a stored cross-site scripting (XSS) vulnerability in the mailbox signature feature. The sanitization functi",
-        "published": "2026-04-21T17:16:55.297"
+        "description": "Vulnerability in the Oracle HTTP Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Difficult to exploit vulnerability ",
+        "published": "2026-04-21T21:16:33.950"
       },
       {
         "cve_id": "CVE-2026-21997",
@@ -355,32 +313,74 @@
         "published": "2026-04-21T21:16:24.653"
       },
       {
-        "cve_id": "CVE-2026-24189",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "NVIDIA CUDA-Q contains a vulnerability in an endpoint, where an unauthenticated attacker could cause an out-of-bounds read by sending a maliciously crafted request. A successful exploit of this vulner",
-        "published": "2026-04-21T17:16:23.933"
-      },
-      {
-        "cve_id": "CVE-2026-40588",
+        "cve_id": "CVE-2026-34309",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "blueprintUE is a tool to help Unreal Engine developers. Prior to 4.2.0, the password change form at /profile/{slug}/edit/ does not include a current_password field and does not verify the user's exist",
-        "published": "2026-04-21T18:16:51.207"
+        "description": "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Security).  Supported versions that are affected are 8.61-8.62. Easily exploitable vulnerability allows ",
+        "published": "2026-04-21T21:16:36.390"
       },
       {
-        "cve_id": "CVE-2026-40868",
+        "cve_id": "CVE-2026-35243",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Kyverno is a policy engine designed for cloud native platform engineering teams. Prior to 1.16.4, kyverno\u2019s apiCall servicecall helper implicitly injects Authorization: Bearer ... using the kyverno co",
-        "published": "2026-04-21T19:16:18.420"
+        "base_score": 7.8,
+        "description": "Vulnerability in the Oracle Application Development Framework (ADF) product of Oracle Fusion Middleware (component: ADF Faces).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.0.0. Ea",
+        "published": "2026-04-21T21:16:40.260"
       },
       {
-        "cve_id": "CVE-2026-24177",
+        "cve_id": "CVE-2026-22011",
         "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "NVIDIA KAI Scheduler contains a vulnerability where an attacker could access API endpoints without authorization. A successful exploit of this vulnerability might lead to information disclosure.",
-        "published": "2026-04-21T17:16:23.787"
+        "base_score": 7.6,
+        "description": "Vulnerability in the Oracle Applications DBA product of Oracle E-Business Suite (component: ADPatch).  Supported versions that are affected are 12.2.3-12.2.15. Difficult to exploit vulnerability allow",
+        "published": "2026-04-21T21:16:27.740"
+      },
+      {
+        "cve_id": "CVE-2026-22010",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Vulnerability in the Oracle Financial Services Analytical Applications Infrastructure product of Oracle Financial Services Applications (component: Platform).  Supported versions that are affected are",
+        "published": "2026-04-21T21:16:27.550"
+      },
+      {
+        "cve_id": "CVE-2026-22016",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: JAXP).  Supported versions that are affected are Oracle Java SE: 8u",
+        "published": "2026-04-21T21:16:28.470"
+      },
+      {
+        "cve_id": "CVE-2026-34282",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: Networking).  Supported versions that are affected are Oracle Java ",
+        "published": "2026-04-21T21:16:32.643"
+      },
+      {
+        "cve_id": "CVE-2026-34290",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Vulnerability in the Oracle Identity Manager Connector product of Oracle Fusion Middleware (component: Core).   The supported version that is affected is 12.2.1.4.0. Easily exploitable vulnerability a",
+        "published": "2026-04-21T21:16:33.820"
+      },
+      {
+        "cve_id": "CVE-2026-34297",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Vulnerability in the Oracle HCM Common Architecture product of Oracle E-Business Suite (component: Knowledge Integration).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable ",
+        "published": "2026-04-21T21:16:34.743"
+      },
+      {
+        "cve_id": "CVE-2026-34305",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Web Services).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0.",
+        "published": "2026-04-21T21:16:35.850"
+      },
+      {
+        "cve_id": "CVE-2026-34310",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Vulnerability in the Oracle Financial Services Analytical Applications Infrastructure product of Oracle Financial Services Applications (component: Platform).  Supported versions that are affected are",
+        "published": "2026-04-21T21:16:36.510"
       }
     ]
   },
