@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-04-23T17:10:27.551617+00:00",
+  "generated_at": "2026-04-23T20:43:24.188199+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 27,
+        "value": 28,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 17,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1578,
-    "recent_30d_count": 27,
+    "total_catalog_count": 1579,
+    "recent_30d_count": 28,
     "recent": [
+      {
+        "cve_id": "CVE-2026-39987",
+        "vendor": "Marimo",
+        "product": "Marimo",
+        "name": "Marimo Remote Code Execution Vulnerability",
+        "date_added": "2026-04-23",
+        "due_date": "2026-05-07",
+        "description": "Marimo contains an pre-authorization remote code execution vulnerability, allowing an unauthenticated attacked to shell access and execute arbitrary system commands.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-33825",
         "vendor": "Microsoft",
@@ -224,37 +234,111 @@
         "due_date": "2026-04-27",
         "description": "Adobe Acrobat and Reader contain a prototype pollution vulnerability that allows for arbitrary code execution.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-1340",
-        "vendor": "Ivanti",
-        "product": "Endpoint Manager Mobile (EPMM)",
-        "name": "Ivanti Endpoint Manager Mobile (EPMM) Code Injection Vulnerability",
-        "date_added": "2026-04-08",
-        "due_date": "2026-04-11",
-        "description": "Ivanti Endpoint Manager Mobile (EPMM) contains a code injection vulnerability that could allow attackers to achieve unauthenticated remote code execution.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 177,
-    "critical_count": 4,
-    "high_count": 21,
+    "total": 163,
+    "critical_count": 17,
+    "high_count": 26,
     "cves": [
       {
-        "cve_id": "CVE-2026-34415",
+        "cve_id": "CVE-2026-41679",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Xerte Online Toolkits versions 3.15 and earlier contain an incomplete input validation vulnerability in the elFinder connector endpoint that fails to block PHP-executable extensions .php4 due to an in",
-        "published": "2026-04-22T19:17:04.253"
+        "base_score": 10.0,
+        "description": "Paperclip is a Node.js server and React UI that orchestrates a team of AI agents to run a business. Prior to version 2026.416.0, an unauthenticated attacker can achieve full remote code execution on a",
+        "published": "2026-04-23T02:16:19.180"
       },
       {
-        "cve_id": "CVE-2026-33471",
+        "cve_id": "CVE-2026-41228",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Froxlor is open source server administration software. Prior to version 2.3.6, the Froxlor API endpoint `Customers.update` (and `Admins.update`) does not validate the `def_language` parameter against ",
+        "published": "2026-04-23T04:16:19.193"
+      },
+      {
+        "cve_id": "CVE-2026-39440",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Improper Control of Generation of Code ('Code Injection') vulnerability in Funnelforms LLC FunnelFormsPro allows Remote Code Inclusion.This issue affects FunnelFormsPro: from n/a through 3.8.1.",
+        "published": "2026-04-23T13:16:11.893"
+      },
+      {
+        "cve_id": "CVE-2026-40470",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A critical XSS vulnerability affected hackage-server and\nhackage.haskell.org.  HTML and JavaScript files provided in source\npackages or via the documentation upload facility were served\nas-is on the m",
+        "published": "2026-04-23T16:16:25.523"
+      },
+      {
+        "cve_id": "CVE-2026-29198",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "In Rocket.Chat <8.3.0, <8.2.1, <8.1.2, <8.0.3, <7.13.5, <7.12.6, <7.11.6, and <7.10.9, a NoSQL injection vulnerability can lead to account takeover of the first user with a generated token when an OAu",
+        "published": "2026-04-23T00:16:45.060"
+      },
+      {
+        "cve_id": "CVE-2026-3844",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Breeze Cache plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'fetch_gravatar_from_remote' function in all versions up to, and including, 2.4",
+        "published": "2026-04-23T03:16:17.527"
+      },
+      {
+        "cve_id": "CVE-2026-6885",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Borg SPM 2007 (Sales Ended in 2008) developed by BorG Technology Corporation has an Arbitrary File Upload vulnerability, allowing unauthenticated remote attackers to upload and execute web shell backd",
+        "published": "2026-04-23T10:16:18.240"
+      },
+      {
+        "cve_id": "CVE-2026-6886",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Borg SPM 2007 (Sales Ended in 2008)\u00a0developed by BorG Technology Corporation has a Authentication Bypass vulnerability, allowing unauthenticated remote attackers to log into the system as any user.",
+        "published": "2026-04-23T10:16:18.390"
+      },
+      {
+        "cve_id": "CVE-2026-6887",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Borg SPM 2007 (Sales Ended in 2008)\u00a0developed by BorG Technology Corporation has a SQL Injection vulnerability, allowing unauthenticated remote attackers to inject arbitrary SQL commands to read, modi",
+        "published": "2026-04-23T10:16:18.527"
+      },
+      {
+        "cve_id": "CVE-2026-41460",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "SocialEngine versions 7.8.0 and prior contain a SQL injection vulnerability in the /activity/index/get-memberall endpoint where user-supplied input passed via the text parameter is not sanitized befor",
+        "published": "2026-04-23T15:37:24.540"
+      },
+      {
+        "cve_id": "CVE-2025-62373",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Pipecat is an open-source Python framework for building real-time voice and multimodal conversational agents. Versions 0.0.41 through 0.0.93 have a vulnerability in `LivekitFrameSerializer` \u2013 an optio",
+        "published": "2026-04-23T16:16:24.140"
+      },
+      {
+        "cve_id": "CVE-2026-23751",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Kofax Capture, now referred to as Tungsten Capture, version 6.0.0.0 (other versions may be affected) exposes a deprecated .NET Remoting HTTP channel on port 2424 via the Ascent Capture Service that is",
+        "published": "2026-04-23T16:16:24.463"
+      },
+      {
+        "cve_id": "CVE-2026-39087",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An issue in Ntfy ntfy.sh before v.2.21 allows a remote attacker to execute arbitrary code via the parseActions function",
+        "published": "2026-04-23T16:16:25.063"
+      },
+      {
+        "cve_id": "CVE-2026-40471",
         "severity": "CRITICAL",
         "base_score": 9.6,
-        "description": "nimiq-block contains block primitives to be used in Nimiq's Rust implementation. `SkipBlockProof::verify` computes its quorum check using `BitSet.len()`, then iterates `BitSet` indices and casts each ",
-        "published": "2026-04-22T20:16:40.317"
+        "description": "hackage-server lacked Cross-Site Request Forgery (CSRF) protection across its endpoints. Scripts on foreign sites could trigger requests to hackage server, possibly abusing latent credentials to uploa",
+        "published": "2026-04-23T16:16:25.640"
       },
       {
         "cve_id": "CVE-2026-33656",
@@ -271,18 +355,18 @@
         "published": "2026-04-22T21:17:09.303"
       },
       {
-        "cve_id": "CVE-2026-41468",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "Beghelli Sicuro24 SicuroWeb embeds AngularJS 1.5.2, an end-of-life component containing known sandbox escape primitives. When combined with template injection present in the same application, these pr",
-        "published": "2026-04-22T19:17:08.813"
+        "cve_id": "CVE-2026-41229",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Froxlor is open source server administration software. Prior to version 2.3.6, `PhpHelper::parseArrayToString()` writes string values into single-quoted PHP string literals without escaping single quo",
+        "published": "2026-04-23T04:16:19.563"
       },
       {
-        "cve_id": "CVE-2026-34413",
+        "cve_id": "CVE-2026-41208",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Xerte Online Toolkits versions 3.15 and earlier contain a missing authentication vulnerability in the elFinder connector endpoint at /editor/elfinder/php/connector.php where an HTTP redirect to unauth",
-        "published": "2026-04-22T19:17:02.710"
+        "base_score": 8.8,
+        "description": "Paperclip is a Node.js server and React UI that orchestrates a team of AI agents to run a business. Versions of @paperclipai/server prior to 2026.416.0 contain a privilege escalation vulnerability tha",
+        "published": "2026-04-23T02:16:18.670"
       },
       {
         "cve_id": "CVE-2026-41455",
@@ -292,95 +376,11 @@
         "published": "2026-04-22T22:16:32.677"
       },
       {
-        "cve_id": "CVE-2026-40937",
+        "cve_id": "CVE-2026-41230",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "RustFS is a distributed object storage system built in Rust. Prior to 1.0.0-alpha.94, all four notification target admin API endpoints in `rustfs/src/admin/handlers/event.rs` use a `check_permissions`",
-        "published": "2026-04-22T21:17:08.877"
-      },
-      {
-        "cve_id": "CVE-2026-41454",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "WeKan before\u00a08.35 contains a missing authorization vulnerability in the Integration REST API endpoints that allows authenticated board members to perform administrative actions without proper privileg",
-        "published": "2026-04-22T22:16:32.497"
-      },
-      {
-        "cve_id": "CVE-2026-4922",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 17.0 before 18.9.6, 18.10 before 18.10.4, and 18.11 before 18.11.1 that could have allowed an unauthenticated user to execute",
-        "published": "2026-04-22T17:16:44.277"
-      },
-      {
-        "cve_id": "CVE-2026-26354",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Dell PowerProtect Data Domain with Domain Operating System (DD OS) of Feature Release versions 7.7.1.0 through 8.6, LTS2025 release version 8.3.1.0 through 8.3.1.10, LTS2024 release versions 7.13.1.0 ",
-        "published": "2026-04-22T19:17:00.677"
-      },
-      {
-        "cve_id": "CVE-2026-41175",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Statamic is a Laravel and Git powered content management system (CMS). Prior to versions 5.73.20 and 6.13.0, manipulating query parameters on Control Panel and REST API endpoints, or arguments in Grap",
-        "published": "2026-04-22T22:16:31.820"
-      },
-      {
-        "cve_id": "CVE-2026-5262",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 16.1.0 before 18.9.6, 18.10 before 18.10.4, and 18.11 before 18.11.1 that under certain conditions could have allowed an unau",
-        "published": "2026-04-22T17:16:44.437"
-      },
-      {
-        "cve_id": "CVE-2026-5816",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.10 before 18.10.4 and 18.11 before 18.11.1 that could have allowed an unauthenticated user to execute arbitrary JavaScript",
-        "published": "2026-04-22T17:16:44.763"
-      },
-      {
-        "cve_id": "CVE-2026-35368",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A vulnerability exists in the chroot utility of uutils coreutils when using the --userspec option. The utility resolves the user specification via getpwnam() after entering the chroot but before dropp",
-        "published": "2026-04-22T17:16:40.560"
-      },
-      {
-        "cve_id": "CVE-2026-40517",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "radare2 prior to 6.1.4 contains a command injection vulnerability in the PDB parser's print_gvars() function that allows attackers to execute arbitrary commands by crafting a malicious PDB file with n",
-        "published": "2026-04-22T22:16:31.183"
-      },
-      {
-        "cve_id": "CVE-2026-40882",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "OpenRemote is an open-source internet-of-things platform. Prior to version 1.22.0, the Velbus asset import path parses attacker-controlled XML without explicit XXE hardening. An authenticated user who",
-        "published": "2026-04-22T21:17:08.733"
-      },
-      {
-        "cve_id": "CVE-2026-34063",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Nimiq's network-libp2p is a Nimiq network implementation based on libp2p. Prior to version 1.3.0, `network-libp2p` discovery uses a libp2p `ConnectionHandler` state machine. the handler assumes there ",
-        "published": "2026-04-22T20:16:40.713"
-      },
-      {
-        "cve_id": "CVE-2026-34065",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "nimiq-primitives contains primitives (e.g., block, account, transaction) to be used in Nimiq's Rust implementation. Prior to version 1.3.0, an untrusted p2p peer can cause a node to panic by announcin",
-        "published": "2026-04-22T20:16:41.077"
-      },
-      {
-        "cve_id": "CVE-2026-35338",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability in the chmod utility of uutils coreutils allows users to bypass the --preserve-root safety mechanism. The implementation only validates if the target path is literally / and does not c",
-        "published": "2026-04-22T17:16:35.583"
+        "base_score": 8.5,
+        "description": "Froxlor is open source server administration software. Prior to version 2.3.6, `DomainZones::add()` accepts arbitrary DNS record types without a whitelist and does not sanitize newline characters in t",
+        "published": "2026-04-23T04:16:19.783"
       }
     ]
   },
