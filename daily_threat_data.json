@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-23T13:03:06.173215+00:00",
+  "generated_at": "2026-04-23T17:10:27.551617+00:00",
   "threat_score": {
-    "score": 5.0,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 1.0,
+        "value": 4,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 310,
-    "critical_count": 0,
-    "high_count": 2,
+    "total": 177,
+    "critical_count": 4,
+    "high_count": 21,
     "cves": [
       {
-        "cve_id": "CVE-2026-6857",
+        "cve_id": "CVE-2026-34415",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Xerte Online Toolkits versions 3.15 and earlier contain an incomplete input validation vulnerability in the elFinder connector endpoint that fails to block PHP-executable extensions .php4 due to an in",
+        "published": "2026-04-22T19:17:04.253"
+      },
+      {
+        "cve_id": "CVE-2026-33471",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "nimiq-block contains block primitives to be used in Nimiq's Rust implementation. `SkipBlockProof::verify` computes its quorum check using `BitSet.len()`, then iterates `BitSet` indices and casts each ",
+        "published": "2026-04-22T20:16:40.317"
+      },
+      {
+        "cve_id": "CVE-2026-33656",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "EspoCRM is an open source customer relationship management application. Prior to version 9.3.4, EspoCRM's built-in formula scripting engine allowing updating attachment's sourceId thus allowing an aut",
+        "published": "2026-04-22T21:17:05.330"
+      },
+      {
+        "cve_id": "CVE-2026-41167",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Jellystat is a free and open source Statistics App for Jellyfin. Prior to version 1.1.10, multiple API endpoints in Jellystat build SQL queries by interpolating unsanitized request-body fields directl",
+        "published": "2026-04-22T21:17:09.303"
+      },
+      {
+        "cve_id": "CVE-2026-41468",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "Beghelli Sicuro24 SicuroWeb embeds AngularJS 1.5.2, an end-of-life component containing known sandbox escape primitives. When combined with template injection present in the same application, these pr",
+        "published": "2026-04-22T19:17:08.813"
+      },
+      {
+        "cve_id": "CVE-2026-34413",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Xerte Online Toolkits versions 3.15 and earlier contain a missing authentication vulnerability in the elFinder connector endpoint at /editor/elfinder/php/connector.php where an HTTP redirect to unauth",
+        "published": "2026-04-22T19:17:02.710"
+      },
+      {
+        "cve_id": "CVE-2026-41455",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "WeKan before\u00a08.35 contains a server-side request forgery vulnerability in webhook integration URL handling where the url schema field accepts any string without protocol restriction or destination val",
+        "published": "2026-04-22T22:16:32.677"
+      },
+      {
+        "cve_id": "CVE-2026-40937",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "RustFS is a distributed object storage system built in Rust. Prior to 1.0.0-alpha.94, all four notification target admin API endpoints in `rustfs/src/admin/handlers/event.rs` use a `check_permissions`",
+        "published": "2026-04-22T21:17:08.877"
+      },
+      {
+        "cve_id": "CVE-2026-41454",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "WeKan before\u00a08.35 contains a missing authorization vulnerability in the Integration REST API endpoints that allows authenticated board members to perform administrative actions without proper privileg",
+        "published": "2026-04-22T22:16:32.497"
+      },
+      {
+        "cve_id": "CVE-2026-4922",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 17.0 before 18.9.6, 18.10 before 18.10.4, and 18.11 before 18.11.1 that could have allowed an unauthenticated user to execute",
+        "published": "2026-04-22T17:16:44.277"
+      },
+      {
+        "cve_id": "CVE-2026-26354",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Dell PowerProtect Data Domain with Domain Operating System (DD OS) of Feature Release versions 7.7.1.0 through 8.6, LTS2025 release version 8.3.1.0 through 8.3.1.10, LTS2024 release versions 7.13.1.0 ",
+        "published": "2026-04-22T19:17:00.677"
+      },
+      {
+        "cve_id": "CVE-2026-41175",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Statamic is a Laravel and Git powered content management system (CMS). Prior to versions 5.73.20 and 6.13.0, manipulating query parameters on Control Panel and REST API endpoints, or arguments in Grap",
+        "published": "2026-04-22T22:16:31.820"
+      },
+      {
+        "cve_id": "CVE-2026-5262",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 16.1.0 before 18.9.6, 18.10 before 18.10.4, and 18.11 before 18.11.1 that under certain conditions could have allowed an unau",
+        "published": "2026-04-22T17:16:44.437"
+      },
+      {
+        "cve_id": "CVE-2026-5816",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.10 before 18.10.4 and 18.11 before 18.11.1 that could have allowed an unauthenticated user to execute arbitrary JavaScript",
+        "published": "2026-04-22T17:16:44.763"
+      },
+      {
+        "cve_id": "CVE-2026-35368",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "A vulnerability exists in the chroot utility of uutils coreutils when using the --userspec option. The utility resolves the user specification via getpwnam() after entering the chroot but before dropp",
+        "published": "2026-04-22T17:16:40.560"
+      },
+      {
+        "cve_id": "CVE-2026-40517",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "radare2 prior to 6.1.4 contains a command injection vulnerability in the PDB parser's print_gvars() function that allows attackers to execute arbitrary commands by crafting a malicious PDB file with n",
+        "published": "2026-04-22T22:16:31.183"
+      },
+      {
+        "cve_id": "CVE-2026-40882",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "OpenRemote is an open-source internet-of-things platform. Prior to version 1.22.0, the Velbus asset import path parses attacker-controlled XML without explicit XXE hardening. An authenticated user who",
+        "published": "2026-04-22T21:17:08.733"
+      },
+      {
+        "cve_id": "CVE-2026-34063",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "A flaw was found in camel-infinispan. This vulnerability involves unsafe deserialization in the ProtoStream remote aggregation repository. A remote attacker with low privileges could exploit this by s",
-        "published": "2026-04-22T13:16:22.583"
+        "description": "Nimiq's network-libp2p is a Nimiq network implementation based on libp2p. Prior to version 1.3.0, `network-libp2p` discovery uses a libp2p `ConnectionHandler` state machine. the handler assumes there ",
+        "published": "2026-04-22T20:16:40.713"
       },
       {
-        "cve_id": "CVE-2026-6855",
+        "cve_id": "CVE-2026-34065",
         "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "A flaw was found in InstructLab. A local attacker could exploit a path traversal vulnerability in the chat session handler by manipulating the `logs_dir` parameter. This allows the attacker to create ",
-        "published": "2026-04-22T13:16:22.410"
+        "base_score": 7.5,
+        "description": "nimiq-primitives contains primitives (e.g., block, account, transaction) to be used in Nimiq's Rust implementation. Prior to version 1.3.0, an untrusted p2p peer can cause a node to panic by announcin",
+        "published": "2026-04-22T20:16:41.077"
       },
       {
-        "cve_id": "CVE-2026-31192",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Insufficient validation of Chrome extension identifiers in Raindrop.io Bookmark Manager Web App 5.6.76.0 allows attackers to obtain sensitive user data via a crafted request.",
-        "published": "2026-04-22T14:16:36.420"
-      },
-      {
-        "cve_id": "CVE-2000-5001",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "Rejected reason: This CVE has the been REJECTED and will not be published by the CNA.",
-        "published": "2026-04-22T14:16:28.837"
-      },
-      {
-        "cve_id": "CVE-2005-20001",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "Rejected reason: This CVE has the been REJECTED and will not be published by the CNA.",
-        "published": "2026-04-22T14:16:29.373"
-      },
-      {
-        "cve_id": "CVE-2008-20002",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "Rejected reason: This CVE has the been REJECTED and will not be published by the CNA.",
-        "published": "2026-04-22T14:16:29.443"
-      },
-      {
-        "cve_id": "CVE-2008-20003",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "Rejected reason: This CVE has the been REJECTED and will not be published by the CNA.",
-        "published": "2026-04-22T14:16:29.503"
-      },
-      {
-        "cve_id": "CVE-2009-20012",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "Rejected reason: This CVE has the been REJECTED and will not be published by the CNA.",
-        "published": "2026-04-22T14:16:29.563"
-      },
-      {
-        "cve_id": "CVE-2010-20110",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "Rejected reason: This CVE has the been REJECTED and will not be published by the CNA.",
-        "published": "2026-04-22T14:16:29.623"
-      },
-      {
-        "cve_id": "CVE-2010-20116",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "Rejected reason: This CVE has the been REJECTED and will not be published by the CNA.",
-        "published": "2026-04-22T14:16:29.677"
-      },
-      {
-        "cve_id": "CVE-2010-20117",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "Rejected reason: This CVE has the been REJECTED and will not be published by the CNA.",
-        "published": "2026-04-22T14:16:29.733"
-      },
-      {
-        "cve_id": "CVE-2010-20118",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "Rejected reason: This CVE has the been REJECTED and will not be published by the CNA.",
-        "published": "2026-04-22T14:16:29.790"
-      },
-      {
-        "cve_id": "CVE-2010-20124",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "Rejected reason: This CVE has the been REJECTED and will not be published by the CNA.",
-        "published": "2026-04-22T14:16:29.840"
-      },
-      {
-        "cve_id": "CVE-2011-10031",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "Rejected reason: This CVE has the been REJECTED and will not be published by the CNA.",
-        "published": "2026-04-22T14:16:29.893"
-      },
-      {
-        "cve_id": "CVE-2013-10041",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "Rejected reason: This CVE has the been REJECTED and will not be published by the CNA.",
-        "published": "2026-04-22T14:16:29.960"
-      },
-      {
-        "cve_id": "CVE-2013-10045",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "Rejected reason: This CVE has the been REJECTED and will not be published by the CNA.",
-        "published": "2026-04-22T14:16:30.010"
-      },
-      {
-        "cve_id": "CVE-2013-10056",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "Rejected reason: This CVE has the been REJECTED and will not be published by the CNA.",
-        "published": "2026-04-22T14:16:30.063"
-      },
-      {
-        "cve_id": "CVE-2014-125120",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "Rejected reason: This CVE has the been REJECTED and will not be published by the CNA.",
-        "published": "2026-04-22T14:16:30.127"
-      },
-      {
-        "cve_id": "CVE-2026-0539",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "Incorrect Default Permissions in pcvisit service binary on Windows allows a low-privileged local attacker to escalate their privileges by overwriting the service binary with arbitrary contents. This s",
-        "published": "2026-04-22T14:16:30.317"
-      },
-      {
-        "cve_id": "CVE-2026-31434",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nbtrfs: fix leak of kobject name for sub-group space_info\n\nWhen create_space_info_sub_group() allocates elements of\nspace_info->sub_",
-        "published": "2026-04-22T14:16:36.533"
+        "cve_id": "CVE-2026-35338",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability in the chmod utility of uutils coreutils allows users to bypass the --preserve-root safety mechanism. The implementation only validates if the target path is literally / and does not c",
+        "published": "2026-04-22T17:16:35.583"
       }
     ]
   },
