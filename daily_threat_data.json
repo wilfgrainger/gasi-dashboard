@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-23T20:43:24.188199+00:00",
+  "generated_at": "2026-04-24T01:48:59.536354+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 28,
+        "value": 27,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 17,
+        "value": 20,
         "score": 3.0,
         "max": 3
       },
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1579,
-    "recent_30d_count": 28,
+    "recent_30d_count": 27,
     "recent": [
       {
         "cve_id": "CVE-2026-39987",
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 163,
-    "critical_count": 17,
-    "high_count": 26,
+    "total": 192,
+    "critical_count": 20,
+    "high_count": 17,
     "cves": [
       {
         "cve_id": "CVE-2026-41679",
@@ -271,11 +271,11 @@
         "published": "2026-04-23T16:16:25.523"
       },
       {
-        "cve_id": "CVE-2026-29198",
+        "cve_id": "CVE-2026-40472",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "In Rocket.Chat <8.3.0, <8.2.1, <8.1.2, <8.0.3, <7.13.5, <7.12.6, <7.11.6, and <7.10.9, a NoSQL injection vulnerability can lead to account takeover of the first user with a generated token when an OAu",
-        "published": "2026-04-23T00:16:45.060"
+        "base_score": 9.9,
+        "description": "In hackage-server, user-controlled metadata from .cabal files are rendered into HTML\nhref attributes without proper sanitization, enabling stored\nCross-Site Scripting (XSS) attacks.",
+        "published": "2026-04-23T16:16:25.753"
       },
       {
         "cve_id": "CVE-2026-3844",
@@ -334,6 +334,34 @@
         "published": "2026-04-23T16:16:25.063"
       },
       {
+        "cve_id": "CVE-2026-31175",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An issue was discovered in ToToLink A3300R firmware v17.0.0cu.557_B20221024 allowing attackers to execute arbitrary commands via the stunEnable parameter to /cgi-bin/cstecgi.cgi.",
+        "published": "2026-04-23T18:16:24.767"
+      },
+      {
+        "cve_id": "CVE-2026-31177",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An issue was discovered in ToToLink A3300R firmware v17.0.0cu.557_B20221024 allowing attackers to execute arbitrary commands via the stunMinAlive parameter to /cgi-bin/cstecgi.cgi.",
+        "published": "2026-04-23T18:16:24.997"
+      },
+      {
+        "cve_id": "CVE-2026-31178",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An issue was discovered in ToToLink A3300R firmware v17.0.0cu.557_B20221024 allowing attackers to execute arbitrary commands via the stunMaxAlive parameter to /cgi-bin/cstecgi.cgi.",
+        "published": "2026-04-23T18:16:25.080"
+      },
+      {
+        "cve_id": "CVE-2026-31181",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An issue was discovered in ToToLink A3300R firmware v17.0.0cu.557_B20221024 allowing attackers to execute arbitrary commands via the stunServerAddr parameter to /cgi-bin/cstecgi.cgi.",
+        "published": "2026-04-23T18:16:25.313"
+      },
+      {
         "cve_id": "CVE-2026-40471",
         "severity": "CRITICAL",
         "base_score": 9.6,
@@ -341,18 +369,11 @@
         "published": "2026-04-23T16:16:25.640"
       },
       {
-        "cve_id": "CVE-2026-33656",
+        "cve_id": "CVE-2026-6920",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "EspoCRM is an open source customer relationship management application. Prior to version 9.3.4, EspoCRM's built-in formula scripting engine allowing updating attachment's sourceId thus allowing an aut",
-        "published": "2026-04-22T21:17:05.330"
-      },
-      {
-        "cve_id": "CVE-2026-41167",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Jellystat is a free and open source Statistics App for Jellyfin. Prior to version 1.1.10, multiple API endpoints in Jellystat build SQL queries by interpolating unsanitized request-body fields directl",
-        "published": "2026-04-22T21:17:09.303"
+        "base_score": 9.6,
+        "description": "Out of bounds read in GPU in Google Chrome on Android prior to 147.0.7727.117 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted H",
+        "published": "2026-04-23T18:16:30.640"
       },
       {
         "cve_id": "CVE-2026-41229",
@@ -360,27 +381,6 @@
         "base_score": 9.1,
         "description": "Froxlor is open source server administration software. Prior to version 2.3.6, `PhpHelper::parseArrayToString()` writes string values into single-quoted PHP string literals without escaping single quo",
         "published": "2026-04-23T04:16:19.563"
-      },
-      {
-        "cve_id": "CVE-2026-41208",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Paperclip is a Node.js server and React UI that orchestrates a team of AI agents to run a business. Versions of @paperclipai/server prior to 2026.416.0 contain a privilege escalation vulnerability tha",
-        "published": "2026-04-23T02:16:18.670"
-      },
-      {
-        "cve_id": "CVE-2026-41455",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "WeKan before\u00a08.35 contains a server-side request forgery vulnerability in webhook integration URL handling where the url schema field accepts any string without protocol restriction or destination val",
-        "published": "2026-04-22T22:16:32.677"
-      },
-      {
-        "cve_id": "CVE-2026-41230",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Froxlor is open source server administration software. Prior to version 2.3.6, `DomainZones::add()` accepts arbitrary DNS record types without a whitelist and does not sanitize newline characters in t",
-        "published": "2026-04-23T04:16:19.783"
       }
     ]
   },
