@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T13:00:40.695501+00:00",
+  "generated_at": "2026-04-24T16:44:39.753451+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 20,
+        "value": 17,
         "score": 3.0,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 193,
-    "critical_count": 20,
-    "high_count": 20,
+    "total": 328,
+    "critical_count": 17,
+    "high_count": 27,
     "cves": [
       {
         "cve_id": "CVE-2026-33819",
@@ -255,55 +255,6 @@
         "base_score": 10.0,
         "description": "Server-side request forgery (ssrf) in Microsoft Entra ID Entitlement Management allows an unauthorized attacker to perform spoofing over a network.",
         "published": "2026-04-23T22:16:38.510"
-      },
-      {
-        "cve_id": "CVE-2026-39440",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Improper Control of Generation of Code ('Code Injection') vulnerability in Funnelforms LLC FunnelFormsPro allows Remote Code Inclusion.This issue affects FunnelFormsPro: from n/a through 3.8.1.",
-        "published": "2026-04-23T13:16:11.893"
-      },
-      {
-        "cve_id": "CVE-2026-40470",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A critical XSS vulnerability affected hackage-server and\nhackage.haskell.org.  HTML and JavaScript files provided in source\npackages or via the documentation upload facility were served\nas-is on the m",
-        "published": "2026-04-23T16:16:25.523"
-      },
-      {
-        "cve_id": "CVE-2026-40472",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "In hackage-server, user-controlled metadata from .cabal files are rendered into HTML\nhref attributes without proper sanitization, enabling stored\nCross-Site Scripting (XSS) attacks.",
-        "published": "2026-04-23T16:16:25.753"
-      },
-      {
-        "cve_id": "CVE-2026-41460",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "SocialEngine versions 7.8.0 and prior contain a SQL injection vulnerability in the /activity/index/get-memberall endpoint where user-supplied input passed via the text parameter is not sanitized befor",
-        "published": "2026-04-23T15:37:24.540"
-      },
-      {
-        "cve_id": "CVE-2025-62373",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Pipecat is an open-source Python framework for building real-time voice and multimodal conversational agents. Versions 0.0.41 through 0.0.93 have a vulnerability in `LivekitFrameSerializer` \u2013 an optio",
-        "published": "2026-04-23T16:16:24.140"
-      },
-      {
-        "cve_id": "CVE-2026-23751",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Kofax Capture, now referred to as Tungsten Capture, version 6.0.0.0 (other versions may be affected) exposes a deprecated .NET Remoting HTTP channel on port 2424 via the Ascent Capture Service that is",
-        "published": "2026-04-23T16:16:24.463"
-      },
-      {
-        "cve_id": "CVE-2026-39087",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An issue in Ntfy ntfy.sh before v.2.21 allows a remote attacker to execute arbitrary code via the parseActions function",
-        "published": "2026-04-23T16:16:25.063"
       },
       {
         "cve_id": "CVE-2026-31175",
@@ -334,6 +285,34 @@
         "published": "2026-04-23T18:16:25.313"
       },
       {
+        "cve_id": "CVE-2026-41264",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, the specific flaw exists within the run method of the CSV_Agents class. The issue results from ",
+        "published": "2026-04-23T20:16:14.750"
+      },
+      {
+        "cve_id": "CVE-2026-41265",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, the specific flaw exists within the run method of the Airtable_Agents class. The issue results ",
+        "published": "2026-04-23T20:16:14.890"
+      },
+      {
+        "cve_id": "CVE-2026-41268",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, Flowise is vulnerable to a critical unauthenticated remote command execution (RCE) vulnerabilit",
+        "published": "2026-04-23T20:16:15.300"
+      },
+      {
+        "cve_id": "CVE-2026-41276",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, this vulnerability allows remote attackers to bypass authentication on affected installations o",
+        "published": "2026-04-23T20:16:16.270"
+      },
+      {
         "cve_id": "CVE-2026-6942",
         "severity": "CRITICAL",
         "base_score": 9.8,
@@ -348,11 +327,11 @@
         "published": "2026-04-23T22:16:26.400"
       },
       {
-        "cve_id": "CVE-2026-40471",
+        "cve_id": "CVE-2026-6919",
         "severity": "CRITICAL",
         "base_score": 9.6,
-        "description": "hackage-server lacked Cross-Site Request Forgery (CSRF) protection across its endpoints. Scripts on foreign sites could trigger requests to hackage server, possibly abusing latent credentials to uploa",
-        "published": "2026-04-23T16:16:25.640"
+        "description": "Use after free in DevTools in Google Chrome prior to 147.0.7727.117 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. ",
+        "published": "2026-04-23T18:16:30.520"
       },
       {
         "cve_id": "CVE-2026-6920",
@@ -381,6 +360,27 @@
         "base_score": 9.3,
         "description": "Url redirection to untrusted site ('open redirect') in M365 Copilot allows an unauthorized attacker to elevate privileges over a network.",
         "published": "2026-04-23T22:16:37.093"
+      },
+      {
+        "cve_id": "CVE-2026-41137",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, The CSVAgent allows providing a custom Pandas CSV read code. Due to lack of sanitization, an at",
+        "published": "2026-04-23T20:16:14.257"
+      },
+      {
+        "cve_id": "CVE-2026-41138",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, there is a remote code execution vulnerability in AirtableAgent.ts caused by lack of input veri",
+        "published": "2026-04-23T20:16:14.380"
+      },
+      {
+        "cve_id": "CVE-2026-41277",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, a Mass Assignment vulnerability in the DocumentStore creation endpoint allows authenticated use",
+        "published": "2026-04-23T20:16:16.410"
       }
     ]
   },
