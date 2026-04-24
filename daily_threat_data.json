@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-24T16:44:39.753451+00:00",
+  "generated_at": "2026-04-24T20:36:56.858078+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 27,
+        "value": 31,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 17,
+        "value": 15,
         "score": 3.0,
         "max": 3
       },
@@ -32,9 +32,49 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1579,
-    "recent_30d_count": 27,
+    "total_catalog_count": 1583,
+    "recent_30d_count": 31,
     "recent": [
+      {
+        "cve_id": "CVE-2025-29635",
+        "vendor": "D-Link",
+        "product": "DIR-823X",
+        "name": "D-Link DIR-823X Command Injection Vulnerability",
+        "date_added": "2026-04-24",
+        "due_date": "2026-05-08",
+        "description": "D-Link DIR-823X contains a command injection vulnerability that allows an authorized attacker to execute arbitrary commands on remote devices by sending a POST request to /goform/set_prohibiting via t",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2024-7399",
+        "vendor": "Samsung",
+        "product": "MagicINFO 9 Server",
+        "name": "Samsung MagicINFO 9 Server Path Traversal Vulnerability",
+        "date_added": "2026-04-24",
+        "due_date": "2026-05-08",
+        "description": "Samsung MagicINFO 9 Server contains a path traversal vulnerability that could allow an attacker to write arbitrary files as system authority.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2024-57728",
+        "vendor": "SimpleHelp ",
+        "product": "SimpleHelp",
+        "name": "SimpleHelp Path Traversal Vulnerability",
+        "date_added": "2026-04-24",
+        "due_date": "2026-05-08",
+        "description": "SimpleHelp contains a path traversal vulnerability that allows admin users to upload arbitrary files anywhere on the file system by uploading a crafted zip file (i.e. zip slip). This can be exploited ",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2024-57726",
+        "vendor": "SimpleHelp ",
+        "product": "SimpleHelp",
+        "name": "SimpleHelp Missing Authorization Vulnerability",
+        "date_added": "2026-04-24",
+        "due_date": "2026-05-08",
+        "description": "SimpleHelp contains a missing authorization vulnerability that could allow low-privileged technicians to create API keys with excessive permissions. These API keys can be used to escalate privileges t",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-39987",
         "vendor": "Marimo",
@@ -194,52 +234,12 @@
         "due_date": "2026-04-27",
         "description": "Microsoft Exchange Server contains a deserialization of untrusted data that allows an authenticated attacker to achieve remote code execution.",
         "ransomware_use": "Known"
-      },
-      {
-        "cve_id": "CVE-2023-36424",
-        "vendor": "Microsoft",
-        "product": "Windows",
-        "name": "Microsoft Windows Out-of-Bounds Read Vulnerability",
-        "date_added": "2026-04-13",
-        "due_date": "2026-04-27",
-        "description": "Microsoft Windows Common Log File System Driver contains an out-of-bounds read vulnerability that could allow a threat actor for privileges escalation",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2020-9715",
-        "vendor": "Adobe",
-        "product": "Acrobat",
-        "name": "Adobe Acrobat Use-After-Free Vulnerability",
-        "date_added": "2026-04-13",
-        "due_date": "2026-04-27",
-        "description": "Adobe Acrobat contains a use-after-free vulnerability that allows for code execution",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-21643",
-        "vendor": "Fortinet",
-        "product": "FortiClient EMS",
-        "name": "Fortinet FortiClient EMS SQL Injection Vulnerability",
-        "date_added": "2026-04-13",
-        "due_date": "2026-04-16",
-        "description": "Fortinet FortiClient EMS contains a SQL injection vulnerability that may allow an unauthenticated attacker to execute unauthorized code or commands via specifically crafted HTTP requests.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-34621",
-        "vendor": "Adobe",
-        "product": "Acrobat and Reader",
-        "name": "Adobe Acrobat and Reader Prototype Pollution Vulnerability",
-        "date_added": "2026-04-13",
-        "due_date": "2026-04-27",
-        "description": "Adobe Acrobat and Reader contain a prototype pollution vulnerability that allows for arbitrary code execution.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 328,
-    "critical_count": 17,
+    "total": 327,
+    "critical_count": 15,
     "high_count": 27,
     "cves": [
       {
@@ -257,62 +257,6 @@
         "published": "2026-04-23T22:16:38.510"
       },
       {
-        "cve_id": "CVE-2026-31175",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An issue was discovered in ToToLink A3300R firmware v17.0.0cu.557_B20221024 allowing attackers to execute arbitrary commands via the stunEnable parameter to /cgi-bin/cstecgi.cgi.",
-        "published": "2026-04-23T18:16:24.767"
-      },
-      {
-        "cve_id": "CVE-2026-31177",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An issue was discovered in ToToLink A3300R firmware v17.0.0cu.557_B20221024 allowing attackers to execute arbitrary commands via the stunMinAlive parameter to /cgi-bin/cstecgi.cgi.",
-        "published": "2026-04-23T18:16:24.997"
-      },
-      {
-        "cve_id": "CVE-2026-31178",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An issue was discovered in ToToLink A3300R firmware v17.0.0cu.557_B20221024 allowing attackers to execute arbitrary commands via the stunMaxAlive parameter to /cgi-bin/cstecgi.cgi.",
-        "published": "2026-04-23T18:16:25.080"
-      },
-      {
-        "cve_id": "CVE-2026-31181",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An issue was discovered in ToToLink A3300R firmware v17.0.0cu.557_B20221024 allowing attackers to execute arbitrary commands via the stunServerAddr parameter to /cgi-bin/cstecgi.cgi.",
-        "published": "2026-04-23T18:16:25.313"
-      },
-      {
-        "cve_id": "CVE-2026-41264",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, the specific flaw exists within the run method of the CSV_Agents class. The issue results from ",
-        "published": "2026-04-23T20:16:14.750"
-      },
-      {
-        "cve_id": "CVE-2026-41265",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, the specific flaw exists within the run method of the Airtable_Agents class. The issue results ",
-        "published": "2026-04-23T20:16:14.890"
-      },
-      {
-        "cve_id": "CVE-2026-41268",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, Flowise is vulnerable to a critical unauthenticated remote command execution (RCE) vulnerabilit",
-        "published": "2026-04-23T20:16:15.300"
-      },
-      {
-        "cve_id": "CVE-2026-41276",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, this vulnerability allows remote attackers to bypass authentication on affected installations o",
-        "published": "2026-04-23T20:16:16.270"
-      },
-      {
         "cve_id": "CVE-2026-6942",
         "severity": "CRITICAL",
         "base_score": 9.8,
@@ -327,18 +271,53 @@
         "published": "2026-04-23T22:16:26.400"
       },
       {
-        "cve_id": "CVE-2026-6919",
+        "cve_id": "CVE-2026-25775",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in DevTools in Google Chrome prior to 147.0.7727.117 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. ",
-        "published": "2026-04-23T18:16:30.520"
+        "base_score": 9.8,
+        "description": "A vulnerability in\u00a0SenseLive\u00a0X3050\u2019s remote management service allows firmware retrieval and update operations to be performed without authentication or authorization. The service accepts firmware-rel",
+        "published": "2026-04-24T00:16:26.757"
       },
       {
-        "cve_id": "CVE-2026-6920",
+        "cve_id": "CVE-2026-35503",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Out of bounds read in GPU in Google Chrome on Android prior to 147.0.7727.117 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted H",
-        "published": "2026-04-23T18:16:30.640"
+        "base_score": 9.8,
+        "description": "A vulnerability in\u00a0SenseLive X3050\u2019s web management interface allows authentication logic to be performed entirely on the client side, relying on hardcoded values within browser-executed scripts rathe",
+        "published": "2026-04-24T00:16:28.143"
+      },
+      {
+        "cve_id": "CVE-2026-40620",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A vulnerability in\u00a0SenseLive\u00a0X3050\u2019s embedded management service allows full administrative control to be established without any form of authentication or authorization on the SenseLive config applic",
+        "published": "2026-04-24T00:16:28.690"
+      },
+      {
+        "cve_id": "CVE-2026-40630",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A vulnerability in\u00a0\nSenseLive \n\nX3050\u2019s web management interface allows unauthorized access to certain configuration endpoints due to improper access control enforcement. An attacker with network acce",
+        "published": "2026-04-24T00:16:29.040"
+      },
+      {
+        "cve_id": "CVE-2026-1949",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Delta Electronics AS320T has incorrect calculation of the buffer size on the stack in the GET/PUT request handler of the web service.",
+        "published": "2026-04-24T06:16:03.883"
+      },
+      {
+        "cve_id": "CVE-2026-1950",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Delta Electronics AS320T has \nNo checking of the length of the buffer with the file name vulnerability.",
+        "published": "2026-04-24T07:16:08.523"
+      },
+      {
+        "cve_id": "CVE-2026-1951",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Delta Electronics AS320T has no checking of the length of the buffer with the directory name\n\n vulnerability.",
+        "published": "2026-04-24T07:16:09.520"
       },
       {
         "cve_id": "CVE-2026-24303",
@@ -362,25 +341,46 @@
         "published": "2026-04-23T22:16:37.093"
       },
       {
-        "cve_id": "CVE-2026-41137",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, The CSVAgent allows providing a custom Pandas CSV read code. Due to lack of sanitization, an at",
-        "published": "2026-04-23T20:16:14.257"
+        "cve_id": "CVE-2026-27843",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "A vulnerability exists in\u00a0SenseLive X3050's web management interface that allows critical configuration parameters to be modified without sufficient authentication or server-side validation. By applyi",
+        "published": "2026-04-24T00:16:27.123"
       },
       {
-        "cve_id": "CVE-2026-41138",
+        "cve_id": "CVE-2026-41349",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, there is a remote code execution vulnerability in AirtableAgent.ts caused by lack of input veri",
-        "published": "2026-04-23T20:16:14.380"
+        "description": "OpenClaw before 2026.3.28 contains an agentic consent bypass vulnerability allowing LLM agents to silently disable execution approval via config.patch parameter. Remote attackers can exploit this to b",
+        "published": "2026-04-23T22:16:41.827"
       },
       {
-        "cve_id": "CVE-2026-41277",
+        "cve_id": "CVE-2026-41352",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Flowise is a drag & drop user interface to build a customized large language model flow. Prior to 3.1.0, a Mass Assignment vulnerability in the DocumentStore creation endpoint allows authenticated use",
-        "published": "2026-04-23T20:16:16.410"
+        "description": "OpenClaw before 2026.3.31 contains a remote code execution vulnerability where a device-paired node can bypass the node scope gate authentication mechanism. Attackers with device pairing credentials c",
+        "published": "2026-04-23T22:16:42.327"
+      },
+      {
+        "cve_id": "CVE-2026-33318",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Actual is a local-first personal finance tool. Prior to version 26.4.0, any authenticated user (including `BASIC` role) can escalate to `ADMIN` on servers migrated from password authentication to Open",
+        "published": "2026-04-24T03:16:11.203"
+      },
+      {
+        "cve_id": "CVE-2026-33317",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "OP-TEE is a Trusted Execution Environment (TEE) designed as companion to a non-secure Linux kernel running on Arm; Cortex-A cores using the TrustZone technology. In versions 3.13.0 through 4.10.0, mis",
+        "published": "2026-04-24T03:16:11.020"
+      },
+      {
+        "cve_id": "CVE-2026-26150",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Server-side request forgery (ssrf) in Microsoft Purview allows an unauthorized attacker to elevate privileges over a network.",
+        "published": "2026-04-23T22:16:23.177"
       }
     ]
   },
