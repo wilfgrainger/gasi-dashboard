@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T08:42:05.479867+00:00",
+  "generated_at": "2026-04-25T12:41:07.915387+00:00",
   "threat_score": {
     "score": 5.5,
     "level": "ELEVATED",
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 231,
+    "total": 238,
     "critical_count": 1,
-    "high_count": 5,
+    "high_count": 1,
     "cves": [
       {
         "cve_id": "CVE-2026-21515",
@@ -250,20 +250,6 @@
         "published": "2026-04-24T13:16:03.610"
       },
       {
-        "cve_id": "CVE-2026-40466",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Improper Input Validation, Improper Control of Generation of Code ('Code Injection') vulnerability in Apache ActiveMQ Broker, Apache ActiveMQ All, Apache ActiveMQ.\n\n\n\nAn authenticated attacker may byp",
-        "published": "2026-04-24T11:16:22.540"
-      },
-      {
-        "cve_id": "CVE-2026-41044",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Improper Input Validation, Improper Control of Generation of Code ('Code Injection') vulnerability in Apache ActiveMQ, Apache ActiveMQ Broker, Apache ActiveMQ All.\n\nAn authenticated attacker can use t",
-        "published": "2026-04-24T11:16:22.790"
-      },
-      {
         "cve_id": "CVE-2026-5367",
         "severity": "HIGH",
         "base_score": 8.6,
@@ -271,39 +257,11 @@
         "published": "2026-04-24T13:16:21.990"
       },
       {
-        "cve_id": "CVE-2026-23902",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Incorrect Authorization vulnerability in Apache DolphinScheduler allows authenticated users with system login permissions to use tenants that are not defined on the platform during workflow execution.",
-        "published": "2026-04-24T12:17:06.453"
-      },
-      {
-        "cve_id": "CVE-2026-21728",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Tempo queries with large limits can cause large memory allocations which can impact the availability of the service, depending on its deployment strategy.\n\nMitigation can be done by setting max_result",
-        "published": "2026-04-24T09:16:03.710"
-      },
-      {
-        "cve_id": "CVE-2026-41043",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS) vulnerability in Apache ActiveMQ, Apache ActiveMQ Web.\n\nAn authenticated attacker can show malicious content when browsing",
-        "published": "2026-04-24T11:16:22.670"
-      },
-      {
         "cve_id": "CVE-2026-5265",
         "severity": "MEDIUM",
         "base_score": 6.5,
         "description": "When generating an ICMP Destination Unreachable or Packet Too Big response, the handler copies a portion of the original packet into the ICMP error body using the IP header's self-declared total lengt",
         "published": "2026-04-24T13:16:21.770"
-      },
-      {
-        "cve_id": "CVE-2025-62233",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "Deserialization of Untrusted Data vulnerability in Apache DolphinScheduler RPC module.\n\nThis issue affects Apache DolphinScheduler:\u00a0\n\nVersion >= 3.2.0 and < 3.3.1.\n\nAttackers who can access the Master",
-        "published": "2026-04-24T11:16:21.780"
       },
       {
         "cve_id": "CVE-2025-61872",
@@ -348,27 +306,6 @@
         "published": "2026-04-24T15:16:27.097"
       },
       {
-        "cve_id": "CVE-2026-6272",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "A client holding only a read JWT scope can still register itself as a signal provider through the production kuksa.val.v2 OpenProviderStream API by sending ProvideSignalRequest.\n\n1. Obtain any valid t",
-        "published": "2026-04-24T09:16:04.227"
-      },
-      {
-        "cve_id": "CVE-2026-4313",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "AdaptiveGRC is vulnerable to Stored XSS via text type fields across the forms. Authenticated attacker can replace the value of the text field in the HTTP POST request. Improper parameter validation by",
-        "published": "2026-04-24T12:17:07.430"
-      },
-      {
-        "cve_id": "CVE-2026-6043",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "P4 Server versions prior to 2026.1 are configured with insecure default settings that, when exposed to untrusted networks, allow unauthenticated attackers to create arbitrary user accounts, enumerate ",
-        "published": "2026-04-24T12:17:07.660"
-      },
-      {
         "cve_id": "CVE-2026-25660",
         "severity": "UNKNOWN",
         "base_score": null,
@@ -381,6 +318,69 @@
         "base_score": null,
         "description": "Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
         "published": "2026-04-24T15:16:27.313"
+      },
+      {
+        "cve_id": "CVE-2026-31535",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: client: make use of smbdirect_socket.recv_io.credits.available\n\nThe logic off managing recv credits by counting posted recv_io",
+        "published": "2026-04-24T15:16:27.427"
+      },
+      {
+        "cve_id": "CVE-2026-31536",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: server: let send_done handle a completion without IB_SEND_SIGNALED\n\nWith smbdirect_send_batch processing we likely have reques",
+        "published": "2026-04-24T15:16:27.530"
+      },
+      {
+        "cve_id": "CVE-2026-31537",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: server: make use of smbdirect_socket.send_io.bcredits\n\nIt turns out that our code will corrupt the stream of\nreassabled data t",
+        "published": "2026-04-24T15:16:27.633"
+      },
+      {
+        "cve_id": "CVE-2026-31538",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: server: make use of smbdirect_socket.recv_io.credits.available\n\nThe logic off managing recv credits by counting posted recv_io",
+        "published": "2026-04-24T15:16:27.740"
+      },
+      {
+        "cve_id": "CVE-2026-31539",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: smbdirect: introduce smbdirect_socket.recv_io.credits.available\n\nThe logic off managing recv credits by counting posted recv_i",
+        "published": "2026-04-24T15:16:27.843"
+      },
+      {
+        "cve_id": "CVE-2026-31540",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/i915/gt: Check set_default_submission() before deferencing\n\nWhen the i915 driver firmware binaries are not present, the\nset_def",
+        "published": "2026-04-24T15:16:27.957"
+      },
+      {
+        "cve_id": "CVE-2026-31541",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ntracing: Fix trace_marker copy link list updates\n\nWhen the \"copy_trace_marker\" option is enabled for an instance, anything\nwritten ",
+        "published": "2026-04-24T15:16:28.117"
+      },
+      {
+        "cve_id": "CVE-2026-31542",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nx86/platform/uv: Handle deconfigured sockets\n\nWhen a socket is deconfigured, it's mapped to SOCK_EMPTY (0xffff). This causes\na pani",
+        "published": "2026-04-24T15:16:28.237"
+      },
+      {
+        "cve_id": "CVE-2026-31543",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ncrash_dump: don't log dm-crypt key bytes in read_key_from_user_keying\n\nWhen debug logging is enabled, read_key_from_user_keying() l",
+        "published": "2026-04-24T15:16:28.350"
       }
     ]
   },
