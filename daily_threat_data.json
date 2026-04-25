@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-04-24T20:36:56.858078+00:00",
+  "generated_at": "2026-04-25T01:27:38.649987+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 31,
+        "value": 30,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 15,
-        "score": 3.0,
+        "value": 5,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1583,
-    "recent_30d_count": 31,
+    "recent_30d_count": 30,
     "recent": [
       {
         "cve_id": "CVE-2025-29635",
@@ -238,65 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 327,
-    "critical_count": 15,
-    "high_count": 27,
+    "total": 265,
+    "critical_count": 5,
+    "high_count": 15,
     "cves": [
       {
-        "cve_id": "CVE-2026-33819",
+        "cve_id": "CVE-2026-21515",
         "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Deserialization of untrusted data in Microsoft Bing allows an unauthorized attacker to execute code over a network.",
-        "published": "2026-04-23T22:16:37.817"
-      },
-      {
-        "cve_id": "CVE-2026-35431",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Server-side request forgery (ssrf) in Microsoft Entra ID Entitlement Management allows an unauthorized attacker to perform spoofing over a network.",
-        "published": "2026-04-23T22:16:38.510"
-      },
-      {
-        "cve_id": "CVE-2026-6942",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "radare2-mcp version 1.6.0 and earlier contains an os command injection vulnerability that allows remote attackers to execute arbitrary commands by bypassing the command filter through shell metacharac",
-        "published": "2026-04-23T21:16:06.947"
-      },
-      {
-        "cve_id": "CVE-2026-26210",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "KTransformers through 0.5.3 contains an unsafe deserialization vulnerability in the balance_serve backend mode where the scheduler RPC server binds a ZMQ ROUTER socket to all interfaces with no authen",
-        "published": "2026-04-23T22:16:26.400"
-      },
-      {
-        "cve_id": "CVE-2026-25775",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A vulnerability in\u00a0SenseLive\u00a0X3050\u2019s remote management service allows firmware retrieval and update operations to be performed without authentication or authorization. The service accepts firmware-rel",
-        "published": "2026-04-24T00:16:26.757"
-      },
-      {
-        "cve_id": "CVE-2026-35503",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A vulnerability in\u00a0SenseLive X3050\u2019s web management interface allows authentication logic to be performed entirely on the client side, relying on hardcoded values within browser-executed scripts rathe",
-        "published": "2026-04-24T00:16:28.143"
-      },
-      {
-        "cve_id": "CVE-2026-40620",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A vulnerability in\u00a0SenseLive\u00a0X3050\u2019s embedded management service allows full administrative control to be established without any form of authentication or authorization on the SenseLive config applic",
-        "published": "2026-04-24T00:16:28.690"
-      },
-      {
-        "cve_id": "CVE-2026-40630",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A vulnerability in\u00a0\nSenseLive \n\nX3050\u2019s web management interface allows unauthorized access to certain configuration endpoints due to improper access control enforcement. An attacker with network acce",
-        "published": "2026-04-24T00:16:29.040"
+        "base_score": 9.9,
+        "description": "Exposure of sensitive information to an unauthorized actor in Azure IOT Central allows an authorized attacker to elevate privileges over a network.",
+        "published": "2026-04-24T13:16:03.610"
       },
       {
         "cve_id": "CVE-2026-1949",
@@ -320,46 +271,11 @@
         "published": "2026-04-24T07:16:09.520"
       },
       {
-        "cve_id": "CVE-2026-24303",
+        "cve_id": "CVE-2026-1952",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Improper access control in Microsoft Partner Center allows an authorized attacker to elevate privileges over a network.",
-        "published": "2026-04-23T22:16:22.483"
-      },
-      {
-        "cve_id": "CVE-2026-32210",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Server-side request forgery (ssrf) in Microsoft Dynamics 365 (Online) allows an unauthorized attacker to perform spoofing over a network.",
-        "published": "2026-04-23T22:16:35.260"
-      },
-      {
-        "cve_id": "CVE-2026-33102",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Url redirection to untrusted site ('open redirect') in M365 Copilot allows an unauthorized attacker to elevate privileges over a network.",
-        "published": "2026-04-23T22:16:37.093"
-      },
-      {
-        "cve_id": "CVE-2026-27843",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A vulnerability exists in\u00a0SenseLive X3050's web management interface that allows critical configuration parameters to be modified without sufficient authentication or server-side validation. By applyi",
-        "published": "2026-04-24T00:16:27.123"
-      },
-      {
-        "cve_id": "CVE-2026-41349",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenClaw before 2026.3.28 contains an agentic consent bypass vulnerability allowing LLM agents to silently disable execution approval via config.patch parameter. Remote attackers can exploit this to b",
-        "published": "2026-04-23T22:16:41.827"
-      },
-      {
-        "cve_id": "CVE-2026-41352",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenClaw before 2026.3.31 contains a remote code execution vulnerability where a device-paired node can bypass the node scope gate authentication mechanism. Attackers with device pairing credentials c",
-        "published": "2026-04-23T22:16:42.327"
+        "base_score": 9.8,
+        "description": "Delta Electronics AS320T has denial of service via the undocumented subfunction\u00a0vulnerability.",
+        "published": "2026-04-24T07:16:09.627"
       },
       {
         "cve_id": "CVE-2026-33318",
@@ -369,6 +285,20 @@
         "published": "2026-04-24T03:16:11.203"
       },
       {
+        "cve_id": "CVE-2026-40466",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Improper Input Validation, Improper Control of Generation of Code ('Code Injection') vulnerability in Apache ActiveMQ Broker, Apache ActiveMQ All, Apache ActiveMQ.\n\n\n\nAn authenticated attacker may byp",
+        "published": "2026-04-24T11:16:22.540"
+      },
+      {
+        "cve_id": "CVE-2026-41044",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Improper Input Validation, Improper Control of Generation of Code ('Code Injection') vulnerability in Apache ActiveMQ, Apache ActiveMQ Broker, Apache ActiveMQ All.\n\nAn authenticated attacker can use t",
+        "published": "2026-04-24T11:16:22.790"
+      },
+      {
         "cve_id": "CVE-2026-33317",
         "severity": "HIGH",
         "base_score": 8.7,
@@ -376,11 +306,81 @@
         "published": "2026-04-24T03:16:11.020"
       },
       {
-        "cve_id": "CVE-2026-26150",
+        "cve_id": "CVE-2026-5367",
         "severity": "HIGH",
         "base_score": 8.6,
-        "description": "Server-side request forgery (ssrf) in Microsoft Purview allows an unauthorized attacker to elevate privileges over a network.",
-        "published": "2026-04-23T22:16:23.177"
+        "description": "A flaw was found in OVN (Open Virtual Network). A remote attacker, by sending crafted DHCPv6 (Dynamic Host Configuration Protocol for IPv6) SOLICIT packets with an inflated Client ID length, could cau",
+        "published": "2026-04-24T13:16:21.990"
+      },
+      {
+        "cve_id": "CVE-2026-41309",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Open Source Social Network (OSSN) is open-source social networking software developed in PHP. Versions prior to 9.0 are vulnerable to resource exhaustion. An attacker can upload a specially crafted im",
+        "published": "2026-04-24T03:16:11.720"
+      },
+      {
+        "cve_id": "CVE-2026-41316",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "ERB is a templating system for Ruby. Ruby 2.7.0 (before ERB 2.2.0 was published on rubygems.org) introduced an `@_init` instance variable guard in `ERB#result` and `ERB#run` to prevent code execution ",
+        "published": "2026-04-24T03:16:11.897"
+      },
+      {
+        "cve_id": "CVE-2026-41323",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Kyverno is a policy engine designed for cloud native platform engineering teams. Prior to versions 1.18.0-rc1, 1.17.2-rc1, and 1.16.4, Kyverno's apiCall feature in ClusterPolicy automatically attaches",
+        "published": "2026-04-24T04:16:20.593"
+      },
+      {
+        "cve_id": "CVE-2026-5364",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The Drag and Drop File Upload for Contact Form 7 plugin for WordPress is vulnerable to arbitrary file upload in versions up to, and including, 1.1.3. This is due to the plugin extracting the file exte",
+        "published": "2026-04-24T06:16:08.480"
+      },
+      {
+        "cve_id": "CVE-2026-23902",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Incorrect Authorization vulnerability in Apache DolphinScheduler allows authenticated users with system login permissions to use tenants that are not defined on the platform during workflow execution.",
+        "published": "2026-04-24T12:17:06.453"
+      },
+      {
+        "cve_id": "CVE-2026-41068",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "Kyverno is a policy engine designed for cloud native platform engineering teams. The patch for CVE-2026-22039 fixed cross-namespace privilege escalation in Kyverno's `apiCall` context by validating th",
+        "published": "2026-04-24T04:16:19.950"
+      },
+      {
+        "cve_id": "CVE-2026-41485",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "Kyverno is a policy engine designed for cloud native platform engineering teams. Prior to versions 1.17.2 and 1.16.4, an unchecked type assertion in the `forEach` mutation handler allows any user with",
+        "published": "2026-04-24T04:16:21.317"
+      },
+      {
+        "cve_id": "CVE-2026-41324",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "basic-ftp is an FTP client for Node.js. Versions prior to 5.3.0 are vulnerable to denial of service through unbounded memory growth while processing directory listings from a remote FTP server. A mali",
+        "published": "2026-04-24T04:16:20.767"
+      },
+      {
+        "cve_id": "CVE-2026-6947",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "DWM-222W USB Wi-Fi Adapter developed by D-Link has a Brute-Force Protection Bypass vulnerability, allowing unauthenticated adjacent network attackers to bypass login attempt limits to perform brute-fo",
+        "published": "2026-04-24T04:16:23.170"
+      },
+      {
+        "cve_id": "CVE-2026-21728",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Tempo queries with large limits can cause large memory allocations which can impact the availability of the service, depending on its deployment strategy.\n\nMitigation can be done by setting max_result",
+        "published": "2026-04-24T09:16:03.710"
       }
     ]
   },
