@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-25T16:31:37.376808+00:00",
+  "generated_at": "2026-04-25T20:29:14.037580+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
-        "score": 2.5,
+        "value": 3,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 88,
-    "critical_count": 8,
-    "high_count": 18,
+    "total": 43,
+    "critical_count": 3,
+    "high_count": 6,
     "cves": [
       {
         "cve_id": "CVE-2026-41478",
@@ -250,46 +250,11 @@
         "published": "2026-04-24T21:16:19.353"
       },
       {
-        "cve_id": "CVE-2026-6911",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Missing JWT signature verification in AWS Ops Wheel allows unauthenticated attackers to forge JWT tokens and gain unintended administrative access to the application, including the ability to read, mo",
-        "published": "2026-04-24T17:16:22.220"
-      },
-      {
-        "cve_id": "CVE-2026-41492",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Dgraph is an open source distributed GraphQL database. Prior to 25.3.3, Dgraphl exposes the process command line through the unauthenticated /debug/vars endpoint on Alpha. Because the admin token is c",
-        "published": "2026-04-24T19:17:14.047"
-      },
-      {
         "cve_id": "CVE-2026-6951",
         "severity": "CRITICAL",
         "base_score": 9.8,
         "description": "Versions of the package simple-git before 3.36.0 are vulnerable to Remote Code Execution (RCE) due to an incomplete fix for [CVE-2022-25912](https://security.snyk.io/vuln/SNYK-JS-SIMPLEGIT-3112221) th",
         "published": "2026-04-25T06:16:16.453"
-      },
-      {
-        "cve_id": "CVE-2026-41327",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Dgraph is an open source distributed GraphQL database. Prior to 25.3.3, a vulnerability has been found in Dgraph that gives an unauthenticated attacker full read access to every piece of data in the d",
-        "published": "2026-04-24T19:17:12.407"
-      },
-      {
-        "cve_id": "CVE-2026-41328",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Dgraph is an open source distributed GraphQL database. Prior to 25.3.3, a vulnerability has been found in Dgraph that gives an unauthenticated attacker full read access to every piece of data in the d",
-        "published": "2026-04-24T19:17:12.553"
-      },
-      {
-        "cve_id": "CVE-2026-41428",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Budibase is an open-source low-code platform. Prior to 3.35.4, the authenticated middleware uses unanchored regular expressions to match public (no-auth) endpoint patterns against ctx.request.url. Sin",
-        "published": "2026-04-24T20:16:27.523"
       },
       {
         "cve_id": "CVE-2026-41248",
@@ -299,46 +264,11 @@
         "published": "2026-04-24T21:16:18.497"
       },
       {
-        "cve_id": "CVE-2026-40897",
+        "cve_id": "CVE-2026-6988",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Math.js is an extensive math library for JavaScript and Node.js. From 13.1.1 to before 15.2.0, a vulnerability allowed executing arbitrary JavaScript via the expression parser of mathjs. You can be af",
-        "published": "2026-04-24T17:16:20.783"
-      },
-      {
-        "cve_id": "CVE-2026-6912",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Improperly controlled modification of dynamically-determined object attributes in the Cognito User Pool configuration in AWS Ops Wheel before PR #165 allows remote authenticated users to escalate to d",
-        "published": "2026-04-24T17:16:22.377"
-      },
-      {
-        "cve_id": "CVE-2026-41421",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "SiYuan is an open-source personal knowledge management system. Prior to 3.6.5, SiYuan desktop renders notification messages as raw HTML inside an Electron renderer. The notification route POST /api/no",
-        "published": "2026-04-24T19:17:13.740"
-      },
-      {
-        "cve_id": "CVE-2026-41429",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "arduino-esp32 is an Arduino core for the ESP32, ESP32-S2, ESP32-S3, ESP32-C3, ESP32-C6 and ESP32-H2 microcontrollers. Prior to 3.3.8, there is a remotely reachable memory corruption issue in the NBNS ",
-        "published": "2026-04-24T20:16:27.663"
-      },
-      {
-        "cve_id": "CVE-2026-41433",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "OpenTelemetry eBPF Instrumentation provides eBPF instrumentation based on the OpenTelemetry standard. From 0.4.0 to before 0.8.0, a flaw in the Java agent injection path allows a local attacker contro",
-        "published": "2026-04-24T20:16:27.803"
-      },
-      {
-        "cve_id": "CVE-2026-41477",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Deskflow is a keyboard and mouse sharing app.  In 1.20.0, 1.26.0.134, and earlier, Deskflow daemon runs as SYSTEM and exposes an IPC named pipe with WorldAccessOption enabled. The daemon processes pri",
-        "published": "2026-04-24T20:16:28.340"
+        "description": "A flaw has been found in Tenda HG10 HG7_HG9_HG10re_300001138_en_xpon. This issue affects the function formRoute of the file /boaform/formRouting of the component Boa Service. This manipulation of the ",
+        "published": "2026-04-25T18:16:17.863"
       },
       {
         "cve_id": "CVE-2026-42171",
@@ -348,39 +278,109 @@
         "published": "2026-04-24T22:16:01.540"
       },
       {
-        "cve_id": "CVE-2026-41419",
+        "cve_id": "CVE-2026-6977",
         "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "4ga Boards is a boards system for realtime project management. Prior to 3.3.5, a path traversal vulnerability allows an authenticated user with board import privileges to make the server ingest arbitr",
-        "published": "2026-04-24T19:17:13.603"
+        "base_score": 7.3,
+        "description": "A security vulnerability has been detected in vanna-ai vanna up to 2.0.2. The affected element is an unknown function of the component Legacy Flask API. The manipulation leads to improper authorizatio",
+        "published": "2026-04-25T11:16:19.103"
       },
       {
-        "cve_id": "CVE-2026-41066",
+        "cve_id": "CVE-2026-6980",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "lxml is a library for processing XML and HTML in the Python language. Prior to 6.1.0, using either of the two parsers in the default configuration (with resolve_entities=True) allows untrusted XML inp",
-        "published": "2026-04-24T17:16:20.933"
+        "base_score": 7.3,
+        "description": "A vulnerability has been found in Divyanshu-hash GitPilot-MCP up to 9ed9f153ba4158a2ad230ee4871b25130da29ffd. This impacts the function repo_path of the file main.py. Such manipulation of the argument",
+        "published": "2026-04-25T14:16:00.120"
       },
       {
-        "cve_id": "CVE-2026-33524",
+        "cve_id": "CVE-2026-6987",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Zserio is a framework for serializing structured data with a compact and efficient way with low overhead. Prior to 2.18.1, a crafted payload as small as 4-5 bytes can force memory allocations of up to",
-        "published": "2026-04-24T19:17:09.850"
+        "base_score": 7.3,
+        "description": "A vulnerability was detected in PicoClaw up to 0.2.4. Impacted is an unknown function of the file /api/gateway/restart of the component Web Launcher Management Plane. Performing a manipulation results",
+        "published": "2026-04-25T17:16:33.870"
       },
       {
-        "cve_id": "CVE-2026-33662",
+        "cve_id": "CVE-2026-6992",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "OP-TEE is a Trusted Execution Environment (TEE) designed as companion to a non-secure Linux kernel running on Arm; Cortex-A cores using the TrustZone technology. From 3.8.0 to 4.10, in the function em",
-        "published": "2026-04-24T19:17:09.997"
+        "base_score": 7.2,
+        "description": "A vulnerability was identified in Linksys MR9600 2.0.6.206937. This affects the function BTRequestGetSmartConnectStatus of the file /etc/init.d/run_central2.sh of the component JNAP Action Handler. Th",
+        "published": "2026-04-25T18:16:19.413"
       },
       {
-        "cve_id": "CVE-2026-33666",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Zserio is a framework for serializing structured data with a compact and efficient way with low overhead. Prior to 2.18.1, in BitStreamReader.h readBytes() / readString(), the setBitPosition() bounds ",
-        "published": "2026-04-24T19:17:10.147"
+        "cve_id": "CVE-2026-41481",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "LangChain is a framework for building agents and LLM-powered applications. Prior to langchain-text-splitters\n 1.1.2, HTMLHeaderTextSplitter.split_text_from_url() validated the initial URL using valida",
+        "published": "2026-04-24T21:16:19.490"
+      },
+      {
+        "cve_id": "CVE-2026-6979",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A flaw has been found in devlikeapro WAHA up to 2026.3.4. This affects an unknown function of the file src/api/media.controller.ts of the component API Request Handler. This manipulation causes server",
+        "published": "2026-04-25T12:15:59.423"
+      },
+      {
+        "cve_id": "CVE-2026-6981",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A vulnerability was found in IhateCreatingUserNames2 AiraHub2 up to 3e4b77fd7d48ed811ffe5b8d222068c17c76495e. Affected is the function connect_stream_endpoint/sync_agents of the file AiraHub.py of the",
+        "published": "2026-04-25T15:16:17.643"
+      },
+      {
+        "cve_id": "CVE-2026-6982",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A vulnerability was determined in star7th ShowDoc up to 2.10.10/3.6.2/3.8.0. Affected by this vulnerability is an unknown functionality of the file server/Application/Api/Controller/PageController.cla",
+        "published": "2026-04-25T15:16:17.823"
+      },
+      {
+        "cve_id": "CVE-2026-6989",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A vulnerability has been found in Tenda F453 up to 1.0.0.3. Impacted is the function TendaTelnet of the file /goform/telnet of the component Telnet Service. Such manipulation leads to command injectio",
+        "published": "2026-04-25T18:16:18.907"
+      },
+      {
+        "cve_id": "CVE-2026-6991",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A vulnerability was determined in colinhacks Zod up to 4.3.6. The impacted element is an unknown function of the file packages/zod/src/v4/core/regexes.ts of the component CUID Data Type Handler. Execu",
+        "published": "2026-04-25T18:16:19.240"
+      },
+      {
+        "cve_id": "CVE-2026-6994",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A weakness has been identified in Envoy up to 1.33.0. Affected is the function params.add of the file source/extensions/filters/http/header_mutation/header_mutation.cc of the component Query Parameter",
+        "published": "2026-04-25T19:16:00.360"
+      },
+      {
+        "cve_id": "CVE-2026-6985",
+        "severity": "MEDIUM",
+        "base_score": 5.3,
+        "description": "A weakness has been identified in Cesanta Mongoose up to 7.20. This vulnerability affects the function handle_opt of the file /src/net_builtin.c of the component TCP Option Handler. This manipulation ",
+        "published": "2026-04-25T17:16:33.520"
+      },
+      {
+        "cve_id": "CVE-2026-6993",
+        "severity": "MEDIUM",
+        "base_score": 5.3,
+        "description": "A security flaw has been discovered in go-kratos kratos up to 2.9.2. This impacts the function NewServer of the file transport/http/server.go of the component http.DefaultServeMux Fallback Handler. Th",
+        "published": "2026-04-25T19:16:00.177"
+      },
+      {
+        "cve_id": "CVE-2026-6978",
+        "severity": "MEDIUM",
+        "base_score": 4.7,
+        "description": "A vulnerability was detected in JiZhiCMS up to 2.5.6. The impacted element is the function htmlspecialchars_decode of the file /index.php/admins/Sys/addcache.html. The manipulation of the argument sql",
+        "published": "2026-04-25T12:15:59.237"
+      },
+      {
+        "cve_id": "CVE-2026-6983",
+        "severity": "MEDIUM",
+        "base_score": 4.7,
+        "description": "A vulnerability was identified in pagekit up to 1.0.18. Affected by this issue is some unknown functionality of the file /index.php/admin/system/update/download. The manipulation of the argument url l",
+        "published": "2026-04-25T16:16:16.570"
       }
     ]
   },
