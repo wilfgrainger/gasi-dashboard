@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-25T01:27:38.649987+00:00",
+  "generated_at": "2026-04-25T05:43:35.578060+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 265,
+    "total": 242,
     "critical_count": 5,
-    "high_count": 15,
+    "high_count": 6,
     "cves": [
       {
         "cve_id": "CVE-2026-21515",
@@ -278,13 +278,6 @@
         "published": "2026-04-24T07:16:09.627"
       },
       {
-        "cve_id": "CVE-2026-33318",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Actual is a local-first personal finance tool. Prior to version 26.4.0, any authenticated user (including `BASIC` role) can escalate to `ADMIN` on servers migrated from password authentication to Open",
-        "published": "2026-04-24T03:16:11.203"
-      },
-      {
         "cve_id": "CVE-2026-40466",
         "severity": "HIGH",
         "base_score": 8.8,
@@ -299,39 +292,11 @@
         "published": "2026-04-24T11:16:22.790"
       },
       {
-        "cve_id": "CVE-2026-33317",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "OP-TEE is a Trusted Execution Environment (TEE) designed as companion to a non-secure Linux kernel running on Arm; Cortex-A cores using the TrustZone technology. In versions 3.13.0 through 4.10.0, mis",
-        "published": "2026-04-24T03:16:11.020"
-      },
-      {
         "cve_id": "CVE-2026-5367",
         "severity": "HIGH",
         "base_score": 8.6,
         "description": "A flaw was found in OVN (Open Virtual Network). A remote attacker, by sending crafted DHCPv6 (Dynamic Host Configuration Protocol for IPv6) SOLICIT packets with an inflated Client ID length, could cau",
         "published": "2026-04-24T13:16:21.990"
-      },
-      {
-        "cve_id": "CVE-2026-41309",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Open Source Social Network (OSSN) is open-source social networking software developed in PHP. Versions prior to 9.0 are vulnerable to resource exhaustion. An attacker can upload a specially crafted im",
-        "published": "2026-04-24T03:16:11.720"
-      },
-      {
-        "cve_id": "CVE-2026-41316",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "ERB is a templating system for Ruby. Ruby 2.7.0 (before ERB 2.2.0 was published on rubygems.org) introduced an `@_init` instance variable guard in `ERB#result` and `ERB#run` to prevent code execution ",
-        "published": "2026-04-24T03:16:11.897"
-      },
-      {
-        "cve_id": "CVE-2026-41323",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Kyverno is a policy engine designed for cloud native platform engineering teams. Prior to versions 1.18.0-rc1, 1.17.2-rc1, and 1.16.4, Kyverno's apiCall feature in ClusterPolicy automatically attaches",
-        "published": "2026-04-24T04:16:20.593"
       },
       {
         "cve_id": "CVE-2026-5364",
@@ -348,39 +313,74 @@
         "published": "2026-04-24T12:17:06.453"
       },
       {
-        "cve_id": "CVE-2026-41068",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Kyverno is a policy engine designed for cloud native platform engineering teams. The patch for CVE-2026-22039 fixed cross-namespace privilege escalation in Kyverno's `apiCall` context by validating th",
-        "published": "2026-04-24T04:16:19.950"
-      },
-      {
-        "cve_id": "CVE-2026-41485",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Kyverno is a policy engine designed for cloud native platform engineering teams. Prior to versions 1.17.2 and 1.16.4, an unchecked type assertion in the `forEach` mutation handler allows any user with",
-        "published": "2026-04-24T04:16:21.317"
-      },
-      {
-        "cve_id": "CVE-2026-41324",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "basic-ftp is an FTP client for Node.js. Versions prior to 5.3.0 are vulnerable to denial of service through unbounded memory growth while processing directory listings from a remote FTP server. A mali",
-        "published": "2026-04-24T04:16:20.767"
-      },
-      {
-        "cve_id": "CVE-2026-6947",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "DWM-222W USB Wi-Fi Adapter developed by D-Link has a Brute-Force Protection Bypass vulnerability, allowing unauthenticated adjacent network attackers to bypass login attempt limits to perform brute-fo",
-        "published": "2026-04-24T04:16:23.170"
-      },
-      {
         "cve_id": "CVE-2026-21728",
         "severity": "HIGH",
         "base_score": 7.5,
         "description": "Tempo queries with large limits can cause large memory allocations which can impact the availability of the service, depending on its deployment strategy.\n\nMitigation can be done by setting max_result",
         "published": "2026-04-24T09:16:03.710"
+      },
+      {
+        "cve_id": "CVE-2026-41043",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS) vulnerability in Apache ActiveMQ, Apache ActiveMQ Web.\n\nAn authenticated attacker can show malicious content when browsing",
+        "published": "2026-04-24T11:16:22.670"
+      },
+      {
+        "cve_id": "CVE-2026-5265",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "When generating an ICMP Destination Unreachable or Packet Too Big response, the handler copies a portion of the original packet into the ICMP error body using the IP header's self-declared total lengt",
+        "published": "2026-04-24T13:16:21.770"
+      },
+      {
+        "cve_id": "CVE-2026-5428",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "The Royal Elementor Addons plugin for WordPress is vulnerable to Stored Cross-Site Scripting via image captions in the Image Grid/Slider/Carousel widget in versions up to and including 1.7.1056. This ",
+        "published": "2026-04-24T06:16:08.643"
+      },
+      {
+        "cve_id": "CVE-2026-4078",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "The ITERAS plugin for WordPress is vulnerable to Stored Cross-Site Scripting via multiple shortcodes (iteras-ordering, iteras-signup, iteras-paywall-login, iteras-selfservice) in all versions up to an",
+        "published": "2026-04-24T08:16:30.373"
+      },
+      {
+        "cve_id": "CVE-2025-62233",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "Deserialization of Untrusted Data vulnerability in Apache DolphinScheduler RPC module.\n\nThis issue affects Apache DolphinScheduler:\u00a0\n\nVersion >= 3.2.0 and < 3.3.1.\n\nAttackers who can access the Master",
+        "published": "2026-04-24T11:16:21.780"
+      },
+      {
+        "cve_id": "CVE-2025-61872",
+        "severity": "MEDIUM",
+        "base_score": 6.1,
+        "description": "Mahara before 25.04.2 and 24.04.11 are vulnerable to displaying results that can trigger XSS via a malicious search query string. This occurs in the 'search site' feature when using the Elasticsearch7",
+        "published": "2026-04-24T15:16:25.320"
+      },
+      {
+        "cve_id": "CVE-2026-5347",
+        "severity": "MEDIUM",
+        "base_score": 5.3,
+        "description": "The HM Books Gallery plugin for WordPress is vulnerable to Missing Authorization in versions up to and including 4.8.0. This is due to the absence of capability checks and nonce verification in the ad",
+        "published": "2026-04-24T06:16:04.913"
+      },
+      {
+        "cve_id": "CVE-2026-6810",
+        "severity": "MEDIUM",
+        "base_score": 5.3,
+        "description": "The Booking Calendar Contact Form plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 1.2.63 via the dex_bccf_admin_int_calendar_list.inc.php f",
+        "published": "2026-04-24T06:16:08.790"
+      },
+      {
+        "cve_id": "CVE-2026-3569",
+        "severity": "MEDIUM",
+        "base_score": 5.3,
+        "description": "The Liaison Site Prober plugin for WordPress is vulnerable to Information Exposure in all versions up to and including 1.2.1 via the /wp-json/site-prober/v1/logs REST API endpoint. The permissions_rea",
+        "published": "2026-04-24T08:16:30.217"
       }
     ]
   },
