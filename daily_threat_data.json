@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-25T12:41:07.915387+00:00",
+  "generated_at": "2026-04-25T16:31:37.376808+00:00",
   "threat_score": {
-    "score": 5.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.5,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 8,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 238,
-    "critical_count": 1,
-    "high_count": 1,
+    "total": 88,
+    "critical_count": 8,
+    "high_count": 18,
     "cves": [
       {
-        "cve_id": "CVE-2026-21515",
+        "cve_id": "CVE-2026-41478",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "Exposure of sensitive information to an unauthorized actor in Azure IOT Central allows an authorized attacker to elevate privileges over a network.",
-        "published": "2026-04-24T13:16:03.610"
+        "description": "Saltcorn is an extensible, open source, no-code database application builder. Prior to 1.4.6, 1.5.6, and 1.6.0-beta.5, a SQL injection vulnerability in Saltcorn\u2019s mobile-sync routes allows any authent",
+        "published": "2026-04-24T21:16:19.353"
       },
       {
-        "cve_id": "CVE-2026-5367",
+        "cve_id": "CVE-2026-6911",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Missing JWT signature verification in AWS Ops Wheel allows unauthenticated attackers to forge JWT tokens and gain unintended administrative access to the application, including the ability to read, mo",
+        "published": "2026-04-24T17:16:22.220"
+      },
+      {
+        "cve_id": "CVE-2026-41492",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Dgraph is an open source distributed GraphQL database. Prior to 25.3.3, Dgraphl exposes the process command line through the unauthenticated /debug/vars endpoint on Alpha. Because the admin token is c",
+        "published": "2026-04-24T19:17:14.047"
+      },
+      {
+        "cve_id": "CVE-2026-6951",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Versions of the package simple-git before 3.36.0 are vulnerable to Remote Code Execution (RCE) due to an incomplete fix for [CVE-2022-25912](https://security.snyk.io/vuln/SNYK-JS-SIMPLEGIT-3112221) th",
+        "published": "2026-04-25T06:16:16.453"
+      },
+      {
+        "cve_id": "CVE-2026-41327",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Dgraph is an open source distributed GraphQL database. Prior to 25.3.3, a vulnerability has been found in Dgraph that gives an unauthenticated attacker full read access to every piece of data in the d",
+        "published": "2026-04-24T19:17:12.407"
+      },
+      {
+        "cve_id": "CVE-2026-41328",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Dgraph is an open source distributed GraphQL database. Prior to 25.3.3, a vulnerability has been found in Dgraph that gives an unauthenticated attacker full read access to every piece of data in the d",
+        "published": "2026-04-24T19:17:12.553"
+      },
+      {
+        "cve_id": "CVE-2026-41428",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Budibase is an open-source low-code platform. Prior to 3.35.4, the authenticated middleware uses unanchored regular expressions to match public (no-auth) endpoint patterns against ctx.request.url. Sin",
+        "published": "2026-04-24T20:16:27.523"
+      },
+      {
+        "cve_id": "CVE-2026-41248",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Clerk JavaScript is the official JavaScript repository for Clerk authentication. createRouteMatcher in @clerk/nextjs, @clerk/nuxt, and @clerk/astro can be bypassed by certain crafted requests, allowin",
+        "published": "2026-04-24T21:16:18.497"
+      },
+      {
+        "cve_id": "CVE-2026-40897",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "A flaw was found in OVN (Open Virtual Network). A remote attacker, by sending crafted DHCPv6 (Dynamic Host Configuration Protocol for IPv6) SOLICIT packets with an inflated Client ID length, could cau",
-        "published": "2026-04-24T13:16:21.990"
+        "base_score": 8.8,
+        "description": "Math.js is an extensive math library for JavaScript and Node.js. From 13.1.1 to before 15.2.0, a vulnerability allowed executing arbitrary JavaScript via the expression parser of mathjs. You can be af",
+        "published": "2026-04-24T17:16:20.783"
       },
       {
-        "cve_id": "CVE-2026-5265",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "When generating an ICMP Destination Unreachable or Packet Too Big response, the handler copies a portion of the original packet into the ICMP error body using the IP header's self-declared total lengt",
-        "published": "2026-04-24T13:16:21.770"
+        "cve_id": "CVE-2026-6912",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Improperly controlled modification of dynamically-determined object attributes in the Cognito User Pool configuration in AWS Ops Wheel before PR #165 allows remote authenticated users to escalate to d",
+        "published": "2026-04-24T17:16:22.377"
       },
       {
-        "cve_id": "CVE-2025-61872",
-        "severity": "MEDIUM",
-        "base_score": 6.1,
-        "description": "Mahara before 25.04.2 and 24.04.11 are vulnerable to displaying results that can trigger XSS via a malicious search query string. This occurs in the 'search site' feature when using the Elasticsearch7",
-        "published": "2026-04-24T15:16:25.320"
+        "cve_id": "CVE-2026-41421",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "SiYuan is an open-source personal knowledge management system. Prior to 3.6.5, SiYuan desktop renders notification messages as raw HTML inside an Electron renderer. The notification route POST /api/no",
+        "published": "2026-04-24T19:17:13.740"
       },
       {
-        "cve_id": "CVE-2026-31052",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "An issue in Hostbill v.2025-11-24 and 2025-12-01 allows a remote attacker to cause a denial of service via the Checkout Authentication Flow component",
-        "published": "2026-04-24T15:16:27.210"
+        "cve_id": "CVE-2026-41429",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "arduino-esp32 is an Arduino core for the ESP32, ESP32-S2, ESP32-S3, ESP32-C3, ESP32-C6 and ESP32-H2 microcontrollers. Prior to 3.3.8, there is a remotely reachable memory corruption issue in the NBNS ",
+        "published": "2026-04-24T20:16:27.663"
       },
       {
-        "cve_id": "CVE-2026-31050",
-        "severity": "MEDIUM",
-        "base_score": 4.9,
-        "description": "Cross Site Scripting vulnerability in Hostbill v.2025-11-24 and 2025-12-01 allows a remote attacker to execute arbitrary code",
-        "published": "2026-04-24T15:16:26.980"
+        "cve_id": "CVE-2026-41433",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "OpenTelemetry eBPF Instrumentation provides eBPF instrumentation based on the OpenTelemetry standard. From 0.4.0 to before 0.8.0, a flaw in the Java agent injection path allows a local attacker contro",
+        "published": "2026-04-24T20:16:27.803"
       },
       {
-        "cve_id": "CVE-2026-38743",
-        "severity": "MEDIUM",
-        "base_score": 4.3,
-        "description": "The authenticated /ui/dags\u00a0endpoint did not enforce per-DAG access control on embedded Human-in-the-Loop (HITL) and TaskInstance records: a logged-in Airflow user with read access to at least one DAG ",
-        "published": "2026-04-24T13:16:21.110"
+        "cve_id": "CVE-2026-41477",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Deskflow is a keyboard and mouse sharing app.  In 1.20.0, 1.26.0.134, and earlier, Deskflow daemon runs as SYSTEM and exposes an IPC named pipe with WorldAccessOption enabled. The daemon processes pri",
+        "published": "2026-04-24T20:16:28.340"
       },
       {
-        "cve_id": "CVE-2026-40690",
-        "severity": "MEDIUM",
-        "base_score": 4.3,
-        "description": "The asset dependency graph did not restrict nodes by the viewer's DAG read permissions: a user with read access to at least one DAG could browse the asset graph for any other asset in the deployment a",
-        "published": "2026-04-24T13:16:21.443"
+        "cve_id": "CVE-2026-42171",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "NSIS (Nullsoft Scriptable Install System) 3.06.1 before 3.12 sometimes uses the Low IL temp directory when executing as SYSTEM, allowing local attackers to gain privileges (if they can cause my_GetTem",
+        "published": "2026-04-24T22:16:01.540"
       },
       {
-        "cve_id": "CVE-2026-31051",
-        "severity": "LOW",
-        "base_score": 3.8,
-        "description": "An issue in Hostbill v.2025-11-24 and 2025-12-01 allows a remote attacker to cause a denial of service via the Client Balance component",
-        "published": "2026-04-24T15:16:27.097"
+        "cve_id": "CVE-2026-41419",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "4ga Boards is a boards system for realtime project management. Prior to 3.3.5, a path traversal vulnerability allows an authenticated user with board import privileges to make the server ingest arbitr",
+        "published": "2026-04-24T19:17:13.603"
       },
       {
-        "cve_id": "CVE-2026-25660",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "CodeChecker is an analyzer tooling, defect database and viewer extension for the Clang Static Analyzer and Clang Tidy. \nAuthentication bypass occurs when the URL ends with Authentication with certain ",
-        "published": "2026-04-24T14:16:18.127"
+        "cve_id": "CVE-2026-41066",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "lxml is a library for processing XML and HTML in the Python language. Prior to 6.1.0, using either of the two parsers in the default configuration (with resolve_entities=True) allows untrusted XML inp",
+        "published": "2026-04-24T17:16:20.933"
       },
       {
-        "cve_id": "CVE-2026-31534",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "Rejected reason: This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
-        "published": "2026-04-24T15:16:27.313"
+        "cve_id": "CVE-2026-33524",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Zserio is a framework for serializing structured data with a compact and efficient way with low overhead. Prior to 2.18.1, a crafted payload as small as 4-5 bytes can force memory allocations of up to",
+        "published": "2026-04-24T19:17:09.850"
       },
       {
-        "cve_id": "CVE-2026-31535",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: client: make use of smbdirect_socket.recv_io.credits.available\n\nThe logic off managing recv credits by counting posted recv_io",
-        "published": "2026-04-24T15:16:27.427"
+        "cve_id": "CVE-2026-33662",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "OP-TEE is a Trusted Execution Environment (TEE) designed as companion to a non-secure Linux kernel running on Arm; Cortex-A cores using the TrustZone technology. From 3.8.0 to 4.10, in the function em",
+        "published": "2026-04-24T19:17:09.997"
       },
       {
-        "cve_id": "CVE-2026-31536",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: server: let send_done handle a completion without IB_SEND_SIGNALED\n\nWith smbdirect_send_batch processing we likely have reques",
-        "published": "2026-04-24T15:16:27.530"
-      },
-      {
-        "cve_id": "CVE-2026-31537",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: server: make use of smbdirect_socket.send_io.bcredits\n\nIt turns out that our code will corrupt the stream of\nreassabled data t",
-        "published": "2026-04-24T15:16:27.633"
-      },
-      {
-        "cve_id": "CVE-2026-31538",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: server: make use of smbdirect_socket.recv_io.credits.available\n\nThe logic off managing recv credits by counting posted recv_io",
-        "published": "2026-04-24T15:16:27.740"
-      },
-      {
-        "cve_id": "CVE-2026-31539",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: smbdirect: introduce smbdirect_socket.recv_io.credits.available\n\nThe logic off managing recv credits by counting posted recv_i",
-        "published": "2026-04-24T15:16:27.843"
-      },
-      {
-        "cve_id": "CVE-2026-31540",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/i915/gt: Check set_default_submission() before deferencing\n\nWhen the i915 driver firmware binaries are not present, the\nset_def",
-        "published": "2026-04-24T15:16:27.957"
-      },
-      {
-        "cve_id": "CVE-2026-31541",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ntracing: Fix trace_marker copy link list updates\n\nWhen the \"copy_trace_marker\" option is enabled for an instance, anything\nwritten ",
-        "published": "2026-04-24T15:16:28.117"
-      },
-      {
-        "cve_id": "CVE-2026-31542",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nx86/platform/uv: Handle deconfigured sockets\n\nWhen a socket is deconfigured, it's mapped to SOCK_EMPTY (0xffff). This causes\na pani",
-        "published": "2026-04-24T15:16:28.237"
-      },
-      {
-        "cve_id": "CVE-2026-31543",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ncrash_dump: don't log dm-crypt key bytes in read_key_from_user_keying\n\nWhen debug logging is enabled, read_key_from_user_keying() l",
-        "published": "2026-04-24T15:16:28.350"
+        "cve_id": "CVE-2026-33666",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Zserio is a framework for serializing structured data with a compact and efficient way with low overhead. Prior to 2.18.1, in BitStreamReader.h readBytes() / readString(), the setBitPosition() bounds ",
+        "published": "2026-04-24T19:17:10.147"
       }
     ]
   },
