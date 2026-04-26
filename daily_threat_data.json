@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-26T08:50:03.233887+00:00",
+  "generated_at": "2026-04-26T12:43:13.675862+00:00",
   "threat_score": {
-    "score": 5.0,
+    "score": 5.5,
     "level": "ELEVATED",
     "level_color": "elevated",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 1.0,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -238,10 +238,17 @@
     ]
   },
   "nvd": {
-    "total": 56,
-    "critical_count": 0,
-    "high_count": 10,
+    "total": 52,
+    "critical_count": 1,
+    "high_count": 17,
     "cves": [
+      {
+        "cve_id": "CVE-2026-7037",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A security flaw has been discovered in Totolink A8000RU 7.1cu.643_b20200521. This issue affects the function setVpnPassCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. The manipulati",
+        "published": "2026-04-26T12:16:23.173"
+      },
       {
         "cve_id": "CVE-2026-6988",
         "severity": "HIGH",
@@ -257,11 +264,53 @@
         "published": "2026-04-26T05:16:01.330"
       },
       {
-        "cve_id": "CVE-2026-6977",
+        "cve_id": "CVE-2026-7029",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security vulnerability has been detected in vanna-ai vanna up to 2.0.2. The affected element is an unknown function of the component Legacy Flask API. The manipulation leads to improper authorizatio",
-        "published": "2026-04-25T11:16:19.103"
+        "base_score": 8.8,
+        "description": "A weakness has been identified in Tenda F456 1.0.0.5. The impacted element is the function fromaddressNat of the file /goform/addressNat. Executing a manipulation of the argument menufacturer/Go can l",
+        "published": "2026-04-26T09:16:19.290"
+      },
+      {
+        "cve_id": "CVE-2026-7030",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A security vulnerability has been detected in Tenda F456 1.0.0.5. This affects the function fromRouteStatic of the file /goform/RouteStatic. The manipulation of the argument page leads to buffer overf",
+        "published": "2026-04-26T10:16:01.247"
+      },
+      {
+        "cve_id": "CVE-2026-7031",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was detected in Tenda F456 1.0.0.5. This impacts the function fromSafeMacFilter of the file /goform/SafeMacFilter. The manipulation of the argument page results in buffer overflow. It ",
+        "published": "2026-04-26T10:16:02.687"
+      },
+      {
+        "cve_id": "CVE-2026-7032",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A flaw has been found in Tenda F456 1.0.0.5. Affected is the function SafeEmailFilter of the file /goform/SafeEmailFilter. This manipulation of the argument page causes buffer overflow. The attack can",
+        "published": "2026-04-26T11:16:06.307"
+      },
+      {
+        "cve_id": "CVE-2026-7033",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability has been found in Tenda F456 1.0.0.5. Affected by this vulnerability is the function fromSafeClientFilter of the file /goform/SafeClientFilter. Such manipulation of the argument menufa",
+        "published": "2026-04-26T11:16:06.493"
+      },
+      {
+        "cve_id": "CVE-2026-7034",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was found in Tenda FH1202 1.2.0.14(408). Affected by this issue is the function WrlExtraSet of the file /goform/WrlExtraSet of the component httpd. Performing a manipulation of the arg",
+        "published": "2026-04-26T12:16:21.570"
+      },
+      {
+        "cve_id": "CVE-2026-7035",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was determined in Tenda FH1202 1.2.0.14. This affects the function fromWrlclientSet of the file /goform/WrlclientSet of the component httpd. Executing a manipulation of the argument Go",
+        "published": "2026-04-26T12:16:22.797"
       },
       {
         "cve_id": "CVE-2026-6980",
@@ -299,6 +348,13 @@
         "published": "2026-04-26T08:16:00.227"
       },
       {
+        "cve_id": "CVE-2026-7036",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was identified in Tenda i9 1.0.0.5(2204). This vulnerability affects the function R7WebsSecurityHandlerfunction of the component HTTP Handler. The manipulation leads to path traversal.",
+        "published": "2026-04-26T12:16:22.987"
+      },
+      {
         "cve_id": "CVE-2026-6992",
         "severity": "HIGH",
         "base_score": 7.2,
@@ -313,13 +369,6 @@
         "published": "2026-04-26T04:16:05.787"
       },
       {
-        "cve_id": "CVE-2026-6979",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A flaw has been found in devlikeapro WAHA up to 2026.3.4. This affects an unknown function of the file src/api/media.controller.ts of the component API Request Handler. This manipulation causes server",
-        "published": "2026-04-25T12:15:59.423"
-      },
-      {
         "cve_id": "CVE-2026-6981",
         "severity": "MEDIUM",
         "base_score": 6.3,
@@ -332,55 +381,6 @@
         "base_score": 6.3,
         "description": "A vulnerability was determined in star7th ShowDoc up to 2.10.10/3.6.2/3.8.0. Affected by this vulnerability is an unknown functionality of the file server/Application/Api/Controller/PageController.cla",
         "published": "2026-04-25T15:16:17.823"
-      },
-      {
-        "cve_id": "CVE-2026-6989",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A vulnerability has been found in Tenda F453 up to 1.0.0.3. Impacted is the function TendaTelnet of the file /goform/telnet of the component Telnet Service. Such manipulation leads to command injectio",
-        "published": "2026-04-25T18:16:18.907"
-      },
-      {
-        "cve_id": "CVE-2026-6991",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A vulnerability was determined in colinhacks Zod up to 4.3.6. The impacted element is an unknown function of the file packages/zod/src/v4/core/regexes.ts of the component CUID Data Type Handler. Execu",
-        "published": "2026-04-25T18:16:19.240"
-      },
-      {
-        "cve_id": "CVE-2026-6994",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A weakness has been identified in Envoy up to 1.33.0. Affected is the function params.add of the file source/extensions/filters/http/header_mutation/header_mutation.cc of the component Query Parameter",
-        "published": "2026-04-25T19:16:00.360"
-      },
-      {
-        "cve_id": "CVE-2026-7023",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A vulnerability was detected in ByteDance coze-studio up to 0.5.1. Affected by this vulnerability is the function ExecuteSQL of the file backend/domain/memory/database/service/database_impl.go of the ",
-        "published": "2026-04-26T07:16:03.050"
-      },
-      {
-        "cve_id": "CVE-2026-7018",
-        "severity": "MEDIUM",
-        "base_score": 5.6,
-        "description": "A vulnerability was determined in Datavane Datavines up to 13607645e14a4982468cfdbcf75c85cde63bae71. The affected element is an unknown function of the file datavines-core/src/main/java/io/datavines/c",
-        "published": "2026-04-26T04:16:09.110"
-      },
-      {
-        "cve_id": "CVE-2026-7020",
-        "severity": "MEDIUM",
-        "base_score": 5.6,
-        "description": "A security flaw has been discovered in Ollama up to 0.20.2. This affects the function digestToPath of the file x/imagegen/transfer/transfer.go of the component Tensor Model Transfer Handler. The manip",
-        "published": "2026-04-26T05:16:02.023"
-      },
-      {
-        "cve_id": "CVE-2026-7024",
-        "severity": "MEDIUM",
-        "base_score": 5.4,
-        "description": "A flaw has been found in rawchen sims up to 004f783b1db5ecdfad81c8fdc3b34171211112de. Affected by this issue is some unknown functionality of the file sims-master/src/web/servlet/file/DeleteFileServle",
-        "published": "2026-04-26T07:16:03.390"
       }
     ]
   },
