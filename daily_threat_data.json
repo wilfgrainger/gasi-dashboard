@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-26T20:28:50.320931+00:00",
+  "generated_at": "2026-04-27T01:54:49.209420+00:00",
   "threat_score": {
-    "score": 5.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 2,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 38,
-    "critical_count": 1,
-    "high_count": 16,
+    "total": 87,
+    "critical_count": 2,
+    "high_count": 39,
     "cves": [
       {
         "cve_id": "CVE-2026-7037",
@@ -248,6 +248,13 @@
         "base_score": 9.8,
         "description": "A security flaw has been discovered in Totolink A8000RU 7.1cu.643_b20200521. This issue affects the function setVpnPassCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. The manipulati",
         "published": "2026-04-26T12:16:23.173"
+      },
+      {
+        "cve_id": "CVE-2026-42363",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "An insufficient encryption vulnerability exists in the Device Authentication functionality of GeoVision GV-IP Device Utility 9.0.5. Listening to broadcast packets can lead to credentials leak. An atta",
+        "published": "2026-04-27T00:16:20.357"
       },
       {
         "cve_id": "CVE-2026-7019",
@@ -306,81 +313,74 @@
         "published": "2026-04-26T12:16:22.797"
       },
       {
+        "cve_id": "CVE-2026-7053",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A security flaw has been discovered in Tenda F456 1.0.0.5. This affects the function frmL7ProtForm of the file /goform/L7Prot of the component httpd. Performing a manipulation of the argument page res",
+        "published": "2026-04-26T22:17:32.413"
+      },
+      {
+        "cve_id": "CVE-2026-7054",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A weakness has been identified in Tenda F456 1.0.0.5. This vulnerability affects the function fromPptpUserAdd of the file /goform/PPTPDClient of the component httpd. Executing a manipulation of the ar",
+        "published": "2026-04-26T22:17:32.580"
+      },
+      {
+        "cve_id": "CVE-2026-7055",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A security vulnerability has been detected in Tenda F456 1.0.0.5. This issue affects the function fromVirtualSer of the file /goform/VirtualSer of the component httpd. The manipulation of the argument",
+        "published": "2026-04-26T22:17:32.750"
+      },
+      {
+        "cve_id": "CVE-2026-7056",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was detected in Tenda F456 1.0.0.5. Impacted is the function fromSafeUrlFilter of the file /goform/SafeUrlFilter of the component httpd. The manipulation of the argument page results i",
+        "published": "2026-04-26T22:17:32.917"
+      },
+      {
+        "cve_id": "CVE-2026-7057",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A flaw has been found in Tenda F456 1.0.0.5. The affected element is an unknown function of the file /goform/setcfm of the component httpd. This manipulation of the argument funcname/funcpara1 causes ",
+        "published": "2026-04-26T22:17:33.083"
+      },
+      {
+        "cve_id": "CVE-2026-33277",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "An OS command Injection issue exists in LogonTracer prior to v2.0.0. An arbitrary OS command may be executed by a logged-in user.",
+        "published": "2026-04-27T00:16:19.483"
+      },
+      {
+        "cve_id": "CVE-2026-7068",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was identified in D-Link DIR-825 3.00b32. This affects the function NMBD_process of the file sserver.c of the component nmbd. Such manipulation leads to buffer overflow. The attack can",
+        "published": "2026-04-27T00:16:21.050"
+      },
+      {
+        "cve_id": "CVE-2018-25263",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "Faleemi Desktop Software 1.8.2 contains a local buffer overflow vulnerability in the Device alias field that allows local attackers to trigger a structured exception handler (SEH) overwrite. Attackers",
+        "published": "2026-04-26T22:17:26.863"
+      },
+      {
+        "cve_id": "CVE-2018-25283",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "iSmartViewPro 1.5 contains a structured exception handling (SEH) buffer overflow vulnerability in the 'Save Path for Snapshot and Record file' field that allows local attackers to execute arbitrary co",
+        "published": "2026-04-26T22:17:29.150"
+      },
+      {
         "cve_id": "CVE-2026-6785",
         "severity": "HIGH",
         "base_score": 8.1,
         "description": "Memory safety bugs present in Firefox ESR 115.34, Firefox ESR 140.9, Thunderbird ESR 140.9, Firefox 149 and Thunderbird 149. Some of these bugs showed evidence of memory corruption and we presume that",
         "published": "2026-04-26T19:53:39.010"
-      },
-      {
-        "cve_id": "CVE-2026-6786",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Memory safety bugs present in Firefox ESR 140.9, Thunderbird ESR 140.9, Firefox 149 and Thunderbird 149. Some of these bugs showed evidence of memory corruption and we presume that with enough effort ",
-        "published": "2026-04-26T19:53:39.640"
-      },
-      {
-        "cve_id": "CVE-2026-7039",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A security vulnerability has been detected in tufantunc ssh-mcp up to 1.5.0. The affected element is the function shell.write of the file src/index.ts. Such manipulation of the argument Description le",
-        "published": "2026-04-26T13:16:00.727"
-      },
-      {
-        "cve_id": "CVE-2026-7002",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was determined in KLiK SocialMediaWebsite up to 1.0.1. This vulnerability affects unknown code of the file /includes/get_message_ajax.php of the component Private Message Handler. Exec",
-        "published": "2026-04-25T22:16:19.833"
-      },
-      {
-        "cve_id": "CVE-2026-7022",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security vulnerability has been detected in SmythOS sre up to 0.0.15. Affected is the function AgentRuntime of the file packages/core/src/subsystems/AgentManager/AgentRuntime.class.ts of the compone",
-        "published": "2026-04-26T06:16:02.210"
-      },
-      {
-        "cve_id": "CVE-2026-7025",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was found in Typecho up to 1.3.0. This vulnerability affects the function Service::sendPingHandle of the file var/Widget/Service.php of the component Ping Back Service Endpoint. The ma",
-        "published": "2026-04-26T08:16:00.227"
-      },
-      {
-        "cve_id": "CVE-2026-7036",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was identified in Tenda i9 1.0.0.5(2204). This vulnerability affects the function R7WebsSecurityHandlerfunction of the component HTTP Handler. The manipulation leads to path traversal.",
-        "published": "2026-04-26T12:16:22.987"
-      },
-      {
-        "cve_id": "CVE-2026-42255",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "Technitium DNS Server before 15.0 allows DNS traffic amplification via cyclic name server delegation.",
-        "published": "2026-04-26T04:16:05.787"
-      },
-      {
-        "cve_id": "CVE-2026-7023",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A vulnerability was detected in ByteDance coze-studio up to 0.5.1. Affected by this vulnerability is the function ExecuteSQL of the file backend/domain/memory/database/service/database_impl.go of the ",
-        "published": "2026-04-26T07:16:03.050"
-      },
-      {
-        "cve_id": "CVE-2026-7018",
-        "severity": "MEDIUM",
-        "base_score": 5.6,
-        "description": "A vulnerability was determined in Datavane Datavines up to 13607645e14a4982468cfdbcf75c85cde63bae71. The affected element is an unknown function of the file datavines-core/src/main/java/io/datavines/c",
-        "published": "2026-04-26T04:16:09.110"
-      },
-      {
-        "cve_id": "CVE-2026-7020",
-        "severity": "MEDIUM",
-        "base_score": 5.6,
-        "description": "A security flaw has been discovered in Ollama up to 0.20.2. This affects the function digestToPath of the file x/imagegen/transfer/transfer.go of the component Tensor Model Transfer Handler. The manip",
-        "published": "2026-04-26T05:16:02.023"
       }
     ]
   },
