@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-27T13:18:56.036582+00:00",
+  "generated_at": "2026-04-27T17:14:52.229030+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
+        "value": 4,
         "score": 2.0,
         "max": 3
       },
@@ -238,10 +238,24 @@
     ]
   },
   "nvd": {
-    "total": 134,
-    "critical_count": 2,
-    "high_count": 47,
+    "total": 166,
+    "critical_count": 4,
+    "high_count": 49,
     "cves": [
+      {
+        "cve_id": "CVE-2026-40453",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "The fix for CVE-2025-27636 added setLowerCase(true) to HttpHeaderFilterStrategy so that case-variant header names such as 'CAmelExecCommandExecutable' are filtered out alongside 'CamelExecCommandExecu",
+        "published": "2026-04-27T09:16:01.493"
+      },
+      {
+        "cve_id": "CVE-2026-40860",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "JmsBinding.extractBodyFromJms() in camel-jms, and the equivalent JmsBinding class in camel-sjms, deserialized the payload of incoming JMS ObjectMessage values via javax.jms.ObjectMessage.getObject() w",
+        "published": "2026-04-27T09:16:01.770"
+      },
       {
         "cve_id": "CVE-2026-41635",
         "severity": "CRITICAL",
@@ -362,25 +376,11 @@
         "published": "2026-04-27T08:16:02.697"
       },
       {
-        "cve_id": "CVE-2026-7098",
+        "cve_id": "CVE-2026-40473",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A security vulnerability has been detected in Tenda F456 1.0.0.5. Impacted is the function fromDhcpListClient of the file /goform/DhcpListClient of the component httpd. Such manipulation of the argume",
-        "published": "2026-04-27T09:16:02.213"
-      },
-      {
-        "cve_id": "CVE-2026-7099",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was detected in Tenda F456 1.0.0.5. The affected element is the function formQuickIndex of the file /goform/QuickIndex of the component httpd. Performing a manipulation of the argument",
-        "published": "2026-04-27T09:16:02.380"
-      },
-      {
-        "cve_id": "CVE-2026-7100",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw has been found in Tenda F456 1.0.0.5. The impacted element is the function fromNatlimitof of the file /goform/Natlimit of the component httpd. Executing a manipulation can lead to buffer overfl",
-        "published": "2026-04-27T09:16:02.570"
+        "description": "The camel-mina component's MinaConverter.toObjectInput(IoBuffer) type converter wraps an IoBuffer in a java.io.ObjectInputStream without applying any ObjectInputFilter or class-loading restrictions. W",
+        "published": "2026-04-27T09:16:01.640"
       }
     ]
   },
