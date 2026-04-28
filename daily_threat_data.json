@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T13:29:33.524904+00:00",
+  "generated_at": "2026-04-28T17:30:18.287944+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -7,7 +7,7 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 29,
+        "value": 31,
         "score": 3.0,
         "max": 3
       },
@@ -32,9 +32,29 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1583,
-    "recent_30d_count": 29,
+    "total_catalog_count": 1585,
+    "recent_30d_count": 31,
     "recent": [
+      {
+        "cve_id": "CVE-2024-1708",
+        "vendor": "ConnectWise",
+        "product": "ScreenConnect",
+        "name": "ConnectWise ScreenConnect Path Traversal Vulnerability",
+        "date_added": "2026-04-28",
+        "due_date": "2026-05-12",
+        "description": "ConnectWise ScreenConnect contains a path traversal vulnerability which could allow an attacker to execute remote code or directly impact confidential data and critical systems.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-32202",
+        "vendor": "Microsoft",
+        "product": "Windows",
+        "name": "Microsoft Windows Protection Mechanism Failure Vulnerability",
+        "date_added": "2026-04-28",
+        "due_date": "2026-05-12",
+        "description": "Microsoft Windows Shell contains a protection mechanism failure vulnerability that allows an unauthorized attacker to perform spoofing over a network.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2025-29635",
         "vendor": "D-Link",
@@ -214,82 +234,27 @@
         "due_date": "2026-04-27",
         "description": "Microsoft Visual Basic for Applications (VBA) contains an insecure library loading vulnerability that could allow for remote code execution.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2025-60710",
-        "vendor": "Microsoft",
-        "product": "Windows",
-        "name": "Microsoft Windows Link Following Vulnerability",
-        "date_added": "2026-04-13",
-        "due_date": "2026-04-27",
-        "description": "Microsoft Windows contains a link following vulnerability that allows for privilege escalation",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2023-21529",
-        "vendor": "Microsoft",
-        "product": "Exchange Server",
-        "name": "Microsoft Exchange Server Deserialization of Untrusted Data Vulnerability",
-        "date_added": "2026-04-13",
-        "due_date": "2026-04-27",
-        "description": "Microsoft Exchange Server contains a deserialization of untrusted data that allows an authenticated attacker to achieve remote code execution.",
-        "ransomware_use": "Known"
       }
     ]
   },
   "nvd": {
-    "total": 196,
+    "total": 181,
     "critical_count": 13,
-    "high_count": 28,
+    "high_count": 40,
     "cves": [
       {
-        "cve_id": "CVE-2026-30352",
+        "cve_id": "CVE-2026-31255",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "A remote code execution (RCE) vulnerability in the /devserver/start endpoint of leonvanzyl autocoder commit 79d02a allows attackers to execute arbitrary code via providing a crafted command parameter.",
-        "published": "2026-04-27T16:16:43.597"
+        "description": "A command injection vulnerability exists in Tenda AC18 V15.03.05.05_multi. The vulnerability is located in the /goform/SetSambaCfg interface, where improper handling of the guestuser parameter allows ",
+        "published": "2026-04-27T19:16:47.060"
       },
       {
-        "cve_id": "CVE-2026-41462",
+        "cve_id": "CVE-2026-35903",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "ProjeQtor versions 7.0 through 12.4.3 contain an unauthenticated SQL injection vulnerability in the login functionality where the login variable is directly concatenated into a SQL query without param",
-        "published": "2026-04-27T16:16:45.340"
-      },
-      {
-        "cve_id": "CVE-2026-7136",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A weakness has been identified in Totolink A8000RU 7.1cu.643_b20200521. Affected by this issue is the function setDmzCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Executing a mani",
-        "published": "2026-04-27T16:16:46.930"
-      },
-      {
-        "cve_id": "CVE-2026-7137",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A security vulnerability has been detected in Totolink A8000RU 7.1cu.643_b20200521. This affects the function setStorageCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. The manipulat",
-        "published": "2026-04-27T16:16:47.110"
-      },
-      {
-        "cve_id": "CVE-2026-7138",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A vulnerability was detected in Totolink A8000RU 7.1cu.643_b20200521. This vulnerability affects the function setNtpCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. The manipulation ",
-        "published": "2026-04-27T16:16:47.283"
-      },
-      {
-        "cve_id": "CVE-2026-7139",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A flaw has been found in Totolink A8000RU 7.1cu.643_b20200521. This issue affects the function setWiFiAclRules of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. This manipulation of the a",
-        "published": "2026-04-27T17:16:45.293"
-      },
-      {
-        "cve_id": "CVE-2026-7140",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A vulnerability has been found in Totolink A8000RU 7.1cu.643_b20200521. Impacted is the function CsteSystem of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Such manipulation of the argu",
-        "published": "2026-04-27T17:16:45.467"
+        "description": "MERCURY MIPC252W IP camera 1.0.5 Build 230306 Rel.79931n contains an improper authentication vulnerability in the RTSP service. After successful Digest authentication in an initial DESCRIBE request, t",
+        "published": "2026-04-27T19:16:52.817"
       },
       {
         "cve_id": "CVE-2026-7152",
@@ -327,25 +292,46 @@
         "published": "2026-04-27T21:16:44.000"
       },
       {
+        "cve_id": "CVE-2026-32644",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Specific firmware versions of Milesight AIOT cameras use SSL certificates with default private keys.",
+        "published": "2026-04-28T01:16:00.600"
+      },
+      {
+        "cve_id": "CVE-2026-7202",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A vulnerability has been found in Totolink A8000RU 7.1cu.643_b20200521. This affects the function setWiFiWpsStart of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. The manipulation of the",
+        "published": "2026-04-28T01:16:01.423"
+      },
+      {
+        "cve_id": "CVE-2026-7203",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A vulnerability was found in Totolink A8000RU 7.1cu.643_b20200521. This vulnerability affects the function setUrlFilterRules of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. The manipula",
+        "published": "2026-04-28T01:16:01.600"
+      },
+      {
+        "cve_id": "CVE-2026-7204",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A vulnerability was determined in Totolink A8000RU 7.1cu.643_b20200521. This issue affects the function setPptpServerCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. This manipulatio",
+        "published": "2026-04-28T01:16:01.780"
+      },
+      {
+        "cve_id": "CVE-2024-46636",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "NASA Earth Observing System Data and Information System (EOSDIS) MODAPS v8.1 was discovered to contain a SQL injection vulnerability in the category parameter",
+        "published": "2026-04-27T21:16:21.320"
+      },
+      {
         "cve_id": "CVE-2026-40976",
         "severity": "CRITICAL",
         "base_score": 9.1,
         "description": "In certain circumstances, Spring Boot's default web security is ineffective allowing unauthorized access to all endpoints. For an application to be vulnerable, it must: be a servlet-based web applicat",
         "published": "2026-04-28T00:16:24.803"
-      },
-      {
-        "cve_id": "CVE-2026-41463",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "ProjeQtor versions 7.0 through 12.4.3 contain a ZipSlip path traversal vulnerability in the plugin upload functionality that allows authenticated attackers with upload permissions to write files outsi",
-        "published": "2026-04-27T16:16:45.493"
-      },
-      {
-        "cve_id": "CVE-2026-38934",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Cross Site Request Forgery vulnerability in diskoverdata diskover-community v.2.3.5. and before allows a remote attacker to escalate privileges and obtain sensitive information via the public/settings",
-        "published": "2026-04-27T17:16:43.037"
       },
       {
         "cve_id": "CVE-2025-69689",
@@ -381,6 +367,20 @@
         "base_score": 8.8,
         "description": "Specific firmware versions of Milesight AIOT camera firmware contain hard-coded credentials.",
         "published": "2026-04-28T00:16:23.127"
+      },
+      {
+        "cve_id": "CVE-2026-20766",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "An out-of-bounds memory access vulnerability exists in specific firmware versions of Milesight AIOT cameras.",
+        "published": "2026-04-28T01:16:00.233"
+      },
+      {
+        "cve_id": "CVE-2026-41371",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "OpenClaw before 2026.3.28 contains a privilege escalation vulnerability in chat.send that allows write-scoped gateway callers to trigger admin-only session reset operations. Attackers can rotate targe",
+        "published": "2026-04-28T00:16:26.497"
       }
     ]
   },
