@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-28T06:24:23.272239+00:00",
+  "generated_at": "2026-04-28T10:06:37.868409+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 20,
+        "value": 17,
         "score": 3.0,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 200,
-    "critical_count": 20,
-    "high_count": 27,
+    "total": 205,
+    "critical_count": 17,
+    "high_count": 21,
     "cves": [
       {
         "cve_id": "CVE-2026-33453",
@@ -248,27 +248,6 @@
         "base_score": 10.0,
         "description": "Improperly Controlled Modification of Dynamically-Determined Object Attributes vulnerability in Apache Camel Camel-Coap component.\n\nApache Camel's camel-coap component is vulnerable to Camel message h",
         "published": "2026-04-27T11:16:01.873"
-      },
-      {
-        "cve_id": "CVE-2026-40453",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "The fix for CVE-2025-27636 added setLowerCase(true) to HttpHeaderFilterStrategy so that case-variant header names such as 'CAmelExecCommandExecutable' are filtered out alongside 'CamelExecCommandExecu",
-        "published": "2026-04-27T09:16:01.493"
-      },
-      {
-        "cve_id": "CVE-2026-40860",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "JmsBinding.extractBodyFromJms() in camel-jms, and the equivalent JmsBinding class in camel-sjms, deserialized the payload of incoming JMS ObjectMessage values via javax.jms.ObjectMessage.getObject() w",
-        "published": "2026-04-27T09:16:01.770"
-      },
-      {
-        "cve_id": "CVE-2026-41635",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Apache MINA's AbstractIoBuffer.resolveClass() contains two branches, one of them (for static classes or primitive types) does not check the class at all, bypassing the classname allowlist and allowing",
-        "published": "2026-04-27T09:16:01.893"
       },
       {
         "cve_id": "CVE-2026-41409",
@@ -381,6 +360,27 @@
         "base_score": 9.3,
         "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Directorist Booking allows SQL Injection.This issue affects Directorist Booking: from n/a before 3",
         "published": "2026-04-27T11:16:00.610"
+      },
+      {
+        "cve_id": "CVE-2026-40858",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The camel-infinispan component's ProtoStream-based remote aggregation repository deserializes data read from a remote Infinispan cache using java.io.ObjectInputStream without applying any ObjectInputF",
+        "published": "2026-04-27T10:16:09.627"
+      },
+      {
+        "cve_id": "CVE-2026-7119",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was detected in Tenda HG3 2.0. The impacted element is an unknown function of the file /boaform/formCountrystr. The manipulation of the argument countrystr results in os command inject",
+        "published": "2026-04-27T12:16:25.830"
+      },
+      {
+        "cve_id": "CVE-2026-41463",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "ProjeQtor versions 7.0 through 12.4.3 contain a ZipSlip path traversal vulnerability in the plugin upload functionality that allows authenticated attackers with upload permissions to write files outsi",
+        "published": "2026-04-27T16:16:45.493"
       }
     ]
   },
