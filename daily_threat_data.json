@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-29T06:17:26.994324+00:00",
+  "generated_at": "2026-04-29T09:57:31.068819+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 11,
-        "score": 3.0,
+        "value": 5,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,52 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 199,
-    "critical_count": 11,
-    "high_count": 33,
+    "total": 181,
+    "critical_count": 5,
+    "high_count": 38,
     "cves": [
-      {
-        "cve_id": "CVE-2026-7240",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A vulnerability has been found in Totolink A8000RU 7.1cu.643_b20200521. This vulnerability affects the function setVpnAccountCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Such man",
-        "published": "2026-04-28T08:16:02.990"
-      },
-      {
-        "cve_id": "CVE-2026-7241",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A vulnerability was found in Totolink A8000RU 7.1cu.643_b20200521. This issue affects the function setWiFiBasicCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Performing a manipulat",
-        "published": "2026-04-28T09:16:17.457"
-      },
-      {
-        "cve_id": "CVE-2026-7242",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A vulnerability was determined in Totolink A8000RU 7.1cu.643_b20200521. Impacted is the function setOpenVpnClientCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. Executing a manipula",
-        "published": "2026-04-28T09:16:17.627"
-      },
-      {
-        "cve_id": "CVE-2026-7243",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A vulnerability was identified in Totolink A8000RU 7.1cu.643_b20200521. The affected element is the function setRadvdCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. The manipulation",
-        "published": "2026-04-28T09:16:17.787"
-      },
-      {
-        "cve_id": "CVE-2026-7244",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A security flaw has been discovered in Totolink A8000RU 7.1cu.643_b20200521. The impacted element is the function setWiFiEasyGuestCfg of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. The",
-        "published": "2026-04-28T09:16:17.950"
-      },
-      {
-        "cve_id": "CVE-2026-7248",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A vulnerability was found in D-Link DI-8100 16.07.26A1. This affects the function tgfile_htm of the file tgfile.htm of the component CGI Endpoint. The manipulation of the argument fn results in buffer",
-        "published": "2026-04-28T09:16:18.280"
-      },
       {
         "cve_id": "CVE-2026-41873",
         "severity": "CRITICAL",
@@ -320,13 +278,6 @@
         "published": "2026-04-28T19:37:41.770"
       },
       {
-        "cve_id": "CVE-2026-40978",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "SQL injection vulnerability in Spring AI's `CosmosDBVectorStore` allows attackers to execute arbitrary SQL queries via crafted document IDs.\n\nAffected versions:\nSpring AI: 1.0.0 - 1.0.5 (fixed in 1.0.",
-        "published": "2026-04-28T09:16:16.583"
-      },
-      {
         "cve_id": "CVE-2026-7288",
         "severity": "HIGH",
         "base_score": 8.8,
@@ -355,11 +306,18 @@
         "published": "2026-04-28T19:37:40.687"
       },
       {
-        "cve_id": "CVE-2026-40967",
+        "cve_id": "CVE-2026-41404",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "In Spring AI, various FilterExpressionConverter implementations accept a filter expression object and translate them to specific vector store query languages. In several cases, keys and values are not",
-        "published": "2026-04-28T07:16:03.360"
+        "base_score": 8.8,
+        "description": "OpenClaw before 2026.3.31 contains an incomplete scope-clearing vulnerability in trusted-proxy authentication mode that allows operator.admin privilege escalation. Attackers can exploit this by declar",
+        "published": "2026-04-28T19:37:43.957"
+      },
+      {
+        "cve_id": "CVE-2026-42422",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "OpenClaw before 2026.4.8 contains a role bypass vulnerability in the device.token.rotate function that allows minting tokens for unapproved roles. Attackers can bypass device role-upgrade pairing to p",
+        "published": "2026-04-28T19:37:45.950"
       },
       {
         "cve_id": "CVE-2026-24222",
@@ -367,6 +325,13 @@
         "base_score": 8.6,
         "description": "NVIDIA NeMoClaw contains a vulnerability in the sandbox environment initialization component, where a remote attacker could cause improper access control by sending prompt-injected content that causes",
         "published": "2026-04-28T19:36:45.517"
+      },
+      {
+        "cve_id": "CVE-2026-41914",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "OpenClaw before 2026.4.8 contains a server-side request forgery vulnerability in QQ Bot media download paths that bypass SSRF protection. Attackers can exploit unprotected media fetch endpoints to acc",
+        "published": "2026-04-28T19:37:45.243"
       },
       {
         "cve_id": "CVE-2026-41604",
@@ -381,6 +346,41 @@
         "base_score": 8.2,
         "description": "An improper access control vulnerability exists in the Cisco Intersight Device Connector for Nutanix Prism Central. The service exposes an API passthrough endpoint on TCP port 7373 that is accessible ",
         "published": "2026-04-28T14:16:13.853"
+      },
+      {
+        "cve_id": "CVE-2026-38651",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Authentication Bypass vulnerability exists in Netmaker versions prior to 1.5.0. The VerifyHostToken function in logic/jwts.go fails to validate the JWT signature when verifying host tokens. An attacke",
+        "published": "2026-04-28T16:16:13.443"
+      },
+      {
+        "cve_id": "CVE-2026-41394",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "OpenClaw before 2026.3.31 contains an authentication bypass vulnerability where unauthenticated plugin-auth HTTP routes receive operator runtime write scopes. Attackers can access these routes without",
+        "published": "2026-04-28T19:37:42.737"
+      },
+      {
+        "cve_id": "CVE-2026-27760",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "OpenCATS prior to commit 3002a29 contains a PHP code injection vulnerability in the installer AJAX endpoint that allows unauthenticated attackers to execute arbitrary code by injecting PHP statements ",
+        "published": "2026-04-28T15:16:26.800"
+      },
+      {
+        "cve_id": "CVE-2026-41383",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "OpenClaw before 2026.4.2 contains an arbitrary directory deletion vulnerability in mirror mode that allows attackers to delete remote directories by influencing remoteWorkspaceDir and remoteAgentWorks",
+        "published": "2026-04-28T19:37:41.360"
+      },
+      {
+        "cve_id": "CVE-2026-7279",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "AVACAST developed by eMPIA Technology, has a DLL Hijacking vulnerability, allowing authenticated local attackers to place a malicious DLL in a specific directory, resulting in arbitrary code execution",
+        "published": "2026-04-28T10:16:04.110"
       }
     ]
   },
