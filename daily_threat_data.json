@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-29T09:57:31.068819+00:00",
+  "generated_at": "2026-04-29T13:24:12.473924+00:00",
   "threat_score": {
-    "score": 6.5,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 4.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
-        "score": 2.5,
+        "value": 0,
+        "score": 0.5,
         "max": 3
       },
       {
@@ -238,151 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 181,
-    "critical_count": 5,
-    "high_count": 38,
-    "cves": [
-      {
-        "cve_id": "CVE-2026-41873",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "** UNSUPPORTED WHEN ASSIGNED ** Inconsistent Interpretation of HTTP Requests ('HTTP Request/Response Smuggling') vulnerability in Pony Mail leading to admin account takeover.\n\nThis issue affects all v",
-        "published": "2026-04-28T16:16:13.670"
-      },
-      {
-        "cve_id": "CVE-2026-24178",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "NVIDIA NVFlare Dashboard contains a vulnerability in the user management and authentication system where an unauthenticated attacker may cause authorization bypass through user-controlled key. A succe",
-        "published": "2026-04-28T19:36:45.127"
-      },
-      {
-        "cve_id": "CVE-2026-7321",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Sandbox escape due to incorrect boundary conditions in the WebRTC: Networking component. This vulnerability was fixed in Firefox 150, Thunderbird 150, and Firefox ESR 140.10.1.",
-        "published": "2026-04-28T15:16:37.550"
-      },
-      {
-        "cve_id": "CVE-2026-3893",
-        "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "The Carlson VASCO-B GNSS Receiver lacks an authentication mechanism, \nallowing an attacker with network access to directly access and modify \nits configuration and operational functions without needin",
-        "published": "2026-04-28T19:37:39.647"
-      },
-      {
-        "cve_id": "CVE-2026-41386",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "OpenClaw before 2026.3.22 contains a privilege escalation vulnerability where bootstrap setup codes are not bound to intended device roles and scopes during pairing. Attackers can exploit this during ",
-        "published": "2026-04-28T19:37:41.770"
-      },
-      {
-        "cve_id": "CVE-2026-7288",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability has been found in D-Link DIR-825M 1.1.12. This vulnerability affects the function sub_4151FC of the file /boafrm/formVpnConfigSetup. The manipulation of the argument submit-url leads t",
-        "published": "2026-04-28T15:16:37.037"
-      },
-      {
-        "cve_id": "CVE-2026-7289",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was found in D-Link DIR-825M 1.1.12. This issue affects the function sub_414BA8 of the file /boafrm/formWanConfigSetup. The manipulation of the argument submit-url results in buffer ov",
-        "published": "2026-04-28T15:16:37.210"
-      },
-      {
-        "cve_id": "CVE-2026-24186",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "NVIDIA FLARE SDK  contains a vulnerability in FOBS, where an attacker may cause deserialization of untrusted data by sending a malicious FOBS- encoded message. A successful exploit of this vulnerabili",
-        "published": "2026-04-28T19:36:45.277"
-      },
-      {
-        "cve_id": "CVE-2026-41378",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenClaw before 2026.3.31 contains a privilege escalation vulnerability allowing paired nodes with role=node to dispatch node.event agent requests with unrestricted gateway-side tool access. Attackers",
-        "published": "2026-04-28T19:37:40.687"
-      },
-      {
-        "cve_id": "CVE-2026-41404",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenClaw before 2026.3.31 contains an incomplete scope-clearing vulnerability in trusted-proxy authentication mode that allows operator.admin privilege escalation. Attackers can exploit this by declar",
-        "published": "2026-04-28T19:37:43.957"
-      },
-      {
-        "cve_id": "CVE-2026-42422",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenClaw before 2026.4.8 contains a role bypass vulnerability in the device.token.rotate function that allows minting tokens for unapproved roles. Attackers can bypass device role-upgrade pairing to p",
-        "published": "2026-04-28T19:37:45.950"
-      },
-      {
-        "cve_id": "CVE-2026-24222",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "NVIDIA NeMoClaw contains a vulnerability in the sandbox environment initialization component, where a remote attacker could cause improper access control by sending prompt-injected content that causes",
-        "published": "2026-04-28T19:36:45.517"
-      },
-      {
-        "cve_id": "CVE-2026-41914",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "OpenClaw before 2026.4.8 contains a server-side request forgery vulnerability in QQ Bot media download paths that bypass SSRF protection. Attackers can exploit unprotected media fetch endpoints to acc",
-        "published": "2026-04-28T19:37:45.243"
-      },
-      {
-        "cve_id": "CVE-2026-41604",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Out-of-bounds Read vulnerability in Apache Thrift.\n\nThis issue affects Apache Thrift: before 0.23.0.\n\nUsers are recommended to upgrade to version 0.23.0, which fixes the issue.",
-        "published": "2026-04-28T10:16:03.230"
-      },
-      {
-        "cve_id": "CVE-2026-5944",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "An improper access control vulnerability exists in the Cisco Intersight Device Connector for Nutanix Prism Central. The service exposes an API passthrough endpoint on TCP port 7373 that is accessible ",
-        "published": "2026-04-28T14:16:13.853"
-      },
-      {
-        "cve_id": "CVE-2026-38651",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Authentication Bypass vulnerability exists in Netmaker versions prior to 1.5.0. The VerifyHostToken function in logic/jwts.go fails to validate the JWT signature when verifying host tokens. An attacke",
-        "published": "2026-04-28T16:16:13.443"
-      },
-      {
-        "cve_id": "CVE-2026-41394",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "OpenClaw before 2026.3.31 contains an authentication bypass vulnerability where unauthenticated plugin-auth HTTP routes receive operator runtime write scopes. Attackers can access these routes without",
-        "published": "2026-04-28T19:37:42.737"
-      },
-      {
-        "cve_id": "CVE-2026-27760",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "OpenCATS prior to commit 3002a29 contains a PHP code injection vulnerability in the installer AJAX endpoint that allows unauthenticated attackers to execute arbitrary code by injecting PHP statements ",
-        "published": "2026-04-28T15:16:26.800"
-      },
-      {
-        "cve_id": "CVE-2026-41383",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "OpenClaw before 2026.4.2 contains an arbitrary directory deletion vulnerability in mirror mode that allows attackers to delete remote directories by influencing remoteWorkspaceDir and remoteAgentWorks",
-        "published": "2026-04-28T19:37:41.360"
-      },
-      {
-        "cve_id": "CVE-2026-7279",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "AVACAST developed by eMPIA Technology, has a DLL Hijacking vulnerability, allowing authenticated local attackers to place a malicious DLL in a specific directory, resulting in arbitrary code execution",
-        "published": "2026-04-28T10:16:04.110"
-      }
-    ]
+    "total": 0,
+    "critical_count": 0,
+    "high_count": 0,
+    "cves": []
   },
   "top_ips": {
     "ips": [],
