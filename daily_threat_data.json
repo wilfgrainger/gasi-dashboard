@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-04-30T17:09:07.108550+00:00",
+  "generated_at": "2026-04-30T20:51:06.959483+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
-        "score": 2.5,
+        "value": 2,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,31 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 165,
-    "critical_count": 5,
-    "high_count": 33,
+    "total": 144,
+    "critical_count": 2,
+    "high_count": 30,
     "cves": [
-      {
-        "cve_id": "CVE-2018-25316",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Tenda W308R v2 V5.07.48 contains a cookie session weakness vulnerability that allows unauthenticated attackers to modify DNS settings by exploiting insufficient session validation. Attackers can send ",
-        "published": "2026-04-29T20:16:27.503"
-      },
-      {
-        "cve_id": "CVE-2018-25317",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Tenda W3002R/A302/W309R wireless routers version V5.07.64_en contain a cookie session weakness vulnerability that allows unauthenticated attackers to modify DNS settings by exploiting insufficient ses",
-        "published": "2026-04-29T20:16:27.663"
-      },
-      {
-        "cve_id": "CVE-2018-25318",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Tenda FH303/A300 firmware V5.07.68_EN contains a session weakness vulnerability that allows unauthenticated attackers to modify DNS settings by exploiting insufficient cookie validation. Attackers can",
-        "published": "2026-04-29T20:16:27.800"
-      },
       {
         "cve_id": "CVE-2026-7381",
         "severity": "CRITICAL",
@@ -271,32 +250,11 @@
         "published": "2026-04-29T23:16:19.897"
       },
       {
-        "cve_id": "CVE-2026-30893",
+        "cve_id": "CVE-2026-35547",
         "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "Wazuh is a free and open source platform used for threat prevention, detection, and response. From version 4.4.0 to before version 4.14.4, a path traversal vulnerability in Wazuh's cluster synchroniza",
-        "published": "2026-04-29T19:16:23.200"
-      },
-      {
-        "cve_id": "CVE-2026-7466",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "AgentFlow contains an arbitrary code execution vulnerability that allows attackers to execute local Python pipeline files by supplying a user-controlled pipeline_path parameter to the POST /api/runs a",
-        "published": "2026-04-29T19:16:27.013"
-      },
-      {
-        "cve_id": "CVE-2018-25308",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "BuddyPress Xprofile Custom Fields Type 2.6.3 contains a remote code execution vulnerability that allows authenticated users to delete arbitrary files by manipulating unescaped POST parameters. Attacke",
-        "published": "2026-04-29T20:16:26.323"
-      },
-      {
-        "cve_id": "CVE-2026-34965",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Cockpit CMS contains an authenticated remote code execution vulnerability in the /cockpit/collections/save_collection endpoint that allows authenticated attackers with collection management privileges",
-        "published": "2026-04-29T20:16:29.923"
+        "base_score": 9.1,
+        "description": "When processing the header of an incoming message, libnv failed to properly validate the message size.\n\nThe lack of validation allows a malicious program to write outside the bounds of a heap allocati",
+        "published": "2026-04-30T09:16:03.167"
       },
       {
         "cve_id": "CVE-2026-7418",
@@ -334,53 +292,95 @@
         "published": "2026-04-30T07:16:37.847"
       },
       {
-        "cve_id": "CVE-2018-25299",
+        "cve_id": "CVE-2026-36956",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Prime95 29.4b8 contains a local buffer overflow vulnerability that allows attackers to execute arbitrary code by exploiting structured exception handling (SEH) mechanisms. Attackers can inject malicio",
-        "published": "2026-04-29T20:16:25.007"
+        "base_score": 8.8,
+        "description": "A Cross-Site Request Forgery (CSRF) vulnerability exists in the web management interface of the Dbit N300 T1 Pro wireless router V1.0.0. The router fails to implement proper CSRF protection mechanisms",
+        "published": "2026-04-30T15:16:22.740"
       },
       {
-        "cve_id": "CVE-2018-25301",
+        "cve_id": "CVE-2026-7399",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Easy MPEG to DVD Burner 1.7.11 contains a structured exception handling (SEH) local buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying a malicious usernam",
-        "published": "2026-04-29T20:16:25.320"
+        "base_score": 8.1,
+        "description": "Authorization bypass through User-Controlled key vulnerability in MeWare Software Development Inc. PDKS allows Privilege Abuse.\n\nThis issue affects PDKS: from V16.20200313 before VMYR_3.5.2025117.",
+        "published": "2026-04-30T13:16:06.480"
       },
       {
-        "cve_id": "CVE-2018-25303",
+        "cve_id": "CVE-2026-7402",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Allok Video to DVD Burner 2.6.1217 contains a stack-based buffer overflow vulnerability in the License Name field that allows local attackers to execute arbitrary code by triggering a structured excep",
-        "published": "2026-04-29T20:16:25.620"
+        "base_score": 8.1,
+        "description": "Improper Control of Interaction Frequency vulnerability in MeWare Software Development Inc. PDKS allows Flooding.\n\nThis issue affects PDKS: from V16.20200313 before VMYR_3.5.2025117.",
+        "published": "2026-04-30T13:16:06.597"
       },
       {
-        "cve_id": "CVE-2018-25304",
+        "cve_id": "CVE-2026-7270",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Free Download Manager 2.0 Built 417 contains a local buffer overflow vulnerability in the URL import functionality that allows attackers to trigger a structured exception handler (SEH) chain exploitat",
-        "published": "2026-04-29T20:16:25.760"
+        "base_score": 7.8,
+        "description": "An operator precedence bug in the kernel results in a scenario where a buffer overflow causes attacker-controlled data to overwrite adjacent execve(2) argument buffers.\n\nThe bug may be exploitable by ",
+        "published": "2026-04-30T07:16:41.710"
       },
       {
-        "cve_id": "CVE-2018-25307",
+        "cve_id": "CVE-2026-39457",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "SysGauge Pro 4.6.12 contains a local buffer overflow vulnerability in the Register function that allows local attackers to overwrite the structured exception handler by supplying a crafted unlock key.",
-        "published": "2026-04-29T20:16:26.183"
+        "base_score": 7.8,
+        "description": "When exchanging data over a socket, libnv uses select(2) to wait for data to arrive.  However, it does not verify whether the provided socket descriptor fits in select(2)'s file descriptor set size li",
+        "published": "2026-04-30T09:16:03.270"
       },
       {
-        "cve_id": "CVE-2018-25314",
+        "cve_id": "CVE-2026-7164",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Allok soft WMV to AVI MPEG DVD WMV Converter 4.6.1217 contains a buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying an oversized string in the License Nam",
-        "published": "2026-04-29T20:16:27.193"
+        "base_score": 7.5,
+        "description": "Incorrect packet validation allowed unbounded recursion parsing SCTP chunk parameters.  This can eventually result in a stack overflow and panic.\n\nRemote attackers can craft packets which cause affect",
+        "published": "2026-04-30T08:16:07.653"
       },
       {
-        "cve_id": "CVE-2018-25315",
+        "cve_id": "CVE-2026-2892",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Alloksoft Video joiner 4.6.1217 contains a buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying a malicious string in the License Name field. Attackers can ",
-        "published": "2026-04-29T20:16:27.363"
+        "base_score": 7.5,
+        "description": "The Otter Blocks plugin for WordPress is vulnerable to Purchase Verification Bypass in all versions up to, and including, 3.1.4. This is due to the 'get_customer_data' method relying on an unsigned 'o",
+        "published": "2026-04-30T14:16:29.760"
+      },
+      {
+        "cve_id": "CVE-2026-36957",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Dbit N300 T1 Pro Easy Setup Wireless Wi-Fi Router V1.0.0 is vulnerable to Denial of Service via the boa web server URI handler. By initiating a high-volume flood of HTTP GET requests to non-existent U",
+        "published": "2026-04-30T15:16:22.857"
+      },
+      {
+        "cve_id": "CVE-2026-36958",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A denial-of-service vulnerability exists in the U-SPEED N300 V1.0.0 wireless router. By sending a large number of concurrent HTTP requests to random or non-existent endpoints on the web management int",
+        "published": "2026-04-30T15:16:22.963"
+      },
+      {
+        "cve_id": "CVE-2026-36959",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "U-SPEED N300 router V1.0.0 does not implement rate limiting or account lockout protections on the /api/login endpoint. This allows an attacker on the local network to perform unlimited authentication ",
+        "published": "2026-04-30T15:16:23.077"
+      },
+      {
+        "cve_id": "CVE-2026-42799",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "Out-of-bounds read vulnerability in ASR Kestrel (nr_fw modules) allows Overflow Buffers.\n\n This vulnerability is associated with program files Code/Nr/nr_fw/RA/src/NrPwrCtrl.C.\n\n\n\nThis issue affects K",
+        "published": "2026-04-30T09:16:03.473"
+      },
+      {
+        "cve_id": "CVE-2026-42800",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "NULL pointer dereference vulnerability in ASR1903 in ASR Lapwing_Linux on Linux (ims_client modules) allows Pointer Manipulation.\n\n This vulnerability is associated with program files sip/utils/src/si",
+        "published": "2026-04-30T10:16:02.203"
+      },
+      {
+        "cve_id": "CVE-2026-41882",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "In JetBrains IntelliJ IDEA before 2024.3.7.1, \n2025.1.7.1,\n2025.2.6.2,  \n2025.3.4.1, \n2026.1.1 reading arbitrary local files was possible via built-in web server",
+        "published": "2026-04-30T12:16:24.207"
       }
     ]
   },
