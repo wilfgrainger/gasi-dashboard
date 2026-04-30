@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-30T13:21:38.859850+00:00",
+  "generated_at": "2026-04-30T17:09:07.108550+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 30,
+        "value": 31,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
+        "value": 5,
         "score": 2.5,
         "max": 3
       },
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1585,
-    "recent_30d_count": 30,
+    "total_catalog_count": 1586,
+    "recent_30d_count": 31,
     "recent": [
+      {
+        "cve_id": "CVE-2026-41940",
+        "vendor": "WebPros",
+        "product": "cPanel & WHM and WP2 (WordPress Squared)",
+        "name": "WebPros cPanel & WHM and WP2 (WordPress Squared) Missing Authentication for Critical Function Vulnerability",
+        "date_added": "2026-04-30",
+        "due_date": "2026-05-03",
+        "description": "WebPros cPanel & WHM (WebHost Manager) and WP2 (WordPress Squared) contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized ac",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2024-1708",
         "vendor": "ConnectWise",
@@ -224,38 +234,14 @@
         "due_date": "2026-04-28",
         "description": "Microsoft SharePoint Server contains an improper input validation vulnerability that allows an unauthorized attacker to perform spoofing over a network.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2012-1854",
-        "vendor": "Microsoft",
-        "product": "Visual Basic for Applications (VBA)",
-        "name": "Microsoft Visual Basic for Applications Insecure Library Loading Vulnerability",
-        "date_added": "2026-04-13",
-        "due_date": "2026-04-27",
-        "description": "Microsoft Visual Basic for Applications (VBA) contains an insecure library loading vulnerability that could allow for remote code execution.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 175,
-    "critical_count": 8,
-    "high_count": 40,
+    "total": 165,
+    "critical_count": 5,
+    "high_count": 33,
     "cves": [
-      {
-        "cve_id": "CVE-2026-36841",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "TOTOLINK N200RE V5 was discovered to contain a command injection vulnerability via the macstr and bandstr parameters in the formMapDelDevice function.",
-        "published": "2026-04-29T15:16:05.643"
-      },
-      {
-        "cve_id": "CVE-2026-41940",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "cPanel and WHM versions after 11.40 contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized access to the control panel.",
-        "published": "2026-04-29T16:16:25.037"
-      },
       {
         "cve_id": "CVE-2018-25316",
         "severity": "CRITICAL",
@@ -278,18 +264,11 @@
         "published": "2026-04-29T20:16:27.800"
       },
       {
-        "cve_id": "CVE-2026-5166",
+        "cve_id": "CVE-2026-7381",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in TUBITAK BILGEM Software Technologies Research Institute Pardus Software Center allows Path Traversal.\n\nT",
-        "published": "2026-04-29T16:16:26.673"
-      },
-      {
-        "cve_id": "CVE-2026-42523",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "Jenkins GitHub Plugin 1.46.0 and earlier improperly processes the current job URL as part of JavaScript implementing validation of the feature \"GitHub hook trigger for GITScm polling\", resulting in a ",
-        "published": "2026-04-29T14:16:19.360"
+        "base_score": 9.1,
+        "description": "Plack::Middleware::XSendfile versions through 1.0053 for Perl can allow client-controlled path rewriting.\n\nPlack::Middleware::XSendfile allows the variation setting (sendfile type) to be set by the cl",
+        "published": "2026-04-29T23:16:19.897"
       },
       {
         "cve_id": "CVE-2026-30893",
@@ -297,41 +276,6 @@
         "base_score": 9.0,
         "description": "Wazuh is a free and open source platform used for threat prevention, detection, and response. From version 4.4.0 to before version 4.14.4, a path traversal vulnerability in Wazuh's cluster synchroniza",
         "published": "2026-04-29T19:16:23.200"
-      },
-      {
-        "cve_id": "CVE-2026-5140",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Improper neutralization of CRLF sequences ('CRLF injection') vulnerability in TUBITAK BILGEM Software Technologies Research Institute Pardus allows Authentication Bypass.\n\nThis issue affects Pardus: f",
-        "published": "2026-04-29T14:16:19.777"
-      },
-      {
-        "cve_id": "CVE-2026-5141",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Improper Privilege Management, Improper Access Control, Incorrect privilege assignment vulnerability in TUBITAK BILGEM Software Technologies Research Institute Pardus Software Center allows Hijacking ",
-        "published": "2026-04-29T15:16:07.887"
-      },
-      {
-        "cve_id": "CVE-2026-5161",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Improper link resolution before file access ('link following') vulnerability in TUBITAK BILGEM Software Technologies Research Institute Pardus About allows Symlink Attack.\n\nThis issue affects Pardus A",
-        "published": "2026-04-29T15:16:08.010"
-      },
-      {
-        "cve_id": "CVE-2026-38991",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Cockpit 2.13.5 and earlier is affected by a misconfiguration within the Bucket component _isFileTypeAllowed function where a specially crafted filename bypasses an extension filter. This allows an aut",
-        "published": "2026-04-29T16:16:23.797"
-      },
-      {
-        "cve_id": "CVE-2026-6849",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Improper neutralization of special elements used in an OS command ('OS command injection') vulnerability in TUBITAK BILGEM Software Technologies Research Institute Pardus OS My Computer allows OS Comm",
-        "published": "2026-04-29T16:16:28.413"
       },
       {
         "cve_id": "CVE-2026-7466",
@@ -362,11 +306,32 @@
         "published": "2026-04-29T22:16:22.620"
       },
       {
-        "cve_id": "CVE-2026-7111",
+        "cve_id": "CVE-2026-7419",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Text::CSV_XS versions before 1.62 for Perl have a use-after-free when registered callbacks extend the Perl argument stack, which may enable type confusion or memory corruption.\n\nThe Parse, print, getl",
-        "published": "2026-04-29T15:16:09.183"
+        "base_score": 8.8,
+        "description": "A vulnerability was identified in UTT HiPER 1250GW up to 3.2.7-210907-180535. This issue affects the function strcpy of the file route/goform/formTaskEdit_ap. The manipulation of the argument Profile ",
+        "published": "2026-04-29T23:16:20.020"
+      },
+      {
+        "cve_id": "CVE-2026-7420",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A security flaw has been discovered in UTT HiPER 1250GW up to 3.2.7-210907-180535. Impacted is the function strcpy of the file route/goform/ConfigAdvideo. The manipulation of the argument Profile resu",
+        "published": "2026-04-29T23:16:20.193"
+      },
+      {
+        "cve_id": "CVE-2026-7470",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A flaw has been found in Tenda 4G300 US_4G300V1.0Mt_V1.01.42_CN_TDC01. Affected is the function sub_427C3C of the file /goform/SafeMacFilter. This manipulation of the argument page causes stack-based ",
+        "published": "2026-04-30T03:16:01.740"
+      },
+      {
+        "cve_id": "CVE-2026-5402",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "TLS protocol dissector heap overflow in Wireshark 4.6.0 to 4.6.4 allows denial of service and possible code execution",
+        "published": "2026-04-30T07:16:37.847"
       },
       {
         "cve_id": "CVE-2018-25299",
@@ -381,6 +346,41 @@
         "base_score": 8.4,
         "description": "Easy MPEG to DVD Burner 1.7.11 contains a structured exception handling (SEH) local buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying a malicious usernam",
         "published": "2026-04-29T20:16:25.320"
+      },
+      {
+        "cve_id": "CVE-2018-25303",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "Allok Video to DVD Burner 2.6.1217 contains a stack-based buffer overflow vulnerability in the License Name field that allows local attackers to execute arbitrary code by triggering a structured excep",
+        "published": "2026-04-29T20:16:25.620"
+      },
+      {
+        "cve_id": "CVE-2018-25304",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "Free Download Manager 2.0 Built 417 contains a local buffer overflow vulnerability in the URL import functionality that allows attackers to trigger a structured exception handler (SEH) chain exploitat",
+        "published": "2026-04-29T20:16:25.760"
+      },
+      {
+        "cve_id": "CVE-2018-25307",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "SysGauge Pro 4.6.12 contains a local buffer overflow vulnerability in the Register function that allows local attackers to overwrite the structured exception handler by supplying a crafted unlock key.",
+        "published": "2026-04-29T20:16:26.183"
+      },
+      {
+        "cve_id": "CVE-2018-25314",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "Allok soft WMV to AVI MPEG DVD WMV Converter 4.6.1217 contains a buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying an oversized string in the License Nam",
+        "published": "2026-04-29T20:16:27.193"
+      },
+      {
+        "cve_id": "CVE-2018-25315",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "Alloksoft Video joiner 4.6.1217 contains a buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying a malicious string in the License Name field. Attackers can ",
+        "published": "2026-04-29T20:16:27.363"
       }
     ]
   },
