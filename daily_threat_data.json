@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-01T16:44:29.717255+00:00",
+  "generated_at": "2026-05-01T20:41:17.151119+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 30,
+        "value": 31,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
+        "value": 7,
         "score": 2.5,
         "max": 3
       },
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1586,
-    "recent_30d_count": 30,
+    "total_catalog_count": 1587,
+    "recent_30d_count": 31,
     "recent": [
+      {
+        "cve_id": "CVE-2026-31431",
+        "vendor": "Linux",
+        "product": "Kernel",
+        "name": "Linux Kernel Incorrect Resource Transfer Between Spheres Vulnerability",
+        "date_added": "2026-05-01",
+        "due_date": "2026-05-15",
+        "description": "Linux Kernel contains an incorrect resource transfer between spheres vulnerability that could allow for privilege escalation.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-41940",
         "vendor": "WebPros",
@@ -224,44 +234,27 @@
         "due_date": "2026-04-28",
         "description": "Microsoft Office Excel contains a remote code execution vulnerability that could allow an attacker to take complete control of an affected system if a user opens a specially crafted Excel file that in",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-32201",
-        "vendor": "Microsoft",
-        "product": "SharePoint Server",
-        "name": "Microsoft SharePoint Server Improper Input Validation Vulnerability",
-        "date_added": "2026-04-14",
-        "due_date": "2026-04-28",
-        "description": "Microsoft SharePoint Server contains an improper input validation vulnerability that allows an unauthorized attacker to perform spoofing over a network.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 292,
-    "critical_count": 6,
-    "high_count": 29,
+    "total": 295,
+    "critical_count": 7,
+    "high_count": 27,
     "cves": [
       {
-        "cve_id": "CVE-2026-36767",
+        "cve_id": "CVE-2026-35051",
         "severity": "CRITICAL",
         "base_score": 10.0,
-        "description": "A path traversal vulnerability in the /content/images/add endpoint of shopizer v3.2.5 allows attackers write arbitrary files to any writeable path via a crafted POST request.",
-        "published": "2026-04-30T17:16:26.267"
+        "description": "Traefik is an HTTP reverse proxy and load balancer. Prior to versions 2.11.43, 3.6.14, and 3.7.0-rc.2, there is an authentication bypass vulnerability in Traefik's ForwardAuth middleware when trustFor",
+        "published": "2026-04-30T21:16:32.047"
       },
       {
-        "cve_id": "CVE-2022-50993",
+        "cve_id": "CVE-2026-39858",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Weaver (Fanwei) E-office versions prior to 10.0_20221201 contain an unauthenticated arbitrary file upload vulnerability in the OfficeServer.php endpoint that allows remote attackers to upload maliciou",
-        "published": "2026-04-30T17:16:24.800"
-      },
-      {
-        "cve_id": "CVE-2025-71284",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Synway SMG Gateway Management Software contains an OS command injection vulnerability in the RADIUS configuration endpoint at /en/9-2radius.php where the radius_address POST parameter is split and int",
-        "published": "2026-04-30T17:16:25.630"
+        "base_score": 10.0,
+        "description": "Traefik is an HTTP reverse proxy and load balancer. Prior to versions 2.11.43, 3.6.14, and 3.7.0-rc.2, there is a high severity authentication bypass vulnerability in Traefik's ForwardAuth and snippet",
+        "published": "2026-04-30T21:16:32.313"
       },
       {
         "cve_id": "CVE-2026-7538",
@@ -278,11 +271,25 @@
         "published": "2026-05-01T03:16:01.270"
       },
       {
-        "cve_id": "CVE-2026-36760",
+        "cve_id": "CVE-2026-7567",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "An issue in the fileMd5 parameter in the /a/file/upload endpoint of JeeSite v5.15.1 allows authenticated attackers with file upload permissions to execute a path traversal and write arbitrary files wi",
-        "published": "2026-04-30T17:16:26.050"
+        "base_score": 9.8,
+        "description": "The Temporary Login plugin for WordPress is vulnerable to Authentication Bypass in versions up to and including 1.0.0. This is due to improper input validation in the maybe_login_temporary_user() func",
+        "published": "2026-05-01T10:15:58.080"
+      },
+      {
+        "cve_id": "CVE-2026-42778",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The fix for CVE-2026-41409 was not applied to the 2.1.X and 2.2.X branches. Here was the original issue description:\n\n\n\n\nThe fix for CVE-2024-52046 in Apache MINA AbstractIoBuffer.getObject() was inco",
+        "published": "2026-05-01T11:16:19.383"
+      },
+      {
+        "cve_id": "CVE-2026-42779",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The fix for CVE-2026-41635 was not applied to the 2.1.X and 2.2.X branches. Here was the original issue description:\n\n\n\n\n\n\n\n\n\n\n\nApache MINA's AbstractIoBuffer.resolveClass() contains two branches, one",
+        "published": "2026-05-01T11:16:19.537"
       },
       {
         "cve_id": "CVE-2026-6389",
@@ -334,18 +341,32 @@
         "published": "2026-05-01T03:16:01.467"
       },
       {
-        "cve_id": "CVE-2026-40600",
+        "cve_id": "CVE-2026-3772",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Chartbrew is an open-source web application that can connect directly to databases and APIs and use the data to create charts. In version 4.9.0, Chartbrew allows authenticated users with access to one",
-        "published": "2026-04-30T19:16:09.957"
+        "base_score": 8.8,
+        "description": "The WP Editor plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.2.9.2. This is due to missing nonce verification in the 'add_plugins_page' and 'a",
+        "published": "2026-05-01T12:16:16.713"
       },
       {
-        "cve_id": "CVE-2026-40904",
+        "cve_id": "CVE-2026-40912",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Chartbrew is an open-source web application that can connect directly to databases and APIs and use the data to create charts. In version 4.9.0, Chartbrew exposes multiple dataset and dataRequest endp",
-        "published": "2026-04-30T19:16:10.433"
+        "base_score": 8.2,
+        "description": "Traefik is an HTTP reverse proxy and load balancer. Prior to versions 2.11.43, 3.6.14, and 3.7.0-rc.2, there is a high severity authentication bypass vulnerability in Traefik's StripPrefixRegex middle",
+        "published": "2026-04-30T21:16:32.740"
+      },
+      {
+        "cve_id": "CVE-2026-43003",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "An issue was discovered in OpenStack ironic-python-agent 1.0.0 through 11.5.0. Ironic Python Agent (IPA) sometimes executes grub-install from within a chroot of the deployed partition image, leading t",
+        "published": "2026-05-01T09:16:17.440"
+      },
+      {
+        "cve_id": "CVE-2026-43001",
+        "severity": "HIGH",
+        "base_score": 7.9,
+        "description": "An issue was discovered in OpenStack Keystone 13 through 29. POST /v3/credentials did not validate that the caller-supplied project_id for an EC2-type credential matched the project of the authenticat",
+        "published": "2026-05-01T09:16:17.273"
       },
       {
         "cve_id": "CVE-2026-5403",
@@ -360,27 +381,6 @@
         "base_score": 7.8,
         "description": "RDP protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service and possible code execution",
         "published": "2026-05-01T00:16:24.963"
-      },
-      {
-        "cve_id": "CVE-2026-7584",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "The LabOne Q serialization framework uses a class-loading mechanism (import_cls) to dynamically import and instantiate Python classes during deserialization. Prior to the fix, this mechanism accepted ",
-        "published": "2026-05-01T08:16:01.913"
-      },
-      {
-        "cve_id": "CVE-2022-50992",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Weaver (Fanwei) E-cology 9.5 versions prior to 10.52 contain an arbitrary file read vulnerability in the XmlRpcServlet interface at the XML-RPC endpoint that allows unauthenticated remote attackers to",
-        "published": "2026-04-30T17:16:24.633"
-      },
-      {
-        "cve_id": "CVE-2025-51846",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "CryptPad 2025.3.1 allows unbounded WebSocket frame flood. A remote, unauthenticated attacker can significantly degrade or deny service for all users of a CryptPad instance. Fixed in 2026.2.2.",
-        "published": "2026-04-30T17:16:25.467"
       }
     ]
   },
