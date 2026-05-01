@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-04-30T20:51:06.959483+00:00",
+  "generated_at": "2026-05-01T02:07:14.576788+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 31,
+        "value": 30,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
-        "score": 2.0,
+        "value": 5,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1586,
-    "recent_30d_count": 31,
+    "recent_30d_count": 30,
     "recent": [
       {
         "cve_id": "CVE-2026-41940",
@@ -238,16 +238,37 @@
     ]
   },
   "nvd": {
-    "total": 144,
-    "critical_count": 2,
-    "high_count": 30,
+    "total": 177,
+    "critical_count": 5,
+    "high_count": 25,
     "cves": [
       {
-        "cve_id": "CVE-2026-7381",
+        "cve_id": "CVE-2026-4670",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Plack::Middleware::XSendfile versions through 1.0053 for Perl can allow client-controlled path rewriting.\n\nPlack::Middleware::XSendfile allows the variation setting (sendfile type) to be set by the cl",
-        "published": "2026-04-29T23:16:19.897"
+        "base_score": 9.8,
+        "description": "Authentication bypass by primary weakness vulnerability in Progress Software MOVEit Automation allows Authentication Bypass.\n\nThis issue affects MOVEit Automation: from 2025.0.0 before 2025.0.9, from ",
+        "published": "2026-04-30T16:16:44.167"
+      },
+      {
+        "cve_id": "CVE-2022-50993",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Weaver (Fanwei) E-office versions prior to 10.0_20221201 contain an unauthenticated arbitrary file upload vulnerability in the OfficeServer.php endpoint that allows remote attackers to upload maliciou",
+        "published": "2026-04-30T17:16:24.800"
+      },
+      {
+        "cve_id": "CVE-2025-71284",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Synway SMG Gateway Management Software contains an OS command injection vulnerability in the RADIUS configuration endpoint at /en/9-2radius.php where the radius_address POST parameter is split and int",
+        "published": "2026-04-30T17:16:25.630"
+      },
+      {
+        "cve_id": "CVE-2026-36760",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "An issue in the fileMd5 parameter in the /a/file/upload endpoint of JeeSite v5.15.1 allows authenticated attackers with file upload permissions to execute a path traversal and write arbitrary files wi",
+        "published": "2026-04-30T17:16:26.050"
       },
       {
         "cve_id": "CVE-2026-35547",
@@ -255,27 +276,6 @@
         "base_score": 9.1,
         "description": "When processing the header of an incoming message, libnv failed to properly validate the message size.\n\nThe lack of validation allows a malicious program to write outside the bounds of a heap allocati",
         "published": "2026-04-30T09:16:03.167"
-      },
-      {
-        "cve_id": "CVE-2026-7418",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was determined in UTT HiPER 1250GW up to 3.2.7-210907-180535. This vulnerability affects the function strcpy of the file route/goform/NTP. Executing a manipulation of the argument Prof",
-        "published": "2026-04-29T22:16:22.620"
-      },
-      {
-        "cve_id": "CVE-2026-7419",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was identified in UTT HiPER 1250GW up to 3.2.7-210907-180535. This issue affects the function strcpy of the file route/goform/formTaskEdit_ap. The manipulation of the argument Profile ",
-        "published": "2026-04-29T23:16:20.020"
-      },
-      {
-        "cve_id": "CVE-2026-7420",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A security flaw has been discovered in UTT HiPER 1250GW up to 3.2.7-210907-180535. Impacted is the function strcpy of the file route/goform/ConfigAdvideo. The manipulation of the argument Profile resu",
-        "published": "2026-04-29T23:16:20.193"
       },
       {
         "cve_id": "CVE-2026-7470",
@@ -299,6 +299,13 @@
         "published": "2026-04-30T15:16:22.740"
       },
       {
+        "cve_id": "CVE-2026-36960",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A Cross-Site Request Forgery (CSRF) vulnerability exists in the web management interface of the U-SPEED N300 Rounter V1.0.0. The device does not implement CSRF protection mechanisms such as anti-CSRF ",
+        "published": "2026-04-30T16:16:43.300"
+      },
+      {
         "cve_id": "CVE-2026-7399",
         "severity": "HIGH",
         "base_score": 8.1,
@@ -313,6 +320,13 @@
         "published": "2026-04-30T13:16:06.597"
       },
       {
+        "cve_id": "CVE-2026-36340",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "An issue in Krayin CRM v.2.1.5 and fixed in v.2.1.6 allows a remote attacker to execute arbitrary code via the compose email function",
+        "published": "2026-04-30T16:16:42.160"
+      },
+      {
         "cve_id": "CVE-2026-7270",
         "severity": "HIGH",
         "base_score": 7.8,
@@ -325,6 +339,13 @@
         "base_score": 7.8,
         "description": "When exchanging data over a socket, libnv uses select(2) to wait for data to arrive.  However, it does not verify whether the provided socket descriptor fits in select(2)'s file descriptor set size li",
         "published": "2026-04-30T09:16:03.270"
+      },
+      {
+        "cve_id": "CVE-2026-5174",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "Improper input validation vulnerability in Progress Software MOVEit Automation allows Privilege Escalation.\n\nThis issue affects MOVEit Automation: from 2025.1.0 before 2025.1.5, from 2025.0.0 before 2",
+        "published": "2026-04-30T16:16:44.330"
       },
       {
         "cve_id": "CVE-2026-7164",
@@ -360,27 +381,6 @@
         "base_score": 7.5,
         "description": "U-SPEED N300 router V1.0.0 does not implement rate limiting or account lockout protections on the /api/login endpoint. This allows an attacker on the local network to perform unlimited authentication ",
         "published": "2026-04-30T15:16:23.077"
-      },
-      {
-        "cve_id": "CVE-2026-42799",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "Out-of-bounds read vulnerability in ASR Kestrel (nr_fw modules) allows Overflow Buffers.\n\n This vulnerability is associated with program files Code/Nr/nr_fw/RA/src/NrPwrCtrl.C.\n\n\n\nThis issue affects K",
-        "published": "2026-04-30T09:16:03.473"
-      },
-      {
-        "cve_id": "CVE-2026-42800",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "NULL pointer dereference vulnerability in ASR1903 in ASR Lapwing_Linux on Linux (ims_client modules) allows Pointer Manipulation.\n\n This vulnerability is associated with program files sip/utils/src/si",
-        "published": "2026-04-30T10:16:02.203"
-      },
-      {
-        "cve_id": "CVE-2026-41882",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "In JetBrains IntelliJ IDEA before 2024.3.7.1, \n2025.1.7.1,\n2025.2.6.2,  \n2025.3.4.1, \n2026.1.1 reading arbitrary local files was possible via built-in web server",
-        "published": "2026-04-30T12:16:24.207"
       }
     ]
   },
