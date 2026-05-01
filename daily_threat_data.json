@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-01T06:31:24.936681+00:00",
+  "generated_at": "2026-05-01T09:26:03.662867+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
+        "value": 5,
         "score": 2.5,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 182,
-    "critical_count": 6,
-    "high_count": 24,
+    "total": 145,
+    "critical_count": 5,
+    "high_count": 23,
     "cves": [
       {
         "cve_id": "CVE-2026-36767",
@@ -278,20 +278,6 @@
         "published": "2026-04-30T17:16:26.050"
       },
       {
-        "cve_id": "CVE-2026-35547",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "When processing the header of an incoming message, libnv failed to properly validate the message size.\n\nThe lack of validation allows a malicious program to write outside the bounds of a heap allocati",
-        "published": "2026-04-30T09:16:03.167"
-      },
-      {
-        "cve_id": "CVE-2026-5402",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "TLS protocol dissector heap overflow in Wireshark 4.6.0 to 4.6.4 allows denial of service and possible code execution",
-        "published": "2026-04-30T07:16:37.847"
-      },
-      {
         "cve_id": "CVE-2026-36956",
         "severity": "HIGH",
         "base_score": 8.8,
@@ -327,18 +313,18 @@
         "published": "2026-04-30T16:16:42.160"
       },
       {
-        "cve_id": "CVE-2026-7270",
+        "cve_id": "CVE-2026-40600",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "An operator precedence bug in the kernel results in a scenario where a buffer overflow causes attacker-controlled data to overwrite adjacent execve(2) argument buffers.\n\nThe bug may be exploitable by ",
-        "published": "2026-04-30T07:16:41.710"
+        "base_score": 8.1,
+        "description": "Chartbrew is an open-source web application that can connect directly to databases and APIs and use the data to create charts. In version 4.9.0, Chartbrew allows authenticated users with access to one",
+        "published": "2026-04-30T19:16:09.957"
       },
       {
-        "cve_id": "CVE-2026-39457",
+        "cve_id": "CVE-2026-40904",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "When exchanging data over a socket, libnv uses select(2) to wait for data to arrive.  However, it does not verify whether the provided socket descriptor fits in select(2)'s file descriptor set size li",
-        "published": "2026-04-30T09:16:03.270"
+        "base_score": 8.1,
+        "description": "Chartbrew is an open-source web application that can connect directly to databases and APIs and use the data to create charts. In version 4.9.0, Chartbrew exposes multiple dataset and dataRequest endp",
+        "published": "2026-04-30T19:16:10.433"
       },
       {
         "cve_id": "CVE-2026-5174",
@@ -346,13 +332,6 @@
         "base_score": 7.7,
         "description": "Improper input validation vulnerability in Progress Software MOVEit Automation allows Privilege Escalation.\n\nThis issue affects MOVEit Automation: from 2025.1.0 before 2025.1.5, from 2025.0.0 before 2",
         "published": "2026-04-30T16:16:44.330"
-      },
-      {
-        "cve_id": "CVE-2026-7164",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Incorrect packet validation allowed unbounded recursion parsing SCTP chunk parameters.  This can eventually result in a stack overflow and panic.\n\nRemote attackers can craft packets which cause affect",
-        "published": "2026-04-30T08:16:07.653"
       },
       {
         "cve_id": "CVE-2026-2892",
@@ -381,6 +360,27 @@
         "base_score": 7.5,
         "description": "U-SPEED N300 router V1.0.0 does not implement rate limiting or account lockout protections on the /api/login endpoint. This allows an attacker on the local network to perform unlimited authentication ",
         "published": "2026-04-30T15:16:23.077"
+      },
+      {
+        "cve_id": "CVE-2022-50992",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Weaver (Fanwei) E-cology 9.5 versions prior to 10.52 contain an arbitrary file read vulnerability in the XmlRpcServlet interface at the XML-RPC endpoint that allows unauthenticated remote attackers to",
+        "published": "2026-04-30T17:16:24.633"
+      },
+      {
+        "cve_id": "CVE-2025-51846",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "CryptPad 2025.3.1 allows unbounded WebSocket frame flood. A remote, unauthenticated attacker can significantly degrade or deny service for all users of a CryptPad instance. Fixed in 2026.2.2.",
+        "published": "2026-04-30T17:16:25.467"
+      },
+      {
+        "cve_id": "CVE-2026-33845",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A flaw in GnuTLS DTLS handshake parsing allows malformed fragments with zero length and non-zero offset, leading to an integer underflow during reassembly and resulting in an out-of-bounds read. This ",
+        "published": "2026-04-30T18:16:28.003"
       }
     ]
   },
