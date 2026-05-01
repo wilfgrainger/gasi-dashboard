@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-01T02:07:14.576788+00:00",
+  "generated_at": "2026-05-01T06:31:24.936681+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
+        "value": 6,
         "score": 2.5,
         "max": 3
       },
@@ -238,10 +238,17 @@
     ]
   },
   "nvd": {
-    "total": 177,
-    "critical_count": 5,
-    "high_count": 25,
+    "total": 182,
+    "critical_count": 6,
+    "high_count": 24,
     "cves": [
+      {
+        "cve_id": "CVE-2026-36767",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "A path traversal vulnerability in the /content/images/add endpoint of shopizer v3.2.5 allows attackers write arbitrary files to any writeable path via a crafted POST request.",
+        "published": "2026-04-30T17:16:26.267"
+      },
       {
         "cve_id": "CVE-2026-4670",
         "severity": "CRITICAL",
@@ -276,13 +283,6 @@
         "base_score": 9.1,
         "description": "When processing the header of an incoming message, libnv failed to properly validate the message size.\n\nThe lack of validation allows a malicious program to write outside the bounds of a heap allocati",
         "published": "2026-04-30T09:16:03.167"
-      },
-      {
-        "cve_id": "CVE-2026-7470",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw has been found in Tenda 4G300 US_4G300V1.0Mt_V1.01.42_CN_TDC01. Affected is the function sub_427C3C of the file /goform/SafeMacFilter. This manipulation of the argument page causes stack-based ",
-        "published": "2026-04-30T03:16:01.740"
       },
       {
         "cve_id": "CVE-2026-5402",
