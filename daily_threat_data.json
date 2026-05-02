@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-02T16:36:47.814602+00:00",
+  "generated_at": "2026-05-02T20:31:57.474052+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
-        "score": 2.5,
+        "value": 2,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,38 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 116,
-    "critical_count": 6,
-    "high_count": 46,
+    "total": 83,
+    "critical_count": 2,
+    "high_count": 30,
     "cves": [
-      {
-        "cve_id": "CVE-2026-37541",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Buffer overflow vulnerability in Open Vehicle Monitoring System 3 (OVMS3) 3.3.005. In canformat_gvret.cpp, the length field in GVRET binary data is not properly validated, allowing remote attackers to",
-        "published": "2026-05-01T17:16:24.083"
-      },
-      {
-        "cve_id": "CVE-2026-37531",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "AGL app-framework-main thru 17.1.12 contains a Zip Slip path traversal vulnerability (CWE-22) combined with a TOCTOU race condition (CWE-367) in the widget installation flow. The is_valid_filename fun",
-        "published": "2026-05-01T17:16:22.720"
-      },
-      {
-        "cve_id": "CVE-2026-37534",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Integer underflow vulnerability in Open-SAE-J1939 thru commit b6caf884df46435e539b1ecbf92b6c29b345bdfe (2025-11-30) in SAE_J1939_Read_Transport_Protocol_Data_Transfer,allows attackers to write to arbi",
-        "published": "2026-05-01T17:16:23.073"
-      },
-      {
-        "cve_id": "CVE-2026-37539",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Buffer overflow vulnerability in cannelloni v2.0.0 in CAN frame parsing in parser.cpp in function parseCANFrame, and decoder.cpp in function decodeFrame allowing remote attackers to cause a denial of ",
-        "published": "2026-05-01T17:16:23.803"
-      },
       {
         "cve_id": "CVE-2026-4882",
         "severity": "CRITICAL",
@@ -283,20 +255,6 @@
         "base_score": 9.8,
         "description": "The User Verification by PickPlugins plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 2.0.46. This is due to the use of a loose PHP comparison operator",
         "published": "2026-05-02T05:16:01.420"
-      },
-      {
-        "cve_id": "CVE-2026-37536",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "miaofng/uds-c commit e506334e270d77b20c0bc259ac6c7d8c9b702b7a (2016-10-05) contains a stack buffer overflow in send_diagnostic_request. A 6-byte stack buffer (MAX_DIAGNOSTIC_PAYLOAD_SIZE=6) receives m",
-        "published": "2026-05-01T17:16:23.373"
-      },
-      {
-        "cve_id": "CVE-2026-42468",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Buffer overflow vulnerability in Open Vehicle Monitoring System 3 (OVMS3) 3.3.005. In canformat_pcap.cpp , the parser's phdr.len field is not properly validated, allowing remote attackers to cause a d",
-        "published": "2026-05-01T17:16:25.150"
       },
       {
         "cve_id": "CVE-2026-6963",
@@ -334,34 +292,6 @@
         "published": "2026-05-02T10:16:18.803"
       },
       {
-        "cve_id": "CVE-2026-42469",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Buffer overflow vulnerability in Open Vehicle Monitoring System 3 (OVMS3) 3.3.005. In canformat_canswitch.cpp the parser does not properly validate a CANswitch DLC value, allowing remote attackers to ",
-        "published": "2026-05-01T17:16:25.260"
-      },
-      {
-        "cve_id": "CVE-2026-37540",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "OpenAMP v2025.10.0 ELF loader contains an integer overflow vulnerability in firmware image parsing. In elf_loader.c, it performs multiplication of two attacker-controlled 16-bit values from the ELF he",
-        "published": "2026-05-01T17:16:23.933"
-      },
-      {
-        "cve_id": "CVE-2026-30363",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "flipperzero-firmware commit ad2a80 was discovered to contain a stack overflow in the \"Main\" function.",
-        "published": "2026-05-01T19:16:29.807"
-      },
-      {
-        "cve_id": "CVE-2026-37537",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "collin80/Open-SAE-J1939 thru commit 744024d4306bc387857dfce439558336806acb06 (2023-03-08) contains an integer underflow leading to out-of-bounds write in Transport Protocol Data Transfer handling. At ",
-        "published": "2026-05-01T17:16:23.550"
-      },
-      {
         "cve_id": "CVE-2026-7647",
         "severity": "HIGH",
         "base_score": 8.1,
@@ -376,11 +306,81 @@
         "published": "2026-05-02T10:16:19.107"
       },
       {
-        "cve_id": "CVE-2026-37525",
+        "cve_id": "CVE-2026-2554",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "AGL app-framework-binder (afb-daemon) through v19.90.0 contains a privilege escalation vulnerability in the supervision Do command. The on_supervision_call function in src/afb-supervision.c explicitly",
-        "published": "2026-05-01T17:16:22.270"
+        "base_score": 8.1,
+        "description": "The WCFM \u2013 Frontend Manager for WooCommerce along with Bookings Subscription Listings Compatible plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and inclu",
+        "published": "2026-05-02T14:16:17.707"
+      },
+      {
+        "cve_id": "CVE-2026-43824",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "In Argo CD 3.2.0 before 3.2.11 and 3.3.0 before 3.3.9, ServerSideDiff allows reading cleartext Kubernetes Secret data.",
+        "published": "2026-05-02T02:16:00.747"
+      },
+      {
+        "cve_id": "CVE-2026-7649",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The ARMember \u2013 Membership Plugin, Content Restriction, Member Levels, User Profile & User signup plugin for WordPress is vulnerable to time-based blind SQL Injection via the 'orderby' parameter in all",
+        "published": "2026-05-02T08:16:28.403"
+      },
+      {
+        "cve_id": "CVE-2026-4060",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Geo Mashup plugin for WordPress is vulnerable to Time-Based SQL Injection via the 'sort' parameter in all versions up to, and including, 1.13.18. This is due to insufficient escaping on the user s",
+        "published": "2026-05-02T12:16:15.430"
+      },
+      {
+        "cve_id": "CVE-2026-4061",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Geo Mashup plugin for WordPress is vulnerable to Time-Based SQL Injection via the 'map_post_type' parameter in all versions up to, and including, 1.13.18. This is due to the `SearchResults` hook e",
+        "published": "2026-05-02T12:16:16.200"
+      },
+      {
+        "cve_id": "CVE-2026-4062",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Geo Mashup plugin for WordPress is vulnerable to Time-Based SQL Injection via the 'object_ids' and 'exclude_object_ids' parameters in all versions up to, and including, 1.13.18. This is due to ins",
+        "published": "2026-05-02T12:16:16.337"
+      },
+      {
+        "cve_id": "CVE-2026-6320",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Salon Booking System \u2013 Free Version plugin for WordPress is vulnerable to Arbitrary File Read in versions up to, and including, 10.30.25. This is due to the public booking flow accepting attacker-",
+        "published": "2026-05-02T12:16:16.750"
+      },
+      {
+        "cve_id": "CVE-2026-7593",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A security vulnerability has been detected in Sunwood-ai-labs command-executor-mcp-server up to 0.1.0. This impacts the function execute_command of the file src/index.ts of the component MCP Interface",
+        "published": "2026-05-01T21:16:17.787"
+      },
+      {
+        "cve_id": "CVE-2026-7594",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was detected in Flux159 mcp-game-asset-gen 0.1.0. Affected is the function image_to_3d_async of the file src/index.ts of the component MCP Interface. The manipulation of the argument s",
+        "published": "2026-05-01T21:16:17.960"
+      },
+      {
+        "cve_id": "CVE-2026-7598",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A security vulnerability has been detected in libssh2 up to 1.11.1. The impacted element is the function userauth_password of the file src/userauth.c. Such manipulation of the argument username_len/pa",
+        "published": "2026-05-01T22:16:16.947"
+      },
+      {
+        "cve_id": "CVE-2026-7630",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability has been found in innocommerce InnoShop up to 0.7.8. The affected element is the function InstallServiceProvider::boot of the file innopacks/install/src/InstallServiceProvider.php of t",
+        "published": "2026-05-02T14:16:18.160"
       }
     ]
   },
