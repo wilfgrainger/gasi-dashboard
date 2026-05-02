@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-01T20:41:17.151119+00:00",
+  "generated_at": "2026-05-02T01:53:58.968987+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 31,
+        "value": 30,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
+        "value": 8,
         "score": 2.5,
         "max": 3
       },
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1587,
-    "recent_30d_count": 31,
+    "recent_30d_count": 30,
     "recent": [
       {
         "cve_id": "CVE-2026-31431",
@@ -238,24 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 295,
-    "critical_count": 7,
-    "high_count": 27,
+    "total": 256,
+    "critical_count": 8,
+    "high_count": 12,
     "cves": [
-      {
-        "cve_id": "CVE-2026-35051",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Traefik is an HTTP reverse proxy and load balancer. Prior to versions 2.11.43, 3.6.14, and 3.7.0-rc.2, there is an authentication bypass vulnerability in Traefik's ForwardAuth middleware when trustFor",
-        "published": "2026-04-30T21:16:32.047"
-      },
-      {
-        "cve_id": "CVE-2026-39858",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Traefik is an HTTP reverse proxy and load balancer. Prior to versions 2.11.43, 3.6.14, and 3.7.0-rc.2, there is a high severity authentication bypass vulnerability in Traefik's ForwardAuth and snippet",
-        "published": "2026-04-30T21:16:32.313"
-      },
       {
         "cve_id": "CVE-2026-7538",
         "severity": "CRITICAL",
@@ -292,46 +278,25 @@
         "published": "2026-05-01T11:16:19.537"
       },
       {
-        "cve_id": "CVE-2026-6389",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "IBM Turbonomic prometurbo agent 8.16.0 through 8.17.6 IBM Turbonomic Application Resource Management grants excessive cluster\u2011wide permissions, including unrestricted read access to all secrets. An at",
-        "published": "2026-04-30T22:16:26.207"
+        "cve_id": "CVE-2026-42482",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A stack-based buffer overflow in mangle_to_hex_lower() and mangle_to_hex_upper() in src/rp_cpu.c in hashcat v7.1.2 allows an attacker to cause a denial of service or possibly execute arbitrary code vi",
+        "published": "2026-05-01T14:16:22.577"
       },
       {
-        "cve_id": "CVE-2026-6543",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "IBM Langflow Desktop 1.0.0 through 1.8.4 Langflow allows an attacker to execute arbitrary commands with the privileges of the process running Langflow. This allows reading sensitive environment variab",
-        "published": "2026-04-30T22:16:26.467"
+        "cve_id": "CVE-2026-42483",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A heap-based buffer overflow in the Kerberos hash parser in hashcat v7.1.2 allows an attacker to cause a denial of service or possibly execute arbitrary code via a crafted Kerberos hash file. The issu",
+        "published": "2026-05-01T14:16:22.687"
       },
       {
-        "cve_id": "CVE-2026-7503",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was detected in code-projects for Plugin 4.1.2cu.5137. The impacted element is the function setWiFiMultipleConfig in the library /lib/cste_modules/wireless.so of the file /cgi-bin/cste",
-        "published": "2026-04-30T22:16:26.920"
-      },
-      {
-        "cve_id": "CVE-2026-7551",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "HKUDS OpenHarness contains a remote code execution vulnerability in the /bridge slash command that allows remote senders accepted by configuration to execute arbitrary operating system commands. Attac",
-        "published": "2026-04-30T22:16:27.097"
-      },
-      {
-        "cve_id": "CVE-2026-7512",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw has been found in UTT HiPER 1200GW up to 2.5.3-1703. The affected element is the function strcpy of the file /goform/formUser. Executing a manipulation can lead to buffer overflow. The attack c",
-        "published": "2026-05-01T00:16:25.257"
-      },
-      {
-        "cve_id": "CVE-2026-7513",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability has been found in UTT HiPER 1200GW up to 2.5.3-170306. The impacted element is the function strcpy of the file /goform/formRemoteControl. The manipulation leads to buffer overflow. The",
-        "published": "2026-05-01T00:16:25.443"
+        "cve_id": "CVE-2026-42484",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A heap-based buffer overflow in hex_to_binary in the PKZIP hash parser in hashcat v7.1.2 allows an attacker to cause a denial of service or possibly execute arbitrary code via a crafted PKZIP hash fil",
+        "published": "2026-05-01T14:16:22.800"
       },
       {
         "cve_id": "CVE-2026-7548",
@@ -348,13 +313,6 @@
         "published": "2026-05-01T12:16:16.713"
       },
       {
-        "cve_id": "CVE-2026-40912",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Traefik is an HTTP reverse proxy and load balancer. Prior to versions 2.11.43, 3.6.14, and 3.7.0-rc.2, there is a high severity authentication bypass vulnerability in Traefik's StripPrefixRegex middle",
-        "published": "2026-04-30T21:16:32.740"
-      },
-      {
         "cve_id": "CVE-2026-43003",
         "severity": "HIGH",
         "base_score": 8.0,
@@ -369,18 +327,60 @@
         "published": "2026-05-01T09:16:17.273"
       },
       {
-        "cve_id": "CVE-2026-5403",
+        "cve_id": "CVE-2026-7584",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "SBC codec crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service and possible code execution",
-        "published": "2026-05-01T00:16:24.670"
+        "description": "The LabOne Q serialization framework uses a class-loading mechanism (import_cls) to dynamically import and instantiate Python classes during deserialization. Prior to the fix, this mechanism accepted ",
+        "published": "2026-05-01T08:16:01.913"
       },
       {
-        "cve_id": "CVE-2026-5405",
+        "cve_id": "CVE-2026-42402",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "RDP protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service and possible code execution",
-        "published": "2026-05-01T00:16:24.963"
+        "base_score": 7.5,
+        "description": "Apache Neethi is vulnerable to a Denial of Service attack through algorithmic complexity in policy normalization. Specially crafted WS-Policy documents can trigger an exponential Cartesian cross-produ",
+        "published": "2026-05-01T09:16:16.980"
+      },
+      {
+        "cve_id": "CVE-2026-42403",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Apache Neethi does not properly detect circular references in policy definitions. When a WS-Policy document contains circular policy references (where Policy A references Policy B which references Pol",
+        "published": "2026-05-01T09:16:17.137"
+      },
+      {
+        "cve_id": "CVE-2026-7545",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A weakness has been identified in SourceCodester Advanced School Management System 1.0. The affected element is an unknown function of the file commonController.php of the component checkEmail Endpoin",
+        "published": "2026-05-01T02:16:04.723"
+      },
+      {
+        "cve_id": "CVE-2026-7549",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A flaw has been found in SourceCodester Pharmacy Sales and Inventory System 1.0. This impacts an unknown function of the file /ajax.php?action=delete_customer. Executing a manipulation of the argument",
+        "published": "2026-05-01T05:16:03.657"
+      },
+      {
+        "cve_id": "CVE-2026-7550",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability has been found in SourceCodester Pharmacy Sales and Inventory System 1.0. Affected is an unknown function of the file /ajax.php?action=save_customer. The manipulation of the argument I",
+        "published": "2026-05-01T05:16:03.847"
+      },
+      {
+        "cve_id": "CVE-2026-7555",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was identified in itsourcecode Electronic Judging System 1.0. This affects an unknown part of the file /intrams/login.php. Such manipulation of the argument Username leads to sql injec",
+        "published": "2026-05-01T06:16:32.670"
+      },
+      {
+        "cve_id": "CVE-2026-7579",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A security vulnerability has been detected in AstrBotDevs AstrBot up to 4.16.0. This issue affects some unknown processing of the file astrbot/dashboard/routes/auth.py of the component Dashboard. The ",
+        "published": "2026-05-01T12:16:17.027"
       }
     ]
   },
