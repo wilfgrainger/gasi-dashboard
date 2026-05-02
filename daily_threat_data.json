@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-02T12:48:17.305704+00:00",
+  "generated_at": "2026-05-02T16:36:47.814602+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
-        "score": 2.0,
+        "value": 6,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 283,
-    "critical_count": 3,
-    "high_count": 2,
+    "total": 116,
+    "critical_count": 6,
+    "high_count": 46,
     "cves": [
       {
-        "cve_id": "CVE-2026-42482",
+        "cve_id": "CVE-2026-37541",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A stack-based buffer overflow in mangle_to_hex_lower() and mangle_to_hex_upper() in src/rp_cpu.c in hashcat v7.1.2 allows an attacker to cause a denial of service or possibly execute arbitrary code vi",
-        "published": "2026-05-01T14:16:22.577"
+        "base_score": 10.0,
+        "description": "Buffer overflow vulnerability in Open Vehicle Monitoring System 3 (OVMS3) 3.3.005. In canformat_gvret.cpp, the length field in GVRET binary data is not properly validated, allowing remote attackers to",
+        "published": "2026-05-01T17:16:24.083"
       },
       {
-        "cve_id": "CVE-2026-42483",
+        "cve_id": "CVE-2026-37531",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "A heap-based buffer overflow in the Kerberos hash parser in hashcat v7.1.2 allows an attacker to cause a denial of service or possibly execute arbitrary code via a crafted Kerberos hash file. The issu",
-        "published": "2026-05-01T14:16:22.687"
+        "description": "AGL app-framework-main thru 17.1.12 contains a Zip Slip path traversal vulnerability (CWE-22) combined with a TOCTOU race condition (CWE-367) in the widget installation flow. The is_valid_filename fun",
+        "published": "2026-05-01T17:16:22.720"
       },
       {
-        "cve_id": "CVE-2026-42484",
+        "cve_id": "CVE-2026-37534",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "A heap-based buffer overflow in hex_to_binary in the PKZIP hash parser in hashcat v7.1.2 allows an attacker to cause a denial of service or possibly execute arbitrary code via a crafted PKZIP hash fil",
-        "published": "2026-05-01T14:16:22.800"
+        "description": "Integer underflow vulnerability in Open-SAE-J1939 thru commit b6caf884df46435e539b1ecbf92b6c29b345bdfe (2025-11-30) in SAE_J1939_Read_Transport_Protocol_Data_Transfer,allows attackers to write to arbi",
+        "published": "2026-05-01T17:16:23.073"
       },
       {
-        "cve_id": "CVE-2026-42476",
+        "cve_id": "CVE-2026-37539",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Buffer overflow vulnerability in cannelloni v2.0.0 in CAN frame parsing in parser.cpp in function parseCANFrame, and decoder.cpp in function decodeFrame allowing remote attackers to cause a denial of ",
+        "published": "2026-05-01T17:16:23.803"
+      },
+      {
+        "cve_id": "CVE-2026-4882",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The User Registration Advanced Fields plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'URAF_AJAX::method_upload' function in all versions up to,",
+        "published": "2026-05-02T05:16:00.933"
+      },
+      {
+        "cve_id": "CVE-2026-7458",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The User Verification by PickPlugins plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 2.0.46. This is due to the use of a loose PHP comparison operator",
+        "published": "2026-05-02T05:16:01.420"
+      },
+      {
+        "cve_id": "CVE-2026-37536",
         "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Two heap-based out-of-bounds read vulnerabilities in the STL ASCII file parser in Open CASCADE Technology (OCCT) V8_0_0_rc5 exist in RWStl_Reader::ReadAscii because buffers returned by Standard_ReadLi",
-        "published": "2026-05-01T15:16:43.620"
+        "base_score": 8.8,
+        "description": "miaofng/uds-c commit e506334e270d77b20c0bc259ac6c7d8c9b702b7a (2016-10-05) contains a stack buffer overflow in send_diagnostic_request. A 6-byte stack buffer (MAX_DIAGNOSTIC_PAYLOAD_SIZE=6) receives m",
+        "published": "2026-05-01T17:16:23.373"
       },
       {
-        "cve_id": "CVE-2026-42477",
+        "cve_id": "CVE-2026-42468",
         "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "A heap-based out-of-bounds read vulnerability in RWObj_Reader::read in the OBJ file parser in Open CASCADE Technology (OCCT) V8_0_0_rc5 allows user-assisted attackers to cause a denial of service or o",
-        "published": "2026-05-01T15:16:43.737"
+        "base_score": 8.8,
+        "description": "Buffer overflow vulnerability in Open Vehicle Monitoring System 3 (OVMS3) 3.3.005. In canformat_pcap.cpp , the parser's phdr.len field is not properly validated, allowing remote attackers to cause a d",
+        "published": "2026-05-01T17:16:25.150"
       },
       {
-        "cve_id": "CVE-2026-3143",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "The Total Upkeep \u2013 WordPress Backup Plugin plus Restore & Migrate by BoldGrid plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the 'wp_ajax_",
-        "published": "2026-05-01T14:16:22.190"
+        "cve_id": "CVE-2026-6963",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The WP Mail Gateway plugin for WordPress is vulnerable to unauthorized access due to a missing capability check on the wmg_save_provider_config AJAX action in all versions up to, and including, 1.8. T",
+        "published": "2026-05-02T05:16:01.250"
       },
       {
-        "cve_id": "CVE-2026-7582",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "A vulnerability was detected in AcademySoftwareFoundation OpenImageIO up to 3.2.0.1-dev. This vulnerability affects unknown code of the file src/dds.imageio/ddsinput.cpp of the component DDS Image Han",
-        "published": "2026-05-01T14:16:23.403"
+        "cve_id": "CVE-2026-7641",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Import and export users and customers plugin for WordPress is vulnerable to Privilege Escalation in all versions up to and including 2.0.8 via the `save_extra_user_profile_fields()` function. This",
+        "published": "2026-05-02T05:16:01.953"
       },
       {
-        "cve_id": "CVE-2026-7581",
-        "severity": "MEDIUM",
-        "base_score": 4.3,
-        "description": "A security vulnerability has been detected in alexta69 MeTube up to 2026.04.09. This affects the function on_prepare of the file app/main.py of the component CORS Policy. The manipulation leads to per",
-        "published": "2026-05-01T13:15:59.477"
+        "cve_id": "CVE-2026-2052",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Widget Options \u2013 Advanced Conditional Visibility for Gutenberg Blocks & Classic Widgets plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 4.2.2 via ",
+        "published": "2026-05-02T08:16:27.123"
       },
       {
-        "cve_id": "CVE-2026-31694",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nfuse: reject oversized dirents in page cache\n\nfuse_add_dirent_to_cache() computes a serialized dirent size from the\nserver-controll",
-        "published": "2026-05-01T14:16:19.133"
+        "cve_id": "CVE-2026-7607",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A security vulnerability has been detected in TRENDnet TEW-821DAP 1.12B01. Impacted is the function auto_update_firmware of the component Firmware Udpate. The manipulation of the argument str leads to",
+        "published": "2026-05-02T08:16:28.197"
       },
       {
-        "cve_id": "CVE-2026-31695",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nwifi: virt_wifi: remove SET_NETDEV_DEV to avoid use-after-free\n\nCurrently we execute `SET_NETDEV_DEV(dev, &priv->lowerdev->dev)` fo",
-        "published": "2026-05-01T14:16:19.250"
+        "cve_id": "CVE-2026-7489",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "CTMS developed by Sunnet has a SQL Injection vulnerability, allowing authenticated remote attackers to inject arbitrary SQL commands to read, modify, and delete database contents.",
+        "published": "2026-05-02T10:16:18.803"
       },
       {
-        "cve_id": "CVE-2026-31696",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nrxrpc: Fix missing validation of ticket length in non-XDR key preparsing\n\nIn rxrpc_preparse(), there are two paths for parsing key ",
-        "published": "2026-05-01T14:16:19.403"
+        "cve_id": "CVE-2026-42469",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Buffer overflow vulnerability in Open Vehicle Monitoring System 3 (OVMS3) 3.3.005. In canformat_canswitch.cpp the parser does not properly validate a CANswitch DLC value, allowing remote attackers to ",
+        "published": "2026-05-01T17:16:25.260"
       },
       {
-        "cve_id": "CVE-2026-31697",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ncrypto: ccp: Don't attempt to copy ID to userspace if PSP command failed\n\nWhen retrieving the ID for the CPU, don't attempt to copy",
-        "published": "2026-05-01T14:16:19.517"
+        "cve_id": "CVE-2026-37540",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "OpenAMP v2025.10.0 ELF loader contains an integer overflow vulnerability in firmware image parsing. In elf_loader.c, it performs multiplication of two attacker-controlled 16-bit values from the ELF he",
+        "published": "2026-05-01T17:16:23.933"
       },
       {
-        "cve_id": "CVE-2026-31698",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ncrypto: ccp: Don't attempt to copy PDH cert to userspace if PSP command failed\n\nWhen retrieving the PDH cert, don't attempt to copy",
-        "published": "2026-05-01T14:16:19.650"
+        "cve_id": "CVE-2026-30363",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "flipperzero-firmware commit ad2a80 was discovered to contain a stack overflow in the \"Main\" function.",
+        "published": "2026-05-01T19:16:29.807"
       },
       {
-        "cve_id": "CVE-2026-31699",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ncrypto: ccp: Don't attempt to copy CSR to userspace if PSP command failed\n\nWhen retrieving the PEK CSR, don't attempt to copy the b",
-        "published": "2026-05-01T14:16:19.777"
+        "cve_id": "CVE-2026-37537",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "collin80/Open-SAE-J1939 thru commit 744024d4306bc387857dfce439558336806acb06 (2023-03-08) contains an integer underflow leading to out-of-bounds write in Transport Protocol Data Transfer handling. At ",
+        "published": "2026-05-01T17:16:23.550"
       },
       {
-        "cve_id": "CVE-2026-31700",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/packet: fix TOCTOU race on mmap'd vnet_hdr in tpacket_snd()\n\nIn tpacket_snd(), when PACKET_VNET_HDR is enabled, vnet_hdr points",
-        "published": "2026-05-01T14:16:19.907"
+        "cve_id": "CVE-2026-7647",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The Profile Builder Pro plugin for WordPress is vulnerable to PHP Object Injection in all versions up to and including 3.14.5. This is due to the use of PHP's maybe_unserialize() function on the attac",
+        "published": "2026-05-02T06:16:04.803"
       },
       {
-        "cve_id": "CVE-2026-31701",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nALSA: caiaq: take a reference on the USB device in create_card()\n\nThe caiaq driver stores a pointer to the parent USB device in\ncde",
-        "published": "2026-05-01T14:16:20.020"
+        "cve_id": "CVE-2026-7491",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "School App developed by Zyosoft has an Insecure Direct Object Reference vulnerability, allowing authenticated remote attackers to modify a specific parameter to read and modify other users' data.",
+        "published": "2026-05-02T10:16:19.107"
       },
       {
-        "cve_id": "CVE-2026-31702",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nf2fs: fix use-after-free of sbi in f2fs_compress_write_end_io()\n\nIn f2fs_compress_write_end_io(), dec_page_count(sbi, type) can bri",
-        "published": "2026-05-01T14:16:20.140"
-      },
-      {
-        "cve_id": "CVE-2026-31703",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nwriteback: Fix use after free in inode_switch_wbs_work_fn()\n\ninode_switch_wbs_work_fn() has a loop like:\n\n  wb_get(new_wb);\n  while",
-        "published": "2026-05-01T14:16:20.263"
-      },
-      {
-        "cve_id": "CVE-2026-31704",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: use check_add_overflow() to prevent u16 DACL size overflow\n\nset_posix_acl_entries_dacl() and set_ntacl_dacl() accumulate ACE",
-        "published": "2026-05-01T14:16:20.367"
-      },
-      {
-        "cve_id": "CVE-2026-31705",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: fix out-of-bounds write in smb2_get_ea() EA alignment\n\nsmb2_get_ea() applies 4-byte alignment padding via memset() after\nwri",
-        "published": "2026-05-01T14:16:20.473"
+        "cve_id": "CVE-2026-37525",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "AGL app-framework-binder (afb-daemon) through v19.90.0 contains a privilege escalation vulnerability in the supervision Do command. The on_supervision_call function in src/afb-supervision.c explicitly",
+        "published": "2026-05-01T17:16:22.270"
       }
     ]
   },
