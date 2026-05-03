@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-03T01:57:35.012681+00:00",
+  "generated_at": "2026-05-03T06:21:20.446408+00:00",
   "threat_score": {
-    "score": 6.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.0,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
-        "score": 2.0,
+        "value": 0,
+        "score": 1.0,
         "max": 3
       },
       {
@@ -238,38 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 76,
-    "critical_count": 2,
-    "high_count": 29,
+    "total": 61,
+    "critical_count": 0,
+    "high_count": 23,
     "cves": [
-      {
-        "cve_id": "CVE-2026-4882",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The User Registration Advanced Fields plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'URAF_AJAX::method_upload' function in all versions up to,",
-        "published": "2026-05-02T05:16:00.933"
-      },
-      {
-        "cve_id": "CVE-2026-7458",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The User Verification by PickPlugins plugin for WordPress is vulnerable to authentication bypass in all versions up to, and including, 2.0.46. This is due to the use of a loose PHP comparison operator",
-        "published": "2026-05-02T05:16:01.420"
-      },
-      {
-        "cve_id": "CVE-2026-6963",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The WP Mail Gateway plugin for WordPress is vulnerable to unauthorized access due to a missing capability check on the wmg_save_provider_config AJAX action in all versions up to, and including, 1.8. T",
-        "published": "2026-05-02T05:16:01.250"
-      },
-      {
-        "cve_id": "CVE-2026-7641",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Import and export users and customers plugin for WordPress is vulnerable to Privilege Escalation in all versions up to and including 2.0.8 via the `save_extra_user_profile_fields()` function. This",
-        "published": "2026-05-02T05:16:01.953"
-      },
       {
         "cve_id": "CVE-2026-2052",
         "severity": "HIGH",
@@ -292,11 +264,18 @@
         "published": "2026-05-02T10:16:18.803"
       },
       {
-        "cve_id": "CVE-2026-7647",
+        "cve_id": "CVE-2026-7674",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Profile Builder Pro plugin for WordPress is vulnerable to PHP Object Injection in all versions up to and including 3.14.5. This is due to the use of PHP's maybe_unserialize() function on the attac",
-        "published": "2026-05-02T06:16:04.803"
+        "base_score": 8.8,
+        "description": "A flaw has been found in Shenzhen Libituo Technology LBT-T300-HW1 up to 1.2.8. This issue affects the function start_single_service of the component Web Management Interface. Executing a manipulation ",
+        "published": "2026-05-03T02:17:12.993"
+      },
+      {
+        "cve_id": "CVE-2026-7675",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability has been found in Shenzhen Libituo Technology LBT-T300-HW1 up to 1.2.8. Impacted is the function start_lan of the file /apply.cgi. The manipulation of the argument Channel/ApCliSsid le",
+        "published": "2026-05-03T03:16:15.613"
       },
       {
         "cve_id": "CVE-2026-7491",
@@ -311,13 +290,6 @@
         "base_score": 8.1,
         "description": "The WCFM \u2013 Frontend Manager for WooCommerce along with Bookings Subscription Listings Compatible plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and inclu",
         "published": "2026-05-02T14:16:17.707"
-      },
-      {
-        "cve_id": "CVE-2026-43824",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "In Argo CD 3.2.0 before 3.2.11 and 3.3.0 before 3.3.9, ServerSideDiff allows reading cleartext Kubernetes Secret data.",
-        "published": "2026-05-02T02:16:00.747"
       },
       {
         "cve_id": "CVE-2026-7649",
@@ -381,6 +353,34 @@
         "base_score": 7.3,
         "description": "A vulnerability was identified in MikroTik RouterOS 6.49.8. This vulnerability affects the function ASN1_STRING_data in the library nova/lib/www/scep.p of the component SCEP Endpoint. The manipulation",
         "published": "2026-05-02T21:16:07.677"
+      },
+      {
+        "cve_id": "CVE-2026-7670",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A flaw has been found in Jinher OA 1.0. The affected element is an unknown function of the file /C6/JHSoft.Web.PlanSummarize/UserSel.aspx. This manipulation of the argument DeptIDList causes sql injec",
+        "published": "2026-05-02T23:16:16.860"
+      },
+      {
+        "cve_id": "CVE-2026-7679",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A security flaw has been discovered in YunaiV yudao-cloud up to 2026.01. This impacts the function getAccessToken of the file yudao-module-system-biz/src/main/java/io/github/ruoyi/common/oauth2/servic",
+        "published": "2026-05-03T05:15:59.207"
+      },
+      {
+        "cve_id": "CVE-2026-6229",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The Royal Elementor Addons plugin for WordPress is vulnerable to Server-Side Request Forgery in versions up to, and including, 1.7.1057. This is due to insufficient validation of user-supplied URLs in",
+        "published": "2026-05-02T08:16:27.477"
+      },
+      {
+        "cve_id": "CVE-2026-5324",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The Brizy \u2013 Page Builder plugin for WordPress is vulnerable to Unauthenticated Stored Cross-Site Scripting in all versions up to, and including, 2.8.11 This is due to a combination of missing nonce ve",
+        "published": "2026-05-02T09:16:22.477"
       }
     ]
   },
