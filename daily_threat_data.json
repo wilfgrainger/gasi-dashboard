@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-03T20:33:21.204912+00:00",
+  "generated_at": "2026-05-04T01:58:54.823697+00:00",
   "threat_score": {
-    "score": 5.0,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.5,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 1.0,
+        "value": 6,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,10 +238,52 @@
     ]
   },
   "nvd": {
-    "total": 40,
-    "critical_count": 0,
-    "high_count": 12,
+    "total": 57,
+    "critical_count": 6,
+    "high_count": 16,
     "cves": [
+      {
+        "cve_id": "CVE-2026-42369",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "GV-VMS V20 is a Video Monitoring Software used to gather the feeds of many surveillance cameras and manage other security devices. It is a native application accessed locally, but it is also possible ",
+        "published": "2026-05-04T01:16:04.153"
+      },
+      {
+        "cve_id": "CVE-2026-42364",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "An os command injection vulnerability exists in the DdnsSetting.cgi functionality of GeoVision LPC2011/LPC2211 1.10. A specially crafted DDNS configuration can lead to arbitrary command execution. An ",
+        "published": "2026-05-04T01:16:03.470"
+      },
+      {
+        "cve_id": "CVE-2026-42368",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A privilege escalation vulnerability exists in the Web Interface functionality of GeoVision LPC2011/LPC2211 1.10. A specially crafted HTTP request can lead to execute priviledged operation. An attacke",
+        "published": "2026-05-04T01:16:04.020"
+      },
+      {
+        "cve_id": "CVE-2026-7161",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "An insufficient encryption vulnerability exists in the Device Authentication functionality of GeoVision GV-IP Device Utility 9.0.5. Listening to broadcast packets can lead to credentials leak. An atta",
+        "published": "2026-05-04T01:16:04.447"
+      },
+      {
+        "cve_id": "CVE-2026-42370",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "A stack overflow vulnerability exists in the WebCam Server Login functionality of GeoVision GV-VMS V20 20.0.2. A specially crafted HTTP request can lead to an arbitrary code execution. An attacker can",
+        "published": "2026-05-04T01:16:04.310"
+      },
+      {
+        "cve_id": "CVE-2026-7372",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "A stack overflow vulnerability exists in the WebCam Server Login functionality of GeoVision GV-VMS V20 20.0.2. A specially crafted HTTP request can lead to an arbitrary code execution. An attacker can",
+        "published": "2026-05-04T01:16:04.730"
+      },
       {
         "cve_id": "CVE-2026-7674",
         "severity": "HIGH",
@@ -271,18 +313,32 @@
         "published": "2026-05-03T07:16:25.390"
       },
       {
-        "cve_id": "CVE-2026-7668",
+        "cve_id": "CVE-2026-7717",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was identified in MikroTik RouterOS 6.49.8. This vulnerability affects the function ASN1_STRING_data in the library nova/lib/www/scep.p of the component SCEP Endpoint. The manipulation",
-        "published": "2026-05-02T21:16:07.677"
+        "base_score": 8.8,
+        "description": "A vulnerability was determined in Totolink WA300 5.2cu.7112_B20190227. This issue affects the function UploadCustomModule of the file /cgi-bin/cstecgi.cgi of the component POST Request Handler. Execut",
+        "published": "2026-05-04T01:16:05.380"
       },
       {
-        "cve_id": "CVE-2026-7670",
+        "cve_id": "CVE-2026-42365",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A flaw has been found in Jinher OA 1.0. The affected element is an unknown function of the file /C6/JHSoft.Web.PlanSummarize/UserSel.aspx. This manipulation of the argument DeptIDList causes sql injec",
-        "published": "2026-05-02T23:16:16.860"
+        "base_score": 8.6,
+        "description": "A guessable session cookie vulnerability exists in the Web Interface functionality of GeoVision LPC2011/LPC2211 1.10. A specially crafted series of HTTP requests can lead to an authentication bypas. A",
+        "published": "2026-05-04T01:16:03.620"
+      },
+      {
+        "cve_id": "CVE-2026-42366",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "Multiple reflected cross-site scripting (xss) vulnerabilities exist in the Web Interface / ssi.cgi functionality of GeoVision LPC2011/LPC2211 1.10. A specially crafted malicious url can lead to an arb",
+        "published": "2026-05-04T01:16:03.753"
+      },
+      {
+        "cve_id": "CVE-2026-7371",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "Multiple reflected cross-site scripting (xss) vulnerabilities exist in the Web Interface / ssi.cgi functionality of GeoVision LPC2011/LPC2211 1.10. A specially crafted malicious url can lead to an arb",
+        "published": "2026-05-04T01:16:04.590"
       },
       {
         "cve_id": "CVE-2026-7679",
@@ -320,67 +376,11 @@
         "published": "2026-05-03T17:16:13.393"
       },
       {
-        "cve_id": "CVE-2026-5063",
+        "cve_id": "CVE-2026-7710",
         "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The NEX-Forms \u2013 Ultimate Forms Plugin for WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via POST parameter key names in the submit_nex_form() function in versions up to, ",
-        "published": "2026-05-03T06:15:57.650"
-      },
-      {
-        "cve_id": "CVE-2026-7681",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "A security vulnerability has been detected in jsbroks COCO Annotator up to 0.11.1. Affected by this vulnerability is an unknown functionality of the file backend/webserver/api/datasets.py of the compo",
-        "published": "2026-05-03T06:15:58.190"
-      },
-      {
-        "cve_id": "CVE-2026-7672",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A security vulnerability has been detected in youlaitech youlai-boot up to 2.21.1. This affects the function getUserList of the file src/main/java/com/youlai/boot/system/controller/UserController.java",
-        "published": "2026-05-03T00:16:16.317"
-      },
-      {
-        "cve_id": "CVE-2026-7678",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A vulnerability was identified in YunaiV yudao-cloud up to 2026.01. This affects the function getDataBySQL of the file yudao-module-report-biz/src/main/java/io/github/ruoyi/report/service/impl/GoViewD",
-        "published": "2026-05-03T05:15:59.030"
-      },
-      {
-        "cve_id": "CVE-2026-7682",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A security flaw has been discovered in Edimax BR-6208AC 1.02. The impacted element is the function setWAN of the file /goform/setWAN of the component L2TP Mode. The manipulation of the argument L2TPUs",
-        "published": "2026-05-03T07:16:24.807"
-      },
-      {
-        "cve_id": "CVE-2026-7683",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A weakness has been identified in Edimax BR-6428nC up to 1.16. This affects an unknown function of the file /goform/setWAN of the component Web Interface. This manipulation of the argument pppUserName",
-        "published": "2026-05-03T07:16:25.010"
-      },
-      {
-        "cve_id": "CVE-2026-7687",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A vulnerability was determined in langflow-ai langflow up to 1.8.4. Affected by this issue is the function CodeParser.parse_callable_details of the file src/lfx/src/lfx/custom/code_parser/code_parser.",
-        "published": "2026-05-03T09:16:03.680"
-      },
-      {
-        "cve_id": "CVE-2026-7690",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A weakness has been identified in Wavlink WL-WN570HA1 R70HA1 V1410_221110. This issue affects the function set_sys_adm of the file /cgi-bin/adm.cgi. This manipulation of the argument Username causes c",
-        "published": "2026-05-03T10:16:17.660"
-      },
-      {
-        "cve_id": "CVE-2026-7691",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A security vulnerability has been detected in Wavlink WL-WN570HA1 R70HA1 V1410_221110. Impacted is the function set_sys_cmd of the file /cgi-bin/adm.cgi. Such manipulation of the argument command lead",
-        "published": "2026-05-03T11:16:13.263"
+        "base_score": 7.3,
+        "description": "A security flaw has been discovered in YunaiV yudao-cloud up to 3.8.0. This affects the function doFilterInternal of the file JwtAuthenticationTokenFilter.java of the component Ruoyi-Vue-Pro. Performi",
+        "published": "2026-05-04T00:16:39.633"
       }
     ]
   },
