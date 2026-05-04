@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-04T10:05:54.204936+00:00",
+  "generated_at": "2026-05-04T13:23:09.169939+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
-        "score": 2.5,
+        "value": 10,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -239,8 +239,8 @@
   },
   "nvd": {
     "total": 84,
-    "critical_count": 9,
-    "high_count": 15,
+    "critical_count": 10,
+    "high_count": 18,
     "cves": [
       {
         "cve_id": "CVE-2026-42369",
@@ -292,6 +292,13 @@
         "published": "2026-05-04T01:16:04.447"
       },
       {
+        "cve_id": "CVE-2026-7482",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Ollama before 0.17.1 contains a heap out-of-bounds read vulnerability in the GGUF model loader. The /api/create endpoint accepts an attacker-supplied GGUF file in which the declared tensor offset and ",
+        "published": "2026-05-04T13:16:01.727"
+      },
+      {
         "cve_id": "CVE-2026-42370",
         "severity": "CRITICAL",
         "base_score": 9.0,
@@ -313,11 +320,39 @@
         "published": "2026-05-04T01:16:05.380"
       },
       {
+        "cve_id": "CVE-2026-7748",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A weakness has been identified in Totolink N300RH 3.2.4-B20220812. Affected by this issue is the function setUpgradeFW of the file /cgi-bin/cstecgi.cgi of the component POST Request Handler. Executing",
+        "published": "2026-05-04T10:16:00.850"
+      },
+      {
+        "cve_id": "CVE-2026-7749",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A security vulnerability has been detected in Totolink N300RH 3.2.4-B20220812. This affects the function setWanConfig of the file /cgi-bin/cstecgi.cgi of the component POST Request Handler. The manipu",
+        "published": "2026-05-04T10:16:01.040"
+      },
+      {
+        "cve_id": "CVE-2026-7750",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was detected in Totolink N300RH 3.2.4-B20220812. This vulnerability affects the function setMacFilterRules of the file /cgi-bin/cstecgi.cgi of the component POST Request Handler. The m",
+        "published": "2026-05-04T10:16:01.203"
+      },
+      {
         "cve_id": "CVE-2026-42365",
         "severity": "HIGH",
         "base_score": 8.6,
         "description": "A guessable session cookie vulnerability exists in the Web Interface functionality of GeoVision LPC2011/LPC2211 1.10. A specially crafted series of HTTP requests can lead to an authentication bypas. A",
         "published": "2026-05-04T01:16:03.620"
+      },
+      {
+        "cve_id": "CVE-2026-33846",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A heap buffer overflow vulnerability exists in the DTLS handshake fragment reassembly logic of GnuTLS. The issue arises in merge_handshake_packet() where incoming handshake fragments are matched and m",
+        "published": "2026-05-04T10:15:59.690"
       },
       {
         "cve_id": "CVE-2026-42366",
@@ -334,20 +369,6 @@
         "published": "2026-05-04T01:16:04.590"
       },
       {
-        "cve_id": "CVE-2026-7694",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A flaw has been found in Acrel Electrical ECEMS Enterprise Microgrid Energy Efficiency Management System 1.3.0. The impacted element is an unknown function of the file /SubstationWEBV2/main/elecMaxMin",
-        "published": "2026-05-03T12:15:59.700"
-      },
-      {
-        "cve_id": "CVE-2026-7695",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability has been found in Acrel Electrical EEMS Enterprise Power Operation and Maintenance Cloud Platform 1.3.0. This affects an unknown function of the file /SubstationWEBV2/main/elecMaxMinAv",
-        "published": "2026-05-03T13:16:08.797"
-      },
-      {
         "cve_id": "CVE-2026-7698",
         "severity": "HIGH",
         "base_score": 7.3,
@@ -360,27 +381,6 @@
         "base_score": 7.3,
         "description": "A flaw has been found in AV Stumpfl Pixera Two Media Server up to 25.2 R2. Impacted is an unknown function of the component Websocket API. This manipulation causes code injection. The attack can be in",
         "published": "2026-05-03T17:16:13.393"
-      },
-      {
-        "cve_id": "CVE-2026-7710",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security flaw has been discovered in YunaiV yudao-cloud up to 3.8.0. This affects the function doFilterInternal of the file JwtAuthenticationTokenFilter.java of the component Ruoyi-Vue-Pro. Performi",
-        "published": "2026-05-04T00:16:39.633"
-      },
-      {
-        "cve_id": "CVE-2026-7711",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A weakness has been identified in MindsDB up to 26.01. This impacts the function exec of the file mindsdb/integrations/handlers/byom_handler/proc_wrapper.py of the component Engine Handler. Executing ",
-        "published": "2026-05-04T00:16:39.817"
-      },
-      {
-        "cve_id": "CVE-2026-7723",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A flaw has been found in PrefectHQ prefect up to 3.6.13. Affected is an unknown function of the file /api/events/in of the component WebSocket Endpoint. Executing a manipulation can lead to missing au",
-        "published": "2026-05-04T03:16:13.143"
       }
     ]
   },
