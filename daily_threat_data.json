@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T20:58:53.134502+00:00",
+  "generated_at": "2026-05-05T01:59:08.111868+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 10,
+        "value": 11,
         "score": 3.0,
         "max": 3
       },
@@ -238,31 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 186,
-    "critical_count": 10,
-    "high_count": 25,
+    "total": 179,
+    "critical_count": 11,
+    "high_count": 26,
     "cves": [
-      {
-        "cve_id": "CVE-2026-42369",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "GV-VMS V20 is a Video Monitoring Software used to gather the feeds of many surveillance cameras and manage other security devices. It is a native application accessed locally, but it is also possible ",
-        "published": "2026-05-04T01:16:04.153"
-      },
-      {
-        "cve_id": "CVE-2026-42364",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "An os command injection vulnerability exists in the DdnsSetting.cgi functionality of GeoVision LPC2011/LPC2211 1.10. A specially crafted DDNS configuration can lead to arbitrary command execution. An ",
-        "published": "2026-05-04T01:16:03.470"
-      },
-      {
-        "cve_id": "CVE-2026-42368",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A privilege escalation vulnerability exists in the Web Interface functionality of GeoVision LPC2011/LPC2211 1.10. A specially crafted HTTP request can lead to execute priviledged operation. An attacke",
-        "published": "2026-05-04T01:16:04.020"
-      },
       {
         "cve_id": "CVE-2026-7719",
         "severity": "CRITICAL",
@@ -285,11 +264,53 @@
         "published": "2026-05-04T09:16:01.117"
       },
       {
-        "cve_id": "CVE-2026-7161",
+        "cve_id": "CVE-2026-24118",
         "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "An insufficient encryption vulnerability exists in the Device Authentication functionality of GeoVision GV-IP Device Utility 9.0.5. Listening to broadcast packets can lead to credentials leak. An atta",
-        "published": "2026-05-04T01:16:04.447"
+        "base_score": 9.8,
+        "description": "vm2 is an open source vm/sandbox for Node.js. Prior to version 3.11.0, VM2 suffers from a sandbox breakout vulnerability. This allows attackers to write code which can escape from the VM2 sandbox and ",
+        "published": "2026-05-04T17:16:21.643"
+      },
+      {
+        "cve_id": "CVE-2026-24120",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "vm2 is an open source vm/sandbox for Node.js. Prior to version 3.10.5, the fix for CVE-2023-37466 is insufficient and can be circumvented allowing attackers to write code which can escape from the VM2",
+        "published": "2026-05-04T17:16:21.813"
+      },
+      {
+        "cve_id": "CVE-2026-24781",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "vm2 is an open source vm/sandbox for Node.js. Prior to version 3.11.0, VM2 suffers from a sandbox breakout vulnerability through the inspect function. This allows attackers to write code which can esc",
+        "published": "2026-05-04T17:16:21.960"
+      },
+      {
+        "cve_id": "CVE-2026-26332",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "vm2 is an open source vm/sandbox for Node.js. Prior to version 3.11.0, SuppressedError allows attackers to escape the sandbox and run arbitrary code. This issue has been patched in version 3.11.0.",
+        "published": "2026-05-04T17:16:22.403"
+      },
+      {
+        "cve_id": "CVE-2026-26956",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "vm2 is an open source vm/sandbox for Node.js. In version 3.10.4, vm2 is vulnerable to full sandbox escape with arbitrary code execution. Attacker code inside VM.run() obtains host process object and r",
+        "published": "2026-05-04T17:16:22.553"
+      },
+      {
+        "cve_id": "CVE-2026-42076",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Evolver is a GEP-powered self-evolving engine for AI agents. Prior to version 1.69.3, a command injection vulnerability in the _extractLLM() function allows attackers to execute arbitrary shell comman",
+        "published": "2026-05-04T17:16:24.440"
+      },
+      {
+        "cve_id": "CVE-2026-25293",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Buffer overflow due to incorrect authorization in PLC FW",
+        "published": "2026-05-04T17:16:22.270"
       },
       {
         "cve_id": "CVE-2026-7482",
@@ -297,27 +318,6 @@
         "base_score": 9.1,
         "description": "Ollama before 0.17.1 contains a heap out-of-bounds read vulnerability in the GGUF model loader. The /api/create endpoint accepts an attacker-supplied GGUF file in which the declared tensor offset and ",
         "published": "2026-05-04T13:16:01.727"
-      },
-      {
-        "cve_id": "CVE-2026-42370",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "A stack overflow vulnerability exists in the WebCam Server Login functionality of GeoVision GV-VMS V20 20.0.2. A specially crafted HTTP request can lead to an arbitrary code execution. An attacker can",
-        "published": "2026-05-04T01:16:04.310"
-      },
-      {
-        "cve_id": "CVE-2026-7372",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "A stack overflow vulnerability exists in the WebCam Server Login functionality of GeoVision GV-VMS V20 20.0.2. A specially crafted HTTP request can lead to an arbitrary code execution. An attacker can",
-        "published": "2026-05-04T01:16:04.730"
-      },
-      {
-        "cve_id": "CVE-2026-7717",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was determined in Totolink WA300 5.2cu.7112_B20190227. This issue affects the function UploadCustomModule of the file /cgi-bin/cstecgi.cgi of the component POST Request Handler. Execut",
-        "published": "2026-05-04T01:16:05.380"
       },
       {
         "cve_id": "CVE-2026-7748",
@@ -362,11 +362,18 @@
         "published": "2026-05-04T15:16:03.583"
       },
       {
-        "cve_id": "CVE-2026-42365",
+        "cve_id": "CVE-2026-29514",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "NetBox versions 4.3.5 through 4.5.4 contain a remote code execution vulnerability in the RenderTemplateMixin.get_environment_params() method that allows authenticated users with exporttemplate or conf",
+        "published": "2026-05-04T17:16:22.880"
+      },
+      {
+        "cve_id": "CVE-2026-42079",
         "severity": "HIGH",
         "base_score": 8.6,
-        "description": "A guessable session cookie vulnerability exists in the Web Interface functionality of GeoVision LPC2011/LPC2211 1.10. A specially crafted series of HTTP requests can lead to an authentication bypas. A",
-        "published": "2026-05-04T01:16:03.620"
+        "description": "PPTAgent is an agentic framework for reflective PowerPoint generation. Prior to commit 418491a, PPTAgent is vulnerable to arbitrary code execution via Python eval() of LLM-generated code with builtins",
+        "published": "2026-05-04T17:16:24.887"
       },
       {
         "cve_id": "CVE-2026-6266",
@@ -374,13 +381,6 @@
         "base_score": 8.3,
         "description": "A flaw was found in the AAP gateway. The user auto-link strategy, introduced in AAP 2.6, automatically links an external Identity Provider (IDP) identity to an existing AAP user account based on email",
         "published": "2026-05-04T14:16:35.970"
-      },
-      {
-        "cve_id": "CVE-2026-29199",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "phpBB before 3.3.16 is vulnerable to Host Header Injection that can lead to password rest link poisoning. When force_server_vars is disabled, the servers hostname may be extracted from the HTTP Host h",
-        "published": "2026-05-04T07:15:59.960"
       }
     ]
   },
