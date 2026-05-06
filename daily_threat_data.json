@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-06T10:09:08.666006+00:00",
+  "generated_at": "2026-05-06T13:30:27.227685+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
+        "value": 6,
         "score": 2.5,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 169,
-    "critical_count": 9,
-    "high_count": 29,
+    "total": 369,
+    "critical_count": 6,
+    "high_count": 10,
     "cves": [
       {
         "cve_id": "CVE-2026-7411",
@@ -248,20 +248,6 @@
         "base_score": 10.0,
         "description": "In Eclipse BaSyx Java Server SDK versions prior to 2.0.0-milestone-10, inadequate path normalization in the Submodel HTTP API allows an unauthenticated remote attacker to perform a path traversal atta",
         "published": "2026-05-05T16:16:18.360"
-      },
-      {
-        "cve_id": "CVE-2023-54342",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Eclipse Equinox OSGi versions 3.8 through 3.18 contain a remote code execution vulnerability in the console interface that allows unauthenticated attackers to execute arbitrary code by exploiting the ",
-        "published": "2026-05-05T12:16:15.650"
-      },
-      {
-        "cve_id": "CVE-2023-54344",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Eclipse Equinox OSGi 3.7.2 and earlier contains a remote code execution vulnerability that allows unauthenticated attackers to execute arbitrary commands by sending payloads to the console interface. ",
-        "published": "2026-05-05T12:16:16.710"
       },
       {
         "cve_id": "CVE-2026-7834",
@@ -285,18 +271,11 @@
         "published": "2026-05-05T19:16:21.380"
       },
       {
-        "cve_id": "CVE-2026-43534",
+        "cve_id": "CVE-2026-7854",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "OpenClaw before 2026.4.10 contains an input validation vulnerability that allows external hook metadata to be enqueued as trusted system events. Attackers can supply malicious hook names to escalate u",
-        "published": "2026-05-05T12:16:19.750"
-      },
-      {
-        "cve_id": "CVE-2026-43566",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "OpenClaw versions 2026.4.7 before 2026.4.14 contain a privilege escalation vulnerability where heartbeat owner downgrade logic skips webhook wake events carrying untrusted content. Attackers can explo",
-        "published": "2026-05-05T12:16:20.040"
+        "base_score": 9.8,
+        "description": "A security vulnerability has been detected in D-Link DI-8100 16.07.26A1. Affected by this vulnerability is the function url_rule_asp of the file /url_rule.asp of the component POST Parameter Handler. ",
+        "published": "2026-05-05T19:16:23.540"
       },
       {
         "cve_id": "CVE-2026-36356",
@@ -306,67 +285,11 @@
         "published": "2026-05-05T14:16:08.873"
       },
       {
-        "cve_id": "CVE-2023-54345",
+        "cve_id": "CVE-2026-7855",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Frappe Framework ERPNext 13.4.0 contains a sandbox escape vulnerability in RestrictedPython that allows authenticated users with System Manager role to execute arbitrary code by exploiting frame intro",
-        "published": "2026-05-05T12:16:16.850"
-      },
-      {
-        "cve_id": "CVE-2023-54348",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "ERPGo SaaS 3.9 contains a CSV injection vulnerability that allows authenticated attackers to execute arbitrary code by injecting formula payloads into vendor name fields. Attackers can add malicious f",
-        "published": "2026-05-05T12:16:17.300"
-      },
-      {
-        "cve_id": "CVE-2026-42434",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenClaw versions 2026.4.5 before 2026.4.10 contain a sandbox escape vulnerability allowing sandboxed agents to override exec routing by specifying host=node. Attackers can bypass sandbox boundaries a",
-        "published": "2026-05-05T12:16:17.767"
-      },
-      {
-        "cve_id": "CVE-2026-42435",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenClaw versions from 2026.2.22 before 2026.4.12 contain an insufficient shell-wrapper detection vulnerability allowing attackers to inject environment variable assignments at the argv level. Attacke",
-        "published": "2026-05-05T12:16:17.910"
-      },
-      {
-        "cve_id": "CVE-2026-43530",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenClaw versions 2026.2.23 before 2026.4.12 contain a weakened exec approval binding vulnerability in busybox and toybox applet execution that allows attackers to obscure which applet would actually ",
-        "published": "2026-05-05T12:16:19.200"
-      },
-      {
-        "cve_id": "CVE-2026-43569",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenClaw before 2026.4.9 contains an authentication bypass vulnerability allowing untrusted workspace plugins to be auto-enabled during non-interactive onboarding when provider auth choices are shadow",
-        "published": "2026-05-05T12:16:20.493"
-      },
-      {
-        "cve_id": "CVE-2026-43571",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenClaw before 2026.4.10 contains a plugin trust bypass vulnerability that allows channel setup catalog lookups to resolve workspace plugin shadows before bundled channel plugins. Attackers can explo",
-        "published": "2026-05-05T12:16:20.880"
-      },
-      {
-        "cve_id": "CVE-2026-6261",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Betheme theme for WordPress is vulnerable to Arbitrary File Upload in versions up to, and including, 28.4. This is due to the upload_icons() function workflow moving and unzipping user-controlled ",
-        "published": "2026-05-05T12:16:21.453"
-      },
-      {
-        "cve_id": "CVE-2026-43533",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "OpenClaw before 2026.4.10 contains an arbitrary file read vulnerability in QQBot media tags that allows attackers to reference host-local paths outside the intended media storage boundary. Attackers c",
-        "published": "2026-05-05T12:16:19.610"
+        "description": "A vulnerability was detected in D-Link DI-8100 16.07.26A1. Affected by this issue is the function tggl_asp of the file /tggl.asp of the component HTTP Request Handler. Performing a manipulation of the",
+        "published": "2026-05-05T19:16:23.710"
       },
       {
         "cve_id": "CVE-2026-7412",
@@ -376,11 +299,88 @@
         "published": "2026-05-05T16:16:18.480"
       },
       {
-        "cve_id": "CVE-2026-42439",
+        "cve_id": "CVE-2026-44331",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "OpenClaw before 2026.4.10 contains a server-side request forgery policy bypass vulnerability in the browser tabs action select and close routes. Attackers can bypass configured browser SSRF policy pro",
-        "published": "2026-05-05T12:16:18.490"
+        "base_score": 8.1,
+        "description": "In ProFTPD through 1.3.9a before 7666224, a SQL injection vulnerability in sqltab_fetch_clients_cb() in contrib/mod_wrap2_sql.c allows a remote attacker to inject arbitrary SQL commands via a crafted ",
+        "published": "2026-05-05T20:16:39.680"
+      },
+      {
+        "cve_id": "CVE-2026-36355",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "The rtl8192cd Wi-Fi kernel driver in the Realtek rtl819x Jungle SDK (all known versions through v3.4.14B) does not perform any access control checks on the write_mem (ioctl 0x89F5) and read_mem (ioctl",
+        "published": "2026-05-05T14:16:08.737"
+      },
+      {
+        "cve_id": "CVE-2026-42997",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "An issue was discovered in idrac in OpenStack Ironic before 35.0.1. During import, a user invoking molds can request authorization to be sent to a remote endpoint. The credential forwarded is a time-l",
+        "published": "2026-05-05T19:16:22.817"
+      },
+      {
+        "cve_id": "CVE-2026-4304",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The WeePie Cookie Allow plugin for WordPress is vulnerable to SQL Injection via the 'consent' parameter in all versions up to, and including, 3.4.11 due to insufficient escaping on the user supplied p",
+        "published": "2026-05-05T14:16:09.170"
+      },
+      {
+        "cve_id": "CVE-2026-29168",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "Allocation of Resources Without Limits or Throttling vulnerability in Apache HTTP Server's\u00a0 mod_md via OCSP response data.\n\nThis issue affects Apache HTTP Server: from 2.4.30 through 2.4.66.\n\nUsers ar",
+        "published": "2026-05-05T14:16:08.507"
+      },
+      {
+        "cve_id": "CVE-2026-7851",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "A vulnerability was identified in D-Link DI-8100 16.07.26A1. This affects the function sprintf of the file yyxz.asp. The manipulation of the argument ID leads to stack-based buffer overflow. The attac",
+        "published": "2026-05-05T18:16:03.947"
+      },
+      {
+        "cve_id": "CVE-2026-7856",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "A flaw has been found in D-Link DI-8100 16.07.26A1. This affects an unknown part of the file /url_member.asp of the component Web Management Interface. Executing a manipulation of the argument Name ca",
+        "published": "2026-05-05T20:16:41.500"
+      },
+      {
+        "cve_id": "CVE-2026-7857",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "A vulnerability has been found in D-Link DI-8100 16.07.26A1. This vulnerability affects the function sprintf of the file /user_group.asp of the component CGI Handler. The manipulation leads to buffer ",
+        "published": "2026-05-05T20:16:41.677"
+      },
+      {
+        "cve_id": "CVE-2026-41950",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Dify before version 1.14.0 contains an authorization bypass vulnerability that allows authenticated users to read the full contents of files uploaded by other users within the same tenant by supplying",
+        "published": "2026-05-05T21:16:23.233"
+      },
+      {
+        "cve_id": "CVE-2026-7844",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A vulnerability was detected in chatchat-space Langchain-Chatchat up to 0.3.1.3. This vulnerability affects the function files/list_files/retrieve_file/retrieve_file_content/delete_file of the file li",
+        "published": "2026-05-05T16:16:19.217"
+      },
+      {
+        "cve_id": "CVE-2026-34000",
+        "severity": "MEDIUM",
+        "base_score": 6.1,
+        "description": "A flaw was found in the X.Org X server. This out-of-bounds read vulnerability in the XKB geometry processing, specifically within the `CheckSetGeom()` and `XkbAddGeomKeyAlias` functions, allows an att",
+        "published": "2026-05-05T16:16:11.647"
+      },
+      {
+        "cve_id": "CVE-2026-34002",
+        "severity": "MEDIUM",
+        "base_score": 6.1,
+        "description": "A flaw was found in the X.Org X server. This vulnerability, an out-of-bounds read, affects the XKB (X Keyboard Extension) modifier map handling. An attacker with access to the X11 server can exploit t",
+        "published": "2026-05-05T16:16:11.787"
       }
     ]
   },
