@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-05-06T17:22:32.759544+00:00",
+  "generated_at": "2026-05-06T21:03:17.890184+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 29,
+        "value": 30,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
-        "score": 2.5,
+        "value": 2,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1587,
-    "recent_30d_count": 29,
+    "total_catalog_count": 1588,
+    "recent_30d_count": 30,
     "recent": [
+      {
+        "cve_id": "CVE-2026-0300",
+        "vendor": "Palo Alto Networks",
+        "product": "PAN-OS",
+        "name": "Palo Alto Networks PAN-OS Out-of-bounds Write Vulnerability",
+        "date_added": "2026-05-06",
+        "due_date": "2026-05-09",
+        "description": "Palo Alto Networks PAN-OS contains an out-of-bounds write vulnerability in the User-ID Authentication Portal (aka Captive Portal) service that can allow an unauthenticated attacker to execute arbitrar",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-31431",
         "vendor": "Linux",
@@ -224,52 +234,14 @@
         "due_date": "2026-04-30",
         "description": "Apache ActiveMQ contains an improper input validation vulnerability that allows for code injection.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2009-0238",
-        "vendor": "Microsoft",
-        "product": "Office",
-        "name": "Microsoft Office Remote Code Execution",
-        "date_added": "2026-04-14",
-        "due_date": "2026-04-28",
-        "description": "Microsoft Office Excel contains a remote code execution vulnerability that could allow an attacker to take complete control of an affected system if a user opens a specially crafted Excel file that in",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 354,
-    "critical_count": 5,
-    "high_count": 17,
+    "total": 487,
+    "critical_count": 2,
+    "high_count": 12,
     "cves": [
-      {
-        "cve_id": "CVE-2026-7853",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A weakness has been identified in D-Link DI-8100 16.07.26A1. Affected is the function sprintf of the file /auto_reboot.asp of the component HTTP Handler. This manipulation of the argument enable/time ",
-        "published": "2026-05-05T18:16:04.123"
-      },
-      {
-        "cve_id": "CVE-2026-27960",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "OpenCTI is an open source platform for managing cyber threat intelligence knowledge and observables. In versions 6.6.0 through 6.9.12, there is a privilege escalation vulnerability that can be exploit",
-        "published": "2026-05-05T19:16:21.380"
-      },
-      {
-        "cve_id": "CVE-2026-38428",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Kestra v1.3.3 and before is vulnerable to SQL Injection. The vulnerability occurs because user-controlled input from a GET parameter is directly concatenated into an SQL query without proper sanitizat",
-        "published": "2026-05-05T19:16:21.910"
-      },
-      {
-        "cve_id": "CVE-2026-7854",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A security vulnerability has been detected in D-Link DI-8100 16.07.26A1. Affected by this vulnerability is the function url_rule_asp of the file /url_rule.asp of the component POST Parameter Handler. ",
-        "published": "2026-05-05T19:16:23.540"
-      },
       {
         "cve_id": "CVE-2026-28780",
         "severity": "CRITICAL",
@@ -278,11 +250,11 @@
         "published": "2026-05-05T22:16:00.390"
       },
       {
-        "cve_id": "CVE-2026-7855",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was detected in D-Link DI-8100 16.07.26A1. Affected by this issue is the function tggl_asp of the file /tggl.asp of the component HTTP Request Handler. Performing a manipulation of the",
-        "published": "2026-05-05T19:16:23.710"
+        "cve_id": "CVE-2026-40010",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Missing invocation of Servlet http web request method changeSessionId after session binding can be exploited for a\u00a0session fixation attack in Apache Wicket.\n\nThis issue affects Apache Wicket: from 8.0",
+        "published": "2026-05-06T10:16:20.093"
       },
       {
         "cve_id": "CVE-2026-7841",
@@ -292,25 +264,11 @@
         "published": "2026-05-06T08:16:04.490"
       },
       {
-        "cve_id": "CVE-2026-44331",
+        "cve_id": "CVE-2025-31951",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "In ProFTPD through 1.3.9a before 7666224, a SQL injection vulnerability in sqltab_fetch_clients_cb() in contrib/mod_wrap2_sql.c allows a remote attacker to inject arbitrary SQL commands via a crafted ",
-        "published": "2026-05-05T20:16:39.680"
-      },
-      {
-        "cve_id": "CVE-2026-42997",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "An issue was discovered in idrac in OpenStack Ironic before 35.0.1. During import, a user invoking molds can request authorization to be sent to a remote endpoint. The credential forwarded is a time-l",
-        "published": "2026-05-05T19:16:22.817"
-      },
-      {
-        "cve_id": "CVE-2024-52911",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Bitcoin Core through 28.x has a security issue, the details of which are not disclosed. The earliest affected version is 0.14.",
-        "published": "2026-05-05T20:16:34.923"
+        "base_score": 8.8,
+        "description": "HCL BigFix RunBookAI is affected by a Unvalidated Command Input / Potential Command Smuggling vulnerability. A flaw in a component's input handling was identified that could permit unauthorized comman",
+        "published": "2026-05-06T12:16:26.087"
       },
       {
         "cve_id": "CVE-2025-71251",
@@ -362,25 +320,67 @@
         "published": "2026-05-06T10:16:18.903"
       },
       {
-        "cve_id": "CVE-2026-7851",
+        "cve_id": "CVE-2026-43646",
         "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "A vulnerability was identified in D-Link DI-8100 16.07.26A1. This affects the function sprintf of the file yyxz.asp. The manipulation of the argument ID leads to stack-based buffer overflow. The attac",
-        "published": "2026-05-05T18:16:03.947"
+        "base_score": 7.5,
+        "description": "Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Apache Wicket.\n\nThis issue affects Apache Wicket: from 8.0.0 through 8.17.0, from 9.0.0 through 9.22.0, from 10.0.0 through ",
+        "published": "2026-05-06T10:16:26.037"
       },
       {
-        "cve_id": "CVE-2026-7856",
+        "cve_id": "CVE-2026-7332",
         "severity": "HIGH",
         "base_score": 7.2,
-        "description": "A flaw has been found in D-Link DI-8100 16.07.26A1. This affects an unknown part of the file /url_member.asp of the component Web Management Interface. Executing a manipulation of the argument Name ca",
-        "published": "2026-05-05T20:16:41.500"
+        "description": "The LatePoint \u2013 Calendar Booking Plugin for Appointments and Events plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'booking_form_page_url' parameter in all versions up to, a",
+        "published": "2026-05-06T08:16:04.090"
       },
       {
-        "cve_id": "CVE-2026-7857",
+        "cve_id": "CVE-2026-7448",
         "severity": "HIGH",
         "base_score": 7.2,
-        "description": "A vulnerability has been found in D-Link DI-8100 16.07.26A1. This vulnerability affects the function sprintf of the file /user_group.asp of the component CGI Handler. The manipulation leads to buffer ",
-        "published": "2026-05-05T20:16:41.677"
+        "description": "The LatePoint \u2013 Calendar Booking Plugin for Appointments and Events plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'first_name' parameter in all versions up to, and includin",
+        "published": "2026-05-06T08:16:04.230"
+      },
+      {
+        "cve_id": "CVE-2026-35255",
+        "severity": "MEDIUM",
+        "base_score": 6.6,
+        "description": "Vulnerability in the Oracle\u00a0Cloud Native Environment Command Line Interface\u00a0product of Oracle Open Source Projects. The supported versions that is affected is v2.3.2. Easily exploitable vulnerability ",
+        "published": "2026-05-06T10:16:19.827"
+      },
+      {
+        "cve_id": "CVE-2026-41950",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Dify before version 1.14.0 contains an authorization bypass vulnerability that allows authenticated users to read the full contents of files uploaded by other users within the same tenant by supplying",
+        "published": "2026-05-05T21:16:23.233"
+      },
+      {
+        "cve_id": "CVE-2026-5753",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "The All-in-One WP Migration Unlimited Extension plugin for WordPress is vulnerable to Missing Authorization in versions up to, and including, 2.83. This is due to the 'Ai1wmve_Schedules_Controller::sa",
+        "published": "2026-05-06T04:16:09.097"
+      },
+      {
+        "cve_id": "CVE-2026-43975",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "FolderUploadsFileManager in Apache Wicket does not validate or sanitize the uploadFieldId parameter or the clientFileName\n before constructing file paths, allowing an unauthenticated attacker to\n writ",
+        "published": "2026-05-06T10:16:26.163"
+      },
+      {
+        "cve_id": "CVE-2026-6672",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "The Affiliate Program Suite \u2014 SliceWP Affiliates plugin for WordPress is vulnerable to Stored Cross-Site Scripting via shortcode attributes in all versions up to, and including, 1.2.7. This is due to ",
+        "published": "2026-05-06T08:16:03.957"
+      },
+      {
+        "cve_id": "CVE-2026-7457",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "The LatePoint plugin for WordPress is vulnerable to Stored Cross-Site Scripting in all versions up to and including 5.5.0. This is due to insufficient input sanitization on the customer cabinet profil",
+        "published": "2026-05-06T08:16:04.360"
       }
     ]
   },
