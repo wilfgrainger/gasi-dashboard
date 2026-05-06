@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-06T13:30:27.227685+00:00",
+  "generated_at": "2026-05-06T17:22:32.759544+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
+        "value": 5,
         "score": 2.5,
         "max": 3
       },
@@ -238,24 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 369,
-    "critical_count": 6,
-    "high_count": 10,
+    "total": 354,
+    "critical_count": 5,
+    "high_count": 17,
     "cves": [
-      {
-        "cve_id": "CVE-2026-7411",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "In Eclipse BaSyx Java Server SDK versions prior to 2.0.0-milestone-10, inadequate path normalization in the Submodel HTTP API allows an unauthenticated remote attacker to perform a path traversal atta",
-        "published": "2026-05-05T16:16:18.360"
-      },
-      {
-        "cve_id": "CVE-2026-7834",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A security vulnerability has been detected in EFM ipTIME NAS1dual 1.5.24. This issue affects the function get_csrf_whites of the file /cgi/advanced/misc_main.cgi. Such manipulation leads to stack-base",
-        "published": "2026-05-05T14:16:09.687"
-      },
       {
         "cve_id": "CVE-2026-7853",
         "severity": "CRITICAL",
@@ -271,6 +257,13 @@
         "published": "2026-05-05T19:16:21.380"
       },
       {
+        "cve_id": "CVE-2026-38428",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Kestra v1.3.3 and before is vulnerable to SQL Injection. The vulnerability occurs because user-controlled input from a GET parameter is directly concatenated into an SQL query without proper sanitizat",
+        "published": "2026-05-05T19:16:21.910"
+      },
+      {
         "cve_id": "CVE-2026-7854",
         "severity": "CRITICAL",
         "base_score": 9.8,
@@ -278,11 +271,11 @@
         "published": "2026-05-05T19:16:23.540"
       },
       {
-        "cve_id": "CVE-2026-36356",
+        "cve_id": "CVE-2026-28780",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The GoAhead web server on MeiG Smart FORGE_SLT711 devices (firmware MDM9607.LE.1.0-00110-STD.PROD-1) allows unauthenticated OS command injection via the /action/SetRemoteAccessCfg endpoint.",
-        "published": "2026-05-05T14:16:08.873"
+        "base_score": 9.8,
+        "description": "Heap-based Buffer Overflow vulnerability in mod_proxy_ajp of Apache HTTP Server.\nIf mod_proxy_ajp connects to a malicious AJP server this AJP server can send a malicious AJP message back to mod_proxy_",
+        "published": "2026-05-05T22:16:00.390"
       },
       {
         "cve_id": "CVE-2026-7855",
@@ -292,11 +285,11 @@
         "published": "2026-05-05T19:16:23.710"
       },
       {
-        "cve_id": "CVE-2026-7412",
+        "cve_id": "CVE-2026-7841",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "In Eclipse BaSyx Java Server SDK versions prior to 2.0.0-milestone-10, the Operation Delegation feature fails to validate the destination URI of delegated requests. An unauthenticated remote attacker ",
-        "published": "2026-05-05T16:16:18.480"
+        "base_score": 8.8,
+        "description": "A remote code execution vulnerability\nexists in Notification Settings on GeoVision GV-ASWeb 6.2.0. An authenticated\nuser with System Setting permissions can execute arbitrary commands on the\nserver by",
+        "published": "2026-05-06T08:16:04.490"
       },
       {
         "cve_id": "CVE-2026-44331",
@@ -306,13 +299,6 @@
         "published": "2026-05-05T20:16:39.680"
       },
       {
-        "cve_id": "CVE-2026-36355",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "The rtl8192cd Wi-Fi kernel driver in the Realtek rtl819x Jungle SDK (all known versions through v3.4.14B) does not perform any access control checks on the write_mem (ioctl 0x89F5) and read_mem (ioctl",
-        "published": "2026-05-05T14:16:08.737"
-      },
-      {
         "cve_id": "CVE-2026-42997",
         "severity": "HIGH",
         "base_score": 7.7,
@@ -320,18 +306,60 @@
         "published": "2026-05-05T19:16:22.817"
       },
       {
-        "cve_id": "CVE-2026-4304",
+        "cve_id": "CVE-2024-52911",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "The WeePie Cookie Allow plugin for WordPress is vulnerable to SQL Injection via the 'consent' parameter in all versions up to, and including, 3.4.11 due to insufficient escaping on the user supplied p",
-        "published": "2026-05-05T14:16:09.170"
+        "description": "Bitcoin Core through 28.x has a security issue, the details of which are not disclosed. The earliest affected version is 0.14.",
+        "published": "2026-05-05T20:16:34.923"
       },
       {
-        "cve_id": "CVE-2026-29168",
+        "cve_id": "CVE-2025-71251",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "Allocation of Resources Without Limits or Throttling vulnerability in Apache HTTP Server's\u00a0 mod_md via OCSP response data.\n\nThis issue affects Apache HTTP Server: from 2.4.30 through 2.4.66.\n\nUsers ar",
-        "published": "2026-05-05T14:16:08.507"
+        "base_score": 7.5,
+        "description": "In IMS, there is a possible system crash due to improper input validation. This could lead to remote denial of service with no additional execution privileges needed.",
+        "published": "2026-05-06T02:16:03.400"
+      },
+      {
+        "cve_id": "CVE-2025-71252",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "In Modem IMS, there is a possible improper input validation. This could lead to remote denial of service with no additional execution privileges needed.",
+        "published": "2026-05-06T02:16:04.733"
+      },
+      {
+        "cve_id": "CVE-2025-71253",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "In Modem IMS, there is a possible improper input validation. This could lead to remote denial of service with no additional execution privileges needed.",
+        "published": "2026-05-06T02:16:04.857"
+      },
+      {
+        "cve_id": "CVE-2025-71254",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "In Modem IMS, there is a possible improper input validation. This could lead to remote denial of service with no additional execution privileges needed.",
+        "published": "2026-05-06T02:16:04.983"
+      },
+      {
+        "cve_id": "CVE-2025-71255",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "In Modem IMS, there is a possible improper input validation. This could lead to remote denial of service with no additional execution privileges needed.",
+        "published": "2026-05-06T02:16:05.093"
+      },
+      {
+        "cve_id": "CVE-2025-71256",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "In nr modem, there is a possible improper input validation. This could lead to remote denial of service with no additional execution privileges needed.",
+        "published": "2026-05-06T02:16:05.213"
+      },
+      {
+        "cve_id": "CVE-2026-1719",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Gravity Bookings Premium plugin for WordPress is vulnerable to SQL Injection in all versions up to, and including, 2.5.9 due to insufficient escaping on the user supplied parameter and lack of suf",
+        "published": "2026-05-06T10:16:18.903"
       },
       {
         "cve_id": "CVE-2026-7851",
@@ -353,34 +381,6 @@
         "base_score": 7.2,
         "description": "A vulnerability has been found in D-Link DI-8100 16.07.26A1. This vulnerability affects the function sprintf of the file /user_group.asp of the component CGI Handler. The manipulation leads to buffer ",
         "published": "2026-05-05T20:16:41.677"
-      },
-      {
-        "cve_id": "CVE-2026-41950",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Dify before version 1.14.0 contains an authorization bypass vulnerability that allows authenticated users to read the full contents of files uploaded by other users within the same tenant by supplying",
-        "published": "2026-05-05T21:16:23.233"
-      },
-      {
-        "cve_id": "CVE-2026-7844",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A vulnerability was detected in chatchat-space Langchain-Chatchat up to 0.3.1.3. This vulnerability affects the function files/list_files/retrieve_file/retrieve_file_content/delete_file of the file li",
-        "published": "2026-05-05T16:16:19.217"
-      },
-      {
-        "cve_id": "CVE-2026-34000",
-        "severity": "MEDIUM",
-        "base_score": 6.1,
-        "description": "A flaw was found in the X.Org X server. This out-of-bounds read vulnerability in the XKB geometry processing, specifically within the `CheckSetGeom()` and `XkbAddGeomKeyAlias` functions, allows an att",
-        "published": "2026-05-05T16:16:11.647"
-      },
-      {
-        "cve_id": "CVE-2026-34002",
-        "severity": "MEDIUM",
-        "base_score": 6.1,
-        "description": "A flaw was found in the X.Org X server. This vulnerability, an out-of-bounds read, affects the XKB (X Keyboard Extension) modifier map handling. An attacker with access to the X11 server can exploit t",
-        "published": "2026-05-05T16:16:11.787"
       }
     ]
   },
