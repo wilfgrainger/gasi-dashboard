@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-05-05T20:54:11.736242+00:00",
+  "generated_at": "2026-05-06T01:57:50.855652+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 30,
+        "value": 29,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
-        "score": 2.5,
+        "value": 11,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1587,
-    "recent_30d_count": 30,
+    "recent_30d_count": 29,
     "recent": [
       {
         "cve_id": "CVE-2026-31431",
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 192,
-    "critical_count": 9,
-    "high_count": 38,
+    "total": 188,
+    "critical_count": 11,
+    "high_count": 36,
     "cves": [
       {
         "cve_id": "CVE-2026-5722",
@@ -285,6 +285,13 @@
         "published": "2026-05-05T12:16:16.710"
       },
       {
+        "cve_id": "CVE-2026-7834",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A security vulnerability has been detected in EFM ipTIME NAS1dual 1.5.24. This issue affects the function get_csrf_whites of the file /cgi/advanced/misc_main.cgi. Such manipulation leads to stack-base",
+        "published": "2026-05-05T14:16:09.687"
+      },
+      {
         "cve_id": "CVE-2026-40797",
         "severity": "CRITICAL",
         "base_score": 9.3,
@@ -304,6 +311,13 @@
         "base_score": 9.1,
         "description": "OpenClaw versions 2026.4.7 before 2026.4.14 contain a privilege escalation vulnerability where heartbeat owner downgrade logic skips webhook wake events carrying untrusted content. Attackers can explo",
         "published": "2026-05-05T12:16:20.040"
+      },
+      {
+        "cve_id": "CVE-2026-36356",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The GoAhead web server on MeiG Smart FORGE_SLT711 devices (firmware MDM9607.LE.1.0-00110-STD.PROD-1) allows unauthenticated OS command injection via the /action/SetRemoteAccessCfg endpoint.",
+        "published": "2026-05-05T14:16:08.873"
       },
       {
         "cve_id": "CVE-2023-54345",
@@ -367,20 +381,6 @@
         "base_score": 8.7,
         "description": "Vulnerability in the Oracle MCP Server Helper Tool product of Oracle Open Source Projects (component: helper tool). The supported versions that is affected is 1.0.1-1.0.156. Easily exploitable vulnera",
         "published": "2026-05-05T04:16:16.530"
-      },
-      {
-        "cve_id": "CVE-2026-43533",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "OpenClaw before 2026.4.10 contains an arbitrary file read vulnerability in QQBot media tags that allows attackers to reference host-local paths outside the intended media storage boundary. Attackers c",
-        "published": "2026-05-05T12:16:19.610"
-      },
-      {
-        "cve_id": "CVE-2026-42439",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "OpenClaw before 2026.4.10 contains a server-side request forgery policy bypass vulnerability in the browser tabs action select and close routes. Attackers can bypass configured browser SSRF policy pro",
-        "published": "2026-05-05T12:16:18.490"
       }
     ]
   },
