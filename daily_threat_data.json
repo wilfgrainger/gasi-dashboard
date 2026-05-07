@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-07T13:29:14.695603+00:00",
+  "generated_at": "2026-05-07T17:41:43.463103+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 30,
+        "value": 31,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
+        "value": 3,
         "score": 2.0,
         "max": 3
       },
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1588,
-    "recent_30d_count": 30,
+    "total_catalog_count": 1589,
+    "recent_30d_count": 31,
     "recent": [
+      {
+        "cve_id": "CVE-2026-6973",
+        "vendor": "Ivanti",
+        "product": "Endpoint Manager Mobile (EPMM)",
+        "name": "Ivanti Endpoint Manager Mobile (EPMM) Improper Input Validation Vulnerability",
+        "date_added": "2026-05-07",
+        "due_date": "2026-05-10",
+        "description": "Ivanti Endpoint Manager Mobile (EPMM) contains an improper input validation vulnerability that allows a remotely authenticated user with administrative access to achieve remote code execution.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-0300",
         "vendor": "Palo Alto Networks",
@@ -224,23 +234,13 @@
         "due_date": "2026-05-04",
         "description": "JetBrains TeamCity contains a relative path traversal vulnerability that could allow limited admin actions to be performed.",
         "ransomware_use": "Known"
-      },
-      {
-        "cve_id": "CVE-2026-34197",
-        "vendor": "Apache",
-        "product": "ActiveMQ",
-        "name": "Apache ActiveMQ Improper Input Validation Vulnerability",
-        "date_added": "2026-04-16",
-        "due_date": "2026-04-30",
-        "description": "Apache ActiveMQ contains an improper input validation vulnerability that allows for code injection.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 309,
-    "critical_count": 2,
-    "high_count": 45,
+    "total": 317,
+    "critical_count": 3,
+    "high_count": 50,
     "cves": [
       {
         "cve_id": "CVE-2026-41930",
@@ -257,25 +257,11 @@
         "published": "2026-05-06T19:16:39.097"
       },
       {
-        "cve_id": "CVE-2026-20034",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability in the web-based management interface of Cisco Unity Connection could allow an authenticated, remote attacker to execute arbitrary code on an affected device.\r\n\r\nThis vulnerability is ",
-        "published": "2026-05-06T17:16:20.093"
-      },
-      {
-        "cve_id": "CVE-2026-42503",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "gopls by default communicates via pipe. However, -port and -listen flags are supported as means of debugging.\nIf -listen is given a value without an explicit host (e.g. :8080), or -port is used, gopls",
-        "published": "2026-05-06T17:16:23.417"
-      },
-      {
-        "cve_id": "CVE-2026-7875",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "NanoClaw contains a host/container filesystem boundary vulnerability in outbound attachment handling and outbox cleanup that allows a compromised or prompt-injected container to read files outside the",
-        "published": "2026-05-06T17:16:24.250"
+        "cve_id": "CVE-2026-7910",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Use after free in Views in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to bypass site isolation via a crafted HTML page. (Chromium security ",
+        "published": "2026-05-06T19:16:39.287"
       },
       {
         "cve_id": "CVE-2026-41934",
@@ -381,6 +367,20 @@
         "base_score": 8.8,
         "description": "Insufficient validation of untrusted input in Cookies in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to perform privilege escalation via a crafted HTML page. (Chromium security seve",
         "published": "2026-05-06T19:16:41.343"
+      },
+      {
+        "cve_id": "CVE-2026-7938",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in CSS in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+        "published": "2026-05-06T19:16:42.113"
+      },
+      {
+        "cve_id": "CVE-2026-7940",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in V8 in Google Chrome prior to 148.0.7778.96 allowed an attacker who convinced a user to install a malicious extension to execute arbitrary code inside a sandbox via a crafted Chrome E",
+        "published": "2026-05-06T19:16:42.323"
       }
     ]
   },
