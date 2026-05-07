@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-07T17:41:43.463103+00:00",
+  "generated_at": "2026-05-07T20:58:03.165882+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
-        "score": 2.0,
+        "value": 6,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 317,
-    "critical_count": 3,
-    "high_count": 50,
+    "total": 182,
+    "critical_count": 6,
+    "high_count": 27,
     "cves": [
       {
-        "cve_id": "CVE-2026-41930",
+        "cve_id": "CVE-2026-40281",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Gotenberg is a Docker-powered stateless API for PDF files. In versions 8.30.1 and earlier, the metadata write endpoint validates metadata keys for control characters but leaves metadata values unsanit",
+        "published": "2026-05-06T21:16:01.353"
+      },
+      {
+        "cve_id": "CVE-2026-33587",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Lack of user input sanitisation in Open Notebook v1.8.3 allows the application user to execute Python code (and subsequently OS commands) on the docker container via Server-Side Template Injection (SS",
+        "published": "2026-05-07T11:16:00.887"
+      },
+      {
+        "cve_id": "CVE-2026-6508",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Vvveb before version 1.0.8.2 contains a hard-coded credentials vulnerability in its docker-compose-apache.yaml configuration that allows unauthenticated attackers to access the bundled phpMyAdmin cont",
-        "published": "2026-05-06T19:16:37.130"
+        "description": "Origin Validation Error vulnerability in TUBITAK BILGEM Software Technologies Research Institute Liderahenk allows Accessing Functionality Not Properly Constrained by ACLs.\n\nThis issue affects Liderah",
+        "published": "2026-05-07T12:16:18.330"
       },
       {
-        "cve_id": "CVE-2026-7908",
+        "cve_id": "CVE-2026-5791",
         "severity": "CRITICAL",
         "base_score": 9.6,
-        "description": "Use after free in Fullscreen in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-05-06T19:16:39.097"
+        "description": "Cross-Site request forgery (CSRF) vulnerability in DivvyDrive Information Technologies Inc. DivvyDrive allows Cross Site Request Forgery.\n\nThis issue affects DivvyDrive: from 4.8.2.9 before 4.8.3.2.",
+        "published": "2026-05-07T13:16:13.647"
       },
       {
-        "cve_id": "CVE-2026-7910",
+        "cve_id": "CVE-2026-40982",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in Views in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to bypass site isolation via a crafted HTML page. (Chromium security ",
-        "published": "2026-05-06T19:16:39.287"
+        "base_score": 9.1,
+        "description": "Spring Cloud Config allows applications to serve arbitrary text and binary files through the spring-cloud-config-server module. A malicious user, or attacker, can send a request using a specially craf",
+        "published": "2026-05-07T04:16:24.790"
       },
       {
-        "cve_id": "CVE-2026-41934",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Vvveb before version 1.0.8.2 contains an authenticated remote code execution vulnerability in the admin code editor that allows low-privilege authenticated users to execute arbitrary code by exploitin",
-        "published": "2026-05-06T19:16:37.417"
+        "cve_id": "CVE-2026-41201",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, modular architecture with RBAC authorization and theme support. In version 0.31.4.0, an attacker can achieve Full Account ",
+        "published": "2026-05-07T04:16:26.240"
       },
       {
-        "cve_id": "CVE-2026-41938",
+        "cve_id": "CVE-2026-41142",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Vvveb before version 1.0.8.2 contains an unrestricted file upload vulnerability in the media upload handler that allows authenticated users with media-upload permissions to bypass extension restrictio",
-        "published": "2026-05-06T19:16:37.680"
+        "description": "OpenEXR provides the specification and reference implementation of the EXR file format, an image storage format for the motion picture industry. From versions 3.0.0 to before 3.2.9, 3.3.0 to before 3.",
+        "published": "2026-05-07T04:16:26.020"
       },
       {
-        "cve_id": "CVE-2026-7896",
+        "cve_id": "CVE-2026-41139",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Integer overflow in Blink in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)",
-        "published": "2026-05-06T19:16:37.870"
+        "description": "Math.js is an extensive math library for JavaScript and Node.js. From version 13.1.0 to before version 15.2.0, arbitrary JavaScript can be executed via the expression parser of mathjs. This issue has ",
+        "published": "2026-05-07T06:16:04.273"
       },
       {
-        "cve_id": "CVE-2026-7898",
+        "cve_id": "CVE-2026-41143",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Use after free in Chromoting in Google Chrome on Linux prior to 148.0.7778.96 allowed a remote attacker to execute arbitrary code via malicious network traffic. (Chromium security severity: Critical)",
-        "published": "2026-05-06T19:16:38.100"
+        "description": "YesWiki is a wiki system written in PHP. Prior to version 4.6.1, YesWiki bazar module contains a SQL injection vulnerability in tools/bazar/services/EntryManager.php at line 704. The $data['id_fiche']",
+        "published": "2026-05-07T06:16:04.550"
       },
       {
-        "cve_id": "CVE-2026-7899",
+        "cve_id": "CVE-2026-6692",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Out of bounds read and write in V8 in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Hi",
-        "published": "2026-05-06T19:16:38.200"
+        "description": "The Slider Revolution plugin for WordPress is vulnerable to Arbitrary File Upload in versions 7.0.0 to 7.0.10 via the '_get_media_url' and '_check_file_path' function. This is due to insufficient file",
+        "published": "2026-05-07T06:16:05.410"
       },
       {
-        "cve_id": "CVE-2026-7901",
+        "cve_id": "CVE-2026-3953",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Use after free in ANGLE in Google Chrome on Mac prior to 148.0.7778.96 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-05-06T19:16:38.403"
+        "description": "Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Gosoft Software Industry and Trade Ltd. Co. Proticaret E-Commerce allows Cross-Site Scripting (XSS",
+        "published": "2026-05-07T12:16:16.810"
       },
       {
-        "cve_id": "CVE-2026-7902",
+        "cve_id": "CVE-2026-5784",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Out of bounds memory access in V8 in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Hig",
-        "published": "2026-05-06T19:16:38.503"
+        "description": "Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in DivvyDrive Information Technologies Inc. DivvyDrive allows Stored XSS.\n\nThis issue affects DivvyDr",
+        "published": "2026-05-07T13:16:13.480"
       },
       {
-        "cve_id": "CVE-2026-7903",
+        "cve_id": "CVE-2026-6002",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Integer overflow in ANGLE in Google Chrome on Mac,Windows prior to 148.0.7778.96 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: ",
-        "published": "2026-05-06T19:16:38.597"
+        "description": "Improper neutralization of Script-Related HTML tags in a web page (basic XSS) vulnerability in DivvyDrive Information Technologies Inc. DivvyDrive allows Cross-Site Scripting (XSS).\n\nThis issue affect",
+        "published": "2026-05-07T13:16:13.773"
       },
       {
-        "cve_id": "CVE-2026-7906",
+        "cve_id": "CVE-2025-1978",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in SVG in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-05-06T19:16:38.900"
+        "base_score": 8.3,
+        "description": "Remote Code Execution Vulnerability in Hitachi Storage Navigator and the maintenance console in Hitachi Virtual Storage Platform G130, G150, G350, G370, G700, G900, F350, F370, F700, F900, Hitachi Vir",
+        "published": "2026-05-07T09:16:26.017"
       },
       {
-        "cve_id": "CVE-2026-7907",
+        "cve_id": "CVE-2026-41669",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in DOM in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-05-06T19:16:39.000"
+        "base_score": 8.2,
+        "description": "Admidio is an open-source user management solution. Prior to version 5.0.9, the Admidio SAML Identity Provider implementation discards the return value of its validateSignature() method at both call s",
+        "published": "2026-05-07T04:16:30.400"
       },
       {
-        "cve_id": "CVE-2026-7921",
+        "cve_id": "CVE-2026-41670",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in Passwords in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-05-06T19:16:40.377"
+        "base_score": 8.2,
+        "description": "Admidio is an open-source user management solution. Prior to version 5.0.9, the SAML IdP implementation in Admidio's SSO module uses the AssertionConsumerServiceURL value directly from incoming SAML A",
+        "published": "2026-05-07T04:16:30.993"
       },
       {
-        "cve_id": "CVE-2026-7926",
+        "cve_id": "CVE-2026-7252",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in PresentationAPI in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Hig",
-        "published": "2026-05-06T19:16:40.940"
+        "base_score": 8.1,
+        "description": "The WP-Optimize \u2013 Cache, Compress images, Minify & Clean database to boost page speed & performance plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validati",
+        "published": "2026-05-07T06:16:05.567"
       },
       {
-        "cve_id": "CVE-2026-7927",
+        "cve_id": "CVE-2025-9661",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Type Confusion in Runtime in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-05-06T19:16:41.037"
+        "base_score": 8.1,
+        "description": "OS command injection vulneravility in the management gui (maintenance utility) of Hitachi Virtual Storage Platform One Block 23, 24, 26 and 28.\n\nThis issue affects Hitachi Virtual Storage Platform One",
+        "published": "2026-05-07T08:16:00.317"
       },
       {
-        "cve_id": "CVE-2026-7928",
+        "cve_id": "CVE-2026-33588",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in WebRTC in Google Chrome on Windows prior to 148.0.7778.96 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: H",
-        "published": "2026-05-06T19:16:41.140"
+        "base_score": 8.1,
+        "description": "Lack of user input validation in the file upload functionality of Open Notebook v1.8.3 allows the application user to create or modify files on the docker container via path traversal.",
+        "published": "2026-05-07T11:16:01.020"
       },
       {
-        "cve_id": "CVE-2026-7930",
+        "cve_id": "CVE-2024-43384",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Insufficient validation of untrusted input in Cookies in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to perform privilege escalation via a crafted HTML page. (Chromium security seve",
-        "published": "2026-05-06T19:16:41.343"
-      },
-      {
-        "cve_id": "CVE-2026-7938",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in CSS in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Medium)",
-        "published": "2026-05-06T19:16:42.113"
-      },
-      {
-        "cve_id": "CVE-2026-7940",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in V8 in Google Chrome prior to 148.0.7778.96 allowed an attacker who convinced a user to install a malicious extension to execute arbitrary code inside a sandbox via a crafted Chrome E",
-        "published": "2026-05-06T19:16:42.323"
+        "base_score": 8.0,
+        "description": "A low privileged remote attacker can gain\u00a0the root password due to improper removal of sensitive information before storage or transfer.",
+        "published": "2026-05-07T09:16:24.873"
       }
     ]
   },
