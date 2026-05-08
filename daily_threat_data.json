@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-08T13:09:53.873451+00:00",
+  "generated_at": "2026-05-08T17:02:57.365360+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
-        "score": 2.5,
+        "value": 12,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,10 +238,17 @@
     ]
   },
   "nvd": {
-    "total": 217,
-    "critical_count": 8,
-    "high_count": 37,
+    "total": 434,
+    "critical_count": 12,
+    "high_count": 33,
     "cves": [
+      {
+        "cve_id": "CVE-2026-42826",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Exposure of sensitive information to an unauthorized actor in Azure DevOps allows an unauthorized attacker to disclose information over a network.",
+        "published": "2026-05-07T22:16:35.587"
+      },
       {
         "cve_id": "CVE-2026-33109",
         "severity": "CRITICAL",
@@ -271,25 +278,39 @@
         "published": "2026-05-07T18:16:19.013"
       },
       {
-        "cve_id": "CVE-2026-5791",
+        "cve_id": "CVE-2026-41500",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Cross-Site request forgery (CSRF) vulnerability in DivvyDrive Information Technologies Inc. DivvyDrive allows Cross Site Request Forgery.\n\nThis issue affects DivvyDrive: from 4.8.2.9 before 4.8.3.2.",
-        "published": "2026-05-07T13:16:13.647"
+        "base_score": 9.8,
+        "description": "electerm is an open-sourced terminal/ssh/sftp/telnet/serialport/RDP/VNC/Spice/ftp client. Prior to version 3.3.8, a command injection vulnerability exists in github.com/elcterm/electerm/npm/install.js",
+        "published": "2026-05-08T04:16:17.720"
       },
       {
-        "cve_id": "CVE-2026-41589",
+        "cve_id": "CVE-2026-41501",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Wish is an SSH server with defaults and a collection of middlewares. From version 2.0.0 to before version 2.0.1, the SCP middleware in charm.land/wish/v2 is vulnerable to path traversal attacks. A mal",
-        "published": "2026-05-07T14:16:02.853"
+        "base_score": 9.8,
+        "description": "electerm is an open-sourced terminal/ssh/sftp/telnet/serialport/RDP/VNC/Spice/ftp client. Prior to version 3.3.8, a command injection vulnerability exists in github.com/elcterm/electerm/npm/install.js",
+        "published": "2026-05-08T04:16:17.940"
       },
       {
-        "cve_id": "CVE-2026-6795",
+        "cve_id": "CVE-2026-33823",
         "severity": "CRITICAL",
         "base_score": 9.6,
-        "description": "URL redirection to untrusted site ('open redirect') vulnerability in DivvyDrive Information Technologies Inc. DivvyDrive allows Parameter Injection.\n\nThis issue affects DivvyDrive: from 4.8.2.9 before",
-        "published": "2026-05-07T14:16:04.280"
+        "description": "Improper authorization in Microsoft Teams allows an authorized attacker to disclose information over a network.",
+        "published": "2026-05-07T22:16:34.283"
+      },
+      {
+        "cve_id": "CVE-2026-35428",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Improper neutralization of special elements used in a command ('command injection') in Azure Cloud Shell allows an unauthorized attacker to perform spoofing over a network.",
+        "published": "2026-05-07T22:16:34.667"
+      },
+      {
+        "cve_id": "CVE-2026-42880",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes. From versions 3.2.0 to before 3.2.11 and 3.3.0 to before 3.3.9, there is a missing authorization and data-masking gap in Argo ",
+        "published": "2026-05-07T23:16:32.450"
       },
       {
         "cve_id": "CVE-2026-41902",
@@ -299,32 +320,11 @@
         "published": "2026-05-07T19:16:00.807"
       },
       {
-        "cve_id": "CVE-2026-5787",
-        "severity": "HIGH",
-        "base_score": 8.9,
-        "description": "An Improper Certificate Validation in Ivanti EPMM before versions 12.6.1.1, 12.7.0.1, and 12.8.0.1 allows a remote unauthenticated attacker to impersonate registered Sentry hosts and obtain valid CA-s",
-        "published": "2026-05-07T16:16:22.620"
-      },
-      {
-        "cve_id": "CVE-2026-5784",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in DivvyDrive Information Technologies Inc. DivvyDrive allows Stored XSS.\n\nThis issue affects DivvyDr",
-        "published": "2026-05-07T13:16:13.480"
-      },
-      {
-        "cve_id": "CVE-2026-6002",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Improper neutralization of Script-Related HTML tags in a web page (basic XSS) vulnerability in DivvyDrive Information Technologies Inc. DivvyDrive allows Cross-Site Scripting (XSS).\n\nThis issue affect",
-        "published": "2026-05-07T13:16:13.773"
-      },
-      {
-        "cve_id": "CVE-2026-5786",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "An Improper Access Control vulnerability in Ivanti EPMM before versions 12.6.1.1, 12.7.0.1, and 12.8.0.1 allows a remote authenticated attacker to gain administrative access.",
-        "published": "2026-05-07T16:16:22.483"
+        "cve_id": "CVE-2026-33844",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "Improper input validation in Azure Managed Instance for Apache Cassandra allows an authorized attacker to execute code over a network.",
+        "published": "2026-05-07T22:16:34.420"
       },
       {
         "cve_id": "CVE-2026-42215",
@@ -341,11 +341,11 @@
         "published": "2026-05-07T22:16:33.900"
       },
       {
-        "cve_id": "CVE-2026-41505",
+        "cve_id": "CVE-2026-41900",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "RELATE is a web-based courseware package. Prior to commit 2f68e16, RELATE is vulnerable to predictable token generation in auth.py's make_sign_in_key() function and exam.py's gen_ticket_code() functio",
-        "published": "2026-05-07T15:16:07.010"
+        "base_score": 8.8,
+        "description": "OpenLearnX is an open-source, decentralized learning and assessment platform. Prior to version 2.0.3, a remote code execution (RCE) vulnerability was identified in the OpenLearnX code execution enviro",
+        "published": "2026-05-08T04:16:18.710"
       },
       {
         "cve_id": "CVE-2026-42047",
@@ -355,6 +355,13 @@
         "published": "2026-05-07T21:16:29.980"
       },
       {
+        "cve_id": "CVE-2026-35435",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Improper access control in Azure AI Foundry M365 published agents allows an unauthorized attacker to elevate privileges over a network.",
+        "published": "2026-05-07T22:16:34.787"
+      },
+      {
         "cve_id": "CVE-2026-42449",
         "severity": "HIGH",
         "base_score": 8.5,
@@ -362,25 +369,18 @@
         "published": "2026-05-07T21:16:30.133"
       },
       {
-        "cve_id": "CVE-2025-14341",
+        "cve_id": "CVE-2026-34327",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Improperly controlled modification of Dynamically-Determined object attributes, Allocation of resources without limits or throttling vulnerability in DivvyDrive Information Technologies Inc. DivvyDriv",
-        "published": "2026-05-07T14:16:00.660"
+        "base_score": 8.2,
+        "description": "Externally controlled reference to a resource in another sphere in Microsoft Partner Center allows an unauthorized attacker to perform spoofing over a network.",
+        "published": "2026-05-07T22:16:34.540"
       },
       {
-        "cve_id": "CVE-2026-41490",
+        "cve_id": "CVE-2026-42284",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Dagster is an orchestration platform for the development, production, and observation of data assets. Prior to Dagster Core version 1.13.1 and prior to Dagster libraries version 0.29.1, the DuckDB, Sn",
-        "published": "2026-05-07T14:16:02.527"
-      },
-      {
-        "cve_id": "CVE-2026-41422",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Daptin is a GraphQL/JSON-API headless CMS. Prior to version 0.11.4, the /aggregate/:typename endpoint accepted column and group query parameters that were passed verbatim to goqu.L() \u2014 a raw SQL liter",
-        "published": "2026-05-07T15:16:06.813"
+        "base_score": 8.1,
+        "description": "GitPython is a python library used to interact with Git repositories. Prior to version 3.1.47, _clone() validates multi_options as the original list, then executes shlex.split(\" \".join(multi_options))",
+        "published": "2026-05-07T19:16:01.783"
       }
     ]
   },
