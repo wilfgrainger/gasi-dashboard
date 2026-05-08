@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-08T02:07:20.678953+00:00",
+  "generated_at": "2026-05-08T05:50:49.504790+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
+        "value": 9,
         "score": 2.5,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 209,
-    "critical_count": 7,
-    "high_count": 31,
+    "total": 220,
+    "critical_count": 9,
+    "high_count": 39,
     "cves": [
       {
         "cve_id": "CVE-2026-33587",
@@ -255,6 +255,27 @@
         "base_score": 9.8,
         "description": "Origin Validation Error vulnerability in TUBITAK BILGEM Software Technologies Research Institute Liderahenk allows Accessing Functionality Not Properly Constrained by ACLs.\n\nThis issue affects Liderah",
         "published": "2026-05-07T12:16:18.330"
+      },
+      {
+        "cve_id": "CVE-2026-7414",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Yarbo firmware v2.3.9 contains hardcoded administrative credentials embedded in the firmware image. These credentials are identical across all devices running this firmware and cannot be changed or re",
+        "published": "2026-05-07T17:15:59.460"
+      },
+      {
+        "cve_id": "CVE-2026-7415",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The MQTT broker embedded in Yarbo firmware v2.3.9 is configured to allow anonymous connections with no topic-level read or write ACLs. Any host on the same network can subscribe to sensitive telemetry",
+        "published": "2026-05-07T17:15:59.570"
+      },
+      {
+        "cve_id": "CVE-2026-37709",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Insecure Permissions vulnerability in grokability snipe-it v.8.4.0 and before and fixed after 2026-03-10 commit 676a9958 allows a remote attacker to execute arbitrary code via the app/Http/Controllers",
+        "published": "2026-05-07T18:16:19.013"
       },
       {
         "cve_id": "CVE-2026-5791",
@@ -278,25 +299,18 @@
         "published": "2026-05-07T14:16:04.280"
       },
       {
-        "cve_id": "CVE-2026-40982",
+        "cve_id": "CVE-2026-41902",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Spring Cloud Config allows applications to serve arbitrary text and binary files through the spring-cloud-config-server module. A malicious user, or attacker, can send a request using a specially craf",
-        "published": "2026-05-07T04:16:24.790"
+        "description": "FreeScout is a free help desk and shared inbox built with PHP's Laravel framework. Prior to version 1.8.217, the /user-setup/{hash} endpoint accepts a 60-character random invite_hash to set a new user",
+        "published": "2026-05-07T19:16:00.807"
       },
       {
-        "cve_id": "CVE-2026-41201",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "CI4MS is a CodeIgniter 4-based CMS skeleton that delivers a production-ready, modular architecture with RBAC authorization and theme support. In version 0.31.4.0, an attacker can achieve Full Account ",
-        "published": "2026-05-07T04:16:26.240"
-      },
-      {
-        "cve_id": "CVE-2026-41142",
+        "cve_id": "CVE-2026-5787",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenEXR provides the specification and reference implementation of the EXR file format, an image storage format for the motion picture industry. From versions 3.0.0 to before 3.2.9, 3.3.0 to before 3.",
-        "published": "2026-05-07T04:16:26.020"
+        "base_score": 8.9,
+        "description": "An Improper Certificate Validation in Ivanti EPMM before versions 12.6.1.1, 12.7.0.1, and 12.8.0.1 allows a remote unauthenticated attacker to impersonate registered Sentry hosts and obtain valid CA-s",
+        "published": "2026-05-07T16:16:22.620"
       },
       {
         "cve_id": "CVE-2026-41139",
@@ -341,6 +355,20 @@
         "published": "2026-05-07T13:16:13.773"
       },
       {
+        "cve_id": "CVE-2026-5786",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "An Improper Access Control vulnerability in Ivanti EPMM before versions 12.6.1.1, 12.7.0.1, and 12.8.0.1 allows a remote authenticated attacker to gain administrative access.",
+        "published": "2026-05-07T16:16:22.483"
+      },
+      {
+        "cve_id": "CVE-2026-41505",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "RELATE is a web-based courseware package. Prior to commit 2f68e16, RELATE is vulnerable to predictable token generation in auth.py's make_sign_in_key() function and exam.py's gen_ticket_code() functio",
+        "published": "2026-05-07T15:16:07.010"
+      },
+      {
         "cve_id": "CVE-2025-1978",
         "severity": "HIGH",
         "base_score": 8.3,
@@ -353,34 +381,6 @@
         "base_score": 8.3,
         "description": "Improperly controlled modification of Dynamically-Determined object attributes, Allocation of resources without limits or throttling vulnerability in DivvyDrive Information Technologies Inc. DivvyDriv",
         "published": "2026-05-07T14:16:00.660"
-      },
-      {
-        "cve_id": "CVE-2026-41490",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Dagster is an orchestration platform for the development, production, and observation of data assets. Prior to Dagster Core version 1.13.1 and prior to Dagster libraries version 0.29.1, the DuckDB, Sn",
-        "published": "2026-05-07T14:16:02.527"
-      },
-      {
-        "cve_id": "CVE-2026-41669",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Admidio is an open-source user management solution. Prior to version 5.0.9, the Admidio SAML Identity Provider implementation discards the return value of its validateSignature() method at both call s",
-        "published": "2026-05-07T04:16:30.400"
-      },
-      {
-        "cve_id": "CVE-2026-41670",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Admidio is an open-source user management solution. Prior to version 5.0.9, the SAML IdP implementation in Admidio's SSO module uses the AssertionConsumerServiceURL value directly from incoming SAML A",
-        "published": "2026-05-07T04:16:30.993"
-      },
-      {
-        "cve_id": "CVE-2026-7252",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The WP-Optimize \u2013 Cache, Compress images, Minify & Clean database to boost page speed & performance plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validati",
-        "published": "2026-05-07T06:16:05.567"
       }
     ]
   },
