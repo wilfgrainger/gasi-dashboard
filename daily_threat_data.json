@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-07T20:58:03.165882+00:00",
+  "generated_at": "2026-05-08T02:07:20.678953+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 31,
+        "value": 30,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
+        "value": 7,
         "score": 2.5,
         "max": 3
       },
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1589,
-    "recent_30d_count": 31,
+    "recent_30d_count": 30,
     "recent": [
       {
         "cve_id": "CVE-2026-6973",
@@ -238,17 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 182,
-    "critical_count": 6,
-    "high_count": 27,
+    "total": 209,
+    "critical_count": 7,
+    "high_count": 31,
     "cves": [
-      {
-        "cve_id": "CVE-2026-40281",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Gotenberg is a Docker-powered stateless API for PDF files. In versions 8.30.1 and earlier, the metadata write endpoint validates metadata keys for control characters but leaves metadata values unsanit",
-        "published": "2026-05-06T21:16:01.353"
-      },
       {
         "cve_id": "CVE-2026-33587",
         "severity": "CRITICAL",
@@ -269,6 +262,20 @@
         "base_score": 9.6,
         "description": "Cross-Site request forgery (CSRF) vulnerability in DivvyDrive Information Technologies Inc. DivvyDrive allows Cross Site Request Forgery.\n\nThis issue affects DivvyDrive: from 4.8.2.9 before 4.8.3.2.",
         "published": "2026-05-07T13:16:13.647"
+      },
+      {
+        "cve_id": "CVE-2026-41589",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Wish is an SSH server with defaults and a collection of middlewares. From version 2.0.0 to before version 2.0.1, the SCP middleware in charm.land/wish/v2 is vulnerable to path traversal attacks. A mal",
+        "published": "2026-05-07T14:16:02.853"
+      },
+      {
+        "cve_id": "CVE-2026-6795",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "URL redirection to untrusted site ('open redirect') vulnerability in DivvyDrive Information Technologies Inc. DivvyDrive allows Parameter Injection.\n\nThis issue affects DivvyDrive: from 4.8.2.9 before",
+        "published": "2026-05-07T14:16:04.280"
       },
       {
         "cve_id": "CVE-2026-40982",
@@ -341,6 +348,20 @@
         "published": "2026-05-07T09:16:26.017"
       },
       {
+        "cve_id": "CVE-2025-14341",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "Improperly controlled modification of Dynamically-Determined object attributes, Allocation of resources without limits or throttling vulnerability in DivvyDrive Information Technologies Inc. DivvyDriv",
+        "published": "2026-05-07T14:16:00.660"
+      },
+      {
+        "cve_id": "CVE-2026-41490",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "Dagster is an orchestration platform for the development, production, and observation of data assets. Prior to Dagster Core version 1.13.1 and prior to Dagster libraries version 0.29.1, the DuckDB, Sn",
+        "published": "2026-05-07T14:16:02.527"
+      },
+      {
         "cve_id": "CVE-2026-41669",
         "severity": "HIGH",
         "base_score": 8.2,
@@ -360,27 +381,6 @@
         "base_score": 8.1,
         "description": "The WP-Optimize \u2013 Cache, Compress images, Minify & Clean database to boost page speed & performance plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validati",
         "published": "2026-05-07T06:16:05.567"
-      },
-      {
-        "cve_id": "CVE-2025-9661",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "OS command injection vulneravility in the management gui (maintenance utility) of Hitachi Virtual Storage Platform One Block 23, 24, 26 and 28.\n\nThis issue affects Hitachi Virtual Storage Platform One",
-        "published": "2026-05-07T08:16:00.317"
-      },
-      {
-        "cve_id": "CVE-2026-33588",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Lack of user input validation in the file upload functionality of Open Notebook v1.8.3 allows the application user to create or modify files on the docker container via path traversal.",
-        "published": "2026-05-07T11:16:01.020"
-      },
-      {
-        "cve_id": "CVE-2024-43384",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "A low privileged remote attacker can gain\u00a0the root password due to improper removal of sensitive information before storage or transfer.",
-        "published": "2026-05-07T09:16:24.873"
       }
     ]
   },
