@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-09T12:55:08.965531+00:00",
+  "generated_at": "2026-05-09T16:42:06.115904+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 9,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 369,
-    "critical_count": 4,
-    "high_count": 6,
+    "total": 105,
+    "critical_count": 9,
+    "high_count": 23,
     "cves": [
       {
-        "cve_id": "CVE-2026-41512",
+        "cve_id": "CVE-2026-42298",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Postiz is an AI social media scheduling tool. Prior to commit da44801, a \"Pwn Request\" vulnerability in the Build and Publish PR Docker Image workflow (.github/workflows/pr-docker-build.yml) allows an",
+        "published": "2026-05-08T23:16:36.497"
+      },
+      {
+        "cve_id": "CVE-2026-42454",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "ai-scanner is an AI model safety scanner built on NVIDIA garak. From version 1.0.0 to before version 1.4.1, there is a remote code execution vulnerability via JavaScript injection in `BrowserAutomatio",
-        "published": "2026-05-08T14:16:34.433"
+        "description": "Termix is a web-based server management platform with SSH terminal, tunneling, and file editing capabilities. Prior to version 2.1.0, all Docker container management endpoints in Termix interpolate th",
+        "published": "2026-05-08T23:16:39.097"
       },
       {
-        "cve_id": "CVE-2026-41497",
+        "cve_id": "CVE-2026-38360",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "PraisonAI is a multi-agent teams system. Prior to version 4.6.9, the fix for PraisonAI's MCP command handling does not add a command allowlist or argument validation to parse_mcp_command(), allowing a",
-        "published": "2026-05-08T14:16:33.843"
+        "description": "Directory Traversal vulnerability in fohrloop dash-uploader v.0.1.0 through v.0.7.0a2 allows a remote attacker to execute arbitrary code via the dash_uploader/httprequesthandler.py, aseHttpRequestHand",
+        "published": "2026-05-08T17:16:30.380"
       },
       {
-        "cve_id": "CVE-2026-41507",
+        "cve_id": "CVE-2026-42072",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "math-codegen generates code from mathematical expressions. Prior to version 0.4.3, string literal content passed to cg.parse() is injected verbatim into a new Function() body without sanitization. Thi",
-        "published": "2026-05-08T14:16:34.133"
+        "description": "Nornicdb is a distributed low-latency, Graph+Vector, Temporal MVCC with all sub-ms HNSW search, graph traversal, and writes. Prior to version 1.0.42-hotfix, the --address CLI flag (and NORNICDB_ADDRES",
+        "published": "2026-05-08T17:16:31.447"
       },
       {
-        "cve_id": "CVE-2026-25199",
+        "cve_id": "CVE-2026-42302",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "FastGPT is an AI Agent building platform. From version 4.14.10 to before version 4.14.13, the agent-sandbox component of FastGPT is vulnerable to unauthenticated Remote Code Execution (RCE). The start",
+        "published": "2026-05-08T23:16:36.640"
+      },
+      {
+        "cve_id": "CVE-2026-42193",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Instances deployed via the Proxmox extension allow unauthorized access to instances belonging to other tenants.\n\n\n\n\nThis issue affects Apache CloudStack: from 4.21.0.0 through 4.22.0.0.\n\n\n\n\nThe Proxmo",
-        "published": "2026-05-08T13:16:36.273"
+        "description": "Plunk is an open-source email platform built on top of AWS SES. Prior to version 0.9.0, the /webhooks/sns endpoint accepts Amazon SNS notification payloads from unauthenticated requests without verify",
+        "published": "2026-05-08T22:16:31.273"
       },
       {
-        "cve_id": "CVE-2026-39816",
+        "cve_id": "CVE-2026-42354",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Sentry is an error tracking and performance monitoring tool. From version 21.12.0 to before version 26.4.1, a critical vulnerability was discovered in the SAML SSO implementation of Sentry. The vulner",
+        "published": "2026-05-08T23:16:38.513"
+      },
+      {
+        "cve_id": "CVE-2026-44313",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Linkwarden is a self-hosted, open-source collaborative bookmark manager to collect, organize and archive webpages. Prior to version 2.13.0, a Server-Side Request Forgery (SSRF) vulnerability in the fe",
+        "published": "2026-05-09T00:16:29.373"
+      },
+      {
+        "cve_id": "CVE-2026-42560",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "auth provides authentication via oauth2, direct and email. From versions 1.18.0 to before 1.25.2 and 2.0.0 to before 2.1.2, the Patreon OAuth provider maps every authenticated Patreon account to the s",
+        "published": "2026-05-09T06:16:10.603"
+      },
+      {
+        "cve_id": "CVE-2026-42556",
+        "severity": "HIGH",
+        "base_score": 8.9,
+        "description": "Postiz is an AI social media scheduling tool. From version 2.21.6 to before version 2.21.7, any authenticated user who can create a post can store arbitrary HTML in post content by tampering their own",
+        "published": "2026-05-08T23:16:39.373"
+      },
+      {
+        "cve_id": "CVE-2026-29202",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The optional extension component TinkerpopClientService is missing the Restricted annotation with the Execute Code Required Permission in Apache NiFi 2.0.0-M1 through 2.8.0. The TinkerpopClientService",
-        "published": "2026-05-08T14:16:32.667"
+        "description": "Insufficient input validation of the `plugin` parameter of the `create_user` plugin allows arbitrary Perl code execution on behalf of the already authenticated account's system user.",
+        "published": "2026-05-08T19:16:30.047"
       },
       {
-        "cve_id": "CVE-2026-44334",
+        "cve_id": "CVE-2026-29203",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "PraisonAI is a multi-agent teams system. From version 4.5.139 to before version 4.6.32, CVE-2026-40287's fix gated tools.py auto-import behind PRAISONAI_ALLOW_LOCAL_TOOLS=true in two files (tool_resol",
-        "published": "2026-05-08T14:16:46.143"
+        "base_score": 8.8,
+        "description": "A chmod call in the cPanel Nova plugin's Cpanel::Nova::Connector follows symlinks, allowing setting root permissions on arbitrary system files or directories. That can cause DoS or local privilege esc",
+        "published": "2026-05-08T19:16:30.147"
       },
       {
-        "cve_id": "CVE-2022-50994",
+        "cve_id": "CVE-2026-42205",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Avo is a framework to create admin panels for Ruby on Rails apps. Prior to version 3.31.2, a broken access control vulnerability was identified in the ActionsController of the Avo framework. Due to in",
+        "published": "2026-05-08T22:16:31.820"
+      },
+      {
+        "cve_id": "CVE-2026-42352",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "pygeoapi is a Python server implementation of the OGC API suite of standards. From version 0.23.0 to before version 0.23.3, OGC API  process execution requests can use the subscriber object to request",
+        "published": "2026-05-08T23:16:38.317"
+      },
+      {
+        "cve_id": "CVE-2026-41705",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Spring AI's MilvusVectorStore#doDelete(List) implementation is vulnerable to filter-expression injection via unsanitized document IDs.\nSpring AI 1.0.x: affected from 1.0.0 through latest 1.0.x; upgrad",
+        "published": "2026-05-09T01:16:08.690"
+      },
+      {
+        "cve_id": "CVE-2026-8178",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "DrayTek Vigor 2960 firmware versions prior to 1.5.1.4 contain an OS command injection vulnerability in the CGI login handler that allows unauthenticated remote attackers to execute arbitrary commands ",
-        "published": "2026-05-08T13:16:34.150"
+        "description": "An issue exists in Amazon Redshift JDBC Driver versions prior to 2.2.2. Under certain conditions, the driver could load and execute arbitrary classes when processing JDBC connection URL parameters. An",
+        "published": "2026-05-08T19:16:31.827"
       },
       {
-        "cve_id": "CVE-2026-41491",
+        "cve_id": "CVE-2026-7807",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Dapr is a portable, event-driven, runtime for building distributed applications across cloud and edge. From versions 1.3.0 to before 1.15.14, 1.16.0-rc.1 to before 1.16.14, and 1.17.0-rc.1 to before 1",
-        "published": "2026-05-08T14:16:33.407"
+        "description": "SmarterTools SmarterMail builds prior to 9560 contain a local file inclusion vulnerability in the /api/v1/report/summary/{type} API endpoint that allows authenticated users to read arbitrary .json fil",
+        "published": "2026-05-08T20:16:32.200"
       },
       {
-        "cve_id": "CVE-2026-41496",
+        "cve_id": "CVE-2026-44400",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "PraisonAI is a multi-agent teams system. Prior to praisonai version 4.6.9 and praisonaiagents version 1.6.9, the fix for CVE-2026-40315 added input validation to SQLiteConversationStore only. Nine sib",
-        "published": "2026-05-08T14:16:33.693"
+        "description": "MailEnable Enterprise Premium 10.55 and earlier contains an improper authorization vulnerability in the WebAdmin mobile portal that allows attackers to bypass authentication checks by reusing Authenti",
+        "published": "2026-05-08T21:16:28.260"
       },
       {
-        "cve_id": "CVE-2025-66467",
+        "cve_id": "CVE-2026-42452",
         "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "Missing MinIO policy cleanup on bucket deletion via Apache CloudStack allows users to retain access to buckets which they previously owned. If another user creates a new bucket with the same name, the",
-        "published": "2026-05-08T13:16:35.720"
+        "base_score": 8.1,
+        "description": "Termix is a web-based server management platform with SSH terminal, tunneling, and file editing capabilities. Prior to version 2.1.0, /users/login issues a temporary JWT (temp_token) for TOTP-enabled ",
+        "published": "2026-05-08T23:16:38.827"
       },
       {
-        "cve_id": "CVE-2025-66170",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "The CloudStack Backup plugin has an improper authorization logic in versions 4.21.0.0 and 4.22.0.0. Anyone with authenticated user-account access in CloudStack 4.21.0.0+ environments, where this plugi",
-        "published": "2026-05-08T13:16:35.360"
-      },
-      {
-        "cve_id": "CVE-2025-66171",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "The CloudStack Backup plugin has an improper access logic in versions 4.21.0.0 and 4.22.0.0. Anyone with authenticated user-account access in CloudStack 4.21.0.0+ environments, where this plugin is en",
-        "published": "2026-05-08T13:16:35.483"
-      },
-      {
-        "cve_id": "CVE-2025-66172",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "The CloudStack Backup plugin has an improper access logic in versions 4.21.0.0 and 4.22.0.0. Anyone with authenticated user-account access in CloudStack 4.21.0.0+ environments, where this plugin is en",
-        "published": "2026-05-08T13:16:35.607"
-      },
-      {
-        "cve_id": "CVE-2025-69233",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Due to multiple time-of-check time-of-use race conditions in the resource count check and increment logic, as well as missing validations, users of the platform are able to exceed the allocation limit",
-        "published": "2026-05-08T13:16:35.993"
-      },
-      {
-        "cve_id": "CVE-2026-25077",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "Account users are allowed by default to register templates to be downloaded directly to the primary storage for deploying instances using the KVM hypervisor. Due to missing file name sanitization, an ",
-        "published": "2026-05-08T13:16:36.133"
-      },
-      {
-        "cve_id": "CVE-2026-41506",
-        "severity": "MEDIUM",
-        "base_score": 4.7,
-        "description": "go-git is an extensible git implementation library written in pure Go. Prior to versions 5.18.0 and 6.0.0-alpha.2, go-git may leak HTTP authentication credentials when following redirects during smart",
-        "published": "2026-05-08T14:16:33.983"
-      },
-      {
-        "cve_id": "CVE-2026-32803",
-        "severity": "LOW",
-        "base_score": 3.3,
-        "description": "Dell PowerScale OneFS versions 9.5.0.0 through 9.5.1.6, 9.6.0.0 through 9.7.1.13, 9.8.0.0 through 9.10.1.5 and 9.11.0.0 through 9.12.0.1 contains an Insufficient Logging vulnerability. A low privilege",
-        "published": "2026-05-08T14:16:31.787"
-      },
-      {
-        "cve_id": "CVE-2026-8077",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "Lack of proper authorization implementation in the CashDro 3 web administration panel, version 24.01.00.26. The backend lacks authorization controls, leaving security entirely to the frontend. By modi",
-        "published": "2026-05-08T13:16:49.530"
-      },
-      {
-        "cve_id": "CVE-2025-71296",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/tests: shmem: Hold reservation lock around purge\n\nAcquire and release the GEM object's reservation lock around calls\nto the obj",
-        "published": "2026-05-08T14:16:30.887"
-      },
-      {
-        "cve_id": "CVE-2025-71297",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nwifi: rtw88: 8822b: Avoid WARNING in rtw8822b_config_trx_mode()\n\nrtw8822b_set_antenna() can be called from userspace when the chip ",
-        "published": "2026-05-08T14:16:31.000"
+        "cve_id": "CVE-2026-6665",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The SCRAM code in PgBouncer before 1.25.2 did not check the return value of strlcat() correctly when building the contents of the SCRAM client-final-message. A malicious backend that sends a SCRAM ser",
+        "published": "2026-05-09T01:16:09.013"
       }
     ]
   },
