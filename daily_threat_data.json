@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-09T09:08:36.977466+00:00",
+  "generated_at": "2026-05-09T12:55:08.965531+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
-        "score": 2.5,
+        "value": 4,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 372,
-    "critical_count": 5,
-    "high_count": 7,
+    "total": 369,
+    "critical_count": 4,
+    "high_count": 6,
     "cves": [
       {
         "cve_id": "CVE-2026-41512",
@@ -248,13 +248,6 @@
         "base_score": 9.9,
         "description": "ai-scanner is an AI model safety scanner built on NVIDIA garak. From version 1.0.0 to before version 1.4.1, there is a remote code execution vulnerability via JavaScript injection in `BrowserAutomatio",
         "published": "2026-05-08T14:16:34.433"
-      },
-      {
-        "cve_id": "CVE-2026-8153",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "OS command injection in Dashboard Server interface in Universal Robots PolyScope versions prior to 5.21.1 allows unauthenticated attacker to\u00a0craft commands that will execute code on the robot's OS.",
-        "published": "2026-05-08T12:16:29.977"
       },
       {
         "cve_id": "CVE-2026-41497",
@@ -278,18 +271,18 @@
         "published": "2026-05-08T13:16:36.273"
       },
       {
-        "cve_id": "CVE-2026-5127",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The User Frontend: AI Powered Frontend Posting, User Directory, Profile, Membership & User Registration plugin for WordPress is vulnerable to Deserialization of Untrusted Data in versions up to, and i",
-        "published": "2026-05-08T09:16:08.803"
-      },
-      {
         "cve_id": "CVE-2026-39816",
         "severity": "HIGH",
         "base_score": 8.8,
         "description": "The optional extension component TinkerpopClientService is missing the Restricted annotation with the Execute Code Required Permission in Apache NiFi 2.0.0-M1 through 2.8.0. The TinkerpopClientService",
         "published": "2026-05-08T14:16:32.667"
+      },
+      {
+        "cve_id": "CVE-2026-44334",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "PraisonAI is a multi-agent teams system. From version 4.5.139 to before version 4.6.32, CVE-2026-40287's fix gated tools.py auto-import behind PRAISONAI_ALLOW_LOCAL_TOOLS=true in two files (tool_resol",
+        "published": "2026-05-08T14:16:46.143"
       },
       {
         "cve_id": "CVE-2022-50994",
@@ -320,13 +313,6 @@
         "published": "2026-05-08T13:16:35.720"
       },
       {
-        "cve_id": "CVE-2026-7330",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The Auto Affiliate Links plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions up to, and including, 6.8.8 This is due to insufficient input sanitization on the 'url' POST para",
-        "published": "2026-05-08T09:16:10.100"
-      },
-      {
         "cve_id": "CVE-2025-66170",
         "severity": "MEDIUM",
         "base_score": 6.5,
@@ -355,32 +341,46 @@
         "published": "2026-05-08T13:16:35.993"
       },
       {
-        "cve_id": "CVE-2026-5341",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The NMR Strava activities plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's `strava_nmr_connect` shortcode in all versions up to, and including, 1.0.14 due to insuffic",
-        "published": "2026-05-08T10:16:28.917"
-      },
-      {
-        "cve_id": "CVE-2026-7475",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The Sky Addons plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the `sky-custom-scripts` custom post type in all versions up to, and including, 3.3.2. This is due to the custom po",
-        "published": "2026-05-08T10:16:29.440"
-      },
-      {
-        "cve_id": "CVE-2026-7650",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The E2Pdf \u2013 Export Pdf Tool for WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'id' attribute of the `e2pdf-download` shortcode in all versions up to, and includin",
-        "published": "2026-05-08T10:16:29.577"
-      },
-      {
         "cve_id": "CVE-2026-25077",
         "severity": "MEDIUM",
         "base_score": 6.3,
         "description": "Account users are allowed by default to register templates to be downloaded directly to the primary storage for deploying instances using the KVM hypervisor. Due to missing file name sanitization, an ",
         "published": "2026-05-08T13:16:36.133"
+      },
+      {
+        "cve_id": "CVE-2026-41506",
+        "severity": "MEDIUM",
+        "base_score": 4.7,
+        "description": "go-git is an extensible git implementation library written in pure Go. Prior to versions 5.18.0 and 6.0.0-alpha.2, go-git may leak HTTP authentication credentials when following redirects during smart",
+        "published": "2026-05-08T14:16:33.983"
+      },
+      {
+        "cve_id": "CVE-2026-32803",
+        "severity": "LOW",
+        "base_score": 3.3,
+        "description": "Dell PowerScale OneFS versions 9.5.0.0 through 9.5.1.6, 9.6.0.0 through 9.7.1.13, 9.8.0.0 through 9.10.1.5 and 9.11.0.0 through 9.12.0.1 contains an Insufficient Logging vulnerability. A low privilege",
+        "published": "2026-05-08T14:16:31.787"
+      },
+      {
+        "cve_id": "CVE-2026-8077",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "Lack of proper authorization implementation in the CashDro 3 web administration panel, version 24.01.00.26. The backend lacks authorization controls, leaving security entirely to the frontend. By modi",
+        "published": "2026-05-08T13:16:49.530"
+      },
+      {
+        "cve_id": "CVE-2025-71296",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/tests: shmem: Hold reservation lock around purge\n\nAcquire and release the GEM object's reservation lock around calls\nto the obj",
+        "published": "2026-05-08T14:16:30.887"
+      },
+      {
+        "cve_id": "CVE-2025-71297",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nwifi: rtw88: 8822b: Avoid WARNING in rtw8822b_config_trx_mode()\n\nrtw8822b_set_antenna() can be called from userspace when the chip ",
+        "published": "2026-05-08T14:16:31.000"
       }
     ]
   },
