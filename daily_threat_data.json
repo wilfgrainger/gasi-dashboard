@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-10T12:56:08.900315+00:00",
+  "generated_at": "2026-05-10T16:42:08.089162+00:00",
   "threat_score": {
-    "score": 5.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.5,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 6,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,10 +238,45 @@
     ]
   },
   "nvd": {
-    "total": 70,
-    "critical_count": 1,
-    "high_count": 7,
+    "total": 123,
+    "critical_count": 6,
+    "high_count": 18,
     "cves": [
+      {
+        "cve_id": "CVE-2021-47923",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "OpenCart 3.0.3.8 contains a session fixation vulnerability that allows attackers to hijack user sessions by injecting arbitrary values into the OCSESSID cookie. Attackers can set malicious OCSESSID co",
+        "published": "2026-05-10T13:16:28.170"
+      },
+      {
+        "cve_id": "CVE-2021-47932",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "WordPress TheCartPress 1.5.3.6 contains an unauthenticated privilege escalation vulnerability that allows attackers to create administrator accounts by submitting crafted requests to the AJAX handler.",
+        "published": "2026-05-10T13:16:29.427"
+      },
+      {
+        "cve_id": "CVE-2021-47933",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "WordPress MStore API 2.0.6 contains an arbitrary file upload vulnerability that allows unauthenticated attackers to upload malicious files by sending POST requests to the REST API endpoint. Attackers ",
+        "published": "2026-05-10T13:16:29.560"
+      },
+      {
+        "cve_id": "CVE-2021-47936",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "OpenCATS 0.9.4 contains a remote code execution vulnerability that allows unauthenticated attackers to execute arbitrary commands by uploading malicious PHP files disguised as resume attachments. Atta",
+        "published": "2026-05-10T13:16:29.830"
+      },
+      {
+        "cve_id": "CVE-2021-47940",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "WordPress Plugin Download From Files version 1.48 and earlier contains an arbitrary file upload vulnerability that allows unauthenticated attackers to upload malicious files by exploiting the AJAX fil",
+        "published": "2026-05-10T13:16:30.363"
+      },
       {
         "cve_id": "CVE-2026-42569",
         "severity": "CRITICAL",
@@ -264,11 +299,74 @@
         "published": "2026-05-10T07:16:08.740"
       },
       {
+        "cve_id": "CVE-2021-47935",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Sentry 8.2.0 contains a remote code execution vulnerability that allows authenticated superusers to execute arbitrary commands by injecting malicious pickle-serialized objects through the audit log en",
+        "published": "2026-05-10T13:16:29.693"
+      },
+      {
+        "cve_id": "CVE-2021-47937",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "e107 CMS 2.3.0 contains a remote code execution vulnerability that allows authenticated users with theme installation permissions to execute arbitrary commands by uploading malicious theme files. Atta",
+        "published": "2026-05-10T13:16:29.960"
+      },
+      {
+        "cve_id": "CVE-2021-47938",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "ImpressCMS 1.4.2 contains a remote code execution vulnerability in the autotasks administrative interface that allows authenticated attackers to execute arbitrary PHP code by injecting malicious code ",
+        "published": "2026-05-10T13:16:30.100"
+      },
+      {
+        "cve_id": "CVE-2021-47939",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Evolution CMS 3.1.6 contains a remote code execution vulnerability that allows authenticated users with module creation permissions to execute arbitrary system commands by injecting PHP code into modu",
+        "published": "2026-05-10T13:16:30.233"
+      },
+      {
+        "cve_id": "CVE-2021-47943",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "TextPattern CMS 4.8.7 contains a remote code execution vulnerability that allows authenticated attackers to execute arbitrary commands by uploading malicious PHP files through the file upload function",
+        "published": "2026-05-10T13:16:30.627"
+      },
+      {
+        "cve_id": "CVE-2021-47949",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "CyberPanel 2.1 contains a command execution vulnerability that allows authenticated attackers to read arbitrary files and execute remote code by exploiting symlink attacks through the filemanager cont",
+        "published": "2026-05-10T13:16:31.453"
+      },
+      {
         "cve_id": "CVE-2026-42562",
         "severity": "HIGH",
         "base_score": 8.3,
         "description": "Plainpad is a self hosted note taking app. Prior to version 1.1.1, Plainpad allows a low-privilege authenticated user to self-escalate to administrator by submitting admin=true in PUT /api.php/v1/user",
         "published": "2026-05-09T20:16:28.933"
+      },
+      {
+        "cve_id": "CVE-2021-47928",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Opencart TMD Vendor System 3.x contains a blind SQL injection vulnerability that allows unauthenticated attackers to extract database information by injecting SQL code through the product_id parameter",
+        "published": "2026-05-10T13:16:28.863"
+      },
+      {
+        "cve_id": "CVE-2021-47930",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Balbooa Joomla Forms Builder 2.0.6 contains an unauthenticated SQL injection vulnerability in the form submission handler that allows remote attackers to execute arbitrary SQL queries. Attackers can s",
+        "published": "2026-05-10T13:16:29.163"
+      },
+      {
+        "cve_id": "CVE-2021-47941",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "WordPress Plugin Survey & Poll 1.5.7.3 contains an SQL injection vulnerability that allows unauthenticated attackers to execute arbitrary SQL queries by injecting malicious code through the wp_sap coo",
+        "published": "2026-05-10T13:16:30.493"
       },
       {
         "cve_id": "CVE-2026-42606",
@@ -278,109 +376,11 @@
         "published": "2026-05-09T20:16:30.170"
       },
       {
-        "cve_id": "CVE-2026-42574",
+        "cve_id": "CVE-2021-47945",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "apko allows users to build and publish OCI container images built from apk packages. From version 0.14.8 to before version 1.2.5, a crafted .apk could install a TypeSymlink tar entry whose target poin",
-        "published": "2026-05-09T20:16:29.420"
-      },
-      {
-        "cve_id": "CVE-2026-42575",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "apko allows users to build and publish OCI container images built from apk packages. Prior to version 1.2.7, apko verifies the signature on APKINDEX.tar.gz but never compares individually downloaded .",
-        "published": "2026-05-09T20:16:29.573"
-      },
-      {
-        "cve_id": "CVE-2026-8216",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was identified in Industrial Application Software IAS Canias ERP 8.03. This issue affects the function iasServerRemoteInterface.doAction of the component Java RMI Session Management. S",
-        "published": "2026-05-10T01:16:08.263"
-      },
-      {
-        "cve_id": "CVE-2026-42576",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "apko allows users to build and publish OCI container images built from apk packages. Prior to version 1.2.7, DiscoverKeys in pkg/apk/apk/implementation.go unconditionally type-asserts JWKS keys as *rs",
-        "published": "2026-05-09T20:16:29.717"
-      },
-      {
-        "cve_id": "CVE-2026-45181",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Hex-Rays IDA Pro 9.2 and 9.3 before 9.3sp2 does not block Clang dependency-file generation (via argument injection), which allows attackers to place their code into a plugins directory if the victim u",
-        "published": "2026-05-09T22:16:08.157"
-      },
-      {
-        "cve_id": "CVE-2026-45184",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Kdenlive before 26.04.1 allows dangerous proxy parameters when an attacker-controlled project file is used.",
-        "published": "2026-05-09T23:16:32.787"
-      },
-      {
-        "cve_id": "CVE-2026-8188",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A vulnerability has been found in Wavlink NU516U1 M16U1_V240425. Affected is the function change_wifi_password of the file /cgi-bin/adm.cgi. The manipulation of the argument wl_channel/wl_Pass/EncrypT",
-        "published": "2026-05-09T16:16:08.870"
-      },
-      {
-        "cve_id": "CVE-2026-8189",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A vulnerability was found in Wavlink NU516U1 M16U1_V240425. Affected by this vulnerability is the function wzdrepeater of the file /cgi-bin/adm.cgi. The manipulation of the argument wlan_bssid/sel_Aut",
-        "published": "2026-05-09T17:16:08.333"
-      },
-      {
-        "cve_id": "CVE-2026-8190",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A vulnerability was determined in Wavlink NU516U1 M16U1_V240425. Affected by this issue is the function wan of the file /cgi-bin/adm.cgi. This manipulation of the argument ppp_username/ppp_passwd/rwan",
-        "published": "2026-05-09T18:16:22.293"
-      },
-      {
-        "cve_id": "CVE-2026-8191",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A vulnerability was identified in Wavlink NU516U1 M16U1_V240425. This affects the function wifi_region of the file /cgi-bin/adm.cgi. Such manipulation of the argument skiplist1/skiplist2 leads to os c",
-        "published": "2026-05-09T19:16:09.093"
-      },
-      {
-        "cve_id": "CVE-2026-8192",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A security flaw has been discovered in Wavlink NU516U1 M16U1_V240425. This vulnerability affects the function wzdap of the file /cgi-bin/adm.cgi. Performing a manipulation of the argument EncrypType/w",
-        "published": "2026-05-09T19:16:10.127"
-      },
-      {
-        "cve_id": "CVE-2026-8193",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A weakness has been identified in Akaunting 3.1.21. This issue affects some unknown processing of the file config/dompdf.php of the component Invoice PDF Rendering. Executing a manipulation can lead t",
-        "published": "2026-05-09T19:16:10.290"
-      },
-      {
-        "cve_id": "CVE-2026-8217",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A security flaw has been discovered in Industrial Application Software IAS Canias ERP 8.03. Impacted is the function Runtime.getRuntime.exec of the component RMI Interface. Performing a manipulation o",
-        "published": "2026-05-10T02:16:08.833"
-      },
-      {
-        "cve_id": "CVE-2026-8227",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A weakness has been identified in Wavlink NU516U1 240425. This issue affects the function wzdapMesh of the file /cgi-bin/adm.cgi. This manipulation causes os command injection. The attack may be initi",
-        "published": "2026-05-10T05:16:12.407"
-      },
-      {
-        "cve_id": "CVE-2026-8228",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A security vulnerability has been detected in Wavlink NU516U1 240425. Impacted is the function advance of the file /cgi-bin/wireless.cgi. Such manipulation of the argument wlan_conf/Channel/skiplist/i",
-        "published": "2026-05-10T05:16:12.573"
+        "base_score": 7.8,
+        "description": "Argus Surveillance DVR 4.0 contains an unquoted service path vulnerability in the DVRWatchdog service that allows local attackers to escalate privileges by exploiting the service binary path. Attacker",
+        "published": "2026-05-10T13:16:30.897"
       }
     ]
   },
