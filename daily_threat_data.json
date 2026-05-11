@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-11T14:28:27.460444+00:00",
+  "generated_at": "2026-05-11T17:49:15.465033+00:00",
   "threat_score": {
-    "score": 5.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 3,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 58,
-    "critical_count": 1,
-    "high_count": 6,
+    "total": 130,
+    "critical_count": 3,
+    "high_count": 9,
     "cves": [
       {
         "cve_id": "CVE-2026-40636",
@@ -248,6 +248,27 @@
         "base_score": 9.8,
         "description": "Dell ECS versions 3.8.1.0 through 3.8.1.7 and Dell ObjectScale versions prior to 4.3.0.0,\u00a0contains a use of hard-coded credentials vulnerability. An unauthenticated attacker with local access could po",
         "published": "2026-05-11T10:16:13.623"
+      },
+      {
+        "cve_id": "CVE-2026-42613",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "Grav is a file-based Web platform. Prior to 2.0.0-beta.2, the Login::register() method in the Login plugin accepts attacker-controlled groups and access fields from the registration POST data without ",
+        "published": "2026-05-11T16:17:34.497"
+      },
+      {
+        "cve_id": "CVE-2026-42607",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Grav is a file-based Web platform. Prior to 2.0.0-beta.2, an authenticated user with administrative privileges can achieve Remote Code Execution (RCE) by uploading a specially crafted ZIP file through",
+        "published": "2026-05-11T16:17:32.720"
+      },
+      {
+        "cve_id": "CVE-2026-42611",
+        "severity": "HIGH",
+        "base_score": 8.9,
+        "description": "Grav is a file-based Web platform. Prior to 2.0.0-beta.2, a low-privileged (with the ability to create a page) user can cause XSS with the injection of svg element. The XSS can further be escalated to",
+        "published": "2026-05-11T16:17:34.173"
       },
       {
         "cve_id": "CVE-2026-8260",
@@ -262,6 +283,20 @@
         "base_score": 8.6,
         "description": "The Magic Link authentication flow accepts multiple invalid authentication requests without adequate rate limiting or resource control, leading to uncontrolled memory usage growth.\n\nThis vulnerability",
         "published": "2026-05-11T12:16:10.530"
+      },
+      {
+        "cve_id": "CVE-2026-42612",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "Grav is a file-based Web platform. Prior to 2.0.0-beta.2, a stored Cross-Site Scripting (XSS) vulnerability in getgrav/grav allows publisher-level accounts to execute arbitrary JavaScript. The issue a",
+        "published": "2026-05-11T16:17:34.350"
+      },
+      {
+        "cve_id": "CVE-2026-42609",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Grav is a file-based Web platform. Prior to 2.0.0-beta.2, a business logic vulnerability in the Grav Admin Panel allows a low-privileged user (with only user creation permissions) to overwrite existin",
+        "published": "2026-05-11T16:17:33.610"
       },
       {
         "cve_id": "CVE-2026-32658",
@@ -313,74 +348,39 @@
         "published": "2026-05-11T09:16:26.143"
       },
       {
+        "cve_id": "CVE-2026-42610",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Grav is a file-based Web platform. Prior to 2.0.0-beta.2, a low-privileged user (EX: Content Editor with only pages.update permissions) can bypass the existing Twig sandbox restrictions by utilizing t",
+        "published": "2026-05-11T16:17:33.957"
+      },
+      {
+        "cve_id": "CVE-2026-44197",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Wagtail is an open source content management system built on Django. Prior to 7.0.7, 7.3.2, and 7.4, a CMS user without the ability to edit a page could access revisions of the page through the revisi",
+        "published": "2026-05-11T16:17:34.823"
+      },
+      {
+        "cve_id": "CVE-2026-44199",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Wagtail is an open source content management system built on Django. Prior to 7.0.7, 7.3.2, and 7.4, a CMS user with limited access to form pages could delete submissions to form pages they don't have",
+        "published": "2026-05-11T16:17:35.430"
+      },
+      {
+        "cve_id": "CVE-2026-44200",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Wagtail is an open source content management system built on Django. Prior to 7.0.7, 7.3.2, and 7.4, a CMS user with limited access to pages could copy a page they don't have access to to an area of t",
+        "published": "2026-05-11T16:17:35.713"
+      },
+      {
         "cve_id": "CVE-2025-9973",
         "severity": "MEDIUM",
         "base_score": 6.4,
         "description": "Due to not validating the organization context when executing adaptive authentication flows, the WSO2 Identity Server allows adaptive authentication logic to be triggered on unintended organizations. ",
         "published": "2026-05-11T12:16:11.050"
-      },
-      {
-        "cve_id": "CVE-2026-8264",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A weakness has been identified in Tenda AC6 15.03.06.23. Affected by this vulnerability is the function formWifiApScan of the file /goform/WifiApScan of the component httpd. Executing a manipulation o",
-        "published": "2026-05-11T04:16:17.023"
-      },
-      {
-        "cve_id": "CVE-2025-8325",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "The software fails to enforce role-based access controls for certain Gateway API invocations. Users with the 'Internal/Everyone' role can invoke these APIs, bypassing intended permission checks. This ",
-        "published": "2026-05-11T10:16:13.037"
-      },
-      {
-        "cve_id": "CVE-2026-8261",
-        "severity": "MEDIUM",
-        "base_score": 5.9,
-        "description": "A vulnerability was determined in Squirrel up to 3.2. This affects the function SQFunctionProto::Load of the file squirrel/sqobject.cpp. This manipulation causes heap-based buffer overflow. The attack",
-        "published": "2026-05-11T02:16:27.750"
-      },
-      {
-        "cve_id": "CVE-2026-35157",
-        "severity": "MEDIUM",
-        "base_score": 5.8,
-        "description": "Dell ECS versions 3.8.1.0 through 3.8.1.7 and Dell ObjectScale versions prior to 4.3.0.0, contains an improper neutralization of formula elements in a CSV File vulnerability in the UI. An unauthentica",
-        "published": "2026-05-11T10:16:13.490"
-      },
-      {
-        "cve_id": "CVE-2025-43992",
-        "severity": "MEDIUM",
-        "base_score": 5.6,
-        "description": "Dell ECS versions 3.8.1.0 through 3.8.1.7 and Dell ObjectScale versions prior to 4.3.0.0, contains an authentication bypass by assumed-immutable data vulnerability in Geo replication. An unauthenticat",
-        "published": "2026-05-11T10:16:12.727"
-      },
-      {
-        "cve_id": "CVE-2026-8258",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "A flaw has been found in Squirrel up to 3.2. Impacted is the function validate_format in the library sqstdlib/sqstdstring.cpp. Executing a manipulation can lead to stack-based buffer overflow. The att",
-        "published": "2026-05-11T02:16:27.250"
-      },
-      {
-        "cve_id": "CVE-2026-8274",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "A security vulnerability has been detected in npitre cramfs-tools up to 2.1. Affected is the function do_directory of the file cramfsck.c of the component Directory Handler. Such manipulation leads to",
-        "published": "2026-05-11T05:16:16.580"
-      },
-      {
-        "cve_id": "CVE-2026-1677",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "Zephyr sockets created with `IPPROTO_TLS_1_3` can still negotiate a TLS 1.2 connection when both TLS versions are enabled in Kconfig, because the socket-level protocol selection is not propagated to m",
-        "published": "2026-05-11T06:16:08.683"
-      },
-      {
-        "cve_id": "CVE-2024-0391",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "The check user account lock states feature within the email OTP flow fails to validate user input, allowing an attacker to infer the existence of registered user accounts.\n\nThe discovery of valid user",
-        "published": "2026-05-11T10:16:11.593"
       }
     ]
   },
