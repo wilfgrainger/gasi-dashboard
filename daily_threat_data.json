@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T17:49:15.465033+00:00",
+  "generated_at": "2026-05-11T21:10:38.104212+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
+        "value": 4,
         "score": 2.0,
         "max": 3
       },
@@ -238,10 +238,17 @@
     ]
   },
   "nvd": {
-    "total": 130,
-    "critical_count": 3,
-    "high_count": 9,
+    "total": 230,
+    "critical_count": 4,
+    "high_count": 16,
     "cves": [
+      {
+        "cve_id": "CVE-2026-7813",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Authorization vulnerability in pgAdmin 4 server mode affecting Server Groups, Servers, Shared Servers, Background Processes, and Debugger modules.\n\nMultiple endpoints fetched user-owned objects withou",
+        "published": "2026-05-11T16:17:37.470"
+      },
       {
         "cve_id": "CVE-2026-40636",
         "severity": "CRITICAL",
@@ -320,67 +327,60 @@
         "published": "2026-05-11T08:16:16.077"
       },
       {
+        "cve_id": "CVE-2026-8177",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "XML::LibXML versions through 2.0210 for Perl read out-of-bounds heap memory when parsing XML node names containing truncated UTF-8 byte sequences.\n\nA node name ending in the middle of a multi byte UTF",
+        "published": "2026-05-10T21:16:30.003"
+      },
+      {
+        "cve_id": "CVE-2026-6433",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "The Custom css-js-php WordPress plugin through 2.0.7 does not properly sanitize user input before using it in a SQL query, and the result is passed to eval(), allowing unauthenticated users to execute",
+        "published": "2026-05-11T06:16:09.707"
+      },
+      {
+        "cve_id": "CVE-2025-10908",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "Due to a lack of user account state validation during authentication, locked user accounts can be successfully authenticated using Magic Link or Pass Key methods. This bypasses the intended security c",
+        "published": "2026-05-11T10:16:12.590"
+      },
+      {
+        "cve_id": "CVE-2025-61311",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A reflected cross-site scripted (XSS) vulnerability in the dfm-menu_alerts.php component of GmbH Mecury Managed Print Services (docuForm) v11.11c allows attackers to execute arbitrary Javascript in th",
+        "published": "2026-05-11T16:17:28.423"
+      },
+      {
+        "cve_id": "CVE-2025-61312",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A reflected cross-site scripted (XSS) vulnerability in the acc-menu_pricess.php component of GmbH Mecury Managed Print Services (docuForm) v11.11c allows attackers to execute arbitrary Javascript in t",
+        "published": "2026-05-11T16:17:28.530"
+      },
+      {
+        "cve_id": "CVE-2025-61313",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A reflected cross-site scripted (XSS) vulnerability in the dfm-menu_markeralerts.php component of GmbH Mecury Managed Print Services (docuForm) v11.11c allows attackers to execute arbitrary Javascript",
+        "published": "2026-05-11T16:17:28.637"
+      },
+      {
+        "cve_id": "CVE-2025-61314",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A reflected cross-site scripted (XSS) vulnerability in the dfm-menu_orderopt.php component of GmbH Mecury Managed Print Services (docuForm) v11.11c allows attackers to execute arbitrary Javascript in ",
+        "published": "2026-05-11T16:17:28.743"
+      },
+      {
         "cve_id": "CVE-2026-41951",
         "severity": "HIGH",
         "base_score": 7.2,
         "description": "Path traversal vulnerability exists in GROWI v7.5.0 and earlier, which may allow an attacker to execute arbitrary EJS templates on the server when an email server is running in GROWI.",
         "published": "2026-05-11T10:16:13.913"
-      },
-      {
-        "cve_id": "CVE-2026-26946",
-        "severity": "MEDIUM",
-        "base_score": 6.7,
-        "description": "Dell ECS versions 3.8.1.0 through 3.8.1.7 and Dell ObjectScale versions prior to 4.3.0.0,\u00a0contains an improper privilege management vulnerability in the OS. A high privileged attacker with local acces",
-        "published": "2026-05-11T10:16:13.247"
-      },
-      {
-        "cve_id": "CVE-2026-41018",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "The Elasticsearch logging provider, when configured with a `host` URL that embeds credentials (for example `https://user:password@server.example.com:9200`), wrote the full host URL \u2014 including the emb",
-        "published": "2026-05-11T09:16:25.990"
-      },
-      {
-        "cve_id": "CVE-2026-43826",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "The OpenSearch logging provider, when configured with a `host` URL that embeds credentials (for example `https://user:password@server.example.com:9200`), wrote the full host URL \u2014 including the embedd",
-        "published": "2026-05-11T09:16:26.143"
-      },
-      {
-        "cve_id": "CVE-2026-42610",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Grav is a file-based Web platform. Prior to 2.0.0-beta.2, a low-privileged user (EX: Content Editor with only pages.update permissions) can bypass the existing Twig sandbox restrictions by utilizing t",
-        "published": "2026-05-11T16:17:33.957"
-      },
-      {
-        "cve_id": "CVE-2026-44197",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Wagtail is an open source content management system built on Django. Prior to 7.0.7, 7.3.2, and 7.4, a CMS user without the ability to edit a page could access revisions of the page through the revisi",
-        "published": "2026-05-11T16:17:34.823"
-      },
-      {
-        "cve_id": "CVE-2026-44199",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Wagtail is an open source content management system built on Django. Prior to 7.0.7, 7.3.2, and 7.4, a CMS user with limited access to form pages could delete submissions to form pages they don't have",
-        "published": "2026-05-11T16:17:35.430"
-      },
-      {
-        "cve_id": "CVE-2026-44200",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Wagtail is an open source content management system built on Django. Prior to 7.0.7, 7.3.2, and 7.4, a CMS user with limited access to pages could copy a page they don't have access to to an area of t",
-        "published": "2026-05-11T16:17:35.713"
-      },
-      {
-        "cve_id": "CVE-2025-9973",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "Due to not validating the organization context when executing adaptive authentication flows, the WSO2 Identity Server allows adaptive authentication logic to be triggered on unintended organizations. ",
-        "published": "2026-05-11T12:16:11.050"
       }
     ]
   },
