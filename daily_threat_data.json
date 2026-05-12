@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T21:10:38.104212+00:00",
+  "generated_at": "2026-05-12T02:06:30.001840+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 230,
+    "total": 355,
     "critical_count": 4,
-    "high_count": 16,
+    "high_count": 19,
     "cves": [
       {
         "cve_id": "CVE-2026-7813",
@@ -285,6 +285,20 @@
         "published": "2026-05-11T02:16:27.583"
       },
       {
+        "cve_id": "CVE-2026-7815",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "SQL injection vulnerability in pgAdmin 4 Maintenance Tool.\n\nFour user-supplied JSON fields (buffer_usage_limit, vacuum_parallel, vacuum_index_cleanup, reindex_tablespace) were concatenated directly in",
+        "published": "2026-05-11T16:17:37.873"
+      },
+      {
+        "cve_id": "CVE-2026-7816",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "OS command injection (CWE-78) vulnerability in pgAdmin 4 Import/Export query export.\n\nUser-supplied input was interpolated directly into a psql \\copy metacommand template without sanitization. An auth",
+        "published": "2026-05-11T16:17:38.260"
+      },
+      {
         "cve_id": "CVE-2025-10470",
         "severity": "HIGH",
         "base_score": 8.6,
@@ -306,6 +320,13 @@
         "published": "2026-05-11T16:17:33.610"
       },
       {
+        "cve_id": "CVE-2026-7819",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Symbolic-link path traversal (CWE-61, CWE-22) in pgAdmin 4 File Manager.\n\ncheck_access_permission used os.path.abspath, which resolves '..' but does not resolve symbolic links, while the subsequent ke",
+        "published": "2026-05-11T16:17:39.113"
+      },
+      {
         "cve_id": "CVE-2026-32658",
         "severity": "HIGH",
         "base_score": 8.0,
@@ -325,13 +346,6 @@
         "base_score": 7.8,
         "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nrxrpc: Also unshare DATA/RESPONSE packets when paged frags are present\n\nThe DATA-packet handler in rxrpc_input_call_event() and the",
         "published": "2026-05-11T08:16:16.077"
-      },
-      {
-        "cve_id": "CVE-2026-8177",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "XML::LibXML versions through 2.0210 for Perl read out-of-bounds heap memory when parsing XML node names containing truncated UTF-8 byte sequences.\n\nA node name ending in the middle of a multi byte UTF",
-        "published": "2026-05-10T21:16:30.003"
       },
       {
         "cve_id": "CVE-2026-6433",
@@ -367,20 +381,6 @@
         "base_score": 7.3,
         "description": "A reflected cross-site scripted (XSS) vulnerability in the dfm-menu_markeralerts.php component of GmbH Mecury Managed Print Services (docuForm) v11.11c allows attackers to execute arbitrary Javascript",
         "published": "2026-05-11T16:17:28.637"
-      },
-      {
-        "cve_id": "CVE-2025-61314",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A reflected cross-site scripted (XSS) vulnerability in the dfm-menu_orderopt.php component of GmbH Mecury Managed Print Services (docuForm) v11.11c allows attackers to execute arbitrary Javascript in ",
-        "published": "2026-05-11T16:17:28.743"
-      },
-      {
-        "cve_id": "CVE-2026-41951",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "Path traversal vulnerability exists in GROWI v7.5.0 and earlier, which may allow an attacker to execute arbitrary EJS templates on the server when an email server is running in GROWI.",
-        "published": "2026-05-11T10:16:13.913"
       }
     ]
   },
