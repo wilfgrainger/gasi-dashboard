@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-12T13:55:49.592014+00:00",
+  "generated_at": "2026-05-12T17:53:00.099503+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
+        "value": 4,
         "score": 2.0,
         "max": 3
       },
@@ -238,79 +238,79 @@
     ]
   },
   "nvd": {
-    "total": 419,
-    "critical_count": 3,
-    "high_count": 25,
+    "total": 440,
+    "critical_count": 4,
+    "high_count": 24,
     "cves": [
       {
-        "cve_id": "CVE-2026-7813",
+        "cve_id": "CVE-2026-42869",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "SOCFortress CoPilot focuses on providing a single pane of glass for all your security operations needs. Prior to 0.1.57, SOCFortress CoPilot ships a hardcoded JWT signing secret as a fallback value in",
+        "published": "2026-05-11T20:25:43.347"
+      },
+      {
+        "cve_id": "CVE-2026-42864",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "Authorization vulnerability in pgAdmin 4 server mode affecting Server Groups, Servers, Shared Servers, Background Processes, and Debugger modules.\n\nMultiple endpoints fetched user-owned objects withou",
-        "published": "2026-05-11T16:17:37.470"
+        "description": "FireFighter is an incident management application. Prior to 0.0.54, the POST /api/v2/firefighter/raid/jira_bot endpoint (CreateJiraBotView) is reachable without authentication (permission_classes = [p",
+        "published": "2026-05-11T19:16:24.417"
       },
       {
-        "cve_id": "CVE-2026-42613",
+        "cve_id": "CVE-2026-38567",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "HireFlow v1.2 is vulnerable to SQL injection in the /login and /search endpoints. User-supplied input is concatenated directly into SQL queries without parameterization. An unauthenticated attacker ca",
+        "published": "2026-05-11T18:16:32.857"
+      },
+      {
+        "cve_id": "CVE-2026-42882",
         "severity": "CRITICAL",
         "base_score": 9.4,
-        "description": "Grav is a file-based Web platform. Prior to 2.0.0-beta.2, the Login::register() method in the Login plugin accepts attacker-controlled groups and access fields from the registration POST data without ",
-        "published": "2026-05-11T16:17:34.497"
+        "description": "oxyno-zeta/s3-proxy is an aws s3 proxy written in go. Prior to 5.0.0, s3-proxy contains an authentication bypass caused by inconsistent URL path interpretation between the authentication middleware an",
+        "published": "2026-05-11T20:25:44.450"
       },
       {
-        "cve_id": "CVE-2026-42607",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Grav is a file-based Web platform. Prior to 2.0.0-beta.2, an authenticated user with administrative privileges can achieve Remote Code Execution (RCE) by uploading a specially crafted ZIP file through",
-        "published": "2026-05-11T16:17:32.720"
-      },
-      {
-        "cve_id": "CVE-2026-42611",
-        "severity": "HIGH",
-        "base_score": 8.9,
-        "description": "Grav is a file-based Web platform. Prior to 2.0.0-beta.2, a low-privileged (with the ability to create a page) user can cause XSS with the injection of svg element. The XSS can further be escalated to",
-        "published": "2026-05-11T16:17:34.173"
-      },
-      {
-        "cve_id": "CVE-2026-7815",
+        "cve_id": "CVE-2026-45006",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "SQL injection vulnerability in pgAdmin 4 Maintenance Tool.\n\nFour user-supplied JSON fields (buffer_usage_limit, vacuum_parallel, vacuum_index_cleanup, reindex_tablespace) were concatenated directly in",
-        "published": "2026-05-11T16:17:37.873"
+        "description": "OpenClaw before 2026.4.23 contains an improper access control vulnerability in the gateway tool's config.apply and config.patch operations that allows compromised models to write unsafe configuration ",
+        "published": "2026-05-11T18:16:40.980"
       },
       {
-        "cve_id": "CVE-2026-7816",
+        "cve_id": "CVE-2026-45223",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "OS command injection (CWE-78) vulnerability in pgAdmin 4 Import/Export query export.\n\nUser-supplied input was interpolated directly into a psql \\copy metacommand template without sanitization. An auth",
-        "published": "2026-05-11T16:17:38.260"
+        "description": "Crabbox before 0.9.0 contains an authentication bypass vulnerability in the coordinator user-token verification path where the verifyUserToken() function fails to reject payloads containing an admin c",
+        "published": "2026-05-11T19:16:28.103"
       },
       {
-        "cve_id": "CVE-2026-42603",
+        "cve_id": "CVE-2026-36734",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "OWASP BLT is a QA testing and vulnerability disclosure platform that encompasses websites, apps, git repositories, and more. Prior to 2.1.2, .github/workflows/pre-commit-fix.yaml uses pull_request_tar",
-        "published": "2026-05-11T17:16:33.410"
+        "description": "EDIMAX BR-6428nS V3 1.15 is vulnerable to Command Injection. An authenticated attacker with access to the network can submit crafted input to the WLAN configuration functionality. Due to insufficient ",
+        "published": "2026-05-11T20:25:41.563"
       },
       {
-        "cve_id": "CVE-2026-42843",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Grav API Plugin is a RESTful API for Grav CMS that provides full headless access to your site's content, media, configuration, users, and system management. Prior to 1.0.0-beta.15, an insecure direct ",
-        "published": "2026-05-11T17:16:34.013"
-      },
-      {
-        "cve_id": "CVE-2026-33362",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "In Meari IoT SDK builds embedded in CloudEdge 5.5.0 (build 220), Arenti 1.8.1 (build 220), and white-label Android apps <= 1.8.x (latest observed), multiple security-critical secrets are hardcoded and",
-        "published": "2026-05-11T17:16:31.083"
-      },
-      {
-        "cve_id": "CVE-2026-42612",
+        "cve_id": "CVE-2026-42858",
         "severity": "HIGH",
         "base_score": 8.5,
-        "description": "Grav is a file-based Web platform. Prior to 2.0.0-beta.2, a stored Cross-Site Scripting (XSS) vulnerability in getgrav/grav allows publisher-level accounts to execute arbitrary JavaScript. The issue a",
-        "published": "2026-05-11T16:17:34.350"
+        "description": "Open edX Platform enables the authoring and delivery of online learning at any scale. The sync_provider_data endpoint in SAMLProviderDataViewSet allows authenticated Enterprise Admin users to supply a",
+        "published": "2026-05-11T18:16:36.263"
+      },
+      {
+        "cve_id": "CVE-2026-42860",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "The Open edx Enterprise Service app provides enterprise features to the Open edX platform. From 7.0.2 to 7.0.4, the sync_provider_data endpoint in SAMLProviderDataViewSet fetches SAML metadata from a ",
+        "published": "2026-05-11T18:16:36.547"
+      },
+      {
+        "cve_id": "CVE-2026-4892",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "A heap-based out-of-bounds write vulnerability in the DHCPv6 implementation of dnsmasq allows local attackers to execute arbitrary code with root privileges via a crafted DHCPv6 packet.",
+        "published": "2026-05-11T18:16:41.483"
       },
       {
         "cve_id": "CVE-2026-42313",
@@ -320,18 +320,25 @@
         "published": "2026-05-11T18:16:34.980"
       },
       {
-        "cve_id": "CVE-2026-42609",
+        "cve_id": "CVE-2026-44413",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Grav is a file-based Web platform. Prior to 2.0.0-beta.2, a business logic vulnerability in the Grav Admin Panel allows a low-privileged user (with only user creation permissions) to overwrite existin",
-        "published": "2026-05-11T16:17:33.610"
+        "base_score": 8.2,
+        "description": "In JetBrains TeamCity before 2026.1\n2025.11.5 authenticated users could expose server API to unauthorised access",
+        "published": "2026-05-11T18:16:38.053"
       },
       {
-        "cve_id": "CVE-2026-7819",
+        "cve_id": "CVE-2026-30635",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Symbolic-link path traversal (CWE-61, CWE-22) in pgAdmin 4 File Manager.\n\ncheck_access_permission used os.path.abspath, which resolves '..' but does not resolve symbolic links, while the subsequent ke",
-        "published": "2026-05-11T16:17:39.113"
+        "description": "Command injection vulnerability in automagik-genie 2.5.27 MCP Server allows attackers to execute arbitrary commands via the view_task (aka view) in the readTranscriptFromCommit function in dist/mcp/se",
+        "published": "2026-05-11T18:16:31.660"
+      },
+      {
+        "cve_id": "CVE-2026-38566",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "HireFlow v1.2 does not implement CSRF token validation on any state-changing POST endpoint. All forms (password change at /profile, candidate deletion at /candidates/delete/<id>, feedback submission a",
+        "published": "2026-05-11T18:16:32.730"
       },
       {
         "cve_id": "CVE-2026-38568",
@@ -348,11 +355,11 @@
         "published": "2026-05-11T18:16:35.260"
       },
       {
-        "cve_id": "CVE-2026-4802",
+        "cve_id": "CVE-2026-43640",
         "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "A flaw was found in Cockpit. This vulnerability allows a remote attacker to achieve arbitrary command execution on the host by exploiting unsanitized user-controlled parameters within crafted links in",
-        "published": "2026-05-11T14:16:31.550"
+        "base_score": 8.1,
+        "description": "Bitwarden Server prior to v2026.4.1 does not require master-password re-authentication when retrieving or rotating an organization's SCIM API key, allowing an authenticated user with SCIM management p",
+        "published": "2026-05-11T18:16:37.110"
       },
       {
         "cve_id": "CVE-2026-41431",
@@ -362,25 +369,18 @@
         "published": "2026-05-11T18:16:34.280"
       },
       {
-        "cve_id": "CVE-2026-33356",
+        "cve_id": "CVE-2026-43639",
         "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "In Meari IoT Cloud MQTT Broker deployments running EMQX 4.x, any authenticated low-privilege account can subscribe to global wildcard topics and receive telemetry from devices the user does not own. T",
-        "published": "2026-05-11T17:16:30.590"
+        "base_score": 8.0,
+        "description": "Bitwarden Server prior to v2026.4.0 contains a missing authorization vulnerability that allows a provider service user to add an arbitrary organization to their provider via `POST /providers/{provider",
+        "published": "2026-05-11T18:16:36.970"
       },
       {
-        "cve_id": "CVE-2026-44738",
+        "cve_id": "CVE-2026-45004",
         "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Grav is a file-based Web platform. Prior to 2.0.0-rc.2, the Twig sandbox allow-list permits any user with the admin.pages role to call config.toArray() from within a page body, dumping the entire merg",
-        "published": "2026-05-11T17:16:34.747"
-      },
-      {
-        "cve_id": "CVE-2026-33357",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "In Meari client applications embedding \"com.meari.sdk\" (including CloudEdge 5.5.0 build 220, Arenti 1.8.1 build 220, and related white-label <= 1.8.x), the integrated call path to openapi-euce.mearicl",
-        "published": "2026-05-11T17:16:30.730"
+        "base_score": 7.8,
+        "description": "OpenClaw before 2026.4.23 contains an arbitrary code execution vulnerability in the bundled plugin setup resolver that loads setup-api.js from process.cwd() during provider setup metadata resolution. ",
+        "published": "2026-05-11T18:16:40.673"
       }
     ]
   },
