@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-12T02:06:30.001840+00:00",
+  "generated_at": "2026-05-12T06:31:36.154879+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 355,
+    "total": 356,
     "critical_count": 4,
-    "high_count": 19,
+    "high_count": 26,
     "cves": [
       {
         "cve_id": "CVE-2026-7813",
@@ -278,13 +278,6 @@
         "published": "2026-05-11T16:17:34.173"
       },
       {
-        "cve_id": "CVE-2026-8260",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was found in D-Link DCS-935L up to 1.10.01. The impacted element is the function SetDeviceSettings of the file /web/cgi-bin/hnap/hnap_service of the component HNAP Service. The manipul",
-        "published": "2026-05-11T02:16:27.583"
-      },
-      {
         "cve_id": "CVE-2026-7815",
         "severity": "HIGH",
         "base_score": 8.8,
@@ -299,11 +292,32 @@
         "published": "2026-05-11T16:17:38.260"
       },
       {
+        "cve_id": "CVE-2026-42603",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "OWASP BLT is a QA testing and vulnerability disclosure platform that encompasses websites, apps, git repositories, and more. Prior to 2.1.2, .github/workflows/pre-commit-fix.yaml uses pull_request_tar",
+        "published": "2026-05-11T17:16:33.410"
+      },
+      {
+        "cve_id": "CVE-2026-42843",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Grav API Plugin is a RESTful API for Grav CMS that provides full headless access to your site's content, media, configuration, users, and system management. Prior to 1.0.0-beta.15, an insecure direct ",
+        "published": "2026-05-11T17:16:34.013"
+      },
+      {
         "cve_id": "CVE-2025-10470",
         "severity": "HIGH",
         "base_score": 8.6,
         "description": "The Magic Link authentication flow accepts multiple invalid authentication requests without adequate rate limiting or resource control, leading to uncontrolled memory usage growth.\n\nThis vulnerability",
         "published": "2026-05-11T12:16:10.530"
+      },
+      {
+        "cve_id": "CVE-2026-33362",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "In Meari IoT SDK builds embedded in CloudEdge 5.5.0 (build 220), Arenti 1.8.1 (build 220), and white-label Android apps <= 1.8.x (latest observed), multiple security-critical secrets are hardcoded and",
+        "published": "2026-05-11T17:16:31.083"
       },
       {
         "cve_id": "CVE-2026-42612",
@@ -348,39 +362,25 @@
         "published": "2026-05-11T08:16:16.077"
       },
       {
-        "cve_id": "CVE-2026-6433",
+        "cve_id": "CVE-2026-33356",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "The Custom css-js-php WordPress plugin through 2.0.7 does not properly sanitize user input before using it in a SQL query, and the result is passed to eval(), allowing unauthenticated users to execute",
-        "published": "2026-05-11T06:16:09.707"
+        "base_score": 7.7,
+        "description": "In Meari IoT Cloud MQTT Broker deployments running EMQX 4.x, any authenticated low-privilege account can subscribe to global wildcard topics and receive telemetry from devices the user does not own. T",
+        "published": "2026-05-11T17:16:30.590"
       },
       {
-        "cve_id": "CVE-2025-10908",
+        "cve_id": "CVE-2026-44738",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "Due to a lack of user account state validation during authentication, locked user accounts can be successfully authenticated using Magic Link or Pass Key methods. This bypasses the intended security c",
-        "published": "2026-05-11T10:16:12.590"
+        "base_score": 7.7,
+        "description": "Grav is a file-based Web platform. Prior to 2.0.0-rc.2, the Twig sandbox allow-list permits any user with the admin.pages role to call config.toArray() from within a page body, dumping the entire merg",
+        "published": "2026-05-11T17:16:34.747"
       },
       {
-        "cve_id": "CVE-2025-61311",
+        "cve_id": "CVE-2026-33357",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A reflected cross-site scripted (XSS) vulnerability in the dfm-menu_alerts.php component of GmbH Mecury Managed Print Services (docuForm) v11.11c allows attackers to execute arbitrary Javascript in th",
-        "published": "2026-05-11T16:17:28.423"
-      },
-      {
-        "cve_id": "CVE-2025-61312",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A reflected cross-site scripted (XSS) vulnerability in the acc-menu_pricess.php component of GmbH Mecury Managed Print Services (docuForm) v11.11c allows attackers to execute arbitrary Javascript in t",
-        "published": "2026-05-11T16:17:28.530"
-      },
-      {
-        "cve_id": "CVE-2025-61313",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A reflected cross-site scripted (XSS) vulnerability in the dfm-menu_markeralerts.php component of GmbH Mecury Managed Print Services (docuForm) v11.11c allows attackers to execute arbitrary Javascript",
-        "published": "2026-05-11T16:17:28.637"
+        "base_score": 7.5,
+        "description": "In Meari client applications embedding \"com.meari.sdk\" (including CloudEdge 5.5.0 build 220, Arenti 1.8.1 build 220, and related white-label <= 1.8.x), the integrated call path to openapi-euce.mearicl",
+        "published": "2026-05-11T17:16:30.730"
       }
     ]
   },
