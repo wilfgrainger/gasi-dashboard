@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-12T17:53:00.099503+00:00",
+  "generated_at": "2026-05-12T21:09:32.849749+00:00",
   "threat_score": {
-    "score": 6.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.0,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 0,
+        "score": 1.0,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 440,
-    "critical_count": 4,
-    "high_count": 24,
+    "total": 626,
+    "critical_count": 0,
+    "high_count": 50,
     "cves": [
       {
-        "cve_id": "CVE-2026-42869",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "SOCFortress CoPilot focuses on providing a single pane of glass for all your security operations needs. Prior to 0.1.57, SOCFortress CoPilot ships a hardcoded JWT signing secret as a fallback value in",
-        "published": "2026-05-11T20:25:43.347"
-      },
-      {
-        "cve_id": "CVE-2026-42864",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "FireFighter is an incident management application. Prior to 0.0.54, the POST /api/v2/firefighter/raid/jira_bot endpoint (CreateJiraBotView) is reachable without authentication (permission_classes = [p",
-        "published": "2026-05-11T19:16:24.417"
-      },
-      {
-        "cve_id": "CVE-2026-38567",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "HireFlow v1.2 is vulnerable to SQL injection in the /login and /search endpoints. User-supplied input is concatenated directly into SQL queries without parameterization. An unauthenticated attacker ca",
-        "published": "2026-05-11T18:16:32.857"
-      },
-      {
-        "cve_id": "CVE-2026-42882",
-        "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "oxyno-zeta/s3-proxy is an aws s3 proxy written in go. Prior to 5.0.0, s3-proxy contains an authentication bypass caused by inconsistent URL path interpretation between the authentication middleware an",
-        "published": "2026-05-11T20:25:44.450"
-      },
-      {
-        "cve_id": "CVE-2026-45006",
+        "cve_id": "CVE-2026-28923",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "OpenClaw before 2026.4.23 contains an improper access control vulnerability in the gateway tool's config.apply and config.patch operations that allows compromised models to write unsafe configuration ",
-        "published": "2026-05-11T18:16:40.980"
+        "description": "A logging issue was addressed with improved data redaction. This issue is fixed in macOS Sequoia 15.7.7, macOS Sonoma 14.8.7, macOS Tahoe 26.5. A malicious app may be able to break out of its sandbox.",
+        "published": "2026-05-11T21:18:54.627"
       },
       {
-        "cve_id": "CVE-2026-45223",
+        "cve_id": "CVE-2026-28947",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Crabbox before 0.9.0 contains an authentication bypass vulnerability in the coordinator user-token verification path where the verifyUserToken() function fails to reject payloads containing an admin c",
-        "published": "2026-05-11T19:16:28.103"
+        "description": "A use-after-free issue was addressed with improved memory management. This issue is fixed in iOS 26.5 and iPadOS 26.5, macOS Tahoe 26.5, tvOS 26.5, visionOS 26.5, watchOS 26.5. Processing maliciously ",
+        "published": "2026-05-11T21:18:55.863"
       },
       {
-        "cve_id": "CVE-2026-36734",
+        "cve_id": "CVE-2026-28995",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "EDIMAX BR-6428nS V3 1.15 is vulnerable to Command Injection. An authenticated attacker with access to the network can submit crafted input to the WLAN configuration functionality. Due to insufficient ",
-        "published": "2026-05-11T20:25:41.563"
+        "description": "A logic issue was addressed with improved restrictions. This issue is fixed in iOS 18.7.9 and iPadOS 18.7.9, iOS 26.5 and iPadOS 26.5, macOS Tahoe 26.5, tvOS 26.5, visionOS 26.5, watchOS 26.5. A malic",
+        "published": "2026-05-11T21:18:59.417"
       },
       {
-        "cve_id": "CVE-2026-42858",
+        "cve_id": "CVE-2026-41489",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Open edX Platform enables the authoring and delivery of online learning at any scale. The sync_provider_data endpoint in SAMLProviderDataViewSet allows authenticated Enterprise Admin users to supply a",
-        "published": "2026-05-11T18:16:36.263"
+        "base_score": 8.8,
+        "description": "Pi-hole is a DNS sinkhole that protects devices from unwanted content without installing any client-side software. From 6.0 to before Core 6.4.2 and FTL 6.6.1, two shell scripts executed as root by sy",
+        "published": "2026-05-11T21:19:00.267"
       },
       {
-        "cve_id": "CVE-2026-42860",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "The Open edx Enterprise Service app provides enterprise features to the Open edX platform. From 7.0.2 to 7.0.4, the sync_provider_data endpoint in SAMLProviderDataViewSet fetches SAML metadata from a ",
-        "published": "2026-05-11T18:16:36.547"
-      },
-      {
-        "cve_id": "CVE-2026-4892",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "A heap-based out-of-bounds write vulnerability in the DHCPv6 implementation of dnsmasq allows local attackers to execute arbitrary code with root privileges via a crafted DHCPv6 packet.",
-        "published": "2026-05-11T18:16:41.483"
-      },
-      {
-        "cve_id": "CVE-2026-42313",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "pyLoad is a free and open-source download manager written in Python. Prior to 0.5.0b3.dev100, the set_config_value() API method (@permission(Perms.SETTINGS)) in src/pyload/core/api/__init__.py gates s",
-        "published": "2026-05-11T18:16:34.980"
-      },
-      {
-        "cve_id": "CVE-2026-44413",
+        "cve_id": "CVE-2026-42564",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "In JetBrains TeamCity before 2026.1\n2025.11.5 authenticated users could expose server API to unauthorised access",
-        "published": "2026-05-11T18:16:38.053"
+        "description": "jotty\u00b7page is a self-hosted app for your checklists and notes. Prior to 1.22.0, an unauthenticated path traversal vulnerability exists in /api/app-icons/[filename]. The filename route parameter is joi",
+        "published": "2026-05-11T22:22:11.417"
       },
       {
-        "cve_id": "CVE-2026-30635",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Command injection vulnerability in automagik-genie 2.5.27 MCP Server allows attackers to execute arbitrary commands via the view_task (aka view) in the readTranscriptFromCommit function in dist/mcp/se",
-        "published": "2026-05-11T18:16:31.660"
-      },
-      {
-        "cve_id": "CVE-2026-38566",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "HireFlow v1.2 does not implement CSRF token validation on any state-changing POST endpoint. All forms (password change at /profile, candidate deletion at /candidates/delete/<id>, feedback submission a",
-        "published": "2026-05-11T18:16:32.730"
-      },
-      {
-        "cve_id": "CVE-2026-38568",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "HireFlow v1.2 is vulnerable to Incorrect Access Control. The application does not enforce object-level authorization on the /candidate/<id> and /interview/<id> endpoints. The route handlers retrieve r",
-        "published": "2026-05-11T18:16:32.970"
-      },
-      {
-        "cve_id": "CVE-2026-42315",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "pyLoad is a free and open-source download manager written in Python. Prior to 0.5.0b3.dev100, when passing a folder name in the set_package_data() API function call inside the data object with key \"_f",
-        "published": "2026-05-11T18:16:35.260"
-      },
-      {
-        "cve_id": "CVE-2026-43640",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Bitwarden Server prior to v2026.4.1 does not require master-password re-authentication when retrieving or rotating an organization's SCIM API key, allowing an authenticated user with SCIM management p",
-        "published": "2026-05-11T18:16:37.110"
-      },
-      {
-        "cve_id": "CVE-2026-41431",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "Zen is a firefox-based browser. Prior to 1.19.9b, Zen Browser ships a Mozilla Application Resource (MAR) updater (org.mozilla.updater) that has had all MAR signature verification stripped from the Fir",
-        "published": "2026-05-11T18:16:34.280"
-      },
-      {
-        "cve_id": "CVE-2026-43639",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "Bitwarden Server prior to v2026.4.0 contains a missing authorization vulnerability that allows a provider service user to add an arbitrary organization to their provider via `POST /providers/{provider",
-        "published": "2026-05-11T18:16:36.970"
-      },
-      {
-        "cve_id": "CVE-2026-45004",
+        "cve_id": "CVE-2026-28840",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "OpenClaw before 2026.4.23 contains an arbitrary code execution vulnerability in the bundled plugin setup resolver that loads setup-api.js from process.cwd() during provider setup metadata resolution. ",
-        "published": "2026-05-11T18:16:40.673"
+        "description": "A permissions issue was addressed with additional restrictions. This issue is fixed in macOS Sequoia 15.7.7, macOS Sonoma 14.8.7, macOS Tahoe 26.4. An app may be able to gain root privileges.",
+        "published": "2026-05-11T21:18:51.307"
+      },
+      {
+        "cve_id": "CVE-2026-28919",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "A consistency issue was addressed with improved state handling. This issue is fixed in macOS Sequoia 15.7.7, macOS Sonoma 14.8.7, macOS Tahoe 26.5. An app may be able to gain root privileges.",
+        "published": "2026-05-11T21:18:54.317"
+      },
+      {
+        "cve_id": "CVE-2026-28951",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "An authorization issue was addressed with improved state management. This issue is fixed in iOS 18.7.9 and iPadOS 18.7.9, iOS 26.5 and iPadOS 26.5, macOS Sequoia 15.7.7, macOS Sonoma 14.8.7, macOS Tah",
+        "published": "2026-05-11T21:18:56.167"
+      },
+      {
+        "cve_id": "CVE-2026-42046",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "libcaca is a colour ASCII art library. In 0.99.beta20 and earlier, an integer overflow vulnerability in libcaca's canvas import functionality allows an attacker to cause a controlled heap out-of-bound",
+        "published": "2026-05-11T22:22:11.130"
+      },
+      {
+        "cve_id": "CVE-2026-28846",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A buffer overflow was addressed with improved bounds checking. This issue is fixed in iOS 18.7.9 and iPadOS 18.7.9, iOS 26.5 and iPadOS 26.5, macOS Sequoia 15.7.7, macOS Sonoma 14.8.7, macOS Tahoe 26.",
+        "published": "2026-05-11T21:18:51.410"
+      },
+      {
+        "cve_id": "CVE-2026-28848",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A buffer overflow was addressed with improved bounds checking. This issue is fixed in macOS Sequoia 15.7.7, macOS Tahoe 26.5. A remote attacker may be able to cause unexpected system termination.",
+        "published": "2026-05-11T21:18:51.607"
+      },
+      {
+        "cve_id": "CVE-2026-28860",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The issue was addressed with improved input validation. This issue is fixed in iOS 18.7.7 and iPadOS 18.7.7, iOS 26.4 and iPadOS 26.4, macOS Sequoia 15.7.5, macOS Sonoma 14.8.5, macOS Tahoe 26.4, tvOS",
+        "published": "2026-05-11T21:18:51.707"
+      },
+      {
+        "cve_id": "CVE-2026-28872",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A resource exhaustion issue was addressed with improved input validation. This issue is fixed in iOS 18.7.9 and iPadOS 18.7.9, iOS 26.4 and iPadOS 26.4. A remote attacker may be able to cause a denial",
+        "published": "2026-05-11T21:18:51.977"
+      },
+      {
+        "cve_id": "CVE-2026-28883",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A use-after-free issue was addressed with improved memory management. This issue is fixed in iOS 26.5 and iPadOS 26.5, macOS Tahoe 26.5, tvOS 26.5, visionOS 26.5, watchOS 26.5. Processing maliciously ",
+        "published": "2026-05-11T21:18:52.700"
+      },
+      {
+        "cve_id": "CVE-2026-28904",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The issue was addressed with improved memory handling. This issue is fixed in iOS 18.7.9 and iPadOS 18.7.9, iOS 26.5 and iPadOS 26.5, macOS Tahoe 26.5, tvOS 26.5, visionOS 26.5, watchOS 26.5. Processi",
+        "published": "2026-05-11T21:18:53.210"
+      },
+      {
+        "cve_id": "CVE-2026-28905",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The issue was addressed with improved memory handling. This issue is fixed in iOS 26.5 and iPadOS 26.5, macOS Tahoe 26.5, tvOS 26.5, visionOS 26.5. Processing maliciously crafted web content may lead ",
+        "published": "2026-05-11T21:18:53.310"
+      },
+      {
+        "cve_id": "CVE-2026-28906",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "This issue was addressed through improved state management. This issue is fixed in iOS 18.7.9 and iPadOS 18.7.9, iOS 26.5 and iPadOS 26.5, macOS Sequoia 15.7.7, macOS Sonoma 14.8.7, macOS Tahoe 26.5, ",
+        "published": "2026-05-11T21:18:53.403"
+      },
+      {
+        "cve_id": "CVE-2026-28908",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A denial of service issue was addressed by removing the vulnerable code. This issue is fixed in macOS Sequoia 15.7.7, macOS Sonoma 14.8.7, macOS Tahoe 26.5. An app may be able to modify protected part",
+        "published": "2026-05-11T21:18:53.607"
+      },
+      {
+        "cve_id": "CVE-2026-28913",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The issue was addressed with improved memory handling. This issue is fixed in iOS 26.5 and iPadOS 26.5, macOS Tahoe 26.5, tvOS 26.5, watchOS 26.5. Processing maliciously crafted web content may lead t",
+        "published": "2026-05-11T21:18:53.803"
+      },
+      {
+        "cve_id": "CVE-2026-28924",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A race condition was addressed with improved handling of symbolic links. This issue is fixed in macOS Sequoia 15.7.7, macOS Sonoma 14.8.7, macOS Tahoe 26.5. An app may be able to access Contacts witho",
+        "published": "2026-05-11T21:18:54.727"
       }
     ]
   },
