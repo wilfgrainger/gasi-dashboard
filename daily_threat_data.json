@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-13T14:08:12.158283+00:00",
+  "generated_at": "2026-05-13T17:54:51.774889+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
-        "score": 2.0,
+        "value": 6,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,44 +238,51 @@
     ]
   },
   "nvd": {
-    "total": 447,
-    "critical_count": 3,
-    "high_count": 17,
+    "total": 553,
+    "critical_count": 6,
+    "high_count": 59,
     "cves": [
       {
-        "cve_id": "CVE-2026-43992",
+        "cve_id": "CVE-2026-26083",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "JunoClaw is an agentic AI platform built on Juno Network. Prior to 0.x.y-security-1, every MCP write tool (send_tokens, execute_contract, instantiate_contract, upload_wasm, ibc_transfer, etc.) accepte",
-        "published": "2026-05-12T17:16:21.240"
+        "description": "A missing authorization vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.1, FortiSandbox 4.4.0 through 4.4.8, FortiSandbox Cloud 5.0.2 through 5.0.5, FortiSandbox PaaS 23.4 all versions, Forti",
+        "published": "2026-05-12T18:16:39.817"
       },
       {
-        "cve_id": "CVE-2026-8043",
+        "cve_id": "CVE-2026-31229",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "External control of a file name in Ivanti Xtraction before version 2026.2 allows a remote authenticated attacker to read sensitive files and write arbitrary HTML files to a web directory, leading to i",
-        "published": "2026-05-12T15:16:17.153"
+        "base_score": 9.8,
+        "description": "The Adversarial Robustness Toolbox (ART) thru 1.20.1 contains an insecure deserialization vulnerability (CWE-502) in its Kubeflow component's model loading functionality. When loading model weights fr",
+        "published": "2026-05-12T18:16:51.160"
       },
       {
-        "cve_id": "CVE-2026-45091",
+        "cve_id": "CVE-2026-31230",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Adversarial Robustness Toolbox (ART) thru 1.20.1 contains a command-line argument injection vulnerability in its Kubeflow component (robustness_evaluation_fgsm_pytorch.py). The script uses the uns",
+        "published": "2026-05-12T18:16:51.277"
+      },
+      {
+        "cve_id": "CVE-2026-29204",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "sealed-env is a cross-stack, zero-trust secret management library for Node.js and Java/Spring Boot. In sealed-env enterprise mode, versions 0.1.0-alpha.1 through 0.1.0-alpha.3 embedded the operator's ",
-        "published": "2026-05-12T14:17:08.820"
+        "description": "Insufficient ownership check in `clientarea.php` allows an authenticated client area user to submit requests using another user\u2019s `addonId` without any ownership validation leading to unauthorized acc",
+        "published": "2026-05-12T18:16:51.030"
       },
       {
-        "cve_id": "CVE-2026-43937",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "YetAnotherForum.NET (YAF.NET) is a C# ASP.NET forum. Prior to 4.0.5, Any admin OnPost\u2026 handler executes its side effects before the ResultFilterAttribute rewrites the response to a 302 to /Info/4. The",
-        "published": "2026-05-12T15:16:15.327"
+        "cve_id": "CVE-2026-31242",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The mem0 v1.0.0 server lacks authentication and authorization controls for its memory reset functionality accessible via the DELETE /memories endpoint. An unauthenticated attacker can send a DELETE re",
+        "published": "2026-05-12T18:16:52.677"
       },
       {
-        "cve_id": "CVE-2026-8111",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "SQL injection in the web console\u00a0of Ivanti Endpoint Manager\u00a0before version 2024 SU6 allows a remote authenticated attacker to achieve remote code execution.",
-        "published": "2026-05-12T15:16:18.923"
+        "cve_id": "CVE-2026-33117",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Improper authentication in Azure SDK allows an unauthorized attacker to bypass a security feature over a network.",
+        "published": "2026-05-12T18:17:04.033"
       },
       {
         "cve_id": "CVE-2025-43524",
@@ -285,102 +292,95 @@
         "published": "2026-05-12T18:16:35.007"
       },
       {
-        "cve_id": "CVE-2026-43989",
+        "cve_id": "CVE-2025-53844",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "JunoClaw is an agentic AI platform built on Juno Network. Prior to 0.x.y-security-1, the upload_wasm MCP tool accepted a filesystem path from the agent and uploaded whatever bytes the path resolved to",
-        "published": "2026-05-12T17:16:20.800"
+        "base_score": 8.8,
+        "description": "A out-of-bounds write vulnerability in Fortinet FortiOS 7.6.0 through 7.6.3, FortiOS 7.4.0 through 7.4.8, FortiOS 7.2.0 through 7.2.11 allows attacker to execute unauthorized code or commands via spec",
+        "published": "2026-05-12T18:16:35.983"
       },
       {
-        "cve_id": "CVE-2026-43990",
+        "cve_id": "CVE-2026-33110",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "JunoClaw is an agentic AI platform built on Juno Network. Prior to 0.x.y-security-1, plugin-shell's run_command wrapped every agent-supplied command in 'sh -c' / 'cmd /C' and passed the full argument ",
-        "published": "2026-05-12T17:16:20.953"
+        "base_score": 8.8,
+        "description": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
+        "published": "2026-05-12T18:17:03.497"
       },
       {
-        "cve_id": "CVE-2026-43991",
+        "cve_id": "CVE-2026-33112",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "JunoClaw is an agentic AI platform built on Juno Network. Prior to 0.x.y-security-1, substring-based blocklist in plugin-shell's command-safety check could be bypassed by adversarial argument construc",
-        "published": "2026-05-12T17:16:21.090"
+        "base_score": 8.8,
+        "description": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
+        "published": "2026-05-12T18:17:03.687"
       },
       {
-        "cve_id": "CVE-2026-35071",
+        "cve_id": "CVE-2026-34329",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Heap-based buffer overflow in Windows Message Queuing allows an unauthorized attacker to execute code over an adjacent network.",
+        "published": "2026-05-12T18:17:06.567"
+      },
+      {
+        "cve_id": "CVE-2026-35436",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Insufficient granularity of access control in Microsoft Office Click-To-Run allows an authorized attacker to elevate privileges locally.",
+        "published": "2026-05-12T18:17:13.903"
+      },
+      {
+        "cve_id": "CVE-2026-35439",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
+        "published": "2026-05-12T18:17:14.153"
+      },
+      {
+        "cve_id": "CVE-2026-40357",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
+        "published": "2026-05-12T18:17:14.413"
+      },
+      {
+        "cve_id": "CVE-2026-35438",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "Missing authorization in Windows Admin Center allows an authorized attacker to elevate privileges over a network.",
+        "published": "2026-05-12T18:17:14.030"
+      },
+      {
+        "cve_id": "CVE-2026-33833",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "Dell PowerScale InsightIQ, versions 6.0.0 through 6.2.0, contains an improper neutralization of special elements used in an OS command ('OS Command Injection') vulnerability. A high privileged attacke",
-        "published": "2026-05-12T14:17:02.240"
+        "description": "Improper neutralization of special elements in output used by a downstream component ('injection') in Azure Machine Learning allows an unauthorized attacker to perform spoofing over a network.",
+        "published": "2026-05-12T18:17:05.160"
       },
       {
-        "cve_id": "CVE-2026-42260",
+        "cve_id": "CVE-2026-34332",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Open-WebSearch is a multi-engine MCP server, CLI, and local daemon for agent web search and content retrieval. Prior to 2.1.7, isPublicHttpUrl / assertPublicHttpUrl in src/utils/urlSafety.ts do not re",
-        "published": "2026-05-12T15:16:15.150"
+        "base_score": 8.0,
+        "description": "Use after free in Windows Kernel-Mode Drivers allows an authorized attacker to execute code over a network.",
+        "published": "2026-05-12T18:17:07.127"
       },
       {
-        "cve_id": "CVE-2026-43993",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "JunoClaw is an agentic AI platform built on Juno Network. Prior to 0.x.y-security-1, the WAVS bridge's computeDataVerify called fetch() on agent-supplied URLs without validating scheme, port, or resol",
-        "published": "2026-05-12T17:16:21.380"
-      },
-      {
-        "cve_id": "CVE-2026-43938",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "YetAnotherForum.NET (YAF.NET) is a C# ASP.NET forum. Prior to 4.0.5 and 3.2.12, the application's database logger (YAFNET.Core/Logger/DbLogger.cs) captures the incoming request's User-Agent header int",
-        "published": "2026-05-12T15:16:15.497"
-      },
-      {
-        "cve_id": "CVE-2026-7432",
+        "cve_id": "CVE-2026-32204",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "A race condition in Ivanti Secure Access Client before 22.8R6 allows a locally authenticated user to escalate privileges to SYSTEM",
-        "published": "2026-05-12T15:16:17.027"
+        "description": "External control of file name or path in Azure Monitor Agent allows an authorized attacker to elevate privileges locally.",
+        "published": "2026-05-12T18:17:00.620"
       },
       {
-        "cve_id": "CVE-2026-8110",
+        "cve_id": "CVE-2026-33834",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "Incorrect permissions assignment in\u00a0the agent of\u00a0Ivanti Endpoint Manager before\u00a0version 2024\u00a0SU6\u00a0allows a\u00a0local\u00a0authenticated\u00a0attacker to\u00a0escalate their privileges.",
-        "published": "2026-05-12T15:16:17.770"
+        "description": "Improper access control in Windows Event Logging Service allows an authorized attacker to elevate privileges locally.",
+        "published": "2026-05-12T18:17:05.293"
       },
       {
-        "cve_id": "CVE-2025-46311",
+        "cve_id": "CVE-2026-33835",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "An inconsistent user interface issue was addressed with improved state management. This issue is fixed in iOS 18.7.3 and iPadOS 18.7.3, iOS 26.2 and iPadOS 26.2. An app may be able to access sensitive",
-        "published": "2026-05-12T18:16:35.577"
-      },
-      {
-        "cve_id": "CVE-2026-27851",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "When safe filter is used with variable expansion, all following pipelines on the same string are incorrectly interpreted as safe too, enabling unsafe data to be unescaped. This can enable SQL / LDAP i",
-        "published": "2026-05-12T14:16:56.857"
-      },
-      {
-        "cve_id": "CVE-2026-43939",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "YetAnotherForum.NET (YAF.NET) is a C# ASP.NET forum. Prior to 4.0.5 and 3.2.12, the thread posting and reply feature accepts user-supplied content via a a post or reply that is stored server-side and ",
-        "published": "2026-05-12T15:16:15.647"
-      },
-      {
-        "cve_id": "CVE-2026-8051",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "OS command injection in Ivanti Virtual Traffic Manager before version 22.9r4 allows a remote authenticated attacker with admin privileges to achieve remote code execution.",
-        "published": "2026-05-12T15:16:17.267"
-      },
-      {
-        "cve_id": "CVE-2025-53681",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "An improper neutralization of special elements used in an SQL Command (\"SQL Injection&\") vulnerability [CWE-89] vulnerability in Fortinet FortiMail 7.6.0 through 7.6.3, FortiMail 7.4.0 through 7.4.5, ",
-        "published": "2026-05-12T18:16:35.860"
+        "base_score": 7.8,
+        "description": "Use after free in Windows Cloud Files Mini Filter Driver allows an authorized attacker to elevate privileges locally.",
+        "published": "2026-05-12T18:17:05.477"
       }
     ]
   },
