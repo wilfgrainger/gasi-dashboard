@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-13T21:18:13.614423+00:00",
+  "generated_at": "2026-05-14T02:14:08.608803+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 24,
+        "value": 22,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
+        "value": 6,
         "score": 2.5,
         "max": 3
       },
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1590,
-    "recent_30d_count": 24,
+    "recent_30d_count": 22,
     "recent": [
       {
         "cve_id": "CVE-2026-42208",
@@ -238,37 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 372,
-    "critical_count": 9,
-    "high_count": 31,
+    "total": 350,
+    "critical_count": 6,
+    "high_count": 24,
     "cves": [
-      {
-        "cve_id": "CVE-2026-42288",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "ChurchCRM is an open-source church management system. Prior to 7.3.2, The fix for CVE-2026-39337 is incomplete. The pre-authentication remote code execution vulnerability in ChurchCRM's setup wizard v",
-        "published": "2026-05-12T23:16:17.600"
-      },
-      {
-        "cve_id": "CVE-2026-43948",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "wger is a free, open-source workout and fitness manager. Prior to 2.6, the reset_user_password and gym_permissions_user_edit views in wger perform a gym-scope authorization check using Python object c",
-        "published": "2026-05-12T22:16:35.197"
-      },
       {
         "cve_id": "CVE-2026-41050",
         "severity": "CRITICAL",
         "base_score": 9.9,
         "description": "Fleet's Helm deployer did not fully apply ServiceAccount impersonation in two code paths, allowing a tenant with git push access to a Fleet-monitored repository to read secrets from any namespace on e",
         "published": "2026-05-13T08:16:16.780"
-      },
-      {
-        "cve_id": "CVE-2026-42854",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "arduino-esp32 is an Arduino core for the ESP32, ESP32-S2, ESP32-S3, ESP32-C3, ESP32-C6 and ESP32-H2 microcontrollers. Prior to 3.3.8, the WebServer multipart form parser in arduino-esp32 allocates a V",
-        "published": "2026-05-12T22:16:34.930"
       },
       {
         "cve_id": "CVE-2026-32661",
@@ -278,18 +257,25 @@
         "published": "2026-05-13T06:16:14.253"
       },
       {
-        "cve_id": "CVE-2026-44547",
+        "cve_id": "CVE-2026-40621",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "ChurchCRM is an open-source church management system. From 7.2.0 to 7.2.2, The fix for CVE-2026-4058 is incomplete. The hardening commit was merged and then silently stripped from src/api/routes/publi",
-        "published": "2026-05-12T23:16:18.610"
+        "base_score": 9.8,
+        "description": "ELECOM wireless LAN access point devices do not require authentication to access some specific URLs. The affected product may be operated without authentication.",
+        "published": "2026-05-13T13:16:42.750"
       },
       {
-        "cve_id": "CVE-2026-44262",
+        "cve_id": "CVE-2026-42062",
         "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "Scramble generates API documentation for Laravel project. From 0.13.2 to before 0.13.22, when documentation endpoints are publicly accessible and validation rules reference user-controlled input, requ",
-        "published": "2026-05-12T22:16:36.563"
+        "base_score": 9.8,
+        "description": "ELECOM wireless LAN access point devices contain an OS command injection in processing of username parameter. If processing a crafted request, an arbitrary OS command may be executed. No authenticatio",
+        "published": "2026-05-13T13:16:43.570"
+      },
+      {
+        "cve_id": "CVE-2020-37168",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Ecommerce Systempay 1.0 contains a weak cryptographic implementation vulnerability that allows attackers to brute force the 16-character production secret key used for payment signature generation. At",
+        "published": "2026-05-13T16:16:31.720"
       },
       {
         "cve_id": "CVE-2025-11159",
@@ -299,27 +285,6 @@
         "published": "2026-05-13T06:16:11.517"
       },
       {
-        "cve_id": "CVE-2026-41901",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "Thymeleaf is a server-side Java template engine for web and standalone environments. Prior to 3.1.5.RELEASE, a security bypass vulnerability exists in the expression execution mechanisms of Thymeleaf.",
-        "published": "2026-05-12T23:16:17.060"
-      },
-      {
-        "cve_id": "CVE-2026-45227",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Heym before 0.0.21 contains a sandbox escape vulnerability in the custom Python tool executor that allows authenticated workflow authors to bypass sandbox restrictions by using object-graph introspect",
-        "published": "2026-05-12T22:16:38.260"
-      },
-      {
-        "cve_id": "CVE-2026-42289",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "ChurchCRM is an open-source church management system. Prior to 7.3.2, UserEditor.php processes user account creation and permission updates entirely through $_POST parameters with no CSRF token valida",
-        "published": "2026-05-12T23:16:17.730"
-      },
-      {
         "cve_id": "CVE-2026-8053",
         "severity": "HIGH",
         "base_score": 8.8,
@@ -327,11 +292,11 @@
         "published": "2026-05-13T04:17:41.287"
       },
       {
-        "cve_id": "CVE-2026-44015",
+        "cve_id": "CVE-2026-3425",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Nginx UI is a web user interface for the Nginx web server. In 2.3.4 and earlier, an authenticated user can perform Server-Side Request Forgery (SSRF) by creating a cluster node pointing to an arbitrar",
-        "published": "2026-05-12T22:16:35.330"
+        "base_score": 8.8,
+        "description": "The RTMKit Addons for Elementor plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 2.0.2 via the 'path' parameter of the 'get_content' AJAX action. This m",
+        "published": "2026-05-13T13:16:41.090"
       },
       {
         "cve_id": "CVE-2026-25705",
@@ -341,32 +306,18 @@
         "published": "2026-05-13T08:16:16.083"
       },
       {
-        "cve_id": "CVE-2026-26289",
+        "cve_id": "CVE-2020-37221",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "Atomic Alarm Clock 6.3 contains a stack overflow vulnerability that allows local attackers to execute arbitrary code by supplying a malicious string to the display name textbox in the Time Zones Clock",
+        "published": "2026-05-13T16:16:33.570"
+      },
+      {
+        "cve_id": "CVE-2020-37218",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "PowerSYSTEM Center REST API endpoint for device account export allows an authenticated user with limited permissions to expose sensitive information normally restricted to administrative permissions o",
-        "published": "2026-05-12T22:16:32.823"
-      },
-      {
-        "cve_id": "CVE-2026-44260",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "efw4.X is an Enterprise Framework for Web. Prior to 4.08.010, the readonly flag set on the <efw:elFinder> JSP tag is intended to prevent file modifications. When protected=true, elfinder_checkRisk enf",
-        "published": "2026-05-12T22:16:36.417"
-      },
-      {
-        "cve_id": "CVE-2026-44304",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Lemur manages TLS certificate creation. Prior to 1.9.0, Lemur's LDAP authentication module (lemur/auth/ldap.py) constructs LDAP search filters using unsanitized user input via Python string interpolat",
-        "published": "2026-05-12T22:16:37.140"
-      },
-      {
-        "cve_id": "CVE-2026-44548",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "ChurchCRM is an open-source church management system. Prior to 7.3.2, top-level cross-site GET navigation from an attacker-controlled page to FundRaiserDelete.php, PropertyTypeDelete.php, or NoteDelet",
-        "published": "2026-05-12T23:16:18.750"
+        "description": "Joomla com_hdwplayer 4.2 contains an SQL injection vulnerability in the search.php file that allows unauthenticated attackers to execute arbitrary SQL queries by injecting malicious code through the h",
+        "published": "2026-05-13T16:16:33.153"
       },
       {
         "cve_id": "CVE-2026-7635",
@@ -376,11 +327,60 @@
         "published": "2026-05-13T05:16:24.737"
       },
       {
-        "cve_id": "CVE-2026-8108",
+        "cve_id": "CVE-2026-20916",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "An authenticated iControl REST user with low privileges can create or modify arbitrary files through an undisclosed iControl REST endpoint on the BIG-IQ system.\n\u00a0Note: Software versions which have rea",
+        "published": "2026-05-13T16:16:36.210"
+      },
+      {
+        "cve_id": "CVE-2026-21020",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "The installation of Fuji Tellus adds a driver to the kernel which grants all users read and write permissions.",
-        "published": "2026-05-12T23:16:19.023"
+        "description": "Improper export of android application components in OmaCP prior to SMR May-2026 Release 1 allows local attackers to trigger privileged functions.",
+        "published": "2026-05-13T06:16:13.540"
+      },
+      {
+        "cve_id": "CVE-2026-44612",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Bytello Share (Windows Edition) installer executable provided by Bytello insecurely loads Dynamic Link Libraries. If there is a crafted DLL at the same directory when invoking the affected installer, ",
+        "published": "2026-05-13T06:16:14.610"
+      },
+      {
+        "cve_id": "CVE-2020-37223",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "IObit Uninstaller 9.5.0.15 contains an unquoted service path vulnerability in the IObitUnSvr service that allows local attackers to escalate privileges to SYSTEM level. Attackers can place a malicious",
+        "published": "2026-05-13T16:16:33.847"
+      },
+      {
+        "cve_id": "CVE-2026-8336",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "After invoking $_internalJsEmit, which is not intended to be directly accessible, or mapreduce command\u2019s map function in a certain way, an authenticated user can subsequently crash mongod when the ser",
+        "published": "2026-05-13T04:17:42.197"
+      },
+      {
+        "cve_id": "CVE-2026-6929",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The JoomSport \u2013 for Sports: Team & League, Football, Hockey & more plugin for WordPress is vulnerable to time-based blind SQL Injection via the 'sortf' parameter in all versions up to, and including, ",
+        "published": "2026-05-13T06:16:14.943"
+      },
+      {
+        "cve_id": "CVE-2026-4798",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Avada Builder plugin for WordPress is vulnerable to time-based SQL Injection via the \u2018product_order\u2019 parameter in all versions up to, and including, 3.15.1 due to insufficient escaping on the user",
+        "published": "2026-05-13T13:01:55.760"
+      },
+      {
+        "cve_id": "CVE-2026-5773",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "libcurl might in some circumstances reuse the wrong connection for SMB(S)\ntransfers.\n\nlibcurl features a pool of recent connections so that subsequent requests can\nreuse an existing connection to avoi",
+        "published": "2026-05-13T13:01:56.307"
       }
     ]
   },
