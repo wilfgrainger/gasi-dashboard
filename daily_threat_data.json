@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-05-14T13:46:18.146748+00:00",
+  "generated_at": "2026-05-14T17:41:58.926331+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 22,
+        "value": 23,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
-        "score": 2.0,
+        "value": 10,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1590,
-    "recent_30d_count": 22,
+    "total_catalog_count": 1591,
+    "recent_30d_count": 23,
     "recent": [
+      {
+        "cve_id": "CVE-2026-20182",
+        "vendor": "Cisco",
+        "product": "Catalyst SD-WAN",
+        "name": "Cisco Catalyst SD-WAN Controller Authentication Bypass Vulnerability",
+        "date_added": "2026-05-14",
+        "due_date": "2026-05-17",
+        "description": "Cisco Catalyst SD-WAN Controller & Manager contain an authentication bypass vulnerability that allows an unauthenticated, remote attacker to bypass authentication and obtain administrative privileges ",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-42208",
         "vendor": "BerriAI",
@@ -93,7 +103,7 @@
         "date_added": "2026-04-28",
         "due_date": "2026-05-12",
         "description": "ConnectWise ScreenConnect contains a path traversal vulnerability which could allow an attacker to execute remote code or directly impact confidential data and critical systems.",
-        "ransomware_use": "Unknown"
+        "ransomware_use": "Known"
       },
       {
         "cve_id": "CVE-2026-32202",
@@ -133,7 +143,7 @@
         "date_added": "2026-04-24",
         "due_date": "2026-05-08",
         "description": "SimpleHelp contains a path traversal vulnerability that allows admin users to upload arbitrary files anywhere on the file system by uploading a crafted zip file (i.e. zip slip). This can be exploited ",
-        "ransomware_use": "Unknown"
+        "ransomware_use": "Known"
       },
       {
         "cve_id": "CVE-2024-57726",
@@ -143,7 +153,7 @@
         "date_added": "2026-04-24",
         "due_date": "2026-05-08",
         "description": "SimpleHelp contains a missing authorization vulnerability that could allow low-privileged technicians to create API keys with excessive permissions. These API keys can be used to escalate privileges t",
-        "ransomware_use": "Unknown"
+        "ransomware_use": "Known"
       },
       {
         "cve_id": "CVE-2026-39987",
@@ -224,163 +234,153 @@
         "due_date": "2026-04-23",
         "description": "Cisco Catalyst SD-WAN Manager contains a storing passwords in a recoverable format vulnerability that allows an authenticated, local attacker to gain DCA user privileges by accessing a credential file",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2025-32975",
-        "vendor": "Quest",
-        "product": "KACE Systems Management Appliance (SMA)",
-        "name": "Quest KACE Systems Management Appliance (SMA) Improper Authentication Vulnerability",
-        "date_added": "2026-04-20",
-        "due_date": "2026-05-04",
-        "description": "Quest KACE Systems Management Appliance (SMA) contains an improper authentication vulnerability that could allow attackers to impersonate legitimate users without valid credentials.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 355,
-    "critical_count": 2,
-    "high_count": 41,
+    "total": 296,
+    "critical_count": 10,
+    "high_count": 26,
     "cves": [
       {
-        "cve_id": "CVE-2020-37168",
+        "cve_id": "CVE-2026-43997",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "vm2 is an open source vm/sandbox for Node.js. Prior to 3.11.0, it is possible to obtain the host Object. There are various ways to use the host Object, to escape the sandbox, one example would be usin",
+        "published": "2026-05-13T18:16:16.177"
+      },
+      {
+        "cve_id": "CVE-2026-44005",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "vm2 is an open source vm/sandbox for Node.js. From 3.9.6 to 3.10.5, vm2's bridge exposes mutable proxies for real host-realm intrinsic prototypes and then forwards sandbox writes into the underlying h",
+        "published": "2026-05-13T18:16:17.257"
+      },
+      {
+        "cve_id": "CVE-2026-44006",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "vm2 is an open source vm/sandbox for Node.js. Prior to 3.11.0, It is possible to reach BaseHandler.getPrototypeOf, which can be used to get arbitrary prototypes. This vulnerability is fixed in 3.11.0.",
+        "published": "2026-05-13T18:16:17.387"
+      },
+      {
+        "cve_id": "CVE-2026-43999",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "vm2 is an open source vm/sandbox for Node.js. Prior to 3.11.0, NodeVM's builtin allowlist can be bypassed when the module builtin is allowed (including via the '*' wildcard). The module builtin expose",
+        "published": "2026-05-13T18:16:16.450"
+      },
+      {
+        "cve_id": "CVE-2026-44008",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Ecommerce Systempay 1.0 contains a weak cryptographic implementation vulnerability that allows attackers to brute force the 16-character production secret key used for payment signature generation. At",
-        "published": "2026-05-13T16:16:31.720"
+        "description": "vm2 is an open source vm/sandbox for Node.js. Prior to 3.11.2, the new method neutralizeArraySpeciesBatch works with objects from the other side but can call into this side via getter on the array pro",
+        "published": "2026-05-13T18:16:17.667"
       },
       {
-        "cve_id": "CVE-2026-41225",
+        "cve_id": "CVE-2026-44009",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "vm2 is an open source vm/sandbox for Node.js. Prior to 3.11.2,  This vulnerability is fixed in 3.11.2.",
+        "published": "2026-05-13T18:16:17.803"
+      },
+      {
+        "cve_id": "CVE-2026-45411",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "vm2 is an open source vm/sandbox for Node.js. Prior to 3.11.3, it is possible to catch a host exception using the yield* expression inside an async generator. When the generator is closed using the re",
+        "published": "2026-05-13T18:16:19.427"
+      },
+      {
+        "cve_id": "CVE-2025-27851",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "The locally served web site on the Garmin WDU (v1 1.4.6 and v2 5.0) allows a cross-site origin WebSocket hijacking attack. Among other uses, the WDU utilizes WebSockets to control settings, including ",
+        "published": "2026-05-13T21:16:41.233"
+      },
+      {
+        "cve_id": "CVE-2026-44007",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "A vulnerability exists in iControl REST where a highly privileged, authenticated attacker with at least the Manager role can create configuration objects that allow running arbitrary commands.\n\n\u00a0Note:",
-        "published": "2026-05-13T16:16:44.777"
+        "description": "vm2 is an open source vm/sandbox for Node.js. Prior to 3.11.1, when a NodeVM is created with nesting: true, sandbox code can unconditionally require('vm2') regardless of the outer VM's require configu",
+        "published": "2026-05-13T18:16:17.527"
       },
       {
-        "cve_id": "CVE-2026-41957",
+        "cve_id": "CVE-2026-44351",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "fast-jwt provides fast JSON Web Token (JWT) implementation. Prior to 6.2.4, a critical authentication-bypass vulnerability in fast-jwt's async key-resolver flow allows any unauthenticated attacker to ",
+        "published": "2026-05-13T20:16:22.860"
+      },
+      {
+        "cve_id": "CVE-2026-42550",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "An authenticated remote code execution vulnerability through undisclosed vectors exists in the BIG-IP and BIG-IQ Configuration utility.\n\n\u00a0Note: Software versions which have reached End of Technical Su",
-        "published": "2026-05-13T16:16:45.867"
+        "description": "Flight is an extensible micro-framework for PHP. Prior to 3.18.1, SimplePdo::insert(), SimplePdo::update(), and SimplePdo::delete() build SQL statements by concatenating the $table argument and the ke",
+        "published": "2026-05-13T20:16:22.060"
       },
       {
-        "cve_id": "CVE-2026-42266",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "jupyterlab is an extensible environment for interactive and reproducible computing, based on the Jupyter Notebook Architecture. From 4.0.0 to 4.5.6, the allow-list of extensions that can be installed ",
-        "published": "2026-05-13T16:16:47.017"
-      },
-      {
-        "cve_id": "CVE-2026-32643",
+        "cve_id": "CVE-2026-33583",
         "severity": "HIGH",
         "base_score": 8.7,
-        "description": "A vulnerability exists in BIG-IP and BIG-IQ systems where a highly privileged, authenticated attacker with at least the Certificate Manager role can modify configuration objects that allow running arb",
-        "published": "2026-05-13T16:16:39.213"
+        "description": "Exposure of the QKEY (used as \ninput into the \u2018OTA-Quantum\u2019 device registration process) and internal \nsystem keys via an unauthenticated and unencrypted HTTP GET method in the Arqit Symmetric Key Agr",
+        "published": "2026-05-13T19:17:06.873"
       },
       {
-        "cve_id": "CVE-2026-32673",
+        "cve_id": "CVE-2026-44001",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "A vulnerability exists in BIG-IP scripted monitors that may allow an authenticated attacker with the Resource Administrator or Administrator role to execute arbitrary system commands with higher privi",
-        "published": "2026-05-13T16:16:39.380"
+        "base_score": 8.6,
+        "description": "vm2 is an open source vm/sandbox for Node.js. Prior to 3.11.0, a sandbox escape vulnerability in vm2 v3.10.5 allows any sandboxed code to crash the host Node.js process via a single Promise constructo",
+        "published": "2026-05-13T18:16:16.720"
       },
       {
-        "cve_id": "CVE-2026-34176",
+        "cve_id": "CVE-2026-44578",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "When running in Appliance mode, an authenticated remote command injection vulnerability exists in an undisclosed iControl REST endpoint. A successful exploit can allow the attacker to cross a security",
-        "published": "2026-05-13T16:16:39.813"
+        "base_score": 8.6,
+        "description": "Next.js is a React framework for building full-stack web applications. From 13.4.13 to before 15.5.16 and 16.2.5, self-hosted applications using the built-in Node.js server can be vulnerable to server",
+        "published": "2026-05-13T18:16:17.990"
       },
       {
-        "cve_id": "CVE-2026-40061",
+        "cve_id": "CVE-2026-43998",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "When BIG-IP DNS is provisioned, a vulnerability exists in an undisclosed iControl REST and BIG-IP TMOS Shell (tmsh) command that may allow an authenticated attacker with the Resource Administrator or ",
-        "published": "2026-05-13T16:16:42.283"
+        "base_score": 8.5,
+        "description": "vm2 is an open source vm/sandbox for Node.js. In 3.10.5, NodeVM's require.root path restriction can be bypassed using filesystem symlinks, allowing sandboxed code to load modules from outside the allo",
+        "published": "2026-05-13T18:16:16.317"
       },
       {
-        "cve_id": "CVE-2026-40631",
+        "cve_id": "CVE-2026-21821",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "An authenticated attacker with the Resource Administrator or Administrator role can modify configuration objects through iControl SOAP resulting in privilege escalation.\u00a0 Note: Software versions which",
-        "published": "2026-05-13T16:16:43.417"
+        "base_score": 8.3,
+        "description": "The HCL BigFix SCM Reporting site contains an outdated and unsupported version of the jQuery 1.x library. Since jQuery 1.x has reached end-of-life and no longer receives security updates, it may expos",
+        "published": "2026-05-13T21:16:41.590"
       },
       {
-        "cve_id": "CVE-2026-40698",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "A vulnerability exists in BIG-IP and BIG-IQ systems where a highly privileged, authenticated attacker with at least the Resource Administrator role can create SNMP configuration objects through iContr",
-        "published": "2026-05-13T16:16:43.593"
-      },
-      {
-        "cve_id": "CVE-2026-41953",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "A vulnerability exists in BIG-IP systems where a highly privileged, authenticated attacker with at least the Resource Administrator role can modify configuration objects resulting in privilege escalat",
-        "published": "2026-05-13T16:16:45.473"
-      },
-      {
-        "cve_id": "CVE-2026-42406",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "A vulnerability exists in BIG-IP and BIG-IQ systems where a highly privileged, authenticated attacker with at least the Certificate Manager role can modify configuration objects that allow running arb",
-        "published": "2026-05-13T16:16:47.517"
-      },
-      {
-        "cve_id": "CVE-2026-42924",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "An authenticated attacker with the Resource Administrator or Administrator role can create SNMP configuration objects through iControl SOAP resulting in privilege escalation.\u00a0 Note: Software versions ",
-        "published": "2026-05-13T16:16:49.517"
-      },
-      {
-        "cve_id": "CVE-2026-42930",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "When running in Appliance mode, an authenticated attacker assigned the 'Administrator' role may be able to bypass Appliance mode restrictions on a BIG-IP system.\n\n\u00a0Note: Software versions which have r",
-        "published": "2026-05-13T16:16:49.777"
-      },
-      {
-        "cve_id": "CVE-2020-37221",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Atomic Alarm Clock 6.3 contains a stack overflow vulnerability that allows local attackers to execute arbitrary code by supplying a malicious string to the display name textbox in the Time Zones Clock",
-        "published": "2026-05-13T16:16:33.570"
-      },
-      {
-        "cve_id": "CVE-2020-37218",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Joomla com_hdwplayer 4.2 contains an SQL injection vulnerability in the search.php file that allows unauthenticated attackers to execute arbitrary SQL queries by injecting malicious code through the h",
-        "published": "2026-05-13T16:16:33.153"
-      },
-      {
-        "cve_id": "CVE-2026-20916",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "An authenticated iControl REST user with low privileges can create or modify arbitrary files through an undisclosed iControl REST endpoint on the BIG-IQ system.\n\u00a0Note: Software versions which have rea",
-        "published": "2026-05-13T16:16:36.210"
-      },
-      {
-        "cve_id": "CVE-2026-42945",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_rewrite_module\u00a0module. This vulnerability exists when the rewrite\u00a0directive is followed by a rewrite, if, or set\u00a0directive and an ",
-        "published": "2026-05-13T16:16:50.190"
-      },
-      {
-        "cve_id": "CVE-2026-41217",
-        "severity": "HIGH",
-        "base_score": 7.9,
-        "description": "A vulnerability exists in an undisclosed BIG-IP TMOS Shell (tmsh) command that may allow an authenticated attacker with resource administrator or administrator role to execute arbitrary system command",
-        "published": "2026-05-13T16:16:44.340"
-      },
-      {
-        "cve_id": "CVE-2020-37223",
+        "cve_id": "CVE-2026-30905",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "IObit Uninstaller 9.5.0.15 contains an unquoted service path vulnerability in the IObitUnSvr service that allows local attackers to escalate privileges to SYSTEM level. Attackers can place a malicious",
-        "published": "2026-05-13T16:16:33.847"
+        "description": "External Control of File Name or Path in the Zoom Workplace VDI Plugin Windows Universal Installer before version 6.6.11 may allow an authenticated user to conduct an escalation of privilege via local",
+        "published": "2026-05-13T19:17:05.367"
+      },
+      {
+        "cve_id": "CVE-2026-30906",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Untrusted search path in the installer for Zoom Rooms for Windows before version 7.0.0 may allow an authenticated user to enable an escalation of privilege via local access.",
+        "published": "2026-05-13T19:17:05.540"
+      },
+      {
+        "cve_id": "CVE-2026-44004",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "vm2 is an open source vm/sandbox for Node.js. Prior to 3.11.0, sandboxed code can call Buffer.alloc() with an arbitrary size to allocate memory directly on the host heap. Because Buffer.alloc is a syn",
+        "published": "2026-05-13T18:16:17.123"
+      },
+      {
+        "cve_id": "CVE-2026-44579",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Next.js is a React framework for building full-stack web applications. From  to before 15.5.16 and 16.2.5, applications using Partial Prerendering through the Cache Components feature can be vulnerabl",
+        "published": "2026-05-13T18:16:18.123"
       }
     ]
   },
