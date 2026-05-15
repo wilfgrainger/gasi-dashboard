@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-15T06:49:58.834139+00:00",
+  "generated_at": "2026-05-15T10:12:49.354103+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 11,
-        "score": 3.0,
+        "value": 9,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 313,
-    "critical_count": 11,
-    "high_count": 27,
+    "total": 309,
+    "critical_count": 9,
+    "high_count": 30,
     "cves": [
       {
         "cve_id": "CVE-2026-20182",
@@ -248,20 +248,6 @@
         "base_score": 10.0,
         "description": "May 2026: This security advisory provides the details and fix information for a vulnerability that was discovered and fixed after the  was disclosed in February 2026. This new advisory is for a new vu",
         "published": "2026-05-14T17:16:19.387"
-      },
-      {
-        "cve_id": "CVE-2026-6271",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Career Section plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 1.7 via the CV upload handler. This is due to missing file type validation. This ma",
-        "published": "2026-05-14T07:16:20.650"
-      },
-      {
-        "cve_id": "CVE-2026-6510",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The InfusedWoo Pro plugin for WordPress is vulnerable to privilege escalation via missing authorization in all versions up to, and including, 5.1.2. This is due to missing nonce verification and capab",
-        "published": "2026-05-14T07:16:21.127"
       },
       {
         "cve_id": "CVE-2025-11024",
@@ -292,18 +278,18 @@
         "published": "2026-05-14T15:16:48.793"
       },
       {
+        "cve_id": "CVE-2026-41615",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Exposure of sensitive information to an unauthorized actor in Microsoft Authenticator allows an unauthorized attacker to disclose information over a network.",
+        "published": "2026-05-14T18:16:47.243"
+      },
+      {
         "cve_id": "CVE-2026-42596",
         "severity": "CRITICAL",
         "base_score": 9.4,
         "description": "Gotenberg is a Docker-powered stateless API for PDF files. Prior to 8.31.0, the default deny-lists used by Gotenberg's downloadFrom feature and webhook feature are bypassable. Because the filter is re",
         "published": "2026-05-14T16:16:22.893"
-      },
-      {
-        "cve_id": "CVE-2026-6512",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The InfusedWoo Pro plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 5.1.2. This is due to the plugin not properly verifying that a user is authorized to",
-        "published": "2026-05-14T09:16:27.883"
       },
       {
         "cve_id": "CVE-2026-42555",
@@ -318,13 +304,6 @@
         "base_score": 9.0,
         "description": "vCluster Platform provides a Kubernetes platform for managing virtual clusters, multi-tenancy, and cluster sharing. Prior to 4.4.3, 4.5.5, 4.6.2, 4.7.1, and 4.8.0, there is a Stored XSS attack vulnera",
         "published": "2026-05-14T15:16:46.500"
-      },
-      {
-        "cve_id": "CVE-2026-6506",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The InfusedWoo Pro plugin for WordPress is vulnerable to privilege escalation in all versions up to, and including, 5.1.2. This is due to the infusedwoo_gdpr_upddata() function missing authorization a",
-        "published": "2026-05-14T07:16:20.817"
       },
       {
         "cve_id": "CVE-2025-12008",
@@ -376,11 +355,32 @@
         "published": "2026-05-14T15:16:46.750"
       },
       {
-        "cve_id": "CVE-2026-42595",
+        "cve_id": "CVE-2026-44513",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Gotenberg is a Docker-powered stateless API for PDF files. Prior to 8.32.0, Gotenberg's Chromium URL-to-PDF endpoint (/forms/chromium/convert/url) has no default protection against HTTP/HTTPS-based SS",
-        "published": "2026-05-14T16:16:22.753"
+        "base_score": 8.8,
+        "description": "Diffusers is the a library for  pretrained diffusion models. Prior to 0.38.0, a trust_remote_code bypass in DiffusionPipeline.from_pretrained allows arbitrary remote code execution despite the user pa",
+        "published": "2026-05-14T17:16:22.903"
+      },
+      {
+        "cve_id": "CVE-2026-44827",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Diffusers is the a library for  pretrained diffusion models. Prior to 0.38.0, diffusers 0.37.0 allows remote code execution without the trust_remote_code=True safeguard when loading pipelines from Hug",
+        "published": "2026-05-14T17:16:23.500"
+      },
+      {
+        "cve_id": "CVE-2025-15023",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Incorrect Authorization vulnerability in Yordam Information Technology Consulting, Training and Electronic Systems Industry and Trade Inc. Library Automation System allows Exploiting Incorrectly Confi",
+        "published": "2026-05-14T18:16:34.527"
+      },
+      {
+        "cve_id": "CVE-2025-15024",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Improper Control of Generation of Code ('Code Injection') vulnerability in Yordam Information Technology Consulting, Training and Electronic Systems Industry and Trade Inc. Library Automation System a",
+        "published": "2026-05-14T18:16:35.063"
       }
     ]
   },
