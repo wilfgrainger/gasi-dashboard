@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-05-15T17:21:38.428902+00:00",
+  "generated_at": "2026-05-15T20:52:09.950269+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 23,
+        "value": 24,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
-        "score": 2.5,
+        "value": 3,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1591,
-    "recent_30d_count": 23,
+    "total_catalog_count": 1592,
+    "recent_30d_count": 24,
     "recent": [
+      {
+        "cve_id": "CVE-2026-42897",
+        "vendor": "Microsoft",
+        "product": "Microsoft",
+        "name": "Microsoft Exchange Server Cross-Site Scripting Vulnerability",
+        "date_added": "2026-05-15",
+        "due_date": "2026-05-29",
+        "description": "Microsoft Exchange Server contains a cross-site scripting vulnerability during web page generation in Outlook Web Access and when certain interaction conditions are met, arbitrary JavaScript can be ex",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-20182",
         "vendor": "Cisco",
@@ -224,163 +234,153 @@
         "due_date": "2026-04-23",
         "description": "Synacor Zimbra Collaboration Suite (ZCS) contains a cross-site scripting vulnerability that could allow attackers to execute arbitrary JavaScript within the user's session, potentially leading to unau",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-20128",
-        "vendor": "Cisco",
-        "product": "Catalyst SD-WAN Manager",
-        "name": "Cisco Catalyst SD-WAN Manager Storing Passwords in a Recoverable Format Vulnerability",
-        "date_added": "2026-04-20",
-        "due_date": "2026-04-23",
-        "description": "Cisco Catalyst SD-WAN Manager contains a storing passwords in a recoverable format vulnerability that allows an authenticated, local attacker to gain DCA user privileges by accessing a credential file",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 271,
-    "critical_count": 6,
-    "high_count": 42,
+    "total": 192,
+    "critical_count": 3,
+    "high_count": 11,
     "cves": [
       {
-        "cve_id": "CVE-2026-44523",
+        "cve_id": "CVE-2026-5229",
         "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Note Mark is an open-source note-taking application. Prior to 0.19.4, no minimum length or entropy is enforced on the JWT_SECRET configuration value. The application accepts any base64-decodable secre",
-        "published": "2026-05-14T19:16:37.470"
+        "base_score": 9.8,
+        "description": "The Form Notify plugin for WordPress is vulnerable to Authentication Bypass in versions up to and including 1.1.10. This is due to the plugin trusting user-controlled cookie data to determine which Wo",
+        "published": "2026-05-15T09:16:16.690"
       },
       {
-        "cve_id": "CVE-2026-41615",
+        "cve_id": "CVE-2026-8398",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Exposure of sensitive information to an unauthorized actor in Microsoft Authenticator allows an unauthorized attacker to disclose information over a network.",
-        "published": "2026-05-14T18:16:47.243"
+        "base_score": 9.8,
+        "description": "A supply chain attack compromised the official installation packages of DAEMON Tools Lite (Windows versions 12.5.0.2421 through 12.5.0.2434), distributed from the legitimate website daemon-tools.cc be",
+        "published": "2026-05-15T09:16:17.653"
       },
       {
-        "cve_id": "CVE-2026-8511",
+        "cve_id": "CVE-2026-44212",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in UI in Google Chrome prior to 148.0.7778.168 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
-        "published": "2026-05-14T20:17:11.707"
+        "base_score": 9.3,
+        "description": "PrestaShop is an open source e-commerce web application. Prior to 8.2.6 and 9.1.1, there is a stored Cross-Site Scripting (XSS) vulnerability in the PrestaShop back-office Customer Service view. An un",
+        "published": "2026-05-14T21:16:46.540"
       },
       {
-        "cve_id": "CVE-2026-44592",
-        "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "Gradient is a nix-based continuous integration system. In 1.1.0, when GRADIENT_DISCOVERABLE=true (the default, and the NixOS module default), anyone who can reach /proto can register as a worker witho",
-        "published": "2026-05-14T19:16:38.147"
-      },
-      {
-        "cve_id": "CVE-2026-44542",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "FileBrowser Quantum is a free, self-hosted, web-based file manager. Prior to 1.3.1-stable and 1.3.9-beta, attacker-controlled path input is joined with a trusted base path prior to sanitization, allow",
-        "published": "2026-05-14T18:16:50.157"
-      },
-      {
-        "cve_id": "CVE-2026-45375",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "SiYuan is an open-source personal knowledge management system. Prior to 3.7.0, SiYuan's Bazaar (community marketplace) renders the name and version fields of a package's plugin.json (and the equivalen",
-        "published": "2026-05-14T19:16:39.030"
-      },
-      {
-        "cve_id": "CVE-2025-15023",
+        "cve_id": "CVE-2026-6228",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Incorrect Authorization vulnerability in Yordam Information Technology Consulting, Training and Electronic Systems Industry and Trade Inc. Library Automation System allows Exploiting Incorrectly Confi",
-        "published": "2026-05-14T18:16:34.527"
+        "description": "The Frontend Admin by DynamiApps plugin for WordPress is vulnerable to Privilege Escalation in versions up to and including 3.28.36. This is due to insufficient authorization checks in the role field ",
+        "published": "2026-05-15T09:16:16.833"
       },
       {
-        "cve_id": "CVE-2025-15024",
+        "cve_id": "CVE-2026-2652",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Improper Control of Generation of Code ('Code Injection') vulnerability in Yordam Information Technology Consulting, Training and Electronic Systems Industry and Trade Inc. Library Automation System a",
-        "published": "2026-05-14T18:16:35.063"
+        "base_score": 8.6,
+        "description": "A vulnerability in mlflow/mlflow versions 3.9.0 and earlier allows unauthenticated access to certain FastAPI routes when the server is started with authentication enabled (`--app-name basic-auth`) and",
+        "published": "2026-05-15T03:16:23.127"
       },
       {
-        "cve_id": "CVE-2026-8621",
+        "cve_id": "CVE-2026-41964",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Crabbox prior to v0.12.0 contains an authentication bypass vulnerability that allows non-admin shared-token callers to impersonate other owners or organizations by spoofing identity headers. Attackers",
-        "published": "2026-05-14T19:16:39.517"
+        "base_score": 8.4,
+        "description": "Permission control vulnerability in the web.\u00a0Impact: Successful exploitation of this vulnerability may affect availability.",
+        "published": "2026-05-15T10:16:35.100"
       },
       {
-        "cve_id": "CVE-2026-43908",
+        "cve_id": "CVE-2026-45369",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenImageIO is a toolset for reading, writing, and manipulating image files of any image file format relevant to VFX / animation. Prior to 3.0.18.0 and 3.1.13.0, a signed 32-bit integer overflow in th",
-        "published": "2026-05-14T20:17:06.920"
+        "base_score": 8.3,
+        "description": "python-utcp is the python implementation of UTCP. Prior to 1.1.3, the _substitute_utcp_args method in cli_communication_protocol.py inserts user-controlled tool_args values directly into shell command",
+        "published": "2026-05-14T21:16:48.220"
       },
       {
-        "cve_id": "CVE-2026-43909",
+        "cve_id": "CVE-2026-28761",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenImageIO is a toolset for reading, writing, and manipulating image files of any image file format relevant to VFX / animation. Prior to 3.0.18.0 and 3.1.13.0, a signed 32-bit integer overflow in th",
-        "published": "2026-05-14T20:17:07.063"
+        "base_score": 8.1,
+        "description": "Cross-site request forgery vulnerability exists in Musetheque V4 Information Disclosure for IPKNOWLEDGE V4L1 rev2203.0 and earlier. If a user views a malicious page while logged-in to the affected pro",
+        "published": "2026-05-15T06:16:20.213"
       },
       {
-        "cve_id": "CVE-2026-8509",
+        "cve_id": "CVE-2026-4094",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Heap buffer overflow in WebML in Google Chrome prior to 148.0.7778.168 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Critic",
-        "published": "2026-05-14T20:17:11.440"
+        "base_score": 8.1,
+        "description": "The FOX \u2013 Currency Switcher Professional for WooCommerce plugin for WordPress is vulnerable to unauthorized data loss due to a missing capability check on the 'admin_head' function in all versions up ",
+        "published": "2026-05-15T07:16:20.090"
       },
       {
-        "cve_id": "CVE-2026-8517",
+        "cve_id": "CVE-2026-41702",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Object lifecycle issue in WebShare in Google Chrome on Mac prior to 148.0.7778.168 allowed a remote attacker who convinced a user to engage in specific UI gestures to execute arbitrary code via a craf",
-        "published": "2026-05-14T20:17:12.453"
+        "base_score": 7.8,
+        "description": "VMware Fusion contains a TOCTOU (Time-of-check Time-of-use) vulnerability\u00a0that occurs during an operation performed by a SETUID binary.\u00a0A malicious actor with local non-administrative user privileges ",
+        "published": "2026-05-15T07:16:18.923"
       },
       {
-        "cve_id": "CVE-2026-8518",
+        "cve_id": "CVE-2026-45370",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in Blink in Google Chrome prior to 148.0.7778.168 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Critical)",
-        "published": "2026-05-14T20:17:12.550"
+        "base_score": 7.7,
+        "description": "python-utcp is the python implementation of UTCP. Prior to 1.1.3, _prepare_environment() in cli_communication_protocol.py passes a full copy of os.environ to every CLI subprocess. When combined with C",
+        "published": "2026-05-14T21:16:48.350"
       },
       {
-        "cve_id": "CVE-2026-8519",
+        "cve_id": "CVE-2026-44673",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Integer overflow in ANGLE in Google Chrome on Windows prior to 148.0.7778.168 allowed a remote attacker to perform an out of bounds memory write via a crafted HTML page. (Chromium security severity: C",
-        "published": "2026-05-14T20:17:12.663"
+        "base_score": 7.5,
+        "description": "libyang is a YANG data modeling language library. Prior to SO 5.2.15, lyb_read_string() in src/parser_lyb.c contains an integer overflow that results in a heap buffer overflow when parsing a malicious",
+        "published": "2026-05-14T21:16:47.500"
       },
       {
-        "cve_id": "CVE-2026-8522",
+        "cve_id": "CVE-2026-44671",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in Downloads in Google Chrome on Mac prior to 148.0.7778.168 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: Critical)",
-        "published": "2026-05-14T20:17:12.973"
+        "base_score": 7.5,
+        "description": "ZITADEL is an open source identity management platform. From 2.71.11 to before 3.4.10 and 4.15.0, a vulnerability was discovered in Zitadel's LDAP identity provider implementation, which fails to prop",
+        "published": "2026-05-14T22:16:44.850"
       },
       {
-        "cve_id": "CVE-2026-8524",
+        "cve_id": "CVE-2026-6403",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Out of bounds write in WebAudio in Google Chrome prior to 148.0.7778.168 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High",
-        "published": "2026-05-14T20:17:13.180"
+        "base_score": 7.5,
+        "description": "The Quick Playground plugin for WordPress is vulnerable to Path Traversal in versions up to and including 1.3.3. This is due to insufficient path validation in the qckply_zip_theme() function, which a",
+        "published": "2026-05-15T09:16:16.973"
       },
       {
-        "cve_id": "CVE-2026-8526",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Out of bounds write in WebRTC in Google Chrome prior to 148.0.7778.168 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-05-14T20:17:13.407"
+        "cve_id": "CVE-2026-41970",
+        "severity": "MEDIUM",
+        "base_score": 6.8,
+        "description": "Out-of-bounds write vulnerability in the distributed file system module.\u00a0Impact: Successful exploitation of this vulnerability may affect availability.",
+        "published": "2026-05-15T10:16:35.737"
       },
       {
-        "cve_id": "CVE-2026-8527",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Insufficient validation of untrusted input in Downloads in Google Chrome prior to 148.0.7778.168 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severit",
-        "published": "2026-05-14T20:17:13.507"
+        "cve_id": "CVE-2026-4683",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "The Smartcat Translator for WPML plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the 'routeData' REST endpoint in all versions up to, and i",
+        "published": "2026-05-15T09:16:16.487"
       },
       {
-        "cve_id": "CVE-2026-8529",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Heap buffer overflow in Codecs in Google Chrome prior to 148.0.7778.168 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted video file. (Chromium security severity: High",
-        "published": "2026-05-14T20:17:13.720"
+        "cve_id": "CVE-2026-8503",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Apache::Session::Generate::SHA256 versions before 1.3.19 for Perl create insecure session ids.\n\nApache::Session::Generate::SHA256 generated session ids insecurely. The default session id generator ret",
+        "published": "2026-05-15T12:17:09.557"
+      },
+      {
+        "cve_id": "CVE-2025-67437",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Medical Management System a81df1ce700a9662cb136b27af47f4cbde64156b is vulnerable to Insecure Permissions, which allows arbitrary user password reset.",
+        "published": "2026-05-15T15:16:49.883"
+      },
+      {
+        "cve_id": "CVE-2026-6646",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "The The7 theme for WordPress is vulnerable to Stored Cross-Site Scripting via the 'dt_default_button' shortcode in all versions up to, and including, 14.3.2. This is due to insufficient input sanitiza",
+        "published": "2026-05-15T07:16:20.250"
+      },
+      {
+        "cve_id": "CVE-2026-6415",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "The Advanced Custom Fields: Font Awesome plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions up to and including 5.0.2. This is due to insufficient input validation of JSON f",
+        "published": "2026-05-15T09:16:17.117"
       }
     ]
   },
