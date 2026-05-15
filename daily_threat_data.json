@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-15T02:12:27.411204+00:00",
+  "generated_at": "2026-05-15T06:49:58.834139+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
-        "score": 2.5,
+        "value": 11,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,16 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 306,
-    "critical_count": 7,
-    "high_count": 29,
+    "total": 313,
+    "critical_count": 11,
+    "high_count": 27,
     "cves": [
       {
-        "cve_id": "CVE-2026-8181",
+        "cve_id": "CVE-2026-20182",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Burst Statistics \u2013 Privacy-Friendly WordPress Analytics (Google Analytics Alternative) plugin for WordPress is vulnerable to Authentication Bypass in versions 3.4.0 to 3.4.1.1. This is due to inco",
-        "published": "2026-05-14T06:16:25.990"
+        "base_score": 10.0,
+        "description": "May 2026: This security advisory provides the details and fix information for a vulnerability that was discovered and fixed after the  was disclosed in February 2026. This new advisory is for a new vu",
+        "published": "2026-05-14T17:16:19.387"
       },
       {
         "cve_id": "CVE-2026-6271",
@@ -278,11 +278,39 @@
         "published": "2026-05-14T10:16:19.203"
       },
       {
+        "cve_id": "CVE-2026-42589",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Gotenberg is a Docker-powered stateless API for PDF files. Prior to 8.31.0, Gotenberg's /forms/pdfengines/metadata/write HTTP endpoint accepts a JSON metadata object and passes its keys directly to Ex",
+        "published": "2026-05-14T16:16:21.867"
+      },
+      {
+        "cve_id": "CVE-2026-44482",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "soundcloud-rpc is a SoundCloud Client with Discord Rich Presence, Dark Mode, Last.fm and AdBlock support. Prior to 0.1.8, a track title containing an HTML payload executed locally in the Electron app.",
+        "published": "2026-05-14T15:16:48.793"
+      },
+      {
+        "cve_id": "CVE-2026-42596",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "Gotenberg is a Docker-powered stateless API for PDF files. Prior to 8.31.0, the default deny-lists used by Gotenberg's downloadFrom feature and webhook feature are bypassable. Because the filter is re",
+        "published": "2026-05-14T16:16:22.893"
+      },
+      {
         "cve_id": "CVE-2026-6512",
         "severity": "CRITICAL",
         "base_score": 9.1,
         "description": "The InfusedWoo Pro plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 5.1.2. This is due to the plugin not properly verifying that a user is authorized to",
         "published": "2026-05-14T09:16:27.883"
+      },
+      {
+        "cve_id": "CVE-2026-42555",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Valtimo is an open-source business process automation platform. com.ritense.valtimo:document from 12.0.0 to before 12.32.0, com.ritense.valtimo:case from 13.0.0 to before 13.23.0, and com.ritense.valt",
+        "published": "2026-05-14T17:16:21.907"
       },
       {
         "cve_id": "CVE-2026-42457",
@@ -348,39 +376,11 @@
         "published": "2026-05-14T15:16:46.750"
       },
       {
-        "cve_id": "CVE-2026-6073",
+        "cve_id": "CVE-2026-42595",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "GitLab has remediated an issue in GitLab EE affecting all versions from 18.7 before 18.9.7, 18.10 before 18.10.6, and 18.11 before 18.11.3 that could have allowed an authenticated user to execute arbi",
-        "published": "2026-05-14T06:16:24.503"
-      },
-      {
-        "cve_id": "CVE-2026-7377",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "GitLab has remediated an issue in GitLab EE affecting all versions from 18.7 before 18.9.7, 18.10 before 18.10.6, and 18.11 before 18.11.3 that, in customizable analytics dashboards, could have allowe",
-        "published": "2026-05-14T06:16:25.267"
-      },
-      {
-        "cve_id": "CVE-2026-7481",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "GitLab has remediated an issue in GitLab EE affecting all versions from 16.4 before 18.9.7, 18.10 before 18.10.6, and 18.11 before 18.11.3 that could have allowed an authenticated user with developer-",
-        "published": "2026-05-14T06:16:25.660"
-      },
-      {
-        "cve_id": "CVE-2026-5396",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "The Fluent Forms plugin for WordPress is vulnerable to Authorization Bypass Through User-Controlled Key in all versions up to, and including, 6.1.21. This is due to the SubmissionPolicy class authoriz",
-        "published": "2026-05-14T06:16:24.117"
-      },
-      {
-        "cve_id": "CVE-2026-5395",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "The Fluent Forms \u2013 Customizable Contact Forms, Survey, Quiz, & Conversational Form Builder plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, ",
-        "published": "2026-05-14T07:16:20.247"
+        "base_score": 8.6,
+        "description": "Gotenberg is a Docker-powered stateless API for PDF files. Prior to 8.32.0, Gotenberg's Chromium URL-to-PDF endpoint (/forms/chromium/convert/url) has no default protection against HTTP/HTTPS-based SS",
+        "published": "2026-05-14T16:16:22.753"
       }
     ]
   },
