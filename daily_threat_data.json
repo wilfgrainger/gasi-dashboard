@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-16T02:04:06.921992+00:00",
+  "generated_at": "2026-05-16T06:14:48.487880+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
-        "score": 2.0,
+        "value": 7,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 211,
-    "critical_count": 3,
-    "high_count": 11,
+    "total": 170,
+    "critical_count": 7,
+    "high_count": 23,
     "cves": [
       {
         "cve_id": "CVE-2026-5229",
@@ -257,11 +257,39 @@
         "published": "2026-05-15T09:16:17.653"
       },
       {
+        "cve_id": "CVE-2026-44717",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "MCP Calculate Server is a mathematical calculation service based on MCP protocol and SymPy library. Prior to 0.1.1, the use of eval() to evaluate mathematical expressions without proper input sanitiza",
+        "published": "2026-05-15T17:16:48.073"
+      },
+      {
+        "cve_id": "CVE-2021-47965",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "WordPress Plugin WP Super Edit 2.5.4 and earlier contains an unrestricted file upload vulnerability in the FCKeditor component that allows attackers to upload dangerous file types without validation. ",
+        "published": "2026-05-15T19:16:56.163"
+      },
+      {
+        "cve_id": "CVE-2026-46364",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "phpMyFAQ before 4.1.2 contains an unauthenticated SQL injection vulnerability in BuiltinCaptcha::garbageCollector() and BuiltinCaptcha::saveCaptcha() methods that interpolate unsanitized User-Agent he",
+        "published": "2026-05-15T19:17:03.750"
+      },
+      {
         "cve_id": "CVE-2026-41258",
         "severity": "CRITICAL",
         "base_score": 9.1,
         "description": "OpenMRS is an open source electronic medical record system platform. From 2.7.0 to before 2.7.9 and 2.8.6, the ConceptReferenceRangeUtility.evaluateCriteria() method in OpenMRS Core evaluates database",
         "published": "2026-05-15T17:16:46.463"
+      },
+      {
+        "cve_id": "CVE-2026-45010",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "phpMyFAQ before 4.1.2 contains an improper restriction of excessive authentication attempts vulnerability in the /admin/check endpoint, which accepts arbitrary user-id parameters without session bindi",
+        "published": "2026-05-15T19:17:01.450"
       },
       {
         "cve_id": "CVE-2026-6228",
@@ -271,11 +299,11 @@
         "published": "2026-05-15T09:16:16.833"
       },
       {
-        "cve_id": "CVE-2026-2652",
+        "cve_id": "CVE-2021-47964",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "A vulnerability in mlflow/mlflow versions 3.9.0 and earlier allows unauthenticated access to certain FastAPI routes when the server is started with authentication enabled (`--app-name basic-auth`) and",
-        "published": "2026-05-15T03:16:23.127"
+        "base_score": 8.8,
+        "description": "Schlix CMS 2.2.6-6 contains a remote code execution vulnerability that allows authenticated attackers to execute arbitrary PHP code by uploading malicious extension packages through the block manager.",
+        "published": "2026-05-15T19:16:56.030"
       },
       {
         "cve_id": "CVE-2026-41964",
@@ -290,6 +318,13 @@
         "base_score": 8.2,
         "description": "A buffer underflow vulnerability has been identified in the ogg123 utility from the vorbis-tools 1.4.3 package in function remotethread in remote.c. This vulnerability occurs in the remote control fun",
         "published": "2026-05-15T15:16:51.073"
+      },
+      {
+        "cve_id": "CVE-2021-47966",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "PHP Timeclock 1.04 contains time-based and boolean-based blind SQL injection vulnerabilities in the login_userid parameter of login.php that allows unauthenticated attackers to extract database conten",
+        "published": "2026-05-15T19:16:56.293"
       },
       {
         "cve_id": "CVE-2026-28761",
@@ -334,53 +369,18 @@
         "published": "2026-05-15T15:16:51.197"
       },
       {
-        "cve_id": "CVE-2026-39054",
+        "cve_id": "CVE-2026-44714",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "Oinone Pamirs 7.0.0 contains a command injection vulnerability in CommandHelper.executeCommands. The method starts a shell process and writes attacker-controlled command strings directly to the proces",
-        "published": "2026-05-15T15:16:51.753"
+        "base_score": 7.5,
+        "description": "The bitcoinj library is a Java implementation of the Bitcoin protocol. Prior to 0.17.1, ScriptExecution.correctlySpends() contains two fast-path verification bugs for standard P2PKH and native P2WPKH ",
+        "published": "2026-05-15T17:16:47.933"
       },
       {
-        "cve_id": "CVE-2026-41970",
-        "severity": "MEDIUM",
-        "base_score": 6.8,
-        "description": "Out-of-bounds write vulnerability in the distributed file system module.\u00a0Impact: Successful exploitation of this vulnerability may affect availability.",
-        "published": "2026-05-15T10:16:35.737"
-      },
-      {
-        "cve_id": "CVE-2026-4683",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "The Smartcat Translator for WPML plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the 'routeData' REST endpoint in all versions up to, and i",
-        "published": "2026-05-15T09:16:16.487"
-      },
-      {
-        "cve_id": "CVE-2026-8503",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Apache::Session::Generate::SHA256 versions before 1.3.19 for Perl create insecure session ids.\n\nApache::Session::Generate::SHA256 generated session ids insecurely. The default session id generator ret",
-        "published": "2026-05-15T12:17:09.557"
-      },
-      {
-        "cve_id": "CVE-2025-67437",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Medical Management System a81df1ce700a9662cb136b27af47f4cbde64156b is vulnerable to Insecure Permissions, which allows arbitrary user password reset.",
-        "published": "2026-05-15T15:16:49.883"
-      },
-      {
-        "cve_id": "CVE-2026-39052",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Oinone Pamirs 7.0.0 contains a code execution vulnerability via ScriptRunner. The method ScriptRunner.run(String expression, String type, Map<String, Object> context) evaluates attacker-controlled scr",
-        "published": "2026-05-15T15:16:51.490"
-      },
-      {
-        "cve_id": "CVE-2026-39053",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Oinone Pamirs 7.0.0 contains an XML External Entity (XXE) issue in its XStream-based XML parsing logic. When attacker-controlled XML is passed to framework parsing entry points such as PamirsXmlUtils.",
-        "published": "2026-05-15T15:16:51.613"
+        "cve_id": "CVE-2026-8695",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "radare2 6.1.5 contains a use-after-free vulnerability in the gdbr_threads_list() function that allows remote attackers to trigger memory corruption by sending a valid qfThreadInfo response followed by",
+        "published": "2026-05-15T17:16:49.447"
       }
     ]
   },
