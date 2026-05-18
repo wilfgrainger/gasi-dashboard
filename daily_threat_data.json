@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-18T17:51:57.704418+00:00",
+  "generated_at": "2026-05-18T21:02:37.750512+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
+        "value": 6,
         "score": 2.5,
         "max": 3
       },
@@ -238,23 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 76,
-    "critical_count": 5,
-    "high_count": 18,
+    "total": 97,
+    "critical_count": 6,
+    "high_count": 24,
     "cves": [
       {
-        "cve_id": "CVE-2026-8507",
+        "cve_id": "CVE-2026-42822",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Crypt::OpenSSL::PKCS12 versions through 1.94 for Perl have out-of-bounds (OOB) write flaws.\n\nWhen parsing a PKCS12 file, with a >= 1 GiB OCTET STRING (or BIT STRING) attribute on a SAFEBAG, via info()",
-        "published": "2026-05-17T19:16:24.590"
-      },
-      {
-        "cve_id": "CVE-2026-8721",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Crypt::OpenSSL::PKCS12 versions through 1.94 for Perl truncates passwords with embedded NULLs.\n\nPassword parameters in PKCS12.xs are declared char *, which routes through Perl's default typemap to SvP",
-        "published": "2026-05-17T19:16:25.310"
+        "base_score": 10.0,
+        "description": "Improper authentication in Azure Local Disconnected Operations allows an unauthorized attacker to elevate privileges over a network.",
+        "published": "2026-05-18T18:17:34.500"
       },
       {
         "cve_id": "CVE-2026-7301",
@@ -271,11 +264,25 @@
         "published": "2026-05-18T12:16:16.713"
       },
       {
+        "cve_id": "CVE-2026-8836",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A vulnerability was found in lwIP up to 2.2.1. Affected is the function snmp_parse_inbound_frame of the file src/apps/snmp/snmp_msg.c of the component snmpv3 USM Handler. Performing a manipulation of ",
+        "published": "2026-05-18T19:16:28.533"
+      },
+      {
         "cve_id": "CVE-2026-7302",
         "severity": "CRITICAL",
         "base_score": 9.1,
         "description": "SGLangs multimodal generation runtime is vulnerable to an unauthenticated path traversal vulnerability, allowing an attacker to write arbitrary files anywhere the server process has write access, by i",
         "published": "2026-05-18T12:16:16.600"
+      },
+      {
+        "cve_id": "CVE-2026-45230",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "DumbAssets through 1.0.11 contains a path traversal vulnerability in the POST /api/delete-file endpoint and filesToDelete array parameters that allows unauthenticated attackers to delete arbitrary fil",
+        "published": "2026-05-18T18:17:37.070"
       },
       {
         "cve_id": "CVE-2026-8775",
@@ -306,6 +313,27 @@
         "published": "2026-05-18T09:16:24.460"
       },
       {
+        "cve_id": "CVE-2025-57282",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "ngrok v4.3.3 and 5.0.0-beta.2 is vulnerable to Command Injection.",
+        "published": "2026-05-18T16:16:29.253"
+      },
+      {
+        "cve_id": "CVE-2026-41085",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Thermo Fisher Scientific Torrent Suite Dx through 5.14.2 has a privilege escalation vulnerability that may allow an authenticated user with limited access privileges to gain unauthorized administrator",
+        "published": "2026-05-18T17:16:32.270"
+      },
+      {
+        "cve_id": "CVE-2026-45495",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
+        "published": "2026-05-18T18:17:38.600"
+      },
+      {
         "cve_id": "CVE-2026-6346",
         "severity": "HIGH",
         "base_score": 8.7,
@@ -320,11 +348,11 @@
         "published": "2026-05-18T07:16:12.590"
       },
       {
-        "cve_id": "CVE-2026-46720",
+        "cve_id": "CVE-2026-47092",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Net::Statsd::Tiny versions before 0.3.8 for Perl allowed metric injections.\n\nThe metric names and set values were not checked for newlines, colons or pipes. Metrics generated from untrusted sources co",
-        "published": "2026-05-17T18:16:27.397"
+        "base_score": 7.8,
+        "description": "Claude HUD through 0.0.12, patched in commit 234d9aa, contains a command injection vulnerability that allows local attackers to execute arbitrary commands by manipulating the COMSPEC environment varia",
+        "published": "2026-05-18T20:16:40.040"
       },
       {
         "cve_id": "CVE-2026-41948",
@@ -353,34 +381,6 @@
         "base_score": 7.5,
         "description": "A flaw was found in gnutls. A remote attacker could exploit an issue in the Datagram Transport Layer Security (DTLS) packet reordering logic. The comparator function, responsible for ordering DTLS pac",
         "published": "2026-05-18T13:16:32.707"
-      },
-      {
-        "cve_id": "CVE-2026-39079",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "An issue in prestashop upsshipping all versions through at least 2.4.0 allows a remote attacker to obtain sensitive information via the /modules/upsshipping/logs/, and /modules/upsshipping/lib/UPSBase",
-        "published": "2026-05-18T15:16:25.533"
-      },
-      {
-        "cve_id": "CVE-2026-41947",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "Dify version 1.14.1 and prior contains an authorization bypass vulnerability that allows authenticated editor users to set and enable trace configurations for any application regardless of tenant owne",
-        "published": "2026-05-18T15:16:25.827"
-      },
-      {
-        "cve_id": "CVE-2026-8768",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was found in vercel ai up to 3.0.97. The affected element is the function validateDownloadUrl of the file packages/provider-utils/src/download-blob.ts of the component provider-utils. ",
-        "published": "2026-05-17T23:17:02.997"
-      },
-      {
-        "cve_id": "CVE-2026-8771",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security flaw has been discovered in linlinjava litemall up to 1.8.0. This impacts the function list of the file litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/web/WxGoodsController.java o",
-        "published": "2026-05-18T00:16:37.537"
       }
     ]
   },
