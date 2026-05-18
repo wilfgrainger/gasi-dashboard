@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-18T11:37:36.849601+00:00",
+  "generated_at": "2026-05-18T14:54:42.980342+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
+        "value": 2,
         "score": 2.0,
         "max": 3
       },
@@ -238,30 +238,23 @@
     ]
   },
   "nvd": {
-    "total": 87,
-    "critical_count": 3,
-    "high_count": 26,
+    "total": 64,
+    "critical_count": 2,
+    "high_count": 12,
     "cves": [
       {
-        "cve_id": "CVE-2018-25320",
+        "cve_id": "CVE-2026-8507",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "ACL Analytics versions 11.x through 13.0.0.579 contain an arbitrary code execution vulnerability that allows attackers to execute arbitrary commands by leveraging the EXECUTE function. Attackers can u",
-        "published": "2026-05-17T13:16:43.270"
+        "description": "Crypt::OpenSSL::PKCS12 versions through 1.94 for Perl have out-of-bounds (OOB) write flaws.\n\nWhen parsing a PKCS12 file, with a >= 1 GiB OCTET STRING (or BIT STRING) attribute on a SAFEBAG, via info()",
+        "published": "2026-05-17T19:16:24.590"
       },
       {
-        "cve_id": "CVE-2018-25332",
+        "cve_id": "CVE-2026-8721",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "GitBucket 4.23.1 contains an unauthenticated remote code execution vulnerability that allows attackers to execute arbitrary commands by exploiting weak secret token generation and insecure file upload",
-        "published": "2026-05-17T13:16:44.840"
-      },
-      {
-        "cve_id": "CVE-2018-25335",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "WordPress Plugin Peugeot Music 1.0 contains an arbitrary file upload vulnerability that allows unauthenticated attackers to upload malicious files by sending POST requests to the upload.php endpoint. ",
-        "published": "2026-05-17T13:16:45.220"
+        "description": "Crypt::OpenSSL::PKCS12 versions through 1.94 for Perl truncates passwords with embedded NULLs.\n\nPassword parameters in PKCS12.xs are declared char *, which routes through Perl's default typemap to SvP",
+        "published": "2026-05-17T19:16:25.310"
       },
       {
         "cve_id": "CVE-2026-8775",
@@ -292,53 +285,11 @@
         "published": "2026-05-18T09:16:24.000"
       },
       {
-        "cve_id": "CVE-2018-25322",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Allok Fast AVI MPEG Splitter 1.2 contains a stack based buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying a malicious license name string. Attackers can ",
-        "published": "2026-05-17T13:16:43.537"
-      },
-      {
-        "cve_id": "CVE-2018-25323",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Allok AVI DivX MPEG to DVD Converter 2.6.1217 contains a structured exception handler buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying a malicious paylo",
-        "published": "2026-05-17T13:16:43.663"
-      },
-      {
-        "cve_id": "CVE-2018-25328",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "VX Search 10.6.18 contains a local buffer overflow vulnerability that allows attackers to overwrite the instruction pointer by supplying an oversized string in the directory field. Attackers can craft",
-        "published": "2026-05-17T13:16:44.310"
-      },
-      {
-        "cve_id": "CVE-2018-25330",
+        "cve_id": "CVE-2026-46720",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "Joomla! extension EkRishta 2.10 contains persistent cross-site scripting and SQL injection vulnerabilities that allow attackers to inject malicious code through profile fields and POST parameters. Att",
-        "published": "2026-05-17T13:16:44.573"
-      },
-      {
-        "cve_id": "CVE-2018-25333",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Nordex N149/4.0-4.5 Wind Turbine Web Server 4.0 contains an SQL injection vulnerability that allows unauthenticated attackers to execute arbitrary SQL queries by injecting malicious code through the l",
-        "published": "2026-05-17T13:16:44.970"
-      },
-      {
-        "cve_id": "CVE-2018-25338",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Zechat 1.5 contains a SQL injection vulnerability in the hashtag parameter that allows unauthenticated attackers to extract database information using union-based techniques. Attackers can exploit the",
-        "published": "2026-05-17T13:16:45.590"
-      },
-      {
-        "cve_id": "CVE-2018-25339",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Zechat 1.5 contains a SQL injection vulnerability in the v parameter that allows unauthenticated attackers to extract database information using time-based blind techniques. Attackers can exploit the ",
-        "published": "2026-05-17T13:16:45.710"
+        "description": "Net::Statsd::Tiny versions before 0.3.8 for Perl allowed metric injections.\n\nThe metric names and set values were not checked for newlines, colons or pipes. Metrics generated from untrusted sources co",
+        "published": "2026-05-17T18:16:27.397"
       },
       {
         "cve_id": "CVE-2026-6347",
@@ -348,39 +299,88 @@
         "published": "2026-05-18T09:16:24.143"
       },
       {
-        "cve_id": "CVE-2018-25325",
+        "cve_id": "CVE-2026-42009",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Woocommerce CSV Importer 3.3.6 contains a path traversal vulnerability that allows any registered user to delete arbitrary files by submitting unescaped filenames through the delete_export_file AJAX a",
-        "published": "2026-05-17T13:16:43.923"
+        "description": "A flaw was found in gnutls. A remote attacker could exploit an issue in the Datagram Transport Layer Security (DTLS) packet reordering logic. The comparator function, responsible for ordering DTLS pac",
+        "published": "2026-05-18T13:16:32.707"
       },
       {
-        "cve_id": "CVE-2018-25326",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Google Drive for WordPress 2.2 contains a path traversal vulnerability that allows unauthenticated attackers to read arbitrary files by injecting directory traversal sequences in the file_name paramet",
-        "published": "2026-05-17T13:16:44.050"
-      },
-      {
-        "cve_id": "CVE-2018-25329",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "WordPress Plugin WP with Spritz 1.0 contains a remote file inclusion vulnerability that allows unauthenticated attackers to read arbitrary files by injecting file paths into the url parameter. Attacke",
-        "published": "2026-05-17T13:16:44.443"
-      },
-      {
-        "cve_id": "CVE-2026-8751",
+        "cve_id": "CVE-2026-8759",
         "severity": "HIGH",
         "base_score": 7.3,
-        "description": "A security flaw has been discovered in h2oai h2o-3 up to 7402. This affects the function importBinaryModel of the file h2o-core/src/main/java/hex/Model.java of the component JAR Handler. Performing a ",
-        "published": "2026-05-17T12:16:42.533"
+        "description": "A vulnerability was identified in xiandafu beetl up to 3.20.2. Affected is an unknown function of the file beetl-classic-integration/beetl-spring-classic/src/main/java/org/beetl/ext/spring/SpELFunctio",
+        "published": "2026-05-17T15:16:20.843"
       },
       {
-        "cve_id": "CVE-2026-8755",
+        "cve_id": "CVE-2026-8768",
         "severity": "HIGH",
         "base_score": 7.3,
-        "description": "A flaw has been found in fishaudio Bert-VITS2 up to 8f7fbd8c4770965225d258db548da27dc8dd934c. The affected element is the function _get_all_models of the file hiyoriUI.py of the component Model Handle",
-        "published": "2026-05-17T13:16:46.260"
+        "description": "A vulnerability was found in vercel ai up to 3.0.97. The affected element is the function validateDownloadUrl of the file packages/provider-utils/src/download-blob.ts of the component provider-utils. ",
+        "published": "2026-05-17T23:17:02.997"
+      },
+      {
+        "cve_id": "CVE-2026-8771",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A security flaw has been discovered in linlinjava litemall up to 1.8.0. This impacts the function list of the file litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/web/WxGoodsController.java o",
+        "published": "2026-05-18T00:16:37.537"
+      },
+      {
+        "cve_id": "CVE-2026-8785",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A flaw has been found in projectworlds hospital-management-system-in-php 1.0. Affected by this vulnerability is the function getAllPatientDetail of the file update_info.php of the component GET Parame",
+        "published": "2026-05-18T04:16:34.530"
+      },
+      {
+        "cve_id": "CVE-2026-8764",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "A security vulnerability has been detected in H3C Magic B3 up to 100R002. This affects the function UpdateWanParams of the file /goform/aspForm. Such manipulation of the argument param leads to buffer",
+        "published": "2026-05-17T22:16:21.463"
+      },
+      {
+        "cve_id": "CVE-2026-41119",
+        "severity": "MEDIUM",
+        "base_score": 6.8,
+        "description": "Dell Live Optics Windows and Personal Edition collectors contain an improper certificate validation vulnerability. A remote unauthenticated attacker could potentially exploit this vulnerability leadin",
+        "published": "2026-05-18T11:16:16.937"
+      },
+      {
+        "cve_id": "CVE-2026-3117",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Mattermost Plugins versions <=11.5 11.1.5 10.13.11 11.3.4.0 fail to properly check for permissions when processing commands in the Gitlab plugin which allows normal users to uninstall instances or set",
+        "published": "2026-05-18T09:16:22.707"
+      },
+      {
+        "cve_id": "CVE-2026-3471",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Mattermost Desktop App versions <=6.1 6.0.1 5.4.13.0 fail to prevent an invalid URL from loading in a pop-up window in the Mattermost Desktop App which allows a malicious server owner to repeated cras",
+        "published": "2026-05-18T09:16:22.847"
+      },
+      {
+        "cve_id": "CVE-2026-5163",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Mattermost versions 11.5.x <= 11.5.1 fail to verify channel membership when processing AI-assisted message rewrites which allows an authenticated attacker to read the content of threads in private cha",
+        "published": "2026-05-18T09:16:23.273"
+      },
+      {
+        "cve_id": "CVE-2026-6345",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Mattermost versions 11.5.x <= 11.5.1, 10.11.x <= 10.11.13, 11.4.x <= 11.4.3 fail prevent disclosure of created user password which allows a malicious attacker to impersonate a user via the use of some",
+        "published": "2026-05-18T09:16:23.853"
+      },
+      {
+        "cve_id": "CVE-2026-8774",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A vulnerability was detected in Edimax BR-6228NC 1.22. Affected by this issue is the function mp of the file /goform/mp of the component POST Request Handler. The manipulation of the argument command ",
+        "published": "2026-05-18T02:16:36.433"
       }
     ]
   },
