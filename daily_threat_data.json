@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-18T14:54:42.980342+00:00",
+  "generated_at": "2026-05-18T17:51:57.704418+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
-        "score": 2.0,
+        "value": 5,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 64,
-    "critical_count": 2,
-    "high_count": 12,
+    "total": 76,
+    "critical_count": 5,
+    "high_count": 18,
     "cves": [
       {
         "cve_id": "CVE-2026-8507",
@@ -257,6 +257,27 @@
         "published": "2026-05-17T19:16:25.310"
       },
       {
+        "cve_id": "CVE-2026-7301",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "SGLangs multimodal generation runtime scheduler's ROUTER socket binds to 0.0.0.0 by default and contains a sink that calls pickle.loads() on incoming messages, enabling RCE when exposed to the interne",
+        "published": "2026-05-18T12:16:16.480"
+      },
+      {
+        "cve_id": "CVE-2026-7304",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "SGLangs multimodal generation runtime is vulnerable to unauthenticated remote code execution when the --enable-custom-logit-processor option is enabled, as Python objects loaded via dill.loads() will ",
+        "published": "2026-05-18T12:16:16.713"
+      },
+      {
+        "cve_id": "CVE-2026-7302",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "SGLangs multimodal generation runtime is vulnerable to an unauthenticated path traversal vulnerability, allowing an attacker to write arbitrary files anywhere the server process has write access, by i",
+        "published": "2026-05-18T12:16:16.600"
+      },
+      {
         "cve_id": "CVE-2026-8775",
         "severity": "HIGH",
         "base_score": 8.8,
@@ -269,6 +290,13 @@
         "base_score": 8.8,
         "description": "A vulnerability has been found in Edimax BR-6428NS 1.10. This vulnerability affects the function formPPTPSetup of the file /goform/formPPTPSetup of the component POST Request Handler. Such manipulatio",
         "published": "2026-05-18T02:16:36.803"
+      },
+      {
+        "cve_id": "CVE-2026-3220",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Autoptimize WordPress plugin before 3.1.15, Clearfy Cache  WordPress plugin before 2.4.2, Speed Optimizer  WordPress plugin before 7.7.9 are vulnerable to unauthenticated Stored Cross-Site Scripti",
+        "published": "2026-05-18T07:16:12.270"
       },
       {
         "cve_id": "CVE-2026-7498",
@@ -285,11 +313,25 @@
         "published": "2026-05-18T09:16:24.000"
       },
       {
+        "cve_id": "CVE-2026-6379",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "The WP Photo Album Plus WordPress plugin before 9.1.11.001 does not properly sanitize and escape a parameter before using it in a SQL query, allowing unauthenticated users to perform SQL injection att",
+        "published": "2026-05-18T07:16:12.590"
+      },
+      {
         "cve_id": "CVE-2026-46720",
         "severity": "HIGH",
         "base_score": 8.2,
         "description": "Net::Statsd::Tiny versions before 0.3.8 for Perl allowed metric injections.\n\nThe metric names and set values were not checked for newlines, colons or pipes. Metrics generated from untrusted sources co",
         "published": "2026-05-17T18:16:27.397"
+      },
+      {
+        "cve_id": "CVE-2026-41948",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "Dify version 1.14.1 and prior contain a path traversal vulnerability that allows authenticated users to manipulate requests forwarded to the Plugin Daemon's internal REST API by exploiting insufficien",
+        "published": "2026-05-18T15:16:25.977"
       },
       {
         "cve_id": "CVE-2026-6347",
@@ -299,6 +341,13 @@
         "published": "2026-05-18T09:16:24.143"
       },
       {
+        "cve_id": "CVE-2026-6381",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The WP Maps  WordPress plugin before 4.9.3 does not properly sanitize a parameter before using it in a file path, allowing authenticated users to perform Local File Inclusion attacks.",
+        "published": "2026-05-18T07:16:12.710"
+      },
+      {
         "cve_id": "CVE-2026-42009",
         "severity": "HIGH",
         "base_score": 7.5,
@@ -306,11 +355,18 @@
         "published": "2026-05-18T13:16:32.707"
       },
       {
-        "cve_id": "CVE-2026-8759",
+        "cve_id": "CVE-2026-39079",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was identified in xiandafu beetl up to 3.20.2. Affected is an unknown function of the file beetl-classic-integration/beetl-spring-classic/src/main/java/org/beetl/ext/spring/SpELFunctio",
-        "published": "2026-05-17T15:16:20.843"
+        "base_score": 7.5,
+        "description": "An issue in prestashop upsshipping all versions through at least 2.4.0 allows a remote attacker to obtain sensitive information via the /modules/upsshipping/logs/, and /modules/upsshipping/lib/UPSBase",
+        "published": "2026-05-18T15:16:25.533"
+      },
+      {
+        "cve_id": "CVE-2026-41947",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "Dify version 1.14.1 and prior contains an authorization bypass vulnerability that allows authenticated editor users to set and enable trace configurations for any application regardless of tenant owne",
+        "published": "2026-05-18T15:16:25.827"
       },
       {
         "cve_id": "CVE-2026-8768",
@@ -325,62 +381,6 @@
         "base_score": 7.3,
         "description": "A security flaw has been discovered in linlinjava litemall up to 1.8.0. This impacts the function list of the file litemall-wx-api/src/main/java/org/linlinjava/litemall/wx/web/WxGoodsController.java o",
         "published": "2026-05-18T00:16:37.537"
-      },
-      {
-        "cve_id": "CVE-2026-8785",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A flaw has been found in projectworlds hospital-management-system-in-php 1.0. Affected by this vulnerability is the function getAllPatientDetail of the file update_info.php of the component GET Parame",
-        "published": "2026-05-18T04:16:34.530"
-      },
-      {
-        "cve_id": "CVE-2026-8764",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "A security vulnerability has been detected in H3C Magic B3 up to 100R002. This affects the function UpdateWanParams of the file /goform/aspForm. Such manipulation of the argument param leads to buffer",
-        "published": "2026-05-17T22:16:21.463"
-      },
-      {
-        "cve_id": "CVE-2026-41119",
-        "severity": "MEDIUM",
-        "base_score": 6.8,
-        "description": "Dell Live Optics Windows and Personal Edition collectors contain an improper certificate validation vulnerability. A remote unauthenticated attacker could potentially exploit this vulnerability leadin",
-        "published": "2026-05-18T11:16:16.937"
-      },
-      {
-        "cve_id": "CVE-2026-3117",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Mattermost Plugins versions <=11.5 11.1.5 10.13.11 11.3.4.0 fail to properly check for permissions when processing commands in the Gitlab plugin which allows normal users to uninstall instances or set",
-        "published": "2026-05-18T09:16:22.707"
-      },
-      {
-        "cve_id": "CVE-2026-3471",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Mattermost Desktop App versions <=6.1 6.0.1 5.4.13.0 fail to prevent an invalid URL from loading in a pop-up window in the Mattermost Desktop App which allows a malicious server owner to repeated cras",
-        "published": "2026-05-18T09:16:22.847"
-      },
-      {
-        "cve_id": "CVE-2026-5163",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Mattermost versions 11.5.x <= 11.5.1 fail to verify channel membership when processing AI-assisted message rewrites which allows an authenticated attacker to read the content of threads in private cha",
-        "published": "2026-05-18T09:16:23.273"
-      },
-      {
-        "cve_id": "CVE-2026-6345",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Mattermost versions 11.5.x <= 11.5.1, 10.11.x <= 10.11.13, 11.4.x <= 11.4.3 fail prevent disclosure of created user password which allows a malicious attacker to impersonate a user via the use of some",
-        "published": "2026-05-18T09:16:23.853"
-      },
-      {
-        "cve_id": "CVE-2026-8774",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A vulnerability was detected in Edimax BR-6228NC 1.22. Affected by this issue is the function mp of the file /goform/mp of the component POST Request Handler. The manipulation of the argument command ",
-        "published": "2026-05-18T02:16:36.433"
       }
     ]
   },
