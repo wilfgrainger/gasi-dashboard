@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-18T21:02:37.750512+00:00",
+  "generated_at": "2026-05-19T02:28:23.132979+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
+        "value": 9,
         "score": 2.5,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 97,
-    "critical_count": 6,
-    "high_count": 24,
+    "total": 99,
+    "critical_count": 9,
+    "high_count": 27,
     "cves": [
       {
         "cve_id": "CVE-2026-42822",
@@ -248,6 +248,13 @@
         "base_score": 10.0,
         "description": "Improper authentication in Azure Local Disconnected Operations allows an unauthorized attacker to elevate privileges over a network.",
         "published": "2026-05-18T18:17:34.500"
+      },
+      {
+        "cve_id": "CVE-2026-27130",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Versions 0.26.6 and below have OS command injection through the appName parameter. 3 chained issues cause this problem: inadequate input ",
+        "published": "2026-05-18T21:16:39.890"
       },
       {
         "cve_id": "CVE-2026-7301",
@@ -271,6 +278,20 @@
         "published": "2026-05-18T19:16:28.533"
       },
       {
+        "cve_id": "CVE-2026-25244",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "WebdriverIO is a test automation framework for unit, e2e and component testing using WebDriver, WebDriver BiDi and Appium. Versions below 9.24.0 contain a command injection vulnerability leading to re",
+        "published": "2026-05-18T21:16:39.547"
+      },
+      {
+        "cve_id": "CVE-2026-8838",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Unsafe use of Python's eval() on server-received data in the vector_in() function in amazon-redshift-python-driver before 2.1.14 allows a rogue server or man-in-the-middle actor to execute arbitrary c",
+        "published": "2026-05-18T21:16:41.623"
+      },
+      {
         "cve_id": "CVE-2026-7302",
         "severity": "CRITICAL",
         "base_score": 9.1,
@@ -283,20 +304,6 @@
         "base_score": 9.1,
         "description": "DumbAssets through 1.0.11 contains a path traversal vulnerability in the POST /api/delete-file endpoint and filesToDelete array parameters that allows unauthenticated attackers to delete arbitrary fil",
         "published": "2026-05-18T18:17:37.070"
-      },
-      {
-        "cve_id": "CVE-2026-8775",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw has been found in Edimax BR-6428NS 1.10. This affects the function formL2TPSetup of the file /goform/formL2TPSetup of the component POST Request Handler. This manipulation of the argument L2TPU",
-        "published": "2026-05-18T02:16:36.627"
-      },
-      {
-        "cve_id": "CVE-2026-8776",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability has been found in Edimax BR-6428NS 1.10. This vulnerability affects the function formPPTPSetup of the file /goform/formPPTPSetup of the component POST Request Handler. Such manipulatio",
-        "published": "2026-05-18T02:16:36.803"
       },
       {
         "cve_id": "CVE-2026-3220",
@@ -348,6 +355,20 @@
         "published": "2026-05-18T07:16:12.590"
       },
       {
+        "cve_id": "CVE-2026-22810",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Joplin is an open source note-taking and to-do application that organises notes and lists into notebooks. Versions prior to 3.5.7 contain a path traversal vulnerability in the importer which allows ov",
+        "published": "2026-05-18T21:16:39.373"
+      },
+      {
+        "cve_id": "CVE-2026-8851",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "SOGo 5.12.7 contains a SQL injection vulnerability in the Access Control List management functionality that allows authenticated users to extract arbitrary data from the database by injecting SQL subq",
+        "published": "2026-05-18T21:16:41.777"
+      },
+      {
         "cve_id": "CVE-2026-47092",
         "severity": "HIGH",
         "base_score": 7.8,
@@ -360,27 +381,6 @@
         "base_score": 7.7,
         "description": "Dify version 1.14.1 and prior contain a path traversal vulnerability that allows authenticated users to manipulate requests forwarded to the Plugin Daemon's internal REST API by exploiting insufficien",
         "published": "2026-05-18T15:16:25.977"
-      },
-      {
-        "cve_id": "CVE-2026-6347",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "Mattermost versions 11.5.x <= 11.5.1, 10.11.x <= 10.11.13, 11.4.x <= 11.4.3 fail to sanitize sensitive configuration fields in the Mattermost Calls plugin which allows an attacker with access to a sup",
-        "published": "2026-05-18T09:16:24.143"
-      },
-      {
-        "cve_id": "CVE-2026-6381",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The WP Maps  WordPress plugin before 4.9.3 does not properly sanitize a parameter before using it in a file path, allowing authenticated users to perform Local File Inclusion attacks.",
-        "published": "2026-05-18T07:16:12.710"
-      },
-      {
-        "cve_id": "CVE-2026-42009",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A flaw was found in gnutls. A remote attacker could exploit an issue in the Datagram Transport Layer Security (DTLS) packet reordering logic. The comparator function, responsible for ordering DTLS pac",
-        "published": "2026-05-18T13:16:32.707"
       }
     ]
   },
