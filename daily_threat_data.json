@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-19T17:57:28.467013+00:00",
+  "generated_at": "2026-05-19T21:11:50.588970+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 11,
-        "score": 3.0,
+        "value": 8,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,30 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 189,
-    "critical_count": 11,
+    "total": 187,
+    "critical_count": 8,
     "high_count": 28,
     "cves": [
-      {
-        "cve_id": "CVE-2026-42822",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Improper authentication in Azure Local Disconnected Operations allows an unauthorized attacker to elevate privileges over a network.",
-        "published": "2026-05-18T18:17:34.500"
-      },
       {
         "cve_id": "CVE-2026-27130",
         "severity": "CRITICAL",
         "base_score": 9.9,
         "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Versions 0.26.6 and below have OS command injection through the appName parameter. 3 chained issues cause this problem: inadequate input ",
         "published": "2026-05-18T21:16:39.890"
-      },
-      {
-        "cve_id": "CVE-2026-8836",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A vulnerability was found in lwIP up to 2.2.1. Affected is the function snmp_parse_inbound_frame of the file src/apps/snmp/snmp_msg.c of the component snmpv3 USM Handler. Performing a manipulation of ",
-        "published": "2026-05-18T19:16:28.533"
       },
       {
         "cve_id": "CVE-2026-25244",
@@ -285,25 +271,18 @@
         "published": "2026-05-19T08:16:16.223"
       },
       {
+        "cve_id": "CVE-2026-4883",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Piotnet Forms plugin for WordPress is vulnerable to arbitrary file upload due to missing file type validation in the 'piotnetforms_ajax_form_builder' function in all versions up to, and including,",
+        "published": "2026-05-19T13:16:19.340"
+      },
+      {
         "cve_id": "CVE-2026-2611",
         "severity": "CRITICAL",
         "base_score": 9.6,
         "description": "In MLflow version 3.9.0, the MLflow Assistant feature introduced improper origin validation in its /ajax-api endpoints. This vulnerability allows a remote attacker to exploit cross-origin requests fro",
         "published": "2026-05-19T10:16:22.983"
-      },
-      {
-        "cve_id": "CVE-2023-24215",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Incorrect access control in the /uci/get/ endpoint of NOVUS AirGate 4G firmware v1.1.16 allows unauthenticated attackers to obtain administrator credentials via a crafted POST request.",
-        "published": "2026-05-18T18:17:20.053"
-      },
-      {
-        "cve_id": "CVE-2026-45230",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "DumbAssets through 1.0.11 contains a path traversal vulnerability in the POST /api/delete-file endpoint and filesToDelete array parameters that allows unauthenticated attackers to delete arbitrary fil",
-        "published": "2026-05-18T18:17:37.070"
       },
       {
         "cve_id": "CVE-2026-31986",
@@ -318,13 +297,6 @@
         "base_score": 9.1,
         "description": "Improper Neutralization of Special Elements used in an LDAP Query ('LDAP Injection') vulnerability in Apache OFBiz.\n\nThis issue affects Apache OFBiz: before 24.09.06.\n\nUsers are recommended to upgrade",
         "published": "2026-05-19T10:16:24.380"
-      },
-      {
-        "cve_id": "CVE-2026-45495",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
-        "published": "2026-05-18T18:17:38.600"
       },
       {
         "cve_id": "CVE-2026-27648",
@@ -369,11 +341,11 @@
         "published": "2026-05-19T04:16:27.907"
       },
       {
-        "cve_id": "CVE-2026-47092",
+        "cve_id": "CVE-2026-7504",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Claude HUD through 0.0.12, patched in commit 234d9aa, contains a command injection vulnerability that allows local attackers to execute arbitrary commands by manipulating the COMSPEC environment varia",
-        "published": "2026-05-18T20:16:40.040"
+        "base_score": 8.1,
+        "description": "A flaw was found in Keycloak's URL validation logic during redirect operations. By crafting a malicious request, an attacker could bypass validation to redirect users to unauthorized URLs, potentially",
+        "published": "2026-05-19T12:16:19.553"
       },
       {
         "cve_id": "CVE-2026-47310",
@@ -381,6 +353,34 @@
         "base_score": 7.8,
         "description": "Use after free vulnerability in Samsung Open Source Escargot allows Pointer Manipulation.\n\nThis issue affects Escargot: 590345cc6258317c5da850d846ce6baaf2afc2d3.",
         "published": "2026-05-19T07:16:29.953"
+      },
+      {
+        "cve_id": "CVE-2026-47311",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Heap-based buffer overflow vulnerability in Samsung Open Source Escargot allows Overflow Buffers.\n\nThis issue affects Escargot: 590345cc6258317c5da850d846ce6baaf2afc2d3.",
+        "published": "2026-05-19T07:16:30.070"
+      },
+      {
+        "cve_id": "CVE-2026-47314",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Out-of-bounds write vulnerability in Samsung Open Source Escargot allows Overflow Buffers.\n\nThis issue affects Escargot: 590345cc6258317c5da850d846ce6baaf2afc2d3.",
+        "published": "2026-05-19T08:16:15.730"
+      },
+      {
+        "cve_id": "CVE-2026-23558",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "The adjustments made for XSA-379 as well as those subsequently becoming\nXSA-387 still left a race window, when a HVM or PVH guest does a grant\ntable version change from v2 to v1 in parallel with mappi",
+        "published": "2026-05-19T14:16:38.960"
+      },
+      {
+        "cve_id": "CVE-2026-33233",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. In versions 0.6.34 through 0.6.51, the backend deserializes Redis cache bytes",
+        "published": "2026-05-19T02:16:15.840"
       }
     ]
   },
