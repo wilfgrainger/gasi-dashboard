@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-19T10:53:50.409412+00:00",
+  "generated_at": "2026-05-19T14:37:45.262304+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 11,
-        "score": 3.0,
+        "value": 8,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 122,
-    "critical_count": 11,
-    "high_count": 27,
+    "total": 176,
+    "critical_count": 8,
+    "high_count": 29,
     "cves": [
       {
         "cve_id": "CVE-2026-42822",
@@ -255,20 +255,6 @@
         "base_score": 9.9,
         "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Versions 0.26.6 and below have OS command injection through the appName parameter. 3 chained issues cause this problem: inadequate input ",
         "published": "2026-05-18T21:16:39.890"
-      },
-      {
-        "cve_id": "CVE-2026-7301",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "SGLangs multimodal generation runtime scheduler's ROUTER socket binds to 0.0.0.0 by default and contains a sink that calls pickle.loads() on incoming messages, enabling RCE when exposed to the interne",
-        "published": "2026-05-18T12:16:16.480"
-      },
-      {
-        "cve_id": "CVE-2026-7304",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "SGLangs multimodal generation runtime is vulnerable to unauthenticated remote code execution when the --enable-custom-logit-processor option is enabled, as Python objects loaded via dill.loads() will ",
-        "published": "2026-05-18T12:16:16.713"
       },
       {
         "cve_id": "CVE-2026-8836",
@@ -304,13 +290,6 @@
         "base_score": 9.6,
         "description": "In MLflow version 3.9.0, the MLflow Assistant feature introduced improper origin validation in its /ajax-api endpoints. This vulnerability allows a remote attacker to exploit cross-origin requests fro",
         "published": "2026-05-19T10:16:22.983"
-      },
-      {
-        "cve_id": "CVE-2026-7302",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "SGLangs multimodal generation runtime is vulnerable to an unauthenticated path traversal vulnerability, allowing an attacker to write arbitrary files anywhere the server process has write access, by i",
-        "published": "2026-05-18T12:16:16.600"
       },
       {
         "cve_id": "CVE-2026-45230",
@@ -381,6 +360,27 @@
         "base_score": 7.8,
         "description": "Claude HUD through 0.0.12, patched in commit 234d9aa, contains a command injection vulnerability that allows local attackers to execute arbitrary commands by manipulating the COMSPEC environment varia",
         "published": "2026-05-18T20:16:40.040"
+      },
+      {
+        "cve_id": "CVE-2026-47310",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Use after free vulnerability in Samsung Open Source Escargot allows Pointer Manipulation.\n\nThis issue affects Escargot: 590345cc6258317c5da850d846ce6baaf2afc2d3.",
+        "published": "2026-05-19T07:16:29.953"
+      },
+      {
+        "cve_id": "CVE-2026-47311",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Heap-based buffer overflow vulnerability in Samsung Open Source Escargot allows Overflow Buffers.\n\nThis issue affects Escargot: 590345cc6258317c5da850d846ce6baaf2afc2d3.",
+        "published": "2026-05-19T07:16:30.070"
+      },
+      {
+        "cve_id": "CVE-2026-47314",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Out-of-bounds write vulnerability in Samsung Open Source Escargot allows Overflow Buffers.\n\nThis issue affects Escargot: 590345cc6258317c5da850d846ce6baaf2afc2d3.",
+        "published": "2026-05-19T08:16:15.730"
       }
     ]
   },
