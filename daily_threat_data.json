@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-20T10:42:00.432982+00:00",
+  "generated_at": "2026-05-20T14:37:07.852231+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 15,
+        "value": 10,
         "score": 3.0,
         "max": 3
       },
@@ -188,51 +188,23 @@
     ]
   },
   "nvd": {
-    "total": 228,
-    "critical_count": 15,
-    "high_count": 30,
+    "total": 196,
+    "critical_count": 10,
+    "high_count": 25,
     "cves": [
       {
-        "cve_id": "CVE-2026-43633",
+        "cve_id": "CVE-2026-34234",
         "severity": "CRITICAL",
         "base_score": 10.0,
-        "description": "HestiaCP versions 1.9.0 through 1.9.4 contain a deserialization vulnerability in the web terminal component caused by a session format mismatch between PHP and Node.js that allows unauthenticated remo",
-        "published": "2026-05-19T14:16:43.460"
+        "description": "CtrlPanel is open-source billing software for hosting providers. In versions 1.1.1 and prior, the web-based installer (public/installer/index.php) is vulnerable to unauthenticated Remote Code Executio",
+        "published": "2026-05-19T22:16:37.123"
       },
       {
-        "cve_id": "CVE-2026-4883",
+        "cve_id": "CVE-2026-33642",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Piotnet Forms plugin for WordPress is vulnerable to arbitrary file upload due to missing file type validation in the 'piotnetforms_ajax_form_builder' function in all versions up to, and including,",
-        "published": "2026-05-19T13:16:19.340"
-      },
-      {
-        "cve_id": "CVE-2026-8956",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Integer overflow in the Networking: JAR component. This vulnerability was fixed in Firefox 151, Firefox ESR 140.11, Thunderbird 151, and Thunderbird 140.11.",
-        "published": "2026-05-19T14:16:51.943"
-      },
-      {
-        "cve_id": "CVE-2026-8973",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Memory safety bugs present in Thunderbird 150. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary c",
-        "published": "2026-05-19T14:16:53.860"
-      },
-      {
-        "cve_id": "CVE-2026-8974",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Memory safety bugs present in Thunderbird 140.10 and Thunderbird 150. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been explo",
-        "published": "2026-05-19T14:16:53.977"
-      },
-      {
-        "cve_id": "CVE-2026-8975",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Memory safety bugs present in Thunderbird 140.10 and Thunderbird 150. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been explo",
-        "published": "2026-05-19T14:16:54.090"
+        "base_score": 9.9,
+        "description": "Kitty is a cross-platform GPU based terminal. In versions 0.46.2 and below, the handle_compose_command() function in kitty/graphics.c performs bounds validation on composition offsets using unsigned 3",
+        "published": "2026-05-19T19:16:49.293"
       },
       {
         "cve_id": "CVE-2026-44159",
@@ -242,25 +214,32 @@
         "published": "2026-05-19T15:16:31.180"
       },
       {
+        "cve_id": "CVE-2026-30117",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "scalar/astro v0.1.13 was discovered to contain an arbitrary file upload vulnerability in the the scalar_url query parameter of the Scalar Proxy endpoint. This vulnerability allows attackers to execute",
+        "published": "2026-05-19T16:16:19.980"
+      },
+      {
+        "cve_id": "CVE-2026-30118",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "scalar/astro v0.1.13 was discovered to contain a Server-Side Request Forgery (SSRF) in the scalar_url query parameter of the Scalar Proxy endpoint. This vulnerability allows unauthenticated attackers ",
+        "published": "2026-05-19T16:16:20.103"
+      },
+      {
+        "cve_id": "CVE-2026-31070",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The LalanaChami Pharmacy Management System (commit 5c3d028) allows unauthenticated remote attackers to escalate privileges by self-assigning an administrative role during registration. The /api/user/s",
+        "published": "2026-05-19T16:16:20.363"
+      },
+      {
         "cve_id": "CVE-2026-36829",
         "severity": "CRITICAL",
         "base_score": 9.8,
         "description": "An authentication bypass vulnerability exists in the embedded HTTP server of Panabit PAP-XM320 up to and including v7.7. The server validates session cookies using a filesystem existence check based o",
         "published": "2026-05-19T17:16:22.210"
-      },
-      {
-        "cve_id": "CVE-2026-8953",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Sandbox escape due to use-after-free in the Disability Access APIs component. This vulnerability was fixed in Firefox 151, Firefox ESR 115.36, Firefox ESR 140.11, Thunderbird 151, and Thunderbird 140.",
-        "published": "2026-05-19T14:16:51.593"
-      },
-      {
-        "cve_id": "CVE-2026-8959",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Sandbox escape due to incorrect boundary conditions in the Widget: Win32 component. This vulnerability was fixed in Firefox 151, Firefox ESR 140.11, Thunderbird 151, and Thunderbird 140.11.",
-        "published": "2026-05-19T14:16:52.280"
       },
       {
         "cve_id": "CVE-2026-2587",
@@ -270,32 +249,25 @@
         "published": "2026-05-19T15:16:28.577"
       },
       {
-        "cve_id": "CVE-2026-47107",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Windmill prior to 1.703.2 contains an incorrect default permissions vulnerability in nsjail sandbox configuration files where /etc is bind-mounted without read-write restrictions, allowing authenticat",
-        "published": "2026-05-19T18:16:22.167"
-      },
-      {
-        "cve_id": "CVE-2026-8950",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Same-origin policy bypass in the Networking: HTTP component. This vulnerability was fixed in Firefox 151, Firefox ESR 140.11, Thunderbird 151, and Thunderbird 140.11.",
-        "published": "2026-05-19T14:16:51.257"
-      },
-      {
-        "cve_id": "CVE-2026-8948",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Same-origin policy bypass in the DOM: Networking component. This vulnerability was fixed in Firefox 151 and Thunderbird 151.",
-        "published": "2026-05-19T14:16:51.027"
-      },
-      {
         "cve_id": "CVE-2026-2586",
         "severity": "CRITICAL",
         "base_score": 9.1,
         "description": "An authenticated Remote Code Execution (RCE) vulnerability was identified in GlassFish's Administration Console. A user with access to the panel can send crafted requests that allow the execution of a",
         "published": "2026-05-19T15:16:28.413"
+      },
+      {
+        "cve_id": "CVE-2026-31071",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "API endpoints in LalanaChami Pharmacy Management System (commit 5c3d028) lack authentication middleware. Unauthenticated remote attackers can exploit this to dump all user records (including bcrypt pa",
+        "published": "2026-05-19T16:16:20.490"
+      },
+      {
+        "cve_id": "CVE-2026-31069",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "BillaBear (all versions prior to Jan 2026) contains a SQL Injection vulnerability in the EventRepository. User-controlled input from metric filter names and aggregation properties is directly interpol",
+        "published": "2026-05-19T16:16:20.230"
       },
       {
         "cve_id": "CVE-2026-36828",
@@ -305,11 +277,32 @@
         "published": "2026-05-19T17:16:22.080"
       },
       {
-        "cve_id": "CVE-2026-8958",
+        "cve_id": "CVE-2026-32740",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Information disclosure, sandbox escape in the Security: Process Sandboxing component. This vulnerability was fixed in Firefox 151, Firefox ESR 140.11, Thunderbird 151, and Thunderbird 140.11.",
-        "published": "2026-05-19T14:16:52.170"
+        "base_score": 8.8,
+        "description": "libheif is a HEIF and AVIF file format decoder and encoder. Versions 1.21.2 and prior contain a heap-buffer-overflow (write) vulnerability in the grid tile compositing, allowing an attacker to write 6",
+        "published": "2026-05-19T20:16:18.917"
+      },
+      {
+        "cve_id": "CVE-2026-6456",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Account Switcher plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 1.0.2. This is due to the `rememberLogin` REST API endpoint using a loose comparis",
+        "published": "2026-05-20T02:16:38.637"
+      },
+      {
+        "cve_id": "CVE-2026-27173",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "JWT tokens that were used by workers in Kubernetes Executors have been exposed to users who had read only access to Kuberentes Pods. This could allow users with just read-only access to perform action",
+        "published": "2026-05-19T20:16:17.440"
+      },
+      {
+        "cve_id": "CVE-2026-34241",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "CtrlPanel is open-source billing software for hosting providers. Versions 1.1.1 and prior contain a Stored Cross-Site Scripting (XSS) vulnerability in the ticket reply notification system. Unsanitized",
+        "published": "2026-05-19T22:16:37.297"
       },
       {
         "cve_id": "CVE-2026-5804",
@@ -319,18 +312,25 @@
         "published": "2026-05-19T16:16:22.413"
       },
       {
-        "cve_id": "CVE-2026-7504",
+        "cve_id": "CVE-2026-8711",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "A flaw was found in Keycloak's URL validation logic during redirect operations. By crafting a malicious request, an attacker could bypass validation to redirect users to unauthorized URLs, potentially",
-        "published": "2026-05-19T12:16:19.553"
+        "description": "NGINX JavaScript has a vulnerability when the js_fetch_proxy\u00a0directive is configured with at least one client-controlled NGINX variable (for example, $http_*, $arg_*, $cookie_*) and a location invokin",
+        "published": "2026-05-19T15:16:33.017"
       },
       {
-        "cve_id": "CVE-2026-8969",
+        "cve_id": "CVE-2026-47107",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Mitigation bypass in the DOM: Security component. This vulnerability was fixed in Firefox 151 and Thunderbird 151.",
-        "published": "2026-05-19T14:16:53.390"
+        "description": "Windmill prior to 1.703.2 contains an incorrect default permissions vulnerability in nsjail sandbox configuration files where /etc is bind-mounted without read-write restrictions, allowing authenticat",
+        "published": "2026-05-19T18:16:22.167"
+      },
+      {
+        "cve_id": "CVE-2026-34358",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "CtrlPanel is open-source billing software for hosting providers. Versions 1.1.1 and prior contains a broken access control vulnerability where multiple admin controllers enforce permission checks on f",
+        "published": "2026-05-19T22:16:37.637"
       }
     ]
   },
