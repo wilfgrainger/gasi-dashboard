@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-05-19T21:11:50.588970+00:00",
+  "generated_at": "2026-05-20T02:28:31.871336+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 23,
+        "value": 15,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
-        "score": 2.5,
+        "value": 10,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1592,
-    "recent_30d_count": 23,
+    "recent_30d_count": 15,
     "recent": [
       {
         "cve_id": "CVE-2026-42897",
@@ -184,84 +184,20 @@
         "due_date": "2026-05-06",
         "description": "Microsoft Defender contains an insufficient granularity of access control vulnerability that could allow an authorized attacker to escalate privileges locally.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-20122",
-        "vendor": "Cisco",
-        "product": "Catalyst SD-WAN Manger",
-        "name": "Cisco Catalyst SD-WAN Manager Incorrect Use of Privileged APIs Vulnerability",
-        "date_added": "2026-04-20",
-        "due_date": "2026-04-23",
-        "description": "Cisco Catalyst SD-WAN Manager contains an incorrect use of privileged APIs vulnerability due to improper file handling on the API interface of an affected system. An attacker could exploit this vulner",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-20133",
-        "vendor": "Cisco",
-        "product": "Catalyst SD-WAN Manager",
-        "name": "Cisco Catalyst SD-WAN Manager Exposure of Sensitive Information to an Unauthorized Actor Vulnerability",
-        "date_added": "2026-04-20",
-        "due_date": "2026-04-23",
-        "description": "Cisco Catalyst SD-WAN Manager contains an exposure of sensitive information to an unauthorized actor vulnerability that could allow remote attackers to view sensitive information on affected systems.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2025-2749",
-        "vendor": "Kentico",
-        "product": "Kentico Xperience",
-        "name": "Kentico Xperience Path Traversal Vulnerability",
-        "date_added": "2026-04-20",
-        "due_date": "2026-05-04",
-        "description": "Kentico Xperience contains a path traversal vulnerability that could allow an authenticated user's Staging Sync Server to upload arbitrary data to path relative locations.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2023-27351",
-        "vendor": "PaperCut",
-        "product": "NG/MF",
-        "name": "PaperCut NG/MF Improper Authentication Vulnerability",
-        "date_added": "2026-04-20",
-        "due_date": "2026-05-04",
-        "description": "PaperCut NG/MF contains an improper authentication vulnerability that could allow remote attackers to bypass authentication on affected installations via the SecurityRequestFilter class.",
-        "ransomware_use": "Known"
-      },
-      {
-        "cve_id": "CVE-2025-48700",
-        "vendor": "Synacor",
-        "product": "Zimbra Collaboration Suite (ZCS)",
-        "name": "Synacor Zimbra Collaboration Suite (ZCS) Cross-site Scripting Vulnerability",
-        "date_added": "2026-04-20",
-        "due_date": "2026-04-23",
-        "description": "Synacor Zimbra Collaboration Suite (ZCS) contains a cross-site scripting vulnerability that could allow attackers to execute arbitrary JavaScript within the user's session, potentially leading to unau",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 187,
-    "critical_count": 8,
-    "high_count": 28,
+    "total": 236,
+    "critical_count": 10,
+    "high_count": 25,
     "cves": [
       {
-        "cve_id": "CVE-2026-27130",
+        "cve_id": "CVE-2026-43633",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Versions 0.26.6 and below have OS command injection through the appName parameter. 3 chained issues cause this problem: inadequate input ",
-        "published": "2026-05-18T21:16:39.890"
-      },
-      {
-        "cve_id": "CVE-2026-25244",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "WebdriverIO is a test automation framework for unit, e2e and component testing using WebDriver, WebDriver BiDi and Appium. Versions below 9.24.0 contain a command injection vulnerability leading to re",
-        "published": "2026-05-18T21:16:39.547"
-      },
-      {
-        "cve_id": "CVE-2026-8838",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Unsafe use of Python's eval() on server-received data in the vector_in() function in amazon-redshift-python-driver before 2.1.14 allows a rogue server or man-in-the-middle actor to execute arbitrary c",
-        "published": "2026-05-18T21:16:41.623"
+        "base_score": 10.0,
+        "description": "HestiaCP versions 1.9.0 through 1.9.4 contain a deserialization vulnerability in the web terminal component caused by a session format mismatch between PHP and Node.js that allows unauthenticated remo",
+        "published": "2026-05-19T14:16:43.460"
       },
       {
         "cve_id": "CVE-2026-4885",
@@ -278,11 +214,32 @@
         "published": "2026-05-19T13:16:19.340"
       },
       {
+        "cve_id": "CVE-2026-8956",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Integer overflow in the Networking: JAR component. This vulnerability was fixed in Firefox 151, Firefox ESR 140.11, Thunderbird 151, and Thunderbird 140.11.",
+        "published": "2026-05-19T14:16:51.943"
+      },
+      {
         "cve_id": "CVE-2026-2611",
         "severity": "CRITICAL",
         "base_score": 9.6,
         "description": "In MLflow version 3.9.0, the MLflow Assistant feature introduced improper origin validation in its /ajax-api endpoints. This vulnerability allows a remote attacker to exploit cross-origin requests fro",
         "published": "2026-05-19T10:16:22.983"
+      },
+      {
+        "cve_id": "CVE-2026-8953",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Sandbox escape due to use-after-free in the Disability Access APIs component. This vulnerability was fixed in Firefox 151, Firefox ESR 115.36, Firefox ESR 140.11, Thunderbird 151, and Thunderbird 140.",
+        "published": "2026-05-19T14:16:51.593"
+      },
+      {
+        "cve_id": "CVE-2026-8950",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Same-origin policy bypass in the Networking: HTTP component. This vulnerability was fixed in Firefox 151, Firefox ESR 140.11, Thunderbird 151, and Thunderbird 140.11.",
+        "published": "2026-05-19T14:16:51.257"
       },
       {
         "cve_id": "CVE-2026-31986",
@@ -297,6 +254,13 @@
         "base_score": 9.1,
         "description": "Improper Neutralization of Special Elements used in an LDAP Query ('LDAP Injection') vulnerability in Apache OFBiz.\n\nThis issue affects Apache OFBiz: before 24.09.06.\n\nUsers are recommended to upgrade",
         "published": "2026-05-19T10:16:24.380"
+      },
+      {
+        "cve_id": "CVE-2026-8948",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Same-origin policy bypass in the DOM: Networking component. This vulnerability was fixed in Firefox 151 and Thunderbird 151.",
+        "published": "2026-05-19T14:16:51.027"
       },
       {
         "cve_id": "CVE-2026-27648",
@@ -318,20 +282,6 @@
         "base_score": 8.4,
         "description": "in OpenHarmony v6.0 and prior versions allow a local attacker cause DOS and it cannot be recovered.",
         "published": "2026-05-19T04:16:28.280"
-      },
-      {
-        "cve_id": "CVE-2026-22810",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Joplin is an open source note-taking and to-do application that organises notes and lists into notebooks. Versions prior to 3.5.7 contain a path traversal vulnerability in the importer which allows ov",
-        "published": "2026-05-18T21:16:39.373"
-      },
-      {
-        "cve_id": "CVE-2026-8851",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "SOGo versions 5.12.7 and prior contains a SQL injection vulnerability in the Access Control List management functionality that allows authenticated users to extract arbitrary data from the database by",
-        "published": "2026-05-18T21:16:41.777"
       },
       {
         "cve_id": "CVE-2026-24792",
@@ -376,11 +326,11 @@
         "published": "2026-05-19T14:16:38.960"
       },
       {
-        "cve_id": "CVE-2026-33233",
+        "cve_id": "CVE-2025-15609",
         "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. In versions 0.6.34 through 0.6.51, the backend deserializes Redis cache bytes",
-        "published": "2026-05-19T02:16:15.840"
+        "base_score": 7.5,
+        "description": "The Fortis for WooCommerce WordPress plugin before 1.3.1 may leak sensitive API keys to unauthenticated attackers, allowing them to query Fortis' API and retrieve sensitive customer information, like ",
+        "published": "2026-05-19T07:16:29.327"
       }
     ]
   },
