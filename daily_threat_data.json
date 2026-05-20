@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-20T07:35:25.696750+00:00",
+  "generated_at": "2026-05-20T10:42:00.432982+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 14,
+        "value": 15,
         "score": 3.0,
         "max": 3
       },
@@ -188,9 +188,9 @@
     ]
   },
   "nvd": {
-    "total": 243,
-    "critical_count": 14,
-    "high_count": 26,
+    "total": 228,
+    "critical_count": 15,
+    "high_count": 30,
     "cves": [
       {
         "cve_id": "CVE-2026-43633",
@@ -198,13 +198,6 @@
         "base_score": 10.0,
         "description": "HestiaCP versions 1.9.0 through 1.9.4 contain a deserialization vulnerability in the web terminal component caused by a session format mismatch between PHP and Node.js that allows unauthenticated remo",
         "published": "2026-05-19T14:16:43.460"
-      },
-      {
-        "cve_id": "CVE-2026-4885",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Piotnet Addons for Elementor Pro plugin for WordPress is vulnerable to arbitrary file upload due to missing file type validation in the 'pafe_ajax_form_builder' function in all versions up to, and",
-        "published": "2026-05-19T08:16:16.223"
       },
       {
         "cve_id": "CVE-2026-4883",
@@ -242,11 +235,18 @@
         "published": "2026-05-19T14:16:54.090"
       },
       {
-        "cve_id": "CVE-2026-2611",
+        "cve_id": "CVE-2026-44159",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "In MLflow version 3.9.0, the MLflow Assistant feature introduced improper origin validation in its /ajax-api endpoints. This vulnerability allows a remote attacker to exploit cross-origin requests fro",
-        "published": "2026-05-19T10:16:22.983"
+        "base_score": 9.8,
+        "description": "Tyler Identity Local (TID-L) uses documented, default administrative credentials. Users are not required to change the credentials before deployment. TID-L has not been distributed since December 2020",
+        "published": "2026-05-19T15:16:31.180"
+      },
+      {
+        "cve_id": "CVE-2026-36829",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An authentication bypass vulnerability exists in the embedded HTTP server of Panabit PAP-XM320 up to and including v7.7. The server validates session cookies using a filesystem existence check based o",
+        "published": "2026-05-19T17:16:22.210"
       },
       {
         "cve_id": "CVE-2026-8953",
@@ -263,25 +263,25 @@
         "published": "2026-05-19T14:16:52.280"
       },
       {
+        "cve_id": "CVE-2026-2587",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "A critical Remote Code Execution (RCE) vulnerability was identified in the server-side template rendering mechanism used by the Glassfish gadget handler. The application processes .xml files and evalu",
+        "published": "2026-05-19T15:16:28.577"
+      },
+      {
+        "cve_id": "CVE-2026-47107",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Windmill prior to 1.703.2 contains an incorrect default permissions vulnerability in nsjail sandbox configuration files where /etc is bind-mounted without read-write restrictions, allowing authenticat",
+        "published": "2026-05-19T18:16:22.167"
+      },
+      {
         "cve_id": "CVE-2026-8950",
         "severity": "CRITICAL",
         "base_score": 9.3,
         "description": "Same-origin policy bypass in the Networking: HTTP component. This vulnerability was fixed in Firefox 151, Firefox ESR 140.11, Thunderbird 151, and Thunderbird 140.11.",
         "published": "2026-05-19T14:16:51.257"
-      },
-      {
-        "cve_id": "CVE-2026-31986",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Use of Hard-coded Cryptographic Key vulnerability in Apache OFBiz.\n\nThis issue affects Apache OFBiz: before 24.09.06.\n\nUsers are recommended to upgrade to version 24.09.06, which fixes the issue.",
-        "published": "2026-05-19T10:16:24.143"
-      },
-      {
-        "cve_id": "CVE-2026-41919",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Improper Neutralization of Special Elements used in an LDAP Query ('LDAP Injection') vulnerability in Apache OFBiz.\n\nThis issue affects Apache OFBiz: before 24.09.06.\n\nUsers are recommended to upgrade",
-        "published": "2026-05-19T10:16:24.380"
       },
       {
         "cve_id": "CVE-2026-8948",
@@ -291,11 +291,18 @@
         "published": "2026-05-19T14:16:51.027"
       },
       {
-        "cve_id": "CVE-2026-45434",
+        "cve_id": "CVE-2026-2586",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "An authenticated Remote Code Execution (RCE) vulnerability was identified in GlassFish's Administration Console. A user with access to the panel can send crafted requests that allow the execution of a",
+        "published": "2026-05-19T15:16:28.413"
+      },
+      {
+        "cve_id": "CVE-2026-36828",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Improper Authentication vulnerability in Apache OFBiz via Password-Change Logic Flaw Leading to Remote Code Execution\n\nThis issue affects Apache OFBiz: before 24.09.06.\n\nUsers are recommended to upgra",
-        "published": "2026-05-19T10:16:24.620"
+        "description": "A command injection vulnerability exists in the /cgi-bin/tools/ajax_cmd endpoint of Panabit PAP-XM320 up to and including v7.7. The CGI component allows authenticated users to execute arbitrary shell ",
+        "published": "2026-05-19T17:16:22.080"
       },
       {
         "cve_id": "CVE-2026-8958",
@@ -303,6 +310,13 @@
         "base_score": 8.6,
         "description": "Information disclosure, sandbox escape in the Security: Process Sandboxing component. This vulnerability was fixed in Firefox 151, Firefox ESR 140.11, Thunderbird 151, and Thunderbird 140.11.",
         "published": "2026-05-19T14:16:52.170"
+      },
+      {
+        "cve_id": "CVE-2026-5804",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "An improper authentication vulnerability was discovered in the Motorola Factory Test\u00a0component\u00a0(com.motorola.motocit). The application\u00a0contained\u00a0a reference to a writable file descriptor in external s",
+        "published": "2026-05-19T16:16:22.413"
       },
       {
         "cve_id": "CVE-2026-7504",
@@ -317,20 +331,6 @@
         "base_score": 8.1,
         "description": "Mitigation bypass in the DOM: Security component. This vulnerability was fixed in Firefox 151 and Thunderbird 151.",
         "published": "2026-05-19T14:16:53.390"
-      },
-      {
-        "cve_id": "CVE-2026-47314",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Out-of-bounds write vulnerability in Samsung Open Source Escargot allows Overflow Buffers.\n\nThis issue affects Escargot: 590345cc6258317c5da850d846ce6baaf2afc2d3.",
-        "published": "2026-05-19T08:16:15.730"
-      },
-      {
-        "cve_id": "CVE-2026-23558",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "The adjustments made for XSA-379 as well as those subsequently becoming\nXSA-387 still left a race window, when a HVM or PVH guest does a grant\ntable version change from v2 to v1 in parallel with mappi",
-        "published": "2026-05-19T14:16:38.960"
       }
     ]
   },
