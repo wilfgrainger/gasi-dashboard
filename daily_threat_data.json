@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-05-20T14:37:07.852231+00:00",
+  "generated_at": "2026-05-20T18:09:42.951627+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 15,
+        "value": 22,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 10,
-        "score": 3.0,
+        "value": 5,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -32,9 +32,79 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1592,
-    "recent_30d_count": 15,
+    "total_catalog_count": 1599,
+    "recent_30d_count": 22,
     "recent": [
+      {
+        "cve_id": "CVE-2008-4250",
+        "vendor": "Microsoft",
+        "product": "Windows",
+        "name": "Microsoft Windows Buffer Overflow Vulnerability",
+        "date_added": "2026-05-20",
+        "due_date": "2026-06-03",
+        "description": "Microsoft Windows contains a buffer overflow vulnerability in the Windows Server Service that allows remote attackers to execute arbitrary code via a crafted RPC request that triggers an overflow duri",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2009-1537",
+        "vendor": "Microsoft",
+        "product": "DirectX",
+        "name": "Microsoft DirectX NULL Byte Overwrite Vulnerability",
+        "date_added": "2026-05-20",
+        "due_date": "2026-06-03",
+        "description": "Microsoft DirectX contains a NULL byte overwrite vulnerability in the QuickTime Movie Parser Filter in quartz.dll in DirectShow which could allow remote attackers to execute arbitrary code via a craft",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2009-3459",
+        "vendor": "Adobe",
+        "product": "Acrobat and Reader",
+        "name": "Adobe Acrobat and Reader Heap-Based Buffer Overflow Vulnerability",
+        "date_added": "2026-05-20",
+        "due_date": "2026-06-03",
+        "description": "Adobe Acrobat and Reader contain a heap-based buffer overflow vulnerability which could allow remote attackers to execute arbitrary code via a crafted PDF file that triggers memory corruption.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2010-0249",
+        "vendor": "Microsoft",
+        "product": "Internet Explorer",
+        "name": "Microsoft Internet Explorer Use-After-Free Vulnerability",
+        "date_added": "2026-05-20",
+        "due_date": "2026-06-03",
+        "description": "Microsoft Internet Explorer contains an use-after-free vulnerability that could allow remote attackers to execute arbitrary code by accessing a pointer associated with a deleted object. The impacted p",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2010-0806",
+        "vendor": "Microsoft",
+        "product": "Internet Explorer",
+        "name": "Microsoft Internet Explorer Use-After-Free Vulnerability",
+        "date_added": "2026-05-20",
+        "due_date": "2026-06-03",
+        "description": "Microsoft Internet Explorer contains an use-after-free vulnerability that could allow remote attackers to execute arbitrary code via vectors involving access to an invalid pointer after the deletion o",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-41091",
+        "vendor": "Microsoft",
+        "product": "Defender",
+        "name": "Microsoft Defender Link Following Vulnerability",
+        "date_added": "2026-05-20",
+        "due_date": "2026-06-03",
+        "description": "Microsoft Defender contains a link following vulnerability that allows an authorized attacker to elevate privileges locally.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-45498",
+        "vendor": "Microsoft",
+        "product": "Defender",
+        "name": "Microsoft Defender Denial of Service Vulnerability",
+        "date_added": "2026-05-20",
+        "due_date": "2026-06-03",
+        "description": "Microsoft Defender contains an unspecified vulnerability that allows for denial of service.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-42897",
         "vendor": "Microsoft",
@@ -164,33 +234,13 @@
         "due_date": "2026-05-08",
         "description": "SimpleHelp contains a missing authorization vulnerability that could allow low-privileged technicians to create API keys with excessive permissions. These API keys can be used to escalate privileges t",
         "ransomware_use": "Known"
-      },
-      {
-        "cve_id": "CVE-2026-39987",
-        "vendor": "Marimo",
-        "product": "Marimo",
-        "name": "Marimo Remote Code Execution Vulnerability",
-        "date_added": "2026-04-23",
-        "due_date": "2026-05-07",
-        "description": "Marimo contains an pre-authorization remote code execution vulnerability, allowing an unauthenticated attacked to shell access and execute arbitrary system commands.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-33825",
-        "vendor": "Microsoft",
-        "product": "Defender",
-        "name": "Microsoft Defender Insufficient Granularity of Access Control Vulnerability",
-        "date_added": "2026-04-22",
-        "due_date": "2026-05-06",
-        "description": "Microsoft Defender contains an insufficient granularity of access control vulnerability that could allow an authorized attacker to escalate privileges locally.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 196,
-    "critical_count": 10,
-    "high_count": 25,
+    "total": 193,
+    "critical_count": 5,
+    "high_count": 19,
     "cves": [
       {
         "cve_id": "CVE-2026-34234",
@@ -207,74 +257,25 @@
         "published": "2026-05-19T19:16:49.293"
       },
       {
-        "cve_id": "CVE-2026-44159",
+        "cve_id": "CVE-2026-6555",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Tyler Identity Local (TID-L) uses documented, default administrative credentials. Users are not required to change the credentials before deployment. TID-L has not been distributed since December 2020",
-        "published": "2026-05-19T15:16:31.180"
+        "description": "The ProSolution WP Client plugin for WordPress is vulnerable to Arbitrary File Upload in versions up to, and including, 2.0.0. This is due to an array validation mismatch where only the first file in ",
+        "published": "2026-05-20T02:16:38.930"
       },
       {
-        "cve_id": "CVE-2026-30117",
+        "cve_id": "CVE-2026-7284",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "scalar/astro v0.1.13 was discovered to contain an arbitrary file upload vulnerability in the the scalar_url query parameter of the Scalar Proxy endpoint. This vulnerability allows attackers to execute",
-        "published": "2026-05-19T16:16:19.980"
+        "description": "The Easy Elements for Elementor \u2013 Addons & Website Templates plugin for WordPress is vulnerable to privilege escalation via user registration in all versions up to, and including, 1.4.4. This is due t",
+        "published": "2026-05-20T02:16:39.083"
       },
       {
-        "cve_id": "CVE-2026-30118",
+        "cve_id": "CVE-2026-24207",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "scalar/astro v0.1.13 was discovered to contain a Server-Side Request Forgery (SSRF) in the scalar_url query parameter of the Scalar Proxy endpoint. This vulnerability allows unauthenticated attackers ",
-        "published": "2026-05-19T16:16:20.103"
-      },
-      {
-        "cve_id": "CVE-2026-31070",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The LalanaChami Pharmacy Management System (commit 5c3d028) allows unauthenticated remote attackers to escalate privileges by self-assigning an administrative role during registration. The /api/user/s",
-        "published": "2026-05-19T16:16:20.363"
-      },
-      {
-        "cve_id": "CVE-2026-36829",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An authentication bypass vulnerability exists in the embedded HTTP server of Panabit PAP-XM320 up to and including v7.7. The server validates session cookies using a filesystem existence check based o",
-        "published": "2026-05-19T17:16:22.210"
-      },
-      {
-        "cve_id": "CVE-2026-2587",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "A critical Remote Code Execution (RCE) vulnerability was identified in the server-side template rendering mechanism used by the Glassfish gadget handler. The application processes .xml files and evalu",
-        "published": "2026-05-19T15:16:28.577"
-      },
-      {
-        "cve_id": "CVE-2026-2586",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "An authenticated Remote Code Execution (RCE) vulnerability was identified in GlassFish's Administration Console. A user with access to the panel can send crafted requests that allow the execution of a",
-        "published": "2026-05-19T15:16:28.413"
-      },
-      {
-        "cve_id": "CVE-2026-31071",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "API endpoints in LalanaChami Pharmacy Management System (commit 5c3d028) lack authentication middleware. Unauthenticated remote attackers can exploit this to dump all user records (including bcrypt pa",
-        "published": "2026-05-19T16:16:20.490"
-      },
-      {
-        "cve_id": "CVE-2026-31069",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "BillaBear (all versions prior to Jan 2026) contains a SQL Injection vulnerability in the EventRepository. User-controlled input from metric filter names and aggregation properties is directly interpol",
-        "published": "2026-05-19T16:16:20.230"
-      },
-      {
-        "cve_id": "CVE-2026-36828",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A command injection vulnerability exists in the /cgi-bin/tools/ajax_cmd endpoint of Panabit PAP-XM320 up to and including v7.7. The CGI component allows authenticated users to execute arbitrary shell ",
-        "published": "2026-05-19T17:16:22.080"
+        "description": "NVIDIA Triton Inference Server contains a vulnerability where an attacker could cause an authentication bypass. A successful exploit of this vulnerability might lead to code execution, escalation of p",
+        "published": "2026-05-20T04:16:45.960"
       },
       {
         "cve_id": "CVE-2026-32740",
@@ -291,6 +292,13 @@
         "published": "2026-05-20T02:16:38.637"
       },
       {
+        "cve_id": "CVE-2026-7467",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Read More & Accordion plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 3.5.7. This is due to the 'RadMoreAjax::importData' function not restricting ",
+        "published": "2026-05-20T02:16:39.410"
+      },
+      {
         "cve_id": "CVE-2026-27173",
         "severity": "HIGH",
         "base_score": 8.7,
@@ -305,20 +313,6 @@
         "published": "2026-05-19T22:16:37.297"
       },
       {
-        "cve_id": "CVE-2026-5804",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "An improper authentication vulnerability was discovered in the Motorola Factory Test\u00a0component\u00a0(com.motorola.motocit). The application\u00a0contained\u00a0a reference to a writable file descriptor in external s",
-        "published": "2026-05-19T16:16:22.413"
-      },
-      {
-        "cve_id": "CVE-2026-8711",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "NGINX JavaScript has a vulnerability when the js_fetch_proxy\u00a0directive is configured with at least one client-controlled NGINX variable (for example, $http_*, $arg_*, $cookie_*) and a location invokin",
-        "published": "2026-05-19T15:16:33.017"
-      },
-      {
         "cve_id": "CVE-2026-47107",
         "severity": "HIGH",
         "base_score": 8.1,
@@ -331,6 +325,62 @@
         "base_score": 8.1,
         "description": "CtrlPanel is open-source billing software for hosting providers. Versions 1.1.1 and prior contains a broken access control vulnerability where multiple admin controllers enforce permission checks on f",
         "published": "2026-05-19T22:16:37.637"
+      },
+      {
+        "cve_id": "CVE-2026-43618",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Rsync version\u00a03.4.2 and prior contain an integer overflow vulnerability in the compressed-token decoder where a 32-bit signed counter is not checked for overflow, allowing a malicious sender to trigge",
+        "published": "2026-05-20T02:16:36.410"
+      },
+      {
+        "cve_id": "CVE-2025-61081",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "In BYD Atto3, an attacker can obtain an authentication key through Brute Force attack, which is permanently available. The authentication key enables flash to the Electronic Parking Break (EPB) and Su",
+        "published": "2026-05-19T18:16:19.767"
+      },
+      {
+        "cve_id": "CVE-2026-33633",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Kitty is a cross-platform GPU based terminal. Versions 0.46.2 and below contain a heap buffer overflow in load_image_data() that allows any process which can write to the terminal's stdin to crash kit",
+        "published": "2026-05-19T18:16:21.343"
+      },
+      {
+        "cve_id": "CVE-2026-8073",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Kirki \u2013 Freeform Page Builder, Website Builder & Customizer plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation and missing capability check in t",
+        "published": "2026-05-19T19:16:51.577"
+      },
+      {
+        "cve_id": "CVE-2026-3985",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Creative Mail \u2013 Easier WordPress & WooCommerce Email Marketing plugin for WordPress is vulnerable to SQL Injection via the 'checkout_uuid' parameter in all versions up to, and including, 1.6.9. Th",
+        "published": "2026-05-20T02:16:35.570"
+      },
+      {
+        "cve_id": "CVE-2025-33255",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "NVIDIA TRT-LLM for any platform contains a vulnerability in MPI server, where an attacker could cause an unsafe deserialization. A successful exploit of this vulnerability might lead to code execution",
+        "published": "2026-05-20T04:16:43.667"
+      },
+      {
+        "cve_id": "CVE-2026-24163",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "NVIDIA TRT-LLM for any platform contains a vulnerability in RPC testing, where an attacker could  cause an unsafe deserialization. A successful exploit of this vulnerability might lead to code executi",
+        "published": "2026-05-20T04:16:45.537"
+      },
+      {
+        "cve_id": "CVE-2026-24209",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "NVIDIA Triton Inference Server contains a vulnerability where an attacker could cause a path traversal issue. A successful exploit of this vulnerability might lead to denial of service.",
+        "published": "2026-05-20T04:16:46.463"
       }
     ]
   },
