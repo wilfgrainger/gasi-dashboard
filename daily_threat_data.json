@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T17:50:14.813420+00:00",
+  "generated_at": "2026-05-21T21:21:35.237903+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 22,
+        "value": 24,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
+        "value": 7,
         "score": 2.5,
         "max": 3
       },
@@ -32,9 +32,29 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1599,
-    "recent_30d_count": 22,
+    "total_catalog_count": 1601,
+    "recent_30d_count": 24,
     "recent": [
+      {
+        "cve_id": "CVE-2025-34291",
+        "vendor": "Langflow",
+        "product": "Langflow",
+        "name": "Langflow Origin Validation Error Vulnerability",
+        "date_added": "2026-05-21",
+        "due_date": "2026-06-04",
+        "description": "Langflow contains an origin validation error vulnerability in which an overly permissive CORS configuration combined with a refresh token cookie configured as SameSite=None allows a malicious webpage ",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-34926",
+        "vendor": "Trend Micro",
+        "product": "Apex One",
+        "name": "Trend Micro Apex One (On-Premise) Directory Traversal Vulnerability",
+        "date_added": "2026-05-21",
+        "due_date": "2026-06-04",
+        "description": "Trend Micro Apex One (on-premise) contains a directory traversal vulnerability that could allow a pre-authenticated local attacker to modify a key table on the server to inject malicious code to deplo",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2008-4250",
         "vendor": "Microsoft",
@@ -214,61 +234,20 @@
         "due_date": "2026-05-08",
         "description": "Samsung MagicINFO 9 Server contains a path traversal vulnerability that could allow an attacker to write arbitrary files as system authority.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2024-57728",
-        "vendor": "SimpleHelp ",
-        "product": "SimpleHelp",
-        "name": "SimpleHelp Path Traversal Vulnerability",
-        "date_added": "2026-04-24",
-        "due_date": "2026-05-08",
-        "description": "SimpleHelp contains a path traversal vulnerability that allows admin users to upload arbitrary files anywhere on the file system by uploading a crafted zip file (i.e. zip slip). This can be exploited ",
-        "ransomware_use": "Known"
-      },
-      {
-        "cve_id": "CVE-2024-57726",
-        "vendor": "SimpleHelp ",
-        "product": "SimpleHelp",
-        "name": "SimpleHelp Missing Authorization Vulnerability",
-        "date_added": "2026-04-24",
-        "due_date": "2026-05-08",
-        "description": "SimpleHelp contains a missing authorization vulnerability that could allow low-privileged technicians to create API keys with excessive permissions. These API keys can be used to escalate privileges t",
-        "ransomware_use": "Known"
       }
     ]
   },
   "nvd": {
-    "total": 167,
-    "critical_count": 6,
-    "high_count": 35,
+    "total": 165,
+    "critical_count": 7,
+    "high_count": 38,
     "cves": [
-      {
-        "cve_id": "CVE-2026-45444",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Unrestricted Upload of File with Dangerous Type vulnerability in WP Swings Gift Cards For WooCommerce Pro allows Using Malicious Files.\n\nThis issue affects Gift Cards For WooCommerce Pro: from n/a thr",
-        "published": "2026-05-20T20:16:40.680"
-      },
       {
         "cve_id": "CVE-2026-44050",
         "severity": "CRITICAL",
         "base_score": 9.9,
         "description": "A heap-based buffer overflow in the CNID daemon comm_rcv() function in Netatalk 2.0.0 through 4.4.2 allows a remote authenticated attacker to execute arbitrary code with escalated privileges or cause ",
         "published": "2026-05-21T08:16:20.580"
-      },
-      {
-        "cve_id": "CVE-2026-9139",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Taiko AG1000-01A SMS Alert Gateway Rev 7.3 and Rev 8 contains a hard-coded credential vulnerability in the embedded web configuration interface where authentication is implemented entirely in client-s",
-        "published": "2026-05-20T20:16:46.323"
-      },
-      {
-        "cve_id": "CVE-2026-9141",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Taiko AG1000-01A SMS Alert Gateway Rev 7.3 and Rev 8 contains an authentication bypass vulnerability in the embedded web configuration interface that allows unauthenticated attackers to access interna",
-        "published": "2026-05-20T20:16:46.480"
       },
       {
         "cve_id": "CVE-2026-6279",
@@ -278,6 +257,27 @@
         "published": "2026-05-21T05:16:23.770"
       },
       {
+        "cve_id": "CVE-2026-5118",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Divi Form Builder plugin for WordPress is vulnerable to privilege escalation in versions up to, and including, 5.1.2. This is due to the plugin accepting a user-controlled 'role' parameter from PO",
+        "published": "2026-05-21T13:16:20.013"
+      },
+      {
+        "cve_id": "CVE-2025-71210",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A vulnerability in the Trend Micro Apex One management console could allow a remote attacker to upload malicious code and execute commands on affected installations.\r\n\r\nPlease note: although this vuln",
+        "published": "2026-05-21T14:16:43.540"
+      },
+      {
+        "cve_id": "CVE-2025-71211",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A vulnerability in the Trend Micro Apex One management console could allow a remote attacker to upload malicious code and execute commands on affected installations. This vulnerability is similar in s",
+        "published": "2026-05-21T14:16:43.663"
+      },
+      {
         "cve_id": "CVE-2026-47372",
         "severity": "CRITICAL",
         "base_score": 9.1,
@@ -285,67 +285,11 @@
         "published": "2026-05-20T22:16:37.270"
       },
       {
-        "cve_id": "CVE-2026-24217",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "NVIDIA BioNeMo Core for Linux contains a vulnerability where a user could cause a path traversal by loading a malicious file. A successful exploit of this vulnerability might lead to code execution, d",
-        "published": "2026-05-20T20:16:36.487"
-      },
-      {
-        "cve_id": "CVE-2026-9111",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in WebRTC in Google Chrome on Linux prior to 148.0.7778.179 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: Critical)",
-        "published": "2026-05-20T20:16:41.870"
-      },
-      {
-        "cve_id": "CVE-2026-9112",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in GPU in Google Chrome on Windows prior to 148.0.7778.179 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Hig",
-        "published": "2026-05-20T20:16:42.043"
-      },
-      {
-        "cve_id": "CVE-2026-9114",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in QUIC in Google Chrome on prior to 148.0.7778.179 allowed a remote attacker to execute arbitrary code inside a sandbox via malicious network traffic. (Chromium security severity: High",
-        "published": "2026-05-20T20:16:42.427"
-      },
-      {
-        "cve_id": "CVE-2026-9118",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in XR in Google Chrome on Windows prior to 148.0.7778.179 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-05-20T20:16:43.200"
-      },
-      {
-        "cve_id": "CVE-2026-9119",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Heap buffer overflow in WebRTC in Google Chrome on prior to 148.0.7778.179 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Hi",
-        "published": "2026-05-20T20:16:43.387"
-      },
-      {
-        "cve_id": "CVE-2026-9120",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in WebRTC in Google Chrome prior to 148.0.7778.179 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-05-20T20:16:43.600"
-      },
-      {
-        "cve_id": "CVE-2026-9121",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Out of bounds read in GPU in Google Chrome on prior to 148.0.7778.179 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Medium)",
-        "published": "2026-05-20T20:16:44.807"
-      },
-      {
-        "cve_id": "CVE-2026-9126",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in DOM in Google Chrome on prior to 148.0.7778.179 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Medium)",
-        "published": "2026-05-20T20:16:45.540"
+        "cve_id": "CVE-2026-5433",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Honeywell Control\nNetwork Module (CNM)\u00a0contains command injection vulnerability\nin the web interface. An attacker could exploit this vulnerability via command\ndelimiters, potentially resulting in Remo",
+        "published": "2026-05-21T09:16:30.270"
       },
       {
         "cve_id": "CVE-2026-44047",
@@ -362,6 +306,13 @@
         "published": "2026-05-21T08:16:20.360"
       },
       {
+        "cve_id": "CVE-2026-39461",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "libcasper(3) communicates with helper processes via UNIX domain sockets, and uses the select(2) system call to wait for data to become available.  However, it does not verify that its socket descripto",
+        "published": "2026-05-21T10:16:25.320"
+      },
+      {
         "cve_id": "CVE-2026-40165",
         "severity": "HIGH",
         "base_score": 8.7,
@@ -369,18 +320,67 @@
         "published": "2026-05-21T00:16:28.290"
       },
       {
-        "cve_id": "CVE-2026-39310",
+        "cve_id": "CVE-2026-9157",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Trilium Notes is a cross-platform, hierarchical note taking application focused on building large personal knowledge bases. In versions 0.102.1 and prior, the Clipper API in Trilium Desktop (v0.101.3)",
-        "published": "2026-05-20T20:16:39.213"
+        "base_score": 8.4,
+        "description": "Improper input validation, Unrestricted upload of file with dangerous type vulnerability in Gmission Web Fax allows Remote Code Inclusion.\n\nThis issue affects Web Fax: from 3.0 before 3.1.",
+        "published": "2026-05-21T09:16:30.930"
       },
       {
-        "cve_id": "CVE-2026-24188",
+        "cve_id": "CVE-2026-45253",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "NVIDIA TensorRT contains a vulnerability where an attacker could cause an out-of-bounds write. A successful exploit of this vulnerability might lead to data tampering.",
-        "published": "2026-05-20T20:16:36.203"
+        "base_score": 8.4,
+        "description": "ptrace(PT_SC_REMOTE) failed to properly validate parameters for the syscall(2) and __syscall(2) meta-system calls.  As a result, a user with the ability to debug a process may trigger arbitrary code e",
+        "published": "2026-05-21T10:16:26.270"
+      },
+      {
+        "cve_id": "CVE-2026-2740",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "Zohocorp ManageEngine ADSelfService Plus version before 6525, DataSecurity Plus before 6264 and RecoveryManager Plus before 6313 are vulnerable to Authenticated Remote code execution in the agent mach",
+        "published": "2026-05-21T14:16:44.850"
+      },
+      {
+        "cve_id": "CVE-2026-44051",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "An improper link resolution vulnerability in Netatalk 3.0.2 through 4.4.2 allows a remote authenticated attacker to read arbitrary files or overwrite arbitrary files via attacker-controlled symlink cr",
+        "published": "2026-05-21T08:16:20.690"
+      },
+      {
+        "cve_id": "CVE-2026-4858",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "Mattermost versions 11.6.x <= 11.6.0, 11.5.x <= 11.5.3, 11.4.x <= 11.4.4, 10.11.x <= 10.11.14 fail to check integration URL for path traversal which allows an malicious authenticated user  to call an ",
+        "published": "2026-05-21T09:16:30.143"
+      },
+      {
+        "cve_id": "CVE-2026-45250",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "The setcred(2) system call is only available to privileged users.  However, before the privilege level of the caller is checked, the user-supplied list of supplementary groups is copied into a fixed-s",
+        "published": "2026-05-21T09:16:30.010"
+      },
+      {
+        "cve_id": "CVE-2026-28764",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "MediaArea MediaInfoLib LXF element parsing heap-based buffer overflow vulnerability",
+        "published": "2026-05-21T10:16:25.090"
+      },
+      {
+        "cve_id": "CVE-2026-45251",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "A file descriptor can be closed while a thread is blocked in a poll(2) or select(2) call waiting for that descriptor.  Because the blocked thread does not hold a reference to the underlying object, th",
+        "published": "2026-05-21T10:16:26.043"
+      },
+      {
+        "cve_id": "CVE-2025-71212",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "A link following vulnerability in the Trend Micro Apex One scan engine could allow a local attacker to escalate privileges on affected installations.\r\n\r\nPlease note: an attacker must first obtain the ",
+        "published": "2026-05-21T14:16:43.777"
       }
     ]
   },
