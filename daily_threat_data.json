@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T02:28:32.216476+00:00",
+  "generated_at": "2026-05-21T07:41:40.354379+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
+        "value": 5,
         "score": 2.5,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 173,
-    "critical_count": 7,
-    "high_count": 40,
+    "total": 149,
+    "critical_count": 5,
+    "high_count": 33,
     "cves": [
       {
         "cve_id": "CVE-2026-42960",
@@ -255,20 +255,6 @@
         "base_score": 10.0,
         "description": "A vulnerability in the&nbsp;access validation of internal REST APIs of Cisco Secure Workload could allow an unauthenticated, remote attacker to access site resources with the privileges of the&nbsp;Si",
         "published": "2026-05-20T17:16:20.400"
-      },
-      {
-        "cve_id": "CVE-2026-24207",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "NVIDIA Triton Inference Server contains a vulnerability where an attacker could cause an authentication bypass. A successful exploit of this vulnerability might lead to code execution, escalation of p",
-        "published": "2026-05-20T04:16:45.960"
-      },
-      {
-        "cve_id": "CVE-2026-7637",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Boost plugin for WordPress is vulnerable to PHP Object Injection in versions up to, and including, 2.0.3 via deserialization of untrusted input in the STYXKEY-BOOST_USER_LOCATION cookie. This make",
-        "published": "2026-05-20T04:16:56.747"
       },
       {
         "cve_id": "CVE-2026-33278",
@@ -290,13 +276,6 @@
         "base_score": 9.0,
         "description": "Improper Control of Generation of Code ('Code Injection') vulnerability in Mesalvo Meona Client Launcher Component, Mesalvo Meona Server Component enables code execution on other users' systems.\u00a0This ",
         "published": "2026-05-20T11:16:26.057"
-      },
-      {
-        "cve_id": "CVE-2026-7522",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Advanced Database Cleaner \u2013 Premium plugin for WordPress is vulnerable to Local File Inclusion in versions up to, and including, 4.1.0 via the 'template' parameter. This makes it possible for auth",
-        "published": "2026-05-20T05:16:22.327"
       },
       {
         "cve_id": "CVE-2026-5200",
@@ -327,25 +306,25 @@
         "published": "2026-05-20T17:16:24.357"
       },
       {
-        "cve_id": "CVE-2026-9057",
+        "cve_id": "CVE-2026-24217",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "NVIDIA BioNeMo Core for Linux contains a vulnerability where a user could cause a path traversal by loading a malicious file. A successful exploit of this vulnerability might lead to code execution, d",
+        "published": "2026-05-20T20:16:36.487"
+      },
+      {
+        "cve_id": "CVE-2026-39310",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Trilium Notes is a cross-platform, hierarchical note taking application focused on building large personal knowledge bases. In versions 0.102.1 and prior, the Clipper API in Trilium Desktop (v0.101.3)",
+        "published": "2026-05-20T20:16:39.213"
+      },
+      {
+        "cve_id": "CVE-2026-24188",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "A broken access control issue has been identified in the Talend Administration Center, that allows a user with \u201cView\u201d permission to modify the Talend Studio update URL. This issue was resolved in a pa",
-        "published": "2026-05-20T05:16:23.467"
-      },
-      {
-        "cve_id": "CVE-2026-47783",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "In memcached before 1.6.42, username data for SASL password database authentication has a timing side channel because a loop exits as soon as a valid username is found by sasl_server_userdb_checkpass.",
-        "published": "2026-05-20T07:16:15.533"
-      },
-      {
-        "cve_id": "CVE-2026-47784",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "In memcached before 1.6.42, password data for SASL password database authentication has a timing side channel because memcmp is used by sasl_server_userdb_checkpass.",
-        "published": "2026-05-20T07:16:15.733"
+        "description": "NVIDIA TensorRT contains a vulnerability where an attacker could cause an out-of-bounds write. A successful exploit of this vulnerability might lead to data tampering.",
+        "published": "2026-05-20T20:16:36.203"
       },
       {
         "cve_id": "CVE-2026-45584",
@@ -355,18 +334,11 @@
         "published": "2026-05-20T13:16:37.333"
       },
       {
-        "cve_id": "CVE-2026-24213",
+        "cve_id": "CVE-2026-24218",
         "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "NVIDIA Triton Inference Server contains a vulnerability in the DALI backend where an attacker could cause an out-of-bounds read. A successful exploit of this vulnerability might lead to code execution",
-        "published": "2026-05-20T04:16:46.913"
-      },
-      {
-        "cve_id": "CVE-2026-24214",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "NVIDIA Triton Inference Server contains a vulnerability in the DALI backend where an attacker could cause an integer overflow. A successful exploit of this vulnerability might lead to code execution, ",
-        "published": "2026-05-20T04:16:47.173"
+        "base_score": 8.1,
+        "description": "NVIDIA DGX OS contains a vulnerability in the factory provisioning process, where  the cloning of a base image causes identical SSH host keys to be deployed across multiple systems. The sharing of cry",
+        "published": "2026-05-20T20:16:36.620"
       },
       {
         "cve_id": "CVE-2025-11954",
@@ -381,6 +353,34 @@
         "base_score": 7.8,
         "description": "In `src/havegecmd.c`, the `socket_handler` function performs a credential check on the abstract UNIX socket (`\\0/sys/entropy/haveged`). However, while it detects if the connecting user is not root (`c",
         "published": "2026-05-20T10:16:26.990"
+      },
+      {
+        "cve_id": "CVE-2026-44933",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "`PluginScript` attempts to `chroot` the plugin to the `repoManagerRoot`, this root is frequently `/` (the system root) in standard configurations or when using `--root`. If the chroot target is `/`, i",
+        "published": "2026-05-20T10:16:28.453"
+      },
+      {
+        "cve_id": "CVE-2026-0856",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Improper Access Control vulnerability in Mesalvo Meona Client Launcher Component, Mesalvo Meona Server Component enables a normal user gaining access to the admin panel.\u00a0This issue affects Meona Clien",
+        "published": "2026-05-20T11:16:25.780"
+      },
+      {
+        "cve_id": "CVE-2026-41091",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Improper link resolution before file access ('link following') in Microsoft Defender allows an authorized attacker to elevate privileges locally.",
+        "published": "2026-05-20T13:16:29.173"
+      },
+      {
+        "cve_id": "CVE-2026-42834",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Improper link resolution before file access ('link following') in Azure Portal Windows Admin Center allows an authorized attacker to elevate privileges locally.",
+        "published": "2026-05-20T13:16:34.500"
       }
     ]
   },
