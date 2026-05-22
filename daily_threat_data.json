@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-22T07:36:12.734173+00:00",
+  "generated_at": "2026-05-22T10:42:03.192537+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
+        "value": 6,
         "score": 2.5,
         "max": 3
       },
@@ -238,17 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 213,
-    "critical_count": 7,
-    "high_count": 39,
+    "total": 171,
+    "critical_count": 6,
+    "high_count": 33,
     "cves": [
-      {
-        "cve_id": "CVE-2026-44050",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A heap-based buffer overflow in the CNID daemon comm_rcv() function in Netatalk 2.0.0 through 4.4.2 allows a remote authenticated attacker to execute arbitrary code with escalated privileges or cause ",
-        "published": "2026-05-21T08:16:20.580"
-      },
       {
         "cve_id": "CVE-2026-5118",
         "severity": "CRITICAL",
@@ -278,39 +271,18 @@
         "published": "2026-05-21T17:16:21.857"
       },
       {
+        "cve_id": "CVE-2026-6960",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The BookingPress Pro plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'bookingpress_validate_submitted_booking_form_func' function in all version",
+        "published": "2026-05-21T22:16:48.643"
+      },
+      {
         "cve_id": "CVE-2026-39531",
         "severity": "CRITICAL",
         "base_score": 9.3,
         "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Wp Directory Kit WP Directory Kit allows Blind SQL Injection.\n\nThis issue affects WP Directory Kit",
         "published": "2026-05-21T16:16:23.030"
-      },
-      {
-        "cve_id": "CVE-2026-5433",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Honeywell Control\nNetwork Module (CNM)\u00a0contains command injection vulnerability\nin the web interface. An attacker could exploit this vulnerability via command\ndelimiters, potentially resulting in Remo",
-        "published": "2026-05-21T09:16:30.270"
-      },
-      {
-        "cve_id": "CVE-2026-44047",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "An SQL injection vulnerability in the MySQL CNID backend in Netatalk 3.1.0 through 4.4.2 allows a remote authenticated attacker to obtain unauthorized access to data, modify data, or cause a denial of",
-        "published": "2026-05-21T08:16:20.173"
-      },
-      {
-        "cve_id": "CVE-2026-44048",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A stack-based buffer overflow via UCS-2 type confusion in convert_charset() in Netatalk 2.0.4 through 4.4.2 allows a remote authenticated attacker to execute arbitrary code or cause a denial of servic",
-        "published": "2026-05-21T08:16:20.360"
-      },
-      {
-        "cve_id": "CVE-2026-39461",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "libcasper(3) communicates with helper processes via UNIX domain sockets, and uses the select(2) system call to wait for data to become available.  However, it does not verify that its socket descripto",
-        "published": "2026-05-21T10:16:25.320"
       },
       {
         "cve_id": "CVE-2026-9089",
@@ -320,18 +292,25 @@
         "published": "2026-05-21T16:16:23.570"
       },
       {
-        "cve_id": "CVE-2026-9157",
+        "cve_id": "CVE-2026-47114",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Improper input validation, Unrestricted upload of file with dangerous type vulnerability in Gmission Web Fax allows Remote Code Inclusion.\n\nThis issue affects Web Fax: from 3.0 before 3.1.",
-        "published": "2026-05-21T09:16:30.930"
+        "base_score": 8.8,
+        "description": "IINA before 1.4.3 contains a user-assisted command execution vulnerability that allows remote attackers to execute arbitrary commands by supplying malicious mpv_-prefixed query parameters through the ",
+        "published": "2026-05-21T20:16:14.340"
       },
       {
-        "cve_id": "CVE-2026-45253",
+        "cve_id": "CVE-2026-47101",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "ptrace(PT_SC_REMOTE) failed to properly validate parameters for the syscall(2) and __syscall(2) meta-system calls.  As a result, a user with the ability to debug a process may trigger arbitrary code e",
-        "published": "2026-05-21T10:16:26.270"
+        "base_score": 8.8,
+        "description": "LiteLLM prior to 1.83.14 allows an authenticated internal_user to create API keys with access to routes that their role does not permit. When generating a key, the allowed_routes field is stored witho",
+        "published": "2026-05-21T21:16:32.413"
+      },
+      {
+        "cve_id": "CVE-2026-47102",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "LiteLLM prior to 1.83.10 allows a user to modify their own user_role via the /user/update endpoint. While the endpoint correctly restricts users to updating only their own account, it does not restric",
+        "published": "2026-05-21T21:16:32.557"
       },
       {
         "cve_id": "CVE-2026-2740",
@@ -341,39 +320,25 @@
         "published": "2026-05-21T14:16:44.850"
       },
       {
-        "cve_id": "CVE-2026-44051",
+        "cve_id": "CVE-2026-48235",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Open ISES Tickets before 3.44.2 contains a SQL injection vulnerability in incs/remotes.inc.php where latitude, longitude, callsign, mph, altitude, and timestamp values parsed from external GPS trackin",
+        "published": "2026-05-21T18:16:20.310"
+      },
+      {
+        "cve_id": "CVE-2026-48241",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "An improper link resolution vulnerability in Netatalk 3.0.2 through 4.4.2 allows a remote authenticated attacker to read arbitrary files or overwrite arbitrary files via attacker-controlled symlink cr",
-        "published": "2026-05-21T08:16:20.690"
+        "description": "Open ISES Tickets before 3.44.2 contains hardcoded MySQL database credentials in loader.php (a public-facing database utility) that are committed to the source repository. Any actor with access to the",
+        "published": "2026-05-21T18:16:21.070"
       },
       {
-        "cve_id": "CVE-2026-4858",
+        "cve_id": "CVE-2026-48242",
         "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "Mattermost versions 11.6.x <= 11.6.0, 11.5.x <= 11.5.3, 11.4.x <= 11.4.4, 10.11.x <= 10.11.14 fail to check integration URL for path traversal which allows an malicious authenticated user  to call an ",
-        "published": "2026-05-21T09:16:30.143"
-      },
-      {
-        "cve_id": "CVE-2026-45250",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "The setcred(2) system call is only available to privileged users.  However, before the privilege level of the caller is checked, the user-supplied list of supplementary groups is copied into a fixed-s",
-        "published": "2026-05-21T09:16:30.010"
-      },
-      {
-        "cve_id": "CVE-2026-28764",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "MediaArea MediaInfoLib LXF element parsing heap-based buffer overflow vulnerability",
-        "published": "2026-05-21T10:16:25.090"
-      },
-      {
-        "cve_id": "CVE-2026-45251",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A file descriptor can be closed while a thread is blocked in a poll(2) or select(2) call waiting for that descriptor.  Because the blocked thread does not hold a reference to the underlying object, th",
-        "published": "2026-05-21T10:16:26.043"
+        "base_score": 8.1,
+        "description": "Open ISES Tickets before 3.44.2 contains hardcoded MySQL database connection credentials (host, username, password, database name) in import_mdb.php. The credentials are embedded in source code commit",
+        "published": "2026-05-21T18:16:21.220"
       },
       {
         "cve_id": "CVE-2025-71212",
@@ -381,6 +346,41 @@
         "base_score": 7.8,
         "description": "A link following vulnerability in the Trend Micro Apex One scan engine could allow a local attacker to escalate privileges on affected installations.\r\n\r\nPlease note: an attacker must first obtain the ",
         "published": "2026-05-21T14:16:43.777"
+      },
+      {
+        "cve_id": "CVE-2025-71213",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "An origin validation error vulnerability in Trend Micro Apex One could allow a local attacker to escalate privileges on affected installations.\r\n\r\nPlease note: an attacker must first obtain the abilit",
+        "published": "2026-05-21T14:16:43.897"
+      },
+      {
+        "cve_id": "CVE-2025-71214",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "An origin validation error vulnerability in the Trend Micro Apex One (mac) agent iCore service could allow a local attacker to escalate privileges on affected installations.\r\n\r\nPlease note: an attacke",
+        "published": "2026-05-21T14:16:44.017"
+      },
+      {
+        "cve_id": "CVE-2025-71216",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "A time-of-check time-of-use vulnerability in the Trend Micro Apex One (mac) agent cache mechanism could allow a local attacker to escalate privileges on affected installations.\r\n\r\nPlease note: an atta",
+        "published": "2026-05-21T14:16:44.240"
+      },
+      {
+        "cve_id": "CVE-2025-71217",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "An origin validation error vulnerability in the Trend Micro Apex One (mac) agent self-protection mechanism could allow a local attacker to escalate privileges on affected installations.\r\n\r\nPlease note",
+        "published": "2026-05-21T14:16:44.350"
+      },
+      {
+        "cve_id": "CVE-2026-34927",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "An origin validation vulnerability in the Apex One/SEP agent could allow a local attacker to escalate privileges on affected installations.\n\nPlease note: an attacker must first obtain the ability to e",
+        "published": "2026-05-21T14:16:45.333"
       }
     ]
   },
