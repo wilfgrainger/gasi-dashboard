@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-21T21:21:35.237903+00:00",
+  "generated_at": "2026-05-22T02:30:40.354812+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 24,
+        "value": 23,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
+        "value": 8,
         "score": 2.5,
         "max": 3
       },
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1601,
-    "recent_30d_count": 24,
+    "recent_30d_count": 23,
     "recent": [
       {
         "cve_id": "CVE-2025-34291",
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 165,
-    "critical_count": 7,
-    "high_count": 38,
+    "total": 192,
+    "critical_count": 8,
+    "high_count": 39,
     "cves": [
       {
         "cve_id": "CVE-2026-44050",
@@ -278,11 +278,18 @@
         "published": "2026-05-21T14:16:43.663"
       },
       {
-        "cve_id": "CVE-2026-47372",
+        "cve_id": "CVE-2026-48207",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Crypt::SaltedHash versions through 0.09 for Perl generate insecure random values for salts.\n\nThese versions use the built-in rand function, which is predictable and unsuitable for cryptography.",
-        "published": "2026-05-20T22:16:37.270"
+        "base_score": 9.8,
+        "description": "Deserialization of untrusted data in Apache Fory PyFory. PyFory's ReduceSerializer could bypass documented DeserializationPolicy validation hooks during reduce-state restoration and global-name resolu",
+        "published": "2026-05-21T17:16:21.857"
+      },
+      {
+        "cve_id": "CVE-2026-39531",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Wp Directory Kit WP Directory Kit allows Blind SQL Injection.\n\nThis issue affects WP Directory Kit",
+        "published": "2026-05-21T16:16:23.030"
       },
       {
         "cve_id": "CVE-2026-5433",
@@ -313,11 +320,11 @@
         "published": "2026-05-21T10:16:25.320"
       },
       {
-        "cve_id": "CVE-2026-40165",
+        "cve_id": "CVE-2026-9089",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "authentik is an open-source identity provider. Versions 2025.12.4 and prior, and versions 2026.2.0-rc1 through 2026.2.2 were vulnerable to Authentication Bypass through SAML NameID XML Comment Injecti",
-        "published": "2026-05-21T00:16:28.290"
+        "base_score": 8.8,
+        "description": "The ConnectWise Automate\u2122 Agent does not fully verify the authenticity of components obtained during plugin loading and self-update operations. This issue is addressed in Automate 2026.5.",
+        "published": "2026-05-21T16:16:23.570"
       },
       {
         "cve_id": "CVE-2026-9157",
@@ -374,13 +381,6 @@
         "base_score": 7.8,
         "description": "A file descriptor can be closed while a thread is blocked in a poll(2) or select(2) call waiting for that descriptor.  Because the blocked thread does not hold a reference to the underlying object, th",
         "published": "2026-05-21T10:16:26.043"
-      },
-      {
-        "cve_id": "CVE-2025-71212",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A link following vulnerability in the Trend Micro Apex One scan engine could allow a local attacker to escalate privileges on affected installations.\r\n\r\nPlease note: an attacker must first obtain the ",
-        "published": "2026-05-21T14:16:43.777"
       }
     ]
   },
