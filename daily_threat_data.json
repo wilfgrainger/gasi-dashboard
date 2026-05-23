@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-05-22T21:03:23.918467+00:00",
+  "generated_at": "2026-05-23T02:07:38.078627+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 24,
+        "value": 23,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
-        "score": 2.5,
+        "value": 4,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1602,
-    "recent_30d_count": 24,
+    "recent_30d_count": 23,
     "recent": [
       {
         "cve_id": "CVE-2026-9082",
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 178,
-    "critical_count": 5,
-    "high_count": 5,
+    "total": 152,
+    "critical_count": 4,
+    "high_count": 3,
     "cves": [
       {
         "cve_id": "CVE-2026-34908",
@@ -264,32 +264,11 @@
         "published": "2026-05-22T02:16:34.527"
       },
       {
-        "cve_id": "CVE-2026-6960",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The BookingPress Pro plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'bookingpress_validate_submitted_booking_form_func' function in all version",
-        "published": "2026-05-21T22:16:48.643"
-      },
-      {
         "cve_id": "CVE-2026-33000",
         "severity": "CRITICAL",
         "base_score": 9.1,
         "description": "A malicious actor with access to the network and high privileges could exploit an Improper Input Validation vulnerability found in UniFi OS devices to execute a Command Injection.",
         "published": "2026-05-22T02:16:33.933"
-      },
-      {
-        "cve_id": "CVE-2026-47101",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "LiteLLM prior to 1.83.14 allows an authenticated internal_user to create API keys with access to routes that their role does not permit. When generating a key, the allowed_routes field is stored witho",
-        "published": "2026-05-21T21:16:32.413"
-      },
-      {
-        "cve_id": "CVE-2026-47102",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "LiteLLM prior to 1.83.10 allows a user to modify their own user_role via the /user/update endpoint. While the endpoint correctly restricts users to updating only their own account, it does not restric",
-        "published": "2026-05-21T21:16:32.557"
       },
       {
         "cve_id": "CVE-2026-9018",
@@ -348,13 +327,6 @@
         "published": "2026-05-22T05:16:26.350"
       },
       {
-        "cve_id": "CVE-2026-22678",
-        "severity": "MEDIUM",
-        "base_score": 5.4,
-        "description": "Webmin before 2.641 contains a stored cross-site scripting vulnerability in the email template description field of the System and Server Status module that allows low-privileged authenticated attacke",
-        "published": "2026-05-21T22:16:46.970"
-      },
-      {
         "cve_id": "CVE-2026-2518",
         "severity": "MEDIUM",
         "base_score": 4.3,
@@ -376,11 +348,39 @@
         "published": "2026-05-22T05:16:27.623"
       },
       {
-        "cve_id": "CVE-2026-6826",
+        "cve_id": "CVE-2026-9264",
         "severity": "UNKNOWN",
         "base_score": null,
-        "description": "Concrete CMS 9.5.0 and below\u00a0 is vulnerable to\u00a0unauthenticated file usage disclosure via missing permission check in the usage controller.\u00a0\u00a0Any unauthenticated visitor can request /ccm/system/dialogs/",
-        "published": "2026-05-21T21:16:32.697"
+        "description": "A cross-site scripting (XSS) vulnerability in SketchUp 2026's Dynamic Components feature allows remote code execution and local file exfiltration through maliciously crafted SKP files. The vulnerabili",
+        "published": "2026-05-22T02:16:35.073"
+      },
+      {
+        "cve_id": "CVE-2026-39827",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "An authenticated SSH client that repeatedly opened channels which were rejected by the server caused unbounded memory growth, eventually crashing the server process and affecting all connected users. ",
+        "published": "2026-05-22T04:16:21.497"
+      },
+      {
+        "cve_id": "CVE-2026-39828",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "When an SSH server authentication callback returned PartialSuccessError with non-nil Permissions, those permissions were silently discarded, potentially dropping certificate restrictions such as force",
+        "published": "2026-05-22T04:16:22.190"
+      },
+      {
+        "cve_id": "CVE-2026-39829",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "The RSA and DSA public key parsers did not enforce size limits on key parameters. A crafted public key with an excessively large modulus or DSA parameter could cause several minutes of CPU consumption",
+        "published": "2026-05-22T04:16:22.310"
+      },
+      {
+        "cve_id": "CVE-2026-39830",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "A malicious SSH peer could send unsolicited global request responses to fill an internal buffer, blocking the connection's read loop. The blocked goroutine could not be released by calling Close(), re",
+        "published": "2026-05-22T04:16:22.440"
       }
     ]
   },
