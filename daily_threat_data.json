@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-23T02:07:38.078627+00:00",
+  "generated_at": "2026-05-23T06:28:18.354993+00:00",
   "threat_score": {
-    "score": 6.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.0,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 0,
+        "score": 1.0,
         "max": 3
       },
       {
@@ -238,151 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 152,
-    "critical_count": 4,
-    "high_count": 3,
-    "cves": [
-      {
-        "cve_id": "CVE-2026-34908",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "A malicious actor with access to the network could exploit an Improper Access Control vulnerability found in UniFi OS devices to make unauthorized changes to the system.",
-        "published": "2026-05-22T02:16:34.240"
-      },
-      {
-        "cve_id": "CVE-2026-34909",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "A malicious actor with access to the network could exploit a Path Traversal vulnerability found in UniFi OS devices to access files on the underlying system that could be manipulated to access an unde",
-        "published": "2026-05-22T02:16:34.390"
-      },
-      {
-        "cve_id": "CVE-2026-34910",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "A malicious actor with access to the network could exploit an Improper Input Validation vulnerability found in UniFi OS devices to execute a Command Injection.",
-        "published": "2026-05-22T02:16:34.527"
-      },
-      {
-        "cve_id": "CVE-2026-33000",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A malicious actor with access to the network and high privileges could exploit an Improper Input Validation vulnerability found in UniFi OS devices to execute a Command Injection.",
-        "published": "2026-05-22T02:16:33.933"
-      },
-      {
-        "cve_id": "CVE-2026-9018",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Easy Elements for Elementor \u2013 Addons & Website Templates plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 1.4.5 via the `easyel_handle_register()` f",
-        "published": "2026-05-22T05:16:28.067"
-      },
-      {
-        "cve_id": "CVE-2026-34911",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "A malicious actor with access to the network and low privileges could exploit a Path Traversal vulnerability found in UniFi OS devices to access files on the underlying system that could be manipulate",
-        "published": "2026-05-22T02:16:34.667"
-      },
-      {
-        "cve_id": "CVE-2026-4834",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The WP ERP Pro plugin for WordPress is vulnerable to SQL Injection via the 'search_key' parameter in all versions up to, and including, 1.5.1. This is due to insufficient escaping on the user supplied",
-        "published": "2026-05-22T04:16:26.647"
-      },
-      {
-        "cve_id": "CVE-2026-7509",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The KIA Subtitle plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's `the-subtitle` shortcode `before` and `after` attributes in all versions up to, and including, 4.0.1",
-        "published": "2026-05-22T05:16:27.747"
-      },
-      {
-        "cve_id": "CVE-2026-9104",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The Draft List plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Draft Post Title in all versions up to, and including, 2.6.3 due to insufficient input sanitization and output esca",
-        "published": "2026-05-22T05:16:28.290"
-      },
-      {
-        "cve_id": "CVE-2026-3481",
-        "severity": "MEDIUM",
-        "base_score": 6.1,
-        "description": "The WP Blockade plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'shortcode' parameter in all versions up to and including 0.9.14. This is due to insufficient input sanitiz",
-        "published": "2026-05-22T05:16:25.640"
-      },
-      {
-        "cve_id": "CVE-2026-6864",
-        "severity": "MEDIUM",
-        "base_score": 6.1,
-        "description": "The CBX 5 Star Rating & Review plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'page' parameter in all versions up to, and including, 1.0.7 due to insufficient input sanit",
-        "published": "2026-05-22T05:16:27.500"
-      },
-      {
-        "cve_id": "CVE-2026-44409",
-        "severity": "MEDIUM",
-        "base_score": 5.7,
-        "description": "There is an an information disclosure vulnerability in ZTE MU5250. Due to improper configuration of the access control mechanism, attackers can obtain information without authorization, causing the ri",
-        "published": "2026-05-22T05:16:26.350"
-      },
-      {
-        "cve_id": "CVE-2026-2518",
-        "severity": "MEDIUM",
-        "base_score": 4.3,
-        "description": "The FastX theme for WordPress is vulnerable to unauthorized limited plugin installation and activation due to missing capability checks on the 'ultp_install_callback' and 'ultp_activate_callback' func",
-        "published": "2026-05-22T05:16:24.660"
-      },
-      {
-        "cve_id": "CVE-2026-4070",
-        "severity": "MEDIUM",
-        "base_score": 4.3,
-        "description": "The Alfie \u2013 Feed Plugin plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.2.1. This is due to missing nonce validation on the alfie_manage() func",
-        "published": "2026-05-22T05:16:27.233"
-      },
-      {
-        "cve_id": "CVE-2026-7249",
-        "severity": "MEDIUM",
-        "base_score": 4.3,
-        "description": "The Location Weather plugin for WordPress is vulnerable to unauthorized modification of data due to missing capability checks on the `splw_update_block_options()` and `lwp_clean_weather_transients()` ",
-        "published": "2026-05-22T05:16:27.623"
-      },
-      {
-        "cve_id": "CVE-2026-9264",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "A cross-site scripting (XSS) vulnerability in SketchUp 2026's Dynamic Components feature allows remote code execution and local file exfiltration through maliciously crafted SKP files. The vulnerabili",
-        "published": "2026-05-22T02:16:35.073"
-      },
-      {
-        "cve_id": "CVE-2026-39827",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "An authenticated SSH client that repeatedly opened channels which were rejected by the server caused unbounded memory growth, eventually crashing the server process and affecting all connected users. ",
-        "published": "2026-05-22T04:16:21.497"
-      },
-      {
-        "cve_id": "CVE-2026-39828",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "When an SSH server authentication callback returned PartialSuccessError with non-nil Permissions, those permissions were silently discarded, potentially dropping certificate restrictions such as force",
-        "published": "2026-05-22T04:16:22.190"
-      },
-      {
-        "cve_id": "CVE-2026-39829",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "The RSA and DSA public key parsers did not enforce size limits on key parameters. A crafted public key with an excessively large modulus or DSA parameter could cause several minutes of CPU consumption",
-        "published": "2026-05-22T04:16:22.310"
-      },
-      {
-        "cve_id": "CVE-2026-39830",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "A malicious SSH peer could send unsolicited global request responses to fill an internal buffer, blocking the connection's read loop. The blocked goroutine could not be released by calling Close(), re",
-        "published": "2026-05-22T04:16:22.440"
-      }
-    ]
+    "total": 126,
+    "critical_count": 0,
+    "high_count": 0,
+    "cves": []
   },
   "top_ips": {
     "ips": [],
