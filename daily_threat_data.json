@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-26T18:17:02.300137+00:00",
+  "generated_at": "2026-05-26T21:28:23.728848+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
-        "score": 2.0,
+        "value": 5,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,10 +238,31 @@
     ]
   },
   "nvd": {
-    "total": 235,
-    "critical_count": 2,
-    "high_count": 29,
+    "total": 277,
+    "critical_count": 5,
+    "high_count": 37,
     "cves": [
+      {
+        "cve_id": "CVE-2026-7374",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A flaw was found in KubeVirt's virt-handler component. This vulnerability allows an authenticated OpenShift user with edit permissions in a single namespace to exploit improper symlink validation when",
+        "published": "2026-05-26T14:16:40.717"
+      },
+      {
+        "cve_id": "CVE-2026-9543",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A vulnerability has been found in Totolink N300RH 6.1c.1353_B20190305. Affected is the function setPasswordCfg of the file /cgi-bin/cstecgi.cgi of the component Web Management Interface. Such manipula",
+        "published": "2026-05-26T14:16:46.333"
+      },
+      {
+        "cve_id": "CVE-2026-45247",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Mirasvit Full Page Cache Warmer for Magento 2 before version 1.11.12 contains a PHP object injection vulnerability that allows unauthenticated attackers to achieve remote code execution by supplying a",
+        "published": "2026-05-26T15:16:39.263"
+      },
       {
         "cve_id": "CVE-2026-42773",
         "severity": "CRITICAL",
@@ -257,32 +278,25 @@
         "published": "2026-05-25T23:16:33.073"
       },
       {
-        "cve_id": "CVE-2026-9480",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was detected in Edimax EW-7438RPn 1.31. The impacted element is the function formrefresh of the file /goform/formrefresh. The manipulation of the argument submit-url results in stack-b",
-        "published": "2026-05-25T19:16:36.303"
-      },
-      {
-        "cve_id": "CVE-2026-9481",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw has been found in Edimax EW-7438RPn 1.31. This affects the function formStats of the file /goform/formStats. This manipulation of the argument submit-url causes stack-based buffer overflow. The",
-        "published": "2026-05-25T19:16:37.027"
-      },
-      {
-        "cve_id": "CVE-2026-9482",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability has been found in Edimax EW-7438RPn 1.31. This impacts the function formSDHCP of the file /goform/formSDHCP. Such manipulation of the argument submit-url leads to stack-based buffer ov",
-        "published": "2026-05-25T19:16:37.180"
-      },
-      {
         "cve_id": "CVE-2026-45216",
         "severity": "HIGH",
         "base_score": 8.8,
         "description": "Incorrect Privilege Assignment vulnerability in StoreApps Smart Manager allows Privilege Escalation.\n\nThis issue affects Smart Manager: from n/a through 8.85.0.",
         "published": "2026-05-25T23:16:33.447"
+      },
+      {
+        "cve_id": "CVE-2026-40033",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "FreeRDP before 3.26.0 contains a heap-buffer-overflow vulnerability in gdi_CacheToSurface that allows remote attackers to write out-of-bounds heap memory. The vulnerability occurs because rectangle va",
+        "published": "2026-05-26T15:16:34.480"
+      },
+      {
+        "cve_id": "CVE-2026-46368",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "luci-app-https-dns-proxy through 2025.12.29-5 \u2014 an optional LuCI web UI add-on for the https-dns-proxy package, distributed through the OpenWrt community packages feed and not installed by default \u2014 c",
+        "published": "2026-05-26T15:16:39.730"
       },
       {
         "cve_id": "CVE-2026-48837",
@@ -292,11 +306,11 @@
         "published": "2026-05-25T23:16:33.947"
       },
       {
-        "cve_id": "CVE-2026-48842",
+        "cve_id": "CVE-2026-4480",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Roundcube Webmail 1.6.x before 1.6.16 and 1.7.x before 1.7.1 has Pre-authentication SQL injection in the virtuser_query plugin via a preg_replace() backslash escape bypass.",
-        "published": "2026-05-25T20:16:36.630"
+        "base_score": 8.5,
+        "description": "A flaw was found in the Samba printing subsystem. Samba passes the client-controlled job description string to the command configured with the \"print command\" setting via the \"%J\"\nsubstitution charact",
+        "published": "2026-05-26T15:16:40.937"
       },
       {
         "cve_id": "CVE-2026-8046",
@@ -304,6 +318,20 @@
         "base_score": 8.1,
         "description": "The affected products insufficiently verify authorization when deleting user accounts. An authenticated, low-privileged remote user can exploit this vulnerability to delete other users, including thos",
         "published": "2026-05-26T08:16:22.267"
+      },
+      {
+        "cve_id": "CVE-2026-48131",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The VPN service may mishandle an unexpected IKE fragment value received on the IKE port 500/UDP during the early stage of a connection attempt. This can cause the service to terminate unexpectedly, re",
+        "published": "2026-05-26T14:16:38.407"
+      },
+      {
+        "cve_id": "CVE-2026-48132",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The Security Gateway does not correctly validate a length value in certain IKE packets when NAT-T is used (4500/UDP). As a result, a specially crafted or malformed packet can cause the VPN processing ",
+        "published": "2026-05-26T14:16:38.587"
       },
       {
         "cve_id": "CVE-2026-44468",
@@ -334,53 +362,25 @@
         "published": "2026-05-26T09:16:19.533"
       },
       {
-        "cve_id": "CVE-2026-48844",
+        "cve_id": "CVE-2026-40034",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Roundcube Webmail 1.6.x before 1.6.16 and 1.7.x before 1.7.1 has insecure code evaluation logic in LDAP the autovalues option that could lead to code injection. (Support for code evaluation has been r",
-        "published": "2026-05-25T20:16:36.893"
+        "base_score": 7.8,
+        "description": "gix-submodule before 0.82.0 incorrectly validates the update field in .gitmodules, allowing attackers to bypass the CommandForbiddenInModulesConfiguration guard when a submodule has been initialized w",
+        "published": "2026-05-26T15:16:35.087"
       },
       {
-        "cve_id": "CVE-2026-45209",
+        "cve_id": "CVE-2026-25112",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Missing Authorization vulnerability in edward_plainview MyCryptoCheckout allows Exploiting Incorrectly Configured Access Control Security Levels.\n\nThis issue affects MyCryptoCheckout: from n/a through",
-        "published": "2026-05-25T23:16:33.320"
+        "base_score": 7.8,
+        "description": "A high-severity vulnerability in the deployment of Genetec RabbitMQ that allows a privilege escalation attack.",
+        "published": "2026-05-26T16:16:22.977"
       },
       {
-        "cve_id": "CVE-2026-45438",
+        "cve_id": "CVE-2026-45082",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Missing Authorization vulnerability in WebToffee Smart Coupons for WooCommerce allows Exploiting Incorrectly Configured Access Control Security Levels.\n\nThis issue affects Smart Coupons for WooCommerc",
-        "published": "2026-05-25T23:16:33.820"
-      },
-      {
-        "cve_id": "CVE-2026-9496",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Versions of the package pacote from 11.2.7 are vulnerable to Denial of Service (DoS) via the addGitSha function. An attacker can exploit this vulnerability by supplying a specially crafted spec.rawSpe",
-        "published": "2026-05-26T07:16:19.410"
-      },
-      {
-        "cve_id": "CVE-2026-8047",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The affected products perform improper length checking when parsing incoming HTTP requests, resulting in a size-limited out-of-bounds write. An unauthenticated remote attacker can exploit this flaw to",
-        "published": "2026-05-26T08:16:22.447"
-      },
-      {
-        "cve_id": "CVE-2026-39661",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in Magentech SW Core allows PHP Local File Inclusion.\n\nThis issue affects SW Core:",
-        "published": "2026-05-26T09:16:20.613"
-      },
-      {
-        "cve_id": "CVE-2025-11482",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "An Allocation of Resources Without Limits or Throttling vulnerability in the OPC-UA Server used in PPT30 \nOperating System versions before 1.8.0 may be used by an unauthenticated network-based attacke",
-        "published": "2026-05-26T14:16:26.360"
+        "base_score": 7.6,
+        "description": "Karakeep is a elf-hostable bookmark-everything app. A Server-Side Request Forgery (SSRF) protection bypass vulnerability was identified in versions prior to 0.32.0 affecting redirect-following process",
+        "published": "2026-05-26T15:16:38.693"
       }
     ]
   },
