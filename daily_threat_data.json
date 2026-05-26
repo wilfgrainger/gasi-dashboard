@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T14:45:13.844510+00:00",
+  "generated_at": "2026-05-26T18:17:02.300137+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 19,
+        "value": 20,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
+        "value": 2,
         "score": 2.0,
         "max": 3
       },
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1602,
-    "recent_30d_count": 19,
+    "total_catalog_count": 1603,
+    "recent_30d_count": 20,
     "recent": [
+      {
+        "cve_id": "CVE-2026-48172",
+        "vendor": "LiteSpeed",
+        "product": "cPanel Plugin",
+        "name": "LiteSpeed cPanel Plugin Privilege Escalation Vulnerability",
+        "date_added": "2026-05-26",
+        "due_date": "2026-05-29",
+        "description": "LiteSpeed cPanel Plugin contains privilege escalation vulnerability that is exposed via the user-end cPanel plugin, which can be abused by any cPanel user account to execute arbitrary scripts with roo",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-9082",
         "vendor": "Drupal",
@@ -228,58 +238,23 @@
     ]
   },
   "nvd": {
-    "total": 170,
-    "critical_count": 4,
-    "high_count": 32,
+    "total": 235,
+    "critical_count": 2,
+    "high_count": 29,
     "cves": [
       {
-        "cve_id": "CVE-2026-9475",
+        "cve_id": "CVE-2026-42773",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A vulnerability was determined in Totolink A8000RU 7.1cu.643_b20200521. This affects the function setIpQosRules of the file /cgi-bin/cstecgi.cgi of the component Web Management Interface. This manipul",
-        "published": "2026-05-25T17:16:47.490"
+        "base_score": 9.3,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in eMagicOne eMagicOne Store Manager allows Blind SQL Injection.\n\nThis issue affects eMagicOne Store ",
+        "published": "2026-05-25T23:16:32.950"
       },
       {
-        "cve_id": "CVE-2026-9476",
+        "cve_id": "CVE-2026-42774",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A vulnerability was identified in Totolink A8000RU 7.1cu.643_b20200521. This vulnerability affects the function setPasswordCfg of the file /cgi-bin/cstecgi.cgi of the component Web Management Interfac",
-        "published": "2026-05-25T17:16:47.663"
-      },
-      {
-        "cve_id": "CVE-2026-9477",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A security flaw has been discovered in Totolink A8000RU 7.1cu.643_b20200521. This issue affects the function setAccessDeviceCfg of the file /cgi-bin/cstecgi.cgi of the component Web Management Interfa",
-        "published": "2026-05-25T18:16:31.903"
-      },
-      {
-        "cve_id": "CVE-2026-9478",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A weakness has been identified in Totolink A8000RU 7.1cu.643_b20200521. Impacted is the function setParentalRules of the file /cgi-bin/cstecgi.cgi of the component Web Management Interface. Executing ",
-        "published": "2026-05-25T18:16:32.850"
-      },
-      {
-        "cve_id": "CVE-2026-9462",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was detected in Edimax EW-7438RPn 1.31. Affected by this vulnerability is the function formWpsProxyEnable of the file /goform/formWpsProxyEnable. The manipulation of the argument submi",
-        "published": "2026-05-25T15:16:23.077"
-      },
-      {
-        "cve_id": "CVE-2026-9463",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw has been found in Edimax EW-7438RPn 1.31. Affected by this issue is the function formLicence of the file /goform/formLicence. This manipulation of the argument submit-url causes stack-based buf",
-        "published": "2026-05-25T15:16:23.233"
-      },
-      {
-        "cve_id": "CVE-2026-9479",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A security vulnerability has been detected in Edimax EW-7438RPn 1.31. The affected element is the function formLogout of the file /goform/formLogout. The manipulation of the argument submit-url leads ",
-        "published": "2026-05-25T18:16:33.010"
+        "base_score": 9.3,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Crocoblock JetEngine allows SQL Injection.\n\nThis issue affects JetEngine: from n/a through 3.8.8.1",
+        "published": "2026-05-25T23:16:33.073"
       },
       {
         "cve_id": "CVE-2026-9480",
@@ -303,74 +278,109 @@
         "published": "2026-05-25T19:16:37.180"
       },
       {
-        "cve_id": "CVE-2018-25359",
+        "cve_id": "CVE-2026-45216",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Splinterware System Scheduler Pro 5.12 contains an insecure file permissions vulnerability that allows low-privilege users to escalate privileges by modifying service executable files. Attackers can r",
-        "published": "2026-05-25T15:16:18.357"
+        "base_score": 8.8,
+        "description": "Incorrect Privilege Assignment vulnerability in StoreApps Smart Manager allows Privilege Escalation.\n\nThis issue affects Smart Manager: from n/a through 8.85.0.",
+        "published": "2026-05-25T23:16:33.447"
       },
       {
-        "cve_id": "CVE-2018-25360",
+        "cve_id": "CVE-2026-48837",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "AgataSoft Auto PingMaster 1.5 contains a stack-based buffer overflow vulnerability in the Trace Route host name field that allows local attackers to execute arbitrary code by triggering structured exc",
-        "published": "2026-05-25T15:16:18.507"
+        "base_score": 8.5,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Unlimited Elements For Elementor allows Blind SQL Injection.\n\nThis issue affects Unlimited Element",
+        "published": "2026-05-25T23:16:33.947"
       },
       {
-        "cve_id": "CVE-2018-25366",
+        "cve_id": "CVE-2026-48842",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "CuteFTP 5.0 XP contains a buffer overflow vulnerability that allows local attackers to execute arbitrary code by injecting malicious payload into the Site Manager label field. Attackers can craft a pa",
-        "published": "2026-05-25T15:16:19.317"
+        "base_score": 8.1,
+        "description": "Roundcube Webmail 1.6.x before 1.6.16 and 1.7.x before 1.7.1 has Pre-authentication SQL injection in the virtuser_query plugin via a preg_replace() backslash escape bypass.",
+        "published": "2026-05-25T20:16:36.630"
       },
       {
-        "cve_id": "CVE-2018-25373",
+        "cve_id": "CVE-2026-8046",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "SocuSoft DVD Photo Slideshow Professional 8.07 contains a stack-based buffer overflow vulnerability in the registration name field that allows local attackers to execute arbitrary code by exploiting s",
-        "published": "2026-05-25T15:16:20.270"
+        "base_score": 8.1,
+        "description": "The affected products insufficiently verify authorization when deleting user accounts. An authenticated, low-privileged remote user can exploit this vulnerability to delete other users, including thos",
+        "published": "2026-05-26T08:16:22.267"
       },
       {
-        "cve_id": "CVE-2018-25375",
+        "cve_id": "CVE-2026-44468",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "SocuSoft iPod Photo Slideshow 8.05 contains a buffer overflow vulnerability in the registration dialog that allows local attackers to execute arbitrary code by overwriting the structured exception han",
-        "published": "2026-05-25T15:16:20.533"
+        "base_score": 7.8,
+        "description": "The affected product creates a directory with insecure default permissions during administrative installation. This allows a low-privileged local attacker to modify a temporary file defining the compo",
+        "published": "2026-05-26T08:16:21.990"
       },
       {
-        "cve_id": "CVE-2018-25376",
+        "cve_id": "CVE-2026-44469",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Socusoft 3GP Photo Slideshow 8.05 contains a buffer overflow vulnerability in the registration dialog that allows local attackers to execute arbitrary code by exploiting structured exception handling.",
-        "published": "2026-05-25T15:16:20.663"
+        "base_score": 7.8,
+        "description": "The affected product extracts installation files to a temporary directory with incorrect default permissions during administrative installation. A low-privileged local attacker can exploit a TOCTOU ra",
+        "published": "2026-05-26T08:16:22.137"
       },
       {
-        "cve_id": "CVE-2018-25377",
+        "cve_id": "CVE-2026-25104",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Flash Slideshow Maker Professional 5.20 contains a buffer overflow vulnerability in the registration dialog that allows local attackers to execute arbitrary code by exploiting structured exception han",
-        "published": "2026-05-25T15:16:20.790"
+        "base_score": 7.8,
+        "description": "MediaArea MediaInfoLib LXF parsing heap-based buffer overflow vulnerability",
+        "published": "2026-05-26T09:16:19.397"
       },
       {
-        "cve_id": "CVE-2018-25362",
+        "cve_id": "CVE-2026-25713",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Twitter-Clone 1 contains a SQL injection vulnerability in follow.php that allows attackers to manipulate database queries by injecting SQL code through the userid parameter. Attackers can submit union",
-        "published": "2026-05-25T15:16:18.787"
+        "base_score": 7.8,
+        "description": "MediaArea MediaInfoLib ID3v2 parsing heap buffer overflow vulnerability",
+        "published": "2026-05-26T09:16:19.533"
       },
       {
-        "cve_id": "CVE-2018-25364",
+        "cve_id": "CVE-2026-48844",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Twitter-Clone 1 contains a SQL injection vulnerability that allows unauthenticated attackers to execute arbitrary SQL queries by injecting malicious code through the name parameter. Attackers can subm",
-        "published": "2026-05-25T15:16:19.050"
+        "base_score": 7.5,
+        "description": "Roundcube Webmail 1.6.x before 1.6.16 and 1.7.x before 1.7.1 has insecure code evaluation logic in LDAP the autovalues option that could lead to code injection. (Support for code evaluation has been r",
+        "published": "2026-05-25T20:16:36.893"
       },
       {
-        "cve_id": "CVE-2018-25371",
+        "cve_id": "CVE-2026-45209",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "mooSocial Store Plugin 2.6 contains a blind SQL injection vulnerability that allows unauthenticated attackers to manipulate database queries through the product parameter in URL rewrite functionality.",
-        "published": "2026-05-25T15:16:19.990"
+        "base_score": 7.5,
+        "description": "Missing Authorization vulnerability in edward_plainview MyCryptoCheckout allows Exploiting Incorrectly Configured Access Control Security Levels.\n\nThis issue affects MyCryptoCheckout: from n/a through",
+        "published": "2026-05-25T23:16:33.320"
+      },
+      {
+        "cve_id": "CVE-2026-45438",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Missing Authorization vulnerability in WebToffee Smart Coupons for WooCommerce allows Exploiting Incorrectly Configured Access Control Security Levels.\n\nThis issue affects Smart Coupons for WooCommerc",
+        "published": "2026-05-25T23:16:33.820"
+      },
+      {
+        "cve_id": "CVE-2026-9496",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Versions of the package pacote from 11.2.7 are vulnerable to Denial of Service (DoS) via the addGitSha function. An attacker can exploit this vulnerability by supplying a specially crafted spec.rawSpe",
+        "published": "2026-05-26T07:16:19.410"
+      },
+      {
+        "cve_id": "CVE-2026-8047",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The affected products perform improper length checking when parsing incoming HTTP requests, resulting in a size-limited out-of-bounds write. An unauthenticated remote attacker can exploit this flaw to",
+        "published": "2026-05-26T08:16:22.447"
+      },
+      {
+        "cve_id": "CVE-2026-39661",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in Magentech SW Core allows PHP Local File Inclusion.\n\nThis issue affects SW Core:",
+        "published": "2026-05-26T09:16:20.613"
+      },
+      {
+        "cve_id": "CVE-2025-11482",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "An Allocation of Resources Without Limits or Throttling vulnerability in the OPC-UA Server used in PPT30 \nOperating System versions before 1.8.0 may be used by an unauthenticated network-based attacke",
+        "published": "2026-05-26T14:16:26.360"
       }
     ]
   },
