@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-26T07:36:35.530850+00:00",
+  "generated_at": "2026-05-26T14:45:13.844510+00:00",
   "threat_score": {
-    "score": 5.0,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 1.0,
+        "value": 4,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -228,10 +228,151 @@
     ]
   },
   "nvd": {
-    "total": 152,
-    "critical_count": 0,
-    "high_count": 0,
-    "cves": []
+    "total": 170,
+    "critical_count": 4,
+    "high_count": 32,
+    "cves": [
+      {
+        "cve_id": "CVE-2026-9475",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A vulnerability was determined in Totolink A8000RU 7.1cu.643_b20200521. This affects the function setIpQosRules of the file /cgi-bin/cstecgi.cgi of the component Web Management Interface. This manipul",
+        "published": "2026-05-25T17:16:47.490"
+      },
+      {
+        "cve_id": "CVE-2026-9476",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A vulnerability was identified in Totolink A8000RU 7.1cu.643_b20200521. This vulnerability affects the function setPasswordCfg of the file /cgi-bin/cstecgi.cgi of the component Web Management Interfac",
+        "published": "2026-05-25T17:16:47.663"
+      },
+      {
+        "cve_id": "CVE-2026-9477",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A security flaw has been discovered in Totolink A8000RU 7.1cu.643_b20200521. This issue affects the function setAccessDeviceCfg of the file /cgi-bin/cstecgi.cgi of the component Web Management Interfa",
+        "published": "2026-05-25T18:16:31.903"
+      },
+      {
+        "cve_id": "CVE-2026-9478",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A weakness has been identified in Totolink A8000RU 7.1cu.643_b20200521. Impacted is the function setParentalRules of the file /cgi-bin/cstecgi.cgi of the component Web Management Interface. Executing ",
+        "published": "2026-05-25T18:16:32.850"
+      },
+      {
+        "cve_id": "CVE-2026-9462",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was detected in Edimax EW-7438RPn 1.31. Affected by this vulnerability is the function formWpsProxyEnable of the file /goform/formWpsProxyEnable. The manipulation of the argument submi",
+        "published": "2026-05-25T15:16:23.077"
+      },
+      {
+        "cve_id": "CVE-2026-9463",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A flaw has been found in Edimax EW-7438RPn 1.31. Affected by this issue is the function formLicence of the file /goform/formLicence. This manipulation of the argument submit-url causes stack-based buf",
+        "published": "2026-05-25T15:16:23.233"
+      },
+      {
+        "cve_id": "CVE-2026-9479",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A security vulnerability has been detected in Edimax EW-7438RPn 1.31. The affected element is the function formLogout of the file /goform/formLogout. The manipulation of the argument submit-url leads ",
+        "published": "2026-05-25T18:16:33.010"
+      },
+      {
+        "cve_id": "CVE-2026-9480",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was detected in Edimax EW-7438RPn 1.31. The impacted element is the function formrefresh of the file /goform/formrefresh. The manipulation of the argument submit-url results in stack-b",
+        "published": "2026-05-25T19:16:36.303"
+      },
+      {
+        "cve_id": "CVE-2026-9481",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A flaw has been found in Edimax EW-7438RPn 1.31. This affects the function formStats of the file /goform/formStats. This manipulation of the argument submit-url causes stack-based buffer overflow. The",
+        "published": "2026-05-25T19:16:37.027"
+      },
+      {
+        "cve_id": "CVE-2026-9482",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability has been found in Edimax EW-7438RPn 1.31. This impacts the function formSDHCP of the file /goform/formSDHCP. Such manipulation of the argument submit-url leads to stack-based buffer ov",
+        "published": "2026-05-25T19:16:37.180"
+      },
+      {
+        "cve_id": "CVE-2018-25359",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "Splinterware System Scheduler Pro 5.12 contains an insecure file permissions vulnerability that allows low-privilege users to escalate privileges by modifying service executable files. Attackers can r",
+        "published": "2026-05-25T15:16:18.357"
+      },
+      {
+        "cve_id": "CVE-2018-25360",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "AgataSoft Auto PingMaster 1.5 contains a stack-based buffer overflow vulnerability in the Trace Route host name field that allows local attackers to execute arbitrary code by triggering structured exc",
+        "published": "2026-05-25T15:16:18.507"
+      },
+      {
+        "cve_id": "CVE-2018-25366",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "CuteFTP 5.0 XP contains a buffer overflow vulnerability that allows local attackers to execute arbitrary code by injecting malicious payload into the Site Manager label field. Attackers can craft a pa",
+        "published": "2026-05-25T15:16:19.317"
+      },
+      {
+        "cve_id": "CVE-2018-25373",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "SocuSoft DVD Photo Slideshow Professional 8.07 contains a stack-based buffer overflow vulnerability in the registration name field that allows local attackers to execute arbitrary code by exploiting s",
+        "published": "2026-05-25T15:16:20.270"
+      },
+      {
+        "cve_id": "CVE-2018-25375",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "SocuSoft iPod Photo Slideshow 8.05 contains a buffer overflow vulnerability in the registration dialog that allows local attackers to execute arbitrary code by overwriting the structured exception han",
+        "published": "2026-05-25T15:16:20.533"
+      },
+      {
+        "cve_id": "CVE-2018-25376",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "Socusoft 3GP Photo Slideshow 8.05 contains a buffer overflow vulnerability in the registration dialog that allows local attackers to execute arbitrary code by exploiting structured exception handling.",
+        "published": "2026-05-25T15:16:20.663"
+      },
+      {
+        "cve_id": "CVE-2018-25377",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "Flash Slideshow Maker Professional 5.20 contains a buffer overflow vulnerability in the registration dialog that allows local attackers to execute arbitrary code by exploiting structured exception han",
+        "published": "2026-05-25T15:16:20.790"
+      },
+      {
+        "cve_id": "CVE-2018-25362",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Twitter-Clone 1 contains a SQL injection vulnerability in follow.php that allows attackers to manipulate database queries by injecting SQL code through the userid parameter. Attackers can submit union",
+        "published": "2026-05-25T15:16:18.787"
+      },
+      {
+        "cve_id": "CVE-2018-25364",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Twitter-Clone 1 contains a SQL injection vulnerability that allows unauthenticated attackers to execute arbitrary SQL queries by injecting malicious code through the name parameter. Attackers can subm",
+        "published": "2026-05-25T15:16:19.050"
+      },
+      {
+        "cve_id": "CVE-2018-25371",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "mooSocial Store Plugin 2.6 contains a blind SQL injection vulnerability that allows unauthenticated attackers to manipulate database queries through the product parameter in URL rewrite functionality.",
+        "published": "2026-05-25T15:16:19.990"
+      }
+    ]
   },
   "top_ips": {
     "ips": [],
