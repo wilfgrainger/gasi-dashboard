@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-27T11:31:01.254642+00:00",
+  "generated_at": "2026-05-27T14:54:58.846003+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
-        "score": 2.5,
+        "value": 10,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,24 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 452,
-    "critical_count": 8,
-    "high_count": 29,
+    "total": 752,
+    "critical_count": 10,
+    "high_count": 33,
     "cves": [
-      {
-        "cve_id": "CVE-2026-7374",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A flaw was found in KubeVirt's virt-handler component. This vulnerability allows an authenticated OpenShift user with edit permissions in a single namespace to exploit improper symlink validation when",
-        "published": "2026-05-26T14:16:40.717"
-      },
-      {
-        "cve_id": "CVE-2026-9543",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A vulnerability has been found in Totolink N300RH 6.1c.1353_B20190305. Affected is the function setPasswordCfg of the file /cgi-bin/cstecgi.cgi of the component Web Management Interface. Such manipula",
-        "published": "2026-05-26T14:16:46.333"
-      },
       {
         "cve_id": "CVE-2026-45247",
         "severity": "CRITICAL",
@@ -269,6 +255,34 @@
         "base_score": 9.8,
         "description": "FastNetMon Community Edition through 1.2.9 contains a stack-based buffer overflow in the BGP NLRI (Network Layer Reachability Information) decoder. The function decode_bgp_subnet_encoding_ipv4_raw() i",
         "published": "2026-05-26T16:16:26.693"
+      },
+      {
+        "cve_id": "CVE-2026-48687",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "FastNetMon Community Edition through 1.2.9 contains an OS command injection vulnerability in the Juniper router integration plugin. The _log() function in src/juniper_plugin/fastnetmon_juniper.php (li",
+        "published": "2026-05-26T16:16:26.800"
+      },
+      {
+        "cve_id": "CVE-2026-35221",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Improperly built filter clauses lead to a SQL injection vulnerability in the search query for com_finder.",
+        "published": "2026-05-26T17:16:35.823"
+      },
+      {
+        "cve_id": "CVE-2026-35222",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Improperly validated order clauses lead to a SQL injection vulnerability in com_tags.",
+        "published": "2026-05-26T17:16:35.950"
+      },
+      {
+        "cve_id": "CVE-2026-40383",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An improper validation of user-supplied input leads to a local file inclusion vulnerability.",
+        "published": "2026-05-26T17:16:39.360"
       },
       {
         "cve_id": "CVE-2026-48898",
@@ -313,6 +327,13 @@
         "published": "2026-05-26T15:16:39.730"
       },
       {
+        "cve_id": "CVE-2026-24187",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "NVIDIA Display Driver for Linux contains a vulnerability where an attacker could cause a use-after-free. A successful exploit of this vulnerability might lead to denial of service, escalation of privi",
+        "published": "2026-05-26T18:16:37.710"
+      },
+      {
         "cve_id": "CVE-2026-44729",
         "severity": "HIGH",
         "base_score": 8.7,
@@ -332,20 +353,6 @@
         "base_score": 8.2,
         "description": "Algernon is a small self-contained pure-Go web server. Prior to 1.17.8, when algernon is started with --domain (or --letsencrypt, which silently turns on --domain at engine/flags.go:372), the request ",
         "published": "2026-05-26T17:16:53.360"
-      },
-      {
-        "cve_id": "CVE-2026-48131",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The VPN service may mishandle an unexpected IKE fragment value received on the IKE port 500/UDP during the early stage of a connection attempt. This can cause the service to terminate unexpectedly, re",
-        "published": "2026-05-26T14:16:38.407"
-      },
-      {
-        "cve_id": "CVE-2026-48132",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Security Gateway does not correctly validate a length value in certain IKE packets when NAT-T is used (4500/UDP). As a result, a specially crafted or malformed packet can cause the VPN processing ",
-        "published": "2026-05-26T14:16:38.587"
       },
       {
         "cve_id": "CVE-2026-43935",
@@ -374,13 +381,6 @@
         "base_score": 7.8,
         "description": "A high-severity vulnerability in the deployment of Genetec RabbitMQ that allows a privilege escalation attack.",
         "published": "2026-05-26T16:16:22.977"
-      },
-      {
-        "cve_id": "CVE-2026-24162",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "NVIDIA Transformers4Rec for Linux contains a vulnerability where an attacker could cause improper deserialization of untrusted data. A successful exploit of this vulnerability might lead to code execu",
-        "published": "2026-05-26T17:16:29.910"
       }
     ]
   },
