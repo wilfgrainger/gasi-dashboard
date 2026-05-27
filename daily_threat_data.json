@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T07:55:36.291085+00:00",
+  "generated_at": "2026-05-27T11:31:01.254642+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
+        "value": 8,
         "score": 2.5,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 329,
-    "critical_count": 5,
-    "high_count": 33,
+    "total": 452,
+    "critical_count": 8,
+    "high_count": 29,
     "cves": [
       {
         "cve_id": "CVE-2026-7374",
@@ -269,6 +269,27 @@
         "base_score": 9.8,
         "description": "FastNetMon Community Edition through 1.2.9 contains a stack-based buffer overflow in the BGP NLRI (Network Layer Reachability Information) decoder. The function decode_bgp_subnet_encoding_ipv4_raw() i",
         "published": "2026-05-26T16:16:26.693"
+      },
+      {
+        "cve_id": "CVE-2026-48898",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An improper access check allows privilege escalation through the com_users batch task.",
+        "published": "2026-05-26T17:16:54.460"
+      },
+      {
+        "cve_id": "CVE-2026-48899",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An improper access check allows privilege escalation through the com_users batch task.",
+        "published": "2026-05-26T17:16:54.587"
+      },
+      {
+        "cve_id": "CVE-2026-48904",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An improper access check allows privelege escalation through the com_users group editing webservice endpoint.",
+        "published": "2026-05-26T17:16:55.203"
       },
       {
         "cve_id": "CVE-2026-45721",
@@ -313,13 +334,6 @@
         "published": "2026-05-26T17:16:53.360"
       },
       {
-        "cve_id": "CVE-2026-8046",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The affected products insufficiently verify authorization when deleting user accounts. An authenticated, low-privileged remote user can exploit this vulnerability to delete other users, including thos",
-        "published": "2026-05-26T08:16:22.267"
-      },
-      {
         "cve_id": "CVE-2026-48131",
         "severity": "HIGH",
         "base_score": 8.1,
@@ -348,39 +362,25 @@
         "published": "2026-05-26T16:16:27.007"
       },
       {
-        "cve_id": "CVE-2026-44468",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "The affected product creates a directory with insecure default permissions during administrative installation. This allows a low-privileged local attacker to modify a temporary file defining the compo",
-        "published": "2026-05-26T08:16:21.990"
-      },
-      {
-        "cve_id": "CVE-2026-44469",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "The affected product extracts installation files to a temporary directory with incorrect default permissions during administrative installation. A low-privileged local attacker can exploit a TOCTOU ra",
-        "published": "2026-05-26T08:16:22.137"
-      },
-      {
-        "cve_id": "CVE-2026-25104",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "MediaArea MediaInfoLib LXF parsing heap-based buffer overflow vulnerability",
-        "published": "2026-05-26T09:16:19.397"
-      },
-      {
-        "cve_id": "CVE-2026-25713",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "MediaArea MediaInfoLib ID3v2 parsing heap buffer overflow vulnerability",
-        "published": "2026-05-26T09:16:19.533"
-      },
-      {
         "cve_id": "CVE-2026-40034",
         "severity": "HIGH",
         "base_score": 7.8,
         "description": "gix-submodule before 0.82.0 incorrectly validates the update field in .gitmodules, allowing attackers to bypass the CommandForbiddenInModulesConfiguration guard when a submodule has been initialized w",
         "published": "2026-05-26T15:16:35.087"
+      },
+      {
+        "cve_id": "CVE-2026-25112",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "A high-severity vulnerability in the deployment of Genetec RabbitMQ that allows a privilege escalation attack.",
+        "published": "2026-05-26T16:16:22.977"
+      },
+      {
+        "cve_id": "CVE-2026-24162",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "NVIDIA Transformers4Rec for Linux contains a vulnerability where an attacker could cause improper deserialization of untrusted data. A successful exploit of this vulnerability might lead to code execu",
+        "published": "2026-05-26T17:16:29.910"
       }
     ]
   },
