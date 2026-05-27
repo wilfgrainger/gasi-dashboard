@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-05-27T14:54:58.846003+00:00",
+  "generated_at": "2026-05-27T18:19:52.453668+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 20,
+        "value": 23,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 10,
-        "score": 3.0,
+        "value": 7,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -32,9 +32,39 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1603,
-    "recent_30d_count": 20,
+    "total_catalog_count": 1606,
+    "recent_30d_count": 23,
     "recent": [
+      {
+        "cve_id": "CVE-2026-48027",
+        "vendor": "Nx",
+        "product": "Nx Console",
+        "name": "Nx Console Embedded Malicious Code Vulnerability",
+        "date_added": "2026-05-27",
+        "due_date": "2026-06-10",
+        "description": "Nx Console contains an embedded malicious code vulnerability that allowed a malicious version of Nx Console to be published. The compromised extension fetched an obfuscated payload that could harveste",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-45321",
+        "vendor": "TanStack",
+        "product": "TanStack",
+        "name": "TanStack Unspecified Vulnerability",
+        "date_added": "2026-05-27",
+        "due_date": "2026-06-10",
+        "description": "TanStack contains an unspecified vulnerability that allowed malicious versions of the product to be published to the npm registry to publish credential-stealing malware under a trusted identity.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-8398",
+        "vendor": "Daemon",
+        "product": "Daemon Tools Lite",
+        "name": "Daemon Tools Lite Embedded Malicious Code Vulnerability",
+        "date_added": "2026-05-27",
+        "due_date": "2026-05-30",
+        "description": "Daemon Tools contains an unspecified vulnerability that has a high impact on confidentiality, integrity, and availability.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-48172",
         "vendor": "LiteSpeed",
@@ -204,183 +234,153 @@
         "due_date": "2026-05-15",
         "description": "Linux Kernel contains an incorrect resource transfer between spheres vulnerability that could allow for privilege escalation.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-41940",
-        "vendor": "WebPros",
-        "product": "cPanel & WHM and WP2 (WordPress Squared)",
-        "name": "WebPros cPanel & WHM and WP2 (WordPress Squared) Missing Authentication for Critical Function Vulnerability",
-        "date_added": "2026-04-30",
-        "due_date": "2026-05-03",
-        "description": "WebPros cPanel & WHM (WebHost Manager) and WP2 (WordPress Squared) contain an authentication bypass vulnerability in the login flow that allows unauthenticated remote attackers to gain unauthorized ac",
-        "ransomware_use": "Known"
-      },
-      {
-        "cve_id": "CVE-2024-1708",
-        "vendor": "ConnectWise",
-        "product": "ScreenConnect",
-        "name": "ConnectWise ScreenConnect Path Traversal Vulnerability",
-        "date_added": "2026-04-28",
-        "due_date": "2026-05-12",
-        "description": "ConnectWise ScreenConnect contains a path traversal vulnerability which could allow an attacker to execute remote code or directly impact confidential data and critical systems.",
-        "ransomware_use": "Known"
-      },
-      {
-        "cve_id": "CVE-2026-32202",
-        "vendor": "Microsoft",
-        "product": "Windows",
-        "name": "Microsoft Windows Protection Mechanism Failure Vulnerability",
-        "date_added": "2026-04-28",
-        "due_date": "2026-05-12",
-        "description": "Microsoft Windows Shell contains a protection mechanism failure vulnerability that allows an unauthorized attacker to perform spoofing over a network.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 752,
-    "critical_count": 10,
-    "high_count": 33,
+    "total": 741,
+    "critical_count": 7,
+    "high_count": 31,
     "cves": [
       {
-        "cve_id": "CVE-2026-45247",
+        "cve_id": "CVE-2026-44450",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Lumiverse is a full-featured AI chat application. Prior to 0.9.7, the MCP server creation endpoint validates the command field against an allowlist of binary names but forwards the args array to the c",
+        "published": "2026-05-26T21:16:38.173"
+      },
+      {
+        "cve_id": "CVE-2026-3660",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Mirasvit Full Page Cache Warmer for Magento 2 before version 1.11.12 contains a PHP object injection vulnerability that allows unauthenticated attackers to achieve remote code execution by supplying a",
-        "published": "2026-05-26T15:16:39.263"
+        "description": "IBM Engineering Lifecycle Management 7.0.3, 7.1.0, and 7.2.0 could allow an unauthenticated remote attacker to update server property files that would allow them to gain unauthorized access to the app",
+        "published": "2026-05-26T19:16:27.707"
       },
       {
-        "cve_id": "CVE-2026-48686",
+        "cve_id": "CVE-2026-48689",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "FastNetMon Community Edition through 1.2.9 contains a stack-based buffer overflow in the BGP NLRI (Network Layer Reachability Information) decoder. The function decode_bgp_subnet_encoding_ipv4_raw() i",
-        "published": "2026-05-26T16:16:26.693"
+        "description": "FastNetMon Community Edition through 1.2.9 contains an off-by-one heap-based buffer overflow in the dynamic_binary_buffer_t class (src/dynamic_binary_buffer.hpp). Five methods (append_dynamic_buffer, ",
+        "published": "2026-05-26T19:16:28.663"
       },
       {
-        "cve_id": "CVE-2026-48687",
+        "cve_id": "CVE-2026-9642",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "FastNetMon Community Edition through 1.2.9 contains an OS command injection vulnerability in the Juniper router integration plugin. The _log() function in src/juniper_plugin/fastnetmon_juniper.php (li",
-        "published": "2026-05-26T16:16:26.800"
+        "description": "There is a mitigation bypass / (incomplete fix) for CVE-2025-62582 (Unauthenticated Remote Database Access) \n\nAn unauthenticated remote attacker can access configured databases in a DIAView project.",
+        "published": "2026-05-26T21:16:45.827"
       },
       {
-        "cve_id": "CVE-2026-35221",
+        "cve_id": "CVE-2026-44451",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Improperly built filter clauses lead to a SQL injection vulnerability in the search query for com_finder.",
-        "published": "2026-05-26T17:16:35.823"
+        "base_score": 9.3,
+        "description": "Lumiverse is a full-featured AI chat application. Prior to 0.9.7, the component override system transpiles user-supplied TSX via Sucrase and evaluates it with new Function, shadowing dangerous globals",
+        "published": "2026-05-26T21:16:38.303"
       },
       {
-        "cve_id": "CVE-2026-35222",
+        "cve_id": "CVE-2026-44444",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Improperly validated order clauses lead to a SQL injection vulnerability in com_tags.",
-        "published": "2026-05-26T17:16:35.950"
+        "base_score": 9.1,
+        "description": "Lumiverse is a full-featured AI chat application. Prior to 0.9.7, the Spindle extension build pipeline calls bun install without the --ignore-scripts flag before running the static backend safety scan",
+        "published": "2026-05-26T21:16:37.897"
       },
       {
-        "cve_id": "CVE-2026-40383",
+        "cve_id": "CVE-2026-44449",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An improper validation of user-supplied input leads to a local file inclusion vulnerability.",
-        "published": "2026-05-26T17:16:39.360"
+        "base_score": 9.1,
+        "description": "Lumiverse is a full-featured AI chat application. Prior to 0.9.7, when the primary toSmbPath(fullPath) call throws, the method falls back to a dirname/basename split and only validates the directory p",
+        "published": "2026-05-26T21:16:38.037"
       },
       {
-        "cve_id": "CVE-2026-48898",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An improper access check allows privilege escalation through the com_users batch task.",
-        "published": "2026-05-26T17:16:54.460"
-      },
-      {
-        "cve_id": "CVE-2026-48899",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An improper access check allows privilege escalation through the com_users batch task.",
-        "published": "2026-05-26T17:16:54.587"
-      },
-      {
-        "cve_id": "CVE-2026-48904",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An improper access check allows privelege escalation through the com_users group editing webservice endpoint.",
-        "published": "2026-05-26T17:16:55.203"
-      },
-      {
-        "cve_id": "CVE-2026-45721",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "Algernon is a small self-contained pure-Go web server. Prior to 1.17.7, when Algernon is asked for any URL path that resolves to a directory without an index file, DirPage walks upward through parent ",
-        "published": "2026-05-26T17:16:47.750"
-      },
-      {
-        "cve_id": "CVE-2026-40033",
+        "cve_id": "CVE-2026-44832",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "FreeRDP before 3.26.0 contains a heap-buffer-overflow vulnerability in gdi_CacheToSurface that allows remote attackers to write out-of-bounds heap memory. The vulnerability occurs because rectangle va",
-        "published": "2026-05-26T15:16:34.480"
+        "description": "Snipe-IT is an IT asset/license management system. Prior to 8.4.1, aAn authenticated user with only users.edit permission can escalate their own privileges to admin by sending a PATCH request to /api/",
+        "published": "2026-05-26T20:16:20.183"
       },
       {
-        "cve_id": "CVE-2026-46368",
+        "cve_id": "CVE-2026-8676",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "luci-app-https-dns-proxy through 2025.12.29-5 \u2014 an optional LuCI web UI add-on for the https-dns-proxy package, distributed through the OpenWrt community packages feed and not installed by default \u2014 c",
-        "published": "2026-05-26T15:16:39.730"
+        "description": "An attacker is able to downgrade the security of a Bluetooth LE connection by deleting an existing bond, spoofing the bonded device and creating a new bond.",
+        "published": "2026-05-26T21:16:44.630"
       },
       {
-        "cve_id": "CVE-2026-24187",
+        "cve_id": "CVE-2026-9207",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "NVIDIA Display Driver for Linux contains a vulnerability where an attacker could cause a use-after-free. A successful exploit of this vulnerability might lead to denial of service, escalation of privi",
-        "published": "2026-05-26T18:16:37.710"
+        "description": "Tanium addressed an unauthorized code execution vulnerability in Connect.",
+        "published": "2026-05-27T02:16:35.130"
       },
       {
-        "cve_id": "CVE-2026-44729",
+        "cve_id": "CVE-2026-45298",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "Twenty is an open source CRM. In 1.18.0 and earlier, the file serving endpoints in Twenty CRM at /files/* and /file/:fileFolder/:id serve uploaded files using fileStream.pipe(res) without setting any ",
-        "published": "2026-05-26T17:16:46.837"
+        "base_score": 8.6,
+        "description": "Dozzle is a realtime log viewer for docker containers. Prior to 10.5.2, in a default dozzle deploy (the documented quickstart, no DOZZLE_AUTH_PROVIDER set), POST /api/notifications/test-webhook is rea",
+        "published": "2026-05-26T22:16:43.733"
       },
       {
-        "cve_id": "CVE-2026-4480",
+        "cve_id": "CVE-2026-44966",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "A flaw was found in the Samba printing subsystem. Samba passes the client-controlled job description string to the command configured with the \"print command\" setting via the \"%J\"\nsubstitution charact",
-        "published": "2026-05-26T15:16:40.937"
+        "base_score": 8.3,
+        "description": "Velocity.js is a JavaScript implementation of the Apache Velocity template engine. In 2.1.5 and earlier, a prototype pollution vulnerability was discovered in velocityjs. This issue occurs during the ",
+        "published": "2026-05-26T22:16:43.293"
       },
       {
-        "cve_id": "CVE-2026-48126",
+        "cve_id": "CVE-2026-8890",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "Algernon is a small self-contained pure-Go web server. Prior to 1.17.8, when algernon is started with --domain (or --letsencrypt, which silently turns on --domain at engine/flags.go:372), the request ",
-        "published": "2026-05-26T17:16:53.360"
+        "description": "code100x contains an authentication bypass vulnerability in the Mobile API that allows unauthenticated attackers to impersonate arbitrary users by supplying a crafted JSON payload in the 'g' HTTP head",
+        "published": "2026-05-26T19:16:34.007"
       },
       {
-        "cve_id": "CVE-2026-43935",
+        "cve_id": "CVE-2026-44843",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "LangChain is a framework for building agents and LLM-powered applications. Prior to 0.3.85 and 1.3.3, LangChain contains older runtime code paths that deserialize run inputs, run outputs, or other app",
+        "published": "2026-05-26T21:16:39.003"
+      },
+      {
+        "cve_id": "CVE-2026-42013",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "A flaw was found in gnutls. When validating certificates, an oversized Subject Alternative Name (SAN) could cause the validation process to incorrectly fall back to checking the Common Name (CN) field",
+        "published": "2026-05-26T22:16:42.050"
+      },
+      {
+        "cve_id": "CVE-2026-5260",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "A flaw was found in libgnutls. A remote attacker, by sending an extremely short premaster secret during an RSA key exchange to a server using an RSA key backed by a PKCS#11 token, could trigger a shor",
+        "published": "2026-05-26T22:16:44.170"
+      },
+      {
+        "cve_id": "CVE-2026-44900",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "e107 is a content management system (CMS). Prior to 2.3.4, a Host Header Injection vulnerability in the password reset page allows attackers to manipulate the Host header to generate password reset li",
-        "published": "2026-05-26T16:16:25.390"
+        "description": "epa4all-client is the Java Client for epa4all / ePA 3.0 in the Telematik Infrastruktur. Prior to 1.2.1, in  SignedPublicKeysTrustValidatorImpl.isTrusted(), the ECDSA signature verification at line 45 ",
+        "published": "2026-05-26T22:16:42.873"
       },
       {
-        "cve_id": "CVE-2026-48692",
+        "cve_id": "CVE-2026-45574",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "FastNetMon Community Edition through 1.2.9 exposes a gRPC API server on port 50052 with no authentication mechanism. The server is initialized with grpc::InsecureServerCredentials() (src/fastnetmon.cp",
-        "published": "2026-05-26T16:16:27.007"
+        "description": "epa4all-client is the Java Client for epa4all / ePA 3.0 in the Telematik Infrastruktur. Prior to 1.2.2, an attacker on the network path between the ePA service and the Konnektor can present any TLS ce",
+        "published": "2026-05-26T22:16:43.887"
       },
       {
-        "cve_id": "CVE-2026-40034",
+        "cve_id": "CVE-2025-43306",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "gix-submodule before 0.82.0 incorrectly validates the update field in .gitmodules, allowing attackers to bypass the CommandForbiddenInModulesConfiguration guard when a submodule has been initialized w",
-        "published": "2026-05-26T15:16:35.087"
+        "description": "A logic issue was addressed with improved checks. This issue is fixed in macOS Sequoia 15.7, macOS Sonoma 14.8, macOS Tahoe 26. A malicious app may be able to gain root privileges.",
+        "published": "2026-05-26T22:16:40.823"
       },
       {
-        "cve_id": "CVE-2026-25112",
+        "cve_id": "CVE-2026-44209",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A high-severity vulnerability in the deployment of Genetec RabbitMQ that allows a privilege escalation attack.",
-        "published": "2026-05-26T16:16:22.977"
+        "base_score": 7.5,
+        "description": "Banks generates meaningful LLM prompts using a template language that makes sense. Prior to 2.4.2, banks uses jinja2.Environment() (unsandboxed) to render prompt templates. Applications that pass user",
+        "published": "2026-05-26T21:16:37.620"
       }
     ]
   },
