@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-28T11:29:13.887672+00:00",
+  "generated_at": "2026-05-28T15:28:46.975864+00:00",
   "threat_score": {
-    "score": 5.0,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 7.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 1.0,
+        "value": 13,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 702,
-    "critical_count": 0,
-    "high_count": 8,
+    "total": 349,
+    "critical_count": 13,
+    "high_count": 38,
     "cves": [
       {
-        "cve_id": "CVE-2026-36044",
+        "cve_id": "CVE-2026-44327",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "free5GC is an open-source implementation of the 5G core network. Prior to 4.2.2, free5GC's NEF mounts the nnef-oam route group without inbound OAuth2/bearer-token authorization. A network attacker who",
+        "published": "2026-05-27T17:16:38.203"
+      },
+      {
+        "cve_id": "CVE-2026-44329",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "free5GC is an open-source implementation of the 5G core network. Prior to 4.2.2, free5GC's SMF mounts the UPI management route group without OAuth2/bearer-token authorization middleware. A network att",
+        "published": "2026-05-27T17:16:38.490"
+      },
+      {
+        "cve_id": "CVE-2026-44330",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "free5GC is an open-source implementation of the 5G core network. Prior to 4.2.2, free5GC's NEF mounts the nnef-pfdmanagement route group without inbound OAuth2/bearer-token authorization. A network at",
+        "published": "2026-05-27T17:16:38.713"
+      },
+      {
+        "cve_id": "CVE-2026-45087",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Dalfox is a powerful open-source XSS scanner and utility focused on automation. Prior to 2.13.0, when dalfox is started in REST API server mode (dalfox server), the server binds to 0.0.0.0:6664 by def",
+        "published": "2026-05-27T18:16:24.567"
+      },
+      {
+        "cve_id": "CVE-2026-46425",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Budibase is an open-source low-code platform. Prior to 3.38.2, packages/worker/src/api/routes/global/scim.ts attaches only two middlewares to the SCIM router: requireSCIM (checks the Enterprise featur",
+        "published": "2026-05-27T18:16:26.330"
+      },
+      {
+        "cve_id": "CVE-2026-45102",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "OneUptime is an open-source monitoring and observability platform. Prior to 10.0.98, OneUptime uses the Node.js' vm module as an isolation primitive. This API was not designed for that and can be esca",
+        "published": "2026-05-27T20:16:38.250"
+      },
+      {
+        "cve_id": "CVE-2026-48027",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Nx Console is the user interface for Nx & Lerna. On 19 May 2026, a malicious version of Nx Console, 18.95.0, was published at 12:30 PM UTC and removed soon after at 12:48 PM UTC, leaving it available ",
+        "published": "2026-05-27T17:16:41.787"
+      },
+      {
+        "cve_id": "CVE-2026-44887",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Pi.Alert is a WIFI / LAN intruder detector with web service monitoring. Prior to 2026-05-07, Pi.Alert's web-based configuration editor allows arbitrary Python code to be injected into pialert.conf. Si",
+        "published": "2026-05-27T20:16:37.900"
+      },
+      {
+        "cve_id": "CVE-2026-44888",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Pi.Alert is a WIFI / LAN intruder detector with web service monitoring. Prior to 2026-05-07, Pi.Alert's SaveConfigFile() endpoint writes user-supplied numeric config values (e.g., SMTP_PORT) directly ",
+        "published": "2026-05-27T20:16:38.040"
+      },
+      {
+        "cve_id": "CVE-2026-44315",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "free5GC is an open-source implementation of the 5G core network. Prior to 4.2.2, free5GC's NEF mounts the 3gpp-pfd-management API without inbound OAuth2/bearer-token authorization. A network attacker ",
+        "published": "2026-05-27T17:16:36.430"
+      },
+      {
+        "cve_id": "CVE-2026-44326",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "free5GC is an open-source implementation of the 5G core network. Prior to 4.2.2, free5GC's NEF mounts the 3gpp-traffic-influence API without inbound OAuth2/bearer-token authorization. A network attack",
+        "published": "2026-05-27T17:16:38.053"
+      },
+      {
+        "cve_id": "CVE-2026-44590",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Sherlock hunts down social media accounts by username across social networks. Prior to 0.16.1, the GitHub Actions workflow validate_modified_targets.yml is vulnerable to command injection via the pull",
+        "published": "2026-05-27T20:16:37.293"
+      },
+      {
+        "cve_id": "CVE-2026-48150",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "Budibase is an open-source low-code platform. Prior to 3.39.0, /api/public/v1/roles/assign is guarded by the builderOrAdmin middleware, which passes any user who is a builder for the app id in the x-b",
+        "published": "2026-05-27T18:16:27.463"
+      },
+      {
+        "cve_id": "CVE-2026-44345",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "@pensar/apex <= 0.0.58 is vulnerable to OS command injection via the smart_enumerate tool. The createSmartEnumerateTool() function in src/core/agent/tools.ts constructs a shell command by concatenatin",
-        "published": "2026-05-27T14:16:45.143"
+        "description": "BentoML is a Python library for building online serving systems optimized for AI apps and model inference. Prior to 1.4.39, src/bentoml/_internal/container/frontend/dockerfile/templates/base_v2.j2 int",
+        "published": "2026-05-27T18:16:23.200"
       },
       {
-        "cve_id": "CVE-2026-3623",
+        "cve_id": "CVE-2026-44346",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "IBM Netezza Performance Server Replication Services 3.0.2.0 through 3.0.5.0 allows an attacker with low\u2011privileged access to escalate their privileges to root. By exploiting this flaw, the attacker ca",
-        "published": "2026-05-27T14:16:47.000"
+        "base_score": 8.8,
+        "description": "BentoML is a Python library for building online serving systems optimized for AI apps and model inference. Prior to 1.4.39, a malicious bentofile.yaml containing a newline-injected value in envs[*].na",
+        "published": "2026-05-27T18:16:23.333"
       },
       {
-        "cve_id": "CVE-2026-3366",
+        "cve_id": "CVE-2026-44521",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "IBM InfoSphere Optim Test Data Fabrication 1.0.0, 1.0.0.1, 1.0.0.2, 1.0.2, 1.0.2.2, 1.0.2.3, 1.0.2.4, 1.0.2.5, 1.0.2.6, 1.0.2.7 could allow a remote attacker to traverse directories on the system. An ",
-        "published": "2026-05-27T14:16:46.737"
+        "base_score": 8.8,
+        "description": "elFinder is an open-source file manager for web, written in JavaScript using jQuery UI. Prior to 2.1.68, an authenticated SQL injection vulnerability in the elFinder MySQL volume driver (elFinderVolum",
+        "published": "2026-05-27T18:16:23.953"
       },
       {
-        "cve_id": "CVE-2026-38426",
+        "cve_id": "CVE-2026-45716",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "Buffer Overflow vulnerability in arendst Tasmota v.15.3.0.3 and before allows a remote attacker to execute arbitrary code via the xdrv_10_scripter.ino, fetch_jpg(), jpg_task.boundary[40], strcpy() fun",
-        "published": "2026-05-27T14:16:45.880"
+        "base_score": 8.8,
+        "description": "Budibase is an open-source low-code platform. Prior to 3.38.1, the POST /api/global/users/onboard endpoint is protected by workspaceBuilderOrAdmin middleware, allowing any user with builder permission",
+        "published": "2026-05-27T18:16:25.570"
       },
       {
-        "cve_id": "CVE-2026-38427",
+        "cve_id": "CVE-2026-45717",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "An issue in fetch_jpg() in xdrv_10_scripter.ino in Tasmota through 15.3.0.3 allows a remote attacker to cause heap buffer overflow. The Content-Length from a JPEG stream is stored in a uint16_t variab",
-        "published": "2026-05-27T14:16:46.023"
+        "base_score": 8.8,
+        "description": "Budibase is an open-source low-code platform. Prior to 3.38.1, Budibase exposes a REST API for datasource management. The route PUT /api/datasources/:datasourceId is registered in the authorizedRoutes",
+        "published": "2026-05-27T18:16:25.727"
       },
       {
-        "cve_id": "CVE-2024-56462",
+        "cve_id": "CVE-2026-42197",
         "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "IBM QRadar 7.5.0 through 7.5.0 UP15 Interim Fix 002 could allow a privileged user to upload a malicious backup archive that could be restored and used to gain access to the underlying operating system",
-        "published": "2026-05-27T14:16:41.417"
+        "base_score": 8.7,
+        "description": "RELATE is a web-based courseware package. Versions prior to commit 555f0efb1c5bd7531c07cd73724d7e566a81f620 have a stored cross-site scripting vulnerability that allows any enrolled student to execute",
+        "published": "2026-05-27T20:16:36.260"
       },
       {
-        "cve_id": "CVE-2026-1718",
+        "cve_id": "CVE-2026-48153",
         "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "IBM Db2 11.5.0 through 11.5.9, and 12.1.0 through 12.1.4 is vulnerable to a denial of service with a specially crafted query when autonomous transactions are enabled.",
-        "published": "2026-05-27T14:16:43.883"
-      },
-      {
-        "cve_id": "CVE-2026-1933",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "A flaw was found in Samba\u2019s handling of NTFS-style reparse points on shares configured with read only = yes. Due to missing SMB-layer access checks, authenticated users with underlying filesystem writ",
-        "published": "2026-05-27T14:16:44.023"
-      },
-      {
-        "cve_id": "CVE-2026-2340",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "A flaw was found in Samba\u2019s vfs_worm module. The module is intended to provide write-once, read-many (WORM) protections by preventing modification of files after a configurable grace period. Due to in",
-        "published": "2026-05-27T14:16:44.387"
-      },
-      {
-        "cve_id": "CVE-2026-3676",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "IBM Cloud APM, Base Private 8.1.4 and IBM Cloud APM, Advanced Private 8.1.4 IBM Db2 for Linux, UNIX and Windows (includes DB2 Connect Server) could allow an authenticated user to cause a denial of ser",
-        "published": "2026-05-27T14:16:47.123"
-      },
-      {
-        "cve_id": "CVE-2026-23679",
-        "severity": "MEDIUM",
-        "base_score": 6.2,
-        "description": "libusb before version 1.0.30 contains a NULL pointer dereference vulnerability that allows attackers to crash applications by supplying a malformed USB configuration descriptor where an interface clai",
-        "published": "2026-05-27T14:16:44.170"
-      },
-      {
-        "cve_id": "CVE-2024-40684",
-        "severity": "MEDIUM",
-        "base_score": 5.9,
-        "description": "IBM Operations Analytics - Log Analysis 1.3.5.0, 1.3.5.1, 1.3.5.2, 1.3.5.3, 1.3.6.0, 1.3.6.1, 1.3.7.0, 1.3.7.1, 1.3.7.2, and 1.3.8.0, 1.3.8.1, 1.3.8.2, 1.3.8.3, 1.3.8.4 IBM SmartCloud Analytics - Log ",
-        "published": "2026-05-27T14:16:40.757"
-      },
-      {
-        "cve_id": "CVE-2025-3633",
-        "severity": "MEDIUM",
-        "base_score": 5.4,
-        "description": "IBM Cognos Analytics 11.2.0, 11.2.4, 12.0, and 12.1.0 and IBM Cognos Transformer 11.2.4, 12.0, and 12.1.0 are vulnerable to cross-site scripting (XSS). This vulnerability allows a remote attacker to i",
-        "published": "2026-05-27T14:16:42.233"
-      },
-      {
-        "cve_id": "CVE-2024-28765",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "IBM SDI 7.2.0.0 through 7.2.0.14 and IBM Security Directory Integrator 10.0.0.0 through 10.0.0.2 could allow a remote attacker to obtain sensitive information when a detailed technical error message i",
-        "published": "2026-05-27T14:16:40.600"
-      },
-      {
-        "cve_id": "CVE-2026-2607",
-        "severity": "MEDIUM",
-        "base_score": 5.1,
-        "description": "IBM MQ Operator SC2: v3.2.0 through 3.2.23CD: \u00a0v3.3.0, v3.4.0, v3.4.1, v3.5.0, v3.5.1 - v3.5.3, v3.6.0 - v3.6.4, v3.7.0 - v3.7.2, v3.8.0, v3.8.1, v3.9.0, v3.9.1LTS: v2.0.0 - 2.0.29 and IBM supplied MQ",
-        "published": "2026-05-27T14:16:44.517"
-      },
-      {
-        "cve_id": "CVE-2026-9689",
-        "severity": "MEDIUM",
-        "base_score": 4.2,
-        "description": "A flaw was found in Keycloak, an open-source identity and access management solution. When a client application is configured to accept broad redirect Uniform Resource Identifiers (URIs), a remote att",
-        "published": "2026-05-27T12:17:15.513"
-      },
-      {
-        "cve_id": "CVE-2025-71303",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\naccel/amdxdna: Fix race condition when checking rpm_on\n\nWhen autosuspend is triggered, driver rpm_on flag is set to indicate that\na",
-        "published": "2026-05-27T14:16:42.733"
-      },
-      {
-        "cve_id": "CVE-2025-71304",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsmack: /smack/doi: accept previously used values\n\nWriting to /smack/doi a value that has ever been\nwritten there in the past disabl",
-        "published": "2026-05-27T14:16:42.850"
-      },
-      {
-        "cve_id": "CVE-2025-71305",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/display/dp_mst: Add protection against 0 vcpi\n\nWhen releasing a timeslot there is a slight chance we may end up\nwith the wrong ",
-        "published": "2026-05-27T14:16:43.000"
-      },
-      {
-        "cve_id": "CVE-2025-71306",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nima: Fix stack-out-of-bounds in is_bprm_creds_for_exec()\n\nKASAN reported a stack-out-of-bounds access in ima_appraise_measurement\nf",
-        "published": "2026-05-27T14:16:43.167"
+        "base_score": 8.5,
+        "description": "Budibase is an open-source low-code platform. Prior to 3.39.0, fetchToken in the OAuth2 SDK makes a POST to a builder-supplied URL with plain node-fetch, skipping the blacklist.isBlacklisted check tha",
+        "published": "2026-05-27T18:16:27.850"
       }
     ]
   },
