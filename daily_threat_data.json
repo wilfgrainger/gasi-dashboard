@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-28T15:28:46.975864+00:00",
+  "generated_at": "2026-05-28T18:30:23.188663+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 13,
-        "score": 3.0,
+        "value": 9,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -43,7 +43,7 @@
         "date_added": "2026-05-27",
         "due_date": "2026-06-10",
         "description": "Nx Console contains an embedded malicious code vulnerability that allowed a malicious version of Nx Console to be published. The compromised extension fetched an obfuscated payload that could harveste",
-        "ransomware_use": "Unknown"
+        "ransomware_use": "Known"
       },
       {
         "cve_id": "CVE-2026-45321",
@@ -53,7 +53,7 @@
         "date_added": "2026-05-27",
         "due_date": "2026-06-10",
         "description": "TanStack contains an unspecified vulnerability that allowed malicious versions of the product to be published to the npm registry to publish credential-stealing malware under a trusted identity.",
-        "ransomware_use": "Unknown"
+        "ransomware_use": "Known"
       },
       {
         "cve_id": "CVE-2026-8398",
@@ -238,58 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 349,
-    "critical_count": 13,
-    "high_count": 38,
+    "total": 350,
+    "critical_count": 9,
+    "high_count": 33,
     "cves": [
-      {
-        "cve_id": "CVE-2026-44327",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "free5GC is an open-source implementation of the 5G core network. Prior to 4.2.2, free5GC's NEF mounts the nnef-oam route group without inbound OAuth2/bearer-token authorization. A network attacker who",
-        "published": "2026-05-27T17:16:38.203"
-      },
-      {
-        "cve_id": "CVE-2026-44329",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "free5GC is an open-source implementation of the 5G core network. Prior to 4.2.2, free5GC's SMF mounts the UPI management route group without OAuth2/bearer-token authorization middleware. A network att",
-        "published": "2026-05-27T17:16:38.490"
-      },
-      {
-        "cve_id": "CVE-2026-44330",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "free5GC is an open-source implementation of the 5G core network. Prior to 4.2.2, free5GC's NEF mounts the nnef-pfdmanagement route group without inbound OAuth2/bearer-token authorization. A network at",
-        "published": "2026-05-27T17:16:38.713"
-      },
-      {
-        "cve_id": "CVE-2026-45087",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Dalfox is a powerful open-source XSS scanner and utility focused on automation. Prior to 2.13.0, when dalfox is started in REST API server mode (dalfox server), the server binds to 0.0.0.0:6664 by def",
-        "published": "2026-05-27T18:16:24.567"
-      },
-      {
-        "cve_id": "CVE-2026-46425",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Budibase is an open-source low-code platform. Prior to 3.38.2, packages/worker/src/api/routes/global/scim.ts attaches only two middlewares to the SCIM router: requireSCIM (checks the Enterprise featur",
-        "published": "2026-05-27T18:16:26.330"
-      },
       {
         "cve_id": "CVE-2026-45102",
         "severity": "CRITICAL",
         "base_score": 9.9,
         "description": "OneUptime is an open-source monitoring and observability platform. Prior to 10.0.98, OneUptime uses the Node.js' vm module as an isolation primitive. This API was not designed for that and can be esca",
         "published": "2026-05-27T20:16:38.250"
-      },
-      {
-        "cve_id": "CVE-2026-48027",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Nx Console is the user interface for Nx & Lerna. On 19 May 2026, a malicious version of Nx Console, 18.95.0, was published at 12:30 PM UTC and removed soon after at 12:48 PM UTC, leaving it available ",
-        "published": "2026-05-27T17:16:41.787"
       },
       {
         "cve_id": "CVE-2026-44887",
@@ -306,18 +264,32 @@
         "published": "2026-05-27T20:16:38.040"
       },
       {
-        "cve_id": "CVE-2026-44315",
+        "cve_id": "CVE-2026-8362",
         "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "free5GC is an open-source implementation of the 5G core network. Prior to 4.2.2, free5GC's NEF mounts the 3gpp-pfd-management API without inbound OAuth2/bearer-token authorization. A network attacker ",
-        "published": "2026-05-27T17:16:36.430"
+        "base_score": 9.8,
+        "description": "A stack-based buffer overflow condition exists in WOSDefaultHttpModule.dll when processing a long URL path starting with /woshome",
+        "published": "2026-05-27T20:16:42.993"
       },
       {
-        "cve_id": "CVE-2026-44326",
+        "cve_id": "CVE-2026-8363",
         "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "free5GC is an open-source implementation of the 5G core network. Prior to 4.2.2, free5GC's NEF mounts the 3gpp-traffic-influence API without inbound OAuth2/bearer-token authorization. A network attack",
-        "published": "2026-05-27T17:16:38.053"
+        "base_score": 9.8,
+        "description": "A stack-based buffer overflow condition exists in WOSDeviceDropFolder.dll when processing a long URL path starting with /resources:",
+        "published": "2026-05-27T20:16:43.190"
+      },
+      {
+        "cve_id": "CVE-2026-8364",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Gladinet Triofox Cloud Server Agent Access Service (GladServerAgentService.exe) listens on TCP port 7878 and processes remote HTTP messages with URL paths starting with /resources, /status, /sysinfo, ",
+        "published": "2026-05-27T20:16:43.333"
+      },
+      {
+        "cve_id": "CVE-2026-45083",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Goobi viewer is a web application that allows digitised material to be displayed in a web browser. From 4.8.0 to before 26.04.1, the Goobi viewer REST endpoint POST /api/v1/index/stream accepted a",
+        "published": "2026-05-27T22:16:36.820"
       },
       {
         "cve_id": "CVE-2026-44590",
@@ -327,46 +299,53 @@
         "published": "2026-05-27T20:16:37.293"
       },
       {
-        "cve_id": "CVE-2026-48150",
+        "cve_id": "CVE-2026-32999",
         "severity": "CRITICAL",
         "base_score": 9.0,
-        "description": "Budibase is an open-source low-code platform. Prior to 3.39.0, /api/public/v1/roles/assign is guarded by the builderOrAdmin middleware, which passes any user who is a builder for the app id in the x-b",
-        "published": "2026-05-27T18:16:27.463"
+        "description": "Insufficient character filtering in backup agent signing module on Comet Backup server allows authenticated tenant administrator to execute an arbitrary code on behalf of a privileged user on the affe",
+        "published": "2026-05-28T05:16:36.107"
       },
       {
-        "cve_id": "CVE-2026-44345",
+        "cve_id": "CVE-2026-44713",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "BentoML is a Python library for building online serving systems optimized for AI apps and model inference. Prior to 1.4.39, src/bentoml/_internal/container/frontend/dockerfile/templates/base_v2.j2 int",
-        "published": "2026-05-27T18:16:23.200"
+        "description": "pam_usb provides hardware authentication for Linux using ordinary removable media. Prior to 0.8.7, src/tmux.c reads the user's $TMUX environment variable, splits it on commas, and interpolates the soc",
+        "published": "2026-05-27T21:16:18.363"
       },
       {
-        "cve_id": "CVE-2026-44346",
+        "cve_id": "CVE-2026-9208",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "BentoML is a Python library for building online serving systems optimized for AI apps and model inference. Prior to 1.4.39, a malicious bentofile.yaml containing a newline-injected value in envs[*].na",
-        "published": "2026-05-27T18:16:23.333"
+        "description": "Tanium addressed an unauthorized code execution vulnerability in Connect.",
+        "published": "2026-05-27T22:16:37.097"
       },
       {
-        "cve_id": "CVE-2026-44521",
+        "cve_id": "CVE-2026-46414",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "elFinder is an open-source file manager for web, written in JavaScript using jQuery UI. Prior to 2.1.68, an authenticated SQL injection vulnerability in the elFinder MySQL volume driver (elFinderVolum",
-        "published": "2026-05-27T18:16:23.953"
+        "description": "Microsoft UFO open-source framework for intelligent automation across devices and platforms. In 3.0.1-4-ge2626659, Microsoft UFO's WebSocket control plane trusts client-supplied identity and role fiel",
+        "published": "2026-05-27T23:16:47.833"
       },
       {
-        "cve_id": "CVE-2026-45716",
+        "cve_id": "CVE-2026-8915",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Budibase is an open-source low-code platform. Prior to 3.38.1, the POST /api/global/users/onboard endpoint is protected by workspaceBuilderOrAdmin middleware, allowing any user with builder permission",
-        "published": "2026-05-27T18:16:25.570"
+        "description": "Out-of-bounds write vulnerability in Samsung Open Source Escargot allows Overflow Buffers.\n\nThis issue affects Escargot: 36f5fb58366a67b713c02f6fd985e924fcc09e31.",
+        "published": "2026-05-28T00:16:43.950"
       },
       {
-        "cve_id": "CVE-2026-45717",
+        "cve_id": "CVE-2026-7802",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Budibase is an open-source low-code platform. Prior to 3.38.1, Budibase exposes a REST API for datasource management. The route PUT /api/datasources/:datasourceId is registered in the authorizedRoutes",
-        "published": "2026-05-27T18:16:25.727"
+        "description": "The Frontend Admin by DynamiApps plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 3.29.2. This is due to the plugin not properly verifying that a user i",
+        "published": "2026-05-28T05:16:38.493"
+      },
+      {
+        "cve_id": "CVE-2026-9009",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Crawlomatic Multipage Scraper Post Generator plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 2.7.2 via the filter_content function. This is due to",
+        "published": "2026-05-28T06:16:28.873"
       },
       {
         "cve_id": "CVE-2026-42197",
@@ -376,11 +355,32 @@
         "published": "2026-05-27T20:16:36.260"
       },
       {
-        "cve_id": "CVE-2026-48153",
+        "cve_id": "CVE-2026-45108",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Budibase is an open-source low-code platform. Prior to 3.39.0, fetchToken in the OAuth2 SDK makes a POST to a builder-supplied URL with plain node-fetch, skipping the blacklist.isBlacklisted check tha",
-        "published": "2026-05-27T18:16:27.850"
+        "base_score": 8.4,
+        "description": "Himmelblau is an interoperability suite for Microsoft Azure Entra ID and Intune. From 2.0.0 to before 3.1.5 and 2.3.11, Himmelblau contained an authentication bypass vulnerability in the Device Author",
+        "published": "2026-05-27T20:16:38.550"
+      },
+      {
+        "cve_id": "CVE-2026-4868",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "GitLab has remediated an issue in GitLab EE affecting all versions from 18.8 before 18.10.7, 18.11 before 18.11.4, and 19.0 before 19.0.1 that, under certain conditions, could have allowed an authenti",
+        "published": "2026-05-27T19:16:24.317"
+      },
+      {
+        "cve_id": "CVE-2026-44712",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "pam_usb provides hardware authentication for Linux using ordinary removable media. Prior to 0.8.7, a crafted UUID such as $(id>/tmp/rce) in the config causes root RCE when pamusb-conf --reset-pads is ",
+        "published": "2026-05-27T21:16:18.213"
+      },
+      {
+        "cve_id": "CVE-2026-45137",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Anchor is a framework providing several convenient developer tools for writing Solana programs. From 1.0.0 to before 1.0.2, an logic error causes anchor programs to accept any program id when requirin",
+        "published": "2026-05-27T21:16:18.670"
       }
     ]
   },
