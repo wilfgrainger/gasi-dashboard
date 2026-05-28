@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-28T18:30:23.188663+00:00",
+  "generated_at": "2026-05-28T21:49:26.846815+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
-        "score": 2.5,
+        "value": 3,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,65 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 350,
-    "critical_count": 9,
-    "high_count": 33,
+    "total": 382,
+    "critical_count": 3,
+    "high_count": 20,
     "cves": [
-      {
-        "cve_id": "CVE-2026-45102",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "OneUptime is an open-source monitoring and observability platform. Prior to 10.0.98, OneUptime uses the Node.js' vm module as an isolation primitive. This API was not designed for that and can be esca",
-        "published": "2026-05-27T20:16:38.250"
-      },
-      {
-        "cve_id": "CVE-2026-44887",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Pi.Alert is a WIFI / LAN intruder detector with web service monitoring. Prior to 2026-05-07, Pi.Alert's web-based configuration editor allows arbitrary Python code to be injected into pialert.conf. Si",
-        "published": "2026-05-27T20:16:37.900"
-      },
-      {
-        "cve_id": "CVE-2026-44888",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Pi.Alert is a WIFI / LAN intruder detector with web service monitoring. Prior to 2026-05-07, Pi.Alert's SaveConfigFile() endpoint writes user-supplied numeric config values (e.g., SMTP_PORT) directly ",
-        "published": "2026-05-27T20:16:38.040"
-      },
-      {
-        "cve_id": "CVE-2026-8362",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A stack-based buffer overflow condition exists in WOSDefaultHttpModule.dll when processing a long URL path starting with /woshome",
-        "published": "2026-05-27T20:16:42.993"
-      },
-      {
-        "cve_id": "CVE-2026-8363",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A stack-based buffer overflow condition exists in WOSDeviceDropFolder.dll when processing a long URL path starting with /resources:",
-        "published": "2026-05-27T20:16:43.190"
-      },
-      {
-        "cve_id": "CVE-2026-8364",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Gladinet Triofox Cloud Server Agent Access Service (GladServerAgentService.exe) listens on TCP port 7878 and processes remote HTTP messages with URL paths starting with /resources, /status, /sysinfo, ",
-        "published": "2026-05-27T20:16:43.333"
-      },
       {
         "cve_id": "CVE-2026-45083",
         "severity": "CRITICAL",
         "base_score": 9.8,
         "description": "The Goobi viewer is a web application that allows digitised material to be displayed in a web browser. From 4.8.0 to before 26.04.1, the Goobi viewer REST endpoint POST /api/v1/index/stream accepted a",
         "published": "2026-05-27T22:16:36.820"
-      },
-      {
-        "cve_id": "CVE-2026-44590",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Sherlock hunts down social media accounts by username across social networks. Prior to 0.16.1, the GitHub Actions workflow validate_modified_targets.yml is vulnerable to command injection via the pull",
-        "published": "2026-05-27T20:16:37.293"
       },
       {
         "cve_id": "CVE-2026-32999",
@@ -306,11 +257,11 @@
         "published": "2026-05-28T05:16:36.107"
       },
       {
-        "cve_id": "CVE-2026-44713",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "pam_usb provides hardware authentication for Linux using ordinary removable media. Prior to 0.8.7, src/tmux.c reads the user's $TMUX environment variable, splits it on commas, and interpolates the soc",
-        "published": "2026-05-27T21:16:18.363"
+        "cve_id": "CVE-2026-4408",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "A flaw was found in Samba. A remote attacker can exploit a misconfiguration in Samba file servers and classic domain controllers that use the \"check password script\" feature. If this script is configu",
+        "published": "2026-05-28T09:16:47.643"
       },
       {
         "cve_id": "CVE-2026-9208",
@@ -348,39 +299,88 @@
         "published": "2026-05-28T06:16:28.873"
       },
       {
-        "cve_id": "CVE-2026-42197",
+        "cve_id": "CVE-2026-9227",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "RELATE is a web-based courseware package. Versions prior to commit 555f0efb1c5bd7531c07cd73724d7e566a81f620 have a stored cross-site scripting vulnerability that allows any enrolled student to execute",
-        "published": "2026-05-27T20:16:36.260"
+        "base_score": 8.8,
+        "description": "The GutenBee \u2013 Gutenberg Blocks plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 2.20.1 via the gutenbee_file_and_ext_json function. This is due to a f",
+        "published": "2026-05-28T08:16:37.713"
       },
       {
-        "cve_id": "CVE-2026-45108",
+        "cve_id": "CVE-2026-6226",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Himmelblau is an interoperability suite for Microsoft Azure Entra ID and Intune. From 2.0.0 to before 3.1.5 and 2.3.11, Himmelblau contained an authentication bypass vulnerability in the Device Author",
-        "published": "2026-05-27T20:16:38.550"
+        "base_score": 8.8,
+        "description": "The Frontend Admin by DynamiApps plugin for WordPress is vulnerable to unauthenticated privilege escalation in versions up to and including 3.29.2. This is due to insecure form submission handling tha",
+        "published": "2026-05-28T09:16:47.903"
       },
       {
-        "cve_id": "CVE-2026-4868",
+        "cve_id": "CVE-2026-7862",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "GitLab has remediated an issue in GitLab EE affecting all versions from 18.8 before 18.10.7, 18.11 before 18.11.4, and 19.0 before 19.0.1 that, under certain conditions, could have allowed an authenti",
-        "published": "2026-05-27T19:16:24.317"
+        "base_score": 8.6,
+        "description": "The Eupago Gateway For Woocommerce WordPress plugin before 4.7.2 does not properly restrict access to its refund request handler, allowing unauthenticated attackers to initiate refunds against any Woo",
+        "published": "2026-05-28T08:16:37.487"
       },
       {
-        "cve_id": "CVE-2026-44712",
+        "cve_id": "CVE-2026-46402",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "pam_usb provides hardware authentication for Linux using ordinary removable media. Prior to 0.8.7, a crafted UUID such as $(id>/tmp/rce) in the config causes root RCE when pamusb-conf --reset-pads is ",
-        "published": "2026-05-27T21:16:18.213"
+        "base_score": 8.1,
+        "description": "Microsoft UFO open-source framework for intelligent automation across devices and platforms. In 3.0.1-4-ge2626659, Microsoft UFO uses the user-controlled task_name value directly when constructing ses",
+        "published": "2026-05-27T23:16:47.700"
       },
       {
-        "cve_id": "CVE-2026-45137",
+        "cve_id": "CVE-2026-6455",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Anchor is a framework providing several convenient developer tools for writing Solana programs. From 1.0.0 to before 1.0.2, an logic error causes anchor programs to accept any program id when requirin",
-        "published": "2026-05-27T21:16:18.670"
+        "base_score": 8.1,
+        "description": "The WP Contact Form 7 DB Handler plugin for WordPress is vulnerable to Cross-Site Request Forgery leading to Arbitrary File Deletion via SQL Injection and PHP Object Injection in versions up to and in",
+        "published": "2026-05-28T08:16:36.477"
+      },
+      {
+        "cve_id": "CVE-2026-45152",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "uniget is a universal installer and updater for (container) tools. Prior to 0.27.1, a command injection vulnerability exists in uniget due to unsafe execution of the check field from metadata files us",
+        "published": "2026-05-27T22:16:36.963"
+      },
+      {
+        "cve_id": "CVE-2026-45322",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Microsoft UFO open-source framework for intelligent automation across devices and platforms. Microsoft UFO tagged releases up to and including v3.0.0 contain an OS command injection vulnerability in t",
+        "published": "2026-05-27T23:16:47.313"
+      },
+      {
+        "cve_id": "CVE-2026-9804",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "A flaw was found in KubeVirt's virt-exportserver component. An attacker with specific namespace-level access can exploit a path traversal vulnerability in the VMExport directory endpoint. By placing a",
+        "published": "2026-05-28T09:16:49.500"
+      },
+      {
+        "cve_id": "CVE-2026-32995",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Rocket.Chat DDP method autoTranslate.translateMessage in versions <8.5.0, <8.4.2, <8.3.4, <8.2.4, <8.1.5, <8.0.5, <7.13.8, and <7.10.12 accepts a client-supplied IMessage object and passes it dire",
+        "published": "2026-05-28T05:16:35.477"
+      },
+      {
+        "cve_id": "CVE-2026-7797",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Appointment Booking Calendar \u2014 Simply Schedule Appointments Booking Plugin plugin for WordPress is vulnerable to time-based blind SQL Injection via the 'append_where_sql' parameter in all versions",
+        "published": "2026-05-28T08:16:37.360"
+      },
+      {
+        "cve_id": "CVE-2026-9795",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A flaw was found in Keycloak's Fine-Grained Admin Permissions (FGAPv2) feature. An administrator with limited client management permissions can exploit this vulnerability to assign any realm role, inc",
+        "published": "2026-05-28T05:16:41.003"
+      },
+      {
+        "cve_id": "CVE-2026-2374",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The Login No Captcha reCAPTCHA plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the `$_SERVER['PHP_SELF']` superglobal in all versions up to, and including, 1.8.0. This is due to ",
+        "published": "2026-05-28T05:16:34.290"
       }
     ]
   },
