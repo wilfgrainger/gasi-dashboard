@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-29T02:13:32.818351+00:00",
+  "generated_at": "2026-05-29T07:46:14.625540+00:00",
   "threat_score": {
-    "score": 6.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
-        "score": 2.0,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -238,37 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 547,
-    "critical_count": 2,
-    "high_count": 14,
+    "total": 533,
+    "critical_count": 1,
+    "high_count": 9,
     "cves": [
-      {
-        "cve_id": "CVE-2026-32999",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "Insufficient character filtering in backup agent signing module on Comet Backup server allows authenticated tenant administrator to execute an arbitrary code on behalf of a privileged user on the affe",
-        "published": "2026-05-28T05:16:36.107"
-      },
       {
         "cve_id": "CVE-2026-4408",
         "severity": "CRITICAL",
         "base_score": 9.0,
         "description": "A flaw was found in Samba. A remote attacker can exploit a misconfiguration in Samba file servers and classic domain controllers that use the \"check password script\" feature. If this script is configu",
         "published": "2026-05-28T09:16:47.643"
-      },
-      {
-        "cve_id": "CVE-2026-7802",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Frontend Admin by DynamiApps plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 3.29.2. This is due to the plugin not properly verifying that a user i",
-        "published": "2026-05-28T05:16:38.493"
-      },
-      {
-        "cve_id": "CVE-2026-9009",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Crawlomatic Multipage Scraper Post Generator plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 2.7.2 via the filter_content function. This is due to",
-        "published": "2026-05-28T06:16:28.873"
       },
       {
         "cve_id": "CVE-2026-9227",
@@ -306,32 +285,11 @@
         "published": "2026-05-28T09:16:49.500"
       },
       {
-        "cve_id": "CVE-2026-32995",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Rocket.Chat DDP method autoTranslate.translateMessage in versions <8.5.0, <8.4.2, <8.3.4, <8.2.4, <8.1.5, <8.0.5, <7.13.8, and <7.10.12 accepts a client-supplied IMessage object and passes it dire",
-        "published": "2026-05-28T05:16:35.477"
-      },
-      {
         "cve_id": "CVE-2026-7797",
         "severity": "HIGH",
         "base_score": 7.5,
         "description": "The Appointment Booking Calendar \u2014 Simply Schedule Appointments Booking Plugin plugin for WordPress is vulnerable to time-based blind SQL Injection via the 'append_where_sql' parameter in all versions",
         "published": "2026-05-28T08:16:37.360"
-      },
-      {
-        "cve_id": "CVE-2026-9795",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A flaw was found in Keycloak's Fine-Grained Admin Permissions (FGAPv2) feature. An administrator with limited client management permissions can exploit this vulnerability to assign any realm role, inc",
-        "published": "2026-05-28T05:16:41.003"
-      },
-      {
-        "cve_id": "CVE-2026-2374",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The Login No Captcha reCAPTCHA plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the `$_SERVER['PHP_SELF']` superglobal in all versions up to, and including, 1.8.0. This is due to ",
-        "published": "2026-05-28T05:16:34.290"
       },
       {
         "cve_id": "CVE-2026-7052",
@@ -355,32 +313,74 @@
         "published": "2026-05-28T08:16:35.280"
       },
       {
-        "cve_id": "CVE-2026-9673",
-        "severity": "MEDIUM",
-        "base_score": 6.8,
-        "description": "Versions of the package json-2-csv from 3.15.0 and before 5.5.11 are vulnerable to CSV Injection via the preventCsvInjection option which can be bypassed. An attacker can inject formulas into CSV file",
-        "published": "2026-05-28T06:16:29.147"
-      },
-      {
-        "cve_id": "CVE-2026-9802",
-        "severity": "MEDIUM",
-        "base_score": 6.8,
-        "description": "A flaw was found in Keycloak. When revokeRefreshToken=true is enabled and persistent session storage is in use, a server restart can reset internal timing mechanisms. This allows a remote attacker, wh",
-        "published": "2026-05-28T06:16:29.620"
-      },
-      {
-        "cve_id": "CVE-2026-5737",
+        "cve_id": "CVE-2026-7048",
         "severity": "MEDIUM",
         "base_score": 6.5,
-        "description": "The Independent Analytics plugin for WordPress is vulnerable to Server-Side Request Forgery in all versions up to, and including, 2.14.9. This is due to a public tracking route at /wp-json/iawp/search",
-        "published": "2026-05-28T05:16:38.100"
+        "description": "The Photo Gallery by 10Web \u2013 Mobile-Friendly Image Gallery plugin for WordPress is vulnerable to time-based blind SQL Injection via the 'order_by' parameter in all versions up to, and including, 1.8.4",
+        "published": "2026-05-28T09:16:48.433"
       },
       {
-        "cve_id": "CVE-2026-9792",
+        "cve_id": "CVE-2026-6427",
         "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "A flaw was found in Keycloak's Client Policies, specifically within the `org.keycloak.protocol.oidc` component. When certain condition providers (client-type, client-roles, client-attributes, client-s",
-        "published": "2026-05-28T05:16:40.537"
+        "base_score": 6.4,
+        "description": "The a3 Lazy Load plugin for WordPress is vulnerable to Stored Cross-Site Scripting in all versions up to, and including, 2.7.6 This is due to a regex bug in the _filter_videos() method that breaks HTM",
+        "published": "2026-05-28T08:16:36.317"
+      },
+      {
+        "cve_id": "CVE-2026-4334",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "The Shariff Wrapper plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'headline' parameter in the [shariff] shortcode in all versions up to, and including, 4.6.20 due to insuff",
+        "published": "2026-05-28T09:16:45.360"
+      },
+      {
+        "cve_id": "CVE-2026-7660",
+        "severity": "MEDIUM",
+        "base_score": 6.1,
+        "description": "The Easy Updates Manager plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'paged' parameter in versions up to, and including, 9.0.20 This is due to insufficient input sanit",
+        "published": "2026-05-28T08:16:37.240"
+      },
+      {
+        "cve_id": "CVE-2026-7552",
+        "severity": "MEDIUM",
+        "base_score": 5.3,
+        "description": "The Geo Mashup plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 1.13.19. This is due to the plugin not properly verifying that a user is authorized to p",
+        "published": "2026-05-28T08:16:36.730"
+      },
+      {
+        "cve_id": "CVE-2026-7651",
+        "severity": "MEDIUM",
+        "base_score": 5.3,
+        "description": "The User Registration & Membership \u2013 Free & Paid Memberships, Subscriptions, Content Restriction, User Profile, Custom User Registration & Login Builder plugin for WordPress is vulnerable to Insecure ",
+        "published": "2026-05-28T08:16:37.117"
+      },
+      {
+        "cve_id": "CVE-2026-6937",
+        "severity": "MEDIUM",
+        "base_score": 5.3,
+        "description": "The Appointment Booking Calendar \u2014 Simply Schedule Appointments Booking Plugin plugin for WordPress is vulnerable to Missing Authorization in all versions up to, and including, 1.6.11.8 due to the plu",
+        "published": "2026-05-28T09:16:48.170"
+      },
+      {
+        "cve_id": "CVE-2026-7621",
+        "severity": "MEDIUM",
+        "base_score": 4.3,
+        "description": "The SMTP2GO for WordPress \u2013 Email Made Easy plugin for WordPress is vulnerable to unauthorized access in all versions up to, and including, 1.16.0. This is due to the plugin not properly verifying tha",
+        "published": "2026-05-28T08:16:36.863"
+      },
+      {
+        "cve_id": "CVE-2026-8682",
+        "severity": "MEDIUM",
+        "base_score": 4.3,
+        "description": "The 3D Viewer \u2013 3D Model Viewer \u2013 Augmented Reality \u2013 Virtual Try On plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 2.0.1. This is due to the plugin n",
+        "published": "2026-05-28T08:16:37.590"
+      },
+      {
+        "cve_id": "CVE-2026-9618",
+        "severity": "MEDIUM",
+        "base_score": 4.3,
+        "description": "The PeachPay \u2014 Payments & Express Checkout for WooCommerce (supports Stripe, PayPal, Square, Authorize.net, NMI) plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to,",
+        "published": "2026-05-28T08:16:37.870"
       }
     ]
   },
