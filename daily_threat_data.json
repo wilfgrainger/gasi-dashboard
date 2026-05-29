@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-05-29T18:26:33.772426+00:00",
+  "generated_at": "2026-05-29T21:45:07.284176+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 21,
+        "value": 22,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 12,
-        "score": 3.0,
+        "value": 9,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1606,
-    "recent_30d_count": 21,
+    "total_catalog_count": 1607,
+    "recent_30d_count": 22,
     "recent": [
+      {
+        "cve_id": "CVE-2026-0257",
+        "vendor": "Palo Alto Networks",
+        "product": "PAN-OS",
+        "name": "Palo Alto Networks PAN-OS Authentication Bypass Vulnerability",
+        "date_added": "2026-05-29",
+        "due_date": "2026-06-01",
+        "description": "Palo Alto Networks PAN-OS contains an authentication bypass vulnerability that allows attackers to bypass security restrictions and establish an unauthorized VPN connection.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-48027",
         "vendor": "Nx",
@@ -224,163 +234,153 @@
         "due_date": "2026-05-09",
         "description": "Palo Alto Networks PAN-OS contains an out-of-bounds write vulnerability in the User-ID Authentication Portal (aka Captive Portal) service that can allow an unauthenticated attacker to execute arbitrar",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-31431",
-        "vendor": "Linux",
-        "product": "Kernel",
-        "name": "Linux Kernel Incorrect Resource Transfer Between Spheres Vulnerability",
-        "date_added": "2026-05-01",
-        "due_date": "2026-05-15",
-        "description": "Linux Kernel contains an incorrect resource transfer between spheres vulnerability that could allow for privilege escalation.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 442,
-    "critical_count": 12,
-    "high_count": 31,
+    "total": 427,
+    "critical_count": 9,
+    "high_count": 59,
     "cves": [
       {
-        "cve_id": "CVE-2026-46840",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Vulnerability in Oracle REST Data Services (component: Backend-as-a-Service).  Supported versions that are affected are 24.2.0-26.1.0. Easily exploitable vulnerability allows unauthenticated attacker ",
-        "published": "2026-05-28T21:16:33.837"
-      },
-      {
-        "cve_id": "CVE-2026-46775",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Vulnerability in Oracle REST Data Services (component: Core).  Supported versions that are affected are 24.2.0-26.1.0. Easily exploitable vulnerability allows low privileged attacker with network acce",
-        "published": "2026-05-28T21:16:31.383"
-      },
-      {
-        "cve_id": "CVE-2026-46822",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Vulnerability in the Oracle iAssets product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allo",
-        "published": "2026-05-28T21:16:32.157"
-      },
-      {
-        "cve_id": "CVE-2026-46824",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Vulnerability in the Oracle Universal Work Queue product of Oracle E-Business Suite (component: Work Provider Site Level Administration).  Supported versions that are affected are 12.2.3-12.2.15. Easi",
-        "published": "2026-05-28T21:16:32.413"
-      },
-      {
-        "cve_id": "CVE-2026-46839",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Vulnerability in Oracle REST Data Services (component: Core).  Supported versions that are affected are 24.2.0-26.1.0. Easily exploitable vulnerability allows low privileged attacker with network acce",
-        "published": "2026-05-28T21:16:33.707"
-      },
-      {
-        "cve_id": "CVE-2026-9645",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Exposed methods allow authenticated users to create and execute arbitrary JavaScript code on the server. The scripts execute with full access, enabling complete system compromise as commands are execu",
-        "published": "2026-05-28T21:16:34.950"
-      },
-      {
-        "cve_id": "CVE-2026-45039",
+        "cve_id": "CVE-2026-8809",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "RustFS is a distributed object storage system built in Rust. Prior to 1.0.0-beta.2, the internode RPC layer authenticates every request with an HMAC-SHA256 signature using a shared secret. The functio",
-        "published": "2026-05-28T19:16:38.390"
+        "description": "The Advanced Custom Fields: Extended plugin for WordPress is vulnerable to Privilege Escalation via Validation Bypass in all versions up to and including 0.9.2.5. The vulnerability exists due to the a",
+        "published": "2026-05-28T23:16:44.760"
       },
       {
-        "cve_id": "CVE-2026-34311",
+        "cve_id": "CVE-2026-9872",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Vulnerability in the Oracle Hospitality OPERA 5 Property Services product of Oracle Hospitality Applications (component: Opera).  Supported versions that are affected are 5.6.19.24, 5.6.22, 5.6.25.19,",
-        "published": "2026-05-28T21:16:29.180"
+        "base_score": 9.6,
+        "description": "Out of bounds write in GPU in Google Chrome on Android prior to 148.0.7778.216 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: C",
+        "published": "2026-05-28T23:16:45.140"
       },
       {
-        "cve_id": "CVE-2026-45288",
+        "cve_id": "CVE-2026-9874",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Marten is a .NET Transactional Document DB and Event Store on PostgreSQL. Prior to 8.36.1, Marten's full-text search APIs interpolated the user-supplied regConfig parameter directly into the generated",
-        "published": "2026-05-28T21:16:31.220"
+        "base_score": 9.6,
+        "description": "Use after free in Dawn in Google Chrome prior to 148.0.7778.216 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
+        "published": "2026-05-28T23:16:45.343"
       },
       {
-        "cve_id": "CVE-2026-46817",
+        "cve_id": "CVE-2026-9875",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Vulnerability in the Oracle Payments product of Oracle E-Business Suite (component: File Transmission).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allow",
-        "published": "2026-05-28T21:16:31.503"
+        "base_score": 9.6,
+        "description": "Out of bounds read in WebGL in Google Chrome on Android prior to 148.0.7778.216 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: ",
+        "published": "2026-05-28T23:16:45.443"
       },
       {
-        "cve_id": "CVE-2026-46819",
+        "cve_id": "CVE-2026-9876",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Vulnerability in the Oracle Internet Procurement Connector product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploit",
-        "published": "2026-05-28T21:16:31.760"
+        "base_score": 9.6,
+        "description": "Use after free in WebGL in Google Chrome on Android prior to 148.0.7778.216 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Crit",
+        "published": "2026-05-28T23:16:45.543"
       },
       {
-        "cve_id": "CVE-2026-46833",
+        "cve_id": "CVE-2026-9886",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Use after free in Base in Google Chrome on Mac prior to 148.0.7778.216 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
+        "published": "2026-05-28T23:16:46.587"
+      },
+      {
+        "cve_id": "CVE-2026-9918",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Inappropriate implementation in Tint in Google Chrome prior to 148.0.7778.216 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Hi",
+        "published": "2026-05-28T23:16:49.897"
+      },
+      {
+        "cve_id": "CVE-2026-9881",
         "severity": "CRITICAL",
         "base_score": 9.0,
-        "description": "Vulnerability in the Net Service component of Oracle Database Server.  Supported versions that are affected are 23.4.0-23.26.2. Difficult to exploit vulnerability allows unauthenticated attacker with ",
-        "published": "2026-05-28T21:16:33.200"
+        "description": "Use after free in Bluetooth in Google Chrome on Mac prior to 148.0.7778.216 allowed an attacker who convinced a user to install a malicious extension to potentially perform a sandbox escape via a craf",
+        "published": "2026-05-28T23:16:46.047"
       },
       {
-        "cve_id": "CVE-2026-4944",
+        "cve_id": "CVE-2026-9891",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "Use after free in Extensions in Google Chrome prior to 148.0.7778.216 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted Chrome Ex",
+        "published": "2026-05-28T23:16:47.083"
+      },
+      {
+        "cve_id": "CVE-2026-10002",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "vllm-project/vllm version 0.14.1 contains a vulnerability where the `trust_remote_code=True` parameter is hardcoded in two model implementation files (`vllm/model_executor/models/nemotron_vl.py` and `",
-        "published": "2026-05-28T19:16:42.677"
+        "description": "Use after free in PDFium in Google Chrome prior to 148.0.7778.216 allowed a remote attacker to potentially exploit heap corruption via a crafted PDF file. (Chromium security severity: High)",
+        "published": "2026-05-28T23:16:41.970"
       },
       {
-        "cve_id": "CVE-2026-46826",
+        "cve_id": "CVE-2026-10007",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Vulnerability in the Oracle Payroll product of Oracle E-Business Suite (component: Internal Operations).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability allo",
-        "published": "2026-05-28T21:16:32.560"
+        "description": "Use after free in SVG in Google Chrome prior to 148.0.7778.216 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-05-28T23:16:42.533"
       },
       {
-        "cve_id": "CVE-2026-46827",
+        "cve_id": "CVE-2026-10013",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Vulnerability in the Oracle Payroll product of Oracle E-Business Suite (component: Self Service Manager).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vulnerability all",
-        "published": "2026-05-28T21:16:32.687"
+        "description": "Use after free in WebCodecs in Google Chrome prior to 148.0.7778.216 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-05-28T23:16:43.130"
       },
       {
-        "cve_id": "CVE-2026-46837",
+        "cve_id": "CVE-2026-10015",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Vulnerability in the Oracle Flow Manufacturing product of Oracle E-Business Suite (component: Security).  Supported versions that are affected are 12.2.9-12.2.15. Easily exploitable vulnerability allo",
-        "published": "2026-05-28T21:16:33.573"
+        "description": "Integer overflow in WTF in Google Chrome prior to 148.0.7778.216 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-05-28T23:16:43.333"
       },
       {
-        "cve_id": "CVE-2026-49127",
+        "cve_id": "CVE-2026-10016",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Music Player Daemon (MPD) before version 0.24.11 contains a stack buffer overflow vulnerability in the pcm_unpack_24be function in src/pcm/Pack.cxx that allows unauthenticated attackers to corrupt sta",
-        "published": "2026-05-28T20:16:26.387"
+        "base_score": 8.8,
+        "description": "Use after free in DOM in Google Chrome prior to 148.0.7778.216 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-05-28T23:16:43.470"
       },
       {
-        "cve_id": "CVE-2026-46820",
+        "cve_id": "CVE-2026-10019",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Vulnerability in the Oracle Financials Common Modules product of Oracle E-Business Suite (component: Common Components).  Supported versions that are affected are 12.2.3-12.2.15. Easily exploitable vu",
-        "published": "2026-05-28T21:16:31.890"
+        "base_score": 8.8,
+        "description": "Integer overflow in ANGLE in Google Chrome prior to 148.0.7778.216 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: Medium)",
+        "published": "2026-05-28T23:16:43.783"
       },
       {
-        "cve_id": "CVE-2026-44850",
+        "cve_id": "CVE-2026-10021",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Portainer Community Edition is a lightweight service delivery platform for containerized applications that can be used to manage Docker, Swarm, Kubernetes and ACI environments. From 2.33.0 to before 2",
-        "published": "2026-05-28T22:16:59.107"
+        "base_score": 8.8,
+        "description": "Insufficient validation of untrusted input in USB in Google Chrome prior to 148.0.7778.216 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: Med",
+        "published": "2026-05-28T23:16:43.990"
       },
       {
-        "cve_id": "CVE-2026-46509",
+        "cve_id": "CVE-2026-10022",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "deepobj provides get, set, delete deep objects in javascript. Prior to 1.0.3, prototype pollution is possible when property paths contain __proto__/constructor/prototype. The property path must not be",
-        "published": "2026-05-28T19:16:39.280"
+        "base_score": 8.8,
+        "description": "Type Confusion in V8 in Google Chrome prior to 148.0.7778.216 allowed an attacker who convinced a user to install a malicious extension to execute arbitrary code inside a sandbox via a crafted Chrome ",
+        "published": "2026-05-28T23:16:44.090"
+      },
+      {
+        "cve_id": "CVE-2026-9873",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in Network in Google Chrome prior to 148.0.7778.216 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+        "published": "2026-05-28T23:16:45.240"
+      },
+      {
+        "cve_id": "CVE-2026-9878",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in ANGLE in Google Chrome prior to 148.0.7778.216 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+        "published": "2026-05-28T23:16:45.747"
+      },
+      {
+        "cve_id": "CVE-2026-9879",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Out of bounds write in ANGLE in Google Chrome prior to 148.0.7778.216 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: Critical)",
+        "published": "2026-05-28T23:16:45.843"
       }
     ]
   },
