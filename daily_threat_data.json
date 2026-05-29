@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-05-29T07:46:14.625540+00:00",
+  "generated_at": "2026-05-29T11:19:38.248725+00:00",
   "threat_score": {
-    "score": 5.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 7.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 10,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 533,
-    "critical_count": 1,
-    "high_count": 9,
+    "total": 389,
+    "critical_count": 10,
+    "high_count": 26,
     "cves": [
       {
-        "cve_id": "CVE-2026-4408",
+        "cve_id": "CVE-2026-43898",
         "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "A flaw was found in Samba. A remote attacker can exploit a misconfiguration in Samba file servers and classic domain controllers that use the \"check password script\" feature. If this script is configu",
-        "published": "2026-05-28T09:16:47.643"
+        "base_score": 10.0,
+        "description": "SandboxJS is a JavaScript sandboxing library. Prior to 0.9.6, sandbox-defined functions expose Function.caller, allowing sandboxed code to recover the internal LispType.Call runtime callback. That cal",
+        "published": "2026-05-28T18:16:32.837"
       },
       {
-        "cve_id": "CVE-2026-9227",
+        "cve_id": "CVE-2026-24444",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "SDMC NE6037 cable modem routers running firmware 7.1.6.0.25 and 7.1.6.1.9_B9 contain a hardcoded password vulnerability in the web management interface recovery endpoints (mgmt.php, npcmd.php) that al",
+        "published": "2026-05-28T17:16:20.143"
+      },
+      {
+        "cve_id": "CVE-2026-38702",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A command injection vulnerability exists in the Admin Access feature of InHand Networks IR302 firmware V3.5.108, IR305 firmware V1.0.118, IR315 firmware V1.0.118, IR615 firmware V1.0.118, and earlier ",
+        "published": "2026-05-28T17:16:21.177"
+      },
+      {
+        "cve_id": "CVE-2026-38703",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A command injection vulnerability exists in the ZeroTier VPN feature of InHand Networks IR302 firmware V3.5.108, IR305 firmware V1.0.118, IR315 firmware V1.0.118, IR615 firmware V1.0.118, and earlier ",
+        "published": "2026-05-28T17:16:21.293"
+      },
+      {
+        "cve_id": "CVE-2026-38704",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A command injection vulnerability exists in the WireGuard VPN feature of InHand Networks IR302 firmware V3.5.108, IR305 firmware V1.0.118, IR315 firmware V1.0.118, IR615 firmware V1.0.118, and earlier",
+        "published": "2026-05-28T17:16:21.413"
+      },
+      {
+        "cve_id": "CVE-2026-38707",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A command injection vulnerability exists in the IPSec VPN feature of InHand Networks IR302 firmware V3.5.108, IR305 firmware V1.0.118, IR315 firmware V1.0.118, IR615 firmware V1.0.118, and earlier ver",
+        "published": "2026-05-28T17:16:21.530"
+      },
+      {
+        "cve_id": "CVE-2026-45039",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "RustFS is a distributed object storage system built in Rust. Prior to 1.0.0-beta.2, the internode RPC layer authenticates every request with an HMAC-SHA256 signature using a shared secret. The functio",
+        "published": "2026-05-28T19:16:38.390"
+      },
+      {
+        "cve_id": "CVE-2026-45311",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "CodeWhale is a DeepSeek + MiMo coding agent in terminal. From 0.3.0 to 0.8.23, the run_tests tool executes cargo test in the workspace with ApprovalRequirement::Auto, meaning it runs without any user ",
+        "published": "2026-05-28T18:16:35.170"
+      },
+      {
+        "cve_id": "CVE-2026-45323",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "MeshCore Card provides MeshCore Lovelace card for Home Assistant. Prior to 0.3.3, Meshcore node names are rendered without HTML escaping in meshcore-card, allowing any node within direct or indirect (",
+        "published": "2026-05-28T18:16:35.300"
+      },
+      {
+        "cve_id": "CVE-2026-45374",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "CodeWhale is a DeepSeek + MiMo coding agent in terminal. Prior to 0.8.26, the task_create tool spawns durable sub-agents that inherit two insecure defaults, allow_shell defaults to true (config.rs:149",
+        "published": "2026-05-28T18:16:35.843"
+      },
+      {
+        "cve_id": "CVE-2026-35671",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The GutenBee \u2013 Gutenberg Blocks plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 2.20.1 via the gutenbee_file_and_ext_json function. This is due to a f",
-        "published": "2026-05-28T08:16:37.713"
+        "description": "phpMyFAQ before 4.1.3 contains an insecure direct object reference vulnerability in the admin API user password endpoint that allows authenticated administrators to change any user's password without ",
+        "published": "2026-05-28T16:16:21.530"
       },
       {
-        "cve_id": "CVE-2026-6226",
+        "cve_id": "CVE-2026-47759",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Frontend Admin by DynamiApps plugin for WordPress is vulnerable to unauthenticated privilege escalation in versions up to and including 3.29.2. This is due to insecure form submission handling tha",
-        "published": "2026-05-28T09:16:47.903"
+        "base_score": 8.7,
+        "description": "TinyMCE is an open source rich text editor. Prior to 5.11.1, 7.9.3, and 8.5.1, there is a stored XSS vulnerability via unsanitized data-mce-* attributes (data-mce-href, data-mce-src, data-mce-style). ",
+        "published": "2026-05-28T16:16:28.070"
       },
       {
-        "cve_id": "CVE-2026-7862",
+        "cve_id": "CVE-2026-47760",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "TinyMCE is an open source rich text editor. From 6.8.0 to before 7.1.0, TinyMCE contains an XSS vulnerability caused by improper SVG namespace scope handling in the sanitizer. A crafted payload using ",
+        "published": "2026-05-28T16:16:28.210"
+      },
+      {
+        "cve_id": "CVE-2026-47761",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "TinyMCE is an open source rich text editor. Prior to 5.11.1, 7.9.3, and 8.5.1, there is a stored XSS vulnerability in the media plugin. Attackers can inject malicious scripts via crafted data-mce-* at",
+        "published": "2026-05-28T16:16:28.337"
+      },
+      {
+        "cve_id": "CVE-2026-47762",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "TinyMCE is an open source rich text editor. Prior to 5.11.1, 7.9.3, and 8.5.1, there is a stored XSS vulnerability via forged mce:protected comments. Allows attackers to bypass sanitization and inject",
+        "published": "2026-05-28T16:16:28.470"
+      },
+      {
+        "cve_id": "CVE-2026-44543",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "Local Path Provisioner provides a way for the Kubernetes users to utilize the local storage in each node. Prior to 0.0.36, a malicious user with permission to edit the local-path-config ConfigMap in t",
+        "published": "2026-05-28T17:16:30.967"
+      },
+      {
+        "cve_id": "CVE-2026-45348",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "pyLoad is a free and open-source download manager written in Python. Prior to 0.5.0b3.dev100, the packages.js template at src/pyload/webui/app/themes/modern/templates/js/packages.js:172 interpolates a",
+        "published": "2026-05-28T18:16:35.437"
+      },
+      {
+        "cve_id": "CVE-2026-44461",
         "severity": "HIGH",
         "base_score": 8.6,
-        "description": "The Eupago Gateway For Woocommerce WordPress plugin before 4.7.2 does not properly restrict access to its refund request handler, allowing unauthenticated attackers to initiate refunds against any Woo",
-        "published": "2026-05-28T08:16:37.487"
+        "description": "Zed is a code editor. Prior to 0.227.1, Zed builds SSH/WSL remote commands as a shell command string that starts with exec env ..., but environment variable keys are inserted without shell quoting or ",
+        "published": "2026-05-28T17:16:28.853"
       },
       {
-        "cve_id": "CVE-2026-6455",
+        "cve_id": "CVE-2026-44463",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The WP Contact Form 7 DB Handler plugin for WordPress is vulnerable to Cross-Site Request Forgery leading to Arbitrary File Deletion via SQL Injection and PHP Object Injection in versions up to and in",
-        "published": "2026-05-28T08:16:36.477"
+        "base_score": 8.6,
+        "description": "Zed is a code editor. Prior to 0.229.0, Zed's terminal tool permission system can be bypassed by prepending environment variable assignments to allowlisted commands, hijacking program behavior (e.g., ",
+        "published": "2026-05-28T17:16:29.810"
       },
       {
-        "cve_id": "CVE-2026-9804",
+        "cve_id": "CVE-2026-44465",
         "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "A flaw was found in KubeVirt's virt-exportserver component. An attacker with specific namespace-level access can exploit a path traversal vulnerability in the VMExport directory endpoint. By placing a",
-        "published": "2026-05-28T09:16:49.500"
-      },
-      {
-        "cve_id": "CVE-2026-7797",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Appointment Booking Calendar \u2014 Simply Schedule Appointments Booking Plugin plugin for WordPress is vulnerable to time-based blind SQL Injection via the 'append_where_sql' parameter in all versions",
-        "published": "2026-05-28T08:16:37.360"
-      },
-      {
-        "cve_id": "CVE-2026-7052",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The HT Contact Form \u2013 Drag & Drop Form Builder for WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'file_upload' parameter in all versions up to, and including, 2.8",
-        "published": "2026-05-28T08:16:36.603"
-      },
-      {
-        "cve_id": "CVE-2026-7634",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The SlimStat Analytics plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'User-Agent' header in all versions up to, and including, 5.4.11 due to insufficient input sanitization",
-        "published": "2026-05-28T08:16:36.990"
-      },
-      {
-        "cve_id": "CVE-2026-44604",
-        "severity": "HIGH",
-        "base_score": 7.0,
-        "description": "A command injection vulnerability was discovered in the `rpmuncompress` utility of RPM. When extracting certain archive formats (ZIP, 7z, GEM) to a specified destination directory, the tool inserts th",
-        "published": "2026-05-28T08:16:35.280"
-      },
-      {
-        "cve_id": "CVE-2026-7048",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "The Photo Gallery by 10Web \u2013 Mobile-Friendly Image Gallery plugin for WordPress is vulnerable to time-based blind SQL Injection via the 'order_by' parameter in all versions up to, and including, 1.8.4",
-        "published": "2026-05-28T09:16:48.433"
-      },
-      {
-        "cve_id": "CVE-2026-6427",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The a3 Lazy Load plugin for WordPress is vulnerable to Stored Cross-Site Scripting in all versions up to, and including, 2.7.6 This is due to a regex bug in the _filter_videos() method that breaks HTM",
-        "published": "2026-05-28T08:16:36.317"
-      },
-      {
-        "cve_id": "CVE-2026-4334",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The Shariff Wrapper plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'headline' parameter in the [shariff] shortcode in all versions up to, and including, 4.6.20 due to insuff",
-        "published": "2026-05-28T09:16:45.360"
-      },
-      {
-        "cve_id": "CVE-2026-7660",
-        "severity": "MEDIUM",
-        "base_score": 6.1,
-        "description": "The Easy Updates Manager plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'paged' parameter in versions up to, and including, 9.0.20 This is due to insufficient input sanit",
-        "published": "2026-05-28T08:16:37.240"
-      },
-      {
-        "cve_id": "CVE-2026-7552",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "The Geo Mashup plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 1.13.19. This is due to the plugin not properly verifying that a user is authorized to p",
-        "published": "2026-05-28T08:16:36.730"
-      },
-      {
-        "cve_id": "CVE-2026-7651",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "The User Registration & Membership \u2013 Free & Paid Memberships, Subscriptions, Content Restriction, User Profile, Custom User Registration & Login Builder plugin for WordPress is vulnerable to Insecure ",
-        "published": "2026-05-28T08:16:37.117"
-      },
-      {
-        "cve_id": "CVE-2026-6937",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "The Appointment Booking Calendar \u2014 Simply Schedule Appointments Booking Plugin plugin for WordPress is vulnerable to Missing Authorization in all versions up to, and including, 1.6.11.8 due to the plu",
-        "published": "2026-05-28T09:16:48.170"
-      },
-      {
-        "cve_id": "CVE-2026-7621",
-        "severity": "MEDIUM",
-        "base_score": 4.3,
-        "description": "The SMTP2GO for WordPress \u2013 Email Made Easy plugin for WordPress is vulnerable to unauthorized access in all versions up to, and including, 1.16.0. This is due to the plugin not properly verifying tha",
-        "published": "2026-05-28T08:16:36.863"
-      },
-      {
-        "cve_id": "CVE-2026-8682",
-        "severity": "MEDIUM",
-        "base_score": 4.3,
-        "description": "The 3D Viewer \u2013 3D Model Viewer \u2013 Augmented Reality \u2013 Virtual Try On plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 2.0.1. This is due to the plugin n",
-        "published": "2026-05-28T08:16:37.590"
-      },
-      {
-        "cve_id": "CVE-2026-9618",
-        "severity": "MEDIUM",
-        "base_score": 4.3,
-        "description": "The PeachPay \u2014 Payments & Express Checkout for WooCommerce (supports Stripe, PayPal, Square, Authorize.net, NMI) plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to,",
-        "published": "2026-05-28T08:16:37.870"
+        "base_score": 8.6,
+        "description": "Zed is a code editor. Prior to 0.227.1, Zed IDE executes arbitrary commands when opening a folder with a malicious .git/config file that abuses the core.fsmonitor Git configuration option. This allows",
+        "published": "2026-05-28T17:16:30.043"
       }
     ]
   },
