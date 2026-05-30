@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-30T13:04:07.545028+00:00",
+  "generated_at": "2026-05-30T16:52:32.862404+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
-        "score": 2.5,
+        "value": 16,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 203,
-    "critical_count": 6,
-    "high_count": 44,
+    "total": 138,
+    "critical_count": 16,
+    "high_count": 30,
     "cves": [
       {
-        "cve_id": "CVE-2026-45312",
+        "cve_id": "CVE-2026-45631",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "RAGFlow is an open-source RAG (Retrieval-Augmented Generation) engine. In 0.24.0 and earlier, a Jinja2 template injection in the prompt generator (rag/prompts/generator.py) allows any authenticated us",
-        "published": "2026-05-29T13:16:22.770"
+        "base_score": 10.0,
+        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). From 0.27.0 to before 0.29.3, a hardcoded BETTER_AUTH_SECRET fallback (\"better-auth-secret-123456789\") lets an unauthenticated attacker f",
+        "published": "2026-05-29T18:17:11.243"
       },
       {
-        "cve_id": "CVE-2026-44962",
+        "cve_id": "CVE-2026-45625",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "Plesk contains an XPath injection vulnerability in the APS Application Catalog search functionality, where user-supplied input is interpolated into XPath queries without proper sanitization. This allo",
-        "published": "2026-05-29T16:16:27.567"
+        "description": "Arcane is an interface for managing Docker containers, images, networks, and volumes. Prior to 1.19.0, Arcane's huma-based REST API exposes nine endpoints under /api/customize/git-repositories and /ap",
+        "published": "2026-05-29T18:17:10.267"
       },
       {
-        "cve_id": "CVE-2026-45663",
+        "cve_id": "CVE-2026-45629",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). In 0.29.1 and earlier, a command injection vulnerability exists in the Docker file upload functionality. When an authenticated user uploa",
-        "published": "2026-05-29T16:16:28.347"
+        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). In 0.28.8 and earlier, authenticated OS command injection in the /listen-deployment WebSocket endpoint allows any organization member to ",
+        "published": "2026-05-29T18:17:10.953"
       },
       {
-        "cve_id": "CVE-2026-10071",
+        "cve_id": "CVE-2026-45632",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). In 0.26.7 and earlier, the schedule router does not enforce organization/role checks. As a result, any authenticated user can create, upd",
+        "published": "2026-05-29T18:17:11.373"
+      },
+      {
+        "cve_id": "CVE-2026-45633",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). In 0.26.6 and earlier, Dokploy contains a command injection vulnerability in the /docker-container-logs WebSocket endpoint. The tail and ",
+        "published": "2026-05-29T18:17:11.510"
+      },
+      {
+        "cve_id": "CVE-2026-45661",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). In 0.26.5 and earlier, a critical path traversal vulnerability exists in Dokploy v0.26.5 that allows authenticated users to write arbitra",
+        "published": "2026-05-29T18:17:11.780"
+      },
+      {
+        "cve_id": "CVE-2026-47744",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Shopper is a Headless e-commerce Admin Panel. Prior to 2.8.0, two distinct authorization defects in the team settings allowed any authenticated panel user to take over the RBAC system. Settings/Team/I",
+        "published": "2026-05-29T19:16:26.037"
+      },
+      {
+        "cve_id": "CVE-2026-45372",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "cpp-httplib is a C++11 single-file header-only cross platform HTTP/HTTPS library. Prior to 0.44.0, when cpp-httplib's server parses an incoming request, it applies percent-decoding to every header val",
+        "published": "2026-05-29T20:16:26.473"
+      },
+      {
+        "cve_id": "CVE-2026-7786",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "DreamMaker developed by Interinfo has an Arbitrary File Upload vulnerability, allowing unauthenticated remote attackers to upload and execute web shell backdoors, thereby enabling arbitrary code execu",
-        "published": "2026-05-29T13:16:22.480"
+        "description": "Jinan USR IOT Technology Limited (PUSR) USR-W610 RS232/485 to Wi-Fi/Ethernet Converter\ndevice firmware contains plaintext administrative credentials embedded in the firmware image. These credentials c",
+        "published": "2026-05-29T18:17:13.403"
       },
       {
-        "cve_id": "CVE-2026-10042",
+        "cve_id": "CVE-2026-44649",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "manga-image-translator contains a remote code execution vulnerability in the shared API server mode due to unsafe deserialization of untrusted pickle data in the share.py module, where the /execute/{m",
-        "published": "2026-05-29T15:16:21.843"
+        "description": "SillyTavern is a locally installed user interface that allows users to interact with text generation large language models, image generation engines, and text-to-speech voice models. Prior to 1.18.0, ",
+        "published": "2026-05-29T19:16:24.720"
       },
       {
-        "cve_id": "CVE-2026-4290",
+        "cve_id": "CVE-2026-45697",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Formie is a Craft CMS plugin for creating forms. Prior to 2.2.20 and 3.1.24, unauthenticated users could submit crafted values into Hidden fields (with Default value \u2192 Custom) that were evaluated as T",
+        "published": "2026-05-29T20:16:27.393"
+      },
+      {
+        "cve_id": "CVE-2026-45628",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). In 0.29.2 and earlier, Dokploy constructs shell commands using JavaScript template literals and executes them via child_process.exec() (w",
+        "published": "2026-05-29T18:17:10.807"
+      },
+      {
+        "cve_id": "CVE-2026-5386",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "The WP Travel Pro plugin for WordPress is vulnerable to arbitrary user deletion via the /wp-json/wp-travel/v1/travel-guide/{user_id} REST API endpoint in all versions up to, and including, 10.6.0. Thi",
-        "published": "2026-05-29T15:16:24.893"
+        "description": "The affected\u00a0KMW CCTV Security Cameras are\u00a0vulnerable to a critical unauthenticated password reset. This flaw allows an attacker to remotely reset the administrator password to a known value without a",
+        "published": "2026-05-29T18:17:12.867"
       },
       {
-        "cve_id": "CVE-2026-45578",
+        "cve_id": "CVE-2026-44650",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "SillyTavern is a locally installed user interface that allows users to interact with text generation large language models, image generation engines, and text-to-speech voice models. Prior to 1.18.0, ",
+        "published": "2026-05-29T19:16:24.857"
+      },
+      {
+        "cve_id": "CVE-2026-9051",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "There is an authentication bypass vulnerability in the NI SystemLink Enterprise Dashboard application that may allow an unauthenticated remote attacker to bypass authentication controls leading to pri",
+        "published": "2026-05-29T19:16:28.800"
+      },
+      {
+        "cve_id": "CVE-2026-45630",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). In 0.28.8 and earlier, authenticated OS command injection in the application.updateTraefikConfig tRPC endpoint allows admin/owner users t",
+        "published": "2026-05-29T18:17:11.103"
+      },
+      {
+        "cve_id": "CVE-2026-47125",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "WWBN AVideo is an open source video platform. In 29.0 and earlier, there is a classic shell-metacharacter injection. The YPTSocket notification branch in plugin/Live/on_publish.php builds an execAsync",
-        "published": "2026-05-29T14:16:30.253"
+        "description": "Arcane is an interface for managing Docker containers, images, networks, and volumes. Prior to 1.19.2, the PUT /api/environments/{id}/templates/variables endpoint, which writes the system-wide .env.gl",
+        "published": "2026-05-29T18:17:12.347"
       },
       {
-        "cve_id": "CVE-2026-10062",
+        "cve_id": "CVE-2026-5768",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A vulnerability was determined in TRENDnet TEW-432BRP 3.10B20. Affected by this vulnerability is the function formSetRoute of the file /goform/formSetRoute. This manipulation of the argument ip/mask/g",
-        "published": "2026-05-29T15:16:22.073"
+        "description": "The Frontier X2 device allows unauthenticated BLE read/write access to critical GATT characteristics without enforcing pairing authentication or authorization. This allows attackers within BLE range t",
+        "published": "2026-05-29T18:17:12.997"
       },
       {
-        "cve_id": "CVE-2026-10063",
+        "cve_id": "CVE-2026-44420",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A vulnerability was identified in TRENDnet TEW-432BRP 3.10B20. Affected by this issue is the function formWPS of the file /goform/formWPS. Such manipulation of the argument peerPin leads to stack-base",
-        "published": "2026-05-29T15:16:22.240"
+        "description": "FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to 3.26.0, a malicious RDP client can trigger a heap-buffer-overflow write in FreeRDP's server-side clipboard (cliprdr) channel b",
+        "published": "2026-05-29T20:16:24.383"
       },
       {
-        "cve_id": "CVE-2018-25388",
+        "cve_id": "CVE-2026-44421",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "HaPe PKH 1.1 contains an arbitrary file upload vulnerability that allows authenticated attackers to upload malicious files by bypassing file type validation. Attackers can upload PHP files through mul",
-        "published": "2026-05-29T16:16:17.990"
-      },
-      {
-        "cve_id": "CVE-2026-10065",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A weakness has been identified in Shibby Tomato 1.28. This vulnerability affects the function get_ups_field of the file tomatodata.cgi. Executing a manipulation of the argument Date can lead to stack-",
-        "published": "2026-05-29T16:16:23.210"
-      },
-      {
-        "cve_id": "CVE-2026-10066",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A security vulnerability has been detected in Shibby Tomato up to 1.28. This issue affects the function sub_9068 of the file tomatoups.cgi of the component UPS Service. The manipulation leads to stack",
-        "published": "2026-05-29T16:16:23.387"
-      },
-      {
-        "cve_id": "CVE-2026-10067",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was detected in Shibby Tomato 1.28. Impacted is the function sub_90F0 of the file multimon.cgi. The manipulation results in stack-based buffer overflow. The attack can be launched remo",
-        "published": "2026-05-29T16:16:23.563"
-      },
-      {
-        "cve_id": "CVE-2026-35674",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenClaw before 2026.5.18 contains a scope bypass vulnerability in the Gateway chat.send route that allows scoped clients to execute privileged commands. Attackers with operator.write scope can delive",
-        "published": "2026-05-29T16:16:26.377"
-      },
-      {
-        "cve_id": "CVE-2026-45662",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). In 0.29.0 and earlier, the deleteRegistry function in Dokploy (packages/server/src/services/registry.ts) executes docker logout ${respons",
-        "published": "2026-05-29T16:16:28.213"
-      },
-      {
-        "cve_id": "CVE-2026-48527",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "HAX CMS helps manage microsite universe with PHP or NodeJs backends. Versions up to and including 26.0.0 are affected by a stored cross-site scripting (XSS) vulnerability in the `/system/api/saveNode`",
-        "published": "2026-05-29T13:16:23.133"
-      },
-      {
-        "cve_id": "CVE-2018-25383",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Free MP3 CD Ripper 2.8 contains a stack-based buffer overflow vulnerability in WMA file processing that allows local attackers to bypass DEP protection via structured exception handling manipulation. ",
-        "published": "2026-05-29T16:16:17.323"
-      },
-      {
-        "cve_id": "CVE-2026-44698",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Home Assistant is open source home automation software that puts local control and privacy first. Prior to 2026.4.1 for iOS and 2026.4.4 for Android, he Home Assistant Companion apps for Android and i",
-        "published": "2026-05-29T14:16:28.823"
-      },
-      {
-        "cve_id": "CVE-2026-32905",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "OpenClaw before 2026.5.4 contains an authorization bypass vulnerability in the bundled device-pair plugin that allows non-owner authorized chat senders to issue device-pairing bootstrap codes without ",
-        "published": "2026-05-29T16:16:25.093"
-      },
-      {
-        "cve_id": "CVE-2026-10105",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "agno 2.6.5 contains a SQL injection vulnerability in the ClickHouse vector database backend that allows attackers to inject arbitrary SQL expressions by supplying malicious metadata keys and values to",
-        "published": "2026-05-29T18:16:31.003"
+        "description": "FreeRDP is a free implementation of the Remote Desktop Protocol. Prior to 3.26.0, a malicious RDP server can trigger a heap-buffer-overflow write in the FreeRDP client by sending crafted RDPGFX PDUs. ",
+        "published": "2026-05-29T20:16:24.513"
       }
     ]
   },
