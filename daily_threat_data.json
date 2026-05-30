@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T21:45:07.284176+00:00",
+  "generated_at": "2026-05-30T02:09:29.191547+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 22,
+        "value": 21,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
+        "value": 6,
         "score": 2.5,
         "max": 3
       },
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1607,
-    "recent_30d_count": 22,
+    "recent_30d_count": 21,
     "recent": [
       {
         "cve_id": "CVE-2026-0257",
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 427,
-    "critical_count": 9,
-    "high_count": 59,
+    "total": 249,
+    "critical_count": 6,
+    "high_count": 18,
     "cves": [
       {
-        "cve_id": "CVE-2026-8809",
+        "cve_id": "CVE-2026-9558",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A Server-Side Template Injection (SSTI) vulnerability exists in Mautic's theme engine. The platform renders uploaded Twig templates without a sandbox or strict function restrictions. Authenticated use",
+        "published": "2026-05-29T11:16:17.980"
+      },
+      {
+        "cve_id": "CVE-2026-9559",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A path traversal vulnerability exists in the campaign import feature of Mautic 7. When extracting uploaded ZIP files during campaign imports, a flaw in the validation logic allows file paths to escape",
+        "published": "2026-05-29T12:16:26.680"
+      },
+      {
+        "cve_id": "CVE-2026-45312",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "RAGFlow is an open-source RAG (Retrieval-Augmented Generation) engine. In 0.24.0 and earlier, a Jinja2 template injection in the prompt generator (rag/prompts/generator.py) allows any authenticated us",
+        "published": "2026-05-29T13:16:22.770"
+      },
+      {
+        "cve_id": "CVE-2026-8732",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "The Advanced Custom Fields: Extended plugin for WordPress is vulnerable to Privilege Escalation via Validation Bypass in all versions up to and including 0.9.2.5. The vulnerability exists due to the a",
-        "published": "2026-05-28T23:16:44.760"
+        "description": "The WP Maps Pro plugin for WordPress is vulnerable to Privilege Escalation via Administrator Account Creation in all versions up to, and including, 6.1.0. This is due to the wpgmp_temp_access_ajax AJA",
+        "published": "2026-05-29T07:16:14.487"
       },
       {
-        "cve_id": "CVE-2026-9872",
+        "cve_id": "CVE-2026-3655",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Out of bounds write in GPU in Google Chrome on Android prior to 148.0.7778.216 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: C",
-        "published": "2026-05-28T23:16:45.140"
+        "base_score": 9.8,
+        "description": "The OTP Login With Phone Number, OTP Verification plugin for WordPress is vulnerable to authentication bypass in versions 1.8.50 through 1.8.60. This is due to the Firebase verification flow in the `l",
+        "published": "2026-05-29T08:16:18.920"
       },
       {
-        "cve_id": "CVE-2026-9874",
+        "cve_id": "CVE-2026-10071",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in Dawn in Google Chrome prior to 148.0.7778.216 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
-        "published": "2026-05-28T23:16:45.343"
+        "base_score": 9.8,
+        "description": "DreamMaker developed by Interinfo has an Arbitrary File Upload vulnerability, allowing unauthenticated remote attackers to upload and execute web shell backdoors, thereby enabling arbitrary code execu",
+        "published": "2026-05-29T13:16:22.480"
       },
       {
-        "cve_id": "CVE-2026-9875",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Out of bounds read in WebGL in Google Chrome on Android prior to 148.0.7778.216 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: ",
-        "published": "2026-05-28T23:16:45.443"
-      },
-      {
-        "cve_id": "CVE-2026-9876",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in WebGL in Google Chrome on Android prior to 148.0.7778.216 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Crit",
-        "published": "2026-05-28T23:16:45.543"
-      },
-      {
-        "cve_id": "CVE-2026-9886",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in Base in Google Chrome on Mac prior to 148.0.7778.216 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
-        "published": "2026-05-28T23:16:46.587"
-      },
-      {
-        "cve_id": "CVE-2026-9918",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Inappropriate implementation in Tint in Google Chrome prior to 148.0.7778.216 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Hi",
-        "published": "2026-05-28T23:16:49.897"
-      },
-      {
-        "cve_id": "CVE-2026-9881",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "Use after free in Bluetooth in Google Chrome on Mac prior to 148.0.7778.216 allowed an attacker who convinced a user to install a malicious extension to potentially perform a sandbox escape via a craf",
-        "published": "2026-05-28T23:16:46.047"
-      },
-      {
-        "cve_id": "CVE-2026-9891",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "Use after free in Extensions in Google Chrome prior to 148.0.7778.216 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted Chrome Ex",
-        "published": "2026-05-28T23:16:47.083"
-      },
-      {
-        "cve_id": "CVE-2026-10002",
+        "cve_id": "CVE-2025-11993",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Use after free in PDFium in Google Chrome prior to 148.0.7778.216 allowed a remote attacker to potentially exploit heap corruption via a crafted PDF file. (Chromium security severity: High)",
-        "published": "2026-05-28T23:16:41.970"
+        "description": "The WooCommerce Infinite Scroll and Ajax Pagination plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 1.8 via the 'settings' parameter in the 'import_set",
+        "published": "2026-05-29T07:16:13.730"
       },
       {
-        "cve_id": "CVE-2026-10007",
+        "cve_id": "CVE-2026-45578",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Use after free in SVG in Google Chrome prior to 148.0.7778.216 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-05-28T23:16:42.533"
+        "description": "WWBN AVideo is an open source video platform. In 29.0 and earlier, there is a classic shell-metacharacter injection. The YPTSocket notification branch in plugin/Live/on_publish.php builds an execAsync",
+        "published": "2026-05-29T14:16:30.253"
       },
       {
-        "cve_id": "CVE-2026-10013",
+        "cve_id": "CVE-2026-48527",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in WebCodecs in Google Chrome prior to 148.0.7778.216 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-05-28T23:16:43.130"
+        "base_score": 8.7,
+        "description": "HAX CMS helps manage microsite universe with PHP or NodeJs backends. Versions up to and including 26.0.0 are affected by a stored cross-site scripting (XSS) vulnerability in the `/system/api/saveNode`",
+        "published": "2026-05-29T13:16:23.133"
       },
       {
-        "cve_id": "CVE-2026-10015",
+        "cve_id": "CVE-2026-44698",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Integer overflow in WTF in Google Chrome prior to 148.0.7778.216 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-05-28T23:16:43.333"
+        "base_score": 8.3,
+        "description": "Home Assistant is open source home automation software that puts local control and privacy first. Prior to 2026.4.1 for iOS and 2026.4.4 for Android, he Home Assistant Companion apps for Android and i",
+        "published": "2026-05-29T14:16:28.823"
       },
       {
-        "cve_id": "CVE-2026-10016",
+        "cve_id": "CVE-2026-45615",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in DOM in Google Chrome prior to 148.0.7778.216 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-05-28T23:16:43.470"
+        "base_score": 8.2,
+        "description": "mouse07410/asn1c is an ASN.1 compiler. In 1.4 and earlier, a memory safety vulnerability was identified in the OER decoding skeleton files generated by asn1c (specifically INTEGER_oer.c). When parsing",
+        "published": "2026-05-29T14:16:30.847"
       },
       {
-        "cve_id": "CVE-2026-10019",
+        "cve_id": "CVE-2026-46510",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Integer overflow in ANGLE in Google Chrome prior to 148.0.7778.216 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: Medium)",
-        "published": "2026-05-28T23:16:43.783"
+        "base_score": 8.2,
+        "description": "form-data-objectizer converts FormData to object. Prior to 1.0.1, form-data-objectizer walks bracket-notation form keys (e.g. name[sub]) into nested objects without filtering __proto__, constructor, o",
+        "published": "2026-05-29T14:16:31.807"
       },
       {
-        "cve_id": "CVE-2026-10021",
+        "cve_id": "CVE-2026-6075",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Insufficient validation of untrusted input in USB in Google Chrome prior to 148.0.7778.216 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: Med",
-        "published": "2026-05-28T23:16:43.990"
+        "base_score": 8.1,
+        "description": "The Media Library Assistant plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions up to, and including, 3.35 This is due to missing nonce verification on the bulk action handler",
+        "published": "2026-05-29T09:16:18.400"
       },
       {
-        "cve_id": "CVE-2026-10022",
+        "cve_id": "CVE-2026-45707",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Type Confusion in V8 in Google Chrome prior to 148.0.7778.216 allowed an attacker who convinced a user to install a malicious extension to execute arbitrary code inside a sandbox via a crafted Chrome ",
-        "published": "2026-05-28T23:16:44.090"
+        "base_score": 8.1,
+        "description": "n8n-MCP is an MCP server that provides AI assistants access to n8n node documentation, properties, and operations. Prior to 2.51.2, when ENABLE_MULTI_TENANT=true, the HTTP transport documents that the",
+        "published": "2026-05-29T14:16:31.240"
       },
       {
-        "cve_id": "CVE-2026-9873",
+        "cve_id": "CVE-2026-45555",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in Network in Google Chrome prior to 148.0.7778.216 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Critical)",
-        "published": "2026-05-28T23:16:45.240"
+        "base_score": 7.8,
+        "description": "Roslyn CodeLens MCP Server is a Roslyn-based MCP server providing semantic code intelligence for .NET codebases. From 0.0.9 to 1.17.0, the get_diagnostics MCP tool loads and executes all DiagnosticAna",
+        "published": "2026-05-29T14:16:30.113"
       },
       {
-        "cve_id": "CVE-2026-9878",
+        "cve_id": "CVE-2026-42965",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in ANGLE in Google Chrome prior to 148.0.7778.216 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Critical)",
-        "published": "2026-05-28T23:16:45.747"
+        "base_score": 7.7,
+        "description": "A flaw was found in the OpenShift Router. A user with EndpointSlice write access can exploit this vulnerability by creating a Service backed by an FQDN (Fully Qualified Domain Name) EndpointSlice that",
+        "published": "2026-05-29T11:16:16.923"
       },
       {
-        "cve_id": "CVE-2026-9879",
+        "cve_id": "CVE-2026-9809",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Out of bounds write in ANGLE in Google Chrome prior to 148.0.7778.216 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: Critical)",
-        "published": "2026-05-28T23:16:45.843"
+        "base_score": 7.6,
+        "description": "A stored Cross-Site Scripting (XSS) vulnerability exists in the Projects component of Mautic 7. When displaying project tags and popovers on administrative detail views (such as campaigns, emails, or ",
+        "published": "2026-05-29T12:16:26.917"
+      },
+      {
+        "cve_id": "CVE-2026-10056",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "CORS misconfiguration in the REST API of Network Optix Nx Witness VMS before version 6.1.2, when running in the default Standard security mode, on Linux and Windows allows an unauthenticated remote at",
+        "published": "2026-05-29T09:16:17.147"
+      },
+      {
+        "cve_id": "CVE-2026-10073",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "DreamMaker developed by Interinfo has an Arbitrary File Read vulnerability, allowing unauthenticated local attackers to exploit Relative Path Traversal to download arbitrary system files.",
+        "published": "2026-05-29T14:16:25.953"
+      },
+      {
+        "cve_id": "CVE-2026-46579",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "A flaw was found in the OpenShift Router. When a Route has `insecureEdgeTerminationPolicy` set to Allow, the HTTP frontend does not remove `X-SSL-Client-*` headers from incoming requests. This allows ",
+        "published": "2026-05-29T11:16:17.050"
       }
     ]
   },
