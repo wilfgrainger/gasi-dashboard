@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-06-02T16:01:20.481199+00:00",
+  "generated_at": "2026-06-02T22:17:02.717792+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 21,
+        "value": 23,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
-        "score": 2.5,
+        "value": 3,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -32,9 +32,29 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1608,
-    "recent_30d_count": 21,
+    "total_catalog_count": 1610,
+    "recent_30d_count": 23,
     "recent": [
+      {
+        "cve_id": "CVE-2022-0492",
+        "vendor": "Linux",
+        "product": "Kernel",
+        "name": "Linux Kernel Improper Authentication Vulnerability",
+        "date_added": "2026-06-02",
+        "due_date": "2026-06-05",
+        "description": "Linux Kernel contains an improper authentication vulnerability which could allow for privilege escalation via the cgroups v1 release_agent feature.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2025-48595",
+        "vendor": "Android",
+        "product": "Framework",
+        "name": "Android Framework Integer Overflow Vulnerability",
+        "date_added": "2026-06-02",
+        "due_date": "2026-06-05",
+        "description": "Android Framework contains an integer overflow vulnerability that allows for code execution that could allow for local privilege escalation.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2024-21182",
         "vendor": "Oracle",
@@ -214,173 +234,153 @@
         "due_date": "2026-05-17",
         "description": "Cisco Catalyst SD-WAN Controller & Manager contain an authentication bypass vulnerability that allows an unauthenticated, remote attacker to bypass authentication and obtain administrative privileges ",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-42208",
-        "vendor": "BerriAI",
-        "product": "LiteLLM",
-        "name": "BerriAI LiteLLM SQL Injection Vulnerability",
-        "date_added": "2026-05-08",
-        "due_date": "2026-05-11",
-        "description": "BerriAI LiteLLM contains a SQL injection vulnerability that allows an attacker to read data from the proxy's database and potentially modify it, leading to unauthorized access to the proxy and the cre",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-6973",
-        "vendor": "Ivanti",
-        "product": "Endpoint Manager Mobile (EPMM)",
-        "name": "Ivanti Endpoint Manager Mobile (EPMM) Improper Input Validation Vulnerability",
-        "date_added": "2026-05-07",
-        "due_date": "2026-05-10",
-        "description": "Ivanti Endpoint Manager Mobile (EPMM) contains an improper input validation vulnerability that allows a remotely authenticated user with administrative access to achieve remote code execution.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 325,
-    "critical_count": 7,
-    "high_count": 36,
+    "total": 247,
+    "critical_count": 3,
+    "high_count": 29,
     "cves": [
       {
-        "cve_id": "CVE-2026-45131",
+        "cve_id": "CVE-2026-25879",
         "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "CloudPirates Open Source Helm Charts is a collection of Helm charts. Prior to commit fcf9302, a GitHub Actions workflow (pull-request.yaml) executes attacker-controlled code from fork pull requests in",
-        "published": "2026-06-01T17:17:08.450"
+        "base_score": 9.8,
+        "description": "Langroid is a framework for building large-language-model-powered applications. Prior to version 0.63.0, SQLChatAgent executes SQL produced by an LLM, which is influenceable by prompt injection. When ",
+        "published": "2026-06-01T23:16:21.930"
       },
       {
-        "cve_id": "CVE-2026-45132",
+        "cve_id": "CVE-2026-8206",
         "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "CloudPirates Open Source Helm Charts is a collection of Helm charts. Prior to commit fcf9302, a GitHub Actions workflow (generate-schema.yaml) exposes sensitive credentials (Personal Access Token and ",
-        "published": "2026-06-01T17:17:08.640"
+        "base_score": 9.8,
+        "description": "The Kirki \u2013 Freeform Page Builder, Website Builder & Customizer plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions 6.0.0 to 6.0.6. This is due to the plugi",
+        "published": "2026-06-02T04:17:03.550"
       },
       {
-        "cve_id": "CVE-2026-44211",
+        "cve_id": "CVE-2025-53209",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Cline is an autonomous coding agent as an SDK, IDE extension, or CLI assistant. In versions 2.13.0 and prior, there is a cross-origin WebSocket hijack vulnerability in Cline Kanban servers. At time of",
-        "published": "2026-06-01T17:17:07.617"
+        "base_score": 9.8,
+        "description": "Incorrect Privilege Assignment vulnerability in Themeisle Masteriyo LMS PRO allows Privilege Escalation.\n\nThis issue affects Masteriyo LMS PRO: from n/a through 2.20.0.",
+        "published": "2026-06-02T10:16:19.847"
       },
       {
-        "cve_id": "CVE-2026-42672",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Wp Directory Kit WP Directory Kit allows Blind SQL Injection.\n\nThis issue affects WP Directory Kit",
-        "published": "2026-06-01T17:16:59.667"
-      },
-      {
-        "cve_id": "CVE-2026-8644",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "IBM WebSphere Application Server 9.0, and 8.5 is vulnerable to identity spoofing.",
-        "published": "2026-06-01T19:16:55.097"
-      },
-      {
-        "cve_id": "CVE-2026-9311",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "IBM WebSphere Application Server 9.0, and 8.5 is vulnerable to remote code execution caused by the bypass of security controls.",
-        "published": "2026-06-01T19:16:55.537"
-      },
-      {
-        "cve_id": "CVE-2026-9319",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "IBM WebSphere Application Server 9.0, and 8.5 is vulnerable to potential remote code execution due to deserialization of untrusted data via JAX-WS endpoints with WS-Security.",
-        "published": "2026-06-01T19:16:55.680"
-      },
-      {
-        "cve_id": "CVE-2026-10270",
+        "cve_id": "CVE-2026-25276",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A vulnerability was detected in D-Link DI-7001 MINI up to 19.09.19A1. Impacted is the function sprintf of the file /httpd_debug.asp of the component API. The manipulation of the argument Time results ",
-        "published": "2026-06-01T17:16:43.280"
+        "description": "Memory corruption while using Strongbox due to missing bounds check.",
+        "published": "2026-06-01T23:16:21.690"
       },
       {
-        "cve_id": "CVE-2026-43623",
+        "cve_id": "CVE-2026-25277",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "microtar through 0.1.0 contains a stack-based buffer overflow vulnerability in the raw_to_header() function in src/microtar.c that allows attackers to corrupt adjacent stack memory by supplying a craf",
-        "published": "2026-06-01T19:16:46.723"
+        "description": "Memory corruption while using Strongbox due to buffer overflow.",
+        "published": "2026-06-01T23:16:21.820"
       },
       {
-        "cve_id": "CVE-2026-7770",
+        "cve_id": "CVE-2026-1784",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "IBM i Access Family 1.1.5.0 through 1.1.9.12 IBM i Access Client Solutions (ACS) is vulnerable to remote code execution when configured to listen for requests from IBM i Navigator.",
-        "published": "2026-06-01T19:16:54.773"
+        "description": "The Route OpenShift resource allows to define routes to make pods reachable at a subdomain through HAProxy. It was found that the checks performed on the spec.path YAML stanza in a Route document was ",
+        "published": "2026-06-02T09:16:15.683"
       },
       {
-        "cve_id": "CVE-2026-9614",
+        "cve_id": "CVE-2025-53345",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "An Improper Access Control vulnerability in Ivanti\u00a0Neurons for\u00a0ITSM\u00a0(cloud and\u00a0on-premises)\u00a0allows a remote authenticated attacker to gain administrative access.",
-        "published": "2026-06-01T19:16:55.940"
+        "description": "Missing Authorization vulnerability leading to code execution after installing malicious vulnerable plugin in ThimPress Thim Core.\n\nThis issue affects Thim Core: from n/a through 2.3.3.",
+        "published": "2026-06-02T10:16:20.107"
       },
       {
-        "cve_id": "CVE-2026-37232",
+        "cve_id": "CVE-2019-25718",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "An issue was discovered in OpenAirInterface5G 2.4.0 (nr-softmodem) in the E2SM-KPM RAN Function's PRB utilization metric calculation. The functions fill_RRU_PrbTotDl() and fill_RRU_PrbTotUl() in opena",
-        "published": "2026-06-01T19:16:33.623"
+        "base_score": 8.4,
+        "description": "Dr\u00e4ger Infinity Explorer C700 contains a privilege escalation vulnerability that allows attackers to break out of kiosk mode and access the underlying operating system through a specific dialog intera",
+        "published": "2026-06-01T23:16:13.270"
       },
       {
-        "cve_id": "CVE-2026-9330",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "IBM WebSphere Application Server 9.0, and 8.5 is affected by an improper validation of user-supplied data during deserialization using the SAML Web Single Sign-On component. This could result in remot",
-        "published": "2026-06-01T19:16:55.813"
-      },
-      {
-        "cve_id": "CVE-2026-43624",
+        "cve_id": "CVE-2026-24088",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "F5-TTS through version 1.1.20 contains a path traversal vulnerability in the finetune Gradio handlers that allows unauthenticated attackers to write arbitrary files by passing unsanitized user-supplie",
-        "published": "2026-06-01T19:16:46.960"
+        "description": "Cryptographic Issue while processing a specific partition which allows unauthorized write access to load a customized bootloader.",
+        "published": "2026-06-01T23:16:19.570"
       },
       {
-        "cve_id": "CVE-2026-45302",
+        "cve_id": "CVE-2026-24752",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "parse-nested-form-data is a tiny node module for parsing FormData by name into objects and arrays. Prior to version 1.0.1, parseFormData() walks bracket and dot-notation FormData field names into nest",
-        "published": "2026-06-01T19:16:51.113"
+        "description": "Kiteworks is a private data network (PDN). Prior to version 9.3.0, a reflected XSS vulnerability in Kiteworks Secure Data Forms could allow an external attacker to trick a user into executing arbitrar",
+        "published": "2026-06-01T23:16:20.213"
       },
       {
-        "cve_id": "CVE-2026-45545",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Nextcloud is an open source content collaboration platform. From versions 0.7.0 to before 0.7.7, 0.8.0 to before 0.8.10, 0.9.0 to before 0.9.8, and 1.0.0 to before 1.0.4, an authenticated attacker wit",
-        "published": "2026-06-01T19:16:52.020"
-      },
-      {
-        "cve_id": "CVE-2026-45156",
+        "cve_id": "CVE-2025-53440",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Nextcloud is an open source content collaboration platform. From versions 0.3.0 to before 3.1.0, 5.0.0 to before 5.1.0, and 6.0.0 to before 6.4.0, a missing signature verification in User OIDC allowed",
-        "published": "2026-06-01T17:17:09.283"
+        "description": "Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in Axiomthemes Confidant allows PHP Local File Inclusion.\n\nThis issue affects Conf",
+        "published": "2026-06-02T12:16:16.493"
       },
       {
-        "cve_id": "CVE-2026-41013",
+        "cve_id": "CVE-2025-58705",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Input validation bypass in SMB volume mount handling in CloudFoundry Foundation diego-release allows low-privileged CF space developer to inject arbitrary kernel CIFS mount options via bypassing the m",
-        "published": "2026-06-01T19:16:39.887"
+        "description": "Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in Axiomthemes Crafti allows PHP Local File Inclusion.\n\nThis issue affects Crafti:",
+        "published": "2026-06-02T12:16:16.743"
       },
       {
-        "cve_id": "CVE-2026-45281",
+        "cve_id": "CVE-2026-39550",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Nextcloud is an open source content collaboration platform. In Nextcloud Server from versions 32.0.0 to before 32.0.9, and 33.0.0 to before 33.0.3, with the knowledge of other users\u2019 principal URL an ",
-        "published": "2026-06-01T19:16:50.193"
+        "description": "Deserialization of Untrusted Data vulnerability in Elated-Themes Aperitif allows Object Injection.\n\nThis issue affects Aperitif: from n/a through 1.6.",
+        "published": "2026-06-02T12:16:17.247"
       },
       {
-        "cve_id": "CVE-2026-49121",
+        "cve_id": "CVE-2026-39551",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "AI Tensor Engine for ROCm (AITER) through 0.1.14 contains an unauthenticated remote code execution vulnerability in the MessageQueue.recv() function within shm_broadcast.py that allows unauthenticated",
-        "published": "2026-06-01T19:16:54.180"
+        "description": "Deserialization of Untrusted Data vulnerability in Elated-Themes T\u00f6bel allows Object Injection.\n\nThis issue affects T\u00f6bel: from n/a through 1.8.1.",
+        "published": "2026-06-02T12:16:17.377"
+      },
+      {
+        "cve_id": "CVE-2025-59604",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Memory Corruption when running a memory copy operation due to invalid writes caused by a null pointer.",
+        "published": "2026-06-01T23:16:15.613"
+      },
+      {
+        "cve_id": "CVE-2025-59605",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Memory Corruption when processing device identifier strings that exceed the expected maximum length.",
+        "published": "2026-06-01T23:16:15.807"
+      },
+      {
+        "cve_id": "CVE-2025-59606",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Memory Corruption when writing to invalid memory locations occurs due to heap memory exhaustion during secure data initialization.",
+        "published": "2026-06-01T23:16:15.970"
+      },
+      {
+        "cve_id": "CVE-2026-25258",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Memory corruption while processing IOCTL calls for escape operations.",
+        "published": "2026-06-01T23:16:21.277"
+      },
+      {
+        "cve_id": "CVE-2026-25259",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Memory corruption while processing multiple IOCTL command for escape operations.",
+        "published": "2026-06-01T23:16:21.410"
+      },
+      {
+        "cve_id": "CVE-2026-25260",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Memory Corruption when accessing shared buffers without validation of concurrent user-mode input modifications.",
+        "published": "2026-06-01T23:16:21.547"
       }
     ]
   },
