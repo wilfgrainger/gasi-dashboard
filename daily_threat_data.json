@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-04T18:08:32.108603+00:00",
+  "generated_at": "2026-06-04T21:23:55.310537+00:00",
   "threat_score": {
-    "score": 5.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 7.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 13,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 233,
-    "critical_count": 1,
-    "high_count": 24,
+    "total": 183,
+    "critical_count": 13,
+    "high_count": 37,
     "cves": [
       {
         "cve_id": "CVE-2026-41283",
@@ -250,18 +250,88 @@
         "published": "2026-06-04T04:17:12.700"
       },
       {
-        "cve_id": "CVE-2026-36607",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Mercusys AC12G (EU) V1 router with firmware AC12G(EU)_V1_200909 allows unauthenticated brute-force attacks via the TDDP password change endpoint (code=10), which lacks the rate limiting applied to the",
-        "published": "2026-06-03T18:16:21.797"
+        "cve_id": "CVE-2026-49185",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The FieldX MDM adb messaging topic passes unverified payloads directly into\u00a0Runtime.exec(), allowing command/instruction injection.",
+        "published": "2026-06-04T04:17:15.387"
       },
       {
-        "cve_id": "CVE-2026-36608",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Mercusys AC12G (EU) V1 router with firmware AC12G(EU)_V1_200909 allows UPnP AddPortMapping to forward external ports to the router's own admin interface by accepting its own IP (192.168.1.1) or localh",
-        "published": "2026-06-03T18:16:21.923"
+        "cve_id": "CVE-2026-49186",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The local MQTT broker does not enforce topic-level Access Control Lists (ACLs). This allows any client to subscribe using wildcard characters (#\u00a0or\u00a0+) to enumerate hidden network devices or publish ro",
+        "published": "2026-06-04T04:17:15.550"
+      },
+      {
+        "cve_id": "CVE-2026-49188",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The\u00a0ai_cmd\u00a0utility executes with full root permissions. It pipes socket inputs directly to\u00a0popen(), paving the way for unauthenticated users to execute arbitrary root commands.",
+        "published": "2026-06-04T06:16:24.583"
+      },
+      {
+        "cve_id": "CVE-2026-49191",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The production build of the M3WebServer hard-codes its backend API keys, which can be easily intercepted through verbose error handling pages.",
+        "published": "2026-06-04T07:16:27.013"
+      },
+      {
+        "cve_id": "CVE-2026-50211",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Leftover engineering diagnostics and factory-level diagnostic software remain exposed on retail builds, giving malicious apps write privileges to internal NVRAM registers.",
+        "published": "2026-06-04T09:16:29.700"
+      },
+      {
+        "cve_id": "CVE-2026-4104",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Authorization bypass through User-Controlled SQL primary key vulnerability in Akmer Informatics Automation Industry and Trade Ltd. Co. TeknoPass allows SQL Injection.\n\nThis issue affects TeknoPass: fr",
+        "published": "2026-06-04T12:16:26.417"
+      },
+      {
+        "cve_id": "CVE-2019-25727",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "WordPress Plugin ad manager wd 1.0.11 contains an arbitrary file download vulnerability that allows unauthenticated attackers to download sensitive files by manipulating the path parameter. Attackers ",
+        "published": "2026-06-04T14:16:30.190"
+      },
+      {
+        "cve_id": "CVE-2019-25729",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "PDF Signer 3.0 contains a server-side template injection vulnerability that allows unauthenticated attackers to execute arbitrary code by injecting PHP commands through the CSRF-TOKEN cookie parameter",
+        "published": "2026-06-04T14:16:30.630"
+      },
+      {
+        "cve_id": "CVE-2019-25738",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "WordPress Hybrid Composer 1.4.6 contains an unauthenticated settings change vulnerability that allows unauthenticated attackers to modify WordPress options by exploiting the hc_ajax_save_option action",
+        "published": "2026-06-04T14:16:32.180"
+      },
+      {
+        "cve_id": "CVE-2019-25741",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Mobatek MobaXterm 12.1 contains a structured exception handling (SEH) based buffer overflow vulnerability in the username field of session files that allows remote attackers to execute arbitrary code.",
+        "published": "2026-06-04T14:16:32.787"
+      },
+      {
+        "cve_id": "CVE-2026-10840",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "A flaw was found in the OpenShift Pipelines operator. The tekton-scheduler-rolebinding ClusterRoleBinding grants the system:authenticated group write access to Kueue and cert-manager custom resources ",
+        "published": "2026-06-04T12:16:24.813"
+      },
+      {
+        "cve_id": "CVE-2026-50208",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "High-risk\u00a0TrustAllCerts\u00a0routines disable standard TLS certificate validation. Combined with hard-coded DES symmetric encryption keys, a Man-in-the-Middle (MITM) actor could decrypt network traffic.",
+        "published": "2026-06-04T09:16:29.277"
       },
       {
         "cve_id": "CVE-2026-41860",
@@ -271,116 +341,46 @@
         "published": "2026-06-04T03:16:20.107"
       },
       {
-        "cve_id": "CVE-2026-20230",
+        "cve_id": "CVE-2026-49190",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The system fails to evaluate instructional permissions over multiple internal operation codes (opcodes), permitting unauthorized application installations or command executions.",
+        "published": "2026-06-04T07:16:26.860"
+      },
+      {
+        "cve_id": "CVE-2026-49194",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The debugging routine\u00a0SCREEN_CLICK(5053)\u00a0enables a connection to skip the standard device login prompt entirely and directly enter an interactive shell interface.",
+        "published": "2026-06-04T07:16:27.437"
+      },
+      {
+        "cve_id": "CVE-2026-49202",
         "severity": "HIGH",
         "base_score": 8.6,
-        "description": "A vulnerability in Cisco Unified Communications Manager (Unified CM) and Cisco Unified Communications Manager Session Management Edition (Unified CM SME) could allow an unauthenticated, remote attacke",
-        "published": "2026-06-03T18:16:20.160"
+        "description": "Internal multimedia session archives are accessible without authentication, exacerbated by loose Cross-Origin Resource Sharing (CORS) rules that allow cross-site theft.",
+        "published": "2026-06-04T07:16:27.580"
       },
       {
-        "cve_id": "CVE-2026-41011",
+        "cve_id": "CVE-2019-25733",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "PackagePersister.validate_tgz builds \"tar -tf #{tgz} 2>&1\" where tgz = File.join(release_dir, 'packages', \"#{name}.tgz\") and name = package_meta['name'] comes directly from release.MF inside the uploa",
-        "published": "2026-06-04T03:16:19.633"
+        "base_score": 8.4,
+        "description": "NetShareWatcher 1.5.8.0 contains a structured exception handler buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying malicious input. Attackers can craft a ",
+        "published": "2026-06-04T14:16:31.320"
       },
       {
-        "cve_id": "CVE-2026-41010",
+        "cve_id": "CVE-2019-25735",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "ReleaseJob#unpack builds job_dir = File.join(@release_dir, 'jobs', name) and job_tgz = File.join(@release_dir, 'jobs', \"#{name}.tgz\") where name returns @job_meta['name'], a value taken verbatim from ",
-        "published": "2026-06-04T04:17:10.037"
+        "base_score": 8.4,
+        "description": "AllPlayer 7.4 contains a local buffer overflow vulnerability in URL handling that allows attackers to overwrite structured exception handling pointers by supplying an excessively long URL string. Atta",
+        "published": "2026-06-04T14:16:31.653"
       },
       {
-        "cve_id": "CVE-2026-40290",
+        "cve_id": "CVE-2019-25736",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "OP-TEE is a Trusted Execution Environment (TEE) designed as companion to a non-secure Linux kernel running on Arm; Cortex-A cores using the TrustZone technology. Starting in version 3.16.0 and prior t",
-        "published": "2026-06-03T18:16:23.707"
-      },
-      {
-        "cve_id": "CVE-2026-41859",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A network man-in-the-middle between nats-sync and the BOSH director can steal the director credentials (Basic auth header or UAA client secret) and can tamper with the VM list that is written into the",
-        "published": "2026-06-04T03:16:19.947"
-      },
-      {
-        "cve_id": "CVE-2026-8878",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Version 3.0.7 of the Securly Chrome Extension exposes multiple publicly accessible endpoints that allow unauthenticated access to sensitive data. The exposed information consists of SHA-1 hashes that ",
-        "published": "2026-06-03T19:16:39.387"
-      },
-      {
-        "cve_id": "CVE-2026-8879",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Version 3.0.7 of the Securly Chrome Extension dynamically registers content13.min.js as a content script via chrome.scripting.registerContentScripts() at runtime. This script is NOT declared in manife",
-        "published": "2026-06-03T19:16:39.513"
-      },
-      {
-        "cve_id": "CVE-2026-10737",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The SP Project & Document Manager plugin for WordPress is vulnerable to unauthorized access due to a missing capability check on the view_file function in all versions up to, and including, 4.71. This",
-        "published": "2026-06-04T02:16:17.503"
-      },
-      {
-        "cve_id": "CVE-2026-41858",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Weak Randomness / Insecure Cryptographic Primitive (CWE-338) in Get-RandomPassword in BOSH-Ecosystem / windows-utilities-release allows a network attacker to estimate VM boot time and reconstruct a sm",
-        "published": "2026-06-04T03:16:19.790"
-      },
-      {
-        "cve_id": "CVE-2026-8829",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "HTML::Entities versions before 3.84 for Perl read freed heap memory in _decode_entities.\n\nThe XS routine backing HTML::Entities::_decode_entities cached a pointer (repl) into the entity-value SV retur",
-        "published": "2026-06-04T03:16:20.260"
-      },
-      {
-        "cve_id": "CVE-2026-36609",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "Mercusys AC12G (EU) V1 router with firmware AC12G(EU)_V1_200909 uses a static authentication nonce that does not change between requests from the same source IP. Combined with the predictable XOR-base",
-        "published": "2026-06-03T18:16:22.063"
-      },
-      {
-        "cve_id": "CVE-2026-36611",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "Mercusys AC12G (EU) V1 with firmware AC12G(EU)_V1_200909 returns 128 bytes of uninitialized buffer when receiving POST requests without SOAPAction header on UPnP port 1900, exposing internal memory to",
-        "published": "2026-06-03T18:16:22.357"
-      },
-      {
-        "cve_id": "CVE-2026-8876",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "Version 3.0.7 of the Securly Chrome Extension contains hardcoded, plaintext AES passphrases in securly.min.js. These keys decrypt crisis alert keyword data and intervention site data.",
-        "published": "2026-06-03T19:16:39.233"
-      },
-      {
-        "cve_id": "CVE-2026-42061",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "Local privilege escalation due to excessive permissions assigned to child processes. The following products are affected: Acronis DeviceLock DLP (Windows) before build 9.0.15051.93227.",
-        "published": "2026-06-03T20:16:20.497"
-      },
-      {
-        "cve_id": "CVE-2026-44609",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "Local privilege escalation due to EXE hijacking vulnerability. The following products are affected: Acronis DeviceLock DLP (Windows) before build 9.0.15051.93227.",
-        "published": "2026-06-03T20:16:21.310"
-      },
-      {
-        "cve_id": "CVE-2026-44682",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "Local privilege escalation due to DLL hijacking vulnerability. The following products are affected: Acronis DeviceLock DLP (Windows) before build 9.0.15051.93227.",
-        "published": "2026-06-03T20:16:21.557"
+        "base_score": 8.4,
+        "description": "LabF nfsAxe 3.7 Ping Client contains a buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying a malicious payload in the Host IP field. Attackers can craft a ",
+        "published": "2026-06-04T14:16:31.817"
       }
     ]
   },
