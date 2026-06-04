@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-04T14:36:14.661125+00:00",
+  "generated_at": "2026-06-04T18:08:32.108603+00:00",
   "threat_score": {
-    "score": 6.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
-        "score": 2.0,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -238,23 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 204,
-    "critical_count": 2,
-    "high_count": 15,
+    "total": 233,
+    "critical_count": 1,
+    "high_count": 24,
     "cves": [
       {
-        "cve_id": "CVE-2026-36576",
+        "cve_id": "CVE-2026-41283",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An OS command injection vulnerability in the app.py component of openlabs docker-wkhtmltopdf-aas up to commit 9f50579 allows attackers to execute arbitrary commands via a crafted POST request.",
-        "published": "2026-06-03T16:16:28.877"
-      },
-      {
-        "cve_id": "CVE-2026-36748",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "RockRMS v16.13 and before v.17.7.0 is vulnerable to Cross Site Scripting (XSS) via Social Media links in user profile.",
-        "published": "2026-06-03T16:16:29.000"
+        "base_score": 9.9,
+        "description": "OpenStack Mistral through 22.0.0 allows Arbitrary Remote Code Execution when the API is exposed. There are endpoints that allow code execution, which can lead to exfiltration of service credentials.",
+        "published": "2026-06-04T04:17:12.700"
       },
       {
         "cve_id": "CVE-2026-36607",
@@ -271,11 +264,32 @@
         "published": "2026-06-03T18:16:21.923"
       },
       {
+        "cve_id": "CVE-2026-41860",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "CWE-326 in BOSH allows a local attacker to steal Basic-auth credentials or redirect UAA token requests via MITM. HttpRequestHelper#create_async_endpoint and #send_http_get_request_synchronous hard-cod",
+        "published": "2026-06-04T03:16:20.107"
+      },
+      {
         "cve_id": "CVE-2026-20230",
         "severity": "HIGH",
         "base_score": 8.6,
         "description": "A vulnerability in Cisco Unified Communications Manager (Unified CM) and Cisco Unified Communications Manager Session Management Edition (Unified CM SME) could allow an unauthenticated, remote attacke",
         "published": "2026-06-03T18:16:20.160"
+      },
+      {
+        "cve_id": "CVE-2026-41011",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "PackagePersister.validate_tgz builds \"tar -tf #{tgz} 2>&1\" where tgz = File.join(release_dir, 'packages', \"#{name}.tgz\") and name = package_meta['name'] comes directly from release.MF inside the uploa",
+        "published": "2026-06-04T03:16:19.633"
+      },
+      {
+        "cve_id": "CVE-2026-41010",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "ReleaseJob#unpack builds job_dir = File.join(@release_dir, 'jobs', name) and job_tgz = File.join(@release_dir, 'jobs', \"#{name}.tgz\") where name returns @job_meta['name'], a value taken verbatim from ",
+        "published": "2026-06-04T04:17:10.037"
       },
       {
         "cve_id": "CVE-2026-40290",
@@ -285,11 +299,25 @@
         "published": "2026-06-03T18:16:23.707"
       },
       {
-        "cve_id": "CVE-2026-37462",
+        "cve_id": "CVE-2026-41859",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "A network man-in-the-middle between nats-sync and the BOSH director can steal the director credentials (Basic auth header or UAA client secret) and can tamper with the VM list that is written into the",
+        "published": "2026-06-04T03:16:19.947"
+      },
+      {
+        "cve_id": "CVE-2026-8878",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "An integer underflow in the BGPUpdate.DecodeFromBytes function (/bgp/bgp.go) of gobgp v4.3.0 allows attackers to cause a Denial of Service (DoS) via supplying a crafted BGP UPDATE message.",
-        "published": "2026-06-03T16:16:29.120"
+        "description": "Version 3.0.7 of the Securly Chrome Extension exposes multiple publicly accessible endpoints that allow unauthenticated access to sensitive data. The exposed information consists of SHA-1 hashes that ",
+        "published": "2026-06-03T19:16:39.387"
+      },
+      {
+        "cve_id": "CVE-2026-8879",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Version 3.0.7 of the Securly Chrome Extension dynamically registers content13.min.js as a content script via chrome.scripting.registerContentScripts() at runtime. This script is NOT declared in manife",
+        "published": "2026-06-03T19:16:39.513"
       },
       {
         "cve_id": "CVE-2026-10737",
@@ -297,6 +325,20 @@
         "base_score": 7.5,
         "description": "The SP Project & Document Manager plugin for WordPress is vulnerable to unauthorized access due to a missing capability check on the view_file function in all versions up to, and including, 4.71. This",
         "published": "2026-06-04T02:16:17.503"
+      },
+      {
+        "cve_id": "CVE-2026-41858",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Weak Randomness / Insecure Cryptographic Primitive (CWE-338) in Get-RandomPassword in BOSH-Ecosystem / windows-utilities-release allows a network attacker to estimate VM boot time and reconstruct a sm",
+        "published": "2026-06-04T03:16:19.790"
+      },
+      {
+        "cve_id": "CVE-2026-8829",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "HTML::Entities versions before 3.84 for Perl read freed heap memory in _decode_entities.\n\nThe XS routine backing HTML::Entities::_decode_entities cached a pointer (repl) into the entity-value SV retur",
+        "published": "2026-06-04T03:16:20.260"
       },
       {
         "cve_id": "CVE-2026-36609",
@@ -311,6 +353,13 @@
         "base_score": 7.3,
         "description": "Mercusys AC12G (EU) V1 with firmware AC12G(EU)_V1_200909 returns 128 bytes of uninitialized buffer when receiving POST requests without SOAPAction header on UPnP port 1900, exposing internal memory to",
         "published": "2026-06-03T18:16:22.357"
+      },
+      {
+        "cve_id": "CVE-2026-8876",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "Version 3.0.7 of the Securly Chrome Extension contains hardcoded, plaintext AES passphrases in securly.min.js. These keys decrypt crisis alert keyword data and intervention site data.",
+        "published": "2026-06-03T19:16:39.233"
       },
       {
         "cve_id": "CVE-2026-42061",
@@ -332,55 +381,6 @@
         "base_score": 7.3,
         "description": "Local privilege escalation due to DLL hijacking vulnerability. The following products are affected: Acronis DeviceLock DLP (Windows) before build 9.0.15051.93227.",
         "published": "2026-06-03T20:16:21.557"
-      },
-      {
-        "cve_id": "CVE-2026-50033",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "Local privilege escalation due to DLL hijacking vulnerability. The following products are affected: Acronis DeviceLock DLP (Windows) before build 9.0.15051.93227.",
-        "published": "2026-06-03T20:16:21.890"
-      },
-      {
-        "cve_id": "CVE-2026-10771",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was found in crmeb crmeb_java 1.4. Affected is the function RestTemplate.getForEntity of the file crmeb-common/src/main/java/com/zbkj/common/utils/RestTemplateUtil.java of the componen",
-        "published": "2026-06-03T22:16:34.167"
-      },
-      {
-        "cve_id": "CVE-2026-10777",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was identified in ealpha072 Student-Management-System up to 01451bd7a2f58cdda07bd0b86e3967582e3ecd08. Affected by this issue is some unknown functionality of the file admin/config.php ",
-        "published": "2026-06-03T23:16:17.280"
-      },
-      {
-        "cve_id": "CVE-2026-36606",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Mercusys AC12G (EU) V1 router with firmware AC12G(EU)_V1_200909 encrypts configuration backups with a hardcoded DES key using single DES in ECB mode. An attacker who obtains a backup file can decrypt ",
-        "published": "2026-06-03T18:16:21.677"
-      },
-      {
-        "cve_id": "CVE-2019-25720",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Dr\u00e4ger SC Monitoring devices (SC 6002XL, SC 6802XL, SC 7000, SC 8000, SC 9000 XL) contain a denial-of-service vulnerability in all software versions that allows unauthenticated attackers to reboot the",
-        "published": "2026-06-03T18:16:15.910"
-      },
-      {
-        "cve_id": "CVE-2026-36604",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Mercusys AC12G (EU) V1 router with firmware AC12G(EU)_V1_200909 does not validate the HTTP Host header, enabling DNS rebinding attacks. An external attacker can rebind a domain to the router's interna",
-        "published": "2026-06-03T18:16:21.420"
-      },
-      {
-        "cve_id": "CVE-2026-36605",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Mercusys AC12G (EU) V1 router with firmware AC12G(EU)_V1_200909 is vulnerable to a HTTP denial of service via a low number of crafted incomplete HTTP requests, causing a persistent crash that requires",
-        "published": "2026-06-03T18:16:21.550"
       }
     ]
   },
