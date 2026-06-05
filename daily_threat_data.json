@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-05T07:59:29.808358+00:00",
+  "generated_at": "2026-06-05T11:30:03.415296+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 10,
+        "value": 14,
         "score": 3.0,
         "max": 3
       },
@@ -238,16 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 612,
-    "critical_count": 10,
-    "high_count": 22,
+    "total": 611,
+    "critical_count": 14,
+    "high_count": 27,
     "cves": [
       {
-        "cve_id": "CVE-2026-50211",
+        "cve_id": "CVE-2026-43986",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Leftover engineering diagnostics and factory-level diagnostic software remain exposed on retail builds, giving malicious apps write privileges to internal NVRAM registers.",
-        "published": "2026-06-04T09:16:29.700"
+        "base_score": 9.9,
+        "description": "Tautulli is a Python based monitoring and tracking tool for Plex Media Server. Versions prior to 2.17.1 expose a public `/image/<hash>` route that resolves attacker-controlled entries from `image_hash",
+        "published": "2026-06-04T16:16:38.290"
       },
       {
         "cve_id": "CVE-2026-4104",
@@ -285,6 +285,34 @@
         "published": "2026-06-04T14:16:32.787"
       },
       {
+        "cve_id": "CVE-2025-67446",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Improper Authentication (Authentication Bypass) exists in Neterbit NW-431F Router 20241014-IR03 and before. The router uses a weak/predictable cookie value for authentication. By modifying the cookie ",
+        "published": "2026-06-04T17:16:30.480"
+      },
+      {
+        "cve_id": "CVE-2025-67447",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The network diagnosis (ping) module in Neterbit NW-431F Router 20241014-IR03 and before is vulnerable to OS command injection. The application does not properly sanitize user input in the IP address f",
+        "published": "2026-06-04T18:16:27.703"
+      },
+      {
+        "cve_id": "CVE-2026-10880",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "OSNexus QuantaStor SDS Manager is vulnerable to SQL injection in the login endpoint. The username field is not properly sanitized before being incorporated into a SQL query, allowing an unauthenticate",
+        "published": "2026-06-04T18:16:28.587"
+      },
+      {
+        "cve_id": "CVE-2026-25550",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Seagull Software BarTender 2010, 2016, and 2019 contain an unauthenticated remote code execution vulnerability in the .NET Remoting service exposed on TCP port 7375 via BtSystem.Service.exe. The servi",
+        "published": "2026-06-04T18:16:28.747"
+      },
+      {
         "cve_id": "CVE-2026-10840",
         "severity": "CRITICAL",
         "base_score": 9.6,
@@ -306,11 +334,32 @@
         "published": "2026-06-04T15:16:50.870"
       },
       {
-        "cve_id": "CVE-2026-50208",
+        "cve_id": "CVE-2026-50076",
         "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "High-risk\u00a0TrustAllCerts\u00a0routines disable standard TLS certificate validation. Combined with hard-coded DES symmetric encryption keys, a Man-in-the-Middle (MITM) actor could decrypt network traffic.",
-        "published": "2026-06-04T09:16:29.277"
+        "base_score": 9.1,
+        "description": "Deserialization of Untrusted Data in the Java replace-resolve path in Apache Fory fory-core Java SDK before 1.1.0 on Java/JVM platforms allows a remote attacker to bypass class registration, TypeCheck",
+        "published": "2026-06-04T17:16:33.390"
+      },
+      {
+        "cve_id": "CVE-2026-43984",
+        "severity": "HIGH",
+        "base_score": 8.9,
+        "description": "Tautulli is a Python based monitoring and tracking tool for Plex Media Server. Versions prior to 2.17.1 expose `log_js_errors` to any authenticated user, including guest users when guest access is ena",
+        "published": "2026-06-04T16:16:37.883"
+      },
+      {
+        "cve_id": "CVE-2026-43985",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Tautulli is a Python based monitoring and tracking tool for Plex Media Server. Versions prior to 2.17.1 expose `configUpdate` as a state-changing administrator endpoint, but the route does not enforce",
+        "published": "2026-06-04T16:16:38.083"
+      },
+      {
+        "cve_id": "CVE-2026-5228",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Improper Access Control, Missing Authorization vulnerability in Kurt Software Studio WriteUp Mobile App allows Accessing Functionality Not Properly Constrained by ACLs.\n\nThis issue affects WriteUp Mob",
+        "published": "2026-06-04T16:16:39.640"
       },
       {
         "cve_id": "CVE-2019-25733",
@@ -332,55 +381,6 @@
         "base_score": 8.4,
         "description": "LabF nfsAxe 3.7 Ping Client contains a buffer overflow vulnerability that allows local attackers to execute arbitrary code by supplying a malicious payload in the Host IP field. Attackers can craft a ",
         "published": "2026-06-04T14:16:31.817"
-      },
-      {
-        "cve_id": "CVE-2019-25726",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "All in One Video Downloader 1.2 contains an SQL injection vulnerability that allows unauthenticated attackers to execute arbitrary SQL queries by injecting malicious code through the id parameter. Att",
-        "published": "2026-06-04T14:16:27.463"
-      },
-      {
-        "cve_id": "CVE-2019-25728",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Care2x 2.7 contains multiple SQL injection vulnerabilities that allow unauthenticated attackers to execute arbitrary SQL commands by manipulating the ck_config cookie parameter. Attackers can inject m",
-        "published": "2026-06-04T14:16:30.413"
-      },
-      {
-        "cve_id": "CVE-2019-25730",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Listing Hub CMS 1.0 contains a SQL injection vulnerability that allows unauthenticated attackers to execute arbitrary SQL queries by injecting malicious code through the id parameter. Attackers can se",
-        "published": "2026-06-04T14:16:30.830"
-      },
-      {
-        "cve_id": "CVE-2019-25732",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "PHP EI-Tube Script 3 contains an SQL injection vulnerability that allows unauthenticated attackers to execute arbitrary SQL queries by injecting malicious code through the search parameter. Attackers ",
-        "published": "2026-06-04T14:16:31.160"
-      },
-      {
-        "cve_id": "CVE-2019-25745",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "WordPress Plugin Google Review Slider 6.1 contains a time-based blind SQL injection vulnerability that allows unauthenticated attackers to manipulate database queries by injecting SQL code through the",
-        "published": "2026-06-04T14:16:33.883"
-      },
-      {
-        "cve_id": "CVE-2025-59874",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "HCL Hive Telco Observability is affected by \u00a0a Required directives missing from the CSP issue is detected in keycloak component of the web application. Missing essential directives can leave a site vu",
-        "published": "2026-06-04T14:16:35.180"
-      },
-      {
-        "cve_id": "CVE-2026-50207",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "The system Binder boundary accepts unverified pass-through AT commands, giving local applications the power to read baseband files or disable cellular connectivity.",
-        "published": "2026-06-04T09:16:29.137"
       }
     ]
   },
