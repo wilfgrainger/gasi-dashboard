@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-06-05T14:25:56.732546+00:00",
+  "generated_at": "2026-06-05T17:47:21.273275+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 23,
+        "value": 24,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 12,
-        "score": 3.0,
+        "value": 9,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1611,
-    "recent_30d_count": 23,
+    "total_catalog_count": 1612,
+    "recent_30d_count": 24,
     "recent": [
+      {
+        "cve_id": "CVE-2026-28318",
+        "vendor": "SolarWinds",
+        "product": "Serv-U",
+        "name": "SolarWinds Serv-U Uncontrolled Resource Consumption Vulnerability",
+        "date_added": "2026-06-05",
+        "due_date": "2026-06-19",
+        "description": "SolarWinds Serv-U contains an uncontrolled resource consumption vulnerability that allows specially crafted POST requests using the Content-Encoding: deflate header to crash the Serv-U service without",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-45247",
         "vendor": "Mirasvit",
@@ -224,38 +234,14 @@
         "due_date": "2026-06-03",
         "description": "Microsoft Defender contains an unspecified vulnerability that allows for denial of service.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-42897",
-        "vendor": "Microsoft",
-        "product": "Microsoft",
-        "name": "Microsoft Exchange Server Cross-Site Scripting Vulnerability",
-        "date_added": "2026-05-15",
-        "due_date": "2026-05-29",
-        "description": "Microsoft Exchange Server contains a cross-site scripting vulnerability during web page generation in Outlook Web Access and when certain interaction conditions are met, arbitrary JavaScript can be ex",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 584,
-    "critical_count": 12,
-    "high_count": 34,
+    "total": 573,
+    "critical_count": 9,
+    "high_count": 62,
     "cves": [
-      {
-        "cve_id": "CVE-2026-43986",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Tautulli is a Python based monitoring and tracking tool for Plex Media Server. Versions prior to 2.17.1 expose a public `/image/<hash>` route that resolves attacker-controlled entries from `image_hash",
-        "published": "2026-06-04T16:16:38.290"
-      },
-      {
-        "cve_id": "CVE-2025-67446",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Improper Authentication (Authentication Bypass) exists in Neterbit NW-431F Router 20241014-IR03 and before. The router uses a weak/predictable cookie value for authentication. By modifying the cookie ",
-        "published": "2026-06-04T17:16:30.480"
-      },
       {
         "cve_id": "CVE-2025-67447",
         "severity": "CRITICAL",
@@ -283,13 +269,6 @@
         "base_score": 9.8,
         "description": "SQLite 'sqldiff.exe' does not securely handle the way the Microsoft Windows C runtime converts Unicode characters to ANSI codepages.  An attacker could use the '-L' option to load an arbitrary DLL wit",
         "published": "2026-06-04T19:16:27.170"
-      },
-      {
-        "cve_id": "CVE-2026-35906",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "An undocumented debug CGI endpoint in T3 Technology CPE models T625Pro v1.0.07, T6825G v1.0.03 allows unauthenticated attackers to execute arbitrary system commands as root via supplying a crafted HTT",
-        "published": "2026-06-04T15:16:50.870"
       },
       {
         "cve_id": "CVE-2024-27890",
@@ -320,32 +299,11 @@
         "published": "2026-06-04T23:16:50.010"
       },
       {
-        "cve_id": "CVE-2026-50076",
+        "cve_id": "CVE-2026-10892",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Deserialization of Untrusted Data in the Java replace-resolve path in Apache Fory fory-core Java SDK before 1.1.0 on Java/JVM platforms allows a remote attacker to bypass class registration, TypeCheck",
-        "published": "2026-06-04T17:16:33.390"
-      },
-      {
-        "cve_id": "CVE-2026-43984",
-        "severity": "HIGH",
-        "base_score": 8.9,
-        "description": "Tautulli is a Python based monitoring and tracking tool for Plex Media Server. Versions prior to 2.17.1 expose `log_js_errors` to any authenticated user, including guest users when guest access is ena",
-        "published": "2026-06-04T16:16:37.883"
-      },
-      {
-        "cve_id": "CVE-2026-43985",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Tautulli is a Python based monitoring and tracking tool for Plex Media Server. Versions prior to 2.17.1 expose `configUpdate` as a state-changing administrator endpoint, but the route does not enforce",
-        "published": "2026-06-04T16:16:38.083"
-      },
-      {
-        "cve_id": "CVE-2026-5228",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Improper Access Control, Missing Authorization vulnerability in Kurt Software Studio WriteUp Mobile App allows Accessing Functionality Not Properly Constrained by ACLs.\n\nThis issue affects WriteUp Mob",
-        "published": "2026-06-04T16:16:39.640"
+        "base_score": 9.6,
+        "description": "Out of bounds write in GPU in Google Chrome on Android prior to 149.0.7827.53 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Cr",
+        "published": "2026-06-04T23:16:50.743"
       },
       {
         "cve_id": "CVE-2026-41236",
@@ -381,6 +339,48 @@
         "base_score": 8.8,
         "description": "Use after free in Cast Streaming in Google Chrome prior to 149.0.7827.53 allowed an attacker on the local network segment to execute arbitrary code via malicious network traffic. (Chromium security se",
         "published": "2026-06-04T23:16:50.250"
+      },
+      {
+        "cve_id": "CVE-2026-10890",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in Cast in Google Chrome prior to 149.0.7827.53 allowed an attacker on the local network segment to potentially exploit heap corruption via malicious network traffic. (Chromium security",
+        "published": "2026-06-04T23:16:50.487"
+      },
+      {
+        "cve_id": "CVE-2026-10891",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in GFX in Google Chrome on Linux prior to 149.0.7827.53 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)",
+        "published": "2026-06-04T23:16:50.613"
+      },
+      {
+        "cve_id": "CVE-2026-10893",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in Chromoting in Google Chrome prior to 149.0.7827.53 allowed a remote attacker to execute arbitrary code via malicious network traffic. (Chromium security severity: Critical)",
+        "published": "2026-06-04T23:16:50.870"
+      },
+      {
+        "cve_id": "CVE-2026-10895",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in Ozone in Google Chrome prior to 149.0.7827.53 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: Critical)",
+        "published": "2026-06-04T23:16:51.117"
+      },
+      {
+        "cve_id": "CVE-2026-10896",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in Chrome for iOS in Google Chrome on iOS prior to 149.0.7827.53 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: Critical)",
+        "published": "2026-06-04T23:16:51.230"
+      },
+      {
+        "cve_id": "CVE-2026-10897",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Inappropriate implementation in GPU in Google Chrome prior to 149.0.7827.53 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Crit",
+        "published": "2026-06-04T23:16:51.350"
       }
     ]
   },
