@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T02:12:21.729167+00:00",
+  "generated_at": "2026-06-06T06:46:43.798918+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
+        "value": 8,
         "score": 2.5,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 172,
-    "critical_count": 6,
-    "high_count": 24,
+    "total": 187,
+    "critical_count": 8,
+    "high_count": 27,
     "cves": [
       {
         "cve_id": "CVE-2026-49777",
@@ -250,18 +250,11 @@
         "published": "2026-06-05T09:16:26.220"
       },
       {
-        "cve_id": "CVE-2026-7762",
+        "cve_id": "CVE-2026-45744",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A heap-based buffer overflow vulnerability in the dot11ah.ko HaLow Wi-Fi kernel driver in Morse Micro HaLowLink 2 software versions prior to 2.11.13 allows an unauthenticated attacker within radio ran",
-        "published": "2026-06-05T02:17:14.510"
-      },
-      {
-        "cve_id": "CVE-2026-7763",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A heap-based buffer overflow vulnerability in the morse.ko HaLow Wi-Fi kernel driver in Morse Micro HaLowLink 2 software versions prior to 2.11.13 allows an unauthenticated attacker within radio range",
-        "published": "2026-06-05T02:17:14.640"
+        "base_score": 9.9,
+        "description": "Termix is a web-based server management platform with SSH terminal, tunneling, and file editing capabilities. Prior to version 2.3.2, the GET /ssh/file_manager/ssh/resolvePath endpoint in Termix is vu",
+        "published": "2026-06-05T18:17:29.510"
       },
       {
         "cve_id": "CVE-2026-6274",
@@ -285,6 +278,27 @@
         "published": "2026-06-05T18:16:54.910"
       },
       {
+        "cve_id": "CVE-2026-45748",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Termix is a web-based server management platform with SSH terminal, tunneling, and file editing capabilities. The `POST /ssh/tunnel/connect` endpoint in Termix prior to version 2.3.2 builds an SSH tun",
+        "published": "2026-06-05T18:17:31.000"
+      },
+      {
+        "cve_id": "CVE-2026-45746",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "Termix is a web-based server management platform with SSH terminal, tunneling, and file editing capabilities. Prior to version 2.3.2, the File Manager functionality in Termix contains a critical Broke",
+        "published": "2026-06-05T18:17:30.587"
+      },
+      {
+        "cve_id": "CVE-2026-45750",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "Termix is a web-based server management platform with SSH terminal, tunneling, and file editing capabilities. Prior to version 2.3.2, the GET /ssh/file_manager/ssh/resolvePath endpoint in the Termix F",
+        "published": "2026-06-05T18:17:32.463"
+      },
+      {
         "cve_id": "CVE-2026-48095",
         "severity": "HIGH",
         "base_score": 8.8,
@@ -292,11 +306,46 @@
         "published": "2026-06-05T15:16:53.520"
       },
       {
+        "cve_id": "CVE-2026-49492",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Markdown Preview Enhanced before 0.8.28 opens external files and links from the preview through a shell and does not validate untrusted inputs taken from the markdown document - the diagram filename a",
+        "published": "2026-06-05T18:17:33.377"
+      },
+      {
         "cve_id": "CVE-2025-5088",
         "severity": "HIGH",
         "base_score": 8.3,
         "description": "An authenticated Redis session could be used to obtain full root access to all servers in the CVX cluster. Note that this would require an attacker to have both network access to the Redis service on ",
         "published": "2026-06-05T17:16:29.097"
+      },
+      {
+        "cve_id": "CVE-2026-45327",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "TinyIce is a streaming server for audio and video. In versions 0.8.95 through 2.4.1, missing authentication on WebRTC ingest endpoint allows unauthenticated stream injection. Version 2.5.0 fixes the i",
+        "published": "2026-06-05T18:17:27.220"
+      },
+      {
+        "cve_id": "CVE-2026-45743",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Termix is a web-based server management platform with SSH terminal, tunneling, and file editing capabilities. 16 file-manager endpoints in Termix prior to version 2.3.2 do not verify that the requesti",
+        "published": "2026-06-05T18:17:28.793"
+      },
+      {
+        "cve_id": "CVE-2026-45749",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Termix is a web-based server management platform with SSH terminal, tunneling, and file editing capabilities. The `POST /users/totp/disable` and `POST /users/totp/backup-codes` endpoints in Termix pri",
+        "published": "2026-06-05T18:17:31.720"
+      },
+      {
+        "cve_id": "CVE-2026-45745",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "Termix is a web-based server management platform with SSH terminal, tunneling, and file editing capabilities. Starting in version 1.7.0, Termix Desktop (Electron) disables TLS certificate validation, ",
+        "published": "2026-06-05T18:17:30.180"
       },
       {
         "cve_id": "CVE-2026-11332",
@@ -332,55 +381,6 @@
         "base_score": 7.8,
         "description": "A stack-based buffer overflow flaw was found in the X.Org X server and Xwayland. A mismatch between the X server and the libXfont2 library's maximum font name length can cause a stack buffer overflow ",
         "published": "2026-06-05T12:16:38.727"
-      },
-      {
-        "cve_id": "CVE-2026-50257",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A use-after-free flaw was found in the X.Org X server and Xwayland in miSyncDestroyFence(). A client that sets up multiple fence triggers can trigger a use-after-free function pointer call. An attacke",
-        "published": "2026-06-05T12:16:38.907"
-      },
-      {
-        "cve_id": "CVE-2026-50258",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A stack-based buffer overflow flaw was found in the X.Org X server and Xwayland. The X server has multiple stack buffers sized XkbMaxShiftLevel * XkbNumKbdGroups but CheckKeyTypes() does not verify or",
-        "published": "2026-06-05T12:16:39.070"
-      },
-      {
-        "cve_id": "CVE-2026-50259",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A stack-based buffer overflow flaw was found in the X.Org X server and Xwayland. _XkbSetMapChecks() declares a fixed-size stack buffer mapWidths[256] indexed by key type index. The helper function Che",
-        "published": "2026-06-05T12:16:39.240"
-      },
-      {
-        "cve_id": "CVE-2026-50260",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A use-after-free flaw was found in the X.Org X server and Xwayland in FreeCounter(). A client that sets up multiple SyncCounters and awaits on those triggers can trigger a use-after-free when destroyi",
-        "published": "2026-06-05T12:16:39.430"
-      },
-      {
-        "cve_id": "CVE-2026-50261",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A use-after-free flaw was found in the X.Org X server and Xwayland in SyncChangeCounter(). A client that sets up multiple SyncCounters can trigger a use-after-free when destroying those counters via a",
-        "published": "2026-06-05T12:16:39.617"
-      },
-      {
-        "cve_id": "CVE-2026-50264",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "An out-of-bounds write flaw was found in the X.Org X server and Xwayland in DRIGetBuffers/DRIGetBuffersWithFormat. A client that requests multiple DRI2BufferBackLeft attachments and one DRI2BufferFron",
-        "published": "2026-06-05T12:16:40.080"
-      },
-      {
-        "cve_id": "CVE-2026-50234",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Lyrion Music Server 9.2.0 contains a path traversal vulnerability that allows unauthenticated attackers to read arbitrary files by exploiting directory traversal in the web server context. Attackers c",
-        "published": "2026-06-05T14:16:36.720"
       }
     ]
   },
