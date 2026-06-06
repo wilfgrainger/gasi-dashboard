@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-06T17:00:24.739742+00:00",
+  "generated_at": "2026-06-06T20:54:14.098387+00:00",
   "threat_score": {
-    "score": 6.5,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.0,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
-        "score": 2.5,
+        "value": 0,
+        "score": 1.0,
         "max": 3
       },
       {
@@ -238,108 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 127,
-    "critical_count": 9,
-    "high_count": 26,
+    "total": 63,
+    "critical_count": 0,
+    "high_count": 11,
     "cves": [
-      {
-        "cve_id": "CVE-2026-46389",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "UDS Identity Config builds the Keycloak configuration image (realm, plugins, theme, truststore, JARs) consumed by UDS Core's Identity deployment. In versions 0.11.0 through 0.26.0, a logic error in th",
-        "published": "2026-06-05T19:16:32.703"
-      },
-      {
-        "cve_id": "CVE-2026-45744",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Termix is a web-based server management platform with SSH terminal, tunneling, and file editing capabilities. Prior to version 2.3.2, the GET /ssh/file_manager/ssh/resolvePath endpoint in Termix is vu",
-        "published": "2026-06-05T18:17:29.510"
-      },
-      {
-        "cve_id": "CVE-2025-71317",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "NetMan 204 contains a hard-coded backdoor account with the username and password 'eurek' that grants administrative access. A remote, unauthenticated attacker can authenticate through the cgi-bin/logi",
-        "published": "2026-06-05T18:16:54.737"
-      },
-      {
-        "cve_id": "CVE-2025-71318",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "NetMan 204 fails to enforce authentication on its administrative pages and command endpoints. A remote, unauthenticated attacker can directly request administrative pages (such as administration.html,",
-        "published": "2026-06-05T18:16:54.910"
-      },
-      {
-        "cve_id": "CVE-2026-45748",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Termix is a web-based server management platform with SSH terminal, tunneling, and file editing capabilities. The `POST /ssh/tunnel/connect` endpoint in Termix prior to version 2.3.2 builds an SSH tun",
-        "published": "2026-06-05T18:17:31.000"
-      },
-      {
-        "cve_id": "CVE-2026-10580",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Hippoo Mobile App for WooCommerce plugin for WordPress is vulnerable to Authentication Bypass leading to Administrator Account Takeover in all versions up to and including 1.9.4. This is due to a ",
-        "published": "2026-06-05T19:16:28.830"
-      },
-      {
-        "cve_id": "CVE-2026-45758",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Guardrails AI is a Python framework that helps build AI applications. On May 11, 2026 at approximately 6:00 PM Pacific, an attacker published a malicious version of `guardrails-ai` (0.10.1) to PyPI. A",
-        "published": "2026-06-05T20:17:32.357"
-      },
-      {
-        "cve_id": "CVE-2026-45746",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "Termix is a web-based server management platform with SSH terminal, tunneling, and file editing capabilities. Prior to version 2.3.2, the File Manager functionality in Termix contains a critical Broke",
-        "published": "2026-06-05T18:17:30.587"
-      },
-      {
-        "cve_id": "CVE-2026-45750",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "Termix is a web-based server management platform with SSH terminal, tunneling, and file editing capabilities. Prior to version 2.3.2, the GET /ssh/file_manager/ssh/resolvePath endpoint in the Termix F",
-        "published": "2026-06-05T18:17:32.463"
-      },
-      {
-        "cve_id": "CVE-2026-49492",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Markdown Preview Enhanced before 0.8.28 opens external files and links from the preview through a shell and does not validate untrusted inputs taken from the markdown document - the diagram filename a",
-        "published": "2026-06-05T18:17:33.377"
-      },
-      {
-        "cve_id": "CVE-2026-49493",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Markdown Preview Enhanced before 0.8.28 parses Bitfield fenced code blocks with interpretJS(), which evaluates the block content as code via vm.runInNewContext(), allowing arbitrary code execution. A ",
-        "published": "2026-06-05T18:17:33.723"
-      },
-      {
-        "cve_id": "CVE-2026-50733",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Markdown Preview Enhanced before 0.8.28 parses WaveDrom diagrams by evaluating untrusted markdown content with eval(), allowing arbitrary JavaScript execution. The flaw affects every render path - the",
-        "published": "2026-06-05T18:17:34.050"
-      },
-      {
-        "cve_id": "CVE-2026-5411",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The WP Captcha PRO (the premium version of the Advanced Google reCAPTCHA plugin, both have the same slug) plugin for WordPress is vulnerable to arbitrary file upload in all versions up to, and includi",
-        "published": "2026-06-05T19:16:34.860"
-      },
-      {
-        "cve_id": "CVE-2026-5415",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The WP Captcha PRO (the premium version of the Advanced Google reCAPTCHA plugin, both have the same slug) plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and includi",
-        "published": "2026-06-05T19:16:35.070"
-      },
       {
         "cve_id": "CVE-2026-7654",
         "severity": "HIGH",
@@ -348,39 +250,137 @@
         "published": "2026-06-05T23:16:44.807"
       },
       {
-        "cve_id": "CVE-2026-46392",
+        "cve_id": "CVE-2026-11413",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "HAX CMS helps manage microsite universe with PHP or NodeJs backends. Prior to version 26.0.0 of HAX CMS PHP, the `saveFile` endpoint validates upload extensions case-insensitively and writes the filen",
-        "published": "2026-06-05T19:16:33.160"
+        "base_score": 8.8,
+        "description": "A security vulnerability has been detected in JingDong JD Cloud Box AX6600 4.5.3.r4546. The impacted element is the function set_macfilter of the file /sbin/jdcweb_rpc. The manipulation leads to stack",
+        "published": "2026-06-06T14:16:20.060"
       },
       {
-        "cve_id": "CVE-2025-5088",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "An authenticated Redis session could be used to obtain full root access to all servers in the CVX cluster. Note that this would require an attacker to have both network access to the Redis service on ",
-        "published": "2026-06-05T17:16:29.097"
-      },
-      {
-        "cve_id": "CVE-2026-45327",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "TinyIce is a streaming server for audio and video. In versions 0.8.95 through 2.4.1, missing authentication on WebRTC ingest endpoint allows unauthenticated stream injection. Version 2.5.0 fixes the i",
-        "published": "2026-06-05T18:17:27.220"
-      },
-      {
-        "cve_id": "CVE-2026-45743",
+        "cve_id": "CVE-2026-11416",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Termix is a web-based server management platform with SSH terminal, tunneling, and file editing capabilities. 16 file-manager endpoints in Termix prior to version 2.3.2 do not verify that the requesti",
-        "published": "2026-06-05T18:17:28.793"
+        "description": "MoviePilot contains a path traversal vulnerability in the AliPan, U115, and Rclone cloud storage download handlers where the local destination path is constructed by concatenating the configured downl",
+        "published": "2026-06-05T22:16:47.127"
       },
       {
-        "cve_id": "CVE-2026-45749",
+        "cve_id": "CVE-2026-9290",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Termix is a web-based server management platform with SSH terminal, tunneling, and file editing capabilities. The `POST /users/totp/disable` and `POST /users/totp/backup-codes` endpoints in Termix pri",
-        "published": "2026-06-05T18:17:31.720"
+        "base_score": 7.5,
+        "description": "The WP User Manager \u2013 User Profile Builder & Membership plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 2.9.17 via the (profile template scope) functio",
+        "published": "2026-06-06T00:16:42.303"
+      },
+      {
+        "cve_id": "CVE-2026-11435",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A security vulnerability has been detected in Jinher OA 1.0. This affects an unknown function of the file nextselectplan.aspx. Such manipulation of the argument httpOID leads to sql injection. The att",
+        "published": "2026-06-06T16:16:54.550"
+      },
+      {
+        "cve_id": "CVE-2026-11437",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A flaw has been found in perfree go-fastdfs-web up to 1.3.7. Affected is the function checkServer of the file /install/checkServer of the component Installation Endpoint. Executing a manipulation can ",
+        "published": "2026-06-06T17:16:41.557"
+      },
+      {
+        "cve_id": "CVE-2026-8438",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The All-In-One Security (AIOS) \u2013 Security and Firewall plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions up to and including 5.4.7. This is due to insufficient input saniti",
+        "published": "2026-06-06T02:16:21.453"
+      },
+      {
+        "cve_id": "CVE-2026-8901",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The Integration for Freshsales \u2013 Contact Form 7, WPForms, Elementor, Gravity Forms and More plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Form Submission Data in all versions u",
+        "published": "2026-06-06T02:16:22.547"
+      },
+      {
+        "cve_id": "CVE-2026-7537",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The MDJM Event Management plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 1.7.8.3 via the mdjm_send_comm_email function. This is due to no file type, ",
+        "published": "2026-06-06T04:17:32.107"
+      },
+      {
+        "cve_id": "CVE-2026-9851",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The Booking Package plugin for WordPress is vulnerable to Privilege Escalation via Account Takeover in versions up to, and including, 1.7.16. This is due to a missing capability check on the 'updateUs",
+        "published": "2026-06-06T05:16:30.047"
+      },
+      {
+        "cve_id": "CVE-2026-11422",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "Markdown Preview Enhanced 0.8.x with crossnote engine 0.9.28 contains a code injection vulnerability in the WaveDrom rendering pipeline that allows attackers to execute arbitrary JavaScript by embeddi",
+        "published": "2026-06-05T21:16:29.177"
+      },
+      {
+        "cve_id": "CVE-2026-7566",
+        "severity": "MEDIUM",
+        "base_score": 6.6,
+        "description": "The LearnPress \u2013 Backup & Migration Tool plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 4.1.4 via deserialization of untrusted input . This makes it p",
+        "published": "2026-06-06T04:17:39.530"
+      },
+      {
+        "cve_id": "CVE-2026-9829",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "The Photo Gallery by 10Web \u2013 Mobile-Friendly Image Gallery plugin for WordPress is vulnerable to time-based SQL Injection via 'compact_album_order_by' Shortcode Parameter in all versions up to, and in",
+        "published": "2026-06-06T05:16:29.917"
+      },
+      {
+        "cve_id": "CVE-2026-8893",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "The Express Payment For Stripe plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'type' attribute of the [stripe-express] shortcode in versions up to, and including, 1.28.0. Th",
+        "published": "2026-06-06T00:16:41.887"
+      },
+      {
+        "cve_id": "CVE-2026-8900",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "The Simple SEO Slideshow plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Shortcode Attributes in all versions up to, and including, 1.2.8 due to insufficient input sanitization a",
+        "published": "2026-06-06T00:16:42.013"
+      },
+      {
+        "cve_id": "CVE-2026-9281",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "The Master Addons For Elementor \u2013 Widgets, Extensions, Theme Builder, Popup Builder & Template Kits plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'jtlma_custom_js' Page Setting",
+        "published": "2026-06-06T02:16:22.820"
+      },
+      {
+        "cve_id": "CVE-2026-7795",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "The Click to Chat \u2013 WA Widget plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the [chat] shortcode 'num' parameter in all versions up to, and including, 4.38. This is due to insu",
+        "published": "2026-06-06T04:17:40.870"
+      },
+      {
+        "cve_id": "CVE-2026-7796",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "The EmbedPress \u2013 PDF Embedder, Embed PDF viewer, YouTube Videos, 3D FlipBook, Social feeds & more plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the block 'url' attribute in all",
+        "published": "2026-06-06T04:17:41.187"
+      },
+      {
+        "cve_id": "CVE-2026-11406",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A vulnerability was determined in GL.iNet MT3000 up to 4.4.5. This vulnerability affects unknown code of the file ovpnclient.sh of the component OpenVPN Client Import Workflow. This manipulation cause",
+        "published": "2026-06-06T10:16:27.017"
+      },
+      {
+        "cve_id": "CVE-2026-11408",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A vulnerability was identified in vertex-app vertex up to 2026.02.12. This issue affects some unknown processing of the file app/model/LogMod.js of the component Log Viewer Endpoint. Such manipulation",
+        "published": "2026-06-06T11:16:48.347"
       }
     ]
   },
