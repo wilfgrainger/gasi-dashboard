@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T20:54:14.098387+00:00",
+  "generated_at": "2026-06-07T02:38:02.674204+00:00",
   "threat_score": {
     "score": 5.0,
     "level": "ELEVATED",
@@ -7,7 +7,7 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 23,
+        "value": 22,
         "score": 3.0,
         "max": 3
       },
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1612,
-    "recent_30d_count": 23,
+    "recent_30d_count": 22,
     "recent": [
       {
         "cve_id": "CVE-2026-28318",
@@ -238,17 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 63,
+    "total": 37,
     "critical_count": 0,
-    "high_count": 11,
+    "high_count": 6,
     "cves": [
-      {
-        "cve_id": "CVE-2026-7654",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Admin Columns plugin for WordPress is vulnerable to PHP Object Injection leading to Remote Code Execution in versions up to and including 7.0.18. This is due to the use of `unserialize()` without ",
-        "published": "2026-06-05T23:16:44.807"
-      },
       {
         "cve_id": "CVE-2026-11413",
         "severity": "HIGH",
@@ -257,18 +250,11 @@
         "published": "2026-06-06T14:16:20.060"
       },
       {
-        "cve_id": "CVE-2026-11416",
+        "cve_id": "CVE-2026-26422",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "MoviePilot contains a path traversal vulnerability in the AliPan, U115, and Rclone cloud storage download handlers where the local destination path is constructed by concatenating the configured downl",
-        "published": "2026-06-05T22:16:47.127"
-      },
-      {
-        "cve_id": "CVE-2026-9290",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The WP User Manager \u2013 User Profile Builder & Membership plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 2.9.17 via the (profile template scope) functio",
-        "published": "2026-06-06T00:16:42.303"
+        "base_score": 8.4,
+        "description": "clash-verge-service-ipc before 2.3.0 has a world-reachable IPC endpoint, leading to local privilege escalation.",
+        "published": "2026-06-06T23:16:43.947"
       },
       {
         "cve_id": "CVE-2026-11435",
@@ -285,20 +271,6 @@
         "published": "2026-06-06T17:16:41.557"
       },
       {
-        "cve_id": "CVE-2026-8438",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The All-In-One Security (AIOS) \u2013 Security and Firewall plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions up to and including 5.4.7. This is due to insufficient input saniti",
-        "published": "2026-06-06T02:16:21.453"
-      },
-      {
-        "cve_id": "CVE-2026-8901",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The Integration for Freshsales \u2013 Contact Form 7, WPForms, Elementor, Gravity Forms and More plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Form Submission Data in all versions u",
-        "published": "2026-06-06T02:16:22.547"
-      },
-      {
         "cve_id": "CVE-2026-7537",
         "severity": "HIGH",
         "base_score": 7.2,
@@ -313,13 +285,6 @@
         "published": "2026-06-06T05:16:30.047"
       },
       {
-        "cve_id": "CVE-2026-11422",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Markdown Preview Enhanced 0.8.x with crossnote engine 0.9.28 contains a code injection vulnerability in the WaveDrom rendering pipeline that allows attackers to execute arbitrary JavaScript by embeddi",
-        "published": "2026-06-05T21:16:29.177"
-      },
-      {
         "cve_id": "CVE-2026-7566",
         "severity": "MEDIUM",
         "base_score": 6.6,
@@ -332,27 +297,6 @@
         "base_score": 6.5,
         "description": "The Photo Gallery by 10Web \u2013 Mobile-Friendly Image Gallery plugin for WordPress is vulnerable to time-based SQL Injection via 'compact_album_order_by' Shortcode Parameter in all versions up to, and in",
         "published": "2026-06-06T05:16:29.917"
-      },
-      {
-        "cve_id": "CVE-2026-8893",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The Express Payment For Stripe plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'type' attribute of the [stripe-express] shortcode in versions up to, and including, 1.28.0. Th",
-        "published": "2026-06-06T00:16:41.887"
-      },
-      {
-        "cve_id": "CVE-2026-8900",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The Simple SEO Slideshow plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Shortcode Attributes in all versions up to, and including, 1.2.8 due to insufficient input sanitization a",
-        "published": "2026-06-06T00:16:42.013"
-      },
-      {
-        "cve_id": "CVE-2026-9281",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The Master Addons For Elementor \u2013 Widgets, Extensions, Theme Builder, Popup Builder & Template Kits plugin for WordPress is vulnerable to Stored Cross-Site Scripting via 'jtlma_custom_js' Page Setting",
-        "published": "2026-06-06T02:16:22.820"
       },
       {
         "cve_id": "CVE-2026-7795",
@@ -381,6 +325,62 @@
         "base_score": 6.3,
         "description": "A vulnerability was identified in vertex-app vertex up to 2026.02.12. This issue affects some unknown processing of the file app/model/LogMod.js of the component Log Viewer Endpoint. Such manipulation",
         "published": "2026-06-06T11:16:48.347"
+      },
+      {
+        "cve_id": "CVE-2026-11412",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A weakness has been identified in Jinher OA C6. The affected element is an unknown function of the file /C6/JHSoft.Web.ModuleCount/GetFormSn.aspx. Executing a manipulation of the argument queryID can ",
+        "published": "2026-06-06T11:16:49.273"
+      },
+      {
+        "cve_id": "CVE-2026-11438",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A vulnerability has been found in theonedev onedev up to 15.0.5. Affected by this vulnerability is an unknown functionality of the file /projects. The manipulation of the argument project.forkedFromId",
+        "published": "2026-06-06T17:16:41.713"
+      },
+      {
+        "cve_id": "CVE-2026-11439",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A vulnerability was found in theonedev onedev up to 15.0.5. Affected by this issue is some unknown functionality of the file /projects/ of the component Parent Project Handler. The manipulation of the",
+        "published": "2026-06-06T18:16:53.063"
+      },
+      {
+        "cve_id": "CVE-2026-11440",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A vulnerability was determined in theonedev onedev up to 15.0.5. This affects an unknown part of the file /repositories/{projectId}/default-branch of the component REST API. This manipulation of the a",
+        "published": "2026-06-06T18:16:53.243"
+      },
+      {
+        "cve_id": "CVE-2026-11441",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A vulnerability was identified in theonedev onedev up to 15.0.5. This vulnerability affects the function canAccessIssue of the file /issues/ of the component Pull Request Handler. Such manipulation of",
+        "published": "2026-06-06T18:16:53.443"
+      },
+      {
+        "cve_id": "CVE-2026-11447",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A security flaw has been discovered in GL.iNet GL-MT3000 up to 4.4.5. Impacted is the function iwinfo_backend of the file iwinfo.so of the component MTK Backend. The manipulation of the argument devic",
+        "published": "2026-06-07T02:16:23.313"
+      },
+      {
+        "cve_id": "CVE-2026-9280",
+        "severity": "MEDIUM",
+        "base_score": 6.1,
+        "description": "The Ad Inserter \u2013 Ad Manager & AdSense Ads plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via URL Parameters in iframe Mode in all versions up to, and including, 2.8.15 due to in",
+        "published": "2026-06-06T04:17:41.947"
+      },
+      {
+        "cve_id": "CVE-2026-7665",
+        "severity": "MEDIUM",
+        "base_score": 5.3,
+        "description": "The Essential Addons for Elementor \u2013 Popular Elementor Templates & Widgets plugin for WordPress is vulnerable to Information Exposure in all versions up to, and including, 6.6.4 via the ajax_load_more",
+        "published": "2026-06-06T04:17:40.400"
       }
     ]
   },
