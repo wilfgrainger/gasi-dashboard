@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-06-08T15:30:12.892812+00:00",
+  "generated_at": "2026-06-08T18:19:07.165755+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 22,
+        "value": 23,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 5,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1612,
-    "recent_30d_count": 22,
+    "total_catalog_count": 1613,
+    "recent_30d_count": 23,
     "recent": [
+      {
+        "cve_id": "CVE-2026-42271",
+        "vendor": "BerriAI",
+        "product": "LiteLLM",
+        "name": "BerriAI LiteLLM Command Injection Vulnerability",
+        "date_added": "2026-06-08",
+        "due_date": "2026-06-22",
+        "description": "BerriAI LiteLLM contains a command injection vulnerability that could allow any authenticated user, including holders of low-privilege internal-user keys, to run arbitrary commands on the host.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-28318",
         "vendor": "SolarWinds",
@@ -224,22 +234,12 @@
         "due_date": "2026-06-03",
         "description": "Microsoft Defender contains a link following vulnerability that allows an authorized attacker to elevate privileges locally.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-45498",
-        "vendor": "Microsoft",
-        "product": "Defender",
-        "name": "Microsoft Defender Denial of Service Vulnerability",
-        "date_added": "2026-05-20",
-        "due_date": "2026-06-03",
-        "description": "Microsoft Defender contains an unspecified vulnerability that allows for denial of service.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 99,
-    "critical_count": 4,
+    "total": 204,
+    "critical_count": 5,
     "high_count": 27,
     "cves": [
       {
@@ -269,6 +269,13 @@
         "base_score": 9.8,
         "description": "A vulnerability was determined in Tenda HG7HG9 and HG10 300001138_en_xpon. This affects the function formDOMAINBLK of the file /boaform/formDOMAINBLK. Executing a manipulation of the argument blkDomai",
         "published": "2026-06-08T09:16:29.957"
+      },
+      {
+        "cve_id": "CVE-2026-50751",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "A logic flow weakness in Remote Access and Mobile Access certificate validation in deprecated IKEv1 key exchange allows an unauthenticated remote attacker to bypass user authentication and establish a",
+        "published": "2026-06-08T12:16:32.367"
       },
       {
         "cve_id": "CVE-2026-11498",
@@ -374,13 +381,6 @@
         "base_score": 7.3,
         "description": "A vulnerability was determined in SourceCodester Class and Exam Timetabling System 1.0. This affects an unknown function of the file /index1.php. This manipulation of the argument Password causes sql ",
         "published": "2026-06-08T01:16:22.760"
-      },
-      {
-        "cve_id": "CVE-2026-11474",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security flaw has been discovered in Kushan2k student-management-system up to f16a4ceaddd6729c4b306ed4641cda3176c1ef2a. Affected is an unknown function of the file service/RegisterService.php of the",
-        "published": "2026-06-08T01:16:23.073"
       }
     ]
   },
