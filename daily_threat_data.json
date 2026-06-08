@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-07T21:00:45.053189+00:00",
+  "generated_at": "2026-06-08T02:42:41.890447+00:00",
   "threat_score": {
-    "score": 5.0,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 1.0,
+        "value": 3,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,16 +238,30 @@
     ]
   },
   "nvd": {
-    "total": 16,
-    "critical_count": 0,
-    "high_count": 8,
+    "total": 39,
+    "critical_count": 3,
+    "high_count": 14,
     "cves": [
       {
-        "cve_id": "CVE-2026-26422",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "clash-verge-service-ipc before 2.3.0 has a world-reachable IPC endpoint, leading to local privilege escalation.",
-        "published": "2026-06-06T23:16:43.947"
+        "cve_id": "CVE-2023-54352",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "WordPress Seotheme contains a remote code execution vulnerability that allows unauthenticated attackers to execute arbitrary PHP code by uploading malicious files to the theme directory. Attackers can",
+        "published": "2026-06-08T02:16:23.107"
+      },
+      {
+        "cve_id": "CVE-2024-58348",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "WordPress Background Image Cropper version 1.2 contains a remote code execution vulnerability that allows unauthenticated attackers to upload arbitrary files by accessing the ups.php endpoint. Attacke",
+        "published": "2026-06-08T02:16:23.267"
+      },
+      {
+        "cve_id": "CVE-2024-58349",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "WordPress Theme Travelscape 1.0.3 contains an arbitrary file upload vulnerability that allows unauthenticated attackers to upload malicious files by exploiting insufficient validation in the theme's u",
+        "published": "2026-06-08T02:16:23.403"
       },
       {
         "cve_id": "CVE-2026-49494",
@@ -255,6 +269,13 @@
         "base_score": 7.5,
         "description": "Comodo Internet Security's firewall driver Inspect.sys contains an integer underflow in its IPv6 packet parser. The parser decrements an unsigned 64-bit payload-length value (taken from the IPv6 fixed",
         "published": "2026-06-07T13:16:20.927"
+      },
+      {
+        "cve_id": "CVE-2023-54350",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "WordPress Augmented-Reality plugin contains a remote code execution vulnerability in the elFinder connector that allows unauthenticated attackers to upload and execute arbitrary PHP files. Attackers c",
+        "published": "2026-06-08T02:16:22.810"
       },
       {
         "cve_id": "CVE-2026-11450",
@@ -299,60 +320,67 @@
         "published": "2026-06-07T20:16:39.993"
       },
       {
-        "cve_id": "CVE-2026-11447",
+        "cve_id": "CVE-2026-11462",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was found in Chengdu Everbrite Network Technology BeikeShop up to 1.6.0.22. This impacts the function callback of the file plugins/Stripe/Controllers/StripeController.php of the compon",
+        "published": "2026-06-07T23:16:41.040"
+      },
+      {
+        "cve_id": "CVE-2026-11463",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was determined in USCiLab Cereal up to 1.3.2. Affected is an unknown function of the component Shared Pointer Handler. Executing a manipulation can lead to type confusion. The attack c",
+        "published": "2026-06-07T23:16:41.697"
+      },
+      {
+        "cve_id": "CVE-2026-11471",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was found in SourceCodester Class and Exam Timetabling System 1.0. The impacted element is an unknown function of the file /index2.php. The manipulation of the argument Password result",
+        "published": "2026-06-08T01:16:22.600"
+      },
+      {
+        "cve_id": "CVE-2026-11472",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was determined in SourceCodester Class and Exam Timetabling System 1.0. This affects an unknown function of the file /index1.php. This manipulation of the argument Password causes sql ",
+        "published": "2026-06-08T01:16:22.760"
+      },
+      {
+        "cve_id": "CVE-2026-11474",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A security flaw has been discovered in Kushan2k student-management-system up to f16a4ceaddd6729c4b306ed4641cda3176c1ef2a. Affected is an unknown function of the file service/RegisterService.php of the",
+        "published": "2026-06-08T01:16:23.073"
+      },
+      {
+        "cve_id": "CVE-2023-54351",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "WordPress Sonaar Music Plugin 4.7 contains a stored cross-site scripting vulnerability that allows unauthenticated attackers to inject malicious scripts through the comment functionality. Attackers ca",
+        "published": "2026-06-08T02:16:22.950"
+      },
+      {
+        "cve_id": "CVE-2021-47982",
         "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A security flaw has been discovered in GL.iNet GL-MT3000 up to 4.4.5. Impacted is the function iwinfo_backend of the file iwinfo.so of the component MTK Backend. The manipulation of the argument devic",
-        "published": "2026-06-07T02:16:23.313"
+        "base_score": 6.4,
+        "description": "WordPress Plugin WP-Paginate 2.1.3 contains a stored cross-site scripting vulnerability that allows authenticated attackers to inject malicious scripts by manipulating the preset parameter. Attackers ",
+        "published": "2026-06-08T02:16:22.190"
       },
       {
-        "cve_id": "CVE-2026-11449",
+        "cve_id": "CVE-2021-47983",
         "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A security vulnerability has been detected in GL.iNet GL-MT3000 4.4.5. The impacted element is the function rpc_sys of the file /cgi-bin/luci/rpc of the component LuCI JSON-RPC Interface. Such manipul",
-        "published": "2026-06-07T03:16:27.077"
+        "base_score": 6.4,
+        "description": "WordPress Plugin Stripe Payments 2.0.39 contains a stored cross-site scripting vulnerability that allows authenticated attackers to inject malicious scripts through the AcceptStripePayments-settings[c",
+        "published": "2026-06-08T02:16:22.363"
       },
       {
-        "cve_id": "CVE-2026-11453",
+        "cve_id": "CVE-2021-47984",
         "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A vulnerability was found in Tiobon Employee Self-Service System up to 7.2. Affected by this vulnerability is an unknown functionality of the file /Blog/BlogSearch.aspx of the component Login Endpoint",
-        "published": "2026-06-07T04:16:30.147"
-      },
-      {
-        "cve_id": "CVE-2026-11458",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "A weakness has been identified in erzhongxmu JeeWMS up to 141740afb2ba14d441c82a833d0a418d07ca2d69. This issue affects some unknown processing of the file /base-boot/actuator of the component Boot Act",
-        "published": "2026-06-07T09:16:22.050"
-      },
-      {
-        "cve_id": "CVE-2026-11455",
-        "severity": "MEDIUM",
-        "base_score": 5.0,
-        "description": "A vulnerability was determined in FoundationAgents MetaGPT up to 0.8.2. Affected by this issue is the function check_cmd_exists of the file metagpt/utils/common.py. This manipulation of the argument m",
-        "published": "2026-06-07T09:16:20.403"
-      },
-      {
-        "cve_id": "CVE-2026-11448",
-        "severity": "MEDIUM",
-        "base_score": 4.7,
-        "description": "A weakness has been identified in GL.iNet GL-MT3000 up to 4.4.5. The affected element is the function realpath of the file /rpc of the component Minidlna Service. This manipulation of the argument kub",
-        "published": "2026-06-07T03:16:26.233"
-      },
-      {
-        "cve_id": "CVE-2026-11459",
-        "severity": "LOW",
-        "base_score": 3.3,
-        "description": "A security vulnerability has been detected in SecureAge CatchPulse up to 10.9.1. Impacted is an unknown function in the library saappctl.sys of the component IOCTL Handler. The manipulation leads to i",
-        "published": "2026-06-07T10:16:21.863"
-      },
-      {
-        "cve_id": "CVE-2026-36229",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "Rejected reason: DO NOT USE THIS CANDIDATE NUMBER. ConsultIDs: none. Reason: This candidate was withdrawn by its CNA. Further investigation showed that it was not a security issue. Notes: none.",
-        "published": "2026-06-06T21:16:25.703"
+        "base_score": 6.4,
+        "description": "WordPress Plugin WP24 Domain Check 1.6.2 contains a stored cross-site scripting vulnerability that allows authenticated attackers to inject malicious scripts by submitting crafted input to the fieldna",
+        "published": "2026-06-08T02:16:22.503"
       }
     ]
   },
