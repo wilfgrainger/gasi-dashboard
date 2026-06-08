@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T18:19:07.165755+00:00",
+  "generated_at": "2026-06-08T21:44:18.039405+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,7 +7,7 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 23,
+        "value": 24,
         "score": 3.0,
         "max": 3
       },
@@ -32,8 +32,8 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1613,
-    "recent_30d_count": 23,
+    "total_catalog_count": 1614,
+    "recent_30d_count": 24,
     "recent": [
       {
         "cve_id": "CVE-2026-42271",
@@ -43,6 +43,16 @@
         "date_added": "2026-06-08",
         "due_date": "2026-06-22",
         "description": "BerriAI LiteLLM contains a command injection vulnerability that could allow any authenticated user, including holders of low-privilege internal-user keys, to run arbitrary commands on the host.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-50751",
+        "vendor": "Check Point",
+        "product": "Security Gateway",
+        "name": "Check Point Security Gateway Improper Authentication Vulnerability",
+        "date_added": "2026-06-08",
+        "due_date": "2026-06-11",
+        "description": "Check Point Security Gateway contains an improper authentication vulnerability in IKEv1 key exchange that could allow an unauthenticated remote attacker to bypass user authentication and establish a r",
         "ransomware_use": "Unknown"
       },
       {
@@ -224,21 +234,11 @@
         "due_date": "2026-06-03",
         "description": "Microsoft Internet Explorer contains an use-after-free vulnerability that could allow remote attackers to execute arbitrary code via vectors involving access to an invalid pointer after the deletion o",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-41091",
-        "vendor": "Microsoft",
-        "product": "Defender",
-        "name": "Microsoft Defender Link Following Vulnerability",
-        "date_added": "2026-05-20",
-        "due_date": "2026-06-03",
-        "description": "Microsoft Defender contains a link following vulnerability that allows an authorized attacker to elevate privileges locally.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 204,
+    "total": 225,
     "critical_count": 5,
     "high_count": 27,
     "cves": [
@@ -341,18 +341,18 @@
         "published": "2026-06-08T09:16:30.160"
       },
       {
+        "cve_id": "CVE-2026-36789",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Shenzhen Tenda Technology Co., Ltd Tenda AC1206 v15.03.06.23 was discovered to contain multiple stack overflows in the fromGstDhcpSetSer function via the username and password parameters. These vulner",
+        "published": "2026-06-08T15:16:45.660"
+      },
+      {
         "cve_id": "CVE-2026-50752",
         "severity": "HIGH",
         "base_score": 7.4,
         "description": "A weakness in the certificate validation logic of the deprecated IKEv1 key exchange may allow an unauthenticated attacker positioned as a man-in-the-middle to bypass certificate validation in VPN site",
         "published": "2026-06-08T12:16:32.503"
-      },
-      {
-        "cve_id": "CVE-2026-11460",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A flaw has been found in Boost Serialization up to 1.91. The impacted element is an unknown function. This manipulation causes improper validation of specified type of input. It is possible to initiat",
-        "published": "2026-06-07T20:16:39.993"
       },
       {
         "cve_id": "CVE-2026-11462",
