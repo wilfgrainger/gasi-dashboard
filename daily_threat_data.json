@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-09T02:08:53.122810+00:00",
+  "generated_at": "2026-06-09T07:37:12.386107+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
-        "score": 2.5,
+        "value": 3,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,37 +238,23 @@
     ]
   },
   "nvd": {
-    "total": 299,
-    "critical_count": 5,
-    "high_count": 32,
+    "total": 332,
+    "critical_count": 3,
+    "high_count": 29,
     "cves": [
-      {
-        "cve_id": "CVE-2023-54352",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "WordPress Seotheme contains a remote code execution vulnerability that allows unauthenticated attackers to execute arbitrary PHP code by uploading malicious files to the theme directory. Attackers can",
-        "published": "2026-06-08T02:16:23.107"
-      },
-      {
-        "cve_id": "CVE-2024-58348",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "WordPress Background Image Cropper version 1.2 contains a remote code execution vulnerability that allows unauthenticated attackers to upload arbitrary files by accessing the ups.php endpoint. Attacke",
-        "published": "2026-06-08T02:16:23.267"
-      },
-      {
-        "cve_id": "CVE-2024-58349",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "WordPress Theme Travelscape 1.0.3 contains an arbitrary file upload vulnerability that allows unauthenticated attackers to upload malicious files by exploiting insufficient validation in the theme's u",
-        "published": "2026-06-08T02:16:23.403"
-      },
       {
         "cve_id": "CVE-2026-11499",
         "severity": "CRITICAL",
         "base_score": 9.8,
         "description": "A vulnerability was determined in Tenda HG7HG9 and HG10 300001138_en_xpon. This affects the function formDOMAINBLK of the file /boaform/formDOMAINBLK. Executing a manipulation of the argument blkDomai",
         "published": "2026-06-08T09:16:29.957"
+      },
+      {
+        "cve_id": "CVE-2026-44631",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Buffer Underwrite vulnerability in Apache HTTP Server on crafted regular expressions in the configuration.\n\nThis issue affects Apache HTTP Server: from 2.4.0 through 2.4.67.\n\nUsers are recommended to ",
+        "published": "2026-06-08T16:16:40.583"
       },
       {
         "cve_id": "CVE-2026-50751",
@@ -334,6 +320,13 @@
         "published": "2026-06-08T16:16:37.473"
       },
       {
+        "cve_id": "CVE-2026-46656",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Bludit is a content management system. Versions prior to 3.22.0 have a Broken Access Control flaw where active sessions remain valid even after the corresponding user account has been  physically dele",
+        "published": "2026-06-08T16:16:42.873"
+      },
+      {
         "cve_id": "CVE-2026-41722",
         "severity": "HIGH",
         "base_score": 8.0,
@@ -355,13 +348,6 @@
         "published": "2026-06-08T09:16:30.693"
       },
       {
-        "cve_id": "CVE-2023-54350",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "WordPress Augmented-Reality plugin contains a remote code execution vulnerability in the elFinder connector that allows unauthenticated attackers to upload and execute arbitrary PHP files. Attackers c",
-        "published": "2026-06-08T02:16:22.810"
-      },
-      {
         "cve_id": "CVE-2026-3238",
         "severity": "HIGH",
         "base_score": 7.5,
@@ -381,6 +367,20 @@
         "base_score": 7.5,
         "description": "Software installed and run as a non-privileged user may conduct improper GPU system calls to corrupt kernel heap memory.\n\n\n\nBy creating resources of certain types and presenting a set of parameters to",
         "published": "2026-06-08T16:16:37.823"
+      },
+      {
+        "cve_id": "CVE-2026-34355",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A buffer overflow in mod_proxy_html in Apache HTTP Server 2.4.67 and earlier allows an attack by an untrusted backend.\nUsers are recommended to upgrade to version 2.4.68, which fixes this issue.",
+        "published": "2026-06-08T16:16:38.387"
+      },
+      {
+        "cve_id": "CVE-2026-34356",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Heap-based Buffer Overflow vulnerability in Apache HTTP Server with malicious backend servers and ProxyPassReverseCookie*\n\nThis issue affects Apache HTTP Server: from 2.4.0 through 2.4.67.\n\nUsers are ",
+        "published": "2026-06-08T16:16:38.537"
       }
     ]
   },
