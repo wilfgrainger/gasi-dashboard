@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09T14:27:31.595364+00:00",
+  "generated_at": "2026-06-09T17:52:53.229585+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 24,
+        "value": 26,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
+        "value": 9,
         "score": 2.5,
         "max": 3
       },
@@ -32,9 +32,29 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1614,
-    "recent_30d_count": 24,
+    "total_catalog_count": 1616,
+    "recent_30d_count": 26,
     "recent": [
+      {
+        "cve_id": "CVE-2026-11645",
+        "vendor": "Google",
+        "product": "Chromium V8",
+        "name": "Google Chromium V8 Out-of-Bounds Read and Write Vulnerability",
+        "date_added": "2026-06-09",
+        "due_date": "2026-06-23",
+        "description": "Google Chromium V8 out-of-bounds read and write vulnerability that could allow a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. This vulnerability could affect mul",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-7473",
+        "vendor": "Arista",
+        "product": "Extensible Operating System",
+        "name": "Arista Extensible Operating System Incomplete Comparison with Missing Factors Vulnerability",
+        "date_added": "2026-06-09",
+        "due_date": "2026-06-23",
+        "description": "Arista Extensible Operating System (EOS) contains an incomplete comparison with missing factors vulnerability when the switch incorrectly decapsulate and forwards other unexpected tunneled packet with",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-42271",
         "vendor": "BerriAI",
@@ -53,7 +73,7 @@
         "date_added": "2026-06-08",
         "due_date": "2026-06-11",
         "description": "Check Point Security Gateway contains an improper authentication vulnerability in IKEv1 key exchange that could allow an unauthenticated remote attacker to bypass user authentication and establish a r",
-        "ransomware_use": "Unknown"
+        "ransomware_use": "Known"
       },
       {
         "cve_id": "CVE-2026-28318",
@@ -214,173 +234,153 @@
         "due_date": "2026-06-03",
         "description": "Adobe Acrobat and Reader contain a heap-based buffer overflow vulnerability which could allow remote attackers to execute arbitrary code via a crafted PDF file that triggers memory corruption.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2010-0249",
-        "vendor": "Microsoft",
-        "product": "Internet Explorer",
-        "name": "Microsoft Internet Explorer Use-After-Free Vulnerability",
-        "date_added": "2026-05-20",
-        "due_date": "2026-06-03",
-        "description": "Microsoft Internet Explorer contains an use-after-free vulnerability that could allow remote attackers to execute arbitrary code by accessing a pointer associated with a deleted object. The impacted p",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2010-0806",
-        "vendor": "Microsoft",
-        "product": "Internet Explorer",
-        "name": "Microsoft Internet Explorer Use-After-Free Vulnerability",
-        "date_added": "2026-05-20",
-        "due_date": "2026-06-03",
-        "description": "Microsoft Internet Explorer contains an use-after-free vulnerability that could allow remote attackers to execute arbitrary code via vectors involving access to an invalid pointer after the deletion o",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 397,
-    "critical_count": 6,
-    "high_count": 23,
+    "total": 608,
+    "critical_count": 9,
+    "high_count": 57,
     "cves": [
       {
-        "cve_id": "CVE-2026-29167",
+        "cve_id": "CVE-2026-52778",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Use After Free vulnerability in Apache HTTP Server with mod_ldap in per-directory configuration\n\nThis issue affects Apache HTTP Server: from 2.4.0 through 2.4.67.\n\nUsers are recommended to upgrade to ",
-        "published": "2026-06-08T16:16:37.967"
+        "description": "YesWiki is a wiki system written in PHP. Prior to version 4.6.6, an unsafe execution vulnerability exists in the Bazar form field calculator (CalcField.php) of YesWiki. The application attempts to san",
+        "published": "2026-06-08T19:16:46.683"
       },
       {
-        "cve_id": "CVE-2026-44631",
+        "cve_id": "CVE-2026-11634",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Buffer Underwrite vulnerability in Apache HTTP Server on crafted regular expressions in the configuration.\n\nThis issue affects Apache HTTP Server: from 2.4.0 through 2.4.67.\n\nUsers are recommended to ",
-        "published": "2026-06-08T16:16:40.583"
+        "base_score": 9.6,
+        "description": "Use after free in Gamepad in Google Chrome on Windows prior to 149.0.7827.103 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Cr",
+        "published": "2026-06-09T00:16:45.983"
       },
       {
-        "cve_id": "CVE-2026-25555",
+        "cve_id": "CVE-2026-11638",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "OpenBullet2 through version 0.3.2 contains an authentication bypass vulnerability in the API key authentication middleware that allows unauthenticated attackers to gain admin access by supplying an em",
-        "published": "2026-06-08T17:16:41.080"
+        "base_score": 9.6,
+        "description": "Use after free in Printing in Google Chrome prior to 149.0.7827.103 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
+        "published": "2026-06-09T00:16:46.483"
       },
       {
-        "cve_id": "CVE-2026-39910",
+        "cve_id": "CVE-2026-11651",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "STACKIT IaaS API contains a missing authorization check vulnerability that allows authenticated, low-privileged attackers to escalate privileges to full organization compromise by attaching arbitrary ",
-        "published": "2026-06-08T17:16:42.613"
+        "base_score": 9.6,
+        "description": "Use after free in Network in Google Chrome prior to 149.0.7827.103 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-06-09T00:16:48.027"
       },
       {
-        "cve_id": "CVE-2026-41448",
+        "cve_id": "CVE-2026-11654",
         "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "AdGuard Home, when started with the --glinet flag, contains an authentication bypass vulnerability that allows unauthenticated attackers to gain full admin access by supplying a path traversal sequenc",
-        "published": "2026-06-08T17:16:42.847"
+        "base_score": 9.6,
+        "description": "Use after free in CameraCapture in Google Chrome on Mac prior to 149.0.7827.103 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: ",
+        "published": "2026-06-09T00:16:48.360"
       },
       {
-        "cve_id": "CVE-2026-42535",
+        "cve_id": "CVE-2026-11659",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A path handling issue in mod_dav_fs in Apache 2.4.67 and earlier\u00a0allows a WebDAV content author to directly manipulate trusted DAV property databases, potentially causing child process crashes.\n\nUsers",
-        "published": "2026-06-08T16:16:39.127"
+        "base_score": 9.6,
+        "description": "Integer overflow in UI in Google Chrome on Linux prior to 149.0.7827.103 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-06-09T00:16:48.923"
       },
       {
-        "cve_id": "CVE-2026-11517",
+        "cve_id": "CVE-2026-11671",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Use after free in Navigation in Google Chrome prior to 149.0.7827.103 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-06-09T00:16:50.337"
+      },
+      {
+        "cve_id": "CVE-2026-11697",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Insufficient validation of untrusted input in UI in Google Chrome prior to 149.0.7827.103 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security ",
+        "published": "2026-06-09T00:16:53.197"
+      },
+      {
+        "cve_id": "CVE-2026-11393",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "Improper neutralization of triple-quote characters during Python code generation in AgentCore CLI before v0.14.2 might allow an authenticated remote threat actor to execute arbitrary code on AWS Agent",
+        "published": "2026-06-08T19:16:41.270"
+      },
+      {
+        "cve_id": "CVE-2026-11553",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A vulnerability was determined in UTT HiPER 2610G up to 3.0.0-171107. This impacts the function strcpy of the file /goform/formConfigDnsFilterGlobal. Executing a manipulation of the argument GroupName",
-        "published": "2026-06-08T15:16:43.233"
+        "description": "A vulnerability was found in Tenda HG7HG9 and HG10 300001138_en_xpon. This affects the function formPPPEdit of the file /boaform/formPPPEdit. The manipulation of the argument encodename results in sta",
+        "published": "2026-06-08T18:16:32.480"
       },
       {
-        "cve_id": "CVE-2026-11522",
+        "cve_id": "CVE-2026-11556",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A vulnerability was detected in Tenda W20E 15.11.0.6. This vulnerability affects the function formSetPortMirror of the file /goform/setPortMirror. Performing a manipulation of the argument portMirrorM",
-        "published": "2026-06-08T16:16:36.920"
+        "description": "A security flaw has been discovered in Tenda F451 1.0.0.7/1.0.0.9. Impacted is the function formWriteFacMac of the file /goform/WriteFacMac of the component Web Management Interface. Performing a mani",
+        "published": "2026-06-08T18:16:33.040"
       },
       {
-        "cve_id": "CVE-2026-11523",
+        "cve_id": "CVE-2026-11557",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A flaw has been found in Tenda W20E 15.11.0.6. This issue affects the function formPortalAuth of the file /goform/PortalAuth of the component Web Management Interface. Executing a manipulation of the ",
-        "published": "2026-06-08T16:16:37.113"
+        "description": "A weakness has been identified in Tenda F451 1.0.0.7/1.0.0.9. The affected element is the function fromNatlimit of the file /goform/Natlimit of the component Web Management Interface. Executing a mani",
+        "published": "2026-06-08T19:16:41.653"
       },
       {
-        "cve_id": "CVE-2026-11524",
+        "cve_id": "CVE-2026-46490",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A vulnerability has been found in Tenda W20E 15.11.0.6. Impacted is the function modifyWifiFilterRules of the file /goform/modifyWifiFilterRules of the component Web Management Interface. The manipula",
-        "published": "2026-06-08T16:16:37.293"
+        "description": "samlify is a Node.js library for SAML single sign-on. Prior to version 2.13.0, samlify\u2019s template substitution only escapes attribute contexts. Values inserted into element text (e.g., <saml:Attribute",
+        "published": "2026-06-08T19:16:45.950"
       },
       {
-        "cve_id": "CVE-2026-11528",
+        "cve_id": "CVE-2026-11629",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A vulnerability was found in Tenda AC18 15.03.05.05. The affected element is the function sub_45304 of the file /goform/getRebootStatus of the component Web Management Interface. The manipulation of t",
-        "published": "2026-06-08T16:16:37.473"
+        "description": "Use after free in Ozone in Google Chrome prior to 149.0.7827.103 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)",
+        "published": "2026-06-09T00:16:45.393"
       },
       {
-        "cve_id": "CVE-2026-46656",
+        "cve_id": "CVE-2026-11630",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Bludit is a content management system. Versions prior to 3.22.0 have a Broken Access Control flaw where active sessions remain valid even after the corresponding user account has been  physically dele",
-        "published": "2026-06-08T16:16:42.873"
+        "description": "Use after free in File Input in Google Chrome prior to 149.0.7827.103 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)",
+        "published": "2026-06-09T00:16:45.500"
       },
       {
-        "cve_id": "CVE-2026-25559",
+        "cve_id": "CVE-2026-11633",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "OpenBullet2 through version 0.3.2 contains a path traversal vulnerability in the wordlist endpoint that allows authenticated attackers to perform arbitrary file read, write, and delete operations by s",
-        "published": "2026-06-08T17:16:41.237"
+        "description": "Use after free in Bluetooth in Google Chrome on Mac prior to 149.0.7827.103 allowed a remote attacker to execute arbitrary code via a malicious peripheral. (Chromium security severity: Critical)",
+        "published": "2026-06-09T00:16:45.873"
       },
       {
-        "cve_id": "CVE-2026-25855",
+        "cve_id": "CVE-2026-11637",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "OpenBullet2 through version 0.3.2 contains a remote code execution vulnerability that allows authenticated users to execute arbitrary commands by uploading script files (.bat.ps1.sh) through the FileP",
-        "published": "2026-06-08T17:16:41.380"
+        "description": "Use after free in Views in Google Chrome on Mac prior to 149.0.7827.103 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: Critical)",
+        "published": "2026-06-09T00:16:46.370"
       },
       {
-        "cve_id": "CVE-2026-25856",
+        "cve_id": "CVE-2026-11645",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "OpenBullet2 through version 0.3.2 contains an authenticated remote code execution vulnerability that allows authenticated users to execute arbitrary C# code on the server host by creating or modifying",
-        "published": "2026-06-08T17:16:41.523"
+        "description": "Out of bounds read and write in V8 in Google Chrome prior to 149.0.7827.103 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: H",
+        "published": "2026-06-09T00:16:47.370"
       },
       {
-        "cve_id": "CVE-2026-36789",
+        "cve_id": "CVE-2026-11646",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Shenzhen Tenda Technology Co., Ltd Tenda AC1206 v15.03.06.23 was discovered to contain multiple stack overflows in the fromGstDhcpSetSer function via the username and password parameters. These vulner",
-        "published": "2026-06-08T15:16:45.660"
+        "base_score": 8.8,
+        "description": "Use after free in ViewTransitions in Google Chrome prior to 149.0.7827.103 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Hi",
+        "published": "2026-06-09T00:16:47.473"
       },
       {
-        "cve_id": "CVE-2026-22164",
+        "cve_id": "CVE-2026-11648",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Software installed and run as a non-privileged user may conduct improper GPU system calls to corrupt kernel heap memory.\n\n\n\nBy creating resources of certain types and presenting a set of parameters to",
-        "published": "2026-06-08T16:16:37.823"
-      },
-      {
-        "cve_id": "CVE-2026-34355",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A buffer overflow in mod_proxy_html in Apache HTTP Server 2.4.67 and earlier allows an attack by an untrusted backend.\nUsers are recommended to upgrade to version 2.4.68, which fixes this issue.",
-        "published": "2026-06-08T16:16:38.387"
-      },
-      {
-        "cve_id": "CVE-2026-34356",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Heap-based Buffer Overflow vulnerability in Apache HTTP Server with malicious backend servers and ProxyPassReverseCookie*\n\nThis issue affects Apache HTTP Server: from 2.4.0 through 2.4.67.\n\nUsers are ",
-        "published": "2026-06-08T16:16:38.537"
-      },
-      {
-        "cve_id": "CVE-2026-36786",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Shenzhen Tenda Technology Co., Ltd Tenda FH451 V1.0.0.9 was discovered to contain a stack overflow in the list1 parameter of the fromDhcpListClient function. This vulnerability allows attackers to cau",
-        "published": "2026-06-08T16:16:38.680"
+        "base_score": 8.8,
+        "description": "Use after free in FullScreen in Google Chrome on Windows prior to 149.0.7827.103 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: ",
+        "published": "2026-06-09T00:16:47.700"
       }
     ]
   },
