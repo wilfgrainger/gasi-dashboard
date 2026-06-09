@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-09T07:37:12.386107+00:00",
+  "generated_at": "2026-06-09T10:51:57.329109+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
-        "score": 2.0,
+        "value": 5,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,17 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 332,
-    "critical_count": 3,
-    "high_count": 29,
+    "total": 358,
+    "critical_count": 5,
+    "high_count": 25,
     "cves": [
-      {
-        "cve_id": "CVE-2026-11499",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A vulnerability was determined in Tenda HG7HG9 and HG10 300001138_en_xpon. This affects the function formDOMAINBLK of the file /boaform/formDOMAINBLK. Executing a manipulation of the argument blkDomai",
-        "published": "2026-06-08T09:16:29.957"
-      },
       {
         "cve_id": "CVE-2026-44631",
         "severity": "CRITICAL",
@@ -257,25 +250,32 @@
         "published": "2026-06-08T16:16:40.583"
       },
       {
+        "cve_id": "CVE-2026-25555",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "OpenBullet2 through version 0.3.2 contains an authentication bypass vulnerability in the API key authentication middleware that allows unauthenticated attackers to gain admin access by supplying an em",
+        "published": "2026-06-08T17:16:41.080"
+      },
+      {
+        "cve_id": "CVE-2026-39910",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "STACKIT IaaS API contains a missing authorization check vulnerability that allows authenticated, low-privileged attackers to escalate privileges to full organization compromise by attaching arbitrary ",
+        "published": "2026-06-08T17:16:42.613"
+      },
+      {
+        "cve_id": "CVE-2026-41448",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "AdGuard Home, when started with the --glinet flag, contains an authentication bypass vulnerability that allows unauthenticated attackers to gain full admin access by supplying a path traversal sequenc",
+        "published": "2026-06-08T17:16:42.847"
+      },
+      {
         "cve_id": "CVE-2026-50751",
         "severity": "CRITICAL",
         "base_score": 9.3,
         "description": "A logic flow weakness in Remote Access and Mobile Access certificate validation in deprecated IKEv1 key exchange allows an unauthenticated remote attacker to bypass user authentication and establish a",
         "published": "2026-06-08T12:16:32.367"
-      },
-      {
-        "cve_id": "CVE-2026-11498",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was found in Tenda HG7HG9 and HG10 300001138_en_xpon. Affected by this issue is the function asp_voip_OtherSet of the file /boaform/voip_other_set of the component Web Management Inter",
-        "published": "2026-06-08T09:16:29.753"
-      },
-      {
-        "cve_id": "CVE-2026-11503",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A security vulnerability has been detected in Tenda CX12L 16.03.53.12. The affected element is the function form_fast_setting_wifi_set of the file /goform/fast_setting_wifi_set of the component Wi-Fi ",
-        "published": "2026-06-08T10:16:32.927"
       },
       {
         "cve_id": "CVE-2026-11504",
@@ -327,32 +327,25 @@
         "published": "2026-06-08T16:16:42.873"
       },
       {
-        "cve_id": "CVE-2026-41722",
+        "cve_id": "CVE-2026-25559",
         "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "VMware Cloud Foundation Operations contains multiple stored cross-site scripting vulnerabilities.A malicious actor with privileges to create policies, views or text-widgets may be able to inject scrip",
-        "published": "2026-06-08T09:16:30.363"
+        "base_score": 8.8,
+        "description": "OpenBullet2 through version 0.3.2 contains a path traversal vulnerability in the wordlist endpoint that allows authenticated attackers to perform arbitrary file read, write, and delete operations by s",
+        "published": "2026-06-08T17:16:41.237"
       },
       {
-        "cve_id": "CVE-2026-41723",
+        "cve_id": "CVE-2026-25855",
         "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "VMware Cloud Foundation Operations contains multiple stored cross-site scripting vulnerabilities.A malicious actor with privileges to create policies, views or text-widgets may be able to inject scrip",
-        "published": "2026-06-08T09:16:30.567"
+        "base_score": 8.8,
+        "description": "OpenBullet2 through version 0.3.2 contains a remote code execution vulnerability that allows authenticated users to execute arbitrary commands by uploading script files (.bat.ps1.sh) through the FileP",
+        "published": "2026-06-08T17:16:41.380"
       },
       {
-        "cve_id": "CVE-2026-41724",
+        "cve_id": "CVE-2026-25856",
         "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "VMware Cloud Foundation Operations contains multiple stored cross-site scripting vulnerabilities.A malicious actor with privileges to create policies, views or text-widgets may be able to inject scrip",
-        "published": "2026-06-08T09:16:30.693"
-      },
-      {
-        "cve_id": "CVE-2026-3238",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A flaw was found in Samba\u2019s WINS server component when running as an Active Directory Domain Controller. The WINS protocol handlers for certain request types did not properly validate incoming packets",
-        "published": "2026-06-08T09:16:30.160"
+        "base_score": 8.8,
+        "description": "OpenBullet2 through version 0.3.2 contains an authenticated remote code execution vulnerability that allows authenticated users to execute arbitrary C# code on the server host by creating or modifying",
+        "published": "2026-06-08T17:16:41.523"
       },
       {
         "cve_id": "CVE-2026-36789",
@@ -381,6 +374,13 @@
         "base_score": 7.5,
         "description": "Heap-based Buffer Overflow vulnerability in Apache HTTP Server with malicious backend servers and ProxyPassReverseCookie*\n\nThis issue affects Apache HTTP Server: from 2.4.0 through 2.4.67.\n\nUsers are ",
         "published": "2026-06-08T16:16:38.537"
+      },
+      {
+        "cve_id": "CVE-2026-36786",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Shenzhen Tenda Technology Co., Ltd Tenda FH451 V1.0.0.9 was discovered to contain a stack overflow in the list1 parameter of the fromDhcpListClient function. This vulnerability allows attackers to cau",
+        "published": "2026-06-08T16:16:38.680"
       }
     ]
   },
