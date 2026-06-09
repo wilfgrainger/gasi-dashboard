@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-06-09T17:52:53.229585+00:00",
+  "generated_at": "2026-06-09T21:41:09.959802+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 26,
+        "value": 27,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
-        "score": 2.5,
+        "value": 10,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -32,8 +32,8 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1616,
-    "recent_30d_count": 26,
+    "total_catalog_count": 1617,
+    "recent_30d_count": 27,
     "recent": [
       {
         "cve_id": "CVE-2026-11645",
@@ -53,6 +53,16 @@
         "date_added": "2026-06-09",
         "due_date": "2026-06-23",
         "description": "Arista Extensible Operating System (EOS) contains an incomplete comparison with missing factors vulnerability when the switch incorrectly decapsulate and forwards other unexpected tunneled packet with",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-20245",
+        "vendor": "Cisco",
+        "product": "Catalyst SD-WAN Manager",
+        "name": "Cisco Catalyst SD-WAN Manager Improper Encoding or Escaping of Output Vulnerability",
+        "date_added": "2026-06-09",
+        "due_date": "2026-06-23",
+        "description": "Cisco Catalyst SD-WAN Manager formerly SD-WAN vManage contains an improper encoding or escaping of output vulnerability. This vulnerability could allow an authenticated, local attacker to execute arbi",
         "ransomware_use": "Unknown"
       },
       {
@@ -224,30 +234,27 @@
         "due_date": "2026-06-03",
         "description": "Microsoft DirectX contains a NULL byte overwrite vulnerability in the QuickTime Movie Parser Filter in quartz.dll in DirectShow which could allow remote attackers to execute arbitrary code via a craft",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2009-3459",
-        "vendor": "Adobe",
-        "product": "Acrobat and Reader",
-        "name": "Adobe Acrobat and Reader Heap-Based Buffer Overflow Vulnerability",
-        "date_added": "2026-05-20",
-        "due_date": "2026-06-03",
-        "description": "Adobe Acrobat and Reader contain a heap-based buffer overflow vulnerability which could allow remote attackers to execute arbitrary code via a crafted PDF file that triggers memory corruption.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 608,
-    "critical_count": 9,
-    "high_count": 57,
+    "total": 720,
+    "critical_count": 10,
+    "high_count": 55,
     "cves": [
       {
-        "cve_id": "CVE-2026-52778",
+        "cve_id": "CVE-2026-44748",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "SAP NetWeaver Application Server ABAP and ABAP Platform allows an authenticated attacker with normal privileges to obtain a valid signed message and send modified signed XML documents to the verifier.",
+        "published": "2026-06-09T01:16:46.603"
+      },
+      {
+        "cve_id": "CVE-2026-27671",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "YesWiki is a wiki system written in PHP. Prior to version 4.6.6, an unsafe execution vulnerability exists in the Bazar form field calculator (CalcField.php) of YesWiki. The application attempts to san",
-        "published": "2026-06-08T19:16:46.683"
+        "description": "Due to improper RFC protocol validation in the SAP Kernel used by the Application Server ABAP of SAP NetWeaver and ABAP Platform, an unauthenticated attacker can send a crafted RFC request that exploi",
+        "published": "2026-06-09T01:16:45.903"
       },
       {
         "cve_id": "CVE-2026-11634",
@@ -299,39 +306,11 @@
         "published": "2026-06-09T00:16:53.197"
       },
       {
-        "cve_id": "CVE-2026-11393",
+        "cve_id": "CVE-2026-40128",
         "severity": "CRITICAL",
         "base_score": 9.0,
-        "description": "Improper neutralization of triple-quote characters during Python code generation in AgentCore CLI before v0.14.2 might allow an authenticated remote threat actor to execute arbitrary code on AWS Agent",
-        "published": "2026-06-08T19:16:41.270"
-      },
-      {
-        "cve_id": "CVE-2026-11553",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was found in Tenda HG7HG9 and HG10 300001138_en_xpon. This affects the function formPPPEdit of the file /boaform/formPPPEdit. The manipulation of the argument encodename results in sta",
-        "published": "2026-06-08T18:16:32.480"
-      },
-      {
-        "cve_id": "CVE-2026-11556",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A security flaw has been discovered in Tenda F451 1.0.0.7/1.0.0.9. Impacted is the function formWriteFacMac of the file /goform/WriteFacMac of the component Web Management Interface. Performing a mani",
-        "published": "2026-06-08T18:16:33.040"
-      },
-      {
-        "cve_id": "CVE-2026-11557",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A weakness has been identified in Tenda F451 1.0.0.7/1.0.0.9. The affected element is the function fromNatlimit of the file /goform/Natlimit of the component Web Management Interface. Executing a mani",
-        "published": "2026-06-08T19:16:41.653"
-      },
-      {
-        "cve_id": "CVE-2026-46490",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "samlify is a Node.js library for SAML single sign-on. Prior to version 2.13.0, samlify\u2019s template substitution only escapes attribute contexts. Values inserted into element text (e.g., <saml:Attribute",
-        "published": "2026-06-08T19:16:45.950"
+        "description": "SAP NetWeaver Application Server Java (Web Container) allows an unauthenticated attacker to craft a malicious HTTP logon request that manipulates file inclusion parameters, enabling path traversal and",
+        "published": "2026-06-09T01:16:46.050"
       },
       {
         "cve_id": "CVE-2026-11629",
@@ -381,6 +360,27 @@
         "base_score": 8.8,
         "description": "Use after free in FullScreen in Google Chrome on Windows prior to 149.0.7827.103 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: ",
         "published": "2026-06-09T00:16:47.700"
+      },
+      {
+        "cve_id": "CVE-2026-11649",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in V8 in Google Chrome prior to 149.0.7827.103 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-06-09T00:16:47.813"
+      },
+      {
+        "cve_id": "CVE-2026-11650",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in V8 in Google Chrome prior to 149.0.7827.103 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-06-09T00:16:47.920"
+      },
+      {
+        "cve_id": "CVE-2026-11657",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in Payments in Google Chrome on Mac prior to 149.0.7827.103 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-06-09T00:16:48.700"
       }
     ]
   },
