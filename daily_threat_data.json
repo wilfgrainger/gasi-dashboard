@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-09T10:51:57.329109+00:00",
+  "generated_at": "2026-06-09T14:27:31.595364+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
+        "value": 6,
         "score": 2.5,
         "max": 3
       },
@@ -238,10 +238,17 @@
     ]
   },
   "nvd": {
-    "total": 358,
-    "critical_count": 5,
-    "high_count": 25,
+    "total": 397,
+    "critical_count": 6,
+    "high_count": 23,
     "cves": [
+      {
+        "cve_id": "CVE-2026-29167",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Use After Free vulnerability in Apache HTTP Server with mod_ldap in per-directory configuration\n\nThis issue affects Apache HTTP Server: from 2.4.0 through 2.4.67.\n\nUsers are recommended to upgrade to ",
+        "published": "2026-06-08T16:16:37.967"
+      },
       {
         "cve_id": "CVE-2026-44631",
         "severity": "CRITICAL",
@@ -271,18 +278,11 @@
         "published": "2026-06-08T17:16:42.847"
       },
       {
-        "cve_id": "CVE-2026-50751",
+        "cve_id": "CVE-2026-42535",
         "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "A logic flow weakness in Remote Access and Mobile Access certificate validation in deprecated IKEv1 key exchange allows an unauthenticated remote attacker to bypass user authentication and establish a",
-        "published": "2026-06-08T12:16:32.367"
-      },
-      {
-        "cve_id": "CVE-2026-11504",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was detected in Tenda CX12L 16.03.53.12. The impacted element is the function setSchedWifi of the file /goform/openSchedWifi of the component Wi-Fi Schedule Configuration Endpoint. Per",
-        "published": "2026-06-08T12:16:30.580"
+        "base_score": 9.1,
+        "description": "A path handling issue in mod_dav_fs in Apache 2.4.67 and earlier\u00a0allows a WebDAV content author to directly manipulate trusted DAV property databases, potentially causing child process crashes.\n\nUsers",
+        "published": "2026-06-08T16:16:39.127"
       },
       {
         "cve_id": "CVE-2026-11517",
