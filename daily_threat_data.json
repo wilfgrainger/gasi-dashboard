@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-09T21:41:09.959802+00:00",
+  "generated_at": "2026-06-10T02:33:09.844017+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 10,
-        "score": 3.0,
+        "value": 4,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 720,
-    "critical_count": 10,
-    "high_count": 55,
+    "total": 711,
+    "critical_count": 4,
+    "high_count": 21,
     "cves": [
       {
-        "cve_id": "CVE-2026-44748",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "SAP NetWeaver Application Server ABAP and ABAP Platform allows an authenticated attacker with normal privileges to obtain a valid signed message and send modified signed XML documents to the verifier.",
-        "published": "2026-06-09T01:16:46.603"
-      },
-      {
-        "cve_id": "CVE-2026-27671",
+        "cve_id": "CVE-2026-5067",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Due to improper RFC protocol validation in the SAP Kernel used by the Application Server ABAP of SAP NetWeaver and ABAP Platform, an unauthenticated attacker can send a crafted RFC request that exploi",
-        "published": "2026-06-09T01:16:45.903"
+        "description": "A remote, unauthenticated attacker can trigger memory corruption in Zephyr's HTTP server WebSocket upgrade path by sending a crafted Sec-WebSocket-Key header. The HTTP/1 header parser copies the heade",
+        "published": "2026-06-09T06:16:53.920"
       },
       {
-        "cve_id": "CVE-2026-11634",
+        "cve_id": "CVE-2026-9698",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in Gamepad in Google Chrome on Windows prior to 149.0.7827.103 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Cr",
-        "published": "2026-06-09T00:16:45.983"
+        "base_score": 9.8,
+        "description": "DBI versions before 1.648 for Perl saved errors in a limited-sized buffer.\n\nError messages that were returned when RaiseError, PrintError or HandleError were set were written to a 200-byte buffer with",
+        "published": "2026-06-09T08:16:29.190"
       },
       {
-        "cve_id": "CVE-2026-11638",
+        "cve_id": "CVE-2009-10007",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in Printing in Google Chrome prior to 149.0.7827.103 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
-        "published": "2026-06-09T00:16:46.483"
+        "base_score": 9.1,
+        "description": "Catalyst::Plugin::Authentication versions before 0.10_027 for Perl is susceptible to session fixation attacks.\n\nCatalyst::Plugin::Authentication does not automatically change the session id after auth",
+        "published": "2026-06-09T09:16:27.183"
       },
       {
-        "cve_id": "CVE-2026-11651",
+        "cve_id": "CVE-2025-10263",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in Network in Google Chrome prior to 149.0.7827.103 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-06-09T00:16:48.027"
+        "base_score": 9.1,
+        "description": "Arm C1-Ultra, C1-Premium, Neoverse V3 & V3AE, Neoverse V2, Neoverse V1, Neoverse-N2, Neoverse-N1, Cortex-X925, Cortex-X4, Cortex-X3, Cortex-X2, Cortex-X1 & X1C, Cortex-A710, Cortex-A78, A78AE & A78C, ",
+        "published": "2026-06-09T10:16:33.003"
       },
       {
-        "cve_id": "CVE-2026-11654",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in CameraCapture in Google Chrome on Mac prior to 149.0.7827.103 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: ",
-        "published": "2026-06-09T00:16:48.360"
-      },
-      {
-        "cve_id": "CVE-2026-11659",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Integer overflow in UI in Google Chrome on Linux prior to 149.0.7827.103 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-06-09T00:16:48.923"
-      },
-      {
-        "cve_id": "CVE-2026-11671",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in Navigation in Google Chrome prior to 149.0.7827.103 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-06-09T00:16:50.337"
-      },
-      {
-        "cve_id": "CVE-2026-11697",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Insufficient validation of untrusted input in UI in Google Chrome prior to 149.0.7827.103 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security ",
-        "published": "2026-06-09T00:16:53.197"
-      },
-      {
-        "cve_id": "CVE-2026-40128",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "SAP NetWeaver Application Server Java (Web Container) allows an unauthenticated attacker to craft a malicious HTTP logon request that manipulates file inclusion parameters, enabling path traversal and",
-        "published": "2026-06-09T01:16:46.050"
-      },
-      {
-        "cve_id": "CVE-2026-11629",
+        "cve_id": "CVE-2026-11572",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Use after free in Ozone in Google Chrome prior to 149.0.7827.103 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)",
-        "published": "2026-06-09T00:16:45.393"
+        "description": "Versions of the package degit before 2.8.6, from 3.0.0 and before 3.3.1 are vulnerable to Command Injection due to improper sanitisation of user input for git shell commands directly invoked with exec",
+        "published": "2026-06-09T06:16:53.000"
       },
       {
-        "cve_id": "CVE-2026-11630",
+        "cve_id": "CVE-2026-11616",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Use after free in File Input in Google Chrome prior to 149.0.7827.103 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)",
-        "published": "2026-06-09T00:16:45.500"
+        "description": "The Events Calendar for GeoDirectory plugin for WordPress is vulnerable to Privilege Escalation in versions up to and including 2.3.28. This is due to the ajax_ayi_action() handler  only applying stri",
+        "published": "2026-06-09T09:16:28.620"
       },
       {
-        "cve_id": "CVE-2026-11633",
+        "cve_id": "CVE-2026-8365",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Use after free in Bluetooth in Google Chrome on Mac prior to 149.0.7827.103 allowed a remote attacker to execute arbitrary code via a malicious peripheral. (Chromium security severity: Critical)",
-        "published": "2026-06-09T00:16:45.873"
+        "description": "The Blocksy theme for WordPress is vulnerable to PHP Object Injection leading to Remote Code Execution via the 'blocksy_meta' REST API field and the V200 database migration in versions up to and inclu",
+        "published": "2026-06-09T09:16:31.013"
       },
       {
-        "cve_id": "CVE-2026-11637",
+        "cve_id": "CVE-2026-46746",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Use after free in Views in Google Chrome on Mac prior to 149.0.7827.103 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: Critical)",
-        "published": "2026-06-09T00:16:46.370"
+        "description": "A vulnerability has been identified in SINEC INS (All versions < V1.0 SP2 Update 6). The application does not properly sanitize user input in the /api/sftp/uploadFiles endpoint, allowing the injection",
+        "published": "2026-06-09T10:16:44.000"
       },
       {
-        "cve_id": "CVE-2026-11645",
+        "cve_id": "CVE-2026-41031",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Out of bounds read and write in V8 in Google Chrome prior to 149.0.7827.103 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: H",
-        "published": "2026-06-09T00:16:47.370"
+        "base_score": 8.7,
+        "description": "A Stored Cross-Site Scripting vulnerability in Vinna Process Monitor Version 4.0 Service Pack 1 (Build 63255) allows an authenticated remote attacker with low privileges to inject malicious JavaScript",
+        "published": "2026-06-09T10:16:43.850"
       },
       {
-        "cve_id": "CVE-2026-11646",
+        "cve_id": "CVE-2026-41855",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in ViewTransitions in Google Chrome prior to 149.0.7827.103 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Hi",
-        "published": "2026-06-09T00:16:47.473"
+        "base_score": 8.1,
+        "description": "In an untrusted JMS environment, org.springframework.jms.support.converter.MappingJackson2MessageConverter and org.springframework.jms.support.converter.JacksonJsonMessageConverter allow arbitrary cla",
+        "published": "2026-06-09T05:16:37.770"
       },
       {
-        "cve_id": "CVE-2026-11648",
+        "cve_id": "CVE-2026-9662",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in FullScreen in Google Chrome on Windows prior to 149.0.7827.103 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: ",
-        "published": "2026-06-09T00:16:47.700"
+        "base_score": 8.1,
+        "description": "The Recover Exit For WooCommerce plugin for WordPress is vulnerable to Local File Inclusion in all versions up to and including 1.0.3. This is due to insufficient validation and sanitization of the us",
+        "published": "2026-06-09T05:16:41.350"
       },
       {
-        "cve_id": "CVE-2026-11649",
+        "cve_id": "CVE-2026-5068",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in V8 in Google Chrome prior to 149.0.7827.103 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-06-09T00:16:47.813"
+        "base_score": 7.6,
+        "description": "A remote, unauthenticated BLE peer can trigger a 2-byte out-of-bounds write in the Bluetooth host during L2CAP LE CoC SDU reassembly. When the application enables segmentation (via chan_ops.alloc_buf)",
+        "published": "2026-06-09T08:16:29.073"
       },
       {
-        "cve_id": "CVE-2026-11650",
+        "cve_id": "CVE-2026-40983",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in V8 in Google Chrome prior to 149.0.7827.103 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-06-09T00:16:47.920"
+        "base_score": 7.5,
+        "description": "In Micrometer, it is possible for a user to provide specially crafted gRPC requests that may cause a denial-of-service (DoS) condition.\n\nAffected versions:\nMicrometer 1.16.0 through 1.16.5; 1.15.0 thr",
+        "published": "2026-06-09T05:16:34.653"
       },
       {
-        "cve_id": "CVE-2026-11657",
+        "cve_id": "CVE-2026-40984",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in Payments in Google Chrome on Mac prior to 149.0.7827.103 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-06-09T00:16:48.700"
+        "base_score": 7.5,
+        "description": "In Micrometer, it is possible for a user to provide specially crafted HTTP requests that may cause a denial-of-service (DoS) condition.\n\nAffected versions:\nmicrometer-core 1.16.0 through 1.16.5; 1.15.",
+        "published": "2026-06-09T05:16:34.780"
+      },
+      {
+        "cve_id": "CVE-2026-41006",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Spring HATEOAS's internal PropertyUtils.createObjectFromProperties method, used by the Collection+JSON and UBER media type deserializers, performs bean property binding via reflection without consulti",
+        "published": "2026-06-09T05:16:34.910"
+      },
+      {
+        "cve_id": "CVE-2026-41007",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Spring HATEOAS maintains an unbounded static cache of StringLinkRelation instances keyed on attacker-supplied strings.\n\nAffected versions:\nSpring HATEOAS 1.5.0 through 1.5.6; 2.3.0 through 2.3.4; 2.4.",
+        "published": "2026-06-09T05:16:35.033"
+      },
+      {
+        "cve_id": "CVE-2026-41842",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Spring MVC and WebFlux applications are vulnerable to Denial of Service (DoS) attacks when resolving static resources.\n\nAffected versions:\nSpring Framework 7.0.0 through 7.0.7; 6.2.0 through 6.2.18; 6",
+        "published": "2026-06-09T05:16:36.203"
+      },
+      {
+        "cve_id": "CVE-2026-41849",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "An integer overflow vulnerability exists in the evaluation logic of the Spring Expression Language (SpEL). An attacker can exploit this by supplying a specially crafted SpEL expression that triggers e",
+        "published": "2026-06-09T05:16:37.060"
+      },
+      {
+        "cve_id": "CVE-2026-41850",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Applications that evaluate user-supplied Spring Expression Language (SpEL) expressions are vulnerable to an Algorithmic Denial of Service (DoS). By providing a specially crafted expression, an attacke",
+        "published": "2026-06-09T05:16:37.177"
+      },
+      {
+        "cve_id": "CVE-2026-9185",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The 6Storage Rentals plugin for WordPress is vulnerable to Authorization Bypass Through User-Controlled Key in all versions up to and including 2.22.0 via the `userId` parameter of the `six_storage_ge",
+        "published": "2026-06-09T05:16:41.213"
       }
     ]
   },
