@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-10T07:59:56.627169+00:00",
+  "generated_at": "2026-06-10T11:40:51.711181+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 7,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,16 +238,23 @@
     ]
   },
   "nvd": {
-    "total": 680,
-    "critical_count": 4,
-    "high_count": 19,
+    "total": 633,
+    "critical_count": 7,
+    "high_count": 29,
     "cves": [
       {
-        "cve_id": "CVE-2026-9698",
+        "cve_id": "CVE-2026-10520",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "DBI versions before 1.648 for Perl saved errors in a limited-sized buffer.\n\nError messages that were returned when RaiseError, PrintError or HandleError were set were written to a 200-byte buffer with",
-        "published": "2026-06-09T08:16:29.190"
+        "base_score": 10.0,
+        "description": "An OS Command Injection vulnerability\u00a0in Ivanti\u00a0Sentry before\u00a0the\u00a0R10.5.2, R10.6.2 and R10.7.1\u00a0versions\u00a0allows\u00a0a remote unauthenticated user to achieve root-level remote code execution",
+        "published": "2026-06-09T16:16:35.700"
+      },
+      {
+        "cve_id": "CVE-2026-10523",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "An Authentication Bypass vulnerability (CWE-288)\u00a0in Ivanti\u00a0Sentry before the\u00a0R10.5.2, R10.6.2 and R10.7.1\u00a0versions\u00a0allows\u00a0a remote unauthenticated attacker to create arbitrary administrative accounts ",
+        "published": "2026-06-09T16:16:35.837"
       },
       {
         "cve_id": "CVE-2017-20251",
@@ -257,53 +264,53 @@
         "published": "2026-06-09T13:16:35.140"
       },
       {
-        "cve_id": "CVE-2009-10007",
+        "cve_id": "CVE-2026-7486",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Catalyst::Plugin::Authentication versions before 0.10_027 for Perl is susceptible to session fixation attacks.\n\nCatalyst::Plugin::Authentication does not automatically change the session id after auth",
-        "published": "2026-06-09T09:16:27.183"
+        "base_score": 9.8,
+        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Netcad Software Inc. E-\u0130mar allows SQL Injection.\n\nThis issue affects E-\u0130mar: from 2.10.1.0 before",
+        "published": "2026-06-09T14:16:45.407"
       },
       {
-        "cve_id": "CVE-2025-10263",
+        "cve_id": "CVE-2026-25089",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Arm C1-Ultra, C1-Premium, Neoverse V3 & V3AE, Neoverse V2, Neoverse V1, Neoverse-N2, Neoverse-N1, Cortex-X925, Cortex-X4, Cortex-X3, Cortex-X2, Cortex-X1 & X1C, Cortex-A710, Cortex-A78, A78AE & A78C, ",
-        "published": "2026-06-09T10:16:33.003"
+        "base_score": 9.8,
+        "description": "A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiSandbox 5.0.0 through 5.0.5, FortiSandbox 4.4.0 through 4.4.8, FortiSandbox ",
+        "published": "2026-06-09T16:16:39.943"
       },
       {
-        "cve_id": "CVE-2026-11616",
+        "cve_id": "CVE-2026-8025",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in MOSK Information Technologies Ltd. CBS Platform allows SQL Injection.\n\nThis issue affects CBS Plat",
+        "published": "2026-06-09T16:16:44.320"
+      },
+      {
+        "cve_id": "CVE-2026-26142",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Deserialization of untrusted data in Nuance PowerScribe allows an unauthorized attacker to execute code over a network.",
+        "published": "2026-06-09T17:17:03.087"
+      },
+      {
+        "cve_id": "CVE-2026-32193",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The Events Calendar for GeoDirectory plugin for WordPress is vulnerable to Privilege Escalation in versions up to and including 2.3.28. This is due to the ajax_ayi_action() handler  only applying stri",
-        "published": "2026-06-09T09:16:28.620"
+        "description": "Improper limitation of a pathname to a restricted directory ('path traversal') in Microsoft Azure Kubernetes Service allows an authorized attacker to execute code locally.",
+        "published": "2026-06-09T17:17:03.600"
       },
       {
-        "cve_id": "CVE-2026-8365",
+        "cve_id": "CVE-2026-40371",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The Blocksy theme for WordPress is vulnerable to PHP Object Injection leading to Remote Code Execution via the 'blocksy_meta' REST API field and the V200 database migration in versions up to and inclu",
-        "published": "2026-06-09T09:16:31.013"
+        "description": "Improper handling of insufficient permissions or privileges in Microsoft Dynamics 365 (on-premises) allows an authorized attacker to elevate privileges over a network.",
+        "published": "2026-06-09T17:17:05.970"
       },
       {
-        "cve_id": "CVE-2026-46746",
+        "cve_id": "CVE-2026-41098",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability has been identified in SINEC INS (All versions < V1.0 SP2 Update 6). The application does not properly sanitize user input in the /api/sftp/uploadFiles endpoint, allowing the injection",
-        "published": "2026-06-09T10:16:44.000"
-      },
-      {
-        "cve_id": "CVE-2026-46748",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability has been identified in SINEC INS (All versions < V1.0 SP2 Update 6). The affected system includes a binary that is configured with the cap_dac_override capability. This capability allo",
-        "published": "2026-06-09T10:16:44.263"
-      },
-      {
-        "cve_id": "CVE-2026-41031",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "A Stored Cross-Site Scripting vulnerability in Vinna Process Monitor Version 4.0 Service Pack 1 (Build 63255) allows an authenticated remote attacker with low privileges to inject malicious JavaScript",
-        "published": "2026-06-09T10:16:43.850"
+        "base_score": 8.4,
+        "description": "Improper neutralization of input during web page generation ('cross-site scripting') in Azure Stack Edge allows an authorized attacker to perform spoofing over a network.",
+        "published": "2026-06-09T17:17:06.793"
       },
       {
         "cve_id": "CVE-2016-20062",
@@ -362,25 +369,18 @@
         "published": "2026-06-09T13:16:34.850"
       },
       {
-        "cve_id": "CVE-2026-5068",
+        "cve_id": "CVE-2026-24065",
         "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "A remote, unauthenticated BLE peer can trigger a 2-byte out-of-bounds write in the Bluetooth host during L2CAP LE CoC SDU reassembly. When the application enables segmentation (via chan_ops.alloc_buf)",
-        "published": "2026-06-09T08:16:29.073"
+        "base_score": 8.1,
+        "description": "Waves Central for macOS versions 13.0.9 through 16.5.5 contain a local privilege escalation vulnerability in the privileged helper service. The helper validates connecting XPC clients using the client",
+        "published": "2026-06-09T16:16:39.477"
       },
       {
-        "cve_id": "CVE-2026-46749",
+        "cve_id": "CVE-2026-49948",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A vulnerability has been identified in SINEC INS (All versions < V1.0 SP2 Update 6). The affected application uses a password hashing implementation with a static, hardcoded salt shared across all use",
-        "published": "2026-06-09T10:16:44.410"
-      },
-      {
-        "cve_id": "CVE-2017-20248",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Apptha Slider Gallery 1.0 contains a path traversal vulnerability that allows unauthenticated attackers to download arbitrary files by manipulating the imgname parameter. Attackers can send requests t",
-        "published": "2026-06-09T13:16:34.693"
+        "base_score": 8.1,
+        "description": "Mem0 versions through 0.2.8, fixed in commit ae7f406, contain a missing authorization vulnerability in the self-hosted server component where the POST /configure endpoint modifies global LLM provider ",
+        "published": "2026-06-09T16:16:43.450"
       }
     ]
   },
