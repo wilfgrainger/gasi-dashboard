@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-10T21:53:54.736690+00:00",
+  "generated_at": "2026-06-11T02:42:53.838507+00:00",
   "threat_score": {
-    "score": 5.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 7.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 12,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 240,
-    "critical_count": 1,
-    "high_count": 31,
+    "total": 247,
+    "critical_count": 12,
+    "high_count": 29,
     "cves": [
       {
-        "cve_id": "CVE-2026-45328",
+        "cve_id": "CVE-2026-45552",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Roxy-WI is a web interface for managing Haproxy, Nginx, Apache and Keepalived servers. In versions 8.2.6.4 and prior, the install blueprint declares only bp.before_request \u2192 @jwt_required() (app/route",
+        "published": "2026-06-10T15:16:36.303"
+      },
+      {
+        "cve_id": "CVE-2026-45556",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Roxy-WI is a web interface for managing Haproxy, Nginx, Apache and Keepalived servers. In versions 8.2.6.4 and prior, POST /waf/<service>/<server_ip>/rule/<rule_id>/save accepts a config_file_name for",
+        "published": "2026-06-10T15:16:36.457"
+      },
+      {
+        "cve_id": "CVE-2026-45558",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Roxy-WI is a web interface for managing Haproxy, Nginx, Apache and Keepalived servers. In versions 8.2.6.4 and prior, the HAProxy section-save endpoints (POST /api/service/haproxy/<server_id>/section/",
+        "published": "2026-06-10T15:16:36.600"
+      },
+      {
+        "cve_id": "CVE-2025-6254",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Doctreat Core plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 1.6.8. This is due to the doctreat_process_registration() function not properly restr",
+        "published": "2026-06-10T10:16:29.827"
+      },
+      {
+        "cve_id": "CVE-2026-53470",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "A flaw was found in migration-planner. An authenticated attacker could exploit an improper access control vulnerability in the `/api/v1/sources/{id}/image-url` endpoint. This flaw allows the attacker ",
+        "published": "2026-06-10T15:16:41.567"
+      },
+      {
+        "cve_id": "CVE-2026-53471",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "A flaw was found in migration-planner. The agent-API middleware processes JSON Web Tokens (JWTs) for authentication, but its UpdateSourceInventory and UpdateAgentStatus handlers fail to validate the s",
+        "published": "2026-06-10T15:16:41.703"
+      },
+      {
+        "cve_id": "CVE-2026-53474",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "A flaw was found in migration-planner. A remote authenticated attacker could exploit this vulnerability by uploading a specially crafted RVTools .xlsx file. Due to improper input sanitization, malicio",
+        "published": "2026-06-10T15:16:41.943"
+      },
+      {
+        "cve_id": "CVE-2026-53476",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "A flaw was found in assisted-migration-agent. An unauthenticated attacker, located on the same local area network (LAN), can exploit a path traversal vulnerability. By crafting a specially designed gz",
+        "published": "2026-06-10T15:16:42.220"
+      },
+      {
+        "cve_id": "CVE-2026-53475",
         "severity": "CRITICAL",
         "base_score": 9.3,
-        "description": "ESF-IDF is the Espressif Internet of Things (IOT) Development Framework. In versions 5.5.4 and 6.0, the esp_tee component exposes secure-service wrappers in esp_secure_services.c and esp_secure_servic",
-        "published": "2026-06-10T02:16:32.687"
+        "description": "A flaw was found in assisted-migration-agent. The application hardcodes insecure Transport Layer Security (TLS) connections when communicating with vCenter. This vulnerability allows a Man-in-the-Midd",
+        "published": "2026-06-10T15:16:42.090"
       },
       {
-        "cve_id": "CVE-2026-46491",
+        "cve_id": "CVE-2026-9067",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The Schema & Structured Data for WP & AMP WordPress plugin before 1.60 does not check user capabilities on its frontend AJAX file-upload handlers and does not validate the actual content of uploaded f",
+        "published": "2026-06-10T07:16:25.580"
+      },
+      {
+        "cve_id": "CVE-2026-45550",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Roxy-WI is a web interface for managing Haproxy, Nginx, Apache and Keepalived servers. In versions 8.2.6.4 and prior, PUT /smon/check (app/routes/smon/routes.py:117-138) gates only on roxywi_common.ch",
+        "published": "2026-06-10T15:16:36.160"
+      },
+      {
+        "cve_id": "CVE-2026-53469",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "A flaw was found in migration-planner. An authenticated user can exploit this vulnerability by sending a DELETE request to the /api/v1/sources route, which lacks proper authorization and filtering. Th",
+        "published": "2026-06-10T15:16:41.430"
+      },
+      {
+        "cve_id": "CVE-2026-8071",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Anti-Spam by CleanTalk. Spam protection WordPress plugin before 6.79 does not properly sanitize content within a custom shortcode used in its email-encoding feature, allowing unauthenticated attac",
+        "published": "2026-06-10T07:16:25.373"
+      },
+      {
+        "cve_id": "CVE-2026-49498",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Ghidra 11.0 before 12.1 contains a SQL injection vulnerability in the changePassword() method of PostgresFunctionDatabase that fails to escape double quotes in usernames interpolated into ALTER ROLE s",
+        "published": "2026-06-10T14:16:34.777"
+      },
+      {
+        "cve_id": "CVE-2026-52751",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Ghidra before 12.1 contains an unsafe deserialization vulnerability in client-side Shared-Project RMI connection code that allows unauthenticated remote code execution. Attackers can craft a malicious",
+        "published": "2026-06-10T14:16:35.187"
+      },
+      {
+        "cve_id": "CVE-2026-52754",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Ghidra before 12.1 contains an authentication bypass vulnerability in PKIAuthenticationModule.authenticate() that allows any user with a valid CA-signed certificate to impersonate other users by prese",
+        "published": "2026-06-10T14:16:35.603"
+      },
+      {
+        "cve_id": "CVE-2026-52758",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Ghidra before 12.1 contains a SQL injection vulnerability in BSim filter types that concatenate user-supplied values directly into SQL queries without escaping or parameterization. Remote attackers ca",
+        "published": "2026-06-10T14:16:36.170"
+      },
+      {
+        "cve_id": "CVE-2026-53435",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In Jenkins 2.567 and earlier, LTS 2.555.2 and earlier, it is possible for attackers to have Jenkins deserialize arbitrary types defined in Jenkins core or plugins from an attacker-controlled `config.x",
+        "published": "2026-06-10T14:16:36.440"
+      },
+      {
+        "cve_id": "CVE-2026-45564",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Roxy-WI is a web interface for managing Haproxy, Nginx, Apache and Keepalived servers. In versions 8.2.6.4 and prior, POST /config/versions/<service>/<server_ip>/<configver>/save interpolates the URL-",
+        "published": "2026-06-10T15:16:37.307"
+      },
+      {
+        "cve_id": "CVE-2026-3326",
         "severity": "HIGH",
         "base_score": 8.6,
-        "description": "SimpleSAMLphp-casserver is a CAS 1.0 and 2.0 compliant CAS server in the form of a SimpleSAMLphp module. Prior to version 7.0.3, simplesamlphp-module-casserver builds file paths for the file-based CAS",
-        "published": "2026-06-10T00:16:53.690"
-      },
-      {
-        "cve_id": "CVE-2026-9753",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The $_internalApplyOplogUpdate aggregation pipeline stage can be used to execute a document diff containing a malformed binary diff to return memory out-of-bounds or crash the server. $_internalApplyO",
-        "published": "2026-06-09T23:17:04.897"
-      },
-      {
-        "cve_id": "CVE-2026-41717",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Spring Data MongoDB contains a SpEL (Spring Expression Language) expression injection vulnerability. The issue occurs during parameter binding when a user-defined repository query method is annotated ",
-        "published": "2026-06-10T00:16:51.683"
-      },
-      {
-        "cve_id": "CVE-2026-41729",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Spring Data REST is vulnerable to SpEL expression injection through map-typed properties when processing JSON Patch (application/json-patch+json) requests. When a persistent entity exposes a Map-typed",
-        "published": "2026-06-10T00:16:52.367"
-      },
-      {
-        "cve_id": "CVE-2026-41731",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "JsonKafkaHeaderMapper and the deprecated DefaultKafkaHeaderMapper matched type headers against trusted packages using a prefix check, meaning that trusting any package implicitly trusted all of its su",
-        "published": "2026-06-10T00:16:52.597"
-      },
-      {
-        "cve_id": "CVE-2026-41732",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "JsonPulsarHeaderMapper matched type headers against trusted packages using a prefix check, meaning that trusting any package implicitly trusted all of its subpackages. Additionally, an empty trusted-p",
-        "published": "2026-06-10T00:16:52.720"
-      },
-      {
-        "cve_id": "CVE-2026-53673",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "BuddyPress 14.4.0 contains an insecure direct object reference vulnerability in the messages REST API that allows authenticated attackers to access arbitrary private message threads by supplying a use",
-        "published": "2026-06-10T00:16:55.040"
-      },
-      {
-        "cve_id": "CVE-2026-46432",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "LMDeploy is a toolkit for compressing, deploying, and serving large language models. In versions 0.12.3 and prior, LMDeploy is vulnerable to arbitrary code execution through hardcoded \"trust_remote_co",
-        "published": "2026-06-10T00:16:53.557"
-      },
-      {
-        "cve_id": "CVE-2026-46517",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "LMDeploy is a toolkit for compressing, deploying, and serving large language models. In versions 0.12.3 and prior, hardcoded \"trust_remote_code=True\" enables HF supply-chain RCE without user opt-in. A",
-        "published": "2026-06-10T00:16:53.827"
-      },
-      {
-        "cve_id": "CVE-2026-46518",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Prior to version 8.0.0.1, a stored cross-site scripting vulnerability in the prescription CSS/H",
-        "published": "2026-06-10T00:16:53.960"
-      },
-      {
-        "cve_id": "CVE-2026-41003",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "An attacker able to influence values in RelyingPartyRegistration may be able to run arbitrary code on HTML forms generated by Spring Security filters.\n\nAffected versions:\nSpring Security 5.7.0 through",
-        "published": "2026-06-10T00:16:50.307"
-      },
-      {
-        "cve_id": "CVE-2026-34711",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "CAI Content Credentials versions c2pa-web@0.7.1, c2pa-v0.80.1 and earlier are affected by an Integer Overflow or Wraparound vulnerability. An attacker could exploit this vulnerability to crash the app",
-        "published": "2026-06-09T22:16:24.520"
-      },
-      {
-        "cve_id": "CVE-2026-34712",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "CAI Content Credentials versions c2pa-web@0.7.1, c2pa-v0.80.1 and earlier are affected by an Improper Input Validation vulnerability. An attacker could exploit this vulnerability to crash the applicat",
-        "published": "2026-06-09T22:16:24.633"
-      },
-      {
-        "cve_id": "CVE-2026-34713",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "CAI Content Credentials versions c2pa-web@0.7.1, c2pa-v0.80.1 and earlier are affected by an Uncontrolled Resource Consumption vulnerability. An attacker could exploit this vulnerability to exhaust sy",
-        "published": "2026-06-09T22:16:24.780"
-      },
-      {
-        "cve_id": "CVE-2026-46373",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "SQLFluff is a modular SQL linter and auto-formatter with support for multiple dialects and templated code. Prior to version 4.1.0, in deployments where untrusted users can provide SQL queries to be li",
-        "published": "2026-06-09T23:16:59.167"
-      },
-      {
-        "cve_id": "CVE-2026-46374",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "SQLFluff is a modular SQL linter and auto-formatter with support for multiple dialects and templated code. Prior to version 4.2.0, in deployments where untrusted users can provide SQL queries to be li",
-        "published": "2026-06-09T23:16:59.313"
-      },
-      {
-        "cve_id": "CVE-2026-9740",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A vulnerability in MongoDB Server's BSON validation logic allows an unauthenticated user to crash the mongod process by sending a specially crafted message. The BSON validator's handling of certain ne",
-        "published": "2026-06-09T23:17:03.437"
-      },
-      {
-        "cve_id": "CVE-2026-9742",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "When OIDC authentication is enabled in configuration, clients may set specific values in the \"mechanism\" parameter of the \"authenticate\" command that lead to server crash. The authenticate command is ",
-        "published": "2026-06-09T23:17:03.727"
-      },
-      {
-        "cve_id": "CVE-2026-40988",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "An application using spring-security-saml2-service-provider and the REDIRECT binding for SAML 2.0 Login or Logout may be vulnerable to a denial of service by way of an unbounded writer that inflates t",
-        "published": "2026-06-10T00:16:49.527"
+        "description": "The Xstore WordPress theme before 9.7.3 does not properly sanitise and escape a parameter before using it in a SQL statement via an AJAX action available to unauthenticated users, leading to a SQL inj",
+        "published": "2026-06-10T07:16:25.263"
       }
     ]
   },
