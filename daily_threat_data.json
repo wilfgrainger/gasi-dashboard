@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T02:42:53.838507+00:00",
+  "generated_at": "2026-06-11T08:27:48.104099+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 12,
+        "value": 13,
         "score": 3.0,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 247,
-    "critical_count": 12,
-    "high_count": 29,
+    "total": 229,
+    "critical_count": 13,
+    "high_count": 34,
     "cves": [
       {
         "cve_id": "CVE-2026-45552",
@@ -269,6 +269,20 @@
         "base_score": 9.8,
         "description": "The Doctreat Core plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 1.6.8. This is due to the doctreat_process_registration() function not properly restr",
         "published": "2026-06-10T10:16:29.827"
+      },
+      {
+        "cve_id": "CVE-2026-20253",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "In Splunk Enterprise versions below 10.2.4 and 10.0.7, and Splunk Cloud Platform versions below 10.4.2604.3 and 10.2.2510.14, an unauthenticated user could create or truncate arbitrary files through a",
+        "published": "2026-06-10T18:16:40.760"
+      },
+      {
+        "cve_id": "CVE-2026-46614",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Fission is an open-source, Kubernetes-native serverless framework that simplifies the deployment of functions and applications on Kubernetes. Prior to version 1.23.0, the Fission router registers an i",
+        "published": "2026-06-10T18:17:05.580"
       },
       {
         "cve_id": "CVE-2026-53470",
@@ -306,13 +320,6 @@
         "published": "2026-06-10T15:16:42.090"
       },
       {
-        "cve_id": "CVE-2026-9067",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The Schema & Structured Data for WP & AMP WordPress plugin before 1.60 does not check user capabilities on its frontend AJAX file-upload handlers and does not validate the actual content of uploaded f",
-        "published": "2026-06-10T07:16:25.580"
-      },
-      {
         "cve_id": "CVE-2026-45550",
         "severity": "CRITICAL",
         "base_score": 9.1,
@@ -325,13 +332,6 @@
         "base_score": 9.1,
         "description": "A flaw was found in migration-planner. An authenticated user can exploit this vulnerability by sending a DELETE request to the /api/v1/sources route, which lacks proper authorization and filtering. Th",
         "published": "2026-06-10T15:16:41.430"
-      },
-      {
-        "cve_id": "CVE-2026-8071",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Anti-Spam by CleanTalk. Spam protection WordPress plugin before 6.79 does not properly sanitize content within a custom shortcode used in its email-encoding feature, allowing unauthenticated attac",
-        "published": "2026-06-10T07:16:25.373"
       },
       {
         "cve_id": "CVE-2026-49498",
@@ -376,11 +376,11 @@
         "published": "2026-06-10T15:16:37.307"
       },
       {
-        "cve_id": "CVE-2026-3326",
+        "cve_id": "CVE-2026-20251",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "The Xstore WordPress theme before 9.7.3 does not properly sanitise and escape a parameter before using it in a SQL statement via an AJAX action available to unauthenticated users, leading to a SQL inj",
-        "published": "2026-06-10T07:16:25.263"
+        "base_score": 8.8,
+        "description": "In Splunk Enterprise versions below 10.2.4, 10.0.7, 9.4.12, and 9.3.13, Splunk Cloud Platform versions below 10.3.2512.12, 10.2.2510.14, 10.1.2507.22, and 9.3.2411.132, and Splunk Secure Gateway versi",
+        "published": "2026-06-10T18:16:40.477"
       }
     ]
   },
