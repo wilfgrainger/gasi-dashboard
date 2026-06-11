@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T18:40:28.366984+00:00",
+  "generated_at": "2026-06-11T21:53:38.666890+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -7,7 +7,7 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 27,
+        "value": 28,
         "score": 3.0,
         "max": 3
       },
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1617,
-    "recent_30d_count": 27,
+    "total_catalog_count": 1618,
+    "recent_30d_count": 28,
     "recent": [
+      {
+        "cve_id": "CVE-2026-10520",
+        "vendor": "Ivanti",
+        "product": "Sentry",
+        "name": "Ivanti Sentry OS Command Injection Vulnerability",
+        "date_added": "2026-06-11",
+        "due_date": "2026-06-14",
+        "description": "Ivanti Sentry (formerly known as MobileIron Sentry) contains an OS command injection vulnerability which could allow a remote unauthenticated user to achieve root-level remote code execution. This vul",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-11645",
         "vendor": "Google",
@@ -224,23 +234,13 @@
         "due_date": "2026-06-03",
         "description": "Microsoft Windows contains a buffer overflow vulnerability in the Windows Server Service that allows remote attackers to execute arbitrary code via a crafted RPC request that triggers an overflow duri",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2009-1537",
-        "vendor": "Microsoft",
-        "product": "DirectX",
-        "name": "Microsoft DirectX NULL Byte Overwrite Vulnerability",
-        "date_added": "2026-05-20",
-        "due_date": "2026-06-03",
-        "description": "Microsoft DirectX contains a NULL byte overwrite vulnerability in the QuickTime Movie Parser Filter in quartz.dll in DirectShow which could allow remote attackers to execute arbitrary code via a craft",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 185,
+    "total": 238,
     "critical_count": 3,
-    "high_count": 27,
+    "high_count": 30,
     "cves": [
       {
         "cve_id": "CVE-2026-46695",
@@ -262,13 +262,6 @@
         "base_score": 9.6,
         "description": "Boxlite is a sandbox service that allows users to create lightweight virtual machines (Boxes) and launch OCI containers within them to run untrusted code. Prior to version 0.9.0, Boxlite allows users ",
         "published": "2026-06-10T23:16:47.893"
-      },
-      {
-        "cve_id": "CVE-2026-6893",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw was found in dracut. A remote attacker on the adjacent network can exploit this vulnerability by providing specially crafted DHCP (Dynamic Host Configuration Protocol) options, such as a malici",
-        "published": "2026-06-10T20:17:29.807"
       },
       {
         "cve_id": "CVE-2026-42305",
@@ -299,11 +292,39 @@
         "published": "2026-06-10T22:17:01.543"
       },
       {
+        "cve_id": "CVE-2026-40999",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "When WS-Addressing is used with non-anonymous ReplyTo or FaultTo addresses, Spring WS may initiate outbound connections through configured WebServiceMessageSender instances to destinations taken direc",
+        "published": "2026-06-11T07:16:27.907"
+      },
+      {
+        "cve_id": "CVE-2026-40994",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Wss4jSecurityInterceptor initialized its BSP (WS-I Basic Security Profile) compliance flag so that inbound validation disabled WSS4J BSP enforcement on RequestData. Services that validate WS-Security ",
+        "published": "2026-06-11T07:16:27.297"
+      },
+      {
+        "cve_id": "CVE-2026-40998",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Jaxp13XPathTemplate evaluated XPath expressions for StreamSource and SAXSource inputs using a code path that parsed attacker-controlled XML with the JDK's default DocumentBuilderFactory behavior inste",
+        "published": "2026-06-11T07:16:27.787"
+      },
+      {
         "cve_id": "CVE-2026-53738",
         "severity": "HIGH",
         "base_score": 8.1,
         "description": "Copy & Delete Posts through 1.5.4 lets any plugin-enabled non-admin role invoke every operation in the cdp_action_handling AJAX handler. Attackers with an enabled role can delete posts or overwrite pl",
         "published": "2026-06-10T22:17:02.093"
+      },
+      {
+        "cve_id": "CVE-2026-10795",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The UpdraftPlus: WP Backup & Migration Plugin plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 1.26.4 via the UpdraftPlus_Remote_Communications_V2::wp_",
+        "published": "2026-06-11T07:16:26.713"
       },
       {
         "cve_id": "CVE-2026-2049",
@@ -325,13 +346,6 @@
         "base_score": 7.6,
         "description": "Xibo is an open source digital signage platform with a web content management system and Windows display player software. Prior to 4.4.2, a vulnerability chain consisting of Stored XSS and Iframe Sand",
         "published": "2026-06-10T23:16:46.263"
-      },
-      {
-        "cve_id": "CVE-2026-1220",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Race in V8 in Google Chrome prior to 144.0.7559.99 allowed a remote attacker to potentially exploit type confusion via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-06-10T20:16:38.643"
       },
       {
         "cve_id": "CVE-2026-10142",
@@ -367,20 +381,6 @@
         "base_score": 7.5,
         "description": "ImageMagick is free and open-source software used for editing and manipulating digital images. Prior to versions 6.9.13-48 and 7.1.2-23, when reading multiple images with different dimensions an out o",
         "published": "2026-06-10T22:16:59.193"
-      },
-      {
-        "cve_id": "CVE-2026-46522",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "ImageMagick is free and open-source software used for editing and manipulating digital images. Prior to versions 7.1.2.23 and 6.9.13-48, due to a missing check in the MIFF decoder, a crafted file coul",
-        "published": "2026-06-10T22:16:59.333"
-      },
-      {
-        "cve_id": "CVE-2026-46625",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "JavaScript Cookie is a JavaScript API for handling cookies, client-side. Prior to version 3.0.7, js-cookie's internal assign() helper copies properties with for...in + plain assignment. When the sourc",
-        "published": "2026-06-10T22:16:59.613"
       }
     ]
   },
