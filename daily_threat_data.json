@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-12T17:58:49.746049+00:00",
+  "generated_at": "2026-06-12T21:24:49.151899+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 12,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,16 +238,72 @@
     ]
   },
   "nvd": {
-    "total": 258,
-    "critical_count": 4,
-    "high_count": 44,
+    "total": 266,
+    "critical_count": 12,
+    "high_count": 39,
     "cves": [
       {
-        "cve_id": "CVE-2026-49261",
+        "cve_id": "CVE-2026-47365",
         "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "MariaDB server is a community developed fork of MySQL server. Versions 10.6.1 through 10.6.26, 10.11.1 through 10.11.17, 11.4.1 through 11.4.11, 11.8.1 through 11.8.7, and 12.3.1 with  `wsrep_notify_c",
-        "published": "2026-06-11T18:16:26.553"
+        "base_score": 9.9,
+        "description": "Argument injection vulnerability in WordPress Toolkit before 6.11.0 as used in cPanel & WHM, allows remote authenticated users to bypass cross-tenant authorization and execute arbitrary wp-toolkit CLI",
+        "published": "2026-06-12T04:17:05.107"
+      },
+      {
+        "cve_id": "CVE-2026-47367",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A malicious actor with access to the network and low privileges could exploit an Improper Input Validation vulnerability found in UID Enterprise Agent to execute a Command Injection on the host device",
+        "published": "2026-06-12T04:17:06.200"
+      },
+      {
+        "cve_id": "CVE-2026-47369",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A malicious actor with access to the network and low privileges could exploit an Improper Input Validation vulnerability found in certain devices running UniFi OS to escalate privileges within such Un",
+        "published": "2026-06-12T04:17:06.513"
+      },
+      {
+        "cve_id": "CVE-2026-47370",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A malicious actor with access to the network and low privileges could exploit an Improper Input Validation vulnerability found in certain devices running UniFi OS to execute a Command Injection within",
+        "published": "2026-06-12T04:17:06.657"
+      },
+      {
+        "cve_id": "CVE-2026-49060",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Incorrect Privilege Assignment vulnerability in Hippoo Mobile App for WooCommerce allows Privilege Escalation.\n\nThis issue affects Hippoo Mobile App for WooCommerce: from n/a through 1.9.4.",
+        "published": "2026-06-11T22:16:57.737"
+      },
+      {
+        "cve_id": "CVE-2026-42846",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "ClipBucket v5 is an open source video sharing platform. Prior to version 5.5.3 - #140, ClipBucket's Remote Play feature allows any authenticated user to add a video by importing an external URL as the",
+        "published": "2026-06-11T23:16:23.203"
+      },
+      {
+        "cve_id": "CVE-2026-45060",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "ClipBucket v5 is an open source video sharing platform. Prior to version 5.5.3 - #129, the actions/progress_video.php endpoint is vulnerable to blind SQL injection. Any unauthenticated user can exploi",
+        "published": "2026-06-11T23:16:23.797"
+      },
+      {
+        "cve_id": "CVE-2026-48611",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Improper authentication checks in the OAuth implementation allow account hijacking even when OAuth is not configured or enabled leading to unauthorized access in default installations.",
+        "published": "2026-06-12T04:17:08.180"
+      },
+      {
+        "cve_id": "CVE-2026-11849",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The\u00a0\niRM-IEI Remote Management developed by IEI Integration Corp has a Hardcoded Credentials vulnerability, allowing unauthenticated remote attackers to exploit hard-coded credentials to gain administ",
+        "published": "2026-06-12T11:16:22.527"
       },
       {
         "cve_id": "CVE-2026-12027",
@@ -257,74 +313,18 @@
         "published": "2026-06-11T22:16:55.253"
       },
       {
-        "cve_id": "CVE-2026-49973",
+        "cve_id": "CVE-2026-39494",
         "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "Hermes WebUI before version 0.51.358 contains an improper access control vulnerability that allows unauthenticated remote attackers to hijack initial setup by submitting the _set_password parameter to",
-        "published": "2026-06-11T20:16:25.050"
+        "base_score": 9.3,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in WBW Plugins Product Filter by WBW allows Blind SQL Injection.\n\nThis issue affects Product Filter b",
+        "published": "2026-06-11T22:16:56.207"
       },
       {
-        "cve_id": "CVE-2026-41005",
+        "cve_id": "CVE-2026-42647",
         "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "Cloud Foundry UAA incorrectly treated XML encryption to the Service Provider (confidentiality) as a substitute for XML signatures from the Identity Provider (authenticity) in two SAML flows: the OAuth",
-        "published": "2026-06-11T21:16:21.807"
-      },
-      {
-        "cve_id": "CVE-2025-24284",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "This issue was addressed with improved checks to prevent unauthorized actions. This issue is fixed in macOS Sequoia 15.4. An app may be able to break out of its sandbox.",
-        "published": "2026-06-11T19:16:27.253"
-      },
-      {
-        "cve_id": "CVE-2026-46519",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "mcp-server-kubernetes is a Model Context Protocol server for Kubernetes cluster management. Prior to version 3.6.0, mcp-server-kubernetes exposes three environment variables (ALLOW_ONLY_READONLY_TOOLS",
-        "published": "2026-06-11T19:16:42.213"
-      },
-      {
-        "cve_id": "CVE-2026-53806",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenClaw before 2026.5.12 contains a shell option parsing vulnerability that allows combined POSIX shell flags to bypass exec revalidation checks. Attackers can exploit this by using combined shell op",
-        "published": "2026-06-11T21:16:22.443"
-      },
-      {
-        "cve_id": "CVE-2026-53807",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenClaw before 2026.5.6 contains an authorization bypass vulnerability in Telegram interactive callbacks that allows authenticated users to skip commands.allowFrom validation. Attackers can invoke af",
-        "published": "2026-06-11T21:16:22.580"
-      },
-      {
-        "cve_id": "CVE-2026-53810",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenClaw before 2026.5.18 contains a code execution vulnerability where marketplace runtime extension metadata can redirect loading toward unscanned package payloads. Attackers with trusted operator a",
-        "published": "2026-06-11T21:16:23.030"
-      },
-      {
-        "cve_id": "CVE-2026-53811",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenClaw before 2026.5.7 contains a privilege escalation vulnerability in the Matrix allowFrom feature that allows authenticated accounts to match policy entries through mutable display name metadata.",
-        "published": "2026-06-11T21:16:23.167"
-      },
-      {
-        "cve_id": "CVE-2026-53817",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenClaw before 2026.5.22 contains a locality validation vulnerability in Control UI pairing that allows attackers with network access to spoof locality information and obtain durable admin-capable de",
-        "published": "2026-06-11T21:16:23.960"
-      },
-      {
-        "cve_id": "CVE-2026-53819",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenClaw before 2026.5.27 contains an arbitrary code execution vulnerability in skill install flows where workspace .env files can override the Homebrew executable selection. Attackers with access to ",
-        "published": "2026-06-11T21:16:24.227"
+        "base_score": 9.3,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Beardev JoomSport allows Blind SQL Injection.\n\nThis issue affects JoomSport: from n/a through 5.7.",
+        "published": "2026-06-11T22:16:56.447"
       },
       {
         "cve_id": "CVE-2026-12007",
@@ -362,25 +362,25 @@
         "published": "2026-06-11T22:16:56.093"
       },
       {
-        "cve_id": "CVE-2026-53814",
+        "cve_id": "CVE-2026-45418",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "OpenClaw before 2026.5.20 contains a privilege escalation vulnerability where hook-triggered agent runs incorrectly receive owner-scoped MCP loopback authority instead of hook-appropriate scope. Attac",
-        "published": "2026-06-11T21:16:23.570"
+        "base_score": 8.8,
+        "description": "ClipBucket v5 is an open source video sharing platform. Prior to version 5.5.3 - #132, any authenticated user who can upload videos can add multiple subtitles from different files and change their tit",
+        "published": "2026-06-11T23:16:23.937"
       },
       {
-        "cve_id": "CVE-2026-12008",
+        "cve_id": "CVE-2026-11933",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Use after free in DigitalCredentials in Google Chrome prior to 149.0.7827.115 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted H",
-        "published": "2026-06-11T22:16:53.243"
+        "base_score": 8.8,
+        "description": "A use-after-free vulnerability exists in MongoDB Server's server-side JavaScript engine when converting BSON documents to JavaScript arrays. An authenticated user with read privileges who is able to r",
+        "published": "2026-06-12T02:16:38.527"
       },
       {
-        "cve_id": "CVE-2026-12009",
+        "cve_id": "CVE-2026-12059",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Insufficient validation of untrusted input in Accessibility in Google Chrome on Mac prior to 149.0.7827.115 allowed a remote attacker who had compromised the renderer process to potentially perform a ",
-        "published": "2026-06-11T22:16:53.363"
+        "base_score": 8.8,
+        "description": "The SSH service of CelloOS developed by Cellopoint has an Improper Access Control vulnerability, allowing authenticated remote attackers to bypass the enforced command restrictions and execute operati",
+        "published": "2026-06-12T07:16:19.780"
       }
     ]
   },
