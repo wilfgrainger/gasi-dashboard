@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-06-12T14:35:39.492256+00:00",
+  "generated_at": "2026-06-12T17:58:49.746049+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 28,
+        "value": 29,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
-        "score": 2.5,
+        "value": 4,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1618,
-    "recent_30d_count": 28,
+    "total_catalog_count": 1619,
+    "recent_30d_count": 29,
     "recent": [
+      {
+        "cve_id": "CVE-2026-35273",
+        "vendor": "Oracle",
+        "product": " PeopleSoft Enterprise PeopleTools",
+        "name": "Oracle PeopleSoft Enterprise PeopleTools Missing Authentication for Critical Function Vulnerability",
+        "date_added": "2026-06-12",
+        "due_date": "2026-06-15",
+        "description": "Oracle PeopleSoft Enterprise PeopleTools contains a missing authentication for critical function vulnerability which could allow an unauthenticated attacker to obtain takeover of PeopleSoft Enterprise",
+        "ransomware_use": "Known"
+      },
       {
         "cve_id": "CVE-2026-10520",
         "vendor": "Ivanti",
@@ -224,23 +234,13 @@
         "due_date": "2026-06-04",
         "description": "Trend Micro Apex One (on-premise) contains a directory traversal vulnerability that could allow a pre-authenticated local attacker to modify a key table on the server to inject malicious code to deplo",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2008-4250",
-        "vendor": "Microsoft",
-        "product": "Windows",
-        "name": "Microsoft Windows Buffer Overflow Vulnerability",
-        "date_added": "2026-05-20",
-        "due_date": "2026-06-03",
-        "description": "Microsoft Windows contains a buffer overflow vulnerability in the Windows Server Service that allows remote attackers to execute arbitrary code via a crafted RPC request that triggers an overflow duri",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 197,
-    "critical_count": 5,
-    "high_count": 42,
+    "total": 258,
+    "critical_count": 4,
+    "high_count": 44,
     "cves": [
       {
         "cve_id": "CVE-2026-49261",
@@ -250,11 +250,11 @@
         "published": "2026-06-11T18:16:26.553"
       },
       {
-        "cve_id": "CVE-2026-11839",
+        "cve_id": "CVE-2026-12027",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Unrestricted upload of file with dangerous type vulnerability in Ba\u015farsoft Information Technologies Inc. Rotaban allows Upload a Web Shell to a Web Server.\n\nThis issue affects Rotaban: from V2026.06.0",
-        "published": "2026-06-11T16:16:22.497"
+        "base_score": 9.6,
+        "description": "Inappropriate implementation in Headless in Google Chrome prior to 149.0.7827.115 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a craft",
+        "published": "2026-06-11T22:16:55.253"
       },
       {
         "cve_id": "CVE-2026-49973",
@@ -264,25 +264,11 @@
         "published": "2026-06-11T20:16:25.050"
       },
       {
-        "cve_id": "CVE-2026-9648",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The crypton-x509-validation Haskell library fails to enforce X.509 NameConstraints, allowing TLS clients to accept certificates whose Subject Alternative Names fall outside the issuing CA\u2019s permitted ",
-        "published": "2026-06-11T16:16:25.503"
-      },
-      {
         "cve_id": "CVE-2026-41005",
         "severity": "CRITICAL",
         "base_score": 9.0,
         "description": "Cloud Foundry UAA incorrectly treated XML encryption to the Service Provider (confidentiality) as a substitute for XML signatures from the Identity Provider (authenticity) in two SAML flows: the OAuth",
         "published": "2026-06-11T21:16:21.807"
-      },
-      {
-        "cve_id": "CVE-2026-7870",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "IBM i 7.6, 7.5, 7.4, and 7.3 could allow a user to gain elevated privileges due to an unqualified library call. A malicious actor could cause user-controlled code to run with administrator privilege.",
-        "published": "2026-06-11T16:16:25.220"
       },
       {
         "cve_id": "CVE-2025-24284",
@@ -355,18 +341,25 @@
         "published": "2026-06-11T22:16:53.823"
       },
       {
-        "cve_id": "CVE-2026-44494",
+        "cve_id": "CVE-2026-12018",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "Axios is a promise based HTTP client for the browser and Node.js. From 1.0.0 to before 1.16.0, the Axios library is vulnerable to a Prototype Pollution \"Gadget\" attack that allows any Object.prototype",
-        "published": "2026-06-11T17:16:33.313"
+        "base_score": 8.8,
+        "description": "Inappropriate implementation in Mojo in Google Chrome on Windows prior to 149.0.7827.115 allowed a local attacker to perform OS-level privilege escalation via a malicious file. (Chromium security seve",
+        "published": "2026-06-11T22:16:54.373"
       },
       {
-        "cve_id": "CVE-2026-44492",
+        "cve_id": "CVE-2026-12020",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Axios is a promise based HTTP client for the browser and Node.js. Prior to 0.32.0 and 1.16.0, Axios does not normalise IPv4-mapped IPv6 addresses. When NO_PROXY lists an IPv4 address such as 127.0.0.1",
-        "published": "2026-06-11T17:16:33.167"
+        "base_score": 8.8,
+        "description": "Use after free in Autofill in Google Chrome on Mac prior to 149.0.7827.115 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-06-11T22:16:54.590"
+      },
+      {
+        "cve_id": "CVE-2026-12035",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in Views in Google Chrome on Windows prior to 149.0.7827.115 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-06-11T22:16:56.093"
       },
       {
         "cve_id": "CVE-2026-53814",
@@ -381,6 +374,13 @@
         "base_score": 8.3,
         "description": "Use after free in DigitalCredentials in Google Chrome prior to 149.0.7827.115 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted H",
         "published": "2026-06-11T22:16:53.243"
+      },
+      {
+        "cve_id": "CVE-2026-12009",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "Insufficient validation of untrusted input in Accessibility in Google Chrome on Mac prior to 149.0.7827.115 allowed a remote attacker who had compromised the renderer process to potentially perform a ",
+        "published": "2026-06-11T22:16:53.363"
       }
     ]
   },
