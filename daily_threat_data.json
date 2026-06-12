@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T02:38:49.312119+00:00",
+  "generated_at": "2026-06-12T08:16:17.183383+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
+        "value": 5,
         "score": 2.5,
         "max": 3
       },
@@ -239,8 +239,8 @@
   },
   "nvd": {
     "total": 200,
-    "critical_count": 6,
-    "high_count": 32,
+    "critical_count": 5,
+    "high_count": 26,
     "cves": [
       {
         "cve_id": "CVE-2026-49261",
@@ -255,13 +255,6 @@
         "base_score": 9.9,
         "description": "Unrestricted upload of file with dangerous type vulnerability in Ba\u015farsoft Information Technologies Inc. Rotaban allows Upload a Web Shell to a Web Server.\n\nThis issue affects Rotaban: from V2026.06.0",
         "published": "2026-06-11T16:16:22.497"
-      },
-      {
-        "cve_id": "CVE-2026-35273",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Vulnerability in the PeopleSoft Enterprise PeopleTools product of Oracle PeopleSoft (component: Updates Environment Management). Supported versions that are affected are 8.61 and 8.62. Easily exploita",
-        "published": "2026-06-11T04:16:53.680"
       },
       {
         "cve_id": "CVE-2026-7852",
@@ -299,6 +292,13 @@
         "published": "2026-06-11T19:16:27.253"
       },
       {
+        "cve_id": "CVE-2026-46519",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "mcp-server-kubernetes is a Model Context Protocol server for Kubernetes cluster management. Prior to version 3.6.0, mcp-server-kubernetes exposes three environment variables (ALLOW_ONLY_READONLY_TOOLS",
+        "published": "2026-06-11T19:16:42.213"
+      },
+      {
         "cve_id": "CVE-2026-10087",
         "severity": "HIGH",
         "base_score": 8.7,
@@ -320,32 +320,11 @@
         "published": "2026-06-11T17:16:33.313"
       },
       {
-        "cve_id": "CVE-2026-40999",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "When WS-Addressing is used with non-anonymous ReplyTo or FaultTo addresses, Spring WS may initiate outbound connections through configured WebServiceMessageSender instances to destinations taken direc",
-        "published": "2026-06-11T07:16:27.907"
-      },
-      {
         "cve_id": "CVE-2026-44492",
         "severity": "HIGH",
         "base_score": 8.6,
         "description": "Axios is a promise based HTTP client for the browser and Node.js. Prior to 0.32.0 and 1.16.0, Axios does not normalise IPv4-mapped IPv6 addresses. When NO_PROXY lists an IPv4 address such as 127.0.0.1",
         "published": "2026-06-11T17:16:33.167"
-      },
-      {
-        "cve_id": "CVE-2026-40994",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Wss4jSecurityInterceptor initialized its BSP (WS-I Basic Security Profile) compliance flag so that inbound validation disabled WSS4J BSP enforcement on RequestData. Services that validate WS-Security ",
-        "published": "2026-06-11T07:16:27.297"
-      },
-      {
-        "cve_id": "CVE-2026-40998",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Jaxp13XPathTemplate evaluated XPath expressions for StreamSource and SAXSource inputs using a code path that parsed attacker-controlled XML with the JDK's default DocumentBuilderFactory behavior inste",
-        "published": "2026-06-11T07:16:27.787"
       },
       {
         "cve_id": "CVE-2026-49982",
@@ -355,32 +334,53 @@
         "published": "2026-06-11T17:16:35.227"
       },
       {
-        "cve_id": "CVE-2026-10795",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The UpdraftPlus: WP Backup & Migration Plugin plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 1.26.4 via the UpdraftPlus_Remote_Communications_V2::wp_",
-        "published": "2026-06-11T07:16:26.713"
-      },
-      {
-        "cve_id": "CVE-2026-41699",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Spring for GraphQL applications are vulnerable to Unsafe Deserialization when processing paginated GraphQL queries. An attacker can craft a malicious GraphQL request that can lead to Remote Code Execu",
-        "published": "2026-06-11T07:16:28.280"
-      },
-      {
-        "cve_id": "CVE-2026-41700",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Spring for GraphQL applications that have enabled the WebSocket transport are vulnerable to Cross-Site WebSocket Hijacking. An attacker can trick an authenticated user into visiting a malicious page, ",
-        "published": "2026-06-11T07:16:28.400"
-      },
-      {
         "cve_id": "CVE-2026-11816",
         "severity": "HIGH",
         "base_score": 8.1,
         "description": "Keras versions prior to 3.14.0 are vulnerable to a path traversal issue in the archive extraction utilities located in `keras/src/utils/file_utils.py`. The functions `filter_safe_tarinfos()` and `filt",
         "published": "2026-06-11T14:16:26.557"
+      },
+      {
+        "cve_id": "CVE-2026-53777",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Perry before 0.5.1159 contains a path traversal vulnerability that allows a malicious build server to write arbitrary content to any location writable by the running process by supplying unsanitized p",
+        "published": "2026-06-11T16:16:24.873"
+      },
+      {
+        "cve_id": "CVE-2026-10847",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "A local privilege escalation vulnerability exists in Check Point Identity Agent Full for Windows OS. An authenticated local user may be able to execute arbitrary code with SYSTEM privileges due to imp",
+        "published": "2026-06-11T14:16:26.060"
+      },
+      {
+        "cve_id": "CVE-2025-31272",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "The issue was addressed with improved checks. This issue is fixed in macOS Sequoia 15.4. An app may be able to bypass launch constraint protections and execute malicious code with elevated privileges.",
+        "published": "2026-06-11T19:16:27.567"
+      },
+      {
+        "cve_id": "CVE-2026-47170",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "Garlic-Hub manages digital signage network \u2014 devices, content, and playlists \u2014 from a single self-hosted interface. Prior to version 1.1, authenticated users can cause the server to issue arbitrary HT",
+        "published": "2026-06-11T19:16:44.890"
+      },
+      {
+        "cve_id": "CVE-2026-11774",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "An integer overflow flaw was found in the SASL I/O layer of 389 Directory Server (389-ds-base). In sasl_io_start_packet(), adding sizeof(uint32_t) to a crafted SASL packet length prefix of 0xFFFFFFFC ",
+        "published": "2026-06-11T19:16:37.853"
+      },
+      {
+        "cve_id": "CVE-2026-5497",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "vLLM versions 0.8.0 and later are vulnerable to an Out-of-Memory (OOM) Denial of Service (DoS) attack due to unbounded frame count processing in the `VideoMediaIO.load_base64()` method. When processin",
+        "published": "2026-06-11T10:16:21.903"
       }
     ]
   },
