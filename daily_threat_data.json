@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-12T21:24:49.151899+00:00",
+  "generated_at": "2026-06-13T02:31:45.187856+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 29,
+        "value": 28,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 12,
+        "value": 15,
         "score": 3.0,
         "max": 3
       },
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1619,
-    "recent_30d_count": 29,
+    "recent_30d_count": 28,
     "recent": [
       {
         "cve_id": "CVE-2026-35273",
@@ -238,10 +238,38 @@
     ]
   },
   "nvd": {
-    "total": 266,
-    "critical_count": 12,
-    "high_count": 39,
+    "total": 281,
+    "critical_count": 15,
+    "high_count": 24,
     "cves": [
+      {
+        "cve_id": "CVE-2026-47131",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "vm2 is an open source vm/sandbox for Node.js. Prior to version 3.11.4, by combining Buffer.call.call({}.__lookupGetter__, Buffer, \"__proto__\"), Buffer.call.call({}.__lookupSetter__, Buffer, \"__proto__",
+        "published": "2026-06-12T15:16:27.870"
+      },
+      {
+        "cve_id": "CVE-2026-47137",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "vm2 is an open source vm/sandbox for Node.js. Prior to version 3.11.4, the fix for GHSA-8hg8-63c5-gwmx (CVE-2023-37903) introduced a check in nodevm.js line 263 that blocks the combination nesting: tr",
+        "published": "2026-06-12T15:16:28.137"
+      },
+      {
+        "cve_id": "CVE-2026-47140",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "vm2 is an open source vm/sandbox for Node.js. Prior to version 3.11.4, NodeVM blocks several dangerous Node.js builtins such as module, worker_threads, cluster, vm, repl, and inspector. However, the d",
+        "published": "2026-06-12T15:16:28.400"
+      },
+      {
+        "cve_id": "CVE-2026-47208",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "vm2 is an open source vm/sandbox for Node.js. Prior to version 3.11.4, VM2 suffers from a sandbox breakout vulnerability. This allows attackers to write code which can escape from the VM2 sandbox and ",
+        "published": "2026-06-12T15:16:28.767"
+      },
       {
         "cve_id": "CVE-2026-47365",
         "severity": "CRITICAL",
@@ -271,27 +299,6 @@
         "published": "2026-06-12T04:17:06.657"
       },
       {
-        "cve_id": "CVE-2026-49060",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Incorrect Privilege Assignment vulnerability in Hippoo Mobile App for WooCommerce allows Privilege Escalation.\n\nThis issue affects Hippoo Mobile App for WooCommerce: from n/a through 1.9.4.",
-        "published": "2026-06-11T22:16:57.737"
-      },
-      {
-        "cve_id": "CVE-2026-42846",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "ClipBucket v5 is an open source video sharing platform. Prior to version 5.5.3 - #140, ClipBucket's Remote Play feature allows any authenticated user to add a video by importing an external URL as the",
-        "published": "2026-06-11T23:16:23.203"
-      },
-      {
-        "cve_id": "CVE-2026-45060",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "ClipBucket v5 is an open source video sharing platform. Prior to version 5.5.3 - #129, the actions/progress_video.php endpoint is vulnerable to blind SQL injection. Any unauthenticated user can exploi",
-        "published": "2026-06-11T23:16:23.797"
-      },
-      {
         "cve_id": "CVE-2026-48611",
         "severity": "CRITICAL",
         "base_score": 9.8,
@@ -306,74 +313,39 @@
         "published": "2026-06-12T11:16:22.527"
       },
       {
-        "cve_id": "CVE-2026-12027",
+        "cve_id": "CVE-2026-10557",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Inappropriate implementation in Headless in Google Chrome prior to 149.0.7827.115 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a craft",
-        "published": "2026-06-11T22:16:55.253"
+        "base_score": 9.8,
+        "description": "The Yarbo Android and iOS applications contain hard-coded MQTT broker credentials that are identical for all users and all devices. These credentials are embedded in the application binary and are rea",
+        "published": "2026-06-12T15:16:24.523"
       },
       {
-        "cve_id": "CVE-2026-39494",
+        "cve_id": "CVE-2026-47210",
         "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in WBW Plugins Product Filter by WBW allows Blind SQL Injection.\n\nThis issue affects Product Filter b",
-        "published": "2026-06-11T22:16:56.207"
+        "base_score": 9.8,
+        "description": "vm2 is an open source vm/sandbox for Node.js. Prior to version 3.11.4, a sandbox escape vulnerability in vm2 allows arbitrary code execution in the host process when untrusted code is executed with as",
+        "published": "2026-06-12T15:16:29.030"
       },
       {
-        "cve_id": "CVE-2026-42647",
+        "cve_id": "CVE-2026-53787",
         "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Beardev JoomSport allows Blind SQL Injection.\n\nThis issue affects JoomSport: from n/a through 5.7.",
-        "published": "2026-06-11T22:16:56.447"
+        "base_score": 9.8,
+        "description": "Amasty Order Attributes for Magento 2 before version 4.0.0 contains an unauthenticated arbitrary file upload vulnerability that allows unauthenticated attackers to write arbitrary files to the store's",
+        "published": "2026-06-12T15:16:31.557"
       },
       {
-        "cve_id": "CVE-2026-12007",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in Core in Google Chrome on Windows prior to 149.0.7827.115 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: Critical)",
-        "published": "2026-06-11T22:16:52.117"
+        "cve_id": "CVE-2026-54133",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "jmespath.php allows users to use JMESPath, software for declaratively specifying how to extract elements from a JSON document, in PHP applications with PHP data structures. Versions prior to 2.9.1 can",
+        "published": "2026-06-12T15:16:31.890"
       },
       {
-        "cve_id": "CVE-2026-12013",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in Media in Google Chrome on Windows prior to 149.0.7827.115 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-06-11T22:16:53.823"
-      },
-      {
-        "cve_id": "CVE-2026-12018",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Inappropriate implementation in Mojo in Google Chrome on Windows prior to 149.0.7827.115 allowed a local attacker to perform OS-level privilege escalation via a malicious file. (Chromium security seve",
-        "published": "2026-06-11T22:16:54.373"
-      },
-      {
-        "cve_id": "CVE-2026-12020",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in Autofill in Google Chrome on Mac prior to 149.0.7827.115 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-06-11T22:16:54.590"
-      },
-      {
-        "cve_id": "CVE-2026-12035",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in Views in Google Chrome on Windows prior to 149.0.7827.115 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-06-11T22:16:56.093"
-      },
-      {
-        "cve_id": "CVE-2026-45418",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "ClipBucket v5 is an open source video sharing platform. Prior to version 5.5.3 - #132, any authenticated user who can upload videos can add multiple subtitles from different files and change their tit",
-        "published": "2026-06-11T23:16:23.937"
-      },
-      {
-        "cve_id": "CVE-2026-11933",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A use-after-free vulnerability exists in MongoDB Server's server-side JavaScript engine when converting BSON documents to JavaScript arrays. An authenticated user with read privileges who is able to r",
-        "published": "2026-06-12T02:16:38.527"
+        "cve_id": "CVE-2026-6853",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Improper restriction of excessive authentication attempts vulnerability in Ba\u015fbelen Group Food Cafe Businesses Industry and Trade Ltd. Co. Pause+ Mobile App allows Authentication Bypass.\n\nThis issue a",
+        "published": "2026-06-12T15:16:32.160"
       },
       {
         "cve_id": "CVE-2026-12059",
@@ -381,6 +353,34 @@
         "base_score": 8.8,
         "description": "The SSH service of CelloOS developed by Cellopoint has an Improper Access Control vulnerability, allowing authenticated remote attackers to bypass the enforced command restrictions and execute operati",
         "published": "2026-06-12T07:16:19.780"
+      },
+      {
+        "cve_id": "CVE-2026-45674",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "Netty is a network application framework for development of protocol servers and clients. Prior to versions 4.1.135.Final and 4.2.15.Final, Netty's DnsResolveContext fails to validate the origin (bail",
+        "published": "2026-06-12T15:16:27.550"
+      },
+      {
+        "cve_id": "CVE-2026-47135",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "vm2 is an open source vm/sandbox for Node.js. Prior to version 3.11.4, Symbol.for override in setup-sandbox.js only intercepts 2 of 9 dangerous Node.js cross-realm symbols. Combined with the bridge's ",
+        "published": "2026-06-12T15:16:28.007"
+      },
+      {
+        "cve_id": "CVE-2026-6211",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "Unrestricted upload of file with dangerous type vulnerability in Global IT Informatics Services Inc. WEOLL allows Accessing Functionality Not Properly Constrained by ACLs.\n\nThis issue affects WEOLL: f",
+        "published": "2026-06-12T15:16:32.033"
+      },
+      {
+        "cve_id": "CVE-2026-47691",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "Netty is a network application framework for development of protocol servers and clients. Prior to versions 4.1.135.Final and 4.2.15.Final, Netty's `DnsResolveContext` insufficiently validates the bai",
+        "published": "2026-06-12T16:16:30.310"
       }
     ]
   },
