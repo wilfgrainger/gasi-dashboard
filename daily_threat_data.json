@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-13T13:26:36.318696+00:00",
+  "generated_at": "2026-06-13T17:12:14.898192+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 14,
-        "score": 3.0,
+        "value": 3,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,107 +238,30 @@
     ]
   },
   "nvd": {
-    "total": 255,
-    "critical_count": 14,
-    "high_count": 24,
+    "total": 173,
+    "critical_count": 3,
+    "high_count": 30,
     "cves": [
       {
-        "cve_id": "CVE-2026-47131",
+        "cve_id": "CVE-2026-48558",
         "severity": "CRITICAL",
         "base_score": 10.0,
-        "description": "vm2 is an open source vm/sandbox for Node.js. Prior to version 3.11.4, by combining Buffer.call.call({}.__lookupGetter__, Buffer, \"__proto__\"), Buffer.call.call({}.__lookupSetter__, Buffer, \"__proto__",
-        "published": "2026-06-12T15:16:27.870"
+        "description": "SimpleHelp versions 5.5.15 and prior and 6.0 pre-release versions contain an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity token",
+        "published": "2026-06-12T18:16:35.317"
       },
       {
-        "cve_id": "CVE-2026-47137",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "vm2 is an open source vm/sandbox for Node.js. Prior to version 3.11.4, the fix for GHSA-8hg8-63c5-gwmx (CVE-2023-37903) introduced a check in nodevm.js line 263 that blocks the combination nesting: tr",
-        "published": "2026-06-12T15:16:28.137"
-      },
-      {
-        "cve_id": "CVE-2026-47140",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "vm2 is an open source vm/sandbox for Node.js. Prior to version 3.11.4, NodeVM blocks several dangerous Node.js builtins such as module, worker_threads, cluster, vm, repl, and inspector. However, the d",
-        "published": "2026-06-12T15:16:28.400"
-      },
-      {
-        "cve_id": "CVE-2026-47208",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "vm2 is an open source vm/sandbox for Node.js. Prior to version 3.11.4, VM2 suffers from a sandbox breakout vulnerability. This allows attackers to write code which can escape from the VM2 sandbox and ",
-        "published": "2026-06-12T15:16:28.767"
-      },
-      {
-        "cve_id": "CVE-2026-50086",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "The Aqara IAM/SSO gateway (gw-builder.aqara.com) exposes bidirectional AES round-trups against the platform's signing key without authentication. This is an instance of \"CWE-306: Missing Authenticatio",
-        "published": "2026-06-12T16:16:32.187"
-      },
-      {
-        "cve_id": "CVE-2026-10557",
+        "cve_id": "CVE-2026-28742",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "The Yarbo Android and iOS applications contain hard-coded MQTT broker credentials that are identical for all users and all devices. These credentials are embedded in the application binary and are rea",
-        "published": "2026-06-12T15:16:24.523"
+        "description": "Naxclow devices use a uniform request-signing scheme based on a hard-coded, platform-wide salt embedded in every firmware image. Once this salt is recovered from any device, an attacker can generate v",
+        "published": "2026-06-12T19:16:26.743"
       },
       {
-        "cve_id": "CVE-2026-47210",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "vm2 is an open source vm/sandbox for Node.js. Prior to version 3.11.4, a sandbox escape vulnerability in vm2 allows arbitrary code execution in the host process when untrusted code is executed with as",
-        "published": "2026-06-12T15:16:29.030"
-      },
-      {
-        "cve_id": "CVE-2026-53787",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Amasty Order Attributes for Magento 2 before version 4.0.0 contains an unauthenticated arbitrary file upload vulnerability that allows unauthenticated attackers to write arbitrary files to the store's",
-        "published": "2026-06-12T15:16:31.557"
-      },
-      {
-        "cve_id": "CVE-2026-54133",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "jmespath.php allows users to use JMESPath, software for declaratively specifying how to extract elements from a JSON document, in PHP applications with PHP data structures. Versions prior to 2.9.1 can",
-        "published": "2026-06-12T15:16:31.890"
-      },
-      {
-        "cve_id": "CVE-2026-6853",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Improper restriction of excessive authentication attempts vulnerability in Ba\u015fbelen Group Food Cafe Businesses Industry and Trade Ltd. Co. Pause+ Mobile App allows Authentication Bypass.\n\nThis issue a",
-        "published": "2026-06-12T15:16:32.160"
-      },
-      {
-        "cve_id": "CVE-2026-50084",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "The Aqara Cloud Production API (open-cn.aqara.com/v3.0/open/api) would authorize any valid developer token for access to any account. This is an instance of \"CWE-862: Missing Authorization\" with an es",
-        "published": "2026-06-12T16:16:31.940"
-      },
-      {
-        "cve_id": "CVE-2026-50090",
+        "cve_id": "CVE-2026-44990",
         "severity": "CRITICAL",
         "base_score": 9.3,
-        "description": "The Aqara Cloud OAuth Authorization Endpoint (open-cn.aqara.com/oauth/authorize) is vulnerable to a redirect bypass due to lax controls on domain matching, which is an instance of \"CWE-1289: Improper ",
-        "published": "2026-06-12T16:16:32.623"
-      },
-      {
-        "cve_id": "CVE-2026-50083",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The Aqara IAM/SSO Gateway (gw-builder.aqara.com) used a hardcoded OAuth client credential, which is an instance of\u00a0\"CWE-798: Use of Hard-coded Credentials.\" This issue has an estimated CVSS of\u00a0CVSS:3.",
-        "published": "2026-06-12T16:16:31.827"
-      },
-      {
-        "cve_id": "CVE-2026-50091",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Aqara Home Android (com.lumiunited.aqarahome) 6.0.0 (and white-label clients embedding the same liblumidevsdk.so) uses hard-coded cryptographic keys, which is an instance of \"CWE-321: Use of Hard-code",
-        "published": "2026-06-12T16:16:32.737"
+        "description": "ApostropheCMS is an open-source Node.js content management system, and sanitize-html provides a simple HTML sanitizer with a clear API. Under the default configuration, versions of `sanitize-html` pri",
+        "published": "2026-06-12T21:16:22.447"
       },
       {
         "cve_id": "CVE-2026-7387",
@@ -348,39 +271,116 @@
         "published": "2026-06-12T17:16:27.653"
       },
       {
-        "cve_id": "CVE-2026-45674",
+        "cve_id": "CVE-2026-12043",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "Netty is a network application framework for development of protocol servers and clients. Prior to versions 4.1.135.Final and 4.2.15.Final, Netty's DnsResolveContext fails to validate the origin (bail",
-        "published": "2026-06-12T15:16:27.550"
+        "base_score": 8.8,
+        "description": "Improper handling of HPACK dynamic table size updates in the AWS Common Runtime aws-c-http library might allow a remote threat actor operating a server to cause memory corruption on a connecting clien",
+        "published": "2026-06-12T19:16:26.420"
       },
       {
-        "cve_id": "CVE-2026-47135",
+        "cve_id": "CVE-2026-42947",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "vm2 is an open source vm/sandbox for Node.js. Prior to version 3.11.4, Symbol.for override in setup-sandbox.js only intercepts 2 of 9 dangerous Node.js cross-realm symbols. Combined with the bridge's ",
-        "published": "2026-06-12T15:16:28.007"
+        "base_score": 8.8,
+        "description": "A flaw in Naxclow's platform\u2019s onboarding workflow allows an attacker to replay a confirm-then-bind sequence to silently reassign a device to an arbitrary account. Because the affected endpoints valid",
+        "published": "2026-06-12T19:16:27.857"
       },
       {
-        "cve_id": "CVE-2026-6211",
+        "cve_id": "CVE-2026-50101",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "Unrestricted upload of file with dangerous type vulnerability in Global IT Informatics Services Inc. WEOLL allows Accessing Functionality Not Properly Constrained by ACLs.\n\nThis issue affects WEOLL: f",
-        "published": "2026-06-12T15:16:32.033"
+        "base_score": 8.1,
+        "description": "Naxclow devices use a server-side, per-device relay credential that never rotates and is re-issued to the device on each boot. Because this credential remains valid indefinitely and cannot be reset or",
+        "published": "2026-06-12T19:16:29.487"
       },
       {
-        "cve_id": "CVE-2026-47691",
+        "cve_id": "CVE-2026-53407",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "Netty is a network application framework for development of protocol servers and clients. Prior to versions 4.1.135.Final and 4.2.15.Final, Netty's `DnsResolveContext` insufficiently validates the bai",
-        "published": "2026-06-12T16:16:30.310"
+        "base_score": 8.1,
+        "description": "Improper Authorization in Handler for Custom URL Scheme in Zoom Workplace before version 7.0.4 for Android and before 7.0.3 for iOS may allow an unauthenticated user to conduct an escalation of privil",
+        "published": "2026-06-12T19:16:29.973"
       },
       {
-        "cve_id": "CVE-2026-47139",
+        "cve_id": "CVE-2026-53408",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "vm2 is an open source vm/sandbox for Node.js. Prior to version 3.11.4, NodeVM supports excluding public network builtins from the wildcard builtin option. With this configuration direct access to http",
-        "published": "2026-06-12T15:16:28.273"
+        "base_score": 8.1,
+        "description": "Improper Authorization in Handler for Custom URL Scheme in Zoom Workplace before version 7.0.4 for Android and before 7.0.3 for iOS may allow an unauthenticated user to conduct an escalation of privil",
+        "published": "2026-06-12T19:16:30.093"
+      },
+      {
+        "cve_id": "CVE-2026-45013",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "ApostropheCMS is an open-source Node.js content management system. Versions up to and including 4.29.0 have a password reset flow that constructs the reset URL using `req.hostname`, which is derived d",
+        "published": "2026-06-12T21:16:22.850"
+      },
+      {
+        "cve_id": "CVE-2026-44168",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "MariaDB server is a community developed fork of MySQL server. From versions 10.6.1 to before 10.6.26, 10.11.1 to before 10.11.17, 11.4.1 to before 11.4.11, 11.8.1 to before 11.8.7, and 12.3.1, during ",
+        "published": "2026-06-12T18:16:33.577"
+      },
+      {
+        "cve_id": "CVE-2026-48163",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "MariaDB server is a community developed fork of MySQL server. From versions 10.6.1 to before 10.6.27, 10.11.1 to before 10.11.18, 11.4.1 to before 11.4.12, 11.8.1 to before 11.8.8, and 12.3.1, during ",
+        "published": "2026-06-12T18:16:35.037"
+      },
+      {
+        "cve_id": "CVE-2026-48165",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "MariaDB server is a community developed fork of MySQL server. From versions 10.6.1 to before 10.6.27, 10.11.1 to before 10.11.18, 11.4.1 to before 11.4.12, 11.8.1 to before 11.8.8, and 12.3.1, a high-",
+        "published": "2026-06-12T18:16:35.177"
+      },
+      {
+        "cve_id": "CVE-2026-47965",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Acrobat Reader versions 24.001.30365, 26.001.21651 and earlier are affected by an out-of-bounds write vulnerability that could result in arbitrary code execution in the context of the current user. Ex",
+        "published": "2026-06-12T18:16:34.913"
+      },
+      {
+        "cve_id": "CVE-2026-53406",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Insufficient Verification of Data Authenticity in Remote Control for Zoom Contact Center for Windows before version 7.0.0 may allow an authenticated user to enable an escalation of privilege via local",
+        "published": "2026-06-12T18:16:35.457"
+      },
+      {
+        "cve_id": "CVE-2026-42851",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Kitty is a cross-platform GPU based terminal. In versions prior to 0.47.0, a program able to write bytes to a kitty terminal \u2014 a remote SSH peer, a downloaded file viewed with `cat`, a log line, an em",
+        "published": "2026-06-12T20:16:45.420"
+      },
+      {
+        "cve_id": "CVE-2025-7002",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Heap buffer out-of-bounds read vulnerability in Avira Antivirus engine when scanning a malformed PDF file may allow Local Execution of Code or Denial-of-Service of the antivirus engine process.\n\nThis ",
+        "published": "2026-06-12T22:16:48.107"
+      },
+      {
+        "cve_id": "CVE-2025-7003",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Heap buffer out-of-bounds read vulnerability in Avira Antivirus engine when scanning a malformed PDF file may allow Local Execution of Code or Denial-of-Service of the antivirus engine process.\n\nThis ",
+        "published": "2026-06-12T22:16:48.260"
+      },
+      {
+        "cve_id": "CVE-2025-7004",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Heap buffer out-of-bounds write vulnerability in Avast Antivirus when scanning a malformed Windows PE file may allow Local Execution of Code or Denial-of-Service of the antivirus process.\n\nThis issue ",
+        "published": "2026-06-12T22:16:48.383"
+      },
+      {
+        "cve_id": "CVE-2025-7008",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Heap buffer out-of-bounds read vulnerability in Avast Antivirus when scanning a malformed Windows PE file with .NET metadata may allow Local Execution of Code or Denial-of-Service of the antivirus pro",
+        "published": "2026-06-12T22:16:48.807"
       }
     ]
   },
