@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T07:39:15.025347+00:00",
+  "generated_at": "2026-06-13T10:21:35.963009+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 13,
+        "value": 15,
         "score": 3.0,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 275,
-    "critical_count": 13,
-    "high_count": 24,
+    "total": 262,
+    "critical_count": 15,
+    "high_count": 22,
     "cves": [
       {
         "cve_id": "CVE-2026-47131",
@@ -327,11 +327,25 @@
         "published": "2026-06-12T16:16:31.940"
       },
       {
+        "cve_id": "CVE-2026-50090",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "The Aqara Cloud OAuth Authorization Endpoint (open-cn.aqara.com/oauth/authorize) is vulnerable to a redirect bypass due to lax controls on domain matching, which is an instance of \"CWE-1289: Improper ",
+        "published": "2026-06-12T16:16:32.623"
+      },
+      {
         "cve_id": "CVE-2026-50083",
         "severity": "CRITICAL",
         "base_score": 9.1,
         "description": "The Aqara IAM/SSO Gateway (gw-builder.aqara.com) used a hardcoded OAuth client credential, which is an instance of\u00a0\"CWE-798: Use of Hard-coded Credentials.\" This issue has an estimated CVSS of\u00a0CVSS:3.",
         "published": "2026-06-12T16:16:31.827"
+      },
+      {
+        "cve_id": "CVE-2026-50091",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Aqara Home Android (com.lumiunited.aqarahome) 6.0.0 (and white-label clients embedding the same liblumidevsdk.so) uses hard-coded cryptographic keys, which is an instance of \"CWE-321: Use of Hard-code",
+        "published": "2026-06-12T16:16:32.737"
       },
       {
         "cve_id": "CVE-2026-45674",
@@ -367,20 +381,6 @@
         "base_score": 8.6,
         "description": "vm2 is an open source vm/sandbox for Node.js. Prior to version 3.11.4, NodeVM supports excluding public network builtins from the wildcard builtin option. With this configuration direct access to http",
         "published": "2026-06-12T15:16:28.273"
-      },
-      {
-        "cve_id": "CVE-2026-47209",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "vm2 is an open source vm/sandbox for Node.js. Prior to version 3.11.4, the BaseHandler.set trap in bridge.js (line 1231) ignores the receiver parameter and unconditionally writes to the host target ob",
-        "published": "2026-06-12T15:16:28.900"
-      },
-      {
-        "cve_id": "CVE-2026-50085",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "The Aqara Board service (op-test.aqara.com) accepts arbitrary MQTT command payloads, and forwards them to the platfom's HiveMQ broker without authentication. This is an instance of \"CWE-306: Missing A",
-        "published": "2026-06-12T16:16:32.060"
       }
     ]
   },
