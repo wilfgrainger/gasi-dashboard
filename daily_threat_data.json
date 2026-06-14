@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-14T17:09:01.065398+00:00",
+  "generated_at": "2026-06-14T20:59:45.896732+00:00",
   "threat_score": {
-    "score": 5.5,
+    "score": 5.0,
     "level": "ELEVATED",
     "level_color": "elevated",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 0,
+        "score": 1.0,
         "max": 3
       },
       {
@@ -238,23 +238,23 @@
     ]
   },
   "nvd": {
-    "total": 10,
-    "critical_count": 1,
-    "high_count": 3,
+    "total": 12,
+    "critical_count": 0,
+    "high_count": 5,
     "cves": [
-      {
-        "cve_id": "CVE-2026-12183",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Nefteprodukttekhnika BUK TS-G Gas Station Automation System 2.9.1 through 2.10.2 on Linux contains an Improper Authentication vulnerability (CWE-287) in the system configuration module. The /php/ajax-",
-        "published": "2026-06-13T18:16:22.310"
-      },
       {
         "cve_id": "CVE-2026-12174",
         "severity": "HIGH",
         "base_score": 8.8,
         "description": "A security vulnerability has been detected in D-Link DCS-935L 1.10.01. This issue affects the function snprintf of the file /web/cgi-bin/greece/rhea of the component HTTP Handler. Such manipulation of",
         "published": "2026-06-13T21:16:18.830"
+      },
+      {
+        "cve_id": "CVE-2026-54410",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "nanoMODBUS through v1.23.0 contains an off-by-one buffer overflow in the recv_msg_header() function of the Modbus/TCP server that allows remote unauthenticated attackers to write one attacker-controll",
+        "published": "2026-06-14T18:17:20.330"
       },
       {
         "cve_id": "CVE-2026-54420",
@@ -264,11 +264,18 @@
         "published": "2026-06-14T04:16:28.630"
       },
       {
-        "cve_id": "CVE-2026-6428",
+        "cve_id": "CVE-2026-54412",
         "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "SQL Injection in reports/catalogue_out.pl in Koha Community Koha through 22.11.37, 23.x, 24.x before 24.11.16, 25.05.x before 25.05.11, 25.11.x before 25.11.05, 26.05.x before 26.05.01, and 26.11.x be",
-        "published": "2026-06-13T17:16:17.190"
+        "base_score": 8.2,
+        "description": "LiamBindle MQTT-C through version 1.1.6 contains a heap-based out-of-bounds read and integer underflow in the mqtt_unpack_publish_response() function in src/mqtt.c that allows a remote unauthenticated",
+        "published": "2026-06-14T18:17:20.750"
+      },
+      {
+        "cve_id": "CVE-2026-54413",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "driftregion iso14229 through 0.9.0 contains an integer underflow and downstream out-of-bounds read in the Handle_0x27_SecurityAccess() function in iso14229.c that allows a remote unauthenticated attac",
+        "published": "2026-06-14T18:17:20.943"
       },
       {
         "cve_id": "CVE-2026-54421",
@@ -276,6 +283,13 @@
         "base_score": 6.8,
         "description": "In OpenStack Ironic through 35.0.1, when applying a PATCH to update fields in volume properties the user is authorized for, Ironic can return unredacted sensitive information (such as iSCSI credential",
         "published": "2026-06-14T04:16:30.927"
+      },
+      {
+        "cve_id": "CVE-2026-54411",
+        "severity": "MEDIUM",
+        "base_score": 5.9,
+        "description": "Linux-PAM through 1.7.2 contains an observable timing discrepancy (CWE-208) in the pam_userdb module's plaintext-password comparison path in modules/pam_userdb/pam_userdb.c that allows a local or netw",
+        "published": "2026-06-14T18:17:20.587"
       },
       {
         "cve_id": "CVE-2026-12175",
