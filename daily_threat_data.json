@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14T02:43:23.055763+00:00",
+  "generated_at": "2026-06-14T08:08:14.504405+00:00",
   "threat_score": {
     "score": 5.5,
     "level": "ELEVATED",
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 22,
+    "total": 13,
     "critical_count": 1,
-    "high_count": 8,
+    "high_count": 4,
     "cves": [
       {
         "cve_id": "CVE-2026-12183",
@@ -257,11 +257,11 @@
         "published": "2026-06-13T21:16:18.830"
       },
       {
-        "cve_id": "CVE-2026-54228",
+        "cve_id": "CVE-2026-54420",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A time-of-check time-of-use (TOCTOU) race condition was found in the abrt-dbus D-Bus service's SetElement method. Between dump directory creation and post-create event execution, any local user can ca",
-        "published": "2026-06-13T03:16:21.440"
+        "base_score": 8.5,
+        "description": "LiteSpeed cPanel plugin before 2.4.8 (as distributed in LiteSpeed WHM PlugIn before 5.3.2.0) mishandles symlinks provided by a user with FTP or web shell access on a shared hosting server running Clou",
+        "published": "2026-06-14T04:16:28.630"
       },
       {
         "cve_id": "CVE-2026-6428",
@@ -271,20 +271,6 @@
         "published": "2026-06-13T17:16:17.190"
       },
       {
-        "cve_id": "CVE-2026-9848",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The WP Ticket plugin for WordPress is vulnerable to SQL Injection via the WordPress search query parameter (`s`) in versions up to, and including, 6.0.4 The plugin hooks WordPress's `posts_request` fi",
-        "published": "2026-06-13T03:16:22.017"
-      },
-      {
-        "cve_id": "CVE-2026-9109",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The GPTranslate \u2013 Multilingual AI Translation for WordPress: Automatically Translate Websites plugin for WordPress is vulnerable to Stored Cross-Site Scripting via REST API Translation Storage in all ",
-        "published": "2026-06-13T07:16:14.853"
-      },
-      {
         "cve_id": "CVE-2026-5513",
         "severity": "HIGH",
         "base_score": 7.2,
@@ -292,25 +278,11 @@
         "published": "2026-06-13T12:16:15.947"
       },
       {
-        "cve_id": "CVE-2026-54229",
-        "severity": "HIGH",
-        "base_score": 7.0,
-        "description": "A race condition was found in the abrt-dbus D-Bus service's ChownProblemDir method. ChownProblemDir opens the dump directory with DD_OPEN_READONLY and calls dd_chown to change ownership of all files t",
-        "published": "2026-06-13T03:16:21.587"
-      },
-      {
-        "cve_id": "CVE-2026-54230",
-        "severity": "HIGH",
-        "base_score": 7.0,
-        "description": "A symlink following vulnerability was found in the ABRT post-create event handler scripts in libreport. Event scripts write output files using shell redirections without the O_NOFOLLOW flag. If the ta",
-        "published": "2026-06-13T03:16:21.733"
-      },
-      {
-        "cve_id": "CVE-2026-9134",
+        "cve_id": "CVE-2026-54421",
         "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The FooGallery plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'custom_attribute_key' shortcode parameter in versions up to, and including, 3.1.31 This is due to an incomplet",
-        "published": "2026-06-13T07:16:15.107"
+        "base_score": 6.8,
+        "description": "In OpenStack Ironic through 35.0.1, when applying a PATCH to update fields in volume properties the user is authorized for, Ironic can return unredacted sensitive information (such as iSCSI credential",
+        "published": "2026-06-14T04:16:30.927"
       },
       {
         "cve_id": "CVE-2026-3297",
@@ -325,20 +297,6 @@
         "base_score": 6.4,
         "description": "The Canvas plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'tag' parameter in all versions up to, and including, 2.5.2 due to insufficient input sanitization and output escap",
         "published": "2026-06-13T08:16:12.330"
-      },
-      {
-        "cve_id": "CVE-2026-54231",
-        "severity": "MEDIUM",
-        "base_score": 5.5,
-        "description": "A content injection vulnerability was found in the ABRT post-create event handler scripts in libreport. The event script queries the systemd journal for log entries matching the crashed process and wr",
-        "published": "2026-06-13T03:16:21.877"
-      },
-      {
-        "cve_id": "CVE-2026-12089",
-        "severity": "MEDIUM",
-        "base_score": 4.9,
-        "description": "The LWS Optimize \u2013 All-in-One Speed Booster & Cache Tools plugin for WordPress is vulnerable to Arbitrary File Read in versions up to, and including, 3.3.19. This is due to the combine_current_css() f",
-        "published": "2026-06-13T03:16:19.573"
       },
       {
         "cve_id": "CVE-2026-12175",
@@ -369,18 +327,11 @@
         "published": "2026-06-14T00:16:19.790"
       },
       {
-        "cve_id": "CVE-2026-11769",
+        "cve_id": "CVE-2026-11624",
         "severity": "UNKNOWN",
         "base_score": null,
-        "description": "We have released version 5.24.0 of the Grafana Operator. This patch includes a CRITICAL severity security fix for a path traversal/privilege escalation vulnerability in the Grafana Operator.\n\n\n\n### Su",
-        "published": "2026-06-13T06:16:14.380"
-      },
-      {
-        "cve_id": "CVE-2026-9061",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "The Store Locator WordPress plugin before 1.6.9 does not sanitize and escape store logo metadata before storing it and outputting it on the Store Locator WordPress plugin before 1.6.9 admin page, allo",
-        "published": "2026-06-13T07:16:14.370"
+        "description": "The Model Context Protocol has a security warning advising servers to validate the \"Origin\" header on all incoming connections to prevent DNS rebinding attacks. Prior to the v0.25.0 release, users had",
+        "published": "2026-06-13T10:16:17.700"
       }
     ]
   },
