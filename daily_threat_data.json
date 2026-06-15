@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T16:59:12.837704+00:00",
+  "generated_at": "2026-06-15T22:09:58.046006+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 27,
+        "value": 29,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
+        "value": 4,
         "score": 2.0,
         "max": 3
       },
@@ -32,9 +32,29 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1619,
-    "recent_30d_count": 27,
+    "total_catalog_count": 1621,
+    "recent_30d_count": 29,
     "recent": [
+      {
+        "cve_id": "CVE-2026-54420",
+        "vendor": "LiteSpeed",
+        "product": "cPanel Plugin",
+        "name": "LiteSpeed cPanel Plugin UNIX Symbolic Link (Symlink) Following Vulnerability",
+        "date_added": "2026-06-15",
+        "due_date": "2026-06-18",
+        "description": "LiteSpeed cPanel plugin contains a UNIX symbolic link (Symlink) following vulnerability that could allow a user with FTP or web shell access on a shared hosting server running CloudLinux/CageFS.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-20262",
+        "vendor": "Cisco",
+        "product": "Catalyst SD-WAN Manager",
+        "name": "Cisco Catalyst SD-WAN Manager Directory or Path Traversal Vulnerability",
+        "date_added": "2026-06-15",
+        "due_date": "2026-06-29",
+        "description": "Cisco Catalyst SD-WAN Manager contains a directory or path traversal vulnerability that could allow an authenticated, remote attacker to create a file or overwrite any file on the filesystem of an aff",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-35273",
         "vendor": "Oracle",
@@ -214,33 +234,13 @@
         "due_date": "2026-05-27",
         "description": "Drupal Core contains a SQL injection vulnerability that could allow for privilege escalation and remote code execution via specially crafted requests sent with the database abstraction API.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2025-34291",
-        "vendor": "Langflow",
-        "product": "Langflow",
-        "name": "Langflow Origin Validation Error Vulnerability",
-        "date_added": "2026-05-21",
-        "due_date": "2026-06-04",
-        "description": "Langflow contains an origin validation error vulnerability in which an overly permissive CORS configuration combined with a refresh token cookie configured as SameSite=None allows a malicious webpage ",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-34926",
-        "vendor": "Trend Micro",
-        "product": "Apex One",
-        "name": "Trend Micro Apex One (On-Premise) Directory Traversal Vulnerability",
-        "date_added": "2026-05-21",
-        "due_date": "2026-06-04",
-        "description": "Trend Micro Apex One (on-premise) contains a directory traversal vulnerability that could allow a pre-authenticated local attacker to modify a key table on the server to inject malicious code to deplo",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 97,
-    "critical_count": 3,
-    "high_count": 40,
+    "total": 392,
+    "critical_count": 4,
+    "high_count": 37,
     "cves": [
       {
         "cve_id": "CVE-2026-52704",
@@ -248,6 +248,13 @@
         "base_score": 10.0,
         "description": "Improper Control of Generation of Code ('Code Injection') vulnerability in Edgar Rojas WooCommerce PDF Invoice Builder allows Remote Code Inclusion.\n\nThis issue affects WooCommerce PDF Invoice Builder",
         "published": "2026-06-15T14:16:36.380"
+      },
+      {
+        "cve_id": "CVE-2026-8935",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The WP MAPS PRO WordPress plugin before 6.1.1 registers an unauthenticated AJAX action which, given a valid nonce that is publicly emitted on any frontend page enqueuing its map script, unconditionall",
+        "published": "2026-06-15T08:16:22.100"
       },
       {
         "cve_id": "CVE-2018-25436",
@@ -262,13 +269,6 @@
         "base_score": 9.8,
         "description": "Fortra's\u00a0\nCore Privileged Access Manager (BoKS)\u00a0contains an OS command injection vulnerability in the boks_autoregisterd service. A remote attacker with network access to the service may be able to ca",
         "published": "2026-06-15T16:16:35.357"
-      },
-      {
-        "cve_id": "CVE-2026-12186",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A weakness has been identified in GL.iNet GL-MT3000 up to 4.4.5. Affected is the function replace_country in the library /usr/lib/oui-httpd/rpc/tor of the component Tor Proxy Service Configuration Han",
-        "published": "2026-06-14T21:16:18.483"
       },
       {
         "cve_id": "CVE-2026-12187",
@@ -313,32 +313,11 @@
         "published": "2026-06-15T14:16:37.697"
       },
       {
-        "cve_id": "CVE-2026-54410",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "nanoMODBUS through v1.23.0 contains an off-by-one buffer overflow in the recv_msg_header() function of the Modbus/TCP server that allows remote unauthenticated attackers to write one attacker-controll",
-        "published": "2026-06-14T18:17:20.330"
-      },
-      {
         "cve_id": "CVE-2026-12057",
         "severity": "HIGH",
         "base_score": 8.6,
         "description": "When the application executes the JavaScript script embedded in the PDF within the sandbox, it fails to intercept some dangerous interfaces, which allows remote scripts to be loaded, resulting in arbi",
         "published": "2026-06-15T12:16:23.050"
-      },
-      {
-        "cve_id": "CVE-2026-54412",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "LiamBindle MQTT-C through version 1.1.6 contains a heap-based out-of-bounds read and integer underflow in the mqtt_unpack_publish_response() function in src/mqtt.c that allows a remote unauthenticated",
-        "published": "2026-06-14T18:17:20.750"
-      },
-      {
-        "cve_id": "CVE-2026-54413",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "driftregion iso14229 through 0.9.0 contains an integer underflow and downstream out-of-bounds read in the Handle_0x27_SecurityAccess() function in iso14229.c that allows a remote unauthenticated attac",
-        "published": "2026-06-14T18:17:20.943"
       },
       {
         "cve_id": "CVE-2016-20068",
@@ -381,6 +360,27 @@
         "base_score": 8.0,
         "description": "A vulnerability was detected in Yealink SIP-T46U 108.87.50.1. The affected element is the function StartReportInformation of the file /api/inner/beforewifitest of the component Web FastCGI Service. Th",
         "published": "2026-06-15T06:16:22.673"
+      },
+      {
+        "cve_id": "CVE-2026-12220",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "A vulnerability has been found in Yealink SIP-T46U 108.86.0.118. This affects the function mod_upgrade.SparePartsUpload of the file /api/upgrade/accupgradebychunk of the component Firmware Chunk Uploa",
+        "published": "2026-06-15T06:16:24.113"
+      },
+      {
+        "cve_id": "CVE-2026-12221",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "A vulnerability was found in Yealink SIP-T46U 108.86.0.118. This impacts the function sprintf of the file /api/upgrade/upgrade of the component Firmware Chunk Upload Handler. Performing a manipulation",
+        "published": "2026-06-15T06:16:24.263"
+      },
+      {
+        "cve_id": "CVE-2026-12222",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "A vulnerability was determined in Yealink SIP-T46U 108.86.0.118. Affected is the function mod_webd.BlueToothTest of the file /api/inner/bttest of the component Web FastCGI Service. Executing a manipul",
+        "published": "2026-06-15T06:16:24.413"
       }
     ]
   },
