@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-06-16T16:24:32.258824+00:00",
+  "generated_at": "2026-06-16T22:05:05.705696+00:00",
   "threat_score": {
-    "score": 4.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 7.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 29,
+        "value": 30,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 0.5,
+        "value": 13,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1621,
-    "recent_30d_count": 29,
+    "total_catalog_count": 1622,
+    "recent_30d_count": 30,
     "recent": [
+      {
+        "cve_id": "CVE-2026-48907",
+        "vendor": "Widget Factory",
+        "product": "Joomla Content Editor ",
+        "name": "Widget Factory Joomla Content Editor Improper Access Control Vulnerability",
+        "date_added": "2026-06-16",
+        "due_date": "2026-06-19",
+        "description": "Widget Factory Joomla Content Editor contains an improper access control vulnerability which could allow for upload and execution of PHP code via the creation of new editor profiles for unauthenticate",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-54420",
         "vendor": "LiteSpeed",
@@ -224,24 +234,155 @@
         "due_date": "2026-05-29",
         "description": "LiteSpeed cPanel Plugin contains privilege escalation vulnerability that is exposed via the user-end cPanel plugin, which can be abused by any cPanel user account to execute arbitrary scripts with roo",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-9082",
-        "vendor": "Drupal",
-        "product": "Core",
-        "name": "Drupal Core SQL Injection Vulnerability",
-        "date_added": "2026-05-22",
-        "due_date": "2026-05-27",
-        "description": "Drupal Core contains a SQL injection vulnerability that could allow for privilege escalation and remote code execution via specially crafted requests sent with the database abstraction API.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 0,
-    "critical_count": 0,
-    "high_count": 0,
-    "cves": []
+    "total": 230,
+    "critical_count": 13,
+    "high_count": 25,
+    "cves": [
+      {
+        "cve_id": "CVE-2026-49774",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Improper Control of Generation of Code ('Code Injection') vulnerability in Filipe Nasc RD Station allows Remote Code Inclusion.\n\nThis issue affects RD Station: from n/a through 5.6.0.",
+        "published": "2026-06-16T10:16:27.747"
+      },
+      {
+        "cve_id": "CVE-2026-40750",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Unrestricted Upload of File with Dangerous Type vulnerability in themagnifico52 Kids Online Store allows Upload a Web Shell to a Web Server.\n\nThis issue affects Kids Online Store: from n/a through 0.8",
+        "published": "2026-06-16T12:16:26.243"
+      },
+      {
+        "cve_id": "CVE-2026-39574",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Unauthenticated SQL Injection in InPost Gallery <= 2.1.4.6 versions.",
+        "published": "2026-06-16T10:16:27.223"
+      },
+      {
+        "cve_id": "CVE-2026-49772",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Liquid Web / StellarWP The Events Calendar allows Blind SQL Injection.\n\nThis issue affects The Eve",
+        "published": "2026-06-16T10:16:27.620"
+      },
+      {
+        "cve_id": "CVE-2026-52715",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Unauthenticated SQL Injection in GEO my WordPress <= 4.5.5 versions.",
+        "published": "2026-06-16T10:16:28.243"
+      },
+      {
+        "cve_id": "CVE-2026-11832",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Dancer2::Plugin::Auth::OAuth versions before 0.22 for Perl default to a predictable nonce.\n\nThe default nonce was generated using an MD5 hash of the epoch time, which is predictable.",
+        "published": "2026-06-15T22:16:15.400"
+      },
+      {
+        "cve_id": "CVE-2026-12087",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Socket versions before 2.041 for Perl have an out-of-bounds heap read.\n\nIn Socket.xs, pack_ip_mreq_source() checks the length of its source argument before the argument is read, so the check tests the",
+        "published": "2026-06-15T22:16:16.197"
+      },
+      {
+        "cve_id": "CVE-2026-48713",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Versions prior to 2.6.6 are vulnerable to prototype pollution via crafted missing-key strings when used to persist missing translation keys (e.g. via i18next-http-middleware's missingKeyHandler expose",
+        "published": "2026-06-15T22:16:17.397"
+      },
+      {
+        "cve_id": "CVE-2026-48714",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "i18next-http-middleware is a middleware to be used with Node.js web frameworks like express or Fastify and also for Deno. In versions prior to 3.9.7, the missingKeyHandler blocked the literal request-",
+        "published": "2026-06-15T22:16:17.550"
+      },
+      {
+        "cve_id": "CVE-2026-12205",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Crypt::DSA versions before 1.21 for Perl reused the nonce across signatures, leading to private-key recovery.\n\nCrypt::DSA::sign caches the per-signature nonce material in the Key object without ever c",
+        "published": "2026-06-15T23:16:43.150"
+      },
+      {
+        "cve_id": "CVE-2026-12304",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Same-origin policy bypass in the Networking: Cookies component. This vulnerability was fixed in Firefox 152, Firefox ESR 140.12, Thunderbird 152, and Thunderbird 140.12.",
+        "published": "2026-06-16T13:16:30.643"
+      },
+      {
+        "cve_id": "CVE-2026-12315",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Mitigation bypass in the DOM: Security component. This vulnerability was fixed in Firefox 152, Firefox ESR 140.12, Thunderbird 152, and Thunderbird 140.12.",
+        "published": "2026-06-16T13:16:32.147"
+      },
+      {
+        "cve_id": "CVE-2026-12316",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Mitigation bypass in the DOM: Security component. This vulnerability was fixed in Firefox 152 and Thunderbird 152.",
+        "published": "2026-06-16T13:16:32.257"
+      },
+      {
+        "cve_id": "CVE-2026-48017",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "DbGate is cross-platform database manager. In versions 7.1.8 and prior, the POST /runners/load-reader endpoint in DbGate accepts a functionName parameter that is directly interpolated into a JavaScrip",
+        "published": "2026-06-15T22:16:16.937"
+      },
+      {
+        "cve_id": "CVE-2026-12161",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Improper input validation in the SSH Elevate Shell feature in \nDevolutions Remote Desktop Manager 2026.2.7 allows an authenticated user\n with permission to create or modify a shared SSH entry to execu",
+        "published": "2026-06-16T01:16:22.950"
+      },
+      {
+        "cve_id": "CVE-2026-7273",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A stack-based buffer overflow vulnerability in the CGI program of Zyxel GS1900-48HPv2 firmware versions through\u00a02.90(ABTQ.1)C0 could allow a LAN-based, unauthenticated attacker to exploit the flaw and",
+        "published": "2026-06-16T03:16:13.557"
+      },
+      {
+        "cve_id": "CVE-2026-6933",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Premmerce Dev Tools plugin for WordPress is vulnerable to Remote Code Execution via missing authorization in versions up to and including 2.0. This is due to the 'generatePluginHandler' function l",
+        "published": "2026-06-16T06:16:58.540"
+      },
+      {
+        "cve_id": "CVE-2026-8443",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The WP Review Slider Pro plugin for WordPress is vulnerable to SQL Injection via the 'stypes' and 'slocations' parameters of the wppro_get_overall_chart_data AJAX action in versions up to, and includi",
+        "published": "2026-06-16T06:16:58.690"
+      },
+      {
+        "cve_id": "CVE-2026-8444",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The WP Review Slider Pro plugin for WordPress is vulnerable to SQL Injection via the 'curselrevs[]' parameter of the wpfb_find_reviews AJAX action in versions up to, and including, 12.6.8. This is due",
+        "published": "2026-06-16T08:16:24.100"
+      },
+      {
+        "cve_id": "CVE-2026-5416",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Due to the improper neutralization of special elements used in a name parameter a low privileged remote attacker can exploit a command injection vulnerability in the Managed Ethernet Switch, resulting",
+        "published": "2026-06-16T10:16:28.857"
+      }
+    ]
   },
   "top_ips": {
     "ips": [],
