@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16T02:50:02.685447+00:00",
+  "generated_at": "2026-06-16T09:15:40.525503+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
+        "value": 3,
         "score": 2.0,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 401,
-    "critical_count": 4,
-    "high_count": 30,
+    "total": 396,
+    "critical_count": 3,
+    "high_count": 24,
     "cves": [
       {
         "cve_id": "CVE-2026-52704",
@@ -248,13 +248,6 @@
         "base_score": 10.0,
         "description": "Improper Control of Generation of Code ('Code Injection') vulnerability in Edgar Rojas WooCommerce PDF Invoice Builder allows Remote Code Inclusion.\n\nThis issue affects WooCommerce PDF Invoice Builder",
         "published": "2026-06-15T14:16:36.380"
-      },
-      {
-        "cve_id": "CVE-2026-8935",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The WP MAPS PRO WordPress plugin before 6.1.1 registers an unauthenticated AJAX action which, given a valid nonce that is publicly emitted on any frontend page enqueuing its map script, unconditionall",
-        "published": "2026-06-15T08:16:22.100"
       },
       {
         "cve_id": "CVE-2018-25436",
@@ -341,46 +334,53 @@
         "published": "2026-06-15T14:16:30.520"
       },
       {
-        "cve_id": "CVE-2026-12218",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "A vulnerability was detected in Yealink SIP-T46U 108.87.50.1. The affected element is the function StartReportInformation of the file /api/inner/beforewifitest of the component Web FastCGI Service. Th",
-        "published": "2026-06-15T06:16:22.673"
-      },
-      {
-        "cve_id": "CVE-2026-12220",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "A vulnerability has been found in Yealink SIP-T46U 108.86.0.118. This affects the function mod_upgrade.SparePartsUpload of the file /api/upgrade/accupgradebychunk of the component Firmware Chunk Uploa",
-        "published": "2026-06-15T06:16:24.113"
-      },
-      {
-        "cve_id": "CVE-2026-12221",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "A vulnerability was found in Yealink SIP-T46U 108.86.0.118. This impacts the function sprintf of the file /api/upgrade/upgrade of the component Firmware Chunk Upload Handler. Performing a manipulation",
-        "published": "2026-06-15T06:16:24.263"
-      },
-      {
-        "cve_id": "CVE-2026-12222",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "A vulnerability was determined in Yealink SIP-T46U 108.86.0.118. Affected is the function mod_webd.BlueToothTest of the file /api/inner/bttest of the component Web FastCGI Service. Executing a manipul",
-        "published": "2026-06-15T06:16:24.413"
-      },
-      {
-        "cve_id": "CVE-2026-12214",
+        "cve_id": "CVE-2026-50100",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "A security flaw has been discovered in Qihoo 360 Total Security 6.0. This vulnerability affects the function RpcStringBindingComposeW of the component Nucleus Engine Monitoring Logic. Performing a man",
-        "published": "2026-06-15T04:16:25.957"
+        "description": "Multiple printer drivers provided by Ricoh Company, Ltd. and KONICA MINOLTA JAPAN, INC. contain a privilege escalation vulnerability. If this vulnerability is exploited, an attacker who can log in to ",
+        "published": "2026-06-15T10:16:28.847"
       },
       {
-        "cve_id": "CVE-2026-12217",
+        "cve_id": "CVE-2025-56814",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "A security vulnerability has been detected in DVDFab Virtual Drive 2.0.0.5. Impacted is an unknown function in the library dvdfabio.sys of the component Signed Kernel Driver. The manipulation leads to",
-        "published": "2026-06-15T04:16:26.350"
+        "description": "A code injection vulnerability in the wxExecute() function of OpenCPN v5.12.0 allows attackers to execute arbitrary code via embedding shell metacharacters.",
+        "published": "2026-06-15T20:16:24.587"
+      },
+      {
+        "cve_id": "CVE-2016-20076",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "WordPress Simple-Backup 2.7.11 contains multiple vulnerabilities that allow unauthenticated attackers to delete arbitrary files and download sensitive files by manipulating the delete_backup_file and ",
+        "published": "2026-06-15T14:16:30.940"
+      },
+      {
+        "cve_id": "CVE-2016-20081",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "WordPress Plugin HB Audio Gallery Lite 1.0.0 contains a path traversal vulnerability that allows unauthenticated attackers to download arbitrary files by manipulating the file_path parameter. Attacker",
+        "published": "2026-06-15T14:16:31.647"
+      },
+      {
+        "cve_id": "CVE-2018-25437",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "WordPress CherryFramework Themes 3.1.4 contains an information disclosure vulnerability that allows unauthenticated attackers to download sensitive backup files by accessing the download_backup.php en",
+        "published": "2026-06-15T14:16:32.367"
+      },
+      {
+        "cve_id": "CVE-2026-49064",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Insertion of Sensitive Information Into Sent Data vulnerability in Stiofan GetPaid allows Retrieve Embedded Sensitive Data.\n\nThis issue affects GetPaid: from n/a through 2.8.49.",
+        "published": "2026-06-15T14:16:35.847"
+      },
+      {
+        "cve_id": "CVE-2026-5079",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Impact: multer versions 1.0.0 through 2.1.1 and 3.0.0-alpha.1 are vulnerable to a Denial of Service via deeply nested field names in multipart form data. The append-field dependency parses bracket not",
+        "published": "2026-06-15T14:16:37.293"
       }
     ]
   },
