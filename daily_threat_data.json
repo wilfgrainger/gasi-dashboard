@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-17T14:52:26.329338+00:00",
+  "generated_at": "2026-06-17T18:09:25.456567+00:00",
   "threat_score": {
-    "score": 5.5,
+    "score": 4.5,
     "level": "ELEVATED",
     "level_color": "elevated",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 0,
+        "score": 0.5,
         "max": 3
       },
       {
@@ -238,151 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 728,
-    "critical_count": 1,
-    "high_count": 46,
-    "cves": [
-      {
-        "cve_id": "CVE-2026-53776",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Perry before 0.5.1166 contains a JWT validation vulnerability that allows remote attackers to bypass token expiration by exploiting the unconditional setting of validate_exp = false in the verify_deco",
-        "published": "2026-06-16T17:16:42.620"
-      },
-      {
-        "cve_id": "CVE-2024-24909",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Dell OpenManage Integration with Microsoft Windows Admin Center contains a Remote Code Execution vulnerability in the gateway plugin. A remote authenticated user could potentially exploit this vulnera",
-        "published": "2026-06-16T17:16:28.303"
-      },
-      {
-        "cve_id": "CVE-2026-44932",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Passing of unsanitized strings from DHCP replies into the wicked dhcp client before wicked 0.6.79 could be used by attackers operating a malicious DHCP server to execute code on the local machine.",
-        "published": "2026-06-16T17:16:40.953"
-      },
-      {
-        "cve_id": "CVE-2026-53843",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenClaw before 2026.5.26 contains an authorization bypass vulnerability where a surviving pairing-scoped device session can re-establish node token authority after revocation. Attackers with a paired",
-        "published": "2026-06-16T19:17:01.257"
-      },
-      {
-        "cve_id": "CVE-2026-0132",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "In Modem, there is a possible out of bounds write due to a heap buffer overflow. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed",
-        "published": "2026-06-16T20:16:24.080"
-      },
-      {
-        "cve_id": "CVE-2026-0139",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed",
-        "published": "2026-06-16T20:16:24.730"
-      },
-      {
-        "cve_id": "CVE-2026-0146",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "In mfc_core_get_dec_metadata_sei_nal of mfc_core_reg_api.c, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution with no additional execution",
-        "published": "2026-06-16T20:16:25.350"
-      },
-      {
-        "cve_id": "CVE-2026-0147",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "In __mfc_core_nal_q_get_dec_metadata_sei_nal of mfc_core_nal_q.c, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution with no additional exe",
-        "published": "2026-06-16T20:16:25.440"
-      },
-      {
-        "cve_id": "CVE-2026-0148",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "In multiple functions of VideoRtpPayloadDecoderNode.cpp, there is a possible out of bounds write due to an integer overflow. This could lead to remote code execution with no additional execution privi",
-        "published": "2026-06-16T20:16:25.530"
-      },
-      {
-        "cve_id": "CVE-2026-0149",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "In RtpSession::rtpSendRtcpPacket, there is a possible OOB write due to a heap buffer overflow. This could lead to remote code execution with no additional execution privileges needed. User interaction",
-        "published": "2026-06-16T20:16:25.620"
-      },
-      {
-        "cve_id": "CVE-2026-0151",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "In IntfGraphCreate of intfgraph.c, there is a possible out of bounds write due to an integer overflow. This could lead to remote code execution with no additional execution privileges needed. User int",
-        "published": "2026-06-16T20:16:25.793"
-      },
-      {
-        "cve_id": "CVE-2026-0154",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "In Modem, there is a possible way to trigger a modem crash during a SIP REFER request due to memory corruption. This could lead to remote code execution with no additional execution privileges needed.",
-        "published": "2026-06-16T20:16:26.063"
-      },
-      {
-        "cve_id": "CVE-2025-71261",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "An attacker with network-level access between the SUSE Virtualization \nand Rancher Manager in SUSE Harvester before 1.8.0 could interfere with the TLS handshake and abuse it \nto bypass TLS as a securi",
-        "published": "2026-06-16T17:16:30.193"
-      },
-      {
-        "cve_id": "CVE-2026-10649",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "A flaw was found in Pacemaker. An unauthenticated remote attacker can exploit an integer overflow vulnerability in the remote message decompression process. By sending a specially crafted compressed r",
-        "published": "2026-06-16T17:16:30.773"
-      },
-      {
-        "cve_id": "CVE-2026-42089",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Yeoman Environment provides an API to discover, create, and run generators, and to configure where and how a generator is resolved. Versions 2.9.0 through 6.0.0 install missing local generator package",
-        "published": "2026-06-16T17:16:40.740"
-      },
-      {
-        "cve_id": "CVE-2026-53853",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "OpenClaw before 2026.5.12 contains an argument pattern validation bypass in the exec allowlist that allows attackers to execute disallowed arguments for allowlisted executables on Linux and macOS syst",
-        "published": "2026-06-16T19:17:02.650"
-      },
-      {
-        "cve_id": "CVE-2026-48780",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Forem is open source software for building communities. Prior to commit a2ab6d4, a maliciously crafted email address could allow an attacker to bypass domain allowlist or denylist restrictions and gai",
-        "published": "2026-06-16T15:16:41.640"
-      },
-      {
-        "cve_id": "CVE-2026-53849",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "OpenClaw before 2026.5.7 contains a privilege escalation vulnerability where the allowFrom feature improperly validates Discord account identity using mutable display names instead of immutable user I",
-        "published": "2026-06-16T19:17:02.053"
-      },
-      {
-        "cve_id": "CVE-2026-53855",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "OpenClaw before 2026.4.2 contains an inline-eval bypass vulnerability allowing authenticated operators to weaken strict allowlist checks via shell positional parameters. Attackers can combine allowlis",
-        "published": "2026-06-16T19:17:02.910"
-      },
-      {
-        "cve_id": "CVE-2026-53857",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "OpenClaw before 2026.5.3 contains a policy enforcement vulnerability where Zalo contacts with mutable display metadata could match allowFrom policy entries through display name changes. Attackers with",
-        "published": "2026-06-16T19:17:03.180"
-      }
-    ]
+    "total": 0,
+    "critical_count": 0,
+    "high_count": 0,
+    "cves": []
   },
   "top_ips": {
     "ips": [],
