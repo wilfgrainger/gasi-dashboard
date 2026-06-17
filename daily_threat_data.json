@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-16T22:05:05.705696+00:00",
+  "generated_at": "2026-06-17T02:46:31.210705+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 13,
-        "score": 3.0,
+        "value": 8,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 230,
-    "critical_count": 13,
-    "high_count": 25,
+    "total": 205,
+    "critical_count": 8,
+    "high_count": 28,
     "cves": [
       {
         "cve_id": "CVE-2026-49774",
@@ -278,41 +278,6 @@
         "published": "2026-06-16T10:16:28.243"
       },
       {
-        "cve_id": "CVE-2026-11832",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Dancer2::Plugin::Auth::OAuth versions before 0.22 for Perl default to a predictable nonce.\n\nThe default nonce was generated using an MD5 hash of the epoch time, which is predictable.",
-        "published": "2026-06-15T22:16:15.400"
-      },
-      {
-        "cve_id": "CVE-2026-12087",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Socket versions before 2.041 for Perl have an out-of-bounds heap read.\n\nIn Socket.xs, pack_ip_mreq_source() checks the length of its source argument before the argument is read, so the check tests the",
-        "published": "2026-06-15T22:16:16.197"
-      },
-      {
-        "cve_id": "CVE-2026-48713",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Versions prior to 2.6.6 are vulnerable to prototype pollution via crafted missing-key strings when used to persist missing translation keys (e.g. via i18next-http-middleware's missingKeyHandler expose",
-        "published": "2026-06-15T22:16:17.397"
-      },
-      {
-        "cve_id": "CVE-2026-48714",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "i18next-http-middleware is a middleware to be used with Node.js web frameworks like express or Fastify and also for Deno. In versions prior to 3.9.7, the missingKeyHandler blocked the literal request-",
-        "published": "2026-06-15T22:16:17.550"
-      },
-      {
-        "cve_id": "CVE-2026-12205",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Crypt::DSA versions before 1.21 for Perl reused the nonce across signatures, leading to private-key recovery.\n\nCrypt::DSA::sign caches the per-signature nonce material in the Key object without ever c",
-        "published": "2026-06-15T23:16:43.150"
-      },
-      {
         "cve_id": "CVE-2026-12304",
         "severity": "CRITICAL",
         "base_score": 9.1,
@@ -332,20 +297,6 @@
         "base_score": 9.1,
         "description": "Mitigation bypass in the DOM: Security component. This vulnerability was fixed in Firefox 152 and Thunderbird 152.",
         "published": "2026-06-16T13:16:32.257"
-      },
-      {
-        "cve_id": "CVE-2026-48017",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "DbGate is cross-platform database manager. In versions 7.1.8 and prior, the POST /runners/load-reader endpoint in DbGate accepts a functionName parameter that is directly interpolated into a JavaScrip",
-        "published": "2026-06-15T22:16:16.937"
-      },
-      {
-        "cve_id": "CVE-2026-12161",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Improper input validation in the SSH Elevate Shell feature in \nDevolutions Remote Desktop Manager 2026.2.7 allows an authenticated user\n with permission to create or modify a shared SSH entry to execu",
-        "published": "2026-06-16T01:16:22.950"
       },
       {
         "cve_id": "CVE-2026-7273",
@@ -381,6 +332,55 @@
         "base_score": 8.8,
         "description": "Due to the improper neutralization of special elements used in a name parameter a low privileged remote attacker can exploit a command injection vulnerability in the Managed Ethernet Switch, resulting",
         "published": "2026-06-16T10:16:28.857"
+      },
+      {
+        "cve_id": "CVE-2026-12289",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Privilege escalation in the Graphics: WebRender component. This vulnerability was fixed in Firefox 152, Firefox ESR 140.12, Firefox ESR 115.37, Thunderbird 152, and Thunderbird 140.12.",
+        "published": "2026-06-16T13:16:29.173"
+      },
+      {
+        "cve_id": "CVE-2026-39581",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "Subscriber SQL Injection in WP Sessions Time Monitoring Full Automatic <= 1.1.4 versions.",
+        "published": "2026-06-16T10:16:27.357"
+      },
+      {
+        "cve_id": "CVE-2026-8442",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The WP Review Slider Pro plugin for WordPress is vulnerable to Arbitrary File Deletion in versions up to and including 12.6.8. This is due to missing authorization checks on the wpfb_hide_review and w",
+        "published": "2026-06-16T10:16:29.330"
+      },
+      {
+        "cve_id": "CVE-2026-12328",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Memory safety bugs present in Firefox ESR 115.36, Firefox ESR 140.11, Thunderbird ESR 140.11, Firefox 151 and Thunderbird 151. Some of these bugs showed evidence of memory corruption and we presume th",
+        "published": "2026-06-16T13:16:33.567"
+      },
+      {
+        "cve_id": "CVE-2026-47684",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "Sync-in Server is a secure, open-source platform for file storage, sharing, collaboration, and syncing. Prior to version 2.3.0, the private IP blocklist regex used in the URL download feature does not",
+        "published": "2026-06-16T15:16:41.063"
+      },
+      {
+        "cve_id": "CVE-2026-52712",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "Subscriber SQL Injection in Attendance Manager <= 0.6.2 versions.",
+        "published": "2026-06-16T10:16:27.997"
+      },
+      {
+        "cve_id": "CVE-2025-68045",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Unauthenticated Broken Access Control in WP Event SOlution <= 4.1.12 versions.",
+        "published": "2026-06-16T10:16:25.657"
       }
     ]
   },
