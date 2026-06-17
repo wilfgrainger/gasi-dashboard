@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-17T08:53:35.117585+00:00",
+  "generated_at": "2026-06-17T14:52:26.329338+00:00",
   "threat_score": {
-    "score": 6.5,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
-        "score": 2.5,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -238,79 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 191,
-    "critical_count": 8,
-    "high_count": 31,
+    "total": 728,
+    "critical_count": 1,
+    "high_count": 46,
     "cves": [
       {
-        "cve_id": "CVE-2026-49774",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Improper Control of Generation of Code ('Code Injection') vulnerability in Filipe Nasc RD Station allows Remote Code Inclusion.\n\nThis issue affects RD Station: from n/a through 5.6.0.",
-        "published": "2026-06-16T10:16:27.747"
-      },
-      {
-        "cve_id": "CVE-2026-40750",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Unrestricted Upload of File with Dangerous Type vulnerability in themagnifico52 Kids Online Store allows Upload a Web Shell to a Web Server.\n\nThis issue affects Kids Online Store: from n/a through 0.8",
-        "published": "2026-06-16T12:16:26.243"
-      },
-      {
-        "cve_id": "CVE-2026-39574",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Unauthenticated SQL Injection in InPost Gallery <= 2.1.4.6 versions.",
-        "published": "2026-06-16T10:16:27.223"
-      },
-      {
-        "cve_id": "CVE-2026-49772",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Liquid Web / StellarWP The Events Calendar allows Blind SQL Injection.\n\nThis issue affects The Eve",
-        "published": "2026-06-16T10:16:27.620"
-      },
-      {
-        "cve_id": "CVE-2026-52715",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Unauthenticated SQL Injection in GEO my WordPress <= 4.5.5 versions.",
-        "published": "2026-06-16T10:16:28.243"
-      },
-      {
-        "cve_id": "CVE-2026-12304",
+        "cve_id": "CVE-2026-53776",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Same-origin policy bypass in the Networking: Cookies component. This vulnerability was fixed in Firefox 152, Firefox ESR 140.12, Thunderbird 152, and Thunderbird 140.12.",
-        "published": "2026-06-16T13:16:30.643"
-      },
-      {
-        "cve_id": "CVE-2026-12315",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Mitigation bypass in the DOM: Security component. This vulnerability was fixed in Firefox 152, Firefox ESR 140.12, Thunderbird 152, and Thunderbird 140.12.",
-        "published": "2026-06-16T13:16:32.147"
-      },
-      {
-        "cve_id": "CVE-2026-12316",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Mitigation bypass in the DOM: Security component. This vulnerability was fixed in Firefox 152 and Thunderbird 152.",
-        "published": "2026-06-16T13:16:32.257"
-      },
-      {
-        "cve_id": "CVE-2026-5416",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Due to the improper neutralization of special elements used in a name parameter a low privileged remote attacker can exploit a command injection vulnerability in the Managed Ethernet Switch, resulting",
-        "published": "2026-06-16T10:16:28.857"
-      },
-      {
-        "cve_id": "CVE-2026-12289",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Privilege escalation in the Graphics: WebRender component. This vulnerability was fixed in Firefox 152, Firefox ESR 140.12, Firefox ESR 115.37, Thunderbird 152, and Thunderbird 140.12.",
-        "published": "2026-06-16T13:16:29.173"
+        "description": "Perry before 0.5.1166 contains a JWT validation vulnerability that allows remote attackers to bypass token expiration by exploiting the unconditional setting of validate_exp = false in the verify_deco",
+        "published": "2026-06-16T17:16:42.620"
       },
       {
         "cve_id": "CVE-2024-24909",
@@ -318,6 +255,76 @@
         "base_score": 8.8,
         "description": "Dell OpenManage Integration with Microsoft Windows Admin Center contains a Remote Code Execution vulnerability in the gateway plugin. A remote authenticated user could potentially exploit this vulnera",
         "published": "2026-06-16T17:16:28.303"
+      },
+      {
+        "cve_id": "CVE-2026-44932",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Passing of unsanitized strings from DHCP replies into the wicked dhcp client before wicked 0.6.79 could be used by attackers operating a malicious DHCP server to execute code on the local machine.",
+        "published": "2026-06-16T17:16:40.953"
+      },
+      {
+        "cve_id": "CVE-2026-53843",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "OpenClaw before 2026.5.26 contains an authorization bypass vulnerability where a surviving pairing-scoped device session can re-establish node token authority after revocation. Attackers with a paired",
+        "published": "2026-06-16T19:17:01.257"
+      },
+      {
+        "cve_id": "CVE-2026-0132",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In Modem, there is a possible out of bounds write due to a heap buffer overflow. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed",
+        "published": "2026-06-16T20:16:24.080"
+      },
+      {
+        "cve_id": "CVE-2026-0139",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution with no additional execution privileges needed. User interaction is not needed",
+        "published": "2026-06-16T20:16:24.730"
+      },
+      {
+        "cve_id": "CVE-2026-0146",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In mfc_core_get_dec_metadata_sei_nal of mfc_core_reg_api.c, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution with no additional execution",
+        "published": "2026-06-16T20:16:25.350"
+      },
+      {
+        "cve_id": "CVE-2026-0147",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In __mfc_core_nal_q_get_dec_metadata_sei_nal of mfc_core_nal_q.c, there is a possible out of bounds write due to a missing bounds check. This could lead to remote code execution with no additional exe",
+        "published": "2026-06-16T20:16:25.440"
+      },
+      {
+        "cve_id": "CVE-2026-0148",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In multiple functions of VideoRtpPayloadDecoderNode.cpp, there is a possible out of bounds write due to an integer overflow. This could lead to remote code execution with no additional execution privi",
+        "published": "2026-06-16T20:16:25.530"
+      },
+      {
+        "cve_id": "CVE-2026-0149",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In RtpSession::rtpSendRtcpPacket, there is a possible OOB write due to a heap buffer overflow. This could lead to remote code execution with no additional execution privileges needed. User interaction",
+        "published": "2026-06-16T20:16:25.620"
+      },
+      {
+        "cve_id": "CVE-2026-0151",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In IntfGraphCreate of intfgraph.c, there is a possible out of bounds write due to an integer overflow. This could lead to remote code execution with no additional execution privileges needed. User int",
+        "published": "2026-06-16T20:16:25.793"
+      },
+      {
+        "cve_id": "CVE-2026-0154",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In Modem, there is a possible way to trigger a modem crash during a SIP REFER request due to memory corruption. This could lead to remote code execution with no additional execution privileges needed.",
+        "published": "2026-06-16T20:16:26.063"
       },
       {
         "cve_id": "CVE-2025-71261",
@@ -334,11 +341,18 @@
         "published": "2026-06-16T17:16:30.773"
       },
       {
-        "cve_id": "CVE-2026-39581",
+        "cve_id": "CVE-2026-42089",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Subscriber SQL Injection in WP Sessions Time Monitoring Full Automatic <= 1.1.4 versions.",
-        "published": "2026-06-16T10:16:27.357"
+        "base_score": 8.6,
+        "description": "Yeoman Environment provides an API to discover, create, and run generators, and to configure where and how a generator is resolved. Versions 2.9.0 through 6.0.0 install missing local generator package",
+        "published": "2026-06-16T17:16:40.740"
+      },
+      {
+        "cve_id": "CVE-2026-53853",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "OpenClaw before 2026.5.12 contains an argument pattern validation bypass in the exec allowlist that allows attackers to execute disallowed arguments for allowlisted executables on Linux and macOS syst",
+        "published": "2026-06-16T19:17:02.650"
       },
       {
         "cve_id": "CVE-2026-48780",
@@ -348,39 +362,25 @@
         "published": "2026-06-16T15:16:41.640"
       },
       {
-        "cve_id": "CVE-2026-8442",
+        "cve_id": "CVE-2026-53849",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "The WP Review Slider Pro plugin for WordPress is vulnerable to Arbitrary File Deletion in versions up to and including 12.6.8. This is due to missing authorization checks on the wpfb_hide_review and w",
-        "published": "2026-06-16T10:16:29.330"
+        "description": "OpenClaw before 2026.5.7 contains a privilege escalation vulnerability where the allowFrom feature improperly validates Discord account identity using mutable display names instead of immutable user I",
+        "published": "2026-06-16T19:17:02.053"
       },
       {
-        "cve_id": "CVE-2026-12328",
+        "cve_id": "CVE-2026-53855",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Memory safety bugs present in Firefox ESR 115.36, Firefox ESR 140.11, Thunderbird ESR 140.11, Firefox 151 and Thunderbird 151. Some of these bugs showed evidence of memory corruption and we presume th",
-        "published": "2026-06-16T13:16:33.567"
+        "description": "OpenClaw before 2026.4.2 contains an inline-eval bypass vulnerability allowing authenticated operators to weaken strict allowlist checks via shell positional parameters. Attackers can combine allowlis",
+        "published": "2026-06-16T19:17:02.910"
       },
       {
-        "cve_id": "CVE-2026-24155",
+        "cve_id": "CVE-2026-53857",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "NVIDIA NeMo Framework for all platforms contains a code injection vulnerability. A successful exploit of this vulnerability might lead to code execution, escalation of privileges, information disclosu",
-        "published": "2026-06-16T17:16:39.440"
-      },
-      {
-        "cve_id": "CVE-2026-24228",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "NVIDIA NeMo Framework for Linux contains a vulnerability where an attacker may cause deserialization of untrusted data. A successful exploit of this vulnerability may lead to code execution, escalatio",
-        "published": "2026-06-16T17:16:39.590"
-      },
-      {
-        "cve_id": "CVE-2026-47684",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Sync-in Server is a secure, open-source platform for file storage, sharing, collaboration, and syncing. Prior to version 2.3.0, the private IP blocklist regex used in the URL download feature does not",
-        "published": "2026-06-16T15:16:41.063"
+        "base_score": 8.1,
+        "description": "OpenClaw before 2026.5.3 contains a policy enforcement vulnerability where Zalo contacts with mutable display metadata could match allowFrom policy entries through display name changes. Attackers with",
+        "published": "2026-06-16T19:17:03.180"
       }
     ]
   },
