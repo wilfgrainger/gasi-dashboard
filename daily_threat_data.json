@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-19T08:58:30.218783+00:00",
+  "generated_at": "2026-06-19T14:43:27.803643+00:00",
   "threat_score": {
-    "score": 7.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 4.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 12,
-        "score": 3.0,
+        "value": 0,
+        "score": 0.5,
         "max": 3
       },
       {
@@ -238,151 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 150,
-    "critical_count": 12,
-    "high_count": 18,
-    "cves": [
-      {
-        "cve_id": "CVE-2026-49257",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "mcp-pinot is a Python-based Model Context Protocol (MCP) server for interacting with Apache Pinot. In versions 3.0.1 and below, mcp-pinot defaults to running an HTTP MCP server bound to 0.0.0.0:8080 w",
-        "published": "2026-06-18T21:16:29.780"
-      },
-      {
-        "cve_id": "CVE-2026-49252",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "deepstream is a server that allows clients and backend services to sync data, send messages and make rpcs at scale. Versions prior to 10.0.5  are vulnerable to Prototype Pollution. Exploitation can le",
-        "published": "2026-06-18T21:16:29.643"
-      },
-      {
-        "cve_id": "CVE-2026-54419",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "claudiopizzillo PIAF-HMS (PBX-In-A-Flash Hotel Management System; no released versions, latest commit 389d2633441b65ced1c104212cd62be2bfca21e5) contains multiple unauthenticated SQL injection vulnerab",
-        "published": "2026-06-18T14:17:31.887"
-      },
-      {
-        "cve_id": "CVE-2026-8024",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A remote, unauthenticated attacker may exploit a deserialization of untrusted data vulnerability in ibaPDA or ibaDatCoordinator to gain full access to the affected systems.",
-        "published": "2026-06-18T14:17:35.190"
-      },
-      {
-        "cve_id": "CVE-2026-38714",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "InHand Networks IR912 V1.0.0.r20042 and IR915 V1.0.0.r20042 (including earlier versions) were discovered to contain a command injection vulnerability in the Python configuration function. This vulnera",
-        "published": "2026-06-18T17:16:30.107"
-      },
-      {
-        "cve_id": "CVE-2026-38715",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "InHand Networks IR912 V1.0.0.r20042 and IR915 V1.0.0.r20042 (including earlier versions) were discovered to contain a command injection vulnerability in the log viewing function. This vulnerability al",
-        "published": "2026-06-18T17:16:30.220"
-      },
-      {
-        "cve_id": "CVE-2026-38716",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "InHand Networks IR912 V1.0.0.r20042 and IR915 V1.0.0.r20042 (including earlier versions) were discovered to contain a command injection vulnerability in the Python application export function. This vu",
-        "published": "2026-06-18T17:16:30.320"
-      },
-      {
-        "cve_id": "CVE-2026-38717",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "InHand Networks IR912 V1.0.0.r20042 and IR915 V1.0.0.r20042 (including earlier versions) were discovered to contain a command injection vulnerability in the file upload function. The vulnerability all",
-        "published": "2026-06-18T17:16:30.420"
-      },
-      {
-        "cve_id": "CVE-2026-54103",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The U.S. Government Accountability Office (GAO) Electronic Protest Docketing System (EPDS) and Civilian Board of Contract Appeals (CBCA) Electronic Docketing System (EDS) does not authenticate passwor",
-        "published": "2026-06-18T17:16:33.387"
-      },
-      {
-        "cve_id": "CVE-2026-54390",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "JTL Shop versions 5.2.0 through 5.7.1 contains a server-side template injection vulnerability that allows unauthenticated attackers to inject malicious template syntax due to unsanitized user-supplied",
-        "published": "2026-06-18T18:16:19.943"
-      },
-      {
-        "cve_id": "CVE-2026-47846",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Bitnami Cassandra container images are affected by a retained default superuser vulnerability. When a custom administrator account is configured via the CASSANDRA_USER environment variable, the contai",
-        "published": "2026-06-18T20:16:13.630"
-      },
-      {
-        "cve_id": "CVE-2026-49454",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Relyra is a strict-by-default SAML 2.0 Service Provider library for Elixir and Phoenix. Versions 1.0.0 and 1.1.0 accept forged SAML signatures because SignatureValue was not cryptographically verified",
-        "published": "2026-06-18T21:16:29.920"
-      },
-      {
-        "cve_id": "CVE-2026-8461",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "An out-of-bounds write vulnerability in FFmpeg's libavcodec library, specifically in the MagicYUV decoder, allows denial-of-service and, in some cases, can be exploited for remote code execution.\n\n Th",
-        "published": "2026-06-18T14:17:36.660"
-      },
-      {
-        "cve_id": "CVE-2026-54104",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The U.S. Government Accountability Office (GAO) Electronic Protest Docketing System (EPDS) and Civilian Board of Contract Appeals (CBCA) Electronic Docketing System (EDS) trusts client-provided values",
-        "published": "2026-06-18T17:16:33.567"
-      },
-      {
-        "cve_id": "CVE-2026-55237",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. Versions prior to 0.6.62 have a DOM-based Cross-Site Scripting (XSS) vulnerab",
-        "published": "2026-06-18T17:16:34.900"
-      },
-      {
-        "cve_id": "CVE-2026-48716",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "nanobot is a personal AI assistant. In versions 0.1.5.post3 and prior, the WhatsApp bridge in bridge/src/whatsapp.ts constructs a filesystem path using the fileName field from an incoming WhatsApp doc",
-        "published": "2026-06-18T20:16:13.850"
-      },
-      {
-        "cve_id": "CVE-2026-56012",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in David Lingren Media LIbrary Assistant allows Blind SQL Injection.\n\nThis issue affects Media LIbrar",
-        "published": "2026-06-18T14:17:35.007"
-      },
-      {
-        "cve_id": "CVE-2026-42488",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Some shadow paging errors paths will switch the page-tables without\nupdating the currently running vCPU reference.  This causes a mismatch\nbetween the loaded page-tables and the mapcache metadata whic",
-        "published": "2026-06-18T14:17:25.410"
-      },
-      {
-        "cve_id": "CVE-2026-56020",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Webmin HTTP server (miniserv.pl) allows unauthenticated attackers to impersonate any user with a configured SSL client certificate by sending a forged HTTP header. A remote attacker can spoof cert",
-        "published": "2026-06-18T17:16:35.247"
-      },
-      {
-        "cve_id": "CVE-2026-43994",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Coturn is a free open source implementation of TURN and STUN Server. Versions prior to 4.10.0 contain a stack buffer overflow in decode_oauth_token_gcm(). A uint16_t nonce_len field read from an attac",
-        "published": "2026-06-18T21:16:28.630"
-      }
-    ]
+    "total": 0,
+    "critical_count": 0,
+    "high_count": 0,
+    "cves": []
   },
   "top_ips": {
     "ips": [],
