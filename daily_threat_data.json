@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-19T14:43:27.803643+00:00",
+  "generated_at": "2026-06-19T17:47:44.744549+00:00",
   "threat_score": {
-    "score": 4.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 7.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 0.5,
+        "value": 17,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,10 +238,151 @@
     ]
   },
   "nvd": {
-    "total": 0,
-    "critical_count": 0,
-    "high_count": 0,
-    "cves": []
+    "total": 191,
+    "critical_count": 17,
+    "high_count": 15,
+    "cves": [
+      {
+        "cve_id": "CVE-2026-49257",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "mcp-pinot is a Python-based Model Context Protocol (MCP) server for interacting with Apache Pinot. In versions 3.0.1 and below, mcp-pinot defaults to running an HTTP MCP server bound to 0.0.0.0:8080 w",
+        "published": "2026-06-18T21:16:29.780"
+      },
+      {
+        "cve_id": "CVE-2026-50242",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "In JetBrains Hub before 2026.1.13757,\n2025.3.148033,\n2025.2.148048,\n2025.1.148120,\n2024.3.148430,\n2024.2.148429 authentication bypass via direct database access leading to administrative access was po",
+        "published": "2026-06-19T13:16:36.987"
+      },
+      {
+        "cve_id": "CVE-2026-49252",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "deepstream is a server that allows clients and backend services to sync data, send messages and make rpcs at scale. Versions prior to 10.0.5  are vulnerable to Prototype Pollution. Exploitation can le",
+        "published": "2026-06-18T21:16:29.643"
+      },
+      {
+        "cve_id": "CVE-2026-47647",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Improper access control in Microsoft Dynamics 365 allows an authorized attacker to elevate privileges over a network.",
+        "published": "2026-06-18T22:16:31.747"
+      },
+      {
+        "cve_id": "CVE-2026-56142",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "In JetBrains Hub before 2026.1.13757,\n2025.3.148033,\n2025.2.148048,\n2025.1.148120,\n2024.3.148430,\n2024.2.148429 privilege escalation by attaching authentication details to accounts was possible",
+        "published": "2026-06-19T13:16:37.313"
+      },
+      {
+        "cve_id": "CVE-2026-54390",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "JTL Shop versions 5.2.0 through 5.7.1 contains a server-side template injection vulnerability that allows unauthenticated attackers to inject malicious template syntax due to unsanitized user-supplied",
+        "published": "2026-06-18T18:16:19.943"
+      },
+      {
+        "cve_id": "CVE-2026-47846",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Bitnami Cassandra container images are affected by a retained default superuser vulnerability. When a custom administrator account is configured via the CASSANDRA_USER environment variable, the contai",
+        "published": "2026-06-18T20:16:13.630"
+      },
+      {
+        "cve_id": "CVE-2026-54130",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Missing authentication for critical function in M365 Copilot allows an unauthorized attacker to disclose information over a network.",
+        "published": "2026-06-18T22:16:32.223"
+      },
+      {
+        "cve_id": "CVE-2026-40624",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Improper input validation in AVer PTC500S, PTC115, PTC500+, and PTC115+ \ncameras may allow a remote, unauthenticated attacker to achieve \narbitrary code execution via a specially crafted web request.",
+        "published": "2026-06-19T00:16:47.693"
+      },
+      {
+        "cve_id": "CVE-2026-54414",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "FileRise before 3.16.0 is vulnerable to path traversal in the shared-folder upload endpoint (/api/folder/uploadToSharedFolder.php), leading to arbitrary file write and administrator account takeover. ",
+        "published": "2026-06-19T06:17:09.830"
+      },
+      {
+        "cve_id": "CVE-2026-7515",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The BetterDocs Pro plugin for WordPress is vulnerable to Local File Inclusion in versions up to, and including, 3.8.0 via the `doc_style` parameter. This makes it possible for unauthenticated attacker",
+        "published": "2026-06-19T06:17:10.430"
+      },
+      {
+        "cve_id": "CVE-2026-56141",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "In JetBrains Hub before 2026.1.13757,\n2025.3.148033,\n2025.2.148048,\n2025.1.148120,\n2024.3.148430,\n2024.2.148429 account takeover via predictable restore codes was possible",
+        "published": "2026-06-19T13:16:37.203"
+      },
+      {
+        "cve_id": "CVE-2026-12048",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Stored cross-site scripting in pgAdmin 4's error-rendering and plan-node-rendering paths. Text returned by a PostgreSQL server (ErrorResponse messages, including object names quoted back inside relati",
+        "published": "2026-06-19T00:16:47.200"
+      },
+      {
+        "cve_id": "CVE-2026-49454",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Relyra is a strict-by-default SAML 2.0 Service Provider library for Elixir and Phoenix. Versions 1.0.0 and 1.1.0 accept forged SAML signatures because SignatureValue was not cryptographically verified",
+        "published": "2026-06-18T21:16:29.920"
+      },
+      {
+        "cve_id": "CVE-2026-8713",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The Avada (Fusion) Builder plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the maybe_delete_files function in all versions up to, and includin",
+        "published": "2026-06-19T06:17:10.917"
+      },
+      {
+        "cve_id": "CVE-2026-12045",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "Read-only transaction bypass in the pgAdmin 4 AI Assistant allows an attacker who can influence database content that the assistant reads to execute arbitrary SQL with the privileges of the pgAdmin us",
+        "published": "2026-06-19T00:16:46.703"
+      },
+      {
+        "cve_id": "CVE-2026-12046",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "Two state-mutating endpoints in pgAdmin 4's SQL Editor blueprint -- DELETE /sqleditor/close/<trans_id> and POST /sqleditor/initialize/sqleditor/update_connection/<sgid>/<sid>/<did> -- were the only ro",
+        "published": "2026-06-19T00:16:46.873"
+      },
+      {
+        "cve_id": "CVE-2026-56075",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "PraisonAI before 4.5.128 contains an arbitrary shell command execution vulnerability where the UI modules hardcode approval_mode to auto, overriding administrator configuration from PRAISON_APPROVAL_M",
+        "published": "2026-06-18T23:16:19.357"
+      },
+      {
+        "cve_id": "CVE-2026-56078",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "PraisonAI before 1.5.115 contains a path traversal vulnerability in MultiAgentMonitor that fails to sanitize agent IDs when building file paths. Attackers can include traversal sequences like ../ in a",
+        "published": "2026-06-18T23:16:19.760"
+      },
+      {
+        "cve_id": "CVE-2026-12044",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "SQL injection in pgAdmin 4 across every dialog template that renders ``COMMENT ON ... IS '<description>'`` for a user-supplied description field. The Jinja templates for Domains (and their constraints",
+        "published": "2026-06-19T00:16:46.053"
+      }
+    ]
   },
   "top_ips": {
     "ips": [],
