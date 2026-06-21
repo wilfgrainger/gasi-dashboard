@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-21T13:48:43.251382+00:00",
+  "generated_at": "2026-06-21T17:19:43.438235+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
+        "value": 3,
         "score": 2.0,
         "max": 3
       },
@@ -238,37 +238,30 @@
     ]
   },
   "nvd": {
-    "total": 54,
-    "critical_count": 4,
-    "high_count": 14,
+    "total": 66,
+    "critical_count": 3,
+    "high_count": 21,
     "cves": [
       {
-        "cve_id": "CVE-2026-5366",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Prefect version 3.6.23 is vulnerable to remote code execution due to improper handling of user-controlled input in the `GitRepository` storage class. The `commit_sha` parameter, which is passed to git",
-        "published": "2026-06-20T17:16:26.560"
-      },
-      {
-        "cve_id": "CVE-2019-25763",
+        "cve_id": "CVE-2026-56265",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "WordPress Ultimate Addons for Beaver Builder 1.2.4.1 contains an authentication bypass vulnerability that allows attackers to gain unauthorized access by exploiting the social media login form functio",
-        "published": "2026-06-20T14:16:17.783"
+        "description": "Crawl4AI before 0.8.7 contains an authentication bypass vulnerability due to a hardcoded default JWT signing key in the Docker API server. Attackers who know the default key can forge valid authentica",
+        "published": "2026-06-21T14:16:24.980"
       },
       {
-        "cve_id": "CVE-2022-50972",
+        "cve_id": "CVE-2026-56395",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "WooCommerce 7.1.0 contains a remote code execution vulnerability that allows attackers to execute arbitrary PHP code by injecting shell commands through the product-type parameter. Attackers can send ",
-        "published": "2026-06-20T14:16:18.960"
+        "base_score": 9.6,
+        "description": "SiYuan before v3.6.1 fails to sanitize package metadata and README content in the Bazaar marketplace, allowing malicious package authors to inject arbitrary HTML and JavaScript. Attackers can achieve ",
+        "published": "2026-06-21T14:16:26.530"
       },
       {
-        "cve_id": "CVE-2024-58351",
+        "cve_id": "CVE-2026-56397",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Flowise before 2.1.4 allows configuration to be injected into the Chainflow during execution via the overrideConfig option, supported in both the frontend web integration and the backend Prediction AP",
-        "published": "2026-06-20T16:17:03.973"
+        "base_score": 9.6,
+        "description": "SiYuan before v3.6.1 fails to sanitize package metadata and README content in the Bazaar marketplace, allowing malicious package authors to inject arbitrary HTML and JavaScript. Attackers can achieve ",
+        "published": "2026-06-21T14:16:26.783"
       },
       {
         "cve_id": "CVE-2026-56340",
@@ -278,11 +271,39 @@
         "published": "2026-06-20T19:16:23.567"
       },
       {
+        "cve_id": "CVE-2026-56396",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "phpMyFAQ before 4.1.4 contains missing authorization vulnerabilities in editUser() and updateUserRights() endpoints that allow authenticated administrators to escalate privileges. Non-SuperAdmin users",
+        "published": "2026-06-21T14:16:26.660"
+      },
+      {
         "cve_id": "CVE-2026-56345",
         "severity": "HIGH",
         "base_score": 8.1,
         "description": "AVideo through 29.0 contains an authorization bypass vulnerability in the Meet plugin's uploadRecordedVideo.json.php endpoint that derives the target users_id from the uploaded filename without verifi",
         "published": "2026-06-20T19:16:23.983"
+      },
+      {
+        "cve_id": "CVE-2025-71348",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "picklescan before 0.0.28 fails to detect malicious pickle files that invoke torch.utils._config_module.load_config function within reduce methods. Attackers can craft pickle files embedding arbitrary ",
+        "published": "2026-06-21T14:16:22.750"
+      },
+      {
+        "cve_id": "CVE-2025-71357",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "picklescan before 0.0.30 fails to detect malicious pickle files using idlelib.pyshell.ModifiedInterpreter.runcommand in reduce methods. Attackers can embed undetected code in pickle files that execute",
+        "published": "2026-06-21T14:16:23.017"
+      },
+      {
+        "cve_id": "CVE-2025-71378",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "picklescan before 0.0.30 fails to detect cProfile.runctx function calls in pickle file reduce methods, allowing attackers to execute arbitrary code. Malicious pickle files bypass picklescan detection ",
+        "published": "2026-06-21T14:16:23.140"
       },
       {
         "cve_id": "CVE-2026-12778",
@@ -334,11 +355,11 @@
         "published": "2026-06-21T09:16:25.130"
       },
       {
-        "cve_id": "CVE-2020-37255",
+        "cve_id": "CVE-2026-56239",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "WordPress Time Capsule Plugin 1.21.16 contains an authentication bypass vulnerability that allows unauthenticated attackers to gain administrative access by sending a crafted POST request with the IWP",
-        "published": "2026-06-20T14:16:18.790"
+        "base_score": 7.6,
+        "description": "Capgo before 12.128.2 contains a potential privilege escalation vulnerability in the public.apply_usage_overage SECURITY DEFINER function, which performs sensitive billing operations without enforcing",
+        "published": "2026-06-21T14:16:24.457"
       },
       {
         "cve_id": "CVE-2026-56341",
@@ -348,39 +369,18 @@
         "published": "2026-06-20T19:16:23.700"
       },
       {
-        "cve_id": "CVE-2026-12773",
+        "cve_id": "CVE-2026-56242",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A weakness has been identified in BerriAI litellm up to 1.59.8. Affected is the function UserAPIKeyAuth of the file litellm/proxy/_experimental/mcp_server/auth/user_api_key_auth_mcp.py of the componen",
-        "published": "2026-06-21T04:16:28.230"
+        "base_score": 7.5,
+        "description": "Capgo before 12.128.2 contains an unauthenticated security definer RPC function get_identity_apikey_only that returns the owning user_id for supplied API keys, creating an API key validity oracle and ",
+        "published": "2026-06-21T14:16:24.583"
       },
       {
-        "cve_id": "CVE-2026-12775",
+        "cve_id": "CVE-2026-56253",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was detected in Montodel House-Rental-Management up to 90010017b81265eb1ef3810268909f7719a33863. Affected by this issue is some unknown functionality of the file /login.php. The manipu",
-        "published": "2026-06-21T06:16:21.930"
-      },
-      {
-        "cve_id": "CVE-2026-12795",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was determined in BerriAI litellm up to 1.82.2. This affects the function json.dumps of the file litellm/proxy/management_endpoints/ui_sso.py of the component SSO Debug Flow. Executing",
-        "published": "2026-06-21T09:16:25.887"
-      },
-      {
-        "cve_id": "CVE-2026-56342",
-        "severity": "MEDIUM",
-        "base_score": 6.8,
-        "description": "AVideo through version 27.0 contains a server-side request forgery vulnerability in plugin/Live/test.php that allows authenticated administrators to read arbitrary URLs via the statsURL parameter, whi",
-        "published": "2026-06-20T19:16:23.850"
-      },
-      {
-        "cve_id": "CVE-2026-56304",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "picklescan before 1.0.1 contains an unsafe pickle deserialization vulnerability allowing unauthenticated attackers to create arbitrary zero-byte files via logging.FileHandler class instantiation. Atta",
-        "published": "2026-06-20T16:17:05.463"
+        "base_score": 7.5,
+        "description": "Capgo before 12.128.2 contains an improper access control vulnerability in the public.get_org_members RPC function that allows unauthenticated attackers to enumerate organization members. Attackers ca",
+        "published": "2026-06-21T14:16:24.850"
       }
     ]
   },
