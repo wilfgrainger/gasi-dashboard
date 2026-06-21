@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-21T17:19:43.438235+00:00",
+  "generated_at": "2026-06-21T21:04:41.000020+00:00",
   "threat_score": {
-    "score": 6.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 4.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
-        "score": 2.0,
+        "value": 0,
+        "score": 0.5,
         "max": 3
       },
       {
@@ -238,151 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 66,
-    "critical_count": 3,
-    "high_count": 21,
-    "cves": [
-      {
-        "cve_id": "CVE-2026-56265",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Crawl4AI before 0.8.7 contains an authentication bypass vulnerability due to a hardcoded default JWT signing key in the Docker API server. Attackers who know the default key can forge valid authentica",
-        "published": "2026-06-21T14:16:24.980"
-      },
-      {
-        "cve_id": "CVE-2026-56395",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "SiYuan before v3.6.1 fails to sanitize package metadata and README content in the Bazaar marketplace, allowing malicious package authors to inject arbitrary HTML and JavaScript. Attackers can achieve ",
-        "published": "2026-06-21T14:16:26.530"
-      },
-      {
-        "cve_id": "CVE-2026-56397",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "SiYuan before v3.6.1 fails to sanitize package metadata and README content in the Bazaar marketplace, allowing malicious package authors to inject arbitrary HTML and JavaScript. Attackers can achieve ",
-        "published": "2026-06-21T14:16:26.783"
-      },
-      {
-        "cve_id": "CVE-2026-56340",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "vLLM versions >= 0.10.2 and < 0.13.0 are missing sparse tensor validation in multimodal embeddings processing. Because PyTorch disables sparse tensor invariant checks by default, an attacker can submi",
-        "published": "2026-06-20T19:16:23.567"
-      },
-      {
-        "cve_id": "CVE-2026-56396",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "phpMyFAQ before 4.1.4 contains missing authorization vulnerabilities in editUser() and updateUserRights() endpoints that allow authenticated administrators to escalate privileges. Non-SuperAdmin users",
-        "published": "2026-06-21T14:16:26.660"
-      },
-      {
-        "cve_id": "CVE-2026-56345",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "AVideo through 29.0 contains an authorization bypass vulnerability in the Meet plugin's uploadRecordedVideo.json.php endpoint that derives the target users_id from the uploaded filename without verifi",
-        "published": "2026-06-20T19:16:23.983"
-      },
-      {
-        "cve_id": "CVE-2025-71348",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "picklescan before 0.0.28 fails to detect malicious pickle files that invoke torch.utils._config_module.load_config function within reduce methods. Attackers can craft pickle files embedding arbitrary ",
-        "published": "2026-06-21T14:16:22.750"
-      },
-      {
-        "cve_id": "CVE-2025-71357",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "picklescan before 0.0.30 fails to detect malicious pickle files using idlelib.pyshell.ModifiedInterpreter.runcommand in reduce methods. Attackers can embed undetected code in pickle files that execute",
-        "published": "2026-06-21T14:16:23.017"
-      },
-      {
-        "cve_id": "CVE-2025-71378",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "picklescan before 0.0.30 fails to detect cProfile.runctx function calls in pickle file reduce methods, allowing attackers to execute arbitrary code. Malicious pickle files bypass picklescan detection ",
-        "published": "2026-06-21T14:16:23.140"
-      },
-      {
-        "cve_id": "CVE-2026-12778",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A vulnerability has been found in AOMEI Partition Assistant up to 10.10.1. This vulnerability affects unknown code in the library ampa10.sys of the component Kernel Driver. Such manipulation leads to ",
-        "published": "2026-06-21T06:16:22.637"
-      },
-      {
-        "cve_id": "CVE-2026-12779",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A vulnerability was found in AOMEI Dynamic Disk Manager up to 10.10.1. This issue affects some unknown processing in the library ddmdrv.sys of the component Kernel Driver. Performing a manipulation re",
-        "published": "2026-06-21T06:16:22.807"
-      },
-      {
-        "cve_id": "CVE-2026-12780",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A vulnerability was determined in AOMEI Backupper up to 8.3.0. Impacted is an unknown function in the library amwrtdrv.sys of the component Kernel Driver. Executing a manipulation can lead to improper",
-        "published": "2026-06-21T06:16:22.957"
-      },
-      {
-        "cve_id": "CVE-2026-12781",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A vulnerability was identified in EaseUS Partition Master up to 14.5. The affected element is an unknown function in the library epmntdrv.sys of the component Kernel Driver. The manipulation leads to ",
-        "published": "2026-06-21T08:16:21.907"
-      },
-      {
-        "cve_id": "CVE-2026-12782",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A security flaw has been discovered in EaseUS Partition Master up to 14.5. The impacted element is an unknown function in the library EUEDKEPM.sys of the component Kernel Driver. The manipulation resu",
-        "published": "2026-06-21T08:16:23.280"
-      },
-      {
-        "cve_id": "CVE-2026-12784",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A weakness has been identified in IM-Magic Partition Resizer up to 7.9.0. This affects an unknown function in the library MDA_NTDRV.sys of the component Kernel Driver. This manipulation causes imprope",
-        "published": "2026-06-21T08:16:23.443"
-      },
-      {
-        "cve_id": "CVE-2026-12786",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A vulnerability has been found in Ezbsystems UltraISO Premium Edition up to 9.76. Affected by this issue is some unknown functionality in the library bootpt64.sys of the component Kernel Driver. The m",
-        "published": "2026-06-21T09:16:25.130"
-      },
-      {
-        "cve_id": "CVE-2026-56239",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "Capgo before 12.128.2 contains a potential privilege escalation vulnerability in the public.apply_usage_overage SECURITY DEFINER function, which performs sensitive billing operations without enforcing",
-        "published": "2026-06-21T14:16:24.457"
-      },
-      {
-        "cve_id": "CVE-2026-56341",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "AVideo through version 26.0 contains multiple unauthenticated list.json.php endpoints in payment plugins lacking authorization checks, exposing PayPal tokens, Authorize.Net webhooks, and Bitcoin trans",
-        "published": "2026-06-20T19:16:23.700"
-      },
-      {
-        "cve_id": "CVE-2026-56242",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Capgo before 12.128.2 contains an unauthenticated security definer RPC function get_identity_apikey_only that returns the owning user_id for supplied API keys, creating an API key validity oracle and ",
-        "published": "2026-06-21T14:16:24.583"
-      },
-      {
-        "cve_id": "CVE-2026-56253",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Capgo before 12.128.2 contains an improper access control vulnerability in the public.get_org_members RPC function that allows unauthenticated attackers to enumerate organization members. Attackers ca",
-        "published": "2026-06-21T14:16:24.850"
-      }
-    ]
+    "total": 0,
+    "critical_count": 0,
+    "high_count": 0,
+    "cves": []
   },
   "top_ips": {
     "ips": [],
