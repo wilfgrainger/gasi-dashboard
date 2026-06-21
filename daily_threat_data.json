@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-06-20T21:04:23.556330+00:00",
+  "generated_at": "2026-06-21T02:46:46.558457+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 22,
+        "value": 21,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 10,
-        "score": 3.0,
+        "value": 4,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1623,
-    "recent_30d_count": 22,
+    "recent_30d_count": 21,
     "recent": [
       {
         "cve_id": "CVE-2026-20253",
@@ -238,37 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 63,
-    "critical_count": 10,
-    "high_count": 16,
+    "total": 39,
+    "critical_count": 4,
+    "high_count": 6,
     "cves": [
-      {
-        "cve_id": "CVE-2026-45480",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Improper authentication in Azure Active Directory allows an unauthorized attacker to elevate privileges over a network.",
-        "published": "2026-06-19T21:16:51.970"
-      },
-      {
-        "cve_id": "CVE-2026-48584",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Execution with unnecessary privileges in Azure Synapse allows an authorized attacker to elevate privileges over a network.",
-        "published": "2026-06-19T21:17:01.060"
-      },
       {
         "cve_id": "CVE-2026-5366",
         "severity": "CRITICAL",
         "base_score": 9.9,
         "description": "Prefect version 3.6.23 is vulnerable to remote code execution due to improper handling of user-controlled input in the `GitRepository` storage class. The `commit_sha` parameter, which is passed to git",
         "published": "2026-06-20T17:16:26.560"
-      },
-      {
-        "cve_id": "CVE-2026-11551",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Branda plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 3.4.29. This is due to the plugin not properly validating a user's iden",
-        "published": "2026-06-20T00:16:15.580"
       },
       {
         "cve_id": "CVE-2019-25763",
@@ -292,67 +271,11 @@
         "published": "2026-06-20T16:17:03.973"
       },
       {
-        "cve_id": "CVE-2026-48582",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Missing authorization in Microsoft Exchange Online allows an authorized attacker to elevate privileges over a network.",
-        "published": "2026-06-19T21:17:00.787"
-      },
-      {
-        "cve_id": "CVE-2026-56073",
-        "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "Cap-go before 12.128.2 contains an authentication bypass vulnerability in OTP verification that allows attackers to bypass email verification by modifying server responses. Attackers can intercept OTP",
-        "published": "2026-06-19T22:16:17.623"
-      },
-      {
-        "cve_id": "CVE-2026-56081",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Cap-go before 12.128.2 contains an authentication logic flaw that lets an attacker register and control an account bound to a victim's email address before that email is verified. By enabling two-fact",
-        "published": "2026-06-19T22:16:18.017"
-      },
-      {
-        "cve_id": "CVE-2026-32208",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Improper neutralization of input during web page generation ('cross-site scripting') in Microsoft Edge (Chromium-based) allows an authorized attacker to perform spoofing over a network.",
-        "published": "2026-06-19T21:16:41.883"
-      },
-      {
-        "cve_id": "CVE-2026-47645",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Url redirection to untrusted site ('open redirect') in Microsoft 365 Copilot's Business Chat allows an unauthorized attacker to elevate privileges over a network.",
-        "published": "2026-06-19T21:16:58.720"
-      },
-      {
-        "cve_id": "CVE-2026-56216",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Capgo before 12.128.2 contains a scope escalation vulnerability in the POST /functions/v1/apikey endpoint that allows app-limited API keys to mint unrestricted keys by setting empty limits. Attackers ",
-        "published": "2026-06-20T01:16:16.970"
-      },
-      {
         "cve_id": "CVE-2026-56340",
         "severity": "HIGH",
         "base_score": 8.8,
         "description": "vLLM versions >= 0.10.2 and < 0.13.0 are missing sparse tensor validation in multimodal embeddings processing. Because PyTorch disables sparse tensor invariant checks by default, an attacker can submi",
         "published": "2026-06-20T19:16:23.567"
-      },
-      {
-        "cve_id": "CVE-2026-56215",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Capgo before 12.128.12 allows authenticated users to modify their mutable public.users.email to arbitrary addresses, which the SSO provisioning endpoint trusts as an account-merge key. Attackers can p",
-        "published": "2026-06-20T01:16:16.840"
-      },
-      {
-        "cve_id": "CVE-2026-9843",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Database for Contact Form 7, WPforms, Elementor forms plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the view_page function in all versio",
-        "published": "2026-06-20T02:16:26.910"
       },
       {
         "cve_id": "CVE-2026-56345",
@@ -362,25 +285,102 @@
         "published": "2026-06-20T19:16:23.983"
       },
       {
-        "cve_id": "CVE-2026-50559",
+        "cve_id": "CVE-2026-11911",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Quarkus is a Java framework for building cloud-native applications. Prior to versions 3.37.0, 3.36.3, 3.33.2.1, 3.33.3, 3.27.4.1, 3.27.5, and 3.20.6.2, Quarkus HTTP path-based authorization policies c",
-        "published": "2026-06-19T21:17:02.373"
+        "description": "The Simple File List plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the eeSFL_DeleteFile function in all versions up to, and including, 6.3.7",
+        "published": "2026-06-20T09:16:13.910"
       },
       {
-        "cve_id": "CVE-2026-56082",
+        "cve_id": "CVE-2026-11912",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Capgo (Cap-go/capgo) before 12.128.2 contains an improper access control vulnerability in the SECURITY DEFINER PostgREST RPC function public.record_build_time, which is granted to the anon role and ca",
-        "published": "2026-06-19T22:16:18.143"
+        "description": "The Simple File List plugin for WordPress is vulnerable to arbitrary file modification due to insufficient authorization checks in all versions up to, and including, 6.3.7. This makes it possible for ",
+        "published": "2026-06-20T09:16:15.460"
       },
       {
-        "cve_id": "CVE-2026-56214",
+        "cve_id": "CVE-2020-37255",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Capgo before 12.128.2 contains an information disclosure vulnerability in Supabase PostgREST RPC endpoints is_trial_org and is_paying_org that allows unauthenticated attackers to enumerate organizatio",
-        "published": "2026-06-20T01:16:16.710"
+        "description": "WordPress Time Capsule Plugin 1.21.16 contains an authentication bypass vulnerability that allows unauthenticated attackers to gain administrative access by sending a crafted POST request with the IWP",
+        "published": "2026-06-20T14:16:18.790"
+      },
+      {
+        "cve_id": "CVE-2026-56341",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "AVideo through version 26.0 contains multiple unauthenticated list.json.php endpoints in payment plugins lacking authorization checks, exposing PayPal tokens, Authorize.Net webhooks, and Bitcoin trans",
+        "published": "2026-06-20T19:16:23.700"
+      },
+      {
+        "cve_id": "CVE-2026-56342",
+        "severity": "MEDIUM",
+        "base_score": 6.8,
+        "description": "AVideo through version 27.0 contains a server-side request forgery vulnerability in plugin/Live/test.php that allows authenticated administrators to read arbitrary URLs via the statsURL parameter, whi",
+        "published": "2026-06-20T19:16:23.850"
+      },
+      {
+        "cve_id": "CVE-2026-12119",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "The Simple File List plugin for WordPress is vulnerable to unauthorized file operations due to a missing authorization check on the 'frontmanage' shortcode attribute in all versions up to, and includi",
+        "published": "2026-06-20T09:16:15.593"
+      },
+      {
+        "cve_id": "CVE-2026-56304",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "picklescan before 1.0.1 contains an unsafe pickle deserialization vulnerability allowing unauthenticated attackers to create arbitrary zero-byte files via logging.FileHandler class instantiation. Atta",
+        "published": "2026-06-20T16:17:05.463"
+      },
+      {
+        "cve_id": "CVE-2026-56346",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "AVideo through version 25.0 contains an authentication bypass vulnerability in the decryptMessage.json.php endpoint that allows unauthenticated users to decrypt PGP messages. Remote attackers can subm",
+        "published": "2026-06-20T19:16:24.127"
+      },
+      {
+        "cve_id": "CVE-2026-56295",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "Capgo before 12.128.2 contains an authorization bypass vulnerability in webhook management endpoints that allows non-expiring API keys to bypass the require_apikey_expiration organization policy. The ",
+        "published": "2026-06-20T16:17:05.330"
+      },
+      {
+        "cve_id": "CVE-2025-71331",
+        "severity": "MEDIUM",
+        "base_score": 6.1,
+        "description": "Flowise before 3.0.8 contains a cross-site scripting (XSS) vulnerability caused by insufficient input filtering in chat messages and custom agent functions. An attacker can inject malicious JavaScript",
+        "published": "2026-06-20T16:17:04.137"
+      },
+      {
+        "cve_id": "CVE-2026-56347",
+        "severity": "MEDIUM",
+        "base_score": 6.1,
+        "description": "AVideo TopMenu plugin through version 26.0 contains a stored cross-site scripting vulnerability in menu item rendering due to missing output encoding of icon classes, URLs, and text labels. Attackers ",
+        "published": "2026-06-20T19:16:24.267"
+      },
+      {
+        "cve_id": "CVE-2026-56227",
+        "severity": "MEDIUM",
+        "base_score": 5.4,
+        "description": "Capgo before 12.128.2 contains a server-side request forgery vulnerability in webhook URL validation that allows loopback and internal addresses. Organization admins can configure webhooks pointing to",
+        "published": "2026-06-20T16:17:04.417"
+      },
+      {
+        "cve_id": "CVE-2026-12770",
+        "severity": "MEDIUM",
+        "base_score": 5.4,
+        "description": "A vulnerability was determined in BerriAI litellm up to 1.63.1. The impacted element is an unknown function of the file litellm/proxy/management_endpoints/key_management_endpoints.py of the component ",
+        "published": "2026-06-21T01:16:22.847"
+      },
+      {
+        "cve_id": "CVE-2026-56218",
+        "severity": "MEDIUM",
+        "base_score": 5.3,
+        "description": "Capgo before 12.128.2 fails to strip EXIF metadata including GPS geolocation data from uploaded images, allowing information disclosure. Attackers can download uploaded images and extract precise lati",
+        "published": "2026-06-20T16:17:04.287"
       }
     ]
   },
