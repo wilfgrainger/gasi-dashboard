@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-22T16:28:50.000450+00:00",
+  "generated_at": "2026-06-22T21:55:28.305222+00:00",
   "threat_score": {
-    "score": 4.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 0.5,
+        "value": 4,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,10 +238,151 @@
     ]
   },
   "nvd": {
-    "total": 0,
-    "critical_count": 0,
-    "high_count": 0,
-    "cves": []
+    "total": 181,
+    "critical_count": 4,
+    "high_count": 19,
+    "cves": [
+      {
+        "cve_id": "CVE-2026-10561",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "IBM Langflow OSS 1.0.0 through 1.9.3 has an vulnerability due to an improper isolation of Python execution combined with an authentication bypass that allows an unauthenticated attacker to execute arb",
+        "published": "2026-06-22T14:16:25.023"
+      },
+      {
+        "cve_id": "CVE-2026-7664",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "IBM Langflow OSS 1.0.0 through 1.8.4 could allow unauthenticated attackers to access protected MCP project resources and execute MCP operations due to improper authorization enforcement in the Streama",
+        "published": "2026-06-22T16:16:41.880"
+      },
+      {
+        "cve_id": "CVE-2026-28381",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "The Snowflake datasource allows for GET/PUT commands, which can allow any user with access to run queries against the data source to read/write files between the local grafana server and the connected",
+        "published": "2026-06-22T14:16:35.820"
+      },
+      {
+        "cve_id": "CVE-2026-11373",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Net::Statsite::Client versions through 1.1.0 for Perl allow metric injections.\n\nNet::Statsite::Client is a client for the statsite protocol, which is a variant of statsd.\n\nNewlines are not removed fro",
+        "published": "2026-06-22T12:16:24.243"
+      },
+      {
+        "cve_id": "CVE-2026-8157",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Vitepos  WordPress plugin before 3.4.2 does not properly restrict the roles that can be assigned when creating new users via one of its REST API endpoints, allowing authenticated users with a cust",
+        "published": "2026-06-22T06:16:29.000"
+      },
+      {
+        "cve_id": "CVE-2026-54099",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A flaw was found in the Windows Machine Config Operator (WMCO) for Red Hat OpenShift Container Platform. The WICD CSR auto-approver validates that a Certificate Signing Request contains the organizati",
+        "published": "2026-06-22T14:17:40.820"
+      },
+      {
+        "cve_id": "CVE-2026-54100",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "A flaw was found in the Windows Machine Config Operator (WMCO) for Red Hat OpenShift Container Platform. WMCO establishes SSH connections to Windows worker nodes without verifying the remote server ho",
+        "published": "2026-06-22T14:17:40.950"
+      },
+      {
+        "cve_id": "CVE-2025-66336",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Apache Doris MCP Server contains a SQL injection vulnerability in a metadata query path. A user-controlled database name is directly interpolated into a SQL query, and the query is executed without pa",
+        "published": "2026-06-22T08:16:36.390"
+      },
+      {
+        "cve_id": "CVE-2023-45796",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "A stored cross-site scripting vulnerability in the Runtime component of Pilz PASvisu before 1.14.1 and PMI v8xx up to and including 2.0.33992 allows a low-privileged remote unauthenticated attacker to",
+        "published": "2026-06-22T10:16:17.513"
+      },
+      {
+        "cve_id": "CVE-2026-12628",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "IBM Storage Protect Client 8.1.0.0 through 8.2.1.0 and IBM Storage Protect Snapshot For Windows 8.1.0.0 through 8.2.1.0 could allow a remote attacker to bypass authentication due to the use of a hardc",
+        "published": "2026-06-22T16:16:34.230"
+      },
+      {
+        "cve_id": "CVE-2026-41045",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "A time-to-check-time-of-use in polkit authentication of qSnapper before version 1.3.3 allowed a local attacker to bypass qSnappers authentication mechanism and operate e.g. as root user.",
+        "published": "2026-06-22T16:16:34.873"
+      },
+      {
+        "cve_id": "CVE-2023-45795",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "A cross-site scripting vulnerability in the Builder Component of Pilz PASvisu before 1.14.1 allows a local unauthenticated attacker to inject malicious javascript and gain full control over the device",
+        "published": "2026-06-22T10:16:16.470"
+      },
+      {
+        "cve_id": "CVE-2026-42129",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "The Loki datasource plugin's callResource handler contains a path traversal vulnerability. An authenticated Viewer-role user can escape the plugin's resource sandbox and access administrative Loki end",
+        "published": "2026-06-22T14:17:36.340"
+      },
+      {
+        "cve_id": "CVE-2026-12581",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "EasyFlow .NET developed by Digiwin has a Session Fixation vulnerability. If unauthenticated remote attackers replace a specific session ID for a user, they can gain the user's privilege once the user ",
+        "published": "2026-06-22T10:16:18.260"
+      },
+      {
+        "cve_id": "CVE-2025-66389",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "GitHub Copilot 1.372.0 allows filesystem access outside of a workspace folder (without user approval) via a file-handler URI parameter to fetch_webpage. Therefore, exfiltration could occur if there is",
+        "published": "2026-06-22T14:16:24.073"
+      },
+      {
+        "cve_id": "CVE-2026-8858",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "IBM i 7.6, 7.5, 7.4, and 7.3, IBM WebSphere Application Server and IBM WebSphere Application Server Liberty are vulnerable to remote code execution and denial of service in the WebSphere Web Server Pl",
+        "published": "2026-06-22T16:16:42.967"
+      },
+      {
+        "cve_id": "CVE-2026-56104",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "Chainlit before 2.10.1 contains a session hijacking vulnerability that allows unauthenticated attackers to restore and inherit authenticated user sessions by presenting a valid sessionId during WebSoc",
+        "published": "2026-06-22T16:16:40.227"
+      },
+      {
+        "cve_id": "CVE-2026-8646",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "IBM WebSphere Application Server 9.0 and 8.5 and IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.6 are vulnerable to HTTP request smuggling. A remote attacker could smuggle a specia",
+        "published": "2026-06-22T16:16:42.360"
+      },
+      {
+        "cve_id": "CVE-2026-9029",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "The geomap panel's XYZ tile layer has a sanitize-then-interpolate ordering bug. sanitizeTextPanelContent() runs on the raw template string before getTemplateSrv().replace() substitutes the variable va",
+        "published": "2026-06-22T14:17:55.800"
+      },
+      {
+        "cve_id": "CVE-2026-10845",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "IBM WebSphere Application Server 8.5 and 9.0\u00a0could allow a remote attacker to bypass authentication and gain unauthorized access to JAX-WS applications.",
+        "published": "2026-06-22T16:16:32.690"
+      }
+    ]
   },
   "top_ips": {
     "ips": [],
