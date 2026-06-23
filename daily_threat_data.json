@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-22T21:55:28.305222+00:00",
+  "generated_at": "2026-06-23T02:15:11.095020+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 6,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 181,
-    "critical_count": 4,
-    "high_count": 19,
+    "total": 222,
+    "critical_count": 6,
+    "high_count": 23,
     "cves": [
       {
         "cve_id": "CVE-2026-10561",
@@ -264,11 +264,25 @@
         "published": "2026-06-22T14:16:35.820"
       },
       {
+        "cve_id": "CVE-2026-10789",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "A maliciously crafted webpage, when visited by a user with Autodesk Fusion Desktop running and the MCP extension enabled, can trigger a vulnerability in the MCP extension that could allow arbitrary co",
+        "published": "2026-06-22T18:16:30.620"
+      },
+      {
         "cve_id": "CVE-2026-11373",
         "severity": "CRITICAL",
         "base_score": 9.1,
         "description": "Net::Statsite::Client versions through 1.1.0 for Perl allow metric injections.\n\nNet::Statsite::Client is a client for the statsite protocol, which is a variant of statsd.\n\nNewlines are not removed fro",
         "published": "2026-06-22T12:16:24.243"
+      },
+      {
+        "cve_id": "CVE-2026-12249",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "An issue was discovered in Canonical ADSys upstream versions through v0.16.2. During Active Directory Certificate Services (AD CS) certificate auto-enrollment via the vendored Samba client script (int",
+        "published": "2026-06-22T18:16:31.917"
       },
       {
         "cve_id": "CVE-2026-8157",
@@ -320,6 +334,13 @@
         "published": "2026-06-22T16:16:34.873"
       },
       {
+        "cve_id": "CVE-2026-9072",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "IBM i 7.6, 7.5, 7.4, and 7.3, IBM WebSphere Application Server, and IBM WebSphere Application Server Liberty - when using Intelligent Management with the WebSphere WebServer Plug-in component - are vu",
+        "published": "2026-06-22T16:16:43.500"
+      },
+      {
         "cve_id": "CVE-2023-45795",
         "severity": "HIGH",
         "base_score": 7.8,
@@ -355,32 +376,11 @@
         "published": "2026-06-22T16:16:42.967"
       },
       {
-        "cve_id": "CVE-2026-56104",
+        "cve_id": "CVE-2026-9071",
         "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "Chainlit before 2.10.1 contains a session hijacking vulnerability that allows unauthenticated attackers to restore and inherit authenticated user sessions by presenting a valid sessionId during WebSoc",
-        "published": "2026-06-22T16:16:40.227"
-      },
-      {
-        "cve_id": "CVE-2026-8646",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "IBM WebSphere Application Server 9.0 and 8.5 and IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.6 are vulnerable to HTTP request smuggling. A remote attacker could smuggle a specia",
-        "published": "2026-06-22T16:16:42.360"
-      },
-      {
-        "cve_id": "CVE-2026-9029",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "The geomap panel's XYZ tile layer has a sanitize-then-interpolate ordering bug. sanitizeTextPanelContent() runs on the raw template string before getTemplateSrv().replace() substitutes the variable va",
-        "published": "2026-06-22T14:17:55.800"
-      },
-      {
-        "cve_id": "CVE-2026-10845",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "IBM WebSphere Application Server 8.5 and 9.0\u00a0could allow a remote attacker to bypass authentication and gain unauthorized access to JAX-WS applications.",
-        "published": "2026-06-22T16:16:32.690"
+        "base_score": 7.5,
+        "description": "IBM WebSphere Application Server 9.0, and 8.5 and IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.6 are vulnerable to a denial of service, caused by sending a specially-crafted requ",
+        "published": "2026-06-22T16:16:43.357"
       }
     ]
   },
