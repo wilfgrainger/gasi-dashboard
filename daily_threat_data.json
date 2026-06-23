@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-23T17:44:27.416450+00:00",
+  "generated_at": "2026-06-23T21:24:05.403923+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
-        "score": 2.0,
+        "value": 8,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,16 +238,30 @@
     ]
   },
   "nvd": {
-    "total": 256,
-    "critical_count": 3,
-    "high_count": 31,
+    "total": 297,
+    "critical_count": 8,
+    "high_count": 44,
     "cves": [
       {
-        "cve_id": "CVE-2026-10789",
+        "cve_id": "CVE-2026-56274",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "A maliciously crafted webpage, when visited by a user with Autodesk Fusion Desktop running and the MCP extension enabled, can trigger a vulnerability in the MCP extension that could allow arbitrary co",
-        "published": "2026-06-22T18:16:30.620"
+        "base_score": 9.9,
+        "description": "Flowise before 3.1.2 contains multiple OS command injection vulnerabilities in the Custom MCP Server feature due to incomplete command-flag validation and a regex bypass in local file access restricti",
+        "published": "2026-06-23T13:16:45.083"
+      },
+      {
+        "cve_id": "CVE-2026-12866",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "All versions of the package expr-eval are vulnerable to Code Execution via the toJSFunction() API. An attacker can execute arbitrary JavaScript by supplying crafted expressions that are compiled into ",
+        "published": "2026-06-23T05:17:03.380"
+      },
+      {
+        "cve_id": "CVE-2026-56315",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "picklescan before 1.0.4 fails to block at least seven Python standard library modules (including uuid, _osx_support, _aix_support, _pyrepl.pager, and imaplib) exposing eight functions that provide dir",
+        "published": "2026-06-23T13:16:45.770"
       },
       {
         "cve_id": "CVE-2026-48509",
@@ -257,25 +271,81 @@
         "published": "2026-06-22T22:16:47.573"
       },
       {
-        "cve_id": "CVE-2026-12249",
+        "cve_id": "CVE-2026-56348",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "n8n before 2.20.0 contains a credential exfiltration vulnerability in the POST /rest/dynamic-node-parameters/options endpoint that allows authenticated users to bypass Allowed HTTP Request Domains res",
+        "published": "2026-06-22T22:16:52.353"
+      },
+      {
+        "cve_id": "CVE-2026-48746",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "vLLM is an inference and serving engine for large language models (LLMs). From 0.3.0 until 0.22.0, a vulnerability in ASGI web servers and starlette's trust on those web servers enables an authenticat",
+        "published": "2026-06-22T23:16:30.490"
+      },
+      {
+        "cve_id": "CVE-2026-9733",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Mojolicious::Plugin::Web::Auth::OAuth2 versions through 0.17 for Perl have an insecure default state parameter.\n\nWhen no state generator is specified in the constructor, the module defaults to using a",
+        "published": "2026-06-23T08:16:26.037"
+      },
+      {
+        "cve_id": "CVE-2026-11374",
         "severity": "CRITICAL",
         "base_score": 9.0,
-        "description": "An issue was discovered in Canonical ADSys upstream versions through v0.16.2. During Active Directory Certificate Services (AD CS) certificate auto-enrollment via the vendored Samba client script (int",
-        "published": "2026-06-22T18:16:31.917"
+        "description": "In ManageEngine ADSelfService Plus, RecoveryManager Plus, M365 Manager Plus, and ADAudit Plus, the SSO tickets generated to authenticate that session could be predicted\n by an unauthenticated user, le",
+        "published": "2026-06-23T09:16:28.477"
       },
       {
-        "cve_id": "CVE-2026-44272",
+        "cve_id": "CVE-2026-54232",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Dell Wyse Management Suite (WMS), versions prior to WMS 2605, contain an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability. A low privileged attacker w",
-        "published": "2026-06-22T20:16:29.227"
+        "description": "vLLM is an inference and serving engine for large language models (LLMs). Prior to 0.22.1, the vLLM Dockerfile is vulnerable to a dependency confusion attack through the flashinfer-jit-cache package. ",
+        "published": "2026-06-22T23:16:30.873"
       },
       {
-        "cve_id": "CVE-2026-54271",
+        "cve_id": "CVE-2026-8163",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "protobufjs-cli is the command line add-on for protobuf.js. Prior to 1.3.2 and 2.5.0, a previous fix for unsafe name handling in pbjs static / static-module code generation was incomplete. Affected ver",
-        "published": "2026-06-22T18:16:45.610"
+        "base_score": 8.8,
+        "description": "The Infility Global WordPress plugin before 2.15.19 does not properly sanitize and escape some parameters before using them in SQL statements, leading to a SQL Injection vulnerability exploitable by a",
+        "published": "2026-06-23T07:16:20.910"
+      },
+      {
+        "cve_id": "CVE-2026-10711",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Missing authentication for critical function vulnerability in AKIN Software Computer Import Export Industry and Trade Ltd. CafePlus allows Accessing Functionality Not Properly Constrained by ACLs.\n\nTh",
+        "published": "2026-06-23T13:16:39.410"
+      },
+      {
+        "cve_id": "CVE-2026-56266",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Crawl4AI before 0.8.7 contains a server-side request forgery vulnerability in the /crawl, /crawl/stream, /md, and /llm endpoints that fetch arbitrary user-supplied URLs without validation. Unauthentic",
+        "published": "2026-06-22T22:16:50.937"
+      },
+      {
+        "cve_id": "CVE-2025-71337",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "Flowise before 3.0.10 (affected versions 3.0.7 and earlier) contains an unverified email change vulnerability. An authenticated user can change the account email address, used as a login identifier an",
+        "published": "2026-06-23T13:16:38.233"
+      },
+      {
+        "cve_id": "CVE-2026-56225",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "Capgo before 12.128.2 contains an authorization bypass vulnerability in its public API key management handlers (get/put/delete/post). API keys created with mode=all but restricted to a single app via ",
+        "published": "2026-06-23T13:16:44.250"
+      },
+      {
+        "cve_id": "CVE-2026-56784",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "OpenRemote Manager before 1.24.2 contains an insecure direct object reference vulnerability in the removeAlarms() method that allows authenticated users to delete alarms from other tenants by supplyin",
+        "published": "2026-06-23T13:16:46.980"
       },
       {
         "cve_id": "CVE-2026-48109",
@@ -285,18 +355,11 @@
         "published": "2026-06-22T22:16:46.617"
       },
       {
-        "cve_id": "CVE-2026-55388",
+        "cve_id": "CVE-2026-56324",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "piscina is a node.js worker pool implementation. Prior to 6.0.0-rc.2, 5.2.0, and 4.9.3, piscina's constructor and run() paths read the filename option via plain member access. Both reads fall through ",
-        "published": "2026-06-22T18:16:47.930"
-      },
-      {
-        "cve_id": "CVE-2026-44271",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Dell Wyse Management Suite (WMS), versions prior to WMS 2605, contain an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability. A low privileged attacker w",
-        "published": "2026-06-22T20:16:29.090"
+        "base_score": 8.2,
+        "description": "Capgo before 12.128.2 contains a rate limit bypass vulnerability in the channel_self endpoint that allows attackers to circumvent rate limiting by rotating the user-controlled device_id parameter. Att",
+        "published": "2026-06-22T22:16:52.063"
       },
       {
         "cve_id": "CVE-2025-71339",
@@ -318,69 +381,6 @@
         "base_score": 8.1,
         "description": "picklescan before 0.0.29 fails to detect malicious pickle files that exploit idlelib.autocomplete.AutoComplete.get_entity function in reduce methods. Attackers can embed undetected code in pickle file",
         "published": "2026-06-22T22:16:45.360"
-      },
-      {
-        "cve_id": "CVE-2026-44274",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Dell Wyse Management Suite (WMS), versions prior to WMS 2605, contain an Improper Link Resolution Before File Access vulnerability. A low privileged attacker with local access could potentially exploi",
-        "published": "2026-06-22T20:16:29.467"
-      },
-      {
-        "cve_id": "CVE-2026-55409",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "Filament is a collection of full-stack components for accelerated Laravel development. From 3.0.0 until 3.3.53, a disabled RichEditor field rendered its raw state without sanitizing HTML. Where the da",
-        "published": "2026-06-22T22:16:50.533"
-      },
-      {
-        "cve_id": "CVE-2026-42127",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The public dashboard query endpoint does not limit request body size before processing, allowing unauthenticated attackers to trigger excessive memory allocation by sending arbitrarily large JSON payl",
-        "published": "2026-06-22T18:16:37.430"
-      },
-      {
-        "cve_id": "CVE-2026-48712",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "protobufjs compiles protobuf definitions into JavaScript (JS) functions. Prior to 7.6.1 and 8.4.1, protobufjs could recurse without a depth limit while converting decoded messages to plain objects or ",
-        "published": "2026-06-22T18:16:39.640"
-      },
-      {
-        "cve_id": "CVE-2026-53539",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Python-Multipart is a streaming multipart parser for Python. Prior to 0.0.30, when parsing application/x-www-form-urlencoded bodies, QuerystringParser located the field separator with a two step looku",
-        "published": "2026-06-22T18:16:44.360"
-      },
-      {
-        "cve_id": "CVE-2026-54283",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Starlette is a lightweight ASGI framework/toolkit. From 0.4.1 until 1.3.1, request.form() accepts max_fields and max_part_size to bound resource consumption while parsing form data. These limits are e",
-        "published": "2026-06-22T18:16:46.943"
-      },
-      {
-        "cve_id": "CVE-2026-53779",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "WebP Server Go through 0.14.4 contains a path traversal vulnerability on Windows that allows unauthenticated attackers to read files outside the configured IMG_PATH directory by sending requests with ",
-        "published": "2026-06-22T19:17:13.513"
-      },
-      {
-        "cve_id": "CVE-2026-54293",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "NLTK (Natural Language Toolkit) is a suite of open source Python modules, data sets, and tutorials supporting research and development in Natural Language Processing. Prior to 3.10.0-rc1, nltk.data.lo",
-        "published": "2026-06-22T19:17:20.983"
-      },
-      {
-        "cve_id": "CVE-2026-54299",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Astro is a web framework. Prior to 6.4.6, Astro SSR apps with prerendered error pages (/404 or /500 using export const prerender = true) fetch those pages over HTTP at runtime when an error occurs. Th",
-        "published": "2026-06-22T19:17:21.260"
       }
     ]
   },
