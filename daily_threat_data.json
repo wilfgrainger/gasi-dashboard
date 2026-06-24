@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-23T21:24:05.403923+00:00",
+  "generated_at": "2026-06-24T02:26:35.988954+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
+        "value": 5,
         "score": 2.5,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 297,
-    "critical_count": 8,
-    "high_count": 44,
+    "total": 257,
+    "critical_count": 5,
+    "high_count": 32,
     "cves": [
       {
         "cve_id": "CVE-2026-56274",
@@ -264,27 +264,6 @@
         "published": "2026-06-23T13:16:45.770"
       },
       {
-        "cve_id": "CVE-2026-48509",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "MessagePack for C# is a MessagePack serializer for C#. Prior to 2.5.301 and 3.1.7, the parameterless MessagePackInputFormatter() constructor uses default serializer options, which resolve to MessagePa",
-        "published": "2026-06-22T22:16:47.573"
-      },
-      {
-        "cve_id": "CVE-2026-56348",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "n8n before 2.20.0 contains a credential exfiltration vulnerability in the POST /rest/dynamic-node-parameters/options endpoint that allows authenticated users to bypass Allowed HTTP Request Domains res",
-        "published": "2026-06-22T22:16:52.353"
-      },
-      {
-        "cve_id": "CVE-2026-48746",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "vLLM is an inference and serving engine for large language models (LLMs). From 0.3.0 until 0.22.0, a vulnerability in ASGI web servers and starlette's trust on those web servers enables an authenticat",
-        "published": "2026-06-22T23:16:30.490"
-      },
-      {
         "cve_id": "CVE-2026-9733",
         "severity": "CRITICAL",
         "base_score": 9.1,
@@ -297,13 +276,6 @@
         "base_score": 9.0,
         "description": "In ManageEngine ADSelfService Plus, RecoveryManager Plus, M365 Manager Plus, and ADAudit Plus, the SSO tickets generated to authenticate that session could be predicted\n by an unauthenticated user, le",
         "published": "2026-06-23T09:16:28.477"
-      },
-      {
-        "cve_id": "CVE-2026-54232",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "vLLM is an inference and serving engine for large language models (LLMs). Prior to 0.22.1, the vLLM Dockerfile is vulnerable to a dependency confusion attack through the flashinfer-jit-cache package. ",
-        "published": "2026-06-22T23:16:30.873"
       },
       {
         "cve_id": "CVE-2026-8163",
@@ -320,11 +292,32 @@
         "published": "2026-06-23T13:16:39.410"
       },
       {
-        "cve_id": "CVE-2026-56266",
+        "cve_id": "CVE-2026-35018",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Crawl4AI before 0.8.7 contains a server-side request forgery vulnerability in the /crawl, /crawl/stream, /md, and /llm endpoints that fetch arbitrary user-supplied URLs without validation. Unauthentic",
-        "published": "2026-06-22T22:16:50.937"
+        "base_score": 8.8,
+        "description": "NetComm NF20MESH routers running firmware R6B031 and earlier contain an authenticated remote code execution vulnerability that allows authenticated attackers to execute arbitrary commands as root by i",
+        "published": "2026-06-23T15:16:33.990"
+      },
+      {
+        "cve_id": "CVE-2026-33760",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to 1.9.0, Langflow's /api/v1/monitor router exposes 7 endpoints that perform read, write, and delete operations on ",
+        "published": "2026-06-23T17:16:52.790"
+      },
+      {
+        "cve_id": "CVE-2026-34916",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A missing validation of user input when saving delivery limitations in Revive Adserver 6.0.6 and earlier could allow a low\u2011privileged user to use the logical parameter to inject malicious PHP code int",
+        "published": "2026-06-23T17:16:53.910"
+      },
+      {
+        "cve_id": "CVE-2026-44959",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A missing validation of user input exists when saving delivery limitations in Revive Adserver 6.0.6 and earlier. A low\u2011privileged user could add an unexpected component parameter and inject malicious ",
+        "published": "2026-06-23T17:17:00.120"
       },
       {
         "cve_id": "CVE-2025-71337",
@@ -341,46 +334,53 @@
         "published": "2026-06-23T13:16:44.250"
       },
       {
-        "cve_id": "CVE-2026-56784",
+        "cve_id": "CVE-2026-34914",
         "severity": "HIGH",
         "base_score": 8.3,
-        "description": "OpenRemote Manager before 1.24.2 contains an insecure direct object reference vulnerability in the removeAlarms() method that allows authenticated users to delete alarms from other tenants by supplyin",
-        "published": "2026-06-23T13:16:46.980"
+        "description": "A missing sanitisation of user input in the zone-include.php script of Revive Adserver 6.0.6 and earlier. A low\u2011privileged user could exploit the clientid parameter to perform blind SQL injection atta",
+        "published": "2026-06-23T17:16:53.700"
       },
       {
-        "cve_id": "CVE-2026-48109",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "MessagePack for C# is a MessagePack serializer for C#. Prior to 2.5.301 and 3.1.7, A vulnerability exists in the optional LZ4 decompression path used by MessagePack compression modes Lz4Block and Lz4B",
-        "published": "2026-06-22T22:16:46.617"
-      },
-      {
-        "cve_id": "CVE-2026-56324",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Capgo before 12.128.2 contains a rate limit bypass vulnerability in the channel_self endpoint that allows attackers to circumvent rate limiting by rotating the user-controlled device_id parameter. Att",
-        "published": "2026-06-22T22:16:52.063"
-      },
-      {
-        "cve_id": "CVE-2025-71339",
+        "cve_id": "CVE-2025-71341",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Picklescan before 0.0.33 fails to detect the numpy.f2py.crackfortran._eval_length gadget in pickle __reduce__ methods, allowing arbitrary code execution. Attackers can craft malicious pickle files tha",
-        "published": "2026-06-22T22:16:45.053"
+        "description": "picklescan before 0.0.29 fails to detect the profile.Profile.runctx function when analyzing pickle files, allowing attackers to embed undetected malicious code. Remote attackers can craft malicious pi",
+        "published": "2026-06-23T13:16:38.370"
       },
       {
-        "cve_id": "CVE-2025-71344",
+        "cve_id": "CVE-2025-71365",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "picklescan before 0.0.30 (affected versions 0.0.26 and earlier) fails to detect the ensurepip._run_pip built-in function when scanning pickle files, allowing attackers to execute arbitrary code. Malic",
-        "published": "2026-06-22T22:16:45.220"
+        "description": "picklescan before 0.0.33 fails to detect malicious pickle files that invoke numpy.f2py.crackfortran.myeval function through the reduce method. Attackers can craft malicious pickle files embedding arbi",
+        "published": "2026-06-23T13:16:38.617"
       },
       {
-        "cve_id": "CVE-2025-71358",
+        "cve_id": "CVE-2025-71370",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "picklescan before 0.0.29 fails to detect malicious pickle files that exploit idlelib.autocomplete.AutoComplete.get_entity function in reduce methods. Attackers can embed undetected code in pickle file",
-        "published": "2026-06-22T22:16:45.360"
+        "description": "picklescan before 0.0.28 fails to detect malicious torch.jit.unsupported_tensor_ops.execWrapper function calls embedded in pickle files. Attackers can craft malicious pickle files that bypass picklesc",
+        "published": "2026-06-23T13:16:38.743"
+      },
+      {
+        "cve_id": "CVE-2025-71376",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "picklescan before 0.0.29 fails to detect malicious pickle files using idlelib.autocomplete.AutoComplete.fetch_completions in reduce methods. Attackers can embed undetected code in pickle files that ex",
+        "published": "2026-06-23T13:16:38.870"
+      },
+      {
+        "cve_id": "CVE-2026-56243",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Capgo before 12.128.2 contains a security control bypass vulnerability where the PostgREST/RLS plane accepts plaintext API keys through the capgkey header despite enforce_hashed_api_keys being enabled",
+        "published": "2026-06-23T13:16:44.553"
+      },
+      {
+        "cve_id": "CVE-2026-56258",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Crawl4AI before 0.8.8 contains an arbitrary file write vulnerability in the screenshot and PDF endpoints that allows unauthenticated attackers to write files outside the intended directory via symlink",
+        "published": "2026-06-23T13:16:44.817"
       }
     ]
   },
