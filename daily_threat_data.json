@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-24T10:41:19.443640+00:00",
+  "generated_at": "2026-06-24T14:07:15.126613+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
-        "score": 2.0,
+        "value": 7,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,23 +238,30 @@
     ]
   },
   "nvd": {
-    "total": 337,
-    "critical_count": 3,
-    "high_count": 30,
+    "total": 335,
+    "critical_count": 7,
+    "high_count": 26,
     "cves": [
       {
-        "cve_id": "CVE-2026-56274",
+        "cve_id": "CVE-2026-44789",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "Flowise before 3.1.2 contains multiple OS command injection vulnerabilities in the Custom MCP Server feature due to incomplete command-flag validation and a regex bypass in local file access restricti",
-        "published": "2026-06-23T13:16:45.083"
+        "description": "n8n is an open source workflow automation platform. Prior to 1.123.43, 2.22.1, and 2.20.7, an authenticated user with permission to create or modify workflows could achieve global prototype pollution ",
+        "published": "2026-06-23T17:16:59.290"
       },
       {
-        "cve_id": "CVE-2026-56315",
+        "cve_id": "CVE-2026-44791",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "picklescan before 1.0.4 fails to block at least seven Python standard library modules (including uuid, _osx_support, _aix_support, _pyrepl.pager, and imaplib) exposing eight functions that provide dir",
-        "published": "2026-06-23T13:16:45.770"
+        "base_score": 9.9,
+        "description": "n8n is an open source workflow automation platform. Prior to 1.123.43, 2.22.1, and 2.20.7, an authenticated user with permission to create or modify workflows could bypass the patch for CVE-2026-42232",
+        "published": "2026-06-23T17:16:59.547"
+      },
+      {
+        "cve_id": "CVE-2026-55255",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to 1.9.2, an Insecure Direct Object Reference (IDOR) vulnerability in /api/v1/responses endpoint allows an authenti",
+        "published": "2026-06-23T17:17:08.050"
       },
       {
         "cve_id": "CVE-2026-48519",
@@ -264,11 +271,25 @@
         "published": "2026-06-23T17:17:01.240"
       },
       {
-        "cve_id": "CVE-2026-10711",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Missing authentication for critical function vulnerability in AKIN Software Computer Import Export Industry and Trade Ltd. CafePlus allows Accessing Functionality Not Properly Constrained by ACLs.\n\nTh",
-        "published": "2026-06-23T13:16:39.410"
+        "cve_id": "CVE-2026-55447",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to 1.9.2, by controlling a files that are digested into the RAG, an attacker can direct the node to read any file o",
+        "published": "2026-06-23T17:17:08.540"
+      },
+      {
+        "cve_id": "CVE-2026-55450",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Langflow is a tool for building and deploying AI-powered agents and workflows. Prior to 1.9.1, unauthenticated users can upload any amount of data to the server without any limitations. No need for an",
+        "published": "2026-06-23T17:17:08.663"
+      },
+      {
+        "cve_id": "CVE-2026-44792",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "n8n is an open source workflow automation platform. Prior to 1.123.43, 2.22.1, and 2.20.7, an attacker with write access to the git repository connected to an n8n Source Control configuration could co",
+        "published": "2026-06-23T17:16:59.670"
       },
       {
         "cve_id": "CVE-2026-35018",
@@ -292,25 +313,18 @@
         "published": "2026-06-23T17:16:53.910"
       },
       {
+        "cve_id": "CVE-2026-44790",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "n8n is an open source workflow automation platform. Prior to 1.123.43, 2.22.1, and 2.20.7, an authenticated user with permission to create or modify workflows could inject CLI flags on the Git node's ",
+        "published": "2026-06-23T17:16:59.417"
+      },
+      {
         "cve_id": "CVE-2026-44959",
         "severity": "HIGH",
         "base_score": 8.8,
         "description": "A missing validation of user input exists when saving delivery limitations in Revive Adserver 6.0.6 and earlier. A low\u2011privileged user could add an unexpected component parameter and inject malicious ",
         "published": "2026-06-23T17:17:00.120"
-      },
-      {
-        "cve_id": "CVE-2025-71337",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Flowise before 3.0.10 (affected versions 3.0.7 and earlier) contains an unverified email change vulnerability. An authenticated user can change the account email address, used as a login identifier an",
-        "published": "2026-06-23T13:16:38.233"
-      },
-      {
-        "cve_id": "CVE-2026-56225",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Capgo before 12.128.2 contains an authorization bypass vulnerability in its public API key management handlers (get/put/delete/post). API keys created with mode=all but restricted to a single app via ",
-        "published": "2026-06-23T13:16:44.250"
       },
       {
         "cve_id": "CVE-2026-34914",
@@ -334,53 +348,39 @@
         "published": "2026-06-23T17:17:03.340"
       },
       {
-        "cve_id": "CVE-2025-71341",
+        "cve_id": "CVE-2026-35019",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "picklescan before 0.0.29 fails to detect the profile.Profile.runctx function when analyzing pickle files, allowing attackers to embed undetected malicious code. Remote attackers can craft malicious pi",
-        "published": "2026-06-23T13:16:38.370"
+        "description": "NetComm NF20MESH routers running firmware R6B031 and earlier contain an authentication bypass vulnerability that allows unauthenticated attackers to gain administrative access by exploiting a hardcode",
+        "published": "2026-06-23T15:16:34.140"
       },
       {
-        "cve_id": "CVE-2025-71365",
+        "cve_id": "CVE-2026-45732",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "picklescan before 0.0.33 fails to detect malicious pickle files that invoke numpy.f2py.crackfortran.myeval function through the reduce method. Attackers can craft malicious pickle files embedding arbi",
-        "published": "2026-06-23T13:16:38.617"
+        "description": "n8n is an open source workflow automation platform. Prior to 1.123.43, 2.22.1, and 2.20.7, the OAuth1 and OAuth2 credential reconnect endpoints authorized access using credential:read rather than cred",
+        "published": "2026-06-23T17:17:00.700"
       },
       {
-        "cve_id": "CVE-2025-71370",
+        "cve_id": "CVE-2026-45135",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "picklescan before 0.0.28 fails to detect malicious torch.jit.unsupported_tensor_ops.execWrapper function calls embedded in pickle files. Attackers can craft malicious pickle files that bypass picklesc",
-        "published": "2026-06-23T13:16:38.743"
+        "description": "Caddy is an extensible server platform that uses TLS by default. From 2.7.0 until 2.11.3, the FastCGI transport's splitPos() in modules/caddyhttp/reverseproxy/fastcgi/fastcgi.go misuses golang.org/x/t",
+        "published": "2026-06-23T18:17:52.343"
       },
       {
-        "cve_id": "CVE-2025-71376",
+        "cve_id": "CVE-2026-49402",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "picklescan before 0.0.29 fails to detect malicious pickle files using idlelib.autocomplete.AutoComplete.fetch_completions in reduce methods. Attackers can embed undetected code in pickle files that ex",
-        "published": "2026-06-23T13:16:38.870"
+        "description": "Deno is a JavaScript, TypeScript, and WebAssembly runtime. Prior to 2.7.10, Deno's node:child_process implementation provided an escapeShellArg() helper used when callers passed shell: true to spawn /",
+        "published": "2026-06-23T18:18:03.177"
       },
       {
-        "cve_id": "CVE-2026-56243",
+        "cve_id": "CVE-2026-12957",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Capgo before 12.128.2 contains a security control bypass vulnerability where the PostgREST/RLS plane accepts plaintext API keys through the capgkey header despite enforce_hashed_api_keys being enabled",
-        "published": "2026-06-23T13:16:44.553"
-      },
-      {
-        "cve_id": "CVE-2026-56258",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Crawl4AI before 0.8.8 contains an arbitrary file write vulnerability in the screenshot and PDF endpoints that allows unauthenticated attackers to write files outside the intended directory via symlink",
-        "published": "2026-06-23T13:16:44.817"
-      },
-      {
-        "cve_id": "CVE-2026-56784",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "OpenRemote before 1.25.0 contains an insecure direct object reference (IDOR) vulnerability in the bulk alarm deletion endpoint that allows authenticated users to permanently delete alarms belonging to",
-        "published": "2026-06-23T13:16:46.980"
+        "base_score": 7.8,
+        "description": "Improper trust boundary enforcement in Language Servers for AWS before version 1.65.0 on all supported platforms may allow a for arbitrary code execution. If a local user opens a maliciously crafted w",
+        "published": "2026-06-23T17:16:40.977"
       }
     ]
   },
