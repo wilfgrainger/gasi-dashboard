@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-25T07:34:36.369791+00:00",
+  "generated_at": "2026-06-25T10:34:52.704377+00:00",
   "threat_score": {
-    "score": 5.5,
+    "score": 4.5,
     "level": "ELEVATED",
     "level_color": "elevated",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 0,
+        "score": 0.5,
         "max": 3
       },
       {
@@ -238,151 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 506,
-    "critical_count": 1,
-    "high_count": 20,
-    "cves": [
-      {
-        "cve_id": "CVE-2026-56237",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Capgo before 12.128.2 contains a broken authentication vulnerability in its API key generation mechanism. API keys are exposed in frontend requests, and the backend fails to validate that keys are sec",
-        "published": "2026-06-24T13:16:33.467"
-      },
-      {
-        "cve_id": "CVE-2026-7761",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Ultimate Member plugin for WordPress is vulnerable to Account Takeover via Password Reset Link Disclosure in all versions up to and including 2.11.4. This is due to a chain of three logic bugs: (1",
-        "published": "2026-06-24T08:16:24.830"
-      },
-      {
-        "cve_id": "CVE-2026-12242",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The AdRotate Banner Manager plugin for WordPress is vulnerable to PHP Code Injection in all versions up to, and including, 5.17.7 via the 'banner' attribute of the adrotate shortcode. This is due to i",
-        "published": "2026-06-24T13:16:31.447"
-      },
-      {
-        "cve_id": "CVE-2026-56232",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Capgo before 12.128.2 fails to enforce limited_to_orgs and limited_to_apps constraints on subkeys provided via x-limited-key-id header in middlewareKey function. Attackers can bypass subkey scope rest",
-        "published": "2026-06-24T13:16:33.327"
-      },
-      {
-        "cve_id": "CVE-2026-57280",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Jenkins Script Security Plugin 1402.v94c9ce464861 and earlier does not intercept the implicit type casts applied to the elements of typed for-each loops in sandboxed Groovy scripts, allowing attackers",
-        "published": "2026-06-24T14:17:33.910"
-      },
-      {
-        "cve_id": "CVE-2026-57296",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Jenkins External Workspace Manager Plugin 1.3.2 and earlier does not reject path traversal sequences in the custom workspace path provided to the exwsAllocate Pipeline step, allowing attackers with It",
-        "published": "2026-06-24T14:17:35.790"
-      },
-      {
-        "cve_id": "CVE-2026-57301",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Jenkins OWASP ZAP Plugin 1.0.7 and earlier performs build operations on the Jenkins controller rather than the assigned agent, allowing attackers with Item/Configure permission to execute arbitrary co",
-        "published": "2026-06-24T14:17:36.230"
-      },
-      {
-        "cve_id": "CVE-2026-56223",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "Capgo before 12.128.2 contains a cross-domain SSO account takeover vulnerability in the provision-user endpoint that allows attackers to merge arbitrary victim accounts based on email match without va",
-        "published": "2026-06-24T13:16:33.067"
-      },
-      {
-        "cve_id": "CVE-2026-56245",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Supabase Capgo before 12.128.2 contains an authorization bypass vulnerability in the SECURITY DEFINER record_build_time RPC function that allows unauthenticated attackers to insert arbitrary build-tim",
-        "published": "2026-06-24T13:16:34.820"
-      },
-      {
-        "cve_id": "CVE-2026-56351",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "n8n before version 2.4.0 contains a sql injection vulnerability in MySQL, PostgreSQL, and Microsoft SQL nodes that allows authenticated users to inject arbitrary SQL through unescaped identifier value",
-        "published": "2026-06-24T13:16:36.473"
-      },
-      {
-        "cve_id": "CVE-2025-71354",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "picklescan before 0.0.29 fails to detect malicious pickle files that exploit idlelib.debugobj.ObjectTreeItem.SetText function in reduce methods. Attackers can craft pickle files with embedded code tha",
-        "published": "2026-06-24T13:16:30.413"
-      },
-      {
-        "cve_id": "CVE-2025-71361",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "picklescan before 0.0.29 fails to detect malicious idlelib.calltip.Calltip.fetch_tip calls in pickle files, allowing remote code execution. Attackers can embed undetected payloads in pickle files that",
-        "published": "2026-06-24T13:16:30.543"
-      },
-      {
-        "cve_id": "CVE-2026-35025",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "ProFTPD through 1.3.9b and 1.3.10rc2 contains an access control bypass vulnerability that allows authenticated FTP users to circumvent Directory ACL restrictions by prefixing paths with /proc/self/roo",
-        "published": "2026-06-24T14:17:30.950"
-      },
-      {
-        "cve_id": "CVE-2026-56052",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in FunnelKit Funnel Builder by FunnelKit allows Blind SQL Injection.\n\nThis issue affects Funnel Build",
-        "published": "2026-06-24T08:16:24.623"
-      },
-      {
-        "cve_id": "CVE-2026-56231",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "Capgo before 12.128.2 contains a broken object level authorization (BOLA) vulnerability in the POST /build/start/:jobId and POST /build/cancel/:jobId endpoints. The handlers authorize the request base",
-        "published": "2026-06-24T13:16:33.200"
-      },
-      {
-        "cve_id": "CVE-2026-56270",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Flowise before 3.1.0 (versions 3.0.13 and earlier) contains a missing authentication vulnerability in the /api/v1/loginmethod endpoint that allows unauthenticated users to retrieve an organization's c",
-        "published": "2026-06-24T13:16:35.540"
-      },
-      {
-        "cve_id": "CVE-2026-57281",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Jenkins Script Security Plugin 1402.v94c9ce464861 and earlier does not reject Groovy AST transformation annotations carrying an extensions member, allowing attackers able to run sandboxed Groovy scrip",
-        "published": "2026-06-24T14:17:34.023"
-      },
-      {
-        "cve_id": "CVE-2026-56244",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Capgo before 12.128.2 allows non-admin API keys to read webhook signing secrets via Supabase REST due to insufficient row-level security policies on the webhooks table. Attackers can retrieve the webh",
-        "published": "2026-06-24T13:16:33.597"
-      },
-      {
-        "cve_id": "CVE-2026-56256",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Capgo before 12.128.2 enforces mandatory two-factor authentication only at the UI level. Sensitive Organization (ORG) management API endpoints (e.g., editing organization details, inviting users) do n",
-        "published": "2026-06-24T13:16:34.980"
-      },
-      {
-        "cve_id": "CVE-2026-56257",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Capgo before 12.128.2 allows direct patching of public.apps.owner_org through PostgREST, bypassing the transfer_app() workflow and creating split-brain ownership. Attackers can directly update apps.ow",
-        "published": "2026-06-24T13:16:35.123"
-      }
-    ]
+    "total": 0,
+    "critical_count": 0,
+    "high_count": 0,
+    "cves": []
   },
   "top_ips": {
     "ips": [],
