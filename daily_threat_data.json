@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T21:16:49.532429+00:00",
+  "generated_at": "2026-06-25T02:28:20.725662+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 25,
+        "value": 24,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 12,
+        "value": 10,
         "score": 3.0,
         "max": 3
       },
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1627,
-    "recent_30d_count": 25,
+    "recent_30d_count": 24,
     "recent": [
       {
         "cve_id": "CVE-2025-67038",
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 481,
-    "critical_count": 12,
-    "high_count": 16,
+    "total": 534,
+    "critical_count": 10,
+    "high_count": 20,
     "cves": [
       {
         "cve_id": "CVE-2026-12485",
@@ -285,20 +285,6 @@
         "published": "2026-06-24T07:16:26.890"
       },
       {
-        "cve_id": "CVE-2026-11807",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "A missing authorization vulnerability was found in the Event-Driven Ansible (EDA) websocket API. The /api/eda/ws/ansible-rulebook endpoint does not verify user permissions when processing Worker messa",
-        "published": "2026-06-23T21:16:54.350"
-      },
-      {
-        "cve_id": "CVE-2026-54588",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Poweradmin is a web-based DNS administration tool for PowerDNS server. Versions prior to 4.2.4 and 4.3.3 use the attacker-controlled `HTTP_HOST` request header as the authoritative source for building",
-        "published": "2026-06-23T23:16:49.863"
-      },
-      {
         "cve_id": "CVE-2026-12486",
         "severity": "CRITICAL",
         "base_score": 9.1,
@@ -327,20 +313,6 @@
         "published": "2026-06-24T05:17:27.157"
       },
       {
-        "cve_id": "CVE-2026-41862",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Spring Statemachine's Kryo-based persistence backends (JPA, MongoDB, Redis and ZooKeeper) deserialise persisted state-machine contexts without enforcing a class allowlist (CWE-502, deserialisation of ",
-        "published": "2026-06-23T21:16:57.820"
-      },
-      {
-        "cve_id": "CVE-2026-54639",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Style Dictionary, a build system for creating cross-platform styles, has a prototype pollution vulnerability starting in version 4.3.0 and prior to version 5.4.4. Impact users have: direct usage of `c",
-        "published": "2026-06-24T01:16:25.363"
-      },
-      {
         "cve_id": "CVE-2026-4297",
         "severity": "HIGH",
         "base_score": 8.8,
@@ -348,39 +320,67 @@
         "published": "2026-06-24T07:16:27.310"
       },
       {
-        "cve_id": "CVE-2026-7574",
+        "cve_id": "CVE-2026-7761",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Ultimate Member plugin for WordPress is vulnerable to Account Takeover via Password Reset Link Disclosure in all versions up to and including 2.11.4. This is due to a chain of three logic bugs: (1",
+        "published": "2026-06-24T08:16:24.830"
+      },
+      {
+        "cve_id": "CVE-2026-12242",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The AdRotate Banner Manager plugin for WordPress is vulnerable to PHP Code Injection in all versions up to, and including, 5.17.7 via the 'banner' attribute of the adrotate shortcode. This is due to i",
+        "published": "2026-06-24T13:16:31.447"
+      },
+      {
+        "cve_id": "CVE-2026-56223",
         "severity": "HIGH",
         "base_score": 8.7,
-        "description": "Anthropic Claude Desktop Cowork VM image handling (confirmed across v1.1348.0 through v1.2278.0, including v1.1348.0, v1.1617.0, and v1.2278.0) validates only file presence and a version marker string",
-        "published": "2026-06-24T00:16:34.173"
+        "description": "Capgo before 12.128.2 contains a cross-domain SSO account takeover vulnerability in the provision-user endpoint that allows attackers to merge arbitrary victim accounts based on email match without va",
+        "published": "2026-06-24T13:16:33.067"
       },
       {
-        "cve_id": "CVE-2026-56785",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "FlatPress contains a stored cross-site scripting vulnerability in comment and contact forms where name, URL, and email fields are rendered without proper output encoding in Smarty templates. Attackers",
-        "published": "2026-06-23T23:16:50.020"
-      },
-      {
-        "cve_id": "CVE-2026-54512",
+        "cve_id": "CVE-2025-71354",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "jackson-databind contains the general-purpose data-binding functionality and tree-model for Jackson Data Processor. From 2.10.0 until 2.18.8, 2.21.4, and 3.1.4, jackson-databind's PolymorphicTypeValid",
-        "published": "2026-06-23T21:17:02.203"
+        "description": "picklescan before 0.0.29 fails to detect malicious pickle files that exploit idlelib.debugobj.ObjectTreeItem.SetText function in reduce methods. Attackers can craft pickle files with embedded code tha",
+        "published": "2026-06-24T13:16:30.413"
       },
       {
-        "cve_id": "CVE-2026-54513",
+        "cve_id": "CVE-2025-71361",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "jackson-databind contains the general-purpose data-binding functionality and tree-model for Jackson Data Processor. From 2.10.0 until 2.18.8, 2.21.4, and 3.1.4, BasicPolymorphicTypeValidator.Builder.a",
-        "published": "2026-06-23T21:17:02.333"
+        "description": "picklescan before 0.0.29 fails to detect malicious idlelib.calltip.Calltip.fetch_tip calls in pickle files, allowing remote code execution. Attackers can embed undetected payloads in pickle files that",
+        "published": "2026-06-24T13:16:30.543"
       },
       {
-        "cve_id": "CVE-2026-12112",
+        "cve_id": "CVE-2026-9709",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A flaw was found in the foreman-mcp-server. A session management vulnerability in the MCP Server allows unauthenticated attackers to hijack active administrative sessions due to an improper cache of a",
-        "published": "2026-06-23T21:16:54.823"
+        "base_score": 7.7,
+        "description": "The Cornerstone WordPress plugin before 7.8.9 does not enforce capability checks on one of its REST API routes, allowing any authenticated user to disclose the metadata of any other user, including ro",
+        "published": "2026-06-24T07:16:30.217"
+      },
+      {
+        "cve_id": "CVE-2026-9710",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "The Cornerstone WordPress plugin before 7.8.8 does not enforce capability checks on one of its CSS-preview request handlers, and exposes the nonce needed to call it to every logged-in user on any wp-a",
+        "published": "2026-06-24T07:16:30.317"
+      },
+      {
+        "cve_id": "CVE-2026-56052",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in FunnelKit Funnel Builder by FunnelKit allows Blind SQL Injection.\n\nThis issue affects Funnel Build",
+        "published": "2026-06-24T08:16:24.623"
+      },
+      {
+        "cve_id": "CVE-2026-10735",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Multiple Shapedsmart-post-show-pro WordPress plugin before 4.0.2, Real Testimonials Pro WordPress plugin before 3.2.5, Product Slider for WooCommerce Pro WordPress plugin before 3.5.3 Pro smart-post-s",
+        "published": "2026-06-24T07:16:25.867"
       }
     ]
   },
