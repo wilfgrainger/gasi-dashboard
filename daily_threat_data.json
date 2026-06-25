@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-25T14:04:37.349547+00:00",
+  "generated_at": "2026-06-25T18:03:02.602985+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
-        "score": 2.0,
+        "value": 8,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 605,
-    "critical_count": 2,
-    "high_count": 7,
+    "total": 488,
+    "critical_count": 8,
+    "high_count": 41,
     "cves": [
       {
-        "cve_id": "CVE-2026-56121",
+        "cve_id": "CVE-2026-52813",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Gogs is an open source self-hosted Git service. Prior to 0.14.3, organization names containing path traversal sequences (../) are accepted by Gogs, and repositories under them are written to paths fol",
+        "published": "2026-06-24T21:16:57.353"
+      },
+      {
+        "cve_id": "CVE-2026-52806",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Gogs is an open source self-hosted Git service. Prior to 0.14.3, Gogs allows authenticated users to achieve Remote Code Execution (RCE) on the server by creating a pull request with a specially crafte",
+        "published": "2026-06-24T21:16:56.440"
+      },
+      {
+        "cve_id": "CVE-2026-49980",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Feast before 0.63.0 contains an unsafe deserialization vulnerability that allows unauthenticated or unauthorized attackers to achieve remote code execution by sending a crafted gRPC request to the reg",
-        "published": "2026-06-24T16:16:33.193"
+        "description": "Rclone is a command-line program to sync files and directories to and from different cloud storage providers. From 1.46.0 until 1.74.3, rclone rcd --rc-serve accepts unauthenticated GET and HEAD reque",
+        "published": "2026-06-24T19:17:11.597"
       },
       {
-        "cve_id": "CVE-2026-56111",
+        "cve_id": "CVE-2026-13028",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Use after free in WebGL in Google Chrome on Android prior to 149.0.7827.197 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Crit",
+        "published": "2026-06-24T19:17:09.073"
+      },
+      {
+        "cve_id": "CVE-2026-13032",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Use after free in WebGL in Google Chrome on Android prior to 149.0.7827.197 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Crit",
+        "published": "2026-06-24T19:17:09.483"
+      },
+      {
+        "cve_id": "CVE-2026-53943",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Ghost is a Node.js content management system. From  until 6.37.0, when Ghost is behind a shared caching layer that results in cached content being shared between different visitors, an unauthenticated",
+        "published": "2026-06-24T19:17:11.820"
+      },
+      {
+        "cve_id": "CVE-2026-45688",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Marlin Firmware through 2.1.2.7, fixed in commit 1f255d1, when built with MESH_BED_LEVELING enabled, contains an out-of-bounds write vulnerability in the M421 G-code handler that allows attackers to c",
-        "published": "2026-06-24T16:16:32.930"
+        "description": "Rocket.Chat is an open-source, secure, fully customizable communications platform. Prior to 8.5.0, 8.4.1, 8.3.3, 8.2.3, 8.1.4, 8.0.5, 7.13.7, and 7.10.11, Rocket.Chat's CAS login handler forwards the ",
+        "published": "2026-06-24T21:16:53.847"
       },
       {
-        "cve_id": "CVE-2026-57280",
+        "cve_id": "CVE-2026-45689",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Rocket.Chat is an open-source, secure, fully customizable communications platform. Prior to 8.5.0, 8.4.1, 8.3.3, 8.2.3, 8.1.4, 8.0.5, 7.13.7, and 7.10.11, an unauthenticated network attacker obtains a",
+        "published": "2026-06-24T21:16:53.970"
+      },
+      {
+        "cve_id": "CVE-2026-52798",
+        "severity": "HIGH",
+        "base_score": 8.9,
+        "description": "Gogs is an open source self-hosted Git service. Prior to 0.14.3, although .ipynb previews are sanitized on the server side via /-/api/sanitize_ipynb, the inserted content is re-rendered on the client ",
+        "published": "2026-06-24T21:16:55.533"
+      },
+      {
+        "cve_id": "CVE-2026-48704",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Jenkins Script Security Plugin 1402.v94c9ce464861 and earlier does not intercept the implicit type casts applied to the elements of typed for-each loops in sandboxed Groovy scripts, allowing attackers",
-        "published": "2026-06-24T14:17:33.910"
+        "description": "Warp is an agentic development environment. From 0.2023.10.24.08.03.stable_00 until 0.2026.05.06.15.42.stable_01, Warp may open executable local files through the operating system default file handler",
+        "published": "2026-06-24T18:17:17.853"
       },
       {
-        "cve_id": "CVE-2026-57296",
+        "cve_id": "CVE-2026-48720",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Jenkins External Workspace Manager Plugin 1.3.2 and earlier does not reject path traversal sequences in the custom workspace path provided to the exwsAllocate Pipeline step, allowing attackers with It",
-        "published": "2026-06-24T14:17:35.790"
+        "description": "Warp is an agentic development environment. From 0.2025.03.05.08.02.stable_00 until 0.2026.05.06.15.42.stable_01, Warp accepts non-inline `OSC 1337;File` payloads from terminal output and materialize ",
+        "published": "2026-06-24T18:17:18.130"
       },
       {
-        "cve_id": "CVE-2026-57301",
+        "cve_id": "CVE-2026-48732",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Jenkins OWASP ZAP Plugin 1.0.7 and earlier performs build operations on the Jenkins controller rather than the assigned agent, allowing attackers with Item/Configure permission to execute arbitrary co",
-        "published": "2026-06-24T14:17:36.230"
+        "description": "Warp is an agentic development environment. From 0.2023.03.21.08.02.stable_00 until 0.2026.05.06.15.42.stable_01, Warp contains a command injection issue in the legacy SSH background command path. War",
+        "published": "2026-06-24T18:17:18.670"
       },
       {
-        "cve_id": "CVE-2026-49269",
+        "cve_id": "CVE-2026-13026",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Apple M1 GPUs retain register file data between compute shader dispatches from different processes. A sandboxed Metal attacker app can run a GPU reader shader that reads stale register values left by ",
-        "published": "2026-06-24T16:16:30.410"
+        "base_score": 8.8,
+        "description": "Use after free in Digital Credentials in Google Chrome on Mac prior to 149.0.7827.197 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security sever",
+        "published": "2026-06-24T19:17:08.867"
       },
       {
-        "cve_id": "CVE-2026-35025",
+        "cve_id": "CVE-2026-13027",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "ProFTPD through 1.3.9b and 1.3.10rc2 contains an access control bypass vulnerability that allows authenticated FTP users to circumvent Directory ACL restrictions by prefixing paths with /proc/self/roo",
-        "published": "2026-06-24T14:17:30.950"
+        "base_score": 8.8,
+        "description": "Use after free in FileSystem in Google Chrome prior to 149.0.7827.197 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-06-24T19:17:08.963"
       },
       {
-        "cve_id": "CVE-2026-57281",
+        "cve_id": "CVE-2026-13031",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Jenkins Script Security Plugin 1402.v94c9ce464861 and earlier does not reject Groovy AST transformation annotations carrying an extensions member, allowing attackers able to run sandboxed Groovy scrip",
-        "published": "2026-06-24T14:17:34.023"
+        "base_score": 8.8,
+        "description": "Use after free in Blink in Google Chrome prior to 149.0.7827.197 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-06-24T19:17:09.390"
       },
       {
-        "cve_id": "CVE-2026-57303",
+        "cve_id": "CVE-2026-13033",
         "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Jenkins Assembla Plugin 1.4 and earlier does not configure its XML parser to prevent XML external entity (XXE) attacks, allowing attackers able to control the responses of the configured Assembla serv",
-        "published": "2026-06-24T14:17:36.407"
+        "base_score": 8.8,
+        "description": "Out of bounds read and write in Blink>InterestGroups in Google Chrome prior to 149.0.7827.197 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: ",
+        "published": "2026-06-24T19:17:09.577"
       },
       {
-        "cve_id": "CVE-2026-57291",
-        "severity": "MEDIUM",
-        "base_score": 5.4,
-        "description": "Missing permission checks in Jenkins Gitee Plugin 1288.v18b_deb_c9069b_ and earlier allow attackers with Overall/Read permission to connect to an attacker-specified URL using attacker-specified creden",
-        "published": "2026-06-24T14:17:35.347"
+        "cve_id": "CVE-2026-13035",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in Bluetooth in Google Chrome on Mac prior to 149.0.7827.197 allowed a remote attacker to execute arbitrary code via a malicious peripheral. (Chromium security severity: High)",
+        "published": "2026-06-24T19:17:09.763"
       },
       {
-        "cve_id": "CVE-2026-57292",
-        "severity": "MEDIUM",
-        "base_score": 5.4,
-        "description": "A cross-site request forgery (CSRF) vulnerability in Jenkins Gitee Plugin 1288.v18b_deb_c9069b_ and earlier allows attackers to connect to an attacker-specified URL using attacker-specified credential",
-        "published": "2026-06-24T14:17:35.433"
+        "cve_id": "CVE-2026-13036",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in Blink in Google Chrome prior to 149.0.7827.197 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-06-24T19:17:09.860"
       },
       {
-        "cve_id": "CVE-2026-57294",
-        "severity": "MEDIUM",
-        "base_score": 5.4,
-        "description": "A missing permission check in Jenkins EC2 Fleet Plugin 4.2.3.539.v8fedff2a_81c3 and earlier allows attackers with Overall/Read permission to connect to an attacker-specified URL using attacker-specifi",
-        "published": "2026-06-24T14:17:35.613"
+        "cve_id": "CVE-2026-13038",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in Autofill in Google Chrome on Windows prior to 149.0.7827.197 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: Critical)",
+        "published": "2026-06-24T19:17:10.047"
       },
       {
-        "cve_id": "CVE-2026-57295",
-        "severity": "MEDIUM",
-        "base_score": 5.4,
-        "description": "A cross-site request forgery (CSRF) vulnerability in Jenkins EC2 Fleet Plugin 4.2.3.539.v8fedff2a_81c3 and earlier allows attackers to connect to an attacker-specified URL using attacker-specified cre",
-        "published": "2026-06-24T14:17:35.703"
-      },
-      {
-        "cve_id": "CVE-2026-57298",
-        "severity": "MEDIUM",
-        "base_score": 5.4,
-        "description": "A cross-site request forgery (CSRF) vulnerability in Jenkins Contrast Continuous Application Security Plugin 3.11 and earlier allows attackers to have Jenkins connect to an attacker-specified URL usin",
-        "published": "2026-06-24T14:17:35.970"
-      },
-      {
-        "cve_id": "CVE-2026-57304",
-        "severity": "MEDIUM",
-        "base_score": 5.4,
-        "description": "A missing permission check in Jenkins Assembla Plugin 1.4 and earlier allows attackers with Overall/Read permission to connect to an attacker-specified URL using an attacker-specified username and pas",
-        "published": "2026-06-24T14:17:36.497"
-      },
-      {
-        "cve_id": "CVE-2026-57305",
-        "severity": "MEDIUM",
-        "base_score": 5.4,
-        "description": "A cross-site request forgery (CSRF) vulnerability in Jenkins Assembla Plugin 1.4 and earlier allows attackers to connect to an attacker-specified URL using an attacker-specified username and password.",
-        "published": "2026-06-24T14:17:36.593"
-      },
-      {
-        "cve_id": "CVE-2026-57282",
-        "severity": "MEDIUM",
-        "base_score": 5.0,
-        "description": "Jenkins Git client Plugin 6.6.0 and earlier does not correctly escape the workspace directory name when it is embedded into a generated SSH wrapper script, allowing attackers able to control the name ",
-        "published": "2026-06-24T14:17:34.140"
-      },
-      {
-        "cve_id": "CVE-2026-57289",
-        "severity": "MEDIUM",
-        "base_score": 4.8,
-        "description": "Jenkins Bitbucket Push and Pull Request Plugin 3.3.8 and earlier unconditionally disables SSL/TLS certificate and hostname validation for connections sending Bearer token authenticated requests to the",
-        "published": "2026-06-24T14:17:35.140"
-      },
-      {
-        "cve_id": "CVE-2026-57283",
-        "severity": "MEDIUM",
-        "base_score": 4.3,
-        "description": "A cross-site request forgery (CSRF) vulnerability in Jenkins Pipeline: Groovy Plugin 4331.v9d06ed4658ff and earlier allows attackers to instantiate types related to job or system configuration other t",
-        "published": "2026-06-24T14:17:34.270"
-      },
-      {
-        "cve_id": "CVE-2026-57284",
-        "severity": "MEDIUM",
-        "base_score": 4.3,
-        "description": "Jenkins Pipeline: Groovy Plugin 4331.v9d06ed4658ff and earlier does not restrict the types that can be instantiated through the Pipeline Snippet Generator, allowing attackers to instantiate types rela",
-        "published": "2026-06-24T14:17:34.363"
+        "cve_id": "CVE-2026-48793",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Jellyfin is an open source self hosted media server. Prior to 10.11.10, a potential FFmpeg argument injection vulnerability exists in the subtitle conversion code path. SubtitleEncoder.ConvertTextSubt",
+        "published": "2026-06-24T19:17:10.900"
       }
     ]
   },
