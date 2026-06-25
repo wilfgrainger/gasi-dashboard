@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-06-25T18:03:02.602985+00:00",
+  "generated_at": "2026-06-25T21:22:20.699249+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 24,
+        "value": 26,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
-        "score": 2.5,
+        "value": 10,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -32,9 +32,29 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1627,
-    "recent_30d_count": 24,
+    "total_catalog_count": 1629,
+    "recent_30d_count": 26,
     "recent": [
+      {
+        "cve_id": "CVE-2026-12569",
+        "vendor": "PTC",
+        "product": "Windchill and FlexPLM",
+        "name": "PTC Windchill and FlexPLM Improper Input Validation Vulnerability",
+        "date_added": "2026-06-25",
+        "due_date": "2026-06-28",
+        "description": "PTC Windchill and FlexPLM contains an improper input validation vulnerability allowing an unauthenticated, remote attacker to execute arbitrary code by sending a malicious request to the network.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-20230",
+        "vendor": "Cisco",
+        "product": "Unified Communications Manager",
+        "name": "Cisco Unified Communications Manager Server-Side Request Forgery (SSRF) Vulnerability",
+        "date_added": "2026-06-25",
+        "due_date": "2026-06-28",
+        "description": "Cisco Unified Communications Manager (Unified CM) and Cisco Unified Communications Manager Session Management Edition (Unified CM SME) contain a server-side request forgery (SSRF) Vulnerability that c",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2025-67038",
         "vendor": "Lantronix",
@@ -214,173 +234,153 @@
         "due_date": "2026-06-05",
         "description": "Linux Kernel contains an improper authentication vulnerability which could allow for privilege escalation via the cgroups v1 release_agent feature.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2025-48595",
-        "vendor": "Android",
-        "product": "Framework",
-        "name": "Android Framework Integer Overflow Vulnerability",
-        "date_added": "2026-06-02",
-        "due_date": "2026-06-05",
-        "description": "Android Framework contains an integer overflow vulnerability that allows for code execution that could allow for local privilege escalation.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2024-21182",
-        "vendor": "Oracle",
-        "product": "WebLogic Server",
-        "name": "Oracle WebLogic Server Unspecified Vulnerability",
-        "date_added": "2026-06-01",
-        "due_date": "2026-06-04",
-        "description": "Oracle WebLogic contains an unspecified vulnerability that could allow an unauthenticated attacker with network access via T3, IIOP to compromise Oracle WebLogic Server. Successful attacks of this vul",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 488,
-    "critical_count": 8,
+    "total": 478,
+    "critical_count": 10,
     "high_count": 41,
     "cves": [
       {
-        "cve_id": "CVE-2026-52813",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Gogs is an open source self-hosted Git service. Prior to 0.14.3, organization names containing path traversal sequences (../) are accepted by Gogs, and repositories under them are written to paths fol",
-        "published": "2026-06-24T21:16:57.353"
-      },
-      {
-        "cve_id": "CVE-2026-52806",
+        "cve_id": "CVE-2026-50551",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "Gogs is an open source self-hosted Git service. Prior to 0.14.3, Gogs allows authenticated users to achieve Remote Code Execution (RCE) on the server by creating a pull request with a specially crafte",
-        "published": "2026-06-24T21:16:56.440"
+        "description": "SiYuan is an open-source personal knowledge management system. Prior to 3.7.0, SiYuan contains a stored cross-site scripting (XSS) vulnerability in the Attribute View (database) asset cell renderer th",
+        "published": "2026-06-24T22:16:47.513"
       },
       {
-        "cve_id": "CVE-2026-49980",
+        "cve_id": "CVE-2026-54067",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "SiYuan is an open-source personal knowledge management system. Prior to 3.7.0, CSS snippet body containing </style> breaks out of its surrounding <style> tag when renderSnippet() interpolates it via i",
+        "published": "2026-06-24T22:16:48.177"
+      },
+      {
+        "cve_id": "CVE-2026-54158",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "SiYuan is an open-source personal knowledge management system. Prior to 3.7.0, the attribute-view (database) cell renderer genAVValueHTML interpolates cell content raw in four of its branches: text, u",
+        "published": "2026-06-24T22:16:48.740"
+      },
+      {
+        "cve_id": "CVE-2026-55454",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Appsmith is a platform to build admin panels, internal tools, and dashboards. Prior to 2.1, the bundled Caddy reverse-proxy's admin API \u2014 which has no authentication by default \u2014 is bound on 0.0.0.0:2",
+        "published": "2026-06-24T22:16:49.003"
+      },
+      {
+        "cve_id": "CVE-2026-39893",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Rclone is a command-line program to sync files and directories to and from different cloud storage providers. From 1.46.0 until 1.74.3, rclone rcd --rc-serve accepts unauthenticated GET and HEAD reque",
-        "published": "2026-06-24T19:17:11.597"
+        "description": "Cacti is an open source performance and fault management framework. In versions 1.2.30 and prior, the rfilter request variable was concatenated into a RLIKE SQL clause without sanitization. The endpoi",
+        "published": "2026-06-24T22:16:46.617"
       },
       {
-        "cve_id": "CVE-2026-13028",
+        "cve_id": "CVE-2026-39938",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in WebGL in Google Chrome on Android prior to 149.0.7827.197 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Crit",
-        "published": "2026-06-24T19:17:09.073"
+        "base_score": 9.8,
+        "description": "Cacti is an open source performance and fault management framework. Versions 1.2.30 and prior have unauthenticated LFI through graph_theme and rrdtool IPC serialization hardening. This issue has been ",
+        "published": "2026-06-24T23:16:40.677"
       },
       {
-        "cve_id": "CVE-2026-13032",
+        "cve_id": "CVE-2026-39948",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in WebGL in Google Chrome on Android prior to 149.0.7827.197 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Crit",
-        "published": "2026-06-24T19:17:09.483"
+        "base_score": 9.8,
+        "description": "Cacti is an open source performance and fault management framework. In versions 1.2.30 and prior, the rfilter request parameter is retrieved via the raw accessor grv() (rather than gfrv() with FILTER_",
+        "published": "2026-06-24T23:16:40.830"
       },
       {
-        "cve_id": "CVE-2026-53943",
+        "cve_id": "CVE-2026-39955",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Ghost is a Node.js content management system. From  until 6.37.0, when Ghost is behind a shared caching layer that results in cached content being shared between different visitors, an unauthenticated",
-        "published": "2026-06-24T19:17:11.820"
+        "base_score": 9.8,
+        "description": "Cacti is an open source performance and fault management framework. Versions 1.2.30 and prior have pre-authentication SQL Injection via unanchored FILTER_VALIDATE_REGEXP in graph_view.php. This issue ",
+        "published": "2026-06-24T23:16:40.980"
       },
       {
-        "cve_id": "CVE-2026-45688",
+        "cve_id": "CVE-2026-40079",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Rocket.Chat is an open-source, secure, fully customizable communications platform. Prior to 8.5.0, 8.4.1, 8.3.3, 8.2.3, 8.1.4, 8.0.5, 7.13.7, and 7.10.11, Rocket.Chat's CAS login handler forwards the ",
-        "published": "2026-06-24T21:16:53.847"
+        "base_score": 9.8,
+        "description": "Cacti is an open source performance and fault management framework. Versions 1.2.30 and prior are vulnerable to Command Injection due to lack of sanitization in the escape_command() function. The esca",
+        "published": "2026-06-25T00:17:47.570"
       },
       {
-        "cve_id": "CVE-2026-45689",
+        "cve_id": "CVE-2026-55570",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Rocket.Chat is an open-source, secure, fully customizable communications platform. Prior to 8.5.0, 8.4.1, 8.3.3, 8.2.3, 8.1.4, 8.0.5, 7.13.7, and 7.10.11, an unauthenticated network attacker obtains a",
-        "published": "2026-06-24T21:16:53.970"
+        "base_score": 9.0,
+        "description": "SiYuan is an open-source personal knowledge management system. Prior to 3.7.0, it does not escape the untrusted fields (name, version, author, description) when they are serialized into the data-obj H",
+        "published": "2026-06-24T22:16:49.260"
       },
       {
-        "cve_id": "CVE-2026-52798",
-        "severity": "HIGH",
-        "base_score": 8.9,
-        "description": "Gogs is an open source self-hosted Git service. Prior to 0.14.3, although .ipynb previews are sanitized on the server side via /-/api/sanitize_ipynb, the inserted content is re-rendered on the client ",
-        "published": "2026-06-24T21:16:55.533"
-      },
-      {
-        "cve_id": "CVE-2026-48704",
+        "cve_id": "CVE-2026-9772",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Warp is an agentic development environment. From 0.2023.10.24.08.03.stable_00 until 0.2026.05.06.15.42.stable_01, Warp may open executable local files through the operating system default file handler",
-        "published": "2026-06-24T18:17:17.853"
+        "description": "Unraid Web Server FileUpload Command Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Unraid. Authentica",
+        "published": "2026-06-24T22:16:49.803"
       },
       {
-        "cve_id": "CVE-2026-48720",
+        "cve_id": "CVE-2026-9773",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Warp is an agentic development environment. From 0.2025.03.05.08.02.stable_00 until 0.2026.05.06.15.42.stable_01, Warp accepts non-inline `OSC 1337;File` payloads from terminal output and materialize ",
-        "published": "2026-06-24T18:17:18.130"
+        "description": "Unraid Web Server ToggleState Command Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Unraid. Authentic",
+        "published": "2026-06-24T22:16:49.920"
       },
       {
-        "cve_id": "CVE-2026-48732",
+        "cve_id": "CVE-2026-7569",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Warp is an agentic development environment. From 0.2023.03.21.08.02.stable_00 until 0.2026.05.06.15.42.stable_01, Warp contains a command injection issue in the legacy SSH background command path. War",
-        "published": "2026-06-24T18:17:18.670"
+        "description": "Quest NetVault Backup viewclient Cross-Site Scripting Authentication Bypass Vulnerability. This vulnerability allows remote attackers to bypass authentication on affected installations of Quest NetVau",
+        "published": "2026-06-25T00:17:47.707"
       },
       {
-        "cve_id": "CVE-2026-13026",
+        "cve_id": "CVE-2026-7570",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Use after free in Digital Credentials in Google Chrome on Mac prior to 149.0.7827.197 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security sever",
-        "published": "2026-06-24T19:17:08.867"
+        "description": "Quest NetVault Backup NVBUDashboard SQL Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Quest NetVault ",
+        "published": "2026-06-25T00:17:47.823"
       },
       {
-        "cve_id": "CVE-2026-13027",
+        "cve_id": "CVE-2026-9780",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Use after free in FileSystem in Google Chrome prior to 149.0.7827.197 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-06-24T19:17:08.963"
+        "description": "Quest NetVault Backup addclient3 Cross-Site Scripting Authentication Bypass Vulnerability. This vulnerability allows remote attackers to bypass authentication on affected installations of Quest NetVau",
+        "published": "2026-06-25T00:17:48.187"
       },
       {
-        "cve_id": "CVE-2026-13031",
+        "cve_id": "CVE-2026-9781",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Use after free in Blink in Google Chrome prior to 149.0.7827.197 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-06-24T19:17:09.390"
+        "description": "Quest NetVault Backup NVBURASDevice SQL Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Quest NetVault ",
+        "published": "2026-06-25T00:17:48.293"
       },
       {
-        "cve_id": "CVE-2026-13033",
+        "cve_id": "CVE-2026-9782",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Out of bounds read and write in Blink>InterestGroups in Google Chrome prior to 149.0.7827.197 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: ",
-        "published": "2026-06-24T19:17:09.577"
+        "description": "Quest NetVault Backup NVBUDeviceDrive SQL Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Quest NetVaul",
+        "published": "2026-06-25T00:17:48.407"
       },
       {
-        "cve_id": "CVE-2026-13035",
+        "cve_id": "CVE-2026-9783",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Use after free in Bluetooth in Google Chrome on Mac prior to 149.0.7827.197 allowed a remote attacker to execute arbitrary code via a malicious peripheral. (Chromium security severity: High)",
-        "published": "2026-06-24T19:17:09.763"
+        "description": "Quest NetVault Backup NVBURemovableMedia SQL Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Quest NetV",
+        "published": "2026-06-25T00:17:48.520"
       },
       {
-        "cve_id": "CVE-2026-13036",
+        "cve_id": "CVE-2026-9784",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Use after free in Blink in Google Chrome prior to 149.0.7827.197 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-06-24T19:17:09.860"
+        "description": "Quest NetVault Backup NVBULibraryPort SQL Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Quest NetVaul",
+        "published": "2026-06-25T00:17:48.627"
       },
       {
-        "cve_id": "CVE-2026-13038",
+        "cve_id": "CVE-2026-9785",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Use after free in Autofill in Google Chrome on Windows prior to 149.0.7827.197 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: Critical)",
-        "published": "2026-06-24T19:17:10.047"
-      },
-      {
-        "cve_id": "CVE-2026-48793",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Jellyfin is an open source self hosted media server. Prior to 10.11.10, a potential FFmpeg argument injection vulnerability exists in the subtitle conversion code path. SubtitleEncoder.ConvertTextSubt",
-        "published": "2026-06-24T19:17:10.900"
+        "description": "Quest NetVault Backup NVBULibrarySlot SQL Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Quest NetVaul",
+        "published": "2026-06-25T00:17:48.737"
       }
     ]
   },
