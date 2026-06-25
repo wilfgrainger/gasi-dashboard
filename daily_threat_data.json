@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-25T02:28:20.725662+00:00",
+  "generated_at": "2026-06-25T07:34:36.369791+00:00",
   "threat_score": {
-    "score": 7.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 10,
-        "score": 3.0,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -238,86 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 534,
-    "critical_count": 10,
+    "total": 506,
+    "critical_count": 1,
     "high_count": 20,
     "cves": [
       {
-        "cve_id": "CVE-2026-12485",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "GV-I/O Box 4E is a smart embedded device with 4 input and 4 relays output that can be controlled over Ethernet and RS-485.\n\nDVRSearch is a service running by default on the IOBox listening for UDP mes",
-        "published": "2026-06-24T05:17:25.973"
-      },
-      {
-        "cve_id": "CVE-2026-12846",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "GV-I/O Box 4E is a smart embedded device with 4 input and 4 relays output that can be controlled over Ethernet and RS-485.\n\nDVRSearch is a service running by default on the IOBox listening for UDP mes",
-        "published": "2026-06-24T05:17:26.463"
-      },
-      {
-        "cve_id": "CVE-2026-12847",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "GV-I/O Box 4E is a smart embedded device with 4 input and 4 relays output that can be controlled over Ethernet and RS-485.\n\nDVRSearch is a service running by default on the IOBox listening for UDP mes",
-        "published": "2026-06-24T05:17:26.587"
-      },
-      {
-        "cve_id": "CVE-2026-12848",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "GV-I/O Box 4E is a smart embedded device with 4 input and 4 relays output that can be controlled over Ethernet and RS-485.\n\nDVRSearch is a service running by default on the IOBox listening for UDP mes",
-        "published": "2026-06-24T05:17:26.710"
-      },
-      {
-        "cve_id": "CVE-2026-12416",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Invoice Generator plugin for WordPress is vulnerable to Account Takeover via Password Reset in all versions up to, and including, 1.0.0. This is due to the `pravel_invoice_change_password()` funct",
-        "published": "2026-06-24T07:16:26.767"
-      },
-      {
-        "cve_id": "CVE-2026-12417",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The SignUp & SignIn plugin for WordPress is vulnerable to Authentication Bypass via Weak Password Reset Validation leading to Account Takeover in versions up to, and including, 1.0.0. This is due to t",
-        "published": "2026-06-24T07:16:26.890"
-      },
-      {
-        "cve_id": "CVE-2026-12486",
+        "cve_id": "CVE-2026-56237",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Multiple OS command injection vulnerabilities exist in the libNetSetObj.so functionality of GeoVision GV-I/O Box 4E 2.09. A specially crafted network packet can lead to command execution. An attacker ",
-        "published": "2026-06-24T05:17:26.220"
-      },
-      {
-        "cve_id": "CVE-2026-12849",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Multiple OS command injection vulnerabilities exist in the libNetSetObj.so functionality of GeoVision GV-I/O Box 4E 2.09. A specially crafted network packet can lead to command execution. An attacker ",
-        "published": "2026-06-24T05:17:26.890"
-      },
-      {
-        "cve_id": "CVE-2026-12850",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Multiple OS command injection vulnerabilities exist in the libNetSetObj.so functionality of GeoVision GV-I/O Box 4E 2.09. A specially crafted network packet can lead to command execution. An attacker ",
-        "published": "2026-06-24T05:17:27.020"
-      },
-      {
-        "cve_id": "CVE-2026-12851",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Multiple OS command injection vulnerabilities exist in the libNetSetObj.so functionality of GeoVision GV-I/O Box 4E 2.09. A specially crafted network packet can lead to command execution. An attacker ",
-        "published": "2026-06-24T05:17:27.157"
-      },
-      {
-        "cve_id": "CVE-2026-4297",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Welcome Software Publishing plugin for WordPress is vulnerable to Arbitrary Options Update in all versions up to and including 0.0.31. This is due to a missing capability check in the nc_setOption",
-        "published": "2026-06-24T07:16:27.310"
+        "description": "Capgo before 12.128.2 contains a broken authentication vulnerability in its API key generation mechanism. API keys are exposed in frontend requests, and the backend fails to validate that keys are sec",
+        "published": "2026-06-24T13:16:33.467"
       },
       {
         "cve_id": "CVE-2026-7761",
@@ -334,11 +264,53 @@
         "published": "2026-06-24T13:16:31.447"
       },
       {
+        "cve_id": "CVE-2026-56232",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Capgo before 12.128.2 fails to enforce limited_to_orgs and limited_to_apps constraints on subkeys provided via x-limited-key-id header in middlewareKey function. Attackers can bypass subkey scope rest",
+        "published": "2026-06-24T13:16:33.327"
+      },
+      {
+        "cve_id": "CVE-2026-57280",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Jenkins Script Security Plugin 1402.v94c9ce464861 and earlier does not intercept the implicit type casts applied to the elements of typed for-each loops in sandboxed Groovy scripts, allowing attackers",
+        "published": "2026-06-24T14:17:33.910"
+      },
+      {
+        "cve_id": "CVE-2026-57296",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Jenkins External Workspace Manager Plugin 1.3.2 and earlier does not reject path traversal sequences in the custom workspace path provided to the exwsAllocate Pipeline step, allowing attackers with It",
+        "published": "2026-06-24T14:17:35.790"
+      },
+      {
+        "cve_id": "CVE-2026-57301",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Jenkins OWASP ZAP Plugin 1.0.7 and earlier performs build operations on the Jenkins controller rather than the assigned agent, allowing attackers with Item/Configure permission to execute arbitrary co",
+        "published": "2026-06-24T14:17:36.230"
+      },
+      {
         "cve_id": "CVE-2026-56223",
         "severity": "HIGH",
         "base_score": 8.7,
         "description": "Capgo before 12.128.2 contains a cross-domain SSO account takeover vulnerability in the provision-user endpoint that allows attackers to merge arbitrary victim accounts based on email match without va",
         "published": "2026-06-24T13:16:33.067"
+      },
+      {
+        "cve_id": "CVE-2026-56245",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Supabase Capgo before 12.128.2 contains an authorization bypass vulnerability in the SECURITY DEFINER record_build_time RPC function that allows unauthenticated attackers to insert arbitrary build-tim",
+        "published": "2026-06-24T13:16:34.820"
+      },
+      {
+        "cve_id": "CVE-2026-56351",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "n8n before version 2.4.0 contains a sql injection vulnerability in MySQL, PostgreSQL, and Microsoft SQL nodes that allows authenticated users to inject arbitrary SQL through unescaped identifier value",
+        "published": "2026-06-24T13:16:36.473"
       },
       {
         "cve_id": "CVE-2025-71354",
@@ -355,18 +327,11 @@
         "published": "2026-06-24T13:16:30.543"
       },
       {
-        "cve_id": "CVE-2026-9709",
+        "cve_id": "CVE-2026-35025",
         "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "The Cornerstone WordPress plugin before 7.8.9 does not enforce capability checks on one of its REST API routes, allowing any authenticated user to disclose the metadata of any other user, including ro",
-        "published": "2026-06-24T07:16:30.217"
-      },
-      {
-        "cve_id": "CVE-2026-9710",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "The Cornerstone WordPress plugin before 7.8.8 does not enforce capability checks on one of its CSS-preview request handlers, and exposes the nonce needed to call it to every logged-in user on any wp-a",
-        "published": "2026-06-24T07:16:30.317"
+        "base_score": 8.1,
+        "description": "ProFTPD through 1.3.9b and 1.3.10rc2 contains an access control bypass vulnerability that allows authenticated FTP users to circumvent Directory ACL restrictions by prefixing paths with /proc/self/roo",
+        "published": "2026-06-24T14:17:30.950"
       },
       {
         "cve_id": "CVE-2026-56052",
@@ -376,11 +341,46 @@
         "published": "2026-06-24T08:16:24.623"
       },
       {
-        "cve_id": "CVE-2026-10735",
+        "cve_id": "CVE-2026-56231",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "Capgo before 12.128.2 contains a broken object level authorization (BOLA) vulnerability in the POST /build/start/:jobId and POST /build/cancel/:jobId endpoints. The handlers authorize the request base",
+        "published": "2026-06-24T13:16:33.200"
+      },
+      {
+        "cve_id": "CVE-2026-56270",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Multiple Shapedsmart-post-show-pro WordPress plugin before 4.0.2, Real Testimonials Pro WordPress plugin before 3.2.5, Product Slider for WooCommerce Pro WordPress plugin before 3.5.3 Pro smart-post-s",
-        "published": "2026-06-24T07:16:25.867"
+        "description": "Flowise before 3.1.0 (versions 3.0.13 and earlier) contains a missing authentication vulnerability in the /api/v1/loginmethod endpoint that allows unauthenticated users to retrieve an organization's c",
+        "published": "2026-06-24T13:16:35.540"
+      },
+      {
+        "cve_id": "CVE-2026-57281",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Jenkins Script Security Plugin 1402.v94c9ce464861 and earlier does not reject Groovy AST transformation annotations carrying an extensions member, allowing attackers able to run sandboxed Groovy scrip",
+        "published": "2026-06-24T14:17:34.023"
+      },
+      {
+        "cve_id": "CVE-2026-56244",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "Capgo before 12.128.2 allows non-admin API keys to read webhook signing secrets via Supabase REST due to insufficient row-level security policies on the webhooks table. Attackers can retrieve the webh",
+        "published": "2026-06-24T13:16:33.597"
+      },
+      {
+        "cve_id": "CVE-2026-56256",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "Capgo before 12.128.2 enforces mandatory two-factor authentication only at the UI level. Sensitive Organization (ORG) management API endpoints (e.g., editing organization details, inviting users) do n",
+        "published": "2026-06-24T13:16:34.980"
+      },
+      {
+        "cve_id": "CVE-2026-56257",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "Capgo before 12.128.2 allows direct patching of public.apps.owner_org through PostgREST, bypassing the transfer_app() workflow and creating split-brain ownership. Attackers can directly update apps.ow",
+        "published": "2026-06-24T13:16:35.123"
       }
     ]
   },
