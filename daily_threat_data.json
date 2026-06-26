@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-26T14:04:07.909488+00:00",
+  "generated_at": "2026-06-26T17:29:30.299593+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
-        "score": 2.5,
+        "value": 10,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 318,
-    "critical_count": 5,
-    "high_count": 39,
+    "total": 364,
+    "critical_count": 10,
+    "high_count": 43,
     "cves": [
       {
-        "cve_id": "CVE-2026-54823",
+        "cve_id": "CVE-2026-57700",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Contributor Remote Code Execution (RCE) in Widget Options <= 4.2.3 versions.",
-        "published": "2026-06-25T14:16:46.867"
+        "base_score": 10.0,
+        "description": "Unrestricted Upload of File with Dangerous Type vulnerability in Daan.Dev OMGF Pro allows Using Malicious Files.\n\nThis issue affects OMGF Pro: from n/a through 5.2.6.",
+        "published": "2026-06-25T19:16:45.973"
       },
       {
-        "cve_id": "CVE-2026-41120",
+        "cve_id": "CVE-2026-50548",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Dell Wyse Management Suite, versions prior to WMS 5.5 HF1, contain an Acceptance of Extraneous Untrusted Data With Trusted Data vulnerability. A low privileged attacker with remote access could potent",
-        "published": "2026-06-25T14:16:39.140"
+        "description": "Cursor is a code editor built for programming with AI. Prior to 3.0, Cursor runs agent terminal commands in a sandbox by default, and the sandbox grants write access to the command's working directory",
+        "published": "2026-06-25T19:16:39.660"
       },
       {
-        "cve_id": "CVE-2026-54836",
+        "cve_id": "CVE-2026-50549",
         "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in YMC Filter allows SQL Injection.\n\nThis issue affects YMC Filter: from n/a through 3.11.5.",
-        "published": "2026-06-25T14:16:47.743"
+        "base_score": 9.8,
+        "description": "Cursor is a code editor built for programming with AI. Prior to 3.0, Cursor runs agent terminal commands in a sandbox by default. Before a Write, the agent canonicalizes the target path to confirm it ",
+        "published": "2026-06-25T19:16:39.793"
       },
       {
-        "cve_id": "CVE-2026-54843",
+        "cve_id": "CVE-2026-56786",
         "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Unauthenticated SQL Injection in MDTF <= 1.3.7 versions.",
-        "published": "2026-06-25T14:16:48.383"
+        "base_score": 9.8,
+        "description": "RTKLIB through 2.4.3 contains an out-of-bounds write vulnerability in decode_type1033 function that fails to clamp length counters to destination buffer size, allowing up to 191-byte overflow into fix",
+        "published": "2026-06-25T19:16:44.997"
       },
       {
-        "cve_id": "CVE-2026-54849",
+        "cve_id": "CVE-2026-7531",
         "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Unauthenticated SQL Injection in Premmerce Wishlist for WooCommerce <= 1.1.11 versions.",
-        "published": "2026-06-25T14:16:49.183"
+        "base_score": 9.8,
+        "description": "Use-after-free in PQC hybrid key-share handling. This is an incomplete-fix follow-up to CVE-2026-5460 (released in 5.9.1): a malicious TLS 1.3 server sending a truncated PQC hybrid KeyShare can still ",
+        "published": "2026-06-25T20:17:17.763"
       },
       {
-        "cve_id": "CVE-2026-56053",
+        "cve_id": "CVE-2025-71334",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Flowise before 3.0.6 (affected versions 2.2.8 and earlier) contains an arbitrary file access vulnerability due to missing validation that the chatflowId and chatId parameters are UUIDs or numbers in f",
+        "published": "2026-06-25T22:16:59.127"
+      },
+      {
+        "cve_id": "CVE-2026-6094",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Heap buffer overread in wc_PKCS7_DecodeEnvelopedData when parsing crafted PKCS7 EnvelopedData. This could theoretically be triggered by attacker-supplied data delivered via S/MIME or CMS.",
+        "published": "2026-06-25T18:16:41.567"
+      },
+      {
+        "cve_id": "CVE-2026-54089",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "File Browser is a file managing interface for uploading, deleting, previewing, renaming, and editing files within a specified directory. Starting with 2.0.0-rc.1, when FileBrowser is configured with p",
+        "published": "2026-06-25T19:16:40.827"
+      },
+      {
+        "cve_id": "CVE-2026-56445",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The qrscp application's C-STORE handler uses a specific instance from attacker-supplied DICOM datasets directly in os.path.join() without sanitization, allowing file writes to arbitrary paths.",
+        "published": "2026-06-25T21:16:27.550"
+      },
+      {
+        "cve_id": "CVE-2025-71327",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Flowise contains an authentication bypass vulnerability in the unprotected /api/v1/account/register endpoint that allows unauthenticated attackers to create user accounts. Remote attackers can exploit",
+        "published": "2026-06-25T22:16:58.740"
+      },
+      {
+        "cve_id": "CVE-2026-50016",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Subscriber PHP Object Injection in EventPrime <= 4.3.4.1 versions.",
-        "published": "2026-06-25T14:16:51.160"
+        "description": "pnpm is a package manager. Prior to 10.34.0 and 11.4.0, pnpm allows a transitive dependency alias from registry package metadata to contain path traversal segments. During install, pnpm later uses tha",
+        "published": "2026-06-25T18:16:39.303"
       },
       {
-        "cve_id": "CVE-2026-54822",
+        "cve_id": "CVE-2026-55698",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "pnpm is a package manager. Prior to 10.34.2 and 11.5.3, pnpm can persist package-manager bootstrap metadata in the first YAML document of pnpm-lock.yaml. Before the patch, direct pnpm execution truste",
+        "published": "2026-06-25T18:16:40.837"
+      },
+      {
+        "cve_id": "CVE-2026-56766",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Hydra through 9.7, fixed in commit 9cc84c2, contains a stack buffer overflow in NTLM authentication across SMTP, POP3, IMAP, NNTP, HTTP, HTTP-Proxy, and HTTP-Proxy-Urlenum modules when processing mali",
+        "published": "2026-06-25T19:16:43.577"
+      },
+      {
+        "cve_id": "CVE-2026-56767",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Maxun before 0.0.42 contains a cross-tenant insecure direct object reference vulnerability in storage and webhook API handlers that allows authenticated users to access other users' robots and OAuth t",
+        "published": "2026-06-25T19:16:43.713"
+      },
+      {
+        "cve_id": "CVE-2026-56768",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Seahub before 13.0.23 does not enforce SHARE_LINK_LOGIN_REQUIRED on GET /api/v2.1/share-link-zip-task/, allowing unauthenticated users to bypass authentication. Attackers with a folder share-link toke",
+        "published": "2026-06-25T19:16:43.840"
+      },
+      {
+        "cve_id": "CVE-2026-56769",
         "severity": "HIGH",
         "base_score": 8.5,
-        "description": "Subscriber SQL Injection in SALESmanago & Leadoo <= 3.11.2 versions.",
-        "published": "2026-06-25T14:16:46.747"
+        "description": "Huly Platform through 0.7.423, fixed in commit 68cbf8a contains an authenticated server-side request forgery vulnerability in the /import endpoint of front pod that allows workspace users to make arbi",
+        "published": "2026-06-25T19:16:43.973"
       },
       {
-        "cve_id": "CVE-2026-54838",
+        "cve_id": "CVE-2026-56771",
         "severity": "HIGH",
         "base_score": 8.5,
-        "description": "Subscriber SQL Injection in WC Vendors Marketplace <= 2.6.8 versions.",
-        "published": "2026-06-25T14:16:47.907"
+        "description": "NewsBlur before version 14.5.0 contains a server-side request forgery vulnerability in the add_url endpoint that allows authenticated users to make arbitrary server requests to internal networks by fa",
+        "published": "2026-06-25T19:16:44.253"
       },
       {
-        "cve_id": "CVE-2026-56049",
+        "cve_id": "CVE-2026-54096",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Contributor Remote Code Execution (RCE) in Post Snippets <= 4.0.19 versions.",
-        "published": "2026-06-25T14:16:50.753"
+        "base_score": 8.4,
+        "description": "File Browser is a file managing interface for uploading, deleting, previewing, renaming, and editing files within a specified directory. Prior to 2.63.7, `POST /api/share/<path>` accepts an authentica",
+        "published": "2026-06-25T19:16:41.620"
       },
       {
-        "cve_id": "CVE-2026-54848",
+        "cve_id": "CVE-2025-71328",
         "severity": "HIGH",
         "base_score": 8.3,
-        "description": "Insertion of Sensitive Information Into Sent Data vulnerability in Saad Iqbal APIExperts Square for WooCommerce allows Retrieve Embedded Sensitive Data.\n\nThis issue affects APIExperts Square for WooCo",
-        "published": "2026-06-25T14:16:49.037"
+        "description": "Flowise before 3.0.10 contains an unverified password change vulnerability. An authenticated user can change their account password through the account settings (Security) section without supplying th",
+        "published": "2026-06-25T22:16:58.877"
       },
       {
-        "cve_id": "CVE-2026-57235",
+        "cve_id": "CVE-2026-55667",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "Nokogiri is an open source XML and HTML library for the Ruby programming language. Prior to 1.19.4, Nokogiri::XML::NodeSet#[] (and its alias #slice) checked the requested index against the node set's ",
-        "published": "2026-06-25T15:16:40.493"
-      },
-      {
-        "cve_id": "CVE-2026-57236",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Nokogiri is an open source XML and HTML library for the Ruby programming language. Prior to 1.19.4, calling Document#encoding= with an invalid encoding (e.g., a non-string, or a string containing a nu",
-        "published": "2026-06-25T15:16:40.627"
-      },
-      {
-        "cve_id": "CVE-2026-54842",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Missing Authorization vulnerability in Royal Plugins Royal MCP allows Exploiting Incorrectly Configured Access Control Security Levels.\n\nThis issue affects Royal MCP: from n/a through 1.4.25.",
-        "published": "2026-06-25T14:16:48.190"
-      },
-      {
-        "cve_id": "CVE-2026-54845",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Unauthenticated Local File Inclusion in MDTF <= 1.3.8 versions.",
-        "published": "2026-06-25T14:16:48.853"
-      },
-      {
-        "cve_id": "CVE-2026-46733",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Dell Display and Peripheral Manager (DDPM Windows), versions prior to 2.3, contain an Improper Access Control vulnerability. A low privileged attacker with local access could potentially exploit this ",
-        "published": "2026-06-25T14:16:40.363"
-      },
-      {
-        "cve_id": "CVE-2026-46735",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Dell Display and Peripheral Manager (DDPM Mac), versions prior to 2.3, contain an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. A low privil",
-        "published": "2026-06-25T15:16:35.797"
-      },
-      {
-        "cve_id": "CVE-2026-55693",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Vim is an open source, command line text editor. Prior to 9.2.0653, the tree_count_words() function in src/spellfile.c fills in the word-count fields of a spell-file word trie by walking it iterativel",
-        "published": "2026-06-25T16:16:40.220"
-      },
-      {
-        "cve_id": "CVE-2026-55895",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Vim is an open source, command line text editor. Prior to 9.2.0663, a Vimscript code injection vulnerability exists in s:NetrwLocalRmFile() in the netrw plugin (runtime/pack/dist/opt/netrw/autoload/ne",
-        "published": "2026-06-25T16:16:41.077"
-      },
-      {
-        "cve_id": "CVE-2026-57455",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Vim is an open source, command line text editor. Prior to 9.2.0698, the single-byte branch of spell_soundfold_sofo() in src/spell.c translates a word through a spell file's SOFO (sound-folding) byte m",
-        "published": "2026-06-25T16:16:42.773"
-      },
-      {
-        "cve_id": "CVE-2026-57456",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Vim is an open source, command line text editor. Prior to 9.2.0699, Vim's Python omni-completion (runtime/autoload/python3complete.vim and the legacy pythoncomplete.vim) executes reconstructed functio",
-        "published": "2026-06-25T16:16:42.900"
+        "description": "File Browser is a file managing interface for uploading, deleting, previewing, renaming, and editing files within a specified directory. Prior to 2.63.16, a scoped, non-admin File Browser user holding",
+        "published": "2026-06-25T19:16:43.017"
       }
     ]
   },
