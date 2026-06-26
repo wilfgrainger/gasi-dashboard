@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-06-25T21:22:20.699249+00:00",
+  "generated_at": "2026-06-26T02:30:18.271381+00:00",
   "threat_score": {
-    "score": 7.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.0,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 26,
+        "value": 23,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 10,
-        "score": 3.0,
+        "value": 0,
+        "score": 1.0,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1629,
-    "recent_30d_count": 26,
+    "recent_30d_count": 23,
     "recent": [
       {
         "cve_id": "CVE-2026-12569",
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 478,
-    "critical_count": 10,
-    "high_count": 41,
+    "total": 475,
+    "critical_count": 0,
+    "high_count": 12,
     "cves": [
       {
-        "cve_id": "CVE-2026-50551",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "SiYuan is an open-source personal knowledge management system. Prior to 3.7.0, SiYuan contains a stored cross-site scripting (XSS) vulnerability in the Attribute View (database) asset cell renderer th",
-        "published": "2026-06-24T22:16:47.513"
-      },
-      {
-        "cve_id": "CVE-2026-54067",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "SiYuan is an open-source personal knowledge management system. Prior to 3.7.0, CSS snippet body containing </style> breaks out of its surrounding <style> tag when renderSnippet() interpolates it via i",
-        "published": "2026-06-24T22:16:48.177"
-      },
-      {
-        "cve_id": "CVE-2026-54158",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "SiYuan is an open-source personal knowledge management system. Prior to 3.7.0, the attribute-view (database) cell renderer genAVValueHTML interpolates cell content raw in four of its branches: text, u",
-        "published": "2026-06-24T22:16:48.740"
-      },
-      {
-        "cve_id": "CVE-2026-55454",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Appsmith is a platform to build admin panels, internal tools, and dashboards. Prior to 2.1, the bundled Caddy reverse-proxy's admin API \u2014 which has no authentication by default \u2014 is bound on 0.0.0.0:2",
-        "published": "2026-06-24T22:16:49.003"
-      },
-      {
-        "cve_id": "CVE-2026-39893",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Cacti is an open source performance and fault management framework. In versions 1.2.30 and prior, the rfilter request variable was concatenated into a RLIKE SQL clause without sanitization. The endpoi",
-        "published": "2026-06-24T22:16:46.617"
-      },
-      {
-        "cve_id": "CVE-2026-39938",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Cacti is an open source performance and fault management framework. Versions 1.2.30 and prior have unauthenticated LFI through graph_theme and rrdtool IPC serialization hardening. This issue has been ",
-        "published": "2026-06-24T23:16:40.677"
-      },
-      {
-        "cve_id": "CVE-2026-39948",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Cacti is an open source performance and fault management framework. In versions 1.2.30 and prior, the rfilter request parameter is retrieved via the raw accessor grv() (rather than gfrv() with FILTER_",
-        "published": "2026-06-24T23:16:40.830"
-      },
-      {
-        "cve_id": "CVE-2026-39955",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Cacti is an open source performance and fault management framework. Versions 1.2.30 and prior have pre-authentication SQL Injection via unanchored FILTER_VALIDATE_REGEXP in graph_view.php. This issue ",
-        "published": "2026-06-24T23:16:40.980"
-      },
-      {
-        "cve_id": "CVE-2026-40079",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Cacti is an open source performance and fault management framework. Versions 1.2.30 and prior are vulnerable to Command Injection due to lack of sanitization in the escape_command() function. The esca",
-        "published": "2026-06-25T00:17:47.570"
-      },
-      {
-        "cve_id": "CVE-2026-55570",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "SiYuan is an open-source personal knowledge management system. Prior to 3.7.0, it does not escape the untrusted fields (name, version, author, description) when they are serialized into the data-obj H",
-        "published": "2026-06-24T22:16:49.260"
-      },
-      {
-        "cve_id": "CVE-2026-9772",
+        "cve_id": "CVE-2026-12244",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Unraid Web Server FileUpload Command Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Unraid. Authentica",
-        "published": "2026-06-24T22:16:49.803"
+        "description": "If NSD is configured as secondary for a zone, the primary of that zone can crash NSD with an AXFR containing a DNS message with a special crafted SVCB RR with an rdata size of 65512, that let's an (ui",
+        "published": "2026-06-25T07:16:44.900"
       },
       {
-        "cve_id": "CVE-2026-9773",
+        "cve_id": "CVE-2026-5305",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Unraid Web Server ToggleState Command Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Unraid. Authentic",
-        "published": "2026-06-24T22:16:49.920"
+        "description": "The Email Address Encoder WordPress plugin before 1.0.25, email-encoder-premium WordPress plugin before 0.3.12 does not properly handle email replacement, which could allow unauthenticated users to pe",
+        "published": "2026-06-25T07:16:45.737"
       },
       {
-        "cve_id": "CVE-2026-7569",
+        "cve_id": "CVE-2026-10086",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Quest NetVault Backup viewclient Cross-Site Scripting Authentication Bypass Vulnerability. This vulnerability allows remote attackers to bypass authentication on affected installations of Quest NetVau",
-        "published": "2026-06-25T00:17:47.707"
+        "base_score": 8.7,
+        "description": "GitLab has remediated an issue in GitLab EE affecting all versions from 16.4 before 18.11.6, 19.0 before 19.0.3, and 19.1 before 19.1.1 that under certain conditions could have allowed an authenticate",
+        "published": "2026-06-25T05:16:50.530"
       },
       {
-        "cve_id": "CVE-2026-7570",
+        "cve_id": "CVE-2026-12053",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Quest NetVault Backup NVBUDashboard SQL Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Quest NetVault ",
-        "published": "2026-06-25T00:17:47.823"
+        "base_score": 8.6,
+        "description": "GitLab has remediated an issue in GitLab EE affecting all versions from 19.1 before 19.1.1 that under certain conditions could have allowed a user to access sensitive information that had already been",
+        "published": "2026-06-25T05:16:50.890"
       },
       {
-        "cve_id": "CVE-2026-9780",
+        "cve_id": "CVE-2026-12246",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Quest NetVault Backup addclient3 Cross-Site Scripting Authentication Bypass Vulnerability. This vulnerability allows remote attackers to bypass authentication on affected installations of Quest NetVau",
-        "published": "2026-06-25T00:17:48.187"
+        "base_score": 8.1,
+        "description": "NSD version 4.14.0 introduced a bug where a specially crafted APL RR, with an adflength larger than permitted for the address family will overwrite the stack when the zone is written to disk, with a m",
+        "published": "2026-06-25T07:16:45.197"
       },
       {
-        "cve_id": "CVE-2026-9781",
+        "cve_id": "CVE-2026-10712",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Quest NetVault Backup NVBURASDevice SQL Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Quest NetVault ",
-        "published": "2026-06-25T00:17:48.293"
+        "base_score": 8.0,
+        "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.10 before 18.11.6, 19.0 before 19.0.3, and 19.1 before 19.1.1 that under certain conditions could have allowed an unauthen",
+        "published": "2026-06-25T05:16:50.640"
       },
       {
-        "cve_id": "CVE-2026-9782",
+        "cve_id": "CVE-2026-12077",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Quest NetVault Backup NVBUDeviceDrive SQL Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Quest NetVaul",
-        "published": "2026-06-25T00:17:48.407"
+        "base_score": 7.5,
+        "description": "The Dokan Pro plugin for WordPress is vulnerable to time-based SQL Injection via the via 'latitude' and 'longitude' parameters in all versions up to, and including, 5.0.4 due to insufficient escaping ",
+        "published": "2026-06-25T04:17:55.627"
       },
       {
-        "cve_id": "CVE-2026-9783",
+        "cve_id": "CVE-2026-13311",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Quest NetVault Backup NVBURemovableMedia SQL Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Quest NetV",
-        "published": "2026-06-25T00:17:48.520"
+        "base_score": 7.5,
+        "description": "shell-quote prior to 1.8.5 finalizes parsed tokens in parse() using Array.prototype.concat as a reduce accumulator, which reallocates and copies the entire growing array on every iteration. As a resul",
+        "published": "2026-06-25T05:16:52.763"
       },
       {
-        "cve_id": "CVE-2026-9784",
+        "cve_id": "CVE-2026-12245",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Quest NetVault Backup NVBULibraryPort SQL Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Quest NetVaul",
-        "published": "2026-06-25T00:17:48.627"
+        "base_score": 7.5,
+        "description": "NSD from version 4.13.0 has a heap use-after-free bug in logging errors on TLS connections, causing a crash of the server process, which can be triggered trivially by sending a DNS query over a DoT co",
+        "published": "2026-06-25T07:16:45.080"
       },
       {
-        "cve_id": "CVE-2026-9785",
+        "cve_id": "CVE-2026-12490",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Quest NetVault Backup NVBULibrarySlot SQL Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Quest NetVaul",
-        "published": "2026-06-25T00:17:48.737"
+        "base_score": 7.5,
+        "description": "When a provide-xfr is given with a tls-auth-name, a secondary requesting a transfer should provide a client certificate with that name. However, no client certificate is needed when the request comes ",
+        "published": "2026-06-25T07:16:45.330"
+      },
+      {
+        "cve_id": "CVE-2026-9702",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The InPost PL WordPress plugin before 1.9.1 does not verify that the request originates from the legitimate buyer before allowing the WooCommerce order parcel-locker destination to be updated, allowin",
+        "published": "2026-06-25T07:16:45.830"
+      },
+      {
+        "cve_id": "CVE-2026-12937",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Tourfic \u2013 AI Powered Travel Booking, Hotel Booking & Car Rental WordPress Plugin plugin for WordPress is vulnerable to generic SQL Injection via the 'post_id' parameter in all versions up to, and ",
+        "published": "2026-06-25T08:16:29.787"
+      },
+      {
+        "cve_id": "CVE-2026-12079",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "The Dokan Pro plugin for WordPress is vulnerable to time-based SQL Injection via the \u2019orderby\u2019 parameter in all versions up to, and including, 5.0.4 due to insufficient escaping on the user supplied p",
+        "published": "2026-06-25T04:17:55.913"
+      },
+      {
+        "cve_id": "CVE-2026-2508",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "The Gravity Forms Booking plugin for WordPress is vulnerable to time-based SQL Injection via the \u2018staff_id\u2019 parameter in all versions up to, and including, 2.7.1 due to insufficient escaping on the us",
+        "published": "2026-06-25T04:17:56.043"
+      },
+      {
+        "cve_id": "CVE-2026-10824",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "The Masteriyo LMS  WordPress plugin before 2.2.1 does not perform authorization checks in a course-progress REST API controller, allowing unauthenticated users to read and permanently delete any user'",
+        "published": "2026-06-25T07:16:44.767"
+      },
+      {
+        "cve_id": "CVE-2026-10833",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "The Gutenberg Essential Blocks \u2013 Page Builder for Gutenberg Blocks & Patterns plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'configurablePrefix' Block Attribute in all vers",
+        "published": "2026-06-25T04:17:52.507"
+      },
+      {
+        "cve_id": "CVE-2026-8658",
+        "severity": "MEDIUM",
+        "base_score": 6.0,
+        "description": "OS Command Injection vulnerability in Rapid7 InsightConnect Tcpdump Plugin on Linux allows authenticated attackers to execute arbitrary OS commands via the options or filter parameters due to insuffic",
+        "published": "2026-06-25T03:16:44.000"
+      },
+      {
+        "cve_id": "CVE-2026-56129",
+        "severity": "MEDIUM",
+        "base_score": 5.5,
+        "description": "Generic IO & Memory Access driver for PCs provided by TOSHIBA CORPORATION and Dynabook Inc. exposes its IOCTL with insufficient access control. A logged-in user with no administrative privilege may ac",
+        "published": "2026-06-25T08:16:29.960"
+      },
+      {
+        "cve_id": "CVE-2026-5309",
+        "severity": "MEDIUM",
+        "base_score": 5.4,
+        "description": "GitLab has remediated an issue in GitLab EE affecting all versions from 18.6 before 18.11.6, 19.0 before 19.0.3, and 19.1 before 19.1.1 that under certain conditions could have allowed an authenticate",
+        "published": "2026-06-25T05:16:55.390"
+      },
+      {
+        "cve_id": "CVE-2026-11379",
+        "severity": "MEDIUM",
+        "base_score": 5.3,
+        "description": "GitLab has remediated an issue in GitLab EE affecting all versions from 13.11 prior to 18.11.6, 19.0 prior to 19.0.3, and 19.1 prior to 19.1.1 in which incorrect authorization in DAST site profile man",
+        "published": "2026-06-25T05:16:50.767"
       }
     ]
   },
