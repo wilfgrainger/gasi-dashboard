@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T17:29:30.299593+00:00",
+  "generated_at": "2026-06-26T21:12:54.483150+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 10,
+        "value": 11,
         "score": 3.0,
         "max": 3
       },
@@ -238,44 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 364,
-    "critical_count": 10,
-    "high_count": 43,
+    "total": 377,
+    "critical_count": 11,
+    "high_count": 39,
     "cves": [
       {
-        "cve_id": "CVE-2026-57700",
+        "cve_id": "CVE-2025-71338",
         "severity": "CRITICAL",
         "base_score": 10.0,
-        "description": "Unrestricted Upload of File with Dangerous Type vulnerability in Daan.Dev OMGF Pro allows Using Malicious Files.\n\nThis issue affects OMGF Pro: from n/a through 5.2.6.",
-        "published": "2026-06-25T19:16:45.973"
-      },
-      {
-        "cve_id": "CVE-2026-50548",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Cursor is a code editor built for programming with AI. Prior to 3.0, Cursor runs agent terminal commands in a sandbox by default, and the sandbox grants write access to the command's working directory",
-        "published": "2026-06-25T19:16:39.660"
-      },
-      {
-        "cve_id": "CVE-2026-50549",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Cursor is a code editor built for programming with AI. Prior to 3.0, Cursor runs agent terminal commands in a sandbox by default. Before a Write, the agent canonicalizes the target path to confirm it ",
-        "published": "2026-06-25T19:16:39.793"
-      },
-      {
-        "cve_id": "CVE-2026-56786",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "RTKLIB through 2.4.3 contains an out-of-bounds write vulnerability in decode_type1033 function that fails to clamp length counters to destination buffer size, allowing up to 191-byte overflow into fix",
-        "published": "2026-06-25T19:16:44.997"
-      },
-      {
-        "cve_id": "CVE-2026-7531",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Use-after-free in PQC hybrid key-share handling. This is an incomplete-fix follow-up to CVE-2026-5460 (released in 5.9.1): a malicious TLS 1.3 server sending a truncated PQC hybrid KeyShare can still ",
-        "published": "2026-06-25T20:17:17.763"
+        "description": "Flowise contains a path traversal vulnerability in the /api/v1/document-store/loader/process endpoint that allows unauthenticated attackers to write arbitrary files to the filesystem. Attackers can ex",
+        "published": "2026-06-25T22:16:59.520"
       },
       {
         "cve_id": "CVE-2025-71334",
@@ -285,18 +257,53 @@
         "published": "2026-06-25T22:16:59.127"
       },
       {
-        "cve_id": "CVE-2026-6094",
+        "cve_id": "CVE-2025-71336",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Heap buffer overread in wc_PKCS7_DecodeEnvelopedData when parsing crafted PKCS7 EnvelopedData. This could theoretically be triggered by attacker-supplied data delivered via S/MIME or CMS.",
-        "published": "2026-06-25T18:16:41.567"
+        "base_score": 9.8,
+        "description": "Flowise before 3.0.6 (affected versions 2.2.7-patch.1 and earlier) contains an unsandboxed remote code execution vulnerability in the Custom MCP feature, which is designed to execute OS commands such ",
+        "published": "2026-06-25T22:16:59.390"
       },
       {
-        "cve_id": "CVE-2026-54089",
+        "cve_id": "CVE-2026-48930",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "File Browser is a file managing interface for uploading, deleting, previewing, renaming, and editing files within a specified directory. Starting with 2.0.0-rc.1, when FileBrowser is configured with p",
-        "published": "2026-06-25T19:16:40.827"
+        "base_score": 9.8,
+        "description": "A flaw in Node.js TLS hostname handling can cause Embedded-nul hostnames can lead to silent authority rebinding due to c-string truncation in resolver bindings.\r\n\r\nThis vulnerability affects all suppo",
+        "published": "2026-06-26T02:16:52.723"
+      },
+      {
+        "cve_id": "CVE-2026-57878",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An unauthenticated\nstack-based buffer overflow vulnerability exists in thttpd in GeoVision\nGV-LPC2011 and GV-LPC2211 V1.12 and earlier. The vulnerability is caused by\ninsufficient bounds checking when",
+        "published": "2026-06-26T08:16:24.773"
+      },
+      {
+        "cve_id": "CVE-2026-57879",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An unauthenticated\nstack-based buffer overflow vulnerability exists in ssvr in GeoVision\nGV-LPC2011 and GV-LPC2211 V1.12 and earlier. The vulnerability is caused by\ninsufficient bounds checking when p",
+        "published": "2026-06-26T08:16:24.877"
+      },
+      {
+        "cve_id": "CVE-2026-57880",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An unauthenticated\nstack-based buffer overflow vulnerability exists in ssvr in GeoVision\nGV-LPC2011 and GV-LPC2211 V1.12 and earlier. The vulnerability is caused by\ninsufficient bounds checking when p",
+        "published": "2026-06-26T08:16:24.983"
+      },
+      {
+        "cve_id": "CVE-2026-57881",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An unauthenticated\nstack-based buffer overflow vulnerability exists in vlsvr in GeoVision\nGV-LPC2011 and GV-LPC2211 V1.12 and earlier. The vulnerability is caused by\ninsufficient length validation whe",
+        "published": "2026-06-26T08:16:25.087"
+      },
+      {
+        "cve_id": "CVE-2026-40702",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "WebSocket endpoints lack proper authentication mechanisms, enabling attackers to impersonate charging stations. As a result, attackers can exploit this weakness to gain unauthorized access to sensitiv",
+        "published": "2026-06-25T22:17:01.483"
       },
       {
         "cve_id": "CVE-2026-56445",
@@ -313,60 +320,32 @@
         "published": "2026-06-25T22:16:58.740"
       },
       {
-        "cve_id": "CVE-2026-50016",
+        "cve_id": "CVE-2026-50741",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "pnpm is a package manager. Prior to 10.34.0 and 11.4.0, pnpm allows a transitive dependency alias from registry package metadata to contain path traversal segments. During install, pnpm later uses tha",
-        "published": "2026-06-25T18:16:39.303"
+        "description": "Bypass to the fix for CVE-2026-34916. Variants of such vectors have been also reported by phucrio and offsetmd. The fix can be bypassed either by sending a disallowed but otherwise valid plugin identi",
+        "published": "2026-06-26T02:16:53.627"
       },
       {
-        "cve_id": "CVE-2026-55698",
+        "cve_id": "CVE-2026-57877",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "pnpm is a package manager. Prior to 10.34.2 and 11.5.3, pnpm can persist package-manager bootstrap metadata in the first YAML document of pnpm-lock.yaml. Before the patch, direct pnpm execution truste",
-        "published": "2026-06-25T18:16:40.837"
+        "base_score": 8.6,
+        "description": "An unauthenticated\nformat string vulnerability exists in vlsvr in GeoVision GV-LPC2011 and\nGV-LPC2211 V1.12 and earlier. The vulnerability is caused by improper handling\nof externally controlled input",
+        "published": "2026-06-26T08:16:24.667"
       },
       {
-        "cve_id": "CVE-2026-56766",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Hydra through 9.7, fixed in commit 9cc84c2, contains a stack buffer overflow in NTLM authentication across SMTP, POP3, IMAP, NNTP, HTTP, HTTP-Proxy, and HTTP-Proxy-Urlenum modules when processing mali",
-        "published": "2026-06-25T19:16:43.577"
-      },
-      {
-        "cve_id": "CVE-2026-56767",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Maxun before 0.0.42 contains a cross-tenant insecure direct object reference vulnerability in storage and webhook API handlers that allows authenticated users to access other users' robots and OAuth t",
-        "published": "2026-06-25T19:16:43.713"
-      },
-      {
-        "cve_id": "CVE-2026-56768",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Seahub before 13.0.23 does not enforce SHARE_LINK_LOGIN_REQUIRED on GET /api/v2.1/share-link-zip-task/, allowing unauthenticated users to bypass authentication. Attackers with a folder share-link toke",
-        "published": "2026-06-25T19:16:43.840"
-      },
-      {
-        "cve_id": "CVE-2026-56769",
+        "cve_id": "CVE-2026-12975",
         "severity": "HIGH",
         "base_score": 8.5,
-        "description": "Huly Platform through 0.7.423, fixed in commit 68cbf8a contains an authenticated server-side request forgery vulnerability in the /import endpoint of front pod that allows workspace users to make arbi",
-        "published": "2026-06-25T19:16:43.973"
+        "description": "A flaw was found in Apicurio Registry. The ContentTypeUtil.isParsableXml() method creates a SAXParserFactory without enabling secure processing features or disabling external entity resolution. An att",
+        "published": "2026-06-25T22:17:00.620"
       },
       {
-        "cve_id": "CVE-2026-56771",
+        "cve_id": "CVE-2026-13325",
         "severity": "HIGH",
         "base_score": 8.5,
-        "description": "NewsBlur before version 14.5.0 contains a server-side request forgery vulnerability in the add_url endpoint that allows authenticated users to make arbitrary server requests to internal networks by fa",
-        "published": "2026-06-25T19:16:44.253"
-      },
-      {
-        "cve_id": "CVE-2026-54096",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "File Browser is a file managing interface for uploading, deleting, previewing, renaming, and editing files within a specified directory. Prior to 2.63.7, `POST /api/share/<path>` accepts an authentica",
-        "published": "2026-06-25T19:16:41.620"
+        "description": "A flaw was found in KubeVirt's migration proxy. When spec.configuration.migrations.disableTLS is set to true on the KubeVirt custom resource, the target virt-handler binds a plain TCP listener on all ",
+        "published": "2026-06-26T11:16:30.830"
       },
       {
         "cve_id": "CVE-2025-71328",
@@ -376,11 +355,32 @@
         "published": "2026-06-25T22:16:58.877"
       },
       {
-        "cve_id": "CVE-2026-55667",
+        "cve_id": "CVE-2026-13281",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "Integer overflow in Mojo in Google Chrome prior to 149.0.7827.201 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a malicious file. (Chro",
+        "published": "2026-06-25T22:17:00.880"
+      },
+      {
+        "cve_id": "CVE-2026-2053",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "The WSO2 API Manager's message flow component, when processing WS-Addressing headers, does not sufficiently validate or restrict user-controlled input within these headers. This omission allows an att",
+        "published": "2026-06-26T08:16:21.603"
+      },
+      {
+        "cve_id": "CVE-2026-12473",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "File Browser is a file managing interface for uploading, deleting, previewing, renaming, and editing files within a specified directory. Prior to 2.63.16, a scoped, non-admin File Browser user holding",
-        "published": "2026-06-25T19:16:43.017"
+        "description": "Two data sources (DICOMWebProxy and DICOMJSON) shipped in the default configuration fetch an arbitrary URL parameter without validation. A global authentication service in OHIF automatically injects t",
+        "published": "2026-06-25T21:16:26.530"
+      },
+      {
+        "cve_id": "CVE-2025-71335",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Flowise before 3.0.10 (affected versions 3.0.7 and earlier) fails to invalidate existing sessions and session tokens after a user changes their password. An attacker who already holds an active sessio",
+        "published": "2026-06-25T22:16:59.260"
       }
     ]
   },
