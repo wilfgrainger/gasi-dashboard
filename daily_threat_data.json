@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T02:30:18.271381+00:00",
+  "generated_at": "2026-06-26T07:42:25.166511+00:00",
   "threat_score": {
     "score": 5.0,
     "level": "ELEVATED",
@@ -238,128 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 475,
+    "total": 453,
     "critical_count": 0,
-    "high_count": 12,
+    "high_count": 1,
     "cves": [
-      {
-        "cve_id": "CVE-2026-12244",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "If NSD is configured as secondary for a zone, the primary of that zone can crash NSD with an AXFR containing a DNS message with a special crafted SVCB RR with an rdata size of 65512, that let's an (ui",
-        "published": "2026-06-25T07:16:44.900"
-      },
-      {
-        "cve_id": "CVE-2026-5305",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Email Address Encoder WordPress plugin before 1.0.25, email-encoder-premium WordPress plugin before 0.3.12 does not properly handle email replacement, which could allow unauthenticated users to pe",
-        "published": "2026-06-25T07:16:45.737"
-      },
-      {
-        "cve_id": "CVE-2026-10086",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "GitLab has remediated an issue in GitLab EE affecting all versions from 16.4 before 18.11.6, 19.0 before 19.0.3, and 19.1 before 19.1.1 that under certain conditions could have allowed an authenticate",
-        "published": "2026-06-25T05:16:50.530"
-      },
-      {
-        "cve_id": "CVE-2026-12053",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "GitLab has remediated an issue in GitLab EE affecting all versions from 19.1 before 19.1.1 that under certain conditions could have allowed a user to access sensitive information that had already been",
-        "published": "2026-06-25T05:16:50.890"
-      },
-      {
-        "cve_id": "CVE-2026-12246",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "NSD version 4.14.0 introduced a bug where a specially crafted APL RR, with an adflength larger than permitted for the address family will overwrite the stack when the zone is written to disk, with a m",
-        "published": "2026-06-25T07:16:45.197"
-      },
-      {
-        "cve_id": "CVE-2026-10712",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.10 before 18.11.6, 19.0 before 19.0.3, and 19.1 before 19.1.1 that under certain conditions could have allowed an unauthen",
-        "published": "2026-06-25T05:16:50.640"
-      },
-      {
-        "cve_id": "CVE-2026-12077",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Dokan Pro plugin for WordPress is vulnerable to time-based SQL Injection via the via 'latitude' and 'longitude' parameters in all versions up to, and including, 5.0.4 due to insufficient escaping ",
-        "published": "2026-06-25T04:17:55.627"
-      },
-      {
-        "cve_id": "CVE-2026-13311",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "shell-quote prior to 1.8.5 finalizes parsed tokens in parse() using Array.prototype.concat as a reduce accumulator, which reallocates and copies the entire growing array on every iteration. As a resul",
-        "published": "2026-06-25T05:16:52.763"
-      },
-      {
-        "cve_id": "CVE-2026-12245",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "NSD from version 4.13.0 has a heap use-after-free bug in logging errors on TLS connections, causing a crash of the server process, which can be triggered trivially by sending a DNS query over a DoT co",
-        "published": "2026-06-25T07:16:45.080"
-      },
-      {
-        "cve_id": "CVE-2026-12490",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "When a provide-xfr is given with a tls-auth-name, a secondary requesting a transfer should provide a client certificate with that name. However, no client certificate is needed when the request comes ",
-        "published": "2026-06-25T07:16:45.330"
-      },
-      {
-        "cve_id": "CVE-2026-9702",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The InPost PL WordPress plugin before 1.9.1 does not verify that the request originates from the legitimate buyer before allowing the WooCommerce order parcel-locker destination to be updated, allowin",
-        "published": "2026-06-25T07:16:45.830"
-      },
       {
         "cve_id": "CVE-2026-12937",
         "severity": "HIGH",
         "base_score": 7.5,
         "description": "The Tourfic \u2013 AI Powered Travel Booking, Hotel Booking & Car Rental WordPress Plugin plugin for WordPress is vulnerable to generic SQL Injection via the 'post_id' parameter in all versions up to, and ",
         "published": "2026-06-25T08:16:29.787"
-      },
-      {
-        "cve_id": "CVE-2026-12079",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "The Dokan Pro plugin for WordPress is vulnerable to time-based SQL Injection via the \u2019orderby\u2019 parameter in all versions up to, and including, 5.0.4 due to insufficient escaping on the user supplied p",
-        "published": "2026-06-25T04:17:55.913"
-      },
-      {
-        "cve_id": "CVE-2026-2508",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "The Gravity Forms Booking plugin for WordPress is vulnerable to time-based SQL Injection via the \u2018staff_id\u2019 parameter in all versions up to, and including, 2.7.1 due to insufficient escaping on the us",
-        "published": "2026-06-25T04:17:56.043"
-      },
-      {
-        "cve_id": "CVE-2026-10824",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "The Masteriyo LMS  WordPress plugin before 2.2.1 does not perform authorization checks in a course-progress REST API controller, allowing unauthenticated users to read and permanently delete any user'",
-        "published": "2026-06-25T07:16:44.767"
-      },
-      {
-        "cve_id": "CVE-2026-10833",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The Gutenberg Essential Blocks \u2013 Page Builder for Gutenberg Blocks & Patterns plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'configurablePrefix' Block Attribute in all vers",
-        "published": "2026-06-25T04:17:52.507"
-      },
-      {
-        "cve_id": "CVE-2026-8658",
-        "severity": "MEDIUM",
-        "base_score": 6.0,
-        "description": "OS Command Injection vulnerability in Rapid7 InsightConnect Tcpdump Plugin on Linux allows authenticated attackers to execute arbitrary OS commands via the options or filter parameters due to insuffic",
-        "published": "2026-06-25T03:16:44.000"
       },
       {
         "cve_id": "CVE-2026-56129",
@@ -369,18 +257,130 @@
         "published": "2026-06-25T08:16:29.960"
       },
       {
-        "cve_id": "CVE-2026-5309",
-        "severity": "MEDIUM",
-        "base_score": 5.4,
-        "description": "GitLab has remediated an issue in GitLab EE affecting all versions from 18.6 before 18.11.6, 19.0 before 19.0.3, and 19.1 before 19.1.1 that under certain conditions could have allowed an authenticate",
-        "published": "2026-06-25T05:16:55.390"
+        "cve_id": "CVE-2026-41566",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "Improper Handling of Insufficient Permissions or Privileges vulnerability in Apache Kvrocks.\n\nThis issue affects Apache Kvrocks: 2.8.0.\n\nUsers are recommended to upgrade to version 2.16.0, which fixes",
+        "published": "2026-06-25T09:16:29.767"
       },
       {
-        "cve_id": "CVE-2026-11379",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "GitLab has remediated an issue in GitLab EE affecting all versions from 13.11 prior to 18.11.6, 19.0 prior to 19.0.3, and 19.1 prior to 19.1.1 in which incorrect authorization in DAST site profile man",
-        "published": "2026-06-25T05:16:50.767"
+        "cve_id": "CVE-2026-45188",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "Relative Path Traversal vulnerability in Apache Kvrocks.\n\nThis issue affects Apache Kvrocks: from 1.0.0 through 2.15.0.\n\nUsers are recommended to upgrade to version 2.16.0, which fixes the issue.",
+        "published": "2026-06-25T09:16:29.937"
+      },
+      {
+        "cve_id": "CVE-2026-46751",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "A vulnerability in Apache Kvrocks.\n\nThis issue affects Apache Kvrocks: from 2.2.0 through 2.15.0.\n\nUsers are recommended to upgrade to version 2.16.0, which fixes the issue.",
+        "published": "2026-06-25T09:16:30.070"
+      },
+      {
+        "cve_id": "CVE-2026-46752",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "Redis Lua HEAP overflow in cjson library vulnerability in Apache Kvrocks.\n\nThis issue affects Apache Kvrocks: from 2.0.4 through 2.15.0.\n\nUsers are recommended to upgrade to version 2.16.0, which fixe",
+        "published": "2026-06-25T09:16:30.190"
+      },
+      {
+        "cve_id": "CVE-2026-53131",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: require Ethernet MAC header before using eth_hdr()\n\n`ip6t_eui64`, `xt_mac`, the `bitmap:ip,mac`, `hash:ip,mac`, and\n`has",
+        "published": "2026-06-25T09:16:30.307"
+      },
+      {
+        "cve_id": "CVE-2026-53132",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nvsock/virtio: fix potential unbounded skb queue\n\nvirtio_transport_inc_rx_pkt() checks vvs->rx_bytes + len > vvs->buf_alloc.\n\nvirtio",
+        "published": "2026-06-25T09:16:30.437"
+      },
+      {
+        "cve_id": "CVE-2026-53133",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nRDMA/umem: Fix truncation for block sizes >= 4G\n\nWhen the iommu is used the linearization of the mapping can give a single\nblock th",
+        "published": "2026-06-25T09:16:30.537"
+      },
+      {
+        "cve_id": "CVE-2026-53134",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnetfilter: nft_fib: fix stale stack leak via the OIFNAME register\n\nFor NFT_FIB_RESULT_OIFNAME the destination register is declared ",
+        "published": "2026-06-25T09:16:30.657"
+      },
+      {
+        "cve_id": "CVE-2026-53135",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amd/display: Fix NULL deref and buffer over-read in SDP debugfs\n\n[Why & How]\ndp_sdp_message_debugfs_write() dereferences connec",
+        "published": "2026-06-25T09:16:30.787"
+      },
+      {
+        "cve_id": "CVE-2026-53136",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amd/display: Clamp VBIOS HDMI retimer register count to array size\n\n[Why & How]\nThe VBIOS integrated info tables (v1_11 and v2_",
+        "published": "2026-06-25T09:16:30.910"
+      },
+      {
+        "cve_id": "CVE-2026-53137",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amd/display: Clamp HDMI HDCP2 rx_id_list read to buffer size\n\n[Why & How]\nDuring HDCP 2.x repeater authentication over HDMI, th",
+        "published": "2026-06-25T09:16:31.030"
+      },
+      {
+        "cve_id": "CVE-2026-53138",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amd/display: Bound VBIOS record-chain walk loops\n\n[Why & How]\nAll record-chain walk loops in bios_parser.c and bios_parser2.c u",
+        "published": "2026-06-25T09:16:31.150"
+      },
+      {
+        "cve_id": "CVE-2026-53139",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/v3d: Skip CSD when it has zeroed workgroups\n\nA compute shader dispatch encodes its workgroup counts in the CFG0..CFG2\nregisters",
+        "published": "2026-06-25T09:16:31.247"
+      },
+      {
+        "cve_id": "CVE-2026-53140",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/v3d: Fix vaddr leak when indirect CSD has zeroed workgroups\n\nv3d_rewrite_csd_job_wg_counts_from_indirect() maps both the indire",
+        "published": "2026-06-25T09:16:31.337"
+      },
+      {
+        "cve_id": "CVE-2026-53141",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/v3d: Fix global performance monitor reference counting\n\nIn the SET_GLOBAL ioctl, v3d_perfmon_find() bumps the reference count o",
+        "published": "2026-06-25T09:16:31.423"
+      },
+      {
+        "cve_id": "CVE-2026-53142",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/xe/display: fix oops in suspend/shutdown without display\n\nThe xe driver keeps track of whether to probe display, and whether\ndi",
+        "published": "2026-06-25T09:16:31.513"
+      },
+      {
+        "cve_id": "CVE-2026-53143",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdkfd: Fix buffer overflow in SDMA queue checkpoint/restore on GFX11\n\nThe v11 MQD manager incorrectly assigned the CP-compute ",
+        "published": "2026-06-25T09:16:31.607"
+      },
+      {
+        "cve_id": "CVE-2026-53144",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdkfd: fix NULL dereference in get_queue_ids()\n\nWhen usr_queue_id_array is NULL and num_queues is non-zero,\nget_queue_ids() re",
+        "published": "2026-06-25T09:16:31.710"
       }
     ]
   },
