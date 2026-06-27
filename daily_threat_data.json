@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-27T13:11:05.622828+00:00",
+  "generated_at": "2026-06-27T16:57:57.390421+00:00",
   "threat_score": {
-    "score": 4.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.5,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 0.5,
+        "value": 9,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,10 +238,151 @@
     ]
   },
   "nvd": {
-    "total": 0,
-    "critical_count": 0,
-    "high_count": 0,
-    "cves": []
+    "total": 177,
+    "critical_count": 9,
+    "high_count": 17,
+    "cves": [
+      {
+        "cve_id": "CVE-2026-46386",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "OpenProject is open-source, web-based project management software. Prior to , the official openproject/openproject Docker image ships ENV SECRET_KEY_BASE=OVERWRITE_ME as the default Rails master key. ",
+        "published": "2026-06-26T20:17:13.380"
+      },
+      {
+        "cve_id": "CVE-2026-52782",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "OpenProject is open-source, web-based project management software. Prior to 17.3.3 and 17.4.1, there is an IDOR through /projects/<A>/settings/project_storages/<A_ps_id> via PATCH parameter \"storages_",
+        "published": "2026-06-26T20:17:18.737"
+      },
+      {
+        "cve_id": "CVE-2026-52785",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "OpenProject is open-source, web-based project management software. Prior to 17.3.3 and 17.4.1, there is a SQL injection in timestamps functionality. OpenProject baseline comparison allows callers to r",
+        "published": "2026-06-26T20:17:19.133"
+      },
+      {
+        "cve_id": "CVE-2026-33646",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "mise manages dev tools like node, python, cmake, and terraform. Prior to 2026.3.10, mise processes .tool-versions files through the Tera template engine during parsing, with the exec() function regist",
+        "published": "2026-06-26T18:16:58.420"
+      },
+      {
+        "cve_id": "CVE-2026-52780",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "OpenProject is open-source, web-based project management software. Prior to 17.3.3 and 17.4.1, cache store poisoning leads to Remote Code Execution (RCE). This vulnerability is fixed in 17.3.3 and 17.",
+        "published": "2026-06-26T20:17:18.490"
+      },
+      {
+        "cve_id": "CVE-2026-45405",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "Dokku is a docker-powered PaaS. Prior to 0.38.2, the git:from-archive and certs:add commands extract user-supplied tar/zip archives into temporary directories without sanitizing member paths or preven",
+        "published": "2026-06-26T17:16:33.007"
+      },
+      {
+        "cve_id": "CVE-2026-45406",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "Dokku is a docker-powered PaaS. Prior to 0.38.2, the openresty-vhosts plugin copies files from an app's openresty/http-includes/ git repository directory to the host and then interpolates their filena",
+        "published": "2026-06-26T17:16:33.150"
+      },
+      {
+        "cve_id": "CVE-2026-45408",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "Dokku is a docker-powered PaaS. Prior to 0.38.2, the app name validation regex (^[a-z0-9][^/:_A-Z]*$) permits shell metacharacters. When an authenticated user pushes to a git remote with a crafted app",
+        "published": "2026-06-26T17:16:33.427"
+      },
+      {
+        "cve_id": "CVE-2026-54636",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "Dokku is a docker-powered PaaS. Prior to 0.38.7, the cron plugin utilizes commands in the app.json file to manage system cron running as the Dokku user. An app.json cron command utilizing special shel",
+        "published": "2026-06-26T17:16:34.083"
+      },
+      {
+        "cve_id": "CVE-2026-57518",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Pagekit CMS 1.0.18 contains a privilege escalation vulnerability that allows authenticated users with the 'user: manage users' permission to escalate privileges by assigning arbitrary custom roles to ",
+        "published": "2026-06-26T17:16:34.927"
+      },
+      {
+        "cve_id": "CVE-2026-32833",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Cudy LT300 3.0 running firmware prior to version 2.5.12 contains an OS command injection vulnerability that allows authenticated attackers to execute arbitrary commands by injecting shell metacharacte",
+        "published": "2026-06-26T20:16:54.583"
+      },
+      {
+        "cve_id": "CVE-2026-52784",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "OpenProject is open-source, web-based project management software. Prior to 17.3.3 and 17.4.1, there is a CSRF on TARGET through /users/:id via POST parameter \"user[admin]\". This vulnerability is fixe",
+        "published": "2026-06-26T20:17:18.993"
+      },
+      {
+        "cve_id": "CVE-2026-55441",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "mise manages dev tools like node, python, cmake, and terraform. Prior to 2026.6.4, mise's trust feature gates config files (mise.toml, .tool-versions) through trust_check, but task-include files are l",
+        "published": "2026-06-26T18:17:01.190"
+      },
+      {
+        "cve_id": "CVE-2026-49991",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "RustFS is a distributed object storage system built in Rust. In 1.0.0-beta.4, authenticated users with only PutObject permission on their own bucket can exploit a path traversal vulnerability in the S",
+        "published": "2026-06-26T20:17:17.817"
+      },
+      {
+        "cve_id": "CVE-2026-56663",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. Prior to 0.6.52, an authenticated user can bypass the SSRF / private-IP prote",
+        "published": "2026-06-26T17:16:34.453"
+      },
+      {
+        "cve_id": "CVE-2026-52783",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "OpenProject is open-source, web-based project management software. Prior to 17.3.3 and 17.4.1, OpenProject's Storages module writes the OneDrive/SharePoint userless OAuth access_token plaintext to Rai",
+        "published": "2026-06-26T20:17:18.860"
+      },
+      {
+        "cve_id": "CVE-2026-56876",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "extract-zip does not validate symlink targets when extracting zip archives. When processing a malicious zip file containing a symlink with a relative path like '../../../../etc/passwd', extract-zip wi",
+        "published": "2026-06-26T18:17:03.447"
+      },
+      {
+        "cve_id": "CVE-2026-55677",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Echo is a Go web framework. Prior to 4.15.3 and 5.2.0, Echo's router and static file handler disagree on URL path decoding. The router matches routes using the raw encoded path (preserving %2F as-is),",
+        "published": "2026-06-26T17:16:34.203"
+      },
+      {
+        "cve_id": "CVE-2026-57231",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Podman is a tool for managing OCI containers and pods. From 1.8.1 until 5.8.4, a container image that contains a environment variable with just a key and no value can trick podman into passing that va",
+        "published": "2026-06-26T17:16:34.697"
+      },
+      {
+        "cve_id": "CVE-2026-48042",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Envoy is an open source edge and service proxy designed for cloud-native applications. Prior to 1.35.11, 1.36.7, 1.37.3, and 1.38.1, destructor of JSON Object results in stack overflow when deeply O(1",
+        "published": "2026-06-26T18:16:59.630"
+      }
+    ]
   },
   "top_ips": {
     "ips": [],
