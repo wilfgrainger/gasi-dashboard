@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T21:12:54.483150+00:00",
+  "generated_at": "2026-06-27T02:14:37.884846+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 11,
+        "value": 12,
         "score": 3.0,
         "max": 3
       },
@@ -238,30 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 377,
-    "critical_count": 11,
-    "high_count": 39,
+    "total": 353,
+    "critical_count": 12,
+    "high_count": 43,
     "cves": [
       {
-        "cve_id": "CVE-2025-71338",
+        "cve_id": "CVE-2026-56027",
         "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Flowise contains a path traversal vulnerability in the /api/v1/document-store/loader/process endpoint that allows unauthenticated attackers to write arbitrary files to the filesystem. Attackers can ex",
-        "published": "2026-06-25T22:16:59.520"
-      },
-      {
-        "cve_id": "CVE-2025-71334",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Flowise before 3.0.6 (affected versions 2.2.8 and earlier) contains an arbitrary file access vulnerability due to missing validation that the chatflowId and chatId parameters are UUIDs or numbers in f",
-        "published": "2026-06-25T22:16:59.127"
-      },
-      {
-        "cve_id": "CVE-2025-71336",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Flowise before 3.0.6 (affected versions 2.2.7-patch.1 and earlier) contains an unsandboxed remote code execution vulnerability in the Custom MCP feature, which is designed to execute OS commands such ",
-        "published": "2026-06-25T22:16:59.390"
+        "base_score": 9.9,
+        "description": "Customer Arbitrary File Upload in Booster for WooCommerce <= 8.0.1 versions.",
+        "published": "2026-06-26T15:16:42.540"
       },
       {
         "cve_id": "CVE-2026-48930",
@@ -299,25 +285,46 @@
         "published": "2026-06-26T08:16:25.087"
       },
       {
-        "cve_id": "CVE-2026-40702",
+        "cve_id": "CVE-2026-54820",
         "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "WebSocket endpoints lack proper authentication mechanisms, enabling attackers to impersonate charging stations. As a result, attackers can exploit this weakness to gain unauthorized access to sensitiv",
-        "published": "2026-06-25T22:17:01.483"
+        "base_score": 9.3,
+        "description": "Unauthenticated SQL Injection in JetBooking <= 4.0.4.1 versions.",
+        "published": "2026-06-26T15:16:39.977"
       },
       {
-        "cve_id": "CVE-2026-56445",
+        "cve_id": "CVE-2026-54825",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The qrscp application's C-STORE handler uses a specific instance from attacker-supplied DICOM datasets directly in os.path.join() without sanitization, allowing file writes to arbitrary paths.",
-        "published": "2026-06-25T21:16:27.550"
+        "base_score": 9.3,
+        "description": "Unauthenticated SQL Injection in wpDataTables <= 7.4 versions.",
+        "published": "2026-06-26T15:16:40.230"
       },
       {
-        "cve_id": "CVE-2025-71327",
+        "cve_id": "CVE-2026-54827",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Unauthenticated SQL Injection in Real Estate 7 <= 3.5.9 versions.",
+        "published": "2026-06-26T15:16:40.467"
+      },
+      {
+        "cve_id": "CVE-2026-54831",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Unauthenticated SQL Injection in GeoDirectory <= 2.8.162 versions.",
+        "published": "2026-06-26T15:16:40.587"
+      },
+      {
+        "cve_id": "CVE-2025-55017",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Flowise contains an authentication bypass vulnerability in the unprotected /api/v1/account/register endpoint that allows unauthenticated attackers to create user accounts. Remote attackers can exploit",
-        "published": "2026-06-25T22:16:58.740"
+        "description": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Apache IoTDB.\n\nThis issue affects Apache IoTDB: from 2.0.0 before 2.0.6, from 1.0.0 before 1.3.6.\n\nUsers",
+        "published": "2026-06-26T13:16:33.243"
+      },
+      {
+        "cve_id": "CVE-2025-64152",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Apache IoTDB.\n\nThis issue affects Apache IoTDB: from 1.0.0 before 1.3.6, from 2.0.0 before 2.0.7.\n\nUsers",
+        "published": "2026-06-26T13:16:33.423"
       },
       {
         "cve_id": "CVE-2026-50741",
@@ -327,18 +334,32 @@
         "published": "2026-06-26T02:16:53.627"
       },
       {
+        "cve_id": "CVE-2025-68052",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Unauthenticated Cross Site Request Forgery (CSRF) in Eagle Booking <= 1.3.4.3 versions.",
+        "published": "2026-06-26T15:16:35.363"
+      },
+      {
+        "cve_id": "CVE-2026-56008",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Contributor Privilege Escalation in Fusion Builder <= 3.15.4 versions.",
+        "published": "2026-06-26T15:16:41.927"
+      },
+      {
+        "cve_id": "CVE-2026-56010",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Subscriber Privilege Escalation in Abandoned Cart Pro for WooCommerce <= 10.4.0 versions.",
+        "published": "2026-06-26T15:16:42.057"
+      },
+      {
         "cve_id": "CVE-2026-57877",
         "severity": "HIGH",
         "base_score": 8.6,
         "description": "An unauthenticated\nformat string vulnerability exists in vlsvr in GeoVision GV-LPC2011 and\nGV-LPC2211 V1.12 and earlier. The vulnerability is caused by improper handling\nof externally controlled input",
         "published": "2026-06-26T08:16:24.667"
-      },
-      {
-        "cve_id": "CVE-2026-12975",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "A flaw was found in Apicurio Registry. The ContentTypeUtil.isParsableXml() method creates a SAXParserFactory without enabling secure processing features or disabling external entity resolution. An att",
-        "published": "2026-06-25T22:17:00.620"
       },
       {
         "cve_id": "CVE-2026-13325",
@@ -348,20 +369,6 @@
         "published": "2026-06-26T11:16:30.830"
       },
       {
-        "cve_id": "CVE-2025-71328",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Flowise before 3.0.10 contains an unverified password change vulnerability. An authenticated user can change their account password through the account settings (Security) section without supplying th",
-        "published": "2026-06-25T22:16:58.877"
-      },
-      {
-        "cve_id": "CVE-2026-13281",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Integer overflow in Mojo in Google Chrome prior to 149.0.7827.201 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a malicious file. (Chro",
-        "published": "2026-06-25T22:17:00.880"
-      },
-      {
         "cve_id": "CVE-2026-2053",
         "severity": "HIGH",
         "base_score": 8.3,
@@ -369,18 +376,11 @@
         "published": "2026-06-26T08:16:21.603"
       },
       {
-        "cve_id": "CVE-2026-12473",
+        "cve_id": "CVE-2026-40711",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Two data sources (DICOMWebProxy and DICOMJSON) shipped in the default configuration fetch an arbitrary URL parameter without validation. A global authentication service in OHIF automatically injects t",
-        "published": "2026-06-25T21:16:26.530"
-      },
-      {
-        "cve_id": "CVE-2025-71335",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Flowise before 3.0.10 (affected versions 3.0.7 and earlier) fails to invalidate existing sessions and session tokens after a user changes their password. An attacker who already holds an active sessio",
-        "published": "2026-06-25T22:16:59.260"
+        "base_score": 8.0,
+        "description": "Dell Dell Container Storage Modules, version(s) csi-powerstore v2.16.0, csi-unity v2.16.0, csi-powerflex v2.16.0, csi-powermax v2.16.0, contain(s) an Improper Neutralization of Special Elements used i",
+        "published": "2026-06-26T13:16:34.493"
       }
     ]
   },
