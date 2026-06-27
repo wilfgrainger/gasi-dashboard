@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T16:57:57.390421+00:00",
+  "generated_at": "2026-06-27T20:51:09.588474+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
+        "value": 6,
         "score": 2.5,
         "max": 3
       },
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 177,
-    "critical_count": 9,
-    "high_count": 17,
+    "total": 67,
+    "critical_count": 6,
+    "high_count": 15,
     "cves": [
       {
-        "cve_id": "CVE-2026-46386",
+        "cve_id": "CVE-2026-54350",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "OpenProject is open-source, web-based project management software. Prior to , the official openproject/openproject Docker image ships ENV SECRET_KEY_BASE=OVERWRITE_ME as the default Rails master key. ",
-        "published": "2026-06-26T20:17:13.380"
+        "base_score": 10.0,
+        "description": "Budibase is an open-source low-code platform. Prior to 3.39.12,  an unauthenticated visitor of any published Budibase app reads every document of the backing MongoDB, CouchDB, Elasticsearch, DynamoDB-",
+        "published": "2026-06-26T21:16:35.040"
       },
       {
-        "cve_id": "CVE-2026-52782",
+        "cve_id": "CVE-2026-49869",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "OpenProject is open-source, web-based project management software. Prior to 17.3.3 and 17.4.1, there is an IDOR through /projects/<A>/settings/project_storages/<A_ps_id> via PATCH parameter \"storages_",
-        "published": "2026-06-26T20:17:18.737"
+        "base_score": 10.0,
+        "description": "Kestra is an open-source, event-driven orchestration platform. Prior to 1.0.45 and 1.3.21, AuthenticationFilter in Kestra OSS uses request.getPath().endsWith(\"/configs\") to whitelist the public config",
+        "published": "2026-06-26T22:16:32.113"
       },
       {
-        "cve_id": "CVE-2026-52785",
+        "cve_id": "CVE-2026-53576",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "OpenProject is open-source, web-based project management software. Prior to 17.3.3 and 17.4.1, there is a SQL injection in timestamps functionality. OpenProject baseline comparison allows callers to r",
-        "published": "2026-06-26T20:17:19.133"
+        "base_score": 10.0,
+        "description": "Kestra is an open-source, event-driven orchestration platform. Prior to 1.0.45 and 1.3.21, the authentication filter for the REST API (@Filter(\"/api/v1/**\")) treats any request whose path ends in /con",
+        "published": "2026-06-26T22:16:32.840"
       },
       {
-        "cve_id": "CVE-2026-33646",
+        "cve_id": "CVE-2026-28701",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Various versions of Daktronics Controller Firmware could allow authenticated and unauthenticated remote users to escape the intended directory and enumerate arbitrary file system paths.",
+        "published": "2026-06-26T23:17:08.537"
+      },
+      {
+        "cve_id": "CVE-2026-12415",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Invoice Generator plugin for WordPress is vulnerable to privilege escalation due to a missing capability check on the pravel_invoice_edit_account() AJAX action in versions up to, and including, 1.",
+        "published": "2026-06-27T05:16:41.620"
+      },
+      {
+        "cve_id": "CVE-2026-54352",
         "severity": "CRITICAL",
         "base_score": 9.6,
-        "description": "mise manages dev tools like node, python, cmake, and terraform. Prior to 2026.3.10, mise processes .tool-versions files through the Tera template engine during parsing, with the exec() function regist",
-        "published": "2026-06-26T18:16:58.420"
+        "description": "Budibase is an open-source low-code platform. Prior to 3.39.9, `POST /api/pwa/process-zip` at packages/server/src/api/routes/static.ts:24 accepts a builder-uploaded .zip, extracts it with extract-zip@",
+        "published": "2026-06-26T21:16:35.293"
       },
       {
-        "cve_id": "CVE-2026-52780",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "OpenProject is open-source, web-based project management software. Prior to 17.3.3 and 17.4.1, cache store poisoning leads to Remote Code Execution (RCE). This vulnerability is fixed in 17.3.3 and 17.",
-        "published": "2026-06-26T20:17:18.490"
-      },
-      {
-        "cve_id": "CVE-2026-45405",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "Dokku is a docker-powered PaaS. Prior to 0.38.2, the git:from-archive and certs:add commands extract user-supplied tar/zip archives into temporary directories without sanitizing member paths or preven",
-        "published": "2026-06-26T17:16:33.007"
-      },
-      {
-        "cve_id": "CVE-2026-45406",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "Dokku is a docker-powered PaaS. Prior to 0.38.2, the openresty-vhosts plugin copies files from an app's openresty/http-includes/ git repository directory to the host and then interpolates their filena",
-        "published": "2026-06-26T17:16:33.150"
-      },
-      {
-        "cve_id": "CVE-2026-45408",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "Dokku is a docker-powered PaaS. Prior to 0.38.2, the app name validation regex (^[a-z0-9][^/:_A-Z]*$) permits shell metacharacters. When an authenticated user pushes to a git remote with a crafted app",
-        "published": "2026-06-26T17:16:33.427"
-      },
-      {
-        "cve_id": "CVE-2026-54636",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "Dokku is a docker-powered PaaS. Prior to 0.38.7, the cron plugin utilizes commands in the app.json file to manage system cron running as the Dokku user. An app.json cron command utilizing special shel",
-        "published": "2026-06-26T17:16:34.083"
-      },
-      {
-        "cve_id": "CVE-2026-57518",
+        "cve_id": "CVE-2026-55069",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Pagekit CMS 1.0.18 contains a privilege escalation vulnerability that allows authenticated users with the 'user: manage users' permission to escalate privileges by assigning arbitrary custom roles to ",
-        "published": "2026-06-26T17:16:34.927"
+        "base_score": 8.7,
+        "description": "Kestra is an open-source, event-driven orchestration platform. Prior to 1.3.24, this vulnerability exists in the BasicAuth authentication component of the Kestra OSS workflow orchestration platform. A",
+        "published": "2026-06-26T22:16:33.093"
       },
       {
-        "cve_id": "CVE-2026-32833",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Cudy LT300 3.0 running firmware prior to version 2.5.12 contains an OS command injection vulnerability that allows authenticated attackers to execute arbitrary commands by injecting shell metacharacte",
-        "published": "2026-06-26T20:16:54.583"
-      },
-      {
-        "cve_id": "CVE-2026-52784",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenProject is open-source, web-based project management software. Prior to 17.3.3 and 17.4.1, there is a CSRF on TARGET through /users/:id via POST parameter \"user[admin]\". This vulnerability is fixe",
-        "published": "2026-06-26T20:17:18.993"
-      },
-      {
-        "cve_id": "CVE-2026-55441",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "mise manages dev tools like node, python, cmake, and terraform. Prior to 2026.6.4, mise's trust feature gates config files (mise.toml, .tool-versions) through trust_check, but task-include files are l",
-        "published": "2026-06-26T18:17:01.190"
-      },
-      {
-        "cve_id": "CVE-2026-49991",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "RustFS is a distributed object storage system built in Rust. In 1.0.0-beta.4, authenticated users with only PutObject permission on their own bucket can exploit a path traversal vulnerability in the S",
-        "published": "2026-06-26T20:17:17.817"
-      },
-      {
-        "cve_id": "CVE-2026-56663",
+        "cve_id": "CVE-2026-54353",
         "severity": "HIGH",
         "base_score": 8.5,
-        "description": "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. Prior to 0.6.52, an authenticated user can bypass the SSRF / private-IP prote",
-        "published": "2026-06-26T17:16:34.453"
+        "description": "Budibase is an open-source low-code platform. Prior to 3.39.9, authenticated users with automation permissions can bypass Budibase's SSRF blacklist through DNS rebinding. The outbound fetch flow valid",
+        "published": "2026-06-26T21:16:35.417"
       },
       {
-        "cve_id": "CVE-2026-52783",
+        "cve_id": "CVE-2026-54351",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "OpenProject is open-source, web-based project management software. Prior to 17.3.3 and 17.4.1, OpenProject's Storages module writes the OneDrive/SharePoint userless OAuth access_token plaintext to Rai",
-        "published": "2026-06-26T20:17:18.860"
+        "description": "Budibase is an open-source low-code platform. Prior to 3.39.9, the webhook trigger endpoint in Budibase is publicly accessible and passes the full HTTP request body into automation execution parameter",
+        "published": "2026-06-26T21:16:35.170"
       },
       {
-        "cve_id": "CVE-2026-56876",
+        "cve_id": "CVE-2026-31928",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "extract-zip does not validate symlink targets when extracting zip archives. When processing a malicious zip file containing a symlink with a relative path like '../../../../etc/passwd', extract-zip wi",
-        "published": "2026-06-26T18:17:03.447"
+        "description": "The DMP-5000 devices are shipped with a default administrative web account with weak authentication controls, which are not required to be changed during initial configuration or operation. Using thes",
+        "published": "2026-06-26T23:17:08.697"
       },
       {
-        "cve_id": "CVE-2026-55677",
+        "cve_id": "CVE-2026-48778",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Echo is a Go web framework. Prior to 4.15.3 and 5.2.0, Echo's router and static file handler disagree on URL path decoding. The router matches routes using the raw encoded path (preserving %2F as-is),",
-        "published": "2026-06-26T17:16:34.203"
+        "base_score": 7.8,
+        "description": "Notepad++ is a free and open-source source code editor. Prior to 8.9.6.1, the <GUIConfig name=\"commandLineInterpreter\"> tag in config.xml is read by NppXml::value() (Parameters.cpp:6430) and stored in",
+        "published": "2026-06-26T21:16:34.167"
       },
       {
-        "cve_id": "CVE-2026-57231",
+        "cve_id": "CVE-2026-48800",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Podman is a tool for managing OCI containers and pods. From 1.8.1 until 5.8.4, a container image that contains a environment variable with just a key and no value can trick podman into passing that va",
-        "published": "2026-06-26T17:16:34.697"
+        "base_score": 7.8,
+        "description": "Notepad++ is a free and open-source source code editor. Prior to 8.9.6.1, the <Command> tag text content inside <UserDefinedCommands> in shortcuts.xml is read by NppXml::value(aNode) (Parameters.cpp:3",
+        "published": "2026-06-26T21:16:34.297"
       },
       {
-        "cve_id": "CVE-2026-48042",
+        "cve_id": "CVE-2026-52884",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Envoy is an open source edge and service proxy designed for cloud-native applications. Prior to 1.35.11, 1.36.7, 1.37.3, and 1.38.1, destructor of JSON Object results in stack overflow when deeply O(1",
-        "published": "2026-06-26T18:16:59.630"
+        "base_score": 7.8,
+        "description": "Notepad++ is a free and open-source source code editor. In v8.9.6.1, isInTrustedDirectory() does NOT canonicalize the path before checking. It uses a prefix-based check (PathIsPrefix() or equivalent) ",
+        "published": "2026-06-26T21:16:34.797"
+      },
+      {
+        "cve_id": "CVE-2026-45807",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "Kestra is an open-source, event-driven orchestration platform. Prior to 1.0.43 and 1.3.19, several Kestra API endpoints accept a kestra:// URI from the client and pass it through StorageInterface.pare",
+        "published": "2026-06-26T22:16:31.973"
+      },
+      {
+        "cve_id": "CVE-2026-49984",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "Kestra is an open-source, event-driven orchestration platform. Prior to 1.0.45 and 1.3.23, the local internal-storage backend validates user-supplied paths for .. traversal before it converts Windows-",
+        "published": "2026-06-26T22:16:32.243"
+      },
+      {
+        "cve_id": "CVE-2023-37524",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "HCL Traveler for Microsoft Outlook (HTMO) is susceptible to vulnerabilities due to .NET Framework 4.5 being out of service. \u00a0Since .NET Framework 4.5 has reached end-of-life and no longer receives sec",
+        "published": "2026-06-27T02:16:27.603"
+      },
+      {
+        "cve_id": "CVE-2026-50136",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "Budibase is an open-source low-code platform. Prior to 3.39.3, the application server exposes an unauthenticated endpoint that generates S3 PutObject presigned URLs using credentials stored in a works",
+        "published": "2026-06-26T21:16:34.547"
+      },
+      {
+        "cve_id": "CVE-2026-50132",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "Budibase is an open-source low-code platform. Prior to 3.39.0, `GET /api/chat-links/:instance/:token/handoff` is a public endpoint (no auth required) that performs a permanent, state-changing operatio",
+        "published": "2026-06-26T21:16:34.420"
+      },
+      {
+        "cve_id": "CVE-2026-55975",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "A vulnerability exists in H.View IP cameras that could allow an authenticated user to supply unsanitized XML fields to the device's certificate generation interface, which are incorporated into a back",
+        "published": "2026-06-26T23:17:08.997"
+      },
+      {
+        "cve_id": "CVE-2026-56414",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "A vulnerability exists in H.View IP cameras certificate-related upload interfaces allow authenticated users to store arbitrary file content to fixed, persistent filesystem locations without validating",
+        "published": "2026-06-26T23:17:09.137"
       }
     ]
   },
