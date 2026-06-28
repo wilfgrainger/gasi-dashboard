@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-28T02:36:00.790760+00:00",
+  "generated_at": "2026-06-28T07:43:21.559557+00:00",
   "threat_score": {
-    "score": 6.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
-        "score": 2.0,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -239,8 +239,8 @@
   },
   "nvd": {
     "total": 36,
-    "critical_count": 2,
-    "high_count": 6,
+    "critical_count": 1,
+    "high_count": 7,
     "cves": [
       {
         "cve_id": "CVE-2026-58053",
@@ -248,13 +248,6 @@
         "base_score": 9.9,
         "description": "Gitea act_runner with the Docker backend (through act 0.262.0) passes a workflow's container.options string to the Docker job container's HostConfig and, when configured with privileged: false, forces",
         "published": "2026-06-28T02:16:32.420"
-      },
-      {
-        "cve_id": "CVE-2026-12415",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Invoice Generator plugin for WordPress is vulnerable to privilege escalation due to a missing capability check on the pravel_invoice_edit_account() AJAX action in versions up to, and including, 1.",
-        "published": "2026-06-27T05:16:41.620"
       },
       {
         "cve_id": "CVE-2026-10643",
@@ -283,6 +276,13 @@
         "base_score": 7.6,
         "description": "RustDesk gates incoming control messages on per-capability flags rather than on the session's authorized connection type, and a file-transfer session does not clear those flags. A peer holding only a ",
         "published": "2026-06-28T02:16:32.860"
+      },
+      {
+        "cve_id": "CVE-2026-10646",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "Zephyr's BSD-sockets getaddrinfo() implementation (subsys/net/lib/sockets/getaddrinfo.c) passes a pointer to a stack-allocated state object (struct getaddrinfo_state ai_state) as the user_data of an a",
+        "published": "2026-06-28T05:16:21.083"
       },
       {
         "cve_id": "CVE-2026-58054",
@@ -320,6 +320,13 @@
         "published": "2026-06-28T02:16:33.130"
       },
       {
+        "cve_id": "CVE-2026-10593",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "The Zephyr Bluetooth LE Audio Basic Audio Profile (BAP) unicast client mishandles peer-supplied ASE state notifications. In unicast_client_ep_qos_state() (subsys/bluetooth/audio/bap_unicast_client.c),",
+        "published": "2026-06-28T05:16:20.097"
+      },
+      {
         "cve_id": "CVE-2026-11597",
         "severity": "MEDIUM",
         "base_score": 6.4,
@@ -341,25 +348,11 @@
         "published": "2026-06-27T08:16:44.800"
       },
       {
-        "cve_id": "CVE-2026-13245",
-        "severity": "MEDIUM",
-        "base_score": 6.1,
-        "description": "The MaxButtons \u2013 Create buttons plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'view' parameter in all versions up to, and including, 9.8.5 due to insufficient input sani",
-        "published": "2026-06-27T06:16:31.773"
-      },
-      {
         "cve_id": "CVE-2026-58055",
         "severity": "MEDIUM",
         "base_score": 5.4,
         "description": "nghttp2's nghttpx proxy through 1.69.0 forwards an HTTP/1.1 Upgrade request that also carries a Content-Length header and body onto reusable keep-alive backend connections, re-adding the Upgrade and C",
         "published": "2026-06-28T02:16:32.677"
-      },
-      {
-        "cve_id": "CVE-2026-12404",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "The NEX-Forms \u2013 Ultimate Forms Plugin for WordPress plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 9.2.2. This is due to the plugin not properly verif",
-        "published": "2026-06-27T06:16:31.617"
       },
       {
         "cve_id": "CVE-2026-12432",
@@ -381,6 +374,13 @@
         "base_score": 5.0,
         "description": "Flowise before 3.1.3 validates Custom MCP stdio environment variables against a denylist using a case-sensitive comparison, so on Windows, where environment names are case-insensitive, supplying 'node",
         "published": "2026-06-28T02:16:32.990"
+      },
+      {
+        "cve_id": "CVE-2026-12399",
+        "severity": "MEDIUM",
+        "base_score": 4.4,
+        "description": "The Gutenverse \u2013 WordPress Blocks, Page Builder & Site Editor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via admin settings in all versions up to, and including, 3.8.0 due to in",
+        "published": "2026-06-27T08:16:44.443"
       }
     ]
   },
