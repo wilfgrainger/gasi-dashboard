@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-06-27T20:51:09.588474+00:00",
+  "generated_at": "2026-06-28T02:36:00.790760+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 23,
+        "value": 22,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
-        "score": 2.5,
+        "value": 2,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1629,
-    "recent_30d_count": 23,
+    "recent_30d_count": 22,
     "recent": [
       {
         "cve_id": "CVE-2026-12569",
@@ -238,37 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 67,
-    "critical_count": 6,
-    "high_count": 15,
+    "total": 36,
+    "critical_count": 2,
+    "high_count": 6,
     "cves": [
       {
-        "cve_id": "CVE-2026-54350",
+        "cve_id": "CVE-2026-58053",
         "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Budibase is an open-source low-code platform. Prior to 3.39.12,  an unauthenticated visitor of any published Budibase app reads every document of the backing MongoDB, CouchDB, Elasticsearch, DynamoDB-",
-        "published": "2026-06-26T21:16:35.040"
-      },
-      {
-        "cve_id": "CVE-2026-49869",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Kestra is an open-source, event-driven orchestration platform. Prior to 1.0.45 and 1.3.21, AuthenticationFilter in Kestra OSS uses request.getPath().endsWith(\"/configs\") to whitelist the public config",
-        "published": "2026-06-26T22:16:32.113"
-      },
-      {
-        "cve_id": "CVE-2026-53576",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Kestra is an open-source, event-driven orchestration platform. Prior to 1.0.45 and 1.3.21, the authentication filter for the REST API (@Filter(\"/api/v1/**\")) treats any request whose path ends in /con",
-        "published": "2026-06-26T22:16:32.840"
-      },
-      {
-        "cve_id": "CVE-2026-28701",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Various versions of Daktronics Controller Firmware could allow authenticated and unauthenticated remote users to escape the intended directory and enumerate arbitrary file system paths.",
-        "published": "2026-06-26T23:17:08.537"
+        "base_score": 9.9,
+        "description": "Gitea act_runner with the Docker backend (through act 0.262.0) passes a workflow's container.options string to the Docker job container's HostConfig and, when configured with privileged: false, forces",
+        "published": "2026-06-28T02:16:32.420"
       },
       {
         "cve_id": "CVE-2026-12415",
@@ -278,109 +257,130 @@
         "published": "2026-06-27T05:16:41.620"
       },
       {
-        "cve_id": "CVE-2026-54352",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Budibase is an open-source low-code platform. Prior to 3.39.9, `POST /api/pwa/process-zip` at packages/server/src/api/routes/static.ts:24 accepts a builder-uploaded .zip, extracts it with extract-zip@",
-        "published": "2026-06-26T21:16:35.293"
-      },
-      {
-        "cve_id": "CVE-2026-55069",
+        "cve_id": "CVE-2026-10643",
         "severity": "HIGH",
         "base_score": 8.7,
-        "description": "Kestra is an open-source, event-driven orchestration platform. Prior to 1.3.24, this vulnerability exists in the BasicAuth authentication component of the Kestra OSS workflow orchestration platform. A",
-        "published": "2026-06-26T22:16:33.093"
+        "description": "Zephyr's IP socket recvmsg() implementation (subsys/net/lib/sockets/sockets_inet.c, insert_pktinfo()) validated the user-supplied ancillary (msg_control) buffer using only the payload length (msg-msg_",
+        "published": "2026-06-28T00:16:24.637"
       },
       {
-        "cve_id": "CVE-2026-54353",
+        "cve_id": "CVE-2026-58049",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Budibase is an open-source low-code platform. Prior to 3.39.9, authenticated users with automation permissions can bypass Budibase's SSRF blacklist through DNS rebinding. The outbound fetch flow valid",
-        "published": "2026-06-26T21:16:35.417"
+        "base_score": 8.6,
+        "description": "FFmpeg's RASC video decoder (decode_dlta in libavcodec/rasc.c) performs 32-bit reads and writes at the row cursor before the NEXT_LINE row-boundary check and validates the DLTA region in pixel rather ",
+        "published": "2026-06-28T02:16:30.477"
       },
       {
-        "cve_id": "CVE-2026-54351",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Budibase is an open-source low-code platform. Prior to 3.39.9, the webhook trigger endpoint in Budibase is publicly accessible and passes the full HTTP request body into automation execution parameter",
-        "published": "2026-06-26T21:16:35.170"
-      },
-      {
-        "cve_id": "CVE-2026-31928",
+        "cve_id": "CVE-2026-8095",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "The DMP-5000 devices are shipped with a default administrative web account with weak authentication controls, which are not required to be changed during initial configuration or operation. Using thes",
-        "published": "2026-06-26T23:17:08.697"
+        "description": "The Frontend File Manager Plugin plugin for WordPress is vulnerable to Authenticated Arbitrary File Deletion in versions up to and including 23.6. This is due to a case-sensitive bypass of the wpfm_di",
+        "published": "2026-06-28T00:16:25.180"
       },
       {
-        "cve_id": "CVE-2026-48778",
+        "cve_id": "CVE-2026-58056",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Notepad++ is a free and open-source source code editor. Prior to 8.9.6.1, the <GUIConfig name=\"commandLineInterpreter\"> tag in config.xml is read by NppXml::value() (Parameters.cpp:6430) and stored in",
-        "published": "2026-06-26T21:16:34.167"
+        "base_score": 7.6,
+        "description": "RustDesk gates incoming control messages on per-capability flags rather than on the session's authorized connection type, and a file-transfer session does not clear those flags. A peer holding only a ",
+        "published": "2026-06-28T02:16:32.860"
       },
       {
-        "cve_id": "CVE-2026-48800",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Notepad++ is a free and open-source source code editor. Prior to 8.9.6.1, the <Command> tag text content inside <UserDefinedCommands> in shortcuts.xml is read by NppXml::value(aNode) (Parameters.cpp:3",
-        "published": "2026-06-26T21:16:34.297"
-      },
-      {
-        "cve_id": "CVE-2026-52884",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Notepad++ is a free and open-source source code editor. In v8.9.6.1, isInTrustedDirectory() does NOT canonicalize the path before checking. It uses a prefix-based check (PathIsPrefix() or equivalent) ",
-        "published": "2026-06-26T21:16:34.797"
-      },
-      {
-        "cve_id": "CVE-2026-45807",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Kestra is an open-source, event-driven orchestration platform. Prior to 1.0.43 and 1.3.19, several Kestra API endpoints accept a kestra:// URI from the client and pass it through StorageInterface.pare",
-        "published": "2026-06-26T22:16:31.973"
-      },
-      {
-        "cve_id": "CVE-2026-49984",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Kestra is an open-source, event-driven orchestration platform. Prior to 1.0.45 and 1.3.23, the local internal-storage backend validates user-supplied paths for .. traversal before it converts Windows-",
-        "published": "2026-06-26T22:16:32.243"
-      },
-      {
-        "cve_id": "CVE-2023-37524",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "HCL Traveler for Microsoft Outlook (HTMO) is susceptible to vulnerabilities due to .NET Framework 4.5 being out of service. \u00a0Since .NET Framework 4.5 has reached end-of-life and no longer receives sec",
-        "published": "2026-06-27T02:16:27.603"
-      },
-      {
-        "cve_id": "CVE-2026-50136",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "Budibase is an open-source low-code platform. Prior to 3.39.3, the application server exposes an unauthenticated endpoint that generates S3 PutObject presigned URLs using credentials stored in a works",
-        "published": "2026-06-26T21:16:34.547"
-      },
-      {
-        "cve_id": "CVE-2026-50132",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "Budibase is an open-source low-code platform. Prior to 3.39.0, `GET /api/chat-links/:instance/:token/handoff` is a public endpoint (no auth required) that performs a permanent, state-changing operatio",
-        "published": "2026-06-26T21:16:34.420"
-      },
-      {
-        "cve_id": "CVE-2026-55975",
+        "cve_id": "CVE-2026-58054",
         "severity": "HIGH",
         "base_score": 7.2,
-        "description": "A vulnerability exists in H.View IP cameras that could allow an authenticated user to supply unsanitized XML fields to the device's certificate generation interface, which are incorporated into a back",
-        "published": "2026-06-26T23:17:08.997"
+        "description": "MyBB 1.8.40 does not restrict which usergroup a limited Admin Control Panel user may assign when creating or editing users; the user module offers the Administrators group (gid 4) and its datahandler'",
+        "published": "2026-06-28T02:16:32.550"
       },
       {
-        "cve_id": "CVE-2026-56414",
+        "cve_id": "CVE-2026-58050",
         "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "A vulnerability exists in H.View IP cameras certificate-related upload interfaces allow authenticated users to store arbitrary file content to fixed, persistent filesystem locations without validating",
-        "published": "2026-06-26T23:17:09.137"
+        "base_score": 7.0,
+        "description": "libssh2 through 1.11.1 reads an attacker-controlled 32-bit attribute count from a publickey-subsystem response and uses it in the allocation num_attrs * sizeof(libssh2_publickey_attribute) without bou",
+        "published": "2026-06-28T02:16:32.017"
+      },
+      {
+        "cve_id": "CVE-2026-3462",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "The Frisbii Pay plugin for WordPress is vulnerable to unauthorized modification of data due to missing capability checks on the 'upload_csv' and 'process_batch' functions in all versions up to, and in",
+        "published": "2026-06-27T08:16:44.923"
+      },
+      {
+        "cve_id": "CVE-2026-58051",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "libssh2 through 1.11.1 grows its publickey list with SSH2_REALLOC but does not zero-initialize new entries before parsing populates them, so a parse failure reaching the cleanup path leaves libssh2_pu",
+        "published": "2026-06-28T02:16:32.153"
+      },
+      {
+        "cve_id": "CVE-2026-58058",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Nmap through 7.99 does not keep the IPv6 extension-header walk within the captured packet in ipv6_get_data_primitive (libnetutil/netutil.cc), so the pointer advances past the buffer and the remaining-",
+        "published": "2026-06-28T02:16:33.130"
+      },
+      {
+        "cve_id": "CVE-2026-11597",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "The Surbma | Infusionsoft Shortcode plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'infusionsoft-form' shortcode in versions up to, and including, 2.0.1. This is due to insu",
+        "published": "2026-06-27T08:16:43.910"
+      },
+      {
+        "cve_id": "CVE-2026-11783",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "The Dokan: AI Powered WooCommerce Multivendor Marketplace Solution \u2013 Build Your Own Amazon, eBay, Etsy plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Product SKU in all versions",
+        "published": "2026-06-27T08:16:44.197"
+      },
+      {
+        "cve_id": "CVE-2026-13295",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "The Page Builder by SiteOrigin plugin for WordPress is vulnerable to Stored Cross-Site Scripting via panels_data Parameter in all versions up to, and including, 2.34.3 due to insufficient input saniti",
+        "published": "2026-06-27T08:16:44.800"
+      },
+      {
+        "cve_id": "CVE-2026-13245",
+        "severity": "MEDIUM",
+        "base_score": 6.1,
+        "description": "The MaxButtons \u2013 Create buttons plugin for WordPress is vulnerable to Reflected Cross-Site Scripting via the 'view' parameter in all versions up to, and including, 9.8.5 due to insufficient input sani",
+        "published": "2026-06-27T06:16:31.773"
+      },
+      {
+        "cve_id": "CVE-2026-58055",
+        "severity": "MEDIUM",
+        "base_score": 5.4,
+        "description": "nghttp2's nghttpx proxy through 1.69.0 forwards an HTTP/1.1 Upgrade request that also carries a Content-Length header and body onto reusable keep-alive backend connections, re-adding the Upgrade and C",
+        "published": "2026-06-28T02:16:32.677"
+      },
+      {
+        "cve_id": "CVE-2026-12404",
+        "severity": "MEDIUM",
+        "base_score": 5.3,
+        "description": "The NEX-Forms \u2013 Ultimate Forms Plugin for WordPress plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 9.2.2. This is due to the plugin not properly verif",
+        "published": "2026-06-27T06:16:31.617"
+      },
+      {
+        "cve_id": "CVE-2026-12432",
+        "severity": "MEDIUM",
+        "base_score": 5.3,
+        "description": "The WP Full Stripe Free plugin for WordPress is vulnerable to Missing Authorization in versions up to, and including, 8.4.3 via the wpfs_update_failed_payment_status AJAX action. The handler is regist",
+        "published": "2026-06-27T08:16:44.563"
+      },
+      {
+        "cve_id": "CVE-2026-9242",
+        "severity": "MEDIUM",
+        "base_score": 5.3,
+        "description": "The RegistrationMagic \u2013 Custom Registration Forms, User Registration, Payment, and User Login plugin for WordPress is vulnerable to Authentication Bypass via Insufficient Verification of Data Authenti",
+        "published": "2026-06-27T08:16:45.893"
+      },
+      {
+        "cve_id": "CVE-2026-58057",
+        "severity": "MEDIUM",
+        "base_score": 5.0,
+        "description": "Flowise before 3.1.3 validates Custom MCP stdio environment variables against a denylist using a case-sensitive comparison, so on Windows, where environment names are case-insensitive, supplying 'node",
+        "published": "2026-06-28T02:16:32.990"
       }
     ]
   },
