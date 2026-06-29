@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-29T08:49:48.152826+00:00",
+  "generated_at": "2026-06-29T15:31:09.719831+00:00",
   "threat_score": {
-    "score": 5.0,
+    "score": 5.5,
     "level": "ELEVATED",
     "level_color": "elevated",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 1.0,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -238,10 +238,17 @@
     ]
   },
   "nvd": {
-    "total": 64,
-    "critical_count": 0,
-    "high_count": 17,
+    "total": 128,
+    "critical_count": 1,
+    "high_count": 39,
     "cves": [
+      {
+        "cve_id": "CVE-2026-49048",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Joomla extension JoomCCK exposes a front-end controller task, that builds two SQL statements by directly concatenating a user-supplied request parameter into the query string without escaping or p",
+        "published": "2026-06-28T19:16:52.100"
+      },
       {
         "cve_id": "CVE-2026-13515",
         "severity": "HIGH",
@@ -285,6 +292,55 @@
         "published": "2026-06-29T07:16:24.183"
       },
       {
+        "cve_id": "CVE-2026-13545",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability has been found in D-Link DCS-935L 1.10.01. This affects the function sub_400E40 of the file setconf.cgi of the component POST Parameter Handler. Such manipulation of the argument UID l",
+        "published": "2026-06-29T09:16:27.230"
+      },
+      {
+        "cve_id": "CVE-2026-25707",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A relative path traversal bug problem when processing repository metadata in libzypp before 17.38.10 could be used by remote attackers supplying repositories to overwrite files on the system, leading ",
+        "published": "2026-06-29T10:16:30.330"
+      },
+      {
+        "cve_id": "CVE-2026-13562",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A flaw has been found in Edimax EW-7478APC 1.04. This affects the function formiNICSiteSurvey of the file /goform/formiNICSiteSurvey of the component POST Request Handler. This manipulation of the arg",
+        "published": "2026-06-29T12:16:28.233"
+      },
+      {
+        "cve_id": "CVE-2026-13563",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability has been found in Edimax EW-7478APC 1.04. This impacts the function formL2TPSetup of the file /goform/formL2TPSetup of the component POST Request Handler. Such manipulation of the argu",
+        "published": "2026-06-29T12:16:28.390"
+      },
+      {
+        "cve_id": "CVE-2026-13564",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was found in Edimax EW-7478APC 1.04. Affected is the function formPPPoESetup of the file /goform/formPPPoESetup of the component POST Request Handler. Performing a manipulation of the ",
+        "published": "2026-06-29T12:16:28.543"
+      },
+      {
+        "cve_id": "CVE-2026-12856",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A flaw was found in the vscode-java extension, which provides Java language support for Visual Studio Code. The extension incorrectly trusts all Markdown content in JavaDoc hovers, allowing a maliciou",
+        "published": "2026-06-29T14:16:41.473"
+      },
+      {
+        "cve_id": "CVE-2026-40521",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "FrontAccounting before 2.4.20 contains a path traversal vulnerability in the attachment upload handler that allows authenticated attackers to execute arbitrary code by uploading files with traversal s",
+        "published": "2026-06-29T14:16:50.763"
+      },
+      {
         "cve_id": "CVE-2025-2902",
         "severity": "HIGH",
         "base_score": 8.3,
@@ -292,46 +348,32 @@
         "published": "2026-06-29T07:16:23.583"
       },
       {
-        "cve_id": "CVE-2026-13485",
+        "cve_id": "CVE-2026-40523",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was found in SourceCodester Class and Exam Timetabling System 1.0. This affects an unknown function of the file /preview.php. Performing a manipulation of the argument course_year_sect",
-        "published": "2026-06-28T10:16:26.133"
+        "base_score": 8.1,
+        "description": "FrontAccounting before 2.4.20 contains a SQL injection vulnerability in the Audit Trail report handler that allows authenticated attackers with SA_GLANALYTIC permission to execute arbitrary SQL querie",
+        "published": "2026-06-29T14:16:51.067"
       },
       {
-        "cve_id": "CVE-2026-13486",
+        "cve_id": "CVE-2026-40524",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was determined in SourceCodester Class and Exam Timetabling System 1.0/6.php. This impacts an unknown function of the file /preview6.php. Executing a manipulation of the argument cours",
-        "published": "2026-06-28T10:16:27.150"
+        "base_score": 8.1,
+        "description": "FrontAccounting before 2.4.20 contains a SQL injection vulnerability in the get_gl_transactions() function where the filter_type parameter is concatenated directly into a SQL IN() clause without param",
+        "published": "2026-06-29T14:16:51.207"
       },
       {
-        "cve_id": "CVE-2026-13487",
+        "cve_id": "CVE-2026-10083",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was identified in SourceCodester Class and Exam Timetabling System 1.0. Affected is an unknown function of the file /archive.php. The manipulation of the argument sy leads to sql injec",
-        "published": "2026-06-28T11:16:26.660"
+        "base_score": 7.5,
+        "description": "The APCu Manager WordPress plugin before 4.5.0 does not escape APCu object-cache keys before rendering them in an admin-area page, leading to a Stored Cross-Site Scripting vulnerability. When a persis",
+        "published": "2026-06-29T07:16:23.823"
       },
       {
-        "cve_id": "CVE-2026-13488",
+        "cve_id": "CVE-2026-13676",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security flaw has been discovered in SourceCodester Class and Exam Timetabling System 1.0/7.php. Affected by this vulnerability is an unknown functionality of the file /preview7.php. The manipulatio",
-        "published": "2026-06-28T11:16:27.483"
-      },
-      {
-        "cve_id": "CVE-2026-13498",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was identified in yashpokharna2555 restaurent-management-system. This affects an unknown function of the file /forgotpassword.php of the component POST Parameter Handler. Such manipula",
-        "published": "2026-06-28T13:16:53.357"
-      },
-      {
-        "cve_id": "CVE-2026-13500",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A weakness has been identified in antlr ANTLR4 up to 4.13.2. Affected is an unknown function of the file tool/src/org/antlr/v4/codegen/model/OutputFile.java of the component Grammar Action Block Handl",
-        "published": "2026-06-28T15:16:51.973"
+        "base_score": 7.5,
+        "description": "fast-uri versions 2.3.1 through 3.1.2 and 4.0.0 fail to canonicalize Unicode (IDN) hostnames for HTTP-family URLs. The IDN conversion path calls a helper that does not exist on the global URL construc",
+        "published": "2026-06-29T14:16:47.967"
       },
       {
         "cve_id": "CVE-2026-13521",
@@ -339,48 +381,6 @@
         "base_score": 7.3,
         "description": "A vulnerability was identified in SourceCodester Class and Exam Timetabling System 1.0/5.php. Affected by this vulnerability is an unknown functionality of the file /preview5.php. Such manipulation of",
         "published": "2026-06-29T02:16:25.390"
-      },
-      {
-        "cve_id": "CVE-2026-13526",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A flaw has been found in SourceCodester Class and Exam Timetabling System 1.0. Impacted is an unknown function of the file /edit_class.php. This manipulation of the argument ID causes sql injection. T",
-        "published": "2026-06-29T03:16:45.810"
-      },
-      {
-        "cve_id": "CVE-2026-13527",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability has been found in SourceCodester Class and Exam Timetabling System 1.0. The affected element is an unknown function of the file /preview4.php. Such manipulation of the argument course_",
-        "published": "2026-06-29T04:16:27.550"
-      },
-      {
-        "cve_id": "CVE-2026-13528",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was found in YunaiV/zhijiantianya ruoyi-vue-pro up to 2026.04-jdk8-SNAPSHOT. The impacted element is the function generateUploadPath of the file yudao-module-infra/src/main/java/cn/ioc",
-        "published": "2026-06-29T04:16:29.317"
-      },
-      {
-        "cve_id": "CVE-2025-7386",
-        "severity": "MEDIUM",
-        "base_score": 6.8,
-        "description": "Information exposure vulnerability in Hitachi Storage Navigator.\n\nThis issue affects Hitachi Virtual Storage Platform 5100, 5200, 5500, 5600, 5100H, 5200H, 5500H, 5600H, VX8: before DKCMAIN Ver. 90-09",
-        "published": "2026-06-29T07:16:23.707"
-      },
-      {
-        "cve_id": "CVE-2026-13496",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A vulnerability was found in itsourcecode Hospital Management System 1.0. The affected element is an unknown function of the file /ajaxmedicine.php. The manipulation of the argument medicineid results",
-        "published": "2026-06-28T13:16:53.037"
-      },
-      {
-        "cve_id": "CVE-2026-13497",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A vulnerability was determined in itsourcecode Hospital Management System 1.0. The impacted element is an unknown function of the file /appointment.php. This manipulation of the argument editid causes",
-        "published": "2026-06-28T13:16:53.197"
       }
     ]
   },
