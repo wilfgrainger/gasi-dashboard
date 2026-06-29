@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-06-28T20:51:45.358473+00:00",
+  "generated_at": "2026-06-29T02:36:02.167106+00:00",
   "threat_score": {
-    "score": 5.5,
+    "score": 5.0,
     "level": "ELEVATED",
     "level_color": "elevated",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 0,
+        "score": 1.0,
         "max": 3
       },
       {
@@ -238,44 +238,44 @@
     ]
   },
   "nvd": {
-    "total": 37,
-    "critical_count": 1,
+    "total": 41,
+    "critical_count": 0,
     "high_count": 13,
     "cves": [
       {
-        "cve_id": "CVE-2026-58053",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Gitea act_runner with the Docker backend (through act 0.262.0) passes a workflow's container.options string to the Docker job container's HostConfig and, when configured with privileged: false, forces",
-        "published": "2026-06-28T02:16:32.420"
+        "cve_id": "CVE-2026-13515",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A security vulnerability has been detected in Tenda JD12L 16.03.53.23. Impacted is the function formSetPPTPServer of the file /goform/SetPptpServerCfg. Such manipulation of the argument startIp leads ",
+        "published": "2026-06-29T00:16:47.463"
       },
       {
-        "cve_id": "CVE-2026-10643",
+        "cve_id": "CVE-2026-13516",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "Zephyr's IP socket recvmsg() implementation (subsys/net/lib/sockets/sockets_inet.c, insert_pktinfo()) validated the user-supplied ancillary (msg_control) buffer using only the payload length (msg-msg_",
-        "published": "2026-06-28T00:16:24.637"
+        "base_score": 8.8,
+        "description": "A vulnerability was detected in Tenda JD12L 16.03.53.23. The affected element is the function fromSetWifiGusetBasic of the file /goform/WifiGuestSet. Performing a manipulation of the argument shareSpe",
+        "published": "2026-06-29T00:16:47.633"
       },
       {
-        "cve_id": "CVE-2026-58049",
+        "cve_id": "CVE-2026-13517",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "FFmpeg's RASC video decoder (decode_dlta in libavcodec/rasc.c) performs 32-bit reads and writes at the row cursor before the NEXT_LINE row-boundary check and validates the DLTA region in pixel rather ",
-        "published": "2026-06-28T02:16:30.477"
+        "base_score": 8.8,
+        "description": "A flaw has been found in Tenda JD12L 16.03.53.23. The impacted element is the function formWifiBasicSet of the file /goform/WifiBasicSet. Executing a manipulation of the argument security_5g can lead ",
+        "published": "2026-06-29T01:16:30.517"
       },
       {
-        "cve_id": "CVE-2026-8095",
+        "cve_id": "CVE-2026-13518",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Frontend File Manager Plugin plugin for WordPress is vulnerable to Authenticated Arbitrary File Deletion in versions up to and including 23.6. This is due to a case-sensitive bypass of the wpfm_di",
-        "published": "2026-06-28T00:16:25.180"
+        "base_score": 8.8,
+        "description": "A vulnerability has been found in Tenda JD12L 16.03.53.23. This affects the function fromAddressNat of the file /goform/addressNat. The manipulation of the argument page leads to stack-based buffer ov",
+        "published": "2026-06-29T01:16:30.683"
       },
       {
-        "cve_id": "CVE-2026-58056",
+        "cve_id": "CVE-2026-13519",
         "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "RustDesk gates incoming control messages on per-capability flags rather than on the session's authorized connection type, and a file-transfer session does not clear those flags. A peer holding only a ",
-        "published": "2026-06-28T02:16:32.860"
+        "base_score": 8.8,
+        "description": "A vulnerability was found in Tenda JD12L 16.03.53.23. This impacts the function fromNatStaticSetting of the file /goform/NatStaticSetting. The manipulation of the argument page results in stack-based ",
+        "published": "2026-06-29T02:16:25.063"
       },
       {
         "cve_id": "CVE-2026-10646",
@@ -327,32 +327,11 @@
         "published": "2026-06-28T15:16:51.973"
       },
       {
-        "cve_id": "CVE-2026-58054",
+        "cve_id": "CVE-2026-13521",
         "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "MyBB 1.8.40 does not restrict which usergroup a limited Admin Control Panel user may assign when creating or editing users; the user module offers the Administrators group (gid 4) and its datahandler'",
-        "published": "2026-06-28T02:16:32.550"
-      },
-      {
-        "cve_id": "CVE-2026-58050",
-        "severity": "HIGH",
-        "base_score": 7.0,
-        "description": "libssh2 through 1.11.1 reads an attacker-controlled 32-bit attribute count from a publickey-subsystem response and uses it in the allocation num_attrs * sizeof(libssh2_publickey_attribute) without bou",
-        "published": "2026-06-28T02:16:32.017"
-      },
-      {
-        "cve_id": "CVE-2026-58051",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "libssh2 through 1.11.1 grows its publickey list with SSH2_REALLOC but does not zero-initialize new entries before parsing populates them, so a parse failure reaching the cleanup path leaves libssh2_pu",
-        "published": "2026-06-28T02:16:32.153"
-      },
-      {
-        "cve_id": "CVE-2026-58058",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Nmap through 7.99 does not keep the IPv6 extension-header walk within the captured packet in ipv6_get_data_primitive (libnetutil/netutil.cc), so the pointer advances past the buffer and the remaining-",
-        "published": "2026-06-28T02:16:33.130"
+        "base_score": 7.3,
+        "description": "A vulnerability was identified in SourceCodester Class and Exam Timetabling System 1.0/5.php. Affected by this vulnerability is an unknown functionality of the file /preview5.php. Such manipulation of",
+        "published": "2026-06-29T02:16:25.390"
       },
       {
         "cve_id": "CVE-2026-10593",
@@ -376,11 +355,32 @@
         "published": "2026-06-28T13:16:53.197"
       },
       {
-        "cve_id": "CVE-2026-58055",
+        "cve_id": "CVE-2026-13509",
         "severity": "MEDIUM",
-        "base_score": 5.4,
-        "description": "nghttp2's nghttpx proxy through 1.69.0 forwards an HTTP/1.1 Upgrade request that also carries a Content-Length header and body onto reusable keep-alive backend connections, re-adding the Upgrade and C",
-        "published": "2026-06-28T02:16:32.677"
+        "base_score": 6.3,
+        "description": "A vulnerability has been found in RAGapp up to 0.1.5. Affected is the function FileHandler.upload_file/FileHandler.remove_file of the file src/ragapp/backend/controllers/files.py of the component Know",
+        "published": "2026-06-28T22:16:48.480"
+      },
+      {
+        "cve_id": "CVE-2026-13512",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A vulnerability was identified in Databend up to 1.2.881 on HTTP. This affects the function ClientSessionManager::state_key of the file src/query/service/src/servers/http/v1/session/client_session_man",
+        "published": "2026-06-28T23:16:48.487"
+      },
+      {
+        "cve_id": "CVE-2026-13520",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A vulnerability was determined in itsourcecode Hospital Management System 1.0. Affected is an unknown function of the file /appointmentapproval.php of the component Appointment Handler. This manipulat",
+        "published": "2026-06-29T02:16:25.230"
+      },
+      {
+        "cve_id": "CVE-2026-13508",
+        "severity": "MEDIUM",
+        "base_score": 5.5,
+        "description": "A flaw has been found in khoj-ai khoj up to 2.0.0-beta.28. This impacts an unknown function of the file src/khoj/routers/api_chat.py of the component Conversation Sharing Handler. This manipulation of",
+        "published": "2026-06-28T22:16:48.303"
       }
     ]
   },
