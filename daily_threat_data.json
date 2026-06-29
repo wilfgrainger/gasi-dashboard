@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-06-29T18:03:25.763447+00:00",
+  "generated_at": "2026-06-29T21:16:54.010169+00:00",
   "threat_score": {
-    "score": 5.5,
+    "score": 5.0,
     "level": "ELEVATED",
     "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 22,
+        "value": 23,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 0,
+        "score": 1.0,
         "max": 3
       },
       {
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1629,
-    "recent_30d_count": 22,
+    "total_catalog_count": 1630,
+    "recent_30d_count": 23,
     "recent": [
+      {
+        "cve_id": "CVE-2026-48558",
+        "vendor": "SimpleHelp ",
+        "product": "SimpleHelp",
+        "name": "SimpleHelp Authentication Bypass Vulnerability",
+        "date_added": "2026-06-29",
+        "due_date": "2026-07-02",
+        "description": "SimpleHelp contains an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifyin",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-12569",
         "vendor": "PTC",
@@ -224,31 +234,14 @@
         "due_date": "2026-06-06",
         "description": "Mirasvit Full Page Cache Warmer contains a deserialization of untrusted data vulnerability that could allow unauthenticated attackers to achieve remote code execution by supplying a crafted serialized",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2022-0492",
-        "vendor": "Linux",
-        "product": "Kernel",
-        "name": "Linux Kernel Improper Authentication Vulnerability",
-        "date_added": "2026-06-02",
-        "due_date": "2026-06-05",
-        "description": "Linux Kernel contains an improper authentication vulnerability which could allow for privilege escalation via the cgroups v1 release_agent feature.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 148,
-    "critical_count": 1,
+    "total": 240,
+    "critical_count": 0,
     "high_count": 39,
     "cves": [
-      {
-        "cve_id": "CVE-2026-49048",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Joomla extension JoomCCK exposes a front-end controller task, that builds two SQL statements by directly concatenating a user-supplied request parameter into the query string without escaping or p",
-        "published": "2026-06-28T19:16:52.100"
-      },
       {
         "cve_id": "CVE-2026-13515",
         "severity": "HIGH",
@@ -381,6 +374,13 @@
         "base_score": 7.3,
         "description": "A vulnerability was identified in SourceCodester Class and Exam Timetabling System 1.0/5.php. Affected by this vulnerability is an unknown functionality of the file /preview5.php. Such manipulation of",
         "published": "2026-06-29T02:16:25.390"
+      },
+      {
+        "cve_id": "CVE-2026-13526",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A flaw has been found in SourceCodester Class and Exam Timetabling System 1.0. Impacted is an unknown function of the file /edit_class.php. This manipulation of the argument ID causes sql injection. T",
+        "published": "2026-06-29T03:16:45.810"
       }
     ]
   },
