@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-30T07:42:15.027631+00:00",
+  "generated_at": "2026-06-30T10:48:31.473704+00:00",
   "threat_score": {
-    "score": 5.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 2,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 225,
-    "critical_count": 1,
-    "high_count": 42,
+    "total": 216,
+    "critical_count": 2,
+    "high_count": 36,
     "cves": [
       {
         "cve_id": "CVE-2026-57331",
@@ -250,18 +250,11 @@
         "published": "2026-06-29T15:16:43.370"
       },
       {
-        "cve_id": "CVE-2026-13545",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability has been found in D-Link DCS-935L 1.10.01. This affects the function sub_400E40 of the file setconf.cgi of the component POST Parameter Handler. Such manipulation of the argument UID l",
-        "published": "2026-06-29T09:16:27.230"
-      },
-      {
-        "cve_id": "CVE-2026-25707",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A relative path traversal bug problem when processing repository metadata in libzypp before 17.38.10 could be used by remote attackers supplying repositories to overwrite files on the system, leading ",
-        "published": "2026-06-29T10:16:30.330"
+        "cve_id": "CVE-2026-56782",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Gorse before 0.5.10 contains an authentication bypass vulnerability in the /api/dump and /api/restore endpoints that allows unauthenticated attackers to access protected functionality when admin_api_k",
+        "published": "2026-06-29T18:16:38.817"
       },
       {
         "cve_id": "CVE-2026-13562",
@@ -327,6 +320,20 @@
         "published": "2026-06-29T16:16:39.640"
       },
       {
+        "cve_id": "CVE-2026-56285",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Nitter's /video media proxy endpoint fails to validate target URLs against Twitter/X domains and uses a hardcoded default HMAC key, allowing unauthenticated attackers to compute valid HMACs for arbitr",
+        "published": "2026-06-29T18:16:38.410"
+      },
+      {
+        "cve_id": "CVE-2026-57947",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "Pinpoint through 3.1.0 contains a server-side request forgery vulnerability in the webhook registration endpoint that allows authenticated users to register internal URLs due to missing SSRF protectio",
+        "published": "2026-06-29T18:16:39.720"
+      },
+      {
         "cve_id": "CVE-2026-13744",
         "severity": "HIGH",
         "base_score": 8.3,
@@ -348,6 +355,13 @@
         "published": "2026-06-29T14:16:51.207"
       },
       {
+        "cve_id": "CVE-2026-57950",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "ruoyi-vue-pro through 2026.05, fixed in commit 5d1fd70 contains a broken access control vulnerability in ErpSaleOrderController that allows attackers with erp:sale-out permissions to gain unauthorized",
+        "published": "2026-06-29T18:16:40.130"
+      },
+      {
         "cve_id": "CVE-2026-13676",
         "severity": "HIGH",
         "base_score": 7.5,
@@ -367,20 +381,6 @@
         "base_score": 7.5,
         "description": "Home Assistant is open source home automation software that puts local control and privacy first. Prior to 2025.5.0, The iOS companion app ignores the SSID allowlist for internal networks. The app use",
         "published": "2026-06-29T15:16:41.720"
-      },
-      {
-        "cve_id": "CVE-2026-56124",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "phpUploader before 2.0.2 contains an unauthenticated information disclosure vulnerability that allows remote attackers to access the full contents of the uploaded-files database table by visiting any ",
-        "published": "2026-06-29T15:16:42.217"
-      },
-      {
-        "cve_id": "CVE-2026-13546",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was found in Feehi CMS up to 2.1.1. This vulnerability affects unknown code of the file /api/articles of the component REST API Endpoint. Performing a manipulation results in missing a",
-        "published": "2026-06-29T09:16:27.390"
       }
     ]
   },
