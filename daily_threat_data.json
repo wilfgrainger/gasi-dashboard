@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-06-30T21:22:06.526511+00:00",
+  "generated_at": "2026-07-01T02:36:46.322462+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 23,
+        "value": 22,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
-        "score": 2.5,
+        "value": 11,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1630,
-    "recent_30d_count": 23,
+    "recent_30d_count": 22,
     "recent": [
       {
         "cve_id": "CVE-2026-48558",
@@ -238,10 +238,38 @@
     ]
   },
   "nvd": {
-    "total": 193,
-    "critical_count": 7,
-    "high_count": 29,
+    "total": 647,
+    "critical_count": 11,
+    "high_count": 24,
     "cves": [
+      {
+        "cve_id": "CVE-2026-48276",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Unrestricted Upload of File with Dangerous Type vulnerability that could result in arbitrary code execution in the context of the cur",
+        "published": "2026-06-30T16:16:54.193"
+      },
+      {
+        "cve_id": "CVE-2026-48277",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. Exploitatio",
+        "published": "2026-06-30T16:16:54.320"
+      },
+      {
+        "cve_id": "CVE-2026-48281",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. Exploitatio",
+        "published": "2026-06-30T16:16:54.427"
+      },
+      {
+        "cve_id": "CVE-2026-48282",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could lead to arbitrary code execut",
+        "published": "2026-06-30T16:16:54.533"
+      },
       {
         "cve_id": "CVE-2026-12073",
         "severity": "CRITICAL",
@@ -306,25 +334,18 @@
         "published": "2026-06-30T12:16:23.580"
       },
       {
+        "cve_id": "CVE-2026-27957",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.464, an authenticated command injection vulnerability in the CA Certificate mana",
+        "published": "2026-06-30T15:16:52.863"
+      },
+      {
         "cve_id": "CVE-2026-11590",
         "severity": "HIGH",
         "base_score": 8.6,
         "description": "The WP Support Plus Responsive Ticket System WordPress plugin through 9.1.2 does not sanitize user-supplied array keys before using them in a SQL statement, allowing unauthenticated users to perform S",
         "published": "2026-06-30T07:16:31.720"
-      },
-      {
-        "cve_id": "CVE-2026-58302",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "rtapi_app in linuxcnc-uspace in LinuxCNC before 2.9.9 allows privilege escalation. It is installed SUID root and loads shared library modules via dlopen() by using a user-supplied module name. Insuffi",
-        "published": "2026-06-30T02:16:26.820"
-      },
-      {
-        "cve_id": "CVE-2026-7656",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The IPv6 Neighbor Discovery handlers in subsys/net/ip/ipv6_nbr.c (handle_ra_input, handle_ns_input, handle_na_input) used an incorrect boolean expression that combined the RFC 4861 validity checks wit",
-        "published": "2026-06-29T23:16:43.650"
       },
       {
         "cve_id": "CVE-2026-49877",
@@ -360,27 +381,6 @@
         "base_score": 7.8,
         "description": "Nokia MantaRay NM is vulnerable to a sudo privilege escalation vulnerability where a local attacker possessing administrative (local admin) privileges can escalate to full root privileges on the host.",
         "published": "2026-06-30T10:16:33.720"
-      },
-      {
-        "cve_id": "CVE-2026-34592",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.471, Coolify server and project lookups are not scoped to the current team, allo",
-        "published": "2026-06-29T22:16:44.120"
-      },
-      {
-        "cve_id": "CVE-2026-51221",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A buffer overflow in the Get_Attribute_List function of EIPStackGroup OpENer commit 76b95c allows attackers to cause a Denial of Service (DoS) via supplying a crafted Common Packet Format (CPF) packet",
-        "published": "2026-06-29T22:16:49.070"
-      },
-      {
-        "cve_id": "CVE-2026-8023",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Zephyr's HTTP server (subsys/net/lib/http) provides a static-filesystem resource type (HTTP_RESOURCE_TYPE_STATIC_FS, available when CONFIG_FILE_SYSTEM is enabled) that serves files from a configured r",
-        "published": "2026-06-29T23:16:43.777"
       }
     ]
   },
