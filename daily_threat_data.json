@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T17:46:02.197752+00:00",
+  "generated_at": "2026-07-01T21:18:13.866765+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 22,
+        "value": 23,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 22,
+        "value": 16,
         "score": 3.0,
         "max": 3
       },
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1630,
-    "recent_30d_count": 22,
+    "total_catalog_count": 1631,
+    "recent_30d_count": 23,
     "recent": [
+      {
+        "cve_id": "CVE-2026-45659",
+        "vendor": "Microsoft",
+        "product": "SharePoint Server",
+        "name": "Microsoft SharePoint Server Deserialization of Untrusted Data Vulnerability",
+        "date_added": "2026-07-01",
+        "due_date": "2026-07-04",
+        "description": "Microsoft SharePoint Server contains a deserialization of untrusted data vulnerability which allows an authorized attacker to execute code over a network.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-48558",
         "vendor": "SimpleHelp ",
@@ -224,72 +234,20 @@
         "due_date": "2026-06-19",
         "description": "SolarWinds Serv-U contains an uncontrolled resource consumption vulnerability that allows specially crafted POST requests using the Content-Encoding: deflate header to crash the Serv-U service without",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-45247",
-        "vendor": "Mirasvit",
-        "product": "Mirasvit Full Page Cache Warmer",
-        "name": "Mirasvit Full Page Cache Warmer Deserialization of Untrusted Data Vulnerability",
-        "date_added": "2026-06-03",
-        "due_date": "2026-06-06",
-        "description": "Mirasvit Full Page Cache Warmer contains a deserialization of untrusted data vulnerability that could allow unauthenticated attackers to achieve remote code execution by supplying a crafted serialized",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 744,
-    "critical_count": 22,
-    "high_count": 39,
+    "total": 749,
+    "critical_count": 16,
+    "high_count": 55,
     "cves": [
-      {
-        "cve_id": "CVE-2026-10134",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "IBM Langflow OSS 1.0.0 through 1.9.3 allows an attacker to read every secret available to the Langflow process, read and modify every flow, conversation, message, file upload, and saved component in t",
-        "published": "2026-06-30T20:17:26.883"
-      },
       {
         "cve_id": "CVE-2026-13782",
         "severity": "CRITICAL",
         "base_score": 10.0,
         "description": "Use after free in Browser in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (C",
         "published": "2026-06-30T23:16:53.063"
-      },
-      {
-        "cve_id": "CVE-2026-7873",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "IBM Langflow OSS 1.0.0 through 1.10.0 allows authenticated attackers to execute arbitrary OS commands and read sensitive files including credentials, enabling complete system compromise and lateral mo",
-        "published": "2026-06-30T20:17:31.750"
-      },
-      {
-        "cve_id": "CVE-2026-58138",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Orkes Conductor 3.21.21 before 3.30.2 contains an unauthenticated remote code execution vulnerability that allows remote attackers to execute arbitrary OS commands by submitting inline workflow defini",
-        "published": "2026-06-30T19:17:00.520"
-      },
-      {
-        "cve_id": "CVE-2026-10109",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "IBM Db2 11.5.0 through 11.5.9, and 12.1.0 through 12.1.4 is vulnerable to remote code execution due to improper pre-auth DRDA handshake handling.",
-        "published": "2026-06-30T20:17:26.603"
-      },
-      {
-        "cve_id": "CVE-2026-7803",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "IBM Langflow OSS 1.0.0 through 1.10.0 could allow arbitrary code execution due to improper validation of flow nodes with missing or empty component type fields.",
-        "published": "2026-06-30T20:17:31.413"
-      },
-      {
-        "cve_id": "CVE-2026-7871",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "IBM Langflow OSS 1.0.0 through 1.10.0 allows users with Redis access to execute arbitrary code with full application privileges, compromising all secrets, data, and system integrity.",
-        "published": "2026-06-30T20:17:31.543"
       },
       {
         "cve_id": "CVE-2026-37106",
@@ -327,20 +285,6 @@
         "published": "2026-06-30T23:16:52.490"
       },
       {
-        "cve_id": "CVE-2026-13783",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Use after free in Views in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via a crafted HT",
-        "published": "2026-06-30T23:16:53.160"
-      },
-      {
-        "cve_id": "CVE-2026-10140",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "IBM Langflow OSS 1.0.0 through 1.10.0 voice mode contains improper shared-state handling that allows reuse of API clients across tenant boundaries. An authenticated attacker can manipulate cache state",
-        "published": "2026-06-30T20:17:27.007"
-      },
-      {
         "cve_id": "CVE-2026-13780",
         "severity": "CRITICAL",
         "base_score": 9.6,
@@ -353,6 +297,34 @@
         "base_score": 9.6,
         "description": "Insufficient validation of untrusted input in Skia in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape vi",
         "published": "2026-06-30T23:16:52.967"
+      },
+      {
+        "cve_id": "CVE-2026-13785",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Use after free in Bluetooth in Google Chrome on Mac prior to 150.0.7871.47 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially perform a sandbox escape via ",
+        "published": "2026-06-30T23:16:53.347"
+      },
+      {
+        "cve_id": "CVE-2026-13789",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Use after free in GPU in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chrom",
+        "published": "2026-06-30T23:16:53.713"
+      },
+      {
+        "cve_id": "CVE-2026-13792",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Use after free in Touchbar in Google Chrome on Mac prior to 150.0.7871.47 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-06-30T23:16:53.997"
+      },
+      {
+        "cve_id": "CVE-2026-13796",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Integer overflow in Chromecast in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML pag",
+        "published": "2026-06-30T23:16:54.367"
       },
       {
         "cve_id": "CVE-2026-13797",
@@ -369,18 +341,46 @@
         "published": "2026-06-30T23:16:54.557"
       },
       {
-        "cve_id": "CVE-2026-11708",
+        "cve_id": "CVE-2026-13843",
         "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "IBM WebSphere Application Server 9.0, and 8.5 is affected by a cross-site scripting vulnerability in the administrative console's integrated help system.",
-        "published": "2026-06-30T20:17:27.767"
+        "base_score": 9.6,
+        "description": "Insufficient validation of untrusted input in Chrome for iOS in Google Chrome on iOS prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a ",
+        "published": "2026-06-30T23:16:58.837"
       },
       {
-        "cve_id": "CVE-2026-11712",
+        "cve_id": "CVE-2026-13846",
         "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "IBM WebSphere Application Server 9.0, and 8.5 is affected by a cross-site scripting vulnerability in the administrative console help system.",
-        "published": "2026-06-30T20:17:27.897"
+        "base_score": 9.6,
+        "description": "Use after free in USB in Google Chrome on Mac prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page.",
+        "published": "2026-06-30T23:16:59.113"
+      },
+      {
+        "cve_id": "CVE-2026-13777",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Insufficient validation of untrusted input in iOSWeb in Google Chrome on iOS prior to 150.0.7871.47 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium ",
+        "published": "2026-06-30T23:16:52.583"
+      },
+      {
+        "cve_id": "CVE-2026-13783",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in Views in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via a crafted HT",
+        "published": "2026-06-30T23:16:53.160"
+      },
+      {
+        "cve_id": "CVE-2026-13784",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in Views in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via a crafted HT",
+        "published": "2026-06-30T23:16:53.253"
+      },
+      {
+        "cve_id": "CVE-2026-13786",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in Ozone in Google Chrome prior to 150.0.7871.47 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: Critical)",
+        "published": "2026-06-30T23:16:53.437"
       }
     ]
   },
