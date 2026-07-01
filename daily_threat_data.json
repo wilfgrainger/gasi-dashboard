@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T08:03:35.866692+00:00",
+  "generated_at": "2026-07-01T14:08:35.439083+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 15,
+        "value": 21,
         "score": 3.0,
         "max": 3
       },
@@ -238,8 +238,8 @@
     ]
   },
   "nvd": {
-    "total": 683,
-    "critical_count": 15,
+    "total": 660,
+    "critical_count": 21,
     "high_count": 25,
     "cves": [
       {
@@ -285,39 +285,53 @@
         "published": "2026-06-30T16:16:54.870"
       },
       {
-        "cve_id": "CVE-2026-9711",
+        "cve_id": "CVE-2026-10134",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The EventON - WordPress Virtual Event Calendar Plugin plugin for WordPress (full) is vulnerable to SQL Injection via the WordPress 'search' parameter in versions up to, and including, 5.0.11 due to in",
-        "published": "2026-06-30T10:16:37.350"
+        "base_score": 10.0,
+        "description": "IBM Langflow OSS 1.0.0 through 1.9.3 allows an attacker to read every secret available to the Langflow process, read and modify every flow, conversation, message, file upload, and saved component in t",
+        "published": "2026-06-30T20:17:26.883"
       },
       {
-        "cve_id": "CVE-2026-13766",
+        "cve_id": "CVE-2026-7873",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "DBIx::QuickORM versions before 0.000026 for Perl allow SQL injection via unquoted SQL identifiers.\n\nThe default SQL builder, a SQL::Abstract subclass, sets bindtype in its constructor but never quote_",
-        "published": "2026-06-30T12:16:23.180"
+        "base_score": 9.9,
+        "description": "IBM Langflow OSS 1.0.0 through 1.10.0 allows authenticated attackers to execute arbitrary OS commands and read sensitive files including credentials, enabling complete system compromise and lateral mo",
+        "published": "2026-06-30T20:17:31.750"
       },
       {
-        "cve_id": "CVE-2026-14162",
+        "cve_id": "CVE-2026-58138",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Hospital Queuing Management developed by Advantech has a Sensitive Data Exposure vulnerability, allowing unauthenticated remote attackers to access a specific URL to obtain API documentation.",
-        "published": "2026-06-30T12:16:23.440"
+        "description": "Orkes Conductor 3.21.21 before 3.30.2 contains an unauthenticated remote code execution vulnerability that allows remote attackers to execute arbitrary OS commands by submitting inline workflow defini",
+        "published": "2026-06-30T19:17:00.520"
       },
       {
-        "cve_id": "CVE-2026-8402",
+        "cve_id": "CVE-2026-10109",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Eksagate Electronic Engineering and Computer Industry Trade Inc. SYSGUARD 6001 allows Blind SQL In",
-        "published": "2026-06-30T12:16:26.613"
+        "description": "IBM Db2 11.5.0 through 11.5.9, and 12.1.0 through 12.1.4 is vulnerable to remote code execution due to improper pre-auth DRDA handshake handling.",
+        "published": "2026-06-30T20:17:26.603"
       },
       {
-        "cve_id": "CVE-2026-58116",
+        "cve_id": "CVE-2026-7803",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "LLaMA-Factory through 0.9.5 contains a remote code execution vulnerability that allows attackers with WebUI access to execute arbitrary Python code by supplying a malicious model path in the Chat or T",
-        "published": "2026-06-30T13:19:18.490"
+        "description": "IBM Langflow OSS 1.0.0 through 1.10.0 could allow arbitrary code execution due to improper validation of flow nodes with missing or empty component type fields.",
+        "published": "2026-06-30T20:17:31.413"
+      },
+      {
+        "cve_id": "CVE-2026-7871",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "IBM Langflow OSS 1.0.0 through 1.10.0 allows users with Redis access to execute arbitrary code with full application privileges, compromising all secrets, data, and system integrity.",
+        "published": "2026-06-30T20:17:31.543"
+      },
+      {
+        "cve_id": "CVE-2026-10140",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "IBM Langflow OSS 1.0.0 through 1.10.0 voice mode contains improper shared-state handling that allows reuse of API clients across tenant boundaries. An authenticated attacker can manipulate cache state",
+        "published": "2026-06-30T20:17:27.007"
       },
       {
         "cve_id": "CVE-2026-48313",
@@ -334,11 +348,18 @@
         "published": "2026-06-30T16:16:55.310"
       },
       {
-        "cve_id": "CVE-2026-6556",
+        "cve_id": "CVE-2026-11708",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "@fastify/express versions 4.0.6 and earlier only rewrite the plugin prefix for middleware mount paths when the path argument is a string. Non-string mount paths (arrays of paths and regular expression",
-        "published": "2026-06-30T13:19:25.467"
+        "base_score": 9.3,
+        "description": "IBM WebSphere Application Server 9.0, and 8.5 is affected by a cross-site scripting vulnerability in the administrative console's integrated help system.",
+        "published": "2026-06-30T20:17:27.767"
+      },
+      {
+        "cve_id": "CVE-2026-11712",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "IBM WebSphere Application Server 9.0, and 8.5 is affected by a cross-site scripting vulnerability in the administrative console help system.",
+        "published": "2026-06-30T20:17:27.897"
       },
       {
         "cve_id": "CVE-2026-58166",
@@ -348,39 +369,18 @@
         "published": "2026-06-30T17:16:23.487"
       },
       {
-        "cve_id": "CVE-2026-41053",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Incorrect authentication caching in the team member ship expansion of the Rancher Github authentication provider caused it granting principal access to any logged in user, in 2.13 before 2.13.6 and 2.",
-        "published": "2026-06-30T12:16:23.580"
+        "cve_id": "CVE-2026-58172",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Ocelot through 24.1.0, fixed in commit f156fd4, contains a security control bypass vulnerability that allows denied clients to circumvent IP-based access restrictions by sending WebSocket upgrade requ",
+        "published": "2026-06-30T17:16:24.313"
       },
       {
-        "cve_id": "CVE-2026-27957",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.464, an authenticated command injection vulnerability in the CA Certificate mana",
-        "published": "2026-06-30T15:16:52.863"
-      },
-      {
-        "cve_id": "CVE-2026-48307",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "ColdFusion versions 2025.9, 2023.20 and earlier are affected by a reflected Cross-Site Scripting (XSS) vulnerability. An attacker could exploit this vulnerability to inject malicious scripts into a we",
-        "published": "2026-06-30T16:16:54.987"
-      },
-      {
-        "cve_id": "CVE-2026-58165",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenZiti through 2.0.0, fixed in commit 3027fdf, contains a privilege escalation vulnerability that allows authenticated non-admin identities with fine-grained enrollment management permissions to cre",
-        "published": "2026-06-30T17:16:23.350"
-      },
-      {
-        "cve_id": "CVE-2026-58168",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "DeepTutor before version 1.4.10 contains an authorization bypass vulnerability that allows low-privilege users to invoke unrestricted MCP tools due to the allowed_mcp_tools function returning None ins",
-        "published": "2026-06-30T17:16:23.753"
+        "cve_id": "CVE-2026-7663",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "IBM Langflow OSS 1.0.0 through 1.9.6 could allow unauthenticated attackers to access protected MCP project resources and execute MCP operations due to improper authorization enforcement in the Streama",
+        "published": "2026-06-30T20:17:31.280"
       }
     ]
   },
