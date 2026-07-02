@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-01T21:18:13.866765+00:00",
+  "generated_at": "2026-07-02T02:26:12.040016+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 23,
+        "value": 21,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 16,
-        "score": 3.0,
+        "value": 6,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1631,
-    "recent_30d_count": 23,
+    "recent_30d_count": 21,
     "recent": [
       {
         "cve_id": "CVE-2026-45659",
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 749,
-    "critical_count": 16,
-    "high_count": 55,
+    "total": 362,
+    "critical_count": 6,
+    "high_count": 28,
     "cves": [
       {
-        "cve_id": "CVE-2026-13782",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Use after free in Browser in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (C",
-        "published": "2026-06-30T23:16:53.063"
-      },
-      {
-        "cve_id": "CVE-2026-37106",
+        "cve_id": "CVE-2026-7840",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "An issue in DokuWiki 2025-05-14b \"Librarian\" 56.2 allows a remote attacker to create an account via the register function in inc/auth.php. NOTE: this is disputed by the Supplier because this is the in",
-        "published": "2026-06-30T22:16:46.620"
+        "description": "UltraVNC repeater through 1.8.2.2 contains a global buffer overflow in its embedded HTTP administration server. The functions wi_senderr() and wi_replyhdr() in repeater/webgui/webutils.c write the cal",
+        "published": "2026-07-01T05:16:24.820"
       },
       {
-        "cve_id": "CVE-2026-50003",
+        "cve_id": "CVE-2026-11387",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "A malicious or compromised server can make a DCMTK client using bit-preserving C-GET storage mode write files outside the chosen output directory, using both relative (../) paths and absolute paths.",
-        "published": "2026-06-30T22:16:57.190"
+        "description": "The SMS Alert \u2013 SMS & OTP for WooCommerce, Order Notifications & Abandoned Cart Recovery plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and incl",
+        "published": "2026-07-01T08:16:20.587"
       },
       {
-        "cve_id": "CVE-2026-58449",
+        "cve_id": "CVE-2026-6070",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "txtai through 9.10.0, fixed in commit 11b32da, exposes an API /reindex endpoint whose function body parameter is resolved through txtai.util.Resolver, which performs __import__ and getattr on the call",
-        "published": "2026-06-30T22:16:58.397"
+        "base_score": 9.1,
+        "description": "The WP-BusinessDirectory plugin for WordPress is vulnerable to Unauthenticated Arbitrary File Deletion in versions up to and including 4.0.1. This is due to insufficient path validation in the remove(",
+        "published": "2026-07-01T05:16:23.277"
       },
       {
-        "cve_id": "CVE-2026-13775",
+        "cve_id": "CVE-2026-7839",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Use after free in GPU in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chrom",
-        "published": "2026-06-30T23:16:52.397"
+        "base_score": 9.1,
+        "description": "UltraVNC repeater through 1.8.2.2 initializes the HTTP administration server with a hardcoded default password. In repeater/webgui/settings.c:197, when settings2.txt is absent on first run the repeate",
+        "published": "2026-07-01T05:16:24.680"
       },
       {
-        "cve_id": "CVE-2026-13776",
+        "cve_id": "CVE-2026-14198",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Type Confusion in Dawn in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chro",
-        "published": "2026-06-30T23:16:52.490"
+        "base_score": 9.1,
+        "description": "@fastify/middie versions 9.1.0 through 9.3.2 decode the encoded slash %2F inside path parameter values before matching middleware paths, while Fastify's underlying router preserves the encoding during",
+        "published": "2026-07-01T12:16:38.463"
       },
       {
-        "cve_id": "CVE-2026-13780",
+        "cve_id": "CVE-2026-10539",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Insufficient validation of untrusted input in ANGLE in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape v",
-        "published": "2026-06-30T23:16:52.873"
+        "base_score": 9.0,
+        "description": "A Control-M/Server communication command does not sufficiently filter or sanitize user-supplied input. Under certain conditions, this issue may allow an unauthenticated attacker to execute unauthorize",
+        "published": "2026-07-01T08:16:20.340"
       },
       {
-        "cve_id": "CVE-2026-13781",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Insufficient validation of untrusted input in Skia in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape vi",
-        "published": "2026-06-30T23:16:52.967"
-      },
-      {
-        "cve_id": "CVE-2026-13785",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in Bluetooth in Google Chrome on Mac prior to 150.0.7871.47 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially perform a sandbox escape via ",
-        "published": "2026-06-30T23:16:53.347"
-      },
-      {
-        "cve_id": "CVE-2026-13789",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in GPU in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chrom",
-        "published": "2026-06-30T23:16:53.713"
-      },
-      {
-        "cve_id": "CVE-2026-13792",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in Touchbar in Google Chrome on Mac prior to 150.0.7871.47 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-06-30T23:16:53.997"
-      },
-      {
-        "cve_id": "CVE-2026-13796",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Integer overflow in Chromecast in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML pag",
-        "published": "2026-06-30T23:16:54.367"
-      },
-      {
-        "cve_id": "CVE-2026-13797",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Insufficient validation of untrusted input in Chromecast in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox esc",
-        "published": "2026-06-30T23:16:54.460"
-      },
-      {
-        "cve_id": "CVE-2026-13798",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Heap buffer overflow in Chromecast in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML",
-        "published": "2026-06-30T23:16:54.557"
-      },
-      {
-        "cve_id": "CVE-2026-13843",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Insufficient validation of untrusted input in Chrome for iOS in Google Chrome on iOS prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a ",
-        "published": "2026-06-30T23:16:58.837"
-      },
-      {
-        "cve_id": "CVE-2026-13846",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in USB in Google Chrome on Mac prior to 150.0.7871.47 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page.",
-        "published": "2026-06-30T23:16:59.113"
-      },
-      {
-        "cve_id": "CVE-2026-13777",
+        "cve_id": "CVE-2026-7838",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Insufficient validation of untrusted input in iOSWeb in Google Chrome on iOS prior to 150.0.7871.47 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium ",
-        "published": "2026-06-30T23:16:52.583"
+        "description": "UltraVNC viewer through 1.8.2.2 contains an integer overflow leading to a heap buffer overflow in the RFB protocol failure-response parsing path. In vncviewer/ClientConnection.cpp, the 4-byte network-",
+        "published": "2026-07-01T05:16:24.540"
       },
       {
-        "cve_id": "CVE-2026-13783",
+        "cve_id": "CVE-2026-12158",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Use after free in Views in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via a crafted HT",
-        "published": "2026-06-30T23:16:53.160"
+        "description": "The RegistrationMagic \u2013 User Registration Forms Plugin plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 6.0.9.1. This is due to missing or incorre",
+        "published": "2026-07-01T08:16:20.710"
       },
       {
-        "cve_id": "CVE-2026-13784",
+        "cve_id": "CVE-2026-12224",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Use after free in Views in Google Chrome prior to 150.0.7871.47 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via a crafted HT",
-        "published": "2026-06-30T23:16:53.253"
+        "description": "The Dokan Pro plugin for WordPress is vulnerable to privilege escalation via update_capabilities REST Endpoint in all versions up to, and including, 5.0.4.  This is due to the `update_capabilities()` ",
+        "published": "2026-07-01T08:16:20.827"
       },
       {
-        "cve_id": "CVE-2026-13786",
+        "cve_id": "CVE-2026-13228",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Use after free in Ozone in Google Chrome prior to 150.0.7871.47 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: Critical)",
-        "published": "2026-06-30T23:16:53.437"
+        "description": "The LatePoint \u2013 Calendar Booking Plugin for Appointments and Events plugin for WordPress is vulnerable to Privilege Escalation to Administrator in versions up to, and including, 5.6.3 This is due to a",
+        "published": "2026-07-01T11:16:25.377"
+      },
+      {
+        "cve_id": "CVE-2026-10750",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The Royal MCP  WordPress plugin before 1.4.26 does not perform capability checks on the majority of its MCP tools after token authentication, allowing authenticated users with a low-privileged role su",
+        "published": "2026-07-01T07:16:21.890"
+      },
+      {
+        "cve_id": "CVE-2026-11794",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The Advanced Form Integration \u2014 Connect Forms to 200+ Apps WordPress plugin before 2.1.1 does not restrict the WordPress role assigned when it creates a user from a public form submission, allowing un",
+        "published": "2026-07-01T07:16:22.260"
+      },
+      {
+        "cve_id": "CVE-2026-5120",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "A Race Condition vulnerability affecting BIOVIA Workbook from Release 2021 through Release 2026 could allow a user to access unauthorized data from another user.",
+        "published": "2026-07-01T13:17:48.033"
+      },
+      {
+        "cve_id": "CVE-2026-10538",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "Messaging consumer functionality allows deserialization of user-controlled data without sufficient restriction of allowed object types in the out of support Control-M/Server and Control-M/Enterprise M",
+        "published": "2026-07-01T08:16:20.197"
+      },
+      {
+        "cve_id": "CVE-2026-14191",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "An out-of-bounds heap write exists in the RAR5 recovery-volume (.rev) parser in WinRAR and UnRAR (RecVolumes5::ReadHeader in recvol5.cpp). The RecItems vector is sized only when the first .rev file in",
+        "published": "2026-07-01T04:16:58.647"
+      },
+      {
+        "cve_id": "CVE-2026-7831",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "UltraVNC viewer through 1.8.2.2 contains an off-by-one stack buffer overflow in the RFB ServerInit message handler. In vncviewer/ClientConnection.cpp, when the server-supplied nameLength equals exactl",
+        "published": "2026-07-01T05:16:24.380"
+      },
+      {
+        "cve_id": "CVE-2026-20458",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "In Modem, there is a possible memory corruption due to a missing bounds check. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the attack",
+        "published": "2026-07-01T04:17:13.943"
+      },
+      {
+        "cve_id": "CVE-2026-12923",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Youtube Showcase plugin for WordPress is vulnerable to Arbitrary Function Call in versions up to and including 4.0.3. This is due to insufficient validation of the 'path' parameter in the emd_dele",
+        "published": "2026-07-01T05:16:18.040"
+      },
+      {
+        "cve_id": "CVE-2026-13468",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Visualizer \u2013 Tables & Charts Manager with Built-in AI Generator plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 4.0.3. This is due to the plugin no",
+        "published": "2026-07-01T05:16:18.663"
+      },
+      {
+        "cve_id": "CVE-2026-11568",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Product Configurator for WooCommerce WordPress plugin before 1.7.3 does not perform any authorisation or post-status check before returning WooCommerce product data through a public AJAX action, a",
+        "published": "2026-07-01T07:16:22.083"
       }
     ]
   },
