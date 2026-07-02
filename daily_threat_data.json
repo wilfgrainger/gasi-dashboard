@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-02T13:30:00.357835+00:00",
+  "generated_at": "2026-07-02T17:27:03.838526+00:00",
   "threat_score": {
-    "score": 4.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 7.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 0.5,
+        "value": 11,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,10 +238,151 @@
     ]
   },
   "nvd": {
-    "total": 0,
-    "critical_count": 0,
-    "high_count": 0,
-    "cves": []
+    "total": 337,
+    "critical_count": 11,
+    "high_count": 29,
+    "cves": [
+      {
+        "cve_id": "CVE-2026-50160",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Hoppscotch is an API development ecosystem. In self-hosted deployments of hoppscotch-backend from version 2026.4.1 and earlier, the unauthenticated POST /v1/onboarding/config endpoint is vulnerable to",
+        "published": "2026-07-01T19:16:53.173"
+      },
+      {
+        "cve_id": "CVE-2026-51947",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An issue in Pivotal CRM 6.6.4.08 and systems using patch-ghi-15381-cwe-502-20251225.zip (fixed in Pivotal CRM 6.6.5.10 and Patch_CWE502_20260316.zip) allows a remote attacker to execute arbitrary code",
+        "published": "2026-07-01T19:16:53.663"
+      },
+      {
+        "cve_id": "CVE-2026-58457",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Shenzhen Aitemi M300 Wi-Fi Repeater (hardware model MT02) contains an unauthenticated OS command injection vulnerability that allows network-adjacent attackers to execute arbitrary shell commands by i",
+        "published": "2026-07-01T20:17:11.427"
+      },
+      {
+        "cve_id": "CVE-2026-52186",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "SQL Injection vulnerability in UTT nv518G nv518GV3v3.2.7-210919-161313 allows a remote attacker to execute arbitrary code via the gohead/sub_463bbc component",
+        "published": "2026-07-01T22:16:49.070"
+      },
+      {
+        "cve_id": "CVE-2026-14382",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Insufficient validation of untrusted input in ANGLE in Google Chrome prior to 150.0.7871.46 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium securit",
+        "published": "2026-07-01T23:16:46.617"
+      },
+      {
+        "cve_id": "CVE-2026-14387",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Integer overflow in Skia in Google Chrome prior to 150.0.7871.46 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Medium)",
+        "published": "2026-07-01T23:16:47.140"
+      },
+      {
+        "cve_id": "CVE-2026-14390",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Use after free in ANGLE in Google Chrome prior to 150.0.7871.46 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-07-01T23:16:47.437"
+      },
+      {
+        "cve_id": "CVE-2026-14392",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Out of bounds write in Tint in Google Chrome prior to 150.0.7871.46 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-07-01T23:16:47.633"
+      },
+      {
+        "cve_id": "CVE-2026-14397",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Out of bounds write in ANGLE in Google Chrome on Mac prior to 150.0.7871.46 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Medi",
+        "published": "2026-07-01T23:16:48.127"
+      },
+      {
+        "cve_id": "CVE-2026-14398",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Use after free in ANGLE in Google Chrome prior to 150.0.7871.46 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
+        "published": "2026-07-01T23:16:48.223"
+      },
+      {
+        "cve_id": "CVE-2026-14405",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Uninitialized Use in V8 in Google Chrome prior to 150.0.7871.46 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Low)",
+        "published": "2026-07-01T23:16:48.947"
+      },
+      {
+        "cve_id": "CVE-2026-14383",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Inappropriate implementation in V8 in Google Chrome prior to 150.0.7871.46 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Me",
+        "published": "2026-07-01T23:16:46.743"
+      },
+      {
+        "cve_id": "CVE-2026-14385",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Heap buffer overflow in ANGLE in Google Chrome on Mac prior to 150.0.7871.46 allowed a remote attacker to perform out of bounds memory access via a crafted HTML page. (Chromium security severity: High",
+        "published": "2026-07-01T23:16:46.937"
+      },
+      {
+        "cve_id": "CVE-2026-14393",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in V8 in Google Chrome prior to 150.0.7871.46 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+        "published": "2026-07-01T23:16:47.733"
+      },
+      {
+        "cve_id": "CVE-2026-14394",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in V8 in Google Chrome prior to 150.0.7871.46 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Low)",
+        "published": "2026-07-01T23:16:47.830"
+      },
+      {
+        "cve_id": "CVE-2026-14395",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Out of bounds write in V8 in Google Chrome prior to 150.0.7871.46 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Low)",
+        "published": "2026-07-01T23:16:47.930"
+      },
+      {
+        "cve_id": "CVE-2026-14403",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in V8 in Google Chrome prior to 150.0.7871.46 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Low)",
+        "published": "2026-07-01T23:16:48.723"
+      },
+      {
+        "cve_id": "CVE-2026-14407",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Inappropriate implementation in V8 in Google Chrome prior to 150.0.7871.46 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Me",
+        "published": "2026-07-01T23:16:49.167"
+      },
+      {
+        "cve_id": "CVE-2026-58592",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "Ladybird contains a dangling-reference memory-safety flaw in its WebAssembly ESM-integration module loader. When a JavaScript function is imported into a WebAssembly module via the ESM path, WebAssemb",
+        "published": "2026-07-01T20:17:11.600"
+      },
+      {
+        "cve_id": "CVE-2026-50521",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "Use after free in Microsoft Edge (Chromium-based) allows an authorized attacker to execute code over a network.",
+        "published": "2026-07-01T21:17:03.037"
+      }
+    ]
   },
   "top_ips": {
     "ips": [],
