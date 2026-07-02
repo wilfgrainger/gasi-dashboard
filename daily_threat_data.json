@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-02T07:22:24.925407+00:00",
+  "generated_at": "2026-07-02T10:28:29.127491+00:00",
   "threat_score": {
-    "score": 6.5,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 4.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
-        "score": 2.5,
+        "value": 0,
+        "score": 0.5,
         "max": 3
       },
       {
@@ -238,151 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 338,
-    "critical_count": 8,
-    "high_count": 17,
-    "cves": [
-      {
-        "cve_id": "CVE-2026-11387",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The SMS Alert \u2013 SMS & OTP for WooCommerce, Order Notifications & Abandoned Cart Recovery plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and incl",
-        "published": "2026-07-01T08:16:20.587"
-      },
-      {
-        "cve_id": "CVE-2026-57692",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Incorrect Privilege Assignment vulnerability in LCweb PrivateContent allows Privilege Escalation.\n\nThis issue affects PrivateContent: from n/a through 9.9.2.",
-        "published": "2026-07-01T14:16:46.800"
-      },
-      {
-        "cve_id": "CVE-2025-15646",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "HTML::Gumbo versions before 0.19 for Perl disclose heap memory via type confusion.\n\nSupport for the <template> element was added to libgumbo 0.10.0 in 2015, but the walk_tree function in lib/HTML/Gumb",
-        "published": "2026-07-01T16:16:29.657"
-      },
-      {
-        "cve_id": "CVE-2026-14198",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "@fastify/middie versions 9.1.0 through 9.3.2 decode the encoded slash %2F inside path parameter values before matching middleware paths, while Fastify's underlying router preserves the encoding during",
-        "published": "2026-07-01T12:16:38.463"
-      },
-      {
-        "cve_id": "CVE-2026-23537",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A vulnerability has been identified in the Feast Feature Server\u2019s `/save-document` endpoint that allows an unauthenticated remote attacker to write arbitrary JSON files to the server's filesystem. Alt",
-        "published": "2026-07-01T15:17:06.790"
-      },
-      {
-        "cve_id": "CVE-2026-10539",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "A Control-M/Server communication command does not sufficiently filter or sanitize user-supplied input. Under certain conditions, this issue may allow an unauthenticated attacker to execute unauthorize",
-        "published": "2026-07-01T08:16:20.340"
-      },
-      {
-        "cve_id": "CVE-2025-23350",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "NVIDIA ConnectX and BlueField contain a vulnerability in the command interface where a local user with virtual function (VF) access may cause a write out of bounds by crafted input. A successful explo",
-        "published": "2026-07-01T16:16:29.767"
-      },
-      {
-        "cve_id": "CVE-2025-23351",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "NVIDIA ConnectX and BlueField contain a vulnerability in the command interface where a local user with virtual function (VF) access may cause a write out of bounds by crafted input. A successful explo",
-        "published": "2026-07-01T16:16:29.903"
-      },
-      {
-        "cve_id": "CVE-2026-12158",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The RegistrationMagic \u2013 User Registration Forms Plugin plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 6.0.9.1. This is due to missing or incorre",
-        "published": "2026-07-01T08:16:20.710"
-      },
-      {
-        "cve_id": "CVE-2026-12224",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Dokan Pro plugin for WordPress is vulnerable to privilege escalation via update_capabilities REST Endpoint in all versions up to, and including, 5.0.4.  This is due to the `update_capabilities()` ",
-        "published": "2026-07-01T08:16:20.827"
-      },
-      {
-        "cve_id": "CVE-2026-13228",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The LatePoint \u2013 Calendar Booking Plugin for Appointments and Events plugin for WordPress is vulnerable to Privilege Escalation to Administrator in versions up to, and including, 5.6.3 This is due to a",
-        "published": "2026-07-01T11:16:25.377"
-      },
-      {
-        "cve_id": "CVE-2026-5136",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw was found in Foreman. The Usergroup model in Foreman does not properly validate role assignments against the calling user's permissions. This allows an authenticated user with usergroup managem",
-        "published": "2026-07-01T14:16:47.277"
-      },
-      {
-        "cve_id": "CVE-2026-5120",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "A Race Condition vulnerability affecting BIOVIA Workbook from Release 2021 through Release 2026 could allow a user to access unauthorized data from another user.",
-        "published": "2026-07-01T13:17:48.033"
-      },
-      {
-        "cve_id": "CVE-2026-10538",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "Messaging consumer functionality allows deserialization of user-controlled data without sufficient restriction of allowed object types in the out of support Control-M/Server and Control-M/Enterprise M",
-        "published": "2026-07-01T08:16:20.197"
-      },
-      {
-        "cve_id": "CVE-2026-24240",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "NVIDIA Megatron Bridge for Linux contains a vulnerability where an attacker could cause deserialization of untrusted data. A successful exploit of this vulnerability might lead to code execution, esca",
-        "published": "2026-07-01T16:16:44.383"
-      },
-      {
-        "cve_id": "CVE-2026-24242",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "NVIDIA Megatron Bridge for Linux contains a vulnerability where an attacker could cause server-side request forgery. A successful exploit of this vulnerability might lead to information disclosure.",
-        "published": "2026-07-01T16:16:44.510"
-      },
-      {
-        "cve_id": "CVE-2026-24243",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "NVIDIA Megatron Bridge for Linux contains a vulnerability where an attacker could cause deserialization of untrusted data. A successful exploit of this vulnerability might lead to code execution, esca",
-        "published": "2026-07-01T16:16:44.620"
-      },
-      {
-        "cve_id": "CVE-2026-6682",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "In FatFS R0.16 and earlier contains a FAT32 integer overflow bug in mount_volume() where fasize *= fs->n_fats can wrap, leading to attacker-controlled file-size metadata and unsafe read lengths in dow",
-        "published": "2026-07-01T15:17:12.313"
-      },
-      {
-        "cve_id": "CVE-2026-6687",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "FatFs R0.16 and earlier contains a stack overflow bug in f_getlabel() because exFAT label length (XDIR_NumLabel) is trusted without enforcing spec maximums. This maps to CWE-121 (Stack-based Buffer Ov",
-        "published": "2026-07-01T15:17:12.870"
-      },
-      {
-        "cve_id": "CVE-2026-6688",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "FatFs R0.16 and earlier contains a downstream-caller vulnerability pattern associated with FatFs long filename handling. With LFN enabled, fno.fname can be up to 255 characters; many callers copy it i",
-        "published": "2026-07-01T15:17:13.013"
-      }
-    ]
+    "total": 0,
+    "critical_count": 0,
+    "high_count": 0,
+    "cves": []
   },
   "top_ips": {
     "ips": [],
