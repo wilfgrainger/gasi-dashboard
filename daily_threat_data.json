@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-03T17:13:22.717960+00:00",
+  "generated_at": "2026-07-03T20:52:48.330194+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 11,
-        "score": 3.0,
+        "value": 8,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 158,
-    "critical_count": 11,
-    "high_count": 18,
+    "total": 131,
+    "critical_count": 8,
+    "high_count": 13,
     "cves": [
       {
         "cve_id": "CVE-2026-13768",
@@ -248,13 +248,6 @@
         "base_score": 10.0,
         "description": "Gardyn devices expose a privileged iothubowner key. Access to this key will allow a malicious user to invoke an IoTHub Registry Manager function which returns connection information for all Gardyn Hom",
         "published": "2026-07-03T00:16:52.270"
-      },
-      {
-        "cve_id": "CVE-2026-44935",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Missing validation of \"valuesFrom\" references in Helm Deployer of SUSE Rancher Fleet 0.15 before 0.15.2, 0.14 before 0.14.6, 0.13 before 0.13.11 and 0.12 before 0.12.15 could be used by owners of one ",
-        "published": "2026-07-02T17:16:59.667"
       },
       {
         "cve_id": "CVE-2026-45499",
@@ -271,25 +264,18 @@
         "published": "2026-07-02T23:16:51.267"
       },
       {
-        "cve_id": "CVE-2022-50973",
+        "cve_id": "CVE-2026-14544",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Yonyou KSOA 9.0 contains an unauthenticated arbitrary file upload vulnerability in the com.sksoft.bill.ImageUpload servlet that allows unauthenticated attackers to upload arbitrary files by submitting",
-        "published": "2026-07-02T17:16:56.947"
+        "description": "A flaw was found in HPLIP (HP Linux Imaging and Printing Software). This vulnerability, an incomplete fix for CVE-2026-8631, may allow a remote attacker to escalate privileges or achieve arbitrary cod",
+        "published": "2026-07-03T08:16:24.433"
       },
       {
-        "cve_id": "CVE-2024-14037",
+        "cve_id": "CVE-2026-4321",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Redsea Cloud eHR contains an arbitrary file upload vulnerability that allows unauthenticated attackers to achieve remote code execution by uploading malicious files through the PtFjk.mob servlet endpo",
-        "published": "2026-07-02T17:16:57.360"
-      },
-      {
-        "cve_id": "CVE-2026-58466",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "AutoBangumi before 3.2.8 contains a hard-coded default credentials vulnerability that allows unauthenticated attackers to authenticate as the administrator by using the publicly known default credenti",
-        "published": "2026-07-02T20:17:06.593"
+        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Raera - Ankara Web Design and Digital Advertising Agency Destekz allows SQL Injection.\n\nThis issue",
+        "published": "2026-07-03T10:16:32.760"
       },
       {
         "cve_id": "CVE-2026-52830",
@@ -306,25 +292,11 @@
         "published": "2026-07-02T23:16:50.867"
       },
       {
-        "cve_id": "CVE-2026-59099",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Apereo CAS 7.3.0 before 8.0.0-RC6 contains a cryptographic vulnerability that allows remote unauthenticated attackers to recover plaintext conversation state by exploiting AES-GCM initialization vecto",
-        "published": "2026-07-02T20:17:08.240"
-      },
-      {
         "cve_id": "CVE-2026-9725",
         "severity": "CRITICAL",
         "base_score": 9.1,
         "description": "The Printcart Web to Print Product Designer for WooCommerce plugin for WordPress is vulnerable to Arbitrary File Deletion in versions up to, and including, 2.5.2 This is due to insufficient path valid",
         "published": "2026-07-03T06:16:23.263"
-      },
-      {
-        "cve_id": "CVE-2026-59093",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Weaviate before 1.38.0 does not verify that a principal performing an RBAC role assignment holds the permissions granted by the assigned role. The assignRoleToUser and assignRoleToGroup handlers (POST",
-        "published": "2026-07-02T20:17:07.410"
       },
       {
         "cve_id": "CVE-2026-54998",
@@ -334,11 +306,18 @@
         "published": "2026-07-02T23:16:51.137"
       },
       {
-        "cve_id": "CVE-2026-7311",
+        "cve_id": "CVE-2026-10054",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The TinyPNG \u2013 JPEG, PNG & WebP image compression plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the delete_converted_image_size function in a",
-        "published": "2026-07-02T19:17:00.127"
+        "base_score": 8.8,
+        "description": "In affected versions of Eclipse Theia (1.8.1 and later), the browser backend exposes privileged terminal RPC over WebSocket (/services/shell-terminal, /services/terminals/:id) without service-level au",
+        "published": "2026-07-03T11:16:26.847"
+      },
+      {
+        "cve_id": "CVE-2026-10055",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "In Eclipse Theia since version 1.26.0, the backend /services/request-service RPC accepts an attacker-controlled URL from any client connected to the standard /services messaging endpoint, performs the",
+        "published": "2026-07-03T11:16:27.600"
       },
       {
         "cve_id": "CVE-2026-50721",
@@ -355,20 +334,6 @@
         "published": "2026-07-02T22:16:43.550"
       },
       {
-        "cve_id": "CVE-2026-59092",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "JuiceFS through 1.3.1, fixed in commit a46979c, contains an authentication bypass vulnerability that allows unauthenticated remote attackers to access sensitive debug and metrics endpoints by exploiti",
-        "published": "2026-07-02T20:17:07.270"
-      },
-      {
-        "cve_id": "CVE-2026-59095",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "LobeChat before 2.2.10-canary.18 contains a server-side request forgery vulnerability that allows authenticated attackers to direct internal HTTP requests to arbitrary URLs by supplying user-controlle",
-        "published": "2026-07-02T20:17:07.673"
-      },
-      {
         "cve_id": "CVE-2026-58460",
         "severity": "HIGH",
         "base_score": 7.7,
@@ -376,11 +341,46 @@
         "published": "2026-07-02T21:16:57.080"
       },
       {
-        "cve_id": "CVE-2024-58352",
+        "cve_id": "CVE-2026-12413",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Landray OA contains an unauthenticated HQL injection vulnerability that allows unauthenticated attackers to query arbitrary Hibernate entity classes by injecting malicious HQL syntax into the uid POST",
-        "published": "2026-07-02T17:16:57.557"
+        "description": "An invalidly formatted IKEv2 fragment causes the Libreswan pluto daemon to crash and restart. Continued exploitation would cause a denial of service. The function reassemble_v2_incoming_fragments() wo",
+        "published": "2026-07-02T22:16:42.517"
+      },
+      {
+        "cve_id": "CVE-2026-14327",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The AR for WordPress plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 8.40 via the 'file' parameter parameter. This makes it possible for unauthenticated",
+        "published": "2026-07-03T02:16:23.470"
+      },
+      {
+        "cve_id": "CVE-2026-14352",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The AR for WooCommerce plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 8.40 via the 'file' parameter parameter. This makes it possible for unauthenticat",
+        "published": "2026-07-03T06:16:21.787"
+      },
+      {
+        "cve_id": "CVE-2026-4967",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "In IMS, there is a possible out of bounds read due to a missing bounds check. This could lead to remote denial of service with no additional execution privileges needed.",
+        "published": "2026-07-03T07:16:24.333"
+      },
+      {
+        "cve_id": "CVE-2026-13341",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "A vulnerability exists in the Kong Konnect Model Context Protocol (MCP) server prior to version 1.0.0, which could allow a remote attacker to perform an indirect prompt injection attack and execute un",
+        "published": "2026-07-03T11:16:27.720"
+      },
+      {
+        "cve_id": "CVE-2026-13040",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The NEX-Forms \u2013 Ultimate Forms Plugin for WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'real_val__' parameter in all versions up to, and including, 9.2.2 due to ",
+        "published": "2026-07-03T06:16:21.590"
       }
     ]
   },
