@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-03T02:00:50.333445+00:00",
+  "generated_at": "2026-07-03T06:53:37.334235+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
-        "score": 2.0,
+        "value": 9,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,16 +238,58 @@
     ]
   },
   "nvd": {
-    "total": 266,
-    "critical_count": 2,
-    "high_count": 63,
+    "total": 254,
+    "critical_count": 9,
+    "high_count": 57,
     "cves": [
+      {
+        "cve_id": "CVE-2026-57624",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Unauthenticated Remote Code Execution (RCE) in Blocksy Companion Pro <= 2.1.46 versions.",
+        "published": "2026-07-02T12:17:37.277"
+      },
       {
         "cve_id": "CVE-2026-27419",
         "severity": "CRITICAL",
         "base_score": 9.9,
         "description": "Subscriber Arbitrary File Upload in Zegen <= 1.1.9 versions.",
         "published": "2026-07-02T12:17:00.437"
+      },
+      {
+        "cve_id": "CVE-2026-57621",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Unauthenticated PHP Object Injection in Booktics <= 1.0.21 versions.",
+        "published": "2026-07-02T12:17:37.043"
+      },
+      {
+        "cve_id": "CVE-2026-57677",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Unauthenticated PHP Object Injection in Novalnet Payment Gateway for WooCommerce <= 12.10.3 versions.",
+        "published": "2026-07-02T12:17:38.340"
+      },
+      {
+        "cve_id": "CVE-2026-57625",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Unauthenticated Cross Site Scripting (XSS) in Admin and Site Enhancements (ASE) Pro <= 8.8.5 versions.",
+        "published": "2026-07-02T12:17:37.393"
+      },
+      {
+        "cve_id": "CVE-2026-57679",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Unauthenticated SQL Injection in GeekyBot <= 1.2.5 versions.",
+        "published": "2026-07-02T12:17:38.587"
+      },
+      {
+        "cve_id": "CVE-2026-57683",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Unauthenticated SQL Injection in WP Fast Total Search <= 1.80.280 versions.",
+        "published": "2026-07-02T12:17:39.080"
       },
       {
         "cve_id": "CVE-2026-27436",
@@ -257,11 +299,11 @@
         "published": "2026-07-02T12:17:01.073"
       },
       {
-        "cve_id": "CVE-2026-13125",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "GeoWebPlayer (also called \"Web Plugin\" in the GV-VMS documentation and \"WS Player\" for VMS-Cloud) is an addon that can be installed with various GeoVision software (GV-VMS, GV-Cloud, ...). It creates ",
-        "published": "2026-07-02T04:17:09.790"
+        "cve_id": "CVE-2026-57623",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "Unauthenticated Arbitrary Code Execution in W3 Total Cache <= 2.9.4 versions.",
+        "published": "2026-07-02T12:17:37.163"
       },
       {
         "cve_id": "CVE-2026-27060",
@@ -292,95 +334,53 @@
         "published": "2026-07-02T12:16:53.043"
       },
       {
-        "cve_id": "CVE-2026-13131",
+        "cve_id": "CVE-2026-57687",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "GeoWebPlayer (also called \"Web Plugin\" in the GV-VMS documentation and \"WS Player\" for VMS-Cloud) is an addon that can be installed with various GeoVision software (GV-VMS, GV-Cloud, ...). It creates ",
-        "published": "2026-07-02T04:17:11.520"
+        "base_score": 8.5,
+        "description": "Contributor SQL Injection in Custom Field Template <= 2.7.8 versions.",
+        "published": "2026-07-02T12:17:39.563"
       },
       {
-        "cve_id": "CVE-2026-13132",
+        "cve_id": "CVE-2026-14336",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "GeoWebPlayer (also called \"Web Plugin\" in the GV-VMS documentation and \"WS Player\" for VMS-Cloud) is an addon that can be installed with various GeoVision software (GV-VMS, GV-Cloud, ...). It creates ",
-        "published": "2026-07-02T04:17:11.643"
+        "base_score": 8.2,
+        "description": "PIA's OIDC issuer allowlist for Jenkins tokens uses a bare string-prefix check (issuer.startswith(' https://ci.eclipse.org ') in is_issuer_known, pia/models.py:139) instead of validating the issuer as",
+        "published": "2026-07-02T10:16:28.487"
       },
       {
-        "cve_id": "CVE-2026-57264",
+        "cve_id": "CVE-2026-57688",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "GeoWebPlayer (also called \"Web Plugin\" in the GV-VMS documentation and \"WS Player\" for VMS-Cloud) is an addon that can be installed with various GeoVision software (GV-VMS, GV-Cloud, ...). It creates ",
-        "published": "2026-07-02T04:17:11.777"
+        "base_score": 8.2,
+        "description": "Unauthenticated Broken Access Control in POS Entegrat\u00f6r <= 3.7.103 versions.",
+        "published": "2026-07-02T12:17:39.687"
       },
       {
-        "cve_id": "CVE-2026-57265",
+        "cve_id": "CVE-2026-8147",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "GeoWebPlayer (also called \"Web Plugin\" in the GV-VMS documentation and \"WS Player\" for VMS-Cloud) is an addon that can be installed with various GeoVision software (GV-VMS, GV-Cloud, ...). It creates ",
-        "published": "2026-07-02T04:17:11.897"
+        "base_score": 8.1,
+        "description": "In MLflow versions prior to 3.14.0, when running with authentication enabled, the trace API endpoints lack proper authorization validators. This allows any authenticated user to bypass experiment-leve",
+        "published": "2026-07-02T09:16:19.100"
       },
       {
-        "cve_id": "CVE-2026-57266",
+        "cve_id": "CVE-2025-58902",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "GeoWebPlayer (also called \"Web Plugin\" in the GV-VMS documentation and \"WS Player\" for VMS-Cloud) is an addon that can be installed with various GeoVision software (GV-VMS, GV-Cloud, ...). It creates ",
-        "published": "2026-07-02T04:17:12.017"
+        "base_score": 8.1,
+        "description": "Unauthenticated Local File Inclusion in Lighthouse <= 1.2.12 versions.",
+        "published": "2026-07-02T12:16:51.187"
       },
       {
-        "cve_id": "CVE-2026-57267",
+        "cve_id": "CVE-2026-27412",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "GeoWebPlayer (also called \"Web Plugin\" in the GV-VMS documentation and \"WS Player\" for VMS-Cloud) is an addon that can be installed with various GeoVision software (GV-VMS, GV-Cloud, ...). It creates ",
-        "published": "2026-07-02T04:17:12.170"
+        "base_score": 8.1,
+        "description": "Unauthenticated Local File Inclusion in Pearl - Corporate Business <= 3.4.10 versions.",
+        "published": "2026-07-02T12:17:00.183"
       },
       {
-        "cve_id": "CVE-2026-57268",
+        "cve_id": "CVE-2026-42382",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "GeoWebPlayer (also called \"Web Plugin\" in the GV-VMS documentation and \"WS Player\" for VMS-Cloud) is an addon that can be installed with various GeoVision software (GV-VMS, GV-Cloud, ...). It creates ",
-        "published": "2026-07-02T04:17:12.467"
-      },
-      {
-        "cve_id": "CVE-2026-57269",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "GeoWebPlayer (also called \"Web Plugin\" in the GV-VMS documentation and \"WS Player\" for VMS-Cloud) is an addon that can be installed with various GeoVision software (GV-VMS, GV-Cloud, ...). It creates ",
-        "published": "2026-07-02T04:17:12.793"
-      },
-      {
-        "cve_id": "CVE-2026-57270",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "GeoWebPlayer (also called \"Web Plugin\" in the GV-VMS documentation and \"WS Player\" for VMS-Cloud) is an addon that can be installed with various GeoVision software (GV-VMS, GV-Cloud, ...). It creates ",
-        "published": "2026-07-02T04:17:13.103"
-      },
-      {
-        "cve_id": "CVE-2026-57271",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "GeoWebPlayer (also called \"Web Plugin\" in the GV-VMS documentation and \"WS Player\" for VMS-Cloud) is an addon that can be installed with various GeoVision software (GV-VMS, GV-Cloud, ...). It creates ",
-        "published": "2026-07-02T04:17:13.273"
-      },
-      {
-        "cve_id": "CVE-2026-57272",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "GeoWebPlayer (also called \"Web Plugin\" in the GV-VMS documentation and \"WS Player\" for VMS-Cloud) is an addon that can be installed with various GeoVision software (GV-VMS, GV-Cloud, ...). It creates ",
-        "published": "2026-07-02T04:17:13.423"
-      },
-      {
-        "cve_id": "CVE-2026-57273",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "GeoWebPlayer (also called \"Web Plugin\" in the GV-VMS documentation and \"WS Player\" for VMS-Cloud) is an addon that can be installed with various GeoVision software (GV-VMS, GV-Cloud, ...). It creates ",
-        "published": "2026-07-02T04:17:13.570"
-      },
-      {
-        "cve_id": "CVE-2026-57274",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "GeoWebPlayer (also called \"Web Plugin\" in the GV-VMS documentation and \"WS Player\" for VMS-Cloud) is an addon that can be installed with various GeoVision software (GV-VMS, GV-Cloud, ...). It creates ",
-        "published": "2026-07-02T04:17:14.430"
+        "base_score": 8.1,
+        "description": "Unauthenticated Local File Inclusion in Audrey <= 1.5 versions.",
+        "published": "2026-07-02T12:17:17.027"
       }
     ]
   },
