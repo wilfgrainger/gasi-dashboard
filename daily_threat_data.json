@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-04T06:39:35.304169+00:00",
+  "generated_at": "2026-07-04T09:59:37.627352+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
+        "value": 3,
         "score": 2.0,
         "max": 3
       },
@@ -238,17 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 182,
-    "critical_count": 4,
-    "high_count": 17,
+    "total": 154,
+    "critical_count": 3,
+    "high_count": 35,
     "cves": [
-      {
-        "cve_id": "CVE-2026-14544",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A flaw was found in HPLIP (HP Linux Imaging and Printing Software). This vulnerability, an incomplete fix for CVE-2026-8631, may allow a remote attacker to escalate privileges or achieve arbitrary cod",
-        "published": "2026-07-03T08:16:24.433"
-      },
       {
         "cve_id": "CVE-2026-4321",
         "severity": "CRITICAL",
@@ -299,6 +292,41 @@
         "published": "2026-07-03T21:16:54.737"
       },
       {
+        "cve_id": "CVE-2026-56645",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Heap-based buffer overflow in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
+        "published": "2026-07-03T21:17:00.670"
+      },
+      {
+        "cve_id": "CVE-2026-57974",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Integer overflow or wraparound in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
+        "published": "2026-07-03T21:17:00.957"
+      },
+      {
+        "cve_id": "CVE-2026-57981",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
+        "published": "2026-07-03T21:17:01.313"
+      },
+      {
+        "cve_id": "CVE-2026-28737",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "Gitea versions from 1.25.0 before 1.26.0 allow stored cross-site scripting through the extensionsRequired field in glTF files rendered by the 3D file viewer.",
+        "published": "2026-07-03T21:16:59.787"
+      },
+      {
+        "cve_id": "CVE-2026-57983",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "Improper authorization in Microsoft Edge (Chromium-based) allows an unauthorized attacker to bypass a security feature over a network.",
+        "published": "2026-07-03T21:17:01.433"
+      },
+      {
         "cve_id": "CVE-2026-10055",
         "severity": "HIGH",
         "base_score": 8.5,
@@ -313,6 +341,13 @@
         "published": "2026-07-03T21:16:58.200"
       },
       {
+        "cve_id": "CVE-2026-27771",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Gitea versions up to and including 1.26.1 have insufficient permission checks for Composer package source links, which can expose private or internal package source information.",
+        "published": "2026-07-03T21:16:59.043"
+      },
+      {
         "cve_id": "CVE-2026-22555",
         "severity": "HIGH",
         "base_score": 8.1,
@@ -320,67 +355,32 @@
         "published": "2026-07-03T21:16:57.023"
       },
       {
+        "cve_id": "CVE-2026-28699",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Gitea versions up to and including 1.26.1 allow OAuth2 access token scope enforcement to be bypassed through HTTP Basic authentication.",
+        "published": "2026-07-03T21:16:59.567"
+      },
+      {
+        "cve_id": "CVE-2026-28744",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Gitea versions up to and including 1.26.1 allow Git smart HTTP requests authenticated with bearer tokens to bypass repository token scope checks.",
+        "published": "2026-07-03T21:17:00.003"
+      },
+      {
+        "cve_id": "CVE-2026-58282",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Improper access control in Microsoft Edge (Chromium-based) allows an unauthorized attacker to perform spoofing over a network.",
+        "published": "2026-07-03T21:17:02.820"
+      },
+      {
         "cve_id": "CVE-2026-14605",
         "severity": "HIGH",
         "base_score": 7.8,
         "description": "A vulnerability was identified in RT-Thread up to 5.0.2. Affected by this vulnerability is the function recvmsg in the library bsp/loongson/ls1cdev/libraries/ls1c_can.h of the component ls1c CAN Handl",
         "published": "2026-07-03T20:16:52.070"
-      },
-      {
-        "cve_id": "CVE-2026-14606",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A security flaw has been discovered in RT-Thread up to 5.0.2. Affected by this issue is the function CAN_Receive in the library bsp/synwit/libraries/SWM341_CSL/CMSIS/DeviceSupport/SWM341.h of the comp",
-        "published": "2026-07-03T20:16:52.237"
-      },
-      {
-        "cve_id": "CVE-2026-4967",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "In IMS, there is a possible out of bounds read due to a missing bounds check. This could lead to remote denial of service with no additional execution privileges needed.",
-        "published": "2026-07-03T07:16:24.333"
-      },
-      {
-        "cve_id": "CVE-2026-13341",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "A vulnerability exists in the Kong Konnect Model Context Protocol (MCP) server prior to version 1.0.0, which could allow a remote attacker to perform an indirect prompt injection attack and execute un",
-        "published": "2026-07-03T11:16:27.720"
-      },
-      {
-        "cve_id": "CVE-2026-58379",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A flaw was found in GIMP's Paint Shop Pro (PSP) file format parser. This heap buffer overflow vulnerability allows a remote attacker to cause arbitrary code execution or a denial of service (DoS) by t",
-        "published": "2026-07-03T19:16:37.040"
-      },
-      {
-        "cve_id": "CVE-2026-9148",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The Comments \u2013 wpDiscuz plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the guest commenter 'Website' field in versions up to, and including, 7.6.56 This is due to insufficient o",
-        "published": "2026-07-03T08:16:25.367"
-      },
-      {
-        "cve_id": "CVE-2026-49814",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "Dell PowerProtect Data Domain, versions 7.7.1.0 through 8.7, LTS2026 release version 8.6.1.0 through 8.6.1.10, LTS2025 release version 8.3.1.0 through 8.3.1.30, LTS2024 release versions 7.13.1.0 throu",
-        "published": "2026-07-03T15:16:32.610"
-      },
-      {
-        "cve_id": "CVE-2026-49815",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "Dell PowerProtect Data Domain, versions 7.7.1.0 through 8.7, LTS2026 release version 8.6.1.0 through 8.6.1.10, LTS2025 release version 8.3.1.0 through 8.3.1.30, LTS2024 release versions 7.13.1.0 throu",
-        "published": "2026-07-03T15:16:32.720"
-      },
-      {
-        "cve_id": "CVE-2026-53478",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "Dell PowerProtect Data Domain, versions 7.7.1.0 through 8.7, LTS2026 release version 8.6.1.0 through 8.6.1.10, LTS2025 release version 8.3.1.0 through 8.3.1.30, LTS2024 release versions 7.13.1.0 throu",
-        "published": "2026-07-03T15:16:32.840"
       }
     ]
   },
