@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-04T20:43:08.855815+00:00",
+  "generated_at": "2026-07-05T02:07:12.108837+00:00",
   "threat_score": {
-    "score": 6.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.0,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 20,
+        "value": 19,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 0,
+        "score": 1.0,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1631,
-    "recent_30d_count": 20,
+    "recent_30d_count": 19,
     "recent": [
       {
         "cve_id": "CVE-2026-45659",
@@ -224,163 +224,153 @@
         "due_date": "2026-06-11",
         "description": "Check Point Security Gateway contains an improper authentication vulnerability in IKEv1 key exchange that could allow an unauthenticated remote attacker to bypass user authentication and establish a r",
         "ransomware_use": "Known"
-      },
-      {
-        "cve_id": "CVE-2026-28318",
-        "vendor": "SolarWinds",
-        "product": "Serv-U",
-        "name": "SolarWinds Serv-U Uncontrolled Resource Consumption Vulnerability",
-        "date_added": "2026-06-05",
-        "due_date": "2026-06-19",
-        "description": "SolarWinds Serv-U contains an uncontrolled resource consumption vulnerability that allows specially crafted POST requests using the Content-Encoding: deflate header to crash the Serv-U service without",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 147,
-    "critical_count": 4,
-    "high_count": 52,
+    "total": 74,
+    "critical_count": 0,
+    "high_count": 33,
     "cves": [
       {
-        "cve_id": "CVE-2026-20896",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Gitea Docker image versions up to and including 1.26.2 use REVERSE_PROXY_TRUSTED_PROXIES=* by default, allowing any source IP to impersonate a user when reverse-proxy authentication headers such as X-",
-        "published": "2026-07-03T21:16:56.660"
-      },
-      {
-        "cve_id": "CVE-2026-22874",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Gitea versions up to and including 1.26.2 have incomplete SSRF protection in webhook and migration allow-list filtering.",
-        "published": "2026-07-03T21:16:57.157"
-      },
-      {
-        "cve_id": "CVE-2026-58426",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Gitea Actions Artifacts V4 signed URL HMAC ambiguity allows cross-repository artifact read and cross-task upload-state write",
-        "published": "2026-07-03T21:17:05.770"
-      },
-      {
-        "cve_id": "CVE-2026-58289",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "Access of resource using incompatible type ('type confusion') in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
-        "published": "2026-07-03T21:17:03.640"
-      },
-      {
-        "cve_id": "CVE-2026-58424",
-        "severity": "HIGH",
-        "base_score": 8.9,
-        "description": "Permanent Fork PR Workflow Approval Gate Bypass",
-        "published": "2026-07-03T21:17:05.660"
-      },
-      {
-        "cve_id": "CVE-2026-12481",
+        "cve_id": "CVE-2025-71380",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A vulnerability in keras-team/keras version 3.14.0 allows for arbitrary code execution due to improper handling of deserialization in the `Lambda` layer. Specifically, the `_raise_for_lambda_deseriali",
-        "published": "2026-07-03T21:16:54.737"
+        "description": "The Execute Command node in n8n allows authenticated users to execute arbitrary commands on the host system where n8n runs. Attackers with user access or compromised credentials can exploit this node ",
+        "published": "2026-07-04T02:16:23.477"
       },
       {
-        "cve_id": "CVE-2026-56645",
+        "cve_id": "CVE-2026-14534",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Heap-based buffer overflow in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
-        "published": "2026-07-03T21:17:00.670"
+        "description": "Trail of Bits fickling versions up to and including 0.1.10 do not include the Python standard library modules _posixsubprocess, site, and atexit in the UNSAFE_IMPORTS denylist (fickle.py). Because the",
+        "published": "2026-07-04T14:16:28.400"
       },
       {
-        "cve_id": "CVE-2026-57974",
+        "cve_id": "CVE-2026-14535",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Integer overflow or wraparound in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
-        "published": "2026-07-03T21:17:00.957"
+        "description": "In Trail of Bits fickling versions up to and including 0.1.11, the UnsafeImportsML analysis pass unconditionally calls AnalysisContext.shorten_code(node) on every import node it inspects, regardless o",
+        "published": "2026-07-04T14:16:29.063"
       },
       {
-        "cve_id": "CVE-2026-57981",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
-        "published": "2026-07-03T21:17:01.313"
-      },
-      {
-        "cve_id": "CVE-2026-28737",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "Gitea versions from 1.25.0 before 1.26.0 allow stored cross-site scripting through the extensionsRequired field in glTF files rendered by the 3D file viewer.",
-        "published": "2026-07-03T21:16:59.787"
-      },
-      {
-        "cve_id": "CVE-2026-57983",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "Improper authorization in Microsoft Edge (Chromium-based) allows an unauthorized attacker to bypass a security feature over a network.",
-        "published": "2026-07-03T21:17:01.433"
-      },
-      {
-        "cve_id": "CVE-2026-26231",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Gitea versions up to and including 1.26.1 allow the Allow edits from maintainers permission path to authorize commits to repositories that the user can read but should not be able to write.",
-        "published": "2026-07-03T21:16:58.200"
-      },
-      {
-        "cve_id": "CVE-2026-54424",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "An Incorrect Use of Privileged APIs vulnerability in Unity Parsec on Windows hosts leads to a potential Elevation of Privilege. This issue affects Parsec through v2026-05-04.0. The patched version is\u00a0",
-        "published": "2026-07-04T01:16:27.340"
-      },
-      {
-        "cve_id": "CVE-2026-58284",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Improper authorization in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
-        "published": "2026-07-03T21:17:03.057"
-      },
-      {
-        "cve_id": "CVE-2026-58285",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Access of resource using incompatible type ('type confusion') in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
-        "published": "2026-07-03T21:17:03.180"
-      },
-      {
-        "cve_id": "CVE-2026-58287",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Use after free in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
-        "published": "2026-07-03T21:17:03.413"
-      },
-      {
-        "cve_id": "CVE-2026-58288",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Use after free in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
-        "published": "2026-07-03T21:17:03.523"
-      },
-      {
-        "cve_id": "CVE-2026-58295",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Access of resource using incompatible type ('type confusion') in Microsoft Edge (Chromium-based) allows an unauthorized attacker to bypass a security feature over a network.",
-        "published": "2026-07-03T21:17:04.417"
-      },
-      {
-        "cve_id": "CVE-2026-27771",
+        "cve_id": "CVE-2026-14637",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "Gitea versions up to and including 1.26.1 have insufficient permission checks for Composer package source links, which can expose private or internal package source information.",
-        "published": "2026-07-03T21:16:59.043"
+        "description": "A security vulnerability has been detected in kirilkirkov Ecommerce-CodeIgniter-Bootstrap up to 13fd582aaf49aeab7438acc0fc3eb973a1f5e6a7. The affected element is the function getCartItems in the libra",
+        "published": "2026-07-04T18:16:28.357"
       },
       {
-        "cve_id": "CVE-2026-22555",
+        "cve_id": "CVE-2025-71342",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Gitea versions before 1.26.0 allow API users to fork a repository into an organization without first passing the CanCreateOrgRepo check, which can expose organization secrets.",
-        "published": "2026-07-03T21:16:57.023"
+        "description": "picklescan before 0.0.30 fails to detect malicious pickle files using idlelib.run.Executive.runcode in reduce methods. Attackers can embed undetected code in pickle files that executes during pickle.l",
+        "published": "2026-07-04T02:16:21.387"
+      },
+      {
+        "cve_id": "CVE-2025-71343",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "picklescan before 0.0.30 fails to detect malicious pickle files that exploit lib2to3.pgen2.pgen.ParserGenerator.make_label function in the reduce method. Attackers can craft malicious pickle files wit",
+        "published": "2026-07-04T02:16:21.527"
+      },
+      {
+        "cve_id": "CVE-2025-71345",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "picklescan before 0.0.30 fails to detect malicious pickle files that invoke torch.utils.bottleneck.__main__.run_autograd_prof function. Attackers can embed undetected code in pickle files that execute",
+        "published": "2026-07-04T02:16:21.670"
+      },
+      {
+        "cve_id": "CVE-2025-71347",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "picklescan before 0.0.33 fails to detect malicious pickle files using numpy.f2py.crackfortran.param_eval function in reduce methods, allowing attackers to bypass security checks. Remote attackers can ",
+        "published": "2026-07-04T02:16:21.803"
+      },
+      {
+        "cve_id": "CVE-2025-71353",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "picklescan before 0.0.28 fails to detect malicious pickle files that exploit torch._dynamo.guards.GuardBuilder.get function in reduce methods. Attackers can craft pickle files with embedded code that ",
+        "published": "2026-07-04T02:16:21.933"
+      },
+      {
+        "cve_id": "CVE-2025-71356",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "picklescan before 0.0.28 fails to detect malicious torch.fx.experimental.symbolic_shapes.ShapeEnv.evaluate_guards_expression function calls in pickle files. Attackers can embed undetected code in pick",
+        "published": "2026-07-04T02:16:22.063"
+      },
+      {
+        "cve_id": "CVE-2025-71359",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "picklescan before 0.0.29 fails to detect malicious pickle payloads that utilize lib2to3.pgen2.grammar.Grammar.loads in the reduce method, allowing remote code execution. Attackers can craft pickle fil",
+        "published": "2026-07-04T02:16:22.197"
+      },
+      {
+        "cve_id": "CVE-2025-71360",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "picklescan before 0.0.29 fails to detect malicious pickle files using idlelib.calltip.get_entity function in reduce methods. Attackers can embed undetected code in pickle files that executes remote co",
+        "published": "2026-07-04T02:16:22.327"
+      },
+      {
+        "cve_id": "CVE-2025-71362",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "picklescan before 0.0.33 fails to detect unsafe deserialization when numpy.f2py.crackfortran functions call eval on arbitrary strings. Attackers can embed malicious code in pickle files that executes ",
+        "published": "2026-07-04T02:16:22.457"
+      },
+      {
+        "cve_id": "CVE-2025-71364",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "picklescan before 0.0.30 fails to detect the asyncio.unix_events._UnixSubprocessTransport._start function in pickle reduce methods, allowing remote code execution. Attackers can craft malicious pickle",
+        "published": "2026-07-04T02:16:22.583"
+      },
+      {
+        "cve_id": "CVE-2025-71366",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "picklescan before 0.0.28 fails to detect malicious torch.utils.bottleneck.__main__.run_cprofile function calls in pickle files, allowing attackers to bypass safety checks. Remote attackers can embed u",
+        "published": "2026-07-04T02:16:22.707"
+      },
+      {
+        "cve_id": "CVE-2025-71367",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "picklescan before 0.0.34 fails to detect _operator.attrgetter function calls in pickle payloads, allowing attackers to bypass security checks. Remote attackers can craft malicious pickle files using _",
+        "published": "2026-07-04T02:16:22.833"
+      },
+      {
+        "cve_id": "CVE-2025-71369",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "picklescan before 0.0.28 fails to detect malicious pickle files that use torch.utils.data.datapipes.utils.decoder.basichandlers in reduce methods, allowing attackers to bypass safety checks. Remote at",
+        "published": "2026-07-04T02:16:22.963"
+      },
+      {
+        "cve_id": "CVE-2025-71372",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Picklescan before 0.0.33 fails to detect the numpy.f2py.crackfortran.getlincoef gadget in pickle __reduce__ methods, allowing arbitrary code execution. Attackers can craft malicious pickle files that ",
+        "published": "2026-07-04T02:16:23.097"
+      },
+      {
+        "cve_id": "CVE-2025-71373",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "picklescan before 0.0.33 fails to detect operator.methodcaller function calls in pickle files, allowing attackers to bypass security checks. Remote attackers can craft malicious pickle payloads using ",
+        "published": "2026-07-04T02:16:23.220"
+      },
+      {
+        "cve_id": "CVE-2025-71375",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "picklescan before 0.0.34 fails to detect the _operator.methodcaller built-in function when scanning pickle files for malicious code. Attackers can craft malicious pickle payloads using _operator.metho",
+        "published": "2026-07-04T02:16:23.347"
       }
     ]
   },
