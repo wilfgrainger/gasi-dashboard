@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-06T18:04:35.099915+00:00",
+  "generated_at": "2026-07-06T21:21:31.550771+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
-        "score": 2.0,
+        "value": 14,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -228,9 +228,9 @@
     ]
   },
   "nvd": {
-    "total": 126,
-    "critical_count": 3,
-    "high_count": 19,
+    "total": 181,
+    "critical_count": 14,
+    "high_count": 33,
     "cves": [
       {
         "cve_id": "CVE-2026-14807",
@@ -247,11 +247,88 @@
         "published": "2026-07-06T08:16:36.213"
       },
       {
+        "cve_id": "CVE-2026-24014",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Apache IoTDB DataNode\u2019s internal RPC interface for creating Trigger instances uses the uploaded Trigger JAR name to build a file path without sufficient validation. If the internal DataNode RPC port i",
+        "published": "2026-07-06T09:16:35.270"
+      },
+      {
+        "cve_id": "CVE-2026-43867",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Deserialization of Untrusted Data vulnerability in Apache Camel PQC Component.\n\nThe camel-pqc component persists post-quantum key metadata (KeyMetadata) through pluggable KeyLifecycleManager implement",
+        "published": "2026-07-06T09:16:36.057"
+      },
+      {
+        "cve_id": "CVE-2026-46454",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Improper Input Validation vulnerability in Apache Camel Cometd Component.\n\nThe camel-cometd component maps inbound Bayeux (CometD) message headers into the Camel Exchange without applying a HeaderFilt",
+        "published": "2026-07-06T09:16:36.457"
+      },
+      {
+        "cve_id": "CVE-2026-46455",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Insufficient Session Expiration vulnerability in Apache Camel Keycloak Component.\n\nThe camel-keycloak security helper KeycloakSecurityHelper.parseAndVerifyAccessToken builds a Keycloak TokenVerifier u",
+        "published": "2026-07-06T09:16:36.573"
+      },
+      {
+        "cve_id": "CVE-2026-46456",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Improper Input Validation vulnerability in Apache Camel AWS2-SQS Component.\n\n\nThe camel-aws2-sqs component map inbound message attributes into the Camel Exchange through a component-specific HeaderFil",
+        "published": "2026-07-06T09:16:36.683"
+      },
+      {
+        "cve_id": "CVE-2026-48204",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Improper Input Validation, Improper Access Control vulnerability in Apache Camel in Camel Mongodb Gridfs component.\n\nThe camel-mongodb-gridfs producer selects the GridFS operation to perform from the ",
+        "published": "2026-07-06T09:16:37.760"
+      },
+      {
+        "cve_id": "CVE-2026-56140",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Improper Input Validation vulnerability in Apache Camel AWS SNS component.\n\n\nThe camel-aws2-sns component filters Camel headers through a component-specific HeaderFilterStrategy, Sns2HeaderFilterStrat",
+        "published": "2026-07-06T09:16:39.280"
+      },
+      {
         "cve_id": "CVE-2026-6382",
         "severity": "CRITICAL",
         "base_score": 9.1,
         "description": "The FileOrganizer  WordPress plugin before 1.1.9, Advanced File Manager  WordPress plugin before 5.4.12, File Manager Pro  WordPress plugin before 2.1.1, File Manager WordPress plugin before 8.0.4 do ",
         "published": "2026-07-06T08:16:36.447"
+      },
+      {
+        "cve_id": "CVE-2026-24013",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Authentication Bypass by Spoofing vulnerability in Apache IoTDB.\nCertain Thrift RPC query handlers lack strict validation of the sessionId\nparameter. An attacker can construct requests with a forged s",
+        "published": "2026-07-06T09:16:35.163"
+      },
+      {
+        "cve_id": "CVE-2026-40047",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Improper Neutralization of Argument Delimiters in a Command ('Argument Injection') vulnerability in Apache Camel Docling component.\n\nThe camel-docling component invokes the external `docling` command-",
+        "published": "2026-07-06T09:16:35.377"
+      },
+      {
+        "cve_id": "CVE-2026-48203",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection'), Improper Input Validation, Server-Side Request Forgery (SSRF) vulnerability in Apache Camel Solr com",
+        "published": "2026-07-06T09:16:37.633"
+      },
+      {
+        "cve_id": "CVE-2026-48205",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Improper Input Validation, Server-Side Request Forgery (SSRF) vulnerability in Apache Camel DNS component.\n\nThe camel-dns producers read DNS operation parameters - the resolver to query, the name or d",
+        "published": "2026-07-06T09:16:37.880"
       },
       {
         "cve_id": "CVE-2026-10830",
@@ -275,6 +352,13 @@
         "published": "2026-07-06T08:16:35.270"
       },
       {
+        "cve_id": "CVE-2026-46590",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Deserialization of Untrusted Data vulnerability in Apache Camel PQC component.\n\nThe camel-pqc component persists post-quantum key metadata (KeyMetadata) through pluggable KeyLifecycleManager implement",
+        "published": "2026-07-06T09:16:37.147"
+      },
+      {
         "cve_id": "CVE-2026-4249",
         "severity": "HIGH",
         "base_score": 8.6,
@@ -282,95 +366,11 @@
         "published": "2026-07-06T11:16:30.433"
       },
       {
-        "cve_id": "CVE-2026-12083",
+        "cve_id": "CVE-2026-46591",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Admin and Site Enhancements (ASE) WordPress plugin before 8.8.4, admin-site-enhancements-pro WordPress plugin before 8.8.4 does not perform authentication, authorization, or nonce checks on a role",
-        "published": "2026-07-06T08:16:35.360"
-      },
-      {
-        "cve_id": "CVE-2026-11766",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "The Ultimate Member  WordPress plugin before 2.12.0 does not properly sanitise and escape the value of custom textarea profile fields before outputting it on user profiles, allowing authenticated user",
-        "published": "2026-07-06T08:16:35.083"
-      },
-      {
-        "cve_id": "CVE-2026-9165",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "A flaw was found in Red Hat Advanced Cluster Security for Kubernetes (RHACS). Central does not limit the depth of GraphQL queries served on the authenticated GraphQL API. An authenticated user with a ",
-        "published": "2026-07-06T09:16:39.400"
-      },
-      {
-        "cve_id": "CVE-2026-6901",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Untrusted Search Path vulnerability in B&R Industrial Automation GmbH APROL.\n\nThis issue affects APROL: before R 4.4-01P5.",
-        "published": "2026-07-06T11:16:31.433"
-      },
-      {
-        "cve_id": "CVE-2024-6228",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Notifications for Forms & WordPress Actions WordPress plugin before 2.6 does not validate a user-supplied value before using it to build a server-side file inclusion path, allowing authenticated u",
-        "published": "2026-07-06T08:16:34.057"
-      },
-      {
-        "cve_id": "CVE-2026-14809",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Prog Management System developed by PROG MIS has a SQL Injection vulnerability, allowing unauthenticated remote attackers to inject arbitrary SQL commands to read database contents.",
-        "published": "2026-07-06T09:16:34.167"
-      },
-      {
-        "cve_id": "CVE-2026-24012",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Uncontrolled Resource Consumption vulnerability in Apache IoTDB.\u00a0\n\nSome interface\u00a0fails to impose reasonable\nlimits on the time span and aggregation interval of the query.\u00a0An attacker\ncan construct a ",
-        "published": "2026-07-06T09:16:35.037"
-      },
-      {
-        "cve_id": "CVE-2026-6900",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "Improper certificate validation vulnerability in B&R Industrial Automation GmbH APROL.\n\nThis issue affects APROL: before R 4.4-01P5.",
-        "published": "2026-07-06T11:16:31.297"
-      },
-      {
-        "cve_id": "CVE-2026-14768",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A weakness has been identified in code-projects Real State Services 1.0. This vulnerability affects unknown code of the file /builderHome.php. This manipulation of the argument loc causes sql injectio",
-        "published": "2026-07-05T20:16:31.457"
-      },
-      {
-        "cve_id": "CVE-2026-14769",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security vulnerability has been detected in code-projects Real State Services 1.0. This issue affects some unknown processing of the file /pay.php. Such manipulation of the argument Bankname leads t",
-        "published": "2026-07-05T21:16:54.153"
-      },
-      {
-        "cve_id": "CVE-2026-14770",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was detected in SourceCodester Class and Exam Timetabling System 1.0. Impacted is an unknown function of the file /edit_room.php. Performing a manipulation of the argument ID results i",
-        "published": "2026-07-05T21:16:54.310"
-      },
-      {
-        "cve_id": "CVE-2026-14771",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A flaw has been found in SourceCodester Class and Exam Timetabling System 1.0/1.php. The affected element is an unknown function of the file /edit_exam1.php. Executing a manipulation of the argument I",
-        "published": "2026-07-05T22:16:52.897"
-      },
-      {
-        "cve_id": "CVE-2026-14772",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability has been found in SourceCodester Class and Exam Timetabling System 1.0/1.php. The impacted element is an unknown function of the file /edit_course1.php. The manipulation of the argumen",
-        "published": "2026-07-05T22:16:53.063"
+        "base_score": 8.2,
+        "description": "Improper Neutralization of Special Elements in Data Query Logic vulnerability in Apache Camel Neo4J component.\n\nThe camel-neo4j producer builds the Cypher WHERE clause for its match/retrieve and delet",
+        "published": "2026-07-06T09:16:37.263"
       }
     ]
   },
