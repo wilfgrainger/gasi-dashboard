@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-07T07:28:59.721843+00:00",
+  "generated_at": "2026-07-07T10:45:35.500961+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 19,
-        "score": 3.0,
+        "value": 9,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -228,9 +228,9 @@
     ]
   },
   "nvd": {
-    "total": 217,
-    "critical_count": 19,
-    "high_count": 43,
+    "total": 186,
+    "critical_count": 9,
+    "high_count": 32,
     "cves": [
       {
         "cve_id": "CVE-2026-48316",
@@ -240,6 +240,13 @@
         "published": "2026-07-06T17:16:32.010"
       },
       {
+        "cve_id": "CVE-2026-57572",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Crawl4AI is an open-source LLM-friendly web crawler and scraper. Prior to 0.9.0, the Docker API server accepted request-supplied browser_config.extra_args, which flowed into Chromium's launch argument",
+        "published": "2026-07-06T21:16:58.047"
+      },
+      {
         "cve_id": "CVE-2026-48614",
         "severity": "CRITICAL",
         "base_score": 9.9,
@@ -247,102 +254,25 @@
         "published": "2026-07-06T18:16:46.130"
       },
       {
-        "cve_id": "CVE-2026-14807",
+        "cve_id": "CVE-2026-34038",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.469, an authenticated remote command injection vulnerability in application depl",
+        "published": "2026-07-06T21:16:55.370"
+      },
+      {
+        "cve_id": "CVE-2026-9181",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "ERP App developed by PROG MIS has a Use of Hard-coded Credentials vulnerability, allowing unauthenticated remote attackers to log in to view application code and obtain the database account and passwo",
-        "published": "2026-07-06T08:16:36.070"
+        "description": "ArcGIS Server contains a directory traversal vulnerability.  An unauthenticated attacker could exploit this issue by sending crafted path parameters.  Successful exploitation could allow access to sen",
+        "published": "2026-07-06T19:17:09.553"
       },
       {
-        "cve_id": "CVE-2026-14808",
+        "cve_id": "CVE-2026-57571",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Prog\n  Management System developed by PROG MIS has a Exposure of Sensitive\n  Information vulnerability, allowing unauthenticated remote attackers to view\n  a specific page and obtain the database acco",
-        "published": "2026-07-06T08:16:36.213"
-      },
-      {
-        "cve_id": "CVE-2026-24014",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Apache IoTDB DataNode\u2019s internal RPC interface for creating Trigger instances uses the uploaded Trigger JAR name to build a file path without sufficient validation. If the internal DataNode RPC port i",
-        "published": "2026-07-06T09:16:35.270"
-      },
-      {
-        "cve_id": "CVE-2026-43867",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Deserialization of Untrusted Data vulnerability in Apache Camel PQC Component.\n\nThe camel-pqc component persists post-quantum key metadata (KeyMetadata) through pluggable KeyLifecycleManager implement",
-        "published": "2026-07-06T09:16:36.057"
-      },
-      {
-        "cve_id": "CVE-2026-46454",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Improper Input Validation vulnerability in Apache Camel Cometd Component.\n\nThe camel-cometd component maps inbound Bayeux (CometD) message headers into the Camel Exchange without applying a HeaderFilt",
-        "published": "2026-07-06T09:16:36.457"
-      },
-      {
-        "cve_id": "CVE-2026-46455",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Insufficient Session Expiration vulnerability in Apache Camel Keycloak Component.\n\nThe camel-keycloak security helper KeycloakSecurityHelper.parseAndVerifyAccessToken builds a Keycloak TokenVerifier u",
-        "published": "2026-07-06T09:16:36.573"
-      },
-      {
-        "cve_id": "CVE-2026-46456",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Improper Input Validation vulnerability in Apache Camel AWS2-SQS Component.\n\n\nThe camel-aws2-sqs component map inbound message attributes into the Camel Exchange through a component-specific HeaderFil",
-        "published": "2026-07-06T09:16:36.683"
-      },
-      {
-        "cve_id": "CVE-2026-48204",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Improper Input Validation, Improper Access Control vulnerability in Apache Camel in Camel Mongodb Gridfs component.\n\nThe camel-mongodb-gridfs producer selects the GridFS operation to perform from the ",
-        "published": "2026-07-06T09:16:37.760"
-      },
-      {
-        "cve_id": "CVE-2026-56140",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Improper Input Validation vulnerability in Apache Camel AWS SNS component.\n\n\nThe camel-aws2-sns component filters Camel headers through a component-specific HeaderFilterStrategy, Sns2HeaderFilterStrat",
-        "published": "2026-07-06T09:16:39.280"
-      },
-      {
-        "cve_id": "CVE-2026-6382",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The FileOrganizer  WordPress plugin before 1.1.9, Advanced File Manager  WordPress plugin before 5.4.12, File Manager Pro  WordPress plugin before 2.1.1, File Manager WordPress plugin before 8.0.4 do ",
-        "published": "2026-07-06T08:16:36.447"
-      },
-      {
-        "cve_id": "CVE-2026-24013",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Authentication Bypass by Spoofing vulnerability in Apache IoTDB.\nCertain Thrift RPC query handlers lack strict validation of the sessionId\nparameter. An attacker can construct requests with a forged s",
-        "published": "2026-07-06T09:16:35.163"
-      },
-      {
-        "cve_id": "CVE-2026-40047",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Improper Neutralization of Argument Delimiters in a Command ('Argument Injection') vulnerability in Apache Camel Docling component.\n\nThe camel-docling component invokes the external `docling` command-",
-        "published": "2026-07-06T09:16:35.377"
-      },
-      {
-        "cve_id": "CVE-2026-48203",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection'), Improper Input Validation, Server-Side Request Forgery (SSRF) vulnerability in Apache Camel Solr com",
-        "published": "2026-07-06T09:16:37.633"
-      },
-      {
-        "cve_id": "CVE-2026-48205",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Improper Input Validation, Server-Side Request Forgery (SSRF) vulnerability in Apache Camel DNS component.\n\nThe camel-dns producers read DNS operation parameters - the resolver to query, the name or d",
-        "published": "2026-07-06T09:16:37.880"
+        "base_score": 9.6,
+        "description": "Crawl4AI is an open-source LLM-friendly web crawler and scraper. Prior to 0.9.0, when the crawler saves a downloaded file, the destination filename was taken from attacker-influenced input and joined ",
+        "published": "2026-07-06T21:16:57.907"
       },
       {
         "cve_id": "CVE-2025-53827",
@@ -366,11 +296,81 @@
         "published": "2026-07-06T16:16:38.433"
       },
       {
-        "cve_id": "CVE-2026-10830",
+        "cve_id": "CVE-2026-25268",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The AllCoach  WordPress plugin before 1.0.2 does not verify that an email address submitted to a public account-registration endpoint is not already associated with an existing user before overwriting",
-        "published": "2026-07-06T08:16:34.987"
+        "description": "Memory Corruption when processing invalid HT40 channel layouts during dynamic channel switching operations.",
+        "published": "2026-07-06T21:16:54.730"
+      },
+      {
+        "cve_id": "CVE-2026-4249",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "The throttling event handling mechanism in multiple WSO2 products accepts user-supplied JSON payloads without sufficient validation of their structure and content. This allows an unauthenticated remot",
+        "published": "2026-07-06T11:16:30.433"
+      },
+      {
+        "cve_id": "CVE-2026-57573",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Crawl4AI is an open-source LLM-friendly web crawler and scraper. Prior to 0.9.0, the Docker API server applied its SSRF destination check on the non-streaming /crawl path but not on the streaming path",
+        "published": "2026-07-06T21:16:58.197"
+      },
+      {
+        "cve_id": "CVE-2025-53828",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "SharePoint for ownCloud is an application for using SharePoint with the file storage, synchronization, and sharing application ownCloud Classic. In SharePoint for ownCloud prior to version 0.4.1, whic",
+        "published": "2026-07-06T16:16:26.903"
+      },
+      {
+        "cve_id": "CVE-2026-59195",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "pnpm is a package manager. Prior to 10.34.4 and 11.8.0, pnpm accepts package names from the env lockfile configDependencies section and uses those names directly when creating config dependency symlin",
+        "published": "2026-07-06T16:16:37.683"
+      },
+      {
+        "cve_id": "CVE-2025-53831",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "DrawIO for ownCloud is an application for using DrawIO with the file storage, synchronization, and sharing application ownCloud Classic. In DrawIO for ownCloud prior to version 1.0.2, which correspond",
+        "published": "2026-07-06T17:16:26.870"
+      },
+      {
+        "cve_id": "CVE-2026-49297",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Apache Airflow's Google provider operators `GCSToSFTPOperator` and `GCSTimeSpanFileTransformOperator` joined GCS object names returned by the bucket listing API directly to a destination filesystem pa",
+        "published": "2026-07-06T11:16:30.207"
+      },
+      {
+        "cve_id": "CVE-2026-14471",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Improper Neutralization of Special Elements in the metrics-service retention policy management component in Amazon mcp-gateway-registry before 1.0.13 might allow an authenticated remote user to execut",
+        "published": "2026-07-06T21:16:53.123"
+      },
+      {
+        "cve_id": "CVE-2026-59712",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Leantime's Users::getUser method in the JSON-RPC API lacks proper authorization checks, allowing authenticated users to retrieve full user credential rows including password hashes, TOTP secrets, and ",
+        "published": "2026-07-06T21:16:58.793"
+      },
+      {
+        "cve_id": "CVE-2025-53829",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "ownCloud is a file storage, synchronization, and sharing application. In ownCloud 10 prior to version 10.15.3, an attacker with administrative privileges can exploit a path traversal vulnerability in ",
+        "published": "2026-07-06T16:16:27.033"
+      },
+      {
+        "cve_id": "CVE-2026-21379",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Memory Corruption when allocating memory with sizes that exceed the maximum allowed value.",
+        "published": "2026-07-06T21:16:53.850"
       }
     ]
   },
