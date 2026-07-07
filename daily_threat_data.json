@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T17:51:48.221336+00:00",
+  "generated_at": "2026-07-07T21:15:27.558869+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 22,
+        "value": 23,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
+        "value": 9,
         "score": 2.5,
         "max": 3
       },
@@ -32,8 +32,8 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1634,
-    "recent_30d_count": 22,
+    "total_catalog_count": 1635,
+    "recent_30d_count": 23,
     "recent": [
       {
         "cve_id": "CVE-2026-48908",
@@ -63,6 +63,16 @@
         "date_added": "2026-07-07",
         "due_date": "2026-07-10",
         "description": "Joomlack Page Builder contains an improper access control vulnerability that could allow for remote code execution via unauthenticated arbitrary file upload.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-48282",
+        "vendor": "Adobe",
+        "product": "ColdFusion",
+        "name": "Adobe ColdFusion Path Traversal Vulnerability",
+        "date_added": "2026-07-07",
+        "due_date": "2026-07-10",
+        "description": "Adobe ColdFusion contains a path traversal vulnerability that could lead to arbitrary code execution in the context of the current user.",
         "ransomware_use": "Unknown"
       },
       {
@@ -224,23 +234,13 @@
         "due_date": "2026-06-23",
         "description": "Arista Extensible Operating System (EOS) contains an incomplete comparison with missing factors vulnerability when the switch incorrectly decapsulate and forwards other unexpected tunneled packet with",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-20245",
-        "vendor": "Cisco",
-        "product": "Catalyst SD-WAN Manager",
-        "name": "Cisco Catalyst SD-WAN Manager Improper Encoding or Escaping of Output Vulnerability",
-        "date_added": "2026-06-09",
-        "due_date": "2026-06-23",
-        "description": "Cisco Catalyst SD-WAN Manager formerly SD-WAN vManage contains an improper encoding or escaping of output vulnerability. This vulnerability could allow an authenticated, local attacker to execute arbi",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 174,
-    "critical_count": 8,
-    "high_count": 26,
+    "total": 164,
+    "critical_count": 9,
+    "high_count": 30,
     "cves": [
       {
         "cve_id": "CVE-2026-57572",
@@ -248,13 +248,6 @@
         "base_score": 10.0,
         "description": "Crawl4AI is an open-source LLM-friendly web crawler and scraper. Prior to 0.9.0, the Docker API server accepted request-supplied browser_config.extra_args, which flowed into Chromium's launch argument",
         "published": "2026-07-06T21:16:58.047"
-      },
-      {
-        "cve_id": "CVE-2026-48614",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "An improper authorization vulnerability in the Plesk XML API allows an authenticated user to inject arbitrary configuration directives, resulting in arbitrary file write as root and full privilege esc",
-        "published": "2026-07-06T18:16:46.130"
       },
       {
         "cve_id": "CVE-2026-34038",
@@ -285,11 +278,18 @@
         "published": "2026-07-07T04:17:48.417"
       },
       {
-        "cve_id": "CVE-2026-9181",
+        "cve_id": "CVE-2026-12375",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "ArcGIS Server contains a directory traversal vulnerability.  An unauthenticated attacker could exploit this issue by sending crafted path parameters.  Successful exploitation could allow access to sen",
-        "published": "2026-07-06T19:17:09.553"
+        "description": "The uncanny-automator-pro WordPress plugin before 7.3.0.6 was distributed with malicious code after the vendor's uncanny-automator-pro WordPress plugin before 7.3.0.6 update/distribution infrastructur",
+        "published": "2026-07-07T06:16:22.003"
+      },
+      {
+        "cve_id": "CVE-2026-14345",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The WPFunnels \u2013 Funnel Builder for WooCommerce with Checkout & One Click Upsell plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 3.12.7 via the 'postDa",
+        "published": "2026-07-07T06:16:22.113"
       },
       {
         "cve_id": "CVE-2026-57571",
@@ -297,6 +297,13 @@
         "base_score": 9.6,
         "description": "Crawl4AI is an open-source LLM-friendly web crawler and scraper. Prior to 0.9.0, when the crawler saves a downloaded file, the destination filename was taken from attacker-influenced input and joined ",
         "published": "2026-07-06T21:16:57.907"
+      },
+      {
+        "cve_id": "CVE-2026-4375",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "The DoLeads Integrator WordPress plugin through 0.65, wp2epub WordPress plugin through 0.65 have been seen to be used to achieve RCE, once they are added adding to a blog, for example using a vulnerab",
+        "published": "2026-07-07T06:16:22.360"
       },
       {
         "cve_id": "CVE-2026-25268",
@@ -362,25 +369,18 @@
         "published": "2026-07-07T04:17:49.193"
       },
       {
-        "cve_id": "CVE-2026-57573",
+        "cve_id": "CVE-2026-34152",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Crawl4AI is an open-source LLM-friendly web crawler and scraper. Prior to 0.9.0, the Docker API server applied its SSRF destination check on the non-streaming /crawl path but not on the streaming path",
-        "published": "2026-07-06T21:16:58.197"
+        "base_score": 8.8,
+        "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.471, pre-deployment and post-deployment commands are single-quote escaped but th",
+        "published": "2026-07-07T04:17:50.043"
       },
       {
-        "cve_id": "CVE-2026-14471",
+        "cve_id": "CVE-2026-34168",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Improper Neutralization of Special Elements in the metrics-service retention policy management component in Amazon mcp-gateway-registry before 1.0.13 might allow an authenticated remote user to execut",
-        "published": "2026-07-06T21:16:53.123"
-      },
-      {
-        "cve_id": "CVE-2026-59712",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Leantime's Users::getUser method in the JSON-RPC API lacks proper authorization checks, allowing authenticated users to retrieve full user credential rows including password hashes, TOTP secrets, and ",
-        "published": "2026-07-06T21:16:58.793"
+        "base_score": 8.8,
+        "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.471, the LocalPersistentVolume.name field is interpolated directly into docker v",
+        "published": "2026-07-07T04:17:50.180"
       }
     ]
   },
