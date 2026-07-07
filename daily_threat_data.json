@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T02:07:41.524090+00:00",
+  "generated_at": "2026-07-07T07:28:59.721843+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 17,
+        "value": 19,
         "score": 3.0,
         "max": 3
       },
@@ -228,10 +228,24 @@
     ]
   },
   "nvd": {
-    "total": 195,
-    "critical_count": 17,
-    "high_count": 37,
+    "total": 217,
+    "critical_count": 19,
+    "high_count": 43,
     "cves": [
+      {
+        "cve_id": "CVE-2026-48316",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. Exploitatio",
+        "published": "2026-07-06T17:16:32.010"
+      },
+      {
+        "cve_id": "CVE-2026-48614",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "An improper authorization vulnerability in the Plesk XML API allows an authenticated user to inject arbitrary configuration directives, resulting in arbitrary file write as root and full privilege esc",
+        "published": "2026-07-06T18:16:46.130"
+      },
       {
         "cve_id": "CVE-2026-14807",
         "severity": "CRITICAL",
@@ -357,20 +371,6 @@
         "base_score": 8.8,
         "description": "The AllCoach  WordPress plugin before 1.0.2 does not verify that an email address submitted to a public account-registration endpoint is not already associated with an existing user before overwriting",
         "published": "2026-07-06T08:16:34.987"
-      },
-      {
-        "cve_id": "CVE-2026-11855",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Simple Membership WordPress plugin before 4.7.5 does not verify the authenticity of Stripe webhook requests when no signing secret is configured, nor escape a value taken from them before outputti",
-        "published": "2026-07-06T08:16:35.180"
-      },
-      {
-        "cve_id": "CVE-2026-11962",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The FileOrganizer  WordPress plugin before 1.2.0 does not validate the file type on several of its file-management operations, allowing authenticated users who have been granted file-manager access \u2014 ",
-        "published": "2026-07-06T08:16:35.270"
       }
     ]
   },
