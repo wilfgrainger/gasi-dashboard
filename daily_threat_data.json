@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T14:08:08.636203+00:00",
+  "generated_at": "2026-07-07T17:51:48.221336+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 19,
+        "value": 22,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
+        "value": 8,
         "score": 2.5,
         "max": 3
       },
@@ -32,9 +32,39 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1631,
-    "recent_30d_count": 19,
+    "total_catalog_count": 1634,
+    "recent_30d_count": 22,
     "recent": [
+      {
+        "cve_id": "CVE-2026-48908",
+        "vendor": "JoomShaper",
+        "product": "SP Page Builder",
+        "name": "JoomShaper SP Page Builder Unrestricted Upload of File with Dangerous Type Vulnerability",
+        "date_added": "2026-07-07",
+        "due_date": "2026-07-10",
+        "description": "JoomShaper SP Page Builder contains an unrestricted upload of file with dangerous type vulnerability that allows unauthenticated users to upload arbitrary files, ultimately resulting in the upload and",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-55255",
+        "vendor": "Langflow",
+        "product": "Langflow",
+        "name": "Langflow Authorization Bypass Through User-Controlled Key Vulnerability",
+        "date_added": "2026-07-07",
+        "due_date": "2026-07-10",
+        "description": "Langflow contains an authorization bypass through user-controlled key vulnerability which allows an authenticated attacker to execute any flow belonging to another user by specifying the victim's flow",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-56290",
+        "vendor": "Joomlack",
+        "product": "Page Builder",
+        "name": "Joomlack Page Builder Improper Access Control Vulnerability",
+        "date_added": "2026-07-07",
+        "due_date": "2026-07-10",
+        "description": "Joomlack Page Builder contains an improper access control vulnerability that could allow for remote code execution via unauthenticated arbitrary file upload.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-45659",
         "vendor": "Microsoft",
@@ -204,41 +234,14 @@
         "due_date": "2026-06-23",
         "description": "Cisco Catalyst SD-WAN Manager formerly SD-WAN vManage contains an improper encoding or escaping of output vulnerability. This vulnerability could allow an authenticated, local attacker to execute arbi",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-42271",
-        "vendor": "BerriAI",
-        "product": "LiteLLM",
-        "name": "BerriAI LiteLLM Command Injection Vulnerability",
-        "date_added": "2026-06-08",
-        "due_date": "2026-06-22",
-        "description": "BerriAI LiteLLM contains a command injection vulnerability that could allow any authenticated user, including holders of low-privilege internal-user keys, to run arbitrary commands on the host.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-50751",
-        "vendor": "Check Point",
-        "product": "Security Gateway",
-        "name": "Check Point Security Gateway Improper Authentication Vulnerability",
-        "date_added": "2026-06-08",
-        "due_date": "2026-06-11",
-        "description": "Check Point Security Gateway contains an improper authentication vulnerability in IKEv1 key exchange that could allow an unauthenticated remote attacker to bypass user authentication and establish a r",
-        "ransomware_use": "Known"
       }
     ]
   },
   "nvd": {
-    "total": 176,
-    "critical_count": 9,
-    "high_count": 28,
+    "total": 174,
+    "critical_count": 8,
+    "high_count": 26,
     "cves": [
-      {
-        "cve_id": "CVE-2026-48316",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "ColdFusion versions 2025.9, 2023.20 and earlier are affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. Exploitatio",
-        "published": "2026-07-06T17:16:32.010"
-      },
       {
         "cve_id": "CVE-2026-57572",
         "severity": "CRITICAL",
@@ -261,6 +264,27 @@
         "published": "2026-07-06T21:16:55.370"
       },
       {
+        "cve_id": "CVE-2026-34037",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.464, the cloneTo() Livewire action in ResourceOperations.php authorizes the sour",
+        "published": "2026-07-07T04:17:48.020"
+      },
+      {
+        "cve_id": "CVE-2026-34047",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.471, terminal WebSocket bootstrap routes did not enforce the expected authorizat",
+        "published": "2026-07-07T04:17:48.287"
+      },
+      {
+        "cve_id": "CVE-2026-34048",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.471, terminal websocket bootstrap routes only check authentication and do not en",
+        "published": "2026-07-07T04:17:48.417"
+      },
+      {
         "cve_id": "CVE-2026-9181",
         "severity": "CRITICAL",
         "base_score": 9.8,
@@ -273,27 +297,6 @@
         "base_score": 9.6,
         "description": "Crawl4AI is an open-source LLM-friendly web crawler and scraper. Prior to 0.9.0, when the crawler saves a downloaded file, the destination filename was taken from attacker-influenced input and joined ",
         "published": "2026-07-06T21:16:57.907"
-      },
-      {
-        "cve_id": "CVE-2025-53827",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "ownCloud Core is the server-side component of the file storage, synchronization, and sharing application ownCloud Classic. In versions prior to 10.15.3, the Updater on ownCloud 10 before 10.15.3 has a",
-        "published": "2026-07-06T16:16:26.740"
-      },
-      {
-        "cve_id": "CVE-2025-53830",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Anti-Virus for ownCloud is an anti-virus application for file storage, synchronization, and sharing application ownCloud. Versions of Anti-Virus for ownCloud before 1.2.3 are vulnerable to Server-Side",
-        "published": "2026-07-06T16:16:27.157"
-      },
-      {
-        "cve_id": "CVE-2026-5268",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "An authentication bypass vulnerability exists in\nthe default SFTP server component utilized across the Ciena products listed. This vulnerability allows a remote, unauthenticated attacker to bypass\nsec",
-        "published": "2026-07-06T16:16:38.433"
       },
       {
         "cve_id": "CVE-2026-25268",
@@ -331,32 +334,39 @@
         "published": "2026-07-06T22:16:49.510"
       },
       {
+        "cve_id": "CVE-2026-34034",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.466, the sentinel_token setting is used in shell commands without sufficient val",
+        "published": "2026-07-07T04:17:47.603"
+      },
+      {
+        "cve_id": "CVE-2026-34035",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.466, log drain secret and environment values were interpolated into shell comman",
+        "published": "2026-07-07T04:17:47.873"
+      },
+      {
+        "cve_id": "CVE-2026-34057",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.471, the database import Livewire component (app/Livewire/Project/Database/Impor",
+        "published": "2026-07-07T04:17:48.647"
+      },
+      {
+        "cve_id": "CVE-2026-34058",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.471, the Livewire component Server\\Resources exposes public methods (startUnmana",
+        "published": "2026-07-07T04:17:49.193"
+      },
+      {
         "cve_id": "CVE-2026-57573",
         "severity": "HIGH",
         "base_score": 8.6,
         "description": "Crawl4AI is an open-source LLM-friendly web crawler and scraper. Prior to 0.9.0, the Docker API server applied its SSRF destination check on the non-streaming /crawl path but not on the streaming path",
         "published": "2026-07-06T21:16:58.197"
-      },
-      {
-        "cve_id": "CVE-2025-53828",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "SharePoint for ownCloud is an application for using SharePoint with the file storage, synchronization, and sharing application ownCloud Classic. In SharePoint for ownCloud prior to version 0.4.1, whic",
-        "published": "2026-07-06T16:16:26.903"
-      },
-      {
-        "cve_id": "CVE-2026-59195",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "pnpm is a package manager. Prior to 10.34.4 and 11.8.0, pnpm accepts package names from the env lockfile configDependencies section and uses those names directly when creating config dependency symlin",
-        "published": "2026-07-06T16:16:37.683"
-      },
-      {
-        "cve_id": "CVE-2025-53831",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "DrawIO for ownCloud is an application for using DrawIO with the file storage, synchronization, and sharing application ownCloud Classic. In DrawIO for ownCloud prior to version 1.0.2, which correspond",
-        "published": "2026-07-06T17:16:26.870"
       },
       {
         "cve_id": "CVE-2026-14471",
