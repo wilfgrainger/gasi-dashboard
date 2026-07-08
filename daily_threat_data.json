@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T10:07:27.702668+00:00",
+  "generated_at": "2026-07-08T13:41:17.042025+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
+        "value": 5,
         "score": 2.5,
         "max": 3
       },
@@ -238,38 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 191,
-    "critical_count": 8,
-    "high_count": 26,
+    "total": 196,
+    "critical_count": 5,
+    "high_count": 23,
     "cves": [
-      {
-        "cve_id": "CVE-2026-33264",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A bug in `BaseSerialization.deserialize()` allowed unrestricted `import_string()` of attacker-controlled class paths when the Scheduler / API Server loaded a serialized DAG: a DAG author could embed a",
-        "published": "2026-07-07T10:16:40.443"
-      },
-      {
-        "cve_id": "CVE-2011-10043",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Module::Load versions before 0.22 for Perl allow arbitrary modules outside of @INC to be loaded.\n\nModule names starting with \"::\" could be passed to the load function to specify arbitrary module paths",
-        "published": "2026-07-07T12:16:24.880"
-      },
-      {
-        "cve_id": "CVE-2026-53481",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Dell PowerProtect Data Domain, versions 7.7.1.0 through 8.7, LTS2026 release version 8.6.1.0 through 8.6.1.10, LTS2025 release version 8.3.1.0 through 8.3.1.30, LTS2024 release versions 7.13.1.0 throu",
-        "published": "2026-07-07T13:16:31.397"
-      },
-      {
-        "cve_id": "CVE-2026-53483",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Dell PowerProtect Data Domain, versions 7.7.1.0 through 8.7, LTS2026 release version 8.6.1.0 through 8.6.1.10, LTS2025 release version 8.3.1.0 through 8.3.1.30, LTS2024 release versions 7.13.1.0 throu",
-        "published": "2026-07-07T13:16:31.590"
-      },
       {
         "cve_id": "CVE-2026-13019",
         "severity": "CRITICAL",
@@ -285,6 +257,13 @@
         "published": "2026-07-07T19:16:55.260"
       },
       {
+        "cve_id": "CVE-2026-59706",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "mem0 contains unauthenticated config API endpoints that expose LLM API keys in plaintext and allow server-side request forgery via attacker-controlled ollama_base_url parameter. Unauthenticated attack",
+        "published": "2026-07-07T22:16:54.503"
+      },
+      {
         "cve_id": "CVE-2026-58473",
         "severity": "CRITICAL",
         "base_score": 9.1,
@@ -297,27 +276,6 @@
         "base_score": 9.1,
         "description": "Coder allows organizations to provision remote development environments via Terraform. In versions prior tp 2.24.5, 2.29.13, 2.30.8, 2.31.12, 2.32.2, and 2.33.3, `azureidentity.Validate()` verifies th",
         "published": "2026-07-07T22:16:52.467"
-      },
-      {
-        "cve_id": "CVE-2026-11610",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A heap buffer overflow flaw was found in the SASL I/O layer of 389 Directory Server\n(389-ds-base). After a successful SASL bind with integrity protection (SSF > 0),\nan authenticated attacker can send ",
-        "published": "2026-07-07T10:16:39.690"
-      },
-      {
-        "cve_id": "CVE-2026-14474",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw was found in SSSD's LDAP sudo provider. When the ldap_sudo_search_base option is not explicitly configured, SSSD searches the entire LDAP directory tree for sudoRole objects. An authenticated a",
-        "published": "2026-07-07T10:16:39.870"
-      },
-      {
-        "cve_id": "CVE-2026-13696",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Improper neutralization of special elements used in an LDAP query ('LDAP injection') vulnerability in HAVELSAN Inc. Liman MYS allows LDAP Injection.\n\nThis issue affects Liman MYS: before release.Maste",
-        "published": "2026-07-07T12:16:32.730"
       },
       {
         "cve_id": "CVE-2026-44938",
@@ -348,13 +306,6 @@
         "published": "2026-07-07T22:16:53.930"
       },
       {
-        "cve_id": "CVE-2026-11340",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Missing Authorization vulnerability in HAVELSAN Inc. Liman MYS allows Accessing Functionality Not Properly Constrained by ACLs.\n\nThis issue affects Liman MYS: before release.Master.1107.",
-        "published": "2026-07-07T11:16:32.247"
-      },
-      {
         "cve_id": "CVE-2026-49471",
         "severity": "HIGH",
         "base_score": 8.3,
@@ -369,18 +320,67 @@
         "published": "2026-07-07T22:16:52.780"
       },
       {
-        "cve_id": "CVE-2026-11348",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Improper verification of cryptographic signature vulnerability in HAVELSAN Inc. Liman MYS allows Fake the Source of Data.\n\nThis issue affects Liman MYS: before release.Master.1107.",
-        "published": "2026-07-07T12:16:28.617"
-      },
-      {
         "cve_id": "CVE-2026-13020",
         "severity": "HIGH",
         "base_score": 8.1,
         "description": "A Weak Password Recovery Mechanism for Forgotten Password exists in Esri Portal for ArcGIS versions 12.1 and earlier on Windows, Linux and Kubernetes. A remote, unauthorized attacker may assume owners",
         "published": "2026-07-07T17:16:35.510"
+      },
+      {
+        "cve_id": "CVE-2026-44454",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Coder allows organizations to provision remote development environments via Terraform. Prior to versions 2.29.7 and 2.30.2, the `dotfiles` registry module passed unsanitized user input to shell comman",
+        "published": "2026-07-07T21:17:25.180"
+      },
+      {
+        "cve_id": "CVE-2026-57851",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "MSI Feature Manager contains a local privilege escalation vulnerability in the KernCoreLib64.sys kernel driver that allows any locally logged-on user to perform arbitrary physical memory read/write an",
+        "published": "2026-07-07T17:16:36.880"
+      },
+      {
+        "cve_id": "CVE-2026-42958",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "The application contains a use-after-free vulnerability that can be exploited to cause memory corruption while parsing specially crafted files. This could allow an attacker to execute arbitrary code i",
+        "published": "2026-07-07T22:16:52.060"
+      },
+      {
+        "cve_id": "CVE-2026-49033",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "The application contains a stack-based buffer overflow vulnerability that can be exploited by an attacker to execute arbitrary code.",
+        "published": "2026-07-07T22:16:52.637"
+      },
+      {
+        "cve_id": "CVE-2026-54607",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "FastGPT is a knowledge-based AI application platform. Prior to 4.15.0-beta4, the HTTP-tool OpenAPI schema importer validates only the top-level URL before passing it to SwaggerParser.bundle, whose rem",
+        "published": "2026-07-07T22:16:53.357"
+      },
+      {
+        "cve_id": "CVE-2026-6101",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The AMP for WP \u2013 Accelerated Mobile Pages plugin for WordPress is vulnerable to Arbitrary File Write in versions up to and including 1.1.12. This is due to unsafe ZIP file extraction in the ampforwp_s",
+        "published": "2026-07-07T14:16:34.543"
+      },
+      {
+        "cve_id": "CVE-2026-59708",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The GET /api/v1/public/:accessId/portfolio endpoint in ghostfolio accepts private access IDs without validating granteeUserId filtering, allowing unauthenticated access to full portfolio data. Attacke",
+        "published": "2026-07-07T19:16:55.130"
+      },
+      {
+        "cve_id": "CVE-2026-58469",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "GNU Wget through 1.25.0, fixed in commit 37a40fc, contains a heap buffer underread vulnerability in the clean_metalink_string() function within src/metalink.c that allows a malicious server to trigger",
+        "published": "2026-07-07T21:17:28.383"
       }
     ]
   },
