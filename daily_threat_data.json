@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-09T07:29:29.501180+00:00",
+  "generated_at": "2026-07-09T10:50:53.475598+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 6,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -218,9 +218,9 @@
     ]
   },
   "nvd": {
-    "total": 347,
-    "critical_count": 4,
-    "high_count": 47,
+    "total": 350,
+    "critical_count": 6,
+    "high_count": 37,
     "cves": [
       {
         "cve_id": "CVE-2026-8307",
@@ -235,6 +235,20 @@
         "base_score": 9.8,
         "description": "Blocksy Companion Pro plugin for WordPress before 2.1.47 contains an unauthenticated arbitrary file upload vulnerability that allows attackers to upload executable files by bypassing extension validat",
         "published": "2026-07-08T14:17:19.977"
+      },
+      {
+        "cve_id": "CVE-2026-15062",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "SQL injection vulnerabilities in the Snowflake Snowpark Python SDK (snowpark-python) versions prior to 1.53.0 could allow authenticated low-privilege users to execute SQL beyond their authorization sc",
+        "published": "2026-07-08T15:16:26.320"
+      },
+      {
+        "cve_id": "CVE-2026-59702",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "repomix contains a server-side request forgery vulnerability in the POST /api/pack endpoint that allows unauthenticated attackers to make arbitrary outbound requests. The endpoint fails to properly va",
+        "published": "2026-07-08T16:16:31.577"
       },
       {
         "cve_id": "CVE-2026-41042",
@@ -265,39 +279,11 @@
         "published": "2026-07-08T14:17:20.807"
       },
       {
-        "cve_id": "CVE-2026-55999",
+        "cve_id": "CVE-2026-15067",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Local attackers with a X connection able to provide PCX fonts to the X \nserver xorg-server before 21.2.24 and xwayland before 24.1.13 could \ncause a heap buffer overflow via SetFont due to missing gly",
-        "published": "2026-07-08T09:16:29.800"
-      },
-      {
-        "cve_id": "CVE-2026-56001",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "A heap buffer overflow in BitmapScaleBitmaps in libXfont2 before 2.0.8 due to an overflowing 32bit size could be used by attackers able to access the X Server to execute code within the X server cont",
-        "published": "2026-07-08T09:16:30.050"
-      },
-      {
-        "cve_id": "CVE-2026-56002",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "A heap bufferflow in pcfReadFont() due to missing glyph bounds checking\u00a0in libXfont2 before 2.0.8\u00a0 allows attackers authenticated as X client to execute code within the X server.",
-        "published": "2026-07-08T10:16:23.327"
-      },
-      {
-        "cve_id": "CVE-2026-56003",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "A heap buffer overflow due to missing size checking in the property buffer when parsing PCF files in libXfont2 ComputeScaledProperties() before libXfont2 before 2.0.8 could be used by attackers using ",
-        "published": "2026-07-08T10:16:23.577"
-      },
-      {
-        "cve_id": "CVE-2026-57239",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "The user-controllable executable files will be directly executed by high-privilege processes, allowing low-privilege users to have the opportunity to elevate their privileges to NT AUTHORITY\\SYSTEM.",
-        "published": "2026-07-08T09:16:31.817"
+        "base_score": 8.8,
+        "description": "Snowflake Terraform Provider versions prior to 2.18.0 contain several security vulnerabilities, including SQL injection via an unsanitized data source input could result in arbitrary SQL execution und",
+        "published": "2026-07-08T15:16:26.433"
       },
       {
         "cve_id": "CVE-2026-3688",
@@ -314,6 +300,20 @@
         "published": "2026-07-08T14:17:15.543"
       },
       {
+        "cve_id": "CVE-2026-54652",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Frigate is an open source network video recorder. In version 0.17.1, the GET /api/logs/{service} endpoint allows any authenticated user including the viewer role to download Frigate and nginx logs, ex",
+        "published": "2026-07-08T15:16:29.390"
+      },
+      {
+        "cve_id": "CVE-2026-3144",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "IBM API Connect 12.1.0.0 through 12.1.0.3 uses default credentials which could allow an attacker to gain unauthorized access to the application before the system enforces a credential update.",
+        "published": "2026-07-08T16:16:28.463"
+      },
+      {
         "cve_id": "CVE-2026-11903",
         "severity": "HIGH",
         "base_score": 8.0,
@@ -321,46 +321,46 @@
         "published": "2026-07-08T15:16:25.470"
       },
       {
-        "cve_id": "CVE-2026-13126",
+        "cve_id": "CVE-2026-22927",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "The embedded JavaScript in the PDF deleted the pages, making the object invalid. The application attempted to perform a write operation on the invalid pop-up annotations, resulting in the program cras",
-        "published": "2026-07-08T09:16:29.307"
+        "description": "Omnissa Workspace ONE\u00ae Tunnel for Windows addresses a   Local Privilege Escalation Vulnerability.",
+        "published": "2026-07-08T14:16:57.060"
       },
       {
-        "cve_id": "CVE-2026-13127",
+        "cve_id": "CVE-2026-55874",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "The application opens the PDF file. JavaScript then rewrites the document to modify the page structure, resulting in the invalidation of the page objects. However, the thumbnails still use the invalid",
-        "published": "2026-07-08T09:16:29.440"
+        "base_score": 7.7,
+        "description": "SeaweedFS is a distributed storage system. Prior to 4.34, the S3 API gateway does not reject dot-dot path segments in the X-Amz-Copy-Source header used by CopyObject and UploadPartCopy, allowing an au",
+        "published": "2026-07-08T15:16:30.320"
       },
       {
-        "cve_id": "CVE-2026-13128",
+        "cve_id": "CVE-2026-6230",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Embedding JavaScript within a PDF file will cause the page to be deleted. Subsequent scripts will continue to access the relevant properties of the document view, eventually leading to the crash of th",
-        "published": "2026-07-08T09:16:29.557"
+        "base_score": 7.5,
+        "description": "The Tainacan plugin for WordPress is vulnerable to time-based blind SQL Injection via the 'geoquery' parameter in all versions up to and including 1.0.3 due to insufficient escaping on the user suppli",
+        "published": "2026-07-08T12:17:20.660"
       },
       {
-        "cve_id": "CVE-2026-13129",
+        "cve_id": "CVE-2026-6854",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "When the application opens a PDF file, JavaScript uses the damaged field tree to trigger field traversal, resulting in the program holding an invalid form object when accessing the field property path",
-        "published": "2026-07-08T09:16:29.673"
+        "base_score": 7.5,
+        "description": "The My Calendar \u2013 Accessible Event Manager plugin for WordPress is vulnerable to time-based blind SQL Injection via the 'mc_auth' parameter in all versions up to, and including, 3.7.8 due to insuffici",
+        "published": "2026-07-08T12:17:21.137"
       },
       {
-        "cve_id": "CVE-2026-57237",
+        "cve_id": "CVE-2026-5356",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "When the application opens a PDF and JavaScript modifies the properties of form fields, it causes the state of the underlying objects referenced by the program to become invalid. Eventually, it reads ",
-        "published": "2026-07-08T09:16:31.577"
+        "base_score": 7.5,
+        "description": "The LatePoint \u2013 Calendar Booking Plugin for Appointments and Events plugin for WordPress is vulnerable to Improper Input Validation in all versions up to, and including, 5.4.0. This is due to the plug",
+        "published": "2026-07-08T13:16:56.767"
       },
       {
-        "cve_id": "CVE-2026-57238",
+        "cve_id": "CVE-2026-15053",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "After the application opened the PDF, JavaScript deleted the form field object. Subsequently, it attempted to access the invalid object, which caused the application to crash.",
-        "published": "2026-07-08T09:16:31.693"
+        "base_score": 7.5,
+        "description": "Tanium addressed a denial of service vulnerability in Tanium Server.",
+        "published": "2026-07-08T14:16:56.930"
       }
     ]
   },
