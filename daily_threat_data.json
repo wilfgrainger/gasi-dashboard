@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-09T10:50:53.475598+00:00",
+  "generated_at": "2026-07-09T14:33:20.364187+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
-        "score": 2.5,
+        "value": 3,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -218,24 +218,10 @@
     ]
   },
   "nvd": {
-    "total": 350,
-    "critical_count": 6,
-    "high_count": 37,
+    "total": 325,
+    "critical_count": 3,
+    "high_count": 36,
     "cves": [
-      {
-        "cve_id": "CVE-2026-8307",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Webbeyaz Web Design Medik\u00fcm Web allows SQL Injection.\n\nThis issue affects Medik\u00fcm Web: through 080",
-        "published": "2026-07-08T13:16:57.903"
-      },
-      {
-        "cve_id": "CVE-2026-58480",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Blocksy Companion Pro plugin for WordPress before 2.1.47 contains an unauthenticated arbitrary file upload vulnerability that allows attackers to upload executable files by bypassing extension validat",
-        "published": "2026-07-08T14:17:19.977"
-      },
       {
         "cve_id": "CVE-2026-15062",
         "severity": "CRITICAL",
@@ -251,32 +237,11 @@
         "published": "2026-07-08T16:16:31.577"
       },
       {
-        "cve_id": "CVE-2026-41042",
+        "cve_id": "CVE-2026-9074",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Unauthenticated callers can supply a malicious H2 JDBC URL through the testConnection API, which executes arbitrary Java code on the server via H2's INIT parameter. Vulnerability in Apache Gravitino.\n",
-        "published": "2026-07-08T12:17:20.550"
-      },
-      {
-        "cve_id": "CVE-2026-54061",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Dgraph is an open source distributed GraphQL database. Prior to version 25.3.5, Dgraph Alpha exposes the RPCs used for external snapshot import on the public gRPC port `:9080` without authentication o",
-        "published": "2026-07-08T14:17:06.520"
-      },
-      {
-        "cve_id": "CVE-2026-56086",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Dell PowerProtect Data Domain, versions 7.7.1.0 through 8.6, LTS2026 release version 8.6.1.0 through 8.6.1.10, LTS2025 release version 8.3.1.0 through 8.3.1.30, LTS2024 release versions 7.13.1.0 throu",
-        "published": "2026-07-08T14:17:14.980"
-      },
-      {
-        "cve_id": "CVE-2026-59257",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "n8n before 1.123.61, 2.x before 2.27.4, and 2.28.x before 2.28.1 contains a SQL injection vulnerability in the legacy MySQL v1 node's executeQuery operation. The operation substitutes evaluated {{ ...",
-        "published": "2026-07-08T14:17:20.807"
+        "description": "IBM API Connect 10.0.8.0 through 10.0.8.9 and\u00a012.1.0.0 through 12.1.0.3\u00a0contains an unauthenticated SQL injection vulnerability in the password reset functionality.",
+        "published": "2026-07-08T16:16:35.050"
       },
       {
         "cve_id": "CVE-2026-15067",
@@ -286,18 +251,32 @@
         "published": "2026-07-08T15:16:26.433"
       },
       {
-        "cve_id": "CVE-2026-3688",
+        "cve_id": "CVE-2026-60102",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The WCFM Membership \u2013 WooCommerce Memberships for Multivendor Marketplace plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 2.11.10. This is ",
-        "published": "2026-07-08T12:17:20.430"
+        "base_score": 8.8,
+        "description": "Horde Virtual File System (VFS) API before 3.0.1 contains an OS command injection vulnerability in the Horde_Vfs_Smb driver where the _escapeShellCommand() method fails to sanitize command substitutio",
+        "published": "2026-07-08T17:17:28.997"
       },
       {
-        "cve_id": "CVE-2026-56246",
+        "cve_id": "CVE-2026-14891",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Capgo before 12.128.2 contains a broken access control vulnerability in the organization management API where a scoped API key (limited_to_orgs) inherits its owner-user's permissions, allowing destruc",
-        "published": "2026-07-08T14:17:15.543"
+        "base_score": 8.7,
+        "description": "HashiCorp Nomad and Nomad Enterprise are vulnerable to a sandbox escape in the Docker task driver that may allow a job submitter to bind-mount a host path into a container even when volume bind mounts",
+        "published": "2026-07-08T20:16:48.300"
+      },
+      {
+        "cve_id": "CVE-2026-29009",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "U-Boot through 2026.04-rc3 contains a buffer overflow vulnerability in nfs_readlink_reply() (net/nfs-common.c) when CONFIG_CMD_NFS is enabled, allowing a malicious or compromised NFS server to overflo",
+        "published": "2026-07-08T17:17:21.173"
+      },
+      {
+        "cve_id": "CVE-2026-59731",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Astro is a web framework for content-driven websites. Version 6.4.7 performs authorization decisions on a partially decoded pathname after reaching the iterative URL decoder limit, while later rewrite",
+        "published": "2026-07-08T17:17:25.937"
       },
       {
         "cve_id": "CVE-2026-54652",
@@ -321,11 +300,11 @@
         "published": "2026-07-08T15:16:25.470"
       },
       {
-        "cve_id": "CVE-2026-22927",
+        "cve_id": "CVE-2026-39822",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "Omnissa Workspace ONE\u00ae Tunnel for Windows addresses a   Local Privilege Escalation Vulnerability.",
-        "published": "2026-07-08T14:16:57.060"
+        "description": "On Unix systems, opening a file in an os.Root improperly follows symlinks to locations outside of the Root when the final path component of the a path is a symbolic link and the path ends in /. For ex",
+        "published": "2026-07-08T17:17:21.310"
       },
       {
         "cve_id": "CVE-2026-55874",
@@ -335,32 +314,53 @@
         "published": "2026-07-08T15:16:30.320"
       },
       {
-        "cve_id": "CVE-2026-6230",
+        "cve_id": "CVE-2026-14373",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Tainacan plugin for WordPress is vulnerable to time-based blind SQL Injection via the 'geoquery' parameter in all versions up to and including 1.0.3 due to insufficient escaping on the user suppli",
-        "published": "2026-07-08T12:17:20.660"
+        "base_score": 7.7,
+        "description": "HashiCorp Nomad and Nomad Enterprise did not enforce the allow_privileged restriction for the Docker task driver's host namespace mode options. This may allow an authenticated job submitter to run a c",
+        "published": "2026-07-08T20:16:48.080"
       },
       {
-        "cve_id": "CVE-2026-6854",
+        "cve_id": "CVE-2026-10699",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "The My Calendar \u2013 Accessible Event Manager plugin for WordPress is vulnerable to time-based blind SQL Injection via the 'mc_auth' parameter in all versions up to, and including, 3.7.8 due to insuffici",
-        "published": "2026-07-08T12:17:21.137"
+        "description": "Missing release of memory after effective lifetime vulnerability in Progress MOVEit Transfer (Custom Reports modules).\n\nThis issue affects MOVEit Transfer: from 2025.0.0 before 2025.0.8, from 2025.1.0",
+        "published": "2026-07-08T15:16:25.173"
       },
       {
-        "cve_id": "CVE-2026-5356",
+        "cve_id": "CVE-2026-49145",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "The LatePoint \u2013 Calendar Booking Plugin for Appointments and Events plugin for WordPress is vulnerable to Improper Input Validation in all versions up to, and including, 5.4.0. This is due to the plug",
-        "published": "2026-07-08T13:16:56.767"
+        "description": "App::Ack versions through 3.10.0 for Perl read arbitrary files via --files-from in a project .ackrc.\n\nack searches up the directory hierarchy from the current directory for a project .ackrc and loads ",
+        "published": "2026-07-08T15:16:27.563"
       },
       {
-        "cve_id": "CVE-2026-15053",
+        "cve_id": "CVE-2026-49146",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Tanium addressed a denial of service vulnerability in Tanium Server.",
-        "published": "2026-07-08T14:16:56.930"
+        "description": "App::Ack versions before 3.10.0 for Perl allow memory exhaustion via an unbounded context value in a project .ackrc.\n\nack searches up the directory hierarchy from the current directory for a project .",
+        "published": "2026-07-08T15:16:27.673"
+      },
+      {
+        "cve_id": "CVE-2026-49147",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "App::Ack versions through 3.10.0 for Perl print unsanitised terminal escape sequences from filenames in several output modes.\n\nWhen ack prints a filename whose basename contains terminal control bytes",
+        "published": "2026-07-08T15:16:27.787"
+      },
+      {
+        "cve_id": "CVE-2026-59703",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "repomix contains a local file inclusion vulnerability in the git clone endpoint that allows unauthenticated attackers to read arbitrary local git repositories. The isValidRemoteValue function in src/c",
+        "published": "2026-07-08T15:16:32.173"
+      },
+      {
+        "cve_id": "CVE-2026-59724",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Socket.IO enables bidirectional and low-latency communication for every platform. From 6.5.0 before 6.6.7, Engine.IO servers with WebTransport enabled can resolve a crafted session ID such as __proto_",
+        "published": "2026-07-08T16:16:32.980"
       }
     ]
   },
