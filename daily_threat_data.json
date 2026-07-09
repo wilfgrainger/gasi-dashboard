@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-09T14:33:20.364187+00:00",
+  "generated_at": "2026-07-09T17:47:20.084037+00:00",
   "threat_score": {
-    "score": 6.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.0,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
-        "score": 2.0,
+        "value": 0,
+        "score": 1.0,
         "max": 3
       },
       {
@@ -218,44 +218,23 @@
     ]
   },
   "nvd": {
-    "total": 325,
-    "critical_count": 3,
-    "high_count": 36,
+    "total": 316,
+    "critical_count": 0,
+    "high_count": 30,
     "cves": [
       {
-        "cve_id": "CVE-2026-15062",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "SQL injection vulnerabilities in the Snowflake Snowpark Python SDK (snowpark-python) versions prior to 1.53.0 could allow authenticated low-privilege users to execute SQL beyond their authorization sc",
-        "published": "2026-07-08T15:16:26.320"
-      },
-      {
-        "cve_id": "CVE-2026-59702",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "repomix contains a server-side request forgery vulnerability in the POST /api/pack endpoint that allows unauthenticated attackers to make arbitrary outbound requests. The endpoint fails to properly va",
-        "published": "2026-07-08T16:16:31.577"
-      },
-      {
-        "cve_id": "CVE-2026-9074",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "IBM API Connect 10.0.8.0 through 10.0.8.9 and\u00a012.1.0.0 through 12.1.0.3\u00a0contains an unauthenticated SQL injection vulnerability in the password reset functionality.",
-        "published": "2026-07-08T16:16:35.050"
-      },
-      {
-        "cve_id": "CVE-2026-15067",
+        "cve_id": "CVE-2026-58253",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Snowflake Terraform Provider versions prior to 2.18.0 contain several security vulnerabilities, including SQL injection via an unsanitized data source input could result in arbitrary SQL execution und",
-        "published": "2026-07-08T15:16:26.433"
+        "description": "NATS Server is a high-performance server for NATS.io, the cloud and edge native messaging system. Prior to 2.14.0, 2.12.7, and 2.11.16, when no_auth_user was configured, a parser fast path intended fo",
+        "published": "2026-07-08T20:16:54.943"
       },
       {
-        "cve_id": "CVE-2026-60102",
+        "cve_id": "CVE-2026-10037",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Horde Virtual File System (VFS) API before 3.0.1 contains an OS command injection vulnerability in the Horde_Vfs_Smb driver where the _escapeShellCommand() method fails to sanitize command substitutio",
-        "published": "2026-07-08T17:17:28.997"
+        "description": "A sandbox escape vulnerability exists in the OpenJDK packages provided in Ubuntu. The .jar MIME handlers installed by these packages execute files marked as executable when the mailcap package is inst",
+        "published": "2026-07-08T22:17:12.500"
       },
       {
         "cve_id": "CVE-2026-14891",
@@ -265,53 +244,67 @@
         "published": "2026-07-08T20:16:48.300"
       },
       {
-        "cve_id": "CVE-2026-29009",
+        "cve_id": "CVE-2026-60104",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "Bitwarden Server before 2026.6.0 does not verify that the email in a POST /auth-requests/admin-request body belongs to the authenticated caller, allowing a low-privileged organization member to obtain",
+        "published": "2026-07-08T20:17:00.413"
+      },
+      {
+        "cve_id": "CVE-2026-55596",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "Plate is a rich-text editor with AI and shadcn/ui. From 53.0.0 until 53.1.4, the media embed renderer trusts serialized provider or sourceUrl metadata in useMediaState and skips parseMediaUrl protocol",
+        "published": "2026-07-08T21:16:50.247"
+      },
+      {
+        "cve_id": "CVE-2026-6896",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "GitLab has remediated an issue in GitLab EE affecting all versions from 13.11 before 18.11.7, 19.0 before 19.0.4, and 19.1 before 19.1.2 that under certain conditions could have allowed an authenticat",
+        "published": "2026-07-08T21:16:55.097"
+      },
+      {
+        "cve_id": "CVE-2026-58192",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Appium is a cross-platform automation framework for all kinds of apps, built on top of the W3C WebDriver protocol. Prior to 1.1.6, the Appium storage plugin exposes POST /storage/delete, whose handler",
+        "published": "2026-07-08T21:16:52.150"
+      },
+      {
+        "cve_id": "CVE-2026-60105",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Monsta FTP before 2.14.5 contains a server-side request forgery vulnerability in the fetchRemoteFile action caused by an incomplete IP blocklist check in the isBlockedIP() function, which fails to det",
+        "published": "2026-07-08T21:16:54.813"
+      },
+      {
+        "cve_id": "CVE-2026-59802",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "U-Boot through 2026.04-rc3 contains a buffer overflow vulnerability in nfs_readlink_reply() (net/nfs-common.c) when CONFIG_CMD_NFS is enabled, allowing a malicious or compromised NFS server to overflo",
-        "published": "2026-07-08T17:17:21.173"
+        "description": "PasswordPusher before 2.8.1 accepts data URI schemes in URL push payloads due to insufficient validation in the valid_url function. Attackers can create malicious pushes containing data:text/html URIs",
+        "published": "2026-07-08T20:16:55.737"
       },
       {
-        "cve_id": "CVE-2026-59731",
+        "cve_id": "CVE-2026-58525",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "Astro is a web framework for content-driven websites. Version 6.4.7 performs authorization decisions on a partially decoded pathname after reaching the iterative URL decoder limit, while later rewrite",
-        "published": "2026-07-08T17:17:25.937"
+        "description": "Improper access control in Microsoft Edge (Chromium-based) allows an unauthorized attacker to bypass a security feature over a network.",
+        "published": "2026-07-08T21:16:54.300"
       },
       {
-        "cve_id": "CVE-2026-54652",
+        "cve_id": "CVE-2026-54591",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Frigate is an open source network video recorder. In version 0.17.1, the GET /api/logs/{service} endpoint allows any authenticated user including the viewer role to download Frigate and nginx logs, ex",
-        "published": "2026-07-08T15:16:29.390"
+        "description": "AsyncSSH is a Python package which provides an asynchronous client and server implementation of the SSHv2 protocol on top of the Python asyncio framework. Prior to 2.23.1, a malicious SSH server can w",
+        "published": "2026-07-08T21:16:49.657"
       },
       {
-        "cve_id": "CVE-2026-3144",
+        "cve_id": "CVE-2026-35552",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "IBM API Connect 12.1.0.0 through 12.1.0.3 uses default credentials which could allow an attacker to gain unauthorized access to the application before the system enforces a credential update.",
-        "published": "2026-07-08T16:16:28.463"
-      },
-      {
-        "cve_id": "CVE-2026-11903",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Progress MOVEit Transfer (Ad Hoc module).\n\nThis issue affects MOVEit Transfer: from 2026.0.0 befor",
-        "published": "2026-07-08T15:16:25.470"
-      },
-      {
-        "cve_id": "CVE-2026-39822",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "On Unix systems, opening a file in an os.Root improperly follows symlinks to locations outside of the Root when the final path component of the a path is a symbolic link and the path ends in /. For ex",
-        "published": "2026-07-08T17:17:21.310"
-      },
-      {
-        "cve_id": "CVE-2026-55874",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "SeaweedFS is a distributed storage system. Prior to 4.34, the S3 API gateway does not reject dot-dot path segments in the X-Amz-Copy-Source header used by CopyObject and UploadPartCopy, allowing an au",
-        "published": "2026-07-08T15:16:30.320"
+        "description": "In CAXperts UPVWebServices 2.4.2212.603 through 2.7.6 and UDiTH Portal 2026.0.0 through 2026.2.0, an authenticated remote user can invoke an administrative API endpoint intended for privileged users. ",
+        "published": "2026-07-08T22:17:13.980"
       },
       {
         "cve_id": "CVE-2026-14373",
@@ -321,46 +314,53 @@
         "published": "2026-07-08T20:16:48.080"
       },
       {
-        "cve_id": "CVE-2026-10699",
+        "cve_id": "CVE-2026-58207",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Missing release of memory after effective lifetime vulnerability in Progress MOVEit Transfer (Custom Reports modules).\n\nThis issue affects MOVEit Transfer: from 2025.0.0 before 2025.0.8, from 2025.1.0",
-        "published": "2026-07-08T15:16:25.173"
+        "base_score": 7.7,
+        "description": "NATS Server is a high-performance server for NATS.io, the cloud and edge native messaging system. Prior to 2.14.3 and 2.12.12, a client able to send account-scoped connection monitoring requests could",
+        "published": "2026-07-08T21:16:52.293"
       },
       {
-        "cve_id": "CVE-2026-49145",
+        "cve_id": "CVE-2026-55404",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "App::Ack versions through 3.10.0 for Perl read arbitrary files via --files-from in a project .ackrc.\n\nack searches up the directory hierarchy from the current directory for a project .ackrc and loads ",
-        "published": "2026-07-08T15:16:27.563"
+        "description": "yt-dlp and youtube-dl are command-line audio/video downloaders. Prior to 2026.7.4, the --write-link, --write-url-link, and --write-desktop-link options can write .url or .desktop shortcut files using ",
+        "published": "2026-07-08T20:16:52.987"
       },
       {
-        "cve_id": "CVE-2026-49146",
+        "cve_id": "CVE-2026-55760",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "App::Ack versions before 3.10.0 for Perl allow memory exhaustion via an unbounded context value in a project .ackrc.\n\nack searches up the directory hierarchy from the current directory for a project .",
-        "published": "2026-07-08T15:16:27.673"
+        "description": "Handlebars.java provides logic-less and semantic Mustache templates with Java. Prior to 4.5.2, applications that pass user-controlled input to Handlebars.compile() using FileTemplateLoader or ClassPat",
+        "published": "2026-07-08T20:16:53.287"
       },
       {
-        "cve_id": "CVE-2026-49147",
+        "cve_id": "CVE-2026-58210",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "App::Ack versions through 3.10.0 for Perl print unsanitised terminal escape sequences from filenames in several output modes.\n\nWhen ack prints a filename whose basename contains terminal control bytes",
-        "published": "2026-07-08T15:16:27.787"
+        "description": "NATS Server is a high-performance server for NATS.io, the cloud and edge native messaging system. Prior to 2.14.3 and 2.12.12, an unauthenticated MQTT client could cause the server to retain large inc",
+        "published": "2026-07-08T20:16:53.950"
       },
       {
-        "cve_id": "CVE-2026-59703",
+        "cve_id": "CVE-2026-58250",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "repomix contains a local file inclusion vulnerability in the git clone endpoint that allows unauthenticated attackers to read arbitrary local git repositories. The isValidRemoteValue function in src/c",
-        "published": "2026-07-08T15:16:32.173"
+        "description": "NATS Server is a high-performance server for NATS.io, the cloud and edge native messaging system. Prior to 2.12.8 and 2.11.17, an unauthenticated peer with network access to a leafnode listener with c",
+        "published": "2026-07-08T20:16:54.483"
       },
       {
-        "cve_id": "CVE-2026-59724",
+        "cve_id": "CVE-2026-59803",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Socket.IO enables bidirectional and low-latency communication for every platform. From 6.5.0 before 6.6.7, Engine.IO servers with WebTransport enabled can resolve a crafted session ID such as __proto_",
-        "published": "2026-07-08T16:16:32.980"
+        "description": "rpcx through 1.9.3, fixed in commit 047aec1, contains a denial-of-service vulnerability in protocol.Message.Decode (protocol/message.go). When a message has the compression flag set, the payload is gz",
+        "published": "2026-07-08T20:16:55.913"
+      },
+      {
+        "cve_id": "CVE-2026-59939",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "httplib2 is a comprehensive HTTP client library for Python. Prior to 0.32.0, httplib2 performs unbounded decompression of HTTP response bodies encoded with Content-Encoding: gzip or deflate in _decomp",
+        "published": "2026-07-08T20:16:59.557"
       }
     ]
   },
