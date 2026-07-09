@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-09T17:47:20.084037+00:00",
+  "generated_at": "2026-07-09T21:12:29.447464+00:00",
   "threat_score": {
-    "score": 5.0,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 1.0,
+        "value": 3,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -218,16 +218,30 @@
     ]
   },
   "nvd": {
-    "total": 316,
-    "critical_count": 0,
-    "high_count": 30,
+    "total": 310,
+    "critical_count": 3,
+    "high_count": 44,
     "cves": [
       {
-        "cve_id": "CVE-2026-58253",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "NATS Server is a high-performance server for NATS.io, the cloud and edge native messaging system. Prior to 2.14.0, 2.12.7, and 2.11.16, when no_auth_user was configured, a parser fast path intended fo",
-        "published": "2026-07-08T20:16:54.943"
+        "cve_id": "CVE-2026-44024",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Fluentd collects events from various data sources and writes them to files, RDBMS, NoSQL, IaaS, SaaS, Hadoop and so on. Prior to 1.19.3, Fluentd allows dynamically constructing file paths using the ${",
+        "published": "2026-07-08T22:17:14.337"
+      },
+      {
+        "cve_id": "CVE-2026-52200",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An issue in Generic OEM UZ801_v2.1 4G LTE Router V3.4.3 allows a remote attacker to execute arbitrary code via the /ajax web management API endpoint in MifiService.apk",
+        "published": "2026-07-08T22:17:15.127"
+      },
+      {
+        "cve_id": "CVE-2026-15113",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Use after free in Autofill in Google Chrome on Android prior to 150.0.7871.115 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: H",
+        "published": "2026-07-08T23:16:52.413"
       },
       {
         "cve_id": "CVE-2026-10037",
@@ -237,18 +251,95 @@
         "published": "2026-07-08T22:17:12.500"
       },
       {
-        "cve_id": "CVE-2026-14891",
+        "cve_id": "CVE-2026-15107",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "HashiCorp Nomad and Nomad Enterprise are vulnerable to a sandbox escape in the Docker task driver that may allow a job submitter to bind-mount a host path into a container even when volume bind mounts",
-        "published": "2026-07-08T20:16:48.300"
+        "base_score": 8.8,
+        "description": "Use after free in IndexedDB in Google Chrome prior to 150.0.7871.115 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+        "published": "2026-07-08T23:16:51.783"
       },
       {
-        "cve_id": "CVE-2026-60104",
+        "cve_id": "CVE-2026-15110",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "Bitwarden Server before 2026.6.0 does not verify that the email in a POST /auth-requests/admin-request body belongs to the authenticated caller, allowing a low-privileged organization member to obtain",
-        "published": "2026-07-08T20:17:00.413"
+        "base_score": 8.8,
+        "description": "Use after free in Extensions in Google Chrome prior to 150.0.7871.115 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted Chr",
+        "published": "2026-07-08T23:16:52.103"
+      },
+      {
+        "cve_id": "CVE-2026-15112",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in Ozone in Google Chrome prior to 150.0.7871.115 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)",
+        "published": "2026-07-08T23:16:52.310"
+      },
+      {
+        "cve_id": "CVE-2026-15114",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Out of bounds read and write in Codecs in Google Chrome prior to 150.0.7871.115 allowed a remote attacker to potentially exploit heap corruption via a crafted video file. (Chromium security severity: ",
+        "published": "2026-07-08T23:16:52.533"
+      },
+      {
+        "cve_id": "CVE-2026-15116",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in Actor in Google Chrome prior to 150.0.7871.115 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-07-08T23:16:52.730"
+      },
+      {
+        "cve_id": "CVE-2026-15118",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in Input in Google Chrome prior to 150.0.7871.115 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-07-08T23:16:52.940"
+      },
+      {
+        "cve_id": "CVE-2026-15121",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in WebRTC in Google Chrome prior to 150.0.7871.115 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-07-08T23:16:53.247"
+      },
+      {
+        "cve_id": "CVE-2026-15123",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Inappropriate implementation in DOM in Google Chrome prior to 150.0.7871.115 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High",
+        "published": "2026-07-08T23:16:53.450"
+      },
+      {
+        "cve_id": "CVE-2026-15125",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Inappropriate implementation in Forms in Google Chrome prior to 150.0.7871.115 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity",
+        "published": "2026-07-08T23:16:53.637"
+      },
+      {
+        "cve_id": "CVE-2026-15126",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in Forms in Google Chrome prior to 150.0.7871.115 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-07-08T23:16:53.733"
+      },
+      {
+        "cve_id": "CVE-2026-15129",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in Views in Google Chrome prior to 150.0.7871.115 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)",
+        "published": "2026-07-08T23:16:54.020"
+      },
+      {
+        "cve_id": "CVE-2026-15132",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Uninitialized Use in V8 in Google Chrome prior to 150.0.7871.115 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-07-08T23:16:54.317"
+      },
+      {
+        "cve_id": "CVE-2026-15133",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in InterestGroups in Google Chrome prior to 150.0.7871.115 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Hig",
+        "published": "2026-07-08T23:16:54.413"
       },
       {
         "cve_id": "CVE-2026-55596",
@@ -270,97 +361,6 @@
         "base_score": 8.6,
         "description": "Appium is a cross-platform automation framework for all kinds of apps, built on top of the W3C WebDriver protocol. Prior to 1.1.6, the Appium storage plugin exposes POST /storage/delete, whose handler",
         "published": "2026-07-08T21:16:52.150"
-      },
-      {
-        "cve_id": "CVE-2026-60105",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Monsta FTP before 2.14.5 contains a server-side request forgery vulnerability in the fetchRemoteFile action caused by an incomplete IP blocklist check in the isBlockedIP() function, which fails to det",
-        "published": "2026-07-08T21:16:54.813"
-      },
-      {
-        "cve_id": "CVE-2026-59802",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "PasswordPusher before 2.8.1 accepts data URI schemes in URL push payloads due to insufficient validation in the valid_url function. Attackers can create malicious pushes containing data:text/html URIs",
-        "published": "2026-07-08T20:16:55.737"
-      },
-      {
-        "cve_id": "CVE-2026-58525",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Improper access control in Microsoft Edge (Chromium-based) allows an unauthorized attacker to bypass a security feature over a network.",
-        "published": "2026-07-08T21:16:54.300"
-      },
-      {
-        "cve_id": "CVE-2026-54591",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "AsyncSSH is a Python package which provides an asynchronous client and server implementation of the SSHv2 protocol on top of the Python asyncio framework. Prior to 2.23.1, a malicious SSH server can w",
-        "published": "2026-07-08T21:16:49.657"
-      },
-      {
-        "cve_id": "CVE-2026-35552",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "In CAXperts UPVWebServices 2.4.2212.603 through 2.7.6 and UDiTH Portal 2026.0.0 through 2026.2.0, an authenticated remote user can invoke an administrative API endpoint intended for privileged users. ",
-        "published": "2026-07-08T22:17:13.980"
-      },
-      {
-        "cve_id": "CVE-2026-14373",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "HashiCorp Nomad and Nomad Enterprise did not enforce the allow_privileged restriction for the Docker task driver's host namespace mode options. This may allow an authenticated job submitter to run a c",
-        "published": "2026-07-08T20:16:48.080"
-      },
-      {
-        "cve_id": "CVE-2026-58207",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "NATS Server is a high-performance server for NATS.io, the cloud and edge native messaging system. Prior to 2.14.3 and 2.12.12, a client able to send account-scoped connection monitoring requests could",
-        "published": "2026-07-08T21:16:52.293"
-      },
-      {
-        "cve_id": "CVE-2026-55404",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "yt-dlp and youtube-dl are command-line audio/video downloaders. Prior to 2026.7.4, the --write-link, --write-url-link, and --write-desktop-link options can write .url or .desktop shortcut files using ",
-        "published": "2026-07-08T20:16:52.987"
-      },
-      {
-        "cve_id": "CVE-2026-55760",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Handlebars.java provides logic-less and semantic Mustache templates with Java. Prior to 4.5.2, applications that pass user-controlled input to Handlebars.compile() using FileTemplateLoader or ClassPat",
-        "published": "2026-07-08T20:16:53.287"
-      },
-      {
-        "cve_id": "CVE-2026-58210",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "NATS Server is a high-performance server for NATS.io, the cloud and edge native messaging system. Prior to 2.14.3 and 2.12.12, an unauthenticated MQTT client could cause the server to retain large inc",
-        "published": "2026-07-08T20:16:53.950"
-      },
-      {
-        "cve_id": "CVE-2026-58250",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "NATS Server is a high-performance server for NATS.io, the cloud and edge native messaging system. Prior to 2.12.8 and 2.11.17, an unauthenticated peer with network access to a leafnode listener with c",
-        "published": "2026-07-08T20:16:54.483"
-      },
-      {
-        "cve_id": "CVE-2026-59803",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "rpcx through 1.9.3, fixed in commit 047aec1, contains a denial-of-service vulnerability in protocol.Message.Decode (protocol/message.go). When a message has the compression flag set, the payload is gz",
-        "published": "2026-07-08T20:16:55.913"
-      },
-      {
-        "cve_id": "CVE-2026-59939",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "httplib2 is a comprehensive HTTP client library for Python. Prior to 0.32.0, httplib2 performs unbounded decompression of HTTP response bodies encoded with Content-Encoding: gzip or deflate in _decomp",
-        "published": "2026-07-08T20:16:59.557"
       }
     ]
   },
