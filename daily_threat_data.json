@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-09T02:00:59.829067+00:00",
+  "generated_at": "2026-07-09T07:29:29.501180+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
-        "score": 2.5,
+        "value": 4,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -218,31 +218,10 @@
     ]
   },
   "nvd": {
-    "total": 353,
-    "critical_count": 7,
-    "high_count": 51,
+    "total": 347,
+    "critical_count": 4,
+    "high_count": 47,
     "cves": [
-      {
-        "cve_id": "CVE-2026-9701",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Eventer plugin for WordPress is vulnerable to an insecure password reset mechanism in all versions up to, and including, 4.4.2. The plugin stores a plaintext copy of the password reset key in the ",
-        "published": "2026-07-08T05:16:28.977"
-      },
-      {
-        "cve_id": "CVE-2026-12153",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The WP Learn Manager plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 1.1.8. This is due to the plugin not properly verifying that a user is authorized ",
-        "published": "2026-07-08T06:16:22.157"
-      },
-      {
-        "cve_id": "CVE-2026-9695",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An Improper Authentication vulnerability affecting DELMIA Apriso from Release 2020 through Release 2026 could allow an attacker to gain privileged access to the server.",
-        "published": "2026-07-08T07:16:46.870"
-      },
       {
         "cve_id": "CVE-2026-8307",
         "severity": "CRITICAL",
@@ -251,11 +230,11 @@
         "published": "2026-07-08T13:16:57.903"
       },
       {
-        "cve_id": "CVE-2026-14487",
+        "cve_id": "CVE-2026-58480",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The Simple Coherent Form plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the removeUploadDir function in all versions up to, and including, 2.",
-        "published": "2026-07-08T05:16:26.980"
+        "base_score": 9.8,
+        "description": "Blocksy Companion Pro plugin for WordPress before 2.1.47 contains an unauthenticated arbitrary file upload vulnerability that allows attackers to upload executable files by bypassing extension validat",
+        "published": "2026-07-08T14:17:19.977"
       },
       {
         "cve_id": "CVE-2026-41042",
@@ -272,39 +251,18 @@
         "published": "2026-07-08T14:17:06.520"
       },
       {
-        "cve_id": "CVE-2026-14158",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Widget Logic Visual plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.52 via the widget_logic_visual_check_visibility function. This is due to mis",
-        "published": "2026-07-08T05:16:26.463"
-      },
-      {
-        "cve_id": "CVE-2026-14482",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The \u591a\u8bf4\u793e\u4f1a\u5316\u8bc4\u8bba\u6846 plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 1.2. The vulnerability exists due to a missing capability and nonce check on a directly we",
-        "published": "2026-07-08T05:16:26.840"
-      },
-      {
-        "cve_id": "CVE-2026-14489",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The WHMCS Bridge plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the connect() function in all versions up to, and including, 6.9. This makes it pos",
-        "published": "2026-07-08T06:16:22.307"
-      },
-      {
-        "cve_id": "CVE-2026-14495",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The DoLogin Security plugin for WordPress is vulnerable to Authentication Bypass via Insufficient Randomness in all versions up to, and including, 4.3. The vulnerability exists because `dologin\\s::rra",
-        "published": "2026-07-08T06:16:22.443"
-      },
-      {
         "cve_id": "CVE-2026-56086",
         "severity": "HIGH",
         "base_score": 8.8,
         "description": "Dell PowerProtect Data Domain, versions 7.7.1.0 through 8.6, LTS2026 release version 8.6.1.0 through 8.6.1.10, LTS2025 release version 8.3.1.0 through 8.3.1.30, LTS2024 release versions 7.13.1.0 throu",
         "published": "2026-07-08T14:17:14.980"
+      },
+      {
+        "cve_id": "CVE-2026-59257",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "n8n before 1.123.61, 2.x before 2.27.4, and 2.28.x before 2.28.1 contains a SQL injection vulnerability in the legacy MySQL v1 node's executeQuery operation. The operation substitutes evaluated {{ ...",
+        "published": "2026-07-08T14:17:20.807"
       },
       {
         "cve_id": "CVE-2026-55999",
@@ -342,13 +300,6 @@
         "published": "2026-07-08T09:16:31.817"
       },
       {
-        "cve_id": "CVE-2026-12378",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Appointment Booking Calendar Plugin and Scheduling Plugin  WordPress plugin through 1.1.28 does not validate data before passing it to a PHP deserialization function, allowing unauthenticated atta",
-        "published": "2026-07-08T07:16:46.550"
-      },
-      {
         "cve_id": "CVE-2026-3688",
         "severity": "HIGH",
         "base_score": 8.1,
@@ -361,6 +312,55 @@
         "base_score": 8.1,
         "description": "Capgo before 12.128.2 contains a broken access control vulnerability in the organization management API where a scoped API key (limited_to_orgs) inherits its owner-user's permissions, allowing destruc",
         "published": "2026-07-08T14:17:15.543"
+      },
+      {
+        "cve_id": "CVE-2026-11903",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Progress MOVEit Transfer (Ad Hoc module).\n\nThis issue affects MOVEit Transfer: from 2026.0.0 befor",
+        "published": "2026-07-08T15:16:25.470"
+      },
+      {
+        "cve_id": "CVE-2026-13126",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "The embedded JavaScript in the PDF deleted the pages, making the object invalid. The application attempted to perform a write operation on the invalid pop-up annotations, resulting in the program cras",
+        "published": "2026-07-08T09:16:29.307"
+      },
+      {
+        "cve_id": "CVE-2026-13127",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "The application opens the PDF file. JavaScript then rewrites the document to modify the page structure, resulting in the invalidation of the page objects. However, the thumbnails still use the invalid",
+        "published": "2026-07-08T09:16:29.440"
+      },
+      {
+        "cve_id": "CVE-2026-13128",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Embedding JavaScript within a PDF file will cause the page to be deleted. Subsequent scripts will continue to access the relevant properties of the document view, eventually leading to the crash of th",
+        "published": "2026-07-08T09:16:29.557"
+      },
+      {
+        "cve_id": "CVE-2026-13129",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "When the application opens a PDF file, JavaScript uses the damaged field tree to trigger field traversal, resulting in the program holding an invalid form object when accessing the field property path",
+        "published": "2026-07-08T09:16:29.673"
+      },
+      {
+        "cve_id": "CVE-2026-57237",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "When the application opens a PDF and JavaScript modifies the properties of form fields, it causes the state of the underlying objects referenced by the program to become invalid. Eventually, it reads ",
+        "published": "2026-07-08T09:16:31.577"
+      },
+      {
+        "cve_id": "CVE-2026-57238",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "After the application opened the PDF, JavaScript deleted the form field object. Subsequently, it attempted to access the invalid object, which caused the application to crash.",
+        "published": "2026-07-08T09:16:31.693"
       }
     ]
   },
