@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-10T10:44:12.114255+00:00",
+  "generated_at": "2026-07-10T14:00:03.060196+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
-        "score": 2.0,
+        "value": 5,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -218,10 +218,24 @@
     ]
   },
   "nvd": {
-    "total": 321,
-    "critical_count": 2,
-    "high_count": 25,
+    "total": 306,
+    "critical_count": 5,
+    "high_count": 27,
     "cves": [
+      {
+        "cve_id": "CVE-2026-59726",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Ruflo is an agent meta-harness for Claude Code and Codex. Prior to 3.16.3, ruflo's default docker-compose deployment exposed the MCP bridge POST /mcp and POST /mcp/:group endpoints without authenticat",
+        "published": "2026-07-09T18:16:57.337"
+      },
+      {
+        "cve_id": "CVE-2026-59827",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Metabase is an open-source business intelligence and embedded analytics tool. Prior to 1.58.15, 1.59.12, 1.60.6.3, and 1.61.1.4, Metabase instances with an H2 database connection, including the defaul",
+        "published": "2026-07-09T18:16:57.893"
+      },
       {
         "cve_id": "CVE-2026-12116",
         "severity": "CRITICAL",
@@ -237,11 +251,25 @@
         "published": "2026-07-09T14:16:28.263"
       },
       {
-        "cve_id": "CVE-2026-4275",
+        "cve_id": "CVE-2026-59826",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Metabase is an open-source business intelligence and embedded analytics tool. From 1.55.0 until 1.58.15.1, 1.59.12, 1.60.6.3, and 1.61.2, Metabase did not validate unsafe H2 connection properties on o",
+        "published": "2026-07-09T18:16:57.757"
+      },
+      {
+        "cve_id": "CVE-2026-58378",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The Divi Torque Lite \u2013 Divi Theme, Divi Builder & Extra Theme plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 4.2.3. This is due to the use of '_",
-        "published": "2026-07-09T11:16:39.630"
+        "description": "Allwinner H616 TV Box TV98 has ADB enabled and exposed to the network on production. An attacker could request for ADB authorization and gain root level privileges if the victim allows access.",
+        "published": "2026-07-09T18:16:54.847"
+      },
+      {
+        "cve_id": "CVE-2026-59734",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Coolify is an open-source and self-hostable tool for managing servers, applications, and databases. Prior to 4.0.0-beta.469, Coolify's app/Jobs/ApplicationDeploymentJob.php generate_healthcheck_comman",
+        "published": "2026-07-09T18:16:57.473"
       },
       {
         "cve_id": "CVE-2026-4256",
@@ -272,11 +300,11 @@
         "published": "2026-07-09T17:17:02.467"
       },
       {
-        "cve_id": "CVE-2026-59692",
+        "cve_id": "CVE-2026-59221",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A stack buffer overflow vulnerability was found in GStreamer's DTLS plugin. During a DTLS handshake, the peer certificate Subject Distinguished Name is printed into a fixed-size 2048-byte stack buffer",
-        "published": "2026-07-09T11:16:41.783"
+        "base_score": 7.7,
+        "description": "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI platform. From 0.9.6 before 0.10.0, _sanitize_proxy_path in backend/open_webui/routers/terminals.py decoded proxy paths only",
+        "published": "2026-07-09T18:16:55.613"
       },
       {
         "cve_id": "CVE-2026-60108",
@@ -333,34 +361,6 @@
         "base_score": 7.5,
         "description": "A stack-based buffer overflow vulnerability in the RTSP service of Tenda CP3 V3.0 (firmware V31.1.9.91) allows an unauthenticated remote attacker to cause a denial of service via a crafted PLAY reques",
         "published": "2026-07-09T17:17:00.970"
-      },
-      {
-        "cve_id": "CVE-2026-51605",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A stack-based buffer overflow vulnerability in the RTSP service of Tenda CP3 V3.0 (firmware V31.1.9.991) allows an unauthenticated remote attacker to cause a denial of service via a crafted TEARDOWN r",
-        "published": "2026-07-09T17:17:01.070"
-      },
-      {
-        "cve_id": "CVE-2026-51606",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "An improper input handling vulnerability in the RTSP service of Tenda CP3 V3.0 (firmware V31.1.9.91) causes the device to abruptly terminate the TCP connection with a RST packet when a request contain",
-        "published": "2026-07-09T17:17:01.173"
-      },
-      {
-        "cve_id": "CVE-2026-15190",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was detected in SourceCodester Simple and Nice Shopping Cart Script 1.0. This affects an unknown part of the file /login.php. Performing a manipulation of the argument Username results",
-        "published": "2026-07-09T17:16:57.437"
-      },
-      {
-        "cve_id": "CVE-2026-59214",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI platform. Prior to 0.10.0, Open WebUI runs client-side Python with Pyodide in a same-origin web worker, allowing stored chat",
-        "published": "2026-07-09T17:17:02.177"
       }
     ]
   },
