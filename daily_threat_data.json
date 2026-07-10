@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T14:00:03.060196+00:00",
+  "generated_at": "2026-07-10T17:40:31.557517+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,7 +7,7 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 18,
+        "value": 20,
         "score": 3.0,
         "max": 3
       },
@@ -32,9 +32,29 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1635,
-    "recent_30d_count": 18,
+    "total_catalog_count": 1637,
+    "recent_30d_count": 20,
     "recent": [
+      {
+        "cve_id": "CVE-2026-56291",
+        "vendor": "Balbooa",
+        "product": "Forms",
+        "name": "Balbooa Forms Unrestricted Upload of File with Dangerous Type Vulnerability",
+        "date_added": "2026-07-10",
+        "due_date": "2026-07-13",
+        "description": "Balbooa Forms contains an unrestricted upload of file with dangerous type vulnerability that allows an unauthenticated arbitrary file upload which could allow uploading of executable files leading to ",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-48939",
+        "vendor": "iCagenda",
+        "product": "iCagenda",
+        "name": "iCagenda Unrestricted Upload of File with Dangerous Type Vulnerability",
+        "date_added": "2026-07-10",
+        "due_date": "2026-07-13",
+        "description": "iCagenda contains an unrestricted upload of file with dangerous type vulnerability that allows the upload of arbitrary files in the file attachment feature, ultimately resulting in PHP code upload and",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-48908",
         "vendor": "JoomShaper",
@@ -218,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 306,
+    "total": 319,
     "critical_count": 5,
-    "high_count": 27,
+    "high_count": 26,
     "cves": [
       {
         "cve_id": "CVE-2026-59726",
@@ -237,18 +257,11 @@
         "published": "2026-07-09T18:16:57.893"
       },
       {
-        "cve_id": "CVE-2026-12116",
+        "cve_id": "CVE-2026-58123",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "A vulnerability in the Xerte Online Tools allows for RCE through the antivirus binary path in the tools server settings, which can be changed to a PHP interpreter, allowing an attacker to upload PHP d",
-        "published": "2026-07-09T14:16:26.467"
-      },
-      {
-        "cve_id": "CVE-2026-14261",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A vulnerability in the Xerte Online Tools allows for authentication bypass and remote code execution via reinstallation through the /setup/ folder, enabling attackers to reinstall the service to a rem",
-        "published": "2026-07-09T14:16:28.263"
+        "description": "Hermes WebUI before 0.51.788 contains an unauthenticated remote code execution vulnerability that allows remote attackers to execute arbitrary shell commands by accessing the embedded terminal API end",
+        "published": "2026-07-09T22:17:09.517"
       },
       {
         "cve_id": "CVE-2026-59826",
@@ -256,6 +269,13 @@
         "base_score": 9.1,
         "description": "Metabase is an open-source business intelligence and embedded analytics tool. From 1.55.0 until 1.58.15.1, 1.59.12, 1.60.6.3, and 1.61.2, Metabase did not validate unsafe H2 connection properties on o",
         "published": "2026-07-09T18:16:57.757"
+      },
+      {
+        "cve_id": "CVE-2026-58122",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Hermes WebUI before 0.51.307 contains an authentication bypass vulnerability that allows unauthenticated remote attackers to circumvent local-origin IP restrictions on onboarding endpoints by supplyin",
+        "published": "2026-07-09T22:17:09.363"
       },
       {
         "cve_id": "CVE-2026-58378",
@@ -272,32 +292,60 @@
         "published": "2026-07-09T18:16:57.473"
       },
       {
-        "cve_id": "CVE-2026-4256",
+        "cve_id": "CVE-2026-13492",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The UsersWP plugin for WordPress is vulnerable to Arbitrary File Deletion in versions up to, and including, 1.2.65. This is due to insufficient validation of file-field values in the UsersWP_Validatio",
+        "published": "2026-07-09T19:17:03.883"
+      },
+      {
+        "cve_id": "CVE-2026-59148",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Mockoon provides way to design and run mock APIs. Prior to 9.7.0, Mockoon's admin API in commons-server/src/libs/server/admin-api.ts is mounted on the same Express listener as user-defined mock routes",
+        "published": "2026-07-09T19:17:07.067"
+      },
+      {
+        "cve_id": "CVE-2026-55207",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Pimcore is an Open Source Data & Experience Management Platform. Prior to 2025.4.6 and 2026.1.6, an unauthenticated attacker who knows a valid admin username can take over any Pimcore admin account by",
+        "published": "2026-07-09T21:16:55.890"
+      },
+      {
+        "cve_id": "CVE-2026-55604",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "DeepSeek MCP Server is an MCP server for DeepSeek V4. Starting in version 1.4.2 and prior to version 1.7.0, the process-global `SessionStore` accepts caller-supplied `session_id` values without bindin",
+        "published": "2026-07-09T22:17:06.247"
+      },
+      {
+        "cve_id": "CVE-2026-44787",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "Improper neutralization of special elements used in an LDAP query ('LDAP injection') vulnerability in PEAKUP Technology Inc. PassGate allows LDAP Injection.\n\nThis issue affects PassGate: through 30042",
-        "published": "2026-07-09T14:16:32.640"
+        "description": "Discourse is an open-source discussion platform. Prior to 2026.6.0, 2026.5.1, 2026.4.2, and 2026.1.5, the signup flow could allow newly registered users to set primary_group_id and gain whisper-group ",
+        "published": "2026-07-09T22:17:04.607"
       },
       {
-        "cve_id": "CVE-2026-59224",
+        "cve_id": "CVE-2026-51923",
         "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI platform. Prior to 0.10.0, backend/open_webui/routers/terminals.py built the ws_terminal upstream URL from an unencoded sess",
-        "published": "2026-07-09T17:17:03.770"
+        "base_score": 8.1,
+        "description": "An Insecure Direct Object Reference (IDOR) vulnerability exists in docuForm GmbH Client v.11.11c allowing a remote attacker to execute arbitrary code via the user settings component, and modify or ret",
+        "published": "2026-07-09T21:16:55.480"
       },
       {
-        "cve_id": "CVE-2026-58459",
+        "cve_id": "CVE-2026-51924",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "gpsd through release-3.27.5, fixed at commit 4c06658, contains a command injection vulnerability in gpsprof that allows attackers who control the GPS device subtype value to execute arbitrary shell co",
-        "published": "2026-07-09T17:17:01.493"
+        "base_score": 8.1,
+        "description": "An issue in docuForm GmbH Client v.11.11c allows a remote attacker to execute arbitrary code via the file upload and report.php component",
+        "published": "2026-07-09T21:16:55.590"
       },
       {
-        "cve_id": "CVE-2026-59216",
+        "cve_id": "CVE-2026-51925",
         "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI platform. Prior to 0.10.0, get_event_call delivered execute:python and execute:tool Socket.IO events to a client-supplied se",
-        "published": "2026-07-09T17:17:02.467"
+        "base_score": 8.1,
+        "description": "A Local File Inclusion (LFI) vulnerability exists in docuForm GmbH Client v.11.11c that allows a remote attacker to execute arbitrary code via the dfm-menu_report.php component. Attackers can exploit ",
+        "published": "2026-07-09T21:16:55.690"
       },
       {
         "cve_id": "CVE-2026-59221",
@@ -307,60 +355,32 @@
         "published": "2026-07-09T18:16:55.613"
       },
       {
-        "cve_id": "CVE-2026-60108",
+        "cve_id": "CVE-2026-55208",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Zeek before 8.0.9 contains an uncontrolled memory consumption vulnerability in the FTP analyzer that allows unauthenticated remote attackers to cause process termination by sending a crafted FTP contr",
-        "published": "2026-07-09T15:16:41.627"
+        "base_score": 7.7,
+        "description": "Pimcore Studio Backend Bundle is the backend bundle for Pimcore Studio. Prior to 2025.4.6 and 2026.1.6, an authenticated user can extract the admin password hash and other database content through tim",
+        "published": "2026-07-09T21:16:56.020"
       },
       {
-        "cve_id": "CVE-2026-60109",
+        "cve_id": "CVE-2026-55420",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Zeek before 8.0.9 contains a null pointer dereference vulnerability in its Kerberos protocol analyzer that allows unauthenticated remote attackers to crash the sensor by sending a crafted KRB_ERROR me",
-        "published": "2026-07-09T15:16:41.757"
+        "description": "Discourse is an open-source discussion platform. Prior to 2026.6.0, 2026.5.1, 2026.4.2, and 2026.1.5, under certain non-default configurations, processing of PDF uploads could be exploited to obtain R",
+        "published": "2026-07-09T18:16:54.440"
       },
       {
-        "cve_id": "CVE-2026-11404",
+        "cve_id": "CVE-2026-59720",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Cesanta Mongoose before 7.22 contains an out-of-bounds read in the built-in TLS server function mg_tls_server_recv_hello(), which uses an attacker-controlled session_id_len byte from a TLS ClientHello",
-        "published": "2026-07-09T16:16:34.640"
+        "description": "Hoppscotch is an open source API development ecosystem. Prior to 2026.6.0, mock server creation in mock-server.service.ts does not persist the isPublic input field while schema.prisma defaults isPubli",
+        "published": "2026-07-09T18:16:57.063"
       },
       {
-        "cve_id": "CVE-2026-13462",
+        "cve_id": "CVE-2025-63579",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "PayRange Android app, version 7.0.7 and below, contains an SSL bypass vulnerability that allows invalid certificates to be accepted in application webviews. A remote and unauthenticated attacker can s",
-        "published": "2026-07-09T17:16:57.090"
-      },
-      {
-        "cve_id": "CVE-2026-51600",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Tenda CP3 V3.0 firmware V31.1.9.91 does not validate the Content-Length header field in RTSP requests (including DESCRIBE, SETUP, and PLAY methods). When a request carrying a Content-Length header is ",
-        "published": "2026-07-09T17:16:59.693"
-      },
-      {
-        "cve_id": "CVE-2026-51602",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A stack-based buffer overflow vulnerability in the RTSP service of Tenda CP3 V3.0 (firmware V31.1.9.91) allows an unauthenticated remote attacker to cause a denial of service via a crafted SETUP reque",
-        "published": "2026-07-09T17:16:59.930"
-      },
-      {
-        "cve_id": "CVE-2026-51603",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A stack-based buffer overflow vulnerability in the RTSP service of Tenda CP3 V3.0 (firmware V31.1.9.91) allows an unauthenticated remote attacker to cause a denial of service via a crafted second SETU",
-        "published": "2026-07-09T17:17:00.867"
-      },
-      {
-        "cve_id": "CVE-2026-51604",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A stack-based buffer overflow vulnerability in the RTSP service of Tenda CP3 V3.0 (firmware V31.1.9.91) allows an unauthenticated remote attacker to cause a denial of service via a crafted PLAY reques",
-        "published": "2026-07-09T17:17:00.970"
+        "description": "Unauthorized use of Kyocera printers, allows all information stored in the Kyocera address book to be exported. The security measure that encrypts incoming data ian be bypassed with this vulnerability",
+        "published": "2026-07-09T19:16:57.757"
       }
     ]
   },
