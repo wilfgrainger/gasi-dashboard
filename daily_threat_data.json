@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T20:59:22.483880+00:00",
+  "generated_at": "2026-07-11T01:47:14.640747+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 20,
+        "value": 19,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
+        "value": 8,
         "score": 2.5,
         "max": 3
       },
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1637,
-    "recent_30d_count": 20,
+    "recent_30d_count": 19,
     "recent": [
       {
         "cve_id": "CVE-2026-56291",
@@ -224,38 +224,14 @@
         "due_date": "2026-06-15",
         "description": "Oracle PeopleSoft Enterprise PeopleTools contains a missing authentication for critical function vulnerability which could allow an unauthenticated attacker to obtain takeover of PeopleSoft Enterprise",
         "ransomware_use": "Known"
-      },
-      {
-        "cve_id": "CVE-2026-10520",
-        "vendor": "Ivanti",
-        "product": "Sentry",
-        "name": "Ivanti Sentry OS Command Injection Vulnerability",
-        "date_added": "2026-06-11",
-        "due_date": "2026-06-14",
-        "description": "Ivanti Sentry (formerly known as MobileIron Sentry) contains an OS command injection vulnerability which could allow a remote unauthenticated user to achieve root-level remote code execution. This vul",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 329,
-    "critical_count": 5,
-    "high_count": 32,
+    "total": 351,
+    "critical_count": 8,
+    "high_count": 18,
     "cves": [
-      {
-        "cve_id": "CVE-2026-54769",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Langroid is a framework for building large-language-model-powered applications. Versions prior to 0.65.2 are vulnerable to a critical Sandbox Escape leading to Remote Code Execution (RCE) in its `Tabl",
-        "published": "2026-07-10T00:16:33.603"
-      },
-      {
-        "cve_id": "CVE-2026-58123",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Hermes WebUI before 0.51.788 contains an unauthenticated remote code execution vulnerability that allows remote attackers to execute arbitrary shell commands by accessing the embedded terminal API end",
-        "published": "2026-07-09T22:17:09.517"
-      },
       {
         "cve_id": "CVE-2026-14894",
         "severity": "CRITICAL",
@@ -271,25 +247,46 @@
         "published": "2026-07-10T05:16:30.820"
       },
       {
-        "cve_id": "CVE-2026-58122",
+        "cve_id": "CVE-2026-28564",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Insufficient Session Expiration, Authentication Bypass by Capture-replay vulnerability in Apache IoTDB.\nREST Basic Authentication Accepts Stale Cached Credentials\n\n\nThis issue affects Apache IoTDB: fr",
+        "published": "2026-07-10T08:16:21.897"
+      },
+      {
+        "cve_id": "CVE-2026-40008",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection') vulnerability in Apache IoTDB.\nThe pipe processor reads a fully\nqualified Java class name and\ninstantiates it using C",
+        "published": "2026-07-10T08:16:22.397"
+      },
+      {
+        "cve_id": "CVE-2026-15378",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "A flaw was found in the `guardrails-detectors` component. This vulnerability allows a remote attacker to perform a blind Server-Side Request Forgery (SSRF) by submitting a specially crafted XML Schema",
+        "published": "2026-07-10T10:16:23.553"
+      },
+      {
+        "cve_id": "CVE-2026-15300",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Hermes WebUI before 0.51.307 contains an authentication bypass vulnerability that allows unauthenticated remote attackers to circumvent local-origin IP restrictions on onboarding endpoints by supplyin",
-        "published": "2026-07-09T22:17:09.363"
+        "description": "The GEO my WP plugin for WordPress was vulnerable to SQL Injection via the 'distance', 'lat', and 'lng' parameters in versions up to, and including, 4.5.4. The values were read from $_SERVER['QUERY_ST",
+        "published": "2026-07-10T05:16:33.393"
       },
       {
-        "cve_id": "CVE-2026-55207",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Pimcore is an Open Source Data & Experience Management Platform. Prior to 2025.4.6 and 2026.1.6, an unauthenticated attacker who knows a valid admin username can take over any Pimcore admin account by",
-        "published": "2026-07-09T21:16:55.890"
+        "cve_id": "CVE-2026-40005",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Apache IoTDB.\nAn attacker can write arbitrary files anywhere the IoTDB process has write permissions wit",
+        "published": "2026-07-10T08:16:22.043"
       },
       {
-        "cve_id": "CVE-2026-58143",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Cotonti Siena 0.9.26 and earlier contains a cross-site request forgery vulnerability that allows unauthenticated attackers to modify administrator configuration by tricking a logged-in administrator i",
-        "published": "2026-07-09T22:17:09.663"
+        "cve_id": "CVE-2026-56688",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Dell PowerFlex Manager, Version prior to 5.1.0.1, contain(s) an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. A high privileged attacker wit",
+        "published": "2026-07-10T12:17:23.453"
       },
       {
         "cve_id": "CVE-2026-15070",
@@ -299,18 +296,11 @@
         "published": "2026-07-10T04:17:47.727"
       },
       {
-        "cve_id": "CVE-2026-55604",
+        "cve_id": "CVE-2026-56690",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "DeepSeek MCP Server is an MCP server for DeepSeek V4. Starting in version 1.4.2 and prior to version 1.7.0, the process-global `SessionStore` accepts caller-supplied `session_id` values without bindin",
-        "published": "2026-07-09T22:17:06.247"
-      },
-      {
-        "cve_id": "CVE-2026-44787",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Discourse is an open-source discussion platform. Prior to 2026.6.0, 2026.5.1, 2026.4.2, and 2026.1.5, the signup flow could allow newly registered users to set primary_group_id and gain whisper-group ",
-        "published": "2026-07-09T22:17:04.607"
+        "base_score": 8.5,
+        "description": "Dell PowerFlex Manager, Version prior to 5.1.0.1, contain(s) an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability. A low privileged attacker with remot",
+        "published": "2026-07-10T12:17:23.700"
       },
       {
         "cve_id": "CVE-2026-54423",
@@ -320,67 +310,67 @@
         "published": "2026-07-10T04:17:52.230"
       },
       {
-        "cve_id": "CVE-2025-45422",
+        "cve_id": "CVE-2026-15293",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Incorrect access control in Proximus b-box v8c.725A allows authenticated attackers to bypass normal restrictions and make arbitrary changes to port forwarding rules.",
-        "published": "2026-07-09T21:16:54.167"
+        "base_score": 8.0,
+        "description": "The WP Business Intelligence Lite plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 3.2.0. This is due to the plugin not properly verifying that a user i",
+        "published": "2026-07-10T05:16:32.700"
       },
       {
-        "cve_id": "CVE-2026-51923",
+        "cve_id": "CVE-2026-56689",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "An Insecure Direct Object Reference (IDOR) vulnerability exists in docuForm GmbH Client v.11.11c allowing a remote attacker to execute arbitrary code via the user settings component, and modify or ret",
-        "published": "2026-07-09T21:16:55.480"
+        "base_score": 7.7,
+        "description": "Dell PowerFlex Manager, Version prior to 5.1.0.1, contain(s) an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability. A low privileged attacker with remot",
+        "published": "2026-07-10T12:17:23.577"
       },
       {
-        "cve_id": "CVE-2026-51924",
+        "cve_id": "CVE-2026-15288",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "An issue in docuForm GmbH Client v.11.11c allows a remote attacker to execute arbitrary code via the file upload and report.php component",
-        "published": "2026-07-09T21:16:55.590"
+        "base_score": 7.5,
+        "description": "The SureForms \u2013 Drag and Drop Form Builder for WordPress plugin for WordPress is vulnerable to Improper Input Validation in all versions up to, and including, 2.2.1. This is due to the plugin acceptin",
+        "published": "2026-07-10T05:16:31.923"
       },
       {
-        "cve_id": "CVE-2026-51925",
+        "cve_id": "CVE-2026-15290",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "A Local File Inclusion (LFI) vulnerability exists in docuForm GmbH Client v.11.11c that allows a remote attacker to execute arbitrary code via the dfm-menu_report.php component. Attackers can exploit ",
-        "published": "2026-07-09T21:16:55.690"
+        "base_score": 7.5,
+        "description": "The Ultimate Member \u2013 User Profile, Registration, Login, Member Directory, Content Restriction & Membership Plugin plugin for WordPress is vulnerable to blind SQL Injection via the search parameter in",
+        "published": "2026-07-10T05:16:32.287"
       },
       {
-        "cve_id": "CVE-2026-12595",
+        "cve_id": "CVE-2026-15291",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The LoginPress Pro plugin for WordPress is vulnerable to Authentication Bypass via Unverified OAuth Email in all versions up to and including 6.2.3. The vulnerability exists in the loginpress_on_disco",
-        "published": "2026-07-10T00:16:32.120"
+        "base_score": 7.5,
+        "description": "The Chat Help \u2013 Click to Chat Button & Form plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.1.3 via the REST API endpoints /wp-json/chat-he",
+        "published": "2026-07-10T05:16:32.430"
       },
       {
-        "cve_id": "CVE-2026-12597",
+        "cve_id": "CVE-2026-12685",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The LoginPress Pro plugin for WordPress is vulnerable to Authentication Bypass via the GitHub OAuth callback in versions up to, and including, 6.2.3. The vulnerability exists in the loginpress_on_gith",
-        "published": "2026-07-10T00:16:32.603"
+        "base_score": 7.5,
+        "description": "The EscortWP escortwp WordPress theme through 3.6.2 was distributed with a vendor-authored, obfuscated backdoor that lets an unauthenticated attacker who supplies a hard-coded, per-build key permanent",
+        "published": "2026-07-10T07:16:28.313"
       },
       {
-        "cve_id": "CVE-2026-12598",
+        "cve_id": "CVE-2026-13347",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The LoginPress Pro plugin for WordPress is vulnerable to authentication bypass in versions up to and including 6.2.3 via the Spotify Social Login addon. This is due to the loginpress_on_spotify_login(",
-        "published": "2026-07-10T00:16:32.727"
+        "base_score": 7.5,
+        "description": "The Hide My WP Lite plugin for WordPress is vulnerable to Arbitrary File Read in versions up to and including 1.3 via the he_wrapper_js and he_wrapper_css query parameters processed by the elementor_a",
+        "published": "2026-07-10T08:16:20.857"
       },
       {
-        "cve_id": "CVE-2026-54771",
+        "cve_id": "CVE-2026-40006",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Langroid is a framework for building large-language-model-powered applications. Prior to version 0.65.3, a Langroid application exposing a chat interface to untrusted users may allow direct tool invoc",
-        "published": "2026-07-10T00:16:33.737"
+        "base_score": 7.5,
+        "description": "Memory Allocation with Excessive Size Value, Allocation of Resources Without Limits or Throttling, Missing Authentication for Critical Function vulnerability in Apache IoTDB.\nWhen pipe_air_gap_receive",
+        "published": "2026-07-10T08:16:22.163"
       },
       {
-        "cve_id": "CVE-2026-59856",
+        "cve_id": "CVE-2026-40007",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Vim is an open source, command line text editor. Prior to 9.2.0736, the PHP omni-completion script in runtime/autoload/phpcomplete.vim interpolates a class or trait name, taken from the contents of th",
-        "published": "2026-07-09T23:17:06.420"
+        "base_score": 7.5,
+        "description": "Uncontrolled Recursion, Uncontrolled Resource Consumption vulnerability in Apache IoTDB.\nWhen pipe_air_gap_receiver_enabled=true, the IoTDB AirGap receiver's\nreadLength method calls itself recursively",
+        "published": "2026-07-10T08:16:22.280"
       }
     ]
   },
