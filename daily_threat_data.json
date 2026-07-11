@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-11T16:43:25.250268+00:00",
+  "generated_at": "2026-07-11T20:38:08.972318+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
-        "score": 2.5,
+        "value": 4,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -228,30 +228,16 @@
     ]
   },
   "nvd": {
-    "total": 269,
-    "critical_count": 6,
-    "high_count": 33,
+    "total": 182,
+    "critical_count": 4,
+    "high_count": 11,
     "cves": [
       {
-        "cve_id": "CVE-2026-2397",
+        "cve_id": "CVE-2026-14480",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Adam Retail Automation Ltd. MobilMen 20T allows SQL Injection.\n\nThis issue affects MobilMen 20T: f",
-        "published": "2026-07-10T18:16:20.613"
-      },
-      {
-        "cve_id": "CVE-2026-5801",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Semtek Informatics Software Consulting Trade Ltd. Co. SEM-PMP allows Command Line Execution throug",
-        "published": "2026-07-10T19:17:27.323"
-      },
-      {
-        "cve_id": "CVE-2026-61459",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "MCP Server Kubernetes before 3.9.0 contains an argument injection vulnerability in structured tools (kubectl_get, kubectl_describe, kubectl_delete) that allows attackers to bypass the assertNoDangerou",
-        "published": "2026-07-10T19:17:27.450"
+        "base_score": 9.9,
+        "description": "OpenPLC Runtime v3 contains an authenticated arbitrary file write \nvulnerability in the legacy web UI program\u2011upload workflow. The \napplication stores an attacker\u2011supplied filename (prog_file) directl",
+        "published": "2026-07-10T23:16:47.110"
       },
       {
         "cve_id": "CVE-2026-12761",
@@ -261,116 +247,130 @@
         "published": "2026-07-10T21:16:53.160"
       },
       {
-        "cve_id": "CVE-2026-59151",
+        "cve_id": "CVE-2026-57807",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Prowler is a cloud security platform. Prior to 5.30.3, Prowler's SAML authentication flow trusted the email domain asserted in a SAMLResponse when deciding which tenant should receive the final token,",
-        "published": "2026-07-10T19:17:26.780"
+        "base_score": 9.8,
+        "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in miniOrange Security Software Pvt Ltd. OAuth Single Sign On - SSO (OAuth Client) allows Password Recovery Exploitation.\n\nThis i",
+        "published": "2026-07-10T21:16:59.947"
       },
       {
-        "cve_id": "CVE-2026-51119",
+        "cve_id": "CVE-2026-55879",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "An issue in Invixium IXM WEB v.2.3.85.25 allows an attacker to escalate privileges via the /SystemUsers/CreateAppUser components",
-        "published": "2026-07-10T17:16:57.587"
+        "base_score": 9.3,
+        "description": "OpenReplay is a self-hosted session replay suite. From 1.24.0 before 1.25.0, the OpenReplay tracking SDK accepts custom event names and captured page URLs from any visitor using a public project key, ",
+        "published": "2026-07-10T21:16:57.367"
       },
       {
-        "cve_id": "CVE-2026-2398",
+        "cve_id": "CVE-2026-44795",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Authorization bypass through User-Controlled key vulnerability in Adam Retail Automation Ltd. MobilMen 20T allows Privilege Escalation.\n\nThis issue affects MobilMen 20T: from v3 through 10072026.\u00a0NOTE",
-        "published": "2026-07-10T17:16:56.320"
+        "description": "Spinnaker is an open source, multi-cloud continuous delivery platform. Prior to 2026.1.0, 2026.0.3, 2025.4.4, and 2025.3.3, unsafe YAML processing bypasses safe deserialization when using CloudFormati",
+        "published": "2026-07-10T22:16:41.717"
       },
       {
-        "cve_id": "CVE-2025-30007",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "HestiaCP before 1.9.5 contains an authenticated OS command injection vulnerability that allows low-privilege authenticated users to execute arbitrary commands as root by injecting a single-quote chara",
-        "published": "2026-07-10T19:17:18.130"
-      },
-      {
-        "cve_id": "CVE-2026-61460",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Krayin CRM through 2.2.3 contains an insecure direct object reference vulnerability in LeadController, PersonController, OrganizationController, QuoteController, and ActivityController that allows aut",
-        "published": "2026-07-10T19:17:27.587"
-      },
-      {
-        "cve_id": "CVE-2026-61461",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Dify before 1.16.0-rc1 contains a SQL injection vulnerability in the MyScale vector store backend that allows attackers to execute arbitrary SQL by supplying unsanitized search parameters to the searc",
-        "published": "2026-07-10T19:17:27.713"
-      },
-      {
-        "cve_id": "CVE-2026-6212",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Authorization bypass through User-Controlled key vulnerability in Teracity Software Technologies Inc. TeraMIS allows Privilege Abuse.\n\nThis issue affects TeraMIS: from V03.26.01.14 through 30.04.2026.",
-        "published": "2026-07-10T19:17:27.840"
-      },
-      {
-        "cve_id": "CVE-2026-55638",
+        "cve_id": "CVE-2026-52747",
         "severity": "HIGH",
         "base_score": 8.6,
-        "description": "9Router is an AI router & token saver. Prior to 0.5.2, 9router protects /v1, /v1beta, /api/v1, and /api/v1beta in src/dashboardGuard.js but omits /codex before next.config.mjs rewrites /codex/* to /ap",
-        "published": "2026-07-10T17:16:59.183"
+        "description": "ModSecurity is an open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx. Prior to 3.0.16, the multipart/form-data request body parser in libmodsecurity silently r",
+        "published": "2026-07-10T22:16:42.697"
       },
       {
-        "cve_id": "CVE-2026-54329",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Snipe-IT is an IT asset/license management system. Prior to 8.6.2, the Accessories API create path mass-assigns request parameters to the Accessory model while company_id is mass assignable, allowing ",
-        "published": "2026-07-10T19:17:24.440"
-      },
-      {
-        "cve_id": "CVE-2026-55789",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Logto is the modern, open-source auth infrastructure for SaaS and AI apps. Prior to 1.41.0, Logto's self-hosted SAML application IdP built the signed SAML response and assertion by string-substituting",
-        "published": "2026-07-10T20:16:47.933"
-      },
-      {
-        "cve_id": "CVE-2026-56675",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "9Router is an AI router & token saver. Prior to 0.5.2, 9router treats loopback requests as trusted and allows /v1/* access without an API key, so a same-host reverse proxy that forwards public traffic",
-        "published": "2026-07-10T17:17:01.070"
-      },
-      {
-        "cve_id": "CVE-2026-57850",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "RustDesk before 1.4.9 does not enforce a session's authorized connection scope on the server side, so a peer granted a limited session type (FileTransfer, PortForward, ViewCamera, or Terminal) can sen",
-        "published": "2026-07-10T20:16:48.663"
-      },
-      {
-        "cve_id": "CVE-2026-53657",
+        "cve_id": "CVE-2026-58499",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "Lima launches Linux virtual machines, typically on macOS, for running containerd. Prior to 2.1.3, on an instance of Lima running with the qemu driver, an arbitrary user in the VM could access /run/lim",
-        "published": "2026-07-10T17:16:57.987"
+        "description": "EverOS is a memory runtime for agents. Prior to 1.0.1, EverOS is vulnerable to path traversal in the POST /api/v1/memory/add ingestion endpoint because the per-message sender_id field was not validate",
+        "published": "2026-07-10T21:17:00.197"
       },
       {
-        "cve_id": "CVE-2026-55641",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "9Router is an AI router & token saver. Prior to 0.5.2, 9router determines whether a /v1 LLM proxy request is local by reading the client-controlled Host header, allowing a remote unauthenticated attac",
-        "published": "2026-07-10T17:16:59.330"
-      },
-      {
-        "cve_id": "CVE-2026-56668",
+        "cve_id": "CVE-2026-49213",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "ZITADEL is an open source identity management platform. Prior to 4.15.3, ZITADEL's OAuth2 Token Exchange endpoint for urn:ietf:params:oauth:grant-type:token-exchange does not verify that the subject t",
-        "published": "2026-07-10T18:16:24.413"
+        "description": "TypeBot is a chatbot builder tool. Prior to 3.17.2, Typebot's shared SSRF validator in packages/lib/src/ssrf/validateHttpReqUrl.ts can be bypassed with the IPv6 unspecified address :: because validate",
+        "published": "2026-07-10T22:16:42.270"
       },
       {
-        "cve_id": "CVE-2026-55377",
+        "cve_id": "CVE-2026-55659",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Logto is the modern, open-source auth infrastructure for SaaS and AI apps. Prior to 1.41.0, Logto's Account Center step-up check accepted any active verification record that belonged to the current us",
-        "published": "2026-07-10T20:16:46.460"
+        "base_score": 7.7,
+        "description": "Grist is spreadsheet software using Python as its formula language. Prior to 1.7.15, several server-rendered Grist pages embedded user-controlled values into the page and into inline scripts without f",
+        "published": "2026-07-10T21:16:56.577"
+      },
+      {
+        "cve_id": "CVE-2026-55405",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "LangChain4j is a Java library for building LLM-powered applications on the JVM. Prior to  1.2.1-beta8, 1.5.1-beta11, 1.11.8-beta19, and 1.16.3-beta26, the MariaDB and pgvector embedding stores build m",
+        "published": "2026-07-10T21:16:55.977"
+      },
+      {
+        "cve_id": "CVE-2026-55213",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "h2o is an HTTP server with support for HTTP/1.x, HTTP/2 and HTTP/3. Prior to commit edd7a120bfc4af11ac0cbebce2a43cc1f93f9af1, when h2o processes a QPACK instruction sent from the peer over HTTP/3, lib",
+        "published": "2026-07-10T21:16:55.497"
+      },
+      {
+        "cve_id": "CVE-2026-55229",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Gotenberg is a Docker-powered stateless API for PDF files. Prior to 8.34.0, Gotenberg's /forms/libreoffice/convert endpoint allows a specially crafted document to cause LibreOffice to automatically re",
+        "published": "2026-07-10T21:16:55.630"
+      },
+      {
+        "cve_id": "CVE-2026-55233",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "OpenResty is a high performance web platform. From 1.29.2.1 to before 1.29.2.5, an out-of-bounds write vulnerability exists in the upstream PROXY protocol v2 implementation. When OpenResty is configur",
+        "published": "2026-07-10T21:16:55.760"
+      },
+      {
+        "cve_id": "CVE-2026-57220",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "RabbitMQ is a messaging and streaming broker. Prior to 4.2.6, the RabbitMQ stream listener does not enforce the configured stream frame-size limit while assembling frames during authentication and bef",
+        "published": "2026-07-10T21:16:59.180"
+      },
+      {
+        "cve_id": "CVE-2026-55880",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "OpenReplay is a self-hosted session replay suite. In 1.27.0 and earlier, three dashboard and note mutation functions ran their SQL without the ownership predicate that their sibling read and edit func",
+        "published": "2026-07-10T21:16:57.493"
+      },
+      {
+        "cve_id": "CVE-2026-57216",
+        "severity": "MEDIUM",
+        "base_score": 6.8,
+        "description": "RabbitMQ is a messaging and streaming broker. Prior to 3.13.15, 4.0.20, 4.1.11, and 4.2.6, AMQP 0-9-1, AMQP 1.0, and Stream Protocol authentication can allow a loopback-restricted user such as guest t",
+        "published": "2026-07-10T21:16:58.677"
+      },
+      {
+        "cve_id": "CVE-2026-57211",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "RabbitMQ is a messaging and streaming broker. Prior to 4.1.11 and 4.2.6 on Windows, the RabbitMQ management plugin static file handler rabbit_mgmt_wm_static can pass URL-encoded backslashes to erl_pri",
+        "published": "2026-07-10T21:16:58.007"
+      },
+      {
+        "cve_id": "CVE-2026-52761",
+        "severity": "MEDIUM",
+        "base_score": 5.8,
+        "description": "ModSecurity is an open source, cross platform web application firewall (WAF) engine for Apache, IIS and Nginx. From 3.0.0 through 3.0.15, the t:utf8toUnicode transformation in src/actions/transformati",
+        "published": "2026-07-10T22:16:42.833"
+      },
+      {
+        "cve_id": "CVE-2026-55187",
+        "severity": "MEDIUM",
+        "base_score": 5.8,
+        "description": "Mailpit is an email testing tool and API for developers. Prior to 1.30.2, the remediation shipped for CVE-2026-27808 is incomplete because the tools.IsInternalIP deny-list in internal/tools/net.go rel",
+        "published": "2026-07-10T22:16:43.110"
+      },
+      {
+        "cve_id": "CVE-2026-57230",
+        "severity": "MEDIUM",
+        "base_score": 5.4,
+        "description": "OpenReplay is a self-hosted session replay suite. Prior to 1.27.0, the session search and analytics API in enterprise editions with multi-tenancy enabled built ClickHouse queries by inserting user inp",
+        "published": "2026-07-10T21:16:59.450"
       }
     ]
   },
