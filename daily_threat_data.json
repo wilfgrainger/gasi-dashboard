@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-11T01:47:14.640747+00:00",
+  "generated_at": "2026-07-11T06:06:29.622519+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
-        "score": 2.5,
+        "value": 10,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -228,23 +228,16 @@
     ]
   },
   "nvd": {
-    "total": 351,
-    "critical_count": 8,
-    "high_count": 18,
+    "total": 328,
+    "critical_count": 10,
+    "high_count": 27,
     "cves": [
       {
-        "cve_id": "CVE-2026-14894",
+        "cve_id": "CVE-2026-55500",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Super Forms \u2013 Drag & Drop Form Builder plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 6.3.313 via the submit_form function. This is due to missin",
-        "published": "2026-07-10T04:17:47.587"
-      },
-      {
-        "cve_id": "CVE-2026-15282",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Instant Appointment plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the 'insapp_upload_image_as_attachment' function in all versions up to, and ",
-        "published": "2026-07-10T05:16:30.820"
+        "base_score": 9.9,
+        "description": "9Router is an AI router & token saver. Prior to 0.4.80, the /api/settings/database endpoint allows full database export (containing all credentials, API keys, OAuth tokens, and settings) and full data",
+        "published": "2026-07-10T16:16:33.357"
       },
       {
         "cve_id": "CVE-2026-28564",
@@ -261,6 +254,20 @@
         "published": "2026-07-10T08:16:22.397"
       },
       {
+        "cve_id": "CVE-2026-56765",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Vikunja before 2.2.1 contains an authorization flaw where the LinkSharing.ReadAll endpoint exposes share hashes to users with read access, enabling permission escalation to admin-level shares. The Get",
+        "published": "2026-07-10T15:16:43.727"
+      },
+      {
+        "cve_id": "CVE-2026-59792",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "In JetBrains IntelliJ IDEA before 2026.1.4, \n2026.2 code execution via path traversal in project workspace ID handling was possible",
+        "published": "2026-07-10T15:16:48.240"
+      },
+      {
         "cve_id": "CVE-2026-15378",
         "severity": "CRITICAL",
         "base_score": 9.3,
@@ -268,11 +275,11 @@
         "published": "2026-07-10T10:16:23.553"
       },
       {
-        "cve_id": "CVE-2026-15300",
+        "cve_id": "CVE-2026-15143",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The GEO my WP plugin for WordPress was vulnerable to SQL Injection via the 'distance', 'lat', and 'lng' parameters in versions up to, and including, 4.5.4. The values were read from $_SERVER['QUERY_ST",
-        "published": "2026-07-10T05:16:33.393"
+        "base_score": 9.3,
+        "description": "A flaw was found in the file_type content detector of guardrails-detectors. This vulnerability allows a remote attacker to supply an arbitrary XML Schema Definition (XSD) string, which is processed wi",
+        "published": "2026-07-10T16:16:25.680"
       },
       {
         "cve_id": "CVE-2026-40005",
@@ -289,11 +296,46 @@
         "published": "2026-07-10T12:17:23.453"
       },
       {
-        "cve_id": "CVE-2026-15070",
+        "cve_id": "CVE-2026-61444",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "PraisonAI versions before 4.6.78 contain a code injection vulnerability in deploy/api.py where the agents_file parameter is directly interpolated into an f-string without sanitization. Attackers can i",
+        "published": "2026-07-10T15:16:50.610"
+      },
+      {
+        "cve_id": "CVE-2026-54469",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The Salon Booking System \u2013 Free Version plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 10.30.32. This is due to missing or incorrect nonce valid",
-        "published": "2026-07-10T04:17:47.727"
+        "description": "Dell Unisphere for PowerMax, version(s) 10.3.0.5 and prior, contain(s) a Deserialization of Untrusted Data vulnerability. A low privileged attacker with remote access could potentially exploit this vu",
+        "published": "2026-07-10T13:16:20.427"
+      },
+      {
+        "cve_id": "CVE-2026-59793",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In JetBrains TeamCity before 2026.1.2 arbitrary file access was possible via the Perforce VCS integration",
+        "published": "2026-07-10T15:16:48.350"
+      },
+      {
+        "cve_id": "CVE-2026-61434",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "PraisonAI versions before 4.6.78 contain an allowlist bypass vulnerability in shell command execution that allows attackers to execute restricted commands via find's built-in -exec, -execdir, and -del",
+        "published": "2026-07-10T15:16:50.213"
+      },
+      {
+        "cve_id": "CVE-2026-54149",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "MaxKB is an open-source AI assistant for enterprise. Prior to 2.10.0-lts, MaxKB tool import functionality in apps/tools/serializers/tool.py and MCP referencing mode in apps/application/chat_pipeline/s",
+        "published": "2026-07-10T16:16:32.587"
+      },
+      {
+        "cve_id": "CVE-2026-56261",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Crawl4AI before 0.8.7 contains a server-side request forgery (SSRF) vulnerability in the Docker API server's /crawl/job and /llm/job endpoints, which accept webhook URLs without destination validation",
+        "published": "2026-07-10T15:16:42.017"
       },
       {
         "cve_id": "CVE-2026-56690",
@@ -303,74 +345,32 @@
         "published": "2026-07-10T12:17:23.700"
       },
       {
-        "cve_id": "CVE-2026-54423",
+        "cve_id": "CVE-2026-56305",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "Capgo before 12.128.2 contains an authentication bypass vulnerability in the password change endpoint that allows attackers to change user passwords without requiring current password confirmation. At",
+        "published": "2026-07-10T15:16:42.300"
+      },
+      {
+        "cve_id": "CVE-2026-29519",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "In OpenStack Ironic before 37.0.1, an Ironic user with the ability to deploy nodes using the IPMI management interface can maliciously use the send_raw step to send arbitrary IPMI commands to a node, ",
-        "published": "2026-07-10T04:17:52.230"
+        "description": "Lucee CFML Server versions across the 5.3.x, 6.1.x, 6.2.x, and 7.0.x release lines contain a reflected cross-site scripting vulnerability in URL path parsing that allows unauthenticated remote attacke",
+        "published": "2026-07-10T15:16:39.007"
       },
       {
-        "cve_id": "CVE-2026-15293",
+        "cve_id": "CVE-2026-22659",
         "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "The WP Business Intelligence Lite plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 3.2.0. This is due to the plugin not properly verifying that a user i",
-        "published": "2026-07-10T05:16:32.700"
+        "base_score": 8.1,
+        "description": "FlaskBB through 2.2.0, fixed in commit acc88cf, contains an authorization bypass vulnerability that allows authenticated moderators to perform unauthorized actions on topics in forums they do not cont",
+        "published": "2026-07-10T14:16:52.547"
       },
       {
-        "cve_id": "CVE-2026-56689",
+        "cve_id": "CVE-2026-38057",
         "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Dell PowerFlex Manager, Version prior to 5.1.0.1, contain(s) an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability. A low privileged attacker with remot",
-        "published": "2026-07-10T12:17:23.577"
-      },
-      {
-        "cve_id": "CVE-2026-15288",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The SureForms \u2013 Drag and Drop Form Builder for WordPress plugin for WordPress is vulnerable to Improper Input Validation in all versions up to, and including, 2.2.1. This is due to the plugin acceptin",
-        "published": "2026-07-10T05:16:31.923"
-      },
-      {
-        "cve_id": "CVE-2026-15290",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Ultimate Member \u2013 User Profile, Registration, Login, Member Directory, Content Restriction & Membership Plugin plugin for WordPress is vulnerable to blind SQL Injection via the search parameter in",
-        "published": "2026-07-10T05:16:32.287"
-      },
-      {
-        "cve_id": "CVE-2026-15291",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Chat Help \u2013 Click to Chat Button & Form plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.1.3 via the REST API endpoints /wp-json/chat-he",
-        "published": "2026-07-10T05:16:32.430"
-      },
-      {
-        "cve_id": "CVE-2026-12685",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The EscortWP escortwp WordPress theme through 3.6.2 was distributed with a vendor-authored, obfuscated backdoor that lets an unauthenticated attacker who supplies a hard-coded, per-build key permanent",
-        "published": "2026-07-10T07:16:28.313"
-      },
-      {
-        "cve_id": "CVE-2026-13347",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Hide My WP Lite plugin for WordPress is vulnerable to Arbitrary File Read in versions up to and including 1.3 via the he_wrapper_js and he_wrapper_css query parameters processed by the elementor_a",
-        "published": "2026-07-10T08:16:20.857"
-      },
-      {
-        "cve_id": "CVE-2026-40006",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Memory Allocation with Excessive Size Value, Allocation of Resources Without Limits or Throttling, Missing Authentication for Critical Function vulnerability in Apache IoTDB.\nWhen pipe_air_gap_receive",
-        "published": "2026-07-10T08:16:22.163"
-      },
-      {
-        "cve_id": "CVE-2026-40007",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Uncontrolled Recursion, Uncontrolled Resource Consumption vulnerability in Apache IoTDB.\nWhen pipe_air_gap_receiver_enabled=true, the IoTDB AirGap receiver's\nreadLength method calls itself recursively",
-        "published": "2026-07-10T08:16:22.280"
+        "base_score": 8.1,
+        "description": "The iDirect iQ200 does not validate CSRF tokens on state-changing API endpoints after authentication. The /api/reboot endpoint accepts POST requests authenticated solely by a session cookie that lacks",
+        "published": "2026-07-10T15:16:39.397"
       }
     ]
   },
