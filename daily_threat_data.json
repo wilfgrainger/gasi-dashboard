@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-12T09:42:53.525699+00:00",
+  "generated_at": "2026-07-12T12:57:08.685743+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
-        "score": 2.0,
+        "value": 5,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -218,9 +218,9 @@
     ]
   },
   "nvd": {
-    "total": 45,
-    "critical_count": 3,
-    "high_count": 15,
+    "total": 68,
+    "critical_count": 5,
+    "high_count": 27,
     "cves": [
       {
         "cve_id": "CVE-2026-61447",
@@ -242,6 +242,20 @@
         "base_score": 9.8,
         "description": "PraisonAI before 4.6.78 fails to validate the caller-controlled dimension argument in the PGVector and Cassandra knowledge-store create_collection() backends. Although schema, keyspace, and collection",
         "published": "2026-07-11T14:16:22.353"
+      },
+      {
+        "cve_id": "CVE-2026-56271",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Flowise before 3.1.0 (affected versions 3.0.13 and earlier) uses weak hardcoded default JWT secrets ('auth_token', 'refresh_token') and default audience and issuer values ('AUDIENCE', 'ISSUER') in the",
+        "published": "2026-07-12T12:16:45.290"
+      },
+      {
+        "cve_id": "CVE-2026-56260",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Crawl4AI before 0.8.7 contains an arbitrary file write vulnerability in the Docker API server's /screenshot and /pdf endpoints. The output_path parameter accepts arbitrary filesystem paths without val",
+        "published": "2026-07-12T12:16:45.153"
       },
       {
         "cve_id": "CVE-2026-15480",
@@ -272,6 +286,27 @@
         "published": "2026-07-12T07:16:25.107"
       },
       {
+        "cve_id": "CVE-2026-59260",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "OpenWrt luci-app-samba4 read ACL grants file.exec permission on /usr/sbin/smbd, allowing authenticated delegated users to execute the Samba daemon with caller-controlled command-line arguments. Attack",
+        "published": "2026-07-12T12:16:45.977"
+      },
+      {
+        "cve_id": "CVE-2026-61875",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "luci-app-upnp contains a stored cross-site scripting vulnerability that allows unauthenticated LAN clients to inject JavaScript via UPnP IGD AddPortMapping SOAP requests. Attackers can send malicious ",
+        "published": "2026-07-12T12:16:46.260"
+      },
+      {
+        "cve_id": "CVE-2026-61876",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "LuCI versions fail to properly encode DHCPv6 lease hostnames before rendering in status tables, allowing adjacent network attackers to inject HTML markup. Attackers can send a DHCPv6 Client FQDN conta",
+        "published": "2026-07-12T12:16:46.400"
+      },
+      {
         "cve_id": "CVE-2026-61426",
         "severity": "HIGH",
         "base_score": 8.6,
@@ -293,6 +328,27 @@
         "published": "2026-07-11T21:16:23.903"
       },
       {
+        "cve_id": "CVE-2026-56241",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "Capgo before 12.128.2 contains a privilege escalation vulnerability where demoted super_admin users retain access to delete_non_compliant_bundles and count_non_compliant_bundles RPCs due to stale org_",
+        "published": "2026-07-12T12:16:44.730"
+      },
+      {
+        "cve_id": "CVE-2026-56259",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Crawl4AI before 0.8.8 contains credential exfiltration vulnerabilities in the Docker API server that allow attackers to redirect LLM API calls to attacker-controlled endpoints and read arbitrary envir",
+        "published": "2026-07-12T12:16:45.013"
+      },
+      {
+        "cve_id": "CVE-2026-56313",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Capgo before 12.128.2 contains a cross-organization account disruption vulnerability in the SSO prelink endpoint that allows enterprise administrators to delete password identities of users in foreign",
+        "published": "2026-07-12T12:16:45.703"
+      },
+      {
         "cve_id": "CVE-2026-56303",
         "severity": "HIGH",
         "base_score": 7.5,
@@ -305,62 +361,6 @@
         "base_score": 7.5,
         "description": "PraisonAI versions before 4.6.78 contain a prompt injection defense misconfiguration where the block threshold defaults to CRITICAL severity, allowing HIGH-level threats to pass through unblocked. Att",
         "published": "2026-07-11T14:16:22.870"
-      },
-      {
-        "cve_id": "CVE-2026-61428",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "PraisonAI AgentMail versions before 4.6.78 lack signature verification in webhook mode, allowing unauthenticated attackers to inject messages with spoofed sender addresses. Attackers can POST crafted ",
-        "published": "2026-07-11T14:16:22.610"
-      },
-      {
-        "cve_id": "CVE-2026-15479",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was found in H3C NX15 V100R017. Affected by this vulnerability is the function change_passwd of the file /api/login/modify of the component Administrator Password Modification Endpoint",
-        "published": "2026-07-12T06:16:41.350"
-      },
-      {
-        "cve_id": "CVE-2026-15482",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A weakness has been identified in Aster Telecom Azcall 10/11. This issue affects some unknown processing of the file /azcall/adm/gestao_loja/sis.php?t=consultar of the component HTTP Handler. Executin",
-        "published": "2026-07-12T07:16:24.737"
-      },
-      {
-        "cve_id": "CVE-2026-15488",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was determined in hcr707305003 shiroiAdmin 1.1/1.3. Affected is the function FileController::upload of the file app/common/controller/FileController.php. Executing a manipulation of th",
-        "published": "2026-07-12T09:16:39.740"
-      },
-      {
-        "cve_id": "CVE-2026-15489",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was identified in RafyMrX TOKO-ONLINE-ROTI up to ddfe1cd587be0a0b5135d8b6e85cce2ec3aece99. Affected by this vulnerability is an unknown functionality of the file proses/login.php. The ",
-        "published": "2026-07-12T09:16:39.913"
-      },
-      {
-        "cve_id": "CVE-2026-61442",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "PraisonAI Platform (praisonai-platform) before 0.1.9 fails to enforce owner/admin authorization on the PATCH routes for projects, issues, and agents, which only require workspace-member role. A worksp",
-        "published": "2026-07-11T14:16:23.017"
-      },
-      {
-        "cve_id": "CVE-2026-10660",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The Bluetooth BAP Broadcast Assistant GATT client in subsys/bluetooth/audio/bap_broadcast_assistant.c reassembled remote Broadcast Receive State data into a single file-static net_buf_simple (att_buf,",
-        "published": "2026-07-11T17:16:23.920"
-      },
-      {
-        "cve_id": "CVE-2026-15473",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A vulnerability was identified in Eleveo Call Recording Software 9.7.0. This issue affects some unknown processing of the file /callrec/restoreCallAction.do of the component Recorded Calls Page. The m",
-        "published": "2026-07-12T03:16:09.530"
       }
     ]
   },
