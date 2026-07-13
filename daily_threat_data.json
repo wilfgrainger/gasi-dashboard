@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-13T14:06:43.642420+00:00",
+  "generated_at": "2026-07-13T17:47:57.812301+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 18,
+        "value": 19,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
-        "score": 2.0,
+        "value": 5,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1637,
-    "recent_30d_count": 18,
+    "total_catalog_count": 1638,
+    "recent_30d_count": 19,
     "recent": [
+      {
+        "cve_id": "CVE-2008-4128",
+        "vendor": "Cisco",
+        "product": "IOS",
+        "name": "Cisco IOS Cross-Site Request Forgery Vulnerability",
+        "date_added": "2026-07-13",
+        "due_date": "2026-07-16",
+        "description": "Cisco IOS 12.4 contains multiple cross-site forgery vulnerabilities that allows remote attackers to execute arbitrary commands via (1) a certain \"show privilege\" command to the /level/15/exec/- URI, a",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-56291",
         "vendor": "Balbooa",
@@ -218,9 +228,9 @@
     ]
   },
   "nvd": {
-    "total": 257,
-    "critical_count": 3,
-    "high_count": 24,
+    "total": 259,
+    "critical_count": 5,
+    "high_count": 28,
     "cves": [
       {
         "cve_id": "CVE-2026-15511",
@@ -242,6 +252,20 @@
         "base_score": 9.6,
         "description": "This vulnerability is a critical Server-Side Template Injection (SSTI) in Centreon's centreon-open-tickets module that leads to Remote Code Execution. The message_confirm field is stored without sanit",
         "published": "2026-07-13T09:16:23.893"
+      },
+      {
+        "cve_id": "CVE-2026-11964",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The User Registration & Membership  WordPress plugin before 5.2.2 does not verify the authenticity of incoming payment-provider webhook notifications before acting on them, allowing unauthenticated at",
+        "published": "2026-07-13T07:16:27.420"
+      },
+      {
+        "cve_id": "CVE-2026-41041",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "URL path injection via unencoded user-supplied identifiers vulnerability in Apache Gravitino.\n\nThis issue affects Apache Gravitino: from 1.0.0 before 1.2.1.\n\nUsers are recommended to upgrade to versio",
+        "published": "2026-07-13T10:16:28.803"
       },
       {
         "cve_id": "CVE-2026-15543",
@@ -279,25 +303,18 @@
         "published": "2026-07-13T10:16:30.330"
       },
       {
-        "cve_id": "CVE-2026-58596",
+        "cve_id": "CVE-2026-12582",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Untrusted pointer dereference in Microsoft Edge (Chromium-based) allows an unauthorized attacker to elevate privileges over a network.",
-        "published": "2026-07-12T16:16:31.350"
+        "base_score": 8.6,
+        "description": "The Library Management System WordPress plugin before 3.5.8 does not sanitize and escape a user-supplied parameter before using it in a SQL statement, allowing unauthenticated attackers to perform SQL",
+        "published": "2026-07-13T07:16:28.203"
       },
       {
-        "cve_id": "CVE-2026-10666",
+        "cve_id": "CVE-2026-11963",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "parse_ipv4() in subsys/net/ip/utils.c (reached via net_ipaddr_parse() for strings of the form \"a.b.c.d:port\") copies the port substring into a fixed 17-byte stack buffer (char ipaddr[NET_IPV4_ADDR_LEN",
-        "published": "2026-07-12T17:16:24.550"
-      },
-      {
-        "cve_id": "CVE-2026-10667",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Zephyr's dynamic kernel-object tracking (kernel/userspace/userspace.c, formerly kernel/userspace.c) maintains a doubly-linked list (obj_list) of dynamically allocated kernel objects. Iteration over th",
-        "published": "2026-07-12T17:16:24.670"
+        "description": "The User Registration & Membership  WordPress plugin before 5.2.2 does not perform an authorization check on a membership-upgrade action and derives the user to modify from a caller-supplied identifie",
+        "published": "2026-07-13T07:16:27.307"
       },
       {
         "cve_id": "CVE-2026-15506",
@@ -335,11 +352,11 @@
         "published": "2026-07-13T09:16:24.550"
       },
       {
-        "cve_id": "CVE-2026-10665",
+        "cve_id": "CVE-2026-57378",
         "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "In Zephyr's WireGuard subsystem (subsys/net/lib/wireguard), wg_process_data_message() in wg_crypto.c linearizes an inbound transport-data payload into a fixed pool buffer of CONFIG_WIREGUARD_BUF_LEN b",
-        "published": "2026-07-12T17:16:24.433"
+        "base_score": 7.5,
+        "description": "Missing Authorization vulnerability in Phil Kurth Advanced Forms advanced-forms allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Advanced Forms: from n/a thro",
+        "published": "2026-07-13T10:16:30.920"
       },
       {
         "cve_id": "CVE-2026-15514",
@@ -354,13 +371,6 @@
         "base_score": 7.3,
         "description": "A flaw has been found in Jinher OA 1.0. The affected element is an unknown function of the file /C6/JHSoft.Web.PlanSummarize/PlanGiveOut.aspx. This manipulation of the argument httpOID causes sql inje",
         "published": "2026-07-13T01:17:04.917"
-      },
-      {
-        "cve_id": "CVE-2026-15537",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security flaw has been discovered in SourceCodester Online Book Store System 1.0. This vulnerability affects unknown code of the file admin/login.php. The manipulation of the argument Username resul",
-        "published": "2026-07-13T07:16:28.647"
       }
     ]
   },
