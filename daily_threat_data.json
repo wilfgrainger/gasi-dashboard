@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-13T10:49:58.535163+00:00",
+  "generated_at": "2026-07-13T14:06:43.642420+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
-        "score": 2.5,
+        "value": 3,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -218,17 +218,10 @@
     ]
   },
   "nvd": {
-    "total": 268,
-    "critical_count": 5,
-    "high_count": 28,
+    "total": 257,
+    "critical_count": 3,
+    "high_count": 24,
     "cves": [
-      {
-        "cve_id": "CVE-2026-56271",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Flowise before 3.1.0 (affected versions 3.0.13 and earlier) uses weak hardcoded default JWT secrets ('auth_token', 'refresh_token') and default audience and issuer values ('AUDIENCE', 'ISSUER') in the",
-        "published": "2026-07-12T12:16:45.290"
-      },
       {
         "cve_id": "CVE-2026-15511",
         "severity": "CRITICAL",
@@ -249,34 +242,6 @@
         "base_score": 9.6,
         "description": "This vulnerability is a critical Server-Side Template Injection (SSTI) in Centreon's centreon-open-tickets module that leads to Remote Code Execution. The message_confirm field is stored without sanit",
         "published": "2026-07-13T09:16:23.893"
-      },
-      {
-        "cve_id": "CVE-2026-56260",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Crawl4AI before 0.8.7 contains an arbitrary file write vulnerability in the Docker API server's /screenshot and /pdf endpoints. The output_path parameter accepts arbitrary filesystem paths without val",
-        "published": "2026-07-12T12:16:45.153"
-      },
-      {
-        "cve_id": "CVE-2026-59260",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenWrt luci-app-samba4 read ACL grants file.exec permission on /usr/sbin/smbd, allowing authenticated delegated users to execute the Samba daemon with caller-controlled command-line arguments. Attack",
-        "published": "2026-07-12T12:16:45.977"
-      },
-      {
-        "cve_id": "CVE-2026-61875",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "luci-app-upnp contains a stored cross-site scripting vulnerability that allows unauthenticated LAN clients to inject JavaScript via UPnP IGD AddPortMapping SOAP requests. Attackers can send malicious ",
-        "published": "2026-07-12T12:16:46.260"
-      },
-      {
-        "cve_id": "CVE-2026-61876",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "LuCI versions fail to properly encode DHCPv6 lease hostnames before rendering in status tables, allowing adjacent network attackers to inject HTML markup. Attackers can send a DHCPv6 Client FQDN conta",
-        "published": "2026-07-12T12:16:46.400"
       },
       {
         "cve_id": "CVE-2026-15543",
@@ -300,11 +265,18 @@
         "published": "2026-07-13T09:16:24.043"
       },
       {
-        "cve_id": "CVE-2026-56241",
+        "cve_id": "CVE-2026-15548",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Capgo before 12.128.2 contains a privilege escalation vulnerability where demoted super_admin users retain access to delete_non_compliant_bundles and count_non_compliant_bundles RPCs due to stale org_",
-        "published": "2026-07-12T12:16:44.730"
+        "base_score": 8.8,
+        "description": "A security vulnerability has been detected in Shibby Tomato up to 1.28.0000. This vulnerability affects the function sub_407220 of the file /usr/sbin/httpd of the component DNS List Rendering. The man",
+        "published": "2026-07-13T10:16:26.537"
+      },
+      {
+        "cve_id": "CVE-2026-57371",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Deserialization of Untrusted Data vulnerability in denishua WPJAM Basic wpjam-basic allows Object Injection.This issue affects WPJAM Basic: from n/a through <= 7.0.",
+        "published": "2026-07-13T10:16:30.330"
       },
       {
         "cve_id": "CVE-2026-58596",
@@ -312,20 +284,6 @@
         "base_score": 8.3,
         "description": "Untrusted pointer dereference in Microsoft Edge (Chromium-based) allows an unauthorized attacker to elevate privileges over a network.",
         "published": "2026-07-12T16:16:31.350"
-      },
-      {
-        "cve_id": "CVE-2026-56259",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Crawl4AI before 0.8.8 contains credential exfiltration vulnerabilities in the Docker API server that allow attackers to redirect LLM API calls to attacker-controlled endpoints and read arbitrary envir",
-        "published": "2026-07-12T12:16:45.013"
-      },
-      {
-        "cve_id": "CVE-2026-56313",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Capgo before 12.128.2 contains a cross-organization account disruption vulnerability in the SSO prelink endpoint that allows enterprise administrators to delete password identities of users in foreign",
-        "published": "2026-07-12T12:16:45.703"
       },
       {
         "cve_id": "CVE-2026-10666",
@@ -361,6 +319,48 @@
         "base_score": 7.8,
         "description": "The MBStorage DRAM lighting control module within Gigabyte Control Center (GCC) developed by GIGABYTE Technology has an Improper Access Control vulnerability. Authenticated local attackers can send sp",
         "published": "2026-07-13T04:16:29.283"
+      },
+      {
+        "cve_id": "CVE-2026-14165",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "An Authorization Bypass Through User-Controlled Key vulnerability affecting Tuleap Enterprise Edition from 17.0 through 17.5 could allow an attacker to access data of other users without authorization",
+        "published": "2026-07-13T08:16:20.253"
+      },
+      {
+        "cve_id": "CVE-2026-15574",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A flaw was found in the vllm-orchestrator-gateway component. The system's production binary logs all incoming authorization headers and full chat payloads, which may contain personally identifiable in",
+        "published": "2026-07-13T09:16:24.550"
+      },
+      {
+        "cve_id": "CVE-2026-10665",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "In Zephyr's WireGuard subsystem (subsys/net/lib/wireguard), wg_process_data_message() in wg_crypto.c linearizes an inbound transport-data payload into a fixed pool buffer of CONFIG_WIREGUARD_BUF_LEN b",
+        "published": "2026-07-12T17:16:24.433"
+      },
+      {
+        "cve_id": "CVE-2026-15514",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A weakness has been identified in Metasoft \u7f8e\u7279\u8f6f\u4ef6 MetaCRM up to 6.4.0 Beta06. This vulnerability affects the function RPCService.query of the file /customizemt/xkq/rpc.jsp of the component PHPRPC Remote",
+        "published": "2026-07-13T00:16:47.390"
+      },
+      {
+        "cve_id": "CVE-2026-15517",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A flaw has been found in Jinher OA 1.0. The affected element is an unknown function of the file /C6/JHSoft.Web.PlanSummarize/PlanGiveOut.aspx. This manipulation of the argument httpOID causes sql inje",
+        "published": "2026-07-13T01:17:04.917"
+      },
+      {
+        "cve_id": "CVE-2026-15537",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A security flaw has been discovered in SourceCodester Online Book Store System 1.0. This vulnerability affects unknown code of the file admin/login.php. The manipulation of the argument Username resul",
+        "published": "2026-07-13T07:16:28.647"
       }
     ]
   },
