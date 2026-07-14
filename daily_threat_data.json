@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T06:03:31.960460+00:00",
+  "generated_at": "2026-07-14T09:46:54.974891+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
+        "value": 9,
         "score": 2.5,
         "max": 3
       },
@@ -228,10 +228,17 @@
     ]
   },
   "nvd": {
-    "total": 347,
-    "critical_count": 5,
-    "high_count": 40,
+    "total": 337,
+    "critical_count": 9,
+    "high_count": 53,
     "cves": [
+      {
+        "cve_id": "CVE-2026-57719",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Unrestricted Upload of File with Dangerous Type vulnerability in CodeRevolution Aimogen Pro aimogen-pro allows Using Malicious Files.This issue affects Aimogen Pro: from n/a through <= 2.8.3.",
+        "published": "2026-07-13T10:16:38.970"
+      },
       {
         "cve_id": "CVE-2026-57401",
         "severity": "CRITICAL",
@@ -240,25 +247,46 @@
         "published": "2026-07-13T10:16:33.683"
       },
       {
-        "cve_id": "CVE-2026-4769",
+        "cve_id": "CVE-2026-57710",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Unrestricted Upload of File with Dangerous Type vulnerability in quantumcloud WoowBot Pro Max woowbot-pro-max allows Using Malicious Files.This issue affects WoowBot Pro Max: from n/a through <= 14.1.",
+        "published": "2026-07-13T10:16:38.143"
+      },
+      {
+        "cve_id": "CVE-2026-57724",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Certain devices in the WAGO System I/O Field series activate an internal diagnostic capability during the initial startup sequence. This functionality is not formally documented and becomes accessible",
-        "published": "2026-07-13T08:16:21.343"
+        "description": "Deserialization of Untrusted Data vulnerability in Themeum Kirki kirki allows Object Injection.This issue affects Kirki: from n/a through <= 6.0.12.",
+        "published": "2026-07-13T10:16:39.087"
       },
       {
-        "cve_id": "CVE-2026-14453",
+        "cve_id": "CVE-2026-57702",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "This vulnerability is a critical Server-Side Template Injection (SSTI) in Centreon's centreon-open-tickets module that leads to Remote Code Execution. The message_confirm field is stored without sanit",
-        "published": "2026-07-13T09:16:23.893"
+        "base_score": 9.3,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Melograno Venture Studio Amelia ameliabooking allows Blind SQL Injection.This issue affects Amelia",
+        "published": "2026-07-13T10:16:37.377"
       },
       {
-        "cve_id": "CVE-2026-11964",
+        "cve_id": "CVE-2026-57707",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The User Registration & Membership  WordPress plugin before 5.2.2 does not verify the authenticity of incoming payment-provider webhook notifications before acting on them, allowing unauthenticated at",
-        "published": "2026-07-13T07:16:27.420"
+        "base_score": 9.3,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in quantumcloud Simple Business Directory Pro simple-business-directory-pro allows SQL Injection.This",
+        "published": "2026-07-13T10:16:37.743"
+      },
+      {
+        "cve_id": "CVE-2026-57714",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in LatePoint LatePoint latepoint allows Blind SQL Injection.This issue affects LatePoint: from n/a th",
+        "published": "2026-07-13T10:16:38.617"
+      },
+      {
+        "cve_id": "CVE-2026-57726",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Themeum Kirki kirki allows Blind SQL Injection.This issue affects Kirki: from n/a through <= 6.0.1",
+        "published": "2026-07-13T10:16:39.317"
       },
       {
         "cve_id": "CVE-2026-41041",
@@ -266,27 +294,6 @@
         "base_score": 9.1,
         "description": "URL path injection via unencoded user-supplied identifiers vulnerability in Apache Gravitino.\n\nThis issue affects Apache Gravitino: from 1.0.0 before 1.2.1.\n\nUsers are recommended to upgrade to versio",
         "published": "2026-07-13T10:16:28.803"
-      },
-      {
-        "cve_id": "CVE-2026-15543",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was found in Tenda CH22 1.0.0.1. This impacts the function formCertListInfo of the file /goform/CertListInfo. The manipulation of the argument Name results in buffer overflow. The atta",
-        "published": "2026-07-13T08:16:20.967"
-      },
-      {
-        "cve_id": "CVE-2026-15544",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was determined in Shibby Tomato up to 1.28.0000. Affected is the function getupsvar of the file www/apcupsd/tomatodata.cgi of the component apcupsd. This manipulation of the argument F",
-        "published": "2026-07-13T08:16:21.150"
-      },
-      {
-        "cve_id": "CVE-2026-15545",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was identified in Shibby Tomato up to 1.28.0000. Affected by this vulnerability is the function main of the file www/apcupsd/tomatodata.cgi of the component apcupsd. Such manipulation ",
-        "published": "2026-07-13T09:16:24.043"
       },
       {
         "cve_id": "CVE-2026-15548",
@@ -317,11 +324,11 @@
         "published": "2026-07-13T10:16:34.767"
       },
       {
-        "cve_id": "CVE-2026-12582",
+        "cve_id": "CVE-2026-57713",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "The Library Management System WordPress plugin before 3.5.8 does not sanitize and escape a user-supplied parameter before using it in a SQL statement, allowing unauthenticated attackers to perform SQL",
-        "published": "2026-07-13T07:16:28.203"
+        "base_score": 8.8,
+        "description": "Deserialization of Untrusted Data vulnerability in Marcus (aka @msykes) Events Manager events-manager allows Object Injection.This issue affects Events Manager: from n/a through <= 7.3.6.",
+        "published": "2026-07-13T10:16:38.500"
       },
       {
         "cve_id": "CVE-2026-57389",
@@ -331,32 +338,18 @@
         "published": "2026-07-13T10:16:32.160"
       },
       {
+        "cve_id": "CVE-2026-57709",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in WP Swings Membership For WooCommerce membership-for-woocommerce allows Path Traversal.This issue affects",
+        "published": "2026-07-13T10:16:38.020"
+      },
+      {
         "cve_id": "CVE-2026-57385",
         "severity": "HIGH",
         "base_score": 8.5,
         "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in appsbd Vitepos vitepos-lite allows Blind SQL Injection.This issue affects Vitepos: from n/a throug",
         "published": "2026-07-13T10:16:31.687"
-      },
-      {
-        "cve_id": "CVE-2026-11963",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The User Registration & Membership  WordPress plugin before 5.2.2 does not perform an authorization check on a membership-upgrade action and derives the user to modify from a caller-supplied identifie",
-        "published": "2026-07-13T07:16:27.307"
-      },
-      {
-        "cve_id": "CVE-2026-14165",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "An Authorization Bypass Through User-Controlled Key vulnerability affecting Tuleap Enterprise Edition from 17.0 through 17.5 could allow an attacker to access data of other users without authorization",
-        "published": "2026-07-13T08:16:20.253"
-      },
-      {
-        "cve_id": "CVE-2026-15574",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A flaw was found in the vllm-orchestrator-gateway component. The system's production binary logs all incoming authorization headers and full chat payloads, which may contain personally identifiable in",
-        "published": "2026-07-13T09:16:24.550"
       },
       {
         "cve_id": "CVE-2026-57378",
@@ -366,11 +359,18 @@
         "published": "2026-07-13T10:16:30.920"
       },
       {
-        "cve_id": "CVE-2026-15537",
+        "cve_id": "CVE-2026-57697",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security flaw has been discovered in SourceCodester Online Book Store System 1.0. This vulnerability affects unknown code of the file admin/login.php. The manipulation of the argument Username resul",
-        "published": "2026-07-13T07:16:28.647"
+        "base_score": 7.5,
+        "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in Metagauss ProfileGrid  profilegrid-user-profiles-groups-and-communities allows Password Recovery Exploitation.This issue affec",
+        "published": "2026-07-13T10:16:37.143"
+      },
+      {
+        "cve_id": "CVE-2026-57705",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Missing Authorization vulnerability in Nexcess Event Tickets event-tickets allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects Event Tickets: from n/a through <=",
+        "published": "2026-07-13T10:16:37.493"
       }
     ]
   },
