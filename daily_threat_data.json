@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T17:03:16.001824+00:00",
+  "generated_at": "2026-07-14T20:50:05.268153+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 19,
+        "value": 23,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 14,
+        "value": 15,
         "score": 3.0,
         "max": 3
       },
@@ -32,9 +32,49 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1638,
-    "recent_30d_count": 19,
+    "total_catalog_count": 1642,
+    "recent_30d_count": 23,
     "recent": [
+      {
+        "cve_id": "CVE-2026-56155",
+        "vendor": "Microsoft",
+        "product": "Active Directory Federation Services",
+        "name": "Microsoft Active Directory Federation Services Insufficient Granularity of Access Control Vulnerability ",
+        "date_added": "2026-07-14",
+        "due_date": "2026-07-28",
+        "description": "Microsoft Active Directory Federation Services contains an insufficient granularity of access control vulnerability that allows an authorized attacker to elevate privileges locally.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-56164",
+        "vendor": "Microsoft",
+        "product": "SharePoint Server",
+        "name": "Microsoft SharePoint Server Missing Authentication for Critical Function Vulnerability",
+        "date_added": "2026-07-14",
+        "due_date": "2026-07-17",
+        "description": "Microsoft SharePoint contains a missing authentication for critical function vulnerability that allows an unauthorized attacker to elevate privileges over a network.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-15409",
+        "vendor": "SonicWall",
+        "product": "SMA1000 Appliances",
+        "name": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
+        "date_added": "2026-07-14",
+        "due_date": "2026-07-17",
+        "description": "SonicWall SMA1000 Appliances contain a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to potentially cause the appliance to make requests to unintended lo",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-15410",
+        "vendor": "SonicWall",
+        "product": "SMA1000 Appliances",
+        "name": "SonicWall SMA1000 Appliances Code Injection Vulnerability",
+        "date_added": "2026-07-14",
+        "due_date": "2026-07-17",
+        "description": "SonicWall SMA1000 Appliances contain a code injection vulnerability which in specific conditions could potentially enable a remote authenticated attacker as administrator to execute arbitrary OS comma",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2008-4128",
         "vendor": "Cisco",
@@ -194,43 +234,13 @@
         "due_date": "2026-06-21",
         "description": "Splunk Enterprise contains a missing authentication for critical function vulnerability which could allow an unauthenticated user to create or truncate arbitrary files through a PostgreSQL sidecar ser",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-48907",
-        "vendor": "Widget Factory",
-        "product": "Joomla Content Editor ",
-        "name": "Widget Factory Joomla Content Editor Improper Access Control Vulnerability",
-        "date_added": "2026-06-16",
-        "due_date": "2026-06-19",
-        "description": "Widget Factory Joomla Content Editor contains an improper access control vulnerability which could allow for upload and execution of PHP code via the creation of new editor profiles for unauthenticate",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-54420",
-        "vendor": "LiteSpeed",
-        "product": "cPanel Plugin",
-        "name": "LiteSpeed cPanel Plugin UNIX Symbolic Link (Symlink) Following Vulnerability",
-        "date_added": "2026-06-15",
-        "due_date": "2026-06-18",
-        "description": "LiteSpeed cPanel plugin contains a UNIX symbolic link (Symlink) following vulnerability that could allow a user with FTP or web shell access on a shared hosting server running CloudLinux/CageFS.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-20262",
-        "vendor": "Cisco",
-        "product": "Catalyst SD-WAN Manager",
-        "name": "Cisco Catalyst SD-WAN Manager Directory or Path Traversal Vulnerability",
-        "date_added": "2026-06-15",
-        "due_date": "2026-06-29",
-        "description": "Cisco Catalyst SD-WAN Manager contains a directory or path traversal vulnerability that could allow an authenticated, remote attacker to create a file or overwrite any file on the filesystem of an aff",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 258,
-    "critical_count": 14,
-    "high_count": 46,
+    "total": 927,
+    "critical_count": 15,
+    "high_count": 39,
     "cves": [
       {
         "cve_id": "CVE-2026-44747",
@@ -240,18 +250,18 @@
         "published": "2026-07-14T01:16:17.437"
       },
       {
-        "cve_id": "CVE-2026-57433",
+        "cve_id": "CVE-2026-51540",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Storable versions before 3.41 for Perl have a signed integer overflow when deserializing a crafted SX_HOOK record.\n\nretrieve_hook_common reads a signed 32-bit item count from an SX_HOOK record and cal",
-        "published": "2026-07-13T17:17:55.783"
+        "description": "OpENer 2.3.0 (master branch up to commit 76b95cf) is vulnerable to a severe memory corruption issue caused by an integer underflow in the processing of connected explicit messages (SendUnitData).",
+        "published": "2026-07-13T22:16:47.703"
       },
       {
-        "cve_id": "CVE-2026-61500",
+        "cve_id": "CVE-2026-51821",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Rejetto HFS 3.0.0 through 3.2.0 derives its session-cookie signing key from the non-cryptographic Math.random() generator and discloses outputs of the same generator to unauthenticated clients during ",
-        "published": "2026-07-13T18:16:29.903"
+        "description": "SQL Injection vulnerability in Shenzhou Shihan Video Conference System v.1.0 allows a remote attacker to execute arbitrary code via the /user/getUserLogin endpoint",
+        "published": "2026-07-13T22:16:47.910"
       },
       {
         "cve_id": "CVE-2026-52533",
@@ -268,11 +278,11 @@
         "published": "2026-07-13T22:16:48.840"
       },
       {
-        "cve_id": "CVE-2026-13221",
+        "cve_id": "CVE-2026-11563",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Perl versions through 5.43.9 produce silently incorrect regular expression matches when an alternation of more than 65535 fixed string branches is compiled into a trie in Perl_study_chunk.\n\nWhen such ",
-        "published": "2026-07-13T17:16:48.923"
+        "base_score": 9.6,
+        "description": "The Word Count and Social Shares WordPress plugin through 1.0 does not validate a user-supplied file path before deletion, nor does it have proper authorization or CSRF checks, allowing any authentica",
+        "published": "2026-07-14T06:16:48.873"
       },
       {
         "cve_id": "CVE-2026-58409",
@@ -331,46 +341,46 @@
         "published": "2026-07-14T01:16:17.193"
       },
       {
-        "cve_id": "CVE-2026-61463",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Shiori contains a privilege escalation vulnerability in the account update endpoint that allows authenticated users to modify the owner field without authorization checks. Attackers can escalate to ad",
-        "published": "2026-07-13T18:16:29.770"
+        "cve_id": "CVE-2026-44761",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "SAP Commerce Cloud could retain a sample OAuth2 client with publicly documented sample credentials originating from sample configuration provided in SAP Help Portal documentation. If left unchanged, a",
+        "published": "2026-07-14T01:16:18.023"
       },
       {
-        "cve_id": "CVE-2026-49970",
+        "cve_id": "CVE-2026-62190",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Laravel-Mediable before 7.0.0 contains a path traversal vulnerability in the File::sanitizePath() function that allows attackers to write uploaded files to arbitrary locations by controlling the direc",
-        "published": "2026-07-13T19:17:09.943"
+        "description": "OpenClaw versions before 2026.6.9 contain an authorization bypass vulnerability in the flock wrapper that allows lower-trust callers to execute or persist actions beyond their intended authorization. ",
+        "published": "2026-07-13T22:16:50.173"
       },
       {
-        "cve_id": "CVE-2026-49972",
+        "cve_id": "CVE-2026-62194",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Laravel-Mediable before 7.0.0 contains a file upload vulnerability that allows unauthenticated attackers to achieve remote code execution by uploading a file with an embedded PHP extension disguised w",
-        "published": "2026-07-13T19:17:10.447"
+        "description": "OpenClaw versions 2026.5.20 before 2026.6.9 contain a privilege escalation vulnerability in plugin install commands that allows lower-trust callers to execute or persist actions beyond their intended ",
+        "published": "2026-07-13T22:16:50.943"
       },
       {
-        "cve_id": "CVE-2026-55772",
+        "cve_id": "CVE-2026-62199",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "CedarJava is an open source Java implementation of the Cedar policy language, used for fine-grained authorization decisions. In versions prior to 2.3.6, 3.4.1 and 4.9.0, under certain circumstances, i",
-        "published": "2026-07-13T19:17:15.183"
+        "description": "OpenClaw versions before 2026.6.6 contain a flaw in host exec environment filtering that can miss interpreter startup variables. When the affected feature is enabled and reachable, a lower-trust calle",
+        "published": "2026-07-13T22:16:51.673"
       },
       {
-        "cve_id": "CVE-2026-55771",
+        "cve_id": "CVE-2026-62200",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "CedarJava is an open source Java implementation of the Cedar policy language, used for fine-grained authorization decisions. In versions prior to 4.9.0, the EntityIdentifier.equals() has inverted null",
-        "published": "2026-07-13T20:16:48.453"
+        "description": "OpenClaw versions before 2026.6.6 contain a flaw in host exec environment filtering that could allow Git ext transport to be abused. When the affected feature is enabled and reachable, a lower-trust c",
+        "published": "2026-07-13T22:16:51.813"
       },
       {
-        "cve_id": "CVE-2026-55773",
+        "cve_id": "CVE-2026-57855",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "CedarJava is an open source Java implementation of the Cedar policy language, used for fine-grained authorization decisions. In versions prior to 2.3.6, 3.4.1 and 4.9.0, under certain circumstances, i",
-        "published": "2026-07-13T20:16:48.580"
+        "description": "Cockpit CMS contains a missing authorization vulnerability in the Bucket file storage API (/system/buckets/api). The api() method in modules/System/Controller/Buckets.php executes bucket commands (ls,",
+        "published": "2026-07-13T23:16:46.743"
       }
     ]
   },
