@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T20:50:05.268153+00:00",
+  "generated_at": "2026-07-15T01:25:41.038875+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 23,
+        "value": 21,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 15,
+        "value": 13,
         "score": 3.0,
         "max": 3
       },
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1642,
-    "recent_30d_count": 23,
+    "recent_30d_count": 21,
     "recent": [
       {
         "cve_id": "CVE-2026-56155",
@@ -238,44 +238,51 @@
     ]
   },
   "nvd": {
-    "total": 927,
-    "critical_count": 15,
-    "high_count": 39,
+    "total": 992,
+    "critical_count": 13,
+    "high_count": 26,
     "cves": [
       {
-        "cve_id": "CVE-2026-44747",
+        "cve_id": "CVE-2026-56451",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "SAP NetWeaver Application Server ABAP allows an authenticated attacker to leverage logical errors in memory management to cause a memory corruption that could lead to unauthorized data access, modific",
-        "published": "2026-07-14T01:16:17.437"
+        "base_score": 10.0,
+        "description": "A vulnerability has been identified in Opcenter X (All versions < V2604). Affected applications do not properly validate the algorithm specified in the JSON Web Token (JWT) header.\r\nThis could allow a",
+        "published": "2026-07-14T10:16:33.287"
       },
       {
-        "cve_id": "CVE-2026-51540",
+        "cve_id": "CVE-2026-62422",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "OpENer 2.3.0 (master branch up to commit 76b95cf) is vulnerable to a severe memory corruption issue caused by an integer underflow in the processing of connected explicit messages (SendUnitData).",
-        "published": "2026-07-13T22:16:47.703"
+        "base_score": 10.0,
+        "description": "In JetBrains YouTrack before 2026.1.13757,\n2025.3.148033,\n2025.2.148048,\n2025.1.148120,\n2024.3.148430,\n2024.2.148429 authentication bypass via direct database access leading to administrative access w",
+        "published": "2026-07-14T11:16:48.367"
       },
       {
-        "cve_id": "CVE-2026-51821",
+        "cve_id": "CVE-2026-15043",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "SQL Injection vulnerability in Shenzhou Shihan Video Conference System v.1.0 allows a remote attacker to execute arbitrary code via the /user/getUserLogin endpoint",
-        "published": "2026-07-13T22:16:47.910"
+        "description": "DBI::SQL::Nano versions from 1.42 before 1.651 for Perl have inverted <= and >= SQL operators on text.\n\nDBI::SQL::Nano, DBI's built-in mini-SQL engine, evaluated WHERE predicates incorrectly in some c",
+        "published": "2026-07-14T10:16:31.253"
       },
       {
-        "cve_id": "CVE-2026-52533",
+        "cve_id": "CVE-2026-62390",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "An issue in D-Link DIR-1253 v.1.0.1.250923.142435 allows an attacker to escalate privileges via the etc/shadow component file",
-        "published": "2026-07-13T22:16:48.020"
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Apache Kylin. A backend API refreshing table catalog may cause the injection to the generated SQL.",
+        "published": "2026-07-14T13:19:08.307"
       },
       {
-        "cve_id": "CVE-2026-59801",
+        "cve_id": "CVE-2026-62392",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "9Router through version 0.4.41 contains an unauthenticated access vulnerability that allows remote attackers to interact with provider management API endpoints by sending requests without any credenti",
-        "published": "2026-07-13T22:16:48.840"
+        "description": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability in Apache Kylin. A backend API may bring job config parameters to OS command line.\n\nThis issue ",
+        "published": "2026-07-14T13:19:08.447"
+      },
+      {
+        "cve_id": "CVE-2026-58479",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Sustainable Irrigation Platform (SIP) through version 5.2.16 contains a command injection vulnerability in the optional cli_control plugin that allows unauthenticated or cross-site request forgery att",
+        "published": "2026-07-14T15:17:06.893"
       },
       {
         "cve_id": "CVE-2026-11563",
@@ -285,102 +292,95 @@
         "published": "2026-07-14T06:16:48.873"
       },
       {
-        "cve_id": "CVE-2026-58409",
+        "cve_id": "CVE-2026-59083",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "ChurchCRM is an open-source church management system. Prior to version 7.4.0, an authenticated administrator can achieve Remote Code Execution (RCE) on the server by installing a malicious plugin ZIP ",
-        "published": "2026-07-13T21:16:48.450"
+        "description": "Improper Handling of URL Encoding (Hex Encoding) vulnerability in Apache Tomcat's rewrite valve allowed security constraint bypass for some configurations.\n\nThis issue affects Apache Tomcat: from 11.0",
+        "published": "2026-07-14T09:16:41.483"
       },
       {
-        "cve_id": "CVE-2026-51536",
+        "cve_id": "CVE-2026-59084",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "In OpENer 2.3.0 (commit 76b95cf) when parsing incoming CIP (Common Industrial Protocol) network packets, the length parameter is inconsistently typed across the call stack. Specifically, an upstream l",
-        "published": "2026-07-13T22:16:47.263"
+        "description": "Insufficient Technical Documentation vulnerability in Apache Tomcat since the requirements to securely configure the EncryptInterceptor were not clearly documented.\n\nThis issue affects Apache Tomcat: ",
+        "published": "2026-07-14T09:16:41.607"
       },
       {
-        "cve_id": "CVE-2026-51537",
+        "cve_id": "CVE-2026-3014",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "EIPStackGroup OpENer 2.3.0 (commit 76b95cf) has an out-of-bounds read issue in Connection Manager handling of ForwardOpen requests when processing short malformed packets. An attacker can send a valid",
-        "published": "2026-07-13T22:16:47.387"
+        "description": "Milestone\nhas released a new version of XProtect\u00ae (and several cumulative patch updates)\nwhich fix security vulnerability in Management Server API.\u00a0\n\n\n\nThe vulnerability\ncauses users with edit permiss",
+        "published": "2026-07-14T10:16:32.917"
       },
       {
-        "cve_id": "CVE-2026-51538",
+        "cve_id": "CVE-2026-58319",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "EIPStackGroup OpENer 2.3.0 (commit 76b95cf) suffers from an Incorrect Access Control vulnerability in its handling of encapsulation sessions. When the server processes critical encapsulation commands,",
-        "published": "2026-07-13T22:16:47.497"
+        "description": "Certain Apache Doris FE HTTP REST administrative APIs were accessible without proper authentication. An unauthenticated attacker with network access to the FE HTTP service could perform unauthorized a",
+        "published": "2026-07-14T10:16:33.430"
       },
       {
-        "cve_id": "CVE-2026-51541",
+        "cve_id": "CVE-2026-15265",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "OpENer 2.3.0 (commit 76b95cf) has an out-of-bounds read issue in CIP message parsing when handling malformed explicit requests with a forged EPath size. An attacker can send a valid ENIP SendRRData fr",
-        "published": "2026-07-13T22:16:47.807"
+        "description": "A path traversal vulnerability in Tenable Agent 11.2.0 and 11.1.3 and lower allows a privileged attacker to write arbitrary files outside the intended plugin directory, potentially leading to remote c",
+        "published": "2026-07-14T15:16:57.457"
       },
       {
-        "cve_id": "CVE-2026-62327",
+        "cve_id": "CVE-2026-57898",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "9Router through version 0.4.41 contains an unauthenticated information disclosure vulnerability that allows remote attackers to retrieve plaintext API keys for all connected AI provider accounts by se",
-        "published": "2026-07-13T22:16:52.403"
+        "base_score": 9.0,
+        "description": "In Eclipse BaSyx Java Server SDK versions 2.0.0-milestone-05 to 2.0.0-milestone-12, deployments using the MongoDB backend are vulnerable to an unauthenticated arbitrary file write through the AAS thum",
+        "published": "2026-07-14T09:16:41.173"
       },
       {
-        "cve_id": "CVE-2026-58102",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Crypt::OpenSSL::X509 versions before 2.1.3 for Perl allow a heap out-of-bounds read via a long certificate extension OID in hv_exts.\n\nWhen building the extension hash (via extensions(), extensions_by_",
-        "published": "2026-07-13T23:16:47.127"
+        "cve_id": "CVE-2026-15416",
+        "severity": "HIGH",
+        "base_score": 8.9,
+        "description": "A flaw was identified in Argo CD, the GitOps engine used by Red Hat OpenShift GitOps, that could allow an unauthenticated attacker with network access to the Argo CD repo-server to achieve remote code",
+        "published": "2026-07-14T09:16:40.590"
       },
       {
-        "cve_id": "CVE-2026-27690",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Due to an HTTP Request Smuggling vulnerability in SAP Approuter, an unauthenticated attacker could send a specially crafted HTTP request that leads to request-response desynchronization. This could re",
-        "published": "2026-07-14T01:16:17.193"
-      },
-      {
-        "cve_id": "CVE-2026-44761",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "SAP Commerce Cloud could retain a sample OAuth2 client with publicly documented sample credentials originating from sample configuration provided in SAP Help Portal documentation. If left unchanged, a",
-        "published": "2026-07-14T01:16:18.023"
-      },
-      {
-        "cve_id": "CVE-2026-62190",
+        "cve_id": "CVE-2026-15691",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "OpenClaw versions before 2026.6.9 contain an authorization bypass vulnerability in the flock wrapper that allows lower-trust callers to execute or persist actions beyond their intended authorization. ",
-        "published": "2026-07-13T22:16:50.173"
+        "description": "A security flaw has been discovered in Tenda BE12 Pro 16.03.66.23. This affects the function fromSafeClientFilter of the file /goform/SafeClientFilter. Performing a manipulation of the argument page r",
+        "published": "2026-07-14T13:18:19.967"
       },
       {
-        "cve_id": "CVE-2026-62194",
+        "cve_id": "CVE-2026-15692",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "OpenClaw versions 2026.5.20 before 2026.6.9 contain a privilege escalation vulnerability in plugin install commands that allows lower-trust callers to execute or persist actions beyond their intended ",
-        "published": "2026-07-13T22:16:50.943"
+        "description": "A weakness has been identified in Tenda BE12 Pro 16.03.66.23. This vulnerability affects the function fromSafeUrlFilter of the file /goform/SafeUrlFilter. Executing a manipulation of the argument page",
+        "published": "2026-07-14T13:18:20.133"
       },
       {
-        "cve_id": "CVE-2026-62199",
+        "cve_id": "CVE-2026-15693",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "OpenClaw versions before 2026.6.6 contain a flaw in host exec environment filtering that can miss interpreter startup variables. When the affected feature is enabled and reachable, a lower-trust calle",
-        "published": "2026-07-13T22:16:51.673"
+        "description": "A security vulnerability has been detected in Tenda BE12 Pro 16.03.66.23. This issue affects the function fromSafeMacFilter of the file /goform/SafeMacFilter. The manipulation of the argument page lea",
+        "published": "2026-07-14T14:16:33.130"
       },
       {
-        "cve_id": "CVE-2026-62200",
+        "cve_id": "CVE-2026-15694",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "OpenClaw versions before 2026.6.6 contain a flaw in host exec environment filtering that could allow Git ext transport to be abused. When the affected feature is enabled and reachable, a lower-trust c",
-        "published": "2026-07-13T22:16:51.813"
+        "description": "A vulnerability was detected in Tenda BE12 Pro 16.03.66.23. Impacted is the function fromSetIpBind of the file /goform/SetIpBind. The manipulation of the argument page results in stack-based buffer ov",
+        "published": "2026-07-14T15:17:00.583"
       },
       {
-        "cve_id": "CVE-2026-57855",
+        "cve_id": "CVE-2026-15695",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Cockpit CMS contains a missing authorization vulnerability in the Bucket file storage API (/system/buckets/api). The api() method in modules/System/Controller/Buckets.php executes bucket commands (ls,",
-        "published": "2026-07-13T23:16:46.743"
+        "description": "A flaw has been found in Tenda BE12 Pro 16.03.66.23. The affected element is the function fromDhcpListClient of the file /goform/DhcpListClient. This manipulation of the argument page causes stack-bas",
+        "published": "2026-07-14T15:17:00.753"
+      },
+      {
+        "cve_id": "CVE-2026-15696",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability has been found in Tenda BE12 Pro 16.03.66.23. The impacted element is the function fromVirtualSer of the file /goform/VirtualSer. Such manipulation of the argument page leads to stack-",
+        "published": "2026-07-14T15:17:00.913"
       }
     ]
   },
