@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-15T17:05:49.480184+00:00",
+  "generated_at": "2026-07-15T20:50:05.899610+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 21,
+        "value": 23,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
-        "score": 2.5,
+        "value": 15,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -32,9 +32,29 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1642,
-    "recent_30d_count": 21,
+    "total_catalog_count": 1644,
+    "recent_30d_count": 23,
     "recent": [
+      {
+        "cve_id": "CVE-2026-46817",
+        "vendor": "Oracle",
+        "product": "E-Business Suite",
+        "name": "Oracle E-Business Suite Improper Privilege Management Vulnerability",
+        "date_added": "2026-07-15",
+        "due_date": "2026-07-18",
+        "description": "Oracle E-Business Suite contains an improper privilege management vulnerability that allows an unauthenticated attacker with network access via HTTP to compromise Oracle Payments. Successful attacks o",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2023-4346",
+        "vendor": "KNX Association",
+        "product": "KNX Protocol Connection Authorization Option 1",
+        "name": "KNX Association KNX Protocol Connection Authorization Option 1 Overly Restrictive Account Lockout Mechanism Vulnerability",
+        "date_added": "2026-07-15",
+        "due_date": "2026-07-29",
+        "description": "KNX Association KNX Protocol Connection Authorization Option 1 contains an overly restrictive account lockout mechanism vulnerability that could allow an attacker to purge all devices without addition",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-56155",
         "vendor": "Microsoft",
@@ -214,173 +234,153 @@
         "due_date": "2026-06-26",
         "description": "Ubiquiti UniFi OS contains a path traversal vulnerability which could allow a malicious actor with access to the network to access files on the underlying system that could be manipulated to access an",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-34908",
-        "vendor": "Ubiquiti",
-        "product": "UniFi OS",
-        "name": "Ubiquiti UniFi OS Improper Access Control Vulnerability",
-        "date_added": "2026-06-23",
-        "due_date": "2026-06-26",
-        "description": "Ubiquiti UniFi OS contains an improper access control vulnerability which could allow a malicious actor with access to the network to make unauthorized changes to the system.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-20253",
-        "vendor": "Splunk",
-        "product": "Enterprise",
-        "name": "Splunk Enterprise Missing Authentication for Critical Function Vulnerability",
-        "date_added": "2026-06-18",
-        "due_date": "2026-06-21",
-        "description": "Splunk Enterprise contains a missing authentication for critical function vulnerability which could allow an unauthenticated user to create or truncate arbitrary files through a PostgreSQL sidecar ser",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 973,
-    "critical_count": 5,
-    "high_count": 60,
+    "total": 381,
+    "critical_count": 15,
+    "high_count": 46,
     "cves": [
       {
-        "cve_id": "CVE-2026-15701",
+        "cve_id": "CVE-2026-48318",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A weakness has been identified in Totolink NR1800X 9.1.0u.6279_B20210910. Affected by this issue is the function Form_Logout of the file /formLogout.htm of the component lighttpd. This manipulation of",
-        "published": "2026-07-14T17:16:45.477"
+        "base_score": 9.9,
+        "description": "ColdFusion is affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could lead to arbitrary file system read. An attacker could exploit this ",
+        "published": "2026-07-14T21:16:58.493"
       },
       {
-        "cve_id": "CVE-2026-42990",
+        "cve_id": "CVE-2026-38450",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Heap-based buffer overflow in SQL Server ODBC driver allows an unauthorized attacker to execute code over a network.",
-        "published": "2026-07-14T17:16:48.490"
+        "description": "An issue in Aetopia Digital Asset Management DAM v.1.0.0 allows a remote attacker to execute arbitrary code via the name and description parameter of the Add/Update Project function",
+        "published": "2026-07-14T22:16:52.810"
       },
       {
-        "cve_id": "CVE-2026-49172",
+        "cve_id": "CVE-2026-46633",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Heap-based buffer overflow in Windows FTP Service allows an unauthorized attacker to execute code over a network.",
-        "published": "2026-07-14T17:16:52.233"
+        "description": "Twig is a template language for PHP. Prior to 3.26.0, Compiler::string() does not escape single quotes when a template name from a {% use %} tag is placed inside a PHP single-quoted string literal, al",
+        "published": "2026-07-14T22:16:55.997"
       },
       {
-        "cve_id": "CVE-2026-48561",
+        "cve_id": "CVE-2026-46634",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Twig is a template language for PHP. From 3.9.0 until 3.26.0, template_from_string() compiles an inner template under a synthesized __string_template__<hash> name that can fall outside a SourcePolicyI",
+        "published": "2026-07-14T22:16:56.130"
+      },
+      {
+        "cve_id": "CVE-2026-15773",
         "severity": "CRITICAL",
         "base_score": 9.6,
-        "description": "Improper neutralization of special elements used in a command ('command injection') in Microsoft Copilot allows an unauthorized attacker to execute code over a network.",
-        "published": "2026-07-14T17:16:49.753"
+        "description": "Use after free in Core in Google Chrome on Windows prior to 150.0.7871.125 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-07-14T21:16:43.007"
       },
       {
-        "cve_id": "CVE-2026-49798",
+        "cve_id": "CVE-2026-48284",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "ColdFusion is affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user ",
+        "published": "2026-07-14T21:16:58.043"
+      },
+      {
+        "cve_id": "CVE-2026-48322",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "ColdFusion is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of t",
+        "published": "2026-07-14T21:16:58.920"
+      },
+      {
+        "cve_id": "CVE-2026-48321",
         "severity": "CRITICAL",
         "base_score": 9.3,
-        "description": "Use after free in Windows Kernel allows an unauthorized attacker to elevate privileges locally.",
-        "published": "2026-07-14T17:16:55.857"
+        "description": "ColdFusion is affected by an Incorrect Authorization vulnerability that could result in privilege escalation. An attacker could leverage this vulnerability to gain unauthorized read and write access. ",
+        "published": "2026-07-14T21:16:58.813"
       },
       {
-        "cve_id": "CVE-2026-47632",
+        "cve_id": "CVE-2026-48325",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "ColdFusion is affected by a Missing Authentication for Critical Function vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does",
+        "published": "2026-07-14T21:16:59.143"
+      },
+      {
+        "cve_id": "CVE-2026-48319",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "ColdFusion is affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could result in arbitrary code execution in the context of the current us",
+        "published": "2026-07-14T21:16:58.600"
+      },
+      {
+        "cve_id": "CVE-2026-48324",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "ColdFusion is affected by an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability that could result in arbitrary code execution in the context of the curr",
+        "published": "2026-07-14T21:16:59.023"
+      },
+      {
+        "cve_id": "CVE-2026-52101",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "An issue in andreimarcu linux-server v.1.0 through v.2.3.8 allows a remote attacker to obtain sensitive information via the function uploadRemote function in upload.go",
+        "published": "2026-07-14T21:17:05.343"
+      },
+      {
+        "cve_id": "CVE-2026-53486",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The decompress package for Node.js extracts archives. Prior to 10.2.1 and 11.1.3, archive extraction can create files and links outside the target directory. When extracting an archive to a directory,",
+        "published": "2026-07-14T21:17:05.447"
+      },
+      {
+        "cve_id": "CVE-2026-45363",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "ruby-jwt is a Ruby implementation of the RFC 7519 OAuth JSON Web Token standard. Prior to 2.10.3 and 3.2.0, JWT.decode(token, '', true, algorithm: 'HS256') accepts an attacker-forged token because Ope",
+        "published": "2026-07-14T22:16:54.463"
+      },
+      {
+        "cve_id": "CVE-2026-48327",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "ColdFusion is affected by an Incorrect Authorization vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user in",
+        "published": "2026-07-14T21:16:59.257"
+      },
+      {
+        "cve_id": "CVE-2026-15767",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Improper certificate validation in Azure Monitor Agent allows an unauthorized attacker to elevate privileges over an adjacent network.",
-        "published": "2026-07-14T17:16:49.637"
+        "description": "Heap buffer overflow in libyuv in Google Chrome on Windows prior to 150.0.7871.125 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted video file. (Chromium security sev",
+        "published": "2026-07-14T21:16:42.187"
       },
       {
-        "cve_id": "CVE-2026-48564",
+        "cve_id": "CVE-2026-15776",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Heap-based buffer overflow in Windows DHCP Server allows an authorized attacker to execute code over a network.",
-        "published": "2026-07-14T17:16:49.873"
+        "description": "Inappropriate implementation in V8 in Google Chrome prior to 150.0.7871.125 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: H",
+        "published": "2026-07-14T21:16:43.393"
       },
       {
-        "cve_id": "CVE-2026-49178",
+        "cve_id": "CVE-2026-15738",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Heap-based buffer overflow in Active Directory Domain Services allows an authorized attacker to execute code over a network.",
-        "published": "2026-07-14T17:16:52.933"
+        "base_score": 8.5,
+        "description": "Incorrect behavior order in the Gateway API listener-rule generation in Amazon AWS Load Balancer Controller before 3.4.2 might allow an authenticated remote user to intercept, spoof, or deny another n",
+        "published": "2026-07-14T21:16:41.440"
       },
       {
-        "cve_id": "CVE-2026-49795",
+        "cve_id": "CVE-2026-48320",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in Windows Kernel allows an authorized attacker to elevate privileges locally.",
-        "published": "2026-07-14T17:16:55.377"
+        "base_score": 8.5,
+        "description": "ColdFusion is affected by a reflected Cross-Site Scripting (XSS) vulnerability. An attacker could exploit this vulnerability to inject malicious scripts into a web page, potentially gaining elevated a",
+        "published": "2026-07-14T21:16:58.703"
       },
       {
-        "cve_id": "CVE-2026-50342",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Improper access control in Windows MIDI Service Module allows an authorized attacker to elevate privileges locally.",
-        "published": "2026-07-14T17:17:00.140"
-      },
-      {
-        "cve_id": "CVE-2026-49184",
+        "cve_id": "CVE-2026-24233",
         "severity": "HIGH",
         "base_score": 8.4,
-        "description": "Heap-based buffer overflow in Windows NTFS allows an unauthorized attacker to execute code locally.",
-        "published": "2026-07-14T17:16:53.580"
-      },
-      {
-        "cve_id": "CVE-2026-50338",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Improper authentication in Azure Spring Apps allows an authorized attacker to elevate privileges over a network.",
-        "published": "2026-07-14T17:17:00.020"
-      },
-      {
-        "cve_id": "CVE-2026-42900",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows App Store allows an unauthorized attacker to elevate privileges over a network.",
-        "published": "2026-07-14T17:16:47.993"
-      },
-      {
-        "cve_id": "CVE-2026-49164",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Heap-based buffer overflow in Active Directory Domain Services allows an unauthorized attacker to execute code over a network.",
-        "published": "2026-07-14T17:16:51.033"
-      },
-      {
-        "cve_id": "CVE-2026-40400",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "Relative path traversal in Windows PowerShell allows an authorized attacker to execute code over a network.",
-        "published": "2026-07-14T17:16:47.447"
-      },
-      {
-        "cve_id": "CVE-2026-42975",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "Heap-based buffer overflow in Windows Bluetooth Port Driver allows an unauthorized attacker to execute code over an adjacent network.",
-        "published": "2026-07-14T17:16:48.157"
-      },
-      {
-        "cve_id": "CVE-2026-49169",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "Use after free in DNS Server allows an authorized attacker to execute code over a network.",
-        "published": "2026-07-14T17:16:51.813"
-      },
-      {
-        "cve_id": "CVE-2026-42982",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Improper validation of consistency within input in Windows Secure Kernel Mode allows an authorized attacker to elevate privileges locally.",
-        "published": "2026-07-14T17:16:48.330"
-      },
-      {
-        "cve_id": "CVE-2026-44800",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Windows Push Notifications allows an authorized attacker to elevate privileges locally.",
-        "published": "2026-07-14T17:16:48.667"
-      },
-      {
-        "cve_id": "CVE-2026-47296",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Improper neutralization of special elements used in an sql command ('sql injection') in SQL Server allows an authorized attacker to elevate privileges locally.",
-        "published": "2026-07-14T17:16:49.507"
+        "description": "NVIDIA TensorRT-LLM for Linux contains a vulnerability in the restricted unpickler used for model weight deserialization, where a local, unauthenticated attacker could cause deserialization of untrust",
+        "published": "2026-07-14T21:16:44.187"
       }
     ]
   },
