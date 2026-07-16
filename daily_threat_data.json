@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-16T06:10:07.284800+00:00",
+  "generated_at": "2026-07-16T09:57:25.976591+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 5,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 300,
-    "critical_count": 4,
-    "high_count": 36,
+    "total": 326,
+    "critical_count": 5,
+    "high_count": 34,
     "cves": [
       {
         "cve_id": "CVE-2026-56699",
@@ -248,6 +248,13 @@
         "base_score": 10.0,
         "description": "Wazuh Manager before 5.0.0-beta3 fails to escape the DataValue.index field when constructing OpenSearch bulk requests, allowing enrolled agents to inject arbitrary NDJSON operations. Attackers can smu",
         "published": "2026-07-15T12:18:15.293"
+      },
+      {
+        "cve_id": "CVE-2026-44986",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Penpot is an open-source design tool for design and code collaboration. Prior to 2.14.5, Penpot exposed teams_invitations.clj invitation tokens from create-team-invitations, embedded an existing profi",
+        "published": "2026-07-15T16:16:45.513"
       },
       {
         "cve_id": "CVE-2026-61451",
@@ -269,13 +276,6 @@
         "base_score": 9.1,
         "description": "Cornac before 2.6.0 contains a path traversal (Tar Slip) vulnerability that allows attackers to write arbitrary files outside the intended cache directory by supplying a crafted TAR archive containing",
         "published": "2026-07-15T14:18:10.793"
-      },
-      {
-        "cve_id": "CVE-2026-15804",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The HCM developed by MetaGuru has a SQL Injection vulnerability. Authenticated remote attackers can inject SQL commands via specific parameters, thereby compromising the confidentiality, integrity, an",
-        "published": "2026-07-15T08:16:23.100"
       },
       {
         "cve_id": "CVE-2026-35152",
@@ -306,18 +306,11 @@
         "published": "2026-07-15T12:18:20.480"
       },
       {
-        "cve_id": "CVE-2026-12512",
+        "cve_id": "CVE-2026-45805",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "The Quotes llama WordPress plugin before 3.1.6 does not properly sanitize and escape a user-supplied parameter before using it in a SQL query, allowing unauthenticated attackers to perform UNION-based",
-        "published": "2026-07-15T06:16:44.757"
-      },
-      {
-        "cve_id": "CVE-2026-15583",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "A confused-deputy flaw in Grafana MCP Server allows an unauthenticated remote attacker to exfiltrate the server's environment-configured Grafana service-account token by supplying a crafted X-Grafana-",
-        "published": "2026-07-15T08:16:22.977"
+        "base_score": 8.8,
+        "description": "Penpot is an open-source design tool for design and code collaboration. Prior to 2.15.0, Penpot MCP's mcp/packages/server/src/ReplServer.ts bound the ReplServer to 0.0.0.0:4403 and exposed an unauthen",
+        "published": "2026-07-15T16:16:45.787"
       },
       {
         "cve_id": "CVE-2026-61436",
@@ -362,6 +355,13 @@
         "published": "2026-07-15T15:16:45.327"
       },
       {
+        "cve_id": "CVE-2026-47158",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "Vaultwarden is a Bitwarden-compatible server written in Rust. Prior to 1.36.0, Vaultwarden's SSO authorization flow did not bind the OAuth state parameter accepted by /connect/authorize to the initiat",
+        "published": "2026-07-15T16:16:46.200"
+      },
+      {
         "cve_id": "CVE-2026-61435",
         "severity": "HIGH",
         "base_score": 8.2,
@@ -369,18 +369,18 @@
         "published": "2026-07-15T12:18:18.700"
       },
       {
-        "cve_id": "CVE-2026-12281",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Shibboleth WordPress plugin before 2.5.4 does not fail closed when its HTTP header identity mode is enabled without an anti-spoofing key, treating any request that carries identity headers as an a",
-        "published": "2026-07-15T06:16:43.840"
-      },
-      {
         "cve_id": "CVE-2026-56287",
         "severity": "HIGH",
         "base_score": 8.1,
         "description": "A boolean-based SQL Injection vulnerability exists in Apache Fineract's Client Search API (GET /api/v1/clients) in versions up to and including 1.14.0. The orderBy and sortOrder request parameters are",
         "published": "2026-07-15T10:16:47.507"
+      },
+      {
+        "cve_id": "CVE-2026-57821",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "A SQL Injection vulnerability exists in Apache Fineract's Office Search API (GET /api/v1/offices) in versions up to and including 1.14.0. The orderBy request parameter is concatenated into a SQL query",
+        "published": "2026-07-15T10:16:47.620"
       }
     ]
   },
