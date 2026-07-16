@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-15T20:50:05.899610+00:00",
+  "generated_at": "2026-07-16T01:45:53.479874+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 23,
+        "value": 22,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 15,
-        "score": 3.0,
+        "value": 3,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1644,
-    "recent_30d_count": 23,
+    "recent_30d_count": 22,
     "recent": [
       {
         "cve_id": "CVE-2026-46817",
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 381,
-    "critical_count": 15,
-    "high_count": 46,
+    "total": 293,
+    "critical_count": 3,
+    "high_count": 33,
     "cves": [
       {
-        "cve_id": "CVE-2026-48318",
+        "cve_id": "CVE-2026-56699",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "ColdFusion is affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could lead to arbitrary file system read. An attacker could exploit this ",
-        "published": "2026-07-14T21:16:58.493"
+        "base_score": 10.0,
+        "description": "Wazuh Manager before 5.0.0-beta3 fails to escape the DataValue.index field when constructing OpenSearch bulk requests, allowing enrolled agents to inject arbitrary NDJSON operations. Attackers can smu",
+        "published": "2026-07-15T12:18:15.293"
       },
       {
-        "cve_id": "CVE-2026-38450",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An issue in Aetopia Digital Asset Management DAM v.1.0.0 allows a remote attacker to execute arbitrary code via the name and description parameter of the Add/Update Project function",
-        "published": "2026-07-14T22:16:52.810"
-      },
-      {
-        "cve_id": "CVE-2026-46633",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Twig is a template language for PHP. Prior to 3.26.0, Compiler::string() does not escape single quotes when a template name from a {% use %} tag is placed inside a PHP single-quoted string literal, al",
-        "published": "2026-07-14T22:16:55.997"
-      },
-      {
-        "cve_id": "CVE-2026-46634",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Twig is a template language for PHP. From 3.9.0 until 3.26.0, template_from_string() compiles an inner template under a synthesized __string_template__<hash> name that can fall outside a SourcePolicyI",
-        "published": "2026-07-14T22:16:56.130"
-      },
-      {
-        "cve_id": "CVE-2026-15773",
+        "cve_id": "CVE-2026-61451",
         "severity": "CRITICAL",
         "base_score": 9.6,
-        "description": "Use after free in Core in Google Chrome on Windows prior to 150.0.7871.125 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-07-14T21:16:43.007"
+        "description": "The Grav API plugin (grav-plugin-api) before 1.0.4 does not validate the origin of the client-supplied admin_base_url field in the POST /api/v1/auth/forgot-password endpoint. The sanitizeHttpUrl() fun",
+        "published": "2026-07-15T12:18:19.897"
       },
       {
-        "cve_id": "CVE-2026-48284",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "ColdFusion is affected by an Improper Input Validation vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user ",
-        "published": "2026-07-14T21:16:58.043"
-      },
-      {
-        "cve_id": "CVE-2026-48322",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "ColdFusion is affected by an Improper Control of Generation of Code ('Code Injection') vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of t",
-        "published": "2026-07-14T21:16:58.920"
-      },
-      {
-        "cve_id": "CVE-2026-48321",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "ColdFusion is affected by an Incorrect Authorization vulnerability that could result in privilege escalation. An attacker could leverage this vulnerability to gain unauthorized read and write access. ",
-        "published": "2026-07-14T21:16:58.813"
-      },
-      {
-        "cve_id": "CVE-2026-48325",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "ColdFusion is affected by a Missing Authentication for Critical Function vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does",
-        "published": "2026-07-14T21:16:59.143"
-      },
-      {
-        "cve_id": "CVE-2026-48319",
+        "cve_id": "CVE-2026-43637",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "ColdFusion is affected by an Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability that could result in arbitrary code execution in the context of the current us",
-        "published": "2026-07-14T21:16:58.600"
+        "description": "Cornac before 2.6.0 contains a path traversal (Tar Slip) vulnerability that allows attackers to write arbitrary files outside the intended cache directory by supplying a crafted TAR archive containing",
+        "published": "2026-07-15T14:18:10.793"
       },
       {
-        "cve_id": "CVE-2026-48324",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "ColdFusion is affected by an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability that could result in arbitrary code execution in the context of the curr",
-        "published": "2026-07-14T21:16:59.023"
-      },
-      {
-        "cve_id": "CVE-2026-52101",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "An issue in andreimarcu linux-server v.1.0 through v.2.3.8 allows a remote attacker to obtain sensitive information via the function uploadRemote function in upload.go",
-        "published": "2026-07-14T21:17:05.343"
-      },
-      {
-        "cve_id": "CVE-2026-53486",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The decompress package for Node.js extracts archives. Prior to 10.2.1 and 11.1.3, archive extraction can create files and links outside the target directory. When extracting an archive to a directory,",
-        "published": "2026-07-14T21:17:05.447"
-      },
-      {
-        "cve_id": "CVE-2026-45363",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "ruby-jwt is a Ruby implementation of the RFC 7519 OAuth JSON Web Token standard. Prior to 2.10.3 and 3.2.0, JWT.decode(token, '', true, algorithm: 'HS256') accepts an attacker-forged token because Ope",
-        "published": "2026-07-14T22:16:54.463"
-      },
-      {
-        "cve_id": "CVE-2026-48327",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "ColdFusion is affected by an Incorrect Authorization vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does not require user in",
-        "published": "2026-07-14T21:16:59.257"
-      },
-      {
-        "cve_id": "CVE-2026-15767",
+        "cve_id": "CVE-2026-15804",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Heap buffer overflow in libyuv in Google Chrome on Windows prior to 150.0.7871.125 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted video file. (Chromium security sev",
-        "published": "2026-07-14T21:16:42.187"
+        "description": "The HCM developed by MetaGuru has a SQL Injection vulnerability. Authenticated remote attackers can inject SQL commands via specific parameters, thereby compromising the confidentiality, integrity, an",
+        "published": "2026-07-15T08:16:23.100"
       },
       {
-        "cve_id": "CVE-2026-15776",
+        "cve_id": "CVE-2026-35152",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Inappropriate implementation in V8 in Google Chrome prior to 150.0.7871.125 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: H",
-        "published": "2026-07-14T21:16:43.393"
+        "description": "A SQL Injection vulnerability exists in Apache Fineract's Report Execution API (runreports endpoint) in versions up to and including 1.14.0. Report parameter values are incorporated into the generated",
+        "published": "2026-07-15T10:16:46.850"
       },
       {
-        "cve_id": "CVE-2026-15738",
+        "cve_id": "CVE-2026-57996",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "phpMyFAQ before 4.1.5 contains a privilege escalation vulnerability in the user/add API endpoint that allows non-SuperAdmin administrators to create SuperAdmin accounts. A delegated administrator with",
+        "published": "2026-07-15T12:18:16.143"
+      },
+      {
+        "cve_id": "CVE-2026-58655",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The bundled Grav Flex Objects plugin (getgrav/grav-plugin-flex-objects) before 1.4.0 contains a stored server-side template injection vulnerability. When rendering dynamic collection or object titles,",
+        "published": "2026-07-15T12:18:17.367"
+      },
+      {
+        "cve_id": "CVE-2026-61457",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Grav API plugin (getgrav/grav-plugin-api) before 1.0.3 contains a file upload extension bypass in the API media controller. HandlesMediaUploads::validateFileExtension() inspects only the final fil",
+        "published": "2026-07-15T12:18:20.480"
+      },
+      {
+        "cve_id": "CVE-2026-12512",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "The Quotes llama WordPress plugin before 3.1.6 does not properly sanitize and escape a user-supplied parameter before using it in a SQL query, allowing unauthenticated attackers to perform UNION-based",
+        "published": "2026-07-15T06:16:44.757"
+      },
+      {
+        "cve_id": "CVE-2026-15583",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "A confused-deputy flaw in Grafana MCP Server allows an unauthenticated remote attacker to exfiltrate the server's environment-configured Grafana service-account token by supplying a crafted X-Grafana-",
+        "published": "2026-07-15T08:16:22.977"
+      },
+      {
+        "cve_id": "CVE-2026-61436",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "PraisonAI before 4.6.78 fails to verify Svix webhook signatures in AgentMail webhook mode, allowing unauthenticated attackers to forge message.received events. Attackers can send crafted JSON payloads",
+        "published": "2026-07-15T12:18:18.847"
+      },
+      {
+        "cve_id": "CVE-2026-61430",
         "severity": "HIGH",
         "base_score": 8.5,
-        "description": "Incorrect behavior order in the Gateway API listener-rule generation in Amazon AWS Load Balancer Controller before 3.4.2 might allow an authenticated remote user to intercept, spoof, or deny another n",
-        "published": "2026-07-14T21:16:41.440"
+        "description": "PraisonAI before 1.6.78 contains a server-side request forgery vulnerability in the web_crawl tool that validates hostnames at check time but re-resolves them at connection time without IP pinning. At",
+        "published": "2026-07-15T12:18:18.410"
       },
       {
-        "cve_id": "CVE-2026-48320",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "ColdFusion is affected by a reflected Cross-Site Scripting (XSS) vulnerability. An attacker could exploit this vulnerability to inject malicious scripts into a web page, potentially gaining elevated a",
-        "published": "2026-07-14T21:16:58.703"
-      },
-      {
-        "cve_id": "CVE-2026-24233",
+        "cve_id": "CVE-2026-61446",
         "severity": "HIGH",
         "base_score": 8.4,
-        "description": "NVIDIA TensorRT-LLM for Linux contains a vulnerability in the restricted unpickler used for model weight deserialization, where a local, unauthenticated attacker could cause deserialization of untrust",
-        "published": "2026-07-14T21:16:44.187"
+        "description": "PraisonAI (praisonaiagents) before 1.6.78 contains a remote code execution vulnerability in the plugin manager, which loads and executes arbitrary Python (.py) files from project-level and user-home .",
+        "published": "2026-07-15T12:18:19.607"
+      },
+      {
+        "cve_id": "CVE-2026-56400",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "open-webui before 0.3.14 contains a cross-origin resource sharing misconfiguration allowing arbitrary origins with allow_origins=* and authenticated requests to the /api/v1/functions endpoint. Attacke",
+        "published": "2026-07-15T12:18:03.017"
+      },
+      {
+        "cve_id": "CVE-2026-55723",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "When NGINX Ingress Controller is configured with Custom Resource Definitions (CRDs) or Ingress annotations, an injection vulnerability exists in the configuration generator of NGINX Ingress Controller",
+        "published": "2026-07-15T15:16:45.327"
+      },
+      {
+        "cve_id": "CVE-2026-61435",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "PraisonAI before 4.6.78 contains an authentication bypass in the Call API agent invocation endpoints (src/praisonai/praisonai/api/agent_invoke.py) when PRAISONAI_CALL_AUTH=disabled is configured. The ",
+        "published": "2026-07-15T12:18:18.700"
+      },
+      {
+        "cve_id": "CVE-2026-12281",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The Shibboleth WordPress plugin before 2.5.4 does not fail closed when its HTTP header identity mode is enabled without an anti-spoofing key, treating any request that carries identity headers as an a",
+        "published": "2026-07-15T06:16:43.840"
+      },
+      {
+        "cve_id": "CVE-2026-56287",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "A boolean-based SQL Injection vulnerability exists in Apache Fineract's Client Search API (GET /api/v1/clients) in versions up to and including 1.14.0. The orderBy and sortOrder request parameters are",
+        "published": "2026-07-15T10:16:47.507"
+      },
+      {
+        "cve_id": "CVE-2026-57821",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "A SQL Injection vulnerability exists in Apache Fineract's Office Search API (GET /api/v1/offices) in versions up to and including 1.14.0. The orderBy request parameter is concatenated into a SQL query",
+        "published": "2026-07-15T10:16:47.620"
+      },
+      {
+        "cve_id": "CVE-2026-61443",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "PraisonAI before 1.6.78 contains a remote code execution vulnerability in SkillTools.run_skill_script() that executes scripts without path containment validation. Attackers can supply absolute file pa",
+        "published": "2026-07-15T12:18:19.467"
       }
     ]
   },
