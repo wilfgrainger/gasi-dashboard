@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-16T17:03:16.722579+00:00",
+  "generated_at": "2026-07-16T20:46:05.501046+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 22,
+        "value": 25,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
-        "score": 2.5,
+        "value": 14,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -32,9 +32,39 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1644,
-    "recent_30d_count": 22,
+    "total_catalog_count": 1647,
+    "recent_30d_count": 25,
     "recent": [
+      {
+        "cve_id": "CVE-2026-58644",
+        "vendor": "Microsoft",
+        "product": "SharePoint",
+        "name": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability",
+        "date_added": "2026-07-16",
+        "due_date": "2026-07-19",
+        "description": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability that allows an unauthorized attacker to execute code over a network.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-25089",
+        "vendor": "Fortinet",
+        "product": "FortiSandbox",
+        "name": "Fortinet FortiSandbox OS Command Injection Vulnerability",
+        "date_added": "2026-07-16",
+        "due_date": "2026-07-19",
+        "description": "Fortinet FortiSandbox, FortiSandbox Cloud, and FortiSandbox PaaS contain an OS command injection vulnerability that allows an unauthenticated attacker to execute unauthorized commands via specifically",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-39808",
+        "vendor": "Fortinet",
+        "product": "FortiSandbox",
+        "name": "Fortinet FortiSandbox OS Command Injection Vulnerability",
+        "date_added": "2026-07-16",
+        "due_date": "2026-07-19",
+        "description": "Fortinet FortiSandbox contains an OS command injection vulnerability that could allow an unauthenticated attacker to execute unauthorized code or commands via crafted HTTP requests.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-46817",
         "vendor": "Oracle",
@@ -204,183 +234,153 @@
         "due_date": "2026-06-28",
         "description": "Cisco Unified Communications Manager (Unified CM) and Cisco Unified Communications Manager Session Management Edition (Unified CM SME) contain a server-side request forgery (SSRF) Vulnerability that c",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2025-67038",
-        "vendor": "Lantronix",
-        "product": "EDS5000",
-        "name": "Lantronix EDS5000 Code Injection Vulnerability",
-        "date_added": "2026-06-23",
-        "due_date": "2026-06-26",
-        "description": "Lantronix EDS5000 contains a code injection vulnerability that could allow attackers to inject arbitrary OS commands into the username parameter. Injected commands are executed with root privileges.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-34910",
-        "vendor": "Ubiquiti",
-        "product": "UniFi OS",
-        "name": "Ubiquiti UniFi OS Improper Input Validation Vulnerability",
-        "date_added": "2026-06-23",
-        "due_date": "2026-06-26",
-        "description": "Ubiquiti UniFi OS contains an improper input validation vulnerability which could allow a malicious actor with access to the network to conduct command injection.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-34909",
-        "vendor": "Ubiquiti",
-        "product": "UniFi OS",
-        "name": "Ubiquiti UniFi OS Path Traversal Vulnerability",
-        "date_added": "2026-06-23",
-        "due_date": "2026-06-26",
-        "description": "Ubiquiti UniFi OS contains a path traversal vulnerability which could allow a malicious actor with access to the network to access files on the underlying system that could be manipulated to access an",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 265,
-    "critical_count": 7,
-    "high_count": 37,
+    "total": 246,
+    "critical_count": 14,
+    "high_count": 26,
     "cves": [
       {
-        "cve_id": "CVE-2026-14960",
+        "cve_id": "CVE-2026-46339",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "9Router is an AI router & token saver. From 0.4.30 until 0.4.37, 9Router's src/proxy.js middleware did not protect /api/cli-tools/* and /api/mcp/*, allowing unauthenticated registration of customPlugi",
+        "published": "2026-07-15T21:16:50.067"
+      },
+      {
+        "cve_id": "CVE-2026-52887",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "NocoBase is an AI-powered no-code/low-code platform for building business applications and enterprise solutions. Prior to 2.0.61, NocoBase @nocobase/plugin-notification-in-app-message exposed GET /api",
+        "published": "2026-07-15T21:16:54.543"
+      },
+      {
+        "cve_id": "CVE-2026-54052",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "n8n-MCP is an MCP server that provides AI assistants access to n8n node documentation, properties, and operations. Prior to 2.56.1, in HTTP mode with multi-tenancy enabled through ENABLE_MULTI_TENANT=",
+        "published": "2026-07-15T21:16:54.797"
+      },
+      {
+        "cve_id": "CVE-2026-52891",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Wekan is open source kanban built with Meteor. Prior to 9.07, Wekan avatar upload functionality embeds user-supplied filenames into paths later passed to child_process.exec() for MIME-type detection. ",
+        "published": "2026-07-15T22:17:16.450"
+      },
+      {
+        "cve_id": "CVE-2026-49352",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Pegatron `Tdelo64.sys` improperly exposes privileged hardware access functionality through the `\\\\.\\TdeIo` device interface. IOCTL handlers including `TDE_IOCTL_INDEXIO_READ` and `TDE_IOCTL_INDEXIO_WR",
-        "published": "2026-07-15T18:16:44.540"
+        "description": "9Router is an AI router & token saver. From 0.2.21 until 0.4.44, 9Router used the hardcoded fallback JWT secret 9router-default-secret-change-me in src/app/api/auth/login/route.js, src/middleware.js, ",
+        "published": "2026-07-15T21:16:53.743"
       },
       {
-        "cve_id": "CVE-2026-53513",
+        "cve_id": "CVE-2026-51380",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Buffer Overflow vulnerability in Tenda AC10 v3 (firmware V03.03.16.09) allows attackers to cause a permanent Denial of Service (DoS) or potentially execute remote code via the /cgi-bin/UploadCfg endpo",
+        "published": "2026-07-15T21:16:54.437"
+      },
+      {
+        "cve_id": "CVE-2025-65720",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An issue in Open Source GPT Researcher v3.3.7 allows attackers to execute arbitrary commands on a victim system via user interaction with a crafted HTML page.",
+        "published": "2026-07-15T22:16:45.417"
+      },
+      {
+        "cve_id": "CVE-2026-30618",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "xszyou Fay 4.3.1 contains a remote code execution vulnerability in its MCP STDIO server management and command execution handling. A remote attacker can access the publicly exposed MCP management inte",
+        "published": "2026-07-15T22:16:46.210"
+      },
+      {
+        "cve_id": "CVE-2026-30623",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "LiteLLM 1.18.10 contains a remote code execution vulnerability in its MCP server creation functionality. The application allows users to add MCP servers via a JSON configuration specifying arbitrary c",
+        "published": "2026-07-15T22:16:46.317"
+      },
+      {
+        "cve_id": "CVE-2026-55652",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Wekan is open source kanban built with Meteor. Prior to 9.46, header-login with HEADER_LOGIN_TRUSTED_IPS uses getRequestIp() in server/lib/headerLoginAuth.js to trust the client-supplied X-Forwarded-F",
+        "published": "2026-07-15T22:17:26.293"
+      },
+      {
+        "cve_id": "CVE-2026-15013",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The SAML Single Sign On \u2013 SSO Login plugin for WordPress is vulnerable to Authentication Bypass via SAML Signature Algorithm Confusion in all versions up to, and including, 5.4.3. The vulnerability ex",
+        "published": "2026-07-16T05:16:18.043"
+      },
+      {
+        "cve_id": "CVE-2026-12492",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Happy Coders OTP Login for WooCommerce WordPress plugin before 2.8 does not verify that a one-time password was actually validated before authenticating a user based on a supplied identifier, allo",
+        "published": "2026-07-16T07:16:46.787"
+      },
+      {
+        "cve_id": "CVE-2026-54458",
         "severity": "CRITICAL",
         "base_score": 9.6,
-        "description": "Better Auth is an authentication and authorization library for TypeScript. Prior to 1.6.11, the @better-auth/sso plugin's POST /sso/register and POST /sso/update-provider endpoints accept attacker-con",
-        "published": "2026-07-15T18:16:47.547"
+        "description": "WWBN AVideo is an open source video platform. Versions prior to 29.0 contain a stored DOM Cross-Site Scripting vulnerability in the YPTSocket plugin. Any unauthenticated remote attacker can execute ar",
+        "published": "2026-07-15T22:17:19.160"
       },
       {
-        "cve_id": "CVE-2026-62948",
+        "cve_id": "CVE-2026-26718",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "OpenWrt is a Linux operating system targeting embedded devices. Prior to 25.12.5, odhcpd writes a DHCPv6 client FQDN option 39 hostname into /tmp/odhcpd.leases through src/statefiles.c statefiles_writ",
-        "published": "2026-07-15T18:16:50.293"
+        "base_score": 9.1,
+        "description": "A Cross-Site Request Forgery (CSRF) vulnerability exists in the xxl-job-admin web application v.3.0.0 that allows an attacker to perform unauthorized modifications to Glue IDE shell scripts. The affec",
+        "published": "2026-07-15T22:16:45.980"
       },
       {
-        "cve_id": "CVE-2026-52842",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Lightpanda is a headless browser designed for AI and automation. Prior to 0.3.1, Lightpanda searched for @ across the entire URL string instead of only the authority component when computing a page or",
-        "published": "2026-07-15T17:16:50.317"
-      },
-      {
-        "cve_id": "CVE-2026-52843",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Lightpanda is a headless browser designed for AI and automation. Prior to 0.2.9, Lightpanda fetch() and XMLHttpRequest unconditionally attached session cookies to every HTTP request, ignoring credenti",
-        "published": "2026-07-15T17:16:50.467"
-      },
-      {
-        "cve_id": "CVE-2026-49445",
-        "severity": "CRITICAL",
-        "base_score": 9.2,
-        "description": "Cilium is a networking, observability, and security solution. Prior to 1.17.14, 1.18.8, and 1.19.2, when Cilium L7 functionality is enabled, the embedded or standalone Envoy instance creates a world-a",
-        "published": "2026-07-15T20:17:10.453"
-      },
-      {
-        "cve_id": "CVE-2026-62378",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "RustFS Console is a web management console for the RustFS distributed file system. From 0.1.7 until 0.1.10, the RustFS Console components/object/preview-modal.tsx and components/object/pdf-viewer.tsx ",
-        "published": "2026-07-15T17:16:53.020"
-      },
-      {
-        "cve_id": "CVE-2026-20150",
+        "cve_id": "CVE-2026-62312",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco RoomOS engineering team has conducted a comprehensive internal security review. This review resulted in a sof",
-        "published": "2026-07-15T17:16:47.110"
+        "description": "9Router is an AI router & token saver. Prior to 0.5.2, 9Router allows a remote authenticated attacker to achieve arbitrary code execution on the host operating system by combining a Host header bypass",
+        "published": "2026-07-15T21:16:55.810"
       },
       {
-        "cve_id": "CVE-2026-40501",
+        "cve_id": "CVE-2026-12525",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Cherry Studio versions 1.2.2 through 1.9.12, fixed in commit 1518530, contain a remote code execution vulnerability in SearchService that allows remote attackers to execute arbitrary code by deliverin",
-        "published": "2026-07-15T18:16:45.230"
+        "description": "The Redux Framework WordPress plugin before 4.5.13 does not restrict which user meta keys can be written when saving custom profile fields, allowing users with at least the Subscriber role to escalate",
+        "published": "2026-07-16T07:16:46.987"
       },
       {
-        "cve_id": "CVE-2026-10673",
+        "cve_id": "CVE-2026-13741",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "The Zephyr ADIN2111/ADIN1110 10BASE-T1S/T1L Ethernet driver (drivers/ethernet/eth_adin2111.c) reassembles received Ethernet frames in OPEN Alliance (OA) SPI mode by copying device-supplied 64-byte dat",
-        "published": "2026-07-15T18:16:44.180"
+        "base_score": 8.8,
+        "description": "The Digits: WordPress Mobile Number Signup and Login plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 9.1.0.5. This is due to missing authorization and ",
+        "published": "2026-07-16T09:16:16.553"
       },
       {
-        "cve_id": "CVE-2026-20296",
+        "cve_id": "CVE-2026-15005",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "In Splunk Enterprise versions below 10.4.1, 10.2.5, 10.0.8, and 9.4.13, and Splunk Cloud Platform versions below 10.5.2605.0, 10.4.2604.7, 10.3.2512.16, 10.2.2510.18, and 10.1.2507.24, an attacker cou",
-        "published": "2026-07-15T18:16:44.740"
+        "base_score": 8.8,
+        "description": "The Loco Translate plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 2.8.5. This is due to missing or incorrect nonce validation on the execTemplat",
+        "published": "2026-07-16T09:16:17.060"
       },
       {
-        "cve_id": "CVE-2026-53516",
+        "cve_id": "CVE-2026-15103",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Better Auth is an authentication and authorization library for TypeScript. Prior to 1.6.11, Better Auth's OAuth callback auto-link gate in handleOAuthUserInfo accepts implicit account linking when the",
-        "published": "2026-07-15T18:16:47.967"
+        "base_score": 8.8,
+        "description": "The WPFunnels \u2013 Funnel Builder for WooCommerce with Checkout & One Click Upsell plugin for WordPress is vulnerable to Privilege Escalation via arbitrary option update in all versions up to, and includ",
+        "published": "2026-07-16T09:16:17.677"
       },
       {
-        "cve_id": "CVE-2026-59258",
+        "cve_id": "CVE-2026-48795",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "immich before 3.0.3 contains a broken access control vulnerability in the PUT /albums/:id/user/:userId endpoint that allows shared album editors to modify member roles without owner-only restrictions.",
-        "published": "2026-07-15T18:16:49.150"
-      },
-      {
-        "cve_id": "CVE-2026-62349",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "TDengine is an open source, time-series database optimized for Internet of Things devices. In 3.4.1.6 and earlier, source/libs/parser/src/parUtil.c trimString() checks space for only one byte before p",
-        "published": "2026-07-15T19:18:37.347"
-      },
-      {
-        "cve_id": "CVE-2026-12382",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "A flaw was found in the AAP Gateway Envoy proxy configuration. The non-mTLS route to EDA event streams does not remove the Subject HTTP header from client requests, despite the source code defining re",
-        "published": "2026-07-15T18:16:44.307"
-      },
-      {
-        "cve_id": "CVE-2026-58658",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "GPUStack through 2.2.1, fixed in commit 4e20551, contains an unauthenticated information disclosure vulnerability that allows unauthenticated attackers to access sensitive inference logs and modify wo",
-        "published": "2026-07-15T18:16:48.607"
-      },
-      {
-        "cve_id": "CVE-2026-46485",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Dashy is a self-hostable personal dashboard. Prior to 4.0.8, Dashy deployments using OIDC can allow unauthenticated users or non-admin authenticated users to write changes to the main config.yaml thro",
-        "published": "2026-07-15T19:17:17.657"
-      },
-      {
-        "cve_id": "CVE-2026-20156",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco RoomOS engineering team has conducted a comprehensive internal security review. This review resulted in a sof",
-        "published": "2026-07-15T17:16:47.380"
-      },
-      {
-        "cve_id": "CVE-2026-53517",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Better Auth is an authentication and authorization library for TypeScript. From 1.4.8-beta.7 until 1.6.11, the @better-auth/oauth-provider POST /oauth2/token endpoint on the refresh_token grant perfor",
-        "published": "2026-07-15T18:16:48.107"
-      },
-      {
-        "cve_id": "CVE-2026-58660",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Kanboard through 1.2.52, fixed in commit 564cc30, BoardAjaxController save() method (used by the kanban board drag-and-drop endpoint) validates the caller's role on the attacker-supplied project_id bu",
-        "published": "2026-07-15T18:16:48.880"
+        "base_score": 8.6,
+        "description": "AdonisJS is a TypeScript-first web framework. From 10.1.3 until 10.1.5 and 11.0.3, AdonisJS @adonisjs/bodyparser incompletely fixed CVE-2026-25754 because nested multipart field payloads such as user.",
+        "published": "2026-07-15T22:16:50.383"
       }
     ]
   },
