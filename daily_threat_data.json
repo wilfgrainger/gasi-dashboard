@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T09:57:25.976591+00:00",
+  "generated_at": "2026-07-16T13:21:19.061929+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
+        "value": 8,
         "score": 2.5,
         "max": 3
       },
@@ -238,16 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 326,
-    "critical_count": 5,
-    "high_count": 34,
+    "total": 275,
+    "critical_count": 8,
+    "high_count": 40,
     "cves": [
       {
-        "cve_id": "CVE-2026-56699",
+        "cve_id": "CVE-2026-50148",
         "severity": "CRITICAL",
         "base_score": 10.0,
-        "description": "Wazuh Manager before 5.0.0-beta3 fails to escape the DataValue.index field when constructing OpenSearch bulk requests, allowing enrolled agents to inject arbitrary NDJSON operations. Attackers can smu",
-        "published": "2026-07-15T12:18:15.293"
+        "description": "Metabase is an open-source business intelligence and embedded analytics tool. From 1.54.0 until 1.54.24, 1.55.24, 1.56.25, 1.57.19, 1.58.14, 1.59.10, and 1.60.4, a Metabase user with permission to add",
+        "published": "2026-07-15T16:16:47.963"
       },
       {
         "cve_id": "CVE-2026-44986",
@@ -257,11 +257,11 @@
         "published": "2026-07-15T16:16:45.513"
       },
       {
-        "cve_id": "CVE-2026-61451",
+        "cve_id": "CVE-2026-53513",
         "severity": "CRITICAL",
         "base_score": 9.6,
-        "description": "The Grav API plugin (grav-plugin-api) before 1.0.4 does not validate the origin of the client-supplied admin_base_url field in the POST /api/v1/auth/forgot-password endpoint. The sanitizeHttpUrl() fun",
-        "published": "2026-07-15T12:18:19.897"
+        "description": "Better Auth is an authentication and authorization library for TypeScript. Prior to 1.6.11, the @better-auth/sso plugin's POST /sso/register and POST /sso/update-provider endpoints accept attacker-con",
+        "published": "2026-07-15T18:16:47.547"
       },
       {
         "cve_id": "CVE-2026-61736",
@@ -271,6 +271,20 @@
         "published": "2026-07-15T15:16:48.217"
       },
       {
+        "cve_id": "CVE-2026-52842",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Lightpanda is a headless browser designed for AI and automation. Prior to 0.3.1, Lightpanda searched for @ across the entire URL string instead of only the authority component when computing a page or",
+        "published": "2026-07-15T17:16:50.317"
+      },
+      {
+        "cve_id": "CVE-2026-52843",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Lightpanda is a headless browser designed for AI and automation. Prior to 0.2.9, Lightpanda fetch() and XMLHttpRequest unconditionally attached session cookies to every HTTP request, ignoring credenti",
+        "published": "2026-07-15T17:16:50.467"
+      },
+      {
         "cve_id": "CVE-2026-43637",
         "severity": "CRITICAL",
         "base_score": 9.1,
@@ -278,32 +292,11 @@
         "published": "2026-07-15T14:18:10.793"
       },
       {
-        "cve_id": "CVE-2026-35152",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A SQL Injection vulnerability exists in Apache Fineract's Report Execution API (runreports endpoint) in versions up to and including 1.14.0. Report parameter values are incorporated into the generated",
-        "published": "2026-07-15T10:16:46.850"
-      },
-      {
-        "cve_id": "CVE-2026-57996",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "phpMyFAQ before 4.1.5 contains a privilege escalation vulnerability in the user/add API endpoint that allows non-SuperAdmin administrators to create SuperAdmin accounts. A delegated administrator with",
-        "published": "2026-07-15T12:18:16.143"
-      },
-      {
-        "cve_id": "CVE-2026-58655",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The bundled Grav Flex Objects plugin (getgrav/grav-plugin-flex-objects) before 1.4.0 contains a stored server-side template injection vulnerability. When rendering dynamic collection or object titles,",
-        "published": "2026-07-15T12:18:17.367"
-      },
-      {
-        "cve_id": "CVE-2026-61457",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Grav API plugin (getgrav/grav-plugin-api) before 1.0.3 contains a file upload extension bypass in the API media controller. HandlesMediaUploads::validateFileExtension() inspects only the final fil",
-        "published": "2026-07-15T12:18:20.480"
+        "cve_id": "CVE-2026-62378",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "RustFS Console is a web management console for the RustFS distributed file system. From 0.1.7 until 0.1.10, the RustFS Console components/object/preview-modal.tsx and components/object/pdf-viewer.tsx ",
+        "published": "2026-07-15T17:16:53.020"
       },
       {
         "cve_id": "CVE-2026-45805",
@@ -313,11 +306,25 @@
         "published": "2026-07-15T16:16:45.787"
       },
       {
-        "cve_id": "CVE-2026-61436",
+        "cve_id": "CVE-2026-55242",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "PraisonAI before 4.6.78 fails to verify Svix webhook signatures in AgentMail webhook mode, allowing unauthenticated attackers to forge message.received events. Attackers can send crafted JSON payloads",
-        "published": "2026-07-15T12:18:18.847"
+        "base_score": 8.8,
+        "description": "ERPNext is a free and open source Enterprise Resource Planning tool. Prior to 15.111.0 and 16.22.0, an authenticated user with a standard operational role can trigger server-side template injection th",
+        "published": "2026-07-15T16:16:48.960"
+      },
+      {
+        "cve_id": "CVE-2026-20150",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco RoomOS engineering team has conducted a comprehensive internal security review. This review resulted in a sof",
+        "published": "2026-07-15T17:16:47.110"
+      },
+      {
+        "cve_id": "CVE-2026-40501",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Cherry Studio versions 1.2.2 through 1.9.12, fixed in commit 1518530, contain a remote code execution vulnerability in SearchService that allows remote attackers to execute arbitrary code by deliverin",
+        "published": "2026-07-15T18:16:45.230"
       },
       {
         "cve_id": "CVE-2026-61836",
@@ -325,27 +332,6 @@
         "base_score": 8.6,
         "description": "Directus is a real-time API and App dashboard for managing SQL database content. Prior to 12.0.0, when response caching is enabled, the cache-key derivation in api/src/utils/get-cache-key.ts includes ",
         "published": "2026-07-15T15:16:48.603"
-      },
-      {
-        "cve_id": "CVE-2026-61430",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "PraisonAI before 1.6.78 contains a server-side request forgery vulnerability in the web_crawl tool that validates hostnames at check time but re-resolves them at connection time without IP pinning. At",
-        "published": "2026-07-15T12:18:18.410"
-      },
-      {
-        "cve_id": "CVE-2026-61446",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "PraisonAI (praisonaiagents) before 1.6.78 contains a remote code execution vulnerability in the plugin manager, which loads and executes arbitrary Python (.py) files from project-level and user-home .",
-        "published": "2026-07-15T12:18:19.607"
-      },
-      {
-        "cve_id": "CVE-2026-56400",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "open-webui before 0.3.14 contains a cross-origin resource sharing misconfiguration allowing arbitrary origins with allow_origins=* and authenticated requests to the /api/v1/functions endpoint. Attacke",
-        "published": "2026-07-15T12:18:03.017"
       },
       {
         "cve_id": "CVE-2026-55723",
@@ -362,25 +348,39 @@
         "published": "2026-07-15T16:16:46.200"
       },
       {
-        "cve_id": "CVE-2026-61435",
+        "cve_id": "CVE-2026-10673",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "The Zephyr ADIN2111/ADIN1110 10BASE-T1S/T1L Ethernet driver (drivers/ethernet/eth_adin2111.c) reassembles received Ethernet frames in OPEN Alliance (OA) SPI mode by copying device-supplied 64-byte dat",
+        "published": "2026-07-15T18:16:44.180"
+      },
+      {
+        "cve_id": "CVE-2026-20296",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "In Splunk Enterprise versions below 10.4.1, 10.2.5, 10.0.8, and 9.4.13, and Splunk Cloud Platform versions below 10.5.2605.0, 10.4.2604.7, 10.3.2512.16, 10.2.2510.18, and 10.1.2507.24, an attacker cou",
+        "published": "2026-07-15T18:16:44.740"
+      },
+      {
+        "cve_id": "CVE-2026-53516",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "Better Auth is an authentication and authorization library for TypeScript. Prior to 1.6.11, Better Auth's OAuth callback auto-link gate in handleOAuthUserInfo accepts implicit account linking when the",
+        "published": "2026-07-15T18:16:47.967"
+      },
+      {
+        "cve_id": "CVE-2026-60005",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "PraisonAI before 4.6.78 contains an authentication bypass in the Call API agent invocation endpoints (src/praisonai/praisonai/api/agent_invoke.py) when PRAISONAI_CALL_AUTH=disabled is configured. The ",
-        "published": "2026-07-15T12:18:18.700"
+        "description": "NGINX Plus and NGINX Open Source have a vulnerability in the ngx_http_slice_module module. When the slice\u00a0directive and unnamed regex captures are configured or when a background cache update happens,",
+        "published": "2026-07-15T16:16:49.820"
       },
       {
-        "cve_id": "CVE-2026-56287",
+        "cve_id": "CVE-2026-12382",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "A boolean-based SQL Injection vulnerability exists in Apache Fineract's Client Search API (GET /api/v1/clients) in versions up to and including 1.14.0. The orderBy and sortOrder request parameters are",
-        "published": "2026-07-15T10:16:47.507"
-      },
-      {
-        "cve_id": "CVE-2026-57821",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "A SQL Injection vulnerability exists in Apache Fineract's Office Search API (GET /api/v1/offices) in versions up to and including 1.14.0. The orderBy request parameter is concatenated into a SQL query",
-        "published": "2026-07-15T10:16:47.620"
+        "base_score": 8.2,
+        "description": "A flaw was found in the AAP Gateway Envoy proxy configuration. The non-mTLS route to EDA event streams does not remove the Subject HTTP header from client requests, despite the source code defining re",
+        "published": "2026-07-15T18:16:44.307"
       }
     ]
   },
