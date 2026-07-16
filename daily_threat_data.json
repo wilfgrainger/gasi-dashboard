@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-16T01:45:53.479874+00:00",
+  "generated_at": "2026-07-16T06:10:07.284800+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
+        "value": 4,
         "score": 2.0,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 293,
-    "critical_count": 3,
-    "high_count": 33,
+    "total": 300,
+    "critical_count": 4,
+    "high_count": 36,
     "cves": [
       {
         "cve_id": "CVE-2026-56699",
@@ -255,6 +255,13 @@
         "base_score": 9.6,
         "description": "The Grav API plugin (grav-plugin-api) before 1.0.4 does not validate the origin of the client-supplied admin_base_url field in the POST /api/v1/auth/forgot-password endpoint. The sanitizeHttpUrl() fun",
         "published": "2026-07-15T12:18:19.897"
+      },
+      {
+        "cve_id": "CVE-2026-61736",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "LightRAG provides simple and fast retrieval-augmented generation. Prior to 1.5.4, the server defaults to CORS_ORIGINS=* combined with allow_credentials=True in lightrag/api/lightrag_server.py, causing",
+        "published": "2026-07-15T15:16:48.217"
       },
       {
         "cve_id": "CVE-2026-43637",
@@ -320,6 +327,13 @@
         "published": "2026-07-15T12:18:18.847"
       },
       {
+        "cve_id": "CVE-2026-61836",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Directus is a real-time API and App dashboard for managing SQL database content. Prior to 12.0.0, when response caching is enabled, the cache-key derivation in api/src/utils/get-cache-key.ts includes ",
+        "published": "2026-07-15T15:16:48.603"
+      },
+      {
         "cve_id": "CVE-2026-61430",
         "severity": "HIGH",
         "base_score": 8.5,
@@ -367,20 +381,6 @@
         "base_score": 8.1,
         "description": "A boolean-based SQL Injection vulnerability exists in Apache Fineract's Client Search API (GET /api/v1/clients) in versions up to and including 1.14.0. The orderBy and sortOrder request parameters are",
         "published": "2026-07-15T10:16:47.507"
-      },
-      {
-        "cve_id": "CVE-2026-57821",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "A SQL Injection vulnerability exists in Apache Fineract's Office Search API (GET /api/v1/offices) in versions up to and including 1.14.0. The orderBy request parameter is concatenated into a SQL query",
-        "published": "2026-07-15T10:16:47.620"
-      },
-      {
-        "cve_id": "CVE-2026-61443",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "PraisonAI before 1.6.78 contains a remote code execution vulnerability in SkillTools.run_skill_script() that executes scripts without path containment validation. Attackers can supply absolute file pa",
-        "published": "2026-07-15T12:18:19.467"
       }
     ]
   },
