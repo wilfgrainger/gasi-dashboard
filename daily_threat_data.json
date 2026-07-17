@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-17T09:47:22.517618+00:00",
+  "generated_at": "2026-07-17T13:05:49.490798+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 11,
-        "score": 3.0,
+        "value": 9,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,8 +238,8 @@
     ]
   },
   "nvd": {
-    "total": 267,
-    "critical_count": 11,
+    "total": 269,
+    "critical_count": 9,
     "high_count": 22,
     "cves": [
       {
@@ -250,18 +250,11 @@
         "published": "2026-07-16T18:16:43.517"
       },
       {
-        "cve_id": "CVE-2023-49899",
+        "cve_id": "CVE-2026-46512",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An unauthenticated remote attacker can\u00a0execute any command on the affected device due to not correctly verifying the origin of a communication channel.",
-        "published": "2026-07-16T11:16:35.597"
-      },
-      {
-        "cve_id": "CVE-2023-49900",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An unauthenticated remote attacker is able to perform remote code execution\u00a0due to incorrectly sanitized user input in the SetParameter command.",
-        "published": "2026-07-16T11:16:36.597"
+        "base_score": 9.9,
+        "description": "Frogman provides headless PBX control through MCP and HTTP API. Prior to 1.6.2, fm_dialplan_apply accepted template parameters including greeting, dest, url, extension, code, and file, and Tools/Dialp",
+        "published": "2026-07-16T19:16:46.510"
       },
       {
         "cve_id": "CVE-2026-45695",
@@ -283,13 +276,6 @@
         "base_score": 9.8,
         "description": "Grafana OnCall through 1.16.11 contains an unauthenticated access vulnerability that allows remote attackers to obtain a valid PluginAuthToken by sending a POST request to the internal plugin install ",
         "published": "2026-07-16T17:16:58.703"
-      },
-      {
-        "cve_id": "CVE-2026-22752",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Authentication bypass by primary weakness vulnerability in Spring Security Spring Authorization Server.\n\nThis issue affects Spring Authorization Server: from 7.0.0 through 7.0.4, from 1.5.0 through 1.",
-        "published": "2026-07-16T10:16:24.767"
       },
       {
         "cve_id": "CVE-2026-14890",
@@ -362,25 +348,39 @@
         "published": "2026-07-16T17:16:58.833"
       },
       {
-        "cve_id": "CVE-2026-35147",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "HCL DFXServer is affected by a Broken Authentication vulnerability via direct API access. The application fails to verify the user's authentication status when accessing specific API endpoints, allowi",
-        "published": "2026-07-16T12:17:35.617"
-      },
-      {
-        "cve_id": "CVE-2026-35149",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "HCL DFXServer is affected by an Authentication Bypass vulnerability via server response manipulation. An unauthorized user without valid credentials can exploit this flaw by intercepting and altering ",
-        "published": "2026-07-16T12:17:35.870"
-      },
-      {
         "cve_id": "CVE-2026-45325",
         "severity": "HIGH",
         "base_score": 8.2,
         "description": "Gestor de Oferta is a web application for managing mobility service offerings. Prior to 20260509.0340.15, @tmlmobilidade/utils has a prototype pollution vulnerability in setValueAtPath() in packages/u",
         "published": "2026-07-16T17:16:56.160"
+      },
+      {
+        "cve_id": "CVE-2026-63304",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "AVideo through 29.0 contains an OS command injection vulnerability in plugin/API/standAlone/functions.php where the listFFmpegProcesses() function interpolates unsanitized keyword parameters inside si",
+        "published": "2026-07-16T13:16:33.320"
+      },
+      {
+        "cve_id": "CVE-2026-63305",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "AVideo through 29.0 contains an OS command injection vulnerability in the ffmpeg.json.php endpoint where notifyCode and callback parameters are concatenated into a shell command without escaping. Atta",
+        "published": "2026-07-16T13:16:33.460"
+      },
+      {
+        "cve_id": "CVE-2021-27137",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "An issue was discovered in router/upnp/src/ssdp.c in DD-WRT before 45724. An unsafe strcpy in the UPnP handling functionality allows an unauthenticated remote attacker to send a request that would ove",
+        "published": "2026-07-16T18:16:39.113"
+      },
+      {
+        "cve_id": "CVE-2026-46351",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "BigBlueButton is an open-source virtual classroom. Prior to 3.0.21, bbb-web generated conference sessionToken values with insufficiently secure randomness in bbb-common-web/src/main/java/org/bigbluebu",
+        "published": "2026-07-16T19:16:45.863"
       }
     ]
   },
