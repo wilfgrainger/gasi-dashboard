@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T17:00:13.095948+00:00",
+  "generated_at": "2026-07-17T20:42:57.022791+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
+        "value": 6,
         "score": 2.5,
         "max": 3
       },
@@ -238,38 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 278,
-    "critical_count": 9,
-    "high_count": 27,
+    "total": 312,
+    "critical_count": 6,
+    "high_count": 46,
     "cves": [
-      {
-        "cve_id": "CVE-2026-45336",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "HireFlow is a web-based interview management system for managing candidates, scheduling interviews, and tracking hiring progress. In 1.2 and earlier, app.py assigns a hard-coded Flask secret_key used ",
-        "published": "2026-07-16T18:16:43.517"
-      },
-      {
-        "cve_id": "CVE-2026-46512",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Frogman provides headless PBX control through MCP and HTTP API. Prior to 1.6.2, fm_dialplan_apply accepted template parameters including greeting, dest, url, extension, code, and file, and Tools/Dialp",
-        "published": "2026-07-16T19:16:46.510"
-      },
-      {
-        "cve_id": "CVE-2026-46562",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Yamcs is a mission control framework. Prior to 5.12.7, the Nashorn ScriptEngine used to evaluate user-supplied JavaScript algorithm text in yamcs-core/src/main/java/org/yamcs/algorithms/ScriptAlgorith",
-        "published": "2026-07-16T17:16:56.953"
-      },
-      {
-        "cve_id": "CVE-2026-63087",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Grafana OnCall through 1.16.11 contains an unauthenticated access vulnerability that allows remote attackers to obtain a valid PluginAuthToken by sending a POST request to the internal plugin install ",
-        "published": "2026-07-16T17:16:58.703"
-      },
       {
         "cve_id": "CVE-2026-38158",
         "severity": "CRITICAL",
@@ -278,53 +250,102 @@
         "published": "2026-07-16T21:17:20.567"
       },
       {
-        "cve_id": "CVE-2026-63089",
+        "cve_id": "CVE-2026-44180",
         "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "WireGuard Easy through 15.3.0, fixed in commit 66b292b, contains a cryptographically weak one-time link token generation vulnerability that allows unauthenticated network attackers to recover WireGuar",
-        "published": "2026-07-16T20:16:47.800"
+        "base_score": 9.8,
+        "description": "Jupyter Enterprise Gateway launches remote Jupyter Notebook kernels across distributed clusters like Apache Spark, Kubernetes, and Docker Swarm. Versions 2.0.0rc1 and above prior to 3.3.0 have a prohi",
+        "published": "2026-07-16T22:17:02.237"
       },
       {
-        "cve_id": "CVE-2026-44632",
+        "cve_id": "CVE-2026-53412",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Improper Input Validation in Zoom Desktop Client for Windows, Zoom VDI Client for Windows, and Zoom Meeting SDK for Windows may allow an unauthenticated user to conduct an account takeover via network",
+        "published": "2026-07-16T22:17:31.380"
+      },
+      {
+        "cve_id": "CVE-2026-14956",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Bricksforge plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 3.1.8.6. This is due to improper validation of the fieldIds parameter in the Pro Forms ",
+        "published": "2026-07-17T02:18:03.870"
+      },
+      {
+        "cve_id": "CVE-2026-57075",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Yamcs is a mission control framework. Prior to 5.12.7, a server-side code injection vulnerability existed in the Yamcs algorithm evaluation engine org.yamcs.algorithms.JavaExprAlgorithmExecutionFactor",
-        "published": "2026-07-16T17:16:56.023"
+        "description": "YAML::Syck versions before 1.47 for Perl allow an out-of-bounds read via a signed-char lookup-table index in syck_base64dec.\n\nThe base64 decoder in the bundled libsyck indexes the 256-entry static tab",
+        "published": "2026-07-16T22:17:43.447"
       },
       {
-        "cve_id": "CVE-2026-46621",
+        "cve_id": "CVE-2026-62241",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Yamcs is a mission control framework. Prior to 5.12.7, the Yamcs script evaluation engine for Python algorithms dynamically compiled and evaluated user-controlled algorithm text using Jython through t",
-        "published": "2026-07-16T17:16:57.090"
+        "description": "clawvet self-hosted API server (apps/api) before 0.7.5 hard-codes a fallback JWT secret ('clawvet-dev-secret-change-me') in auth.ts and ships it as the default in .env.example. Because GET /api/v1/sca",
+        "published": "2026-07-17T02:18:11.740"
       },
       {
-        "cve_id": "CVE-2026-57073",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "HTML::Bare versions through 0.04 for Perl have an unbounded character lookahead.\n\nThe parserc_parse function attempts to check for multicharacter strings such as \"<![CDATA\" or element terminators such",
-        "published": "2026-07-16T17:16:58.117"
-      },
-      {
-        "cve_id": "CVE-2026-63085",
+        "cve_id": "CVE-2026-62202",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Axelor Open Platform versions 8.x prior to 8.2.2 contains an authorization bypass vulnerability that allows authenticated non-admin users to escalate privileges by exploiting unenforced field restrict",
-        "published": "2026-07-16T17:16:58.420"
+        "description": "OpenClaw versions 2026.6.1 before 2026.6.9 contain a privilege escalation vulnerability in isolated cron jobs that allows lower-trust callers to regain denied execution tools. Attackers can execute or",
+        "published": "2026-07-17T02:18:06.430"
       },
       {
-        "cve_id": "CVE-2026-63086",
+        "cve_id": "CVE-2026-62203",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "text-generation-inference through 3.3.7 contains a server-side request forgery (SSRF) vulnerability in the OpenAI-compatible multimodal chat completions endpoint that allows unauthenticated network at",
-        "published": "2026-07-16T17:16:58.553"
+        "base_score": 8.8,
+        "description": "OpenClaw versions before 2026.6.6 contain an environment variable filtering vulnerability in host exec that fails to properly sanitize rustup startup variables. Attackers with lower-trust caller acces",
+        "published": "2026-07-17T02:18:06.587"
       },
       {
-        "cve_id": "CVE-2026-63088",
+        "cve_id": "CVE-2026-62207",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "stoatchat before 0.14.0 contains a server-side request forgery (SSRF) vulnerability that allows unauthenticated network-accessible attackers to bypass the DNS-based IP blocklist by exploiting incomple",
-        "published": "2026-07-16T17:16:58.833"
+        "base_score": 8.8,
+        "description": "OpenClaw versions before 2026.6.5 contain an authentication bypass vulnerability that allows lower-trust callers to reach admin-scoped tools. Attackers can perform actions requiring stronger authoriza",
+        "published": "2026-07-17T02:18:07.040"
+      },
+      {
+        "cve_id": "CVE-2026-62217",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "OpenClaw 2026.5.14-beta.1 before 2026.5.27 contain an authorization flaw in the QQBot exec approvals feature. When the feature is enabled and reachable, a lower-trust caller or configured input path c",
+        "published": "2026-07-17T02:18:08.553"
+      },
+      {
+        "cve_id": "CVE-2026-62218",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "OpenClaw 2026.1.20 before 2026.5.27 contain an authorization bypass vulnerability in the device.pair.approve feature that allows lower-trust callers to bypass role-management checks. Attackers can per",
+        "published": "2026-07-17T02:18:08.693"
+      },
+      {
+        "cve_id": "CVE-2026-62223",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "OpenClaw before 2026.5.18 contain an authorization bypass vulnerability in the device-pair approval feature that allows lower-trust callers to execute actions beyond their intended authorization. Atta",
+        "published": "2026-07-17T02:18:09.440"
+      },
+      {
+        "cve_id": "CVE-2026-62228",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "OpenClaw before 2026.6.5 contain an authorization bypass vulnerability in node exec approvals that allows lower-trust callers to execute actions beyond their intended authorization by using different ",
+        "published": "2026-07-17T02:18:10.153"
+      },
+      {
+        "cve_id": "CVE-2026-62229",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "OpenClaw before 2026.5.18 contain an authorization bypass vulnerability in exec allowlist glob matching that allows lower-trust callers to execute actions beyond intended authorization. Attackers can ",
+        "published": "2026-07-17T02:18:10.290"
+      },
+      {
+        "cve_id": "CVE-2026-62233",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "grav-plugin-api before 1.0.6 fails to validate super-admin status in createApiKey, generate2fa, and disable2fa endpoints, allowing non-super api.users.write managers to escalate to super-admin. Attack",
+        "published": "2026-07-17T02:18:10.890"
       },
       {
         "cve_id": "CVE-2026-44023",
@@ -334,39 +355,11 @@
         "published": "2026-07-16T21:17:21.123"
       },
       {
-        "cve_id": "CVE-2026-45325",
+        "cve_id": "CVE-2026-62226",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Gestor de Oferta is a web application for managing mobility service offerings. Prior to 20260509.0340.15, @tmlmobilidade/utils has a prototype pollution vulnerability in setValueAtPath() in packages/u",
-        "published": "2026-07-16T17:16:56.160"
-      },
-      {
-        "cve_id": "CVE-2026-49998",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Centrifugo is an open-source scalable real-time messaging server. Prior to 6.8.1, Centrifugo dynamic JWKS endpoint verification could reuse a key for one allowed issuer to verify a JWT for another all",
-        "published": "2026-07-16T20:16:45.290"
-      },
-      {
-        "cve_id": "CVE-2021-27137",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "An issue was discovered in router/upnp/src/ssdp.c in DD-WRT before 45724. An unsafe strcpy in the UPnP handling functionality allows an unauthenticated remote attacker to send a request that would ove",
-        "published": "2026-07-16T18:16:39.113"
-      },
-      {
-        "cve_id": "CVE-2026-46351",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "BigBlueButton is an open-source virtual classroom. Prior to 3.0.21, bbb-web generated conference sessionToken values with insufficiently secure randomness in bbb-common-web/src/main/java/org/bigbluebu",
-        "published": "2026-07-16T19:16:45.863"
-      },
-      {
-        "cve_id": "CVE-2026-46353",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "BigBlueButton is an open-source virtual classroom. Prior to 3.0.21, bbb-web checksum validation could be bypassed when a presentationUploadExternalUrl parameter was supplied to API request handling in",
-        "published": "2026-07-16T19:16:46.000"
+        "base_score": 8.5,
+        "description": "OpenClaw 2026.3.28 before 2026.5.19 contain an authorization bypass vulnerability in the browser act route that fails to properly validate current-tab URL checks. Attackers with lower-trust access or ",
+        "published": "2026-07-17T02:18:09.887"
       },
       {
         "cve_id": "CVE-2026-44019",
@@ -376,11 +369,18 @@
         "published": "2026-07-16T21:17:20.917"
       },
       {
-        "cve_id": "CVE-2026-13397",
+        "cve_id": "CVE-2026-55173",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "HTML::Bare versions through 0.04 for Perl will hang in an infinite loop when parsing malformed attributes.\n\nThe parserc_parse function never advances the attribute-parse state cursor on certain malfor",
-        "published": "2026-07-16T17:16:55.213"
+        "base_score": 8.1,
+        "description": "WWBN AVideo is an open source video platform. Versions 29.0 and below remain vulnerable to OS command injection because the fix for CVE-2026-33482 was incomplete and still does not neutralize a single",
+        "published": "2026-07-16T21:17:21.483"
+      },
+      {
+        "cve_id": "CVE-2026-43978",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "wger is a free, open-source workout and fitness manager. In versions prior to 2.6, a gym trainer can escalate their session to any higher-privileged account (gym manager, general manager) by chaining ",
+        "published": "2026-07-16T23:16:16.310"
       }
     ]
   },
