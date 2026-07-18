@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T01:30:16.683056+00:00",
+  "generated_at": "2026-07-18T05:56:23.359992+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
+        "value": 8,
         "score": 2.5,
         "max": 3
       },
@@ -238,17 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 292,
-    "critical_count": 5,
-    "high_count": 34,
+    "total": 234,
+    "critical_count": 8,
+    "high_count": 14,
     "cves": [
-      {
-        "cve_id": "CVE-2026-14956",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Bricksforge plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 3.1.8.6. This is due to improper validation of the fieldIds parameter in the Pro Forms ",
-        "published": "2026-07-17T02:18:03.870"
-      },
       {
         "cve_id": "CVE-2026-15982",
         "severity": "CRITICAL",
@@ -264,11 +257,32 @@
         "published": "2026-07-17T07:16:38.230"
       },
       {
-        "cve_id": "CVE-2026-62241",
+        "cve_id": "CVE-2026-51080",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "clawvet self-hosted API server (apps/api) before 0.7.5 hard-codes a fallback JWT secret ('clawvet-dev-secret-change-me') in auth.ts and ships it as the default in .env.example. Because GET /api/v1/sca",
-        "published": "2026-07-17T02:18:11.740"
+        "base_score": 9.8,
+        "description": "libpvestorage-perl v9.1.1 and libpve-storage-perl v8.3.7 were discovered to contain an XML External Entity (XXE) vulnerability.",
+        "published": "2026-07-17T14:17:24.270"
+      },
+      {
+        "cve_id": "CVE-2026-12692",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Unverified password change vulnerability in Vimesoft Inc. Enterprise Video Platform allows Authentication Bypass.\n\nThis issue affects Enterprise Video Platform: from 3.11.0.0 before 3.25.0.",
+        "published": "2026-07-17T17:17:13.303"
+      },
+      {
+        "cve_id": "CVE-2026-12693",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "Authorization bypass through User-Controlled key vulnerability in Vimesoft Inc. Enterprise Video Platform allows Accessing Functionality Not Properly Constrained by ACLs.\n\nThis issue affects Enterpris",
+        "published": "2026-07-17T17:17:13.430"
+      },
+      {
+        "cve_id": "CVE-2026-54496",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "ZEBRA is a Zcash node written entirely in Rust. Prior to zebrad 5.0.0, halo2_gadgets 0.5.0, orchard 0.14.0, zcash_primitives 0.28.0, and zcashd 6.20.0, the variable-base scalar multiplication gadget i",
+        "published": "2026-07-17T17:17:16.620"
       },
       {
         "cve_id": "CVE-2024-23564",
@@ -278,81 +292,18 @@
         "published": "2026-07-17T14:17:16.513"
       },
       {
-        "cve_id": "CVE-2026-62202",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenClaw versions 2026.6.1 before 2026.6.9 contain a privilege escalation vulnerability in isolated cron jobs that allows lower-trust callers to regain denied execution tools. Attackers can execute or",
-        "published": "2026-07-17T02:18:06.430"
+        "cve_id": "CVE-2026-12694",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Missing Authorization vulnerability in Vimesoft Inc. Enterprise Video Platform allows Accessing Functionality Not Properly Constrained by ACLs.\n\nThis issue affects Enterprise Video Platform: from 3.11",
+        "published": "2026-07-17T17:17:13.547"
       },
       {
-        "cve_id": "CVE-2026-62203",
+        "cve_id": "CVE-2026-63093",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "OpenClaw versions before 2026.6.6 contain an environment variable filtering vulnerability in host exec that fails to properly sanitize rustup startup variables. Attackers with lower-trust caller acces",
-        "published": "2026-07-17T02:18:06.587"
-      },
-      {
-        "cve_id": "CVE-2026-62207",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenClaw versions before 2026.6.5 contain an authentication bypass vulnerability that allows lower-trust callers to reach admin-scoped tools. Attackers can perform actions requiring stronger authoriza",
-        "published": "2026-07-17T02:18:07.040"
-      },
-      {
-        "cve_id": "CVE-2026-62217",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenClaw 2026.5.14-beta.1 before 2026.5.27 contain an authorization flaw in the QQBot exec approvals feature. When the feature is enabled and reachable, a lower-trust caller or configured input path c",
-        "published": "2026-07-17T02:18:08.553"
-      },
-      {
-        "cve_id": "CVE-2026-62218",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenClaw 2026.1.20 before 2026.5.27 contain an authorization bypass vulnerability in the device.pair.approve feature that allows lower-trust callers to bypass role-management checks. Attackers can per",
-        "published": "2026-07-17T02:18:08.693"
-      },
-      {
-        "cve_id": "CVE-2026-62223",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenClaw before 2026.5.18 contain an authorization bypass vulnerability in the device-pair approval feature that allows lower-trust callers to execute actions beyond their intended authorization. Atta",
-        "published": "2026-07-17T02:18:09.440"
-      },
-      {
-        "cve_id": "CVE-2026-62228",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenClaw before 2026.6.5 contain an authorization bypass vulnerability in node exec approvals that allows lower-trust callers to execute actions beyond their intended authorization by using different ",
-        "published": "2026-07-17T02:18:10.153"
-      },
-      {
-        "cve_id": "CVE-2026-62229",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenClaw before 2026.5.18 contain an authorization bypass vulnerability in exec allowlist glob matching that allows lower-trust callers to execute actions beyond intended authorization. Attackers can ",
-        "published": "2026-07-17T02:18:10.290"
-      },
-      {
-        "cve_id": "CVE-2026-62233",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "grav-plugin-api before 1.0.6 fails to validate super-admin status in createApiKey, generate2fa, and disable2fa endpoints, allowing non-super api.users.write managers to escalate to super-admin. Attack",
-        "published": "2026-07-17T02:18:10.890"
-      },
-      {
-        "cve_id": "CVE-2026-13352",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Paid Membership Plugin, Ecommerce, User Registration Form, Login Form, User Profile & Restrict Content \u2013 ProfilePress plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up",
-        "published": "2026-07-17T05:16:36.730"
-      },
-      {
-        "cve_id": "CVE-2026-62226",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "OpenClaw 2026.3.28 before 2026.5.19 contain an authorization bypass vulnerability in the browser act route that fails to properly validate current-tab URL checks. Attackers with lower-trust access or ",
-        "published": "2026-07-17T02:18:09.887"
+        "description": "Cursor for Windows version 3.2.16 contains a binary planting vulnerability that allows remote attackers to achieve arbitrary code execution by placing a malicious git.exe file in the repository root d",
+        "published": "2026-07-17T15:16:47.817"
       },
       {
         "cve_id": "CVE-2026-13410",
@@ -362,25 +313,74 @@
         "published": "2026-07-17T13:17:56.663"
       },
       {
-        "cve_id": "CVE-2026-62209",
+        "cve_id": "CVE-2026-11961",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "OpenClaw versions 2026.5.10-beta.1 before 2026.6.5 contain an authorization bypass in the ClickClack agent-mode dispatch feature, which could ignore the toolsAllow policy check. When the affected feat",
-        "published": "2026-07-17T02:18:07.327"
+        "description": "The User Registration & Membership  WordPress plugin before 5.2.3 does not validate that the membership tier submitted during public registration is one of the tiers allowed by the registration form b",
+        "published": "2026-07-17T07:16:37.850"
       },
       {
-        "cve_id": "CVE-2026-62231",
+        "cve_id": "CVE-2025-60357",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "The Grav API plugin (getgrav/grav-plugin-api) before 1.0.6 contains an authorization bypass: API keys can be created with a restricted scopes array, but the ApiKeyAuthenticator class never reads or en",
-        "published": "2026-07-17T02:18:10.587"
+        "description": "AhnLab EPP Management v1.0.14.32-6249 was discovered to contain a NoSQL injection vulnerability via the eventlog/agentEvent/list endpoint.",
+        "published": "2026-07-17T14:17:19.003"
       },
       {
-        "cve_id": "CVE-2026-62234",
+        "cve_id": "CVE-2026-63094",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Grav before 2.0.4 fails to restrict cURL protocols in webhook dispatch, allowing authenticated users with api.webhooks.write permission to create webhooks with file://, dict://, or gopher:// URLs. Att",
-        "published": "2026-07-17T02:18:11.040"
+        "description": "SigNoz through 0.133.0 contains an open redirect vulnerability in the SSO authentication flow that allows unauthenticated attackers to steal session tokens from any user on instances configured with G",
+        "published": "2026-07-17T15:16:47.960"
+      },
+      {
+        "cve_id": "CVE-2026-57860",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "ForgeCode (tailcallhq/forgecode), an AI pair-programming CLI, automatically loads and executes the MCP servers defined in a repository's .mcp.json file on startup without user confirmation. A maliciou",
+        "published": "2026-07-17T17:17:16.777"
+      },
+      {
+        "cve_id": "CVE-2026-11575",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The PhonePe Payment Solutions WordPress plugin before 3.1.0 does not properly verify the authenticity of incoming payment callbacks: the secret used to validate the callback signature is empty on site",
+        "published": "2026-07-17T07:16:37.753"
+      },
+      {
+        "cve_id": "CVE-2026-7189",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Insertion of sensitive information into sent data vulnerability in Proliz Software Ltd. Co. Proliz's OBS allows Accessing Functionality Not Properly Constrained by ACLs.\n\nThis issue affects Proliz's O",
+        "published": "2026-07-17T13:19:01.490"
+      },
+      {
+        "cve_id": "CVE-2026-8396",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Improper restriction of XML external entity reference vulnerability in Netcad Software Inc. NetGIS allows Serialized Data External Linking.\n\nThis issue affects NetGIS: from 5.0.66 before 7.2.2.",
+        "published": "2026-07-17T13:19:01.827"
+      },
+      {
+        "cve_id": "CVE-2026-7488",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Insertion of sensitive information into sent data vulnerability in IKAS Technology Inc. E-Commerce allows Retrieve Embedded Sensitive Data.\n\nThis issue affects E-Commerce: through 03062026.",
+        "published": "2026-07-17T14:17:27.420"
+      },
+      {
+        "cve_id": "CVE-2026-12691",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Missing authentication for critical function vulnerability in Vimesoft Inc. Enterprise Video Platform allows Authentication Bypass.\n\nThis issue affects Enterprise Video Platform: from 3.11.0.0 before ",
+        "published": "2026-07-17T17:17:13.177"
+      },
+      {
+        "cve_id": "CVE-2026-16014",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was found in code-projects Hospital Bed Management System 1.0. This affects an unknown part of the component Login Form. Performing a manipulation of the argument Username results in s",
+        "published": "2026-07-17T13:17:57.983"
       }
     ]
   },
