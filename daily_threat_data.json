@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-18T16:43:51.966532+00:00",
+  "generated_at": "2026-07-18T20:37:18.924323+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 10,
-        "score": 3.0,
+        "value": 6,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 216,
-    "critical_count": 10,
-    "high_count": 21,
+    "total": 103,
+    "critical_count": 6,
+    "high_count": 33,
     "cves": [
       {
-        "cve_id": "CVE-2026-9135",
+        "cve_id": "CVE-2026-54159",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "IBM Langflow OSS 1.0.0 through 1.10.0 Langflow versions up to 1.9.2 (commit 94981c443d4918517b9e8163d70fc598dc33a32d) contain a code injection vulnerability in the Policies component's ToolGuard integ",
-        "published": "2026-07-17T19:17:19.390"
+        "base_score": 10.0,
+        "description": "PrestaShop ps_facetedsearch is a module that adds layered navigation filters. From 3.0.0 until 4.0.4, the ps_facetedsearch module rebuilds selected search filters from the request URL, and the value o",
+        "published": "2026-07-17T21:17:07.963"
       },
       {
-        "cve_id": "CVE-2026-12692",
+        "cve_id": "CVE-2026-16117",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Unverified password change vulnerability in Vimesoft Inc. Enterprise Video Platform allows Authentication Bypass.\n\nThis issue affects Enterprise Video Platform: from 3.11.0.0 before 3.25.0.",
-        "published": "2026-07-17T17:17:13.303"
+        "base_score": 10.0,
+        "description": "Impact: @fastify/http-proxy versions up to and including 11.5.0 fail to rewrite the request prefix when the prefix segment is URL-encoded. Fastify's router URL-decodes paths for route matching, but re",
+        "published": "2026-07-18T14:17:11.620"
       },
       {
-        "cve_id": "CVE-2026-8297",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Gis Informatics Engineering Consulting Laboratory R&D and Software Services Inc. GisLab Laboratory",
-        "published": "2026-07-17T17:17:17.860"
-      },
-      {
-        "cve_id": "CVE-2026-9198",
+        "cve_id": "CVE-2026-13446",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "IBM Langflow OSS 1.0.0 through 1.10.0 allows unauthenticated attackers to chain /api/v1/auto_login (mints SUPERUSER tokens to any network caller) with /api/v1/validate/code (executes user code via exe",
-        "published": "2026-07-17T18:17:17.340"
+        "description": "IBM Langflow OSS 1.0.0 through 1.10.1 contains\u00a0hard-coded credentials, such as a password or cryptographic key, which it uses for its own inbound authentication, outbound communication to external com",
+        "published": "2026-07-17T21:17:05.960"
       },
       {
-        "cve_id": "CVE-2026-9202",
+        "cve_id": "CVE-2026-48062",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "IBM Langflow OSS 1.0.0 through 1.10.0 allows unauthenticated attackers to create unlimited user accounts on any Langflow instance; when NEW_USER_IS_ACTIVE=true (documented deployment option), newly cr",
-        "published": "2026-07-17T18:17:17.490"
+        "description": "CodeIgniter is a PHP full-stack web framework. Prior to 4.7.3, the ext_in upload validation rule in system/Validation/StrictRules/FileRules.php checked the MIME-derived guessed extension instead of th",
+        "published": "2026-07-17T21:17:06.787"
       },
       {
-        "cve_id": "CVE-2026-9103",
+        "cve_id": "CVE-2026-47865",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "IBM Langflow OSS 1.0.0 through 1.10.0 could allow a remote attacker to gain unauthorized access due to improper authentication in the /api/v1/login/auto_login endpoint. The endpoint issues long-lived ",
-        "published": "2026-07-17T19:17:19.277"
+        "description": "VMware Avi Load Balancer contains an authentication bypass vulnerability. A malicious user with network access may be able to access the Avi Control plane by bypassing the authentication mechanism.\n\nA",
+        "published": "2026-07-18T09:17:08.287"
       },
       {
-        "cve_id": "CVE-2026-12693",
+        "cve_id": "CVE-2026-55518",
         "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "Authorization bypass through User-Controlled key vulnerability in Vimesoft Inc. Enterprise Video Platform allows Accessing Functionality Not Properly Constrained by ACLs.\n\nThis issue affects Enterpris",
-        "published": "2026-07-17T17:17:13.430"
+        "base_score": 9.6,
+        "description": "Avo is a framework to create admin panels for Ruby on Rails apps. Prior to 3.32.1 and 4.0.0.beta.51, Avo's association attach workflow checks attach_<association>? in the UI and GET /resources/:resour",
+        "published": "2026-07-17T21:17:09.173"
       },
       {
-        "cve_id": "CVE-2026-54496",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "ZEBRA is a Zcash node written entirely in Rust. Prior to zebrad 5.0.0, halo2_gadgets 0.5.0, orchard 0.14.0, zcash_primitives 0.28.0, and zcashd 6.20.0, the variable-base scalar multiplication gadget i",
-        "published": "2026-07-17T17:17:16.620"
-      },
-      {
-        "cve_id": "CVE-2026-15091",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "IBM Engineering AI Hub 1.0.0, 1.1.0, and 1.2.0 could allow a remote attacker to execute arbitrary scripts due to improper neutralization of input during web page generation.",
-        "published": "2026-07-17T20:17:15.567"
-      },
-      {
-        "cve_id": "CVE-2026-12694",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Missing Authorization vulnerability in Vimesoft Inc. Enterprise Video Platform allows Accessing Functionality Not Properly Constrained by ACLs.\n\nThis issue affects Enterprise Video Platform: from 3.11",
-        "published": "2026-07-17T17:17:13.547"
-      },
-      {
-        "cve_id": "CVE-2026-58195",
+        "cve_id": "CVE-2026-47871",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Agentic-Flow is an AI agent orchestration platform. Prior to 2.0.14, agentic-flow MCP server tools in src/mcp/standalone-stdio.ts, src/mcp/fastmcp/servers/claude-flow-sdk.ts, src/mcp/fastmcp/servers/s",
-        "published": "2026-07-17T19:17:17.410"
+        "description": "VMware Avi Load Balancer contains a directory traversal vulnerability. Flaws in file path validation allow malicious, authenticated network users to perform directory traversal attacks.\n\nAffected vers",
+        "published": "2026-07-18T09:17:08.960"
       },
       {
-        "cve_id": "CVE-2026-14499",
+        "cve_id": "CVE-2026-16095",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "IBM Langflow OSS 1.0.0 through 1.10.1 Langflow could allow an authenticated user to execute arbitrary commands with elevated privileges on the system due to improper validation of user supplied input ",
-        "published": "2026-07-17T20:17:14.950"
+        "description": "A flaw has been found in Shibby Tomato 1.28 RT-N5x MIPSR2 Build 124. Affected by this issue is the function setup_conntrack of the file /sbin/rc. Executing a manipulation of the argument ct_tcp_timeou",
+        "published": "2026-07-18T11:16:43.833"
       },
       {
-        "cve_id": "CVE-2026-44739",
+        "cve_id": "CVE-2026-16096",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability has been found in Shibby Tomato 1.28 RT-N5x MIPSR2 Build 124. This affects the function sub_40BB50 of the file /proc/webmon_recent_domains. The manipulation leads to stack-based buffer",
+        "published": "2026-07-18T12:17:11.223"
+      },
+      {
+        "cve_id": "CVE-2026-16097",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was found in Shibby Tomato 1.28. This vulnerability affects the function sub_42537C of the component Scheduler Name Handler. The manipulation of the argument a1 results in stack-based ",
+        "published": "2026-07-18T12:17:11.393"
+      },
+      {
+        "cve_id": "CVE-2023-54366",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "SurrealDB before 1.0.1 sets default table permissions to FULL instead of NONE, allowing SELECT, CREATE, UPDATE, and DELETE operations on tables without explicit permissions. Attackers with database ac",
+        "published": "2026-07-18T14:17:07.603"
+      },
+      {
+        "cve_id": "CVE-2024-58362",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "SurrealDB before 1.5.5 (and 2.0.0-beta before 2.0.0-beta.3) accepts an arbitrary object in the signin and signup operations of the RPC API without recursively validating it for non-computed values. Wh",
+        "published": "2026-07-18T14:17:09.047"
+      },
+      {
+        "cve_id": "CVE-2026-11826",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "OpenPLC_v3 contains a heap-based buffer overflow in the getData() function in webserver/core/modbus_master.cpp. getData() reads characters between two delimiters into a caller-supplied buffer with no ",
+        "published": "2026-07-18T14:17:11.480"
+      },
+      {
+        "cve_id": "CVE-2026-54498",
         "severity": "HIGH",
         "base_score": 8.7,
-        "description": "Pimcore is an Open Source Data & Experience Management Platform. Prior to 11.5.17 (LTS) and 12.3.6, the columnConfigAction endpoint in bundles/CustomReportsBundle/src/Controller/Reports/CustomReportCo",
-        "published": "2026-07-17T20:17:16.597"
+        "description": "view_component is a framework for building reusable, testable, and encapsulated view components in Ruby on Rails. From 4.0.0 until 4.12.0, ViewComponent::Base#around_render can return HTML-unsafe stri",
+        "published": "2026-07-17T21:17:09.043"
       },
       {
-        "cve_id": "CVE-2026-13448",
+        "cve_id": "CVE-2026-47867",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "IBM Langflow OSS 1.0.0 through 1.10.1 Lanflow OSS contains an unauthenticated remote code execution vulnerability in the public flow build endpoint ( /api/v1/build_public_tmp/{flow_id}/flow ). The vul",
-        "published": "2026-07-17T20:17:14.713"
+        "base_score": 8.7,
+        "description": "VMware Avi Load Balancer contains a remote code execution vulnerability. A malicious user with network access may be able to access the Avi Control plane and execute code remotely.\n\nAffected versions:",
+        "published": "2026-07-18T09:17:08.527"
       },
       {
-        "cve_id": "CVE-2026-13473",
+        "cve_id": "CVE-2026-47869",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "IBM Storage Protect Client 8.1.0.0 through 8.1.27.0, 8.1.27.1, and 8.2.0.0 through 8.2.1.0 IBM Storage Protect is vulnerable to a heap-based buffer overflow, caused by improper bounds checking. A remo",
-        "published": "2026-07-17T20:17:14.827"
+        "base_score": 8.7,
+        "description": "VMware Avi Load Balancer contains a remote code execution vulnerability. A malicious authenticated user with network access may be able to inject and execute code.\n\nAffected versions:\n32.1.1 (fixed in",
+        "published": "2026-07-18T09:17:08.740"
       },
       {
-        "cve_id": "CVE-2026-45260",
+        "cve_id": "CVE-2026-15631",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Pimcore is an Open Source Data & Experience Management Platform. Prior to 11.5.17 (LTS) and 12.3.7, Pimcore's WebDAV asset endpoint exposes a MOVE operation through /asset/webdav{path} without an auth",
-        "published": "2026-07-17T20:17:16.857"
+        "base_score": 8.7,
+        "description": "Impact: @fastify/http-proxy versions from 9.4.0 up to and including 11.5.0 fail to validate the resolved WebSocket destination path against the configured rewrite prefix. The WebSocket routing path in",
+        "published": "2026-07-18T13:17:05.323"
       },
       {
-        "cve_id": "CVE-2026-45162",
+        "cve_id": "CVE-2026-16158",
         "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "Pimcore is an Open Source Data & Experience Management Platform. Prior to 11.5.17 (LTS) and 12.3.7, multiple Pimcore locations call PHP's unserialize() on data from database columns and filesystem fil",
-        "published": "2026-07-17T19:17:14.167"
+        "base_score": 8.7,
+        "description": "Impact: @fastify/reply-from versions from 8.3.1 up to but not including 12.6.4 build the internal URL cache key by concatenating the destination and source path without a delimiter. Different destinat",
+        "published": "2026-07-18T13:17:06.030"
       },
       {
-        "cve_id": "CVE-2026-57860",
+        "cve_id": "CVE-2024-58366",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "ForgeCode (tailcallhq/forgecode), an AI pair-programming CLI, automatically loads and executes the MCP servers defined in a repository's .mcp.json file on startup without user confirmation. A maliciou",
-        "published": "2026-07-17T17:17:16.777"
+        "base_score": 8.5,
+        "description": "SurrealDB before 1.1.1 contains a format string vulnerability in the rquickjs Exception::throw_type function when scripting is enabled. Attackers with scripting privileges can supply format string seq",
+        "published": "2026-07-18T14:17:09.600"
       },
       {
-        "cve_id": "CVE-2026-9762",
+        "cve_id": "CVE-2026-47866",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "IBM Db2 11.5.0 through 11.5.9, and 12.1.0 through 12.1.4 is vulnerable to remote code execution when jdbc url is under user control.",
-        "published": "2026-07-17T18:17:17.693"
-      },
-      {
-        "cve_id": "CVE-2026-48373",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Acrobat Reader is affected by a Heap-based Buffer Overflow vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user inte",
-        "published": "2026-07-17T20:17:21.290"
+        "base_score": 8.3,
+        "description": "VMware Avi Load Balancer contains an authorization bypass vulnerability. A malicious actor on the network can access a limited subset of the Avi Control Plane without proper authorization.\n\nAffected v",
+        "published": "2026-07-18T09:17:08.413"
       }
     ]
   },
