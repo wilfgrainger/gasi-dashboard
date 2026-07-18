@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-18T09:15:13.887332+00:00",
+  "generated_at": "2026-07-18T12:52:41.923011+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
+        "value": 9,
         "score": 2.5,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 224,
-    "critical_count": 7,
-    "high_count": 13,
+    "total": 228,
+    "critical_count": 9,
+    "high_count": 16,
     "cves": [
       {
         "cve_id": "CVE-2026-51080",
@@ -262,6 +262,20 @@
         "base_score": 9.8,
         "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Gis Informatics Engineering Consulting Laboratory R&D and Software Services Inc. GisLab Laboratory",
         "published": "2026-07-17T17:17:17.860"
+      },
+      {
+        "cve_id": "CVE-2026-9198",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "IBM Langflow OSS 1.0.0 through 1.10.0 allows unauthenticated attackers to chain /api/v1/auto_login (mints SUPERUSER tokens to any network caller) with /api/v1/validate/code (executes user code via exe",
+        "published": "2026-07-17T18:17:17.340"
+      },
+      {
+        "cve_id": "CVE-2026-9202",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "IBM Langflow OSS 1.0.0 through 1.10.0 allows unauthenticated attackers to create unlimited user accounts on any Langflow instance; when NEW_USER_IS_ACTIVE=true (documented deployment option), newly cr",
+        "published": "2026-07-17T18:17:17.490"
       },
       {
         "cve_id": "CVE-2026-12693",
@@ -320,11 +334,25 @@
         "published": "2026-07-17T15:16:47.960"
       },
       {
+        "cve_id": "CVE-2026-45162",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "Pimcore is an Open Source Data & Experience Management Platform. Prior to 11.5.17 (LTS) and 12.3.7, multiple Pimcore locations call PHP's unserialize() on data from database columns and filesystem fil",
+        "published": "2026-07-17T19:17:14.167"
+      },
+      {
         "cve_id": "CVE-2026-57860",
         "severity": "HIGH",
         "base_score": 7.8,
         "description": "ForgeCode (tailcallhq/forgecode), an AI pair-programming CLI, automatically loads and executes the MCP servers defined in a repository's .mcp.json file on startup without user confirmation. A maliciou",
         "published": "2026-07-17T17:17:16.777"
+      },
+      {
+        "cve_id": "CVE-2026-9762",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "IBM Db2 11.5.0 through 11.5.9, and 12.1.0 through 12.1.4 is vulnerable to remote code execution when jdbc url is under user control.",
+        "published": "2026-07-17T18:17:17.693"
       },
       {
         "cve_id": "CVE-2026-7189",
@@ -353,34 +381,6 @@
         "base_score": 7.5,
         "description": "Missing authentication for critical function vulnerability in Vimesoft Inc. Enterprise Video Platform allows Authentication Bypass.\n\nThis issue affects Enterprise Video Platform: from 3.11.0.0 before ",
         "published": "2026-07-17T17:17:13.177"
-      },
-      {
-        "cve_id": "CVE-2026-63101",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Open Event Server through 1.19.1 contains a missing authentication vulnerability that allows unauthenticated attackers to export the complete member roster of any group, including email addresses, nam",
-        "published": "2026-07-17T17:17:17.283"
-      },
-      {
-        "cve_id": "CVE-2026-16014",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was found in code-projects Hospital Bed Management System 1.0. This affects an unknown part of the component Login Form. Performing a manipulation of the argument Username results in s",
-        "published": "2026-07-17T13:17:57.983"
-      },
-      {
-        "cve_id": "CVE-2026-16016",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was identified in poco-ai poco-claw up to 0.5.4. This issue affects the function run_task of the file executor/app/api/v1/task.py. The manipulation of the argument callback_url leads t",
-        "published": "2026-07-17T14:17:21.697"
-      },
-      {
-        "cve_id": "CVE-2026-51082",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "A race condition between the vncproxy and vncwebsocket API calls in Proxmox Virtual Environment (PVE) 9.x pve-manager before 9.1.9 and 8.x before 8.4.19; qemu-server 9.x before 9.1.7 and 8.x before 8.",
-        "published": "2026-07-17T15:16:46.867"
       }
     ]
   },
