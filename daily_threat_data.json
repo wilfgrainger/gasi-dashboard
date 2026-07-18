@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-17T20:42:57.022791+00:00",
+  "generated_at": "2026-07-18T01:30:16.683056+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 25,
+        "value": 24,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
+        "value": 5,
         "score": 2.5,
         "max": 3
       },
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1647,
-    "recent_30d_count": 25,
+    "recent_30d_count": 24,
     "recent": [
       {
         "cve_id": "CVE-2026-58644",
@@ -238,31 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 312,
-    "critical_count": 6,
-    "high_count": 46,
+    "total": 292,
+    "critical_count": 5,
+    "high_count": 34,
     "cves": [
-      {
-        "cve_id": "CVE-2026-38158",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A SQL injection vulnerability in the /ureport/datasource/previewData component of ureport v2.2.9 allows attackers to access sensitive database information via crafted SQL statements.",
-        "published": "2026-07-16T21:17:20.567"
-      },
-      {
-        "cve_id": "CVE-2026-44180",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Jupyter Enterprise Gateway launches remote Jupyter Notebook kernels across distributed clusters like Apache Spark, Kubernetes, and Docker Swarm. Versions 2.0.0rc1 and above prior to 3.3.0 have a prohi",
-        "published": "2026-07-16T22:17:02.237"
-      },
-      {
-        "cve_id": "CVE-2026-53412",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Improper Input Validation in Zoom Desktop Client for Windows, Zoom VDI Client for Windows, and Zoom Meeting SDK for Windows may allow an unauthenticated user to conduct an account takeover via network",
-        "published": "2026-07-16T22:17:31.380"
-      },
       {
         "cve_id": "CVE-2026-14956",
         "severity": "CRITICAL",
@@ -271,11 +250,18 @@
         "published": "2026-07-17T02:18:03.870"
       },
       {
-        "cve_id": "CVE-2026-57075",
+        "cve_id": "CVE-2026-15982",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "YAML::Syck versions before 1.47 for Perl allow an out-of-bounds read via a signed-char lookup-table index in syck_base64dec.\n\nThe base64 decoder in the bundled libsyck indexes the 256-entry static tab",
-        "published": "2026-07-16T22:17:43.447"
+        "base_score": 9.8,
+        "description": "The Aimogen Pro - All-in-One AI Content Writer, Editor, ChatBot & Automation Toolkit plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 2.8.4. This is due",
+        "published": "2026-07-17T06:16:36.560"
+      },
+      {
+        "cve_id": "CVE-2026-9810",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The AI Copilot  WordPress plugin before 1.5.4 does not bind OAuth access tokens to a WordPress user, and accepts any valid token as an administrator session, allowing unauthenticated attackers who com",
+        "published": "2026-07-17T07:16:38.230"
       },
       {
         "cve_id": "CVE-2026-62241",
@@ -283,6 +269,13 @@
         "base_score": 9.1,
         "description": "clawvet self-hosted API server (apps/api) before 0.7.5 hard-codes a fallback JWT secret ('clawvet-dev-secret-change-me') in auth.ts and ships it as the default in .env.example. Because GET /api/v1/sca",
         "published": "2026-07-17T02:18:11.740"
+      },
+      {
+        "cve_id": "CVE-2024-23564",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "HCL Aftermarket EPC is affected by Business Logic Vulnerability using which a non valid user of the application can obtain passwords from the server and redirect them to their own email address by man",
+        "published": "2026-07-17T14:17:16.513"
       },
       {
         "cve_id": "CVE-2026-62202",
@@ -348,11 +341,11 @@
         "published": "2026-07-17T02:18:10.890"
       },
       {
-        "cve_id": "CVE-2026-44023",
+        "cve_id": "CVE-2026-13352",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Docling Core defines core data types and transformations for the document processing application Docling. In versions 1.5.0 and above, prior to 2.74.1, docling-core did not sufficiently restrict remot",
-        "published": "2026-07-16T21:17:21.123"
+        "base_score": 8.8,
+        "description": "The Paid Membership Plugin, Ecommerce, User Registration Form, Login Form, User Profile & Restrict Content \u2013 ProfilePress plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up",
+        "published": "2026-07-17T05:16:36.730"
       },
       {
         "cve_id": "CVE-2026-62226",
@@ -362,25 +355,32 @@
         "published": "2026-07-17T02:18:09.887"
       },
       {
-        "cve_id": "CVE-2026-44019",
+        "cve_id": "CVE-2026-13410",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Docling Core defines core data types and transformations for the document processing application Docling. In versions 2.5.0 and above, prior to 2.74.1, docling-core could allow local file:// image ref",
-        "published": "2026-07-16T21:17:20.917"
+        "base_score": 8.2,
+        "description": "Dancer::Plugin::Auth::Google versions through 0.07 for Perl have TLS verification disabled.\n\nThe default user agent is initialised with SSL_verify_mode explicitly disabled.\n\nAn attacker with network m",
+        "published": "2026-07-17T13:17:56.663"
       },
       {
-        "cve_id": "CVE-2026-55173",
+        "cve_id": "CVE-2026-62209",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "WWBN AVideo is an open source video platform. Versions 29.0 and below remain vulnerable to OS command injection because the fix for CVE-2026-33482 was incomplete and still does not neutralize a single",
-        "published": "2026-07-16T21:17:21.483"
+        "description": "OpenClaw versions 2026.5.10-beta.1 before 2026.6.5 contain an authorization bypass in the ClickClack agent-mode dispatch feature, which could ignore the toolsAllow policy check. When the affected feat",
+        "published": "2026-07-17T02:18:07.327"
       },
       {
-        "cve_id": "CVE-2026-43978",
+        "cve_id": "CVE-2026-62231",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "wger is a free, open-source workout and fitness manager. In versions prior to 2.6, a gym trainer can escalate their session to any higher-privileged account (gym manager, general manager) by chaining ",
-        "published": "2026-07-16T23:16:16.310"
+        "description": "The Grav API plugin (getgrav/grav-plugin-api) before 1.0.6 contains an authorization bypass: API keys can be created with a restricted scopes array, but the ApiKeyAuthenticator class never reads or en",
+        "published": "2026-07-17T02:18:10.587"
+      },
+      {
+        "cve_id": "CVE-2026-62234",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Grav before 2.0.4 fails to restrict cURL protocols in webhook dispatch, allowing authenticated users with api.webhooks.write permission to create webhooks with file://, dict://, or gopher:// URLs. Att",
+        "published": "2026-07-17T02:18:11.040"
       }
     ]
   },
