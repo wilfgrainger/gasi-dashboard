@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-19T12:55:15.575718+00:00",
+  "generated_at": "2026-07-19T16:44:47.561456+00:00",
   "threat_score": {
-    "score": 5.5,
+    "score": 5.0,
     "level": "ELEVATED",
     "level_color": "elevated",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 0,
+        "score": 1.0,
         "max": 3
       },
       {
@@ -238,65 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 172,
-    "critical_count": 1,
-    "high_count": 23,
+    "total": 483,
+    "critical_count": 0,
+    "high_count": 11,
     "cves": [
-      {
-        "cve_id": "CVE-2026-16117",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Impact: @fastify/http-proxy versions up to and including 11.5.0 fail to rewrite the request prefix when the prefix segment is URL-encoded. Fastify's router URL-decodes paths for route matching, but re",
-        "published": "2026-07-18T14:17:11.620"
-      },
-      {
-        "cve_id": "CVE-2023-54366",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "SurrealDB before 1.0.1 sets default table permissions to FULL instead of NONE, allowing SELECT, CREATE, UPDATE, and DELETE operations on tables without explicit permissions. Attackers with database ac",
-        "published": "2026-07-18T14:17:07.603"
-      },
-      {
-        "cve_id": "CVE-2024-58362",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "SurrealDB before 1.5.5 (and 2.0.0-beta before 2.0.0-beta.3) accepts an arbitrary object in the signin and signup operations of the RPC API without recursively validating it for non-computed values. Wh",
-        "published": "2026-07-18T14:17:09.047"
-      },
-      {
-        "cve_id": "CVE-2026-11826",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenPLC_v3 contains a heap-based buffer overflow in the getData() function in webserver/core/modbus_master.cpp. getData() reads characters between two delimiters into a caller-supplied buffer with no ",
-        "published": "2026-07-18T14:17:11.480"
-      },
-      {
-        "cve_id": "CVE-2026-15631",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "Impact: @fastify/http-proxy versions from 9.4.0 up to and including 11.5.0 fail to validate the resolved WebSocket destination path against the configured rewrite prefix. The WebSocket routing path in",
-        "published": "2026-07-18T13:17:05.323"
-      },
-      {
-        "cve_id": "CVE-2026-16158",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "Impact: @fastify/reply-from versions from 8.3.1 up to but not including 12.6.4 build the internal URL cache key by concatenating the destination and source path without a delimiter. Different destinat",
-        "published": "2026-07-18T13:17:06.030"
-      },
       {
         "cve_id": "CVE-2026-12228",
         "severity": "HIGH",
         "base_score": 8.7,
         "description": "A stored cross-site scripting (XSS) vulnerability exists in the `POST /api/prompts/share` endpoint of parisneo/lollms (latest version). The endpoint stores attacker-controlled `prompt_content` into `D",
         "published": "2026-07-18T21:17:03.040"
-      },
-      {
-        "cve_id": "CVE-2024-58366",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "SurrealDB before 1.1.1 contains a format string vulnerability in the rquickjs Exception::throw_type function when scripting is enabled. Attackers with scripting privileges can supply format string seq",
-        "published": "2026-07-18T14:17:09.600"
       },
       {
         "cve_id": "CVE-2026-10130",
@@ -306,53 +257,11 @@
         "published": "2026-07-18T23:17:00.397"
       },
       {
-        "cve_id": "CVE-2026-9323",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The urwid web display backend (urwid/display/web.py) generates web session identifiers (urwid_id) in Screen.start() by concatenating two random.randrange(10**9) calls that use Python's Mersenne Twiste",
-        "published": "2026-07-18T14:17:12.170"
-      },
-      {
-        "cve_id": "CVE-2026-9147",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "uproot dynamically generates Python class source code from ROOT TStreamerInfo records in a file and compiles it at runtime. Some file-controlled streamer metadata fields (for example, streamer element",
-        "published": "2026-07-18T13:17:06.273"
-      },
-      {
-        "cve_id": "CVE-2024-58368",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "SurrealDB versions before 1.1.0 fail to properly parse the ID, DB, and NS headers in HTTP REST API requests containing special characters. Unauthenticated attackers can send crafted HTTP requests with",
-        "published": "2026-07-18T14:17:09.867"
-      },
-      {
         "cve_id": "CVE-2026-53994",
         "severity": "HIGH",
         "base_score": 7.5,
         "description": "ProFTPD mod_sftp contains a heap-based buffer overflow reachable by an authenticated SFTP user. The fxp_packet_read() function accepts the attacker-supplied 32-bit big-endian SFTP packet length withou",
         "published": "2026-07-18T20:17:30.283"
-      },
-      {
-        "cve_id": "CVE-2026-16125",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was found in zevorn rt-claw up to 0.2.0. The affected element is the function claw_net_get/claw_net_post of the file claw/services/tools/net.c of the component http_request. The manipu",
-        "published": "2026-07-18T16:17:12.873"
-      },
-      {
-        "cve_id": "CVE-2026-16126",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was determined in zevorn rt-claw up to 0.2.0. The impacted element is the function handle_rpc_request of the file claw/services/swarm/swarm.c of the component Swarm RPC Receiver. This ",
-        "published": "2026-07-18T16:17:13.043"
-      },
-      {
-        "cve_id": "CVE-2026-16127",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was identified in zevorn rt-claw up to 0.2.0. This affects the function claw_net_get/claw_net_post of the file claw/tools/tool_net.c of the component http_request. Such manipulation of",
-        "published": "2026-07-18T16:17:13.217"
       },
       {
         "cve_id": "CVE-2026-16128",
@@ -381,6 +290,97 @@
         "base_score": 7.3,
         "description": "A vulnerability has been found in zevorn rt-claw up to 0.2.0. This impacts the function claw_tool_invoke of the file claw/services/swarm/swarm.c of the component RPC Handler. The manipulation leads to",
         "published": "2026-07-19T01:17:01.900"
+      },
+      {
+        "cve_id": "CVE-2026-16209",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability has been found in Gerapy up to 0.9.13. The impacted element is an unknown function of the file gerapy/server/core/views.py of the component Project Upload Endpoint. Such manipulation l",
+        "published": "2026-07-19T04:17:03.983"
+      },
+      {
+        "cve_id": "CVE-2026-16210",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was found in newpanjing simpleui 2026.01.13. This affects the function self.get_action of the file simpleui/admin.py of the component AjaxAdmin AJAX Endpoint. Performing a manipulation",
+        "published": "2026-07-19T04:17:04.343"
+      },
+      {
+        "cve_id": "CVE-2026-16227",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A security vulnerability has been detected in SourceCodester Class and Exam Timetabling System 1.0. This impacts an unknown function of the file /edit_subject.php. Such manipulation of the argument ID",
+        "published": "2026-07-19T10:16:31.380"
+      },
+      {
+        "cve_id": "CVE-2026-16228",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was detected in SourceCodester Class and Exam Timetabling System 1.0. Affected is an unknown function of the file /edit_schoolyr.php. Performing a manipulation of the argument ID resul",
+        "published": "2026-07-19T10:16:32.677"
+      },
+      {
+        "cve_id": "CVE-2026-16215",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "A security flaw has been discovered in geex-arts django-jet up to 1.0.8. This impacts an unknown function of the component OAuth Credential Revoke Handler. Performing a manipulation results in missing",
+        "published": "2026-07-19T05:16:38.603"
+      },
+      {
+        "cve_id": "CVE-2026-16131",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A weakness has been identified in itsourcecode Hospital Management System 1.0. This affects an unknown function of the file /prescriptionrecord.php. This manipulation of the argument delid causes sql ",
+        "published": "2026-07-18T19:17:05.527"
+      },
+      {
+        "cve_id": "CVE-2026-16150",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A vulnerability was found in RobinHerbots Inputmask up to 5.0.9. Affected by this issue is the function extendDefaults/extendDefinitions/extendAliases in the library lib/dependencyLibs/extend.js of th",
+        "published": "2026-07-18T20:17:29.947"
+      },
+      {
+        "cve_id": "CVE-2026-16151",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A vulnerability has been found in CartoDB carto-api-client 0.5.29. This impacts the function addFilter of the file src/filters.ts. Such manipulation of the argument column leads to improperly controll",
+        "published": "2026-07-18T20:17:30.107"
+      },
+      {
+        "cve_id": "CVE-2026-16194",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A vulnerability was determined in zhayujie CowAgent up to 2.1.1. This affects the function WebFetch.execute of the file agent/tools/web_fetch/web_fetch.py. Executing a manipulation of the argument url",
+        "published": "2026-07-18T22:16:43.830"
+      },
+      {
+        "cve_id": "CVE-2026-16195",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A security flaw has been discovered in Sipeed PicoClaw up to 0.2.9. This issue affects the function dispatchIncoming of the file pkg/channels/wecom/wecom.go of the component Group Message Handler. The",
+        "published": "2026-07-18T23:17:00.847"
+      },
+      {
+        "cve_id": "CVE-2026-16196",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A weakness has been identified in Sipeed PicoClaw up to 0.2.9. Impacted is the function isPrivateOrRestrictedIP of the file pkg/tools/integration/web.go of the component web_fetch. This manipulation c",
+        "published": "2026-07-18T23:17:01.010"
+      },
+      {
+        "cve_id": "CVE-2026-16197",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A security vulnerability has been detected in Sipeed PicoClaw up to 0.2.9. The affected element is the function handleMessageReceive of the file pkg/channels/feishu/feishu_64.go of the component Group",
+        "published": "2026-07-18T23:17:01.187"
+      },
+      {
+        "cve_id": "CVE-2026-16199",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A flaw has been found in nextlevelbuilder GoClaw up to 3.13.3-beta.3. This affects the function ExecTool.Execute of the file goclaw/internal/tools/credentialed_exec.go. Executing a manipulation can le",
+        "published": "2026-07-19T00:16:40.830"
       }
     ]
   },
