@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-18T20:37:18.924323+00:00",
+  "generated_at": "2026-07-19T01:47:20.401713+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
-        "score": 2.5,
+        "value": 2,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,17 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 103,
-    "critical_count": 6,
-    "high_count": 33,
+    "total": 84,
+    "critical_count": 2,
+    "high_count": 29,
     "cves": [
-      {
-        "cve_id": "CVE-2026-54159",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "PrestaShop ps_facetedsearch is a module that adds layered navigation filters. From 3.0.0 until 4.0.4, the ps_facetedsearch module rebuilds selected search filters from the request URL, and the value o",
-        "published": "2026-07-17T21:17:07.963"
-      },
       {
         "cve_id": "CVE-2026-16117",
         "severity": "CRITICAL",
@@ -257,32 +250,11 @@
         "published": "2026-07-18T14:17:11.620"
       },
       {
-        "cve_id": "CVE-2026-13446",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "IBM Langflow OSS 1.0.0 through 1.10.1 contains\u00a0hard-coded credentials, such as a password or cryptographic key, which it uses for its own inbound authentication, outbound communication to external com",
-        "published": "2026-07-17T21:17:05.960"
-      },
-      {
-        "cve_id": "CVE-2026-48062",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "CodeIgniter is a PHP full-stack web framework. Prior to 4.7.3, the ext_in upload validation rule in system/Validation/StrictRules/FileRules.php checked the MIME-derived guessed extension instead of th",
-        "published": "2026-07-17T21:17:06.787"
-      },
-      {
         "cve_id": "CVE-2026-47865",
         "severity": "CRITICAL",
         "base_score": 9.8,
         "description": "VMware Avi Load Balancer contains an authentication bypass vulnerability. A malicious user with network access may be able to access the Avi Control plane by bypassing the authentication mechanism.\n\nA",
         "published": "2026-07-18T09:17:08.287"
-      },
-      {
-        "cve_id": "CVE-2026-55518",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Avo is a framework to create admin panels for Ruby on Rails apps. Prior to 3.32.1 and 4.0.0.beta.51, Avo's association attach workflow checks attach_<association>? in the UI and GET /resources/:resour",
-        "published": "2026-07-17T21:17:09.173"
       },
       {
         "cve_id": "CVE-2026-47871",
@@ -334,13 +306,6 @@
         "published": "2026-07-18T14:17:11.480"
       },
       {
-        "cve_id": "CVE-2026-54498",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "view_component is a framework for building reusable, testable, and encapsulated view components in Ruby on Rails. From 4.0.0 until 4.12.0, ViewComponent::Base#around_render can return HTML-unsafe stri",
-        "published": "2026-07-17T21:17:09.043"
-      },
-      {
         "cve_id": "CVE-2026-47867",
         "severity": "HIGH",
         "base_score": 8.7,
@@ -369,6 +334,13 @@
         "published": "2026-07-18T13:17:06.030"
       },
       {
+        "cve_id": "CVE-2026-12228",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "A stored cross-site scripting (XSS) vulnerability exists in the `POST /api/prompts/share` endpoint of parisneo/lollms (latest version). The endpoint stores attacker-controlled `prompt_content` into `D",
+        "published": "2026-07-18T21:17:03.040"
+      },
+      {
         "cve_id": "CVE-2024-58366",
         "severity": "HIGH",
         "base_score": 8.5,
@@ -381,6 +353,34 @@
         "base_score": 8.3,
         "description": "VMware Avi Load Balancer contains an authorization bypass vulnerability. A malicious actor on the network can access a limited subset of the Avi Control Plane without proper authorization.\n\nAffected v",
         "published": "2026-07-18T09:17:08.413"
+      },
+      {
+        "cve_id": "CVE-2026-10130",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "QueryWeaver contains an authentication bypass vulnerability that allows unauthenticated attackers to obtain valid session tokens for existing accounts by submitting a signup request with a known victi",
+        "published": "2026-07-18T23:17:00.397"
+      },
+      {
+        "cve_id": "CVE-2026-9323",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The urwid web display backend (urwid/display/web.py) generates web session identifiers (urwid_id) in Screen.start() by concatenating two random.randrange(10**9) calls that use Python's Mersenne Twiste",
+        "published": "2026-07-18T14:17:12.170"
+      },
+      {
+        "cve_id": "CVE-2026-47868",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "VMware Avi Load Balancer contains a local privilege escalation vulnerability. A malicious user with local access may be able to escalate their privileges to run code as root.\n\nAffected versions:\n32.1.",
+        "published": "2026-07-18T09:17:08.627"
+      },
+      {
+        "cve_id": "CVE-2026-9147",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "uproot dynamically generates Python class source code from ROOT TStreamerInfo records in a file and compiles it at runtime. Some file-controlled streamer metadata fields (for example, streamer element",
+        "published": "2026-07-18T13:17:06.273"
       }
     ]
   },
