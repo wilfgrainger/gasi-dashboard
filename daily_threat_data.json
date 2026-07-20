@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T10:41:33.630516+00:00",
+  "generated_at": "2026-07-20T13:48:27.532521+00:00",
   "threat_score": {
     "score": 5.0,
     "level": "ELEVATED",
@@ -238,7 +238,7 @@
     ]
   },
   "nvd": {
-    "total": 453,
+    "total": 425,
     "critical_count": 0,
     "high_count": 1,
     "cves": [
@@ -250,137 +250,137 @@
         "published": "2026-07-19T15:16:49.027"
       },
       {
-        "cve_id": "CVE-2026-53373",
+        "cve_id": "CVE-2026-63837",
         "severity": "UNKNOWN",
         "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmm/vma: do not try to unmap a VMA if mmap_prepare() invoked from mmap()\n\nThe mmap_prepare hook functionality includes the ability t",
-        "published": "2026-07-19T11:16:38.390"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: ena: PHC: Check return code before setting timestamp output\n\nena_phc_gettimex64() is setting the output parameter regardless\no",
+        "published": "2026-07-19T15:16:50.480"
       },
       {
-        "cve_id": "CVE-2026-53374",
+        "cve_id": "CVE-2026-63838",
         "severity": "UNKNOWN",
         "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu: zero-initialize GART table on allocation\n\nGART TLB is flushed after unmapping but not after mapping. Since\namdgpu_bo_cr",
-        "published": "2026-07-19T11:16:38.500"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nASoC: rsnd: Fix potential out-of-bounds access of component_dais[]\n\ncomponent_dais[RSND_MAX_COMPONENT] is initially zero-initialize",
+        "published": "2026-07-19T15:16:50.583"
       },
       {
-        "cve_id": "CVE-2026-53375",
+        "cve_id": "CVE-2026-63839",
         "severity": "UNKNOWN",
         "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/vce: Prevent partial address patches\n\nIn the case that only one of lo/hi is valid, the patching could result\nin a bad ad",
-        "published": "2026-07-19T11:16:38.623"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nplatform/x86: lenovo-wmi-helpers: Fix memory leak in lwmi_dev_evaluate_int()\n\nlwmi_dev_evaluate_int() leaks output.pointer when ret",
+        "published": "2026-07-19T15:16:50.693"
       },
       {
-        "cve_id": "CVE-2026-53376",
+        "cve_id": "CVE-2026-63840",
         "severity": "UNKNOWN",
         "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdkfd: Add upper bound check for num_of_nodes\n\ndrm/amdkfd: Add upper bound check for num_of_nodes\nin kfd_ioctl_get_process_ape",
-        "published": "2026-07-19T11:16:38.740"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/jpeg: set no_user_fence for JPEG v5.3.0 ring\n\nJPEG rings do not support 64-bit user fence writes, reject CS\nsubmissions ",
+        "published": "2026-07-19T15:16:50.787"
       },
       {
-        "cve_id": "CVE-2026-53377",
+        "cve_id": "CVE-2026-63841",
         "severity": "UNKNOWN",
         "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/msm: always recover the gpu\n\nPreviously, in case there was no more work to do, recover worker\nwouldn't trigger recovery and wou",
-        "published": "2026-07-19T11:16:38.847"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/jpeg: set no_user_fence for JPEG v5.0.1 ring\n\nJPEG rings do not support 64-bit user fence writes, reject CS\nsubmissions ",
+        "published": "2026-07-19T15:16:50.883"
       },
       {
-        "cve_id": "CVE-2026-53378",
+        "cve_id": "CVE-2026-63842",
         "severity": "UNKNOWN",
         "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/colorop: Fix blob property reference tracking in state lifecycle\n\nThe colorop state blob property handling had memory leaks dur",
-        "published": "2026-07-19T11:16:38.953"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/jpeg: set no_user_fence for JPEG v5.0.0 ring\n\nJPEG rings do not support 64-bit user fence writes, reject CS\nsubmissions ",
+        "published": "2026-07-19T15:16:50.987"
       },
       {
-        "cve_id": "CVE-2026-53379",
+        "cve_id": "CVE-2026-63843",
         "severity": "UNKNOWN",
         "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmedia: i2c: ov8856: free control handler on error in ov8856_init_controls()\n\nThe control handler wasn't freed if adding controls fa",
-        "published": "2026-07-19T11:16:39.060"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/jpeg: set no_user_fence for JPEG v4.0.5 ring\n\nJPEG rings do not support 64-bit user fence writes, reject CS\nsubmissions ",
+        "published": "2026-07-19T15:16:51.093"
       },
       {
-        "cve_id": "CVE-2026-53380",
+        "cve_id": "CVE-2026-63844",
         "severity": "UNKNOWN",
         "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmedia: rzv2h-ivc: Fix concurrent buffer list access\n\nThe list of buffers (`rzv2h_ivc::buffers.queue`) is protected by a\nspinlock (`",
-        "published": "2026-07-19T11:16:39.173"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/jpeg: set no_user_fence for JPEG v4.0.3 ring\n\nJPEG rings do not support 64-bit user fence writes, reject CS\nsubmissions ",
+        "published": "2026-07-19T15:16:51.187"
       },
       {
-        "cve_id": "CVE-2026-53381",
+        "cve_id": "CVE-2026-63845",
         "severity": "UNKNOWN",
         "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nvirtiofs: fix UAF on submount umount\n\niput() called from fuse_release_end() can Oops if the super block has\nalready been destroyed.",
-        "published": "2026-07-19T12:16:48.807"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/jpeg: set no_user_fence for JPEG v4.0 ring\n\nJPEG rings do not support 64-bit user fence writes, reject CS\nsubmissions wi",
+        "published": "2026-07-19T15:16:51.290"
       },
       {
-        "cve_id": "CVE-2026-53382",
+        "cve_id": "CVE-2026-63846",
         "severity": "UNKNOWN",
         "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmedia: vidtv: fix NULL pointer dereference in vidtv_mux_push_si\n\nsyzbot reported a general protection fault in\nvidtv_psi_ts_psi_wri",
-        "published": "2026-07-19T12:16:48.970"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/jpeg: set no_user_fence for JPEG v3.0 ring\n\nJPEG rings do not support 64-bit user fence writes, reject CS\nsubmissions wi",
+        "published": "2026-07-19T15:16:51.393"
       },
       {
-        "cve_id": "CVE-2026-53383",
+        "cve_id": "CVE-2026-63847",
         "severity": "UNKNOWN",
         "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: reject non-VALID session in compound request branch\n\nsmb2_check_user_session() takes a shortcut for any operation that is no",
-        "published": "2026-07-19T12:16:49.117"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/jpeg: set no_user_fence for JPEG v2.5 ring\n\nJPEG rings do not support 64-bit user fence writes, reject CS\nsubmissions wi",
+        "published": "2026-07-19T15:16:51.497"
       },
       {
-        "cve_id": "CVE-2026-53384",
+        "cve_id": "CVE-2026-63848",
         "severity": "UNKNOWN",
         "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nserial: 8250_dw: unregister 8250 port if clk_notifier_register() fails\n\ndw8250_probe() registers the 8250 port via serial8250_regis",
-        "published": "2026-07-19T12:16:49.263"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/jpeg: set no_user_fence for JPEG v2.0 ring\n\nJPEG rings do not support 64-bit user fence writes, reject CS\nsubmissions wi",
+        "published": "2026-07-19T15:16:51.600"
       },
       {
-        "cve_id": "CVE-2026-53385",
+        "cve_id": "CVE-2026-63849",
         "severity": "UNKNOWN",
         "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nvc_screen: fix null-ptr-deref in vcs_notifier() during concurrent vcs_write\n\nA KASAN null-ptr-deref was observed in vcs_notifier():",
-        "published": "2026-07-19T12:16:49.387"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/vcn: set no_user_fence for VCN v5.0.1 enc ring\n\nVCN encoder and decoder rings do not support 64-bit user fence writes,\nr",
+        "published": "2026-07-19T15:16:51.703"
       },
       {
-        "cve_id": "CVE-2026-53386",
+        "cve_id": "CVE-2026-63850",
         "severity": "UNKNOWN",
         "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\niio: adc: ti-ads1298: add bounds check to pga_settings index\n\nads1298_pga_settings has 7 elements but ADS1298_MASK_CH_PGA can yield",
-        "published": "2026-07-19T12:16:49.540"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/vcn: set no_user_fence for VCN v5.0.0 enc ring\n\nVCN encoder and decoder rings do not support 64-bit user fence writes,\nr",
+        "published": "2026-07-19T15:16:51.803"
       },
       {
-        "cve_id": "CVE-2026-53387",
+        "cve_id": "CVE-2026-63851",
         "severity": "UNKNOWN",
         "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\niio: light: veml6075: add bounds check to veml6075_it_ms index\n\nveml6075_it_ms has 5 elements but VEML6075_CONF_IT can yield values",
-        "published": "2026-07-19T12:16:49.650"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/vcn: set no_user_fence for VCN v4.0.5 enc ring\n\nVCN encoder and decoder rings do not support 64-bit user fence writes,\nr",
+        "published": "2026-07-19T15:16:51.907"
       },
       {
-        "cve_id": "CVE-2026-53388",
+        "cve_id": "CVE-2026-63852",
         "severity": "UNKNOWN",
         "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nfuse: re-lock request before replacing page cache folio\n\nfuse_try_move_folio() unlocks the request on entry but does not\nre-lock it",
-        "published": "2026-07-19T12:16:49.757"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/vcn: set no_user_fence for VCN v4.0.3 enc ring\n\nVCN encoder and decoder rings do not support 64-bit user fence writes,\nr",
+        "published": "2026-07-19T15:16:52.003"
       },
       {
-        "cve_id": "CVE-2026-53389",
+        "cve_id": "CVE-2026-63853",
         "severity": "UNKNOWN",
         "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/tcp-ao: fix use-after-free of key in del_async path\n\nIn tcp_ao_delete_key(), the del_async path skips the current_key\nand rnext",
-        "published": "2026-07-19T12:16:49.890"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/vcn: set no_user_fence for VCN v4.0 enc ring\n\nVCN encoder and decoder rings do not support 64-bit user fence writes,\nrej",
+        "published": "2026-07-19T15:16:52.113"
       },
       {
-        "cve_id": "CVE-2026-53390",
+        "cve_id": "CVE-2026-63854",
         "severity": "UNKNOWN",
         "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: fix out-of-bounds read in smb_check_perm_dacl()\n\nThe permission-check ACE walk in smb_check_perm_dacl() validates the ACE\nhe",
-        "published": "2026-07-19T12:16:50.000"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/vcn: set no_user_fence for VCN v3.0 enc/dec rings\n\nVCN encoder and decoder rings do not support 64-bit user fence writes",
+        "published": "2026-07-19T15:16:52.217"
       },
       {
-        "cve_id": "CVE-2026-53391",
+        "cve_id": "CVE-2026-63855",
         "severity": "UNKNOWN",
         "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nNFSv4/pNFS: reject zero-length r_addr in nfs4_decode_mp_ds_addr\n\nnfs4_decode_mp_ds_addr() decodes the r_netid and r_addr opaques of",
-        "published": "2026-07-19T12:16:50.137"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/vcn: set no_user_fence for VCN v2.5 enc/dec rings\n\nVCN encoder and decoder rings do not support 64-bit user fence writes",
+        "published": "2026-07-19T15:16:52.337"
       }
     ]
   },
