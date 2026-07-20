@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-20T13:48:27.532521+00:00",
+  "generated_at": "2026-07-20T17:23:04.087054+00:00",
   "threat_score": {
-    "score": 5.0,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.5,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 1.0,
+        "value": 6,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 425,
-    "critical_count": 0,
-    "high_count": 1,
+    "total": 168,
+    "critical_count": 6,
+    "high_count": 29,
     "cves": [
       {
-        "cve_id": "CVE-2026-16221",
+        "cve_id": "CVE-2026-44359",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Meshtastic is an open source mesh networking solution. Prior to version 2.7.21.1370b23, the Meshtastic GitHub repository's main_matrix.yml workflow is triggered by pull_request_target  and multiple jo",
+        "published": "2026-07-20T00:16:58.210"
+      },
+      {
+        "cve_id": "CVE-2026-16235",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Crypt::Password versions through 0.28 for Perl generate insecure random values for salts.\n\nThese versions use the built-in rand function, which is predictable and unsuitable for cryptography.",
+        "published": "2026-07-20T07:16:37.320"
+      },
+      {
+        "cve_id": "CVE-2026-64620",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "FreeRDP before 3.28.0 (affected <=3.27.1) contains a heap-based buffer overflow in crypto_rsa_common() (libfreerdp/crypto/crypto.c). The function writes the modular-exponentiation result into the call",
+        "published": "2026-07-20T12:19:46.760"
+      },
+      {
+        "cve_id": "CVE-2026-16242",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "A flaw was found in the Konnectivity proxy-server configuration for hosted control planes. The agent-facing listener was started without --cluster-ca-cert (and without token-based agent authentication",
+        "published": "2026-07-20T08:16:29.833"
+      },
+      {
+        "cve_id": "CVE-2026-13147",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The Kirki  WordPress plugin before 6.0.12 does not validate a user-supplied URL before requesting it server-side, allowing unauthenticated attackers to make the site issue HTTP requests to arbitrary h",
+        "published": "2026-07-20T07:16:35.580"
+      },
+      {
+        "cve_id": "CVE-2026-12701",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "A path traversal vulnerability was found in pulpcore. The relative_path_validator function only verifies that content paths do not begin with \"/\" but fails to block directory traversal sequences such ",
+        "published": "2026-07-20T15:16:34.333"
+      },
+      {
+        "cve_id": "CVE-2026-10081",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Impact: fast-uri versions from 2.3.1 through 4.1.0 (including the 3.x line up to 3.1.3 and the 2.x line up to 2.4.2) do not treat a literal backslash character (U+005C) as an authority delimiter. Node",
-        "published": "2026-07-19T15:16:49.027"
+        "base_score": 8.8,
+        "description": "The Unlimited Elements For Elementor WordPress plugin before 2.0.11 does not sanitize or escape Google review content fetched from the Serp API before rendering it in the Google Reviews widget output,",
+        "published": "2026-07-20T07:16:33.520"
       },
       {
-        "cve_id": "CVE-2026-63837",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: ena: PHC: Check return code before setting timestamp output\n\nena_phc_gettimex64() is setting the output parameter regardless\no",
-        "published": "2026-07-19T15:16:50.480"
+        "cve_id": "CVE-2026-63757",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "SurrealDB versions before 3.1.0 contain a session hijacking vulnerability where the HTTP /rpc sessions method returns attached session UUIDs without authentication and accepts arbitrary session fields",
+        "published": "2026-07-20T12:19:45.747"
       },
       {
-        "cve_id": "CVE-2026-63838",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nASoC: rsnd: Fix potential out-of-bounds access of component_dais[]\n\ncomponent_dais[RSND_MAX_COMPONENT] is initially zero-initialize",
-        "published": "2026-07-19T15:16:50.583"
+        "cve_id": "CVE-2026-16248",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was found in Tenda AC10 16.03.10.09_multi_TDE01. This issue affects the function fromAdvSetLanip of the file /goform/AdvSetLanip of the component httpd/netctrl. The manipulation of the",
+        "published": "2026-07-20T13:16:56.190"
       },
       {
-        "cve_id": "CVE-2026-63839",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nplatform/x86: lenovo-wmi-helpers: Fix memory leak in lwmi_dev_evaluate_int()\n\nlwmi_dev_evaluate_int() leaks output.pointer when ret",
-        "published": "2026-07-19T15:16:50.693"
+        "cve_id": "CVE-2026-63090",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "ProFTPD before 1.3.9c and 1.3.10rc3 contains a heap-based buffer overflow vulnerability in the mod_sftp module that allows authenticated low-privilege attackers to achieve arbitrary code execution by ",
+        "published": "2026-07-20T15:16:45.213"
       },
       {
-        "cve_id": "CVE-2026-63840",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/jpeg: set no_user_fence for JPEG v5.3.0 ring\n\nJPEG rings do not support 64-bit user fence writes, reject CS\nsubmissions ",
-        "published": "2026-07-19T15:16:50.787"
+        "cve_id": "CVE-2026-21824",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "HCL Commerce contains an privilege escalation vulnerability that could allow denial of service, disclosure of user personal data, and performing of unauthorized administrative operations.",
+        "published": "2026-07-20T16:16:56.777"
       },
       {
-        "cve_id": "CVE-2026-63841",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/jpeg: set no_user_fence for JPEG v5.0.1 ring\n\nJPEG rings do not support 64-bit user fence writes, reject CS\nsubmissions ",
-        "published": "2026-07-19T15:16:50.883"
+        "cve_id": "CVE-2026-25039",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Parsec is a cloud-based application for simple and cryptographically secure file sharing. The application does not sanitize the workspace name, creating a vulnerability if that workspace name is a UNC",
+        "published": "2026-07-20T16:16:56.913"
       },
       {
-        "cve_id": "CVE-2026-63842",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/jpeg: set no_user_fence for JPEG v5.0.0 ring\n\nJPEG rings do not support 64-bit user fence writes, reject CS\nsubmissions ",
-        "published": "2026-07-19T15:16:50.987"
+        "cve_id": "CVE-2026-45270",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "CI4MS is a CodeIgniter 4-based content management system skeleton. Prior to version 0.31.9.0, the `Pages` backend module registers the `html_purify` validation rule on language-keyed page content but ",
+        "published": "2026-07-20T15:16:38.163"
       },
       {
-        "cve_id": "CVE-2026-63843",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/jpeg: set no_user_fence for JPEG v4.0.5 ring\n\nJPEG rings do not support 64-bit user fence writes, reject CS\nsubmissions ",
-        "published": "2026-07-19T15:16:51.093"
+        "cve_id": "CVE-2026-11349",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "The Modern Event Calendar Pro WordPress plugin before 7.34.0, Modern Events Calendar Lite WordPress plugin before 7.34.0 do not sanitise and escape a request parameter before using it in a SQL stateme",
+        "published": "2026-07-20T07:16:34.547"
       },
       {
-        "cve_id": "CVE-2026-63844",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/jpeg: set no_user_fence for JPEG v4.0.3 ring\n\nJPEG rings do not support 64-bit user fence writes, reject CS\nsubmissions ",
-        "published": "2026-07-19T15:16:51.187"
+        "cve_id": "CVE-2026-64623",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Network-AI before 5.13.4 contains an improper cryptographic signature verification vulnerability in APSAdapter where the default local verifier accepts any non-empty string as valid. Unauthenticated a",
+        "published": "2026-07-20T12:19:47.200"
       },
       {
-        "cve_id": "CVE-2026-63845",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/jpeg: set no_user_fence for JPEG v4.0 ring\n\nJPEG rings do not support 64-bit user fence writes, reject CS\nsubmissions wi",
-        "published": "2026-07-19T15:16:51.290"
+        "cve_id": "CVE-2026-13577",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Dancer2 versions through 2.1.0 for Perl generate insecure session ids when CSPRNG modules are unavailable.\n\nDancer2::Core::Role::SessionFactory::generate_id silently falls back to a built-in rand-deri",
+        "published": "2026-07-20T08:16:28.987"
       },
       {
-        "cve_id": "CVE-2026-63846",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/jpeg: set no_user_fence for JPEG v3.0 ring\n\nJPEG rings do not support 64-bit user fence writes, reject CS\nsubmissions wi",
-        "published": "2026-07-19T15:16:51.393"
+        "cve_id": "CVE-2026-63735",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "SurrealDB versions before 3.2.0 fail to validate namespace and database scope in custom API routes, allowing authenticated users to invoke endpoints in different namespaces/databases. Attackers with v",
+        "published": "2026-07-20T12:19:42.563"
       },
       {
-        "cve_id": "CVE-2026-63847",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/jpeg: set no_user_fence for JPEG v2.5 ring\n\nJPEG rings do not support 64-bit user fence writes, reject CS\nsubmissions wi",
-        "published": "2026-07-19T15:16:51.497"
+        "cve_id": "CVE-2026-63756",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "SurrealDB versions before 3.1.0 contain a time-of-check/time-of-use race condition in the HTTP /rpc endpoint that allows unauthenticated requests to inherit authenticated session state. Unauthenticate",
+        "published": "2026-07-20T12:19:45.590"
       },
       {
-        "cve_id": "CVE-2026-63848",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/jpeg: set no_user_fence for JPEG v2.0 ring\n\nJPEG rings do not support 64-bit user fence writes, reject CS\nsubmissions wi",
-        "published": "2026-07-19T15:16:51.600"
+        "cve_id": "CVE-2026-12484",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "A vulnerability in keras-team/keras version 3.15.0 allows unsafe deserialization of attacker-controlled PyTorch pickle data through the public `keras.layers.TorchModuleWrapper.from_config` method. Thi",
+        "published": "2026-07-19T20:16:28.800"
       },
       {
-        "cve_id": "CVE-2026-63849",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/vcn: set no_user_fence for VCN v5.0.1 enc ring\n\nVCN encoder and decoder rings do not support 64-bit user fence writes,\nr",
-        "published": "2026-07-19T15:16:51.703"
-      },
-      {
-        "cve_id": "CVE-2026-63850",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/vcn: set no_user_fence for VCN v5.0.0 enc ring\n\nVCN encoder and decoder rings do not support 64-bit user fence writes,\nr",
-        "published": "2026-07-19T15:16:51.803"
-      },
-      {
-        "cve_id": "CVE-2026-63851",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/vcn: set no_user_fence for VCN v4.0.5 enc ring\n\nVCN encoder and decoder rings do not support 64-bit user fence writes,\nr",
-        "published": "2026-07-19T15:16:51.907"
-      },
-      {
-        "cve_id": "CVE-2026-63852",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/vcn: set no_user_fence for VCN v4.0.3 enc ring\n\nVCN encoder and decoder rings do not support 64-bit user fence writes,\nr",
-        "published": "2026-07-19T15:16:52.003"
-      },
-      {
-        "cve_id": "CVE-2026-63853",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/vcn: set no_user_fence for VCN v4.0 enc ring\n\nVCN encoder and decoder rings do not support 64-bit user fence writes,\nrej",
-        "published": "2026-07-19T15:16:52.113"
-      },
-      {
-        "cve_id": "CVE-2026-63854",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/vcn: set no_user_fence for VCN v3.0 enc/dec rings\n\nVCN encoder and decoder rings do not support 64-bit user fence writes",
-        "published": "2026-07-19T15:16:52.217"
-      },
-      {
-        "cve_id": "CVE-2026-63855",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu/vcn: set no_user_fence for VCN v2.5 enc/dec rings\n\nVCN encoder and decoder rings do not support 64-bit user fence writes",
-        "published": "2026-07-19T15:16:52.337"
+        "cve_id": "CVE-2026-63739",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "SurrealDB before 3.1.5 contains an arbitrary file read vulnerability in the DEFINE ANALYZER mapper filter that allows database users with EDITOR or OWNER roles to read files accessible to the SurrealD",
+        "published": "2026-07-20T12:19:43.143"
       }
     ]
   },
