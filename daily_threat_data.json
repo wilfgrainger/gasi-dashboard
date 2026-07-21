@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T10:15:35.750442+00:00",
+  "generated_at": "2026-07-21T13:17:39.560613+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
+        "value": 8,
         "score": 2.5,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 281,
-    "critical_count": 5,
-    "high_count": 28,
+    "total": 319,
+    "critical_count": 8,
+    "high_count": 23,
     "cves": [
       {
         "cve_id": "CVE-2026-46412",
@@ -257,11 +257,32 @@
         "published": "2026-07-20T16:17:04.897"
       },
       {
-        "cve_id": "CVE-2026-64620",
+        "cve_id": "CVE-2026-54051",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Network-AI is a TypeScript/Node.js multi-agent orchestrator. Prior to version 5.9.1, the agent sandbox gates shell commands behind an allowlist (`SandboxPolicy.isCommandAllowed`), which THREAT_MODEL.m",
+        "published": "2026-07-20T17:17:57.643"
+      },
+      {
+        "cve_id": "CVE-2026-35048",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "FreeRDP before 3.28.0 (affected <=3.27.1) contains a heap-based buffer overflow in crypto_rsa_common() (libfreerdp/crypto/crypto.c). The function writes the modular-exponentiation result into the call",
-        "published": "2026-07-20T12:19:46.760"
+        "description": "The Piwigo installer in versions 16.3.0 and earlier accepts POST parameters for database configuration and writes them directly into a PHP configuration file without proper sanitization. On PHP 8+, th",
+        "published": "2026-07-20T17:17:06.840"
+      },
+      {
+        "cve_id": "CVE-2026-41252",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "xrdp is an open source RDP server. Versions 0.10.6 and prior contain a missing bounds check in xrdp, which allows a heap-based buffer overflow when operating in vnc-any mode. The issue occurs during t",
+        "published": "2026-07-20T17:17:08.310"
+      },
+      {
+        "cve_id": "CVE-2026-39878",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Chamilo LMS versions 1.11.38 and earlier contain a stored cross-site scripting vulnerability in the user registration form that allows any unauthenticated attacker to execute arbitrary JavaScript in a",
+        "published": "2026-07-20T18:16:51.713"
       },
       {
         "cve_id": "CVE-2026-12701",
@@ -276,20 +297,6 @@
         "base_score": 9.0,
         "description": "HeyForm is an open-source form builder. Prior to version 3.0.0-rc.7, a stored cross-site scripting (XSS) vulnerability in the form builder allows a low-privileged team member to inject malicious JavaS",
         "published": "2026-07-20T16:16:58.440"
-      },
-      {
-        "cve_id": "CVE-2026-63757",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "SurrealDB versions before 3.1.0 contain a session hijacking vulnerability where the HTTP /rpc sessions method returns attached session UUIDs without authentication and accepts arbitrary session fields",
-        "published": "2026-07-20T12:19:45.747"
-      },
-      {
-        "cve_id": "CVE-2026-16248",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was found in Tenda AC10 16.03.10.09_multi_TDE01. This issue affects the function fromAdvSetLanip of the file /goform/AdvSetLanip of the component httpd/netctrl. The manipulation of the",
-        "published": "2026-07-20T13:16:56.190"
       },
       {
         "cve_id": "CVE-2026-63090",
@@ -313,18 +320,18 @@
         "published": "2026-07-20T16:16:56.913"
       },
       {
+        "cve_id": "CVE-2026-44178",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "xrdp is an open source RDP server. Versions 0.10.6 and prior contain a heap-based buffer overflow vulnerability within the virtual channel forwarding mechanism. When forwarding data from a remote clie",
+        "published": "2026-07-20T17:17:09.060"
+      },
+      {
         "cve_id": "CVE-2026-45270",
         "severity": "HIGH",
         "base_score": 8.7,
         "description": "CI4MS is a CodeIgniter 4-based content management system skeleton. Prior to version 0.31.9.0, the `Pages` backend module registers the `html_purify` validation rule on language-keyed page content but ",
         "published": "2026-07-20T15:16:38.163"
-      },
-      {
-        "cve_id": "CVE-2026-64623",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Network-AI before 5.13.4 contains an improper cryptographic signature verification vulnerability in APSAdapter where the default local verifier accepts any non-empty string as valid. Unauthenticated a",
-        "published": "2026-07-20T12:19:47.200"
       },
       {
         "cve_id": "CVE-2026-63429",
@@ -348,18 +355,11 @@
         "published": "2026-07-20T16:17:01.163"
       },
       {
-        "cve_id": "CVE-2026-63735",
+        "cve_id": "CVE-2026-41521",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "SurrealDB versions before 3.2.0 fail to validate namespace and database scope in custom API routes, allowing authenticated users to invoke endpoints in different namespaces/databases. Attackers with v",
-        "published": "2026-07-20T12:19:42.563"
-      },
-      {
-        "cve_id": "CVE-2026-63756",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "SurrealDB versions before 3.1.0 contain a time-of-check/time-of-use race condition in the HTTP /rpc endpoint that allows unauthenticated requests to inherit authenticated session state. Unauthenticate",
-        "published": "2026-07-20T12:19:45.590"
+        "base_score": 8.2,
+        "description": "xrdp is an open source RDP server. Versions 0.10.6 and prior contain an integer overflow vulnerability when processing screen update messages within the vnc-any connection mode. A malicious remote VNC",
+        "published": "2026-07-20T17:17:08.460"
       },
       {
         "cve_id": "CVE-2026-32821",
@@ -369,18 +369,18 @@
         "published": "2026-07-20T17:17:05.750"
       },
       {
-        "cve_id": "CVE-2026-63739",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "SurrealDB before 3.1.5 contains an arbitrary file read vulnerability in the DEFINE ANALYZER mapper filter that allows database users with EDITOR or OWNER roles to read files accessible to the SurrealD",
-        "published": "2026-07-20T12:19:43.143"
-      },
-      {
         "cve_id": "CVE-2026-54910",
         "severity": "HIGH",
         "base_score": 7.7,
         "description": "FileBrowser Quantum is a free, self-hosted, web-based file manager. Prior to version 1.4.3-beta, the `subtitlesHandler` endpoint (`GET /api/media/subtitles`) accepts two user-controlled query paramete",
         "published": "2026-07-20T15:16:43.933"
+      },
+      {
+        "cve_id": "CVE-2026-46555",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "WhatsApp MCP Server is a Model Context Protocol (MCP) server for WhatsApp, enabling Claude to read and send WhatsApp messages. Prior to version 0.2.1, the `whatsapp-bridge` HTTP API listens on `127.0.",
+        "published": "2026-07-20T17:17:09.820"
       }
     ]
   },
