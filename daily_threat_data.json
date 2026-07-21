@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T13:17:39.560613+00:00",
+  "generated_at": "2026-07-21T17:06:37.378123+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 24,
+        "value": 28,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
+        "value": 9,
         "score": 2.5,
         "max": 3
       },
@@ -32,9 +32,49 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1647,
-    "recent_30d_count": 24,
+    "total_catalog_count": 1651,
+    "recent_30d_count": 28,
     "recent": [
+      {
+        "cve_id": "CVE-2026-60137",
+        "vendor": "WordPress",
+        "product": "Core",
+        "name": "WordPress Core SQL Injection Vulnerability",
+        "date_added": "2026-07-21",
+        "due_date": "2026-08-04",
+        "description": "WordPress Core contains a SQL injection vulnerability when a plugin or theme passes untrusted input to the parameter. This vulnerability can be chained with CVE-2026-63030 to allow an unauthenticated ",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-63030",
+        "vendor": "WordPress",
+        "product": "Core",
+        "name": "WordPress Core Interpretation Conflict Vulnerability",
+        "date_added": "2026-07-21",
+        "due_date": "2026-07-24",
+        "description": "WordPress Core contains an interpretation conflict vulnerability that could allow an attacker to perform SQL Injection and achieve Remote Code Execution. This vulnerability can be chained with CVE-202",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-0770",
+        "vendor": "Langflow",
+        "product": "Langflow",
+        "name": "Langflow Inclusion of Functionality from Untrusted Control Sphere Vulnerability",
+        "date_added": "2026-07-21",
+        "due_date": "2026-07-24",
+        "description": "Langflow contains an inclusion of functionality from untrusted control sphere vulnerability that allows remote attackers to execute arbitrary code on affected installations. ",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2021-27137",
+        "vendor": "DD-WRT",
+        "product": "DD-WRT",
+        "name": "DD-WRT Stack-Based Buffer Overflow Vulnerability",
+        "date_added": "2026-07-21",
+        "due_date": "2026-07-24",
+        "description": "DD-WRT contains a stack-based buffer overflow vulnerability that could allow an unauthenticated attacker to overflow an internal buffer used by UPnP and trigger a code execution vulnerability.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-58644",
         "vendor": "Microsoft",
@@ -194,68 +234,14 @@
         "due_date": "2026-07-10",
         "description": "Adobe ColdFusion contains a path traversal vulnerability that could lead to arbitrary code execution in the context of the current user.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-45659",
-        "vendor": "Microsoft",
-        "product": "SharePoint Server",
-        "name": "Microsoft SharePoint Server Deserialization of Untrusted Data Vulnerability",
-        "date_added": "2026-07-01",
-        "due_date": "2026-07-04",
-        "description": "Microsoft SharePoint Server contains a deserialization of untrusted data vulnerability which allows an authorized attacker to execute code over a network.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-48558",
-        "vendor": "SimpleHelp ",
-        "product": "SimpleHelp",
-        "name": "SimpleHelp Authentication Bypass Vulnerability",
-        "date_added": "2026-06-29",
-        "due_date": "2026-07-02",
-        "description": "SimpleHelp contains an authentication bypass vulnerability in the OIDC authentication flow. When OIDC authentication is configured, identity tokens submitted during login are accepted without verifyin",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-12569",
-        "vendor": "PTC",
-        "product": "Windchill and FlexPLM",
-        "name": "PTC Windchill and FlexPLM Improper Input Validation Vulnerability",
-        "date_added": "2026-06-25",
-        "due_date": "2026-06-28",
-        "description": "PTC Windchill and FlexPLM contains an improper input validation vulnerability allowing an unauthenticated, remote attacker to execute arbitrary code by sending a malicious request to the network.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-20230",
-        "vendor": "Cisco",
-        "product": "Unified Communications Manager",
-        "name": "Cisco Unified Communications Manager Server-Side Request Forgery (SSRF) Vulnerability",
-        "date_added": "2026-06-25",
-        "due_date": "2026-06-28",
-        "description": "Cisco Unified Communications Manager (Unified CM) and Cisco Unified Communications Manager Session Management Edition (Unified CM SME) contain a server-side request forgery (SSRF) Vulnerability that c",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 319,
-    "critical_count": 8,
-    "high_count": 23,
+    "total": 323,
+    "critical_count": 9,
+    "high_count": 26,
     "cves": [
-      {
-        "cve_id": "CVE-2026-46412",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "@beproduct/nestjs-auth is a NestJS authentication module for BeProduct IDS (Identity Server) with OpenID Connect support. Between 2026-05-11 20:19 UTC and 22:56 UTC, an attacker used a compromised npm",
-        "published": "2026-07-20T16:17:01.000"
-      },
-      {
-        "cve_id": "CVE-2026-51027",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "An issue in FileThingie v.2.5.7 allows a remote attacker to obtain sensitive information via the ft2.php component.",
-        "published": "2026-07-20T16:17:04.897"
-      },
       {
         "cve_id": "CVE-2026-54051",
         "severity": "CRITICAL",
@@ -278,6 +264,34 @@
         "published": "2026-07-20T17:17:08.310"
       },
       {
+        "cve_id": "CVE-2026-63766",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "GPT-SoVITS through 20250606v2pro contains an OS command injection vulnerability in webui.py where ASR, slice, denoise, and uvr5 functions interpolate unsanitized Gradio textbox values directly into sh",
+        "published": "2026-07-20T20:16:46.170"
+      },
+      {
+        "cve_id": "CVE-2026-63767",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "ktransformers through 0.6.3, fixed in commit def0f93, contains an unauthenticated pickle deserialization vulnerability that allows remote attackers to execute arbitrary commands by sending crafted pic",
+        "published": "2026-07-20T20:16:46.323"
+      },
+      {
+        "cve_id": "CVE-2024-51311",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Tenda TX9 V22.03.02.05 firmware has a stack overflow vulnerability in the sub_4418CC function of the file /goform/SetNetControlList.",
+        "published": "2026-07-20T21:16:46.153"
+      },
+      {
+        "cve_id": "CVE-2024-51313",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Tenda TX9 V22.03.02.20 firmware has a stack overflow vulnerability in the sub_42EA38 function of the file /goform/SetVirtualServerCfg.",
+        "published": "2026-07-20T21:16:46.297"
+      },
+      {
         "cve_id": "CVE-2026-39878",
         "severity": "CRITICAL",
         "base_score": 9.3,
@@ -285,39 +299,11 @@
         "published": "2026-07-20T18:16:51.713"
       },
       {
-        "cve_id": "CVE-2026-12701",
+        "cve_id": "CVE-2026-44231",
         "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "A path traversal vulnerability was found in pulpcore. The relative_path_validator function only verifies that content paths do not begin with \"/\" but fails to block directory traversal sequences such ",
-        "published": "2026-07-20T15:16:34.333"
-      },
-      {
-        "cve_id": "CVE-2026-35198",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "HeyForm is an open-source form builder. Prior to version 3.0.0-rc.7, a stored cross-site scripting (XSS) vulnerability in the form builder allows a low-privileged team member to inject malicious JavaS",
-        "published": "2026-07-20T16:16:58.440"
-      },
-      {
-        "cve_id": "CVE-2026-63090",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "ProFTPD before 1.3.9c and 1.3.10rc3 contains a heap-based buffer overflow vulnerability in the mod_sftp module that allows authenticated low-privilege attackers to achieve arbitrary code execution by ",
-        "published": "2026-07-20T15:16:45.213"
-      },
-      {
-        "cve_id": "CVE-2026-21824",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "HCL Commerce contains an privilege escalation vulnerability that could allow denial of service, disclosure of user personal data, and performing of unauthorized administrative operations.",
-        "published": "2026-07-20T16:16:56.777"
-      },
-      {
-        "cve_id": "CVE-2026-25039",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Parsec is a cloud-based application for simple and cryptographically secure file sharing. The application does not sanitize the workspace name, creating a vulnerability if that workspace name is a UNC",
-        "published": "2026-07-20T16:16:56.913"
+        "base_score": 9.1,
+        "description": "RT is an open source, enterprise-grade issue and ticket tracking system. Versions prior to 5.0.10, 6.0.0 and above, prior to 6.0.3 contain an information disclosure and privilege escalation vulnerabil",
+        "published": "2026-07-20T20:16:43.797"
       },
       {
         "cve_id": "CVE-2026-44178",
@@ -327,32 +313,32 @@
         "published": "2026-07-20T17:17:09.060"
       },
       {
-        "cve_id": "CVE-2026-45270",
+        "cve_id": "CVE-2026-12341",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "CI4MS is a CodeIgniter 4-based content management system skeleton. Prior to version 0.31.9.0, the `Pages` backend module registers the `html_purify` validation rule on language-keyed page content but ",
-        "published": "2026-07-20T15:16:38.163"
+        "base_score": 8.8,
+        "description": "This vulnerability\nimpacts all versions of IdentityIQ and allows an unauthenticated attacker\nunauthorized access to protected APIs and data due to improper validation of\nOAuth bearer tokens.",
+        "published": "2026-07-20T19:17:18.027"
       },
       {
-        "cve_id": "CVE-2026-63429",
+        "cve_id": "CVE-2026-63108",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Roo Code through 3.54.0 contains a command injection vulnerability in the auto-approve execute feature that allows attackers to bypass allowlist/denylist enforcement by nesting command substitutions i",
+        "published": "2026-07-20T19:17:29.057"
+      },
+      {
+        "cve_id": "CVE-2026-53593",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "FreeScout is a free help desk and shared inbox built with PHP's Laravel framework. Prior to version 1.8.224, the denylist that neutralizes dangerous file uploads (`Helper::$restricted_extensions`) is ",
+        "published": "2026-07-20T20:16:44.883"
+      },
+      {
+        "cve_id": "CVE-2026-53591",
         "severity": "HIGH",
         "base_score": 8.6,
-        "description": "HeyForm is an open-source form builder. Prior to version 3.0.0-rc.9, `POST /api/upload` has no authentication guard, no global guard, no form-context validation, no `openToken` requirement, and no ses",
-        "published": "2026-07-20T16:17:06.810"
-      },
-      {
-        "cve_id": "CVE-2026-28220",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Wazuh is a free and open source platform used for threat prevention, detection, and response. Prior to version 4.14.5, issues in the Cluster Distributed API (DAPI) handling allow a cluster peer, or an",
-        "published": "2026-07-20T16:16:57.820"
-      },
-      {
-        "cve_id": "CVE-2026-46415",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "The Caddy Defender plugin is a middleware for Caddy that allows users to block or manipulate requests based on the client's IP address. Prior to version 0.10.1, Caddy Defender used `r.RemoteAddr` when",
-        "published": "2026-07-20T16:17:01.163"
+        "description": "FreeScout is a free help desk and shared inbox built with PHP's Laravel framework. Prior to version 1.8.223, an unauthenticated attacker can inject messages into any existing support conversation by s",
+        "published": "2026-07-20T20:16:44.613"
       },
       {
         "cve_id": "CVE-2026-41521",
@@ -369,11 +355,18 @@
         "published": "2026-07-20T17:17:05.750"
       },
       {
-        "cve_id": "CVE-2026-54910",
+        "cve_id": "CVE-2026-55626",
         "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "FileBrowser Quantum is a free, self-hosted, web-based file manager. Prior to version 1.4.3-beta, the `subtitlesHandler` endpoint (`GET /api/media/subtitles`) accepts two user-controlled query paramete",
-        "published": "2026-07-20T15:16:43.933"
+        "base_score": 8.0,
+        "description": "xrdp is an open source RDP server. In versions 0.10.6 and prior, when an authenticated user session is initialized using the Xvnc backend over UNIX domain sockets, the Xvnc process is launched with in",
+        "published": "2026-07-20T18:16:54.150"
+      },
+      {
+        "cve_id": "CVE-2026-48389",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "DNG SDK versions 1.7.1 2536 and earlier are affected by a Stack-based Buffer Overflow vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of th",
+        "published": "2026-07-20T19:17:23.807"
       },
       {
         "cve_id": "CVE-2026-46555",
@@ -381,6 +374,13 @@
         "base_score": 7.7,
         "description": "WhatsApp MCP Server is a Model Context Protocol (MCP) server for WhatsApp, enabling Claude to read and send WhatsApp messages. Prior to version 0.2.1, the `whatsapp-bridge` HTTP API listens on `127.0.",
         "published": "2026-07-20T17:17:09.820"
+      },
+      {
+        "cve_id": "CVE-2026-63107",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "LimeSurvey through 6.17.10 and 7.0.4 contains a server-side request forgery vulnerability in the REST API survey template endpoint that allows authenticated users to cause the server to issue arbitrar",
+        "published": "2026-07-20T19:17:28.913"
       }
     ]
   },
