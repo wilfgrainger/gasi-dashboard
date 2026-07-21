@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-21T17:06:37.378123+00:00",
+  "generated_at": "2026-07-21T20:57:43.145006+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
-        "score": 2.5,
+        "value": 14,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,45 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 323,
-    "critical_count": 9,
+    "total": 327,
+    "critical_count": 14,
     "high_count": 26,
     "cves": [
-      {
-        "cve_id": "CVE-2026-54051",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Network-AI is a TypeScript/Node.js multi-agent orchestrator. Prior to version 5.9.1, the agent sandbox gates shell commands behind an allowlist (`SandboxPolicy.isCommandAllowed`), which THREAT_MODEL.m",
-        "published": "2026-07-20T17:17:57.643"
-      },
-      {
-        "cve_id": "CVE-2026-35048",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Piwigo installer in versions 16.3.0 and earlier accepts POST parameters for database configuration and writes them directly into a PHP configuration file without proper sanitization. On PHP 8+, th",
-        "published": "2026-07-20T17:17:06.840"
-      },
-      {
-        "cve_id": "CVE-2026-41252",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "xrdp is an open source RDP server. Versions 0.10.6 and prior contain a missing bounds check in xrdp, which allows a heap-based buffer overflow when operating in vnc-any mode. The issue occurs during t",
-        "published": "2026-07-20T17:17:08.310"
-      },
-      {
-        "cve_id": "CVE-2026-63766",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "GPT-SoVITS through 20250606v2pro contains an OS command injection vulnerability in webui.py where ASR, slice, denoise, and uvr5 functions interpolate unsanitized Gradio textbox values directly into sh",
-        "published": "2026-07-20T20:16:46.170"
-      },
-      {
-        "cve_id": "CVE-2026-63767",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "ktransformers through 0.6.3, fixed in commit def0f93, contains an unauthenticated pickle deserialization vulnerability that allows remote attackers to execute arbitrary commands by sending crafted pic",
-        "published": "2026-07-20T20:16:46.323"
-      },
       {
         "cve_id": "CVE-2024-51311",
         "severity": "CRITICAL",
@@ -292,95 +257,130 @@
         "published": "2026-07-20T21:16:46.297"
       },
       {
-        "cve_id": "CVE-2026-39878",
+        "cve_id": "CVE-2024-51312",
         "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Chamilo LMS versions 1.11.38 and earlier contain a stored cross-site scripting vulnerability in the user registration form that allows any unauthenticated attacker to execute arbitrary JavaScript in a",
-        "published": "2026-07-20T18:16:51.713"
+        "base_score": 9.8,
+        "description": "The Tenda TX9 V22.03.02.20 firmware has a stack overflow vulnerability in the sub_42EEE0 function of the file /goform/SetStaticRouteCfg.",
+        "published": "2026-07-20T22:17:02.500"
       },
       {
-        "cve_id": "CVE-2026-44231",
+        "cve_id": "CVE-2024-51314",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Tenda TX9 V22.03.02.20 firmware has a stack overflow vulnerability in the sub_424CE0 function of the file /goform/setMacFilterCfg.",
+        "published": "2026-07-20T22:17:03.440"
+      },
+      {
+        "cve_id": "CVE-2024-51315",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Tenda TX9 V22.03.02.20 firmware has a stack overflow vulnerability in the sub_425964 function of the file /goform/SetOnlineDevName",
+        "published": "2026-07-20T22:17:03.550"
+      },
+      {
+        "cve_id": "CVE-2026-52656",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An issue in SJCAM AllWinner Tech products SJ4000-Air V1.4C and before and Whitelabel based v.1.4C and before allows an attacker to execute arbitrary code via a crafted FEX file",
+        "published": "2026-07-20T22:17:15.900"
+      },
+      {
+        "cve_id": "CVE-2026-64625",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "AVideo before 29.0 contains an incomplete fix for CVE-2026-45578 where execAsync() re-wraps escaped commands in double-quoted sh -c, allowing command substitution via $() and backticks. Attackers can ",
+        "published": "2026-07-20T22:17:18.740"
+      },
+      {
+        "cve_id": "CVE-2026-13439",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Easy Form Builder by WhiteStudio plugin for WordPress is vulnerable to Unauthenticated Privilege Escalation to Administrator in versions up to, and including, 4.0.11 This is due to the password re",
+        "published": "2026-07-21T06:16:28.060"
+      },
+      {
+        "cve_id": "CVE-2026-64608",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Heap type confusion and out-of-bounds read/write in the Apache Fory C++ implementation. When deserializing data in compatible mode, the field-skip paths do not correctly validate the declared field ty",
+        "published": "2026-07-21T10:16:24.923"
+      },
+      {
+        "cve_id": "CVE-2026-64606",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Deserialization of untrusted data vulnerability that may allow class-registration checks to be bypassed during Java lambda deserialization. Only lambda capture class is affected\n\n\nThis issue affects A",
+        "published": "2026-07-21T11:16:27.973"
+      },
+      {
+        "cve_id": "CVE-2026-1617",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Turkmesh Communication Services Inc. Turkhotspot 5651 Loglama allows SQL Injection.\n\nThis issue af",
+        "published": "2026-07-21T12:17:21.173"
+      },
+      {
+        "cve_id": "CVE-2026-53595",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "FreeScout is a free help desk and shared inbox built with PHP's Laravel framework. Prior to version 1.8.224, the public endpoint `POST /user-setup/{hash}/{invite_sent_at}` (`OpenController@userSetupSa",
+        "published": "2026-07-20T21:16:48.417"
+      },
+      {
+        "cve_id": "CVE-2026-62415",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "RT is an open source, enterprise-grade issue and ticket tracking system. Versions prior to 5.0.10, 6.0.0 and above, prior to 6.0.3 contain an information disclosure and privilege escalation vulnerabil",
-        "published": "2026-07-20T20:16:43.797"
+        "description": "The Joomla extension Membership Pro prior version 4.6.2 did by default allow unauthenticated users to upload media assets.",
+        "published": "2026-07-21T10:16:24.727"
       },
       {
-        "cve_id": "CVE-2026-44178",
+        "cve_id": "CVE-2026-64609",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Out-of-bounds read via sun.misc.Unsafe in Apache Fory. When out-of-band zero-copy deserialization is used, readAlignedVarUint() can read beyond the bounds of the underlying buffer. Out-of-band zero-co",
+        "published": "2026-07-21T10:16:25.057"
+      },
+      {
+        "cve_id": "CVE-2026-11767",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "xrdp is an open source RDP server. Versions 0.10.6 and prior contain a heap-based buffer overflow vulnerability within the virtual channel forwarding mechanism. When forwarding data from a remote clie",
-        "published": "2026-07-20T17:17:09.060"
+        "description": "The Free  Builder for Elementor  WordPress plugin before 1.6.7 does not sanitise submitted contact form field values before storing them and outputting them in the admin dashboard, allowing unauthenti",
+        "published": "2026-07-21T07:16:33.567"
       },
       {
-        "cve_id": "CVE-2026-12341",
+        "cve_id": "CVE-2026-47198",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "This vulnerability\nimpacts all versions of IdentityIQ and allows an unauthenticated attacker\nunauthorized access to protected APIs and data due to improper validation of\nOAuth bearer tokens.",
-        "published": "2026-07-20T19:17:18.027"
+        "base_score": 8.5,
+        "description": "Paymenter is a free and open-source webshop solution for management of hosting services. In versions prior to 1.5.1, the checkout component improperly filters URL-writable properties, allowing authent",
+        "published": "2026-07-20T21:16:48.043"
       },
       {
-        "cve_id": "CVE-2026-63108",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Roo Code through 3.54.0 contains a command injection vulnerability in the auto-approve execute feature that allows attackers to bypass allowlist/denylist enforcement by nesting command substitutions i",
-        "published": "2026-07-20T19:17:29.057"
-      },
-      {
-        "cve_id": "CVE-2026-53593",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "FreeScout is a free help desk and shared inbox built with PHP's Laravel framework. Prior to version 1.8.224, the denylist that neutralizes dangerous file uploads (`Helper::$restricted_extensions`) is ",
-        "published": "2026-07-20T20:16:44.883"
-      },
-      {
-        "cve_id": "CVE-2026-53591",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "FreeScout is a free help desk and shared inbox built with PHP's Laravel framework. Prior to version 1.8.223, an unauthenticated attacker can inject messages into any existing support conversation by s",
-        "published": "2026-07-20T20:16:44.613"
-      },
-      {
-        "cve_id": "CVE-2026-41521",
+        "cve_id": "CVE-2026-47255",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "xrdp is an open source RDP server. Versions 0.10.6 and prior contain an integer overflow vulnerability when processing screen update messages within the vnc-any connection mode. A malicious remote VNC",
-        "published": "2026-07-20T17:17:08.460"
+        "description": "AgenticMail gives AI agents real email addresses and phone numbers. @agenticmail/api prior to version 0.9.32 and @agenticmail/core prior to version 0.9.10 had weakness related to validation and and bi",
+        "published": "2026-07-20T22:17:15.403"
       },
       {
-        "cve_id": "CVE-2026-32821",
+        "cve_id": "CVE-2026-47129",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "dataCycle is a data management system for centrally storing, managing, searching, finding, and distributing data. In dataCycle-CORE, the module handling core processing and framework rules, before and",
-        "published": "2026-07-20T17:17:05.750"
+        "description": "NextCRM is open-source customer relationship management (CRM) software. Versions prior to 0.12.0 have a Broken Access Control (BAC) vulnerability in the `activateUser` and `deactivateUser` Next.js Ser",
+        "published": "2026-07-20T21:16:47.777"
       },
       {
-        "cve_id": "CVE-2026-55626",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "xrdp is an open source RDP server. In versions 0.10.6 and prior, when an authenticated user session is initialized using the Xvnc backend over UNIX domain sockets, the Xvnc process is launched with in",
-        "published": "2026-07-20T18:16:54.150"
-      },
-      {
-        "cve_id": "CVE-2026-48389",
+        "cve_id": "CVE-2026-64624",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "DNG SDK versions 1.7.1 2536 and earlier are affected by a Stack-based Buffer Overflow vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of th",
-        "published": "2026-07-20T19:17:23.807"
+        "description": "FreeRDP before 3.28.0 treats lines beginning with forward slash in RDP files as raw command-line options, exposing the entire CLI parser surface to untrusted files. Attackers can craft malicious RDP f",
+        "published": "2026-07-20T22:17:18.600"
       },
       {
-        "cve_id": "CVE-2026-46555",
+        "cve_id": "CVE-2026-15905",
         "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "WhatsApp MCP Server is a Model Context Protocol (MCP) server for WhatsApp, enabling Claude to read and send WhatsApp messages. Prior to version 0.2.1, the `whatsapp-bridge` HTTP API listens on `127.0.",
-        "published": "2026-07-20T17:17:09.820"
-      },
-      {
-        "cve_id": "CVE-2026-63107",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "LimeSurvey through 6.17.10 and 7.0.4 contains a server-side request forgery vulnerability in the REST API survey template endpoint that allows authenticated users to cause the server to issue arbitrar",
-        "published": "2026-07-20T19:17:28.913"
+        "base_score": 7.8,
+        "description": "Use after free in Aura in Google Chrome prior to 150.0.7871.128 allowed a local attacker to potentially exploit heap corruption via a malicious file. (Chromium security severity: High)",
+        "published": "2026-07-20T23:16:56.300"
       }
     ]
   },
