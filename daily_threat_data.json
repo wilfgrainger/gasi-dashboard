@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T10:14:51.976265+00:00",
+  "generated_at": "2026-07-22T13:22:03.837181+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 15,
+        "value": 25,
         "score": 3.0,
         "max": 3
       },
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 1456,
-    "critical_count": 15,
-    "high_count": 4,
+    "total": 1407,
+    "critical_count": 25,
+    "high_count": 22,
     "cves": [
       {
-        "cve_id": "CVE-2026-64608",
+        "cve_id": "CVE-2026-47392",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Heap type confusion and out-of-bounds read/write in the Apache Fory C++ implementation. When deserializing data in compatible mode, the field-skip paths do not correctly validate the declared field ty",
-        "published": "2026-07-21T10:16:24.923"
+        "base_score": 9.9,
+        "description": "PraisonAI is a multi-agent teams system. Prior to version 4.6.40 of PraisonAI, corresponding to version 1.6.40 of praisonaiagents, `execute_code()` in `praisonaiagents/tools/python_tools.py` (v1.6.37,",
+        "published": "2026-07-21T16:17:12.087"
       },
       {
-        "cve_id": "CVE-2026-64606",
+        "cve_id": "CVE-2026-47391",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Deserialization of untrusted data vulnerability that may allow class-registration checks to be bypassed during Java lambda deserialization. Only lambda capture class is affected\n\n\nThis issue affects A",
-        "published": "2026-07-21T11:16:27.973"
+        "description": "PraisonAI is a multi-agent teams system. Prior to version 4.6.40, PraisonAI's first-party A2A server example exposes an unauthenticated A2A JSON-RPC endpoint and registers a `calculate(expression)` to",
+        "published": "2026-07-21T16:17:11.920"
       },
       {
-        "cve_id": "CVE-2026-1617",
+        "cve_id": "CVE-2026-47393",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Turkmesh Communication Services Inc. Turkhotspot 5651 Loglama allows SQL Injection.\n\nThis issue af",
-        "published": "2026-07-21T12:17:21.173"
+        "description": "PraisonAI is a multi-agent teams system. CVE-2026-44338 (GHSA-6rmh-7xcm-cpxj) documents that PraisonAI ships a code-generator (`praisonai.deploy.api.generate_api_server_code`) that emits a Flask API s",
+        "published": "2026-07-21T16:17:12.270"
       },
       {
-        "cve_id": "CVE-2026-65008",
+        "cve_id": "CVE-2026-47396",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Grav 2.0.4 (fixed in 2.0.7) contains a remote code execution vulnerability in Blueprint::dynamicData() (system/src/Grav/Common/Data/Blueprint.php), which passes a Class::method callable string and its",
-        "published": "2026-07-21T12:19:01.183"
+        "description": "PraisonAI is a multi-agent teams system. Prior to version 4.6.40, PraisonAI's call server exposes a network-facing agent control API without authentication when `CALL_SERVER_TOKEN` is not configured. ",
+        "published": "2026-07-21T16:17:12.760"
       },
       {
-        "cve_id": "CVE-2026-16361",
+        "cve_id": "CVE-2026-47410",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Memory safety bugs present in Firefox ESR 115.37 and Firefox ESR 140.12. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been ex",
-        "published": "2026-07-21T13:17:04.637"
+        "description": "PraisonAI Platform is the platform layer for the PraisonAI multi-agent teams system. Versions prior to 0.1.4 have an insecure default cryptographic key. The JWT signing secret defaults to the hardcode",
+        "published": "2026-07-21T17:17:09.773"
       },
       {
-        "cve_id": "CVE-2026-16395",
+        "cve_id": "CVE-2016-20096",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Integer overflow in the Audio/Video component. This vulnerability was fixed in Firefox 153.",
-        "published": "2026-07-21T13:17:14.733"
+        "description": "Linknat VOS3000 and VOS2009 through version 2.1.2.0 contain an unauthenticated SQL injection vulnerability that allows remote attackers to execute arbitrary SQL commands by manipulating the name param",
+        "published": "2026-07-21T19:17:07.357"
       },
       {
-        "cve_id": "CVE-2026-16408",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Integer overflow in the Audio/Video: Playback component. This vulnerability was fixed in Firefox 153.",
-        "published": "2026-07-21T13:17:16.220"
-      },
-      {
-        "cve_id": "CVE-2026-16411",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Memory safety bugs present in Firefox 152. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.",
-        "published": "2026-07-21T13:17:16.530"
-      },
-      {
-        "cve_id": "CVE-2026-16412",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Memory safety bugs present in Firefox ESR 140.12 and Firefox 152. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited",
-        "published": "2026-07-21T13:17:16.630"
-      },
-      {
-        "cve_id": "CVE-2026-65007",
+        "cve_id": "CVE-2026-47413",
         "severity": "CRITICAL",
         "base_score": 9.6,
-        "description": "The Grav api plugin (grav-plugin-api) before 1.0.8 fails to properly authorize API key generation and revocation: the plugin intercepts the apiKeyGenerate/apiKeyRevoke admin tasks before the account-m",
-        "published": "2026-07-21T12:19:00.910"
+        "description": "PraisonAI Platform is the platform layer for the PraisonAI multi-agent teams system. Versions prior to 0.1.4 have aprivilege escalation / cross-tenant member injection. The `POST /workspaces/{workspac",
+        "published": "2026-07-21T18:17:00.133"
       },
       {
-        "cve_id": "CVE-2026-62415",
+        "cve_id": "CVE-2026-47416",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "PraisonAI Platform is the platform layer for the PraisonAI multi-agent teams system. Versions prior to 0.1.4 are vulnerable to vertical privilege escalation. The `PATCH /workspaces/{workspace_id}/memb",
+        "published": "2026-07-21T18:17:00.563"
+      },
+      {
+        "cve_id": "CVE-2026-65048",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Ninja Forms plugin for WordPress versions 3.10.4 through 3.14.9 contains an unauthenticated stored cross-site scripting vulnerability in the Repeatable Fieldset feature where parseSubmissionIndex() ac",
+        "published": "2026-07-21T15:16:38.813"
+      },
+      {
+        "cve_id": "CVE-2026-65049",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Ninja Forms plugin version 3.14.8 and prior for WordPress Multisite contains an incorrect authorization vulnerability that allows a subsite Administrator to trigger network-wide deletion of all Ninja ",
+        "published": "2026-07-21T15:16:38.970"
+      },
+      {
+        "cve_id": "CVE-2026-64825",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Home Assistant Core before 2026.6.0 contains a path traversal vulnerability that allows unauthenticated attackers to write arbitrary files to any directory on the host filesystem by uploading a crafte",
+        "published": "2026-07-21T16:17:21.633"
+      },
+      {
+        "cve_id": "CVE-2026-28302",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "The Joomla extension Membership Pro prior version 4.6.2 did by default allow unauthenticated users to upload media assets.",
-        "published": "2026-07-21T10:16:24.727"
+        "description": "SolarWinds Serv-U is affected by an insecure direct object reference (IDOR) vulnerability that can lead to privilege escalation and remote code execution as root. This issue requires group administrat",
+        "published": "2026-07-21T16:17:07.903"
       },
       {
-        "cve_id": "CVE-2026-64609",
+        "cve_id": "CVE-2026-28304",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Out-of-bounds read via sun.misc.Unsafe in Apache Fory. When out-of-band zero-copy deserialization is used, readAlignedVarUint() can read beyond the bounds of the underlying buffer. Out-of-band zero-co",
-        "published": "2026-07-21T10:16:25.057"
+        "description": "SolarWinds Serv-U is affected by a remote code execution vulnerability that, when exploited, can allow the arbitrary execution of code remotely as root. The impact is lower in Windows deployments.",
+        "published": "2026-07-21T16:17:08.050"
       },
       {
-        "cve_id": "CVE-2026-16359",
+        "cve_id": "CVE-2026-28305",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Incorrect boundary conditions in the Audio/Video: GMP component. This vulnerability was fixed in Firefox 153, Firefox ESR 115.38, and Firefox ESR 140.13.",
-        "published": "2026-07-21T13:17:04.413"
+        "description": "SolarWinds Serv-U is affected by an insecure direct object reference (IDOR) vulnerability that can lead to remote code execution as root. A domain account with admin privileges and read and write acce",
+        "published": "2026-07-21T16:17:08.180"
       },
       {
-        "cve_id": "CVE-2026-16394",
+        "cve_id": "CVE-2026-28306",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Mitigation bypass in the DOM: Security component. This vulnerability was fixed in Firefox 153.",
-        "published": "2026-07-21T13:17:14.620"
+        "description": "SolarWinds Serv-U is affected by a privilege escalation vulnerability that allows a domain administrator to elevate their privileges to a system administrator. The impact is lower in Windows deploymen",
+        "published": "2026-07-21T16:17:08.317"
       },
       {
-        "cve_id": "CVE-2026-16406",
+        "cve_id": "CVE-2026-28307",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Mitigation bypass in the Networking component. This vulnerability was fixed in Firefox 153.",
-        "published": "2026-07-21T13:17:16.013"
+        "description": "SolarWinds Serv-U is affected by a privilege escalation vulnerability that allows a domain user group to be elevated into an administrator group. The impact is lower in Windows deployments.",
+        "published": "2026-07-21T16:17:08.443"
       },
       {
-        "cve_id": "CVE-2026-15226",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "A sandbox confinement bypass vulnerability exists in Canonical snapd within its internal execution environment compiler (snap-confine). The default seccomp security templates generated by the engine t",
-        "published": "2026-07-21T15:16:31.030"
+        "cve_id": "CVE-2026-28308",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "SolarWinds Serv-U is affected by an insecure direct object reference (IDOR) vulnerability that can lead to remote code execution. Domain administrator access is required. The impact is lower in Window",
+        "published": "2026-07-21T16:17:08.577"
       },
       {
-        "cve_id": "CVE-2026-16405",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Information disclosure in the Networking: WebSockets component. This vulnerability was fixed in Firefox 153 and Firefox ESR 140.13.",
-        "published": "2026-07-21T13:17:15.910"
+        "cve_id": "CVE-2026-28309",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "SolarWinds Serv-U is affected by a broken access control vulnerability that allows a domain administrator to create system administrator accounts. The impact is lower in Windows deployments.",
+        "published": "2026-07-21T16:17:08.743"
       },
       {
-        "cve_id": "CVE-2026-16445",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A flaw was found in dracut. A remote attacker on the adjacent network can exploit this vulnerability by providing specially crafted DHCP options, such as a malicious root-path, next-server, or bootfil",
-        "published": "2026-07-21T13:17:16.730"
+        "cve_id": "CVE-2026-28310",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "SolarWinds Serv-U is affected by a privilege escalation vulnerability that allows a domain administrator to escalate their user type to that of a system administrator. The impact is lower in Windows d",
+        "published": "2026-07-21T16:17:08.877"
       },
       {
-        "cve_id": "CVE-2026-16447",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability has been found in D-Link DNS-320 1.0.2. Impacted is an unknown function of the file /web/jquery/uploader/multi_uploadify.php. The manipulation of the argument Filedata[] leads to unres",
-        "published": "2026-07-21T14:16:33.650"
-      },
-      {
-        "cve_id": "CVE-2026-16461",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "A stack-based buffer overflow was found in rpcbind's rpcinfo utility. In rpcbdump() short mode (used by `rpcinfo -s`), version numbers from a remote RPCBPROC_DUMP reply are written into a fixed-size s",
-        "published": "2026-07-21T12:17:21.030"
+        "cve_id": "CVE-2026-28312",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "SolarWinds Serv-U is affected by a privilege escalation vulnerability. This would elevate a group\u2019s access to system administrator and allow code execution as root. The impact is lower in Windows depl",
+        "published": "2026-07-21T16:17:09.000"
       }
     ]
   },
