@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-22T01:46:36.760206+00:00",
+  "generated_at": "2026-07-22T06:21:07.141715+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 12,
+        "value": 15,
         "score": 3.0,
         "max": 3
       },
@@ -238,17 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 1474,
-    "critical_count": 12,
-    "high_count": 6,
+    "total": 1459,
+    "critical_count": 15,
+    "high_count": 7,
     "cves": [
-      {
-        "cve_id": "CVE-2026-13439",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Easy Form Builder by WhiteStudio plugin for WordPress is vulnerable to Unauthenticated Privilege Escalation to Administrator in versions up to, and including, 4.0.11 This is due to the password re",
-        "published": "2026-07-21T06:16:28.060"
-      },
       {
         "cve_id": "CVE-2026-64608",
         "severity": "CRITICAL",
@@ -292,6 +285,27 @@
         "published": "2026-07-21T13:17:14.733"
       },
       {
+        "cve_id": "CVE-2026-16408",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Integer overflow in the Audio/Video: Playback component. This vulnerability was fixed in Firefox 153.",
+        "published": "2026-07-21T13:17:16.220"
+      },
+      {
+        "cve_id": "CVE-2026-16411",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Memory safety bugs present in Firefox 152. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code.",
+        "published": "2026-07-21T13:17:16.530"
+      },
+      {
+        "cve_id": "CVE-2026-16412",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Memory safety bugs present in Firefox ESR 140.12 and Firefox 152. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited",
+        "published": "2026-07-21T13:17:16.630"
+      },
+      {
         "cve_id": "CVE-2026-65007",
         "severity": "CRITICAL",
         "base_score": 9.6,
@@ -327,6 +341,13 @@
         "published": "2026-07-21T13:17:14.620"
       },
       {
+        "cve_id": "CVE-2026-16406",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Mitigation bypass in the Networking component. This vulnerability was fixed in Firefox 153.",
+        "published": "2026-07-21T13:17:16.013"
+      },
+      {
         "cve_id": "CVE-2026-11767",
         "severity": "HIGH",
         "base_score": 8.8,
@@ -341,46 +362,25 @@
         "published": "2026-07-21T07:16:34.320"
       },
       {
-        "cve_id": "CVE-2026-16332",
+        "cve_id": "CVE-2026-16405",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Information disclosure in the Networking: WebSockets component. This vulnerability was fixed in Firefox 153 and Firefox ESR 140.13.",
+        "published": "2026-07-21T13:17:15.910"
+      },
+      {
+        "cve_id": "CVE-2026-16445",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A flaw was found in dracut. A remote attacker on the adjacent network can exploit this vulnerability by providing specially crafted DHCP options, such as a malicious root-path, next-server, or bootfil",
+        "published": "2026-07-21T13:17:16.730"
+      },
+      {
+        "cve_id": "CVE-2026-16447",
         "severity": "HIGH",
         "base_score": 7.3,
-        "description": "A vulnerability was detected in D-Link DNS-320 1.0.2. This impacts an unknown function of the file /mydlink/multi_uploadify.php. Performing a manipulation of the argument Filedata[] results in unrestr",
-        "published": "2026-07-21T03:16:40.833"
-      },
-      {
-        "cve_id": "CVE-2026-6952",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "A post-authentication command injection vulnerability in the \"LogServer\" field of the syslog component in Zyxel AX7501-B1 firmware versions through\u00a05.17(ABPC.7.2)C0 could allow an authenticated attack",
-        "published": "2026-07-21T03:16:42.610"
-      },
-      {
-        "cve_id": "CVE-2026-1771",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The MapSVG plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the SVGFile constructor in all versions up to, and including, 8.14.0 This is due to an in",
-        "published": "2026-07-21T09:16:53.947"
-      },
-      {
-        "cve_id": "CVE-2026-3183",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Zohocorp ManageEngine ADSelfService Plus versions before 6524 are vulnerable to Multi Factor Authentication Bypass.",
-        "published": "2026-07-21T08:16:33.880"
-      },
-      {
-        "cve_id": "CVE-2026-59776",
-        "severity": "MEDIUM",
-        "base_score": 6.8,
-        "description": "Missing Cryptographic Step (CWE-325) vulnerability exists in certain FeliCa IC chips shipped in or before 2017. If the vulnerability is exploited, information stored in the IC chip may be read or tamp",
-        "published": "2026-07-21T04:16:51.480"
-      },
-      {
-        "cve_id": "CVE-2026-15927",
-        "severity": "MEDIUM",
-        "base_score": 6.8,
-        "description": "A flaw was found in Red Hat Quay's repository-level mirror configuration\nfeature. The POST and PUT handlers in endpoints/api/mirror.py accept an\nexternal_reference parameter without SSRF validation, u",
-        "published": "2026-07-21T06:16:28.603"
+        "description": "A vulnerability has been found in D-Link DNS-320 1.0.2. Impacted is an unknown function of the file /web/jquery/uploader/multi_uploadify.php. The manipulation of the argument Filedata[] leads to unres",
+        "published": "2026-07-21T14:16:33.650"
       }
     ]
   },
