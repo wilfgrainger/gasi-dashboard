@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-22T13:22:03.837181+00:00",
+  "generated_at": "2026-07-22T17:07:10.587086+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 25,
-        "score": 3.0,
+        "value": 6,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,37 +238,23 @@
     ]
   },
   "nvd": {
-    "total": 1407,
-    "critical_count": 25,
-    "high_count": 22,
+    "total": 1419,
+    "critical_count": 6,
+    "high_count": 23,
     "cves": [
       {
-        "cve_id": "CVE-2026-47392",
+        "cve_id": "CVE-2026-64878",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "PraisonAI is a multi-agent teams system. Prior to version 4.6.40 of PraisonAI, corresponding to version 1.6.40 of praisonaiagents, `execute_code()` in `praisonaiagents/tools/python_tools.py` (v1.6.37,",
-        "published": "2026-07-21T16:17:12.087"
+        "description": "Unvalidated input in asset filter parameters allows shell metacharacters to escape command argument handling, resulting in remote code execution as a low-privileged OS user via the Analysis REST endpo",
+        "published": "2026-07-21T20:17:04.630"
       },
       {
-        "cve_id": "CVE-2026-47391",
+        "cve_id": "CVE-2026-64879",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "PraisonAI is a multi-agent teams system. Prior to version 4.6.40, PraisonAI's first-party A2A server example exposes an unauthenticated A2A JSON-RPC endpoint and registers a `calculate(expression)` to",
-        "published": "2026-07-21T16:17:11.920"
-      },
-      {
-        "cve_id": "CVE-2026-47393",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "PraisonAI is a multi-agent teams system. CVE-2026-44338 (GHSA-6rmh-7xcm-cpxj) documents that PraisonAI ships a code-generator (`praisonai.deploy.api.generate_api_server_code`) that emits a Flask API s",
-        "published": "2026-07-21T16:17:12.270"
-      },
-      {
-        "cve_id": "CVE-2026-47396",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "PraisonAI is a multi-agent teams system. Prior to version 4.6.40, PraisonAI's call server exposes a network-facing agent control API without authentication when `CALL_SERVER_TOKEN` is not configured. ",
-        "published": "2026-07-21T16:17:12.760"
+        "base_score": 9.9,
+        "description": "A filename supplied during file upload is not properly sanitized before being used in system command execution, allowing an attacker to inject shell metacharacters and achieve command injection via th",
+        "published": "2026-07-21T20:17:04.763"
       },
       {
         "cve_id": "CVE-2026-47410",
@@ -299,88 +285,102 @@
         "published": "2026-07-21T18:17:00.563"
       },
       {
-        "cve_id": "CVE-2026-65048",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Ninja Forms plugin for WordPress versions 3.10.4 through 3.14.9 contains an unauthenticated stored cross-site scripting vulnerability in the Repeatable Fieldset feature where parseSubmissionIndex() ac",
-        "published": "2026-07-21T15:16:38.813"
+        "cve_id": "CVE-2026-47399",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "PraisonAI Platform is the platform layer for the PraisonAI multi-agent teams system. Prior to version 0.1.4, the workspace-scoped REST routes contain a systemic object-level authorization flaw that al",
+        "published": "2026-07-21T17:17:08.950"
       },
       {
-        "cve_id": "CVE-2026-65049",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Ninja Forms plugin version 3.14.8 and prior for WordPress Multisite contains an incorrect authorization vulnerability that allows a subsite Administrator to trigger network-wide deletion of all Ninja ",
-        "published": "2026-07-21T15:16:38.970"
+        "cve_id": "CVE-2026-47405",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "PraisonAI Platform is the platform layer for the PraisonAI multi-agent teams system. Versions prior to 0.1.4 have a broken workspace authorization check that allows any authenticated low-privilege wor",
+        "published": "2026-07-21T17:17:09.083"
       },
       {
-        "cve_id": "CVE-2026-64825",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Home Assistant Core before 2026.6.0 contains a path traversal vulnerability that allows unauthenticated attackers to write arbitrary files to any directory on the host filesystem by uploading a crafte",
-        "published": "2026-07-21T16:17:21.633"
+        "cve_id": "CVE-2026-44880",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A buffer overflow vulnerability was found in the command line interface of AOS-CX. Successful exploitation of these vulnerabilities could allow an remote low-privileged user to execute arbitrary code ",
+        "published": "2026-07-21T18:16:58.320"
       },
       {
-        "cve_id": "CVE-2026-28302",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "SolarWinds Serv-U is affected by an insecure direct object reference (IDOR) vulnerability that can lead to privilege escalation and remote code execution as root. This issue requires group administrat",
-        "published": "2026-07-21T16:17:07.903"
+        "cve_id": "CVE-2026-55084",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "DHIS2 is a flexible information system for data capture, management, validation, analytics and visualization. A SQL injection vulnerability was identified in the SqlView API endpoint of the DHIS2 appl",
+        "published": "2026-07-21T19:17:11.223"
       },
       {
-        "cve_id": "CVE-2026-28304",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "SolarWinds Serv-U is affected by a remote code execution vulnerability that, when exploited, can allow the arbitrary execution of code remotely as root. The impact is lower in Windows deployments.",
-        "published": "2026-07-21T16:17:08.050"
+        "cve_id": "CVE-2026-15724",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "In Progress ShareFile Storage Zones Controller versions prior to 5.12.5 and 6.0.2, an authenticated administrative user can exploit a path traversal vulnerability to read arbitrary files from the serv",
+        "published": "2026-07-21T17:17:04.703"
       },
       {
-        "cve_id": "CVE-2026-28305",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "SolarWinds Serv-U is affected by an insecure direct object reference (IDOR) vulnerability that can lead to remote code execution as root. A domain account with admin privileges and read and write acce",
-        "published": "2026-07-21T16:17:08.180"
+        "cve_id": "CVE-2026-64877",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "An authenticated non-admin user can exploit a SQL injection flaw in the ticketing REST API to access sensitive data stored in the appliance database.",
+        "published": "2026-07-21T19:17:13.340"
       },
       {
-        "cve_id": "CVE-2026-28306",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "SolarWinds Serv-U is affected by a privilege escalation vulnerability that allows a domain administrator to elevate their privileges to a system administrator. The impact is lower in Windows deploymen",
-        "published": "2026-07-21T16:17:08.317"
+        "cve_id": "CVE-2026-47415",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "PraisonAI Platform is the platform layer for the PraisonAI multi-agent teams system. Versions prior to 0.1.4 have an Insecure Direct Object Reference. The issue CRUD endpoints (`GET / PATCH / DELETE /",
+        "published": "2026-07-21T18:17:00.423"
       },
       {
-        "cve_id": "CVE-2026-28307",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "SolarWinds Serv-U is affected by a privilege escalation vulnerability that allows a domain user group to be elevated into an administrator group. The impact is lower in Windows deployments.",
-        "published": "2026-07-21T16:17:08.443"
+        "cve_id": "CVE-2026-47419",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "PraisonAI Platform is the platform layer for the PraisonAI multi-agent teams system. Versions prior to 0.1.4 have an* Insecure Direct Object Reference. The agent CRUD endpoints (`GET / PATCH / DELETE ",
+        "published": "2026-07-21T18:17:00.990"
       },
       {
-        "cve_id": "CVE-2026-28308",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "SolarWinds Serv-U is affected by an insecure direct object reference (IDOR) vulnerability that can lead to remote code execution. Domain administrator access is required. The impact is lower in Window",
-        "published": "2026-07-21T16:17:08.577"
+        "cve_id": "CVE-2026-47398",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "PraisonAI is a multi-agent teams system. The v4.6.32 chokepoint refactor (which patched CVE-2026-44334 / GHSA-xcmw-grxf-wjhj) added the PRAISONAI_ALLOW_LOCAL_TOOLS env-var gate to the tool_override.py",
+        "published": "2026-07-21T17:17:08.803"
       },
       {
-        "cve_id": "CVE-2026-28309",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "SolarWinds Serv-U is affected by a broken access control vulnerability that allows a domain administrator to create system administrator accounts. The impact is lower in Windows deployments.",
-        "published": "2026-07-21T16:17:08.743"
+        "cve_id": "CVE-2026-47406",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "PraisonAI Platform is the platform layer for the PraisonAI multi-agent teams system. Versions prior to 0.1.4 have an Insecure Direct Object Reference. The dependency endpoints (`POST/GET /workspaces/{",
+        "published": "2026-07-21T17:17:09.220"
       },
       {
-        "cve_id": "CVE-2026-28310",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "SolarWinds Serv-U is affected by a privilege escalation vulnerability that allows a domain administrator to escalate their user type to that of a system administrator. The impact is lower in Windows d",
-        "published": "2026-07-21T16:17:08.877"
+        "cve_id": "CVE-2026-47409",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "PraisonAI Platform is the platform layer for the PraisonAI multi-agent teams system. Versions prior to 0.1.4 have an authorization bypass enabling owner lockout. The `DELETE /workspaces/{workspace_id}",
+        "published": "2026-07-21T17:17:09.640"
       },
       {
-        "cve_id": "CVE-2026-28312",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "SolarWinds Serv-U is affected by a privilege escalation vulnerability. This would elevate a group\u2019s access to system administrator and allow code execution as root. The impact is lower in Windows depl",
-        "published": "2026-07-21T16:17:09.000"
+        "cve_id": "CVE-2026-47412",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "PraisonAI Platform is the platform layer for the PraisonAI multi-agent teams system. Versions prior to 0.1.4 have an authorization bypass enabling destructive action. The `DELETE /workspaces/{workspac",
+        "published": "2026-07-21T18:16:59.980"
+      },
+      {
+        "cve_id": "CVE-2026-47417",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "PraisonAI Platform is the platform layer for the PraisonAI multi-agent teams system. Versions prior to 0.1.4 have an Insecure Direct Object Reference. The comment endpoints (`POST /workspaces/{workspa",
+        "published": "2026-07-21T18:17:00.707"
+      },
+      {
+        "cve_id": "CVE-2026-47418",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "PraisonAI Platform is the platform layer for the PraisonAI multi-agent teams system. Versions prior to 0.1.4 have an Insecure Direct Object Reference. The project CRUD endpoints (`GET / PATCH / DELETE",
+        "published": "2026-07-21T18:17:00.853"
       }
     ]
   },
