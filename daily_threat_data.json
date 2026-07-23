@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-23T01:53:30.222368+00:00",
+  "generated_at": "2026-07-23T06:23:21.210385+00:00",
   "threat_score": {
-    "score": 4.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 0.5,
+        "value": 3,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,10 +238,151 @@
     ]
   },
   "nvd": {
-    "total": 0,
-    "critical_count": 0,
-    "high_count": 0,
-    "cves": []
+    "total": 205,
+    "critical_count": 3,
+    "high_count": 35,
+    "cves": [
+      {
+        "cve_id": "CVE-2026-2395",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Xpoda T\u00fcrkiye Informatics Technology Inc. No Code Platform allows SQL Injection.\n\nThis issue affec",
+        "published": "2026-07-22T15:16:54.193"
+      },
+      {
+        "cve_id": "CVE-2026-16232",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "An authentication bypass vulnerability in the Check Point SmartConsole login process allows an unauthenticated remote attacker to obtain an application login token and use it to authenticate with full",
+        "published": "2026-07-22T14:17:15.513"
+      },
+      {
+        "cve_id": "CVE-2026-62144",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "An authentication bypass vulnerability in Check Point Security Management and Multi-Domain Security Management allows an unauthenticated remote attacker to execute administrative commands on the Manag",
+        "published": "2026-07-22T14:17:22.807"
+      },
+      {
+        "cve_id": "CVE-2026-12968",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Product Addons and Product Options With Custom Fields  WordPress plugin before 1.6.15 does not restrict an unauthenticated file-upload endpoint and accepts SVG files that are stored and served inl",
+        "published": "2026-07-22T07:16:34.710"
+      },
+      {
+        "cve_id": "CVE-2026-3821",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Supermicro (SMC) SMASH services contain an Arbitrary code execution issue in\u00a0X14DBG-DAP and X14DBI.\nAn authorized attacker can exploit SMASH\u2019s input capability to compromise data integrity or launch a",
+        "published": "2026-07-22T07:16:35.413"
+      },
+      {
+        "cve_id": "CVE-2026-14551",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The servereye client (also known as sensorhub, technically ClientAgentContainerService) versions 20.15 and earlier are vulnerable to Local Privilege Escalation. The high-privileged service SE3Recovery",
+        "published": "2026-07-22T10:17:13.810"
+      },
+      {
+        "cve_id": "CVE-2026-65603",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Grav Login plugin (grav-plugin-login) versions <= 3.8.11 contain a privilege escalation flaw in the authenticated profile self-update handler (processUserProfile(), the update_user task). Unlike t",
+        "published": "2026-07-22T12:18:20.683"
+      },
+      {
+        "cve_id": "CVE-2026-13321",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "The BIND resolver accepts validly-signed NSEC records where the \"Next Domain Name\" field points outside the signer's zone.\nThis issue affects BIND 9 versions 9.11.0 through 9.18.50, 9.20.0 through 9.2",
+        "published": "2026-07-22T15:16:52.200"
+      },
+      {
+        "cve_id": "CVE-2026-4773",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Improper validation of specified type of input vulnerability in Magarsus Consulting Ltd. Co. IDM-MFA allows Authentication Bypass.\n\nThis issue affects IDM-MFA: from 2025.11.27 before 2026.03.10.",
+        "published": "2026-07-22T12:18:12.587"
+      },
+      {
+        "cve_id": "CVE-2026-13181",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "In Progress\u00ae Telerik\u00ae UI for AJAX prior to v2026.2.708, forged upload metadata can influence AsyncUploadTypeName processing and trigger unsafe attacker-controlled type resolution, enabling remote code",
+        "published": "2026-07-22T14:17:13.553"
+      },
+      {
+        "cve_id": "CVE-2026-13185",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "In Progress\u00ae Telerik\u00ae UI for AJAX prior to v2026.2.708, applications using cookie-based storage in RadPersistenceManager or RadDockLayout deserialize attacker-controlled cookie content, allowing unaut",
+        "published": "2026-07-22T14:17:14.057"
+      },
+      {
+        "cve_id": "CVE-2026-13186",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "In Progress\u00ae Telerik\u00ae UI for AJAX prior to v2026.2.708, a path traversal vulnerability in the file-based persistence storage provider can be exploited when the storage key is derived from user-control",
+        "published": "2026-07-22T14:17:14.180"
+      },
+      {
+        "cve_id": "CVE-2026-13187",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "In Progress\u00ae Telerik\u00ae UI for AJAX prior to v2026.2.708, DialogHandler provider type input may be tampered with, potentially altering dialog processing and enabling chained exploitation.",
+        "published": "2026-07-22T14:17:14.300"
+      },
+      {
+        "cve_id": "CVE-2026-13190",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "In Progress\u00ae Telerik\u00ae UI for AJAX prior to v2026.2.708, a deserialization vulnerability in the persistence utilities allows unsafe type instantiation from attacker-influenced persisted state, which ca",
+        "published": "2026-07-22T14:17:14.667"
+      },
+      {
+        "cve_id": "CVE-2026-44189",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "A flaw was found in the Visual Studio Code Ansible Lightspeed extension's AnsiblePlaybookRunProvider. This command injection vulnerability allows an attacker to craft a malicious playbook filename con",
+        "published": "2026-07-22T12:17:59.817"
+      },
+      {
+        "cve_id": "CVE-2026-44190",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "A flaw was found in the Ansible Lightspeed Visual Studio Code extension. This Command Injection vulnerability (CWE-78) allows a remote attacker to execute unauthorized commands on a user's system. The",
+        "published": "2026-07-22T12:17:59.940"
+      },
+      {
+        "cve_id": "CVE-2026-44191",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "A flaw was found in the Visual Studio Code Ansible Lightspeed extension. This command injection vulnerability (CWE-78) arises from improper handling of the ansible.executionEnvironment.containerOption",
+        "published": "2026-07-22T13:16:37.367"
+      },
+      {
+        "cve_id": "CVE-2026-61390",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "There is a heap buffer overflow vulnerability in some Hikvision cameras, which may allow unauthenticated attackers to cause device malfunction by sending specially crafted packets.",
+        "published": "2026-07-22T12:18:18.137"
+      },
+      {
+        "cve_id": "CVE-2026-12987",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Events Manager  WordPress plugin before 7.3.7 does not safely handle booking-registration data on sites using No-User-Account Booking Mode: a booker-supplied registration field is stored as bookin",
+        "published": "2026-07-22T07:16:35.203"
+      },
+      {
+        "cve_id": "CVE-2026-63047",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Joomla extension Events Booking prior version 5.0-5.8.1 did not properly verify that an actor is allowed to download invoice information.",
+        "published": "2026-07-22T08:16:23.950"
+      }
+    ]
   },
   "top_ips": {
     "ips": [],
