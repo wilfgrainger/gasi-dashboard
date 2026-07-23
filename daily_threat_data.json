@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-22T20:55:22.116403+00:00",
+  "generated_at": "2026-07-23T01:53:30.222368+00:00",
   "threat_score": {
-    "score": 7.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 4.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 30,
+        "value": 26,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 13,
-        "score": 3.0,
+        "value": 0,
+        "score": 0.5,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1653,
-    "recent_30d_count": 30,
+    "recent_30d_count": 26,
     "recent": [
       {
         "cve_id": "CVE-2026-16232",
@@ -238,151 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 1363,
-    "critical_count": 13,
-    "high_count": 37,
-    "cves": [
-      {
-        "cve_id": "CVE-2026-30631",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An issue was discovered in bytebot-ai in commit 3d37894ce07ef8d8b40adc7fd309ad96c2a71313 (2025-09-11) allowing attackers to execute arbitrary code via crafted path to `computer_write_file`.",
-        "published": "2026-07-21T21:16:49.370"
-      },
-      {
-        "cve_id": "CVE-2026-52469",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "SQL injection vulnerability in Crocus v.1.3.44 allows a remote attacker to escalate privileges via the DeviceInfoMapper.xml file",
-        "published": "2026-07-21T21:16:51.760"
-      },
-      {
-        "cve_id": "CVE-2026-52470",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "SQL injection vulnerability in Crocus v.1.3.44 allows a remote attacker to escalate privileges via the RecordStateMapper.xml file",
-        "published": "2026-07-21T21:16:51.873"
-      },
-      {
-        "cve_id": "CVE-2026-52472",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "SQL injection vulnerability in Wgcloud 3.6.4 allows a remote attacker to escalate privileges via the PortInfoMapper.xml file",
-        "published": "2026-07-21T21:16:51.983"
-      },
-      {
-        "cve_id": "CVE-2026-35290",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Vulnerability in Oracle Application Testing Suite.   The supported version that is affected is 13.3.0.1. Easily exploitable vulnerability allows unauthenticated attacker with network access via TCP to",
-        "published": "2026-07-21T22:17:01.140"
-      },
-      {
-        "cve_id": "CVE-2026-46876",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Vulnerability in Oracle Application Testing Suite.   The supported version that is affected is 13.3.0.1. Easily exploitable vulnerability allows unauthenticated attacker with network access via Oracle",
-        "published": "2026-07-21T22:17:01.690"
-      },
-      {
-        "cve_id": "CVE-2026-46924",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Vulnerability in Oracle Application Testing Suite.   The supported version that is affected is 13.3.0.1. Easily exploitable vulnerability allows unauthenticated attacker with network access via TCP to",
-        "published": "2026-07-21T22:17:02.047"
-      },
-      {
-        "cve_id": "CVE-2026-46982",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Vulnerability in the Oracle Retail Integration Bus product of Oracle Retail Applications (component: RIB Kernal).   The supported version that is affected is 14.1.3.2. Easily exploitable vulnerability",
-        "published": "2026-07-21T22:17:03.240"
-      },
-      {
-        "cve_id": "CVE-2026-46983",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Vulnerability in the Oracle Retail Integration Bus product of Oracle Retail Applications (component: RIB Kernal).   The supported version that is affected is 16.0.3. Easily exploitable vulnerability a",
-        "published": "2026-07-21T22:17:03.347"
-      },
-      {
-        "cve_id": "CVE-2026-46994",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Vulnerability in the Oracle Enterprise Manager Base Platform product of Oracle Enterprise Manager (component: Agent Next Gen).  Supported versions that are affected are 13.5 and  24.1. Easily exploita",
-        "published": "2026-07-21T22:17:04.663"
-      },
-      {
-        "cve_id": "CVE-2026-63764",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "lmdeploy's OpenAI-compatible API server contains a server-side request forgery vulnerability that allows unauthenticated attackers to access internal services and cloud metadata endpoints by supplying",
-        "published": "2026-07-21T21:16:53.350"
-      },
-      {
-        "cve_id": "CVE-2026-65057",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Keep (commit 91c75e0) contains a server-side request forgery vulnerability that allows unauthenticated attackers to make the backend issue arbitrary HTTP requests by supplying attacker-controlled host",
-        "published": "2026-07-21T21:16:54.427"
-      },
-      {
-        "cve_id": "CVE-2026-46989",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Vulnerability in the Oracle Enterprise Manager Base Platform product of Oracle Enterprise Manager (component: UI Framework).  Supported versions that are affected are 13.5 and  24.1. Easily exploitabl",
-        "published": "2026-07-21T22:17:04.037"
-      },
-      {
-        "cve_id": "CVE-2026-64881",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The audit file upload handler does not sanitize filenames, allowing shell metacharacters to flow into system command execution. This input validation failure enables command injection when chained wit",
-        "published": "2026-07-21T21:16:53.880"
-      },
-      {
-        "cve_id": "CVE-2026-46992",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Vulnerability in the Oracle Enterprise Manager Base Platform product of Oracle Enterprise Manager (component: Enterprise Config Management).  Supported versions that are affected are 13.5 and  24.1. E",
-        "published": "2026-07-21T22:17:04.423"
-      },
-      {
-        "cve_id": "CVE-2026-46995",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Vulnerability in the Oracle Enterprise Manager Base Platform product of Oracle Enterprise Manager (component: Metadata Plugin).  Supported versions that are affected are 13.5 and  24.1. Easily exploit",
-        "published": "2026-07-21T22:17:04.780"
-      },
-      {
-        "cve_id": "CVE-2026-46998",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Vulnerability in the Oracle Enterprise Manager Base Platform product of Oracle Enterprise Manager (component: Metadata Plugin).  Supported versions that are affected are 13.5 and  24.1. Easily exploit",
-        "published": "2026-07-21T22:17:05.123"
-      },
-      {
-        "cve_id": "CVE-2026-47004",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Vulnerability in the Oracle Enterprise Manager Base Platform product of Oracle Enterprise Manager (component: Self Update Framework).  Supported versions that are affected are 13.5 and  24.1. Easily e",
-        "published": "2026-07-21T22:17:05.797"
-      },
-      {
-        "cve_id": "CVE-2026-47688",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "FOG is a free open-source cloning/imaging/rescue suite/inventory management system. Prior to versions 1.5.10.1832 and 1.6.0-beta.2313, the `clearAES` and `clearPMTasks` methods in `FOGPage` can be inv",
-        "published": "2026-07-21T21:16:50.810"
-      },
-      {
-        "cve_id": "CVE-2026-65056",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "mcp-webresearch 0.1.7 contains a server-side request forgery vulnerability that allows attackers to access internal network services by supplying loopback, link-local, or cloud metadata addresses to t",
-        "published": "2026-07-21T21:16:54.287"
-      }
-    ]
+    "total": 0,
+    "critical_count": 0,
+    "high_count": 0,
+    "cves": []
   },
   "top_ips": {
     "ips": [],
