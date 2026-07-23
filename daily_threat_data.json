@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T10:11:17.028709+00:00",
+  "generated_at": "2026-07-23T13:24:42.881965+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -238,7 +238,7 @@
     ]
   },
   "nvd": {
-    "total": 213,
+    "total": 396,
     "critical_count": 6,
     "high_count": 34,
     "cves": [
@@ -285,20 +285,6 @@
         "published": "2026-07-22T16:17:24.223"
       },
       {
-        "cve_id": "CVE-2026-14551",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The servereye client (also known as sensorhub, technically ClientAgentContainerService) versions 20.15 and earlier are vulnerable to Local Privilege Escalation. The high-privileged service SE3Recovery",
-        "published": "2026-07-22T10:17:13.810"
-      },
-      {
-        "cve_id": "CVE-2026-65603",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Grav Login plugin (grav-plugin-login) versions <= 3.8.11 contain a privilege escalation flaw in the authenticated profile self-update handler (processUserProfile(), the update_user task). Unlike t",
-        "published": "2026-07-22T12:18:20.683"
-      },
-      {
         "cve_id": "CVE-2026-49499",
         "severity": "HIGH",
         "base_score": 8.8,
@@ -306,18 +292,46 @@
         "published": "2026-07-22T16:17:29.943"
       },
       {
+        "cve_id": "CVE-2026-64830",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "FFmpeg versions 2.1 through 8.1.2 contains a heap buffer overflow vulnerability in the VobSub subtitle demuxer that allows attackers to corrupt adjacent heap memory by supplying a malicious .sub/.idx ",
+        "published": "2026-07-22T17:16:58.557"
+      },
+      {
+        "cve_id": "CVE-2026-64831",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "FFmpeg versions 8.0 through 8.1.2 contains a stack buffer overflow vulnerability in the Vulkan HEVC hardware decoder that allows remote attackers to overwrite return addresses and adjacent stack frame",
+        "published": "2026-07-22T17:16:58.697"
+      },
+      {
+        "cve_id": "CVE-2026-65013",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Onlook through 0.2.32, fixed in commit 423e2e9, contains a broken object level authorization vulnerability that allows authenticated attackers to access and manipulate other users' resources by supply",
+        "published": "2026-07-22T17:16:59.143"
+      },
+      {
+        "cve_id": "CVE-2026-64832",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "FFmpeg versions 4.4 through 8.1.2 contain a double-free vulnerability in the NVIDIA NVDEC hardware decoder within libavcodec/nvdec.c that allows attackers to trigger memory corruption by supplying a c",
+        "published": "2026-07-22T18:17:05.483"
+      },
+      {
+        "cve_id": "CVE-2026-64835",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "FFmpeg versions 4.4 through 8.1.2 contain an out-of-bounds memory access vulnerability in the ADX audio decoder within libavcodec/adxdec.c that allows attackers to trigger both out-of-bounds reads and",
+        "published": "2026-07-22T18:17:05.917"
+      },
+      {
         "cve_id": "CVE-2026-13321",
         "severity": "HIGH",
         "base_score": 8.6,
         "description": "The BIND resolver accepts validly-signed NSEC records where the \"Next Domain Name\" field points outside the signer's zone.\nThis issue affects BIND 9 versions 9.11.0 through 9.18.50, 9.20.0 through 9.2",
         "published": "2026-07-22T15:16:52.200"
-      },
-      {
-        "cve_id": "CVE-2026-4773",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Improper validation of specified type of input vulnerability in Magarsus Consulting Ltd. Co. IDM-MFA allows Authentication Bypass.\n\nThis issue affects IDM-MFA: from 2025.11.27 before 2026.03.10.",
-        "published": "2026-07-22T12:18:12.587"
       },
       {
         "cve_id": "CVE-2026-13181",
@@ -355,32 +369,18 @@
         "published": "2026-07-22T14:17:14.667"
       },
       {
-        "cve_id": "CVE-2026-44189",
+        "cve_id": "CVE-2026-13059",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A flaw was found in the Visual Studio Code Ansible Lightspeed extension's AnsiblePlaybookRunProvider. This command injection vulnerability allows an attacker to craft a malicious playbook filename con",
-        "published": "2026-07-22T12:17:59.817"
+        "base_score": 8.1,
+        "description": "An authenticated user with low privileges may be able to perform unauthorized reads and writes on data protected by role-based query-level access controls, due to insufficient validation of certain cl",
+        "published": "2026-07-22T20:16:43.793"
       },
       {
-        "cve_id": "CVE-2026-44190",
+        "cve_id": "CVE-2026-13072",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A flaw was found in the Ansible Lightspeed Visual Studio Code extension. This Command Injection vulnerability (CWE-78) allows a remote attacker to execute unauthorized commands on a user's system. The",
-        "published": "2026-07-22T12:17:59.940"
-      },
-      {
-        "cve_id": "CVE-2026-44191",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A flaw was found in the Visual Studio Code Ansible Lightspeed extension. This command injection vulnerability (CWE-78) arises from improper handling of the ansible.executionEnvironment.containerOption",
-        "published": "2026-07-22T13:16:37.367"
-      },
-      {
-        "cve_id": "CVE-2026-16607",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A vulnerability in Fujitsu Software Linux openFT and\u00a0Fujitsu Software Oracle Solaris openFT before version\u00a012.1D00 allows for\u00a0local privilege escalation\u00a0to root of an already authenticated user on GNU",
-        "published": "2026-07-22T16:17:16.963"
+        "base_score": 8.1,
+        "description": "When compute mode is enabled on a standalone mongod instance, insufficient validation of externally sourced BSON data during aggregation pipeline processing can result in memory corruption, potentiall",
+        "published": "2026-07-22T20:16:45.740"
       }
     ]
   },
