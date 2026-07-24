@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T13:18:07.378899+00:00",
+  "generated_at": "2026-07-24T17:20:16.806735+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 11,
+        "value": 19,
         "score": 3.0,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 191,
-    "critical_count": 11,
-    "high_count": 27,
+    "total": 244,
+    "critical_count": 19,
+    "high_count": 40,
     "cves": [
       {
         "cve_id": "CVE-2026-47668",
@@ -257,6 +257,41 @@
         "published": "2026-07-23T18:17:02.570"
       },
       {
+        "cve_id": "CVE-2025-71389",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Cal.com (calcom/cal.diy) before 5.9.9 is vulnerable to unauthenticated remote code execution because it bundles a version of Next.js whose React Server Components (RSC) request handling deserializes a",
+        "published": "2026-07-23T22:16:51.750"
+      },
+      {
+        "cve_id": "CVE-2026-42933",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Pronetiqs IntraVUE versions 3.2.1a14 and prior have an unintended proxy or intermediary vulnerability which could allow an attacker to use an active proxy, which would bypass OT segmentation.",
+        "published": "2026-07-23T23:16:48.887"
+      },
+      {
+        "cve_id": "CVE-2026-56191",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Improper authentication in Microsoft Exchange Online allows an unauthorized attacker to perform tampering over a network.",
+        "published": "2026-07-24T01:17:36.417"
+      },
+      {
+        "cve_id": "CVE-2026-58275",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Missing authorization in Azure DNS allows an unauthorized attacker to elevate privileges over a network.",
+        "published": "2026-07-24T01:17:40.863"
+      },
+      {
+        "cve_id": "CVE-2026-62825",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Improper authentication in Azure Key Vault allows an unauthorized attacker to elevate privileges over a network.",
+        "published": "2026-07-24T01:17:47.030"
+      },
+      {
         "cve_id": "CVE-2026-47752",
         "severity": "CRITICAL",
         "base_score": 9.9,
@@ -271,25 +306,32 @@
         "published": "2026-07-23T21:17:04.477"
       },
       {
-        "cve_id": "CVE-2026-65687",
+        "cve_id": "CVE-2024-58354",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Bold Reports Standalone Report Designer before 14.1.12 contains a missing filepath validation vulnerability in its SVG processing feature that allows unauthenticated attackers to read arbitrary files ",
-        "published": "2026-07-23T14:18:02.993"
+        "base_score": 9.9,
+        "description": "cal.com (calcom repository, later renamed cal.diy) is affected by a repository takeover vulnerability in its GitHub Actions workflows. The workflow pr.yml uses the pull_request_target trigger with the",
+        "published": "2026-07-23T22:16:51.380"
       },
       {
-        "cve_id": "CVE-2026-65688",
+        "cve_id": "CVE-2026-63732",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Bold Reports Standalone Report Designer before 14.1.12 contains a missing filepath validation vulnerability in its font processing feature that allows unauthenticated attackers to read arbitrary files",
-        "published": "2026-07-23T14:18:03.163"
+        "base_score": 9.9,
+        "description": "9router 0.4.59 (fixed in 0.4.60) contains a chain of vulnerabilities: a hardcoded default password (123456) that authenticates any fresh installation, a bypass of the LOCAL_ONLY network gate via a spo",
+        "published": "2026-07-23T22:16:53.023"
       },
       {
-        "cve_id": "CVE-2026-65689",
+        "cve_id": "CVE-2026-50517",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Bold Reports Standalone Report Designer before 14.1.12 contains a missing filepath validation vulnerability in its database download feature that allows unauthenticated attackers to read arbitrary fil",
-        "published": "2026-07-23T14:18:03.340"
+        "base_score": 9.9,
+        "description": "Deserialization of untrusted data in M365 Copilot allows an authorized attacker to execute code over a network.",
+        "published": "2026-07-24T01:17:02.257"
+      },
+      {
+        "cve_id": "CVE-2026-54120",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Improper input validation in Microsoft Surface allows an authorized attacker to execute code over a network.",
+        "published": "2026-07-24T01:17:25.340"
       },
       {
         "cve_id": "CVE-2026-65700",
@@ -313,6 +355,13 @@
         "published": "2026-07-23T21:17:03.220"
       },
       {
+        "cve_id": "CVE-2026-56165",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Heap-based buffer overflow in Microsoft Account allows an unauthorized attacker to execute code over a network.",
+        "published": "2026-07-24T01:17:34.750"
+      },
+      {
         "cve_id": "CVE-2026-65701",
         "severity": "CRITICAL",
         "base_score": 9.1,
@@ -320,67 +369,18 @@
         "published": "2026-07-23T18:17:01.480"
       },
       {
-        "cve_id": "CVE-2026-65690",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Bold Reports Standalone Report Designer before 14.1.12 contains a missing filepath validation vulnerability in its file upload functionality that allows authenticated attackers to traverse outside the",
-        "published": "2026-07-23T14:18:03.503"
+        "cve_id": "CVE-2026-56160",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Improper authorization in Azure Red Hat OpenShift (ARO) allows an authorized attacker to elevate privileges over a network.",
+        "published": "2026-07-24T01:17:34.560"
       },
       {
-        "cve_id": "CVE-2026-65917",
+        "cve_id": "CVE-2024-58353",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "CyberPanel through 1.9.1, fixed in commit b198460, contains an insecure direct object reference (IDOR) vulnerability in the IncBackups application's incremental-backup handlers (deleteBackup, fetchRes",
-        "published": "2026-07-23T16:17:55.020"
-      },
-      {
-        "cve_id": "CVE-2026-15212",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The WPO365 | Login plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions up to, and including, 43.2. This is due to the Ajax_Service::verify_ajax_request() helper gating its wp_",
-        "published": "2026-07-23T20:17:07.460"
-      },
-      {
-        "cve_id": "CVE-2026-47743",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "Shopper is a Headless e-commerce Admin Panel. Prior to 2.8.0, three related defects on admin Livewire components allowed data tampering, sensitive data disclosure, and stored XSS. First, several Livew",
-        "published": "2026-07-23T18:16:53.490"
-      },
-      {
-        "cve_id": "CVE-2026-65702",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Vanna through 2.0.2 contains a path traversal vulnerability in the FileSystemConversationStore persistence integration that allows unauthenticated remote attackers to write attacker-controlled JSON fi",
-        "published": "2026-07-23T18:17:01.630"
-      },
-      {
-        "cve_id": "CVE-2026-63765",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Chatwoot before 4.16.0 contains an authentication bypass vulnerability in the direct uploads controller that allows unauthenticated attackers to create arbitrary ActiveStorage blobs in any tenant acco",
-        "published": "2026-07-23T19:17:03.560"
-      },
-      {
-        "cve_id": "CVE-2026-16002",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "The affected product is vulnerable to an Out-of-bounds read, which may allow an attacker to crash the parsing process and cause a denial of service.",
-        "published": "2026-07-23T21:17:03.363"
-      },
-      {
-        "cve_id": "CVE-2026-65916",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "CyberPanel through 1.9.1, fixed in commit b198460, contains a missing authorization vulnerability in the cancelBackupCreation handler that allows authenticated users to kill, delete, and corrupt other",
-        "published": "2026-07-23T16:17:54.883"
-      },
-      {
-        "cve_id": "CVE-2026-60122",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "gpsd through release-3.27.5, fixed at commit 4c06658, contains a code injection vulnerability in the gpsprof utility that allows an attacker who controls GPS input data to execute arbitrary OS command",
-        "published": "2026-07-23T20:17:09.207"
+        "base_score": 8.9,
+        "description": "Cal.com (repository calcom/cal.diy) in versions <= 4.7.15 is vulnerable to cross-site scripting (XSS) on the publicly accessible single booking view (e.g., /booking/<id>). Booking question (form field",
+        "published": "2026-07-23T22:16:51.080"
       }
     ]
   },
