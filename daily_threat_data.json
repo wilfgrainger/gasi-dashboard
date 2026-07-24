@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T17:20:16.806735+00:00",
+  "generated_at": "2026-07-24T20:54:59.134913+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 19,
+        "value": 16,
         "score": 3.0,
         "max": 3
       },
@@ -238,24 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 244,
-    "critical_count": 19,
-    "high_count": 40,
+    "total": 227,
+    "critical_count": 16,
+    "high_count": 39,
     "cves": [
-      {
-        "cve_id": "CVE-2026-47668",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "DbGate is cross-platform database manager. In versions 7.1.8 and prior, DbGate's JSON script runner (`POST /runners/start`) allows remote code execution via code injection in the `functionName` parame",
-        "published": "2026-07-23T18:16:53.350"
-      },
-      {
-        "cve_id": "CVE-2026-6516",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Zohocorp ManageEngine ADAudit Plus versions\u00a0before 8606 are affected by Unauthenticated Remote code execution due to the vulnerable agent API.",
-        "published": "2026-07-23T18:17:02.570"
-      },
       {
         "cve_id": "CVE-2025-71389",
         "severity": "CRITICAL",
@@ -290,13 +276,6 @@
         "base_score": 10.0,
         "description": "Improper authentication in Azure Key Vault allows an unauthorized attacker to elevate privileges over a network.",
         "published": "2026-07-24T01:17:47.030"
-      },
-      {
-        "cve_id": "CVE-2026-47752",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Tugtainer is a self-hosted app for automating updates of Docker containers. Versions prior to 1.30.2 are vulnerable to Server-Side Template Injection (SSTI) in the notification template feature. The `",
-        "published": "2026-07-23T18:16:53.630"
       },
       {
         "cve_id": "CVE-2026-47724",
@@ -334,25 +313,18 @@
         "published": "2026-07-24T01:17:25.340"
       },
       {
-        "cve_id": "CVE-2026-65700",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "h2oGPT through 0.2.1 contains a path traversal vulnerability in the OpenAI-compatible files API that allows unauthenticated remote attackers to read, write, and delete arbitrary files accessible to th",
-        "published": "2026-07-23T18:17:01.327"
-      },
-      {
-        "cve_id": "CVE-2026-63359",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Appriss Insights (Equifax) Victim Information Notification Exchange (VINE) applications allow an unauthenticated attacker to send a specially-crafted request to bypass the login page, access other",
-        "published": "2026-07-23T20:17:20.367"
-      },
-      {
         "cve_id": "CVE-2026-15981",
         "severity": "CRITICAL",
         "base_score": 9.8,
         "description": "The SAML Single Sign On \u2013 SSO Login plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 5.4.4. This is due to the mo_saml_validate_signature() function pe",
         "published": "2026-07-23T21:17:03.220"
+      },
+      {
+        "cve_id": "CVE-2026-52439",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An issue in xiandafu beetl 3.20.2 allows a remote attacker to execute arbitrary code via the type.new function and the property reflection mechanism",
+        "published": "2026-07-23T21:17:05.200"
       },
       {
         "cve_id": "CVE-2026-56165",
@@ -362,11 +334,11 @@
         "published": "2026-07-24T01:17:34.750"
       },
       {
-        "cve_id": "CVE-2026-65701",
+        "cve_id": "CVE-2026-15704",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "SoftVC VITS Singing Voice Conversion through commit 730930d contains a path traversal vulnerability in the full-song inference server that allows unauthenticated remote attackers to read and exfiltrat",
-        "published": "2026-07-23T18:17:01.480"
+        "base_score": 9.8,
+        "description": "In Eclipse BaSyx Go Components versions up to and including 1.0.0, ABAC-enabled deployments are vulnerable to an authorization bypass caused by inconsistent trailing-slash handling between the ABAC mi",
+        "published": "2026-07-24T09:16:24.113"
       },
       {
         "cve_id": "CVE-2026-56160",
@@ -376,11 +348,39 @@
         "published": "2026-07-24T01:17:34.560"
       },
       {
+        "cve_id": "CVE-2026-12877",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The Project Management, Bug and Issue Tracking Plugin  WordPress plugin before 5.1.0 does not sanitise and escape user supplied input before using it in a SQL query, allowing unauthenticated attackers",
+        "published": "2026-07-24T07:16:32.777"
+      },
+      {
         "cve_id": "CVE-2024-58353",
         "severity": "HIGH",
         "base_score": 8.9,
         "description": "Cal.com (repository calcom/cal.diy) in versions <= 4.7.15 is vulnerable to cross-site scripting (XSS) on the publicly accessible single booking view (e.g., /booking/<id>). Booking question (form field",
         "published": "2026-07-23T22:16:51.080"
+      },
+      {
+        "cve_id": "CVE-2024-58355",
+        "severity": "HIGH",
+        "base_score": 8.9,
+        "description": "Cal.com (calcom/cal.diy) versions through 4.7.15 contain a stored cross-site scripting vulnerability. The single booking view (e.g., https://app.cal.com/booking/<id>) renders booking-question field la",
+        "published": "2026-07-23T22:16:51.533"
+      },
+      {
+        "cve_id": "CVE-2026-16805",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in Blink in Google Chrome prior to 150.0.7871.186 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-07-23T22:16:52.533"
+      },
+      {
+        "cve_id": "CVE-2026-16806",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in WebMCP in Google Chrome prior to 150.0.7871.186 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-07-23T22:16:52.640"
       }
     ]
   },
