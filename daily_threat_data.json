@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-24T20:54:59.134913+00:00",
+  "generated_at": "2026-07-25T01:49:33.799817+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 26,
+        "value": 24,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 16,
-        "score": 3.0,
+        "value": 5,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1653,
-    "recent_30d_count": 26,
+    "recent_30d_count": 24,
     "recent": [
       {
         "cve_id": "CVE-2026-16232",
@@ -238,100 +238,30 @@
     ]
   },
   "nvd": {
-    "total": 227,
-    "critical_count": 16,
-    "high_count": 39,
+    "total": 188,
+    "critical_count": 5,
+    "high_count": 26,
     "cves": [
       {
-        "cve_id": "CVE-2025-71389",
+        "cve_id": "CVE-2026-56163",
         "severity": "CRITICAL",
         "base_score": 10.0,
-        "description": "Cal.com (calcom/cal.diy) before 5.9.9 is vulnerable to unauthenticated remote code execution because it bundles a version of Next.js whose React Server Components (RSC) request handling deserializes a",
-        "published": "2026-07-23T22:16:51.750"
+        "description": "Missing authentication for critical function in Microsoft Azure Kubernetes Service allows an unauthorized attacker to elevate privileges over a network.",
+        "published": "2026-07-24T15:18:33.030"
       },
       {
-        "cve_id": "CVE-2026-42933",
+        "cve_id": "CVE-2026-57106",
         "severity": "CRITICAL",
         "base_score": 10.0,
-        "description": "Pronetiqs IntraVUE versions 3.2.1a14 and prior have an unintended proxy or intermediary vulnerability which could allow an attacker to use an active proxy, which would bypass OT segmentation.",
-        "published": "2026-07-23T23:16:48.887"
+        "description": "Server-side request forgery (ssrf) in Data Quality allows an unauthorized attacker to elevate privileges over a network.",
+        "published": "2026-07-24T15:18:39.633"
       },
       {
-        "cve_id": "CVE-2026-56191",
+        "cve_id": "CVE-2026-58630",
         "severity": "CRITICAL",
         "base_score": 10.0,
-        "description": "Improper authentication in Microsoft Exchange Online allows an unauthorized attacker to perform tampering over a network.",
-        "published": "2026-07-24T01:17:36.417"
-      },
-      {
-        "cve_id": "CVE-2026-58275",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Missing authorization in Azure DNS allows an unauthorized attacker to elevate privileges over a network.",
-        "published": "2026-07-24T01:17:40.863"
-      },
-      {
-        "cve_id": "CVE-2026-62825",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Improper authentication in Azure Key Vault allows an unauthorized attacker to elevate privileges over a network.",
-        "published": "2026-07-24T01:17:47.030"
-      },
-      {
-        "cve_id": "CVE-2026-47724",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "nebula-mesh is a self-hosted control plane for Slack Nebula mesh virtual private network. Prior to version 0.3.4, the `/api/v1/*` route surface trusts the bearer token alone for authorisation on most ",
-        "published": "2026-07-23T21:17:04.477"
-      },
-      {
-        "cve_id": "CVE-2024-58354",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "cal.com (calcom repository, later renamed cal.diy) is affected by a repository takeover vulnerability in its GitHub Actions workflows. The workflow pr.yml uses the pull_request_target trigger with the",
-        "published": "2026-07-23T22:16:51.380"
-      },
-      {
-        "cve_id": "CVE-2026-63732",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "9router 0.4.59 (fixed in 0.4.60) contains a chain of vulnerabilities: a hardcoded default password (123456) that authenticates any fresh installation, a bypass of the LOCAL_ONLY network gate via a spo",
-        "published": "2026-07-23T22:16:53.023"
-      },
-      {
-        "cve_id": "CVE-2026-50517",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Deserialization of untrusted data in M365 Copilot allows an authorized attacker to execute code over a network.",
-        "published": "2026-07-24T01:17:02.257"
-      },
-      {
-        "cve_id": "CVE-2026-54120",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Improper input validation in Microsoft Surface allows an authorized attacker to execute code over a network.",
-        "published": "2026-07-24T01:17:25.340"
-      },
-      {
-        "cve_id": "CVE-2026-15981",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The SAML Single Sign On \u2013 SSO Login plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 5.4.4. This is due to the mo_saml_validate_signature() function pe",
-        "published": "2026-07-23T21:17:03.220"
-      },
-      {
-        "cve_id": "CVE-2026-52439",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An issue in xiandafu beetl 3.20.2 allows a remote attacker to execute arbitrary code via the type.new function and the property reflection mechanism",
-        "published": "2026-07-23T21:17:05.200"
-      },
-      {
-        "cve_id": "CVE-2026-56165",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Heap-based buffer overflow in Microsoft Account allows an unauthorized attacker to execute code over a network.",
-        "published": "2026-07-24T01:17:34.750"
+        "description": "Improper access control in Azure App Service allows an unauthorized attacker to elevate privileges over a network.",
+        "published": "2026-07-24T15:18:47.847"
       },
       {
         "cve_id": "CVE-2026-15704",
@@ -341,13 +271,6 @@
         "published": "2026-07-24T09:16:24.113"
       },
       {
-        "cve_id": "CVE-2026-56160",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Improper authorization in Azure Red Hat OpenShift (ARO) allows an authorized attacker to elevate privileges over a network.",
-        "published": "2026-07-24T01:17:34.560"
-      },
-      {
         "cve_id": "CVE-2026-12877",
         "severity": "CRITICAL",
         "base_score": 9.1,
@@ -355,32 +278,109 @@
         "published": "2026-07-24T07:16:32.777"
       },
       {
-        "cve_id": "CVE-2024-58353",
-        "severity": "HIGH",
-        "base_score": 8.9,
-        "description": "Cal.com (repository calcom/cal.diy) in versions <= 4.7.15 is vulnerable to cross-site scripting (XSS) on the publicly accessible single booking view (e.g., /booking/<id>). Booking question (form field",
-        "published": "2026-07-23T22:16:51.080"
-      },
-      {
-        "cve_id": "CVE-2024-58355",
-        "severity": "HIGH",
-        "base_score": 8.9,
-        "description": "Cal.com (calcom/cal.diy) versions through 4.7.15 contain a stored cross-site scripting vulnerability. The single booking view (e.g., https://app.cal.com/booking/<id>) renders booking-question field la",
-        "published": "2026-07-23T22:16:51.533"
-      },
-      {
-        "cve_id": "CVE-2026-16805",
+        "cve_id": "CVE-2026-16870",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Use after free in Blink in Google Chrome prior to 150.0.7871.186 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-07-23T22:16:52.533"
+        "description": "Multiple security vulnerabilities in Snowflake libsnowflakeclient versions prior to 2.9.2 could allow remote code execution and credential exfiltration. A stack-based buffer overflow in the file downl",
+        "published": "2026-07-24T06:16:42.553"
       },
       {
-        "cve_id": "CVE-2026-16806",
+        "cve_id": "CVE-2026-45813",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Use after free in WebMCP in Google Chrome prior to 150.0.7871.186 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-07-23T22:16:52.640"
+        "description": "Out-of-bounds Write, Integer Underflow (Wrap or Wraparound) vulnerability in Apache NimBLE BASS service.\nImproper validation when parsing BASS service\u00a0 \"Add Source\" and \"Modify Source\" operation PDU c",
+        "published": "2026-07-24T13:18:24.087"
+      },
+      {
+        "cve_id": "CVE-2026-16800",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Improper control of generation of code ('Code Injection') in the schedule feature in Devolutions PowerShell Universal 2026.2.2 and earlier allows an authenticated user with schedule creation permissio",
+        "published": "2026-07-24T15:17:12.963"
+      },
+      {
+        "cve_id": "CVE-2026-16801",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Improper control of generation of code ('Code Injection') in the variables feature in Devolutions PowerShell Universal 2026.2.2 and earlier allows an authenticated user with variable write permission ",
+        "published": "2026-07-24T15:17:13.077"
+      },
+      {
+        "cve_id": "CVE-2026-66140",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "Exim before 4.99.5 allows directory traversal to access files outside of the spool area, and consequently gain privileges, because arguments related to queue-name are mishandled.",
+        "published": "2026-07-24T05:16:49.747"
+      },
+      {
+        "cve_id": "CVE-2026-8789",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The Easy Appointments plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check and missing nonce verification on the `ea_delete_multiple_connections` A",
+        "published": "2026-07-24T15:19:08.320"
+      },
+      {
+        "cve_id": "CVE-2026-12736",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "The Wpify Woo plugin for WordPress is vulnerable to Privilege Escalation in versions up to, and including, 5.4.16. This is due to the SettingsApi::save_option() REST route (POST /wp-json/wpify-woo/v1/",
+        "published": "2026-07-24T04:16:51.357"
+      },
+      {
+        "cve_id": "CVE-2026-14172",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Rapid7 InsightVM, Nexpose, and the Insight Agent execute discovered executables during authenticated assessment without validating file ownership, allowing a local low-privileged user to run code as t",
+        "published": "2026-07-24T07:16:32.977"
+      },
+      {
+        "cve_id": "CVE-2026-49743",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Software installed and run as a non-privileged user may conduct improper GPU system calls to manipulate the lifetimes of synchronisation objects in the kernel, leading to read/write UAFs.\n\n\n\nDuring wo",
+        "published": "2026-07-24T09:16:24.667"
+      },
+      {
+        "cve_id": "CVE-2026-49744",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Kernel software installed and running inside a Guest VM may post improper commands to the GPU Firmware to trigger a write of data outside the Guest's virtualised GPU memory.\n\n\n\nOut of bounds accesses ",
+        "published": "2026-07-24T09:16:24.787"
+      },
+      {
+        "cve_id": "CVE-2026-49745",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Kernel software installed and running inside a Guest VM may post improper commands to the GPU Firmware to trigger a write of data outside the Guest's virtualised GPU memory.\n\n\n\nSoftware installed and ",
+        "published": "2026-07-24T09:16:24.897"
+      },
+      {
+        "cve_id": "CVE-2026-12497",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Paid Membership Plugin, Ecommerce, User Registration Form, Login Form, User Profile & Restrict Content  WordPress plugin before 4.16.18 does not consistently enforce the role restriction configure",
+        "published": "2026-07-24T07:16:32.350"
+      },
+      {
+        "cve_id": "CVE-2026-12981",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The CAFEHAUS API WordPress plugin through 1.0.0 does not have any authentication or authorisation when updating user passwords, allowing unauthenticated attackers to set the password of any user, incl",
+        "published": "2026-07-24T07:16:32.880"
+      },
+      {
+        "cve_id": "CVE-2026-14603",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The WowOptin: Next-Gen Popup Maker  WordPress plugin before 1.4.38 does not have proper authorization on a REST endpoint, allowing unauthenticated users to disable all of the site's opt-in forms and i",
+        "published": "2026-07-24T07:16:33.120"
+      },
+      {
+        "cve_id": "CVE-2026-45811",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Buffer Copy without Checking Size of Input ('Classic Buffer Overflow') vulnerability in Apache NimBLE.\nThe HCI socket transport did not check whether a received HCI event would fit the configured even",
+        "published": "2026-07-24T13:18:23.847"
       }
     ]
   },
