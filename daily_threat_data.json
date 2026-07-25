@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-25T16:45:07.910212+00:00",
+  "generated_at": "2026-07-25T20:40:22.256826+00:00",
   "threat_score": {
-    "score": 6.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
-        "score": 2.0,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 323,
-    "critical_count": 3,
-    "high_count": 20,
+    "total": 295,
+    "critical_count": 1,
+    "high_count": 6,
     "cves": [
       {
         "cve_id": "CVE-2026-61884",
@@ -248,55 +248,6 @@
         "base_score": 9.8,
         "description": "The web management interface of\u00a0Tycon Systems TPDIN-Monitor-WEB2\n\n\u00a0does not perform server-side validation of credentials during the login process. By submitting empty values for both credential field",
         "published": "2026-07-24T22:16:50.963"
-      },
-      {
-        "cve_id": "CVE-2026-62835",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Improper authorization in Azure Portal allows an unauthorized attacker to disclose information over a network.",
-        "published": "2026-07-24T20:18:19.410"
-      },
-      {
-        "cve_id": "CVE-2026-48021",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "In epa4all, prior to version 2026-05-20, an attacker who can intercept the TLS connection between epa4all and the ePA backend can complete the VAU handshake with attacker-controlled keys and obtain th",
-        "published": "2026-07-24T19:16:58.033"
-      },
-      {
-        "cve_id": "CVE-2026-66032",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "libssh2 through 1.11.1, fixed in commit 5e47761, contains a double-free vulnerability in the sftp_open() function in src/sftp.c that allows a malicious SSH server to corrupt the heap of any authentica",
-        "published": "2026-07-24T17:17:35.120"
-      },
-      {
-        "cve_id": "CVE-2026-66036",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "FFmpeg through 8.1.2, fixed in commit 5d7112c, contains a heap out-of-bounds write vulnerability in the vf_hqdn3d filter that allows attackers to corrupt heap memory by supplying a crafted video whose",
-        "published": "2026-07-24T20:18:20.433"
-      },
-      {
-        "cve_id": "CVE-2026-66039",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "FFmpeg through 8.1.2, fixed in commit aafb5c6, contains a signed integer overflow vulnerability in the MACE6 audio decoder that allows attackers to corrupt heap memory by supplying a crafted CAF file ",
-        "published": "2026-07-24T20:18:20.880"
-      },
-      {
-        "cve_id": "CVE-2026-66040",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "FFmpeg through 8.1.2, fixed in commit b506faf, contains a heap out-of-bounds write vulnerability in the native PNG and APNG encoders that allows remote attackers to corrupt heap memory by supplying a ",
-        "published": "2026-07-24T20:18:21.063"
-      },
-      {
-        "cve_id": "CVE-2026-66041",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "FFmpeg 7.0 through 8.1.2, fixed in commit 4da9812, contains a heap out-of-bounds write vulnerability in the vf_quirc filter that allows an attacker to corrupt heap memory by supplying a crafted PGS/SU",
-        "published": "2026-07-24T20:18:21.240"
       },
       {
         "cve_id": "CVE-2026-60134",
@@ -311,34 +262,6 @@
         "base_score": 8.8,
         "description": "Weintek cMT3092X HMI allows a non-privileged user to modify tokens to escalate privileges.",
         "published": "2026-07-24T23:16:51.333"
-      },
-      {
-        "cve_id": "CVE-2026-17107",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "A flaw was found in the cluster-proxy service-proxy component used in Red Hat Advanced Cluster Management for Kubernetes (RHACM) and multicluster-engine (MCE). The service-proxy appends impersonation ",
-        "published": "2026-07-24T19:16:55.907"
-      },
-      {
-        "cve_id": "CVE-2026-65709",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "sysPass through version 3.2.11 contains a missing object-level authorization vulnerability in the JSON-RPC API that allows API token holders to enumerate account metadata, overwrite passwords, and del",
-        "published": "2026-07-24T17:17:34.573"
-      },
-      {
-        "cve_id": "CVE-2026-65708",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "sysPass through version 3.2.11 contains an insecure direct object reference vulnerability that allows any authenticated attacker to access account file attachments belonging to accounts they do not ha",
-        "published": "2026-07-24T17:17:34.433"
-      },
-      {
-        "cve_id": "CVE-2026-54342",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "In epa4all, prior to version 2026-05-20, an attacker on the network path between epa4all and any backend (ePA Aktensystem, Konnektor, IDP, TSS) can present a self-signed TLS certificate and intercept ",
-        "published": "2026-07-24T19:16:59.200"
       },
       {
         "cve_id": "CVE-2026-66374",
@@ -362,25 +285,102 @@
         "published": "2026-07-24T22:16:50.063"
       },
       {
-        "cve_id": "CVE-2026-66033",
+        "cve_id": "CVE-2026-66373",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "libssh2 through 1.11.1, fixed in commit a2ed82d, contains a pre-authentication integer underflow vulnerability in the ssh2_cipher_crypt() function in src/openssl.c that allows a malicious SSH server t",
-        "published": "2026-07-24T17:17:35.263"
+        "description": "Redis before 8.8.0, in the unusual case where an authenticated attacker can execute RESTORE, allows remote code execution via a RESTORE payload where the same NACK (pending entry) is referenced by mor",
+        "published": "2026-07-25T01:16:26.277"
       },
       {
-        "cve_id": "CVE-2026-66034",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "libssh2 through 1.11.1, fixed in commit a13bb6c, contains a missing bounds check vulnerability that allows a malicious SSH server to trigger an arbitrary-length heap out-of-bounds read and a free of a",
-        "published": "2026-07-24T17:17:35.407"
+        "cve_id": "CVE-2026-60135",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "An attacker can modify data that should be restricted to read\u2011only access.",
+        "published": "2026-07-24T23:16:51.037"
       },
       {
-        "cve_id": "CVE-2026-66035",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "libssh2 through 1.11.1, fixed in commit 42e33d8, contains a pre-authentication heap buffer overflow vulnerability that allows a malicious SSH server to corrupt heap metadata in any connecting client b",
-        "published": "2026-07-24T17:17:35.547"
+        "cve_id": "CVE-2026-61886",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Weintek cMT3092X HMI stores user account passwords in plaintext.",
+        "published": "2026-07-24T23:16:51.197"
+      },
+      {
+        "cve_id": "CVE-2026-66337",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "A flaw was found in libsoup. An unsigned integer underflow in the soup_filter_input_stream_read_until() function causes a heap buffer over-read when parsing multipart HTTP responses. A malicious HTTP ",
+        "published": "2026-07-24T23:16:51.760"
+      },
+      {
+        "cve_id": "CVE-2026-66339",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "A flaw was found in libsoup. After a CONNECT tunnel is established through an HTTP proxy, libsoup incorrectly attaches the Proxy-Authorization header to subsequent HTTPS requests sent through that tun",
+        "published": "2026-07-24T23:16:52.187"
+      },
+      {
+        "cve_id": "CVE-2026-14955",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "The Checkout Field Editor for WooCommerce (Pro) plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 3.7.7 via the 'thwcfe_legacy_file' parameter. This makes",
+        "published": "2026-07-25T07:17:09.753"
+      },
+      {
+        "cve_id": "CVE-2026-15425",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "The Yoast SEO \u2013 Advanced SEO with real-time guidance and built-in AI plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Post Slug (post_name) in all versions up to, and including, 2",
+        "published": "2026-07-25T07:17:09.897"
+      },
+      {
+        "cve_id": "CVE-2026-66338",
+        "severity": "MEDIUM",
+        "base_score": 5.4,
+        "description": "A flaw was found in libsoup. The chunked transfer encoding parser uses a permissive parsing function for chunk sizes that silently accepts inputs violating RFC 9112, including leading whitespace, plus",
+        "published": "2026-07-24T23:16:52.040"
+      },
+      {
+        "cve_id": "CVE-2026-55985",
+        "severity": "MEDIUM",
+        "base_score": 4.3,
+        "description": "The web management interface in\u00a0\nTycon Systems TPDIN-Monitor-WEB2\n\nstores and displays system credentials in cleartext on a certain configuration page accessible to authenticated users. Any party with",
+        "published": "2026-07-24T22:16:50.807"
+      },
+      {
+        "cve_id": "CVE-2026-16280",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "An integer overflow when calculating physical offsets for sparse PMRs may result in 32-bit truncation of address computations for PMRs larger than 4 GB. This can lead to incorrect GPU MMU mappings and",
+        "published": "2026-07-24T23:16:50.393"
+      },
+      {
+        "cve_id": "CVE-2026-16766",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "Catalyst::View::Wkhtmltopdf versions before 0.6.1 for Perl allow shell command injection (RCE) via PDF render options.\n\nOptions are passed directly to the wkhtmltopdf command without sanitization.\n\nAn",
+        "published": "2026-07-25T09:16:32.000"
+      },
+      {
+        "cve_id": "CVE-2026-64256",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nxfs: don't wrap around quota ids in dqiterate\n\nLOLLM noticed that q_id is an unsigned 32-bit variable.  If it happens\nto be set to ",
+        "published": "2026-07-25T10:17:04.630"
+      },
+      {
+        "cve_id": "CVE-2026-64257",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: client: reject overlapping data areas in SMB2 responses\n\nCommit 53b7c271f06b (\"smb: client: restrict implied bcc[0] exemption ",
+        "published": "2026-07-25T10:17:05.817"
+      },
+      {
+        "cve_id": "CVE-2026-64258",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nfuse-uring: remove request-less entries from ent_w_req_queue to fix NULL deref\n\nIf a copy into the userspace ring buffer fails, a r",
+        "published": "2026-07-25T10:17:05.930"
       }
     ]
   },
