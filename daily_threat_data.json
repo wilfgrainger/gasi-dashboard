@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-25T06:09:30.042322+00:00",
+  "generated_at": "2026-07-25T09:27:52.068723+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
-        "score": 2.5,
+        "value": 3,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 175,
-    "critical_count": 5,
-    "high_count": 22,
+    "total": 148,
+    "critical_count": 3,
+    "high_count": 13,
     "cves": [
       {
         "cve_id": "CVE-2026-56163",
@@ -262,27 +262,6 @@
         "base_score": 10.0,
         "description": "Improper access control in Azure App Service allows an unauthorized attacker to elevate privileges over a network.",
         "published": "2026-07-24T15:18:47.847"
-      },
-      {
-        "cve_id": "CVE-2026-15704",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "In Eclipse BaSyx Go Components versions up to and including 1.0.0, ABAC-enabled deployments are vulnerable to an authorization bypass caused by inconsistent trailing-slash handling between the ABAC mi",
-        "published": "2026-07-24T09:16:24.113"
-      },
-      {
-        "cve_id": "CVE-2026-12877",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The Project Management, Bug and Issue Tracking Plugin  WordPress plugin before 5.1.0 does not sanitise and escape user supplied input before using it in a SQL query, allowing unauthenticated attackers",
-        "published": "2026-07-24T07:16:32.777"
-      },
-      {
-        "cve_id": "CVE-2026-16870",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Multiple security vulnerabilities in Snowflake libsnowflakeclient versions prior to 2.9.2 could allow remote code execution and credential exfiltration. A stack-based buffer overflow in the file downl",
-        "published": "2026-07-24T06:16:42.553"
       },
       {
         "cve_id": "CVE-2026-45813",
@@ -313,55 +292,6 @@
         "published": "2026-07-24T15:19:08.320"
       },
       {
-        "cve_id": "CVE-2026-14172",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Rapid7 InsightVM, Nexpose, and the Insight Agent execute discovered executables during authenticated assessment without validating file ownership, allowing a local low-privileged user to run code as t",
-        "published": "2026-07-24T07:16:32.977"
-      },
-      {
-        "cve_id": "CVE-2026-49743",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Software installed and run as a non-privileged user may conduct improper GPU system calls to manipulate the lifetimes of synchronisation objects in the kernel, leading to read/write UAFs.\n\n\n\nDuring wo",
-        "published": "2026-07-24T09:16:24.667"
-      },
-      {
-        "cve_id": "CVE-2026-49744",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Kernel software installed and running inside a Guest VM may post improper commands to the GPU Firmware to trigger a write of data outside the Guest's virtualised GPU memory.\n\n\n\nOut of bounds accesses ",
-        "published": "2026-07-24T09:16:24.787"
-      },
-      {
-        "cve_id": "CVE-2026-49745",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Kernel software installed and running inside a Guest VM may post improper commands to the GPU Firmware to trigger a write of data outside the Guest's virtualised GPU memory.\n\n\n\nSoftware installed and ",
-        "published": "2026-07-24T09:16:24.897"
-      },
-      {
-        "cve_id": "CVE-2026-12497",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Paid Membership Plugin, Ecommerce, User Registration Form, Login Form, User Profile & Restrict Content  WordPress plugin before 4.16.18 does not consistently enforce the role restriction configure",
-        "published": "2026-07-24T07:16:32.350"
-      },
-      {
-        "cve_id": "CVE-2026-12981",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The CAFEHAUS API WordPress plugin through 1.0.0 does not have any authentication or authorisation when updating user passwords, allowing unauthenticated attackers to set the password of any user, incl",
-        "published": "2026-07-24T07:16:32.880"
-      },
-      {
-        "cve_id": "CVE-2026-14603",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The WowOptin: Next-Gen Popup Maker  WordPress plugin before 1.4.38 does not have proper authorization on a REST endpoint, allowing unauthenticated users to disable all of the site's opt-in forms and i",
-        "published": "2026-07-24T07:16:33.120"
-      },
-      {
         "cve_id": "CVE-2026-45811",
         "severity": "HIGH",
         "base_score": 7.5,
@@ -381,6 +311,76 @@
         "base_score": 7.5,
         "description": "NULL Pointer Dereference vulnerability in Apache NimBLE in\u00a0LE Long Term Key Request event.\n\nThis requires disabled asserts (otherwise assert would trigger before NULL dereference) and bogus (or misbeh",
         "published": "2026-07-24T13:18:24.307"
+      },
+      {
+        "cve_id": "CVE-2026-66142",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Apache Neethi is vulnerable to uncontrolled recursion when parsing policies that lack policy Ids or with deeply nested structures, which may lead to a denial of service attack when parsing policies du",
+        "published": "2026-07-24T13:18:29.237"
+      },
+      {
+        "cve_id": "CVE-2026-66143",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "It is possible to bypass the\u00a0maximum number of normalized policy alternatives that was introduced in Apache Neethi 3.2.2 via certain crafted policies, which may lead to a denial of service attack via ",
+        "published": "2026-07-24T13:18:29.350"
+      },
+      {
+        "cve_id": "CVE-2026-66144",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Although remote policy references are not retrieved during policy normalization, if they are manually retrieved via the API it can cause a denial of service attack if a huge policy is retrieved. Users",
+        "published": "2026-07-24T13:18:29.467"
+      },
+      {
+        "cve_id": "CVE-2026-10033",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "The EventON Action User plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 2.5.14. This is due to the plugin not properly verifying that a user is authori",
+        "published": "2026-07-24T10:16:29.983"
+      },
+      {
+        "cve_id": "CVE-2026-15401",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The VikBooking Hotel Booking Engine & PMS plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'vbfX' parameter in all versions up to, and including, 1.8.13 due to insufficient in",
+        "published": "2026-07-24T10:16:31.410"
+      },
+      {
+        "cve_id": "CVE-2026-9765",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "Note: The CVE and blog post don't exist because we determined this is actually a cloud-only issue.\n\nAccess Controls are \u201cBroken\u201d when a user can access resources they are not authorized to access. An ",
+        "published": "2026-07-24T13:18:31.480"
+      },
+      {
+        "cve_id": "CVE-2026-45812",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Incorrect Calculation of Buffer Size vulnerability in Apache NimBLE when processing\u00a0Legacy Advertising Report HCI event.\n\nWhen a single HCI advertising report event bundles multiple reports, NimBLE mi",
+        "published": "2026-07-24T13:18:23.967"
+      },
+      {
+        "cve_id": "CVE-2026-16798",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Insertion of sensitive information into sent data in the automation jobs API in Devolutions PowerShell Universal 2026.2.2 and earlier allows an authenticated user with scoped job or script read permis",
+        "published": "2026-07-24T15:17:12.750"
+      },
+      {
+        "cve_id": "CVE-2026-16802",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Cleartext storage of sensitive information in the variables feature in Devolutions PowerShell Universal 2026.2.2 and earlier allows a local actor with file system access to read secret values via secr",
+        "published": "2026-07-24T15:17:13.180"
+      },
+      {
+        "cve_id": "CVE-2026-17059",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "A flaw was found in the role-users endpoint of the keycloak-services library, which is the core component of the Keycloak identity and access management solution. The issue occurs because the system f",
+        "published": "2026-07-24T15:17:13.300"
       }
     ]
   },
