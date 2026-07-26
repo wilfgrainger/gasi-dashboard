@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T12:58:35.166225+00:00",
+  "generated_at": "2026-07-26T16:48:09.072529+00:00",
   "threat_score": {
     "score": 5.0,
     "level": "ELEVATED",
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 11,
+    "total": 12,
     "critical_count": 0,
-    "high_count": 2,
+    "high_count": 4,
     "cves": [
       {
         "cve_id": "CVE-2026-15962",
@@ -250,18 +250,25 @@
         "published": "2026-07-26T02:16:28.790"
       },
       {
+        "cve_id": "CVE-2026-17497",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "NoteGen before 0.32.0 grants the Tauri shell plugin shell:allow-execute capability for bash, python, and python3 with arbitrary arguments in the default desktop capabilities. JavaScript running in the",
+        "published": "2026-07-26T15:16:27.873"
+      },
+      {
+        "cve_id": "CVE-2026-17496",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "NoteGen before 0.32.0 renders AI chat responses with markdown-it configured with html:true and injects the result into the DOM via dangerouslySetInnerHTML in chat-preview, without HTML sanitization an",
+        "published": "2026-07-26T15:16:27.710"
+      },
+      {
         "cve_id": "CVE-2026-63720",
         "severity": "HIGH",
         "base_score": 7.5,
         "description": "datamodel-code-generator prior to version 0.70.0 contains a code injection vulnerability that allows attackers who control input schemas to achieve remote code execution by supplying a malicious custo",
         "published": "2026-07-26T05:16:23.927"
-      },
-      {
-        "cve_id": "CVE-2026-10681",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "In Zephyr's userspace dynamic-objects subsystem, thread_idx_alloc() in kernel/userspace/userspace.c allocated a new thread permission index from the global _thread_idx_map[] bitmap without holding lis",
-        "published": "2026-07-25T14:16:28.957"
       },
       {
         "cve_id": "CVE-2026-17434",
