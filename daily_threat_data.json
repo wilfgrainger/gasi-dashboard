@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T09:50:24.864046+00:00",
+  "generated_at": "2026-07-26T12:58:35.166225+00:00",
   "threat_score": {
     "score": 5.0,
     "level": "ELEVATED",
@@ -238,149 +238,86 @@
     ]
   },
   "nvd": {
-    "total": 285,
+    "total": 11,
     "critical_count": 0,
-    "high_count": 0,
+    "high_count": 2,
     "cves": [
       {
-        "cve_id": "CVE-2026-64256",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nxfs: don't wrap around quota ids in dqiterate\n\nLOLLM noticed that q_id is an unsigned 32-bit variable.  If it happens\nto be set to ",
-        "published": "2026-07-25T10:17:04.630"
+        "cve_id": "CVE-2026-15962",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Fluent Forms Pro Add On Pack plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 6.2.6 via deserialization of untrusted input. This makes it possible f",
+        "published": "2026-07-26T02:16:28.790"
       },
       {
-        "cve_id": "CVE-2026-64257",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: client: reject overlapping data areas in SMB2 responses\n\nCommit 53b7c271f06b (\"smb: client: restrict implied bcc[0] exemption ",
-        "published": "2026-07-25T10:17:05.817"
+        "cve_id": "CVE-2026-63720",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "datamodel-code-generator prior to version 0.70.0 contains a code injection vulnerability that allows attackers who control input schemas to achieve remote code execution by supplying a malicious custo",
+        "published": "2026-07-26T05:16:23.927"
       },
       {
-        "cve_id": "CVE-2026-64258",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nfuse-uring: remove request-less entries from ent_w_req_queue to fix NULL deref\n\nIf a copy into the userspace ring buffer fails, a r",
-        "published": "2026-07-25T10:17:05.930"
+        "cve_id": "CVE-2026-10681",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "In Zephyr's userspace dynamic-objects subsystem, thread_idx_alloc() in kernel/userspace/userspace.c allocated a new thread permission index from the global _thread_idx_map[] bitmap without holding lis",
+        "published": "2026-07-25T14:16:28.957"
       },
       {
-        "cve_id": "CVE-2026-64259",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nfuse-uring: make a fuse_req on SQE commit only findable after memcpy\n\nBad userspace might try to trick us and send commit SQEs requ",
-        "published": "2026-07-25T10:17:06.033"
+        "cve_id": "CVE-2026-17434",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A flaw has been found in nanocoai NanoClaw up to 2.0.64. Affected is the function handleAddMcpServer of the file src/modules/self-mod/request.ts of the component add_mcp_server. Executing a manipulati",
+        "published": "2026-07-26T04:16:46.573"
       },
       {
-        "cve_id": "CVE-2026-64260",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nfuse-uring: Avoid queue->stopped races and set/read that value under lock\n\nThere are several readers of queue->stopped that check t",
-        "published": "2026-07-25T10:17:06.137"
+        "cve_id": "CVE-2026-17458",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A vulnerability was found in mf-yang openclaw-cn up to 0.2.1. This affects the function clickViaPlaywright of the file src/browser/routes/agent.act.ts of the component Browser Control HTTP API. Perfor",
+        "published": "2026-07-26T11:16:58.470"
       },
       {
-        "cve_id": "CVE-2026-64261",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nfuse-uring: Avoid use-after-free in fuse_uring_async_stop_queues\n\nfuse_uring_async_stop_queues() might run when the last reference\n",
-        "published": "2026-07-25T10:17:06.243"
+        "cve_id": "CVE-2026-17433",
+        "severity": "MEDIUM",
+        "base_score": 5.3,
+        "description": "A vulnerability was detected in nanocoai NanoClaw up to 2.0.64. This impacts the function createChatSdkBridge.setup of the file src/channels/chat-sdk-bridge.ts of the component MCP Server Approval. Pe",
+        "published": "2026-07-26T03:16:32.490"
       },
       {
-        "cve_id": "CVE-2026-64262",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nfuse-uring: end fuse_req on io-uring cancel task work\n\nWhen io_uring delivers task work with tw.cancel set (PF_EXITING,\nPF_KTHREAD ",
-        "published": "2026-07-25T10:17:06.350"
+        "cve_id": "CVE-2026-17432",
+        "severity": "MEDIUM",
+        "base_score": 5.0,
+        "description": "A vulnerability was detected in NousResearch hermes-agent 2026.6.5. Affected by this vulnerability is an unknown functionality of the file hermes-agent/plugins/platforms/simplex/adapter.py of the comp",
+        "published": "2026-07-26T01:16:25.783"
       },
       {
-        "cve_id": "CVE-2026-64263",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nfuse-uring: fix moving cancelled entry to ent_in_userspace list\n\nfuse_uring_cancel() moves entries that are available (these have n",
-        "published": "2026-07-25T10:17:06.460"
+        "cve_id": "CVE-2026-17457",
+        "severity": "MEDIUM",
+        "base_score": 4.3,
+        "description": "A vulnerability has been found in mf-yang openclaw-cn up to 0.2.1. Affected by this issue is the function assertBrowserNavigationAllowed of the file src/browser/navigation-guard.ts of the component Sc",
+        "published": "2026-07-26T10:16:25.163"
       },
       {
-        "cve_id": "CVE-2026-64264",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nfuse-uring: fix EFAULT clobber in fuse_uring_commit\n\ncopy_from_user() returns the number of bytes not copied as an unsigned\nresidua",
-        "published": "2026-07-25T10:17:06.563"
+        "cve_id": "CVE-2026-17459",
+        "severity": "MEDIUM",
+        "base_score": 4.3,
+        "description": "A vulnerability was determined in perwendel spark up to 2.9.4. This vulnerability affects the function staticFiles.externalLocation of the file src/main/java/spark/resource/ExternalResourceHandler.jav",
+        "published": "2026-07-26T11:16:58.643"
       },
       {
-        "cve_id": "CVE-2026-64265",
+        "cve_id": "CVE-2024-14040",
         "severity": "UNKNOWN",
         "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nfuse: clear intr_entry in fuse_resend and fuse_remove_pending_req\n\nWhen fuse_resend() moves a request from fpq->processing back to\n",
-        "published": "2026-07-25T10:17:06.667"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: nexthop: Increase weight to u16\n\nIn CLOS networks, as link failures occur at various points in the network,\nECMP weights of th",
+        "published": "2026-07-26T07:16:39.583"
       },
       {
-        "cve_id": "CVE-2026-64266",
+        "cve_id": "CVE-2026-64530",
         "severity": "UNKNOWN",
         "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nfuse: re-lock request before returning from fuse_ref_folio()\n\nfuse_ref_folio() unlocks the request but does not re-lock it before\nr",
-        "published": "2026-07-25T10:17:06.783"
-      },
-      {
-        "cve_id": "CVE-2026-64267",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nfuse: avoid 32-bit prune notification count wrap\n\nFUSE_NOTIFY_PRUNE validates the nodeid payload length with:\n\n    size - sizeof(ou",
-        "published": "2026-07-25T10:17:06.910"
-      },
-      {
-        "cve_id": "CVE-2026-64268",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nRDMA/siw: bound Read Response placement to the RREAD length\n\nIn drivers/infiniband/sw/siw/siw_qp_rx.c, siw_proc_rresp() places each",
-        "published": "2026-07-25T10:17:07.013"
-      },
-      {
-        "cve_id": "CVE-2026-64269",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nRDMA/rtrs-srv: Bound RDMA-Write length to chunk size in rdma_write_sg\n\nWhen the server answers an RTRS READ, rdma_write_sg() builds",
-        "published": "2026-07-25T10:17:07.160"
-      },
-      {
-        "cve_id": "CVE-2026-64270",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nInput: mms114 - reject an oversized device packet size\n\nmms114_interrupt() reads a packet of touch data from the device into a\nfixe",
-        "published": "2026-07-25T10:17:07.293"
-      },
-      {
-        "cve_id": "CVE-2026-64271",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nInput: touchwin - reset the packet index on every complete packet\n\ntw_interrupt() accumulates each non-zero serial byte into a fixe",
-        "published": "2026-07-25T10:17:07.410"
-      },
-      {
-        "cve_id": "CVE-2026-64272",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nInput: mms114 - fix touch indexing for MMS134S and MMS136\n\nThe MMS134S and MMS136 touch controllers have an event size of 6 bytes\nr",
-        "published": "2026-07-25T10:17:07.550"
-      },
-      {
-        "cve_id": "CVE-2026-64273",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nInput: iforce - bound the device-reported force-feedback effect index\n\niforce_process_packet() handles a status report (packet id 0",
-        "published": "2026-07-25T10:17:07.660"
-      },
-      {
-        "cve_id": "CVE-2026-64274",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nInput: goodix - clamp the device-reported contact count\n\ngoodix_ts_read_input_report() copies the number of touch points reported\nb",
-        "published": "2026-07-25T10:17:07.797"
-      },
-      {
-        "cve_id": "CVE-2026-64275",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nInput: elan_i2c - prevent division by zero and arithmetic underflow\n\nThe Elan I2C touchpad driver queries the device for its physic",
-        "published": "2026-07-25T10:17:07.927"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/sched: cls_api: Handle TC_ACT_CONSUMED in tcf_qevent_handle\n\ntcf_classify() can return TC_ACT_CONSUMED while the skb is held by",
+        "published": "2026-07-26T07:16:41.680"
       }
     ]
   },
