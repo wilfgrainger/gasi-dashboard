@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-27T17:30:02.174443+00:00",
+  "generated_at": "2026-07-27T21:02:30.523813+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 25,
+        "value": 26,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
-        "score": 2.5,
+        "value": 12,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -32,8 +32,8 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1654,
-    "recent_30d_count": 25,
+    "total_catalog_count": 1655,
+    "recent_30d_count": 26,
     "recent": [
       {
         "cve_id": "CVE-2025-68686",
@@ -43,6 +43,16 @@
         "date_added": "2026-07-27",
         "due_date": "2026-08-10",
         "description": "Fortinet FortiOS contains an exposure of sensitive information to an unauthorized actor vulnerability. This may allow a remote unauthenticated attacker to bypass the patch developed for the symbolic l",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-16812",
+        "vendor": "Arista",
+        "product": "VeloCloud Orchestrator",
+        "name": "Arista VeloCloud Orchestrator On-Prem OS Command Injection Vulnerability",
+        "date_added": "2026-07-27",
+        "due_date": "2026-07-30",
+        "description": "Arista VeloCloud Orchestrator On-Prem contains an OS command injection vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful ex",
         "ransomware_use": "Unknown"
       },
       {
@@ -224,23 +234,13 @@
         "due_date": "2026-07-13",
         "description": "iCagenda contains an unrestricted upload of file with dangerous type vulnerability that allows the upload of arbitrary files in the file attachment feature, ultimately resulting in PHP code upload and",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-48908",
-        "vendor": "JoomShaper",
-        "product": "SP Page Builder",
-        "name": "JoomShaper SP Page Builder Unrestricted Upload of File with Dangerous Type Vulnerability",
-        "date_added": "2026-07-07",
-        "due_date": "2026-07-10",
-        "description": "JoomShaper SP Page Builder contains an unrestricted upload of file with dangerous type vulnerability that allows unauthenticated users to upload arbitrary files, ultimately resulting in the upload and",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 182,
-    "critical_count": 7,
-    "high_count": 22,
+    "total": 232,
+    "critical_count": 12,
+    "high_count": 32,
     "cves": [
       {
         "cve_id": "CVE-2026-12394",
@@ -255,6 +255,13 @@
         "base_score": 9.8,
         "description": "The Realtyna Organic IDX plugin + WPL Real Estate WordPress plugin before 5.3.0 does not validate the type of uploaded files, and its file upload functionality is gated only by an API that is enabled ",
         "published": "2026-07-27T07:16:25.227"
+      },
+      {
+        "cve_id": "CVE-2026-55971",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Heap-based Buffer Overflow vulnerability in Apache Thrift C++ bindings.\n\nThis issue affects Apache Thrift: before 0.24.0.\n\nUsers are recommended to upgrade to version 0.24.0, which fixes the issue.",
+        "published": "2026-07-27T12:16:46.110"
       },
       {
         "cve_id": "CVE-2026-61511",
@@ -292,6 +299,34 @@
         "published": "2026-07-27T07:16:25.127"
       },
       {
+        "cve_id": "CVE-2026-48144",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Improper Validation of Certificate with Host Mismatch vulnerability in Apache Thrift c_glib bindings.\n\nThis issue affects Apache Thrift: before 0.24.0.\n\nUsers are recommended to upgrade to version 0.2",
+        "published": "2026-07-27T12:16:44.700"
+      },
+      {
+        "cve_id": "CVE-2026-58023",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Out-of-bounds Read vulnerability in Apache Thrift c_glib bindings.\n\nThis issue affects Apache Thrift: before 0.24.0.\n\nUsers are recommended to upgrade to version 0.24.0, which fixes the issue.",
+        "published": "2026-07-27T12:16:46.547"
+      },
+      {
+        "cve_id": "CVE-2026-58662",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Improper Validation of Specified Quantity in Input, Out-of-bounds Read vulnerability in Apache Thrift C++ bindings.\n\nThis issue affects Apache Thrift: before 0.24.0.\n\nUsers are recommended to upgrade ",
+        "published": "2026-07-27T12:16:46.807"
+      },
+      {
+        "cve_id": "CVE-2026-14289",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "The FacturaONE para WooCommerce con VeriFactu WordPress plugin before 5.37 does not authenticate one of its request handlers, whose only protection is derived from a cryptographic key that is empty in",
+        "published": "2026-07-27T07:16:25.890"
+      },
+      {
         "cve_id": "CVE-2025-15662",
         "severity": "HIGH",
         "base_score": 8.6,
@@ -320,6 +355,13 @@
         "published": "2026-07-27T13:18:22.203"
       },
       {
+        "cve_id": "CVE-2026-9830",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "The bookingpress-appointment-booking-pro WordPress plugin before 5.7.3 does not correctly invoke its REST permission callback, leaving every route in one of its API namespaces reachable without authen",
+        "published": "2026-07-27T07:16:30.503"
+      },
+      {
         "cve_id": "CVE-2026-12255",
         "severity": "HIGH",
         "base_score": 8.1,
@@ -339,48 +381,6 @@
         "base_score": 8.0,
         "description": "An Incorrect Authorization vulnerability in Progress Software LoadMaster, ECS Connection Manager, Object Scale Connection Manager, and MOVEit WAF allows an authenticated attacker with low privileges t",
         "published": "2026-07-27T13:18:22.327"
-      },
-      {
-        "cve_id": "CVE-2026-59690",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "A Missing Authorization vulnerability in Progress Software LoadMaster, ECS Connection Manager, Object Scale Connection Manager, MOVEit WAF, and Multi Tenant allows an authenticated attacker with low p",
-        "published": "2026-07-27T13:18:22.457"
-      },
-      {
-        "cve_id": "CVE-2026-14837",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Multiple Lenze products are affected by an improper signature verification vulnerability in the SSH enablement mechanism. A low-privileged local attacker can bypass verification of the SSH enable file",
-        "published": "2026-07-27T08:16:17.463"
-      },
-      {
-        "cve_id": "CVE-2026-17523",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A flaw was found in the kernel. An unprivileged local user can exploit this vulnerability to execute arbitrary code within the kernel, which leads to a local privilege escalation (LPE). This allows th",
-        "published": "2026-07-27T10:16:36.270"
-      },
-      {
-        "cve_id": "CVE-2026-17527",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "In containerized-data-importer (CDI), the aggregated cdi.kubevirt.io:view ClusterRole, intended to provide read-only access to CDI resources, includes a rule granting create on the datavolumes/source ",
-        "published": "2026-07-27T10:16:37.617"
-      },
-      {
-        "cve_id": "CVE-2026-12493",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Clover Payment Gateway by Zaytech for WooCommerce WordPress plugin before 1.3.6 does not verify that an approved external payment record actually belongs to the WooCommerce order being completed, ",
-        "published": "2026-07-27T07:16:24.480"
-      },
-      {
-        "cve_id": "CVE-2026-14235",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Download Manager WordPress plugin before 3.3.62 does not bind its temporary download token to the requesting session nor expire it promptly, making the token a long-lived, multi-use, portable bear",
-        "published": "2026-07-27T07:16:25.700"
       }
     ]
   },
