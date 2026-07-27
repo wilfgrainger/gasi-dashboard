@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-27T14:10:52.954814+00:00",
+  "generated_at": "2026-07-27T17:30:02.174443+00:00",
   "threat_score": {
-    "score": 5.0,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.5,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 24,
+        "value": 25,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 1.0,
+        "value": 7,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1653,
-    "recent_30d_count": 24,
+    "total_catalog_count": 1654,
+    "recent_30d_count": 25,
     "recent": [
+      {
+        "cve_id": "CVE-2025-68686",
+        "vendor": "Fortinet",
+        "product": "FortiOS",
+        "name": "Fortinet FortiOS Exposure of Sensitive Information to an Unauthorized Actor Vulnerability",
+        "date_added": "2026-07-27",
+        "due_date": "2026-08-10",
+        "description": "Fortinet FortiOS contains an exposure of sensitive information to an unauthorized actor vulnerability. This may allow a remote unauthenticated attacker to bypass the patch developed for the symbolic l",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-16232",
         "vendor": "Check Point",
@@ -224,24 +234,70 @@
         "due_date": "2026-07-10",
         "description": "JoomShaper SP Page Builder contains an unrestricted upload of file with dangerous type vulnerability that allows unauthenticated users to upload arbitrary files, ultimately resulting in the upload and",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-55255",
-        "vendor": "Langflow",
-        "product": "Langflow",
-        "name": "Langflow Authorization Bypass Through User-Controlled Key Vulnerability",
-        "date_added": "2026-07-07",
-        "due_date": "2026-07-10",
-        "description": "Langflow contains an authorization bypass through user-controlled key vulnerability which allows an authenticated attacker to execute any flow belonging to another user by specifying the victim's flow",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 79,
-    "critical_count": 0,
-    "high_count": 13,
+    "total": 182,
+    "critical_count": 7,
+    "high_count": 22,
     "cves": [
+      {
+        "cve_id": "CVE-2026-12394",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The MemberGlut  WordPress plugin before 1.1.5 does not validate the role chosen during front-end registration, allowing unauthenticated users to register an account with an arbitrary role, including a",
+        "published": "2026-07-27T07:16:24.383"
+      },
+      {
+        "cve_id": "CVE-2026-13714",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Realtyna Organic IDX plugin + WPL Real Estate WordPress plugin before 5.3.0 does not validate the type of uploaded files, and its file upload functionality is gated only by an API that is enabled ",
+        "published": "2026-07-27T07:16:25.227"
+      },
+      {
+        "cve_id": "CVE-2026-61511",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "vBulletin 5.x through 5.7.5 and 6.x through 6.2.1 contains an eval injection vulnerability in the vB5_Template_Runtime::runMaths() method within the template runtime that allows unauthenticated remote",
+        "published": "2026-07-27T14:16:59.177"
+      },
+      {
+        "cve_id": "CVE-2026-59527",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Unauthenticated SQL Injection in MapSVG <= 8.14.0 versions.",
+        "published": "2026-07-27T15:17:03.017"
+      },
+      {
+        "cve_id": "CVE-2026-59533",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Unauthenticated SQL Injection in Relevanssi Light <= 1.2.2 versions.",
+        "published": "2026-07-27T15:17:03.817"
+      },
+      {
+        "cve_id": "CVE-2026-13332",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The Masteriyo LMS  WordPress plugin before 2.3.1 does not correctly verify authorization on an unauthenticated AJAX action used to clear user sessions, allowing unauthenticated attackers to terminate ",
+        "published": "2026-07-27T07:16:24.820"
+      },
+      {
+        "cve_id": "CVE-2026-13597",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The \u5fae\u4fe1\u4e8c\u7ef4\u7801\u767b\u9646 WordPress plugin through 1.3 does not properly validate WeChat webhook requests, as its signature check always passes, and it discloses the generated login code in the webhook response. Th",
+        "published": "2026-07-27T07:16:25.127"
+      },
+      {
+        "cve_id": "CVE-2025-15662",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "The Printcart Web to Print Product Designer for WooCommerce WordPress plugin before 2.5.3 does not restrict a user-supplied URL before fetching it server-side and does not enforce a valid authorizatio",
+        "published": "2026-07-27T07:16:23.680"
+      },
       {
         "cve_id": "CVE-2026-59686",
         "severity": "HIGH",
@@ -264,18 +320,18 @@
         "published": "2026-07-27T13:18:22.203"
       },
       {
-        "cve_id": "CVE-2026-17497",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "NoteGen before 0.32.0 grants the Tauri shell plugin shell:allow-execute capability for bash, python, and python3 with arbitrary arguments in the default desktop capabilities. JavaScript running in the",
-        "published": "2026-07-26T15:16:27.873"
-      },
-      {
-        "cve_id": "CVE-2026-17496",
+        "cve_id": "CVE-2026-12255",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "NoteGen before 0.32.0 renders AI chat responses with markdown-it configured with html:true and injects the result into the DOM via dangerouslySetInnerHTML in chat-preview, without HTML sanitization an",
-        "published": "2026-07-26T15:16:27.710"
+        "description": "The MainWP Child  WordPress plugin before 6.1.2 does not verify the requester's identity in its site-registration request handler when password authentication has been disabled for the targeted accoun",
+        "published": "2026-07-27T07:16:24.283"
+      },
+      {
+        "cve_id": "CVE-2026-13152",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The Custom Fields Account Registration For Woocommerce WordPress plugin before 1.4 does not prevent its custom registration fields from writing to the user capabilities meta key on sites that use a no",
+        "published": "2026-07-27T07:16:24.697"
       },
       {
         "cve_id": "CVE-2026-59689",
@@ -313,74 +369,18 @@
         "published": "2026-07-27T10:16:37.617"
       },
       {
-        "cve_id": "CVE-2026-49158",
+        "cve_id": "CVE-2026-12493",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Improper Handling of Highly Compressed Data (Data Amplification) vulnerability in Apache Thrift Ruby bindings.\n\nThis issue affects Apache Thrift: before 0.24.0.\n\nUsers are recommended to upgrade to ve",
-        "published": "2026-07-27T12:16:45.113"
+        "description": "The Clover Payment Gateway by Zaytech for WooCommerce WordPress plugin before 1.3.6 does not verify that an approved external payment record actually belongs to the WooCommerce order being completed, ",
+        "published": "2026-07-27T07:16:24.480"
       },
       {
-        "cve_id": "CVE-2026-57989",
+        "cve_id": "CVE-2026-14235",
         "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "Origin validation error in Microsoft Edge (Chromium-based) allows an unauthorized attacker to disclose information over a network.",
-        "published": "2026-07-26T18:18:25.033"
-      },
-      {
-        "cve_id": "CVE-2026-57990",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "Files or directories accessible to external parties in Microsoft Edge (Chromium-based) allows an unauthorized attacker to disclose information over a network.",
-        "published": "2026-07-26T18:18:25.153"
-      },
-      {
-        "cve_id": "CVE-2026-66412",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Leantime 3.6.2 and prior contains a broken access control vulnerability that allows authenticated users to read milestone data from projects they are not assigned to by supplying arbitrary integer mil",
-        "published": "2026-07-27T07:16:30.317"
-      },
-      {
-        "cve_id": "CVE-2026-66053",
-        "severity": "MEDIUM",
-        "base_score": 5.9,
-        "description": "Improper Validation of Certificate with Host Mismatch vulnerability in Apache Thrift Python bindings.\n\nThis issue affects Apache Thrift: before 0.24.0.\n\nUsers are recommended to upgrade to version 0.2",
-        "published": "2026-07-27T12:16:55.027"
-      },
-      {
-        "cve_id": "CVE-2026-17534",
-        "severity": "MEDIUM",
-        "base_score": 5.5,
-        "description": "Kimi Code (@moonshot-ai/kimi-code) before 0.27.0 implements FetchURL SSRF hardening as a static hostname and IP-literal denylist in assertSafeFetchTarget, without resolving DNS or re-validating hosts ",
-        "published": "2026-07-27T10:16:37.747"
-      },
-      {
-        "cve_id": "CVE-2026-57978",
-        "severity": "MEDIUM",
-        "base_score": 5.4,
-        "description": "Origin validation error in Microsoft Edge (Chromium-based) allows an unauthorized attacker to perform spoofing over a network.",
-        "published": "2026-07-26T18:18:23.780"
-      },
-      {
-        "cve_id": "CVE-2026-17500",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "A vulnerability was detected in ggml-org llama.cpp d006858/e15efe0. This affects the function _visit_pattern of the file common/json-schema-to-grammar.cpp. The manipulation results in null pointer der",
-        "published": "2026-07-27T01:16:26.380"
-      },
-      {
-        "cve_id": "CVE-2026-17501",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "A flaw has been found in ggml-org llama.cpp e15efe0. This vulnerability affects the function transform of the file common/json-schema-to-grammar.cpp of the component JSON-Schema-to-GBNF Conversion. Th",
-        "published": "2026-07-27T01:16:26.570"
-      },
-      {
-        "cve_id": "CVE-2026-56537",
-        "severity": "LOW",
-        "base_score": 3.5,
-        "description": "HCL Connections is vulnerable to information disclosure which could allow a user to obtain sensitive information they are not entitled to, caused by improper handling of request data.they are not enti",
-        "published": "2026-07-27T13:18:21.703"
+        "base_score": 7.5,
+        "description": "The Download Manager WordPress plugin before 3.3.62 does not bind its temporary download token to the requesting session nor expire it promptly, making the token a long-lived, multi-use, portable bear",
+        "published": "2026-07-27T07:16:25.700"
       }
     ]
   },
