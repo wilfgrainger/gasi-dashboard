@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-27T06:54:33.493408+00:00",
+  "generated_at": "2026-07-27T11:09:57.345816+00:00",
   "threat_score": {
-    "score": 5.5,
+    "score": 5.0,
     "level": "ELEVATED",
     "level_color": "elevated",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 0,
+        "score": 1.0,
         "max": 3
       },
       {
@@ -238,17 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 13,
-    "critical_count": 1,
-    "high_count": 4,
+    "total": 51,
+    "critical_count": 0,
+    "high_count": 7,
     "cves": [
-      {
-        "cve_id": "CVE-2026-64530",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet/sched: cls_api: Handle TC_ACT_CONSUMED in tcf_qevent_handle\n\ntcf_classify() can return TC_ACT_CONSUMED while the skb is held by",
-        "published": "2026-07-26T07:16:41.680"
-      },
       {
         "cve_id": "CVE-2026-17497",
         "severity": "HIGH",
@@ -262,6 +255,27 @@
         "base_score": 8.1,
         "description": "NoteGen before 0.32.0 renders AI chat responses with markdown-it configured with html:true and injects the result into the DOM via dangerouslySetInnerHTML in chat-preview, without HTML sanitization an",
         "published": "2026-07-26T15:16:27.710"
+      },
+      {
+        "cve_id": "CVE-2026-14837",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Multiple Lenze products are affected by an improper signature verification vulnerability in the SSH enablement mechanism. A low-privileged local attacker can bypass verification of the SSH enable file",
+        "published": "2026-07-27T08:16:17.463"
+      },
+      {
+        "cve_id": "CVE-2026-17523",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "A flaw was found in the kernel. An unprivileged local user can exploit this vulnerability to execute arbitrary code within the kernel, which leads to a local privilege escalation (LPE). This allows th",
+        "published": "2026-07-27T10:16:36.270"
+      },
+      {
+        "cve_id": "CVE-2026-17527",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "In containerized-data-importer (CDI), the aggregated cdi.kubevirt.io:view ClusterRole, intended to provide read-only access to CDI resources, includes a rule granting create on the datavolumes/source ",
+        "published": "2026-07-27T10:16:37.617"
       },
       {
         "cve_id": "CVE-2026-57989",
@@ -278,11 +292,25 @@
         "published": "2026-07-26T18:18:25.153"
       },
       {
+        "cve_id": "CVE-2026-66412",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Leantime 3.6.2 and prior contains a broken access control vulnerability that allows authenticated users to read milestone data from projects they are not assigned to by supplying arbitrary integer mil",
+        "published": "2026-07-27T07:16:30.317"
+      },
+      {
         "cve_id": "CVE-2026-17458",
         "severity": "MEDIUM",
         "base_score": 6.3,
         "description": "A vulnerability was found in mf-yang openclaw-cn up to 0.2.1. This affects the function clickViaPlaywright of the file src/browser/routes/agent.act.ts of the component Browser Control HTTP API. Perfor",
         "published": "2026-07-26T11:16:58.470"
+      },
+      {
+        "cve_id": "CVE-2026-17534",
+        "severity": "MEDIUM",
+        "base_score": 5.5,
+        "description": "Kimi Code (@moonshot-ai/kimi-code) before 0.27.0 implements FetchURL SSRF hardening as a static hostname and IP-literal denylist in assertSafeFetchTarget, without resolving DNS or re-validating hosts ",
+        "published": "2026-07-27T10:16:37.747"
       },
       {
         "cve_id": "CVE-2026-57978",
@@ -306,13 +334,6 @@
         "published": "2026-07-27T01:16:26.570"
       },
       {
-        "cve_id": "CVE-2026-17457",
-        "severity": "MEDIUM",
-        "base_score": 4.3,
-        "description": "A vulnerability has been found in mf-yang openclaw-cn up to 0.2.1. Affected by this issue is the function assertBrowserNavigationAllowed of the file src/browser/navigation-guard.ts of the component Sc",
-        "published": "2026-07-26T10:16:25.163"
-      },
-      {
         "cve_id": "CVE-2026-17459",
         "severity": "MEDIUM",
         "base_score": 4.3,
@@ -320,11 +341,11 @@
         "published": "2026-07-26T11:16:58.643"
       },
       {
-        "cve_id": "CVE-2024-14040",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: nexthop: Increase weight to u16\n\nIn CLOS networks, as link failures occur at various points in the network,\nECMP weights of th",
-        "published": "2026-07-26T07:16:39.583"
+        "cve_id": "CVE-2026-40000",
+        "severity": "LOW",
+        "base_score": 1.8,
+        "description": "The Activity zte.com.cn.filer/zte.com.cn.filer.FilePreViewActivity within ZTE File Manager is designed to preview compressed files. Third-party applications can launch this Activity and supply arbitra",
+        "published": "2026-07-27T10:16:37.907"
       },
       {
         "cve_id": "CVE-2026-15928",
@@ -332,6 +353,34 @@
         "base_score": null,
         "description": "XMLRPC-C Library versions 1.07 through 1.67.01 are vulnerable to a reflected cross-site scripting (XSS) vulnerability in the error page component.",
         "published": "2026-07-27T03:16:18.830"
+      },
+      {
+        "cve_id": "CVE-2025-15662",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "The Printcart Web to Print Product Designer for WooCommerce WordPress plugin before 2.5.3 does not restrict a user-supplied URL before fetching it server-side and does not enforce a valid authorizatio",
+        "published": "2026-07-27T07:16:23.680"
+      },
+      {
+        "cve_id": "CVE-2026-10082",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "The Advanced Ads  WordPress plugin before 2.0.23 does not sanitize and escape a shortcode parameter before outputting it in the page, allowing users with the Contributor role and above to inject arbit",
+        "published": "2026-07-27T07:16:24.183"
+      },
+      {
+        "cve_id": "CVE-2026-12255",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "The MainWP Child  WordPress plugin before 6.1.2 does not verify the requester's identity in its site-registration request handler when password authentication has been disabled for the targeted accoun",
+        "published": "2026-07-27T07:16:24.283"
+      },
+      {
+        "cve_id": "CVE-2026-12394",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "The MemberGlut  WordPress plugin before 1.1.5 does not validate the role chosen during front-end registration, allowing unauthenticated users to register an account with an arbitrary role, including a",
+        "published": "2026-07-27T07:16:24.383"
       }
     ]
   },
