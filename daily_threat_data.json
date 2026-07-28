@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-28T10:24:57.525539+00:00",
+  "generated_at": "2026-07-28T13:39:56.672954+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 455,
+    "total": 472,
     "critical_count": 12,
-    "high_count": 33,
+    "high_count": 25,
     "cves": [
       {
         "cve_id": "CVE-2026-16812",
@@ -250,18 +250,32 @@
         "published": "2026-07-27T16:17:03.640"
       },
       {
-        "cve_id": "CVE-2026-55971",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Heap-based Buffer Overflow vulnerability in Apache Thrift C++ bindings.\n\nThis issue affects Apache Thrift: before 0.24.0.\n\nUsers are recommended to upgrade to version 0.24.0, which fixes the issue.",
-        "published": "2026-07-27T12:16:46.110"
-      },
-      {
         "cve_id": "CVE-2026-61511",
         "severity": "CRITICAL",
         "base_score": 9.8,
         "description": "vBulletin 5.x through 5.7.5 and 6.x through 6.2.1 contains an eval injection vulnerability in the vB5_Template_Runtime::runMaths() method within the template runtime that allows unauthenticated remote",
         "published": "2026-07-27T14:16:59.177"
+      },
+      {
+        "cve_id": "CVE-2026-51303",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A use-after-free (UAF) vulnerability was discovered in the core parsing component of SQLite 3.41. The flaw occurs because the program frees an ExprList object via sqlite3ExprListDelete and then subseq",
+        "published": "2026-07-27T16:17:39.380"
+      },
+      {
+        "cve_id": "CVE-2026-63077",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "In JetBrains TeamCity before 2026.1.3, 2025.11.7 unauthenticated remote code execution was possible via the agent polling protocol",
+        "published": "2026-07-27T17:16:38.830"
+      },
+      {
+        "cve_id": "CVE-2026-66395",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "SiYuan desktop before v3.7.2 contains a reflected cross-site scripting vulnerability in the bazaar plugin readme handler that allows attackers to execute arbitrary code by crafting a malicious siyuan:",
+        "published": "2026-07-27T16:18:12.083"
       },
       {
         "cve_id": "CVE-2026-59527",
@@ -299,32 +313,32 @@
         "published": "2026-07-27T15:17:05.090"
       },
       {
-        "cve_id": "CVE-2026-48144",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Improper Validation of Certificate with Host Mismatch vulnerability in Apache Thrift c_glib bindings.\n\nThis issue affects Apache Thrift: before 0.24.0.\n\nUsers are recommended to upgrade to version 0.2",
-        "published": "2026-07-27T12:16:44.700"
-      },
-      {
-        "cve_id": "CVE-2026-58023",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Out-of-bounds Read vulnerability in Apache Thrift c_glib bindings.\n\nThis issue affects Apache Thrift: before 0.24.0.\n\nUsers are recommended to upgrade to version 0.24.0, which fixes the issue.",
-        "published": "2026-07-27T12:16:46.547"
-      },
-      {
-        "cve_id": "CVE-2026-58662",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Improper Validation of Specified Quantity in Input, Out-of-bounds Read vulnerability in Apache Thrift C++ bindings.\n\nThis issue affects Apache Thrift: before 0.24.0.\n\nUsers are recommended to upgrade ",
-        "published": "2026-07-27T12:16:46.807"
-      },
-      {
         "cve_id": "CVE-2025-50455",
         "severity": "CRITICAL",
         "base_score": 9.1,
         "description": "SQL injection vulnerability exists in the order_by parameter of the /customers/search endpoint in Alex Tselegidis EasyAppointments <= 1.5.1. The vulnerability arises from unsanitized user input passed",
         "published": "2026-07-27T16:16:58.860"
+      },
+      {
+        "cve_id": "CVE-2026-17191",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "An input validation vulnerability exists in an API component of the orchestrator. An authenticated user can exploit this flaw to manipulate backend queries, which may result in unauthorized access to ",
+        "published": "2026-07-27T17:16:35.407"
+      },
+      {
+        "cve_id": "CVE-2026-51297",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "sqlite 3.41 has a use-after-free vulnerability in the JSON parsing logic. Remote adversaries can craft malicious JSON payload to trigger memory free followed by illegal memory access, which may lead t",
+        "published": "2026-07-27T16:17:38.933"
+      },
+      {
+        "cve_id": "CVE-2026-66394",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "SiYuan before v3.7.3 contains stored and reflected cross-site scripting vulnerabilities in SVG sanitization that allows authenticated attackers to execute scripts by bypassing the HTML parser-based cl",
+        "published": "2026-07-27T16:18:11.947"
       },
       {
         "cve_id": "CVE-2026-59551",
@@ -334,39 +348,25 @@
         "published": "2026-07-27T15:17:05.223"
       },
       {
-        "cve_id": "CVE-2026-59686",
+        "cve_id": "CVE-2026-17192",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "A VCO feature does not sufficiently validate caller-supplied input, allowing requests to be made on behalf of authenticated tenant accounts to internal services that are not otherwise accessible. This",
+        "published": "2026-07-27T17:16:35.573"
+      },
+      {
+        "cve_id": "CVE-2026-66396",
         "severity": "HIGH",
         "base_score": 8.4,
-        "description": "An OS Command Injection vulnerability in Progress Software LoadMaster, ECS Connection Manager, Object Scale Connection Manager, and MOVEit WAF allows an authenticated attacker with high privileges to ",
-        "published": "2026-07-27T13:18:21.947"
+        "description": "SiYuan before v3.7.2 fails to escape the title-img Individual Attribute List value when rendering Gallery and Kanban cover images, allowing stored cross-site scripting via unescaped style attribute in",
+        "published": "2026-07-27T16:18:12.220"
       },
       {
-        "cve_id": "CVE-2026-59687",
+        "cve_id": "CVE-2026-24252",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "An OS Command Injection vulnerability in Progress Software LoadMaster, ECS Connection Manager, Object Scale Connection Manager, and MOVEit WAF allows an authenticated attacker with high privileges to ",
-        "published": "2026-07-27T13:18:22.080"
-      },
-      {
-        "cve_id": "CVE-2026-59688",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "An OS Command Injection vulnerability in Progress Software LoadMaster, ECS Connection Manager, Object Scale Connection Manager, and MOVEit WAF allows an authenticated attacker with high privileges to ",
-        "published": "2026-07-27T13:18:22.203"
-      },
-      {
-        "cve_id": "CVE-2026-59689",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "An Incorrect Authorization vulnerability in Progress Software LoadMaster, ECS Connection Manager, Object Scale Connection Manager, and MOVEit WAF allows an authenticated attacker with low privileges t",
-        "published": "2026-07-27T13:18:22.327"
-      },
-      {
-        "cve_id": "CVE-2026-59690",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "A Missing Authorization vulnerability in Progress Software LoadMaster, ECS Connection Manager, Object Scale Connection Manager, MOVEit WAF, and Multi Tenant allows an authenticated attacker with low p",
-        "published": "2026-07-27T13:18:22.457"
+        "base_score": 7.8,
+        "description": "NVIDIA NeMo for Linux contains a vulnerability where an attacker may cause OS command injection. A successful exploit of this vulnerability may lead to code execution, data tampering, escalation of pr",
+        "published": "2026-07-27T17:16:36.167"
       },
       {
         "cve_id": "CVE-2026-59537",
