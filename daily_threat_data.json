@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T06:23:40.719045+00:00",
+  "generated_at": "2026-07-29T10:30:32.572181+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
+        "value": 8,
         "score": 2.5,
         "max": 3
       },
@@ -238,65 +238,65 @@
     ]
   },
   "nvd": {
-    "total": 269,
-    "critical_count": 5,
-    "high_count": 32,
+    "total": 300,
+    "critical_count": 8,
+    "high_count": 33,
     "cves": [
       {
-        "cve_id": "CVE-2026-11756",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "A Deserialization of Untrusted Data vulnerability affecting Station Launcher App in 3DEXPERIENCE platform from Release 3DEXPERIENCE R2023x through Release 3DEXPERIENCE R2026x could lead to an unauthen",
-        "published": "2026-07-28T08:17:14.007"
-      },
-      {
-        "cve_id": "CVE-2026-14545",
+        "cve_id": "CVE-2026-51252",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "The TrueBooker  WordPress plugin before 1.2.4 does not validate account ownership when resetting a user's password through one of its front-end account handlers, allowing unauthenticated attackers to ",
-        "published": "2026-07-28T07:16:41.100"
+        "description": "schreibfaul1 ESP32-audioI2S 3.4.5 has a buffer overflow vulnerability in the MP3Decoder::UnpackSFMPEG1 function due to missing input validation on attacker-controlled MP3 metadata.",
+        "published": "2026-07-28T15:17:16.370"
       },
       {
-        "cve_id": "CVE-2026-15014",
+        "cve_id": "CVE-2026-51259",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "The SMS Alert \u2013 SMS & OTP for WooCommerce, Order Notifications & Abandoned Cart Recovery plugin for WordPress is vulnerable to Authentication Bypass leading to Account Takeover in all versions up to, ",
-        "published": "2026-07-28T08:17:14.580"
+        "description": "Unchecked unsigned integer overflow in buffer size calculation in schreibfaul1 ESP32-audioI2S 3.4.5 leads to undersized PSRAM buffer allocation. Subsequent normal audio buffer read and write operation",
+        "published": "2026-07-28T15:17:16.640"
       },
       {
-        "cve_id": "CVE-2026-16462",
+        "cve_id": "CVE-2026-66713",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "In PROCON-WEB SCADA the endpoint 'GetGridData' is not properly sanitized. This allows a remote unauthenticated attacker to execute arbitrary SQL commands.",
-        "published": "2026-07-28T10:16:48.293"
+        "description": "Deserialization of Untrusted Data (CWE-502) in the Tribes-based clustering component\n\n \u00a0in Apache Software Foundation Apache Axis2/Java through 2.0.0 on Apache Tomcat\n\n \u00a0(only when Tribes clustering i",
+        "published": "2026-07-28T15:17:50.430"
       },
       {
-        "cve_id": "CVE-2026-11841",
+        "cve_id": "CVE-2026-51263",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "schreibfaul1 ESP32-audioI2S 3.4.5 is vulnerable to Buffer Overflow. The Audio::openai_speech function in the Audio library manually constructs JSON request bodies and HTTP request headers by directly ",
+        "published": "2026-07-28T16:18:50.137"
+      },
+      {
+        "cve_id": "CVE-2026-51266",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "schreibfaul1 ESP32-audioI2S 3.4.5 has a heap-based buffer overflow vulnerability in the HTTP request header construction logic. The application dynamically splices attacker-controlled host name, path,",
+        "published": "2026-07-28T16:18:50.270"
+      },
+      {
+        "cve_id": "CVE-2026-51267",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "schreibfaul1 ESP32-audioI2S 3.4.5 has a heap-based buffer overflow vulnerability in the URL path concatenation and encoding module. The application splices untrusted extension path and attacker-contro",
+        "published": "2026-07-28T16:18:50.400"
+      },
+      {
+        "cve_id": "CVE-2026-51271",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "In schreibfaul1 ESP32-audioI2S 3.4.5, a heap-based buffer overflow vulnerability exists in the WAV header parsing function read_WAV_Header(). The function reads untrusted chunk size and bytes-to-skip ",
+        "published": "2026-07-28T16:18:50.940"
+      },
+      {
+        "cve_id": "CVE-2026-51260",
         "severity": "CRITICAL",
         "base_score": 9.4,
-        "description": "An attacker may perform unauthenticated read and write operations on sensitive filesystem areas via the AppEngine Fileaccess over HTTP due to improper access restrictions. A critical filesystem direct",
-        "published": "2026-07-28T10:16:47.867"
-      },
-      {
-        "cve_id": "CVE-2026-14167",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A low privileged remote attacker can perform privileged configuration changes reserved for the administrator level including permission management due to incorrect authorization.",
-        "published": "2026-07-28T09:16:41.363"
-      },
-      {
-        "cve_id": "CVE-2026-14168",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A low privileged remote attacker can gain administrator privileges due to missing authorization at the insert path of the configuration table resulting in gaining full system access.",
-        "published": "2026-07-28T09:16:41.517"
-      },
-      {
-        "cve_id": "CVE-2026-14328",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Eazy Plugin Manager \u2013 Powerful Plugin Management Solution for WordPress plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 4.4.1. This is due to insuf",
-        "published": "2026-07-28T10:16:48.020"
+        "description": "Unsafe fixed-size memcpy operation in AudioBuffer::writeSpace() of schreibfaul1 ESP32-audioI2S 3.4.5 allows remote heap buffer overflow. The code copies a full UINT16_MAX bytes without validating dest",
+        "published": "2026-07-28T15:17:16.780"
       },
       {
         "cve_id": "CVE-2026-62426",
@@ -320,6 +320,48 @@
         "published": "2026-07-28T13:19:08.247"
       },
       {
+        "cve_id": "CVE-2026-63727",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Anchore Enterprise versions from 5.11.0 to 5.27.1 and 6.0.0 contain an improper privilege escalation vulnerability in the user management API. An authenticated attacker who is able to access the Ancho",
+        "published": "2026-07-28T15:17:26.063"
+      },
+      {
+        "cve_id": "CVE-2026-51269",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "schreibfaul1 ESP32-audioI2S 3.4.5 has a heap-based buffer overflow vulnerability in the connecttospeech() function. The application accepts attacker-controlled long speech text input, performs URL enc",
+        "published": "2026-07-28T16:18:50.670"
+      },
+      {
+        "cve_id": "CVE-2026-66748",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Camaleon CMS versions 2.1.1 through 2.9.1 contains an authenticated remote code execution vulnerability that allows users with custom_fields manage permission to execute arbitrary Ruby code by supplyi",
+        "published": "2026-07-28T16:20:16.310"
+      },
+      {
+        "cve_id": "CVE-2026-51274",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In schreibfaul1 ESP32-audioI2S 3.4.5, a heap-based buffer overflow in the ID3v2 SYLT synchronized lyrics parser in audiolib allows remote attackers to cause a denial of service (application crash), in",
+        "published": "2026-07-28T17:16:46.673"
+      },
+      {
+        "cve_id": "CVE-2026-51275",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In schreibfaul1 ESP32-audioI2S 3.4.5, a heap-based buffer overflow in the ID3v2 APIC frame parsing function in audiolib allows remote attackers to execute arbitrary code or cause a denial of service (",
+        "published": "2026-07-28T17:16:46.807"
+      },
+      {
+        "cve_id": "CVE-2026-45293",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "WordPress Coding Standards is a set of PHP_CodeSniffer rules (sniffs) that enforce WordPress coding conventions. From 0.14.1 until 3.4.1, the WordPress.WP.EnqueuedResourceParameters sniff (active in t",
+        "published": "2026-07-28T16:18:13.503"
+      },
+      {
         "cve_id": "CVE-2026-49332",
         "severity": "HIGH",
         "base_score": 8.5,
@@ -327,60 +369,18 @@
         "published": "2026-07-28T13:18:46.067"
       },
       {
-        "cve_id": "CVE-2026-14169",
+        "cve_id": "CVE-2026-43910",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Due to incorrect behavior order a low privileged remote attacker could trigger account inconsistent state via crafted input and overwrites existing user passwords which could result in complete admini",
-        "published": "2026-07-28T09:16:41.640"
+        "base_score": 8.2,
+        "description": "Appium Java Client is the Java language binding for writing Appium tests that conform to the W3C WebDriver protocol. From 8.2.1 until 10.1.1, when directConnect(true) is enabled, AppiumCommandExecutor",
+        "published": "2026-07-28T16:18:12.440"
       },
       {
-        "cve_id": "CVE-2026-62428",
+        "cve_id": "CVE-2026-47483",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "When grant-copy operations are processed, the respective grant may or may\nnot already be in use by another operation (a mapping or another copy).\nFor all copy operations the referenced guest frame is ",
-        "published": "2026-07-28T13:19:01.713"
-      },
-      {
-        "cve_id": "CVE-2026-14490",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Demi \u2013 One Click Demo Import, WP Backup & Site Migration plugin for WordPress is vulnerable to Arbitrary Directory Deletion in all versions up to, and including, 0.0.7. The vulnerability exists be",
-        "published": "2026-07-28T07:16:40.963"
-      },
-      {
-        "cve_id": "CVE-2026-14924",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Tablesome Table  WordPress plugin before 1.1.31 does not perform any authentication, capability, or nonce checks in one of its AJAX actions, allowing unauthenticated users to create new published ",
-        "published": "2026-07-28T07:16:41.507"
-      },
-      {
-        "cve_id": "CVE-2026-12741",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The WP Fast Total Search \u2013 The Power of Indexed Search plugin for WordPress is vulnerable to generic SQL Injection via the 'form_data[s]' parameter in all versions up to, and including, 1.80.280 due t",
-        "published": "2026-07-28T08:17:14.360"
-      },
-      {
-        "cve_id": "CVE-2026-12800",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Premium Packages \u2013 Sell Digital Products Securely plugin for WordPress is vulnerable to SQL Injection via the 'code' parameter of the POST /wp-json/wpdmpp/v1/cart/coupon REST API endpoint in versi",
-        "published": "2026-07-28T09:16:40.667"
-      },
-      {
-        "cve_id": "CVE-2026-13161",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The TrueBooker \u2013 Appointment Booking and Scheduler System plugin for WordPress is vulnerable to generic SQL Injection via the 'alldata[truebooker_user]' parameter in all versions up to, and including,",
-        "published": "2026-07-28T09:16:41.220"
-      },
-      {
-        "cve_id": "CVE-2026-14516",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Online Scheduling and Appointment Booking System \u2013 Bookly plugin for WordPress is vulnerable to time-based SQL Injection via the 'staff_ids' parameter in all versions up to, and including, 27.5 du",
-        "published": "2026-07-28T09:16:41.970"
+        "base_score": 8.2,
+        "description": "NVIDIA DCGM Exporter for all platforms contains a vulnerability in the /debug/pprof endpoints, where an attacker could cause uncontrolled resource consumption by submitting concurrent unauthenticated ",
+        "published": "2026-07-28T16:18:15.003"
       }
     ]
   },
