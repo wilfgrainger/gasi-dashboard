@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-07-29T17:04:28.130617+00:00",
+  "generated_at": "2026-07-29T20:42:33.980705+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 25,
+        "value": 26,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
-        "score": 2.5,
+        "value": 21,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1655,
-    "recent_30d_count": 25,
+    "total_catalog_count": 1656,
+    "recent_30d_count": 26,
     "recent": [
+      {
+        "cve_id": "CVE-2026-20316",
+        "vendor": "Cisco",
+        "product": "Secure Firewall Management Center (FMC)",
+        "name": "Cisco Secure Firewall Management Center Use of Hard-coded Password Vulnerability",
+        "date_added": "2026-07-29",
+        "due_date": "2026-08-01",
+        "description": "Cisco Secure Firewall Management Center (FMC) formerly known as Firepower Management Center contains a use of hard-coded password vulnerability that could allow an unauthenticated, remote attacker to ",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2025-68686",
         "vendor": "Fortinet",
@@ -224,30 +234,62 @@
         "due_date": "2026-07-13",
         "description": "Balbooa Forms contains an unrestricted upload of file with dangerous type vulnerability that allows an unauthenticated arbitrary file upload which could allow uploading of executable files leading to ",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-48939",
-        "vendor": "iCagenda",
-        "product": "iCagenda",
-        "name": "iCagenda Unrestricted Upload of File with Dangerous Type Vulnerability",
-        "date_added": "2026-07-10",
-        "due_date": "2026-07-13",
-        "description": "iCagenda contains an unrestricted upload of file with dangerous type vulnerability that allows the upload of arbitrary files in the file attachment feature, ultimately resulting in PHP code upload and",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 284,
-    "critical_count": 6,
-    "high_count": 58,
+    "total": 298,
+    "critical_count": 21,
+    "high_count": 38,
     "cves": [
       {
-        "cve_id": "CVE-2026-16498",
+        "cve_id": "CVE-2026-33267",
         "severity": "CRITICAL",
         "base_score": 10.0,
-        "description": "The terraform-mcp-server before version 1.1.0 is vulnerable to a cross-tenant credential reuse issue in the streamable-HTTP stateless transport mode that may allow one user's Terraform token to be use",
-        "published": "2026-07-28T19:17:32.117"
+        "description": "Improper Input Validation vulnerability in Apache Traffic Server.\n\nThis issue affects Apache Traffic Server: from 9.2.0 through 9.2.14, from 10.1.0 through 10.1.3.\n\nUsers are recommended to upgrade to",
+        "published": "2026-07-29T08:16:30.983"
+      },
+      {
+        "cve_id": "CVE-2026-57834",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Apache Traffic Server allows request smuggling if chunked messages are malformed.\n\nThis issue affects Apache Traffic Server: from 8.0.0 through 8.1.9, from 9.0.0 through 9.2.14, from 10.0.0 through 10",
+        "published": "2026-07-29T08:16:31.563"
+      },
+      {
+        "cve_id": "CVE-2026-58150",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Apache Traffic Server does not reject Transfer-Encoding in HTTP/2 requests, allowing downgrade request smuggling.\n\nThis issue affects Apache Traffic Server: from 8.0.0 through 8.1.9, from 9.0.0 throug",
+        "published": "2026-07-29T08:16:31.710"
+      },
+      {
+        "cve_id": "CVE-2026-63227",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "An unrestricted SCORM file upload vulnerability\nin Koollab LMS allowed\nan authenticated module designer to upload a SCORM package containing a PHP\nwebshell to a publicly accessible directory and execu",
+        "published": "2026-07-29T07:16:41.967"
+      },
+      {
+        "cve_id": "CVE-2026-63232",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A SQL injection and unsafe deserialisation\nvulnerability in Koollab LMS allowed an authenticated attacker to inject through the assessment\nreinforcement endpoint, control data passed to unserialize(),",
+        "published": "2026-07-29T07:16:42.600"
+      },
+      {
+        "cve_id": "CVE-2026-63233",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A SQL injection and unsafe deserialisation\nvulnerability in Koollab LMS allowed an authenticated attacker to inject through the assessment\noverall answer endpoint, control data passed to unserialize()",
+        "published": "2026-07-29T07:16:42.710"
+      },
+      {
+        "cve_id": "CVE-2026-63234",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A SQL injection and unsafe deserialisation\nvulnerability in Koollab LMS allowed an authenticated attacker to inject through the manual mark\nassessment endpoint, control data passed to unserialize(), w",
+        "published": "2026-07-29T07:16:42.817"
       },
       {
         "cve_id": "CVE-2026-14446",
@@ -264,11 +306,46 @@
         "published": "2026-07-28T21:17:25.783"
       },
       {
+        "cve_id": "CVE-2026-54658",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Hypequery is a TypeScript semantic layer for ClickHouse. Prior to 2.0.2, escapeValue() in packages/clickhouse/src/core/utils.ts did not escape backslashes before single quotes during parameter substit",
+        "published": "2026-07-28T23:17:08.913"
+      },
+      {
+        "cve_id": "CVE-2026-18072",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Advanced Responsive Video Embedder for Rumble, Odysee, YouTube, Vimeo, Kick \u2026 plugin for WordPress is vulnerable to Authentication Bypass via a Hardcoded Backdoor in version 10.8.7. The vulnerabil",
+        "published": "2026-07-29T05:16:40.840"
+      },
+      {
+        "cve_id": "CVE-2026-13423",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Streamit WordPress theme through 4.5.0 does not perform any authorization or nonce verification on one of its unauthenticated AJAX routes, which invokes an attacker-supplied PHP function with an a",
+        "published": "2026-07-29T07:16:41.250"
+      },
+      {
+        "cve_id": "CVE-2026-18191",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "VIN-DS783E-E6 developed by Vacron has a Hidden Functionality vulnerability, allowing unauthenticated remote attackers to exploit a specific hidden function to obtain the administrator credentials of t",
+        "published": "2026-07-29T08:16:30.223"
+      },
+      {
         "cve_id": "CVE-2026-14973",
         "severity": "CRITICAL",
         "base_score": 9.3,
         "description": "IBM Aspera Desktop App 1.0.5 through 1.0.19 IBM Aspera for desktop can allow files to be written outside of the user's selected download destination.",
         "published": "2026-07-28T21:17:26.570"
+      },
+      {
+        "cve_id": "CVE-2026-41920",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Improper Access Control vulnerability in Apache Traffic Server.\n\nThis issue affects Apache Traffic Server: from 9.0.0 through 9.1.14, from 10.0.0 through 10.1.3.\n\nUsers are recommended to upgrade to v",
+        "published": "2026-07-29T08:16:31.420"
       },
       {
         "cve_id": "CVE-2026-14958",
@@ -285,102 +362,25 @@
         "published": "2026-07-28T21:17:26.443"
       },
       {
-        "cve_id": "CVE-2026-16496",
-        "severity": "HIGH",
-        "base_score": 8.9,
-        "description": "The terraform-mcp-server before version 1.1.0 is vulnerable to an authorization bypass in the streamable-HTTP stateful transport mode that may allow a user who obtains another user's MCP session ID to",
-        "published": "2026-07-28T19:17:31.983"
+        "cve_id": "CVE-2026-62325",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "goshs is a feature-rich single-binary file server for red teamers and developers. From 2.1.3 until 2.1.4, the sftpserver/sftpserver.go password handler used Username != \"\" && Password != \"\", so runnin",
+        "published": "2026-07-28T23:17:10.077"
       },
       {
-        "cve_id": "CVE-2026-51274",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "In schreibfaul1 ESP32-audioI2S 3.4.5, a heap-based buffer overflow in the ID3v2 SYLT synchronized lyrics parser in audiolib allows remote attackers to cause a denial of service (application crash), in",
-        "published": "2026-07-28T17:16:46.673"
+        "cve_id": "CVE-2026-64863",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "goshs is a feature-rich single-binary file server for red teamers and developers. Prior to 2.1.4, the httpserver/server.go wdGuard handled WebDAV MOVE as a write-only method and did not enforce --no-d",
+        "published": "2026-07-28T23:17:10.213"
       },
       {
-        "cve_id": "CVE-2026-51275",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "In schreibfaul1 ESP32-audioI2S 3.4.5, a heap-based buffer overflow in the ID3v2 APIC frame parsing function in audiolib allows remote attackers to execute arbitrary code or cause a denial of service (",
-        "published": "2026-07-28T17:16:46.807"
-      },
-      {
-        "cve_id": "CVE-2026-15992",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The WP Password Policy plugin for WordPress is vulnerable to Privilege Escalation in all versions up to and including 3.7.1. This is due to missing authorization checks and nonce verification in the `",
-        "published": "2026-07-28T19:17:31.727"
-      },
-      {
-        "cve_id": "CVE-2026-16771",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "In firmware versions 2.7.7 and earlier, the Arris BGW210\u2011700 gateway fails to enforce any server\u2011side authentication on its /cgi-bin/*.ha management endpoints, relying solely on client\u2011side CSS/JavaSc",
-        "published": "2026-07-28T19:17:32.247"
-      },
-      {
-        "cve_id": "CVE-2026-49258",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Nebula Mesh is a self-hosted control plane for the Slack Nebula mesh VPN. In versions 0.3.5 and below, the web UI (/ui/*) does not apply the per-operator CA scoping employed by the JSON API. This was ",
-        "published": "2026-07-28T19:17:36.000"
-      },
-      {
-        "cve_id": "CVE-2026-16347",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "MikroTik RouterOS contains a weakness in its API authentication handling that lacks effective safeguards against excessive login attempts. The system does not enforce meaningful rate-limiting, account",
-        "published": "2026-07-28T20:17:23.713"
-      },
-      {
-        "cve_id": "CVE-2026-57510",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "SuperPlane before 0.27.0 contains a broken object-level authorization vulnerability in the CanvasService gRPC handlers that allows authenticated users with viewer-level access to one organization to a",
-        "published": "2026-07-28T20:17:27.027"
-      },
-      {
-        "cve_id": "CVE-2026-54653",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "datamodel-code-generator generates Pydantic v2 models, dataclasses, TypedDict, and msgspec.Struct from OpenAPI, JSON Schema, GraphQL, Avro, Protobuf, and raw JSON, YAML, or CSV. From  0.17.0 until 0.6",
-        "published": "2026-07-28T22:17:40.077"
-      },
-      {
-        "cve_id": "CVE-2026-15064",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "IBM WebSphere Application Server 9.0, and 8.5 and IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.7 is vulnerable to HTTP Response Smuggling due to improper handling of non-standard",
-        "published": "2026-07-28T21:17:27.493"
-      },
-      {
-        "cve_id": "CVE-2026-15325",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "IBM WebSphere Application Server 9.0, and 8.5 and IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.7 is vulnerable to HTTP request smuggling due to improper handling of TRACE request",
-        "published": "2026-07-28T21:17:27.770"
-      },
-      {
-        "cve_id": "CVE-2026-54603",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "OAuth2 is a Ruby wrapper for the OAuth 2.0 and 2.1 authorization frameworks, including OpenID Connect (OIDC). From 0.4.0 to 2.0.21, a protocol-relative redirect Location returned to OAuth2::Client#req",
-        "published": "2026-07-28T17:16:52.227"
-      },
-      {
-        "cve_id": "CVE-2026-54609",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "QTI Neon is a minimal, game-agnostic, relay-based UDP multiplayer protocol library. In version 1.0.0, the relay's handleReconnectRequest forwards RECONNECT_REQUEST packets to the host without bounding",
-        "published": "2026-07-28T17:16:52.507"
-      },
-      {
-        "cve_id": "CVE-2026-48388",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Adobe Photoshop Installer was affected by an Uncontrolled Search Path Element vulnerability that could have resulted in arbitrary code execution in the context of the current user. An attacker could h",
-        "published": "2026-07-28T18:17:20.887"
+        "cve_id": "CVE-2026-63229",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "A pre-authentication blind SQL injection\nvulnerability in Koollab LMS allowed an unauthenticated attacker to use a time-based SQL oracle via\nthe SSO OAuth endpoint to read sensitive database contents,",
+        "published": "2026-07-29T07:16:42.267"
       }
     ]
   },
