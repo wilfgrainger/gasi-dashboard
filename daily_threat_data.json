@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T10:30:32.572181+00:00",
+  "generated_at": "2026-07-29T13:46:03.947373+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
+        "value": 9,
         "score": 2.5,
         "max": 3
       },
@@ -238,10 +238,17 @@
     ]
   },
   "nvd": {
-    "total": 300,
-    "critical_count": 8,
-    "high_count": 33,
+    "total": 282,
+    "critical_count": 9,
+    "high_count": 48,
     "cves": [
+      {
+        "cve_id": "CVE-2026-16498",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "The terraform-mcp-server before version 1.1.0 is vulnerable to a cross-tenant credential reuse issue in the streamable-HTTP stateless transport mode that may allow one user's Terraform token to be use",
+        "published": "2026-07-28T19:17:32.117"
+      },
       {
         "cve_id": "CVE-2026-51252",
         "severity": "CRITICAL",
@@ -299,25 +306,11 @@
         "published": "2026-07-28T15:17:16.780"
       },
       {
-        "cve_id": "CVE-2026-62426",
+        "cve_id": "CVE-2026-16496",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "[This CNA information record relates to multiple CVEs; the\ntext explains which aspects/vulnerabilities correspond to which CVE.]\n\nTo manage the system, sysctl and platform operations are used by the\nc",
-        "published": "2026-07-28T13:19:01.517"
-      },
-      {
-        "cve_id": "CVE-2026-62427",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "[This CNA information record relates to multiple CVEs; the\ntext explains which aspects/vulnerabilities correspond to which CVE.]\n\nTo manage the system, sysctl and platform operations are used by the\nc",
-        "published": "2026-07-28T13:19:01.613"
-      },
-      {
-        "cve_id": "CVE-2026-7187",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Missing authentication for critical function vulnerability in Universal Software Inc. UKBS allows Accessing Functionality Not Properly Constrained by ACLs.\n\nThis issue affects UKBS: through 28072026.\n",
-        "published": "2026-07-28T13:19:08.247"
+        "base_score": 8.9,
+        "description": "The terraform-mcp-server before version 1.1.0 is vulnerable to an authorization bypass in the streamable-HTTP stateful transport mode that may allow a user who obtains another user's MCP session ID to",
+        "published": "2026-07-28T19:17:31.983"
       },
       {
         "cve_id": "CVE-2026-63727",
@@ -355,6 +348,27 @@
         "published": "2026-07-28T17:16:46.807"
       },
       {
+        "cve_id": "CVE-2026-15992",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The WP Password Policy plugin for WordPress is vulnerable to Privilege Escalation in all versions up to and including 3.7.1. This is due to missing authorization checks and nonce verification in the `",
+        "published": "2026-07-28T19:17:31.727"
+      },
+      {
+        "cve_id": "CVE-2026-16771",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In firmware versions 2.7.7 and earlier, the Arris BGW210\u2011700 gateway fails to enforce any server\u2011side authentication on its /cgi-bin/*.ha management endpoints, relying solely on client\u2011side CSS/JavaSc",
+        "published": "2026-07-28T19:17:32.247"
+      },
+      {
+        "cve_id": "CVE-2026-49258",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Nebula Mesh is a self-hosted control plane for the Slack Nebula mesh VPN. In versions 0.3.5 and below, the web UI (/ui/*) does not apply the per-operator CA scoping employed by the JSON API. This was ",
+        "published": "2026-07-28T19:17:36.000"
+      },
+      {
         "cve_id": "CVE-2026-45293",
         "severity": "HIGH",
         "base_score": 8.6,
@@ -362,25 +376,11 @@
         "published": "2026-07-28T16:18:13.503"
       },
       {
-        "cve_id": "CVE-2026-49332",
+        "cve_id": "CVE-2026-54603",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "A flaw was found in openshift/oauth-proxy. The proxy sets authenticated identity headers using only dash-variant keys (X-Forwarded-User) but does not strip underscore-variant keys (X_Forwarded_User) f",
-        "published": "2026-07-28T13:18:46.067"
-      },
-      {
-        "cve_id": "CVE-2026-43910",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Appium Java Client is the Java language binding for writing Appium tests that conform to the W3C WebDriver protocol. From 8.2.1 until 10.1.1, when directConnect(true) is enabled, AppiumCommandExecutor",
-        "published": "2026-07-28T16:18:12.440"
-      },
-      {
-        "cve_id": "CVE-2026-47483",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "NVIDIA DCGM Exporter for all platforms contains a vulnerability in the /debug/pprof endpoints, where an attacker could cause uncontrolled resource consumption by submitting concurrent unauthenticated ",
-        "published": "2026-07-28T16:18:15.003"
+        "base_score": 8.6,
+        "description": "OAuth2 is a Ruby wrapper for the OAuth 2.0 and 2.1 authorization frameworks, including OpenID Connect (OIDC). From 0.4.0 to 2.0.21, a protocol-relative redirect Location returned to OAuth2::Client#req",
+        "published": "2026-07-28T17:16:52.227"
       }
     ]
   },
