@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T13:46:03.947373+00:00",
+  "generated_at": "2026-07-29T17:04:28.130617+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
+        "value": 6,
         "score": 2.5,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 282,
-    "critical_count": 9,
-    "high_count": 48,
+    "total": 284,
+    "critical_count": 6,
+    "high_count": 58,
     "cves": [
       {
         "cve_id": "CVE-2026-16498",
@@ -250,60 +250,39 @@
         "published": "2026-07-28T19:17:32.117"
       },
       {
-        "cve_id": "CVE-2026-51252",
+        "cve_id": "CVE-2026-14446",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "schreibfaul1 ESP32-audioI2S 3.4.5 has a buffer overflow vulnerability in the MP3Decoder::UnpackSFMPEG1 function due to missing input validation on attacker-controlled MP3 metadata.",
-        "published": "2026-07-28T15:17:16.370"
+        "description": "IBM WebSphere Application Server 9.0, and 8.5 is vulnerable to broken access control/privilege escalation in the administrative console.",
+        "published": "2026-07-28T21:17:25.660"
       },
       {
-        "cve_id": "CVE-2026-51259",
+        "cve_id": "CVE-2026-14512",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Unchecked unsigned integer overflow in buffer size calculation in schreibfaul1 ESP32-audioI2S 3.4.5 leads to undersized PSRAM buffer allocation. Subsequent normal audio buffer read and write operation",
-        "published": "2026-07-28T15:17:16.640"
+        "description": "IBM WebSphere Application Server 9.0, and 8.5 traditional is vulnerable to pre-authentication unsafe deserialization which could allow a remote attacker to bypass authentication or execute arbitrary c",
+        "published": "2026-07-28T21:17:25.783"
       },
       {
-        "cve_id": "CVE-2026-66713",
+        "cve_id": "CVE-2026-14973",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Deserialization of Untrusted Data (CWE-502) in the Tribes-based clustering component\n\n \u00a0in Apache Software Foundation Apache Axis2/Java through 2.0.0 on Apache Tomcat\n\n \u00a0(only when Tribes clustering i",
-        "published": "2026-07-28T15:17:50.430"
+        "base_score": 9.3,
+        "description": "IBM Aspera Desktop App 1.0.5 through 1.0.19 IBM Aspera for desktop can allow files to be written outside of the user's selected download destination.",
+        "published": "2026-07-28T21:17:26.570"
       },
       {
-        "cve_id": "CVE-2026-51263",
+        "cve_id": "CVE-2026-14958",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "schreibfaul1 ESP32-audioI2S 3.4.5 is vulnerable to Buffer Overflow. The Audio::openai_speech function in the Audio library manually constructs JSON request bodies and HTTP request headers by directly ",
-        "published": "2026-07-28T16:18:50.137"
+        "base_score": 9.1,
+        "description": "IBM Aspera Faspex 5 5.0.0 through 5.0.15.4 could allow a remote authenticated attacker to execute arbitrary code due to unquoted shell interpolation.",
+        "published": "2026-07-28T21:17:26.317"
       },
       {
-        "cve_id": "CVE-2026-51266",
+        "cve_id": "CVE-2026-14959",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "schreibfaul1 ESP32-audioI2S 3.4.5 has a heap-based buffer overflow vulnerability in the HTTP request header construction logic. The application dynamically splices attacker-controlled host name, path,",
-        "published": "2026-07-28T16:18:50.270"
-      },
-      {
-        "cve_id": "CVE-2026-51267",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "schreibfaul1 ESP32-audioI2S 3.4.5 has a heap-based buffer overflow vulnerability in the URL path concatenation and encoding module. The application splices untrusted extension path and attacker-contro",
-        "published": "2026-07-28T16:18:50.400"
-      },
-      {
-        "cve_id": "CVE-2026-51271",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "In schreibfaul1 ESP32-audioI2S 3.4.5, a heap-based buffer overflow vulnerability exists in the WAV header parsing function read_WAV_Header(). The function reads untrusted chunk size and bytes-to-skip ",
-        "published": "2026-07-28T16:18:50.940"
-      },
-      {
-        "cve_id": "CVE-2026-51260",
-        "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "Unsafe fixed-size memcpy operation in AudioBuffer::writeSpace() of schreibfaul1 ESP32-audioI2S 3.4.5 allows remote heap buffer overflow. The code copies a full UINT16_MAX bytes without validating dest",
-        "published": "2026-07-28T15:17:16.780"
+        "base_score": 9.1,
+        "description": "IBM Aspera Faspex 5 5.0.0 through 5.0.15.4 could allow a remote authenticated attacker to execute arbitrary code due to shell command injection.",
+        "published": "2026-07-28T21:17:26.443"
       },
       {
         "cve_id": "CVE-2026-16496",
@@ -311,27 +290,6 @@
         "base_score": 8.9,
         "description": "The terraform-mcp-server before version 1.1.0 is vulnerable to an authorization bypass in the streamable-HTTP stateful transport mode that may allow a user who obtains another user's MCP session ID to",
         "published": "2026-07-28T19:17:31.983"
-      },
-      {
-        "cve_id": "CVE-2026-63727",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Anchore Enterprise versions from 5.11.0 to 5.27.1 and 6.0.0 contain an improper privilege escalation vulnerability in the user management API. An authenticated attacker who is able to access the Ancho",
-        "published": "2026-07-28T15:17:26.063"
-      },
-      {
-        "cve_id": "CVE-2026-51269",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "schreibfaul1 ESP32-audioI2S 3.4.5 has a heap-based buffer overflow vulnerability in the connecttospeech() function. The application accepts attacker-controlled long speech text input, performs URL enc",
-        "published": "2026-07-28T16:18:50.670"
-      },
-      {
-        "cve_id": "CVE-2026-66748",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Camaleon CMS versions 2.1.1 through 2.9.1 contains an authenticated remote code execution vulnerability that allows users with custom_fields manage permission to execute arbitrary Ruby code by supplyi",
-        "published": "2026-07-28T16:20:16.310"
       },
       {
         "cve_id": "CVE-2026-51274",
@@ -369,11 +327,39 @@
         "published": "2026-07-28T19:17:36.000"
       },
       {
-        "cve_id": "CVE-2026-45293",
+        "cve_id": "CVE-2026-16347",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "WordPress Coding Standards is a set of PHP_CodeSniffer rules (sniffs) that enforce WordPress coding conventions. From 0.14.1 until 3.4.1, the WordPress.WP.EnqueuedResourceParameters sniff (active in t",
-        "published": "2026-07-28T16:18:13.503"
+        "base_score": 8.8,
+        "description": "MikroTik RouterOS contains a weakness in its API authentication handling that lacks effective safeguards against excessive login attempts. The system does not enforce meaningful rate-limiting, account",
+        "published": "2026-07-28T20:17:23.713"
+      },
+      {
+        "cve_id": "CVE-2026-57510",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "SuperPlane before 0.27.0 contains a broken object-level authorization vulnerability in the CanvasService gRPC handlers that allows authenticated users with viewer-level access to one organization to a",
+        "published": "2026-07-28T20:17:27.027"
+      },
+      {
+        "cve_id": "CVE-2026-54653",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "datamodel-code-generator generates Pydantic v2 models, dataclasses, TypedDict, and msgspec.Struct from OpenAPI, JSON Schema, GraphQL, Avro, Protobuf, and raw JSON, YAML, or CSV. From  0.17.0 until 0.6",
+        "published": "2026-07-28T22:17:40.077"
+      },
+      {
+        "cve_id": "CVE-2026-15064",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "IBM WebSphere Application Server 9.0, and 8.5 and IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.7 is vulnerable to HTTP Response Smuggling due to improper handling of non-standard",
+        "published": "2026-07-28T21:17:27.493"
+      },
+      {
+        "cve_id": "CVE-2026-15325",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "IBM WebSphere Application Server 9.0, and 8.5 and IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.7 is vulnerable to HTTP request smuggling due to improper handling of TRACE request",
+        "published": "2026-07-28T21:17:27.770"
       },
       {
         "cve_id": "CVE-2026-54603",
@@ -381,6 +367,20 @@
         "base_score": 8.6,
         "description": "OAuth2 is a Ruby wrapper for the OAuth 2.0 and 2.1 authorization frameworks, including OpenID Connect (OIDC). From 0.4.0 to 2.0.21, a protocol-relative redirect Location returned to OAuth2::Client#req",
         "published": "2026-07-28T17:16:52.227"
+      },
+      {
+        "cve_id": "CVE-2026-54609",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "QTI Neon is a minimal, game-agnostic, relay-based UDP multiplayer protocol library. In version 1.0.0, the relay's handleReconnectRequest forwards RECONNECT_REQUEST packets to the host without bounding",
+        "published": "2026-07-28T17:16:52.507"
+      },
+      {
+        "cve_id": "CVE-2026-48388",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Adobe Photoshop Installer was affected by an Uncontrolled Search Path Element vulnerability that could have resulted in arbitrary code execution in the context of the current user. An attacker could h",
+        "published": "2026-07-28T18:17:20.887"
       }
     ]
   },
