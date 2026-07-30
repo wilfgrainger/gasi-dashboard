@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-30T17:14:41.743986+00:00",
+  "generated_at": "2026-07-30T20:56:03.414120+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
-        "score": 2.5,
+        "value": 30,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,37 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 663,
-    "critical_count": 9,
-    "high_count": 35,
+    "total": 650,
+    "critical_count": 30,
+    "high_count": 21,
     "cves": [
       {
-        "cve_id": "CVE-2026-16326",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "In consul-mcp-server, versions 0.1.0 up to 0.1.3 did not properly isolate session state in stateless mode, which may allow one client's Consul authentication token to be used for subsequent requests f",
-        "published": "2026-07-29T19:16:44.900"
-      },
-      {
-        "cve_id": "CVE-2026-67429",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Flyto2 Core is an execution kernel for automation and AI-agent workflows. Prior to 2.26.6, image.download and related file-writing modules use caller-controlled output_dir instead of validate_path_wit",
-        "published": "2026-07-29T19:16:52.240"
-      },
-      {
-        "cve_id": "CVE-2026-54680",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Logging operator automates the deployment and configuration of Kubernetes logging pipelines. Prior to 6.6.0, the Fluentd configuration renderer FluentRender in pkg/sdk/logging/model/render/fluent.go w",
-        "published": "2026-07-29T17:16:52.900"
-      },
-      {
-        "cve_id": "CVE-2026-41939",
+        "cve_id": "CVE-2025-65340",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Care Everywhere Gateway 14.3.10 contains a hard-coded credentials vulnerability in the bundled WildFly 8.2.0.Final management interface that allows unauthenticated remote attackers to gain administrat",
-        "published": "2026-07-29T18:16:53.477"
+        "description": "kishan0725 Hospital Management System 4.0 is vulnerable to SQL Injection in /betweendates-detailsreports.php.",
+        "published": "2026-07-29T21:17:45.880"
       },
       {
         "cve_id": "CVE-2025-67403",
@@ -285,102 +264,123 @@
         "published": "2026-07-29T22:16:51.163"
       },
       {
-        "cve_id": "CVE-2026-14529",
+        "cve_id": "CVE-2025-69942",
         "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "IBM WebSphere Application Server 9.0, and 8.5 and IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.8 traditional is vulnerable to server-side request forgery (SSRF) when the SIP cont",
-        "published": "2026-07-29T19:16:44.720"
+        "base_score": 9.8,
+        "description": "kishan0725 Hospital Management System 4.0 is vulnerable to SQL Injection in /hms/doctor/view-patient.php?viewid=1.",
+        "published": "2026-07-29T22:16:51.750"
       },
       {
-        "cve_id": "CVE-2026-67426",
+        "cve_id": "CVE-2025-69943",
         "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Flyto2 Core is an execution kernel for automation and AI-agent workflows. Prior to 2.26.7, the standalone flyto-verification service in src/core/verification_service.py exposes unauthenticated POST /r",
-        "published": "2026-07-29T19:16:51.770"
+        "base_score": 9.8,
+        "description": "kishan0725 Hospital Management System 4.0 is vulnerale to SQL Injection in get_doctor.php via the parameters doctor and specilizationid.",
+        "published": "2026-07-29T22:16:51.870"
       },
       {
-        "cve_id": "CVE-2026-51992",
+        "cve_id": "CVE-2026-17669",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "SQL Injection vulnerability in ClickHouse Server Versions <= 26.3.9.8 allows a remote attacker to execute arbitrary code via the create dictionaries function.",
-        "published": "2026-07-29T17:16:52.040"
+        "base_score": 9.6,
+        "description": "Inappropriate implementation in Chrome for iOS in Google Chrome on iOS prior to 151.0.7922.72 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium secur",
+        "published": "2026-07-30T01:16:29.010"
       },
       {
-        "cve_id": "CVE-2026-18022",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Integer wraparound in IVFFlat index build in pgvector before 0.8.6 allows a database user to write data out-of-bounds, which could lead to arbitrary code execution. Only 32-bit systems are affected.",
-        "published": "2026-07-29T20:17:02.593"
+        "cve_id": "CVE-2026-17670",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Use after free in Views in Google Chrome prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chr",
+        "published": "2026-07-30T01:16:29.110"
       },
       {
-        "cve_id": "CVE-2026-5490",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "DriveLock SQL Injection Privilege Escalation Vulnerability. This vulnerability allows remote attackers to escalate privileges on affected installations of DriveLock. Authentication is required to expl",
-        "published": "2026-07-29T20:17:05.893"
+        "cve_id": "CVE-2026-17671",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Insufficient validation of untrusted input in ANGLE in Google Chrome prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape v",
+        "published": "2026-07-30T01:16:29.220"
       },
       {
-        "cve_id": "CVE-2026-16328",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "In consul-mcp-server, versions 0.1.0 up to 0.1.3 did not restrict how the Consul backend address was supplied, allowing a connected client to override the server's configured Consul address via a requ",
-        "published": "2026-07-29T19:16:45.060"
+        "cve_id": "CVE-2026-17672",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Insufficient validation of untrusted input in Chromecast in Google Chrome prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox esc",
+        "published": "2026-07-30T01:16:29.330"
       },
       {
-        "cve_id": "CVE-2026-67201",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "V through 0.5.2, fixed in commit 85859f0, contains a server-side request forgery (SSRF) bypass vulnerability that allows attackers to circumvent host-based allowlists by exploiting a parser differenti",
-        "published": "2026-07-29T19:16:51.330"
+        "cve_id": "CVE-2026-17673",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Integer overflow in QUIC in Google Chrome prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Ch",
+        "published": "2026-07-30T01:16:29.447"
       },
       {
-        "cve_id": "CVE-2026-67425",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Flyto2 Core is an execution kernel for automation and AI-agent workflows. Prior to 2.26.6, llm.chat reads provider keys such as OPENAI_API_KEY and ANTHROPIC_API_KEY from the environment and sends them",
-        "published": "2026-07-29T19:16:51.630"
+        "cve_id": "CVE-2026-17675",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Out of bounds write in ANGLE in Google Chrome prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page.",
+        "published": "2026-07-30T01:16:29.670"
       },
       {
-        "cve_id": "CVE-2026-67427",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Flyto2 Core is an execution kernel for automation and AI-agent workflows. Prior to 2.26.6, the workflow engine variable resolver expands ${env.VAR} for any host environment variable without an allowli",
-        "published": "2026-07-29T19:16:51.913"
+        "cve_id": "CVE-2026-17676",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Inappropriate implementation in ANGLE in Google Chrome on Android prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via ",
+        "published": "2026-07-30T01:16:29.783"
       },
       {
-        "cve_id": "CVE-2026-67424",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Flyto2 Core is an execution kernel for automation and AI-agent workflows. Prior to 2.26.7, the HTTP modules http.get, http.request, and http.batch in src/core/modules/atomic/http/get.py, src/core/modu",
-        "published": "2026-07-29T19:16:51.480"
+        "cve_id": "CVE-2026-17680",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Heap buffer overflow in Color in Google Chrome on ChromeOS prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a craft",
+        "published": "2026-07-30T01:16:30.217"
       },
       {
-        "cve_id": "CVE-2026-67428",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Flyto2 Core is an execution kernel for automation and AI-agent workflows. Prior to 2.26.7, HTTP-emitting modules including src/core/modules/third_party/developer/http/requests.py, core.api.http_get, c",
-        "published": "2026-07-29T19:16:52.087"
+        "cve_id": "CVE-2026-17681",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Insufficient validation of untrusted input in Web Authentication in Google Chrome on Android prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially pe",
+        "published": "2026-07-30T01:16:30.330"
       },
       {
-        "cve_id": "CVE-2026-6267",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 10.1.0 before 19.0.5, 19.1 before 19.1.3, and 19.2 before 19.2.1 that under certain conditions could have allowed an authenti",
-        "published": "2026-07-29T20:17:13.123"
+        "cve_id": "CVE-2026-17682",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Integer overflow in ANGLE in Google Chrome prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (C",
+        "published": "2026-07-30T01:16:30.443"
       },
       {
-        "cve_id": "CVE-2026-12436",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.0 before 19.0.5, 19.1 before 19.1.3, and 19.2 before 19.2.1 that under certain conditions could have allowed an authentica",
-        "published": "2026-07-29T20:17:00.417"
+        "cve_id": "CVE-2026-17684",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Insufficient validation of untrusted input in Chrome for iOS in Google Chrome on iOS prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a ",
+        "published": "2026-07-30T01:16:30.660"
       },
       {
-        "cve_id": "CVE-2026-54574",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "proot-distro is a utility for managing proot containers. Prior to version 5.1.5, proot-distro install extracted plain tarball root filesystems through _extract_plain_tar() in proot_distro/commands/ins",
-        "published": "2026-07-29T17:16:52.743"
+        "cve_id": "CVE-2026-17687",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Type Confusion in ANGLE in Google Chrome prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chr",
+        "published": "2026-07-30T01:16:30.990"
+      },
+      {
+        "cve_id": "CVE-2026-17688",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Use after free in Input in Google Chrome prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chr",
+        "published": "2026-07-30T01:16:31.100"
+      },
+      {
+        "cve_id": "CVE-2026-17691",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Out of bounds write in ANGLE in Google Chrome on Windows prior to 151.0.7922.72 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: ",
+        "published": "2026-07-30T01:16:31.443"
+      },
+      {
+        "cve_id": "CVE-2026-17692",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Use after free in DataTransfer in Google Chrome on Windows prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a craft",
+        "published": "2026-07-30T01:16:31.550"
       }
     ]
   },
