@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-30T10:12:41.869690+00:00",
+  "generated_at": "2026-07-30T13:27:29.866471+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
-        "score": 2.5,
+        "value": 11,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,17 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 687,
-    "critical_count": 7,
-    "high_count": 31,
+    "total": 659,
+    "critical_count": 11,
+    "high_count": 29,
     "cves": [
-      {
-        "cve_id": "CVE-2026-58162",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "The Apache Traffic Server certifier plugin generates certificates based on attacker-controlled client SNI.\n\nThis issue affects Apache Traffic Server: from 8.0.0 through 8.1.9, from 9.0.0 through 9.2.1",
-        "published": "2026-07-29T10:16:41.927"
-      },
       {
         "cve_id": "CVE-2026-54735",
         "severity": "CRITICAL",
@@ -257,25 +250,25 @@
         "published": "2026-07-29T16:17:54.317"
       },
       {
-        "cve_id": "CVE-2025-10656",
+        "cve_id": "CVE-2026-16326",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Spreadsheet Price Changer for WooCommerce and WP E-commerce \u2013 Light plugin for WordPress is vulnerable to Missing Authorization in all versions up to, and including, 2.4.37 vi the user_filter func",
-        "published": "2026-07-29T10:16:31.407"
+        "base_score": 10.0,
+        "description": "In consul-mcp-server, versions 0.1.0 up to 0.1.3 did not properly isolate session state in stateless mode, which may allow one client's Consul authentication token to be used for subsequent requests f",
+        "published": "2026-07-29T19:16:44.900"
       },
       {
-        "cve_id": "CVE-2026-59243",
+        "cve_id": "CVE-2026-67429",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The FAB auth manager's Azure AD OAuth login defaulted `verify_signature=False` when decoding the ID token, so an attacker able to present a forged or unsigned (`alg:none`) ID token to the OAuth callba",
-        "published": "2026-07-29T10:16:44.390"
+        "base_score": 10.0,
+        "description": "Flyto2 Core is an execution kernel for automation and AI-agent workflows. Prior to 2.26.6, image.download and related file-writing modules use caller-controlled output_dir instead of validate_path_wit",
+        "published": "2026-07-29T19:16:52.240"
       },
       {
-        "cve_id": "CVE-2026-14900",
+        "cve_id": "CVE-2026-54680",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Cost Calculator Builder PRO plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 4.0.3 via the js_to_php function. This is due to insufficient sanitiza",
-        "published": "2026-07-29T11:16:48.200"
+        "base_score": 9.9,
+        "description": "Logging operator automates the deployment and configuration of Kubernetes logging pipelines. Prior to 6.6.0, the Fluentd configuration renderer FluentRender in pkg/sdk/logging/model/render/fluent.go w",
+        "published": "2026-07-29T17:16:52.900"
       },
       {
         "cve_id": "CVE-2026-60112",
@@ -285,39 +278,95 @@
         "published": "2026-07-29T16:17:55.413"
       },
       {
-        "cve_id": "CVE-2026-14488",
+        "cve_id": "CVE-2026-60113",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "AMMOS Instrument Toolkit (AIT) Deep Space Network (DSN) Interface before 2.2.2 contains a missing authentication vulnerability in the Space Link Extension (SLE) interface manager that allows unauthent",
+        "published": "2026-07-29T16:17:55.560"
+      },
+      {
+        "cve_id": "CVE-2026-67191",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Xlight FTP Server before 3.9.5 contains a pre-authentication heap buffer overflow vulnerability that allows remote unauthenticated attackers to write past the end of a heap buffer by sending a malform",
+        "published": "2026-07-29T16:17:57.540"
+      },
+      {
+        "cve_id": "CVE-2026-41939",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Care Everywhere Gateway 14.3.10 contains a hard-coded credentials vulnerability in the bundled WildFly 8.2.0.Final management interface that allows unauthenticated remote attackers to gain administrat",
+        "published": "2026-07-29T18:16:53.477"
+      },
+      {
+        "cve_id": "CVE-2026-14529",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "IBM WebSphere Application Server 9.0, and 8.5 and IBM WebSphere Application Server - Liberty 17.0.0.3 through 26.0.0.8 traditional is vulnerable to server-side request forgery (SSRF) when the SIP cont",
+        "published": "2026-07-29T19:16:44.720"
+      },
+      {
+        "cve_id": "CVE-2026-67426",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Flyto2 Core is an execution kernel for automation and AI-agent workflows. Prior to 2.26.7, the standalone flyto-verification service in src/core/verification_service.py exposes unauthenticated POST /r",
+        "published": "2026-07-29T19:16:51.770"
+      },
+      {
+        "cve_id": "CVE-2026-51992",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "The Meta Box AIO plugin for WordPress is vulnerable to Missing Authorization via the template_redirect dispatcher in the MB Frontend Submission extension in versions up to, and including, 3.8.0. This ",
-        "published": "2026-07-29T11:16:48.063"
+        "description": "SQL Injection vulnerability in ClickHouse Server Versions <= 26.3.9.8 allows a remote attacker to execute arbitrary code via the create dictionaries function.",
+        "published": "2026-07-29T17:16:52.040"
       },
       {
-        "cve_id": "CVE-2026-50622",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Description:\nMissing Authorization\u00a0in Apache Atlas.\nA missing authorization vulnerability in Apache Atlas's admin endpoints allows any authenticated user, regardless of their assigned role, to perform",
-        "published": "2026-07-29T10:16:41.047"
-      },
-      {
-        "cve_id": "CVE-2026-14270",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Extra Checkout Options (addon for Extra Product Options & Add-Ons for WooCommerce) plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 2.3.2. This is ",
-        "published": "2026-07-29T12:16:35.697"
-      },
-      {
-        "cve_id": "CVE-2026-58157",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "Apache Traffic Server can reuse server sessions and tunnels improperly, exposing data across client connections.\n\nThis issue affects Apache Traffic Server: from 8.0.0 through 8.1.9, from 9.0.0 through",
-        "published": "2026-07-29T10:16:41.173"
-      },
-      {
-        "cve_id": "CVE-2026-58182",
+        "cve_id": "CVE-2026-16328",
         "severity": "HIGH",
         "base_score": 8.6,
-        "description": "The Apache Traffic Server ts_lua plugin mishandles initialization, transform context, and per-instance state.\n\nThis issue affects Apache Traffic Server: from 8.0.0 through 8.1.9, from 9.0.0 through 9.",
-        "published": "2026-07-29T10:16:43.230"
+        "description": "In consul-mcp-server, versions 0.1.0 up to 0.1.3 did not restrict how the Consul backend address was supplied, allowing a connected client to override the server's configured Consul address via a requ",
+        "published": "2026-07-29T19:16:45.060"
+      },
+      {
+        "cve_id": "CVE-2026-67201",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "V through 0.5.2, fixed in commit 85859f0, contains a server-side request forgery (SSRF) bypass vulnerability that allows attackers to circumvent host-based allowlists by exploiting a parser differenti",
+        "published": "2026-07-29T19:16:51.330"
+      },
+      {
+        "cve_id": "CVE-2026-67425",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Flyto2 Core is an execution kernel for automation and AI-agent workflows. Prior to 2.26.6, llm.chat reads provider keys such as OPENAI_API_KEY and ANTHROPIC_API_KEY from the environment and sends them",
+        "published": "2026-07-29T19:16:51.630"
+      },
+      {
+        "cve_id": "CVE-2026-67427",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Flyto2 Core is an execution kernel for automation and AI-agent workflows. Prior to 2.26.6, the workflow engine variable resolver expands ${env.VAR} for any host environment variable without an allowli",
+        "published": "2026-07-29T19:16:51.913"
+      },
+      {
+        "cve_id": "CVE-2026-67424",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "Flyto2 Core is an execution kernel for automation and AI-agent workflows. Prior to 2.26.7, the HTTP modules http.get, http.request, and http.batch in src/core/modules/atomic/http/get.py, src/core/modu",
+        "published": "2026-07-29T19:16:51.480"
+      },
+      {
+        "cve_id": "CVE-2026-67428",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "Flyto2 Core is an execution kernel for automation and AI-agent workflows. Prior to 2.26.7, HTTP-emitting modules including src/core/modules/third_party/developer/http/requests.py, core.api.http_get, c",
+        "published": "2026-07-29T19:16:52.087"
+      },
+      {
+        "cve_id": "CVE-2026-12436",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.0 before 19.0.5, 19.1 before 19.1.3, and 19.2 before 19.2.1 that under certain conditions could have allowed an authentica",
+        "published": "2026-07-29T20:17:00.417"
       },
       {
         "cve_id": "CVE-2026-54661",
@@ -332,55 +381,6 @@
         "base_score": 8.3,
         "description": "swagger-typescript-api generates API clients for Fetch or Axios from OpenAPI specifications. Prior to 13.12.2, src/code-gen-process.ts createApiConfig copies servers[0].url into apiConfig.baseUrl, and",
         "published": "2026-07-29T15:16:25.577"
-      },
-      {
-        "cve_id": "CVE-2026-54664",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "swagger-typescript-api generates API clients for Fetch or Axios from an OpenAPI Specification. Prior to 13.12.2, src/schema-parser/base-schema-parsers/enum.ts passes components.schemas.*.enum[i] value",
-        "published": "2026-07-29T15:16:25.850"
-      },
-      {
-        "cve_id": "CVE-2026-54666",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "swagger-typescript-api generates API clients for Fetch or Axios from an OpenAPI Specification. Prior to 13.12.2, src/schema-routes/schema-routes.ts passes OpenAPI path keys through parseRouteName to t",
-        "published": "2026-07-29T15:16:25.990"
-      },
-      {
-        "cve_id": "CVE-2026-58159",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Apache Traffic Server can bypass IP access controls on UDS listeners and through ACL matching errors.\n\nThis issue affects Apache Traffic Server: from 8.0.0 through 8.1.9, from 9.0.0 through 9.2.14, fr",
-        "published": "2026-07-29T10:16:41.490"
-      },
-      {
-        "cve_id": "CVE-2026-58184",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "The Apache Traffic Server header_rewrite plugin can crash or corrupt memory during cookie operations and CIDR condition matching.\n\nThis issue affects Apache Traffic Server: from 8.0.0 through 8.1.9, f",
-        "published": "2026-07-29T10:16:43.520"
-      },
-      {
-        "cve_id": "CVE-2026-58188",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Several Apache Traffic Server experimental plugins have memory-safety and limit-bypass errors.\n\nThis issue affects Apache Traffic Server: from 8.0.0 through 8.1.9, from 9.0.0 through 9.2.14, from 10.0",
-        "published": "2026-07-29T10:16:44.093"
-      },
-      {
-        "cve_id": "CVE-2026-58177",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Apache Traffic Server Cripts framework has out-of-bounds writes, path traversal, and use-after-free errors.\n\nThis issue affects Apache Traffic Server: from 10.0.0 through 10.1.3.\n\nUsers are recomm",
-        "published": "2026-07-29T10:16:42.510"
-      },
-      {
-        "cve_id": "CVE-2026-58179",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Apache Traffic Server regex_remap plugin overflows the stack and integers from substitution input.\n\nThis issue affects Apache Traffic Server: from 8.0.0 through 8.1.9, from 9.0.0 through 9.2.14, f",
-        "published": "2026-07-29T10:16:42.803"
       }
     ]
   },
