@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-30T06:19:03.389984+00:00",
+  "generated_at": "2026-07-30T10:12:41.869690+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 18,
-        "score": 3.0,
+        "value": 7,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,31 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 659,
-    "critical_count": 18,
-    "high_count": 32,
+    "total": 687,
+    "critical_count": 7,
+    "high_count": 31,
     "cves": [
-      {
-        "cve_id": "CVE-2026-33267",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Improper Input Validation vulnerability in Apache Traffic Server.\n\nThis issue affects Apache Traffic Server: from 9.2.0 through 9.2.14, from 10.1.0 through 10.1.3.\n\nUsers are recommended to upgrade to",
-        "published": "2026-07-29T08:16:30.983"
-      },
-      {
-        "cve_id": "CVE-2026-57834",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Apache Traffic Server allows request smuggling if chunked messages are malformed.\n\nThis issue affects Apache Traffic Server: from 8.0.0 through 8.1.9, from 9.0.0 through 9.2.14, from 10.0.0 through 10",
-        "published": "2026-07-29T08:16:31.563"
-      },
-      {
-        "cve_id": "CVE-2026-58150",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Apache Traffic Server does not reject Transfer-Encoding in HTTP/2 requests, allowing downgrade request smuggling.\n\nThis issue affects Apache Traffic Server: from 8.0.0 through 8.1.9, from 9.0.0 throug",
-        "published": "2026-07-29T08:16:31.710"
-      },
       {
         "cve_id": "CVE-2026-58162",
         "severity": "CRITICAL",
@@ -271,46 +250,11 @@
         "published": "2026-07-29T10:16:41.927"
       },
       {
-        "cve_id": "CVE-2026-63227",
+        "cve_id": "CVE-2026-54735",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "An unrestricted SCORM file upload vulnerability\nin Koollab LMS allowed\nan authenticated module designer to upload a SCORM package containing a PHP\nwebshell to a publicly accessible directory and execu",
-        "published": "2026-07-29T07:16:41.967"
-      },
-      {
-        "cve_id": "CVE-2026-63232",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A SQL injection and unsafe deserialisation\nvulnerability in Koollab LMS allowed an authenticated attacker to inject through the assessment\nreinforcement endpoint, control data passed to unserialize(),",
-        "published": "2026-07-29T07:16:42.600"
-      },
-      {
-        "cve_id": "CVE-2026-63233",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A SQL injection and unsafe deserialisation\nvulnerability in Koollab LMS allowed an authenticated attacker to inject through the assessment\noverall answer endpoint, control data passed to unserialize()",
-        "published": "2026-07-29T07:16:42.710"
-      },
-      {
-        "cve_id": "CVE-2026-63234",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A SQL injection and unsafe deserialisation\nvulnerability in Koollab LMS allowed an authenticated attacker to inject through the manual mark\nassessment endpoint, control data passed to unserialize(), w",
-        "published": "2026-07-29T07:16:42.817"
-      },
-      {
-        "cve_id": "CVE-2026-13423",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Streamit WordPress theme through 4.5.0 does not perform any authorization or nonce verification on one of its unauthenticated AJAX routes, which invokes an attacker-supplied PHP function with an a",
-        "published": "2026-07-29T07:16:41.250"
-      },
-      {
-        "cve_id": "CVE-2026-18191",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "VIN-DS783E-E6 developed by Vacron has a Hidden Functionality vulnerability, allowing unauthenticated remote attackers to exploit a specific hidden function to obtain the administrator credentials of t",
-        "published": "2026-07-29T08:16:30.223"
+        "base_score": 10.0,
+        "description": "Prebid Server is an open-source solution for running real-time advertising auctions in the cloud. Prior to version 4.4.0, certain bidder adapters in Prebid Server interpolate user-supplied parameters ",
+        "published": "2026-07-29T16:17:54.317"
       },
       {
         "cve_id": "CVE-2025-10656",
@@ -334,32 +278,11 @@
         "published": "2026-07-29T11:16:48.200"
       },
       {
-        "cve_id": "CVE-2026-41920",
+        "cve_id": "CVE-2026-60112",
         "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Improper Access Control vulnerability in Apache Traffic Server.\n\nThis issue affects Apache Traffic Server: from 9.0.0 through 9.1.14, from 10.0.0 through 10.1.3.\n\nUsers are recommended to upgrade to v",
-        "published": "2026-07-29T08:16:31.420"
-      },
-      {
-        "cve_id": "CVE-2026-58155",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Apache Traffic Server truncates over-long header names, allowing header aliasing, request smuggling, and policy bypass.\n\nThis issue affects Apache Traffic Server: from 8.0.0 through 8.1.9, from 9.0.0 ",
-        "published": "2026-07-29T09:16:29.877"
-      },
-      {
-        "cve_id": "CVE-2026-63229",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A pre-authentication blind SQL injection\nvulnerability in Koollab LMS allowed an unauthenticated attacker to use a time-based SQL oracle via\nthe SSO OAuth endpoint to read sensitive database contents,",
-        "published": "2026-07-29T07:16:42.267"
-      },
-      {
-        "cve_id": "CVE-2026-63230",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A pre-authentication error-based SQL injection\nvulnerability in Koollab LMS allowed an unauthenticated attacker to read sensitive database\ncontents, including personally identifiable information, cred",
-        "published": "2026-07-29T07:16:42.373"
+        "base_score": 9.8,
+        "description": "AMMOS Instrument Toolkit (AIT) GUI before 2.5.1 contains a missing authentication vulnerability that allows any unauthenticated network attacker to obtain a valid session and issue arbitrary spacecraf",
+        "published": "2026-07-29T16:17:55.413"
       },
       {
         "cve_id": "CVE-2026-14488",
@@ -369,18 +292,95 @@
         "published": "2026-07-29T11:16:48.063"
       },
       {
-        "cve_id": "CVE-2026-58154",
-        "severity": "HIGH",
-        "base_score": 8.9,
-        "description": "Apache Traffic Server can write out of bounds or overflow integers while parsing MIME and HTTP headers.\n\nThis issue affects Apache Traffic Server: from 8.0.0 through 8.1.9, from 9.0.0 through 9.2.14, ",
-        "published": "2026-07-29T09:16:29.743"
-      },
-      {
         "cve_id": "CVE-2026-50622",
         "severity": "HIGH",
         "base_score": 8.8,
         "description": "Description:\nMissing Authorization\u00a0in Apache Atlas.\nA missing authorization vulnerability in Apache Atlas's admin endpoints allows any authenticated user, regardless of their assigned role, to perform",
         "published": "2026-07-29T10:16:41.047"
+      },
+      {
+        "cve_id": "CVE-2026-14270",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Extra Checkout Options (addon for Extra Product Options & Add-Ons for WooCommerce) plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 2.3.2. This is ",
+        "published": "2026-07-29T12:16:35.697"
+      },
+      {
+        "cve_id": "CVE-2026-58157",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "Apache Traffic Server can reuse server sessions and tunnels improperly, exposing data across client connections.\n\nThis issue affects Apache Traffic Server: from 8.0.0 through 8.1.9, from 9.0.0 through",
+        "published": "2026-07-29T10:16:41.173"
+      },
+      {
+        "cve_id": "CVE-2026-58182",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "The Apache Traffic Server ts_lua plugin mishandles initialization, transform context, and per-instance state.\n\nThis issue affects Apache Traffic Server: from 8.0.0 through 8.1.9, from 9.0.0 through 9.",
+        "published": "2026-07-29T10:16:43.230"
+      },
+      {
+        "cve_id": "CVE-2026-54661",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "swagger-typescript-api generates API clients for Fetch or Axios from an OpenAPI Specification. Prior to 13.12.2, templates/base/http-clients/axios-http-client.ejs interpolates servers[0].url from src/",
+        "published": "2026-07-29T15:16:25.440"
+      },
+      {
+        "cve_id": "CVE-2026-54662",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "swagger-typescript-api generates API clients for Fetch or Axios from OpenAPI specifications. Prior to 13.12.2, src/code-gen-process.ts createApiConfig copies servers[0].url into apiConfig.baseUrl, and",
+        "published": "2026-07-29T15:16:25.577"
+      },
+      {
+        "cve_id": "CVE-2026-54664",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "swagger-typescript-api generates API clients for Fetch or Axios from an OpenAPI Specification. Prior to 13.12.2, src/schema-parser/base-schema-parsers/enum.ts passes components.schemas.*.enum[i] value",
+        "published": "2026-07-29T15:16:25.850"
+      },
+      {
+        "cve_id": "CVE-2026-54666",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "swagger-typescript-api generates API clients for Fetch or Axios from an OpenAPI Specification. Prior to 13.12.2, src/schema-routes/schema-routes.ts passes OpenAPI path keys through parseRouteName to t",
+        "published": "2026-07-29T15:16:25.990"
+      },
+      {
+        "cve_id": "CVE-2026-58159",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Apache Traffic Server can bypass IP access controls on UDS listeners and through ACL matching errors.\n\nThis issue affects Apache Traffic Server: from 8.0.0 through 8.1.9, from 9.0.0 through 9.2.14, fr",
+        "published": "2026-07-29T10:16:41.490"
+      },
+      {
+        "cve_id": "CVE-2026-58184",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "The Apache Traffic Server header_rewrite plugin can crash or corrupt memory during cookie operations and CIDR condition matching.\n\nThis issue affects Apache Traffic Server: from 8.0.0 through 8.1.9, f",
+        "published": "2026-07-29T10:16:43.520"
+      },
+      {
+        "cve_id": "CVE-2026-58188",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Several Apache Traffic Server experimental plugins have memory-safety and limit-bypass errors.\n\nThis issue affects Apache Traffic Server: from 8.0.0 through 8.1.9, from 9.0.0 through 9.2.14, from 10.0",
+        "published": "2026-07-29T10:16:44.093"
+      },
+      {
+        "cve_id": "CVE-2026-58177",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The Apache Traffic Server Cripts framework has out-of-bounds writes, path traversal, and use-after-free errors.\n\nThis issue affects Apache Traffic Server: from 10.0.0 through 10.1.3.\n\nUsers are recomm",
+        "published": "2026-07-29T10:16:42.510"
+      },
+      {
+        "cve_id": "CVE-2026-58179",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The Apache Traffic Server regex_remap plugin overflows the stack and integers from substitution input.\n\nThis issue affects Apache Traffic Server: from 8.0.0 through 8.1.9, from 9.0.0 through 9.2.14, f",
+        "published": "2026-07-29T10:16:42.803"
       }
     ]
   },
