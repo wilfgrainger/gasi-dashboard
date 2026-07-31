@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T01:54:34.355871+00:00",
+  "generated_at": "2026-07-31T06:36:28.333814+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 13,
+        "value": 16,
         "score": 3.0,
         "max": 3
       },
@@ -238,38 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 297,
-    "critical_count": 13,
-    "high_count": 28,
+    "total": 252,
+    "critical_count": 16,
+    "high_count": 40,
     "cves": [
-      {
-        "cve_id": "CVE-2026-48449",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Adobe Campaign Classic (ACC) is affected by an Incorrect Authorization vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does n",
-        "published": "2026-07-30T03:16:24.957"
-      },
-      {
-        "cve_id": "CVE-2026-58046",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Improper neutralization in the Plesk XML-RPC API allows a remote authenticated low-privileged user to perform SQL injection and read arbitrary data from the Plesk database, leading to full compromise ",
-        "published": "2026-07-30T06:25:55.430"
-      },
-      {
-        "cve_id": "CVE-2026-16610",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Admin and Site Enhancements (ASE) Pro plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 8.9.0 via the recursive_html function. This is due to the fr",
-        "published": "2026-07-30T05:16:34.520"
-      },
-      {
-        "cve_id": "CVE-2026-58066",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Rocket.Chat's SAML SSO before versions 8.7.0, 8.6.1, 8.5.2, 8.4.5, 8.3.7, 8.2.7, 8.1.7, 8.0.8, and 7.10.14 verified XML signatures but did not bind the validated signature to samlp:Response / saml:Ass",
-        "published": "2026-07-30T06:25:55.540"
-      },
       {
         "cve_id": "CVE-2026-44090",
         "severity": "CRITICAL",
@@ -306,11 +278,60 @@
         "published": "2026-07-30T07:16:59.443"
       },
       {
+        "cve_id": "CVE-2026-59309",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "VMware vCenter contains an authentication bypass vulnerability in the VMware Directory Service.\u00a0A malicious actor with network access to vCenter\u00a0may exploit this issue to bypass authentication and gai",
+        "published": "2026-07-30T13:16:53.870"
+      },
+      {
+        "cve_id": "CVE-2026-59310",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "VMware vCenter contains a directory traversal vulnerability in the Syslog server.\u00a0A malicious actor with network access to vCenter\u00a0may exploit this issue to execute arbitrary code.",
+        "published": "2026-07-30T13:16:53.993"
+      },
+      {
+        "cve_id": "CVE-2026-15435",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "IBM App Connect Enterprise 13.0.1.0 through 13.0.7.2, and 12.0.1.0 through 12.0.12.27 could allow a remote attacker to traverse directories on the system. An attacker could send a specially crafted UR",
+        "published": "2026-07-30T15:16:26.757"
+      },
+      {
+        "cve_id": "CVE-2026-28323",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "SolarWinds Web Help Desk is found to be affected by a SAML authentication bypass vulnerability. This requires the SAML 2.0 authentication method to be enabled.",
+        "published": "2026-07-30T16:17:10.710"
+      },
+      {
+        "cve_id": "CVE-2026-4978",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in UMAI Vision Traffic Analysis System allows SQL Injection.\n\nThis issue affects Traffic Analysis Sys",
+        "published": "2026-07-30T16:17:12.933"
+      },
+      {
         "cve_id": "CVE-2026-44100",
         "severity": "CRITICAL",
         "base_score": 9.4,
         "description": "The CHARX JupiCore service allows an unauthenticated remote attacker to reconfigure charging points. This can lead to disclosure of charging point UIDs, Denial-of-Service and files tampering.",
         "published": "2026-07-30T07:16:58.220"
+      },
+      {
+        "cve_id": "CVE-2026-47876",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "VMware ESX contains an out-of-bounds write vulnerability in the VMXNET3 virtual network adapter.\u00a0A malicious actor with local administrative privileges on a virtual machine with VMXNET3 virtual networ",
+        "published": "2026-07-30T13:16:51.100"
+      },
+      {
+        "cve_id": "CVE-2026-11707",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "IBM Tivoli System Automation Application Manager 4.1 and IBM WebSphere Application Server is affected by a cross-site scripting vulnerability in the administrative console login page.",
+        "published": "2026-07-30T15:16:24.010"
       },
       {
         "cve_id": "CVE-2026-44091",
@@ -327,60 +348,39 @@
         "published": "2026-07-30T07:16:57.110"
       },
       {
-        "cve_id": "CVE-2026-14602",
+        "cve_id": "CVE-2026-54363",
         "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "The Remote API WordPress plugin through 0.2 does not authenticate a request before deserializing user-supplied input, allowing unauthenticated attackers to inject arbitrary PHP objects, which can lead",
-        "published": "2026-07-30T06:25:00.937"
+        "base_score": 9.1,
+        "description": "CentreStack before 17.5 contains a hardcoded cryptographic key vulnerability that allows unauthenticated attackers to forge arbitrary encrypted tokens by exploiting a static SysNumber value used as en",
+        "published": "2026-07-30T13:16:51.223"
       },
       {
-        "cve_id": "CVE-2026-14356",
+        "cve_id": "CVE-2026-22622",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The FleekDash V2 plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 2.6.2.2. This is due to the plugin not properly verifying that a user is authorized to",
-        "published": "2026-07-30T05:16:32.853"
+        "description": "Improper input validation in one of the session management interface of Eaton's Tripp Lite series PADM firmware could allow an authenticated user to elevate privileges resulting in unrestricted access",
+        "published": "2026-07-30T11:16:27.397"
       },
       {
-        "cve_id": "CVE-2026-16526",
+        "cve_id": "CVE-2026-54368",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A flaw in the PCP linux_sockets module exposes an unsecured internal connection.\nAn attacker with initial code execution can exploit this to escalate privileges and execute arbitrary commands as root.",
-        "published": "2026-07-30T06:25:02.663"
+        "description": "CentreStack before 17.4 contains a SQL injection vulnerability in GladDBFiles.SearchEx() and SearchExUnder() that allows authenticated attackers to execute arbitrary SQL statements by supplying a craf",
+        "published": "2026-07-30T13:16:51.910"
       },
       {
-        "cve_id": "CVE-2026-48448",
+        "cve_id": "CVE-2026-67351",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability that could lead to disclosure of sensitive memory. An ",
-        "published": "2026-07-30T03:16:24.810"
+        "base_score": 8.8,
+        "description": "Serendipity before 2.6.1 contains an authentication context confusion vulnerability where password validation and session loading operate independently without ensuring both use the same user record. ",
+        "published": "2026-07-30T14:17:04.503"
       },
       {
-        "cve_id": "CVE-2026-13395",
+        "cve_id": "CVE-2026-14522",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "The Online Scheduling and Appointment Booking System  WordPress plugin before 27.8 does not sanitize or properly cast a user-supplied parameter from its unauthenticated front-end booking requests befo",
-        "published": "2026-07-30T06:24:59.510"
-      },
-      {
-        "cve_id": "CVE-2026-44094",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "An unauthenticated remote attacker can enforce the system to fall back to a firmware partition with an insecure configuration including default credentials. This could allow the attacker to gain SSH a",
-        "published": "2026-07-30T07:16:57.403"
-      },
-      {
-        "cve_id": "CVE-2026-44098",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "This vulnerability allows an unauthenticated remote attacker with control over the OCPP backend via firewall-bypass to perform an OS command injection, resulting in the execution of arbitrary commands",
-        "published": "2026-07-30T07:16:57.950"
-      },
-      {
-        "cve_id": "CVE-2026-47882",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "When enabling Spring Boot DevTools support for a remote application target (for example a Docker container or Cloud Foundry app) from the Spring Tools Boot Dashboard, Spring Tools generates a shared s",
-        "published": "2026-07-30T06:25:52.370"
+        "base_score": 8.8,
+        "description": "IBM App Connect Enterprise 13.0.1.0 through 13.0.7.2, and 12.0.1.0 through 12.0.12.27 could allow a remote attacker to execute arbitrary commands due to improper neutralization of CRLF characters.",
+        "published": "2026-07-30T15:16:25.693"
       }
     ]
   },
