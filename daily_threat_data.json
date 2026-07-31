@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-07-31T13:41:07.896609+00:00",
+  "generated_at": "2026-07-31T17:19:59.689157+00:00",
   "threat_score": {
-    "score": 7.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 4.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 12,
-        "score": 3.0,
+        "value": 0,
+        "score": 0.5,
         "max": 3
       },
       {
@@ -238,151 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 275,
-    "critical_count": 12,
-    "high_count": 32,
-    "cves": [
-      {
-        "cve_id": "CVE-2026-13435",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "IBM Langflow OSS 1.0.0 through 1.10.1 contains an improper input validation vulnerability in the PythonREPL sandbox implementation.",
-        "published": "2026-07-30T19:17:06.840"
-      },
-      {
-        "cve_id": "CVE-2026-15435",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "IBM App Connect Enterprise 13.0.1.0 through 13.0.7.2, and 12.0.1.0 through 12.0.12.27 could allow a remote attacker to traverse directories on the system. An attacker could send a specially crafted UR",
-        "published": "2026-07-30T15:16:26.757"
-      },
-      {
-        "cve_id": "CVE-2026-28323",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "SolarWinds Web Help Desk is found to be affected by a SAML authentication bypass vulnerability. This requires the SAML 2.0 authentication method to be enabled.",
-        "published": "2026-07-30T16:17:10.710"
-      },
-      {
-        "cve_id": "CVE-2026-4978",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in UMAI Vision Traffic Analysis System allows SQL Injection.\n\nThis issue affects Traffic Analysis Sys",
-        "published": "2026-07-30T16:17:12.933"
-      },
-      {
-        "cve_id": "CVE-2026-12940",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "IBM Langflow OSS 1.0.0 through 1.10.1\u00a0 are vulnerable to unauthenticated remote code execution via environment variable injection in the MCP (Model Context Protocol) stdio launcher. The vulnerability ",
-        "published": "2026-07-30T17:16:28.040"
-      },
-      {
-        "cve_id": "CVE-2026-51291",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "sqlite 3.41 is vulnerable to use after free in the json.c jsonCacheInsert function of the JSON cache management module.",
-        "published": "2026-07-30T17:16:32.240"
-      },
-      {
-        "cve_id": "CVE-2026-12118",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "IBM webMethods Integration (on prem) 10.15, 10.11 could allow an unauthenticated remote attacker to execute arbitrary code on the system due to the deserialization of untrusted data.",
-        "published": "2026-07-30T19:17:04.483"
-      },
-      {
-        "cve_id": "CVE-2026-12943",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "IBM HMC V10.3.1050.0 through 10.3.1064.0 and IBM HMC V11.1.1110.0 through 11.1.1112.0 Management systems in IBM Power environments (HMC and Novalink) could allow an unauthenticated user to execute arb",
-        "published": "2026-07-30T19:17:05.453"
-      },
-      {
-        "cve_id": "CVE-2026-51272",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "In schreibfaul1 ESP32-audioI2S 3.4.5, a heap-based buffer overflow vulnerability exists in the latinToUTF8() character encoding conversion function. The function calculates required buffer size by sim",
-        "published": "2026-07-30T19:18:05.820"
-      },
-      {
-        "cve_id": "CVE-2026-11707",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "IBM Tivoli System Automation Application Manager 4.1 and IBM WebSphere Application Server is affected by a cross-site scripting vulnerability in the administrative console login page.",
-        "published": "2026-07-30T15:16:24.010"
-      },
-      {
-        "cve_id": "CVE-2026-51290",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "SQLite 3.41 has a use-after-free vulnerability in the shared cache lock management logic of the btree module. The program frees a BtLock structure without removing the node from the linked list. Subse",
-        "published": "2026-07-30T17:16:32.133"
-      },
-      {
-        "cve_id": "CVE-2026-18245",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "Improper control of code generation in Amazon @aws-amplify/codegen-ui-react before 2.20.6 might allow a remote authenticated user to execute arbitrary code in end-user browsers, developer machines, CI",
-        "published": "2026-07-30T19:17:26.610"
-      },
-      {
-        "cve_id": "CVE-2026-67351",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Serendipity before 2.6.1 contains an authentication context confusion vulnerability where password validation and session loading operate independently without ensuring both use the same user record. ",
-        "published": "2026-07-30T14:17:04.503"
-      },
-      {
-        "cve_id": "CVE-2026-14522",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "IBM App Connect Enterprise 13.0.1.0 through 13.0.7.2, and 12.0.1.0 through 12.0.12.27 could allow a remote attacker to execute arbitrary commands due to improper neutralization of CRLF characters.",
-        "published": "2026-07-30T15:16:25.693"
-      },
-      {
-        "cve_id": "CVE-2026-28813",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Apache JSPWiki, up to 2.12.3, is vulnerable to JSON Hijacking, which leads to csrf vulnerabilities.\nUsers are recommended to upgrade to version 2.12.4, which fixes this issue.",
-        "published": "2026-07-30T16:17:11.070"
-      },
-      {
-        "cve_id": "CVE-2026-58222",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A security flaw combining LDAP filter injection and improper authorization checks was found in Samba Active Directory Domain Controller (AD DC). When processing LDAP Compare requests, Samba fails to p",
-        "published": "2026-07-30T16:17:14.933"
-      },
-      {
-        "cve_id": "CVE-2026-67346",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Swarms through 6.8.1, fixed in commit 8b0fc9e, contains a server-side request forgery vulnerability in the _is_safe_url function that fails to validate hostnames through DNS resolution, allowing attac",
-        "published": "2026-07-30T15:16:35.953"
-      },
-      {
-        "cve_id": "CVE-2026-57862",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Kanboard 1.2.52 and prior contains a server-side request forgery vulnerability that allows authenticated users to bypass SSRF protections by supplying hexadecimal IP address notation in user-controlle",
-        "published": "2026-07-30T16:17:14.607"
-      },
-      {
-        "cve_id": "CVE-2026-11885",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "IBM PowerVM Hypervisor FW1110.00 through FW1110.20, FW1060.00 through FW1060.71, and FW950.00 through FW950.H1 A carefully crafted OS hypervisor call can cause the PowerVM hypervisor to crash or compr",
-        "published": "2026-07-30T17:16:27.760"
-      },
-      {
-        "cve_id": "CVE-2026-10535",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "IBM Db2 11.5.0 through 11.5.9, and 12.1.0 through 12.1.4 is vulnerable to buffer overflow in setgid helper db2flacc.",
-        "published": "2026-07-30T19:17:01.167"
-      }
-    ]
+    "total": 0,
+    "critical_count": 0,
+    "high_count": 0,
+    "cves": []
   },
   "top_ips": {
     "ips": [],
