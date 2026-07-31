@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-30T20:56:03.414120+00:00",
+  "generated_at": "2026-07-31T01:54:34.355871+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 26,
+        "value": 25,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 30,
+        "value": 13,
         "score": 3.0,
         "max": 3
       },
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1656,
-    "recent_30d_count": 26,
+    "recent_30d_count": 25,
     "recent": [
       {
         "cve_id": "CVE-2026-20316",
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 650,
-    "critical_count": 30,
-    "high_count": 21,
+    "total": 297,
+    "critical_count": 13,
+    "high_count": 28,
     "cves": [
       {
-        "cve_id": "CVE-2025-65340",
+        "cve_id": "CVE-2026-48449",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Adobe Campaign Classic (ACC) is affected by an Incorrect Authorization vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue does n",
+        "published": "2026-07-30T03:16:24.957"
+      },
+      {
+        "cve_id": "CVE-2026-58046",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Improper neutralization in the Plesk XML-RPC API allows a remote authenticated low-privileged user to perform SQL injection and read arbitrary data from the Plesk database, leading to full compromise ",
+        "published": "2026-07-30T06:25:55.430"
+      },
+      {
+        "cve_id": "CVE-2026-16610",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "kishan0725 Hospital Management System 4.0 is vulnerable to SQL Injection in /betweendates-detailsreports.php.",
-        "published": "2026-07-29T21:17:45.880"
+        "description": "The Admin and Site Enhancements (ASE) Pro plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 8.9.0 via the recursive_html function. This is due to the fr",
+        "published": "2026-07-30T05:16:34.520"
       },
       {
-        "cve_id": "CVE-2025-67403",
+        "cve_id": "CVE-2026-58066",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Sourcecodester CASAP Automated Enrollment System 1.0 is vulnerable to SQL Injection in update_class.php via the parameter class_name.",
-        "published": "2026-07-29T22:16:51.033"
+        "description": "Rocket.Chat's SAML SSO before versions 8.7.0, 8.6.1, 8.5.2, 8.4.5, 8.3.7, 8.2.7, 8.1.7, 8.0.8, and 7.10.14 verified XML signatures but did not bind the validated signature to samlp:Response / saml:Ass",
+        "published": "2026-07-30T06:25:55.540"
       },
       {
-        "cve_id": "CVE-2025-67404",
+        "cve_id": "CVE-2026-44090",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Sourcecodester CASAP Automated Enrollment System 1.0 is vulnerable to SQL Injection in save_stud.php via the parameters fname, lname, and student_class.",
-        "published": "2026-07-29T22:16:51.163"
+        "description": "Due to missing authentication, an unauthenticated remote attacker may access the MQTT broker, which is only protected from external access by a firewall. This may lead to the device being fully compro",
+        "published": "2026-07-30T07:16:56.810"
       },
       {
-        "cve_id": "CVE-2025-69942",
+        "cve_id": "CVE-2026-44101",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "kishan0725 Hospital Management System 4.0 is vulnerable to SQL Injection in /hms/doctor/view-patient.php?viewid=1.",
-        "published": "2026-07-29T22:16:51.750"
+        "description": "Due to missing authentication the CHARX OCPP Agent service allows an unauthenticated remote attacker to reconfigure the backend connection. This can lead to Denial-of-Service and confidential data bei",
+        "published": "2026-07-30T07:16:58.357"
       },
       {
-        "cve_id": "CVE-2025-69943",
+        "cve_id": "CVE-2026-44104",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "kishan0725 Hospital Management System 4.0 is vulnerale to SQL Injection in get_doctor.php via the parameters doctor and specilizationid.",
-        "published": "2026-07-29T22:16:51.870"
+        "description": "The firmware update process for the basemodule of the charging controller only validates the\nCRC32 checksum without cryptographic signature verification. This allows an unauthenticated remote attacker",
+        "published": "2026-07-30T07:16:58.760"
       },
       {
-        "cve_id": "CVE-2026-17669",
+        "cve_id": "CVE-2026-44108",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Inappropriate implementation in Chrome for iOS in Google Chrome on iOS prior to 151.0.7922.72 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium secur",
-        "published": "2026-07-30T01:16:29.010"
+        "base_score": 9.8,
+        "description": "Due to a flaw in the execution order of scripts during shutdown, the firewall is terminated prematurely during system shutdown. This creates a temporary window in which internal services may become ex",
+        "published": "2026-07-30T07:16:59.307"
       },
       {
-        "cve_id": "CVE-2026-17670",
+        "cve_id": "CVE-2026-7849",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in Views in Google Chrome prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chr",
-        "published": "2026-07-30T01:16:29.110"
+        "base_score": 9.8,
+        "description": "Due to improper neutralization of special elements, an unauthenticated remote attacker is able to inject a command into the system configuration which is subsequently executed as root.",
+        "published": "2026-07-30T07:16:59.443"
       },
       {
-        "cve_id": "CVE-2026-17671",
+        "cve_id": "CVE-2026-44100",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Insufficient validation of untrusted input in ANGLE in Google Chrome prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape v",
-        "published": "2026-07-30T01:16:29.220"
+        "base_score": 9.4,
+        "description": "The CHARX JupiCore service allows an unauthenticated remote attacker to reconfigure charging points. This can lead to disclosure of charging point UIDs, Denial-of-Service and files tampering.",
+        "published": "2026-07-30T07:16:58.220"
       },
       {
-        "cve_id": "CVE-2026-17672",
+        "cve_id": "CVE-2026-44091",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Insufficient validation of untrusted input in Chromecast in Google Chrome prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox esc",
-        "published": "2026-07-30T01:16:29.330"
+        "base_score": 9.1,
+        "description": "An unauthenticated remote attacker can post a malicious ID to the MQTT Broker results in the creation of a new configuration entry in the system configuration. This may lead to integrity and availabil",
+        "published": "2026-07-30T07:16:56.963"
       },
       {
-        "cve_id": "CVE-2026-17673",
+        "cve_id": "CVE-2026-44092",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Integer overflow in QUIC in Google Chrome prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Ch",
-        "published": "2026-07-30T01:16:29.447"
+        "base_score": 9.1,
+        "description": "An unauthenticated remote attacker can inject malicious input into the ModbusServer application because it does not validate the input it fetches from MQTT. This may lead to integrity and availability",
+        "published": "2026-07-30T07:16:57.110"
       },
       {
-        "cve_id": "CVE-2026-17675",
+        "cve_id": "CVE-2026-14602",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Out of bounds write in ANGLE in Google Chrome prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page.",
-        "published": "2026-07-30T01:16:29.670"
+        "base_score": 9.0,
+        "description": "The Remote API WordPress plugin through 0.2 does not authenticate a request before deserializing user-supplied input, allowing unauthenticated attackers to inject arbitrary PHP objects, which can lead",
+        "published": "2026-07-30T06:25:00.937"
       },
       {
-        "cve_id": "CVE-2026-17676",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Inappropriate implementation in ANGLE in Google Chrome on Android prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via ",
-        "published": "2026-07-30T01:16:29.783"
+        "cve_id": "CVE-2026-14356",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The FleekDash V2 plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 2.6.2.2. This is due to the plugin not properly verifying that a user is authorized to",
+        "published": "2026-07-30T05:16:32.853"
       },
       {
-        "cve_id": "CVE-2026-17680",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Heap buffer overflow in Color in Google Chrome on ChromeOS prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a craft",
-        "published": "2026-07-30T01:16:30.217"
+        "cve_id": "CVE-2026-16526",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A flaw in the PCP linux_sockets module exposes an unsecured internal connection.\nAn attacker with initial code execution can exploit this to escalate privileges and execute arbitrary commands as root.",
+        "published": "2026-07-30T06:25:02.663"
       },
       {
-        "cve_id": "CVE-2026-17681",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Insufficient validation of untrusted input in Web Authentication in Google Chrome on Android prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially pe",
-        "published": "2026-07-30T01:16:30.330"
+        "cve_id": "CVE-2026-48448",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability that could lead to disclosure of sensitive memory. An ",
+        "published": "2026-07-30T03:16:24.810"
       },
       {
-        "cve_id": "CVE-2026-17682",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Integer overflow in ANGLE in Google Chrome prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (C",
-        "published": "2026-07-30T01:16:30.443"
+        "cve_id": "CVE-2026-13395",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "The Online Scheduling and Appointment Booking System  WordPress plugin before 27.8 does not sanitize or properly cast a user-supplied parameter from its unauthenticated front-end booking requests befo",
+        "published": "2026-07-30T06:24:59.510"
       },
       {
-        "cve_id": "CVE-2026-17684",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Insufficient validation of untrusted input in Chrome for iOS in Google Chrome on iOS prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a ",
-        "published": "2026-07-30T01:16:30.660"
+        "cve_id": "CVE-2026-44094",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "An unauthenticated remote attacker can enforce the system to fall back to a firmware partition with an insecure configuration including default credentials. This could allow the attacker to gain SSH a",
+        "published": "2026-07-30T07:16:57.403"
       },
       {
-        "cve_id": "CVE-2026-17687",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Type Confusion in ANGLE in Google Chrome prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chr",
-        "published": "2026-07-30T01:16:30.990"
+        "cve_id": "CVE-2026-44098",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "This vulnerability allows an unauthenticated remote attacker with control over the OCPP backend via firewall-bypass to perform an OS command injection, resulting in the execution of arbitrary commands",
+        "published": "2026-07-30T07:16:57.950"
       },
       {
-        "cve_id": "CVE-2026-17688",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in Input in Google Chrome prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chr",
-        "published": "2026-07-30T01:16:31.100"
-      },
-      {
-        "cve_id": "CVE-2026-17691",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Out of bounds write in ANGLE in Google Chrome on Windows prior to 151.0.7922.72 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: ",
-        "published": "2026-07-30T01:16:31.443"
-      },
-      {
-        "cve_id": "CVE-2026-17692",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in DataTransfer in Google Chrome on Windows prior to 151.0.7922.72 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a craft",
-        "published": "2026-07-30T01:16:31.550"
+        "cve_id": "CVE-2026-47882",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "When enabling Spring Boot DevTools support for a remote application target (for example a Docker container or Cloud Foundry app) from the Spring Tools Boot Dashboard, Spring Tools generates a shared s",
+        "published": "2026-07-30T06:25:52.370"
       }
     ]
   },
