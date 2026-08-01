@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T09:49:15.469843+00:00",
+  "generated_at": "2026-08-01T12:56:53.450580+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
+        "value": 7,
         "score": 2.5,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 227,
-    "critical_count": 5,
-    "high_count": 12,
+    "total": 213,
+    "critical_count": 7,
+    "high_count": 11,
     "cves": [
       {
         "cve_id": "CVE-2026-17566",
@@ -264,11 +264,25 @@
         "published": "2026-07-31T13:17:19.730"
       },
       {
+        "cve_id": "CVE-2026-67822",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Tenda W6-S 1.0.0.4(510) contains a stack-based buffer overflow vulnerability in the /goform/wifiSSIDset endpoint. The function formwrlSSIDset uses sprintf to copy user-controlled 'GO' and 'index' para",
+        "published": "2026-07-31T17:16:35.210"
+      },
+      {
         "cve_id": "CVE-2026-17349",
         "severity": "CRITICAL",
         "base_score": 9.6,
         "description": "/misc/workspace/adhoc_connect_server, part of the Workspaces feature introduced in pgAdmin 4 9.0, when passed the id of an existing server, clones that server via Server.clone(), which copies every co",
         "published": "2026-07-31T16:16:59.480"
+      },
+      {
+        "cve_id": "CVE-2026-54725",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "vault-secrets-webhook is a Kubernetes mutating webhook that makes direct secret injection into Pods possible. Prior to 1.23.1, parseVaultConfig() in pkg/webhook/config.go accepts the vault.security.ba",
+        "published": "2026-07-31T18:17:17.013"
       },
       {
         "cve_id": "CVE-2026-17351",
@@ -285,13 +299,6 @@
         "published": "2026-07-31T16:16:58.970"
       },
       {
-        "cve_id": "CVE-2026-10079",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "A flaw was found in Red Hat Advanced Cluster Security for Kubernetes (RHACS). When processing Kubernetes Deployments, ACS replaces deployment identity metadata based on the openshift.io/encoded-deploy",
-        "published": "2026-07-31T10:16:43.190"
-      },
-      {
         "cve_id": "CVE-2026-18141",
         "severity": "HIGH",
         "base_score": 8.2,
@@ -299,11 +306,18 @@
         "published": "2026-07-31T16:17:05.387"
       },
       {
-        "cve_id": "CVE-2026-62391",
+        "cve_id": "CVE-2026-53500",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The security fix for CVE-2025-66518 is incomplete.\u00a0Any client who can access to Apache Kyuubi Server via Kyuubi frontend protocols can bypass server-side config\u00a0kyuubi.session.local.dir.allowlist via ",
-        "published": "2026-07-31T11:17:11.593"
+        "base_score": 8.2,
+        "description": "Thumbor is an open-source photo thumbnail service by globo.com. Prior to 7.8.0, the ALLOWED_SOURCES configuration passes plain strings to re.match() without escaping dots, so a hostname differing at d",
+        "published": "2026-07-31T19:17:09.247"
+      },
+      {
+        "cve_id": "CVE-2026-53501",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Thumbor is an open-source photo thumbnail service by globo.com. Prior to 7.8.0, Thumbor\u2019s HMAC validation can be bypassed due to the use of Python\u2019s .replace() when removing the signature from the URL",
+        "published": "2026-07-31T19:17:09.413"
       },
       {
         "cve_id": "CVE-2026-10685",
@@ -311,20 +325,6 @@
         "base_score": 7.6,
         "description": "The Zephyr Bluetooth GATT client CCC-write response handler gatt_write_ccc_rsp() in subsys/bluetooth/host/gatt.c invoked the application's params->subscribe() callback after it had already called para",
         "published": "2026-07-31T15:16:27.433"
-      },
-      {
-        "cve_id": "CVE-2026-11770",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A flaw was found in 389 Directory Server. An unauthenticated remote attacker can inject LDAP search filters into the CleanAllRUV replication status-check extended operation. Because the handler perfor",
-        "published": "2026-07-31T10:16:44.720"
-      },
-      {
-        "cve_id": "CVE-2026-15722",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A stack buffer overflow flaw was found in 389 Directory Server (389-ds-base). The get_ruvelement_from_berval() function in repl5_ruv.c copies digit characters from a network-supplied RUV berval into a",
-        "published": "2026-07-31T10:16:44.863"
       },
       {
         "cve_id": "CVE-2026-18358",
@@ -355,18 +355,18 @@
         "published": "2026-07-31T17:16:33.460"
       },
       {
-        "cve_id": "CVE-2026-16843",
+        "cve_id": "CVE-2026-54737",
         "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "Some Hikvision Wireless Access Points are vulnerable to authenticated command execution due to insufficient input validation. Attackers with valid credentials can exploit this flaw by sending crafted ",
-        "published": "2026-07-31T11:17:05.567"
+        "base_score": 7.3,
+        "description": "@phun-ky/defaults-deep is a library like lodash defaultsDeep with array preservation and no lodash dependency. Prior to 2.0.5, defaultsDeep() recursively merges user-supplied objects without filtering",
+        "published": "2026-07-31T18:17:17.330"
       },
       {
-        "cve_id": "CVE-2026-44615",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Path traversal vulnerability in Apache Zeppelin. When FileSystemNotebookRepo is configured, an authenticated attacker with permission to rename a note, or access to folder operations, could supply tra",
-        "published": "2026-07-31T11:17:10.087"
+        "cve_id": "CVE-2026-18481",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "Stored cross-site scripting in the participant URL handling in AWS Ops \nWheel before PR #168 might allow an authenticated remote user to steal \nsession tokens and escalate to full administrative contr",
+        "published": "2026-07-31T19:17:08.347"
       },
       {
         "cve_id": "CVE-2026-17348",
