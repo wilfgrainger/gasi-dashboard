@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-01T01:55:12.543702+00:00",
+  "generated_at": "2026-08-01T06:20:17.547381+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
-        "score": 2.5,
+        "value": 4,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 234,
-    "critical_count": 7,
-    "high_count": 32,
+    "total": 213,
+    "critical_count": 4,
+    "high_count": 24,
     "cves": [
       {
         "cve_id": "CVE-2026-18452",
@@ -248,20 +248,6 @@
         "base_score": 10.0,
         "description": "DMS+ (Non-Mobile) developed by Rich Source has a Use of Hard-coded Credentials vulnerability. Unauthenticated remote attackers can exploit a fixed API key to gain control over all installed DMS+ devic",
         "published": "2026-07-31T07:16:27.400"
-      },
-      {
-        "cve_id": "CVE-2026-43830",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Full details and mitigation steps are currently restricted and will be published at a later date.",
-        "published": "2026-07-31T04:17:21.760"
-      },
-      {
-        "cve_id": "CVE-2026-63223",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "CodeIgniter is a PHP full-stack web framework. Prior to 4.7.4, the is_image and mime_in upload validation rules do not independently enforce a safe client filename extension, allowing a remote attacke",
-        "published": "2026-07-31T06:16:32.297"
       },
       {
         "cve_id": "CVE-2026-14483",
@@ -283,13 +269,6 @@
         "base_score": 9.8,
         "description": "Improper Control of Generation of Code ('Code Injection') vulnerability in Innotim Software, Telecommunications and Consulting Trade Ltd. Co. Logsign SIEM allows Code Injection.\n\nThis issue affects Lo",
         "published": "2026-07-31T13:17:19.730"
-      },
-      {
-        "cve_id": "CVE-2026-63221",
-        "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "CodeIgniter is a PHP full-stack web framework. From 4.3.0 through 4.7.3, Query Builder deleteBatch() substitutes bound values from where() conditions into generated SQL while ignoring their escape fla",
-        "published": "2026-07-31T06:16:31.603"
       },
       {
         "cve_id": "CVE-2026-13609",
@@ -318,20 +297,6 @@
         "base_score": 8.5,
         "description": "A flaw was found in Red Hat Advanced Cluster Security for Kubernetes (RHACS). When processing Kubernetes Deployments, ACS replaces deployment identity metadata based on the openshift.io/encoded-deploy",
         "published": "2026-07-31T10:16:43.190"
-      },
-      {
-        "cve_id": "CVE-2026-56670",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "ComfyUI is a modular diffusion model GUI, api and backend with a graph/nodes interface. Prior to 0.28.0, the /view endpoint served uploaded SVG files inline because image/svg+xml and related XML conte",
-        "published": "2026-07-31T06:16:27.560"
-      },
-      {
-        "cve_id": "CVE-2026-56672",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "ComfyUI is a node-based diffusion model GUI, API, and backend. Prior to 0.28.0, GET /userdata/{file} served user-controlled HTML and SVG files with extension-derived content types, allowing stored cro",
-        "published": "2026-07-31T06:16:30.170"
       },
       {
         "cve_id": "CVE-2026-12251",
@@ -369,18 +334,53 @@
         "published": "2026-07-31T11:17:11.593"
       },
       {
-        "cve_id": "CVE-2026-18157",
+        "cve_id": "CVE-2026-10685",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A flaw was found in yggdrasil-worker-package-manager. A local attacker with existing access to the system could exploit an argument injection vulnerability in the APT backend. This allows specially cr",
-        "published": "2026-07-31T03:16:25.223"
+        "base_score": 7.6,
+        "description": "The Zephyr Bluetooth GATT client CCC-write response handler gatt_write_ccc_rsp() in subsys/bluetooth/host/gatt.c invoked the application's params->subscribe() callback after it had already called para",
+        "published": "2026-07-31T15:16:27.433"
       },
       {
-        "cve_id": "CVE-2026-43829",
+        "cve_id": "CVE-2026-12720",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Full details and mitigation steps are currently restricted and will be published at a later date.",
-        "published": "2026-07-31T04:17:20.193"
+        "description": "The Kirki  WordPress plugin before 6.0.13 does not restrict which classes may be instantiated when it deserialises data that unauthenticated users can store, leading to PHP Object Injection that is tr",
+        "published": "2026-07-31T07:16:23.957"
+      },
+      {
+        "cve_id": "CVE-2026-14319",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The GiveWP  WordPress plugin before 4.16.3 does not properly restrict access to a REST API endpoint that returns recurring-donation records, allowing unauthenticated users to retrieve information abou",
+        "published": "2026-07-31T07:16:24.593"
+      },
+      {
+        "cve_id": "CVE-2026-14333",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Demi  WordPress plugin before 0.0.7 stores its full-site backup archives in a publicly accessible location under a predictable filename and without access protection, allowing unauthenticated atta",
+        "published": "2026-07-31T07:16:24.703"
+      },
+      {
+        "cve_id": "CVE-2026-14830",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The FlxWoo WordPress plugin before 3.1.1 does not verify with the payment processor that a checkout session was actually paid before marking the associated order as paid, allowing unauthenticated atta",
+        "published": "2026-07-31T07:16:25.097"
+      },
+      {
+        "cve_id": "CVE-2026-14930",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The JS Help Desk  WordPress plugin before 3.1.4 does not perform any authorization, nonce, or ownership check on a front-end request dispatcher, allowing unauthenticated users to upload files (limited",
+        "published": "2026-07-31T07:16:26.610"
+      },
+      {
+        "cve_id": "CVE-2026-15048",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Geeky Bot  WordPress plugin before 1.2.8 does not perform an authorization check on one of its AJAX actions, allowing unauthenticated users to retrieve chat-history session metadata including Word",
+        "published": "2026-07-31T07:16:26.827"
       }
     ]
   },
