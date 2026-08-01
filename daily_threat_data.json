@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-01T06:20:17.547381+00:00",
+  "generated_at": "2026-08-01T09:49:15.469843+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 5,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,30 +238,23 @@
     ]
   },
   "nvd": {
-    "total": 213,
-    "critical_count": 4,
-    "high_count": 24,
+    "total": 227,
+    "critical_count": 5,
+    "high_count": 12,
     "cves": [
       {
-        "cve_id": "CVE-2026-18452",
+        "cve_id": "CVE-2026-17566",
         "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "DMS+ (Non-Mobile) developed by Rich Source has a Use of Hard-coded Credentials vulnerability. Unauthenticated remote attackers can exploit a fixed API key to gain control over all installed DMS+ devic",
-        "published": "2026-07-31T07:16:27.400"
+        "base_score": 9.9,
+        "description": "pgAdmin 4's Import/Export Data tool builds a psql \\copy (...) command line by interpolating a user-supplied SQL query into a Jinja template and passing the rendered line to psql via --command. To stop",
+        "published": "2026-07-31T16:17:00.037"
       },
       {
-        "cve_id": "CVE-2026-14483",
+        "cve_id": "CVE-2026-52855",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Realtyna Organic IDX plugin + WPL Real Estate plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 5.2.0 via the upload function. This is due to missin",
-        "published": "2026-07-31T07:16:24.803"
-      },
-      {
-        "cve_id": "CVE-2026-14919",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The ShopMonitor.io  WordPress plugin before 1.2.0 does not properly restrict its email-rerouting test mode, gating it behind a trusted-source check that is satisfiable with client-supplied request hea",
-        "published": "2026-07-31T07:16:25.963"
+        "base_score": 9.9,
+        "description": "Wings is the server control plane for Pterodactyl, a free, open-source game server management panel. Prior to 1.12.3, {{config.}} placeholders in egg configuration-file templates allow a low-privilege",
+        "published": "2026-07-31T17:16:33.313"
       },
       {
         "cve_id": "CVE-2026-17561",
@@ -271,25 +264,25 @@
         "published": "2026-07-31T13:17:19.730"
       },
       {
-        "cve_id": "CVE-2026-13609",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Frontend Admin by DynamiApps WordPress plugin before 3.29.9 decodes HTML entities in a submitted form field value after sanitizing it, which restores HTML tags that the sanitizer had neutralized. ",
-        "published": "2026-07-31T07:16:24.377"
+        "cve_id": "CVE-2026-17349",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "/misc/workspace/adhoc_connect_server, part of the Workspaces feature introduced in pgAdmin 4 9.0, when passed the id of an existing server, clones that server via Server.clone(), which copies every co",
+        "published": "2026-07-31T16:16:59.480"
       },
       {
-        "cve_id": "CVE-2026-16236",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Realtyna Organic IDX plugin for WordPress is vulnerable to Arbitrary File Upload in versions up to, and including, 5.3.0. This is due to missing file extension and content validation in the saveLi",
-        "published": "2026-07-31T07:16:27.257"
+        "cve_id": "CVE-2026-17351",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "The fix for CVE-2026-12045 in pgAdmin 4 9.16 required the LLM-supplied query passed to the AI Assistant's execute_sql_query tool to parse, via sqlparse, as exactly one non-transaction-control statemen",
+        "published": "2026-07-31T16:16:59.807"
       },
       {
-        "cve_id": "CVE-2026-12721",
+        "cve_id": "CVE-2026-17346",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "The Kirki  WordPress plugin before 6.0.13 does not properly sanitise and escape a value taken from the request before using it in a SQL statement, allowing unauthenticated attackers to perform SQL inj",
-        "published": "2026-07-31T07:16:24.057"
+        "base_score": 8.8,
+        "description": "The fix for CVE-2026-12044 in pgAdmin 4 9.16 hardened qtLiteral and switched sixteen COMMENT ON / pgstattuple / pgstatindex templates to it, but missed several sinks that had been placed in test_sql_s",
+        "published": "2026-07-31T16:16:58.970"
       },
       {
         "cve_id": "CVE-2026-10079",
@@ -299,32 +292,11 @@
         "published": "2026-07-31T10:16:43.190"
       },
       {
-        "cve_id": "CVE-2026-12251",
+        "cve_id": "CVE-2026-18141",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Ultimate Member  WordPress plugin before 2.12.1 does not filter administrator-level capabilities from the roles it makes selectable on its registration forms, and its post-registration safeguard a",
-        "published": "2026-07-31T07:16:23.240"
-      },
-      {
-        "cve_id": "CVE-2026-12695",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The miniOrange 2FA  WordPress plugin before 6.2.6 does not validate the submitted one-time password against the targeted user's stored secret, instead verifying it against an attacker-supplied value, ",
-        "published": "2026-07-31T07:16:23.747"
-      },
-      {
-        "cve_id": "CVE-2026-15258",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Product Feed Manager For WooCommerce  WordPress plugin before 7.6.1 does not properly sanitise and escape product-feed custom filter rules before using them in a SQL query, allowing users with the",
-        "published": "2026-07-31T07:16:27.033"
-      },
-      {
-        "cve_id": "CVE-2026-65313",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "A provisioning script used when installing HIPASE-250 (formerly 250\nSCALA) engineering workstations sets a fixed, hard-coded x11vnc\npassword. Because the same credential is applied to every workstatio",
-        "published": "2026-07-31T09:16:59.090"
+        "base_score": 8.2,
+        "description": "A flaw was found in aap-gateway, a component of Ansible Automation Platform's Event-Driven Ansible (EDA). An unauthenticated remote attacker can bypass mutual Transport Layer Security (mTLS) authentic",
+        "published": "2026-07-31T16:17:05.387"
       },
       {
         "cve_id": "CVE-2026-62391",
@@ -341,46 +313,74 @@
         "published": "2026-07-31T15:16:27.433"
       },
       {
-        "cve_id": "CVE-2026-12720",
+        "cve_id": "CVE-2026-11770",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "The Kirki  WordPress plugin before 6.0.13 does not restrict which classes may be instantiated when it deserialises data that unauthenticated users can store, leading to PHP Object Injection that is tr",
-        "published": "2026-07-31T07:16:23.957"
+        "description": "A flaw was found in 389 Directory Server. An unauthenticated remote attacker can inject LDAP search filters into the CleanAllRUV replication status-check extended operation. Because the handler perfor",
+        "published": "2026-07-31T10:16:44.720"
       },
       {
-        "cve_id": "CVE-2026-14319",
+        "cve_id": "CVE-2026-15722",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "The GiveWP  WordPress plugin before 4.16.3 does not properly restrict access to a REST API endpoint that returns recurring-donation records, allowing unauthenticated users to retrieve information abou",
-        "published": "2026-07-31T07:16:24.593"
+        "description": "A stack buffer overflow flaw was found in 389 Directory Server (389-ds-base). The get_ruvelement_from_berval() function in repl5_ruv.c copies digit characters from a network-supplied RUV berval into a",
+        "published": "2026-07-31T10:16:44.863"
       },
       {
-        "cve_id": "CVE-2026-14333",
+        "cve_id": "CVE-2026-18358",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "The Demi  WordPress plugin before 0.0.7 stores its full-site backup archives in a publicly accessible location under a predictable filename and without access protection, allowing unauthenticated atta",
-        "published": "2026-07-31T07:16:24.703"
+        "description": "A flaw was found in gnome-remote-desktop as shipped in Red Hat Enterprise Linux. When the daemon is running in system mode with RDP enabled, the incoming connection handler bypasses the connection thr",
+        "published": "2026-07-31T13:17:19.933"
       },
       {
-        "cve_id": "CVE-2026-14830",
+        "cve_id": "CVE-2026-18446",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "The FlxWoo WordPress plugin before 3.1.1 does not verify with the payment processor that a checkout session was actually paid before marking the associated order as paid, allowing unauthenticated atta",
-        "published": "2026-07-31T07:16:25.097"
+        "description": "fast-uri before 4.1.2, 3.1.5, and 2.4.4 requires a literal double forward slash to recognize a URI authority, so a reference that uses a backslash based introducer in place of it (backslash backslash,",
+        "published": "2026-07-31T15:16:27.983"
       },
       {
-        "cve_id": "CVE-2026-14930",
+        "cve_id": "CVE-2026-17347",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "The JS Help Desk  WordPress plugin before 3.1.4 does not perform any authorization, nonce, or ownership check on a front-end request dispatcher, allowing unauthenticated users to upload files (limited",
-        "published": "2026-07-31T07:16:26.610"
+        "description": "The MASTER_PASSWORD_HOOK setting, introduced in pgAdmin 4 7.2, lets an administrator configure an external command that returns a per-user encryption key, with %u in the configured string replaced by ",
+        "published": "2026-07-31T16:16:59.140"
       },
       {
-        "cve_id": "CVE-2026-15048",
+        "cve_id": "CVE-2026-52856",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "The Geeky Bot  WordPress plugin before 1.2.8 does not perform an authorization check on one of its AJAX actions, allowing unauthenticated users to retrieve chat-history session metadata including Word",
-        "published": "2026-07-31T07:16:26.827"
+        "description": "Wings is the server control plane for Pterodactyl, a free, open-source game server management panel. Prior to 1.13.0, a malformed packet received during the SFTP connection handshake causes a Go panic",
+        "published": "2026-07-31T17:16:33.460"
+      },
+      {
+        "cve_id": "CVE-2026-16843",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "Some Hikvision Wireless Access Points are vulnerable to authenticated command execution due to insufficient input validation. Attackers with valid credentials can exploit this flaw by sending crafted ",
+        "published": "2026-07-31T11:17:05.567"
+      },
+      {
+        "cve_id": "CVE-2026-44615",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Path traversal vulnerability in Apache Zeppelin. When FileSystemNotebookRepo is configured, an authenticated attacker with permission to rename a note, or access to folder operations, could supply tra",
+        "published": "2026-07-31T11:17:10.087"
+      },
+      {
+        "cve_id": "CVE-2026-17348",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "In SERVER mode, pgAdmin 4 enforces authentication per route via the @pga_login_required decorator; the application's before_request hook only handles desktop-mode auto-login and the Kerberos/Webserver",
+        "published": "2026-07-31T16:16:59.287"
+      },
+      {
+        "cve_id": "CVE-2026-67607",
+        "severity": "MEDIUM",
+        "base_score": 5.9,
+        "description": "LightFTP 2.3.1 contains a race condition vulnerability that allows remote attackers to crash the server by racing a fresh connection that reuses the FTP context against an in-progress ABRT cleanup. At",
+        "published": "2026-07-31T16:17:11.913"
       }
     ]
   },
