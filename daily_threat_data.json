@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-01T16:49:18.889268+00:00",
+  "generated_at": "2026-08-01T20:40:20.262790+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
-        "score": 2.5,
+        "value": 4,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,24 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 202,
-    "critical_count": 6,
-    "high_count": 17,
+    "total": 171,
+    "critical_count": 4,
+    "high_count": 10,
     "cves": [
-      {
-        "cve_id": "CVE-2026-52855",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Wings is the server control plane for Pterodactyl, a free, open-source game server management panel. Prior to 1.12.3, {{config.}} placeholders in egg configuration-file templates allow a low-privilege",
-        "published": "2026-07-31T17:16:33.313"
-      },
-      {
-        "cve_id": "CVE-2026-67822",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Tenda W6-S 1.0.0.4(510) contains a stack-based buffer overflow vulnerability in the /goform/wifiSSIDset endpoint. The function formwrlSSIDset uses sprintf to copy user-controlled 'GO' and 'index' para",
-        "published": "2026-07-31T17:16:35.210"
-      },
       {
         "cve_id": "CVE-2026-68770",
         "severity": "CRITICAL",
@@ -271,11 +257,11 @@
         "published": "2026-07-31T22:17:03.630"
       },
       {
-        "cve_id": "CVE-2026-54725",
+        "cve_id": "CVE-2026-15964",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "vault-secrets-webhook is a Kubernetes mutating webhook that makes direct secret injection into Pods possible. Prior to 1.23.1, parseVaultConfig() in pkg/webhook/config.go accepts the vault.security.ba",
-        "published": "2026-07-31T18:17:17.013"
+        "base_score": 9.8,
+        "description": "The Single Sign On For TNG plugin for WordPress is vulnerable to Authentication Bypass via unauthenticated password reset in all versions up to, and including, 2.0.0. This is due to the `ssoprocess_aj",
+        "published": "2026-08-01T09:17:00.137"
       },
       {
         "cve_id": "CVE-2026-3141",
@@ -299,25 +285,25 @@
         "published": "2026-08-01T08:16:29.610"
       },
       {
-        "cve_id": "CVE-2026-53500",
+        "cve_id": "CVE-2026-16635",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Thumbor is an open-source photo thumbnail service by globo.com. Prior to 7.8.0, the ALLOWED_SOURCES configuration passes plain strings to re.match() without escaping dots, so a hostname differing at d",
-        "published": "2026-07-31T19:17:09.247"
+        "base_score": 8.8,
+        "description": "The Pronamic Pay plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 10.1.0 This is due to the `maybe_update_user_role()` function passing an attacker-cont",
+        "published": "2026-08-01T09:17:00.970"
       },
       {
-        "cve_id": "CVE-2026-53501",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Thumbor is an open-source photo thumbnail service by globo.com. Prior to 7.8.0, Thumbor\u2019s HMAC validation can be bypassed due to the use of Python\u2019s .replace() when removing the signature from the URL",
-        "published": "2026-07-31T19:17:09.413"
-      },
-      {
-        "cve_id": "CVE-2026-53510",
+        "cve_id": "CVE-2026-15450",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Savon is a Ruby SOAP client. From 0.9.8 until 2.17.2, Savon::Model .all_operations interpolates attacker-controlled WSDL operation names into Ruby source passed to module_eval, allowing Ruby code exec",
-        "published": "2026-07-31T20:16:51.530"
+        "description": "The Nex Forms \u2013 Ultimate Form Builder \u2013 Lite plugin for WordPress is vulnerable to arbitrary file deletion via path traversal in versions up to, and including, 9.2.3. This is due to the delete_file() ",
+        "published": "2026-08-01T09:16:59.023"
+      },
+      {
+        "cve_id": "CVE-2026-16144",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The Kali Forms \u2014 Contact Form & Drag-and-Drop Builder plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 2.4.20 via the _save_data function. This is due ",
+        "published": "2026-08-01T09:17:00.690"
       },
       {
         "cve_id": "CVE-2026-34641",
@@ -327,48 +313,6 @@
         "published": "2026-07-31T23:17:23.563"
       },
       {
-        "cve_id": "CVE-2026-52856",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Wings is the server control plane for Pterodactyl, a free, open-source game server management panel. Prior to 1.13.0, a malformed packet received during the SFTP connection handshake causes a Go panic",
-        "published": "2026-07-31T17:16:33.460"
-      },
-      {
-        "cve_id": "CVE-2026-53503",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Thumbor is an open-source photo thumbnail service by globo.com. Prior to 7.8.0, Thumbor's filters:convolution(<matrix>, <columns>, <should_normalize>) filter passes the user-controlled <columns> value",
-        "published": "2026-07-31T19:17:09.737"
-      },
-      {
-        "cve_id": "CVE-2026-53504",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Thumbor is an open-source photo thumbnail service by globo.com. Prior to 7.8.0, the convolution filter regular expression performs exponential backtracking on crafted repeated numeric input, allowing ",
-        "published": "2026-07-31T19:17:09.920"
-      },
-      {
-        "cve_id": "CVE-2026-53505",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Thumbor is an open-source photo thumbnail service by globo.com. Prior to 7.8.0, Thumbor's filters:proportion(<value>) filter does not enforce an upper bound on <value> and runs in the post-transform p",
-        "published": "2026-07-31T19:17:10.123"
-      },
-      {
-        "cve_id": "CVE-2026-53599",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "REDAXO is a PHP-based content management system. From 5.18.2 until 5.21.1, rex_mediapool::isAllowedExtension in redaxo/src/addons/mediapool/lib/mediapool.php lets an authenticated backend user with me",
-        "published": "2026-07-31T20:16:51.847"
-      },
-      {
-        "cve_id": "CVE-2026-62999",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Copier is a library and CLI app for rendering project templates. From 9.5.0 through 9.16.0, percent-encoded parent-directory segments or encoded path separators in a template URL can match a configure",
-        "published": "2026-07-31T20:16:53.523"
-      },
-      {
         "cve_id": "CVE-2026-15006",
         "severity": "HIGH",
         "base_score": 7.5,
@@ -376,11 +320,67 @@
         "published": "2026-08-01T03:16:25.460"
       },
       {
-        "cve_id": "CVE-2026-18394",
+        "cve_id": "CVE-2026-15052",
         "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "Incorrect authorization in the http_request tool in Strands Agents Tools before 0.8.2 might allow remote attackers to obtain credentials configured via HTTP_REQUEST_TOKEN_CONFIG by influencing the LLM",
-        "published": "2026-07-31T20:16:49.780"
+        "base_score": 7.2,
+        "description": "The MailChimp Subscribe Form, Optin Builder, PopUp Builder, Form Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Form Field Values in all versions up to, and including, 4",
+        "published": "2026-08-01T09:16:58.893"
+      },
+      {
+        "cve_id": "CVE-2026-65981",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "Coturn is a free open source implementation of TURN and STUN Server. Prior to 4.15.0, a server using --mobility authenticates a resumed REFRESH request with the resuming user's credentials but does no",
+        "published": "2026-07-31T21:17:31.857"
+      },
+      {
+        "cve_id": "CVE-2025-71403",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "better-auth versions before 1.1.20 contain a bypass vulnerability in trustedOrigins validation logic affecting absolute URLs and wildcard domains. Attackers can construct malicious callbackURL paramet",
+        "published": "2026-08-01T13:16:56.607"
+      },
+      {
+        "cve_id": "CVE-2026-17605",
+        "severity": "MEDIUM",
+        "base_score": 6.6,
+        "description": "The Payment forms, Buy now buttons, and Invoicing System | GetPaid plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 2.8.56 via the getpaid_payment_form_",
+        "published": "2026-08-01T09:17:01.820"
+      },
+      {
+        "cve_id": "CVE-2026-45377",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Decidim is a participatory democracy framework. Prior to 0.30.9, from 0.31.0 before 0.31.5, and in 0.32.0.rc1 before 0.32.0.rc2, the normal download_your_data flow requires the requester to be logged ",
+        "published": "2026-07-31T23:17:24.520"
+      },
+      {
+        "cve_id": "CVE-2026-16087",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "The Icegram Engage \u2013 Popups, Optins, CTAs & Lead Generation plugin for WordPress is vulnerable to second-order SQL Injection via 'messages[][id]' Parameter in all versions up to, and including, 3.1.42",
+        "published": "2026-08-01T09:17:00.290"
+      },
+      {
+        "cve_id": "CVE-2026-17580",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "The Advanced Views \u2013 Display Custom Fields (ACF, Pods, MetaBox), Posts, CPT and Woo Products anywhere in Gutenberg, Elementor, Divi, Beaver\u2026 plugin for WordPress is vulnerable to Sensitive Information",
+        "published": "2026-08-01T09:17:01.680"
+      },
+      {
+        "cve_id": "CVE-2026-6453",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "The CubeWP Framework plugin for WordPress is vulnerable to SQL Injection in all versions up to and including 1.1.30. This is due to insufficient input sanitization in the cubewp_remove_relation() AJAX",
+        "published": "2026-08-01T09:17:02.530"
+      },
+      {
+        "cve_id": "CVE-2026-13362",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "The SendPulse Email Marketing Newsletter plugin for WordPress is vulnerable to Stored Cross-Site Scripting via _sp_form_code Post Meta in all versions up to, and including, 2.2.5 due to insufficient i",
+        "published": "2026-08-01T03:16:25.307"
       }
     ]
   },
