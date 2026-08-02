@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-02T06:25:48.001054+00:00",
+  "generated_at": "2026-08-02T09:48:21.609699+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 9,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 176,
-    "critical_count": 4,
-    "high_count": 16,
+    "total": 112,
+    "critical_count": 9,
+    "high_count": 25,
     "cves": [
       {
         "cve_id": "CVE-2026-67308",
@@ -250,11 +250,11 @@
         "published": "2026-08-01T13:17:00.553"
       },
       {
-        "cve_id": "CVE-2026-15964",
+        "cve_id": "CVE-2026-67330",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Single Sign On For TNG plugin for WordPress is vulnerable to Authentication Bypass via unauthenticated password reset in all versions up to, and including, 2.0.0. This is due to the `ssoprocess_aj",
-        "published": "2026-08-01T09:17:00.137"
+        "base_score": 9.9,
+        "description": "@better-auth/scim (a better-auth plugin) versions >= 1.4.0-beta.27 through <= 1.6.21 and >= 1.7.0-beta.0 through <= 1.7.0-beta.9 contain an authorization bypass. SCIM token issuance did not reject pro",
+        "published": "2026-08-01T13:17:03.677"
       },
       {
         "cve_id": "CVE-2026-66402",
@@ -271,32 +271,95 @@
         "published": "2026-08-01T13:16:57.803"
       },
       {
-        "cve_id": "CVE-2026-15988",
+        "cve_id": "CVE-2026-67324",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "GitPython 3.1.50 fails to recognize joined short-option forms such as -u<value> (the short form of --upload-pack=<value>) when enforcing its default unsafe-option gate. When an application passes atta",
+        "published": "2026-08-01T13:17:02.770"
+      },
+      {
+        "cve_id": "CVE-2026-67340",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "ArcadeDB before 26.7.2 (arcadedb-engine) allows trigger scripts to look up host classes in java.lang.* (via Java.type) because ScriptTriggerExecutor adds java.lang.* to the allowed packages. An authen",
+        "published": "2026-08-01T13:17:05.127"
+      },
+      {
+        "cve_id": "CVE-2026-67341",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "ArcadeDB versions before 26.7.2 fail to enforce scripting authorization checks on the SQL DEFINE FUNCTION statement with LANGUAGE js. Attackers with database access can execute arbitrary JavaScript co",
+        "published": "2026-08-01T13:17:05.273"
+      },
+      {
+        "cve_id": "CVE-2026-67342",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "ArcadeDB versions before 26.7.2 contain an authorization bypass vulnerability in HTTP handlers for time series, batch, Prometheus, and Grafana endpoints that fail to validate database access permissio",
+        "published": "2026-08-01T13:17:05.417"
+      },
+      {
+        "cve_id": "CVE-2026-8457",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The WooCommerce - Social Login plugin for WordPress is vulnerable to Authentication Bypass in all versions up to and including 2.8.7. This is due to the plugin's Apple login handler accepting the Appl",
+        "published": "2026-08-02T00:16:23.047"
+      },
+      {
+        "cve_id": "CVE-2026-67325",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The AI Engine \u2013 The Chatbot, AI Framework & MCP for WordPress plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 3.6.5 This is due to missing or inc",
-        "published": "2026-08-01T08:16:29.610"
+        "description": "GitPython before 3.1.51 contains an incomplete command injection blocklist that fails to account for git's long-option prefix abbreviation feature. Attackers can bypass the unsafe options guard by usi",
+        "published": "2026-08-01T13:17:02.923"
       },
       {
-        "cve_id": "CVE-2026-16635",
+        "cve_id": "CVE-2026-67343",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The Pronamic Pay plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 10.1.0 This is due to the `maybe_update_user_role()` function passing an attacker-cont",
-        "published": "2026-08-01T09:17:00.970"
+        "description": "ArcadeDB versions before 26.7.2 fail to properly redact the cluster token in the GET /api/v1/server endpoint, allowing authenticated users to retrieve the arcadedb.ha.clusterToken value in cleartext. ",
+        "published": "2026-08-01T13:17:05.563"
       },
       {
-        "cve_id": "CVE-2026-15450",
+        "cve_id": "CVE-2026-67336",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Nex Forms \u2013 Ultimate Form Builder \u2013 Lite plugin for WordPress is vulnerable to arbitrary file deletion via path traversal in versions up to, and including, 9.2.3. This is due to the delete_file() ",
-        "published": "2026-08-01T09:16:59.023"
+        "base_score": 8.7,
+        "description": "better-auth versions before 1.6.11 contain insecure cryptographic defaults in the oidcProvider and mcp plugins that advertise the none algorithm and accept plain PKCE by default. Attackers can exploit",
+        "published": "2026-08-01T13:17:04.557"
       },
       {
-        "cve_id": "CVE-2026-16144",
+        "cve_id": "CVE-2026-67323",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "GitPython before 3.1.51 fails to guard against dangerous Git options passed as keyword arguments in Repo.archive() and git.ls_remote(), allowing command injection via options such as --exec/--upload-p",
+        "published": "2026-08-01T13:17:02.637"
+      },
+      {
+        "cve_id": "CVE-2026-67327",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "better-auth versions >= 1.1.3 and < 1.6.22 (and pre-release versions >= 1.7.0-beta.0 and < 1.7.0-beta.10) are vulnerable to account takeover via pre-account hijacking on magic-link and email-OTP sign-",
+        "published": "2026-08-01T13:17:03.227"
+      },
+      {
+        "cve_id": "CVE-2026-67331",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "better-auth SCIM versions from 1.5.0 before 1.7.0-beta.4 fail to bind non-organization SCIM providers to their creator by default, allowing authenticated users to manage other users' providers. Attack",
+        "published": "2026-08-01T13:17:03.833"
+      },
+      {
+        "cve_id": "CVE-2026-67328",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "The Kali Forms \u2014 Contact Form & Drag-and-Drop Builder plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 2.4.20 via the _save_data function. This is due ",
-        "published": "2026-08-01T09:17:00.690"
+        "description": "@better-auth/sso versions before 1.6.21 contain multiple authentication bypass vulnerabilities in SSO provider handling that allow attackers to sign in as arbitrary users. Attackers can exploit domain",
+        "published": "2026-08-01T13:17:03.380"
+      },
+      {
+        "cve_id": "CVE-2026-67352",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "luci-app-https-dns-proxy contains a stored cross-site scripting vulnerability in the resolver_url parameter that allows authenticated users to inject active HTML. When an administrator views the HTTPS",
+        "published": "2026-08-01T13:17:05.860"
       },
       {
         "cve_id": "CVE-2026-67288",
@@ -318,69 +381,6 @@
         "base_score": 7.5,
         "description": "FreeRDP before 3.29.0 (affected versions <= 3.28.0) contains a heap out-of-bounds read in update_process_glyph_fragments()/glyph_cache_fragment_put() in libfreerdp/cache/glyph.c. When handling a GLYPH",
         "published": "2026-08-01T13:16:58.097"
-      },
-      {
-        "cve_id": "CVE-2026-67296",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "FreeRDP before 3.29.0 contains a denial of service vulnerability in the RDPEI server channel handler that fails to validate maximum PDU body length before stream allocation. A malicious RDP client can",
-        "published": "2026-08-01T13:16:58.830"
-      },
-      {
-        "cve_id": "CVE-2026-67297",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "FreeRDP before 3.29.0 fails to enforce the RESPONSE_SIZE_LIMIT when processing Transfer-Encoding: chunked HTTP responses in http_response_recv_body(). Attackers controlling a malicious RD Gateway endp",
-        "published": "2026-08-01T13:16:58.967"
-      },
-      {
-        "cve_id": "CVE-2026-67298",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "FreeRDP versions 3.28.0 and earlier contain a heap buffer overflow in the server-side RAIL channel handler (rail_server_handle_messages() in channels/rail/server/rail_main.c). When processing a RAIL P",
-        "published": "2026-08-01T13:16:59.107"
-      },
-      {
-        "cve_id": "CVE-2026-67299",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "FreeRDP before 3.29.0 contains a client-side heap use-after-free in the async update message proxy for WINDOW_ICON_ORDER when AsyncUpdate is enabled (e.g. xfreerdp /async-update). In update_message_Wi",
-        "published": "2026-08-01T13:16:59.250"
-      },
-      {
-        "cve_id": "CVE-2026-67300",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "FreeRDP before 3.29.0 contains client-side heap use-after-free vulnerabilities in the async update message proxy for RAIL WINDOW_STATE_ORDER and NOTIFY_ICON_STATE_ORDER when AsyncUpdate is enabled. Wh",
-        "published": "2026-08-01T13:16:59.393"
-      },
-      {
-        "cve_id": "CVE-2026-67301",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "FreeRDP before 3.29.0 contains out-of-bounds read vulnerabilities in the async update message proxy for the PolygonSC and PolygonCB primary drawing orders. When AsyncUpdate is enabled (e.g., xfreerdp ",
-        "published": "2026-08-01T13:16:59.530"
-      },
-      {
-        "cve_id": "CVE-2026-67304",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "FreeRDP before 3.29.0 contains a null pointer dereference vulnerability in smartcard device control request cleanup when reader-state decoding fails. Attackers can send malformed smartcard IRP request",
-        "published": "2026-08-01T13:16:59.970"
-      },
-      {
-        "cve_id": "CVE-2026-15052",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The MailChimp Subscribe Form, Optin Builder, PopUp Builder, Form Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Form Field Values in all versions up to, and including, 4",
-        "published": "2026-08-01T09:16:58.893"
-      },
-      {
-        "cve_id": "CVE-2025-71403",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "better-auth versions before 1.1.20 contain a bypass vulnerability in trustedOrigins validation logic affecting absolute URLs and wildcard domains. Attackers can construct malicious callbackURL paramet",
-        "published": "2026-08-01T13:16:56.607"
       }
     ]
   },
