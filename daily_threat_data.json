@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T20:40:20.262790+00:00",
+  "generated_at": "2026-08-02T01:51:55.042888+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -238,30 +238,30 @@
     ]
   },
   "nvd": {
-    "total": 171,
+    "total": 150,
     "critical_count": 4,
-    "high_count": 10,
+    "high_count": 18,
     "cves": [
-      {
-        "cve_id": "CVE-2026-68770",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "sentence-transformers contains a security control bypass vulnerability that allows attackers to achieve arbitrary code execution by exploiting a logic flaw in the import_module_class helper within sen",
-        "published": "2026-07-31T21:17:32.440"
-      },
-      {
-        "cve_id": "CVE-2026-68771",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "ComfyUI v0.23.0 contains an unsafe deserialization vulnerability in the LoadTrainingDataset node that allows unauthenticated remote attackers to execute arbitrary Python code by uploading a crafted pi",
-        "published": "2026-07-31T22:17:03.630"
-      },
       {
         "cve_id": "CVE-2026-15964",
         "severity": "CRITICAL",
         "base_score": 9.8,
         "description": "The Single Sign On For TNG plugin for WordPress is vulnerable to Authentication Bypass via unauthenticated password reset in all versions up to, and including, 2.0.0. This is due to the `ssoprocess_aj",
         "published": "2026-08-01T09:17:00.137"
+      },
+      {
+        "cve_id": "CVE-2026-66402",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "FreeRDP before 3.29.0 (affected versions <= 3.28.0) contains multiple TLS certificate identity validation weaknesses in tls_verify_certificate(), tls_match_hostname(), and x509_utils_get_dns_names(). ",
+        "published": "2026-08-01T13:16:57.487"
+      },
+      {
+        "cve_id": "CVE-2026-67289",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "FreeRDP before 3.29.0 (affected versions <= 3.28.0) does not validate CRLF and control characters in the server-controlled RDP redirection TargetNetAddress field. This value is copied into the client'",
+        "published": "2026-08-01T13:16:57.803"
       },
       {
         "cve_id": "CVE-2026-3141",
@@ -306,13 +306,6 @@
         "published": "2026-08-01T09:17:00.690"
       },
       {
-        "cve_id": "CVE-2026-34641",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Premiere Pro is affected by an out-of-bounds write vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction ",
-        "published": "2026-07-31T23:17:23.563"
-      },
-      {
         "cve_id": "CVE-2026-15006",
         "severity": "HIGH",
         "base_score": 7.5,
@@ -320,67 +313,74 @@
         "published": "2026-08-01T03:16:25.460"
       },
       {
-        "cve_id": "CVE-2026-15052",
+        "cve_id": "CVE-2026-67288",
         "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The MailChimp Subscribe Form, Optin Builder, PopUp Builder, Form Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Form Field Values in all versions up to, and including, 4",
-        "published": "2026-08-01T09:16:58.893"
+        "base_score": 7.5,
+        "description": "FreeRDP before 3.29.0 contains a null pointer dereference vulnerability in smartcard cache request decoders that accept NULL NDR pointers for LookupName in SCARD_IOCTL_READCACHEA and SCARD_IOCTL_WRITE",
+        "published": "2026-08-01T13:16:57.650"
       },
       {
-        "cve_id": "CVE-2026-65981",
+        "cve_id": "CVE-2026-67290",
         "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Coturn is a free open source implementation of TURN and STUN Server. Prior to 4.15.0, a server using --mobility authenticates a resumed REFRESH request with the resuming user's credentials but does no",
-        "published": "2026-07-31T21:17:31.857"
+        "base_score": 7.5,
+        "description": "FreeRDP before 3.29.0 contains a heap out-of-bounds read vulnerability in the TSMF FFmpeg decoder when parsing AVC1 MPEG2VIDEOINFO media types with insufficient ExtraData. Attackers can send malformed",
+        "published": "2026-08-01T13:16:57.940"
       },
       {
-        "cve_id": "CVE-2025-71403",
+        "cve_id": "CVE-2026-67291",
         "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "better-auth versions before 1.1.20 contain a bypass vulnerability in trustedOrigins validation logic affecting absolute URLs and wildcard domains. Attackers can construct malicious callbackURL paramet",
-        "published": "2026-08-01T13:16:56.607"
+        "base_score": 7.5,
+        "description": "FreeRDP before 3.29.0 (affected versions <= 3.28.0) contains a heap out-of-bounds read in update_process_glyph_fragments()/glyph_cache_fragment_put() in libfreerdp/cache/glyph.c. When handling a GLYPH",
+        "published": "2026-08-01T13:16:58.097"
       },
       {
-        "cve_id": "CVE-2026-17605",
-        "severity": "MEDIUM",
-        "base_score": 6.6,
-        "description": "The Payment forms, Buy now buttons, and Invoicing System | GetPaid plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 2.8.56 via the getpaid_payment_form_",
-        "published": "2026-08-01T09:17:01.820"
+        "cve_id": "CVE-2026-67296",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "FreeRDP before 3.29.0 contains a denial of service vulnerability in the RDPEI server channel handler that fails to validate maximum PDU body length before stream allocation. A malicious RDP client can",
+        "published": "2026-08-01T13:16:58.830"
       },
       {
-        "cve_id": "CVE-2026-45377",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Decidim is a participatory democracy framework. Prior to 0.30.9, from 0.31.0 before 0.31.5, and in 0.32.0.rc1 before 0.32.0.rc2, the normal download_your_data flow requires the requester to be logged ",
-        "published": "2026-07-31T23:17:24.520"
+        "cve_id": "CVE-2026-67297",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "FreeRDP before 3.29.0 fails to enforce the RESPONSE_SIZE_LIMIT when processing Transfer-Encoding: chunked HTTP responses in http_response_recv_body(). Attackers controlling a malicious RD Gateway endp",
+        "published": "2026-08-01T13:16:58.967"
       },
       {
-        "cve_id": "CVE-2026-16087",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "The Icegram Engage \u2013 Popups, Optins, CTAs & Lead Generation plugin for WordPress is vulnerable to second-order SQL Injection via 'messages[][id]' Parameter in all versions up to, and including, 3.1.42",
-        "published": "2026-08-01T09:17:00.290"
+        "cve_id": "CVE-2026-67298",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "FreeRDP versions 3.28.0 and earlier contain a heap buffer overflow in the server-side RAIL channel handler (rail_server_handle_messages() in channels/rail/server/rail_main.c). When processing a RAIL P",
+        "published": "2026-08-01T13:16:59.107"
       },
       {
-        "cve_id": "CVE-2026-17580",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "The Advanced Views \u2013 Display Custom Fields (ACF, Pods, MetaBox), Posts, CPT and Woo Products anywhere in Gutenberg, Elementor, Divi, Beaver\u2026 plugin for WordPress is vulnerable to Sensitive Information",
-        "published": "2026-08-01T09:17:01.680"
+        "cve_id": "CVE-2026-67299",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "FreeRDP before 3.29.0 contains a client-side heap use-after-free in the async update message proxy for WINDOW_ICON_ORDER when AsyncUpdate is enabled (e.g. xfreerdp /async-update). In update_message_Wi",
+        "published": "2026-08-01T13:16:59.250"
       },
       {
-        "cve_id": "CVE-2026-6453",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "The CubeWP Framework plugin for WordPress is vulnerable to SQL Injection in all versions up to and including 1.1.30. This is due to insufficient input sanitization in the cubewp_remove_relation() AJAX",
-        "published": "2026-08-01T09:17:02.530"
+        "cve_id": "CVE-2026-67300",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "FreeRDP before 3.29.0 contains client-side heap use-after-free vulnerabilities in the async update message proxy for RAIL WINDOW_STATE_ORDER and NOTIFY_ICON_STATE_ORDER when AsyncUpdate is enabled. Wh",
+        "published": "2026-08-01T13:16:59.393"
       },
       {
-        "cve_id": "CVE-2026-13362",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The SendPulse Email Marketing Newsletter plugin for WordPress is vulnerable to Stored Cross-Site Scripting via _sp_form_code Post Meta in all versions up to, and including, 2.2.5 due to insufficient i",
-        "published": "2026-08-01T03:16:25.307"
+        "cve_id": "CVE-2026-67301",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "FreeRDP before 3.29.0 contains out-of-bounds read vulnerabilities in the async update message proxy for the PolygonSC and PolygonCB primary drawing orders. When AsyncUpdate is enabled (e.g., xfreerdp ",
+        "published": "2026-08-01T13:16:59.530"
+      },
+      {
+        "cve_id": "CVE-2026-67304",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "FreeRDP before 3.29.0 contains a null pointer dereference vulnerability in smartcard device control request cleanup when reader-state decoding fails. Attackers can send malformed smartcard IRP request",
+        "published": "2026-08-01T13:16:59.970"
       }
     ]
   },
