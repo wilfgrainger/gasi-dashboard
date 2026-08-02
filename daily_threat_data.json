@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-02T01:51:55.042888+00:00",
+  "generated_at": "2026-08-02T06:25:48.001054+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -238,10 +238,17 @@
     ]
   },
   "nvd": {
-    "total": 150,
+    "total": 176,
     "critical_count": 4,
-    "high_count": 18,
+    "high_count": 16,
     "cves": [
+      {
+        "cve_id": "CVE-2026-67308",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Wazuh workflows before 44bf114 contain a shell injection vulnerability in GitHub Actions that allows attackers to execute arbitrary commands by submitting pull requests with crafted VERSION.json files",
+        "published": "2026-08-01T13:17:00.553"
+      },
       {
         "cve_id": "CVE-2026-15964",
         "severity": "CRITICAL",
@@ -262,20 +269,6 @@
         "base_score": 9.8,
         "description": "FreeRDP before 3.29.0 (affected versions <= 3.28.0) does not validate CRLF and control characters in the server-controlled RDP redirection TargetNetAddress field. This value is copied into the client'",
         "published": "2026-08-01T13:16:57.803"
-      },
-      {
-        "cve_id": "CVE-2026-3141",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The FormGent plugin for WordPress is vulnerable to unauthorized arbitrary file deletion due to a missing capability check on the /wp-json/formgent/responses/attachments REST API endpoint in all versio",
-        "published": "2026-08-01T06:16:26.030"
-      },
-      {
-        "cve_id": "CVE-2026-15414",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Subscriptions for WooCommerce plugin for WordPress is vulnerable to Privilege Escalation in versions up to, and including, 2.0.0. This is due to the `save_meta_boxes()` function persisting the `_w",
-        "published": "2026-08-01T03:16:25.757"
       },
       {
         "cve_id": "CVE-2026-15988",
@@ -304,13 +297,6 @@
         "base_score": 8.1,
         "description": "The Kali Forms \u2014 Contact Form & Drag-and-Drop Builder plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 2.4.20 via the _save_data function. This is due ",
         "published": "2026-08-01T09:17:00.690"
-      },
-      {
-        "cve_id": "CVE-2026-15006",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Bit integrations \u2013 Form Integration, Webhook, Spreadsheets, CRM, LMS & Email Automation plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 2.9.0 via th",
-        "published": "2026-08-01T03:16:25.460"
       },
       {
         "cve_id": "CVE-2026-67288",
@@ -381,6 +367,20 @@
         "base_score": 7.5,
         "description": "FreeRDP before 3.29.0 contains a null pointer dereference vulnerability in smartcard device control request cleanup when reader-state decoding fails. Attackers can send malformed smartcard IRP request",
         "published": "2026-08-01T13:16:59.970"
+      },
+      {
+        "cve_id": "CVE-2026-15052",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The MailChimp Subscribe Form, Optin Builder, PopUp Builder, Form Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Form Field Values in all versions up to, and including, 4",
+        "published": "2026-08-01T09:16:58.893"
+      },
+      {
+        "cve_id": "CVE-2025-71403",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "better-auth versions before 1.1.20 contain a bypass vulnerability in trustedOrigins validation logic affecting absolute URLs and wildcard domains. Attackers can construct malicious callbackURL paramet",
+        "published": "2026-08-01T13:16:56.607"
       }
     ]
   },
