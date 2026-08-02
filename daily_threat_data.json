@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-02T12:59:08.513059+00:00",
+  "generated_at": "2026-08-02T16:47:57.125732+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
-        "score": 2.5,
+        "value": 3,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,59 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 111,
-    "critical_count": 8,
-    "high_count": 25,
+    "total": 56,
+    "critical_count": 3,
+    "high_count": 10,
     "cves": [
-      {
-        "cve_id": "CVE-2026-67330",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "@better-auth/scim (a better-auth plugin) versions >= 1.4.0-beta.27 through <= 1.6.21 and >= 1.7.0-beta.0 through <= 1.7.0-beta.9 contain an authorization bypass. SCIM token issuance did not reject pro",
-        "published": "2026-08-01T13:17:03.677"
-      },
-      {
-        "cve_id": "CVE-2026-66402",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "FreeRDP before 3.29.0 (affected versions <= 3.28.0) contains multiple TLS certificate identity validation weaknesses in tls_verify_certificate(), tls_match_hostname(), and x509_utils_get_dns_names(). ",
-        "published": "2026-08-01T13:16:57.487"
-      },
-      {
-        "cve_id": "CVE-2026-67289",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "FreeRDP before 3.29.0 (affected versions <= 3.28.0) does not validate CRLF and control characters in the server-controlled RDP redirection TargetNetAddress field. This value is copied into the client'",
-        "published": "2026-08-01T13:16:57.803"
-      },
-      {
-        "cve_id": "CVE-2026-67324",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "GitPython 3.1.50 fails to recognize joined short-option forms such as -u<value> (the short form of --upload-pack=<value>) when enforcing its default unsafe-option gate. When an application passes atta",
-        "published": "2026-08-01T13:17:02.770"
-      },
-      {
-        "cve_id": "CVE-2026-67340",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "ArcadeDB before 26.7.2 (arcadedb-engine) allows trigger scripts to look up host classes in java.lang.* (via Java.type) because ScriptTriggerExecutor adds java.lang.* to the allowed packages. An authen",
-        "published": "2026-08-01T13:17:05.127"
-      },
-      {
-        "cve_id": "CVE-2026-67341",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "ArcadeDB versions before 26.7.2 fail to enforce scripting authorization checks on the SQL DEFINE FUNCTION statement with LANGUAGE js. Attackers with database access can execute arbitrary JavaScript co",
-        "published": "2026-08-01T13:17:05.273"
-      },
-      {
-        "cve_id": "CVE-2026-67342",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "ArcadeDB versions before 26.7.2 contain an authorization bypass vulnerability in HTTP handlers for time series, batch, Prometheus, and Grafana endpoints that fail to validate database access permissio",
-        "published": "2026-08-01T13:17:05.417"
-      },
       {
         "cve_id": "CVE-2026-8457",
         "severity": "CRITICAL",
@@ -299,88 +250,137 @@
         "published": "2026-08-02T00:16:23.047"
       },
       {
-        "cve_id": "CVE-2026-67325",
+        "cve_id": "CVE-2026-65321",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "PyAthena prior to 3.35.4 contains a sql injection vulnerability that allows unauthenticated attackers to inject arbitrary SQL by exploiting improper quote-escaping in DefaultParameterFormatter.format(",
+        "published": "2026-08-02T15:16:33.957"
+      },
+      {
+        "cve_id": "CVE-2026-68579",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "FreeRDP before 3.30.0 (<= 3.29.0) contains a heap-based buffer overflow in the Windows clipboard client's CliprdrStream_Read function (client/Windows/wf_cliprdr.c). When an OLE paste consumer (e.g. ex",
+        "published": "2026-08-02T13:16:53.800"
+      },
+      {
+        "cve_id": "CVE-2026-67356",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "GitPython before 3.1.51 contains an incomplete command injection blocklist that fails to account for git's long-option prefix abbreviation feature. Attackers can bypass the unsafe options guard by usi",
-        "published": "2026-08-01T13:17:02.923"
+        "description": "ArcadeDB before 26.7.3 binds the real LocalDatabase object into JavaScript trigger contexts with HostAccess.ALL, allowing schema-admins to call getSecurity().createUser() without permission checks. At",
+        "published": "2026-08-02T13:16:53.363"
       },
       {
-        "cve_id": "CVE-2026-67343",
+        "cve_id": "CVE-2025-71399",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "ArcadeDB versions before 26.7.2 fail to properly redact the cluster token in the GET /api/v1/server endpoint, allowing authenticated users to retrieve the arcadedb.ha.clusterToken value in cleartext. ",
-        "published": "2026-08-01T13:17:05.563"
+        "base_score": 8.6,
+        "description": "Better Auth relies on better-call, which uses the rou3 router library. In affected versions of rou3, paths are normalized by removing empty segments, so /path, //path, and ///path resolve to the same ",
+        "published": "2026-08-02T13:16:52.210"
       },
       {
-        "cve_id": "CVE-2026-67336",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "better-auth versions before 1.6.11 contain insecure cryptographic defaults in the oidcProvider and mcp plugins that advertise the none algorithm and accept plain PKCE by default. Attackers can exploit",
-        "published": "2026-08-01T13:17:04.557"
-      },
-      {
-        "cve_id": "CVE-2026-67323",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "GitPython before 3.1.51 fails to guard against dangerous Git options passed as keyword arguments in Repo.archive() and git.ls_remote(), allowing command injection via options such as --exec/--upload-p",
-        "published": "2026-08-01T13:17:02.637"
-      },
-      {
-        "cve_id": "CVE-2026-67327",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "better-auth versions >= 1.1.3 and < 1.6.22 (and pre-release versions >= 1.7.0-beta.0 and < 1.7.0-beta.10) are vulnerable to account takeover via pre-account hijacking on magic-link and email-OTP sign-",
-        "published": "2026-08-01T13:17:03.227"
-      },
-      {
-        "cve_id": "CVE-2026-67331",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "better-auth SCIM versions from 1.5.0 before 1.7.0-beta.4 fail to bind non-organization SCIM providers to their creator by default, allowing authenticated users to manage other users' providers. Attack",
-        "published": "2026-08-01T13:17:03.833"
-      },
-      {
-        "cve_id": "CVE-2026-67328",
+        "cve_id": "CVE-2026-68581",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "@better-auth/sso versions before 1.6.21 contain multiple authentication bypass vulnerabilities in SSO provider handling that allow attackers to sign in as arbitrary users. Attackers can exploit domain",
-        "published": "2026-08-01T13:17:03.380"
+        "description": "Vikunja versions 0.22.0 through 2.3.0 fail to validate the principal type in API token management. Because user IDs and link-share IDs are independent numeric sequences and both resolve through a gene",
+        "published": "2026-08-02T13:16:54.087"
       },
       {
-        "cve_id": "CVE-2026-67352",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "luci-app-https-dns-proxy contains a stored cross-site scripting vulnerability in the resolver_url parameter that allows authenticated users to inject active HTML. When an administrator views the HTTPS",
-        "published": "2026-08-01T13:17:05.860"
-      },
-      {
-        "cve_id": "CVE-2026-67288",
+        "cve_id": "CVE-2026-13339",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "FreeRDP before 3.29.0 contains a null pointer dereference vulnerability in smartcard cache request decoders that accept NULL NDR pointers for LookupName in SCARD_IOCTL_READCACHEA and SCARD_IOCTL_WRITE",
-        "published": "2026-08-01T13:16:57.650"
+        "description": "The CubeWP Framework plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 1.1.30 via the 'cubewp_get_svg_content' function. This makes it possible for unauth",
+        "published": "2026-08-02T00:16:22.760"
       },
       {
-        "cve_id": "CVE-2026-67290",
+        "cve_id": "CVE-2026-18352",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "FreeRDP before 3.29.0 contains a heap out-of-bounds read vulnerability in the TSMF FFmpeg decoder when parsing AVC1 MPEG2VIDEOINFO media types with insufficient ExtraData. Attackers can send malformed",
-        "published": "2026-08-01T13:16:57.940"
+        "description": "The User Access Manager plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 2.3.15 via the 'uamgetfile' parameter parameter. This makes it possible for unau",
+        "published": "2026-08-02T00:16:22.900"
       },
       {
-        "cve_id": "CVE-2026-67291",
+        "cve_id": "CVE-2026-67357",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "FreeRDP before 3.29.0 (affected versions <= 3.28.0) contains a heap out-of-bounds read in update_process_glyph_fragments()/glyph_cache_fragment_put() in libfreerdp/cache/glyph.c. When handling a GLYPH",
-        "published": "2026-08-01T13:16:58.097"
+        "description": "ArcadeDB versions before 26.7.3 contain an information disclosure vulnerability in the MCP get_server_settings tool that leaks the arcadedb.ha.clusterToken in cleartext. Attackers with MCP access can ",
+        "published": "2026-08-02T13:16:53.520"
       },
       {
-        "cve_id": "CVE-2026-67296",
+        "cve_id": "CVE-2026-68578",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "FreeRDP before 3.29.0 contains a denial of service vulnerability in the RDPEI server channel handler that fails to validate maximum PDU body length before stream allocation. A malicious RDP client can",
-        "published": "2026-08-01T13:16:58.830"
+        "description": "ArcadeDB versions before 26.7.3 fail to bind the authenticated principal in the MCP HTTP transport, causing all engine permission checks to silently pass as no-ops. Non-root MCP-allowed users can perf",
+        "published": "2026-08-02T13:16:53.657"
+      },
+      {
+        "cve_id": "CVE-2026-68580",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "FreeRDP before 3.29.0 contains integer overflow vulnerabilities in the audio input redirection channel (audin) across ALSA, sndio, WinMM, and OpenSL ES backends that fail to validate the FramesPerPack",
+        "published": "2026-08-02T13:16:53.950"
+      },
+      {
+        "cve_id": "CVE-2025-71400",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "better-auth passkey versions before 1.4.0 contain an insecure direct object reference vulnerability in the passkey deletion endpoint that allows authenticated users to delete arbitrary passkeys by ID.",
+        "published": "2026-08-02T13:16:52.387"
+      },
+      {
+        "cve_id": "CVE-2026-9856",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "A vulnerability in huggingface/transformers versions <=5.8.0.dev0 allows an attacker to perform arbitrary file writes via path traversal. The issue resides in the `save_pretrained()` methods of `PreTr",
+        "published": "2026-08-02T16:16:25.413"
+      },
+      {
+        "cve_id": "CVE-2026-18571",
+        "severity": "MEDIUM",
+        "base_score": 6.6,
+        "description": "A flaw was found in the user creation component of Keycloak when Fine-Grained Admin Permissions V2 (FGAP V2) is enabled. This issue allows a sub-administrator with permission to create users to add th",
+        "published": "2026-08-02T06:16:42.000"
+      },
+      {
+        "cve_id": "CVE-2026-9335",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "A vulnerability in keras-team/keras versions <= 3.14.0 allows arbitrary local HDF5 file content disclosure due to improper handling of HDF5 ExternalLinks. The `KerasFileEditor` and `keras.saving.load_",
+        "published": "2026-08-02T05:16:20.827"
+      },
+      {
+        "cve_id": "CVE-2026-18572",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Keycloak provides authorization services that allow administrators to restrict access to resources based on time policies (for example, only allowing access during business hours). A flaw was discover",
+        "published": "2026-08-02T06:16:42.290"
+      },
+      {
+        "cve_id": "CVE-2026-18573",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "A flaw was found in the keycloak-services component of Keycloak, which is used for managing authentication and authorization flows. The issue occurs when a realm administrator configures client polici",
+        "published": "2026-08-02T06:16:42.673"
+      },
+      {
+        "cve_id": "CVE-2026-68582",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Vikunja versions >= 0.24.0 and <= 2.3.0 contain a broken object level authorization (BOLA) vulnerability in the task-collection endpoint (GET /api/v1/projects/{project}/views/{view}/tasks). The endpoi",
+        "published": "2026-08-02T13:16:54.233"
+      },
+      {
+        "cve_id": "CVE-2026-12231",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "The Exclusive Addons for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the \u2018 exad_infobox_image\u2019 parameter in all versions up to, and including, 2.7.9.8 due to insuff",
+        "published": "2026-08-02T09:16:33.580"
+      },
+      {
+        "cve_id": "CVE-2025-71401",
+        "severity": "MEDIUM",
+        "base_score": 5.9,
+        "description": "better-auth (npm) before 1.4.2 allows an external request to configure baseURL when it is not otherwise defined (e.g., BETTER_AUTH_URL is unset). An attacker able to make the very first request to the",
+        "published": "2026-08-02T13:16:52.530"
       }
     ]
   },
