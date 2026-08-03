@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-03T11:12:43.386052+00:00",
+  "generated_at": "2026-08-03T14:16:14.166845+00:00",
   "threat_score": {
-    "score": 6.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
-        "score": 2.0,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 150,
-    "critical_count": 2,
-    "high_count": 11,
+    "total": 145,
+    "critical_count": 1,
+    "high_count": 4,
     "cves": [
       {
         "cve_id": "CVE-2026-65321",
@@ -250,67 +250,11 @@
         "published": "2026-08-02T15:16:33.957"
       },
       {
-        "cve_id": "CVE-2026-68579",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "FreeRDP before 3.30.0 (<= 3.29.0) contains a heap-based buffer overflow in the Windows clipboard client's CliprdrStream_Read function (client/Windows/wf_cliprdr.c). When an OLE paste consumer (e.g. ex",
-        "published": "2026-08-02T13:16:53.800"
-      },
-      {
-        "cve_id": "CVE-2026-67356",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "ArcadeDB before 26.7.3 binds the real LocalDatabase object into JavaScript trigger contexts with HostAccess.ALL, allowing schema-admins to call getSecurity().createUser() without permission checks. At",
-        "published": "2026-08-02T13:16:53.363"
-      },
-      {
-        "cve_id": "CVE-2025-71399",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Better Auth relies on better-call, which uses the rou3 router library. In affected versions of rou3, paths are normalized by removing empty segments, so /path, //path, and ///path resolve to the same ",
-        "published": "2026-08-02T13:16:52.210"
-      },
-      {
-        "cve_id": "CVE-2026-68581",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Vikunja versions 0.22.0 through 2.3.0 fail to validate the principal type in API token management. Because user IDs and link-share IDs are independent numeric sequences and both resolve through a gene",
-        "published": "2026-08-02T13:16:54.087"
-      },
-      {
-        "cve_id": "CVE-2026-67357",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "ArcadeDB versions before 26.7.3 contain an information disclosure vulnerability in the MCP get_server_settings tool that leaks the arcadedb.ha.clusterToken in cleartext. Attackers with MCP access can ",
-        "published": "2026-08-02T13:16:53.520"
-      },
-      {
-        "cve_id": "CVE-2026-68578",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "ArcadeDB versions before 26.7.3 fail to bind the authenticated principal in the MCP HTTP transport, causing all engine permission checks to silently pass as no-ops. Non-root MCP-allowed users can perf",
-        "published": "2026-08-02T13:16:53.657"
-      },
-      {
-        "cve_id": "CVE-2026-68580",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "FreeRDP before 3.29.0 contains integer overflow vulnerabilities in the audio input redirection channel (audin) across ALSA, sndio, WinMM, and OpenSL ES backends that fail to validate the FramesPerPack",
-        "published": "2026-08-02T13:16:53.950"
-      },
-      {
         "cve_id": "CVE-2026-3245",
         "severity": "HIGH",
         "base_score": 7.5,
         "description": "A deserialization vulnerability in PRISMAproduction Version 6.5 or earlier that may lead to arbitrary code execution.",
         "published": "2026-08-03T00:16:29.280"
-      },
-      {
-        "cve_id": "CVE-2025-71400",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "better-auth passkey versions before 1.4.0 contain an insecure direct object reference vulnerability in the passkey deletion endpoint that allows authenticated users to delete arbitrary passkeys by ID.",
-        "published": "2026-08-02T13:16:52.387"
       },
       {
         "cve_id": "CVE-2026-9856",
@@ -334,20 +278,6 @@
         "published": "2026-08-02T17:16:58.163"
       },
       {
-        "cve_id": "CVE-2026-68582",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Vikunja versions >= 0.24.0 and <= 2.3.0 contain a broken object level authorization (BOLA) vulnerability in the task-collection endpoint (GET /api/v1/projects/{project}/views/{view}/tasks). The endpoi",
-        "published": "2026-08-02T13:16:54.233"
-      },
-      {
-        "cve_id": "CVE-2025-71401",
-        "severity": "MEDIUM",
-        "base_score": 5.9,
-        "description": "better-auth (npm) before 1.4.2 allows an external request to configure baseURL when it is not otherwise defined (e.g., BETTER_AUTH_URL is unset). An attacker able to make the very first request to the",
-        "published": "2026-08-02T13:16:52.530"
-      },
-      {
         "cve_id": "CVE-2026-6694",
         "severity": "MEDIUM",
         "base_score": 5.5,
@@ -362,13 +292,6 @@
         "published": "2026-08-03T06:16:41.263"
       },
       {
-        "cve_id": "CVE-2026-68583",
-        "severity": "MEDIUM",
-        "base_score": 5.4,
-        "description": "luci-app-adblock-fast before 1.2.4-4 contains a stored cross-site scripting vulnerability in the blocklist name field that allows lower-privileged users to inject active HTML. When an administrator vi",
-        "published": "2026-08-02T13:16:54.377"
-      },
-      {
         "cve_id": "CVE-2026-18584",
         "severity": "MEDIUM",
         "base_score": 5.4,
@@ -381,6 +304,83 @@
         "base_score": 5.3,
         "description": "A security flaw has been discovered in mz-automation libiec61850 up to 1.6.1. This vulnerability affects the function Reporting_RCBWriteAccessHandler of the file src/iec61850/server/mms_mapping/report",
         "published": "2026-08-03T02:16:29.163"
+      },
+      {
+        "cve_id": "CVE-2026-18583",
+        "severity": "MEDIUM",
+        "base_score": 5.3,
+        "description": "A weakness has been identified in mz-automation libiec61850 up to 1.6.1. This issue affects the function checkDataSetAccess of the file src/iec61850/server/mms_mapping/mms_mapping.c of the component M",
+        "published": "2026-08-03T06:16:37.100"
+      },
+      {
+        "cve_id": "CVE-2026-18585",
+        "severity": "MEDIUM",
+        "base_score": 4.3,
+        "description": "A vulnerability was detected in GL.iNet MT3000, MT6000, BE9300, BE3600, MT3600BE, E5800, BE6500, MT5000, X3000, XE3000 and MT2500 up to 20260707. The affected element is the function nas-web.get_file_",
+        "published": "2026-08-03T06:16:37.710"
+      },
+      {
+        "cve_id": "CVE-2026-18581",
+        "severity": "LOW",
+        "base_score": 3.3,
+        "description": "A vulnerability was determined in ggml-org llama.cpp e15efe0. Affected by this issue is some unknown functionality of the file common/jinja/parser.cpp of the component Jinja Minja Template Parser. Exe",
+        "published": "2026-08-03T01:16:43.300"
+      },
+      {
+        "cve_id": "CVE-2026-10774",
+        "severity": "LOW",
+        "base_score": 2.4,
+        "description": "Zephyr's Bluetooth Mesh subnet key management leaks one PSA Crypto key slot on every subnet-key teardown. In subsys/bluetooth/mesh/subnet.c, net_keys_create() imports the Private Beacon Key into a PSA",
+        "published": "2026-08-02T15:16:33.793"
+      },
+      {
+        "cve_id": "CVE-2026-18577",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "An incomplete patch for CVE-2026-18556 allows for authentication bypass and account takeover in N-central Versions through 2026.3.1",
+        "published": "2026-08-02T23:16:26.210"
+      },
+      {
+        "cve_id": "CVE-2026-12185",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In Bouncy Castle for Java before 1.85, BKS/UBER keystore allocates from untrusted lengths before integrity check. This issue also affects Bouncy Castle for Java LTS before 2.73.12.",
+        "published": "2026-08-03T01:16:42.987"
+      },
+      {
+        "cve_id": "CVE-2026-15055",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In Bouncy Castle for Java before 1.85, PKCS#8 / PBES2 decryptors honour unbounded KDF cost from input. This issue also affects Bouncy Castle for Java LTS before 2.73.12, and Bouncy Castle for Java FIP",
+        "published": "2026-08-03T01:16:43.157"
+      },
+      {
+        "cve_id": "CVE-2026-59638",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In Bouncy Castle for Java before 1.85, JSSE hostname verifier CN-fallback enabled by default despite documented opt-in. This issue also affects Bouncy Castle for Java LTS before 2.73.12, and Bouncy Ca",
+        "published": "2026-08-03T01:16:43.543"
+      },
+      {
+        "cve_id": "CVE-2026-59639",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In Bouncy Castle for Java before 1.85, CMS verifySignatures returns true for SignedData with zero signers. This issue also affects Bouncy Castle for Java LTS before 2.73.12, and Bouncy Castle for Java",
+        "published": "2026-08-03T01:16:43.700"
+      },
+      {
+        "cve_id": "CVE-2026-59640",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In Bouncy Castle for Java before 1.85, OpenPGP CFB quick-check oracle active on symmetric/session-key paths. This issue also affects Bouncy Castle for Java LTS before 2.73.12, and Bouncy Castle for Ja",
+        "published": "2026-08-03T01:16:43.907"
+      },
+      {
+        "cve_id": "CVE-2026-59641",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In Bouncy Castle for Java before 1.85, S/MIME validator trusts signer-asserted signingTime for path validation. This issue also affects Bouncy Castle for Java LTS before 2.73.12, and Bouncy Castle for",
+        "published": "2026-08-03T01:16:44.060"
       }
     ]
   },
