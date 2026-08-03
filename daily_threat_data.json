@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-03T14:16:14.166845+00:00",
+  "generated_at": "2026-08-03T17:46:41.861806+00:00",
   "threat_score": {
-    "score": 5.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 4,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,16 +238,37 @@
     ]
   },
   "nvd": {
-    "total": 145,
-    "critical_count": 1,
-    "high_count": 4,
+    "total": 200,
+    "critical_count": 4,
+    "high_count": 2,
     "cves": [
       {
-        "cve_id": "CVE-2026-65321",
+        "cve_id": "CVE-2026-16300",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "PyAthena prior to 3.35.4 contains a sql injection vulnerability that allows unauthenticated attackers to inject arbitrary SQL by exploiting improper quote-escaping in DefaultParameterFormatter.format(",
-        "published": "2026-08-02T15:16:33.957"
+        "description": "The ChamaWP  WordPress plugin before 1.0.13 does not properly validate a password reset request, allowing unauthenticated attackers to reset the password of arbitrary users, including administrators, ",
+        "published": "2026-08-03T07:16:41.453"
+      },
+      {
+        "cve_id": "CVE-2026-12965",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The Super Store Finder WordPress plugin through 7.8 does not sanitize a parameter of an unauthenticated AJAX action before using it in a SQL query, allowing unauthenticated attackers to perform SQL in",
+        "published": "2026-08-03T07:16:39.190"
+      },
+      {
+        "cve_id": "CVE-2026-16532",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The Link Library WordPress plugin before 7.9.3 does not properly sanitise and escape a user-supplied value before using it in a SQL query, allowing unauthenticated users to perform SQL injection attac",
+        "published": "2026-08-03T07:16:41.557"
+      },
+      {
+        "cve_id": "CVE-2026-16534",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The Import and export users and customers WordPress plugin before 2.4.2 does not enforce WordPress's role-assignment and per-user edit permissions during CSV import, allowing a user holding only the u",
+        "published": "2026-08-03T07:16:41.660"
       },
       {
         "cve_id": "CVE-2026-3245",
@@ -257,13 +278,6 @@
         "published": "2026-08-03T00:16:29.280"
       },
       {
-        "cve_id": "CVE-2026-9856",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "A vulnerability in huggingface/transformers versions <=5.8.0.dev0 allows an attacker to perform arbitrary file writes via path traversal. The issue resides in the `save_pretrained()` methods of `PreTr",
-        "published": "2026-08-02T16:16:25.413"
-      },
-      {
         "cve_id": "CVE-2026-65875",
         "severity": "HIGH",
         "base_score": 7.1,
@@ -271,11 +285,18 @@
         "published": "2026-08-03T01:16:45.657"
       },
       {
-        "cve_id": "CVE-2026-10848",
-        "severity": "HIGH",
-        "base_score": 7.0,
-        "description": "The OCPP 1.6 client in subsys/net/lib/ocpp parsed inbound WAMP RPC frames in parse_rpc_msg() (subsys/net/lib/ocpp/ocpp_j.c) using a hand-rolled helper, extract_string_field(), that copied the message'",
-        "published": "2026-08-02T17:16:58.163"
+        "cve_id": "CVE-2026-15254",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "The Simply Schedule Appointments WordPress plugin before 1.6.12.11 does not perform a capability check on an administrative appointment-listing shortcode, and its per-user result scoping fails open fo",
+        "published": "2026-08-03T07:16:39.987"
+      },
+      {
+        "cve_id": "CVE-2026-16563",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "The Academy LMS WordPress plugin before 3.8.3 does not verify course enrollment or lesson publication status when returning a single lesson through its REST API, allowing users with a self-service stu",
+        "published": "2026-08-03T07:16:41.877"
       },
       {
         "cve_id": "CVE-2026-6694",
@@ -320,18 +341,25 @@
         "published": "2026-08-03T06:16:37.710"
       },
       {
+        "cve_id": "CVE-2026-16289",
+        "severity": "MEDIUM",
+        "base_score": 4.3,
+        "description": "The ProfileGrid  WordPress plugin before 6.0.0.0 does not perform authorization checks when listing a group's pending membership requests, allowing any authenticated user such as a Subscriber to discl",
+        "published": "2026-08-03T07:16:41.240"
+      },
+      {
+        "cve_id": "CVE-2026-16297",
+        "severity": "MEDIUM",
+        "base_score": 4.1,
+        "description": "The Clearfy Cache  WordPress plugin before 2.4.3 does not restrict the classes allowed when unserializing settings-import data, allowing users with administrator access to perform PHP Object Injection",
+        "published": "2026-08-03T07:16:41.350"
+      },
+      {
         "cve_id": "CVE-2026-18581",
         "severity": "LOW",
         "base_score": 3.3,
         "description": "A vulnerability was determined in ggml-org llama.cpp e15efe0. Affected by this issue is some unknown functionality of the file common/jinja/parser.cpp of the component Jinja Minja Template Parser. Exe",
         "published": "2026-08-03T01:16:43.300"
-      },
-      {
-        "cve_id": "CVE-2026-10774",
-        "severity": "LOW",
-        "base_score": 2.4,
-        "description": "Zephyr's Bluetooth Mesh subnet key management leaks one PSA Crypto key slot on every subnet-key teardown. In subsys/bluetooth/mesh/subnet.c, net_keys_create() imports the Private Beacon Key into a PSA",
-        "published": "2026-08-02T15:16:33.793"
       },
       {
         "cve_id": "CVE-2026-18577",
@@ -353,34 +381,6 @@
         "base_score": null,
         "description": "In Bouncy Castle for Java before 1.85, PKCS#8 / PBES2 decryptors honour unbounded KDF cost from input. This issue also affects Bouncy Castle for Java LTS before 2.73.12, and Bouncy Castle for Java FIP",
         "published": "2026-08-03T01:16:43.157"
-      },
-      {
-        "cve_id": "CVE-2026-59638",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In Bouncy Castle for Java before 1.85, JSSE hostname verifier CN-fallback enabled by default despite documented opt-in. This issue also affects Bouncy Castle for Java LTS before 2.73.12, and Bouncy Ca",
-        "published": "2026-08-03T01:16:43.543"
-      },
-      {
-        "cve_id": "CVE-2026-59639",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In Bouncy Castle for Java before 1.85, CMS verifySignatures returns true for SignedData with zero signers. This issue also affects Bouncy Castle for Java LTS before 2.73.12, and Bouncy Castle for Java",
-        "published": "2026-08-03T01:16:43.700"
-      },
-      {
-        "cve_id": "CVE-2026-59640",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In Bouncy Castle for Java before 1.85, OpenPGP CFB quick-check oracle active on symmetric/session-key paths. This issue also affects Bouncy Castle for Java LTS before 2.73.12, and Bouncy Castle for Ja",
-        "published": "2026-08-03T01:16:43.907"
-      },
-      {
-        "cve_id": "CVE-2026-59641",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In Bouncy Castle for Java before 1.85, S/MIME validator trusts signer-asserted signingTime for path validation. This issue also affects Bouncy Castle for Java LTS before 2.73.12, and Bouncy Castle for",
-        "published": "2026-08-03T01:16:44.060"
       }
     ]
   },
