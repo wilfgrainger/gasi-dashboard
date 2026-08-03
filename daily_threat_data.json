@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-08-03T17:46:41.861806+00:00",
+  "generated_at": "2026-08-03T20:55:04.350172+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 25,
+        "value": 26,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 5,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1656,
-    "recent_30d_count": 25,
+    "total_catalog_count": 1657,
+    "recent_30d_count": 26,
     "recent": [
+      {
+        "cve_id": "CVE-2026-18577",
+        "vendor": "N-able",
+        "product": "N-central",
+        "name": "N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+        "date_added": "2026-08-03",
+        "due_date": "2026-08-06",
+        "description": "N-able N-central contains an authentication bypass using an alternate path or channel allows for authentication bypass and account takeover in N-central. This vulnerability is the result of an incompl",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-20316",
         "vendor": "Cisco",
@@ -203,7 +213,7 @@
         "date_added": "2026-07-14",
         "due_date": "2026-07-17",
         "description": "SonicWall SMA1000 Appliances contain a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to potentially cause the appliance to make requests to unintended lo",
-        "ransomware_use": "Unknown"
+        "ransomware_use": "Known"
       },
       {
         "cve_id": "CVE-2026-15410",
@@ -213,7 +223,7 @@
         "date_added": "2026-07-14",
         "due_date": "2026-07-17",
         "description": "SonicWall SMA1000 Appliances contain a code injection vulnerability which in specific conditions could potentially enable a remote authenticated attacker as administrator to execute arbitrary OS comma",
-        "ransomware_use": "Unknown"
+        "ransomware_use": "Known"
       },
       {
         "cve_id": "CVE-2008-4128",
@@ -224,23 +234,13 @@
         "due_date": "2026-07-16",
         "description": "Cisco IOS 12.4 contains multiple cross-site forgery vulnerabilities that allows remote attackers to execute arbitrary commands via (1) a certain \"show privilege\" command to the /level/15/exec/- URI, a",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-56291",
-        "vendor": "Balbooa",
-        "product": "Forms",
-        "name": "Balbooa Forms Unrestricted Upload of File with Dangerous Type Vulnerability",
-        "date_added": "2026-07-10",
-        "due_date": "2026-07-13",
-        "description": "Balbooa Forms contains an unrestricted upload of file with dangerous type vulnerability that allows an unauthenticated arbitrary file upload which could allow uploading of executable files leading to ",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 200,
-    "critical_count": 4,
-    "high_count": 2,
+    "total": 239,
+    "critical_count": 5,
+    "high_count": 6,
     "cves": [
       {
         "cve_id": "CVE-2026-16300",
@@ -248,6 +248,13 @@
         "base_score": 9.8,
         "description": "The ChamaWP  WordPress plugin before 1.0.13 does not properly validate a password reset request, allowing unauthenticated attackers to reset the password of arbitrary users, including administrators, ",
         "published": "2026-08-03T07:16:41.453"
+      },
+      {
+        "cve_id": "CVE-2026-15930",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "The Simple Membership WordPress plugin before 4.7.8 does not verify whether user creation failed during registration before using the returned value as a user ID to update an account, allowing unauthe",
+        "published": "2026-08-03T07:16:40.310"
       },
       {
         "cve_id": "CVE-2026-12965",
@@ -271,6 +278,27 @@
         "published": "2026-08-03T07:16:41.660"
       },
       {
+        "cve_id": "CVE-2026-20465",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "In wlan AP driver, there is a possible out of bounds write due to a missing bounds check. This could lead to remote (proximal/adjacent) escalation of privilege with no additional execution privileges ",
+        "published": "2026-08-03T03:16:41.313"
+      },
+      {
+        "cve_id": "CVE-2026-16539",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The sm page duplicator WordPress plugin through 1.0.0 does not sanitise and escape a stored value before using it in a SQL statement when duplicating a page, allowing users with the Editor role and ab",
+        "published": "2026-08-03T07:16:41.770"
+      },
+      {
+        "cve_id": "CVE-2026-20483",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "In Telephony, there is a possible escalation of privilege due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User inter",
+        "published": "2026-08-03T03:16:43.430"
+      },
+      {
         "cve_id": "CVE-2026-3245",
         "severity": "HIGH",
         "base_score": 7.5,
@@ -278,11 +306,32 @@
         "published": "2026-08-03T00:16:29.280"
       },
       {
+        "cve_id": "CVE-2026-20479",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "In Modem, there is a possible out of bounds read due to a missing bounds check. This could lead to remote denial of service, if a UE has connected to a rogue base station controlled by the attacker, w",
+        "published": "2026-08-03T03:16:42.980"
+      },
+      {
         "cve_id": "CVE-2026-65875",
         "severity": "HIGH",
         "base_score": 7.1,
         "description": "BaserCMS provided by baserCMS Users Community contains a CSV file injection vulnerability. If a user downloads and opens a CSV file containing malicious code injected by an attacker, the malicious cod",
         "published": "2026-08-03T01:16:45.657"
+      },
+      {
+        "cve_id": "CVE-2026-20464",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "In hevc decoder, there is a possible out of bounds write due to an integer overflow. This could lead to remote escalation of privilege if a malicious actor has already obtained the System privilege. U",
+        "published": "2026-08-03T03:16:40.357"
+      },
+      {
+        "cve_id": "CVE-2026-20482",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "In wlan STA FW, there is a possible system becoming unresponsive due to logging. This could lead to remote (proximal/adjacent) denial of service with no additional execution privileges needed. User in",
+        "published": "2026-08-03T03:16:43.317"
       },
       {
         "cve_id": "CVE-2026-15254",
@@ -299,88 +348,39 @@
         "published": "2026-08-03T07:16:41.877"
       },
       {
-        "cve_id": "CVE-2026-6694",
+        "cve_id": "CVE-2026-20470",
         "severity": "MEDIUM",
-        "base_score": 5.5,
-        "description": "A flaw was found in GIMP's file-png plugin. A remote attacker can exploit this by crafting a malicious Animated Portable Network Graphics (APNG) image containing an oversized tRNS chunk. This can lead",
-        "published": "2026-08-03T06:16:41.067"
+        "base_score": 6.2,
+        "description": "In Telephony, there is a possible information disclosure due to a missing permission check. This could lead to local information disclosure with no additional execution privileges needed. User interac",
+        "published": "2026-08-03T03:16:41.940"
       },
       {
-        "cve_id": "CVE-2026-6695",
+        "cve_id": "CVE-2026-20466",
         "severity": "MEDIUM",
-        "base_score": 5.5,
-        "description": "A flaw was found in GIMP. A remote attacker could exploit this by tricking a user into opening a specially crafted PAA (Paint Shop Pro Array) image file. This vulnerability, a heap-based out-of-bounds",
-        "published": "2026-08-03T06:16:41.263"
+        "base_score": 6.1,
+        "description": "In sec boot, there is a possible escalation of privilege due to a heap buffer overflow. This could lead to local escalation of privilege, if an attacker has physical access to the device, with no addi",
+        "published": "2026-08-03T03:16:41.433"
       },
       {
-        "cve_id": "CVE-2026-18584",
+        "cve_id": "CVE-2026-13340",
         "severity": "MEDIUM",
-        "base_score": 5.4,
-        "description": "A security vulnerability has been detected in GL.iNet E5800, E750, X2000, X3000, XE3000 and XE300 up to 20260707. Impacted is an unknown function of the file /sdk/v1 of the component eSIM LPA API. Suc",
-        "published": "2026-08-03T06:16:37.450"
+        "base_score": 6.1,
+        "description": "The SVG Support WordPress plugin before 2.5.17 does not apply its SVG sanitisation to uploaded files using the .svgz extension, even though it registers and serves them as SVG, allowing a user permitt",
+        "published": "2026-08-03T07:16:39.303"
       },
       {
-        "cve_id": "CVE-2026-18582",
+        "cve_id": "CVE-2026-15383",
         "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "A security flaw has been discovered in mz-automation libiec61850 up to 1.6.1. This vulnerability affects the function Reporting_RCBWriteAccessHandler of the file src/iec61850/server/mms_mapping/report",
-        "published": "2026-08-03T02:16:29.163"
+        "base_score": 6.1,
+        "description": "The Blog Floating Button WordPress plugin through 1.4.20 does not sanitize or escape the visitor User-Agent header, which it stores through an unauthenticated tracking REST endpoint and later renders ",
+        "published": "2026-08-03T07:16:40.200"
       },
       {
-        "cve_id": "CVE-2026-18583",
+        "cve_id": "CVE-2026-15931",
         "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "A weakness has been identified in mz-automation libiec61850 up to 1.6.1. This issue affects the function checkDataSetAccess of the file src/iec61850/server/mms_mapping/mms_mapping.c of the component M",
-        "published": "2026-08-03T06:16:37.100"
-      },
-      {
-        "cve_id": "CVE-2026-18585",
-        "severity": "MEDIUM",
-        "base_score": 4.3,
-        "description": "A vulnerability was detected in GL.iNet MT3000, MT6000, BE9300, BE3600, MT3600BE, E5800, BE6500, MT5000, X3000, XE3000 and MT2500 up to 20260707. The affected element is the function nas-web.get_file_",
-        "published": "2026-08-03T06:16:37.710"
-      },
-      {
-        "cve_id": "CVE-2026-16289",
-        "severity": "MEDIUM",
-        "base_score": 4.3,
-        "description": "The ProfileGrid  WordPress plugin before 6.0.0.0 does not perform authorization checks when listing a group's pending membership requests, allowing any authenticated user such as a Subscriber to discl",
-        "published": "2026-08-03T07:16:41.240"
-      },
-      {
-        "cve_id": "CVE-2026-16297",
-        "severity": "MEDIUM",
-        "base_score": 4.1,
-        "description": "The Clearfy Cache  WordPress plugin before 2.4.3 does not restrict the classes allowed when unserializing settings-import data, allowing users with administrator access to perform PHP Object Injection",
-        "published": "2026-08-03T07:16:41.350"
-      },
-      {
-        "cve_id": "CVE-2026-18581",
-        "severity": "LOW",
-        "base_score": 3.3,
-        "description": "A vulnerability was determined in ggml-org llama.cpp e15efe0. Affected by this issue is some unknown functionality of the file common/jinja/parser.cpp of the component Jinja Minja Template Parser. Exe",
-        "published": "2026-08-03T01:16:43.300"
-      },
-      {
-        "cve_id": "CVE-2026-18577",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "An incomplete patch for CVE-2026-18556 allows for authentication bypass and account takeover in N-central Versions through 2026.3.1",
-        "published": "2026-08-02T23:16:26.210"
-      },
-      {
-        "cve_id": "CVE-2026-12185",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In Bouncy Castle for Java before 1.85, BKS/UBER keystore allocates from untrusted lengths before integrity check. This issue also affects Bouncy Castle for Java LTS before 2.73.12.",
-        "published": "2026-08-03T01:16:42.987"
-      },
-      {
-        "cve_id": "CVE-2026-15055",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In Bouncy Castle for Java before 1.85, PKCS#8 / PBES2 decryptors honour unbounded KDF cost from input. This issue also affects Bouncy Castle for Java LTS before 2.73.12, and Bouncy Castle for Java FIP",
-        "published": "2026-08-03T01:16:43.157"
+        "base_score": 6.1,
+        "description": "The Simple Membership WordPress plugin before 4.7.8 does not sanitise a subscriber name value received from an unauthenticated payment approval request, nor escape it when displaying it in the adminis",
+        "published": "2026-08-03T07:16:40.420"
       }
     ]
   },
