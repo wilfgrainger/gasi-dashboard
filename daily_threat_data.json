@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-04T01:29:21.797631+00:00",
+  "generated_at": "2026-08-04T06:19:33.735269+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
-        "score": 2.5,
+        "value": 17,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,10 +238,31 @@
     ]
   },
   "nvd": {
-    "total": 299,
-    "critical_count": 7,
-    "high_count": 15,
+    "total": 259,
+    "critical_count": 17,
+    "high_count": 31,
     "cves": [
+      {
+        "cve_id": "CVE-2026-69083",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "SiYuan versions before v3.7.3 contain SQL injection vulnerabilities in the fullTextSearchAssetContent endpoint reachable by unauthenticated users and publish RoleReader tokens. Attackers can execute a",
+        "published": "2026-08-03T14:16:28.537"
+      },
+      {
+        "cve_id": "CVE-2026-69084",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "SiYuan versions <= v3.7.2 expose the /api/search/searchEmbedBlock endpoint, which passes a client-supplied SQL statement verbatim to the main read-write siyuan.db handle with no single-statement, read",
+        "published": "2026-08-03T14:16:28.680"
+      },
+      {
+        "cve_id": "CVE-2026-69085",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "SiYuan before v3.7.3 contains a SQL injection vulnerability in the /api/filetree/searchDocs endpoint, where the caller-supplied keyword parameter is concatenated directly into SQL statements with no e",
+        "published": "2026-08-03T14:16:28.820"
+      },
       {
         "cve_id": "CVE-2026-16300",
         "severity": "CRITICAL",
@@ -262,6 +283,34 @@
         "base_score": 9.8,
         "description": "A vulnerability was found in Wavlink WL-NU516U1 708c073-mt7628. This impacts the function change_password of the file nas.cgi. The manipulation of the argument User1Passwd results in stack-based buffe",
         "published": "2026-08-03T07:16:43.260"
+      },
+      {
+        "cve_id": "CVE-2026-2346",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Authorization bypass through User-Controlled key vulnerability in Menulux Software Inc. Mobile App allows Software Integrity Attack.\n\nThis issue affects Mobile App: through 12.05.2026.",
+        "published": "2026-08-03T13:17:39.513"
+      },
+      {
+        "cve_id": "CVE-2026-18108",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Net::SAML2 versions before 0.86 for Perl allow authentication bypass because _verify_encrypted_assertion accepts an EncryptedAssertion whose decrypted content carries no signature.\n\n_verify_encrypted_",
+        "published": "2026-08-03T14:16:25.157"
+      },
+      {
+        "cve_id": "CVE-2026-18601",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A vulnerability was found in GL.iNet GL-MT3000 up to 4.4.5. This impacts the function ovpn-client.check_config of the file /cgi-bin/glc of the component ovpn-client.so Native Plugin. Performing a mani",
+        "published": "2026-08-03T14:16:25.947"
+      },
+      {
+        "cve_id": "CVE-2026-64827",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Telenia Software TVox 26.5.3 and prior 26.x versions, and 24.9.21 and prior 24.x versions, contain an authentication bypass vulnerability in set_env.php where the redirectToLoginAdminIRequestHaveAcces",
+        "published": "2026-08-03T14:16:27.630"
       },
       {
         "cve_id": "CVE-2026-15930",
@@ -292,95 +341,46 @@
         "published": "2026-08-03T07:16:41.660"
       },
       {
-        "cve_id": "CVE-2026-16572",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "The LogMyTrip WordPress plugin through 1.9 does not sanitize and escape a value taken from a cookie before using it in a SQL query, allowing unauthenticated users to perform SQL injection attacks on a",
-        "published": "2026-08-03T07:16:42.227"
+        "cve_id": "CVE-2026-9390",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "XML::Sig versions before 0.71 for Perl allow XPath injection in ID lookup.\n\nverify() and _get_signed_xml() in lib/XML/Sig.pm build XPath expressions by concatenating the SignedInfo/Reference/@URI valu",
+        "published": "2026-08-03T14:16:30.983"
       },
       {
-        "cve_id": "CVE-2026-20465",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "In wlan AP driver, there is a possible out of bounds write due to a missing bounds check. This could lead to remote (proximal/adjacent) escalation of privilege with no additional execution privileges ",
-        "published": "2026-08-03T03:16:41.313"
+        "cve_id": "CVE-2026-9487",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "XML::Sig versions before 0.71 for Perl allow signature wrapping via duplicate ID.\n\n_get_signed_xml() in lib/XML/Sig.pm, called from verify(), resolves the SignedInfo Reference/@URI to a node with the ",
+        "published": "2026-08-03T14:16:31.110"
       },
       {
-        "cve_id": "CVE-2026-16539",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The sm page duplicator WordPress plugin through 1.0.0 does not sanitise and escape a stored value before using it in a SQL statement when duplicating a page, allowing users with the Editor role and ab",
-        "published": "2026-08-03T07:16:41.770"
+        "cve_id": "CVE-2026-18248",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "@fastify/aws-lambda version 6.4.0 decorates each Fastify request with request.awsLambda.event and request.awsLambda.context, values that applications are documented to use for authorization decisions ",
+        "published": "2026-08-03T16:16:28.247"
       },
       {
-        "cve_id": "CVE-2026-20483",
+        "cve_id": "CVE-2026-18598",
         "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "In Telephony, there is a possible escalation of privilege due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User inter",
-        "published": "2026-08-03T03:16:43.430"
+        "base_score": 8.8,
+        "description": "A vulnerability was detected in GL.iNet GL-MT3000 up to 4.4.5. The affected element is the function logread.get_system_log of the file /usr/lib/oui-httpd/rpc/logread of the component Logread Lua RPC p",
+        "published": "2026-08-03T13:17:13.140"
       },
       {
-        "cve_id": "CVE-2026-20479",
+        "cve_id": "CVE-2026-18600",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "In Modem, there is a possible out of bounds read due to a missing bounds check. This could lead to remote denial of service, if a UE has connected to a rogue base station controlled by the attacker, w",
-        "published": "2026-08-03T03:16:42.980"
+        "base_score": 8.8,
+        "description": "A vulnerability has been found in GL.iNet GL-MT3000 up to 4.4.5. This affects the function network.switch_info/network.switch_status of the file /usr/lib/oui-httpd/rpc/network of the component Network",
+        "published": "2026-08-03T14:16:25.763"
       },
       {
-        "cve_id": "CVE-2026-18587",
+        "cve_id": "CVE-2026-69096",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A flaw has been found in Wavlink WL-NU516U1 708c073-mt7628. The impacted element is an unknown function of the component Config Import. Executing a manipulation of the argument Password can lead to os",
-        "published": "2026-08-03T07:16:42.813"
-      },
-      {
-        "cve_id": "CVE-2026-21548",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "In nr modem, there is a possible improper input validation. This could lead to remote denial of service with System execution privileges needed.",
-        "published": "2026-08-03T08:17:19.393"
-      },
-      {
-        "cve_id": "CVE-2026-21549",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "In modem, there is a possible improper input validation. This could lead to remote denial of service with no additional execution privileges needed",
-        "published": "2026-08-03T08:17:19.537"
-      },
-      {
-        "cve_id": "CVE-2026-21550",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "In modem, there is a possible improper input validation. This could lead to remote denial of service with no additional execution privileges needed",
-        "published": "2026-08-03T08:17:19.663"
-      },
-      {
-        "cve_id": "CVE-2026-21551",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "In modem, there is a possible improper input validation. This could lead to remote denial of service with no additional execution privileges needed",
-        "published": "2026-08-03T08:17:19.787"
-      },
-      {
-        "cve_id": "CVE-2026-21552",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "In modem, there is a possible improper input validation. This could lead to remote denial of service with no additional execution privileges needed",
-        "published": "2026-08-03T08:17:19.903"
-      },
-      {
-        "cve_id": "CVE-2026-21553",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "In modem, there is a possible improper input validation. This could lead to remote denial of service with no additional execution privileges needed",
-        "published": "2026-08-03T08:17:20.020"
-      },
-      {
-        "cve_id": "CVE-2026-21554",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "In modem, there is a possible improper input validation. This could lead to remote denial of service with no additional execution privileges needed",
-        "published": "2026-08-03T08:17:20.130"
+        "base_score": 8.8,
+        "description": "OpenWrt luci-app-dockerman (LuCI master and openwrt-25.12 snapshots containing the ucode docker_rpc.uc RPC backend after the JS/ucode conversion) contains an OS command injection vulnerability. The pa",
+        "published": "2026-08-03T14:16:30.500"
       }
     ]
   },
