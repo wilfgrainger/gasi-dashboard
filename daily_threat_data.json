@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T13:48:12.918937+00:00",
+  "generated_at": "2026-08-04T17:28:53.383025+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 26,
+        "value": 29,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 19,
+        "value": 18,
         "score": 3.0,
         "max": 3
       },
@@ -32,9 +32,39 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1657,
-    "recent_30d_count": 26,
+    "total_catalog_count": 1660,
+    "recent_30d_count": 29,
     "recent": [
+      {
+        "cve_id": "CVE-2026-18556",
+        "vendor": "N-able",
+        "product": "N-central",
+        "name": "N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+        "date_added": "2026-08-04",
+        "due_date": "2026-08-07",
+        "description": "N-able N-central contains an authentication bypass using an alternate path or channel that allows for authentication bypass.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-34486",
+        "vendor": "Apache",
+        "product": "Tomcat",
+        "name": "Apache Tomcat Missing Encryption of Sensitive Data Vulnerability",
+        "date_added": "2026-08-04",
+        "due_date": "2026-08-07",
+        "description": "Apache Tomcat contains a missing encryption of sensitive data vulnerability that allows the bypass of the EncryptInterceptor.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-9198",
+        "vendor": "IBM",
+        "product": "Langflow",
+        "name": "IBM Langflow Code Injection Vulnerability",
+        "date_added": "2026-08-04",
+        "due_date": "2026-08-07",
+        "description": "Langflow contains a code injection vulnerability that allows unauthenticated attackers to achieve full remote code execution on default Langflow deployments.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-18577",
         "vendor": "N-able",
@@ -204,99 +234,41 @@
         "due_date": "2026-07-17",
         "description": "Microsoft SharePoint contains a missing authentication for critical function vulnerability that allows an unauthorized attacker to elevate privileges over a network.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-15409",
-        "vendor": "SonicWall",
-        "product": "SMA1000 Appliances",
-        "name": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
-        "date_added": "2026-07-14",
-        "due_date": "2026-07-17",
-        "description": "SonicWall SMA1000 Appliances contain a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to potentially cause the appliance to make requests to unintended lo",
-        "ransomware_use": "Known"
-      },
-      {
-        "cve_id": "CVE-2026-15410",
-        "vendor": "SonicWall",
-        "product": "SMA1000 Appliances",
-        "name": "SonicWall SMA1000 Appliances Code Injection Vulnerability",
-        "date_added": "2026-07-14",
-        "due_date": "2026-07-17",
-        "description": "SonicWall SMA1000 Appliances contain a code injection vulnerability which in specific conditions could potentially enable a remote authenticated attacker as administrator to execute arbitrary OS comma",
-        "ransomware_use": "Known"
-      },
-      {
-        "cve_id": "CVE-2008-4128",
-        "vendor": "Cisco",
-        "product": "IOS",
-        "name": "Cisco IOS Cross-Site Request Forgery Vulnerability",
-        "date_added": "2026-07-13",
-        "due_date": "2026-07-16",
-        "description": "Cisco IOS 12.4 contains multiple cross-site forgery vulnerabilities that allows remote attackers to execute arbitrary commands via (1) a certain \"show privilege\" command to the /level/15/exec/- URI, a",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 256,
-    "critical_count": 19,
-    "high_count": 35,
+    "total": 269,
+    "critical_count": 18,
+    "high_count": 15,
     "cves": [
       {
-        "cve_id": "CVE-2026-69083",
+        "cve_id": "CVE-2026-48323",
         "severity": "CRITICAL",
         "base_score": 10.0,
-        "description": "SiYuan versions before v3.7.3 contain SQL injection vulnerabilities in the fullTextSearchAssetContent endpoint reachable by unauthenticated users and publish RoleReader tokens. Attackers can execute a",
-        "published": "2026-08-03T14:16:28.537"
+        "description": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements Used in a Template Engine vulnerability that could result in arbitrary code execution in the context of the c",
+        "published": "2026-08-03T23:16:46.063"
       },
       {
-        "cve_id": "CVE-2026-69084",
+        "cve_id": "CVE-2026-48330",
         "severity": "CRITICAL",
         "base_score": 10.0,
-        "description": "SiYuan versions <= v3.7.2 expose the /api/search/searchEmbedBlock endpoint, which passes a client-supplied SQL statement verbatim to the main read-write siyuan.db handle with no single-statement, read",
-        "published": "2026-08-03T14:16:28.680"
+        "description": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability that could result in arbitrary code execution in the c",
+        "published": "2026-08-03T23:16:46.317"
       },
       {
-        "cve_id": "CVE-2026-69085",
+        "cve_id": "CVE-2026-48331",
         "severity": "CRITICAL",
         "base_score": 10.0,
-        "description": "SiYuan before v3.7.3 contains a SQL injection vulnerability in the /api/filetree/searchDocs endpoint, where the caller-supplied keyword parameter is concatenated directly into SQL statements with no e",
-        "published": "2026-08-03T14:16:28.820"
+        "description": "Adobe Campaign Classic (ACC) is affected by a Server-Side Request Forgery (SSRF) vulnerability that could result in privilege escalation. Exploitation of this issue does not require user interaction. ",
+        "published": "2026-08-03T23:16:46.443"
       },
       {
-        "cve_id": "CVE-2026-18108",
+        "cve_id": "CVE-2026-48326",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Net::SAML2 versions before 0.86 for Perl allow authentication bypass because _verify_encrypted_assertion accepts an EncryptedAssertion whose decrypted content carries no signature.\n\n_verify_encrypted_",
-        "published": "2026-08-03T14:16:25.157"
-      },
-      {
-        "cve_id": "CVE-2026-18601",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A vulnerability was found in GL.iNet GL-MT3000 up to 4.4.5. This impacts the function ovpn-client.check_config of the file /cgi-bin/glc of the component ovpn-client.so Native Plugin. Performing a mani",
-        "published": "2026-08-03T14:16:25.947"
-      },
-      {
-        "cve_id": "CVE-2026-64827",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Telenia Software TVox 26.5.3 and prior 26.x versions, and 24.9.21 and prior 24.x versions, contain an authentication bypass vulnerability in set_env.php where the redirectToLoginAdminIRequestHaveAcces",
-        "published": "2026-08-03T14:16:27.630"
-      },
-      {
-        "cve_id": "CVE-2026-18602",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A vulnerability was determined in GL.iNet GL-MT3000 up to 4.4.5. Affected is the function ovpn-client.get_recommend_config of the file /cgi-bin/glc of the component ovpn-client.so Native Plugin. Execu",
-        "published": "2026-08-03T17:16:35.153"
-      },
-      {
-        "cve_id": "CVE-2026-41452",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Krayin CRM 2.2.4 contains a missing authentication vulnerability in the installer middleware that allows unauthenticated remote attackers to overwrite the primary administrator account by sending a cr",
-        "published": "2026-08-03T17:16:37.047"
+        "base_score": 9.9,
+        "description": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability that could result in arbitrary code execution in the c",
+        "published": "2026-08-03T23:16:46.190"
       },
       {
         "cve_id": "CVE-2026-18612",
@@ -341,32 +313,53 @@
         "published": "2026-08-03T19:16:46.917"
       },
       {
-        "cve_id": "CVE-2026-9390",
+        "cve_id": "CVE-2026-69240",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "XML::Sig versions before 0.71 for Perl allow XPath injection in ID lookup.\n\nverify() and _get_signed_xml() in lib/XML/Sig.pm build XPath expressions by concatenating the SignedInfo/Reference/@URI valu",
-        "published": "2026-08-03T14:16:30.983"
+        "base_score": 9.8,
+        "description": "Sequelize is a Node.js ORM tool. Prior to 6.37.4, SQL injection is possible with strings only if dialect is set to oracle. The escape function defined in sql-string.js does not escape quotes if the va",
+        "published": "2026-08-03T21:16:41.970"
       },
       {
-        "cve_id": "CVE-2026-9487",
+        "cve_id": "CVE-2026-18684",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "XML::Sig versions before 0.71 for Perl allow signature wrapping via duplicate ID.\n\n_get_signed_xml() in lib/XML/Sig.pm, called from verify(), resolves the SignedInfo Reference/@URI to a node with the ",
-        "published": "2026-08-03T14:16:31.110"
+        "base_score": 9.8,
+        "description": "A weakness has been identified in GL.iNet GL-MT3000 up to 4.4.5. This issue affects the function remove_profile of the file /cgi-bin/glc of the component modem.so. This manipulation causes command inj",
+        "published": "2026-08-03T23:16:45.750"
       },
       {
-        "cve_id": "CVE-2026-18248",
+        "cve_id": "CVE-2026-48333",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "@fastify/aws-lambda version 6.4.0 decorates each Fastify request with request.awsLambda.event and request.awsLambda.context, values that applications are documented to use for authorization decisions ",
-        "published": "2026-08-03T16:16:28.247"
+        "base_score": 9.8,
+        "description": "Adobe Campaign Classic (ACC) is affected by an Incorrect Authorization vulnerability that could result in privilege escalation. An attacker could exploit this vulnerability to gain elevated privileges",
+        "published": "2026-08-03T23:16:46.567"
       },
       {
-        "cve_id": "CVE-2026-39932",
+        "cve_id": "CVE-2026-18685",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "OpenEMR through 8.2.0 contains a remote code execution vulnerability in the document category tree component (library/classes/Tree.class.php) that allows authenticated administrators to execute arbitr",
-        "published": "2026-08-03T17:16:36.893"
+        "base_score": 9.8,
+        "description": "A security vulnerability has been detected in GL.iNet GL-MT3000 up to 4.4.5. Impacted is the function set_upgrade of the file /cgi-bin/glc of the component modem.so. Such manipulation leads to command",
+        "published": "2026-08-04T00:16:40.350"
+      },
+      {
+        "cve_id": "CVE-2026-18686",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A vulnerability was detected in GL.iNet GL-MT3000 up to 4.4.5. The affected element is the function nas-web.add_user of the file /cgi-bin/glc of the component nas-web RPC Wrapper. Performing a manipul",
+        "published": "2026-08-04T00:16:40.520"
+      },
+      {
+        "cve_id": "CVE-2026-18667",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "A vulnerability in Tenable Sensor Proxy allows a remote attacker to execute code with elevated privileges by inducing an operator to connect the sensor to an attacker-controlled host.",
+        "published": "2026-08-03T23:16:45.590"
+      },
+      {
+        "cve_id": "CVE-2026-48317",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection') vulnerability that could result in arbitrary code execution in the",
+        "published": "2026-08-03T23:16:45.930"
       },
       {
         "cve_id": "CVE-2026-48031",
@@ -376,11 +369,18 @@
         "published": "2026-08-03T20:17:24.200"
       },
       {
-        "cve_id": "CVE-2026-18600",
+        "cve_id": "CVE-2026-18733",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A vulnerability has been found in GL.iNet GL-MT3000 up to 4.4.5. This affects the function network.switch_info/network.switch_status of the file /usr/lib/oui-httpd/rpc/network of the component Network",
-        "published": "2026-08-03T14:16:25.763"
+        "description": "A prompt injection vulnerability in the shell tool in Amazon Strands Agents Tools before 0.8.0 might allow remote actors to execute arbitrary operating system commands on the agent's host via a crafte",
+        "published": "2026-08-03T21:16:37.963"
+      },
+      {
+        "cve_id": "CVE-2026-62870",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in Microsoft Office Excel allows an unauthorized attacker to execute code over a network.",
+        "published": "2026-08-04T00:17:37.813"
       }
     ]
   },
