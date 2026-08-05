@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-05T10:25:09.971120+00:00",
+  "generated_at": "2026-08-05T13:43:42.595489+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
-        "score": 2.5,
+        "value": 12,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 363,
-    "critical_count": 9,
-    "high_count": 28,
+    "total": 420,
+    "critical_count": 12,
+    "high_count": 30,
     "cves": [
       {
         "cve_id": "CVE-2026-61514",
@@ -290,6 +290,27 @@
         "base_score": 9.8,
         "description": "NVIDIA Dynamo for Linux contains a vulnerability in the multimodal serving topology, where an attacker could cause an out-of-bounds write. A successful exploit of this vulnerability might lead to code",
         "published": "2026-08-04T18:16:49.937"
+      },
+      {
+        "cve_id": "CVE-2017-20241",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Keysight IxChariot Endpoint before 9.5.102 contains a heap-based buffer overflow. An unauthenticated remote attacker can send a specially crafted packet to crash the endpoint or potentially execute ar",
+        "published": "2026-08-04T19:16:38.810"
+      },
+      {
+        "cve_id": "CVE-2017-20242",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Keysight IxChariot Endpoint before 9.5.102 contains a stack-based buffer overflow. An unauthenticated remote attacker can send a specially crafted packet to crash the endpoint or potentially execute a",
+        "published": "2026-08-04T19:16:38.963"
+      },
+      {
+        "cve_id": "CVE-2026-0163",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "In multiple functions of vpu_ioctl.c, there is a possible use after free due to a use after free. This could lead to remote escalation of privilege with no additional execution privileges needed. User",
+        "published": "2026-08-04T19:16:39.213"
       },
       {
         "cve_id": "CVE-2026-25289",
@@ -355,32 +376,11 @@
         "published": "2026-08-04T18:16:49.767"
       },
       {
-        "cve_id": "CVE-2026-24079",
+        "cve_id": "CVE-2026-47623",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Cryptographic Issue while processing registration requests with malformed or missing authentication parameters.",
-        "published": "2026-08-04T16:16:23.453"
-      },
-      {
-        "cve_id": "CVE-2026-18830",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Insufficient input validation in Amazon Bedrock AgentCore harness might allow an authenticated remote user to execute configured tools bypassing model invocation and security controls via crafted cont",
-        "published": "2026-08-04T18:16:49.420"
-      },
-      {
-        "cve_id": "CVE-2026-10709",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A maliciously crafted FBX file, when parsed through Autodesk FBX SDK, can trigger a stack-based buffer overflow vulnerability in fbxsdk::FbxIO::BinaryReadSectionHeader. A malicious actor can leverage ",
-        "published": "2026-08-04T13:17:32.377"
-      },
-      {
-        "cve_id": "CVE-2026-10710",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A maliciously crafted FBX file, when parsed through Autodesk FBX SDK, can trigger a stack-based buffer overflow vulnerability in fbxsdk::ExtractDrive. A malicious actor can leverage this vulnerability",
-        "published": "2026-08-04T13:17:32.507"
+        "base_score": 8.2,
+        "description": "NVIDIA Dynamo for Linux contains a vulnerability where an attacker could cause deserialization of untrusted data. A successful exploit of this vulnerability might lead to denial of service and data ta",
+        "published": "2026-08-04T18:16:51.983"
       }
     ]
   },
