@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T13:43:42.595489+00:00",
+  "generated_at": "2026-08-05T17:19:53.658218+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 29,
+        "value": 30,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 12,
+        "value": 11,
         "score": 3.0,
         "max": 3
       },
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1660,
-    "recent_30d_count": 29,
+    "total_catalog_count": 1661,
+    "recent_30d_count": 30,
     "recent": [
+      {
+        "cve_id": "CVE-2026-63077",
+        "vendor": "JetBrains",
+        "product": "TeamCity",
+        "name": "JetBrains TeamCity Deserialization of Untrusted Data Vulnerability",
+        "date_added": "2026-08-05",
+        "due_date": "2026-08-08",
+        "description": "JetBrains TeamCity contains a deserialization of untrusted data vulnerability that could allow unauthenticated remote code execution via the agent polling protocol.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-18556",
         "vendor": "N-able",
@@ -224,66 +234,14 @@
         "due_date": "2026-07-28",
         "description": "Microsoft Active Directory Federation Services contains an insufficient granularity of access control vulnerability that allows an authorized attacker to elevate privileges locally.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-56164",
-        "vendor": "Microsoft",
-        "product": "SharePoint Server",
-        "name": "Microsoft SharePoint Server Missing Authentication for Critical Function Vulnerability",
-        "date_added": "2026-07-14",
-        "due_date": "2026-07-17",
-        "description": "Microsoft SharePoint contains a missing authentication for critical function vulnerability that allows an unauthorized attacker to elevate privileges over a network.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 420,
-    "critical_count": 12,
-    "high_count": 30,
+    "total": 438,
+    "critical_count": 11,
+    "high_count": 31,
     "cves": [
-      {
-        "cve_id": "CVE-2026-61514",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Puwell IP Camera firmware versions 2.x through 4.x contains an authentication bypass vulnerability that allows unauthenticated attackers to access device functions by sending protocol-conforming packe",
-        "published": "2026-08-04T15:16:36.810"
-      },
-      {
-        "cve_id": "CVE-2026-61515",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Puwell IP Camera firmware versions 2.x through 4.x contains an unauthenticated command injection vulnerability that allows remote attackers to execute arbitrary operating system commands by sending a ",
-        "published": "2026-08-04T15:16:36.967"
-      },
-      {
-        "cve_id": "CVE-2026-69098",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "kotaemon through 0.12.0 contains an insecure deserialization vulnerability in the check_connection endpoint that allows unauthenticated attackers to instantiate arbitrary Python classes by supplying c",
-        "published": "2026-08-04T16:16:28.190"
-      },
-      {
-        "cve_id": "CVE-2025-29296",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "H3C Magic BE18000 V200R007, H3C NX400 V100R015, H3C Magic NX30 Pro V100R0011, H3C Magic R3010 V100R009, H3C Magic NX15 V100R017, H3C Magic R1510 V100R016, and H3C NE36 Pro V100R002 contain multiple co",
-        "published": "2026-08-04T17:16:42.920"
-      },
-      {
-        "cve_id": "CVE-2026-63455",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Multiple vulnerabilities in the REST API interface of HPE Networking SD-WAN Orchestrator could allow an unauthenticated remote attacker to bypass web authentication mechanisms and access system functi",
-        "published": "2026-08-04T17:16:57.717"
-      },
-      {
-        "cve_id": "CVE-2026-63456",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Multiple vulnerabilities in the REST API interface of HPE Networking SD-WAN Orchestrator could allow an unauthenticated remote attacker to bypass web authentication mechanisms and access system functi",
-        "published": "2026-08-04T17:16:57.853"
-      },
       {
         "cve_id": "CVE-2026-24254",
         "severity": "CRITICAL",
@@ -313,60 +271,67 @@
         "published": "2026-08-04T19:16:39.213"
       },
       {
-        "cve_id": "CVE-2026-25289",
+        "cve_id": "CVE-2026-49435",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Memory Corruption when processing Device Capability Extended attributes in certain NAN Service Discovery Frames with invalid length values.",
-        "published": "2026-08-04T16:16:24.890"
+        "base_score": 9.8,
+        "description": "Keysight IxChariot Endpoint and associated products contain a stack-based buffer overflow. An unauthenticated remote attacker can send a specially crafted packet and execute arbitrary code with admini",
+        "published": "2026-08-04T19:16:51.810"
       },
       {
-        "cve_id": "CVE-2026-69110",
+        "cve_id": "CVE-2026-69703",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Atlas-Livre contains an improper access control vulnerability in the admin controllers under Espace_admin/controleur/ that allows unauthenticated attackers to bypass session-based authentication guard",
+        "published": "2026-08-04T19:16:54.130"
+      },
+      {
+        "cve_id": "CVE-2026-70552",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "MaxSite CMS 109.5 and earlier contains an authentication bypass vulnerability in the AJAX dispatcher that allows unauthenticated attackers to access admin-gated endpoints by supplying any X-Requested-",
+        "published": "2026-08-04T20:16:55.883"
+      },
+      {
+        "cve_id": "CVE-2026-70553",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "MaxSite CMS contains a remote code execution vulnerability that allows unauthenticated attackers to inject arbitrary PHP code into the application configuration file by submitting crafted POST request",
+        "published": "2026-08-04T20:16:56.023"
+      },
+      {
+        "cve_id": "CVE-2026-45538",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "OpenSIPS is a Session Initiation Protocol (SIP) server implementation. In versions 4.0.0 and prior, processing a SIP message with a header name longer than 255 bytes causes a stack buffer overflow whe",
+        "published": "2026-08-04T21:16:36.270"
+      },
+      {
+        "cve_id": "CVE-2026-70554",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "MaxSite CMS contains a PHP object injection vulnerability that allows unauthenticated attackers to execute arbitrary code by passing attacker-controlled serialized data in the maxsite_comuser cookie d",
+        "published": "2026-08-04T21:16:38.613"
+      },
+      {
+        "cve_id": "CVE-2026-45100",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "OpenCode Studio before 2.4.4 contains a missing authentication vulnerability that allows unauthenticated remote attackers to read arbitrary files within the temp and static/music directories by direct",
-        "published": "2026-08-04T16:16:28.483"
+        "description": "OpenSIPS is a Session Initiation Protocol (SIP) server implementation. Versions 3.4.0-beta through 3.6.5 and 4.0.0-beta contain a buffer overflow in the {s.b64encode}\u00a0string transformation. The size c",
+        "published": "2026-08-04T22:17:14.670"
       },
       {
-        "cve_id": "CVE-2026-17070",
+        "cve_id": "CVE-2026-16793",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Missing Authorization vulnerability in HAVELSAN Inc. Liman MYS allows Accessing Functionality Not Properly Constrained by ACLs.\n\nThis issue affects Liman MYS: from 2.2.3 before 2.3.1.",
-        "published": "2026-08-04T14:16:30.733"
+        "description": "An improper neutralization of special elements used in an operating system command vulnerability was reported in Lenovo XClarity Orchestrator (LXCO) 2.2.0 that could allow an authenticated attacker to",
+        "published": "2026-08-04T20:16:49.463"
       },
       {
-        "cve_id": "CVE-2026-18650",
+        "cve_id": "CVE-2026-70492",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Missing Authorization vulnerability in HAVELSAN Inc. Liman MYS allows Privilege Escalation.\n\nThis issue affects Liman MYS: from 2.2.3 before 2.3.1.",
-        "published": "2026-08-04T15:16:31.410"
-      },
-      {
-        "cve_id": "CVE-2026-67195",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Perspective 5.0.0 contains a remote code execution vulnerability that allows unauthenticated attackers to execute arbitrary operating system commands by submitting crafted expression strings to the Po",
-        "published": "2026-08-04T15:16:40.130"
-      },
-      {
-        "cve_id": "CVE-2026-69100",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "LAMP Rapid Development Platform through 5.6.2, fixed in commit 84b0c27, contains a remote code execution vulnerability in GlueFactory that executes unsandboxed Groovy scripts from database template fi",
-        "published": "2026-08-04T16:16:28.340"
-      },
-      {
-        "cve_id": "CVE-2026-15307",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "An issue was discovered in Django 5.2 before 5.2.17 and 6.0 before 6.0.8.\nGeoDjango spatial lookups optimistically parse the right-hand-side value as a raster by passing it to the `django.contrib.gis.",
-        "published": "2026-08-04T17:16:46.127"
-      },
-      {
-        "cve_id": "CVE-2026-18787",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was identified in GL.iNet AX1800 up to 4.8.3. The affected element is the function remove_rule of the file /usr/share/gl-ngx/oui-rpc.lua of the component RPC Endpoint. The manipulation",
-        "published": "2026-08-04T17:16:48.817"
+        "base_score": 8.7,
+        "description": "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI platform. From 0.10.0 until 0.11.0, src/lib/components/chat/Messages/Markdown/KatexRenderer.svelte could store and render a ",
+        "published": "2026-08-04T21:16:38.190"
       },
       {
         "cve_id": "CVE-2026-24253",
@@ -381,6 +346,41 @@
         "base_score": 8.2,
         "description": "NVIDIA Dynamo for Linux contains a vulnerability where an attacker could cause deserialization of untrusted data. A successful exploit of this vulnerability might lead to denial of service and data ta",
         "published": "2026-08-04T18:16:51.983"
+      },
+      {
+        "cve_id": "CVE-2026-70486",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI platform. From 0.9.0 until 0.11.0, the terminal file-preview serveUrl iframe branch always granted allow-same-origin togethe",
+        "published": "2026-08-04T20:16:55.747"
+      },
+      {
+        "cve_id": "CVE-2026-18830",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Insufficient input validation in Amazon Bedrock AgentCore harness might allow an authenticated remote user to execute configured tools bypassing model invocation and security controls via crafted cont",
+        "published": "2026-08-04T18:16:49.420"
+      },
+      {
+        "cve_id": "CVE-2026-70482",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI platform. From 0.8.0 until 0.11.0, when ENABLE_OAUTH_TOKEN_EXCHANGE=True, /oauth/{provider}/token/exchange accepts a raw pro",
+        "published": "2026-08-04T20:16:55.190"
+      },
+      {
+        "cve_id": "CVE-2026-70494",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI platform. From 0.10.0 until 0.11.0, the DELETE /api/v1/folders/{id} handler in backend/open_webui/routers/folders.py allowed",
+        "published": "2026-08-04T21:16:38.470"
+      },
+      {
+        "cve_id": "CVE-2026-18656",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "An uncontrolled search path element in Kiro IDE before version 1.0.228 on Windows might allow a remote unauthenticated actor to execute arbitrary code via a maliciously crafted project directory conta",
+        "published": "2026-08-04T20:16:50.410"
       }
     ]
   },
