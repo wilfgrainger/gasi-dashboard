@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-05T17:19:53.658218+00:00",
+  "generated_at": "2026-08-05T20:57:15.634998+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 11,
-        "score": 3.0,
+        "value": 9,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,72 +238,23 @@
     ]
   },
   "nvd": {
-    "total": 438,
-    "critical_count": 11,
-    "high_count": 31,
+    "total": 447,
+    "critical_count": 9,
+    "high_count": 37,
     "cves": [
-      {
-        "cve_id": "CVE-2026-24254",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "NVIDIA Dynamo for Linux contains a vulnerability in the multimodal serving topology, where an attacker could cause an out-of-bounds write. A successful exploit of this vulnerability might lead to code",
-        "published": "2026-08-04T18:16:49.937"
-      },
-      {
-        "cve_id": "CVE-2017-20241",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Keysight IxChariot Endpoint before 9.5.102 contains a heap-based buffer overflow. An unauthenticated remote attacker can send a specially crafted packet to crash the endpoint or potentially execute ar",
-        "published": "2026-08-04T19:16:38.810"
-      },
-      {
-        "cve_id": "CVE-2017-20242",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Keysight IxChariot Endpoint before 9.5.102 contains a stack-based buffer overflow. An unauthenticated remote attacker can send a specially crafted packet to crash the endpoint or potentially execute a",
-        "published": "2026-08-04T19:16:38.963"
-      },
-      {
-        "cve_id": "CVE-2026-0163",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "In multiple functions of vpu_ioctl.c, there is a possible use after free due to a use after free. This could lead to remote escalation of privilege with no additional execution privileges needed. User",
-        "published": "2026-08-04T19:16:39.213"
-      },
-      {
-        "cve_id": "CVE-2026-49435",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Keysight IxChariot Endpoint and associated products contain a stack-based buffer overflow. An unauthenticated remote attacker can send a specially crafted packet and execute arbitrary code with admini",
-        "published": "2026-08-04T19:16:51.810"
-      },
-      {
-        "cve_id": "CVE-2026-69703",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Atlas-Livre contains an improper access control vulnerability in the admin controllers under Espace_admin/controleur/ that allows unauthenticated attackers to bypass session-based authentication guard",
-        "published": "2026-08-04T19:16:54.130"
-      },
-      {
-        "cve_id": "CVE-2026-70552",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "MaxSite CMS 109.5 and earlier contains an authentication bypass vulnerability in the AJAX dispatcher that allows unauthenticated attackers to access admin-gated endpoints by supplying any X-Requested-",
-        "published": "2026-08-04T20:16:55.883"
-      },
-      {
-        "cve_id": "CVE-2026-70553",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "MaxSite CMS contains a remote code execution vulnerability that allows unauthenticated attackers to inject arbitrary PHP code into the application configuration file by submitting crafted POST request",
-        "published": "2026-08-04T20:16:56.023"
-      },
       {
         "cve_id": "CVE-2026-45538",
         "severity": "CRITICAL",
         "base_score": 9.8,
         "description": "OpenSIPS is a Session Initiation Protocol (SIP) server implementation. In versions 4.0.0 and prior, processing a SIP message with a header name longer than 255 bytes causes a stack buffer overflow whe",
         "published": "2026-08-04T21:16:36.270"
+      },
+      {
+        "cve_id": "CVE-2026-66902",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Google::Auth versions before 0.06 for Perl run a command named in an external_account credentials JSON via an ungated system call.\n\nThe Pluggable subclass reads credential_source.executable.command fr",
+        "published": "2026-08-04T21:16:37.253"
       },
       {
         "cve_id": "CVE-2026-70554",
@@ -313,6 +264,20 @@
         "published": "2026-08-04T21:16:38.613"
       },
       {
+        "cve_id": "CVE-2026-9273",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "The Membership Plugin \u2013 Kadence Memberships plugin for WordPress (formerly Restrict Content) is vulnerable to password reset link poisoning leading to account takeover in all versions up to, and inclu",
+        "published": "2026-08-05T06:16:40.967"
+      },
+      {
+        "cve_id": "CVE-2026-67979",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Incorrect access control in the Executive Services dynamic application start path component of NASA cFS v7.0.1 allows attackers to execute arbitrary code via placing a shared object on target storage.",
+        "published": "2026-08-04T21:16:37.360"
+      },
+      {
         "cve_id": "CVE-2026-45100",
         "severity": "CRITICAL",
         "base_score": 9.1,
@@ -320,11 +285,67 @@
         "published": "2026-08-04T22:17:14.670"
       },
       {
-        "cve_id": "CVE-2026-16793",
+        "cve_id": "CVE-2026-45537",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "OpenSIPS is a Session Initiation Protocol (SIP) server implementation. In versions prior to 3.6.6 and 4.0.0-rc1, the construct_uri() function concatenates multiple URI components (protocol, username, ",
+        "published": "2026-08-04T23:16:51.687"
+      },
+      {
+        "cve_id": "CVE-2026-15210",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The OTP Login With Phone Number, OTP Verification WordPress plugin before 1.8.71 does not limit the number of OTP verification attempts or invalidate a one-time login code after a wrong guess, and an ",
+        "published": "2026-08-05T07:16:34.897"
+      },
+      {
+        "cve_id": "CVE-2026-15360",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The Ajax Load More  WordPress plugin before 8.0.1 does not properly sanitise and escape a parameter before using it in a SQL query, allowing unauthenticated attackers to perform time-based blind SQL i",
+        "published": "2026-08-05T07:16:35.123"
+      },
+      {
+        "cve_id": "CVE-2026-70619",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "An improper neutralization of special elements used in an operating system command vulnerability was reported in Lenovo XClarity Orchestrator (LXCO) 2.2.0 that could allow an authenticated attacker to",
-        "published": "2026-08-04T20:16:49.463"
+        "description": "Odysseus before commit bf325f6 contains a missing authorization vulnerability that allows authenticated non-admin users to manage server-wide embedding backend configuration by invoking endpoint manag",
+        "published": "2026-08-04T22:17:17.573"
+      },
+      {
+        "cve_id": "CVE-2026-18895",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was found in UTT HiPER 1250GW up to 3.2.7-210907-180535. Impacted is the function strcpy of the file /goform/APSecurity_5g. Performing a manipulation of the argument cipher results in ",
+        "published": "2026-08-05T02:16:37.403"
+      },
+      {
+        "cve_id": "CVE-2026-18897",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was identified in UTT HiPER 1250GW up to v3.2.7-210907-180535. The impacted element is the function strcpy of the file /goform/getOneApConfTempEntry. The manipulation of the argument t",
+        "published": "2026-08-05T02:16:37.773"
+      },
+      {
+        "cve_id": "CVE-2026-18898",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A security flaw has been discovered in UTT HiPER 1200GW up to v2.5.3-170306. This affects the function strcpy of the file /goform/ConfigAdvideo. The manipulation of the argument timestart results in s",
+        "published": "2026-08-05T04:17:16.790"
+      },
+      {
+        "cve_id": "CVE-2026-18322",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Smart Popup by Supsystic plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 1.12.0. This is due to a permission map collision in the `havePermissions(",
+        "published": "2026-08-05T06:16:37.330"
+      },
+      {
+        "cve_id": "CVE-2026-8761",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Dokan plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 5.0.1. This is due to a missing authorization check in the `CustomersController` REST control",
+        "published": "2026-08-05T06:16:40.660"
       },
       {
         "cve_id": "CVE-2026-70492",
@@ -334,39 +355,11 @@
         "published": "2026-08-04T21:16:38.190"
       },
       {
-        "cve_id": "CVE-2026-24253",
+        "cve_id": "CVE-2026-51400",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "NVIDIA Dynamo for Linux contains a vulnerability where an attacker could cause an out-of-bounds write. A successful exploit of this vulnerability might lead to denial of service and data tampering.",
-        "published": "2026-08-04T18:16:49.767"
-      },
-      {
-        "cve_id": "CVE-2026-47623",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "NVIDIA Dynamo for Linux contains a vulnerability where an attacker could cause deserialization of untrusted data. A successful exploit of this vulnerability might lead to denial of service and data ta",
-        "published": "2026-08-04T18:16:51.983"
-      },
-      {
-        "cve_id": "CVE-2026-70486",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI platform. From 0.9.0 until 0.11.0, the terminal file-preview serveUrl iframe branch always granted allow-same-origin togethe",
-        "published": "2026-08-04T20:16:55.747"
-      },
-      {
-        "cve_id": "CVE-2026-18830",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Insufficient input validation in Amazon Bedrock AgentCore harness might allow an authenticated remote user to execute configured tools bypassing model invocation and security controls via crafted cont",
-        "published": "2026-08-04T18:16:49.420"
-      },
-      {
-        "cve_id": "CVE-2026-70482",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI platform. From 0.8.0 until 0.11.0, when ENABLE_OAUTH_TOKEN_EXCHANGE=True, /oauth/{provider}/token/exchange accepts a raw pro",
-        "published": "2026-08-04T20:16:55.190"
+        "base_score": 8.4,
+        "description": "An issue in Vim Project v9.2.0389 and earlier allows a local attacker to execute arbitrary code via the vms_fixfilename() function within file vim/src/os_vms.c",
+        "published": "2026-08-04T21:16:36.433"
       },
       {
         "cve_id": "CVE-2026-70494",
@@ -376,11 +369,18 @@
         "published": "2026-08-04T21:16:38.470"
       },
       {
-        "cve_id": "CVE-2026-18656",
+        "cve_id": "CVE-2026-14553",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "An uncontrolled search path element in Kiro IDE before version 1.0.228 on Windows might allow a remote unauthenticated actor to execute arbitrary code via a maliciously crafted project directory conta",
-        "published": "2026-08-04T20:16:50.410"
+        "base_score": 8.1,
+        "description": "The zportals WordPress plugin before 6.3.4 does not properly validate uploaded files, trusting the client-supplied content type and preserving the original file extension, allowing any authenticated u",
+        "published": "2026-08-05T07:16:34.787"
+      },
+      {
+        "cve_id": "CVE-2026-15230",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The YayPricing  WordPress plugin before 3.5.7 does not perform capability checks on several of its REST API routes, relying only on a shared nonce, allowing any authenticated user such as a subscriber",
+        "published": "2026-08-05T07:16:35.010"
       }
     ]
   },
