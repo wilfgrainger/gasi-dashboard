@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-05T01:43:24.171382+00:00",
+  "generated_at": "2026-08-05T06:19:37.490185+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
-        "score": 2.5,
+        "value": 12,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 266,
-    "critical_count": 9,
-    "high_count": 18,
+    "total": 285,
+    "critical_count": 12,
+    "high_count": 22,
     "cves": [
       {
         "cve_id": "CVE-2026-16618",
@@ -278,6 +278,20 @@
         "published": "2026-08-04T15:16:36.967"
       },
       {
+        "cve_id": "CVE-2026-69098",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "kotaemon through 0.12.0 contains an insecure deserialization vulnerability in the check_connection endpoint that allows unauthenticated attackers to instantiate arbitrary Python classes by supplying c",
+        "published": "2026-08-04T16:16:28.190"
+      },
+      {
+        "cve_id": "CVE-2026-25289",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Memory Corruption when processing Device Capability Extended attributes in certain NAN Service Discovery Frames with invalid length values.",
+        "published": "2026-08-04T16:16:24.890"
+      },
+      {
         "cve_id": "CVE-2026-15958",
         "severity": "CRITICAL",
         "base_score": 9.3,
@@ -306,6 +320,13 @@
         "published": "2026-08-04T10:19:32.417"
       },
       {
+        "cve_id": "CVE-2026-69110",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "OpenCode Studio before 2.4.4 contains a missing authentication vulnerability that allows unauthenticated remote attackers to read arbitrary files within the temp and static/music directories by direct",
+        "published": "2026-08-04T16:16:28.483"
+      },
+      {
         "cve_id": "CVE-2026-17070",
         "severity": "HIGH",
         "base_score": 8.8,
@@ -327,6 +348,20 @@
         "published": "2026-08-04T15:16:40.130"
       },
       {
+        "cve_id": "CVE-2026-69100",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "LAMP Rapid Development Platform through 5.6.2, fixed in commit 84b0c27, contains a remote code execution vulnerability in GlueFactory that executes unsandboxed Groovy scripts from database template fi",
+        "published": "2026-08-04T16:16:28.340"
+      },
+      {
+        "cve_id": "CVE-2026-24079",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Cryptographic Issue while processing registration requests with malformed or missing authentication parameters.",
+        "published": "2026-08-04T16:16:23.453"
+      },
+      {
         "cve_id": "CVE-2026-16623",
         "severity": "HIGH",
         "base_score": 8.0,
@@ -346,41 +381,6 @@
         "base_score": 7.8,
         "description": "A maliciously crafted FBX file, when parsed through Autodesk FBX SDK, can trigger a stack-based buffer overflow vulnerability in fbxsdk::ExtractDrive. A malicious actor can leverage this vulnerability",
         "published": "2026-08-04T13:17:32.507"
-      },
-      {
-        "cve_id": "CVE-2026-21366",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Memory corruption while processing a packet with a size close to the maximum allowed value.",
-        "published": "2026-08-04T16:16:22.780"
-      },
-      {
-        "cve_id": "CVE-2026-67198",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Perspective 5.0.0 contains a denial-of-service vulnerability in the VirtualServer protocol dispatcher that allows unauthenticated remote attackers to crash the server process by sending malformed or i",
-        "published": "2026-08-04T15:16:40.423"
-      },
-      {
-        "cve_id": "CVE-2026-67200",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Perspective 5.0.0 contains a path traversal vulnerability that allows unauthenticated remote attackers to read arbitrary files from the server filesystem by including literal ../ segments in HTTP requ",
-        "published": "2026-08-04T15:16:40.717"
-      },
-      {
-        "cve_id": "CVE-2026-14838",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "Use of GET request method with sensitive query strings vulnerability in Bilin Software and Informatics Consultancy Inc. HUMANIST Digital Human Resources allows Session Hijacking.\n\nThis issue affects H",
-        "published": "2026-08-04T10:19:32.540"
-      },
-      {
-        "cve_id": "CVE-2026-42169",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A heap-buffer-overflow vulnerability exists in the APNG (Animated PNG) file loader of GIMP. This flaw occurs when the `fcTL` width exceeds the `IHDR` width, leading to pixel data being written past th",
-        "published": "2026-08-04T04:16:32.710"
       }
     ]
   },
