@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T20:57:15.634998+00:00",
+  "generated_at": "2026-08-06T01:42:50.108986+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 30,
+        "value": 26,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
+        "value": 5,
         "score": 2.5,
         "max": 3
       },
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1661,
-    "recent_30d_count": 30,
+    "recent_30d_count": 26,
     "recent": [
       {
         "cve_id": "CVE-2026-63077",
@@ -239,57 +239,15 @@
   },
   "nvd": {
     "total": 447,
-    "critical_count": 9,
-    "high_count": 37,
+    "critical_count": 5,
+    "high_count": 32,
     "cves": [
-      {
-        "cve_id": "CVE-2026-45538",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "OpenSIPS is a Session Initiation Protocol (SIP) server implementation. In versions 4.0.0 and prior, processing a SIP message with a header name longer than 255 bytes causes a stack buffer overflow whe",
-        "published": "2026-08-04T21:16:36.270"
-      },
-      {
-        "cve_id": "CVE-2026-66902",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Google::Auth versions before 0.06 for Perl run a command named in an external_account credentials JSON via an ungated system call.\n\nThe Pluggable subclass reads credential_source.executable.command fr",
-        "published": "2026-08-04T21:16:37.253"
-      },
-      {
-        "cve_id": "CVE-2026-70554",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "MaxSite CMS contains a PHP object injection vulnerability that allows unauthenticated attackers to execute arbitrary code by passing attacker-controlled serialized data in the maxsite_comuser cookie d",
-        "published": "2026-08-04T21:16:38.613"
-      },
       {
         "cve_id": "CVE-2026-9273",
         "severity": "CRITICAL",
         "base_score": 9.3,
         "description": "The Membership Plugin \u2013 Kadence Memberships plugin for WordPress (formerly Restrict Content) is vulnerable to password reset link poisoning leading to account takeover in all versions up to, and inclu",
         "published": "2026-08-05T06:16:40.967"
-      },
-      {
-        "cve_id": "CVE-2026-67979",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Incorrect access control in the Executive Services dynamic application start path component of NASA cFS v7.0.1 allows attackers to execute arbitrary code via placing a shared object on target storage.",
-        "published": "2026-08-04T21:16:37.360"
-      },
-      {
-        "cve_id": "CVE-2026-45100",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "OpenSIPS is a Session Initiation Protocol (SIP) server implementation. Versions 3.4.0-beta through 3.6.5 and 4.0.0-beta contain a buffer overflow in the {s.b64encode}\u00a0string transformation. The size c",
-        "published": "2026-08-04T22:17:14.670"
-      },
-      {
-        "cve_id": "CVE-2026-45537",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "OpenSIPS is a Session Initiation Protocol (SIP) server implementation. In versions prior to 3.6.6 and 4.0.0-rc1, the construct_uri() function concatenates multiple URI components (protocol, username, ",
-        "published": "2026-08-04T23:16:51.687"
       },
       {
         "cve_id": "CVE-2026-15210",
@@ -306,11 +264,18 @@
         "published": "2026-08-05T07:16:35.123"
       },
       {
-        "cve_id": "CVE-2026-70619",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Odysseus before commit bf325f6 contains a missing authorization vulnerability that allows authenticated non-admin users to manage server-wide embedding backend configuration by invoking endpoint manag",
-        "published": "2026-08-04T22:17:17.573"
+        "cve_id": "CVE-2026-4431",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The Easy Post Submission plugin for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the `create_post()` function in all versions up to, and including,",
+        "published": "2026-08-05T08:16:33.457"
+      },
+      {
+        "cve_id": "CVE-2026-5581",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The Multi Uploader for Gravity Forms plugin for WordPress is vulnerable to unauthorized arbitrary media deletion in all versions up to, and including, 1.1.8. This is due to missing capability checks i",
+        "published": "2026-08-05T08:16:35.007"
       },
       {
         "cve_id": "CVE-2026-18895",
@@ -348,25 +313,32 @@
         "published": "2026-08-05T06:16:40.660"
       },
       {
-        "cve_id": "CVE-2026-70492",
+        "cve_id": "CVE-2026-70374",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI platform. From 0.10.0 until 0.11.0, src/lib/components/chat/Messages/Markdown/KatexRenderer.svelte could store and render a ",
-        "published": "2026-08-04T21:16:38.190"
+        "base_score": 8.8,
+        "description": "HashBrown CMS through 1.4.6 contains an OS Command Injection vulnerability (CWE-78) in the media upload thumbnail generation routine. Media.generateThumbnail() in src/Server/Entity/Resource/Media.js b",
+        "published": "2026-08-05T07:16:39.567"
       },
       {
-        "cve_id": "CVE-2026-51400",
+        "cve_id": "CVE-2026-70375",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "An issue in Vim Project v9.2.0389 and earlier allows a local attacker to execute arbitrary code via the vms_fixfilename() function within file vim/src/os_vms.c",
-        "published": "2026-08-04T21:16:36.433"
+        "base_score": 8.8,
+        "description": "HashBrown CMS through 1.4.6 contains an OS Command Injection vulnerability (CWE-78) in the Git deployer component. GitDeployer.pullRepo() in src/Server/Entity/Deployer/GitDeployer.js executes AppServi",
+        "published": "2026-08-05T07:16:39.697"
       },
       {
-        "cve_id": "CVE-2026-70494",
+        "cve_id": "CVE-2026-55997",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI platform. From 0.10.0 until 0.11.0, the DELETE /api/v1/folders/{id} handler in backend/open_webui/routers/folders.py allowed",
-        "published": "2026-08-04T21:16:38.470"
+        "base_score": 8.8,
+        "description": "Rancher issues long-lived registration tokens to authenticate nodes and agents joining a downstream cluster. These tokens were stored and exposed in plaintext with no expiration, so a malicious user c",
+        "published": "2026-08-05T08:16:34.330"
+      },
+      {
+        "cve_id": "CVE-2026-55739",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "Crater isolates data per company_id, and its Invoice/Estimate/Payment/Expense policies enforce both a Bouncer ability check and $user->hasCompany($model->company_id). CustomerPolicy's view/update/dele",
+        "published": "2026-08-05T08:16:33.903"
       },
       {
         "cve_id": "CVE-2026-14553",
@@ -381,6 +353,34 @@
         "base_score": 8.1,
         "description": "The YayPricing  WordPress plugin before 3.5.7 does not perform capability checks on several of its REST API routes, relying only on a shared nonce, allowing any authenticated user such as a subscriber",
         "published": "2026-08-05T07:16:35.010"
+      },
+      {
+        "cve_id": "CVE-2026-54418",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Leantime through 3.6.2 exposes the JSON-RPC methods leantime.rpc.TwoFA.TwoFA.getSetupData, saveSecret, verifyAndEnable, and disable2FA, which act on a caller-supplied userId parameter with no ownershi",
+        "published": "2026-08-05T08:16:33.777"
+      },
+      {
+        "cve_id": "CVE-2026-15918",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "VikAppointments Service Booking Calendar wordpress plugin is vulnerable to unauthenticated SQL injection due to one of the parameters that controls how the public reviews list is sorted is taken from ",
+        "published": "2026-08-05T06:16:36.587"
+      },
+      {
+        "cve_id": "CVE-2026-15372",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The WP 2FA  WordPress plugin before 4.1.0 does not validate the second authentication factor when one of its supported methods is selected at login, allowing an attacker who already knows a user's pas",
+        "published": "2026-08-05T07:16:35.237"
+      },
+      {
+        "cve_id": "CVE-2026-16036",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The miniOrange 2FA  WordPress plugin before 6.2.7 does not bind the second factor being configured during the pre-login two-factor challenge to the target account's existing factor, allowing an attack",
+        "published": "2026-08-05T07:16:35.350"
       }
     ]
   },
