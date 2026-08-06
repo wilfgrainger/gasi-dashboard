@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T01:42:50.108986+00:00",
+  "generated_at": "2026-08-06T06:22:02.770358+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
+        "value": 7,
         "score": 2.5,
         "max": 3
       },
@@ -238,16 +238,30 @@
     ]
   },
   "nvd": {
-    "total": 447,
-    "critical_count": 5,
+    "total": 430,
+    "critical_count": 7,
     "high_count": 32,
     "cves": [
       {
-        "cve_id": "CVE-2026-9273",
+        "cve_id": "CVE-2026-61484",
         "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "The Membership Plugin \u2013 Kadence Memberships plugin for WordPress (formerly Restrict Content) is vulnerable to password reset link poisoning leading to account takeover in all versions up to, and inclu",
-        "published": "2026-08-05T06:16:40.967"
+        "base_score": 9.8,
+        "description": "** UNSUPPORTED WHEN ASSIGNED ** Deserialization of Untrusted Data vulnerability in Apache Lucy.\n\nThis issue affects Apache Lucy: all versions.\n\nAs this project is retired, we do not plan to release a ",
+        "published": "2026-08-05T08:16:35.487"
+      },
+      {
+        "cve_id": "CVE-2026-61486",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "** UNSUPPORTED WHEN ASSIGNED ** Stack-based Buffer Overflow vulnerability in Apache Lucy.\n\nThis issue affects Apache Lucy: all versions.\n\nAs this project is retired, we do not plan to release a versio",
+        "published": "2026-08-05T08:16:35.733"
+      },
+      {
+        "cve_id": "CVE-2026-70376",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Pluck CMS's admin panel relies solely on a Referer-header comparison (requestedByTheSameDomain() in data/inc/functions.admin.php, gating every admin.php action) for CSRF protection, with no per-reques",
+        "published": "2026-08-05T08:16:41.703"
       },
       {
         "cve_id": "CVE-2026-15210",
@@ -278,41 +292,6 @@
         "published": "2026-08-05T08:16:35.007"
       },
       {
-        "cve_id": "CVE-2026-18895",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was found in UTT HiPER 1250GW up to 3.2.7-210907-180535. Impacted is the function strcpy of the file /goform/APSecurity_5g. Performing a manipulation of the argument cipher results in ",
-        "published": "2026-08-05T02:16:37.403"
-      },
-      {
-        "cve_id": "CVE-2026-18897",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was identified in UTT HiPER 1250GW up to v3.2.7-210907-180535. The impacted element is the function strcpy of the file /goform/getOneApConfTempEntry. The manipulation of the argument t",
-        "published": "2026-08-05T02:16:37.773"
-      },
-      {
-        "cve_id": "CVE-2026-18898",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A security flaw has been discovered in UTT HiPER 1200GW up to v2.5.3-170306. This affects the function strcpy of the file /goform/ConfigAdvideo. The manipulation of the argument timestart results in s",
-        "published": "2026-08-05T04:17:16.790"
-      },
-      {
-        "cve_id": "CVE-2026-18322",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Smart Popup by Supsystic plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 1.12.0. This is due to a permission map collision in the `havePermissions(",
-        "published": "2026-08-05T06:16:37.330"
-      },
-      {
-        "cve_id": "CVE-2026-8761",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Dokan plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 5.0.1. This is due to a missing authorization check in the `CustomersController` REST control",
-        "published": "2026-08-05T06:16:40.660"
-      },
-      {
         "cve_id": "CVE-2026-70374",
         "severity": "HIGH",
         "base_score": 8.8,
@@ -334,11 +313,32 @@
         "published": "2026-08-05T08:16:34.330"
       },
       {
+        "cve_id": "CVE-2026-6147",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The LightSync Pro plugin for WordPress is vulnerable to arbitrary file uploads due to missing file type validation in the rest_replace_media() function in all versions up to, and including, 2.1.6. Thi",
+        "published": "2026-08-05T08:16:41.140"
+      },
+      {
         "cve_id": "CVE-2026-55739",
         "severity": "HIGH",
         "base_score": 8.3,
         "description": "Crater isolates data per company_id, and its Invoice/Estimate/Payment/Expense policies enforce both a Bouncer ability check and $user->hasCompany($model->company_id). CustomerPolicy's view/update/dele",
         "published": "2026-08-05T08:16:33.903"
+      },
+      {
+        "cve_id": "CVE-2026-71206",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "Shiori's CheckToken function (internal/domains/auth.go) validates only the JWT's HMAC signature and returns the embedded claims.Account object unmodified, never re-fetching the account from the databa",
+        "published": "2026-08-05T08:16:42.587"
+      },
+      {
+        "cve_id": "CVE-2026-6627",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "The WPFormify \u2013 Stripe Payments with Form and Checkout plugin for WordPress is vulnerable to unauthorized modification and deletion of Stripe payment credentials in all versions up to, and including, ",
+        "published": "2026-08-05T08:16:41.280"
       },
       {
         "cve_id": "CVE-2026-14553",
@@ -362,13 +362,6 @@
         "published": "2026-08-05T08:16:33.777"
       },
       {
-        "cve_id": "CVE-2026-15918",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "VikAppointments Service Booking Calendar wordpress plugin is vulnerable to unauthenticated SQL injection due to one of the parameters that controls how the public reviews list is sorted is taken from ",
-        "published": "2026-08-05T06:16:36.587"
-      },
-      {
         "cve_id": "CVE-2026-15372",
         "severity": "HIGH",
         "base_score": 7.5,
@@ -381,6 +374,13 @@
         "base_score": 7.5,
         "description": "The miniOrange 2FA  WordPress plugin before 6.2.7 does not bind the second factor being configured during the pre-login two-factor challenge to the target account's existing factor, allowing an attack",
         "published": "2026-08-05T07:16:35.350"
+      },
+      {
+        "cve_id": "CVE-2026-16055",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Contest Gallery  WordPress plugin before 30.0.7 does not route its front-end login through the standard WordPress authentication flow, issuing an authentication cookie directly after the password ",
+        "published": "2026-08-05T07:16:35.463"
       }
     ]
   },
