@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-07T05:27:12.258537+00:00",
+  "generated_at": "2026-08-07T08:46:06.475690+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
-        "score": 2.5,
+        "value": 21,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,23 +238,23 @@
     ]
   },
   "nvd": {
-    "total": 498,
-    "critical_count": 9,
-    "high_count": 24,
+    "total": 447,
+    "critical_count": 21,
+    "high_count": 43,
     "cves": [
       {
-        "cve_id": "CVE-2026-5430",
+        "cve_id": "CVE-2026-65553",
         "severity": "CRITICAL",
         "base_score": 10.0,
-        "description": "The JWT authentication mechanism accepts tokens signed with algorithms other than those explicitly configured or supported. This allows an attacker to craft a JWT with an unsupported algorithm, which ",
-        "published": "2026-08-06T08:16:33.240"
+        "description": "Unauthenticated Remote Code Execution (RCE) in Spider Analyser &#8211; WordPress\u641c\u7d22\u5f15\u64ce\u8718\u86db\u5206\u6790\u63d2\u4ef6 <= 2.1.3 versions.",
+        "published": "2026-08-06T15:17:17.557"
       },
       {
-        "cve_id": "CVE-2026-1728",
+        "cve_id": "CVE-2026-65548",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Tokens issued to a low-privileged user are not sufficiently restricted, allowing them to be used to access product-level Admin REST APIs.\n\nExploitation of this vulnerability allows a low-privileged us",
-        "published": "2026-08-06T08:16:31.423"
+        "base_score": 9.9,
+        "description": "Contributor Remote Code Execution (RCE) in Betheme <= 28.4.2 versions.",
+        "published": "2026-08-06T15:17:16.737"
       },
       {
         "cve_id": "CVE-2026-66909",
@@ -264,25 +264,81 @@
         "published": "2026-08-06T11:16:30.583"
       },
       {
-        "cve_id": "CVE-2025-15039",
+        "cve_id": "CVE-2026-68079",
         "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "The Conditional Authentication (Adaptive Authentication) script does not correctly enforce the completion of all required authentication steps when a specific multi-step pattern involving certain auth",
-        "published": "2026-08-06T08:16:29.147"
+        "base_score": 9.8,
+        "description": "In Apache CXF's DefaultEncryptingCodeDataProvider,\u00a0a captured authorization code can be redeemed an unlimited number of times due to a flaw in the implementation of the\u00a0removeCodeGrant functionality. ",
+        "published": "2026-08-06T12:16:28.060"
       },
       {
-        "cve_id": "CVE-2026-12713",
+        "cve_id": "CVE-2026-5134",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The WPCargo Track & Trace WordPress plugin before 8.0.4 does not properly sanitise and escape a parameter before using it in a SQL statement, allowing unauthenticated users to perform SQL injection at",
-        "published": "2026-08-06T07:16:26.990"
+        "base_score": 9.8,
+        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Loca Software Informatics Technology Ltd. Co. CMS allows SQL Injection.\n\nThis issue affects CMS: t",
+        "published": "2026-08-06T14:16:36.840"
       },
       {
-        "cve_id": "CVE-2026-16054",
+        "cve_id": "CVE-2026-28005",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The Drag and Drop Multiple File Upload for WooCommerce WordPress plugin before 1.1.8 does not prevent unauthenticated users from obtaining a valid nonce that is the only control gating its file-deleti",
-        "published": "2026-08-06T07:16:28.087"
+        "base_score": 9.8,
+        "description": "Unauthenticated Privilege Escalation in Kadence WooCommerce Email Designer <= 1.5.19 versions.",
+        "published": "2026-08-06T15:16:51.560"
+      },
+      {
+        "cve_id": "CVE-2026-28139",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Unauthenticated PHP Object Injection in Ajax Search Lite <= 4.14.4 versions.",
+        "published": "2026-08-06T15:16:52.580"
+      },
+      {
+        "cve_id": "CVE-2026-53975",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "OpenChamber 1.11.7 contains an unauthenticated remote code execution vulnerability that allows remote attackers to execute arbitrary shell commands by sending crafted POST requests to the /api/fs/exec",
+        "published": "2026-08-06T15:16:55.827"
+      },
+      {
+        "cve_id": "CVE-2026-65507",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Unauthenticated Privilege Escalation in AIWU <= 1.5.6 versions.",
+        "published": "2026-08-06T15:17:14.823"
+      },
+      {
+        "cve_id": "CVE-2026-65552",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Subscriber PHP Object Injection in Export User Data <= 2.2.6 versions.",
+        "published": "2026-08-06T15:17:17.430"
+      },
+      {
+        "cve_id": "CVE-2026-12605",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "In Eclipse GlassFish versions 8.0.x before 8.0.4, CSRF + SSRF in DownloadServlet ContentSources leaks the admin `gfresttoken` to attacker-controlled host if the victim is authenticated into the Admin ",
+        "published": "2026-08-06T14:16:20.887"
+      },
+      {
+        "cve_id": "CVE-2026-65508",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Unauthenticated SQL Injection in Simply Schedule Appointments <= 1.6.12.10 versions.",
+        "published": "2026-08-06T15:17:14.957"
+      },
+      {
+        "cve_id": "CVE-2026-65520",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Unauthenticated SQL Injection in WP OAuth Server <= 6.2.0 versions.",
+        "published": "2026-08-06T15:17:15.607"
+      },
+      {
+        "cve_id": "CVE-2026-65546",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Unauthenticated SQL Injection in Qode Tours <= 3.1.3.1 versions.",
+        "published": "2026-08-06T15:17:16.480"
       },
       {
         "cve_id": "CVE-2026-61466",
@@ -306,81 +362,25 @@
         "published": "2026-08-06T12:16:27.953"
       },
       {
-        "cve_id": "CVE-2026-18597",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "The PDF creation feature of Foxit PDF Services API supports referencing external files. Although local file access is restricted, an attacker could trigger an SSRF vulnerability by using URL redirecti",
-        "published": "2026-08-06T08:16:29.633"
+        "cve_id": "CVE-2026-32327",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "A bug in APR-util version 1.6.3 (and earlier) allows a stack recursion attack against any library consumer which parses XML from untrusted sources and uses the\u00a0apr_xml_quote_elem() function.\n\nUsers ar",
+        "published": "2026-08-06T15:16:54.190"
       },
       {
-        "cve_id": "CVE-2026-55978",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "An improper access control vulnerability in\u00a0CatchPulse\u00a0could allow a non-administrative local\u202fattacker to connect to an unrestricted kernel filter communication port and bypass\u00a0CatchPulse's\u00a0security p",
-        "published": "2026-08-06T10:16:43.910"
+        "cve_id": "CVE-2026-34191",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Apache Portable Runtime Utility via apr_dbd_oracle provider.\n\nThis issue affects Apache Portable R",
+        "published": "2026-08-06T15:16:54.650"
       },
       {
-        "cve_id": "CVE-2026-14829",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "The Checkimate \u2014 WooCommerce Checkout, Abandoned Cart Recovery & Order Bumps WordPress plugin through 1.0.13 does not properly restrict access to its license-management functionality, relying on a sha",
-        "published": "2026-08-06T07:16:27.980"
-      },
-      {
-        "cve_id": "CVE-2026-16268",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "The Newsletters WordPress plugin before 4.16 does not authenticate or validate a bounce-processing request before fetching a user-supplied URL on the server side, allowing unauthenticated attackers to",
-        "published": "2026-08-06T07:16:28.300"
-      },
-      {
-        "cve_id": "CVE-2026-15459",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The WPMU DEV Dashboard plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 5.0.0. On sites not yet connected to the WPMU DEV Hub \u2014 the default state after",
-        "published": "2026-08-06T06:16:30.950"
-      },
-      {
-        "cve_id": "CVE-2026-57817",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The OpenID Connect Core 1.0 specification mandates that the RP MUST validate the `c_hash` parameter when operating in the Hybrid Flow.\u00a0If an Apache CXF RP is integrated with a non-compliant or misconf",
-        "published": "2026-08-06T11:16:30.120"
-      },
-      {
-        "cve_id": "CVE-2026-57818",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "A race condition in JCacheCodeDataProvider allows an attacker to redeem a single authorization code multiple times via concurrent requests, resulting in the issuance of multiple distinct, valid access",
-        "published": "2026-08-06T12:16:27.373"
-      },
-      {
-        "cve_id": "CVE-2026-13153",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Gutenberg Essential Blocks  WordPress plugin before 6.4.0 does not restrict access to one of its public REST routes and over-fetches a non-public WooCommerce per-product sales metric into the resp",
-        "published": "2026-08-06T07:16:27.100"
-      },
-      {
-        "cve_id": "CVE-2026-13154",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Gutenberg Essential Blocks  WordPress plugin before 6.4.0 does not verify that an attacker-supplied post type is publicly viewable before querying it in one of its public REST routes, allowing una",
-        "published": "2026-08-06T07:16:27.207"
-      },
-      {
-        "cve_id": "CVE-2026-16734",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Stripe Payment Forms by WP Full Pay  WordPress plugin before 8.5.2 does not verify that the caller owns the Stripe payment intent referenced by two unauthenticated payment-form AJAX actions, allow",
-        "published": "2026-08-06T07:16:28.647"
-      },
-      {
-        "cve_id": "CVE-2026-18050",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Events Manager  WordPress plugin before 7.4 does not perform any authorization check on a REST route that serves temporarily stored file uploads, allowing unauthenticated users to retrieve another",
-        "published": "2026-08-06T07:16:28.880"
+        "cve_id": "CVE-2026-53976",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "OpenChamber 1.11.7 contains a path traversal vulnerability in the file-serving endpoints /api/fs/read, /api/fs/stat, and /api/fs/raw that allows unauthenticated remote attackers to read arbitrary file",
+        "published": "2026-08-06T15:16:55.983"
       }
     ]
   },
