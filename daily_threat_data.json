@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T00:49:53.608679+00:00",
+  "generated_at": "2026-08-07T05:27:12.258537+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
+        "value": 9,
         "score": 2.5,
         "max": 3
       },
@@ -239,7 +239,7 @@
   },
   "nvd": {
     "total": 498,
-    "critical_count": 5,
+    "critical_count": 9,
     "high_count": 24,
     "cves": [
       {
@@ -255,6 +255,13 @@
         "base_score": 9.8,
         "description": "Tokens issued to a low-privileged user are not sufficiently restricted, allowing them to be used to access product-level Admin REST APIs.\n\nExploitation of this vulnerability allows a low-privileged us",
         "published": "2026-08-06T08:16:31.423"
+      },
+      {
+        "cve_id": "CVE-2026-66909",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Apache CXF's JMS transport deserializes the body of any inbound JMS ObjectMessage\u00a0using native Java deserialization, with no type restrictions in place. Any attacker able to place a message on the ser",
+        "published": "2026-08-06T11:16:30.583"
       },
       {
         "cve_id": "CVE-2025-15039",
@@ -278,11 +285,25 @@
         "published": "2026-08-06T07:16:28.087"
       },
       {
-        "cve_id": "CVE-2026-15991",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The File Manager plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the connector function in all versions from 6.0 - 6.9. This makes it possible",
-        "published": "2026-08-06T05:16:38.930"
+        "cve_id": "CVE-2026-61466",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "In Apache CXF's OAuth2 Dynamic Client Registration endpoint, the authorization server accepts and stores the `scope` value supplied in the client registration request verbatim, without validating it a",
+        "published": "2026-08-06T12:16:27.730"
+      },
+      {
+        "cve_id": "CVE-2026-63687",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Apache CXF's JwtRequestCodeFilter copies all claims from a signed request JWT into the authorization parameter map without excluding security-sensitive parameters. A client that can produce a validly-",
+        "published": "2026-08-06T12:16:27.843"
+      },
+      {
+        "cve_id": "CVE-2026-65583",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Apache CXF\u2019s OIDC relying-party token validation could accept self-issued ID tokens without enforcing required claim checks (issuer/subject/audience/time and sub_jwk binding), enabling authentication ",
+        "published": "2026-08-06T12:16:27.953"
       },
       {
         "cve_id": "CVE-2026-18597",
@@ -327,6 +348,13 @@
         "published": "2026-08-06T11:16:30.120"
       },
       {
+        "cve_id": "CVE-2026-57818",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "A race condition in JCacheCodeDataProvider allows an attacker to redeem a single authorization code multiple times via concurrent requests, resulting in the issuance of multiple distinct, valid access",
+        "published": "2026-08-06T12:16:27.373"
+      },
+      {
         "cve_id": "CVE-2026-13153",
         "severity": "HIGH",
         "base_score": 7.5,
@@ -353,34 +381,6 @@
         "base_score": 7.5,
         "description": "The Events Manager  WordPress plugin before 7.4 does not perform any authorization check on a REST route that serves temporarily stored file uploads, allowing unauthenticated users to retrieve another",
         "published": "2026-08-06T07:16:28.880"
-      },
-      {
-        "cve_id": "CVE-2026-18649",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A flaw was found in the GStreamer gst-plugins-good package. The rtph264depay and rtph265depay RTP depayloader elements do not enforce a maximum size limit on the reassembly buffer used during fragment",
-        "published": "2026-08-06T08:16:29.780"
-      },
-      {
-        "cve_id": "CVE-2026-54225",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Apache CXF allows to control the maximum attachment size via the\u00a0\"attachment-max-size\". Prior to Apache CXF 4.2.3 and 4.1.8 and 3.6.12, there was no default placed on this size, meaning that a denial ",
-        "published": "2026-08-06T11:16:30.003"
-      },
-      {
-        "cve_id": "CVE-2026-18973",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability has been found in heshengtao super-agent-party up to 0.4.1. The impacted element is the function sanitize_proxy_url of the file server.py of the component extension_proxy Route. The ma",
-        "published": "2026-08-06T01:16:29.410"
-      },
-      {
-        "cve_id": "CVE-2026-18990",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was detected in letta-ai LettaBot 0.2.0. Impacted is an unknown function of the file src/api/server.ts of the component API Status Route. The manipulation results in missing authentica",
-        "published": "2026-08-06T03:16:20.930"
       }
     ]
   },
