@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-06T13:41:51.545464+00:00",
+  "generated_at": "2026-08-07T00:49:53.608679+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 13,
-        "score": 3.0,
+        "value": 5,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -62,7 +62,7 @@
         "name": "Apache Tomcat Missing Encryption of Sensitive Data Vulnerability",
         "date_added": "2026-08-04",
         "due_date": "2026-08-07",
-        "description": "Apache Tomcat contains a missing encryption of sensitive data vulnerability that allows the bypass of the EncryptInterceptor.",
+        "description": "Apache Tomcat contains a missing encryption of sensitive data vulnerability that allows the bypass of the EncryptInterceptor. This vulnerability can be chained with CVE\u20112025\u201124813.",
         "ransomware_use": "Unknown"
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 342,
-    "critical_count": 13,
-    "high_count": 40,
+    "total": 498,
+    "critical_count": 5,
+    "high_count": 24,
     "cves": [
       {
-        "cve_id": "CVE-2026-7329",
+        "cve_id": "CVE-2026-5430",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "An improper privilege management vulnerability in the SQL, SPARQL, and Optic REST query interfaces of Progress MarkLogic Server before 11.3.6 and 12.0.3 allows an authenticated user with a low-privile",
-        "published": "2026-08-05T16:17:09.200"
+        "base_score": 10.0,
+        "description": "The JWT authentication mechanism accepts tokens signed with algorithms other than those explicitly configured or supported. This allows an attacker to craft a JWT with an unsupported algorithm, which ",
+        "published": "2026-08-06T08:16:33.240"
       },
       {
-        "cve_id": "CVE-2026-8709",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "An improper privilege management vulnerability in the REST API document patch operation of Progress MarkLogic Server before 11.3.6 and 12.0.3 allows an authenticated user with a low-privileged REST ro",
-        "published": "2026-08-05T16:17:09.820"
-      },
-      {
-        "cve_id": "CVE-2026-9193",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "An improper privilege management vulnerability in the Hadoop integration of Progress MarkLogic Server before 11.3.6 and 12.0.3 allows an authenticated user with a low-privileged Hadoop role to escalat",
-        "published": "2026-08-05T16:17:10.183"
-      },
-      {
-        "cve_id": "CVE-2026-20303",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Catalyst SD-WAN engineering team has conducted a comprehensive internal security review. This review resulted",
-        "published": "2026-08-05T17:16:50.513"
-      },
-      {
-        "cve_id": "CVE-2026-20304",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Catalyst SD-WAN engineering team has conducted a comprehensive internal security review. This review resulted",
-        "published": "2026-08-05T17:16:50.890"
-      },
-      {
-        "cve_id": "CVE-2026-9192",
+        "cve_id": "CVE-2026-1728",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "An authentication bypass vulnerability in the ODBC App Server of Progress MarkLogic Server before 11.3.6 and 12.0.3 allows an unauthenticated remote attacker to bypass password verification and execut",
-        "published": "2026-08-05T16:17:10.063"
+        "description": "Tokens issued to a low-privileged user are not sufficiently restricted, allowing them to be used to access product-level Admin REST APIs.\n\nExploitation of this vulnerability allows a low-privileged us",
+        "published": "2026-08-06T08:16:31.423"
       },
       {
-        "cve_id": "CVE-2026-20272",
+        "cve_id": "CVE-2025-15039",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco IOS XE Software engineering team has conducted a comprehensive internal security review. This review resulted",
-        "published": "2026-08-05T17:16:49.053"
+        "base_score": 9.4,
+        "description": "The Conditional Authentication (Adaptive Authentication) script does not correctly enforce the completion of all required authentication steps when a specific multi-step pattern involving certain auth",
+        "published": "2026-08-06T08:16:29.147"
       },
       {
-        "cve_id": "CVE-2026-9195",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "A cross-site scripting vulnerability in the Query Console of Progress MarkLogic Server before 11.3.6 and 12.0.3 allows a remote attacker who lures an authenticated administrator to a crafted URL to ex",
-        "published": "2026-08-05T16:17:10.313"
-      },
-      {
-        "cve_id": "CVE-2026-7557",
+        "cve_id": "CVE-2026-12713",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "An improper verification of cryptographic signature vulnerability in the SAML authentication module of Progress MarkLogic Server before 11.3.6 and 12.0.3 allows an unauthenticated remote attacker to b",
-        "published": "2026-08-05T16:17:09.437"
+        "description": "The WPCargo Track & Trace WordPress plugin before 8.0.4 does not properly sanitise and escape a parameter before using it in a SQL statement, allowing unauthenticated users to perform SQL injection at",
+        "published": "2026-08-06T07:16:26.990"
       },
       {
-        "cve_id": "CVE-2026-9190",
+        "cve_id": "CVE-2026-16054",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "An HTTP request smuggling vulnerability in the HTTP App Server of Progress MarkLogic Server before 11.3.6 and 12.0.3 allows a remote attacker to bypass authentication and authorization checks, hijack ",
-        "published": "2026-08-05T16:17:09.940"
+        "description": "The Drag and Drop Multiple File Upload for WooCommerce WordPress plugin before 1.1.8 does not prevent unauthenticated users from obtaining a valid nonce that is the only control gating its file-deleti",
+        "published": "2026-08-06T07:16:28.087"
       },
       {
-        "cve_id": "CVE-2026-20310",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Catalyst SD-WAN engineering team has conducted a comprehensive internal security review. This review resulted",
-        "published": "2026-08-05T17:16:51.520"
-      },
-      {
-        "cve_id": "CVE-2026-20267",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco IOS XE Software engineering team has conducted a comprehensive internal security review. This review resulted",
-        "published": "2026-08-05T17:16:47.560"
-      },
-      {
-        "cve_id": "CVE-2026-70426",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "In Remoting 3384.v60d89463d9e0 and earlier, except 3355.3357.v931d3c992987, included in Jenkins 2.575 and earlier, LTS 2.568.1 and earlier, the JEP-200 class filter is not applied to classes resolved ",
-        "published": "2026-08-05T18:17:12.233"
-      },
-      {
-        "cve_id": "CVE-2026-67623",
+        "cve_id": "CVE-2026-15991",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Mistral Vibe before 2.23.3 contains a remote code execution vulnerability that allows attackers to execute arbitrary commands by embedding a malicious core.fsmonitor hook in a repository's .git/config",
-        "published": "2026-08-05T14:17:10.047"
+        "description": "The File Manager plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the connector function in all versions from 6.0 - 6.9. This makes it possible",
+        "published": "2026-08-06T05:16:38.930"
       },
       {
-        "cve_id": "CVE-2026-15572",
+        "cve_id": "CVE-2026-18597",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw was found in Keycloak's Dynamic Client Registration (DCR) security policy management. The \"Allowed Protocol Mapper Types\" policy, which restricts which types of data mappers a client can use, f",
-        "published": "2026-08-05T16:16:50.903"
+        "base_score": 8.5,
+        "description": "The PDF creation feature of Foxit PDF Services API supports referencing external files. Although local file access is restricted, an attacker could trigger an SSRF vulnerability by using URL redirecti",
+        "published": "2026-08-06T08:16:29.633"
       },
       {
-        "cve_id": "CVE-2026-17623",
+        "cve_id": "CVE-2026-55978",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "IBM Langflow OSS 1.0.0 through 1.10.3 could allow a remote authenticated attacker to execute arbitrary commands due to improper validation of the command field in MCP server configurations.",
-        "published": "2026-08-05T17:16:44.663"
+        "base_score": 8.4,
+        "description": "An improper access control vulnerability in\u00a0CatchPulse\u00a0could allow a non-administrative local\u202fattacker to connect to an unrestricted kernel filter communication port and bypass\u00a0CatchPulse's\u00a0security p",
+        "published": "2026-08-06T10:16:43.910"
       },
       {
-        "cve_id": "CVE-2026-17626",
+        "cve_id": "CVE-2026-14829",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "IBM Langflow OSS 1.0.0 through 1.10.3 Langflow could allow an authenticated attacker to read, modify, or expose sensitive host files via Docker-based MCP servers due to incomplete filtering of dangero",
-        "published": "2026-08-05T17:16:44.783"
+        "base_score": 8.2,
+        "description": "The Checkimate \u2014 WooCommerce Checkout, Abandoned Cart Recovery & Order Bumps WordPress plugin through 1.0.13 does not properly restrict access to its license-management functionality, relying on a sha",
+        "published": "2026-08-06T07:16:27.980"
       },
       {
-        "cve_id": "CVE-2026-20200",
+        "cve_id": "CVE-2026-16268",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability in the web-based management interface of Cisco IMC could allow an authenticated, remote attacker with low privileges to execute arbitrary commands on the underlying operating system of",
-        "published": "2026-08-05T17:16:47.180"
+        "base_score": 8.2,
+        "description": "The Newsletters WordPress plugin before 4.16 does not authenticate or validate a bounce-processing request before fetching a user-supplied URL on the server side, allowing unauthenticated attackers to",
+        "published": "2026-08-06T07:16:28.300"
       },
       {
-        "cve_id": "CVE-2026-20312",
+        "cve_id": "CVE-2026-15459",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Catalyst SD-WAN engineering team has conducted a comprehensive internal security review. This review resulted",
-        "published": "2026-08-05T17:16:52.093"
+        "base_score": 8.1,
+        "description": "The WPMU DEV Dashboard plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 5.0.0. On sites not yet connected to the WPMU DEV Hub \u2014 the default state after",
+        "published": "2026-08-06T06:16:30.950"
       },
       {
-        "cve_id": "CVE-2026-70431",
+        "cve_id": "CVE-2026-57817",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Jenkins Multijob Plugin 669.v9d96a_d9c71b_0 and earlier provides Groovy scripting features that do not integrate with Script Security Plugin, allowing attackers with Item/Create or Item/Configure perm",
-        "published": "2026-08-05T18:17:12.773"
+        "base_score": 8.1,
+        "description": "The OpenID Connect Core 1.0 specification mandates that the RP MUST validate the `c_hash` parameter when operating in the Hybrid Flow.\u00a0If an Apache CXF RP is integrated with a non-compliant or misconf",
+        "published": "2026-08-06T11:16:30.120"
+      },
+      {
+        "cve_id": "CVE-2026-13153",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Gutenberg Essential Blocks  WordPress plugin before 6.4.0 does not restrict access to one of its public REST routes and over-fetches a non-public WooCommerce per-product sales metric into the resp",
+        "published": "2026-08-06T07:16:27.100"
+      },
+      {
+        "cve_id": "CVE-2026-13154",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Gutenberg Essential Blocks  WordPress plugin before 6.4.0 does not verify that an attacker-supplied post type is publicly viewable before querying it in one of its public REST routes, allowing una",
+        "published": "2026-08-06T07:16:27.207"
+      },
+      {
+        "cve_id": "CVE-2026-16734",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Stripe Payment Forms by WP Full Pay  WordPress plugin before 8.5.2 does not verify that the caller owns the Stripe payment intent referenced by two unauthenticated payment-form AJAX actions, allow",
+        "published": "2026-08-06T07:16:28.647"
+      },
+      {
+        "cve_id": "CVE-2026-18050",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Events Manager  WordPress plugin before 7.4 does not perform any authorization check on a REST route that serves temporarily stored file uploads, allowing unauthenticated users to retrieve another",
+        "published": "2026-08-06T07:16:28.880"
+      },
+      {
+        "cve_id": "CVE-2026-18649",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A flaw was found in the GStreamer gst-plugins-good package. The rtph264depay and rtph265depay RTP depayloader elements do not enforce a maximum size limit on the reassembly buffer used during fragment",
+        "published": "2026-08-06T08:16:29.780"
+      },
+      {
+        "cve_id": "CVE-2026-54225",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Apache CXF allows to control the maximum attachment size via the\u00a0\"attachment-max-size\". Prior to Apache CXF 4.2.3 and 4.1.8 and 3.6.12, there was no default placed on this size, meaning that a denial ",
+        "published": "2026-08-06T11:16:30.003"
+      },
+      {
+        "cve_id": "CVE-2026-18973",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability has been found in heshengtao super-agent-party up to 0.4.1. The impacted element is the function sanitize_proxy_url of the file server.py of the component extension_proxy Route. The ma",
+        "published": "2026-08-06T01:16:29.410"
+      },
+      {
+        "cve_id": "CVE-2026-18990",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was detected in letta-ai LettaBot 0.2.0. Impacted is an unknown function of the file src/api/server.ts of the component API Status Route. The manipulation results in missing authentica",
+        "published": "2026-08-06T03:16:20.930"
       }
     ]
   },
