@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T16:41:25.872731+00:00",
+  "generated_at": "2026-08-07T20:29:42.686746+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 26,
+        "value": 27,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 13,
+        "value": 16,
         "score": 3.0,
         "max": 3
       },
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1661,
-    "recent_30d_count": 26,
+    "total_catalog_count": 1662,
+    "recent_30d_count": 27,
     "recent": [
+      {
+        "cve_id": "CVE-2026-8037",
+        "vendor": "Progress",
+        "product": "LoadMaster",
+        "name": "Progress LoadMaster Command Injection Vulnerability",
+        "date_added": "2026-08-07",
+        "due_date": "2026-08-10",
+        "description": "Progress LoadMaster contains a command injection vulnerability that allows an un-authenticated attacker to execute arbitrary commands on the LoadMaster appliance by exploiting unsanitized input in mul",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-63077",
         "vendor": "JetBrains",
@@ -224,23 +234,13 @@
         "due_date": "2026-07-29",
         "description": "KNX Association KNX Protocol Connection Authorization Option 1 contains an overly restrictive account lockout mechanism vulnerability that could allow an attacker to purge all devices without addition",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-56155",
-        "vendor": "Microsoft",
-        "product": "Active Directory Federation Services",
-        "name": "Microsoft Active Directory Federation Services Insufficient Granularity of Access Control Vulnerability ",
-        "date_added": "2026-07-14",
-        "due_date": "2026-07-28",
-        "description": "Microsoft Active Directory Federation Services contains an insufficient granularity of access control vulnerability that allows an authorized attacker to elevate privileges locally.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 327,
-    "critical_count": 13,
-    "high_count": 41,
+    "total": 408,
+    "critical_count": 16,
+    "high_count": 42,
     "cves": [
       {
         "cve_id": "CVE-2026-11976",
@@ -255,6 +255,27 @@
         "base_score": 10.0,
         "description": "The Premium SEO WordPress plugin is malicious: it ships an unauthenticated backdoor that creates a hidden administrator account and, in some builds, also enables remote code execution, server-side req",
         "published": "2026-08-06T22:16:46.967"
+      },
+      {
+        "cve_id": "CVE-2026-15732",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A Server-Side Request Forgery (SSFR) vulnerability exist in WGDashboard version 4.2.3 and earlier. The webhook functionality allows authenticated attackers to make arbitrary HTTP requests and retrieve",
+        "published": "2026-08-06T22:16:48.300"
+      },
+      {
+        "cve_id": "CVE-2026-15733",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A Remote Code Execution (RCE) vulnerability exist in WGDashboard version 4.2.3 and earlier. Multiple OS command injection allows authenticated attackers to execute arbitrary commands as root.",
+        "published": "2026-08-06T22:16:48.410"
+      },
+      {
+        "cve_id": "CVE-2026-15734",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A Server-Side Template Injection (SSTI) vulnerability in WGDashboard version 4.3.2 and earlier, allows authenticated attackers to execute arbitrary code as root.",
+        "published": "2026-08-06T22:16:48.513"
       },
       {
         "cve_id": "CVE-2026-17032",
@@ -360,27 +381,6 @@
         "base_score": 8.8,
         "description": "Inappropriate implementation in V8 in Google Chrome prior to 151.0.7922.109 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: H",
         "published": "2026-08-06T22:16:57.223"
-      },
-      {
-        "cve_id": "CVE-2026-19151",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in V8 in Google Chrome prior to 151.0.7922.109 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-08-06T22:16:57.330"
-      },
-      {
-        "cve_id": "CVE-2026-19162",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Out of bounds write in V8 in Google Chrome prior to 151.0.7922.109 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-08-06T22:16:58.573"
-      },
-      {
-        "cve_id": "CVE-2026-19168",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Inappropriate implementation in V8 in Google Chrome prior to 151.0.7922.109 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: H",
-        "published": "2026-08-06T22:16:59.260"
       }
     ]
   },
