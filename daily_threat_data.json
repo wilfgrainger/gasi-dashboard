@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T08:28:12.629091+00:00",
+  "generated_at": "2026-08-08T12:27:01.824728+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
+        "value": 6,
         "score": 2.5,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 201,
-    "critical_count": 5,
-    "high_count": 20,
+    "total": 173,
+    "critical_count": 6,
+    "high_count": 23,
     "cves": [
       {
         "cve_id": "CVE-2026-64637",
@@ -248,13 +248,6 @@
         "base_score": 9.9,
         "description": "Improper privilege management in the XML-RPC API of Plesk before 18.0.80, allows an authenticated reseller to obtain an administrative session for the root user account.",
         "published": "2026-08-07T18:17:20.200"
-      },
-      {
-        "cve_id": "CVE-2026-71558",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Heap type confusion vulnerability in Apache Fory C++ deserialization.\n\nThis issue affects Apache Fory C++ versions from 0.14.0 before 1.5.0. A crafted input payload can bypass type compatibility check",
-        "published": "2026-08-07T10:16:59.337"
       },
       {
         "cve_id": "CVE-2022-4995",
@@ -271,18 +264,25 @@
         "published": "2026-08-07T15:17:00.297"
       },
       {
-        "cve_id": "CVE-2026-71560",
+        "cve_id": "CVE-2026-61808",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Out-of-bounds Read vulnerability in Apache Fory C++ deserialization.\n\nThis issue affects Apache Fory C++ versions from 0.14.0 before 1.5.0 when deserializing structs containing tagged integer fields. ",
-        "published": "2026-08-07T10:16:59.590"
+        "base_score": 9.8,
+        "description": "LightRAG provides simple and fast retrieval-augmented generation. Through version 1.5.4, the LightRAG API server binds to all network interfaces with authentication disabled by default, allowing an un",
+        "published": "2026-08-07T20:16:52.007"
       },
       {
-        "cve_id": "CVE-2026-9169",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "DLL Search Order Hijacking in LUCID Vision Labs Arena SDK 1.0.80.49 on Windows allows a local attacker to execute arbitrary code with the privileges of the application by placing a malicious DLL in a ",
-        "published": "2026-08-07T09:16:59.430"
+        "cve_id": "CVE-2026-48039",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Meta Ads MCP is a Model Context Protocol (MCP) server that lets AI assistants run Meta Ads. Prior to version 1.0.109, `AuthInjectionMiddleware.dispatch()` at `http_auth_integration.py:272` uncondition",
+        "published": "2026-08-07T20:16:51.723"
+      },
+      {
+        "cve_id": "CVE-2026-71851",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "crypto-js is a JavaScript library of crypto standards. Versions of crypto-js prior to 4.0.0 generate randomness in CryptoJS.lib.WordArray.random() using a custom variation of the Multiply-With-Carry p",
+        "published": "2026-08-07T19:18:54.390"
       },
       {
         "cve_id": "CVE-2026-68772",
@@ -290,6 +290,13 @@
         "base_score": 8.0,
         "description": "ZenML 0.94.6 contains a remote code execution vulnerability in the CloudpickleMaterializer component that allows attackers with write access to a shared artifact store to execute arbitrary code by pla",
         "published": "2026-08-07T17:17:07.573"
+      },
+      {
+        "cve_id": "CVE-2026-48097",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "NexTor IP Changer is a command-line tool that leverages the Tor network to periodically rotate a user's IP address. Versions prior to 2.0.0 have a command execution vulnerability due to unsafe use of ",
+        "published": "2026-08-07T19:17:47.627"
       },
       {
         "cve_id": "CVE-2026-56793",
@@ -304,20 +311,6 @@
         "base_score": 7.7,
         "description": "An SQL injection vulnerability in Plesk Obsidian up to 18.0.80 for Linux and Windows allows an authenticated user to read arbitrary data from the panel database.",
         "published": "2026-08-07T18:17:20.070"
-      },
-      {
-        "cve_id": "CVE-2026-71559",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Deserialization of Untrusted Data vulnerability in the Go implementation of Apache Fory allows an attacker to cause a denial of service by supplying crafted data containing malformed type metadata, wh",
-        "published": "2026-08-07T10:16:59.477"
-      },
-      {
-        "cve_id": "CVE-2026-15816",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A flaw was found in dracut. The die() error-handling function writes its message into a shell script under the initramfs emergency-hook directory without properly shell-quoting it. When the message co",
-        "published": "2026-08-07T11:17:05.100"
       },
       {
         "cve_id": "CVE-2026-20337",
@@ -381,6 +374,13 @@
         "base_score": 7.5,
         "description": "In sol commit 373d848 (2024-12-12), the broker does not fully release resources when handling malformed or duplicate CONNECT packets. When clients send invalid CONNECT packets - either due to repeated",
         "published": "2026-08-07T19:17:33.580"
+      },
+      {
+        "cve_id": "CVE-2026-15972",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Consul Community Edition and Consul Enterprise 1.13.0 through 2.0.2 are vulnerable to an unauthenticated denial of service through unbounded connection acceptance on the external gRPC listeners. A rem",
+        "published": "2026-08-07T20:16:50.020"
       }
     ]
   },
