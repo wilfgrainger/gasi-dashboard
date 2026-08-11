@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-11T12:41:12.142055+00:00",
+  "generated_at": "2026-08-11T16:46:47.318221+00:00",
   "threat_score": {
-    "score": 5.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 7.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 16,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 699,
-    "critical_count": 1,
-    "high_count": 3,
+    "total": 457,
+    "critical_count": 16,
+    "high_count": 8,
     "cves": [
       {
-        "cve_id": "CVE-2026-13206",
+        "cve_id": "CVE-2026-72898",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Improper neutralization of special elements used in an OS command ('OS command injection') vulnerability in Zyxel Networks WAH7601 allows OS Command Injection.\n\nThis issue affects WAH7601: through 200",
-        "published": "2026-08-10T13:17:56.020"
+        "base_score": 10.0,
+        "description": "Metabase allows a remote, unauthenticated attacker to inject arbitrary SQL via the '/reset_password' database endpoint and gain administrator access to the connected Metabase instance.",
+        "published": "2026-08-10T18:18:53.300"
       },
       {
-        "cve_id": "CVE-2026-19429",
+        "cve_id": "CVE-2026-72899",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Metabase allows an unauthenticated attacker to inject arbitrary SQL via a publicly shared card or dashboard that exposes a field-filter (dimension) parameter.",
+        "published": "2026-08-10T18:18:53.490"
+      },
+      {
+        "cve_id": "CVE-2026-72733",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Prior to 0.29.13, the backup.restoreBackupWithLogs tRPC subscription builds database restore shell pipelines from the user-controlled dat",
+        "published": "2026-08-10T18:18:51.673"
+      },
+      {
+        "cve_id": "CVE-2026-72735",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Prior to 0.29.13, writeTraefikConfigRemote in packages/server/src/utils/traefik/application.ts serializes user-controlled Traefik configu",
+        "published": "2026-08-10T18:18:51.977"
+      },
+      {
+        "cve_id": "CVE-2026-72736",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Prior to 0.29.13, Dokploy passes user-controlled values directly into shell commands via unquoted template literal interpolation in the r",
+        "published": "2026-08-10T18:18:52.123"
+      },
+      {
+        "cve_id": "CVE-2026-72738",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Prior to 0.29.13, the backup.listBackupFiles tRPC endpoint in apps/dokploy/server/api/routers/backup.ts passes the search parameter throu",
+        "published": "2026-08-10T18:18:52.430"
+      },
+      {
+        "cve_id": "CVE-2026-72740",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Prior to 0.29.13, packages/server/src/utils/providers/git.ts parses the user-controlled customGitUrl with sanitizeRepoPathSSH and interpo",
+        "published": "2026-08-10T18:18:52.723"
+      },
+      {
+        "cve_id": "CVE-2026-72862",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Prior to 0.29.13, the mariadb.ts, mongo.ts, mysql.ts, postgres.ts, redis.ts, and libsql.ts Dokploy database service deployment functions ",
+        "published": "2026-08-10T18:18:53.047"
+      },
+      {
+        "cve_id": "CVE-2026-72863",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Prior to 0.29.13, Dokploy's WebSocket handlers (in-app terminals and log streamers) authenticate the session but never authorize it. They",
+        "published": "2026-08-10T19:17:34.870"
+      },
+      {
+        "cve_id": "CVE-2026-72864",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Prior to 0.29.13, the local branch of /docker-container-terminal in apps/dokploy/server/wss/docker-container-terminal.ts authenticates wi",
+        "published": "2026-08-10T19:17:35.010"
+      },
+      {
+        "cve_id": "CVE-2026-72865",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Prior to 0.29.13, the compose.update operation stores an unvalidated composePath that packages/server/src/utils/builders/compose.ts and p",
+        "published": "2026-08-10T19:17:35.160"
+      },
+      {
+        "cve_id": "CVE-2026-72867",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). From 0.29.3 until 0.29.13, the incomplete fix for CVE-2026-45628 leaves packages/server/src/db/schema/compose.ts branch fields without se",
+        "published": "2026-08-10T19:17:35.443"
+      },
+      {
+        "cve_id": "CVE-2026-72868",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Prior to 0.29.13, apps/dokploy/server/api/routers/destination.ts interpolates the accessKey, secretAccessKey, region, endpoint, provider,",
+        "published": "2026-08-10T19:17:35.600"
+      },
+      {
+        "cve_id": "CVE-2026-72869",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Prior to 0.29.13, the backup.restoreBackupWithLogs tRPC subscription passes the databaseName parameter to restore builders in packages/se",
+        "published": "2026-08-10T19:17:35.753"
+      },
+      {
+        "cve_id": "CVE-2026-72872",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Prior to 0.29.13, application.saveBitbucketProvider stores bitbucketOwner and bitbucketRepository without validation and cloneBitbucketRe",
+        "published": "2026-08-10T19:17:36.177"
+      },
+      {
+        "cve_id": "CVE-2026-72737",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). In 0.29.8 and earlier, backup.create, backup.update, and backup.restoreBackupWithLogs in apps/dokploy/server/api/routers/backup.ts accept",
+        "published": "2026-08-10T18:18:52.280"
+      },
+      {
+        "cve_id": "CVE-2026-72866",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Jenkins FilePath.untarFrom() does not validate symlink targets in extracted TAR archives, even in versions patched for CVE-2026-33001 and CVE-2026-70427. An authenticated attacker with job configurati",
-        "published": "2026-08-10T13:17:58.940"
+        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Prior to 0.29.13, the WebSocket handler in apps/dokploy/server/wss/terminal.ts validates a session but does not authorize access to the r",
+        "published": "2026-08-10T19:17:35.303"
       },
       {
-        "cve_id": "CVE-2026-59090",
+        "cve_id": "CVE-2026-72730",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "Discourse is an open-source discussion platform. Prior to 2026.1.6, 2026.5.2, 2026.6.1, and 2026.7.0, the Rich Text Editor rendered a chat-transcript username as HTML, allowing stored cross-site scrip",
+        "published": "2026-08-10T17:17:37.507"
+      },
+      {
+        "cve_id": "CVE-2026-71576",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "A flaw was found in multicluster-global-hub. The manager component improperly validates the source identity of incoming CloudEvents on Kafka status topics. A remote attacker, after compromising a mana",
+        "published": "2026-08-10T17:17:36.060"
+      },
+      {
+        "cve_id": "CVE-2026-72734",
         "severity": "HIGH",
         "base_score": 8.4,
-        "description": "A flaw was found in GIMP's PSD file format plugin. This vulnerability, an unsigned integer underflow in the `block_rem` variable, occurs when a user opens a specially crafted `.psd` image file. The un",
-        "published": "2026-08-10T13:19:51.573"
-      },
-      {
-        "cve_id": "CVE-2026-12984",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Insufficiently Protected Credentials vulnerability in Zyxel Networks WAH7601 allows Retrieve Embedded Sensitive Data.\n\nThis issue affects WAH7601: through 20072026.",
-        "published": "2026-08-10T13:17:55.887"
-      },
-      {
-        "cve_id": "CVE-2026-19278",
-        "severity": "MEDIUM",
-        "base_score": 6.8,
-        "description": "A flaw was found in StackRox/RHACS Central's Auth Machine-to-Machine (M2M) token exchange. When an administrator configures M2M role mappings, the system uses unanchored regular expressions for matchi",
-        "published": "2026-08-10T13:17:58.797"
-      },
-      {
-        "cve_id": "CVE-2026-18370",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "entr is vulnerable to Heap-based buffer overflow in run_utility() function. The function allocates a fixed-size heap buffer using malloc(ARG_MAX) and copies command-line arguments into it. It advances",
-        "published": "2026-08-10T13:17:58.397"
-      },
-      {
-        "cve_id": "CVE-2026-59233",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "Missing Authorization in the permission management component in Roskus Prospero Flow CRM before 5.2.1 allows any authenticated user to grant any role, including their own, the complete set of applicat",
-        "published": "2026-08-10T13:19:51.713"
-      },
-      {
-        "cve_id": "CVE-2026-68093",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nKVM: SVM: Bump asid_generation on CPU online to avoid ASID collision after hotplug\n\nIf a vCPU stays scheduled out (or blocked) whil",
-        "published": "2026-08-10T13:19:53.303"
-      },
-      {
-        "cve_id": "CVE-2026-68094",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsched_ext: Preserve rq tracking across local DSQ dispatch\n\ndispatch_to_local_dsq() can run from scx_bpf_dsq_move_to_local() while\no",
-        "published": "2026-08-10T13:19:53.543"
-      },
-      {
-        "cve_id": "CVE-2026-68095",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nfuse-uring: fix race between registration and connection abortion\n\nThis fixes this race:\n- thread a: io_uring_enter -> register sqe",
-        "published": "2026-08-10T13:19:53.707"
-      },
-      {
-        "cve_id": "CVE-2026-68096",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\naudit: fix recursive locking deadlock in audit_dupe_exe()\n\nA deadlock occurs in the audit subsystem when duplicating\nexecutable-rel",
-        "published": "2026-08-10T13:19:53.837"
-      },
-      {
-        "cve_id": "CVE-2026-68097",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: validate ACE size against SID sub-authorities\n\nset_ntacl_dacl() validates sid.num_subauth before copying an ACE, but\ndoes no",
-        "published": "2026-08-10T13:19:54.047"
-      },
-      {
-        "cve_id": "CVE-2026-68098",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: bound DACL dedup walk to copied ACEs\n\nset_ntacl_dacl() can stop copying ACEs before consuming the full input\nDACL when size ",
-        "published": "2026-08-10T13:19:54.200"
-      },
-      {
-        "cve_id": "CVE-2026-68099",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: restore DACL size on check_add_overflow() to avoid malformed ACL\n\ncheck_add_overflow() unconditionally writes the truncated ",
-        "published": "2026-08-10T13:19:54.350"
-      },
-      {
-        "cve_id": "CVE-2026-68100",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: validate num_subauth when copying ACE in set_ntacl_dacl\n\nset_ntacl_dacl() copies each ACE from the attacker-controlled store",
-        "published": "2026-08-10T13:19:54.533"
-      },
-      {
-        "cve_id": "CVE-2026-68101",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu: fix check in amdgpu_hmm_invalidate_gfx\n\nFor a short moment during alloc/free the userptr BO is not part of his VM,\nso b",
-        "published": "2026-08-10T13:19:54.710"
-      },
-      {
-        "cve_id": "CVE-2026-68102",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu: fix aperture mapping leak\n\namdgpu_pci_remove() calls drm_dev_unplug() before invoking the driver\nfini routines. This ca",
-        "published": "2026-08-10T13:19:54.840"
-      },
-      {
-        "cve_id": "CVE-2026-68103",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu: reject mapping a reserved doorbell to a new queue\n\nWhen creating an user-queue, the user space\nprovides a doorbell BO h",
-        "published": "2026-08-10T13:19:54.983"
-      },
-      {
-        "cve_id": "CVE-2026-68104",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu: invoke pm_genpd_remove() before freeing genpd\n\nCall pm_genpd_remove() to unregister from global list prior to releasing",
-        "published": "2026-08-10T13:19:55.097"
-      },
-      {
-        "cve_id": "CVE-2026-68105",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu: Fix kernel panic during driver load failure\n\nAvoid kernel panic if MES init fails during driver load. The KIQ ring is\nf",
-        "published": "2026-08-10T13:19:55.223"
+        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). From 0.28.7 until 0.29.13, the server.remove tRPC mutation in apps/dokploy/server/api/routers/server.ts accepts a caller-controlled serve",
+        "published": "2026-08-10T18:18:51.823"
       }
     ]
   },
