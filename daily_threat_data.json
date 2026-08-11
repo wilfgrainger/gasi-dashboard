@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-08-11T16:46:47.318221+00:00",
+  "generated_at": "2026-08-11T20:33:55.665103+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 25,
+        "value": 28,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 16,
-        "score": 3.0,
+        "value": 6,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -32,9 +32,39 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1662,
-    "recent_30d_count": 25,
+    "total_catalog_count": 1665,
+    "recent_30d_count": 28,
     "recent": [
+      {
+        "cve_id": "CVE-2026-20349",
+        "vendor": "Cisco",
+        "product": "Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) ",
+        "name": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) Heap Inspection Vulnerability",
+        "date_added": "2026-08-11",
+        "due_date": "2026-08-14",
+        "description": "Cisco Secure Firewall Adaptive Security Appliance (ASA) and Secure Firewall Threat Defense (FTD) contain a heap inspection vulnerability that could allow an unauthenticated, remote attacker to cause t",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-68820",
+        "vendor": "Microsoft",
+        "product": "Windows Ancillary Function Driver for WinSock ",
+        "name": "Microsoft Windows Ancillary Function Driver for WinSock Use-After-Free Vulnerability",
+        "date_added": "2026-08-11",
+        "due_date": "2026-08-25",
+        "description": "Microsoft Windows Ancillary Function Driver for WinSock contains a use-after-free vulnerability that allows an authorized attacker to elevate privileges locally.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-72898",
+        "vendor": "Metabase",
+        "product": "Metabase",
+        "name": "Metabase SQL Injection Vulnerability",
+        "date_added": "2026-08-11",
+        "due_date": "2026-08-14",
+        "description": "Metabase contains a SQL Injection vulnerability that allows an unauthenticated remote attacker to inject arbitrary SQL into the Metabase application database, which can give them administrator access ",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-8037",
         "vendor": "Progress",
@@ -204,183 +234,153 @@
         "due_date": "2026-07-19",
         "description": "Fortinet FortiSandbox, FortiSandbox Cloud, and FortiSandbox PaaS contain an OS command injection vulnerability that allows an unauthenticated attacker to execute unauthorized commands via specifically",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-39808",
-        "vendor": "Fortinet",
-        "product": "FortiSandbox",
-        "name": "Fortinet FortiSandbox OS Command Injection Vulnerability",
-        "date_added": "2026-07-16",
-        "due_date": "2026-07-19",
-        "description": "Fortinet FortiSandbox contains an OS command injection vulnerability that could allow an unauthenticated attacker to execute unauthorized code or commands via crafted HTTP requests.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-46817",
-        "vendor": "Oracle",
-        "product": "E-Business Suite",
-        "name": "Oracle E-Business Suite Improper Privilege Management Vulnerability",
-        "date_added": "2026-07-15",
-        "due_date": "2026-07-18",
-        "description": "Oracle E-Business Suite contains an improper privilege management vulnerability that allows an unauthenticated attacker with network access via HTTP to compromise Oracle Payments. Successful attacks o",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2023-4346",
-        "vendor": "KNX Association",
-        "product": "KNX Protocol Connection Authorization Option 1",
-        "name": "KNX Association KNX Protocol Connection Authorization Option 1 Overly Restrictive Account Lockout Mechanism Vulnerability",
-        "date_added": "2026-07-15",
-        "due_date": "2026-07-29",
-        "description": "KNX Association KNX Protocol Connection Authorization Option 1 contains an overly restrictive account lockout mechanism vulnerability that could allow an attacker to purge all devices without addition",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 457,
-    "critical_count": 16,
-    "high_count": 8,
+    "total": 975,
+    "critical_count": 6,
+    "high_count": 30,
     "cves": [
       {
-        "cve_id": "CVE-2026-72898",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Metabase allows a remote, unauthenticated attacker to inject arbitrary SQL via the '/reset_password' database endpoint and gain administrator access to the connected Metabase instance.",
-        "published": "2026-08-10T18:18:53.300"
-      },
-      {
-        "cve_id": "CVE-2026-72899",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Metabase allows an unauthenticated attacker to inject arbitrary SQL via a publicly shared card or dashboard that exposes a field-filter (dimension) parameter.",
-        "published": "2026-08-10T18:18:53.490"
-      },
-      {
-        "cve_id": "CVE-2026-72733",
+        "cve_id": "CVE-2026-14450",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Prior to 0.29.13, the backup.restoreBackupWithLogs tRPC subscription builds database restore shell pipelines from the user-controlled dat",
-        "published": "2026-08-10T18:18:51.673"
+        "description": "A flaw was found in the MaaS API. This vulnerability allows any pod within the cluster to bypass the Kuadrant AuthPolicy gateway by forging HTTP headers, specifically `X-MaaS-Username` and `X-MaaS-Gro",
+        "published": "2026-08-10T21:17:19.487"
       },
       {
-        "cve_id": "CVE-2026-72735",
+        "cve_id": "CVE-2026-18948",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Prior to 0.29.13, writeTraefikConfigRemote in packages/server/src/utils/traefik/application.ts serializes user-controlled Traefik configu",
-        "published": "2026-08-10T18:18:51.977"
+        "description": "A flaw was found in Feast. The system improperly deserializes user-defined functions (UDFs) stored in its registry, which are serialized using the 'dill' library. This allows a remote attacker to stor",
+        "published": "2026-08-10T21:17:21.290"
       },
       {
-        "cve_id": "CVE-2026-72736",
+        "cve_id": "CVE-2026-72911",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Prior to 0.29.13, Dokploy passes user-controlled values directly into shell commands via unquoted template literal interpolation in the r",
-        "published": "2026-08-10T18:18:52.123"
+        "description": "ERPNext is a free and open source Enterprise Resource Planning tool. Prior to 15.118.0 and 16.29.0, the validate_template and render_template calls in erpnext/accounts/doctype/process_statement_of_acc",
+        "published": "2026-08-10T21:17:25.993"
       },
       {
-        "cve_id": "CVE-2026-72738",
+        "cve_id": "CVE-2026-34265",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Prior to 0.29.13, the backup.listBackupFiles tRPC endpoint in apps/dokploy/server/api/routers/backup.ts passes the search parameter throu",
-        "published": "2026-08-10T18:18:52.430"
+        "base_score": 9.8,
+        "description": "SAP NetWeaver Application Server ABAP allows an unauthenticated attacker to exploit logical errors in DIAG protocol parsing, resulting in memory corruption. This vulnerability could potentially disclo",
+        "published": "2026-08-11T01:17:20.240"
       },
       {
-        "cve_id": "CVE-2026-72740",
+        "cve_id": "CVE-2026-19425",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Prior to 0.29.13, packages/server/src/utils/providers/git.ts parses the user-controlled customGitUrl with sanitizeRepoPathSSH and interpo",
-        "published": "2026-08-10T18:18:52.723"
+        "base_score": 9.8,
+        "description": "Travel Agency Management System developed by Win Men Intermational has a SQL Injection vulnerability. Unauthenticated remote attackers can inject arbitrary SQL commands to read, modify, and delete dat",
+        "published": "2026-08-11T05:17:14.680"
       },
       {
-        "cve_id": "CVE-2026-72862",
+        "cve_id": "CVE-2026-44758",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Prior to 0.29.13, the mariadb.ts, mongo.ts, mysql.ts, postgres.ts, redis.ts, and libsql.ts Dokploy database service deployment functions ",
-        "published": "2026-08-10T18:18:53.047"
+        "base_score": 9.1,
+        "description": "SAP Manufacturing Integration and Intelligence (MII) allows an attacker with high privileges to submit specially crafted input to certain affected functionality, which is processed without sufficient ",
+        "published": "2026-08-11T01:17:20.670"
       },
       {
-        "cve_id": "CVE-2026-72863",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Prior to 0.29.13, Dokploy's WebSocket handlers (in-app terminals and log streamers) authenticate the session but never authorize it. They",
-        "published": "2026-08-10T19:17:34.870"
-      },
-      {
-        "cve_id": "CVE-2026-72864",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Prior to 0.29.13, the local branch of /docker-container-terminal in apps/dokploy/server/wss/docker-container-terminal.ts authenticates wi",
-        "published": "2026-08-10T19:17:35.010"
-      },
-      {
-        "cve_id": "CVE-2026-72865",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Prior to 0.29.13, the compose.update operation stores an unvalidated composePath that packages/server/src/utils/builders/compose.ts and p",
-        "published": "2026-08-10T19:17:35.160"
-      },
-      {
-        "cve_id": "CVE-2026-72867",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). From 0.29.3 until 0.29.13, the incomplete fix for CVE-2026-45628 leaves packages/server/src/db/schema/compose.ts branch fields without se",
-        "published": "2026-08-10T19:17:35.443"
-      },
-      {
-        "cve_id": "CVE-2026-72868",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Prior to 0.29.13, apps/dokploy/server/api/routers/destination.ts interpolates the accessKey, secretAccessKey, region, endpoint, provider,",
-        "published": "2026-08-10T19:17:35.600"
-      },
-      {
-        "cve_id": "CVE-2026-72869",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Prior to 0.29.13, the backup.restoreBackupWithLogs tRPC subscription passes the databaseName parameter to restore builders in packages/se",
-        "published": "2026-08-10T19:17:35.753"
-      },
-      {
-        "cve_id": "CVE-2026-72872",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Prior to 0.29.13, application.saveBitbucketProvider stores bitbucketOwner and bitbucketRepository without validation and cloneBitbucketRe",
-        "published": "2026-08-10T19:17:36.177"
-      },
-      {
-        "cve_id": "CVE-2026-72737",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). In 0.29.8 and earlier, backup.create, backup.update, and backup.restoreBackupWithLogs in apps/dokploy/server/api/routers/backup.ts accept",
-        "published": "2026-08-10T18:18:52.280"
-      },
-      {
-        "cve_id": "CVE-2026-72866",
+        "cve_id": "CVE-2026-13717",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). Prior to 0.29.13, the WebSocket handler in apps/dokploy/server/wss/terminal.ts validates a session but does not authorize access to the r",
-        "published": "2026-08-10T19:17:35.303"
+        "description": "A flaw was found in the Red Hat OpenShift AI (RHOAI) MaaS Gateway. Improper configuration of the Gateway in a model-serving context allows a standard user with low privileges to intercept, read, log, ",
+        "published": "2026-08-10T21:17:19.343"
       },
       {
-        "cve_id": "CVE-2026-72730",
+        "cve_id": "CVE-2026-18617",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A flaw was found in the Data Science Pipelines Operator (DSPO). A namespace editor can exploit a vulnerability in the spec.database.customExtraParams field, which allows for the injection of dangerous",
+        "published": "2026-08-10T21:17:20.250"
+      },
+      {
+        "cve_id": "CVE-2026-18949",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A flaw was found in odh-dashboard. This vulnerability allows an attacker, who has compromised the dashboard's Service Account (SA) token, to exploit overly broad permissions granted to the SA. This en",
+        "published": "2026-08-10T21:17:21.443"
+      },
+      {
+        "cve_id": "CVE-2026-18950",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A flaw was found in odh-dashboard. An authenticated user of the dashboard can exploit a vulnerability related to how RoleBindings are created. The system does not properly validate the `roleRef` field",
+        "published": "2026-08-10T21:17:21.583"
+      },
+      {
+        "cve_id": "CVE-2026-18951",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A flaw was found in the Red Hat OpenShift AI (RHOAI) overlay for the training operator. The RHOAI overlay incorrectly aggregates `trainjobs` management permissions into the native Kubernetes `edit Clu",
+        "published": "2026-08-10T21:17:21.710"
+      },
+      {
+        "cve_id": "CVE-2026-18982",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A flaw was found in the RHOAI training-operator. This vulnerability allows a user with standard edit or admin roles in any Kubernetes namespace to escalate their privileges. Through the creation of tr",
+        "published": "2026-08-10T21:17:21.833"
+      },
+      {
+        "cve_id": "CVE-2026-58243",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "SAP ABAP Development Tools does not perform necessary authorization checks for certain functionality, allowing an attacker with low privileges to execute unauthorized database operations against SAP N",
+        "published": "2026-08-11T01:17:22.160"
+      },
+      {
+        "cve_id": "CVE-2026-18608",
         "severity": "HIGH",
         "base_score": 8.7,
-        "description": "Discourse is an open-source discussion platform. Prior to 2026.1.6, 2026.5.2, 2026.6.1, and 2026.7.0, the Rich Text Editor rendered a chat-transcript username as HTML, allowing stored cross-site scrip",
-        "published": "2026-08-10T17:17:37.507"
+        "description": "A flaw was found in the Data Science Pipelines Operator (DSPO). The operator's ClusterRole, which defines its permissions, includes extensive privileges beyond what is necessary for its operation. The",
+        "published": "2026-08-10T21:17:19.990"
       },
       {
-        "cve_id": "CVE-2026-71576",
+        "cve_id": "CVE-2026-18947",
         "severity": "HIGH",
         "base_score": 8.5,
-        "description": "A flaw was found in multicluster-global-hub. The manager component improperly validates the source identity of incoming CloudEvents on Kafka status topics. A remote attacker, after compromising a mana",
-        "published": "2026-08-10T17:17:36.060"
+        "description": "A flaw was found in Feast. An authorization bypass vulnerability exists in the /materialize and /materialize-incremental endpoints. By sending a specially crafted request that omits the feature_views ",
+        "published": "2026-08-10T21:17:21.130"
       },
       {
-        "cve_id": "CVE-2026-72734",
+        "cve_id": "CVE-2026-8718",
         "severity": "HIGH",
         "base_score": 8.4,
-        "description": "Dokploy is a free, self-hostable Platform as a Service (PaaS). From 0.28.7 until 0.29.13, the server.remove tRPC mutation in apps/dokploy/server/api/routers/server.ts accepts a caller-controlled serve",
-        "published": "2026-08-10T18:18:51.823"
+        "description": "tls_opt_dtls_peer_connection_id_value_get() in subsys/net/lib/sockets/sockets_tls.c, which handles getsockopt(SOL_TLS, TLS_DTLS_PEER_CID_VALUE), passed the caller-supplied optval directly to mbedtls_s",
+        "published": "2026-08-10T23:16:51.587"
+      },
+      {
+        "cve_id": "CVE-2026-15467",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "A flaw was found in the trustyai-service-operator's LMEvalJob controller. An authenticated user within the cluster can exploit this vulnerability by configuring a sidecar container to bypass existing ",
+        "published": "2026-08-10T21:17:19.617"
+      },
+      {
+        "cve_id": "CVE-2026-72903",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Tabby (formerly Terminus) is a highly configurable terminal emulator. Prior to 1.0.235, a malicious SFTP server can return a backslash traversal filename through entry.name. In tabby-ssh/src/session/s",
+        "published": "2026-08-10T21:17:24.980"
+      },
+      {
+        "cve_id": "CVE-2026-73030",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "unearth through 0.18.2, fixed in commit 6c78164, contains a path traversal vulnerability in the is_within_directory function that fails to normalize paths before validation, allowing ../ sequences to ",
+        "published": "2026-08-10T21:17:26.450"
+      },
+      {
+        "cve_id": "CVE-2026-15581",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "A flaw was found in the TrustyAI Service (TAS) deployment. This vulnerability allows any pod on the cluster network to bypass authentication and directly access the TAS backend API. An attacker can ex",
+        "published": "2026-08-10T21:17:19.743"
       }
     ]
   },
