@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-11T08:43:27.261238+00:00",
+  "generated_at": "2026-08-11T12:41:12.142055+00:00",
   "threat_score": {
-    "score": 7.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 12,
-        "score": 3.0,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -238,66 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 721,
-    "critical_count": 12,
-    "high_count": 22,
+    "total": 699,
+    "critical_count": 1,
+    "high_count": 3,
     "cves": [
-      {
-        "cve_id": "CVE-2026-72565",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A SQL injection vulnerability in Tencent APIJSON through 8.1.8 allows unauthenticated remote attackers to bypass per-table access control and read arbitrary database tables via the Map-form @having op",
-        "published": "2026-08-10T11:17:28.973"
-      },
-      {
-        "cve_id": "CVE-2026-72567",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An improper path validation vulnerability in AsyncFuncAI/deepwiki-open through commit 16f35a0 allows unauthenticated remote attackers to write to or delete arbitrary files with root privileges. The ap",
-        "published": "2026-08-10T11:17:29.220"
-      },
-      {
-        "cve_id": "CVE-2026-72577",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Multiple vulnerabilities in NASA fprime-gds through 3.4.3 allow an unauthenticated remote attacker to achieve arbitrary code execution on the ground station host and inject arbitrary commands to conne",
-        "published": "2026-08-10T11:17:30.533"
-      },
-      {
-        "cve_id": "CVE-2026-72580",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An OS command injection vulnerability in duhow/xiaoai-patch through commit fb07049 allows a remote attacker to execute arbitrary system commands on Xiaomi smart speakers running the patch. The /mute a",
-        "published": "2026-08-10T11:17:30.897"
-      },
-      {
-        "cve_id": "CVE-2026-72589",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An OS command injection vulnerability in alseambusher/crontab-ui through 0.4.2 allows an unauthenticated remote attacker to execute arbitrary system commands by importing a crafted crontab database fi",
-        "published": "2026-08-10T11:17:32.003"
-      },
-      {
-        "cve_id": "CVE-2026-72590",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An OS command injection vulnerability in alseambusher/crontab-ui through 0.4.2 allows an unauthenticated remote attacker to inject arbitrary cron job entries by sending a crafted GET request to /cront",
-        "published": "2026-08-10T11:17:32.123"
-      },
-      {
-        "cve_id": "CVE-2026-72592",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An unrestricted file upload vulnerability in dulldusk/phpfm through 1.8.0 allows an unauthenticated remote attacker to execute arbitrary PHP code on the server. The application ships with an empty upl",
-        "published": "2026-08-10T11:17:32.370"
-      },
-      {
-        "cve_id": "CVE-2026-72593",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A missing authentication vulnerability in dulldusk/phpfm through 1.8.0 allows an unauthenticated remote attacker to access the full file manager functionality including reading, writing, deleting, and",
-        "published": "2026-08-10T11:17:32.490"
-      },
       {
         "cve_id": "CVE-2026-13206",
         "severity": "CRITICAL",
@@ -306,53 +250,18 @@
         "published": "2026-08-10T13:17:56.020"
       },
       {
-        "cve_id": "CVE-2026-72564",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "An improper authorization vulnerability in fosrl/pangolin through v1.20.0 allows an authenticated remote attacker to authenticate to any resource in any organization by reusing an access token issued ",
-        "published": "2026-08-10T11:17:28.837"
-      },
-      {
-        "cve_id": "CVE-2026-72569",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A path traversal vulnerability in cube-root/directory-serve through 1.3.7 allows an unauthenticated remote attacker to delete arbitrary files outside the intended served directory when the application",
-        "published": "2026-08-10T11:17:29.503"
-      },
-      {
-        "cve_id": "CVE-2026-72575",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "An improper authorization vulnerability in daptin through v0.12.34 allows unauthenticated remote attackers to read, create, update, and delete usergroup records. The permission check functions (CanRea",
-        "published": "2026-08-10T11:17:30.277"
-      },
-      {
-        "cve_id": "CVE-2026-66405",
+        "cve_id": "CVE-2026-19429",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "DEEBOT PRO M1 and DEEBOT PRO K1VAC leave the telnet servers enabled. The telnet service may be leveraged to log in to the affected products.",
-        "published": "2026-08-10T09:17:22.637"
+        "description": "Jenkins FilePath.untarFrom() does not validate symlink targets in extracted TAR archives, even in versions patched for CVE-2026-33001 and CVE-2026-70427. An authenticated attacker with job configurati",
+        "published": "2026-08-10T13:17:58.940"
       },
       {
-        "cve_id": "CVE-2026-72573",
+        "cve_id": "CVE-2026-59090",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "An OS command injection vulnerability in 4xmen/pm2panel (all versions) allows an authenticated remote attacker to execute arbitrary system commands on the host. The pm2panel.js handler at line 188 pas",
-        "published": "2026-08-10T11:17:30.010"
-      },
-      {
-        "cve_id": "CVE-2026-72578",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A cross-site request forgery (CSRF) vulnerability in FreePBX Framework 17.0 allows an unauthenticated remote attacker to perform administrative actions on behalf of an authenticated administrator.",
-        "published": "2026-08-10T11:17:30.660"
-      },
-      {
-        "cve_id": "CVE-2026-72581",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "A server-side request forgery (SSRF) vulnerability in duhow/xiaoai-patch through commit fb07049 allows a remote attacker to make the Xiaomi smart speaker perform HTTP requests to arbitrary internal or",
-        "published": "2026-08-10T11:17:31.017"
+        "base_score": 8.4,
+        "description": "A flaw was found in GIMP's PSD file format plugin. This vulnerability, an unsigned integer underflow in the `block_rem` variable, occurs when a user opens a specially crafted `.psd` image file. The un",
+        "published": "2026-08-10T13:19:51.573"
       },
       {
         "cve_id": "CVE-2026-12984",
@@ -362,25 +271,116 @@
         "published": "2026-08-10T13:17:55.887"
       },
       {
-        "cve_id": "CVE-2026-66407",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "DEEBOT PRO M1 and DEEBOT PRO K1VAC improperly implement authentication in WebSocket communication.\r\nThe WebSocket private key may be retrieved through analyzing the traffic data via a man-in-the-middl",
-        "published": "2026-08-10T09:17:22.917"
+        "cve_id": "CVE-2026-19278",
+        "severity": "MEDIUM",
+        "base_score": 6.8,
+        "description": "A flaw was found in StackRox/RHACS Central's Auth Machine-to-Machine (M2M) token exchange. When an administrator configures M2M role mappings, the system uses unanchored regular expressions for matchi",
+        "published": "2026-08-10T13:17:58.797"
       },
       {
-        "cve_id": "CVE-2026-59087",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A flaw was found in the GIMP image manipulation program, specifically within its Seattle Filmworks file loader. A remote attacker could exploit this vulnerability by tricking a user into opening a spe",
-        "published": "2026-08-10T11:17:26.910"
+        "cve_id": "CVE-2026-18370",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "entr is vulnerable to Heap-based buffer overflow in run_utility() function. The function allocates a fixed-size heap buffer using malloc(ARG_MAX) and copies command-line arguments into it. It advances",
+        "published": "2026-08-10T13:17:58.397"
       },
       {
-        "cve_id": "CVE-2026-72566",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "A server-side request forgery (SSRF) vulnerability in automatisch through commit 41f3c56 allows a low-privileged authenticated user with 'manage Flow' permission to make the server fetch arbitrary URL",
-        "published": "2026-08-10T11:17:29.100"
+        "cve_id": "CVE-2026-59233",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "Missing Authorization in the permission management component in Roskus Prospero Flow CRM before 5.2.1 allows any authenticated user to grant any role, including their own, the complete set of applicat",
+        "published": "2026-08-10T13:19:51.713"
+      },
+      {
+        "cve_id": "CVE-2026-68093",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nKVM: SVM: Bump asid_generation on CPU online to avoid ASID collision after hotplug\n\nIf a vCPU stays scheduled out (or blocked) whil",
+        "published": "2026-08-10T13:19:53.303"
+      },
+      {
+        "cve_id": "CVE-2026-68094",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsched_ext: Preserve rq tracking across local DSQ dispatch\n\ndispatch_to_local_dsq() can run from scx_bpf_dsq_move_to_local() while\no",
+        "published": "2026-08-10T13:19:53.543"
+      },
+      {
+        "cve_id": "CVE-2026-68095",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nfuse-uring: fix race between registration and connection abortion\n\nThis fixes this race:\n- thread a: io_uring_enter -> register sqe",
+        "published": "2026-08-10T13:19:53.707"
+      },
+      {
+        "cve_id": "CVE-2026-68096",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\naudit: fix recursive locking deadlock in audit_dupe_exe()\n\nA deadlock occurs in the audit subsystem when duplicating\nexecutable-rel",
+        "published": "2026-08-10T13:19:53.837"
+      },
+      {
+        "cve_id": "CVE-2026-68097",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: validate ACE size against SID sub-authorities\n\nset_ntacl_dacl() validates sid.num_subauth before copying an ACE, but\ndoes no",
+        "published": "2026-08-10T13:19:54.047"
+      },
+      {
+        "cve_id": "CVE-2026-68098",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: bound DACL dedup walk to copied ACEs\n\nset_ntacl_dacl() can stop copying ACEs before consuming the full input\nDACL when size ",
+        "published": "2026-08-10T13:19:54.200"
+      },
+      {
+        "cve_id": "CVE-2026-68099",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: restore DACL size on check_add_overflow() to avoid malformed ACL\n\ncheck_add_overflow() unconditionally writes the truncated ",
+        "published": "2026-08-10T13:19:54.350"
+      },
+      {
+        "cve_id": "CVE-2026-68100",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: validate num_subauth when copying ACE in set_ntacl_dacl\n\nset_ntacl_dacl() copies each ACE from the attacker-controlled store",
+        "published": "2026-08-10T13:19:54.533"
+      },
+      {
+        "cve_id": "CVE-2026-68101",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu: fix check in amdgpu_hmm_invalidate_gfx\n\nFor a short moment during alloc/free the userptr BO is not part of his VM,\nso b",
+        "published": "2026-08-10T13:19:54.710"
+      },
+      {
+        "cve_id": "CVE-2026-68102",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu: fix aperture mapping leak\n\namdgpu_pci_remove() calls drm_dev_unplug() before invoking the driver\nfini routines. This ca",
+        "published": "2026-08-10T13:19:54.840"
+      },
+      {
+        "cve_id": "CVE-2026-68103",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu: reject mapping a reserved doorbell to a new queue\n\nWhen creating an user-queue, the user space\nprovides a doorbell BO h",
+        "published": "2026-08-10T13:19:54.983"
+      },
+      {
+        "cve_id": "CVE-2026-68104",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu: invoke pm_genpd_remove() before freeing genpd\n\nCall pm_genpd_remove() to unregister from global list prior to releasing",
+        "published": "2026-08-10T13:19:55.097"
+      },
+      {
+        "cve_id": "CVE-2026-68105",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdgpu: Fix kernel panic during driver load failure\n\nAvoid kernel panic if MES init fails during driver load. The KIQ ring is\nf",
+        "published": "2026-08-10T13:19:55.223"
       }
     ]
   },
