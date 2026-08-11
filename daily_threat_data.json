@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-11T04:57:44.682569+00:00",
+  "generated_at": "2026-08-11T08:43:27.261238+00:00",
   "threat_score": {
-    "score": 5.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 7.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 12,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,16 +238,93 @@
     ]
   },
   "nvd": {
-    "total": 752,
-    "critical_count": 1,
-    "high_count": 12,
+    "total": 721,
+    "critical_count": 12,
+    "high_count": 22,
     "cves": [
       {
-        "cve_id": "CVE-2026-19053",
+        "cve_id": "CVE-2026-72565",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A SQL injection vulnerability in Tencent APIJSON through 8.1.8 allows unauthenticated remote attackers to bypass per-table access control and read arbitrary database tables via the Map-form @having op",
+        "published": "2026-08-10T11:17:28.973"
+      },
+      {
+        "cve_id": "CVE-2026-72567",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An improper path validation vulnerability in AsyncFuncAI/deepwiki-open through commit 16f35a0 allows unauthenticated remote attackers to write to or delete arbitrary files with root privileges. The ap",
+        "published": "2026-08-10T11:17:29.220"
+      },
+      {
+        "cve_id": "CVE-2026-72577",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Multiple vulnerabilities in NASA fprime-gds through 3.4.3 allow an unauthenticated remote attacker to achieve arbitrary code execution on the ground station host and inject arbitrary commands to conne",
+        "published": "2026-08-10T11:17:30.533"
+      },
+      {
+        "cve_id": "CVE-2026-72580",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An OS command injection vulnerability in duhow/xiaoai-patch through commit fb07049 allows a remote attacker to execute arbitrary system commands on Xiaomi smart speakers running the patch. The /mute a",
+        "published": "2026-08-10T11:17:30.897"
+      },
+      {
+        "cve_id": "CVE-2026-72589",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An OS command injection vulnerability in alseambusher/crontab-ui through 0.4.2 allows an unauthenticated remote attacker to execute arbitrary system commands by importing a crafted crontab database fi",
+        "published": "2026-08-10T11:17:32.003"
+      },
+      {
+        "cve_id": "CVE-2026-72590",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An OS command injection vulnerability in alseambusher/crontab-ui through 0.4.2 allows an unauthenticated remote attacker to inject arbitrary cron job entries by sending a crafted GET request to /cront",
+        "published": "2026-08-10T11:17:32.123"
+      },
+      {
+        "cve_id": "CVE-2026-72592",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An unrestricted file upload vulnerability in dulldusk/phpfm through 1.8.0 allows an unauthenticated remote attacker to execute arbitrary PHP code on the server. The application ships with an empty upl",
+        "published": "2026-08-10T11:17:32.370"
+      },
+      {
+        "cve_id": "CVE-2026-72593",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A missing authentication vulnerability in dulldusk/phpfm through 1.8.0 allows an unauthenticated remote attacker to access the full file manager functionality including reading, writing, deleting, and",
+        "published": "2026-08-10T11:17:32.490"
+      },
+      {
+        "cve_id": "CVE-2026-13206",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Improper neutralization of special elements used in an OS command ('OS command injection') vulnerability in Zyxel Networks WAH7601 allows OS Command Injection.\n\nThis issue affects WAH7601: through 200",
+        "published": "2026-08-10T13:17:56.020"
+      },
+      {
+        "cve_id": "CVE-2026-72564",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "An improper authorization vulnerability in fosrl/pangolin through v1.20.0 allows an authenticated remote attacker to authenticate to any resource in any organization by reusing an access token issued ",
+        "published": "2026-08-10T11:17:28.837"
+      },
+      {
+        "cve_id": "CVE-2026-72569",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "The ProSolution WP Client WordPress plugin before 2.0.6 does not sanitise and escape a parameter before using it in a SQL statement reachable by unauthenticated visitors, leading to a blind SQL inject",
-        "published": "2026-08-10T07:16:51.047"
+        "description": "A path traversal vulnerability in cube-root/directory-serve through 1.3.7 allows an unauthenticated remote attacker to delete arbitrary files outside the intended served directory when the application",
+        "published": "2026-08-10T11:17:29.503"
+      },
+      {
+        "cve_id": "CVE-2026-72575",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "An improper authorization vulnerability in daptin through v0.12.34 allows unauthenticated remote attackers to read, create, update, and delete usergroup records. The permission check functions (CanRea",
+        "published": "2026-08-10T11:17:30.277"
       },
       {
         "cve_id": "CVE-2026-66405",
@@ -257,11 +334,32 @@
         "published": "2026-08-10T09:17:22.637"
       },
       {
-        "cve_id": "CVE-2026-64940",
+        "cve_id": "CVE-2026-72573",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "An OS command injection vulnerability in 4xmen/pm2panel (all versions) allows an authenticated remote attacker to execute arbitrary system commands on the host. The pm2panel.js handler at line 188 pas",
+        "published": "2026-08-10T11:17:30.010"
+      },
+      {
+        "cve_id": "CVE-2026-72578",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A cross-site request forgery (CSRF) vulnerability in FreePBX Framework 17.0 allows an unauthenticated remote attacker to perform administrative actions on behalf of an authenticated administrator.",
+        "published": "2026-08-10T11:17:30.660"
+      },
+      {
+        "cve_id": "CVE-2026-72581",
         "severity": "HIGH",
         "base_score": 8.6,
-        "description": "Tegalog -Fumy Otegaru Memo Logger- provided by Nishishi Factory contains a vulnerability due to a permissive regular expression, which may allow an attacker who can access the affected product to log ",
-        "published": "2026-08-10T08:16:48.733"
+        "description": "A server-side request forgery (SSRF) vulnerability in duhow/xiaoai-patch through commit fb07049 allows a remote attacker to make the Xiaomi smart speaker perform HTTP requests to arbitrary internal or",
+        "published": "2026-08-10T11:17:31.017"
+      },
+      {
+        "cve_id": "CVE-2026-12984",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Insufficiently Protected Credentials vulnerability in Zyxel Networks WAH7601 allows Retrieve Embedded Sensitive Data.\n\nThis issue affects WAH7601: through 20072026.",
+        "published": "2026-08-10T13:17:55.887"
       },
       {
         "cve_id": "CVE-2026-66407",
@@ -278,109 +376,11 @@
         "published": "2026-08-10T11:17:26.910"
       },
       {
-        "cve_id": "CVE-2026-14206",
+        "cve_id": "CVE-2026-72566",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The HT Contact Form  WordPress plugin before 2.9.3 does not perform any authorization check on the endpoint that returns a saved form draft, allowing unauthenticated users to read the personal data (n",
-        "published": "2026-08-10T07:16:46.710"
-      },
-      {
-        "cve_id": "CVE-2026-17022",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Salon Booking System  WordPress plugin through 10.30.33 does not properly validate a booking's ownership token before loading it in its booking-wizard confirmation steps, allowing unauthenticated ",
-        "published": "2026-08-10T07:16:49.243"
-      },
-      {
-        "cve_id": "CVE-2026-17541",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The File Manager WordPress plugin before 6.9.1 does not have authorisation checks on one of its REST API routes, allowing unauthenticated users to read its file activity log, disclosing the file opera",
-        "published": "2026-08-10T07:16:49.580"
-      },
-      {
-        "cve_id": "CVE-2026-17542",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The File Manager WordPress plugin before 6.9.1 does not perform any capability check on one of its file manager connector endpoints, allowing any authenticated user, such as a subscriber, to browse th",
-        "published": "2026-08-10T07:16:49.707"
-      },
-      {
-        "cve_id": "CVE-2026-18470",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Login & Register Forms  WordPress plugin before 4.0.2 does not verify that a password reset request comes from the account's owner, and does not adequately redact the address returned in its respo",
-        "published": "2026-08-10T07:16:50.270"
-      },
-      {
-        "cve_id": "CVE-2026-18946",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Contact Form to Any API WordPress plugin before 3.0.7 does not use a random filename when copying files uploaded through contact forms into a publicly accessible directory, allowing unauthenticate",
-        "published": "2026-08-10T07:16:50.720"
-      },
-      {
-        "cve_id": "CVE-2026-66403",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "DEEBOT PRO M1 and DEEBOT PRO K1VAC leave the web server for debugging purposes enabled. The floor map and log information stored on the affected products may be retrieved.",
-        "published": "2026-08-10T09:17:22.297"
-      },
-      {
-        "cve_id": "CVE-2026-55814",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Missing Authentication in Apache Ranger Download APIs on versions <= 2.8.0.\nUsers are recommended to upgrade to version 2.9.0, which fixes this issue.",
-        "published": "2026-08-10T11:17:26.790"
-      },
-      {
-        "cve_id": "CVE-2026-57279",
-        "severity": "MEDIUM",
-        "base_score": 6.8,
-        "description": "Cybozu Garoon contains a cross-site scripting vulnerability. If this vulnerability is exploited, an arbitrary script may be executed in the web browser of a user logged in to the product.",
-        "published": "2026-08-10T08:16:48.530"
-      },
-      {
-        "cve_id": "CVE-2026-66404",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "DEEBOT PRO M1 and DEEBOT PRO K1VAC do not validate server certificates in MQTT communications. Operation logs and activity logs stored on the affected products may be retrieved.",
-        "published": "2026-08-10T09:17:22.483"
-      },
-      {
-        "cve_id": "CVE-2026-19404",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "A flaw was found in 389 Directory Server. The CleanAllRUV and Abort CleanAllRUV replication-maintenance extended operations perform no authorization check, allowing an unauthenticated remote attacker ",
-        "published": "2026-08-10T10:17:32.250"
-      },
-      {
-        "cve_id": "CVE-2026-17019",
-        "severity": "MEDIUM",
-        "base_score": 6.1,
-        "description": "The JetEngine WordPress plugin before 3.8.13.1 does not sanitise uploaded SVG files before storing and serving them, and does not adequately restrict who can upload them, allowing unauthenticated atta",
-        "published": "2026-08-10T07:16:48.927"
-      },
-      {
-        "cve_id": "CVE-2026-12570",
-        "severity": "MEDIUM",
-        "base_score": 5.5,
-        "description": "A vulnerability in keras-team/keras versions <= 3.15.0 allows for a denial of service (DoS) attack when loading malicious .keras model files via the keras.models.load_model() function. The H5IOStore._",
-        "published": "2026-08-10T07:16:44.370"
-      },
-      {
-        "cve_id": "CVE-2026-17010",
-        "severity": "MEDIUM",
-        "base_score": 5.4,
-        "description": "The Saitama Addon Pack WordPress plugin through 1.0.8 does not sanitise and escape certain post metadata values before outputting them, allowing users with contributor-level access and above to inject",
-        "published": "2026-08-10T07:16:48.493"
-      },
-      {
-        "cve_id": "CVE-2026-66409",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "DEEBOT PRO M1 and DEEBOT PRO K1VAC are configured with weak passwords for their Wi-Fi hotspot networks.\r\nThe password may be analyzed and obtained to connect to the access point of an affected robot.",
-        "published": "2026-08-10T09:17:23.210"
+        "base_score": 7.7,
+        "description": "A server-side request forgery (SSRF) vulnerability in automatisch through commit 41f3c56 allows a low-privileged authenticated user with 'manage Flow' permission to make the server fetch arbitrary URL",
+        "published": "2026-08-10T11:17:29.100"
       }
     ]
   },
