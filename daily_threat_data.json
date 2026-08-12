@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-11T20:33:55.665103+00:00",
+  "generated_at": "2026-08-12T01:06:25.840835+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 28,
+        "value": 27,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
+        "value": 7,
         "score": 2.5,
         "max": 3
       },
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1665,
-    "recent_30d_count": 28,
+    "recent_30d_count": 27,
     "recent": [
       {
         "cve_id": "CVE-2026-20349",
@@ -238,30 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 975,
-    "critical_count": 6,
-    "high_count": 30,
+    "total": 979,
+    "critical_count": 7,
+    "high_count": 29,
     "cves": [
       {
-        "cve_id": "CVE-2026-14450",
+        "cve_id": "CVE-2026-58231",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A flaw was found in the MaaS API. This vulnerability allows any pod within the cluster to bypass the Kuadrant AuthPolicy gateway by forging HTTP headers, specifically `X-MaaS-Username` and `X-MaaS-Gro",
-        "published": "2026-08-10T21:17:19.487"
-      },
-      {
-        "cve_id": "CVE-2026-18948",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A flaw was found in Feast. The system improperly deserializes user-defined functions (UDFs) stored in its registry, which are serialized using the 'dill' library. This allows a remote attacker to stor",
-        "published": "2026-08-10T21:17:21.290"
-      },
-      {
-        "cve_id": "CVE-2026-72911",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "ERPNext is a free and open source Enterprise Resource Planning tool. Prior to 15.118.0 and 16.29.0, the validate_template and render_template calls in erpnext/accounts/doctype/process_statement_of_acc",
-        "published": "2026-08-10T21:17:25.993"
+        "base_score": 10.0,
+        "description": "SAP Commerce Cloud allows an unauthenticated\nattacker to abuse a default authentication client and submit specially crafted\ninput to certain functions lacking sufficient validation. Successful\nexploit",
+        "published": "2026-08-11T11:17:15.390"
       },
       {
         "cve_id": "CVE-2026-34265",
@@ -278,6 +264,13 @@
         "published": "2026-08-11T05:17:14.680"
       },
       {
+        "cve_id": "CVE-2026-10579",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A flaw was found in Picketlink Federation SAML; the unsolcited response handler would accept forged assertions with no verification or validation, permitting an unauthed attacker to authenticate as an",
+        "published": "2026-08-11T09:17:12.260"
+      },
+      {
         "cve_id": "CVE-2026-44758",
         "severity": "CRITICAL",
         "base_score": 9.1,
@@ -285,46 +278,18 @@
         "published": "2026-08-11T01:17:20.670"
       },
       {
-        "cve_id": "CVE-2026-13717",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw was found in the Red Hat OpenShift AI (RHOAI) MaaS Gateway. Improper configuration of the Gateway in a model-serving context allows a standard user with low privileges to intercept, read, log, ",
-        "published": "2026-08-10T21:17:19.343"
+        "cve_id": "CVE-2026-13716",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Path traversal in server import and admin file upload in Crafty Controller. Allows a remote, authenticated attacker to upload files to arbitrary paths permitted to the Crafty Controller application an",
+        "published": "2026-08-11T06:17:12.870"
       },
       {
-        "cve_id": "CVE-2026-18617",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw was found in the Data Science Pipelines Operator (DSPO). A namespace editor can exploit a vulnerability in the spec.database.customExtraParams field, which allows for the injection of dangerous",
-        "published": "2026-08-10T21:17:20.250"
-      },
-      {
-        "cve_id": "CVE-2026-18949",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw was found in odh-dashboard. This vulnerability allows an attacker, who has compromised the dashboard's Service Account (SA) token, to exploit overly broad permissions granted to the SA. This en",
-        "published": "2026-08-10T21:17:21.443"
-      },
-      {
-        "cve_id": "CVE-2026-18950",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw was found in odh-dashboard. An authenticated user of the dashboard can exploit a vulnerability related to how RoleBindings are created. The system does not properly validate the `roleRef` field",
-        "published": "2026-08-10T21:17:21.583"
-      },
-      {
-        "cve_id": "CVE-2026-18951",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw was found in the Red Hat OpenShift AI (RHOAI) overlay for the training operator. The RHOAI overlay incorrectly aggregates `trainjobs` management permissions into the native Kubernetes `edit Clu",
-        "published": "2026-08-10T21:17:21.710"
-      },
-      {
-        "cve_id": "CVE-2026-18982",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw was found in the RHOAI training-operator. This vulnerability allows a user with standard edit or admin roles in any Kubernetes namespace to escalate their privileges. Through the creation of tr",
-        "published": "2026-08-10T21:17:21.833"
+        "cve_id": "CVE-2026-19516",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "A caller-supplied X-Grafana-URL request header controls the destination of mcp-grafana's outbound requests, and the grafana_api_request tool lets the caller also choose the HTTP method, path, and body",
+        "published": "2026-08-11T06:17:13.433"
       },
       {
         "cve_id": "CVE-2026-58243",
@@ -334,53 +299,88 @@
         "published": "2026-08-11T01:17:22.160"
       },
       {
-        "cve_id": "CVE-2026-18608",
+        "cve_id": "CVE-2026-15555",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "A flaw was found in the Data Science Pipelines Operator (DSPO). The operator's ClusterRole, which defines its permissions, includes extensive privileges beyond what is necessary for its operation. The",
-        "published": "2026-08-10T21:17:19.990"
+        "base_score": 8.8,
+        "description": "A flaw was found in JBoss marshalling. The Infinispan session replication path deserializes replicated session data via the JBoss Marshalling River unmarshaller with no class filtering \u2014 enabling RCE ",
+        "published": "2026-08-11T09:17:12.540"
       },
       {
-        "cve_id": "CVE-2026-18947",
+        "cve_id": "CVE-2026-72533",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "An authentication bypass vulnerability in Portainer CE through 2.44.0 allows authenticated low-privileged users to bypass Docker proxy authorization checks via non-canonical URL normalization, defeati",
+        "published": "2026-08-11T12:17:38.487"
+      },
+      {
+        "cve_id": "CVE-2026-72534",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A privilege escalation vulnerability in Authentik Security authentik through 2026.5.6 allows an attacker with a source-scoped SCIM provisioning token to gain superuser privileges by provisioning a SCI",
+        "published": "2026-08-11T12:17:38.610"
+      },
+      {
+        "cve_id": "CVE-2026-72537",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A privilege escalation vulnerability in Authentik Security authentik through 2026.5.6 allows an attacker with a source-scoped SCIM provisioning token to take over any user account including superusers",
+        "published": "2026-08-11T12:17:38.977"
+      },
+      {
+        "cve_id": "CVE-2026-72538",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "An argument injection vulnerability in PrefectHQ Prefect through 3.8.2 allows authenticated users to achieve remote code execution via the git_clone pull step branch field. The branch parameter is pas",
+        "published": "2026-08-11T12:17:39.100"
+      },
+      {
+        "cve_id": "CVE-2026-72535",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "A missing authentication vulnerability in Chaskiq through commit 46dfdd1 allows unauthenticated remote attackers to mint Stripe Billing Portal sessions for any tenant via the stripeCustomerPortal Grap",
+        "published": "2026-08-11T12:17:38.733"
+      },
+      {
+        "cve_id": "CVE-2026-72536",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "A missing authentication vulnerability in Chaskiq through commit 46dfdd1 allows unauthenticated remote attackers to manipulate any tenant Stripe subscription via the stripeCreateIntent GraphQL mutatio",
+        "published": "2026-08-11T12:17:38.857"
+      },
+      {
+        "cve_id": "CVE-2026-16053",
         "severity": "HIGH",
         "base_score": 8.5,
-        "description": "A flaw was found in Feast. An authorization bypass vulnerability exists in the /materialize and /materialize-incremental endpoints. By sending a specially crafted request that omits the feature_views ",
-        "published": "2026-08-10T21:17:21.130"
+        "description": "Zohocorp ManageEngine\u00a0M365 Manager Plus and M365 Security Plus versions below\u00a04820 are affected to Authenticated Path Traversal vulnerability in\u00a0Exchange Online backup module.",
+        "published": "2026-08-11T07:17:28.233"
       },
       {
-        "cve_id": "CVE-2026-8718",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "tls_opt_dtls_peer_connection_id_value_get() in subsys/net/lib/sockets/sockets_tls.c, which handles getsockopt(SOL_TLS, TLS_DTLS_PEER_CID_VALUE), passed the caller-supplied optval directly to mbedtls_s",
-        "published": "2026-08-10T23:16:51.587"
-      },
-      {
-        "cve_id": "CVE-2026-15467",
+        "cve_id": "CVE-2026-15556",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "A flaw was found in the trustyai-service-operator's LMEvalJob controller. An authenticated user within the cluster can exploit this vulnerability by configuring a sidecar container to bypass existing ",
-        "published": "2026-08-10T21:17:19.617"
+        "description": "A flaw was found in Picketlink's SP signature validation; a SAML response containing zero assertion elements matching the signature check can allow an attacker to forge a SAML response and auth as any",
+        "published": "2026-08-11T09:17:12.687"
       },
       {
-        "cve_id": "CVE-2026-72903",
+        "cve_id": "CVE-2026-15560",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Tabby (formerly Terminus) is a highly configurable terminal emulator. Prior to 1.0.235, a malicious SFTP server can return a backslash traversal filename through entry.name. In tabby-ssh/src/session/s",
-        "published": "2026-08-10T21:17:24.980"
+        "description": "when EAP runs with -secmgr, the openjdk-orb's JDKBridge honours attacker-supplied CDR codebase URLs during object unmarshalling on :3528, allowing an unauthenticated attacker to load and instantiate a",
+        "published": "2026-08-11T09:17:12.823"
       },
       {
-        "cve_id": "CVE-2026-73030",
+        "cve_id": "CVE-2026-66763",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "unearth through 0.18.2, fixed in commit 6c78164, contains a path traversal vulnerability in the is_within_directory function that fails to normalize paths before validation, allowing ../ sequences to ",
-        "published": "2026-08-10T21:17:26.450"
+        "base_score": 7.9,
+        "description": "SAP BusinessObjects Business Intelligence Platform stores certain sensitive credentials associated with user objects using a hard-coded cryptographic key. An attacker with high privileges and local ac",
+        "published": "2026-08-11T01:17:23.000"
       },
       {
-        "cve_id": "CVE-2026-15581",
+        "cve_id": "CVE-2026-72693",
         "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "A flaw was found in the TrustyAI Service (TAS) deployment. This vulnerability allows any pod on the cluster network to bypass authentication and directly access the TAS backend API. An attacker can ex",
-        "published": "2026-08-10T21:17:19.743"
+        "base_score": 7.8,
+        "description": "`openvt -u` is intended to identify the owner of the current VT and then execute `login` as that user from a privileged context. In the documented `kbrequest`/init usage, the ownership test in `authen",
+        "published": "2026-08-11T09:17:14.340"
       }
     ]
   },
