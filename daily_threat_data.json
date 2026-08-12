@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-12T16:46:07.674576+00:00",
+  "generated_at": "2026-08-12T20:32:42.463558+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
-        "score": 2.0,
+        "value": 10,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 902,
-    "critical_count": 2,
-    "high_count": 10,
+    "total": 417,
+    "critical_count": 10,
+    "high_count": 30,
     "cves": [
       {
-        "cve_id": "CVE-2026-48362",
+        "cve_id": "CVE-2026-48765",
         "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "ColdFusion is affected by an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability that could result in arbitrary code execution in the context of th",
-        "published": "2026-08-11T17:17:59.627"
+        "base_score": 9.9,
+        "description": "TypeBot is a chatbot builder tool. Versions prior to 3.17.0 allow a low-privilege read collaborator to extract a workspace OAuth `credentialsId` from a readable bot configuration and then overwrite th",
+        "published": "2026-08-11T21:17:36.947"
       },
       {
-        "cve_id": "CVE-2026-12571",
+        "cve_id": "CVE-2026-72526",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A flaw was found in the multicloud-integrations component. The Application propagation controller processes the `ocm-managed-cluster` annotation from an Application Custom Resource (CR) without proper",
+        "published": "2026-08-12T02:16:38.200"
+      },
+      {
+        "cve_id": "CVE-2026-68067",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "An authentication bypass in ManageEngine DDI Central's password-reset workflow allows account takeover.",
-        "published": "2026-08-11T17:17:46.940"
+        "description": "The login endpoint on the Mira cloud API accepts any format-valid string in the password field and returns a live active session token for the account matching the supplied email address. An attacker ",
+        "published": "2026-08-11T22:18:55.017"
       },
       {
-        "cve_id": "CVE-2026-21273",
+        "cve_id": "CVE-2026-15039",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The giftware WordPress plugin before 4.2.10 does not validate the type of uploaded files in one of its upload paths, allowing unauthenticated users to upload arbitrary files, including PHP code, which",
+        "published": "2026-08-12T06:17:54.470"
+      },
+      {
+        "cve_id": "CVE-2026-16051",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The wpmudev-updates WordPress plugin before 5.0.1 does not verify the integrity of the packages installed through its remote management interface, nor protect those requests against replay, allowing a",
+        "published": "2026-08-12T06:18:15.680"
+      },
+      {
+        "cve_id": "CVE-2026-5917",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "libgit2 versions v0.27.0 through v1.9.0 built with the libssh2 SSH backend (USE_SSH=libssh2) contain a shell command injection vulnerability that allows remote attackers to execute arbitrary commands ",
+        "published": "2026-08-11T22:17:37.390"
+      },
+      {
+        "cve_id": "CVE-2026-70398",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "A flaw was found in multicloud-integrations, a component of Red Hat Advanced Cluster Management (RHACM). This vulnerability allows an authenticated user, referred to as a tenant, to manipulate the Git",
+        "published": "2026-08-12T02:16:38.060"
+      },
+      {
+        "cve_id": "CVE-2026-66147",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "An unauthenticated command injection vulnerability was identified in the GMS Dispatcher Service in GMS 9.5.1 and earlier versions which allows remote attacker to perform remote code execution through ",
+        "published": "2026-08-11T21:17:49.173"
+      },
+      {
+        "cve_id": "CVE-2026-71290",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Improper TLS hostname verification vulnerability in Apache HttpComponents Client 5.4 or newer.\u00a0HostnameVerificationPolicy#BUILTIN setting has no effect when used with the async version of HttpClient. ",
+        "published": "2026-08-11T21:17:51.157"
+      },
+      {
+        "cve_id": "CVE-2026-67568",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The distributed Mira Android APK v4.5.15.4 allows an attacker read/write access to reproductive health profiles from internet connected hosts, which could result in forgery, deletion, or destruction o",
+        "published": "2026-08-11T22:18:54.877"
+      },
+      {
+        "cve_id": "CVE-2026-14863",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "is affected by an Improper Input Validation vulnerability that could result in privilege escalation. A low-privileged attacker could exploit this vulnerability to gain unauthorized read and write acce",
-        "published": "2026-08-11T17:17:55.160"
+        "base_score": 8.8,
+        "description": "FileRun up to and including version 2026.2.0 contains an OS command injection vulnerability that allows authenticated attackers to achieve remote code execution by uploading a file with a malicious fi",
+        "published": "2026-08-11T21:17:25.867"
       },
       {
-        "cve_id": "CVE-2026-20349",
+        "cve_id": "CVE-2026-15606",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Frontend Admin by DynamiApps plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 3.29.9. This is due to the plugin not properly verifying that a user i",
+        "published": "2026-08-11T21:17:27.847"
+      },
+      {
+        "cve_id": "CVE-2026-55676",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Malcolm is a network traffic analysis tool suite. The file-upload component (FilePond PHP backend) accepts uploads at `POST /server/php/submit.php` and stores them in a directory served by the same ng",
+        "published": "2026-08-11T21:17:37.560"
+      },
+      {
+        "cve_id": "CVE-2026-19556",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in V8 in Google Chrome prior to 151.0.7922.137 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-08-11T22:17:21.230"
+      },
+      {
+        "cve_id": "CVE-2026-19559",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in HTML in Google Chrome prior to 151.0.7922.137 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-08-11T22:17:21.547"
+      },
+      {
+        "cve_id": "CVE-2026-19560",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in Blink in Google Chrome prior to 151.0.7922.137 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-08-11T22:17:21.647"
+      },
+      {
+        "cve_id": "CVE-2026-66875",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In the Mira hormone monitor device firmware v1.7.1.47 build 01070147, a remote unauthenticated attacker within BLE range (approximately 10\u201330 meters) can silently rebind the device to an attacker-cont",
+        "published": "2026-08-11T22:18:54.587"
+      },
+      {
+        "cve_id": "CVE-2026-13613",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The KiviCare  WordPress plugin before 4.5.2 does not properly sanitise and escape user-supplied parameters before using them in a SQL query, allowing authenticated users with a clinic staff-level role",
+        "published": "2026-08-12T06:17:31.407"
+      },
+      {
+        "cve_id": "CVE-2026-73247",
         "severity": "HIGH",
         "base_score": 8.6,
-        "description": "A vulnerability in the Remote Access SSL VPN service for Cisco Secure Firewall Adaptive Security Appliance (ASA) Software and Cisco Secure Firewall Threat Defense (FTD) Software could allow an unauthe",
-        "published": "2026-08-11T17:17:48.833"
+        "description": "Kestra is an open-source, event-driven orchestration platform. Prior to 2.0.0, Kestra's core/src/main/java/io/kestra/core/runners/pebble/functions/HttpFunction.java passes the user-controlled http() u",
+        "published": "2026-08-11T22:19:05.417"
       },
       {
-        "cve_id": "CVE-2026-34635",
+        "cve_id": "CVE-2026-18634",
         "severity": "HIGH",
         "base_score": 8.4,
-        "description": "is affected by a Use of Hard-coded Cryptographic Key vulnerability that could result in a Security feature bypass. A low-privileged attacker could leverage this vulnerability to bypass security measur",
-        "published": "2026-08-11T17:17:57.963"
-      },
-      {
-        "cve_id": "CVE-2026-21279",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "is affected by an Improper Input Validation vulnerability that could result in a Security feature bypass. An attacker could leverage this vulnerability to bypass security measures and gain unauthorize",
-        "published": "2026-08-11T17:17:55.283"
-      },
-      {
-        "cve_id": "CVE-2026-25652",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "is affected by an Incorrect Authorization vulnerability that could result in privilege escalation. A low-privileged attacker could exploit this vulnerability to gain unauthorized read and write access",
-        "published": "2026-08-11T17:17:56.597"
-      },
-      {
-        "cve_id": "CVE-2026-42976",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Missing authentication for critical function in Windows RPC API allows an authorized attacker to elevate privileges locally.",
-        "published": "2026-08-11T17:17:58.647"
-      },
-      {
-        "cve_id": "CVE-2026-48385",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "ColdFusion is affected by an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability that could result in a Security feature bypass. A low-privileged a",
-        "published": "2026-08-11T17:18:00.167"
-      },
-      {
-        "cve_id": "CVE-2026-48386",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "ColdFusion is affected by a Use of a Broken or Risky Cryptographic Algorithm vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to disclose ",
-        "published": "2026-08-11T17:18:00.310"
-      },
-      {
-        "cve_id": "CVE-2026-48438",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "CAI Content Credentials is affected by a NULL Pointer Dereference vulnerability that could result in an application denial-of-service. An attacker could exploit this vulnerability to crash the applica",
-        "published": "2026-08-11T17:18:01.087"
-      },
-      {
-        "cve_id": "CVE-2026-47299",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "Improper neutralization of special elements used in a command ('command injection') in Azure Monitor Agent allows an authorized attacker to elevate privileges over a network.",
-        "published": "2026-08-11T17:17:59.100"
-      },
-      {
-        "cve_id": "CVE-2026-40375",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Missing authorization in Dynamics Business Central allows an authorized attacker to disclose information over a network.",
-        "published": "2026-08-11T17:17:58.393"
-      },
-      {
-        "cve_id": "CVE-2026-47285",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Improper neutralization of special elements used in a command ('command injection') in Visual Studio Code allows an unauthorized attacker to disclose information over a network.",
-        "published": "2026-08-11T17:17:58.970"
-      },
-      {
-        "cve_id": "CVE-2026-48375",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "ColdFusion is affected by an Incorrect Authorization vulnerability that could result in an application denial-of-service. A low-privileged attacker could exploit this vulnerability to crash the applic",
-        "published": "2026-08-11T17:17:59.750"
-      },
-      {
-        "cve_id": "CVE-2026-48436",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "CAI Content Credentials is affected by an Improper Input Validation vulnerability that could result in a Security feature bypass. An attacker could leverage this vulnerability to bypass security measu",
-        "published": "2026-08-11T17:18:00.830"
-      },
-      {
-        "cve_id": "CVE-2026-48387",
-        "severity": "MEDIUM",
-        "base_score": 6.2,
-        "description": "CAI Content Credentials is affected by an Integer Overflow or Wraparound vulnerability that could result in an application denial-of-service. An attacker could exploit this vulnerability to crash the ",
-        "published": "2026-08-11T17:18:00.440"
-      },
-      {
-        "cve_id": "CVE-2026-48434",
-        "severity": "MEDIUM",
-        "base_score": 6.2,
-        "description": "CAI Content Credentials is affected by an Uncontrolled Resource Consumption vulnerability that could lead to application denial-of-service. An attacker could exploit this vulnerability to exhaust syst",
-        "published": "2026-08-11T17:18:00.563"
-      },
-      {
-        "cve_id": "CVE-2026-48435",
-        "severity": "MEDIUM",
-        "base_score": 6.2,
-        "description": "CAI Content Credentials is affected by an Integer Underflow (Wrap or Wraparound) vulnerability that could result in an application denial-of-service. An attacker could exploit this vulnerability to cr",
-        "published": "2026-08-11T17:18:00.693"
-      },
-      {
-        "cve_id": "CVE-2026-48437",
-        "severity": "MEDIUM",
-        "base_score": 5.5,
-        "description": "CAI Content Credentials is affected by an Improper Certificate Validation vulnerability that could result in a Security feature bypass. An attacker could leverage this vulnerability to bypass security",
-        "published": "2026-08-11T17:18:00.957"
+        "description": "An insecure handling of serialized objects vulnerability was found in the one of the service of GMS application 9.5.1 (Build 9510.1044) and earlier versions. A local attacker with the ability to inter",
+        "published": "2026-08-11T21:17:30.880"
       }
     ]
   },
