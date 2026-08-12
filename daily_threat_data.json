@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T01:06:25.840835+00:00",
+  "generated_at": "2026-08-12T05:23:53.235169+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
+        "value": 8,
         "score": 2.5,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 979,
-    "critical_count": 7,
-    "high_count": 29,
+    "total": 962,
+    "critical_count": 8,
+    "high_count": 47,
     "cves": [
       {
         "cve_id": "CVE-2026-58231",
@@ -250,18 +250,11 @@
         "published": "2026-08-11T11:17:15.390"
       },
       {
-        "cve_id": "CVE-2026-34265",
+        "cve_id": "CVE-2026-72603",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "SAP NetWeaver Application Server ABAP allows an unauthenticated attacker to exploit logical errors in DIAG protocol parsing, resulting in memory corruption. This vulnerability could potentially disclo",
-        "published": "2026-08-11T01:17:20.240"
-      },
-      {
-        "cve_id": "CVE-2026-19425",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Travel Agency Management System developed by Win Men Intermational has a SQL Injection vulnerability. Unauthenticated remote attackers can inject arbitrary SQL commands to read, modify, and delete dat",
-        "published": "2026-08-11T05:17:14.680"
+        "base_score": 9.9,
+        "description": "An OS command injection vulnerability in wg-easy 15.3.0 allows users with the clients.create permission to execute arbitrary commands as root by injecting newline-delimited WireGuard PostUp directives",
+        "published": "2026-08-11T12:17:43.383"
       },
       {
         "cve_id": "CVE-2026-10579",
@@ -271,11 +264,25 @@
         "published": "2026-08-11T09:17:12.260"
       },
       {
-        "cve_id": "CVE-2026-44758",
+        "cve_id": "CVE-2026-72550",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "SAP Manufacturing Integration and Intelligence (MII) allows an attacker with high privileges to submit specially crafted input to certain affected functionality, which is processed without sufficient ",
-        "published": "2026-08-11T01:17:20.670"
+        "base_score": 9.8,
+        "description": "An SQL injection vulnerability in Friendica through the 2026.08-dev branch allows unauthenticated remote attackers to execute arbitrary SQL statements via the photo-view order parameter. The parameter",
+        "published": "2026-08-11T12:17:40.607"
+      },
+      {
+        "cve_id": "CVE-2026-72599",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An SQL injection vulnerability in e107 2.4.0 allows unauthenticated remote attackers to execute arbitrary SQL via the news item page ID parameter. The parameter is concatenated without escaping into a",
+        "published": "2026-08-11T12:17:42.907"
+      },
+      {
+        "cve_id": "CVE-2026-18972",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "An authenticated attacker can spoof another GUI user's identity by sending their request with the custom header \\\"Grpc-Metadata-USER\\\". This can lead to an account takeover attack from a user with low",
+        "published": "2026-08-11T13:17:56.997"
       },
       {
         "cve_id": "CVE-2026-13716",
@@ -290,13 +297,6 @@
         "base_score": 9.1,
         "description": "A caller-supplied X-Grafana-URL request header controls the destination of mcp-grafana's outbound requests, and the grafana_api_request tool lets the caller also choose the HTTP method, path, and body",
         "published": "2026-08-11T06:17:13.433"
-      },
-      {
-        "cve_id": "CVE-2026-58243",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "SAP ABAP Development Tools does not perform necessary authorization checks for certain functionality, allowing an attacker with low privileges to execute unauthorized database operations against SAP N",
-        "published": "2026-08-11T01:17:22.160"
       },
       {
         "cve_id": "CVE-2026-15555",
@@ -334,53 +334,53 @@
         "published": "2026-08-11T12:17:39.100"
       },
       {
+        "cve_id": "CVE-2026-72551",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A remote code execution vulnerability in Apioo Fusio 8.8.3 allows authenticated users with the Developer role to execute arbitrary OS commands by exploiting a PHP-Sandbox allow-list bypass. The sandbo",
+        "published": "2026-08-11T12:17:40.733"
+      },
+      {
+        "cve_id": "CVE-2026-72556",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A remote code execution vulnerability in ZoneMinder 1.39.17 allows any authenticated user to execute OS commands by exploiting a broken permission check in the Filter class. The canEdit() and canDelet",
+        "published": "2026-08-11T12:17:41.377"
+      },
+      {
+        "cve_id": "CVE-2026-72557",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "An unrestricted file upload vulnerability in Cockpit CMS 2.6.0 allows authenticated users to upload files of any extension including PHP scripts via the asset upload endpoint. The allowed_uploads conf",
+        "published": "2026-08-11T12:17:41.547"
+      },
+      {
+        "cve_id": "CVE-2026-72558",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "An SQL injection vulnerability in CiviCRM through 6.18.alpha1 allows authenticated staff to read the entire database via the contact search RLIKE clause. The clause concatenates a user-supplied value ",
+        "published": "2026-08-11T12:17:41.697"
+      },
+      {
+        "cve_id": "CVE-2026-72561",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A broken access control vulnerability in Peppermint Lab Peppermint through commit ba6e217 allows any authenticated non-administrative user to reconfigure the platform global OIDC/SSO settings via an u",
+        "published": "2026-08-11T12:17:42.073"
+      },
+      {
+        "cve_id": "CVE-2026-72562",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "An SQL injection vulnerability in Pimcore admin-ui-classic-bundle through version 2.3 allows authenticated backend users to execute arbitrary SQL via the DataObject grid id column filter. The filter v",
+        "published": "2026-08-11T12:17:42.190"
+      },
+      {
         "cve_id": "CVE-2026-72535",
         "severity": "HIGH",
         "base_score": 8.6,
         "description": "A missing authentication vulnerability in Chaskiq through commit 46dfdd1 allows unauthenticated remote attackers to mint Stripe Billing Portal sessions for any tenant via the stripeCustomerPortal Grap",
         "published": "2026-08-11T12:17:38.733"
-      },
-      {
-        "cve_id": "CVE-2026-72536",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "A missing authentication vulnerability in Chaskiq through commit 46dfdd1 allows unauthenticated remote attackers to manipulate any tenant Stripe subscription via the stripeCreateIntent GraphQL mutatio",
-        "published": "2026-08-11T12:17:38.857"
-      },
-      {
-        "cve_id": "CVE-2026-16053",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Zohocorp ManageEngine\u00a0M365 Manager Plus and M365 Security Plus versions below\u00a04820 are affected to Authenticated Path Traversal vulnerability in\u00a0Exchange Online backup module.",
-        "published": "2026-08-11T07:17:28.233"
-      },
-      {
-        "cve_id": "CVE-2026-15556",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "A flaw was found in Picketlink's SP signature validation; a SAML response containing zero assertion elements matching the signature check can allow an attacker to forge a SAML response and auth as any",
-        "published": "2026-08-11T09:17:12.687"
-      },
-      {
-        "cve_id": "CVE-2026-15560",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "when EAP runs with -secmgr, the openjdk-orb's JDKBridge honours attacker-supplied CDR codebase URLs during object unmarshalling on :3528, allowing an unauthenticated attacker to load and instantiate a",
-        "published": "2026-08-11T09:17:12.823"
-      },
-      {
-        "cve_id": "CVE-2026-66763",
-        "severity": "HIGH",
-        "base_score": 7.9,
-        "description": "SAP BusinessObjects Business Intelligence Platform stores certain sensitive credentials associated with user objects using a hard-coded cryptographic key. An attacker with high privileges and local ac",
-        "published": "2026-08-11T01:17:23.000"
-      },
-      {
-        "cve_id": "CVE-2026-72693",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "`openvt -u` is intended to identify the owner of the current VT and then execute `login` as that user from a privileged context. In the documented `kbrequest`/init usage, the ownership test in `authen",
-        "published": "2026-08-11T09:17:14.340"
       }
     ]
   },
