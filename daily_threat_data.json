@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T09:01:53.734475+00:00",
+  "generated_at": "2026-08-12T12:44:25.954692+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
+        "value": 7,
         "score": 2.5,
         "max": 3
       },
@@ -238,17 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 982,
-    "critical_count": 8,
-    "high_count": 59,
+    "total": 927,
+    "critical_count": 7,
+    "high_count": 24,
     "cves": [
-      {
-        "cve_id": "CVE-2026-58231",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "SAP Commerce Cloud allows an unauthenticated\nattacker to abuse a default authentication client and submit specially crafted\ninput to certain functions lacking sufficient validation. Successful\nexploit",
-        "published": "2026-08-11T11:17:15.390"
-      },
       {
         "cve_id": "CVE-2026-58115",
         "severity": "CRITICAL",
@@ -257,32 +250,32 @@
         "published": "2026-08-11T13:19:00.190"
       },
       {
-        "cve_id": "CVE-2026-72603",
+        "cve_id": "CVE-2026-48056",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "An OS command injection vulnerability in wg-easy 15.3.0 allows users with the clients.create permission to execute arbitrary commands as root by injecting newline-delimited WireGuard PostUp directives",
-        "published": "2026-08-11T12:17:43.383"
+        "base_score": 10.0,
+        "description": "Streambert is a cross-platform Electron Desktop App to stream and download video content. Versions prior to 2.5.0  improperly validate executable paths supplied to the \u00a0run-download\u00a0 IPC handler, allo",
+        "published": "2026-08-11T14:17:14.170"
       },
       {
-        "cve_id": "CVE-2026-10579",
+        "cve_id": "CVE-2026-17061",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A flaw was found in Picketlink Federation SAML; the unsolcited response handler would accept forged assertions with no verification or validation, permitting an unauthed attacker to authenticate as an",
-        "published": "2026-08-11T09:17:12.260"
+        "base_score": 10.0,
+        "description": "A Deserialization of Untrusted Data vulnerability affecting SIMULIA Execution Engine from Release 2023 through Release 2026 could lead to an unauthenticated remote code execution.",
+        "published": "2026-08-11T15:17:27.783"
       },
       {
-        "cve_id": "CVE-2026-72550",
+        "cve_id": "CVE-2026-46670",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "An SQL injection vulnerability in Friendica through the 2026.08-dev branch allows unauthenticated remote attackers to execute arbitrary SQL statements via the photo-view order parameter. The parameter",
-        "published": "2026-08-11T12:17:40.607"
+        "description": "YesWiki is a wiki system written in PHP. Prior to version 4.6.4,  an unauthenticated SQL injection in the Bazar form-import path (`FormManager::create()`) allows any unauthenticated visitor of a defau",
+        "published": "2026-08-11T14:17:13.863"
       },
       {
-        "cve_id": "CVE-2026-72599",
+        "cve_id": "CVE-2026-72920",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "An SQL injection vulnerability in e107 2.4.0 allows unauthenticated remote attackers to execute arbitrary SQL via the news item page ID parameter. The parameter is concatenated without escaping into a",
-        "published": "2026-08-11T12:17:42.907"
+        "description": "SeaweedFS is a distributed storage system. Prior to 4.24, the filer registers the SeaweedIdentityAccessManagement gRPC service without mandatory authentication when jwt.filer_signing.key is unset, all",
+        "published": "2026-08-11T15:17:38.053"
       },
       {
         "cve_id": "CVE-2026-18972",
@@ -299,88 +292,95 @@
         "published": "2026-08-11T13:19:05.813"
       },
       {
-        "cve_id": "CVE-2026-15555",
+        "cve_id": "CVE-2026-72778",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A flaw was found in JBoss marshalling. The Infinispan session replication path deserializes replicated session data via the JBoss Marshalling River unmarshaller with no class filtering \u2014 enabling RCE ",
-        "published": "2026-08-11T09:17:12.540"
+        "description": "Craft CMS versions from 4.0.0-RC1 before 4.18.2 and from 5.0.0-RC1 before 5.10.6 contain an authenticated remote code execution vulnerability in the control panel element-search condition handling. Cr",
+        "published": "2026-08-11T13:19:08.207"
       },
       {
-        "cve_id": "CVE-2026-72533",
+        "cve_id": "CVE-2026-72781",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "An authentication bypass vulnerability in Portainer CE through 2.44.0 allows authenticated low-privileged users to bypass Docker proxy authorization checks via non-canonical URL normalization, defeati",
-        "published": "2026-08-11T12:17:38.487"
+        "description": "Craft CMS versions >= 5.0.0-RC1 before 5.10.7 and >= 4.0.0-RC1 before 4.18.3 contain a remote code execution vulnerability in the Twig sandbox mechanism. Because Craft marks the ElementInterface as sa",
+        "published": "2026-08-11T13:19:08.657"
       },
       {
-        "cve_id": "CVE-2026-72534",
+        "cve_id": "CVE-2026-18860",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A privilege escalation vulnerability in Authentik Security authentik through 2026.5.6 allows an attacker with a source-scoped SCIM provisioning token to gain superuser privileges by provisioning a SCI",
-        "published": "2026-08-11T12:17:38.610"
+        "base_score": 8.7,
+        "description": "Velociraptor allows multi-tenant deployments named \"Orgs\".\n\nBy default Velociraptor, uses the ROOT org, but users can create child orgs for other tenants within the same deployment.\n\nUsers can have di",
+        "published": "2026-08-11T15:17:28.887"
       },
       {
-        "cve_id": "CVE-2026-72537",
+        "cve_id": "CVE-2026-72922",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A privilege escalation vulnerability in Authentik Security authentik through 2026.5.6 allows an attacker with a source-scoped SCIM provisioning token to take over any user account including superusers",
-        "published": "2026-08-11T12:17:38.977"
+        "base_score": 8.2,
+        "description": "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. Prior to 0.6.70, AutoGPT's autogpt_platform/backend/backend/api/features/inte",
+        "published": "2026-08-11T15:17:38.350"
       },
       {
-        "cve_id": "CVE-2026-72538",
+        "cve_id": "CVE-2026-18129",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "An argument injection vulnerability in PrefectHQ Prefect through 3.8.2 allows authenticated users to achieve remote code execution via the git_clone pull step branch field. The branch parameter is pas",
-        "published": "2026-08-11T12:17:39.100"
+        "base_score": 8.1,
+        "description": "Cleartext transmission of sensitive information in the Core of Ivanti Endpoint Manager before version 2024 SU7 allows a remote unauthenticated attacker in a MITM position to leak credentials for exter",
+        "published": "2026-08-11T15:17:28.327"
       },
       {
-        "cve_id": "CVE-2026-72551",
+        "cve_id": "CVE-2026-72921",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A remote code execution vulnerability in Apioo Fusio 8.8.3 allows authenticated users with the Developer role to execute arbitrary OS commands by exploiting a PHP-Sandbox allow-list bypass. The sandbo",
-        "published": "2026-08-11T12:17:40.733"
+        "base_score": 8.1,
+        "description": "SeaweedFS is a distributed storage system. Prior to 4.24, the weed/server/filer_server_handlers.go allowed_prefixes authorization check used strings.HasPrefix on raw path strings, so a filer JWT scope",
+        "published": "2026-08-11T15:17:38.217"
       },
       {
-        "cve_id": "CVE-2026-72556",
+        "cve_id": "CVE-2026-50058",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A remote code execution vulnerability in ZoneMinder 1.39.17 allows any authenticated user to execute OS commands by exploiting a broken permission check in the Filter class. The canEdit() and canDelet",
-        "published": "2026-08-11T12:17:41.377"
+        "base_score": 7.8,
+        "description": "A vulnerability has been identified in Solid Edge SE2025 (All versions < V225.0 Update 15), Solid Edge SE2026 (All versions < V226.0 Update 7). The affected applications contains an out of bounds read",
+        "published": "2026-08-11T13:18:58.153"
       },
       {
-        "cve_id": "CVE-2026-72557",
+        "cve_id": "CVE-2026-50059",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "An unrestricted file upload vulnerability in Cockpit CMS 2.6.0 allows authenticated users to upload files of any extension including PHP scripts via the asset upload endpoint. The allowed_uploads conf",
-        "published": "2026-08-11T12:17:41.547"
+        "base_score": 7.8,
+        "description": "A vulnerability has been identified in Solid Edge SE2025 (All versions < V225.0 Update 15), Solid Edge SE2026 (All versions < V226.0 Update 7). The affected applications contains an out of bounds writ",
+        "published": "2026-08-11T13:18:58.313"
       },
       {
-        "cve_id": "CVE-2026-72558",
+        "cve_id": "CVE-2026-50060",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "An SQL injection vulnerability in CiviCRM through 6.18.alpha1 allows authenticated staff to read the entire database via the contact search RLIKE clause. The clause concatenates a user-supplied value ",
-        "published": "2026-08-11T12:17:41.697"
+        "base_score": 7.8,
+        "description": "A vulnerability has been identified in Solid Edge SE2025 (All versions < V225.0 Update 15), Solid Edge SE2026 (All versions < V226.0 Update 7). The affected applications contain a use-after-free vulne",
+        "published": "2026-08-11T13:18:58.447"
       },
       {
-        "cve_id": "CVE-2026-72561",
+        "cve_id": "CVE-2026-50061",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A broken access control vulnerability in Peppermint Lab Peppermint through commit ba6e217 allows any authenticated non-administrative user to reconfigure the platform global OIDC/SSO settings via an u",
-        "published": "2026-08-11T12:17:42.073"
+        "base_score": 7.8,
+        "description": "A vulnerability has been identified in Solid Edge SE2025 (All versions < V225.0 Update 15), Solid Edge SE2026 (All versions < V226.0 Update 7). The affected applications contain a use-after-free vulne",
+        "published": "2026-08-11T13:18:58.583"
       },
       {
-        "cve_id": "CVE-2026-72562",
+        "cve_id": "CVE-2026-50062",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "An SQL injection vulnerability in Pimcore admin-ui-classic-bundle through version 2.3 allows authenticated backend users to execute arbitrary SQL via the DataObject grid id column filter. The filter v",
-        "published": "2026-08-11T12:17:42.190"
+        "base_score": 7.8,
+        "description": "A vulnerability has been identified in Solid Edge SE2025 (All versions < V225.0 Update 15), Solid Edge SE2026 (All versions < V226.0 Update 7). The affected applications contains an out of bounds read",
+        "published": "2026-08-11T13:18:58.720"
       },
       {
-        "cve_id": "CVE-2026-72535",
+        "cve_id": "CVE-2026-50063",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "A missing authentication vulnerability in Chaskiq through commit 46dfdd1 allows unauthenticated remote attackers to mint Stripe Billing Portal sessions for any tenant via the stripeCustomerPortal Grap",
-        "published": "2026-08-11T12:17:38.733"
+        "base_score": 7.8,
+        "description": "A vulnerability has been identified in Solid Edge SE2025 (All versions < V225.0 Update 15), Solid Edge SE2026 (All versions < V226.0 Update 7). The affected applications contains an out of bounds read",
+        "published": "2026-08-11T13:18:58.860"
+      },
+      {
+        "cve_id": "CVE-2026-50064",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "A vulnerability has been identified in Solid Edge SE2025 (All versions < V225.0 Update 15), Solid Edge SE2026 (All versions < V226.0 Update 7). The affected applications contains an out of bounds writ",
+        "published": "2026-08-11T13:18:58.990"
       }
     ]
   },
