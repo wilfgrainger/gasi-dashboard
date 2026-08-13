@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T20:32:42.463558+00:00",
+  "generated_at": "2026-08-13T01:08:02.725586+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -7,7 +7,7 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 27,
+        "value": 23,
         "score": 3.0,
         "max": 3
       },
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1665,
-    "recent_30d_count": 27,
+    "recent_30d_count": 23,
     "recent": [
       {
         "cve_id": "CVE-2026-20349",
@@ -238,30 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 417,
+    "total": 431,
     "critical_count": 10,
-    "high_count": 30,
+    "high_count": 27,
     "cves": [
-      {
-        "cve_id": "CVE-2026-48765",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "TypeBot is a chatbot builder tool. Versions prior to 3.17.0 allow a low-privilege read collaborator to extract a workspace OAuth `credentialsId` from a readable bot configuration and then overwrite th",
-        "published": "2026-08-11T21:17:36.947"
-      },
       {
         "cve_id": "CVE-2026-72526",
         "severity": "CRITICAL",
         "base_score": 9.9,
         "description": "A flaw was found in the multicloud-integrations component. The Application propagation controller processes the `ocm-managed-cluster` annotation from an Application Custom Resource (CR) without proper",
         "published": "2026-08-12T02:16:38.200"
-      },
-      {
-        "cve_id": "CVE-2026-68067",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The login endpoint on the Mira cloud API accepts any format-valid string in the password field and returns a live active session token for the account matching the supplied email address. An attacker ",
-        "published": "2026-08-11T22:18:55.017"
       },
       {
         "cve_id": "CVE-2026-15039",
@@ -278,11 +264,32 @@
         "published": "2026-08-12T06:18:15.680"
       },
       {
-        "cve_id": "CVE-2026-5917",
+        "cve_id": "CVE-2026-18366",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "libgit2 versions v0.27.0 through v1.9.0 built with the libssh2 SSH backend (USE_SSH=libssh2) contain a shell command injection vulnerability that allows remote attackers to execute arbitrary commands ",
-        "published": "2026-08-11T22:17:37.390"
+        "base_score": 9.8,
+        "description": "The Events Manager  WordPress plugin before 7.4.1 does not properly scope its capability mapping, discarding the access control decisions WordPress already made for unrelated privileged actions, which",
+        "published": "2026-08-12T06:20:07.460"
+      },
+      {
+        "cve_id": "CVE-2026-18391",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The WooCommerce Subscriptions WordPress plugin before 9.1.0 does not validate user input before unserializing it on stores with High-Performance Order Storage enabled, leading to a PHP Object Injectio",
+        "published": "2026-08-12T06:20:14.167"
+      },
+      {
+        "cve_id": "CVE-2025-41769",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The device's PROFINET service is affected by a buffer overflow vulnerability that exists in the default configuration. An unauthenticated remote attacker could exploit this vulnerability to reboot the",
+        "published": "2026-08-12T08:17:11.590"
+      },
+      {
+        "cve_id": "CVE-2026-26035",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An Improper Authentication vulnerability [CWE-287] vulnerability in Fortinet FortiWeb 8.0.0 through 8.0.2, FortiWeb 7.6.0 through 7.6.6, FortiWeb 7.4.0 through 7.4.11, FortiWeb 7.2.0 through 7.2.12, F",
+        "published": "2026-08-12T13:17:22.307"
       },
       {
         "cve_id": "CVE-2026-70398",
@@ -292,74 +299,25 @@
         "published": "2026-08-12T02:16:38.060"
       },
       {
-        "cve_id": "CVE-2026-66147",
+        "cve_id": "CVE-2026-66659",
         "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "An unauthenticated command injection vulnerability was identified in the GMS Dispatcher Service in GMS 9.5.1 and earlier versions which allows remote attacker to perform remote code execution through ",
-        "published": "2026-08-11T21:17:49.173"
+        "base_score": 9.3,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Essekia Tablesome Table allows Blind SQL Injection.\n\nThis issue affects Tablesome Table: from n/a ",
+        "published": "2026-08-12T06:22:09.420"
       },
       {
-        "cve_id": "CVE-2026-71290",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Improper TLS hostname verification vulnerability in Apache HttpComponents Client 5.4 or newer.\u00a0HostnameVerificationPolicy#BUILTIN setting has no effect when used with the async version of HttpClient. ",
-        "published": "2026-08-11T21:17:51.157"
-      },
-      {
-        "cve_id": "CVE-2026-67568",
+        "cve_id": "CVE-2026-16538",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "The distributed Mira Android APK v4.5.15.4 allows an attacker read/write access to reproductive health profiles from internet connected hosts, which could result in forgery, deletion, or destruction o",
-        "published": "2026-08-11T22:18:54.877"
+        "description": "The Wallet for WooCommerce WordPress plugin before 1.6.10 does not verify the amount actually collected for a wallet top-up before crediting the wallet, allowing customers to top up their wallet balan",
+        "published": "2026-08-12T06:19:10.620"
       },
       {
-        "cve_id": "CVE-2026-14863",
+        "cve_id": "CVE-2026-57858",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "FileRun up to and including version 2026.2.0 contains an OS command injection vulnerability that allows authenticated attackers to achieve remote code execution by uploading a file with a malicious fi",
-        "published": "2026-08-11T21:17:25.867"
-      },
-      {
-        "cve_id": "CVE-2026-15606",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Frontend Admin by DynamiApps plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 3.29.9. This is due to the plugin not properly verifying that a user i",
-        "published": "2026-08-11T21:17:27.847"
-      },
-      {
-        "cve_id": "CVE-2026-55676",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Malcolm is a network traffic analysis tool suite. The file-upload component (FilePond PHP backend) accepts uploads at `POST /server/php/submit.php` and stores them in a directory served by the same ng",
-        "published": "2026-08-11T21:17:37.560"
-      },
-      {
-        "cve_id": "CVE-2026-19556",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in V8 in Google Chrome prior to 151.0.7922.137 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-08-11T22:17:21.230"
-      },
-      {
-        "cve_id": "CVE-2026-19559",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in HTML in Google Chrome prior to 151.0.7922.137 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-08-11T22:17:21.547"
-      },
-      {
-        "cve_id": "CVE-2026-19560",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in Blink in Google Chrome prior to 151.0.7922.137 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-08-11T22:17:21.647"
-      },
-      {
-        "cve_id": "CVE-2026-66875",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "In the Mira hormone monitor device firmware v1.7.1.47 build 01070147, a remote unauthenticated attacker within BLE range (approximately 10\u201330 meters) can silently rebind the device to an attacker-cont",
-        "published": "2026-08-11T22:18:54.587"
+        "base_score": 8.9,
+        "description": "Cal.com Cal.diy versions 2.1.1 through 6.2.0 contain a stored cross-site scripting vulnerability in the BookingPageTagManager component that allows authenticated event owners to inject arbitrary JavaS",
+        "published": "2026-08-12T13:17:22.943"
       },
       {
         "cve_id": "CVE-2026-13613",
@@ -369,18 +327,60 @@
         "published": "2026-08-12T06:17:31.407"
       },
       {
-        "cve_id": "CVE-2026-73247",
+        "cve_id": "CVE-2026-11325",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Kestra is an open-source, event-driven orchestration platform. Prior to 2.0.0, Kestra's core/src/main/java/io/kestra/core/runners/pebble/functions/HttpFunction.java passes the user-controlled http() u",
-        "published": "2026-08-11T22:19:05.417"
+        "base_score": 8.8,
+        "description": "Description\n\n\n\nCloudflare was recently notified by external researchers of vulnerabilities in this archived repository, including a remote code execution issue in `src/index.ts` reachable from certain",
+        "published": "2026-08-12T12:17:44.370"
       },
       {
-        "cve_id": "CVE-2026-18634",
+        "cve_id": "CVE-2026-18474",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "An insecure handling of serialized objects vulnerability was found in the one of the service of GMS application 9.5.1 (Build 9510.1044) and earlier versions. A local attacker with the ability to inter",
-        "published": "2026-08-11T21:17:30.880"
+        "base_score": 8.6,
+        "description": "The WP Directory Kit WordPress plugin before 1.5.6 does not sanitise and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by unauthenticated users when a n",
+        "published": "2026-08-12T06:20:14.283"
+      },
+      {
+        "cve_id": "CVE-2026-6484",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "In an UEFI, Lack of verified boot to certain FV may cause arbitrary code execution.",
+        "published": "2026-08-12T01:17:08.060"
+      },
+      {
+        "cve_id": "CVE-2026-64954",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Velociraptor allows scheduling new collections via VQL queries in notebooks. For a user to schedule a new collection, they require the COLLECT_CLIENT permission. However, this is not enforced when the",
+        "published": "2026-08-12T05:19:17.893"
+      },
+      {
+        "cve_id": "CVE-2026-13171",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "The Eventin  WordPress plugin before 4.1.20 does not perform an authorization check on its waiting-list registration handler, allowing unauthenticated users to create WordPress user accounts for arbit",
+        "published": "2026-08-12T06:17:19.757"
+      },
+      {
+        "cve_id": "CVE-2026-19426",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "POS System developed by FitSoft has a Missing Authentication vulnerability. Unauthenticated remote attackers can directly access and operate the system.",
+        "published": "2026-08-12T08:17:17.493"
+      },
+      {
+        "cve_id": "CVE-2026-18961",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The Social Login, Passkeys, Magic Link & Email OTP \u2013 Passwordless Login by VentraConnect plugin for WordPress is vulnerable to Authentication Bypass via Unverified Provider Email in all versions up to",
+        "published": "2026-08-12T03:16:42.807"
+      },
+      {
+        "cve_id": "CVE-2026-16977",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The Form Maker by 10Web  WordPress plugin before 1.15.45 does not properly parameterize a user-controlled value that is substituted into a dynamic SQL query built for a database-backed choice field, a",
+        "published": "2026-08-12T06:19:18.193"
       }
     ]
   },
