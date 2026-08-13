@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-13T05:27:00.773556+00:00",
+  "generated_at": "2026-08-13T09:02:52.186691+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
-        "score": 2.5,
+        "value": 3,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,44 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 423,
-    "critical_count": 9,
-    "high_count": 25,
+    "total": 391,
+    "critical_count": 3,
+    "high_count": 18,
     "cves": [
       {
-        "cve_id": "CVE-2026-15039",
+        "cve_id": "CVE-2026-73263",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The giftware WordPress plugin before 4.2.10 does not validate the type of uploaded files in one of its upload paths, allowing unauthenticated users to upload arbitrary files, including PHP code, which",
-        "published": "2026-08-12T06:17:54.470"
-      },
-      {
-        "cve_id": "CVE-2026-16051",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The wpmudev-updates WordPress plugin before 5.0.1 does not verify the integrity of the packages installed through its remote management interface, nor protect those requests against replay, allowing a",
-        "published": "2026-08-12T06:18:15.680"
-      },
-      {
-        "cve_id": "CVE-2026-18366",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Events Manager  WordPress plugin before 7.4.1 does not properly scope its capability mapping, discarding the access control decisions WordPress already made for unrelated privileged actions, which",
-        "published": "2026-08-12T06:20:07.460"
-      },
-      {
-        "cve_id": "CVE-2026-18391",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The WooCommerce Subscriptions WordPress plugin before 9.1.0 does not validate user input before unserializing it on stores with High-Performance Order Storage enabled, leading to a PHP Object Injectio",
-        "published": "2026-08-12T06:20:14.167"
-      },
-      {
-        "cve_id": "CVE-2025-41769",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The device's PROFINET service is affected by a buffer overflow vulnerability that exists in the default configuration. An unauthenticated remote attacker could exploit this vulnerability to reboot the",
-        "published": "2026-08-12T08:17:11.590"
+        "base_score": 9.9,
+        "description": "Prowler is a cloud security platform. Prior to 5.36.0, the Kubernetes provider connection test accepted kubeconfig_content containing a legacy gcp auth-provider with config.cmd-path and config.cmd-arg",
+        "published": "2026-08-12T15:18:30.943"
       },
       {
         "cve_id": "CVE-2026-26035",
@@ -292,32 +264,11 @@
         "published": "2026-08-12T15:17:38.307"
       },
       {
-        "cve_id": "CVE-2026-66659",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Essekia Tablesome Table allows Blind SQL Injection.\n\nThis issue affects Tablesome Table: from n/a ",
-        "published": "2026-08-12T06:22:09.420"
-      },
-      {
-        "cve_id": "CVE-2026-16538",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The Wallet for WooCommerce WordPress plugin before 1.6.10 does not verify the amount actually collected for a wallet top-up before crediting the wallet, allowing customers to top up their wallet balan",
-        "published": "2026-08-12T06:19:10.620"
-      },
-      {
         "cve_id": "CVE-2026-57858",
         "severity": "HIGH",
         "base_score": 8.9,
         "description": "Cal.com Cal.diy versions 2.1.1 through 6.2.0 contain a stored cross-site scripting vulnerability in the BookingPageTagManager component that allows authenticated event owners to inject arbitrary JavaS",
         "published": "2026-08-12T13:17:22.943"
-      },
-      {
-        "cve_id": "CVE-2026-13613",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The KiviCare  WordPress plugin before 4.5.2 does not properly sanitise and escape user-supplied parameters before using them in a SQL query, allowing authenticated users with a clinic staff-level role",
-        "published": "2026-08-12T06:17:31.407"
       },
       {
         "cve_id": "CVE-2026-11325",
@@ -327,53 +278,11 @@
         "published": "2026-08-12T12:17:44.370"
       },
       {
-        "cve_id": "CVE-2026-18474",
+        "cve_id": "CVE-2026-73284",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "The WP Directory Kit WordPress plugin before 1.5.6 does not sanitise and escape a parameter before using it in a SQL statement, leading to a SQL injection exploitable by unauthenticated users when a n",
-        "published": "2026-08-12T06:20:14.283"
-      },
-      {
-        "cve_id": "CVE-2026-13171",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "The Eventin  WordPress plugin before 4.1.20 does not perform an authorization check on its waiting-list registration handler, allowing unauthenticated users to create WordPress user accounts for arbit",
-        "published": "2026-08-12T06:17:19.757"
-      },
-      {
-        "cve_id": "CVE-2026-19426",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "POS System developed by FitSoft has a Missing Authentication vulnerability. Unauthenticated remote attackers can directly access and operate the system.",
-        "published": "2026-08-12T08:17:17.493"
-      },
-      {
-        "cve_id": "CVE-2026-16977",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Form Maker by 10Web  WordPress plugin before 1.15.45 does not properly parameterize a user-controlled value that is substituted into a dynamic SQL query built for a database-backed choice field, a",
-        "published": "2026-08-12T06:19:18.193"
-      },
-      {
-        "cve_id": "CVE-2026-18057",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Events Manager  WordPress plugin before 7.4.1 does not sanitise and escape a user-controlled value before using it in a SQL statement, allowing users with a subscriber account and above to perform",
-        "published": "2026-08-12T06:19:34.757"
-      },
-      {
-        "cve_id": "CVE-2026-18230",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The WP Directory Kit WordPress plugin before 1.5.6 does not sanitise and escape a parameter before using it in a SQL statement through one of its authenticated AJAX actions, which lacks an authorizati",
-        "published": "2026-08-12T06:20:07.317"
-      },
-      {
-        "cve_id": "CVE-2026-19594",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Insufficient input sanitization in Snowflake Python API (`snowflake.core`) versions prior to 1.13.0 allowed confused-deputy privilege escalation through two related weaknesses: path traversal (CWE-22)",
-        "published": "2026-08-12T06:21:57.223"
+        "base_score": 8.8,
+        "description": "RustFS is a distributed object storage system built in Rust. RustFS AddServiceAccount in rustfs/src/admin/handlers/service_account.rs accepts an attacker-controlled target_user after only checking Cre",
+        "published": "2026-08-12T15:18:31.437"
       },
       {
         "cve_id": "CVE-2026-70465",
@@ -381,6 +290,97 @@
         "base_score": 8.1,
         "description": "A buffer copy without checking size of input ('classic buffer overflow') vulnerability in Fortinet FortiClientWindows 7.4.0 through 7.4.3, FortiClientWindows 7.2.0 through 7.2.11 may allow an unauthen",
         "published": "2026-08-12T12:19:47.017"
+      },
+      {
+        "cve_id": "CVE-2026-70468",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "A authentication bypass using an alternate path or channel vulnerability in Fortinet FortiManager 7.6.1, FortiManager 7.4.3 through 7.4.5, FortiManager 7.2.5 through 7.2.9, FortiManager Cloud 7.6.1, F",
+        "published": "2026-08-12T13:17:25.227"
+      },
+      {
+        "cve_id": "CVE-2026-47231",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Admidio is an open-source user management solution. Prior to version 5.0.10, `modules/documents-files.php` gates state-changing modes by checking that the actor has `hasUploadRight()` on the URL param",
+        "published": "2026-08-12T14:17:54.210"
+      },
+      {
+        "cve_id": "CVE-2026-66375",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "A low-privilege authenticated user may permanently remove protected internal metadata across repositories under specific conditions.",
+        "published": "2026-08-12T15:18:19.343"
+      },
+      {
+        "cve_id": "CVE-2026-73286",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "RustFS is a distributed object storage system built in Rust. Prior to 1.0.0-beta.12, RustFS get_condition_values folds attacker-controlled request headers from HeaderMap into server-derived userid, us",
+        "published": "2026-08-12T15:18:32.060"
+      },
+      {
+        "cve_id": "CVE-2026-73289",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "RustFS is a distributed object storage system built in Rust. Prior to 1.0.0-beta.12, RustFS evaluates the ForAllValues: and ForAnyValue: set qualifiers with the negated string operators StringNotEqual",
+        "published": "2026-08-12T15:18:32.733"
+      },
+      {
+        "cve_id": "CVE-2026-14478",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "A maliciously created executable, when executed on the victim's machine, may allow a local low-privileged attacker to inject unauthenticated IPC messages into named pipes, modify pipe permissions or o",
+        "published": "2026-08-12T15:17:31.687"
+      },
+      {
+        "cve_id": "CVE-2026-73264",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "Prowler is a cloud security platform. Prior to 5.33.1, an authenticated user with Lighthouse provider configuration access could supply an unvalidated base_url for the openai_compatible provider throu",
+        "published": "2026-08-12T15:18:31.087"
+      },
+      {
+        "cve_id": "CVE-2026-19566",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Net::CIDR::Set versions before 0.23 for Perl allow memory exhaustion and malformed set ranges via unbounded IPv6 prefix lengths.\n\nThe _encode method accepts any prefix length matching `(0|[1-9][0-9]*)",
+        "published": "2026-08-12T09:17:29.753"
+      },
+      {
+        "cve_id": "CVE-2026-68757",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A user with access to a valid SAML response may impersonate another user under specific conditions.",
+        "published": "2026-08-12T15:18:22.477"
+      },
+      {
+        "cve_id": "CVE-2026-73285",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "RustFS is a distributed object storage system built in Rust. From 1.0.0-alpha.64 until 1.0.0-rc.1, RustFS external OPA authorization enabled by RUSTFS_POLICY_PLUGIN_URL in crates/iam/src/sys.rs sets P",
+        "published": "2026-08-12T15:18:31.840"
+      },
+      {
+        "cve_id": "CVE-2025-59319",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "CPSD CryptoPro Secure Disk for Bitlocker before v7.7.4 fails to certify the integrity of the intended boot partition and selects the first partition index matching a hardcoded type value. A crafted Li",
+        "published": "2026-08-12T15:17:28.963"
+      },
+      {
+        "cve_id": "CVE-2026-68752",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "A Project Resource Manager may gain broader administrative privileges under specific conditions.",
+        "published": "2026-08-12T15:18:21.880"
+      },
+      {
+        "cve_id": "CVE-2026-73291",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "Seerr is an open-source media request and discovery manager for Jellyfin, Plex, and Emby. Prior to version 3.4.0, Seerr's ImageProxy in server/lib/imageproxy.ts uses the upstream ETag and Content-Type",
+        "published": "2026-08-12T15:18:33.020"
       }
     ]
   },
