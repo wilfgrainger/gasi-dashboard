@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-08-13T20:30:44.793271+00:00",
+  "generated_at": "2026-08-14T01:06:09.139986+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 23,
+        "value": 21,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 12,
-        "score": 3.0,
+        "value": 7,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1665,
-    "recent_30d_count": 23,
+    "recent_30d_count": 21,
     "recent": [
       {
         "cve_id": "CVE-2026-20349",
@@ -238,58 +238,23 @@
     ]
   },
   "nvd": {
-    "total": 589,
-    "critical_count": 12,
-    "high_count": 28,
+    "total": 608,
+    "critical_count": 7,
+    "high_count": 30,
     "cves": [
       {
-        "cve_id": "CVE-2024-27253",
+        "cve_id": "CVE-2026-15413",
         "severity": "CRITICAL",
         "base_score": 10.0,
-        "description": "IBM DOORS Next 7.0.3 through 7.0.3 Interim Fix 018 could allow an authenticated user to bypass security logic to perform unauthorized activities.",
-        "published": "2026-08-12T22:17:13.600"
+        "description": "The Link Factory WordPress plugin is a backdoor. Distributed as a \"homepage sentence publisher\", it exposes an operator-controlled REST API under /wp-json/link-factory/v1/ - authenticated by a detache",
+        "published": "2026-08-13T09:17:12.153"
       },
       {
-        "cve_id": "CVE-2026-66898",
+        "cve_id": "CVE-2026-59500",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A path traversal vulnerability in LXD allows an attacker to manipulate file system paths during backup import and restore operations. When importing or restoring a backup archive, LXD fails to validat",
-        "published": "2026-08-12T21:17:39.700"
-      },
-      {
-        "cve_id": "CVE-2026-19001",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The MongoDB BI Connector ODBC Driver may write outside the bounds of a fixed-size buffer when an application supplies an unusually long catalog, schema, or object name to a metadata retrieval function",
-        "published": "2026-08-12T21:17:37.307"
-      },
-      {
-        "cve_id": "CVE-2026-18749",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The type=track branch authorises on _is_my_case(t_attach.case) only and never checks VinceTrackAttachment.shared. A coordinator-uploaded case artefact that has NOT been marked shared is still retrieva",
-        "published": "2026-08-12T22:17:14.933"
-      },
-      {
-        "cve_id": "CVE-2026-73519",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "WolfStack before 25.9.2 contains a hard-coded cluster-authentication secret compiled into every build and published as a constant in src/auth/mod.rs, allowing remote unauthenticated attackers to bypas",
-        "published": "2026-08-12T22:17:17.600"
-      },
-      {
-        "cve_id": "CVE-2026-16770",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "PDF::WebKit versions through 1.2 for Perl allow argument injection into wkhtmltopdf via meta tags in the source document.\n\nFor an HTML string or file source, the constructor collects every <meta name=",
-        "published": "2026-08-13T00:17:31.763"
-      },
-      {
-        "cve_id": "CVE-2026-49819",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "UpSnap is a wake on lan web app. Versions 4.4.1 through 5.3.5 are vulnerable to a missing-authentication / privilege-escalation chain in `pb.HandlerInitSuperuser` (`backend/pb/handlers.go:249`), reach",
-        "published": "2026-08-13T00:17:32.747"
+        "base_score": 10.0,
+        "description": "CWE-287: Improper Authentication",
+        "published": "2026-08-13T10:17:15.017"
       },
       {
         "cve_id": "CVE-2026-14182",
@@ -299,53 +264,32 @@
         "published": "2026-08-13T06:17:37.887"
       },
       {
-        "cve_id": "CVE-2026-49481",
+        "cve_id": "CVE-2026-59506",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "UpSnap is a wake on lan web app. Versions prior to 5.4.0 have an OS command injection vulnerability in the UpSnap\u2019s device management functionality due to the presence of unsafe shell command template",
-        "published": "2026-08-12T23:17:21.363"
+        "base_score": 9.3,
+        "description": "CWE-306: Missing Authentication for Critical Function",
+        "published": "2026-08-13T10:17:15.840"
       },
       {
-        "cve_id": "CVE-2026-71193",
+        "cve_id": "CVE-2026-59507",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "In OpenStack Designate before 22.0.1, zone creation checks (_is_subzone, _is_superzone, and the duplicate-zone DB constraint) are scoped to the target pool only. An authenticated user can bypass these",
-        "published": "2026-08-12T23:17:22.030"
+        "base_score": 9.3,
+        "description": "CWE-798: Use of Hard-coded Credentials CWE-200: Exposure of Sensitive Information to an Unauthorized Actor CWE-284: Improper Access Control",
+        "published": "2026-08-13T10:17:15.963"
       },
       {
-        "cve_id": "CVE-2026-73501",
+        "cve_id": "CVE-2026-59503",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "kin-openapi is a Go project for handling OpenAPI files. Prior to 0.144.0, ValidationHandler.Load() in openapi3filter/validation_handler.go silently replaces a nil AuthenticationFunc with NoopAuthentic",
-        "published": "2026-08-12T22:17:17.443"
+        "description": "CWE-200: Exposure of Sensitive Information to an Unauthorized Actor CWE-359: Exposure of Private Personal Information to an Unauthorized Actor",
+        "published": "2026-08-13T10:17:15.380"
       },
       {
-        "cve_id": "CVE-2026-71471",
+        "cve_id": "CVE-2026-59504",
         "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "A flaw was found in acm-search-v2-rhel9. An attacker with administrative privileges on the hub cluster, specifically with patch access to the Search Custom Resource (CR), could exploit a vulnerability",
-        "published": "2026-08-12T22:17:15.890"
-      },
-      {
-        "cve_id": "CVE-2026-13105",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "IBM i Access Client Solutions 1.1.2.0 through 1.1.9.13 is vulnerable to zip slip path traversal exploit when importing a configuration.",
-        "published": "2026-08-12T21:17:35.027"
-      },
-      {
-        "cve_id": "CVE-2026-13622",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A symlink following vulnerability was found in KubeVirt's virt-handler migration proxy. During live migration, virt-handler dials Unix sockets inside the target virt-launcher pod via /proc/<pid>/root/",
-        "published": "2026-08-12T21:17:35.630"
-      },
-      {
-        "cve_id": "CVE-2026-49473",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "@cedar-policy/authorization-for-expressjs is an open-source Express.js middleware that integrates Cedar authorization into Express applications by mapping HTTP requests to Cedar actions and evaluating",
-        "published": "2026-08-13T00:17:32.587"
+        "base_score": 9.1,
+        "description": "CWE-602: Client-Side Enforcement of Server-Side Security",
+        "published": "2026-08-13T10:17:15.500"
       },
       {
         "cve_id": "CVE-2026-11840",
@@ -355,32 +299,88 @@
         "published": "2026-08-13T08:16:42.987"
       },
       {
-        "cve_id": "CVE-2026-16033",
+        "cve_id": "CVE-2026-12263",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "A path traversal vulnerability in LXD allows an attacker to achieve arbitrary host file read or unconstrained file creation. When processing image metadata templates, LXD fails to properly sanitize or",
-        "published": "2026-08-12T21:17:35.880"
+        "base_score": 8.8,
+        "description": "Zohocorp ManageEngine Password Manager Pro versions before 13232 and PAM360 versions before 8551 are vulnerable to an authentication bypass vulnerability due to improper SAML validation.",
+        "published": "2026-08-13T11:17:38.193"
       },
       {
-        "cve_id": "CVE-2026-71473",
+        "cve_id": "CVE-2026-73614",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "A flaw was found in the `search-v2-operator` component. A user with specific administrative permissions on a managed cluster can exploit a vulnerability that allows them to inject arbitrary configurat",
-        "published": "2026-08-12T22:17:16.020"
+        "base_score": 8.8,
+        "description": "Network-AI ClaudeHookBridge before 5.15.1 truncates the target string to 500 characters before evaluating denyPatterns, while Claude Code executes the full untruncated command. Attackers can position ",
+        "published": "2026-08-13T12:17:26.197"
       },
       {
-        "cve_id": "CVE-2026-10534",
+        "cve_id": "CVE-2026-73615",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "IBM Db2 11.5.0 through 11.5.9, and 12.1.0 through 12.1.5 is vulnerable to buffer overflow in the IXF IMPORT parser.",
-        "published": "2026-08-12T22:17:14.203"
+        "base_score": 8.8,
+        "description": "Network-AI versions before 5.15.1 contain a security matcher bypass vulnerability where SandboxPolicy evaluates raw command strings with quotes preserved while the executor tokenizes commands by strip",
+        "published": "2026-08-13T12:17:26.337"
       },
       {
-        "cve_id": "CVE-2026-13433",
+        "cve_id": "CVE-2026-73625",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "IBM i Access Client Solutions 1.1.2.0 through 1.1.9.13 (ACS) is vulnerable to downloading unverified product code when configured to update from an IBM i. A bad actor could use this vulnerablity to ru",
-        "published": "2026-08-12T21:17:35.380"
+        "base_score": 8.8,
+        "description": "GitPython versions before 3.1.54 contain a remote code execution vulnerability in the check_unsafe_options guard that can be bypassed by smuggling git options inside single-character kwarg values. Att",
+        "published": "2026-08-13T12:17:27.753"
+      },
+      {
+        "cve_id": "CVE-2026-14662",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Integer wraparound in PostgreSQL tsvector and tsquery data type functions allows an unprivileged database user to cause the server to undersize an allocation and write out-of-bounds, via crafted large",
+        "published": "2026-08-13T13:17:43.553"
+      },
+      {
+        "cve_id": "CVE-2026-14664",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Heap buffer overflow in PostgreSQL regexp allows the query author to execute arbitrary code as the operating system user running the database, via text that would not pass encoding validation.  This s",
+        "published": "2026-08-13T13:17:43.847"
+      },
+      {
+        "cve_id": "CVE-2026-14669",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Heap buffer overflow in PostgreSQL to_char(timestamptz) allows the party choosing the timezone to execute arbitrary code as the operating system user running the database, via a long POSIX timezone ab",
+        "published": "2026-08-13T13:17:44.280"
+      },
+      {
+        "cve_id": "CVE-2026-14670",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Heap buffer overflow in PostgreSQL plperl return of a tied hash allows the function owner to execute arbitrary code as the operating system user running the database, via a crafted function body.  Ver",
+        "published": "2026-08-13T13:17:44.407"
+      },
+      {
+        "cve_id": "CVE-2026-14671",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Type confusion in PostgreSQL module \"refint\" allows an object creator to execute arbitrary code as the operating system user running the database.  The fix for this emerged as a non-security bug repor",
+        "published": "2026-08-13T13:17:44.530"
+      },
+      {
+        "cve_id": "CVE-2026-14676",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Heap buffer overflow in PostgreSQL pg_stat_statements allows the query author to execute arbitrary code as the operating system user running the database, via crafted queries containing array constant",
+        "published": "2026-08-13T13:17:44.907"
+      },
+      {
+        "cve_id": "CVE-2026-14677",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Integer wraparound in PostgreSQL 32-bit builds of pltcl and plperl allows an object creator to cause the server to undersize an allocation and write out-of-bounds via crafted function bodies.  This ma",
+        "published": "2026-08-13T13:17:45.027"
+      },
+      {
+        "cve_id": "CVE-2026-59499",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "CWE-200: Exposure of Sensitive\nInformation to an Unauthorized Actor",
+        "published": "2026-08-13T10:17:14.877"
       }
     ]
   },
