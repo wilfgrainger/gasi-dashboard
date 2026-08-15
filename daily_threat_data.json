@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T08:15:21.597475+00:00",
+  "generated_at": "2026-08-15T12:18:15.957514+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
+        "value": 9,
         "score": 2.5,
         "max": 3
       },
@@ -218,16 +218,23 @@
     ]
   },
   "nvd": {
-    "total": 919,
-    "critical_count": 7,
-    "high_count": 35,
+    "total": 888,
+    "critical_count": 9,
+    "high_count": 34,
     "cves": [
       {
-        "cve_id": "CVE-2026-72811",
+        "cve_id": "CVE-2026-19188",
         "severity": "CRITICAL",
         "base_score": 10.0,
-        "description": "SiYuan versions <= v3.7.2 contain a SQL injection vulnerability in the backlink/mention search query (kernel/model/backlink.go), which concatenates stored block metadata (title, name, alias, anchor te",
-        "published": "2026-08-14T12:16:43.903"
+        "description": "A critical OS command injection vulnerability has been identified in the\n Haiwell IoT Cloud HMI Gateway product. The vulnerability exists in the \nNet Check feature accessible via the /setting endpoint",
+        "published": "2026-08-14T19:17:17.480"
+      },
+      {
+        "cve_id": "CVE-2026-73678",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "MindsDB Minds Platform version 26.1.0 and earlier contains an unauthenticated remote code execution vulnerability that allows unauthenticated attackers to execute arbitrary OS commands by submitting c",
+        "published": "2026-08-14T19:18:01.457"
       },
       {
         "cve_id": "CVE-2026-19626",
@@ -237,116 +244,46 @@
         "published": "2026-08-14T17:17:30.940"
       },
       {
-        "cve_id": "CVE-2026-72822",
+        "cve_id": "CVE-2026-19681",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "An authenticated command injection vulnerability exists in Security Center related to file upload processing. An attacker could exploit this issue by uploading a specially crafted file, potentially re",
+        "published": "2026-08-14T18:17:23.480"
+      },
+      {
+        "cve_id": "CVE-2026-19682",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A command injection vulnerability exists in Security Center where a remote, unauthenticated attacker could exploit this issue to execute arbitrary commands on the underlying operating system with the ",
+        "published": "2026-08-14T18:17:23.623"
+      },
+      {
+        "cve_id": "CVE-2026-48528",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "The getgrav/grav-plugin-api Composer package before 1.0.13 (affected <= 1.0.12) fails to enforce API key scope caps on the disable2fa endpoint. Unlike the sibling generate2fa endpoint, disable2fa auth",
-        "published": "2026-08-14T12:16:45.267"
+        "description": "Metacat is data repository software that helps researchers preserve, share, and discover data. Metacat versions 2.0.0 through 3.4.0 contain an unauthenticated SQL injection vulnerability in the `/cn/v",
+        "published": "2026-08-14T18:17:27.993"
       },
       {
-        "cve_id": "CVE-2026-72824",
+        "cve_id": "CVE-2026-73849",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "The Grav API plugin (getgrav/grav-plugin-api) before 1.0.13 contains an API key scope-cap bypass in PagesController::guardTwigContent(). The Twig-toggle check uses a bare isSuperAdmin() gate that does",
-        "published": "2026-08-14T12:16:45.520"
+        "description": "Emlog is an open source website building system. In 2.6.26 and earlier, install.php accepts action=reinstall without authentication and deliberately skips the already-installed check because the guard",
+        "published": "2026-08-14T18:19:09.987"
       },
       {
-        "cve_id": "CVE-2026-72826",
+        "cve_id": "CVE-2026-50027",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "The getgrav/grav-plugin-api plugin before 1.0.13 fails to validate that the scopes of a newly created API key are a subset of the caller's scopes in createApiKey. The self-target path of requireApiKey",
-        "published": "2026-08-14T12:16:45.780"
+        "description": "mcp-memory-service is a semantic memory layer for AI applications. Prior to 10.67.1, all HTTP routes under /api/documents/* in mcp-memory-service are served without any authentication dependency, even",
+        "published": "2026-08-14T19:17:18.843"
       },
       {
-        "cve_id": "CVE-2026-72829",
+        "cve_id": "CVE-2026-49457",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Grav API plugin (getgrav/grav-plugin-api) before 1.0.13 contains an API-key scope-cap bypass in UsersController's create() and update() methods. These methods enforce the scope cap only for api.us",
-        "published": "2026-08-14T12:16:46.157"
-      },
-      {
-        "cve_id": "CVE-2026-72830",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Grav API plugin versions before 1.0.13 fail to enforce API key scope caps in ConfigController super-scope gates, allowing scoped keys to write scheduler configuration. Attackers with a scoped api.conf",
-        "published": "2026-08-14T12:16:46.277"
-      },
-      {
-        "cve_id": "CVE-2026-19812",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A weakness has been identified in TOTOLINK A800R 4.1.2cu.5137_B20200730. This affects the function UploadCustomModule of the file /cgi-bin/cstecgi.cgi of the component product.so. This manipulation of",
-        "published": "2026-08-14T08:17:38.263"
-      },
-      {
-        "cve_id": "CVE-2026-19813",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A security vulnerability has been detected in TOTOLINK A800R 4.1.2cu.5137_B20200730. This impacts the function setMacFilterRules of the file /cgi-bin/cstecgi.cgi of the component firewall.so. Such man",
-        "published": "2026-08-14T08:17:38.427"
-      },
-      {
-        "cve_id": "CVE-2026-19814",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was detected in TOTOLINK A800R 4.1.2cu.5137_B20200730. Affected is the function setMacQos of the file /cgi-bin/cstecgi.cgi of the component firewall.so. Performing a manipulation of th",
-        "published": "2026-08-14T09:16:47.883"
-      },
-      {
-        "cve_id": "CVE-2026-19815",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw has been found in TOTOLINK A800R 4.1.2cu.5137_B20200730. Affected by this vulnerability is the function setParentalRules of the file /cgi-bin/cstecgi.cgi of the component firewall.so. Executing",
-        "published": "2026-08-14T09:16:48.880"
-      },
-      {
-        "cve_id": "CVE-2026-19821",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was determined in Tenda AC12 15.03.06.23_multi_TD01. This vulnerability affects the function formSetRebootTimer of the file /goform/SetSysAutoRebbotCfg of the component httpd web manag",
-        "published": "2026-08-14T11:16:57.573"
-      },
-      {
-        "cve_id": "CVE-2026-19822",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was identified in Tenda W20E 15.11.0.6(1068_1546_841)_CN_TDC. This issue affects the function lstAdd of the file /goform/editQos of the component QoS Edit. Such manipulation of the arg",
-        "published": "2026-08-14T12:16:43.577"
-      },
-      {
-        "cve_id": "CVE-2026-72819",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Grav CMS before 2.0.13 contains a remote code execution vulnerability in the Flex Objects plugin settings validation that allows authenticated users to execute arbitrary code by uploading a ZIP file c",
-        "published": "2026-08-14T12:16:44.873"
-      },
-      {
-        "cve_id": "CVE-2026-72827",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Grav CMS before 2.0.13 contains a server-side template injection vulnerability in email-action parameters that allows low-privileged page editors to execute arbitrary operating-system commands. Attack",
-        "published": "2026-08-14T12:16:45.907"
-      },
-      {
-        "cve_id": "CVE-2026-72831",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Flex Objects plugin (through 1.4.6, tested with Grav 2.0.11) contains an incorrect authorization vulnerability in its Flex Objects API. FlexApiController::update() checks only the general Flex dir",
-        "published": "2026-08-14T12:16:46.400"
-      },
-      {
-        "cve_id": "CVE-2026-72833",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Grav API plugin (getgrav/grav-plugin-api) versions >= 1.0.6 and <= 1.0.11 contain a privilege escalation vulnerability. A scoped API key minted on a super-admin account bypasses its declared scope",
-        "published": "2026-08-14T12:16:46.670"
-      },
-      {
-        "cve_id": "CVE-2026-72837",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "File Browser versions before 2.63.20 fail to honor the createUserDir isolation in proxy and hook authentication auto-provisioning paths. Attackers with valid upstream-authenticated credentials can rea",
-        "published": "2026-08-14T12:16:47.187"
+        "base_score": 9.1,
+        "description": "erlang_quic is a pure Erlang QUIC implementation. Prior to version 1.4.4, the QUIC client did not authenticate the server during the TLS 1.3 handshake. The CertificateVerify signature was not checked,",
+        "published": "2026-08-14T19:17:18.707"
       },
       {
         "cve_id": "CVE-2026-19823",
@@ -361,6 +298,69 @@
         "base_score": 8.8,
         "description": "A weakness has been identified in Tenda W20E 15.11.0.6(1068_1546_841)_CN_TDC. The affected element is the function ipMacBindListStore of the file /goform/addIpMacBind. Executing a manipulation of the ",
         "published": "2026-08-14T13:17:37.960"
+      },
+      {
+        "cve_id": "CVE-2026-73673",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Netis NC63 router firmware V3.0.0.3327 contains an unauthenticated firmware update vulnerability that allows unauthenticated attackers to submit unsigned firmware images by exploiting a missing authen",
+        "published": "2026-08-14T13:19:09.573"
+      },
+      {
+        "cve_id": "CVE-2026-19844",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was found in TOTOLINK A800R 4.1.2cu.5137_B20200730. The impacted element is the function setRadvdCfg of the file /cgi-bin/cstecgi.cgi of the component ipv6.so. Performing a manipulatio",
+        "published": "2026-08-14T17:17:35.560"
+      },
+      {
+        "cve_id": "CVE-2026-19845",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was determined in TOTOLINK A800R 4.1.2cu.5137_B20200730. This affects the function setStaticDhcpConfig of the file /cgi-bin/cstecgi.cgi of the component lan.so. Executing a manipulatio",
+        "published": "2026-08-14T17:17:35.753"
+      },
+      {
+        "cve_id": "CVE-2026-12366",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Zephyr's dynamic kernel-object disposal path unref_check() in kernel/userspace/userspace.c frees an object's storage (k_free(dyn->data)) once its reference count reaches zero, after running a per-obje",
+        "published": "2026-08-14T18:17:22.043"
+      },
+      {
+        "cve_id": "CVE-2026-19635",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A local privilege escalation vulnerability exists in Security Center. An attacker with write access to a specific configuration file could achieve arbitrary code execution with elevated privileges, wi",
+        "published": "2026-08-14T18:17:22.817"
+      },
+      {
+        "cve_id": "CVE-2026-19679",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "An input validation vulnerability exists in Security Center's file upload handling, where insufficient sanitization of uploaded filenames could contribute to a downstream command injection issue.",
+        "published": "2026-08-14T18:17:23.230"
+      },
+      {
+        "cve_id": "CVE-2026-19846",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was identified in TOTOLINK A800R 4.1.2cu.5137_B20200730. This impacts the function setUrlFilterRules of the file /cgi-bin/cstecgi.cgi of the component firewall.so. The manipulation of ",
+        "published": "2026-08-14T18:17:23.883"
+      },
+      {
+        "cve_id": "CVE-2026-19847",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A security flaw has been discovered in TOTOLINK A800R 4.1.2cu.5137_B20200730. Affected is the function setWiFiWpsConfig of the file /cgi-bin/cstecgi.cgi of the component wps.so. The manipulation of th",
+        "published": "2026-08-14T18:17:24.037"
+      },
+      {
+        "cve_id": "CVE-2026-16879",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "IBM Db2 Mirror for i 7.4, 7.5, and 7.6 could allow a remote authenticated attacker to bypass security restrictions due to improper authorization using user-supplied input.",
+        "published": "2026-08-14T20:16:49.700"
       }
     ]
   },
