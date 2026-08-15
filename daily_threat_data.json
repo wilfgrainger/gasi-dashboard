@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-15T00:40:21.271066+00:00",
+  "generated_at": "2026-08-15T04:20:23.353881+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
+        "value": 8,
         "score": 2.5,
         "max": 3
       },
@@ -218,9 +218,9 @@
     ]
   },
   "nvd": {
-    "total": 209,
-    "critical_count": 7,
-    "high_count": 40,
+    "total": 212,
+    "critical_count": 8,
+    "high_count": 38,
     "cves": [
       {
         "cve_id": "CVE-2026-72811",
@@ -228,6 +228,13 @@
         "base_score": 10.0,
         "description": "SiYuan versions <= v3.7.2 contain a SQL injection vulnerability in the backlink/mention search query (kernel/model/backlink.go), which concatenates stored block metadata (title, name, alias, anchor te",
         "published": "2026-08-14T12:16:43.903"
+      },
+      {
+        "cve_id": "CVE-2026-19626",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A remote code execution vulnerability exists in Tenable Security Center's report generation functionality. An authenticated, non-administrative user could exploit this issue by supplying specially cra",
+        "published": "2026-08-14T17:17:30.940"
       },
       {
         "cve_id": "CVE-2026-12949",
@@ -270,27 +277,6 @@
         "base_score": 9.8,
         "description": "Grav API plugin versions before 1.0.13 fail to enforce API key scope caps in ConfigController super-scope gates, allowing scoped keys to write scheduler configuration. Attackers with a scoped api.conf",
         "published": "2026-08-14T12:16:46.277"
-      },
-      {
-        "cve_id": "CVE-2026-19788",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was found in Tenda AC1206 15.03.06.23_multi_TD01. This affects the function set_device_name of the file /goform/SetOnlineDevName of the component httpd web management interface. The ma",
-        "published": "2026-08-14T04:16:36.177"
-      },
-      {
-        "cve_id": "CVE-2026-19789",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was determined in Tenda AC1206 15.03.06.23_multi_TD01. This vulnerability affects the function set_wl_guest_iplist of the file /goform/WifiGuestSet of the component httpd web managemen",
-        "published": "2026-08-14T04:16:40.620"
-      },
-      {
-        "cve_id": "CVE-2026-19790",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was identified in Tenda G0 up to 20260625. This issue affects the function formSetPortMirror of the file /goform/module of the component httpd Web Management Interface. Such manipulati",
-        "published": "2026-08-14T04:16:40.780"
       },
       {
         "cve_id": "CVE-2026-19791",
@@ -361,6 +347,20 @@
         "base_score": 8.8,
         "description": "Grav CMS before 2.0.13 contains a remote code execution vulnerability in the Flex Objects plugin settings validation that allows authenticated users to execute arbitrary code by uploading a ZIP file c",
         "published": "2026-08-14T12:16:44.873"
+      },
+      {
+        "cve_id": "CVE-2026-72827",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Grav CMS before 2.0.13 contains a server-side template injection vulnerability in email-action parameters that allows low-privileged page editors to execute arbitrary operating-system commands. Attack",
+        "published": "2026-08-14T12:16:45.907"
+      },
+      {
+        "cve_id": "CVE-2026-72831",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Flex Objects plugin (through 1.4.6, tested with Grav 2.0.11) contains an incorrect authorization vulnerability in its Flex Objects API. FlexApiController::update() checks only the general Flex dir",
+        "published": "2026-08-14T12:16:46.400"
       }
     ]
   },
