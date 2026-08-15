@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-08-14T20:21:25.840244+00:00",
+  "generated_at": "2026-08-15T00:40:21.271066+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 21,
+        "value": 18,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 11,
-        "score": 3.0,
+        "value": 7,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1665,
-    "recent_30d_count": 21,
+    "recent_30d_count": 18,
     "recent": [
       {
         "cve_id": "CVE-2026-20349",
@@ -214,173 +214,153 @@
         "due_date": "2026-07-24",
         "description": "DD-WRT contains a stack-based buffer overflow vulnerability that could allow an unauthenticated attacker to overflow an internal buffer used by UPnP and trigger a code execution vulnerability.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-58644",
-        "vendor": "Microsoft",
-        "product": "SharePoint",
-        "name": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability",
-        "date_added": "2026-07-16",
-        "due_date": "2026-07-19",
-        "description": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability that allows an unauthorized attacker to execute code over a network.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-25089",
-        "vendor": "Fortinet",
-        "product": "FortiSandbox",
-        "name": "Fortinet FortiSandbox OS Command Injection Vulnerability",
-        "date_added": "2026-07-16",
-        "due_date": "2026-07-19",
-        "description": "Fortinet FortiSandbox, FortiSandbox Cloud, and FortiSandbox PaaS contain an OS command injection vulnerability that allows an unauthenticated attacker to execute unauthorized commands via specifically",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 284,
-    "critical_count": 11,
-    "high_count": 38,
+    "total": 209,
+    "critical_count": 7,
+    "high_count": 40,
     "cves": [
       {
-        "cve_id": "CVE-2026-72851",
+        "cve_id": "CVE-2026-72811",
         "severity": "CRITICAL",
         "base_score": 10.0,
-        "description": "Budibase before 3.40.0 contains an unauthenticated SQL injection vulnerability in webhook-triggered automations with EXECUTE_QUERY steps. Attackers can POST attacker-controlled JSON to the webhook tri",
-        "published": "2026-08-13T22:17:24.450"
+        "description": "SiYuan versions <= v3.7.2 contain a SQL injection vulnerability in the backlink/mention search query (kernel/model/backlink.go), which concatenates stored block metadata (title, name, alias, anchor te",
+        "published": "2026-08-14T12:16:43.903"
       },
       {
-        "cve_id": "CVE-2026-72841",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "luci-app-openvpn fails to properly validate the instance_name2 parameter during file upload, allowing authenticated users to perform path traversal and write arbitrary files outside the intended direc",
-        "published": "2026-08-13T22:17:23.813"
-      },
-      {
-        "cve_id": "CVE-2026-72842",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "luci-app-lxc contains an ACL inconsistency vulnerability that allows low-privileged authenticated LuCI users to access backend container management routes without proper authorization checks. Attacker",
-        "published": "2026-08-13T22:17:23.977"
-      },
-      {
-        "cve_id": "CVE-2026-17482",
+        "cve_id": "CVE-2026-12949",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "IBM Documentation Offline 1.0.0 through 1.4.1 could allow a remote attacker to execute arbitrary code due to improper control of file paths.",
-        "published": "2026-08-13T21:17:43.543"
+        "description": "The Wishlist Member plugin for WordPress is vulnerable to Account Takeover via Insufficient Verification of Data Authenticity in versions up to and including 3.34.1. This is due to the wpm_register() ",
+        "published": "2026-08-14T06:16:53.237"
       },
       {
-        "cve_id": "CVE-2026-72776",
+        "cve_id": "CVE-2026-72822",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "AgenticSeek (commit fc242c7) contains an unauthenticated remote code execution vulnerability that allows any network-adjacent attacker to execute arbitrary commands by submitting crafted queries to th",
-        "published": "2026-08-13T22:17:23.340"
+        "description": "The getgrav/grav-plugin-api Composer package before 1.0.13 (affected <= 1.0.12) fails to enforce API key scope caps on the disable2fa endpoint. Unlike the sibling generate2fa endpoint, disable2fa auth",
+        "published": "2026-08-14T12:16:45.267"
       },
       {
-        "cve_id": "CVE-2026-72839",
+        "cve_id": "CVE-2026-72824",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "filebrowser through 2.63.16 fails to properly restrict scope and permissions when self-signup is enabled with default CreateUserDir setting. Unauthenticated attackers can register accounts that inheri",
-        "published": "2026-08-13T22:17:23.490"
+        "description": "The Grav API plugin (getgrav/grav-plugin-api) before 1.0.13 contains an API key scope-cap bypass in PagesController::guardTwigContent(). The Twig-toggle check uses a bare isSuperAdmin() gate that does",
+        "published": "2026-08-14T12:16:45.520"
       },
       {
-        "cve_id": "CVE-2026-8715",
+        "cve_id": "CVE-2026-72826",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Vault Secrets Operator 1.3.0 up to 1.4.1 is vulnerable to an arbitrary file read and credential exfiltration issue in the AppRole authentication configuration that may allow a tenant with limited Kube",
-        "published": "2026-08-13T21:18:32.333"
+        "base_score": 9.8,
+        "description": "The getgrav/grav-plugin-api plugin before 1.0.13 fails to validate that the scopes of a newly created API key are a subset of the caller's scopes in createApiKey. The self-target path of requireApiKey",
+        "published": "2026-08-14T12:16:45.780"
       },
       {
-        "cve_id": "CVE-2026-73843",
+        "cve_id": "CVE-2026-72829",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "OpenChoreo is a complete, open-source developer platform for Kubernetes. Prior to 1.0.2 and 1.1.2, internal/cluster-gateway/server.go served caller-facing management APIs on the externally reachable a",
-        "published": "2026-08-13T22:17:29.193"
+        "base_score": 9.8,
+        "description": "The Grav API plugin (getgrav/grav-plugin-api) before 1.0.13 contains an API-key scope-cap bypass in UsersController's create() and update() methods. These methods enforce the scope cap only for api.us",
+        "published": "2026-08-14T12:16:46.157"
       },
       {
-        "cve_id": "CVE-2026-19297",
+        "cve_id": "CVE-2026-72830",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "IBM Langflow OSS 1.0.0 through 1.9.6 could allow a remote attacker to obtain unauthorized access to user accounts due to improper restriction of excessive authentication attempts.",
-        "published": "2026-08-13T21:17:45.870"
+        "base_score": 9.8,
+        "description": "Grav API plugin versions before 1.0.13 fail to enforce API key scope caps in ConfigController super-scope gates, allowing scoped keys to write scheduler configuration. Attackers with a scoped api.conf",
+        "published": "2026-08-14T12:16:46.277"
       },
       {
-        "cve_id": "CVE-2026-72850",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Budibase before 3.40.0 fails to properly sanitize S3 object keys, allowing authenticated builders to upload files with traversal sequences that are preserved during export. Attackers can craft filenam",
-        "published": "2026-08-13T22:17:24.307"
-      },
-      {
-        "cve_id": "CVE-2026-73842",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "OpenChoreo is a complete, open-source developer platform for Kubernetes. Prior to 1.0.3, 1.1.3, and 1.2.0-rc.2, internal/cluster-gateway/server.go exposed /api/proxy/, /api/exec/, and /api/wirelogs/ o",
-        "published": "2026-08-13T22:17:29.037"
-      },
-      {
-        "cve_id": "CVE-2026-18193",
-        "severity": "HIGH",
-        "base_score": 8.9,
-        "description": "IBM i 7.6, 7.5, 7.4, and 7.3 could allow a remote attacker to bypass security restrictions due to improper validation of user-controlled addresses.",
-        "published": "2026-08-13T21:17:44.700"
-      },
-      {
-        "cve_id": "CVE-2026-17481",
+        "cve_id": "CVE-2026-19788",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "IBM Documentation Offline 1.0.0 through 1.4.1 could allow a remote attacker to execute arbitrary code due to improper output neutralization for logs.",
-        "published": "2026-08-13T21:17:43.390"
+        "description": "A vulnerability was found in Tenda AC1206 15.03.06.23_multi_TD01. This affects the function set_device_name of the file /goform/SetOnlineDevName of the component httpd web management interface. The ma",
+        "published": "2026-08-14T04:16:36.177"
       },
       {
-        "cve_id": "CVE-2026-18101",
+        "cve_id": "CVE-2026-19789",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "IBM i 7.6, 7.5, 7.4, and 7.3 could allow a local attacker to gain elevated privileges due to improper management of thread authority swaps.",
-        "published": "2026-08-13T21:17:44.550"
+        "description": "A vulnerability was determined in Tenda AC1206 15.03.06.23_multi_TD01. This vulnerability affects the function set_wl_guest_iplist of the file /goform/WifiGuestSet of the component httpd web managemen",
+        "published": "2026-08-14T04:16:40.620"
       },
       {
-        "cve_id": "CVE-2026-72840",
+        "cve_id": "CVE-2026-19790",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "OpenWrt LuCI contains an overly permissive ACL definition in luci-mod-system-mounts that grants write access to /etc/crontabs/root to users intended only for mount configuration. Authenticated users w",
-        "published": "2026-08-13T22:17:23.640"
+        "description": "A vulnerability was identified in Tenda G0 up to 20260625. This issue affects the function formSetPortMirror of the file /goform/module of the component httpd Web Management Interface. Such manipulati",
+        "published": "2026-08-14T04:16:40.780"
       },
       {
-        "cve_id": "CVE-2026-73305",
+        "cve_id": "CVE-2026-19791",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Budibase is an open-source low-code platform. Prior to 3.39.24, POST /api/public/v1/roles/assign called validateGlobalRoleUpdate without checking appBuilder.appId or role.appId in packages/server/src/",
-        "published": "2026-08-13T22:17:25.657"
+        "description": "A weakness has been identified in Tenda G0 up to 20260625. The affected element is the function addStaticRoute of the file /goform/module of the component httpd web management interface. Executing a m",
+        "published": "2026-08-14T05:16:58.857"
       },
       {
-        "cve_id": "CVE-2026-73667",
+        "cve_id": "CVE-2026-19792",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "OpenChoreo is a complete, open-source developer platform for Kubernetes. Prior to 1.0.4, 1.1.4, and 1.2.0-rc.2, OpenChoreo Workflow Plane templates under samples/getting-started/workflow-templates/ in",
-        "published": "2026-08-13T22:17:28.580"
+        "description": "A security flaw has been discovered in Tenda G0 up to 20260625. Impacted is the function setPortMapping of the file /goform/module of the component httpd web management interface. Performing a manipul",
+        "published": "2026-08-14T05:16:59.030"
       },
       {
-        "cve_id": "CVE-2026-73841",
+        "cve_id": "CVE-2026-19811",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "OpenChoreo is a complete, open-source developer platform for Kubernetes. From 1.2.0-rc.1 until 1.2.0, internal/openchoreo-api/api/handlers/exec.go and internal/openchoreo-api/api/handlers/wirelogs.go ",
-        "published": "2026-08-13T22:17:28.900"
+        "description": "A security flaw has been discovered in TOTOLINK A800R 4.1.2cu.5137_B20200730. The impacted element is the function setIpQosRules of the file /cgi-bin/cstecgi.cgi of the component firewall.so. The mani",
+        "published": "2026-08-14T07:16:52.627"
       },
       {
-        "cve_id": "CVE-2026-17502",
+        "cve_id": "CVE-2026-19812",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "IBM i 7.6, 7.5, 7.4, and 7.3 could allow a remote attacker to cause a denial of service due to an out-of-bounds write.",
-        "published": "2026-08-13T21:17:43.677"
+        "base_score": 8.8,
+        "description": "A weakness has been identified in TOTOLINK A800R 4.1.2cu.5137_B20200730. This affects the function UploadCustomModule of the file /cgi-bin/cstecgi.cgi of the component product.so. This manipulation of",
+        "published": "2026-08-14T08:17:38.263"
       },
       {
-        "cve_id": "CVE-2026-72855",
+        "cve_id": "CVE-2026-19813",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Budibase before 3.40.0 contains server-side request forgery vulnerabilities in OpenAPI query import and REST query execution that allow authenticated builder-level users to bypass DNS pinning protecti",
-        "published": "2026-08-13T22:17:24.753"
+        "base_score": 8.8,
+        "description": "A security vulnerability has been detected in TOTOLINK A800R 4.1.2cu.5137_B20200730. This impacts the function setMacFilterRules of the file /cgi-bin/cstecgi.cgi of the component firewall.so. Such man",
+        "published": "2026-08-14T08:17:38.427"
+      },
+      {
+        "cve_id": "CVE-2026-19814",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was detected in TOTOLINK A800R 4.1.2cu.5137_B20200730. Affected is the function setMacQos of the file /cgi-bin/cstecgi.cgi of the component firewall.so. Performing a manipulation of th",
+        "published": "2026-08-14T09:16:47.883"
+      },
+      {
+        "cve_id": "CVE-2026-19815",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A flaw has been found in TOTOLINK A800R 4.1.2cu.5137_B20200730. Affected by this vulnerability is the function setParentalRules of the file /cgi-bin/cstecgi.cgi of the component firewall.so. Executing",
+        "published": "2026-08-14T09:16:48.880"
+      },
+      {
+        "cve_id": "CVE-2026-19821",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was determined in Tenda AC12 15.03.06.23_multi_TD01. This vulnerability affects the function formSetRebootTimer of the file /goform/SetSysAutoRebbotCfg of the component httpd web manag",
+        "published": "2026-08-14T11:16:57.573"
+      },
+      {
+        "cve_id": "CVE-2026-19822",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability was identified in Tenda W20E 15.11.0.6(1068_1546_841)_CN_TDC. This issue affects the function lstAdd of the file /goform/editQos of the component QoS Edit. Such manipulation of the arg",
+        "published": "2026-08-14T12:16:43.577"
+      },
+      {
+        "cve_id": "CVE-2026-72819",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Grav CMS before 2.0.13 contains a remote code execution vulnerability in the Flex Objects plugin settings validation that allows authenticated users to execute arbitrary code by uploading a ZIP file c",
+        "published": "2026-08-14T12:16:44.873"
       }
     ]
   },
