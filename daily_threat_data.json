@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-15T16:12:40.189784+00:00",
+  "generated_at": "2026-08-15T20:11:41.352013+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 13,
-        "score": 3.0,
+        "value": 7,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -218,72 +218,16 @@
     ]
   },
   "nvd": {
-    "total": 1017,
-    "critical_count": 13,
-    "high_count": 32,
+    "total": 955,
+    "critical_count": 7,
+    "high_count": 23,
     "cves": [
-      {
-        "cve_id": "CVE-2026-19188",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "A critical OS command injection vulnerability has been identified in the\n Haiwell IoT Cloud HMI Gateway product. The vulnerability exists in the \nNet Check feature accessible via the /setting endpoint",
-        "published": "2026-08-14T19:17:17.480"
-      },
-      {
-        "cve_id": "CVE-2026-73678",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "MindsDB Minds Platform version 26.1.0 and earlier contains an unauthenticated remote code execution vulnerability that allows unauthenticated attackers to execute arbitrary OS commands by submitting c",
-        "published": "2026-08-14T19:18:01.457"
-      },
-      {
-        "cve_id": "CVE-2026-19626",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A remote code execution vulnerability exists in Tenable Security Center's report generation functionality. An authenticated, non-administrative user could exploit this issue by supplying specially cra",
-        "published": "2026-08-14T17:17:30.940"
-      },
-      {
-        "cve_id": "CVE-2026-19681",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "An authenticated command injection vulnerability exists in Security Center related to file upload processing. An attacker could exploit this issue by uploading a specially crafted file, potentially re",
-        "published": "2026-08-14T18:17:23.480"
-      },
-      {
-        "cve_id": "CVE-2026-19682",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A command injection vulnerability exists in Security Center where a remote, unauthenticated attacker could exploit this issue to execute arbitrary commands on the underlying operating system with the ",
-        "published": "2026-08-14T18:17:23.623"
-      },
       {
         "cve_id": "CVE-2026-17186",
         "severity": "CRITICAL",
         "base_score": 9.9,
         "description": "IBM Db2 Mirror for i 7.4, 7.5, and 7.6 could allow a remote attacker to execute arbitrary CL commands due to improper neutralization of special elements in a command.",
         "published": "2026-08-14T20:16:51.127"
-      },
-      {
-        "cve_id": "CVE-2026-48528",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Metacat is data repository software that helps researchers preserve, share, and discover data. Metacat versions 2.0.0 through 3.4.0 contain an unauthenticated SQL injection vulnerability in the `/cn/v",
-        "published": "2026-08-14T18:17:27.993"
-      },
-      {
-        "cve_id": "CVE-2026-73849",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Emlog is an open source website building system. In 2.6.26 and earlier, install.php accepts action=reinstall without authentication and deliberately skips the already-installed check because the guard",
-        "published": "2026-08-14T18:19:09.987"
-      },
-      {
-        "cve_id": "CVE-2026-50027",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "mcp-memory-service is a semantic memory layer for AI applications. Prior to 10.67.1, all HTTP routes under /api/documents/* in mcp-memory-service are served without any authentication dependency, even",
-        "published": "2026-08-14T19:17:18.843"
       },
       {
         "cve_id": "CVE-2026-17182",
@@ -300,6 +244,20 @@
         "published": "2026-08-14T20:16:51.010"
       },
       {
+        "cve_id": "CVE-2026-15303",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The 6Storage Rentals plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 2.27.0. This is due to the six_storage_create_wp_user() AJAX handler being registered",
+        "published": "2026-08-15T03:16:47.670"
+      },
+      {
+        "cve_id": "CVE-2026-15341",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The User Session Synchronizer plugin for WordPress is vulnerable to Authentication Bypass leading to Account Takeover in all versions up to, and including, 1.4.0. The `synchronize_session()` function,",
+        "published": "2026-08-15T03:16:47.943"
+      },
+      {
         "cve_id": "CVE-2026-17181",
         "severity": "CRITICAL",
         "base_score": 9.3,
@@ -307,60 +265,102 @@
         "published": "2026-08-14T20:16:50.777"
       },
       {
-        "cve_id": "CVE-2026-49457",
+        "cve_id": "CVE-2026-14484",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "erlang_quic is a pure Erlang QUIC implementation. Prior to version 1.4.4, the QUIC client did not authenticate the server during the TLS 1.3 handshake. The CertificateVerify signature was not checked,",
-        "published": "2026-08-14T19:17:18.707"
+        "description": "The RapiSafe \u2013 Secure Multi File Upload for Contact Form 7 plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the handleAjaxRemoveUpload function",
+        "published": "2026-08-15T03:16:47.263"
       },
       {
-        "cve_id": "CVE-2026-19844",
+        "cve_id": "CVE-2026-16879",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A vulnerability was found in TOTOLINK A800R 4.1.2cu.5137_B20200730. The impacted element is the function setRadvdCfg of the file /cgi-bin/cstecgi.cgi of the component ipv6.so. Performing a manipulatio",
-        "published": "2026-08-14T17:17:35.560"
+        "description": "IBM Db2 Mirror for i 7.4, 7.5, and 7.6 could allow a remote authenticated attacker to bypass security restrictions due to improper authorization using user-supplied input.",
+        "published": "2026-08-14T20:16:49.700"
       },
       {
-        "cve_id": "CVE-2026-19845",
+        "cve_id": "CVE-2026-73680",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A vulnerability was determined in TOTOLINK A800R 4.1.2cu.5137_B20200730. This affects the function setStaticDhcpConfig of the file /cgi-bin/cstecgi.cgi of the component lan.so. Executing a manipulatio",
-        "published": "2026-08-14T17:17:35.753"
+        "description": "Cockpit CMS 2.14.0 and prior contains a command injection vulnerability in the FFmpeg integration that allows authenticated users with only the assets/upload permission to execute arbitrary commands b",
+        "published": "2026-08-14T20:16:58.080"
       },
       {
-        "cve_id": "CVE-2026-12366",
+        "cve_id": "CVE-2026-73682",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Zephyr's dynamic kernel-object disposal path unref_check() in kernel/userspace/userspace.c frees an object's storage (k_free(dyn->data)) once its reference count reaches zero, after running a per-obje",
-        "published": "2026-08-14T18:17:22.043"
+        "description": "Semaphore versions prior to 2.18.20 contain an OS command injection (argument injection) vulnerability in the repository git_url handling that allows authenticated users holding the Manager or Owner r",
+        "published": "2026-08-14T21:17:58.033"
       },
       {
-        "cve_id": "CVE-2026-19635",
+        "cve_id": "CVE-2026-15001",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A local privilege escalation vulnerability exists in Security Center. An attacker with write access to a specific configuration file could achieve arbitrary code execution with elevated privileges, wi",
-        "published": "2026-08-14T18:17:22.817"
+        "description": "The bLoyal: Loyalty & Promotions by bLoyal plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 3.1.611.78. This is due to the AJAX actions `save_bloyal_con",
+        "published": "2026-08-15T03:16:47.393"
       },
       {
-        "cve_id": "CVE-2026-19679",
+        "cve_id": "CVE-2026-15312",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "An input validation vulnerability exists in Security Center's file upload handling, where insufficient sanitization of uploaded filenames could contribute to a downstream command injection issue.",
-        "published": "2026-08-14T18:17:23.230"
+        "description": "The Propovoice: All-in-One Client Management System plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 1.7.8. This is due to the `create()` function's RES",
+        "published": "2026-08-15T03:16:47.817"
       },
       {
-        "cve_id": "CVE-2026-19846",
+        "cve_id": "CVE-2026-15965",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A vulnerability was identified in TOTOLINK A800R 4.1.2cu.5137_B20200730. This impacts the function setUrlFilterRules of the file /cgi-bin/cstecgi.cgi of the component firewall.so. The manipulation of ",
-        "published": "2026-08-14T18:17:23.883"
+        "description": "The MaxUpload \u2013 Big File Uploads \u2013 Increase Maximum File Upload Size plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 1.4.0 via the handle_upload funct",
+        "published": "2026-08-15T03:16:48.077"
       },
       {
-        "cve_id": "CVE-2026-19847",
+        "cve_id": "CVE-2026-17179",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A security flaw has been discovered in TOTOLINK A800R 4.1.2cu.5137_B20200730. Affected is the function setWiFiWpsConfig of the file /cgi-bin/cstecgi.cgi of the component wps.so. The manipulation of th",
-        "published": "2026-08-14T18:17:24.037"
+        "base_score": 8.5,
+        "description": "IBM Db2 Mirror for i 7.4, 7.5, and 7.6 could allow a remote authenticated attacker to cause a denial of service due to command injection.",
+        "published": "2026-08-14T20:16:50.663"
+      },
+      {
+        "cve_id": "CVE-2026-16708",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "IBM Db2 Mirror for i 7.4, 7.5, and 7.6 could allow a remote attacker to obtain sensitive information due to external control of system configuration.",
+        "published": "2026-08-14T20:16:49.457"
+      },
+      {
+        "cve_id": "CVE-2026-17081",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "IBM Db2 Mirror for i 7.4, 7.5, and 7.6 could allow a remote attacker to write arbitrary files due to improper limitation of a pathname to a restricted directory.",
+        "published": "2026-08-14T20:16:50.180"
+      },
+      {
+        "cve_id": "CVE-2026-73683",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Laravel Socialite's Facebook provider contains an authentication bypass vulnerability that allows unauthenticated attackers to replay captured OIDC id_tokens by exploiting the missing nonce claim vali",
+        "published": "2026-08-14T22:17:11.550"
+      },
+      {
+        "cve_id": "CVE-2026-50523",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Improper neutralization of special elements used in a command ('command injection') in Microsoft PowerShell allows an authorized attacker to execute code locally.",
+        "published": "2026-08-14T21:17:18.920"
+      },
+      {
+        "cve_id": "CVE-2026-69414",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Microsoft is aware of an elevation of privilege in the Microsoft Malware Protection Engine in Microsoft Defender publicly referred to as &quot;ShieldBreak &quot;.\nWe are working to provide a high qual",
+        "published": "2026-08-14T22:17:06.810"
+      },
+      {
+        "cve_id": "CVE-2026-16915",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "IBM Db2 Mirror for i 7.4, 7.5, and 7.6 could allow a remote authenticated attacker to obtain sensitive information due to improper input validation.",
+        "published": "2026-08-14T20:16:49.933"
       }
     ]
   },
