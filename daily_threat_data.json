@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-16T00:42:23.672005+00:00",
+  "generated_at": "2026-08-16T04:25:47.893458+00:00",
   "threat_score": {
-    "score": 6.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.0,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
-        "score": 2.0,
+        "value": 0,
+        "score": 1.0,
         "max": 3
       },
       {
@@ -218,149 +218,149 @@
     ]
   },
   "nvd": {
-    "total": 929,
-    "critical_count": 3,
-    "high_count": 7,
+    "total": 918,
+    "critical_count": 0,
+    "high_count": 0,
     "cves": [
       {
-        "cve_id": "CVE-2026-15303",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The 6Storage Rentals plugin for WordPress is vulnerable to authentication bypass in versions up to, and including, 2.27.0. This is due to the six_storage_create_wp_user() AJAX handler being registered",
-        "published": "2026-08-15T03:16:47.670"
+        "cve_id": "CVE-2026-14229",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "The ECS  WordPress plugin before 4.3.8 does not check the post status or any capability when rendering an Elementor document requested through one of its AJAX actions, allowing unauthenticated users t",
+        "published": "2026-08-15T06:16:49.917"
       },
       {
-        "cve_id": "CVE-2026-15341",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The User Session Synchronizer plugin for WordPress is vulnerable to Authentication Bypass leading to Account Takeover in all versions up to, and including, 1.4.0. The `synchronize_session()` function,",
-        "published": "2026-08-15T03:16:47.943"
+        "cve_id": "CVE-2026-14230",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "The ECS  WordPress plugin before 4.3.8 does not perform capability or object-ownership checks on its Dynamic Repeater AJAX handlers (gated only by a capability-agnostic nonce that any edit_posts user ",
+        "published": "2026-08-15T06:16:55.960"
       },
       {
-        "cve_id": "CVE-2026-14484",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The RapiSafe \u2013 Secure Multi File Upload for Contact Form 7 plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the handleAjaxRemoveUpload function",
-        "published": "2026-08-15T03:16:47.263"
+        "cve_id": "CVE-2026-16007",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "AppFlowy's qcuiknote feature is affected by a SQL injection vulnerability. Authenticated users with access to the feature can inject arbitrary SQL to exfiltrate data in the underlying SQL database.",
+        "published": "2026-08-15T06:16:56.063"
       },
       {
-        "cve_id": "CVE-2026-15001",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The bLoyal: Loyalty & Promotions by bLoyal plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 3.1.611.78. This is due to the AJAX actions `save_bloyal_con",
-        "published": "2026-08-15T03:16:47.393"
+        "cve_id": "CVE-2026-16541",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "The Simply Schedule Appointments WordPress plugin before 1.6.12.17 does not restrict the user records returned by some of its REST endpoints to those the requester is entitled to see, allowing users w",
+        "published": "2026-08-15T06:17:08.280"
       },
       {
-        "cve_id": "CVE-2026-15312",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Propovoice: All-in-One Client Management System plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 1.7.8. This is due to the `create()` function's RES",
-        "published": "2026-08-15T03:16:47.817"
+        "cve_id": "CVE-2026-16611",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "The Product Feed PRO for WooCommerce by AdTribes  WordPress plugin before 13.5.7 does not perform an authorization check on one of its REST read routes, allowing unauthenticated users to disclose a st",
+        "published": "2026-08-15T06:17:08.380"
       },
       {
-        "cve_id": "CVE-2026-15965",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The MaxUpload \u2013 Big File Uploads \u2013 Increase Maximum File Upload Size plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 1.4.0 via the handle_upload funct",
-        "published": "2026-08-15T03:16:48.077"
+        "cve_id": "CVE-2026-18216",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "The Backup Migration WordPress plugin before 2.1.7 does not properly restrict a post-restore automatic login mechanism, allowing a user who administers one site of a multisite network to obtain a long",
+        "published": "2026-08-15T06:17:08.487"
       },
       {
-        "cve_id": "CVE-2026-15162",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Object Sync for Salesforce plugin is vulnerable to unauthenticated SQL Injection via the wordpress_object_type parameter of its /wp-json/object-sync-for-salesforce/push/ REST route. The route's pe",
-        "published": "2026-08-15T03:16:47.523"
+        "cve_id": "CVE-2026-18807",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "The ECS  WordPress plugin before 4.3.8 does not have capability or ownership checks on its dynamic repeater actions, relying only on a nonce available to any user who can open the page builder, allowi",
+        "published": "2026-08-15T06:17:17.050"
       },
       {
-        "cve_id": "CVE-2026-14433",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The Online Booking & Scheduling Calendar for WordPress by vcita plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'business_id' parameter in all versions up to, and including, ",
-        "published": "2026-08-15T03:16:47.130"
+        "cve_id": "CVE-2026-68455",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nliveupdate: validate session type before performing operation\n\nThe sessions ioctls are not applicable to all session types. PRESERV",
+        "published": "2026-08-15T06:17:17.160"
       },
       {
-        "cve_id": "CVE-2026-13360",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The Cookie Banner for GDPR / CCPA \u2013 WPLP Cookie Consent plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'regionArray' parameter in all versions up to, and including, 4.3.5 du",
-        "published": "2026-08-15T04:18:01.957"
+        "cve_id": "CVE-2026-68456",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nusb: atm: ueagle-atm: wait for pre-firmware load in .disconnect()\n\nueagle-atm uses the asynchronous request_firmware_nowait() in .p",
+        "published": "2026-08-15T06:17:32.713"
       },
       {
-        "cve_id": "CVE-2026-16145",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The Invisible Anti-Spam & CAPTCHA \u2014 reCAPTCHA Alternative for All Forms plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'action' parameter in all versions up to, and includin",
-        "published": "2026-08-15T04:18:10.233"
+        "cve_id": "CVE-2026-68457",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: use opener credentials for FSCTL mutations\n\nSET_SPARSE, SET_ZERO_DATA and SET_COMPRESSION operate on an open SMB\nhandle but ",
+        "published": "2026-08-15T06:17:48.460"
       },
       {
-        "cve_id": "CVE-2026-16080",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "The Image Uploader for Welcart plugin for WordPress is vulnerable to generic SQL Injection via the 'post_title' parameter in all versions up to, and including, 1.4.6 due to insufficient escaping on th",
-        "published": "2026-08-15T03:16:48.207"
+        "cve_id": "CVE-2026-68458",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nbinder: cache secctx size before release zeroes it\n\nbinder_transaction() bounds the scatter-gather buffer area with\nsg_buf_end_offs",
+        "published": "2026-08-15T06:18:15.350"
       },
       {
-        "cve_id": "CVE-2026-15453",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "The KiviCare \u2013 Clinic & Patient Management System (EHR) plugin for WordPress is vulnerable to generic SQL Injection via the 'searchTerm' parameter in all versions up to, and including, 4.5.1 due to in",
-        "published": "2026-08-15T04:18:07.300"
+        "cve_id": "CVE-2026-68459",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nf2fs: fix potential deadlock in gc_merge path of f2fs_balance_fs()\n\nWhen we mount device w/ gc_merge mount option, we may suffer be",
+        "published": "2026-08-15T06:18:15.460"
       },
       {
-        "cve_id": "CVE-2026-16586",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "The Contest Gallery \u2013 Upload & Vote Photos, Media, Sell with PayPal & Stripe plugin for WordPress is vulnerable to Second-Order SQL Injection via MultipleFiles Second-Order Payload via 'cg_multiple_fi",
-        "published": "2026-08-15T04:18:10.607"
+        "cve_id": "CVE-2026-68460",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nf2fs: fix potential deadlock in f2fs_balance_fs()\n\nWhen the f2fs filesystem space is nearly exhausted, we encounter deadlock\nissues",
+        "published": "2026-08-15T06:18:22.117"
       },
       {
-        "cve_id": "CVE-2026-18387",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "The Groundhogg \u2014 CRM, Newsletters, and Marketing Automation plugin for WordPress is vulnerable to generic SQL Injection via the 'tag_query' parameter in all versions up to, and including, 4.5.14 due t",
-        "published": "2026-08-15T04:18:17.773"
+        "cve_id": "CVE-2026-68461",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndevice property: initialize the remaining fields of fwnode_handle in fwnode_init()\n\nIf a firmware node is allocated on the stack (f",
+        "published": "2026-08-15T06:18:34.113"
       },
       {
-        "cve_id": "CVE-2026-15948",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The Hydra Booking \u2014 Appointment Scheduling & Booking Calendar plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'first_name' parameter in all versions up to, and including, 1.2",
-        "published": "2026-08-15T04:18:08.773"
+        "cve_id": "CVE-2026-68462",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nbpf: Reject negative const offsets for buffer pointers\n\nThe verifier rejects variable offsets for PTR_TO_TP_BUFFER and PTR_TO_BUF\na",
+        "published": "2026-08-15T06:18:39.803"
       },
       {
-        "cve_id": "CVE-2026-17090",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The Beaver Builder Page Builder \u2013 Drag and Drop Website Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Button Module 'button' (Button Code) Setting in all versions up to",
-        "published": "2026-08-15T04:18:15.940"
+        "cve_id": "CVE-2026-68463",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmmc: sdhci-esdhc-imx: use pm_runtime_resume_and_get() in suspend\n\nReplace pm_runtime_get_sync() with pm_runtime_resume_and_get() to",
+        "published": "2026-08-15T06:18:39.910"
       },
       {
-        "cve_id": "CVE-2026-12128",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "The Pinpoint Booking System \u2013 Version 2 plugin for WordPress is vulnerable to Price Manipulation via the `cart_data` parameter in all versions up to, and including, 2.9.9.6.8. This is due to the `dopb",
-        "published": "2026-08-15T03:16:46.970"
+        "cve_id": "CVE-2026-68464",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmmc: sdhci-esdhc-imx: disable irq during suspend to fix unhandled interrupt\n\nWhen using WIFI out-of-band wakeup, an \"irq xxx: nobod",
+        "published": "2026-08-15T06:19:25.430"
       },
       {
-        "cve_id": "CVE-2026-8840",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "The Booking calendar, Appointment Booking System plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 3.2.36. This is due to the plugin not properly verifyi",
-        "published": "2026-08-15T03:16:48.357"
+        "cve_id": "CVE-2026-68465",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmmc: sdhci-esdhc-imx: fix esdhc_change_pinstate() to allow default state restore\n\nesdhc_change_pinstate() checks for pins_100mhz an",
+        "published": "2026-08-15T06:19:34.433"
       },
       {
-        "cve_id": "CVE-2026-15993",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "The Form Maker by 10Web \u2013 Mobile-Friendly Drag & Drop Contact Form Builder plugin for WordPress is vulnerable to blind SQL Injection via '{username}' Placeholder in Dynamic-Choice Field WHERE Clause i",
-        "published": "2026-08-15T04:18:09.727"
+        "cve_id": "CVE-2026-68466",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmtd: rawnand: lpc32xx_slc: fail DMA transfer on completion timeout\n\nlpc32xx_xmit_dma() waits for the DMA completion callback but ig",
+        "published": "2026-08-15T06:19:34.530"
       },
       {
-        "cve_id": "CVE-2026-16094",
-        "severity": "MEDIUM",
-        "base_score": 4.9,
-        "description": "The Invisible Anti-Spam & CAPTCHA \u2014 reCAPTCHA Alternative for All Forms plugin for WordPress is vulnerable to generic SQL Injection via the 'key' parameter in all versions up to, and including, 5.1 du",
-        "published": "2026-08-15T04:18:09.987"
+        "cve_id": "CVE-2026-68467",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmtd: mchp23k256: use SPI match data for chip caps\n\nThe driver stores chip capacity information in both the OF match table\nand the S",
+        "published": "2026-08-15T06:19:46.527"
       }
     ]
   },
