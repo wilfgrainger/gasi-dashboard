@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-16T08:16:48.211201+00:00",
+  "generated_at": "2026-08-16T12:18:52.649321+00:00",
   "threat_score": {
-    "score": 5.5,
+    "score": 5.0,
     "level": "ELEVATED",
     "level_color": "elevated",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 0,
+        "score": 1.0,
         "max": 3
       },
       {
@@ -218,86 +218,16 @@
     ]
   },
   "nvd": {
-    "total": 259,
-    "critical_count": 1,
-    "high_count": 2,
+    "total": 251,
+    "critical_count": 0,
+    "high_count": 0,
     "cves": [
-      {
-        "cve_id": "CVE-2026-16142",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The TrueBooker plugin for WordPress is vulnerable to Account Takeover in all versions up to, and including, 1.2.6. This is due to the add_front_user_update() AJAX handler being registered for unauthen",
-        "published": "2026-08-15T09:16:29.560"
-      },
-      {
-        "cve_id": "CVE-2026-18438",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Templately \u2013 Elementor & Gutenberg Template Library: 6500+ Free & Pro Ready Templates And Cloud! plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 3",
-        "published": "2026-08-15T10:16:29.413"
-      },
-      {
-        "cve_id": "CVE-2026-15142",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Real Estate Manager Pro plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 12.8.6. This is due to improper capability handling in the allow_attachment",
-        "published": "2026-08-15T09:16:28.557"
-      },
-      {
-        "cve_id": "CVE-2026-12248",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "The WPML Multilingual CMS plugin for WordPress is vulnerable to SQL Injection via the 'sorting' parameter in all versions up to, and including, 4.9.5 due to insufficient escaping on the user supplied ",
-        "published": "2026-08-15T12:16:31.713"
-      },
       {
         "cve_id": "CVE-2026-19894",
         "severity": "MEDIUM",
         "base_score": 6.3,
         "description": "A security flaw has been discovered in itsourcecode Hospital Management System 1.0. Affected is an unknown function of the file /viewmedicine.php. Performing a manipulation of the argument delid resul",
         "published": "2026-08-15T13:17:48.153"
-      },
-      {
-        "cve_id": "CVE-2026-19891",
-        "severity": "LOW",
-        "base_score": 3.7,
-        "description": "A vulnerability was determined in TRENDnet TEW-WLC100 2.05b02. This affects an unknown function of the file /etc/racoon.conf of the component IKE Phase 1 Aggressive Mode. This manipulation of the argu",
-        "published": "2026-08-15T11:16:26.340"
-      },
-      {
-        "cve_id": "CVE-2026-19893",
-        "severity": "LOW",
-        "base_score": 3.1,
-        "description": "A vulnerability was identified in D-Link DIR-842 2.01.B04. This impacts an unknown function of the file /etc/vsftpd.conf of the component vsftpd. Such manipulation leads to incorrect default permissio",
-        "published": "2026-08-15T12:16:32.543"
-      },
-      {
-        "cve_id": "CVE-2026-73631",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "Exposure of data element to wrong session vulnerability in the JSON plugin of Apache Struts. Per-request parsing state could be shared across concurrent requests, allowing data associated with one req",
-        "published": "2026-08-15T11:16:27.227"
-      },
-      {
-        "cve_id": "CVE-2026-73632",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "Exposure of data element to wrong session vulnerability in the JSON plugin of Apache Struts. Per-response serialization state could be shared across concurrent requests, allowing response content asso",
-        "published": "2026-08-15T11:16:27.330"
-      },
-      {
-        "cve_id": "CVE-2026-73634",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "Uncontrolled resource consumption vulnerability in Apache Struts. An application that exposes an endpoint collecting Content Security Policy violation reports reads the submitted report into memory wi",
-        "published": "2026-08-15T11:16:27.427"
-      },
-      {
-        "cve_id": "CVE-2026-73635",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "Allocation of resources without limits or throttling vulnerability in Apache Struts. When no fixed locale is configured, the locale used for localized-text lookups is taken from the incoming request, ",
-        "published": "2026-08-15T11:16:27.540"
       },
       {
         "cve_id": "CVE-2026-73193",
@@ -361,6 +291,76 @@
         "base_score": null,
         "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdkfd: hold event_mutex while checkpointing CRIU events\n\nkfd_criu_checkpoint_events() counts the entries in p->event_idr via\nk",
         "published": "2026-08-15T13:17:49.180"
+      },
+      {
+        "cve_id": "CVE-2026-74447",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdkfd: fix uint32_t overflow in EOP ring buffer size alignment\n\neop_ring_buffer_size in struct queue_properties is a u32. In\nk",
+        "published": "2026-08-15T13:17:49.287"
+      },
+      {
+        "cve_id": "CVE-2026-74448",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdkfd: fix QID bit leak in pqm_create_queue()\n\nWhen MES is enabled and amdgpu_amdkfd_alloc_kernel_mem() fails during\nthe first",
+        "published": "2026-08-15T13:17:49.390"
+      },
+      {
+        "cve_id": "CVE-2026-74449",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amd/display: Fix divide-by-zero in calculate_mcache_setting on zero viewport\n\nIf a plane reaches calculate_mcache_setting with ",
+        "published": "2026-08-15T13:17:49.500"
+      },
+      {
+        "cve_id": "CVE-2026-74450",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amd/pm: fix pptable use-after-free\n\namdgpu_dpm_get_pp_table() returns a pointer to a driver-owned power table\nafter dropping ad",
+        "published": "2026-08-15T13:17:49.593"
+      },
+      {
+        "cve_id": "CVE-2026-74451",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/panthor: validate firmware interface structure sizes\n\niface_fw_to_cpu_addr() only checks that the firmware-provided MCU virtual",
+        "published": "2026-08-15T13:17:49.697"
+      },
+      {
+        "cve_id": "CVE-2026-74452",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/panthor: reject firmware sections with oversized data\n\nIn panthor_fw_load_section_entry(), the data size to copy is calculated\n",
+        "published": "2026-08-15T13:17:49.790"
+      },
+      {
+        "cve_id": "CVE-2026-74453",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/vc4: Zero the tile state data array before each BIN job\n\nThe binner BO is a single 16MB buffer split into 512KB slots that are\n",
+        "published": "2026-08-15T13:17:49.893"
+      },
+      {
+        "cve_id": "CVE-2026-74454",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/vc4: Supply the overflow slot size in BPOS, not the whole bin BO size\n\nvc4_overflow_mem_work() points BPOA at a 512KB slot insi",
+        "published": "2026-08-15T13:17:50.003"
+      },
+      {
+        "cve_id": "CVE-2026-74455",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ncan: peak_usb: validate uCAN receive record lengths\n\npcan_usb_fd_decode_buf() walks uCAN records packed in one USB\nreceive buffer.\n",
+        "published": "2026-08-15T13:17:50.120"
+      },
+      {
+        "cve_id": "CVE-2026-74456",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ncan: peak_usb: peak_usb_start(): fix double free of transfer buffer on URB submit error\n\nIn peak_usb_start(), each RX URB transfer ",
+        "published": "2026-08-15T13:17:50.227"
       }
     ]
   },
