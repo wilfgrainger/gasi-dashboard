@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-16T12:18:52.649321+00:00",
+  "generated_at": "2026-08-16T16:12:58.432689+00:00",
   "threat_score": {
-    "score": 5.0,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 7.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 1.0,
+        "value": 15,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -218,149 +218,149 @@
     ]
   },
   "nvd": {
-    "total": 251,
-    "critical_count": 0,
-    "high_count": 0,
+    "total": 129,
+    "critical_count": 15,
+    "high_count": 16,
     "cves": [
       {
-        "cve_id": "CVE-2026-19894",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A security flaw has been discovered in itsourcecode Hospital Management System 1.0. Affected is an unknown function of the file /viewmedicine.php. Performing a manipulation of the argument delid resul",
-        "published": "2026-08-15T13:17:48.153"
+        "cve_id": "CVE-2026-19598",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Pods \u2013 Custom Content Types and Fields plugin for WordPress is vulnerable to Privilege Escalation via Authorization Bypass in all versions up to, and including, 3.3.9. The vulnerability exists bec",
+        "published": "2026-08-15T18:16:23.860"
       },
       {
-        "cve_id": "CVE-2026-73193",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "DBI versions before 1.652 for Perl allow a heap out-of-bounds write on 32-bit perl via an integer wraparound in the output buffer size computed by preparse.\n\npreparse reserves its output buffer with `",
-        "published": "2026-08-15T13:17:48.327"
+        "cve_id": "CVE-2026-73046",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "SiYuan before v3.7.4 improperly restricts excessive authentication attempts in the CheckAuth() middleware. The HTTP Basic Authentication branch, which guards nearly the entire /api/* surface, accepts ",
+        "published": "2026-08-15T22:16:54.600"
       },
       {
-        "cve_id": "CVE-2026-73194",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "DBI versions before 1.652 for Perl allow a heap out-of-bounds write via an unvalidated numeric placeholder that sets the binder counter in preparse.\n\npreparse reserves seven output bytes per input byt",
-        "published": "2026-08-15T13:17:48.433"
+        "cve_id": "CVE-2026-19924",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A security vulnerability has been detected in Tenda AC10 16.03.10.09_multi_TDE01. This vulnerability affects the function R7WebsSecurityHandler of the component httpd. The manipulation leads to improp",
+        "published": "2026-08-16T02:16:47.247"
       },
       {
-        "cve_id": "CVE-2026-74440",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/xe: Wait on external BO kernel fences in exec IOCTL\n\nBefore arming a user job, xe_exec_ioctl() only added the VM's\ndma-resv KER",
-        "published": "2026-08-15T13:17:48.540"
+        "cve_id": "CVE-2026-16098",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The ProSolution WP Client plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 2.0.10 via the proSol_handleFileUpload function. This is due to missing vali",
+        "published": "2026-08-16T05:16:47.667"
       },
       {
-        "cve_id": "CVE-2026-74441",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nusb: typec: ucsi: Fix race condition and ordering in port unregistration\n\nA synchronization issue exists during port unregistration",
-        "published": "2026-08-15T13:17:48.643"
+        "cve_id": "CVE-2026-18432",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Frontend Admin by DynamiApps plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 3.29.9. The vulnerability exists because `ActionUser::conditions_logic",
+        "published": "2026-08-16T05:16:48.307"
       },
       {
-        "cve_id": "CVE-2026-74442",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/vmwgfx: avoid destroy_workqueue(NULL) on vkms init failure\n\nTwo paths through vmw_vkms_init() can leave vmw->crc_workq NULL whi",
-        "published": "2026-08-15T13:17:48.760"
+        "cve_id": "CVE-2026-18855",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The Link Library plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the ll_delete_link_fields function in all versions up to, and including, 7.9.",
+        "published": "2026-08-15T19:16:32.160"
       },
       {
-        "cve_id": "CVE-2026-74443",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/vmwgfx: bound DMA command body size against suffix pointer\n\nvmw_cmd_dma() locates the DMA suffix at\n\n\t(unsigned long) &cmd->bod",
-        "published": "2026-08-15T13:17:48.863"
+        "cve_id": "CVE-2026-14524",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The ProSolution WP Client plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the proSol_fileDeleteProcess function in all versions up to, and inc",
+        "published": "2026-08-16T05:16:46.493"
       },
       {
-        "cve_id": "CVE-2026-74444",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/vmwgfx: validate DRAW_PRIMITIVES header size before division\n\nvmw_cmd_draw() computes\n\n\tmaxnum = (header->size - sizeof(cmd->bo",
-        "published": "2026-08-15T13:17:48.963"
+        "cve_id": "CVE-2026-18316",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The Solace Extra plugin for WordPress is vulnerable to unauthorized modification and loss of data due to a missing capability check on the import_zip() function in versions up to, and including, 1.6.0",
+        "published": "2026-08-16T06:16:51.683"
       },
       {
-        "cve_id": "CVE-2026-74445",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/vmwgfx: reject DX_BIND_QUERY without a DX context\n\nvmw_cmd_dx_bind_query() unconditionally dereferences\nsw_context->dx_ctx_node",
-        "published": "2026-08-15T13:17:49.067"
+        "cve_id": "CVE-2026-73041",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "SiYuan versions before v3.7.4 fail to validate or escape annotation fields written to disk by the setFileAnnotation endpoint. Attackers can inject malicious markup into annotation fields that execute ",
+        "published": "2026-08-15T22:16:53.883"
       },
       {
-        "cve_id": "CVE-2026-74446",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdkfd: hold event_mutex while checkpointing CRIU events\n\nkfd_criu_checkpoint_events() counts the entries in p->event_idr via\nk",
-        "published": "2026-08-15T13:17:49.180"
+        "cve_id": "CVE-2026-73042",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "SiYuan before v3.7.4 fails to properly escape database menu metadata in HTML interpolation, allowing stored values to execute script when users open group, view, or field-edit menus. Attackers can inj",
+        "published": "2026-08-15T22:16:54.030"
       },
       {
-        "cve_id": "CVE-2026-74447",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdkfd: fix uint32_t overflow in EOP ring buffer size alignment\n\neop_ring_buffer_size in struct queue_properties is a u32. In\nk",
-        "published": "2026-08-15T13:17:49.287"
+        "cve_id": "CVE-2026-73043",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "SiYuan versions before v3.7.4 contain a remote code execution vulnerability in the Template calculation operator, which renders user-authored Go templates and stores output verbatim without sanitizati",
+        "published": "2026-08-15T22:16:54.200"
       },
       {
-        "cve_id": "CVE-2026-74448",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdkfd: fix QID bit leak in pqm_create_queue()\n\nWhen MES is enabled and amdgpu_amdkfd_alloc_kernel_mem() fails during\nthe first",
-        "published": "2026-08-15T13:17:49.390"
+        "cve_id": "CVE-2026-73044",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "SiYuan versions before v3.7.4 fail to validate or escape table column width values, allowing stored cross-site scripting injection into style attributes. Attackers can inject malicious payloads throug",
+        "published": "2026-08-15T22:16:54.330"
       },
       {
-        "cve_id": "CVE-2026-74449",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amd/display: Fix divide-by-zero in calculate_mcache_setting on zero viewport\n\nIf a plane reaches calculate_mcache_setting with ",
-        "published": "2026-08-15T13:17:49.500"
+        "cve_id": "CVE-2026-73050",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "SiYuan versions before v3.7.4 fail to validate or escape the color field in attribute-view select options, allowing stored cross-site scripting through eight unescaped render sites. Attackers can inje",
+        "published": "2026-08-15T22:16:54.870"
       },
       {
-        "cve_id": "CVE-2026-74450",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amd/pm: fix pptable use-after-free\n\namdgpu_dpm_get_pp_table() returns a pointer to a driver-owned power table\nafter dropping ad",
-        "published": "2026-08-15T13:17:49.593"
+        "cve_id": "CVE-2026-73052",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "SiYuan before v3.7.4 stores attribute-view field names without HTML escaping and interpolates them directly into option elements via innerHTML in the sort menu. Attackers can inject markup by renaming",
+        "published": "2026-08-15T22:16:55.017"
       },
       {
-        "cve_id": "CVE-2026-74451",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/panthor: validate firmware interface structure sizes\n\niface_fw_to_cpu_addr() only checks that the firmware-provided MCU virtual",
-        "published": "2026-08-15T13:17:49.697"
+        "cve_id": "CVE-2026-73053",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "SiYuan versions before v3.7.4 contain a cross-site scripting vulnerability in the unicode2Emoji function that fails to sanitize codepoint branch output. Attackers can craft document icons with hex-enc",
+        "published": "2026-08-15T22:16:55.157"
       },
       {
-        "cve_id": "CVE-2026-74452",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/panthor: reject firmware sections with oversized data\n\nIn panthor_fw_load_section_entry(), the data size to copy is calculated\n",
-        "published": "2026-08-15T13:17:49.790"
+        "cve_id": "CVE-2026-14498",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Query Wrangler plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.5.57 via the 'options' parameter parameter. This is due to missing capability che",
+        "published": "2026-08-16T05:16:46.360"
       },
       {
-        "cve_id": "CVE-2026-74453",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/vc4: Zero the tile state data array before each BIN job\n\nThe binner BO is a single 16MB buffer split into 512KB slots that are\n",
-        "published": "2026-08-15T13:17:49.893"
+        "cve_id": "CVE-2026-16099",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Podlove Podcast Publisher plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the create_link_item function in all versions up to, and includi",
+        "published": "2026-08-16T05:16:47.780"
       },
       {
-        "cve_id": "CVE-2026-74454",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/vc4: Supply the overflow slot size in BPOS, not the whole bin BO size\n\nvc4_overflow_mem_work() points BPOA at a 512KB slot insi",
-        "published": "2026-08-15T13:17:50.003"
+        "cve_id": "CVE-2026-17123",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Royal Elementor Addons plugin for WordPress is vulnerable to Server-Side Request Forgery in versions up to, and including, 1.7.1064 via the Form Builder widget's 'webhook_url' setting. The widget'",
+        "published": "2026-08-16T05:16:48.033"
       },
       {
-        "cve_id": "CVE-2026-74455",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ncan: peak_usb: validate uCAN receive record lengths\n\npcan_usb_fd_decode_buf() walks uCAN records packed in one USB\nreceive buffer.\n",
-        "published": "2026-08-15T13:17:50.120"
+        "cve_id": "CVE-2026-19900",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "A vulnerability was identified in LB-LINK X-PRO 1.0.22-20231206. The impacted element is an unknown function of the file /etc/shadow. The manipulation leads to hard-coded credentials. It is possible t",
+        "published": "2026-08-15T17:16:24.730"
       },
       {
-        "cve_id": "CVE-2026-74456",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ncan: peak_usb: peak_usb_start(): fix double free of transfer buffer on URB submit error\n\nIn peak_usb_start(), each RX URB transfer ",
-        "published": "2026-08-15T13:17:50.227"
+        "cve_id": "CVE-2026-19901",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "A security flaw has been discovered in LB-LINK X-PRO 1.0.22-20231206. This affects an unknown function of the file /etc/config/easycwmp. The manipulation results in hard-coded credentials. It is possi",
+        "published": "2026-08-15T18:16:24.830"
       }
     ]
   },
