@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-15T20:11:41.352013+00:00",
+  "generated_at": "2026-08-16T00:42:23.672005+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
-        "score": 2.5,
+        "value": 3,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -218,31 +218,10 @@
     ]
   },
   "nvd": {
-    "total": 955,
-    "critical_count": 7,
-    "high_count": 23,
+    "total": 929,
+    "critical_count": 3,
+    "high_count": 7,
     "cves": [
-      {
-        "cve_id": "CVE-2026-17186",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "IBM Db2 Mirror for i 7.4, 7.5, and 7.6 could allow a remote attacker to execute arbitrary CL commands due to improper neutralization of special elements in a command.",
-        "published": "2026-08-14T20:16:51.127"
-      },
-      {
-        "cve_id": "CVE-2026-17182",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "IBM Db2 Mirror for i 7.4, 7.5, and 7.6 could allow a remote attacker to bypass authentication and obtain or alter sensitive information due to improper validation of request URI path segments.",
-        "published": "2026-08-14T20:16:50.893"
-      },
-      {
-        "cve_id": "CVE-2026-17184",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "IBM Db2 Mirror for i 7.4, 7.5, and 7.6 could allow a remote attacker to execute arbitrary code due to external control of file name or path.",
-        "published": "2026-08-14T20:16:51.010"
-      },
       {
         "cve_id": "CVE-2026-15303",
         "severity": "CRITICAL",
@@ -258,39 +237,11 @@
         "published": "2026-08-15T03:16:47.943"
       },
       {
-        "cve_id": "CVE-2026-17181",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "IBM Db2 Mirror for i 7.4, 7.5, and 7.6 could allow a remote attacker to write files to arbitrary locations due to path traversal.",
-        "published": "2026-08-14T20:16:50.777"
-      },
-      {
         "cve_id": "CVE-2026-14484",
         "severity": "CRITICAL",
         "base_score": 9.1,
         "description": "The RapiSafe \u2013 Secure Multi File Upload for Contact Form 7 plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the handleAjaxRemoveUpload function",
         "published": "2026-08-15T03:16:47.263"
-      },
-      {
-        "cve_id": "CVE-2026-16879",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "IBM Db2 Mirror for i 7.4, 7.5, and 7.6 could allow a remote authenticated attacker to bypass security restrictions due to improper authorization using user-supplied input.",
-        "published": "2026-08-14T20:16:49.700"
-      },
-      {
-        "cve_id": "CVE-2026-73680",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Cockpit CMS 2.14.0 and prior contains a command injection vulnerability in the FFmpeg integration that allows authenticated users with only the assets/upload permission to execute arbitrary commands b",
-        "published": "2026-08-14T20:16:58.080"
-      },
-      {
-        "cve_id": "CVE-2026-73682",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Semaphore versions prior to 2.18.20 contain an OS command injection (argument injection) vulnerability in the repository git_url handling that allows authenticated users holding the Manager or Owner r",
-        "published": "2026-08-14T21:17:58.033"
       },
       {
         "cve_id": "CVE-2026-15001",
@@ -314,53 +265,102 @@
         "published": "2026-08-15T03:16:48.077"
       },
       {
-        "cve_id": "CVE-2026-17179",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "IBM Db2 Mirror for i 7.4, 7.5, and 7.6 could allow a remote authenticated attacker to cause a denial of service due to command injection.",
-        "published": "2026-08-14T20:16:50.663"
-      },
-      {
-        "cve_id": "CVE-2026-16708",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "IBM Db2 Mirror for i 7.4, 7.5, and 7.6 could allow a remote attacker to obtain sensitive information due to external control of system configuration.",
-        "published": "2026-08-14T20:16:49.457"
-      },
-      {
-        "cve_id": "CVE-2026-17081",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "IBM Db2 Mirror for i 7.4, 7.5, and 7.6 could allow a remote attacker to write arbitrary files due to improper limitation of a pathname to a restricted directory.",
-        "published": "2026-08-14T20:16:50.180"
-      },
-      {
-        "cve_id": "CVE-2026-73683",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Laravel Socialite's Facebook provider contains an authentication bypass vulnerability that allows unauthenticated attackers to replay captured OIDC id_tokens by exploiting the missing nonce claim vali",
-        "published": "2026-08-14T22:17:11.550"
-      },
-      {
-        "cve_id": "CVE-2026-50523",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Improper neutralization of special elements used in a command ('command injection') in Microsoft PowerShell allows an authorized attacker to execute code locally.",
-        "published": "2026-08-14T21:17:18.920"
-      },
-      {
-        "cve_id": "CVE-2026-69414",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Microsoft is aware of an elevation of privilege in the Microsoft Malware Protection Engine in Microsoft Defender publicly referred to as &quot;ShieldBreak &quot;.\nWe are working to provide a high qual",
-        "published": "2026-08-14T22:17:06.810"
-      },
-      {
-        "cve_id": "CVE-2026-16915",
+        "cve_id": "CVE-2026-15162",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "IBM Db2 Mirror for i 7.4, 7.5, and 7.6 could allow a remote authenticated attacker to obtain sensitive information due to improper input validation.",
-        "published": "2026-08-14T20:16:49.933"
+        "description": "The Object Sync for Salesforce plugin is vulnerable to unauthenticated SQL Injection via the wordpress_object_type parameter of its /wp-json/object-sync-for-salesforce/push/ REST route. The route's pe",
+        "published": "2026-08-15T03:16:47.523"
+      },
+      {
+        "cve_id": "CVE-2026-14433",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The Online Booking & Scheduling Calendar for WordPress by vcita plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'business_id' parameter in all versions up to, and including, ",
+        "published": "2026-08-15T03:16:47.130"
+      },
+      {
+        "cve_id": "CVE-2026-13360",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The Cookie Banner for GDPR / CCPA \u2013 WPLP Cookie Consent plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'regionArray' parameter in all versions up to, and including, 4.3.5 du",
+        "published": "2026-08-15T04:18:01.957"
+      },
+      {
+        "cve_id": "CVE-2026-16145",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The Invisible Anti-Spam & CAPTCHA \u2014 reCAPTCHA Alternative for All Forms plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'action' parameter in all versions up to, and includin",
+        "published": "2026-08-15T04:18:10.233"
+      },
+      {
+        "cve_id": "CVE-2026-16080",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "The Image Uploader for Welcart plugin for WordPress is vulnerable to generic SQL Injection via the 'post_title' parameter in all versions up to, and including, 1.4.6 due to insufficient escaping on th",
+        "published": "2026-08-15T03:16:48.207"
+      },
+      {
+        "cve_id": "CVE-2026-15453",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "The KiviCare \u2013 Clinic & Patient Management System (EHR) plugin for WordPress is vulnerable to generic SQL Injection via the 'searchTerm' parameter in all versions up to, and including, 4.5.1 due to in",
+        "published": "2026-08-15T04:18:07.300"
+      },
+      {
+        "cve_id": "CVE-2026-16586",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "The Contest Gallery \u2013 Upload & Vote Photos, Media, Sell with PayPal & Stripe plugin for WordPress is vulnerable to Second-Order SQL Injection via MultipleFiles Second-Order Payload via 'cg_multiple_fi",
+        "published": "2026-08-15T04:18:10.607"
+      },
+      {
+        "cve_id": "CVE-2026-18387",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "The Groundhogg \u2014 CRM, Newsletters, and Marketing Automation plugin for WordPress is vulnerable to generic SQL Injection via the 'tag_query' parameter in all versions up to, and including, 4.5.14 due t",
+        "published": "2026-08-15T04:18:17.773"
+      },
+      {
+        "cve_id": "CVE-2026-15948",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "The Hydra Booking \u2014 Appointment Scheduling & Booking Calendar plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'first_name' parameter in all versions up to, and including, 1.2",
+        "published": "2026-08-15T04:18:08.773"
+      },
+      {
+        "cve_id": "CVE-2026-17090",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "The Beaver Builder Page Builder \u2013 Drag and Drop Website Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Button Module 'button' (Button Code) Setting in all versions up to",
+        "published": "2026-08-15T04:18:15.940"
+      },
+      {
+        "cve_id": "CVE-2026-12128",
+        "severity": "MEDIUM",
+        "base_score": 5.3,
+        "description": "The Pinpoint Booking System \u2013 Version 2 plugin for WordPress is vulnerable to Price Manipulation via the `cart_data` parameter in all versions up to, and including, 2.9.9.6.8. This is due to the `dopb",
+        "published": "2026-08-15T03:16:46.970"
+      },
+      {
+        "cve_id": "CVE-2026-8840",
+        "severity": "MEDIUM",
+        "base_score": 5.3,
+        "description": "The Booking calendar, Appointment Booking System plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 3.2.36. This is due to the plugin not properly verifyi",
+        "published": "2026-08-15T03:16:48.357"
+      },
+      {
+        "cve_id": "CVE-2026-15993",
+        "severity": "MEDIUM",
+        "base_score": 5.3,
+        "description": "The Form Maker by 10Web \u2013 Mobile-Friendly Drag & Drop Contact Form Builder plugin for WordPress is vulnerable to blind SQL Injection via '{username}' Placeholder in Dynamic-Choice Field WHERE Clause i",
+        "published": "2026-08-15T04:18:09.727"
+      },
+      {
+        "cve_id": "CVE-2026-16094",
+        "severity": "MEDIUM",
+        "base_score": 4.9,
+        "description": "The Invisible Anti-Spam & CAPTCHA \u2014 reCAPTCHA Alternative for All Forms plugin for WordPress is vulnerable to generic SQL Injection via the 'key' parameter in all versions up to, and including, 5.1 du",
+        "published": "2026-08-15T04:18:09.987"
       }
     ]
   },
