@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-17T08:31:29.962635+00:00",
+  "generated_at": "2026-08-17T12:22:40.744337+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
+        "value": 9,
         "score": 2.5,
         "max": 3
       },
@@ -218,9 +218,9 @@
     ]
   },
   "nvd": {
-    "total": 77,
-    "critical_count": 7,
-    "high_count": 21,
+    "total": 127,
+    "critical_count": 9,
+    "high_count": 27,
     "cves": [
       {
         "cve_id": "CVE-2026-19977",
@@ -244,13 +244,6 @@
         "published": "2026-08-16T23:16:25.050"
       },
       {
-        "cve_id": "CVE-2024-13784",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Contact Form, Survey, Quiz & Popup Form Builder \u2013 ARForms plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 1.8.5 via deserialization of untrusted in",
-        "published": "2026-08-16T09:16:19.900"
-      },
-      {
         "cve_id": "CVE-2026-73056",
         "severity": "CRITICAL",
         "base_score": 9.8,
@@ -265,11 +258,46 @@
         "published": "2026-08-16T14:16:55.770"
       },
       {
+        "cve_id": "CVE-2026-74872",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "openssl_encrypt versions before 1.4.0 contain an arbitrary code execution vulnerability in the Whirlpool hash implementation that uses broad glob patterns to load .so modules without integrity verific",
+        "published": "2026-08-17T11:16:41.560"
+      },
+      {
+        "cve_id": "CVE-2026-74799",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "SiYuan before 3.7.4 registers Go net/http/pprof debug endpoints including heap and goroutine dumps without authentication when --mode flag is not set to exactly prod. Attackers can access /debug/pprof",
+        "published": "2026-08-17T11:16:40.017"
+      },
+      {
         "cve_id": "CVE-2026-74790",
         "severity": "CRITICAL",
         "base_score": 9.1,
         "description": "Scriban before 7.0.0 caches TypedObjectAccessor by Type only without considering MemberFilter changes, allowing reused TemplateContext instances to expose members that should be hidden. Attackers can ",
         "published": "2026-08-16T14:16:57.050"
+      },
+      {
+        "cve_id": "CVE-2026-74800",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "SiYuan before v3.7.4 fails to set Content-Disposition and X-Content-Type-Options headers when serving arbitrary file assets, allowing stored cross-site scripting attacks. Authenticated attackers can u",
+        "published": "2026-08-17T11:16:40.187"
+      },
+      {
+        "cve_id": "CVE-2026-74845",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Official Document Management System developed by 2100 Technology has an Arbitrary File Upload vulnerability, allowing authenticated remote attackers to upload and execute web shell backdoors, thereby ",
+        "published": "2026-08-17T10:16:42.403"
+      },
+      {
+        "cve_id": "CVE-2026-74798",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "SiYuan kernel before v3.7.4 contains a path traversal vulnerability in the database_clean MCP tool. The tool performs only an empty-string check on the id parameter before passing it to RemoveUnusedAt",
+        "published": "2026-08-17T11:16:39.873"
       },
       {
         "cve_id": "CVE-2026-74791",
@@ -293,6 +321,27 @@
         "published": "2026-08-17T05:17:09.947"
       },
       {
+        "cve_id": "CVE-2026-74801",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "SiYuan before 3.7.4 fails to properly escape workspace directory paths when constructing command-line arguments for the elevated elevator.exe helper process. Attackers can create a malicious workspace",
+        "published": "2026-08-17T11:16:40.323"
+      },
+      {
+        "cve_id": "CVE-2026-74802",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "SiYuan versions before 3.7.4 contain a cross-site WebSocket hijacking vulnerability in the admin-only /ws/network/proxy endpoint that explicitly disables origin validation by setting CheckOrigin to un",
+        "published": "2026-08-17T11:16:40.453"
+      },
+      {
+        "cve_id": "CVE-2026-74869",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "stoatchat before 0.15.0 contains a missing authorization vulnerability in the Subscribe message handler that allows authenticated attackers to enumerate members and monitor profile updates of private ",
+        "published": "2026-08-17T11:16:41.163"
+      },
+      {
         "cve_id": "CVE-2024-58375",
         "severity": "HIGH",
         "base_score": 7.5,
@@ -312,55 +361,6 @@
         "base_score": 7.5,
         "description": "Scriban versions from 3.0.0 through 7.2.5 contain a denial of service vulnerability in the ScriptRange.Multiply operator that bypasses LoopLimit when the left operand is a lazy sequence. Attackers can",
         "published": "2026-08-16T14:16:55.640"
-      },
-      {
-        "cve_id": "CVE-2026-73062",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Scriban versions 3.0.0 through 7.2.0 contain a denial of service vulnerability in the array multiplication operator that allocates memory without enforcing LoopLimit or overflow-safe arithmetic checks",
-        "published": "2026-08-16T14:16:55.903"
-      },
-      {
-        "cve_id": "CVE-2026-74783",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Scriban versions 6.6.0 through 7.2.0 contain a non-enforcing ExpressionDepthLimit guard that fails to stop recursive descent parsing of deeply nested expressions. Attackers can supply templates with d",
-        "published": "2026-08-16T14:16:56.133"
-      },
-      {
-        "cve_id": "CVE-2026-74787",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Scriban before 7.0.0 contains an uncontrolled recursion vulnerability in the object.to_json builtin function that lacks depth limits and circular reference detection. Attackers can craft templates wit",
-        "published": "2026-08-16T14:16:56.653"
-      },
-      {
-        "cve_id": "CVE-2026-74788",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Scriban before 7.0.0 (affected versions <= 6.6.0) contains an uncontrolled memory allocation vulnerability in the string.pad_left and string.pad_right template functions, which perform no validation o",
-        "published": "2026-08-16T14:16:56.787"
-      },
-      {
-        "cve_id": "CVE-2026-74789",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Scriban before 7.0.0 (affected <= 6.6.0) applies its LoopLimit constraint only to script loop statements and not to expensive iteration performed inside built-in operators and functions. As a result, ",
-        "published": "2026-08-16T14:16:56.917"
-      },
-      {
-        "cve_id": "CVE-2026-74792",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Scriban before 7.0.0 (affected versions <= 6.6.0) contains a stack overflow vulnerability in nested array initializer parsing. Deeply nested array initializers recurse through a path (ParseArrayInitia",
-        "published": "2026-08-16T14:16:57.317"
-      },
-      {
-        "cve_id": "CVE-2026-74794",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Scriban before 6.6.0 contains an infinite recursion vulnerability in object rendering when the ObjectRecursionLimit property defaults to unlimited. Attackers can supply circular reference objects to t",
-        "published": "2026-08-16T14:16:57.450"
       }
     ]
   },
