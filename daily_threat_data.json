@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-17T04:31:55.469676+00:00",
+  "generated_at": "2026-08-17T08:31:29.962635+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 10,
-        "score": 3.0,
+        "value": 7,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -218,10 +218,17 @@
     ]
   },
   "nvd": {
-    "total": 117,
-    "critical_count": 10,
-    "high_count": 24,
+    "total": 77,
+    "critical_count": 7,
+    "high_count": 21,
     "cves": [
+      {
+        "cve_id": "CVE-2026-19977",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "A vulnerability was detected in EFM ipTIME A3004T 14.19.0. The affected element is the function httpcon_check_session_url of the component Session Validation. Performing a manipulation results in impr",
+        "published": "2026-08-17T03:16:50.517"
+      },
       {
         "cve_id": "CVE-2026-19959",
         "severity": "CRITICAL",
@@ -235,20 +242,6 @@
         "base_score": 9.9,
         "description": "A vulnerability was detected in Edimax EW-7478APC 1.04. Affected is the function formWlSiteSurvey of the file /goform/formWlSiteSurvey. Performing a manipulation of the argument selSSID results in buf",
         "published": "2026-08-16T23:16:25.050"
-      },
-      {
-        "cve_id": "CVE-2026-16098",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The ProSolution WP Client plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 2.0.10 via the proSol_handleFileUpload function. This is due to missing vali",
-        "published": "2026-08-16T05:16:47.667"
-      },
-      {
-        "cve_id": "CVE-2026-18432",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Frontend Admin by DynamiApps plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 3.29.9. The vulnerability exists because `ActionUser::conditions_logic",
-        "published": "2026-08-16T05:16:48.307"
       },
       {
         "cve_id": "CVE-2024-13784",
@@ -272,46 +265,11 @@
         "published": "2026-08-16T14:16:55.770"
       },
       {
-        "cve_id": "CVE-2026-14524",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The ProSolution WP Client plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the proSol_fileDeleteProcess function in all versions up to, and inc",
-        "published": "2026-08-16T05:16:46.493"
-      },
-      {
-        "cve_id": "CVE-2026-18316",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The Solace Extra plugin for WordPress is vulnerable to unauthorized modification and loss of data due to a missing capability check on the import_zip() function in versions up to, and including, 1.6.0",
-        "published": "2026-08-16T06:16:51.683"
-      },
-      {
         "cve_id": "CVE-2026-74790",
         "severity": "CRITICAL",
         "base_score": 9.1,
         "description": "Scriban before 7.0.0 caches TypedObjectAccessor by Type only without considering MemberFilter changes, allowing reused TemplateContext instances to expose members that should be hidden. Attackers can ",
         "published": "2026-08-16T14:16:57.050"
-      },
-      {
-        "cve_id": "CVE-2026-14498",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Query Wrangler plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.5.57 via the 'options' parameter parameter. This is due to missing capability che",
-        "published": "2026-08-16T05:16:46.360"
-      },
-      {
-        "cve_id": "CVE-2026-16099",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Podlove Podcast Publisher plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the create_link_item function in all versions up to, and includi",
-        "published": "2026-08-16T05:16:47.780"
-      },
-      {
-        "cve_id": "CVE-2026-17123",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Royal Elementor Addons plugin for WordPress is vulnerable to Server-Side Request Forgery in versions up to, and including, 1.7.1064 via the Form Builder widget's 'webhook_url' setting. The widget'",
-        "published": "2026-08-16T05:16:48.033"
       },
       {
         "cve_id": "CVE-2026-74791",
@@ -321,11 +279,18 @@
         "published": "2026-08-16T14:16:57.183"
       },
       {
-        "cve_id": "CVE-2026-17087",
+        "cve_id": "CVE-2026-19979",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The WP Travel Engine \u2013 Tour Booking Plugin \u2013 Tour Operator Software plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 6.8.4. This is due to the plugin no",
-        "published": "2026-08-16T07:16:30.423"
+        "base_score": 8.3,
+        "description": "A vulnerability was identified in GL.iNet A1300, AX1800, AXT1800, BE1400, BE3600, BE6500, BE9300, BE10000, E5800, MT2500, MT3000, MT3600BE, MT5000, MT6000, X2000, X3000 and XE3000 up to 4.8.x. Affecte",
+        "published": "2026-08-17T04:16:55.693"
+      },
+      {
+        "cve_id": "CVE-2026-19983",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "A vulnerability was detected in GL.iNet A1300, AX1800, AXT1800, MT2500, MT3000, MT6000, X3000 and XE3000 4.8.x. This issue affects some unknown processing of the file /usr/bin/gl_nas_sys of the compon",
+        "published": "2026-08-17T05:17:09.947"
       },
       {
         "cve_id": "CVE-2024-58375",
@@ -361,6 +326,41 @@
         "base_score": 7.5,
         "description": "Scriban versions 6.6.0 through 7.2.0 contain a non-enforcing ExpressionDepthLimit guard that fails to stop recursive descent parsing of deeply nested expressions. Attackers can supply templates with d",
         "published": "2026-08-16T14:16:56.133"
+      },
+      {
+        "cve_id": "CVE-2026-74787",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Scriban before 7.0.0 contains an uncontrolled recursion vulnerability in the object.to_json builtin function that lacks depth limits and circular reference detection. Attackers can craft templates wit",
+        "published": "2026-08-16T14:16:56.653"
+      },
+      {
+        "cve_id": "CVE-2026-74788",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Scriban before 7.0.0 (affected versions <= 6.6.0) contains an uncontrolled memory allocation vulnerability in the string.pad_left and string.pad_right template functions, which perform no validation o",
+        "published": "2026-08-16T14:16:56.787"
+      },
+      {
+        "cve_id": "CVE-2026-74789",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Scriban before 7.0.0 (affected <= 6.6.0) applies its LoopLimit constraint only to script loop statements and not to expensive iteration performed inside built-in operators and functions. As a result, ",
+        "published": "2026-08-16T14:16:56.917"
+      },
+      {
+        "cve_id": "CVE-2026-74792",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Scriban before 7.0.0 (affected versions <= 6.6.0) contains a stack overflow vulnerability in nested array initializer parsing. Deeply nested array initializers recurse through a path (ParseArrayInitia",
+        "published": "2026-08-16T14:16:57.317"
+      },
+      {
+        "cve_id": "CVE-2026-74794",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Scriban before 6.6.0 contains an infinite recursion vulnerability in object rendering when the ObjectRecursionLimit property defaults to unlimited. Attackers can supply circular reference objects to t",
+        "published": "2026-08-16T14:16:57.450"
       }
     ]
   },
