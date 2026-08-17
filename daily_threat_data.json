@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-16T20:10:31.865244+00:00",
+  "generated_at": "2026-08-17T00:40:41.354356+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 15,
-        "score": 3.0,
+        "value": 9,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -218,17 +218,10 @@
     ]
   },
   "nvd": {
-    "total": 118,
-    "critical_count": 15,
-    "high_count": 15,
+    "total": 109,
+    "critical_count": 9,
+    "high_count": 22,
     "cves": [
-      {
-        "cve_id": "CVE-2026-73046",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "SiYuan before v3.7.4 improperly restricts excessive authentication attempts in the CheckAuth() middleware. The HTTP Basic Authentication branch, which guards nearly the entire /api/* surface, accepts ",
-        "published": "2026-08-15T22:16:54.600"
-      },
       {
         "cve_id": "CVE-2026-19924",
         "severity": "CRITICAL",
@@ -265,6 +258,13 @@
         "published": "2026-08-16T14:16:55.083"
       },
       {
+        "cve_id": "CVE-2026-73061",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Scriban before 7.2.2 contains an access-modifier bypass vulnerability in TypedObjectAccessor that allows template code to write CLR object properties without setter-visibility checks. Attackers can mo",
+        "published": "2026-08-16T14:16:55.770"
+      },
+      {
         "cve_id": "CVE-2026-14524",
         "severity": "CRITICAL",
         "base_score": 9.1,
@@ -279,53 +279,11 @@
         "published": "2026-08-16T06:16:51.683"
       },
       {
-        "cve_id": "CVE-2026-73041",
+        "cve_id": "CVE-2026-74790",
         "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "SiYuan versions before v3.7.4 fail to validate or escape annotation fields written to disk by the setFileAnnotation endpoint. Attackers can inject malicious markup into annotation fields that execute ",
-        "published": "2026-08-15T22:16:53.883"
-      },
-      {
-        "cve_id": "CVE-2026-73042",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "SiYuan before v3.7.4 fails to properly escape database menu metadata in HTML interpolation, allowing stored values to execute script when users open group, view, or field-edit menus. Attackers can inj",
-        "published": "2026-08-15T22:16:54.030"
-      },
-      {
-        "cve_id": "CVE-2026-73043",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "SiYuan versions before v3.7.4 contain a remote code execution vulnerability in the Template calculation operator, which renders user-authored Go templates and stores output verbatim without sanitizati",
-        "published": "2026-08-15T22:16:54.200"
-      },
-      {
-        "cve_id": "CVE-2026-73044",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "SiYuan versions before v3.7.4 fail to validate or escape table column width values, allowing stored cross-site scripting injection into style attributes. Attackers can inject malicious payloads throug",
-        "published": "2026-08-15T22:16:54.330"
-      },
-      {
-        "cve_id": "CVE-2026-73050",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "SiYuan versions before v3.7.4 fail to validate or escape the color field in attribute-view select options, allowing stored cross-site scripting through eight unescaped render sites. Attackers can inje",
-        "published": "2026-08-15T22:16:54.870"
-      },
-      {
-        "cve_id": "CVE-2026-73052",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "SiYuan before v3.7.4 stores attribute-view field names without HTML escaping and interpolates them directly into option elements via innerHTML in the sort menu. Attackers can inject markup by renaming",
-        "published": "2026-08-15T22:16:55.017"
-      },
-      {
-        "cve_id": "CVE-2026-73053",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "SiYuan versions before v3.7.4 contain a cross-site scripting vulnerability in the unicode2Emoji function that fails to sanitize codepoint branch output. Attackers can craft document icons with hex-enc",
-        "published": "2026-08-15T22:16:55.157"
+        "base_score": 9.1,
+        "description": "Scriban before 7.0.0 caches TypedObjectAccessor by Type only without considering MemberFilter changes, allowing reused TemplateContext instances to expose members that should be hidden. Attackers can ",
+        "published": "2026-08-16T14:16:57.050"
       },
       {
         "cve_id": "CVE-2026-14498",
@@ -349,18 +307,60 @@
         "published": "2026-08-16T05:16:48.033"
       },
       {
-        "cve_id": "CVE-2026-73045",
+        "cve_id": "CVE-2026-74791",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "SiYuan before 3.7.4 contains an improper restriction of excessive authentication attempts vulnerability in the authFilePublishAccess endpoint that allows unauthenticated attackers to brute-force per-n",
-        "published": "2026-08-15T22:16:54.463"
+        "base_score": 8.6,
+        "description": "Scriban before 7.0.0 fails to clear the CachedTemplates dictionary when TemplateContext.Reset() is called, allowing cached templates to persist across reused contexts. Attackers can exploit request-de",
+        "published": "2026-08-16T14:16:57.183"
       },
       {
-        "cve_id": "CVE-2026-73054",
+        "cve_id": "CVE-2026-17087",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "SiYuan versions before v3.7.4 contain an authentication bypass vulnerability in the WebSocket endpoint caused by differential parsing of query parameters between authentication exemption and session q",
-        "published": "2026-08-15T22:16:55.290"
+        "description": "The WP Travel Engine \u2013 Tour Booking Plugin \u2013 Tour Operator Software plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 6.8.4. This is due to the plugin no",
+        "published": "2026-08-16T07:16:30.423"
+      },
+      {
+        "cve_id": "CVE-2024-58375",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "OpenTofu versions 1.8.0 through 1.8.2 do not properly restrict sensitive variables and locals when users have opted into static evaluation of module sources, versions, and backend configurations. As a",
+        "published": "2026-08-16T14:16:53.627"
+      },
+      {
+        "cve_id": "CVE-2026-73057",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "stoatchat before 0.15.0 fails to validate SVG viewBox dimensions in the proxy endpoint, allowing attackers to cause denial of service by memory exhaustion. Attackers can host malicious SVGs with extre",
+        "published": "2026-08-16T14:16:55.230"
+      },
+      {
+        "cve_id": "CVE-2026-73060",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Scriban versions from 3.0.0 through 7.2.5 contain a denial of service vulnerability in the ScriptRange.Multiply operator that bypasses LoopLimit when the left operand is a lazy sequence. Attackers can",
+        "published": "2026-08-16T14:16:55.640"
+      },
+      {
+        "cve_id": "CVE-2026-73062",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Scriban versions 3.0.0 through 7.2.0 contain a denial of service vulnerability in the array multiplication operator that allocates memory without enforcing LoopLimit or overflow-safe arithmetic checks",
+        "published": "2026-08-16T14:16:55.903"
+      },
+      {
+        "cve_id": "CVE-2026-74783",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Scriban versions 6.6.0 through 7.2.0 contain a non-enforcing ExpressionDepthLimit guard that fails to stop recursive descent parsing of deeply nested expressions. Attackers can supply templates with d",
+        "published": "2026-08-16T14:16:56.133"
+      },
+      {
+        "cve_id": "CVE-2026-74787",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Scriban before 7.0.0 contains an uncontrolled recursion vulnerability in the object.to_json builtin function that lacks depth limits and circular reference detection. Attackers can craft templates wit",
+        "published": "2026-08-16T14:16:56.653"
       }
     ]
   },
