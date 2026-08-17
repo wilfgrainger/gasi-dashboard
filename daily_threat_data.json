@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-17T00:40:41.354356+00:00",
+  "generated_at": "2026-08-17T04:31:55.469676+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
-        "score": 2.5,
+        "value": 10,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -218,16 +218,23 @@
     ]
   },
   "nvd": {
-    "total": 109,
-    "critical_count": 9,
-    "high_count": 22,
+    "total": 117,
+    "critical_count": 10,
+    "high_count": 24,
     "cves": [
       {
-        "cve_id": "CVE-2026-19924",
+        "cve_id": "CVE-2026-19959",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A security vulnerability has been detected in Tenda AC10 16.03.10.09_multi_TDE01. This vulnerability affects the function R7WebsSecurityHandler of the component httpd. The manipulation leads to improp",
-        "published": "2026-08-16T02:16:47.247"
+        "base_score": 9.9,
+        "description": "A weakness has been identified in Edimax EW-7478APC 1.04. This affects the function formWanTcpipSetup of the file /goform/formWanTcpipSetup. This manipulation of the argument pppUserName causes stack-",
+        "published": "2026-08-16T23:16:24.710"
+      },
+      {
+        "cve_id": "CVE-2026-19961",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A vulnerability was detected in Edimax EW-7478APC 1.04. Affected is the function formWlSiteSurvey of the file /goform/formWlSiteSurvey. Performing a manipulation of the argument selSSID results in buf",
+        "published": "2026-08-16T23:16:25.050"
       },
       {
         "cve_id": "CVE-2026-16098",
@@ -354,13 +361,6 @@
         "base_score": 7.5,
         "description": "Scriban versions 6.6.0 through 7.2.0 contain a non-enforcing ExpressionDepthLimit guard that fails to stop recursive descent parsing of deeply nested expressions. Attackers can supply templates with d",
         "published": "2026-08-16T14:16:56.133"
-      },
-      {
-        "cve_id": "CVE-2026-74787",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Scriban before 7.0.0 contains an uncontrolled recursion vulnerability in the object.to_json builtin function that lacks depth limits and circular reference detection. Attackers can craft templates wit",
-        "published": "2026-08-16T14:16:56.653"
       }
     ]
   },
