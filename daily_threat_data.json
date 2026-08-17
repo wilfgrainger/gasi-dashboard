@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-08-17T12:22:40.744337+00:00",
+  "generated_at": "2026-08-17T16:15:38.611585+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 18,
+        "value": 19,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
-        "score": 2.5,
+        "value": 19,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1665,
-    "recent_30d_count": 18,
+    "total_catalog_count": 1666,
+    "recent_30d_count": 19,
     "recent": [
+      {
+        "cve_id": "CVE-2025-62593",
+        "vendor": "Ray-Project",
+        "product": "Ray",
+        "name": "Ray-Project Ray Code Injection Vulnerability",
+        "date_added": "2026-08-18",
+        "due_date": "2026-08-21",
+        "description": "Ray-Project Ray contains a code injection vulnerability that could allow remote code execution. Developers using Ray as a development tool may be exposed to this vulnerability exploitable through Fire",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-20349",
         "vendor": "Cisco",
@@ -218,9 +228,9 @@
     ]
   },
   "nvd": {
-    "total": 127,
-    "critical_count": 9,
-    "high_count": 27,
+    "total": 140,
+    "critical_count": 19,
+    "high_count": 23,
     "cves": [
       {
         "cve_id": "CVE-2026-19977",
@@ -244,20 +254,6 @@
         "published": "2026-08-16T23:16:25.050"
       },
       {
-        "cve_id": "CVE-2026-73056",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "SiYuan kernel versions before 3.7.4 contain an improper restriction of excessive authentication attempts vulnerability in the CheckAuth() middleware. The middleware accepts the API token (Conf.Api.Tok",
-        "published": "2026-08-16T14:16:55.083"
-      },
-      {
-        "cve_id": "CVE-2026-73061",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Scriban before 7.2.2 contains an access-modifier bypass vulnerability in TypedObjectAccessor that allows template code to write CLR object properties without setter-visibility checks. Attackers can mo",
-        "published": "2026-08-16T14:16:55.770"
-      },
-      {
         "cve_id": "CVE-2026-74872",
         "severity": "CRITICAL",
         "base_score": 9.8,
@@ -265,18 +261,102 @@
         "published": "2026-08-17T11:16:41.560"
       },
       {
+        "cve_id": "CVE-2026-74875",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "openssl_encrypt versions before 1.4.0 silently skip JSON schema validation when the jsonschema library is not installed, allowing malformed metadata to be accepted. Attackers can remove the jsonschema",
+        "published": "2026-08-17T11:16:41.943"
+      },
+      {
+        "cve_id": "CVE-2026-74876",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "openssl_encrypt versions before 1.4.0 contain a vulnerability in PublicKeyBundle.from_dict() that creates key bundles from untrusted data without verifying signatures. Attackers can call from_dict() f",
+        "published": "2026-08-17T11:16:42.073"
+      },
+      {
+        "cve_id": "CVE-2026-74878",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "openssl_encrypt versions before 1.4.0 use an in-memory rate limiter for TOTP brute-force protection that is not shared across workers and is lost on server restart. Attackers can distribute authentica",
+        "published": "2026-08-17T11:16:42.330"
+      },
+      {
+        "cve_id": "CVE-2026-74880",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "openssl_encrypt versions before 1.4.0 accept refresh tokens as URL query parameters in keyserver and telemetry server routes. Attackers can extract tokens from server logs, proxy logs, browser history",
+        "published": "2026-08-17T11:16:42.593"
+      },
+      {
+        "cve_id": "CVE-2026-74886",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "openssl_encrypt versions before 1.4.0 contain a plugin sandbox bypass vulnerability where the PluginImportGuard blocks a different set of modules than the AST analyzer's DANGEROUS_MODULES set. Attacke",
+        "published": "2026-08-17T11:16:43.390"
+      },
+      {
+        "cve_id": "CVE-2026-74889",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "openssl_encrypt versions before 1.4.0 use HKDF with no salt and static info parameter in key normalization functions, reducing entropy extraction and determinism. Attackers can exploit predictable key",
+        "published": "2026-08-17T11:16:43.803"
+      },
+      {
+        "cve_id": "CVE-2026-74891",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "openssl_encrypt versions before 1.4.0 contain hardcoded database credentials in standalone server configuration files. Attackers on the same network can access PostgreSQL databases using well-known de",
+        "published": "2026-08-17T11:16:44.120"
+      },
+      {
+        "cve_id": "CVE-2026-74894",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "openssl_encrypt before 1.4.0 contains an authentication bypass vulnerability in the verify_api_token function that accepts any non-empty Bearer token string without validation. Attackers can upload ar",
+        "published": "2026-08-17T11:16:44.523"
+      },
+      {
+        "cve_id": "CVE-2026-74895",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "openssl_encrypt versions before 1.4.0 fail to apply sandbox restrictions in the default process isolation mode for plugin execution. Attackers can execute malicious plugins with unrestricted access to",
+        "published": "2026-08-17T11:16:44.653"
+      },
+      {
+        "cve_id": "CVE-2026-74896",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "openssl_encrypt versions before 1.4.0 contain a sandbox escape vulnerability in the DangerousPatternVisitor AST analyzer that fails to detect dunder attribute traversal techniques. Attackers can use _",
+        "published": "2026-08-17T11:16:44.787"
+      },
+      {
+        "cve_id": "CVE-2026-74899",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "openssl_encrypt versions before 1.4.0 contain a sandbox escape vulnerability in IsolatedPluginExecutor that exposes Python type objects in restricted exec() builtins. Attackers can traverse the Python",
+        "published": "2026-08-17T11:16:44.917"
+      },
+      {
+        "cve_id": "CVE-2026-74900",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "openssl_encrypt versions before 1.4.0 contain a critical vulnerability in pqc.py where KEM decapsulation failures silently fall back to simulation mode, generating a deterministic shared secret from o",
+        "published": "2026-08-17T11:16:45.050"
+      },
+      {
+        "cve_id": "CVE-2026-74901",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "openssl_encrypt versions before 1.4.0 contain an authentication bypass vulnerability in pqc.py where AES-GCM decryption failures trigger fallback to unauthenticated AES-CTR mode. Attackers can modify ",
+        "published": "2026-08-17T11:16:45.183"
+      },
+      {
         "cve_id": "CVE-2026-74799",
         "severity": "CRITICAL",
         "base_score": 9.3,
         "description": "SiYuan before 3.7.4 registers Go net/http/pprof debug endpoints including heap and goroutine dumps without authentication when --mode flag is not set to exactly prod. Attackers can access /debug/pprof",
         "published": "2026-08-17T11:16:40.017"
-      },
-      {
-        "cve_id": "CVE-2026-74790",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Scriban before 7.0.0 caches TypedObjectAccessor by Type only without considering MemberFilter changes, allowing reused TemplateContext instances to expose members that should be hidden. Attackers can ",
-        "published": "2026-08-16T14:16:57.050"
       },
       {
         "cve_id": "CVE-2026-74800",
@@ -291,76 +371,6 @@
         "base_score": 8.8,
         "description": "Official Document Management System developed by 2100 Technology has an Arbitrary File Upload vulnerability, allowing authenticated remote attackers to upload and execute web shell backdoors, thereby ",
         "published": "2026-08-17T10:16:42.403"
-      },
-      {
-        "cve_id": "CVE-2026-74798",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "SiYuan kernel before v3.7.4 contains a path traversal vulnerability in the database_clean MCP tool. The tool performs only an empty-string check on the id parameter before passing it to RemoveUnusedAt",
-        "published": "2026-08-17T11:16:39.873"
-      },
-      {
-        "cve_id": "CVE-2026-74791",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Scriban before 7.0.0 fails to clear the CachedTemplates dictionary when TemplateContext.Reset() is called, allowing cached templates to persist across reused contexts. Attackers can exploit request-de",
-        "published": "2026-08-16T14:16:57.183"
-      },
-      {
-        "cve_id": "CVE-2026-19979",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "A vulnerability was identified in GL.iNet A1300, AX1800, AXT1800, BE1400, BE3600, BE6500, BE9300, BE10000, E5800, MT2500, MT3000, MT3600BE, MT5000, MT6000, X2000, X3000 and XE3000 up to 4.8.x. Affecte",
-        "published": "2026-08-17T04:16:55.693"
-      },
-      {
-        "cve_id": "CVE-2026-19983",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "A vulnerability was detected in GL.iNet A1300, AX1800, AXT1800, MT2500, MT3000, MT6000, X3000 and XE3000 4.8.x. This issue affects some unknown processing of the file /usr/bin/gl_nas_sys of the compon",
-        "published": "2026-08-17T05:17:09.947"
-      },
-      {
-        "cve_id": "CVE-2026-74801",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "SiYuan before 3.7.4 fails to properly escape workspace directory paths when constructing command-line arguments for the elevated elevator.exe helper process. Attackers can create a malicious workspace",
-        "published": "2026-08-17T11:16:40.323"
-      },
-      {
-        "cve_id": "CVE-2026-74802",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "SiYuan versions before 3.7.4 contain a cross-site WebSocket hijacking vulnerability in the admin-only /ws/network/proxy endpoint that explicitly disables origin validation by setting CheckOrigin to un",
-        "published": "2026-08-17T11:16:40.453"
-      },
-      {
-        "cve_id": "CVE-2026-74869",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "stoatchat before 0.15.0 contains a missing authorization vulnerability in the Subscribe message handler that allows authenticated attackers to enumerate members and monitor profile updates of private ",
-        "published": "2026-08-17T11:16:41.163"
-      },
-      {
-        "cve_id": "CVE-2024-58375",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "OpenTofu versions 1.8.0 through 1.8.2 do not properly restrict sensitive variables and locals when users have opted into static evaluation of module sources, versions, and backend configurations. As a",
-        "published": "2026-08-16T14:16:53.627"
-      },
-      {
-        "cve_id": "CVE-2026-73057",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "stoatchat before 0.15.0 fails to validate SVG viewBox dimensions in the proxy endpoint, allowing attackers to cause denial of service by memory exhaustion. Attackers can host malicious SVGs with extre",
-        "published": "2026-08-16T14:16:55.230"
-      },
-      {
-        "cve_id": "CVE-2026-73060",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Scriban versions from 3.0.0 through 7.2.5 contain a denial of service vulnerability in the ScriptRange.Multiply operator that bypasses LoopLimit when the left operand is a lazy sequence. Attackers can",
-        "published": "2026-08-16T14:16:55.640"
       }
     ]
   },
