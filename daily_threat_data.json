@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-18T12:24:22.910235+00:00",
+  "generated_at": "2026-08-18T16:19:24.013093+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
-        "score": 2.5,
+        "value": 16,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -228,10 +228,31 @@
     ]
   },
   "nvd": {
-    "total": 311,
-    "critical_count": 8,
-    "high_count": 31,
+    "total": 492,
+    "critical_count": 16,
+    "high_count": 32,
     "cves": [
+      {
+        "cve_id": "CVE-2026-66792",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A flaw was found in the multicloud-operators-subscription component. This vulnerability allows a user on a managed cluster to escalate their privileges by creating a Subscription with specific, crafte",
+        "published": "2026-08-17T19:16:34.237"
+      },
+      {
+        "cve_id": "CVE-2026-47686",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "vm2 is an open source vm/sandbox for Node.js. Prior to 3.11.6, handleException() in lib/setup-sandbox.js sanitizes SuppressedError.error, SuppressedError.suppressed, and AggregateError.errors but does",
+        "published": "2026-08-17T21:16:45.507"
+      },
+      {
+        "cve_id": "CVE-2026-65974",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "ERPNext is a free and open source Enterprise Resource Planning tool. Prior to 15.111.0 and 16.22.0, limited authenticated users can cross a permission boundary in Frappe safe execution because frappe.",
+        "published": "2026-08-17T21:16:46.887"
+      },
       {
         "cve_id": "CVE-2026-50768",
         "severity": "CRITICAL",
@@ -240,39 +261,67 @@
         "published": "2026-08-17T18:17:08.760"
       },
       {
-        "cve_id": "CVE-2026-71566",
+        "cve_id": "CVE-2026-39254",
         "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "FakeFish handles incoming credentials by passing them down\n to scripts. This works for real hardware because in the end it's up to \nthe BMC to validate them. However, KubeVirt relies on a KUBECONFIG f",
-        "published": "2026-08-17T15:16:57.610"
+        "base_score": 9.8,
+        "description": "Buffer Overflow vulnerability in SteelSeries GG (macOS) v.107.0.0 allows a remote attacker to execute arbitrary code via the libSSEdevice.dylib, CxAudioHidDevice::DeviceGetDescriptionString components",
+        "published": "2026-08-17T21:16:44.710"
       },
       {
-        "cve_id": "CVE-2026-55674",
+        "cve_id": "CVE-2026-39255",
         "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Discourse is an open-source discussion platform. Prior to 2026.1.6, 2026.5.2, 2026.6.1, and 2026.7.0, an unauthenticated attacker could send a single request with a crafted color_scheme_id (or dark_sc",
-        "published": "2026-08-17T16:16:58.917"
+        "base_score": 9.8,
+        "description": "Buffer Overflow vulnerability in SteelSeries GG (macOS) v.107.0.0 allows a remote attacker to execute arbitrary code via the libSSEdevice.dylib, dup_wcs components",
+        "published": "2026-08-17T21:16:44.823"
       },
       {
-        "cve_id": "CVE-2026-64859",
+        "cve_id": "CVE-2026-47698",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "New API is a large language mode (LLM) gateway and artificial intelligence (AI) asset management system. Prior to 1.0.0-rc.7, the admin user list and user lookup APIs, including GET /api/user/, return",
-        "published": "2026-08-17T16:17:22.280"
+        "base_score": 9.8,
+        "description": "vm2 is an open source vm/sandbox for Node.js. Prior to 3.11.6, lib/bridge.js and lib/setup-sandbox.js fail to block stacked indirection through Function.prototype.call around dangerous host prototype ",
+        "published": "2026-08-17T21:16:45.640"
       },
       {
-        "cve_id": "CVE-2026-71479",
+        "cve_id": "CVE-2026-67917",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "New API is a large language mode (LLM) gateway and artificial intelligence (AI) asset management system. Prior to 1.0.0-rc.18, user-controlled image n, video seconds and duration, max_tokens, max_comp",
-        "published": "2026-08-17T16:17:44.307"
+        "base_score": 9.8,
+        "description": "zuraCast versions up to and including 0.23.7 contain a SQL injection vulnerability in the backup restore functionality. The `azuracast:restore` command executes the `db.sql` file extracted from a back",
+        "published": "2026-08-17T21:16:47.290"
       },
       {
-        "cve_id": "CVE-2026-75045",
+        "cve_id": "CVE-2026-67926",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "In JetBrains YouTrack before 2025.3.156085, \n2026.1.13913, \n2026.2.18112 an unauthenticated attacker could download database backups via shared draft signature",
-        "published": "2026-08-17T16:17:51.530"
+        "base_score": 9.8,
+        "description": "An issue in JeecgBoot v.3.9.2 allows a remote attacker to execute arbitrary code via the files Parameter in JeecgBoot AI Chat Module",
+        "published": "2026-08-17T21:16:47.507"
+      },
+      {
+        "cve_id": "CVE-2026-67965",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An issue in Tneda W20E v.16.01.0.6(2782) allows a remote attacker to execute arbitrary code via the url_need_login function",
+        "published": "2026-08-17T21:16:47.610"
+      },
+      {
+        "cve_id": "CVE-2026-67966",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Tenda W20E V16.01.0.6(2782) /goform/telnet endpoint allows unauthenticated remote attackers to activate the Telnet daemon and obtain root shell access.",
+        "published": "2026-08-17T21:16:47.737"
+      },
+      {
+        "cve_id": "CVE-2026-67967",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Buffer Overflow vulnerability in Tenda W20E V16.01.0.6(2782) allows an attacker to execute arbitrary code. This is an incomplete fix for CVE-2025-44867 and CVE-2026-36819",
+        "published": "2026-08-17T21:16:47.840"
+      },
+      {
+        "cve_id": "CVE-2026-19478",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.2 before 18.11.11, 19.0 before 19.0.8, 19.1 before 19.1.6, and 19.2 before 19.2.4 that under certain conditions could allo",
+        "published": "2026-08-17T20:16:41.777"
       },
       {
         "cve_id": "CVE-2026-51346",
@@ -282,18 +331,18 @@
         "published": "2026-08-17T18:17:09.320"
       },
       {
-        "cve_id": "CVE-2026-14564",
+        "cve_id": "CVE-2026-71472",
         "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "Insufficiently Protected Credentials vulnerability in Innotim Software Telecommunications and Consulting Trade Ltd. Co. Logsign SIEM allows Retrieve Embedded Sensitive Data.\n\nThis issue affects Logsig",
-        "published": "2026-08-17T13:16:50.797"
+        "base_score": 9.1,
+        "description": "A flaw was found in acm-search-v2-rhel9. This vulnerability allows an authenticated attacker, such as a hub administrator or a Search Custom Resource (CR) editor, to inject malicious shell commands or",
+        "published": "2026-08-17T20:16:45.777"
       },
       {
-        "cve_id": "CVE-2026-74997",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "In Roundcube Webmail before 1.6.18 and 1.7.x before 1.7.3, the cmd_learn driver of the markasjunk plugin is subject to remote code execution via crafted placeholder replacement values. This issue only",
-        "published": "2026-08-17T13:16:54.100"
+        "cve_id": "CVE-2026-66795",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "A flaw was found in the managedcluster-import-controller. The Certificate Signing Request (CSR) auto-approval logic improperly validates incoming CSRs, specifically by not inspecting the signer name o",
+        "published": "2026-08-17T21:16:47.163"
       },
       {
         "cve_id": "CVE-2026-9771",
@@ -310,67 +359,18 @@
         "published": "2026-08-17T18:17:56.740"
       },
       {
-        "cve_id": "CVE-2026-75060",
+        "cve_id": "CVE-2026-70495",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "In JetBrains PyCharm before 2026.2.1 code execution was possible via unauthenticated Jupyter MCP tools",
-        "published": "2026-08-17T16:17:53.227"
+        "base_score": 8.8,
+        "description": "A flaw was found in search-v2-operator. This component's `search-serviceaccount` has overly broad permissions, allowing it to impersonate users and groups across the entire cluster. If an attacker gai",
+        "published": "2026-08-17T20:16:45.653"
       },
       {
-        "cve_id": "CVE-2026-46345",
+        "cve_id": "CVE-2026-65640",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "compliance-trestle is a tooling platform for managing compliance as code. Prior to versions 3.12.2 and 4.0.3, the `-o/--output` argument in `trestle author jinja` allows writing files outside the inte",
-        "published": "2026-08-17T18:16:38.393"
-      },
-      {
-        "cve_id": "CVE-2026-75048",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "In JetBrains YouTrack before 2026.2.18068 stored XSS via the fenced code-block language label was possible",
-        "published": "2026-08-17T16:17:51.870"
-      },
-      {
-        "cve_id": "CVE-2026-19693",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "extract-zip through 2.0.1 containment-checks only the parent directory of each archive entry and never the entry's own final path component, so an archive containing two entries with identical names -",
-        "published": "2026-08-17T14:20:20.737"
-      },
-      {
-        "cve_id": "CVE-2026-75044",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "In JetBrains YouTrack before 2025.3.156085, \n2026.1.13914, \n2026.2.18095 missing authorisation allowed an authenticated user to delete arbitrary entities via the mailbox endpoint",
-        "published": "2026-08-17T16:17:51.410"
-      },
-      {
-        "cve_id": "CVE-2026-75051",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "In JetBrains YouTrack before 2026.2.17917 unauthorised project transfer between organisations was possible",
-        "published": "2026-08-17T16:17:52.213"
-      },
-      {
-        "cve_id": "CVE-2026-33437",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Stirling-PDF is a locally hosted web application that facilitates various operations on PDF files. Prior to 2.0.0, the Get Info workflow in app/core/src/main/resources/templates/security/get-info-on-p",
-        "published": "2026-08-17T18:16:35.650"
-      },
-      {
-        "cve_id": "CVE-2026-16138",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "In Progress ShareFile Storage Zones Controller v5.12.5 and below versions, unsafe deserialization of untrusted file metadata can allow a user with write access to a Network share to execute arbitrary ",
-        "published": "2026-08-17T14:20:19.797"
-      },
-      {
-        "cve_id": "CVE-2026-15218",
-        "severity": "HIGH",
-        "base_score": 7.9,
-        "description": "A flaw was found in the maas-api and maas-controller ServiceAccounts within Red Hat OpenShift AI. These ServiceAccounts are granted cluster-wide permissions that exceed their operational requirements.",
-        "published": "2026-08-17T14:20:19.357"
+        "base_score": 8.8,
+        "description": "WordPress is vulnerable to a remote code execution vulnerability via malicious Postscript file upload by an Author level user or higher.\n\nPrerequisites:\n* Imagick and Ghostscript in use on the server\n",
+        "published": "2026-08-17T21:16:46.470"
       }
     ]
   },
