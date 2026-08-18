@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-18T08:23:39.669681+00:00",
+  "generated_at": "2026-08-18T12:24:22.910235+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 20,
-        "score": 3.0,
+        "value": 8,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -228,121 +228,16 @@
     ]
   },
   "nvd": {
-    "total": 317,
-    "critical_count": 20,
+    "total": 311,
+    "critical_count": 8,
     "high_count": 31,
     "cves": [
       {
-        "cve_id": "CVE-2026-74843",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "A vulnerability was determined in Wavlink WN531P3 and WN535M1 V250922. Affected by this vulnerability is the function strcpy of the file /etc/lighttpd/www/cgi-bin/export_pingortrace.cgi of the compone",
-        "published": "2026-08-17T12:18:58.180"
-      },
-      {
-        "cve_id": "CVE-2026-74872",
+        "cve_id": "CVE-2026-50768",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "openssl_encrypt versions before 1.4.0 contain an arbitrary code execution vulnerability in the Whirlpool hash implementation that uses broad glob patterns to load .so modules without integrity verific",
-        "published": "2026-08-17T11:16:41.560"
-      },
-      {
-        "cve_id": "CVE-2026-74875",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "openssl_encrypt versions before 1.4.0 silently skip JSON schema validation when the jsonschema library is not installed, allowing malformed metadata to be accepted. Attackers can remove the jsonschema",
-        "published": "2026-08-17T11:16:41.943"
-      },
-      {
-        "cve_id": "CVE-2026-74876",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "openssl_encrypt versions before 1.4.0 contain a vulnerability in PublicKeyBundle.from_dict() that creates key bundles from untrusted data without verifying signatures. Attackers can call from_dict() f",
-        "published": "2026-08-17T11:16:42.073"
-      },
-      {
-        "cve_id": "CVE-2026-74878",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "openssl_encrypt versions before 1.4.0 use an in-memory rate limiter for TOTP brute-force protection that is not shared across workers and is lost on server restart. Attackers can distribute authentica",
-        "published": "2026-08-17T11:16:42.330"
-      },
-      {
-        "cve_id": "CVE-2026-74880",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "openssl_encrypt versions before 1.4.0 accept refresh tokens as URL query parameters in keyserver and telemetry server routes. Attackers can extract tokens from server logs, proxy logs, browser history",
-        "published": "2026-08-17T11:16:42.593"
-      },
-      {
-        "cve_id": "CVE-2026-74886",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "openssl_encrypt versions before 1.4.0 contain a plugin sandbox bypass vulnerability where the PluginImportGuard blocks a different set of modules than the AST analyzer's DANGEROUS_MODULES set. Attacke",
-        "published": "2026-08-17T11:16:43.390"
-      },
-      {
-        "cve_id": "CVE-2026-74889",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "openssl_encrypt versions before 1.4.0 use HKDF with no salt and static info parameter in key normalization functions, reducing entropy extraction and determinism. Attackers can exploit predictable key",
-        "published": "2026-08-17T11:16:43.803"
-      },
-      {
-        "cve_id": "CVE-2026-74891",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "openssl_encrypt versions before 1.4.0 contain hardcoded database credentials in standalone server configuration files. Attackers on the same network can access PostgreSQL databases using well-known de",
-        "published": "2026-08-17T11:16:44.120"
-      },
-      {
-        "cve_id": "CVE-2026-74894",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "openssl_encrypt before 1.4.0 contains an authentication bypass vulnerability in the verify_api_token function that accepts any non-empty Bearer token string without validation. Attackers can upload ar",
-        "published": "2026-08-17T11:16:44.523"
-      },
-      {
-        "cve_id": "CVE-2026-74895",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "openssl_encrypt versions before 1.4.0 fail to apply sandbox restrictions in the default process isolation mode for plugin execution. Attackers can execute malicious plugins with unrestricted access to",
-        "published": "2026-08-17T11:16:44.653"
-      },
-      {
-        "cve_id": "CVE-2026-74896",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "openssl_encrypt versions before 1.4.0 contain a sandbox escape vulnerability in the DangerousPatternVisitor AST analyzer that fails to detect dunder attribute traversal techniques. Attackers can use _",
-        "published": "2026-08-17T11:16:44.787"
-      },
-      {
-        "cve_id": "CVE-2026-74899",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "openssl_encrypt versions before 1.4.0 contain a sandbox escape vulnerability in IsolatedPluginExecutor that exposes Python type objects in restricted exec() builtins. Attackers can traverse the Python",
-        "published": "2026-08-17T11:16:44.917"
-      },
-      {
-        "cve_id": "CVE-2026-74900",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "openssl_encrypt versions before 1.4.0 contain a critical vulnerability in pqc.py where KEM decapsulation failures silently fall back to simulation mode, generating a deterministic shared secret from o",
-        "published": "2026-08-17T11:16:45.050"
-      },
-      {
-        "cve_id": "CVE-2026-74901",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "openssl_encrypt versions before 1.4.0 contain an authentication bypass vulnerability in pqc.py where AES-GCM decryption failures trigger fallback to unauthenticated AES-CTR mode. Attackers can modify ",
-        "published": "2026-08-17T11:16:45.183"
-      },
-      {
-        "cve_id": "CVE-2026-74799",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "SiYuan before 3.7.4 registers Go net/http/pprof debug endpoints including heap and goroutine dumps without authentication when --mode flag is not set to exactly prod. Attackers can access /debug/pprof",
-        "published": "2026-08-17T11:16:40.017"
+        "description": "File Upload vulnerability in T-Systems International GmbH ImageMaster Version: 9.14.2.8.1 allows a remote attacker to execute arbitrary code via the add attachments feature in the create new document ",
+        "published": "2026-08-17T18:17:08.760"
       },
       {
         "cve_id": "CVE-2026-71566",
@@ -359,11 +254,32 @@
         "published": "2026-08-17T16:16:58.917"
       },
       {
-        "cve_id": "CVE-2026-74800",
+        "cve_id": "CVE-2026-64859",
         "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "SiYuan before v3.7.4 fails to set Content-Disposition and X-Content-Type-Options headers when serving arbitrary file assets, allowing stored cross-site scripting attacks. Authenticated attackers can u",
-        "published": "2026-08-17T11:16:40.187"
+        "base_score": 9.1,
+        "description": "New API is a large language mode (LLM) gateway and artificial intelligence (AI) asset management system. Prior to 1.0.0-rc.7, the admin user list and user lookup APIs, including GET /api/user/, return",
+        "published": "2026-08-17T16:17:22.280"
+      },
+      {
+        "cve_id": "CVE-2026-71479",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "New API is a large language mode (LLM) gateway and artificial intelligence (AI) asset management system. Prior to 1.0.0-rc.18, user-controlled image n, video seconds and duration, max_tokens, max_comp",
+        "published": "2026-08-17T16:17:44.307"
+      },
+      {
+        "cve_id": "CVE-2026-75045",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "In JetBrains YouTrack before 2025.3.156085, \n2026.1.13913, \n2026.2.18112 an unauthenticated attacker could download database backups via shared draft signature",
+        "published": "2026-08-17T16:17:51.530"
+      },
+      {
+        "cve_id": "CVE-2026-51346",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "SQL Injection vulnerability in StudIP 6.0.x before 6.0.3 and 5.4.x before 5.4.12 allows a remote attacker to execute arbitrary code and obtain sensitive information via the store() functions.",
+        "published": "2026-08-17T18:17:09.320"
       },
       {
         "cve_id": "CVE-2026-14564",
@@ -371,6 +287,90 @@
         "base_score": 9.0,
         "description": "Insufficiently Protected Credentials vulnerability in Innotim Software Telecommunications and Consulting Trade Ltd. Co. Logsign SIEM allows Retrieve Embedded Sensitive Data.\n\nThis issue affects Logsig",
         "published": "2026-08-17T13:16:50.797"
+      },
+      {
+        "cve_id": "CVE-2026-74997",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In Roundcube Webmail before 1.6.18 and 1.7.x before 1.7.3, the cmd_learn driver of the markasjunk plugin is subject to remote code execution via crafted placeholder replacement values. This issue only",
+        "published": "2026-08-17T13:16:54.100"
+      },
+      {
+        "cve_id": "CVE-2026-9771",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The flash_copy() system call is verified by z_vrfy_flash_copy() in drivers/flash/flash_util.c. On builds with CONFIG_USERSPACE enabled, this handler is the kernel-side trust boundary for a user-mode c",
+        "published": "2026-08-17T17:16:57.720"
+      },
+      {
+        "cve_id": "CVE-2026-62982",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Glances is an open-source system cross-platform monitoring tool. From 4.5.2 until 4.5.6, _sanitize_mustache_dict() in glances/actions.py skips nested list and dictionary strings such as process cmdlin",
+        "published": "2026-08-17T18:17:56.740"
+      },
+      {
+        "cve_id": "CVE-2026-75060",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "In JetBrains PyCharm before 2026.2.1 code execution was possible via unauthenticated Jupyter MCP tools",
+        "published": "2026-08-17T16:17:53.227"
+      },
+      {
+        "cve_id": "CVE-2026-46345",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "compliance-trestle is a tooling platform for managing compliance as code. Prior to versions 3.12.2 and 4.0.3, the `-o/--output` argument in `trestle author jinja` allows writing files outside the inte",
+        "published": "2026-08-17T18:16:38.393"
+      },
+      {
+        "cve_id": "CVE-2026-75048",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "In JetBrains YouTrack before 2026.2.18068 stored XSS via the fenced code-block language label was possible",
+        "published": "2026-08-17T16:17:51.870"
+      },
+      {
+        "cve_id": "CVE-2026-19693",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "extract-zip through 2.0.1 containment-checks only the parent directory of each archive entry and never the entry's own final path component, so an archive containing two entries with identical names -",
+        "published": "2026-08-17T14:20:20.737"
+      },
+      {
+        "cve_id": "CVE-2026-75044",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "In JetBrains YouTrack before 2025.3.156085, \n2026.1.13914, \n2026.2.18095 missing authorisation allowed an authenticated user to delete arbitrary entities via the mailbox endpoint",
+        "published": "2026-08-17T16:17:51.410"
+      },
+      {
+        "cve_id": "CVE-2026-75051",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "In JetBrains YouTrack before 2026.2.17917 unauthorised project transfer between organisations was possible",
+        "published": "2026-08-17T16:17:52.213"
+      },
+      {
+        "cve_id": "CVE-2026-33437",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Stirling-PDF is a locally hosted web application that facilitates various operations on PDF files. Prior to 2.0.0, the Get Info workflow in app/core/src/main/resources/templates/security/get-info-on-p",
+        "published": "2026-08-17T18:16:35.650"
+      },
+      {
+        "cve_id": "CVE-2026-16138",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "In Progress ShareFile Storage Zones Controller v5.12.5 and below versions, unsafe deserialization of untrusted file metadata can allow a user with write access to a Network share to execute arbitrary ",
+        "published": "2026-08-17T14:20:19.797"
+      },
+      {
+        "cve_id": "CVE-2026-15218",
+        "severity": "HIGH",
+        "base_score": 7.9,
+        "description": "A flaw was found in the maas-api and maas-controller ServiceAccounts within Red Hat OpenShift AI. These ServiceAccounts are granted cluster-wide permissions that exceed their operational requirements.",
+        "published": "2026-08-17T14:20:19.357"
       }
     ]
   },
