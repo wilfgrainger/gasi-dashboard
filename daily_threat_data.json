@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-18T00:40:16.400959+00:00",
+  "generated_at": "2026-08-18T04:25:31.978234+00:00",
   "threat_score": {
-    "score": 7.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 4.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 19,
-        "score": 3.0,
+        "value": 0,
+        "score": 0.5,
         "max": 3
       },
       {
@@ -228,151 +228,10 @@
     ]
   },
   "nvd": {
-    "total": 342,
-    "critical_count": 19,
-    "high_count": 24,
-    "cves": [
-      {
-        "cve_id": "CVE-2026-19977",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "A vulnerability was detected in EFM ipTIME A3004T 14.19.0. The affected element is the function httpcon_check_session_url of the component Session Validation. Performing a manipulation results in impr",
-        "published": "2026-08-17T03:16:50.517"
-      },
-      {
-        "cve_id": "CVE-2026-74843",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "A vulnerability was determined in Wavlink WN531P3 and WN535M1 V250922. Affected by this vulnerability is the function strcpy of the file /etc/lighttpd/www/cgi-bin/export_pingortrace.cgi of the compone",
-        "published": "2026-08-17T12:18:58.180"
-      },
-      {
-        "cve_id": "CVE-2026-74872",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "openssl_encrypt versions before 1.4.0 contain an arbitrary code execution vulnerability in the Whirlpool hash implementation that uses broad glob patterns to load .so modules without integrity verific",
-        "published": "2026-08-17T11:16:41.560"
-      },
-      {
-        "cve_id": "CVE-2026-74875",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "openssl_encrypt versions before 1.4.0 silently skip JSON schema validation when the jsonschema library is not installed, allowing malformed metadata to be accepted. Attackers can remove the jsonschema",
-        "published": "2026-08-17T11:16:41.943"
-      },
-      {
-        "cve_id": "CVE-2026-74876",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "openssl_encrypt versions before 1.4.0 contain a vulnerability in PublicKeyBundle.from_dict() that creates key bundles from untrusted data without verifying signatures. Attackers can call from_dict() f",
-        "published": "2026-08-17T11:16:42.073"
-      },
-      {
-        "cve_id": "CVE-2026-74878",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "openssl_encrypt versions before 1.4.0 use an in-memory rate limiter for TOTP brute-force protection that is not shared across workers and is lost on server restart. Attackers can distribute authentica",
-        "published": "2026-08-17T11:16:42.330"
-      },
-      {
-        "cve_id": "CVE-2026-74880",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "openssl_encrypt versions before 1.4.0 accept refresh tokens as URL query parameters in keyserver and telemetry server routes. Attackers can extract tokens from server logs, proxy logs, browser history",
-        "published": "2026-08-17T11:16:42.593"
-      },
-      {
-        "cve_id": "CVE-2026-74886",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "openssl_encrypt versions before 1.4.0 contain a plugin sandbox bypass vulnerability where the PluginImportGuard blocks a different set of modules than the AST analyzer's DANGEROUS_MODULES set. Attacke",
-        "published": "2026-08-17T11:16:43.390"
-      },
-      {
-        "cve_id": "CVE-2026-74889",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "openssl_encrypt versions before 1.4.0 use HKDF with no salt and static info parameter in key normalization functions, reducing entropy extraction and determinism. Attackers can exploit predictable key",
-        "published": "2026-08-17T11:16:43.803"
-      },
-      {
-        "cve_id": "CVE-2026-74891",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "openssl_encrypt versions before 1.4.0 contain hardcoded database credentials in standalone server configuration files. Attackers on the same network can access PostgreSQL databases using well-known de",
-        "published": "2026-08-17T11:16:44.120"
-      },
-      {
-        "cve_id": "CVE-2026-74894",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "openssl_encrypt before 1.4.0 contains an authentication bypass vulnerability in the verify_api_token function that accepts any non-empty Bearer token string without validation. Attackers can upload ar",
-        "published": "2026-08-17T11:16:44.523"
-      },
-      {
-        "cve_id": "CVE-2026-74895",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "openssl_encrypt versions before 1.4.0 fail to apply sandbox restrictions in the default process isolation mode for plugin execution. Attackers can execute malicious plugins with unrestricted access to",
-        "published": "2026-08-17T11:16:44.653"
-      },
-      {
-        "cve_id": "CVE-2026-74896",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "openssl_encrypt versions before 1.4.0 contain a sandbox escape vulnerability in the DangerousPatternVisitor AST analyzer that fails to detect dunder attribute traversal techniques. Attackers can use _",
-        "published": "2026-08-17T11:16:44.787"
-      },
-      {
-        "cve_id": "CVE-2026-74899",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "openssl_encrypt versions before 1.4.0 contain a sandbox escape vulnerability in IsolatedPluginExecutor that exposes Python type objects in restricted exec() builtins. Attackers can traverse the Python",
-        "published": "2026-08-17T11:16:44.917"
-      },
-      {
-        "cve_id": "CVE-2026-74900",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "openssl_encrypt versions before 1.4.0 contain a critical vulnerability in pqc.py where KEM decapsulation failures silently fall back to simulation mode, generating a deterministic shared secret from o",
-        "published": "2026-08-17T11:16:45.050"
-      },
-      {
-        "cve_id": "CVE-2026-74901",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "openssl_encrypt versions before 1.4.0 contain an authentication bypass vulnerability in pqc.py where AES-GCM decryption failures trigger fallback to unauthenticated AES-CTR mode. Attackers can modify ",
-        "published": "2026-08-17T11:16:45.183"
-      },
-      {
-        "cve_id": "CVE-2026-74799",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "SiYuan before 3.7.4 registers Go net/http/pprof debug endpoints including heap and goroutine dumps without authentication when --mode flag is not set to exactly prod. Attackers can access /debug/pprof",
-        "published": "2026-08-17T11:16:40.017"
-      },
-      {
-        "cve_id": "CVE-2026-74800",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "SiYuan before v3.7.4 fails to set Content-Disposition and X-Content-Type-Options headers when serving arbitrary file assets, allowing stored cross-site scripting attacks. Authenticated attackers can u",
-        "published": "2026-08-17T11:16:40.187"
-      },
-      {
-        "cve_id": "CVE-2026-14564",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "Insufficiently Protected Credentials vulnerability in Innotim Software Telecommunications and Consulting Trade Ltd. Co. Logsign SIEM allows Retrieve Embedded Sensitive Data.\n\nThis issue affects Logsig",
-        "published": "2026-08-17T13:16:50.797"
-      },
-      {
-        "cve_id": "CVE-2026-74845",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Official Document Management System developed by 2100 Technology has an Arbitrary File Upload vulnerability, allowing authenticated remote attackers to upload and execute web shell backdoors, thereby ",
-        "published": "2026-08-17T10:16:42.403"
-      }
-    ]
+    "total": 0,
+    "critical_count": 0,
+    "high_count": 0,
+    "cves": []
   },
   "top_ips": {
     "ips": [],
