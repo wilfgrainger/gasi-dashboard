@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T16:19:26.419924+00:00",
+  "generated_at": "2026-08-19T20:15:55.979415+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 23,
+        "value": 24,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
+        "value": 9,
         "score": 2.5,
         "max": 3
       },
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1670,
-    "recent_30d_count": 23,
+    "total_catalog_count": 1671,
+    "recent_30d_count": 24,
     "recent": [
+      {
+        "cve_id": "CVE-2026-64849",
+        "vendor": "MLflow",
+        "product": "MLflow",
+        "name": "MLflow Server-Side Request Forgery Vulnerability",
+        "date_added": "2026-08-19",
+        "due_date": "2026-09-02",
+        "description": "MLflow contains a server-side request forgery vulnerability that can allow attackers to reach internal or cloud metadata services and receive response_status and response_body.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-33824",
         "vendor": "Microsoft",
@@ -224,163 +234,153 @@
         "due_date": "2026-07-25",
         "description": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability which could allow an unauthorized attacker to execute code over a network.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-60137",
-        "vendor": "WordPress",
-        "product": "Core",
-        "name": "WordPress Core SQL Injection Vulnerability",
-        "date_added": "2026-07-21",
-        "due_date": "2026-08-04",
-        "description": "WordPress Core contains a SQL injection vulnerability when a plugin or theme passes untrusted input to the parameter. This vulnerability can be chained with CVE-2026-63030 to allow an unauthenticated ",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 1388,
-    "critical_count": 8,
-    "high_count": 27,
+    "total": 1391,
+    "critical_count": 9,
+    "high_count": 35,
     "cves": [
       {
-        "cve_id": "CVE-2026-66780",
+        "cve_id": "CVE-2026-75877",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "A flaw was found in the submariner-operator component. The `submariner-k8s-broker-cluster` Role, which is assigned to joined clusters, possesses excessive permissions. This allows a compromised cluste",
-        "published": "2026-08-18T18:19:23.940"
+        "description": "A flaw has been found in TRENDnet TV-IP751WIC 11.03.03. This vulnerability affects the function SystemNetworkChanged/SystemDDNSChanged/SystemEmailChanged/SystemFTPChanged/websCheckRealm/FUN_00432574/F",
+        "published": "2026-08-18T20:17:33.340"
       },
       {
-        "cve_id": "CVE-2026-55166",
+        "cve_id": "CVE-2026-60702",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "Lemur manages TLS certificate creation. Prior to 1.9.2, authenticated users could influence an ACME authority acme_url without an effective server-side destination restriction and trigger AcmeHandler.",
-        "published": "2026-08-18T19:16:58.783"
+        "description": "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily ",
+        "published": "2026-08-18T21:16:39.660"
       },
       {
-        "cve_id": "CVE-2026-67271",
+        "cve_id": "CVE-2026-60720",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Vulnerability in the Oracle Identity Manager product of Oracle Fusion Middleware (component: OIM Legacy UI).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vu",
+        "published": "2026-08-18T21:16:40.140"
+      },
+      {
+        "cve_id": "CVE-2026-57826",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Dell PowerStore SDNAS, contains an Out-of-bounds Write vulnerability in the SMB/CIFS. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to Denial of ",
-        "published": "2026-08-18T17:17:00.973"
+        "description": "An issue was discovered in openHiTLS 0.2.0 through 0.3.2. In the X.509 certificate chain verification, the basic constraints extension and CA flag processing of intermediate CAs are only verified for ",
+        "published": "2026-08-18T20:17:19.193"
       },
       {
-        "cve_id": "CVE-2026-47627",
+        "cve_id": "CVE-2026-60672",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "NVIDIA Triton Inference Server for Linux contains a vulnerability where an attacker could cause path traversal. A successful exploit might lead to denial of service.",
-        "published": "2026-08-18T19:16:51.290"
+        "description": "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily ",
+        "published": "2026-08-18T21:16:38.723"
       },
       {
-        "cve_id": "CVE-2026-18963",
+        "cve_id": "CVE-2026-60696",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily ",
+        "published": "2026-08-18T21:16:39.317"
+      },
+      {
+        "cve_id": "CVE-2026-60698",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily ",
+        "published": "2026-08-18T21:16:39.430"
+      },
+      {
+        "cve_id": "CVE-2026-60721",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Vulnerability in the Oracle Identity Manager product of Oracle Fusion Middleware (component: OIM Legacy UI).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vu",
+        "published": "2026-08-18T21:16:40.253"
+      },
+      {
+        "cve_id": "CVE-2026-60591",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "A flaw was found in the reset-credentials flow of the keycloak-services component, which is the core engine for identity and access management in Red Hat Build of Keycloak. The issue allows an unauthe",
-        "published": "2026-08-18T17:16:57.083"
+        "description": "Vulnerability in the Oracle Hospitality Simphony product of Oracle Food and Beverage Applications (component: POS).  Supported versions that are affected are 19.8-19.8.5, 19.9-19.9.3 and  19.10-19.10.",
+        "published": "2026-08-18T21:16:38.483"
       },
       {
-        "cve_id": "CVE-2026-52723",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "ePA 3.x Integration implements the authorization workflow and writes Medical Information Objects to Germany's electronic patient record. Prior to 1.3.0, ePA 3.x Integration performs VAU server certifi",
-        "published": "2026-08-18T17:16:59.200"
-      },
-      {
-        "cve_id": "CVE-2026-75130",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "Context7 through 2.1.2 contains a prompt injection vulnerability that allows attackers to execute malicious instructions in connected AI coding agents by injecting unsanitized content through the Cust",
-        "published": "2026-08-18T18:19:34.197"
-      },
-      {
-        "cve_id": "CVE-2026-75625",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "Kraken agents fail to verify peer-to-peer downloaded blobs against their requested SHA-256 digest before committing to the content-addressable cache, relying only on CRC32 checksums for piece validati",
-        "published": "2026-08-18T18:19:34.343"
-      },
-      {
-        "cve_id": "CVE-2026-49228",
+        "cve_id": "CVE-2026-60715",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Vvveb is a powerful and easy to use CMS with page builder to build websites, blogs or ecommerce stores. Prior to 1.0.8.4, Vvveb backend product operations allow a low-privileged Vendor to access produ",
-        "published": "2026-08-18T17:16:58.263"
+        "description": "Vulnerability in the Oracle Identity Manager product of Oracle Fusion Middleware (component: OIM Legacy UI).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vu",
+        "published": "2026-08-18T21:16:39.897"
       },
       {
-        "cve_id": "CVE-2026-61574",
+        "cve_id": "CVE-2026-60716",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "authentik is an open-source identity provider. Prior to 2026.2.6 and 2026.5.5, the Remote Access Control endpoint list returns every configured endpoint to any authenticated user regardless of which a",
-        "published": "2026-08-18T17:16:59.813"
+        "description": "Vulnerability in the Oracle Identity Manager product of Oracle Fusion Middleware (component: OIM Legacy UI).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vu",
+        "published": "2026-08-18T21:16:40.017"
       },
       {
-        "cve_id": "CVE-2026-48508",
+        "cve_id": "CVE-2026-60722",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Lemur manages TLS certificate creation. Prior to 1.9.1, StrictRolePermission and AuthorityCreatorPermission in lemur/auth/permissions.py call flask_principal.Permission.__init__() with zero Need objec",
-        "published": "2026-08-18T18:17:41.073"
+        "description": "Vulnerability in the Oracle Identity Manager product of Oracle Fusion Middleware (component: OIM Legacy UI).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vu",
+        "published": "2026-08-18T21:16:40.380"
       },
       {
-        "cve_id": "CVE-2026-75924",
+        "cve_id": "CVE-2026-54347",
         "severity": "HIGH",
         "base_score": 8.7,
-        "description": "A flaw was found in managed-serviceaccount. A compromised addon-manager pod, due to its ClusterRole granting excessive permissions, can read any secret across all namespaces. Additionally, it can appr",
-        "published": "2026-08-18T17:17:03.457"
+        "description": "Froxlor is open source server administration software. Prior to 2.3.8, DNS TXT record content accepted by lib/Froxlor/Api/Commands/DomainZones.php can contain HTML special characters, lib/Froxlor/UI/C",
+        "published": "2026-08-18T21:16:36.027"
       },
       {
-        "cve_id": "CVE-2026-49224",
+        "cve_id": "CVE-2026-60707",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Vvveb is a powerful and easy to use CMS with page builder to build websites, blogs or ecommerce stores. Prior to 1.0.8.4, Vvveb backend post revision operations allow a low-privileged Author to access",
-        "published": "2026-08-18T17:16:57.977"
+        "base_score": 8.7,
+        "description": "Vulnerability in the Oracle Identity Manager product of Oracle Fusion Middleware (component: Security).  Supported versions that are affected are 12.2.1.4.0 and  14.1.2.1.0. Easily exploitable vulnera",
+        "published": "2026-08-18T21:16:39.770"
       },
       {
-        "cve_id": "CVE-2026-49225",
+        "cve_id": "CVE-2026-60699",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Vvveb is a powerful and easy to use CMS with page builder to build websites, blogs or ecommerce stores. Prior to 1.0.8.4, Vvveb backend product revision operations allow a low-privileged Vendor to acc",
-        "published": "2026-08-18T17:16:58.117"
+        "base_score": 8.6,
+        "description": "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Easily ",
+        "published": "2026-08-18T21:16:39.543"
       },
       {
-        "cve_id": "CVE-2026-66783",
+        "cve_id": "CVE-2026-47719",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "A flaw was found in the `submariner-operator` component of Red Hat Advanced Cluster Management for Kubernetes. This vulnerability allows a cluster administrator, or any user with permissions to modify",
-        "published": "2026-08-18T17:17:00.840"
+        "description": "FUXA is a web-based Process Visualization (SCADA/HMI/Dashboard) software. Prior to 1.3.2, the DEVICE_WEBAPI_REQUEST and DEVICE_PROPERTY Socket.IO handlers in server/runtime/index.js omit isSocketWrite",
+        "published": "2026-08-18T20:17:15.103"
       },
       {
-        "cve_id": "CVE-2026-70415",
+        "cve_id": "CVE-2026-60592",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Dell PowerStore SDNAS contains a Buffer Copy without Checking Size of Input vulnerability in the NFS/RPC. An unauthenticated attacker with remote access could potentially exploit this vulnerability, l",
-        "published": "2026-08-18T17:17:01.973"
+        "base_score": 8.2,
+        "description": "Vulnerability in the MySQL Cluster product of Oracle MySQL (component: Cluster: NDB Operator).  Supported versions that are affected are 8.0.0-8.0.47, 8.4.0-8.4.10 and  9.7.0-9.7.1. Easily exploitable",
+        "published": "2026-08-18T21:16:38.603"
       },
       {
-        "cve_id": "CVE-2026-44472",
+        "cve_id": "CVE-2026-71308",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Saleor is an e-commerce platform. From 2.10.0rc1 until 3.21.67, 3.22.63, and 3.23.22, the account activation flow treats email verification as sufficient proof of account ownership and automatically a",
-        "published": "2026-08-18T18:17:33.573"
+        "description": "Lemur manages TLS certificate creation. From 0.5.0 until 1.9.3, certificate create, upload, and edit requests accepted replaces[] or replacements identifiers that AssociatedCertificateSchema resolved ",
+        "published": "2026-08-18T20:17:23.740"
       },
       {
-        "cve_id": "CVE-2026-50143",
+        "cve_id": "CVE-2026-52793",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "The Apify MCP server enables AI agents to extract data from websites using ready-made scrapers, crawlers, and automation tools available on the Apify Store. Prior to 0.10.11, getActorMCPServerURL in s",
-        "published": "2026-08-18T18:17:53.227"
+        "description": "Froxlor is open source server administration software. Prior to 2.3.7, the API authentication path in lib/Froxlor/Api/FroxlorRPC.php and FroxlorRPC::validateAuth accepts an API key and secret for an a",
+        "published": "2026-08-18T21:16:34.650"
       },
       {
-        "cve_id": "CVE-2026-67262",
+        "cve_id": "CVE-2026-60415",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Dell PowerStore contains a Missing Authorization vulnerability. An attacker with access to a mapped host could exploit this vulnerability to read from or write to LUNs that the host is not authorized ",
-        "published": "2026-08-18T18:19:24.927"
-      },
-      {
-        "cve_id": "CVE-2025-9210",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Missing signature validation in JSON Web Tokens in Otalio Ship Property Management System versions before 2.22.0 allows authenticated attackers to escalate privileges via tampering with JWTs",
-        "published": "2026-08-18T19:16:43.650"
+        "description": "Vulnerability in the Oracle WebLogic Server product of Oracle Fusion Middleware (component: Core).  Supported versions that are affected are 12.2.1.4.0, 14.1.1.0.0, 14.1.2.0.0 and  15.1.1.0.0. Difficu",
+        "published": "2026-08-18T21:16:38.130"
       }
     ]
   },
