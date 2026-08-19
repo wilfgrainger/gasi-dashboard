@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-19T08:24:33.422152+00:00",
+  "generated_at": "2026-08-19T12:24:27.068244+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
-        "score": 2.5,
+        "value": 11,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,58 +238,72 @@
     ]
   },
   "nvd": {
-    "total": 1496,
-    "critical_count": 9,
-    "high_count": 32,
+    "total": 1455,
+    "critical_count": 11,
+    "high_count": 36,
     "cves": [
       {
-        "cve_id": "CVE-2026-75843",
+        "cve_id": "CVE-2026-75874",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Sandbox escape in the Remote Settings Client component. This vulnerability was fixed in Firefox 154 and Thunderbird 154.",
+        "published": "2026-08-18T13:17:43.500"
+      },
+      {
+        "cve_id": "CVE-2026-32444",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "ArcadeDB before 26.8.1 fails to bind the authenticated principal on the gRPC transaction executor thread in beginTransaction, allowing authenticated readers to execute JavaScript commands without scri",
-        "published": "2026-08-18T12:19:34.740"
+        "description": "Contributor Remote Code Execution (RCE) in Cwicly <= 1.4.4 versions.",
+        "published": "2026-08-18T14:17:03.263"
       },
       {
-        "cve_id": "CVE-2026-75851",
+        "cve_id": "CVE-2026-32463",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "ArcadeDB server (com.arcadedb:arcadedb-server) in versions 26.7.3 and earlier fails to propagate the authenticated principal to asynchronous command worker threads. When an HTTP command is submitted w",
-        "published": "2026-08-18T12:19:35.457"
+        "description": "Contributor Arbitrary File Upload in Sync Post With Other Site <= 1.9.3 versions.",
+        "published": "2026-08-18T14:17:03.400"
       },
       {
-        "cve_id": "CVE-2026-75627",
+        "cve_id": "CVE-2026-32474",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Contributor Arbitrary File Upload in Templatiq <= 0.2.5 versions.",
+        "published": "2026-08-18T15:16:53.083"
+      },
+      {
+        "cve_id": "CVE-2026-74979",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Bastillion fails to properly validate request URI paths in its controller dispatcher, allowing unauthenticated attackers to bypass authentication filters by prefixing requests with arbitrary path segm",
-        "published": "2026-08-18T11:16:52.060"
+        "description": "Mitigation bypass in the Add-ons Manager component. This vulnerability was fixed in Firefox 154, Firefox ESR 153.1, Thunderbird 154, and Thunderbird 153.1.",
+        "published": "2026-08-18T13:17:36.683"
       },
       {
-        "cve_id": "CVE-2026-75852",
+        "cve_id": "CVE-2026-74990",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "ArcadeDB versions before 26.8.1 fail to enforce SASL authentication on data commands in the MongoDB wire-protocol plugin. Unauthenticated attackers can issue insert, find, update, delete, and create c",
-        "published": "2026-08-18T12:19:35.593"
+        "description": "Internally found bugs present in Thunderbird ESR 140.13, Thunderbird ESR 153.0 and Thunderbird 153. Some of these bugs showed evidence of memory corruption or another security-relevant defect and we p",
+        "published": "2026-08-18T13:17:40.930"
       },
       {
-        "cve_id": "CVE-2026-75854",
+        "cve_id": "CVE-2026-32470",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "ArcadeDB versions before 26.8.1 contain a missing authentication vulnerability in the Redis wire-protocol plugin that allows unauthenticated attackers to read, write, and delete data. Attackers can co",
-        "published": "2026-08-18T12:19:35.860"
+        "description": "Unauthenticated PHP Object Injection in FundEngine <= 1.7.9 versions.",
+        "published": "2026-08-18T15:16:52.690"
       },
       {
-        "cve_id": "CVE-2026-75626",
+        "cve_id": "CVE-2026-75783",
         "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "SpiderFoot fails to HTML-escape correlation titles built from external scan data sources including server banners and metadata. Attackers can inject malicious HTML elements with event handlers into co",
-        "published": "2026-08-18T11:16:51.920"
+        "base_score": 9.6,
+        "description": "A security vulnerability has been detected in TRENDnet TEW-WLC100P 12.07b01. Affected by this vulnerability is an unknown functionality of the file /sbin/netifd of the component DHCP blobmsg Handler. ",
+        "published": "2026-08-18T13:17:43.287"
       },
       {
-        "cve_id": "CVE-2026-75837",
+        "cve_id": "CVE-2026-28192",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Grav before 2.0.14 fails to guard the access field in the core group blueprint with the required security@: admin.super restriction. A delegated admin.users operator can save a group with access[admin",
-        "published": "2026-08-18T12:19:33.913"
+        "base_score": 9.6,
+        "description": "Unauthenticated Arbitrary File Upload in Piotnet Addons For Elementor Pro <= 7.1.67 versions.",
+        "published": "2026-08-18T14:17:02.197"
       },
       {
         "cve_id": "CVE-2026-74938",
@@ -304,27 +318,6 @@
         "base_score": 9.1,
         "description": "Same-origin policy bypass in the DOM: Service Workers component. This vulnerability was fixed in Firefox 154, Firefox ESR 153.1, Thunderbird 154, and Thunderbird 153.1.",
         "published": "2026-08-18T13:17:32.623"
-      },
-      {
-        "cve_id": "CVE-2026-75827",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Grav before 2.0.15 contains an arbitrary file write vulnerability in the Blueprint dynamic-data bare-function validation that uses an incomplete denylist instead of a positive allowlist. Attackers wit",
-        "published": "2026-08-18T12:19:32.553"
-      },
-      {
-        "cve_id": "CVE-2026-75836",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Grav API plugin (getgrav/grav-plugin-api, bundled with Grav's admin-next/API stack) before 1.0.14 fails to enforce the authorize requirement in MenubarController::executeAction(). While the GET /m",
-        "published": "2026-08-18T12:19:33.780"
-      },
-      {
-        "cve_id": "CVE-2026-75853",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "ArcadeDB's Gremlin wire-protocol plugin (com.arcadedb:arcadedb-gremlin) in versions <= 26.7.3 enforces authentication (SASL PLAIN) but performs no authorization: it never checks database access permis",
-        "published": "2026-08-18T12:19:35.727"
       },
       {
         "cve_id": "CVE-2026-74935",
@@ -381,6 +374,13 @@
         "base_score": 8.8,
         "description": "Privilege escalation due to use-after-free in the Graphics: Canvas2D component. This vulnerability was fixed in Firefox 154, Firefox ESR 140.14, Firefox ESR 153.1, Thunderbird 154, Thunderbird 140.14,",
         "published": "2026-08-18T13:17:31.683"
+      },
+      {
+        "cve_id": "CVE-2026-74950",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Privilege escalation in the Downloads API component. This vulnerability was fixed in Firefox 154, Firefox ESR 153.1, Thunderbird 154, and Thunderbird 153.1.",
+        "published": "2026-08-18T13:17:31.817"
       }
     ]
   },
