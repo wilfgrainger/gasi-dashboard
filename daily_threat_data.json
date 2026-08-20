@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-08-20T16:22:16.563229+00:00",
+  "generated_at": "2026-08-20T20:17:38.052791+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 20,
+        "value": 22,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 21,
-        "score": 3.0,
+        "value": 7,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -32,9 +32,29 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1671,
-    "recent_30d_count": 20,
+    "total_catalog_count": 1673,
+    "recent_30d_count": 22,
     "recent": [
+      {
+        "cve_id": "CVE-2026-72530",
+        "vendor": "TrueConf",
+        "product": "Server",
+        "name": "TrueConf Server Code Injection Vulnerability",
+        "date_added": "2026-08-20",
+        "due_date": "2026-09-03",
+        "description": "TrueConf Server contains a code injection vulnerability that could allow an unauthorized remote attacker with network access via port 4307/TCP to use a specially crafted script to break out of the iso",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-72529",
+        "vendor": "TrueConf",
+        "product": "Server",
+        "name": "TrueConf Server Missing Authentication for Critical Function Vulnerability",
+        "date_added": "2026-08-20",
+        "due_date": "2026-08-23",
+        "description": "TrueConf Server contains a missing authentication for critical function vulnerability which could allow a remote unauthorized attacker with network access via port 4307/TCP to execute an arbitrary scr",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-64849",
         "vendor": "MLflow",
@@ -214,173 +234,153 @@
         "due_date": "2026-07-30",
         "description": "Arista VeloCloud Orchestrator On-Prem contains an OS command injection vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful ex",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-16232",
-        "vendor": "Check Point",
-        "product": "SmartConsole",
-        "name": "Check Point SmartConsole Improper Authentication Vulnerability",
-        "date_added": "2026-07-22",
-        "due_date": "2026-07-25",
-        "description": "Check Point SmartConsole contains an improper authentication vulnerability which could allow an unauthenticated remote attacker to obtain an application login token and use it to authenticate with ful",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-50522",
-        "vendor": "Microsoft",
-        "product": "SharePoint",
-        "name": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability ",
-        "date_added": "2026-07-22",
-        "due_date": "2026-07-25",
-        "description": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability which could allow an unauthorized attacker to execute code over a network.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 588,
-    "critical_count": 21,
-    "high_count": 25,
+    "total": 521,
+    "critical_count": 7,
+    "high_count": 38,
     "cves": [
       {
-        "cve_id": "CVE-2026-20030",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Crosswork engineering team has conducted a comprehensive internal security review. This review resulted in a ",
-        "published": "2026-08-19T17:18:38.957"
-      },
-      {
-        "cve_id": "CVE-2026-20315",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Secure Workload engineering team has conducted a comprehensive internal security review. This review resulted",
-        "published": "2026-08-19T17:18:39.813"
-      },
-      {
-        "cve_id": "CVE-2026-20317",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Secure Workload engineering team has conducted a comprehensive internal security review. This review resulted",
-        "published": "2026-08-19T17:18:39.963"
-      },
-      {
-        "cve_id": "CVE-2026-20357",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Crosswork engineering team has conducted a comprehensive internal security review. This review resulted in a ",
-        "published": "2026-08-19T17:18:40.697"
-      },
-      {
-        "cve_id": "CVE-2026-20358",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Crosswork engineering team has conducted a comprehensive internal security review. This review resulted in a ",
-        "published": "2026-08-19T17:18:40.823"
-      },
-      {
-        "cve_id": "CVE-2026-20231",
+        "cve_id": "CVE-2026-76584",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Secure Workload engineering team has conducted a comprehensive internal security review. This review resulted",
-        "published": "2026-08-19T17:18:39.227"
+        "description": "A security flaw has been discovered in TRENDnet TV-IP751WIC 11.03.03. Affected by this issue is some unknown functionality of the file /cgi-bin/admin/set_time.cgi of the component alphapd. The manipul",
+        "published": "2026-08-19T21:17:38.857"
       },
       {
-        "cve_id": "CVE-2026-20359",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Crosswork engineering team has conducted a comprehensive internal security review. This review resulted in a ",
-        "published": "2026-08-19T17:18:40.943"
-      },
-      {
-        "cve_id": "CVE-2026-70496",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A flaw was found in search-v2-operator. The operator's ClusterRole has permissions equivalent to a cluster administrator, allowing it to impersonate other entities, write Role-Based Access Control (RB",
-        "published": "2026-08-19T19:17:23.230"
-      },
-      {
-        "cve_id": "CVE-2026-72529",
+        "cve_id": "CVE-2026-53545",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "A remote unauthorized attacker with network access via port 4307/TCP to the TrueConf server versions 5.3.X to 5.3.9, 5.4.X to 5.4.9, 5.5.X to 5.5.5, and earlier could execute an arbitrary script by ca",
-        "published": "2026-08-19T17:21:00.990"
+        "description": "Termix is a web-based server management platform with SSH terminal, tunneling, and file editing capabilities. Prior to 2.3.2, the DELETE /ssh/tunnel/disconnect/:tunnelName teardown path in src/backend",
+        "published": "2026-08-19T21:16:56.557"
       },
       {
-        "cve_id": "CVE-2026-75143",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "FFmpeg before commit 1c10bcc contains a heap buffer overflow in the RIST protocol reader (libavformat/librist.c). librist_read() ignored its size argument and copied the full received payload length i",
-        "published": "2026-08-19T17:21:12.577"
-      },
-      {
-        "cve_id": "CVE-2026-18315",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The TrueBooker \u2013 Appointment Booking and Scheduler System plugin for WordPress is vulnerable to Authorization Bypass Through User-Controlled Key leading to Account Takeover in all versions up to, and ",
-        "published": "2026-08-19T19:17:11.980"
-      },
-      {
-        "cve_id": "CVE-2026-20318",
+        "cve_id": "CVE-2026-53546",
         "severity": "CRITICAL",
         "base_score": 9.6,
-        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco Secure Workload engineering team has conducted a comprehensive internal security review. This review resulted",
-        "published": "2026-08-19T17:18:40.127"
+        "description": "Termix is a web-based server management platform with SSH terminal, tunneling, and file editing capabilities. Prior to 2.3.2, the terminal WebSocket accepts a user-controlled hostConfig.id and src/bac",
+        "published": "2026-08-19T21:16:56.697"
       },
       {
-        "cve_id": "CVE-2026-16687",
+        "cve_id": "CVE-2026-53548",
         "severity": "CRITICAL",
         "base_score": 9.6,
-        "description": "IBM Power Systems Firmware FW1120.00, FW1110.00 through FW1110.30, FW1060.00 through FW1060.80, and FW950.00 through FW950.H2  is affected by a vulnerability in the ASMI web interface. An unauthentica",
-        "published": "2026-08-19T19:17:10.280"
+        "description": "Termix is a web-based server management platform with SSH terminal, tunneling, and file editing capabilities. Prior to 2.6.1, the GET /host/db/host/:id/password endpoint in src/backend/database/routes",
+        "published": "2026-08-19T21:16:57.000"
       },
       {
-        "cve_id": "CVE-2026-16835",
+        "cve_id": "CVE-2026-76310",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "IBM Power Systems Firmware FW1120.00, FW1110.00 through FW1110.30, FW1060.00 through FW1060.80, and FW950.00 through FW950.H2 is affected by a vulnerability in the FSP management network protocol. An ",
-        "published": "2026-08-19T19:17:10.690"
+        "base_score": 9.4,
+        "description": "In Splunk Enterprise versions below 10.4.2, 10.2.6, 10.0.9, and 9.4.14, an unauthenticated user who has an embedded report token could download the associated search job dispatch archive, recover sess",
+        "published": "2026-08-19T22:17:14.700"
       },
       {
-        "cve_id": "CVE-2026-66794",
+        "cve_id": "CVE-2026-76311",
         "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "A flaw was found in the `cluster-proxy-addon` component of Multicluster Engine for Kubernetes. This vulnerability allows an unauthenticated attacker, who can access the user-facing route, to bypass au",
-        "published": "2026-08-19T18:17:16.547"
+        "base_score": 9.4,
+        "description": "In Splunk Enterprise versions below 10.4.2, 10.2.6, 10.0.9, and 9.4.14, an unauthenticated user who has an embedded report token could download the dispatch archive for an embedded report search job a",
+        "published": "2026-08-19T22:17:14.837"
       },
       {
-        "cve_id": "CVE-2026-48024",
+        "cve_id": "CVE-2026-76312",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Wazuh is a free and open source platform used for threat prevention, detection, and response. From 4.0.0 until 4.14.6 and 5.0.0-beta3, cluster.unmerge_info() in framework/wazuh/core/cluster/cluster.py",
-        "published": "2026-08-19T17:18:51.093"
+        "base_score": 9.4,
+        "description": "In Splunk Enterprise versions below 10.4.1, 10.2.6, 10.0.9, and 9.4.14, an unauthenticated user who can read the Hypertext Markup Language (HTML) source of a page that embeds a Splunk report could use",
+        "published": "2026-08-19T22:17:14.960"
       },
       {
-        "cve_id": "CVE-2026-48162",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Wazuh is a free and open source platform used for threat prevention, detection, and response. From 4.0.0 until 4.14.6 and 5.0.0-beta3, DistributedAPI.send_tmp_file() in framework/wazuh/core/cluster/da",
-        "published": "2026-08-19T17:18:51.233"
+        "cve_id": "CVE-2026-12522",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The HL7800 cellular modem driver's +CGCONTRDP: response handler on_cmd_atcmdinfo_ipaddr() in drivers/modem/vendor_standalone/hl7800.c parses the PDP-context dynamic parameters (local address, subnet m",
+        "published": "2026-08-19T21:16:53.507"
       },
       {
-        "cve_id": "CVE-2026-49441",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Wazuh is a free and open source platform used for threat prevention, detection, and response. From 4.3.0 until 4.14.6 and 5.0.0-beta3, the non-merged branch of process_files_from_worker() in framework",
-        "published": "2026-08-19T17:18:54.073"
+        "cve_id": "CVE-2026-53542",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Termix is a web-based server management platform with SSH terminal, tunneling, and file editing capabilities. Prior to 2.3.2, the archive creation endpoint in src/backend/ssh/file-manager.ts passes se",
+        "published": "2026-08-19T21:16:56.400"
       },
       {
-        "cve_id": "CVE-2026-71470",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A flaw was found in the search-v2-operator. This vulnerability allows a privileged user, specifically a Custom Resource (CR) editor, to manipulate Search CR fields such as imageOverride, arguments, an",
-        "published": "2026-08-19T17:20:57.063"
+        "cve_id": "CVE-2026-53547",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Termix is a web-based server management platform with SSH terminal, tunneling, and file editing capabilities. Prior to 2.3.2, the POST /database/export endpoint creates a user export that includes the",
+        "published": "2026-08-19T21:16:56.843"
       },
       {
-        "cve_id": "CVE-2026-72530",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "A remote unauthorized attacker with network access via port 4307/TCP to the TrueConf server versions 5.3.X to 5.3.9, 5.4.X to 5.4.9, 5.5.X to 5.5.5, and earlier could use a specially crafted script to",
-        "published": "2026-08-19T17:21:01.130"
+        "cve_id": "CVE-2026-76253",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In Splunk Enterprise versions below 10.4.2, 10.2.6, 10.0.9, and 9.4.14, a user that holds a role with the schedule_search capability could run arbitrary Search Processing Language (SPL) commands with ",
+        "published": "2026-08-19T22:17:13.130"
+      },
+      {
+        "cve_id": "CVE-2026-76259",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In Splunk Enterprise for Windows versions below 10.4.2, 10.2.6, 10.0.9, 9.4.13, and 9.3.14, a local user with access to the Windows host could bind to the management port before Splunk Enterprise star",
+        "published": "2026-08-19T22:17:13.927"
+      },
+      {
+        "cve_id": "CVE-2026-76313",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In Splunk Enterprise versions below 10.4.2, 10.2.6, 10.0.9, and 9.4.14, a user who does not hold the \"admin\" or \"power\" Splunk roles could perform Remote Code Execution (RCE) by uploading a malicious ",
+        "published": "2026-08-19T22:17:15.117"
+      },
+      {
+        "cve_id": "CVE-2026-76314",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In Splunk Enterprise versions below 10.4.2, 10.2.6, 10.0.9, and 9.4.14, a user who does not hold the \"admin\" or \"power\" Splunk roles could perform Remote Code Execution (RCE) by submitting crafted Spl",
+        "published": "2026-08-19T22:17:15.250"
+      },
+      {
+        "cve_id": "CVE-2026-76315",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In Splunk Enterprise versions below 10.4.2, 10.2.6, 10.0.9, and 9.4.14, a user who does not hold the \"admin\" or \"power\" Splunk roles could execute arbitrary code on the Splunk platform instance throug",
+        "published": "2026-08-19T22:17:15.370"
+      },
+      {
+        "cve_id": "CVE-2026-76316",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In Splunk Enterprise versions below 10.4.1, 10.2.5, 10.0.9, and 9.4.14, an unauthenticated user who can reach the Splunk management port could store a Search Processing Language (SPL) pipeline that ru",
+        "published": "2026-08-19T22:17:15.500"
+      },
+      {
+        "cve_id": "CVE-2026-76317",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In Splunk Enterprise versions below 10.4.2, 10.2.6, 10.0.9, and 9.4.14, a user who does not hold the \"admin\" or \"power\" Splunk roles could move files that the user account running Splunk Enterprise ca",
+        "published": "2026-08-19T22:17:15.627"
+      },
+      {
+        "cve_id": "CVE-2026-76319",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In Splunk Enterprise versions below 10.4.2, 10.2.6, 10.0.9, and 9.4.14, a low-privileged user that does not hold the fsh_manage capability could perform Remote Code Execution through Federated Search ",
+        "published": "2026-08-19T22:17:15.880"
+      },
+      {
+        "cve_id": "CVE-2026-76335",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In Splunk Enterprise versions below 10.4.2, 10.2.6, 10.0.9, and 9.4.14, an authenticated user who does not hold a role with the edit_manager_xml capability could write a malicious Splunk Web Manager E",
+        "published": "2026-08-19T22:17:17.973"
+      },
+      {
+        "cve_id": "CVE-2026-12633",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The IPv6 neighbor-discovery code in subsys/net/ip/ipv6_nbr.c processes the 6LoWPAN Context Option (6CO, RFC 6775) carried inside ICMPv6 Router Advertisements. In handle_ra_6co() the 8-bit context_len ",
+        "published": "2026-08-19T21:16:53.633"
       }
     ]
   },
