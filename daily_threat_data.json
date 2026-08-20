@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-20T04:26:50.515994+00:00",
+  "generated_at": "2026-08-20T08:26:00.694920+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 12,
+        "value": 10,
         "score": 3.0,
         "max": 3
       },
@@ -238,31 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 675,
-    "critical_count": 12,
-    "high_count": 36,
+    "total": 625,
+    "critical_count": 10,
+    "high_count": 41,
     "cves": [
-      {
-        "cve_id": "CVE-2026-18051",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "The W3 Total Cache WordPress plugin before 2.10.5 does not properly validate the request path it uses to build cache file names, allowing unauthenticated attackers to write a file into any existing di",
-        "published": "2026-08-19T06:17:36.863"
-      },
-      {
-        "cve_id": "CVE-2026-18031",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The TabaPay Gateway WordPress plugin through 1.4.0 does not validate the payment callback before establishing a session for the account associated with the referenced order, allowing unauthenticated a",
-        "published": "2026-08-19T06:17:36.537"
-      },
-      {
-        "cve_id": "CVE-2026-18776",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The TrueBooker  WordPress plugin before 1.2.7 does not have proper authorisation checks in some of its AJAX actions, allowing unauthenticated users to change the email address of arbitrary users, incl",
-        "published": "2026-08-19T06:17:37.973"
-      },
       {
         "cve_id": "CVE-2026-66613",
         "severity": "CRITICAL",
@@ -299,6 +278,13 @@
         "published": "2026-08-19T13:18:08.417"
       },
       {
+        "cve_id": "CVE-2026-16019",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Faydam Innovation Inc. FAYDAM Datalogger allows SQL Injection.\n\nThis issue affects FAYDAM Datalogg",
+        "published": "2026-08-19T14:17:27.093"
+      },
+      {
         "cve_id": "CVE-2026-73183",
         "severity": "CRITICAL",
         "base_score": 9.3,
@@ -320,67 +306,81 @@
         "published": "2026-08-19T13:18:08.160"
       },
       {
-        "cve_id": "CVE-2026-18937",
+        "cve_id": "CVE-2026-73391",
         "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "The Broken Link Checker WordPress plugin before 2.4.12 does not limit which query variables it accepts from user input on sites using plain permalinks, allowing unauthenticated users to overwrite arbi",
-        "published": "2026-08-19T06:17:38.847"
+        "base_score": 9.3,
+        "description": "Unauthenticated SQL Injection in Total Donations <= 2.0.5 versions.",
+        "published": "2026-08-19T13:18:08.547"
       },
       {
-        "cve_id": "CVE-2026-70408",
+        "cve_id": "CVE-2024-58376",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "An incorrect authorization vulnerability exists in acmailer, which may allow a user to create a sub-account that has administrative privileges.",
-        "published": "2026-08-19T05:17:05.820"
+        "description": "Renovate versions 37.158.0 before 37.199.0 contain a command injection vulnerability in the helmv3 manager's registryAliases handling that allows attackers with commit access to execute arbitrary comm",
+        "published": "2026-08-19T14:17:16.240"
       },
       {
-        "cve_id": "CVE-2026-14334",
+        "cve_id": "CVE-2026-54795",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The Booking calendar, Appointment Booking System WordPress plugin through 3.2.36 does not properly sanitize uploaded SVG files, allowing unauthenticated attackers to upload a file that bypasses the Bo",
-        "published": "2026-08-19T06:17:33.263"
+        "description": "Dell OpenManage Enterprise, versions prior to 4.7.0, contains an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. A low privileged attacker wit",
+        "published": "2026-08-19T14:17:34.200"
       },
       {
-        "cve_id": "CVE-2026-16617",
+        "cve_id": "CVE-2026-75918",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The Simple File List WordPress plugin through 6.3.11 does not properly sanitise and escape a file's description before outputting it on the public file list, allowing unauthenticated users (when front",
-        "published": "2026-08-19T06:17:35.500"
+        "description": "phpMyFAQ before 4.1.7 stores password reset tokens in a publicly accessible tracking file when user tracking is enabled. Unauthenticated attackers can read the tracking file at content/core/data/track",
+        "published": "2026-08-19T14:17:42.053"
       },
       {
-        "cve_id": "CVE-2026-19842",
+        "cve_id": "CVE-2026-76220",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The SAML Single Sign On  WordPress plugin before 5.4.7 does not verify the signature of a SAML response before storing the certificate it carries, and offers an administrator a one-click control that ",
-        "published": "2026-08-19T06:17:40.613"
+        "description": "GitPython before 3.1.58 contains a command execution vulnerability in the check_unsafe_options guard that can be bypassed by combining a single-character kwarg with split_single_char_options=False. At",
+        "published": "2026-08-19T14:17:48.323"
       },
       {
-        "cve_id": "CVE-2026-49420",
+        "cve_id": "CVE-2026-76221",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The RTSP handler in libalias rewrote outgoing packets into a fixed-length stack buffer without checking whether the rewritten data fit in the buffer, or whether the result fit back in the original pac",
-        "published": "2026-08-19T06:17:40.790"
+        "description": "GitPython before 3.1.58 contains a config-name injection vulnerability in the option-name validator that allows attackers to forge arbitrary git-config directives by injecting equals signs, hash symbo",
+        "published": "2026-08-19T14:17:48.463"
       },
       {
-        "cve_id": "CVE-2026-12983",
+        "cve_id": "CVE-2026-76224",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "ArcadeDB before 26.8.1 (arcadedb-gremlin, affected <= 26.7.3) contains a remote code execution vulnerability in its Gremlin query engine. Although the engine defaults to the documented-secure java (gr",
+        "published": "2026-08-19T14:17:48.880"
+      },
+      {
+        "cve_id": "CVE-2026-75916",
         "severity": "HIGH",
         "base_score": 8.6,
-        "description": "The Dinatur WordPress plugin through 1.18 does not sanitize and escape user input before using it in a SQL query, allowing unauthenticated users to perform SQL injection attacks. The same handler also",
-        "published": "2026-08-19T06:17:31.307"
+        "description": "SiYuan through 3.7.3 contains a cross-site scripting vulnerability in the '((' block-reference autocomplete hint popup. In genHintItemHTML() (app/src/protyle/hint/extend.ts), a candidate block's name,",
+        "published": "2026-08-19T14:17:41.687"
       },
       {
-        "cve_id": "CVE-2026-16616",
+        "cve_id": "CVE-2026-75917",
         "severity": "HIGH",
         "base_score": 8.6,
-        "description": "The Simple File List WordPress plugin through 6.3.11 does not validate the source path of a file-move operation reachable by unauthenticated users, allowing them to read arbitrary files on the server ",
-        "published": "2026-08-19T06:17:35.210"
+        "description": "SiYuan before v3.7.4 contains a cross-site scripting vulnerability in the file-tree picker's hover-tooltip generation (app/src/util/pathName.ts, getLeaf()/movePathTo()) used by the 'move/link to' path",
+        "published": "2026-08-19T14:17:41.840"
       },
       {
-        "cve_id": "CVE-2026-16950",
+        "cve_id": "CVE-2026-32552",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "The Product Shortlist WordPress plugin through 1.0.4 does not properly sanitise and escape a parameter before using it in a SQL statement, allowing unauthenticated attackers to perform SQL injection a",
-        "published": "2026-08-19T06:17:35.730"
+        "base_score": 8.5,
+        "description": "Subscriber SQL Injection in YITH WooCommerce Membership Premium <= 2.33.0 versions.",
+        "published": "2026-08-19T13:17:45.137"
+      },
+      {
+        "cve_id": "CVE-2026-66668",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "Subscriber SQL Injection in Community by PeepSo <= 9.0.5.2 versions.",
+        "published": "2026-08-19T13:17:50.687"
       }
     ]
   },
