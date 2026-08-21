@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-08-21T16:20:17.882458+00:00",
+  "generated_at": "2026-08-21T20:14:30.015318+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 20,
+        "value": 21,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
-        "score": 2.5,
+        "value": 14,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1673,
-    "recent_30d_count": 20,
+    "total_catalog_count": 1674,
+    "recent_30d_count": 21,
     "recent": [
+      {
+        "cve_id": "CVE-2026-73570",
+        "vendor": "Synacor",
+        "product": "Zimbra Collaboration Suite (ZCS)",
+        "name": "Zimbra Collaboration Suite (ZCS) OS Command Injection Vulnerability",
+        "date_added": "2026-08-21",
+        "due_date": "2026-08-24",
+        "description": "Zimbra Collaboration Suite (ZCS) contains an OS command injection vulnerability which could allow an unauthenticated attacker to send specially crafted SMTP requests that may result in execution of ar",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-72530",
         "vendor": "TrueConf",
@@ -224,163 +234,153 @@
         "due_date": "2026-08-10",
         "description": "Fortinet FortiOS contains an exposure of sensitive information to an unauthorized actor vulnerability. This may allow a remote unauthenticated attacker to bypass the patch developed for the symbolic l",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-16812",
-        "vendor": "Arista",
-        "product": "VeloCloud Orchestrator",
-        "name": "Arista VeloCloud Orchestrator On-Prem OS Command Injection Vulnerability",
-        "date_added": "2026-07-27",
-        "due_date": "2026-07-30",
-        "description": "Arista VeloCloud Orchestrator On-Prem contains an OS command injection vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful ex",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 433,
-    "critical_count": 6,
-    "high_count": 52,
+    "total": 358,
+    "critical_count": 14,
+    "high_count": 48,
     "cves": [
       {
-        "cve_id": "CVE-2026-77022",
+        "cve_id": "CVE-2026-67567",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "A security flaw has been discovered in Comfast CF-N1-S 2.6.0.1. Affected by this issue is the function sub_44B438 of the file /cgi-bin/mbox-config?method=SET&section=ptest_ssid of the component SSID C",
-        "published": "2026-08-20T17:19:49.413"
+        "description": "A flaw was found in the multicloud-operators-subscription component. This vulnerability allows a tenant, who has the ability to create HelmRelease custom resources (CRs), to bypass existing security c",
+        "published": "2026-08-20T21:17:07.403"
       },
       {
-        "cve_id": "CVE-2026-18265",
+        "cve_id": "CVE-2026-18835",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote authenticated attacker to execute arbitrary commands due to improper neutralization of special elements used in an OS command.",
+        "published": "2026-08-20T22:17:17.430"
+      },
+      {
+        "cve_id": "CVE-2026-17040",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "OSNEXUS QuantaStor Missing Authentication Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of OSNEXUS QuantaStor. Aut",
-        "published": "2026-08-20T17:17:23.017"
+        "description": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote attacker to execute arbitrary code due to a buffer overflow.",
+        "published": "2026-08-20T22:17:11.853"
       },
       {
-        "cve_id": "CVE-2026-55642",
+        "cve_id": "CVE-2026-17118",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "dbx is a cross-platform database client for databases. Prior to 0.5.51, dbx-web auth_middleware in crates/dbx-web/src/auth.rs passes every protected request to the handler chain when password_hash is ",
-        "published": "2026-08-20T17:18:27.873"
+        "description": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote attacker to execute arbitrary code due to a use-after-free vulnerability.",
+        "published": "2026-08-20T22:17:12.190"
       },
       {
-        "cve_id": "CVE-2026-71428",
+        "cve_id": "CVE-2026-17122",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote attacker to execute arbitrary code due to a stack-based buffer overflow.",
+        "published": "2026-08-20T22:17:12.680"
+      },
+      {
+        "cve_id": "CVE-2026-17136",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote attacker to execute arbitrary code due to a format string vulnerability.",
+        "published": "2026-08-20T22:17:13.017"
+      },
+      {
+        "cve_id": "CVE-2026-17141",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote attacker to execute arbitrary code due to a buffer overflow.",
+        "published": "2026-08-20T22:17:13.350"
+      },
+      {
+        "cve_id": "CVE-2026-17142",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote attacker to execute arbitrary commands due to improper authentication.",
+        "published": "2026-08-20T22:17:13.520"
+      },
+      {
+        "cve_id": "CVE-2026-17145",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote attacker to execute arbitrary code due to improper privilege management.",
+        "published": "2026-08-20T22:17:13.683"
+      },
+      {
+        "cve_id": "CVE-2026-17152",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote attacker to execute arbitrary code due to a buffer overflow.",
+        "published": "2026-08-20T22:17:13.850"
+      },
+      {
+        "cve_id": "CVE-2026-17157",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote attacker to execute arbitrary code due to a stack buffer overflow.",
+        "published": "2026-08-20T22:17:14.013"
+      },
+      {
+        "cve_id": "CVE-2026-17160",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote attacker to execute arbitrary code due to an integer overflow during size computation.",
+        "published": "2026-08-20T22:17:14.360"
+      },
+      {
+        "cve_id": "CVE-2026-17422",
         "severity": "CRITICAL",
         "base_score": 9.3,
-        "description": "The unstructured library provides open-source components for ingesting and pre-processing images and text documents, such as PDFs, HTML, Word docs, and many more. From 0.4.7 until 0.24.0, the url argu",
-        "published": "2026-08-20T17:19:40.773"
+        "description": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a local attacker to execute arbitrary code due to a buffer overflow.",
+        "published": "2026-08-20T22:17:15.593"
       },
       {
-        "cve_id": "CVE-2026-73256",
+        "cve_id": "CVE-2026-71485",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Mongoose is an embedded web server and network library. Prior to 7.22, a remote unauthenticated attacker can exploit an HTTP/1.0 reverse-proxy deployment by sending a request with Transfer-Encoding: c",
-        "published": "2026-08-20T18:16:46.523"
+        "description": "Centrifugo is an open-source scalable real-time messaging server. Prior to 6.9.0, Centrifugo copies the client-controlled protocol.ConnectRequest.headers map through OnClientConnecting in internal/cli",
+        "published": "2026-08-20T21:17:08.707"
       },
       {
-        "cve_id": "CVE-2026-73257",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Mongoose is an embedded web server and network library. Priro to version 7.22, a remote unauthenticated attacker can send an HTTP request containing both Content-Length and Transfer-Encoding: chunked.",
-        "published": "2026-08-20T18:16:46.973"
+        "cve_id": "CVE-2026-77638",
+        "severity": "HIGH",
+        "base_score": 8.9,
+        "description": "Tor before 0.4.9.11 is prone to a race condition where in just the right circumstances a rendezvous point could man-in-the-middle (impersonate) the onion service that the client was trying to reach.",
+        "published": "2026-08-20T21:17:11.097"
       },
       {
-        "cve_id": "CVE-2026-18264",
+        "cve_id": "CVE-2026-18420",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "NoMachine getstat Command Injection Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of NoMachine. Authentication is ",
-        "published": "2026-08-20T17:17:22.890"
+        "description": "Improper input validation in the Time Series Visual Builder (TSVB) plugin in OpenSearch Dashboards allows an authenticated remote user to execute arbitrary code on the server via a crafted JSON payloa",
+        "published": "2026-08-20T21:17:06.137"
       },
       {
-        "cve_id": "CVE-2026-18279",
+        "cve_id": "CVE-2026-73040",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Sony XAV-9500ES RTSP SETUP Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installations of Sony XAV-950",
-        "published": "2026-08-20T17:17:24.280"
+        "description": "Dockge validates a stack name only on the write path. In backend/stack.ts the allow-list check in validate(), which requires the name to match ^[a-z0-9_-]+$, is reached from save() alone, while the pa",
+        "published": "2026-08-20T21:17:09.110"
       },
       {
-        "cve_id": "CVE-2026-54449",
+        "cve_id": "CVE-2026-76017",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "LangBot is a global IM bot platform designed for LLMs. In version 4.10.7 and earlier, any authenticated user can add or change an STDIO MCP server configuration without an adequate authorization bound",
-        "published": "2026-08-20T17:18:17.910"
+        "description": "Use after free in Chromoting in Google Chrome prior to 151.0.7922.173 allowed a remote attacker to execute arbitrary code outside the sandbox via crafted network traffic. (Chromium security severity: ",
+        "published": "2026-08-20T21:17:09.800"
       },
       {
-        "cve_id": "CVE-2026-63388",
+        "cve_id": "CVE-2026-76018",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Libevent is an event notification library. Prior to 2.1.13 and 2.2.2-alpha, libevent has a heap out-of-bounds write in bufferevent_sock.c when bufferevent_socket_set_conn_address_ copies a kernel-supp",
-        "published": "2026-08-20T18:16:36.893"
+        "base_score": 8.8,
+        "description": "Privilege elevation in Import in Google Chrome prior to 151.0.7922.173 allowed a remote attacker leveraging social engineering to potentially execute arbitrary code outside the sandbox via a crafted f",
+        "published": "2026-08-20T21:17:09.920"
       },
       {
-        "cve_id": "CVE-2026-65842",
+        "cve_id": "CVE-2026-76021",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Plate is a rich-text editor with AI and shadcn/ui. Prior to 53.3.2, @platejs/docx-io fetches remote image URLs while converting attacker-controlled HTML through htmlToDocxBlob in a server-side or priv",
-        "published": "2026-08-20T17:19:23.433"
-      },
-      {
-        "cve_id": "CVE-2026-77176",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "A flaw was found in Kata Containers. In configurations utilizing genpolicy for Confidential Containers guest protection, a malicious host operator can exploit insufficient validation of CreateContaine",
-        "published": "2026-08-20T17:19:49.773"
-      },
-      {
-        "cve_id": "CVE-2026-18281",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "Sony XAV-9500ES l2_reassemble_sdu Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected installatio",
-        "published": "2026-08-20T17:17:24.523"
-      },
-      {
-        "cve_id": "CVE-2026-18282",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "Sony XAV-9500ES AVRCP_Br_Response_Parser Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected inst",
-        "published": "2026-08-20T17:17:24.643"
-      },
-      {
-        "cve_id": "CVE-2026-13121",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Parallels RAS Client RDP Backend Service Exposed Dangerous Function Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations",
-        "published": "2026-08-20T17:17:20.787"
-      },
-      {
-        "cve_id": "CVE-2026-15679",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Hugging Face PyTorch Image Models checkpoint Deserialization of Untrusted Data Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected ins",
-        "published": "2026-08-20T17:17:21.050"
-      },
-      {
-        "cve_id": "CVE-2026-18262",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Parallels RAS Client RDP Backend Service Exposed Dangerous Function Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations",
-        "published": "2026-08-20T17:17:22.653"
-      },
-      {
-        "cve_id": "CVE-2026-18263",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Parallels RAS Client RDP Backend Service Exposed Dangerous Function Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations",
-        "published": "2026-08-20T17:17:22.773"
-      },
-      {
-        "cve_id": "CVE-2026-18270",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Kenwood DNR1007XR udhcpd Incorrect Permission Assignment Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of Kenwood",
-        "published": "2026-08-20T17:17:23.513"
-      },
-      {
-        "cve_id": "CVE-2026-18284",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Sony XAV-9500ES Crash Dump Handler Command Injection Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of Sony XAV-95",
-        "published": "2026-08-20T17:17:24.883"
+        "base_score": 8.8,
+        "description": "Use after free in DOM in Google Chrome prior to 151.0.7922.173 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-08-20T21:17:10.280"
       }
     ]
   },
