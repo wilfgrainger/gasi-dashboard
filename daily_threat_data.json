@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-21T12:26:33.268520+00:00",
+  "generated_at": "2026-08-21T16:20:17.882458+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 6,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,16 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 458,
-    "critical_count": 4,
-    "high_count": 45,
+    "total": 433,
+    "critical_count": 6,
+    "high_count": 52,
     "cves": [
       {
-        "cve_id": "CVE-2026-15706",
+        "cve_id": "CVE-2026-77022",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Missing authentication for critical function vulnerability in Baylan Measuring Instruments Industry and Trade Inc. Baylan Smart Meter Management Application (BMS) allows Authentication Bypass.\n\nThis i",
-        "published": "2026-08-20T14:17:09.617"
+        "base_score": 9.9,
+        "description": "A security flaw has been discovered in Comfast CF-N1-S 2.6.0.1. Affected by this issue is the function sub_44B438 of the file /cgi-bin/mbox-config?method=SET&section=ptest_ssid of the component SSID C",
+        "published": "2026-08-20T17:19:49.413"
       },
       {
         "cve_id": "CVE-2026-18265",
@@ -257,25 +257,32 @@
         "published": "2026-08-20T17:17:23.017"
       },
       {
-        "cve_id": "CVE-2026-28164",
+        "cve_id": "CVE-2026-55642",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Cross-Site Request Forgery (CSRF) vulnerability in HashThemes Easy Elementor Addons allows Cross Site Request Forgery.\n\nThis issue affects Easy Elementor Addons: from n/a through 2.3.7.",
-        "published": "2026-08-20T13:17:27.250"
+        "base_score": 9.8,
+        "description": "dbx is a cross-platform database client for databases. Prior to 0.5.51, dbx-web auth_middleware in crates/dbx-web/src/auth.rs passes every protected request to the handler chain when password_hash is ",
+        "published": "2026-08-20T17:18:27.873"
       },
       {
-        "cve_id": "CVE-2026-16926",
+        "cve_id": "CVE-2026-71428",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "The unstructured library provides open-source components for ingesting and pre-processing images and text documents, such as PDFs, HTML, Word docs, and many more. From 0.4.7 until 0.24.0, the url argu",
+        "published": "2026-08-20T17:19:40.773"
+      },
+      {
+        "cve_id": "CVE-2026-73256",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a remote attacker to overwrite arbitrary files due to improper neutralization of special elements in input.",
-        "published": "2026-08-20T15:17:28.963"
+        "description": "Mongoose is an embedded web server and network library. Prior to 7.22, a remote unauthenticated attacker can exploit an HTTP/1.0 reverse-proxy deployment by sending a request with Transfer-Encoding: c",
+        "published": "2026-08-20T18:16:46.523"
       },
       {
-        "cve_id": "CVE-2026-16932",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "IBM AIX 7.2, and 7.3 and IBM PowerVM VIOS 4.1 could allow a local attacker to execute arbitrary commands due to improper validation of the ODMDIR environment variable.",
-        "published": "2026-08-20T15:17:29.460"
+        "cve_id": "CVE-2026-73257",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Mongoose is an embedded web server and network library. Priro to version 7.22, a remote unauthenticated attacker can send an HTTP request containing both Content-Length and Transfer-Encoding: chunked.",
+        "published": "2026-08-20T18:16:46.973"
       },
       {
         "cve_id": "CVE-2026-18264",
@@ -292,18 +299,32 @@
         "published": "2026-08-20T17:17:24.280"
       },
       {
-        "cve_id": "CVE-2026-49825",
+        "cve_id": "CVE-2026-54449",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "lxml is a library for processing XML and HTML in the Python language. Prior to 6.1.1, link attributes in ``lxml.html.defs.link_attrs`` were missing ``xlink:href``, which can be used for URL bypass att",
-        "published": "2026-08-20T15:17:30.707"
+        "base_score": 8.8,
+        "description": "LangBot is a global IM bot platform designed for LLMs. In version 4.10.7 and earlier, any authenticated user can add or change an STDIO MCP server configuration without an adequate authorization bound",
+        "published": "2026-08-20T17:18:17.910"
       },
       {
-        "cve_id": "CVE-2026-76633",
+        "cve_id": "CVE-2026-63388",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "Libevent is an event notification library. Prior to 2.1.13 and 2.2.2-alpha, libevent has a heap out-of-bounds write in bufferevent_sock.c when bufferevent_socket_set_conn_address_ copies a kernel-supp",
+        "published": "2026-08-20T18:16:36.893"
+      },
+      {
+        "cve_id": "CVE-2026-65842",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Plate is a rich-text editor with AI and shadcn/ui. Prior to 53.3.2, @platejs/docx-io fetches remote image URLs while converting attacker-controlled HTML through htmlToDocxBlob in a server-side or priv",
+        "published": "2026-08-20T17:19:23.433"
+      },
+      {
+        "cve_id": "CVE-2026-77176",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "WeGIA before 3.9.2 contains an authorization bypass vulnerability in the password change flow that allows any authenticated user to change their account password without providing existing credentials",
-        "published": "2026-08-20T14:17:59.680"
+        "description": "A flaw was found in Kata Containers. In configurations utilizing genpolicy for Confidential Containers guest protection, a malicious host operator can exploit insufficient validation of CreateContaine",
+        "published": "2026-08-20T17:19:49.773"
       },
       {
         "cve_id": "CVE-2026-18281",
@@ -318,27 +339,6 @@
         "base_score": 8.0,
         "description": "Sony XAV-9500ES AVRCP_Br_Response_Parser Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected inst",
         "published": "2026-08-20T17:17:24.643"
-      },
-      {
-        "cve_id": "CVE-2026-76833",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "@cgauge/yaml npm package contains an arbitrary code execution vulnerability that allows attackers to execute arbitrary JavaScript by embedding a custom !js YAML tag whose construct callback unconditio",
-        "published": "2026-08-20T14:18:00.137"
-      },
-      {
-        "cve_id": "CVE-2026-61897",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "An Ubuntu-specific patch to AccountsService before 23.13.9-8ubuntu7 only partially drops privileges before launching language helper scripts. It changes the effective UID/GID to the target user but le",
-        "published": "2026-08-20T15:17:38.740"
-      },
-      {
-        "cve_id": "CVE-2026-61898",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "The Ubuntu-specific language helper scripts (save-to-pam-env, update-langlist) shipped with accountsservice before 23.13.9-8ubuntu7 treat the user-controlled LANGUAGE entry in ~/.pam_environment as tr",
-        "published": "2026-08-20T15:17:38.913"
       },
       {
         "cve_id": "CVE-2026-13121",
