@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T04:22:25.976198+00:00",
+  "generated_at": "2026-08-22T08:17:32.628084+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 16,
+        "value": 18,
         "score": 3.0,
         "max": 3
       },
@@ -238,10 +238,17 @@
     ]
   },
   "nvd": {
-    "total": 278,
-    "critical_count": 16,
-    "high_count": 13,
+    "total": 274,
+    "critical_count": 18,
+    "high_count": 16,
     "cves": [
+      {
+        "cve_id": "CVE-2026-69502",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Server-side request forgery (ssrf) in Azure SQL Database allows an unauthorized attacker to elevate privileges over a network.",
+        "published": "2026-08-21T16:18:07.090"
+      },
       {
         "cve_id": "CVE-2026-77683",
         "severity": "CRITICAL",
@@ -327,11 +334,11 @@
         "published": "2026-08-21T15:16:46.427"
       },
       {
-        "cve_id": "CVE-2026-77264",
+        "cve_id": "CVE-2026-63343",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Automation Web Platform \u2013 Notifications and OTP for WooCommerce, Advanced Country Code plugin for WordPress is vulnerable to Authentication Bypass in versions up to, and including, 4.8.6. This is ",
-        "published": "2026-08-21T08:16:44.160"
+        "base_score": 9.9,
+        "description": "Incus is a system container and virtual machine manager. Prior to version 7.3.0, a malicious image containing a `metadata.yaml` symlink pointing to an arbitrary host path allows an authenticated Incus",
+        "published": "2026-08-21T15:16:46.577"
       },
       {
         "cve_id": "CVE-2026-77806",
@@ -339,6 +346,13 @@
         "base_score": 9.8,
         "description": "SPIP before 4.4.21 allows unauthenticated remote attackers to execute arbitrary code, as exploited in the wild in August 2026. This is related to code injection via an X-Spip-Filtre HTTP request heade",
         "published": "2026-08-21T14:16:53.903"
+      },
+      {
+        "cve_id": "CVE-2026-77087",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Paperclip before 0.3.1 in default local_trusted mode fails to validate Host headers, allowing attackers to execute arbitrary commands via DNS rebinding. An attacker can craft a malicious webpage that,",
+        "published": "2026-08-21T15:16:47.290"
       },
       {
         "cve_id": "CVE-2026-77086",
@@ -367,20 +381,6 @@
         "base_score": 8.8,
         "description": "Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability in Apache CloudStack's run and get diagnostics functionality for the system VMs and virtual routers.\n\n",
         "published": "2026-08-21T09:16:39.717"
-      },
-      {
-        "cve_id": "CVE-2026-63046",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Improper Neutralization of Argument Delimiters in a Command ('Argument Injection') vulnerability in Apache InLong.\u00a0Agent Installer's ModuleManager executes arbitrary shell\ncommands via ExcuteLinux.exe",
-        "published": "2026-08-21T09:16:40.083"
-      },
-      {
-        "cve_id": "CVE-2026-77775",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Headroom's LLM proxy lets a client choose the upstream destination with the x-headroom-base-url request header. _resolve_openai_upstream_base in headroom/proxy/handlers/openai.py accepts the header va",
-        "published": "2026-08-21T12:16:36.813"
       }
     ]
   },
