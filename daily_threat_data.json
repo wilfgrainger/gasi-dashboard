@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-22T16:12:28.275455+00:00",
+  "generated_at": "2026-08-22T20:11:50.048765+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
-        "score": 2.0,
+        "value": 5,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,16 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 254,
-    "critical_count": 3,
-    "high_count": 32,
+    "total": 334,
+    "critical_count": 5,
+    "high_count": 29,
     "cves": [
       {
-        "cve_id": "CVE-2026-69502",
+        "cve_id": "CVE-2026-61539",
         "severity": "CRITICAL",
         "base_score": 10.0,
-        "description": "Server-side request forgery (ssrf) in Azure SQL Database allows an unauthorized attacker to elevate privileges over a network.",
-        "published": "2026-08-21T16:18:07.090"
+        "description": "Xinference is an inference API for running open-source, speech, and multimodal models. In 2.5.0 and earlier, Xinference passes attacker-influenced Llama3 tool-call output to eval() in xinference/model",
+        "published": "2026-08-21T21:17:00.867"
       },
       {
         "cve_id": "CVE-2026-77810",
@@ -257,32 +257,25 @@
         "published": "2026-08-21T20:16:45.530"
       },
       {
-        "cve_id": "CVE-2026-62674",
+        "cve_id": "CVE-2026-62283",
         "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "Omnigent is an open-source AI agent framework and meta-harness for orchestrating coding agents. Prior to 0.3.0, PUT /sessions/{session_id}/agent checks LEVEL_EDIT permission for a session but does not",
-        "published": "2026-08-21T18:16:49.460"
+        "base_score": 9.9,
+        "description": "Nezha Monitoring is a self-hostable, lightweight, servers and websites monitoring and O&M tool. Nezha versions 1.14.13 through 1.14.14 and 2.0.0 through 2.0.9 do not bind stream identifiers created by",
+        "published": "2026-08-21T21:17:01.183"
       },
       {
-        "cve_id": "CVE-2026-62675",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Omnigent is an open-source AI agent framework and meta-harness for orchestrating coding agents. Prior to 0.3.0, multipart POST /v1/sessions accepts an authenticated user's agent bundle and omnigent/se",
-        "published": "2026-08-21T18:16:49.603"
+        "cve_id": "CVE-2026-76904",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "GeoTools is an open source Java library that provides tools for geospatial data. Starting in version 30.5 and prior to versions 33.6, 34.5, and 33.6, an SQL Injection Vulnerability is present when exe",
+        "published": "2026-08-21T21:17:06.143"
       },
       {
-        "cve_id": "CVE-2026-62677",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Omnigent is an open-source AI agent framework and meta-harness for orchestrating coding agents. Prior to 0.3.0, an authenticated user can upload a session-scoped agent bundle with an absolute or trave",
-        "published": "2026-08-21T18:16:49.887"
-      },
-      {
-        "cve_id": "CVE-2026-77234",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Improper input validation in FreeRTOS-Kernel before 11.3.1 might allow an unprivileged task on MPU-enabled ports to execute code in privileged kernel context. To remediate this issue, users should upg",
-        "published": "2026-08-21T18:16:51.507"
+        "cve_id": "CVE-2026-49849",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "xShop is an open-source shop developed in Laravel. An Unrestricted File Upload vulnerability in xShop version 3.0.3 allows an authenticated administrator to upload executable files (e.g., .php). By up",
+        "published": "2026-08-21T22:16:38.300"
       },
       {
         "cve_id": "CVE-2026-50538",
@@ -292,32 +285,81 @@
         "published": "2026-08-21T21:16:59.807"
       },
       {
-        "cve_id": "CVE-2026-75932",
+        "cve_id": "CVE-2026-62316",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Microsoft UFO open-source framework for intelligent automation across devices and platforms. Prior to 3.0.8, ufo/client/mcp/http_servers/linux_mcp_server.py binds a FastMCP streamable HTTP server to l",
+        "published": "2026-08-21T21:17:01.350"
+      },
+      {
+        "cve_id": "CVE-2026-31936",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Combodo iTop is a web based IT service management tool. Prior to 3.2.3, users can access to unauthorized object information through the search operation. This issue has been fixed in version 3.2.3.",
+        "published": "2026-08-21T22:16:36.553"
+      },
+      {
+        "cve_id": "CVE-2026-33240",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Combodo iTop is a web based IT service management tool. Prior to 3.2.3, there was a Reflected Cross-Site Scripting (XSS) vulnerability in the foreign key search criteria API. This issue has been fixed",
+        "published": "2026-08-21T22:16:36.863"
+      },
+      {
+        "cve_id": "CVE-2026-53527",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "LeafWiki is a self-hosted wiki. Versions 0.1.0 through 0.10.0 have a privilege escalation vulnerability in the user update API. An authenticated user could update their own account role and escalate p",
+        "published": "2026-08-21T22:16:39.147"
+      },
+      {
+        "cve_id": "CVE-2026-53528",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "LeafWiki is a self-hosted wiki. Versions 0.3.0 through 0.10.0 have a path traversal vulnerability in LeafWiki\u2019s asset rename functionality. An authenticated user with editor permissions could move fil",
+        "published": "2026-08-21T22:16:39.290"
+      },
+      {
+        "cve_id": "CVE-2026-19883",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The WPeMatico RSS Feed Fetcher plugin for WordPress is vulnerable to unauthorized modification of data that can lead to privilege escalation due to a missing capability check on the wpematico_import_s",
+        "published": "2026-08-22T03:16:20.833"
+      },
+      {
+        "cve_id": "CVE-2026-77811",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "Improper input validation in the dashboards-observability plugin in OpenSearch Dashboards allows a remote authenticated user with write permissions to OpenSearch Dashboards saved objects to execute ar",
+        "published": "2026-08-21T21:17:08.903"
+      },
+      {
+        "cve_id": "CVE-2026-34741",
         "severity": "HIGH",
         "base_score": 8.6,
-        "description": "Jet Admin allows an attacker to create a malicious app and connect it to a target user's custom domain, edit the authentication configuration, and reroute traffic to the attacker-controlled app. Once ",
-        "published": "2026-08-21T16:18:17.717"
+        "description": "Combodo iTop is a web based IT service management tool. Prior to 3.2.3, authentication bypass allows unauthenticated remote attackers to execute arbitrary PHP files from the env-production directory o",
+        "published": "2026-08-21T22:16:37.143"
       },
       {
-        "cve_id": "CVE-2026-22681",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "OpenViking before 0.3.4\u00a0contains a server-side request forgery vulnerability that allows authenticated low-privilege attackers to access internal network services by submitting arbitrary URLs to the r",
-        "published": "2026-08-21T16:17:16.767"
-      },
-      {
-        "cve_id": "CVE-2026-54682",
+        "cve_id": "CVE-2026-61824",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "DiscordChatExporter saves Discord chat logs to a file. Prior to 2.47.2, HTML exports generated with markdown formatting disabled pass attacker-controlled content through FormatMarkdownAsync and Format",
-        "published": "2026-08-21T19:17:03.610"
+        "description": "Defuddle cleans up HTML pages. Prior to 0.19.1, site extractors interpolate page-derived image alt and src values, og:image values, and video descriptions into HTML strings without context-appropriate",
+        "published": "2026-08-21T21:17:01.017"
       },
       {
-        "cve_id": "CVE-2026-39909",
+        "cve_id": "CVE-2026-63135",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "YOURLS is a self-hosted, customizable URL shortener written in PHP. From 1.5.1 until 1.10.4, YOURLS stores the HTTP Referer header through yourls_get_referrer(), yourls_sanitize_url_safe(), and yourls",
+        "published": "2026-08-21T21:17:01.493"
+      },
+      {
+        "cve_id": "CVE-2026-64679",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "llama.cpp before b8585 contains a use-after-free vulnerability in the RPC server's GRAPH_RECOMPUTE handler that allows unauthenticated remote attackers to achieve arbitrary read and write access by st",
-        "published": "2026-08-21T17:16:30.810"
+        "description": "Atlantis is a self-hosted golang application that listens for Terraform pull request events via webhooks. From 0.19.8 until 0.45.0, Atlantis does not consistently validate user-controlled workspace va",
+        "published": "2026-08-21T21:17:01.920"
       },
       {
         "cve_id": "CVE-2026-30826",
@@ -339,48 +381,6 @@
         "base_score": 8.0,
         "description": "Combodo iTop is a web based IT service management tool. Prior to 3.2.3, 3.2.3, there is a Reflected Cross-Site Scripting (XSS) vulnerability in pages/tagadmin.php. This issue has been fixed in version",
         "published": "2026-08-21T21:16:57.250"
-      },
-      {
-        "cve_id": "CVE-2026-31880",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "Combodo iTop is a web based IT service management tool. Prior to 3.2.3, there is a Reflected Cross-Site Scripting (XSS) vulnerability in the universal search. This issue has been fixed in version 3.2.",
-        "published": "2026-08-21T21:16:57.403"
-      },
-      {
-        "cve_id": "CVE-2026-41449",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "UAC (Unix-like Artifacts Collector) versions prior to 3.3.0 contain a command injection vulnerability in the _run_command function that allows attackers to execute arbitrary commands by injecting shel",
-        "published": "2026-08-21T18:16:48.103"
-      },
-      {
-        "cve_id": "CVE-2026-41450",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "UAC (Unix-like Artifacts Collector) versions prior to 3.3.0 contain a command injection vulnerability in the _command_collector function where foreach command output lines are substituted directly int",
-        "published": "2026-08-21T18:16:48.257"
-      },
-      {
-        "cve_id": "CVE-2026-41451",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "UAC (Unix-like Artifacts Collector) versions prior to 3.3.0 contain a command injection vulnerability in the user substitution logic within parse_artifact.sh where usernames and home directories from ",
-        "published": "2026-08-21T18:16:48.400"
-      },
-      {
-        "cve_id": "CVE-2026-54071",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "BabelDOC is a document translation tool. Prior to 0.6.3, BabelDOC's vendored PDF parser in babeldoc/pdfminer/cmapdb.py deserializes untrusted pickle data when CMapDB._load_data() loads CMap files. PDF",
-        "published": "2026-08-21T19:17:02.720"
-      },
-      {
-        "cve_id": "CVE-2026-54457",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "TensorZero is an open-source LLMOps platform that unifies an LLM gateway, observability, evaluation, optimization, and experimentation. Prior to 2026.6.0, the TensorZero Gateway /internal/object_stora",
-        "published": "2026-08-21T21:17:00.267"
       }
     ]
   },
