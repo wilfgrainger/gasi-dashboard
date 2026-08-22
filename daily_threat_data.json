@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-22T00:40:12.561387+00:00",
+  "generated_at": "2026-08-22T04:22:25.976198+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
-        "score": 2.5,
+        "value": 16,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,8 +238,8 @@
     ]
   },
   "nvd": {
-    "total": 294,
-    "critical_count": 7,
+    "total": 278,
+    "critical_count": 16,
     "high_count": 13,
     "cves": [
       {
@@ -250,25 +250,81 @@
         "published": "2026-08-21T11:17:06.457"
       },
       {
-        "cve_id": "CVE-2026-77649",
+        "cve_id": "CVE-2026-48749",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The internment crate 0.8.7 for Rust can trigger execution of malicious code when compiling a project that uses the crate, because it has a rogue dependency that registers with a command-and-control se",
-        "published": "2026-08-21T01:17:01.837"
+        "base_score": 9.9,
+        "description": "Incus is a system container and virtual machine manager. Prior to version 7.2.0, a specially crafted image can be used to read or create/write arbitrary files on the host; possibly leading to arbitrar",
+        "published": "2026-08-21T15:16:40.247"
       },
       {
-        "cve_id": "CVE-2026-77650",
+        "cve_id": "CVE-2026-48750",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The append-only-vec crate 0.1.9 for Rust can trigger execution of malicious code when compiling a project that uses the crate, because it has a rogue dependency that registers with a command-and-contr",
-        "published": "2026-08-21T01:17:01.993"
+        "base_score": 9.9,
+        "description": "Incus is a system container and virtual machine manager. Prior to version 7.2.0, the `record-output` parameter of the `/instances/$name/exec` endpoint stores the output of the command in the `exec-out",
+        "published": "2026-08-21T15:16:40.390"
       },
       {
-        "cve_id": "CVE-2026-77651",
+        "cve_id": "CVE-2026-48751",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The arrayref crate 0.3.10 for Rust can trigger execution of malicious code when compiling a project that uses the crate, because it has a rogue dependency that registers with a command-and-control ser",
-        "published": "2026-08-21T01:17:02.140"
+        "base_score": 9.9,
+        "description": "Incus is a system container and virtual machine manager. Prior to version 7.2.0, instance snapshots ignore the `restricted.containers.lowlevel=block` setting; allowing for arbitrary command execution ",
+        "published": "2026-08-21T15:16:40.527"
+      },
+      {
+        "cve_id": "CVE-2026-48752",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Incus is a system container and virtual machine manager. Prior to version 7.2.0, a specially crafted image or instance backup can be used to read or create/write arbitrary files on the host; possibly ",
+        "published": "2026-08-21T15:16:40.667"
+      },
+      {
+        "cve_id": "CVE-2026-48753",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Incus is a system container and virtual machine manager. Prior to version 7.1.0, the S3 protocol upload endpoint is vulnerable to path traversal and allows creation of arbitrary files on the host. Thi",
+        "published": "2026-08-21T15:16:40.800"
+      },
+      {
+        "cve_id": "CVE-2026-48755",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Incus is a system container and virtual machine manager. Prior to version 7.1.0, improper validation of user-provided backup compression algorithm leads to argument injection in the constructed comman",
+        "published": "2026-08-21T15:16:41.077"
+      },
+      {
+        "cve_id": "CVE-2026-48769",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Incus is a system container and virtual machine manager. Prior to version 7.2.0, an arbitrary file write exists in the Incus client when a malicious image server returns a crafted `Incus-Image-Hash` h",
+        "published": "2026-08-21T15:16:41.347"
+      },
+      {
+        "cve_id": "CVE-2026-62867",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Incus is a system container and virtual machine manager. Prior to version 7.3.0, improper validation of user-provided `block.create_options` in storage volume configuration leads to argument injection",
+        "published": "2026-08-21T15:16:46.003"
+      },
+      {
+        "cve_id": "CVE-2026-62940",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Incus is a system container and virtual machine manager. Prior to version 7.3.0, when migrating an instance to another cluster member, user-supplied configuration overrides (including security-critica",
+        "published": "2026-08-21T15:16:46.147"
+      },
+      {
+        "cve_id": "CVE-2026-62941",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Incus is a system container and virtual machine manager. Prior to version 7.3.0, when copying an instance across projects, the project restriction check (`AllowInstanceCreation`) runs BEFORE the sourc",
+        "published": "2026-08-21T15:16:46.287"
+      },
+      {
+        "cve_id": "CVE-2026-63125",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Incus is a system container and virtual machine manager. Prior to version 7.3.0, an unprivileged, project-confined Incus user (a non-admin TLS/RBAC identity with `can_create_images` and `can_create_in",
+        "published": "2026-08-21T15:16:46.427"
       },
       {
         "cve_id": "CVE-2026-77264",
@@ -276,6 +332,13 @@
         "base_score": 9.8,
         "description": "The Automation Web Platform \u2013 Notifications and OTP for WooCommerce, Advanced Country Code plugin for WordPress is vulnerable to Authentication Bypass in versions up to, and including, 4.8.6. This is ",
         "published": "2026-08-21T08:16:44.160"
+      },
+      {
+        "cve_id": "CVE-2026-77806",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "SPIP before 4.4.21 allows unauthenticated remote attackers to execute arbitrary code, as exploited in the wild in August 2026. This is related to code injection via an X-Spip-Filtre HTTP request heade",
+        "published": "2026-08-21T14:16:53.903"
       },
       {
         "cve_id": "CVE-2026-77086",
@@ -318,69 +381,6 @@
         "base_score": 8.6,
         "description": "Headroom's LLM proxy lets a client choose the upstream destination with the x-headroom-base-url request header. _resolve_openai_upstream_base in headroom/proxy/handlers/openai.py accepts the header va",
         "published": "2026-08-21T12:16:36.813"
-      },
-      {
-        "cve_id": "CVE-2026-18781",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Drag and Drop Multiple File Upload for Contact Form 7 WordPress plugin before 1.3.9.9 does not validate the final name of an uploaded file after stripping characters from it, allowing unauthentica",
-        "published": "2026-08-21T07:16:25.143"
-      },
-      {
-        "cve_id": "CVE-2026-73267",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "A flaw was found in the clusterclaims-controller component of multicluster engine (MCE). A tenant with standard permissions to create and delete ClusterClaim resources can exploit this by manipulating",
-        "published": "2026-08-21T03:16:39.080"
-      },
-      {
-        "cve_id": "CVE-2026-16323",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Execution after redirect (EAR) vulnerability in FuyaWeb Internet and Informatics Services ArchitectPanel Web Admin Panel allows Authentication Bypass.\n\nThis issue affects ArchitectPanel Web Admin Pane",
-        "published": "2026-08-21T08:16:42.667"
-      },
-      {
-        "cve_id": "CVE-2026-47827",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Command Injection in BOSH CLI tool on windows in Cloud Foundry allows a remote attacker to execute arbitrary shell commands via command injection vulnerabilities",
-        "published": "2026-08-21T10:16:38.647"
-      },
-      {
-        "cve_id": "CVE-2026-77767",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Reconmap's API applies a fallback authorization policy in apps/api/app/Program.cs that requires an authenticated user holding the administrator role, so controllers without their own attribute reject ",
-        "published": "2026-08-21T11:17:07.107"
-      },
-      {
-        "cve_id": "CVE-2026-59279",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The MCP Streamable HTTP server transport (WebFlux and WebMvc variants) does not place any limit on the number of sessions it retains, and by default does not require clients to be authenticated. As a ",
-        "published": "2026-08-21T12:16:30.013"
-      },
-      {
-        "cve_id": "CVE-2026-18409",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The WPForms Pro plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Single Line Text and Paragraph Text Field Values in all versions up to, and including, 2.0.0.2 due to insufficient",
-        "published": "2026-08-21T04:18:01.380"
-      },
-      {
-        "cve_id": "CVE-2026-16576",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The Dokan: AI Powered WooCommerce Multivendor Marketplace Solution  WordPress plugin before 5.0.14 does not correctly check user capabilities on some of its admin REST API routes, checking only for a ",
-        "published": "2026-08-21T07:16:24.740"
-      },
-      {
-        "cve_id": "CVE-2026-75796",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The AI Engine  WordPress plugin before 3.6.1 does not verify that the requesting user is authorized to act on the targeted account before performing privileged user management operations, allowing use",
-        "published": "2026-08-21T07:16:25.453"
       }
     ]
   },
