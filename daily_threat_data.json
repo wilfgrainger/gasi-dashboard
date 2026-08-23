@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-23T08:18:10.380458+00:00",
+  "generated_at": "2026-08-23T12:19:30.007377+00:00",
   "threat_score": {
-    "score": 6.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
-        "score": 2.0,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -238,24 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 245,
-    "critical_count": 3,
-    "high_count": 15,
+    "total": 240,
+    "critical_count": 1,
+    "high_count": 14,
     "cves": [
-      {
-        "cve_id": "CVE-2026-77946",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "A vulnerability was determined in TRENDnet TEW-821DAP 2.2.01b05. Affected by this vulnerability is the function uci_safe_get of the file /cgi-bin/apply_time.cgi of the component NTP Timezone Configura",
-        "published": "2026-08-22T11:16:54.447"
-      },
-      {
-        "cve_id": "CVE-2026-78003",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Mailgun for WordPress plugin for WordPress is vulnerable to Server-Side Request Forgery (SSRF) via path traversal in versions up to and including 2.2.0. This is due to insufficient input validatio",
-        "published": "2026-08-22T09:16:53.543"
-      },
       {
         "cve_id": "CVE-2026-4703",
         "severity": "CRITICAL",
@@ -348,13 +334,6 @@
         "published": "2026-08-22T15:16:19.633"
       },
       {
-        "cve_id": "CVE-2026-77945",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "A vulnerability was found in TRENDnet TEW-821DAP 2.2.01b05. Affected is an unknown function of the file /cgi-bin/upload.cgi of the component ssi. Performing a manipulation of the argument filename res",
-        "published": "2026-08-22T11:16:53.243"
-      },
-      {
         "cve_id": "CVE-2026-58003",
         "severity": "HIGH",
         "base_score": 7.1,
@@ -369,18 +348,39 @@
         "published": "2026-08-22T15:16:19.100"
       },
       {
-        "cve_id": "CVE-2026-77988",
-        "severity": "MEDIUM",
-        "base_score": 6.6,
-        "description": "A weakness has been identified in TRENDnet TEW-823DRU 1.1.02b01. This vulnerability affects the function nvram_get of the component CLI Configuration Tool. This manipulation causes command injection. ",
-        "published": "2026-08-22T12:16:25.817"
-      },
-      {
         "cve_id": "CVE-2026-62204",
         "severity": "MEDIUM",
         "base_score": 6.6,
         "description": "SiYuan versions before v3.7.4 fail to validate that packageName matches the downloaded package content in bazaar install endpoints. Attackers with same-origin access can overwrite existing trusted plu",
         "published": "2026-08-22T13:16:39.547"
+      },
+      {
+        "cve_id": "CVE-2026-62381",
+        "severity": "MEDIUM",
+        "base_score": 6.6,
+        "description": "luci-lib-px5g (LuCI) contains a heap-based buffer overflow in the native ASN.1 encoding routine asn1_add_obj (x509write.c) when signing a certificate with a 2040-bit RSA key. For a 255-byte signature,",
+        "published": "2026-08-22T13:16:39.957"
+      },
+      {
+        "cve_id": "CVE-2026-58002",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "WWBN AVideo through commit 9c39d8c8b4c1f75540788d6b391740852ceb0732 contains an authorization bypass vulnerability in the Users_affiliations add.json.php endpoint that allows authenticated users to fo",
+        "published": "2026-08-22T13:16:38.540"
+      },
+      {
+        "cve_id": "CVE-2026-65915",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "NLTK versions before 3.10.0 contain a logic bug in FileSystemPathPointer.open() where the sandbox validation check compares a normalized path against itself, making the security check permanently iner",
+        "published": "2026-08-22T15:16:19.500"
+      },
+      {
+        "cve_id": "CVE-2026-4559",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "The Image Photo Gallery Final Tiles Grid plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'delay' shortcode attribute in all versions up to, and including, 3.6.12 due to insuf",
+        "published": "2026-08-22T14:16:32.947"
       }
     ]
   },
