@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-23T16:13:50.946413+00:00",
+  "generated_at": "2026-08-23T20:11:16.169901+00:00",
   "threat_score": {
-    "score": 5.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.5,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 5,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 191,
-    "critical_count": 1,
-    "high_count": 0,
+    "total": 42,
+    "critical_count": 5,
+    "high_count": 11,
     "cves": [
       {
-        "cve_id": "CVE-2026-4703",
+        "cve_id": "CVE-2026-78050",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A vulnerability was found in Comfast CF-N1-S 2.6.0.1. The affected element is the function sub_41AD7C of the file /cgi-bin/mbox-config?method=SET&section=ntp_timezone of the component Web Management. ",
+        "published": "2026-08-23T00:16:50.590"
+      },
+      {
+        "cve_id": "CVE-2026-78155",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "privilege escalation in StackGres operator allows a low-privilege tenant who owns a database to gain administrator privileges",
+        "published": "2026-08-23T10:16:28.757"
+      },
+      {
+        "cve_id": "CVE-2026-5388",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "The WS Form LITE \u2013 Drag & Drop Contact Form Builder plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 1.10.80 via deserialization of untrusted input from",
-        "published": "2026-08-22T16:16:29.497"
+        "description": "justhtml before 1.15.0 contains multiple security issues in URL sanitization helpers (clean_url_value/clean_url_in_js_string), HTML serialization, Markdown passthrough (html_passthrough=True), and sev",
+        "published": "2026-08-23T14:16:53.470"
       },
       {
-        "cve_id": "CVE-2026-74585",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nthunderbolt: Bound the DROM dual link port number before indexing sw->ports\n\ntb_drom_parse_entry_port() validates the device-suppli",
-        "published": "2026-08-22T16:16:30.560"
+        "cve_id": "CVE-2026-7808",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "justhtml before 1.16.0 contains multiple HTML sanitization bypass issues that can allow active/dangerous content (e.g., script or style) to survive sanitization, potentially leading to cross-site scri",
+        "published": "2026-08-23T14:16:54.810"
       },
       {
-        "cve_id": "CVE-2026-74586",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsctp: clear new_transport when removing a peer\n\nsctp_process_asconf_param() stores a newly added peer transport in\nasoc->new_transp",
-        "published": "2026-08-22T16:16:30.687"
+        "cve_id": "CVE-2026-8445",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "justhtml versions <= 1.11.0 (fixed in 1.12.0) do not sufficiently escape HTML-significant characters (angle brackets) in text nodes when converting a parsed document to Markdown via to_markdown(). Whi",
+        "published": "2026-08-23T14:16:54.957"
       },
       {
-        "cve_id": "CVE-2026-74587",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsctp: fix use-after-free of cached ASCONF chunk\n\naddip_last_asconf caches the outstanding outbound ASCONF chunk. The normal\nASCONF-",
-        "published": "2026-08-22T16:16:30.830"
+        "cve_id": "CVE-2026-0551",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The PPWP \u2013 Password Protect Pages plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 1.9.18 via deserialization of untrusted input from the 'post_protecti",
+        "published": "2026-08-23T00:16:49.777"
       },
       {
-        "cve_id": "CVE-2026-74588",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsctp: keep chunk->transport in step with the list it is queued on\n\n__sctp_outq_flush_rtx() moves a gap-acked chunk onto another tra",
-        "published": "2026-08-22T16:16:30.960"
+        "cve_id": "CVE-2026-16149",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Security Hardener plugin for WordPress is vulnerable to Missing Authorization in all versions up to, and including, 2.4.4. The vulnerability exists because the plugin's user-enumeration protection",
+        "published": "2026-08-23T00:16:50.233"
       },
       {
-        "cve_id": "CVE-2026-74589",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nbpf, sockmap: Fix sk_redir use-after-free in send verdict\n\nsk_psock_msg_verdict() takes a socket reference for psock->sk_redir.\ntcp",
-        "published": "2026-08-22T16:16:31.097"
+        "cve_id": "CVE-2026-10053",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.8 before 19.0.6, 19.1 before 19.1.4, and 19.2 before 19.2.2 that under certain conditions could have allowed an authentica",
+        "published": "2026-08-23T10:16:27.140"
       },
       {
-        "cve_id": "CVE-2026-74590",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nfsverity: Fix bpf_get_fsverity_digest() dynptr assumptions\n\nThe BPF verifier and the dynptr abstraction ensure that the memory spac",
-        "published": "2026-08-22T16:16:31.243"
+        "cve_id": "CVE-2026-78136",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "chirpmyradio CHIRP before 39178db allows eval injection via crafted CSV data. This occurs in _clean_tmode in drivers/kenwood_itm.py.",
+        "published": "2026-08-23T01:17:20.143"
       },
       {
-        "cve_id": "CVE-2026-74591",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmm/filemap: __filemap_add_folio() restore index before retrying\n\nIn __filemap_add_folio()'s split-a-conflict loop, xas_set_order() ",
-        "published": "2026-08-22T16:16:31.353"
+        "cve_id": "CVE-2026-47895",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "In strongSwan before 6.0.7, identity parsing/cloning is mishandled. Parsed EAP-Identities that result in an empty but non-NULL encoding are not correctly cloned and trigger a double-free once the dupl",
+        "published": "2026-08-22T22:16:28.153"
       },
       {
-        "cve_id": "CVE-2026-74592",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nima: Instantiate file_truncate and path_truncate hooks\n\nInstantiate the file_truncate and path_truncate LSM hooks to reset the\nacti",
-        "published": "2026-08-22T16:16:31.460"
+        "cve_id": "CVE-2026-4671",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "justhtml before 1.18.0 contains multiple low-severity denial-of-service issues in CSS selector handling and linkification. Applications that evaluate attacker-controlled selector strings (via query(),",
+        "published": "2026-08-23T14:16:53.293"
       },
       {
-        "cve_id": "CVE-2026-74593",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsched_ext: Take cgroup_lock() first in scx_cgroup_lock()\n\nscx_cgroup_lock() write-locks scx_cgroup_ops_rwsem and then takes\ncgroup_",
-        "published": "2026-08-22T16:16:31.573"
+        "cve_id": "CVE-2026-9769",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "justhtml through 1.9.1 (fixed in 1.10.0) is vulnerable to uncontrolled recursion leading to denial of service. During JustHTML() construction, TreeBuilder.finish() unconditionally calls _populate_sele",
+        "published": "2026-08-23T14:16:55.277"
       },
       {
-        "cve_id": "CVE-2026-74594",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsched/psi: Shut down rtpoll_timer in psi_cgroup_free()\n\npsi_schedule_rtpoll_work() is called locklessly from the scheduler hotpath\n",
-        "published": "2026-08-22T16:16:31.680"
+        "cve_id": "CVE-2026-78122",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "docker-socket-proxy fails to properly gate read endpoints in the /containers Docker API namespace when the CONTAINERS environment variable is set. Attackers can use GET requests to /containers/{id}/ar",
+        "published": "2026-08-22T23:16:22.923"
       },
       {
-        "cve_id": "CVE-2026-74595",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nfscrypt: use the mount idmap for the owner check in fscrypt_ioctl_set_policy()\n\nfscrypt_ioctl_set_policy() calls inode_owner_or_cap",
-        "published": "2026-08-22T16:16:31.817"
+        "cve_id": "CVE-2026-78063",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "A security flaw has been discovered in Tenda CH22 1.0.0.1. The impacted element is the function formeditFileName of the file /goform/editFileName. The manipulation of the argument editNameMit results ",
+        "published": "2026-08-23T05:16:53.273"
       },
       {
-        "cve_id": "CVE-2026-74596",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nfs,fsverity: remove check for fsverity being enabled in setattr_prepare()\n\nThe check that fs-verity is available in the kernel is n",
-        "published": "2026-08-22T16:16:31.923"
+        "cve_id": "CVE-2026-78062",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was identified in vas3k TaxHacker up to 0.8.2. The affected element is the function envSchema.parse of the file lib/config.ts of the component JWT Secret Handler. The manipulation of t",
+        "published": "2026-08-23T05:16:52.137"
       },
       {
-        "cve_id": "CVE-2026-74597",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nip6_tunnel: clear skb2->cb[] in ip6ip6_err()\n\nip6ip6_err() clones an outer IPv6 ICMP error skb, pulls it to the\nquoted inner IPv6 p",
-        "published": "2026-08-22T16:16:32.040"
+        "cve_id": "CVE-2026-77115",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "Brave Popup Builder (brave-popup-builder) up to version 0.8.5 reflects UTM query parameters into popup form HTML without escaping them.",
+        "published": "2026-08-23T06:17:27.730"
       },
       {
-        "cve_id": "CVE-2026-74598",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nipv6: fix Route Information option length validation\n\nrt6_route_rcv() validates the Route Information option (RFC 4191) length\nagai",
-        "published": "2026-08-22T16:16:32.170"
+        "cve_id": "CVE-2026-18027",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "The WebToffee WooCommerce PDF Invoices, Packing Slips, Delivery Notes & Shipping Labels plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 4.9.8 via the ge",
+        "published": "2026-08-23T00:16:50.370"
       },
       {
-        "cve_id": "CVE-2026-74599",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmm/ptdump: always stabilise against page table freeing using init_mm\n\nPrevious commits have established the invariant that kernel p",
-        "published": "2026-08-22T16:16:32.303"
+        "cve_id": "CVE-2026-78056",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A vulnerability was detected in sambitraj Student-Management-System up to 56ba287f2e9031523ccb4244cb6e3fe530e4e5d5. Affected by this issue is some unknown functionality of the component Dashboard. The",
+        "published": "2026-08-23T03:16:59.777"
       },
       {
-        "cve_id": "CVE-2026-74600",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmm/page_table_check: skip special zero mappings\n\npage_table_check_set() and page_table_check_clear() account mappings based\non Page",
-        "published": "2026-08-22T16:16:32.430"
+        "cve_id": "CVE-2026-78057",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A flaw has been found in sambitraj Student-Management-System up to 56ba287f2e9031523ccb4244cb6e3fe530e4e5d5. This affects an unknown part of the component Management Mutation Handler. This manipulatio",
+        "published": "2026-08-23T03:16:59.977"
       },
       {
-        "cve_id": "CVE-2026-74601",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nring-buffer: Use current_context for safe per-CPU buffer swap\n\nThe ring_buffer_swap_cpu() function currently checks the per-CPU\ncom",
-        "published": "2026-08-22T16:16:32.530"
-      },
-      {
-        "cve_id": "CVE-2026-74602",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nring-buffer: Initialise reader page order in rb_allocate_cpu_buffer()\n\nIn rb_allocate_cpu_buffer(), bpage->order was omitted, leavi",
-        "published": "2026-08-22T16:16:32.650"
-      },
-      {
-        "cve_id": "CVE-2026-74603",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nptp: ocp: Fix board ID over-read\n\nThe EEPROM board ID is a fixed 13-byte field and is not guaranteed to\ncontain a NUL terminator. P",
-        "published": "2026-08-22T16:16:32.750"
+        "cve_id": "CVE-2026-78061",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A vulnerability was determined in vas3k TaxHacker up to 0.8.2. Impacted is the function buildImapConfig of the file lib/email-sync/imap-client.ts of the component Email Sync. Executing a manipulation ",
+        "published": "2026-08-23T04:17:09.573"
       }
     ]
   },
