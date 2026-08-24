@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-24T00:41:44.689181+00:00",
+  "generated_at": "2026-08-24T04:35:19.308250+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 9,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,16 +238,30 @@
     ]
   },
   "nvd": {
-    "total": 43,
-    "critical_count": 4,
-    "high_count": 12,
+    "total": 65,
+    "critical_count": 9,
+    "high_count": 26,
     "cves": [
+      {
+        "cve_id": "CVE-2026-78167",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "A weakness has been identified in EFM ipTIME T16000M 14.20.2. The impacted element is the function httpcon_check_session_url of the component Session Validation Handler. This manipulation causes impro",
+        "published": "2026-08-24T02:17:04.300"
+      },
       {
         "cve_id": "CVE-2026-78155",
         "severity": "CRITICAL",
         "base_score": 9.9,
         "description": "privilege escalation in StackGres operator allows a low-privilege tenant who owns a database to gain administrator privileges",
         "published": "2026-08-23T10:16:28.757"
+      },
+      {
+        "cve_id": "CVE-2026-78169",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A vulnerability was detected in UTT HiPER 1250GW up to 3.2.7-210907-180535. This impacts the function strcpy of the file /goform/aspRemoteApConfTempSend of the component HTTP Request Handler. Performi",
+        "published": "2026-08-24T02:17:04.650"
       },
       {
         "cve_id": "CVE-2026-5388",
@@ -271,6 +285,48 @@
         "published": "2026-08-23T14:16:54.957"
       },
       {
+        "cve_id": "CVE-2026-78168",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A security vulnerability has been detected in EFM ipTIME T24000M up to 14.20.0. This affects the function httpcon_check_session_url of the component Session Validation Handler. Such manipulation leads",
+        "published": "2026-08-24T02:17:04.480"
+      },
+      {
+        "cve_id": "CVE-2026-78211",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "4MOSAn GCB Doctor developed by 4MOSAn Security Technology has a OS Command Injection vulnerability. Unauthenticated remote attackers can inject malicious commands through an unremoved ADOdb test page ",
+        "published": "2026-08-24T04:16:59.493"
+      },
+      {
+        "cve_id": "CVE-2026-78207",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "exceljs-hardened before 5.0.0 contains a prototype pollution vulnerability in the deepMerge helper that fails to reject __proto__, constructor, or prototype keys when merging note objects. Attackers c",
+        "published": "2026-08-24T01:16:58.137"
+      },
+      {
+        "cve_id": "CVE-2026-19200",
+        "severity": "HIGH",
+        "base_score": 8.9,
+        "description": "The Velociraptor verify() VQL function allows a user to verify an artifact for syntatic and other issues. Due to an implementation fault in this VQL function, the global artifact repository is used wh",
+        "published": "2026-08-24T04:16:46.557"
+      },
+      {
+        "cve_id": "CVE-2026-78170",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A flaw has been found in UTT HiPER 1200GW up to 2.5.3-170306. Affected is the function strcpy of the file /goform/formConfigFastDirectionW. Executing a manipulation of the argument ssid can lead to bu",
+        "published": "2026-08-24T02:17:04.817"
+      },
+      {
+        "cve_id": "CVE-2026-78213",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "Heptabase developed by Hepta Platforms, Inc. has a Stored Cross-Site Scripting vulnerability. Authenticated remote attackers can inject persistent malicious content into specific pages, causing arbitr",
+        "published": "2026-08-24T04:16:59.817"
+      },
+      {
         "cve_id": "CVE-2026-10053",
         "severity": "HIGH",
         "base_score": 8.5,
@@ -278,11 +334,11 @@
         "published": "2026-08-23T10:16:27.140"
       },
       {
-        "cve_id": "CVE-2026-78136",
+        "cve_id": "CVE-2026-78209",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "chirpmyradio CHIRP before 39178db allows eval injection via crafted CSV data. This occurs in _clean_tmode in drivers/kenwood_itm.py.",
-        "published": "2026-08-23T01:17:20.143"
+        "base_score": 8.2,
+        "description": "exceljs-hardened versions before 5.0.0 fail to neutralize leading equals, plus, minus, or at signs in cell values written to CSV output. Attackers who can influence exported cell values can inject for",
+        "published": "2026-08-24T01:16:58.423"
       },
       {
         "cve_id": "CVE-2026-4671",
@@ -299,88 +355,32 @@
         "published": "2026-08-23T14:16:55.277"
       },
       {
+        "cve_id": "CVE-2026-78206",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "exceljs-hardened before 5.0.0 decompresses all entries from supplied xlsx archives into memory without limits on entry size, total size, or compression ratio. Attackers can upload highly compressed wo",
+        "published": "2026-08-24T01:16:57.973"
+      },
+      {
+        "cve_id": "CVE-2026-78208",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "exceljs-hardened before 5.0.0 contains a path traversal vulnerability in the Workbook.addImage() function that fails to validate file paths. Attackers can supply arbitrary file paths to read any file ",
+        "published": "2026-08-24T01:16:58.280"
+      },
+      {
+        "cve_id": "CVE-2026-78212",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "4MOSAn developed by 4MOSAn Security Technology Co., Ltd. has an Arbitrary File Read vulnerability. Unauthenticated remote attackers can exploit a Relative Path Traversal flaw to download arbitrary sys",
+        "published": "2026-08-24T04:16:59.660"
+      },
+      {
         "cve_id": "CVE-2026-78063",
         "severity": "HIGH",
         "base_score": 7.4,
         "description": "A security flaw has been discovered in Tenda CH22 1.0.0.1. The impacted element is the function formeditFileName of the file /goform/editFileName. The manipulation of the argument editNameMit results ",
         "published": "2026-08-23T05:16:53.273"
-      },
-      {
-        "cve_id": "CVE-2026-78141",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "A vulnerability has been found in Tenda CH22 1.0.0.1. This affects the function formexeCommand of the file /goform/exeCommand. The manipulation of the argument cmdinput leads to command injection. The",
-        "published": "2026-08-23T22:16:32.667"
-      },
-      {
-        "cve_id": "CVE-2026-78156",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "A security vulnerability has been detected in Open5GS 2.8.0. Affected by this issue is the function hss_ogs_diam_s6a_air_cb of the file src/hss/hss-s6a-path.c of the component S6a Authentication-Infor",
-        "published": "2026-08-24T00:16:47.367"
-      },
-      {
-        "cve_id": "CVE-2026-78062",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was identified in vas3k TaxHacker up to 0.8.2. The affected element is the function envSchema.parse of the file lib/config.ts of the component JWT Secret Handler. The manipulation of t",
-        "published": "2026-08-23T05:16:52.137"
-      },
-      {
-        "cve_id": "CVE-2026-78143",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was determined in code-projects Barangay Resident Profiling Management System 1.0. Affected is an unknown function of the file residents.php of the component Resident Search Functional",
-        "published": "2026-08-23T23:16:44.810"
-      },
-      {
-        "cve_id": "CVE-2026-78147",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was found in ggml-org llama.cpp bec4772f6. The impacted element is the function deserialize_tensor of the file ggml/src/ggml-rpc/ggml-rpc.cpp of the component ggml-RPC Server. Performi",
-        "published": "2026-08-23T23:16:46.243"
-      },
-      {
-        "cve_id": "CVE-2026-78154",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was identified in the-momentum open-wearables up to 0.6.2. This impacts the function redeem_invitation_code of the file backend/app/api/routes/v1/user_invitation_code.py of the compone",
-        "published": "2026-08-24T00:16:47.200"
-      },
-      {
-        "cve_id": "CVE-2026-77115",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Brave Popup Builder (brave-popup-builder) up to version 0.8.5 reflects UTM query parameters into popup form HTML without escaping them.",
-        "published": "2026-08-23T06:17:27.730"
-      },
-      {
-        "cve_id": "CVE-2026-78056",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A vulnerability was detected in sambitraj Student-Management-System up to 56ba287f2e9031523ccb4244cb6e3fe530e4e5d5. Affected by this issue is some unknown functionality of the component Dashboard. The",
-        "published": "2026-08-23T03:16:59.777"
-      },
-      {
-        "cve_id": "CVE-2026-78057",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A flaw has been found in sambitraj Student-Management-System up to 56ba287f2e9031523ccb4244cb6e3fe530e4e5d5. This affects an unknown part of the component Management Mutation Handler. This manipulatio",
-        "published": "2026-08-23T03:16:59.977"
-      },
-      {
-        "cve_id": "CVE-2026-78061",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A vulnerability was determined in vas3k TaxHacker up to 0.8.2. Impacted is the function buildImapConfig of the file lib/email-sync/imap-client.ts of the component Email Sync. Executing a manipulation ",
-        "published": "2026-08-23T04:17:09.573"
-      },
-      {
-        "cve_id": "CVE-2026-78112",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A flaw has been found in itsourcecode Hospital Management System Project in PHP 1.0. This impacts an unknown function of the file /viewservicetype.php. This manipulation of the argument delid causes s",
-        "published": "2026-08-23T10:16:28.333"
       }
     ]
   },
