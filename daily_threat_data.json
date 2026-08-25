@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T00:41:45.080694+00:00",
+  "generated_at": "2026-08-25T04:29:25.788709+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 12,
+        "value": 11,
         "score": 3.0,
         "max": 3
       },
@@ -238,44 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 316,
-    "critical_count": 12,
-    "high_count": 53,
+    "total": 341,
+    "critical_count": 11,
+    "high_count": 52,
     "cves": [
-      {
-        "cve_id": "CVE-2026-78167",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "A weakness has been identified in EFM ipTIME T16000M 14.20.2. The impacted element is the function httpcon_check_session_url of the component Session Validation Handler. This manipulation causes impro",
-        "published": "2026-08-24T02:17:04.300"
-      },
-      {
-        "cve_id": "CVE-2026-78169",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A vulnerability was detected in UTT HiPER 1250GW up to 3.2.7-210907-180535. This impacts the function strcpy of the file /goform/aspRemoteApConfTempSend of the component HTTP Request Handler. Performi",
-        "published": "2026-08-24T02:17:04.650"
-      },
       {
         "cve_id": "CVE-2026-66897",
         "severity": "CRITICAL",
         "base_score": 9.9,
         "description": "A path traversal vulnerability in LXD's instance template processing allows an attacker with container edit permissions, or any user launching a crafted image, to overwrite arbitrary files on the host",
         "published": "2026-08-24T10:16:39.767"
-      },
-      {
-        "cve_id": "CVE-2026-78168",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A security vulnerability has been detected in EFM ipTIME T24000M up to 14.20.0. This affects the function httpcon_check_session_url of the component Session Validation Handler. Such manipulation leads",
-        "published": "2026-08-24T02:17:04.480"
-      },
-      {
-        "cve_id": "CVE-2026-78211",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "4MOSAn GCB Doctor developed by 4MOSAn Security Technology has a OS Command Injection vulnerability. Unauthenticated remote attackers can inject malicious commands through an unremoved ADOdb test page ",
-        "published": "2026-08-24T04:16:59.493"
       },
       {
         "cve_id": "CVE-2026-28165",
@@ -313,11 +285,11 @@
         "published": "2026-08-24T12:16:53.580"
       },
       {
-        "cve_id": "CVE-2026-78207",
+        "cve_id": "CVE-2026-76840",
         "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "exceljs-hardened before 5.0.0 contains a prototype pollution vulnerability in the deepMerge helper that fails to reject __proto__, constructor, or prototype keys when merging note objects. Attackers c",
-        "published": "2026-08-24T01:16:58.137"
+        "base_score": 9.6,
+        "description": "RustDesk's Windows clipboard redirection copies a peer-supplied length into a fixed-size caller buffer without an upper bound check. When an OLE paste consumer such as explorer.exe calls IStream::Read",
+        "published": "2026-08-24T14:17:01.550"
       },
       {
         "cve_id": "CVE-2026-32551",
@@ -327,18 +299,25 @@
         "published": "2026-08-24T12:16:51.733"
       },
       {
-        "cve_id": "CVE-2026-19200",
-        "severity": "HIGH",
-        "base_score": 8.9,
-        "description": "The Velociraptor verify() VQL function allows a user to verify an artifact for syntatic and other issues. Due to an implementation fault in this VQL function, the global artifact repository is used wh",
-        "published": "2026-08-24T04:16:46.557"
+        "cve_id": "CVE-2026-59564",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "An authentication bypass issue exists in communications between affected versions of the Zscaler Client Connector and the Zscaler Client Connector Portal.",
+        "published": "2026-08-24T14:16:55.690"
       },
       {
-        "cve_id": "CVE-2026-78170",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw has been found in UTT HiPER 1200GW up to 2.5.3-170306. Affected is the function strcpy of the file /goform/formConfigFastDirectionW. Executing a manipulation of the argument ssid can lead to bu",
-        "published": "2026-08-24T02:17:04.817"
+        "cve_id": "CVE-2026-59568",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Multiple vulnerabilities on affected versions of Zscaler Client Connector allow remote code execution, giving an unauthenticated, unprivileged user the ability to execute arbitrary code in the ZCC con",
+        "published": "2026-08-24T14:16:56.210"
+      },
+      {
+        "cve_id": "CVE-2026-67602",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "phpIPAM before 1.8.2 contains an authentication bypass vulnerability in the REST API that allows unauthenticated attackers to gain full API access by exploiting an insecure object cache keying mechani",
+        "published": "2026-08-24T14:16:57.347"
       },
       {
         "cve_id": "CVE-2026-78314",
@@ -369,11 +348,32 @@
         "published": "2026-08-24T10:16:40.810"
       },
       {
-        "cve_id": "CVE-2026-78213",
+        "cve_id": "CVE-2026-59565",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "Heptabase developed by Hepta Platforms, Inc. has a Stored Cross-Site Scripting vulnerability. Authenticated remote attackers can inject persistent malicious content into specific pages, causing arbitr",
-        "published": "2026-08-24T04:16:59.817"
+        "base_score": 8.8,
+        "description": "A remotely exploitable buffer overflow bug can cause a local and kernel denial-of-service attack on affected versions of Zscaler Client Connector on Windows.",
+        "published": "2026-08-24T14:16:55.830"
+      },
+      {
+        "cve_id": "CVE-2026-59567",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Multiple vulnerabilities on affected versions of Zscaler Client Connector allow local privilege escalation, giving an unprivileged user the ability to execute arbitrary code in a privileged context.",
+        "published": "2026-08-24T14:16:56.080"
+      },
+      {
+        "cve_id": "CVE-2026-76841",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Xinference loads models with Hugging Face remote code execution unconditionally enabled, and before version 2.12.0 exposes no setting to disable it. Six loader call sites pass trust_remote_code=True a",
+        "published": "2026-08-24T14:17:01.760"
+      },
+      {
+        "cve_id": "CVE-2026-76847",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "act starts an HTTP Artifacts V4 backend whenever a workflow uses actions/upload-artifact@v4 or actions/download-artifact@v4. The control-plane RPCs of that backend, including CreateArtifact, GetSigned",
+        "published": "2026-08-24T14:17:02.857"
       },
       {
         "cve_id": "CVE-2026-28171",
