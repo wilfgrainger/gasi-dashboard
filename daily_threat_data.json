@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-25T12:27:54.060369+00:00",
+  "generated_at": "2026-08-25T16:24:35.981933+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 10,
-        "score": 3.0,
+        "value": 5,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,29 +238,15 @@
     ]
   },
   "nvd": {
-    "total": 379,
-    "critical_count": 10,
-    "high_count": 40,
+    "total": 400,
+    "critical_count": 5,
+    "high_count": 47,
     "cves": [
-      {
-        "cve_id": "CVE-2026-76070",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Netis NC63 firmware through V3.0.0.3327 contains a stack-based buffer overflow vulnerability that allows unauthenticated remote attackers to overwrite saved stack state by submitting an oversized Base",
-        "published": "2026-08-24T16:17:22.963"
-      },
-      {
-        "cve_id": "CVE-2026-76071",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Netis NC63 firmware through V3.0.0.3327 contains a stack-based buffer overflow vulnerability that allows unauthenticated remote attackers to overwrite saved stack state by supplying an oversized destH",
-        "published": "2026-08-24T16:17:23.117"
-      },
       {
         "cve_id": "CVE-2026-77915",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "rConfig 8.0.0 before 8.2.13 contains an authentication bypass vulnerability that allows unauthenticated attackers to self-register accounts with full Administrator privileges due to a duplicate bare A",
+        "description": "rConfig Core 8.0.0 before 8.2.13 contains an authentication bypass vulnerability that allows unauthenticated attackers to self-register accounts with full Administrator privileges due to a duplicate b",
         "published": "2026-08-24T17:18:18.450"
       },
       {
@@ -278,81 +264,25 @@
         "published": "2026-08-24T18:17:07.060"
       },
       {
-        "cve_id": "CVE-2026-76840",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "RustDesk's Windows clipboard redirection copies a peer-supplied length into a fixed-size caller buffer without an upper bound check. When an OLE paste consumer such as explorer.exe calls IStream::Read",
-        "published": "2026-08-24T14:17:01.550"
-      },
-      {
-        "cve_id": "CVE-2026-59564",
+        "cve_id": "CVE-2026-71933",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "An authentication bypass issue exists in communications between affected versions of the Zscaler Client Connector and the Zscaler Client Connector Portal.",
-        "published": "2026-08-24T14:16:55.690"
+        "description": "Multiple DrayTek VigorSwitch models contain unauthorized operation vulnerabilities in multiple syslog functions. The vulnerability is caused by missing authorization checks. A remote attacker can trig",
+        "published": "2026-08-24T18:17:18.090"
       },
       {
-        "cve_id": "CVE-2026-59568",
+        "cve_id": "CVE-2026-76835",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Multiple vulnerabilities on affected versions of Zscaler Client Connector allow remote code execution, giving an unauthenticated, unprivileged user the ability to execute arbitrary code in the ZCC con",
-        "published": "2026-08-24T14:16:56.210"
+        "description": "OAuth2 Proxy honours a client-supplied X-Forwarded-Uri header when deciding whether a request may skip authentication, because the guard added for CVE-2026-40575 is inert in the default reverse-proxy ",
+        "published": "2026-08-24T18:17:21.570"
       },
       {
-        "cve_id": "CVE-2026-67602",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "phpIPAM before 1.8.2 contains an authentication bypass vulnerability in the REST API that allows unauthenticated attackers to gain full API access by exploiting an insecure object cache keying mechani",
-        "published": "2026-08-24T14:16:57.347"
-      },
-      {
-        "cve_id": "CVE-2026-19874",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A heap-based buffer overflow vulnerability exists in Konami's Metal Gear Online 3, originating from improper validation of lobby data fields related to kicked players. The affected function processes ",
-        "published": "2026-08-24T15:16:37.577"
-      },
-      {
-        "cve_id": "CVE-2026-59565",
+        "cve_id": "CVE-2026-30864",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A remotely exploitable buffer overflow bug can cause a local and kernel denial-of-service attack on affected versions of Zscaler Client Connector on Windows.",
-        "published": "2026-08-24T14:16:55.830"
-      },
-      {
-        "cve_id": "CVE-2026-59567",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Multiple vulnerabilities on affected versions of Zscaler Client Connector allow local privilege escalation, giving an unprivileged user the ability to execute arbitrary code in a privileged context.",
-        "published": "2026-08-24T14:16:56.080"
-      },
-      {
-        "cve_id": "CVE-2026-76841",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Xinference loads models with Hugging Face remote code execution unconditionally enabled, and before version 2.12.0 exposes no setting to disable it. Six loader call sites pass trust_remote_code=True a",
-        "published": "2026-08-24T14:17:01.760"
-      },
-      {
-        "cve_id": "CVE-2026-76847",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "act starts an HTTP Artifacts V4 backend whenever a workflow uses actions/upload-artifact@v4 or actions/download-artifact@v4. The control-plane RPCs of that backend, including CreateArtifact, GetSigned",
-        "published": "2026-08-24T14:17:02.857"
-      },
-      {
-        "cve_id": "CVE-2026-78376",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw was found in WebKitGTK. Processing malicious web content can cause a use-after-free issue due to improper memory handling and result in memory corruption.",
-        "published": "2026-08-24T14:17:05.390"
-      },
-      {
-        "cve_id": "CVE-2026-13212",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Zephyr virtio driver does not validate the descriptor-chain head id that the virtio device writes into the used ring. In virtio_isr() (drivers/virtio/virtio_common.c), the device-written vq->used-",
-        "published": "2026-08-24T16:16:55.393"
+        "base_score": 8.9,
+        "description": "Combodo iTop is a web-based IT service management tool. Prior to 3.2.3, iTop is vulnerable to Reflected Cross-Site Scripting (XSS) in the dashboard revert functionality. This issue has been fixed in v",
+        "published": "2026-08-24T19:16:37.140"
       },
       {
         "cve_id": "CVE-2025-36940",
@@ -362,25 +292,95 @@
         "published": "2026-08-24T17:17:21.303"
       },
       {
-        "cve_id": "CVE-2026-59566",
+        "cve_id": "CVE-2026-76073",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "A locally exploitable buffer overflow bug can cause a local denial-of-service attack on affected versions of Zscaler Client Connector on Android and ChromeOS.",
-        "published": "2026-08-24T14:16:55.940"
+        "base_score": 8.8,
+        "description": "Label Studio does not scope the annotation detail endpoint to the requesting user's organization. AnnotationAPI in label_studio/tasks/api.py declares queryset = Annotation.objects.all() and provides n",
+        "published": "2026-08-24T18:17:21.410"
       },
       {
-        "cve_id": "CVE-2026-76842",
+        "cve_id": "CVE-2026-76836",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "The Mercado Pago Node.js SDK interpolates caller-supplied identifiers into API request paths without percent-encoding them, so characters that are structural in a URL survive into the outgoing request",
-        "published": "2026-08-24T14:17:01.930"
+        "base_score": 8.8,
+        "description": "AzuraCast exposes the Liquidsoap custom configuration fields through an endpoint that does not require the permission guarding them. The backend_config property in backend/src/Entity/Station.php is an",
+        "published": "2026-08-24T18:17:21.733"
       },
       {
-        "cve_id": "CVE-2026-39915",
+        "cve_id": "CVE-2026-40877",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "Combodo iTop is a web-based IT service management tool. Prior to 3.2.3, iTop is vulnerable to PHP object injection in the user preference functionality, which can lead to remote code execution. This i",
+        "published": "2026-08-24T19:16:38.647"
+      },
+      {
+        "cve_id": "CVE-2026-76838",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "Hi.Events validates a webhook destination only when it is registered, never when it is used. NoInternalUrlRule in backend/app/Validators/Rules/NoInternalUrlRule.php resolves the hostname with gethostb",
+        "published": "2026-08-24T18:17:22.363"
+      },
+      {
+        "cve_id": "CVE-2026-71504",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "TIM Flow before 26.0.6 contains a CRLF injection vulnerability that allows remote attackers to inject arbitrary HTTP headers and response body content by embedding unsanitized carriage return and line",
-        "published": "2026-08-24T15:16:38.090"
+        "description": "Dolibarr before 24.0.0 contains an improper authorization vulnerability in the Members REST API that allows attackers with only member-creation rights to reset the password of any user account, includ",
+        "published": "2026-08-24T19:16:49.670"
+      },
+      {
+        "cve_id": "CVE-2026-71506",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Dolibarr before 24.0.0 contains an improper authorization vulnerability in the payments REST API delete endpoint that allows authenticated attackers with invoice-deletion rights to permanently delete ",
+        "published": "2026-08-24T19:16:49.960"
+      },
+      {
+        "cve_id": "CVE-2026-61419",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Dell ThinOS 10, versions prior to 2605_10.2518, contain an Improper Access Control vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, leading to U",
+        "published": "2026-08-24T20:16:51.990"
+      },
+      {
+        "cve_id": "CVE-2026-71922",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Multiple DrayTek VigorSwitch models contain a pre-authentication null pointer dereference vulnerability in the setget.cgi interface. The vulnerability is caused by missing validation when the pass fie",
+        "published": "2026-08-24T18:17:07.280"
+      },
+      {
+        "cve_id": "CVE-2026-76072",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "The Continue CLI applies an incomplete denylist as its only barrier to destructive shell commands when running unattended. In headless mode and auto mode the default policy in extensions/cli/src/permi",
+        "published": "2026-08-24T18:17:21.233"
+      },
+      {
+        "cve_id": "CVE-2026-71904",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "Multiple DrayTek VigorAP models contain a command injection vulnerability in the tr069TestInform function. The vulnerability is caused by insufficient filtering of dangerous characters before the even",
+        "published": "2026-08-24T18:17:01.700"
+      },
+      {
+        "cve_id": "CVE-2026-71906",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "Multiple DrayTek VigorAP models contain a command injection vulnerability in the setLan function. The vulnerability is caused by insufficient validation of the lanIp and lanNetmask fields before comma",
+        "published": "2026-08-24T18:17:02.067"
+      },
+      {
+        "cve_id": "CVE-2026-71907",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "Multiple DrayTek VigorAP models contain a command injection vulnerability in the setcamset function. The vulnerability is caused by insufficient filtering of the selectSlaves field before command exec",
+        "published": "2026-08-24T18:17:02.243"
+      },
+      {
+        "cve_id": "CVE-2026-71908",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "Multiple DrayTek VigorAP models contain a command injection vulnerability in the mesh_start_speed_test function. The vulnerability is caused by insufficient sanitization of the meshdevice_index and me",
+        "published": "2026-08-24T18:17:02.420"
       }
     ]
   },
