@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T08:31:21.346037+00:00",
+  "generated_at": "2026-08-26T12:30:41.394364+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
+        "value": 8,
         "score": 2.5,
         "max": 3
       },
@@ -238,65 +238,65 @@
     ]
   },
   "nvd": {
-    "total": 688,
-    "critical_count": 5,
-    "high_count": 28,
+    "total": 609,
+    "critical_count": 8,
+    "high_count": 41,
     "cves": [
       {
-        "cve_id": "CVE-2026-63586",
+        "cve_id": "CVE-2026-16286",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "The web-based management interface uses a modified uhttpd server with CGI shell scripts. The HTTP Basic Authentication username, taken directly from the Authorization header without sanitization, is i",
-        "published": "2026-08-25T09:17:31.823"
+        "description": "Unrestricted upload of file with dangerous type vulnerability in TRtek Technological Products Computer Software Hardware Industry and Trade Limited Company Software Repository Management allows Upload",
+        "published": "2026-08-25T15:16:30.180"
       },
       {
-        "cve_id": "CVE-2026-78568",
+        "cve_id": "CVE-2022-51000",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "The Total Donations plugin for WordPress is vulnerable to SQL Injection in all versions up to, and including, 2.0.5 due to insufficient escaping on the user supplied parameter and lack of sufficient p",
-        "published": "2026-08-25T09:17:36.590"
+        "description": "Nokogiri before 1.13.2 (CRuby, when using packaged libraries) ships vendored libxml2 2.9.12 and libxslt 1.1.34, which are affected by two upstream CVEs. Via CVE-2021-30560 in libxslt, an application t",
+        "published": "2026-08-25T16:16:44.380"
       },
       {
-        "cve_id": "CVE-2026-78570",
+        "cve_id": "CVE-2024-58378",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "The Total Donations plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 2.0.5. This makes it possible for unauthenticated attackers to elevate their privil",
-        "published": "2026-08-25T10:18:13.563"
+        "description": "Nokogiri before 1.15.6 and 1.16.x before 1.16.2 (CRuby, when using the packaged libxml2) is affected by a use-after-free vulnerability in libxml2 (CVE-2024-25062) in the xmlTextReader module, which un",
+        "published": "2026-08-25T16:16:45.153"
       },
       {
-        "cve_id": "CVE-2026-49845",
+        "cve_id": "CVE-2025-71407",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "SQL injection in Hive Metastore direct SQL partition-name resolution in Apache Hive before 4.2.1 on all platforms allows authenticated users with access to Hive Metastore APIs to read, modify, or affe",
-        "published": "2026-08-25T11:16:53.410"
+        "description": "Nokogiri before 1.18.3 contains a stack buffer overflow vulnerability in libxml2 when reporting DTD validation errors with long QName prefixes, and a use-after-free vulnerability during validation aga",
+        "published": "2026-08-25T16:16:45.633"
       },
       {
-        "cve_id": "CVE-2026-79657",
+        "cve_id": "CVE-2026-55546",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "NLTK versions before 3.10.3 contain a remote code execution vulnerability in allowlisted pickle loaders that trust entire module namespaces instead of specific safe callables. Attackers can craft mali",
-        "published": "2026-08-25T12:16:28.870"
+        "description": "QWED-MCP is a deterministic verification gateway for MCP. Prior to 0.2.1, verify_math_expression() in src/qwed_mcp/engines/math_engine.py passes attacker-controlled expression and claimed_result strin",
+        "published": "2026-08-25T16:16:55.160"
       },
       {
-        "cve_id": "CVE-2026-49050",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "General user can mint admin access tokens via /access-tokens\n\n\n\nThis issue affects Apache DolphinScheduler: before 3.4.2.\n\n\n\nUsers are recommended to upgrade to version 3.4.2, which fixes the issue.",
-        "published": "2026-08-25T10:18:09.430"
+        "cve_id": "CVE-2026-79675",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "NLTK before 3.10.3 fails to validate JVM options passed through the per-call options parameter in the java() function, allowing attackers to inject dangerous JVM flags. Attackers can supply malicious ",
+        "published": "2026-08-25T16:17:28.013"
       },
       {
-        "cve_id": "CVE-2026-19949",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The All-in-One WP Migration and Backup plugin for WordPress is vulnerable to SQL Injection via archive restore functionality in all versions up to, and including, 7.109 due to insufficient escaping on",
-        "published": "2026-08-25T12:16:23.783"
+        "cve_id": "CVE-2026-55536",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "PraisonAI is a multi-agent teams system. Prior to praisonai 4.6.58, Browser Server _handle_connection() checks Chrome extension origins with re.match() and the unanchored expression chrome-extension:/",
+        "published": "2026-08-25T16:16:54.867"
       },
       {
-        "cve_id": "CVE-2026-79665",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Ech0 before 4.5.1 contains an authorization bypass vulnerability where session tokens skip scope validation in RequireScopes middleware, allowing logged-in non-admin users to access admin endpoints. A",
-        "published": "2026-08-25T12:16:34.523"
+        "cve_id": "CVE-2026-55640",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Nextcloud MCP Server is a production-ready MCP server that connects AI assistants to a Nextcloud instance. Prior to 0.117.2, the POST /webhooks/nextcloud endpoint in nextcloud_mcp_server/vector/webhoo",
+        "published": "2026-08-25T16:16:55.810"
       },
       {
         "cve_id": "CVE-2026-57863",
@@ -306,81 +306,81 @@
         "published": "2026-08-25T13:19:24.200"
       },
       {
-        "cve_id": "CVE-2026-59335",
+        "cve_id": "CVE-2026-79784",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "Improper handling of case sensitivity (CWE-178) in the identity zone authorization check in the Identity Zone Endpoint in Cloud Foundry UAA allows a remote authenticated attacker holding only the zone",
-        "published": "2026-08-25T11:16:53.817"
+        "base_score": 8.8,
+        "description": "Vocos instantiates a class named by a configuration file without restricting which class may be named. instantiate_class in vocos/pretrained.py takes the class_path value from the configuration, split",
+        "published": "2026-08-25T16:17:30.547"
       },
       {
-        "cve_id": "CVE-2026-63587",
+        "cve_id": "CVE-2026-24170",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "NVIDIA UFM Enterprise contains a vulnerability in the web interface authorization component, where an authenticated user could cause improper authentication by sending specially crafted HTTP requests.",
+        "published": "2026-08-25T17:17:10.290"
+      },
+      {
+        "cve_id": "CVE-2026-55534",
         "severity": "HIGH",
         "base_score": 8.6,
-        "description": "The SMS control function of IE-SR-2TX-WL-4G devices can require a password for SMS commands via the 'Enable Password Authorization' setting. The device increments a retry counter on each failed SMS pa",
-        "published": "2026-08-25T09:17:32.057"
+        "description": "PraisonAI is a multi-agent teams system. From praisonai 4.6.34 until 4.6.58, praisonai serve agents accepts --api-key but _create_agents_app() does not authenticate POST /agents or POST /agents/{agent",
+        "published": "2026-08-25T15:16:34.167"
       },
       {
-        "cve_id": "CVE-2026-78562",
+        "cve_id": "CVE-2022-50999",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Verdure Core plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.2. This makes it possible for unauthenticated attackers to include and execute arbit",
-        "published": "2026-08-25T09:17:36.070"
+        "base_score": 8.6,
+        "description": "Nokogiri versions before 1.13.5 contain an integer overflow vulnerability in packaged libxml2 buffer handling functions that allows attackers to cause out-of-bounds memory writes. Attackers can exploi",
+        "published": "2026-08-25T16:16:44.240"
       },
       {
-        "cve_id": "CVE-2026-78566",
+        "cve_id": "CVE-2026-55539",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Shuffle theme for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.8. This makes it possible for unauthenticated attackers to include and execute arbitrary f",
-        "published": "2026-08-25T09:17:36.427"
+        "base_score": 8.6,
+        "description": "PraisonAI is a multi-agent teams system. Prior to praisonai 4.6.51, the Jobs API create_app function mounts /api/v1/runs without authentication. Any reachable caller can submit jobs, read results, can",
+        "published": "2026-08-25T16:16:55.010"
       },
       {
-        "cve_id": "CVE-2026-16231",
+        "cve_id": "CVE-2026-55526",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "hbs is an Express view engine that wraps Handlebars. Its registerAsyncHelper API bypasses Handlebars' automatic HTML escaping: an async helper returns an opaque placeholder during the first render pas",
-        "published": "2026-08-25T10:18:04.080"
+        "base_score": 8.5,
+        "description": "PraisonAI is a multi-agent teams system. Prior to praisonaiagents 1.6.58, spider_tools._host_is_blocked() does not resolve ordinary hostnames before scrape_page fetches them. A hostname such as 127.0.",
+        "published": "2026-08-25T15:16:33.300"
       },
       {
-        "cve_id": "CVE-2026-78572",
+        "cve_id": "CVE-2026-70551",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Kalles Addons plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 1.0.6 via deserialization of untrusted input. This makes it possible for unauthentica",
-        "published": "2026-08-25T10:18:13.707"
+        "base_score": 8.5,
+        "description": "A user who can read an existing remote VCS repository can replace its configured origin or supply an absolute VCS data URL.",
+        "published": "2026-08-25T15:16:38.060"
       },
       {
-        "cve_id": "CVE-2026-79662",
+        "cve_id": "CVE-2026-55581",
         "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "Ech0 through 4.5.6 contains an OAuth redirect URI validation vulnerability in parseAndValidateClientRedirect (internal/service/auth/auth.go) that compares only the scheme and host of the client-suppli",
-        "published": "2026-08-25T12:16:31.470"
+        "base_score": 8.4,
+        "description": "mcp-shell is an MCP server for running shell commands securely, auditably, and on demand. Prior to 0.6.0, the default Docker security.yaml includes /bin/bash in allowed_executables, while security.go ",
+        "published": "2026-08-25T16:16:55.470"
       },
       {
-        "cve_id": "CVE-2026-79655",
+        "cve_id": "CVE-2026-55582",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A flaw was found in sos clean, a utility within the sos package. This vulnerability allows a local attacker to perform arbitrary file creation or overwrite. By crafting a malicious tar archive, an att",
-        "published": "2026-08-25T14:16:58.010"
+        "base_score": 8.4,
+        "description": "mcp-shell is an MCP server for running shell commands securely, auditably, and on demand. Prior to 0.6.0, the default security.yaml allows /usr/bin/git, while security.go omits ! from containsShellMet",
+        "published": "2026-08-25T16:16:55.650"
       },
       {
-        "cve_id": "CVE-2026-79659",
+        "cve_id": "CVE-2026-79774",
         "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Ech0 before 4.7.3 contains a server-side request forgery vulnerability in the fetchPeerConnectInfo function that uses unvalidated HTTP requests instead of safe request methods with URL validation. Aut",
-        "published": "2026-08-25T12:16:29.380"
+        "base_score": 8.4,
+        "description": "Winter CMS versions before 1.2.13 contain an incomplete fix for a Twig sandbox escape vulnerability in System\\\\Twig\\\\SecurityPolicy that allows authenticated backend users with template-editing permis",
+        "published": "2026-08-25T16:17:29.060"
       },
       {
-        "cve_id": "CVE-2026-79667",
+        "cve_id": "CVE-2026-55528",
         "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "Ech0 version 4.3.4 and earlier fails to reliably enforce scoped access token (least-privilege) restrictions on several privileged admin routes. Multiple privileged endpoints (e.g., /api/inbox, /api/pa",
-        "published": "2026-08-25T12:16:34.813"
-      },
-      {
-        "cve_id": "CVE-2026-78576",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Readabler plugin for WordPress is vulnerable to SQL Injection in all versions up to 2.0.18 (exclusive) due to insufficient escaping on the user supplied parameter and lack of sufficient preparatio",
-        "published": "2026-08-25T10:18:13.877"
+        "base_score": 8.2,
+        "description": "PraisonAI is a multi-agent teams system. Prior to praisonaiagents 1.6.58, AgentServer exposes ServerConfig.auth_token but AgentServer._create_app does not check it on any route. A remote caller can su",
+        "published": "2026-08-25T15:16:33.590"
       }
     ]
   },
