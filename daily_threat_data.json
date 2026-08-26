@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-08-25T20:17:37.393952+00:00",
+  "generated_at": "2026-08-26T00:42:16.606532+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 23,
+        "value": 21,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 12,
-        "score": 3.0,
+        "value": 8,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1676,
-    "recent_30d_count": 23,
+    "recent_30d_count": 21,
     "recent": [
       {
         "cve_id": "CVE-2026-60004",
@@ -238,52 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 400,
-    "critical_count": 12,
-    "high_count": 33,
+    "total": 773,
+    "critical_count": 8,
+    "high_count": 32,
     "cves": [
-      {
-        "cve_id": "CVE-2026-32559",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Subscriber Arbitrary File Upload in UltimateAI <= 3.1.0 versions.",
-        "published": "2026-08-24T22:16:51.900"
-      },
-      {
-        "cve_id": "CVE-2026-52490",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An issue in libtiff 85f2ac8e0b01cb7db2bbecf4a3b891bdbef67938 allows an attacker to execute arbitrary code via the process_command_opts() function in tools/tiffcrop.c",
-        "published": "2026-08-24T21:17:19.803"
-      },
-      {
-        "cve_id": "CVE-2026-32563",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Subscriber PHP Object Injection in ACPT (Pro) - Custom Post Types Plugin for WordPress <= 2.0.63 versions.",
-        "published": "2026-08-24T22:16:52.287"
-      },
-      {
-        "cve_id": "CVE-2026-78262",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Unauthenticated PHP Object Injection in WP Project Manager <= 4.0.6 versions.",
-        "published": "2026-08-24T22:17:19.947"
-      },
-      {
-        "cve_id": "CVE-2026-78265",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Unauthenticated PHP Object Injection in The Events Calendar <= 6.17.2 versions.",
-        "published": "2026-08-24T22:17:20.407"
-      },
-      {
-        "cve_id": "CVE-2026-78267",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Unauthenticated Privilege Escalation in TranslatePress <= 3.3.2 versions.",
-        "published": "2026-08-24T22:17:20.670"
-      },
       {
         "cve_id": "CVE-2026-56705",
         "severity": "CRITICAL",
@@ -306,6 +264,27 @@
         "published": "2026-08-25T02:16:52.030"
       },
       {
+        "cve_id": "CVE-2026-13214",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The OCPP 1.6 client in subsys/net/lib/ocpp/ocpp_j.c contains a stack buffer overflow in parse_getconfig_msg(). When handling a GetConfiguration request from the central system, the handler copied the ",
+        "published": "2026-08-25T05:17:20.060"
+      },
+      {
+        "cve_id": "CVE-2026-78477",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Jawn theme for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 1.4.2. This makes it possible for unauthenticated attackers to elevate their privileges to that",
+        "published": "2026-08-25T06:19:01.147"
+      },
+      {
+        "cve_id": "CVE-2026-63586",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The web-based management interface uses a modified uhttpd server with CGI shell scripts. The HTTP Basic Authentication username, taken directly from the Authorization header without sanitization, is i",
+        "published": "2026-08-25T09:17:31.823"
+      },
+      {
         "cve_id": "CVE-2026-78683",
         "severity": "CRITICAL",
         "base_score": 9.6,
@@ -313,32 +292,11 @@
         "published": "2026-08-25T02:16:53.033"
       },
       {
-        "cve_id": "CVE-2026-32554",
+        "cve_id": "CVE-2026-59769",
         "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Unauthenticated SQL Injection in WooBeWoo Product Filter Pro <= 3.1.8 versions.",
-        "published": "2026-08-24T22:16:51.510"
-      },
-      {
-        "cve_id": "CVE-2026-32555",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Unauthenticated SQL Injection in Boost <= 2.0.4 versions.",
-        "published": "2026-08-24T22:16:51.650"
-      },
-      {
-        "cve_id": "CVE-2026-32560",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Subscriber Local File Inclusion in MagicAI for WordPress - AI Text, Image, Chat, Code, and Voice Generator <= 1.4 versions.",
-        "published": "2026-08-24T22:16:52.027"
-      },
-      {
-        "cve_id": "CVE-2026-32561",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Subscriber Privilege Escalation in Booking Hub <= 1.3.0 versions.",
-        "published": "2026-08-24T22:16:52.157"
+        "base_score": 9.1,
+        "description": "FA-50 all versions contain hard-coded credentials.\r\nAn attacker, who knows the credentials and has access to the vessel's internal network, can operate the settings screen using that credentials to al",
+        "published": "2026-08-25T08:18:09.717"
       },
       {
         "cve_id": "CVE-2026-56702",
@@ -369,11 +327,39 @@
         "published": "2026-08-25T04:18:10.770"
       },
       {
-        "cve_id": "CVE-2026-78284",
+        "cve_id": "CVE-2026-16601",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The CM Map Locations \u2013 Visualize and share your locations in a few clicks plugin for WordPress is vulnerable to Limited Arbitrary File Upload in all versions up to, and including, 2.1.8 via the upload",
+        "published": "2026-08-25T08:18:08.220"
+      },
+      {
+        "cve_id": "CVE-2026-63587",
         "severity": "HIGH",
         "base_score": 8.6,
-        "description": "Unauthenticated Arbitrary File Deletion in MasterStudy LMS <= 3.7.42 versions.",
-        "published": "2026-08-24T22:17:21.053"
+        "description": "The SMS control function of IE-SR-2TX-WL-4G devices can require a password for SMS commands via the 'Enable Password Authorization' setting. The device increments a retry counter on each failed SMS pa",
+        "published": "2026-08-25T09:17:32.057"
+      },
+      {
+        "cve_id": "CVE-2026-68062",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "SKYSEA Client View and SKYMEC IT Manager contain a path traversal vulnerability. If this vulnerability is exploited, an attacker who can log in to a Windows system on which the affected product is ins",
+        "published": "2026-08-25T07:17:10.467"
+      },
+      {
+        "cve_id": "CVE-2026-68959",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "SKYSEA Client View and SKYMEC IT Manager contain a path traversal vulnerability. If this vulnerability is exploited, an attacker who can log in to a Windows system on which the affected product is ins",
+        "published": "2026-08-25T07:17:10.600"
+      },
+      {
+        "cve_id": "CVE-2026-68960",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "A stack-based buffer overflow vulnerability exists in SKYSEA Client View and SKYMEC IT Manager. If this vulnerability is exploited, an attacker who can log in to a Windows system on which the affected",
+        "published": "2026-08-25T07:17:10.730"
       },
       {
         "cve_id": "CVE-2026-72696",
@@ -381,6 +367,20 @@
         "base_score": 8.4,
         "description": "Grav CMS before 2.0.16 contains a symlink following vulnerability in Scheduler Job::createLockFile() that allows local attackers to overwrite arbitrary files by pre-creating symlinks at predictable lo",
         "published": "2026-08-25T02:16:45.253"
+      },
+      {
+        "cve_id": "CVE-2026-78675",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "GitPython before 3.1.59 fails to disable merge_includes when parsing .gitmodules, allowing attackers to disclose local file content by including arbitrary file paths via [include] directives. Attacker",
+        "published": "2026-08-25T02:16:51.887"
+      },
+      {
+        "cve_id": "CVE-2026-34968",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Adminer before 5.4.3 contains an arbitrary file deletion vulnerability in SQLite mode where the database-list drop action fails to validate file extensions before deletion. An authenticated attacker c",
+        "published": "2026-08-25T02:16:40.843"
       }
     ]
   },
