@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T04:30:24.303925+00:00",
+  "generated_at": "2026-08-26T08:31:21.346037+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
+        "value": 5,
         "score": 2.5,
         "max": 3
       },
@@ -238,24 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 718,
-    "critical_count": 8,
-    "high_count": 29,
+    "total": 688,
+    "critical_count": 5,
+    "high_count": 28,
     "cves": [
-      {
-        "cve_id": "CVE-2026-13214",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The OCPP 1.6 client in subsys/net/lib/ocpp/ocpp_j.c contains a stack buffer overflow in parse_getconfig_msg(). When handling a GetConfiguration request from the central system, the handler copied the ",
-        "published": "2026-08-25T05:17:20.060"
-      },
-      {
-        "cve_id": "CVE-2026-78477",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Jawn theme for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 1.4.2. This makes it possible for unauthenticated attackers to elevate their privileges to that",
-        "published": "2026-08-25T06:19:01.147"
-      },
       {
         "cve_id": "CVE-2026-63586",
         "severity": "CRITICAL",
@@ -292,20 +278,6 @@
         "published": "2026-08-25T12:16:28.870"
       },
       {
-        "cve_id": "CVE-2026-59769",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "FA-50 all versions contain hard-coded credentials.\r\nAn attacker, who knows the credentials and has access to the vessel's internal network, can operate the settings screen using that credentials to al",
-        "published": "2026-08-25T08:18:09.717"
-      },
-      {
-        "cve_id": "CVE-2026-16601",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The CM Map Locations \u2013 Visualize and share your locations in a few clicks plugin for WordPress is vulnerable to Limited Arbitrary File Upload in all versions up to, and including, 2.1.8 via the upload",
-        "published": "2026-08-25T08:18:08.220"
-      },
-      {
         "cve_id": "CVE-2026-49050",
         "severity": "HIGH",
         "base_score": 8.8,
@@ -320,6 +292,20 @@
         "published": "2026-08-25T12:16:23.783"
       },
       {
+        "cve_id": "CVE-2026-79665",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Ech0 before 4.5.1 contains an authorization bypass vulnerability where session tokens skip scope validation in RequireScopes middleware, allowing logged-in non-admin users to access admin endpoints. A",
+        "published": "2026-08-25T12:16:34.523"
+      },
+      {
+        "cve_id": "CVE-2026-57863",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Crater Invoice through 6.0.6 contains a path traversal vulnerability in the self-update API that allows authenticated company owners to write arbitrary files outside the intended extraction directory ",
+        "published": "2026-08-25T13:19:24.200"
+      },
+      {
         "cve_id": "CVE-2026-59335",
         "severity": "HIGH",
         "base_score": 8.7,
@@ -332,34 +318,6 @@
         "base_score": 8.6,
         "description": "The SMS control function of IE-SR-2TX-WL-4G devices can require a password for SMS commands via the 'Enable Password Authorization' setting. The device increments a retry counter on each failed SMS pa",
         "published": "2026-08-25T09:17:32.057"
-      },
-      {
-        "cve_id": "CVE-2026-68062",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "SKYSEA Client View and SKYMEC IT Manager contain a path traversal vulnerability. If this vulnerability is exploited, an attacker who can log in to a Windows system on which the affected product is ins",
-        "published": "2026-08-25T07:17:10.467"
-      },
-      {
-        "cve_id": "CVE-2026-68959",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "SKYSEA Client View and SKYMEC IT Manager contain a path traversal vulnerability. If this vulnerability is exploited, an attacker who can log in to a Windows system on which the affected product is ins",
-        "published": "2026-08-25T07:17:10.600"
-      },
-      {
-        "cve_id": "CVE-2026-68960",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "A stack-based buffer overflow vulnerability exists in SKYSEA Client View and SKYMEC IT Manager. If this vulnerability is exploited, an attacker who can log in to a Windows system on which the affected",
-        "published": "2026-08-25T07:17:10.730"
-      },
-      {
-        "cve_id": "CVE-2026-78478",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Mane theme for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.7. This makes it possible for unauthenticated attackers to include and execute arbitrary file",
-        "published": "2026-08-25T06:19:01.353"
       },
       {
         "cve_id": "CVE-2026-78562",
@@ -381,6 +339,48 @@
         "base_score": 8.1,
         "description": "hbs is an Express view engine that wraps Handlebars. Its registerAsyncHelper API bypasses Handlebars' automatic HTML escaping: an async helper returns an opaque placeholder during the first render pas",
         "published": "2026-08-25T10:18:04.080"
+      },
+      {
+        "cve_id": "CVE-2026-78572",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The Kalles Addons plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 1.0.6 via deserialization of untrusted input. This makes it possible for unauthentica",
+        "published": "2026-08-25T10:18:13.707"
+      },
+      {
+        "cve_id": "CVE-2026-79662",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "Ech0 through 4.5.6 contains an OAuth redirect URI validation vulnerability in parseAndValidateClientRedirect (internal/service/auth/auth.go) that compares only the scheme and host of the client-suppli",
+        "published": "2026-08-25T12:16:31.470"
+      },
+      {
+        "cve_id": "CVE-2026-79655",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "A flaw was found in sos clean, a utility within the sos package. This vulnerability allows a local attacker to perform arbitrary file creation or overwrite. By crafting a malicious tar archive, an att",
+        "published": "2026-08-25T14:16:58.010"
+      },
+      {
+        "cve_id": "CVE-2026-79659",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "Ech0 before 4.7.3 contains a server-side request forgery vulnerability in the fetchPeerConnectInfo function that uses unvalidated HTTP requests instead of safe request methods with URL validation. Aut",
+        "published": "2026-08-25T12:16:29.380"
+      },
+      {
+        "cve_id": "CVE-2026-79667",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "Ech0 version 4.3.4 and earlier fails to reliably enforce scoped access token (least-privilege) restrictions on several privileged admin routes. Multiple privileged endpoints (e.g., /api/inbox, /api/pa",
+        "published": "2026-08-25T12:16:34.813"
+      },
+      {
+        "cve_id": "CVE-2026-78576",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Readabler plugin for WordPress is vulnerable to SQL Injection in all versions up to 2.0.18 (exclusive) due to insufficient escaping on the user supplied parameter and lack of sufficient preparatio",
+        "published": "2026-08-25T10:18:13.877"
       }
     ]
   },
