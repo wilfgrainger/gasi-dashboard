@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T12:30:41.394364+00:00",
+  "generated_at": "2026-08-26T16:41:10.774315+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
+        "value": 5,
         "score": 2.5,
         "max": 3
       },
@@ -238,79 +238,44 @@
     ]
   },
   "nvd": {
-    "total": 609,
-    "critical_count": 8,
-    "high_count": 41,
+    "total": 798,
+    "critical_count": 5,
+    "high_count": 60,
     "cves": [
       {
-        "cve_id": "CVE-2026-16286",
+        "cve_id": "CVE-2026-76193",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Adobe Campaign Classic (ACC) is affected by a Server-Side Request Forgery (SSRF) vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could explo",
+        "published": "2026-08-25T18:18:04.813"
+      },
+      {
+        "cve_id": "CVE-2026-76195",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability that could result in arbitrary code execution in",
+        "published": "2026-08-25T18:18:04.967"
+      },
+      {
+        "cve_id": "CVE-2026-76197",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability that could result in arbitrary code execution in",
+        "published": "2026-08-25T18:18:05.110"
+      },
+      {
+        "cve_id": "CVE-2026-79787",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Unrestricted upload of file with dangerous type vulnerability in TRtek Technological Products Computer Software Hardware Industry and Trade Limited Company Software Repository Management allows Upload",
-        "published": "2026-08-25T15:16:30.180"
+        "description": "Alluxio's S3 REST proxy fails to verify AWS Signature Version 4 signatures in its default configuration, allowing unauthenticated attackers to spoof user identity. Attackers can extract usernames from",
+        "published": "2026-08-25T19:16:54.907"
       },
       {
-        "cve_id": "CVE-2022-51000",
+        "cve_id": "CVE-2026-45018",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Nokogiri before 1.13.2 (CRuby, when using packaged libraries) ships vendored libxml2 2.9.12 and libxslt 1.1.34, which are affected by two upstream CVEs. Via CVE-2021-30560 in libxslt, an application t",
-        "published": "2026-08-25T16:16:44.380"
-      },
-      {
-        "cve_id": "CVE-2024-58378",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Nokogiri before 1.15.6 and 1.16.x before 1.16.2 (CRuby, when using the packaged libxml2) is affected by a use-after-free vulnerability in libxml2 (CVE-2024-25062) in the xmlTextReader module, which un",
-        "published": "2026-08-25T16:16:45.153"
-      },
-      {
-        "cve_id": "CVE-2025-71407",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Nokogiri before 1.18.3 contains a stack buffer overflow vulnerability in libxml2 when reporting DTD validation errors with long QName prefixes, and a use-after-free vulnerability during validation aga",
-        "published": "2026-08-25T16:16:45.633"
-      },
-      {
-        "cve_id": "CVE-2026-55546",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "QWED-MCP is a deterministic verification gateway for MCP. Prior to 0.2.1, verify_math_expression() in src/qwed_mcp/engines/math_engine.py passes attacker-controlled expression and claimed_result strin",
-        "published": "2026-08-25T16:16:55.160"
-      },
-      {
-        "cve_id": "CVE-2026-79675",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "NLTK before 3.10.3 fails to validate JVM options passed through the per-call options parameter in the java() function, allowing attackers to inject dangerous JVM flags. Attackers can supply malicious ",
-        "published": "2026-08-25T16:17:28.013"
-      },
-      {
-        "cve_id": "CVE-2026-55536",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "PraisonAI is a multi-agent teams system. Prior to praisonai 4.6.58, Browser Server _handle_connection() checks Chrome extension origins with re.match() and the unanchored expression chrome-extension:/",
-        "published": "2026-08-25T16:16:54.867"
-      },
-      {
-        "cve_id": "CVE-2026-55640",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Nextcloud MCP Server is a production-ready MCP server that connects AI assistants to a Nextcloud instance. Prior to 0.117.2, the POST /webhooks/nextcloud endpoint in nextcloud_mcp_server/vector/webhoo",
-        "published": "2026-08-25T16:16:55.810"
-      },
-      {
-        "cve_id": "CVE-2026-57863",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Crater Invoice through 6.0.6 contains a path traversal vulnerability in the self-update API that allows authenticated company owners to write arbitrary files outside the intended extraction directory ",
-        "published": "2026-08-25T13:19:24.200"
-      },
-      {
-        "cve_id": "CVE-2026-79784",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Vocos instantiates a class named by a configuration file without restricting which class may be named. instantiate_class in vocos/pretrained.py takes the class_path value from the configuration, split",
-        "published": "2026-08-25T16:17:30.547"
+        "description": "Chainlit is a Python framework for building production-ready conversational AI applications. From 2.4.0rc0 until 2.12.0, Chainlit deployments with features.mcp.enabled set to true in .chainlit/config.",
+        "published": "2026-08-25T20:16:55.720"
       },
       {
         "cve_id": "CVE-2026-24170",
@@ -320,67 +285,102 @@
         "published": "2026-08-25T17:17:10.290"
       },
       {
-        "cve_id": "CVE-2026-55534",
+        "cve_id": "CVE-2026-55585",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "PraisonAI is a multi-agent teams system. From praisonai 4.6.34 until 4.6.58, praisonai serve agents accepts --api-key but _create_agents_app() does not authenticate POST /agents or POST /agents/{agent",
-        "published": "2026-08-25T15:16:34.167"
+        "base_score": 8.8,
+        "description": "QWED is open-source AI verification infrastructure for deterministic verification of LLM outputs, tool calls, code, schemas, and agent state before production execution. Prior to 5.1.2, the qwed packa",
+        "published": "2026-08-25T17:17:32.903"
       },
       {
-        "cve_id": "CVE-2022-50999",
+        "cve_id": "CVE-2026-80049",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Nokogiri versions before 1.13.5 contain an integer overflow vulnerability in packaged libxml2 buffer handling functions that allows attackers to cause out-of-bounds memory writes. Attackers can exploi",
-        "published": "2026-08-25T16:16:44.240"
+        "base_score": 8.8,
+        "description": "Airbyte Platform resolves the workspace used for its authorization decision from a field the caller supplies. AuthorizationServerHandler copies recognised identifiers out of the raw JSON request body ",
+        "published": "2026-08-25T19:16:55.340"
       },
       {
-        "cve_id": "CVE-2026-55539",
+        "cve_id": "CVE-2026-43670",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "PraisonAI is a multi-agent teams system. Prior to praisonai 4.6.51, the Jobs API create_app function mounts /api/v1/runs without authentication. Any reachable caller can submit jobs, read results, can",
-        "published": "2026-08-25T16:16:55.010"
+        "base_score": 8.8,
+        "description": "A Content Security Policy bypass was addressed with improved enforcement in AudioWorklet contexts. This issue is fixed in Safari 26.5, iOS 18.7.9 and iPadOS 18.7.9, iOS 26.5 and iPadOS 26.5, macOS Tah",
+        "published": "2026-08-25T20:16:55.600"
       },
       {
-        "cve_id": "CVE-2026-55526",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "PraisonAI is a multi-agent teams system. Prior to praisonaiagents 1.6.58, spider_tools._host_is_blocked() does not resolve ordinary hostnames before scrape_page fetches them. A hostname such as 127.0.",
-        "published": "2026-08-25T15:16:33.300"
-      },
-      {
-        "cve_id": "CVE-2026-70551",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "A user who can read an existing remote VCS repository can replace its configured origin or supply an absolute VCS data URL.",
-        "published": "2026-08-25T15:16:38.060"
-      },
-      {
-        "cve_id": "CVE-2026-55581",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "mcp-shell is an MCP server for running shell commands securely, auditably, and on demand. Prior to 0.6.0, the default Docker security.yaml includes /bin/bash in allowed_executables, while security.go ",
-        "published": "2026-08-25T16:16:55.470"
-      },
-      {
-        "cve_id": "CVE-2026-55582",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "mcp-shell is an MCP server for running shell commands securely, auditably, and on demand. Prior to 0.6.0, the default security.yaml allows /usr/bin/git, while security.go omits ! from containsShellMet",
-        "published": "2026-08-25T16:16:55.650"
-      },
-      {
-        "cve_id": "CVE-2026-79774",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Winter CMS versions before 1.2.13 contain an incomplete fix for a Twig sandbox escape vulnerability in System\\\\Twig\\\\SecurityPolicy that allows authenticated backend users with template-editing permis",
-        "published": "2026-08-25T16:17:29.060"
-      },
-      {
-        "cve_id": "CVE-2026-55528",
+        "cve_id": "CVE-2026-24262",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "PraisonAI is a multi-agent teams system. Prior to praisonaiagents 1.6.58, AgentServer exposes ServerConfig.auth_token but AgentServer._create_app does not check it on any route. A remote caller can su",
-        "published": "2026-08-25T15:16:33.590"
+        "description": "NVIDIA DGX Spark contains a vulnerability in the system firmware, where a privileged attacker could be able to cause an out-of-bounds write. A successful exploit of this vulnerability may lead to code",
+        "published": "2026-08-25T17:17:10.750"
+      },
+      {
+        "cve_id": "CVE-2026-24263",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "NVIDIA DGX Spark contains a vulnerability in the system firmware, where a privileged attacker could be able to cause a NULL pointer dereference. A successful exploit of this vulnerability may lead to ",
+        "published": "2026-08-25T17:17:10.930"
+      },
+      {
+        "cve_id": "CVE-2026-47626",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "NVIDIA DGX Spark contains a vulnerability in the system firmware, where a privileged attacker could be able to cause an out-of-bounds write. A successful exploit of this vulnerability may lead to code",
+        "published": "2026-08-25T17:17:14.150"
+      },
+      {
+        "cve_id": "CVE-2026-55571",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "djust provides Phoenix LiveView-style reactive server-side rendering for Django with Rust-powered performance. Prior to 1.0.4, LiveViewConsumer.handle_mount sends a `{\"type\":\"navigate\",\"to\":...}` fram",
+        "published": "2026-08-25T17:17:32.547"
+      },
+      {
+        "cve_id": "CVE-2026-78379",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Improper neutralization of input used for LLM prompting in the python_repl tool in Amazon Strands Agents Tools before 0.8.5 might allow remote actors to execute arbitrary Python code on the agent's ho",
+        "published": "2026-08-25T19:16:54.467"
+      },
+      {
+        "cve_id": "CVE-2026-24169",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "NVIDIA UFM Enterprise contains a vulnerability in the plugin management API, where an authenticated user with low privileges could inject code by sending a specially crafted API request. A successful ",
+        "published": "2026-08-25T17:17:10.100"
+      },
+      {
+        "cve_id": "CVE-2026-16233",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "There is a memory corruption vulnerability recently\ndiscovered in NI LabVIEW that may result in information disclosure or arbitrary\ncode execution.\u00a0 Successful exploitation requires an attacker to get",
+        "published": "2026-08-25T17:17:05.447"
+      },
+      {
+        "cve_id": "CVE-2026-16234",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "There is a memory corruption vulnerability recently\ndiscovered in NI LabVIEW that may result in information disclosure or arbitrary\ncode execution.\u00a0 Successful exploitation requires an attacker to get",
+        "published": "2026-08-25T17:17:05.623"
+      },
+      {
+        "cve_id": "CVE-2026-64201",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "There is a memory corruption vulnerability recently\ndiscovered in NI LabVIEW that may result in information disclosure or arbitrary\ncode execution.\u00a0 Successful exploitation requires an attacker to get",
+        "published": "2026-08-25T17:17:59.300"
+      },
+      {
+        "cve_id": "CVE-2026-64202",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "There is a memory corruption vulnerability recently\ndiscovered in NI LabVIEW that may result in information disclosure or arbitrary\ncode execution.\u00a0 Successful exploitation requires an attacker to get",
+        "published": "2026-08-25T17:17:59.447"
+      },
+      {
+        "cve_id": "CVE-2026-64203",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "There is a memory corruption vulnerability recently\ndiscovered in NI LabVIEW that may result in information disclosure or arbitrary\ncode execution.\u00a0 Successful exploitation requires an attacker to get",
+        "published": "2026-08-25T17:17:59.587"
       }
     ]
   },
