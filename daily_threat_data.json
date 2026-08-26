@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-26T00:42:16.606532+00:00",
+  "generated_at": "2026-08-26T04:30:24.303925+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -238,31 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 773,
+    "total": 718,
     "critical_count": 8,
-    "high_count": 32,
+    "high_count": 29,
     "cves": [
-      {
-        "cve_id": "CVE-2026-56705",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Adminer before 5.4.3 fails to sanitize the server field before constructing a PDO DSN string, allowing unauthenticated attackers to inject ODBC parameters via semicolons. Attackers can inject TraceFil",
-        "published": "2026-08-25T02:16:42.330"
-      },
-      {
-        "cve_id": "CVE-2026-56710",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Grav Login plugin versions before 1.0.16 fail to validate the target account's privilege level in the onApiUserListRowAction unlock handler. An attacker with api.users.write permission can clear login",
-        "published": "2026-08-25T02:16:43.073"
-      },
-      {
-        "cve_id": "CVE-2026-78676",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "GitPython before 3.1.59 fails to safely re-serialize multi-line git-config values during write operations, corrupting dormant quoted values into injected directives like core.hooksPath. Attackers can ",
-        "published": "2026-08-25T02:16:52.030"
-      },
       {
         "cve_id": "CVE-2026-13214",
         "severity": "CRITICAL",
@@ -285,11 +264,32 @@
         "published": "2026-08-25T09:17:31.823"
       },
       {
-        "cve_id": "CVE-2026-78683",
+        "cve_id": "CVE-2026-78568",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "NLTK before 3.10.0 (affected versions <=3.9.4) contains an unsafe pickle deserialization vulnerability in the TransitionParser.parse() method (nltk/parse/transitionparser.py). The method calls pickle_",
-        "published": "2026-08-25T02:16:53.033"
+        "base_score": 9.8,
+        "description": "The Total Donations plugin for WordPress is vulnerable to SQL Injection in all versions up to, and including, 2.0.5 due to insufficient escaping on the user supplied parameter and lack of sufficient p",
+        "published": "2026-08-25T09:17:36.590"
+      },
+      {
+        "cve_id": "CVE-2026-78570",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Total Donations plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 2.0.5. This makes it possible for unauthenticated attackers to elevate their privil",
+        "published": "2026-08-25T10:18:13.563"
+      },
+      {
+        "cve_id": "CVE-2026-49845",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "SQL injection in Hive Metastore direct SQL partition-name resolution in Apache Hive before 4.2.1 on all platforms allows authenticated users with access to Hive Metastore APIs to read, modify, or affe",
+        "published": "2026-08-25T11:16:53.410"
+      },
+      {
+        "cve_id": "CVE-2026-79657",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "NLTK versions before 3.10.3 contain a remote code execution vulnerability in allowlisted pickle loaders that trust entire module namespaces instead of specific safe callables. Attackers can craft mali",
+        "published": "2026-08-25T12:16:28.870"
       },
       {
         "cve_id": "CVE-2026-59769",
@@ -299,39 +299,32 @@
         "published": "2026-08-25T08:18:09.717"
       },
       {
-        "cve_id": "CVE-2026-56702",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Adminer versions before 5.4.3 contain an unrestricted file upload vulnerability in the AdminerFileUpload plugin that allows authenticated users to upload PHP files by exploiting a permissive default e",
-        "published": "2026-08-25T02:16:41.900"
-      },
-      {
-        "cve_id": "CVE-2026-75574",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Grav Email plugin (getgrav/grav-plugin-email) before 4.2.2 renders page-editor-controlled Email action parameters as unsandboxed Twig templates. An authenticated remote user with only api.access a",
-        "published": "2026-08-25T02:16:51.303"
-      },
-      {
-        "cve_id": "CVE-2026-78685",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Medical Practice Management System developed by Le-yan has a Remote Code Execution vulnerability. Unauthenticated remote attackers can execute arbitrary OS commamnds via a crafted HTML page.",
-        "published": "2026-08-25T03:16:58.740"
-      },
-      {
-        "cve_id": "CVE-2026-19892",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The InfusedWoo Pro plugin for WordPress is vulnerable to Privilege Escalation via Account Takeover in all versions up to, and including, 5.1.17. This is due to a missing capability check in the `ajax_",
-        "published": "2026-08-25T04:18:10.770"
-      },
-      {
         "cve_id": "CVE-2026-16601",
         "severity": "HIGH",
         "base_score": 8.8,
         "description": "The CM Map Locations \u2013 Visualize and share your locations in a few clicks plugin for WordPress is vulnerable to Limited Arbitrary File Upload in all versions up to, and including, 2.1.8 via the upload",
         "published": "2026-08-25T08:18:08.220"
+      },
+      {
+        "cve_id": "CVE-2026-49050",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "General user can mint admin access tokens via /access-tokens\n\n\n\nThis issue affects Apache DolphinScheduler: before 3.4.2.\n\n\n\nUsers are recommended to upgrade to version 3.4.2, which fixes the issue.",
+        "published": "2026-08-25T10:18:09.430"
+      },
+      {
+        "cve_id": "CVE-2026-19949",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The All-in-One WP Migration and Backup plugin for WordPress is vulnerable to SQL Injection via archive restore functionality in all versions up to, and including, 7.109 due to insufficient escaping on",
+        "published": "2026-08-25T12:16:23.783"
+      },
+      {
+        "cve_id": "CVE-2026-59335",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "Improper handling of case sensitivity (CWE-178) in the identity zone authorization check in the Identity Zone Endpoint in Cloud Foundry UAA allows a remote authenticated attacker holding only the zone",
+        "published": "2026-08-25T11:16:53.817"
       },
       {
         "cve_id": "CVE-2026-63587",
@@ -362,25 +355,32 @@
         "published": "2026-08-25T07:17:10.730"
       },
       {
-        "cve_id": "CVE-2026-72696",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Grav CMS before 2.0.16 contains a symlink following vulnerability in Scheduler Job::createLockFile() that allows local attackers to overwrite arbitrary files by pre-creating symlinks at predictable lo",
-        "published": "2026-08-25T02:16:45.253"
-      },
-      {
-        "cve_id": "CVE-2026-78675",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "GitPython before 3.1.59 fails to disable merge_includes when parsing .gitmodules, allowing attackers to disclose local file content by including arbitrary file paths via [include] directives. Attacker",
-        "published": "2026-08-25T02:16:51.887"
-      },
-      {
-        "cve_id": "CVE-2026-34968",
+        "cve_id": "CVE-2026-78478",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Adminer before 5.4.3 contains an arbitrary file deletion vulnerability in SQLite mode where the database-list drop action fails to validate file extensions before deletion. An authenticated attacker c",
-        "published": "2026-08-25T02:16:40.843"
+        "description": "The Mane theme for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.7. This makes it possible for unauthenticated attackers to include and execute arbitrary file",
+        "published": "2026-08-25T06:19:01.353"
+      },
+      {
+        "cve_id": "CVE-2026-78562",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The Verdure Core plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.2. This makes it possible for unauthenticated attackers to include and execute arbit",
+        "published": "2026-08-25T09:17:36.070"
+      },
+      {
+        "cve_id": "CVE-2026-78566",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The Shuffle theme for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.8. This makes it possible for unauthenticated attackers to include and execute arbitrary f",
+        "published": "2026-08-25T09:17:36.427"
+      },
+      {
+        "cve_id": "CVE-2026-16231",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "hbs is an Express view engine that wraps Handlebars. Its registerAsyncHelper API bypasses Handlebars' automatic HTML escaping: an async helper returns an opaque placeholder during the first render pas",
+        "published": "2026-08-25T10:18:04.080"
       }
     ]
   },
