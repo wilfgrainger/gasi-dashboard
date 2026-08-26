@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-08-26T16:41:10.774315+00:00",
+  "generated_at": "2026-08-26T22:35:41.167117+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 21,
+        "value": 27,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
-        "score": 2.5,
+        "value": 10,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -32,9 +32,69 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1676,
-    "recent_30d_count": 21,
+    "total_catalog_count": 1682,
+    "recent_30d_count": 27,
     "recent": [
+      {
+        "cve_id": "CVE-2021-23758",
+        "vendor": "Ajax.NET Professional",
+        "product": "Ajax.NET Professional",
+        "name": "Ajax.NET Professional Deserialization of Untrusted Data Vulnerability",
+        "date_added": "2026-08-26",
+        "due_date": "2026-09-09",
+        "description": "Ajax.NET Professional (AjaxPro) contains a deserialization of untrusted data vulnerability that could allow for remote code execution via arbitrary .NET classes. The impacted product(s) could be end-o",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2015-3246",
+        "vendor": "Red Hat",
+        "product": "Libuser",
+        "name": "Red Hat Libuser Race Condition Vulnerability",
+        "date_added": "2026-08-26",
+        "due_date": "2026-09-09",
+        "description": "Red Hat libuser contains a race condition vulnerability that allows authenticated local users to corrupt the /etc/passwd file to cause a denial of service or privilege escalation. ",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2015-5287",
+        "vendor": "Red Hat",
+        "product": "Automatic Bug Reporting Tool",
+        "name": "Red Hat Automatic Bug Reporting Tool Privilege Escalation Vulnerability",
+        "date_added": "2026-08-26",
+        "due_date": "2026-09-09",
+        "description": "Red Hat Automatic Bug Reporting Tool (ABRT) contains a privilege escalation vulnerability that could allow local users with certain permissions to gain privileges via a symlink attack on a file with a",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2022-0995",
+        "vendor": "Linux",
+        "product": "Kernel",
+        "name": "Linux Kernel Out-of-Bounds Write Vulnerability",
+        "date_added": "2026-08-26",
+        "due_date": "2026-09-09",
+        "description": "Linux Kernel contains an out-of-bounds memory write vulnerability which could allow a local user to gain privileged access or cause a denial of service on the system.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-8452",
+        "vendor": "Citrix",
+        "product": "NetScaler ADC and NetScaler Gateway",
+        "name": "Citrix NetScaler ADC and NetScaler Gateway Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
+        "date_added": "2026-08-26",
+        "due_date": "2026-08-29",
+        "description": "Citrix NetScaler ADC and NetScaler Gateway contain an improper restriction of operations within the bounds of a memory buffer vulnerability which could lead to denial of service. ",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2019-1068",
+        "vendor": "Microsoft",
+        "product": "SQL Server",
+        "name": "Microsoft SQL Server Remote Code Execution Vulnerability",
+        "date_added": "2026-08-26",
+        "due_date": "2026-08-29",
+        "description": "Microsoft SQL Server contains a remote code execution vulnerability that could allow an attacker to execute code in the context of the SQL Server Database Engine service account.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-60004",
         "vendor": "Gitea",
@@ -174,213 +234,153 @@
         "due_date": "2026-08-14",
         "description": "Metabase contains a SQL Injection vulnerability that allows an unauthenticated remote attacker to inject arbitrary SQL into the Metabase application database, which can give them administrator access ",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-8037",
-        "vendor": "Progress",
-        "product": "LoadMaster",
-        "name": "Progress LoadMaster Command Injection Vulnerability",
-        "date_added": "2026-08-07",
-        "due_date": "2026-08-10",
-        "description": "Progress LoadMaster contains a command injection vulnerability that allows an un-authenticated attacker to execute arbitrary commands on the LoadMaster appliance by exploiting unsanitized input in mul",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-63077",
-        "vendor": "JetBrains",
-        "product": "TeamCity",
-        "name": "JetBrains TeamCity Deserialization of Untrusted Data Vulnerability",
-        "date_added": "2026-08-05",
-        "due_date": "2026-08-08",
-        "description": "JetBrains TeamCity contains a deserialization of untrusted data vulnerability that could allow unauthenticated remote code execution via the agent polling protocol.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-18556",
-        "vendor": "N-able",
-        "product": "N-central",
-        "name": "N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability",
-        "date_added": "2026-08-04",
-        "due_date": "2026-08-07",
-        "description": "N-able N-central contains an authentication bypass using an alternate path or channel that allows for authentication bypass.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-34486",
-        "vendor": "Apache",
-        "product": "Tomcat",
-        "name": "Apache Tomcat Missing Encryption of Sensitive Data Vulnerability",
-        "date_added": "2026-08-04",
-        "due_date": "2026-08-07",
-        "description": "Apache Tomcat contains a missing encryption of sensitive data vulnerability that allows the bypass of the EncryptInterceptor. This vulnerability can be chained with CVE\u20112025\u201124813.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-9198",
-        "vendor": "IBM",
-        "product": "Langflow",
-        "name": "IBM Langflow Code Injection Vulnerability",
-        "date_added": "2026-08-04",
-        "due_date": "2026-08-07",
-        "description": "Langflow contains a code injection vulnerability that allows unauthenticated attackers to achieve full remote code execution on default Langflow deployments.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-18577",
-        "vendor": "N-able",
-        "product": "N-central",
-        "name": "N-able N-central Authentication Bypass Using an Alternate Path or Channel Vulnerability",
-        "date_added": "2026-08-03",
-        "due_date": "2026-08-06",
-        "description": "N-able N-central contains an authentication bypass using an alternate path or channel allows for authentication bypass and account takeover in N-central. This vulnerability is the result of an incompl",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 798,
-    "critical_count": 5,
-    "high_count": 60,
+    "total": 411,
+    "critical_count": 10,
+    "high_count": 31,
     "cves": [
       {
-        "cve_id": "CVE-2026-76193",
+        "cve_id": "CVE-2026-79911",
         "severity": "CRITICAL",
         "base_score": 10.0,
-        "description": "Adobe Campaign Classic (ACC) is affected by a Server-Side Request Forgery (SSRF) vulnerability that could result in arbitrary code execution in the context of the current user. An attacker could explo",
-        "published": "2026-08-25T18:18:04.813"
+        "description": "A security vulnerability has been detected in TOTOLINK N600R 4.3.0cu.7647_B20210106. The affected element is the function setSystemConfig of the file /cgi-bin/cstecgi.cgi of the component CGI Handler.",
+        "published": "2026-08-25T23:17:59.490"
       },
       {
-        "cve_id": "CVE-2026-76195",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability that could result in arbitrary code execution in",
-        "published": "2026-08-25T18:18:04.967"
-      },
-      {
-        "cve_id": "CVE-2026-76197",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Adobe Campaign Classic (ACC) is affected by an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability that could result in arbitrary code execution in",
-        "published": "2026-08-25T18:18:05.110"
-      },
-      {
-        "cve_id": "CVE-2026-79787",
+        "cve_id": "CVE-2026-16639",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Alluxio's S3 REST proxy fails to verify AWS Signature Version 4 signatures in its default configuration, allowing unauthenticated attackers to spoof user identity. Attackers can extract usernames from",
-        "published": "2026-08-25T19:16:54.907"
+        "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in Drupal Internationalization Single Sign-On allows Authentication Bypass. This issue affects Internationalization Single Sign-O",
+        "published": "2026-08-25T23:16:56.673"
       },
       {
-        "cve_id": "CVE-2026-45018",
+        "cve_id": "CVE-2026-16641",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Chainlit is a Python framework for building production-ready conversational AI applications. From 2.4.0rc0 until 2.12.0, Chainlit deployments with features.mcp.enabled set to true in .chainlit/config.",
-        "published": "2026-08-25T20:16:55.720"
+        "description": "Vulnerability in Drupal Commerce Elavon. This issue affects Commerce Elavon versions: *.*.",
+        "published": "2026-08-25T23:16:56.900"
       },
       {
-        "cve_id": "CVE-2026-24170",
+        "cve_id": "CVE-2026-80138",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "ClipBucket V5's web installer fails to properly validate or escape the php_cli_filepath parameter before passing it to shell execution. Unauthenticated attackers can submit a crafted POST request to t",
+        "published": "2026-08-25T23:17:59.860"
+      },
+      {
+        "cve_id": "CVE-2026-19632",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The TranslatePress \u2013 Translate Multilingual sites with AI Translation plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 3.3.1 via the 'trp_get_",
+        "published": "2026-08-26T05:18:06.810"
+      },
+      {
+        "cve_id": "CVE-2026-58095",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "mp_Enddisc() used incorrect length calculations when formatting endpoint discriminator addresses for display, allowing a received endpoint option to overflow a global result buffer.\n\nA malicious PPP p",
+        "published": "2026-08-26T06:16:26.460"
+      },
+      {
+        "cve_id": "CVE-2026-58096",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "LcpDecodeConfig() did not validate the length of received endpoint discriminator options against the minimum required by RFC 1717.  Undersized options would trigger an out-of-bounds write.\n\nA maliciou",
+        "published": "2026-08-26T06:16:26.577"
+      },
+      {
+        "cve_id": "CVE-2026-18431",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Avada theme for WordPress is vulnerable to Arbitrary File Write in all versions up to, and including, 7.16 when the Fusion Builder plugin is installed and active in versions up to, and including, ",
+        "published": "2026-08-26T07:16:45.500"
+      },
+      {
+        "cve_id": "CVE-2026-16644",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Incorrect Authorization vulnerability in Drupal Webform REST allows Forceful Browsing. This issue affects Webform REST versions: from 0.0.0 to 4.1.0.",
+        "published": "2026-08-25T23:16:57.200"
+      },
+      {
+        "cve_id": "CVE-2026-16645",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Missing Authorization vulnerability in Drupal PhotoSwipe - Responsive JavaScript Modal Image Gallery allows Forceful Browsing. This issue affects PhotoSwipe - Responsive JavaScript Modal Image Gallery",
+        "published": "2026-08-25T23:16:57.313"
+      },
+      {
+        "cve_id": "CVE-2026-80193",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "NVIDIA UFM Enterprise contains a vulnerability in the web interface authorization component, where an authenticated user could cause improper authentication by sending specially crafted HTTP requests.",
-        "published": "2026-08-25T17:17:10.290"
+        "description": "Kimai before 2.62.0 fails to validate create_other_timesheet permission in the QuickEntry controller when creating new timesheets. Authenticated users with view_other_timesheet and edit_other_timeshee",
+        "published": "2026-08-26T05:18:26.617"
       },
       {
-        "cve_id": "CVE-2026-55585",
+        "cve_id": "CVE-2026-80202",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "QWED is open-source AI verification infrastructure for deterministic verification of LLM outputs, tool calls, code, schemas, and agent state before production execution. Prior to 5.1.2, the qwed packa",
-        "published": "2026-08-25T17:17:32.903"
+        "description": "Kimai before 2.56.0 does not enforce team-membership checks in TimesheetVoter::voteOnAttribute(), which maps permissions only to own_timesheet or other_timesheet. As a result, any authenticated user w",
+        "published": "2026-08-26T05:18:27.980"
       },
       {
-        "cve_id": "CVE-2026-80049",
+        "cve_id": "CVE-2026-75977",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Airbyte Platform resolves the workspace used for its authorization decision from a field the caller supplies. AuthorizationServerHandler copies recognised identifiers out of the raw JSON request body ",
-        "published": "2026-08-25T19:16:55.340"
+        "description": "The Mang Board WP plugin for WordPress is vulnerable to Missing Authorization via Authentication Cookie Forgery in all versions up to, and including, 2.3.7. This is due to flawed HMAC generation in th",
+        "published": "2026-08-26T08:16:46.383"
       },
       {
-        "cve_id": "CVE-2026-43670",
+        "cve_id": "CVE-2026-77693",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A Content Security Policy bypass was addressed with improved enforcement in AudioWorklet contexts. This issue is fixed in Safari 26.5, iOS 18.7.9 and iPadOS 18.7.9, iOS 26.5 and iPadOS 26.5, macOS Tah",
-        "published": "2026-08-25T20:16:55.600"
+        "base_score": 8.7,
+        "description": "The Order Tip for WooCommerce WordPress plugin before 1.6.0 does not check the capability of the user requesting a file deletion, nor does it restrict which path may be deleted, allowing users with th",
+        "published": "2026-08-26T06:16:29.210"
       },
       {
-        "cve_id": "CVE-2026-24262",
+        "cve_id": "CVE-2026-79912",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "NVIDIA DGX Spark contains a vulnerability in the system firmware, where a privileged attacker could be able to cause an out-of-bounds write. A successful exploit of this vulnerability may lead to code",
-        "published": "2026-08-25T17:17:10.750"
+        "base_score": 8.3,
+        "description": "A vulnerability was detected in TOTOLINK N600R 4.3.0cu.7647_B20210106. The impacted element is the function getCurrentTime of the file /cgi-bin/cstecgi.cgi. Performing a manipulation of the argument n",
+        "published": "2026-08-25T23:17:59.663"
       },
       {
-        "cve_id": "CVE-2026-24263",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "NVIDIA DGX Spark contains a vulnerability in the system firmware, where a privileged attacker could be able to cause a NULL pointer dereference. A successful exploit of this vulnerability may lead to ",
-        "published": "2026-08-25T17:17:10.930"
-      },
-      {
-        "cve_id": "CVE-2026-47626",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "NVIDIA DGX Spark contains a vulnerability in the system firmware, where a privileged attacker could be able to cause an out-of-bounds write. A successful exploit of this vulnerability may lead to code",
-        "published": "2026-08-25T17:17:14.150"
-      },
-      {
-        "cve_id": "CVE-2026-55571",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "djust provides Phoenix LiveView-style reactive server-side rendering for Django with Rust-powered performance. Prior to 1.0.4, LiveViewConsumer.handle_mount sends a `{\"type\":\"navigate\",\"to\":...}` fram",
-        "published": "2026-08-25T17:17:32.547"
-      },
-      {
-        "cve_id": "CVE-2026-78379",
+        "cve_id": "CVE-2026-18985",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Improper neutralization of input used for LLM prompting in the python_repl tool in Amazon Strands Agents Tools before 0.8.5 might allow remote actors to execute arbitrary Python code on the agent's ho",
-        "published": "2026-08-25T19:16:54.467"
+        "description": "Incorrect Authorization vulnerability in Drupal Edit in-place field allows Forceful Browsing. This issue affects Edit in-place field versions: from 0.0.0 to 2.1.1.",
+        "published": "2026-08-25T23:16:57.913"
       },
       {
-        "cve_id": "CVE-2026-24169",
+        "cve_id": "CVE-2026-80192",
         "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "NVIDIA UFM Enterprise contains a vulnerability in the plugin management API, where an authenticated user with low privileges could inject code by sending a specially crafted API request. A successful ",
-        "published": "2026-08-25T17:17:10.100"
+        "base_score": 8.1,
+        "description": "@better-auth/sso before 1.6.27 (and before 1.4.8 in the 1.4.x line and before 1.7.0-rc.5 in the 1.7 prerelease line) contains two domain-ownership flaws. When domain verification is disabled, automati",
+        "published": "2026-08-26T05:18:26.460"
       },
       {
-        "cve_id": "CVE-2026-16233",
+        "cve_id": "CVE-2026-19718",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "There is a memory corruption vulnerability recently\ndiscovered in NI LabVIEW that may result in information disclosure or arbitrary\ncode execution.\u00a0 Successful exploitation requires an attacker to get",
-        "published": "2026-08-25T17:17:05.447"
+        "base_score": 8.1,
+        "description": "The BlogVault Backup & Staging WordPress plugin before 6.65, MalCare WordPress Security Plugin  WordPress plugin before 6.65, The WP Remote WordPress Plugin WordPress plugin before 6.65 do not prevent",
+        "published": "2026-08-26T06:16:25.900"
       },
       {
-        "cve_id": "CVE-2026-16234",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "There is a memory corruption vulnerability recently\ndiscovered in NI LabVIEW that may result in information disclosure or arbitrary\ncode execution.\u00a0 Successful exploitation requires an attacker to get",
-        "published": "2026-08-25T17:17:05.623"
-      },
-      {
-        "cve_id": "CVE-2026-64201",
+        "cve_id": "CVE-2026-54757",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "There is a memory corruption vulnerability recently\ndiscovered in NI LabVIEW that may result in information disclosure or arbitrary\ncode execution.\u00a0 Successful exploitation requires an attacker to get",
-        "published": "2026-08-25T17:17:59.300"
+        "description": "Compliance-trestle (Trestle) is a Python SDK and command-line tool for managing OSCAL compliance documents. In versions before 3.12.4 and versions 4.0.0 through 4.0.3, Trestle is vulnerable to server-",
+        "published": "2026-08-25T23:17:19.277"
       },
       {
-        "cve_id": "CVE-2026-64202",
+        "cve_id": "CVE-2026-57170",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "There is a memory corruption vulnerability recently\ndiscovered in NI LabVIEW that may result in information disclosure or arbitrary\ncode execution.\u00a0 Successful exploitation requires an attacker to get",
-        "published": "2026-08-25T17:17:59.447"
-      },
-      {
-        "cve_id": "CVE-2026-64203",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "There is a memory corruption vulnerability recently\ndiscovered in NI LabVIEW that may result in information disclosure or arbitrary\ncode execution.\u00a0 Successful exploitation requires an attacker to get",
-        "published": "2026-08-25T17:17:59.587"
+        "description": "Compliance-trestle (Trestle) is a Python SDK and command-line tool for managing OSCAL compliance documents. In versions prior to 3.12.4 and 4.0.0 through 4.0.3, the custom Jinja2 include tags mdsectio",
+        "published": "2026-08-26T05:18:11.763"
       }
     ]
   },
