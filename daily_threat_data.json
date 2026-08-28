@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-08-27T18:38:05.774314+00:00",
+  "generated_at": "2026-08-28T03:55:10.561707+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 30,
+        "value": 29,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
-        "score": 2.0,
+        "value": 13,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1685,
-    "recent_30d_count": 30,
+    "recent_30d_count": 29,
     "recent": [
       {
         "cve_id": "CVE-2023-49105",
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 538,
-    "critical_count": 3,
-    "high_count": 15,
+    "total": 602,
+    "critical_count": 13,
+    "high_count": 30,
     "cves": [
       {
-        "cve_id": "CVE-2026-60004",
+        "cve_id": "CVE-2026-47884",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Gitea before 1.27.1 allows remote code execution via the diffpatch API through Git hook installation.",
-        "published": "2026-08-26T20:17:56.010"
+        "description": "Use of XsltView in a Spring MVC application can result in SSRF and RCE attack if the application has an \"/**\" mapping that results in view rendering, and where the view name is not explicitly specifie",
+        "published": "2026-08-27T06:17:18.507"
       },
       {
-        "cve_id": "CVE-2026-75329",
+        "cve_id": "CVE-2026-47890",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "The Netty configuration distribution service (port 8283) of super-diamond-server <= 1.3.3 has no authentication mechanism. Attackers can directly obtain the full configuration of any project (includin",
-        "published": "2026-08-26T22:16:29.087"
+        "description": "Spring MVC and WebFlux applications are vulnerable to stream corruption when using Server-Sent Events (SSE) with view fragments.\nSpring Framework 7.0.0 - 7.0.8\nSpring Framework 6.2.0 - 6.2.19",
+        "published": "2026-08-27T06:17:20.120"
       },
       {
-        "cve_id": "CVE-2026-70419",
+        "cve_id": "CVE-2026-47891",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A Spring WebFlux application that relies on the Aalto XML processor to parse XML input does not correctly enforce the maxInMemorySize limit.\nSpring Framework 7.0.0 - 7.0.8\nSpring Framework 6.2.0 - 6.2",
+        "published": "2026-08-27T06:17:20.287"
+      },
+      {
+        "cve_id": "CVE-2026-32566",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Unauthenticated Privilege Escalation in ACPT (Pro) - Custom Post Types Plugin for WordPress <= 2.0.63 versions.",
+        "published": "2026-08-27T10:16:35.933"
+      },
+      {
+        "cve_id": "CVE-2026-78286",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Unauthenticated PHP Object Injection in Geo Controller <= 8.9.8 versions.",
+        "published": "2026-08-27T10:16:38.137"
+      },
+      {
+        "cve_id": "CVE-2026-78292",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Unauthenticated PHP Object Injection in Hash Form <= 1.4.1 versions.",
+        "published": "2026-08-27T10:16:38.530"
+      },
+      {
+        "cve_id": "CVE-2026-77016",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "The Workeera  WordPress plugin before 1.0.6 does not restrict which values may be written to a user's own candidate profile, and does not validate or contain the stored file path before deleting it, a",
+        "published": "2026-08-27T06:17:27.057"
+      },
+      {
+        "cve_id": "CVE-2026-59354",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "In versions of Spring Security's OAuth2 Authorization Server module 7.0.0 through 7.0.4, when Dynamic Client Registration is explicitly enabled, the registration endpoint performs insufficient validat",
+        "published": "2026-08-27T10:16:36.063"
+      },
+      {
+        "cve_id": "CVE-2026-59270",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "Spring Security's embedded UnboundID LDAP server (UnboundIdContainer) unconditionally registers an administrative credential and binds its listener to all available network interfaces.\nSpring Security",
+        "published": "2026-08-27T06:17:21.223"
+      },
+      {
+        "cve_id": "CVE-2026-32479",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Unauthenticated SQL Injection in Visitor Traffic Real Time Statistics Pro <= 11.17 versions.",
+        "published": "2026-08-27T10:16:35.543"
+      },
+      {
+        "cve_id": "CVE-2026-78260",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Unauthenticated SQL Injection in Epayco <= 8.4.6 versions.",
+        "published": "2026-08-27T10:16:36.880"
+      },
+      {
+        "cve_id": "CVE-2026-78288",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Unauthenticated SQL Injection in Beautiful Taxonomy Filters <= 2.4.6 versions.",
+        "published": "2026-08-27T10:16:38.267"
+      },
+      {
+        "cve_id": "CVE-2026-78274",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Dell Cloud Disaster Recovery, versions 20.2 and prior,\u00a0contain\u00a0an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. A high privileged attacker w",
-        "published": "2026-08-26T19:16:56.540"
+        "description": "Editor Arbitrary File Upload in Fluent Boards Pro <= 2.0.11 versions.",
+        "published": "2026-08-27T10:16:37.383"
       },
       {
-        "cve_id": "CVE-2026-68861",
+        "cve_id": "CVE-2026-77018",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Dell PowerProtect One, versions 20.1.0.0 and below, contain an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. A low privileged attacker with ",
-        "published": "2026-08-26T20:17:57.710"
+        "description": "The Workeera  WordPress plugin before 1.0.6 does not restrict which profile values a candidate may submit, nor validate the type of the file it subsequently writes into a publicly reachable directory,",
+        "published": "2026-08-27T06:17:27.500"
       },
       {
-        "cve_id": "CVE-2026-74770",
+        "cve_id": "CVE-2026-78333",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Dell PowerProtect One, versions 20.1.0.0 and below, contain an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. A low privileged attacker with ",
-        "published": "2026-08-26T20:17:59.353"
+        "description": "The 12 Step Meeting List WordPress plugin before 3.19.17 does not sanitise and escape a value submitted by unauthenticated users before storing it in its activity log and outputting it back in an admi",
+        "published": "2026-08-27T06:17:29.897"
       },
       {
-        "cve_id": "CVE-2026-55228",
+        "cve_id": "CVE-2026-78257",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Weblate is a web-based continuous localization platform used to manage software translations. In versions prior to 2026.7, the REST API did not properly enforce the scope of project- and workspace-sco",
-        "published": "2026-08-26T21:16:38.737"
+        "base_score": 8.8,
+        "description": "Contributor PHP Object Injection in Booking and Rental Manager <= 2.7.5 versions.",
+        "published": "2026-08-27T10:16:36.750"
       },
       {
-        "cve_id": "CVE-2026-77317",
+        "cve_id": "CVE-2026-81271",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "SeaweedFS is a distributed storage system for files and blobs. In versions from 3.88 through 4.39, the SFTP server evaluates configured path permissions with a literal string-prefix comparison, so a u",
-        "published": "2026-08-26T22:16:29.717"
+        "base_score": 8.8,
+        "description": "Unauthenticated Cross Site Request Forgery (CSRF) in GeoDirectory <= 2.8.176 versions.",
+        "published": "2026-08-27T10:16:38.910"
       },
       {
-        "cve_id": "CVE-2026-77652",
+        "cve_id": "CVE-2026-27330",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A heap-based buffer overflow vulnerability exists in the Dia diagram editor WPG file format importer.\n\nIn plug-ins/wpg/wpg-import.c, the WPG import renderer allocates a fixed palette with:\n\n    ren->p",
-        "published": "2026-08-26T20:18:02.160"
+        "base_score": 8.6,
+        "description": "Unauthenticated Broken Access Control in Mobile App for WooCommerce <= 0.4.62 versions.",
+        "published": "2026-08-27T10:16:35.290"
       },
       {
-        "cve_id": "CVE-2026-61792",
+        "cve_id": "CVE-2026-32550",
         "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Weblate is a web-based continuous localization platform used to manage software translations. In versions prior to 2026.7, a project administrator can read files outside their repository through the A",
-        "published": "2026-08-26T21:16:39.510"
+        "base_score": 8.5,
+        "description": "Subscriber SQL Injection in Kadence Shop Kit <= 3.0.6 versions.",
+        "published": "2026-08-27T10:16:35.677"
       },
       {
-        "cve_id": "CVE-2026-61617",
+        "cve_id": "CVE-2026-32564",
         "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Wings is the server control plane for the Pterodactyl game-server management panel. In versions up to and including 1.13.2, the SFTP write path does not enforce a server's disk quota during a transfer",
-        "published": "2026-08-26T22:16:25.247"
-      },
-      {
-        "cve_id": "CVE-2026-79938",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "Dell PowerProtect Cyber Recovery, versions prior to 20.3, contain an Improper Authentication vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, l",
-        "published": "2026-08-26T20:18:14.140"
-      },
-      {
-        "cve_id": "CVE-2026-77368",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "SeaweedFS is a distributed storage system for files and blobs. In version 4.39, the filer's TUS resumable-upload handler checks JWT allowed_prefixes scoping only when a session is created, letting a l",
-        "published": "2026-08-26T22:16:29.860"
-      },
-      {
-        "cve_id": "CVE-2026-46369",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Nimiq is a Rust implementation of the Nimiq Proof-of-Stake protocol based on the Albatross consensus algorithm. Through 1.5.0, the validity store uses a strict lower-bound comparison that expires a st",
-        "published": "2026-08-26T20:17:23.163"
-      },
-      {
-        "cve_id": "CVE-2026-68863",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Dell PowerProtect One, versions 20.1.0.0 and below, contain a Stack-based Buffer Overflow vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, le",
-        "published": "2026-08-26T20:17:57.833"
-      },
-      {
-        "cve_id": "CVE-2026-75333",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "yx-image-recognition v1.0 is vulnerable to Path Traversal. Parameters such as dir, filePath are directly passed to new File() for file system operations without any path sanitization or whitelist vali",
-        "published": "2026-08-26T22:16:29.327"
-      },
-      {
-        "cve_id": "CVE-2026-81202",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A flaw has been found in itsourcecode Payroll System 1.0. The impacted element is the function create/read/update/delete of the file ajax.php of the component CRUD Operation Handler. Executing a manip",
-        "published": "2026-08-26T22:16:30.293"
-      },
-      {
-        "cve_id": "CVE-2026-71171",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "Dell Cloud Disaster Recovery, versions\u00a020.2 and prior,\u00a0contain\u00a0an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability in the REST API. A high privi",
-        "published": "2026-08-26T19:16:57.647"
-      },
-      {
-        "cve_id": "CVE-2026-77611",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "SeaweedFS is a distributed storage system for files and blobs. In versions prior to 4.40, an authenticated S3 principal with permissions scoped to a nested object key can overwrite a different object ",
-        "published": "2026-08-26T22:16:30.007"
-      },
-      {
-        "cve_id": "CVE-2026-48786",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Fleet is an open-source device management platform built on osquery. In versions prior to 4.87.0, the target search endpoint (POST /api/latest/fleet/targets) returned unmasked team enroll secrets and ",
-        "published": "2026-08-26T19:16:50.643"
-      },
-      {
-        "cve_id": "CVE-2026-46370",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Fleet is an open-source device management platform built on osquery. In versions up to and including 4.84.1, the labels host-listing endpoint (GET /api/v1/fleet/labels/{id}/hosts) allowed an authentic",
-        "published": "2026-08-26T20:17:23.327"
+        "base_score": 8.5,
+        "description": "Subscriber SQL Injection in ACPT (Pro) - Custom Post Types Plugin for WordPress <= 2.0.63 versions.",
+        "published": "2026-08-27T10:16:35.807"
       }
     ]
   },
