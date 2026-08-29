@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-29T10:35:22.286527+00:00",
+  "generated_at": "2026-08-29T15:56:44.180354+00:00",
   "threat_score": {
-    "score": 6.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -238,17 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 350,
-    "critical_count": 4,
-    "high_count": 33,
+    "total": 298,
+    "critical_count": 1,
+    "high_count": 15,
     "cves": [
-      {
-        "cve_id": "CVE-2026-82222",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Deserialization of Untrusted Data vulnerability in Liquid Web / StellarWP GiveWP allows Object Injection.\n\nThis issue affects GiveWP: from n/a through 4.16.7.1.",
-        "published": "2026-08-28T12:16:32.810"
-      },
       {
         "cve_id": "CVE-2026-37751",
         "severity": "CRITICAL",
@@ -257,46 +250,11 @@
         "published": "2026-08-28T16:17:46.667"
       },
       {
-        "cve_id": "CVE-2026-42007",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "An attacker that has valid credentials can use a Sieve script with the editheader extension to trigger a use-after-free in the mail editing code, and to write memory contents beyond the intended buffe",
-        "published": "2026-08-28T12:16:29.260"
-      },
-      {
-        "cve_id": "CVE-2026-82244",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Budibase versions before 3.41.3 contain a remote code execution vulnerability in plugin handling that allows authenticated admin users to execute arbitrary code by uploading a malicious plugin tarball",
-        "published": "2026-08-28T12:16:34.653"
-      },
-      {
-        "cve_id": "CVE-2026-82234",
+        "cve_id": "CVE-2026-82227",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "SiYuan versions before v3.8.1 contain a server-side request forgery vulnerability in the http_request and web_fetch agent tools that perform DNS resolution only at guard time without validating the co",
-        "published": "2026-08-28T12:16:33.120"
-      },
-      {
-        "cve_id": "CVE-2026-82239",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Budibase before 3.41.3 fails to enforce per-table role restrictions on the POST /api/datasources/query endpoint, allowing low-privilege BASIC users to read, create, update, or delete rows in any table",
-        "published": "2026-08-28T12:16:33.887"
-      },
-      {
-        "cve_id": "CVE-2026-82240",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Budibase before 3.41.3 fails to validate app-scoped builder role assignments in the public user create and update endpoints, allowing an authenticated app-scoped builder to grant builder access to unr",
-        "published": "2026-08-28T12:16:34.030"
-      },
-      {
-        "cve_id": "CVE-2026-82245",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Budibase before 3.41.3 fails to enforce role-based authorization on license management endpoints, allowing any authenticated user to delete license keys or manipulate offline tokens. Attackers with ba",
-        "published": "2026-08-28T12:16:35.000"
+        "base_score": 8.5,
+        "description": "Contributor SQL Injection in WPBulky <= 1.2.2 versions.",
+        "published": "2026-08-28T16:18:32.163"
       },
       {
         "cve_id": "CVE-2026-50979",
@@ -306,81 +264,123 @@
         "published": "2026-08-28T16:18:14.037"
       },
       {
-        "cve_id": "CVE-2026-82242",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Budibase versions before 3.41.3 contain a missing authorization vulnerability in the POST /api/resources/duplicate endpoint that allows authenticated builders to inject tables, automations, queries, a",
-        "published": "2026-08-28T12:16:34.317"
-      },
-      {
-        "cve_id": "CVE-2026-82243",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "Budibase Server before 3.41.3 contains a server-side request forgery vulnerability in the datasource verify endpoint that allows builder-level users to supply arbitrary URLs without SSRF validation. A",
-        "published": "2026-08-28T12:16:34.477"
-      },
-      {
-        "cve_id": "CVE-2026-27852",
+        "cve_id": "CVE-2026-37237",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "An attacker that can send mail to a user can craft a message whose headers contain a very large number of email addresses or MIME parameters, which causes excessive memory usage when the message is la",
-        "published": "2026-08-28T12:16:27.330"
+        "description": "vLLM up to and including 0.17.0 allows remote attackers to cause a Denial of Service via memory exhaustion. The AsyncMediaIO.fetch_audio and AsyncMediaIO.fetch_image functions in multimodal/inputs.py ",
+        "published": "2026-08-28T16:17:46.300"
       },
       {
-        "cve_id": "CVE-2026-33605",
+        "cve_id": "CVE-2026-37736",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "An unauthenticated attacker can crash the ManageSieve login process by sending a small malformed command before authenticating. If running in high-security mode (default for community releases), only ",
-        "published": "2026-08-28T12:16:27.740"
+        "description": "An issue in the JsonSanitizer.sanitize() component of OWASP json-sanitizer v1.2.3 allows attackers to cause a Denial of Service (DoS) via a crafted input.",
+        "published": "2026-08-28T16:17:46.550"
       },
       {
-        "cve_id": "CVE-2026-42391",
+        "cve_id": "CVE-2026-38636",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "An unauthenticated attacker can send an IMAP ID command with a very large number of parameters before logging in, which causes memory and CPU usage to grow disproportionately. The login process can be",
-        "published": "2026-08-28T12:16:29.503"
+        "description": "An issue in the seekdir() function (/dirent/mod.rs) of relibc commit 61f42d allows attackers to cause a Denial of Service (DoS) via a crafted input.",
+        "published": "2026-08-28T16:17:46.917"
       },
       {
-        "cve_id": "CVE-2026-82247",
+        "cve_id": "CVE-2026-38638",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "gitoxide's gix-url crate (<= 0.32.0, fixed in 0.37.1) uses a hand-rolled URL parser that does not treat '?' or '#' as terminating the authority component, contrary to RFC 3986. As a consequence, gix-t",
-        "published": "2026-08-28T12:16:36.500"
+        "description": "An issue in the with_argv function (/unistd/mod.rs) of relibc commit 61f42d allows attackers to cause a Denial of Service (DoS) via a crafted input.",
+        "published": "2026-08-28T16:17:47.063"
       },
       {
-        "cve_id": "CVE-2026-82251",
+        "cve_id": "CVE-2026-56854",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "gitoxide before 0.52.1 fails to validate submodule names from .gitmodules configuration, allowing path traversal when deriving submodule git directories. Attackers can craft malicious submodule names ",
-        "published": "2026-08-28T12:16:37.113"
+        "description": "The source-address critical option in the Permissions returned by an authentication callback was only enforced for the PublicKeyCallback and VerifiedPublicKeyCallback paths, extending the fix for CVE-",
+        "published": "2026-08-28T16:18:17.607"
       },
       {
-        "cve_id": "CVE-2026-82252",
+        "cve_id": "CVE-2026-81285",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "gitoxide before 0.52.1 follows symlinks when reading the worktree .gitmodules file, allowing attackers to inject out-of-repository bytes into submodule metadata. Attackers can create a malicious repos",
-        "published": "2026-08-28T12:16:37.887"
+        "description": "Unauthenticated Denial of Service Attack in Smush Image Compression and Optimization <= 4.2.0 versions.",
+        "published": "2026-08-28T16:18:29.243"
       },
       {
-        "cve_id": "CVE-2026-82253",
+        "cve_id": "CVE-2026-81767",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "gitoxide (Rust crates gix <= 0.72.0 and gix-validate <= 0.10.0) contains a path traversal vulnerability. The submodule name validation function in gix-validate only checks the first occurrence of '..'",
-        "published": "2026-08-28T12:16:38.027"
+        "description": "Unauthenticated Broken Access Control in Simple Payment <= 2.5.2 versions.",
+        "published": "2026-08-28T16:18:30.590"
       },
       {
-        "cve_id": "CVE-2026-82254",
+        "cve_id": "CVE-2026-81019",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "gitoxide before 0.69.0 contains unchecked array indexing in delta application and uncapped allocation from attacker-controlled size headers in gix-pack. Attackers can send crafted pack data during clo",
-        "published": "2026-08-28T12:16:38.173"
+        "base_score": 7.4,
+        "description": "wolfProvider before 1.2.2 generates the 8-byte explicit AES-GCM nonce once when the TLS write key is set and never increments it per record. As a result every TLS 1.2 and DTLS 1.2 AES-GCM record withi",
+        "published": "2026-08-28T16:18:28.757"
       },
       {
-        "cve_id": "CVE-2026-82259",
+        "cve_id": "CVE-2026-81020",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "SvelteKit versions from 2.49.0 through 2.53.2 (fixed in 2.53.3) contain a deserialization expansion issue in the experimental form remote function. When an application enables experimental.remoteFunct",
-        "published": "2026-08-28T12:16:38.953"
+        "base_score": 7.4,
+        "description": "wolfEngine before 1.4.1 generates the 8-byte explicit AES-GCM nonce once when the TLS write key is set and never increments it per record. As a result every TLS 1.2 and DTLS 1.2 AES-GCM record within ",
+        "published": "2026-08-28T16:18:28.890"
+      },
+      {
+        "cve_id": "CVE-2026-5934",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The WP Rocket plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions up to, and including, 3.21.0.1. This is due to insufficient input sanitization and output escaping of user-s",
+        "published": "2026-08-28T16:18:19.657"
+      },
+      {
+        "cve_id": "CVE-2026-6176",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The Customer Reviews for WooCommerce plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the aggregated review form submission in versions up to and including 5.106.0. This is due to",
+        "published": "2026-08-28T16:18:21.580"
+      },
+      {
+        "cve_id": "CVE-2026-81757",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "Author Remote Code Execution (RCE) in Rank Math SEO <= 1.0.276 versions.",
+        "published": "2026-08-28T16:18:30.083"
+      },
+      {
+        "cve_id": "CVE-2026-81760",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Crocoblock JetEngine allows Reflected XSS.\n\nThis issue affects JetEngine: from n/a through 3.8.14.",
+        "published": "2026-08-28T16:18:30.340"
+      },
+      {
+        "cve_id": "CVE-2026-81341",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "wolfEngine before 1.4.1 sources the explicit AES-CCM nonce for TLS 1.2 and DTLS 1.2 records from the record input buffer instead of the TLS sequence number carried in the additional authenticated data",
+        "published": "2026-08-28T16:18:29.483"
+      },
+      {
+        "cve_id": "CVE-2026-3423",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "The Envira Gallery plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the gallery 'description' configuration field in all versions up to, and including, 1.12.4 due to insufficient ",
+        "published": "2026-08-28T16:17:56.640"
+      },
+      {
+        "cve_id": "CVE-2026-37710",
+        "severity": "MEDIUM",
+        "base_score": 6.1,
+        "description": "Cross Site Scripting vulnerability in Omeka S v.4.2.0 allows a remote attacker to execute arbitrary code via the site navigation custom URL function",
+        "published": "2026-08-28T16:17:46.423"
+      },
+      {
+        "cve_id": "CVE-2026-5800",
+        "severity": "MEDIUM",
+        "base_score": 6.1,
+        "description": "Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Dayneks Software Industry and Trade Inc. E-Commerce Platform allows Reflected XSS.\n\nThis issue aff",
+        "published": "2026-08-28T16:18:19.533"
       }
     ]
   },
