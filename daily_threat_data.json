@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-29T15:56:44.180354+00:00",
+  "generated_at": "2026-08-29T19:05:45.624597+00:00",
   "threat_score": {
-    "score": 5.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.5,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 9,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 298,
-    "critical_count": 1,
-    "high_count": 15,
+    "total": 269,
+    "critical_count": 9,
+    "high_count": 12,
     "cves": [
       {
-        "cve_id": "CVE-2026-37751",
+        "cve_id": "CVE-2026-54745",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Kubeflow Pipelines enables users to build and deploy portable, scalable machine learning workflows. Prior to 2.17.0, the Kubeflow Pipelines frontend exposes an unauthenticated server-side request forg",
+        "published": "2026-08-28T20:18:17.240"
+      },
+      {
+        "cve_id": "CVE-2026-55565",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Yamcs is a mission control framework. Prior to 5.12.8 and 5.13.2, Yamcs LikeExpression.fillCode_getValueReturn in yamcs-core/src/main/java/org/yamcs/yarch/streamsql/LikeExpression.java inserts an unes",
+        "published": "2026-08-28T20:18:29.070"
+      },
+      {
+        "cve_id": "CVE-2026-55634",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Pimcore is an Open Source Data & Experience Management Platform. Prior to 11.5.19, 12.3.10, and 2026.1.6, the class-definition import endpoint /pimcore-studio/api/class/definition/configuration-view/d",
+        "published": "2026-08-28T20:18:29.627"
+      },
+      {
+        "cve_id": "CVE-2026-55559",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "An OS command injection vulnerability in the killSessionSync function (lib/agent-runtime.ts) of 23blocks-OS ai-maestro v0.24.17 allows attackers to execute arbitrary commands via a crafted input.",
-        "published": "2026-08-28T16:17:46.667"
+        "description": "Yamcs is a mission control framework. Prior to 5.12.8 and 5.13.2, Yamcs inserts templateArgs from POST /api/instances and PATCH /api/instances/{instance} into YAML through VarStatement.append in yamcs",
+        "published": "2026-08-28T20:18:28.930"
       },
       {
-        "cve_id": "CVE-2026-82227",
+        "cve_id": "CVE-2026-54754",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Klever-Go is the Go implementation of the Klever blockchain protocol. Prior to 1.7.19, marketplace settlement in core/kapp/market/market.go reads MarketOrderData.ReferralPercentage from the listing wh",
+        "published": "2026-08-28T20:18:17.533"
+      },
+      {
+        "cve_id": "CVE-2026-54755",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Klever-Go is the Go implementation of the Klever blockchain protocol. Prior to 1.7.19, split-royalty fields decoded in core/kapp/builtInFunctions/utils.go can contain values greater than core.HundredP",
+        "published": "2026-08-28T20:18:17.670"
+      },
+      {
+        "cve_id": "CVE-2026-55247",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "plone.app.event provides the event content type for Plone. Prior to versions 5.2.4 and 6.0.1, the iCalendar import in src/plone/app/event/ical/importer.py accepts insufficiently restricted calendar an",
+        "published": "2026-08-28T20:18:26.890"
+      },
+      {
+        "cve_id": "CVE-2026-55248",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "plone.app.portlets provides portlets and a Plone-specific user interface for plone.portlets. Prior to 5.0.8, 6.0.4, and 7.0.2, a member who can add an RSS portlet can set its feed URL to a very large ",
+        "published": "2026-08-28T20:18:27.030"
+      },
+      {
+        "cve_id": "CVE-2026-55511",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Yamcs is a mission control framework. Prior to 5.12.8 and 5.13.2, Yamcs allows a user with SystemPrivilege.ControlArchiving to create a double-quoted StreamSQL column name that is interpolated into ge",
+        "published": "2026-08-28T20:18:27.947"
+      },
+      {
+        "cve_id": "CVE-2026-55485",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Piccolo Admin is an admin interface and content management system for Python, built on top of Piccolo. Prior to 1.14.0, piccolo_admin/endpoints.py uses superuser_validators to block PUT, PATCH, DELETE",
+        "published": "2026-08-28T20:18:27.657"
+      },
+      {
+        "cve_id": "CVE-2026-55521",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Yamcs is a mission control framework. Prior to 5.12.8 and 5.13.2, Yamcs omits authorization checks in IndexesApi.listPacketIndex, IndexesApi.listEventIndex, Cop1Api.disable, Cop1Api.resume, Cop1Api.in",
+        "published": "2026-08-28T20:18:28.240"
+      },
+      {
+        "cve_id": "CVE-2026-72984",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Access of resource using incompatible type ('type confusion') in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
+        "published": "2026-08-28T20:19:44.943"
+      },
+      {
+        "cve_id": "CVE-2026-55108",
         "severity": "HIGH",
         "base_score": 8.5,
-        "description": "Contributor SQL Injection in WPBulky <= 1.2.2 versions.",
-        "published": "2026-08-28T16:18:32.163"
+        "description": "KubeVela is an open source application delivery platform. Prior to 1.9.14, from 1.10.0-alpha.1 until 1.10.9, and from 1.11.0-alpha.1 until 1.11.0-alpha.4, the Terraform remote configuration loader in ",
+        "published": "2026-08-28T20:18:24.337"
       },
       {
-        "cve_id": "CVE-2026-50979",
+        "cve_id": "CVE-2026-55065",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "A command injection vulnerability in the 'advanced/curl' component of Osbil Technology oPanel v1.19.50 and earlier allows authenticated attackers to execute arbitrary shell commands via the 'url' para",
-        "published": "2026-08-28T16:18:14.037"
+        "description": "Vikunja is an open-source self-hosted task management platform. From 0.24.6 until 2.4.0, DELETE /api/v1/projects/:project/views/:view permits an authenticated user to supply a view identifier from ano",
+        "published": "2026-08-28T20:18:23.757"
       },
       {
-        "cve_id": "CVE-2026-37237",
+        "cve_id": "CVE-2026-56100",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "SpringBlade versions from 2.7.3 up to but not including 5.0.0 contain a privilege escalation vulnerability that allows authenticated attackers to create system administrator accounts by sending crafte",
+        "published": "2026-08-28T20:18:30.640"
+      },
+      {
+        "cve_id": "CVE-2026-54788",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "vLLM up to and including 0.17.0 allows remote attackers to cause a Denial of Service via memory exhaustion. The AsyncMediaIO.fetch_audio and AsyncMediaIO.fetch_image functions in multimodal/inputs.py ",
-        "published": "2026-08-28T16:17:46.300"
+        "description": "dd-trace-rs provides Datadog application performance monitoring for Rust. From 0.1.0 until 0.3.3, datadog-opentelemetry/src/propagation/tracecontext.rs parses the W3C tracestate header and collects ev",
+        "published": "2026-08-28T20:18:17.950"
       },
       {
-        "cve_id": "CVE-2026-37736",
+        "cve_id": "CVE-2026-55215",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "An issue in the JsonSanitizer.sanitize() component of OWASP json-sanitizer v1.2.3 allows attackers to cause a Denial of Service (DoS) via a crafted input.",
-        "published": "2026-08-28T16:17:46.550"
+        "description": "MariaDB Connector/Node.js is used to connect applications developed on Node.js to MariaDB and MySQL databases. Prior to versions 3.3.3, 3.4.6, and 3.5.3, when ssl is enabled without a pinned CA or ser",
+        "published": "2026-08-28T20:18:26.353"
       },
       {
-        "cve_id": "CVE-2026-38636",
+        "cve_id": "CVE-2026-55484",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "An issue in the seekdir() function (/dirent/mod.rs) of relibc commit 61f42d allows attackers to cause a Denial of Service (DoS) via a crafted input.",
-        "published": "2026-08-28T16:17:46.917"
+        "description": "ALOS HTTP is a Linux-first Go web framework and application server built around a custom networking stack. Prior to 0.0.0-20260617230736-314b6783e196, core/utils.go::sanitizeRequestPath calls splitPat",
+        "published": "2026-08-28T20:18:27.513"
       },
       {
-        "cve_id": "CVE-2026-38638",
+        "cve_id": "CVE-2026-55552",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "An issue in the with_argv function (/unistd/mod.rs) of relibc commit 61f42d allows attackers to cause a Denial of Service (DoS) via a crafted input.",
-        "published": "2026-08-28T16:17:47.063"
+        "description": "Yamcs is a mission control framework. Prior to 5.11.13, Yamcs StaticFileHandler.locateFile resolves an unauthenticated request path without using Path.normalize and Path.toAbsolutePath to confirm that",
+        "published": "2026-08-28T20:18:28.793"
       },
       {
-        "cve_id": "CVE-2026-56854",
+        "cve_id": "CVE-2026-55584",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "The source-address critical option in the Permissions returned by an authentication callback was only enforced for the PublicKeyCallback and VerifiedPublicKeyCallback paths, extending the fix for CVE-",
-        "published": "2026-08-28T16:18:17.607"
-      },
-      {
-        "cve_id": "CVE-2026-81285",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Unauthenticated Denial of Service Attack in Smush Image Compression and Optimization <= 4.2.0 versions.",
-        "published": "2026-08-28T16:18:29.243"
-      },
-      {
-        "cve_id": "CVE-2026-81767",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Unauthenticated Broken Access Control in Simple Payment <= 2.5.2 versions.",
-        "published": "2026-08-28T16:18:30.590"
-      },
-      {
-        "cve_id": "CVE-2026-81019",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "wolfProvider before 1.2.2 generates the 8-byte explicit AES-GCM nonce once when the TLS write key is set and never increments it per record. As a result every TLS 1.2 and DTLS 1.2 AES-GCM record withi",
-        "published": "2026-08-28T16:18:28.757"
-      },
-      {
-        "cve_id": "CVE-2026-81020",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "wolfEngine before 1.4.1 generates the 8-byte explicit AES-GCM nonce once when the TLS write key is set and never increments it per record. As a result every TLS 1.2 and DTLS 1.2 AES-GCM record within ",
-        "published": "2026-08-28T16:18:28.890"
-      },
-      {
-        "cve_id": "CVE-2026-5934",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The WP Rocket plugin for WordPress is vulnerable to Stored Cross-Site Scripting in versions up to, and including, 3.21.0.1. This is due to insufficient input sanitization and output escaping of user-s",
-        "published": "2026-08-28T16:18:19.657"
-      },
-      {
-        "cve_id": "CVE-2026-6176",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The Customer Reviews for WooCommerce plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the aggregated review form submission in versions up to and including 5.106.0. This is due to",
-        "published": "2026-08-28T16:18:21.580"
-      },
-      {
-        "cve_id": "CVE-2026-81757",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "Author Remote Code Execution (RCE) in Rank Math SEO <= 1.0.276 versions.",
-        "published": "2026-08-28T16:18:30.083"
-      },
-      {
-        "cve_id": "CVE-2026-81760",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Crocoblock JetEngine allows Reflected XSS.\n\nThis issue affects JetEngine: from n/a through 3.8.14.",
-        "published": "2026-08-28T16:18:30.340"
-      },
-      {
-        "cve_id": "CVE-2026-81341",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "wolfEngine before 1.4.1 sources the explicit AES-CCM nonce for TLS 1.2 and DTLS 1.2 records from the record input buffer instead of the TLS sequence number carried in the additional authenticated data",
-        "published": "2026-08-28T16:18:29.483"
-      },
-      {
-        "cve_id": "CVE-2026-3423",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The Envira Gallery plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the gallery 'description' configuration field in all versions up to, and including, 1.12.4 due to insufficient ",
-        "published": "2026-08-28T16:17:56.640"
-      },
-      {
-        "cve_id": "CVE-2026-37710",
-        "severity": "MEDIUM",
-        "base_score": 6.1,
-        "description": "Cross Site Scripting vulnerability in Omeka S v.4.2.0 allows a remote attacker to execute arbitrary code via the site navigation custom URL function",
-        "published": "2026-08-28T16:17:46.423"
-      },
-      {
-        "cve_id": "CVE-2026-5800",
-        "severity": "MEDIUM",
-        "base_score": 6.1,
-        "description": "Improper neutralization of input during web page generation ('cross-site scripting') vulnerability in Dayneks Software Industry and Trade Inc. E-Commerce Platform allows Reflected XSS.\n\nThis issue aff",
-        "published": "2026-08-28T16:18:19.533"
+        "description": "phpSysInfo is a customizable PHP script that displays system information. Prior to 3.4.6, the PSI_ALLOWED access-control check in read_config.php trusts attacker-controlled X-Forwarded-For and Client-",
+        "published": "2026-08-28T20:18:29.487"
       }
     ]
   },
