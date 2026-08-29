@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-29T00:14:49.869334+00:00",
+  "generated_at": "2026-08-29T10:35:22.286527+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
-        "score": 2.5,
+        "value": 4,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 584,
-    "critical_count": 9,
-    "high_count": 34,
+    "total": 350,
+    "critical_count": 4,
+    "high_count": 33,
     "cves": [
       {
-        "cve_id": "CVE-2026-69658",
+        "cve_id": "CVE-2026-82222",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "MQTT credentials and control traffic are transmitted in cleartext, \nexposing sensitive information to network-level attackers. This may \nenable unauthorized device impersonation and disruption of mess",
-        "published": "2026-08-28T00:18:08.650"
+        "base_score": 10.0,
+        "description": "Deserialization of Untrusted Data vulnerability in Liquid Web / StellarWP GiveWP allows Object Injection.\n\nThis issue affects GiveWP: from n/a through 4.16.7.1.",
+        "published": "2026-08-28T12:16:32.810"
       },
       {
-        "cve_id": "CVE-2026-71187",
+        "cve_id": "CVE-2026-37751",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "The Ebyte device relies on client side authentication logic that can be \nreproduced by unauthenticated users. An attacker may generate valid \nauthentication requests and bypass authentication to obtai",
-        "published": "2026-08-28T00:18:09.150"
+        "description": "An OS command injection vulnerability in the killSessionSync function (lib/agent-runtime.ts) of 23blocks-OS ai-maestro v0.24.17 allows attackers to execute arbitrary commands via a crafted input.",
+        "published": "2026-08-28T16:17:46.667"
       },
       {
-        "cve_id": "CVE-2026-73125",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Ebyte device web management interface does not consistently enforce \nauthentication before granting access to administrative functionality. \nAn unauthenticated remote attacker could access sensitive c",
-        "published": "2026-08-28T00:18:11.273"
-      },
-      {
-        "cve_id": "CVE-2026-75337",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The static resource interface /api/static/{deployKey}/ of Yu AI Code Mother v4.3 is vulnerable to path traversal. The user-controlled path is concatenated to the preview root directory without any nor",
-        "published": "2026-08-28T00:18:12.150"
-      },
-      {
-        "cve_id": "CVE-2026-76179",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An improper protection of authentication tokens vulnerability exists in \ncertain Ebyte gateway products. Authentication tokens used by the web \nmanagement interface are insufficiently protected during",
-        "published": "2026-08-28T00:18:14.430"
-      },
-      {
-        "cve_id": "CVE-2026-76943",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Xiiaozet LK100Wt contains an authentication weakness within an \nadministrative service that may allow an attacker to bypass intended \naccess controls and obtain command execution capabilities. Success",
-        "published": "2026-08-28T00:18:15.343"
-      },
-      {
-        "cve_id": "CVE-2026-78239",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Xiiaozet LK100W exposes a critical management function that can be \ninvoked without authentication, allowing a remote attacker to enable \nadministrative services that should be restricted. Successful ",
-        "published": "2026-08-28T00:18:16.197"
-      },
-      {
-        "cve_id": "CVE-2026-50152",
+        "cve_id": "CVE-2026-42007",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Ceph is an open-source distributed storage platform providing object, block, and file storage. In versions prior to 20.2.4 and 19.2.6, the Monitor subscription handler fails to properly authorize acce",
-        "published": "2026-08-28T00:18:07.073"
+        "description": "An attacker that has valid credentials can use a Sieve script with the editheader extension to trigger a use-after-free in the mail editing code, and to write memory contents beyond the intended buffe",
+        "published": "2026-08-28T12:16:29.260"
       },
       {
-        "cve_id": "CVE-2026-61800",
+        "cve_id": "CVE-2026-82244",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Wazuh is an open-source security platform providing unified XDR and SIEM protection for endpoints and cloud workloads. In versions 4.4.0 through 4.14.6, a party holding the cluster key can write, over",
-        "published": "2026-08-28T02:16:21.767"
+        "description": "Budibase versions before 3.41.3 contain a remote code execution vulnerability in plugin handling that allows authenticated admin users to execute arbitrary code by uploading a malicious plugin tarball",
+        "published": "2026-08-28T12:16:34.653"
       },
       {
-        "cve_id": "CVE-2025-30156",
+        "cve_id": "CVE-2026-82234",
         "severity": "HIGH",
-        "base_score": 8.9,
-        "description": "Ceph is an open-source distributed storage platform providing object, block, and file storage. In versions prior to 20.2.4 and 19.2.6, the CephX authentication protocol encrypts tickets with AES-128-C",
-        "published": "2026-08-28T00:16:45.557"
+        "base_score": 8.2,
+        "description": "SiYuan versions before v3.8.1 contain a server-side request forgery vulnerability in the http_request and web_fetch agent tools that perform DNS resolution only at guard time without validating the co",
+        "published": "2026-08-28T12:16:33.120"
       },
       {
-        "cve_id": "CVE-2026-18965",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "PayRange API\u00a0is missing proper authorization on management endpoints, which allows verbose details of every device on the PayRange network to be publicly accessible, with or without an account.",
-        "published": "2026-08-28T00:16:48.933"
-      },
-      {
-        "cve_id": "CVE-2026-39944",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Ceph is an open-source distributed storage platform providing object, block, and file storage. In versions prior to 20.2.4 and 19.2.6, the RADOS Gateway (RGW) protects STS session tokens with an AES-1",
-        "published": "2026-08-28T00:17:27.860"
-      },
-      {
-        "cve_id": "CVE-2026-75339",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The storage endpoint /storage/upload of cjbi admin3 v3.0.0 are missing permission checks. /Any logged-in user can upload arbitrary files, and any anonymous attacker can download them.",
-        "published": "2026-08-28T00:18:12.277"
-      },
-      {
-        "cve_id": "CVE-2026-75419",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "go-wind-cms (GoWind) before 1.0.0 has a missing authorization vulnerability. The NewAuthorizer() function in app/admin/service/internal/data/data.go and app/app/service/internal/data/data.go returns a",
-        "published": "2026-08-28T00:18:12.677"
-      },
-      {
-        "cve_id": "CVE-2026-75814",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Ebyte device does not adequately verify the origin or authenticity of \nrequests submitted to the web management interface. An unauthenticated \nremote attacker could persuade an authenticated admin",
-        "published": "2026-08-28T00:18:14.147"
-      },
-      {
-        "cve_id": "CVE-2026-76060",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "An authenticated OS command injection vulnerability exists in ZoneMinder's event export functionality. The exportFile HTTP request parameter is passed unsanitized into a shell command executed via PHP",
-        "published": "2026-08-28T00:18:14.273"
-      },
-      {
-        "cve_id": "CVE-2026-78037",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Xiiaozet LK100W is vulnerable to OS command injection through its \nweb-based management interface. An authenticated attacker may be able to\n execute arbitrary operating system commands with elevated p",
-        "published": "2026-08-28T00:18:16.063"
-      },
-      {
-        "cve_id": "CVE-2026-82072",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Out of bounds read in V8 in Google Chrome prior to 151.0.7922.72 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
-        "published": "2026-08-28T00:18:22.803"
-      },
-      {
-        "cve_id": "CVE-2026-38820",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "openNDS before 11.0.0 is susceptible to unauthenticated OS command execution via shell command injection through the fas query parameter on the /opennds_preauth/ endpoint because of libopennds.sh.",
-        "published": "2026-08-28T02:16:21.350"
-      },
-      {
-        "cve_id": "CVE-2026-54083",
+        "cve_id": "CVE-2026-82239",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Wazuh is an open-source security platform providing unified XDR and SIEM protection for endpoints and cloud workloads. The \u00a0ip-customblock\u00a0 active response script contains a path traversal vulnerabili",
-        "published": "2026-08-28T00:18:07.233"
+        "description": "Budibase before 3.41.3 fails to enforce per-table role restrictions on the POST /api/datasources/query endpoint, allowing low-privilege BASIC users to read, create, update, or delete rows in any table",
+        "published": "2026-08-28T12:16:33.887"
+      },
+      {
+        "cve_id": "CVE-2026-82240",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Budibase before 3.41.3 fails to validate app-scoped builder role assignments in the public user create and update endpoints, allowing an authenticated app-scoped builder to grant builder access to unr",
+        "published": "2026-08-28T12:16:34.030"
+      },
+      {
+        "cve_id": "CVE-2026-82245",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Budibase before 3.41.3 fails to enforce role-based authorization on license management endpoints, allowing any authenticated user to delete license keys or manipulate offline tokens. Attackers with ba",
+        "published": "2026-08-28T12:16:35.000"
+      },
+      {
+        "cve_id": "CVE-2026-50979",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "A command injection vulnerability in the 'advanced/curl' component of Osbil Technology oPanel v1.19.50 and earlier allows authenticated attackers to execute arbitrary shell commands via the 'url' para",
+        "published": "2026-08-28T16:18:14.037"
+      },
+      {
+        "cve_id": "CVE-2026-82242",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "Budibase versions before 3.41.3 contain a missing authorization vulnerability in the POST /api/resources/duplicate endpoint that allows authenticated builders to inject tables, automations, queries, a",
+        "published": "2026-08-28T12:16:34.317"
+      },
+      {
+        "cve_id": "CVE-2026-82243",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "Budibase Server before 3.41.3 contains a server-side request forgery vulnerability in the datasource verify endpoint that allows builder-level users to supply arbitrary URLs without SSRF validation. A",
+        "published": "2026-08-28T12:16:34.477"
+      },
+      {
+        "cve_id": "CVE-2026-27852",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "An attacker that can send mail to a user can craft a message whose headers contain a very large number of email addresses or MIME parameters, which causes excessive memory usage when the message is la",
+        "published": "2026-08-28T12:16:27.330"
+      },
+      {
+        "cve_id": "CVE-2026-33605",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "An unauthenticated attacker can crash the ManageSieve login process by sending a small malformed command before authenticating. If running in high-security mode (default for community releases), only ",
+        "published": "2026-08-28T12:16:27.740"
+      },
+      {
+        "cve_id": "CVE-2026-42391",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "An unauthenticated attacker can send an IMAP ID command with a very large number of parameters before logging in, which causes memory and CPU usage to grow disproportionately. The login process can be",
+        "published": "2026-08-28T12:16:29.503"
+      },
+      {
+        "cve_id": "CVE-2026-82247",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "gitoxide's gix-url crate (<= 0.32.0, fixed in 0.37.1) uses a hand-rolled URL parser that does not treat '?' or '#' as terminating the authority component, contrary to RFC 3986. As a consequence, gix-t",
+        "published": "2026-08-28T12:16:36.500"
+      },
+      {
+        "cve_id": "CVE-2026-82251",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "gitoxide before 0.52.1 fails to validate submodule names from .gitmodules configuration, allowing path traversal when deriving submodule git directories. Attackers can craft malicious submodule names ",
+        "published": "2026-08-28T12:16:37.113"
+      },
+      {
+        "cve_id": "CVE-2026-82252",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "gitoxide before 0.52.1 follows symlinks when reading the worktree .gitmodules file, allowing attackers to inject out-of-repository bytes into submodule metadata. Attackers can create a malicious repos",
+        "published": "2026-08-28T12:16:37.887"
+      },
+      {
+        "cve_id": "CVE-2026-82253",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "gitoxide (Rust crates gix <= 0.72.0 and gix-validate <= 0.10.0) contains a path traversal vulnerability. The submodule name validation function in gix-validate only checks the first occurrence of '..'",
+        "published": "2026-08-28T12:16:38.027"
+      },
+      {
+        "cve_id": "CVE-2026-82254",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "gitoxide before 0.69.0 contains unchecked array indexing in delta application and uncapped allocation from attacker-controlled size headers in gix-pack. Attackers can send crafted pack data during clo",
+        "published": "2026-08-28T12:16:38.173"
+      },
+      {
+        "cve_id": "CVE-2026-82259",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "SvelteKit versions from 2.49.0 through 2.53.2 (fixed in 2.53.3) contain a deserialization expansion issue in the experimental form remote function. When an application enables experimental.remoteFunct",
+        "published": "2026-08-28T12:16:38.953"
       }
     ]
   },
