@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-30T02:30:15.008854+00:00",
+  "generated_at": "2026-08-30T09:34:50.307120+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 10,
-        "score": 3.0,
+        "value": 8,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 71,
-    "critical_count": 10,
-    "high_count": 19,
+    "total": 59,
+    "critical_count": 8,
+    "high_count": 15,
     "cves": [
       {
         "cve_id": "CVE-2026-82456",
@@ -248,13 +248,6 @@
         "base_score": 10.0,
         "description": "argocd-mcp 0.8.0 binds its HTTP transport to every network interface and accepts MCP sessions without requiring caller credentials when ARGOCD_API_TOKEN is configured. Attackers who can reach the list",
         "published": "2026-08-29T14:16:38.767"
-      },
-      {
-        "cve_id": "CVE-2026-16259",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Uix UserCenter WordPress plugin through 1.0.3 does not verify that the account being modified through an unauthenticated profile-update action belongs to the requester, and it authenticates that a",
-        "published": "2026-08-29T06:17:00.360"
       },
       {
         "cve_id": "CVE-2026-14494",
@@ -292,18 +285,11 @@
         "published": "2026-08-29T20:16:31.840"
       },
       {
-        "cve_id": "CVE-2026-77012",
+        "cve_id": "CVE-2026-15980",
         "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "The \u7231\u91c7\u96c6\u6570\u636e\u91c7\u96c6\u548c\u53d1\u5e03\u63d2\u4ef6 WordPress plugin through 1.0.0 does not require a per-install secret for one of its unauthenticated endpoints, relying on a hardcoded default, and does not validate the URLs or destin",
-        "published": "2026-08-29T06:17:44.040"
-      },
-      {
-        "cve_id": "CVE-2026-16947",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The Total processing card payments for WooCommerce WordPress plugin through 7.3 does not validate a user-supplied path before using it to build a server-side verification request, and does not verify ",
-        "published": "2026-08-29T06:17:05.583"
+        "base_score": 9.8,
+        "description": "The MyHome Core plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 4.4.5. This is due to missing authorization in the send_link() AJAX handler and improp",
+        "published": "2026-08-30T05:16:58.407"
       },
       {
         "cve_id": "CVE-2026-82454",
@@ -332,20 +318,6 @@
         "base_score": 8.7,
         "description": "Rodauth before 2.46.0 contains an authentication bypass vulnerability in the webauthn_login route that allows logged-in users to authenticate as any other account. Attackers can exploit improper accou",
         "published": "2026-08-29T17:17:58.910"
-      },
-      {
-        "cve_id": "CVE-2026-16061",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "The Rest Routes  WordPress plugin through 5.5.5 does not sanitize and validate a value taken from the URL of one of its public REST routes before using it in a SQL query, allowing unauthenticated atta",
-        "published": "2026-08-29T06:17:00.247"
-      },
-      {
-        "cve_id": "CVE-2026-76548",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "The User Profile Builder  WordPress plugin before 4.0.1 does not properly restrict its front-end file upload feature, granting unauthenticated visitors capabilities reserved to privileged roles. This ",
-        "published": "2026-08-29T06:17:29.450"
       },
       {
         "cve_id": "CVE-2026-82473",
@@ -381,6 +353,34 @@
         "base_score": 7.8,
         "description": "su-exec through 0.3 fails to validate numeric user and group identifiers parsed with strtol before assigning to uid_t and gid_t, allowing truncation of out-of-range values to zero. Attackers can suppl",
         "published": "2026-08-29T14:16:38.910"
+      },
+      {
+        "cve_id": "CVE-2026-82474",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Sudo through 1.9.17p2 fails to apply intercept policy checks to the execveat system call in ptrace-based intercept mode. Users permitted to run specific commands can execute denied programs by calling",
+        "published": "2026-08-29T17:17:59.910"
+      },
+      {
+        "cve_id": "CVE-2026-82453",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "rust-iot-platform through commit 5df942ab stores user passwords in cleartext without hashing in the user model. Attackers can read API responses from user retrieval and listing routes to obtain plaint",
+        "published": "2026-08-29T14:16:38.347"
+      },
+      {
+        "cve_id": "CVE-2026-82472",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Documenso before 2.13.0 accepts PDF file uploads on the /api/files/upload-pdf endpoint without requiring authentication, session tokens, or API credentials. Unauthenticated attackers can upload arbitr",
+        "published": "2026-08-29T17:17:59.623"
+      },
+      {
+        "cve_id": "CVE-2026-75807",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The SAML Single Sign On \u2013 SSO Login plugin for WordPress is vulnerable to Authentication Bypass in versions up to, and including, 5.4.6. This is due to the mo_saml_login_validate() ACS handler persist",
+        "published": "2026-08-29T18:16:36.313"
       }
     ]
   },
