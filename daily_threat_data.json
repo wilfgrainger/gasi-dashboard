@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-30T09:34:50.307120+00:00",
+  "generated_at": "2026-08-30T15:43:26.576956+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
+        "value": 5,
         "score": 2.5,
         "max": 3
       },
@@ -238,37 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 59,
-    "critical_count": 8,
-    "high_count": 15,
+    "total": 89,
+    "critical_count": 5,
+    "high_count": 24,
     "cves": [
       {
-        "cve_id": "CVE-2026-82456",
+        "cve_id": "CVE-2026-82542",
         "severity": "CRITICAL",
         "base_score": 10.0,
-        "description": "argocd-mcp 0.8.0 binds its HTTP transport to every network interface and accepts MCP sessions without requiring caller credentials when ARGOCD_API_TOKEN is configured. Attackers who can reach the list",
-        "published": "2026-08-29T14:16:38.767"
-      },
-      {
-        "cve_id": "CVE-2026-14494",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Sigma Forms Pro plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.4.5 via the handle_form_submission function. This is due to the plugin dynamical",
-        "published": "2026-08-29T12:16:41.163"
-      },
-      {
-        "cve_id": "CVE-2026-82448",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Shinobi before commit 5a76c74f contains a hardcoded connection key in the child node service that allows unauthenticated attackers to execute arbitrary database queries. Attackers reaching the child n",
-        "published": "2026-08-29T13:16:38.877"
-      },
-      {
-        "cve_id": "CVE-2026-82452",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "rust-iot-platform through commit 5df942ab contains an authentication bypass vulnerability where most REST API routes lack authentication guards in their handler signatures. Unauthenticated attackers c",
-        "published": "2026-08-29T14:16:38.210"
+        "description": "A weakness has been identified in Tenda HG10 300001138. Affected by this issue is the function formIPv6Routing of the file /boaform/admin/formIPv6Routing of the component Boa Web Server. This manipula",
+        "published": "2026-08-30T13:16:56.267"
       },
       {
         "cve_id": "CVE-2026-82460",
@@ -292,25 +271,39 @@
         "published": "2026-08-30T05:16:58.407"
       },
       {
-        "cve_id": "CVE-2026-82454",
+        "cve_id": "CVE-2026-82539",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "The Omnivore API (packages/api) before the fix in commit abf53d6 contains an authentication bypass in Apple sign-in token verification. The decodeAppleToken function extracted the 'alg' field from the",
-        "published": "2026-08-29T14:16:38.480"
+        "description": "A vulnerability was determined in TOTOLINK A720R 4.1.5cu.630_B20250509. This impacts the function setMacFilterRules of the file cstecgi.cgi of the component MAC Filtering. Executing a manipulation of ",
+        "published": "2026-08-30T11:17:35.067"
       },
       {
-        "cve_id": "CVE-2026-82447",
+        "cve_id": "CVE-2026-82653",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Skyvern before 1.0.45 contains a sandbox escape vulnerability in TextPromptBlock that renders prompts twice, first through a sandboxed Jinja environment and then through an unsandboxed environment. At",
-        "published": "2026-08-29T13:16:38.643"
+        "base_score": 8.9,
+        "description": "SiYuan before v3.8.1 contains a stored cross-site scripting vulnerability in confirmDialog() where unescaped package names and notebook names are interpolated directly into innerHTML assignments. Atta",
+        "published": "2026-08-30T15:16:46.033"
       },
       {
-        "cve_id": "CVE-2026-82450",
+        "cve_id": "CVE-2026-82654",
+        "severity": "HIGH",
+        "base_score": 8.9,
+        "description": "SiYuan before v3.8.1 fails to properly escape block name, alias, and memo fields in hint, backlink, and breadcrumb rendering functions. Attackers can set a block's name to contain HTML/script tags tha",
+        "published": "2026-08-30T15:16:46.173"
+      },
+      {
+        "cve_id": "CVE-2026-82635",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "BookStack before 26.05.4 contains a remote code execution vulnerability in the portable ZIP import functionality that allows users with Import Content and Create Books permissions to upload a PHP poly",
-        "published": "2026-08-29T14:16:37.930"
+        "description": "Pake before 3.13.1 joins the JavaScript-supplied filename for the download_file Tauri command onto the user's Downloads directory with no sanitization. A filename containing path traversal sequences (",
+        "published": "2026-08-30T13:16:56.923"
+      },
+      {
+        "cve_id": "CVE-2026-82642",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Readest is an open-source e-book reader built on Tauri. In versions prior to 0.11.16, EPUB chapter HTML is sanitized with DOMPurify using a configuration that forbade only the <script> tag (FORBID_TAG",
+        "published": "2026-08-30T14:17:04.193"
       },
       {
         "cve_id": "CVE-2026-82466",
@@ -318,6 +311,20 @@
         "base_score": 8.7,
         "description": "Rodauth before 2.46.0 contains an authentication bypass vulnerability in the webauthn_login route that allows logged-in users to authenticate as any other account. Attackers can exploit improper accou",
         "published": "2026-08-29T17:17:58.910"
+      },
+      {
+        "cve_id": "CVE-2026-82641",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "keploy versions 3.1.0 through 3.6.25 bind the agent control-plane HTTP server to all interfaces without authentication, exposing endpoints that stream TLS session keys and traffic data. Attackers can ",
+        "published": "2026-08-30T14:17:04.020"
+      },
+      {
+        "cve_id": "CVE-2026-82645",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "AVideo (current commit e01e41ecc and earlier) exposes stream credentials through the plugin/Live/view/Live_restreams/getLiveKey.json.php endpoint. Supplying a 'token' request parameter waives both the",
+        "published": "2026-08-30T15:16:44.863"
       },
       {
         "cve_id": "CVE-2026-82473",
@@ -348,11 +355,11 @@
         "published": "2026-08-29T17:18:00.057"
       },
       {
-        "cve_id": "CVE-2026-82457",
+        "cve_id": "CVE-2026-82636",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "su-exec through 0.3 fails to validate numeric user and group identifiers parsed with strtol before assigning to uid_t and gid_t, allowing truncation of out-of-range values to zero. Attackers can suppl",
-        "published": "2026-08-29T14:16:38.910"
+        "base_score": 7.9,
+        "description": "Qubes OS before qubes-core-dom0-linux 4.3.22 allows OS command injection during a qvm-copy-to-vm call from dom0 to an attacker-controlled qube, because the \"system\" library function is used to process",
+        "published": "2026-08-30T14:17:03.310"
       },
       {
         "cve_id": "CVE-2026-82474",
@@ -360,13 +367,6 @@
         "base_score": 7.8,
         "description": "Sudo through 1.9.17p2 fails to apply intercept policy checks to the execveat system call in ptrace-based intercept mode. Users permitted to run specific commands can execute denied programs by calling",
         "published": "2026-08-29T17:17:59.910"
-      },
-      {
-        "cve_id": "CVE-2026-82453",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "rust-iot-platform through commit 5df942ab stores user passwords in cleartext without hashing in the user model. Attackers can read API responses from user retrieval and listing routes to obtain plaint",
-        "published": "2026-08-29T14:16:38.347"
       },
       {
         "cve_id": "CVE-2026-82472",
