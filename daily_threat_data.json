@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-30T15:43:26.576956+00:00",
+  "generated_at": "2026-08-30T18:55:47.664830+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
-        "score": 2.5,
+        "value": 4,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 89,
-    "critical_count": 5,
-    "high_count": 24,
+    "total": 83,
+    "critical_count": 4,
+    "high_count": 17,
     "cves": [
       {
         "cve_id": "CVE-2026-82542",
@@ -248,13 +248,6 @@
         "base_score": 10.0,
         "description": "A weakness has been identified in Tenda HG10 300001138. Affected by this issue is the function formIPv6Routing of the file /boaform/admin/formIPv6Routing of the component Boa Web Server. This manipula",
         "published": "2026-08-30T13:16:56.267"
-      },
-      {
-        "cve_id": "CVE-2026-82460",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Cloud Commander before 19.20.2 contains a directory traversal vulnerability in REST file-operation and markdown endpoints that fails to properly validate path normalization. Attackers can use path tra",
-        "published": "2026-08-29T17:17:58.060"
       },
       {
         "cve_id": "CVE-2026-15369",
@@ -306,13 +299,6 @@
         "published": "2026-08-30T14:17:04.193"
       },
       {
-        "cve_id": "CVE-2026-82466",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "Rodauth before 2.46.0 contains an authentication bypass vulnerability in the webauthn_login route that allows logged-in users to authenticate as any other account. Attackers can exploit improper accou",
-        "published": "2026-08-29T17:17:58.910"
-      },
-      {
         "cve_id": "CVE-2026-82641",
         "severity": "HIGH",
         "base_score": 8.6,
@@ -327,32 +313,11 @@
         "published": "2026-08-30T15:16:44.863"
       },
       {
-        "cve_id": "CVE-2026-82473",
+        "cve_id": "CVE-2026-82549",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "KubeEdge CloudCore through 1.23.1 accepts node task status reports on its HTTPS server without authentication verification. Attackers can reach CloudCore on port 10002 to mark upgrade jobs as succeede",
-        "published": "2026-08-29T17:17:59.770"
-      },
-      {
-        "cve_id": "CVE-2026-82461",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "pac4j-oidc before 6.5.6 fails to verify access token signatures, issuers, audiences, or expiry when extracting Keycloak realm and client roles. Attackers can forge access tokens with administrative ro",
-        "published": "2026-08-29T17:17:58.207"
-      },
-      {
-        "cve_id": "CVE-2026-82463",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "pac4j-core before 6.5.6 contains an authentication bypass vulnerability in CheckProfileTypeAuthorizer that reverses the profile type validation logic. Attackers can authenticate through a weaker clien",
-        "published": "2026-08-29T17:17:58.490"
-      },
-      {
-        "cve_id": "CVE-2026-82475",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "iFlytek astron-agent through 1.1.1 contains an authorization bypass vulnerability in the copyFlow endpoint that fails to validate workflow ownership. Authenticated attackers can enumerate workflow ide",
-        "published": "2026-08-29T17:18:00.057"
+        "base_score": 8.3,
+        "description": "A vulnerability was identified in Linux Foundation Magma 1.9.0. This affects an unknown function of the component SecurityModeComplete Handler. Such manipulation leads to improper validation of integr",
+        "published": "2026-08-30T16:16:43.667"
       },
       {
         "cve_id": "CVE-2026-82636",
@@ -362,25 +327,60 @@
         "published": "2026-08-30T14:17:03.310"
       },
       {
-        "cve_id": "CVE-2026-82474",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Sudo through 1.9.17p2 fails to apply intercept policy checks to the execveat system call in ptrace-based intercept mode. Users permitted to run specific commands can execute denied programs by calling",
-        "published": "2026-08-29T17:17:59.910"
-      },
-      {
-        "cve_id": "CVE-2026-82472",
+        "cve_id": "CVE-2026-82638",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Documenso before 2.13.0 accepts PDF file uploads on the /api/files/upload-pdf endpoint without requiring authentication, session tokens, or API credentials. Unauthenticated attackers can upload arbitr",
-        "published": "2026-08-29T17:17:59.623"
+        "description": "jina-ai reader disables its private-address guard outside Google Cloud deployments, allowing unauthenticated attackers to perform server-side request forgery. Attackers can supply publicly resolvable ",
+        "published": "2026-08-30T14:17:03.610"
       },
       {
-        "cve_id": "CVE-2026-75807",
+        "cve_id": "CVE-2026-82639",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "The SAML Single Sign On \u2013 SSO Login plugin for WordPress is vulnerable to Authentication Bypass in versions up to, and including, 5.4.6. This is due to the mo_saml_login_validate() ACS handler persist",
-        "published": "2026-08-29T18:16:36.313"
+        "description": "NextChat versions from 2.15.8 through 2.16.1 contain an improper URL validation vulnerability in the proxy endpoint that allows attackers to obtain the server's OpenAI API key. The x-base-url header i",
+        "published": "2026-08-30T14:17:03.750"
+      },
+      {
+        "cve_id": "CVE-2026-82644",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "WWBN AVideo (current e01e41ecc and earlier) contains a brute-force rate limiting bypass in enforceRateLimit(), which protects login.json.php and 13 other endpoints. The function stores its attempt cou",
+        "published": "2026-08-30T15:16:44.727"
+      },
+      {
+        "cve_id": "CVE-2026-82655",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Admidio before 5.0.12 contains a blind SQL injection vulnerability in the relation_type_list parameter of lists_show.php that allows unauthenticated attackers to execute arbitrary SQL queries. Attacke",
+        "published": "2026-08-30T15:16:46.310"
+      },
+      {
+        "cve_id": "CVE-2026-82657",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Admidio before 5.0.12 fails to enforce login-only module restrictions in RSS feed endpoints for forum and announcements modules. Unauthenticated attackers can retrieve forum topics and announcements b",
+        "published": "2026-08-30T15:16:46.607"
+      },
+      {
+        "cve_id": "CVE-2026-82480",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "A security flaw has been discovered in NASA cFS up to 7.0.1. The affected element is the function CFE_SB_GetUserDataLength of the file src/cFS/cfe/modules/sb/fsw/src/cfe_sb_util.c of the component cFE",
+        "published": "2026-08-30T06:16:56.730"
+      },
+      {
+        "cve_id": "CVE-2026-82478",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was determined in NASA Trick 19.6.0. This issue affects the function JSONVariableServerThread::parse_request of the file trick_source/sim_services/JSONVariableServer/JSONVariableServer",
+        "published": "2026-08-30T05:16:59.380"
+      },
+      {
+        "cve_id": "CVE-2026-82543",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was detected in vastsa FileCodeBox up to 2.3. This vulnerability affects the function update_file_usage of the file apps/base/views.py of the component Pickup Limit Handler. Performing",
+        "published": "2026-08-30T13:16:56.447"
       }
     ]
   },
