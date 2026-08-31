@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-31T18:26:56.627309+00:00",
+  "generated_at": "2026-08-31T23:29:43.856764+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
-        "score": 2.5,
+        "value": 14,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,17 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 274,
-    "critical_count": 8,
-    "high_count": 20,
+    "total": 363,
+    "critical_count": 14,
+    "high_count": 24,
     "cves": [
-      {
-        "cve_id": "CVE-2026-82592",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A vulnerability was detected in D-Link DIR-825M 1.1.8. This affects the function sub_46725C of the file /boafrm/formDiskFormat of the component Disk Formatting Handler Endpoint. The manipulation of th",
-        "published": "2026-08-30T23:17:08.303"
-      },
       {
         "cve_id": "CVE-2026-82593",
         "severity": "CRITICAL",
@@ -262,6 +255,13 @@
         "base_score": 9.9,
         "description": "A vulnerability was found in TOTOLINK NR1800X 9.1.0u.6681_B20230703. Impacted is the function setUploadSetting of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument FileName results in st",
         "published": "2026-08-31T05:17:06.393"
+      },
+      {
+        "cve_id": "CVE-2026-82874",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "ToolJet before v3.16.208 fails to validate that authenticated users belong to the organization specified in the organizationId path parameter of tooljet-db endpoints, allowing any Builder user to read",
+        "published": "2026-08-31T09:17:08.453"
       },
       {
         "cve_id": "CVE-2026-58574",
@@ -299,11 +299,74 @@
         "published": "2026-08-31T09:17:05.920"
       },
       {
+        "cve_id": "CVE-2026-82858",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "@hulumi/drift versions before 1.3.2 accept externally supplied execute plans without sufficient provenance validation, allowing untrusted reconciliation input to be treated as trusted. Attackers can s",
+        "published": "2026-08-31T09:17:06.067"
+      },
+      {
+        "cve_id": "CVE-2026-82859",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "hulumi versions before v1.3.2 contain a deployment SCP template that allows tag-on-create bypasses for hulumi:iac-role protections. Attackers can bypass intended IAM boundary restrictions by exploitin",
+        "published": "2026-08-31T09:17:06.210"
+      },
+      {
+        "cve_id": "CVE-2026-82860",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "@hulumi/policies versions before 1.3.2 fail to fully inspect inline and attached IAM policy evidence for the administrator-policy guardrail. Attackers can craft admin-equivalent policy paths that bypa",
+        "published": "2026-08-31T09:17:06.353"
+      },
+      {
+        "cve_id": "CVE-2026-82870",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "ToolJet before v3.16.208 fails to validate organizationId ownership in database write and destroy routes, allowing any builder-role user to create, alter, or drop tables in other organizations' databa",
+        "published": "2026-08-31T09:17:07.863"
+      },
+      {
+        "cve_id": "CVE-2026-49003",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Attackers can exploit command injection vulnerabilities to delete core system runtime files, causing the monitoring module to crash and become paralyzed; simultaneously, they can obtain root privilege",
+        "published": "2026-08-31T10:16:49.963"
+      },
+      {
+        "cve_id": "CVE-2026-82872",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "ToolJet before v3.16.208 fails to validate that the path organizationId matches the authenticated user's workspace before performing ToolJet DB table operations. A workspace admin can create, view, an",
+        "published": "2026-08-31T09:17:08.160"
+      },
+      {
         "cve_id": "CVE-2026-82628",
         "severity": "HIGH",
         "base_score": 8.8,
         "description": "A vulnerability was found in Colorful iGameCenter 2.0.0.81. This vulnerability affects the function sub_11504 in the library WinRing0x64.sys of the component IOCTL Dispatch. Performing a manipulation ",
         "published": "2026-08-31T07:17:47.307"
+      },
+      {
+        "cve_id": "CVE-2026-82862",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "Hulumi versions before v1.3.2 resolve the threat-model helper script from an unsafe root, allowing workspace files to shadow the intended helper script. Attackers can place malicious files in the work",
+        "published": "2026-08-31T09:17:06.643"
+      },
+      {
+        "cve_id": "CVE-2026-82869",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "ToolJet Database versions before v3.16.44 contain a privilege escalation vulnerability in the join_tables endpoint that grants JOIN_TABLES ability to all authenticated users without role or workspace ",
+        "published": "2026-08-31T09:17:07.693"
+      },
+      {
+        "cve_id": "CVE-2026-82871",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "ToolJet before v3.16.208 fails to validate organization membership in database read routes, allowing any authenticated user to access other organizations' table schemas and row data. Attackers can sup",
+        "published": "2026-08-31T09:17:08.017"
       },
       {
         "cve_id": "CVE-2026-40463",
@@ -313,74 +376,11 @@
         "published": "2026-08-31T07:17:42.610"
       },
       {
-        "cve_id": "CVE-2026-56718",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "AJCloud AJY IPC firmware prior to version 01.10715.11.37 contains a path traversal vulnerability in the jdbhttpd web service that allows unauthenticated remote attackers to read arbitrary files with r",
-        "published": "2026-08-30T21:16:34.160"
-      },
-      {
         "cve_id": "CVE-2026-81624",
         "severity": "HIGH",
         "base_score": 7.5,
         "description": "Undertow is a flexible performant web server used in JBoss EAP and WildFly. A flaw was found in how Undertow handles WebSocket connections. Specifically, certain configuration limits like message buff",
         "published": "2026-08-31T09:17:03.453"
-      },
-      {
-        "cve_id": "CVE-2026-82595",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "A vulnerability was found in D-Link DIR-825M 1.1.8. Affected by this vulnerability is the function sub_456CF4 of the file /boafrm/formSysCmd of the component System Command Execution. Performing a man",
-        "published": "2026-08-31T00:16:41.980"
-      },
-      {
-        "cve_id": "CVE-2026-82597",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "A vulnerability was identified in TOTOLINK NR1800X 9.1.0u.6681_B20230703. This affects the function setUssd of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument ussd leads to command inj",
-        "published": "2026-08-31T01:16:50.190"
-      },
-      {
-        "cve_id": "CVE-2026-82608",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "A vulnerability was determined in Kamailio up to 5.5.0/6.0.7. This affects the function get_4bytes of the file src/modules/ims_registrar_scscf/cxdx_avp.c of the component AVP Handler. Executing a mani",
-        "published": "2026-08-31T03:16:43.293"
-      },
-      {
-        "cve_id": "CVE-2026-82598",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was determined in SeaCMS up to 13.6. Affected is the function parseIf of the file search.php of the component Template Engine. This manipulation of the argument searchtype causes code ",
-        "published": "2026-08-31T01:16:50.417"
-      },
-      {
-        "cve_id": "CVE-2026-82600",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security flaw has been discovered in SeaCMS up to 13.6. Affected by this issue is some unknown functionality of the file /zyapi.php?ac=videolist. Performing a manipulation of the argument ids result",
-        "published": "2026-08-31T02:17:02.603"
-      },
-      {
-        "cve_id": "CVE-2026-82607",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was found in Cozmoslabs Profile Builder Plugin up to 3.16.1 on WordPress. The impacted element is the function wppb_ajax_simple_avatar of the file /wp-admin/admin-ajax.php of the compo",
-        "published": "2026-08-31T03:16:43.103"
-      },
-      {
-        "cve_id": "CVE-2026-82610",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security flaw has been discovered in itsourcecode Online Medicine Delivery System 1.0. Affected is the function Employee::employeeAuthentication of the file /rider/login.php of the component Login I",
-        "published": "2026-08-31T04:17:26.273"
-      },
-      {
-        "cve_id": "CVE-2026-82611",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A weakness has been identified in itsourcecode Online Medicine Delivery System 1.0. Affected by this vulnerability is the function Customer::cusAuthentication of the file /login.php of the component C",
-        "published": "2026-08-31T04:17:28.317"
       }
     ]
   },
