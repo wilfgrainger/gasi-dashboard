@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-08-31T10:15:56.709750+00:00",
+  "generated_at": "2026-08-31T18:26:56.627309+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 29,
+        "value": 31,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 8,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -32,9 +32,29 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1685,
-    "recent_30d_count": 29,
+    "total_catalog_count": 1687,
+    "recent_30d_count": 31,
     "recent": [
+      {
+        "cve_id": "CVE-2026-82078",
+        "vendor": "PaperCut",
+        "product": "NG/MF",
+        "name": "PaperCut NG/MF Unsafe Reflection Vulnerability",
+        "date_added": "2026-08-31",
+        "due_date": "2026-09-14",
+        "description": "PaperCut NG/MF contains an unsafe reflection vulnerability that allows an attacker to manipulate system configuration parameters and execute arbitrary Java bytecode residing on the application classpa",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-81578",
+        "vendor": "PaperCut",
+        "product": "NG/MF",
+        "name": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
+        "date_added": "2026-08-31",
+        "due_date": "2026-09-14",
+        "description": "PaperCut NG/MF contains a missing authentication for critical function vulnerability which allows an unauthenticated remote attacker to modify certain system configurations. This vulnerability can be ",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2023-49105",
         "vendor": "ownCloud",
@@ -214,41 +234,14 @@
         "due_date": "2026-08-21",
         "description": "Microsoft SharePoint contains a weak authentication vulnerability which allows an unauthorized attacker to bypass a security feature over a network.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-65400",
-        "vendor": "Apple",
-        "product": "macOS",
-        "name": "Apple macOS Improper Authentication Vulnerability",
-        "date_added": "2026-08-18",
-        "due_date": "2026-08-21",
-        "description": "Apple macOS contains an improper authentication vulnerability that could allow an attacker on the network to authenticate to Screen Sharing without valid credentials.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2025-62593",
-        "vendor": "Ray-Project",
-        "product": "Ray",
-        "name": "Ray-Project Ray Code Injection Vulnerability",
-        "date_added": "2026-08-17",
-        "due_date": "2026-08-20",
-        "description": "Ray-Project Ray contains a code injection vulnerability that could allow remote code execution. Developers using Ray as a development tool may be exposed to this vulnerability exploitable through Fire",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 174,
-    "critical_count": 4,
+    "total": 274,
+    "critical_count": 8,
     "high_count": 20,
     "cves": [
-      {
-        "cve_id": "CVE-2026-82542",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "A weakness has been identified in Tenda HG10 300001138. Affected by this issue is the function formIPv6Routing of the file /boaform/admin/formIPv6Routing of the component Boa Web Server. This manipula",
-        "published": "2026-08-30T13:16:56.267"
-      },
       {
         "cve_id": "CVE-2026-82592",
         "severity": "CRITICAL",
@@ -264,102 +257,60 @@
         "published": "2026-08-31T00:16:41.630"
       },
       {
-        "cve_id": "CVE-2026-82539",
+        "cve_id": "CVE-2026-82616",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A vulnerability was determined in TOTOLINK A720R 4.1.5cu.630_B20250509. This impacts the function setMacFilterRules of the file cstecgi.cgi of the component MAC Filtering. Executing a manipulation of ",
-        "published": "2026-08-30T11:17:35.067"
+        "base_score": 9.9,
+        "description": "A vulnerability was found in TOTOLINK NR1800X 9.1.0u.6681_B20230703. Impacted is the function setUploadSetting of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument FileName results in st",
+        "published": "2026-08-31T05:17:06.393"
       },
       {
-        "cve_id": "CVE-2026-82653",
-        "severity": "HIGH",
-        "base_score": 8.9,
-        "description": "SiYuan before v3.8.1 contains a stored cross-site scripting vulnerability in confirmDialog() where unescaped package names and notebook names are interpolated directly into innerHTML assignments. Atta",
-        "published": "2026-08-30T15:16:46.033"
+        "cve_id": "CVE-2026-58574",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Dell PowerStore contains a Missing Authentication for Critical Function vulnerability. An unauthenticated attacker with network access to the restricted management interface could potentially exploit ",
+        "published": "2026-08-31T07:17:44.743"
       },
       {
-        "cve_id": "CVE-2026-82654",
-        "severity": "HIGH",
-        "base_score": 8.9,
-        "description": "SiYuan before v3.8.1 fails to properly escape block name, alias, and memo fields in hint, backlink, and breadcrumb rendering functions. Attackers can set a block's name to contain HTML/script tags tha",
-        "published": "2026-08-30T15:16:46.173"
+        "cve_id": "CVE-2026-82854",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Nodemailer before 8.0.4 is vulnerable to SMTP command injection through the unsanitized envelope.size parameter. When an application passes a custom envelope object with a size property containing CRL",
+        "published": "2026-08-31T09:17:05.463"
       },
       {
-        "cve_id": "CVE-2026-82635",
+        "cve_id": "CVE-2026-82855",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "@hulumi/policies versions before 1.3.2 contain an evidence validation bypass vulnerability in Cloudflare and deployment-governance validators that allows attackers to suppress violations by submitting",
+        "published": "2026-08-31T09:17:05.610"
+      },
+      {
+        "cve_id": "CVE-2026-82856",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "@hulumi/policies versions before 1.3.2 fail to properly validate set-qualified AWS IAM condition operators in GitHub OIDC trust policies. Attackers can use ForAnyValue:StringLike operators to hide wil",
+        "published": "2026-08-31T09:17:05.780"
+      },
+      {
+        "cve_id": "CVE-2026-82857",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "hulumi versions before v1.3.2 contain a privilege escalation vulnerability in the weekly integration IAM policy that allows role lifecycle operations on af-e2e-* roles without sufficient boundary rest",
+        "published": "2026-08-31T09:17:05.920"
+      },
+      {
+        "cve_id": "CVE-2026-82628",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Pake before 3.13.1 joins the JavaScript-supplied filename for the download_file Tauri command onto the user's Downloads directory with no sanitization. A filename containing path traversal sequences (",
-        "published": "2026-08-30T13:16:56.923"
+        "description": "A vulnerability was found in Colorful iGameCenter 2.0.0.81. This vulnerability affects the function sub_11504 in the library WinRing0x64.sys of the component IOCTL Dispatch. Performing a manipulation ",
+        "published": "2026-08-31T07:17:47.307"
       },
       {
-        "cve_id": "CVE-2026-82642",
+        "cve_id": "CVE-2026-40463",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Readest is an open-source e-book reader built on Tauri. In versions prior to 0.11.16, EPUB chapter HTML is sanitized with DOMPurify using a configuration that forbade only the <script> tag (FORBID_TAG",
-        "published": "2026-08-30T14:17:04.193"
-      },
-      {
-        "cve_id": "CVE-2026-82641",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "keploy versions 3.1.0 through 3.6.25 bind the agent control-plane HTTP server to all interfaces without authentication, exposing endpoints that stream TLS session keys and traffic data. Attackers can ",
-        "published": "2026-08-30T14:17:04.020"
-      },
-      {
-        "cve_id": "CVE-2026-82645",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "AVideo (current commit e01e41ecc and earlier) exposes stream credentials through the plugin/Live/view/Live_restreams/getLiveKey.json.php endpoint. Supplying a 'token' request parameter waives both the",
-        "published": "2026-08-30T15:16:44.863"
-      },
-      {
-        "cve_id": "CVE-2026-82549",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "A vulnerability was identified in Linux Foundation Magma 1.9.0. This affects an unknown function of the component SecurityModeComplete Handler. Such manipulation leads to improper validation of integr",
-        "published": "2026-08-30T16:16:43.667"
-      },
-      {
-        "cve_id": "CVE-2026-82636",
-        "severity": "HIGH",
-        "base_score": 7.9,
-        "description": "Qubes OS before qubes-core-dom0-linux 4.3.22 allows OS command injection during a qvm-copy-to-vm call from dom0 to an attacker-controlled qube, because the \"system\" library function is used to process",
-        "published": "2026-08-30T14:17:03.310"
-      },
-      {
-        "cve_id": "CVE-2026-82638",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "jina-ai reader disables its private-address guard outside Google Cloud deployments, allowing unauthenticated attackers to perform server-side request forgery. Attackers can supply publicly resolvable ",
-        "published": "2026-08-30T14:17:03.610"
-      },
-      {
-        "cve_id": "CVE-2026-82639",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "NextChat versions from 2.15.8 through 2.16.1 contain an improper URL validation vulnerability in the proxy endpoint that allows attackers to obtain the server's OpenAI API key. The x-base-url header i",
-        "published": "2026-08-30T14:17:03.750"
-      },
-      {
-        "cve_id": "CVE-2026-82644",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "WWBN AVideo (current e01e41ecc and earlier) contains a brute-force rate limiting bypass in enforceRateLimit(), which protects login.json.php and 13 other endpoints. The function stores its attempt cou",
-        "published": "2026-08-30T15:16:44.727"
-      },
-      {
-        "cve_id": "CVE-2026-82655",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Admidio before 5.0.12 contains a blind SQL injection vulnerability in the relation_type_list parameter of lists_show.php that allows unauthenticated attackers to execute arbitrary SQL queries. Attacke",
-        "published": "2026-08-30T15:16:46.310"
-      },
-      {
-        "cve_id": "CVE-2026-82657",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Admidio before 5.0.12 fails to enforce login-only module restrictions in RSS feed endpoints for forum and announcements modules. Unauthenticated attackers can retrieve forum topics and announcements b",
-        "published": "2026-08-30T15:16:46.607"
+        "base_score": 7.6,
+        "description": "WaveSuite is affected by an insufficient role-based access control vulnerability in the CPB Log Files feature. Successful exploitation allows an authenticated low-privilege user to load pages restrict",
+        "published": "2026-08-31T07:17:42.610"
       },
       {
         "cve_id": "CVE-2026-56718",
@@ -367,6 +318,13 @@
         "base_score": 7.5,
         "description": "AJCloud AJY IPC firmware prior to version 01.10715.11.37 contains a path traversal vulnerability in the jdbhttpd web service that allows unauthenticated remote attackers to read arbitrary files with r",
         "published": "2026-08-30T21:16:34.160"
+      },
+      {
+        "cve_id": "CVE-2026-81624",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Undertow is a flexible performant web server used in JBoss EAP and WildFly. A flaw was found in how Undertow handles WebSocket connections. Specifically, certain configuration limits like message buff",
+        "published": "2026-08-31T09:17:03.453"
       },
       {
         "cve_id": "CVE-2026-82595",
@@ -381,6 +339,48 @@
         "base_score": 7.4,
         "description": "A vulnerability was identified in TOTOLINK NR1800X 9.1.0u.6681_B20230703. This affects the function setUssd of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument ussd leads to command inj",
         "published": "2026-08-31T01:16:50.190"
+      },
+      {
+        "cve_id": "CVE-2026-82608",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "A vulnerability was determined in Kamailio up to 5.5.0/6.0.7. This affects the function get_4bytes of the file src/modules/ims_registrar_scscf/cxdx_avp.c of the component AVP Handler. Executing a mani",
+        "published": "2026-08-31T03:16:43.293"
+      },
+      {
+        "cve_id": "CVE-2026-82598",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was determined in SeaCMS up to 13.6. Affected is the function parseIf of the file search.php of the component Template Engine. This manipulation of the argument searchtype causes code ",
+        "published": "2026-08-31T01:16:50.417"
+      },
+      {
+        "cve_id": "CVE-2026-82600",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A security flaw has been discovered in SeaCMS up to 13.6. Affected by this issue is some unknown functionality of the file /zyapi.php?ac=videolist. Performing a manipulation of the argument ids result",
+        "published": "2026-08-31T02:17:02.603"
+      },
+      {
+        "cve_id": "CVE-2026-82607",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was found in Cozmoslabs Profile Builder Plugin up to 3.16.1 on WordPress. The impacted element is the function wppb_ajax_simple_avatar of the file /wp-admin/admin-ajax.php of the compo",
+        "published": "2026-08-31T03:16:43.103"
+      },
+      {
+        "cve_id": "CVE-2026-82610",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A security flaw has been discovered in itsourcecode Online Medicine Delivery System 1.0. Affected is the function Employee::employeeAuthentication of the file /rider/login.php of the component Login I",
+        "published": "2026-08-31T04:17:26.273"
+      },
+      {
+        "cve_id": "CVE-2026-82611",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A weakness has been identified in itsourcecode Online Medicine Delivery System 1.0. Affected by this vulnerability is the function Customer::cusAuthentication of the file /login.php of the component C",
+        "published": "2026-08-31T04:17:28.317"
       }
     ]
   },
