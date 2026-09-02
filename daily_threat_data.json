@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-01T22:11:26.752538+00:00",
+  "generated_at": "2026-09-02T02:01:53.695896+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,7 +7,7 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 31,
+        "value": 30,
         "score": 3.0,
         "max": 3
       },
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1687,
-    "recent_30d_count": 31,
+    "recent_30d_count": 30,
     "recent": [
       {
         "cve_id": "CVE-2026-82078",
@@ -238,31 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 444,
+    "total": 492,
     "critical_count": 6,
-    "high_count": 23,
+    "high_count": 21,
     "cves": [
-      {
-        "cve_id": "CVE-2026-82971",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "A vulnerability was determined in QVidium Opera11 3.3.2a26-Ax4x-opera11. This affects an unknown part of the file /cgi-bin/net_tr.cgi of the component CGI Script. This manipulation of the argument ipa",
-        "published": "2026-08-31T23:16:35.460"
-      },
-      {
-        "cve_id": "CVE-2026-82954",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A vulnerability was detected in Dokploy up to 0.29.7. This issue affects the function writeTraefikConfigInPath of the file packages/server/src/utils/traefik/application.ts of the component Settings. T",
-        "published": "2026-08-31T22:17:34.080"
-      },
-      {
-        "cve_id": "CVE-2026-83524",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A security vulnerability has been detected in RedPort Optimizer wXa-203, Optimizer wXa-213 and Optimizer wXa-223 up to 20260704. This impacts the function exec of the file /xgatev1/system/datetime.php",
-        "published": "2026-08-31T23:16:35.650"
-      },
       {
         "cve_id": "CVE-2026-83772",
         "severity": "CRITICAL",
@@ -285,11 +264,25 @@
         "published": "2026-09-01T12:17:35.920"
       },
       {
-        "cve_id": "CVE-2026-82882",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Devtron through 2.2.0 fails to enforce authorization checks on the GET /orchestrator/api-token/webhook endpoint, allowing authenticated users to retrieve admin API tokens. Attackers with any authentic",
-        "published": "2026-08-31T22:17:31.940"
+        "cve_id": "CVE-2026-18765",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Teracity Software Technologies Inc. E-OSB allows SQL Injection.\n\nThis issue affects E-OSB: before ",
+        "published": "2026-09-01T13:18:11.923"
+      },
+      {
+        "cve_id": "CVE-2026-51743",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Incorrect access control in the guest_wifi_sync function of TOTOLINK T6 4.1.5cu.748_B20211015 allows unauthenticated attackers to disable guest virtual AP interfaces via sending a crafted MQTT message",
+        "published": "2026-09-01T13:19:45.280"
+      },
+      {
+        "cve_id": "CVE-2026-84200",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "Kyverno versions v1.9.0 through v1.12.7 contain a policy exception handling flaw. When a policy in enforce mode is combined with two PolicyExceptions, the less restrictive exception takes precedence, ",
+        "published": "2026-09-01T12:17:49.540"
       },
       {
         "cve_id": "CVE-2026-19806",
@@ -313,11 +306,18 @@
         "published": "2026-09-01T12:17:47.113"
       },
       {
-        "cve_id": "CVE-2026-77348",
+        "cve_id": "CVE-2026-58575",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Wallos is an open-source, self-hostable personal subscription tracker. Prior to version 5.0.0, the fix for CVE-2026-33407 (GHSA-hhjq-82f8-m6rc, \"SSRF via HTTP Proxy Environment Variable\") hardened end",
-        "published": "2026-08-31T22:17:20.317"
+        "base_score": 8.8,
+        "description": "Dell PowerStore contains an Authentication Bypass by Spoofing vulnerability. An authenticated attacker could potentially exploit this vulnerability to escalate privileges to Administrator.",
+        "published": "2026-09-01T13:19:52.303"
+      },
+      {
+        "cve_id": "CVE-2026-79683",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Dell PowerStore contains a Protection Mechanism Failure vulnerability. An authenticated user with limited privileges could potentially exploit this vulnerability to write attacker-controlled content t",
+        "published": "2026-09-01T13:19:59.457"
       },
       {
         "cve_id": "CVE-2026-84187",
@@ -348,18 +348,25 @@
         "published": "2026-09-01T10:17:13.160"
       },
       {
-        "cve_id": "CVE-2026-82393",
+        "cve_id": "CVE-2026-84195",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "pnpm is a package manager. Prior to 10.34.5 and 11.11.0, pnpm accepts a scoped path traversal in a tarball dependency's package.json manifest name because pnpm11/resolving/npm-resolver/src/pickPackage",
-        "published": "2026-08-31T22:17:22.353"
+        "base_score": 7.7,
+        "description": "Kyverno before 1.16.4 automatically attaches the admission controller's ServiceAccount token to outbound HTTP requests in apiCall service mode without explicit authorization headers. Attackers can exf",
+        "published": "2026-09-01T12:17:49.130"
       },
       {
-        "cve_id": "CVE-2026-82397",
+        "cve_id": "CVE-2026-84196",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Tornado is a Python web framework and asynchronous networking library. Prior to 6.5.8, Tornado parses application/x-www-form-urlencoded request bodies with urllib.parse.parse_qs in tornado/escape.py w",
-        "published": "2026-08-31T22:17:22.920"
+        "base_score": 7.7,
+        "description": "Kyverno before 1.18.0 contains a server-side request forgery vulnerability in apiCall.service.url that allows authenticated users to send arbitrary HTTP requests by injecting user-controlled input thr",
+        "published": "2026-09-01T12:17:49.270"
+      },
+      {
+        "cve_id": "CVE-2026-84199",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "Kyverno before 1.16.2 contains a server-side request forgery (SSRF) vulnerability in the APICall feature. The URL field in a Policy's ServiceCall configuration is not validated, so a user with namespa",
+        "published": "2026-09-01T12:17:49.407"
       },
       {
         "cve_id": "CVE-2026-19952",
@@ -374,13 +381,6 @@
         "base_score": 7.5,
         "description": "Improper neutralization of special elements used in an OS command in yast2-samba-client allows an attacker who controls the content of an Active Directory directory tree - a rogue domain controller, o",
         "published": "2026-09-01T10:17:12.993"
-      },
-      {
-        "cve_id": "CVE-2026-84059",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "A flaw has been found in ICP DAS UA-2200 and UA-5200 up to 20260704. The affected element is the function ArmAngstromInstructionSet of the file /CGI?RestApi=SetHostname. Executing a manipulation of th",
-        "published": "2026-09-01T11:16:45.493"
       }
     ]
   },
