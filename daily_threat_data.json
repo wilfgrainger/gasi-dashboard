@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T15:38:15.343424+00:00",
+  "generated_at": "2026-09-02T19:05:54.059258+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 30,
+        "value": 37,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
+        "value": 6,
         "score": 2.5,
         "max": 3
       },
@@ -32,9 +32,79 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1687,
-    "recent_30d_count": 30,
+    "total_catalog_count": 1694,
+    "recent_30d_count": 37,
     "recent": [
+      {
+        "cve_id": "CVE-2026-59822",
+        "vendor": "BerriAI",
+        "product": "LiteLLM",
+        "name": "BerriAI LiteLLM Improper Authentication Vulnerability",
+        "date_added": "2026-09-02",
+        "due_date": "2026-09-16",
+        "description": "BerriAI LiteLLM contains an improper authentication vulnerability in the MCP Streamable HTTP endpoint that could allow an unauthenticated attacker to establish an authenticated MCP session using an ar",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-48710",
+        "vendor": "Kludex",
+        "product": "Starlette",
+        "name": "Kludex Starlette HTTP Request/Response Smuggling Vulnerability",
+        "date_added": "2026-09-02",
+        "due_date": "2026-09-16",
+        "description": "Kludex Starlette contains a HTTP request/response smuggling vulnerability that could allow attackers to inject paths into the host part, prepending the actual path leading to issues such as authentica",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-49869",
+        "vendor": "Kestra",
+        "product": "Kestra OSS",
+        "name": "Kestra OSS OS Command Injection Vulnerability",
+        "date_added": "2026-09-02",
+        "due_date": "2026-09-05",
+        "description": "Kestra OSS contains an OS command injection vulnerability that could allow an unauthenticated remote attacker to create and execute arbitrary workflows without credentials.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-82329",
+        "vendor": "JFrog",
+        "product": "Artifactory",
+        "name": "JFrog Artifactory Improper Authentication Vulnerability",
+        "date_added": "2026-09-02",
+        "due_date": "2026-09-05",
+        "description": "JFrog Artifactory contains an improper authentication vulnerability that under default configuration can allow an unauthenticated attacker with network access to obtain administrative privileges. ",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-9586",
+        "vendor": "Sangoma",
+        "product": "Switchvox",
+        "name": "Sangoma Switchvox SQL Injection Vulnerability",
+        "date_added": "2026-09-02",
+        "due_date": "2026-09-05",
+        "description": "Sangoma Switchvox contains a SQL injection vulnerability which allows an unauthenticated remote attacker to execute arbitrary SQL statements against the backend PostgreSQL database using a single craf",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-83548",
+        "vendor": "SonicWall",
+        "product": "SMA1000 Appliances",
+        "name": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
+        "date_added": "2026-09-02",
+        "due_date": "2026-09-05",
+        "description": "SonicWall SMA1000 Appliances contains a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to gain unauthorized access to sensitive functionality and perform ",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-83549",
+        "vendor": "SonicWall",
+        "product": "SMA1000 Appliances",
+        "name": "SonicWall SMA1000 Appliances OS Command Injection Vulnerability",
+        "date_added": "2026-09-02",
+        "due_date": "2026-09-05",
+        "description": "SonicWall SMA1000 Appliances contains an OS command injection vulnerability that could enable a remote authenticated attacker as administrator to execute arbitrary OS commands, resulting in remote cod",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-82078",
         "vendor": "PaperCut",
@@ -164,104 +234,41 @@
         "due_date": "2026-08-27",
         "description": "Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-in contain an improper access control vulnerability that can result in unauthorized creation, deletion or modification access to critical data ",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-73570",
-        "vendor": "Synacor",
-        "product": "Zimbra Collaboration Suite (ZCS)",
-        "name": "Zimbra Collaboration Suite (ZCS) OS Command Injection Vulnerability",
-        "date_added": "2026-08-21",
-        "due_date": "2026-08-24",
-        "description": "Zimbra Collaboration Suite (ZCS) contains an OS command injection vulnerability which could allow an unauthenticated attacker to send specially crafted SMTP requests that may result in execution of ar",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-72530",
-        "vendor": "TrueConf",
-        "product": "Server",
-        "name": "TrueConf Server Code Injection Vulnerability",
-        "date_added": "2026-08-20",
-        "due_date": "2026-09-03",
-        "description": "TrueConf Server contains a code injection vulnerability that could allow an unauthorized remote attacker with network access via port 4307/TCP to use a specially crafted script to break out of the iso",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-72529",
-        "vendor": "TrueConf",
-        "product": "Server",
-        "name": "TrueConf Server Missing Authentication for Critical Function Vulnerability",
-        "date_added": "2026-08-20",
-        "due_date": "2026-08-23",
-        "description": "TrueConf Server contains a missing authentication for critical function vulnerability which could allow a remote unauthorized attacker with network access via port 4307/TCP to execute an arbitrary scr",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-64849",
-        "vendor": "MLflow",
-        "product": "MLflow",
-        "name": "MLflow Server-Side Request Forgery Vulnerability",
-        "date_added": "2026-08-19",
-        "due_date": "2026-09-02",
-        "description": "MLflow contains a server-side request forgery vulnerability that can allow attackers to reach internal or cloud metadata services and receive response_status and response_body.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-33824",
-        "vendor": "Microsoft",
-        "product": "Internet Key Exchange (IKE) Service Extensions",
-        "name": "Microsoft Internet Key Exchange (IKE) Service Extensions Double Free Vulnerability",
-        "date_added": "2026-08-18",
-        "due_date": "2026-08-21",
-        "description": "Microsoft Internet Key Exchange (IKE) Service Extensions contains a double free vulnerability that could enable remote code execution.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-59310",
-        "vendor": "Broadcom",
-        "product": "VMware vCenter",
-        "name": "Broadcom VMware vCenter Path Traversal Vulnerability",
-        "date_added": "2026-08-18",
-        "due_date": "2026-08-21",
-        "description": "Broadcom VMware vCenter contains a path traversal vulnerability which could allow a threat actor with network access to vCenter to execute arbitrary code.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-55040",
-        "vendor": "Microsoft",
-        "product": "SharePoint",
-        "name": "Microsoft SharePoint Weak Authentication Vulnerability",
-        "date_added": "2026-08-18",
-        "due_date": "2026-08-21",
-        "description": "Microsoft SharePoint contains a weak authentication vulnerability which allows an unauthorized attacker to bypass a security feature over a network.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 468,
-    "critical_count": 5,
-    "high_count": 52,
+    "total": 496,
+    "critical_count": 6,
+    "high_count": 35,
     "cves": [
+      {
+        "cve_id": "CVE-2026-76657",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Vulnerabilities have been identified in the API of HPE Networking Fabric Composer that could potentially allow an unauthenticated remote attacker to circumvent existing authentication controls. Succes",
+        "published": "2026-09-01T20:17:22.990"
+      },
+      {
+        "cve_id": "CVE-2026-76658",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "A vulnerability has been identified in the SSH daemon of HPE Networking Fabric Composer that could allow an unauthenticated remote attacker to gain administrative access to vulnerable AFC hosts. Succe",
+        "published": "2026-09-01T20:17:23.097"
+      },
+      {
+        "cve_id": "CVE-2026-73749",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Multiple vulnerabilities exist in a daemon of AOS-CX that may allow for improper processing of malformed input. An unauthenticated remote attacker could exploit these vulnerabilities by sending specia",
+        "published": "2026-09-01T21:18:41.430"
+      },
       {
         "cve_id": "CVE-2026-19766",
         "severity": "CRITICAL",
         "base_score": 9.6,
         "description": "An authentication bypass vulnerability exists in the underlying operating system of HPE Networking Fabric Composer. Successful exploitation could allow an unauthenticated adjacent attacker to execute ",
         "published": "2026-09-01T20:17:12.760"
-      },
-      {
-        "cve_id": "CVE-2026-18931",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Use of Hard-coded Credentials vulnerability in TMT Machine Industry and Trade Ltd. Co. Talassoft Industrial Management Software allows Retrieve Embedded Sensitive Data.\n\nThis issue affects Talassoft I",
-        "published": "2026-09-01T16:16:54.243"
-      },
-      {
-        "cve_id": "CVE-2026-79687",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "Dell PowerStore SDNAS contains a Missing Authentication for Critical Function vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leading to Fil",
-        "published": "2026-09-01T16:17:20.160"
       },
       {
         "cve_id": "CVE-2026-73700",
@@ -276,48 +283,6 @@
         "base_score": 9.0,
         "description": "An unauthenticated remote code execution vulnerability exists in the underlying operating system of HPE Networking Fabric Composer and could be exploited if certain preconditions outside of the attack",
         "published": "2026-09-01T20:17:17.453"
-      },
-      {
-        "cve_id": "CVE-2026-10195",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The FS-Poster plugin for WordPress is vulnerable to Remote Code Execution in versions up to and including 8.0.1. This is due to insufficient input sanitization of the FFmpeg path parameter before pass",
-        "published": "2026-09-01T16:16:47.467"
-      },
-      {
-        "cve_id": "CVE-2026-58567",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Dell PowerStore contains an OS Command Injection vulnerability. An authenticated user with limited privileges could potentially exploit this vulnerability to execute arbitrary commands with root privi",
-        "published": "2026-09-01T16:17:06.240"
-      },
-      {
-        "cve_id": "CVE-2026-79682",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Dell PowerStore contains a Command Injection vulnerability. An authenticated user with limited privileges could potentially exploit this vulnerability to execute arbitrary commands with root privilege",
-        "published": "2026-09-01T16:17:19.557"
-      },
-      {
-        "cve_id": "CVE-2026-84202",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "ModelScope uses PyYAML's unsafe yaml.Loader to parse model configuration files, allowing arbitrary code execution through Python object construction tags. Attackers can craft malicious model repositor",
-        "published": "2026-09-01T16:17:34.450"
-      },
-      {
-        "cve_id": "CVE-2026-84268",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw was found in the SFTP backend in gvfs. When mounting a share and reading a file, a malicious SFTP server can cause read_reply() to process a length that exceeds the size requested by the client",
-        "published": "2026-09-01T16:17:37.563"
-      },
-      {
-        "cve_id": "CVE-2026-58566",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Dell PowerStore, an Incorrect Authorization vulnerability. A low privileged attacker with remote access could potentially exploit this vulnerability, leading to Elevation of privileges.",
-        "published": "2026-09-01T17:17:31.507"
       },
       {
         "cve_id": "CVE-2026-72649",
@@ -353,6 +318,41 @@
         "base_score": 8.8,
         "description": "An arbitrary file write vulnerability in the API of HPE Networking Fabric Composer could allow an authenticated low privilege operator user to escalate privileges. Successful exploitation of this vuln",
         "published": "2026-09-01T20:17:17.870"
+      },
+      {
+        "cve_id": "CVE-2026-71981",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Cypht before 2.12.2 contains a PHP object injection vulnerability that allows authenticated attackers to execute arbitrary operating system commands by supplying a crafted PHP object graph in the back",
+        "published": "2026-09-01T21:18:36.310"
+      },
+      {
+        "cve_id": "CVE-2026-73750",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Vulnerabilities exist in the authentication module that may improperly process malformed or truncated input. An authenticated remote attacker could exploit these vulnerabilities by providing specially",
+        "published": "2026-09-01T21:18:41.540"
+      },
+      {
+        "cve_id": "CVE-2026-73751",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "An authenticated user with low-privileged access could submit crafted input through the web-based management interface to execute arbitrary commands on the underlying operating system.",
+        "published": "2026-09-01T21:18:41.647"
+      },
+      {
+        "cve_id": "CVE-2026-73752",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "An unauthenticated arbitrary file write vulnerability exists in an API endpoint of AOS-CX. Successful exploitation of this vulnerability allows an attacker to write arbitrary files to the underlying o",
+        "published": "2026-09-01T21:18:41.757"
+      },
+      {
+        "cve_id": "CVE-2026-73753",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Exploitation through affected command-line operations could allow an authenticated low-privileged user to execute arbitrary commands as a privileged user on the underlying operating system.",
+        "published": "2026-09-01T21:18:41.863"
       },
       {
         "cve_id": "CVE-2026-73706",
