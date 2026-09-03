@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-03T02:06:22.543871+00:00",
+  "generated_at": "2026-09-03T08:23:29.887846+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 8,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,23 +238,23 @@
     ]
   },
   "nvd": {
-    "total": 313,
-    "critical_count": 4,
-    "high_count": 36,
+    "total": 248,
+    "critical_count": 8,
+    "high_count": 22,
     "cves": [
       {
-        "cve_id": "CVE-2026-9055",
+        "cve_id": "CVE-2026-4357",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Booking for Appointments and Events Calendar \u2013 Amelia (Premium) plugin for WordPress is vulnerable to Privilege Escalation in versions 8.0 - 9.6.2. This is due to insufficient validation of the at",
-        "published": "2026-09-02T05:17:10.937"
+        "base_score": 10.0,
+        "description": "The Embed HTML5 Game WordPress plugin through 1.3 does not properly restrict who can upload files via the plugin, as well as what can be uploaded, making it possible for unauthenticated attackers to u",
+        "published": "2026-09-02T15:17:38.413"
       },
       {
-        "cve_id": "CVE-2026-78657",
+        "cve_id": "CVE-2026-77009",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The SigmaForms Pro \u2013 AI Generated Forms plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the delete_submission_files function in all versions u",
-        "published": "2026-09-02T06:17:18.260"
+        "base_score": 9.9,
+        "description": "The WatchMan-Site7 WordPress plugin through 4.2.0 does not restrict access to its debugging console, which executes user-supplied PHP code, allowing any authenticated user, such as a subscriber, to ru",
+        "published": "2026-09-02T15:17:39.410"
       },
       {
         "cve_id": "CVE-2026-81294",
@@ -264,6 +264,20 @@
         "published": "2026-09-02T12:17:12.783"
       },
       {
+        "cve_id": "CVE-2026-84795",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Craft CMS before 5.10.11 fails to validate the admin flag during user registration, allowing it to persist from deactivated admin accounts. Attackers can register with a deactivated admin's email addr",
+        "published": "2026-09-02T12:17:16.093"
+      },
+      {
+        "cve_id": "CVE-2025-9314",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Developer Tools WordPress plugin through 1.1.3 contains an unauthenticated arbitrary file upload vulnerability in the bundled SWFUpload component",
+        "published": "2026-09-02T15:17:37.127"
+      },
+      {
         "cve_id": "CVE-2026-81286",
         "severity": "CRITICAL",
         "base_score": 9.3,
@@ -271,46 +285,18 @@
         "published": "2026-09-02T12:17:12.400"
       },
       {
-        "cve_id": "CVE-2026-84715",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "FeatherPanel versions before 1.3.7.10 fail to validate permissions in the SubuserController updateSubuser handler, allowing authenticated subusers to modify their own permission records. A subuser wit",
-        "published": "2026-09-02T02:17:20.760"
+        "cve_id": "CVE-2026-73475",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Incorrect Authorization vulnerability in Drupal Commerce PayPal allows Forceful Browsing. This issue affects Commerce PayPal versions: from 0.0.0 to 1.12.0, from 2.0.0 to 2.1.3.",
+        "published": "2026-09-02T13:18:08.300"
       },
       {
-        "cve_id": "CVE-2026-14357",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The DevKit Pro plugin for WordPress is vulnerable to Missing Authorization in versions up to, and including, 2.3.0. This is due to a missing capability check and missing nonce validation in the DPDEV_",
-        "published": "2026-09-02T06:17:16.110"
-      },
-      {
-        "cve_id": "CVE-2026-19116",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The User Frontend  WordPress plugin before 4.3.11 does not prevent user-supplied field values from being deserialized when a submitted post is reopened in its frontend editing form, allowing authentic",
-        "published": "2026-09-02T06:17:16.643"
-      },
-      {
-        "cve_id": "CVE-2026-81737",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The FAQ Builder AYS WordPress plugin before 1.8.5 does not sanitize or escape content submitted by unauthenticated visitors before storing it and outputting it in an admin area page, and the escaping ",
-        "published": "2026-09-02T06:17:19.667"
-      },
-      {
-        "cve_id": "CVE-2026-81807",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Simple Ajax Chat  WordPress plugin before 20260827 does not escape chat message content before rendering it, allowing unauthenticated users to inject arbitrary HTML attributes into the page and ru",
-        "published": "2026-09-02T06:17:19.773"
-      },
-      {
-        "cve_id": "CVE-2026-14828",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Zohocorp ManageEngine Password Manager Pro versions before 13235, PAM360 versions before 8561, and Access Manager Plus versions before 4405 are vulnerable to an authenticated SQL Injection vulnerabili",
-        "published": "2026-09-02T08:16:42.833"
+        "cve_id": "CVE-2026-84803",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "SiYuan before v3.8.2 contains a stored cross-site scripting vulnerability in asset serving due to an incomplete extension blocklist that misses script-capable file types. Attackers can upload files wi",
+        "published": "2026-09-02T12:17:17.183"
       },
       {
         "cve_id": "CVE-2026-81283",
@@ -348,39 +334,53 @@
         "published": "2026-09-02T12:17:14.927"
       },
       {
-        "cve_id": "CVE-2024-35585",
+        "cve_id": "CVE-2026-84796",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Oxford Nanopore MinKNOW before 24.06 relies on a client's source IP address for authentication.",
-        "published": "2026-09-02T05:17:10.313"
+        "base_score": 8.8,
+        "description": "Craft CMS versions before 5.10.11 contain a site scope bypass vulnerability in GraphQL entry mutation resolvers that fail to validate siteId through ArgumentManager::prepareArguments(). Attackers with",
+        "published": "2026-09-02T12:17:16.227"
       },
       {
-        "cve_id": "CVE-2026-14982",
+        "cve_id": "CVE-2026-84801",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The WP File Download plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the delete function in all versions. This makes it possible for authentic",
-        "published": "2026-09-02T03:16:47.663"
+        "base_score": 8.8,
+        "description": "Craft CMS versions before 5.10.11 fail to validate admin status in the actionGetPasswordResetUrl endpoint, allowing non-admin users with administrateUsers permission to mint password reset URLs for ad",
+        "published": "2026-09-02T12:17:16.910"
       },
       {
-        "cve_id": "CVE-2026-12526",
+        "cve_id": "CVE-2025-15485",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Advanced Custom Fields: Extended WordPress plugin before 0.9.2.7 does not verify that the requester is authorized to edit the targeted user account in the update-user action of its front-end Forms",
-        "published": "2026-09-02T06:17:15.817"
+        "base_score": 8.2,
+        "description": "The Auto x LINE WordPress plugin through 1.0.0 does not have authorization checks in some of its REST endpoints, allowing unauthenticated users to call them and update the plugin settings, clear logs ",
+        "published": "2026-09-02T15:17:36.450"
       },
       {
-        "cve_id": "CVE-2026-80467",
+        "cve_id": "CVE-2026-19219",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "The Advanced Custom Fields: Extended WordPress plugin before 0.9.2.7 does not restrict the role submitted through its front-end user forms to the roles the form actually offers, and its safeguard agai",
-        "published": "2026-09-02T06:17:18.487"
+        "description": "In Progress\u00ae Telerik\u00ae UI for AJAX prior to v2026.3.812, insufficient integrity protection of dialog request parameters used by the RadEditor file browser may allow an attacker who has obtained certain",
+        "published": "2026-09-02T11:17:19.270"
       },
       {
-        "cve_id": "CVE-2026-82183",
+        "cve_id": "CVE-2026-18672",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The OAuth Single Sign On  WordPress plugin before 7.0.1 does not verify the identity assertion returned by its Steam single sign-on flow, allowing unauthenticated attackers to log in as an arbitrary n",
-        "published": "2026-09-02T06:17:19.987"
+        "base_score": 7.5,
+        "description": "In Progress\u00ae Telerik\u00ae UI for AJAX prior to v2026.3.812, insufficient validation of client-supplied state in RadImageEditor may allow an attacker to influence which file is returned by the control's im",
+        "published": "2026-09-02T11:17:18.970"
+      },
+      {
+        "cve_id": "CVE-2026-81774",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Unauthenticated Sensitive Data Exposure in WooCommerce Product Attachment <= 2.3.3 versions.",
+        "published": "2026-09-02T12:17:13.413"
+      },
+      {
+        "cve_id": "CVE-2026-76759",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "Vulnerability in Drupal Screenshot. This issue affects Screenshot versions: *.*.",
+        "published": "2026-09-02T13:18:11.177"
       }
     ]
   },
