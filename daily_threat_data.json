@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-03T15:29:11.808780+00:00",
+  "generated_at": "2026-09-03T18:58:38.990437+00:00",
   "threat_score": {
-    "score": 6.5,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
-        "score": 2.5,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -238,38 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 279,
-    "critical_count": 7,
-    "high_count": 40,
+    "total": 262,
+    "critical_count": 1,
+    "high_count": 18,
     "cves": [
-      {
-        "cve_id": "CVE-2026-53611",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Looking Glass is a modern, stateless network-diagnostic platform \u2014 a single self-contained Go binary that fronts a fleet of routers over SSH and exposes ping / traceroute / BGP lookups through a gRPC ",
-        "published": "2026-09-02T16:17:18.127"
-      },
-      {
-        "cve_id": "CVE-2026-20212",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A vulnerability in the Silicon One integration for Cisco Nexus 9000 Series Switches could allow an unauthenticated, remote attacker to execute code with&nbsp;root privileges.\r\n\r\nThis vulnerability exi",
-        "published": "2026-09-02T17:17:31.547"
-      },
-      {
-        "cve_id": "CVE-2026-20274",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco IOS XR Software engineering team has conducted a comprehensive internal security review. This review resulted",
-        "published": "2026-09-02T17:17:32.630"
-      },
-      {
-        "cve_id": "CVE-2026-20279",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco IOS XR Software engineering team has conducted a comprehensive internal security review. This review resulted",
-        "published": "2026-09-02T17:17:33.420"
-      },
       {
         "cve_id": "CVE-2026-19117",
         "severity": "CRITICAL",
@@ -278,109 +250,137 @@
         "published": "2026-09-02T19:17:16.490"
       },
       {
-        "cve_id": "CVE-2026-53649",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Joro is a web exploitation framework. Prior to version 1.1.1, Joro's default proxy mode exposes a local API on 127.0.0.1:9090 that performs no authentication and applies a wildcard CORS policy. Becaus",
-        "published": "2026-09-02T18:19:59.973"
-      },
-      {
-        "cve_id": "CVE-2026-66786",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A flaw was found in submariner. In cert-auth mode, the connection configuration is built using free-form strings from the Custom Resource Definition (CRD) without proper validation. A malicious cluste",
-        "published": "2026-09-02T18:21:10.517"
-      },
-      {
-        "cve_id": "CVE-2026-66842",
+        "cve_id": "CVE-2026-79679",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "BIG-IP has a vulnerability where an authenticated user of any role may be able to create administrative user accounts through an undisclosed request to Traffic Management User Interface (TMUI).\n\n\n\n\nIm",
-        "published": "2026-09-02T16:17:18.910"
+        "base_score": 8.7,
+        "description": "Use of Weak Credentials vulnerability in B&R Industrial Automation GmbH mapp Audit used in mapp Services.\n\nThis issue affects mapp Audit used in mapp Services: before 6.8.0.",
+        "published": "2026-09-03T13:06:10.430"
       },
       {
-        "cve_id": "CVE-2026-84645",
+        "cve_id": "CVE-2026-80465",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "In Jenkins 2.579 and earlier, LTS 2.568.2 and earlier, objects of types marked as storing their configuration in independent top-level configuration files in Jenkins (such as the global configuration ",
-        "published": "2026-09-02T16:17:29.193"
+        "base_score": 8.7,
+        "description": "A vulnerability has been identified in Mendix SAML (Mendix 10 compatible) (All versions < V4.2.3), Mendix SAML (Mendix 11 compatible) (All versions < V4.2.3), Mendix SAML (Mendix 9.24 compatible) (All",
+        "published": "2026-09-03T13:06:10.877"
       },
       {
-        "cve_id": "CVE-2026-84647",
+        "cve_id": "CVE-2021-38489",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "In Stapler 2107.v8dfcb_e8ed317 and earlier, except 2088.2093.vd7c3e58008a_6, included in Jenkins 2.579 and earlier, LTS 2.568.2 and earlier, Stapler does not restrict the types of objects that can be ",
-        "published": "2026-09-02T16:17:29.437"
+        "base_score": 8.2,
+        "description": "HDD password plaintext is stored in a UEFI variable.",
+        "published": "2026-09-03T13:04:10.943"
       },
       {
-        "cve_id": "CVE-2026-84648",
+        "cve_id": "CVE-2026-84381",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "In Jenkins 2.579 and earlier, LTS 2.568.2 and earlier, the system log viewer does not escape log record metadata (source, level, and timestamp) resulting in a stored cross-site scripting (XSS) vulnera",
-        "published": "2026-09-02T16:17:29.527"
+        "base_score": 8.1,
+        "description": "HTTPX2 is a next generation HTTP client for Python. Prior to 2.10.0, httpcore2 fails to start TLS in src/httpcore2/httpcore2/_sync/socks_proxy.py and src/httpcore2/httpcore2/_async/socks_proxy.py when",
+        "published": "2026-09-02T19:18:08.217"
       },
       {
-        "cve_id": "CVE-2026-84649",
+        "cve_id": "CVE-2026-73600",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "In Stapler 1839.ved17667b_a_eb_5 through 2107.v8dfcb_e8ed317 (both inclusive), except 2088.2093.vd7c3e58008a_6, included in Jenkins 2.447 through 2.579 (both inclusive), LTS 2.452.1 through 2.568.2 (b",
-        "published": "2026-09-02T16:17:29.620"
+        "base_score": 7.8,
+        "description": "Dell PowerProtect Data Manager, versions 20.2.0.0 and below, contain a stack buffer overflow vulnerability in file-level restore agent. A high privileged remote attacker could potentially exploit this",
+        "published": "2026-09-03T13:06:03.427"
       },
       {
-        "cve_id": "CVE-2026-84650",
+        "cve_id": "CVE-2026-76642",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "In Jenkins 2.579 and earlier, LTS 2.568.2 and earlier, transient fields cannot be excluded from deserialization, allowing attackers able to submit configuration updates to specify the values of transi",
-        "published": "2026-09-02T16:17:29.713"
+        "base_score": 7.8,
+        "description": "util-linux versions through 2.41.5 and 2.42.2 fail to check mount helper exit status before running post-mount hooks, allowing unprivileged users to execute privileged operations on pre-existing files",
+        "published": "2026-09-03T13:06:08.440"
       },
       {
-        "cve_id": "CVE-2026-84668",
+        "cve_id": "CVE-2023-20576",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Jenkins SAML Plugin 4.618.v441a_27fa_46d2 and earlier allows overwriting the SAML identity provider metadata file through Stapler data binding, allowing attackers to replace it with attacker-controlle",
-        "published": "2026-09-02T16:17:31.440"
+        "base_score": 7.7,
+        "description": "Insufficient Verification of Data Authenticity in AGESA\u2122 may allow an attacker to update SPI ROM data potentially resulting in denial of service or privilege escalation.",
+        "published": "2026-09-02T20:17:32.950"
       },
       {
-        "cve_id": "CVE-2026-84669",
+        "cve_id": "CVE-2026-84382",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A path traversal vulnerability in Jenkins Allure Plugin 2.35.2 and earlier allows attackers with Item/Read permission on jobs that publish Allure report results to read arbitrary files on the Jenkins ",
-        "published": "2026-09-02T16:17:31.537"
+        "base_score": 7.5,
+        "description": "HTTPX2 is a next generation HTTP client for Python. Prior to 2.12.0, the HTTPX2 content decoders in src/httpx2/httpx2/_decoders.py fully inflate each gzip, deflate, br, or zstd network chunk before it",
+        "published": "2026-09-02T19:18:08.353"
       },
       {
-        "cve_id": "CVE-2026-84670",
+        "cve_id": "CVE-2026-56855",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Jenkins Performance Plugin 1015.v09ca_52b_3370e and earlier does not restrict the classes that can be instantiated when deserializing cached performance reports stored in the build directory on the Je",
-        "published": "2026-09-02T16:17:31.640"
+        "base_score": 7.5,
+        "description": "Previously, after a channel has been established, a malicious peer could send crafted messages that would deadlock the entire connection. Now, we handle all RFC 4254 channel messages; global requests ",
+        "published": "2026-09-02T20:17:36.397"
       },
       {
-        "cve_id": "CVE-2026-84671",
+        "cve_id": "CVE-2026-78662",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Jenkins File Parameter Plugin 425.v3fa_801681b_5e and earlier allows writing files to arbitrary locations on the Jenkins controller file system through Stapler data binding, which can lead to remote c",
-        "published": "2026-09-02T16:17:31.737"
+        "base_score": 7.5,
+        "description": "Previously, a channel registered in the mux's chanList is not usable until it is established. A malicious peer was able flood the channel's incomingRequests, deadlocking the entire connection. Now, we",
+        "published": "2026-09-02T20:17:37.167"
       },
       {
-        "cve_id": "CVE-2026-84672",
+        "cve_id": "CVE-2026-84292",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Jenkins Microsoft Entra ID (previously Azure AD) Plugin 710.v0b_ff8e9cc2d2 and earlier grants Entra group permissions using both the group's unique object ID and its display name, allowing attackers w",
-        "published": "2026-09-02T16:17:31.833"
+        "base_score": 7.5,
+        "description": "fast-uri serializes the port component of a URI without validating it. When recomposing the authority, the userinfo and host components are escaped but the port is concatenated verbatim, so a port val",
+        "published": "2026-09-02T20:17:39.543"
       },
       {
-        "cve_id": "CVE-2026-84673",
+        "cve_id": "CVE-2026-84394",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Jenkins Customizable Header Plugin 295.v2544b_ca_19b_97 and earlier allows overwriting the plugin's appearance configuration through Stapler data binding, allowing attackers to configure a custom SVG ",
-        "published": "2026-09-02T16:17:31.940"
+        "base_score": 7.5,
+        "description": "fast-uri accepts a host that contains an unbalanced or misplaced authority bracket without reporting an error. A host that starts with an opening bracket but does not end with a closing bracket is nei",
+        "published": "2026-09-03T05:16:38.680"
       },
       {
-        "cve_id": "CVE-2026-20275",
+        "cve_id": "CVE-2026-84851",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "As part of Cisco's ongoing commitment to proactive security and product quality, the Cisco IOS XR Software engineering team has conducted a comprehensive internal security review. This review resulted",
-        "published": "2026-09-02T17:17:32.790"
+        "base_score": 7.5,
+        "description": "An uncontrolled recursion issue exists in Amazon Ion-C versions before 1.1.6 that might allow a remote unauthenticated actor to craft Ion data that exhausts the native call stack and crashes the appli",
+        "published": "2026-09-03T05:16:46.640"
+      },
+      {
+        "cve_id": "CVE-2023-20577",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "A heap overflow in SMM module may allow an attacker with access to a second vulnerability that enables writing to SPI flash, potentially resulting in arbitrary code execution.",
+        "published": "2026-09-02T20:17:34.093"
+      },
+      {
+        "cve_id": "CVE-2026-84841",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A security flaw has been discovered in tsi-coop tsi-dpdp-cms up to 0.5.0. This vulnerability affects unknown code. The manipulation results in client-side enforcement of server-side security. The atta",
+        "published": "2026-09-02T19:18:09.580"
+      },
+      {
+        "cve_id": "CVE-2026-82524",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "UnoPim before 2.1.5 contains an authenticated file upload vulnerability that allows authenticated administrators to upload arbitrary PHP files through the TinyMCE image upload endpoint due to missing ",
+        "published": "2026-09-02T20:17:39.210"
+      },
+      {
+        "cve_id": "CVE-2026-71220",
+        "severity": "HIGH",
+        "base_score": 7.0,
+        "description": "A stack out-of-bounds write vulnerability was found in gfs2-utils. In gfs2_edit, the di_height field from on-disk inode metadata is used as an array index without bounds checking, causing a stack buff",
+        "published": "2026-09-03T13:06:02.703"
+      },
+      {
+        "cve_id": "CVE-2026-71221",
+        "severity": "HIGH",
+        "base_score": 7.0,
+        "description": "A stack out-of-bounds write vulnerability was found in gfs2-utils. In savemeta, the height value from on-disk inode metadata is used as a loop bound without bounds checking, causing a stack buffer ove",
+        "published": "2026-09-03T13:06:02.887"
+      },
+      {
+        "cve_id": "CVE-2026-68860",
+        "severity": "MEDIUM",
+        "base_score": 6.8,
+        "description": "Dell PowerProtect Data Manager, versions 20.2.0.0 and below, contain a Reliance on Data/Memory Layout vulnerability. An unauthenticated remote attacker could potentially exploit this vulnerability, le",
+        "published": "2026-09-03T13:06:01.480"
       }
     ]
   },
