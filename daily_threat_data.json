@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-02T22:09:51.722993+00:00",
+  "generated_at": "2026-09-03T02:06:22.543871+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 37,
+        "value": 34,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 16,
-        "score": 3.0,
+        "value": 4,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1694,
-    "recent_30d_count": 37,
+    "recent_30d_count": 34,
     "recent": [
       {
         "cve_id": "CVE-2026-59822",
@@ -238,52 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 380,
-    "critical_count": 16,
-    "high_count": 38,
+    "total": 313,
+    "critical_count": 4,
+    "high_count": 36,
     "cves": [
-      {
-        "cve_id": "CVE-2026-83548",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "A Pre-authentication SSRF vulnerability exists in the SMA1000 Appliance Work Place interface due to an unintended alternate access path. A remote unauthenticated attacker could potentially exploit thi",
-        "published": "2026-09-01T22:17:13.170"
-      },
-      {
-        "cve_id": "CVE-2023-54391",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Proxmox Virtual Environment (VE) 7.0 through 8.0 contains an authentication bypass vulnerability in libpve-access-control before 8.0.4 that allows unauthenticated attackers to authenticate as any exis",
-        "published": "2026-09-01T22:17:10.283"
-      },
-      {
-        "cve_id": "CVE-2026-84372",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Predis is a flexible and feature-complete Redis and Valkey client for PHP. From version 3.0.0-RC1 until version 3.3.0, pipeline handling on aggregate cluster and replication connections reparses an al",
-        "published": "2026-09-01T22:17:18.987"
-      },
-      {
-        "cve_id": "CVE-2026-84637",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Malicious calendar invitations could use file URI attachments to launch local or network-hosted executables on Windows, bypassing Thunderbird's normal executable attachment protections. With the new i",
-        "published": "2026-09-01T22:17:19.597"
-      },
-      {
-        "cve_id": "CVE-2026-84480",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "WWBN AVideo fails to validate password recovery token expiration in userRecoverPassSave.json.php, allowing attackers to use expired tokens to reset account passwords indefinitely. Attackers who obtain",
-        "published": "2026-09-01T23:17:22.220"
-      },
-      {
-        "cve_id": "CVE-2026-84325",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Improper input validation in DataTransfer in Google Chrome prior to 152.0.7977.75 allowed a remote attacker leveraging social engineering to bypass system access restrictions via a co-installed app. (",
-        "published": "2026-09-02T00:18:27.340"
-      },
       {
         "cve_id": "CVE-2026-9055",
         "severity": "CRITICAL",
@@ -292,95 +250,137 @@
         "published": "2026-09-02T05:17:10.937"
       },
       {
-        "cve_id": "CVE-2026-84333",
+        "cve_id": "CVE-2026-78657",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in Dawn in Google Chrome on on Android prior to 152.0.7977.75 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severit",
-        "published": "2026-09-02T00:18:28.217"
+        "base_score": 9.8,
+        "description": "The SigmaForms Pro \u2013 AI Generated Forms plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the delete_submission_files function in all versions u",
+        "published": "2026-09-02T06:17:18.260"
       },
       {
-        "cve_id": "CVE-2026-84352",
+        "cve_id": "CVE-2026-81294",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in WebGL in Google Chrome on on Android prior to 152.0.7977.75 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severi",
-        "published": "2026-09-02T00:18:29.097"
+        "base_score": 9.8,
+        "description": "Unauthenticated Privilege Escalation in Authorizer <= 3.15.1 versions.",
+        "published": "2026-09-02T12:17:12.783"
       },
       {
-        "cve_id": "CVE-2026-84353",
+        "cve_id": "CVE-2026-81286",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in Shared Tab Groups in Google Chrome on on Android prior to 152.0.7977.75 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a cr",
-        "published": "2026-09-02T00:18:29.203"
+        "base_score": 9.3,
+        "description": "Unauthenticated SQL Injection in WCFM Marketplace <= 3.8.1 versions.",
+        "published": "2026-09-02T12:17:12.400"
       },
       {
-        "cve_id": "CVE-2026-84354",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Incorrect authorization in FileSystem in Google Chrome prior to 152.0.7977.75 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML p",
-        "published": "2026-09-02T00:18:29.310"
-      },
-      {
-        "cve_id": "CVE-2026-84639",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Triggering an error condition in certain MIME bodies would cause uninitialized memory to be used. This vulnerability was fixed in Thunderbird 155, Thunderbird 140.15, and Thunderbird 153.2.",
-        "published": "2026-09-01T22:17:19.700"
-      },
-      {
-        "cve_id": "CVE-2026-84479",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "WWBN AVideo (current e01e41ecc and earlier) makes three login-time security controls depend solely on the client-supplied User-Agent header. The isAVideoEncoder()/isAVideoMobileApp() checks match HTTP",
-        "published": "2026-09-01T23:17:22.083"
-      },
-      {
-        "cve_id": "CVE-2026-84699",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Team Password Manager before 14.184.308 fails to enforce authentication requirements in the local account password reset flow. Unauthenticated attackers can reset local account passwords and authentic",
-        "published": "2026-09-02T01:17:24.990"
-      },
-      {
-        "cve_id": "CVE-2026-75604",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "Next.js is a React framework for building full-stack web applications. From 13.4.0 until 15.5.24 and 16.3.3, Next.js applications using Pages Router or App Router without Cache Components on Windows-h",
-        "published": "2026-09-01T22:17:12.697"
-      },
-      {
-        "cve_id": "CVE-2026-84324",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "Use after free in Proxy in Google Chrome prior to 152.0.7977.75 allowed a remote attacker to execute arbitrary code outside the sandbox via crafted network traffic. (Chromium security severity: High)",
-        "published": "2026-09-02T00:18:27.230"
-      },
-      {
-        "cve_id": "CVE-2026-84482",
+        "cve_id": "CVE-2026-84715",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "WWBN AVideo through commit 9c39d8c8 contains a cross-site request forgery vulnerability in the get_domain() and isSameDomain() functions that fail to properly validate referer origins. Attackers can f",
-        "published": "2026-09-01T23:17:22.477"
+        "description": "FeatherPanel versions before 1.3.7.10 fail to validate permissions in the SubuserController updateSubuser handler, allowing authenticated subusers to modify their own permission records. A subuser wit",
+        "published": "2026-09-02T02:17:20.760"
       },
       {
-        "cve_id": "CVE-2026-84326",
+        "cve_id": "CVE-2026-14357",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Uninitialized resource in V8 in Google Chrome prior to 152.0.7977.75 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-09-02T00:18:27.447"
+        "description": "The DevKit Pro plugin for WordPress is vulnerable to Missing Authorization in versions up to, and including, 2.3.0. This is due to a missing capability check and missing nonce validation in the DPDEV_",
+        "published": "2026-09-02T06:17:16.110"
       },
       {
-        "cve_id": "CVE-2026-84347",
+        "cve_id": "CVE-2026-19116",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Use after free in WebRTC in Google Chrome prior to 152.0.7977.75 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
-        "published": "2026-09-02T00:18:28.550"
+        "description": "The User Frontend  WordPress plugin before 4.3.11 does not prevent user-supplied field values from being deserialized when a submitted post is reopened in its frontend editing form, allowing authentic",
+        "published": "2026-09-02T06:17:16.643"
       },
       {
-        "cve_id": "CVE-2026-84350",
+        "cve_id": "CVE-2026-81737",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Use after free in TabStrip in Google Chrome prior to 152.0.7977.75 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via UI Interaction. (Chromium s",
-        "published": "2026-09-02T00:18:28.873"
+        "description": "The FAQ Builder AYS WordPress plugin before 1.8.5 does not sanitize or escape content submitted by unauthenticated visitors before storing it and outputting it in an admin area page, and the escaping ",
+        "published": "2026-09-02T06:17:19.667"
+      },
+      {
+        "cve_id": "CVE-2026-81807",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Simple Ajax Chat  WordPress plugin before 20260827 does not escape chat message content before rendering it, allowing unauthenticated users to inject arbitrary HTML attributes into the page and ru",
+        "published": "2026-09-02T06:17:19.773"
+      },
+      {
+        "cve_id": "CVE-2026-14828",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Zohocorp ManageEngine Password Manager Pro versions before 13235, PAM360 versions before 8561, and Access Manager Plus versions before 4405 are vulnerable to an authenticated SQL Injection vulnerabili",
+        "published": "2026-09-02T08:16:42.833"
+      },
+      {
+        "cve_id": "CVE-2026-81283",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Subscriber PHP Object Injection in WP User Frontend <= 4.3.10 versions.",
+        "published": "2026-09-02T12:17:12.267"
+      },
+      {
+        "cve_id": "CVE-2026-81769",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Incorrect Privilege Assignment vulnerability in LiquidThemes Booking Hub allows Privilege Escalation.\n\nThis issue affects Booking Hub: from n/a through 1.3.1.",
+        "published": "2026-09-02T12:17:12.913"
+      },
+      {
+        "cve_id": "CVE-2026-81772",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Unauthenticated PHP Object Injection in Ninja Forms - Layout & Styles <= 3.0.31 versions.",
+        "published": "2026-09-02T12:17:13.287"
+      },
+      {
+        "cve_id": "CVE-2026-84764",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Unauthenticated Cross Site Request Forgery (CSRF) in Simply Schedule Appointments <= 1.6.12.23 versions.",
+        "published": "2026-09-02T12:17:14.800"
+      },
+      {
+        "cve_id": "CVE-2026-84770",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Unauthenticated Cross Site Request Forgery (CSRF) in Mang Board WP <= 2.3.8 versions.",
+        "published": "2026-09-02T12:17:14.927"
+      },
+      {
+        "cve_id": "CVE-2024-35585",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Oxford Nanopore MinKNOW before 24.06 relies on a client's source IP address for authentication.",
+        "published": "2026-09-02T05:17:10.313"
+      },
+      {
+        "cve_id": "CVE-2026-14982",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The WP File Download plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the delete function in all versions. This makes it possible for authentic",
+        "published": "2026-09-02T03:16:47.663"
+      },
+      {
+        "cve_id": "CVE-2026-12526",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The Advanced Custom Fields: Extended WordPress plugin before 0.9.2.7 does not verify that the requester is authorized to edit the targeted user account in the update-user action of its front-end Forms",
+        "published": "2026-09-02T06:17:15.817"
+      },
+      {
+        "cve_id": "CVE-2026-80467",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The Advanced Custom Fields: Extended WordPress plugin before 0.9.2.7 does not restrict the role submitted through its front-end user forms to the roles the form actually offers, and its safeguard agai",
+        "published": "2026-09-02T06:17:18.487"
+      },
+      {
+        "cve_id": "CVE-2026-82183",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The OAuth Single Sign On  WordPress plugin before 7.0.1 does not verify the identity assertion returned by its Steam single sign-on flow, allowing unauthenticated attackers to log in as an arbitrary n",
+        "published": "2026-09-02T06:17:19.987"
       }
     ]
   },
