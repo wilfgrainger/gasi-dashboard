@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-03T18:58:38.990437+00:00",
+  "generated_at": "2026-09-03T22:00:11.913684+00:00",
   "threat_score": {
-    "score": 5.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 2,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,16 +238,23 @@
     ]
   },
   "nvd": {
-    "total": 262,
-    "critical_count": 1,
-    "high_count": 18,
+    "total": 299,
+    "critical_count": 2,
+    "high_count": 14,
     "cves": [
       {
-        "cve_id": "CVE-2026-19117",
+        "cve_id": "CVE-2026-85031",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A vulnerability was found in TOTOLINK CP450 4.1.0. The impacted element is an unknown function of the file /cgi-bin/cstecgi.cgi. Performing a manipulation of the argument topicurl results in buffer ov",
+        "published": "2026-09-03T13:06:19.767"
+      },
+      {
+        "cve_id": "CVE-2026-85154",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Under specific conditions, an attacker can register an attacker-controlled FIDO2 credential against a target account and then authenticate as\nthat user. This issue affects on-premises deployments only",
-        "published": "2026-09-02T19:17:16.490"
+        "description": "WWBN AVideo contains an authentication failure vulnerability where the video_id_hash credential is a non-expiring, non-revocable bearer token that grants full administrator session access to the video",
+        "published": "2026-09-03T13:06:22.067"
       },
       {
         "cve_id": "CVE-2026-79679",
@@ -271,13 +278,6 @@
         "published": "2026-09-03T13:04:10.943"
       },
       {
-        "cve_id": "CVE-2026-84381",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "HTTPX2 is a next generation HTTP client for Python. Prior to 2.10.0, httpcore2 fails to start TLS in src/httpcore2/httpcore2/_sync/socks_proxy.py and src/httpcore2/httpcore2/_async/socks_proxy.py when",
-        "published": "2026-09-02T19:18:08.217"
-      },
-      {
         "cve_id": "CVE-2026-73600",
         "severity": "HIGH",
         "base_score": 7.8,
@@ -290,41 +290,6 @@
         "base_score": 7.8,
         "description": "util-linux versions through 2.41.5 and 2.42.2 fail to check mount helper exit status before running post-mount hooks, allowing unprivileged users to execute privileged operations on pre-existing files",
         "published": "2026-09-03T13:06:08.440"
-      },
-      {
-        "cve_id": "CVE-2023-20576",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Insufficient Verification of Data Authenticity in AGESA\u2122 may allow an attacker to update SPI ROM data potentially resulting in denial of service or privilege escalation.",
-        "published": "2026-09-02T20:17:32.950"
-      },
-      {
-        "cve_id": "CVE-2026-84382",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "HTTPX2 is a next generation HTTP client for Python. Prior to 2.12.0, the HTTPX2 content decoders in src/httpx2/httpx2/_decoders.py fully inflate each gzip, deflate, br, or zstd network chunk before it",
-        "published": "2026-09-02T19:18:08.353"
-      },
-      {
-        "cve_id": "CVE-2026-56855",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Previously, after a channel has been established, a malicious peer could send crafted messages that would deadlock the entire connection. Now, we handle all RFC 4254 channel messages; global requests ",
-        "published": "2026-09-02T20:17:36.397"
-      },
-      {
-        "cve_id": "CVE-2026-78662",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Previously, a channel registered in the mux's chanList is not usable until it is established. A malicious peer was able flood the channel's incomingRequests, deadlocking the entire connection. Now, we",
-        "published": "2026-09-02T20:17:37.167"
-      },
-      {
-        "cve_id": "CVE-2026-84292",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "fast-uri serializes the port component of a URI without validating it. When recomposing the authority, the userinfo and host components are escaped but the port is concatenated verbatim, so a port val",
-        "published": "2026-09-02T20:17:39.543"
       },
       {
         "cve_id": "CVE-2026-84394",
@@ -341,25 +306,39 @@
         "published": "2026-09-03T05:16:46.640"
       },
       {
-        "cve_id": "CVE-2023-20577",
+        "cve_id": "CVE-2026-85124",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "@fastify/http-proxy versions before 11.6.2 do not validate proxied HTTP request paths for backslash based dot-segments before forwarding them to the configured upstream. The plain HTTP request handler",
+        "published": "2026-09-03T13:06:21.773"
+      },
+      {
+        "cve_id": "CVE-2026-85150",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A NULL pointer dereference flaw was found in GStreamer's RTSP support library. The vulnerability occurs while parsing an Authorization or WWW-Authenticate header that uses Digest authentication. Speci",
+        "published": "2026-09-03T13:06:21.910"
+      },
+      {
+        "cve_id": "CVE-2026-85155",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "WWBN AVideo contains a SQL injection vulnerability in the sort column parameter of the get.json.php endpoint with APIName=channels that allows unauthenticated attackers to order results by arbitrary d",
+        "published": "2026-09-03T13:06:22.210"
+      },
+      {
+        "cve_id": "CVE-2026-85091",
         "severity": "HIGH",
         "base_score": 7.4,
-        "description": "A heap overflow in SMM module may allow an attacker with access to a second vulnerability that enables writing to SPI flash, potentially resulting in arbitrary code execution.",
-        "published": "2026-09-02T20:17:34.093"
+        "description": "zlib versions 1.3.1.2 through 1.3.2 contain a heap buffer overflow vulnerability in the gz_vacate() function when processing non-blocking gzwrite() operations with stale external buffer pointers. Atta",
+        "published": "2026-09-03T13:06:20.573"
       },
       {
-        "cve_id": "CVE-2026-84841",
+        "cve_id": "CVE-2026-85105",
         "severity": "HIGH",
         "base_score": 7.3,
-        "description": "A security flaw has been discovered in tsi-coop tsi-dpdp-cms up to 0.5.0. This vulnerability affects unknown code. The manipulation results in client-side enforcement of server-side security. The atta",
-        "published": "2026-09-02T19:18:09.580"
-      },
-      {
-        "cve_id": "CVE-2026-82524",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "UnoPim before 2.1.5 contains an authenticated file upload vulnerability that allows authenticated administrators to upload arbitrary PHP files through the TinyMCE image upload endpoint due to missing ",
-        "published": "2026-09-02T20:17:39.210"
+        "description": "A flaw has been found in NousResearch hermes-agent 0.18.0. Affected by this issue is the function _sess_nowait of the file s71.py of the component Session Management. This manipulation of the argument",
+        "published": "2026-09-03T13:06:21.250"
       },
       {
         "cve_id": "CVE-2026-71220",
@@ -381,6 +360,27 @@
         "base_score": 6.8,
         "description": "Dell PowerProtect Data Manager, versions 20.2.0.0 and below, contain a Reliance on Data/Memory Layout vulnerability. An unauthenticated remote attacker could potentially exploit this vulnerability, le",
         "published": "2026-09-03T13:06:01.480"
+      },
+      {
+        "cve_id": "CVE-2026-80253",
+        "severity": "MEDIUM",
+        "base_score": 6.8,
+        "description": "An improper physical access control issue exists in ShizenBox2 (dev-conf). If exploited, an attacker with physical access to the product may execute bootloader commands without authentication.",
+        "published": "2026-09-03T13:06:10.587"
+      },
+      {
+        "cve_id": "CVE-2021-43614",
+        "severity": "MEDIUM",
+        "base_score": 6.7,
+        "description": "Error in handling the PlatformLangCodes UEFI variable could cause a buffer overflow, leading to resource exhaustion and failure.",
+        "published": "2026-09-03T13:04:12.283"
+      },
+      {
+        "cve_id": "CVE-2026-85092",
+        "severity": "MEDIUM",
+        "base_score": 6.6,
+        "description": "LiME through 1.12.0 fails to validate the disk acquisition output path and does not use O_NOFOLLOW when opening the operator-supplied path parameter, allowing unprivileged local users to overwrite arb",
+        "published": "2026-09-03T13:06:20.720"
       }
     ]
   },
