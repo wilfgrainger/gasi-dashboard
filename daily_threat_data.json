@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T02:03:18.767278+00:00",
+  "generated_at": "2026-09-04T08:19:21.239519+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
+        "value": 3,
         "score": 2.0,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 360,
-    "critical_count": 2,
-    "high_count": 14,
+    "total": 409,
+    "critical_count": 3,
+    "high_count": 31,
     "cves": [
       {
         "cve_id": "CVE-2026-85031",
@@ -257,6 +257,20 @@
         "published": "2026-09-03T13:06:22.067"
       },
       {
+        "cve_id": "CVE-2026-80726",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nKVM: x86/mmu: WARN and clear role.invalid when creating a child shadow page\n\nExplicitly clear role.invalid when deriving a child sh",
+        "published": "2026-09-03T13:06:11.020"
+      },
+      {
+        "cve_id": "CVE-2026-80734",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nbtrfs: initialize inode mapping flags for cached inodes\n\n[BUG]\nWhen running generic/795 with 8K block size, 4K page size, the test\n",
+        "published": "2026-09-03T13:06:12.200"
+      },
+      {
         "cve_id": "CVE-2026-79679",
         "severity": "HIGH",
         "base_score": 8.7,
@@ -271,11 +285,53 @@
         "published": "2026-09-03T13:06:10.877"
       },
       {
+        "cve_id": "CVE-2026-80745",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nregulator: fp9931: Fix VPOS/VNEG voltage selector table\n\nThe VPOSNEG_table[] mapping does not match the FP9931 datasheet.\n\nThe data",
+        "published": "2026-09-03T13:06:14.007"
+      },
+      {
+        "cve_id": "CVE-2026-80750",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\npmdomain: mediatek: fix remaining %pOF after of_node_put()\n\nscpsys_get_bus_protection_legacy() looks up several legacy bus\nprotecti",
+        "published": "2026-09-03T13:06:14.650"
+      },
+      {
+        "cve_id": "CVE-2026-80752",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nInput: psxpad-spi - set driver data before use\n\npsxpad_spi_suspend() retrieves the controller state with\nspi_get_drvdata(), but pro",
+        "published": "2026-09-03T13:06:14.883"
+      },
+      {
+        "cve_id": "CVE-2026-80753",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\novpn: run deferred work on a module-owned workqueue\n\novpn queues several work items whose callbacks execute module text.\nThese work",
+        "published": "2026-09-03T13:06:15.010"
+      },
+      {
         "cve_id": "CVE-2021-38489",
         "severity": "HIGH",
         "base_score": 8.2,
         "description": "HDD password plaintext is stored in a UEFI variable.",
         "published": "2026-09-03T13:04:10.943"
+      },
+      {
+        "cve_id": "CVE-2026-85160",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "AVideo through commit c91b5975d contains a cross-site request forgery and path traversal vulnerability in stopLive.php that allows attackers to delete directories by exploiting missing token validatio",
+        "published": "2026-09-03T13:06:22.967"
+      },
+      {
+        "cve_id": "CVE-2026-80747",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdkfd: Add bounds check for CRAT subtype length\n\nThe CRAT parser validates that the subtype header fits within the image,\nbut ",
+        "published": "2026-09-03T13:06:14.303"
       },
       {
         "cve_id": "CVE-2026-73600",
@@ -292,95 +348,39 @@
         "published": "2026-09-03T13:06:08.440"
       },
       {
-        "cve_id": "CVE-2026-84394",
+        "cve_id": "CVE-2026-80731",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "fast-uri accepts a host that contains an unbalanced or misplaced authority bracket without reporting an error. A host that starts with an opening bracket but does not end with a closing bracket is nei",
-        "published": "2026-09-03T05:16:38.680"
+        "base_score": 7.8,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnet: remove CAP_SYS_RAWIO zero-padding in dev_validate_header\n\ndev_validate_header() reads dev->hard_header_len directly when\nzero-",
+        "published": "2026-09-03T13:06:11.707"
       },
       {
-        "cve_id": "CVE-2026-84851",
+        "cve_id": "CVE-2026-80732",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "An uncontrolled recursion issue exists in Amazon Ion-C versions before 1.1.6 that might allow a remote unauthenticated actor to craft Ion data that exhausts the native call stack and crashes the appli",
-        "published": "2026-09-03T05:16:46.640"
+        "base_score": 7.8,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nata: pata_sl82c105: fix bridge revision use-after-free\n\npci_get_slot() returns a referenced PCI device. Commit 44c10138fd4b\n(\"PCI: ",
+        "published": "2026-09-03T13:06:11.900"
       },
       {
-        "cve_id": "CVE-2026-85124",
+        "cve_id": "CVE-2026-80736",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "@fastify/http-proxy versions before 11.6.2 do not validate proxied HTTP request paths for backslash based dot-segments before forwarding them to the configured upstream. The plain HTTP request handler",
-        "published": "2026-09-03T13:06:21.773"
+        "base_score": 7.8,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nthunderbolt: Fix bandwidth group reservation indexing\n\nValid bandwidth group IDs range from 1 through MAX_GROUPS, while Group\nID 0 ",
+        "published": "2026-09-03T13:06:12.480"
       },
       {
-        "cve_id": "CVE-2026-85150",
+        "cve_id": "CVE-2026-80737",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A NULL pointer dereference flaw was found in GStreamer's RTSP support library. The vulnerability occurs while parsing an Authorization or WWW-Authenticate header that uses Digest authentication. Speci",
-        "published": "2026-09-03T13:06:21.910"
+        "base_score": 7.8,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nserial: amba-pl011: synchronize DMA teardown\n\ndmaengine_terminate_all() does not wait for a running callback, so the TX\ncallback ca",
+        "published": "2026-09-03T13:06:12.623"
       },
       {
-        "cve_id": "CVE-2026-85155",
+        "cve_id": "CVE-2026-80748",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "WWBN AVideo contains a SQL injection vulnerability in the sort column parameter of the get.json.php endpoint with APIName=channels that allows unauthenticated attackers to order results by arbitrary d",
-        "published": "2026-09-03T13:06:22.210"
-      },
-      {
-        "cve_id": "CVE-2026-85091",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "zlib versions 1.3.1.2 through 1.3.2 contain a heap buffer overflow vulnerability in the gz_vacate() function when processing non-blocking gzwrite() operations with stale external buffer pointers. Atta",
-        "published": "2026-09-03T13:06:20.573"
-      },
-      {
-        "cve_id": "CVE-2026-85105",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A flaw has been found in NousResearch hermes-agent 0.18.0. Affected by this issue is the function _sess_nowait of the file s71.py of the component Session Management. This manipulation of the argument",
-        "published": "2026-09-03T13:06:21.250"
-      },
-      {
-        "cve_id": "CVE-2026-71220",
-        "severity": "HIGH",
-        "base_score": 7.0,
-        "description": "A stack out-of-bounds write vulnerability was found in gfs2-utils. In gfs2_edit, the di_height field from on-disk inode metadata is used as an array index without bounds checking, causing a stack buff",
-        "published": "2026-09-03T13:06:02.703"
-      },
-      {
-        "cve_id": "CVE-2026-71221",
-        "severity": "HIGH",
-        "base_score": 7.0,
-        "description": "A stack out-of-bounds write vulnerability was found in gfs2-utils. In savemeta, the height value from on-disk inode metadata is used as a loop bound without bounds checking, causing a stack buffer ove",
-        "published": "2026-09-03T13:06:02.887"
-      },
-      {
-        "cve_id": "CVE-2026-68860",
-        "severity": "MEDIUM",
-        "base_score": 6.8,
-        "description": "Dell PowerProtect Data Manager, versions 20.2.0.0 and below, contain a Reliance on Data/Memory Layout vulnerability. An unauthenticated remote attacker could potentially exploit this vulnerability, le",
-        "published": "2026-09-03T13:06:01.480"
-      },
-      {
-        "cve_id": "CVE-2026-80253",
-        "severity": "MEDIUM",
-        "base_score": 6.8,
-        "description": "An improper physical access control issue exists in ShizenBox2 (dev-conf). If exploited, an attacker with physical access to the product may execute bootloader commands without authentication.",
-        "published": "2026-09-03T13:06:10.587"
-      },
-      {
-        "cve_id": "CVE-2021-43614",
-        "severity": "MEDIUM",
-        "base_score": 6.7,
-        "description": "Error in handling the PlatformLangCodes UEFI variable could cause a buffer overflow, leading to resource exhaustion and failure.",
-        "published": "2026-09-03T13:04:12.283"
-      },
-      {
-        "cve_id": "CVE-2026-85092",
-        "severity": "MEDIUM",
-        "base_score": 6.6,
-        "description": "LiME through 1.12.0 fails to validate the disk acquisition output path and does not use O_NOFOLLOW when opening the operator-supplied path parameter, allowing unprivileged local users to overwrite arb",
-        "published": "2026-09-03T13:06:20.720"
+        "base_score": 7.8,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmmc: loongson2: Fix sg iteration in data reorder functions\n\nIn ls2k0500_mmc_reorder_cmd_data() and ls2k2000_mmc_reorder_cmd_data(),",
+        "published": "2026-09-03T13:06:14.410"
       }
     ]
   },
