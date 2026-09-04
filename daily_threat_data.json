@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T18:42:24.824884+00:00",
+  "generated_at": "2026-09-04T21:57:07.286539+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 25,
+        "value": 29,
         "score": 3.0,
         "max": 3
       },
@@ -238,17 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 605,
-    "critical_count": 25,
-    "high_count": 46,
+    "total": 597,
+    "critical_count": 29,
+    "high_count": 43,
     "cves": [
-      {
-        "cve_id": "CVE-2026-85061",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "MapLibre GL JS is an interactive vector tile map library for web browsers. Prior to 6.4.1, DOM.sanitize() in src/util/dom.ts iterates elem.attributes as a live NamedNodeMap while removeAttributes() re",
-        "published": "2026-09-03T21:17:23.323"
-      },
       {
         "cve_id": "CVE-2026-70352",
         "severity": "CRITICAL",
@@ -269,20 +262,6 @@
         "base_score": 9.9,
         "description": "A vulnerability was found in D-Link DNS-340L 1.01B04. Affected by this issue is some unknown functionality of the file /cgi-bin/dropbox.cgi of the component CGI Handler. Performing a manipulation of t",
         "published": "2026-09-03T22:18:24.080"
-      },
-      {
-        "cve_id": "CVE-2026-82526",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "R2R through 3.6.6 contains a stacked SQL injection vulnerability that allows unauthenticated attackers to execute arbitrary SQL statements by manipulating the index name parameter in the vector index ",
-        "published": "2026-09-03T19:17:29.950"
-      },
-      {
-        "cve_id": "CVE-2026-85391",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Peppermint through 0.5.5 contains a hardcoded JWT signing secret in docker-compose.yml that allows unauthenticated attackers to forge session tokens for any account. Attackers can use the published se",
-        "published": "2026-09-03T19:17:30.830"
       },
       {
         "cve_id": "CVE-2026-85424",
@@ -341,46 +320,67 @@
         "published": "2026-09-03T23:17:23.590"
       },
       {
-        "cve_id": "CVE-2026-85042",
+        "cve_id": "CVE-2026-85146",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in DevTools in Google Chrome prior to 152.0.7977.82 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-09-03T20:17:22.727"
+        "base_score": 9.8,
+        "description": "SmartIT Desktop Manager developed by Lightstar has a Use of Hard-coded Credentials vulnerability. Unauthenticated remote attackers can obtain the SSH service account credentials and passwords for the ",
+        "published": "2026-09-04T03:17:45.770"
       },
       {
-        "cve_id": "CVE-2026-85047",
+        "cve_id": "CVE-2026-85148",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Improper input validation in Transactions Platform in Google Chrome on on iOS prior to 152.0.7977.82 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted H",
-        "published": "2026-09-03T20:17:24.690"
+        "base_score": 9.8,
+        "description": "SmartIT Desktop Manager developed by Lightstar has a Use of Hard-coded Credentials vulnerability. Unauthenticated remote attackers can exploit a fixed password to remotely access user hosts.",
+        "published": "2026-09-04T03:17:46.050"
       },
       {
-        "cve_id": "CVE-2026-85050",
+        "cve_id": "CVE-2026-11613",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Out of bounds write in WebGL in Google Chrome on on Android prior to 152.0.7977.82 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security s",
-        "published": "2026-09-03T20:17:26.077"
+        "base_score": 9.8,
+        "description": "The Divi Ajax Filter plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 5.1.2 via the 'custom_loop_template' parameter parameter. This makes it possible f",
+        "published": "2026-09-04T05:17:13.013"
       },
       {
-        "cve_id": "CVE-2026-80098",
+        "cve_id": "CVE-2026-85504",
         "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Improper verification of cryptographic signature in Copilot Studio allows an unauthorized attacker to elevate privileges over a network.",
-        "published": "2026-09-03T23:17:20.350"
+        "base_score": 9.8,
+        "description": "FreeIPMI before 1.6.19 has a stack-based buffer overflow in _ipmi_sel_oem_fujitsu_get_sel_entry_long_text in libfreeipmi/sel/ipmi-sel-string-fujitsu-irmc-common.c via malformed Fujitsu SEL long-text r",
+        "published": "2026-09-04T05:17:16.047"
       },
       {
-        "cve_id": "CVE-2026-85394",
+        "cve_id": "CVE-2026-85506",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "python-jose through 3.5.0 fails to properly validate asymmetric keys in HMAC initialization, accepting DER-encoded public keys that lack PEM armor or SSH prefixes. Attackers holding the service's publ",
-        "published": "2026-09-03T19:17:31.257"
+        "base_score": 9.8,
+        "description": "ipmi-oem in FreeIPMI before 1.6.19 has a stack-based buffer overflow in _get_dell_system_info_idrac_info in ipmi-oem/ipmi-oem-dell.c (idrac-info subcommand to dell get-system-info).",
+        "published": "2026-09-04T05:17:16.290"
       },
       {
-        "cve_id": "CVE-2026-85222",
+        "cve_id": "CVE-2026-85507",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A vulnerability has been found in D-Link DNS-340L 1.01B04. Affected by this vulnerability is an unknown functionality of the file /cgi-bin/addon_center.cgi of the component Add-On Center. Such manipul",
-        "published": "2026-09-03T21:17:23.990"
+        "base_score": 9.8,
+        "description": "ipmi-oem in FreeIPMI before 1.6.19 has a stack-based buffer overflow in _output_dell_system_info_cmc_info in ipmi-oem/ipmi-oem-dell.c (cmc-info subcommand to dell get-system-info).",
+        "published": "2026-09-04T05:17:16.433"
+      },
+      {
+        "cve_id": "CVE-2026-85508",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "ipmi-oem in FreeIPMI before 1.6.19 has a stack-based buffer overflow in _output_dell_system_info_cmc_ipv6_info in ipmi-oem/ipmi-oem-dell.c (cmc-ipv6-info subcommand to dell get-system-info).",
+        "published": "2026-09-04T05:17:16.570"
+      },
+      {
+        "cve_id": "CVE-2026-85509",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "FreeIPMI before 1.6.19 has a stack-based buffer overflow in _read_fru_data in libfreeipmi/fru/ipmi-fru.c when a BMC returns more bytes than requested.",
+        "published": "2026-09-04T05:17:16.723"
+      },
+      {
+        "cve_id": "CVE-2026-15354",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The ACPT (Premium) plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 2.0.66. This is due to missing authorization in the `submit()` function, which allow",
+        "published": "2026-09-04T07:17:08.487"
       }
     ]
   },
