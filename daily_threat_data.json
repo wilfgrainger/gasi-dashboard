@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-05T07:55:33.373884+00:00",
+  "generated_at": "2026-09-05T11:29:51.352506+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
-        "score": 2.0,
+        "value": 5,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,36 +238,50 @@
     ]
   },
   "nvd": {
-    "total": 571,
-    "critical_count": 2,
-    "high_count": 32,
+    "total": 563,
+    "critical_count": 5,
+    "high_count": 40,
     "cves": [
       {
-        "cve_id": "CVE-2026-82923",
+        "cve_id": "CVE-2026-85661",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "The AI Website Builder WordPress plugin (GitHub build) 1.0.0 does not perform any authorisation or nonce check on its REST API routes, allowing unauthenticated attackers to install and activate plugin",
-        "published": "2026-09-04T10:17:13.340"
+        "description": "excel-mcp-server 0.1.8 fails to enforce path confinement in stdio mode when EXCEL_FILES_PATH is unset, allowing attackers to read and write arbitrary files. Attackers can supply unchecked file paths t",
+        "published": "2026-09-04T15:17:43.643"
       },
       {
-        "cve_id": "CVE-2026-85184",
+        "cve_id": "CVE-2026-85663",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Aim 3.29.1 remote tracking server fails to authenticate requests and dispatches arbitrary methods through getattr without allowlist validation. Unauthenticated attackers can register clients, instanti",
+        "published": "2026-09-04T15:17:43.947"
+      },
+      {
+        "cve_id": "CVE-2026-85672",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "zerox 1.1.20 contains an OS command injection vulnerability in the file download mechanism where the temporary file extension derived from document URLs is interpolated unsanitized into shell commands",
+        "published": "2026-09-04T15:17:45.293"
+      },
+      {
+        "cve_id": "CVE-2026-85667",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "@fastify/middie versions >= 9.1.0 and before 9.3.4 decide whether to run path-scoped middleware by matching against the raw request target, while the Fastify router resolves an absolute-form request t",
-        "published": "2026-09-04T10:17:13.900"
+        "description": "xiaobei through 5.5.2 fails to implement authentication or signature validation on webhook endpoints, allowing unauthenticated attackers to inject arbitrary messages into the agent pipeline. Attackers",
+        "published": "2026-09-04T15:17:44.543"
       },
       {
-        "cve_id": "CVE-2026-85540",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "DreamMaker developed by Interinfo has a SQL Injection vulnerability. Authenticated remote attackers can inject arbitrary SQL commands to read, modify, and delete database contents.",
-        "published": "2026-09-04T10:17:14.017"
+        "cve_id": "CVE-2026-85684",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "marker through 2.0.0 contains a path traversal vulnerability in the FastAPI /marker/upload handler that fails to sanitize the file.filename parameter. Unauthenticated attackers can supply filenames co",
+        "published": "2026-09-04T15:17:46.077"
       },
       {
         "cve_id": "CVE-2026-85604",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Grav before 2.0.19 (affected versions <= 2.0.17) contains a remote code execution vulnerability in the Twig sort filter. The sortFunc wrapper in GravExtension.php hardcodes Twig's isSandboxed argument",
+        "description": "Grav before 2.0.18 (affected versions <= 2.0.17) contains a remote code execution vulnerability in the Twig sort filter. The sortFunc wrapper in GravExtension.php hardcodes Twig's isSandboxed argument",
         "published": "2026-09-04T12:17:24.177"
       },
       {
@@ -292,11 +306,32 @@
         "published": "2026-09-04T13:18:15.023"
       },
       {
+        "cve_id": "CVE-2026-85607",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Blinko 1.8.7 contains an authorization bypass (IDOR) vulnerability in multiple tRPC procedures (message.list, message.update, message.delete, message.clearAfter in server/routerTrpc/message.ts and con",
+        "published": "2026-09-04T15:17:41.547"
+      },
+      {
+        "cve_id": "CVE-2026-85623",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "goose 1.37.0 executes arbitrary commands from recipe stdio extensions and retry.checks without security inspection. Attackers can distribute malicious recipes that execute shell commands as the user r",
+        "published": "2026-09-04T15:17:42.587"
+      },
+      {
         "cve_id": "CVE-2026-85614",
         "severity": "HIGH",
         "base_score": 8.6,
         "description": "OpenPanel before 2.3.0 contains an unauthenticated server-side request forgery vulnerability in the GET /tools/site-checker endpoint that accepts a fully client-controlled URL parameter with no privat",
         "published": "2026-09-04T12:17:24.993"
+      },
+      {
+        "cve_id": "CVE-2026-85620",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Postgres MCP Pro 0.3.0 contains a restricted-mode bypass vulnerability where function-name validation is not applied to RangeFunction nodes in FROM clauses. Attackers can execute file-reading function",
+        "published": "2026-09-04T15:17:42.150"
       },
       {
         "cve_id": "CVE-2026-85616",
@@ -306,6 +341,13 @@
         "published": "2026-09-04T12:17:25.270"
       },
       {
+        "cve_id": "CVE-2026-85651",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "Trigger.dev versions before 4.5.2 fail to validate environment membership during run replay operations, allowing authenticated attackers to inject task runs into arbitrary environments. Attackers can ",
+        "published": "2026-09-04T15:17:43.347"
+      },
+      {
         "cve_id": "CVE-2026-85613",
         "severity": "HIGH",
         "base_score": 8.2,
@@ -313,11 +355,18 @@
         "published": "2026-09-04T12:17:24.863"
       },
       {
-        "cve_id": "CVE-2026-84504",
+        "cve_id": "CVE-2026-85625",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "fastify versions before 5.12.2 treat the object resolved by a successful Ajv async validator as the value result protocol used by custom validator compilers. If a request that passes its route schema ",
-        "published": "2026-09-04T10:17:13.790"
+        "description": "sift (sift.js) 17.1.3 enumerates query keys with for...in, which walks the object prototype chain, and dispatches any matched operator key including $where. The $where operation compiles a string valu",
+        "published": "2026-09-04T15:17:42.880"
+      },
+      {
+        "cve_id": "CVE-2026-85660",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "cli-mcp-server 0.2.5 contains a command allowlist bypass vulnerability in the _validate_command_with_operators function when ALLOW_SHELL_OPERATORS is enabled. Attackers can use shell command substitut",
+        "published": "2026-09-04T15:17:43.490"
       },
       {
         "cve_id": "CVE-2026-85649",
@@ -327,60 +376,11 @@
         "published": "2026-09-04T13:20:11.760"
       },
       {
-        "cve_id": "CVE-2026-81302",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "PALLET CONTROL products contain an incorrect default permission vulnerability, which may allow a local attacker to execute arbitrary code with SYSTEM privileges on the affected product.",
-        "published": "2026-09-04T09:17:11.230"
-      },
-      {
         "cve_id": "CVE-2026-6958",
         "severity": "HIGH",
         "base_score": 7.8,
         "description": "Acunetix 25.11.251107123 for Windows contains a local privilege escalation vulnerability in the Web Vulnerability Scanning Engine (wvsc.exe) that allows low-privileged local attackers to execute arbit",
         "published": "2026-09-04T15:17:35.360"
-      },
-      {
-        "cve_id": "CVE-2026-81832",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.1, and 12.0.1.0 through 12.0.12.28 and IBM Integration Bus for z/OS 10.1.0.0 through 10.1.0.7 SAP Adapter is vulnerable to an XML external entity (XX",
-        "published": "2026-09-04T15:17:35.550"
-      },
-      {
-        "cve_id": "CVE-2026-85197",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "A flaw was found in libsoup. A malicious HTTP/2 server or a Man-in-the-Middle (MITM) attacker can exploit a heap use-after-free vulnerability in the HTTP/2 client implementation. This occurs when a GN",
-        "published": "2026-09-04T08:17:16.677"
-      },
-      {
-        "cve_id": "CVE-2026-57777",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Automattic WooCommerce allows Blind SQL Injection.\n\nThis issue affects WooCommerce: from n/a befor",
-        "published": "2026-09-04T09:17:10.810"
-      },
-      {
-        "cve_id": "CVE-2026-81665",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A heap-based buffer overflow was found in Corosync's Totem Process Group (totempg) message reassembly. When processing fragmented multicast messages, the buffer used to reassemble fragments lacks a ru",
-        "published": "2026-09-04T09:17:11.357"
-      },
-      {
-        "cve_id": "CVE-2026-76169",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "fastify versions >= 4.0.0 and before 5.12.2 can route a malformed URL sent under one plugin prefix to the custom not-found handler of a different sibling plugin, and invoke it without the preHandler h",
-        "published": "2026-09-04T10:17:12.020"
-      },
-      {
-        "cve_id": "CVE-2026-84469",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "fastify versions before 5.12.2 decide whether to compile a request schema based on JavaScript truthiness, but JSON Schema Draft 7 defines the boolean false as a valid schema that rejects every instanc",
-        "published": "2026-09-04T10:17:13.677"
       }
     ]
   },
