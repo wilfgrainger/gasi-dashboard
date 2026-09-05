@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-05T11:29:51.352506+00:00",
+  "generated_at": "2026-09-05T14:14:54.142374+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
-        "score": 2.5,
+        "value": 12,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 563,
-    "critical_count": 5,
-    "high_count": 40,
+    "total": 533,
+    "critical_count": 12,
+    "high_count": 37,
     "cves": [
       {
         "cve_id": "CVE-2026-85661",
@@ -264,6 +264,48 @@
         "published": "2026-09-04T15:17:45.293"
       },
       {
+        "cve_id": "CVE-2026-85688",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "TEN Framework 0.11.71 contains unauthenticated arbitrary file read and write vulnerabilities in the TMAN Designer file-content API endpoints. Attackers can submit POST and PUT requests to the /api/des",
+        "published": "2026-09-04T15:17:46.657"
+      },
+      {
+        "cve_id": "CVE-2026-85696",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "SadTalker contains an OS command injection vulnerability in the video muxing process where uploaded audio filenames are interpolated into ffmpeg commands without proper escaping. Attackers can upload ",
+        "published": "2026-09-04T15:17:48.523"
+      },
+      {
+        "cve_id": "CVE-2026-18658",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "IBM Operational Decision Manager 9.6.0.0, 9.5.0.0, 8.11.1.0, 8.11.0.1, 8.12.0.1, 9.5.0.1, and 9.0.0.1 is vulnerable to SQL injection. An unauthenticated attacker can execute arbitrary SQL statements a",
+        "published": "2026-09-04T16:17:21.133"
+      },
+      {
+        "cve_id": "CVE-2026-44402",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Voltronic Power SNMP Web Pro 1.1 contains an unauthenticated remote code execution vulnerability in the upload.cgi firmware update endpoint that allows remote attackers to execute arbitrary commands a",
+        "published": "2026-09-04T16:17:25.250"
+      },
+      {
+        "cve_id": "CVE-2026-19274",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "IBM Observability with Instana (Agent) Build 1.0.303 through 1.0.323 IBM Instana Agent Operator could allow an authenticated Kubernetes tenant to hijack or permanently destroy another tenant's cluster",
+        "published": "2026-09-04T16:17:21.650"
+      },
+      {
+        "cve_id": "CVE-2026-85695",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "FastChat contains an authentication bypass vulnerability in the /register_worker endpoint that allows unauthenticated attackers to register arbitrary worker addresses and perform server-side request f",
+        "published": "2026-09-04T15:17:47.690"
+      },
+      {
         "cve_id": "CVE-2026-85667",
         "severity": "CRITICAL",
         "base_score": 9.1,
@@ -278,32 +320,11 @@
         "published": "2026-09-04T15:17:46.077"
       },
       {
-        "cve_id": "CVE-2026-85604",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Grav before 2.0.18 (affected versions <= 2.0.17) contains a remote code execution vulnerability in the Twig sort filter. The sortFunc wrapper in GravExtension.php hardcodes Twig's isSandboxed argument",
-        "published": "2026-09-04T12:17:24.177"
-      },
-      {
-        "cve_id": "CVE-2026-85610",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenPanel before 2.3.0 fails to properly validate chart formula expressions, allowing authenticated project members with read access to execute arbitrary code by recovering the native JavaScript Funct",
-        "published": "2026-09-04T12:17:24.463"
-      },
-      {
-        "cve_id": "CVE-2026-85617",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "snipe-it versions before 8.6.3 contain an authorization bypass vulnerability in the bulk delete functionality that allows restricted users to soft-delete users outside their authorized scope. Attacker",
-        "published": "2026-09-04T12:17:25.410"
-      },
-      {
-        "cve_id": "CVE-2026-18198",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in TAC Information Services Internal and External Trade Inc. GOLDENHORN ONEIT allows Blind SQL Inject",
-        "published": "2026-09-04T13:18:15.023"
+        "cve_id": "CVE-2026-75160",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "An issue in X-Serie Gateway Firmware V6_00_05 allows a remote attacker to escalate privileges via the endpoints /cgi-bin/wwwugw.cgi and /cgi-bin/ugwdownload.cgi.",
+        "published": "2026-09-04T16:17:57.827"
       },
       {
         "cve_id": "CVE-2026-85607",
@@ -320,11 +341,11 @@
         "published": "2026-09-04T15:17:42.587"
       },
       {
-        "cve_id": "CVE-2026-85614",
+        "cve_id": "CVE-2026-19298",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "OpenPanel before 2.3.0 contains an unauthenticated server-side request forgery vulnerability in the GET /tools/site-checker endpoint that accepts a fully client-controlled URL parameter with no privat",
-        "published": "2026-09-04T12:17:24.993"
+        "base_score": 8.8,
+        "description": "IBM Langflow OSS 1.0.0 through 1.11.2 could allow a remote authenticated attacker to execute arbitrary code due to an authorization bypass in the flow build process.",
+        "published": "2026-09-04T16:17:21.900"
       },
       {
         "cve_id": "CVE-2026-85620",
@@ -334,11 +355,11 @@
         "published": "2026-09-04T15:17:42.150"
       },
       {
-        "cve_id": "CVE-2026-85616",
+        "cve_id": "CVE-2026-19305",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Snipe-IT versions before 8.6.2 contain an authorization bypass vulnerability in checkout-acceptance report actions when Full Multiple Company Support is enabled. Authenticated users with reports.view ",
-        "published": "2026-09-04T12:17:25.270"
+        "base_score": 8.6,
+        "description": "IBM Langflow OSS 1.0.0 through 1.11.2 could allow a remote attacker to obtain sensitive information due to server-side request forgery.",
+        "published": "2026-09-04T16:17:24.323"
       },
       {
         "cve_id": "CVE-2026-85651",
@@ -346,13 +367,6 @@
         "base_score": 8.5,
         "description": "Trigger.dev versions before 4.5.2 fail to validate environment membership during run replay operations, allowing authenticated attackers to inject task runs into arbitrary environments. Attackers can ",
         "published": "2026-09-04T15:17:43.347"
-      },
-      {
-        "cve_id": "CVE-2026-85613",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "OpenPanel before 2.3.0 contains a cross-site scripting vulnerability in the unauthenticated favicon proxy endpoint GET /misc/favicon that allows remote attackers to execute scripts by supplying an SVG",
-        "published": "2026-09-04T12:17:24.863"
       },
       {
         "cve_id": "CVE-2026-85625",
@@ -367,20 +381,6 @@
         "base_score": 8.1,
         "description": "cli-mcp-server 0.2.5 contains a command allowlist bypass vulnerability in the _validate_command_with_operators function when ALLOW_SHELL_OPERATORS is enabled. Attackers can use shell command substitut",
         "published": "2026-09-04T15:17:43.490"
-      },
-      {
-        "cve_id": "CVE-2026-85649",
-        "severity": "HIGH",
-        "base_score": 7.9,
-        "description": "(Holloway) Chew, Kean Ho's Actualizer v1.2.0 and earlier contains a fail-open password validation vulnerability in the Alpha user and root user password loops of Shell/debian-minbase-install.sh. The i",
-        "published": "2026-09-04T13:20:11.760"
-      },
-      {
-        "cve_id": "CVE-2026-6958",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Acunetix 25.11.251107123 for Windows contains a local privilege escalation vulnerability in the Web Vulnerability Scanning Engine (wvsc.exe) that allows low-privileged local attackers to execute arbit",
-        "published": "2026-09-04T15:17:35.360"
       }
     ]
   },
