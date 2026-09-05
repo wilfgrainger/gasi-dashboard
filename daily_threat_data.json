@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-05T14:14:54.142374+00:00",
+  "generated_at": "2026-09-05T17:48:17.768184+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 12,
-        "score": 3.0,
+        "value": 3,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 533,
-    "critical_count": 12,
-    "high_count": 37,
+    "total": 244,
+    "critical_count": 3,
+    "high_count": 20,
     "cves": [
       {
-        "cve_id": "CVE-2026-85661",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "excel-mcp-server 0.1.8 fails to enforce path confinement in stdio mode when EXCEL_FILES_PATH is unset, allowing attackers to read and write arbitrary files. Attackers can supply unchecked file paths t",
-        "published": "2026-09-04T15:17:43.643"
-      },
-      {
-        "cve_id": "CVE-2026-85663",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Aim 3.29.1 remote tracking server fails to authenticate requests and dispatches arbitrary methods through getattr without allowlist validation. Unauthenticated attackers can register clients, instanti",
-        "published": "2026-09-04T15:17:43.947"
-      },
-      {
-        "cve_id": "CVE-2026-85672",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "zerox 1.1.20 contains an OS command injection vulnerability in the file download mechanism where the temporary file extension derived from document URLs is interpolated unsanitized into shell commands",
-        "published": "2026-09-04T15:17:45.293"
-      },
-      {
-        "cve_id": "CVE-2026-85688",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "TEN Framework 0.11.71 contains unauthenticated arbitrary file read and write vulnerabilities in the TMAN Designer file-content API endpoints. Attackers can submit POST and PUT requests to the /api/des",
-        "published": "2026-09-04T15:17:46.657"
-      },
-      {
-        "cve_id": "CVE-2026-85696",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "SadTalker contains an OS command injection vulnerability in the video muxing process where uploaded audio filenames are interpolated into ffmpeg commands without proper escaping. Attackers can upload ",
-        "published": "2026-09-04T15:17:48.523"
-      },
-      {
-        "cve_id": "CVE-2026-18658",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "IBM Operational Decision Manager 9.6.0.0, 9.5.0.0, 8.11.1.0, 8.11.0.1, 8.12.0.1, 9.5.0.1, and 9.0.0.1 is vulnerable to SQL injection. An unauthenticated attacker can execute arbitrary SQL statements a",
-        "published": "2026-09-04T16:17:21.133"
-      },
-      {
-        "cve_id": "CVE-2026-44402",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Voltronic Power SNMP Web Pro 1.1 contains an unauthenticated remote code execution vulnerability in the upload.cgi firmware update endpoint that allows remote attackers to execute arbitrary commands a",
-        "published": "2026-09-04T16:17:25.250"
-      },
-      {
-        "cve_id": "CVE-2026-19274",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "IBM Observability with Instana (Agent) Build 1.0.303 through 1.0.323 IBM Instana Agent Operator could allow an authenticated Kubernetes tenant to hijack or permanently destroy another tenant's cluster",
-        "published": "2026-09-04T16:17:21.650"
-      },
-      {
-        "cve_id": "CVE-2026-85695",
-        "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "FastChat contains an authentication bypass vulnerability in the /register_worker endpoint that allows unauthenticated attackers to register arbitrary worker addresses and perform server-side request f",
-        "published": "2026-09-04T15:17:47.690"
-      },
-      {
-        "cve_id": "CVE-2026-85667",
+        "cve_id": "CVE-2026-78327",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "xiaobei through 5.5.2 fails to implement authentication or signature validation on webhook endpoints, allowing unauthenticated attackers to inject arbitrary messages into the agent pipeline. Attackers",
-        "published": "2026-09-04T15:17:44.543"
+        "description": "An Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability in the SonicWall Network Security Manager (NSM) On-Prem Management interface allows an authe",
+        "published": "2026-09-04T19:17:27.347"
       },
       {
-        "cve_id": "CVE-2026-85684",
+        "cve_id": "CVE-2026-78328",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "marker through 2.0.0 contains a path traversal vulnerability in the FastAPI /marker/upload handler that fails to sanitize the file.filename parameter. Unauthenticated attackers can supply filenames co",
-        "published": "2026-09-04T15:17:46.077"
+        "description": "A missing authorization vulnerability in the SonicWall Network Security Manager (NSM) On-Prem Management interface allows a lower-privileged Admin user to escalate privileges to SuperAdmin.",
+        "published": "2026-09-04T19:17:27.463"
       },
       {
-        "cve_id": "CVE-2026-75160",
+        "cve_id": "CVE-2026-81939",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "An issue in X-Serie Gateway Firmware V6_00_05 allows a remote attacker to escalate privileges via the endpoints /cgi-bin/wwwugw.cgi and /cgi-bin/ugwdownload.cgi.",
-        "published": "2026-09-04T16:17:57.827"
+        "description": "A Zip Slip vulnerability in the SonicWall Network Security Manager (NSM) On-Prem file upload and archive processing functionality allows an attacker to extract files outside the intended destination d",
+        "published": "2026-09-04T19:17:29.237"
       },
       {
-        "cve_id": "CVE-2026-85607",
+        "cve_id": "CVE-2026-82538",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Blinko 1.8.7 contains an authorization bypass (IDOR) vulnerability in multiple tRPC procedures (message.list, message.update, message.delete, message.clearAfter in server/routerTrpc/message.ts and con",
-        "published": "2026-09-04T15:17:41.547"
+        "description": "ILIAS before versions 9.22, 10.10, and 11.3 contains a SQL injection vulnerability in the repository trash table where the table navigation sort field from HTTP requests is passed directly into the OR",
+        "published": "2026-09-04T18:18:01.357"
       },
       {
-        "cve_id": "CVE-2026-85623",
+        "cve_id": "CVE-2026-85781",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "goose 1.37.0 executes arbitrary commands from recipe stdio extensions and retry.checks without security inspection. Attackers can distribute malicious recipes that execute shell commands as the user r",
-        "published": "2026-09-04T15:17:42.587"
+        "base_score": 8.7,
+        "description": "Unverified ownership of a storage access point in the volume deletion component of the Amazon EFS CSI Driver before v3.4.1 might allow an authenticated Kubernetes user with PersistentVolume creation p",
+        "published": "2026-09-04T19:17:34.157"
       },
       {
-        "cve_id": "CVE-2026-19298",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "IBM Langflow OSS 1.0.0 through 1.11.2 could allow a remote authenticated attacker to execute arbitrary code due to an authorization bypass in the flow build process.",
-        "published": "2026-09-04T16:17:21.900"
-      },
-      {
-        "cve_id": "CVE-2026-85620",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Postgres MCP Pro 0.3.0 contains a restricted-mode bypass vulnerability where function-name validation is not applied to RangeFunction nodes in FROM clauses. Attackers can execute file-reading function",
-        "published": "2026-09-04T15:17:42.150"
-      },
-      {
-        "cve_id": "CVE-2026-19305",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "IBM Langflow OSS 1.0.0 through 1.11.2 could allow a remote attacker to obtain sensitive information due to server-side request forgery.",
-        "published": "2026-09-04T16:17:24.323"
-      },
-      {
-        "cve_id": "CVE-2026-85651",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Trigger.dev versions before 4.5.2 fail to validate environment membership during run replay operations, allowing authenticated attackers to inject task runs into arbitrary environments. Attackers can ",
-        "published": "2026-09-04T15:17:43.347"
-      },
-      {
-        "cve_id": "CVE-2026-85625",
+        "cve_id": "CVE-2026-9317",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "sift (sift.js) 17.1.3 enumerates query keys with for...in, which walks the object prototype chain, and dispatches any matched operator key including $where. The $where operation compiles a string valu",
-        "published": "2026-09-04T15:17:42.880"
+        "description": "Nango before 0.71.6 contains a missing authentication vulnerability in the runner tRPC server that allows unauthenticated attackers to execute arbitrary JavaScript code by invoking the exposed start p",
+        "published": "2026-09-04T18:18:07.297"
       },
       {
-        "cve_id": "CVE-2026-85660",
+        "cve_id": "CVE-2026-61699",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "cli-mcp-server 0.2.5 contains a command allowlist bypass vulnerability in the _validate_command_with_operators function when ALLOW_SHELL_OPERATORS is enabled. Attackers can use shell command substitut",
-        "published": "2026-09-04T15:17:43.490"
+        "description": "nebula-mesh is a self-hosted control plane for Slack Nebula mesh VPN. Prior to version 0.7.1, revocation is the only in-band mechanism that isolates a compromised/offboarded host from a Nebula mesh. B",
+        "published": "2026-09-04T20:17:24.347"
+      },
+      {
+        "cve_id": "CVE-2026-53932",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "laravel-backup-restore restores database backups made with spatie/laravel-backup. Prior to version 1.9.4, a crafted backup archive can trigger OS command injection during database restore. This issue ",
+        "published": "2026-09-04T20:17:23.570"
+      },
+      {
+        "cve_id": "CVE-2026-85654",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Improper neutralization of special elements used in a template engine in the CDK generator in Amazon awslabs.dynamodb-mcp-server before 2.1.6 might allow a context-dependent actor to execute arbitrary",
+        "published": "2026-09-04T18:18:05.977"
+      },
+      {
+        "cve_id": "CVE-2026-85656",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "An OS command injection issue in the log4j-cve-2021-44228-hotpatch package in Amazon Linux before 1.3-9 might allow a local user to execute arbitrary commands with root privileges via a Java process w",
+        "published": "2026-09-04T18:18:06.133"
+      },
+      {
+        "cve_id": "CVE-2026-80112",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "PassMark PerformanceTest before 11.1 build 1012, BurnInTest before 11.1 build 1000, and OSForensics before 11.1 build 1016 contain an improper access control vulnerability in the DirectIo64.sys kernel",
+        "published": "2026-09-04T19:17:27.823"
+      },
+      {
+        "cve_id": "CVE-2026-80114",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "PassMark PerformanceTest before 11.1 build 1012, BurnInTest before 11.1 build 1000, and OSForensics before 11.1 build 1016 contain a hard-coded credentials vulnerability in DirectIo64.sys that allows ",
+        "published": "2026-09-04T19:17:28.140"
+      },
+      {
+        "cve_id": "CVE-2026-80116",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "PassMark PerformanceTest before 11.1 build 1012, BurnInTest before 11.1 build 1000, and OSForensics before 11.1 build 1016 contain a privilege escalation vulnerability in DirectIo64.sys that allows lo",
+        "published": "2026-09-04T19:17:28.420"
+      },
+      {
+        "cve_id": "CVE-2026-80119",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "PassMark PerformanceTest before 11.1 build 1012, BurnInTest before 11.1 build 1000, and OSForensics before 11.1 build 1016 contain an information disclosure vulnerability in DirectIo64.sys that allows",
+        "published": "2026-09-04T19:17:28.857"
+      },
+      {
+        "cve_id": "CVE-2026-63464",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "nebula-mesh is a self-hosted control plane for Slack Nebula mesh VPN. From version 0.6.0 to before version 0.7.2, non-admin operators (role user) can set allow_private: true on their own managed webho",
+        "published": "2026-09-04T20:17:24.730"
+      },
+      {
+        "cve_id": "CVE-2021-44320",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Parrot AR.Drone version 1 and 2 does not employ a suitable mechanism to prevent denial-of-service (DoS) attacks. An attacker can harm the device availability (i.e., video streaming and control) by usi",
+        "published": "2026-09-04T18:17:44.397"
+      },
+      {
+        "cve_id": "CVE-2026-19534",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "undici's WebSocket client crashes the whole Node.js process during the opening handshake when a server responds with a subprotocol that the client never requested. A default WebSocket connection sends",
+        "published": "2026-09-04T18:17:51.647"
+      },
+      {
+        "cve_id": "CVE-2026-61686",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "SolidInvoice is an open-source invoicing platform. Prior to version 3.0.1, the `DataGrid` LiveComponent deserializes a `context` prop value using PHP's `unserialize()` after receiving it from the clie",
+        "published": "2026-09-04T18:17:55.437"
+      },
+      {
+        "cve_id": "CVE-2026-85786",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Improper handling of highly compressed data in Amazon ion-java before 1.12.1 might allow remote attackers to cause a denial of service via a crafted compressed Ion document that expands to an arbitrar",
+        "published": "2026-09-04T20:17:33.153"
+      },
+      {
+        "cve_id": "CVE-2026-85638",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A weakness has been identified in jofpin trape 2.0. This affects an unknown part of the file core/user.py. This manipulation of the argument vId/id causes authorization bypass. Remote exploitation of ",
+        "published": "2026-09-04T19:17:33.430"
       }
     ]
   },
