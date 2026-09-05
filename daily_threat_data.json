@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-04T21:57:07.286539+00:00",
+  "generated_at": "2026-09-05T02:03:29.359194+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 29,
+        "value": 15,
         "score": 3.0,
         "max": 3
       },
@@ -238,87 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 597,
-    "critical_count": 29,
-    "high_count": 43,
+    "total": 561,
+    "critical_count": 15,
+    "high_count": 26,
     "cves": [
-      {
-        "cve_id": "CVE-2026-70352",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Missing authentication for critical function in Azure AI Language allows an unauthorized attacker to elevate privileges over a network.",
-        "published": "2026-09-03T23:17:20.213"
-      },
-      {
-        "cve_id": "CVE-2026-83711",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Authorization bypass through user-controlled key in Microsoft Azure Active Directory B2C allows an unauthorized attacker to elevate privileges over a network.",
-        "published": "2026-09-03T23:17:20.500"
-      },
-      {
-        "cve_id": "CVE-2026-85223",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A vulnerability was found in D-Link DNS-340L 1.01B04. Affected by this issue is some unknown functionality of the file /cgi-bin/dropbox.cgi of the component CGI Handler. Performing a manipulation of t",
-        "published": "2026-09-03T22:18:24.080"
-      },
-      {
-        "cve_id": "CVE-2026-85424",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "MOOS core-moos through 10.4.0 lacks authentication in the wire protocol, allowing unauthenticated clients to connect with full publish, subscribe, and database clear privileges. Attackers can bypass t",
-        "published": "2026-09-03T23:17:21.170"
-      },
-      {
-        "cve_id": "CVE-2026-85425",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "MOOS-IvP iSay through 24.8.1 contains a remote code execution vulnerability in the SAY_MOOS variable handler that passes unsanitized text to a shell command. Attackers can publish SAY_MOOS messages co",
-        "published": "2026-09-03T23:17:21.337"
-      },
-      {
-        "cve_id": "CVE-2026-85426",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "MOOS-IvP uMemWatch through 24.8.1 constructs shell commands from attacker-chosen MOOS client names without sanitization. Attackers can inject shell metacharacters into client names to execute arbitrar",
-        "published": "2026-09-03T23:17:21.487"
-      },
-      {
-        "cve_id": "CVE-2026-85428",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "MOOS core-moos through 10.4.0 contains an authentication bypass vulnerability in the optional MOOSDB HTTP server that allows unauthenticated clients to write variables. Attackers can send HTTP request",
-        "published": "2026-09-03T23:17:21.770"
-      },
-      {
-        "cve_id": "CVE-2026-85433",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "MOOS essential-moos pShare through 10.0.1 fails to properly authorize PSHARE_CMD messages, allowing any publisher to reconfigure network routes and listeners at runtime. Attackers can send crafted PSH",
-        "published": "2026-09-03T23:17:22.500"
-      },
-      {
-        "cve_id": "CVE-2026-85437",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "MOOS-IvP through 24.8.1 contains multiple buffer overflow vulnerabilities in IvP function string decoders that trust attacker-controlled length fields without validation. Attackers can craft malicious",
-        "published": "2026-09-03T23:17:23.103"
-      },
-      {
-        "cve_id": "CVE-2026-85438",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "MOOS-IvP through 24.8.1 contains a buffer overflow vulnerability in StringToIvPFunction() where dimension, piece, and degree counts from encoded BHV_IPF payloads are used as allocation sizes and loop ",
-        "published": "2026-09-03T23:17:23.270"
-      },
-      {
-        "cve_id": "CVE-2026-85440",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "MOOS core-moos through 10.4.0 contains a pre-authentication heap overflow vulnerability in MOOSCommPkt packet handling that allows remote attackers to write arbitrary data by declaring a negative pack",
-        "published": "2026-09-03T23:17:23.590"
-      },
       {
         "cve_id": "CVE-2026-85146",
         "severity": "CRITICAL",
@@ -381,6 +304,83 @@
         "base_score": 9.8,
         "description": "The ACPT (Premium) plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 2.0.66. This is due to missing authorization in the `submit()` function, which allow",
         "published": "2026-09-04T07:17:08.487"
+      },
+      {
+        "cve_id": "CVE-2026-62928",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "XING CPTrans-ME-X contains an OS Command Injection (CWE-78). Unauthenticated OS command may be injected.",
+        "published": "2026-09-04T07:17:09.057"
+      },
+      {
+        "cve_id": "CVE-2026-69657",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "XING CPTrans-ME-X contains a Use of Default Password (CWE-1393). Anyone with the knowledge of the credential may log in to the affected device.",
+        "published": "2026-09-04T07:17:09.340"
+      },
+      {
+        "cve_id": "CVE-2026-70403",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "XING CPTrans-ME-X contains a Use of Hard-coded Password (CWE-259). Anyone with the knowledge of the credential may log in to the affected device.",
+        "published": "2026-09-04T07:17:09.467"
+      },
+      {
+        "cve_id": "CVE-2026-82923",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The AI Website Builder WordPress plugin (GitHub build) 1.0.0 does not perform any authorisation or nonce check on its REST API routes, allowing unauthenticated attackers to install and activate plugin",
+        "published": "2026-09-04T10:17:13.340"
+      },
+      {
+        "cve_id": "CVE-2026-85085",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "The Canva Android App before 2.376.0 allowed an external origin to be loaded in a privileged WebView. A threat actor who controls the page loaded by the user is able to communicate with Canva using th",
+        "published": "2026-09-04T07:17:11.133"
+      },
+      {
+        "cve_id": "CVE-2026-85184",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "@fastify/middie versions >= 9.1.0 and before 9.3.4 decide whether to run path-scoped middleware by matching against the raw request target, while the Fastify router resolves an absolute-form request t",
+        "published": "2026-09-04T10:17:13.900"
+      },
+      {
+        "cve_id": "CVE-2026-85094",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Canva Android App  before 2.376.0 did not restrict the headers returned to an external origin running in a privileged WebView. A threat actor with control of the WebView could access a user\u2019s sess",
+        "published": "2026-09-04T07:17:11.263"
+      },
+      {
+        "cve_id": "CVE-2026-85540",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "DreamMaker developed by Interinfo has a SQL Injection vulnerability. Authenticated remote attackers can inject arbitrary SQL commands to read, modify, and delete database contents.",
+        "published": "2026-09-04T10:17:14.017"
+      },
+      {
+        "cve_id": "CVE-2026-84504",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "fastify versions before 5.12.2 treat the object resolved by a successful Ajv async validator as the value result protocol used by custom validator compilers. If a request that passes its route schema ",
+        "published": "2026-09-04T10:17:13.790"
+      },
+      {
+        "cve_id": "CVE-2026-81302",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "PALLET CONTROL products contain an incorrect default permission vulnerability, which may allow a local attacker to execute arbitrary code with SYSTEM privileges on the affected product.",
+        "published": "2026-09-04T09:17:11.230"
+      },
+      {
+        "cve_id": "CVE-2026-85197",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "A flaw was found in libsoup. A malicious HTTP/2 server or a Man-in-the-Middle (MITM) attacker can exploit a heap use-after-free vulnerability in the HTTP/2 client implementation. This occurs when a GN",
+        "published": "2026-09-04T08:17:16.677"
       }
     ]
   },
