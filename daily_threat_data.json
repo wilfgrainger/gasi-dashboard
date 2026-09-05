@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-05T02:03:29.359194+00:00",
+  "generated_at": "2026-09-05T07:55:33.373884+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 15,
-        "score": 3.0,
+        "value": 2,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,107 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 561,
-    "critical_count": 15,
-    "high_count": 26,
+    "total": 571,
+    "critical_count": 2,
+    "high_count": 32,
     "cves": [
-      {
-        "cve_id": "CVE-2026-85146",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "SmartIT Desktop Manager developed by Lightstar has a Use of Hard-coded Credentials vulnerability. Unauthenticated remote attackers can obtain the SSH service account credentials and passwords for the ",
-        "published": "2026-09-04T03:17:45.770"
-      },
-      {
-        "cve_id": "CVE-2026-85148",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "SmartIT Desktop Manager developed by Lightstar has a Use of Hard-coded Credentials vulnerability. Unauthenticated remote attackers can exploit a fixed password to remotely access user hosts.",
-        "published": "2026-09-04T03:17:46.050"
-      },
-      {
-        "cve_id": "CVE-2026-11613",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Divi Ajax Filter plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 5.1.2 via the 'custom_loop_template' parameter parameter. This makes it possible f",
-        "published": "2026-09-04T05:17:13.013"
-      },
-      {
-        "cve_id": "CVE-2026-85504",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "FreeIPMI before 1.6.19 has a stack-based buffer overflow in _ipmi_sel_oem_fujitsu_get_sel_entry_long_text in libfreeipmi/sel/ipmi-sel-string-fujitsu-irmc-common.c via malformed Fujitsu SEL long-text r",
-        "published": "2026-09-04T05:17:16.047"
-      },
-      {
-        "cve_id": "CVE-2026-85506",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "ipmi-oem in FreeIPMI before 1.6.19 has a stack-based buffer overflow in _get_dell_system_info_idrac_info in ipmi-oem/ipmi-oem-dell.c (idrac-info subcommand to dell get-system-info).",
-        "published": "2026-09-04T05:17:16.290"
-      },
-      {
-        "cve_id": "CVE-2026-85507",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "ipmi-oem in FreeIPMI before 1.6.19 has a stack-based buffer overflow in _output_dell_system_info_cmc_info in ipmi-oem/ipmi-oem-dell.c (cmc-info subcommand to dell get-system-info).",
-        "published": "2026-09-04T05:17:16.433"
-      },
-      {
-        "cve_id": "CVE-2026-85508",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "ipmi-oem in FreeIPMI before 1.6.19 has a stack-based buffer overflow in _output_dell_system_info_cmc_ipv6_info in ipmi-oem/ipmi-oem-dell.c (cmc-ipv6-info subcommand to dell get-system-info).",
-        "published": "2026-09-04T05:17:16.570"
-      },
-      {
-        "cve_id": "CVE-2026-85509",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "FreeIPMI before 1.6.19 has a stack-based buffer overflow in _read_fru_data in libfreeipmi/fru/ipmi-fru.c when a BMC returns more bytes than requested.",
-        "published": "2026-09-04T05:17:16.723"
-      },
-      {
-        "cve_id": "CVE-2026-15354",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The ACPT (Premium) plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 2.0.66. This is due to missing authorization in the `submit()` function, which allow",
-        "published": "2026-09-04T07:17:08.487"
-      },
-      {
-        "cve_id": "CVE-2026-62928",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "XING CPTrans-ME-X contains an OS Command Injection (CWE-78). Unauthenticated OS command may be injected.",
-        "published": "2026-09-04T07:17:09.057"
-      },
-      {
-        "cve_id": "CVE-2026-69657",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "XING CPTrans-ME-X contains a Use of Default Password (CWE-1393). Anyone with the knowledge of the credential may log in to the affected device.",
-        "published": "2026-09-04T07:17:09.340"
-      },
-      {
-        "cve_id": "CVE-2026-70403",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "XING CPTrans-ME-X contains a Use of Hard-coded Password (CWE-259). Anyone with the knowledge of the credential may log in to the affected device.",
-        "published": "2026-09-04T07:17:09.467"
-      },
       {
         "cve_id": "CVE-2026-82923",
         "severity": "CRITICAL",
         "base_score": 9.8,
         "description": "The AI Website Builder WordPress plugin (GitHub build) 1.0.0 does not perform any authorisation or nonce check on its REST API routes, allowing unauthenticated attackers to install and activate plugin",
         "published": "2026-09-04T10:17:13.340"
-      },
-      {
-        "cve_id": "CVE-2026-85085",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "The Canva Android App before 2.376.0 allowed an external origin to be loaded in a privileged WebView. A threat actor who controls the page loaded by the user is able to communicate with Canva using th",
-        "published": "2026-09-04T07:17:11.133"
       },
       {
         "cve_id": "CVE-2026-85184",
@@ -348,18 +257,60 @@
         "published": "2026-09-04T10:17:13.900"
       },
       {
-        "cve_id": "CVE-2026-85094",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Canva Android App  before 2.376.0 did not restrict the headers returned to an external origin running in a privileged WebView. A threat actor with control of the WebView could access a user\u2019s sess",
-        "published": "2026-09-04T07:17:11.263"
-      },
-      {
         "cve_id": "CVE-2026-85540",
         "severity": "HIGH",
         "base_score": 8.8,
         "description": "DreamMaker developed by Interinfo has a SQL Injection vulnerability. Authenticated remote attackers can inject arbitrary SQL commands to read, modify, and delete database contents.",
         "published": "2026-09-04T10:17:14.017"
+      },
+      {
+        "cve_id": "CVE-2026-85604",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Grav before 2.0.19 (affected versions <= 2.0.17) contains a remote code execution vulnerability in the Twig sort filter. The sortFunc wrapper in GravExtension.php hardcodes Twig's isSandboxed argument",
+        "published": "2026-09-04T12:17:24.177"
+      },
+      {
+        "cve_id": "CVE-2026-85610",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "OpenPanel before 2.3.0 fails to properly validate chart formula expressions, allowing authenticated project members with read access to execute arbitrary code by recovering the native JavaScript Funct",
+        "published": "2026-09-04T12:17:24.463"
+      },
+      {
+        "cve_id": "CVE-2026-85617",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "snipe-it versions before 8.6.3 contain an authorization bypass vulnerability in the bulk delete functionality that allows restricted users to soft-delete users outside their authorized scope. Attacker",
+        "published": "2026-09-04T12:17:25.410"
+      },
+      {
+        "cve_id": "CVE-2026-18198",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in TAC Information Services Internal and External Trade Inc. GOLDENHORN ONEIT allows Blind SQL Inject",
+        "published": "2026-09-04T13:18:15.023"
+      },
+      {
+        "cve_id": "CVE-2026-85614",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "OpenPanel before 2.3.0 contains an unauthenticated server-side request forgery vulnerability in the GET /tools/site-checker endpoint that accepts a fully client-controlled URL parameter with no privat",
+        "published": "2026-09-04T12:17:24.993"
+      },
+      {
+        "cve_id": "CVE-2026-85616",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "Snipe-IT versions before 8.6.2 contain an authorization bypass vulnerability in checkout-acceptance report actions when Full Multiple Company Support is enabled. Authenticated users with reports.view ",
+        "published": "2026-09-04T12:17:25.270"
+      },
+      {
+        "cve_id": "CVE-2026-85613",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "OpenPanel before 2.3.0 contains a cross-site scripting vulnerability in the unauthenticated favicon proxy endpoint GET /misc/favicon that allows remote attackers to execute scripts by supplying an SVG",
+        "published": "2026-09-04T12:17:24.863"
       },
       {
         "cve_id": "CVE-2026-84504",
@@ -369,6 +320,13 @@
         "published": "2026-09-04T10:17:13.790"
       },
       {
+        "cve_id": "CVE-2026-85649",
+        "severity": "HIGH",
+        "base_score": 7.9,
+        "description": "(Holloway) Chew, Kean Ho's Actualizer v1.2.0 and earlier contains a fail-open password validation vulnerability in the Alpha user and root user password loops of Shell/debian-minbase-install.sh. The i",
+        "published": "2026-09-04T13:20:11.760"
+      },
+      {
         "cve_id": "CVE-2026-81302",
         "severity": "HIGH",
         "base_score": 7.8,
@@ -376,11 +334,53 @@
         "published": "2026-09-04T09:17:11.230"
       },
       {
+        "cve_id": "CVE-2026-6958",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Acunetix 25.11.251107123 for Windows contains a local privilege escalation vulnerability in the Web Vulnerability Scanning Engine (wvsc.exe) that allows low-privileged local attackers to execute arbit",
+        "published": "2026-09-04T15:17:35.360"
+      },
+      {
+        "cve_id": "CVE-2026-81832",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.1, and 12.0.1.0 through 12.0.12.28 and IBM Integration Bus for z/OS 10.1.0.0 through 10.1.0.7 SAP Adapter is vulnerable to an XML external entity (XX",
+        "published": "2026-09-04T15:17:35.550"
+      },
+      {
         "cve_id": "CVE-2026-85197",
         "severity": "HIGH",
         "base_score": 7.6,
         "description": "A flaw was found in libsoup. A malicious HTTP/2 server or a Man-in-the-Middle (MITM) attacker can exploit a heap use-after-free vulnerability in the HTTP/2 client implementation. This occurs when a GN",
         "published": "2026-09-04T08:17:16.677"
+      },
+      {
+        "cve_id": "CVE-2026-57777",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Automattic WooCommerce allows Blind SQL Injection.\n\nThis issue affects WooCommerce: from n/a befor",
+        "published": "2026-09-04T09:17:10.810"
+      },
+      {
+        "cve_id": "CVE-2026-81665",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A heap-based buffer overflow was found in Corosync's Totem Process Group (totempg) message reassembly. When processing fragmented multicast messages, the buffer used to reassemble fragments lacks a ru",
+        "published": "2026-09-04T09:17:11.357"
+      },
+      {
+        "cve_id": "CVE-2026-76169",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "fastify versions >= 4.0.0 and before 5.12.2 can route a malformed URL sent under one plugin prefix to the custom not-found handler of a different sibling plugin, and invoke it without the preHandler h",
+        "published": "2026-09-04T10:17:12.020"
+      },
+      {
+        "cve_id": "CVE-2026-84469",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "fastify versions before 5.12.2 decide whether to compile a request schema based on JavaScript truthiness, but JSON Schema Draft 7 defines the boolean false as a valid schema that rejects every instanc",
+        "published": "2026-09-04T10:17:13.677"
       }
     ]
   },
