@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T21:47:58.842337+00:00",
+  "generated_at": "2026-09-06T01:58:59.701928+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 34,
+        "value": 33,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
+        "value": 7,
         "score": 2.5,
         "max": 3
       },
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1695,
-    "recent_30d_count": 34,
+    "recent_30d_count": 33,
     "recent": [
       {
         "cve_id": "CVE-2026-85046",
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 152,
-    "critical_count": 5,
-    "high_count": 25,
+    "total": 133,
+    "critical_count": 7,
+    "high_count": 21,
     "cves": [
       {
         "cve_id": "CVE-2026-13447",
@@ -264,39 +264,32 @@
         "published": "2026-09-05T09:16:48.880"
       },
       {
-        "cve_id": "CVE-2026-75925",
+        "cve_id": "CVE-2026-86121",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Improper neutralization of CRLF sequences in IXON VPN Client before version 1.4.7 allows an attacker to execute commands as root or SYSTEM. Configuration values accepted by the local service are writt",
-        "published": "2026-09-04T22:17:18.017"
+        "base_score": 9.8,
+        "description": "Cua computer-server versions before 0.3.42 skip authentication when the CONTAINER_NAME environment variable is unset and bind to all interfaces by default, allowing unauthenticated attackers to execut",
+        "published": "2026-09-05T10:16:43.463"
       },
       {
-        "cve_id": "CVE-2026-52766",
+        "cve_id": "CVE-2026-86124",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "YesWiki is a wiki system written in PHP. Prior to version 4.6.6, the {{erasespamedcomments}} wiki action (actions/EraseSpamedCommentsAction.php) accepts a suppr[] array from POST and deletes every wik",
-        "published": "2026-09-05T00:17:19.393"
+        "base_score": 9.8,
+        "description": "AutoAgent contains an unauthenticated remote code execution vulnerability in the TCP server that binds to all interfaces and executes attacker-supplied commands as root. Attackers can connect to the e",
+        "published": "2026-09-05T10:16:43.900"
       },
       {
-        "cve_id": "CVE-2026-48019",
-        "severity": "HIGH",
-        "base_score": 8.9,
-        "description": "Laravel is a web application framework. Prior to versions 12.60.0 and 13.10.0, a CRLF injection vulnerability in Laravel's email validation, in combination with how Symfony Mailer and Symfony Mime han",
-        "published": "2026-09-04T23:17:09.143"
+        "cve_id": "CVE-2026-10196",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Mail Mint \u2013 Email Marketing, Newsletter, Email Automation & WooCommerce Emails plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 1.31.0 via deseriali",
+        "published": "2026-09-05T12:16:46.790"
       },
       {
-        "cve_id": "CVE-2026-77393",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "In Ignition 8.1.53 and earlier, the Gateway \"Create Project Role(s)\" setting shipped blank, which permitted any authenticated user to create projects (if they can execute gateway scripts). Ignition 8.",
-        "published": "2026-09-04T22:17:18.333"
-      },
-      {
-        "cve_id": "CVE-2026-52775",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "YesWiki is a wiki system written in PHP. Prior to version 4.6.6, YesWiki through the latest development branch contains a SQL injection vulnerability in ReactionManager::deleteUserReaction() that allo",
-        "published": "2026-09-05T00:17:20.520"
+        "cve_id": "CVE-2026-86184",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Lara Dashboard before 1.3.0 contains an authentication bypass vulnerability in the screenshot-login route that allows unauthenticated attackers to authenticate as any user by email when APP_ENV is not",
+        "published": "2026-09-05T12:16:49.090"
       },
       {
         "cve_id": "CVE-2026-19887",
@@ -313,25 +306,39 @@
         "published": "2026-09-05T08:16:40.730"
       },
       {
-        "cve_id": "CVE-2026-52769",
+        "cve_id": "CVE-2026-86169",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "YesWiki is a wiki system written in PHP. From version 4.6.2 to before version 4.6.6, the POST /api/forms/{formId}/actor/inbox route - exposed publicly with acl:\"public\" - accepts an HTTP Signature hea",
-        "published": "2026-09-05T00:17:19.683"
+        "base_score": 8.8,
+        "description": "Axolotl through 0.18.0 contains a remote code execution vulnerability in the multipack patch path where trust_remote_code defaults to None instead of False, causing the security guard to be bypassed. ",
+        "published": "2026-09-05T11:16:45.703"
       },
       {
-        "cve_id": "CVE-2026-52771",
+        "cve_id": "CVE-2026-86177",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "YesWiki is a wiki system written in PHP. From version 4.2.0 to before version 4.6.6, ApiController::deletePage() interpolates a page tag retrieved from the database into a DELETE FROM \u2026_links WHERE to",
-        "published": "2026-09-05T00:17:19.963"
+        "base_score": 8.8,
+        "description": "Pterodactyl Panel before 1.14.1 fails to validate action-specific permissions in scheduled task creation, allowing subusers with only schedule.update permission to execute arbitrary console commands. ",
+        "published": "2026-09-05T11:16:46.397"
       },
       {
-        "cve_id": "CVE-2026-52767",
+        "cve_id": "CVE-2025-9049",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "YesWiki is a wiki system written in PHP. From version 4.6.2 to before version 4.6.6, HttpSignatureService::verifySignature() checks the result of PHP's openssl_verify() with a loose boolean negation -",
-        "published": "2026-09-05T00:17:19.540"
+        "base_score": 8.8,
+        "description": "The Nokri \u2013 Job Board WordPress Theme theme for WordPress is vulnerable to unauthorized modification of data due to a missing capability check on the 'nokri_account_member_permissions' function in all",
+        "published": "2026-09-05T12:16:46.653"
+      },
+      {
+        "cve_id": "CVE-2026-86123",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "SQL Chat contains four unauthenticated API endpoints that accept client-supplied database connection parameters and execute arbitrary SQL queries against attacker-specified hosts. Attackers can connec",
+        "published": "2026-09-05T10:16:43.750"
+      },
+      {
+        "cve_id": "CVE-2026-86119",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Webstudio through 0.296.0 contains an unauthenticated server-side request forgery vulnerability in the /cgi/image, /cgi/video, and /cgi/asset proxy routes when RESIZE_ORIGIN environment variable is un",
+        "published": "2026-09-05T10:16:43.157"
       },
       {
         "cve_id": "CVE-2026-86145",
@@ -341,11 +348,11 @@
         "published": "2026-09-05T06:17:10.370"
       },
       {
-        "cve_id": "CVE-2026-82684",
+        "cve_id": "CVE-2026-86117",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Tycon Systems TPDIN-Monitor-WEB3 versions 2.2.9 and prior are vulnerable to a Missing Authorization vulnerability. This could allow an attacker to extract system credentials, configurations, or flash ",
-        "published": "2026-09-04T22:17:18.683"
+        "description": "Coolify through 4.3.17 contains an authentication bypass vulnerability in the OAuth callback handler that signs users into existing accounts based solely on email address without verifying provider as",
+        "published": "2026-09-05T10:16:42.860"
       },
       {
         "cve_id": "CVE-2026-86140",
@@ -355,25 +362,18 @@
         "published": "2026-09-05T05:17:12.877"
       },
       {
-        "cve_id": "CVE-2026-86095",
+        "cve_id": "CVE-2026-86185",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Unidata netcdf-c through 4.10.1 contains an out-of-bounds write vulnerability in NC4_HDF5_inq_attname() that copies HDF5 attribute names into a fixed 256-byte buffer without length validation. Attacke",
-        "published": "2026-09-04T23:18:03.220"
+        "base_score": 8.0,
+        "description": "Bilibili Desktop through 1.18.0 disables TLS certificate verification process-wide and executes unsigned remote JavaScript configuration without integrity checks. An attacker in an on-path network pos",
+        "published": "2026-09-05T12:16:49.240"
       },
       {
-        "cve_id": "CVE-2026-52770",
+        "cve_id": "CVE-2026-86173",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "YesWiki is a wiki system written in PHP. Prior to version 4.6.6, YesWiki\u2019s public Bazar entry-listing APIs are vulnerable to unauthenticated SQL injection in numeric query / queries filters. For Bazar",
-        "published": "2026-09-05T00:17:19.827"
-      },
-      {
-        "cve_id": "CVE-2026-86098",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "ntop nDPI versions before 6.0 contain a heap buffer overflow vulnerability in the ndpi_json_string_escape function that writes beyond caller-supplied buffer boundaries. Attackers can trigger the overf",
-        "published": "2026-09-04T23:18:03.687"
+        "description": "MindsDB through 26.1.0 contains a server-side request forgery vulnerability in the web crawler handler that allows unauthenticated attackers to fetch arbitrary URLs by supplying caller-controlled URLs",
+        "published": "2026-09-05T11:16:45.850"
       },
       {
         "cve_id": "CVE-2026-77233",
