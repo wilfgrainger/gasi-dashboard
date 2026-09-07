@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-07T01:56:13.283380+00:00",
+  "generated_at": "2026-09-07T08:45:23.771283+00:00",
   "threat_score": {
-    "score": 6.5,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.0,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
-        "score": 2.5,
+        "value": 0,
+        "score": 1.0,
         "max": 3
       },
       {
@@ -238,66 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 95,
-    "critical_count": 6,
-    "high_count": 27,
+    "total": 129,
+    "critical_count": 0,
+    "high_count": 21,
     "cves": [
-      {
-        "cve_id": "CVE-2026-86152",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "A flaw has been found in Tenda CP3 27.5.57.101. The impacted element is the function CAutoAddWifi::ThreadProc of the file Functions/AutoAddWifi.cpp of the component Kylin. Executing a manipulation can",
-        "published": "2026-09-06T02:17:19.370"
-      },
-      {
-        "cve_id": "CVE-2026-86167",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A vulnerability was identified in Tenda HG10 300001138. Impacted is the function formgponConf of the file /boaform/admin/formgponConf of the component Boa. The manipulation of the argument fmgpon_loid",
-        "published": "2026-09-06T05:16:50.477"
-      },
-      {
-        "cve_id": "CVE-2026-16310",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The MemberDash plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 1.8.5 via the 'id' parameter due to missing validation on a user controlled ",
-        "published": "2026-09-06T03:17:15.540"
-      },
-      {
-        "cve_id": "CVE-2026-75816",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Frontend Admin by DynamiApps plugin for WordPress is vulnerable to Authentication Bypass to Account Takeover in all versions up to, and including, 3.29.12. This is due to the pre_update_value func",
-        "published": "2026-09-06T03:17:16.607"
-      },
-      {
-        "cve_id": "CVE-2026-86165",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A vulnerability was found in Tenda HG10 300001138. This vulnerability affects the function formURL of the file /boaform/admin/formURL. Performing a manipulation of the argument Keywd/urlFQDN results i",
-        "published": "2026-09-06T04:18:32.523"
-      },
-      {
-        "cve_id": "CVE-2026-86153",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A vulnerability has been found in Tenda CP3 27.5.57.101. This affects the function CRedirServer::SetRedirectEnable of the file Functions/Redirect.cpp. The manipulation leads to improper privilege mana",
-        "published": "2026-09-06T02:17:19.770"
-      },
-      {
-        "cve_id": "CVE-2026-86166",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability was determined in Tenda HG10 300001138. This issue affects the function formWanRedirect of the file /boaform/formWanRedirect of the component Boa Web Server. Executing a manipulation o",
-        "published": "2026-09-06T04:18:32.783"
-      },
-      {
-        "cve_id": "CVE-2026-18480",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The SureCart  WordPress plugin before 4.6.3 does not ensure that the account affected by a customer update is the same account its permission check authorised, allowing users with a subscriber-level a",
-        "published": "2026-09-06T07:16:43.097"
-      },
       {
         "cve_id": "CVE-2026-19633",
         "severity": "HIGH",
@@ -313,18 +257,11 @@
         "published": "2026-09-06T12:17:15.583"
       },
       {
-        "cve_id": "CVE-2026-18056",
+        "cve_id": "CVE-2026-86313",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The HivePress Authentication plugin for WordPress is vulnerable to Authentication Bypass via the access_token parameter in all versions up to, and including, 1.1.4. This is due to the authenticate_use",
-        "published": "2026-09-06T03:17:16.467"
-      },
-      {
-        "cve_id": "CVE-2026-84219",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Kirki  WordPress plugin before 6.3.0 does not hold back every spelling of the HTML entities it decodes when rendering, allowing unauthenticated users to store JavaScript in a comment which then ru",
-        "published": "2026-09-06T07:16:43.427"
+        "base_score": 7.8,
+        "description": "Out-of-bounds write vulnerability in Samsung Opensource Walrus allows Overflow Buffers.\n\nThis issue affects Walrus: af80e665ea49d9003695a66502f841ed1d8397e7.",
+        "published": "2026-09-07T03:17:19.407"
       },
       {
         "cve_id": "CVE-2022-51009",
@@ -348,39 +285,102 @@
         "published": "2026-09-06T13:17:10.963"
       },
       {
-        "cve_id": "CVE-2026-86159",
+        "cve_id": "CVE-2026-86208",
         "severity": "HIGH",
         "base_score": 7.3,
-        "description": "A flaw has been found in SourceCodester Online Voting System 1.0. Impacted is an unknown function of the file /ajax.php?action=save_user. This manipulation of the argument ID causes sql injection. The",
-        "published": "2026-09-06T03:17:16.730"
+        "description": "A security flaw has been discovered in SourceCodester Class and Exam Timetabling System 1.0. This impacts an unknown function of the file /delete_teacher.php. The manipulation of the argument ID resul",
+        "published": "2026-09-06T10:17:14.933"
       },
       {
-        "cve_id": "CVE-2026-86160",
+        "cve_id": "CVE-2026-86209",
         "severity": "HIGH",
         "base_score": 7.3,
-        "description": "A vulnerability has been found in SourceCodester Online Voting System 1.0. The affected element is an unknown function of the file /ajax.php?action=delete_voting. Such manipulation of the argument ID ",
-        "published": "2026-09-06T03:17:16.913"
+        "description": "A weakness has been identified in SourceCodester Class and Exam Timetabling System 1.0. Affected is an unknown function of the file /delete_user.php. This manipulation of the argument ID causes sql in",
+        "published": "2026-09-06T10:17:15.163"
       },
       {
-        "cve_id": "CVE-2026-86161",
+        "cve_id": "CVE-2026-86210",
         "severity": "HIGH",
         "base_score": 7.3,
-        "description": "A vulnerability was found in SourceCodester Online Voting System 1.0. The impacted element is an unknown function of the file /ajax.php?action=delete_category. Performing a manipulation of the argumen",
-        "published": "2026-09-06T03:17:17.067"
+        "description": "A security vulnerability has been detected in SourceCodester Class and Exam Timetabling System 1.0. Affected by this vulnerability is an unknown functionality of the file /delete_user_account.php. Suc",
+        "published": "2026-09-06T10:17:15.330"
       },
       {
-        "cve_id": "CVE-2026-86162",
+        "cve_id": "CVE-2026-86211",
         "severity": "HIGH",
         "base_score": 7.3,
-        "description": "A vulnerability was determined in SourceCodester Online Voting System 1.0. This affects an unknown function of the file /ajax.php?action=login. Executing a manipulation of the argument Username can le",
-        "published": "2026-09-06T03:17:17.220"
+        "description": "A flaw has been found in rabindralamsal inventory-management-system 1.0.0. This affects an unknown part of the file index.php of the component Login. Executing a manipulation of the argument username/",
+        "published": "2026-09-06T11:18:06.427"
       },
       {
-        "cve_id": "CVE-2026-86168",
+        "cve_id": "CVE-2026-86213",
         "severity": "HIGH",
         "base_score": 7.3,
-        "description": "A security flaw has been discovered in code-projects Content Management System 1.0. The affected element is an unknown function of the file /login.php. The manipulation of the argument user_name resul",
-        "published": "2026-09-06T05:16:50.673"
+        "description": "A vulnerability was found in Mstfakts College-Management-System. This issue affects the function mysqli_query of the file Front-end/university.php of the component Search Handler. The manipulation of ",
+        "published": "2026-09-06T13:17:10.487"
+      },
+      {
+        "cve_id": "CVE-2026-86214",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was determined in Mstfakts College-Management-System. Impacted is an unknown function of the file Front-end/login.php. This manipulation of the argument email causes improper authentic",
+        "published": "2026-09-06T13:17:10.667"
+      },
+      {
+        "cve_id": "CVE-2026-86220",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was detected in SourceCodester Class and Exam Timetabling System 1.0. The affected element is the function mysqli_query of the file /admin/modal_add_course.php. The manipulation of the",
+        "published": "2026-09-06T18:17:23.150"
+      },
+      {
+        "cve_id": "CVE-2026-86221",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A flaw has been found in SourceCodester Class and Exam Timetabling System 1.0. The impacted element is the function mysqli_query of the file /admin/modal_add_course1.php. This manipulation of the argu",
+        "published": "2026-09-06T19:17:27.943"
+      },
+      {
+        "cve_id": "CVE-2026-86222",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability has been found in SourceCodester Class and Exam Timetabling System 1.0. This affects the function mysqli_query of the file /admin/modal_add_course2.php. Such manipulation of the argume",
+        "published": "2026-09-06T20:17:28.117"
+      },
+      {
+        "cve_id": "CVE-2026-86223",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was found in SourceCodester Class and Exam Timetabling System 1.0. This impacts the function mysqli_query of the file /admin/modal_add_coursea.php. Performing a manipulation of the arg",
+        "published": "2026-09-06T20:17:28.280"
+      },
+      {
+        "cve_id": "CVE-2026-86224",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was determined in SourceCodester Class and Exam Timetabling System 1.0. Affected is the function mysqli_query of the file /admin/modal_add_product.php. Executing a manipulation of the ",
+        "published": "2026-09-06T21:17:22.567"
+      },
+      {
+        "cve_id": "CVE-2026-86225",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was identified in SourceCodester Class and Exam Timetabling System 1.0. Affected by this vulnerability is the function mysqli_query of the file /admin/modal_add_room.php. The manipulat",
+        "published": "2026-09-06T22:17:20.507"
+      },
+      {
+        "cve_id": "CVE-2026-86261",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A weakness has been identified in sfturing hosp_order up to 627f426331da8086ce8fff2017d65b1ddef384f8. The impacted element is an unknown function of the file ssm_pro/src/main/java/cn/sfturing/web/Orde",
+        "published": "2026-09-07T03:17:18.723"
+      },
+      {
+        "cve_id": "CVE-2026-86262",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A security vulnerability has been detected in sfturing hosp_order up to 627f426331da8086ce8fff2017d65b1ddef384f8. This affects the function updateOrderSta1/updateOrderdiseaseInfo of the file ssm_pro/s",
+        "published": "2026-09-07T03:17:18.893"
       }
     ]
   },
