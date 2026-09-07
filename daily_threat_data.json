@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-07T08:45:23.771283+00:00",
+  "generated_at": "2026-09-07T16:52:00.802458+00:00",
   "threat_score": {
-    "score": 5.0,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 1.0,
+        "value": 2,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,23 +238,37 @@
     ]
   },
   "nvd": {
-    "total": 129,
-    "critical_count": 0,
-    "high_count": 21,
+    "total": 219,
+    "critical_count": 2,
+    "high_count": 20,
     "cves": [
       {
-        "cve_id": "CVE-2026-19633",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "PostgreSQL Anonymizer contains a vulnerability that allows unprivileged masked users to execute arbitrary code by abusing operators, domain casts, or view subqueries that carry untrusted expressions. ",
-        "published": "2026-09-06T16:16:49.583"
+        "cve_id": "CVE-2026-79697",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A vulnerability was determined in Advantech WISE-6610-NB, WISE-6610-EB, WISE-6610-TB, WISE-6610-JB, WISE-6610-CB, WISE-6610-EL-NB, WISE-6610-EL-EB, WISE-6610-EL-TB, WISE-6610-EL-JB, WISE-6610-EL-CB, W",
+        "published": "2026-09-07T07:16:45.903"
       },
       {
-        "cve_id": "CVE-2026-86242",
+        "cve_id": "CVE-2026-79698",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A vulnerability was identified in Advantech WISE-6610-NB, WISE-6610-EB, WISE-6610-TB, WISE-6610-JB, WISE-6610-CB, WISE-6610-EL-NB, WISE-6610-EL-EB, WISE-6610-EL-TB, WISE-6610-EL-JB, WISE-6610-EL-CB, W",
+        "published": "2026-09-07T07:16:47.420"
+      },
+      {
+        "cve_id": "CVE-2026-20501",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Bifrost HTTP transport before 2.0.0 accepts an enabled custom plugin whose path is an HTTP URL through unauthenticated POST /api/plugins when management authentication is disabled (the default, govern",
-        "published": "2026-09-06T12:17:15.583"
+        "base_score": 8.4,
+        "description": "In vdec, there is a possible out of bounds write due to a heap buffer overflow. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not",
+        "published": "2026-09-07T02:17:18.800"
+      },
+      {
+        "cve_id": "CVE-2026-20502",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "In vdec, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not",
+        "published": "2026-09-07T02:17:18.917"
       },
       {
         "cve_id": "CVE-2026-86313",
@@ -264,67 +278,11 @@
         "published": "2026-09-07T03:17:19.407"
       },
       {
-        "cve_id": "CVE-2022-51009",
+        "cve_id": "CVE-2026-14296",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "PocketMine-MP before 4.7.2 fails to properly handle exceptions from the adhocore/json-comment library when parsing skin geometry data. Attackers can send login or skin packets with invalid geometry JS",
-        "published": "2026-09-06T12:17:15.073"
-      },
-      {
-        "cve_id": "CVE-2026-86250",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "h3 versions before 2.0.1-rc.18 fail to validate the chunk count parsed from user-controlled cookie values in setChunkedCookie() and deleteChunkedCookie() functions. Attackers can send a crafted cookie",
-        "published": "2026-09-06T12:17:15.767"
-      },
-      {
-        "cve_id": "CVE-2026-86259",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "OpenMAIC before 1.0.1 skips server-side request forgery validation in non-production builds, allowing unauthenticated attackers to reach cloud instance metadata services. Attackers can supply arbitrar",
-        "published": "2026-09-06T13:17:10.963"
-      },
-      {
-        "cve_id": "CVE-2026-86208",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security flaw has been discovered in SourceCodester Class and Exam Timetabling System 1.0. This impacts an unknown function of the file /delete_teacher.php. The manipulation of the argument ID resul",
-        "published": "2026-09-06T10:17:14.933"
-      },
-      {
-        "cve_id": "CVE-2026-86209",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A weakness has been identified in SourceCodester Class and Exam Timetabling System 1.0. Affected is an unknown function of the file /delete_user.php. This manipulation of the argument ID causes sql in",
-        "published": "2026-09-06T10:17:15.163"
-      },
-      {
-        "cve_id": "CVE-2026-86210",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security vulnerability has been detected in SourceCodester Class and Exam Timetabling System 1.0. Affected by this vulnerability is an unknown functionality of the file /delete_user_account.php. Suc",
-        "published": "2026-09-06T10:17:15.330"
-      },
-      {
-        "cve_id": "CVE-2026-86211",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A flaw has been found in rabindralamsal inventory-management-system 1.0.0. This affects an unknown part of the file index.php of the component Login. Executing a manipulation of the argument username/",
-        "published": "2026-09-06T11:18:06.427"
-      },
-      {
-        "cve_id": "CVE-2026-86213",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was found in Mstfakts College-Management-System. This issue affects the function mysqli_query of the file Front-end/university.php of the component Search Handler. The manipulation of ",
-        "published": "2026-09-06T13:17:10.487"
-      },
-      {
-        "cve_id": "CVE-2026-86214",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was determined in Mstfakts College-Management-System. Impacted is an unknown function of the file Front-end/login.php. This manipulation of the argument email causes improper authentic",
-        "published": "2026-09-06T13:17:10.667"
+        "description": "When using the Direct XIP\nupdate strategy, the main application image starts other cores (i.e. radio\ncore), based on the currently active slot without additional verification. The\nMCUboot in the bare ",
+        "published": "2026-09-07T08:17:11.773"
       },
       {
         "cve_id": "CVE-2026-86220",
@@ -381,6 +339,48 @@
         "base_score": 7.3,
         "description": "A security vulnerability has been detected in sfturing hosp_order up to 627f426331da8086ce8fff2017d65b1ddef384f8. This affects the function updateOrderSta1/updateOrderdiseaseInfo of the file ssm_pro/s",
         "published": "2026-09-07T03:17:18.893"
+      },
+      {
+        "cve_id": "CVE-2026-86263",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was detected in sfturing hosp_order up to 627f426331da8086ce8fff2017d65b1ddef384f8. This impacts the function orderRecordsService.cancelOrder of the file ssm_pro/src/main/java/cn/sftur",
+        "published": "2026-09-07T03:17:19.070"
+      },
+      {
+        "cve_id": "CVE-2026-86268",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was detected in itsourcecode School Management System 1.0. Impacted is an unknown function of the file User_Login.php. The manipulation of the argument email results in sql injection. ",
+        "published": "2026-09-07T04:17:55.277"
+      },
+      {
+        "cve_id": "CVE-2026-86272",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was determined in Beijing Meite Software Technology U+Smart Enjoyment WebSite 18.6001.1096.1000. This impacts an unknown function of the file /Report/Upload/UploadFormImg.ashx. Executi",
+        "published": "2026-09-07T05:16:55.387"
+      },
+      {
+        "cve_id": "CVE-2026-86273",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A weakness has been identified in projeto-siga siga up to 11.1.1. Affected by this issue is the function DownloadExterno.getUrl of the file sigaex/src/main/java/br/gov/jfrj/siga/vraptor/ExUtilControll",
+        "published": "2026-09-07T06:17:23.580"
+      },
+      {
+        "cve_id": "CVE-2026-86276",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A flaw has been found in SourceCodester Syllabus-Aligned Learning Management & Examination System 1.0. This issue affects some unknown processing of the file db.php. Executing a manipulation can lead ",
+        "published": "2026-09-07T06:17:24.173"
+      },
+      {
+        "cve_id": "CVE-2026-86277",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability has been found in SourceCodester Syllabus-Aligned Learning Management & Examination System 1.0. Impacted is an unknown function of the file delete_exam.php. The manipulation of the arg",
+        "published": "2026-09-07T07:16:47.620"
       }
     ]
   },
