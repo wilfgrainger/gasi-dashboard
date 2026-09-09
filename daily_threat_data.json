@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-08T22:10:37.750450+00:00",
+  "generated_at": "2026-09-09T02:11:49.442279+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 13,
-        "score": 3.0,
+        "value": 7,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,17 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 1562,
-    "critical_count": 13,
-    "high_count": 30,
+    "total": 1786,
+    "critical_count": 7,
+    "high_count": 32,
     "cves": [
-      {
-        "cve_id": "CVE-2026-44756",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "A memory safety vulnerability exists in the Extended Passport Protocol (EPP) processing library. Under specific conditions, an unauthenticated attacker could exploit a crafted network request containi",
-        "published": "2026-09-08T01:17:30.840"
-      },
       {
         "cve_id": "CVE-2026-86510",
         "severity": "CRITICAL",
@@ -257,18 +250,11 @@
         "published": "2026-09-08T02:17:28.357"
       },
       {
-        "cve_id": "CVE-2026-86543",
+        "cve_id": "CVE-2026-78234",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "knowns versions before 0.30.0 serve the management API without authentication on all network interfaces by default, with no password required on fresh installations. Attackers can access the unauthent",
-        "published": "2026-09-07T23:16:54.160"
-      },
-      {
-        "cve_id": "CVE-2026-58240",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "SAP NetWeaver Message Server does not sufficiently validate the authenticity of internal application server components during registration. An unauthenticated attacker with network access to the affec",
-        "published": "2026-09-08T01:17:51.080"
+        "base_score": 9.9,
+        "description": "A flaw was found in hawtio-operator. The operator reads the OpenShift Service CA private signing key from the openshift-service-ca namespace and uses it to mint client certificates with a Subject Comm",
+        "published": "2026-09-08T12:16:59.560"
       },
       {
         "cve_id": "CVE-2026-71374",
@@ -299,46 +285,11 @@
         "published": "2026-09-08T09:18:20.840"
       },
       {
-        "cve_id": "CVE-2026-86509",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "A flaw has been found in D-Link DIR-895L A1_102b07. This impacts the function sendOffer/sendACK of the file udhcpcd/serverpacket.c of the component udhcpcd. This manipulation causes stack-based buffer",
-        "published": "2026-09-08T01:17:55.947"
-      },
-      {
-        "cve_id": "CVE-2026-76969",
-        "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "@sap/cds-mtxs NPM library does not perform sufficient checks on certain functionality used in multitenant CAP applications with extensibility enabled. An unauthenticated attacker could send specially ",
-        "published": "2026-09-08T01:17:55.407"
-      },
-      {
-        "cve_id": "CVE-2026-86542",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "knowns before 0.30.0 fails to validate import names in the import routes, allowing unauthenticated attackers to write files outside the imports directory. Attackers can supply traversal sequences in t",
-        "published": "2026-09-07T23:16:54.020"
-      },
-      {
-        "cve_id": "CVE-2026-66768",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "SAP GUI for Java does not correctly enforce the trust level policy for certain functions invoked from a connected backend system. A low-privileged attacker could exploit this weakness by manipulating ",
-        "published": "2026-09-08T01:17:52.113"
-      },
-      {
         "cve_id": "CVE-2026-50093",
         "severity": "CRITICAL",
         "base_score": 9.0,
         "description": "A vulnerability has been identified in Siveillance Control Pro V3.0 (All versions < V3.0.12.2173), Siveillance Control Pro V4.0 (All versions < V4.0.9.2178), Siveillance Control V3.0 (All versions < V",
         "published": "2026-09-08T09:18:10.733"
-      },
-      {
-        "cve_id": "CVE-2026-86439",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "knowns versions before 0.30.0 fail to validate filesystem paths in MCP tool arguments, allowing attackers to read, create, overwrite and delete files outside the project directory. Attackers can suppl",
-        "published": "2026-09-07T23:16:53.297"
       },
       {
         "cve_id": "CVE-2026-62650",
@@ -355,6 +306,20 @@
         "published": "2026-09-08T12:16:52.443"
       },
       {
+        "cve_id": "CVE-2026-86712",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "SiYuan before 3.8.2 trusts the attacker-writable text/siyuan clipboard MIME type and skips sanitization in the paste handler, allowing code execution in the Node-enabled desktop renderer. Attackers ca",
+        "published": "2026-09-08T12:16:59.990"
+      },
+      {
+        "cve_id": "CVE-2026-80219",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "A flaw was found in hawtio-operator. When deploying Hawtio in cluster mode, the operator creates a cluster-scoped OAuthClient with automatic grant approval (GrantMethod: auto) and no client secret (pu",
+        "published": "2026-09-08T12:16:59.700"
+      },
+      {
         "cve_id": "CVE-2026-67367",
         "severity": "HIGH",
         "base_score": 8.6,
@@ -362,18 +327,11 @@
         "published": "2026-09-08T09:18:20.577"
       },
       {
-        "cve_id": "CVE-2026-76958",
+        "cve_id": "CVE-2026-74860",
         "severity": "HIGH",
         "base_score": 8.5,
-        "description": "SAP Integration Suite does not sufficiently validate XML documents accepted from untrusted sources in certain internal components. An attacker with low privileges could submit specially crafted XML pa",
-        "published": "2026-09-08T01:17:54.430"
-      },
-      {
-        "cve_id": "CVE-2026-86541",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "knowns versions before 0.30.0 contain a path traversal vulnerability in the handleCodeReplace() function that allows attackers to overwrite arbitrary files outside the project root. Attackers can supp",
-        "published": "2026-09-07T23:16:53.863"
+        "description": "A flaw was found in libxml2 with Python bindings enabled. A remote attacker could exploit this vulnerability by providing a specially crafted XML document containing a Document Type Definition (DTD) w",
+        "published": "2026-09-08T12:16:58.083"
       },
       {
         "cve_id": "CVE-2026-34223",
@@ -381,6 +339,48 @@
         "base_score": 8.2,
         "description": "A vulnerability has been identified in Desigo CC ClickOnce Client V6 (All versions), Desigo CC ClickOnce Client V7 (All versions), Desigo CC family V8 (All versions), Desigo CC family V9 (All versions",
         "published": "2026-09-08T09:18:00.373"
+      },
+      {
+        "cve_id": "CVE-2026-77968",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "A flaw was found in hawtio-operator. The operator's ClusterRole grants secrets: [create, get, list, update, watch] across all namespaces. While the operator uses a controller-runtime label-selector ca",
+        "published": "2026-09-08T12:16:59.427"
+      },
+      {
+        "cve_id": "CVE-2026-75021",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "fastify-cli starts the Node.js Inspector when a debug flag is used, but it ignores the explicit bind address the user supplies and binds the Inspector to a broadly reachable address instead of the int",
+        "published": "2026-09-08T13:17:24.010"
+      },
+      {
+        "cve_id": "CVE-2026-48888",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Allocation of Resources Without Limits or Throttling vulnerability in Automattic WooCommerce allows HTTP DoS.\n\nThis issue affects WooCommerce: from n/a before 11.1.0.",
+        "published": "2026-09-08T08:17:10.923"
+      },
+      {
+        "cve_id": "CVE-2026-81790",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Missing Authorization vulnerability in Viszt P\u00e9ter Csomagpontok \u00e9s sz\u00e1ll\u00edt\u00e1si c\u00edmk\u00e9k WooCommerce-hez allows Exploiting Incorrectly Configured Access Control Security Levels.\n\nThis issue affects Csomag",
+        "published": "2026-09-08T08:17:12.763"
+      },
+      {
+        "cve_id": "CVE-2026-62648",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A vulnerability has been identified in Reyrolle 7SR5 (All versions < V2.70). The length of the URL component contained in pre-authenticated HTTP messages is not properly validated before appending add",
+        "published": "2026-09-08T09:18:16.963"
+      },
+      {
+        "cve_id": "CVE-2026-62649",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A vulnerability has been identified in Reyrolle 7SR5 (All versions < V2.70). The web server does not properly limit or manage system resources when processing a high volume of concurrent HTTP requests",
+        "published": "2026-09-08T09:18:17.093"
       }
     ]
   },
