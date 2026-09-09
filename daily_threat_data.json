@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-09T18:56:15.909979+00:00",
+  "generated_at": "2026-09-09T22:06:22.404245+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 37,
+        "value": 41,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
-        "score": 2.5,
+        "value": 11,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -32,9 +32,49 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1699,
-    "recent_30d_count": 37,
+    "total_catalog_count": 1703,
+    "recent_30d_count": 41,
     "recent": [
+      {
+        "cve_id": "CVE-2026-19490",
+        "vendor": "Citrix",
+        "product": "NetScaler",
+        "name": "Citrix NetScaler Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+        "date_added": "2026-09-09",
+        "due_date": "2026-09-12",
+        "description": "Citrix NetScaler ADC and NetScaler Gateway contain an authentication-bypass vulnerability involving an alternate path or channel. When the NetScaler appliance is configured as an AAA virtual server or",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2025-25249",
+        "vendor": "Fortinet",
+        "product": "Multiple Products",
+        "name": "Fortinet Multiple Products Heap-based Buffer Overflow Vulnerability",
+        "date_added": "2026-09-09",
+        "due_date": "2026-09-12",
+        "description": "Fortinet FortiOS, FortiSwitchManager, and FortiSASE contain a heap-based buffer overflow vulnerability that allows an attacker to execute unauthorized code or commands via specially crafted packets.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-87491",
+        "vendor": "Google",
+        "product": "Chromium V8",
+        "name": "Google Chromium V8 Out of Bounds Write Vulnerability",
+        "date_added": "2026-09-09",
+        "due_date": "2026-09-23",
+        "description": "Google Chromium V8 contains an out of bounds write vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect mul",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-20079",
+        "vendor": "Cisco",
+        "product": "Secure Firewall Management Center (FMC) and Security Cloud Control (SCC) Firewall Management",
+        "name": "Cisco Firewall Management Center Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+        "date_added": "2026-09-09",
+        "due_date": "2026-09-12",
+        "description": "Cisco Secure Firewall Management Center (FMC) Software and Cisco Security Cloud Control (SCC) Firewall Management contain an authentication Bypass using an alternate path or channel vulnerability that",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-75650",
         "vendor": "Adobe",
@@ -194,193 +234,153 @@
         "due_date": "2026-08-30",
         "description": "Linux Kernel contains an unspecified vulnerability that can allow for privilege escalation via IPv6 networking subsystem. This vulnerability can impact multiple products, including but not limited to ",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-66384",
-        "vendor": "JFrog",
-        "product": "Artifactory",
-        "name": "JFrog Artifactory Improper Limitation of a Pathname to a Restricted Directory Vulnerability",
-        "date_added": "2026-08-27",
-        "due_date": "2026-09-10",
-        "description": "JFrog Artifactory contains an improper limitation of a pathname to a restricted directory vulnerability. This can allow an authenticated user to write data outside the intended Docker cache path under",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2021-23758",
-        "vendor": "Ajax.NET Professional",
-        "product": "Ajax.NET Professional",
-        "name": "Ajax.NET Professional Deserialization of Untrusted Data Vulnerability",
-        "date_added": "2026-08-26",
-        "due_date": "2026-09-09",
-        "description": "Ajax.NET Professional (AjaxPro) contains a deserialization of untrusted data vulnerability that could allow for remote code execution via arbitrary .NET classes. The impacted product(s) could be end-o",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2015-3246",
-        "vendor": "Red Hat",
-        "product": "Libuser",
-        "name": "Red Hat Libuser Race Condition Vulnerability",
-        "date_added": "2026-08-26",
-        "due_date": "2026-09-09",
-        "description": "Red Hat libuser contains a race condition vulnerability that allows authenticated local users to corrupt the /etc/passwd file to cause a denial of service or privilege escalation. ",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2015-5287",
-        "vendor": "Red Hat",
-        "product": "Automatic Bug Reporting Tool",
-        "name": "Red Hat Automatic Bug Reporting Tool Privilege Escalation Vulnerability",
-        "date_added": "2026-08-26",
-        "due_date": "2026-09-09",
-        "description": "Red Hat Automatic Bug Reporting Tool (ABRT) contains a privilege escalation vulnerability that could allow local users with certain permissions to gain privileges via a symlink attack on a file with a",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 948,
-    "critical_count": 5,
-    "high_count": 18,
+    "total": 669,
+    "critical_count": 11,
+    "high_count": 13,
     "cves": [
       {
-        "cve_id": "CVE-2026-49921",
+        "cve_id": "CVE-2026-87438",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "In multiple locations, there is a possible memory safety issue due to a heap buffer overflow. This could lead to remote code execution with no additional execution privileges needed. User interaction ",
-        "published": "2026-09-08T19:17:59.193"
+        "base_score": 9.6,
+        "description": "Out of bounds write in WebGL in Google Chrome on on Android prior to 153.0.8010.36 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security s",
+        "published": "2026-09-09T01:17:00.027"
       },
       {
-        "cve_id": "CVE-2026-58822",
+        "cve_id": "CVE-2026-87448",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "In multiple functions of ftsmooth.c, there is a possible memory safety issue due to improper casting. This could lead to remote code execution with no additional execution privileges needed. User inte",
-        "published": "2026-09-08T19:18:02.780"
+        "base_score": 9.6,
+        "description": "Use after free in DevTools in Google Chrome prior to 153.0.8010.36 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Low)",
+        "published": "2026-09-09T01:17:01.113"
       },
       {
-        "cve_id": "CVE-2026-66302",
+        "cve_id": "CVE-2026-87455",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "External control of file name or path in Skype for Business allows an unauthorized attacker to execute code over a network.",
-        "published": "2026-09-08T19:18:07.690"
+        "base_score": 9.6,
+        "description": "Use after free in Aura in Google Chrome prior to 153.0.8010.36 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity:",
+        "published": "2026-09-09T01:17:01.883"
       },
       {
-        "cve_id": "CVE-2026-76200",
+        "cve_id": "CVE-2026-87464",
         "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Adobe Commerce is affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by an attacker to inject malicious scripts into vulnerable form fields. Malicious JavaScript may be",
-        "published": "2026-09-08T19:19:40.813"
+        "base_score": 9.6,
+        "description": "Use after free in WebGL in Google Chrome prior to 153.0.8010.36 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+        "published": "2026-09-09T01:17:02.907"
       },
       {
-        "cve_id": "CVE-2026-76201",
+        "cve_id": "CVE-2026-87470",
         "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Adobe Commerce is affected by a stored Cross-Site Scripting (XSS) vulnerability that could be abused by an attacker to inject malicious scripts into vulnerable form fields. Malicious JavaScript may be",
-        "published": "2026-09-08T19:19:40.947"
+        "base_score": 9.6,
+        "description": "Improper quantity validation in Tint in Google Chrome on on Mac prior to 153.0.8010.36 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chr",
+        "published": "2026-09-09T01:17:03.560"
       },
       {
-        "cve_id": "CVE-2026-69646",
+        "cve_id": "CVE-2026-87474",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Use after free in Payments in Google Chrome prior to 153.0.8010.36 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security sever",
+        "published": "2026-09-09T01:17:03.990"
+      },
+      {
+        "cve_id": "CVE-2026-87488",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Use after free in WebGL in Google Chrome on on Android prior to 153.0.8010.36 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severi",
+        "published": "2026-09-09T01:17:05.557"
+      },
+      {
+        "cve_id": "CVE-2026-87492",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Incorrect authorization in DevTools in Google Chrome prior to 153.0.8010.36 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium secur",
+        "published": "2026-09-09T01:17:05.993"
+      },
+      {
+        "cve_id": "CVE-2026-87494",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Use after free in Browser in Google Chrome on on Windows prior to 153.0.8010.36 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML",
+        "published": "2026-09-09T01:17:06.207"
+      },
+      {
+        "cve_id": "CVE-2026-53939",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "OpenIDC/cjose is a C library implementing the Javascript Object Signing and Encryption (JOSE). In versions 0.6.1 through 0.6.2.5, when cjose encrypts a JWE using an AES-CBC-HMAC content-encryption alg",
+        "published": "2026-09-09T00:17:31.700"
+      },
+      {
+        "cve_id": "CVE-2026-53581",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "OPNsense is a FreeBSD based firewall and routing platform. Prior to version 26.1.9 of opnsense/core and version 26.4_20 of BE/opnsense/core, a path traversal vulnerability in the NTP configuration mod",
+        "published": "2026-09-08T23:17:24.550"
+      },
+      {
+        "cve_id": "CVE-2026-87430",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Buffer overflow in WebRTC in Google Chrome prior to 153.0.8010.36 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severit",
+        "published": "2026-09-09T01:16:59.130"
+      },
+      {
+        "cve_id": "CVE-2026-87440",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Out of bounds read in Media in Google Chrome prior to 153.0.8010.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-09-09T01:17:00.240"
+      },
+      {
+        "cve_id": "CVE-2026-87444",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Memory corruption in Codecs in Google Chrome prior to 153.0.8010.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-09-09T01:17:00.677"
+      },
+      {
+        "cve_id": "CVE-2026-87460",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use after free in Platform in Google Chrome prior to 153.0.8010.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-09-09T01:17:02.460"
+      },
+      {
+        "cve_id": "CVE-2026-87489",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Memory corruption in V8 in Google Chrome prior to 153.0.8010.36 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted Chrome extension. (Chromium security se",
+        "published": "2026-09-09T01:17:05.663"
+      },
+      {
+        "cve_id": "CVE-2026-87491",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Out of bounds write in V8 in Google Chrome prior to 153.0.8010.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+        "published": "2026-09-09T01:17:05.887"
+      },
+      {
+        "cve_id": "CVE-2026-87479",
         "severity": "HIGH",
         "base_score": 8.3,
-        "description": "Improper verification of cryptographic signature in Skype for Business allows an unauthorized attacker to perform spoofing over an adjacent network.",
-        "published": "2026-09-08T19:19:04.560"
+        "description": "Insufficient policy enforcement in Extensions in Google Chrome prior to 153.0.8010.36 allowed a remote attacker who had compromised the renderer process and leveraged social engineering to potentially",
+        "published": "2026-09-09T01:17:04.553"
       },
       {
-        "cve_id": "CVE-2026-55277",
+        "cve_id": "CVE-2026-87480",
         "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "In checkUiccListenConfigNeeded of RoutingManager.cpp, there is a possible out of bounds write due to a missing bounds check. This could lead to remote (proximal/adjacent) code execution with no additi",
-        "published": "2026-09-08T19:18:01.600"
+        "base_score": 8.3,
+        "description": "Use after free in Printing in Google Chrome prior to 153.0.8010.36 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a cr",
+        "published": "2026-09-09T01:17:04.660"
       },
       {
-        "cve_id": "CVE-2026-28664",
+        "cve_id": "CVE-2026-87481",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "In WriteImageToDisk of runtime_image.cc, there is a possible file tampering due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges n",
-        "published": "2026-09-08T19:17:56.790"
-      },
-      {
-        "cve_id": "CVE-2026-49927",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "In multiple locations, there is a possible out of bounds write due to an integer overflow. This could lead to local escalation of privilege with no additional execution privileges needed. User interac",
-        "published": "2026-09-08T19:17:59.283"
-      },
-      {
-        "cve_id": "CVE-2026-49932",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "In parseParts of PduParser.java, there is a possible out of bounds read due to a heap buffer overflow. This could lead to local escalation of privilege with no additional execution privileges needed. ",
-        "published": "2026-09-08T19:17:59.377"
-      },
-      {
-        "cve_id": "CVE-2026-55273",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "In AppendCommentLine of AnnotationProcessor.cpp, there is a possible supply chain risk due to improper input validation. This could lead to local escalation of privilege with no additional execution p",
-        "published": "2026-09-08T19:18:01.500"
-      },
-      {
-        "cve_id": "CVE-2026-55285",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "In openLogicalChannel of multiple files, there is a possible out-of-bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges",
-        "published": "2026-09-08T19:18:01.727"
-      },
-      {
-        "cve_id": "CVE-2026-55294",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "In ihevcd_get_tu_data_size of ihevcd_utils.c, there is a possible out of bounds write due to a heap buffer overflow. This could lead to local escalation of privilege with no additional execution privi",
-        "published": "2026-09-08T19:18:01.923"
-      },
-      {
-        "cve_id": "CVE-2026-58820",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "In multiple locations, there is a possible memory safety issue due to integer overflow. This could lead to local escalation of privilege with no additional execution privileges required.",
-        "published": "2026-09-08T19:18:02.687"
-      },
-      {
-        "cve_id": "CVE-2026-58823",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "In stpropnci_process_std of stpropnci_std.cc, there is a possible memory safety issue due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privi",
-        "published": "2026-09-08T19:18:02.873"
-      },
-      {
-        "cve_id": "CVE-2026-58839",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "In forEachLine of MountRegistry.cpp, there is a possible out of bounds read due to a buffer overflow. This could lead to local escalation of privilege with no additional execution privileges needed. U",
-        "published": "2026-09-08T19:18:02.977"
-      },
-      {
-        "cve_id": "CVE-2026-58846",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "In kvm_iommu_map_sg of iommu.c, there is a possible use after free due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. U",
-        "published": "2026-09-08T19:18:03.077"
-      },
-      {
-        "cve_id": "CVE-2026-58874",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "In multiple functions of SmsController.java, there is a possible escalation of privilege due to a missing permission check. This could lead to local escalation of privilege with no additional executio",
-        "published": "2026-09-08T19:18:03.270"
-      },
-      {
-        "cve_id": "CVE-2026-58941",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "In multiple functions of iommu.c, there is a possible out of bounds read/write due to improper input validation. This could lead to local escalation of privilege with no additional execution privilege",
-        "published": "2026-09-08T19:18:03.363"
-      },
-      {
-        "cve_id": "CVE-2026-66304",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Server-side request forgery (ssrf) in Skype for Business allows an unauthorized attacker to disclose information over a network.",
-        "published": "2026-09-08T19:18:07.950"
+        "base_score": 8.3,
+        "description": "Incorrect authorization in WebView in Google Chrome on on Android prior to 153.0.8010.36 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outsid",
+        "published": "2026-09-09T01:17:04.773"
       }
     ]
   },
