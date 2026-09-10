@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-09T22:06:22.404245+00:00",
+  "generated_at": "2026-09-10T02:09:37.537592+00:00",
   "threat_score": {
-    "score": 7.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.0,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 41,
+        "value": 38,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 11,
-        "score": 3.0,
+        "value": 0,
+        "score": 1.0,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1703,
-    "recent_30d_count": 41,
+    "recent_30d_count": 38,
     "recent": [
       {
         "cve_id": "CVE-2026-19490",
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 669,
-    "critical_count": 11,
-    "high_count": 13,
+    "total": 433,
+    "critical_count": 0,
+    "high_count": 24,
     "cves": [
       {
-        "cve_id": "CVE-2026-87438",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Out of bounds write in WebGL in Google Chrome on on Android prior to 153.0.8010.36 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security s",
-        "published": "2026-09-09T01:17:00.027"
-      },
-      {
-        "cve_id": "CVE-2026-87448",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in DevTools in Google Chrome prior to 153.0.8010.36 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Low)",
-        "published": "2026-09-09T01:17:01.113"
-      },
-      {
-        "cve_id": "CVE-2026-87455",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in Aura in Google Chrome prior to 153.0.8010.36 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity:",
-        "published": "2026-09-09T01:17:01.883"
-      },
-      {
-        "cve_id": "CVE-2026-87464",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in WebGL in Google Chrome prior to 153.0.8010.36 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
-        "published": "2026-09-09T01:17:02.907"
-      },
-      {
-        "cve_id": "CVE-2026-87470",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Improper quantity validation in Tint in Google Chrome on on Mac prior to 153.0.8010.36 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chr",
-        "published": "2026-09-09T01:17:03.560"
-      },
-      {
-        "cve_id": "CVE-2026-87474",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in Payments in Google Chrome prior to 153.0.8010.36 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security sever",
-        "published": "2026-09-09T01:17:03.990"
-      },
-      {
-        "cve_id": "CVE-2026-87488",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in WebGL in Google Chrome on on Android prior to 153.0.8010.36 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severi",
-        "published": "2026-09-09T01:17:05.557"
-      },
-      {
-        "cve_id": "CVE-2026-87492",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Incorrect authorization in DevTools in Google Chrome prior to 153.0.8010.36 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium secur",
-        "published": "2026-09-09T01:17:05.993"
-      },
-      {
-        "cve_id": "CVE-2026-87494",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in Browser in Google Chrome on on Windows prior to 153.0.8010.36 allowed a remote attacker leveraging social engineering to execute arbitrary code outside the sandbox via a crafted HTML",
-        "published": "2026-09-09T01:17:06.207"
-      },
-      {
-        "cve_id": "CVE-2026-53939",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "OpenIDC/cjose is a C library implementing the Javascript Object Signing and Encryption (JOSE). In versions 0.6.1 through 0.6.2.5, when cjose encrypts a JWE using an AES-CBC-HMAC content-encryption alg",
-        "published": "2026-09-09T00:17:31.700"
-      },
-      {
-        "cve_id": "CVE-2026-53581",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "OPNsense is a FreeBSD based firewall and routing platform. Prior to version 26.1.9 of opnsense/core and version 26.4_20 of BE/opnsense/core, a path traversal vulnerability in the NTP configuration mod",
-        "published": "2026-09-08T23:17:24.550"
-      },
-      {
-        "cve_id": "CVE-2026-87430",
+        "cve_id": "CVE-2026-76801",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Buffer overflow in WebRTC in Google Chrome prior to 153.0.8010.36 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severit",
-        "published": "2026-09-09T01:16:59.130"
+        "description": "The FireBox \u2013 WooCommerce Popup Builder, Exit Intent Popup, Email Optin & Cart Abandonment plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 3.1.10 via ",
+        "published": "2026-09-09T03:17:24.943"
       },
       {
-        "cve_id": "CVE-2026-87440",
+        "cve_id": "CVE-2026-49310",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Out of bounds read in Media in Google Chrome prior to 153.0.8010.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-09-09T01:17:00.240"
+        "base_score": 8.6,
+        "description": "Permission control vulnerability in the event notification module.\nImpact: Successful exploitation of this vulnerability may affect service confidentiality.",
+        "published": "2026-09-09T04:17:58.680"
       },
       {
-        "cve_id": "CVE-2026-87444",
+        "cve_id": "CVE-2026-14962",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Memory corruption in Codecs in Google Chrome prior to 153.0.8010.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-09-09T01:17:00.677"
+        "base_score": 8.6,
+        "description": "The ELEX WooCommerce Request a Quote WordPress plugin before 2.4.1 does not properly sanitise and escape a parameter before using it in a SQL query, allowing unauthenticated users to perform SQL injec",
+        "published": "2026-09-09T06:17:15.057"
       },
       {
-        "cve_id": "CVE-2026-87460",
+        "cve_id": "CVE-2026-87023",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in Platform in Google Chrome prior to 153.0.8010.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-09-09T01:17:02.460"
+        "base_score": 8.5,
+        "description": "Tanium addressed a path traversal vulnerability in Comply.",
+        "published": "2026-09-09T03:17:25.323"
       },
       {
-        "cve_id": "CVE-2026-87489",
+        "cve_id": "CVE-2026-87030",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Memory corruption in V8 in Google Chrome prior to 153.0.8010.36 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted Chrome extension. (Chromium security se",
-        "published": "2026-09-09T01:17:05.663"
+        "base_score": 8.5,
+        "description": "Tanium addressed a path traversal vulnerability in Comply.",
+        "published": "2026-09-09T03:17:25.557"
       },
       {
-        "cve_id": "CVE-2026-87491",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Out of bounds write in V8 in Google Chrome prior to 153.0.8010.36 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
-        "published": "2026-09-09T01:17:05.887"
-      },
-      {
-        "cve_id": "CVE-2026-87479",
+        "cve_id": "CVE-2026-87034",
         "severity": "HIGH",
         "base_score": 8.3,
-        "description": "Insufficient policy enforcement in Extensions in Google Chrome prior to 153.0.8010.36 allowed a remote attacker who had compromised the renderer process and leveraged social engineering to potentially",
-        "published": "2026-09-09T01:17:04.553"
+        "description": "Tanium addressed a SQL injection vulnerability in Comply.",
+        "published": "2026-09-09T03:17:25.897"
       },
       {
-        "cve_id": "CVE-2026-87480",
+        "cve_id": "CVE-2026-12855",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Use after free in Printing in Google Chrome prior to 153.0.8010.36 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbox via a cr",
-        "published": "2026-09-09T01:17:04.660"
+        "base_score": 8.2,
+        "description": "Unvalidated memory boundary could result in arbitrary code execution. The vulnerability exists in the code developed specifically for HP projects.",
+        "published": "2026-09-09T04:17:56.480"
       },
       {
-        "cve_id": "CVE-2026-87481",
+        "cve_id": "CVE-2026-6485",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Incorrect authorization in WebView in Google Chrome on on Android prior to 153.0.8010.36 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outsid",
-        "published": "2026-09-09T01:17:04.773"
+        "base_score": 8.2,
+        "description": "UEFI BIOS embedded Shell could be used to bypass Secure Boot via shell commands or startup scripts.",
+        "published": "2026-09-09T04:19:36.437"
+      },
+      {
+        "cve_id": "CVE-2026-87036",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Tanium addressed an improper access controls vulnerability in Comply.",
+        "published": "2026-09-09T03:17:26.143"
+      },
+      {
+        "cve_id": "CVE-2026-87075",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Tanium addressed an improper access controls vulnerability in Comply.",
+        "published": "2026-09-09T03:17:26.953"
+      },
+      {
+        "cve_id": "CVE-2026-76009",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The Next-Cart Store to WooCommerce Migration plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 3.9.8 via the `NCWM_Kitconnect::run()` function. This is ",
+        "published": "2026-09-09T06:17:16.497"
+      },
+      {
+        "cve_id": "CVE-2026-87084",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "Tanium addressed a server-side request forgery vulnerability in Enforce.",
+        "published": "2026-09-09T03:17:27.070"
+      },
+      {
+        "cve_id": "CVE-2026-15406",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Eventin \u2013 Event Calendar, Event Registration, Tickets & Booking (AI Powered) plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 4.1.22 via the 'event_",
+        "published": "2026-09-09T03:17:23.157"
+      },
+      {
+        "cve_id": "CVE-2026-15667",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Eventin \u2013 Event Calendar, Event Registration, Tickets & Booking (AI Powered) plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 4.1.22 via the 'event_",
+        "published": "2026-09-09T03:17:23.523"
+      },
+      {
+        "cve_id": "CVE-2026-87734",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "An issue was discovered in the utcp package before 0.0.6 for OCaml. Out-of-order segment reassembly allows remote denial of service.",
+        "published": "2026-09-09T05:18:20.577"
+      },
+      {
+        "cve_id": "CVE-2026-16960",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Loops & Logic WordPress plugin before 4.3.0 does not restrict its public template-data action to the data a visitor is permitted to see, allowing unauthenticated users to read arbitrary user recor",
+        "published": "2026-09-09T06:17:15.457"
+      },
+      {
+        "cve_id": "CVE-2026-49314",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "OOB write vulnerability in the rendering and composition module.\nImpact: Successful exploitation of this vulnerability may affect availability.",
+        "published": "2026-09-09T04:17:59.783"
+      },
+      {
+        "cve_id": "CVE-2026-13359",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The Contact Form to DB by BestWebSoft \u2013 Messages Database Plugin For WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via cntctfrm_contact_dropdown Parameter in all versions",
+        "published": "2026-09-09T03:17:22.627"
+      },
+      {
+        "cve_id": "CVE-2026-87021",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "Tanium addressed an unauthorized code execution vulnerability in Comply.",
+        "published": "2026-09-09T03:17:25.207"
+      },
+      {
+        "cve_id": "CVE-2026-17553",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The WP EasyCart plugin for WordPress is vulnerable to privilege escalation in versions up to, and including, 5.9.3. This is due to the ec_ajax_save_page_default_options() AJAX handler iterating over e",
+        "published": "2026-09-09T04:17:56.607"
       }
     ]
   },
