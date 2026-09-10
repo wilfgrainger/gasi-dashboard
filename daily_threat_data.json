@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-10T02:09:37.537592+00:00",
+  "generated_at": "2026-09-10T08:30:10.681418+00:00",
   "threat_score": {
-    "score": 5.0,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.5,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 1.0,
+        "value": 5,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 433,
-    "critical_count": 0,
-    "high_count": 24,
+    "total": 347,
+    "critical_count": 5,
+    "high_count": 36,
     "cves": [
       {
-        "cve_id": "CVE-2026-76801",
+        "cve_id": "CVE-2026-85978",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An unauthenticated remote code execution vulnerability exists in the Policy Manager console of\u00a0Akana\u00a0API Platform. A path normalization discrepancy between the authentication filter and the servlet di",
+        "published": "2026-09-09T11:17:16.073"
+      },
+      {
+        "cve_id": "CVE-2026-80172",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Insufficient Verification of Data Authenticity vulnerability. An unauthentica",
+        "published": "2026-09-09T12:17:15.057"
+      },
+      {
+        "cve_id": "CVE-2026-85102",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Improper certificate trust validation during VPN negotiation in Check Point Quantum Security Gateway may allow an unauthenticated remote attacker to execute arbitrary code on the Gateway.",
+        "published": "2026-09-09T13:20:43.793"
+      },
+      {
+        "cve_id": "CVE-2026-85103",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A heap-based buffer overflow in VPN certificate ASN.1 decoding may allow an unauthenticated remote attacker to execute arbitrary code on Check Point Quantum Security Management and Quantum Security Ga",
+        "published": "2026-09-09T13:20:43.997"
+      },
+      {
+        "cve_id": "CVE-2026-16272",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Use of less trusted source vulnerability in PayTR Payment and Electronic Money Institution Inc. PayTR Virtual Pos iFrame API (v9x) WHMCS Module allows Exploitation of Trusted Identifiers.\n\nThis issue ",
+        "published": "2026-09-09T09:17:10.720"
+      },
+      {
+        "cve_id": "CVE-2026-14359",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The FireBox \u2013 WooCommerce Popup Builder, Exit Intent Popup, Email Optin & Cart Abandonment plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 3.1.10 via ",
-        "published": "2026-09-09T03:17:24.943"
+        "description": "The YITH WooCommerce Waitlist Premium plugin for WordPress is vulnerable to Privilege Escalation in versions up to, and including, 3.35.0. This is due to the add_user_in_waiting_list() function regist",
+        "published": "2026-09-09T09:17:10.450"
       },
       {
-        "cve_id": "CVE-2026-49310",
+        "cve_id": "CVE-2026-80099",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Permission control vulnerability in the event notification module.\nImpact: Successful exploitation of this vulnerability may affect service confidentiality.",
-        "published": "2026-09-09T04:17:58.680"
+        "base_score": 8.8,
+        "description": "Several Newfold plugins are vulnerable to Authentication Bypass. The vulnerability exists because the plugins bundle the wp-module-data module. In the module, the `authenticate()` method \u2014 registered ",
+        "published": "2026-09-09T09:17:12.157"
       },
       {
-        "cve_id": "CVE-2026-14962",
+        "cve_id": "CVE-2026-87766",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "The ELEX WooCommerce Request a Quote WordPress plugin before 2.4.1 does not properly sanitise and escape a parameter before using it in a SQL query, allowing unauthenticated users to perform SQL injec",
-        "published": "2026-09-09T06:17:15.057"
+        "base_score": 8.8,
+        "description": "A flaw was found in bubblewrap. During sandbox setup, creating files or directories under the new root can follow a parent symlink onto the host via /oldroot, writing attacker-chosen paths outside the",
+        "published": "2026-09-09T09:17:12.540"
       },
       {
-        "cve_id": "CVE-2026-87023",
+        "cve_id": "CVE-2026-87817",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Tanium addressed a path traversal vulnerability in Comply.",
-        "published": "2026-09-09T03:17:25.323"
+        "base_score": 8.8,
+        "description": "GitPython before 3.1.60 fails to properly validate the git directory location, allowing attackers to impersonate the git directory using tracked files like gitdir, commondir, and HEAD. Attackers can e",
+        "published": "2026-09-09T12:17:16.830"
       },
       {
-        "cve_id": "CVE-2026-87030",
+        "cve_id": "CVE-2026-56711",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Tanium addressed a path traversal vulnerability in Comply.",
-        "published": "2026-09-09T03:17:25.557"
+        "base_score": 8.8,
+        "description": "VLC media player computes the size of a picture buffer with 32-bit arithmetic and allocates from the wrapped result. In AllocatePicture in src/misc/picture.c the running total is accumulated as i_byte",
+        "published": "2026-09-09T14:17:12.717"
       },
       {
-        "cve_id": "CVE-2026-87034",
+        "cve_id": "CVE-2026-87815",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Tanium addressed a SQL injection vulnerability in Comply.",
-        "published": "2026-09-09T03:17:25.897"
+        "base_score": 8.7,
+        "description": "SiYuan versions before v3.8.2 contain a path traversal vulnerability in the /api/riff/removeRiffDeck endpoint that fails to validate the deckID parameter. An authenticated administrator can supply pat",
+        "published": "2026-09-09T12:17:16.537"
       },
       {
-        "cve_id": "CVE-2026-12855",
+        "cve_id": "CVE-2026-87794",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "bestzip versions 2.2.6 and 3.0.2 contain an argument injection vulnerability in the nativeZip function that allows attackers to inject arbitrary arguments to the Info-ZIP backend. Attackers can supply",
+        "published": "2026-09-09T10:22:34.397"
+      },
+      {
+        "cve_id": "CVE-2026-78491",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "Unvalidated memory boundary could result in arbitrary code execution. The vulnerability exists in the code developed specifically for HP projects.",
-        "published": "2026-09-09T04:17:56.480"
+        "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Improper Certificate Validation vulnerability. An unauthenticated attacker wi",
+        "published": "2026-09-09T09:17:10.870"
       },
       {
-        "cve_id": "CVE-2026-6485",
+        "cve_id": "CVE-2026-87795",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "UEFI BIOS embedded Shell could be used to bypass Secure Boot via shell commands or startup scripts.",
-        "published": "2026-09-09T04:19:36.437"
+        "description": "zstd-jni versions before 1.5.7-14 fail to validate offset and length parameters in the ZstdDictCompress constructor, allowing out-of-bounds memory reads. Attackers can supply untrusted offset or lengt",
+        "published": "2026-09-09T10:22:34.557"
       },
       {
-        "cve_id": "CVE-2026-87036",
+        "cve_id": "CVE-2026-65181",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Tanium addressed an improper access controls vulnerability in Comply.",
-        "published": "2026-09-09T03:17:26.143"
+        "description": "Insufficient authorization of Data Source tables in Impala 2.7-4.5 allows a client with privileges to upload a file to remote storage and create a table to execute arbitrary Java code.\nUsers are recom",
+        "published": "2026-09-09T11:17:15.087"
       },
       {
-        "cve_id": "CVE-2026-87075",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Tanium addressed an improper access controls vulnerability in Comply.",
-        "published": "2026-09-09T03:17:26.953"
-      },
-      {
-        "cve_id": "CVE-2026-76009",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Next-Cart Store to WooCommerce Migration plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 3.9.8 via the `NCWM_Kitconnect::run()` function. This is ",
-        "published": "2026-09-09T06:17:16.497"
-      },
-      {
-        "cve_id": "CVE-2026-87084",
+        "cve_id": "CVE-2026-79637",
         "severity": "HIGH",
         "base_score": 7.7,
-        "description": "Tanium addressed a server-side request forgery vulnerability in Enforce.",
-        "published": "2026-09-09T03:17:27.070"
+        "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Improper Certificate Validation vulnerability. An unauthenticated attacker wi",
+        "published": "2026-09-09T12:17:13.977"
       },
       {
-        "cve_id": "CVE-2026-15406",
+        "cve_id": "CVE-2026-79641",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "The Eventin \u2013 Event Calendar, Event Registration, Tickets & Booking (AI Powered) plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 4.1.22 via the 'event_",
-        "published": "2026-09-09T03:17:23.157"
+        "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Improper Neutralization of Special Elements used in an OS Command ('OS Comman",
+        "published": "2026-09-09T11:17:15.500"
       },
       {
-        "cve_id": "CVE-2026-15667",
+        "cve_id": "CVE-2026-78490",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "The Eventin \u2013 Event Calendar, Event Registration, Tickets & Booking (AI Powered) plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 4.1.22 via the 'event_",
-        "published": "2026-09-09T03:17:23.523"
+        "description": "Dell SCG 5.0 Appliance versions prior to 5.36.00.16 and Dell SCG 5.0 Application versions prior to 5.36.00.00, contains an Improper Restriction of Excessive Authentication Attempts vulnerability. An u",
+        "published": "2026-09-09T12:17:13.720"
       },
       {
-        "cve_id": "CVE-2026-87734",
+        "cve_id": "CVE-2026-87807",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "An issue was discovered in the utcp package before 0.0.6 for OCaml. Out-of-order segment reassembly allows remote denial of service.",
-        "published": "2026-09-09T05:18:20.577"
+        "description": "siyuan versions before v3.8.2 contain an authenticated SQL injection vulnerability in the fullTextSearchBlock endpoint's method=1 query parameter. Attackers can inject UNION SELECT statements to read ",
+        "published": "2026-09-09T12:17:15.343"
       },
       {
-        "cve_id": "CVE-2026-16960",
+        "cve_id": "CVE-2026-87816",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "The Loops & Logic WordPress plugin before 4.3.0 does not restrict its public template-data action to the data a visitor is permitted to see, allowing unauthenticated users to read arbitrary user recor",
-        "published": "2026-09-09T06:17:15.457"
-      },
-      {
-        "cve_id": "CVE-2026-49314",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "OOB write vulnerability in the rendering and composition module.\nImpact: Successful exploitation of this vulnerability may affect availability.",
-        "published": "2026-09-09T04:17:59.783"
-      },
-      {
-        "cve_id": "CVE-2026-13359",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The Contact Form to DB by BestWebSoft \u2013 Messages Database Plugin For WordPress plugin for WordPress is vulnerable to Stored Cross-Site Scripting via cntctfrm_contact_dropdown Parameter in all versions",
-        "published": "2026-09-09T03:17:22.627"
-      },
-      {
-        "cve_id": "CVE-2026-87021",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "Tanium addressed an unauthorized code execution vulnerability in Comply.",
-        "published": "2026-09-09T03:17:25.207"
-      },
-      {
-        "cve_id": "CVE-2026-17553",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "The WP EasyCart plugin for WordPress is vulnerable to privilege escalation in versions up to, and including, 5.9.3. This is due to the ec_ajax_save_page_default_options() AJAX handler iterating over e",
-        "published": "2026-09-09T04:17:56.607"
+        "description": "PasswordPusher before 2.11.1 contains a time-of-check-to-time-of-use race condition in view limit enforcement that allows unauthenticated attackers to bypass expire_after_views limits. Attackers can s",
+        "published": "2026-09-09T12:17:16.683"
       }
     ]
   },
