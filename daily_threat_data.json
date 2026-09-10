@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T18:49:09.966157+00:00",
+  "generated_at": "2026-09-10T22:05:18.663926+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 38,
+        "value": 40,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 11,
+        "value": 16,
         "score": 3.0,
         "max": 3
       },
@@ -32,9 +32,29 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1703,
-    "recent_30d_count": 38,
+    "total_catalog_count": 1705,
+    "recent_30d_count": 40,
     "recent": [
+      {
+        "cve_id": "CVE-2026-86060",
+        "vendor": "MikroTik",
+        "product": "RouterOS",
+        "name": "MikroTik RouterOS Improper Neutralization of Argument Delimiters in a Command Vulnerability",
+        "date_added": "2026-09-10",
+        "due_date": "2026-09-13",
+        "description": "MikroTik RouterOS contains an improper neutralization of argument delimiters in a command vulnerability which allows an attacked to change the trusted RouterOS policy mask, leading to privilege escala",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-67277",
+        "vendor": "MikroTik",
+        "product": "RouterOS",
+        "name": "MikroTik RouterOS Missing Authentication for Critical Function Vulnerability",
+        "date_added": "2026-09-10",
+        "due_date": "2026-09-13",
+        "description": "MikroTik RouterOS contains a missing authenticaion for critical function vulnerability which allows kernel memory disclosure and denial of service in the btest service.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-19490",
         "vendor": "Citrix",
@@ -214,47 +234,27 @@
         "due_date": "2026-09-14",
         "description": "PaperCut NG/MF contains a missing authentication for critical function vulnerability which allows an unauthenticated remote attacker to modify certain system configurations. This vulnerability can be ",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2023-49105",
-        "vendor": "ownCloud",
-        "product": "ownCloud",
-        "name": "ownCloud Improper Authentication Vulnerability",
-        "date_added": "2026-08-27",
-        "due_date": "2026-08-30",
-        "description": "ownCloud contains an improper authentication vulnerability that allows an attacker to access, modify, or delete any file without authentication if the username of a victim is known, and the victim has",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-53362",
-        "vendor": "Linux",
-        "product": "Kernel",
-        "name": "Linux Kernel Unspecified Vulnerability",
-        "date_added": "2026-08-27",
-        "due_date": "2026-08-30",
-        "description": "Linux Kernel contains an unspecified vulnerability that can allow for privilege escalation via IPv6 networking subsystem. This vulnerability can impact multiple products, including but not limited to ",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 334,
-    "critical_count": 11,
-    "high_count": 26,
+    "total": 341,
+    "critical_count": 16,
+    "high_count": 34,
     "cves": [
+      {
+        "cve_id": "CVE-2026-77770",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "The miniOrange 2FA  WordPress plugin before 6.3.1, miniOrange 2FA  WordPress plugin before 19.3 does not require a validated transaction before deleting site options whose names come from unauthentica",
+        "published": "2026-09-10T07:17:02.943"
+      },
       {
         "cve_id": "CVE-2026-19583",
         "severity": "CRITICAL",
         "base_score": 9.9,
         "description": "Velociraptor allows some sensitive artifacts to be gated by additional permissions. For example, the Linux.Sys.BashShell artifact allows arbitrary command execution on endpoints, and so it requires th",
         "published": "2026-09-10T03:16:59.010"
-      },
-      {
-        "cve_id": "CVE-2026-36433",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An issue in Actions Semiconductor Co. Ltd Tool- Media Player Utilities v.4.46 allows a physically proximate attacker execute arbitrary code via the Production.dll and RdiskUpgrade.exe components",
-        "published": "2026-09-09T21:17:01.983"
       },
       {
         "cve_id": "CVE-2026-71805",
@@ -278,18 +278,32 @@
         "published": "2026-09-10T05:17:01.443"
       },
       {
-        "cve_id": "CVE-2026-54694",
+        "cve_id": "CVE-2026-7188",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "SkillTree is a micro-learning gamification platform. Prior to version 4.4.2, two independent code flaws combine into a single exploitable attack chain, with three distinct exploitation paths of escala",
-        "published": "2026-09-09T19:17:28.400"
+        "base_score": 9.8,
+        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Armiya Information Technologies Ltd. Co. Access Control System allows SQL Injection.\n\nThis issue a",
+        "published": "2026-09-10T08:16:57.893"
       },
       {
-        "cve_id": "CVE-2026-87911",
+        "cve_id": "CVE-2026-80351",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "An OS command injection weakness in the read-only enforcement of the SQL validation component in Amazon awslabs postgres-mcp-server before 1.1.7 might allow an unauthenticated actor to execute operati",
-        "published": "2026-09-09T20:21:02.017"
+        "base_score": 9.8,
+        "description": "Improper neutralization of directives in dynamically evaluated code ('eval injection') vulnerability in Apache Camel K.\n\n\n\nAn improper neutralization of directives in dynamically evaluated Maven confi",
+        "published": "2026-09-10T08:16:58.947"
+      },
+      {
+        "cve_id": "CVE-2026-80352",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Improper Control of Generation of Code ('Code Injection') vulnerability in Apache Camel K.\n\n\n\nA YAML injection vulnerability in custom resource configuration allows an authorized CR author to inject a",
+        "published": "2026-09-10T08:16:59.070"
+      },
+      {
+        "cve_id": "CVE-2026-88278",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "GeoVision GV-LPC2211 V1.13 fails to enforce WS-Security UsernameToken freshness or nonce reuse protection, allowing a captured PasswordDigest token to be replayed for subsequent ONVIF operations.",
+        "published": "2026-09-10T09:17:04.787"
       },
       {
         "cve_id": "CVE-2026-87931",
@@ -320,11 +334,39 @@
         "published": "2026-09-10T06:17:06.460"
       },
       {
-        "cve_id": "CVE-2026-71808",
+        "cve_id": "CVE-2026-78361",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The zipMoney(Zip Co) Payments Plugin for WooCommerce WordPress plugin before 2.4.0 does not perform any authorisation checks on one of its front-end request handlers, and does not restrict which optio",
+        "published": "2026-09-10T07:17:03.143"
+      },
+      {
+        "cve_id": "CVE-2026-44950",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "fs_read_glyphs() in the libXfont2 font-server client (src/fc/fserve.c) copies each glyph's bitmap into a single buffer. Existing checks validates only that the source slice (position, length) lies wit",
+        "published": "2026-09-10T09:17:02.490"
+      },
+      {
+        "cve_id": "CVE-2026-59679",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "fs_read_glyphs() in the libXfont2 font-server client (src/fc/fserve.c) indexes the per-character encoding[] array using num_chars from the FS_QueryXBitmaps16 reply, but that array was allocated with a",
+        "published": "2026-09-10T09:17:02.883"
+      },
+      {
+        "cve_id": "CVE-2026-88271",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A SQL Injection vulnerability in Siam Ordering (siam-server) 1.0.0 allows remote authenticated attackers to execute arbitrary SQL commands via the ${} string concatenation in AdminMapper.java and mult",
-        "published": "2026-09-09T21:17:03.813"
+        "description": "GeoVision GV-LPC2211 V1.13 allows a Guest user to overwrite device configuration and replace the administrator password through SSVR.",
+        "published": "2026-09-10T09:17:04.003"
+      },
+      {
+        "cve_id": "CVE-2026-88277",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "GeoVision GV-LPC2211 V1.13 allows an authenticated ONVIF user to inject shell commands through ConsumerReference.Address and execute arbitrary commands as root.",
+        "published": "2026-09-10T09:17:04.673"
       },
       {
         "cve_id": "CVE-2026-87995",
@@ -334,53 +376,11 @@
         "published": "2026-09-09T22:18:47.710"
       },
       {
-        "cve_id": "CVE-2026-79322",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "SQL injection in the RelatedProduct block in Mageplaza Blog for Magento 2 (mageplaza/magento-2-blog-extension) through 4.3.2 allows remote unauthenticated attackers to execute arbitrary SQL commands a",
-        "published": "2026-09-09T19:17:47.900"
-      },
-      {
         "cve_id": "CVE-2026-82079",
         "severity": "HIGH",
         "base_score": 8.4,
         "description": "A stack-based buffer overflow vulnerability in the Nintendo Switch local wireless networking functionality may allow an attacker within wireless range to execute arbitrary code using return-oriented p",
         "published": "2026-09-10T06:17:06.330"
-      },
-      {
-        "cve_id": "CVE-2026-87016",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI platform. From 0.6.41 until 0.11.1, get_user_by_oauth_sub and get_user_by_scim_external_id in backend/open_webui/models/user",
-        "published": "2026-09-09T22:18:46.720"
-      },
-      {
-        "cve_id": "CVE-2026-14873",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "The Bulk Password Reset plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 1.3.3. This is due to the plugin not properly validating a",
-        "published": "2026-09-10T04:17:45.480"
-      },
-      {
-        "cve_id": "CVE-2026-71613",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Buffer Overflow vulnerability in GPAC c2dee3aff638cd96f9617ac5b17dc2868cd90ef3 allows an attacker to execute arbitrary code via the j2kdec_process() function. Fixed in 9a253a07fd3f6b48022bba74302bf393",
-        "published": "2026-09-09T20:20:21.747"
-      },
-      {
-        "cve_id": "CVE-2026-15913",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "In versions prior to 7.10.2 a path traversal vulnerability in the\u00a0/attachRemoteFiles endpoint\u00a0of Fortra's GoAnywhere MFT allows Web Users with both\u00a0Secure Folders and Secure Mail permissions\u00a0to escape",
-        "published": "2026-09-09T22:17:11.367"
-      },
-      {
-        "cve_id": "CVE-2026-87996",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI platform. From 0.9.6 until 0.11.1, SafePlaywrightURLLoader in backend/open_webui/retrieval/web/utils.py validated a user-con",
-        "published": "2026-09-09T22:18:47.857"
       }
     ]
   },
