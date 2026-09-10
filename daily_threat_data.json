@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-10T15:30:13.039034+00:00",
+  "generated_at": "2026-09-10T18:49:09.966157+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
-        "score": 2.5,
+        "value": 11,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,23 +238,44 @@
     ]
   },
   "nvd": {
-    "total": 324,
-    "critical_count": 5,
-    "high_count": 20,
+    "total": 334,
+    "critical_count": 11,
+    "high_count": 26,
     "cves": [
       {
-        "cve_id": "CVE-2026-67401",
+        "cve_id": "CVE-2026-19583",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "A vulnerability in cPanel allows a mail-enabled account to achieve remote code execution as root through SQLi in EmailTrack component",
-        "published": "2026-09-09T16:17:03.883"
+        "description": "Velociraptor allows some sensitive artifacts to be gated by additional permissions. For example, the Linux.Sys.BashShell artifact allows arbitrary command execution on endpoints, and so it requires th",
+        "published": "2026-09-10T03:16:59.010"
       },
       {
-        "cve_id": "CVE-2026-87929",
+        "cve_id": "CVE-2026-36433",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "MaxSite CMS through 109.6 ships with a hardcoded session encryption key in application/config/config.php that is never changed during installation, allowing unauthenticated attackers to forge administ",
-        "published": "2026-09-09T17:17:53.840"
+        "description": "An issue in Actions Semiconductor Co. Ltd Tool- Media Player Utilities v.4.46 allows a physically proximate attacker execute arbitrary code via the Production.dll and RdiskUpgrade.exe components",
+        "published": "2026-09-09T21:17:01.983"
+      },
+      {
+        "cve_id": "CVE-2026-71805",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An arbitrary file upload and path traversal vulnerability exists in LZ-litchi 1.0.0. Unauthenticated remote attackers can upload arbitrary files and write them outside the intended storage directory v",
+        "published": "2026-09-09T22:18:19.043"
+      },
+      {
+        "cve_id": "CVE-2026-18351",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Drag and Drop File Upload for Elementor Forms plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 1.6.0 via the elementor_file_upload function. This i",
+        "published": "2026-09-10T02:16:34.180"
+      },
+      {
+        "cve_id": "CVE-2026-57967",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An unauthenticated remote attacker can craft a CORE protocol SESSION_REATTACH packet to steal an existing session and assume ongoing execution of the previously authenticated session.\n\n\n\nThis issue af",
+        "published": "2026-09-10T05:17:01.443"
       },
       {
         "cve_id": "CVE-2026-54694",
@@ -271,32 +292,46 @@
         "published": "2026-09-09T20:21:02.017"
       },
       {
-        "cve_id": "CVE-2026-22590",
+        "cve_id": "CVE-2026-87931",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "A vulnerability has been found in Behavioral Technology Group Pavlok Behavioral Conditioning Wearable up to 20260707. Impacted is an unknown function of the component Apple Notification Center Service",
+        "published": "2026-09-10T00:17:24.737"
+      },
+      {
+        "cve_id": "CVE-2026-49364",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "eprosima Fast DDS is a C++ implementation of the DDS (Data Distribution Service) standard of the OMG (Object Management Group). Versions prior to 2.6.12, 2.14.6, 3.2.4, 3.3.1, and 3.4.2 have a remotel",
-        "published": "2026-09-09T16:17:02.387"
+        "description": "An unauthenticated network-adjacent attacker can leverage discovery to capture cluster administrative credentials during the initial cluster connection handshake.\n\nThis issue affects Apache Artemis: f",
+        "published": "2026-09-10T05:17:01.230"
       },
       {
-        "cve_id": "CVE-2026-81640",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "An attacker could derive the camera's Wi-Fi password and connect to its wireless network. This weakens or eliminates the security value of the access-point password and may expose the live video strea",
-        "published": "2026-09-09T16:17:10.567"
+        "cve_id": "CVE-2026-67593",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "A remote attacker can craft an Openwire RemoveSubscriptionInfo command to cause the deletion of a queue on the Artemis broker before the connection authentication and authorization stage or at any tim",
+        "published": "2026-09-10T05:17:01.560"
       },
       {
-        "cve_id": "CVE-2026-80914",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: ISO: fix use-after-free of listener socket in iso_conn_ready\n\niso_conn_ready() looks up the BIS listener socket with iso",
-        "published": "2026-09-09T17:17:46.263"
+        "cve_id": "CVE-2026-84939",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Path traversal vulnerability in Apache FreeMarker template loading mechanism, if the attacker can specify an arbitrary malformed locale identifier to FreeMarker, and the localized lookup configuration",
+        "published": "2026-09-10T06:17:06.460"
       },
       {
-        "cve_id": "CVE-2026-80921",
+        "cve_id": "CVE-2026-71808",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nKVM: s390: vsie: zero stale crypto bits\n\nWhen shadowing crypto access bits from a format0 apcb (crycb 0 or 1),\nthe bits 64..255 are",
-        "published": "2026-09-09T17:17:47.240"
+        "description": "A SQL Injection vulnerability in Siam Ordering (siam-server) 1.0.0 allows remote authenticated attackers to execute arbitrary SQL commands via the ${} string concatenation in AdminMapper.java and mult",
+        "published": "2026-09-09T21:17:03.813"
+      },
+      {
+        "cve_id": "CVE-2026-87995",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI platform. From 0.8.11 until 0.11.1, src/lib/components/chat/FileNav/PortPreview.svelte rendered terminal port content in an ",
+        "published": "2026-09-09T22:18:47.710"
       },
       {
         "cve_id": "CVE-2026-79322",
@@ -306,81 +341,46 @@
         "published": "2026-09-09T19:17:47.900"
       },
       {
-        "cve_id": "CVE-2026-87927",
+        "cve_id": "CVE-2026-82079",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "MaxSite CMS through 109.6 contains a local file inclusion vulnerability in the ajax and require-maxsite dispatchers that allows unauthenticated attackers to execute privileged handler files by supplyi",
-        "published": "2026-09-09T17:17:53.520"
+        "base_score": 8.4,
+        "description": "A stack-based buffer overflow vulnerability in the Nintendo Switch local wireless networking functionality may allow an attacker within wireless range to execute arbitrary code using return-oriented p",
+        "published": "2026-09-10T06:17:06.330"
       },
       {
-        "cve_id": "CVE-2026-18147",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "A flaw was found in FreeIPA. An unauthenticated remote attacker could exploit a DOM Cross-Site Scripting (XSS) vulnerability in the FreeIPA/IdM Web UI password reset page. By enticing a victim to clic",
-        "published": "2026-09-09T17:17:17.007"
-      },
-      {
-        "cve_id": "CVE-2026-87874",
+        "cve_id": "CVE-2026-87016",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "A flaw was found in the memcached cache plugin of the community.general Ansible\ncollection. Although its documentation states that records are stored in JSON\nformat, the plugin performs no explicit se",
-        "published": "2026-09-09T17:17:53.093"
+        "description": "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI platform. From 0.6.41 until 0.11.1, get_user_by_oauth_sub and get_user_by_scim_external_id in backend/open_webui/models/user",
+        "published": "2026-09-09T22:18:46.720"
       },
       {
-        "cve_id": "CVE-2026-87930",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "MaxSite CMS through 109.6 passes the ci_session cookie to unserialize() without class restrictions, allowing unauthenticated attackers to inject PHP objects. Attackers can forge valid session cookies ",
-        "published": "2026-09-09T17:17:53.990"
-      },
-      {
-        "cve_id": "CVE-2026-77974",
+        "cve_id": "CVE-2026-14873",
         "severity": "HIGH",
         "base_score": 8.0,
-        "description": "After spoofing the device and obtaining one user confirmation, an attacker may be able to cause the application to transmit firmware through an unauthenticated and unsigned update channel.",
-        "published": "2026-09-09T16:17:06.053"
+        "description": "The Bulk Password Reset plugin for WordPress is vulnerable to privilege escalation via account takeover in all versions up to, and including, 1.3.3. This is due to the plugin not properly validating a",
+        "published": "2026-09-10T04:17:45.480"
       },
       {
-        "cve_id": "CVE-2026-82563",
+        "cve_id": "CVE-2026-71613",
         "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "An attacker could impersonate the camera and place themselves in a man-in-the-middle or device-emulation position. This permits manipulation of device status responses, observation of application requ",
-        "published": "2026-09-09T16:17:11.567"
+        "base_score": 7.8,
+        "description": "Buffer Overflow vulnerability in GPAC c2dee3aff638cd96f9617ac5b17dc2868cd90ef3 allows an attacker to execute arbitrary code via the j2kdec_process() function. Fixed in 9a253a07fd3f6b48022bba74302bf393",
+        "published": "2026-09-09T20:20:21.747"
       },
       {
-        "cve_id": "CVE-2026-22591",
+        "cve_id": "CVE-2026-15913",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "eprosima Fast DDS is a C++ implementation of the DDS (Data Distribution Service) standard of the OMG (Object Management Group). Prior to versions 2.6.12, 2.14.6, 3.2.4, and 3.4.3, Fast DDS\u2019s implement",
-        "published": "2026-09-09T16:17:02.563"
+        "base_score": 7.7,
+        "description": "In versions prior to 7.10.2 a path traversal vulnerability in the\u00a0/attachRemoteFiles endpoint\u00a0of Fortra's GoAnywhere MFT allows Web Users with both\u00a0Secure Folders and Secure Mail permissions\u00a0to escape",
+        "published": "2026-09-09T22:17:11.367"
       },
       {
-        "cve_id": "CVE-2026-80924",
+        "cve_id": "CVE-2026-87996",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ncrypto: krb5 - use kfree_sensitive() for derived key buffers\n\ncrypto_krb5_prepare_encryption() and crypto_krb5_prepare_checksum()\nf",
-        "published": "2026-09-09T17:17:47.653"
-      },
-      {
-        "cve_id": "CVE-2026-87853",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A flaw was found in SSSD's IdP authentication provider. The eval_access_token_buf() function compares the OIDC subject identifier using strncmp() with the authenticated user's identifier length, perfo",
-        "published": "2026-09-09T17:17:52.827"
-      },
-      {
-        "cve_id": "CVE-2026-79323",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Information disclosure in the blogComments GraphQL query in Magefan Blog GraphQL for Magento 2 (magefan/module-blog-graph-ql) through 2.2.1 allows remote unauthenticated attackers to obtain blog comme",
-        "published": "2026-09-09T19:17:48.020"
-      },
-      {
-        "cve_id": "CVE-2026-73786",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A vulnerability in the web-based management interface of CPPM could allow an unauthenticated remote attacker to conduct a Denial-of-Service (DoS) attack. Successful exploitation could allow an attacke",
-        "published": "2026-09-09T20:20:33.493"
+        "base_score": 7.7,
+        "description": "Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI platform. From 0.9.6 until 0.11.1, SafePlaywrightURLLoader in backend/open_webui/retrieval/web/utils.py validated a user-con",
+        "published": "2026-09-09T22:18:47.857"
       }
     ]
   },
