@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-11T15:32:02.329252+00:00",
+  "generated_at": "2026-09-11T18:52:16.523546+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 40,
+        "value": 43,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 14,
+        "value": 11,
         "score": 3.0,
         "max": 3
       },
@@ -32,9 +32,39 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1705,
-    "recent_30d_count": 40,
+    "total_catalog_count": 1708,
+    "recent_30d_count": 43,
     "recent": [
+      {
+        "cve_id": "CVE-2026-84869",
+        "vendor": "ConnectWise",
+        "product": "ScreenConnect",
+        "name": "ConnectWise ScreenConnect Improper Privilege Management and Missing Authorization Vulnerability",
+        "date_added": "2026-09-11",
+        "due_date": "2026-09-14",
+        "description": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to file transfer and execution through an active remote sess",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-42016",
+        "vendor": "JFrog",
+        "product": "Artifactory",
+        "name": "JFrog Artifactory Incorrect Authorization Vulnerability",
+        "date_added": "2026-09-11",
+        "due_date": "2026-09-25",
+        "description": "JFrog Artifactory contains an incorrect authorization vulnerability that allows leads to privilege escalation attack due to a validation check of the token signature/issuer and not the token\u2019s scope.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-42018",
+        "vendor": "JFrog",
+        "product": "Artifactory",
+        "name": "JFrog Artifactory Improper Authentication Vulnerability",
+        "date_added": "2026-09-11",
+        "due_date": "2026-09-25",
+        "description": "JFrog Artifactory contains an improper authentication vulnerability that could return an internal anonymous-user token to an unauthenticated caller when anonymous access is disabled, potentially expos",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-86060",
         "vendor": "MikroTik",
@@ -204,58 +234,14 @@
         "due_date": "2026-09-05",
         "description": "SonicWall SMA1000 Appliances contains a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to gain unauthorized access to sensitive functionality and perform ",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-83549",
-        "vendor": "SonicWall",
-        "product": "SMA1000 Appliances",
-        "name": "SonicWall SMA1000 Appliances OS Command Injection Vulnerability",
-        "date_added": "2026-09-02",
-        "due_date": "2026-09-05",
-        "description": "SonicWall SMA1000 Appliances contains an OS command injection vulnerability that could enable a remote authenticated attacker as administrator to execute arbitrary OS commands, resulting in remote cod",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-82078",
-        "vendor": "PaperCut",
-        "product": "NG/MF",
-        "name": "PaperCut NG/MF Unsafe Reflection Vulnerability",
-        "date_added": "2026-08-31",
-        "due_date": "2026-09-14",
-        "description": "PaperCut NG/MF contains an unsafe reflection vulnerability that allows an attacker to manipulate system configuration parameters and execute arbitrary Java bytecode residing on the application classpa",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-81578",
-        "vendor": "PaperCut",
-        "product": "NG/MF",
-        "name": "PaperCut NG/MF Missing Authentication for Critical Function Vulnerability",
-        "date_added": "2026-08-31",
-        "due_date": "2026-09-14",
-        "description": "PaperCut NG/MF contains a missing authentication for critical function vulnerability which allows an unauthenticated remote attacker to modify certain system configurations. This vulnerability can be ",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 334,
-    "critical_count": 14,
-    "high_count": 36,
+    "total": 302,
+    "critical_count": 11,
+    "high_count": 46,
     "cves": [
-      {
-        "cve_id": "CVE-2026-68487",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Path traversal in Plesk's Backup Manager causes arbitrary file write as root by an authenticated customer.",
-        "published": "2026-09-10T17:17:05.310"
-      },
-      {
-        "cve_id": "CVE-2026-68488",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A Time-of-check Time-of-use (TOCTOU) race condition leading to insecure symlink following in Plesk causes local privilege escalation to root via arbitrary file/directory ownership takeover.",
-        "published": "2026-09-10T17:17:05.437"
-      },
       {
         "cve_id": "CVE-2026-89049",
         "severity": "CRITICAL",
@@ -264,74 +250,39 @@
         "published": "2026-09-10T19:17:42.373"
       },
       {
-        "cve_id": "CVE-2026-81467",
+        "cve_id": "CVE-2026-89094",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Forgejo before 16.0.4 allows remote code execution via a crafted template repository because template expansion on files in .forgejo/template is mishandled.",
+        "published": "2026-09-10T21:17:53.160"
+      },
+      {
+        "cve_id": "CVE-2026-85025",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Dell ThinOS 10, versions prior to 2605_10. 2616, contains an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. An unauthenticated attacker with ",
-        "published": "2026-09-10T16:17:58.040"
+        "description": "IBM Langflow OSS 1.0.0 through 1.11.5 Langflow could allow an unauthenticated attacker to execute arbitrary code and access or modify chat sessions through publicly shared MCP project endpoints due to",
+        "published": "2026-09-10T21:17:51.990"
       },
       {
-        "cve_id": "CVE-2026-88018",
+        "cve_id": "CVE-2026-78573",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "rclone is a command-line program to sync files and directories to and from different cloud storage providers. Prior to 1.75.1, rclone serve s3 configured with --auth-proxy but without --auth-key allow",
-        "published": "2026-09-10T16:18:08.913"
+        "description": "IBM ContextForge MCP Gateway 1.0.0 through 1.0.7 could allow a remote attacker to gain administrative access due to the use of default credentials.",
+        "published": "2026-09-10T22:16:59.987"
       },
       {
-        "cve_id": "CVE-2026-88899",
+        "cve_id": "CVE-2026-79724",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "knowns versions before 0.31.0 fail to properly validate the x-opencode-directory request header in the /api/opencode proxy endpoint. Remote attackers can supply arbitrary directory paths to execute fi",
-        "published": "2026-09-10T16:18:12.120"
+        "description": "IBM Langflow OSS 1.0.0 through 1.11.5 could allow a remote attacker to execute arbitrary OS commands due to improper neutralization of special elements used in an OS command.",
+        "published": "2026-09-10T22:17:00.530"
       },
       {
-        "cve_id": "CVE-2026-52098",
+        "cve_id": "CVE-2026-81204",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "An issue in Flowise 3.1.2 allows a remote attacker to execute arbitrary code via the /api/v1/prediction/<flowId> endpoint",
-        "published": "2026-09-10T17:17:04.940"
-      },
-      {
-        "cve_id": "CVE-2026-81048",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Dell ThinOS 10, versions prior to 2605_10.2616, contain an Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability. An unauthenticated attacker with adjacent ",
-        "published": "2026-09-10T16:17:57.543"
-      },
-      {
-        "cve_id": "CVE-2026-81046",
-        "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "Dell ThinOS 10, versions prior to 2605_10.2616, contain a Protection Mechanism Failure vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leadi",
-        "published": "2026-09-10T16:17:57.417"
-      },
-      {
-        "cve_id": "CVE-2026-81468",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Dell ThinOS 10, versions prior to 2605_10. 2616, contains an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. A high privileged attacker with r",
-        "published": "2026-09-10T16:17:58.157"
-      },
-      {
-        "cve_id": "CVE-2026-85228",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "An integer overflow in the tensor buffer validation component in Amazon Deep Java Library (DJL) from 0.13.0 through 0.36.0 on all platforms might allow a remote unauthenticated actor to obtain informa",
-        "published": "2026-09-10T17:17:06.437"
-      },
-      {
-        "cve_id": "CVE-2026-88044",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "rclone is a command-line program to sync files and directories to and from different cloud storage providers. From 1.70.0 until 1.75.1, the serve/start RC interface accepts per-server proxyOpt.AuthPro",
-        "published": "2026-09-10T17:17:08.387"
-      },
-      {
-        "cve_id": "CVE-2026-89042",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "passport-saml-encrypted through 0.1.13 makes SAML signature verification conditional on an optional cert option, allowing attackers to bypass authentication by submitting unsigned SAML responses. Atta",
-        "published": "2026-09-10T18:18:15.910"
+        "description": "IBM Langflow OSS 1.0.0 through 1.11.5 could allow a remote attacker to execute arbitrary code due to code injection during graph construction.",
+        "published": "2026-09-10T22:17:01.580"
       },
       {
         "cve_id": "CVE-2026-89086",
@@ -341,46 +292,95 @@
         "published": "2026-09-10T20:17:32.113"
       },
       {
-        "cve_id": "CVE-2026-79987",
+        "cve_id": "CVE-2026-75940",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "A vulnerability was reported in Lenovo Health Android Application, distributed exclusively in the Chinese market, that could allow an attacker to access sensitive health-related information.",
+        "published": "2026-09-10T21:17:44.080"
+      },
+      {
+        "cve_id": "CVE-2026-19646",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "IBM Common Licensing Agent 9.0, Agent 9.0.0.1, Agent 9.0.0.2, ART 9.0, ART 9.0.0.1, and ART 9.0.0.2 could allow a remote attacker to redirect users to an arbitrary domain due to improper validation of",
+        "published": "2026-09-10T22:16:55.697"
+      },
+      {
+        "cve_id": "CVE-2026-45764",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Suricata is a network Intrusion Detection System, Intrusion Prevention System and Network Security Monitoring engine. Prior to versions 7.0.16 and 8.0.5, a protocol change while processing HTTP/2 traf",
+        "published": "2026-09-10T22:16:56.250"
+      },
+      {
+        "cve_id": "CVE-2026-80424",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to create arbitrary files due to path traversal during archive extraction.",
+        "published": "2026-09-10T22:17:01.163"
+      },
+      {
+        "cve_id": "CVE-2026-75624",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A remote, authenticated, non-admin Craft CMS Control Panel user with only the\u00a0accessCp\u00a0permission can execute operating system commands as the PHP web worker.",
-        "published": "2026-09-10T16:17:56.543"
+        "description": "IBM App Connect Enterprise 13.0.1.0 through 13.0.8.1, and 12.0.1.0 through 12.0.12.27 could allow a remote authenticated attacker to bypass security restrictions due to incorrect authorization.",
+        "published": "2026-09-10T22:16:59.313"
       },
       {
-        "cve_id": "CVE-2026-88937",
+        "cve_id": "CVE-2026-75777",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "knowns through 0.33.0 fails to properly validate template destination paths in the code generation template engine, allowing attackers to read and write arbitrary files outside the project root. Attac",
-        "published": "2026-09-10T16:18:12.273"
+        "description": "IBM Aspera Enterprise WebApps 1.0.0 through 1.0.5 could allow a local attacker to escape container protections due to unrestricted system calls being permitted within the container.",
+        "published": "2026-09-10T22:16:59.457"
       },
       {
-        "cve_id": "CVE-2026-88959",
+        "cve_id": "CVE-2026-76059",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Anchor CMS through 0.12.7 fails to enforce role-based access control in admin user-management endpoints, allowing any authenticated low-privilege user to create administrator accounts or modify existi",
-        "published": "2026-09-10T16:18:12.843"
+        "description": "IBM Langflow OSS 1.0.0 through 1.11.5 An attacker who could submit custom component source code could bypass the static security scanner by crafting an annotated class-body assignment that resolved to",
+        "published": "2026-09-10T22:16:59.590"
       },
       {
-        "cve_id": "CVE-2026-73693",
+        "cve_id": "CVE-2026-78569",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "FileRun before 2026.3.0 contains an OS command injection vulnerability in the PhotoProofSheet handler that allows authenticated users with upload permission to execute arbitrary commands by uploading ",
-        "published": "2026-09-10T17:17:05.667"
+        "description": "IBM Langflow OSS 1.0.0 through 1.11.5 could allow an authenticated attacker to execute arbitrary code due to an incomplete denylist in the security scanner.",
+        "published": "2026-09-10T22:16:59.723"
       },
       {
-        "cve_id": "CVE-2026-88939",
+        "cve_id": "CVE-2026-78571",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "knowns through 0.33.0 exempts the project.set action from permission guard checks unconditionally, allowing read-only agent sessions to bypass restrictions. Attackers can invoke project.set to repoint",
-        "published": "2026-09-10T16:18:12.577"
+        "base_score": 8.8,
+        "description": "IBM Langflow OSS 1.0.0 through 1.11.5 could allow a remote authenticated attacker to execute arbitrary code due to an unguarded eval() call on attacker-controlled input.",
+        "published": "2026-09-10T22:16:59.853"
       },
       {
-        "cve_id": "CVE-2026-88023",
+        "cve_id": "CVE-2026-78575",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Improper neutralization of special elements in data query logic in the GridFS component of the MongoDB PHP Library can cause a caller-supplied structured file identifier to be interpreted as a query c",
-        "published": "2026-09-10T18:18:12.457"
+        "base_score": 8.8,
+        "description": "IBM Langflow OSS 1.0.0 through 1.11.5 could allow a remote authenticated attacker to execute arbitrary commands due to improper validation of command-line arguments in the MCP stdio server configurati",
+        "published": "2026-09-10T22:17:00.130"
+      },
+      {
+        "cve_id": "CVE-2026-79742",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "IBM Langflow OSS 1.0.0 through 1.11.5 could allow a remote authenticated attacker to execute arbitrary code due to an incomplete environment variable blocklist.",
+        "published": "2026-09-10T22:17:00.780"
+      },
+      {
+        "cve_id": "CVE-2026-81211",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "IBM Langflow OSS 1.0.0 through 1.11.5 could allow a remote authenticated attacker to execute arbitrary Python code due to improper authorization of custom components in stored flows.",
+        "published": "2026-09-10T22:17:01.977"
+      },
+      {
+        "cve_id": "CVE-2026-81550",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special elements used in an OS command.",
+        "published": "2026-09-10T22:17:02.653"
       }
     ]
   },
