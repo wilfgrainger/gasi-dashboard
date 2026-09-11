@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-11T02:06:20.341875+00:00",
+  "generated_at": "2026-09-11T08:24:50.879254+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 16,
-        "score": 3.0,
+        "value": 9,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,65 +238,30 @@
     ]
   },
   "nvd": {
-    "total": 386,
-    "critical_count": 16,
-    "high_count": 32,
+    "total": 409,
+    "critical_count": 9,
+    "high_count": 50,
     "cves": [
-      {
-        "cve_id": "CVE-2026-77770",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "The miniOrange 2FA  WordPress plugin before 6.3.1, miniOrange 2FA  WordPress plugin before 19.3 does not require a validated transaction before deleting site options whose names come from unauthentica",
-        "published": "2026-09-10T07:17:02.943"
-      },
-      {
-        "cve_id": "CVE-2026-19583",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Velociraptor allows some sensitive artifacts to be gated by additional permissions. For example, the Linux.Sys.BashShell artifact allows arbitrary command execution on endpoints, and so it requires th",
-        "published": "2026-09-10T03:16:59.010"
-      },
-      {
-        "cve_id": "CVE-2026-18351",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Drag and Drop File Upload for Elementor Forms plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 1.6.0 via the elementor_file_upload function. This i",
-        "published": "2026-09-10T02:16:34.180"
-      },
-      {
-        "cve_id": "CVE-2026-57967",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An unauthenticated remote attacker can craft a CORE protocol SESSION_REATTACH packet to steal an existing session and assume ongoing execution of the previously authenticated session.\n\n\n\nThis issue af",
-        "published": "2026-09-10T05:17:01.443"
-      },
-      {
-        "cve_id": "CVE-2026-7188",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Armiya Information Technologies Ltd. Co. Access Control System allows SQL Injection.\n\nThis issue a",
-        "published": "2026-09-10T08:16:57.893"
-      },
-      {
-        "cve_id": "CVE-2026-80351",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Improper neutralization of directives in dynamically evaluated code ('eval injection') vulnerability in Apache Camel K.\n\n\n\nAn improper neutralization of directives in dynamically evaluated Maven confi",
-        "published": "2026-09-10T08:16:58.947"
-      },
-      {
-        "cve_id": "CVE-2026-80352",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Improper Control of Generation of Code ('Code Injection') vulnerability in Apache Camel K.\n\n\n\nA YAML injection vulnerability in custom resource configuration allows an authorized CR author to inject a",
-        "published": "2026-09-10T08:16:59.070"
-      },
       {
         "cve_id": "CVE-2026-88278",
         "severity": "CRITICAL",
         "base_score": 9.8,
         "description": "GeoVision GV-LPC2211 V1.13 fails to enforce WS-Security UsernameToken freshness or nonce reuse protection, allowing a captured PasswordDigest token to be replayed for subsequent ONVIF operations.",
         "published": "2026-09-10T09:17:04.787"
+      },
+      {
+        "cve_id": "CVE-2026-9163",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in GIS Informatics GisLab Laboratory Management System allows SQL Injection.\n\nThis issue affects GisL",
+        "published": "2026-09-10T13:20:33.663"
+      },
+      {
+        "cve_id": "CVE-2026-88877",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Traefik is a HTTP reverse proxy and load balancer. In versions >= v3.7.0 and <= v3.7.11, the Kubernetes ingress-nginx provider mishandles Ingresses that carry both an authentication annotation and the",
+        "published": "2026-09-10T14:17:16.023"
       },
       {
         "cve_id": "CVE-2026-88285",
@@ -313,32 +278,18 @@
         "published": "2026-09-10T09:17:06.250"
       },
       {
-        "cve_id": "CVE-2026-49364",
+        "cve_id": "CVE-2026-88869",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "An unauthenticated network-adjacent attacker can leverage discovery to capture cluster administrative credentials during the initial cluster connection handshake.\n\nThis issue affects Apache Artemis: f",
-        "published": "2026-09-10T05:17:01.230"
+        "base_score": 9.3,
+        "description": "AVideo through commit c3edcc274c389816d434acadac07ee78eaf330c1 contains a stored cross-site scripting vulnerability in the AD_Server plugin's log.php endpoint that fails to escape the label parameter ",
+        "published": "2026-09-10T14:17:14.637"
       },
       {
-        "cve_id": "CVE-2026-67593",
+        "cve_id": "CVE-2026-88864",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "A remote attacker can craft an Openwire RemoveSubscriptionInfo command to cause the deletion of a queue on the Artemis broker before the connection authentication and authorization stage or at any tim",
-        "published": "2026-09-10T05:17:01.560"
-      },
-      {
-        "cve_id": "CVE-2026-84939",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Path traversal vulnerability in Apache FreeMarker template loading mechanism, if the attacker can specify an arbitrary malformed locale identifier to FreeMarker, and the localized lookup configuration",
-        "published": "2026-09-10T06:17:06.460"
-      },
-      {
-        "cve_id": "CVE-2026-78361",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The zipMoney(Zip Co) Payments Plugin for WooCommerce WordPress plugin before 2.4.0 does not perform any authorisation checks on one of its front-end request handlers, and does not restrict which optio",
-        "published": "2026-09-10T07:17:03.143"
+        "description": "Capgo (capgo.app) fails to restrict direct write access to the public.sso_providers table exposed through Supabase PostgREST. A holder of an ordinary Capgo full API key can insert a row with status='a",
+        "published": "2026-09-10T14:17:12.187"
       },
       {
         "cve_id": "CVE-2026-44950",
@@ -369,18 +320,67 @@
         "published": "2026-09-10T09:17:04.673"
       },
       {
-        "cve_id": "CVE-2026-82079",
+        "cve_id": "CVE-2026-64836",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "A stack-based buffer overflow vulnerability in the Nintendo Switch local wireless networking functionality may allow an attacker within wireless range to execute arbitrary code using return-oriented p",
-        "published": "2026-09-10T06:17:06.330"
+        "base_score": 8.8,
+        "description": "ICEcoder versions through 8.1 contain a path traversal vulnerability in the file-control endpoint due to a logic error in the document-root confinement check. The File::check() validation function com",
+        "published": "2026-09-10T14:17:03.317"
       },
       {
-        "cve_id": "CVE-2026-42805",
+        "cve_id": "CVE-2026-64837",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "A stack-based buffer overflow vulnerability exists in the Bosch Sensortec BHI385 SensorAPI (C library) within the debug message parser function bhi385_parse_debug_message (located in bhi385_parse.c). ",
-        "published": "2026-09-10T09:17:02.013"
+        "base_score": 8.8,
+        "description": "ICEcoder through 8.1 passes an unescaped filesystem path into a shell command in lib/properties.php, allowing authenticated users to inject OS commands through directory names. Attackers can create di",
+        "published": "2026-09-10T14:17:03.570"
+      },
+      {
+        "cve_id": "CVE-2026-88862",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Capgo (capgo.app) backend through 12.242.4 does not validate parent-child delegation when processing the x-limited-key-id header. checkKeyByIdPg() in supabase/functions/_backend/utils/hono_middleware.",
+        "published": "2026-09-10T14:17:11.820"
+      },
+      {
+        "cve_id": "CVE-2026-88866",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "WWBN AVideo through commit c3edcc274c389816d434acadac07ee78eaf330c1 contains a stored cross-site scripting vulnerability in the LoginControl plugin that fails to encode the User-Agent header before st",
+        "published": "2026-09-10T14:17:12.773"
+      },
+      {
+        "cve_id": "CVE-2026-88867",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "WWBN AVideo, in versions up to and including commit c3edcc274c389816d434acadac07ee78eaf330c1, contains a stored cross-site scripting vulnerability. objects/categoryAddNew.json.php passes the POST para",
+        "published": "2026-09-10T14:17:12.920"
+      },
+      {
+        "cve_id": "CVE-2026-88868",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "AVideo through commit c3edcc274c389816d434acadac07ee78eaf330c1 contains a stored cross-site scripting vulnerability in the LiveLinks plugin where title and description fields are stored without saniti",
+        "published": "2026-09-10T14:17:13.490"
+      },
+      {
+        "cve_id": "CVE-2026-85217",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "A maliciously crafted add-in, when installed and executed in Autodesk Fusion Desktop, can modify persistent network proxy settings without user notification or consent. A successful exploit may allow ",
+        "published": "2026-09-10T14:17:09.380"
+      },
+      {
+        "cve_id": "CVE-2026-88880",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Renovate before 44.11.3 fails to validate Link header destinations when following GitLab server pagination, allowing malicious servers to redirect credential-bearing requests. Attackers controlling a ",
+        "published": "2026-09-10T14:17:16.480"
+      },
+      {
+        "cve_id": "CVE-2026-88881",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Renovate, a dependency update tool, follows pagination links supplied by the GitHub server in the HTTP `Link` header when interacting with GitHub.com, GitHub Enterprise Cloud, or GitHub Enterprise Ser",
+        "published": "2026-09-10T14:17:16.650"
       }
     ]
   },
