@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-11T18:52:16.523546+00:00",
+  "generated_at": "2026-09-11T22:05:59.965633+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 43,
+        "value": 44,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 11,
-        "score": 3.0,
+        "value": 8,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -32,8 +32,8 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1708,
-    "recent_30d_count": 43,
+    "total_catalog_count": 1709,
+    "recent_30d_count": 44,
     "recent": [
       {
         "cve_id": "CVE-2026-84869",
@@ -63,6 +63,16 @@
         "date_added": "2026-09-11",
         "due_date": "2026-09-25",
         "description": "JFrog Artifactory contains an improper authentication vulnerability that could return an internal anonymous-user token to an unauthenticated caller when anonymous access is disabled, potentially expos",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-85706",
+        "vendor": "GitLab",
+        "product": "Community Edition and Enterprise Edition",
+        "name": "GitLab Community Edition and Enterprise Edition Path Traversal Vulnerability",
+        "date_added": "2026-09-11",
+        "due_date": "2026-09-14",
+        "description": "GitLab Community Edition and Enterprise Edition contains a path traversal vulnerability that allows an unauthenticated user to read arbitrary files due to an improper path confinement and missing auth",
         "ransomware_use": "Unknown"
       },
       {
@@ -224,45 +234,14 @@
         "due_date": "2026-09-05",
         "description": "Sangoma Switchvox contains a SQL injection vulnerability which allows an unauthenticated remote attacker to execute arbitrary SQL statements against the backend PostgreSQL database using a single craf",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-83548",
-        "vendor": "SonicWall",
-        "product": "SMA1000 Appliances",
-        "name": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
-        "date_added": "2026-09-02",
-        "due_date": "2026-09-05",
-        "description": "SonicWall SMA1000 Appliances contains a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to gain unauthorized access to sensitive functionality and perform ",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 302,
-    "critical_count": 11,
-    "high_count": 46,
+    "total": 747,
+    "critical_count": 8,
+    "high_count": 49,
     "cves": [
-      {
-        "cve_id": "CVE-2026-89049",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A server-side request forgery issue due to improper validation of equivalent address representations in the port forwarding to remote hosts functionality in Amazon AWS Systems Manager Agent (SSM Agent",
-        "published": "2026-09-10T19:17:42.373"
-      },
-      {
-        "cve_id": "CVE-2026-89094",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Forgejo before 16.0.4 allows remote code execution via a crafted template repository because template expansion on files in .forgejo/template is mishandled.",
-        "published": "2026-09-10T21:17:53.160"
-      },
-      {
-        "cve_id": "CVE-2026-85025",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "IBM Langflow OSS 1.0.0 through 1.11.5 Langflow could allow an unauthenticated attacker to execute arbitrary code and access or modify chat sessions through publicly shared MCP project endpoints due to",
-        "published": "2026-09-10T21:17:51.990"
-      },
       {
         "cve_id": "CVE-2026-78573",
         "severity": "CRITICAL",
@@ -285,18 +264,18 @@
         "published": "2026-09-10T22:17:01.580"
       },
       {
-        "cve_id": "CVE-2026-89086",
+        "cve_id": "CVE-2026-82100",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "In the jose package before 0.11.0 for OCaml, library calls to validate an RSA signature only confirm that PKCS #1 decoding succeeds, and proceed to declare the signature valid without the required ste",
-        "published": "2026-09-10T20:17:32.113"
+        "base_score": 9.6,
+        "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to cause a denial of service due to a path traversal vulnerability.",
+        "published": "2026-09-10T22:17:04.090"
       },
       {
-        "cve_id": "CVE-2026-75940",
+        "cve_id": "CVE-2026-82107",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A vulnerability was reported in Lenovo Health Android Application, distributed exclusively in the Chinese market, that could allow an attacker to access sensitive health-related information.",
-        "published": "2026-09-10T21:17:44.080"
+        "base_score": 9.6,
+        "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to obtain sensitive information and bypass security restrictions due to improper authentication.",
+        "published": "2026-09-10T22:17:04.220"
       },
       {
         "cve_id": "CVE-2026-19646",
@@ -381,6 +360,27 @@
         "base_score": 8.8,
         "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special elements used in an OS command.",
         "published": "2026-09-10T22:17:02.653"
+      },
+      {
+        "cve_id": "CVE-2026-81551",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to arbitrarily write to or delete files on shared storage due to a path traversal vulnerability.",
+        "published": "2026-09-10T22:17:02.797"
+      },
+      {
+        "cve_id": "CVE-2026-81554",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to obtain sensitive information due to an absolute-path traversal vulnerability.",
+        "published": "2026-09-10T22:17:02.937"
+      },
+      {
+        "cve_id": "CVE-2026-81940",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "IBM Langflow OSS 1.0.0 through 1.11.5 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special characters in flow display names.",
+        "published": "2026-09-10T22:17:03.083"
       }
     ]
   },
