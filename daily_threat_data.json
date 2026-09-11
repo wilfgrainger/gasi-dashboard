@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-11T08:24:50.879254+00:00",
+  "generated_at": "2026-09-11T15:32:02.329252+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
-        "score": 2.5,
+        "value": 14,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 409,
-    "critical_count": 9,
-    "high_count": 50,
+    "total": 334,
+    "critical_count": 14,
+    "high_count": 36,
     "cves": [
       {
-        "cve_id": "CVE-2026-88278",
+        "cve_id": "CVE-2026-68487",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "GeoVision GV-LPC2211 V1.13 fails to enforce WS-Security UsernameToken freshness or nonce reuse protection, allowing a captured PasswordDigest token to be replayed for subsequent ONVIF operations.",
-        "published": "2026-09-10T09:17:04.787"
+        "base_score": 9.9,
+        "description": "Path traversal in Plesk's Backup Manager causes arbitrary file write as root by an authenticated customer.",
+        "published": "2026-09-10T17:17:05.310"
       },
       {
-        "cve_id": "CVE-2026-9163",
+        "cve_id": "CVE-2026-68488",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in GIS Informatics GisLab Laboratory Management System allows SQL Injection.\n\nThis issue affects GisL",
-        "published": "2026-09-10T13:20:33.663"
+        "base_score": 9.9,
+        "description": "A Time-of-check Time-of-use (TOCTOU) race condition leading to insecure symlink following in Plesk causes local privilege escalation to root via arbitrary file/directory ownership takeover.",
+        "published": "2026-09-10T17:17:05.437"
       },
       {
-        "cve_id": "CVE-2026-88877",
+        "cve_id": "CVE-2026-89049",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Traefik is a HTTP reverse proxy and load balancer. In versions >= v3.7.0 and <= v3.7.11, the Kubernetes ingress-nginx provider mishandles Ingresses that carry both an authentication annotation and the",
-        "published": "2026-09-10T14:17:16.023"
+        "base_score": 9.9,
+        "description": "A server-side request forgery issue due to improper validation of equivalent address representations in the port forwarding to remote hosts functionality in Amazon AWS Systems Manager Agent (SSM Agent",
+        "published": "2026-09-10T19:17:42.373"
       },
       {
-        "cve_id": "CVE-2026-88285",
+        "cve_id": "CVE-2026-81467",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Dell ThinOS 10, versions prior to 2605_10. 2616, contains an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. An unauthenticated attacker with ",
+        "published": "2026-09-10T16:17:58.040"
+      },
+      {
+        "cve_id": "CVE-2026-88018",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "rclone is a command-line program to sync files and directories to and from different cloud storage providers. Prior to 1.75.1, rclone serve s3 configured with --auth-proxy but without --auth-key allow",
+        "published": "2026-09-10T16:18:08.913"
+      },
+      {
+        "cve_id": "CVE-2026-88899",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "knowns versions before 0.31.0 fail to properly validate the x-opencode-directory request header in the /api/opencode proxy endpoint. Remote attackers can supply arbitrary directory paths to execute fi",
+        "published": "2026-09-10T16:18:12.120"
+      },
+      {
+        "cve_id": "CVE-2026-52098",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An issue in Flowise 3.1.2 allows a remote attacker to execute arbitrary code via the /api/v1/prediction/<flowId> endpoint",
+        "published": "2026-09-10T17:17:04.940"
+      },
+      {
+        "cve_id": "CVE-2026-81048",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Dell ThinOS 10, versions prior to 2605_10.2616, contain an Improper Neutralization of Special Elements used in a Command ('Command Injection') vulnerability. An unauthenticated attacker with adjacent ",
+        "published": "2026-09-10T16:17:57.543"
+      },
+      {
+        "cve_id": "CVE-2026-81046",
         "severity": "CRITICAL",
         "base_score": 9.4,
-        "description": "GeoVision GV-LPC2211 V1.13 exposes a network-accessible PTZ control service without authentication, allowing remote clients to retrieve PTZ information and issue PTZ or raw serial commands.",
-        "published": "2026-09-10T09:17:05.563"
+        "description": "Dell ThinOS 10, versions prior to 2605_10.2616, contain a Protection Mechanism Failure vulnerability. An unauthenticated attacker with remote access could potentially exploit this vulnerability, leadi",
+        "published": "2026-09-10T16:17:57.417"
       },
       {
-        "cve_id": "CVE-2026-8323",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "URL redirection to untrusted site ('open redirect') vulnerability in Armiya Information Technologies Ltd. Co. Access Control System allows Fake the Source of Data.\n\nThis issue affects Access Control S",
-        "published": "2026-09-10T09:17:06.250"
-      },
-      {
-        "cve_id": "CVE-2026-88869",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "AVideo through commit c3edcc274c389816d434acadac07ee78eaf330c1 contains a stored cross-site scripting vulnerability in the AD_Server plugin's log.php endpoint that fails to escape the label parameter ",
-        "published": "2026-09-10T14:17:14.637"
-      },
-      {
-        "cve_id": "CVE-2026-88864",
+        "cve_id": "CVE-2026-81468",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Capgo (capgo.app) fails to restrict direct write access to the public.sso_providers table exposed through Supabase PostgREST. A holder of an ordinary Capgo full API key can insert a row with status='a",
-        "published": "2026-09-10T14:17:12.187"
+        "description": "Dell ThinOS 10, versions prior to 2605_10. 2616, contains an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. A high privileged attacker with r",
+        "published": "2026-09-10T16:17:58.157"
       },
       {
-        "cve_id": "CVE-2026-44950",
+        "cve_id": "CVE-2026-85228",
         "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "fs_read_glyphs() in the libXfont2 font-server client (src/fc/fserve.c) copies each glyph's bitmap into a single buffer. Existing checks validates only that the source slice (position, length) lies wit",
-        "published": "2026-09-10T09:17:02.490"
+        "base_score": 9.1,
+        "description": "An integer overflow in the tensor buffer validation component in Amazon Deep Java Library (DJL) from 0.13.0 through 0.36.0 on all platforms might allow a remote unauthenticated actor to obtain informa",
+        "published": "2026-09-10T17:17:06.437"
       },
       {
-        "cve_id": "CVE-2026-59679",
+        "cve_id": "CVE-2026-88044",
         "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "fs_read_glyphs() in the libXfont2 font-server client (src/fc/fserve.c) indexes the per-character encoding[] array using num_chars from the FS_QueryXBitmaps16 reply, but that array was allocated with a",
-        "published": "2026-09-10T09:17:02.883"
+        "base_score": 9.1,
+        "description": "rclone is a command-line program to sync files and directories to and from different cloud storage providers. From 1.70.0 until 1.75.1, the serve/start RC interface accepts per-server proxyOpt.AuthPro",
+        "published": "2026-09-10T17:17:08.387"
       },
       {
-        "cve_id": "CVE-2026-88271",
+        "cve_id": "CVE-2026-89042",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "passport-saml-encrypted through 0.1.13 makes SAML signature verification conditional on an optional cert option, allowing attackers to bypass authentication by submitting unsigned SAML responses. Atta",
+        "published": "2026-09-10T18:18:15.910"
+      },
+      {
+        "cve_id": "CVE-2026-89086",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "In the jose package before 0.11.0 for OCaml, library calls to validate an RSA signature only confirm that PKCS #1 decoding succeeds, and proceed to declare the signature valid without the required ste",
+        "published": "2026-09-10T20:17:32.113"
+      },
+      {
+        "cve_id": "CVE-2026-79987",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "GeoVision GV-LPC2211 V1.13 allows a Guest user to overwrite device configuration and replace the administrator password through SSVR.",
-        "published": "2026-09-10T09:17:04.003"
+        "description": "A remote, authenticated, non-admin Craft CMS Control Panel user with only the\u00a0accessCp\u00a0permission can execute operating system commands as the PHP web worker.",
+        "published": "2026-09-10T16:17:56.543"
       },
       {
-        "cve_id": "CVE-2026-88277",
+        "cve_id": "CVE-2026-88937",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "GeoVision GV-LPC2211 V1.13 allows an authenticated ONVIF user to inject shell commands through ConsumerReference.Address and execute arbitrary commands as root.",
-        "published": "2026-09-10T09:17:04.673"
+        "description": "knowns through 0.33.0 fails to properly validate template destination paths in the code generation template engine, allowing attackers to read and write arbitrary files outside the project root. Attac",
+        "published": "2026-09-10T16:18:12.273"
       },
       {
-        "cve_id": "CVE-2026-64836",
+        "cve_id": "CVE-2026-88959",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "ICEcoder versions through 8.1 contain a path traversal vulnerability in the file-control endpoint due to a logic error in the document-root confinement check. The File::check() validation function com",
-        "published": "2026-09-10T14:17:03.317"
+        "description": "Anchor CMS through 0.12.7 fails to enforce role-based access control in admin user-management endpoints, allowing any authenticated low-privilege user to create administrator accounts or modify existi",
+        "published": "2026-09-10T16:18:12.843"
       },
       {
-        "cve_id": "CVE-2026-64837",
+        "cve_id": "CVE-2026-73693",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "ICEcoder through 8.1 passes an unescaped filesystem path into a shell command in lib/properties.php, allowing authenticated users to inject OS commands through directory names. Attackers can create di",
-        "published": "2026-09-10T14:17:03.570"
+        "description": "FileRun before 2026.3.0 contains an OS command injection vulnerability in the PhotoProofSheet handler that allows authenticated users with upload permission to execute arbitrary commands by uploading ",
+        "published": "2026-09-10T17:17:05.667"
       },
       {
-        "cve_id": "CVE-2026-88862",
+        "cve_id": "CVE-2026-88939",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Capgo (capgo.app) backend through 12.242.4 does not validate parent-child delegation when processing the x-limited-key-id header. checkKeyByIdPg() in supabase/functions/_backend/utils/hono_middleware.",
-        "published": "2026-09-10T14:17:11.820"
+        "base_score": 8.3,
+        "description": "knowns through 0.33.0 exempts the project.set action from permission guard checks unconditionally, allowing read-only agent sessions to bypass restrictions. Attackers can invoke project.set to repoint",
+        "published": "2026-09-10T16:18:12.577"
       },
       {
-        "cve_id": "CVE-2026-88866",
+        "cve_id": "CVE-2026-88023",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "WWBN AVideo through commit c3edcc274c389816d434acadac07ee78eaf330c1 contains a stored cross-site scripting vulnerability in the LoginControl plugin that fails to encode the User-Agent header before st",
-        "published": "2026-09-10T14:17:12.773"
-      },
-      {
-        "cve_id": "CVE-2026-88867",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "WWBN AVideo, in versions up to and including commit c3edcc274c389816d434acadac07ee78eaf330c1, contains a stored cross-site scripting vulnerability. objects/categoryAddNew.json.php passes the POST para",
-        "published": "2026-09-10T14:17:12.920"
-      },
-      {
-        "cve_id": "CVE-2026-88868",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "AVideo through commit c3edcc274c389816d434acadac07ee78eaf330c1 contains a stored cross-site scripting vulnerability in the LiveLinks plugin where title and description fields are stored without saniti",
-        "published": "2026-09-10T14:17:13.490"
-      },
-      {
-        "cve_id": "CVE-2026-85217",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "A maliciously crafted add-in, when installed and executed in Autodesk Fusion Desktop, can modify persistent network proxy settings without user notification or consent. A successful exploit may allow ",
-        "published": "2026-09-10T14:17:09.380"
-      },
-      {
-        "cve_id": "CVE-2026-88880",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Renovate before 44.11.3 fails to validate Link header destinations when following GitLab server pagination, allowing malicious servers to redirect credential-bearing requests. Attackers controlling a ",
-        "published": "2026-09-10T14:17:16.480"
-      },
-      {
-        "cve_id": "CVE-2026-88881",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Renovate, a dependency update tool, follows pagination links supplied by the GitHub server in the HTTP `Link` header when interacting with GitHub.com, GitHub Enterprise Cloud, or GitHub Enterprise Ser",
-        "published": "2026-09-10T14:17:16.650"
+        "base_score": 8.3,
+        "description": "Improper neutralization of special elements in data query logic in the GridFS component of the MongoDB PHP Library can cause a caller-supplied structured file identifier to be interpreted as a query c",
+        "published": "2026-09-10T18:18:12.457"
       }
     ]
   },
