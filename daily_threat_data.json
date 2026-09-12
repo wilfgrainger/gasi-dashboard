@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T08:13:16.324461+00:00",
+  "generated_at": "2026-09-12T14:38:28.806546+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
+        "value": 9,
         "score": 2.5,
         "max": 3
       },
@@ -238,44 +238,65 @@
     ]
   },
   "nvd": {
-    "total": 681,
-    "critical_count": 6,
-    "high_count": 36,
+    "total": 657,
+    "critical_count": 9,
+    "high_count": 27,
     "cves": [
-      {
-        "cve_id": "CVE-2026-80462",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "A vulnerability in the Chef Automate API gateway and identity validation path may allow an unauthenticated actor to gain elevated access to protected Chef Automate functionality under specific conditi",
-        "published": "2026-09-11T13:18:18.300"
-      },
-      {
-        "cve_id": "CVE-2026-89259",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Hugo is a static site generator. From v0.161.0, Hugo executes Node tools under Node's permission model, but TailwindCSS \u2014 included in the default security.exec.allow list \u2014 requires a highly permissiv",
-        "published": "2026-09-11T12:16:56.480"
-      },
-      {
-        "cve_id": "CVE-2026-84390",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A inclusion of sensitive information in source code vulnerability in Fortinet FortiMonitorOnSight 7.2.4 through 7.2.7, FortiMonitorOnSight 7.2.0 through 7.2.2 may allow attacker to improper access con",
-        "published": "2026-09-11T13:18:18.980"
-      },
-      {
-        "cve_id": "CVE-2026-71644",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An issue in Robotics-STAR-Lab (SYSU STAR Group) RACER Tested affected version: commit abcdef1234567890 allows an attacker to cause unsafe trajectory planning and potential UAV collisions via a missing",
-        "published": "2026-09-11T14:17:32.667"
-      },
       {
         "cve_id": "CVE-2026-89010",
         "severity": "CRITICAL",
         "base_score": 9.8,
         "description": "WAVLINK WN535M1 and WN535M3 routers running firmware prior to M35M1_V250922 contain an unauthenticated OS command injection vulnerability that allows remote attackers to execute arbitrary commands as ",
         "published": "2026-09-11T15:17:08.357"
+      },
+      {
+        "cve_id": "CVE-2026-72709",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "SPIP before 4.4.18 contains a missing authorization vulnerability in the administrative action endpoints under ecrire/action/ that allows unauthenticated attackers to perform privileged actions by sup",
+        "published": "2026-09-11T17:18:58.760"
+      },
+      {
+        "cve_id": "CVE-2026-72710",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "SPIP before 4.4.18 contains a remote code execution vulnerability in the editer_objet action where the arg parameter resolves SQL table names without enforcing an editable columns allowlist, allowing ",
+        "published": "2026-09-11T17:18:58.907"
+      },
+      {
+        "cve_id": "CVE-2026-62103",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Unauthenticated PHP Object Injection in Everest Forms <= 3.6.0 versions.",
+        "published": "2026-09-11T19:17:43.207"
+      },
+      {
+        "cve_id": "CVE-2026-62105",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Unauthenticated PHP Object Injection in ThemeREX Addons < 2.45.0 versions.",
+        "published": "2026-09-11T19:17:43.337"
+      },
+      {
+        "cve_id": "CVE-2026-79395",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An improper authentication vulnerability in the WS-Security (wsse:UsernameToken) verification routine within the Sofia IPC daemon in Xiongmai IP Camera XM530 firmware HMT.CM2005-v220608.1837 and earli",
+        "published": "2026-09-11T19:17:46.367"
+      },
+      {
+        "cve_id": "CVE-2026-53952",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "GetSimple CMS is a content management system (CMS), and GetSimple CMS CE is the community edition of that CMS. A logic flaw in GetSimple CMS (v3.4.0a and below) and GetSimpleCMS-CE (v3.3.22 and below)",
+        "published": "2026-09-11T20:17:14.060"
+      },
+      {
+        "cve_id": "CVE-2026-54072",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Authorizer is an open-source, self-hostable authentication and authorization server. Prior to version 2.2.1, the `/authorize` endpoint accepts any `redirect_uri` without validating it against `Allowed",
+        "published": "2026-09-11T19:17:42.663"
       },
       {
         "cve_id": "CVE-2026-89009",
@@ -285,34 +306,6 @@
         "published": "2026-09-11T15:17:08.190"
       },
       {
-        "cve_id": "CVE-2026-89176",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "WeenyGenius, a computer lab management system developed by Howyar Technologies, has a Missing Authentication vulnerability. Unauthenticated attackers on the same network can easily spoof student or te",
-        "published": "2026-09-11T08:16:48.677"
-      },
-      {
-        "cve_id": "CVE-2026-89177",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "WeenyGenius, a computer lab management system by Howyar Technologies, has a Use of Insecure Protocol vulnerability. Due to the reliance on ZMTP Null mode, unauthenticated attackers on the same network",
-        "published": "2026-09-11T08:16:48.813"
-      },
-      {
-        "cve_id": "CVE-2026-89178",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "WeenyGenius, a computer lab management system by Howyar Technologies, has an Origin Validation Error vulnerability. Unauthenticated attackers on the same network can spoof the teacher workstation and ",
-        "published": "2026-09-11T08:16:48.947"
-      },
-      {
-        "cve_id": "CVE-2026-71416",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Headroom compresses data before the data reaches a large language model. Prior to version 0.35.0, the Headroom WebSocket server does not validate the `Origin` header of incoming client WebSocket reque",
-        "published": "2026-09-11T14:17:32.390"
-      },
-      {
         "cve_id": "CVE-2026-38056",
         "severity": "HIGH",
         "base_score": 8.8,
@@ -320,46 +313,25 @@
         "published": "2026-09-11T15:17:01.070"
       },
       {
-        "cve_id": "CVE-2026-89249",
+        "cve_id": "CVE-2026-62102",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "AVideo through commit c3edcc274c389816d434acadac07ee78eaf330c1 contains a stored cross-site scripting vulnerability in the YPTWallet plugin where user-supplied CryptoWallet values are base64-encoded b",
-        "published": "2026-09-11T12:16:54.890"
+        "base_score": 8.8,
+        "description": "Subscriber Privilege Escalation in Gato GraphQL <= 19.2.3 versions.",
+        "published": "2026-09-11T19:17:43.073"
       },
       {
-        "cve_id": "CVE-2026-89253",
+        "cve_id": "CVE-2026-62106",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "WWBN AVideo through commit c3edcc274c389816d434acadac07ee78eaf330c1 contains a stored cross-site scripting vulnerability in the user 'donationLink' profile field. User::setDonationLink() (objects/user",
-        "published": "2026-09-11T12:16:55.533"
+        "base_score": 8.8,
+        "description": "Subscriber Privilege Escalation in SMS Alert Order Notifications <= 3.9.9 versions.",
+        "published": "2026-09-11T19:17:43.460"
       },
       {
-        "cve_id": "CVE-2026-89254",
+        "cve_id": "CVE-2026-62107",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "AVideo through commit c3edcc274c389816d434acadac07ee78eaf330c1 contains a stored cross-site scripting vulnerability in the CustomizeUser plugin where the field_name parameter is stored raw without san",
-        "published": "2026-09-11T12:16:55.690"
-      },
-      {
-        "cve_id": "CVE-2026-89255",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "AVideo through commit c3edcc274c389816d434acadac07ee78eaf330c1 contains a stored cross-site scripting vulnerability in the LoginControl plugin that fails to HTML-encode PGP public keys echoed into a t",
-        "published": "2026-09-11T12:16:55.850"
-      },
-      {
-        "cve_id": "CVE-2026-89256",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "AVideo through commit c3edcc274c389816d434acadac07ee78eaf330c1 contains a stored cross-site scripting vulnerability in the Bookmark plugin where chapter names are not encoded before being concatenated",
-        "published": "2026-09-11T12:16:56.003"
-      },
-      {
-        "cve_id": "CVE-2026-89212",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "A flaw resulting in XML external entity (XXE) was found in Akana API Platform in which references were improperly restricted during XML-to-JSON processing. The issue affects Akana versions 2026.1, 202",
-        "published": "2026-09-11T14:17:36.847"
+        "base_score": 8.8,
+        "description": "Unauthenticated PHP Object Injection in Masteriyo - LMS <= 3.4.0 versions.",
+        "published": "2026-09-11T19:17:43.583"
       },
       {
         "cve_id": "CVE-2026-70341",
@@ -376,11 +348,39 @@
         "published": "2026-09-11T16:17:47.490"
       },
       {
-        "cve_id": "CVE-2026-80469",
+        "cve_id": "CVE-2026-82583",
         "severity": "HIGH",
         "base_score": 8.3,
-        "description": "An attacker may achieve arbitrary code execution on a target system by uploading a malicious device driver package, bypassing driver verification mechanisms, and triggering the execution of\nattacker-c",
-        "published": "2026-09-11T09:17:20.833"
+        "description": "NextGen Connect (Mirth Connect) versions 4.7.1 and earlier allow an authenticated user to execute arbitrary SQL through a Database Connector API, which could result in disclosure of stored credentials",
+        "published": "2026-09-11T15:17:06.510"
+      },
+      {
+        "cve_id": "CVE-2026-78224",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "The XSLT Transformer Step builds a bare TransformerFactory without the proper security options set, so XXE injection can allow data exfiltration and denial-of-service attacks.",
+        "published": "2026-09-11T15:17:04.337"
+      },
+      {
+        "cve_id": "CVE-2026-38058",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The endpoint on the iDirect iQ200 VSAT terminal returns the complete device configuration as JSON, including the SECURITY section which contains MD5-crypt password hashes for the root SSH and web admi",
+        "published": "2026-09-11T15:17:01.407"
+      },
+      {
+        "cve_id": "CVE-2026-87020",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "An integer overflow in a specified pitch and buffer-size computation leads to a heap out-of-bounds write when Orthanc\u00a0DICOM Server\u00a0decodes an attacker-supplied PNG.",
+        "published": "2026-09-11T15:17:06.937"
+      },
+      {
+        "cve_id": "CVE-2026-8301",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Improper neutralization of special elements used in an OS command ('OS command injection') vulnerability in TUBITAK BILGEM Software Technologies Research Institute Pardus Boot Repair allows OS Command",
+        "published": "2026-09-11T15:17:09.540"
       }
     ]
   },
