@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-12T14:38:28.806546+00:00",
+  "generated_at": "2026-09-12T17:59:06.857182+00:00",
   "threat_score": {
-    "score": 6.5,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 4.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
-        "score": 2.5,
+        "value": 0,
+        "score": 0.5,
         "max": 3
       },
       {
@@ -238,151 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 657,
-    "critical_count": 9,
-    "high_count": 27,
-    "cves": [
-      {
-        "cve_id": "CVE-2026-89010",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "WAVLINK WN535M1 and WN535M3 routers running firmware prior to M35M1_V250922 contain an unauthenticated OS command injection vulnerability that allows remote attackers to execute arbitrary commands as ",
-        "published": "2026-09-11T15:17:08.357"
-      },
-      {
-        "cve_id": "CVE-2026-72709",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "SPIP before 4.4.18 contains a missing authorization vulnerability in the administrative action endpoints under ecrire/action/ that allows unauthenticated attackers to perform privileged actions by sup",
-        "published": "2026-09-11T17:18:58.760"
-      },
-      {
-        "cve_id": "CVE-2026-72710",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "SPIP before 4.4.18 contains a remote code execution vulnerability in the editer_objet action where the arg parameter resolves SQL table names without enforcing an editable columns allowlist, allowing ",
-        "published": "2026-09-11T17:18:58.907"
-      },
-      {
-        "cve_id": "CVE-2026-62103",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Unauthenticated PHP Object Injection in Everest Forms <= 3.6.0 versions.",
-        "published": "2026-09-11T19:17:43.207"
-      },
-      {
-        "cve_id": "CVE-2026-62105",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Unauthenticated PHP Object Injection in ThemeREX Addons < 2.45.0 versions.",
-        "published": "2026-09-11T19:17:43.337"
-      },
-      {
-        "cve_id": "CVE-2026-79395",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An improper authentication vulnerability in the WS-Security (wsse:UsernameToken) verification routine within the Sofia IPC daemon in Xiongmai IP Camera XM530 firmware HMT.CM2005-v220608.1837 and earli",
-        "published": "2026-09-11T19:17:46.367"
-      },
-      {
-        "cve_id": "CVE-2026-53952",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "GetSimple CMS is a content management system (CMS), and GetSimple CMS CE is the community edition of that CMS. A logic flaw in GetSimple CMS (v3.4.0a and below) and GetSimpleCMS-CE (v3.3.22 and below)",
-        "published": "2026-09-11T20:17:14.060"
-      },
-      {
-        "cve_id": "CVE-2026-54072",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Authorizer is an open-source, self-hostable authentication and authorization server. Prior to version 2.2.1, the `/authorize` endpoint accepts any `redirect_uri` without validating it against `Allowed",
-        "published": "2026-09-11T19:17:42.663"
-      },
-      {
-        "cve_id": "CVE-2026-89009",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "WAVLINK WN535M1 and WN535M3 routers running firmware prior to M35M1_V250922 contain an unauthenticated arbitrary file write vulnerability that allows remote attackers to overwrite any file on the devi",
-        "published": "2026-09-11T15:17:08.190"
-      },
-      {
-        "cve_id": "CVE-2026-38056",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A local privilege escalation vulnerability exists in the iDirect iQ200 VSAT terminal running firmware 23.0.1.0. The iQ200 is a rackmount satellite modem deployed across oil and gas, maritime, defense,",
-        "published": "2026-09-11T15:17:01.070"
-      },
-      {
-        "cve_id": "CVE-2026-62102",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Subscriber Privilege Escalation in Gato GraphQL <= 19.2.3 versions.",
-        "published": "2026-09-11T19:17:43.073"
-      },
-      {
-        "cve_id": "CVE-2026-62106",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Subscriber Privilege Escalation in SMS Alert Order Notifications <= 3.9.9 versions.",
-        "published": "2026-09-11T19:17:43.460"
-      },
-      {
-        "cve_id": "CVE-2026-62107",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Unauthenticated PHP Object Injection in Masteriyo - LMS <= 3.4.0 versions.",
-        "published": "2026-09-11T19:17:43.583"
-      },
-      {
-        "cve_id": "CVE-2026-70341",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Use after free in Microsoft Edge (Chromium-based) allows an authorized attacker to execute code over a network.",
-        "published": "2026-09-11T16:17:46.080"
-      },
-      {
-        "cve_id": "CVE-2026-7863",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Improper neutralization of special elements used in an OS command ('OS command injection') vulnerability in TUBITAK BILGEM Software Technologies Research Institute Pardus Software allows OS Command In",
-        "published": "2026-09-11T16:17:47.490"
-      },
-      {
-        "cve_id": "CVE-2026-82583",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "NextGen Connect (Mirth Connect) versions 4.7.1 and earlier allow an authenticated user to execute arbitrary SQL through a Database Connector API, which could result in disclosure of stored credentials",
-        "published": "2026-09-11T15:17:06.510"
-      },
-      {
-        "cve_id": "CVE-2026-78224",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "The XSLT Transformer Step builds a bare TransformerFactory without the proper security options set, so XXE injection can allow data exfiltration and denial-of-service attacks.",
-        "published": "2026-09-11T15:17:04.337"
-      },
-      {
-        "cve_id": "CVE-2026-38058",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The endpoint on the iDirect iQ200 VSAT terminal returns the complete device configuration as JSON, including the SECURITY section which contains MD5-crypt password hashes for the root SSH and web admi",
-        "published": "2026-09-11T15:17:01.407"
-      },
-      {
-        "cve_id": "CVE-2026-87020",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "An integer overflow in a specified pitch and buffer-size computation leads to a heap out-of-bounds write when Orthanc\u00a0DICOM Server\u00a0decodes an attacker-supplied PNG.",
-        "published": "2026-09-11T15:17:06.937"
-      },
-      {
-        "cve_id": "CVE-2026-8301",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Improper neutralization of special elements used in an OS command ('OS command injection') vulnerability in TUBITAK BILGEM Software Technologies Research Institute Pardus Boot Repair allows OS Command",
-        "published": "2026-09-11T15:17:09.540"
-      }
-    ]
+    "total": 0,
+    "critical_count": 0,
+    "high_count": 0,
+    "cves": []
   },
   "top_ips": {
     "ips": [],
