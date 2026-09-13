@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-13T15:18:43.382338+00:00",
+  "generated_at": "2026-09-13T18:25:14.423202+00:00",
   "threat_score": {
-    "score": 5.5,
+    "score": 5.0,
     "level": "ELEVATED",
     "level_color": "elevated",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 0,
+        "score": 1.0,
         "max": 3
       },
       {
@@ -238,17 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 86,
-    "critical_count": 1,
-    "high_count": 37,
+    "total": 93,
+    "critical_count": 0,
+    "high_count": 35,
     "cves": [
-      {
-        "cve_id": "CVE-2026-90558",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "sngrep through 1.8.4 contains stack buffer overflow vulnerabilities in SIP attribute formatting routines when header values exceed the 255-byte buffer limit. Attackers can craft malicious SIP packets ",
-        "published": "2026-09-12T18:16:44.587"
-      },
       {
         "cve_id": "CVE-2026-90493",
         "severity": "HIGH",
@@ -285,13 +278,6 @@
         "published": "2026-09-13T11:16:59.827"
       },
       {
-        "cve_id": "CVE-2026-90560",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "zstd-jni versions 1.2.0 through 1.5.7-13 contain an out-of-bounds read vulnerability in the ZstdDictDecompress constructor because offset and length arguments are never validated against the dictionar",
-        "published": "2026-09-12T18:16:44.890"
-      },
-      {
         "cve_id": "CVE-2026-90651",
         "severity": "HIGH",
         "base_score": 8.1,
@@ -313,13 +299,6 @@
         "published": "2026-09-13T11:17:01.113"
       },
       {
-        "cve_id": "CVE-2026-90556",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Freeciv versions before 3.2.6 contain a heap buffer overflow in worklist_load() when processing savegame files with declared worklist lengths exceeding the fixed array bound of 64 elements. Attackers ",
-        "published": "2026-09-12T18:16:44.193"
-      },
-      {
         "cve_id": "CVE-2026-90783",
         "severity": "HIGH",
         "base_score": 7.8,
@@ -339,13 +318,6 @@
         "base_score": 7.6,
         "description": "Amundsen frontend through 4.3.0 renders table, dashboard, and feature descriptions with dangerouslySetInnerHTML without HTML sanitization in ResourceListItem components. Attackers can inject malicious",
         "published": "2026-09-13T11:17:01.780"
-      },
-      {
-        "cve_id": "CVE-2026-90559",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "snappy-java through 1.1.10.8 contains an out-of-bounds write vulnerability in Snappy.uncompress(ByteBuffer, ByteBuffer) because destination buffer capacity is never validated against decompressed size",
-        "published": "2026-09-12T18:16:44.743"
       },
       {
         "cve_id": "CVE-2026-90668",
@@ -381,6 +353,34 @@
         "base_score": 7.5,
         "description": "rustypaste before 0.18.1 validates the destination path before applying the optional custom filename HTTP header, allowing attackers to bypass directory-escape checks. Attackers can supply path traver",
         "published": "2026-09-13T11:17:02.163"
+      },
+      {
+        "cve_id": "CVE-2026-90776",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Nodemailer versions 9.1.0 through 10.0.4 contain a quadratic time complexity vulnerability in the addressparser component when parsing email addresses with RFC 5322 comments. Attackers can craft malic",
+        "published": "2026-09-13T12:17:16.547"
+      },
+      {
+        "cve_id": "CVE-2026-90778",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "SIPp through 3.7.7 contains a buffer overflow vulnerability in get_peer_tag() function when processing SIP To headers with tag parameters of 2049 bytes or more. Unauthenticated remote attackers can se",
+        "published": "2026-09-13T12:17:16.837"
+      },
+      {
+        "cve_id": "CVE-2026-90779",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "SIPp through 3.7.7 contains a stack buffer overflow vulnerability in createAuthHeader() when processing SIP authentication challenges with oversized algorithm parameters. A malicious SIP server can se",
+        "published": "2026-09-13T12:17:16.960"
+      },
+      {
+        "cve_id": "CVE-2026-90780",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "SIPp through 3.7.7 contains a buffer overflow vulnerability in the get_header() function in src/sip_parser.cpp when processing SIP messages with header content exceeding 20,490 bytes. Unauthenticated ",
+        "published": "2026-09-13T12:17:17.093"
       }
     ]
   },
