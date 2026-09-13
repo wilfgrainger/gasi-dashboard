@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T08:37:53.719811+00:00",
+  "generated_at": "2026-09-13T15:18:43.382338+00:00",
   "threat_score": {
     "score": 5.5,
     "level": "ELEVATED",
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 68,
+    "total": 86,
     "critical_count": 1,
-    "high_count": 14,
+    "high_count": 37,
     "cves": [
       {
         "cve_id": "CVE-2026-90558",
@@ -250,13 +250,6 @@
         "published": "2026-09-12T18:16:44.587"
       },
       {
-        "cve_id": "CVE-2026-15451",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The MemberPress Corporate Accounts plugin for WordPress is vulnerable to Privilege Escalation in versions up to, and including, 1.5.39. This is due to a mass assignment vulnerability in the 'add_sub_a",
-        "published": "2026-09-12T13:16:50.940"
-      },
-      {
         "cve_id": "CVE-2026-90493",
         "severity": "HIGH",
         "base_score": 8.8,
@@ -264,11 +257,32 @@
         "published": "2026-09-13T03:16:27.370"
       },
       {
-        "cve_id": "CVE-2026-90537",
+        "cve_id": "CVE-2026-90770",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "WWBN AVideo through commit c3edcc274c389816d434acadac07ee78eaf330c1 contains a missing authorization vulnerability in plugin/Scheduler/sendEmail.json.php that allows unauthenticated attackers to acces",
-        "published": "2026-09-12T13:16:51.667"
+        "base_score": 8.8,
+        "description": "Spug through 3.4.0 contains a remote code execution vulnerability in the ping_check function that interpolates user-supplied monitor addresses directly into shell commands without validation. Authenti",
+        "published": "2026-09-13T11:17:01.453"
+      },
+      {
+        "cve_id": "CVE-2026-90777",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "ESPnet before 202609 deserializes pretrained model checkpoints using torch.load with weights_only=False, allowing arbitrary code execution from attacker-supplied files. Attackers can craft malicious c",
+        "published": "2026-09-13T12:17:16.690"
+      },
+      {
+        "cve_id": "CVE-2026-90561",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "Strapi versions 4.x through 4.26.2 and 5.x before 5.48.1 contain a stored cross-site scripting vulnerability in the content manager WYSIWYG preview component that fails to strip script tags from rich ",
+        "published": "2026-09-13T11:17:00.613"
+      },
+      {
+        "cve_id": "CVE-2026-90510",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "A security vulnerability has been detected in dromara orion-visor up to 2.5.7. This affects the function HostKeyServiceImpl.encryptKey of the file orion-visor-modules/orion-visor-module-asset/orion-vi",
+        "published": "2026-09-13T11:16:59.827"
       },
       {
         "cve_id": "CVE-2026-90560",
@@ -285,11 +299,18 @@
         "published": "2026-09-13T00:17:07.203"
       },
       {
-        "cve_id": "CVE-2026-90553",
+        "cve_id": "CVE-2026-90562",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "vLLM before 0.28.0 contains a remote code execution vulnerability in the LlavaOnevision2 processor loader that ignores the trust_remote_code parameter when loading remote processor classes. Attackers ",
-        "published": "2026-09-12T13:16:53.887"
+        "base_score": 8.1,
+        "description": "LangBot before 4.10.11 generates password recovery keys with only 24 bits of entropy and applies no rate limiting to the unauthenticated reset-password endpoint. Remote attackers knowing the administr",
+        "published": "2026-09-13T11:17:00.780"
+      },
+      {
+        "cve_id": "CVE-2026-90768",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "CAPEv2 through commit 471ee4b fails to validate task ownership in REST API endpoints, allowing authenticated users to read and delete analyses submitted by other users. Attackers can enumerate all tas",
+        "published": "2026-09-13T11:17:01.113"
       },
       {
         "cve_id": "CVE-2026-90556",
@@ -297,6 +318,27 @@
         "base_score": 7.8,
         "description": "Freeciv versions before 3.2.6 contain a heap buffer overflow in worklist_load() when processing savegame files with declared worklist lengths exceeding the fixed array bound of 64 elements. Attackers ",
         "published": "2026-09-12T18:16:44.193"
+      },
+      {
+        "cve_id": "CVE-2026-90783",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "MKVToolNix through 101.0 contains a heap buffer overflow in the bundled avilib library's ODML superindex parser due to integer wraparound in 32-bit arithmetic. Attackers can craft a malicious AVI file",
+        "published": "2026-09-13T13:16:29.560"
+      },
+      {
+        "cve_id": "CVE-2026-90769",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "Open Notebook before 1.11.0 fails to validate the URL parameter in POST /api/sources endpoint, allowing authenticated users to perform server-side requests to internal services. Attackers can supply a",
+        "published": "2026-09-13T11:17:01.270"
+      },
+      {
+        "cve_id": "CVE-2026-90772",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "Amundsen frontend through 4.3.0 renders table, dashboard, and feature descriptions with dangerouslySetInnerHTML without HTML sanitization in ResourceListItem components. Attackers can inject malicious",
+        "published": "2026-09-13T11:17:01.780"
       },
       {
         "cve_id": "CVE-2026-90559",
@@ -320,67 +362,25 @@
         "published": "2026-09-13T04:17:25.227"
       },
       {
-        "cve_id": "CVE-2026-90616",
+        "cve_id": "CVE-2026-86406",
         "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "In Flatpak before 1.18.1, a malicious sandboxed app can obtain arbitrary read and write access to files on the host, which can be escalated to arbitrary code execution on the host, a different vulnera",
-        "published": "2026-09-12T20:16:30.957"
+        "base_score": 7.5,
+        "description": "The User Registration & Membership  WordPress plugin before 5.2.8 does not check the capability of the user making a membership purchase, and does not validate the payment method or the plan submitted",
+        "published": "2026-09-13T06:16:25.157"
       },
       {
-        "cve_id": "CVE-2026-90647",
+        "cve_id": "CVE-2026-89080",
         "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "ASE/Kalkitech ASE2000 V2 Communication Test Set 2.35 through 2.37 on Windows contains an improper certificate validation vulnerability in the IEC 60870-5-104 TLS client (Task Mode). This allows a netw",
-        "published": "2026-09-12T23:17:01.490"
+        "base_score": 7.5,
+        "description": "The Really Simple Security  WordPress plugin before 9.8.1 does not prevent an unauthenticated request from resetting an account's completed email two-factor enrolment, allowing an attacker who already",
+        "published": "2026-09-13T06:16:25.637"
       },
       {
-        "cve_id": "CVE-2026-90495",
+        "cve_id": "CVE-2026-90774",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability has been found in Fengoffice Feng Office up to 3.11.13.11. This impacts the function Contacts::instance->findAll of the file application/models/CompanyWebsite.class.php of the componen",
-        "published": "2026-09-13T04:17:15.717"
-      },
-      {
-        "cve_id": "CVE-2026-90498",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was identified in lenve vhr 1.0-SNAPSHOT. Affected by this issue is some unknown functionality of the file vhr.sql. The manipulation leads to use of default credentials. Remote exploit",
-        "published": "2026-09-13T07:17:41.533"
-      },
-      {
-        "cve_id": "CVE-2026-90474",
-        "severity": "MEDIUM",
-        "base_score": 6.8,
-        "description": "MCPHub before 1.0.32 contains an authentication bypass vulnerability in its embedded OAuth 2.0 authorization server where client authentication is disabled by default and PKCE enforcement is optional.",
-        "published": "2026-09-12T11:16:34.483"
-      },
-      {
-        "cve_id": "CVE-2026-90555",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "vLLM versions before 0.28.0 fail to validate audio sample rate headers in the transcription endpoint, allowing authenticated clients to bypass duration checks. Attackers can submit forged FLAC headers",
-        "published": "2026-09-12T13:16:54.180"
-      },
-      {
-        "cve_id": "CVE-2026-10148",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "The Booking for Appointments and Events Calendar plugin for WordPress is vulnerable to Stored Cross-Site Scripting via multiple Elementor widgets in versions up to and including 2.4.9. This is due to ",
-        "published": "2026-09-12T13:16:50.193"
-      },
-      {
-        "cve_id": "CVE-2026-90486",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A vulnerability has been found in openstatusHQ openstatus up to f04c827112f30a11d571ebdad3892826034d6265. Affected by this vulnerability is an unknown functionality of the file apps/status-page/src/li",
-        "published": "2026-09-12T23:17:01.073"
-      },
-      {
-        "cve_id": "CVE-2026-90488",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A vulnerability was determined in Xuxueli xxl-job up to 3.4.2. This affects the function GroovyClassLoader.parseClass of the file xxl-job-core/src/main/java/com/xxl/job/core/glue/GlueFactory.java. Thi",
-        "published": "2026-09-13T00:17:06.680"
+        "base_score": 7.5,
+        "description": "rustypaste before 0.18.1 validates the destination path before applying the optional custom filename HTTP header, allowing attackers to bypass directory-escape checks. Attackers can supply path traver",
+        "published": "2026-09-13T11:17:02.163"
       }
     ]
   },
