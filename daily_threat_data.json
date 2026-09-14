@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T17:15:41.153539+00:00",
+  "generated_at": "2026-09-14T22:51:17.074957+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,7 +7,7 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 44,
+        "value": 45,
         "score": 3.0,
         "max": 3
       },
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1709,
-    "recent_30d_count": 44,
+    "total_catalog_count": 1710,
+    "recent_30d_count": 45,
     "recent": [
+      {
+        "cve_id": "CVE-2026-76461",
+        "vendor": "Cisco",
+        "product": "Secure Email Gateway",
+        "name": "Cisco Secure Email Gateway SQL Injection Vulnerability",
+        "date_added": "2026-09-14",
+        "due_date": "2026-09-17",
+        "description": "Cisco AsyncOS software for Cisco Secure Email Gateway (SEG) contains a SQL injection vulnerability that could allow an unauthenticated, remote attacker to execute arbitrary commands with root privileg",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-84869",
         "vendor": "ConnectWise",
@@ -224,31 +234,14 @@
         "due_date": "2026-09-05",
         "description": "JFrog Artifactory contains an improper authentication vulnerability that under default configuration can allow an unauthenticated attacker with network access to obtain administrative privileges. ",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-9586",
-        "vendor": "Sangoma",
-        "product": "Switchvox",
-        "name": "Sangoma Switchvox SQL Injection Vulnerability",
-        "date_added": "2026-09-02",
-        "due_date": "2026-09-05",
-        "description": "Sangoma Switchvox contains a SQL injection vulnerability which allows an unauthenticated remote attacker to execute arbitrary SQL statements against the backend PostgreSQL database using a single craf",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 363,
+    "total": 774,
     "critical_count": 5,
-    "high_count": 19,
+    "high_count": 20,
     "cves": [
-      {
-        "cve_id": "CVE-2026-81648",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "The CryptoPayment Gateway WordPress plugin from 1.2.1 to 1.2.2 does not apply an authorization check on one of its AJAX endpoints, allowing unauthenticated users to invoke administrative operations, i",
-        "published": "2026-09-13T21:17:01.930"
-      },
       {
         "cve_id": "CVE-2026-90605",
         "severity": "CRITICAL",
@@ -278,32 +271,60 @@
         "published": "2026-09-14T01:16:28.130"
       },
       {
-        "cve_id": "CVE-2026-74933",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The GenieWords WordPress plugin from 1.5.27 to 1.5.34 does not have authorisation checks on some of its REST API and AJAX actions, and decodes stored values before printing them, allowing unauthentica",
-        "published": "2026-09-13T21:17:01.800"
+        "cve_id": "CVE-2026-90680",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A security flaw has been discovered in D-Link DIR-823G 1.0.2B05_20181207. The impacted element is the function strcpy of the file /HNAP1/SetStaticRouteSettings of the component HNAP1. The manipulation",
+        "published": "2026-09-14T04:16:36.353"
       },
       {
-        "cve_id": "CVE-2026-85129",
+        "cve_id": "CVE-2023-46273",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The Hoo Companion WordPress plugin 1.0.2 does not have any authorisation or validation checks in one of its import features, and does not sanitise the data submitted to it before storing it as the act",
-        "published": "2026-09-13T21:17:02.063"
+        "description": "Bonjour Gateway in Extreme Networks IQ Engine before 10.6r1a, and through 10.6r4 before 10.6r5, has an ah_bgd buffer overflow via ah_event_send.",
+        "published": "2026-09-14T06:16:54.647"
       },
       {
-        "cve_id": "CVE-2026-88793",
+        "cve_id": "CVE-2023-50461",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The YouTube Embed WordPress plugin from 10.0 to 10.3 does not perform any authorisation check on one of its AJAX actions, relying only on a nonce it prints on every front-end page, and does not escape",
-        "published": "2026-09-13T21:17:02.197"
+        "description": "An issue was discovered in the direct_mail (aka Direct Mail) extension through 9.5.1 for TYPO3. The Configuration backend module of the extension allows an authenticated user to write to an arbitrary ",
+        "published": "2026-09-14T07:17:15.653"
       },
       {
-        "cve_id": "CVE-2026-37008",
+        "cve_id": "CVE-2026-82762",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Improper neutralization of special elements used in an OS command ('OS Command Injection') issue exists in Contec FX5000 series, FX4000 series, and FX3000 series. If this vulnerability is exploited, a",
+        "published": "2026-09-14T07:17:17.040"
+      },
+      {
+        "cve_id": "CVE-2026-82766",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Improper neutralization of special elements used in an OS command ('OS Command Injection') issue exists in SGA1000. If this vulnerability is exploited, an arbitrary OS command may be executed by an at",
+        "published": "2026-09-14T07:17:17.707"
+      },
+      {
+        "cve_id": "CVE-2023-45858",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "A directory traversal was identified in Paessler PRTG before 23.4.88.1429 that made it possible to read local files.",
+        "published": "2026-09-14T06:16:54.357"
+      },
+      {
+        "cve_id": "CVE-2026-82765",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "CrewAI before fb2323b offers a Python blocklist approach that operates at the wrong level of abstraction, a different vulnerability than CVE-2026-2275. Import-time blocking of module names does not ad",
-        "published": "2026-09-13T21:17:01.303"
+        "description": "Path traversal vulnerability exists in Contec FX5000 series, FX4000 series, and FX3000 series. If this vulnerability is exploited, arbitrary files on the server may be viewed and/or altered by an atta",
+        "published": "2026-09-14T07:17:17.553"
+      },
+      {
+        "cve_id": "CVE-2026-82768",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Path traversal vulnerability exists in SGA1000. If this vulnerability is exploited, arbitrary files on the server may be viewed and/or altered by an attacker who can access the product via FTP.",
+        "published": "2026-09-14T07:17:17.980"
       },
       {
         "cve_id": "CVE-2026-23789",
@@ -313,11 +334,11 @@
         "published": "2026-09-14T02:17:13.397"
       },
       {
-        "cve_id": "CVE-2026-29811",
+        "cve_id": "CVE-2026-68955",
         "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "CyberPanel before 2.4.4 attempts to detect an \"alais\" domain (i.e., a second domain that serves the same content as a primary domain; normally spelled \"alias\") via an ORM query filter rather than a Py",
-        "published": "2026-09-13T20:16:51.020"
+        "base_score": 7.8,
+        "description": "The installer for Rakuten Kobo Desktop Application (Windows version) insecurely loads Dynamic Link Libraries. If there is a crafted DLL at the same directory when invoking the affected installer, arbi",
+        "published": "2026-09-14T07:17:16.663"
       },
       {
         "cve_id": "CVE-2026-31278",
@@ -325,13 +346,6 @@
         "base_score": 7.7,
         "description": "An issue in the /api/v2/setting/adserversetting endpoint of Suprema BioStar 2 before 2.9.12 and and BioStar X before 1.0.2 allows attackers to obtain Active Directory service account credentials in cl",
         "published": "2026-09-14T02:17:14.080"
-      },
-      {
-        "cve_id": "CVE-2026-88802",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The MDJM Event Management WordPress plugin before 1.7.8.5 and the Mobile Events Manager WordPress plugin through 1.4.8.3 do not check a capability, a nonce or the type of the record before permanently",
-        "published": "2026-09-13T21:17:02.323"
       },
       {
         "cve_id": "CVE-2026-15891",
@@ -348,25 +362,11 @@
         "published": "2026-09-14T02:17:14.850"
       },
       {
-        "cve_id": "CVE-2026-36453",
+        "cve_id": "CVE-2023-32803",
         "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "Rhymix before 2.1.31 allows insecure direct object reference, aka RVE-2026-1. Arbitrary files can be accessed via extra variables.",
-        "published": "2026-09-13T21:16:59.947"
-      },
-      {
-        "cve_id": "CVE-2026-90579",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability has been found in cheshire-cat-ai Cheshire Cat AI up to 1.9.2. This affects the function _authorize_http_key of the file core/cat/factory/custom_auth_handler.py. The manipulation of th",
-        "published": "2026-09-13T19:16:53.517"
-      },
-      {
-        "cve_id": "CVE-2026-90593",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was determined in embedded-graphics up to 0.8.2. This affects the function ImageRaw::draw_sub_image of the file src/image/image_raw.rs. Executing a manipulation of the argument width c",
-        "published": "2026-09-13T21:17:02.787"
+        "base_score": 7.5,
+        "description": "The ca-certificates package before ca-certificates-2021.2.50-72 for Amazon Linux 2 (AL2) does not properly remove certain TrustCor root certificates from the root store. NOTE: this issue exists becaus",
+        "published": "2026-09-14T05:16:57.290"
       },
       {
         "cve_id": "CVE-2026-90601",
