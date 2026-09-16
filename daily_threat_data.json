@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T02:25:00.923542+00:00",
+  "generated_at": "2026-09-16T08:56:20.919217+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -238,23 +238,23 @@
     ]
   },
   "nvd": {
-    "total": 1420,
+    "total": 1483,
     "critical_count": 9,
-    "high_count": 24,
+    "high_count": 29,
     "cves": [
-      {
-        "cve_id": "CVE-2026-91001",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A security flaw has been discovered in D-Link DI-8400 16.07. This affects the function ddns_asp of the file /ddns.asp of the component DDNS Configuration. Performing a manipulation of the argument ser",
-        "published": "2026-09-15T06:16:59.970"
-      },
       {
         "cve_id": "CVE-2026-57138",
         "severity": "CRITICAL",
         "base_score": 9.9,
         "description": "PraisonAI is a multi-agent teams system. From 1.4.0 until 1.7.2, codeMode in src/praisonai-ts/src/tools/builtins/code-mode.ts executes untrusted JavaScript with new Function() inside with(sandbox) and",
         "published": "2026-09-15T11:17:11.180"
+      },
+      {
+        "cve_id": "CVE-2026-91998",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Casdoor through 4.4.0 contains an authorization bypass vulnerability in the /api/mcp endpoint that allows attackers with any application's clientId and clientSecret to gain unrestricted access to user",
+        "published": "2026-09-15T12:17:55.407"
       },
       {
         "cve_id": "CVE-2026-62379",
@@ -285,6 +285,13 @@
         "published": "2026-09-15T11:17:11.760"
       },
       {
+        "cve_id": "CVE-2026-57148",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "PraisonAI is a multi-agent teams system. Prior to 0.1.6, praisonai_platform/services/auth_service.py falls back to the public dev-secret-change-me HS256 signing key when PLATFORM_JWT_SECRET is unset, ",
+        "published": "2026-09-15T11:17:11.910"
+      },
+      {
         "cve_id": "CVE-2026-57140",
         "severity": "CRITICAL",
         "base_score": 9.4,
@@ -292,18 +299,11 @@
         "published": "2026-09-15T11:17:11.473"
       },
       {
-        "cve_id": "CVE-2026-91003",
+        "cve_id": "CVE-2026-91995",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "A flaw has been found in D-Link DI-8300 16.07. The affected element is the function rzgl_asp of the file /rzgl.asp of the component CGI Service. This manipulation of the argument redirct_url causes st",
-        "published": "2026-09-15T06:17:01.387"
-      },
-      {
-        "cve_id": "CVE-2026-90711",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "proxy-addr is a Node.js module that determines a request's client address behind trusted reverse proxies, and it backs Express req.ip and req.ips. In versions 1.1.0 through 2.0.7, a trust subnet writt",
-        "published": "2026-09-15T07:16:33.683"
+        "description": "pig before 4.1.0 contains an authentication bypass vulnerability in the /register/password endpoint where password verification results are discarded, allowing any value as the current password. Remot",
+        "published": "2026-09-15T12:17:54.943"
       },
       {
         "cve_id": "CVE-2026-77853",
@@ -341,46 +341,46 @@
         "published": "2026-09-15T11:17:11.030"
       },
       {
-        "cve_id": "CVE-2026-45048",
+        "cve_id": "CVE-2026-91925",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Open Access Management (OpenAM) is an access management solution. Prior to 16.1.1, SessionRequestHandler in the session management endpoint does not enforce ownership or privilege checks when a low-pr",
-        "published": "2026-09-15T10:17:03.993"
+        "base_score": 8.8,
+        "description": "Polyaxon through 2.16.4 renders operation specification fields with an unsandboxed Jinja2 environment during server-side run preparation, allowing authenticated users to execute arbitrary code. Attack",
+        "published": "2026-09-15T11:17:13.220"
       },
       {
-        "cve_id": "CVE-2026-1758",
+        "cve_id": "CVE-2026-14805",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Session fixation vulnerability in Secomea GateManager (webserver module) allows Session Fixation.\n\nThis issue affects GateManager: 11.5;0, 11.4.625515072:0.\n\n\n\nFixed in Version 11.6 or\u00a011.4.626194074 ",
-        "published": "2026-09-15T11:17:07.587"
+        "base_score": 8.8,
+        "description": "The Consulting theme for WordPress is vulnerable to Privilege Escalation in versions up to, and including, 6.7.16. This is due to a combination of two flaws: (1) the masterstudy_ms_stm_set_discard_tra",
+        "published": "2026-09-15T13:16:40.507"
       },
       {
-        "cve_id": "CVE-2026-57112",
+        "cve_id": "CVE-2026-92006",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "PraisonAI is a multi-agent teams system. From praisonaiagents 0.6.0 until 1.6.59 and PraisonAI 3.10.0 until 4.6.59, ToolsMCPServer.run_sse() in src/praisonai-agents/praisonaiagents/mcp/mcp_server.py m",
-        "published": "2026-09-15T11:17:10.290"
+        "base_score": 8.8,
+        "description": "Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component. This vulnerability was fixed in Firefox 156, Firefox ESR 115.41, Firefox ESR 140.16, Firefox ESR 153.3",
+        "published": "2026-09-15T13:16:48.243"
       },
       {
-        "cve_id": "CVE-2026-57134",
+        "cve_id": "CVE-2026-92007",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "PraisonAI is a multi-agent teams system. From 1.5.1 until 1.7.2, MCPSecurity.evaluatePolicy() in src/praisonai-ts/src/mcp/security.ts invokes the configured credential validator only when AuthMethod i",
-        "published": "2026-09-15T11:17:10.583"
+        "base_score": 8.8,
+        "description": "Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component. This vulnerability was fixed in Firefox 156, Firefox ESR 115.41, Firefox ESR 140.16, Firefox ESR 153.3",
+        "published": "2026-09-15T13:16:48.357"
       },
       {
-        "cve_id": "CVE-2026-57135",
+        "cve_id": "CVE-2026-92008",
         "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "PraisonAI is a multi-agent teams system. From 1.2.3 until 1.7.2, SandboxExecutor network-isolated mode in src/praisonai-ts/src/cli/features/sandbox-executor.ts uses buildEnv() only to inject invalid h",
-        "published": "2026-09-15T11:17:10.733"
+        "base_score": 8.8,
+        "description": "Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component. This vulnerability was fixed in Firefox 156, Firefox ESR 115.41, Firefox ESR 140.16, Firefox ESR 153.3",
+        "published": "2026-09-15T13:16:48.463"
       },
       {
-        "cve_id": "CVE-2026-75983",
+        "cve_id": "CVE-2026-92009",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Eventin \u2013 Event Calendar, Tickets, Registration, Booking & WooCommerce plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 4.1.23. This is due to the `",
-        "published": "2026-09-15T07:16:29.743"
+        "base_score": 8.8,
+        "description": "Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component. This vulnerability was fixed in Firefox 156, Firefox ESR 115.41, Firefox ESR 140.16, Firefox ESR 153.3",
+        "published": "2026-09-15T13:16:48.593"
       }
     ]
   },
