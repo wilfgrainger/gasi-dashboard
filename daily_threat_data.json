@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T15:47:09.020572+00:00",
+  "generated_at": "2026-09-16T19:12:35.996377+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 45,
+        "value": 46,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
+        "value": 3,
         "score": 2.0,
         "max": 3
       },
@@ -32,8 +32,8 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1711,
-    "recent_30d_count": 45,
+    "total_catalog_count": 1712,
+    "recent_30d_count": 46,
     "recent": [
       {
         "cve_id": "CVE-2026-58704",
@@ -43,6 +43,16 @@
         "date_added": "2026-09-16",
         "due_date": "2026-09-19",
         "description": "Google Pixel devices contain an improper authorization vulnerability in the cellular modem. A logic error may allow an attacker to bypass permission checks and escalate privileges.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-76460",
+        "vendor": "Cisco",
+        "product": "Identity Services Engine",
+        "name": "Cisco Identity Services Engine Incorrect Use of Privileged APIs Vulnerability",
+        "date_added": "2026-09-16",
+        "due_date": "2026-09-19",
+        "description": "Cisco Identity Services Engine (ISE) and Cisco ISE Passive Identity Connector (ISE-PIC) contain an incorrect use of privileged APIs vulnerability that could allow an unauthenticated, remote attacker t",
         "ransomware_use": "Unknown"
       },
       {
@@ -224,163 +234,153 @@
         "due_date": "2026-09-16",
         "description": "Kludex Starlette contains a HTTP request/response smuggling vulnerability that could allow attackers to inject paths into the host part, prepending the actual path leading to issues such as authentica",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-49869",
-        "vendor": "Kestra",
-        "product": "Kestra OSS",
-        "name": "Kestra OSS OS Command Injection Vulnerability",
-        "date_added": "2026-09-02",
-        "due_date": "2026-09-05",
-        "description": "Kestra OSS contains an OS command injection vulnerability that could allow an unauthenticated remote attacker to create and execute arbitrary workflows without credentials.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 1741,
-    "critical_count": 2,
-    "high_count": 33,
+    "total": 1602,
+    "critical_count": 3,
+    "high_count": 50,
     "cves": [
       {
-        "cve_id": "CVE-2026-55211",
+        "cve_id": "CVE-2026-19773",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Surfio is a library for reading and writing surface files. Prior to 0.0.19, surfio does not correctly validate size fields in IRAP files, leading to a buffer overflow when untrusted files are parsed. ",
-        "published": "2026-09-15T16:17:14.560"
+        "description": "libwebsockets HTTP/2 HPACK Path Header Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations o",
+        "published": "2026-09-15T19:17:17.747"
       },
       {
-        "cve_id": "CVE-2026-91949",
+        "cve_id": "CVE-2026-55366",
         "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "FreeRDP server versions before 3.31.0 contain a protocol negotiation bypass vulnerability that allows unauthenticated attackers to establish RDSTLS connections despite server policy disabling them. At",
-        "published": "2026-09-15T16:17:48.653"
+        "base_score": 9.8,
+        "description": "In IP Multimedia Subsystem, there is a possible authentication bypass due to a logic error in the code. This could lead to remote escalation of privilege with no additional execution privileges needed",
+        "published": "2026-09-15T19:17:22.227"
       },
       {
-        "cve_id": "CVE-2026-91934",
+        "cve_id": "CVE-2026-56960",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "In multiple locations, there is a possible use-after-free due to a logic error in the code. This could lead to remote escalation of privilege with no additional execution privileges needed. User inter",
+        "published": "2026-09-15T19:17:28.760"
+      },
+      {
+        "cve_id": "CVE-2026-0159",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Flowise versions before 3.1.4 fail to validate file paths in the SQL Database Chain node when connecting to SQLite databases, allowing authenticated attackers to write arbitrary files. Attackers can w",
-        "published": "2026-09-15T16:17:44.317"
+        "description": "In Cellular Modem, there is a possible out-of-bounds write due to a missing bounds check. This could lead to remote code execution with no additional execution privileges needed. User interaction is n",
+        "published": "2026-09-15T19:17:13.830"
       },
       {
-        "cve_id": "CVE-2026-91964",
+        "cve_id": "CVE-2026-0170",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "FreeRDP versions before 3.31.0 contain a heap-based buffer overflow in nego_send_negotiation_request when processing Server Redirection PDU messages with attacker-controlled LoadBalanceInfo fields. A ",
-        "published": "2026-09-15T16:17:52.480"
+        "description": "In Vp9DecodeFrameTag of vp9hwd_headers.cc, there is a possible out-of-bounds write due to a missing bounds check. This could lead to remote escalation of privilege with no additional execution privile",
+        "published": "2026-09-15T19:17:13.960"
       },
       {
-        "cve_id": "CVE-2026-59973",
+        "cve_id": "CVE-2026-0171",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "FrontMCP is a TypeScript-first framework for the Model Context Protocol (MCP). From mcp-from-openapi 2.3.0 until 2.5.0 and from frontmcp and @frontmcp/adapters 1.2.1 until 1.5.0, libs/adapters/src/ope",
-        "published": "2026-09-15T16:17:18.327"
+        "base_score": 8.8,
+        "description": "In multiple locations, there is a possible out-of-bounds write due to a logic error in the code. This could lead to remote code execution with no additional execution privileges needed. User interacti",
+        "published": "2026-09-15T19:17:14.057"
       },
       {
-        "cve_id": "CVE-2026-91931",
+        "cve_id": "CVE-2026-0200",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Flowise before 3.1.4 contains a remote code execution vulnerability in the Custom MCP node that allows authenticated attackers to execute arbitrary code by supplying npx package names in the mcpServer",
-        "published": "2026-09-15T16:17:43.883"
+        "base_score": 8.8,
+        "description": "In Cellular Modem, there is a possible out-of-bounds write due to a heap buffer overflow. This could lead to remote escalation of privilege with no additional execution privileges needed. User interac",
+        "published": "2026-09-15T19:17:15.133"
       },
       {
-        "cve_id": "CVE-2026-91932",
+        "cve_id": "CVE-2026-55318",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Flowise before 3.1.4 contains a validation bypass vulnerability in MCP server configuration allowing authenticated attackers remote code execution through an unvalidated cwd parameter. Attackers can b",
-        "published": "2026-09-15T16:17:44.030"
+        "base_score": 8.8,
+        "description": "In multiple locations, there is a possible use-after-free due to a race condition. This could lead to remote code execution with no additional execution privileges needed. User interaction is not need",
+        "published": "2026-09-15T19:17:21.217"
       },
       {
-        "cve_id": "CVE-2026-91935",
+        "cve_id": "CVE-2026-55331",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Flowise before 3.1.4 fails to validate baseURL parameters in chat-model nodes, allowing authenticated users to redirect requests to arbitrary hosts. Attackers with chatflows:create or chatflows:update",
-        "published": "2026-09-15T16:17:44.867"
+        "base_score": 8.8,
+        "description": "In IP Multimedia Subsystem, there is a possible out-of-bounds write due to an incorrect bounds check. This could lead to remote code execution with no additional execution privileges needed. User inte",
+        "published": "2026-09-15T19:17:21.413"
       },
       {
-        "cve_id": "CVE-2026-54076",
+        "cve_id": "CVE-2026-56882",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "ArcadeDB is a Multi-Model DBMS. Prior to 26.6.1, the fix for CVE-2026-44221 added an UPDATE_SCHEMA authorization check only to LocalDocumentType.createProperty, while the remaining public schema mutat",
-        "published": "2026-09-15T16:17:13.560"
+        "base_score": 8.8,
+        "description": "In Cellular Modem, there is a possible information disclosure due to a logic error in the code. This could lead to remote code execution with no additional execution privileges needed. User interactio",
+        "published": "2026-09-15T19:17:24.057"
       },
       {
-        "cve_id": "CVE-2026-88619",
+        "cve_id": "CVE-2026-56920",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "1024-lab SmartAdmin v3.30.0 contains a missing authorization vulnerability in the scheduled-job management module. The AdminSmartJobController exposes scheduled-job management endpoints without method",
-        "published": "2026-09-15T16:17:38.933"
+        "base_score": 8.8,
+        "description": "In s_decode_vui_param of fw_hevc_dec_header.c, there is a possible out-of-bounds write due to a logic error in the code. This could lead to remote code execution with no additional execution privilege",
+        "published": "2026-09-15T19:17:26.730"
       },
       {
-        "cve_id": "CVE-2026-91988",
+        "cve_id": "CVE-2026-56942",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "atomic-agents-stack before 1.1.0 accepts cleartext HTTP schemes in the HTTP MCP server-registry backend factory, allowing network man-in-the-middle attackers to rewrite catalog responses. Attackers ca",
-        "published": "2026-09-15T16:17:57.450"
+        "base_score": 8.8,
+        "description": "In ReadTileInfo of vp9hwd_headers.cc, there is a possible out-of-bounds write due to a missing bounds check. This could lead to remote escalation of privilege with no additional execution privileges n",
+        "published": "2026-09-15T19:17:28.357"
       },
       {
-        "cve_id": "CVE-2026-65831",
+        "cve_id": "CVE-2026-56974",
         "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "ArcadeDB is a Multi-Model DBMS. Prior to 26.7.1, a reader-role user can submit POST /api/v1/command/{database} with language: js because PolyglotQueryEngine.command, PolyglotQueryEngine.analyze, and P",
-        "published": "2026-09-15T16:17:22.387"
+        "base_score": 8.8,
+        "description": "In Start of AudioRtpPayloadEncoderNode.cpp, there is a possible out-of-bounds write due to improper input validation. This could lead to remote code execution with no additional execution privileges n",
+        "published": "2026-09-15T19:17:29.337"
       },
       {
-        "cve_id": "CVE-2026-91943",
+        "cve_id": "CVE-2026-56997",
         "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Crawl4AI before 0.9.3 contains a server-side request forgery vulnerability in PDFContentScrapingStrategy where _get_pdf_path() re-downloads targets with Python requests without egress validation. Auth",
-        "published": "2026-09-15T16:17:46.290"
+        "base_score": 8.8,
+        "description": "In Av1DecodeFrameTag of vp9hwd_headers.cc, there is a possible out-of-bounds write due to a missing bounds check. This could lead to remote escalation of privilege with no additional execution privile",
+        "published": "2026-09-15T19:17:30.323"
       },
       {
-        "cve_id": "CVE-2023-54397",
+        "cve_id": "CVE-2026-58683",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Tornado before 6.3.3 contains an HTTP request smuggling vulnerability due to improper parsing of Content-Length headers accepting non-standard characters. Attackers can send crafted HTTP requests with",
-        "published": "2026-09-15T16:17:05.777"
+        "base_score": 8.8,
+        "description": "In IP Multimedia Subsystem, there is a possible out-of-bounds write due to improper input validation. This could lead to remote code execution with no additional execution privileges needed. User inte",
+        "published": "2026-09-15T19:17:31.700"
       },
       {
-        "cve_id": "CVE-2024-14029",
+        "cve_id": "CVE-2026-58704",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Tornado before 6.4.1 ignores duplicate Transfer-Encoding: chunked headers, treating requests as having no message body and parsing the chunked body as a subsequent request. Attackers can exploit this ",
-        "published": "2026-09-15T16:17:06.893"
+        "base_score": 8.8,
+        "description": "In Cellular Modem, there is a possible permission bypass due to a logic error in the code. This could lead to remote (proximal/adjacent) escalation of privilege with no additional execution privileges",
+        "published": "2026-09-15T19:17:32.297"
       },
       {
-        "cve_id": "CVE-2026-91930",
+        "cve_id": "CVE-2026-58710",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Flowise before 3.1.4 fails to scope enterprise organization and workspace membership APIs to the caller's tenant, allowing authenticated users to supply arbitrary organization IDs. Attackers can add t",
-        "published": "2026-09-15T16:17:43.743"
+        "base_score": 8.8,
+        "description": "In DecodeFilmGrainParams of film_grain_dec.cc, there is a possible out-of-bounds write due to a missing bounds check. This could lead to remote code execution with no additional execution privileges n",
+        "published": "2026-09-15T19:17:32.453"
       },
       {
-        "cve_id": "CVE-2026-91937",
+        "cve_id": "CVE-2026-0189",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Flowise before 3.1.4 fails to sanitize the overrideConfig.sessionId parameter before using it in MongoDB queries within the MongoDBMemory node. Unauthenticated attackers can submit MongoDB operator ob",
-        "published": "2026-09-15T16:17:45.170"
+        "base_score": 8.4,
+        "description": "In ac_init_policy of init.c, there is a possible permission bypass due to a logic error in the code. This could lead to local escalation of privilege with no additional execution privileges needed. Us",
+        "published": "2026-09-15T19:17:14.657"
       },
       {
-        "cve_id": "CVE-2026-91940",
+        "cve_id": "CVE-2026-0194",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "crawl4ai before 0.9.3 contains an arbitrary file write vulnerability in PDFContentScrapingStrategy where the _filter_untrusted_fields function fails to validate untrusted configuration fields. Attacke",
-        "published": "2026-09-15T16:17:45.460"
+        "base_score": 8.4,
+        "description": "In multiple locations, there is a possible permission bypass due to an integer overflow. This could lead to local escalation of privilege with no additional execution privileges needed. User interacti",
+        "published": "2026-09-15T19:17:14.850"
       },
       {
-        "cve_id": "CVE-2026-91941",
+        "cve_id": "CVE-2026-55301",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Crawl4AI before 0.9.3 contains an uncontrolled resource consumption vulnerability in PDFContentScrapingStrategy that allows untrusted clients to cause denial of service. Attackers can select the PDF s",
-        "published": "2026-09-15T16:17:46.000"
-      },
-      {
-        "cve_id": "CVE-2026-91947",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "FreeRDP server versions before 3.31.0 contain a use-after-free vulnerability in the DRDYNVC parser that dereferences a channel pointer after releasing the synchronization lock. Authenticated clients c",
-        "published": "2026-09-15T16:17:48.353"
+        "base_score": 8.4,
+        "description": "In Wave6VpuDecFlush of wave6.c, there is a possible out-of-bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. ",
+        "published": "2026-09-15T19:17:20.693"
       }
     ]
   },
