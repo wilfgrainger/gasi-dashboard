@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-16T08:56:20.919217+00:00",
+  "generated_at": "2026-09-16T15:47:09.020572+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 44,
+        "value": 45,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
-        "score": 2.5,
+        "value": 2,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1710,
-    "recent_30d_count": 44,
+    "total_catalog_count": 1711,
+    "recent_30d_count": 45,
     "recent": [
+      {
+        "cve_id": "CVE-2026-58704",
+        "vendor": "Google",
+        "product": "Pixel",
+        "name": "Google Pixel Improper Authorization Vulnerability",
+        "date_added": "2026-09-16",
+        "due_date": "2026-09-19",
+        "description": "Google Pixel devices contain an improper authorization vulnerability in the cellular modem. A logic error may allow an attacker to bypass permission checks and escalate privileges.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-76461",
         "vendor": "Cisco",
@@ -52,7 +62,7 @@
         "name": "ConnectWise ScreenConnect Improper Privilege Management and Missing Authorization Vulnerability",
         "date_added": "2026-09-11",
         "due_date": "2026-09-14",
-        "description": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to file transfer and execution through an active remote sess",
+        "description": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to transfer and execute files through an active remote sessi",
         "ransomware_use": "Unknown"
       },
       {
@@ -62,7 +72,7 @@
         "name": "JFrog Artifactory Incorrect Authorization Vulnerability",
         "date_added": "2026-09-11",
         "due_date": "2026-09-25",
-        "description": "JFrog Artifactory contains an incorrect authorization vulnerability that allows leads to privilege escalation attack due to a validation check of the token signature/issuer and not the token\u2019s scope.",
+        "description": "JFrog Artifactory contains an incorrect authorization vulnerability that leads to a privilege escalation attack due to a validation check of the token signature/issuer and not the token\u2019s scope.",
         "ransomware_use": "Unknown"
       },
       {
@@ -92,7 +102,7 @@
         "name": "MikroTik RouterOS Improper Neutralization of Argument Delimiters in a Command Vulnerability",
         "date_added": "2026-09-10",
         "due_date": "2026-09-13",
-        "description": "MikroTik RouterOS contains an improper neutralization of argument delimiters in a command vulnerability which allows an attacked to change the trusted RouterOS policy mask, leading to privilege escala",
+        "description": "MikroTik RouterOS contains an improper neutralization of argument delimiters in a command vulnerability which allows an attacker to change the trusted RouterOS policy mask, leading to privilege escala",
         "ransomware_use": "Unknown"
       },
       {
@@ -102,7 +112,7 @@
         "name": "MikroTik RouterOS Missing Authentication for Critical Function Vulnerability",
         "date_added": "2026-09-10",
         "due_date": "2026-09-13",
-        "description": "MikroTik RouterOS contains a missing authenticaion for critical function vulnerability which allows kernel memory disclosure and denial of service in the btest service.",
+        "description": "MikroTik RouterOS contains a missing authentication for critical function vulnerability which allows kernel memory disclosure and denial of service in the btest service.",
         "ransomware_use": "Unknown"
       },
       {
@@ -224,163 +234,153 @@
         "due_date": "2026-09-05",
         "description": "Kestra OSS contains an OS command injection vulnerability that could allow an unauthenticated remote attacker to create and execute arbitrary workflows without credentials.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-82329",
-        "vendor": "JFrog",
-        "product": "Artifactory",
-        "name": "JFrog Artifactory Improper Authentication Vulnerability",
-        "date_added": "2026-09-02",
-        "due_date": "2026-09-05",
-        "description": "JFrog Artifactory contains an improper authentication vulnerability that under default configuration can allow an unauthenticated attacker with network access to obtain administrative privileges. ",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 1483,
-    "critical_count": 9,
-    "high_count": 29,
+    "total": 1741,
+    "critical_count": 2,
+    "high_count": 33,
     "cves": [
       {
-        "cve_id": "CVE-2026-57138",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "PraisonAI is a multi-agent teams system. From 1.4.0 until 1.7.2, codeMode in src/praisonai-ts/src/tools/builtins/code-mode.ts executes untrusted JavaScript with new Function() inside with(sandbox) and",
-        "published": "2026-09-15T11:17:11.180"
-      },
-      {
-        "cve_id": "CVE-2026-91998",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Casdoor through 4.4.0 contains an authorization bypass vulnerability in the /api/mcp endpoint that allows attackers with any application's clientId and clientSecret to gain unrestricted access to user",
-        "published": "2026-09-15T12:17:55.407"
-      },
-      {
-        "cve_id": "CVE-2026-62379",
+        "cve_id": "CVE-2026-55211",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Open Access Management (OpenAM) is an access management solution. Prior to 16.1.2, the pre-authentication /authservice PLL endpoint accepts a CustomCallback XML element whose className value selects a",
-        "published": "2026-09-15T10:17:06.107"
+        "description": "Surfio is a library for reading and writing surface files. Prior to 0.0.19, surfio does not correctly validate size fields in IRAP files, leading to a buffer overflow when untrusted files are parsed. ",
+        "published": "2026-09-15T16:17:14.560"
       },
       {
-        "cve_id": "CVE-2026-57139",
+        "cve_id": "CVE-2026-91949",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "PraisonAI is a multi-agent teams system. From 1.5.0 until 1.7.2, MCPServer.startHttp() in src/praisonai-ts/src/mcp/server.ts binds without a host restriction and forwards every HTTP POST request to ha",
-        "published": "2026-09-15T11:17:11.327"
+        "base_score": 9.3,
+        "description": "FreeRDP server versions before 3.31.0 contain a protocol negotiation bypass vulnerability that allows unauthenticated attackers to establish RDSTLS connections despite server policy disabling them. At",
+        "published": "2026-09-15T16:17:48.653"
       },
       {
-        "cve_id": "CVE-2026-57141",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "PraisonAI is a multi-agent teams system. Prior to 1.7.2, the codeMode tool in src/praisonai-ts/src/tools/builtins/code-mode.ts executes model-generated JavaScript with new Function() and with(sandbox)",
-        "published": "2026-09-15T11:17:11.617"
-      },
-      {
-        "cve_id": "CVE-2026-57147",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "PraisonAI is a multi-agent teams system. Prior to 0.1.6, praisonai_platform/services/auth_service.py assigns the public dev-secret-change-me value to JWT_SECRET when PLATFORM_JWT_SECRET is unset, and ",
-        "published": "2026-09-15T11:17:11.760"
-      },
-      {
-        "cve_id": "CVE-2026-57148",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "PraisonAI is a multi-agent teams system. Prior to 0.1.6, praisonai_platform/services/auth_service.py falls back to the public dev-secret-change-me HS256 signing key when PLATFORM_JWT_SECRET is unset, ",
-        "published": "2026-09-15T11:17:11.910"
-      },
-      {
-        "cve_id": "CVE-2026-57140",
-        "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "PraisonAI is a multi-agent teams system. From 1.6.0 until 1.7.2, AgentOS in src/praisonai-ts/src/os/agentos.ts uses the 0.0.0.0 default from src/praisonai-ts/src/os/config.ts and registers GET /api/ag",
-        "published": "2026-09-15T11:17:11.473"
-      },
-      {
-        "cve_id": "CVE-2026-91995",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "pig before 4.1.0 contains an authentication bypass vulnerability in the /register/password endpoint where password verification results are discarded, allowing any value as the current password. Remot",
-        "published": "2026-09-15T12:17:54.943"
-      },
-      {
-        "cve_id": "CVE-2026-77853",
+        "cve_id": "CVE-2026-91934",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Improper neutralization of special elements used in an OS command ('OS Command Injection') issue exists in FF-RFI079I4 and FF-RFI078I4. A user who can log in to the product's M-Plane (NETCONF) may exe",
-        "published": "2026-09-15T09:16:44.067"
+        "description": "Flowise versions before 3.1.4 fail to validate file paths in the SQL Database Chain node when connecting to SQLite databases, allowing authenticated attackers to write arbitrary files. Attackers can w",
+        "published": "2026-09-15T16:17:44.317"
       },
       {
-        "cve_id": "CVE-2026-80217",
+        "cve_id": "CVE-2026-91964",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Hidden functionality issue exists in FF-RFI079I4 and FF-RFI078I4, which may allow a user who can log in via SSH and access the enable mode on the product to execute arbitrary OS commands.",
-        "published": "2026-09-15T09:16:44.233"
+        "description": "FreeRDP versions before 3.31.0 contain a heap-based buffer overflow in nego_send_negotiation_request when processing Server Redirection PDU messages with attacker-controlled LoadBalanceInfo fields. A ",
+        "published": "2026-09-15T16:17:52.480"
       },
       {
-        "cve_id": "CVE-2026-57133",
+        "cve_id": "CVE-2026-59973",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "PraisonAI is a multi-agent teams system. From 1.5.1 until 1.7.2, the shell() helper exported from src/praisonai-ts/src/tools/utility-tools.ts checks only the first whitespace-delimited token against s",
-        "published": "2026-09-15T11:17:10.437"
+        "base_score": 8.5,
+        "description": "FrontMCP is a TypeScript-first framework for the Model Context Protocol (MCP). From mcp-from-openapi 2.3.0 until 2.5.0 and from frontmcp and @frontmcp/adapters 1.2.1 until 1.5.0, libs/adapters/src/ope",
+        "published": "2026-09-15T16:17:18.327"
       },
       {
-        "cve_id": "CVE-2026-57136",
+        "cve_id": "CVE-2026-91931",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "PraisonAI is a multi-agent teams system. From 1.2.3 until 1.7.2, CommandValidator in src/praisonai-ts/src/cli/features/sandbox-executor.ts validates only the first whitespace-delimited executable agai",
-        "published": "2026-09-15T11:17:10.883"
+        "base_score": 8.5,
+        "description": "Flowise before 3.1.4 contains a remote code execution vulnerability in the Custom MCP node that allows authenticated attackers to execute arbitrary code by supplying npx package names in the mcpServer",
+        "published": "2026-09-15T16:17:43.883"
       },
       {
-        "cve_id": "CVE-2026-57137",
+        "cve_id": "CVE-2026-91932",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "PraisonAI is a multi-agent teams system. From 1.4.0 until 1.7.2, createAgentLoop() in src/praisonai-ts/src/ai/agent-loop.ts passes executable tools to generateText() before invoking the onToolCall app",
-        "published": "2026-09-15T11:17:11.030"
+        "base_score": 8.5,
+        "description": "Flowise before 3.1.4 contains a validation bypass vulnerability in MCP server configuration allowing authenticated attackers remote code execution through an unvalidated cwd parameter. Attackers can b",
+        "published": "2026-09-15T16:17:44.030"
       },
       {
-        "cve_id": "CVE-2026-91925",
+        "cve_id": "CVE-2026-91935",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Polyaxon through 2.16.4 renders operation specification fields with an unsandboxed Jinja2 environment during server-side run preparation, allowing authenticated users to execute arbitrary code. Attack",
-        "published": "2026-09-15T11:17:13.220"
+        "base_score": 8.3,
+        "description": "Flowise before 3.1.4 fails to validate baseURL parameters in chat-model nodes, allowing authenticated users to redirect requests to arbitrary hosts. Attackers with chatflows:create or chatflows:update",
+        "published": "2026-09-15T16:17:44.867"
       },
       {
-        "cve_id": "CVE-2026-14805",
+        "cve_id": "CVE-2026-54076",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Consulting theme for WordPress is vulnerable to Privilege Escalation in versions up to, and including, 6.7.16. This is due to a combination of two flaws: (1) the masterstudy_ms_stm_set_discard_tra",
-        "published": "2026-09-15T13:16:40.507"
+        "base_score": 8.1,
+        "description": "ArcadeDB is a Multi-Model DBMS. Prior to 26.6.1, the fix for CVE-2026-44221 added an UPDATE_SCHEMA authorization check only to LocalDocumentType.createProperty, while the remaining public schema mutat",
+        "published": "2026-09-15T16:17:13.560"
       },
       {
-        "cve_id": "CVE-2026-92006",
+        "cve_id": "CVE-2026-88619",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component. This vulnerability was fixed in Firefox 156, Firefox ESR 115.41, Firefox ESR 140.16, Firefox ESR 153.3",
-        "published": "2026-09-15T13:16:48.243"
+        "base_score": 8.1,
+        "description": "1024-lab SmartAdmin v3.30.0 contains a missing authorization vulnerability in the scheduled-job management module. The AdminSmartJobController exposes scheduled-job management endpoints without method",
+        "published": "2026-09-15T16:17:38.933"
       },
       {
-        "cve_id": "CVE-2026-92007",
+        "cve_id": "CVE-2026-91988",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component. This vulnerability was fixed in Firefox 156, Firefox ESR 115.41, Firefox ESR 140.16, Firefox ESR 153.3",
-        "published": "2026-09-15T13:16:48.357"
+        "base_score": 8.1,
+        "description": "atomic-agents-stack before 1.1.0 accepts cleartext HTTP schemes in the HTTP MCP server-registry backend factory, allowing network man-in-the-middle attackers to rewrite catalog responses. Attackers ca",
+        "published": "2026-09-15T16:17:57.450"
       },
       {
-        "cve_id": "CVE-2026-92008",
+        "cve_id": "CVE-2026-65831",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component. This vulnerability was fixed in Firefox 156, Firefox ESR 115.41, Firefox ESR 140.16, Firefox ESR 153.3",
-        "published": "2026-09-15T13:16:48.463"
+        "base_score": 7.7,
+        "description": "ArcadeDB is a Multi-Model DBMS. Prior to 26.7.1, a reader-role user can submit POST /api/v1/command/{database} with language: js because PolyglotQueryEngine.command, PolyglotQueryEngine.analyze, and P",
+        "published": "2026-09-15T16:17:22.387"
       },
       {
-        "cve_id": "CVE-2026-92009",
+        "cve_id": "CVE-2026-91943",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component. This vulnerability was fixed in Firefox 156, Firefox ESR 115.41, Firefox ESR 140.16, Firefox ESR 153.3",
-        "published": "2026-09-15T13:16:48.593"
+        "base_score": 7.7,
+        "description": "Crawl4AI before 0.9.3 contains a server-side request forgery vulnerability in PDFContentScrapingStrategy where _get_pdf_path() re-downloads targets with Python requests without egress validation. Auth",
+        "published": "2026-09-15T16:17:46.290"
+      },
+      {
+        "cve_id": "CVE-2023-54397",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Tornado before 6.3.3 contains an HTTP request smuggling vulnerability due to improper parsing of Content-Length headers accepting non-standard characters. Attackers can send crafted HTTP requests with",
+        "published": "2026-09-15T16:17:05.777"
+      },
+      {
+        "cve_id": "CVE-2024-14029",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Tornado before 6.4.1 ignores duplicate Transfer-Encoding: chunked headers, treating requests as having no message body and parsing the chunked body as a subsequent request. Attackers can exploit this ",
+        "published": "2026-09-15T16:17:06.893"
+      },
+      {
+        "cve_id": "CVE-2026-91930",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Flowise before 3.1.4 fails to scope enterprise organization and workspace membership APIs to the caller's tenant, allowing authenticated users to supply arbitrary organization IDs. Attackers can add t",
+        "published": "2026-09-15T16:17:43.743"
+      },
+      {
+        "cve_id": "CVE-2026-91937",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Flowise before 3.1.4 fails to sanitize the overrideConfig.sessionId parameter before using it in MongoDB queries within the MongoDBMemory node. Unauthenticated attackers can submit MongoDB operator ob",
+        "published": "2026-09-15T16:17:45.170"
+      },
+      {
+        "cve_id": "CVE-2026-91940",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "crawl4ai before 0.9.3 contains an arbitrary file write vulnerability in PDFContentScrapingStrategy where the _filter_untrusted_fields function fails to validate untrusted configuration fields. Attacke",
+        "published": "2026-09-15T16:17:45.460"
+      },
+      {
+        "cve_id": "CVE-2026-91941",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Crawl4AI before 0.9.3 contains an uncontrolled resource consumption vulnerability in PDFContentScrapingStrategy that allows untrusted clients to cause denial of service. Attackers can select the PDF s",
+        "published": "2026-09-15T16:17:46.000"
+      },
+      {
+        "cve_id": "CVE-2026-91947",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "FreeRDP server versions before 3.31.0 contain a use-after-free vulnerability in the DRDYNVC parser that dereferences a channel pointer after releasing the synchronization lock. Authenticated clients c",
+        "published": "2026-09-15T16:17:48.353"
       }
     ]
   },
