@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-15T22:32:37.110428+00:00",
+  "generated_at": "2026-09-16T02:25:00.923542+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 45,
+        "value": 44,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 9,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1710,
-    "recent_30d_count": 45,
+    "recent_30d_count": 44,
     "recent": [
       {
         "cve_id": "CVE-2026-76461",
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 1441,
-    "critical_count": 4,
-    "high_count": 27,
+    "total": 1420,
+    "critical_count": 9,
+    "high_count": 24,
     "cves": [
       {
         "cve_id": "CVE-2026-91001",
@@ -250,11 +250,46 @@
         "published": "2026-09-15T06:16:59.970"
       },
       {
-        "cve_id": "CVE-2026-90847",
+        "cve_id": "CVE-2026-57138",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A vulnerability was determined in EFM ipTIME C200E 1.094. The impacted element is an unknown function of the file iux_set.cgi of the component System Setup. This manipulation causes os command injecti",
-        "published": "2026-09-15T01:16:54.423"
+        "base_score": 9.9,
+        "description": "PraisonAI is a multi-agent teams system. From 1.4.0 until 1.7.2, codeMode in src/praisonai-ts/src/tools/builtins/code-mode.ts executes untrusted JavaScript with new Function() inside with(sandbox) and",
+        "published": "2026-09-15T11:17:11.180"
+      },
+      {
+        "cve_id": "CVE-2026-62379",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Open Access Management (OpenAM) is an access management solution. Prior to 16.1.2, the pre-authentication /authservice PLL endpoint accepts a CustomCallback XML element whose className value selects a",
+        "published": "2026-09-15T10:17:06.107"
+      },
+      {
+        "cve_id": "CVE-2026-57139",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "PraisonAI is a multi-agent teams system. From 1.5.0 until 1.7.2, MCPServer.startHttp() in src/praisonai-ts/src/mcp/server.ts binds without a host restriction and forwards every HTTP POST request to ha",
+        "published": "2026-09-15T11:17:11.327"
+      },
+      {
+        "cve_id": "CVE-2026-57141",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "PraisonAI is a multi-agent teams system. Prior to 1.7.2, the codeMode tool in src/praisonai-ts/src/tools/builtins/code-mode.ts executes model-generated JavaScript with new Function() and with(sandbox)",
+        "published": "2026-09-15T11:17:11.617"
+      },
+      {
+        "cve_id": "CVE-2026-57147",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "PraisonAI is a multi-agent teams system. Prior to 0.1.6, praisonai_platform/services/auth_service.py assigns the public dev-secret-change-me value to JWT_SECRET when PLATFORM_JWT_SECRET is unset, and ",
+        "published": "2026-09-15T11:17:11.760"
+      },
+      {
+        "cve_id": "CVE-2026-57140",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "PraisonAI is a multi-agent teams system. From 1.6.0 until 1.7.2, AgentOS in src/praisonai-ts/src/os/agentos.ts uses the 0.0.0.0 default from src/praisonai-ts/src/os/config.ts and registers GET /api/ag",
+        "published": "2026-09-15T11:17:11.473"
       },
       {
         "cve_id": "CVE-2026-91003",
@@ -271,20 +306,6 @@
         "published": "2026-09-15T07:16:33.683"
       },
       {
-        "cve_id": "CVE-2026-91200",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "DevSpace through 6.3.21 fails to reject parent-directory segments in tar entry names from the in-pod sync stream. Attackers operating a malicious container can stream tar entries with traversal sequen",
-        "published": "2026-09-14T23:19:00.630"
-      },
-      {
-        "cve_id": "CVE-2026-91771",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Weights & Biases wandb before 0.29.0 fails to validate the file name from server responses in the File.download function, allowing path traversal attacks. Attackers controlling the backend can supply ",
-        "published": "2026-09-15T02:16:49.680"
-      },
-      {
         "cve_id": "CVE-2026-77853",
         "severity": "HIGH",
         "base_score": 8.8,
@@ -299,6 +320,27 @@
         "published": "2026-09-15T09:16:44.233"
       },
       {
+        "cve_id": "CVE-2026-57133",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "PraisonAI is a multi-agent teams system. From 1.5.1 until 1.7.2, the shell() helper exported from src/praisonai-ts/src/tools/utility-tools.ts checks only the first whitespace-delimited token against s",
+        "published": "2026-09-15T11:17:10.437"
+      },
+      {
+        "cve_id": "CVE-2026-57136",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "PraisonAI is a multi-agent teams system. From 1.2.3 until 1.7.2, CommandValidator in src/praisonai-ts/src/cli/features/sandbox-executor.ts validates only the first whitespace-delimited executable agai",
+        "published": "2026-09-15T11:17:10.883"
+      },
+      {
+        "cve_id": "CVE-2026-57137",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "PraisonAI is a multi-agent teams system. From 1.4.0 until 1.7.2, createAgentLoop() in src/praisonai-ts/src/ai/agent-loop.ts passes executable tools to generateText() before invoking the onToolCall app",
+        "published": "2026-09-15T11:17:11.030"
+      },
+      {
         "cve_id": "CVE-2026-45048",
         "severity": "HIGH",
         "base_score": 8.5,
@@ -306,25 +348,32 @@
         "published": "2026-09-15T10:17:03.993"
       },
       {
-        "cve_id": "CVE-2026-90843",
+        "cve_id": "CVE-2026-1758",
         "severity": "HIGH",
         "base_score": 8.3,
-        "description": "A security vulnerability has been detected in SabyasachiRana WebMap up to 8b95fe4dc301a3c09ddf145b895de0bf9f8d2a25. This affects the function nmap_newscan of the file functions_nmap.py of the componen",
-        "published": "2026-09-15T01:16:53.627"
+        "description": "Session fixation vulnerability in Secomea GateManager (webserver module) allows Session Fixation.\n\nThis issue affects GateManager: 11.5;0, 11.4.625515072:0.\n\n\n\nFixed in Version 11.6 or\u00a011.4.626194074 ",
+        "published": "2026-09-15T11:17:07.587"
       },
       {
-        "cve_id": "CVE-2026-91751",
+        "cve_id": "CVE-2026-57112",
         "severity": "HIGH",
         "base_score": 8.3,
-        "description": "Flextype CMS through 1.0.0-alpha.3 fails to properly validate id and new_id parameters in the Entries REST API, allowing API token holders to read, create, or overwrite files outside the entries direc",
-        "published": "2026-09-15T01:16:54.797"
+        "description": "PraisonAI is a multi-agent teams system. From praisonaiagents 0.6.0 until 1.6.59 and PraisonAI 3.10.0 until 4.6.59, ToolsMCPServer.run_sse() in src/praisonai-agents/praisonaiagents/mcp/mcp_server.py m",
+        "published": "2026-09-15T11:17:10.290"
       },
       {
-        "cve_id": "CVE-2026-91752",
+        "cve_id": "CVE-2026-57134",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "GNU libextractor before 1.15 contains a stack-based buffer overflow vulnerability in the process_star_office function that sizes a variable-length stack array from attacker-controlled OLE2 stream data",
-        "published": "2026-09-15T01:16:54.967"
+        "base_score": 8.2,
+        "description": "PraisonAI is a multi-agent teams system. From 1.5.1 until 1.7.2, MCPSecurity.evaluatePolicy() in src/praisonai-ts/src/mcp/security.ts invokes the configured credential validator only when AuthMethod i",
+        "published": "2026-09-15T11:17:10.583"
+      },
+      {
+        "cve_id": "CVE-2026-57135",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "PraisonAI is a multi-agent teams system. From 1.2.3 until 1.7.2, SandboxExecutor network-isolated mode in src/praisonai-ts/src/cli/features/sandbox-executor.ts uses buildEnv() only to inject invalid h",
+        "published": "2026-09-15T11:17:10.733"
       },
       {
         "cve_id": "CVE-2026-75983",
@@ -332,55 +381,6 @@
         "base_score": 7.5,
         "description": "The Eventin \u2013 Event Calendar, Tickets, Registration, Booking & WooCommerce plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 4.1.23. This is due to the `",
         "published": "2026-09-15T07:16:29.743"
-      },
-      {
-        "cve_id": "CVE-2026-90880",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "A security flaw has been discovered in D-Link DSL-3782 2016-07-28. This issue affects the function system of the file /cgi-bin/New_GUI/Set/Diagnostics.asp of the component Diagnostics. Performing a ma",
-        "published": "2026-09-15T05:17:00.713"
-      },
-      {
-        "cve_id": "CVE-2026-90840",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was identified in PHPGurukul Blood Donor Management System 1.0. Affected is the function __construct of the file /application/controllers/admin/Dashboard.php of the component Admin Con",
-        "published": "2026-09-15T00:17:30.957"
-      },
-      {
-        "cve_id": "CVE-2026-90841",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security flaw has been discovered in PHPGurukul Blood Donor Management System 1.0. Affected by this vulnerability is an unknown functionality of the file /application/controllers/admin/Report.php of",
-        "published": "2026-09-15T00:17:31.140"
-      },
-      {
-        "cve_id": "CVE-2026-90844",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was detected in PHPGurukul Daily Expense Tracker System 1.1. This vulnerability affects unknown code of the file /dets/index.php of the component Login. Performing a manipulation of th",
-        "published": "2026-09-15T01:16:53.833"
-      },
-      {
-        "cve_id": "CVE-2026-90846",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability has been found in PHPGurukul Daily Expense Tracker System 1.1. Impacted is an unknown function of the file /dets/forgot-password.php. The manipulation of the argument email/contactno l",
-        "published": "2026-09-15T01:16:54.230"
-      },
-      {
-        "cve_id": "CVE-2026-90849",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security vulnerability has been detected in SourceCodester College Notes Gallery Management System 1.0. Affected by this vulnerability is an unknown functionality of the file /College/login.php. The",
-        "published": "2026-09-15T02:16:48.960"
-      },
-      {
-        "cve_id": "CVE-2026-90852",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability has been found in luben zstd-jni up to 1.5.7-13. This vulnerability affects the function ZstdCompressCtx.loadDict of the file ZstdCompressCtx.java of the component Dictionary Sharing. ",
-        "published": "2026-09-15T03:17:06.377"
       }
     ]
   },
