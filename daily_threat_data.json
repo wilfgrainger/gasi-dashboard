@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T02:29:02.623111+00:00",
+  "generated_at": "2026-09-17T09:01:04.733809+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
+        "value": 8,
         "score": 2.5,
         "max": 3
       },
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 869,
-    "critical_count": 5,
-    "high_count": 27,
+    "total": 823,
+    "critical_count": 8,
+    "high_count": 30,
     "cves": [
       {
-        "cve_id": "CVE-2026-12793",
+        "cve_id": "CVE-2026-73453",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The JetFormBuilder \u2014 Dynamic Blocks Form Builder plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 3.6.2. This is due to the plugin not validating that a",
-        "published": "2026-09-16T04:17:56.110"
+        "base_score": 10.0,
+        "description": "An unauthenticated P4Runtime (Programming Protocol-Independent Packet Processors Runtime) client can achieve arbitrary code execution under certain conditions on affected platforms running Arista EOS ",
+        "published": "2026-09-16T10:16:52.043"
       },
       {
-        "cve_id": "CVE-2026-14349",
+        "cve_id": "CVE-2026-89778",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "The TrueBooker \u2013 Appointment Booking and Scheduler System plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 1.2.3. This is due to the plugin not properly",
-        "published": "2026-09-16T04:17:58.777"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nisofs: fix out-of-bounds page array access on empty zisofs block\n\nzisofs_uncompress_block()'s empty-block fast path returns\npcount ",
+        "published": "2026-09-16T09:17:08.253"
       },
       {
-        "cve_id": "CVE-2026-27546",
+        "cve_id": "CVE-2026-89783",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "An unauthenticated remote attacker can exploit an authentication bypass in the _account_log function to log in as an admin, even when accounts are properly configured.",
-        "published": "2026-09-16T08:16:36.850"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nxfrm6: fix out-of-bounds write in xfrm6_input_addr() when secpath is full\n\nThe depth check in xfrm6_input_addr() is off by one:\n\n  ",
+        "published": "2026-09-16T09:17:08.930"
       },
       {
-        "cve_id": "CVE-2026-27565",
+        "cve_id": "CVE-2026-89788",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "An unauthenticated remote attacker can upload a malicious IODD file that places and executes a shell script with root privileges. The shell script remains active even after a reboot.",
-        "published": "2026-09-16T08:16:39.740"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nksmbd: fix tree connection use-after-free in smb2_tree_connect()\n\nksmbd_tree_conn_connect() publishes a new tree connection in\nsess",
+        "published": "2026-09-16T09:17:09.590"
       },
       {
-        "cve_id": "CVE-2026-73447",
+        "cve_id": "CVE-2026-86106",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "An unauthenticated actor with network access to the private HA interconnect may trigger sensitive HA peer functions without verification. This could result in elevated command execution on Edge units ",
+        "published": "2026-09-16T11:16:43.783"
+      },
+      {
+        "cve_id": "CVE-2026-89775",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nKVM: arm64: Handle negative S1 walk levels in VNCR TLB size evaluation\n\nComputing the effects of a TLB invalidation involves lookin",
+        "published": "2026-09-16T09:17:07.850"
+      },
+      {
+        "cve_id": "CVE-2026-89779",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "A privileged attacker can exploit certain operation to execute arbitrary commands with root privileges, leading to full device compromise. An authenticated user can exploit gRPC Network Security Inter",
-        "published": "2026-09-16T07:16:37.087"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nfs/ntfs3: validate ef->size covers the record's name and value\n\nWhen an EA record has a non-zero ef->size, ntfs_read_ea() only chec",
+        "published": "2026-09-16T09:17:08.387"
       },
       {
-        "cve_id": "CVE-2026-78088",
+        "cve_id": "CVE-2026-89786",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\next4: fix out-of-bounds read in ext4_read_inline_dir()\n\next4_read_inline_dir() can read a dirent header past the end of its inline\n",
+        "published": "2026-09-16T09:17:09.330"
+      },
+      {
+        "cve_id": "CVE-2026-73464",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The Contest Gallery \u2013 Upload & Vote Photos, Media, Sell with PayPal & Stripe plugin for WordPress is vulnerable to Unauthenticated Arbitrary File Overwrite in all versions up to, and including, 32.0.1",
-        "published": "2026-09-16T04:18:41.503"
+        "description": "On affected platforms running Arista EOS with gRPC Network Management Interface (gNMI) enabled, a specially crafted request could allow a malicious authenticated client with gRPC Network Management In",
+        "published": "2026-09-16T09:17:05.463"
       },
       {
-        "cve_id": "CVE-2026-27547",
+        "cve_id": "CVE-2026-89774",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A low-privileged remote attacker can exploit a command injection vulnerability in the /index.php/ajax/get_iodd_menu_info endpoint using valid user or operator credentials allowing execution of command",
-        "published": "2026-09-16T08:16:37.027"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nBluetooth: SCO: hold sk properly in sco_conn_ready\n\nsk deref in sco_conn_ready must be done either under conn->lock, or\nholding a r",
+        "published": "2026-09-16T09:17:07.717"
       },
       {
-        "cve_id": "CVE-2026-27548",
+        "cve_id": "CVE-2026-89777",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A low-privileged remote attacker can exploit a command injection vulnerability in the /index.php/ajax/get_iodd_port_info endpoint using user or operator credentials allowing execution of commands with",
-        "published": "2026-09-16T08:16:37.180"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nvfio/pci: clear vdev->msi_perm after freeing it on init failure\n\nvfio_msi_cap_len() lazily allocates the per-device MSI permission ",
+        "published": "2026-09-16T09:17:08.073"
       },
       {
-        "cve_id": "CVE-2026-27549",
+        "cve_id": "CVE-2026-89804",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A low-privileged remote attacker can exploit a command injection vulnerability in the /index.php/attached_devices_tab/do_upload endpoint using operator credentials allowing execution of commands with ",
-        "published": "2026-09-16T08:16:37.333"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/nouveau/dmem: fix mismatched DMA unmap size for large folios\n\nDevice-private THP migration maps migration buffers with page_siz",
+        "published": "2026-09-16T11:16:45.347"
       },
       {
-        "cve_id": "CVE-2026-27550",
+        "cve_id": "CVE-2026-89811",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A low-privileged remote attacker can exploit a command injection vulnerability in the Field_Shadow_Password class using operator credentials allowing execution of commands with root privileges on the ",
-        "published": "2026-09-16T08:16:37.487"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/amdkfd: Add TLB flush after MES queue eviction/suspension\n\nMES (Micro Engine Scheduler) does not perform heavy-weight TLB\ninval",
+        "published": "2026-09-16T11:16:46.267"
       },
       {
-        "cve_id": "CVE-2026-27551",
+        "cve_id": "CVE-2026-89781",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A low-privileged remote attacker can exploit a command injection vulnerability in the /index.php/ajax/parameterManage endpoint using user credentials allowing execution of commands with root privilege",
-        "published": "2026-09-16T08:16:37.640"
+        "base_score": 8.4,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nfs/ntfs3: fix out-of-bounds read in read_log_rec_buf()\n\nread_log_rec_buf() copies a log record into a caller buffer starting at\n\n\tu",
+        "published": "2026-09-16T09:17:08.667"
       },
       {
-        "cve_id": "CVE-2026-27554",
+        "cve_id": "CVE-2026-89782",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A low-privileged remote attacker can exploit a command injection vulnerability in the /index.php/ajax/save_iodd_parameters endpoint using operator credentials allowing execution of commands with root ",
-        "published": "2026-09-16T08:16:38.063"
+        "base_score": 8.4,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nfs/ntfs3: reject restart table growth beyond U16_MAX entries\n\nDuring $LogFile replay, log_replay() indexes the transaction table by",
+        "published": "2026-09-16T09:17:08.800"
       },
       {
-        "cve_id": "CVE-2026-27555",
+        "cve_id": "CVE-2026-89795",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A low-privileged remote attacker can exploit a local file inclusion vulnerability in the /index.php/ajax/get_iodd_port_info endpoint using a valid user cookie allowing execution of arbitrary PHP code ",
-        "published": "2026-09-16T08:16:38.213"
+        "base_score": 8.4,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nPCI: Allow per function PCI slots to fix slot reset on s390\n\nOn s390 systems, which use a machine level hypervisor, PCI devices are",
+        "published": "2026-09-16T11:16:44.307"
       },
       {
-        "cve_id": "CVE-2026-27556",
+        "cve_id": "CVE-2026-89806",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A low-privileged remote attacker can exploit a local file inclusion vulnerability in the /index.php/ajax/save_iodd_parameters endpoint using a valid operator cookie allowing execution of arbitrary PHP",
-        "published": "2026-09-16T08:16:38.370"
+        "base_score": 8.4,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ndrm/sysfb: ofdrm: Fix integer overflow in fb_size calculation\n\nThe framebuffer size calculation `fb_size = linebytes * height` can\n",
+        "published": "2026-09-16T11:16:45.703"
       },
       {
-        "cve_id": "CVE-2026-27558",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A low-privileged remote attacker can exploit a command injection vulnerability in the /index.php/attached_devices_tab/ajax_remove_uploaded_iodd_files endpoint using operator credentials allowing execu",
-        "published": "2026-09-16T08:16:38.673"
-      },
-      {
-        "cve_id": "CVE-2026-27559",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A low-privileged remote attacker can exploit a command injection vulnerability in the /api/status/data endpoint by sending a crafted GET request with user credentials allowing execution of commands wi",
-        "published": "2026-09-16T08:16:38.827"
-      },
-      {
-        "cve_id": "CVE-2026-84408",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "QND contains an improper access control vulnerability in a named pipe, which may allow a local attacker who is logged in to a Windows PC where the affected product's client is installed to execute arb",
-        "published": "2026-09-16T08:16:40.060"
-      },
-      {
-        "cve_id": "CVE-2026-79708",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "GitLab has remediated an issue in GitLab EE affecting all versions from 19.0 before 19.1.8, 19.2 before 19.2.6, and 19.3 before 19.3.2 that, under certain conditions could have allowed an authenticate",
-        "published": "2026-09-16T07:16:37.440"
-      },
-      {
-        "cve_id": "CVE-2026-78252",
+        "cve_id": "CVE-2026-73435",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 15.3 before 19.1.8, 19.2 before 19.2.6, and 19.3 before 19.3.2 that, under certain conditions, an authenticated user could ha",
-        "published": "2026-09-16T07:16:37.323"
+        "description": "On affected platforms running Arista EOS with Open Shortest Path First version 2 (OSPFv2) configured, a specially crafted OSPFv2 packet from an unauthenticated attacker on the same broadcast segment, ",
+        "published": "2026-09-16T10:16:51.363"
       },
       {
-        "cve_id": "CVE-2026-27552",
+        "cve_id": "CVE-2026-73454",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "A low-privileged remote attacker can exploit improper authorization in the /index.php/attached_devices_tab/do_upload endpoint to upload IODD files to the device, potentially altering device behavior o",
-        "published": "2026-09-16T08:16:37.793"
+        "description": "On affected platforms running Arista EOS with gRPC Network Security Interface (gNSI) Credentialz configured, a specially crafted request can cause unintended modifications to the target account's prop",
+        "published": "2026-09-16T09:17:05.020"
+      },
+      {
+        "cve_id": "CVE-2026-73461",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "On affected EOS platforms with AAA-based gRPC authorization enabled for OpenConfig, gRPC requests of an authenticated user to OpenConfig may use the wrong privilege level, resulting in an authorizatio",
+        "published": "2026-09-16T09:17:05.147"
       }
     ]
   },
