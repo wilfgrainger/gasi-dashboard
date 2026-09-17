@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-16T22:29:11.034765+00:00",
+  "generated_at": "2026-09-17T02:29:02.623111+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 47,
+        "value": 43,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 5,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1713,
-    "recent_30d_count": 47,
+    "recent_30d_count": 43,
     "recent": [
       {
         "cve_id": "CVE-2026-58704",
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 878,
-    "critical_count": 4,
-    "high_count": 20,
+    "total": 869,
+    "critical_count": 5,
+    "high_count": 27,
     "cves": [
       {
         "cve_id": "CVE-2026-12793",
@@ -264,25 +264,18 @@
         "published": "2026-09-16T08:16:36.850"
       },
       {
+        "cve_id": "CVE-2026-27565",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An unauthenticated remote attacker can upload a malicious IODD file that places and executes a shell script with root privileges. The shell script remains active even after a reboot.",
+        "published": "2026-09-16T08:16:39.740"
+      },
+      {
         "cve_id": "CVE-2026-73447",
         "severity": "CRITICAL",
         "base_score": 9.1,
         "description": "A privileged attacker can exploit certain operation to execute arbitrary commands with root privileges, leading to full device compromise. An authenticated user can exploit gRPC Network Security Inter",
         "published": "2026-09-16T07:16:37.087"
-      },
-      {
-        "cve_id": "CVE-2026-69486",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Heap-based buffer overflow in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
-        "published": "2026-09-15T23:17:41.633"
-      },
-      {
-        "cve_id": "CVE-2026-85893",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in Microsoft Edge (Chromium-based) allows an unauthorized attacker to elevate privileges over a network.",
-        "published": "2026-09-15T23:19:12.110"
       },
       {
         "cve_id": "CVE-2026-78088",
@@ -327,6 +320,48 @@
         "published": "2026-09-16T08:16:37.640"
       },
       {
+        "cve_id": "CVE-2026-27554",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A low-privileged remote attacker can exploit a command injection vulnerability in the /index.php/ajax/save_iodd_parameters endpoint using operator credentials allowing execution of commands with root ",
+        "published": "2026-09-16T08:16:38.063"
+      },
+      {
+        "cve_id": "CVE-2026-27555",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A low-privileged remote attacker can exploit a local file inclusion vulnerability in the /index.php/ajax/get_iodd_port_info endpoint using a valid user cookie allowing execution of arbitrary PHP code ",
+        "published": "2026-09-16T08:16:38.213"
+      },
+      {
+        "cve_id": "CVE-2026-27556",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A low-privileged remote attacker can exploit a local file inclusion vulnerability in the /index.php/ajax/save_iodd_parameters endpoint using a valid operator cookie allowing execution of arbitrary PHP",
+        "published": "2026-09-16T08:16:38.370"
+      },
+      {
+        "cve_id": "CVE-2026-27558",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A low-privileged remote attacker can exploit a command injection vulnerability in the /index.php/attached_devices_tab/ajax_remove_uploaded_iodd_files endpoint using operator credentials allowing execu",
+        "published": "2026-09-16T08:16:38.673"
+      },
+      {
+        "cve_id": "CVE-2026-27559",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A low-privileged remote attacker can exploit a command injection vulnerability in the /api/status/data endpoint by sending a crafted GET request with user credentials allowing execution of commands wi",
+        "published": "2026-09-16T08:16:38.827"
+      },
+      {
+        "cve_id": "CVE-2026-84408",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "QND contains an improper access control vulnerability in a named pipe, which may allow a local attacker who is logged in to a Windows PC where the affected product's client is installed to execute arb",
+        "published": "2026-09-16T08:16:40.060"
+      },
+      {
         "cve_id": "CVE-2026-79708",
         "severity": "HIGH",
         "base_score": 8.5,
@@ -346,41 +381,6 @@
         "base_score": 8.1,
         "description": "A low-privileged remote attacker can exploit improper authorization in the /index.php/attached_devices_tab/do_upload endpoint to upload IODD files to the device, potentially altering device behavior o",
         "published": "2026-09-16T08:16:37.793"
-      },
-      {
-        "cve_id": "CVE-2026-86108",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "Insufficient validation of inputs supplied through affected VeloCloud Edge management and configuration workflows may allow an authorized management request or configuration value to be interpreted as",
-        "published": "2026-09-16T03:17:00.077"
-      },
-      {
-        "cve_id": "CVE-2026-89063",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Online Scheduling and Appointment Booking System \u2013 Bookly plugin for WordPress is vulnerable to Insecure Direct Object Reference in all versions up to, and including, 28.1 via the 'conversation_id",
-        "published": "2026-09-16T05:16:47.313"
-      },
-      {
-        "cve_id": "CVE-2025-14871",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.4.6 before 19.1.8, 19.2 before 19.2.6, and 19.3 before 19.3.2 that under certain conditions could have allowed an unauthen",
-        "published": "2026-09-16T07:16:32.543"
-      },
-      {
-        "cve_id": "CVE-2026-1168",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 18.4.6 before 19.1.8, 19.2 before 19.2.6, and 19.3 before 19.3.2 that under certain conditions could have allowed an unauthen",
-        "published": "2026-09-16T07:16:36.827"
-      },
-      {
-        "cve_id": "CVE-2026-73446",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "On affected platforms running Arista EOS with IS-IS configured on a broadcast interface, an unauthenticated attacker can send a crafted IS-IS Hello Protocol Data Unit (PDU) that causes the device to t",
-        "published": "2026-09-16T00:17:05.000"
       }
     ]
   },
