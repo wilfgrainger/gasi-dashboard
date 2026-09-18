@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T18:44:25.875141+00:00",
+  "generated_at": "2026-09-18T22:04:19.771295+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 44,
+        "value": 45,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 12,
+        "value": 17,
         "score": 3.0,
         "max": 3
       },
@@ -32,8 +32,8 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1715,
-    "recent_30d_count": 44,
+    "total_catalog_count": 1716,
+    "recent_30d_count": 45,
     "recent": [
       {
         "cve_id": "CVE-2025-39964",
@@ -53,6 +53,16 @@
         "date_added": "2026-09-18",
         "due_date": "2026-09-21",
         "description": "Linux Kernel contains an out-of-bounds write vulnerability in the ebtables SNAT target which allows an ARP sender hardware address rewrite to write directly into a nonlinear socket-buffer fragment bac",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2025-39682",
+        "vendor": "Linux",
+        "product": "Kernel",
+        "name": "Linux Kernel Improper Check for Unusual or Exceptional Conditions Vulnerability",
+        "date_added": "2026-09-18",
+        "due_date": "2026-09-21",
+        "description": "Linux Kernel contains an improper check for unusual or exceptional conditions vulnerability in the TLS receive path which allows a zero-length record retrieved from the rx_list to bypass the intended ",
         "ransomware_use": "Unknown"
       },
       {
@@ -224,163 +234,153 @@
         "due_date": "2026-09-11",
         "description": "N-able N-central contains a static code injection vulnerability that could allow for pre-authentication remote code execution.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-85880",
-        "vendor": "Microsoft",
-        "product": "Windows",
-        "name": "Microsoft Windows Heap-Based Buffer Overflow Vulnerability",
-        "date_added": "2026-09-08",
-        "due_date": "2026-09-22",
-        "description": "Microsoft Windows Advanced Local Procedure Call contains a heap-based buffer overflow vulnerability that allows an attacker to elevate privileges locally.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 541,
-    "critical_count": 12,
-    "high_count": 36,
+    "total": 578,
+    "critical_count": 17,
+    "high_count": 29,
     "cves": [
       {
-        "cve_id": "CVE-2026-54617",
+        "cve_id": "CVE-2026-54734",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "GravitLauncher is an open-source Minecraft launcher based on sashok724's v3. Prior to 5.7.12, an unauthenticated remote actor can send a raw HTTP request target without a leading slash to the default ",
-        "published": "2026-09-17T19:16:51.003"
+        "base_score": 10.0,
+        "description": "Prebid Server Java is the Java version of Prebid Server. Prior to 3.43.0, certain bidder adapters interpolate user-supplied parameters into outbound request URLs without using HttpUtil to validate the",
+        "published": "2026-09-17T22:17:03.317"
       },
       {
-        "cve_id": "CVE-2026-54626",
+        "cve_id": "CVE-2026-69399",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "SAIL is a cross-platform library for loading and saving images with support for animation, metadata, and ICC profiles. In 0.9.10 and earlier, the TGA_INDEXED_RLE path selected by image_type == 9 alloc",
-        "published": "2026-09-17T20:16:51.970"
+        "base_score": 10.0,
+        "description": "Azure Arc Elevation of Privilege Vulnerability",
+        "published": "2026-09-17T23:18:18.793"
       },
       {
-        "cve_id": "CVE-2026-54627",
+        "cve_id": "CVE-2026-69865",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "SAIL is a cross-platform library for loading and saving images with support for animation, metadata, and ICC profiles. In 0.9.10 and earlier, psd_private_sail_pixel_format() in src/sail-codecs/psd/hel",
-        "published": "2026-09-17T20:16:52.117"
+        "base_score": 10.0,
+        "description": "Authorization bypass through user-controlled key in Microsoft Container Registry allows an unauthorized attacker to elevate privileges over a network.",
+        "published": "2026-09-17T23:18:34.670"
       },
       {
-        "cve_id": "CVE-2026-45140",
+        "cve_id": "CVE-2026-70200",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Chamilo LMS is an open-source learning management system. Prior to 2.0.1, Chamilo LMS allows an unauthenticated remote attacker to execute arbitrary code on the server. The authoritative advisory does",
-        "published": "2026-09-17T21:17:12.440"
+        "base_score": 10.0,
+        "description": "Improper limitation of a pathname to a restricted directory ('path traversal') in Azure Logic Apps allows an unauthorized attacker to elevate privileges over a network.",
+        "published": "2026-09-17T23:18:36.113"
       },
       {
-        "cve_id": "CVE-2026-54460",
+        "cve_id": "CVE-2026-83944",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "OpenReception's appointment booking software provides an end-to-end encrypted appointment booking platform. Prior to 1.1.1, POST /api/auth/passkeys accepts a request-body userId and attacker-supplied ",
-        "published": "2026-09-17T21:17:15.557"
+        "base_score": 10.0,
+        "description": "Improper access control in Azure Logic Apps allows an unauthorized attacker to elevate privileges over a network.",
+        "published": "2026-09-17T23:18:51.257"
       },
       {
-        "cve_id": "CVE-2026-54752",
+        "cve_id": "CVE-2026-85889",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Missing authentication for critical function in Azure AI Foundry allows an unauthorized attacker to elevate privileges over a network.",
+        "published": "2026-09-17T23:18:53.217"
+      },
+      {
+        "cve_id": "CVE-2026-62874",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Insufficient verification of data authenticity in Azure Billing allows an unauthorized attacker to elevate privileges over a network.",
+        "published": "2026-09-18T00:16:57.930"
+      },
+      {
+        "cve_id": "CVE-2026-69843",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Authentication bypass by spoofing in Microsoft Fabric allows an unauthorized attacker to elevate privileges over a network.",
+        "published": "2026-09-18T00:17:24.923"
+      },
+      {
+        "cve_id": "CVE-2026-85885",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Improper neutralization of special elements used in a command ('command injection') in M365 Copilot allows an authorized attacker to elevate privileges over a network.",
+        "published": "2026-09-17T23:18:53.080"
+      },
+      {
+        "cve_id": "CVE-2026-85878",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Improper authorization in Azure Database for PostgreSQL allows an authorized attacker to elevate privileges over a network.",
+        "published": "2026-09-18T00:17:47.777"
+      },
+      {
+        "cve_id": "CVE-2026-93467",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The OAKlouds developed by HGiga has a Insecure Deserialization vulnerability. Unauthenticated remote attackers can execute arbitrary code on the server by sending maliciously crafted serialized conten",
+        "published": "2026-09-18T03:16:33.753"
+      },
+      {
+        "cve_id": "CVE-2026-87701",
         "severity": "CRITICAL",
         "base_score": 9.6,
-        "description": "NetBox Device Type Library is a collection of community-sourced device type definitions for import into NetBox. The validation test harness can deserialize pull-request-controlled tracked pickle cache",
-        "published": "2026-09-17T20:16:52.877"
+        "description": "Improper neutralization of special elements in output used by a downstream component ('injection') in Azure Cosmos DB allows an authorized attacker to elevate privileges over a network.",
+        "published": "2026-09-17T23:18:53.623"
       },
       {
-        "cve_id": "CVE-2026-93372",
+        "cve_id": "CVE-2026-70009",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Buffer overflow in WebGL in Google Chrome on on Android prior to 153.0.8010.52 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security sever",
-        "published": "2026-09-17T21:17:54.180"
+        "base_score": 9.3,
+        "description": "Improper limitation of a pathname to a restricted directory ('path traversal') in Azure Arc allows an unauthorized attacker to elevate privileges over a network.",
+        "published": "2026-09-17T23:18:35.560"
       },
       {
-        "cve_id": "CVE-2026-93373",
+        "cve_id": "CVE-2026-54670",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in Extensions in Google Chrome prior to 153.0.8010.52 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted Chrome extension. (Chromium security severity",
-        "published": "2026-09-17T21:17:54.290"
+        "base_score": 9.1,
+        "description": "WeGIA is a web manager for charitable institutions. Prior to 3.8.5, the contribution request dispatcher in web/html/contribuicao/controller/control.php accepts attacker-controlled nomeClasse and metod",
+        "published": "2026-09-17T22:17:02.983"
       },
       {
-        "cve_id": "CVE-2026-93374",
+        "cve_id": "CVE-2026-54767",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Use after free in Dawn in Google Chrome on on Android prior to 153.0.8010.52 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium secu",
-        "published": "2026-09-17T21:17:54.420"
+        "base_score": 9.1,
+        "description": "WeGIA is a web manager for charitable institutions. Prior to 3.8.5, web/html/socio/sistema/controller/deletar_socios.php exposes an unauthenticated GET endpoint whose chave parameter is checked only a",
+        "published": "2026-09-17T22:17:03.470"
       },
       {
-        "cve_id": "CVE-2026-54618",
+        "cve_id": "CVE-2026-84738",
         "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "Obsidian Web MCP is a secure remote MCP server for Obsidian vaults. Prior to 0.2.0, /oauth/authorize issues an authorization code without a login, consent, or session check, and /oauth/token can excha",
-        "published": "2026-09-17T20:16:51.823"
+        "base_score": 9.1,
+        "description": "The AF Companion  WordPress plugin before 2.2.0 does not validate the type of files uploaded through one of its import features, allowing users with a low-privileged store-management role to upload ar",
+        "published": "2026-09-18T06:16:39.307"
       },
       {
-        "cve_id": "CVE-2026-47252",
+        "cve_id": "CVE-2026-77903",
         "severity": "CRITICAL",
         "base_score": 9.0,
-        "description": "Anyquery is an SQL query engine built on top of SQLite. Prior to 0.4.5, authenticated users with INSERT or UPDATE access to affected macOS virtual tables can execute operating-system commands because ",
-        "published": "2026-09-17T19:16:48.083"
+        "description": "Authentication bypass by spoofing in Microsoft Dataverse allows an unauthorized attacker to elevate privileges over a network.",
+        "published": "2026-09-17T23:18:44.993"
       },
       {
-        "cve_id": "CVE-2026-45143",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "Chamilo LMS is an open-source learning management system. From 2.0.0 through at least 2.1.0, Chamilo LMS stores private Message.content without server-side sanitization and renders it as HTML in asset",
-        "published": "2026-09-17T21:17:12.600"
-      },
-      {
-        "cve_id": "CVE-2026-54239",
+        "cve_id": "CVE-2026-54519",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Faust.js is a headless WordPress toolkit. Prior to 1.8.11, the FaustWP WordPress plugin authenticates only the ciphertext in its token envelope and excludes the 16-byte initialization vector from the ",
-        "published": "2026-09-17T19:16:50.047"
+        "description": "AI Agent Automation is a modular AI agent workflow automation platform with schedulers, tools, and observability. Prior to 0.9.1, backend/src/controllers/memory.controller.js authenticates requests bu",
+        "published": "2026-09-17T22:17:00.930"
       },
       {
-        "cve_id": "CVE-2026-54504",
+        "cve_id": "CVE-2026-54612",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "MCP Documentation Server is a local-first document management and semantic search server for AI coding agents. From 1.13.0 until 1.13.1, the automatically started Web UI in src/server.ts calls startWe",
-        "published": "2026-09-17T19:16:50.517"
+        "description": "Vvveb is a powerful and easy to use CMS with page builder to build websites, blogs or ecommerce stores. From 1.0.0 until 1.0.8.5, saveGlobalElements() in admin/controller/editor/global-trait.php conca",
+        "published": "2026-09-17T22:17:01.377"
       },
       {
-        "cve_id": "CVE-2026-15815",
+        "cve_id": "CVE-2026-54671",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Grafana OSS and Grafana Enterprise did not safely resolve symbolic links when\nextracting plugin archives. A crafted plugin archive can chain relative symbolic link\nentries to escape the plugin install",
-        "published": "2026-09-17T21:17:11.210"
-      },
-      {
-        "cve_id": "CVE-2026-54916",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "NetBox Device Type Library is a collection of community-sourced device type definitions for import into NetBox. The absence of tests/init.py and the lack of --import-mode=importlib cause pytest prepen",
-        "published": "2026-09-17T21:17:17.790"
-      },
-      {
-        "cve_id": "CVE-2026-93377",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Type confusion in V8 in Google Chrome prior to 153.0.8010.52 allowed a remote attacker leveraging social engineering to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium sec",
-        "published": "2026-09-17T21:17:55.000"
-      },
-      {
-        "cve_id": "CVE-2026-93381",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Buffer overflow in PDFium in Google Chrome on on Windows prior to 153.0.8010.52 allowed a remote attacker leveraging social engineering to potentially execute arbitrary code inside the sandbox via a c",
-        "published": "2026-09-17T21:17:55.430"
-      },
-      {
-        "cve_id": "CVE-2026-93382",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in PDFium in Google Chrome prior to 153.0.8010.52 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-09-17T21:17:55.530"
-      },
-      {
-        "cve_id": "CVE-2026-77615",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "Paella Player is a set of libraries to create a multi stream video player. Prior to Paella Player 2.12.11 (as used in Opencast prior to 19.7 and 20.2), there is a potential XSS attack though closed ca",
-        "published": "2026-09-17T21:17:38.557"
+        "description": "WeGIA is a web manager for charitable institutions. Prior to 3.8.5, WeGIA maps InternoControle to an empty resource array in web/controle/control.php, and verificarPermissao in web/dao/MiddlewareDAO.p",
+        "published": "2026-09-17T22:17:03.150"
       }
     ]
   },
