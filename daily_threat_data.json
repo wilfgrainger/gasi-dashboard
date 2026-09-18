@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-18T15:27:39.971003+00:00",
+  "generated_at": "2026-09-18T18:44:25.875141+00:00",
   "threat_score": {
-    "score": 5.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 7.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 12,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 1043,
-    "critical_count": 1,
-    "high_count": 14,
+    "total": 541,
+    "critical_count": 12,
+    "high_count": 36,
     "cves": [
       {
-        "cve_id": "CVE-2026-86863",
+        "cve_id": "CVE-2026-54617",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "pgAdmin 4's Webserver authentication source is intended to accept an identity asserted by the web server or reverse proxy in front of pgAdmin, delivered through the WSGI/CGI environment. WebserverAuth",
-        "published": "2026-09-17T16:18:17.863"
+        "description": "GravitLauncher is an open-source Minecraft launcher based on sashok724's v3. Prior to 5.7.12, an unauthenticated remote actor can send a raw HTTP request target without a leading slash to the default ",
+        "published": "2026-09-17T19:16:51.003"
       },
       {
-        "cve_id": "CVE-2026-86864",
+        "cve_id": "CVE-2026-54626",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "SAIL is a cross-platform library for loading and saving images with support for animation, metadata, and ICC profiles. In 0.9.10 and earlier, the TGA_INDEXED_RLE path selected by image_type == 9 alloc",
+        "published": "2026-09-17T20:16:51.970"
+      },
+      {
+        "cve_id": "CVE-2026-54627",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "SAIL is a cross-platform library for loading and saving images with support for animation, metadata, and ICC profiles. In 0.9.10 and earlier, psd_private_sail_pixel_format() in src/sail-codecs/psd/hel",
+        "published": "2026-09-17T20:16:52.117"
+      },
+      {
+        "cve_id": "CVE-2026-45140",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Chamilo LMS is an open-source learning management system. Prior to 2.0.1, Chamilo LMS allows an unauthenticated remote attacker to execute arbitrary code on the server. The authoritative advisory does",
+        "published": "2026-09-17T21:17:12.440"
+      },
+      {
+        "cve_id": "CVE-2026-54460",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "OpenReception's appointment booking software provides an end-to-end encrypted appointment booking platform. Prior to 1.1.1, POST /api/auth/passkeys accepts a request-body userId and attacker-supplied ",
+        "published": "2026-09-17T21:17:15.557"
+      },
+      {
+        "cve_id": "CVE-2026-54752",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "NetBox Device Type Library is a collection of community-sourced device type definitions for import into NetBox. The validation test harness can deserialize pull-request-controlled tracked pickle cache",
+        "published": "2026-09-17T20:16:52.877"
+      },
+      {
+        "cve_id": "CVE-2026-93372",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Buffer overflow in WebGL in Google Chrome on on Android prior to 153.0.8010.52 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security sever",
+        "published": "2026-09-17T21:17:54.180"
+      },
+      {
+        "cve_id": "CVE-2026-93373",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Use after free in Extensions in Google Chrome prior to 153.0.8010.52 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted Chrome extension. (Chromium security severity",
+        "published": "2026-09-17T21:17:54.290"
+      },
+      {
+        "cve_id": "CVE-2026-93374",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Use after free in Dawn in Google Chrome on on Android prior to 153.0.8010.52 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium secu",
+        "published": "2026-09-17T21:17:54.420"
+      },
+      {
+        "cve_id": "CVE-2026-54618",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "Obsidian Web MCP is a secure remote MCP server for Obsidian vaults. Prior to 0.2.0, /oauth/authorize issues an authorization code without a login, consent, or session check, and /oauth/token can excha",
+        "published": "2026-09-17T20:16:51.823"
+      },
+      {
+        "cve_id": "CVE-2026-47252",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "Anyquery is an SQL query engine built on top of SQLite. Prior to 0.4.5, authenticated users with INSERT or UPDATE access to affected macOS virtual tables can execute operating-system commands because ",
+        "published": "2026-09-17T19:16:48.083"
+      },
+      {
+        "cve_id": "CVE-2026-45143",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "Chamilo LMS is an open-source learning management system. From 2.0.0 through at least 2.1.0, Chamilo LMS stores private Message.content without server-side sanitization and renders it as HTML in asset",
+        "published": "2026-09-17T21:17:12.600"
+      },
+      {
+        "cve_id": "CVE-2026-54239",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "pgAdmin 4's Backup tool appended the client-supplied 'database' field from the /backup/job/<sid>/object request to the pg_dump argument vector as a bare trailing positional argument, without validatio",
-        "published": "2026-09-17T16:18:18.010"
+        "description": "Faust.js is a headless WordPress toolkit. Prior to 1.8.11, the FaustWP WordPress plugin authenticates only the ciphertext in its token envelope and excludes the 16-byte initialization vector from the ",
+        "published": "2026-09-17T19:16:50.047"
       },
       {
-        "cve_id": "CVE-2026-89036",
+        "cve_id": "CVE-2026-54504",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Appwrite before 2.0.0 contains an argument injection vulnerability that allows authenticated users with functions.write or sites.write permissions to execute arbitrary commands by injecting TAB charac",
-        "published": "2026-09-17T16:18:28.540"
+        "description": "MCP Documentation Server is a local-first document management and semantic search server for AI coding agents. From 1.13.0 until 1.13.1, the automatically started Web UI in src/server.ts calls startWe",
+        "published": "2026-09-17T19:16:50.517"
       },
       {
-        "cve_id": "CVE-2026-28326",
+        "cve_id": "CVE-2026-15815",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "SolarWinds Access Rights Manager was reported to be affected by an unauthenticated remote code execution vulnerability. The issue stems from a hardcoded static key.",
-        "published": "2026-09-17T17:16:39.960"
+        "description": "Grafana OSS and Grafana Enterprise did not safely resolve symbolic links when\nextracting plugin archives. A crafted plugin archive can chain relative symbolic link\nentries to escape the plugin install",
+        "published": "2026-09-17T21:17:11.210"
       },
       {
-        "cve_id": "CVE-2026-56795",
+        "cve_id": "CVE-2026-54916",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Dell Server Update Utility, versions prior to 26.07.01, contains an Uncontrolled Search Path Element vulnerability. A low privileged attacker with local access could potentially exploit this vulnerabi",
-        "published": "2026-09-17T16:17:31.893"
+        "base_score": 8.8,
+        "description": "NetBox Device Type Library is a collection of community-sourced device type definitions for import into NetBox. The absence of tests/init.py and the lack of --import-mode=importlib cause pytest prepen",
+        "published": "2026-09-17T21:17:17.790"
       },
       {
-        "cve_id": "CVE-2026-86039",
+        "cve_id": "CVE-2026-93377",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "libp2p is a JavaScript implementation of the libp2p networking stack. From 8.0.0 until 12.0.24, @libp2p/peer-store in packages/peer-store/src/index.ts uses consumePeerRecord to verify a RecordEnvelope",
-        "published": "2026-09-17T16:18:17.090"
+        "base_score": 8.8,
+        "description": "Type confusion in V8 in Google Chrome prior to 153.0.8010.52 allowed a remote attacker leveraging social engineering to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium sec",
+        "published": "2026-09-17T21:17:55.000"
       },
       {
-        "cve_id": "CVE-2026-76834",
+        "cve_id": "CVE-2026-93381",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "b2evolution CMS versions 6.7.8 through 7.2.5 contain an incomplete fix for CVE-2016-8901 where the serialized-array object check in param_check_serialized_array() fails to reject payloads with negativ",
-        "published": "2026-09-17T16:17:42.270"
+        "base_score": 8.8,
+        "description": "Buffer overflow in PDFium in Google Chrome on on Windows prior to 153.0.8010.52 allowed a remote attacker leveraging social engineering to potentially execute arbitrary code inside the sandbox via a c",
+        "published": "2026-09-17T21:17:55.430"
       },
       {
-        "cve_id": "CVE-2026-81515",
+        "cve_id": "CVE-2026-93382",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Steeltoe is an open source project that provides a collection of libraries that helps users build cloud-native applications. From 4.0.0 until 4.3.0, EurekaDiscoveryClient deserializes the registry res",
-        "published": "2026-09-17T16:17:46.780"
+        "base_score": 8.8,
+        "description": "Use after free in PDFium in Google Chrome prior to 153.0.8010.52 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-09-17T21:17:55.530"
       },
       {
-        "cve_id": "CVE-2026-81516",
+        "cve_id": "CVE-2026-77615",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Steeltoe is an open source project that provides a collection of libraries that helps users build cloud-native applications. From 4.0.0 until 4.3.0, ConsulDiscoveryClient constructs ConsulServiceInsta",
-        "published": "2026-09-17T16:17:46.930"
-      },
-      {
-        "cve_id": "CVE-2026-85715",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "ExifReader is a JavaScript Exif information parser. Prior to 4.41.1, ExifReader parses attacker-controlled HEIC or AVIF ISO-BMFF files in getItems() within src/image-header-iso-bmff-iloc.js and trusts",
-        "published": "2026-09-17T16:18:15.790"
-      },
-      {
-        "cve_id": "CVE-2026-85719",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The AsyncHttpClient (AHC) library allows Java applications to easily execute HTTP requests and asynchronously process HTTP responses. From 2.1.0 until 2.16.1 and 3.0.12, requests using an authenticate",
-        "published": "2026-09-17T16:18:16.273"
-      },
-      {
-        "cve_id": "CVE-2026-85721",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The AsyncHttpClient (AHC) library allows Java applications to easily execute HTTP requests and asynchronously process HTTP responses. From 2.0.0 until 2.16.1 and 3.0.12, automatic response decompressi",
-        "published": "2026-09-17T16:18:16.430"
-      },
-      {
-        "cve_id": "CVE-2026-86038",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "libp2p is a JavaScript implementation of the libp2p networking stack. From 15.0.0 until 16.0.5, @libp2p/gossipsub uses the default StrictSign policy in packages/gossipsub/src/utils/buildRawMessage.ts,",
-        "published": "2026-09-17T16:18:16.927"
-      },
-      {
-        "cve_id": "CVE-2026-86040",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "libp2p is a JavaScript implementation of the libp2p networking stack. Prior to 11.0.26, @libp2p/floodsub accepts unauthenticated RPC frames on /floodsub/1.0.0 through PeerStreams.attachInboundStream i",
-        "published": "2026-09-17T16:18:17.250"
-      },
-      {
-        "cve_id": "CVE-2026-93014",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "RosarioSIS versions before 12.9 fail to validate the filename request parameter in Users and Students modules, allowing authenticated users to unlink allow-listed files via path traversal. Attackers c",
-        "published": "2026-09-17T16:18:35.670"
-      },
-      {
-        "cve_id": "CVE-2026-85717",
-        "severity": "MEDIUM",
-        "base_score": 6.8,
-        "description": "The AsyncHttpClient (AHC) library allows Java applications to easily execute HTTP requests and asynchronously process HTTP responses. From 2.14.5 to 2.16.0 and from 3.0.9 to 3.0.11, a client configure",
-        "published": "2026-09-17T16:18:15.960"
-      },
-      {
-        "cve_id": "CVE-2026-81868",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Steeltoe is an open source project that provides a collection of libraries that helps users build cloud-native applications. Prior to 4.3.0, Steeltoe.Security.Authorization.Certificate deployments usi",
-        "published": "2026-09-17T16:17:47.607"
-      },
-      {
-        "cve_id": "CVE-2026-86862",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "pgAdmin 4's Restore and Maintenance tools passed the client-supplied 'database' field directly as the value of the --dbname option given to pg_restore and psql. libpq expands a database name containin",
-        "published": "2026-09-17T16:18:17.717"
-      },
-      {
-        "cve_id": "CVE-2026-93015",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "BlueKitchen BTstack through 1.8.2 fails to validate the peer-reported endpoint count against table bounds in A2DP stream endpoint discovery. A bonded peer can send an AVDTP DISCOVER response with more",
-        "published": "2026-09-17T16:18:35.847"
-      },
-      {
-        "cve_id": "CVE-2026-75523",
-        "severity": "MEDIUM",
-        "base_score": 5.9,
-        "description": "Steeltoe is an open source project that provides a collection of libraries that helps users build cloud-native applications. Prior to 4.3.0, the Steeltoe.Management.Endpoint /actuator/httpexchanges en",
-        "published": "2026-09-17T16:17:41.773"
+        "base_score": 8.7,
+        "description": "Paella Player is a set of libraries to create a multi stream video player. Prior to Paella Player 2.12.11 (as used in Opencast prior to 19.7 and 20.2), there is a potential XSS attack though closed ca",
+        "published": "2026-09-17T21:17:38.557"
       }
     ]
   },
