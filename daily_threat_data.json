@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-18T08:36:01.295209+00:00",
+  "generated_at": "2026-09-18T15:27:39.971003+00:00",
   "threat_score": {
-    "score": 6.5,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 42,
+        "value": 44,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
-        "score": 2.5,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -32,9 +32,29 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1713,
-    "recent_30d_count": 42,
+    "total_catalog_count": 1715,
+    "recent_30d_count": 44,
     "recent": [
+      {
+        "cve_id": "CVE-2025-39964",
+        "vendor": "Linux",
+        "product": "Kernel",
+        "name": "Linux Kernel Race Condition Vulnerability",
+        "date_added": "2026-09-18",
+        "due_date": "2026-09-21",
+        "description": "Linux Kernel contains a race condition vulnerability which allows concurrent writes to the same AF_ALG socket causing data to be unpredictably interleaved and creating inconsistencies in the socket's ",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-53266",
+        "vendor": "Linux",
+        "product": "Kernel",
+        "name": "Linux Kernel Out-of-Bounds Write Vulnerability",
+        "date_added": "2026-09-18",
+        "due_date": "2026-09-21",
+        "description": "Linux Kernel contains an out-of-bounds write vulnerability in the ebtables SNAT target which allows an ARP sender hardware address rewrite to write directly into a nonlinear socket-buffer fragment bac",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-58704",
         "vendor": "Google",
@@ -214,173 +234,153 @@
         "due_date": "2026-09-22",
         "description": "Microsoft Windows Advanced Local Procedure Call contains a heap-based buffer overflow vulnerability that allows an attacker to elevate privileges locally.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-85046",
-        "vendor": "Google",
-        "product": "Chromium V8",
-        "name": "Google Chromium V8 Type Confusion Vulnerability",
-        "date_added": "2026-09-04",
-        "due_date": "2026-09-18",
-        "description": "Google Chromium V8 contains a type confusion vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect multiple ",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-59822",
-        "vendor": "BerriAI",
-        "product": "LiteLLM",
-        "name": "BerriAI LiteLLM Improper Authentication Vulnerability",
-        "date_added": "2026-09-02",
-        "due_date": "2026-09-16",
-        "description": "BerriAI LiteLLM contains an improper authentication vulnerability in the MCP Streamable HTTP endpoint that could allow an unauthenticated attacker to establish an authenticated MCP session using an ar",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 1092,
-    "critical_count": 6,
-    "high_count": 33,
+    "total": 1043,
+    "critical_count": 1,
+    "high_count": 14,
     "cves": [
       {
-        "cve_id": "CVE-2026-62104",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Unauthenticated Remote Code Execution (RCE) in Migratico Lite <= 2.6.8 versions.",
-        "published": "2026-09-17T14:17:15.130"
-      },
-      {
-        "cve_id": "CVE-2026-90822",
+        "cve_id": "CVE-2026-86863",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "FatPipe MPVPN, WARP, and IPVPN appliances running the end-of-life firmware version 10.1.2r60p100 contain an OS command injection vulnerability in the xtremed daemon. An unauthenticated remote attacker",
-        "published": "2026-09-17T12:18:28.713"
+        "description": "pgAdmin 4's Webserver authentication source is intended to accept an identity asserted by the web server or reverse proxy in front of pgAdmin, delivered through the WSGI/CGI environment. WebserverAuth",
+        "published": "2026-09-17T16:18:17.863"
       },
       {
-        "cve_id": "CVE-2026-90823",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "FatPipe MPVPN, WARP, and IPVPN appliances running the end-of-life firmware version 10.1.2r60p100 contain a stack-based buffer overflow in /usr/sbin/auth_user_pass. An unauthenticated remote attacker w",
-        "published": "2026-09-17T12:18:28.843"
-      },
-      {
-        "cve_id": "CVE-2026-62101",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Unauthenticated Broken Authentication in EduAdmin Booking <= 5.4.2 versions.",
-        "published": "2026-09-17T14:17:14.977"
-      },
-      {
-        "cve_id": "CVE-2026-62108",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Unauthenticated Broken Authentication in Headless Single Sign On <= 1.7.0 versions.",
-        "published": "2026-09-17T14:17:15.263"
-      },
-      {
-        "cve_id": "CVE-2026-92860",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A security flaw has been discovered in rcourtman Pulse up to 6.0.4/6.1.0-rc.4. Affected by this issue is the function fmt.Sprintf of the file /api/security/quick-setup of the component Quick Security ",
-        "published": "2026-09-17T12:18:29.927"
-      },
-      {
-        "cve_id": "CVE-2026-92918",
+        "cve_id": "CVE-2026-86864",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "admin3 through 3.0.0 persists user session tokens in the audit log event body when publishing UserLoggedIn domain events. Attackers with log:view permission can read the JSON response from the GET /lo",
-        "published": "2026-09-17T13:17:01.013"
+        "description": "pgAdmin 4's Backup tool appended the client-supplied 'database' field from the /backup/job/<sid>/object request to the pg_dump argument vector as a bare trailing positional argument, without validatio",
+        "published": "2026-09-17T16:18:18.010"
       },
       {
-        "cve_id": "CVE-2026-78295",
+        "cve_id": "CVE-2026-89036",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Unauthenticated Cross Site Request Forgery (CSRF) in Xagio SEO <= 7.1.0.43 versions.",
-        "published": "2026-09-17T14:17:30.303"
+        "description": "Appwrite before 2.0.0 contains an argument injection vulnerability that allows authenticated users with functions.write or sites.write permissions to execute arbitrary commands by injecting TAB charac",
+        "published": "2026-09-17T16:18:28.540"
       },
       {
-        "cve_id": "CVE-2026-66580",
+        "cve_id": "CVE-2026-28326",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Contributor SQL Injection in Product Feed Manager <= 7.12.0 versions.",
-        "published": "2026-09-17T14:17:16.920"
+        "base_score": 8.8,
+        "description": "SolarWinds Access Rights Manager was reported to be affected by an unauthenticated remote code execution vulnerability. The issue stems from a hardcoded static key.",
+        "published": "2026-09-17T17:16:39.960"
       },
       {
-        "cve_id": "CVE-2026-92903",
+        "cve_id": "CVE-2026-56795",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "Improper input validation in Snowflake CLI versions prior to 3.27.0 allowed unsanitized user-controlled values to be interpolated into SQL strings that are executed as multi-statement queries. An atta",
-        "published": "2026-09-17T11:17:03.460"
+        "description": "Dell Server Update Utility, versions prior to 26.07.01, contains an Uncontrolled Search Path Element vulnerability. A low privileged attacker with local access could potentially exploit this vulnerabi",
+        "published": "2026-09-17T16:17:31.893"
       },
       {
-        "cve_id": "CVE-2026-81475",
+        "cve_id": "CVE-2026-86039",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "libp2p is a JavaScript implementation of the libp2p networking stack. From 8.0.0 until 12.0.24, @libp2p/peer-store in packages/peer-store/src/index.ts uses consumePeerRecord to verify a RecordEnvelope",
+        "published": "2026-09-17T16:18:17.090"
+      },
+      {
+        "cve_id": "CVE-2026-76834",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Dell OpenManage Server Administrator, versions prior to 11.1.0.3, contains a Missing Authentication for Critical Function vulnerability. An unauthenticated attacker with remote access could potentiall",
-        "published": "2026-09-17T12:18:27.457"
+        "description": "b2evolution CMS versions 6.7.8 through 7.2.5 contain an incomplete fix for CVE-2016-8901 where the serialized-array object check in param_check_serialized_array() fails to reject payloads with negativ",
+        "published": "2026-09-17T16:17:42.270"
       },
       {
-        "cve_id": "CVE-2026-81476",
+        "cve_id": "CVE-2026-81515",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Dell OpenManage Server Administrator, versions prior to 11.1.0.3, contains an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. An unauthenticat",
-        "published": "2026-09-17T12:18:27.580"
+        "base_score": 7.5,
+        "description": "Steeltoe is an open source project that provides a collection of libraries that helps users build cloud-native applications. From 4.0.0 until 4.3.0, EurekaDiscoveryClient deserializes the registry res",
+        "published": "2026-09-17T16:17:46.780"
       },
       {
-        "cve_id": "CVE-2026-81478",
+        "cve_id": "CVE-2026-81516",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Dell OpenManage Server Administrator, versions prior to 11.1.0.3, contains a Use of Hard-coded Cryptographic Key vulnerability. An unauthenticated attacker with remote access could potentially exploit",
-        "published": "2026-09-17T12:18:27.830"
+        "base_score": 7.5,
+        "description": "Steeltoe is an open source project that provides a collection of libraries that helps users build cloud-native applications. From 4.0.0 until 4.3.0, ConsulDiscoveryClient constructs ConsulServiceInsta",
+        "published": "2026-09-17T16:17:46.930"
       },
       {
-        "cve_id": "CVE-2026-92914",
+        "cve_id": "CVE-2026-85715",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "AVideo LoginControl contains an authentication bypass vulnerability in the PGP second factor verification that compares challenge responses using loose equality against an uninitialized session variab",
-        "published": "2026-09-17T12:18:30.440"
+        "base_score": 7.5,
+        "description": "ExifReader is a JavaScript Exif information parser. Prior to 4.41.1, ExifReader parses attacker-controlled HEIC or AVIF ISO-BMFF files in getItems() within src/image-header-iso-bmff-iloc.js and trusts",
+        "published": "2026-09-17T16:18:15.790"
       },
       {
-        "cve_id": "CVE-2026-92919",
+        "cve_id": "CVE-2026-85719",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "admin3 through 3.0.0 fails to sanitize client-supplied filenames in the upload handler, allowing authenticated users to write files outside the storage root on Windows deployments. Attackers can use d",
-        "published": "2026-09-17T13:17:01.173"
+        "base_score": 7.5,
+        "description": "The AsyncHttpClient (AHC) library allows Java applications to easily execute HTTP requests and asynchronously process HTTP responses. From 2.1.0 until 2.16.1 and 3.0.12, requests using an authenticate",
+        "published": "2026-09-17T16:18:16.273"
       },
       {
-        "cve_id": "CVE-2026-81442",
+        "cve_id": "CVE-2026-85721",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Dell OpenManage Server Administrator, versions prior to 11.1.0.3, contains an Improper Privilege Management vulnerability. A low privileged attacker with remote access could potentially exploit this v",
-        "published": "2026-09-17T14:17:31.120"
+        "base_score": 7.5,
+        "description": "The AsyncHttpClient (AHC) library allows Java applications to easily execute HTTP requests and asynchronously process HTTP responses. From 2.0.0 until 2.16.1 and 3.0.12, automatic response decompressi",
+        "published": "2026-09-17T16:18:16.430"
       },
       {
-        "cve_id": "CVE-2026-78428",
+        "cve_id": "CVE-2026-86038",
         "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "For users authenticated through SAML or OpenID Connect (OIDC), this vulnerability can result in one user receiving another user's authenticated session when multiple SSO login attempts occur concurren",
-        "published": "2026-09-17T10:17:03.760"
+        "base_score": 7.5,
+        "description": "libp2p is a JavaScript implementation of the libp2p networking stack. From 15.0.0 until 16.0.5, @libp2p/gossipsub uses the default StrictSign policy in packages/gossipsub/src/utils/buildRawMessage.ts,",
+        "published": "2026-09-17T16:18:16.927"
       },
       {
-        "cve_id": "CVE-2026-81474",
+        "cve_id": "CVE-2026-86040",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Dell OpenManage Server Administrator, versions prior to 11.1.0.3, contains a Heap-based Buffer Overflow vulnerability. A low privileged attacker with local access could potentially exploit this vulner",
-        "published": "2026-09-17T11:17:03.077"
+        "base_score": 7.5,
+        "description": "libp2p is a JavaScript implementation of the libp2p networking stack. Prior to 11.0.26, @libp2p/floodsub accepts unauthenticated RPC frames on /floodsub/1.0.0 through PeerStreams.attachInboundStream i",
+        "published": "2026-09-17T16:18:17.250"
       },
       {
-        "cve_id": "CVE-2026-66618",
+        "cve_id": "CVE-2026-93014",
         "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "Administrator SQL Injection in WP Maps <= 4.9.9 versions.",
-        "published": "2026-09-17T14:17:17.753"
+        "base_score": 7.1,
+        "description": "RosarioSIS versions before 12.9 fail to validate the filename request parameter in Users and Students modules, allowing authenticated users to unlink allow-listed files via path traversal. Attackers c",
+        "published": "2026-09-17T16:18:35.670"
       },
       {
-        "cve_id": "CVE-2026-66619",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "Administrator SQL Injection in Newsletters <= 4.18 versions.",
-        "published": "2026-09-17T14:17:17.893"
+        "cve_id": "CVE-2026-85717",
+        "severity": "MEDIUM",
+        "base_score": 6.8,
+        "description": "The AsyncHttpClient (AHC) library allows Java applications to easily execute HTTP requests and asynchronously process HTTP responses. From 2.14.5 to 2.16.0 and from 3.0.9 to 3.0.11, a client configure",
+        "published": "2026-09-17T16:18:15.960"
+      },
+      {
+        "cve_id": "CVE-2026-81868",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Steeltoe is an open source project that provides a collection of libraries that helps users build cloud-native applications. Prior to 4.3.0, Steeltoe.Security.Authorization.Certificate deployments usi",
+        "published": "2026-09-17T16:17:47.607"
+      },
+      {
+        "cve_id": "CVE-2026-86862",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "pgAdmin 4's Restore and Maintenance tools passed the client-supplied 'database' field directly as the value of the --dbname option given to pg_restore and psql. libpq expands a database name containin",
+        "published": "2026-09-17T16:18:17.717"
+      },
+      {
+        "cve_id": "CVE-2026-93015",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "BlueKitchen BTstack through 1.8.2 fails to validate the peer-reported endpoint count against table bounds in A2DP stream endpoint discovery. A bonded peer can send an AVDTP DISCOVER response with more",
+        "published": "2026-09-17T16:18:35.847"
+      },
+      {
+        "cve_id": "CVE-2026-75523",
+        "severity": "MEDIUM",
+        "base_score": 5.9,
+        "description": "Steeltoe is an open source project that provides a collection of libraries that helps users build cloud-native applications. Prior to 4.3.0, the Steeltoe.Management.Endpoint /actuator/httpexchanges en",
+        "published": "2026-09-17T16:17:41.773"
       }
     ]
   },
