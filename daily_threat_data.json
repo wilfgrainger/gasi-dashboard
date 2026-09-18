@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T02:14:48.544621+00:00",
+  "generated_at": "2026-09-18T08:36:01.295209+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
+        "value": 6,
         "score": 2.5,
         "max": 3
       },
@@ -238,37 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 1052,
-    "critical_count": 8,
-    "high_count": 45,
+    "total": 1092,
+    "critical_count": 6,
+    "high_count": 33,
     "cves": [
       {
-        "cve_id": "CVE-2026-87796",
+        "cve_id": "CVE-2026-62104",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Multi Uploader for Gravity Forms plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 1.1.9 via the move_file function. This is due to insufficient fil",
-        "published": "2026-09-17T05:17:02.123"
-      },
-      {
-        "cve_id": "CVE-2026-86707",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Private Feed Key WordPress plugin through 0.1 does not verify that the key used to authenticate a feed request is one it issued, matching any stored user metadata value instead, which allows unaut",
-        "published": "2026-09-17T06:16:51.213"
-      },
-      {
-        "cve_id": "CVE-2026-86709",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Pressengine WordPress plugin through 1.0 does not stop its login handler from issuing a session when authentication fails, allowing unauthenticated attackers to log in as any user, including admin",
-        "published": "2026-09-17T06:16:51.327"
-      },
-      {
-        "cve_id": "CVE-2026-86710",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Login with QR WordPress plugin through 1.0.0 does not verify that the code used to log a user in is one it issued, matching any stored user metadata value instead, which allows unauthenticated att",
-        "published": "2026-09-17T06:16:51.437"
+        "base_score": 10.0,
+        "description": "Unauthenticated Remote Code Execution (RCE) in Migratico Lite <= 2.6.8 versions.",
+        "published": "2026-09-17T14:17:15.130"
       },
       {
         "cve_id": "CVE-2026-90822",
@@ -285,60 +264,25 @@
         "published": "2026-09-17T12:18:28.843"
       },
       {
+        "cve_id": "CVE-2026-62101",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Unauthenticated Broken Authentication in EduAdmin Booking <= 5.4.2 versions.",
+        "published": "2026-09-17T14:17:14.977"
+      },
+      {
+        "cve_id": "CVE-2026-62108",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Unauthenticated Broken Authentication in Headless Single Sign On <= 1.7.0 versions.",
+        "published": "2026-09-17T14:17:15.263"
+      },
+      {
         "cve_id": "CVE-2026-92860",
         "severity": "CRITICAL",
         "base_score": 9.1,
         "description": "A security flaw has been discovered in rcourtman Pulse up to 6.0.4/6.1.0-rc.4. Affected by this issue is the function fmt.Sprintf of the file /api/security/quick-setup of the component Quick Security ",
         "published": "2026-09-17T12:18:29.927"
-      },
-      {
-        "cve_id": "CVE-2026-88795",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "The wpShopGermany IT-RECHT KANZLEI WordPress plugin before 2.4 does not generate its API authentication token securely, deriving it from data the requester controls and creating it as a side effect of",
-        "published": "2026-09-17T06:16:52.097"
-      },
-      {
-        "cve_id": "CVE-2026-25283",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Memory Corruption when copying unverified data from an external source exceeds the allocated buffer size.",
-        "published": "2026-09-17T05:17:01.390"
-      },
-      {
-        "cve_id": "CVE-2026-85130",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The WPLP Cookie Consent  WordPress plugin before 4.4.4 does not escape a value submitted through a public endpoint for the JavaScript context it is later output in on an administrative screen, allowin",
-        "published": "2026-09-17T06:16:50.990"
-      },
-      {
-        "cve_id": "CVE-2026-87786",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Dewa Kirim  WordPress plugin through 1.0.0 does not escape delivery coordinates submitted at checkout before outputting them inside an inline script, allowing unauthenticated users to store JavaSc",
-        "published": "2026-09-17T06:16:51.773"
-      },
-      {
-        "cve_id": "CVE-2026-88792",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Dictionary WordPress plugin through 1.0 does not have authorisation, sanitisation or escaping in place when adding or updating dictionary entries, allowing unauthenticated users to store arbitrary",
-        "published": "2026-09-17T06:16:51.990"
-      },
-      {
-        "cve_id": "CVE-2026-88904",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The PuppyFW WordPress plugin through 0.4.4 does not have proper authorisation on one of its REST routes, which tests the caller against a capability taken from the request itself, allowing any authent",
-        "published": "2026-09-17T06:16:52.203"
-      },
-      {
-        "cve_id": "CVE-2026-86801",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The To Do List Member WordPress plugin from 1.4 through 1.6 ships a file upload endpoint that does not load WordPress and therefore applies no authentication, capability or nonce check of any kind, an",
-        "published": "2026-09-17T07:16:28.413"
       },
       {
         "cve_id": "CVE-2026-92918",
@@ -348,11 +292,18 @@
         "published": "2026-09-17T13:17:01.013"
       },
       {
-        "cve_id": "CVE-2026-87963",
+        "cve_id": "CVE-2026-78295",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "The Yo WordPress plugin from 1.1 through 1.3.1 does not sanitize or parameterize the username request parameter before using it in a SQL query, and reads it before WordPress applies its request escapi",
-        "published": "2026-09-17T07:16:28.533"
+        "base_score": 8.8,
+        "description": "Unauthenticated Cross Site Request Forgery (CSRF) in Xagio SEO <= 7.1.0.43 versions.",
+        "published": "2026-09-17T14:17:30.303"
+      },
+      {
+        "cve_id": "CVE-2026-66580",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "Contributor SQL Injection in Product Feed Manager <= 7.12.0 versions.",
+        "published": "2026-09-17T14:17:16.920"
       },
       {
         "cve_id": "CVE-2026-92903",
@@ -360,13 +311,6 @@
         "base_score": 8.2,
         "description": "Improper input validation in Snowflake CLI versions prior to 3.27.0 allowed unsanitized user-controlled values to be interpolated into SQL strings that are executed as multi-statement queries. An atta",
         "published": "2026-09-17T11:17:03.460"
-      },
-      {
-        "cve_id": "CVE-2026-87935",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Paid Downloads plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 3.15 via the admin_request_handler function. This is due to missing authorization a",
-        "published": "2026-09-17T05:17:02.263"
       },
       {
         "cve_id": "CVE-2026-81475",
@@ -381,6 +325,62 @@
         "base_score": 8.1,
         "description": "Dell OpenManage Server Administrator, versions prior to 11.1.0.3, contains an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. An unauthenticat",
         "published": "2026-09-17T12:18:27.580"
+      },
+      {
+        "cve_id": "CVE-2026-81478",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Dell OpenManage Server Administrator, versions prior to 11.1.0.3, contains a Use of Hard-coded Cryptographic Key vulnerability. An unauthenticated attacker with remote access could potentially exploit",
+        "published": "2026-09-17T12:18:27.830"
+      },
+      {
+        "cve_id": "CVE-2026-92914",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "AVideo LoginControl contains an authentication bypass vulnerability in the PGP second factor verification that compares challenge responses using loose equality against an uninitialized session variab",
+        "published": "2026-09-17T12:18:30.440"
+      },
+      {
+        "cve_id": "CVE-2026-92919",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "admin3 through 3.0.0 fails to sanitize client-supplied filenames in the upload handler, allowing authenticated users to write files outside the storage root on Windows deployments. Attackers can use d",
+        "published": "2026-09-17T13:17:01.173"
+      },
+      {
+        "cve_id": "CVE-2026-81442",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Dell OpenManage Server Administrator, versions prior to 11.1.0.3, contains an Improper Privilege Management vulnerability. A low privileged attacker with remote access could potentially exploit this v",
+        "published": "2026-09-17T14:17:31.120"
+      },
+      {
+        "cve_id": "CVE-2026-78428",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "For users authenticated through SAML or OpenID Connect (OIDC), this vulnerability can result in one user receiving another user's authenticated session when multiple SSO login attempts occur concurren",
+        "published": "2026-09-17T10:17:03.760"
+      },
+      {
+        "cve_id": "CVE-2026-81474",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Dell OpenManage Server Administrator, versions prior to 11.1.0.3, contains a Heap-based Buffer Overflow vulnerability. A low privileged attacker with local access could potentially exploit this vulner",
+        "published": "2026-09-17T11:17:03.077"
+      },
+      {
+        "cve_id": "CVE-2026-66618",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "Administrator SQL Injection in WP Maps <= 4.9.9 versions.",
+        "published": "2026-09-17T14:17:17.753"
+      },
+      {
+        "cve_id": "CVE-2026-66619",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "Administrator SQL Injection in Newsletters <= 4.18 versions.",
+        "published": "2026-09-17T14:17:17.893"
       }
     ]
   },
