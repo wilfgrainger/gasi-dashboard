@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-17T22:32:04.663073+00:00",
+  "generated_at": "2026-09-18T02:14:48.544621+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,7 +7,7 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 43,
+        "value": 42,
         "score": 3.0,
         "max": 3
       },
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1713,
-    "recent_30d_count": 43,
+    "recent_30d_count": 42,
     "recent": [
       {
         "cve_id": "CVE-2026-58704",
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 1023,
+    "total": 1052,
     "critical_count": 8,
-    "high_count": 43,
+    "high_count": 45,
     "cves": [
       {
         "cve_id": "CVE-2026-87796",
@@ -341,6 +341,13 @@
         "published": "2026-09-17T07:16:28.413"
       },
       {
+        "cve_id": "CVE-2026-92918",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "admin3 through 3.0.0 persists user session tokens in the audit log event body when publishing UserLoggedIn domain events. Attackers with log:view permission can read the JSON response from the GET /lo",
+        "published": "2026-09-17T13:17:01.013"
+      },
+      {
         "cve_id": "CVE-2026-87963",
         "severity": "HIGH",
         "base_score": 8.6,
@@ -374,13 +381,6 @@
         "base_score": 8.1,
         "description": "Dell OpenManage Server Administrator, versions prior to 11.1.0.3, contains an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. An unauthenticat",
         "published": "2026-09-17T12:18:27.580"
-      },
-      {
-        "cve_id": "CVE-2026-81478",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Dell OpenManage Server Administrator, versions prior to 11.1.0.3, contains a Use of Hard-coded Cryptographic Key vulnerability. An unauthenticated attacker with remote access could potentially exploit",
-        "published": "2026-09-17T12:18:27.830"
       }
     ]
   },
