@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T08:23:04.497692+00:00",
+  "generated_at": "2026-09-19T15:02:37.510870+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
+        "value": 7,
         "score": 2.5,
         "max": 3
       },
@@ -238,79 +238,58 @@
     ]
   },
   "nvd": {
-    "total": 478,
-    "critical_count": 6,
-    "high_count": 33,
+    "total": 419,
+    "critical_count": 7,
+    "high_count": 38,
     "cves": [
       {
-        "cve_id": "CVE-2026-93603",
+        "cve_id": "CVE-2025-15399",
         "severity": "CRITICAL",
         "base_score": 10.0,
-        "description": "vm2 through 3.12.0 (fixed in 3.12.1) does not correctly handle a nullish `this` receiver in the apply trap of its bridge (lib/bridge.js): when sandboxed code calls a host-provided non-strict (sloppy-m",
-        "published": "2026-09-18T14:19:12.003"
+        "description": "IBM Common Licensing Agent 9.0, Agent 9.0.0.1, Agent 9.0.0.2, ART 9.0, ART 9.0.0.1, and ART 9.0.0.2 is vulnerable to cross-site request forgery which could allow an attacker to execute malicious and u",
+        "published": "2026-09-18T16:17:02.387"
       },
       {
-        "cve_id": "CVE-2026-93605",
+        "cve_id": "CVE-2026-10747",
         "severity": "CRITICAL",
         "base_score": 10.0,
-        "description": "vm2 NodeVM versions before 3.12.1 contain a sandbox escape vulnerability where the DANGEROUS_BUILTINS denylist omits child_process despite blocking other host-spawning modules. Attackers can require c",
-        "published": "2026-09-18T14:19:12.340"
+        "description": "IBM MQ Appliance could allow a remote attacker to cause a denial of service or potentially execute arbitrary code due to a heap buffer overflow in protocol message processing before authentication.",
+        "published": "2026-09-18T16:17:04.413"
       },
       {
-        "cve_id": "CVE-2026-93606",
+        "cve_id": "CVE-2025-53837",
         "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "vm2 (npm) versions 3.12.0 and earlier contain a sandbox escape in `VM` and `NodeVM`. When an embedder exposes a host API that returns a host-realm Promise, the bridge's rejection sanitizer (hostPromis",
-        "published": "2026-09-18T14:19:12.500"
+        "base_score": 9.9,
+        "description": "XWiki Rendering is a generic rendering system that converts textual input in a given syntax (wiki syntax, HTML, etc) into another syntax (XHTML, etc). Prior to versions 14.10.2 and 15.0 RC1, any user ",
+        "published": "2026-09-18T16:17:03.527"
       },
       {
-        "cve_id": "CVE-2026-13639",
+        "cve_id": "CVE-2026-10858",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "IBM MQ for HPE NonStop 8.1.0 through 8.1.0.40 could allow an authenticated attacker to cause a denial of service or potentially execute arbitrary code due to a heap buffer underflow when processing mu",
+        "published": "2026-09-18T16:17:05.310"
+      },
+      {
+        "cve_id": "CVE-2026-61682",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "kcp is a Kubernetes-like control plane for form-factors and use-cases beyond Kubernetes and container workloads. Prior to 0.31.4 and 0.32.2, the kcp front-proxy does not remove inbound X-Remote-User, ",
+        "published": "2026-09-18T16:17:07.523"
+      },
+      {
+        "cve_id": "CVE-2026-75031",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "An insufficient entropy vulnerability in login logic in Synology DiskStation Manager (DSM) before 7.2.1-69057-12, 7.2.2-72806-9, 7.3.2-86009-4 and 7.4-90075 allows remote attackers to read or write ar",
-        "published": "2026-09-18T09:16:38.757"
+        "description": "In the interchange/interchange project, a critical remote code execution (RCE) vulnerability was found in the \n\u201cquick question\u201d admin feature. In default installations arbitrary Perl \ncode can be inje",
+        "published": "2026-09-18T16:17:09.043"
       },
       {
-        "cve_id": "CVE-2026-13684",
+        "cve_id": "CVE-2026-84383",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "An improper encoding or escaping of output vulnerability in SCGI in Synology DiskStation Manager (DSM) before 7.2.1-69057-12, 7.2.2-72806-9, 7.3.2-86009-4 and 7.4-90075 allows remote attackers to read",
-        "published": "2026-09-18T09:16:39.237"
-      },
-      {
-        "cve_id": "CVE-2026-93019",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Imager versions before 1.036 for Perl exit the process reading a TGA with a colour map length of 32768 or more in tga_palette_read.\n\nThe reader unpacks the two-byte colour map length into a signed sho",
-        "published": "2026-09-18T14:19:04.480"
-      },
-      {
-        "cve_id": "CVE-2026-13673",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "An incorrect permission assignment for critical resource vulnerability in LDAP API in Synology DiskStation Manager (DSM) before 7.2.1-69057-12, 7.2.2-72806-9, 7.3.2-86009-4 and 7.4-90075 allows remote",
-        "published": "2026-09-18T09:16:38.997"
-      },
-      {
-        "cve_id": "CVE-2026-28197",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "An authenticated, low-privileged user with access to the NetBackup Flex \nOS management shell could supply a specially crafted input to a \nprivileged administrative command, causing it to execute arbit",
-        "published": "2026-09-18T12:17:24.573"
-      },
-      {
-        "cve_id": "CVE-2026-28198",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "An authenticated, low-privileged user with access to the NetBackup Flex \nOS management shell could bypass the cryptographic signature \nverification step of a privileged support command by supplying a ",
-        "published": "2026-09-18T12:17:24.717"
-      },
-      {
-        "cve_id": "CVE-2026-88622",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "NUUO Network Video Recorder 2.0.0 is vulnerable to Command Injection in handle_import_privilege.php.",
-        "published": "2026-09-18T14:19:02.480"
+        "description": "libheif is a HEIF and AVIF file format decoder and encoder. From 1.22.0 until 1.23.2, a crafted HEIF, HEIC, or AVIF item graph using nested iden and auxl references can make HeifPixelImage::transfer_c",
+        "published": "2026-09-18T16:17:11.707"
       },
       {
         "cve_id": "CVE-2026-77929",
@@ -320,6 +299,69 @@
         "published": "2026-09-18T15:17:13.287"
       },
       {
+        "cve_id": "CVE-2025-14754",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "IBM Cloud Pak for Data 5.1.2 could allow an authenticated user to execute arbitrary commands with elevated privileges on the system due to improper validation of user supplied input.",
+        "published": "2026-09-18T16:17:02.253"
+      },
+      {
+        "cve_id": "CVE-2026-10575",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "IBM MQ could allow an authenticated attacker to cause a denial of service or potentially escalate privileges due to a heap buffer overflow when processing MQPUT operations with malformed distribution ",
+        "published": "2026-09-18T16:17:04.150"
+      },
+      {
+        "cve_id": "CVE-2026-11375",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "IBM MQ could allow an authenticated attacker to cause a denial of service or potentially execute arbitrary code due to a stack buffer overflow when processing XA transaction identifiers.",
+        "published": "2026-09-18T16:17:05.470"
+      },
+      {
+        "cve_id": "CVE-2026-11378",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "IBM MQ could allow an authenticated attacker to cause a denial of service or potentially execute arbitrary code due to an integer overflow in distribution list processing.",
+        "published": "2026-09-18T16:17:05.620"
+      },
+      {
+        "cve_id": "CVE-2026-11381",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "IBM MQ could allow an authenticated attacker to cause a denial of service or potentially execute arbitrary code due to improper validation of message distribution list structures.",
+        "published": "2026-09-18T16:17:05.767"
+      },
+      {
+        "cve_id": "CVE-2026-81942",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "PLANET IGS-5225-8P2T4S industrial managed switch V1 and V2 firmware versions before 1.2412b260707 and 2.2412b260519 contain an OS command injection vulnerability in the web server. User-supplied input",
+        "published": "2026-09-18T16:17:10.383"
+      },
+      {
+        "cve_id": "CVE-2026-93659",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "Concrete CMS Community Store before 2.7.8 renders customer-supplied order fields without HTML escaping in checkout and admin views. Unauthenticated attackers can store script payloads in billing name,",
+        "published": "2026-09-18T15:17:22.510"
+      },
+      {
+        "cve_id": "CVE-2025-61682",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Semantic MediaWiki is a free, open-source extension to MediaWiki that lets users store and query data within the wiki's pages. Versions starting in 3.1.0 and prior to 7.0.0 insert the unsanitized valu",
+        "published": "2026-09-18T16:17:03.717"
+      },
+      {
+        "cve_id": "CVE-2026-63638",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "OpenImageIO is a toolset for reading, writing, and manipulating image files of any image file format relevant to VFX / animation. Prior to 3.0.21.0, 3.1.16.0, and 3.2.0.3-beta1, A crafted cineon image",
+        "published": "2026-09-18T16:17:08.283"
+      },
+      {
         "cve_id": "CVE-2026-93569",
         "severity": "HIGH",
         "base_score": 8.2,
@@ -327,60 +369,18 @@
         "published": "2026-09-18T15:17:20.743"
       },
       {
-        "cve_id": "CVE-2026-6205",
+        "cve_id": "CVE-2026-10027",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "An external control of file name or path vulnerability in Upload API in Synology DiskStation Manager (DSM) before 7.2.1-69057-12, 7.2.2-72806-9, 7.3.2-86009-4 and 7.4-90075 allows remote authenticated",
-        "published": "2026-09-18T09:16:42.133"
+        "description": "IBM MQ could allow a remote attacker to cause a denial of service or execute arbitrary code due to a buffer overflow when processing malformed compressed data on channels configured with compression e",
+        "published": "2026-09-18T16:17:03.873"
       },
       {
-        "cve_id": "CVE-2026-85410",
+        "cve_id": "CVE-2026-54148",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "The Master Addons for Elementor \u2013 Elementor Addons, Widgets, Mega Menu Builder, Popup Builder, Widget Builder & Template Kits plugin for WordPress is vulnerable to authorization bypass in all versions",
-        "published": "2026-09-18T09:16:42.500"
-      },
-      {
-        "cve_id": "CVE-2026-93593",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "ArcadeDB before 26.9.1 fails to enforce security-group types ACL entries for TimeSeries types because the ACL resolver builds permissions from bucket IDs, but TimeSeries types do not own normal record",
-        "published": "2026-09-18T14:19:10.413"
-      },
-      {
-        "cve_id": "CVE-2026-93594",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "ArcadeDB (Maven artifact com.arcadedb:arcadedb-engine) through 26.8.1 enforces its per-type/per-record access-control rules only in LocalBucket, keyed on file id. Query-execution paths that reach reco",
-        "published": "2026-09-18T14:19:10.587"
-      },
-      {
-        "cve_id": "CVE-2026-40530",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "An improper neutralization of CRLF sequences ('CRLF injection') vulnerability in User API in Synology DiskStation Manager (DSM) before 7.2.1-69057-10, 7.2.2-72806-7 and 7.3.2-86009-2 allows remote aut",
-        "published": "2026-09-18T09:16:40.237"
-      },
-      {
-        "cve_id": "CVE-2026-93597",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "ArcadeDB versions before 26.9.1 fail to validate IPv6 transition addresses in the SSRF guard used by IMPORT DATABASE and server commands. Authenticated attackers can supply URLs resolving to NAT64, 6t",
-        "published": "2026-09-18T14:19:11.083"
-      },
-      {
-        "cve_id": "CVE-2026-93591",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "SiYuan versions before 3.8.3 contain an SQL injection vulnerability in the graph.go query2Stmt function where tag values are concatenated raw into SQL string literals without escaping single quotes. A",
-        "published": "2026-09-18T14:19:10.097"
-      },
-      {
-        "cve_id": "CVE-2026-87743",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A flaw was found in Quarkus HTTP security. An unauthenticated attacker can exploit a discrepancy in how paths are normalized between the security matcher and HTTP request dispatchers. This allows the ",
-        "published": "2026-09-18T10:17:07.520"
+        "description": "http4k is a functional toolkit for Kotlin HTTP applications. Prior to 4.51.0.0, 5.42.0.0, and 6.50.0.0, DigestAuthProvider.verify in http4k-security-digest does not compare the uri parameter in an Aut",
+        "published": "2026-09-18T16:17:06.823"
       }
     ]
   },
