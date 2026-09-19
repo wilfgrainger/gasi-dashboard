@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T02:17:16.545408+00:00",
+  "generated_at": "2026-09-19T08:23:04.497692+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -238,23 +238,30 @@
     ]
   },
   "nvd": {
-    "total": 500,
+    "total": 478,
     "critical_count": 6,
-    "high_count": 31,
+    "high_count": 33,
     "cves": [
       {
-        "cve_id": "CVE-2026-93467",
+        "cve_id": "CVE-2026-93603",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The OAKlouds developed by HGiga has a Insecure Deserialization vulnerability. Unauthenticated remote attackers can execute arbitrary code on the server by sending maliciously crafted serialized conten",
-        "published": "2026-09-18T03:16:33.753"
+        "base_score": 10.0,
+        "description": "vm2 through 3.12.0 (fixed in 3.12.1) does not correctly handle a nullish `this` receiver in the apply trap of its bridge (lib/bridge.js): when sandboxed code calls a host-provided non-strict (sloppy-m",
+        "published": "2026-09-18T14:19:12.003"
       },
       {
-        "cve_id": "CVE-2026-67100",
+        "cve_id": "CVE-2026-93605",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "HCL BigFix Service Management is affected by SQL Injection flaw and a Cross-Tenant Data Exposure flaw vulnerabilities. which could allow an authenticated attacker to inject database commands to extrac",
-        "published": "2026-09-18T08:17:00.603"
+        "base_score": 10.0,
+        "description": "vm2 NodeVM versions before 3.12.1 contain a sandbox escape vulnerability where the DANGEROUS_BUILTINS denylist omits child_process despite blocking other host-spawning modules. Attackers can require c",
+        "published": "2026-09-18T14:19:12.340"
+      },
+      {
+        "cve_id": "CVE-2026-93606",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "vm2 (npm) versions 3.12.0 and earlier contain a sandbox escape in `VM` and `NodeVM`. When an embedder exposes a host API that returns a host-realm Promise, the bridge's rejection sanitizer (hostPromis",
+        "published": "2026-09-18T14:19:12.500"
       },
       {
         "cve_id": "CVE-2026-13639",
@@ -271,60 +278,11 @@
         "published": "2026-09-18T09:16:39.237"
       },
       {
-        "cve_id": "CVE-2026-67101",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "HCL BigFix Service Management is affected by a Server-Side Request Forgery (SSRF) vulnerability in its search functionality, which could allow an attacker to force the application server to send reque",
-        "published": "2026-09-18T08:17:00.740"
-      },
-      {
-        "cve_id": "CVE-2026-84738",
+        "cve_id": "CVE-2026-93019",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "The AF Companion  WordPress plugin before 2.2.0 does not validate the type of files uploaded through one of its import features, allowing users with a low-privileged store-management role to upload ar",
-        "published": "2026-09-18T06:16:39.307"
-      },
-      {
-        "cve_id": "CVE-2026-17086",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The ShortPixel Image Optimizer \u2013 Optimize Images, Convert WebP & AVIF plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 6.5.5 via deserialization of untr",
-        "published": "2026-09-18T04:17:28.900"
-      },
-      {
-        "cve_id": "CVE-2026-85122",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Easy Form Builder by WhiteStudio  WordPress plugin before 4.2.0 does not validate a submitted value against the stored configuration for some of its form types, allowing unauthenticated users to s",
-        "published": "2026-09-18T06:16:39.880"
-      },
-      {
-        "cve_id": "CVE-2026-85127",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The VikBooking Hotel Booking Engine & PMS WordPress plugin before 1.8.15 does not restrict the type of files unauthenticated visitors may attach to its live chat, nor sanitize their contents, allowing",
-        "published": "2026-09-18T06:16:40.093"
-      },
-      {
-        "cve_id": "CVE-2026-88825",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The iGMS Direct Booking WordPress plugin before 2.0 does not authorise or escape its widget appearance settings, allowing unauthenticated users to store arbitrary web scripts that execute in the conte",
-        "published": "2026-09-18T06:16:41.157"
-      },
-      {
-        "cve_id": "CVE-2026-12384",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Authorization bypass through User-Controlled key vulnerability in TECHIN2B TECHIN2B Application allows Privilege Abuse.\n\nThis issue affects TECHIN2B Application: from V1.0.7676.13 through 18092026.\nNO",
-        "published": "2026-09-18T08:16:58.813"
-      },
-      {
-        "cve_id": "CVE-2026-12954",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Mapster WP Maps plugin for WordPress is vulnerable to Arbitrary User Meta Write in all versions up to, and including, 1.23.0 via the `my_profile_update()` function. This is due to the function per",
-        "published": "2026-09-18T08:16:59.100"
+        "description": "Imager versions before 1.036 for Perl exit the process reading a TGA with a colour map length of 32768 or more in tga_palette_read.\n\nThe reader unpacks the two-byte colour map length into a signed sho",
+        "published": "2026-09-18T14:19:04.480"
       },
       {
         "cve_id": "CVE-2026-13673",
@@ -334,53 +292,95 @@
         "published": "2026-09-18T09:16:38.997"
       },
       {
-        "cve_id": "CVE-2026-87767",
+        "cve_id": "CVE-2026-28197",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "The wp shortcut link and advertisement baner WordPress plugin through 1.2.0 does not sanitize and escape a parameter before using it in a SQL query on an AJAX action available to unauthenticated users",
-        "published": "2026-09-18T06:16:40.307"
+        "base_score": 8.8,
+        "description": "An authenticated, low-privileged user with access to the NetBackup Flex \nOS management shell could supply a specially crafted input to a \nprivileged administrative command, causing it to execute arbit",
+        "published": "2026-09-18T12:17:24.573"
       },
       {
-        "cve_id": "CVE-2026-87770",
+        "cve_id": "CVE-2026-28198",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "The Price Drop Alert for Woo Commerce WordPress plugin through 1.1 does not sanitize and escape parameters before using them in a SQL query on an AJAX action available to unauthenticated users, allowi",
-        "published": "2026-09-18T06:16:40.410"
+        "base_score": 8.8,
+        "description": "An authenticated, low-privileged user with access to the NetBackup Flex \nOS management shell could bypass the cryptographic signature \nverification step of a privileged support command by supplying a ",
+        "published": "2026-09-18T12:17:24.717"
       },
       {
-        "cve_id": "CVE-2026-87771",
+        "cve_id": "CVE-2026-88622",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "The Product Question and Answer WordPress plugin through 1.1.0 does not sanitize and escape parameters before using them in SQL queries on AJAX actions available to unauthenticated users, allowing una",
-        "published": "2026-09-18T06:16:40.523"
+        "base_score": 8.8,
+        "description": "NUUO Network Video Recorder 2.0.0 is vulnerable to Command Injection in handle_import_privilege.php.",
+        "published": "2026-09-18T14:19:02.480"
       },
       {
-        "cve_id": "CVE-2026-87774",
+        "cve_id": "CVE-2026-77929",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "The Tz Weekly Radio Schedule WordPress plugin through 1.8.1 does not sanitize and escape a parameter before using it to build a SQL query on an AJAX action available to unauthenticated users, allowing",
-        "published": "2026-09-18T06:16:40.637"
+        "base_score": 8.8,
+        "description": "ClipBucket v5 before 5.5.3-#182 contains a file upload vulnerability that allows authenticated users to achieve remote code execution by uploading a PHP file with valid image magic bytes through the p",
+        "published": "2026-09-18T15:17:13.287"
       },
       {
-        "cve_id": "CVE-2026-87775",
+        "cve_id": "CVE-2026-93569",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "The Tz Weekly Radio Schedule WordPress plugin through 1.8.1 does not sanitize and escape a parameter before using it to build a SQL query on an AJAX action available to unauthenticated users, allowing",
-        "published": "2026-09-18T06:16:40.743"
+        "base_score": 8.2,
+        "description": "A flaw was found in Netty. A remote unauthenticated attacker can exploit a vulnerability in Netty's HTTP/1 to HTTP/2 conversion process. When an HTTP/1 request includes both an absolute-form request-t",
+        "published": "2026-09-18T15:17:20.743"
       },
       {
-        "cve_id": "CVE-2026-93371",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "A security vulnerability has been detected in marcopiovanello yt-dlp-web-ui up to v4. This issue affects the function NewGenericDownload of the file server/internal/downloaders/generic.go. Such manipu",
-        "published": "2026-09-18T03:16:33.563"
-      },
-      {
-        "cve_id": "CVE-2026-89413",
+        "cve_id": "CVE-2026-6205",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "The Filter Gallery plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 1.1.4. This is due to the plugin not properly verifying that a user is authorized to",
-        "published": "2026-09-18T07:16:51.337"
+        "description": "An external control of file name or path vulnerability in Upload API in Synology DiskStation Manager (DSM) before 7.2.1-69057-12, 7.2.2-72806-9, 7.3.2-86009-4 and 7.4-90075 allows remote authenticated",
+        "published": "2026-09-18T09:16:42.133"
+      },
+      {
+        "cve_id": "CVE-2026-85410",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The Master Addons for Elementor \u2013 Elementor Addons, Widgets, Mega Menu Builder, Popup Builder, Widget Builder & Template Kits plugin for WordPress is vulnerable to authorization bypass in all versions",
+        "published": "2026-09-18T09:16:42.500"
+      },
+      {
+        "cve_id": "CVE-2026-93593",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "ArcadeDB before 26.9.1 fails to enforce security-group types ACL entries for TimeSeries types because the ACL resolver builds permissions from bucket IDs, but TimeSeries types do not own normal record",
+        "published": "2026-09-18T14:19:10.413"
+      },
+      {
+        "cve_id": "CVE-2026-93594",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "ArcadeDB (Maven artifact com.arcadedb:arcadedb-engine) through 26.8.1 enforces its per-type/per-record access-control rules only in LocalBucket, keyed on file id. Query-execution paths that reach reco",
+        "published": "2026-09-18T14:19:10.587"
+      },
+      {
+        "cve_id": "CVE-2026-40530",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "An improper neutralization of CRLF sequences ('CRLF injection') vulnerability in User API in Synology DiskStation Manager (DSM) before 7.2.1-69057-10, 7.2.2-72806-7 and 7.3.2-86009-2 allows remote aut",
+        "published": "2026-09-18T09:16:40.237"
+      },
+      {
+        "cve_id": "CVE-2026-93597",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "ArcadeDB versions before 26.9.1 fail to validate IPv6 transition addresses in the SSRF guard used by IMPORT DATABASE and server commands. Authenticated attackers can supply URLs resolving to NAT64, 6t",
+        "published": "2026-09-18T14:19:11.083"
+      },
+      {
+        "cve_id": "CVE-2026-93591",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "SiYuan versions before 3.8.3 contain an SQL injection vulnerability in the graph.go query2Stmt function where tag values are concatenated raw into SQL string literals without escaping single quotes. A",
+        "published": "2026-09-18T14:19:10.097"
+      },
+      {
+        "cve_id": "CVE-2026-87743",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A flaw was found in Quarkus HTTP security. An unauthenticated attacker can exploit a discrepancy in how paths are normalized between the security matcher and HTTP request dispatchers. This allows the ",
+        "published": "2026-09-18T10:17:07.520"
       }
     ]
   },
