@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-18T22:04:19.771295+00:00",
+  "generated_at": "2026-09-19T02:17:16.545408+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 45,
+        "value": 43,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 17,
-        "score": 3.0,
+        "value": 6,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1716,
-    "recent_30d_count": 45,
+    "recent_30d_count": 43,
     "recent": [
       {
         "cve_id": "CVE-2025-39964",
@@ -238,80 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 578,
-    "critical_count": 17,
-    "high_count": 29,
+    "total": 500,
+    "critical_count": 6,
+    "high_count": 31,
     "cves": [
-      {
-        "cve_id": "CVE-2026-54734",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Prebid Server Java is the Java version of Prebid Server. Prior to 3.43.0, certain bidder adapters interpolate user-supplied parameters into outbound request URLs without using HttpUtil to validate the",
-        "published": "2026-09-17T22:17:03.317"
-      },
-      {
-        "cve_id": "CVE-2026-69399",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Azure Arc Elevation of Privilege Vulnerability",
-        "published": "2026-09-17T23:18:18.793"
-      },
-      {
-        "cve_id": "CVE-2026-69865",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Authorization bypass through user-controlled key in Microsoft Container Registry allows an unauthorized attacker to elevate privileges over a network.",
-        "published": "2026-09-17T23:18:34.670"
-      },
-      {
-        "cve_id": "CVE-2026-70200",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Improper limitation of a pathname to a restricted directory ('path traversal') in Azure Logic Apps allows an unauthorized attacker to elevate privileges over a network.",
-        "published": "2026-09-17T23:18:36.113"
-      },
-      {
-        "cve_id": "CVE-2026-83944",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Improper access control in Azure Logic Apps allows an unauthorized attacker to elevate privileges over a network.",
-        "published": "2026-09-17T23:18:51.257"
-      },
-      {
-        "cve_id": "CVE-2026-85889",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Missing authentication for critical function in Azure AI Foundry allows an unauthorized attacker to elevate privileges over a network.",
-        "published": "2026-09-17T23:18:53.217"
-      },
-      {
-        "cve_id": "CVE-2026-62874",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Insufficient verification of data authenticity in Azure Billing allows an unauthorized attacker to elevate privileges over a network.",
-        "published": "2026-09-18T00:16:57.930"
-      },
-      {
-        "cve_id": "CVE-2026-69843",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Authentication bypass by spoofing in Microsoft Fabric allows an unauthorized attacker to elevate privileges over a network.",
-        "published": "2026-09-18T00:17:24.923"
-      },
-      {
-        "cve_id": "CVE-2026-85885",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Improper neutralization of special elements used in a command ('command injection') in M365 Copilot allows an authorized attacker to elevate privileges over a network.",
-        "published": "2026-09-17T23:18:53.080"
-      },
-      {
-        "cve_id": "CVE-2026-85878",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Improper authorization in Azure Database for PostgreSQL allows an authorized attacker to elevate privileges over a network.",
-        "published": "2026-09-18T00:17:47.777"
-      },
       {
         "cve_id": "CVE-2026-93467",
         "severity": "CRITICAL",
@@ -320,32 +250,32 @@
         "published": "2026-09-18T03:16:33.753"
       },
       {
-        "cve_id": "CVE-2026-87701",
+        "cve_id": "CVE-2026-67100",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Improper neutralization of special elements in output used by a downstream component ('injection') in Azure Cosmos DB allows an authorized attacker to elevate privileges over a network.",
-        "published": "2026-09-17T23:18:53.623"
+        "base_score": 9.8,
+        "description": "HCL BigFix Service Management is affected by SQL Injection flaw and a Cross-Tenant Data Exposure flaw vulnerabilities. which could allow an authenticated attacker to inject database commands to extrac",
+        "published": "2026-09-18T08:17:00.603"
       },
       {
-        "cve_id": "CVE-2026-70009",
+        "cve_id": "CVE-2026-13639",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An insufficient entropy vulnerability in login logic in Synology DiskStation Manager (DSM) before 7.2.1-69057-12, 7.2.2-72806-9, 7.3.2-86009-4 and 7.4-90075 allows remote attackers to read or write ar",
+        "published": "2026-09-18T09:16:38.757"
+      },
+      {
+        "cve_id": "CVE-2026-13684",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An improper encoding or escaping of output vulnerability in SCGI in Synology DiskStation Manager (DSM) before 7.2.1-69057-12, 7.2.2-72806-9, 7.3.2-86009-4 and 7.4-90075 allows remote attackers to read",
+        "published": "2026-09-18T09:16:39.237"
+      },
+      {
+        "cve_id": "CVE-2026-67101",
         "severity": "CRITICAL",
         "base_score": 9.3,
-        "description": "Improper limitation of a pathname to a restricted directory ('path traversal') in Azure Arc allows an unauthorized attacker to elevate privileges over a network.",
-        "published": "2026-09-17T23:18:35.560"
-      },
-      {
-        "cve_id": "CVE-2026-54670",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "WeGIA is a web manager for charitable institutions. Prior to 3.8.5, the contribution request dispatcher in web/html/contribuicao/controller/control.php accepts attacker-controlled nomeClasse and metod",
-        "published": "2026-09-17T22:17:02.983"
-      },
-      {
-        "cve_id": "CVE-2026-54767",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "WeGIA is a web manager for charitable institutions. Prior to 3.8.5, web/html/socio/sistema/controller/deletar_socios.php exposes an unauthenticated GET endpoint whose chave parameter is checked only a",
-        "published": "2026-09-17T22:17:03.470"
+        "description": "HCL BigFix Service Management is affected by a Server-Side Request Forgery (SSRF) vulnerability in its search functionality, which could allow an attacker to force the application server to send reque",
+        "published": "2026-09-18T08:17:00.740"
       },
       {
         "cve_id": "CVE-2026-84738",
@@ -355,32 +285,102 @@
         "published": "2026-09-18T06:16:39.307"
       },
       {
-        "cve_id": "CVE-2026-77903",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "Authentication bypass by spoofing in Microsoft Dataverse allows an unauthorized attacker to elevate privileges over a network.",
-        "published": "2026-09-17T23:18:44.993"
-      },
-      {
-        "cve_id": "CVE-2026-54519",
+        "cve_id": "CVE-2026-17086",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "AI Agent Automation is a modular AI agent workflow automation platform with schedulers, tools, and observability. Prior to 0.9.1, backend/src/controllers/memory.controller.js authenticates requests bu",
-        "published": "2026-09-17T22:17:00.930"
+        "description": "The ShortPixel Image Optimizer \u2013 Optimize Images, Convert WebP & AVIF plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 6.5.5 via deserialization of untr",
+        "published": "2026-09-18T04:17:28.900"
       },
       {
-        "cve_id": "CVE-2026-54612",
+        "cve_id": "CVE-2026-85122",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Vvveb is a powerful and easy to use CMS with page builder to build websites, blogs or ecommerce stores. From 1.0.0 until 1.0.8.5, saveGlobalElements() in admin/controller/editor/global-trait.php conca",
-        "published": "2026-09-17T22:17:01.377"
+        "description": "The Easy Form Builder by WhiteStudio  WordPress plugin before 4.2.0 does not validate a submitted value against the stored configuration for some of its form types, allowing unauthenticated users to s",
+        "published": "2026-09-18T06:16:39.880"
       },
       {
-        "cve_id": "CVE-2026-54671",
+        "cve_id": "CVE-2026-85127",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "WeGIA is a web manager for charitable institutions. Prior to 3.8.5, WeGIA maps InternoControle to an empty resource array in web/controle/control.php, and verificarPermissao in web/dao/MiddlewareDAO.p",
-        "published": "2026-09-17T22:17:03.150"
+        "description": "The VikBooking Hotel Booking Engine & PMS WordPress plugin before 1.8.15 does not restrict the type of files unauthenticated visitors may attach to its live chat, nor sanitize their contents, allowing",
+        "published": "2026-09-18T06:16:40.093"
+      },
+      {
+        "cve_id": "CVE-2026-88825",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The iGMS Direct Booking WordPress plugin before 2.0 does not authorise or escape its widget appearance settings, allowing unauthenticated users to store arbitrary web scripts that execute in the conte",
+        "published": "2026-09-18T06:16:41.157"
+      },
+      {
+        "cve_id": "CVE-2026-12384",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Authorization bypass through User-Controlled key vulnerability in TECHIN2B TECHIN2B Application allows Privilege Abuse.\n\nThis issue affects TECHIN2B Application: from V1.0.7676.13 through 18092026.\nNO",
+        "published": "2026-09-18T08:16:58.813"
+      },
+      {
+        "cve_id": "CVE-2026-12954",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Mapster WP Maps plugin for WordPress is vulnerable to Arbitrary User Meta Write in all versions up to, and including, 1.23.0 via the `my_profile_update()` function. This is due to the function per",
+        "published": "2026-09-18T08:16:59.100"
+      },
+      {
+        "cve_id": "CVE-2026-13673",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "An incorrect permission assignment for critical resource vulnerability in LDAP API in Synology DiskStation Manager (DSM) before 7.2.1-69057-12, 7.2.2-72806-9, 7.3.2-86009-4 and 7.4-90075 allows remote",
+        "published": "2026-09-18T09:16:38.997"
+      },
+      {
+        "cve_id": "CVE-2026-87767",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "The wp shortcut link and advertisement baner WordPress plugin through 1.2.0 does not sanitize and escape a parameter before using it in a SQL query on an AJAX action available to unauthenticated users",
+        "published": "2026-09-18T06:16:40.307"
+      },
+      {
+        "cve_id": "CVE-2026-87770",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "The Price Drop Alert for Woo Commerce WordPress plugin through 1.1 does not sanitize and escape parameters before using them in a SQL query on an AJAX action available to unauthenticated users, allowi",
+        "published": "2026-09-18T06:16:40.410"
+      },
+      {
+        "cve_id": "CVE-2026-87771",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "The Product Question and Answer WordPress plugin through 1.1.0 does not sanitize and escape parameters before using them in SQL queries on AJAX actions available to unauthenticated users, allowing una",
+        "published": "2026-09-18T06:16:40.523"
+      },
+      {
+        "cve_id": "CVE-2026-87774",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "The Tz Weekly Radio Schedule WordPress plugin through 1.8.1 does not sanitize and escape a parameter before using it to build a SQL query on an AJAX action available to unauthenticated users, allowing",
+        "published": "2026-09-18T06:16:40.637"
+      },
+      {
+        "cve_id": "CVE-2026-87775",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "The Tz Weekly Radio Schedule WordPress plugin through 1.8.1 does not sanitize and escape a parameter before using it to build a SQL query on an AJAX action available to unauthenticated users, allowing",
+        "published": "2026-09-18T06:16:40.743"
+      },
+      {
+        "cve_id": "CVE-2026-93371",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "A security vulnerability has been detected in marcopiovanello yt-dlp-web-ui up to v4. This issue affects the function NewGenericDownload of the file server/internal/downloaders/generic.go. Such manipu",
+        "published": "2026-09-18T03:16:33.563"
+      },
+      {
+        "cve_id": "CVE-2026-89413",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The Filter Gallery plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 1.1.4. This is due to the plugin not properly verifying that a user is authorized to",
+        "published": "2026-09-18T07:16:51.337"
       }
     ]
   },
