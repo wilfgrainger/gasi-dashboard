@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T18:17:16.986872+00:00",
+  "generated_at": "2026-09-19T21:56:32.357246+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 14,
+        "value": 10,
         "score": 3.0,
         "max": 3
       },
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 256,
-    "critical_count": 14,
-    "high_count": 39,
+    "total": 97,
+    "critical_count": 10,
+    "high_count": 17,
     "cves": [
       {
-        "cve_id": "CVE-2026-61781",
+        "cve_id": "CVE-2026-93740",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "A vulnerability was identified in Totolink A3002MU Hh-B20211125.1046. Affected is the function formWlEncrypt of the file /boafrm/formWlEncrypt. The manipulation of the argument submit-url leads to buf",
+        "published": "2026-09-18T22:17:10.890"
+      },
+      {
+        "cve_id": "CVE-2026-93741",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "A security flaw has been discovered in Totolink A3002MU Hh-B20211125.1046. Affected by this vulnerability is the function formWlWds of the file /boafrm/formWlWds. The manipulation of the argument subm",
+        "published": "2026-09-19T06:16:30.557"
+      },
+      {
+        "cve_id": "CVE-2026-93739",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "pg_partman is a PostgreSQL extension that manages partitioned tables by time or ID. Prior to 5.5.0, create_partition_time() reads the writable part_config.time_encoder text value and interpolates it w",
-        "published": "2026-09-18T20:17:19.003"
+        "description": "A vulnerability was determined in Totolink A3002MU Hh-B20211125.1046. This impacts the function formWlAc of the file /boafrm/formWlAc. Executing a manipulation of the argument submit-url can lead to b",
+        "published": "2026-09-18T22:17:10.710"
       },
       {
-        "cve_id": "CVE-2026-80442",
+        "cve_id": "CVE-2026-93742",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "IBM Guardium Data Protection 12.2 is vulnerable to an authenticated OS command injection vulnerability in the exportCertificate functionality. Successful exploitation could allow an attacker to execut",
-        "published": "2026-09-18T20:17:23.343"
+        "description": "A weakness has been identified in Totolink A3002MU Hh-B20211125.1046. Affected by this issue is the function formWsc of the file /boafrm/formWsc. This manipulation of the argument localPin causes comm",
+        "published": "2026-09-19T09:16:34.740"
       },
       {
-        "cve_id": "CVE-2026-93762",
+        "cve_id": "CVE-2026-93985",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "OpenPanel js-runtime through commit bad75bdd contains a sandbox escape vulnerability in the JavaScript webhook template validator that fails to block computed member access to constructor chains. Atta",
+        "published": "2026-09-19T12:16:41.873"
+      },
+      {
+        "cve_id": "CVE-2026-84434",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Mongoid contains an unsafe reflection weakness in the query path used for embedded documents. An application that passes an externally supplied field name to certain in-memory query methods may allow ",
-        "published": "2026-09-18T18:18:35.053"
+        "description": "The Gravity Forms plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 3.1.0.4 via the upload_file function. This is due to a mismatch between the field va",
+        "published": "2026-09-19T03:17:15.573"
       },
       {
-        "cve_id": "CVE-2023-54399",
+        "cve_id": "CVE-2026-86591",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Hongjing e-HR before 8.2 contains a SQL injection vulnerability in the /servlet/codesettree endpoint where the categories query parameter is passed to a database query without sanitization after HRMS-",
-        "published": "2026-09-18T19:16:40.757"
+        "description": "The Botiga Pro WordPress plugin before 1.6.5 does not perform any authorisation checks on one of its REST routes, allowing unauthenticated users to update arbitrary WordPress options with arbitrary va",
+        "published": "2026-09-19T07:16:33.063"
       },
       {
-        "cve_id": "CVE-2026-58264",
+        "cve_id": "CVE-2026-75885",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "FluidSynth is a software synthesizer based on the SoundFont 2 specifications. From 1.1.2 until 2.5.6, the FluidSynth command handler accepts a pitch_bend_range command whose channel argument is not bo",
-        "published": "2026-09-18T20:17:18.107"
+        "base_score": 9.3,
+        "description": "A flaw was found in the OpenShift console. Unauthenticated access to the `/api/devfile/` and `/api/devfile/samples/` endpoints allows a remote attacker to send crafted devfile payloads. This can lead ",
+        "published": "2026-09-18T22:17:10.313"
       },
       {
-        "cve_id": "CVE-2026-80441",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "IBM Guardium Data Protection 12.2 is vulnerable to an unauthenticated second-order SQL injection vulnerability in the generateInsertQuery functionality of change-tracker-data.sql. A remote attacker co",
-        "published": "2026-09-18T20:17:23.217"
-      },
-      {
-        "cve_id": "CVE-2026-81657",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "IBM Guardium Data Protection 12.2 could allow a remote unauthenticated attacker to execute arbitrary code on the system due to the deserialization of untrusted data.",
-        "published": "2026-09-18T20:17:23.997"
-      },
-      {
-        "cve_id": "CVE-2026-82340",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "IBM Guardium Data Protection 12.2 is vulnerable to unauthenticated insecure deserialization and attacker-controlled reflective method dispatch in the Change Audit System (CAS) listener. A network atta",
-        "published": "2026-09-18T20:17:24.517"
-      },
-      {
-        "cve_id": "CVE-2026-82967",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "IBM Guardium Data Protection 12.2 is vulnerable to an authentication bypass that allows an unauthenticated remote attacker to bypass IP-based access controls and access the Guardium management interfa",
-        "published": "2026-09-18T20:17:25.513"
-      },
-      {
-        "cve_id": "CVE-2026-82832",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "IBM Guardium Data Protection 12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of input during web page generation.",
-        "published": "2026-09-18T20:17:24.643"
-      },
-      {
-        "cve_id": "CVE-2026-92701",
+        "cve_id": "CVE-2026-89274",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "trusted execution environments. In versions up to and including 0.8.2, the intra-handshake attested TLS (aTLS) Intel TDX verification path does not copy the expected current-session freshness value in",
-        "published": "2026-09-18T18:18:16.103"
+        "description": "The WP Recipe Maker plugin for WordPress is vulnerable to Arbitrary Shortcode Execution in all versions up to, and including, 10.8.1. The vulnerability exists because `WPRM_Metadata::sanitize_metadata",
+        "published": "2026-09-19T03:17:16.587"
       },
       {
-        "cve_id": "CVE-2026-92702",
+        "cve_id": "CVE-2026-92229",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Cocos AI is a confidential computing system for running AI workloads inside trusted execution environments. In versions up to and including 0.8.2, the intra-handshake attested TLS (aTLS) AMD SEV-SNP v",
-        "published": "2026-09-18T18:18:16.257"
+        "description": "The The Forminator Forms \u2013 Contact Form, Payment Form & Custom Form Builder plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 1.57.2. This is du",
+        "published": "2026-09-19T03:17:17.040"
       },
       {
-        "cve_id": "CVE-2026-75878",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "IBM Sterling File Gateway could allow a remote attacker to bypass authentication and obtain a fully authenticated session due to improper authentication via an unvalidated SSO header.",
-        "published": "2026-09-18T20:17:21.363"
-      },
-      {
-        "cve_id": "CVE-2026-84031",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "IBM Guardium Data Protection 12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of input during web page generation.",
-        "published": "2026-09-18T20:17:26.060"
-      },
-      {
-        "cve_id": "CVE-2026-81180",
+        "cve_id": "CVE-2026-93922",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "SysReptor is a fully customizable pentest reporting platform. Prior to 2026.61, authenticated users of SysReptor Professional can upload image files whose formats cause image processing to invoke Ghos",
-        "published": "2026-09-18T18:17:15.777"
+        "description": "SiYuan through 3.8.4 renders notebook names as raw HTML in the Daily Note picker dialog without escaping, allowing stored cross-site scripting in the Electron renderer. Attackers can create notebooks ",
+        "published": "2026-09-19T00:16:57.783"
       },
       {
-        "cve_id": "CVE-2026-11725",
+        "cve_id": "CVE-2026-93923",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "IBM MQ could allow an authenticated attacker to cause a denial of service or potentially execute arbitrary code due to an integer overflow in MQINQ request processing.",
-        "published": "2026-09-18T20:17:03.167"
+        "description": "SiYuan through 3.8.4 fails to escape heading style attributes when rendering outline and bookmark dock HTML, allowing stored cross-site scripting. Attackers can supply crafted notebooks or call admini",
+        "published": "2026-09-19T00:16:57.963"
       },
       {
-        "cve_id": "CVE-2026-81656",
+        "cve_id": "CVE-2026-92807",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "IBM Guardium Data Protection 12.2 is vulnerable to a SQL injection vulnerability in the New Query Builder REST Processor. A low-privileged authenticated user can inject SQL statements through the newQ",
-        "published": "2026-09-18T20:17:23.867"
+        "description": "The Save as PDF Plugin by PDFCrowd plugin for WordPress is vulnerable to Arbitrary Function Invocation in all versions up to, and including, 4.6.1 via the `pdf_created_callback` shortcode attribute. T",
+        "published": "2026-09-19T03:17:17.723"
       },
       {
-        "cve_id": "CVE-2026-81933",
+        "cve_id": "CVE-2026-85680",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "IBM Guardium Data Protection 12.2 is vulnerable to a SQL injection vulnerability in the Analytic Grid Service Handler. A low-privileged authenticated user can inject SQL statements through the analyti",
-        "published": "2026-09-18T20:17:24.250"
+        "description": "The Ultimate Member  WordPress plugin before 2.13.1 does not escape a value derived from user supplied profile names before outputting it in the page title, and decodes HTML entities in it after its o",
+        "published": "2026-09-19T07:16:32.960"
       },
       {
-        "cve_id": "CVE-2026-82885",
+        "cve_id": "CVE-2026-88824",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "IBM Guardium Data Protection 12.2 could allow a remote authenticated attacker to gain elevated privileges due to missing authorization in the REST API.",
-        "published": "2026-09-18T20:17:24.770"
+        "description": "The Master Blocks  WordPress plugin before 1.5.0 does not have authorisation on one of its REST routes, allowing unauthenticated users to update its settings, including a value that is output unescape",
+        "published": "2026-09-19T07:16:33.273"
       },
       {
-        "cve_id": "CVE-2026-82887",
+        "cve_id": "CVE-2026-4327",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "IBM Guardium Data Protection 12.2 could allow a remote authenticated attacker to execute arbitrary commands due to improper neutralization of special elements used in an OS command.",
-        "published": "2026-09-18T20:17:24.893"
+        "description": "The The Welcomizer plugin for WordPress is vulnerable to Remote Code Execution in all versions up to and including 2.8.1. This is due to missing authorization checks on the twiz_ajax_callback AJAX act",
+        "published": "2026-09-19T08:16:53.887"
+      },
+      {
+        "cve_id": "CVE-2026-88926",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "The VikRentItems Flexible Rental Management System WordPress plugin before 1.2.4 does not sanitise and escape some of its parameters before using them in SQL statements, allowing unauthenticated users",
+        "published": "2026-09-19T07:16:33.377"
+      },
+      {
+        "cve_id": "CVE-2026-86814",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The UsersWP  WordPress plugin before 1.5.10 does not verify that a social login provider has confirmed ownership of an email address before using it to resolve an existing account, allowing unauthenti",
+        "published": "2026-09-19T07:16:33.167"
+      },
+      {
+        "cve_id": "CVE-2026-85658",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The Paid Membership Plugin, Ecommerce, User Registration Form, Login Form, User Profile & Restrict Content \u2013 ProfilePress plugin for WordPress is vulnerable to arbitrary shortcode execution in all ver",
+        "published": "2026-09-19T08:16:54.770"
+      },
+      {
+        "cve_id": "CVE-2026-85574",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "The Unbounce Landing Pages WordPress plugin before 1.1.5 does not perform any authorisation check when updating the configuration its front-end proxy relies on, allowing any authenticated user, such a",
+        "published": "2026-09-19T07:16:32.860"
       }
     ]
   },
