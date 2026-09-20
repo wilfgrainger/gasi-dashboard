@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T02:26:18.327646+00:00",
+  "generated_at": "2026-09-20T08:54:35.821667+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
+        "value": 6,
         "score": 2.5,
         "max": 3
       },
@@ -238,17 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 108,
-    "critical_count": 8,
-    "high_count": 20,
+    "total": 80,
+    "critical_count": 6,
+    "high_count": 13,
     "cves": [
-      {
-        "cve_id": "CVE-2026-93741",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "A security flaw has been discovered in Totolink A3002MU Hh-B20211125.1046. Affected by this vulnerability is the function formWlWds of the file /boafrm/formWlWds. The manipulation of the argument subm",
-        "published": "2026-09-19T06:16:30.557"
-      },
       {
         "cve_id": "CVE-2026-93742",
         "severity": "CRITICAL",
@@ -264,20 +257,6 @@
         "published": "2026-09-19T12:16:41.873"
       },
       {
-        "cve_id": "CVE-2026-84434",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Gravity Forms plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 3.1.0.4 via the upload_file function. This is due to a mismatch between the field va",
-        "published": "2026-09-19T03:17:15.573"
-      },
-      {
-        "cve_id": "CVE-2026-86591",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Botiga Pro WordPress plugin before 1.6.5 does not perform any authorisation checks on one of its REST routes, allowing unauthenticated users to update arbitrary WordPress options with arbitrary va",
-        "published": "2026-09-19T07:16:33.063"
-      },
-      {
         "cve_id": "CVE-2026-78030",
         "severity": "CRITICAL",
         "base_score": 9.8,
@@ -285,46 +264,25 @@
         "published": "2026-09-19T11:16:37.667"
       },
       {
-        "cve_id": "CVE-2026-89274",
+        "cve_id": "CVE-2026-94083",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "Suricata before 8.0.7 has a DoH2 type confusion that can cause an invalid free, because cleanup code for the HTTP2 state is executed even though the actual state is HTTP1 (when there is a DoH2 request",
+        "published": "2026-09-20T02:16:53.520"
+      },
+      {
+        "cve_id": "CVE-2026-94084",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "Suricata before 8.0.7 has an Http2ThreadMultiBuf use-after-free when a transaction is inspected by rules that use http.response_header with and without a transform.",
+        "published": "2026-09-20T02:16:53.717"
+      },
+      {
+        "cve_id": "CVE-2026-93958",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "The WP Recipe Maker plugin for WordPress is vulnerable to Arbitrary Shortcode Execution in all versions up to, and including, 10.8.1. The vulnerability exists because `WPRM_Metadata::sanitize_metadata",
-        "published": "2026-09-19T03:17:16.587"
-      },
-      {
-        "cve_id": "CVE-2026-92229",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The The Forminator Forms \u2013 Contact Form, Payment Form & Custom Form Builder plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 1.57.2. This is du",
-        "published": "2026-09-19T03:17:17.040"
-      },
-      {
-        "cve_id": "CVE-2026-92807",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Save as PDF Plugin by PDFCrowd plugin for WordPress is vulnerable to Arbitrary Function Invocation in all versions up to, and including, 4.6.1 via the `pdf_created_callback` shortcode attribute. T",
-        "published": "2026-09-19T03:17:17.723"
-      },
-      {
-        "cve_id": "CVE-2026-85680",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Ultimate Member  WordPress plugin before 2.13.1 does not escape a value derived from user supplied profile names before outputting it in the page title, and decodes HTML entities in it after its o",
-        "published": "2026-09-19T07:16:32.960"
-      },
-      {
-        "cve_id": "CVE-2026-88824",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Master Blocks  WordPress plugin before 1.5.0 does not have authorisation on one of its REST routes, allowing unauthenticated users to update its settings, including a value that is output unescape",
-        "published": "2026-09-19T07:16:33.273"
-      },
-      {
-        "cve_id": "CVE-2026-4327",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The The Welcomizer plugin for WordPress is vulnerable to Remote Code Execution in all versions up to and including 2.8.1. This is due to missing authorization checks on the twiz_ajax_callback AJAX act",
-        "published": "2026-09-19T08:16:53.887"
+        "description": "A vulnerability was found in D-Link R95 BE9500_1.00.16. This vulnerability affects the function system of the file /bin/ssi of the component DHMAPI. The manipulation of the argument NTPServer results ",
+        "published": "2026-09-20T02:16:53.307"
       },
       {
         "cve_id": "CVE-2026-93993",
@@ -334,25 +292,18 @@
         "published": "2026-09-19T23:17:10.673"
       },
       {
-        "cve_id": "CVE-2026-88926",
+        "cve_id": "CVE-2026-86553",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "The VikRentItems Flexible Rental Management System WordPress plugin before 1.2.4 does not sanitise and escape some of its parameters before using them in SQL statements, allowing unauthenticated users",
-        "published": "2026-09-19T07:16:33.377"
+        "base_score": 8.8,
+        "description": "SmartLife app dynamically generates fresh SmartLife application authentication parameters inside its runtime process. Using the acquired SmartLife application authentication parameters, an attacker ca",
+        "published": "2026-09-20T04:17:06.240"
       },
       {
-        "cve_id": "CVE-2026-86814",
+        "cve_id": "CVE-2026-93962",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The UsersWP  WordPress plugin before 1.5.10 does not verify that a social login provider has confirmed ownership of an email address before using it to resolve an existing account, allowing unauthenti",
-        "published": "2026-09-19T07:16:33.167"
-      },
-      {
-        "cve_id": "CVE-2026-85658",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Paid Membership Plugin, Ecommerce, User Registration Form, Login Form, User Profile & Restrict Content \u2013 ProfilePress plugin for WordPress is vulnerable to arbitrary shortcode execution in all ver",
-        "published": "2026-09-19T08:16:54.770"
+        "base_score": 8.3,
+        "description": "A weakness has been identified in Kamailio up to 5.8.8/6.0.7/6.1.4/6.2.0-dev1. The impacted element is the function shm_malloc of the file src/modules/cdp/receiver.c of the component CDP Diameter Rece",
+        "published": "2026-09-20T05:16:29.067"
       },
       {
         "cve_id": "CVE-2026-93992",
@@ -362,13 +313,6 @@
         "published": "2026-09-19T23:17:10.517"
       },
       {
-        "cve_id": "CVE-2026-85574",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "The Unbounce Landing Pages WordPress plugin before 1.1.5 does not perform any authorisation check when updating the configuration its front-end proxy relies on, allowing any authenticated user, such a",
-        "published": "2026-09-19T07:16:32.860"
-      },
-      {
         "cve_id": "CVE-2026-93991",
         "severity": "HIGH",
         "base_score": 7.7,
@@ -376,11 +320,67 @@
         "published": "2026-09-19T23:17:10.360"
       },
       {
-        "cve_id": "CVE-2026-87909",
+        "cve_id": "CVE-2026-1255",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "The WP Photo Album Plus plugin for WordPress is vulnerable to Remote Code Execution in all versions via the wppa_image_magick function. This is due to insufficient sanitization of the multipart upload",
-        "published": "2026-09-19T03:17:15.853"
+        "description": "The YS LeadGen plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.1.4 due to the 'ysleadgen_get_captured_data' AJAX action being accessible to",
+        "published": "2026-09-19T09:16:34.030"
+      },
+      {
+        "cve_id": "CVE-2026-93990",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Expat through 2.8.4 fails to validate low surrogates following high surrogates in UTF-16 input, allowing malformed UTF-16 sequences to be accepted. Attackers can craft UTF-16 encoded XML with lone hig",
+        "published": "2026-09-19T23:17:10.203"
+      },
+      {
+        "cve_id": "CVE-2026-94056",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Exim before 4.100.1, when Proxy-Protocol is used with an attacker-controlled proxy, allows attackers to read certain uninitialized data from stack memory.",
+        "published": "2026-09-19T23:17:11.113"
+      },
+      {
+        "cve_id": "CVE-2026-93959",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was determined in SourceCodester Online Reviewer Management System 1.0. This issue affects some unknown processing of the file /reviewer_0/admins/assessments/course/btn_functions.php. ",
+        "published": "2026-09-20T03:16:31.513"
+      },
+      {
+        "cve_id": "CVE-2026-93969",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was identified in aiyiyi121 SxDevOps 1.0/1.1. This vulnerability affects the function ensure_default_superuser of the file rbac/services.py. The manipulation leads to hard-coded creden",
+        "published": "2026-09-20T07:16:52.290"
+      },
+      {
+        "cve_id": "CVE-2026-93970",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A security flaw has been discovered in aiyiyi121 SxDevOps 1.0/1.1. This issue affects some unknown processing of the file backend/sxdevops/settings.py of the component Settings Handler. The manipulati",
+        "published": "2026-09-20T08:16:51.080"
+      },
+      {
+        "cve_id": "CVE-2026-93972",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A security vulnerability has been detected in SourceCodester Online Reviewer Management System 1.0. The affected element is an unknown function of the file /reviewer_0/admins/assessments/course/btn_fu",
+        "published": "2026-09-20T08:16:51.433"
+      },
+      {
+        "cve_id": "CVE-2026-94054",
+        "severity": "HIGH",
+        "base_score": 7.0,
+        "description": "Exim before 4.100.1, when Proxy-Protocol is used with an attacker-controlled proxy, has an out-of-bounds write.",
+        "published": "2026-09-19T23:17:10.827"
+      },
+      {
+        "cve_id": "CVE-2026-94000",
+        "severity": "MEDIUM",
+        "base_score": 6.6,
+        "description": "A flaw was found in the Admin REST API of Keycloak, an open-source identity and access management solution. The issue occurs in the group-membership endpoints where the system fails to check if a grou",
+        "published": "2026-09-19T15:17:08.763"
       }
     ]
   },
