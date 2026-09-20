@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T08:54:35.821667+00:00",
+  "generated_at": "2026-09-20T15:06:28.908836+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
+        "value": 5,
         "score": 2.5,
         "max": 3
       },
@@ -238,30 +238,23 @@
     ]
   },
   "nvd": {
-    "total": 80,
-    "critical_count": 6,
-    "high_count": 13,
+    "total": 91,
+    "critical_count": 5,
+    "high_count": 31,
     "cves": [
       {
-        "cve_id": "CVE-2026-93742",
+        "cve_id": "CVE-2026-94003",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A weakness has been identified in Totolink A3002MU Hh-B20211125.1046. Affected by this issue is the function formWsc of the file /boafrm/formWsc. This manipulation of the argument localPin causes comm",
-        "published": "2026-09-19T09:16:34.740"
+        "base_score": 10.0,
+        "description": "A vulnerability has been found in Comfast CF-N1-S 2.6.0.1. Impacted is the function get_css_path_from_uri of the file /cgi-bin/mbox-config of the component Web Management Interface. The manipulation l",
+        "published": "2026-09-20T12:17:05.403"
       },
       {
-        "cve_id": "CVE-2026-93985",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "OpenPanel js-runtime through commit bad75bdd contains a sandbox escape vulnerability in the JavaScript webhook template validator that fails to block computed member access to constructor chains. Atta",
-        "published": "2026-09-19T12:16:41.873"
-      },
-      {
-        "cve_id": "CVE-2026-78030",
+        "cve_id": "CVE-2026-90817",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "DBI versions before 1.653 for Perl load arbitrary modules via unvalidated dbm_type and dbm_mldbm attributes in DBD::DBM.\n\nDBD::DBM passes the dbm_type and dbm_mldbm connect attributes to require witho",
-        "published": "2026-09-19T11:16:37.667"
+        "description": "An unauthenticated Remote Code Execution vulnerability was found in the survey passthrough routing and Data Import processing logic, in which a malicious user could potentially exploit it by manipulat",
+        "published": "2026-09-20T13:17:44.973"
       },
       {
         "cve_id": "CVE-2026-94083",
@@ -299,6 +292,34 @@
         "published": "2026-09-20T04:17:06.240"
       },
       {
+        "cve_id": "CVE-2026-94104",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "NivoCart through 2.4.0 contains an arbitrary file upload vulnerability in the File Manager multi() endpoint that fails to validate file extensions for new filenames or when chunks parameter is 2 or hi",
+        "published": "2026-09-20T12:17:05.777"
+      },
+      {
+        "cve_id": "CVE-2026-94106",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "getID3 before 1.9.26 contains an OS command injection vulnerability in shell-out handlers that fail to escape filenames in command strings. Attackers can craft malicious filenames containing shell met",
+        "published": "2026-09-20T12:17:06.110"
+      },
+      {
+        "cve_id": "CVE-2026-94109",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "openEQUELLA versions before 2026.1.0 contain a remote code execution vulnerability in FreeMarker template compilation due to an unsandboxed TemplateClassResolver configuration. Authenticated attackers",
+        "published": "2026-09-20T12:17:06.620"
+      },
+      {
+        "cve_id": "CVE-2026-87067",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "The Forminator Forms  WordPress plugin before 1.57.2.1 does not restrict which classes may be instantiated when it deserialises a value taken from an XML-RPC request, allowing users who hold its forms",
+        "published": "2026-09-20T07:16:50.430"
+      },
+      {
         "cve_id": "CVE-2026-93962",
         "severity": "HIGH",
         "base_score": 8.3,
@@ -313,18 +334,25 @@
         "published": "2026-09-19T23:17:10.517"
       },
       {
+        "cve_id": "CVE-2026-82842",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The SAML Single Sign On  WordPress plugin before 6.0.0 does not honour the configured criterion for linking an incoming single sign-on identity to a WordPress account, always resolving the identity by",
+        "published": "2026-09-20T07:16:50.093"
+      },
+      {
+        "cve_id": "CVE-2026-94107",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "NivoCart through 2.4.0 contains a predictable password reset token vulnerability in the forgotten.php endpoint that generates recovery codes using substr(md5(mt_rand()), 0, 10). Attackers who know an ",
+        "published": "2026-09-20T12:17:06.277"
+      },
+      {
         "cve_id": "CVE-2026-93991",
         "severity": "HIGH",
         "base_score": 7.7,
         "description": "Argo Workflows versions 4.1.0 through 4.1.3 contain an authorization bypass vulnerability in ListArchivedWorkflows that fails to apply cluster-scoped access review when the metadata.namespace field se",
         "published": "2026-09-19T23:17:10.360"
-      },
-      {
-        "cve_id": "CVE-2026-1255",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The YS LeadGen plugin for WordPress is vulnerable to Sensitive Information Exposure in all versions up to, and including, 2.1.4 due to the 'ysleadgen_get_captured_data' AJAX action being accessible to",
-        "published": "2026-09-19T09:16:34.030"
       },
       {
         "cve_id": "CVE-2026-93990",
@@ -341,46 +369,18 @@
         "published": "2026-09-19T23:17:11.113"
       },
       {
-        "cve_id": "CVE-2026-93959",
+        "cve_id": "CVE-2026-85017",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was determined in SourceCodester Online Reviewer Management System 1.0. This issue affects some unknown processing of the file /reviewer_0/admins/assessments/course/btn_functions.php. ",
-        "published": "2026-09-20T03:16:31.513"
+        "base_score": 7.5,
+        "description": "The Unlimited Elements For Elementor WordPress plugin before 2.0.20 does not perform a capability check on an AJAX action and deserializes attacker-controlled stored data through it, which makes it po",
+        "published": "2026-09-20T07:16:50.303"
       },
       {
-        "cve_id": "CVE-2026-93969",
+        "cve_id": "CVE-2026-87839",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was identified in aiyiyi121 SxDevOps 1.0/1.1. This vulnerability affects the function ensure_default_superuser of the file rbac/services.py. The manipulation leads to hard-coded creden",
-        "published": "2026-09-20T07:16:52.290"
-      },
-      {
-        "cve_id": "CVE-2026-93970",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security flaw has been discovered in aiyiyi121 SxDevOps 1.0/1.1. This issue affects some unknown processing of the file backend/sxdevops/settings.py of the component Settings Handler. The manipulati",
-        "published": "2026-09-20T08:16:51.080"
-      },
-      {
-        "cve_id": "CVE-2026-93972",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security vulnerability has been detected in SourceCodester Online Reviewer Management System 1.0. The affected element is an unknown function of the file /reviewer_0/admins/assessments/course/btn_fu",
-        "published": "2026-09-20T08:16:51.433"
-      },
-      {
-        "cve_id": "CVE-2026-94054",
-        "severity": "HIGH",
-        "base_score": 7.0,
-        "description": "Exim before 4.100.1, when Proxy-Protocol is used with an attacker-controlled proxy, has an out-of-bounds write.",
-        "published": "2026-09-19T23:17:10.827"
-      },
-      {
-        "cve_id": "CVE-2026-94000",
-        "severity": "MEDIUM",
-        "base_score": 6.6,
-        "description": "A flaw was found in the Admin REST API of Keycloak, an open-source identity and access management solution. The issue occurs in the group-membership endpoints where the system fails to check if a grou",
-        "published": "2026-09-19T15:17:08.763"
+        "base_score": 7.5,
+        "description": "The Tripzzy  WordPress plugin before 1.5.1 does not have authorisation checks, and does not validate the identifier of the object being removed, in an AJAX action available to unauthenticated users, a",
+        "published": "2026-09-20T07:16:50.760"
       }
     ]
   },
