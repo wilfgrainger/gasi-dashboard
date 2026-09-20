@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-19T21:56:32.357246+00:00",
+  "generated_at": "2026-09-20T02:26:18.327646+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 43,
+        "value": 42,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 10,
-        "score": 3.0,
+        "value": 8,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1716,
-    "recent_30d_count": 43,
+    "recent_30d_count": 42,
     "recent": [
       {
         "cve_id": "CVE-2025-39964",
@@ -238,30 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 97,
-    "critical_count": 10,
-    "high_count": 17,
+    "total": 108,
+    "critical_count": 8,
+    "high_count": 20,
     "cves": [
-      {
-        "cve_id": "CVE-2026-93740",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "A vulnerability was identified in Totolink A3002MU Hh-B20211125.1046. Affected is the function formWlEncrypt of the file /boafrm/formWlEncrypt. The manipulation of the argument submit-url leads to buf",
-        "published": "2026-09-18T22:17:10.890"
-      },
       {
         "cve_id": "CVE-2026-93741",
         "severity": "CRITICAL",
         "base_score": 10.0,
         "description": "A security flaw has been discovered in Totolink A3002MU Hh-B20211125.1046. Affected by this vulnerability is the function formWlWds of the file /boafrm/formWlWds. The manipulation of the argument subm",
         "published": "2026-09-19T06:16:30.557"
-      },
-      {
-        "cve_id": "CVE-2026-93739",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A vulnerability was determined in Totolink A3002MU Hh-B20211125.1046. This impacts the function formWlAc of the file /boafrm/formWlAc. Executing a manipulation of the argument submit-url can lead to b",
-        "published": "2026-09-18T22:17:10.710"
       },
       {
         "cve_id": "CVE-2026-93742",
@@ -292,11 +278,11 @@
         "published": "2026-09-19T07:16:33.063"
       },
       {
-        "cve_id": "CVE-2026-75885",
+        "cve_id": "CVE-2026-78030",
         "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "A flaw was found in the OpenShift console. Unauthenticated access to the `/api/devfile/` and `/api/devfile/samples/` endpoints allows a remote attacker to send crafted devfile payloads. This can lead ",
-        "published": "2026-09-18T22:17:10.313"
+        "base_score": 9.8,
+        "description": "DBI versions before 1.653 for Perl load arbitrary modules via unvalidated dbm_type and dbm_mldbm attributes in DBD::DBM.\n\nDBD::DBM passes the dbm_type and dbm_mldbm connect attributes to require witho",
+        "published": "2026-09-19T11:16:37.667"
       },
       {
         "cve_id": "CVE-2026-89274",
@@ -311,20 +297,6 @@
         "base_score": 9.1,
         "description": "The The Forminator Forms \u2013 Contact Form, Payment Form & Custom Form Builder plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 1.57.2. This is du",
         "published": "2026-09-19T03:17:17.040"
-      },
-      {
-        "cve_id": "CVE-2026-93922",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "SiYuan through 3.8.4 renders notebook names as raw HTML in the Daily Note picker dialog without escaping, allowing stored cross-site scripting in the Electron renderer. Attackers can create notebooks ",
-        "published": "2026-09-19T00:16:57.783"
-      },
-      {
-        "cve_id": "CVE-2026-93923",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "SiYuan through 3.8.4 fails to escape heading style attributes when rendering outline and bookmark dock HTML, allowing stored cross-site scripting. Attackers can supply crafted notebooks or call admini",
-        "published": "2026-09-19T00:16:57.963"
       },
       {
         "cve_id": "CVE-2026-92807",
@@ -355,6 +327,13 @@
         "published": "2026-09-19T08:16:53.887"
       },
       {
+        "cve_id": "CVE-2026-93993",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Mistral Vibe before 2.25.5 contains a remote code execution vulnerability in the worktree creation process that executes git hooks before trust validation. Attackers can supply a repository with a cra",
+        "published": "2026-09-19T23:17:10.673"
+      },
+      {
         "cve_id": "CVE-2026-88926",
         "severity": "HIGH",
         "base_score": 8.6,
@@ -376,11 +355,32 @@
         "published": "2026-09-19T08:16:54.770"
       },
       {
+        "cve_id": "CVE-2026-93992",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Gopeed through 2.0.0-beta.3 contains a path traversal vulnerability in archive extraction that allows attackers to write arbitrary files outside the extraction directory. Attackers can craft malicious",
+        "published": "2026-09-19T23:17:10.517"
+      },
+      {
         "cve_id": "CVE-2026-85574",
         "severity": "HIGH",
         "base_score": 8.0,
         "description": "The Unbounce Landing Pages WordPress plugin before 1.1.5 does not perform any authorisation check when updating the configuration its front-end proxy relies on, allowing any authenticated user, such a",
         "published": "2026-09-19T07:16:32.860"
+      },
+      {
+        "cve_id": "CVE-2026-93991",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "Argo Workflows versions 4.1.0 through 4.1.3 contain an authorization bypass vulnerability in ListArchivedWorkflows that fails to apply cluster-scoped access review when the metadata.namespace field se",
+        "published": "2026-09-19T23:17:10.360"
+      },
+      {
+        "cve_id": "CVE-2026-87909",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The WP Photo Album Plus plugin for WordPress is vulnerable to Remote Code Execution in all versions via the wppa_image_magick function. This is due to insufficient sanitization of the multipart upload",
+        "published": "2026-09-19T03:17:15.853"
       }
     ]
   },
