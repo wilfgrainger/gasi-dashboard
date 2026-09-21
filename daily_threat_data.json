@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T17:26:51.194381+00:00",
+  "generated_at": "2026-09-21T22:55:28.366464+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 42,
+        "value": 43,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
+        "value": 8,
         "score": 2.5,
         "max": 3
       },
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1716,
-    "recent_30d_count": 42,
+    "total_catalog_count": 1717,
+    "recent_30d_count": 43,
     "recent": [
+      {
+        "cve_id": "CVE-2026-7273",
+        "vendor": "Zyxel",
+        "product": "GS1900 Series Switches",
+        "name": "Zyxel GS1900 Series Switches Stack-Based Buffer Overflow Vulnerability",
+        "date_added": "2026-09-21",
+        "due_date": "2026-09-24",
+        "description": "Zyxel GS1900 series switches contain a stack-based buffer overflow vulnerability in the CGI program which could allow a LAN-based, unauthenticated attacker to exploit the flaw and potentially execute ",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2025-39964",
         "vendor": "Linux",
@@ -224,31 +234,14 @@
         "due_date": "2026-09-22",
         "description": "Microsoft Windows Update Stack contains a link following vulnerability that allows a local attacker to escalate privileges locally up to SYSTEM.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-86218",
-        "vendor": "N-able",
-        "product": "N-central",
-        "name": "N-able N-central Static Code Injection Vulnerability",
-        "date_added": "2026-09-08",
-        "due_date": "2026-09-11",
-        "description": "N-able N-central contains a static code injection vulnerability that could allow for pre-authentication remote code execution.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 166,
-    "critical_count": 9,
-    "high_count": 21,
+    "total": 293,
+    "critical_count": 8,
+    "high_count": 24,
     "cves": [
-      {
-        "cve_id": "CVE-2026-94089",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "A vulnerability was determined in D-Link DIR-868L 2.01b05. This issue affects the function strcpy of the file /webfa_authentication.cgi of the component Authentication Handler. Executing a manipulatio",
-        "published": "2026-09-20T21:16:55.780"
-      },
       {
         "cve_id": "CVE-2026-94097",
         "severity": "CRITICAL",
@@ -348,11 +341,32 @@
         "published": "2026-09-21T13:17:10.830"
       },
       {
+        "cve_id": "CVE-2026-55071",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "MCP-for-Stata is a MCP server for integrating Stata into agent loops with a safety-first design. Prior to version 1.19.0, the ado_package_install MCP tool in stata-mcp concatenates user-controlled inp",
+        "published": "2026-09-21T15:17:29.450"
+      },
+      {
+        "cve_id": "CVE-2026-61628",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "nginx ignition is a user interface for the nginx web server. Prior to version 2.41.1, `POST /api/users/onboarding/finish` is registered as anonymous (unauthenticated) and creates a user with full Read",
+        "published": "2026-09-21T15:17:30.290"
+      },
+      {
         "cve_id": "CVE-2026-15801",
         "severity": "HIGH",
         "base_score": 8.0,
         "description": "A vulnerability was found in CRI-O related to the container checkpoint and restore feature. When CRI-O is configured to restore containers from checkpoint archives, insufficient validation of restore ",
         "published": "2026-09-21T09:17:05.743"
+      },
+      {
+        "cve_id": "CVE-2026-55567",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "BleachBit cleans files to free disk space and to maintain privacy. Prior to 6.0.1, privileged Windows cleaning does not lock and validate a target's parent directory before deletion. A local unprivile",
+        "published": "2026-09-21T15:17:29.793"
       },
       {
         "cve_id": "CVE-2026-47321",
@@ -367,20 +381,6 @@
         "base_score": 7.5,
         "description": "A specially crafted WS-Policy document with deeply nested policy elements can bypass Neethi's nesting-depth limit and exhaust the thread stack, crashing the parser (denial of service).\nUsers are recom",
         "published": "2026-09-21T12:17:24.697"
-      },
-      {
-        "cve_id": "CVE-2026-91864",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A specially crafted WS-Policy document can pack unlimited content inside a policy assertion, which Neethi copies into memory without counting it against its size limits, exhausting the heap (denial of",
-        "published": "2026-09-21T12:17:24.807"
-      },
-      {
-        "cve_id": "CVE-2026-91865",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A small WS-Policy document using repeated policy references can force Neethi to re-expand the same references exponentially during normalization, consuming huge amounts of CPU and memory (denial of se",
-        "published": "2026-09-21T12:17:24.903"
       }
     ]
   },
