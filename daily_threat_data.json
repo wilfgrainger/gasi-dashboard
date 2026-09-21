@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-21T09:25:22.580349+00:00",
+  "generated_at": "2026-09-21T17:26:51.194381+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 10,
-        "score": 3.0,
+        "value": 9,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,17 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 98,
-    "critical_count": 10,
-    "high_count": 25,
+    "total": 166,
+    "critical_count": 9,
+    "high_count": 21,
     "cves": [
-      {
-        "cve_id": "CVE-2026-94003",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "A vulnerability has been found in Comfast CF-N1-S 2.6.0.1. Impacted is the function get_css_path_from_uri of the file /cgi-bin/mbox-config of the component Web Management Interface. The manipulation l",
-        "published": "2026-09-20T12:17:05.403"
-      },
       {
         "cve_id": "CVE-2026-94089",
         "severity": "CRITICAL",
@@ -299,11 +292,11 @@
         "published": "2026-09-21T02:16:53.317"
       },
       {
-        "cve_id": "CVE-2026-90817",
+        "cve_id": "CVE-2026-82187",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "An unauthenticated Remote Code Execution vulnerability was found in the survey passthrough routing and Data Import processing logic, in which a malicious user could potentially exploit it by manipulat",
-        "published": "2026-09-20T13:17:44.973"
+        "description": "The Web to Print Online Designer WordPress plugin before 2.15.0 does not validate the type or extension of uploaded files, and hands the token protecting those uploads to any visitor who asks for it, ",
+        "published": "2026-09-21T07:16:53.317"
       },
       {
         "cve_id": "CVE-2026-94098",
@@ -311,34 +304,6 @@
         "base_score": 9.1,
         "description": "A vulnerability was identified in Netcore NBR200V2 1.3.241127.071246. This vulnerability affects unknown code of the file /www/cgi-bin/upgrade of the component Firmware Upgrade CGI Endpoint. Such mani",
         "published": "2026-09-21T01:16:29.800"
-      },
-      {
-        "cve_id": "CVE-2026-94104",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "NivoCart through 2.4.0 contains an arbitrary file upload vulnerability in the File Manager multi() endpoint that fails to validate file extensions for new filenames or when chunks parameter is 2 or hi",
-        "published": "2026-09-20T12:17:05.777"
-      },
-      {
-        "cve_id": "CVE-2026-94106",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "getID3 before 1.9.26 contains an OS command injection vulnerability in shell-out handlers that fail to escape filenames in command strings. Attackers can craft malicious filenames containing shell met",
-        "published": "2026-09-20T12:17:06.110"
-      },
-      {
-        "cve_id": "CVE-2026-94109",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "openEQUELLA versions before 2026.1.0 contain a remote code execution vulnerability in FreeMarker template compilation due to an unsandboxed TemplateClassResolver configuration. Authenticated attackers",
-        "published": "2026-09-20T12:17:06.620"
-      },
-      {
-        "cve_id": "CVE-2026-94036",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A security flaw has been discovered in D-Link DIR-X1860 and DIR-X1860Z up to 1.0.2.220120.165402. The impacted element is an unknown function of the file /ubus of the component routerd. The manipulati",
-        "published": "2026-09-20T16:16:55.490"
       },
       {
         "cve_id": "CVE-2026-94128",
@@ -369,11 +334,18 @@
         "published": "2026-09-21T07:16:53.993"
       },
       {
-        "cve_id": "CVE-2026-94107",
+        "cve_id": "CVE-2026-92574",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "NivoCart through 2.4.0 contains a predictable password reset token vulnerability in the forgotten.php endpoint that generates recovery codes using substr(md5(mt_rand()), 0, 10). Attackers who know an ",
-        "published": "2026-09-20T12:17:06.277"
+        "base_score": 8.8,
+        "description": "A vulnerability in CRI-O checkpoint restore allows a user who can create a pod from a malicious checkpointed container to bypass the destination Kubernetes security context. The restored process may r",
+        "published": "2026-09-21T10:17:17.360"
+      },
+      {
+        "cve_id": "CVE-2026-84285",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "An OS Command Injection vulnerability affecting Tuleap Enterprise Edition from 17.3 through 17.5 could allow an attacker to execute arbitrary commands on the server.",
+        "published": "2026-09-21T13:17:10.830"
       },
       {
         "cve_id": "CVE-2026-15801",
@@ -381,6 +353,34 @@
         "base_score": 8.0,
         "description": "A vulnerability was found in CRI-O related to the container checkpoint and restore feature. When CRI-O is configured to restore containers from checkpoint archives, insufficient validation of restore ",
         "published": "2026-09-21T09:17:05.743"
+      },
+      {
+        "cve_id": "CVE-2026-47321",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The CompressionFilter class uses ZLib to deflate and inflate data sent and received. When we inflate incoming data, the filter does not control the resulting size, and create a buffer no matter what.\n",
+        "published": "2026-09-21T08:16:37.520"
+      },
+      {
+        "cve_id": "CVE-2026-91863",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A specially crafted WS-Policy document with deeply nested policy elements can bypass Neethi's nesting-depth limit and exhaust the thread stack, crashing the parser (denial of service).\nUsers are recom",
+        "published": "2026-09-21T12:17:24.697"
+      },
+      {
+        "cve_id": "CVE-2026-91864",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A specially crafted WS-Policy document can pack unlimited content inside a policy assertion, which Neethi copies into memory without counting it against its size limits, exhausting the heap (denial of",
+        "published": "2026-09-21T12:17:24.807"
+      },
+      {
+        "cve_id": "CVE-2026-91865",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A small WS-Policy document using repeated policy references can force Neethi to re-expand the same references exponentially during normalization, consuming huge amounts of CPU and memory (denial of se",
+        "published": "2026-09-21T12:17:24.903"
       }
     ]
   },
