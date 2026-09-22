@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T08:53:52.256638+00:00",
+  "generated_at": "2026-09-22T15:57:30.592830+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -238,16 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 309,
+    "total": 325,
     "critical_count": 3,
-    "high_count": 22,
+    "high_count": 37,
     "cves": [
       {
-        "cve_id": "CVE-2026-94301",
+        "cve_id": "CVE-2026-79920",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The fix for CVE-2026-47065/ZDRES-232 (\"resolveProxyClass Not Overridden - acceptMatchers Filter Bypass via java.lang.reflect.Proxy\"), released on 2026-06-02 and announced as \"Fully addressed\" in MINA ",
-        "published": "2026-09-21T15:17:38.903"
+        "base_score": 9.9,
+        "description": "Ajenti is a Linux & BSD modular server admin panel. Prior to version 2.2.16, any authenticated user can call /api/core/tasks/start to enqueue InstallPlugin, UnInstallPlugin, or UpgradeAll from plugins",
+        "published": "2026-09-21T17:18:59.567"
       },
       {
         "cve_id": "CVE-2026-85751",
@@ -257,25 +257,11 @@
         "published": "2026-09-21T16:17:25.070"
       },
       {
-        "cve_id": "CVE-2026-86473",
+        "cve_id": "CVE-2026-58491",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Apache Airflow: the Core API logout endpoint revokes only a session token presented as the _token cookie. When a client logs out presenting its credential as an Authorization bearer header instead, th",
-        "published": "2026-09-21T15:17:32.997"
-      },
-      {
-        "cve_id": "CVE-2026-92574",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A vulnerability in CRI-O checkpoint restore allows a user who can create a pod from a malicious checkpointed container to bypass the destination Kubernetes security context. The restored process may r",
-        "published": "2026-09-21T10:17:17.360"
-      },
-      {
-        "cve_id": "CVE-2026-84285",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "An OS Command Injection vulnerability affecting Tuleap Enterprise Edition from 17.3 through 17.5 could allow an attacker to execute arbitrary commands on the server.",
-        "published": "2026-09-21T13:17:10.830"
+        "base_score": 9.3,
+        "description": "Warpgate is an open source SSH, HTTPS and MySQL bastion host for Linux. Prior to 0.25.5, the /@warpgate/api/sso/providers/:name/start endpoint stores an attacker-controlled next parameter that the POS",
+        "published": "2026-09-21T19:17:06.910"
       },
       {
         "cve_id": "CVE-2026-53940",
@@ -299,88 +285,102 @@
         "published": "2026-09-21T17:17:37.150"
       },
       {
-        "cve_id": "CVE-2026-55071",
+        "cve_id": "CVE-2026-63116",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "deepstream is a server that allows clients and backend services to sync data, send messages and make rpcs at scale. From 10.1.0 until 10.1.1, src/services/permission/valve/rules-map.ts omits RECORD_AC",
+        "published": "2026-09-21T17:17:38.510"
+      },
+      {
+        "cve_id": "CVE-2026-84990",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "ntopng is a web-based network traffic monitoring application. Prior to 6.7.260718, scripts/lua/rest/v2/get/system/configurations/list_available_backups.lua and scripts/lua/rest/v2/get/system/configura",
+        "published": "2026-09-21T17:19:13.340"
+      },
+      {
+        "cve_id": "CVE-2026-62182",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "KubeEdge is an open source system for extending native containerized application orchestration capabilities to hosts at Edge. From 1.21.0 until 1.21.2, 1.22.2, and 1.23.1, ConfigUpdateJob processing i",
+        "published": "2026-09-21T18:17:09.420"
+      },
+      {
+        "cve_id": "CVE-2026-94403",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A weakness has been identified in ColorFul iGameCenter 1.0.3.4. This impacts the function sub_140001AF0 in the library ene.sys of the component IOCTL Handler. This manipulation causes untrusted pointe",
+        "published": "2026-09-21T19:17:19.867"
+      },
+      {
+        "cve_id": "CVE-2026-94411",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "jshERP 3.6 contains a privilege escalation vulnerability in the updateOneValueByKeyIdAndType endpoint that allows authenticated users to grant themselves arbitrary roles. Attackers can send a POST req",
+        "published": "2026-09-21T19:17:20.067"
+      },
+      {
+        "cve_id": "CVE-2026-94412",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "jshERP through 3.6 contains an authorization bypass vulnerability in the POST /user/resetPwd endpoint that allows authenticated users to reset any other user's password. Attackers can submit a request",
+        "published": "2026-09-21T19:17:20.217"
+      },
+      {
+        "cve_id": "CVE-2026-94501",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "jshERP through 3.6 contains an authorization bypass vulnerability in the userBusiness CRUD endpoints that allows authenticated users to create, modify, or delete authorization-relation rows without pr",
+        "published": "2026-09-21T19:17:21.910"
+      },
+      {
+        "cve_id": "CVE-2026-55159",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "luci-app-adblock-fast a WebUI for fast, lightweight DNS-based ad-blocker for OpenWrt that works with dnsmasq, smartdns, or unbound. Prior to 1.2.4-2, the luci.adblock-fast.setCronEntry RPC method acce",
+        "published": "2026-09-21T20:17:26.500"
+      },
+      {
+        "cve_id": "CVE-2026-55897",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "luci-app-advanced-reboot is a LuCI (web interface) application for OpenWrt that provides a  way to reboot your router into an alternative firmware partition or perform  reboot operations directly from",
+        "published": "2026-09-21T20:17:26.670"
+      },
+      {
+        "cve_id": "CVE-2026-49811",
         "severity": "HIGH",
         "base_score": 8.4,
-        "description": "MCP-for-Stata is a MCP server for integrating Stata into agent loops with a safety-first design. Prior to version 1.19.0, the ado_package_install MCP tool in stata-mcp concatenates user-controlled inp",
-        "published": "2026-09-21T15:17:29.450"
+        "description": "Dell Command | Monitor (DCM), versions prior to 10.13.2, contain an Incorrect Permission Assignment for Critical Resource vulnerability. A low privileged attacker with local access could potentially e",
+        "published": "2026-09-21T20:17:25.660"
       },
       {
-        "cve_id": "CVE-2026-61628",
+        "cve_id": "CVE-2026-94496",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "jshERP through 3.6 fails to validate caller permissions in role management endpoints, allowing authenticated users to modify any role's data scope or delete roles. Attackers can exploit the /role/upda",
+        "published": "2026-09-21T19:17:21.590"
+      },
+      {
+        "cve_id": "CVE-2026-94497",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "jshERP through 3.6 fails to validate object ownership in by-id info, update, and delete endpoints across multiple resource types. Authenticated users can read, modify, and delete other users' business",
+        "published": "2026-09-21T19:17:21.743"
+      },
+      {
+        "cve_id": "CVE-2026-94488",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Telegram Desktop before 6.9.4 allows XSS in the HTML exporter. (The first fixed stable version is 7.0.1.) This occurs in button.text.toUtf8 in export_output_html.cpp. Exploitation cannot occur unless ",
+        "published": "2026-09-21T18:17:17.173"
+      },
+      {
+        "cve_id": "CVE-2026-77560",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "nginx ignition is a user interface for the nginx web server. Prior to version 2.41.1, `POST /api/users/onboarding/finish` is registered as anonymous (unauthenticated) and creates a user with full Read",
-        "published": "2026-09-21T15:17:30.290"
-      },
-      {
-        "cve_id": "CVE-2026-80110",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "A flaw was found in pki-core. The v2 REST ACL filter selects a tie-breaking permission for colliding literal and wildcard ACL keys using lexicographic string comparison rather than specificity, causin",
-        "published": "2026-09-21T15:17:32.060"
-      },
-      {
-        "cve_id": "CVE-2026-94184",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "A stack-based buffer overflow flaw was found in fetchmail when built with NTLM support. A malicious or compromised mail server advertising NTLM authentication can send a crafted Type 2 challenge that ",
-        "published": "2026-09-21T15:17:38.547"
-      },
-      {
-        "cve_id": "CVE-2026-15801",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "A vulnerability was found in CRI-O related to the container checkpoint and restore feature. When CRI-O is configured to restore containers from checkpoint archives, insufficient validation of restore ",
-        "published": "2026-09-21T09:17:05.743"
-      },
-      {
-        "cve_id": "CVE-2026-55567",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "BleachBit cleans files to free disk space and to maintain privacy. Prior to 6.0.1, privileged Windows cleaning does not lock and validate a target's parent directory before deletion. A local unprivile",
-        "published": "2026-09-21T15:17:29.793"
-      },
-      {
-        "cve_id": "CVE-2026-91863",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A specially crafted WS-Policy document with deeply nested policy elements can bypass Neethi's nesting-depth limit and exhaust the thread stack, crashing the parser (denial of service).\nUsers are recom",
-        "published": "2026-09-21T12:17:24.697"
-      },
-      {
-        "cve_id": "CVE-2026-91864",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A specially crafted WS-Policy document can pack unlimited content inside a policy assertion, which Neethi copies into memory without counting it against its size limits, exhausting the heap (denial of",
-        "published": "2026-09-21T12:17:24.807"
-      },
-      {
-        "cve_id": "CVE-2026-91865",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A small WS-Policy document using repeated policy references can force Neethi to re-expand the same references exponentially during normalization, consuming huge amounts of CPU and memory (denial of se",
-        "published": "2026-09-21T12:17:24.903"
-      },
-      {
-        "cve_id": "CVE-2026-91866",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A specially crafted pair of WS-Policy documents can force Neethi's policy-intersection to do exponential amounts of work, pinning the CPU for a long time (denial of service).\nUsers are recommended to ",
-        "published": "2026-09-21T12:17:25.000"
-      },
-      {
-        "cve_id": "CVE-2026-88806",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A malicious X server could exploit a buffer overflow in libX11 before 1.8.14 during handling of XkbGetMap overflowing the key_sym_map.",
-        "published": "2026-09-21T14:17:22.273"
-      },
-      {
-        "cve_id": "CVE-2026-61629",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "nginx ignition is a user interface for the nginx web server. In versions 2.29.0 through 2.40.0, the gin i18n middleware in nginx-ignition's API server runs in front of every HTTP request and calls `go",
-        "published": "2026-09-21T15:17:30.477"
+        "description": "Tinyauth is an authentication and authorization server. Prior to 5.1.2, Tinyauth compares forwarded hostnames case-sensitively while reverse proxies route equivalent hostnames case-insensitively, allo",
+        "published": "2026-09-21T17:18:52.770"
       }
     ]
   },
