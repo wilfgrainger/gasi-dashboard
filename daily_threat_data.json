@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-22T19:33:08.056042+00:00",
+  "generated_at": "2026-09-22T22:32:09.738270+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 43,
+        "value": 47,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
-        "score": 2.5,
+        "value": 11,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -32,9 +32,49 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1717,
-    "recent_30d_count": 43,
+    "total_catalog_count": 1721,
+    "recent_30d_count": 47,
     "recent": [
+      {
+        "cve_id": "CVE-2026-93952",
+        "vendor": "Arista",
+        "product": "VeloCloud Orchestrator",
+        "name": "Arista VeloCloud Orchestrator Improper Input Validation Vulnerability",
+        "date_added": "2026-09-22",
+        "due_date": "2026-09-25",
+        "description": "Arista VeloCloud Orchestrator (VCO) on-prem contains an improper input validation vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Su",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-94127",
+        "vendor": "F5",
+        "product": "BIG-IP APM",
+        "name": "F5 BIG-IP APM Heap-based Buffer Overflow Vulnerability",
+        "date_added": "2026-09-22",
+        "due_date": "2026-09-25",
+        "description": "F5 BIG-IP APM contains a heap-based buffer overflow vulnerability when access policy and an OAuth profile are configured on a virtual server. This vulnerability could allow an unauthenticated attacker",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-93616",
+        "vendor": "Check Point",
+        "product": "Multiple Products",
+        "name": "Check Point Multiple Products Path Traversal Vulnerability",
+        "date_added": "2026-09-22",
+        "due_date": "2026-09-25",
+        "description": "Check Point Security Management Server, Multi-Domain Security Management Server, Log Server, Multi-Domain Log Server, and SmartEvent contain a path traversal vulnerability that allows an unauthenticat",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-85102",
+        "vendor": "Check Point",
+        "product": "Multiple Products",
+        "name": "Check Point Multiple Products Improper Certificate Validation Vulnerability",
+        "date_added": "2026-09-22",
+        "due_date": "2026-09-25",
+        "description": "Check Point Security Gateway and Check Point Spark Firewall using Site to Site VPN or Remote Access VPN contain an improper certificate validation vulnerability which could allow an unauthenticated re",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-7273",
         "vendor": "Zyxel",
@@ -194,193 +234,153 @@
         "due_date": "2026-09-12",
         "description": "Fortinet FortiOS, FortiSwitchManager, and FortiSASE contain a heap-based buffer overflow vulnerability that allows an attacker to execute unauthorized code or commands via specially crafted packets.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-87491",
-        "vendor": "Google",
-        "product": "Chromium V8",
-        "name": "Google Chromium V8 Out of Bounds Write Vulnerability",
-        "date_added": "2026-09-09",
-        "due_date": "2026-09-23",
-        "description": "Google Chromium V8 contains an out of bounds write vulnerability that allows a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. This vulnerability could affect mul",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-20079",
-        "vendor": "Cisco",
-        "product": "Secure Firewall Management Center (FMC) and Security Cloud Control (SCC) Firewall Management",
-        "name": "Cisco Firewall Management Center Authentication Bypass Using an Alternate Path or Channel Vulnerability",
-        "date_added": "2026-09-09",
-        "due_date": "2026-09-12",
-        "description": "Cisco Secure Firewall Management Center (FMC) Software and Cisco Security Cloud Control (SCC) Firewall Management contain an authentication Bypass using an alternate path or channel vulnerability that",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-75650",
-        "vendor": "Adobe",
-        "product": "Commerce and Magento",
-        "name": "Adobe Commerce and Magento Improper Neutralization of Special Elements Used in a Template Engine Vulnerability",
-        "date_added": "2026-09-08",
-        "due_date": "2026-09-11",
-        "description": "Adobe Commerce and Magento Open Source contain an improper neutralization of special elements used in a template engine vulnerability that could allow an attacker to execute arbitrary code.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-81963",
-        "vendor": "Microsoft",
-        "product": "Windows",
-        "name": "Microsoft Windows Link Following Vulnerability",
-        "date_added": "2026-09-08",
-        "due_date": "2026-09-22",
-        "description": "Microsoft Windows Update Stack contains a link following vulnerability that allows a local attacker to escalate privileges locally up to SYSTEM.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 448,
-    "critical_count": 5,
-    "high_count": 34,
+    "total": 443,
+    "critical_count": 11,
+    "high_count": 30,
     "cves": [
       {
-        "cve_id": "CVE-2026-77521",
+        "cve_id": "CVE-2026-94493",
         "severity": "CRITICAL",
         "base_score": 10.0,
-        "description": "MaxKB is an open-source AI assistant for enterprise. Prior to version 2.10.5-lts, assistants with a tool, MCP tool, skill, or sub-application use SandboxShellBackend, which exposes an execute shell to",
-        "published": "2026-09-21T21:17:10.943"
+        "description": "A vulnerability was detected in Gigatech PDV5701 1.0.31_240305_112640. This issue affects some unknown processing of the file /index.html of the component WebSocket Service. The manipulation results i",
+        "published": "2026-09-22T01:16:56.437"
       },
       {
-        "cve_id": "CVE-2026-88402",
+        "cve_id": "CVE-2026-93952",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "VeloCloud Orchestrator (VCO) on-prem has a security issue where this issue may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may ",
+        "published": "2026-09-22T08:16:43.047"
+      },
+      {
+        "cve_id": "CVE-2026-13355",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "A SQL injection vulnerability in the checkSQL function of nocobase v2.1.21 allows attackers to access sesntive database information via injecting crafted SQL statements.",
-        "published": "2026-09-21T21:17:14.273"
+        "description": "The Meta Box AIO plugin for WordPress is vulnerable to Privilege Escalation to Administrator in versions up to, and including, 3.11.0. This is due to a chained flaw: the populate_via_query_string() fu",
+        "published": "2026-09-22T05:16:54.960"
       },
       {
-        "cve_id": "CVE-2026-88404",
+        "cve_id": "CVE-2026-19658",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "A remote code execution (RCE) vulnerability in the UniscriptExecutionService.execute() function (/services/script-execution.service.ts) of Univer v1.0.0-alpha.2 allows attackers to execute arbitrary c",
-        "published": "2026-09-21T21:17:14.507"
+        "description": "The Give Tributes plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 2.3.1 via deserialization of untrusted input . This makes it possible for unauthentic",
+        "published": "2026-09-22T05:16:55.167"
       },
       {
-        "cve_id": "CVE-2026-78847",
+        "cve_id": "CVE-2016-15059",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "An issue in gray-matter All versions (verified on 4.0.3) allows the JavaScript engine in lib/engines.js using eval() to parse front matter when language is js/javascript.This allows arbitrary code exe",
-        "published": "2026-09-21T22:16:58.863"
+        "description": "Net::IDN::Punycode versions before 2.301 for Perl allow a heap buffer overflow via unchecked writes past the output buffer in encode_punycode.\n\nThe XS backend builds the encoded label in the string bu",
+        "published": "2026-09-22T08:16:34.520"
       },
       {
-        "cve_id": "CVE-2026-79916",
+        "cve_id": "CVE-2026-25254",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Improper authorization leads to Remote Code Execution via SocketIO interface.",
+        "published": "2026-09-22T10:17:08.583"
+      },
+      {
+        "cve_id": "CVE-2026-74849",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Zohocorp ManageEngine ADSelfService Plus versions before build 7001 are vulnerable to a remote code execution vulnerability in the GINA client.",
+        "published": "2026-09-22T12:17:14.007"
+      },
+      {
+        "cve_id": "CVE-2026-93616",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A directory traversal and file upload vulnerability allows an unauthenticated attacker to upload and execute arbitrary scripts on Check Point Management Server.",
+        "published": "2026-09-22T13:17:11.963"
+      },
+      {
+        "cve_id": "CVE-2026-12718",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Karel Electronic Industry and Trade Inc. KarelIPS allows Blind SQL Injection.\n\nThis issue affects ",
+        "published": "2026-09-22T14:17:12.490"
+      },
+      {
+        "cve_id": "CVE-2026-87078",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "MaxKB is an open-source AI assistant for enterprise. Prior to 2.10.5-lts, authenticated workspace members can inject control characters into AWS Bedrock access_key_id and secret_access_key fields that",
-        "published": "2026-09-21T21:17:12.450"
+        "description": "Net::IDN::Punycode versions from 2.302 before 2.590 for Perl leak the output buffer on every rejected label in decode_punycode.\n\nThe XS backend allocates the scalar it returns before it validates the ",
+        "published": "2026-09-22T08:16:40.530"
       },
       {
-        "cve_id": "CVE-2026-55159",
+        "cve_id": "CVE-2026-87080",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Net::IDN::Punycode::PP versions before 2.590 for Perl decode a truncated label to a name containing a character it never encoded in decode_punycode.\n\nThe pure-Perl decoder reads one digit at a time wi",
+        "published": "2026-09-22T08:16:40.750"
+      },
+      {
+        "cve_id": "CVE-2026-94425",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "luci-app-adblock-fast a WebUI for fast, lightweight DNS-based ad-blocker for OpenWrt that works with dnsmasq, smartdns, or unbound. Prior to 1.2.4-2, the luci.adblock-fast.setCronEntry RPC method acce",
-        "published": "2026-09-21T20:17:26.500"
+        "description": "A vulnerability was found in Moore Threads MTT S80 Driver Package 340.150. The affected element is the function sub_140006F0C in the library mtdispkm64.sys of the component IOCTL Handler. The manipula",
+        "published": "2026-09-21T23:16:56.697"
       },
       {
-        "cve_id": "CVE-2026-55897",
+        "cve_id": "CVE-2026-92438",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "luci-app-advanced-reboot is a LuCI (web interface) application for OpenWrt that provides a  way to reboot your router into an alternative firmware partition or perform  reboot operations directly from",
-        "published": "2026-09-21T20:17:26.670"
+        "description": "The Ninja Forms WordPress plugin 3.15.3 does not escape submitted form field values before outputting them on the submission edit screen in the admin area, which could allow unauthenticated users to s",
+        "published": "2026-09-22T07:16:31.220"
       },
       {
-        "cve_id": "CVE-2026-88409",
+        "cve_id": "CVE-2025-1281",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "FalkorDB (Redis module) v4.20.1 to v4.20.4 was discovered to contain a buffer overflow in the _Decode_GrB_Matrix function (/v19/decode_matrix.c). This vulnerability allows attackers to cause a Denial ",
-        "published": "2026-09-21T21:17:15.120"
+        "description": "The BM Content Builder plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the ux_cb_remove_layout_ajax() and ux_cb_tools_export_ajax() functions ",
+        "published": "2026-09-22T08:16:36.250"
       },
       {
-        "cve_id": "CVE-2026-94424",
+        "cve_id": "CVE-2026-25255",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A vulnerability has been found in Moore Threads MTT S80 Driver Package up to 340.150. Impacted is the function sub_140001000 in the library mtdispkm64.sys of the component IOCTL Handler. The manipulat",
-        "published": "2026-09-21T21:17:21.793"
+        "description": "Exposed dangerous function lead to privilege escalation via gRPC server.",
+        "published": "2026-09-22T10:17:08.847"
       },
       {
-        "cve_id": "CVE-2026-88738",
+        "cve_id": "CVE-2026-25264",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Jazzware RT1000 Edge webUI v. 20.0.1 contains an unrestricted file upload vulnerability in the upgrade package upload functionality. An attacker with administrative privileges can upload a server-side",
-        "published": "2026-09-21T22:16:59.133"
+        "description": "Privilege escalation due to weak configuration during package extraction process.",
+        "published": "2026-09-22T10:17:09.110"
       },
       {
-        "cve_id": "CVE-2026-49811",
+        "cve_id": "CVE-2026-25265",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Privilege escalation due to weak configuration while temporary file handling.",
+        "published": "2026-09-22T10:17:09.243"
+      },
+      {
+        "cve_id": "CVE-2026-75791",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Zohocorp ManageEngine ADSelfService Plus versions before build 7001 are vulnerable to an authentication bypass vulnerability in the REST API.",
+        "published": "2026-09-22T13:17:11.170"
+      },
+      {
+        "cve_id": "CVE-2026-74766",
         "severity": "HIGH",
         "base_score": 8.4,
-        "description": "Dell Command | Monitor (DCM), versions prior to 10.13.2, contain an Incorrect Permission Assignment for Critical Resource vulnerability. A low privileged attacker with local access could potentially e",
-        "published": "2026-09-21T20:17:25.660"
+        "description": "Net::IDN::Punycode versions from 2.301 before 2.590 for Perl allow a heap use-after-free via a decoded code point that reallocates the output buffer in decode_punycode.\n\nThe XS backend inserts each de",
+        "published": "2026-09-22T08:16:40.267"
       },
       {
-        "cve_id": "CVE-2026-58269",
+        "cve_id": "CVE-2026-92235",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Sync-in Server is an open-source platform for file storage, sharing, collaboration, and syncing. Prior to version 2.4.0, `POST /api/auth/token` authenticates with username and password only, then call",
-        "published": "2026-09-21T20:17:26.837"
-      },
-      {
-        "cve_id": "CVE-2026-81469",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Dell Inventory Collector Client, versions prior to 15.0.0, contain an Unquoted Search Path or Element vulnerability. A low privileged attacker with local access could potentially exploit this vulnerab",
-        "published": "2026-09-21T20:17:33.130"
-      },
-      {
-        "cve_id": "CVE-2026-79079",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "An issue in CrossWire Xiphos <= 4.3.2 allows a local attacker to execute arbitrary code via the src/main/url.cc and src/gtk/menu_popup.c components",
-        "published": "2026-09-21T22:16:59.000"
-      },
-      {
-        "cve_id": "CVE-2026-55105",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Joplin is an open source note-taking and to-do application that organises notes and lists into notebooks. Prior to 3.6.15 and 3.7.2, packages/renderer/MdToHtml/rules/fountain.ts passes HTML generated ",
-        "published": "2026-09-21T21:17:05.320"
-      },
-      {
-        "cve_id": "CVE-2026-94540",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "DesktopSMS 1.11.0 by MrPear contains an unauthorized access vulnerability that allows local attackers to transmit SMS, retrieve SMS-derived content, and persist an attacker-selected paired identity by",
-        "published": "2026-09-21T22:17:00.800"
-      },
-      {
-        "cve_id": "CVE-2026-79316",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "An improper access control vulnerability exists in x-ui 0.3.2. Any authenticated panel user can modify the xray configuration template through the settings interface and trigger a panel restart, causi",
-        "published": "2026-09-21T21:17:12.100"
-      },
-      {
-        "cve_id": "CVE-2026-59814",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "Joplin is an open source note-taking and to-do application that organises notes and lists into notebooks. Prior to 3.7.7, Joplin Server's GET /shares/:id?resource_id= route serves a resource with the ",
-        "published": "2026-09-21T22:16:57.050"
-      },
-      {
-        "cve_id": "CVE-2026-73512",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Envoy is an open source edge and service proxy designed for cloud-native applications. Prior to 1.36.10, 1.37.6, 1.38.4, and 1.39.1, Envoy's HttpDatagramHandler caches the current RequestDecoder when ",
-        "published": "2026-09-21T20:17:27.647"
-      },
-      {
-        "cve_id": "CVE-2026-73513",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Envoy is an open source edge and service proxy designed for cloud-native applications. Prior to 1.36.10, 1.37.6, 1.38.4, and 1.39.1, Envoy's optional oghttp2 upstream HTTP/2 codec accepts a response t",
-        "published": "2026-09-21T20:17:27.820"
+        "description": "The The WP Ultimate Review plugin for WordPress is vulnerable to arbitrary shortcode execution in all versions up to, and including, 2.4.2. This is due to the software allowing users to execute an act",
+        "published": "2026-09-22T08:16:41.230"
       }
     ]
   },
