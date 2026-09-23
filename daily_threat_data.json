@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-23T19:19:44.319920+00:00",
+  "generated_at": "2026-09-23T22:33:34.735275+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 12,
-        "score": 3.0,
+        "value": 7,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,51 +238,23 @@
     ]
   },
   "nvd": {
-    "total": 419,
-    "critical_count": 12,
-    "high_count": 43,
+    "total": 481,
+    "critical_count": 7,
+    "high_count": 25,
     "cves": [
       {
-        "cve_id": "CVE-2026-16346",
+        "cve_id": "CVE-2026-96257",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "A flaw has been found in Fast FAC1203R Gigabit Edition 2.0.4. Affected by this issue is the function copy_msg_element of the component Device Discovery Service. Executing a manipulation can lead to st",
+        "published": "2026-09-23T03:17:06.077"
+      },
+      {
+        "cve_id": "CVE-2026-18169",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary commands due to improper neutralization of special elements used in an OS command.",
-        "published": "2026-09-22T22:17:06.607"
-      },
-      {
-        "cve_id": "CVE-2026-28324",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "SolarWinds Observability Self-Hosted was found to be affected by an unauthenticated remote code execution vulnerability due to the insufficient integrity checks. Installations configured in a non-defa",
-        "published": "2026-09-22T20:17:03.250"
-      },
-      {
-        "cve_id": "CVE-2026-47116",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "LTSecurity LTK3500SF contains a hard-coded credentials vulnerability where the root and guest account passwords are stored in /etc/shadow as weak hashes recoverable with dictionary-based cracking tool",
-        "published": "2026-09-22T20:17:03.583"
-      },
-      {
-        "cve_id": "CVE-2026-76708",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A vulnerability exists in the Analytics and Location Engine (ALE) where the application and underlying operating system use default, hard-coded credentials for several administrative and system accoun",
-        "published": "2026-09-22T20:17:06.620"
-      },
-      {
-        "cve_id": "CVE-2026-76709",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A vulnerability exists in the internal administrative component of Analytics and Location Engine (ALE). Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to ",
-        "published": "2026-09-22T20:17:06.750"
-      },
-      {
-        "cve_id": "CVE-2026-87121",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "lwIP\u00a0TCP/IP Stack MQTT\u00a0is vulnerable to an out-of-bounds write, which may allow an attacker to gain full code execution on the device.",
-        "published": "2026-09-22T20:17:09.967"
+        "description": "IBM Financial Transaction Manager (FTM) for RedHat OpenShift could allow a remote authenticated attacker to obtain sensitive information due to improper validation of symbolic links.",
+        "published": "2026-09-22T23:17:06.730"
       },
       {
         "cve_id": "CVE-2026-18162",
@@ -292,95 +264,123 @@
         "published": "2026-09-22T23:17:06.463"
       },
       {
-        "cve_id": "CVE-2026-17472",
+        "cve_id": "CVE-2026-18163",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "IBM Concert 1.0.0 through 3.0.0 could allow a remote authenticated attacker to access or modify unauthorized resources due to the use of wildcards in RBAC permission definitions.",
-        "published": "2026-09-22T22:17:07.683"
+        "base_score": 9.8,
+        "description": "IBM Financial Transaction Manager (FTM) for RedHat OpenShift could allow a remote attacker to execute arbitrary code due to improper deserialization of untrusted data.",
+        "published": "2026-09-22T23:17:06.600"
       },
       {
-        "cve_id": "CVE-2026-88624",
+        "cve_id": "CVE-2026-82331",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Missing path validation in the Worktree.remove component of openCode v1.18.26 allows attackers to execute arbitrary recursive directory deletion via a crafted payload.",
-        "published": "2026-09-22T20:17:11.260"
+        "base_score": 9.8,
+        "description": "Improper link resolution before file access ('link following') vulnerability in the `tar` source plugin of Apache BuildStream running on Python < 3.12 allows malicious source tarballs to write files o",
+        "published": "2026-09-23T07:16:46.493"
       },
       {
-        "cve_id": "CVE-2026-89282",
+        "cve_id": "CVE-2026-75799",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The Apache Lounge Windows distribution of Apache HTTP Server build contains an insecure installation directory permissions vulnerability through its default install directory on C:\\, which inherits wr",
-        "published": "2026-09-22T20:17:11.500"
+        "base_score": 9.0,
+        "description": "The YAHMAN Add-ons WordPress plugin before 0.9.31 does not validate the type of the remote files it caches in a publicly accessible directory, allowing unauthenticated attackers to write arbitrary PHP",
+        "published": "2026-09-23T06:17:01.710"
       },
       {
-        "cve_id": "CVE-2026-17635",
+        "cve_id": "CVE-2026-82843",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "IBM Financial Transaction Manager (FTM) for RedHat OpenShift could allow a remote attacker to perform unauthorized actions due to improper configuration of HTTP method-based security constraints.",
-        "published": "2026-09-22T22:17:08.077"
+        "base_score": 9.0,
+        "description": "The WP OAuth Server ( Login with WordPress ) WordPress plugin before 6.4.0 does not bind the OpenID Connect identity assertion it issues to the authorization grant being exchanged, returning instead t",
+        "published": "2026-09-23T06:17:02.363"
       },
       {
-        "cve_id": "CVE-2026-17645",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "IBM Financial Transaction Manager (FTM) for RedHat OpenShift could allow a remote authenticated attacker to gain elevated privileges due to improper privilege management.",
-        "published": "2026-09-22T22:17:08.730"
-      },
-      {
-        "cve_id": "CVE-2026-28325",
+        "cve_id": "CVE-2022-4997",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "SolarWinds Observability Self-Hosted was found to be affected by an unauthenticated remote code execution vulnerability stemming from deserialization of untrusted data when the application is configur",
-        "published": "2026-09-22T20:17:03.430"
+        "base_score": 8.6,
+        "description": "The jet-form-builder-stripe-gateway WordPress plugin before 1.1.0 does not sanitise and escape a payment token before using it in a SQL statement, allowing unauthenticated users to extract arbitrary d",
+        "published": "2026-09-23T06:16:59.060"
       },
       {
-        "cve_id": "CVE-2026-88419",
+        "cve_id": "CVE-2026-14321",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "An unrestricted upload of files with a dangerous type in the thumbnail-upload endpoint (/index.php?m=member&f=article&v=thumbUpload) of WuzhiCMS 5.0.0 allows an authenticated low-privileged member to ",
-        "published": "2026-09-22T20:17:11.083"
+        "base_score": 8.2,
+        "description": "The divi-dash WordPress plugin before 1.0.7 does not validate the source of the client IP address it uses for rate limiting and banning, allowing unauthenticated attackers to spoof arbitrary IP addres",
+        "published": "2026-09-23T06:17:00.850"
       },
       {
-        "cve_id": "CVE-2026-67615",
+        "cve_id": "CVE-2026-86608",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "openEQUELLA before 2026.1.0 contains an authenticated remote code execution vulnerability that allows any authenticated non-guest user to execute arbitrary code by exploiting Java deserialization in t",
-        "published": "2026-09-22T21:17:31.100"
+        "base_score": 8.2,
+        "description": "The WP Recipe Maker WordPress plugin before 10.8.2 does not have any authorisation check in one of its REST routes, nor does it bound what that route stores, allowing unauthenticated users to write un",
+        "published": "2026-09-23T06:17:04.030"
       },
       {
-        "cve_id": "CVE-2026-91018",
+        "cve_id": "CVE-2026-93508",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "lwIP (Lightweight IP)\u00a0has a double free vulnerability, which could crash the system, cause a DoS, memory corruption, or allow code execution on the victim system.",
-        "published": "2026-09-22T21:17:33.290"
+        "base_score": 8.1,
+        "description": "The WC Fields Factory WordPress plugin before 4.1.11 does not properly restrict access to its field-management AJAX action, allowing authenticated users with Subscriber-level access and above to creat",
+        "published": "2026-09-23T06:17:05.950"
       },
       {
-        "cve_id": "CVE-2026-16468",
+        "cve_id": "CVE-2026-91789",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary commands due to OS command injection.",
-        "published": "2026-09-22T22:17:07.017"
+        "base_score": 7.8,
+        "description": "Foxit PDF Editor/Reader\u2019s U3D/GIF texture decoding path contained insufficient validation of image dimensions and related size information. Under certain conditions, this could lead to an incorrectly ",
+        "published": "2026-09-23T08:17:10.753"
       },
       {
-        "cve_id": "CVE-2026-16469",
+        "cve_id": "CVE-2026-91790",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 px-runtime could allow a remote authenticated attacker to execute arbitrary commands due to improper neutralization of special elements used in an OS comman",
-        "published": "2026-09-22T22:17:07.147"
+        "base_score": 7.8,
+        "description": "When rendering the page image, Foxit PDF Editor/Reader fails to perform validation on image objects whose optional content attributes are malformed. As a result, the program may access an already-free",
+        "published": "2026-09-23T08:17:10.873"
       },
       {
-        "cve_id": "CVE-2026-16672",
+        "cve_id": "CVE-2026-91791",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special elements used in an OS command.",
-        "published": "2026-09-22T22:17:07.280"
+        "base_score": 7.8,
+        "description": "When processing a specially crafted PDF file, Foxit PDF Editor/Reader may encounter a reentrant execution condition involving JavaScript triggered by page-visibility events. This can cause the applica",
+        "published": "2026-09-23T08:17:10.987"
       },
       {
-        "cve_id": "CVE-2026-17102",
+        "cve_id": "CVE-2026-91792",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary commands due to improper neutralization of special elements used in an OS command.",
-        "published": "2026-09-22T22:17:07.407"
+        "base_score": 7.8,
+        "description": "When processing a specially crafted PDF, Foxit PDF Editor/Reader may perform reentrant zoom and layout operations through page- and annotation-related JavaScript actions. This can cause the applicatio",
+        "published": "2026-09-23T08:17:11.110"
+      },
+      {
+        "cve_id": "CVE-2026-91793",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "When opening a specially crafted PDF, Foxit PDF Editor/Reader executes scripts that modify annotation rich-text attributes containing malformed font data. During subsequent annotation appearance recon",
+        "published": "2026-09-23T08:17:11.223"
+      },
+      {
+        "cve_id": "CVE-2026-91794",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "An out-of-bounds write vulnerability exists in the PDF rendering process of Foxit PDF Editor/Reader due to insufficient consistency and boundary validation when processing malformed color space data, ",
+        "published": "2026-09-23T08:17:11.337"
+      },
+      {
+        "cve_id": "CVE-2026-91795",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Foxit PDF Editor/Reader's FileOpen plugin did not adequately validate certain encryption metadata in specially crafted PDF files. This could leave an internal pointer in an invalid state, resulting in",
+        "published": "2026-09-23T08:17:11.453"
+      },
+      {
+        "cve_id": "CVE-2026-61685",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "ReactPress is a publishing system for React developers. Prior to version 3.7.0, ReactPress API list endpoints build TypeORM `QueryBuilder` conditions using unsanitized HTTP query parameter names as SQ",
+        "published": "2026-09-22T23:17:07.600"
+      },
+      {
+        "cve_id": "CVE-2026-96272",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "ClipBucket v5 before 5.5.3-#182 contains a blind SQL injection vulnerability in the photo search endpoint where the query parameter is passed unsanitized into SQL WHERE and ORDER BY clauses. Unauthent",
+        "published": "2026-09-23T01:16:32.633"
       }
     ]
   },
