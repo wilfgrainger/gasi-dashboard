@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T02:28:05.522504+00:00",
+  "generated_at": "2026-09-23T08:56:04.038941+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 12,
+        "value": 10,
         "score": 3.0,
         "max": 3
       },
@@ -238,38 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 459,
-    "critical_count": 12,
-    "high_count": 30,
+    "total": 515,
+    "critical_count": 10,
+    "high_count": 27,
     "cves": [
-      {
-        "cve_id": "CVE-2026-93952",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "VeloCloud Orchestrator (VCO) on-prem has a security issue where this issue may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitation may ",
-        "published": "2026-09-22T08:16:43.047"
-      },
-      {
-        "cve_id": "CVE-2026-13355",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Meta Box AIO plugin for WordPress is vulnerable to Privilege Escalation to Administrator in versions up to, and including, 3.11.0. This is due to a chained flaw: the populate_via_query_string() fu",
-        "published": "2026-09-22T05:16:54.960"
-      },
-      {
-        "cve_id": "CVE-2026-19658",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Give Tributes plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 2.3.1 via deserialization of untrusted input . This makes it possible for unauthentic",
-        "published": "2026-09-22T05:16:55.167"
-      },
-      {
-        "cve_id": "CVE-2016-15059",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Net::IDN::Punycode versions before 2.301 for Perl allow a heap buffer overflow via unchecked writes past the output buffer in encode_punycode.\n\nThe XS backend builds the encoded label in the string bu",
-        "published": "2026-09-22T08:16:34.520"
-      },
       {
         "cve_id": "CVE-2026-25254",
         "severity": "CRITICAL",
@@ -313,32 +285,32 @@
         "published": "2026-09-22T15:17:11.513"
       },
       {
-        "cve_id": "CVE-2026-87078",
+        "cve_id": "CVE-2026-79313",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Net::IDN::Punycode versions from 2.302 before 2.590 for Perl leak the output buffer on every rejected label in decode_punycode.\n\nThe XS backend allocates the scalar it returns before it validates the ",
-        "published": "2026-09-22T08:16:40.530"
+        "base_score": 9.8,
+        "description": "webpy web.py 0.76 is vulnerable to Insufficient Session Expiration. The application's session management relies on periodic cleanup to expire sessions instead of checking the last-access time when a s",
+        "published": "2026-09-22T15:17:15.467"
       },
       {
-        "cve_id": "CVE-2026-87080",
+        "cve_id": "CVE-2026-93088",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Net::IDN::Punycode::PP versions before 2.590 for Perl decode a truncated label to a name containing a character it never encoded in decode_punycode.\n\nThe pure-Perl decoder reads one digit at a time wi",
-        "published": "2026-09-22T08:16:40.750"
+        "base_score": 9.8,
+        "description": "SGLang's multimodal generation runtime is vulnerable to unauthenticated arbitrary code execution because the disaggregated-diffusion orchestrator's DiffusionServer binds an unauthenticated ZeroMQ ROUT",
+        "published": "2026-09-22T15:17:21.433"
       },
       {
-        "cve_id": "CVE-2026-92438",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Ninja Forms WordPress plugin 3.15.3 does not escape submitted form field values before outputting them on the submission edit screen in the admin area, which could allow unauthenticated users to s",
-        "published": "2026-09-22T07:16:31.220"
+        "cve_id": "CVE-2026-94127",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "When a BIG-IP APM access policy and an OAuth profile are configured on a virtual server, specific malicious traffic can lead to remote code execution (RCE). This vulnerability is only present when BIG",
+        "published": "2026-09-22T15:17:24.313"
       },
       {
-        "cve_id": "CVE-2025-1281",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The BM Content Builder plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the ux_cb_remove_layout_ajax() and ux_cb_tools_export_ajax() functions ",
-        "published": "2026-09-22T08:16:36.250"
+        "cve_id": "CVE-2026-84388",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "A improper restriction of rendered ui layers or frames vulnerability in Fortinet FortiPAM Chrome Extension 8.0 all versions, FortiPAM Chrome Extension 7.4 all versions may allow attacker to informatio",
+        "published": "2026-09-22T15:17:18.950"
       },
       {
         "cve_id": "CVE-2026-25255",
@@ -362,6 +334,27 @@
         "published": "2026-09-22T10:17:09.243"
       },
       {
+        "cve_id": "CVE-2026-65128",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "NVIDIA Infrastructure Controller for Linux contains a vulnerability where an attacker could cause SQL injection. A successful exploit of this vulnerability might lead to code execution, data tampering",
+        "published": "2026-09-22T15:17:13.183"
+      },
+      {
+        "cve_id": "CVE-2026-65179",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "NVIDIA NeMo contains a vulnerability in the TabularTokenizer class where it deserializes an untrusted, attacker-controlled .pkl file via pickle.load() without validation. A successful exploit of this ",
+        "published": "2026-09-22T15:17:13.670"
+      },
+      {
+        "cve_id": "CVE-2026-70410",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection') vulnerability in Apache Calcite Avatica. Plugin instantiation (via AvaticaUtils#instantiatePlugin and other methods) ",
+        "published": "2026-09-22T16:17:52.930"
+      },
+      {
         "cve_id": "CVE-2026-75791",
         "severity": "HIGH",
         "base_score": 8.6,
@@ -369,18 +362,25 @@
         "published": "2026-09-22T13:17:11.170"
       },
       {
-        "cve_id": "CVE-2026-74766",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Net::IDN::Punycode versions from 2.301 before 2.590 for Perl allow a heap use-after-free via a decoded code point that reallocates the output buffer in decode_punycode.\n\nThe XS backend inserts each de",
-        "published": "2026-09-22T08:16:40.267"
-      },
-      {
         "cve_id": "CVE-2026-65114",
         "severity": "HIGH",
         "base_score": 8.3,
         "description": "NVIDIA Infrastructure Controller for Linux contains a vulnerability where an attacker could cause missing authentication for a critical function. A successful exploit of this vulnerability might lead ",
         "published": "2026-09-22T15:17:11.640"
+      },
+      {
+        "cve_id": "CVE-2026-65121",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "NVIDIA Infrastructure Controller for Linux contains a vulnerability where an  attacker could cause an improper authentication issue. A successful exploit of this vulnerability might lead to escalation",
+        "published": "2026-09-22T15:17:12.543"
+      },
+      {
+        "cve_id": "CVE-2026-75607",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Frigate is an open source network video recorder. Prior to 0.17.2, the WebSocket handler in frigate/comms/ws.py forwards attacker-selected message topics to the dispatcher without checking the authent",
+        "published": "2026-09-22T16:17:54.430"
       }
     ]
   },
