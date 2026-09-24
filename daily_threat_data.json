@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-24T08:51:54.377255+00:00",
+  "generated_at": "2026-09-24T16:09:06.916540+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
-        "score": 2.5,
+        "value": 12,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 423,
-    "critical_count": 9,
-    "high_count": 40,
+    "total": 411,
+    "critical_count": 12,
+    "high_count": 37,
     "cves": [
       {
-        "cve_id": "CVE-2026-59167",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "SunEditor is a lightweight and powerful WYSIWYG editor in vanilla JavaScript with no dependencies. Prior to 2.47.11, the sanitizer in src/lib/core.js does not consistently reject namespaced or custom ",
-        "published": "2026-09-23T14:17:07.923"
-      },
-      {
-        "cve_id": "CVE-2026-86708",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "ZohoCorp ManageEngine Applications Manager versions 182200 and below were vulnerable to exposure of a Google Cloud service-account private key in the Applications Manager installer, which could allow ",
-        "published": "2026-09-23T14:17:09.467"
-      },
-      {
-        "cve_id": "CVE-2026-19599",
+        "cve_id": "CVE-2026-77602",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "ZohoCorp ManageEngine OpManager MSP versions 12.8.709 and below were vulnerable to a Remote Code Execution vulnerability in the Notification Profile module.",
-        "published": "2026-09-23T13:17:27.400"
+        "description": "OpenC3 COSMOS provides the functionality needed to send commands to and receive data from one or more embedded systems. From 5.1.0 until 7.3.0, authenticated non-administrator users can write content ",
+        "published": "2026-09-23T19:19:18.550"
       },
       {
-        "cve_id": "CVE-2026-76183",
+        "cve_id": "CVE-2026-84474",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A flaw was found in Red Hat Ansible Automation Platform's automation-\ncontroller. The provisioning-callback secret (host_config_key) is exposed to\nusers holding only the read-level view_jobtemplate pe",
+        "published": "2026-09-23T19:19:39.930"
+      },
+      {
+        "cve_id": "CVE-2025-63564",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Authentication Bypass by Alternate Name vulnerability in Apache Tomcat allowed the security constraints for any WebSocket endpoint to be bypassed.\n\n\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 t",
-        "published": "2026-09-23T12:17:06.537"
+        "description": "SQL injection vulnerability in Moodle Socialwall plugin v.3.0 through v.3.3 allows an attacker to execute arbitrary code via crafted HTTP requests",
+        "published": "2026-09-23T17:17:14.323"
       },
       {
-        "cve_id": "CVE-2026-86248",
+        "cve_id": "CVE-2026-96754",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "CLIENT_CERT authentication does not fail as expected for some scenarios when soft fail is disabled vulnerability in Apache Tomcat.\n\n\n\nThis issue affects Apache Tomcat: from 11.0.0-M14 through 11.0.25,",
-        "published": "2026-09-23T12:17:08.237"
+        "description": "orval versions before 8.29.0 contain a code injection vulnerability in the @orval/hono generator that fails to escape OpenAPI path values in single-quoted route literals. Attackers can craft an OpenAP",
+        "published": "2026-09-23T17:17:24.437"
       },
       {
-        "cve_id": "CVE-2026-96560",
+        "cve_id": "CVE-2026-96755",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "LightLLM through 1.2.0 contains a remote code execution vulnerability in the KV-transfer worker when started with --pd_trans_mode nccl, which exposes an unauthenticated RPyC control channel that deser",
-        "published": "2026-09-23T14:17:11.073"
+        "description": "orval versions 8.14.0 through 8.28.1 contain a code injection vulnerability in the @orval/effect generator that converts OpenAPI schema defaults into template literals. Attackers can inject arbitrary ",
+        "published": "2026-09-23T17:17:24.607"
       },
       {
-        "cve_id": "CVE-2026-96276",
+        "cve_id": "CVE-2026-96757",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "If a malicious SDK container declares an extension point with a crafted `directory` path, and a developer runs `flatpak build-init --writable-sdk --sdk-extension` with that SDK, attacker-chosen files ",
-        "published": "2026-09-23T15:17:32.317"
+        "description": "orval before 8.29.0 fails to escape OpenAPI media-type keys when emitting them into single-quoted Content-Type string literals in generated code. Attackers can inject JavaScript through crafted media-",
+        "published": "2026-09-23T17:17:24.923"
       },
       {
-        "cve_id": "CVE-2026-86350",
+        "cve_id": "CVE-2026-96758",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "orval @orval/core before 8.28.0 contains a code injection vulnerability in the form-data serializer that fails to escape multipart property names in generated template literals. Attackers can inject $",
+        "published": "2026-09-23T17:17:25.083"
+      },
+      {
+        "cve_id": "CVE-2026-96759",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "orval before 8.29.0 fails to escape the operationId parameter when emitting it into generated TanStack Query mutator options metadata objects. Attackers can inject arbitrary JavaScript code through a ",
+        "published": "2026-09-23T17:17:25.250"
+      },
+      {
+        "cve_id": "CVE-2026-85724",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Moquette is a lightweight Java MQTT broker. Prior to 0.18.1, when pattern-based ACL rules are configured, AuthorizationsCollector.canDoOperation substitutes client ID and username values directly into",
+        "published": "2026-09-23T17:17:17.623"
+      },
+      {
+        "cve_id": "CVE-2026-18872",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "IBM Financial Transaction Manager (FTM) for RedHat OpenShift is vulnerable to stored cross-site scripting (CWE-79) in the FTM UI NetworkAcknowledgement React component (NetworkAcknowledgement.jsx:42).",
+        "published": "2026-09-23T16:16:41.720"
+      },
+      {
+        "cve_id": "CVE-2026-86930",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Inconsistent interpretation of HTTP/2 requests ('HTTP Request/Response smuggling') vulnerability in Apache Tomcat caused by a\u00a0regression in fix for CVE-2026-41293 can trigger request header mix-up.\n\n\n",
-        "published": "2026-09-23T12:17:08.350"
+        "description": "An out-of-bounds read vulnerability in FileMaker Server for Linux allowed an attacker uploading a specially crafted image file to a container field to disclose process memory during thumbnail generati",
+        "published": "2026-09-23T18:17:09.720"
       },
       {
-        "cve_id": "CVE-2026-86246",
+        "cve_id": "CVE-2026-86934",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Initialization of a resource with an insecure default vulnerability in Apache Tomcat Native enabled insecure options\u00a0by default  including ALLOW_CLIENT_RENEGOTIATION, NO_EXTENDED_MASTER_SECRET, IGNORE",
-        "published": "2026-09-23T13:17:31.117"
+        "description": "An authorization bypass vulnerability in the FileMaker Server Web Publishing Engine allowed requests containing an extended privilege header to bypass the disabled Custom Web Publishing with XML setti",
+        "published": "2026-09-23T18:17:09.847"
       },
       {
-        "cve_id": "CVE-2026-15027",
+        "cve_id": "CVE-2026-18490",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "CGServiSign developed by Changing has a OS Command Injection vulnerability. Unauthenticated remote attackers can induce victims to visit a malicious web page and inject arbitrary OS commands through t",
-        "published": "2026-09-23T09:17:07.657"
+        "description": "IBM Financial Transaction Manager (FTM) for RedHat OpenShift is vulnerable to unauthenticated remote code execution via Java native deserialization on the PayDir Business Rules Manager RMI SSL endpoin",
+        "published": "2026-09-23T16:16:41.460"
       },
       {
-        "cve_id": "CVE-2026-96455",
+        "cve_id": "CVE-2026-93349",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The Reachy Mini daemon exposes an HTTP API for managing the robot. Its app installation endpoint, POST /apps/install in src/reachy_mini/daemon/app/routers/apps.py, has no authentication. The handler's",
-        "published": "2026-09-23T11:17:18.690"
+        "description": "Frictionless through 5.20.0rc1 contains an OS command injection vulnerability in the explore console command that allows an attacker who supplies a crafted Data Package descriptor to execute arbitrary",
+        "published": "2026-09-23T17:17:19.653"
       },
       {
-        "cve_id": "CVE-2026-14913",
+        "cve_id": "CVE-2026-96775",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "ZohoCorp ManageEngine OpManager and Firewall Analyzer versions 12.8.669 and below were vulnerable to an SQL Injection vulnerability in Rule Management Search Reports.",
-        "published": "2026-09-23T12:17:05.507"
+        "description": "MLflow's dspy flavor, versions >= 2.0,  applies the MLFLOW_ALLOW_PICKLE_DESERIALIZATION=False security control only when the model_path ends in .pkl, which allows a remote attacker to execute arbitrar",
+        "published": "2026-09-23T17:17:25.407"
       },
       {
-        "cve_id": "CVE-2026-75825",
+        "cve_id": "CVE-2026-96804",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "ZohoCorp ManageEngine OpManager versions 12.8.710 and below with the Application Manager Plugin enabled were vulnerable to an Authentication Bypass vulnerability.",
-        "published": "2026-09-23T13:17:28.557"
+        "description": "MLflow's statsmodel flavor, versions 2.1.0 to 3.14.0, omits the MLFLOW_ALLOW_PICKLE_DESERIALIZATION=False security control entirely in _load_model(), which allows a remote attacker to execute arbitrar",
+        "published": "2026-09-23T17:17:25.530"
       },
       {
-        "cve_id": "CVE-2026-76978",
+        "cve_id": "CVE-2026-77601",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "ZohoCorp ManageEngine OpManager and Firewall Analyzer versions 12.8.709 and below were vulnerable to a Command Injection vulnerability in the Diagnose Settings feature.",
-        "published": "2026-09-23T13:17:29.153"
+        "description": "OpenC3 COSMOS provides the functionality needed to send commands to and receive data from one or more embedded systems. From 5.12.0 until 7.3.0, an authenticated actor can write the pypi_url setting t",
+        "published": "2026-09-23T19:19:18.380"
       },
       {
-        "cve_id": "CVE-2026-86677",
+        "cve_id": "CVE-2026-79310",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "ZohoCorp ManageEngine Applications Manager versions 182000 and below allowed a low-privileged user to run unauthorized SQL commands, potentially gaining administrator access and remote code execution.",
-        "published": "2026-09-23T14:17:08.803"
+        "base_score": 8.5,
+        "description": "webpy web.py 0.76 is vulnerable to server-side template injection (SSTI). The template engine can be tricked into executing attacker-controlled template code that built-in security checks are designed",
+        "published": "2026-09-23T16:16:45.687"
       },
       {
-        "cve_id": "CVE-2026-86678",
+        "cve_id": "CVE-2026-76086",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "ZohoCorp ManageEngine Applications Manager versions 182000 and below allowed a low-privileged user to obtain an administrator\u2019s API key and use it to perform administrator-level actions.",
-        "published": "2026-09-23T14:17:08.963"
+        "base_score": 8.5,
+        "description": "Formie is a Craft CMS plugin for creating forms. Prior to 2.2.23 and 3.1.31, Formie's formie/integrations/form-settings control panel action in IntegrationsController::actionFormSettings is reachable ",
+        "published": "2026-09-23T19:19:14.393"
       },
       {
-        "cve_id": "CVE-2026-96275",
+        "cve_id": "CVE-2026-76648",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A malicious or compromised Flatpak repository can write attacker-controlled content to arbitrary locations on the host filesystem via extract_extra_data(). On system installs, the write happens as roo",
-        "published": "2026-09-23T15:17:32.180"
-      },
-      {
-        "cve_id": "CVE-2026-55610",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "InvoiceShelf is an open-source web & mobile app that helps track expenses, payments and create professional invoices and estimates. Prior to version 2.4.1, in InvoiceShelf's multi-company installation",
-        "published": "2026-09-23T15:17:14.580"
-      },
-      {
-        "cve_id": "CVE-2026-95626",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Tauri's Content Security Policy hardening, which injects a random nonce to restrict script execution, provides zero protection when an application includes data: or blob: in its script-src directive. ",
-        "published": "2026-09-23T10:17:08.677"
-      },
-      {
-        "cve_id": "CVE-2026-96454",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Pake turns a website into a desktop application built on Tauri. Every application it generates inherits two settings from the upstream template, and together they hand native functionality to untruste",
-        "published": "2026-09-23T10:17:09.070"
+        "base_score": 8.5,
+        "description": "CopyAPIView (awx/awx/api/generics.py:873) sets permission_classes =\n(IsAuthenticated,), so DRF's get_object() performs no object-level\nRBAC. The get() handler (lines 988\u2013991) explicitly guards with\nre",
+        "published": "2026-09-23T19:19:15.030"
       }
     ]
   },
