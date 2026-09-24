@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-24T16:09:06.916540+00:00",
+  "generated_at": "2026-09-24T22:49:32.625149+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 45,
+        "value": 47,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 12,
-        "score": 3.0,
+        "value": 8,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -32,9 +32,29 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1721,
-    "recent_30d_count": 45,
+    "total_catalog_count": 1723,
+    "recent_30d_count": 47,
     "recent": [
+      {
+        "cve_id": "CVE-2026-5430",
+        "vendor": "WSO2",
+        "product": "Multiple Products",
+        "name": "WSO2 Multiple Products Path Traversal Vulnerability ",
+        "date_added": "2026-09-24",
+        "due_date": "2026-09-27",
+        "description": "WSO2 API Control Plane, API Manager, Traffic Manager & Universal Gateway contain a path traversal vulnerability that could allow for unrestricted file upload and lead to remote code execution. ",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-71362",
+        "vendor": "Adobe",
+        "product": "Commerce and Magento ",
+        "name": "Adobe Commerce and Magento Incorrect Authorization Vulnerability ",
+        "date_added": "2026-09-24",
+        "due_date": "2026-09-27",
+        "description": "Adobe Commerce and Magento contains an incorrect authorization vulnerability that could allow an attacker to leverage this vulnerability to gain elevated access to sensitive resources without any user",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-93952",
         "vendor": "Arista",
@@ -214,173 +234,153 @@
         "due_date": "2026-09-13",
         "description": "MikroTik RouterOS contains a missing authentication for critical function vulnerability which allows kernel memory disclosure and denial of service in the btest service.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-19490",
-        "vendor": "Citrix",
-        "product": "NetScaler",
-        "name": "Citrix NetScaler Authentication Bypass Using an Alternate Path or Channel Vulnerability",
-        "date_added": "2026-09-09",
-        "due_date": "2026-09-12",
-        "description": "Citrix NetScaler ADC and NetScaler Gateway contain an authentication-bypass vulnerability involving an alternate path or channel. When the NetScaler appliance is configured as an AAA virtual server or",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2025-25249",
-        "vendor": "Fortinet",
-        "product": "Multiple Products",
-        "name": "Fortinet Multiple Products Heap-based Buffer Overflow Vulnerability",
-        "date_added": "2026-09-09",
-        "due_date": "2026-09-12",
-        "description": "Fortinet FortiOS, FortiSwitchManager, and FortiSASE contain a heap-based buffer overflow vulnerability that allows an attacker to execute unauthorized code or commands via specially crafted packets.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 411,
-    "critical_count": 12,
-    "high_count": 37,
+    "total": 570,
+    "critical_count": 8,
+    "high_count": 17,
     "cves": [
       {
-        "cve_id": "CVE-2026-77602",
+        "cve_id": "CVE-2026-89078",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "OpenC3 COSMOS provides the functionality needed to send commands to and receive data from one or more embedded systems. From 5.1.0 until 7.3.0, authenticated non-administrator users can write content ",
-        "published": "2026-09-23T19:19:18.550"
+        "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 19.2 before 19.2.7, 19.3 before 19.3.3, and 19.4 before 19.4.1 that under certain conditions could have allowed an authentica",
+        "published": "2026-09-24T00:17:22.060"
       },
       {
-        "cve_id": "CVE-2026-84474",
+        "cve_id": "CVE-2026-93577",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "A flaw was found in Red Hat Ansible Automation Platform's automation-\ncontroller. The provisioning-callback secret (host_config_key) is exposed to\nusers holding only the read-level view_jobtemplate pe",
-        "published": "2026-09-23T19:19:39.930"
+        "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 19.2 before 19.2.7, 19.3 before 19.3.3, and 19.4 before 19.4.1 that under certain conditions could have allowed an authentica",
+        "published": "2026-09-24T00:17:22.850"
       },
       {
-        "cve_id": "CVE-2025-63564",
+        "cve_id": "CVE-2026-19072",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Velociraptor stores the compiled VQL in the hunt object internally to avoid having to recompile the artifacts for each endpoint in the hunt. Although the field \"compiled_collector_args\" is an internal",
+        "published": "2026-09-24T13:17:09.500"
+      },
+      {
+        "cve_id": "CVE-2026-18467",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "SQL injection vulnerability in Moodle Socialwall plugin v.3.0 through v.3.3 allows an attacker to execute arbitrary code via crafted HTTP requests",
-        "published": "2026-09-23T17:17:14.323"
+        "description": "The Paytium: Mollie payment forms & donations plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 5.0.3. The 5.0.3 patch introduced a wp_hash()/hash_equals",
+        "published": "2026-09-24T02:16:52.943"
       },
       {
-        "cve_id": "CVE-2026-96754",
+        "cve_id": "CVE-2026-96891",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "orval versions before 8.29.0 contain a code injection vulnerability in the @orval/hono generator that fails to escape OpenAPI path values in single-quoted route literals. Attackers can craft an OpenAP",
-        "published": "2026-09-23T17:17:24.437"
+        "description": "A vulnerability was identified in D-Link DIR-825 3.00b32. Affected is the function tunnel_set_params of the file tunnel.c of the component rp-l2tp. The manipulation of the argument peer_hostname\u00a0 lead",
+        "published": "2026-09-24T03:16:58.950"
       },
       {
-        "cve_id": "CVE-2026-96755",
+        "cve_id": "CVE-2026-78308",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "orval versions 8.14.0 through 8.28.1 contain a code injection vulnerability in the @orval/effect generator that converts OpenAPI schema defaults into template literals. Attackers can inject arbitrary ",
-        "published": "2026-09-23T17:17:24.607"
+        "description": "Improper Authentication vulnerability in DIAEnergie allows Authentication Bypass.\n\nThis issue affects DIAEnergie: before 1.11.00.022.",
+        "published": "2026-09-24T09:17:08.043"
       },
       {
-        "cve_id": "CVE-2026-96757",
+        "cve_id": "CVE-2026-12227",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "orval before 8.29.0 fails to escape OpenAPI media-type keys when emitting them into single-quoted Content-Type string literals in generated code. Attackers can inject JavaScript through crafted media-",
-        "published": "2026-09-23T17:17:24.923"
+        "description": "The Visual Composer Website Builder plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 45.16.0 via the `vcv-template` parameter. This makes it possible fo",
+        "published": "2026-09-24T10:17:32.623"
       },
       {
-        "cve_id": "CVE-2026-96758",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "orval @orval/core before 8.28.0 contains a code injection vulnerability in the form-data serializer that fails to escape multipart property names in generated template literals. Attackers can inject $",
-        "published": "2026-09-23T17:17:25.083"
-      },
-      {
-        "cve_id": "CVE-2026-96759",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "orval before 8.29.0 fails to escape the operationId parameter when emitting it into generated TanStack Query mutator options metadata objects. Attackers can inject arbitrary JavaScript code through a ",
-        "published": "2026-09-23T17:17:25.250"
-      },
-      {
-        "cve_id": "CVE-2026-85724",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Moquette is a lightweight Java MQTT broker. Prior to 0.18.1, when pattern-based ACL rules are configured, AuthorizationsCollector.canDoOperation substitutes client ID and username values directly into",
-        "published": "2026-09-23T17:17:17.623"
-      },
-      {
-        "cve_id": "CVE-2026-18872",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "IBM Financial Transaction Manager (FTM) for RedHat OpenShift is vulnerable to stored cross-site scripting (CWE-79) in the FTM UI NetworkAcknowledgement React component (NetworkAcknowledgement.jsx:42).",
-        "published": "2026-09-23T16:16:41.720"
-      },
-      {
-        "cve_id": "CVE-2026-86930",
+        "cve_id": "CVE-2026-78312",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "An out-of-bounds read vulnerability in FileMaker Server for Linux allowed an attacker uploading a specially crafted image file to a container field to disclose process memory during thumbnail generati",
-        "published": "2026-09-23T18:17:09.720"
+        "description": "Path Traversal in DIAEnergie.\n\nThis issue affects DIAEnergie: before 1.11.00.022.",
+        "published": "2026-09-24T09:17:08.553"
       },
       {
-        "cve_id": "CVE-2026-86934",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "An authorization bypass vulnerability in the FileMaker Server Web Publishing Engine allowed requests containing an extended privilege header to bypass the disabled Custom Web Publishing with XML setti",
-        "published": "2026-09-23T18:17:09.847"
-      },
-      {
-        "cve_id": "CVE-2026-18490",
+        "cve_id": "CVE-2026-70125",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "IBM Financial Transaction Manager (FTM) for RedHat OpenShift is vulnerable to unauthenticated remote code execution via Java native deserialization on the PayDir Business Rules Manager RMI SSL endpoin",
-        "published": "2026-09-23T16:16:41.460"
+        "description": "Microsoft Outlook Remote Code Execution Vulnerability",
+        "published": "2026-09-23T23:18:12.510"
       },
       {
-        "cve_id": "CVE-2026-93349",
+        "cve_id": "CVE-2026-78309",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Frictionless through 5.20.0rc1 contains an OS command injection vulnerability in the explore console command that allows an attacker who supplies a crafted Data Package descriptor to execute arbitrary",
-        "published": "2026-09-23T17:17:19.653"
+        "description": "SQL Injection vulnerability in DIAEnergie.\n\nThis issue affects DIAEnergie: before 1.11.00.022.",
+        "published": "2026-09-24T09:17:08.187"
       },
       {
-        "cve_id": "CVE-2026-96775",
+        "cve_id": "CVE-2026-78311",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "MLflow's dspy flavor, versions >= 2.0,  applies the MLFLOW_ALLOW_PICKLE_DESERIALIZATION=False security control only when the model_path ends in .pkl, which allows a remote attacker to execute arbitrar",
-        "published": "2026-09-23T17:17:25.407"
+        "description": "SQL Injection vulnerability in DIAEnergie.\n\nThis issue affects DIAEnergie: before 1.11.00.022.",
+        "published": "2026-09-24T09:17:08.440"
       },
       {
-        "cve_id": "CVE-2026-96804",
+        "cve_id": "CVE-2026-85682",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "MLflow's statsmodel flavor, versions 2.1.0 to 3.14.0, omits the MLFLOW_ALLOW_PICKLE_DESERIALIZATION=False security control entirely in _load_model(), which allows a remote attacker to execute arbitrar",
-        "published": "2026-09-23T17:17:25.530"
+        "description": "The YOP Poll plugin for WordPress is vulnerable to Origin Validation Error in all versions up to, and including, 7.0.10. This is due to the plugin transmitting a wp_rest nonce to window.opener via pos",
+        "published": "2026-09-24T09:17:08.797"
       },
       {
-        "cve_id": "CVE-2026-77601",
+        "cve_id": "CVE-2026-97055",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenC3 COSMOS provides the functionality needed to send commands to and receive data from one or more embedded systems. From 5.12.0 until 7.3.0, an authenticated actor can write the pypi_url setting t",
-        "published": "2026-09-23T19:19:18.380"
+        "base_score": 8.1,
+        "description": "SigNoz from v0.8.0 before v0.143.0 defaults the JWT tokenizer signing secret (tokenizer::jwt::secret, set via SIGNOZ_TOKENIZER_JWT_SECRET or the deprecated SIGNOZ_JWT_SECRET) to an empty string, and C",
+        "published": "2026-09-24T02:16:54.333"
       },
       {
-        "cve_id": "CVE-2026-79310",
+        "cve_id": "CVE-2026-57590",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "webpy web.py 0.76 is vulnerable to server-side template injection (SSTI). The template engine can be tricked into executing attacker-controlled template code that built-in security checks are designed",
-        "published": "2026-09-23T16:16:45.687"
+        "base_score": 8.1,
+        "description": "A missing authorization vulnerability exists in the Task Group APIs of Apache DolphinScheduler. The affected APIs do not properly verify whether the authenticated user has permission to access the pro",
+        "published": "2026-09-24T10:17:38.010"
       },
       {
-        "cve_id": "CVE-2026-76086",
+        "cve_id": "CVE-2026-97185",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Formie is a Craft CMS plugin for creating forms. Prior to 2.2.23 and 3.1.31, Formie's formie/integrations/form-settings control panel action in IntegrationsController::actionFormSettings is reachable ",
-        "published": "2026-09-23T19:19:14.393"
+        "base_score": 7.8,
+        "description": "A flaw was found in GIMP. When processing a specially crafted GIMPressionist preset file, the plug-in does not properly validate vector indices before writing into fixed-size arrays. This can lead to ",
+        "published": "2026-09-24T09:17:08.937"
       },
       {
-        "cve_id": "CVE-2026-76648",
+        "cve_id": "CVE-2026-92470",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "CopyAPIView (awx/awx/api/generics.py:873) sets permission_classes =\n(IsAuthenticated,), so DRF's get_object() performs no object-level\nRBAC. The get() handler (lines 988\u2013991) explicitly guards with\nre",
-        "published": "2026-09-23T19:19:15.030"
+        "base_score": 7.7,
+        "description": "GitLab has remediated an issue in GitLab EE affecting all versions from 18.7 before 19.2.7, 19.3 before 19.3.3, and 19.4 before 19.4.1 that under certain conditions could have allowed an authenticated",
+        "published": "2026-09-24T00:17:22.193"
+      },
+      {
+        "cve_id": "CVE-2026-80513",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The wpForo Forum WordPress plugin before 3.1.6 does not restrict which classes may be instantiated when it deserializes a user-supplied profile field value, allowing authenticated users with Subscribe",
+        "published": "2026-09-24T06:17:01.430"
+      },
+      {
+        "cve_id": "CVE-2026-77193",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The eesy_ID2WP \u2013 Publish InDesign HTML5 plugin for WordPress is vulnerable to Path Traversal in all versions up to, and including, 1.0.3 via the `id2wp_path` parameter. This makes it possible for unau",
+        "published": "2026-09-24T09:17:07.877"
+      },
+      {
+        "cve_id": "CVE-2026-88907",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "Incorrect Authorization vulnerability in T\u00dcB\u0130TAK ULAKB\u0130M UlakPDF allows Authentication Bypass.\n\nThis issue affects UlakPDF: through 09092026.",
+        "published": "2026-09-24T13:17:15.873"
+      },
+      {
+        "cve_id": "CVE-2026-96751",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability has been found in pmTicket Project-Management-Software up to 078fa56a782490c5059a0814f84df27984f4d7e2. This affects the function setSync of the file /ajax/add_project.php. Such manipul",
+        "published": "2026-09-24T00:17:23.170"
       }
     ]
   },
