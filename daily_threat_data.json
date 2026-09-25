@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-25T02:33:40.025398+00:00",
+  "generated_at": "2026-09-25T09:12:12.657607+00:00",
   "threat_score": {
-    "score": 6.5,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
-        "score": 2.5,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -238,24 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 554,
-    "critical_count": 7,
-    "high_count": 23,
+    "total": 578,
+    "critical_count": 1,
+    "high_count": 1,
     "cves": [
-      {
-        "cve_id": "CVE-2026-97359",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "HFS2 version 2.4.0 and earlier contains a template injection vulnerability in the multipart upload handler that allows unauthenticated attackers to achieve remote code execution by embedding malicious",
-        "published": "2026-09-24T14:18:22.533"
-      },
-      {
-        "cve_id": "CVE-2026-97360",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "HFS2 version 2.4.0 and earlier contains an unauthenticated arbitrary file access vulnerability that allows unauthenticated attackers to read, write, append, and delete files anywhere the HFS service a",
-        "published": "2026-09-24T14:18:22.703"
-      },
       {
         "cve_id": "CVE-2026-19072",
         "severity": "CRITICAL",
@@ -264,123 +250,11 @@
         "published": "2026-09-24T13:17:09.500"
       },
       {
-        "cve_id": "CVE-2026-96891",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A vulnerability was identified in D-Link DIR-825 3.00b32. Affected is the function tunnel_set_params of the file tunnel.c of the component rp-l2tp. The manipulation of the argument peer_hostname\u00a0 lead",
-        "published": "2026-09-24T03:16:58.950"
-      },
-      {
-        "cve_id": "CVE-2026-78308",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Improper Authentication vulnerability in DIAEnergie allows Authentication Bypass.\n\nThis issue affects DIAEnergie: before 1.11.00.022.",
-        "published": "2026-09-24T09:17:08.043"
-      },
-      {
-        "cve_id": "CVE-2026-12227",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Visual Composer Website Builder plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 45.16.0 via the `vcv-template` parameter. This makes it possible fo",
-        "published": "2026-09-24T10:17:32.623"
-      },
-      {
-        "cve_id": "CVE-2026-78312",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Path Traversal in DIAEnergie.\n\nThis issue affects DIAEnergie: before 1.11.00.022.",
-        "published": "2026-09-24T09:17:08.553"
-      },
-      {
-        "cve_id": "CVE-2026-78309",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "SQL Injection vulnerability in DIAEnergie.\n\nThis issue affects DIAEnergie: before 1.11.00.022.",
-        "published": "2026-09-24T09:17:08.187"
-      },
-      {
-        "cve_id": "CVE-2026-78311",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "SQL Injection vulnerability in DIAEnergie.\n\nThis issue affects DIAEnergie: before 1.11.00.022.",
-        "published": "2026-09-24T09:17:08.440"
-      },
-      {
-        "cve_id": "CVE-2026-85682",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The YOP Poll plugin for WordPress is vulnerable to Origin Validation Error in all versions up to, and including, 7.0.10. This is due to the plugin transmitting a wp_rest nonce to window.opener via pos",
-        "published": "2026-09-24T09:17:08.797"
-      },
-      {
-        "cve_id": "CVE-2026-97059",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "DCMTK through 3.7.0 contains a heap over-read vulnerability in ConcatenationLoader that copies pixel data frames without validating the PixelData buffer length against the declared NumberOfFrames. Att",
-        "published": "2026-09-24T14:18:21.997"
-      },
-      {
-        "cve_id": "CVE-2026-56736",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "phpMyFAQ is an open source FAQ web application. A stored cross-site scripting (XSS) vulnerability in versions prior to 4.2.0-alpha allows any unauthenticated user (or low-privileged registered user) t",
-        "published": "2026-09-24T15:17:24.100"
-      },
-      {
-        "cve_id": "CVE-2026-57590",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "A missing authorization vulnerability exists in the Task Group APIs of Apache DolphinScheduler. The affected APIs do not properly verify whether the authenticated user has permission to access the pro",
-        "published": "2026-09-24T10:17:38.010"
-      },
-      {
-        "cve_id": "CVE-2026-13465",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Stack-based buffer overflow vulnerability in Altera Trusted Firmware on HPS allows Exploitation of Improperly Configured or Implemented Memory Protections.\n\nThis issue affects Trusted Firmware: throug",
-        "published": "2026-09-24T15:17:19.117"
-      },
-      {
-        "cve_id": "CVE-2026-13466",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Incorrect calculation of buffer size vulnerability in Altera Trusted Firmware on HPS allows Overflow Buffers.\n\nThis issue affects Trusted Firmware: through socfpga_v2.14.0.",
-        "published": "2026-09-24T15:17:19.280"
-      },
-      {
-        "cve_id": "CVE-2026-13467",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Out-of-bounds write vulnerability in Altera Trusted Firmware on HPS allows Exploitation of Improperly Configured or Implemented Memory Protections.\n\nThis issue affects Trusted Firmware: through socfpg",
-        "published": "2026-09-24T15:17:19.423"
-      },
-      {
-        "cve_id": "CVE-2026-58004",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Out-of-bounds read vulnerability in Altera Trusted Firmware on HPS allows Privilege Escalation and Overflow Buffers.\n\nThis issue affects Trusted Firmware: through socfpga_v2.14.0.",
-        "published": "2026-09-24T15:17:24.610"
-      },
-      {
-        "cve_id": "CVE-2026-58005",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Out-of-bounds read vulnerability in Altera Trusted Firmware on HPS allows Privilege Escalation and Overflow Buffers.\n\nThis issue affects Trusted Firmware: through socfpga_v2.14.0.",
-        "published": "2026-09-24T15:17:24.750"
-      },
-      {
-        "cve_id": "CVE-2026-58006",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Untrusted pointer dereference vulnerability in Altera Trusted Firmware on HPS allows Exploitation of Improperly Configured or Implemented Memory Protections.\n\nThis issue affects Trusted Firmware: thro",
-        "published": "2026-09-24T15:17:24.890"
-      },
-      {
-        "cve_id": "CVE-2026-97185",
+        "cve_id": "CVE-2026-95519",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "A flaw was found in GIMP. When processing a specially crafted GIMPressionist preset file, the plug-in does not properly validate vector indices before writing into fixed-size arrays. This can lead to ",
-        "published": "2026-09-24T09:17:08.937"
+        "description": "A flaw was found in rpm. An attacker can supply a crafted manifest file that, when processed by a user or automation using `rpm -q -p` or similar manifest-processing flows, leads to arbitrary code exe",
+        "published": "2026-09-24T14:18:20.153"
       }
     ]
   },
