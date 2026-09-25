@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-25T09:12:12.657607+00:00",
+  "generated_at": "2026-09-25T16:09:37.717339+00:00",
   "threat_score": {
-    "score": 5.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 41,
+        "value": 43,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 2,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -32,9 +32,29 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1723,
-    "recent_30d_count": 41,
+    "total_catalog_count": 1725,
+    "recent_30d_count": 43,
     "recent": [
+      {
+        "cve_id": "CVE-2026-67279",
+        "vendor": "MikroTik",
+        "product": "RouterOS",
+        "name": "Mikrotik RouterOS Improper Enforcement of Behavioral Workflow Vulnerability",
+        "date_added": "2026-09-25",
+        "due_date": "2026-09-28",
+        "description": "Mikrotik RouterOS contains an improper enforcement of behavioral workflow vulnerability that could allow an unauthenticated client to open a session channel and send an exec request. This vulnerabilit",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-65660",
+        "vendor": "Microsoft",
+        "product": "SharePoint",
+        "name": "Microsoft SharePoint Code Injection Vulnerability",
+        "date_added": "2026-09-25",
+        "due_date": "2026-09-28",
+        "description": "Microsoft SharePoint contains a code injection vulnerability which could allow an authorized attacker to execute code over a network.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-5430",
         "vendor": "WSO2",
@@ -214,47 +234,153 @@
         "due_date": "2026-09-14",
         "description": "GitLab Community Edition and Enterprise Edition contains a path traversal vulnerability that allows an unauthenticated user to read arbitrary files due to an improper path confinement and missing auth",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-86060",
-        "vendor": "MikroTik",
-        "product": "RouterOS",
-        "name": "MikroTik RouterOS Improper Neutralization of Argument Delimiters in a Command Vulnerability",
-        "date_added": "2026-09-10",
-        "due_date": "2026-09-13",
-        "description": "MikroTik RouterOS contains an improper neutralization of argument delimiters in a command vulnerability which allows an attacker to change the trusted RouterOS policy mask, leading to privilege escala",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-67277",
-        "vendor": "MikroTik",
-        "product": "RouterOS",
-        "name": "MikroTik RouterOS Missing Authentication for Critical Function Vulnerability",
-        "date_added": "2026-09-10",
-        "due_date": "2026-09-13",
-        "description": "MikroTik RouterOS contains a missing authentication for critical function vulnerability which allows kernel memory disclosure and denial of service in the btest service.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 578,
-    "critical_count": 1,
-    "high_count": 1,
+    "total": 926,
+    "critical_count": 2,
+    "high_count": 16,
     "cves": [
       {
-        "cve_id": "CVE-2026-19072",
+        "cve_id": "CVE-2026-93207",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Velociraptor stores the compiled VQL in the hunt object internally to avoid having to recompile the artifacts for each endpoint in the hunt. Although the field \"compiled_collector_args\" is an internal",
-        "published": "2026-09-24T13:17:09.500"
+        "base_score": 9.8,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nSUNRPC: Zero rpc_gss_wire_cred at svcauth_gss_decode_credbody() entry\n\nsvcauth_gss_decode_credbody() writes the caller's\nrpc_gss_wi",
+        "published": "2026-09-24T16:17:15.357"
       },
       {
-        "cve_id": "CVE-2026-95519",
+        "cve_id": "CVE-2026-93228",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsvcrdma: Reject Write/Reply chunks with segcount 0\n\nA peer can send a Write or Reply chunk whose segcount field is zero.\nxdr_check_",
+        "published": "2026-09-24T16:17:18.253"
+      },
+      {
+        "cve_id": "CVE-2026-77581",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "BentoPDF is a client-side PDF toolkit that is self hostable. In 2.8.6 and earlier, the certificate and timestamp CORS proxy in cloudflare/cors-proxy-worker.js uses isPrivateOrReservedHost() to validat",
+        "published": "2026-09-24T16:17:10.943"
+      },
+      {
+        "cve_id": "CVE-2026-56737",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "phpMyFAQ is an open source FAQ web application. Versions 3.2.0 through 4.1.5 contain an authentication bypass in its public two-factor authentication verification flow: an unauthenticated attacker can",
+        "published": "2026-09-24T16:17:07.637"
+      },
+      {
+        "cve_id": "CVE-2026-93221",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnfsd: convert nfsd_net boolean flags to unsigned long flags word\n\nnfsd_net contains several boolean fields that are accessed from\nc",
+        "published": "2026-09-24T16:17:17.310"
+      },
+      {
+        "cve_id": "CVE-2026-93224",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsvcrdma: Fix unmatched rn_unregister on failed accept\n\nWhen svc_rdma_accept() takes the errout path before\nrpcrdma_rn_register() ha",
+        "published": "2026-09-24T16:17:17.720"
+      },
+      {
+        "cve_id": "CVE-2026-93237",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "A flaw was found in rpm. An attacker can supply a crafted manifest file that, when processed by a user or automation using `rpm -q -p` or similar manifest-processing flows, leads to arbitrary code exe",
-        "published": "2026-09-24T14:18:20.153"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nLoongArch: Add DIRECT_MAP_PHYSMEM_END definition\n\nget_free_mem_region() and mhp_get_pluggable_range() bound their search\nto DIRECT_",
+        "published": "2026-09-24T16:17:19.447"
+      },
+      {
+        "cve_id": "CVE-2026-93250",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nvxlan: mdb: Fix use-after-free in vxlan_mdb_flush()\n\nvxlan_mdb_flush() iterates over the MDB entries using\nhlist_for_each_entry_saf",
+        "published": "2026-09-24T16:17:21.187"
+      },
+      {
+        "cve_id": "CVE-2026-93262",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmd/raid5-ppl: fix use-after-free in ppl_do_flush()\n\nThe loop in ppl_do_flush() continues iterating after calling\nppl_io_unit_finish",
+        "published": "2026-09-24T16:17:22.927"
+      },
+      {
+        "cve_id": "CVE-2026-93277",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nRDMA/bnxt_re: Validate udata before executing commands\n\nThe destroy callbacks currently zero the udata output after tearing down\ndr",
+        "published": "2026-09-24T16:17:24.907"
+      },
+      {
+        "cve_id": "CVE-2026-93265",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nPCI/pwrctrl: tc9563: Fix parsing the integrated Ethernet MAC Endpoint node\n\nDSP3 has an integrated Ethernet MAC Endpoint which has ",
+        "published": "2026-09-24T16:17:23.340"
+      },
+      {
+        "cve_id": "CVE-2026-63203",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "Logto is the modern, open-source auth infrastructure for SaaS and AI apps. From 1.31.0 until 1.42.0, the Account API handlers in packages/core/src/routes/account/third-party-tokens.ts allow a caller h",
+        "published": "2026-09-24T16:17:08.700"
+      },
+      {
+        "cve_id": "CVE-2026-75907",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The door access control on a Norwegian Cruise Line asset grants entry based only on the credential's static 7-byte UID stored on an NTAG212 NFC chip. A UID is a manufacturer serial number sent in the ",
+        "published": "2026-09-24T16:17:10.387"
+      },
+      {
+        "cve_id": "CVE-2026-88357",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "nDPI 5.1.0 contains a memory access issue in the DNS dissector and serializer deserialization code. Specially crafted network input can cause byte-buffer addresses at odd offsets to be cast to uint16_",
+        "published": "2026-09-24T16:17:12.957"
+      },
+      {
+        "cve_id": "CVE-2026-88368",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "NanoSVG commit 239e102ec contains an incorrect numeric conversion vulnerability in the rasterizer's nsvg__addActive() function. A specially crafted SVG document containing sufficiently large geometry ",
+        "published": "2026-09-24T16:17:13.730"
+      },
+      {
+        "cve_id": "CVE-2026-93225",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nphy: fsl-imx8mq-usb: fix typec switch leak on probe error path\n\nIf probe fails after imx95_usb_phy_get_tca() succeeds, the typec\nsw",
+        "published": "2026-09-24T16:17:17.857"
+      },
+      {
+        "cve_id": "CVE-2026-93260",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\npowerpc/xive: propagate IPI init errors to prevent use-after-free\n\nWhen xive_init_ipis() fails (e.g. irq_domain_alloc_irqs() fails)",
+        "published": "2026-09-24T16:17:22.670"
+      },
+      {
+        "cve_id": "CVE-2026-93229",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnfsd: add missing read barrier to rpc_status_get dumpit seqcount retry\n\nThe hand-rolled seqcount-like protocol in nfsd_nl_rpc_statu",
+        "published": "2026-09-24T16:17:18.387"
+      },
+      {
+        "cve_id": "CVE-2026-79761",
+        "severity": "MEDIUM",
+        "base_score": 6.6,
+        "description": "Termix is a web-based server management platform with SSH terminal, tunneling, and file editing capabilities. From 1.7.0 until 2.5.1, the Termix SSH key deployment flow derives a grep pattern from a u",
+        "published": "2026-09-24T16:17:11.743"
+      },
+      {
+        "cve_id": "CVE-2026-76907",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "LaSuite Doc is a collaborative note taking, wiki and documentation platform. From 4.8.2 until 5.4.0, GET /api/v1.0/documents/search/ accepts sequential seven-digit document paths to scope descendant s",
+        "published": "2026-09-24T16:17:10.500"
       }
     ]
   },
