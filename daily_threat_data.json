@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T22:49:32.625149+00:00",
+  "generated_at": "2026-09-25T02:33:40.025398+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 47,
+        "value": 41,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
+        "value": 7,
         "score": 2.5,
         "max": 3
       },
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1723,
-    "recent_30d_count": 47,
+    "recent_30d_count": 41,
     "recent": [
       {
         "cve_id": "CVE-2026-5430",
@@ -238,23 +238,23 @@
     ]
   },
   "nvd": {
-    "total": 570,
-    "critical_count": 8,
-    "high_count": 17,
+    "total": 554,
+    "critical_count": 7,
+    "high_count": 23,
     "cves": [
       {
-        "cve_id": "CVE-2026-89078",
+        "cve_id": "CVE-2026-97359",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 19.2 before 19.2.7, 19.3 before 19.3.3, and 19.4 before 19.4.1 that under certain conditions could have allowed an authentica",
-        "published": "2026-09-24T00:17:22.060"
+        "base_score": 10.0,
+        "description": "HFS2 version 2.4.0 and earlier contains a template injection vulnerability in the multipart upload handler that allows unauthenticated attackers to achieve remote code execution by embedding malicious",
+        "published": "2026-09-24T14:18:22.533"
       },
       {
-        "cve_id": "CVE-2026-93577",
+        "cve_id": "CVE-2026-97360",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 19.2 before 19.2.7, 19.3 before 19.3.3, and 19.4 before 19.4.1 that under certain conditions could have allowed an authentica",
-        "published": "2026-09-24T00:17:22.850"
+        "base_score": 10.0,
+        "description": "HFS2 version 2.4.0 and earlier contains an unauthenticated arbitrary file access vulnerability that allows unauthenticated attackers to read, write, append, and delete files anywhere the HFS service a",
+        "published": "2026-09-24T14:18:22.703"
       },
       {
         "cve_id": "CVE-2026-19072",
@@ -262,13 +262,6 @@
         "base_score": 9.9,
         "description": "Velociraptor stores the compiled VQL in the hunt object internally to avoid having to recompile the artifacts for each endpoint in the hunt. Although the field \"compiled_collector_args\" is an internal",
         "published": "2026-09-24T13:17:09.500"
-      },
-      {
-        "cve_id": "CVE-2026-18467",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Paytium: Mollie payment forms & donations plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 5.0.3. The 5.0.3 patch introduced a wp_hash()/hash_equals",
-        "published": "2026-09-24T02:16:52.943"
       },
       {
         "cve_id": "CVE-2026-96891",
@@ -299,13 +292,6 @@
         "published": "2026-09-24T09:17:08.553"
       },
       {
-        "cve_id": "CVE-2026-70125",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Microsoft Outlook Remote Code Execution Vulnerability",
-        "published": "2026-09-23T23:18:12.510"
-      },
-      {
         "cve_id": "CVE-2026-78309",
         "severity": "HIGH",
         "base_score": 8.8,
@@ -327,11 +313,18 @@
         "published": "2026-09-24T09:17:08.797"
       },
       {
-        "cve_id": "CVE-2026-97055",
+        "cve_id": "CVE-2026-97059",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "SigNoz from v0.8.0 before v0.143.0 defaults the JWT tokenizer signing secret (tokenizer::jwt::secret, set via SIGNOZ_TOKENIZER_JWT_SECRET or the deprecated SIGNOZ_JWT_SECRET) to an empty string, and C",
-        "published": "2026-09-24T02:16:54.333"
+        "base_score": 8.2,
+        "description": "DCMTK through 3.7.0 contains a heap over-read vulnerability in ConcatenationLoader that copies pixel data frames without validating the PixelData buffer length against the declared NumberOfFrames. Att",
+        "published": "2026-09-24T14:18:21.997"
+      },
+      {
+        "cve_id": "CVE-2026-56736",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "phpMyFAQ is an open source FAQ web application. A stored cross-site scripting (XSS) vulnerability in versions prior to 4.2.0-alpha allows any unauthenticated user (or low-privileged registered user) t",
+        "published": "2026-09-24T15:17:24.100"
       },
       {
         "cve_id": "CVE-2026-57590",
@@ -341,46 +334,53 @@
         "published": "2026-09-24T10:17:38.010"
       },
       {
+        "cve_id": "CVE-2026-13465",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Stack-based buffer overflow vulnerability in Altera Trusted Firmware on HPS allows Exploitation of Improperly Configured or Implemented Memory Protections.\n\nThis issue affects Trusted Firmware: throug",
+        "published": "2026-09-24T15:17:19.117"
+      },
+      {
+        "cve_id": "CVE-2026-13466",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Incorrect calculation of buffer size vulnerability in Altera Trusted Firmware on HPS allows Overflow Buffers.\n\nThis issue affects Trusted Firmware: through socfpga_v2.14.0.",
+        "published": "2026-09-24T15:17:19.280"
+      },
+      {
+        "cve_id": "CVE-2026-13467",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Out-of-bounds write vulnerability in Altera Trusted Firmware on HPS allows Exploitation of Improperly Configured or Implemented Memory Protections.\n\nThis issue affects Trusted Firmware: through socfpg",
+        "published": "2026-09-24T15:17:19.423"
+      },
+      {
+        "cve_id": "CVE-2026-58004",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Out-of-bounds read vulnerability in Altera Trusted Firmware on HPS allows Privilege Escalation and Overflow Buffers.\n\nThis issue affects Trusted Firmware: through socfpga_v2.14.0.",
+        "published": "2026-09-24T15:17:24.610"
+      },
+      {
+        "cve_id": "CVE-2026-58005",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Out-of-bounds read vulnerability in Altera Trusted Firmware on HPS allows Privilege Escalation and Overflow Buffers.\n\nThis issue affects Trusted Firmware: through socfpga_v2.14.0.",
+        "published": "2026-09-24T15:17:24.750"
+      },
+      {
+        "cve_id": "CVE-2026-58006",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Untrusted pointer dereference vulnerability in Altera Trusted Firmware on HPS allows Exploitation of Improperly Configured or Implemented Memory Protections.\n\nThis issue affects Trusted Firmware: thro",
+        "published": "2026-09-24T15:17:24.890"
+      },
+      {
         "cve_id": "CVE-2026-97185",
         "severity": "HIGH",
         "base_score": 7.8,
         "description": "A flaw was found in GIMP. When processing a specially crafted GIMPressionist preset file, the plug-in does not properly validate vector indices before writing into fixed-size arrays. This can lead to ",
         "published": "2026-09-24T09:17:08.937"
-      },
-      {
-        "cve_id": "CVE-2026-92470",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "GitLab has remediated an issue in GitLab EE affecting all versions from 18.7 before 19.2.7, 19.3 before 19.3.3, and 19.4 before 19.4.1 that under certain conditions could have allowed an authenticated",
-        "published": "2026-09-24T00:17:22.193"
-      },
-      {
-        "cve_id": "CVE-2026-80513",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The wpForo Forum WordPress plugin before 3.1.6 does not restrict which classes may be instantiated when it deserializes a user-supplied profile field value, allowing authenticated users with Subscribe",
-        "published": "2026-09-24T06:17:01.430"
-      },
-      {
-        "cve_id": "CVE-2026-77193",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The eesy_ID2WP \u2013 Publish InDesign HTML5 plugin for WordPress is vulnerable to Path Traversal in all versions up to, and including, 1.0.3 via the `id2wp_path` parameter. This makes it possible for unau",
-        "published": "2026-09-24T09:17:07.877"
-      },
-      {
-        "cve_id": "CVE-2026-88907",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "Incorrect Authorization vulnerability in T\u00dcB\u0130TAK ULAKB\u0130M UlakPDF allows Authentication Bypass.\n\nThis issue affects UlakPDF: through 09092026.",
-        "published": "2026-09-24T13:17:15.873"
-      },
-      {
-        "cve_id": "CVE-2026-96751",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability has been found in pmTicket Project-Management-Software up to 078fa56a782490c5059a0814f84df27984f4d7e2. This affects the function setSync of the file /ajax/add_project.php. Such manipul",
-        "published": "2026-09-24T00:17:23.170"
       }
     ]
   },
