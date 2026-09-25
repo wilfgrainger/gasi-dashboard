@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-25T16:09:37.717339+00:00",
+  "generated_at": "2026-09-25T22:57:47.806039+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 43,
+        "value": 44,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
-        "score": 2.0,
+        "value": 6,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -32,8 +32,8 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1725,
-    "recent_30d_count": 43,
+    "total_catalog_count": 1726,
+    "recent_30d_count": 44,
     "recent": [
       {
         "cve_id": "CVE-2026-67279",
@@ -53,6 +53,16 @@
         "date_added": "2026-09-25",
         "due_date": "2026-09-28",
         "description": "Microsoft SharePoint contains a code injection vulnerability which could allow an authorized attacker to execute code over a network.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-87902",
+        "vendor": "WordPress",
+        "product": "Core",
+        "name": "WordPress Core Remote File Inclusion Vulnerability",
+        "date_added": "2026-09-25",
+        "due_date": "2026-09-28",
+        "description": "WordPress Core contains a remote file inclusion vulnerability which could allow an unauthenticated attacker to make page-template resolution include a chosen readable local `.php` file outside the act",
         "ransomware_use": "Unknown"
       },
       {
@@ -224,163 +234,153 @@
         "due_date": "2026-09-25",
         "description": "JFrog Artifactory contains an improper authentication vulnerability that could return an internal anonymous-user token to an unauthenticated caller when anonymous access is disabled, potentially expos",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-85706",
-        "vendor": "GitLab",
-        "product": "Community Edition and Enterprise Edition",
-        "name": "GitLab Community Edition and Enterprise Edition Path Traversal Vulnerability",
-        "date_added": "2026-09-11",
-        "due_date": "2026-09-14",
-        "description": "GitLab Community Edition and Enterprise Edition contains a path traversal vulnerability that allows an unauthenticated user to read arbitrary files due to an improper path confinement and missing auth",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 926,
-    "critical_count": 2,
-    "high_count": 16,
+    "total": 710,
+    "critical_count": 6,
+    "high_count": 33,
     "cves": [
       {
-        "cve_id": "CVE-2026-93207",
+        "cve_id": "CVE-2026-97230",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nSUNRPC: Zero rpc_gss_wire_cred at svcauth_gss_decode_credbody() entry\n\nsvcauth_gss_decode_credbody() writes the caller's\nrpc_gss_wi",
-        "published": "2026-09-24T16:17:15.357"
+        "description": "IO::Socket::SSL::SelfCertificate versions 1.00 for Perl contains malware which executes Python code from an obfuscated URL.\n\nThe generate_certificate runs a Python script saved as a certificate file. ",
+        "published": "2026-09-24T23:19:22.960"
       },
       {
-        "cve_id": "CVE-2026-93228",
+        "cve_id": "CVE-2026-14281",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Automation Web Platform \u2013 Notifications and OTP for WooCommerce, Advanced Country Code plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 4.8.6. This ",
+        "published": "2026-09-25T07:16:53.540"
+      },
+      {
+        "cve_id": "CVE-2026-92609",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Session fixation in HTTP management authentication allows remote\u00a0attackers to gain unauthorized access to an authenticated management session via reuse of a session identifier retained across successf",
+        "published": "2026-09-25T08:16:41.203"
+      },
+      {
+        "cve_id": "CVE-2026-92288",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsvcrdma: Reject Write/Reply chunks with segcount 0\n\nA peer can send a Write or Reply chunk whose segcount field is zero.\nxdr_check_",
-        "published": "2026-09-24T16:17:18.253"
+        "description": "Lemonldap::NG::Portal versions from 2.20.0 before 2.21.6, from 2.22.0 before 2.23.4 for Perl allow unauthenticated OAuth2 token introspection because checkEndPointAuthenticationCredentials does not ve",
+        "published": "2026-09-25T01:16:48.820"
       },
       {
-        "cve_id": "CVE-2026-77581",
+        "cve_id": "CVE-2026-89055",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The Customer Reviews for WooCommerce plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 5.120.0. This is due to the plugin not properly verifying that a u",
+        "published": "2026-09-25T07:16:55.140"
+      },
+      {
+        "cve_id": "CVE-2026-93399",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The Bookly plugin for WordPress is vulnerable to Insecure Direct Object Reference in versions up to, and including, 28.2 via the 'bookly_get_form_id', 'bookly_render_complete', 'bookly_add_to_calendar",
+        "published": "2026-09-25T07:16:56.027"
+      },
+      {
+        "cve_id": "CVE-2026-62062",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Cross-Site Request Forgery (CSRF) vulnerability in Elementor Website Builder allows Cross Site Request Forgery.\n\nThis issue affects Elementor Website Builder: from n/a through 4.3.1.",
+        "published": "2026-09-25T07:16:54.010"
+      },
+      {
+        "cve_id": "CVE-2026-19804",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The s2Member \u2013 Excellent for All Kinds of Memberships, Content Restriction Paywalls & Member Access Subscriptions plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and",
+        "published": "2026-09-25T08:16:40.383"
+      },
+      {
+        "cve_id": "CVE-2026-89426",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Knit Pay \u2013 Cashfree, Instamojo, Razorpay, PayPal and more plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 9.6.1.0. This is due to the `maybe_update",
+        "published": "2026-09-25T08:16:40.940"
+      },
+      {
+        "cve_id": "CVE-2026-97527",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nscsi: qla2xxx: Serialize NVMe unsol ctx list with a per-fcport lock\n\nThe fcport->unsol_ctx_head list is modified from several conte",
+        "published": "2026-09-25T11:17:02.873"
+      },
+      {
+        "cve_id": "CVE-2026-97528",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nscsi: qla2xxx: Unlink NVMe unsol ctx before freeing on LS reject error\n\nqla_nvme_xmt_ls_rsp() obtains uctx, which was linked into\nf",
+        "published": "2026-09-25T11:17:02.980"
+      },
+      {
+        "cve_id": "CVE-2026-97818",
         "severity": "HIGH",
         "base_score": 8.6,
-        "description": "BentoPDF is a client-side PDF toolkit that is self hostable. In 2.8.6 and earlier, the certificate and timestamp CORS proxy in cloudflare/cors-proxy-worker.js uses isPrivateOrReservedHost() to validat",
-        "published": "2026-09-24T16:17:10.943"
+        "description": "phpIPAM through 1.8.3 has incorrect authorization for id==\"admins\" and id==\"all\" in api/controllers/User.php.",
+        "published": "2026-09-25T05:17:08.120"
       },
       {
-        "cve_id": "CVE-2026-56737",
+        "cve_id": "CVE-2026-97730",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "In Netgate pfSense Plus before 26.07 and pfSense CE before 2.9.0, a Local File Inclusion (LFI) vulnerability in the Dashboard (index.php) widget sequence data handling allows an authenticated attacker",
+        "published": "2026-09-25T03:16:59.533"
+      },
+      {
+        "cve_id": "CVE-2026-97525",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nx86/mm/pat: Allocate split page tables as kernel page tables\n\nA PTE is allocated directly without going through the standard page t",
+        "published": "2026-09-25T11:17:02.647"
+      },
+      {
+        "cve_id": "CVE-2026-92713",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "phpMyFAQ is an open source FAQ web application. Versions 3.2.0 through 4.1.5 contain an authentication bypass in its public two-factor authentication verification flow: an unauthenticated attacker can",
-        "published": "2026-09-24T16:17:07.637"
+        "description": "The Modula Image Gallery \u2013 Photo Grid & Video Gallery plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the upload_image function in all version",
+        "published": "2026-09-25T08:16:41.310"
       },
       {
-        "cve_id": "CVE-2026-93221",
+        "cve_id": "CVE-2026-97735",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnfsd: convert nfsd_net boolean flags to unsigned long flags word\n\nnfsd_net contains several boolean fields that are accessed from\nc",
-        "published": "2026-09-24T16:17:17.310"
+        "base_score": 8.0,
+        "description": "ITFlow before 26.08 allows SVG attachments in the ticket email parser (cron/ticket_email_parser.php) for email messages that may arrive over SMTP from arbitrary senders.",
+        "published": "2026-09-25T04:17:50.763"
       },
       {
-        "cve_id": "CVE-2026-93224",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsvcrdma: Fix unmatched rn_unregister on failed accept\n\nWhen svc_rdma_accept() takes the errout path before\nrpcrdma_rn_register() ha",
-        "published": "2026-09-24T16:17:17.720"
-      },
-      {
-        "cve_id": "CVE-2026-93237",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nLoongArch: Add DIRECT_MAP_PHYSMEM_END definition\n\nget_free_mem_region() and mhp_get_pluggable_range() bound their search\nto DIRECT_",
-        "published": "2026-09-24T16:17:19.447"
-      },
-      {
-        "cve_id": "CVE-2026-93250",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nvxlan: mdb: Fix use-after-free in vxlan_mdb_flush()\n\nvxlan_mdb_flush() iterates over the MDB entries using\nhlist_for_each_entry_saf",
-        "published": "2026-09-24T16:17:21.187"
-      },
-      {
-        "cve_id": "CVE-2026-93262",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmd/raid5-ppl: fix use-after-free in ppl_do_flush()\n\nThe loop in ppl_do_flush() continues iterating after calling\nppl_io_unit_finish",
-        "published": "2026-09-24T16:17:22.927"
-      },
-      {
-        "cve_id": "CVE-2026-93277",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nRDMA/bnxt_re: Validate udata before executing commands\n\nThe destroy callbacks currently zero the udata output after tearing down\ndr",
-        "published": "2026-09-24T16:17:24.907"
-      },
-      {
-        "cve_id": "CVE-2026-93265",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nPCI/pwrctrl: tc9563: Fix parsing the integrated Ethernet MAC Endpoint node\n\nDSP3 has an integrated Ethernet MAC Endpoint which has ",
-        "published": "2026-09-24T16:17:23.340"
-      },
-      {
-        "cve_id": "CVE-2026-63203",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "Logto is the modern, open-source auth infrastructure for SaaS and AI apps. From 1.31.0 until 1.42.0, the Account API handlers in packages/core/src/routes/account/third-party-tokens.ts allow a caller h",
-        "published": "2026-09-24T16:17:08.700"
-      },
-      {
-        "cve_id": "CVE-2026-75907",
+        "cve_id": "CVE-2026-13456",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "The door access control on a Norwegian Cruise Line asset grants entry based only on the credential's static 7-byte UID stored on an NTAG212 NFC chip. A UID is a manufacturer serial number sent in the ",
-        "published": "2026-09-24T16:17:10.387"
+        "description": "The WP Maps \u2013 Google Maps,OpenStreetMap,Mapbox,Store Locator,Listing,Directory & Filters plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 4.9.8 via the ",
+        "published": "2026-09-25T08:16:39.970"
       },
       {
-        "cve_id": "CVE-2026-88357",
+        "cve_id": "CVE-2026-89406",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "nDPI 5.1.0 contains a memory access issue in the DNS dissector and serializer deserialization code. Specially crafted network input can cause byte-buffer addresses at odd offsets to be cast to uint16_",
-        "published": "2026-09-24T16:17:12.957"
+        "description": "The Modula Image Gallery \u2013 Photo Grid & Video Gallery plugin for WordPress is vulnerable to unauthorized disclosure of private gallery contents in versions up to, and including, 3.0.1. This is due to ",
+        "published": "2026-09-25T08:16:40.803"
       },
       {
-        "cve_id": "CVE-2026-88368",
+        "cve_id": "CVE-2026-92608",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "NanoSVG commit 239e102ec contains an incorrect numeric conversion vulnerability in the rasterizer's nsvg__addActive() function. A specially crafted SVG document containing sufficiently large geometry ",
-        "published": "2026-09-24T16:17:13.730"
+        "description": "Improper handling of property-encoding exceptions in AMQP 1.0-to-AMQP 0-10 message conversion allows authenticated message producers to disrupt delivery to AMQP 0-10 consumers via message properties t",
+        "published": "2026-09-25T08:16:41.083"
       },
       {
-        "cve_id": "CVE-2026-93225",
+        "cve_id": "CVE-2026-92550",
         "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nphy: fsl-imx8mq-usb: fix typec switch leak on probe error path\n\nIf probe fails after imx95_usb_phy_get_tca() succeeds, the typec\nsw",
-        "published": "2026-09-24T16:17:17.857"
-      },
-      {
-        "cve_id": "CVE-2026-93260",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\npowerpc/xive: propagate IPI init errors to prevent use-after-free\n\nWhen xive_init_ipis() fails (e.g. irq_domain_alloc_irqs() fails)",
-        "published": "2026-09-24T16:17:22.670"
-      },
-      {
-        "cve_id": "CVE-2026-93229",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnfsd: add missing read barrier to rpc_status_get dumpit seqcount retry\n\nThe hand-rolled seqcount-like protocol in nfsd_nl_rpc_statu",
-        "published": "2026-09-24T16:17:18.387"
-      },
-      {
-        "cve_id": "CVE-2026-79761",
-        "severity": "MEDIUM",
-        "base_score": 6.6,
-        "description": "Termix is a web-based server management platform with SSH terminal, tunneling, and file editing capabilities. From 1.7.0 until 2.5.1, the Termix SSH key deployment flow derives a grep pattern from a u",
-        "published": "2026-09-24T16:17:11.743"
-      },
-      {
-        "cve_id": "CVE-2026-76907",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "LaSuite Doc is a collaborative note taking, wiki and documentation platform. From 4.8.2 until 5.4.0, GET /api/v1.0/documents/search/ accepts sequential seven-digit document paths to scope descendant s",
-        "published": "2026-09-24T16:17:10.500"
+        "base_score": 7.5,
+        "description": "A pre-authentication attacker could leverage type size/count handling to cause excessive allocation leading to potential denial of service.\n\nThis issue affects Apache Qpid Broker-J: through 10.1.0.\n\nU",
+        "published": "2026-09-25T09:17:06.447"
       }
     ]
   },
