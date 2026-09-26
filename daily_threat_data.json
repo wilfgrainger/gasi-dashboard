@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-26T02:36:02.278695+00:00",
+  "generated_at": "2026-09-26T08:55:42.950091+00:00",
   "threat_score": {
-    "score": 6.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.0,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 0,
+        "score": 1.0,
         "max": 3
       },
       {
@@ -238,59 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 707,
-    "critical_count": 4,
-    "high_count": 34,
+    "total": 740,
+    "critical_count": 0,
+    "high_count": 27,
     "cves": [
-      {
-        "cve_id": "CVE-2026-14281",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Automation Web Platform \u2013 Notifications and OTP for WooCommerce, Advanced Country Code plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 4.8.6. This ",
-        "published": "2026-09-25T07:16:53.540"
-      },
-      {
-        "cve_id": "CVE-2026-92609",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Session fixation in HTTP management authentication allows remote\u00a0attackers to gain unauthorized access to an authenticated management session via reuse of a session identifier retained across successf",
-        "published": "2026-09-25T08:16:41.203"
-      },
-      {
-        "cve_id": "CVE-2026-89055",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The Customer Reviews for WooCommerce plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 5.120.0. This is due to the plugin not properly verifying that a u",
-        "published": "2026-09-25T07:16:55.140"
-      },
-      {
-        "cve_id": "CVE-2026-93399",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The Bookly plugin for WordPress is vulnerable to Insecure Direct Object Reference in versions up to, and including, 28.2 via the 'bookly_get_form_id', 'bookly_render_complete', 'bookly_add_to_calendar",
-        "published": "2026-09-25T07:16:56.027"
-      },
-      {
-        "cve_id": "CVE-2026-62062",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Cross-Site Request Forgery (CSRF) vulnerability in Elementor Website Builder allows Cross Site Request Forgery.\n\nThis issue affects Elementor Website Builder: from n/a through 4.3.1.",
-        "published": "2026-09-25T07:16:54.010"
-      },
-      {
-        "cve_id": "CVE-2026-19804",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The s2Member \u2013 Excellent for All Kinds of Memberships, Content Restriction Paywalls & Member Access Subscriptions plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and",
-        "published": "2026-09-25T08:16:40.383"
-      },
-      {
-        "cve_id": "CVE-2026-89426",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Knit Pay \u2013 Cashfree, Instamojo, Razorpay, PayPal and more plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 9.6.1.0. This is due to the `maybe_update",
-        "published": "2026-09-25T08:16:40.940"
-      },
       {
         "cve_id": "CVE-2026-97527",
         "severity": "HIGH",
@@ -306,18 +257,11 @@
         "published": "2026-09-25T11:17:02.980"
       },
       {
-        "cve_id": "CVE-2026-97818",
+        "cve_id": "CVE-2026-97555",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "phpIPAM through 1.8.3 has incorrect authorization for id==\"admins\" and id==\"all\" in api/controllers/User.php.",
-        "published": "2026-09-25T05:17:08.120"
-      },
-      {
-        "cve_id": "CVE-2026-97730",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "In Netgate pfSense Plus before 26.07 and pfSense CE before 2.9.0, a Local File Inclusion (LFI) vulnerability in the Dashboard (index.php) widget sequence data handling allows an authenticated attacker",
-        "published": "2026-09-25T03:16:59.533"
+        "base_score": 8.8,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: client: fix heap overflow in DACL owner/group rewrite\n\nWhen id_mode_to_cifs_acl rewrites an existing DACL, it allocates a\nbuff",
+        "published": "2026-09-25T11:17:05.963"
       },
       {
         "cve_id": "CVE-2026-97525",
@@ -327,39 +271,88 @@
         "published": "2026-09-25T11:17:02.647"
       },
       {
-        "cve_id": "CVE-2026-92713",
+        "cve_id": "CVE-2026-97570",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "The Modula Image Gallery \u2013 Photo Grid & Video Gallery plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the upload_image function in all version",
-        "published": "2026-09-25T08:16:41.310"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nbnxt_en: Bound SW TPA IDs to prevent crashes\n\nFW supports up to 1024 concurrent TPAs, so the FW TPA ID is in the range\n0..1023 (see",
+        "published": "2026-09-25T11:17:07.683"
       },
       {
-        "cve_id": "CVE-2026-97735",
+        "cve_id": "CVE-2026-97573",
         "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "ITFlow before 26.08 allows SVG attachments in the ticket email parser (cron/ticket_email_parser.php) for email messages that may arrive over SMTP from arbitrary senders.",
-        "published": "2026-09-25T04:17:50.763"
+        "base_score": 8.1,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nbnxt_en: Handle buffer allocation failure in bnxt_rx_ring_reset()\n\nbnxt_rx_ring_reset() frees the ring buffers and then reallocates",
+        "published": "2026-09-25T11:17:08.017"
       },
       {
-        "cve_id": "CVE-2026-13456",
+        "cve_id": "CVE-2026-97548",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The WP Maps \u2013 Google Maps,OpenStreetMap,Mapbox,Store Locator,Listing,Directory & Filters plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 4.9.8 via the ",
-        "published": "2026-09-25T08:16:39.970"
+        "base_score": 7.8,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nxfs: fix the rtrmap and rtrefcount _maxlevels_ondisk functions\n\nThe _maxlevels_ondisk functions are used to compute the size of\nin-",
+        "published": "2026-09-25T11:17:05.183"
       },
       {
-        "cve_id": "CVE-2026-89406",
+        "cve_id": "CVE-2026-97575",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Modula Image Gallery \u2013 Photo Grid & Video Gallery plugin for WordPress is vulnerable to unauthorized disclosure of private gallery contents in versions up to, and including, 3.0.1. This is due to ",
-        "published": "2026-09-25T08:16:40.803"
+        "base_score": 7.8,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmedia: v4l2-ctrls: validate AV1 tile counts\n\nThe stateless AV1 decoders use tile_info.tile_cols and tile_rows as loop\nbounds and as",
+        "published": "2026-09-25T11:17:08.230"
       },
       {
-        "cve_id": "CVE-2026-92608",
+        "cve_id": "CVE-2026-97576",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Improper handling of property-encoding exceptions in AMQP 1.0-to-AMQP 0-10 message conversion allows authenticated message producers to disrupt delivery to AMQP 0-10 consumers via message properties t",
-        "published": "2026-09-25T08:16:41.083"
+        "base_score": 7.8,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmedia: v4l2-ctrls: validate HEVC tile counts\n\nThe stateless HEVC decoders read num_tile_columns_minus1 + 1 entries from\ncolumn_widt",
+        "published": "2026-09-25T11:17:08.340"
+      },
+      {
+        "cve_id": "CVE-2026-97577",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmedia: verisilicon: rockchip: reject AV1 frames exceeding the tile capacity\n\nrockchip_vpu981_av1_dec_set_tile_info() indexes the ti",
+        "published": "2026-09-25T11:17:08.447"
+      },
+      {
+        "cve_id": "CVE-2026-97578",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmedia: verisilicon: rockchip: guard VPU981 AV1 divisor and tile buffer\n\nrockchip_vpu981_av1_dec_set_tile_info() divides context_upd",
+        "published": "2026-09-25T11:17:08.567"
+      },
+      {
+        "cve_id": "CVE-2026-97579",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmedia: mediatek: vcodec: bound AV1 tile-start copy to the array capacity\n\nvdec_av1_slice_setup_tile() copies tile_cols + 1 / tile_r",
+        "published": "2026-09-25T11:17:08.677"
+      },
+      {
+        "cve_id": "CVE-2026-97580",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmedia: rkvdec: bound HEVC tile loops and PPS id to the array capacity\n\ncompute_tiles_uniform() and compute_tiles_non_uniform() loop",
+        "published": "2026-09-25T11:17:08.790"
+      },
+      {
+        "cve_id": "CVE-2026-97584",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nafs: Fix incorrect free in candidate cleanup in afs_lookup_server()\n\nFix afs_lookup_server() to not free an existing server's endpo",
+        "published": "2026-09-25T11:17:09.267"
+      },
+      {
+        "cve_id": "CVE-2026-97594",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nlandlock: Fix use-after-free of the source's parent directory\n\ncurrent_check_refer_path() reads old_dentry->d_parent without holdin",
+        "published": "2026-09-25T11:17:10.653"
+      },
+      {
+        "cve_id": "CVE-2026-97602",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ninet: frags: invalidate queues before flushing them\n\nfqdir_pre_exit() flushes the skbs from incomplete queues without\nchanging thei",
+        "published": "2026-09-25T11:17:11.573"
       },
       {
         "cve_id": "CVE-2026-92550",
@@ -381,6 +374,13 @@
         "base_score": 7.5,
         "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmptcp: close race between scheduler and state change\n\nThe mptcp scheduler may race with subflow sockets state change: data\ntransmis",
         "published": "2026-09-25T11:17:02.407"
+      },
+      {
+        "cve_id": "CVE-2026-97524",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmptcp: avoid unneeded actions on subflow reset\n\nOnce in a blue moon, the mptcp receive path can recursively call\nmptcp_data_ready()",
+        "published": "2026-09-25T11:17:02.520"
       }
     ]
   },
