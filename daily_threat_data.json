@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-25T22:57:47.806039+00:00",
+  "generated_at": "2026-09-26T02:36:02.278695+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 44,
+        "value": 41,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
-        "score": 2.5,
+        "value": 4,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1726,
-    "recent_30d_count": 44,
+    "recent_30d_count": 41,
     "recent": [
       {
         "cve_id": "CVE-2026-67279",
@@ -238,17 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 710,
-    "critical_count": 6,
-    "high_count": 33,
+    "total": 707,
+    "critical_count": 4,
+    "high_count": 34,
     "cves": [
-      {
-        "cve_id": "CVE-2026-97230",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "IO::Socket::SSL::SelfCertificate versions 1.00 for Perl contains malware which executes Python code from an obfuscated URL.\n\nThe generate_certificate runs a Python script saved as a certificate file. ",
-        "published": "2026-09-24T23:19:22.960"
-      },
       {
         "cve_id": "CVE-2026-14281",
         "severity": "CRITICAL",
@@ -262,13 +255,6 @@
         "base_score": 9.8,
         "description": "Session fixation in HTTP management authentication allows remote\u00a0attackers to gain unauthorized access to an authenticated management session via reuse of a session identifier retained across successf",
         "published": "2026-09-25T08:16:41.203"
-      },
-      {
-        "cve_id": "CVE-2026-92288",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Lemonldap::NG::Portal versions from 2.20.0 before 2.21.6, from 2.22.0 before 2.23.4 for Perl allow unauthenticated OAuth2 token introspection because checkEndPointAuthenticationCredentials does not ve",
-        "published": "2026-09-25T01:16:48.820"
       },
       {
         "cve_id": "CVE-2026-89055",
@@ -381,6 +367,20 @@
         "base_score": 7.5,
         "description": "A pre-authentication attacker could leverage type size/count handling to cause excessive allocation leading to potential denial of service.\n\nThis issue affects Apache Qpid Broker-J: through 10.1.0.\n\nU",
         "published": "2026-09-25T09:17:06.447"
+      },
+      {
+        "cve_id": "CVE-2026-92560",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A pre-authentication attacker could leverage type size/count handling to cause excessive allocation leading to potential denial of service.\n\nThis issue affects Apache Qpid Broker-J: through 10.1.0.\n\nU",
+        "published": "2026-09-25T09:17:06.587"
+      },
+      {
+        "cve_id": "CVE-2026-97523",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmptcp: close race between scheduler and state change\n\nThe mptcp scheduler may race with subflow sockets state change: data\ntransmis",
+        "published": "2026-09-25T11:17:02.407"
       }
     ]
   },
