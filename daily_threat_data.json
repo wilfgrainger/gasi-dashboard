@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-26T18:51:30.221912+00:00",
+  "generated_at": "2026-09-26T22:15:42.068078+00:00",
   "threat_score": {
-    "score": 6.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.0,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
-        "score": 2.0,
+        "value": 0,
+        "score": 1.0,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 344,
-    "critical_count": 2,
-    "high_count": 15,
+    "total": 280,
+    "critical_count": 0,
+    "high_count": 25,
     "cves": [
       {
-        "cve_id": "CVE-2026-97063",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "X-SpringBoot through 6.0 returns login verification codes in HTTP responses from unauthenticated endpoints GET /sys/mobile/code and GET /sys/email/code without sending them to account owners. Attacker",
-        "published": "2026-09-25T19:17:59.267"
-      },
-      {
-        "cve_id": "CVE-2026-97064",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "X-SpringBoot through 6.0 ships with a hardcoded static master login verification code 172839 enabled by default in the database seed. Unauthenticated attackers can authenticate as any user by submitti",
-        "published": "2026-09-25T19:17:59.427"
-      },
-      {
-        "cve_id": "CVE-2026-100368",
+        "cve_id": "CVE-2026-96795",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "CliInvoke is a .NET library for invoking command-line programs, and its `CliInvoke.Specializations` packages provide specialized wrappers for shells such as PowerShell and Windows Command Prompt. `Cli",
-        "published": "2026-09-25T20:17:05.990"
+        "base_score": 8.8,
+        "description": "Horilla is an HR and CRM software. Prior to 2.0.0, HorillaListView.export_data in horilla_views/generic/cbv/views.py accepts an authenticated user's columns POST parameter, takes field_tuple[1], inter",
+        "published": "2026-09-25T23:16:55.020"
       },
       {
-        "cve_id": "CVE-2026-100369",
+        "cve_id": "CVE-2026-100520",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "CliInvoke and its formerly named `AlastairLundy.CliInvoke` package are .NET libraries for invoking command-line programs and wrapping executable processes. `CliInvoke` versions 2.0.0 through 2.8.4, 2.",
-        "published": "2026-09-25T21:17:21.247"
+        "base_score": 8.8,
+        "description": "Laranode versions before 1.2.1 contain a path traversal vulnerability in the POST /filemanager/upload-file endpoint that allows authenticated users to write arbitrary files outside their home director",
+        "published": "2026-09-26T01:17:00.357"
       },
       {
-        "cve_id": "CVE-2026-100391",
+        "cve_id": "CVE-2026-100544",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "openclaw's @openclaw/voice-call package before 2026.8.1 launches the configured agent for classic inbound voice calls without propagating the caller's identity or non-owner status. As a result, owner-",
+        "published": "2026-09-26T03:17:00.440"
+      },
+      {
+        "cve_id": "CVE-2026-100552",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "OpenClaw (npm package 'openclaw') before 2026.8.1 does not correctly enforce per-chat tool policies for Codex app-server runtime tools. A conversation-level tools.allow rule filtered OpenClaw tools bu",
+        "published": "2026-09-26T03:17:01.640"
+      },
+      {
+        "cve_id": "CVE-2026-100575",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "OpenClaw Slack versions before 2026.8.1 fail to properly enforce sender allowlists in multi-person direct messages. Disallowed participants can trigger Slack agents and access tools and data granted t",
+        "published": "2026-09-26T03:17:05.030"
+      },
+      {
+        "cve_id": "CVE-2026-100580",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "OpenClaw (npm package 'openclaw') before 2026.7.1 improperly handles case sensitivity in the model-facing cron tool: a mixed-case payload kind can pass the agent-facing shell-execution guard and later",
+        "published": "2026-09-26T03:17:05.783"
+      },
+      {
+        "cve_id": "CVE-2026-100551",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "OpenClaw for iOS versions >= 2026.7.1 and < 2026.8.11 do not enforce saved Gateway TLS pins in the Control UI. While native connections enforced the saved Gateway fingerprint, the authenticated Termin",
+        "published": "2026-09-26T03:17:01.487"
+      },
+      {
+        "cve_id": "CVE-2026-100557",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "OpenClaw versions before 2026.8.1 contain an authorization bypass vulnerability in skill tool dispatch that fails to carry the sender's owner status. Non-owner senders authorized to invoke skill comma",
+        "published": "2026-09-26T03:17:02.387"
+      },
+      {
+        "cve_id": "CVE-2026-100568",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "OpenClaw versions before 2026.8.1 fail to properly restrict access to operator command cron jobs, allowing model-visible agent callers to read and execute ownerless command jobs. Attackers can inspect",
+        "published": "2026-09-26T03:17:03.887"
+      },
+      {
+        "cve_id": "CVE-2026-100567",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "MediaFlow Proxy through 2.4.9 contains a server-side request forgery vulnerability in the /proxy routes due to missing and incomplete destination validation in the d query parameter. Remote attackers ",
-        "published": "2026-09-25T21:17:22.800"
+        "description": "OpenClaw is an agent gateway distributed as the npm package 'openclaw'. In versions >= 2026.4.5 and < 2026.8.1, the Gateway validated a single DNS resolution result for a configured remote Chrome DevT",
+        "published": "2026-09-26T03:17:03.737"
       },
       {
-        "cve_id": "CVE-2026-100387",
+        "cve_id": "CVE-2026-100532",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "pgPointcloud through 1.2.5 contains a heap out-of-bounds read vulnerability in dimensional patch WKB deserialization that allows authenticated database users to read adjacent heap memory. Attackers ca",
-        "published": "2026-09-25T21:17:22.163"
+        "description": "@openclaw/whatsapp (npm) before 2026.8.1 exposes the WhatsApp login tool through the generic channel-tool path without preserving the originating sender's owner status, so the owner-only tool boundary",
+        "published": "2026-09-26T03:16:58.660"
       },
       {
-        "cve_id": "CVE-2026-100389",
+        "cve_id": "CVE-2026-100559",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "GestSup versions before 3.2.61 contain a remote code execution vulnerability in the basic IMAP connector's attachment handling that fails to skip blocked file extensions. Unauthenticated attackers can",
-        "published": "2026-09-25T21:17:22.483"
+        "base_score": 8.0,
+        "description": "OpenClaw versions before 2026.8.1 contain a command parser vulnerability where escaped newlines confuse exec allowlist parsing, allowing hidden commands to execute. Attackers can craft input with esca",
+        "published": "2026-09-26T03:17:02.680"
       },
       {
-        "cve_id": "CVE-2026-100208",
+        "cve_id": "CVE-2026-100561",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "OpenClaw (npm package 'openclaw') versions >= 2026.3.22 and < 2026.8.1 contain an approval-bypass flaw in the exec approval policy: the policy could trust a command-running wrapper without inspecting ",
+        "published": "2026-09-26T03:17:02.987"
+      },
+      {
+        "cve_id": "CVE-2026-100570",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "OpenClaw (npm package 'openclaw') versions >= 2026.3.28 and < 2026.8.1 allow an untrusted workspace .env file to set the CLOUDSDK_PYTHON_ARGS environment variable. When an operator starts OpenClaw in ",
+        "published": "2026-09-26T03:17:04.177"
+      },
+      {
+        "cve_id": "CVE-2026-100578",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "OpenClaw (npm package `openclaw`) before 2026.7.1 fails to restrict owner-only infrastructure tools exposed through the chat.send endpoint. In Gateway deployments using authentication modes that honor",
+        "published": "2026-09-26T03:17:05.483"
+      },
+      {
+        "cve_id": "CVE-2026-100579",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "OpenClaw (npm package 'openclaw') before 2026.7.1 incorrectly trusts requester provenance in message.action. In identity-bearing Gateway deployments (authentication modes that honor caller identity an",
+        "published": "2026-09-26T03:17:05.633"
+      },
+      {
+        "cve_id": "CVE-2026-100535",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Integer overflow or wraparound in Microsoft Office Outlook allows an unauthorized attacker to execute code over a network.",
-        "published": "2026-09-25T20:17:04.760"
+        "description": "OpenClaw (npm package 'openclaw') versions >= 2026.4.5 and < 2026.8.1 can lose the originating requester's restrictions and untrusted provenance when session-derived text is persisted to session memor",
+        "published": "2026-09-26T03:16:59.103"
       },
       {
-        "cve_id": "CVE-2026-5267",
+        "cve_id": "CVE-2026-100541",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Ciena Navigator Network\nControl Suite (NCS) contains an information exposure vulnerability in an\nevent-streaming API that does not properly enforce authentication. An\nunauthenticated attacker with net",
-        "published": "2026-09-25T20:17:11.613"
+        "description": "OpenClaw's Matrix integration (npm package @openclaw/matrix) versions >= 2026.2.2 and < 2026.8.1 lowercase complete Matrix user IDs \u2014 including historical localparts and the case-sensitive server-name",
+        "published": "2026-09-26T03:16:59.987"
       },
       {
-        "cve_id": "CVE-2026-10758",
+        "cve_id": "CVE-2026-100543",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Esri LERC is an open-source image or raster format which supports rapid encoding and decoding for any pixel type. A Heap based Out-of-Bounds Write via Integer Overflow in LERC versions 4.1.0 and earli",
-        "published": "2026-09-25T21:17:23.117"
+        "description": "OpenClaw (npm package openclaw) before 2026.8.1 could include deterministic hashes computed over the original, unredacted configuration in redacted configuration responses. When the Gateway password h",
+        "published": "2026-09-26T03:17:00.287"
       },
       {
-        "cve_id": "CVE-2026-57443",
+        "cve_id": "CVE-2026-100558",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "SCBE-AETHERMOORE is a geometric AI governance and evaluation framework. Starting in version 4.0.2 and prior to version 4.2.1, the AetherBrowser API server (`scripts/aetherbrowser/api_server.py`) expos",
-        "published": "2026-09-25T21:17:23.413"
-      },
-      {
-        "cve_id": "CVE-2026-91765",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "cleanup_xml_node() in the SOAP XML parser recurses once per XML nesting level with no depth limit. An unauthenticated attacker can post a SOAP request containing tens of thousands of nested elements t",
-        "published": "2026-09-25T21:17:24.550"
-      },
-      {
-        "cve_id": "CVE-2026-100390",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "Zoraxy versions 3.2.3 through 3.3.4 fail to properly parse IPv6 addresses in the RemoteAddr field when setting forwarded headers. Unauthenticated attackers connecting over IPv6 can supply arbitrary X-",
-        "published": "2026-09-25T21:17:22.637"
-      },
-      {
-        "cve_id": "CVE-2026-97060",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "X-SpringBoot through 6.0 lacks object-level authorization in user management endpoints, allowing sub-administrators to modify or delete users without ownership verification. Attackers with user-manage",
-        "published": "2026-09-25T19:17:59.110"
-      },
-      {
-        "cve_id": "CVE-2026-100372",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "ClipBucket v5 before 5.5.3-#197 contains a path traversal vulnerability in the admin template editor that allows authenticated administrators to overwrite PHP files by supplying directory traversal se",
-        "published": "2026-09-25T20:17:06.143"
-      },
-      {
-        "cve_id": "CVE-2026-100310",
-        "severity": "HIGH",
-        "base_score": 7.0,
-        "description": "GNU libextractor before 1.16 loads plugins from an untrusted search path specified by the LIBEXTRACTOR_PREFIX environment variable without proper privilege checks. A local attacker can exploit this by",
-        "published": "2026-09-25T20:17:05.833"
-      },
-      {
-        "cve_id": "CVE-2026-100419",
-        "severity": "HIGH",
-        "base_score": 7.0,
-        "description": "gitoxide gix-fs before 0.23.0 contains a path validation bypass vulnerability in the worktree checkout mechanism that allows attackers to escape the worktree directory via symlink manipulation. During",
-        "published": "2026-09-25T22:17:10.613"
-      },
-      {
-        "cve_id": "CVE-2026-100192",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "X-SpringBoot through 6.0 exposes appKey and appSecret credentials in the GET /application/manager/select endpoint without authentication or field filtering. Unauthenticated attackers can retrieve thes",
-        "published": "2026-09-25T19:16:49.230"
-      },
-      {
-        "cve_id": "CVE-2025-14181",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "The SOAP HTTP client guards its response buffer growth with a check that relies on signed integer overflow, which is undefined behaviour and is not guaranteed to trigger. When the check is optimised a",
-        "published": "2026-09-25T21:17:19.840"
-      },
-      {
-        "cve_id": "CVE-2026-91767",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "php_openssl_matches_wildcard_name() in ext/openssl/xp_ssl.c underflows the length argument passed to memchr() when a TLS server certificate presents a wildcard name whose literal characters are togeth",
-        "published": "2026-09-25T21:17:24.793"
+        "description": "OpenClaw versions before 2026.8.1 contain a resource exhaustion vulnerability in the Gateway listener that allows unauthenticated clients to retain response sockets by sending WebSocket upgrade reques",
+        "published": "2026-09-26T03:17:02.533"
       }
     ]
   },
