@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-26T08:55:42.950091+00:00",
+  "generated_at": "2026-09-26T15:23:07.845723+00:00",
   "threat_score": {
-    "score": 5.0,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 1.0,
+        "value": 4,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 740,
-    "critical_count": 0,
-    "high_count": 27,
+    "total": 437,
+    "critical_count": 4,
+    "high_count": 19,
     "cves": [
       {
-        "cve_id": "CVE-2026-97527",
+        "cve_id": "CVE-2026-92161",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "FriendsOfFlarum OAuth allows users to log in to Flarum with GitHub, Twitter, Facebook, and other providers. Prior to 1.7.4 and 2.0.0-beta.4, the Discord OAuth provider does not check the verified fiel",
+        "published": "2026-09-25T16:17:29.387"
+      },
+      {
+        "cve_id": "CVE-2026-39353",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "InvoicePlane is a self-hosted open source application for managing invoices, clients, and payments. Prior to 1.7.2-rc-1, InvoicePlane builds its permitted template list by scanning a PHP template dire",
+        "published": "2026-09-25T16:17:25.053"
+      },
+      {
+        "cve_id": "CVE-2026-42322",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Piwigo is a full featured open source photo gallery application for the web. Prior to 16.4.0, admin/themes_standard_pages.php validates uploaded logo content by MIME type but reuses the attacker-contr",
+        "published": "2026-09-25T16:17:25.420"
+      },
+      {
+        "cve_id": "CVE-2026-62262",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Piwigo is a full featured open source photo gallery application for the web. In 17.0.0beta1 and earlier, when rating is enabled, an unauthenticated guest can call pwg.images.filteredSearch.create with",
+        "published": "2026-09-25T16:17:26.750"
+      },
+      {
+        "cve_id": "CVE-2026-94445",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nscsi: qla2xxx: Serialize NVMe unsol ctx list with a per-fcport lock\n\nThe fcport->unsol_ctx_head list is modified from several conte",
-        "published": "2026-09-25T11:17:02.873"
+        "description": "A malicious txtar could escape the intended execution context and force arbitrary writes to the playground host's trusted filesystem.\n\n\n\nDisjointly, one of the three possible paths to invoke\u00a0go vet\u00a0on",
+        "published": "2026-09-25T17:17:19.963"
       },
       {
-        "cve_id": "CVE-2026-97528",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nscsi: qla2xxx: Unlink NVMe unsol ctx before freeing on LS reject error\n\nqla_nvme_xmt_ls_rsp() obtains uctx, which was linked into\nf",
-        "published": "2026-09-25T11:17:02.980"
-      },
-      {
-        "cve_id": "CVE-2026-97555",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsmb: client: fix heap overflow in DACL owner/group rewrite\n\nWhen id_mode_to_cifs_acl rewrites an existing DACL, it allocates a\nbuff",
-        "published": "2026-09-25T11:17:05.963"
-      },
-      {
-        "cve_id": "CVE-2026-97525",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nx86/mm/pat: Allocate split page tables as kernel page tables\n\nA PTE is allocated directly without going through the standard page t",
-        "published": "2026-09-25T11:17:02.647"
-      },
-      {
-        "cve_id": "CVE-2026-97570",
+        "cve_id": "CVE-2026-44642",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nbnxt_en: Bound SW TPA IDs to prevent crashes\n\nFW supports up to 1024 concurrent TPAs, so the FW TPA ID is in the range\n0..1023 (see",
-        "published": "2026-09-25T11:17:07.683"
+        "description": "Piwigo is a full featured open source photo gallery application for the web. Prior to 16.4.0, check_upgrade_access_rights() in admin/include/functions_upgrade.php conditionally escapes the submitted u",
+        "published": "2026-09-25T16:17:25.970"
       },
       {
-        "cve_id": "CVE-2026-97573",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nbnxt_en: Handle buffer allocation failure in bnxt_rx_ring_reset()\n\nbnxt_rx_ring_reset() frees the ring buffers and then reallocates",
-        "published": "2026-09-25T11:17:08.017"
-      },
-      {
-        "cve_id": "CVE-2026-97548",
+        "cve_id": "CVE-2026-91837",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nxfs: fix the rtrmap and rtrefcount _maxlevels_ondisk functions\n\nThe _maxlevels_ondisk functions are used to compute the size of\nin-",
-        "published": "2026-09-25T11:17:05.183"
+        "description": "A flaw was found in NetworkManager-iodine, the iodine VPN plugin for NetworkManager. A local unprivileged user can exploit a vulnerability in how the 'nameserver' setting is processed when establishin",
+        "published": "2026-09-25T17:17:18.983"
       },
       {
-        "cve_id": "CVE-2026-97575",
+        "cve_id": "CVE-2026-91838",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmedia: v4l2-ctrls: validate AV1 tile counts\n\nThe stateless AV1 decoders use tile_info.tile_cols and tile_rows as loop\nbounds and as",
-        "published": "2026-09-25T11:17:08.230"
+        "description": "A flaw was found in NetworkManager-sstp, the SSTP VPN plugin for NetworkManager. A local unprivileged user can exploit this vulnerability by embedding special characters, known as shell metacharacters",
+        "published": "2026-09-25T18:17:32.530"
       },
       {
-        "cve_id": "CVE-2026-97576",
+        "cve_id": "CVE-2026-91839",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmedia: v4l2-ctrls: validate HEVC tile counts\n\nThe stateless HEVC decoders read num_tile_columns_minus1 + 1 entries from\ncolumn_widt",
-        "published": "2026-09-25T11:17:08.340"
+        "description": "A flaw was found in NetworkManager-fortisslvpn, the FortiSSLVPN plugin for NetworkManager. The nm-fortisslvpn-service improperly handles carriage-return/line-feed (CR/LF) characters in VPN connection ",
+        "published": "2026-09-25T18:17:32.660"
       },
       {
-        "cve_id": "CVE-2026-97577",
+        "cve_id": "CVE-2026-91840",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmedia: verisilicon: rockchip: reject AV1 frames exceeding the tile capacity\n\nrockchip_vpu981_av1_dec_set_tile_info() indexes the ti",
-        "published": "2026-09-25T11:17:08.447"
+        "description": "A flaw was found in NetworkManager-vpnc. This vulnerability allows a local unprivileged user to escalate privileges to root. By injecting a newline character into the VPN username field, an attacker c",
+        "published": "2026-09-25T18:17:32.793"
       },
       {
-        "cve_id": "CVE-2026-97578",
+        "cve_id": "CVE-2026-91841",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmedia: verisilicon: rockchip: guard VPU981 AV1 divisor and tile buffer\n\nrockchip_vpu981_av1_dec_set_tile_info() divides context_upd",
-        "published": "2026-09-25T11:17:08.567"
+        "description": "A flaw was found in NetworkManager-vpnc, a VPN plugin for NetworkManager. A local unprivileged user can exploit this vulnerability by injecting a newline character into the CA-File path. This manipula",
+        "published": "2026-09-25T18:17:32.923"
       },
       {
-        "cve_id": "CVE-2026-97579",
+        "cve_id": "CVE-2026-89032",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmedia: mediatek: vcodec: bound AV1 tile-start copy to the array capacity\n\nvdec_av1_slice_setup_tile() copies tile_cols + 1 / tile_r",
-        "published": "2026-09-25T11:17:08.677"
+        "base_score": 7.7,
+        "description": "BerriAI LiteLLM before 1.101.0-rc.1 contains a tenant isolation bypass vulnerability in the semantic cache layer that allows authenticated users to read other tenants' cached responses by exploiting a",
+        "published": "2026-09-25T17:17:18.793"
       },
       {
-        "cve_id": "CVE-2026-97580",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmedia: rkvdec: bound HEVC tile loops and PPS id to the array capacity\n\ncompute_tiles_uniform() and compute_tiles_non_uniform() loop",
-        "published": "2026-09-25T11:17:08.790"
-      },
-      {
-        "cve_id": "CVE-2026-97584",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nafs: Fix incorrect free in candidate cleanup in afs_lookup_server()\n\nFix afs_lookup_server() to not free an existing server's endpo",
-        "published": "2026-09-25T11:17:09.267"
-      },
-      {
-        "cve_id": "CVE-2026-97594",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nlandlock: Fix use-after-free of the source's parent directory\n\ncurrent_check_refer_path() reads old_dentry->d_parent without holdin",
-        "published": "2026-09-25T11:17:10.653"
-      },
-      {
-        "cve_id": "CVE-2026-97602",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ninet: frags: invalidate queues before flushing them\n\nfqdir_pre_exit() flushes the skbs from incomplete queues without\nchanging thei",
-        "published": "2026-09-25T11:17:11.573"
-      },
-      {
-        "cve_id": "CVE-2026-92550",
+        "cve_id": "CVE-2026-49850",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "A pre-authentication attacker could leverage type size/count handling to cause excessive allocation leading to potential denial of service.\n\nThis issue affects Apache Qpid Broker-J: through 10.1.0.\n\nU",
-        "published": "2026-09-25T09:17:06.447"
+        "description": "InvoicePlane is a self-hosted open source application for managing invoices, clients, and payments. Prior to 1.7.2, InvoicePlane exposes Invoices::delete() and Invoices::delete_invoice_tax() as state-",
+        "published": "2026-09-25T16:17:26.140"
       },
       {
-        "cve_id": "CVE-2026-92560",
+        "cve_id": "CVE-2026-50547",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "A pre-authentication attacker could leverage type size/count handling to cause excessive allocation leading to potential denial of service.\n\nThis issue affects Apache Qpid Broker-J: through 10.1.0.\n\nU",
-        "published": "2026-09-25T09:17:06.587"
+        "description": "InvoicePlane is a self-hosted open source application for managing invoices, clients, and payments. Prior to 1.7.2, InvoicePlane's Invoices::generate_xml() method appends a database-derived xml_id to ",
+        "published": "2026-09-25T16:17:26.300"
       },
       {
-        "cve_id": "CVE-2026-97523",
+        "cve_id": "CVE-2026-97871",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmptcp: close race between scheduler and state change\n\nThe mptcp scheduler may race with subflow sockets state change: data\ntransmis",
-        "published": "2026-09-25T11:17:02.407"
+        "base_score": 7.3,
+        "description": "A vulnerability has been found in Zhonglun CloudPos up to 3.0.1.76. This issue affects the function OpenLocalBrowser of the file ZlPos/ZlPos/Bizlogic/JSBridge.cs of the component JSBridge. Such manipu",
+        "published": "2026-09-25T17:17:21.443"
       },
       {
-        "cve_id": "CVE-2026-97524",
+        "cve_id": "CVE-2026-97877",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nmptcp: avoid unneeded actions on subflow reset\n\nOnce in a blue moon, the mptcp receive path can recursively call\nmptcp_data_ready()",
-        "published": "2026-09-25T11:17:02.520"
+        "base_score": 7.3,
+        "description": "A vulnerability was determined in zhistaredu StarTraining up to 3.8.1. This issue affects the function UserLoginService.createToken of the file application.yml of the component JWT Token Handler. This",
+        "published": "2026-09-25T17:17:21.763"
+      },
+      {
+        "cve_id": "CVE-2026-97878",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was identified in zhistaredu StarTraining up to 3.8.1. Impacted is the function anonymous of the file /druid/index.html of the component Druid Console. Such manipulation leads to missi",
+        "published": "2026-09-25T17:17:21.940"
+      },
+      {
+        "cve_id": "CVE-2026-97882",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A weakness has been identified in mathurvishal CloudClassroom-PHP-Project up to 5dadec098bfbbf3300d60c3494db3fb95b66e7be. The impacted element is an unknown function of the file loginlinkfaculty.php o",
+        "published": "2026-09-25T18:17:35.063"
+      },
+      {
+        "cve_id": "CVE-2026-97883",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A security vulnerability has been detected in mathurvishal CloudClassroom-PHP-Project up to 5dadec098bfbbf3300d60c3494db3fb95b66e7be. This affects an unknown function of the file updatequery.php. The ",
+        "published": "2026-09-25T18:17:35.247"
+      },
+      {
+        "cve_id": "CVE-2026-97885",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A flaw has been found in mathurvishal CloudClassroom-PHP-Project up to 5dadec098bfbbf3300d60c3494db3fb95b66e7be. Affected is an unknown function of the file updatefaculty.php. This manipulation of the",
+        "published": "2026-09-25T18:17:35.613"
       }
     ]
   },
