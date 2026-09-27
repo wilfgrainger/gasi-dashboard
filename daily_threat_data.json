@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-27T02:34:40.694902+00:00",
+  "generated_at": "2026-09-27T09:39:13.706942+00:00",
   "threat_score": {
-    "score": 5.5,
+    "score": 5.0,
     "level": "ELEVATED",
     "level_color": "elevated",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 0,
+        "score": 1.0,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 286,
-    "critical_count": 1,
-    "high_count": 38,
+    "total": 215,
+    "critical_count": 0,
+    "high_count": 54,
     "cves": [
       {
-        "cve_id": "CVE-2026-18143",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Request a Quote for WooCommerce plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 2.9.2 via the `afrfq_submit_quote_via_popup()` function. This is d",
-        "published": "2026-09-26T07:17:02.017"
-      },
-      {
-        "cve_id": "CVE-2026-100544",
+        "cve_id": "CVE-2026-100614",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "openclaw's @openclaw/voice-call package before 2026.8.1 launches the configured agent for classic inbound voice calls without propagating the caller's identity or non-owner status. As a result, owner-",
-        "published": "2026-09-26T03:17:00.440"
+        "description": "Capgo before 12.244.1 contains a cross-tenant integrity vulnerability in the metadata-cleaning worker that trusts image object keys from mutable database rows without validating ownership. An authenti",
+        "published": "2026-09-26T14:16:42.050"
       },
       {
-        "cve_id": "CVE-2026-100552",
+        "cve_id": "CVE-2026-100615",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "OpenClaw (npm package 'openclaw') before 2026.8.1 does not correctly enforce per-chat tool policies for Codex app-server runtime tools. A conversation-level tools.allow rule filtered OpenClaw tools bu",
-        "published": "2026-09-26T03:17:01.640"
+        "description": "Cap-go capgo.app before 12.267.1 fails to validate target API key privilege during rotation, allowing an apikey_manager to rotate a higher-privileged org_super_admin sibling key and recover its plaint",
+        "published": "2026-09-26T14:16:42.193"
       },
       {
-        "cve_id": "CVE-2026-100575",
+        "cve_id": "CVE-2026-100617",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "OpenClaw Slack versions before 2026.8.1 fail to properly enforce sender allowlists in multi-person direct messages. Disallowed participants can trigger Slack agents and access tools and data granted t",
-        "published": "2026-09-26T03:17:05.030"
+        "description": "Cap-go capgo.app fails to validate that principals in channel_permission_overrides belong to the organization, allowing authenticated app/org admins to grant channel permissions to non-member users. A",
+        "published": "2026-09-26T14:16:42.467"
       },
       {
-        "cve_id": "CVE-2026-100580",
+        "cve_id": "CVE-2026-100619",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "OpenClaw (npm package 'openclaw') before 2026.7.1 improperly handles case sensitivity in the model-facing cron tool: a mixed-case payload kind can pass the agent-facing shell-execution guard and later",
-        "published": "2026-09-26T03:17:05.783"
+        "description": "Capgo (capgo.app) blocks direct user inserts into the public.manifest table with a RESTRICTIVE row-level security policy, but that restriction can be bypassed indirectly. A principal holding an app-sc",
+        "published": "2026-09-26T14:16:42.740"
       },
       {
-        "cve_id": "CVE-2026-100586",
+        "cve_id": "CVE-2026-100623",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "OpenClaw Codex before 2026.7.1 fails to properly enforce owner authorization when creating native conversation bindings. Non-owner channel senders with command access can create bindings to the native",
-        "published": "2026-09-26T03:17:06.660"
+        "description": "Capgo (capgo.app) exposes the legacy membership table public.org_users directly through Supabase PostgREST. The table's row-level security policies \"Allow org admin to insert\" and \"Allow org admin to ",
+        "published": "2026-09-26T14:16:43.293"
       },
       {
-        "cve_id": "CVE-2026-100587",
+        "cve_id": "CVE-2026-100639",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "OpenClaw versions before 2026.7.1 fail to properly validate owner authorization in the Codex computer-use installation command. Non-owner channel senders can install arbitrary plugins and execute MCP ",
-        "published": "2026-09-26T03:17:06.810"
+        "description": "SiYuan v3.8.3 fails to HTML-escape the data-subtype attribute when generating gutter-button markup (app/src/protyle/gutter/button.ts, assigned via innerHTML in app/src/protyle/gutter/index.ts) from co",
+        "published": "2026-09-26T14:16:45.633"
       },
       {
-        "cve_id": "CVE-2026-100596",
+        "cve_id": "CVE-2026-100670",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "OpenClaw versions before 2026.7.1 fail to properly authorize non-owner users executing MCP configuration changes through /mcp set and /mcp unset commands. Attackers can persist arbitrary stdio MCP com",
-        "published": "2026-09-26T03:17:08.187"
+        "description": "Grav CMS 2.0.14 through 2.0.24 contains a privilege escalation vulnerability in the group and account blueprints. The access map is gated by a `security@: admin.super` guard that is resolved by the fi",
+        "published": "2026-09-26T14:16:50.583"
       },
       {
-        "cve_id": "CVE-2026-100599",
+        "cve_id": "CVE-2026-100679",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "OpenClaw versions 2026.5.1 through 2026.7.0 fail to apply the configured exec approval path to Google Meet node commands. The googlemeet.chrome command accepts caller-supplied audio command arrays and",
-        "published": "2026-09-26T03:17:08.667"
+        "description": "stoatchat before 0.15.5 fails to validate that MFA tickets belong to the authenticated user, allowing attackers to bypass MFA by using their own valid ticket with another user's session token. Attacke",
+        "published": "2026-09-26T14:16:51.993"
       },
       {
-        "cve_id": "CVE-2026-96524",
+        "cve_id": "CVE-2026-100682",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The MCP Server for WordPress  WordPress plugin before 1.8.2 does not correctly verify the WordPress REST API nonce for cookie-authenticated requests when a condition an attacker can influence is prese",
-        "published": "2026-09-26T07:17:03.130"
+        "description": "Budibase Server before 3.45.0 contains an arbitrary file write vulnerability in the PWA icon upload endpoint that extracts user-supplied ZIP archives without proper symlink validation. Attackers with ",
+        "published": "2026-09-26T14:16:52.433"
       },
       {
-        "cve_id": "CVE-2026-100551",
+        "cve_id": "CVE-2026-100618",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "Capgo (capgo.app) is affected by an authorization flaw in the app icon update path. The PUT /app/:id endpoint accepts a user-controlled `icon` value, normalizes it, and stores it in public.apps.icon_u",
+        "published": "2026-09-26T14:16:42.600"
+      },
+      {
+        "cve_id": "CVE-2026-100693",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "Hugo versions from v0.162.0 before v0.166.0 contain a case-sensitive validation flaw in the security.http.urls IP-literal deny rule that allows attackers to bypass restrictions. Attackers can use mixe",
+        "published": "2026-09-26T14:16:54.007"
+      },
+      {
+        "cve_id": "CVE-2026-100608",
         "severity": "HIGH",
         "base_score": 8.3,
-        "description": "OpenClaw for iOS versions >= 2026.7.1 and < 2026.8.11 do not enforce saved Gateway TLS pins in the Control UI. While native connections enforced the saved Gateway fingerprint, the authenticated Termin",
-        "published": "2026-09-26T03:17:01.487"
+        "description": "Flowise through 3.1.4 does not enforce authorization on the BullMQ admin dashboard. When the server runs in queue mode with the dashboard enabled and not in cloud mode (MODE=queue, ENABLE_BULLMQ_DASHB",
+        "published": "2026-09-26T14:16:41.140"
       },
       {
-        "cve_id": "CVE-2026-100557",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "OpenClaw versions before 2026.8.1 contain an authorization bypass vulnerability in skill tool dispatch that fails to carry the sender's owner status. Non-owner senders authorized to invoke skill comma",
-        "published": "2026-09-26T03:17:02.387"
-      },
-      {
-        "cve_id": "CVE-2026-100568",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "OpenClaw versions before 2026.8.1 fail to properly restrict access to operator command cron jobs, allowing model-visible agent callers to read and execute ownerless command jobs. Attackers can inspect",
-        "published": "2026-09-26T03:17:03.887"
-      },
-      {
-        "cve_id": "CVE-2026-100588",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "OpenClaw (npm package 'openclaw') before 2026.7.1 does not enforce the administrator scope requirement on browser control when it is reached through the node.invoke method, although direct browser.req",
-        "published": "2026-09-26T03:17:06.963"
-      },
-      {
-        "cve_id": "CVE-2026-100589",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "OpenClaw versions before 2026.7.1 contain a sandbox bypass vulnerability in the browser tool that allows sandboxed sessions to access paired node browser actions despite allowHostControl=false configu",
-        "published": "2026-09-26T03:17:07.110"
-      },
-      {
-        "cve_id": "CVE-2026-100567",
+        "cve_id": "CVE-2026-100673",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "OpenClaw is an agent gateway distributed as the npm package 'openclaw'. In versions >= 2026.4.5 and < 2026.8.1, the Gateway validated a single DNS resolution result for a configured remote Chrome DevT",
-        "published": "2026-09-26T03:17:03.737"
+        "description": "The Grav Data Manager plugin (getgrav/grav-plugin-datamanager) versions 1.0.1 through 1.4.4 render stored data entries in the item-detail view (admin/templates/partials/item.html.twig) without escapin",
+        "published": "2026-09-26T14:16:51.133"
       },
       {
-        "cve_id": "CVE-2026-100532",
+        "cve_id": "CVE-2026-100676",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "January, the media proxy/embed service of stoatchat (stoatchat/stoatchat), before version 0.15.5 improperly resolves SVG <image href> values as local filesystem paths when a fetched resource is served",
+        "published": "2026-09-26T14:16:51.577"
+      },
+      {
+        "cve_id": "CVE-2026-100627",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "@openclaw/whatsapp (npm) before 2026.8.1 exposes the WhatsApp login tool through the generic channel-tool path without preserving the originating sender's owner status, so the owner-only tool boundary",
-        "published": "2026-09-26T03:16:58.660"
+        "description": "Capgo (Cap-go/capgo.app) server backend Supabase functions contain an incorrect authorization flaw in the API-key bundle promotion path. The PUT /bundle endpoint, available to \"all\" and \"write\" API ke",
+        "published": "2026-09-26T14:16:43.837"
       },
       {
-        "cve_id": "CVE-2026-100559",
+        "cve_id": "CVE-2026-100646",
         "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "OpenClaw versions before 2026.8.1 contain a command parser vulnerability where escaped newlines confuse exec allowlist parsing, allowing hidden commands to execute. Attackers can craft input with esca",
-        "published": "2026-09-26T03:17:02.680"
+        "base_score": 8.1,
+        "description": "SiYuan is a self-hosted personal knowledge management system. In versions up to and including 3.8.3, the kernel's authentication guards (CheckAuth in kernel/model/session.go and IsSessionOriginAllowed",
+        "published": "2026-09-26T14:16:46.900"
       },
       {
-        "cve_id": "CVE-2026-100561",
+        "cve_id": "CVE-2026-100680",
         "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "OpenClaw (npm package 'openclaw') versions >= 2026.3.22 and < 2026.8.1 contain an approval-bypass flaw in the exec approval policy: the policy could trust a command-running wrapper without inspecting ",
-        "published": "2026-09-26T03:17:02.987"
+        "base_score": 8.1,
+        "description": "Budibase versions before 3.45.0 fail to disable external JSON reference resolution in the OpenAPI/Swagger import validator, allowing authenticated builders to read arbitrary local files. Attackers wit",
+        "published": "2026-09-26T14:16:52.150"
       },
       {
-        "cve_id": "CVE-2026-100585",
+        "cve_id": "CVE-2026-100684",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Budibase versions 3.41.0 before 3.45.0 contain an authentication bypass in the OIDC/SSO login path of @budibase/server. In sso.authenticate, when no existing user matches the incoming SSO subject, the",
+        "published": "2026-09-26T14:16:52.720"
+      },
+      {
+        "cve_id": "CVE-2026-100686",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Budibase versions before 3.45.0 fail to validate per-app authorization in the POST /api/global/groups/:groupId/apps endpoint, allowing builders to assign application roles across workspace boundaries.",
+        "published": "2026-09-26T14:16:53.000"
+      },
+      {
+        "cve_id": "CVE-2026-100641",
         "severity": "HIGH",
         "base_score": 8.0,
-        "description": "OpenClaw (npm package `openclaw`) before 2026.7.1 fails to enforce the owner-only authorization requirement for Claude Code permission prompts delivered through the MCP channel bridge. An authorized n",
-        "published": "2026-09-26T03:17:06.517"
+        "description": "SiYuan before v3.8.4 does not HTML-escape stored flashcard block content before interpolating it into the card-manager list markup. Block content returned by /api/riff/getRiffCards is inserted into a ",
+        "published": "2026-09-26T14:16:46.080"
       }
     ]
   },
