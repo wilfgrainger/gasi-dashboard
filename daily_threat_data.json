@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-27T09:39:13.706942+00:00",
+  "generated_at": "2026-09-27T16:02:22.320005+00:00",
   "threat_score": {
-    "score": 5.0,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.5,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 1.0,
+        "value": 5,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 215,
-    "critical_count": 0,
-    "high_count": 54,
+    "total": 108,
+    "critical_count": 5,
+    "high_count": 30,
     "cves": [
       {
-        "cve_id": "CVE-2026-100614",
+        "cve_id": "CVE-2026-100740",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A vulnerability was detected in D-Link DIR-895L A1_102b07. Impacted is the function tunnel_set_params of the file tunnel.c of the component L2TP Control Channel Parser. Performing a manipulation resul",
+        "published": "2026-09-27T01:17:17.810"
+      },
+      {
+        "cve_id": "CVE-2026-85984",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The miniOrange OTP Login, Verification and SMS Notifications plugin for WordPress is vulnerable to Authentication Bypass via the mo_wp_login_intent parameter in all versions up to, and including, 5.5.",
+        "published": "2026-09-26T18:16:31.010"
+      },
+      {
+        "cve_id": "CVE-2026-82901",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Ultra Addons for Contact Form 7 plugin for WordPress is vulnerable to Arbitrary File Upload due to insufficient file type validation in the 'uacf7_wpcf7_mail_components' function in all versions u",
+        "published": "2026-09-26T19:16:28.427"
+      },
+      {
+        "cve_id": "CVE-2026-100741",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Eval injection in the JScript event-script dispatcher in Progressive Robot Ltd's hMailServer, versions 6.0.0 through 6.3.3 on Windows, allows a remote, unauthenticated attacker to run arbitrary JScrip",
+        "published": "2026-09-27T08:16:26.813"
+      },
+      {
+        "cve_id": "CVE-2026-100721",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "vm2 before 3.12.2 contains an authorization bypass in the NodeVM external-module resolver. When an embedder configures `require.external` with a custom resolver (and `context: 'host'`), `LegacyResolve",
+        "published": "2026-09-27T02:17:17.547"
+      },
+      {
+        "cve_id": "CVE-2026-77203",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Capgo before 12.244.1 contains a cross-tenant integrity vulnerability in the metadata-cleaning worker that trusts image object keys from mutable database rows without validating ownership. An authenti",
-        "published": "2026-09-26T14:16:42.050"
+        "description": "The Groups \u2013 Memberships and Access Control plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 4.6.0. This is due to the groups_join() function deriving g",
+        "published": "2026-09-26T18:16:29.917"
       },
       {
-        "cve_id": "CVE-2026-100615",
+        "cve_id": "CVE-2026-100852",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Cap-go capgo.app before 12.267.1 fails to validate target API key privilege during rotation, allowing an apikey_manager to rotate a higher-privileged org_super_admin sibling key and recover its plaint",
-        "published": "2026-09-26T14:16:42.193"
+        "description": "AzuraCast through 0.23.x contains a command injection vulnerability in the Liquidsoap config generation for live recording that fails to quote the streamer username in process.run calls. Authenticated",
+        "published": "2026-09-27T02:17:24.437"
       },
       {
-        "cve_id": "CVE-2026-100617",
+        "cve_id": "CVE-2026-100856",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Cap-go capgo.app fails to validate that principals in channel_permission_overrides belong to the organization, allowing authenticated app/org admins to grant channel permissions to non-member users. A",
-        "published": "2026-09-26T14:16:42.467"
+        "description": "AzuraCast before 0.23.6 contains a code injection vulnerability in the remote relay password field due to incomplete migration from the vulnerable cleanUpString method to toRawString. Attackers with R",
+        "published": "2026-09-27T02:17:25.050"
       },
       {
-        "cve_id": "CVE-2026-100619",
+        "cve_id": "CVE-2026-100864",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Capgo (capgo.app) blocks direct user inserts into the public.manifest table with a RESTRICTIVE row-level security policy, but that restriction can be bypassed indirectly. A principal holding an app-sc",
-        "published": "2026-09-26T14:16:42.740"
+        "description": "heym before 0.0.91 contains a sandbox escape vulnerability in the expression engine's DotList map/filter and fallback resolver that allows authenticated users to execute arbitrary Python code. Attacke",
+        "published": "2026-09-27T02:17:26.260"
       },
       {
-        "cve_id": "CVE-2026-100623",
+        "cve_id": "CVE-2026-100865",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Capgo (capgo.app) exposes the legacy membership table public.org_users directly through Supabase PostgREST. The table's row-level security policies \"Allow org admin to insert\" and \"Allow org admin to ",
-        "published": "2026-09-26T14:16:43.293"
+        "description": "Heym before 0.0.53 contains multiple independent vulnerabilities. (1) The workflow condition evaluator uses Python eval() without an effective sandbox, allowing any user who can edit a workflow branch",
+        "published": "2026-09-27T02:17:26.410"
       },
       {
-        "cve_id": "CVE-2026-100639",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "SiYuan v3.8.3 fails to HTML-escape the data-subtype attribute when generating gutter-button markup (app/src/protyle/gutter/button.ts, assigned via innerHTML in app/src/protyle/gutter/index.ts) from co",
-        "published": "2026-09-26T14:16:45.633"
-      },
-      {
-        "cve_id": "CVE-2026-100670",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Grav CMS 2.0.14 through 2.0.24 contains a privilege escalation vulnerability in the group and account blueprints. The access map is gated by a `security@: admin.super` guard that is resolved by the fi",
-        "published": "2026-09-26T14:16:50.583"
-      },
-      {
-        "cve_id": "CVE-2026-100679",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "stoatchat before 0.15.5 fails to validate that MFA tickets belong to the authenticated user, allowing attackers to bypass MFA by using their own valid ticket with another user's session token. Attacke",
-        "published": "2026-09-26T14:16:51.993"
-      },
-      {
-        "cve_id": "CVE-2026-100682",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Budibase Server before 3.45.0 contains an arbitrary file write vulnerability in the PWA icon upload endpoint that extracts user-supplied ZIP archives without proper symlink validation. Attackers with ",
-        "published": "2026-09-26T14:16:52.433"
-      },
-      {
-        "cve_id": "CVE-2026-100618",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Capgo (capgo.app) is affected by an authorization flaw in the app icon update path. The PUT /app/:id endpoint accepts a user-controlled `icon` value, normalizes it, and stores it in public.apps.icon_u",
-        "published": "2026-09-26T14:16:42.600"
-      },
-      {
-        "cve_id": "CVE-2026-100693",
+        "cve_id": "CVE-2026-100839",
         "severity": "HIGH",
         "base_score": 8.4,
-        "description": "Hugo versions from v0.162.0 before v0.166.0 contain a case-sensitive validation flaw in the security.http.urls IP-literal deny rule that allows attackers to bypass restrictions. Attackers can use mixe",
-        "published": "2026-09-26T14:16:54.007"
+        "description": "Contrast is a confidential-computing runtime for Kubernetes. In versions before 1.18.0, the guest kernel's ACPI/AML handling is vulnerable to an AML injection attack (\"BadAML\"). ACPI tables containing",
+        "published": "2026-09-27T02:17:22.230"
       },
       {
-        "cve_id": "CVE-2026-100608",
+        "cve_id": "CVE-2026-100844",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Flowise through 3.1.4 does not enforce authorization on the BullMQ admin dashboard. When the server runs in queue mode with the dashboard enabled and not in cloud mode (MODE=queue, ENABLE_BULLMQ_DASHB",
-        "published": "2026-09-26T14:16:41.140"
+        "base_score": 8.4,
+        "description": "MONAI before 1.6.0 is vulnerable to OS command injection in the nnUNetV2Runner component (monai.apps.nnunet.nnunetv2_runner). User-controlled values taken from the YAML configuration file (notably dat",
+        "published": "2026-09-27T02:17:22.993"
       },
       {
-        "cve_id": "CVE-2026-100673",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "The Grav Data Manager plugin (getgrav/grav-plugin-datamanager) versions 1.0.1 through 1.4.4 render stored data entries in the item-detail view (admin/templates/partials/item.html.twig) without escapin",
-        "published": "2026-09-26T14:16:51.133"
-      },
-      {
-        "cve_id": "CVE-2026-100676",
+        "cve_id": "CVE-2026-100833",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "January, the media proxy/embed service of stoatchat (stoatchat/stoatchat), before version 0.15.5 improperly resolves SVG <image href> values as local filesystem paths when a fetched resource is served",
-        "published": "2026-09-26T14:16:51.577"
+        "description": "Contrast (edgelesssys/contrast) versions 1.14.0 before 1.23.1 generate runtime policies that fail to detect all container image substitutions. A bad rebase during a Kata Containers update accidentally",
+        "published": "2026-09-27T02:17:21.323"
       },
       {
-        "cve_id": "CVE-2026-100627",
+        "cve_id": "CVE-2026-100838",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Capgo (Cap-go/capgo.app) server backend Supabase functions contain an incorrect authorization flaw in the API-key bundle promotion path. The PUT /bundle endpoint, available to \"all\" and \"write\" API ke",
-        "published": "2026-09-26T14:16:43.837"
+        "description": "Contrast is a confidential-computing runtime for Kubernetes. In versions before 1.19.1, the Kata agent policies generated by the Contrast CLI contained a flaw in the CopyFile verification that allowed",
+        "published": "2026-09-27T02:17:22.083"
       },
       {
-        "cve_id": "CVE-2026-100646",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "SiYuan is a self-hosted personal knowledge management system. In versions up to and including 3.8.3, the kernel's authentication guards (CheckAuth in kernel/model/session.go and IsSessionOriginAllowed",
-        "published": "2026-09-26T14:16:46.900"
-      },
-      {
-        "cve_id": "CVE-2026-100680",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Budibase versions before 3.45.0 fail to disable external JSON reference resolution in the OpenAPI/Swagger import validator, allowing authenticated builders to read arbitrary local files. Attackers wit",
-        "published": "2026-09-26T14:16:52.150"
-      },
-      {
-        "cve_id": "CVE-2026-100684",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Budibase versions 3.41.0 before 3.45.0 contain an authentication bypass in the OIDC/SSO login path of @budibase/server. In sso.authenticate, when no existing user matches the incoming SSO subject, the",
-        "published": "2026-09-26T14:16:52.720"
-      },
-      {
-        "cve_id": "CVE-2026-100686",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Budibase versions before 3.45.0 fail to validate per-app authorization in the POST /api/global/groups/:groupId/apps endpoint, allowing builders to assign application roles across workspace boundaries.",
-        "published": "2026-09-26T14:16:53.000"
-      },
-      {
-        "cve_id": "CVE-2026-100641",
+        "cve_id": "CVE-2026-100857",
         "severity": "HIGH",
         "base_score": 8.0,
-        "description": "SiYuan before v3.8.4 does not HTML-escape stored flashcard block content before interpolating it into the card-manager list markup. Block content returned by /api/riff/getRiffCards is inserted into a ",
-        "published": "2026-09-26T14:16:46.080"
+        "description": "AzuraCast before 0.23.4 contains a code injection vulnerability in the ConfigWriter::cleanUpString() method that fails to sanitize Liquidsoap string interpolation sequences, allowing authenticated use",
+        "published": "2026-09-27T02:17:25.197"
+      },
+      {
+        "cve_id": "CVE-2026-100840",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "MONAI through 1.6.0 contains a remote code execution vulnerability in the bundle configuration engine that resolves _target_ values to arbitrary importable callables without an allow list and passes $",
+        "published": "2026-09-27T02:17:22.387"
+      },
+      {
+        "cve_id": "CVE-2026-100841",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "In MONAI 1.6.0, PersistentDataset (monai/data/dataset.py) explicitly rejects the combination track_meta=True with weights_only=True, forcing users who cache MetaTensors (the default tensor type in MON",
+        "published": "2026-09-27T02:17:22.543"
+      },
+      {
+        "cve_id": "CVE-2026-100843",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "MONAI versions before 1.6.0 contain a remote code execution vulnerability in the algo_from_pickle() function due to unsafe pickle.loads() deserialization in monai/auto3dseg/utils.py. Attackers can cra",
+        "published": "2026-09-27T02:17:22.853"
+      },
+      {
+        "cve_id": "CVE-2026-100845",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "MONAI before 1.6.0 contains an unsafe deserialization vulnerability in the NumpyReader class that unconditionally uses numpy.load with allow_pickle=True when loading .npy and .npz files. Attackers can",
+        "published": "2026-09-27T02:17:23.140"
+      },
+      {
+        "cve_id": "CVE-2026-100850",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "AzuraCast before 0.23.8 contains a server-side request forgery and local file read vulnerability in the AutoDJ remote playlist fetch (backend/src/Radio/AutoDJ/QueueBuilder.php, getMediaFromRemoteUrl()",
+        "published": "2026-09-27T02:17:24.007"
       }
     ]
   },
