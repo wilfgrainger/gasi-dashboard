@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-27T16:02:22.320005+00:00",
+  "generated_at": "2026-09-27T22:41:57.463087+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 41,
+        "value": 43,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
-        "score": 2.5,
+        "value": 3,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -32,9 +32,29 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1726,
-    "recent_30d_count": 41,
+    "total_catalog_count": 1728,
+    "recent_30d_count": 43,
     "recent": [
+      {
+        "cve_id": "CVE-2026-88772",
+        "vendor": "Citrix",
+        "product": "NetScaler",
+        "name": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
+        "date_added": "2026-09-27",
+        "due_date": "2026-09-30",
+        "description": "Citrix NetScaler ADC and NetScaler Gateway contain an improper restriction of operations within the bounds of a memory buffer vulnerability that could allow for remote code execution or denial of serv",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-88771",
+        "vendor": "Citrix",
+        "product": "NetScaler",
+        "name": "Citrix NetScaler Improper Input Validation Vulnerability",
+        "date_added": "2026-09-27",
+        "due_date": "2026-09-30",
+        "description": "Citrix NetScaler ADC and NetScaler Gateway contain an improper input validation vulnerability that could allow an unauthenticated attacker to execute arbitrary commands.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-67279",
         "vendor": "MikroTik",
@@ -214,33 +234,13 @@
         "due_date": "2026-09-14",
         "description": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to transfer and execute files through an active remote sessi",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-42016",
-        "vendor": "JFrog",
-        "product": "Artifactory",
-        "name": "JFrog Artifactory Incorrect Authorization Vulnerability",
-        "date_added": "2026-09-11",
-        "due_date": "2026-09-25",
-        "description": "JFrog Artifactory contains an incorrect authorization vulnerability that leads to a privilege escalation attack due to a validation check of the token signature/issuer and not the token\u2019s scope.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-42018",
-        "vendor": "JFrog",
-        "product": "Artifactory",
-        "name": "JFrog Artifactory Improper Authentication Vulnerability",
-        "date_added": "2026-09-11",
-        "due_date": "2026-09-25",
-        "description": "JFrog Artifactory contains an improper authentication vulnerability that could return an internal anonymous-user token to an unauthenticated caller when anonymous access is disabled, potentially expos",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 108,
-    "critical_count": 5,
-    "high_count": 30,
+    "total": 143,
+    "critical_count": 3,
+    "high_count": 31,
     "cves": [
       {
         "cve_id": "CVE-2026-100740",
@@ -248,20 +248,6 @@
         "base_score": 9.9,
         "description": "A vulnerability was detected in D-Link DIR-895L A1_102b07. Impacted is the function tunnel_set_params of the file tunnel.c of the component L2TP Control Channel Parser. Performing a manipulation resul",
         "published": "2026-09-27T01:17:17.810"
-      },
-      {
-        "cve_id": "CVE-2026-85984",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The miniOrange OTP Login, Verification and SMS Notifications plugin for WordPress is vulnerable to Authentication Bypass via the mo_wp_login_intent parameter in all versions up to, and including, 5.5.",
-        "published": "2026-09-26T18:16:31.010"
-      },
-      {
-        "cve_id": "CVE-2026-82901",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Ultra Addons for Contact Form 7 plugin for WordPress is vulnerable to Arbitrary File Upload due to insufficient file type validation in the 'uacf7_wpcf7_mail_components' function in all versions u",
-        "published": "2026-09-26T19:16:28.427"
       },
       {
         "cve_id": "CVE-2026-100741",
@@ -278,17 +264,10 @@
         "published": "2026-09-27T02:17:17.547"
       },
       {
-        "cve_id": "CVE-2026-77203",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Groups \u2013 Memberships and Access Control plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 4.6.0. This is due to the groups_join() function deriving g",
-        "published": "2026-09-26T18:16:29.917"
-      },
-      {
         "cve_id": "CVE-2026-100852",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "AzuraCast through 0.23.x contains a command injection vulnerability in the Liquidsoap config generation for live recording that fails to quote the streamer username in process.run calls. Authenticated",
+        "description": "AzuraCast before 0.23.8 contains a command injection vulnerability in the Liquidsoap config generation for live recording that fails to quote the streamer username in process.run calls. Authenticated ",
         "published": "2026-09-27T02:17:24.437"
       },
       {
@@ -309,8 +288,22 @@
         "cve_id": "CVE-2026-100865",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Heym before 0.0.53 contains multiple independent vulnerabilities. (1) The workflow condition evaluator uses Python eval() without an effective sandbox, allowing any user who can edit a workflow branch",
+        "description": "Heym before 0.0.53 evaluates workflow condition expressions using Python's eval() with insufficient sandboxing in the workflow executor service. Authenticated users can edit workflow condition nodes o",
         "published": "2026-09-27T02:17:26.410"
+      },
+      {
+        "cve_id": "CVE-2026-100870",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Sylius versions before 1.12.25, 1.13.17, 1.14.20, 2.1.16, and 2.2.9 build administrator password-reset links using the request Host header without validation, allowing unauthenticated attackers to red",
+        "published": "2026-09-27T13:16:38.240"
+      },
+      {
+        "cve_id": "CVE-2026-100871",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Sylius versions before 1.12.25, 1.13.17, 1.14.20, 2.1.16, and 2.2.9 fail to include firewall identification in JWT tokens issued by separate Admin and Shop API endpoints. Attackers can register a shop",
+        "published": "2026-09-27T13:16:38.380"
       },
       {
         "cve_id": "CVE-2026-100839",
@@ -381,6 +374,13 @@
         "base_score": 7.7,
         "description": "AzuraCast before 0.23.8 contains a server-side request forgery and local file read vulnerability in the AutoDJ remote playlist fetch (backend/src/Radio/AutoDJ/QueueBuilder.php, getMediaFromRemoteUrl()",
         "published": "2026-09-27T02:17:24.007"
+      },
+      {
+        "cve_id": "CVE-2026-100846",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "MONAI before 1.5.2 contains a deserialization of untrusted data vulnerability in the algo_from_pickle function in monai/auto3dseg/utils.py. The function reads a .pkl file and passes its contents to pi",
+        "published": "2026-09-27T02:17:23.283"
       }
     ]
   },
