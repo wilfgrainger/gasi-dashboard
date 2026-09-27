@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-26T22:15:42.068078+00:00",
+  "generated_at": "2026-09-27T02:34:40.694902+00:00",
   "threat_score": {
-    "score": 5.0,
+    "score": 5.5,
     "level": "ELEVATED",
     "level_color": "elevated",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 1.0,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -238,23 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 280,
-    "critical_count": 0,
-    "high_count": 25,
+    "total": 286,
+    "critical_count": 1,
+    "high_count": 38,
     "cves": [
       {
-        "cve_id": "CVE-2026-96795",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Horilla is an HR and CRM software. Prior to 2.0.0, HorillaListView.export_data in horilla_views/generic/cbv/views.py accepts an authenticated user's columns POST parameter, takes field_tuple[1], inter",
-        "published": "2026-09-25T23:16:55.020"
-      },
-      {
-        "cve_id": "CVE-2026-100520",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Laranode versions before 1.2.1 contain a path traversal vulnerability in the POST /filemanager/upload-file endpoint that allows authenticated users to write arbitrary files outside their home director",
-        "published": "2026-09-26T01:17:00.357"
+        "cve_id": "CVE-2026-18143",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Request a Quote for WooCommerce plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 2.9.2 via the `afrfq_submit_quote_via_popup()` function. This is d",
+        "published": "2026-09-26T07:17:02.017"
       },
       {
         "cve_id": "CVE-2026-100544",
@@ -285,6 +278,41 @@
         "published": "2026-09-26T03:17:05.783"
       },
       {
+        "cve_id": "CVE-2026-100586",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "OpenClaw Codex before 2026.7.1 fails to properly enforce owner authorization when creating native conversation bindings. Non-owner channel senders with command access can create bindings to the native",
+        "published": "2026-09-26T03:17:06.660"
+      },
+      {
+        "cve_id": "CVE-2026-100587",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "OpenClaw versions before 2026.7.1 fail to properly validate owner authorization in the Codex computer-use installation command. Non-owner channel senders can install arbitrary plugins and execute MCP ",
+        "published": "2026-09-26T03:17:06.810"
+      },
+      {
+        "cve_id": "CVE-2026-100596",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "OpenClaw versions before 2026.7.1 fail to properly authorize non-owner users executing MCP configuration changes through /mcp set and /mcp unset commands. Attackers can persist arbitrary stdio MCP com",
+        "published": "2026-09-26T03:17:08.187"
+      },
+      {
+        "cve_id": "CVE-2026-100599",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "OpenClaw versions 2026.5.1 through 2026.7.0 fail to apply the configured exec approval path to Google Meet node commands. The googlemeet.chrome command accepts caller-supplied audio command arrays and",
+        "published": "2026-09-26T03:17:08.667"
+      },
+      {
+        "cve_id": "CVE-2026-96524",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The MCP Server for WordPress  WordPress plugin before 1.8.2 does not correctly verify the WordPress REST API nonce for cookie-authenticated requests when a condition an attacker can influence is prese",
+        "published": "2026-09-26T07:17:03.130"
+      },
+      {
         "cve_id": "CVE-2026-100551",
         "severity": "HIGH",
         "base_score": 8.3,
@@ -304,6 +332,20 @@
         "base_score": 8.3,
         "description": "OpenClaw versions before 2026.8.1 fail to properly restrict access to operator command cron jobs, allowing model-visible agent callers to read and execute ownerless command jobs. Attackers can inspect",
         "published": "2026-09-26T03:17:03.887"
+      },
+      {
+        "cve_id": "CVE-2026-100588",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "OpenClaw (npm package 'openclaw') before 2026.7.1 does not enforce the administrator scope requirement on browser control when it is reached through the node.invoke method, although direct browser.req",
+        "published": "2026-09-26T03:17:06.963"
+      },
+      {
+        "cve_id": "CVE-2026-100589",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "OpenClaw versions before 2026.7.1 contain a sandbox bypass vulnerability in the browser tool that allows sandboxed sessions to access paired node browser actions despite allowHostControl=false configu",
+        "published": "2026-09-26T03:17:07.110"
       },
       {
         "cve_id": "CVE-2026-100567",
@@ -334,53 +376,11 @@
         "published": "2026-09-26T03:17:02.987"
       },
       {
-        "cve_id": "CVE-2026-100570",
+        "cve_id": "CVE-2026-100585",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "OpenClaw (npm package 'openclaw') versions >= 2026.3.28 and < 2026.8.1 allow an untrusted workspace .env file to set the CLOUDSDK_PYTHON_ARGS environment variable. When an operator starts OpenClaw in ",
-        "published": "2026-09-26T03:17:04.177"
-      },
-      {
-        "cve_id": "CVE-2026-100578",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "OpenClaw (npm package `openclaw`) before 2026.7.1 fails to restrict owner-only infrastructure tools exposed through the chat.send endpoint. In Gateway deployments using authentication modes that honor",
-        "published": "2026-09-26T03:17:05.483"
-      },
-      {
-        "cve_id": "CVE-2026-100579",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "OpenClaw (npm package 'openclaw') before 2026.7.1 incorrectly trusts requester provenance in message.action. In identity-bearing Gateway deployments (authentication modes that honor caller identity an",
-        "published": "2026-09-26T03:17:05.633"
-      },
-      {
-        "cve_id": "CVE-2026-100535",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "OpenClaw (npm package 'openclaw') versions >= 2026.4.5 and < 2026.8.1 can lose the originating requester's restrictions and untrusted provenance when session-derived text is persisted to session memor",
-        "published": "2026-09-26T03:16:59.103"
-      },
-      {
-        "cve_id": "CVE-2026-100541",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "OpenClaw's Matrix integration (npm package @openclaw/matrix) versions >= 2026.2.2 and < 2026.8.1 lowercase complete Matrix user IDs \u2014 including historical localparts and the case-sensitive server-name",
-        "published": "2026-09-26T03:16:59.987"
-      },
-      {
-        "cve_id": "CVE-2026-100543",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "OpenClaw (npm package openclaw) before 2026.8.1 could include deterministic hashes computed over the original, unredacted configuration in redacted configuration responses. When the Gateway password h",
-        "published": "2026-09-26T03:17:00.287"
-      },
-      {
-        "cve_id": "CVE-2026-100558",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "OpenClaw versions before 2026.8.1 contain a resource exhaustion vulnerability in the Gateway listener that allows unauthenticated clients to retain response sockets by sending WebSocket upgrade reques",
-        "published": "2026-09-26T03:17:02.533"
+        "base_score": 8.0,
+        "description": "OpenClaw (npm package `openclaw`) before 2026.7.1 fails to enforce the owner-only authorization requirement for Claude Code permission prompts delivered through the MCP channel bridge. An authorized n",
+        "published": "2026-09-26T03:17:06.517"
       }
     ]
   },
