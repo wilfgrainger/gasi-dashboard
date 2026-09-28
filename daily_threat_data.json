@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-28T10:18:35.237305+00:00",
+  "generated_at": "2026-09-28T18:57:50.134277+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
-        "score": 2.5,
+        "value": 12,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 158,
-    "critical_count": 8,
-    "high_count": 22,
+    "total": 253,
+    "critical_count": 12,
+    "high_count": 27,
     "cves": [
       {
         "cve_id": "CVE-2026-100886",
@@ -278,6 +278,13 @@
         "published": "2026-09-28T06:16:29.783"
       },
       {
+        "cve_id": "CVE-2026-82377",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Missing Authorization in Apache Roller 6.1.5 allows an authenticated user to read, modify, or delete weblog content belonging to other weblogs through the legacy XML-RPC Blogger and MetaWeblog APIs, b",
+        "published": "2026-09-28T08:16:41.417"
+      },
+      {
         "cve_id": "CVE-2026-101065",
         "severity": "CRITICAL",
         "base_score": 9.8,
@@ -292,6 +299,13 @@
         "published": "2026-09-27T21:17:03.003"
       },
       {
+        "cve_id": "CVE-2026-82384",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Deserialization of Untrusted Data in Apache Roller 6.1.5 allows an unauthenticated remote attacker to cause deserialization of attacker-controlled bytes, because the XML-RPC endpoint accepts vendor ex",
+        "published": "2026-09-28T08:16:42.273"
+      },
+      {
         "cve_id": "CVE-2026-101084",
         "severity": "CRITICAL",
         "base_score": 9.6,
@@ -299,18 +313,18 @@
         "published": "2026-09-27T21:17:02.163"
       },
       {
-        "cve_id": "CVE-2026-100870",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Sylius versions before 1.12.25, 1.13.17, 1.14.20, 2.1.16, and 2.2.9 build administrator password-reset links using the request Host header without validation, allowing unauthenticated attackers to red",
-        "published": "2026-09-27T13:16:38.240"
+        "cve_id": "CVE-2026-101008",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "A vulnerability was found in aaPanel BaoTa up to 11.8.0. Impacted is the function merge_split_file of the file /www/server/panel/class/files.py of the component File Merge Handler. Performing a manipu",
+        "published": "2026-09-28T07:17:20.403"
       },
       {
-        "cve_id": "CVE-2026-100871",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Sylius versions before 1.12.25, 1.13.17, 1.14.20, 2.1.16, and 2.2.9 fail to include firewall identification in JWT tokens issued by separate Admin and Shop API endpoints. Attackers can register a shop",
-        "published": "2026-09-27T13:16:38.380"
+        "cve_id": "CVE-2026-82378",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "Incorrect Authorization in the OAuth 1.0a authorization endpoint of Apache Roller 6.1.5 allows an unauthenticated remote attacker who learns an outstanding request token for a configured site-wide con",
+        "published": "2026-09-28T08:16:41.540"
       },
       {
         "cve_id": "CVE-2026-101062",
@@ -320,67 +334,53 @@
         "published": "2026-09-27T21:17:01.617"
       },
       {
-        "cve_id": "CVE-2026-101060",
+        "cve_id": "CVE-2026-101007",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "A vulnerability has been found in aaPanel BaoTa up to 11.8.0. This issue affects the function InputSql of the file class/database.py of the component Database Backup Handler. Such manipulation of the ",
+        "published": "2026-09-28T07:17:20.197"
+      },
+      {
+        "cve_id": "CVE-2026-101009",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "A vulnerability was determined in aaPanel BaoTa up to 11.8.0. The affected element is the function panelTask.bt_task._unzip of the file /www/server/panel/class/panelTask.py of the component Unzip Hand",
+        "published": "2026-09-28T07:17:20.573"
+      },
+      {
+        "cve_id": "CVE-2026-82383",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "python-utcp versions before 1.1.4 contain a server-side request forgery vulnerability in HttpCommunicationProtocol.call_tool that validates the initial tool URL but follows HTTP redirects without re-v",
-        "published": "2026-09-27T18:16:32.273"
+        "description": "Missing Authentication for Critical Function in Apache Roller 6.1.5 allows an unauthenticated remote attacker to persistently change a site-global configuration value (the frontpage weblog selection) ",
+        "published": "2026-09-28T08:16:42.153"
       },
       {
-        "cve_id": "CVE-2026-101045",
+        "cve_id": "CVE-2026-82380",
         "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "Fleet-maintained app install and uninstall scripts for macOS are generated from Homebrew cask metadata. In manifests generated before 2026-08-19, the script generator escaped this metadata at some int",
-        "published": "2026-09-27T18:16:30.897"
+        "base_score": 8.1,
+        "description": "Cross-Site Request Forgery (CSRF) in Apache Roller 6.1.5 allows a remote attacker to cause a logged-in user to perform state-changing actions under the victim's authority, because the CSRF validation ",
+        "published": "2026-09-28T08:16:41.787"
       },
       {
-        "cve_id": "CVE-2026-101064",
+        "cve_id": "CVE-2026-82348",
         "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "Obot before v0.23.0 contains a server-side request forgery vulnerability in remote MCP server registration that allows privileged users to specify arbitrary URLs without destination validation. Attack",
-        "published": "2026-09-27T21:17:01.893"
+        "base_score": 7.7,
+        "description": "Authorization Bypass Through User-Controlled Key in Apache Roller 6.1.5 allows an authenticated user with authoring rights on one weblog to read, modify, or delete resources belonging to another weblo",
+        "published": "2026-09-28T08:16:40.990"
       },
       {
-        "cve_id": "CVE-2026-100872",
+        "cve_id": "CVE-2026-82376",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Sylius versions before 2.1.16 and 2.2.9 fail to validate payment amounts during cart recalculation, allowing unauthenticated attackers to modify order totals after gateway transaction initiation. Atta",
-        "published": "2026-09-27T13:16:38.523"
+        "base_score": 7.7,
+        "description": "Improper Restriction of XML External Entity Reference in Apache Roller 6.1.5 allows a user with entry-editing rights on a weblog to cause the server to parse an attacker-influenced trackback response ",
+        "published": "2026-09-28T08:16:41.293"
       },
       {
-        "cve_id": "CVE-2026-96280",
+        "cve_id": "CVE-2026-82379",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The OCI delta stream parser read sizes as guint64 but passed them to GLib I/O and allocation functions expecting gsize (32 bits on 32-bit systems), causing undersized allocations while subsequent oper",
-        "published": "2026-09-27T21:17:04.200"
-      },
-      {
-        "cve_id": "CVE-2026-100908",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A vulnerability has been found in Eyeplus 57.0.0.0308. This affects an unknown function of the component p2pcam HTTP Parser. Such manipulation leads to stack-based buffer overflow. The attack may be p",
-        "published": "2026-09-28T05:16:29.877"
-      },
-      {
-        "cve_id": "CVE-2026-101043",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "pnpm versions 11.0.0 before 11.11.0 and 10.7.0 before 10.34.5 expand ${VAR} environment-variable placeholders in the httpProxy, httpsProxy, and noProxy settings read from a project's pnpm-workspace.ya",
-        "published": "2026-09-27T18:16:29.700"
-      },
-      {
-        "cve_id": "CVE-2026-100874",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A flaw has been found in mathurvishal CloudClassroom-PHP-Project up to 5dadec098bfbbf3300d60c3494db3fb95b66e7be. This affects an unknown function of the file addnewstudent.php. This manipulation cause",
-        "published": "2026-09-27T19:16:53.920"
-      },
-      {
-        "cve_id": "CVE-2026-100875",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability has been found in mathurvishal CloudClassroom-PHP-Project up to 5dadec098bfbbf3300d60c3494db3fb95b66e7be. This impacts an unknown function of the file updatedetailsfromfaculty.php. Suc",
-        "published": "2026-09-27T19:16:54.100"
+        "base_score": 7.7,
+        "description": "Authentication Bypass by Capture-replay in Apache Roller 6.1.5 allows an attacker who captures a valid WSSE digest authentication header to replay it and gain the victim's AtomPub authority, because t",
+        "published": "2026-09-28T08:16:41.663"
       }
     ]
   },
