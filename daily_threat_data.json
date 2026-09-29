@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-29T10:14:41.802008+00:00",
+  "generated_at": "2026-09-29T17:17:07.642006+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 43,
+        "value": 44,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 15,
-        "score": 3.0,
+        "value": 5,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1728,
-    "recent_30d_count": 43,
+    "total_catalog_count": 1729,
+    "recent_30d_count": 44,
     "recent": [
+      {
+        "cve_id": "CVE-2026-86950",
+        "vendor": "Apple",
+        "product": "Multiple Products",
+        "name": "Apple Multiple Products Out-of-Bounds Write Vulnerability",
+        "date_added": "2026-09-29",
+        "due_date": "2026-10-02",
+        "description": "Apple iOS, macOS, and iPadOS contain an out-of-bounds write vulnerability in CoreGraphics that may lead to arbitrary code execution.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-88772",
         "vendor": "Citrix",
@@ -224,122 +234,14 @@
         "due_date": "2026-09-17",
         "description": "Cisco AsyncOS software for Cisco Secure Email Gateway (SEG) contains a SQL injection vulnerability that could allow an unauthenticated, remote attacker to execute arbitrary commands with root privileg",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-84869",
-        "vendor": "ConnectWise",
-        "product": "ScreenConnect",
-        "name": "ConnectWise ScreenConnect Improper Privilege Management and Missing Authorization Vulnerability",
-        "date_added": "2026-09-11",
-        "due_date": "2026-09-14",
-        "description": "ConnectWise ScreenConnect contains both an improper privilege management and missing authorization vulnerability that may allow an attacker to transfer and execute files through an active remote sessi",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 284,
-    "critical_count": 15,
-    "high_count": 24,
+    "total": 406,
+    "critical_count": 5,
+    "high_count": 20,
     "cves": [
-      {
-        "cve_id": "CVE-2026-101039",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "A vulnerability was identified in FAST FAC1900R 20190827_2.0.2. Affected by this issue is the function copy_msg_element of the component devdiscover Service. Such manipulation leads to stack-based buf",
-        "published": "2026-09-28T11:16:43.600"
-      },
-      {
-        "cve_id": "CVE-2026-101072",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "A vulnerability was identified in Netcore NR289-GE 1.4.5102. This issue affects the function system of the file /ap_ip.cgi of the component CGI Handler. Such manipulation of the argument ip leads to o",
-        "published": "2026-09-28T14:17:13.973"
-      },
-      {
-        "cve_id": "CVE-2026-101075",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "A security vulnerability has been detected in Netcore NR289-GE 1.4.5102. The impacted element is the function system of the file /location_time.cgi of the component Location Time Handler. The manipula",
-        "published": "2026-09-28T15:17:13.043"
-      },
-      {
-        "cve_id": "CVE-2026-101076",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "A vulnerability was detected in Netcore NR289-GE 1.4.5102. This affects the function system of the file /set_ntp_server_ip.cgi of the component CGI Handler. The manipulation of the argument ntp_ip res",
-        "published": "2026-09-28T16:17:11.947"
-      },
-      {
-        "cve_id": "CVE-2026-101077",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "A flaw has been found in Netcore NR289-GE 1.4.5102. This impacts the function process_request of the component boa_temp Handler. This manipulation causes missing authentication. The attack is possible",
-        "published": "2026-09-28T16:17:12.143"
-      },
-      {
-        "cve_id": "CVE-2026-101037",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A vulnerability was found in FAST FAC1200R 5.0_20201119_1.0.2. Affected is the function parse_advertisement_frame of the component devdiscover Service. The manipulation results in stack-based buffer o",
-        "published": "2026-09-28T10:16:42.793"
-      },
-      {
-        "cve_id": "CVE-2026-101038",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A vulnerability was determined in FAST FAC1200R 5.0_20201119_1.0.2. Affected by this vulnerability is the function MmtAtePrase of the component MmtAtePrase Parser. This manipulation causes stack-based",
-        "published": "2026-09-28T11:16:43.423"
-      },
-      {
-        "cve_id": "CVE-2026-85526",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Path traversal in the Btrfs storage driver (unpackVolume) in Canonical LXD on Linux allows an authenticated user with instance creation privileges to delete or replace arbitrary files and directories ",
-        "published": "2026-09-28T14:17:20.423"
-      },
-      {
-        "cve_id": "CVE-2026-87799",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Improper link resolution in the migration receive path in Canonical LXD versions 4.0 and later (fixed in 4.0.14, 5.0.10, 5.21.8 and 6.10) on Linux allows an authenticated client that can create instan",
-        "published": "2026-09-28T14:17:21.427"
-      },
-      {
-        "cve_id": "CVE-2026-90924",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Use of default credentials vulnerability in Innotim Software, Telecommunications and Consultancy Trade Ltd. Co. Logsign SIEM allows Try Common or Default Usernames and Passwords.\n\nThis issue affects L",
-        "published": "2026-09-28T14:17:21.720"
-      },
-      {
-        "cve_id": "CVE-2026-101074",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A weakness has been identified in Netcore NR289-GE 1.4.5102. The affected element is the function password-check of the file /bin/boa of the component Authentication. Executing a manipulation of the a",
-        "published": "2026-09-28T15:17:12.830"
-      },
-      {
-        "cve_id": "CVE-2026-85185",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Path traversal in the btrfs storage driver in Canonical LXD versions 4.0.2 and later (fixed in 4.0.14, 5.0.10, 5.21.8 and 6.10) on Linux allows an authenticated client with permission to create instan",
-        "published": "2026-09-28T14:17:20.130"
-      },
-      {
-        "cve_id": "CVE-2026-12342",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "This vulnerability\nimpacts all versions of IdentityIQ and allows an unauthenticated user remote\ncode execution on the IdentityIQ server due to improper input validation of\nsubmitted web service API co",
-        "published": "2026-09-28T16:17:13.460"
-      },
-      {
-        "cve_id": "CVE-2026-88804",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "An unauthenticated update of public UI settings could be used by remote attackers to execute a stored cross-site scripting attack in the Rancher UI, in SUSE Rancher 2.15 before 2.15.2, 2.14 before 2.1",
-        "published": "2026-09-28T16:17:15.827"
-      },
       {
         "cve_id": "CVE-2026-101081",
         "severity": "CRITICAL",
@@ -348,39 +250,137 @@
         "published": "2026-09-28T17:17:47.817"
       },
       {
-        "cve_id": "CVE-2026-12268",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "ManageEngine DDI Central versions below 6201 are vulnerable to\u00a0PowerShell command injection in Windows DNS SPF/TXT record push leading to remote code execution.",
-        "published": "2026-09-28T11:16:44.063"
+        "cve_id": "CVE-2026-101894",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The decompress package for Node.js extracts archives. Prior to 10.2.2 and 11.1.4, the default decompress(input, output) API relies on lexical containment checks that do not account for the kernel foll",
+        "published": "2026-09-28T17:17:48.830"
       },
       {
-        "cve_id": "CVE-2026-12269",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Zohocorp ManageEngine DDI Central 6.2.0 build below 6201 had a Keepalived configuration injection vulnerability in the HA configuration workflow. This issue could allow an authenticated operator-level",
-        "published": "2026-09-28T11:16:44.177"
+        "cve_id": "CVE-2026-49994",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Bluehood monitors local bluetooth activity. Prior to version 0.7.1, when auth_enabled is set in Bluehood, only the HTML page handlers enforced session validation. The /api/* handlers (settings, device",
+        "published": "2026-09-28T18:17:22.250"
       },
       {
-        "cve_id": "CVE-2026-12264",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Zohocorp ManageEngine DDI Central versions before 6201 are vulnerable to Arbitrary file write via HA Failover Config sync upload leading to remote code execution.",
-        "published": "2026-09-28T12:17:36.597"
+        "cve_id": "CVE-2026-101187",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "A weakness has been identified in Ziroom ZHOME A0101 1.0.1.0. This vulnerability affects the function pop_usb_device of the file usr/lib/lua/luci/controller/api/zrUsb.lua of the component USB Device M",
+        "published": "2026-09-28T21:17:12.810"
       },
       {
-        "cve_id": "CVE-2026-78424",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Improper parameter handling in NeuVector allows any authenticated user who holds the namespaced Runtime Policies (write) permission or anyone with access to NeuVector\u2019s internal gRPC certificate key p",
-        "published": "2026-09-28T12:17:40.897"
+        "cve_id": "CVE-2026-102268",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "PyJWT is a Python implementation of JSON Web Token standards. Prior to 2.14.0, is_pem_format in jwt/utils.py is affected because is_pem_format does not recognize every PEM representation accepted by t",
+        "published": "2026-09-28T21:17:14.600"
       },
       {
-        "cve_id": "CVE-2026-12265",
+        "cve_id": "CVE-2026-86950",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Zohocorp ManageEngine DDI Central versions before 6201 are vulnerable to\u00a0Insufficient access control in HA failover endpoint leading to destructive PostgreSQL database operations.",
-        "published": "2026-09-28T13:17:21.550"
+        "description": "An out-of-bounds write issue was addressed with improved bounds checking. This issue is fixed in iOS 26.7.1 and iPadOS 26.7.1, macOS Sequoia 15.8.1, macOS Tahoe 26.7.1. Processing a maliciously crafte",
+        "published": "2026-09-28T20:17:11.193"
+      },
+      {
+        "cve_id": "CVE-2026-87741",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The ConvertPlus plugin for WordPress is vulnerable to Deserialization of Untrusted Data in all versions up to, and including, 3.6.3 via the style parameter of the cp_display_preview_modal AJAX action.",
+        "published": "2026-09-28T20:17:11.377"
+      },
+      {
+        "cve_id": "CVE-2026-55157",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "Token Optimizer MCP measures token savings per AI coding agent, optimizes context, and shares a live local knowledge graph across 16 CLI clients. Prior to version 5.1.0, token-optimizer-mcp is vulnera",
+        "published": "2026-09-28T18:17:23.373"
+      },
+      {
+        "cve_id": "CVE-2026-54160",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Network UPS Tools is a collection of programs which provide a common interface for monitoring and administering UPS, PDU and SCD hardware. Prior to commits 658b24e and 1aa31d1, the GitHub Actions scri",
+        "published": "2026-09-28T17:17:49.833"
+      },
+      {
+        "cve_id": "CVE-2026-93355",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "LiteLLM contains a weak authentication vulnerability that allows an attacker holding a valid JWT from the configured identity provider to authenticate as any existing user by exploiting an email-based",
+        "published": "2026-09-28T20:17:11.547"
+      },
+      {
+        "cve_id": "CVE-2026-102004",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Wind River VxWorks 7 prior to 26.09, specific system call arguments can result in memory corruption within the memory management subsystem. Fixed in Version 26.09",
+        "published": "2026-09-28T20:17:09.810"
+      },
+      {
+        "cve_id": "CVE-2026-16513",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "The userspace verifier z_vrfy_rtio_sqe_copy_in_get_handles() in subsys/rtio/rtio_syscalls.c (subsys/rtio/rtio_handlers.c before v4.3.0) validated the RTIO object handle and the sqes input array, but n",
+        "published": "2026-09-28T21:17:16.910"
+      },
+      {
+        "cve_id": "CVE-2026-55160",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "Stringer is a self-hosted, anti-social RSS reader. Prior to commit 75cb095, an unrestricted Server-Side Request Forgery (SSRF) vulnerability allows any authenticated user to force the Stringer server ",
+        "published": "2026-09-28T18:17:23.540"
+      },
+      {
+        "cve_id": "CVE-2026-102276",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The brace-expansion library generates arbitrary strings containing a common prefix and suffix. Prior to 1.1.19, 2.1.5, 3.0.7, and 5.0.10, crafted brace patterns can exhaust the native stack in parseCo",
+        "published": "2026-09-28T21:17:16.033"
+      },
+      {
+        "cve_id": "CVE-2026-102278",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The brace-expansion library generates arbitrary strings containing a common prefix and suffix. Prior to 1.1.20, 2.1.6, 3.0.8, and 5.0.11, deeply nested brace groups cause expand_() to recurse once per",
+        "published": "2026-09-28T21:17:16.517"
+      },
+      {
+        "cve_id": "CVE-2026-101916",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "@grpc/grpc-js implements the core functionality of gRPC purely in JavaScript, without a C++ addon. Prior to 1.13.6 and 1.14.5, getAuthContext does not distinguish authorized from unauthorized peer cer",
+        "published": "2026-09-28T21:17:13.030"
+      },
+      {
+        "cve_id": "CVE-2026-102266",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "PyJWT is a Python implementation of JSON Web Token standards. From 2.13.0 until 2.14.0, HMACAlgorithm.from_jwk is affected because PyJWK verification path used the decoded key without applying prepare",
+        "published": "2026-09-28T21:17:14.257"
+      },
+      {
+        "cve_id": "CVE-2026-102267",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "PyJWT is a Python implementation of JSON Web Token standards. Prior to 2.14.0, PyJWT PyJWKClient is affected because redirect destinations are not revalidated against the JWKS trust boundary. This occ",
+        "published": "2026-09-28T21:17:14.430"
+      },
+      {
+        "cve_id": "CVE-2026-102271",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "PyJWT is a Python implementation of JSON Web Token standards. From 2.4.0 until 2.14.0, PyJWT HMACAlgorithm.prepare_key is affected because asymmetric-key guard relies on textual markers that are absen",
+        "published": "2026-09-28T21:17:15.110"
+      },
+      {
+        "cve_id": "CVE-2026-102272",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "PyJWT is a Python implementation of JSON Web Token standards. From 2.13.0 until 2.14.0, HMACAlgorithm.prepare_key in jwt/algorithms.py is affected because raw-JWK detector does not normalize accepted ",
+        "published": "2026-09-28T21:17:15.280"
       }
     ]
   },
