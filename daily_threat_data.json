@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-09-30T10:05:50.178221+00:00",
+  "generated_at": "2026-09-30T17:15:11.750736+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 42,
+        "value": 43,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
-        "score": 2.5,
+        "value": 4,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1729,
-    "recent_30d_count": 42,
+    "total_catalog_count": 1730,
+    "recent_30d_count": 43,
     "recent": [
+      {
+        "cve_id": "CVE-2026-76504",
+        "vendor": "Cisco",
+        "product": "Catalyst SD-WAN Manager",
+        "name": "Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability",
+        "date_added": "2026-09-30",
+        "due_date": "2026-10-03",
+        "description": "Cisco Catalyst SD-WAN Manager contains a hex encoding vulnerability that could allow an unauthenticated, remote attacker to access an affected system with privileges of the admin user due to improper ",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-86950",
         "vendor": "Apple",
@@ -224,163 +234,153 @@
         "due_date": "2026-09-19",
         "description": "Acronis Backup plugin for cPanel & WHM and extension for Plesk contains an incorrect default permissions vulnerability that could allow for privilege escalation.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-76461",
-        "vendor": "Cisco",
-        "product": "Secure Email Gateway",
-        "name": "Cisco Secure Email Gateway SQL Injection Vulnerability",
-        "date_added": "2026-09-14",
-        "due_date": "2026-09-17",
-        "description": "Cisco AsyncOS software for Cisco Secure Email Gateway (SEG) contains a SQL injection vulnerability that could allow an unauthenticated, remote attacker to execute arbitrary commands with root privileg",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 686,
-    "critical_count": 7,
-    "high_count": 32,
+    "total": 829,
+    "critical_count": 4,
+    "high_count": 25,
     "cves": [
       {
-        "cve_id": "CVE-2026-100762",
+        "cve_id": "CVE-2026-95277",
         "severity": "CRITICAL",
         "base_score": 9.6,
-        "description": "Sandbox escape due to use-after-free in the DOM: Content Processes component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
-        "published": "2026-09-29T13:17:40.470"
+        "description": "Use after free in Views in Google Chrome prior to 154.0.8037.57 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity",
+        "published": "2026-09-29T18:17:19.037"
       },
       {
-        "cve_id": "CVE-2026-100770",
+        "cve_id": "CVE-2026-95281",
         "severity": "CRITICAL",
         "base_score": 9.6,
-        "description": "Sandbox escape due to use-after-free in the DOM: Content Processes component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
-        "published": "2026-09-29T13:17:41.250"
+        "description": "Buffer overflow in ANGLE in Google Chrome on on Android prior to 154.0.8037.57 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security sever",
+        "published": "2026-09-29T18:17:19.507"
       },
       {
-        "cve_id": "CVE-2026-100778",
+        "cve_id": "CVE-2026-95283",
         "severity": "CRITICAL",
         "base_score": 9.6,
-        "description": "Sandbox escape due to use-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
-        "published": "2026-09-29T13:17:42.577"
+        "description": "Buffer overflow in Tint in Google Chrome on on Android prior to 154.0.8037.57 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium sec",
+        "published": "2026-09-29T18:17:19.733"
       },
       {
-        "cve_id": "CVE-2026-100786",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Sandbox escape due to use-after-free in the Graphics component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
-        "published": "2026-09-29T13:17:43.583"
-      },
-      {
-        "cve_id": "CVE-2026-100800",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Sandbox escape due to use-after-free in the Disability Access APIs component. This vulnerability was fixed in Firefox ESR 153.4 and Firefox 157.",
-        "published": "2026-09-29T13:17:45.073"
-      },
-      {
-        "cve_id": "CVE-2026-8065",
+        "cve_id": "CVE-2026-84436",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "An authentication bypass vulnerability in the firmware update endpoint of Hitachi Energy RTU500 end-of-life versions allows an unauthenticated attacker to upload arbitrary firmware through a crafted P",
-        "published": "2026-09-29T10:17:13.110"
+        "description": "IBM Guardium Data Protection 12.2 is vulnerable to command injection in the certificate export CLI functionality, allowing a privileged authenticated CLI user to execute arbitrary commands with root p",
+        "published": "2026-09-29T18:17:17.823"
       },
       {
-        "cve_id": "CVE-2026-8066",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A directory traversal vulnerability in the file upload functionality of Hitachi Energy RTU500 end-of-life versions allows an unauthenticated attacker to write or overwrite arbitrary files on the devic",
-        "published": "2026-09-29T10:17:13.250"
-      },
-      {
-        "cve_id": "CVE-2026-87748",
+        "cve_id": "CVE-2022-51019",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Missing Authorization vulnerability in Interprobe Information Technologies Inc. Qorela DC allows Privilege Abuse.\n\nThis issue affects Qorela DC: from 1.6.1-RC29 before v1.6.2.",
-        "published": "2026-09-29T12:17:12.527"
+        "description": "Akaunting before 2.1.31 contains an OS command injection vulnerability in the module installation and update flow where the alias parameter is passed unvalidated to shell command execution. Authentica",
+        "published": "2026-09-29T17:17:00.653"
       },
       {
-        "cve_id": "CVE-2026-100757",
+        "cve_id": "CVE-2026-84421",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Use-after-free in the Widget component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
-        "published": "2026-09-29T13:17:40.047"
+        "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to execute arbitrary code due to improper validation of paths during archive extraction.",
+        "published": "2026-09-29T18:17:17.560"
       },
       {
-        "cve_id": "CVE-2026-100761",
+        "cve_id": "CVE-2026-95282",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Privilege escalation due to use-after-free in the Graphics: WebGPU component. This vulnerability was fixed in Firefox 157.",
-        "published": "2026-09-29T13:17:40.390"
+        "description": "Use after free in Platform in Google Chrome prior to 154.0.8037.57 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-09-29T18:17:19.623"
       },
       {
-        "cve_id": "CVE-2026-100764",
+        "cve_id": "CVE-2026-102556",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Privilege escalation due to incorrect boundary conditions in the Graphics: WebGPU component. This vulnerability was fixed in Firefox 157.",
-        "published": "2026-09-29T13:17:40.640"
+        "base_score": 8.6,
+        "description": "A flaw was found in libsoup. When handling an incoming WebSocket Pong frame, SoupWebsocketConnection emitted the ::pong signal with a GByteArray pointer even though the signal is declared to pass a GB",
+        "published": "2026-09-29T17:17:06.460"
       },
       {
-        "cve_id": "CVE-2026-100765",
+        "cve_id": "CVE-2026-102557",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use-after-free in the JavaScript: WebAssembly component. This vulnerability was fixed in Firefox ESR 153.4 and Firefox 157.",
-        "published": "2026-09-29T13:17:40.730"
+        "base_score": 8.6,
+        "description": "A flaw was found in libsoup. When reassembling fragmented WebSocket messages into a GByteArray, libsoup did not adequately cap total message size against the limits of the underlying buffer type. A re",
+        "published": "2026-09-29T17:17:06.600"
       },
       {
-        "cve_id": "CVE-2026-100767",
+        "cve_id": "CVE-2026-102558",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use-after-free in the Networking: Cache component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
-        "published": "2026-09-29T13:17:40.940"
+        "base_score": 8.6,
+        "description": "A flaw was found in libsoup. When max-incoming-payload-size is unlimited (0), SoupWebsocketConnection could grow its incoming GByteArray based on an attacker-controlled frame length until the length w",
+        "published": "2026-09-29T18:17:08.340"
       },
       {
-        "cve_id": "CVE-2026-100768",
+        "cve_id": "CVE-2026-102559",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use-after-free in the Graphics: WebGPU component. This vulnerability was fixed in Firefox 157.",
-        "published": "2026-09-29T13:17:41.043"
+        "base_score": 8.6,
+        "description": "A flaw was found in libsoup. When constructing a masked WebSocket client frame for a very large outgoing payload, size values passed to GByteArray allocation APIs could be truncated while the masking ",
+        "published": "2026-09-29T18:17:08.503"
       },
       {
-        "cve_id": "CVE-2026-100769",
+        "cve_id": "CVE-2026-102560",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use-after-free in the JavaScript: WebAssembly component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, and Firefox ESR 140.17.",
-        "published": "2026-09-29T13:17:41.143"
+        "base_score": 8.6,
+        "description": "A flaw was found in libsoup. When the permessage-deflate WebSocket extension compresses a very large outgoing message, truncated size calculations used for GByteArray growth could wrap, causing zlib t",
+        "published": "2026-09-29T18:17:08.750"
       },
       {
-        "cve_id": "CVE-2026-100772",
+        "cve_id": "CVE-2026-102676",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, and Firefox ESR 140.17.",
-        "published": "2026-09-29T13:17:41.450"
+        "base_score": 8.3,
+        "description": "Electron is a framework for writing cross-platform desktop applications using JavaScript, HTML and CSS. Prior to 41.10.6, 42.9.2, 43.4.1, and 44.0.0-beta.5, an Electron <webview> guest could enable no",
+        "published": "2026-09-29T17:17:07.973"
       },
       {
-        "cve_id": "CVE-2026-100773",
+        "cve_id": "CVE-2026-95274",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use-after-free in the Storage: IndexedDB component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
-        "published": "2026-09-29T13:17:41.717"
+        "base_score": 8.3,
+        "description": "Improper output encoding in DevTools in Google Chrome prior to 154.0.8037.57 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code outside the sandbo",
+        "published": "2026-09-29T18:17:18.553"
       },
       {
-        "cve_id": "CVE-2026-100774",
+        "cve_id": "CVE-2026-95276",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
-        "published": "2026-09-29T13:17:41.870"
+        "base_score": 8.3,
+        "description": "Improper input validation in Themes in Google Chrome prior to 154.0.8037.57 allowed a remote attacker who had compromised the renderer process to potentially execute arbitrary code inside the sandbox ",
+        "published": "2026-09-29T18:17:18.843"
       },
       {
-        "cve_id": "CVE-2026-100776",
+        "cve_id": "CVE-2026-102673",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use-after-free in the JavaScript: WebAssembly component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, and Firefox ESR 140.17.",
-        "published": "2026-09-29T13:17:42.210"
+        "base_score": 8.2,
+        "description": "Electron is a framework for writing cross-platform desktop applications using JavaScript, HTML and CSS. Prior to 41.10.4, 42.5.2, and 43.0.0, popups opened from a sandboxed iframe through Electron's O",
+        "published": "2026-09-29T17:17:07.487"
       },
       {
-        "cve_id": "CVE-2026-100777",
+        "cve_id": "CVE-2026-102674",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use-after-free in the Graphics: Canvas2D component. This vulnerability was fixed in Firefox ESR 153.4, Firefox 157, Firefox ESR 115.42, and Firefox ESR 140.17.",
-        "published": "2026-09-29T13:17:42.337"
+        "base_score": 8.2,
+        "description": "Electron is a framework for writing cross-platform desktop applications using JavaScript, HTML and CSS. Prior to 41.10.6, 42.9.2, 43.4.1, and 44.0.0-beta.5, windows opened from a sandboxed top-level d",
+        "published": "2026-09-29T17:17:07.653"
+      },
+      {
+        "cve_id": "CVE-2026-102555",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "A flaw was found in libsoup. The soup_uri_decode_data_uri() function incorrectly treated base64 data-URI payloads as NUL-terminated strings when calling g_base64_decode_inplace(). If the percent-decod",
+        "published": "2026-09-29T18:17:07.977"
+      },
+      {
+        "cve_id": "CVE-2026-84842",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "IBM Guardium Data Protection 12.2 is vulnerable to path traversal and arbitrary file deletion in the Datasource REST component. An authenticated remote attacker could exploit this vulnerability to del",
+        "published": "2026-09-29T18:17:18.083"
+      },
+      {
+        "cve_id": "CVE-2026-102697",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Ollama versions 0.14.0 before 0.31.2 contain an incorrect authorization vulnerability in the experimental agent mode Bash tool approval mechanism that fails to properly parse shell syntax. Attackers w",
+        "published": "2026-09-29T17:17:08.150"
       }
     ]
   },
