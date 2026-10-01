@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T23:19:18.151649+00:00",
+  "generated_at": "2026-10-01T03:09:29.358258+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
+        "value": 6,
         "score": 2.5,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 655,
-    "critical_count": 7,
-    "high_count": 27,
+    "total": 623,
+    "critical_count": 6,
+    "high_count": 32,
     "cves": [
       {
         "cve_id": "CVE-2026-102911",
@@ -264,18 +264,18 @@
         "published": "2026-09-30T06:17:04.670"
       },
       {
-        "cve_id": "CVE-2026-102793",
+        "cve_id": "CVE-2026-102455",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A flaw has been found in Ziroom ZHOME A0101 1.0.1.0. This vulnerability affects the function set_time_zone of the file /api/ZRFirmware/set_time_zone. This manipulation of the argument hostname/zonenam",
-        "published": "2026-09-30T00:16:33.743"
+        "base_score": 9.8,
+        "description": "EasyFlow .NET developed by Digiwin has a Insecure Deserialization vulnerability. Unauthenticated remote attackers can execute arbitrary code on the server by sending maliciously crafted serialized con",
+        "published": "2026-09-30T09:17:13.343"
       },
       {
-        "cve_id": "CVE-2026-102794",
+        "cve_id": "CVE-2026-102458",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A vulnerability has been found in Ziroom ZHOME A0101 1.0.1.0. This issue affects some unknown processing of the file /api/ZRnetwork/ping. Such manipulation of the argument url leads to command injecti",
-        "published": "2026-09-30T00:16:34.963"
+        "base_score": 9.8,
+        "description": "EasyFlow .NET developed by Digiwin has a Missing Authentication vulnerability. Unauthenticated remote attackers can obtain other users' plaintext passwords through a specific API.",
+        "published": "2026-09-30T09:17:13.800"
       },
       {
         "cve_id": "CVE-2026-97196",
@@ -283,13 +283,6 @@
         "base_score": 9.1,
         "description": "Improper Validation of Unsafe Equivalence in Input vulnerability in Liquid Web / StellarWP GiveWP allows Authentication Bypass.\n\nThis issue affects GiveWP: from n/a through 4.16.9.",
         "published": "2026-09-30T07:16:31.320"
-      },
-      {
-        "cve_id": "CVE-2026-103056",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "AiSOC versions 7.2.0 before 12.0.0 contain a command injection vulnerability in the actions service that builds CrowdStrike Real Time Response command strings by interpolating unescaped action paramet",
-        "published": "2026-09-30T01:16:37.050"
       },
       {
         "cve_id": "CVE-2026-103105",
@@ -311,6 +304,13 @@
         "base_score": 8.8,
         "description": "The Verge3D Publishing and E-Commerce WordPress plugin before 4.13.1 does not validate the contents of files uploaded through its file storage feature and serves them back with an attacker-controlled ",
         "published": "2026-09-30T06:17:09.983"
+      },
+      {
+        "cve_id": "CVE-2026-92867",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "An out-of-bounds write vulnerability exists in Pgpool-II , which may allow an authenticated attacker to cause abnormal process termination or arbitrary code execution.",
+        "published": "2026-09-30T08:16:34.557"
       },
       {
         "cve_id": "CVE-2026-103101",
@@ -348,20 +348,6 @@
         "published": "2026-09-30T05:16:45.863"
       },
       {
-        "cve_id": "CVE-2026-103055",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "AiSOC versions 7.5.0 before 12.0.0 use a hard-coded constant for JWT verification in the realtime WebSocket and SSE service when the AISOC_REALTIME_JWT_SECRET environment variable is not set. Unauthen",
-        "published": "2026-09-30T01:16:36.880"
-      },
-      {
-        "cve_id": "CVE-2026-103088",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Handlebars.java before 4.5.5 allows directory traversal. In handlebars-springmvc 4.5.3 and 4.5.4, the path-containment fix for CVE-2026-63490 validates template locations as raw percent-encoded string",
-        "published": "2026-09-30T02:16:57.203"
-      },
-      {
         "cve_id": "CVE-2026-103099",
         "severity": "HIGH",
         "base_score": 7.5,
@@ -381,6 +367,20 @@
         "base_score": 7.5,
         "description": "Pexip Infinity before 38.2, plus 39.0, 39.1 and 40.0, is affected by improper input validation in the media implementation which allows a remote attacker to trigger a software abort resulting in a den",
         "published": "2026-09-30T03:16:59.467"
+      },
+      {
+        "cve_id": "CVE-2026-103108",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Pexip Infinity before 38.2, plus 39.0, 39.1, and 40.0, is affected by improper input validation in the media implementation that allows a remote attacker to trigger a software abort resulting in a den",
+        "published": "2026-09-30T03:16:59.920"
+      },
+      {
+        "cve_id": "CVE-2026-89193",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Robin Image Optimizer  WordPress plugin before 2.0.8 does not escape values that its bundled HTML parser re-emits into element attributes when a non-default image delivery mode is enabled, allowin",
+        "published": "2026-09-30T06:17:08.590"
       }
     ]
   },
