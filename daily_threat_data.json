@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-10-02T10:09:05.269701+00:00",
+  "generated_at": "2026-10-02T17:03:12.187833+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 37,
+        "value": 39,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 12,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -32,9 +32,29 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1731,
-    "recent_30d_count": 37,
+    "total_catalog_count": 1733,
+    "recent_30d_count": 39,
     "recent": [
+      {
+        "cve_id": "CVE-2026-102490",
+        "vendor": "Zammad GmbH",
+        "product": "Zammad",
+        "name": "Zammad GmbH Zammad Improper Privilege Management Vulnerability",
+        "date_added": "2026-10-02",
+        "due_date": "2026-10-05",
+        "description": "Zammad GmbH Zammad contains an improper privilege management vulnerability that can allow the local zammad user to escalate privileges to root. This vulnerability can be chained with CVE-2026-102489.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-102489",
+        "vendor": "Zammad GmbH",
+        "product": "Zammad",
+        "name": "Zammad GmbH Zammad Session Fixation Vulnerability",
+        "date_added": "2026-10-02",
+        "due_date": "2026-10-05",
+        "description": "Zammad GmbH Zammad contains a session fixation vulnerability that can lead to remote code execution as the zammad user. This vulnerability can be chained with CVE-2026-102490.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-104286",
         "vendor": "Fortinet",
@@ -214,173 +234,153 @@
         "due_date": "2026-09-21",
         "description": "Linux Kernel contains an improper check for unusual or exceptional conditions vulnerability in the TLS receive path which allows a zero-length record retrieved from the rx_list to bypass the intended ",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-58704",
-        "vendor": "Google",
-        "product": "Pixel",
-        "name": "Google Pixel Improper Authorization Vulnerability",
-        "date_added": "2026-09-16",
-        "due_date": "2026-09-19",
-        "description": "Google Pixel devices contain an improper authorization vulnerability in the cellular modem. A logic error may allow an attacker to bypass permission checks and escalate privileges.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-76460",
-        "vendor": "Cisco",
-        "product": "Identity Services Engine",
-        "name": "Cisco Identity Services Engine Incorrect Use of Privileged APIs Vulnerability",
-        "date_added": "2026-09-16",
-        "due_date": "2026-09-19",
-        "description": "Cisco Identity Services Engine (ISE) and Cisco ISE Passive Identity Connector (ISE-PIC) contain an incorrect use of privileged APIs vulnerability that could allow an unauthenticated, remote attacker t",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 414,
-    "critical_count": 4,
-    "high_count": 31,
+    "total": 481,
+    "critical_count": 12,
+    "high_count": 36,
     "cves": [
       {
-        "cve_id": "CVE-2026-103244",
+        "cve_id": "CVE-2026-96658",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A flaw was found in Foreman. An authenticated attacker with low-level permissions can achieve remote code execution (RCE) by bypassing the safemode sandbox within the templating engine. Due to imprope",
+        "published": "2026-10-01T17:17:34.500"
+      },
+      {
+        "cve_id": "CVE-2026-56154",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "ground-station versions before 0.8.0 contain an authentication bypass vulnerability in the setup.restore command that allows unauthenticated attackers to execute arbitrary SQL during first-run setup m",
-        "published": "2026-10-01T11:17:17.503"
+        "description": "Use After Free vulnerability in Apache HTTP Server's mod_rewrite when using lookahead (%{LA-U:HTTP:...})\n\n\n\nThis issue affects Apache HTTP Server: from 2.4.0 through 2.4.68.",
+        "published": "2026-10-01T17:17:26.610"
       },
       {
-        "cve_id": "CVE-2026-103264",
+        "cve_id": "CVE-2026-57941",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Use After Free vulnerability in Apache HTTP Server's mod_http2\u00a0via shared session->bbtmp re-entrancy\n\n\n\nThis issue affects Apache HTTP Server: from 2.4.0 through 2.4.68.",
+        "published": "2026-10-01T17:17:27.457"
+      },
+      {
+        "cve_id": "CVE-2026-59797",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Improper Privilege Management vulnerability in Apache HTTP Server's mod_ssl via SSLRequire and file-related expressions.\n\n\n\nThis issue affects Apache HTTP Server: from 2.4.0 through 2.4.68.",
+        "published": "2026-10-01T17:17:29.527"
+      },
+      {
+        "cve_id": "CVE-2026-104286",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6, FortiMail 7.4.0 through 7.4.8,",
+        "published": "2026-10-01T20:17:24.010"
+      },
+      {
+        "cve_id": "CVE-2026-56662",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "GetSimple CMS is a content management system (CMS), and GetSimple CMS CE is the community edition of that CMS. Prior to version 1.5, the UpdateCE update form contained no anti-CSRF token, and the POST",
+        "published": "2026-10-01T20:17:26.950"
+      },
+      {
+        "cve_id": "CVE-2026-103922",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Capacitor is a cross-platform native runtime for web applications. From 6.0.0 until 6.2.2, 7.6.9, 8.3.5, 8.4.3, and 8.5.1, the Android and iOS WebView navigation guard validates a target URL's host an",
+        "published": "2026-10-01T18:17:12.840"
+      },
+      {
+        "cve_id": "CVE-2026-102628",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "The Cadmos LTI application hosted at cadmos.eummena.io had Laravel debug mode enabled (APP_DEBUG=true, APP_ENV=local) in a publicly accessible environment. An unauthenticated attacker could send a GET",
+        "published": "2026-10-01T20:17:21.447"
+      },
+      {
+        "cve_id": "CVE-2026-96659",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Fleet versions before 4.87.0 contain an authentication bypass vulnerability in the device API that accepts hostnames and hardware serials as authentication tokens in addition to device UUIDs. Unauthen",
-        "published": "2026-10-01T11:17:21.410"
+        "description": "A flaw was found in Foreman. This vulnerability allows an authenticated user with low-level Viewer permissions to cause unauthorized information disclosure by submitting requests to template preview e",
+        "published": "2026-10-01T17:17:35.590"
       },
       {
-        "cve_id": "CVE-2026-103248",
+        "cve_id": "CVE-2026-55083",
         "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "n8n versions before 1.123.80, from 2.0.0 before 2.39.6, and from 2.40.0 before 2.40.1 contain a filter injection vulnerability in the Supabase node's Filters (String) mode that fails to escape field v",
-        "published": "2026-10-01T11:17:18.257"
+        "base_score": 9.1,
+        "description": "DHIS2 is a flexible information system for data capture, management, validation, analytics and visualization. From versions 2.42.0 to before 2.42.5.1, and from versions 2.43.0 to before 2.43.0.1, DHIS",
+        "published": "2026-10-01T19:17:21.330"
       },
       {
-        "cve_id": "CVE-2026-103255",
+        "cve_id": "CVE-2026-53953",
         "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "n8n versions before 1.123.80, from 2.0.0 before 2.39.6, and from 2.40.0 before 2.40.1 contain a path traversal vulnerability in the Supabase node where the tableId parameter is inserted into request p",
-        "published": "2026-10-01T11:17:19.717"
+        "base_score": 9.1,
+        "description": "GetSimple CMS is a content management system (CMS), and GetSimple CMS CE is the community edition of that CMS. In version 3.3.22, the password reset endpoint can be accessed without authentication. Wh",
+        "published": "2026-10-01T20:17:25.283"
       },
       {
-        "cve_id": "CVE-2026-103268",
+        "cve_id": "CVE-2026-56660",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "GetSimple CMS is a content management system (CMS), and GetSimple CMS CE is the community edition of that CMS. Prior to version 1.5, the update handler in UpdateCE.php downloads a ZIP archive and extr",
+        "published": "2026-10-01T20:17:26.643"
+      },
+      {
+        "cve_id": "CVE-2026-12405",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Ghost versions before 6.62.0 contain an authentication bypass vulnerability that allows suspended staff users to reactivate their accounts through self-service password reset. Attackers with suspended",
-        "published": "2026-10-01T11:17:22.073"
+        "description": "A flaw was found in rubygem-foreman_remote_execution. A command injection vulnerability exists in the Red Hat Satellite API (/api/v2/job_invocations). When a job template has the effective_user proper",
+        "published": "2026-10-01T17:17:19.717"
       },
       {
-        "cve_id": "CVE-2026-103253",
+        "cve_id": "CVE-2026-93546",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Integer overflow in mod_dav_fs in Apache HTTP Server through 2.4.68 allows an authenticated WebDAV client with write access to crash worker processes and persistently corrupt a directory's property da",
+        "published": "2026-10-01T17:17:33.313"
+      },
+      {
+        "cve_id": "CVE-2026-104018",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "An improper privilege management vulnerability (CWE-269) exists in the command shell of Wind River VxWorks 7\u00a0when configured to enforce per-user command privileges. Under certain shell operations, a c",
+        "published": "2026-10-01T18:17:14.687"
+      },
+      {
+        "cve_id": "CVE-2026-103484",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "IVFFlat index build in pgvector before 0.8.7 allows a database user to write data out-of-bounds, which can lead to arbitrary code execution.",
+        "published": "2026-10-01T20:17:23.213"
+      },
+      {
+        "cve_id": "CVE-2026-55230",
         "severity": "HIGH",
         "base_score": 8.7,
-        "description": "n8n versions before 1.123.80, from 2.0.0 before 2.39.6, and from 2.40.0 before 2.40.1 contain an SQL injection vulnerability in the Oracle Database node's Delete Table Drop operation. Attackers can in",
-        "published": "2026-10-01T11:17:19.343"
+        "description": "Vvveb is a powerful and easy to use CMS with page builder to build websites, blogs or ecommerce stores. Prior to version 1.0.8.6, Vvveb's HTML sanitizer fails to strip event-handler attributes when a ",
+        "published": "2026-10-01T19:17:21.503"
       },
       {
-        "cve_id": "CVE-2026-88789",
+        "cve_id": "CVE-2026-54049",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Improper Restriction of XML External Entity Reference in the XSLT support extension (camel-quarkus-support-xalan) in Apache Camel Quarkus from 3.2.0 before 3.33.3 and from 3.34.0 before 3.40.0 on all ",
-        "published": "2026-10-01T11:17:28.917"
+        "base_score": 8.7,
+        "description": "Sakai is a Collaboration and Learning Environment (CLE). From versions 23.0 to before 23.5, and versions 25.0 to before 25.3, the Sakai Conversations tool stores topic and post messages without HTML s",
+        "published": "2026-10-01T20:17:25.587"
       },
       {
-        "cve_id": "CVE-2026-103247",
+        "cve_id": "CVE-2026-102667",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "n8n versions before 1.123.80 contain a credential tampering vulnerability where duplicate node IDs bypass the workflow credential tamper guard. Attackers with editor access to shared workflows can exp",
-        "published": "2026-10-01T11:17:18.070"
+        "base_score": 8.3,
+        "description": "Joyland AI app allows an attacker with shared network access to inject JavaScript into content loaded in WebView. Without user-granted permissions, an attacker could access the clipboard, make arbitra",
+        "published": "2026-10-01T20:17:21.750"
       },
       {
-        "cve_id": "CVE-2026-102379",
+        "cve_id": "CVE-2026-12540",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in VillaTheme BuildKit \u2013 Product Builder for WooCommerce \u2013 Custom PC Builder woo-product-builder allo",
-        "published": "2026-10-01T13:17:07.297"
-      },
-      {
-        "cve_id": "CVE-2026-103493",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "In JetBrains YouTrack before 2026.2.19422 stored XSS via Mermaid and LaTeX content was possible",
-        "published": "2026-10-01T10:17:14.780"
-      },
-      {
-        "cve_id": "CVE-2026-103250",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "n8n versions before 1.123.80, from 2.0.0 before 2.39.6, and from 2.40.0 before 2.40.1 contain a NoSQL injection vulnerability in the MongoDB Chat Memory node that fails to validate the sessionId param",
-        "published": "2026-10-01T11:17:18.777"
-      },
-      {
-        "cve_id": "CVE-2026-103277",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Ghost versions from 2.5.0 before 6.34.0 contain an untrusted script execution vulnerability in the oEmbed preview feature that fails to sandbox externally hosted scripts. Attackers can craft malicious",
-        "published": "2026-10-01T11:17:23.403"
-      },
-      {
-        "cve_id": "CVE-2026-103283",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Ghost versions 6.20.0 before 6.57.1 contain a session handling vulnerability that allows authenticated staff users to log in as any other staff user with only the password, bypassing two-factor authen",
-        "published": "2026-10-01T11:17:24.397"
-      },
-      {
-        "cve_id": "CVE-2026-103758",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Obot 0.21.1 through 0.24.1 contains an authorization bypass vulnerability that allows authenticated users to reach MCP servers because the checkUI deny list omits the /mcp-connect-composite/ route. Ba",
-        "published": "2026-10-01T11:17:26.360"
-      },
-      {
-        "cve_id": "CVE-2026-103292",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "Ghost versions from 0.5.3 through versions prior to 6.50.0 fail to sanitize the data placed in the JSON-LD HTML tag emitted by the {{ghost_head}} helper. An authenticated user with limited privileges ",
-        "published": "2026-10-01T11:17:25.847"
-      },
-      {
-        "cve_id": "CVE-2026-103067",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "Cross-Site Request Forgery (CSRF) vulnerability in Memberful Memberful - Membership Plugin memberful-wp allows Cross Site Request Forgery.This issue affects Memberful - Membership Plugin: from n/a thr",
-        "published": "2026-10-01T13:17:08.223"
-      },
-      {
-        "cve_id": "CVE-2026-103246",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "n8n versions before 2.39.6 and 2.40.0 before 2.40.1 fail to validate credential ownership during inline agent node-tool introspection. Attackers can reference arbitrary credential IDs to decrypt and e",
-        "published": "2026-10-01T11:17:17.887"
-      },
-      {
-        "cve_id": "CVE-2026-103252",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "n8n versions before 1.123.80, from 2.0.0 before 2.39.6, and from 2.40.0 before 2.40.1 contain an authorization bypass vulnerability in the credential test endpoint that resolves project-scoped variabl",
-        "published": "2026-10-01T11:17:19.160"
-      },
-      {
-        "cve_id": "CVE-2026-103257",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "n8n versions before 1.123.80, from 2.0.0 before 2.39.6, and from 2.40.0 before 2.40.1 contain a path traversal vulnerability in the n8n node that fails to validate resource identifiers. Attackers can ",
-        "published": "2026-10-01T11:17:20.100"
-      },
-      {
-        "cve_id": "CVE-2026-103757",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Budibase through 3.41.0 contains a server-side request forgery vulnerability in AI table generation because the uploadUrl function in packages/server/src/utilities/fileUtils.ts uses raw node-fetch ins",
-        "published": "2026-10-01T11:17:26.177"
+        "base_score": 8.2,
+        "description": "A flaw was found in Foreman. A command injection vulnerability exists in the foreman-rake errors:fetch_log task. The request_id parameter is passed to an underlying system command (typically grep) wit",
+        "published": "2026-10-01T17:17:20.053"
       }
     ]
   },
