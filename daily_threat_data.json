@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T17:03:12.187833+00:00",
+  "generated_at": "2026-10-02T23:24:59.654678+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 12,
+        "value": 10,
         "score": 3.0,
         "max": 3
       },
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 481,
-    "critical_count": 12,
-    "high_count": 36,
+    "total": 396,
+    "critical_count": 10,
+    "high_count": 29,
     "cves": [
       {
-        "cve_id": "CVE-2026-96658",
+        "cve_id": "CVE-2026-93698",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "A flaw was found in Foreman. An authenticated attacker with low-level permissions can achieve remote code execution (RCE) by bypassing the safemode sandbox within the templating engine. Due to imprope",
-        "published": "2026-10-01T17:17:34.500"
+        "description": "Insufficient validation allows arbitrary commands to be executed via the Multilang adminbin.",
+        "published": "2026-10-02T07:16:39.027"
       },
       {
-        "cve_id": "CVE-2026-56154",
+        "cve_id": "CVE-2026-103764",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Use After Free vulnerability in Apache HTTP Server's mod_rewrite when using lookahead (%{LA-U:HTTP:...})\n\n\n\nThis issue affects Apache HTTP Server: from 2.4.0 through 2.4.68.",
-        "published": "2026-10-01T17:17:26.610"
+        "description": "Mooncake transfer engine before 0.3.13 contains an untrusted pointer dereference in ServerSession::readHeader that allows unauthenticated attackers to read and write arbitrary process memory via the T",
+        "published": "2026-10-02T00:16:59.253"
       },
       {
-        "cve_id": "CVE-2026-57941",
+        "cve_id": "CVE-2026-14378",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Use After Free vulnerability in Apache HTTP Server's mod_http2\u00a0via shared session->bbtmp re-entrancy\n\n\n\nThis issue affects Apache HTTP Server: from 2.4.0 through 2.4.68.",
-        "published": "2026-10-01T17:17:27.457"
+        "description": "The DevKit Pro plugin for WordPress is vulnerable to Authentication Bypass Leading to Administrator Account Takeover in all versions up to, and including, 2.3.0 This is due to the `revert_switch` hand",
+        "published": "2026-10-02T04:18:06.277"
       },
       {
-        "cve_id": "CVE-2026-59797",
+        "cve_id": "CVE-2026-19660",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Improper Privilege Management vulnerability in Apache HTTP Server's mod_ssl via SSLRequire and file-related expressions.\n\n\n\nThis issue affects Apache HTTP Server: from 2.4.0 through 2.4.68.",
-        "published": "2026-10-01T17:17:29.527"
+        "description": "The Divi Membership plugin for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 2.3.0. The `process_paypal_callback` function, hooked to the `init` action, accept",
+        "published": "2026-10-02T05:16:38.430"
       },
       {
-        "cve_id": "CVE-2026-104286",
+        "cve_id": "CVE-2026-97637",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "An improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6, FortiMail 7.4.0 through 7.4.8,",
-        "published": "2026-10-01T20:17:24.010"
+        "description": "The JSON API Auth plugin for WordPress is vulnerable to Authentication Bypass via Cached Session Cookie Disclosure in all versions up to, and including, 3.1.2. The vulnerability exists because the req",
+        "published": "2026-10-02T08:17:05.660"
       },
       {
-        "cve_id": "CVE-2026-56662",
+        "cve_id": "CVE-2026-103765",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "GetSimple CMS is a content management system (CMS), and GetSimple CMS CE is the community edition of that CMS. Prior to version 1.5, the UpdateCE update form contained no anti-CSRF token, and the POST",
-        "published": "2026-10-01T20:17:26.950"
+        "base_score": 9.4,
+        "description": "Mooncake through 0.3.13.post1 contains a missing authentication vulnerability in the HTTP metadata server /metadata handler that allows unauthenticated attackers to read, overwrite, and delete transfe",
+        "published": "2026-10-02T00:16:59.663"
       },
       {
-        "cve_id": "CVE-2026-103922",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Capacitor is a cross-platform native runtime for web applications. From 6.0.0 until 6.2.2, 7.6.9, 8.3.5, 8.4.3, and 8.5.1, the Android and iOS WebView navigation guard validates a target URL's host an",
-        "published": "2026-10-01T18:17:12.840"
-      },
-      {
-        "cve_id": "CVE-2026-102628",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "The Cadmos LTI application hosted at cadmos.eummena.io had Laravel debug mode enabled (APP_DEBUG=true, APP_ENV=local) in a publicly accessible environment. An unauthenticated attacker could send a GET",
-        "published": "2026-10-01T20:17:21.447"
-      },
-      {
-        "cve_id": "CVE-2026-96659",
+        "cve_id": "CVE-2026-15896",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "A flaw was found in Foreman. This vulnerability allows an authenticated user with low-level Viewer permissions to cause unauthorized information disclosure by submitting requests to template preview e",
-        "published": "2026-10-01T17:17:35.590"
+        "description": "The Super Forms \u2013 Drag & Drop Form Builder plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 6.3.316 via the parse_request function. This makes it possibl",
+        "published": "2026-10-02T06:16:40.773"
       },
       {
-        "cve_id": "CVE-2026-55083",
+        "cve_id": "CVE-2026-86345",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "DHIS2 is a flexible information system for data capture, management, validation, analytics and visualization. From versions 2.42.0 to before 2.42.5.1, and from versions 2.43.0 to before 2.43.0.1, DHIS",
-        "published": "2026-10-01T19:17:21.330"
+        "base_score": 9.0,
+        "description": "A flaw was found in 389-ds-base. The server does not discard plaintext bytes already buffered from a client connection when negotiating StartTLS, allowing an on-path attacker to inject a crafted LDAP ",
+        "published": "2026-10-02T00:17:04.180"
       },
       {
-        "cve_id": "CVE-2026-53953",
+        "cve_id": "CVE-2026-93029",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "GetSimple CMS is a content management system (CMS), and GetSimple CMS CE is the community edition of that CMS. In version 3.3.22, the password reset endpoint can be accessed without authentication. Wh",
-        "published": "2026-10-01T20:17:25.283"
+        "base_score": 9.0,
+        "description": "There is a stored XSS vulnerability allowing arbitrary code execution in the WHM Manage SSL Hosts interface.",
+        "published": "2026-10-02T07:16:38.733"
       },
       {
-        "cve_id": "CVE-2026-56660",
+        "cve_id": "CVE-2026-93697",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "GetSimple CMS is a content management system (CMS), and GetSimple CMS CE is the community edition of that CMS. Prior to version 1.5, the update handler in UpdateCE.php downloads a ZIP archive and extr",
-        "published": "2026-10-01T20:17:26.643"
+        "base_score": 9.0,
+        "description": "There is a stored XSS vulnerability allowing arbitrary code execution in the WHM Mass Modify Accounts interface.",
+        "published": "2026-10-02T07:16:38.893"
       },
       {
-        "cve_id": "CVE-2026-12405",
+        "cve_id": "CVE-2026-15897",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A flaw was found in rubygem-foreman_remote_execution. A command injection vulnerability exists in the Red Hat Satellite API (/api/v2/job_invocations). When a job template has the effective_user proper",
-        "published": "2026-10-01T17:17:19.717"
+        "description": "The Super Forms \u2013 Drag & Drop Form Builder plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 6.3.316. This is due to the Register & Login add-on's before",
+        "published": "2026-10-02T06:16:41.053"
       },
       {
-        "cve_id": "CVE-2026-93546",
+        "cve_id": "CVE-2026-92820",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Integer overflow in mod_dav_fs in Apache HTTP Server through 2.4.68 allows an authenticated WebDAV client with write access to crash worker processes and persistently corrupt a directory's property da",
-        "published": "2026-10-01T17:17:33.313"
+        "base_score": 8.1,
+        "description": "The Ninja Forms - File Uploads plugin for WordPress is vulnerable to arbitrary file operations in all versions up to, and including, 3.3.34 via the external (Amazon S3) upload flow. The plugin trusts ",
+        "published": "2026-10-02T06:16:43.197"
       },
       {
-        "cve_id": "CVE-2026-104018",
+        "cve_id": "CVE-2026-103096",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "An improper privilege management vulnerability (CWE-269) exists in the command shell of Wind River VxWorks 7\u00a0when configured to enforce per-user command privileges. Under certain shell operations, a c",
-        "published": "2026-10-01T18:17:14.687"
+        "base_score": 7.5,
+        "description": "API\nkey is hardcoded and retrievable from the application package. Since Android\napplications can be reverse engineered, embedding sensitive API credentials\ndirectly in the client application may allo",
+        "published": "2026-10-02T01:16:42.930"
       },
       {
-        "cve_id": "CVE-2026-103484",
+        "cve_id": "CVE-2026-103097",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "IVFFlat index build in pgvector before 0.8.7 allows a database user to write data out-of-bounds, which can lead to arbitrary code execution.",
-        "published": "2026-10-01T20:17:23.213"
+        "base_score": 7.5,
+        "description": "An API key is\nhardcoded and retrievable from the application package. Since Android\napplications can be reverse engineered, embedding sensitive API credentials\ndirectly in the client application may a",
+        "published": "2026-10-02T01:16:43.070"
       },
       {
-        "cve_id": "CVE-2026-55230",
+        "cve_id": "CVE-2026-103098",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "Vvveb is a powerful and easy to use CMS with page builder to build websites, blogs or ecommerce stores. Prior to version 1.0.8.6, Vvveb's HTML sanitizer fails to strip event-handler attributes when a ",
-        "published": "2026-10-01T19:17:21.503"
+        "base_score": 7.5,
+        "description": "Transmission of a sensitive key in the URL\nover an unencrypted HTTP connection.\u00a0 The\nrequest is sent over HTTP rather than HTTPS, meaning the key is transmitted in\nplaintext across the network. An att",
+        "published": "2026-10-02T01:16:43.193"
       },
       {
-        "cve_id": "CVE-2026-54049",
+        "cve_id": "CVE-2026-91828",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "Sakai is a Collaboration and Learning Environment (CLE). From versions 23.0 to before 23.5, and versions 25.0 to before 25.3, the Sakai Conversations tool stores topic and post messages without HTML s",
-        "published": "2026-10-01T20:17:25.587"
+        "base_score": 7.5,
+        "description": "The OMGF | GDPR/DSGVO Compliant, Faster Google Fonts. Easy. WordPress plugin before 6.3.11 does not require authentication or a valid nonce on an action that issues a slow server-side loopback request",
+        "published": "2026-10-02T06:16:42.857"
       },
       {
-        "cve_id": "CVE-2026-102667",
+        "cve_id": "CVE-2026-92174",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Joyland AI app allows an attacker with shared network access to inject JavaScript into content loaded in WebView. Without user-granted permissions, an attacker could access the clipboard, make arbitra",
-        "published": "2026-10-01T20:17:21.750"
+        "base_score": 7.5,
+        "description": "The SiteOrigin Widgets Bundle plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.73.2 via the 'theme' parameter parameter. This makes it possible for au",
+        "published": "2026-10-02T06:16:43.007"
       },
       {
-        "cve_id": "CVE-2026-12540",
+        "cve_id": "CVE-2026-104120",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "A flaw was found in Foreman. A command injection vulnerability exists in the foreman-rake errors:fetch_log task. The request_id parameter is passed to an underlying system command (typically grep) wit",
-        "published": "2026-10-01T17:17:20.053"
+        "base_score": 7.3,
+        "description": "A security vulnerability has been detected in modelcontextprotocol mcp-server-fetch and mcp-server-everything up to 2026.6.4. Affected is the function fetch_url of the file mcp_server_fetch/server.py ",
+        "published": "2026-10-02T03:16:38.840"
+      },
+      {
+        "cve_id": "CVE-2026-104123",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was detected in SourceCodester Online Reviewer Management System 1.0. Affected by this vulnerability is an unknown functionality of the file /reviewer_0/admins/assessments/activities/b",
+        "published": "2026-10-02T03:16:39.047"
+      },
+      {
+        "cve_id": "CVE-2026-103766",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "ClipBucket v5 through 5.5.3-#197 contains an sql injection vulnerability that allows authenticated users with ad_manager_access permission to inject SQL via the delete parameter in admin_area/ads_mana",
+        "published": "2026-10-02T00:16:59.820"
       }
     ]
   },
