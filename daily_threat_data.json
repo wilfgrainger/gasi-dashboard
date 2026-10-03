@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-02T23:24:59.654678+00:00",
+  "generated_at": "2026-10-03T02:57:11.876213+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 10,
-        "score": 3.0,
+        "value": 7,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 396,
-    "critical_count": 10,
-    "high_count": 29,
+    "total": 397,
+    "critical_count": 7,
+    "high_count": 27,
     "cves": [
       {
         "cve_id": "CVE-2026-93698",
@@ -248,13 +248,6 @@
         "base_score": 9.9,
         "description": "Insufficient validation allows arbitrary commands to be executed via the Multilang adminbin.",
         "published": "2026-10-02T07:16:39.027"
-      },
-      {
-        "cve_id": "CVE-2026-103764",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Mooncake transfer engine before 0.3.13 contains an untrusted pointer dereference in ServerSession::readHeader that allows unauthenticated attackers to read and write arbitrary process memory via the T",
-        "published": "2026-10-02T00:16:59.253"
       },
       {
         "cve_id": "CVE-2026-14378",
@@ -278,25 +271,11 @@
         "published": "2026-10-02T08:17:05.660"
       },
       {
-        "cve_id": "CVE-2026-103765",
-        "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "Mooncake through 0.3.13.post1 contains a missing authentication vulnerability in the HTTP metadata server /metadata handler that allows unauthenticated attackers to read, overwrite, and delete transfe",
-        "published": "2026-10-02T00:16:59.663"
-      },
-      {
         "cve_id": "CVE-2026-15896",
         "severity": "CRITICAL",
         "base_score": 9.1,
         "description": "The Super Forms \u2013 Drag & Drop Form Builder plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 6.3.316 via the parse_request function. This makes it possibl",
         "published": "2026-10-02T06:16:40.773"
-      },
-      {
-        "cve_id": "CVE-2026-86345",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "A flaw was found in 389-ds-base. The server does not discard plaintext bytes already buffered from a client connection when negotiating StartTLS, allowing an on-path attacker to inject a crafted LDAP ",
-        "published": "2026-10-02T00:17:04.180"
       },
       {
         "cve_id": "CVE-2026-93029",
@@ -327,27 +306,6 @@
         "published": "2026-10-02T06:16:43.197"
       },
       {
-        "cve_id": "CVE-2026-103096",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "API\nkey is hardcoded and retrievable from the application package. Since Android\napplications can be reverse engineered, embedding sensitive API credentials\ndirectly in the client application may allo",
-        "published": "2026-10-02T01:16:42.930"
-      },
-      {
-        "cve_id": "CVE-2026-103097",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "An API key is\nhardcoded and retrievable from the application package. Since Android\napplications can be reverse engineered, embedding sensitive API credentials\ndirectly in the client application may a",
-        "published": "2026-10-02T01:16:43.070"
-      },
-      {
-        "cve_id": "CVE-2026-103098",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Transmission of a sensitive key in the URL\nover an unencrypted HTTP connection.\u00a0 The\nrequest is sent over HTTP rather than HTTPS, meaning the key is transmitted in\nplaintext across the network. An att",
-        "published": "2026-10-02T01:16:43.193"
-      },
-      {
         "cve_id": "CVE-2026-91828",
         "severity": "HIGH",
         "base_score": 7.5,
@@ -360,6 +318,13 @@
         "base_score": 7.5,
         "description": "The SiteOrigin Widgets Bundle plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 1.73.2 via the 'theme' parameter parameter. This makes it possible for au",
         "published": "2026-10-02T06:16:43.007"
+      },
+      {
+        "cve_id": "CVE-2026-80443",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "Improper certificate validation vulnerability in HAVELSAN Inc. Sef - AI Chatbot Platform allows Adversary in the Middle (AiTM).\n\nThis issue affects Sef - AI Chatbot Platform: before 2.1.\u00a0NOTE: The ven",
+        "published": "2026-10-02T09:16:44.823"
       },
       {
         "cve_id": "CVE-2026-104120",
@@ -376,11 +341,46 @@
         "published": "2026-10-02T03:16:39.047"
       },
       {
-        "cve_id": "CVE-2026-103766",
+        "cve_id": "CVE-2026-103552",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "Stack Overflow vulnerability in Apache Directory LDAP API.\n\n\n\nBefore binding, a client can send a deeply nested search filter that overflows the stack in the server's decoder.\n\n\n\nThis issue affects Ap",
+        "published": "2026-10-02T10:17:06.303"
+      },
+      {
+        "cve_id": "CVE-2026-93367",
         "severity": "HIGH",
         "base_score": 7.2,
-        "description": "ClipBucket v5 through 5.5.3-#197 contains an sql injection vulnerability that allows authenticated users with ad_manager_access permission to inject SQL via the delete parameter in admin_area/ads_mana",
-        "published": "2026-10-02T00:16:59.820"
+        "description": "The Visitors Traffic Real Time Statistics Pro plugin for WordPress is vulnerable to unauthenticated stored Cross-Site Scripting in all versions up to, and including, 11.22 via the page_title parameter",
+        "published": "2026-10-02T04:18:09.573"
+      },
+      {
+        "cve_id": "CVE-2026-10026",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The CTX Feed Pro plugin for WordPress is vulnerable to Code Injection in all versions up to, and including, 7.6.12. This is due to insufficient input validation on the 'Feed Config' field which is pas",
+        "published": "2026-10-02T05:16:36.503"
+      },
+      {
+        "cve_id": "CVE-2026-90438",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The Ninja Forms \u2013 The Contact Form Builder That Grows With You plugin for WordPress is vulnerable to Stored Cross-Site Scripting via Paragraph Text (RTE) Field Submission in all versions up to, and in",
+        "published": "2026-10-02T06:16:42.050"
+      },
+      {
+        "cve_id": "CVE-2026-102565",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The BA Book Everything plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'booking_service_qty' parameter in all versions up to, and including, 1.8.28 due to insufficient input ",
+        "published": "2026-10-02T07:16:35.617"
+      },
+      {
+        "cve_id": "CVE-2026-100107",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The Kubio AI Page Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'comment' parameter in all versions up to, and including, 2.9.2 due to insufficient input sanitizati",
+        "published": "2026-10-02T08:16:58.250"
       }
     ]
   },
