@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-03T09:31:16.474131+00:00",
+  "generated_at": "2026-10-03T15:25:30.400204+00:00",
   "threat_score": {
-    "score": 5.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 7.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 10,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 390,
-    "critical_count": 1,
+    "total": 219,
+    "critical_count": 10,
     "high_count": 23,
     "cves": [
       {
-        "cve_id": "CVE-2026-94541",
+        "cve_id": "CVE-2026-103956",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Missing authentication for critical function in the authentication dependency in Loom for AWS before 1.6.1 allowed remote actors to obtain super-admin authority over the agent control plane, including",
+        "published": "2026-10-02T19:16:39.750"
+      },
+      {
+        "cve_id": "CVE-2026-82041",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "UTMStack before 11.2.16 contains a missing authorization vulnerability in UTMIncidentCommandWebsocket.processCommand(), the handler mapped to the /command/{hostname} STOMP destination, where no role c",
+        "published": "2026-10-02T21:16:56.497"
+      },
+      {
+        "cve_id": "CVE-2026-104846",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "The WPMobile.App \u2013 Android and iOS App Builder plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 11.82 This is due to the plugin not properly verifying t",
-        "published": "2026-10-02T10:17:09.313"
+        "description": "Seroval facilitates JS value stringification, including complex structures beyond JSON.stringify capabilities. From 0.12.0 until 1.6.2, fromJSON deserialization of a fulfilled Promise control node can",
+        "published": "2026-10-02T16:16:47.230"
       },
       {
-        "cve_id": "CVE-2026-80298",
+        "cve_id": "CVE-2023-54405",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "H3C CVM, the Cloud Virtualization Management component of the H3C CAS cloud platform, contains an unauthenticated arbitrary file upload vulnerability in the /cas/fileUpload/upload endpoint that allows",
+        "published": "2026-10-02T19:16:38.897"
+      },
+      {
+        "cve_id": "CVE-2026-82042",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "UTMStack before 11.2.16 contains an authentication bypass vulnerability that allows remote attackers to gain full administrative API access by presenting a valid Utm-Internal-Key header matching the I",
+        "published": "2026-10-02T21:16:56.643"
+      },
+      {
+        "cve_id": "CVE-2026-103628",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Out of bounds write in WebGL in Google Chrome prior to 154.0.8037.97 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Criti",
+        "published": "2026-10-02T16:16:43.937"
+      },
+      {
+        "cve_id": "CVE-2026-95102",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "WebSocket endpoints lack proper authentication mechanisms, enabling attackers to impersonate charging stations. As a result, attackers can exploit this weakness to gain unauthorized access to sensitiv",
+        "published": "2026-10-02T22:16:56.607"
+      },
+      {
+        "cve_id": "CVE-2026-102795",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Improper Access Control vulnerability in Apache Traffic Server.\n\n\n\nThis issue affects Apache Traffic Server: from 9.0.0 through 9.2.14, from 10.0.0 through 10.1.3.\n\n\n\nUsers are recommended to upgrade ",
+        "published": "2026-10-02T18:16:59.780"
+      },
+      {
+        "cve_id": "CVE-2026-103648",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Path traversal in image-downloader 4.3.0 allows an attacker who can control the download URL to cause downloaded response data to be written outside the configured destination directory.",
+        "published": "2026-10-02T16:16:44.370"
+      },
+      {
+        "cve_id": "CVE-2026-104019",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "OS command injection in the Studio Space startup validation script in Amazon SageMaker Distribution 2.x before 2.14.12, 3.x before 3.9.12, 4.0.x before 4.0.11, 4.1.x before 4.1.11, 4.2.x before 4.2.8,",
+        "published": "2026-10-02T20:17:00.607"
+      },
+      {
+        "cve_id": "CVE-2026-103622",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in HAVELSAN Inc. Sef - AI Chatbot Platform allows SQL Injection.\n\nThis issue affects Sef - AI Chatbot",
-        "published": "2026-10-02T10:17:08.567"
+        "description": "Use after free in SVG in Google Chrome prior to 154.0.8037.97 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-10-02T16:16:43.290"
       },
       {
-        "cve_id": "CVE-2026-104457",
+        "cve_id": "CVE-2026-103625",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "YesWiki before 4.6.7 contains an SQL injection vulnerability in the Bazar filtertags action, which wraps unescaped filterN attribute tokens in quotes and concatenates them into a raw tags.value IN (..",
-        "published": "2026-10-02T12:17:17.653"
+        "base_score": 8.8,
+        "description": "Type confusion in V8 in Google Chrome prior to 154.0.8037.97 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+        "published": "2026-10-02T16:16:43.610"
       },
       {
-        "cve_id": "CVE-2026-104445",
+        "cve_id": "CVE-2026-104851",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "YesWiki before 4.6.7 contains an authentication bypass vulnerability in the ActivityPub inbox that fails to bind the verified HTTP signature signer to the activity actor. Unauthenticated attackers wit",
-        "published": "2026-10-02T12:17:15.657"
+        "base_score": 8.8,
+        "description": "fsspec is a specification and Python implementation framework for filesystem interfaces. From 0.9.0 until 2026.6.0, fsspec.implementations.reference.ReferenceFileSystem evaluates fields from Kerchunk ",
+        "published": "2026-10-02T17:17:03.763"
       },
       {
-        "cve_id": "CVE-2026-104414",
+        "cve_id": "CVE-2026-96940",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Weak authorization in Microsoft Exchange Server allows an authenticated attacker to elevate privileges over a network.",
+        "published": "2026-10-02T19:16:43.023"
+      },
+      {
+        "cve_id": "CVE-2026-39718",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Cross-Site Request Forgery (CSRF) vulnerability in Webriti Wallstreet wallstreet allows Cross Site Request Forgery.This issue affects Wallstreet: from n/a through 2.8.6.",
+        "published": "2026-10-02T20:17:02.420"
+      },
+      {
+        "cve_id": "CVE-2026-82039",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "UTMStack before 11.2.16 contains a SQL injection vulnerability in UtmAssetGroupService.searchQueryBuilder() that allows authenticated attackers to inject arbitrary SQL by supplying malicious assetType",
+        "published": "2026-10-02T20:17:04.430"
+      },
+      {
+        "cve_id": "CVE-2026-94591",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "Armatura One stores database and message-broker credentials in an install configuration file, encrypting them with AES-128-CBC when this protection is enabled. The encryption key and initialization ve",
+        "published": "2026-10-02T22:16:56.023"
+      },
+      {
+        "cve_id": "CVE-2026-94592",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "Armatura One's database initialization routine assigns a fixed, vendor-defined password to the database superuser account at creation time, rather than generating a unique password per installation. A",
+        "published": "2026-10-02T22:16:56.187"
+      },
+      {
+        "cve_id": "CVE-2026-51907",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Ghost from 2.5.0 before 6.64.0 contains a stored cross-site scripting vulnerability that allows attackers to inject untrusted scripts into post content via oEmbed photo responses. Attackers can host m",
-        "published": "2026-10-02T12:17:11.127"
+        "description": "In TaskingAI v0.3.0 in the QR Code Generator plugin save_base64_image function, a path traversal vulnerability allows attackers to write image files to arbitrary locations on the server filesystem by ",
+        "published": "2026-10-02T16:16:50.320"
       },
       {
-        "cve_id": "CVE-2026-104443",
+        "cve_id": "CVE-2026-104988",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "YesWiki before 4.6.7 contains an empty-filter scope bypass in the triples delete API that allows any authenticated user to delete or forge arbitrary semantic triples regardless of ownership. Attackers",
-        "published": "2026-10-02T12:17:15.323"
-      },
-      {
-        "cve_id": "CVE-2026-104448",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "YesWiki before 4.6.7 contains a cross-site request forgery vulnerability in the ajaxdeletepage handler, which permanently deletes a page on any GET request carrying a jsonp_callback parameter without ",
-        "published": "2026-10-02T12:17:16.163"
-      },
-      {
-        "cve_id": "CVE-2026-104456",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "YesWiki before 4.6.7 contains a second-order SQL injection vulnerability in AclService::updateRequestWithACL, where a stored username is concatenated unescaped into a read-ACL LIKE clause. Attackers c",
-        "published": "2026-10-02T12:17:17.490"
-      },
-      {
-        "cve_id": "CVE-2026-104410",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "SiYuan before 3.8.5 contains an information disclosure vulnerability that allows publish readers to read password-protected and publish-disabled database rows via the /api/export/preview endpoint. Att",
-        "published": "2026-10-02T12:17:10.520"
-      },
-      {
-        "cve_id": "CVE-2026-104416",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Ghost from 4.39.0 before 6.64.0 contains an information disclosure vulnerability in the Admin API that allows staff users to view secret tokens of pending staff invites. Staff users with invite viewin",
-        "published": "2026-10-02T12:17:11.420"
-      },
-      {
-        "cve_id": "CVE-2026-104422",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The block sync download path in Zebra (zebrad) before 6.3.0 reads a block's height from its unvalidated coinbase scriptSig and drops blocks that appear too far behind the tip before consensus validati",
-        "published": "2026-10-02T12:17:12.283"
-      },
-      {
-        "cve_id": "CVE-2026-104423",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Zebra (zebrad) before 6.2.1 contains an asymmetric resource consumption vulnerability that allows unauthenticated peers to stall block verification by pushing V6 mempool transactions with invalid Halo",
-        "published": "2026-10-02T12:17:12.433"
-      },
-      {
-        "cve_id": "CVE-2026-104430",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Zebra zebrad 4.5.0 and zebra-script 7.0.0 count P2SH redeem script signature operations in legacy mode rather than zcashd's accurate P2SH mode, overcounting CHECKMULTISIG preceded by OP_1 through OP_1",
-        "published": "2026-10-02T12:17:13.467"
-      },
-      {
-        "cve_id": "CVE-2026-104431",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Zebra before 6.0.0 contains a denial of service vulnerability that allows unauthenticated peers to stall Tokio workers by submitting mempool transactions requiring expensive synchronous script verific",
-        "published": "2026-10-02T12:17:13.610"
-      },
-      {
-        "cve_id": "CVE-2026-104460",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "YesWiki before 4.6.7 contains a blind SQL injection vulnerability in the {{newtextsearch}} action because Bazar list option ids are concatenated into SQL REGEXP/LIKE clauses in actions/newtextsearch.p",
-        "published": "2026-10-02T12:17:18.140"
-      },
-      {
-        "cve_id": "CVE-2026-104435",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "Zebra zebrad 4.4.0 and zebra-script 6.0.0 fail to enforce a ZIP-244 consensus rule, accepting V5 transparent inputs signed with SIGHASH_SINGLE that lack a corresponding output. Attackers can broadcast",
-        "published": "2026-10-02T12:17:14.063"
-      },
-      {
-        "cve_id": "CVE-2026-104437",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "Zebra before 4.4.0 contains a consensus divergence vulnerability in V5 transparent signature verification, computing a ZIP-244 digest for SIGHASH_SINGLE inputs lacking corresponding outputs instead of",
-        "published": "2026-10-02T12:17:14.357"
-      },
-      {
-        "cve_id": "CVE-2026-103552",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "Stack Overflow vulnerability in Apache Directory LDAP API.\n\n\n\nBefore binding, a client can send a deeply nested search filter that overflows the stack in the server's decoder.\n\n\n\nThis issue affects Ap",
-        "published": "2026-10-02T10:17:06.303"
-      },
-      {
-        "cve_id": "CVE-2026-104411",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "Ghost from 6.22.1 before 6.64.0 contains a stored cross-site scripting vulnerability that allows staff users to host scripts by uploading files served with extension-derived content types on the defau",
-        "published": "2026-10-02T12:17:10.690"
-      },
-      {
-        "cve_id": "CVE-2026-104413",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "Ghost from 5.94.0 before 6.64.0 contains a stored cross-site scripting vulnerability that allows staff users, including Contributors, to host arbitrary HTML by abusing bookmark card image fetching. At",
-        "published": "2026-10-02T12:17:10.980"
+        "description": "A flaw was found in Dogtag PKI (pki-core). The CMCAuthForEST authentication plugin fails open when an EST fullcmc enrollment request is submitted via BasicAuth without an end-user TLS client certifica",
+        "published": "2026-10-02T20:17:01.370"
       }
     ]
   },
