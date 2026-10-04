@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T16:10:15.748291+00:00",
+  "generated_at": "2026-10-04T22:36:54.303738+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,7 +7,7 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 38,
+        "value": 39,
         "score": 3.0,
         "max": 3
       },
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1733,
-    "recent_30d_count": 38,
+    "total_catalog_count": 1734,
+    "recent_30d_count": 39,
     "recent": [
+      {
+        "cve_id": "CVE-2026-88779",
+        "vendor": "Citrix",
+        "product": "NetScaler",
+        "name": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
+        "date_added": "2026-10-04",
+        "due_date": "2026-10-07",
+        "description": "Citrix NetScaler ADC (formerly Citrix ADC) and Citrix NetScaler Gateway (formerly Citrix Gateway) contain an improper restriction of operations within the bounds of a memory buffer vulnerability that ",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-102490",
         "vendor": "Zammad GmbH",
@@ -224,23 +234,13 @@
         "due_date": "2026-09-21",
         "description": "Linux Kernel contains an out-of-bounds write vulnerability in the ebtables SNAT target which allows an ARP sender hardware address rewrite to write directly into a nonlinear socket-buffer fragment bac",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2025-39682",
-        "vendor": "Linux",
-        "product": "Kernel",
-        "name": "Linux Kernel Improper Check for Unusual or Exceptional Conditions Vulnerability",
-        "date_added": "2026-09-18",
-        "due_date": "2026-09-21",
-        "description": "Linux Kernel contains an improper check for unusual or exceptional conditions vulnerability in the TLS receive path which allows a zero-length record retrieved from the rx_list to bypass the intended ",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 52,
+    "total": 62,
     "critical_count": 6,
-    "high_count": 18,
+    "high_count": 22,
     "cves": [
       {
         "cve_id": "CVE-2026-105134",
@@ -285,18 +285,25 @@
         "published": "2026-10-04T15:16:32.993"
       },
       {
-        "cve_id": "CVE-2026-96451",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Authorization Bypass Through User-Controlled Key vulnerability in Ultimate Member Ultimate Member ultimate-member allows Privilege Escalation.This issue affects Ultimate Member: from n/a through 2.13.",
-        "published": "2026-10-03T16:16:46.920"
-      },
-      {
         "cve_id": "CVE-2026-105123",
         "severity": "HIGH",
         "base_score": 8.8,
         "description": "W (vincent-peugnet/wcms) through 3.18.0 contains a remote code execution vulnerability that allows authenticated editors to write arbitrary files by abusing the unvalidated path in POST /api/v0/media/",
         "published": "2026-10-04T00:16:35.703"
+      },
+      {
+        "cve_id": "CVE-2026-105086",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "WWBN AVideo 12.4 through 29.2.0 contains a stored cross-site scripting vulnerability that allows authenticated uploaders to inject HTML by submitting doubly-encoded entities in video titles. Because s",
+        "published": "2026-10-04T16:16:30.183"
+      },
+      {
+        "cve_id": "CVE-2026-105089",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "WWBN AVideo through 29.2.0 contains a stored cross-site scripting vulnerability that allows users with upload permission to inject script by setting a malicious video trailer1 URL. The value is render",
+        "published": "2026-10-04T16:16:30.330"
       },
       {
         "cve_id": "CVE-2026-105210",
@@ -341,6 +348,27 @@
         "published": "2026-10-04T15:16:32.520"
       },
       {
+        "cve_id": "CVE-2026-105219",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Mammoth.js 1.3.0 before 1.12.3 contains a regular expression denial of service vulnerability in the style map tokeniser in lib/styles/parser/tokeniser.js due to overlapping regex alternatives. Attacke",
+        "published": "2026-10-04T18:16:34.777"
+      },
+      {
+        "cve_id": "CVE-2026-105216",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "go-micro before 6.0.0 contains an improper certificate validation vulnerability that allows network attackers to impersonate services because the shared TLS helper sets InsecureSkipVerify to true by d",
+        "published": "2026-10-04T18:16:34.287"
+      },
+      {
+        "cve_id": "CVE-2026-105218",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "gopay before 1.5.119 disables TLS certificate verification in defaultClient() in pkg/xhttp/client.go, allowing man-in-the-middle attackers to impersonate payment provider APIs. Attackers can present a",
+        "published": "2026-10-04T18:16:34.630"
+      },
+      {
         "cve_id": "CVE-2026-105133",
         "severity": "HIGH",
         "base_score": 7.3,
@@ -353,34 +381,6 @@
         "base_score": 7.3,
         "description": "A vulnerability was determined in SciPhi-AI R2R up to 3.6.6. This affects an unknown part of the component JWT Secret Handler. This manipulation of the argument DEFAULT_BCRYPT_SECRET_KEY/DEFAULT_NACL_",
         "published": "2026-10-04T13:16:54.773"
-      },
-      {
-        "cve_id": "CVE-2026-105148",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was identified in SciPhi-AI R2R up to 3.6.6. This vulnerability affects unknown code of the file py/shared/abstractions/llm.py of the component Retrieval Completion API Endpoint. Such ",
-        "published": "2026-10-04T13:16:55.733"
-      },
-      {
-        "cve_id": "CVE-2026-105149",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security flaw has been discovered in mooSocial up to 3.2.4. This issue affects some unknown processing of the file /stores/all-products. Performing a manipulation of the argument rating results in s",
-        "published": "2026-10-04T13:16:55.923"
-      },
-      {
-        "cve_id": "CVE-2026-105158",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was detected in RainyGao DocSys up to 2.02.85. The impacted element is the function BaseController.createDBForMysql of the file BaseController.java of the component Database Management",
-        "published": "2026-10-04T15:16:31.150"
-      },
-      {
-        "cve_id": "CVE-2026-105126",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "LaraDashboard before 1.4.8 contains an improper privilege management vulnerability that allows authenticated Admin users to escalate to Superadmin by editing or renaming roles. Attackers with role.edi",
-        "published": "2026-10-04T00:16:36.217"
       }
     ]
   },
