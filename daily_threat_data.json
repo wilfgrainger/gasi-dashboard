@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-05T03:05:06.688057+00:00",
+  "generated_at": "2026-10-05T10:59:01.579893+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
-        "score": 2.5,
+        "value": 3,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,24 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 107,
-    "critical_count": 6,
-    "high_count": 33,
+    "total": 175,
+    "critical_count": 3,
+    "high_count": 36,
     "cves": [
-      {
-        "cve_id": "CVE-2026-105134",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "A flaw has been found in Ahsay AhsayCBS up to 10.3.2. This vulnerability affects unknown code of the file /rps/api/json/UpdateReceivers.do of the component Replication Receiver. Executing a manipulati",
-        "published": "2026-10-04T07:16:33.480"
-      },
-      {
-        "cve_id": "CVE-2026-105135",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "A vulnerability has been found in InternLM MindSearch 0.1.0. This issue affects the function ExecutionAction.run of the file mindsearch/agent/graph.py of the component Planner Agent. The manipulation ",
-        "published": "2026-10-04T07:16:33.693"
-      },
       {
         "cve_id": "CVE-2026-105207",
         "severity": "CRITICAL",
@@ -269,13 +255,6 @@
         "base_score": 9.6,
         "description": "ZITADEL 3.x before 3.4.15 and 4.x before 4.17.1 contains an improper authorization vulnerability: when issuing passkey or passwordless enrollment codes, it checks only the organization in the x-zitade",
         "published": "2026-10-04T15:16:32.007"
-      },
-      {
-        "cve_id": "CVE-2026-103355",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Unlimited Elements Unlimited Elements For Elementor (Free Widgets, Addons, Templates) unlimited-el",
-        "published": "2026-10-04T09:16:38.820"
       },
       {
         "cve_id": "CVE-2026-105215",
@@ -381,6 +360,27 @@
         "base_score": 7.4,
         "description": "gopay before 1.5.119 disables TLS certificate verification in defaultClient() in pkg/xhttp/client.go, allowing man-in-the-middle attackers to impersonate payment provider APIs. Attackers can present a",
         "published": "2026-10-04T18:16:34.630"
+      },
+      {
+        "cve_id": "CVE-2026-105221",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "The gist RubyGem before 6.1.0 contains an improper certificate validation vulnerability that allows on-path attackers to intercept HTTPS traffic because http_connection in lib/gist.rb sets VERIFY_NONE",
+        "published": "2026-10-04T23:16:59.770"
+      },
+      {
+        "cve_id": "CVE-2026-105222",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "The alexpechkarev/google-maps Laravel package through 12.16 disables TLS certificate verification by default because the bundled config sets ssl_verify_peer to FALSE, which is passed to CURLOPT_SSL_VE",
+        "published": "2026-10-04T23:16:59.917"
+      },
+      {
+        "cve_id": "CVE-2026-105223",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "maclof kubernetes-client 0.17.0 before 0.32.0 disables TLS certificate verification in parseKubeconfig() and parseKubeconfigFile() when a kubeconfig lacks certificate-authority-data, ignoring insecure",
+        "published": "2026-10-05T01:16:28.480"
       }
     ]
   },
