@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-06T10:54:38.700385+00:00",
+  "generated_at": "2026-10-06T17:36:43.985484+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
-        "score": 2.0,
+        "value": 10,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,30 +238,79 @@
     ]
   },
   "nvd": {
-    "total": 690,
-    "critical_count": 2,
-    "high_count": 28,
+    "total": 727,
+    "critical_count": 10,
+    "high_count": 54,
     "cves": [
       {
-        "cve_id": "CVE-2026-88395",
+        "cve_id": "CVE-2026-105636",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Plane is an open-source project management tool. Prior to 1.4.0, the webhook delivery task in apps/api/plane/bgtasks/webhook_task.py calls requests.post() without allow_redirects=False and does not va",
+        "published": "2026-10-05T19:17:17.693"
+      },
+      {
+        "cve_id": "CVE-2026-104711",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "GouGuOA v6.0.5 and before is vulnerable to SQL Injection in /home/message/rubbish via the keywords parameter.",
-        "published": "2026-10-05T16:17:16.957"
+        "description": "Improper neutralization of special elements used in an expression language statement ('Expression Language Injection') vulnerability in Apache Struts. If the application is configured to use the legac",
+        "published": "2026-10-05T19:17:14.497"
       },
       {
-        "cve_id": "CVE-2026-79820",
+        "cve_id": "CVE-2026-105639",
         "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "A remote user validation failure vulnerability exists in HPE Integrated Lights-Out (iLO) 7 firmware.",
-        "published": "2026-10-05T15:17:22.290"
+        "base_score": 9.8,
+        "description": "Plane is an open-source project management tool. Prior to 1.4.0, Plane's signup flow creates a logged-in User row for any submitted email without an out-of-band ownership check, while User.email is un",
+        "published": "2026-10-05T19:17:18.213"
       },
       {
-        "cve_id": "CVE-2026-92931",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "CWE-918: Server-Side Request Forgery in the Progress @progress/sitefinity-nextjs-sdk npm package versions 15.1.8326 through 15.4.8637 may allow a remote attacker to make server-side requests to an att",
-        "published": "2026-10-05T14:17:21.323"
+        "cve_id": "CVE-2026-105641",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Plane is an open-source project management tool. Prior to 1.4.0, the deployments/aio/community/ and deployments/cli/community/ manifests provide fixed, publicly known SECRET_KEY and LIVE_SERVER_SECRET",
+        "published": "2026-10-05T19:17:18.560"
+      },
+      {
+        "cve_id": "CVE-2026-88424",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "FineAdmin v1.0 was discovered to contain a SQL injection vulnerability via the field/order parameter at ButtonService.GetListByFilter(). This vulnerability allows attackers to access sensitive databas",
+        "published": "2026-10-05T19:17:26.053"
+      },
+      {
+        "cve_id": "CVE-2026-97283",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Deserialization of Untrusted Data vulnerability in Liquid Web / StellarWP Advanced Post Manager advanced-post-manager allows Object Injection.This issue affects Advanced Post Manager: from n/a through",
+        "published": "2026-10-05T19:17:27.133"
+      },
+      {
+        "cve_id": "CVE-2026-105637",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Plane is an open-source project management tool. Prior to 1.4.0, ProjectBulkAssetEndpoint.post in apps/api/plane/app/views/asset/v2.py retrieves assets using id__in=asset_ids and workspace__slug=slug ",
+        "published": "2026-10-05T19:17:17.860"
+      },
+      {
+        "cve_id": "CVE-2026-103352",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in WP BASE WP BASE Booking wp-base-booking-of-appointments-services-and-events allows Blind SQL Injec",
+        "published": "2026-10-05T19:17:13.847"
+      },
+      {
+        "cve_id": "CVE-2026-105638",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Plane is an open-source project management tool. Prior to 1.4.0, Plane's magic-code email login uses a six-digit numeric OTP with approximately 20 bits of entropy. The verifier has no per-code failed-",
+        "published": "2026-10-05T19:17:18.030"
+      },
+      {
+        "cve_id": "CVE-2026-105640",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Plane is an open-source project management tool. Prior to 1.4.0, Plane trusts email addresses returned by Gitea OAuth and by self-managed GitLab OAuth deployments where email confirmation is disabled,",
+        "published": "2026-10-05T19:17:18.383"
       },
       {
         "cve_id": "CVE-2026-101919",
@@ -269,6 +318,48 @@
         "base_score": 8.8,
         "description": "A flaw was found in the HyperShift operator. The operator copies user-provided Kubernetes configuration (kubeconfig) secrets directly into the privileged control plane namespace without proper validat",
         "published": "2026-10-05T18:17:30.907"
+      },
+      {
+        "cve_id": "CVE-2026-104714",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Concurrent execution using shared resource with improper synchronization ('race condition') vulnerability in Apache Struts. Where a localized message formats a date or time argument, the formatter ret",
+        "published": "2026-10-05T19:17:14.883"
+      },
+      {
+        "cve_id": "CVE-2026-105642",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Ghost is a Node.js content management system. From 6.56.0 until 6.67.0, an image processing library bundled with Ghost contained a vulnerability in its SVG handling. Any staff user, including Contribu",
+        "published": "2026-10-05T19:17:18.733"
+      },
+      {
+        "cve_id": "CVE-2026-45524",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In isSystem of WifiPermissionsUtil.java, there is a possible sandbox escape due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges ",
+        "published": "2026-10-05T19:17:20.533"
+      },
+      {
+        "cve_id": "CVE-2026-55280",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In multiple locations, there is a possible out-of-bounds write due to uninitialized data. This could lead to remote escalation of privilege with no additional execution privileges needed. User interac",
+        "published": "2026-10-05T19:17:24.207"
+      },
+      {
+        "cve_id": "CVE-2026-58835",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "In cfg2prop of btif_storage.cc, there is a possible out-of-bounds write due to a heap buffer overflow. This could lead to remote code execution with no additional execution privileges needed. User int",
+        "published": "2026-10-05T19:17:24.650"
+      },
+      {
+        "cve_id": "CVE-2026-100511",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Deserialization of Untrusted Data vulnerability in Vektor Inc. VK Google Job Posting Manager vk-google-job-posting-manager allows Object Injection.This issue affects VK Google Job Posting Manager: fro",
+        "published": "2026-10-05T20:17:07.177"
       },
       {
         "cve_id": "CVE-2026-104979",
@@ -290,97 +381,6 @@
         "base_score": 8.5,
         "description": "Plane is an open-source project management tool. Prior to 1.4.0, DuplicateAssetEndpoint fetches a source FileAsset without limiting it to the caller's workspace, allowing cross-workspace asset duplica",
         "published": "2026-10-05T18:17:32.113"
-      },
-      {
-        "cve_id": "CVE-2026-104978",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Plane is an open-source project management tool. Prior to 1.4.0, Plane's project invitation list endpoint is accessible to any authenticated user who knows the workspace slug and project ID, while the",
-        "published": "2026-10-05T18:17:33.247"
-      },
-      {
-        "cve_id": "CVE-2026-104970",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Plane is an open-source project management tool. From 0.13 until 1.4.0, InstanceAdminSignUpEndpoint in apps/api/plane/license/api/views/admin.py:89-117, 173-229 uses InstanceAdmin.objects.first() for ",
-        "published": "2026-10-05T17:17:12.937"
-      },
-      {
-        "cve_id": "CVE-2026-104905",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "FacturaScripts before version 2026.7 contains a PHP object injection vulnerability in WidgetSelect::processFormData() that allows authenticated attackers to trigger unserialize() on raw POST data with",
-        "published": "2026-10-05T18:17:31.623"
-      },
-      {
-        "cve_id": "CVE-2026-104974",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Plane is an open-source project management tool. Prior to 1.4.0, a user whose account has been deactivated by setting is_active=False can still log in with existing credentials. Successful authenticat",
-        "published": "2026-10-05T18:17:32.473"
-      },
-      {
-        "cve_id": "CVE-2026-77805",
-        "severity": "HIGH",
-        "base_score": 7.9,
-        "description": "In Progress\u00ae Telerik\u00ae Fiddler\u00ae Classic for Windows, versions prior to v6.0.20262.10021, the integrity check applied to the external helper tools launched by the application is insufficient. Before exe",
-        "published": "2026-10-05T13:16:54.740"
-      },
-      {
-        "cve_id": "CVE-2026-12171",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "auto-changelog before 2.6.1 merges configuration from inside the target repository (the .auto-changelog file and the auto-changelog key in package.json) into its options, and honors security-sensitive",
-        "published": "2026-10-05T17:17:14.510"
-      },
-      {
-        "cve_id": "CVE-2026-104977",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Plane is an open-source project management tool. Prior to 1.4.0, the fix for CVE-2026-27706 and GHSA-jcc6-f9v6-f7jw, an SSRF in work-item link unfurling shipped in v1.2.2, remains incomplete in the v1",
-        "published": "2026-10-05T18:17:33.080"
-      },
-      {
-        "cve_id": "CVE-2026-104973",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "Plane is an open-source project management tool. Prior to 1.4.0, the fix for CVE-2026-30242 validates webhook IP addresses only when the webhook is created in apps/api/plane/app/serializers/webhook.py",
-        "published": "2026-10-05T18:17:32.290"
-      },
-      {
-        "cve_id": "CVE-2026-105628",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "Plane is an open-source project management tool. Prior to 1.4.0, Plane's OAuth avatar synchronization flow fetches avatar_url from provider user data through a server-side HTTP request without interna",
-        "published": "2026-10-05T18:17:35.917"
-      },
-      {
-        "cve_id": "CVE-2026-104891",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "mppx-condition-gate provides conditional free-access wrappers for mppx payment methods. Prior to @insumermodel/mppx-condition-gate 3.0.0 and @insumermodel/mppx-token-gate 1.0.4, the packages read a wa",
-        "published": "2026-10-05T16:17:06.447"
-      },
-      {
-        "cve_id": "CVE-2026-105631",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Plane is an open-source project management tool. Prior to 1.4.0, WorkspaceFileAssetEndpoint.get and WorkspaceAssetDownloadEndpoint.get resolve FileAsset records within a workspace without checking mem",
-        "published": "2026-10-05T18:17:36.427"
-      },
-      {
-        "cve_id": "CVE-2026-105290",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was determined in feelec-yishu feelcrm-os 1.0.0. This affects an unknown part of the file App/Feelcrm/Index/Controller/GoogleController.class.php of the component getCurlData Endpoint.",
-        "published": "2026-10-05T11:16:46.807"
-      },
-      {
-        "cve_id": "CVE-2026-105307",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was detected in Casdoor up to 3.161.1. Affected is the function ApiFilter of the file routers/authz_filter.go of the component API Endpoint. Performing a manipulation results in missin",
-        "published": "2026-10-05T12:17:09.380"
       }
     ]
   },
