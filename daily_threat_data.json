@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-05T10:59:01.579893+00:00",
+  "generated_at": "2026-10-06T01:04:06.986165+00:00",
   "threat_score": {
-    "score": 6.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.0,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
-        "score": 2.0,
+        "value": 0,
+        "score": 1.0,
         "max": 3
       },
       {
@@ -238,65 +238,58 @@
     ]
   },
   "nvd": {
-    "total": 175,
-    "critical_count": 3,
-    "high_count": 36,
+    "total": 413,
+    "critical_count": 0,
+    "high_count": 28,
     "cves": [
       {
-        "cve_id": "CVE-2026-105207",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "ZITADEL 3.0.0 through 3.4.15 and 4.0.0 before 4.17.3 creates links between user accounts and external identity providers without verifying a primary factor or the caller's permission, including on ide",
-        "published": "2026-10-04T15:16:31.677"
-      },
-      {
-        "cve_id": "CVE-2026-105209",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "ZITADEL 3.x before 3.4.15 and 4.x before 4.17.1 contains an improper authorization vulnerability: when issuing passkey or passwordless enrollment codes, it checks only the organization in the x-zitade",
-        "published": "2026-10-04T15:16:32.007"
-      },
-      {
-        "cve_id": "CVE-2026-105215",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "ZITADEL before 3.4.14 and 4.x before 4.16.2 contains an authentication bypass in the hosted Login V1 UI because the 'external account not found' registration endpoint trusts client-supplied external i",
-        "published": "2026-10-04T15:16:32.993"
-      },
-      {
-        "cve_id": "CVE-2026-105086",
+        "cve_id": "CVE-2026-20586",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "WWBN AVideo 12.4 through 29.2.0 contains a stored cross-site scripting vulnerability that allows authenticated uploaders to inject HTML by submitting doubly-encoded entities in video titles. Because s",
-        "published": "2026-10-04T16:16:30.183"
+        "base_score": 8.8,
+        "description": "In vdec, there is a possible out of bounds write due to a missing bounds check. This could lead to remote escalation of privilege with no additional execution privileges needed. User interaction is ne",
+        "published": "2026-10-05T02:16:53.803"
       },
       {
-        "cve_id": "CVE-2026-105089",
+        "cve_id": "CVE-2026-104389",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "WWBN AVideo through 29.2.0 contains a stored cross-site scripting vulnerability that allows users with upload permission to inject script by setting a malicious video trailer1 URL. The value is render",
-        "published": "2026-10-04T16:16:30.330"
+        "base_score": 8.5,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Sirv Sirv sirv allows Blind SQL Injection.This issue affects Sirv: from n/a through 8.2.5.",
+        "published": "2026-10-05T09:17:07.657"
       },
       {
-        "cve_id": "CVE-2026-105210",
+        "cve_id": "CVE-2026-20521",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "ZITADEL 3.x before 3.4.15 and 4.x before 4.17.1 contains a missing authentication flaw in the hosted Login V1 UI, whose second-factor enrollment and initialization handlers act on an identify-only ses",
-        "published": "2026-10-04T15:16:32.170"
+        "base_score": 8.4,
+        "description": "In Video HAL, there is a possible escalation of privilege due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interacti",
+        "published": "2026-10-05T02:16:50.660"
       },
       {
-        "cve_id": "CVE-2026-105213",
+        "cve_id": "CVE-2026-20522",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "ZITADEL 4.x before 4.17.1 does not check an organization's inactive state during Login V2 authentication, verifying only the individual user's status. Users of a deactivated organization who hold vali",
-        "published": "2026-10-04T15:16:32.687"
+        "base_score": 8.4,
+        "description": "In neuropilot, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction ",
+        "published": "2026-10-05T02:16:50.793"
       },
       {
-        "cve_id": "CVE-2026-105211",
+        "cve_id": "CVE-2026-20523",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "ZITADEL before 4.17.1 contains an authentication bypass vulnerability in Login V2 that allows unauthenticated attackers to take over accounts by obtaining OTP codes via the returnCode delivery type. A",
-        "published": "2026-10-04T15:16:32.333"
+        "base_score": 8.4,
+        "description": "In neuropilot, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction ",
+        "published": "2026-10-05T02:16:50.917"
+      },
+      {
+        "cve_id": "CVE-2026-20524",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "In apu, there is a possible memory corruption due to improper input validation. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not",
+        "published": "2026-10-05T02:16:51.040"
+      },
+      {
+        "cve_id": "CVE-2026-20531",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "In apu, there is a possible memory corruption due to use after free. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for",
+        "published": "2026-10-05T02:16:51.907"
       },
       {
         "cve_id": "CVE-2026-105293",
@@ -306,41 +299,6 @@
         "published": "2026-10-05T01:16:28.780"
       },
       {
-        "cve_id": "CVE-2026-105220",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Twine 2 desktop through 2.12.0 contains a cross-site scripting vulnerability in importStories() that executes markup from imported story files in the editor window. Attackers can craft a story file wh",
-        "published": "2026-10-04T23:16:59.627"
-      },
-      {
-        "cve_id": "CVE-2026-105208",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "ZITADEL 4.x before 4.17.3 and 3.x through 3.4.15 protects IdP intent tokens with unauthenticated, malleable encryption, allowing authenticated users to tamper with their own token so it is accepted fo",
-        "published": "2026-10-04T15:16:31.843"
-      },
-      {
-        "cve_id": "CVE-2026-97307",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Insertion of Sensitive Information Into Sent Data vulnerability in StylemixThemes Cost Calculator Builder cost-calculator-builder allows Retrieve Embedded Sensitive Data.This issue affects Cost Calcul",
-        "published": "2026-10-04T11:16:33.073"
-      },
-      {
-        "cve_id": "CVE-2026-105212",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "ZITADEL 3.x before 3.4.14 and 4.x before 4.16.2 contains an authentication bypass in the hosted Login V1 and Login V2 UIs that accepts passkey or other authenticator enrollment on identify-only login ",
-        "published": "2026-10-04T15:16:32.520"
-      },
-      {
-        "cve_id": "CVE-2026-105219",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Mammoth.js 1.3.0 before 1.12.3 contains a regular expression denial of service vulnerability in the style map tokeniser in lib/styles/parser/tokeniser.js due to overlapping regex alternatives. Attacke",
-        "published": "2026-10-04T18:16:34.777"
-      },
-      {
         "cve_id": "CVE-2026-105295",
         "severity": "HIGH",
         "base_score": 7.5,
@@ -348,32 +306,32 @@
         "published": "2026-10-05T01:16:29.063"
       },
       {
-        "cve_id": "CVE-2026-105216",
+        "cve_id": "CVE-2026-20519",
         "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "go-micro before 6.0.0 contains an improper certificate validation vulnerability that allows network attackers to impersonate services because the shared TLS helper sets InsecureSkipVerify to true by d",
-        "published": "2026-10-04T18:16:34.287"
+        "base_score": 7.5,
+        "description": "In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the atta",
+        "published": "2026-10-05T02:16:50.393"
       },
       {
-        "cve_id": "CVE-2026-105218",
+        "cve_id": "CVE-2026-20520",
         "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "gopay before 1.5.119 disables TLS certificate verification in defaultClient() in pkg/xhttp/client.go, allowing man-in-the-middle attackers to impersonate payment provider APIs. Attackers can present a",
-        "published": "2026-10-04T18:16:34.630"
+        "base_score": 7.5,
+        "description": "In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the atta",
+        "published": "2026-10-05T02:16:50.540"
       },
       {
-        "cve_id": "CVE-2026-105221",
+        "cve_id": "CVE-2026-20526",
         "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "The gist RubyGem before 6.1.0 contains an improper certificate validation vulnerability that allows on-path attackers to intercept HTTPS traffic because http_connection in lib/gist.rb sets VERIFY_NONE",
-        "published": "2026-10-04T23:16:59.770"
+        "base_score": 7.5,
+        "description": "In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the atta",
+        "published": "2026-10-05T02:16:51.283"
       },
       {
-        "cve_id": "CVE-2026-105222",
+        "cve_id": "CVE-2026-105314",
         "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "The alexpechkarev/google-maps Laravel package through 12.16 disables TLS certificate verification by default because the bundled config sets ssl_verify_peer to FALSE, which is passed to CURLOPT_SSL_VE",
-        "published": "2026-10-04T23:16:59.917"
+        "base_score": 7.5,
+        "description": "Papermerge 3.5.3 allows remote code execution by a standard user via directory traversal in a /api/documents/upload call. A Python .pth file can be written to site-packages, and its code is executed u",
+        "published": "2026-10-05T08:17:15.797"
       },
       {
         "cve_id": "CVE-2026-105223",
@@ -381,6 +339,48 @@
         "base_score": 7.4,
         "description": "maclof kubernetes-client 0.17.0 before 0.32.0 disables TLS certificate verification in parseKubeconfig() and parseKubeconfigFile() when a kubeconfig lacks certificate-authority-data, ignoring insecure",
         "published": "2026-10-05T01:16:28.480"
+      },
+      {
+        "cve_id": "CVE-2026-105294",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "Legcord 1.1.0 through 1.3.0 contains a configuration injection vulnerability that allows script in the Discord page to write any config key via the window.legcord settings.setConfig bridge. Attackers ",
+        "published": "2026-10-05T01:16:28.923"
+      },
+      {
+        "cve_id": "CVE-2026-105172",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was detected in itsourcecode Online Admission System 1.0. Affected by this issue is some unknown functionality of the file /login1.php. Performing a manipulation of the argument User r",
+        "published": "2026-10-05T01:16:27.157"
+      },
+      {
+        "cve_id": "CVE-2026-105175",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was found in SourceCodester Drug Recommendation System 1.0. This issue affects some unknown processing of the file /Auth/add_student.php of the component Student Registration. The mani",
+        "published": "2026-10-05T01:16:28.190"
+      },
+      {
+        "cve_id": "CVE-2026-105182",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A security flaw has been discovered in SourceCodester Online Reviewer Management System 1.0. Impacted is an unknown function of the file /reviewer_0/admins/assessments/activities/btn_functions.php?act",
+        "published": "2026-10-05T03:16:38.543"
+      },
+      {
+        "cve_id": "CVE-2026-105183",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A weakness has been identified in itsourcecode Online Admission System 1.0. The affected element is an unknown function of the file /admin/confirm.php. This manipulation of the argument schedid causes",
+        "published": "2026-10-05T03:16:38.717"
+      },
+      {
+        "cve_id": "CVE-2026-105184",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A security vulnerability has been detected in itsourcecode Online Admission System 1.0. The impacted element is an unknown function of the file /admin/creteria.php. Such manipulation of the argument I",
+        "published": "2026-10-05T03:16:38.890"
       }
     ]
   },
