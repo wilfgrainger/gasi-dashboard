@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-10-08T11:02:12.640343+00:00",
+  "generated_at": "2026-10-08T18:10:44.562993+00:00",
   "threat_score": {
-    "score": 6.5,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 35,
+        "value": 40,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
-        "score": 2.5,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -32,9 +32,59 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1734,
-    "recent_30d_count": 35,
+    "total_catalog_count": 1739,
+    "recent_30d_count": 40,
     "recent": [
+      {
+        "cve_id": "CVE-2015-5477",
+        "vendor": "ISC",
+        "product": "BIND",
+        "name": " ISC BIND Data Processing Errors Vulnerability",
+        "date_added": "2026-10-08",
+        "due_date": "2026-10-11",
+        "description": "ISC BIND contains a data processing errors vulnerability that could allow remote attackers to cause a denial of service via TKEY queries.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2016-3081",
+        "vendor": "Apache",
+        "product": "Struts",
+        "name": "Apache Struts Command Injection Vulnerability",
+        "date_added": "2026-10-08",
+        "due_date": "2026-10-11",
+        "description": "Apache Struts contains a command injection vulnerability that could allow remote attackers to execute arbitrary code via method:prefix when Dynamic Method Invocation is enabled.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2023-22894",
+        "vendor": "Strapi",
+        "product": "Strapi",
+        "name": "Strapi Cleartext Storage of Sensitive Information Vulnerability",
+        "date_added": "2026-10-08",
+        "due_date": "2026-10-11",
+        "description": "Strapi contains a cleartext storage of sensitive information vulnerability that could allow attackers with access to the admin panel to discover sensitive user details via the query filter. The impact",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2021-3199",
+        "vendor": "ONLYOFFICE",
+        "product": "Docs",
+        "name": "ONLYOFFICE Docs Server Path Traversal Vulnerability",
+        "date_added": "2026-10-08",
+        "due_date": "2026-10-11",
+        "description": "ONLYOFFICE Docs contains a path traversal vulnerability that can occur when JWT is used, via a /.. sequence in an image upload parameter and could allow for remote code execution.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2015-3306",
+        "vendor": "ProFTPD",
+        "product": "ProFTPD",
+        "name": "ProFTPD Improper Access Control Vulnerability",
+        "date_added": "2026-10-08",
+        "due_date": "2026-10-11",
+        "description": "ProFTPD contains an improper access control vulnerability that could allow remote attackers to read and write to arbitrary files via the site cpfr and site cpto commands.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-88779",
         "vendor": "Citrix",
@@ -184,203 +234,153 @@
         "due_date": "2026-09-25",
         "description": "F5 BIG-IP APM contains a heap-based buffer overflow vulnerability when access policy and an OAuth profile are configured on a virtual server. This vulnerability could allow an unauthenticated attacker",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-93616",
-        "vendor": "Check Point",
-        "product": "Multiple Products",
-        "name": "Check Point Multiple Products Path Traversal Vulnerability",
-        "date_added": "2026-09-22",
-        "due_date": "2026-09-25",
-        "description": "Check Point Security Management Server, Multi-Domain Security Management Server, Log Server, Multi-Domain Log Server, and SmartEvent contain a path traversal vulnerability that allows an unauthenticat",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-85102",
-        "vendor": "Check Point",
-        "product": "Multiple Products",
-        "name": "Check Point Multiple Products Improper Certificate Validation Vulnerability",
-        "date_added": "2026-09-22",
-        "due_date": "2026-09-25",
-        "description": "Check Point Security Gateway and Check Point Spark Firewall using Site to Site VPN or Remote Access VPN contain an improper certificate validation vulnerability which could allow an unauthenticated re",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-7273",
-        "vendor": "Zyxel",
-        "product": "GS1900 Series Switches",
-        "name": "Zyxel GS1900 Series Switches Stack-Based Buffer Overflow Vulnerability",
-        "date_added": "2026-09-21",
-        "due_date": "2026-09-24",
-        "description": "Zyxel GS1900 series switches contain a stack-based buffer overflow vulnerability in the CGI program which could allow a LAN-based, unauthenticated attacker to exploit the flaw and potentially execute ",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2025-39964",
-        "vendor": "Linux",
-        "product": "Kernel",
-        "name": "Linux Kernel Race Condition Vulnerability",
-        "date_added": "2026-09-18",
-        "due_date": "2026-09-21",
-        "description": "Linux Kernel contains a race condition vulnerability which allows concurrent writes to the same AF_ALG socket causing data to be unpredictably interleaved and creating inconsistencies in the socket's ",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-53266",
-        "vendor": "Linux",
-        "product": "Kernel",
-        "name": "Linux Kernel Out-of-Bounds Write Vulnerability",
-        "date_added": "2026-09-18",
-        "due_date": "2026-09-21",
-        "description": "Linux Kernel contains an out-of-bounds write vulnerability in the ebtables SNAT target which allows an ARP sender hardware address rewrite to write directly into a nonlinear socket-buffer fragment bac",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 351,
-    "critical_count": 8,
-    "high_count": 26,
+    "total": 378,
+    "critical_count": 1,
+    "high_count": 21,
     "cves": [
       {
-        "cve_id": "CVE-2026-102255",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "A Pre-authentication SSRF vulnerability exists in the SMA1000 Appliance Work Place interface due to an unintended alternate access path. By abusing this path, a remote unauthenticated attacker could p",
-        "published": "2026-10-07T13:17:16.387"
-      },
-      {
-        "cve_id": "CVE-2025-70518",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "The management portal's diagnostic ping tool of Fanvil x7a firmware version 2.6.0.1182 does not handle user supplied input securely. The lack of secure user input handling allows any unauthenticated a",
-        "published": "2026-10-07T15:16:53.183"
-      },
-      {
-        "cve_id": "CVE-2025-70521",
+        "cve_id": "CVE-2026-76268",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "The management portal's diagnostic ping tool of Fanvil x7a firmware version 2.6.0.1182 does not handle user supplied input securely. The lack of secure user input handling allows any unauthenticated a",
-        "published": "2026-10-07T15:16:55.003"
+        "description": "In Splunk Enterprise versions below 10.4.3 and 10.2.7, an unauthenticated user with network access to the Patroni Representational State Transfer (REST) Application Programming Interface (API) on a se",
+        "published": "2026-10-07T21:17:17.607"
       },
       {
-        "cve_id": "CVE-2026-107204",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "LMCache through 0.5.5 contains an unauthenticated remote code execution vulnerability that allows remote attackers to execute Python code by posting scripts to the /run_script endpoint. Attackers can ",
-        "published": "2026-10-07T16:17:45.113"
-      },
-      {
-        "cve_id": "CVE-2026-96408",
-        "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "A code injection vulnerability exists in the upgrade script of Movable Type, which may allow an unauthenticated attacker to execute an arbitrary Perl script or an SQL query on the affected product.",
-        "published": "2026-10-07T11:17:20.620"
-      },
-      {
-        "cve_id": "CVE-2026-107206",
-        "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "LMCache through 0.5.5 contains a missing authentication vulnerability in the multiprocess mode HTTP server that allows remote unauthenticated attackers to access management endpoints listening on all ",
-        "published": "2026-10-07T16:17:45.447"
-      },
-      {
-        "cve_id": "CVE-2025-70516",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The websocket handler of Fanvil x7a firmware version 2.6.0.1182 does not enforce proper authentication restrictions against sessionless users. The lack of restrictions grants anyone the ability to vie",
-        "published": "2026-10-07T15:16:52.310"
-      },
-      {
-        "cve_id": "CVE-2026-107202",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A command injection vulnerability exists in the h-ui (version v0.0.25 and below) administrative API due to improper validation of the listen configuration field. When an authenticated administrator su",
-        "published": "2026-10-07T15:17:20.090"
-      },
-      {
-        "cve_id": "CVE-2026-106059",
+        "cve_id": "CVE-2026-76282",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "GitAhead through 2.7.1 on macOS contains a command injection vulnerability that allows attackers to execute shell commands by crafting repository filenames interpolated unescaped into the Show in Find",
-        "published": "2026-10-07T12:17:09.100"
+        "description": "Improper Control of a Resource Through its Lifetime. Splunk addressed multiple internally identified vulnerabilities in Splunk Enterprise versions 10.4.3, 10.2.7, 10.0.10, and 9.4.15. The vulnerabilit",
+        "published": "2026-10-07T21:17:19.700"
       },
       {
-        "cve_id": "CVE-2026-106558",
+        "cve_id": "CVE-2026-105816",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Backstage is an open framework for building developer portals. Prior to 1.14.8, 1.15.6, and 2.0.1, the @backstage/plugin-techdocs-node package improperly validated mapping-style markdown_extensions co",
-        "published": "2026-10-07T15:17:15.713"
+        "base_score": 8.0,
+        "description": "Vault and Vault Enterprise did not consistently verify that stored plugin catalog entries reference binaries within the configured plugin directory. When Vault uses Shamir seals and has an external pl",
+        "published": "2026-10-07T22:17:02.673"
       },
       {
-        "cve_id": "CVE-2026-103668",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "An SQL Injection vulnerability exists in the Site Search function of Movable Type, which may allow an unauthenticated attacker to execute an arbitrary SQL query on the affected product.",
-        "published": "2026-10-07T11:17:09.357"
-      },
-      {
-        "cve_id": "CVE-2026-107205",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "LMCache through 0.5.5 contains a missing authentication vulnerability in the multiprocess coordinator that allows remote unauthenticated attackers to access its HTTP fleet control API listening on all",
-        "published": "2026-10-07T16:17:45.283"
-      },
-      {
-        "cve_id": "CVE-2026-77214",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "libexpat before commit 13c5f63 contains a heap buffer over-read vulnerability in xmlparse.c. XML_ParseBuffer advances the parse buffer end with parser->m_bufferEnd += len using a caller-supplied lengt",
-        "published": "2026-10-07T15:17:53.327"
-      },
-      {
-        "cve_id": "CVE-2026-107181",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Telegram Desktop before 7.2.9 contains an IPC record-separator injection vulnerability in Core::Sandbox that allows remote attackers to inject OPEN: records via crafted tg:// links containing unescape",
-        "published": "2026-10-07T14:17:08.807"
-      },
-      {
-        "cve_id": "CVE-2026-107183",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "llama.cpp before b11393 contains a use-after-free and double free vulnerability in common_chat_peg_mapper::map that allows unauthenticated remote attackers to corrupt heap memory via a dangling curren",
-        "published": "2026-10-07T14:17:09.003"
-      },
-      {
-        "cve_id": "CVE-2026-46570",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "In NTFS-3G before 2026.7.7, a heap buffer overflow exists in ntfs_index_walk_down() in libntfs-3g/index.c that allows an attacker to corrupt heap memory in the SUID-root ntfs-3g binary by crafting a m",
-        "published": "2026-10-07T15:17:21.010"
-      },
-      {
-        "cve_id": "CVE-2026-106057",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "patool before 4.0.6 contains an OS command injection vulnerability on Windows because shell_quote_nt fails to escape cmd.exe metacharacters or embedded double quotes in archive filenames. Attackers ca",
-        "published": "2026-10-07T12:17:08.730"
-      },
-      {
-        "cve_id": "CVE-2026-102256",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Post-authentication Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability has been identified in the SMA1000 appliance which in specific conditions c",
-        "published": "2026-10-07T13:17:16.553"
-      },
-      {
-        "cve_id": "CVE-2026-106510",
+        "cve_id": "CVE-2026-107352",
         "severity": "HIGH",
         "base_score": 7.7,
-        "description": "Backstage is an open framework for building developer portals. Prior to 1.14.6, the @backstage/plugin-techdocs-node package is affected by remote code execution via crafted markdown_extensions in tech",
-        "published": "2026-10-07T15:17:12.430"
+        "description": "Missing authorization checks in Amazon Athena engine version 3 request handling could have allowed an authenticated user to read limited query metadata (AWS account identifiers and SQL statement text)",
+        "published": "2026-10-07T21:17:15.373"
       },
       {
-        "cve_id": "CVE-2026-106556",
+        "cve_id": "CVE-2026-76266",
         "severity": "HIGH",
         "base_score": 7.7,
-        "description": "Backstage is an open framework for building developer portals. Prior to 1.14.6, the @backstage/plugin-techdocs-node package is affected by configuration bypass in techdocs mkdocs.yml sanitization. Ins",
-        "published": "2026-10-07T15:17:12.960"
+        "description": "In Splunk Enterprise versions below 10.4.3, 10.2.7, 10.0.10, and 9.4.15 on Linux, a local user who can run commands as the user account running Splunk Enterprise could cause an affected Linux package ",
+        "published": "2026-10-07T21:17:17.310"
+      },
+      {
+        "cve_id": "CVE-2026-76283",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "Protection Mechanism Failure. Splunk addressed multiple internally identified vulnerabilities in Splunk Enterprise versions 10.4.3, 10.2.7, 10.0.10, and 9.4.15. The vulnerabilities are grouped by Comm",
+        "published": "2026-10-07T21:17:19.987"
+      },
+      {
+        "cve_id": "CVE-2026-107212",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Excelize is a Go language library for reading and writing Microsoft Excel spreadsheets. From 2.1.0 to 2.11.0, Rows.Columns accepts a look-ahead row number above TotalRows without applying the limit en",
+        "published": "2026-10-07T18:17:18.670"
+      },
+      {
+        "cve_id": "CVE-2026-107214",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Excelize is a Go language library for reading and writing Microsoft Excel spreadsheets. From 2.3.1 to 2.11.0, the decryption dispatch performs insufficient structural and parameter validation before s",
+        "published": "2026-10-07T18:17:19.040"
+      },
+      {
+        "cve_id": "CVE-2026-107215",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Excelize is a Go language library for reading and writing Microsoft Excel spreadsheets. From 2.3.1 to 2.11.0, extractPart allocates a byte slice directly from an attacker-controlled CFB directory-entr",
+        "published": "2026-10-07T18:17:19.213"
+      },
+      {
+        "cve_id": "CVE-2026-107216",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Excelize is a Go language library for reading and writing Microsoft Excel spreadsheets. From 2.8.1 to 2.11.0, ANCHORARRAY recursively calls the exported CalcCellValue function, creating a fresh calcul",
+        "published": "2026-10-07T18:17:19.400"
+      },
+      {
+        "cve_id": "CVE-2026-56851",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Nickname profile can panic with an out-of-bounds slice error when transforming crafted input into a short destination buffer.",
+        "published": "2026-10-07T18:17:20.903"
+      },
+      {
+        "cve_id": "CVE-2026-96335",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Missing Authorization vulnerability in WPMU DEV Forminator allows Exploiting Incorrectly Configured Access Control Security Levels.\n\nThis issue affects Forminator: from n/a through 1.57.2.",
+        "published": "2026-10-07T18:17:32.043"
+      },
+      {
+        "cve_id": "CVE-2026-103371",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Insertion of Sensitive Information into Log File in Apache Geode Web Management.\n\n\n\nThis issue affects Apache Geode: from 2.0.0 before 2.0.3.\n\n\n\nUsers are recommended to upgrade to version 2.0.3, whic",
+        "published": "2026-10-07T19:17:31.453"
+      },
+      {
+        "cve_id": "CVE-2026-107217",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Excelize is a Go language library for reading and writing Microsoft Excel spreadsheets. From 2.0.0 to 2.11.0 in github.com/xuri/excelize/v2 and from 1.1.0 to 1.4.1 in github.com/xuri/excelize, ColumnN",
+        "published": "2026-10-07T19:17:33.957"
+      },
+      {
+        "cve_id": "CVE-2026-107219",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Excelize is a Go language library for reading and writing Microsoft Excel spreadsheets. From 2.3.1 to 2.11.0, agile decryption accepts an attacker-controlled spinCount and performs that many password-",
+        "published": "2026-10-07T19:17:34.287"
+      },
+      {
+        "cve_id": "CVE-2026-107161",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A heap-based buffer overflow flaw was found in Cyrus SASL. The add_to_challenge() function in the DIGEST-MD5 plugin computes the size of the buffer needed for a challenge/response field before DIGEST-",
+        "published": "2026-10-07T20:17:10.977"
+      },
+      {
+        "cve_id": "CVE-2026-107227",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The AsyncHttpClient (AHC) library allows Java applications to easily execute HTTP requests and asynchronously process HTTP responses. From 2.2.0 until 3.0.14, WebSocket permessage-deflate decompressio",
+        "published": "2026-10-07T21:17:14.283"
+      },
+      {
+        "cve_id": "CVE-2026-107232",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The AsyncHttpClient (AHC) library allows Java applications to easily execute HTTP requests and asynchronously process HTTP responses. Prior to 3.0.12 on 3.x and 2.16.1 on 2.x, the client infers that a",
+        "published": "2026-10-07T22:17:03.497"
+      },
+      {
+        "cve_id": "CVE-2026-82627",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Uncanny Automator \u2013 AI + Automation for WordPress | AI Agent, AI Page Builder, Free AI Usage Included plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and includin",
+        "published": "2026-10-08T02:16:54.263"
+      },
+      {
+        "cve_id": "CVE-2026-107230",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "The AsyncHttpClient (AHC) library allows Java applications to easily execute HTTP requests and asynchronously process HTTP responses. From 2.0.0 until 3.0.14, connection-pool partitioning still omits ",
+        "published": "2026-10-07T22:17:03.133"
       }
     ]
   },
