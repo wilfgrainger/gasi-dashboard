@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T03:51:08.952635+00:00",
+  "generated_at": "2026-10-08T11:02:12.640343+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
+        "value": 8,
         "score": 2.5,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 333,
-    "critical_count": 5,
-    "high_count": 25,
+    "total": 351,
+    "critical_count": 8,
+    "high_count": 26,
     "cves": [
       {
         "cve_id": "CVE-2026-102255",
@@ -250,11 +250,25 @@
         "published": "2026-10-07T13:17:16.387"
       },
       {
-        "cve_id": "CVE-2026-105192",
+        "cve_id": "CVE-2025-70518",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "The management portal's diagnostic ping tool of Fanvil x7a firmware version 2.6.0.1182 does not handle user supplied input securely. The lack of secure user input handling allows any unauthenticated a",
+        "published": "2026-10-07T15:16:53.183"
+      },
+      {
+        "cve_id": "CVE-2025-70521",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "LMCache multiprocess mode, also called distributed mode, opens an unauthenticated ZeroMQ ROUTER so worker processes can register and share KV cache blocks. Messages on that socket are msgpack. Extensi",
-        "published": "2026-10-07T10:17:32.647"
+        "description": "The management portal's diagnostic ping tool of Fanvil x7a firmware version 2.6.0.1182 does not handle user supplied input securely. The lack of secure user input handling allows any unauthenticated a",
+        "published": "2026-10-07T15:16:55.003"
+      },
+      {
+        "cve_id": "CVE-2026-107204",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "LMCache through 0.5.5 contains an unauthenticated remote code execution vulnerability that allows remote attackers to execute Python code by posting scripts to the /run_script endpoint. Attackers can ",
+        "published": "2026-10-07T16:17:45.113"
       },
       {
         "cve_id": "CVE-2026-96408",
@@ -264,39 +278,25 @@
         "published": "2026-10-07T11:17:20.620"
       },
       {
-        "cve_id": "CVE-2026-59346",
+        "cve_id": "CVE-2026-107206",
         "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "VMware Workstation and Fusion contain an integer-overflow vulnerability. A malicious actor with local administrative privileges on a virtual machine with VMXNET3 virtual network adapter may exploit th",
-        "published": "2026-10-07T06:16:35.543"
+        "base_score": 9.4,
+        "description": "LMCache through 0.5.5 contains a missing authentication vulnerability in the multiprocess mode HTTP server that allows remote unauthenticated attackers to access management endpoints listening on all ",
+        "published": "2026-10-07T16:17:45.447"
       },
       {
-        "cve_id": "CVE-2026-97720",
+        "cve_id": "CVE-2025-70516",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Incorrect implementation of JWT/OAuth authentication in Impala executors in Apache Impala versions up to and including 4.5.2 which allows attacked to access resources served by the executor's webserve",
-        "published": "2026-10-07T09:17:06.333"
+        "description": "The websocket handler of Fanvil x7a firmware version 2.6.0.1182 does not enforce proper authentication restrictions against sessionless users. The lack of restrictions grants anyone the ability to vie",
+        "published": "2026-10-07T15:16:52.310"
       },
       {
-        "cve_id": "CVE-2026-87782",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Koinonia Link WordPress plugin before 1.1.5 does not check that a user is allowed to change roles before saving a role selection submitted with a profile update, allowing any authenticated user, s",
-        "published": "2026-10-07T07:17:01.847"
-      },
-      {
-        "cve_id": "CVE-2026-97188",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The String locator WordPress plugin before 2.6.8 does not restrict the classes allowed when deserializing the content of a database row saved through its database editor, allowing unauthenticated atta",
-        "published": "2026-10-07T07:17:02.663"
-      },
-      {
-        "cve_id": "CVE-2026-15894",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Bluetooth Mesh On-Demand Private Proxy solicitation handler in subsys/bluetooth/mesh/solicitation.c copies a received Solicitation PDU into a fixed 17-byte stack buffer without bounding the source",
-        "published": "2026-10-07T09:17:05.157"
+        "cve_id": "CVE-2026-107202",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "A command injection vulnerability exists in the h-ui (version v0.0.25 and below) administrative API due to improper validation of the listen configuration field. When an authenticated administrator su",
+        "published": "2026-10-07T15:17:20.090"
       },
       {
         "cve_id": "CVE-2026-106059",
@@ -306,6 +306,13 @@
         "published": "2026-10-07T12:17:09.100"
       },
       {
+        "cve_id": "CVE-2026-106558",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Backstage is an open framework for building developer portals. Prior to 1.14.8, 1.15.6, and 2.0.1, the @backstage/plugin-techdocs-node package improperly validated mapping-style markdown_extensions co",
+        "published": "2026-10-07T15:17:15.713"
+      },
+      {
         "cve_id": "CVE-2026-103668",
         "severity": "HIGH",
         "base_score": 8.6,
@@ -313,25 +320,39 @@
         "published": "2026-10-07T11:17:09.357"
       },
       {
-        "cve_id": "CVE-2026-82211",
+        "cve_id": "CVE-2026-107205",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "LMCache through 0.5.5 contains a missing authentication vulnerability in the multiprocess coordinator that allows remote unauthenticated attackers to access its HTTP fleet control API listening on all",
+        "published": "2026-10-07T16:17:45.283"
+      },
+      {
+        "cve_id": "CVE-2026-77214",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "The Nexi XPay Build WordPress plugin through 7.6.2 does not verify the payment result supplied to several of its unauthenticated routes, allowing attackers to mark arbitrary orders as paid or failed, ",
-        "published": "2026-10-07T07:17:01.373"
+        "description": "libexpat before commit 13c5f63 contains a heap buffer over-read vulnerability in xmlparse.c. XML_ParseBuffer advances the parse buffer end with parser->m_bufferEnd += len using a caller-supplied lengt",
+        "published": "2026-10-07T15:17:53.327"
       },
       {
-        "cve_id": "CVE-2026-59347",
+        "cve_id": "CVE-2026-107181",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "VMware Workstation and Fusion contain a stack-based buffer-overflow vulnerability in HGFS. A malicious actor with local administrative privileges on a virtual machine may exploit this issue to execute",
-        "published": "2026-10-07T06:16:35.700"
+        "description": "Telegram Desktop before 7.2.9 contains an IPC record-separator injection vulnerability in Core::Sandbox that allows remote attackers to inject OPEN: records via crafted tg:// links containing unescape",
+        "published": "2026-10-07T14:17:08.807"
       },
       {
-        "cve_id": "CVE-2026-19186",
+        "cve_id": "CVE-2026-107183",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "ieee802154_decipher_data_frame() in subsys/net/l2/ieee802154/ieee802154_frame.c computed payload_len = net_pkt_get_len(pkt) - ll_hdr_len - authtag_len without first checking that the received frame is",
-        "published": "2026-10-07T09:17:05.290"
+        "description": "llama.cpp before b11393 contains a use-after-free and double free vulnerability in common_chat_peg_mapper::map that allows unauthenticated remote attackers to corrupt heap memory via a dangling curren",
+        "published": "2026-10-07T14:17:09.003"
+      },
+      {
+        "cve_id": "CVE-2026-46570",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "In NTFS-3G before 2026.7.7, a heap buffer overflow exists in ntfs_index_walk_down() in libntfs-3g/index.c that allows an attacker to corrupt heap memory in the SUID-root ntfs-3g binary by crafting a m",
+        "published": "2026-10-07T15:17:21.010"
       },
       {
         "cve_id": "CVE-2026-106057",
@@ -348,39 +369,18 @@
         "published": "2026-10-07T13:17:16.553"
       },
       {
-        "cve_id": "CVE-2026-42720",
+        "cve_id": "CVE-2026-106510",
         "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Sarah Giles Dynamic User Directory dynamic-user-directory allows Blind SQL Injection.This issue af",
-        "published": "2026-10-07T10:17:35.743"
+        "base_score": 7.7,
+        "description": "Backstage is an open framework for building developer portals. Prior to 1.14.6, the @backstage/plugin-techdocs-node package is affected by remote code execution via crafted markdown_extensions in tech",
+        "published": "2026-10-07T15:17:12.430"
       },
       {
-        "cve_id": "CVE-2026-42721",
+        "cve_id": "CVE-2026-106556",
         "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in SERVIT Software Solutions affiliate-toolkit affiliate-toolkit-starter allows Blind SQL Injection.T",
-        "published": "2026-10-07T10:17:35.870"
-      },
-      {
-        "cve_id": "CVE-2026-42713",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Gopiplus Post title marquee scroll post-title-marquee-scroll allows Blind SQL Injection.This issue",
-        "published": "2026-10-07T11:17:19.093"
-      },
-      {
-        "cve_id": "CVE-2026-42714",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Piggly Dev Pix por Piggly (para Woocommerce) pix-por-piggly allows Blind SQL Injection.This issue ",
-        "published": "2026-10-07T11:17:19.237"
-      },
-      {
-        "cve_id": "CVE-2026-42708",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in AF themes WP Post Author wp-post-author allows Blind SQL Injection.This issue affects WP Post Auth",
-        "published": "2026-10-07T12:17:09.650"
+        "base_score": 7.7,
+        "description": "Backstage is an open framework for building developer portals. Prior to 1.14.6, the @backstage/plugin-techdocs-node package is affected by configuration bypass in techdocs mkdocs.yml sanitization. Ins",
+        "published": "2026-10-07T15:17:12.960"
       }
     ]
   },
