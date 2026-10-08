@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T23:55:57.111241+00:00",
+  "generated_at": "2026-10-08T03:51:08.952635+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,7 +7,7 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 39,
+        "value": 35,
         "score": 3.0,
         "max": 3
       },
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1734,
-    "recent_30d_count": 39,
+    "recent_30d_count": 35,
     "recent": [
       {
         "cve_id": "CVE-2026-88779",
@@ -238,23 +238,16 @@
     ]
   },
   "nvd": {
-    "total": 343,
+    "total": 333,
     "critical_count": 5,
-    "high_count": 31,
+    "high_count": 25,
     "cves": [
       {
-        "cve_id": "CVE-2026-104334",
+        "cve_id": "CVE-2026-102255",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote attacker to execute arbitrary code due to improper control of code generation.",
-        "published": "2026-10-07T01:16:34.223"
-      },
-      {
-        "cve_id": "CVE-2026-93674",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote attacker to execute arbitrary code due to improper neutralization of special elements used in an OS command.",
-        "published": "2026-10-07T01:16:35.187"
+        "base_score": 10.0,
+        "description": "A Pre-authentication SSRF vulnerability exists in the SMA1000 Appliance Work Place interface due to an unintended alternate access path. By abusing this path, a remote unauthenticated attacker could p",
+        "published": "2026-10-07T13:17:16.387"
       },
       {
         "cve_id": "CVE-2026-105192",
@@ -262,6 +255,13 @@
         "base_score": 9.8,
         "description": "LMCache multiprocess mode, also called distributed mode, opens an unauthenticated ZeroMQ ROUTER so worker processes can register and share KV cache blocks. Messages on that socket are msgpack. Extensi",
         "published": "2026-10-07T10:17:32.647"
+      },
+      {
+        "cve_id": "CVE-2026-96408",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "A code injection vulnerability exists in the upgrade script of Movable Type, which may allow an unauthenticated attacker to execute an arbitrary Perl script or an SQL query on the affected product.",
+        "published": "2026-10-07T11:17:20.620"
       },
       {
         "cve_id": "CVE-2026-59346",
@@ -276,62 +276,6 @@
         "base_score": 9.1,
         "description": "Incorrect implementation of JWT/OAuth authentication in Impala executors in Apache Impala versions up to and including 4.5.2 which allows attacked to access resources served by the executor's webserve",
         "published": "2026-10-07T09:17:06.333"
-      },
-      {
-        "cve_id": "CVE-2026-104335",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper access control.",
-        "published": "2026-10-07T00:17:20.553"
-      },
-      {
-        "cve_id": "CVE-2026-88962",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper control of code generation.",
-        "published": "2026-10-07T01:16:34.377"
-      },
-      {
-        "cve_id": "CVE-2026-93675",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote attacker to execute arbitrary code due to an expected dependency confusion.",
-        "published": "2026-10-07T01:16:35.320"
-      },
-      {
-        "cve_id": "CVE-2026-97655",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote attacker to execute arbitrary code due to an incomplete blocklist in the code security scanner.",
-        "published": "2026-10-07T01:16:35.833"
-      },
-      {
-        "cve_id": "CVE-2026-97673",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper input validation.",
-        "published": "2026-10-07T01:16:36.117"
-      },
-      {
-        "cve_id": "CVE-2026-97676",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special elements used in code, resulting in a sandbox esca",
-        "published": "2026-10-07T01:16:36.387"
-      },
-      {
-        "cve_id": "CVE-2026-97678",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper input validation.",
-        "published": "2026-10-07T01:16:36.517"
-      },
-      {
-        "cve_id": "CVE-2026-97679",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special elements used in an OS command ('Code Injection') ",
-        "published": "2026-10-07T01:16:36.643"
       },
       {
         "cve_id": "CVE-2026-87782",
@@ -355,18 +299,18 @@
         "published": "2026-10-07T09:17:05.157"
       },
       {
-        "cve_id": "CVE-2026-93449",
+        "cve_id": "CVE-2026-106059",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to execute arbitrary code due to improper control of code generation.",
-        "published": "2026-10-07T01:16:35.057"
+        "base_score": 8.8,
+        "description": "GitAhead through 2.7.1 on macOS contains a command injection vulnerability that allows attackers to execute shell commands by crafting repository filenames interpolated unescaped into the Show in Find",
+        "published": "2026-10-07T12:17:09.100"
       },
       {
-        "cve_id": "CVE-2026-97680",
+        "cve_id": "CVE-2026-103668",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to obtain sensitive information or inject malicious data due to improper access control in the vertex result caching s",
-        "published": "2026-10-07T01:16:36.780"
+        "base_score": 8.6,
+        "description": "An SQL Injection vulnerability exists in the Site Search function of Movable Type, which may allow an unauthenticated attacker to execute an arbitrary SQL query on the affected product.",
+        "published": "2026-10-07T11:17:09.357"
       },
       {
         "cve_id": "CVE-2026-82211",
@@ -376,11 +320,67 @@
         "published": "2026-10-07T07:17:01.373"
       },
       {
-        "cve_id": "CVE-2026-103360",
+        "cve_id": "CVE-2026-59347",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "IBM Langflow OSS 1.0.0 through 1.12.2 could allow a remote authenticated attacker to obtain sensitive information due to improper limitation of a pathname to a restricted directory.",
-        "published": "2026-10-07T01:16:34.087"
+        "description": "VMware Workstation and Fusion contain a stack-based buffer-overflow vulnerability in HGFS. A malicious actor with local administrative privileges on a virtual machine may exploit this issue to execute",
+        "published": "2026-10-07T06:16:35.700"
+      },
+      {
+        "cve_id": "CVE-2026-19186",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "ieee802154_decipher_data_frame() in subsys/net/l2/ieee802154/ieee802154_frame.c computed payload_len = net_pkt_get_len(pkt) - ll_hdr_len - authtag_len without first checking that the received frame is",
+        "published": "2026-10-07T09:17:05.290"
+      },
+      {
+        "cve_id": "CVE-2026-106057",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "patool before 4.0.6 contains an OS command injection vulnerability on Windows because shell_quote_nt fails to escape cmd.exe metacharacters or embedded double quotes in archive filenames. Attackers ca",
+        "published": "2026-10-07T12:17:08.730"
+      },
+      {
+        "cve_id": "CVE-2026-102256",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Post-authentication Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability has been identified in the SMA1000 appliance which in specific conditions c",
+        "published": "2026-10-07T13:17:16.553"
+      },
+      {
+        "cve_id": "CVE-2026-42720",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Sarah Giles Dynamic User Directory dynamic-user-directory allows Blind SQL Injection.This issue af",
+        "published": "2026-10-07T10:17:35.743"
+      },
+      {
+        "cve_id": "CVE-2026-42721",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in SERVIT Software Solutions affiliate-toolkit affiliate-toolkit-starter allows Blind SQL Injection.T",
+        "published": "2026-10-07T10:17:35.870"
+      },
+      {
+        "cve_id": "CVE-2026-42713",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Gopiplus Post title marquee scroll post-title-marquee-scroll allows Blind SQL Injection.This issue",
+        "published": "2026-10-07T11:17:19.093"
+      },
+      {
+        "cve_id": "CVE-2026-42714",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Piggly Dev Pix por Piggly (para Woocommerce) pix-por-piggly allows Blind SQL Injection.This issue ",
+        "published": "2026-10-07T11:17:19.237"
+      },
+      {
+        "cve_id": "CVE-2026-42708",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in AF themes WP Post Author wp-post-author allows Blind SQL Injection.This issue affects WP Post Auth",
+        "published": "2026-10-07T12:17:09.650"
       }
     ]
   },
