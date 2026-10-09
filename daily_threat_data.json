@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-10-08T18:10:44.562993+00:00",
+  "generated_at": "2026-10-09T00:03:05.790611+00:00",
   "threat_score": {
-    "score": 5.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.5,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 40,
+        "value": 36,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 5,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1739,
-    "recent_30d_count": 40,
+    "recent_30d_count": 36,
     "recent": [
       {
         "cve_id": "CVE-2015-5477",
@@ -141,7 +141,7 @@
         "product": "Multiple Products",
         "name": "Apple Multiple Products Out-of-Bounds Write Vulnerability",
         "date_added": "2026-09-29",
-        "due_date": "2026-10-02",
+        "due_date": "2026-10-13",
         "description": "Apple iOS, macOS, and iPadOS contain an out-of-bounds write vulnerability in CoreGraphics that may lead to arbitrary code execution.",
         "ransomware_use": "Unknown"
       },
@@ -238,135 +238,51 @@
     ]
   },
   "nvd": {
-    "total": 378,
-    "critical_count": 1,
-    "high_count": 21,
+    "total": 517,
+    "critical_count": 5,
+    "high_count": 3,
     "cves": [
       {
-        "cve_id": "CVE-2026-76268",
+        "cve_id": "CVE-2026-103646",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "In Splunk Enterprise versions below 10.4.3 and 10.2.7, an unauthenticated user with network access to the Patroni Representational State Transfer (REST) Application Programming Interface (API) on a se",
-        "published": "2026-10-07T21:17:17.607"
+        "description": "The Ultimate Multisite  WordPress plugin before 2.17.0 does not require authentication before a logged-out checkout is linked to, and logged in as, an existing WordPress account matching the submitted",
+        "published": "2026-10-08T06:16:37.957"
       },
       {
-        "cve_id": "CVE-2026-76282",
+        "cve_id": "CVE-2026-103692",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Frontend Dashboard WordPress plugin before 3.0.5 does not perform any authorisation or nonce check on actions available to unauthenticated users that call an attacker-chosen PHP function or class ",
+        "published": "2026-10-08T06:16:38.323"
+      },
+      {
+        "cve_id": "CVE-2026-107459",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The SecuShare Pro developed by Openfind has an OS Command Injection vulnerability. Unauthenticated remote attackers can inject arbitrary OS commands and execute them on the server.",
+        "published": "2026-10-08T06:16:42.000"
+      },
+      {
+        "cve_id": "CVE-2026-85097",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Bricksforge plugin for WordPress is vulnerable to unauthenticated arbitrary file upload in versions up to, and including, 3.1.8.9. This is due to insufficient validation of the attacker-controlled",
+        "published": "2026-10-08T07:16:31.710"
+      },
+      {
+        "cve_id": "CVE-2026-17609",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The Super Forms \u2013 Drag & Drop Form Builder plugin for WordPress is vulnerable to Arbitrary Directory Deletion in all versions up to, and including, 6.3.316 via the submit_form function. This is due to",
+        "published": "2026-10-08T05:17:04.793"
+      },
+      {
+        "cve_id": "CVE-2026-17196",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Improper Control of a Resource Through its Lifetime. Splunk addressed multiple internally identified vulnerabilities in Splunk Enterprise versions 10.4.3, 10.2.7, 10.0.10, and 9.4.15. The vulnerabilit",
-        "published": "2026-10-07T21:17:19.700"
-      },
-      {
-        "cve_id": "CVE-2026-105816",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "Vault and Vault Enterprise did not consistently verify that stored plugin catalog entries reference binaries within the configured plugin directory. When Vault uses Shamir seals and has an external pl",
-        "published": "2026-10-07T22:17:02.673"
-      },
-      {
-        "cve_id": "CVE-2026-107352",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Missing authorization checks in Amazon Athena engine version 3 request handling could have allowed an authenticated user to read limited query metadata (AWS account identifiers and SQL statement text)",
-        "published": "2026-10-07T21:17:15.373"
-      },
-      {
-        "cve_id": "CVE-2026-76266",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "In Splunk Enterprise versions below 10.4.3, 10.2.7, 10.0.10, and 9.4.15 on Linux, a local user who can run commands as the user account running Splunk Enterprise could cause an affected Linux package ",
-        "published": "2026-10-07T21:17:17.310"
-      },
-      {
-        "cve_id": "CVE-2026-76283",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "Protection Mechanism Failure. Splunk addressed multiple internally identified vulnerabilities in Splunk Enterprise versions 10.4.3, 10.2.7, 10.0.10, and 9.4.15. The vulnerabilities are grouped by Comm",
-        "published": "2026-10-07T21:17:19.987"
-      },
-      {
-        "cve_id": "CVE-2026-107212",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Excelize is a Go language library for reading and writing Microsoft Excel spreadsheets. From 2.1.0 to 2.11.0, Rows.Columns accepts a look-ahead row number above TotalRows without applying the limit en",
-        "published": "2026-10-07T18:17:18.670"
-      },
-      {
-        "cve_id": "CVE-2026-107214",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Excelize is a Go language library for reading and writing Microsoft Excel spreadsheets. From 2.3.1 to 2.11.0, the decryption dispatch performs insufficient structural and parameter validation before s",
-        "published": "2026-10-07T18:17:19.040"
-      },
-      {
-        "cve_id": "CVE-2026-107215",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Excelize is a Go language library for reading and writing Microsoft Excel spreadsheets. From 2.3.1 to 2.11.0, extractPart allocates a byte slice directly from an attacker-controlled CFB directory-entr",
-        "published": "2026-10-07T18:17:19.213"
-      },
-      {
-        "cve_id": "CVE-2026-107216",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Excelize is a Go language library for reading and writing Microsoft Excel spreadsheets. From 2.8.1 to 2.11.0, ANCHORARRAY recursively calls the exported CalcCellValue function, creating a fresh calcul",
-        "published": "2026-10-07T18:17:19.400"
-      },
-      {
-        "cve_id": "CVE-2026-56851",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Nickname profile can panic with an out-of-bounds slice error when transforming crafted input into a short destination buffer.",
-        "published": "2026-10-07T18:17:20.903"
-      },
-      {
-        "cve_id": "CVE-2026-96335",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Missing Authorization vulnerability in WPMU DEV Forminator allows Exploiting Incorrectly Configured Access Control Security Levels.\n\nThis issue affects Forminator: from n/a through 1.57.2.",
-        "published": "2026-10-07T18:17:32.043"
-      },
-      {
-        "cve_id": "CVE-2026-103371",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Insertion of Sensitive Information into Log File in Apache Geode Web Management.\n\n\n\nThis issue affects Apache Geode: from 2.0.0 before 2.0.3.\n\n\n\nUsers are recommended to upgrade to version 2.0.3, whic",
-        "published": "2026-10-07T19:17:31.453"
-      },
-      {
-        "cve_id": "CVE-2026-107217",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Excelize is a Go language library for reading and writing Microsoft Excel spreadsheets. From 2.0.0 to 2.11.0 in github.com/xuri/excelize/v2 and from 1.1.0 to 1.4.1 in github.com/xuri/excelize, ColumnN",
-        "published": "2026-10-07T19:17:33.957"
-      },
-      {
-        "cve_id": "CVE-2026-107219",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Excelize is a Go language library for reading and writing Microsoft Excel spreadsheets. From 2.3.1 to 2.11.0, agile decryption accepts an attacker-controlled spinCount and performs that many password-",
-        "published": "2026-10-07T19:17:34.287"
-      },
-      {
-        "cve_id": "CVE-2026-107161",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A heap-based buffer overflow flaw was found in Cyrus SASL. The add_to_challenge() function in the DIGEST-MD5 plugin computes the size of the buffer needed for a challenge/response field before DIGEST-",
-        "published": "2026-10-07T20:17:10.977"
-      },
-      {
-        "cve_id": "CVE-2026-107227",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The AsyncHttpClient (AHC) library allows Java applications to easily execute HTTP requests and asynchronously process HTTP responses. From 2.2.0 until 3.0.14, WebSocket permessage-deflate decompressio",
-        "published": "2026-10-07T21:17:14.283"
-      },
-      {
-        "cve_id": "CVE-2026-107232",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The AsyncHttpClient (AHC) library allows Java applications to easily execute HTTP requests and asynchronously process HTTP responses. Prior to 3.0.12 on 3.x and 2.16.1 on 2.x, the client infers that a",
-        "published": "2026-10-07T22:17:03.497"
+        "description": "The Super Forms \u2013 Drag & Drop Form Builder plugin for WordPress is vulnerable to Unrestricted File Type Upload in all versions up to, and including, 6.3.316 via the upload_files function. This is due ",
+        "published": "2026-10-08T05:17:04.657"
       },
       {
         "cve_id": "CVE-2026-82627",
@@ -376,11 +292,95 @@
         "published": "2026-10-08T02:16:54.263"
       },
       {
-        "cve_id": "CVE-2026-107230",
+        "cve_id": "CVE-2026-103309",
         "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "The AsyncHttpClient (AHC) library allows Java applications to easily execute HTTP requests and asynchronously process HTTP responses. From 2.0.0 until 3.0.14, connection-pool partitioning still omits ",
-        "published": "2026-10-07T22:17:03.133"
+        "base_score": 7.5,
+        "description": "The GPTranslate  WordPress plugin before 2.34.14 does not properly restrict who can store translations, and does not escape them when outputting them in translated pages, allowing unauthenticated user",
+        "published": "2026-10-08T06:16:37.287"
+      },
+      {
+        "cve_id": "CVE-2026-107446",
+        "severity": "MEDIUM",
+        "base_score": 6.8,
+        "description": "containerd overlaybd through 1.0.18 has a do_load_index (LSMT index loading) integer overflow (and resultant out-of-bounds heap access) for index_bytes, if an untrusted overlaybd blob from a registry ",
+        "published": "2026-10-08T04:17:19.410"
+      },
+      {
+        "cve_id": "CVE-2026-104646",
+        "severity": "MEDIUM",
+        "base_score": 6.8,
+        "description": "The Image Photo Gallery Final Tiles Grid WordPress plugin before 3.6.14 does not sanitise several gallery configuration values that can be overridden through its gallery shortcode before printing them",
+        "published": "2026-10-08T06:16:39.147"
+      },
+      {
+        "cve_id": "CVE-2026-86828",
+        "severity": "MEDIUM",
+        "base_score": 6.6,
+        "description": "The BackWPup  WordPress plugin before 5.7.7 does not properly restrict the destination path of files extracted during a backup restore when its fallback archive library is used, allowing high-privileg",
+        "published": "2026-10-08T06:16:45.287"
+      },
+      {
+        "cve_id": "CVE-2017-20283",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "NXP MQX Classic before 5.0 contains an out-of-bounds write vulnerability in the RTCS UDP recvfrom() implementation. Improper enforcement of the application-supplied receive buffer length may allow a c",
+        "published": "2026-10-08T03:16:32.343"
+      },
+      {
+        "cve_id": "CVE-2026-94245",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "The Wallet System for WooCommerce  WordPress plugin before 2.8.0 does not verify that the user submitting a wallet transfer owns the wallet being debited, allowing any authenticated user, including on",
+        "published": "2026-10-08T06:16:46.533"
+      },
+      {
+        "cve_id": "CVE-2026-94246",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "The Wallet System for WooCommerce  WordPress plugin before 2.8.0 does not verify that the wallet account named in a withdrawal submission belongs to the user making it, allowing any authenticated user",
+        "published": "2026-10-08T06:16:46.863"
+      },
+      {
+        "cve_id": "CVE-2026-94154",
+        "severity": "MEDIUM",
+        "base_score": 6.1,
+        "description": "The Aurora Heatmap plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the \u2018url\u2019 parameter in all versions up to, and including, 1.7.2 due to insufficient input sanitization and outp",
+        "published": "2026-10-08T00:16:35.333"
+      },
+      {
+        "cve_id": "CVE-2024-8122",
+        "severity": "MEDIUM",
+        "base_score": 5.9,
+        "description": "The WSO2 Identity Server fails to enforce a default expiry time for SMS One-Time Passwords (OTPs) used in multi-factor authentication (MFA). This allows unused OTPs to remain valid indefinitely, prese",
+        "published": "2026-10-08T01:16:32.037"
+      },
+      {
+        "cve_id": "CVE-2026-86826",
+        "severity": "MEDIUM",
+        "base_score": 5.9,
+        "description": "The BackWPup  WordPress plugin before 5.7.7 does not properly restrict web access to the working directory it uses during backup restores, allowing unauthenticated attackers, on webservers that do not",
+        "published": "2026-10-08T06:16:44.617"
+      },
+      {
+        "cve_id": "CVE-2026-17538",
+        "severity": "MEDIUM",
+        "base_score": 5.4,
+        "description": "The LatePoint - Appointment Booking & Reservation plugin for WordPress is vulnerable to Insecure Direct Object Reference in versions up to, and including, 5.6.9. This is due to the process_step_custom",
+        "published": "2026-10-08T00:16:35.153"
+      },
+      {
+        "cve_id": "CVE-2026-107445",
+        "severity": "MEDIUM",
+        "base_score": 5.4,
+        "description": "A flaw was found in Katello where the Flatpak Remote Repositories API does not properly enforce authorization when accessing a flatpak remote repository by identifier. An authenticated user with permi",
+        "published": "2026-10-08T04:17:19.220"
+      },
+      {
+        "cve_id": "CVE-2026-107450",
+        "severity": "MEDIUM",
+        "base_score": 5.4,
+        "description": "In Stump through 0.1.10, the updateSmartList and deleteSmartList GraphQL mutations (crates/graphql/src/mutation/smart_lists.rs) depend only on the shared AccessSmartList permission and resolve the tar",
+        "published": "2026-10-08T05:17:04.477"
       }
     ]
   },
