@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-10-13T04:35:59.310267+00:00",
+  "generated_at": "2026-10-13T15:24:51.457393+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 30,
+        "value": 31,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
-        "score": 2.0,
+        "value": 7,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1739,
-    "recent_30d_count": 30,
+    "total_catalog_count": 1740,
+    "recent_30d_count": 31,
     "recent": [
+      {
+        "cve_id": "CVE-2026-104935",
+        "vendor": "Ivanti",
+        "product": "Connect Secure",
+        "name": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
+        "date_added": "2026-10-13",
+        "due_date": "2026-10-16",
+        "description": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2015-5477",
         "vendor": "ISC",
@@ -224,163 +234,153 @@
         "due_date": "2026-09-25",
         "description": "Arista VeloCloud Orchestrator (VCO) on-prem contains an improper input validation vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Su",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-94127",
-        "vendor": "F5",
-        "product": "BIG-IP APM",
-        "name": "F5 BIG-IP APM Heap-based Buffer Overflow Vulnerability",
-        "date_added": "2026-09-22",
-        "due_date": "2026-09-25",
-        "description": "F5 BIG-IP APM contains a heap-based buffer overflow vulnerability when access policy and an OAuth profile are configured on a virtual server. This vulnerability could allow an unauthenticated attacker",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 729,
-    "critical_count": 3,
-    "high_count": 17,
+    "total": 875,
+    "critical_count": 7,
+    "high_count": 20,
     "cves": [
       {
-        "cve_id": "CVE-2026-108804",
+        "cve_id": "CVE-2026-108907",
         "severity": "CRITICAL",
         "base_score": 10.0,
-        "description": "A vulnerability was detected in TRENDnet TEW-751DR, TEW-752DRU and TEW733GR 1.03B01/1.03B03. Affected is the function fwrite of the file pigwidgeon.cgi of the component Web Management Backend. The man",
-        "published": "2026-10-12T06:16:59.457"
+        "description": "A vulnerability was determined in Netcore NR268 1.7.121109. Affected is the function user_ok of the component CGI Execution. This manipulation causes improper authentication. The attack can be initiat",
+        "published": "2026-10-12T17:17:13.373"
       },
       {
-        "cve_id": "CVE-2026-93582",
+        "cve_id": "CVE-2026-85947",
         "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "The HTTP Basic Authentication modules in ((OTRS)) Community Edition 6 and prior accept the authenticated username from either the REMOTE_USER or HTTP_REMOTE_USER environment variable.\u00a0In CGI and mod_p",
-        "published": "2026-10-12T07:16:37.717"
+        "base_score": 9.9,
+        "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 contain an authorization flaw in certain forest-management operations. A remote attacker with forest-management pr",
+        "published": "2026-10-12T16:17:06.040"
       },
       {
-        "cve_id": "CVE-2026-78357",
+        "cve_id": "CVE-2026-85948",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Previously issued authentication tokens are not immediately invalidated when an OTRS agent or customer user account is deactivated or its password is changed.\u00a0As a result, an existing JWT may remain v",
-        "published": "2026-10-12T07:16:37.073"
+        "base_score": 9.9,
+        "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 contain an XQuery injection flaw in a deprecated Management API package path. A remote attacker with manage-user-l",
+        "published": "2026-10-12T16:17:06.173"
       },
       {
-        "cve_id": "CVE-2026-87690",
+        "cve_id": "CVE-2026-85955",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 allow a remote attacker with query-execution access to invoke an XQuery evaluation function without the additional",
+        "published": "2026-10-12T16:17:07.070"
+      },
+      {
+        "cve_id": "CVE-2026-108914",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A flaw has been found in Edimax BR-6208AC 1.32. Affected by this issue is some unknown functionality of the file /goform/formWlSiteSurvey. This manipulation of the argument ifname causes buffer overfl",
+        "published": "2026-10-12T17:17:13.890"
+      },
+      {
+        "cve_id": "CVE-2026-85956",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 allow a remote attacker with delegated database-administrator privileges to perform backup or restore operations o",
+        "published": "2026-10-12T16:17:07.193"
+      },
+      {
+        "cve_id": "CVE-2026-9191",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 do not sufficiently isolate user-supplied code executed through certain REST and XDBC evaluation paths from HTTP r",
+        "published": "2026-10-12T16:17:08.223"
+      },
+      {
+        "cve_id": "CVE-2026-85954",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Metasploit Framework post module post/apple_ios/gather/ios_image_gather is affected by a relative path traversal vulnerability (CWE-22). The module interpolates file names taken from a Meterpreter",
-        "published": "2026-10-12T05:17:03.250"
+        "base_score": 8.6,
+        "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 can evaluate user-controlled values supplied to certain higher-order XQuery functions in an elevated security cont",
+        "published": "2026-10-12T16:17:06.940"
       },
       {
-        "cve_id": "CVE-2026-103903",
+        "cve_id": "CVE-2026-109238",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "An incorrect authorization vulnerability in the WinBox\nauthentication flow of MikroTik RouterOS allows a remote authenticated attacker\nwith credentials for a low-privilege account permitted to use Win",
-        "published": "2026-10-12T11:17:09.517"
+        "base_score": 8.6,
+        "description": "Crawl4AI 0.7.0 before 0.9.4 contains a server-side request forgery vulnerability that allows API clients to reach internal addresses by enabling link_preview_config on /crawl requests. Attackers can s",
+        "published": "2026-10-12T17:17:14.420"
       },
       {
-        "cve_id": "CVE-2026-105407",
+        "cve_id": "CVE-2026-85951",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "An OS Command Injection vulnerability affecting Tuleap Enterprise Edition from 17.0 through 17.5 could allow an attacker to execute arbitrary commands on the server.",
-        "published": "2026-10-12T11:17:09.673"
+        "base_score": 8.5,
+        "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 on Azure contain a server-side request forgery vulnerability that could allow an authenticated attacker to access ",
+        "published": "2026-10-12T16:17:06.553"
       },
       {
-        "cve_id": "CVE-2026-78355",
+        "cve_id": "CVE-2026-85952",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "A path traversal vulnerability in the OTRS\u00a0SendSupportBundle functionality allows an authenticated administrator to reference file paths outside the intended directory.\n\nThis may allow files accessibl",
-        "published": "2026-10-12T07:16:36.740"
+        "base_score": 8.5,
+        "description": "Affected Linux-based Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 contain a server-side request forgery vulnerability that could allow an authenticated attacke",
+        "published": "2026-10-12T16:17:06.680"
       },
       {
-        "cve_id": "CVE-2026-105408",
+        "cve_id": "CVE-2026-85953",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "A Stored Cross-site Scripting (XSS) vulnerability affecting Tuleap Enterprise Edition from 17.0 through 17.5 could allow an attacker to execute arbitrary script code in user's browser session.",
-        "published": "2026-10-12T11:17:09.807"
+        "base_score": 8.5,
+        "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 contain privileged legacy InfoStudio modules that do not sufficiently validate user-controlled file paths and user",
+        "published": "2026-10-12T16:17:06.810"
       },
       {
-        "cve_id": "CVE-2026-105409",
+        "cve_id": "CVE-2026-85950",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "A Stored Cross-site Scripting (XSS) vulnerability affecting Tuleap Enterprise Edition from 17.0 through 17.5 could allow an attacker to execute arbitrary script code in user's browser session.",
-        "published": "2026-10-12T11:17:09.937"
+        "base_score": 8.4,
+        "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 contain an authorization flaw that could allow a remote attacker with administrative privileges to access authenti",
+        "published": "2026-10-12T16:17:06.427"
       },
       {
-        "cve_id": "CVE-2026-105410",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "A Stored Cross-site Scripting (XSS) vulnerability affecting Tuleap Enterprise Edition from 17.0 through 17.5 could allow an attacker to execute arbitrary script code in user's browser session.",
-        "published": "2026-10-12T11:17:10.063"
-      },
-      {
-        "cve_id": "CVE-2026-105411",
+        "cve_id": "CVE-2026-109391",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "An Authorization Bypass Through User-Controlled Key vulnerability affecting Tuleap Enterprise Edition from 17.0 through 17.5 could allow an attacker with tracker administration rights on one tracker t",
-        "published": "2026-10-12T11:17:10.187"
+        "description": "Square Squash through commit e73f280 contains an insecure deserialization vulnerability that allows unauthenticated attackers to store crafted YAML via the POST /api/1.0/symbolication endpoint. When o",
+        "published": "2026-10-12T16:17:04.373"
       },
       {
-        "cve_id": "CVE-2026-103902",
+        "cve_id": "CVE-2026-109399",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "SWUpdate through 2026.05.1 contains an improper certificate validation vulnerability in crypto/swupdate_cms_verify_openssl.c that trusts untrusted X.509 certificates embedded in CMS SignedData for cha",
+        "published": "2026-10-12T16:17:05.557"
+      },
+      {
+        "cve_id": "CVE-2026-85949",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Progress MarkLogic Server 12.x releases before 12.1.0 and 11.x releases before 11.3.7 may record security-sensitive information in diagnostic logs under certain configurations. An attacker with access",
+        "published": "2026-10-12T16:17:06.303"
+      },
+      {
+        "cve_id": "CVE-2026-109237",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Crawl4AI from 0.9.0 before 0.9.4 contains an untrusted-config gate bypass that allows non-admin API clients to construct forbidden config objects by wrapping them in dict-type wrappers. Attackers can ",
+        "published": "2026-10-12T17:17:14.233"
+      },
+      {
+        "cve_id": "CVE-2026-109286",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Open WebUI from 0.7.0 before 0.11.4 contains a cross-origin message handling vulnerability in SyncStatsModal that allows any website to steal a signed-in user's session token by posting unvalidated ve",
+        "published": "2026-10-12T17:17:21.613"
+      },
+      {
+        "cve_id": "CVE-2026-109398",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Improper verification of cryptographic signature vulnerability in DigiDoc libdigidocpp, DigiDoc DigiDoc4, DigiDoc DigiDoc Android, and DigiDoc DigiDoc iOS. The vulnerability allows an attacker to crea",
-        "published": "2026-10-12T11:17:08.617"
+        "description": "Gumlet php-image-resize before 3.0.1 contains a denial of service vulnerability because the ImageResize constructor in lib/ImageResize.php passes images to GD imagecreatefrom* functions without pixel ",
+        "published": "2026-10-12T16:17:05.397"
       },
       {
-        "cve_id": "CVE-2026-108799",
+        "cve_id": "CVE-2026-109394",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was determined in jackq XCMS up to 3fab5342cc509945a7ce1b8ec39d19f701b89261. Impacted is the function PublicController::sendFindPwdMail of the file Admin/Home/Controller/PublicControll",
-        "published": "2026-10-12T05:16:59.173"
-      },
-      {
-        "cve_id": "CVE-2026-108805",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A flaw has been found in krupalshah EmployeeRecruitmentSystem up to 922ff6d208278282e7c8e36d70d9ae356adec9fe. Affected by this vulnerability is the function mysql_query of the file source/loginprocess",
-        "published": "2026-10-12T06:16:59.687"
-      },
-      {
-        "cve_id": "CVE-2026-108806",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability has been found in krupalshah EmployeeRecruitmentSystem up to 922ff6d208278282e7c8e36d70d9ae356adec9fe. Affected by this issue is the function mysql_query of the file source/authprocess",
-        "published": "2026-10-12T06:16:59.877"
-      },
-      {
-        "cve_id": "CVE-2026-108807",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was found in krupalshah EmployeeRecruitmentSystem up to 922ff6d208278282e7c8e36d70d9ae356adec9fe. This affects the function mysql_query of the file source/adminregister.php of the comp",
-        "published": "2026-10-12T07:16:35.707"
-      },
-      {
-        "cve_id": "CVE-2026-108818",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was identified in agno-agi agno up to 2.7.3/3.0.6. This affects the function get_authentication_dependency of the file auth.py. Such manipulation of the argument security_key leads to ",
-        "published": "2026-10-12T09:16:43.473"
-      },
-      {
-        "cve_id": "CVE-2026-108819",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security flaw has been discovered in agno-agi agno up to 3.0.6/3.1.1. This vulnerability affects the function exec of the component Agent Orchestration Layer. Performing a manipulation of the argume",
-        "published": "2026-10-12T10:16:43.393"
-      },
-      {
-        "cve_id": "CVE-2026-108826",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was found in Zen Cart up to 2.2.2. This impacts the function zen_db_perform in the library includes/modules/payment/paypaldp.php of the component PayPal IPN Handler. Performing a manip",
-        "published": "2026-10-12T11:17:10.910"
-      },
-      {
-        "cve_id": "CVE-2026-105412",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "An SQL Injection vulnerability affecting Tuleap Enterprise Edition 17.5 could allow an attacker to have read access the Tuleap database.",
-        "published": "2026-10-12T11:17:10.317"
+        "base_score": 7.4,
+        "description": "Thirty bees through 1.7.0 contains an authentication bypass vulnerability in PasswordController::resolveCustomer() that allows unauthenticated attackers to reset registered customers' passwords using ",
+        "published": "2026-10-12T16:17:04.920"
       }
     ]
   },
