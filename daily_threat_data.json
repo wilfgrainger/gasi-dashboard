@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T16:10:59.370148+00:00",
+  "generated_at": "2026-10-14T22:51:10.544628+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,7 +7,7 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 31,
+        "value": 35,
         "score": 3.0,
         "max": 3
       },
@@ -32,9 +32,49 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1741,
-    "recent_30d_count": 31,
+    "total_catalog_count": 1745,
+    "recent_30d_count": 35,
     "recent": [
+      {
+        "cve_id": "CVE-2026-105134",
+        "vendor": "Ahsay",
+        "product": "AhsayCBS",
+        "name": "Ahsay AhsayCBS Command Injection Vulnerability",
+        "date_added": "2026-10-14",
+        "due_date": "2026-10-17",
+        "description": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver c",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-76519",
+        "vendor": "Cisco",
+        "product": "Secure Email Gateway",
+        "name": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
+        "date_added": "2026-10-14",
+        "due_date": "2026-10-17",
+        "description": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-105133",
+        "vendor": "Ahsay",
+        "product": "AhsayCBS",
+        "name": "Ahsay AhsayCBS Improper Authentication Vulnerability",
+        "date_added": "2026-10-14",
+        "due_date": "2026-10-17",
+        "description": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component\u2019s checkSysPwd",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-0322",
+        "vendor": "Palo Alto Networks",
+        "product": "PAN-OS",
+        "name": "Palo Alto Networks PAN-OS Code Injection Vulnerability",
+        "date_added": "2026-10-14",
+        "due_date": "2026-10-17",
+        "description": "Palo Alto Networks PAN-OS contains a code injection vulnerability that could allow an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-104935",
         "vendor": "Ivanti",
@@ -194,193 +234,153 @@
         "due_date": "2026-09-28",
         "description": "Mikrotik RouterOS contains an improper enforcement of behavioral workflow vulnerability that could allow an unauthenticated client to open a session channel and send an exec request. This vulnerabilit",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-65660",
-        "vendor": "Microsoft",
-        "product": "SharePoint",
-        "name": "Microsoft SharePoint Code Injection Vulnerability",
-        "date_added": "2026-09-25",
-        "due_date": "2026-09-28",
-        "description": "Microsoft SharePoint contains a code injection vulnerability which could allow an authorized attacker to execute code over a network.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-87902",
-        "vendor": "WordPress",
-        "product": "Core",
-        "name": "WordPress Core Remote File Inclusion Vulnerability",
-        "date_added": "2026-09-25",
-        "due_date": "2026-09-28",
-        "description": "WordPress Core contains a remote file inclusion vulnerability which could allow an unauthenticated attacker to make page-template resolution include a chosen readable local `.php` file outside the act",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-5430",
-        "vendor": "WSO2",
-        "product": "Multiple Products",
-        "name": "WSO2 Multiple Products Path Traversal Vulnerability ",
-        "date_added": "2026-09-24",
-        "due_date": "2026-09-27",
-        "description": "WSO2 API Control Plane, API Manager, Traffic Manager & Universal Gateway contain a path traversal vulnerability that could allow for unrestricted file upload and lead to remote code execution. ",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-71362",
-        "vendor": "Adobe",
-        "product": "Commerce and Magento ",
-        "name": "Adobe Commerce and Magento Incorrect Authorization Vulnerability ",
-        "date_added": "2026-09-24",
-        "due_date": "2026-09-27",
-        "description": "Adobe Commerce and Magento contains an incorrect authorization vulnerability that could allow an attacker to leverage this vulnerability to gain elevated access to sensitive resources without any user",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 2280,
+    "total": 786,
     "critical_count": 9,
-    "high_count": 20,
+    "high_count": 34,
     "cves": [
       {
-        "cve_id": "CVE-2024-34323",
+        "cve_id": "CVE-2026-107594",
         "severity": "CRITICAL",
         "base_score": 10.0,
-        "description": "ProPhoenix Law RMS v2022.2403.3.101 was discovered to contain an Insecure Direct Object Reference (IDOR) via the usrLogin$hdnPFID parameter. This vulnerability allows attackers to access sensitive inf",
-        "published": "2026-10-13T16:17:08.210"
+        "description": "The File Upload to Order WordPress plugin before 1.1.4 does not validate or confine a file path taken from attacker-controlled session data before deleting the file, and the action that performs the d",
+        "published": "2026-10-14T07:17:02.090"
       },
       {
-        "cve_id": "CVE-2026-55675",
+        "cve_id": "CVE-2026-110392",
         "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "The Salty documentation repository builds and deploys the docs.saltbox.dev website. Prior to commit 649c9aea2daef1168eeb0415b44e65dbbde9f220, .github/workflows/trigger-pr-build.yml records an untruste",
-        "published": "2026-10-13T16:17:21.890"
+        "base_score": 9.8,
+        "description": "Improper neutralization of special elements used in an OS command ('OS command injection') vulnerability in Samsung Open Source QA-Board allows : OS Command Injection.",
+        "published": "2026-10-14T02:16:59.653"
       },
       {
-        "cve_id": "CVE-2026-106042",
+        "cve_id": "CVE-2026-93388",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "An External Control of File Name or Path vulnerability in Ivanti Xtraction before version 2026.4 allows a remote authenticated attacker to redirect application-generated requests to an attacker-contro",
-        "published": "2026-10-13T17:17:16.273"
+        "base_score": 9.8,
+        "description": "The Printcart Store (PCDesigner / NB Designer) plugin for WooCommerce is vulnerable to unauthenticated arbitrary file upload leading to remote code execution in all versions up to, and including, 2.9.",
+        "published": "2026-10-14T02:17:01.720"
       },
       {
-        "cve_id": "CVE-2026-109412",
+        "cve_id": "CVE-2026-110002",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "An exposed dangerous endpoint in Ivanti Neurons Patch for Intune allows a remote authenticated attacker to leak sensitive authentication information.",
-        "published": "2026-10-13T17:17:28.267"
+        "base_score": 9.8,
+        "description": "The Snazzy Social Media Feed plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 2.5 via the (file scope) function. This is due to missing WordPress boots",
+        "published": "2026-10-14T03:17:20.220"
       },
       {
-        "cve_id": "CVE-2026-102989",
+        "cve_id": "CVE-2026-97657",
         "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "TanStack Router is a client-first, server-capable, fully type-safe router and full-stack framework for the web. From 1.143.12 until 1.169.39 for @tanstack/start-server-core, 1.168.60 for @tanstack/rea",
-        "published": "2026-10-13T17:17:14.797"
+        "base_score": 9.8,
+        "description": "The Abandoned Cart Pro for WooCommerce plugin for WordPress is vulnerable to Authentication Bypass via Malleable Encryption and Bypassable HMAC in all versions up to, and including, 10.8.0. This is du",
+        "published": "2026-10-14T03:17:37.657"
       },
       {
-        "cve_id": "CVE-2024-34324",
+        "cve_id": "CVE-2026-97668",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Abandoned Cart Pro for WooCommerce plugin for WordPress is vulnerable to SQL Injection via the guest cart persistent meta_value in all versions up to, and including, 10.8.0 due to insufficient esc",
+        "published": "2026-10-14T03:17:37.797"
+      },
+      {
+        "cve_id": "CVE-2026-104800",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The AGE-GATE plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.0 via the 'width (and height)' parameter parameter. This is due to missing authenticati",
+        "published": "2026-10-14T04:18:12.563"
+      },
+      {
+        "cve_id": "CVE-2026-87855",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The JTL-Connector for WooCommerce plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 2.4.3 via the saveImage() function. This is due to the startSession(",
+        "published": "2026-10-14T04:18:52.840"
+      },
+      {
+        "cve_id": "CVE-2026-92097",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "An issue in ProPhoenix Law RMS v2022.2403.3.101 allows attackers to execute a session hijacking attack via injecting a crafted 24-character string into the ASP.NET_SessionId cookie.",
-        "published": "2026-10-13T16:17:08.317"
+        "description": "The Click to Chat for WhatsApp plugin for WordPress is vulnerable to Arbitrary Shortcode Execution in versions up to, and including, 4.44 This is due to the greetings_dialog() function building the {u",
+        "published": "2026-10-14T02:17:01.397"
       },
       {
-        "cve_id": "CVE-2026-55695",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "FearlessCMS is a flat-file content management system centered on simplicity and open source. In 0.1.2b and earlier, an authenticated administrator can set an arbitrary Git repository URL through admin",
-        "published": "2026-10-13T16:17:22.057"
-      },
-      {
-        "cve_id": "CVE-2026-110116",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Risesoft-y9 Digital-Infrastructure 9.6.5 through 9.6.11 contains a path traversal vulnerability in the fileManager storeFile endpoint that allows unauthenticated attackers to write arbitrary files. At",
-        "published": "2026-10-13T17:17:35.843"
-      },
-      {
-        "cve_id": "CVE-2026-54454",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "OpenCATS is an open-source applicant tracking system and recruitment CRM for staffing agencies and hiring teams. Prior to 0.10.0, the OpenCATS Import module in modules/import/ImportUI.php can preserve",
-        "published": "2026-10-13T17:17:41.310"
-      },
-      {
-        "cve_id": "CVE-2026-55376",
+        "cve_id": "CVE-2026-92817",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Heym builds and runs agentic systems and business-process automations on self-hosted infrastructure. Prior to 0.0.40, an authenticated user who can create or edit a workflow with an Agent custom Pytho",
-        "published": "2026-10-13T16:17:21.720"
+        "description": "The Ignition Perspective module does not properly validate session privileges when determining Designer-level access. An authenticated user with access to a Vision project could provide their valid Vi",
+        "published": "2026-10-14T00:17:13.290"
       },
       {
-        "cve_id": "CVE-2026-104935",
+        "cve_id": "CVE-2026-110444",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "TeamPlus Messenger developed by Teamplus Technology has a Code Injection vulnerability. Unauthenticated remote attackers can trick users into opening a crafted link to inject and execute arbitrary Jav",
+        "published": "2026-10-14T03:17:20.363"
+      },
+      {
+        "cve_id": "CVE-2026-110445",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "TeamPlus Messenger developed by Teamplus Technology has a Code Injection vulnerability. Unauthenticated remote attackers can trick users into interacting with crafted content to inject and execute arb",
+        "published": "2026-10-14T03:17:20.527"
+      },
+      {
+        "cve_id": "CVE-2026-107126",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The WP Booking System  WordPress plugin before 2.1.0.1 does not sanitise and escape a client-controllable request value before storing it and later outputting it in an administration screen, allowing ",
+        "published": "2026-10-14T07:17:01.350"
+      },
+      {
+        "cve_id": "CVE-2026-110459",
         "severity": "HIGH",
         "base_score": 8.6,
-        "description": "Authentication bypass by spoofing in ICS before version 25.1.3.0 allows a remote unauthenticated attacker to execute arbitrary commands. This does not impact ICS version 22.7R2.14 or prior.",
-        "published": "2026-10-13T16:17:11.640"
+        "description": "A malicious actor with access to the network could exploit an Improper Access Control vulnerability found in UniFi Protect AI Key to obtain information, make unauthorized changes, and execute a Denial",
+        "published": "2026-10-14T06:17:06.260"
       },
       {
-        "cve_id": "CVE-2026-110097",
+        "cve_id": "CVE-2026-103307",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "The Walletdoc Payment Gateway for WooCommerce WordPress plugin before 1.8.5 does not properly sanitize and escape user input before using it in a SQL statement, and verifies its payment webhook with a",
+        "published": "2026-10-14T07:17:00.127"
+      },
+      {
+        "cve_id": "CVE-2026-107508",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "The Ultimate Multisite  WordPress plugin before 2.17.2 does not validate a user-supplied value used to select a file to include, allowing unauthenticated attackers to include and read arbitrary local ",
+        "published": "2026-10-14T07:17:01.983"
+      },
+      {
+        "cve_id": "CVE-2026-50218",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "Akamai GPA (Guardicore Platform Agent) client on all platforms before 7.4 improperly validates JWT tokens used for seeding. By convincing a user to interact with a malicious link, an attacker can use ",
+        "published": "2026-10-14T06:17:06.900"
+      },
+      {
+        "cve_id": "CVE-2026-104995",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Ikaros 1.2.0 through 1.2.5 contains an authentication bypass vulnerability that allows attackers with a valid password to skip TOTP verification by reusing the login temp token. Attackers can present ",
-        "published": "2026-10-13T17:17:33.263"
+        "description": "The BP Profile Search plugin for WordPress is vulnerable to Local File Inclusion in versions up to, and including, 5.9 via the 'ajax_template' value parsed from the client-controlled 'bps_directory' c",
+        "published": "2026-10-14T02:16:56.500"
       },
       {
-        "cve_id": "CVE-2026-110108",
+        "cve_id": "CVE-2026-17092",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "MateCloud through 5.0.8 contains a missing authorization vulnerability that allows any authenticated user to manage object storage by calling the unprotected /api/v1/admin/storage endpoints in Storage",
-        "published": "2026-10-13T17:17:34.920"
+        "description": "The Directorist: AI-Powered Business Directory, Listings & Classified Ads plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 8.10.2.1. This is due to the ",
+        "published": "2026-10-14T02:16:59.783"
       },
       {
-        "cve_id": "CVE-2026-110124",
+        "cve_id": "CVE-2026-110455",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "FastBee through 2.1.0 contains an insecure direct object reference vulnerability in DeviceController that allows authenticated low-privilege users to read and modify other tenants' devices by supplyin",
-        "published": "2026-10-13T17:17:37.080"
-      },
-      {
-        "cve_id": "CVE-2026-106047",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "A Path Traversal vulnerability in the template export functionality of Ivanti Xtraction before version 2026.4 allows a remote authenticated attacker to read arbitrary files.",
-        "published": "2026-10-13T17:17:16.497"
-      },
-      {
-        "cve_id": "CVE-2026-54640",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "OpenRemote is an open-source internet-of-things platform. Prior to 1.24.2, the KNXProtocol.startAssetImport method in agent/src/main/java/org/openremote/agent/protocol/knx/KNXProtocol.java processes 0",
-        "published": "2026-10-13T17:17:41.490"
-      },
-      {
-        "cve_id": "CVE-2026-103030",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Dio is a powerful HTTP client for Dart and Flutter. From 1.0.0 until 2.8.0, dio_http2_adapter follows redirects in Http2Adapter._fetch by copying the original RequestOptions.headers into the redirecte",
-        "published": "2026-10-13T17:17:14.953"
-      },
-      {
-        "cve_id": "CVE-2026-106043",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "A Missing Authentication for Critical Function vulnerability in Ivanti Xtraction before version 2026.4 allows a remote unauthenticated attacker to create, modify, trusted site.",
-        "published": "2026-10-13T17:17:16.387"
-      },
-      {
-        "cve_id": "CVE-2026-110102",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Powerlevel10k through 1.20.0 contains an insecure download vulnerability in the gitstatus/install script that disables TLS certificate verification with curl -k and skips integrity checks when no SHA-",
-        "published": "2026-10-13T17:17:33.987"
-      },
-      {
-        "cve_id": "CVE-2026-110115",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Risesoft Digital-Infrastructure 9.6.5 through 9.6.11 contains a path traversal vulnerability in the fileManager Y9FileController.retrieveFileStream handler that allows unauthenticated attackers to rea",
-        "published": "2026-10-13T17:17:35.697"
+        "description": "A malicious actor with access to the network and under certain conditions could exploit an Improper Input Validation vulnerability found in UniFi Protect AI Key to execute a Command Injection on the d",
+        "published": "2026-10-14T05:16:43.647"
       }
     ]
   },
