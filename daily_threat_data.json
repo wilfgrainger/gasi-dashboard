@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-10-13T20:53:43.061479+00:00",
+  "generated_at": "2026-10-14T02:45:15.159378+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 32,
+        "value": 31,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 8,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1741,
-    "recent_30d_count": 32,
+    "recent_30d_count": 31,
     "recent": [
       {
         "cve_id": "CVE-2026-104935",
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 2310,
-    "critical_count": 4,
-    "high_count": 42,
+    "total": 2257,
+    "critical_count": 8,
+    "high_count": 35,
     "cves": [
       {
-        "cve_id": "CVE-2026-108929",
+        "cve_id": "CVE-2026-109109",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "A vulnerability was detected in Wavlink WL-WN530BE1-A 251117. This vulnerability affects the function strcpy of the file /cgi-bin/ExportAllSettings.cgi of the component Settings Export CGI. Performing",
+        "published": "2026-10-13T08:17:00.110"
+      },
+      {
+        "cve_id": "CVE-2026-109110",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "A flaw has been found in Wavlink WL-WN592AX6 250422. This issue affects the function system of the component wmapd Daemon. Executing a manipulation can lead to os command injection. It is possible to ",
+        "published": "2026-10-13T09:17:15.370"
+      },
+      {
+        "cve_id": "CVE-2026-109108",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "A flaw has been found in Netcore NR268 1.7.121109. The affected element is the function execvp of the file /router/DDNSset.cgi of the component DDNS. Executing a manipulation of the argument Hostname ",
-        "published": "2026-10-12T21:17:09.410"
+        "description": "A security vulnerability has been detected in Wavlink WL-WN530BE1-A 251117. This affects the function popen of the file /cgi-bin/uploadVpn.cgi. Such manipulation of the argument Type leads to os comma",
+        "published": "2026-10-13T08:16:59.917"
       },
       {
-        "cve_id": "CVE-2025-71429",
+        "cve_id": "CVE-2026-108971",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "GPT-SoVITS through 20250606v2pro contains an OS command injection vulnerability in tools/uvr5/vr.py that allows unauthenticated attackers to execute commands via output folder paths. Attackers can ent",
-        "published": "2026-10-12T21:17:07.817"
+        "base_score": 9.6,
+        "description": "A flaw has been found in D-Link DCS-930L B1.08B4. This impacts the function mpfd_decode of the file bootloader_region.bin of the component Emergency HTTP Recovery Server. Executing a manipulation of t",
+        "published": "2026-10-13T06:16:50.090"
       },
       {
-        "cve_id": "CVE-2026-109566",
+        "cve_id": "CVE-2026-63350",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Rapyd Admin from 9.0.0 before 9.20.0 contains a hard-coded credentials vulnerability that allows remote unauthenticated attackers to gain super-admin access through an AuthSeeder-created admin@laravel",
-        "published": "2026-10-12T21:17:13.190"
+        "base_score": 9.6,
+        "description": "Affected devices do not properly restrict executable content contained in imported trace files.\r\n\r\nThis could allow an attacker to social engineer an authorized user who holds the function right \u201cRead",
+        "published": "2026-10-13T10:17:16.777"
       },
       {
-        "cve_id": "CVE-2026-90920",
+        "cve_id": "CVE-2026-63353",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "IBM Maximo AI Service 9.1.0, and 9.2.0 could allow a remote attacker to execute arbitrary code due to improper control of code generation.",
-        "published": "2026-10-12T22:17:05.683"
+        "base_score": 9.6,
+        "description": "Affected devices do not properly sanitize comment fields contained in imported trace files before rendering them on the Trace page.\r\n\r\nThis could allow an attacker to social engineer an authorized use",
+        "published": "2026-10-13T10:17:18.040"
       },
       {
-        "cve_id": "CVE-2026-109569",
+        "cve_id": "CVE-2026-63354",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Affected devices do not properly validate and sanitize visual marker data contained in imported CSV trace files before rendering it on the Trace page.\r\n\r\nThis could allow an attacker to social enginee",
+        "published": "2026-10-13T10:17:18.450"
+      },
+      {
+        "cve_id": "CVE-2026-44415",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Affected systems do not properly restrict access to internal APIs and paths for authenticated users. This could allow an authenticated remote attacker to access sensitive internal information, which i",
+        "published": "2026-10-13T10:17:16.293"
+      },
+      {
+        "cve_id": "CVE-2026-103418",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "sandboxed.sh through 1.3.0 contains a container escape vulnerability that allows code in container workspaces to access the host filesystem because nsenter attaches without --root. Agent-run code in a",
-        "published": "2026-10-12T21:17:13.653"
+        "description": "Firefox for iOS directly interpolated the page\u2019s HTML language attribute into translation JavaScript, allowing attacker-controlled markup to execute code in Firefox\u2019s privileged content world and bypa",
+        "published": "2026-10-13T08:16:59.560"
       },
       {
-        "cve_id": "CVE-2026-84313",
+        "cve_id": "CVE-2026-59241",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Nginx UI is a web user interface for the Nginx web server. Prior to 2.4.1, POST /api/otp_enroll and POST /api/finish_passkey_register are registered outside RequireSecureSession and accept a normal au",
-        "published": "2026-10-12T21:17:21.597"
+        "description": "A vulnerability has been identified in SIMATIC WinCC V7.5 (All versions), SIMATIC WinCC V8.0 (All versions < V8.0 Update 11), SIMATIC WinCC V8.1 (All versions < V8.1 Update 7). The affected applicatio",
+        "published": "2026-10-13T10:17:16.623"
       },
       {
-        "cve_id": "CVE-2026-84316",
+        "cve_id": "CVE-2026-89196",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Nginx UI is a web user interface for the Nginx web server. Prior to 2.4.1, config.ValidateConfigDirectives splits configuration by newline and checks only the first directive token on each line even t",
-        "published": "2026-10-12T21:17:22.067"
+        "description": "A vulnerability has been identified in RUGGEDCOM CROSSBOW (All versions < V6.0). Affected devices do not properly validate or sanitize input in facility names processed during the Bulk Import/Export w",
+        "published": "2026-10-13T10:17:20.920"
       },
       {
-        "cve_id": "CVE-2026-84317",
+        "cve_id": "CVE-2026-89197",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Nginx UI is a web user interface for the Nginx web server. Prior to 2.4.1, internal/config/validation.go (ValidateConfigFile) is a security control that blocks dangerous nginx directives \u2014 js_*, perl_",
-        "published": "2026-10-12T21:17:22.213"
+        "description": "A vulnerability has been identified in RUGGEDCOM CROSSBOW (All versions < V6.0). Affected devices do not properly validate or sanitize input in the Value field of notification conditions processed dur",
+        "published": "2026-10-13T10:17:21.060"
       },
       {
-        "cve_id": "CVE-2026-84318",
+        "cve_id": "CVE-2026-89198",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Nginx UI is a web user interface for the Nginx web server. From 2.0.0-rc.6 until 2.4.1, the MCP tool nginx_config_add writes nginx configuration files to disk and triggers an nginx reload without call",
-        "published": "2026-10-12T21:17:22.360"
+        "description": "A vulnerability has been identified in RUGGEDCOM CROSSBOW (All versions < V6.0). Affected devices do not properly validate or sanitize the filename of firmware files uploaded to the system. This could",
+        "published": "2026-10-13T10:17:21.200"
       },
       {
-        "cve_id": "CVE-2024-58390",
+        "cve_id": "CVE-2026-89199",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Frappe before 14.81.4 and 15.x before 15.41.0 contains an improper privilege management vulnerability involving a certain document action that permits escalation from the Website User role to System M",
-        "published": "2026-10-12T23:17:18.140"
+        "description": "A vulnerability has been identified in RUGGEDCOM CROSSBOW (All versions < V6.0). Affected devices do not properly restrict access to sensitive configuration items via specific database queries. This c",
+        "published": "2026-10-13T10:17:21.353"
       },
       {
-        "cve_id": "CVE-2026-109557",
+        "cve_id": "CVE-2026-13138",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "EdgeEver through 1.112.0 contains a stored cross-site scripting vulnerability in setMemoDragPreview that allows attackers to inject script through notebook names or memo titles. Attackers can set mali",
-        "published": "2026-10-12T21:17:11.790"
+        "base_score": 8.6,
+        "description": "Client-Side Enforcement of Server-Side Security vulnerability in Divasoft Software and E-Commerce Inc. Biletiva Ticketing Platform allows Manipulating State.\n\nThis issue affects Biletiva Ticketing Pla",
+        "published": "2026-10-13T09:17:17.127"
       },
       {
-        "cve_id": "CVE-2026-109558",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "EdgeEver 1.6.0 through 1.112.0 contains a stored cross-site scripting vulnerability in TemplatesPane.tsx that renders template contentMarkdown with raw HTML via dangerouslySetInnerHTML without sanitiz",
-        "published": "2026-10-12T21:17:11.940"
-      },
-      {
-        "cve_id": "CVE-2026-109559",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "EdgeEver Desktop 1.6.26 through 1.112.0 contains a navigation allowlist bypass that lets attackers load arbitrary origins in the main window via string-prefix URL matching. Attackers can embed a link ",
-        "published": "2026-10-12T21:17:12.090"
-      },
-      {
-        "cve_id": "CVE-2026-18529",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "IBM Maximo Application Suite - Location Service for Esri Component 9.2, 9.1, and 9.0 is vulnerable to command injection due to improper sanitisation of a user-controlled value passed to a shell comman",
-        "published": "2026-10-12T21:17:16.653"
-      },
-      {
-        "cve_id": "CVE-2026-18537",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "IBM Maximo Application Suite - Location Service for Esri Component 9.2, 9.1, and 9.0 is vulnerable to improper input validation due to an unsanitised container image reference in a Kubernetes operator",
-        "published": "2026-10-12T21:17:16.940"
-      },
-      {
-        "cve_id": "CVE-2026-84315",
+        "cve_id": "CVE-2026-78557",
         "severity": "HIGH",
         "base_score": 8.3,
-        "description": "Nginx UI is a web user interface for the Nginx web server. Prior to 2.4.1, Nginx UI does not apply RequireSecureSession to multiple authenticated mutation routes even though OTP-enabled users are expe",
-        "published": "2026-10-12T21:17:21.900"
+        "description": "A vulnerability has been identified in Industrial Edge App Publisher (All versions < V1.27.9). The application fails to properly sanitize or escape data received from the backend before rendering it i",
+        "published": "2026-10-13T10:17:20.467"
       },
       {
-        "cve_id": "CVE-2026-84319",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Nginx UI is a web user interface for the Nginx web server. Prior to 2.4.1, the regular HTTP configuration API rejects restricted Nginx directives such as load_module, js_import, and js_content. Howeve",
-        "published": "2026-10-12T21:17:22.517"
-      },
-      {
-        "cve_id": "CVE-2021-48012",
+        "cve_id": "CVE-2026-102073",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "fast-toml through 0.5.4 contains a prototype pollution vulnerability that allows attackers to modify Object.prototype by supplying TOML containing __proto__, constructor or prototype key segments. Att",
-        "published": "2026-10-12T21:17:06.057"
+        "description": "A vulnerability has been identified in APOGEE MBC (PPC) (BACnet) (All versions), APOGEE MBC (PPC) (P2 Ethernet) (All versions), APOGEE MEC (PPC) (BACnet) (All versions), APOGEE MEC (PPC) (P2 Ethernet)",
+        "published": "2026-10-13T10:17:14.157"
       },
       {
-        "cve_id": "CVE-2026-96262",
+        "cve_id": "CVE-2026-101020",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "IBM Power Systems Firmware\u00a0FW1060.00 through FW1060.81 is affected by a vulnerability in the service processor mailbox interface. An attacker with authenticated service-level access to the FSP can sen",
-        "published": "2026-10-12T21:17:23.753"
+        "base_score": 7.8,
+        "description": "An incorrect permission assignment for critical resource issue exists in AssetView, AssetView CLOUD, and AssetView Cloud +. If this vulnerability is exploited, a local authenticated attacker who can l",
+        "published": "2026-10-13T09:17:13.257"
       },
       {
-        "cve_id": "CVE-2026-96263",
+        "cve_id": "CVE-2026-72895",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "IBM Power Systems Firmware FW1120.00 through FW1120.01, FW1110.00 through FW1110.31, and FW1060.00 through FW1060.81 is affected by a vulnerability in the host firmware boot process image validation p",
-        "published": "2026-10-12T21:17:23.893"
+        "base_score": 7.7,
+        "description": "A vulnerability has been identified in SIMATIC IPC BX-21A (All versions < V31.01.13), SIMATIC IPC RW-543A (All versions < V1.1.4), SIMATIC IPC227G / IPC277G / IPC277G PRO / IPC327G / IPC377G (All vers",
+        "published": "2026-10-13T10:17:20.130"
+      },
+      {
+        "cve_id": "CVE-2026-108179",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in PluginUs.Net WOLF bulk-editor allows Blind SQL Injection.This issue affects WOLF: from n/a through",
+        "published": "2026-10-13T09:17:14.153"
       }
     ]
   },
