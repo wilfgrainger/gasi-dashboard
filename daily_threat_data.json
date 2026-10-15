@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T22:51:10.544628+00:00",
+  "generated_at": "2026-10-15T02:24:25.368847+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
+        "value": 7,
         "score": 2.5,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 786,
-    "critical_count": 9,
-    "high_count": 34,
+    "total": 824,
+    "critical_count": 7,
+    "high_count": 31,
     "cves": [
       {
         "cve_id": "CVE-2026-107594",
@@ -250,18 +250,11 @@
         "published": "2026-10-14T07:17:02.090"
       },
       {
-        "cve_id": "CVE-2026-110392",
+        "cve_id": "CVE-2026-89310",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Improper neutralization of special elements used in an OS command ('OS command injection') vulnerability in Samsung Open Source QA-Board allows : OS Command Injection.",
-        "published": "2026-10-14T02:16:59.653"
-      },
-      {
-        "cve_id": "CVE-2026-93388",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Printcart Store (PCDesigner / NB Designer) plugin for WooCommerce is vulnerable to unauthenticated arbitrary file upload leading to remote code execution in all versions up to, and including, 2.9.",
-        "published": "2026-10-14T02:17:01.720"
+        "base_score": 9.9,
+        "description": "A parameter taken from the request body is inserted into\na T-SQL statement without parameterization or escaping, allowing\na remote attacker to execute arbitrary SQL statements in the context of the\nap",
+        "published": "2026-10-14T07:17:04.650"
       },
       {
         "cve_id": "CVE-2026-110002",
@@ -299,20 +292,6 @@
         "published": "2026-10-14T04:18:52.840"
       },
       {
-        "cve_id": "CVE-2026-92097",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The Click to Chat for WhatsApp plugin for WordPress is vulnerable to Arbitrary Shortcode Execution in versions up to, and including, 4.44 This is due to the greetings_dialog() function building the {u",
-        "published": "2026-10-14T02:17:01.397"
-      },
-      {
-        "cve_id": "CVE-2026-92817",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Ignition Perspective module does not properly validate session privileges when determining Designer-level access. An authenticated user with access to a Vision project could provide their valid Vi",
-        "published": "2026-10-14T00:17:13.290"
-      },
-      {
         "cve_id": "CVE-2026-110444",
         "severity": "HIGH",
         "base_score": 8.8,
@@ -332,6 +311,13 @@
         "base_score": 8.8,
         "description": "The WP Booking System  WordPress plugin before 2.1.0.1 does not sanitise and escape a client-controllable request value before storing it and later outputting it in an administration screen, allowing ",
         "published": "2026-10-14T07:17:01.350"
+      },
+      {
+        "cve_id": "CVE-2026-86799",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Forms WordPress plugin before 3.0.2 does not sanitise submitted form values on storage, nor escape them before outputting them on the form submissions screen in the administration dashboard, allow",
+        "published": "2026-10-14T07:17:03.860"
       },
       {
         "cve_id": "CVE-2026-110459",
@@ -362,25 +348,39 @@
         "published": "2026-10-14T06:17:06.900"
       },
       {
-        "cve_id": "CVE-2026-104995",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The BP Profile Search plugin for WordPress is vulnerable to Local File Inclusion in versions up to, and including, 5.9 via the 'ajax_template' value parsed from the client-controlled 'bps_directory' c",
-        "published": "2026-10-14T02:16:56.500"
-      },
-      {
-        "cve_id": "CVE-2026-17092",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Directorist: AI-Powered Business Directory, Listings & Classified Ads plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 8.10.2.1. This is due to the ",
-        "published": "2026-10-14T02:16:59.783"
-      },
-      {
         "cve_id": "CVE-2026-110455",
         "severity": "HIGH",
         "base_score": 8.1,
         "description": "A malicious actor with access to the network and under certain conditions could exploit an Improper Input Validation vulnerability found in UniFi Protect AI Key to execute a Command Injection on the d",
         "published": "2026-10-14T05:16:43.647"
+      },
+      {
+        "cve_id": "CVE-2026-103367",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The ShopMagic \u2013 email automation for WordPress plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 4.9.0 via the 'billing_address.first_name' parameter par",
+        "published": "2026-10-14T08:17:02.553"
+      },
+      {
+        "cve_id": "CVE-2026-105429",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "Improper neutralization of special elements in the NetBird client SSH configuration manager (client/ssh/config/manager.go) in NetBird versions 0.60.0 through 0.74.6 allows a malicious or compromised p",
+        "published": "2026-10-14T05:16:42.487"
+      },
+      {
+        "cve_id": "CVE-2026-110450",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "Nix before 2.35.3 and Lix before 2.95.4 allow privilege escalation via a repair operation because it could destroy and then replace a store path before content verification.",
+        "published": "2026-10-14T05:16:42.917"
+      },
+      {
+        "cve_id": "CVE-2026-106931",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "SiteGuard Server Edition contains an OS command injection vulnerability, which may allow an attacker to execute arbitrary OS commands with root or SYSTEM privileges on the system running the affected ",
+        "published": "2026-10-14T05:16:42.633"
       }
     ]
   },
