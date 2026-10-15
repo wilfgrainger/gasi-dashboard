@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-10-15T15:58:46.212856+00:00",
+  "generated_at": "2026-10-15T19:42:52.833308+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 35,
+        "value": 36,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
-        "score": 2.5,
+        "value": 3,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1745,
-    "recent_30d_count": 35,
+    "total_catalog_count": 1746,
+    "recent_30d_count": 36,
     "recent": [
+      {
+        "cve_id": "CVE-2026-21589",
+        "vendor": "Atlassian",
+        "product": "Multiple Products",
+        "name": "Atlassian Multiple Products Files or Directories Accessible to External Parties Vulnerability",
+        "date_added": "2026-10-15",
+        "due_date": "2026-10-18",
+        "description": "Multiple Atlassian products (Bitbucket Data Center ,Confluence Data Center, Jira Service Management Data Center, Jira Software Data Center, Bamboo Data Center, Crowd Data Center, Crucible and Fisheye)",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-105134",
         "vendor": "Ahsay",
@@ -224,163 +234,153 @@
         "due_date": "2026-09-30",
         "description": "Citrix NetScaler ADC and NetScaler Gateway contain an improper input validation vulnerability that could allow an unauthenticated attacker to execute arbitrary commands.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-67279",
-        "vendor": "MikroTik",
-        "product": "RouterOS",
-        "name": "Mikrotik RouterOS Improper Enforcement of Behavioral Workflow Vulnerability",
-        "date_added": "2026-09-25",
-        "due_date": "2026-09-28",
-        "description": "Mikrotik RouterOS contains an improper enforcement of behavioral workflow vulnerability that could allow an unauthenticated client to open a session channel and send an exec request. This vulnerabilit",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 685,
-    "critical_count": 7,
-    "high_count": 41,
+    "total": 564,
+    "critical_count": 3,
+    "high_count": 22,
     "cves": [
       {
-        "cve_id": "CVE-2026-101950",
+        "cve_id": "CVE-2026-55680",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "A Heap-based Buffer Overflow vulnerability in the SVR component of Juniper Networks Junos OS on SRX Series allows an unauthenticated network attacker to cause a denial of service and potentially compr",
-        "published": "2026-10-14T17:17:47.877"
+        "description": "WeGIA is a web manager for charitable institutions. Prior to 3.8.6, unauthenticated POST requests to web/html/socio/sistema/cadastro_cobranca.php can place a quoted SQL expression in the codigo parame",
+        "published": "2026-10-14T20:17:50.193"
       },
       {
-        "cve_id": "CVE-2026-101956",
+        "cve_id": "CVE-2026-55683",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "An Improper Authentication vulnerability in the J-Web web management component of Juniper Networks Junos OS allows an unauthenticated remote attacker to execute arbitrary Junos commands with root priv",
-        "published": "2026-10-14T17:17:48.353"
+        "description": "WeGIA is a web manager for charitable institutions. Prior to 3.8.6, the unauthenticated web/html/socio/sistema/cadastro_cobranca.php endpoint accepts POST input through extract($_REQUEST) and directly",
+        "published": "2026-10-14T20:17:50.640"
       },
       {
-        "cve_id": "CVE-2026-101980",
+        "cve_id": "CVE-2026-55684",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "An Integer Underflow vulnerability in the kernel of Juniper Networks Junos OS with Extended Echo configured allows an unauthenticated, network-based attacker to cause a denial of service by a kernel c",
-        "published": "2026-10-14T17:17:50.503"
+        "description": "WeGIA is a web manager for charitable institutions. Prior to 3.8.6, the unauthenticated web/html/socio/sistema/cadastro_cobrancas_geracao.php endpoint accepts form-encoded POST data through extract($_",
+        "published": "2026-10-14T20:17:50.783"
       },
       {
-        "cve_id": "CVE-2026-101986",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An  Improper Authentication vulnerability in J-Web of Juniper Networks Junos OS and Junos OS Evolved allows an unauthenticated network attacker to bypass J-Web authentication and execute CGI content w",
-        "published": "2026-10-14T17:17:50.953"
-      },
-      {
-        "cve_id": "CVE-2026-101990",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A Stack-based Buffer Overflow vulnerability in the routing protocol daemon (rpd) of Juniper Networks Junos OS and Junos OS Evolved allows a remote configured BGP peer to cause an rpd crash, or on Juno",
-        "published": "2026-10-14T17:17:51.587"
-      },
-      {
-        "cve_id": "CVE-2026-86002",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "Dokku is a docker-powered platform as a service. In Dokku versions before 0.38.25, a user with app-level Dokku access and remote SSH access to execute docker-options commands can store arbitrary strin",
-        "published": "2026-10-14T16:17:54.470"
-      },
-      {
-        "cve_id": "CVE-2026-91881",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "Dell Terraform Provider for Redfish, versions prior to 1.6.2, contains an Improper Certificate Validation vulnerability in the HTTP transport component. An unauthenticated attacker with remote access ",
-        "published": "2026-10-14T16:17:56.767"
-      },
-      {
-        "cve_id": "CVE-2026-87093",
+        "cve_id": "CVE-2026-55681",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Incorrect Permission Assignment for Critical Resource vulnerability in Progress MOVEit Transfer.\n\nThis issue affects MOVEit Transfer: before 2025.1.6 and from 2026.0.0 before 2026.0.4.",
-        "published": "2026-10-14T16:17:54.780"
+        "description": "WeGIA is a web manager for charitable institutions. Prior to 3.8.6, an authenticated user with access to the Material & Patrim\u00f4nio module can submit id_produto to web/html/matPat/restaurar_produto_des",
+        "published": "2026-10-14T20:17:50.343"
       },
       {
-        "cve_id": "CVE-2026-89067",
+        "cve_id": "CVE-2026-96540",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Authentication bypass using an alternate path or channel vulnerability in Progress MOVEit Transfer.\n\nThis issue affects MOVEit Transfer: before 2025.1.6 and from 2026.0.0 before 2026.0.4.",
-        "published": "2026-10-14T16:17:54.897"
+        "description": "An improper access control vulnerability has been identified in the SonicWall Network Security Manager (NSM) on-prem in export settings, potentially allowing a remote authenticated attacker to obtain ",
+        "published": "2026-10-14T21:17:39.603"
       },
       {
-        "cve_id": "CVE-2026-101965",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "An Use of Externally-Controlled Format String vulnerability in the gRPC daemon of Juniper Networks Junos OS Evolved allows an authenticated network attacker to cause telemetry-service disruption, info",
-        "published": "2026-10-14T17:17:48.803"
-      },
-      {
-        "cve_id": "CVE-2026-101967",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "An OS Command Injection vulnerability in the bootzd zero-touch provisioning daemon of Juniper Networks Junos OS Evolved allows an unauthenticated attacker on the management LAN to execute commands as ",
-        "published": "2026-10-14T17:17:49.100"
-      },
-      {
-        "cve_id": "CVE-2026-101978",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "An OS Command Injection vulnerability in the bootzd zero-touch provisioning daemon of Juniper Networks Junos OS Evolved on PTX Series allows an unauthenticated attacker on the management LAN to execut",
-        "published": "2026-10-14T17:17:50.350"
-      },
-      {
-        "cve_id": "CVE-2026-91882",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Dell Terraform Provider for OME, versions 1.0.0 through 1.2.3, contains an Insertion of Sensitive Information into Externally-Accessible File or Directory vulnerability in the API client error handlin",
-        "published": "2026-10-14T16:17:56.880"
-      },
-      {
-        "cve_id": "CVE-2026-100236",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "A flaw was found in the DPDK GSO library. When software GSO copies packet headers into a new mbuf, it does not check that the header fits in the source first segment or in the destination buffer, and ",
-        "published": "2026-10-14T17:17:44.833"
-      },
-      {
-        "cve_id": "CVE-2016-15060",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "A vulnerability was found in PCMan FTP Server up to 2.0.7. This affects an unknown function of the component PORT Command Handler. The manipulation results in buffer overflow. The attack can be launch",
-        "published": "2026-10-14T17:17:33.643"
-      },
-      {
-        "cve_id": "CVE-2026-102695",
+        "cve_id": "CVE-2026-55383",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "OmniFaces is a utility library for Faces. In OmniFaces versions before 1.14.3, 2.7.33, 3.14.23, 4.7.12, and 5.4.2, CombinedResourceHandler accepts a structurally valid deflated and base64 encoded comb",
-        "published": "2026-10-14T16:17:29.840"
+        "description": "InvoiceShelf is an open-source web & mobile app that helps track expenses, payments and create professional invoices and estimates. Prior to version 2.4.0, InvoiceShelf public customer invoice, estima",
+        "published": "2026-10-14T20:17:48.350"
       },
       {
-        "cve_id": "CVE-2026-101966",
+        "cve_id": "CVE-2026-61843",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "A Use of Externally-Controlled Format String vulnerability in the jti-dialoutd of Juniper Networks Junos OS Evolved allows an authenticated network attacker to cause persistent telemetry dial-out deni",
-        "published": "2026-10-14T17:17:48.943"
+        "description": "FileRise is a self-hosted web-based file manager with multi-file upload, editing, and batch operations. Prior to 3.18.0, FileRise upload-enabled shared-folder and upload-only links do not reject a des",
+        "published": "2026-10-14T21:17:37.947"
       },
       {
-        "cve_id": "CVE-2026-89068",
+        "cve_id": "CVE-2026-71854",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "OpenAEV is an open source platform allowing organizations to plan, schedule and conduct cyber adversary simulation campaign and tests. Prior to version 2.260622.0, on a default installation, the `/api",
+        "published": "2026-10-14T21:17:39.177"
+      },
+      {
+        "cve_id": "CVE-2026-102986",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Missing critical step in authentication vulnerability in Progress MOVEit Transfer (LDAP module).\n\nThis issue affects MOVEit Transfer: before 2025.1.6 and from 2026.0.0 before 2026.0.4.",
-        "published": "2026-10-14T16:17:55.017"
+        "description": "Plane is an open-source project management tool. In 1.3.1 and earlier, EntityAssetEndpoint at the public project asset endpoint /api/public/assets/v2/anchor/{anchor}/ requires authentication for write",
+        "published": "2026-10-14T20:17:28.907"
       },
       {
-        "cve_id": "CVE-2026-101955",
+        "cve_id": "CVE-2026-55682",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "A Stack-based Buffer Overflow vulnerability in the UTM Anti-Spam SBL of Juniper Networks Junos OS on SRX series allows an unauthenticated remote attacker to cause arbitrary code execution or a denial ",
-        "published": "2026-10-14T17:17:48.200"
+        "description": "WeGIA is a web manager for charitable institutions. Prior to 3.8.6, the auto-prepended web/html/seguranca/sessionStart.php reflects an attacker-supplied PHPSESSID cookie in a Set-Cookie response and u",
+        "published": "2026-10-14T20:17:50.487"
       },
       {
-        "cve_id": "CVE-2026-53615",
+        "cve_id": "CVE-2026-103977",
         "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "util-linux is a random collection of Linux utilities. Before util-linux 2.41.4, `parse_dos_extended()` in `libblkid/src/partitions/dos.c` computes an extended-partition start sector with 32-bit additi",
-        "published": "2026-10-14T16:17:46.070"
+        "base_score": 8.1,
+        "description": "FileRise is a self-hosted web-based file manager with multi-file upload, editing, and batch operations. Prior to 3.23.0, FileRise stores failed TOTP verification attempts in $_SESSION. An attacker who",
+        "published": "2026-10-14T21:17:33.850"
+      },
+      {
+        "cve_id": "CVE-2026-104108",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "FileRise is a self-hosted web-based file manager with multi-file upload, editing, and batch operations. Prior to 3.23.0, FileRise maps an authenticated OIDC identity to a local account using mutable p",
+        "published": "2026-10-14T21:17:34.880"
+      },
+      {
+        "cve_id": "CVE-2026-57489",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "FileRise is a self-hosted web-based file manager with multi-file upload, editing, and batch operations. Prior to 3.16.0, FileRise deployments with AUTH_BYPASS enabled trust the configured reverse-prox",
+        "published": "2026-10-14T21:17:37.200"
+      },
+      {
+        "cve_id": "CVE-2026-57490",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "FileRise is a self-hosted web-based file manager with multi-file upload, editing, and batch operations. Prior to 3.16.0, when an administrator has enabled WebDAV, FileRise WebDAV Basic authentication ",
+        "published": "2026-10-14T21:17:37.357"
+      },
+      {
+        "cve_id": "CVE-2026-55382",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "InvoiceShelf is an open-source web & mobile app that helps track expenses, payments and create professional invoices and estimates. Prior to version 2.4.0, InvoiceShelf NotesController::show, NotesCon",
+        "published": "2026-10-14T20:17:48.200"
+      },
+      {
+        "cve_id": "CVE-2026-110838",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "FreeRDP shadow server from 3.0.0 before 3.32.0 dispatches input PDUs during the Confirm Active state before authentication, allowing unauthenticated attackers to inject keyboard input. Attackers can n",
+        "published": "2026-10-14T23:17:24.023"
+      },
+      {
+        "cve_id": "CVE-2026-57492",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "FileRise is a self-hosted web-based file manager with multi-file upload, editing, and batch operations. Prior to 3.16.0, FileRise treats an empty or missing users.txt file as a fresh installation even",
+        "published": "2026-10-14T21:17:37.650"
+      },
+      {
+        "cve_id": "CVE-2026-110668",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A weakness has been identified in cemtan sar2html 4.0.0. Affected by this issue is the function index of the file sar2html.py. This manipulation of the argument sort causes sql injection. The attack i",
+        "published": "2026-10-14T20:17:30.997"
+      },
+      {
+        "cve_id": "CVE-2026-110670",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was found in cemtan sar2html 4.0.0. The affected element is the function updateDb of the file sar2html.py of the component Archive Processing. The manipulation of the argument s2host r",
+        "published": "2026-10-14T21:17:36.077"
+      },
+      {
+        "cve_id": "CVE-2026-110679",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was determined in OpenSIPS up to 3.6.8/4.0.1. The impacted element is the function rtpproxy_offer/rtpproxy_answer of the component rtpproxy. This manipulation causes out-of-bounds read",
+        "published": "2026-10-14T21:17:36.253"
       }
     ]
   },
