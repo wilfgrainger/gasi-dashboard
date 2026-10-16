@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-16T19:07:55.562532+00:00",
+  "generated_at": "2026-10-16T22:19:38.862444+00:00",
   "threat_score": {
-    "score": 5.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.5,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 6,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 652,
-    "critical_count": 1,
-    "high_count": 17,
+    "total": 463,
+    "critical_count": 6,
+    "high_count": 38,
     "cves": [
       {
-        "cve_id": "CVE-2026-102946",
+        "cve_id": "CVE-2026-111444",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Wheels through 4.1.2 allows SQL injection on MySQL/MariaDB with backslash escaping enabled (NO_BACKSLASH_ESCAPES absent) when an application supplies request data to inline-literal paths. These includ",
+        "published": "2026-10-16T04:18:30.353"
+      },
+      {
+        "cve_id": "CVE-2026-104798",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The My Calendar \u2013 Accessible Event Manager plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 3.8.7. The public `mcs` GET parameter is reflected into post",
+        "published": "2026-10-16T05:17:28.580"
+      },
+      {
+        "cve_id": "CVE-2026-109219",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Mang Board plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 2.4.4 via the mbw_file_upload function. This is due to missing file extension validatio",
+        "published": "2026-10-16T05:17:29.100"
+      },
+      {
+        "cve_id": "CVE-2026-109515",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The MailOptin \u2013 Popup, Optin Forms & Email Newsletters for Mailchimp, HubSpot, AWeber Etc. plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 1.2.78.6 Thi",
+        "published": "2026-10-16T05:17:29.597"
+      },
+      {
+        "cve_id": "CVE-2026-103768",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The ELEX WordPress HelpDesk & Customer Ticketing System plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 3.3.7 via the initMailPart function. This is d",
+        "published": "2026-10-16T06:17:03.060"
+      },
+      {
+        "cve_id": "CVE-2026-94134",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "joserfc is a Python library that provides an implementation of several JSON Object Signing and Encryption (JOSE) standards. Prior to 1.7.4, joserfc.jws.deserialize_json() accepts a JWS General JSON Se",
-        "published": "2026-10-15T19:17:13.423"
+        "description": "The Apache Airflow SSH provider hook disables SSH host-key verification by default: unless `host_key` is configured or `no_host_key_check` is explicitly set to false, it accepts any server key. This a",
+        "published": "2026-10-15T22:21:12.023"
       },
       {
-        "cve_id": "CVE-2026-104827",
+        "cve_id": "CVE-2026-111380",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "react/http is an event-driven, streaming HTTP client and server implementation for ReactPHP. From 1.0.0 until 1.11.1, React\\Http\\Browser uses ClientRequestStream::handleData() to append response-heade",
-        "published": "2026-10-15T19:17:14.933"
+        "base_score": 8.8,
+        "description": "FreeRDP from 3.29.0 before 3.32.0 contains an integer overflow in the Apple audin backends (audin_mac.m, audin_ios.m), which compute the audio queue buffer size as FramesPerPacket * 2 * nChannels in U",
+        "published": "2026-10-16T03:18:05.123"
       },
       {
-        "cve_id": "CVE-2026-109869",
+        "cve_id": "CVE-2026-111382",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "undici is an HTTP client library for Node.js. In versions 6.23.0 through 6.29.0, 7.18.0 through 7.30.0, and 8.0.0 through 8.12.1, its fetch() implementation crashes the Node.js process when a maliciou",
-        "published": "2026-10-15T19:17:21.770"
+        "base_score": 8.8,
+        "description": "FreeRDP before 3.32.0 contains a client-side heap out-of-bounds write vulnerability in general_LumaToYUV444 and general_ChromaV2ToYUV444 that allows malicious RDP servers to corrupt client memory. Att",
+        "published": "2026-10-16T03:18:05.400"
       },
       {
-        "cve_id": "CVE-2026-111160",
+        "cve_id": "CVE-2026-111446",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "LightLLM through 1.2.0 contains a denial of service vulnerability that allows unauthenticated attackers to crash the inference worker by supplying the internal pd_kv_trans_params field to the /generat",
-        "published": "2026-10-15T19:17:31.100"
+        "base_score": 8.6,
+        "description": "Wheels 4.0.0 through 4.1.2 exposes password-less development tools under /wheels/* to remote clients when enablePublicComponent=true, as it is by default in development. Before 4.1.2 these tools have ",
+        "published": "2026-10-16T04:18:30.763"
       },
       {
-        "cve_id": "CVE-2026-111224",
+        "cve_id": "CVE-2026-104745",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "pfSense CE through 2.9.0 contains an OS command injection vulnerability in the OpenVPN openvpn.connect_async.sh script that allows authenticated VPN users to execute commands as root via crafted usern",
-        "published": "2026-10-15T19:17:35.090"
+        "base_score": 8.1,
+        "description": "The Customer Email Verification for WooCommerce plugin for WordPress is vulnerable to Privilege Escalation via the `alg_wc_ev_verify_email` parameter in versions up to, and including, 3.3.0. The vulne",
+        "published": "2026-10-16T04:18:21.607"
       },
       {
-        "cve_id": "CVE-2026-108334",
+        "cve_id": "CVE-2026-111445",
         "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "A flaw was found in the internal WebAssembly (WASM) shim used by the Kuadrant operator. When generating the CEL predicate that determines whether Gateway-level authentication and rate limiting should ",
-        "published": "2026-10-15T19:17:20.187"
+        "base_score": 8.1,
+        "description": "Wheels 4.0.0 through 4.1.2 before 4.2.0 replaces incoming scope conditions with a primary-key condition in findByKey() and exists(key=). For exists(key=), production with error information disabled re",
+        "published": "2026-10-16T04:18:30.563"
       },
       {
-        "cve_id": "CVE-2026-109383",
+        "cve_id": "CVE-2026-111447",
         "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "undici is an HTTP client library for Node.js. In versions 4.0.0 through 6.29.0, 7.0.0 through 7.30.0, and 8.0.0 through 8.12.1, its Agent dispatcher passes its constructor options through a JSON-based",
-        "published": "2026-10-15T19:17:20.853"
+        "base_score": 8.1,
+        "description": "Wheels 1.1 through 4.1.2 resolves nestedProperties() records by posted primary key without checking that they belong to the parent being saved. A user able to submit a nested form for their own parent",
+        "published": "2026-10-16T04:18:30.960"
       },
       {
-        "cve_id": "CVE-2026-109829",
+        "cve_id": "CVE-2026-103895",
         "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "undici is an HTTP client library for Node.js. In versions 7.0.0 through 7.30.0 and 8.0.0 through 8.12.1, when an originless Agent composes the redirect and cache interceptors in that order with a shar",
-        "published": "2026-10-15T19:17:21.513"
+        "base_score": 8.1,
+        "description": "The miniOrange OTP Login, Verification and SMS Notifications plugin for WordPress is vulnerable to Authentication Bypass in versions up to, and including, 5.5.8 via the `mo_by_pass_login()` function. ",
+        "published": "2026-10-16T05:17:28.333"
       },
       {
-        "cve_id": "CVE-2026-104828",
+        "cve_id": "CVE-2026-109221",
         "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "HtmlUnit Neko is an HtmlUnit adaptation of NekoHTML. Prior to 5.4.0, HTMLWriterFilter writes decoded TEXTAREA and TITLE character content without entity encoding because both elements are treated as s",
-        "published": "2026-10-15T19:17:15.083"
+        "base_score": 8.1,
+        "description": "The Groundhogg \u2014 CRM, Newsletters, and Marketing Automation plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the copy_file function in all vers",
+        "published": "2026-10-16T05:17:29.227"
       },
       {
-        "cve_id": "CVE-2026-111214",
+        "cve_id": "CVE-2026-109447",
         "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "Netgate pfSense CE 2.7.0 through 2.9.0 contains an OS command injection vulnerability that allows authenticated users with QinQ edit privilege to run commands by storing an unvalidated parent interfac",
-        "published": "2026-10-15T19:17:33.603"
+        "base_score": 8.1,
+        "description": "The User Profile Builder \u2013 Beautiful User Registration Forms, User Profiles & User Role Editor plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 4.0.3 vi",
+        "published": "2026-10-16T06:17:08.020"
       },
       {
-        "cve_id": "CVE-2026-111215",
+        "cve_id": "CVE-2026-75941",
         "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "Netgate pfSense CE through 2.9.0 contains an OS command injection vulnerability that allows authenticated users to execute commands as root by supplying a crafted wireless parent interface name. Attac",
-        "published": "2026-10-15T19:17:33.757"
+        "base_score": 8.0,
+        "description": "A potential vulnerability was reported in the Lenovo Legion Zone application, distributed exclusively in the Chinese market, that could allow an attacker on the same logical network to execute arbitra",
+        "published": "2026-10-16T00:17:05.420"
       },
       {
-        "cve_id": "CVE-2026-111216",
+        "cve_id": "CVE-2026-93953",
         "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "Netgate pfSense CE through 2.9.0 contains an OS command injection vulnerability that allows authenticated users with gateway edit privileges to execute commands as root by injecting shell metacharacte",
-        "published": "2026-10-15T19:17:33.907"
+        "base_score": 8.0,
+        "description": "The Backuply \u2013 Backup, Restore, Migrate and Clone plugin for WordPress is vulnerable to SQL Injection via the Biographical Info field (second-order, via restore) in all versions up to, and including, ",
+        "published": "2026-10-16T04:18:43.143"
       },
       {
-        "cve_id": "CVE-2026-111217",
+        "cve_id": "CVE-2026-104932",
         "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "Netgate pfSense CE through 2.9.0 contains an OS command injection vulnerability that allows authenticated users with Virtual IP edit privileges to execute commands as root by storing an unvalidated CA",
-        "published": "2026-10-15T19:17:34.067"
+        "base_score": 8.0,
+        "description": "The Search Regex plugin for WordPress is vulnerable to PHP Object Injection in version 3.5 via deserialization of untrusted input in the replace_all function. This allows authenticated attackers, with",
+        "published": "2026-10-16T06:17:05.590"
       },
       {
-        "cve_id": "CVE-2026-111218",
+        "cve_id": "CVE-2026-111451",
         "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "Netgate pfSense CE 2.7.0 through 2.9.0 contains an OS command injection vulnerability that allows authenticated users with Traffic Shaper Limiters privileges to execute root commands by tampering with",
-        "published": "2026-10-15T19:17:34.210"
+        "base_score": 7.8,
+        "description": "Wheels CLI 4.0.0 through 4.1.1 insufficiently validates or escapes caller-supplied values and package contents. Deploy release/version/rollback values can execute shell commands on deploy hosts as the",
+        "published": "2026-10-16T04:18:31.667"
       },
       {
-        "cve_id": "CVE-2026-111220",
+        "cve_id": "CVE-2026-111389",
         "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "pfSense CE through 2.9.0 contains a crontab injection vulnerability in interfaces_ppps_edit.php that allows authenticated users to execute commands as root by injecting newlines into the ptpid or rese",
-        "published": "2026-10-15T19:17:34.500"
-      },
-      {
-        "cve_id": "CVE-2026-111223",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "Netgate pfSense CE 2.7.0 through 2.9.0 contains a configuration injection vulnerability that allows authenticated users with IPsec Mobile privileges to execute commands as root via the login_banner fi",
-        "published": "2026-10-15T19:17:34.943"
-      },
-      {
-        "cve_id": "CVE-2026-111226",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "pfSense CE 2.4.5 through 2.9.0 contains an OS command injection vulnerability that allows authenticated WebGUI users with Advanced Admin Access privilege to execute commands as root via Login Protecti",
-        "published": "2026-10-15T19:17:35.373"
-      },
-      {
-        "cve_id": "CVE-2026-111229",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "pfSense CE 2.7.0 through 2.9.0 contains a command injection vulnerability in services_captiveportal_hasync.php that allows users with only the Captive Portal HA privilege to execute commands as root. ",
-        "published": "2026-10-15T19:17:35.813"
-      },
-      {
-        "cve_id": "CVE-2026-110874",
-        "severity": "MEDIUM",
-        "base_score": 6.6,
-        "description": "Dolibarr before 23.0.4 contains a PHP object injection vulnerability in jsonOrUnserialize() in functions.lib.php, which calls unserialize() without class restrictions when json_decode() fails. Attacke",
-        "published": "2026-10-15T19:17:24.353"
-      },
-      {
-        "cve_id": "CVE-2026-111219",
-        "severity": "MEDIUM",
-        "base_score": 6.6,
-        "description": "Netgate pfSense CE through 2.9.0 contains a newline injection vulnerability in services_pppoe_edit.php that allows privileged users to inject mpd.secret entries via unvalidated username POST fields. A",
-        "published": "2026-10-15T19:17:34.357"
+        "base_score": 7.7,
+        "description": "Frappe HRMS 14.x before 14.38.2, 15.x before 15.64.0, and 16.x before 16.18.0 contains a SQL injection vulnerability in some endpoints caused by missing input validation. Any authenticated attacker, i",
+        "published": "2026-10-16T03:18:06.540"
       }
     ]
   },
