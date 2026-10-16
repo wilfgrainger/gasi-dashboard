@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T22:46:46.646944+00:00",
+  "generated_at": "2026-10-16T02:18:03.041077+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -7,7 +7,7 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 36,
+        "value": 33,
         "score": 3.0,
         "max": 3
       },
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1746,
-    "recent_30d_count": 36,
+    "recent_30d_count": 33,
     "recent": [
       {
         "cve_id": "CVE-2026-21589",
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 603,
+    "total": 564,
     "critical_count": 3,
-    "high_count": 32,
+    "high_count": 28,
     "cves": [
       {
         "cve_id": "CVE-2026-110911",
@@ -257,11 +257,11 @@
         "published": "2026-10-15T05:17:02.637"
       },
       {
-        "cve_id": "CVE-2026-110862",
+        "cve_id": "CVE-2026-109145",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Better Auth from 1.4.0-beta.18 before 1.7.7 contains an authentication bypass vulnerability that allows unauthenticated attackers to sign in as other users by reusing OAuth state values as Magic Link ",
-        "published": "2026-10-14T23:17:27.673"
+        "base_score": 9.8,
+        "description": "The User Rights Access Manager WordPress plugin through 1.1.3 does not restrict access to one of its AJAX account-registration handlers and assigns newly registered accounts a role that was created as",
+        "published": "2026-10-15T07:17:58.617"
       },
       {
         "cve_id": "CVE-2026-77931",
@@ -278,6 +278,13 @@
         "published": "2026-10-15T03:17:10.797"
       },
       {
+        "cve_id": "CVE-2026-81534",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Email Customizer for WooCommerce (Pro) plugin for WordPress is vulnerable to Remote Code Execution in versions up to, and including, 3.9.5. This is due to insufficient authorization and input sani",
+        "published": "2026-10-15T07:18:03.093"
+      },
+      {
         "cve_id": "CVE-2026-76660",
         "severity": "HIGH",
         "base_score": 8.7,
@@ -285,32 +292,18 @@
         "published": "2026-10-15T02:20:16.020"
       },
       {
-        "cve_id": "CVE-2026-110867",
+        "cve_id": "CVE-2024-22031",
         "severity": "HIGH",
         "base_score": 8.5,
-        "description": "Renovate before 44.60.1 contains an allowlist bypass vulnerability that allows repositories to set restricted environment variables by placing env inside a shared preset. Attackers controlling an exte",
-        "published": "2026-10-14T23:17:28.397"
+        "description": "A vulnerability has been identified within Rancher where a user with the ability to create a project, on a certain cluster, can create a project with the same name as an existing project in a differen",
+        "published": "2026-10-15T09:17:14.023"
       },
       {
-        "cve_id": "CVE-2026-110868",
+        "cve_id": "CVE-2026-79821",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Renovate before 44.79.0 contains a server-side request forgery vulnerability that allows users to make the shared HTTP client request arbitrary internal URLs via extends presets or customDatasources. ",
-        "published": "2026-10-14T23:17:28.537"
-      },
-      {
-        "cve_id": "CVE-2026-110858",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "GitPython from 3.1.30 before 3.2.0 contains a remote code execution vulnerability in Remote.pull() whose unsafe-option guard inspects only keyword arguments, not the positional refspec. Attackers cont",
-        "published": "2026-10-14T23:17:27.043"
-      },
-      {
-        "cve_id": "CVE-2026-110863",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Better Auth @better-auth/sso from 1.7.0-rc.2 before 1.7.3 contains an authentication bypass vulnerability that allows authenticated users to sign in as other users by registering a personal SSO provid",
-        "published": "2026-10-14T23:17:27.830"
+        "base_score": 8.2,
+        "description": "A security vulnerability in\u00a0HPE NonStop SOAP 4.0  may cause memory corruption resulting in a system down.",
+        "published": "2026-10-15T07:18:02.853"
       },
       {
         "cve_id": "CVE-2026-17031",
@@ -320,53 +313,18 @@
         "published": "2026-10-15T06:17:02.693"
       },
       {
+        "cve_id": "CVE-2023-32198",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "A vulnerability has been identified in Steve where by default it was using an insecure option that did not validate the certificate presented by the remote server while performing a TLS connection. Th",
+        "published": "2026-10-15T09:17:13.847"
+      },
+      {
         "cve_id": "CVE-2026-76661",
         "severity": "HIGH",
         "base_score": 7.6,
         "description": "A vulnerability in HPE NonStop QIOMON allows an out-of-bounds write that can corrupt buffer data.",
         "published": "2026-10-15T02:20:16.153"
-      },
-      {
-        "cve_id": "CVE-2026-110838",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "FreeRDP shadow server from 3.0.0 before 3.32.0 dispatches input PDUs during the Confirm Active state before authentication, allowing unauthenticated attackers to inject keyboard input. Attackers can n",
-        "published": "2026-10-14T23:17:24.023"
-      },
-      {
-        "cve_id": "CVE-2026-110856",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "GitPython before 3.2.0 contains a regular expression denial of service vulnerability in the _re_actor_epoch pattern used by parse_actor_and_date on author, committer, and tagger lines. Attackers can s",
-        "published": "2026-10-14T23:17:26.760"
-      },
-      {
-        "cve_id": "CVE-2026-110857",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "GitPython before 3.2.0 contains a remote code execution vulnerability that allows attackers to run commands because Git.ls_remote forwards URLs without check_unsafe_protocols validation. Attackers can",
-        "published": "2026-10-14T23:17:26.903"
-      },
-      {
-        "cve_id": "CVE-2026-110859",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "GitPython before 3.2.0 contains an argument injection vulnerability in Head.checkout() that allows remote attackers to read arbitrary files by supplying a branch name parsed as a git option. Attackers",
-        "published": "2026-10-14T23:17:27.183"
-      },
-      {
-        "cve_id": "CVE-2026-110869",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Nodemailer 3.0.0 before 10.0.13 has a regular expression denial of service in SMTPConnection._actionEHLO, whose four AUTH mechanism detection regexes contain overlapping whitespace sub-patterns that b",
-        "published": "2026-10-14T23:17:28.673"
-      },
-      {
-        "cve_id": "CVE-2026-0993",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "SODOLA SL902-SWTGW124AS firmware before 200.2.12 contains a buffer overflow vulnerability that allows unauthenticated remote attackers to cause a denial of service by sending an oversized boundary val",
-        "published": "2026-10-15T01:19:27.290"
       },
       {
         "cve_id": "CVE-2026-109430",
@@ -381,6 +339,48 @@
         "base_score": 7.5,
         "description": "A security vulnerability in\u00a0HPE NonStop SNMP Trap Multiplexer may cause memory corruption",
         "published": "2026-10-15T02:20:15.457"
+      },
+      {
+        "cve_id": "CVE-2026-76066",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "IntentKit through 2.6.3 contains an authorization bypass vulnerability where the executor validates tool calls against the full tool registry rather than the per-request narrowed tool advertisement en",
+        "published": "2026-10-15T02:20:15.603"
+      },
+      {
+        "cve_id": "CVE-2026-76659",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A vulnerability in the finger daemon of HPE NonStop TCP/IP UTILITIES could allow an unauthenticated remote attacker to cause a denial of service.",
+        "published": "2026-10-15T02:20:15.897"
+      },
+      {
+        "cve_id": "CVE-2026-110907",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Backdrop CMS Core 1.35.x before 1.35.2 and 1.34.x before 1.34.6 mishandles tokens. A token is a small placeholder string (like [node:title] or [user:name]) used to automatically insert dynamic data in",
+        "published": "2026-10-15T03:17:10.640"
+      },
+      {
+        "cve_id": "CVE-2026-76663",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A stack-based buffer overflow vulnerability in\u00a0HPE NonStop TELSERV can cause memory corruption that may result in DoS.",
+        "published": "2026-10-15T03:17:11.233"
+      },
+      {
+        "cve_id": "CVE-2026-15090",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Link Library plugin for WordPress is vulnerable to time-based SQL Injection via the 'link_url' parameter in all versions up to, and including, 7.9.2 due to insufficient escaping on the user suppli",
+        "published": "2026-10-15T06:17:02.160"
+      },
+      {
+        "cve_id": "CVE-2026-96537",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Tutor LMS  WordPress plugin before 4.1.1 does not perform a capability check in a routine that regenerates its managed pages, allowing unauthenticated users to force-publish unpublished pages and ",
+        "published": "2026-10-15T07:18:03.563"
       }
     ]
   },
