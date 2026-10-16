@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-16T02:18:03.041077+00:00",
+  "generated_at": "2026-10-16T08:35:57.967432+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
-        "score": 2.0,
+        "value": 7,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,58 +238,65 @@
     ]
   },
   "nvd": {
-    "total": 564,
-    "critical_count": 3,
-    "high_count": 28,
+    "total": 631,
+    "critical_count": 7,
+    "high_count": 23,
     "cves": [
       {
-        "cve_id": "CVE-2026-110911",
+        "cve_id": "CVE-2026-109694",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Wheels 1.1.8 through 4.1.1 allows SQL injection when caller-supplied quoted values are parsed again as SQL by dynamic finders (such as findOneByEmail), the query builder's where(property, value) and w",
-        "published": "2026-10-15T04:18:22.813"
+        "description": "Incorrect Privilege Assignment vulnerability in WP ManageNinja LLC Fluent CRM fluent-crm allows Privilege Escalation.This issue affects Fluent CRM: from n/a through 3.2.5.",
+        "published": "2026-10-15T11:17:24.537"
       },
       {
-        "cve_id": "CVE-2026-108587",
+        "cve_id": "CVE-2026-109686",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "The 10Web Booster \u2013 Website speed optimization, Cache & Page Speed optimizer plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 2.34.10 via the compressC",
-        "published": "2026-10-15T05:17:02.637"
+        "description": "Deserialization of Untrusted Data vulnerability in Link Whisper INC Link Whisper Free link-whisper allows Object Injection.This issue affects Link Whisper Free: from n/a through 0.9.7.",
+        "published": "2026-10-15T13:17:11.540"
       },
       {
-        "cve_id": "CVE-2026-109145",
+        "cve_id": "CVE-2026-109892",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "The User Rights Access Manager WordPress plugin through 1.1.3 does not restrict access to one of its AJAX account-registration handlers and assigns newly registered accounts a role that was created as",
-        "published": "2026-10-15T07:17:58.617"
+        "description": "Incorrect Privilege Assignment vulnerability in Shabti Kaplan Frontend Admin by DynamiApps acf-frontend-form-element allows Privilege Escalation.This issue affects Frontend Admin by DynamiApps: from n",
+        "published": "2026-10-15T13:17:12.697"
       },
       {
-        "cve_id": "CVE-2026-77931",
+        "cve_id": "CVE-2026-108497",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in TMS Amelia ameliabooking allows SQL Injection.This issue affects Amelia: from n/a through 2.4.10.",
+        "published": "2026-10-15T11:17:19.823"
+      },
+      {
+        "cve_id": "CVE-2026-109688",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Link Whisper INC Link Whisper Free link-whisper allows Blind SQL Injection.This issue affects Link",
+        "published": "2026-10-15T13:17:11.917"
+      },
+      {
+        "cve_id": "CVE-2026-109698",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Kitae Park Mang Board WP mangboard allows SQL Injection.This issue affects Mang Board WP: from n/a",
+        "published": "2026-10-15T13:17:12.317"
+      },
+      {
+        "cve_id": "CVE-2026-99999",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nipv4: validate checksum_start before completing checksum\n\nIf a packet with bad checksum metadata gets into the ipv4 stack,\nskb_chec",
+        "published": "2026-10-15T13:17:14.137"
+      },
+      {
+        "cve_id": "CVE-2026-109693",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "MoviePilot through 3.1.5 contains a command injection vulnerability that allows attackers to execute arbitrary OS commands by embedding malicious instructions in untrusted content processed through to",
-        "published": "2026-10-15T02:20:16.277"
-      },
-      {
-        "cve_id": "CVE-2026-110908",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Netgate pfSense FRR package (pfSense-pkg-frr) 2.0.2_1 and source revision 2.1.2_1 contain an OS command injection vulnerability in the FRR status filter. An authenticated WebGUI user with only the pag",
-        "published": "2026-10-15T03:17:10.797"
-      },
-      {
-        "cve_id": "CVE-2026-81534",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Email Customizer for WooCommerce (Pro) plugin for WordPress is vulnerable to Remote Code Execution in versions up to, and including, 3.9.5. This is due to insufficient authorization and input sani",
-        "published": "2026-10-15T07:18:03.093"
-      },
-      {
-        "cve_id": "CVE-2026-76660",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "A vulnerability in HPE NonStop CIPSAM allows an out-of-bounds\n  write that can corrupt buffer data.",
-        "published": "2026-10-15T02:20:16.020"
+        "description": "Incorrect Privilege Assignment vulnerability in WP ManageNinja LLC Fluent CRM fluent-crm allows Privilege Escalation.This issue affects Fluent CRM: from n/a through 3.2.5.",
+        "published": "2026-10-15T13:17:12.190"
       },
       {
         "cve_id": "CVE-2024-22031",
@@ -299,18 +306,11 @@
         "published": "2026-10-15T09:17:14.023"
       },
       {
-        "cve_id": "CVE-2026-79821",
+        "cve_id": "CVE-2026-79829",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "A security vulnerability in\u00a0HPE NonStop SOAP 4.0  may cause memory corruption resulting in a system down.",
-        "published": "2026-10-15T07:18:02.853"
-      },
-      {
-        "cve_id": "CVE-2026-17031",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Checkout Field Manager (Checkout Manager) for WooCommerce plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 7.9.6 This is due to the plugin not prope",
-        "published": "2026-10-15T06:17:02.693"
+        "description": "A security vulnerability in\u00a0HPE NonStop HTTP WEBSERVER can cause memory corruption which may result in a system halt.",
+        "published": "2026-10-15T10:17:16.083"
       },
       {
         "cve_id": "CVE-2023-32198",
@@ -320,67 +320,67 @@
         "published": "2026-10-15T09:17:13.847"
       },
       {
-        "cve_id": "CVE-2026-76661",
+        "cve_id": "CVE-2026-79824",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "A directory traversal vulnerability in\u00a0HPE NonStop Python 3.x could allow\u00a0 attackers to overwrite arbitrary files via a .. (dot dot) sequence in filenames in a TAR archive.",
+        "published": "2026-10-15T10:17:15.483"
+      },
+      {
+        "cve_id": "CVE-2026-79832",
         "severity": "HIGH",
         "base_score": 7.6,
-        "description": "A vulnerability in HPE NonStop QIOMON allows an out-of-bounds write that can corrupt buffer data.",
-        "published": "2026-10-15T02:20:16.153"
+        "description": "A stack buffer overflow vulnerability in HPE NonStop SQL/MX Executor may potentially result in information disclosure or process crash.",
+        "published": "2026-10-15T11:17:50.313"
       },
       {
-        "cve_id": "CVE-2026-109430",
+        "cve_id": "CVE-2026-101290",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Ellucian WebAdvisor 3.2 contains an unauthenticated XML External Entity (XXE) injection vulnerability that allows remote attackers to submit crafted XML POST requests to the /WebAdvisor/WebAdvisor end",
-        "published": "2026-10-15T02:18:37.150"
+        "description": "A remote attacker may send a specially crafted network packet that causes the\naffected application to perform an out-of-bounds memory read due to insufficient validation of\npacket length. This may res",
+        "published": "2026-10-15T09:17:14.727"
       },
       {
-        "cve_id": "CVE-2026-73799",
+        "cve_id": "CVE-2026-109855",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "A security vulnerability in\u00a0HPE NonStop SNMP Trap Multiplexer may cause memory corruption",
-        "published": "2026-10-15T02:20:15.457"
+        "description": "undici is an HTTP client library for Node.js. In versions 8.11.0 and 8.11.1, its experimental WebSocket client, which is enabled by default when HTTP/2 is allowed, mishandles a failed WebSocket handsh",
+        "published": "2026-10-15T09:17:16.573"
       },
       {
-        "cve_id": "CVE-2026-76066",
+        "cve_id": "CVE-2026-109695",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "IntentKit through 2.6.3 contains an authorization bypass vulnerability where the executor validates tool calls against the full tool registry rather than the per-request narrowed tool advertisement en",
-        "published": "2026-10-15T02:20:15.603"
+        "description": "Insertion of Sensitive Information Into Sent Data vulnerability in WPManageNinja FluentCart fluent-cart allows Retrieve Embedded Sensitive Data.This issue affects FluentCart: from n/a through 1.7.1.",
+        "published": "2026-10-15T11:17:27.113"
       },
       {
-        "cve_id": "CVE-2026-76659",
+        "cve_id": "CVE-2026-79833",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "A vulnerability in the finger daemon of HPE NonStop TCP/IP UTILITIES could allow an unauthenticated remote attacker to cause a denial of service.",
-        "published": "2026-10-15T02:20:15.897"
+        "description": "A vulnerability in\u00a0HPE NonStop ANSI SQLUTIL may allow a remote unauthenticated actor to cause an affected service to terminate unexpectedly, causing a denial of service.",
+        "published": "2026-10-15T11:17:50.433"
       },
       {
-        "cve_id": "CVE-2026-110907",
+        "cve_id": "CVE-2026-107416",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Backdrop CMS Core 1.35.x before 1.35.2 and 1.34.x before 1.34.6 mishandles tokens. A token is a small placeholder string (like [node:title] or [user:name]) used to automatically insert dynamic data in",
-        "published": "2026-10-15T03:17:10.640"
+        "description": "Authorization Bypass Through User-Controlled Key vulnerability in Webba Plugins Webba Booking webba-booking-lite allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affe",
+        "published": "2026-10-15T13:17:10.930"
       },
       {
-        "cve_id": "CVE-2026-76663",
+        "cve_id": "CVE-2026-110723",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "A stack-based buffer overflow vulnerability in\u00a0HPE NonStop TELSERV can cause memory corruption that may result in DoS.",
-        "published": "2026-10-15T03:17:11.233"
+        "description": "In `api-gateway` versions till `1.7.3`, The default rate-limit key resolver, `ClientIpKeyResolver`, derives the per-client bucket key from the leftmost element of the `X-Forwarded-For` request header.",
+        "published": "2026-10-15T13:17:12.857"
       },
       {
-        "cve_id": "CVE-2026-15090",
+        "cve_id": "CVE-2026-79834",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Link Library plugin for WordPress is vulnerable to time-based SQL Injection via the 'link_url' parameter in all versions up to, and including, 7.9.2 due to insufficient escaping on the user suppli",
-        "published": "2026-10-15T06:17:02.160"
-      },
-      {
-        "cve_id": "CVE-2026-96537",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Tutor LMS  WordPress plugin before 4.1.1 does not perform a capability check in a routine that regenerates its managed pages, allowing unauthenticated users to force-publish unpublished pages and ",
-        "published": "2026-10-15T07:18:03.563"
+        "base_score": 7.4,
+        "description": "A security vulnerability in HPE NonStop SQL/MX SQLCAT may allow an unauthenticated user to perform unauthorized command execution.",
+        "published": "2026-10-15T12:16:39.497"
       }
     ]
   },
