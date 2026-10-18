@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T18:21:42.927597+00:00",
+  "generated_at": "2026-10-18T22:03:35.568922+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -238,17 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 591,
+    "total": 548,
     "critical_count": 4,
-    "high_count": 27,
+    "high_count": 23,
     "cves": [
-      {
-        "cve_id": "CVE-2026-111911",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "phpMyFAQ 4.0.0 before 4.1.9 contains an authentication bypass vulnerability where WebAuthn registration endpoints attach credentials to any account without authentication or challenge validation. Atta",
-        "published": "2026-10-17T19:16:33.500"
-      },
       {
         "cve_id": "CVE-2026-110372",
         "severity": "CRITICAL",
@@ -262,6 +255,13 @@
         "base_score": 9.8,
         "description": "Deserialization of Untrusted Data vulnerability in QuantumCloud Conversational Forms for ChatBot conversational-forms allows Object Injection.This issue affects Conversational Forms for ChatBot: from ",
         "published": "2026-10-18T11:16:37.450"
+      },
+      {
+        "cve_id": "CVE-2026-111998",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Vanus 0.8.0 through 0.9.0 contains a default credentials vulnerability that allows unauthenticated remote attackers to gain cluster-admin access by using the hardcoded admin token. Attackers can send ",
+        "published": "2026-10-18T12:17:11.730"
       },
       {
         "cve_id": "CVE-2026-109894",
@@ -285,46 +285,11 @@
         "published": "2026-10-18T11:16:37.577"
       },
       {
-        "cve_id": "CVE-2026-111884",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "phpMyFAQ before 4.1.9 and 4.2.0-alpha before 4.2.0-beta does not require the current password when changing an account e-mail in the user control panel (UserController::updateData, api/user/data/updat",
-        "published": "2026-10-17T19:16:29.450"
-      },
-      {
-        "cve_id": "CVE-2026-111908",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "phpMyFAQ 4.0.0 before 4.1.9 and 4.2.0-alpha before 4.2.0-beta contains a broken object-level authorization vulnerability in the PUT /api/v3.1/faq/update endpoint, which checks only the global edit_faq",
-        "published": "2026-10-17T19:16:33.043"
-      },
-      {
-        "cve_id": "CVE-2026-111882",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "phpMyFAQ 3.2.0-alpha before 4.1.9 and 4.2.0-alpha before 4.2.0-beta contains an authentication bypass vulnerability that allows IdP-authenticated users to skip TOTP two-factor authentication through t",
-        "published": "2026-10-17T19:16:29.240"
-      },
-      {
-        "cve_id": "CVE-2026-111909",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "phpMyFAQ before 4.1.9 contains a missing authorization vulnerability in the deleteUser() API that allows authenticated non-superadmin users with delete_user permission to delete superadmin accounts. A",
-        "published": "2026-10-17T19:16:33.190"
-      },
-      {
         "cve_id": "CVE-2026-110373",
         "severity": "HIGH",
         "base_score": 8.1,
         "description": "Incorrect Privilege Assignment vulnerability in Hamid Alinia Login with phone number login-with-phone-number allows Privilege Escalation.This issue affects Login with phone number: from n/a through 1.",
         "published": "2026-10-18T11:16:36.703"
-      },
-      {
-        "cve_id": "CVE-2026-111927",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Coder before 2.29.20, 2.33.0 before 2.33.12, 2.34.0 before 2.34.8, and 2.35.0 before 2.35.4 contains an improper hostname validation flaw in GetWorkspaceProxyByHostname whose SIMILAR TO pattern perfor",
-        "published": "2026-10-17T19:16:35.527"
       },
       {
         "cve_id": "CVE-2026-96534",
@@ -334,39 +299,18 @@
         "published": "2026-10-18T07:16:53.680"
       },
       {
-        "cve_id": "CVE-2026-111881",
+        "cve_id": "CVE-2026-112005",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "WhoDB 0.104.0 before 0.135.0 contains a path traversal vulnerability that allows remote attackers to read and write arbitrary host files by running DuckDB filesystem functions through the query editor",
+        "published": "2026-10-18T12:17:12.790"
+      },
+      {
+        "cve_id": "CVE-2026-112000",
         "severity": "HIGH",
         "base_score": 7.6,
-        "description": "FreeRDP from 3.14.1 before 3.32.0 contains an integer underflow in the WinPR BMP writer, where a mismatched stride calculation passes SIZE_MAX - 3 to Stream_Zero for sub-byte images. A malicious RDP c",
-        "published": "2026-10-17T19:16:29.103"
-      },
-      {
-        "cve_id": "CVE-2026-111898",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "phpMyFAQ 4.2.0-alpha before 4.2.0-beta contains an authentication bypass vulnerability that allows Keycloak users to take over local accounts by matching preferred_username or email. Attackers control",
-        "published": "2026-10-17T19:16:31.647"
-      },
-      {
-        "cve_id": "CVE-2026-111901",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "phpMyFAQ 4.2.0-alpha before 4.2.0-beta contains an uncontrolled resource consumption vulnerability in the unauthenticated faqs and search API endpoints. Attackers can send concurrent GET requests that",
-        "published": "2026-10-17T19:16:31.953"
-      },
-      {
-        "cve_id": "CVE-2026-111923",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Fleet before 4.89.0 contains an unbounded recursion vulnerability in Apple MDM enrollment property list parsing that allows unauthenticated attackers to crash the server. Attackers can send a crafted ",
-        "published": "2026-10-17T19:16:35.117"
-      },
-      {
-        "cve_id": "CVE-2026-111924",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Fleet before 4.83.0 contains a denial of service vulnerability that allows unauthenticated attackers to exhaust server memory by sending gzip-compressed request bodies. Attackers can send small, highl",
-        "published": "2026-10-17T19:16:35.257"
+        "description": "Vanus 0.8.0 through 0.9.0 contains a missing authorization vulnerability in the gateway that allows any authenticated user to call Subscribe, Ack, and unregistered methods without permission checks. A",
+        "published": "2026-10-18T12:17:12.007"
       },
       {
         "cve_id": "CVE-2026-110383",
@@ -376,11 +320,67 @@
         "published": "2026-10-18T11:16:36.943"
       },
       {
-        "cve_id": "CVE-2026-111880",
+        "cve_id": "CVE-2026-111999",
         "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "FreeRDP versions from 2.0.0 before 3.32.0 contain a heap out-of-bounds write in the server hash-callback NTLM path that fails to validate the MIC offset. Unauthenticated attackers can send a crafted A",
-        "published": "2026-10-17T19:16:28.960"
+        "base_score": 7.5,
+        "description": "Vanus 0.8.0 through 0.9.0 contains a missing authentication vulnerability that allows unauthenticated remote attackers to publish events to any eventbus through the gateway CloudEvents HTTP receiver. ",
+        "published": "2026-10-18T12:17:11.870"
+      },
+      {
+        "cve_id": "CVE-2026-112015",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Omnigent 0.3.0 before 0.14.0 contains a path traversal vulnerability that allows authenticated users to escape the workspace by setting os_env.cwd on nested sub-agents. Attackers can upload a bundle w",
+        "published": "2026-10-18T12:17:14.303"
+      },
+      {
+        "cve_id": "CVE-2026-112021",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "snac2 before 2.93 contains a heap-based buffer overflow vulnerability in _xs_json_load_lexer() that allows unauthenticated remote attackers to corrupt heap memory by sending JSON strings containing a ",
+        "published": "2026-10-18T12:17:15.200"
+      },
+      {
+        "cve_id": "CVE-2026-111866",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A weakness has been identified in nemoTyrant manong up to 7c9e5228e133b9267ad3a415833bc9bb53193bb4. This impacts the function cache/del_cache/arr2sql of the file func.php. This manipulation causes sql",
+        "published": "2026-10-18T00:16:37.960"
+      },
+      {
+        "cve_id": "CVE-2026-111871",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A weakness has been identified in itsmeravitejak Online-Examination-System up to e6208e630b14657999bbfe4c9912302d2a1e2449. The impacted element is an unknown function of the file qsdb/usersdb/brandb/t",
+        "published": "2026-10-18T04:16:35.227"
+      },
+      {
+        "cve_id": "CVE-2026-111872",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A security vulnerability has been detected in itsmeravitejak Online-Examination-System up to e6208e630b14657999bbfe4c9912302d2a1e2449. This affects the function MySQLDB::valid/MySQLDB::getresults/MySQ",
+        "published": "2026-10-18T04:16:35.433"
+      },
+      {
+        "cve_id": "CVE-2026-111873",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was detected in itsmeravitejak Online-Examination-System up to e6208e630b14657999bbfe4c9912302d2a1e2449. This impacts the function MySQLDB::topicslist of the file exammanger.php of the",
+        "published": "2026-10-18T05:16:27.920"
+      },
+      {
+        "cve_id": "CVE-2026-111990",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A weakness has been identified in kishan0725 Hospital Management System up to 777fda46b77a820977a5ba616283dbfbc40bf7e1. This affects the function mysqli_query of the file admin-panel.php of the compon",
+        "published": "2026-10-18T15:16:52.693"
+      },
+      {
+        "cve_id": "CVE-2026-110031",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The Salon Booking System  WordPress plugin before 10.31.11 does not prevent users holding its custom salon staff role from assigning arbitrary capabilities to other accounts when editing a customer, a",
+        "published": "2026-10-18T07:16:52.077"
       }
     ]
   },
