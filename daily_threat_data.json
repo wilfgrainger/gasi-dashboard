@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-18T08:25:00.246291+00:00",
+  "generated_at": "2026-10-18T15:06:09.661334+00:00",
   "threat_score": {
-    "score": 5.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 4,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 88,
-    "critical_count": 1,
-    "high_count": 19,
+    "total": 149,
+    "critical_count": 4,
+    "high_count": 27,
     "cves": [
       {
         "cve_id": "CVE-2026-111911",
@@ -248,6 +248,34 @@
         "base_score": 9.8,
         "description": "phpMyFAQ 4.0.0 before 4.1.9 contains an authentication bypass vulnerability where WebAuthn registration endpoints attach credentials to any account without authentication or challenge validation. Atta",
         "published": "2026-10-17T19:16:33.500"
+      },
+      {
+        "cve_id": "CVE-2026-110372",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Incorrect Privilege Assignment vulnerability in Brainstorm Force OttoKit suretriggers allows Privilege Escalation.This issue affects OttoKit: from n/a through 1.1.40.",
+        "published": "2026-10-18T11:16:36.580"
+      },
+      {
+        "cve_id": "CVE-2026-110886",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Deserialization of Untrusted Data vulnerability in QuantumCloud Conversational Forms for ChatBot conversational-forms allows Object Injection.This issue affects Conversational Forms for ChatBot: from ",
+        "published": "2026-10-18T11:16:37.450"
+      },
+      {
+        "cve_id": "CVE-2026-109894",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Arraytics Booktics booktics allows SQL Injection.This issue affects Booktics: from n/a through 1.0",
+        "published": "2026-10-18T11:16:36.190"
+      },
+      {
+        "cve_id": "CVE-2026-107436",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Deserialization of Untrusted Data vulnerability in WP Chill Strong Testimonials strong-testimonials allows Object Injection.This issue affects Strong Testimonials: from n/a through 3.3.12.",
+        "published": "2026-10-18T11:16:34.720"
       },
       {
         "cve_id": "CVE-2026-111884",
@@ -278,6 +306,13 @@
         "published": "2026-10-17T19:16:33.190"
       },
       {
+        "cve_id": "CVE-2026-110373",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Incorrect Privilege Assignment vulnerability in Hamid Alinia Login with phone number login-with-phone-number allows Privilege Escalation.This issue affects Login with phone number: from n/a through 1.",
+        "published": "2026-10-18T11:16:36.703"
+      },
+      {
         "cve_id": "CVE-2026-111927",
         "severity": "HIGH",
         "base_score": 7.7,
@@ -285,18 +320,18 @@
         "published": "2026-10-17T19:16:35.527"
       },
       {
+        "cve_id": "CVE-2026-96534",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "The Modern Events Calendar Lite WordPress plugin before 7.37.0, Modern Event Calendar Pro WordPress plugin before 7.37.0 does not sanitise and escape a parameter before using it in a SQL statement, al",
+        "published": "2026-10-18T07:16:53.680"
+      },
+      {
         "cve_id": "CVE-2026-111881",
         "severity": "HIGH",
         "base_score": 7.6,
         "description": "FreeRDP from 3.14.1 before 3.32.0 contains an integer underflow in the WinPR BMP writer, where a mismatched stride calculation passes SIZE_MAX - 3 to Stream_Zero for sub-byte images. A malicious RDP c",
         "published": "2026-10-17T19:16:29.103"
-      },
-      {
-        "cve_id": "CVE-2026-110889",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Generation of Error Message Containing Sensitive Information vulnerability in Gantry Gantry 5 Framework gantry5 allows Retrieve Embedded Sensitive Data.This issue affects Gantry 5 Framework: from n/a ",
-        "published": "2026-10-17T11:16:32.017"
       },
       {
         "cve_id": "CVE-2026-111898",
@@ -327,6 +362,13 @@
         "published": "2026-10-17T19:16:35.257"
       },
       {
+        "cve_id": "CVE-2026-110383",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Authorization Bypass Through User-Controlled Key vulnerability in WP E-Signature Electronic Signature Add-on for Fluent Forms signature-fluent-contract-forms-add-on allows Exploiting Incorrectly Confi",
+        "published": "2026-10-18T11:16:36.943"
+      },
+      {
         "cve_id": "CVE-2026-111880",
         "severity": "HIGH",
         "base_score": 7.4,
@@ -339,48 +381,6 @@
         "base_score": 7.3,
         "description": "A weakness has been identified in nemoTyrant manong up to 7c9e5228e133b9267ad3a415833bc9bb53193bb4. This impacts the function cache/del_cache/arr2sql of the file func.php. This manipulation causes sql",
         "published": "2026-10-18T00:16:37.960"
-      },
-      {
-        "cve_id": "CVE-2026-111871",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A weakness has been identified in itsmeravitejak Online-Examination-System up to e6208e630b14657999bbfe4c9912302d2a1e2449. The impacted element is an unknown function of the file qsdb/usersdb/brandb/t",
-        "published": "2026-10-18T04:16:35.227"
-      },
-      {
-        "cve_id": "CVE-2026-111872",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security vulnerability has been detected in itsmeravitejak Online-Examination-System up to e6208e630b14657999bbfe4c9912302d2a1e2449. This affects the function MySQLDB::valid/MySQLDB::getresults/MySQ",
-        "published": "2026-10-18T04:16:35.433"
-      },
-      {
-        "cve_id": "CVE-2026-111873",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was detected in itsmeravitejak Online-Examination-System up to e6208e630b14657999bbfe4c9912302d2a1e2449. This impacts the function MySQLDB::topicslist of the file exammanger.php of the",
-        "published": "2026-10-18T05:16:27.920"
-      },
-      {
-        "cve_id": "CVE-2026-109701",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in PAYCOMET PAYCOMET for WooCommerce paytpv-for-woocommerce allows Reflected XSS.This issue affects P",
-        "published": "2026-10-17T17:16:28.973"
-      },
-      {
-        "cve_id": "CVE-2026-111897",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "phpMyFAQ 4.2.0-alpha before 4.2.0-beta contains an authorization bypass vulnerability that allows category-restricted editors to manage attachments of FAQs outside their categories by supplying arbitr",
-        "published": "2026-10-17T19:16:31.487"
-      },
-      {
-        "cve_id": "CVE-2026-111907",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "phpMyFAQ 4.0.0 before 4.1.9 contains a cross-site request forgery vulnerability in the POST /admin/api/update-database endpoint, which executes database migrations without validating a CSRF token. Att",
-        "published": "2026-10-17T19:16:32.883"
       }
     ]
   },
