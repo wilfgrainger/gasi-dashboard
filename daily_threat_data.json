@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T21:52:33.851554+00:00",
+  "generated_at": "2026-10-18T02:10:38.055371+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 35,
+        "value": 32,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
+        "value": 4,
         "score": 2.0,
         "max": 3
       },
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1748,
-    "recent_30d_count": 35,
+    "recent_30d_count": 32,
     "recent": [
       {
         "cve_id": "CVE-2026-102764",
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 124,
-    "critical_count": 3,
-    "high_count": 31,
+    "total": 108,
+    "critical_count": 4,
+    "high_count": 28,
     "cves": [
       {
         "cve_id": "CVE-2026-111823",
@@ -257,6 +257,13 @@
         "published": "2026-10-17T04:16:47.780"
       },
       {
+        "cve_id": "CVE-2026-111911",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "phpMyFAQ 4.0.0 before 4.1.9 contains an authentication bypass vulnerability where WebAuthn registration endpoints attach credentials to any account without authentication or challenge validation. Atta",
+        "published": "2026-10-17T19:16:33.500"
+      },
+      {
         "cve_id": "CVE-2026-110653",
         "severity": "CRITICAL",
         "base_score": 9.1,
@@ -264,25 +271,11 @@
         "published": "2026-10-17T03:16:28.480"
       },
       {
-        "cve_id": "CVE-2026-96627",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Arcane is an interface for managing Docker containers, images, networks, and volumes. Prior to 2.6.0, UpdateUser in backend/api/handlers/users.go sets PasswordHash for any target without comparing cal",
-        "published": "2026-10-16T22:18:58.227"
-      },
-      {
         "cve_id": "CVE-2026-111853",
         "severity": "HIGH",
         "base_score": 8.8,
         "description": "An issue was discovered on Tektronix 3 Series MDO devices before 1.21.1. An OS command injection vulnerability exists in the FILESystem:MOUNT:DRIve SCPI command handler. Insufficient neutralization of",
         "published": "2026-10-17T02:17:18.610"
-      },
-      {
-        "cve_id": "CVE-2026-96626",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Arcane is an interface for managing Docker containers, images, networks, and volumes. Prior to 2.5.0, UpdateRegistry and TestRegistry in backend/api/services/container_registry_service.go allow the re",
-        "published": "2026-10-16T22:18:58.070"
       },
       {
         "cve_id": "CVE-2026-111884",
@@ -297,13 +290,6 @@
         "base_score": 8.3,
         "description": "phpMyFAQ 4.0.0 before 4.1.9 and 4.2.0-alpha before 4.2.0-beta contains a broken object-level authorization vulnerability in the PUT /api/v3.1/faq/update endpoint, which checks only the global edit_faq",
         "published": "2026-10-17T19:16:33.043"
-      },
-      {
-        "cve_id": "CVE-2026-49410",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "OpenHuman is an open-source agent harness available as a desktop application and Rust library. Versions before 0.56.0 allow cross-site request forgery against the unauthenticated GET /auth/telegram lo",
-        "published": "2026-10-16T22:17:23.490"
       },
       {
         "cve_id": "CVE-2026-111854",
@@ -334,11 +320,11 @@
         "published": "2026-10-17T19:16:33.190"
       },
       {
-        "cve_id": "CVE-2026-111044",
+        "cve_id": "CVE-2026-111927",
         "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "Sunshine is a self-hosted game stream host for Moonlight. From 2026.329.165800 until 2026.906.222525, Sunshine accepted any client certificate that chained to a stored paired-client certificate, but i",
-        "published": "2026-10-16T22:17:20.610"
+        "base_score": 7.7,
+        "description": "Coder before 2.29.20, 2.33.0 before 2.33.12, 2.34.0 before 2.34.8, and 2.35.0 before 2.35.4 contains an improper hostname validation flaw in GetWorkspaceProxyByHostname whose SIMILAR TO pattern perfor",
+        "published": "2026-10-17T19:16:35.527"
       },
       {
         "cve_id": "CVE-2026-111881",
@@ -346,13 +332,6 @@
         "base_score": 7.6,
         "description": "FreeRDP from 3.14.1 before 3.32.0 contains an integer underflow in the WinPR BMP writer, where a mismatched stride calculation passes SIZE_MAX - 3 to Stream_Zero for sub-byte images. A malicious RDP c",
         "published": "2026-10-17T19:16:29.103"
-      },
-      {
-        "cve_id": "CVE-2026-68498",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "StreamReadConstraints.maxNameLength (default 50,000 characters) is intended to bound how much memory a single JSON Object property name can consume while being parsed, independently of the much larger",
-        "published": "2026-10-16T22:17:25.183"
       },
       {
         "cve_id": "CVE-2026-111855",
@@ -381,6 +360,27 @@
         "base_score": 7.5,
         "description": "Generation of Error Message Containing Sensitive Information vulnerability in Gantry Gantry 5 Framework gantry5 allows Retrieve Embedded Sensitive Data.This issue affects Gantry 5 Framework: from n/a ",
         "published": "2026-10-17T11:16:32.017"
+      },
+      {
+        "cve_id": "CVE-2026-111898",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "phpMyFAQ 4.2.0-alpha before 4.2.0-beta contains an authentication bypass vulnerability that allows Keycloak users to take over local accounts by matching preferred_username or email. Attackers control",
+        "published": "2026-10-17T19:16:31.647"
+      },
+      {
+        "cve_id": "CVE-2026-111901",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "phpMyFAQ 4.2.0-alpha before 4.2.0-beta contains an uncontrolled resource consumption vulnerability in the unauthenticated faqs and search API endpoints. Attackers can send concurrent GET requests that",
+        "published": "2026-10-17T19:16:31.953"
+      },
+      {
+        "cve_id": "CVE-2026-111923",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Fleet before 4.89.0 contains an unbounded recursion vulnerability in Apple MDM enrollment property list parsing that allows unauthenticated attackers to crash the server. Attackers can send a crafted ",
+        "published": "2026-10-17T19:16:35.117"
       }
     ]
   },
