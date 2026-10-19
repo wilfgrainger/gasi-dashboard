@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-19T17:58:30.088822+00:00",
+  "generated_at": "2026-10-19T23:12:16.124939+00:00",
   "threat_score": {
-    "score": 4.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 0.5,
+        "value": 2,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,10 +238,151 @@
     ]
   },
   "nvd": {
-    "total": 0,
-    "critical_count": 0,
-    "high_count": 0,
-    "cves": []
+    "total": 534,
+    "critical_count": 2,
+    "high_count": 11,
+    "cves": [
+      {
+        "cve_id": "CVE-2026-110887",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Improper Control of Generation of Code ('Code Injection') vulnerability in HivePress HivePress hivepress allows Remote Code Inclusion.This issue affects HivePress: from n/a through 1.7.32.",
+        "published": "2026-10-19T10:16:45.627"
+      },
+      {
+        "cve_id": "CVE-2026-108983",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A vulnerability is in Web Server default connection ports under the process name GeoWebServer.exe .",
+        "published": "2026-10-19T02:17:05.853"
+      },
+      {
+        "cve_id": "CVE-2026-111441",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "\u5728 openGauss-server \u7684 src/gausskernel/cbb/utils/hll/hll.cpp \u4e2d\uff0c\u5185\u7f6e\u51fd\u6570 HllObjectUnpack() \u5b58\u5728\u957f\u5ea6\u6821\u9a8c\u7f3a\u9677\u3002\u8be5\u51fd\u6570\u4ece\u7528\u6237\u63d0\u4f9b\u7684 packed HLL \u89e3\u6790 lenUsed \u4e0e lenTotal \u540e\uff0c\u4ec5\u68c0\u67e5\u8f93\u5165\u957f\u5ea6\u8db3\u4ee5\u8986\u76d6 HLL_HEAD_SIZE + lenUsed\uff0c\u968f\u540e\u6309 lenTotal \u5206\u914d\u7f13\u51b2\u533a\u3001\u6309 lenUs",
+        "published": "2026-10-19T03:16:58.543"
+      },
+      {
+        "cve_id": "CVE-2026-16487",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "A flaw was found in bootc when operating with the default containers signature policy. Automatic or manual upgrades of a mutable image tag may apply unsigned content for registries that fall through t",
+        "published": "2026-10-19T06:17:24.203"
+      },
+      {
+        "cve_id": "CVE-2026-111398",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in PT Norther Lights Production MapSVG mapsvg-lite-interactive-vector-maps allows Path Traversal.This issue",
+        "published": "2026-10-19T10:16:45.880"
+      },
+      {
+        "cve_id": "CVE-2026-108984",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A vulnerability is in Web Server default connection ports under the process name GeoWebServer.exe .",
+        "published": "2026-10-19T02:17:05.997"
+      },
+      {
+        "cve_id": "CVE-2026-112082",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A vulnerability was identified in sgl-project SGLang up to 0.5.19. This impacts the function Scheduler.expert_distribution_handle of the file python/sglang/srt/eplb/expert_distribution.py of the compo",
+        "published": "2026-10-19T06:17:23.013"
+      },
+      {
+        "cve_id": "CVE-2026-16460",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "A flaw was found in bootc and ostree. Already-staged deployments are finalized without revalidating the deployment's container image against the current containers signature policy. Unsigned OS conten",
+        "published": "2026-10-19T07:16:31.253"
+      },
+      {
+        "cve_id": "CVE-2026-112044",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A security vulnerability has been detected in dotnet eShop up to 913acea66708a59595351174cee9b29f37179d29. The affected element is the function AddApplicationServices of the file src/Catalog.API/Exten",
+        "published": "2026-10-19T03:16:59.153"
+      },
+      {
+        "cve_id": "CVE-2026-76740",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "A security vulnerability in HPE Compute Scale-up Server 3200 and 3250 platforms, Superdome Flex and Superdome Flex 280 servers could be exploited remotely to execute arbitrary commands on the RMC.",
+        "published": "2026-10-19T07:16:31.900"
+      },
+      {
+        "cve_id": "CVE-2026-104679",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "VOCALOID6 Editor provided by Yamaha Corporation improperly restricts XML external entity references. Loading a specially crafted project file may the product to initiate unintended communication, pote",
+        "published": "2026-10-19T09:17:06.890"
+      },
+      {
+        "cve_id": "CVE-2026-110379",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Ays Pro Quiz Maker quiz-maker allows Reflected XSS.This issue affects Quiz Maker: from n/a through",
+        "published": "2026-10-19T10:16:45.490"
+      },
+      {
+        "cve_id": "CVE-2026-111440",
+        "severity": "HIGH",
+        "base_score": 7.0,
+        "description": "\u5728 openGauss-connector-jdbc \u7684 pgjdbc/src/main/java/org/postgresql/log/LogFactory.java \u4e2d\uff0cLogFactory \u6839\u636e JDBC \u8fde\u63a5\u53c2\u6570\u4e2d\u7684 logger \u7c7b\u540d\u8c03\u7528 Class.forName \u52a0\u8f7d\u7c7b\u540e\uff0c\u76f4\u63a5\u53cd\u5c04\u8c03\u7528\u4ee5 String \u4e3a\u53c2\u6570\u7684\u6784\u9020\u51fd\u6570\uff0c\u518d\u8f6c\u6362\u4e3a Log\u3002\u7f3a\u5c11 asSubclass(Log.class",
+        "published": "2026-10-19T04:17:03.657"
+      },
+      {
+        "cve_id": "CVE-2026-106933",
+        "severity": "MEDIUM",
+        "base_score": 6.8,
+        "description": "The Blaze Demo Importer WordPress plugin before 1.0.17 does not sanitize uploaded SVG files and registers the SVG MIME type for the WordPress media library unconditionally, allowing authenticated user",
+        "published": "2026-10-19T06:17:20.817"
+      },
+      {
+        "cve_id": "CVE-2026-74921",
+        "severity": "MEDIUM",
+        "base_score": 6.8,
+        "description": "The Document Gallery WordPress plugin through 5.1.1 does not sanitise or escape several gallery shortcode attributes before embedding them in a single-quoted HTML attribute in the rendered gallery mar",
+        "published": "2026-10-19T07:16:31.613"
+      },
+      {
+        "cve_id": "CVE-2026-112028",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "A flaw has been found in light0011 cms c774dce31c6df0055568a8d5c53d964d99be199d/f72cf46f601efb2a0618c3814cc2f61380b38930. Affected by this issue is some unknown functionality of the file App/Home/Cont",
+        "published": "2026-10-18T23:16:56.247"
+      },
+      {
+        "cve_id": "CVE-2026-111438",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "\u5728 openGauss-server \u7684 src/common/backend/libpq/hba.cpp \u4e2d\uff0c\u590d\u5236\u8fde\u63a5\u8ba4\u8bc1\u5b58\u5728\u8bbf\u95ee\u63a7\u5236\u7ed5\u8fc7\u3002hba_getauthmethod() \u5728\u5904\u7406 HADR/SW \u590d\u5236\u53d1\u9001\u65b9\u65f6\uff0c\u4e0d\u8981\u6c42 is_node_internal_connection()\uff0c\u76f4\u63a5\u8c03\u7528 check_hba_replication()\u3002check_hba_replication() \u4ec5\u6309 ",
+        "published": "2026-10-19T09:17:07.173"
+      },
+      {
+        "cve_id": "CVE-2026-110898",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "Incorrect Privilege Assignment vulnerability in WPDeveloper Essential Addons for Elementor essential-addons-for-elementor-lite allows Privilege Escalation.This issue affects Essential Addons for Eleme",
+        "published": "2026-10-19T10:16:45.753"
+      },
+      {
+        "cve_id": "CVE-2026-112030",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A vulnerability was found in diem-project diem up to 5.1.3. This vulnerability affects unknown code of the file dmCorePlugin/lib/data/dmDataLoad.php. Performing a manipulation results in use of defaul",
+        "published": "2026-10-19T00:16:30.640"
+      },
+      {
+        "cve_id": "CVE-2026-112035",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A security vulnerability has been detected in aircheng-org iWebShop-5 up to 5.16. This affects the function send_message_mobile of the file controllers/simple.php. Such manipulation of the argument us",
+        "published": "2026-10-19T01:16:37.510"
+      }
+    ]
   },
   "top_ips": {
     "ips": [],
