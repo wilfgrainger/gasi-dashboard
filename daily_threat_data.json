@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-20T16:02:27.402147+00:00",
+  "generated_at": "2026-10-20T22:49:34.156000+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 32,
+        "value": 38,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
+        "value": 8,
         "score": 2.5,
         "max": 3
       },
@@ -32,9 +32,69 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1748,
-    "recent_30d_count": 32,
+    "total_catalog_count": 1754,
+    "recent_30d_count": 38,
     "recent": [
+      {
+        "cve_id": "CVE-2026-106931",
+        "vendor": "EG Secure Solutions",
+        "product": "SiteGuard Server Edition",
+        "name": "EG Secure Solutions SiteGuard Server Edition OS Command Injection Vulnerability",
+        "date_added": "2026-10-20",
+        "due_date": "2026-10-23",
+        "description": "EG Secure Solutions SiteGuard Server Edition contains an OS command injection vulnerability which may allow an attacker to execute arbitrary OS commands with root or SYSTEM privileges on the system ru",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-96656",
+        "vendor": "Plex",
+        "product": "Media Server",
+        "name": "Plex Media Server External Control of File Name or Path Vulnerability",
+        "date_added": "2026-10-20",
+        "due_date": "2026-10-23",
+        "description": "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-96655",
+        "vendor": "Plex",
+        "product": "Media Server",
+        "name": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+        "date_added": "2026-10-20",
+        "due_date": "2026-11-03",
+        "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/uni",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-96654",
+        "vendor": "Plex",
+        "product": "Media Server",
+        "name": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
+        "date_added": "2026-10-20",
+        "due_date": "2026-10-23",
+        "description": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. ",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-96652",
+        "vendor": "Plex",
+        "product": "Media Server",
+        "name": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
+        "date_added": "2026-10-20",
+        "due_date": "2026-11-03",
+        "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to include a full URL in the 'protocol' parameter and force the",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-110936",
+        "vendor": "Siemens",
+        "product": "Software Center",
+        "name": "Siemens Software Center Uncontrolled Search Path Element Vulnerability",
+        "date_added": "2026-10-20",
+        "due_date": "2026-11-03",
+        "description": "Siemens Software Center contains an uncontrolled search path element vulnerability that could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-102764",
         "vendor": "BeyondTrust",
@@ -174,213 +234,153 @@
         "due_date": "2026-10-11",
         "description": "ProFTPD contains an improper access control vulnerability that could allow remote attackers to read and write to arbitrary files via the site cpfr and site cpto commands.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-88779",
-        "vendor": "Citrix",
-        "product": "NetScaler",
-        "name": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
-        "date_added": "2026-10-04",
-        "due_date": "2026-10-07",
-        "description": "Citrix NetScaler ADC (formerly Citrix ADC) and Citrix NetScaler Gateway (formerly Citrix Gateway) contain an improper restriction of operations within the bounds of a memory buffer vulnerability that ",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-102490",
-        "vendor": "Zammad GmbH",
-        "product": "Zammad",
-        "name": "Zammad GmbH Zammad Improper Privilege Management Vulnerability",
-        "date_added": "2026-10-02",
-        "due_date": "2026-10-05",
-        "description": "Zammad GmbH Zammad contains an improper privilege management vulnerability that can allow the local zammad user to escalate privileges to root. This vulnerability can be chained with CVE-2026-102489.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-102489",
-        "vendor": "Zammad GmbH",
-        "product": "Zammad",
-        "name": "Zammad GmbH Zammad Session Fixation Vulnerability",
-        "date_added": "2026-10-02",
-        "due_date": "2026-10-05",
-        "description": "Zammad GmbH Zammad contains a session fixation vulnerability that can lead to remote code execution as the zammad user. This vulnerability can be chained with CVE-2026-102490.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-104286",
-        "vendor": "Fortinet",
-        "product": "FortiMail",
-        "name": "Fortinet FortiMail Path Traversal Vulnerability",
-        "date_added": "2026-10-01",
-        "due_date": "2026-10-04",
-        "description": "Fortinet FortiMail contains a path traversal and an improper neutralization of NULL byte or NULL character vulnerability that may allow an unauthenticated attacker to write arbitrary files on the unde",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-76504",
-        "vendor": "Cisco",
-        "product": "Catalyst SD-WAN Manager",
-        "name": "Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability",
-        "date_added": "2026-09-30",
-        "due_date": "2026-10-03",
-        "description": "Cisco Catalyst SD-WAN Manager contains a hex encoding vulnerability that could allow an unauthenticated, remote attacker to access an affected system with privileges of the admin user due to improper ",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-86950",
-        "vendor": "Apple",
-        "product": "Multiple Products",
-        "name": "Apple Multiple Products Out-of-Bounds Write Vulnerability",
-        "date_added": "2026-09-29",
-        "due_date": "2026-10-13",
-        "description": "Apple iOS, macOS, and iPadOS contain an out-of-bounds write vulnerability in CoreGraphics that may lead to arbitrary code execution.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 543,
-    "critical_count": 6,
-    "high_count": 27,
+    "total": 1939,
+    "critical_count": 8,
+    "high_count": 22,
     "cves": [
       {
-        "cve_id": "CVE-2026-111057",
+        "cve_id": "CVE-2026-112370",
         "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Mercury is a Python framework for sharing Jupyter notebooks as web applications and dashboards. From 3.0.0 until 3.2.4, a missing comma in BLOCKED_PATTERNS concatenates the /lab and /api/terminals reg",
-        "published": "2026-10-19T16:17:03.810"
+        "base_score": 9.9,
+        "description": "A vulnerability was found in H3C Magic NX15 100R017. This issue affects the function sub_416874 of the file /usr/bin/usrlist. Performing a manipulation results in os command injection. Remote exploita",
+        "published": "2026-10-19T23:17:35.817"
       },
       {
-        "cve_id": "CVE-2026-109432",
+        "cve_id": "CVE-2026-112371",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Camunda 7.24.0 before 7.24.14 and 7.23.0 before 7.23.17 contains an expression injection vulnerability where AdhocQueryValidator.validate() fails to check sub-query expression maps within the orQuerie",
-        "published": "2026-10-19T16:17:02.487"
+        "base_score": 9.9,
+        "description": "A vulnerability was determined in H3C Magic NX15 NX15V100R017. Impacted is the function write of the file /api/esps of the component RPC Interface. Executing a manipulation of the argument path can le",
+        "published": "2026-10-19T23:17:36.000"
       },
       {
-        "cve_id": "CVE-2026-111058",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Mercury is a Python framework for sharing Jupyter notebooks as web applications and dashboards. Prior to 3.2.6, default tokenless deployments allow anonymous clients to create Jupyter kernels and send",
-        "published": "2026-10-19T16:17:03.957"
-      },
-      {
-        "cve_id": "CVE-2026-107083",
+        "cve_id": "CVE-2026-109442",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "SENAYAN Library Management System (SLiMS) Bulian (slims9_bulian) 9.8.0 is vulnerable to SQL Injection in admin/modules/reporting/customs/dl_detail.php via the parameter fileID.",
-        "published": "2026-10-19T17:17:00.690"
+        "description": "piflow 2.0.0 through 2.0.1 contains a remote code execution vulnerability in its DeepAgents chat agent, whose POST /chat and POST /chat/stream endpoints lack authentication. Attackers can instruct the",
+        "published": "2026-10-20T01:17:10.383"
       },
       {
-        "cve_id": "CVE-2026-111862",
+        "cve_id": "CVE-2026-75128",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Rank Math SEO PRO for WordPress is affected by a supply-chain compromise in a subset of version 3.0.123 packages downloaded or updated between October 15, 2026 at 20:02 UTC and October 16, 2026 at 07:",
-        "published": "2026-10-19T17:17:04.507"
+        "description": "Langchain-Chatchat through 0.3.1.3 exposes a POST /tools/call API endpoint that invokes any registered tool by name without authentication, leaving the always-registered shell tool callable. Remote at",
+        "published": "2026-10-20T01:17:19.063"
       },
       {
-        "cve_id": "CVE-2026-107188",
+        "cve_id": "CVE-2026-77932",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "A user can upload export reports with any file contents and specify any contents. JSP code can be uploaded, JSPX can be specified as the file extension, and anyone can browse to the uploaded file, lea",
-        "published": "2026-10-19T17:17:01.080"
+        "base_score": 9.8,
+        "description": "DB-GPT through 0.8.2 contains an unauthenticated remote code execution vulnerability because the /api/v1/chat/react-agent endpoint relies on a mock get_user_from_headers function that grants every cal",
+        "published": "2026-10-20T01:17:19.503"
       },
       {
-        "cve_id": "CVE-2026-112305",
+        "cve_id": "CVE-2026-77933",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "DB-GPT through 0.8.2 contains a hardcoded credentials vulnerability in its default docker-compose.yml that sets a static MYSQL_ROOT_PASSWORD and publishes port 3306 on all interfaces. Attackers reachi",
+        "published": "2026-10-20T01:17:19.670"
+      },
+      {
+        "cve_id": "CVE-2026-77936",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Letta through 0.16.8 ships a compose.yaml that does not enable LETTA_SERVER_SECURE, so the password middleware is never added and all API routes are unauthenticated, and it exposes a superuser Postgre",
+        "published": "2026-10-20T01:17:20.107"
+      },
+      {
+        "cve_id": "CVE-2026-109395",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Ning compress-lzf before 1.2.0 contains an out-of-bounds memory access vulnerability in the sun.misc.Unsafe based UnsafeChunkDecoder that fails to validate back-references and literal runs. Attackers ",
+        "published": "2026-10-20T01:17:09.957"
+      },
+      {
+        "cve_id": "CVE-2026-107400",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Semaphore UI through 2.19.16 contains a remote code execution vulnerability that allows users with the task_runner role to override protected Ansible variables by supplying arbitrary keys in the task ",
-        "published": "2026-10-19T16:17:06.400"
+        "description": "IBM TRIRIGA Application Platform 5.0.0 through 5.0.8 could allow a remote authenticated attacker to execute arbitrary code due to improper authentication.",
+        "published": "2026-10-20T00:17:25.790"
       },
       {
-        "cve_id": "CVE-2026-10572",
+        "cve_id": "CVE-2026-109126",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "IBM MQ could allow an authenticated attacker to cause a denial of service or potentially execute arbitrary code due to a heap buffer overflow when processing MQPUT operations with malformed message op",
-        "published": "2026-10-19T17:17:01.440"
+        "description": "IBM Verify Identity Access 11.0.3.1 and IBM Security Verify Access 10.0.9.3 Appliance could allow a physically proximate attacker to gain elevated privileges due to the use of hard-coded credentials.",
+        "published": "2026-10-20T00:17:30.370"
       },
       {
-        "cve_id": "CVE-2026-10574",
+        "cve_id": "CVE-2026-109443",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "IBM MQ could allow an authenticated attacker to cause a denial of service or potentially execute arbitrary code due to a heap buffer overflow when processing MQPUT or MQPUT1 operations with malformed ",
-        "published": "2026-10-19T17:17:01.780"
+        "description": "JoySafeter through 1.0.0 contains a remote code execution vulnerability that allows authenticated users to run operating system commands via an unsandboxed execute tool in Copilot standard mode. Attac",
+        "published": "2026-10-20T01:17:10.527"
       },
       {
-        "cve_id": "CVE-2026-10743",
+        "cve_id": "CVE-2026-109444",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "IBM MQ could allow an authenticated attacker to cause a denial of service or corrupt memory due to improper validation of buffer sizes in MQOPEN operations.",
-        "published": "2026-10-19T17:17:02.107"
+        "description": "OpenSRE through 0.1.2026.10.19 contains an approval gate bypass vulnerability that allows attackers to execute shell_run commands without confirmation because the headless presenter's execution_allowe",
+        "published": "2026-10-20T01:17:10.673"
       },
       {
-        "cve_id": "CVE-2026-107186",
+        "cve_id": "CVE-2026-77926",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "An unauthenticated user can send a DWR request with isPasswordUppercase as one call method and the next call method can be set to a run workflow rule. This allows for workflow rules to be run without ",
-        "published": "2026-10-19T17:17:00.827"
+        "base_score": 8.8,
+        "description": "Aix-DB 1.2.4 contains a remote code execution vulnerability that allows authenticated non-admin users to run operating system commands through the ChatBI common agent's ungated deepagents execute tool",
+        "published": "2026-10-20T01:17:19.213"
       },
       {
-        "cve_id": "CVE-2026-107187",
+        "cve_id": "CVE-2026-77930",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "A user can access any database details, such as usernames and passwords by sending a DWR request with a specified workflow rule. The authentication bypass vulnerability can be chained with this vulner",
-        "published": "2026-10-19T17:17:00.967"
+        "base_score": 8.8,
+        "description": "EvoScientist 0.1.0 before 0.2.5 contains an approval bypass vulnerability that allows attackers to run host shell commands by delegating them to async sub-agents lacking an interrupt_on gate. Attacker",
+        "published": "2026-10-20T01:17:19.360"
       },
       {
-        "cve_id": "CVE-2025-10149",
+        "cve_id": "CVE-2026-77934",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "The SCIM endpoint does not sufficiently validate authorization for federated users when performing operations against the local user store. This occurs when a local and a federated user share the same",
-        "published": "2026-10-19T17:16:59.007"
+        "base_score": 8.8,
+        "description": "Coze Studio before 0.5.0 contains an insecure default configuration that allows any registered user to execute commands by running workflow code nodes in an unsandboxed python3 subprocess. Attackers c",
+        "published": "2026-10-20T01:17:19.823"
       },
       {
-        "cve_id": "CVE-2026-109431",
+        "cve_id": "CVE-2026-86919",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Camunda 7.24.0 before 7.24.14 and 7.23.0 before 7.23.17 contains a missing authorization check vulnerability in engine-rest task sub-resources that allows authenticated attackers with no permission gr",
-        "published": "2026-10-19T16:17:02.337"
+        "base_score": 8.8,
+        "description": "A stack overflow was addressed with improved input validation. This issue is fixed in iOS 26.7 and iPadOS 26.7, iOS 27 and iPadOS 27, macOS Golden Gate 27, macOS Sequoia 15.8, macOS Tahoe 26.7, vision",
+        "published": "2026-10-20T01:17:27.390"
       },
       {
-        "cve_id": "CVE-2026-12665",
+        "cve_id": "CVE-2026-86922",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "IBM MQ could allow a remote attacker to execute arbitrary code due to a stack buffer overflow when processing TLS certificates with malformed distinguished names during channel connection establishmen",
-        "published": "2026-10-19T17:17:18.773"
+        "base_score": 8.8,
+        "description": "A type confusion issue was addressed with improved state management. This issue is fixed in Safari 27, iOS 27 and iPadOS 27, macOS Golden Gate 27, visionOS 27. Processing maliciously crafted web conte",
+        "published": "2026-10-20T01:17:27.600"
       },
       {
-        "cve_id": "CVE-2026-107571",
+        "cve_id": "CVE-2026-86949",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Incorrect default permissions in the Windows installer of Progressive Robot hMailServer 6.0.0 through 6.3.6 allow a local authenticated user to run code as the mail server's high-privileged accounts w",
-        "published": "2026-10-19T16:17:01.970"
+        "base_score": 8.8,
+        "description": "This issue was addressed by enforcing library validation on the affected binaries. This issue is fixed in Xcode 27. A malicious app may be able to break out of its sandbox.",
+        "published": "2026-10-20T01:17:28.370"
       },
       {
-        "cve_id": "CVE-2026-107567",
+        "cve_id": "CVE-2026-105299",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Use of a less trusted source in the DKIM signing of Progressive Robot hMailServer 6.0.0 through 6.3.6 allows a remote unauthenticated attacker to have mail they write signed with the DKIM key of a dom",
-        "published": "2026-10-19T16:17:01.587"
+        "base_score": 8.7,
+        "description": "Summary\n\n\n\nBefore version 0.9.0, the HTTP/1 upstream path in pingora-proxy passed the downstream request through upstream_request_filter and wrote it to the upstream without removing the client's Conn",
+        "published": "2026-10-20T02:17:08.703"
       },
       {
-        "cve_id": "CVE-2026-107569",
+        "cve_id": "CVE-2026-105453",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Unchecked input for a loop condition in Progressive Robot hMailServer 6.0.0 through 6.3.6 allows a remote unauthenticated attacker to stop the server carrying mail. The server bounds the mail it gener",
-        "published": "2026-10-19T16:17:01.830"
-      },
-      {
-        "cve_id": "CVE-2026-111045",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "CLI Bridge provides filesystem access within a workspace root. Prior to 0.0.2, a dangling symlink pointing outside the workspace root bypasses resolveSafePath when fs.realpathSync throws ENOENT for a ",
-        "published": "2026-10-19T16:17:03.183"
-      },
-      {
-        "cve_id": "CVE-2026-112304",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "docTR through 1.1.0 contains an unsafe deserialization vulnerability in load_pretrained_params() that loads checkpoints with torch.load without weights_only=True. Attackers who control a local or URL-",
-        "published": "2026-10-19T16:17:06.257"
+        "base_score": 8.4,
+        "description": "IBM Sterling Connect Direct for Unix 6.3.0.0 through 6.3.0.7 and\u00a06.4.0.0 through 6.4.0.6 could allow a local attacker to gain elevated privileges due to improper privilege management.",
+        "published": "2026-10-20T00:17:23.400"
       }
     ]
   },
