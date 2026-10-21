@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-21T02:33:38.698452+00:00",
+  "generated_at": "2026-10-21T08:59:14.699743+00:00",
   "threat_score": {
-    "score": 5.0,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.5,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 1.0,
+        "value": 7,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,51 +238,79 @@
     ]
   },
   "nvd": {
-    "total": 1963,
-    "critical_count": 0,
-    "high_count": 15,
+    "total": 1994,
+    "critical_count": 7,
+    "high_count": 11,
     "cves": [
       {
-        "cve_id": "CVE-2026-113404",
+        "cve_id": "CVE-2026-105312",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A Kubernetes tenant with create permission on Console custom resources can set spec.containers.api.spec.image to an arbitrary container image. The operator deploys this image into a pod whose ServiceA",
+        "published": "2026-10-20T12:17:28.703"
+      },
+      {
+        "cve_id": "CVE-2026-113389",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A vulnerability was detected in DrayTek Vigor2960 1.5.1.6 Revision 8218. Affected by this vulnerability is the function set_table of the file /cgi-bin/mainfunction.cgi of the component CGI Process. Th",
+        "published": "2026-10-20T12:17:29.443"
+      },
+      {
+        "cve_id": "CVE-2026-113390",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A flaw has been found in DrayTek Vigor2960 1.5.1.6 Revision 8218. Affected by this issue is the function sub_182B0 of the file /cgi-bin/mainfunction.cgi of the component CGI Interface. This manipulati",
+        "published": "2026-10-20T13:16:40.463"
+      },
+      {
+        "cve_id": "CVE-2026-113391",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A vulnerability has been found in DrayTek Vigor2960 1.5.1.6 Revision 8218. This affects the function uploadlangs of the file /cgi-bin/mainfunction.cgi of the component Upload Endpoint. Such manipulati",
+        "published": "2026-10-20T13:16:40.640"
+      },
+      {
+        "cve_id": "CVE-2026-113620",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "In Eclipse ioFog Controller versions 3.8.0 through 3.9.1, operator WebSocket upgrades on the exec and log routes do not verify the bearer JWT. The payload is decoded and its groups or roles are used a",
+        "published": "2026-10-20T13:16:41.610"
+      },
+      {
+        "cve_id": "CVE-2026-101356",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Incorrect object recycling and re-use vulnerability in Apache Tomcat affecting HTTP/2 processing of asynchronous servlets can trigger request and/or response mix-up between users.\n\n\n\nThis issue affect",
+        "published": "2026-10-20T14:16:55.767"
+      },
+      {
+        "cve_id": "CVE-2026-103119",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Buffer under-read vulnerability in Apache Tomcat meant that a large non-blocking write could result in the response body being split between the current request and the next request received on that c",
+        "published": "2026-10-20T14:16:56.087"
+      },
+      {
+        "cve_id": "CVE-2026-105949",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "WebITR developed by Uniong has a Insecure Deserialization vulnerability. Authenticated remote attackers can use the hard-coded cryptographic key to craft and submit malicious serialized data, thereby ",
-        "published": "2026-10-20T07:17:09.783"
+        "description": "Cruise Control's Jetty ConstraintSecurityHandler registers security constraints on exact path specs without a catch-all wildcard constraint and without calling setDenyUncoveredHttpMethods(true). The s",
+        "published": "2026-10-20T12:17:28.847"
       },
       {
-        "cve_id": "CVE-2026-113405",
+        "cve_id": "CVE-2026-105941",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "BA-Workflow developed by YS-infoware has a SQL Injection vulnerability. Authenticated remote attackers can inject arbitrary SQL statements to read, modify, and delete database contents.",
-        "published": "2026-10-20T08:16:42.867"
+        "base_score": 8.1,
+        "description": "The Azure Key Vault KMS provider in Kroxylicious accepts an untrusted vaultName from wire-deserialized EDEK bytes without format validation, enabling SSRF that exfiltrates the proxy's Azure bearer tok",
+        "published": "2026-10-20T13:16:39.457"
       },
       {
-        "cve_id": "CVE-2026-113406",
+        "cve_id": "CVE-2026-105311",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "BA-Workflow developed by YS-infoware has a SQL Injection vulnerability. Authenticated remote attackers can inject arbitrary SQL statements to read, modify, and delete database contents.",
-        "published": "2026-10-20T08:16:43.000"
-      },
-      {
-        "cve_id": "CVE-2026-113407",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "BA-Workflow developed by YS-infoware has a SQL Injection vulnerability. Authenticated remote attackers can inject arbitrary SQL statements to read, modify, and delete database contents.",
-        "published": "2026-10-20T08:16:43.130"
-      },
-      {
-        "cve_id": "CVE-2026-111090",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A logic error exists in the signature verification routine resulting in acceptance of unauthenticated update and license files.It is necessary to use only the MyStormshield servers to retrieve update ",
-        "published": "2026-10-20T08:16:42.373"
-      },
-      {
-        "cve_id": "CVE-2026-93300",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The EventON - Subscriber plugin for WordPress is vulnerable to generic SQL Injection via the 'email' parameter in all versions up to, and including, 1.4.5 due to insufficient escaping on the user supp",
-        "published": "2026-10-20T06:16:57.913"
+        "base_score": 7.7,
+        "description": "The StreamsHub Console operator acts as a confused deputy: a Kubernetes tenant with permission to create a Console custom resource can set spec.kafkaClusters[].credentials.kafkaUser.namespace to any n",
+        "published": "2026-10-20T12:17:28.550"
       },
       {
         "cve_id": "CVE-2026-113469",
@@ -320,11 +348,18 @@
         "published": "2026-10-20T11:17:20.447"
       },
       {
-        "cve_id": "CVE-2026-112177",
+        "cve_id": "CVE-2026-113619",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A flaw was found in Ghostscript as shipped with Red Hat Enterprise Linux 8. The correction for CVE-2019-14869 was omitted during the rebase from version 9.25 to 9.27, leaving privileged .forceput oper",
-        "published": "2026-10-20T08:16:42.507"
+        "base_score": 7.5,
+        "description": "In Eclipse ioFog Controller versions 3.8.0 through 3.9.1, POST, PUT, and PATCH bodies on routes that enable template substitution are rendered by an uncapped Liquid engine before authentication and RB",
+        "published": "2026-10-20T13:16:41.473"
+      },
+      {
+        "cve_id": "CVE-2026-113392",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "A vulnerability was found in DrayTek Vigor2960 1.5.1.6 Revision 8218. This vulnerability affects unknown code of the file /cgi-bin/mainfunction.cgi of the component Apmupload. Performing a manipulatio",
+        "published": "2026-10-20T13:16:40.810"
       },
       {
         "cve_id": "CVE-2026-113381",
@@ -334,46 +369,11 @@
         "published": "2026-10-20T10:17:05.243"
       },
       {
-        "cve_id": "CVE-2026-97627",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "Hidden functionality issue exists in Multiple DVRs (Digital Video Recorders) provided by Atsumi Electric Co., Ltd. A user who can log in to the product with the administrator privilege may execute arb",
-        "published": "2026-10-20T06:16:58.300"
-      },
-      {
-        "cve_id": "CVE-2026-113386",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Roundcube Webmail before 1.6.20 and 1.7.x before 1.7.5 are affected by IMAP command injection. A remote authenticated attacker can exploit this via CRLF sequences injected into the _uid parameter of t",
-        "published": "2026-10-20T05:16:54.250"
-      },
-      {
         "cve_id": "CVE-2026-113465",
         "severity": "MEDIUM",
         "base_score": 6.6,
         "description": "It is possible to execute a DOM-based Cross-Site Scripting attack against Stormshield\u2019s web administration panel.\n\n\n\nTo exploit this vulnerability, an attacker would need to craft a URL containing a m",
         "published": "2026-10-20T09:17:09.473"
-      },
-      {
-        "cve_id": "CVE-2026-12489",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "An incorrect authorization vulnerability in the Data Access Layer (DAL) of Zyxel EX3501-T0 firmware versions through 5.44(ACHR.6)C0 could allow an authenticated attacker to escalate privileges by modi",
-        "published": "2026-10-20T03:17:15.077"
-      },
-      {
-        "cve_id": "CVE-2026-113402",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "ArmorX Spam developed by ArmorX Global Technology has a Local File Inclusion vulnerability. Authenticated remote attackers can exploit path traversal to cause the application to include PHP files outs",
-        "published": "2026-10-20T07:17:09.493"
-      },
-      {
-        "cve_id": "CVE-2026-113403",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "ArmorX Spam developed by ArmorX Global Technology has a Command Injection vulnerability. Authenticated remote attackers can inject crafted commands into a specific parameter, thereby uploading malicio",
-        "published": "2026-10-20T07:17:09.653"
       },
       {
         "cve_id": "CVE-2026-111844",
