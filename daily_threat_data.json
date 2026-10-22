@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-22T02:30:46.520822+00:00",
+  "generated_at": "2026-10-22T09:01:35.523549+00:00",
   "threat_score": {
-    "score": 6.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
-        "score": 2.0,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -238,17 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 561,
-    "critical_count": 2,
-    "high_count": 24,
+    "total": 543,
+    "critical_count": 1,
+    "high_count": 19,
     "cves": [
-      {
-        "cve_id": "CVE-2026-71195",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "In OpenStack Manila before 23.0.1, multiple Manila API operations on public shares do not verify that the caller owns the share. The API controllers authorize operations against the caller's own proje",
-        "published": "2026-10-21T06:16:49.393"
-      },
       {
         "cve_id": "CVE-2026-87095",
         "severity": "CRITICAL",
@@ -278,88 +271,25 @@
         "published": "2026-10-21T10:16:55.380"
       },
       {
-        "cve_id": "CVE-2026-92997",
+        "cve_id": "CVE-2026-114387",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "The Click n Chat (Chat Widget Integration) WordPress plugin before 1.1.3 does not properly validate a parameter before using it as a column identifier in a SQL query, allowing unauthenticated attacker",
-        "published": "2026-10-21T06:16:50.720"
+        "base_score": 8.8,
+        "description": "Shopper from 2.0.0 before 2.6.0 contains a missing authorization vulnerability that allows admin-panel users holding only access_dashboard to create administrators and grant permissions. Attackers can",
+        "published": "2026-10-21T13:18:28.807"
       },
       {
-        "cve_id": "CVE-2026-92998",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "The Click n Chat (Chat Widget Integration) WordPress plugin before 1.1.3 does not sanitise sort parameters before using them in a SQL ORDER BY clause, allowing unauthenticated attackers to perform SQL",
-        "published": "2026-10-21T06:16:50.823"
-      },
-      {
-        "cve_id": "CVE-2026-107237",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "The Backup and Staging by WP Time Capsule WordPress plugin before 1.22.28 does not perform capability or nonce checks on the handler that deploys a staging site to the live site, allowing any authenti",
-        "published": "2026-10-21T06:16:46.893"
-      },
-      {
-        "cve_id": "CVE-2026-110523",
+        "cve_id": "CVE-2026-114403",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "The WP User Manager  WordPress plugin before 2.9.26 does not keep its paid-registration capability restrictions in force once the payment gateway is disconnected, while a published paid registration f",
-        "published": "2026-10-21T06:16:47.830"
+        "description": "PHPOffice PHPPresentation through 1.2.0 contains an insecure deserialization vulnerability that allows attackers to instantiate arbitrary PHP objects by supplying a crafted presentation file. Attacker",
+        "published": "2026-10-21T13:18:31.753"
       },
       {
-        "cve_id": "CVE-2026-105262",
+        "cve_id": "CVE-2026-94300",
         "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "The Falang multilanguage for WordPress plugin before 1.4.6 does not perform a capability check when saving term translations, and exposes a valid nonce to any logged-in user through an unprotected han",
-        "published": "2026-10-21T06:16:46.053"
-      },
-      {
-        "cve_id": "CVE-2026-102499",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "The Modern Events Calendar Lite WordPress plugin before 7.37.0, Modern Event Calendar Pro WordPress plugin before 7.37.0 do not sanitise and escape a parameter before using it in a SQL statement, whic",
-        "published": "2026-10-21T06:16:45.713"
-      },
-      {
-        "cve_id": "CVE-2026-107127",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Uncanny Toolkit for LearnDash WordPress plugin before 3.8.2 does not validate the origin of a password-reset request, allowing an unauthenticated attacker to set the password of a user who is part",
-        "published": "2026-10-21T06:16:46.687"
-      },
-      {
-        "cve_id": "CVE-2026-107506",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Simple Banner  WordPress plugin before 3.3.3 does not correctly limit the capabilities it grants to the user roles an administrator allows to manage its banners, granting such roles the full admin",
-        "published": "2026-10-21T06:16:46.993"
-      },
-      {
-        "cve_id": "CVE-2026-111574",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Redirection for Contact Form 7 WordPress plugin before 3.2.12 does not sanitise or escape submitted form data stored as lead entries before outputting it in the lead debug metabox, allowing unauth",
-        "published": "2026-10-21T06:16:48.137"
-      },
-      {
-        "cve_id": "CVE-2026-111949",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The miniOrange 2FA  WordPress plugin before 6.3.1 does not prevent a pending passkey login from registering an additional passkey on an account that already has one configured, allowing an attacker wh",
-        "published": "2026-10-21T06:16:48.543"
-      },
-      {
-        "cve_id": "CVE-2026-85642",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Formidable Forms  WordPress plugin before 7.0 does not verify the identity of the caller before recording the timestamp it uses to rate limit payment gateway verification requests, allowing unauth",
-        "published": "2026-10-21T06:16:50.190"
-      },
-      {
-        "cve_id": "CVE-2026-88784",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Translate WordPress with Weglot 2.0  WordPress plugin before 6.4.3 does not escape the URLs it re-inserts into a page when rewriting links for a translated language, and reverses the encoding that",
-        "published": "2026-10-21T06:16:50.617"
+        "base_score": 8.1,
+        "description": "Replaying GSS-TSIG signed UDP messages can result in memory corruption in \"`named`\".  An attacker who can capture a previously signed UDP message can replay it while the negotiated TSIG key is still v",
+        "published": "2026-10-21T13:21:08.670"
       },
       {
         "cve_id": "CVE-2026-97206",
@@ -376,11 +306,81 @@
         "published": "2026-10-21T12:17:21.410"
       },
       {
+        "cve_id": "CVE-2026-19630",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "In a BIND resolver, inbound DNS protocol messages with a particular structure will result in additional processing, with no limit imposed by BIND.  A DNS message with a maliciously large number of suc",
+        "published": "2026-10-21T13:18:32.453"
+      },
+      {
+        "cve_id": "CVE-2026-82230",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Uncontrolled recursion in the mcpack2pb component in Apache bRPC (version < 1.18.0) on all platforms allows remote attackers to make the server crash via sending deeply nested mcpack data.\n\nRoot Cause",
+        "published": "2026-10-21T13:20:02.970"
+      },
+      {
+        "cve_id": "CVE-2026-96888",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A BIND resolver that is configured with both a \"redirect\" zone and \"qname-minimization strict\" may abort with an assertion failure while processing the redirect.\nThis issue affects BIND 9 versions 9.1",
+        "published": "2026-10-21T13:21:08.840"
+      },
+      {
+        "cve_id": "CVE-2026-97313",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "A recursive BIND server that receives a query with recursion desired (RD=1) followed by a non-recursive query (RD=0) may exit with an assertion failure, resulting in a denial of service. To be vulnera",
+        "published": "2026-10-21T13:21:09.270"
+      },
+      {
+        "cve_id": "CVE-2026-114397",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "Trudesk through 1.2.11 contains a missing authentication vulnerability in debug routes enabled whenever NODE_ENV is unset, letting unauthenticated attackers invoke them remotely. Attackers can call /d",
+        "published": "2026-10-21T13:18:30.687"
+      },
+      {
         "cve_id": "CVE-2026-114242",
         "severity": "HIGH",
         "base_score": 7.3,
         "description": "A vulnerability was identified in dhikshitha29 Insurance-Management-System 91de5edda5baa109ad8e9baf03ce6a3ceda84183/125362cc21dca20d74091a4913a5096bb58dd837. Affected is the function mysqli_query of t",
         "published": "2026-10-21T12:17:19.560"
+      },
+      {
+        "cve_id": "CVE-2026-114243",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A security flaw has been discovered in dhikshitha29 Insurance-Management-System 91de5edda5baa109ad8e9baf03ce6a3ceda84183/125362cc21dca20d74091a4913a5096bb58dd837. Affected by this vulnerability is the",
+        "published": "2026-10-21T13:18:27.937"
+      },
+      {
+        "cve_id": "CVE-2026-114245",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A weakness has been identified in dhikshitha29 Insurance-Management-System 91de5edda5baa109ad8e9baf03ce6a3ceda84183/125362cc21dca20d74091a4913a5096bb58dd837. Affected by this issue is some unknown fun",
+        "published": "2026-10-21T13:18:28.180"
+      },
+      {
+        "cve_id": "CVE-2026-110884",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in geekontheroad Live Summary for Gravity Forms live-summary-for-gravity-forms allows Reflected XSS.T",
+        "published": "2026-10-21T10:16:55.520"
+      },
+      {
+        "cve_id": "CVE-2026-114391",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "ZenTao PMS before 22.3 contains an authorization bypass vulnerability in commonModel::isOpenMethod() that lets logged-in users skip group-based ACL checks for any method containing 'ajax'. Minimal-pri",
+        "published": "2026-10-21T13:18:29.593"
+      },
+      {
+        "cve_id": "CVE-2026-114396",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "Trudesk through 1.2.11 contains a server-side JavaScript injection vulnerability that allows authenticated users to inject code into a MongoDB $where clause via the search parameter. Attackers can clo",
+        "published": "2026-10-21T13:18:30.493"
       }
     ]
   },
