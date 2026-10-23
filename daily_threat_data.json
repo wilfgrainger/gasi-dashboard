@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T08:56:29.198794+00:00",
+  "generated_at": "2026-10-23T16:07:44.008848+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
+        "value": 7,
         "score": 2.5,
         "max": 3
       },
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 388,
-    "critical_count": 6,
-    "high_count": 36,
+    "total": 653,
+    "critical_count": 7,
+    "high_count": 23,
     "cves": [
       {
-        "cve_id": "CVE-2026-112241",
+        "cve_id": "CVE-2026-114612",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) format. From 1.87.0 until 1.100.4, 1.101.3, 1.102.2, 1.103.1, and 1.104.0-rc.2, the proxy reuses one cryptographic context",
+        "published": "2026-10-22T19:17:37.540"
+      },
+      {
+        "cve_id": "CVE-2026-115375",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Incus 7.0.0 before 7.0.2 and 7.1.0 before 7.5.0 contains a path traversal vulnerability that allows clients able to create instances to write files on the host. The flaw stems from unvalidated depende",
+        "published": "2026-10-22T19:17:44.133"
+      },
+      {
+        "cve_id": "CVE-2026-115377",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Incus before 6.0.7, 6.1.0 before 7.0.2, and 7.1.0 before 7.5.0 contains an arbitrary file write vulnerability that allows malicious migration sources to write host files by planting symlinks in transf",
+        "published": "2026-10-22T19:17:44.460"
+      },
+      {
+        "cve_id": "CVE-2026-115384",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Wasmtime 39.0.0 before 48.0.4 and 49.0.0 before 49.0.2 contains a stack buffer overflow vulnerability that allows malicious guests to write ~16KB to the native stack via unvalidated async callback res",
+        "published": "2026-10-22T19:17:45.543"
+      },
+      {
+        "cve_id": "CVE-2022-51026",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Authentication Bypass by Spoofing vulnerability in Brainstorm Force SureCart surecart allows Authentication Abuse.This issue affects SureCart: from n/a through 4.9.5.",
-        "published": "2026-10-22T09:17:14.157"
+        "description": "Bytebase 0.12.0 before 1.0.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to log in as any user. The flaw stems from trusting client-supplied GitLab provider c",
+        "published": "2026-10-22T19:17:30.883"
       },
       {
-        "cve_id": "CVE-2021-48014",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "FineReport 9.0 contains a path traversal vulnerability in the /WebReport/ReportServer design_save_svg operation that allows unauthenticated attackers to write arbitrary files via the filePath paramete",
-        "published": "2026-10-22T11:17:04.390"
-      },
-      {
-        "cve_id": "CVE-2021-48016",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "DedeCMS through 5.8.1-beta contains a PHP code injection vulnerability in ShowMsg() where the HTTP Referer header is written into a DedeTemplate string and included. Unauthenticated attackers can send",
-        "published": "2026-10-22T11:17:04.690"
-      },
-      {
-        "cve_id": "CVE-2026-112832",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in CozyThemes Rootblox rootblox allows PHP Local File Inclusion.This issue affects",
-        "published": "2026-10-22T11:17:33.163"
-      },
-      {
-        "cve_id": "CVE-2026-112327",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in TMS Amelia ameliabooking allows SQL Injection.This issue affects Amelia: from n/a through 2.4.11.",
-        "published": "2026-10-22T09:17:14.680"
-      },
-      {
-        "cve_id": "CVE-2022-51022",
+        "cve_id": "CVE-2026-114607",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "YiShaAdmin 2.2 through 3.1, fixed in commit 025b062, contains an unauthenticated path traversal vulnerability in the /admin/File/DownloadFile endpoint that allows attackers to read and delete arbitrar",
-        "published": "2026-10-22T11:17:05.153"
+        "description": "Better Auth is an authentication and authorization library for TypeScript. From 1.4.0-beta.18 until 1.7.7, deployments that enable Magic Link with storeToken set to plain, or with storeToken set to ha",
+        "published": "2026-10-22T17:16:58.577"
       },
       {
-        "cve_id": "CVE-2026-112242",
+        "cve_id": "CVE-2026-114611",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "OCO-Server is a self-hosted endpoint management application for computer inventory, software deployment, and mobile device management. Prior to 1.2.3,the Apple MDM enrollment endpoint `frontend/api-md",
+        "published": "2026-10-22T18:17:28.377"
+      },
+      {
+        "cve_id": "CVE-2026-115513",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Incorrect Privilege Assignment vulnerability in Cozmoslabs Profile Builder profile-builder allows Privilege Escalation.This issue affects Profile Builder: from n/a through 4.0.4.",
-        "published": "2026-10-22T09:17:14.283"
+        "base_score": 8.7,
+        "description": "OpenCATS before 0.12.0 contains a stored cross-site scripting vulnerability that allows a low-privileged authenticated user to inject HTML/JavaScript payloads by setting a Candidate, Company, Contact,",
+        "published": "2026-10-22T17:16:59.217"
       },
       {
-        "cve_id": "CVE-2026-115328",
+        "cve_id": "CVE-2026-115353",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "JSON-SCADA before 0.65-alpha contains an sql injection vulnerability in opcApi() in src/server_realtime_auth/index.js that allows authenticated users to inject SQL via HistoryReadRequest parameters. A",
-        "published": "2026-10-22T11:17:51.873"
+        "base_score": 8.6,
+        "description": "Mistune before 3.3.0 contains a path traversal vulnerability in the RST include directive that allows attackers to read arbitrary files by supplying relative or absolute paths. Attackers can submit ma",
+        "published": "2026-10-22T19:17:41.227"
       },
       {
-        "cve_id": "CVE-2026-115330",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Lotus through 0.10.2 contains an sql injection vulnerability that allows authenticated organization users to execute arbitrary SQL by appending stacked statements to custom metric queries. Attackers c",
-        "published": "2026-10-22T11:17:52.153"
-      },
-      {
-        "cve_id": "CVE-2026-115331",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Lotus through 0.10.2 contains an sql injection vulnerability that allows authenticated organization users to inject SQL by supplying crafted billable metric property_name or categorical filter values.",
-        "published": "2026-10-22T11:17:52.290"
-      },
-      {
-        "cve_id": "CVE-2026-115332",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Lotus through 0.10.2 contains an sql injection vulnerability that allows authenticated organization users to inject SQL by registering crafted subscription_filter_keys that bypass keyword-only validat",
-        "published": "2026-10-22T11:17:52.427"
-      },
-      {
-        "cve_id": "CVE-2026-112822",
+        "cve_id": "CVE-2026-115372",
         "severity": "HIGH",
         "base_score": 8.5,
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in AmentoTech Workreap Core workreap_core allows Blind SQL Injection.This issue affects Workreap Core",
-        "published": "2026-10-22T11:17:32.113"
+        "description": "Incus from 7.3.0 before 7.5.0 contains a project restriction bypass that allows restricted project users to set block.create_options through volume update, copy, and move operations. Attackers can set",
+        "published": "2026-10-22T19:17:43.670"
       },
       {
-        "cve_id": "CVE-2026-115325",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Netmaker through 1.7.0 contains an authorization bypass vulnerability in the updateExtClient handler that allows network-scoped users to modify external clients on other networks. Attackers with exter",
-        "published": "2026-10-22T11:17:51.400"
-      },
-      {
-        "cve_id": "CVE-2026-112085",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "webpack-dev-server is a development server that provides live reloading for webpack projects. In versions before 5.2.7 and in version 6.0.0, when a proxy entry is configured to forward WebSockets, the",
-        "published": "2026-10-22T10:17:08.760"
-      },
-      {
-        "cve_id": "CVE-2019-25778",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "SeaCMS through 8.7 contains an unauthenticated SQL injection vulnerability that allows remote attackers to manipulate database queries by injecting SQL through the rlist[] array parameter. Attackers c",
-        "published": "2026-10-22T11:17:03.777"
-      },
-      {
-        "cve_id": "CVE-2022-51021",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "NotificationX plugin for WordPress 2.0.0 before 2.3.12 contains an unauthenticated SQL injection vulnerability that allows remote attackers to manipulate database queries by supplying an array-form 'i",
-        "published": "2026-10-22T11:17:04.990"
-      },
-      {
-        "cve_id": "CVE-2022-51023",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "PHPOK 4.5.000 before 5.4.081 contains an SQL injection vulnerability that allows unauthenticated attackers to manipulate ORDER BY clauses via the sort parameter. Attackers can send GET requests to /ap",
-        "published": "2026-10-22T11:17:05.300"
-      },
-      {
-        "cve_id": "CVE-2024-58393",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "i-Netsolution Readymade Unilevel Ecommerce MLM (2024-03-15 build) contains an SQL injection vulnerability that allows unauthenticated attackers to manipulate database queries through the 'id' paramete",
-        "published": "2026-10-22T11:17:05.913"
-      },
-      {
-        "cve_id": "CVE-2025-71434",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Weaver E-cology 8.0, 9.0, and 10.0 prior to 10.76 contains an unauthenticated SQL injection vulnerability in the /api/doc/out/more/list endpoint via the elementmore parameter with srcType=2. Attackers",
-        "published": "2026-10-22T11:17:06.373"
-      },
-      {
-        "cve_id": "CVE-2026-112820",
+        "cve_id": "CVE-2026-113874",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in Elated-Themes Academist Core academist-core allows PHP Local File Inclusion.Thi",
-        "published": "2026-10-22T11:17:31.147"
+        "description": "SmileCDR HAPI FHIR allows an untrusted bundle body to replace a partition identity previously established by a trusted source, and does not enforce storage partition entitlement by default. An attacke",
+        "published": "2026-10-22T18:17:27.237"
+      },
+      {
+        "cve_id": "CVE-2026-97635",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The Agent Zero Web UI before 1.15 does not correctly sanitize user-provided input in chat messages or file uploads. When Agent Zero reproduces content in the chat interface, any injected JavaScript is",
+        "published": "2026-10-22T18:17:32.337"
+      },
+      {
+        "cve_id": "CVE-2026-13599",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Missing authentication for critical function vulnerability in ABB Ability Edgenius.\n\nThis issue affects Ability Edgenius: through 3.2.3.0.",
+        "published": "2026-10-22T18:17:28.663"
+      },
+      {
+        "cve_id": "CVE-2026-115416",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "Incorrect authorization checks in Amazon Athena engine version 3 query processing could have allowed an authenticated user to read AWS account identifiers and SQL statement text query metadata from ot",
+        "published": "2026-10-22T17:16:58.913"
+      },
+      {
+        "cve_id": "CVE-2026-115376",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "Incus 7.0.1 before 7.0.2 and 7.2.0 before 7.5.0 contains an authorization bypass vulnerability that allows project-restricted clients to copy volumes by omitting source.type. Attackers can send crafte",
+        "published": "2026-10-22T19:17:44.320"
+      },
+      {
+        "cve_id": "CVE-2026-114648",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "The MongoDB C# Driver does not neutralize dot and dollar characters in dictionary keys, field names and array-filter identifiers used in LINQ queries before placing them into the field paths it sends ",
+        "published": "2026-10-22T19:17:38.567"
+      },
+      {
+        "cve_id": "CVE-2026-115482",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "In lsquic before 4.9.0, the HTTP/3 implementation can use an excessive amount of memory because the number of buffered header sets is not limited, as demonstrated by a QPACK amplification attack. This",
+        "published": "2026-10-22T16:17:35.490"
+      },
+      {
+        "cve_id": "CVE-2026-114605",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "dnspython is a DNS toolkit for Python. Prior to 2.9.0, dns.name.from_wire_parser follows attacker-controlled DNS compression pointer chains without a hop limit. A malicious DNS wire-format message can",
+        "published": "2026-10-22T17:16:58.237"
+      },
+      {
+        "cve_id": "CVE-2026-75507",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "GraphQL-core is a Python port of the GraphQL.js reference implementation. From 3.0.0 until 3.2.12 and 3.3.0rc1, the OverlappingFieldsCanBeMerged rule in specified_rules repeatedly compares fields that",
+        "published": "2026-10-22T17:16:59.757"
+      },
+      {
+        "cve_id": "CVE-2026-75508",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "GraphQL-core is a Python port of the GraphQL.js reference implementation. From 3.2.3 until 3.2.12 and 3.3.0rc1, the parser's max_tokens limit in Parser.advance_lexer counts only non-comment tokens ret",
+        "published": "2026-10-22T17:16:59.933"
       }
     ]
   },
