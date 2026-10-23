@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-10-23T16:07:44.008848+00:00",
+  "generated_at": "2026-10-23T22:44:55.258576+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 33,
+        "value": 35,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
-        "score": 2.5,
+        "value": 10,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -32,9 +32,29 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1754,
-    "recent_30d_count": 33,
+    "total_catalog_count": 1756,
+    "recent_30d_count": 35,
     "recent": [
+      {
+        "cve_id": "CVE-2026-114625",
+        "vendor": "Arista",
+        "product": "VeloCloud Orchestrator",
+        "name": "Arista VeloCloud Orchestrator SQL Injection Vulnerability",
+        "date_added": "2026-10-23",
+        "due_date": "2026-10-26",
+        "description": "Arista VeloCloud Orchestrator on-prem contains a SQL injection vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitati",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-110447",
+        "vendor": "Collabora",
+        "product": "Collabora Online \u2013 Built-in CODE Server",
+        "name": "Collabora Online \u2013 Built-in CODE Server OS Command Injection Vulnerability",
+        "date_added": "2026-10-23",
+        "due_date": "2026-10-26",
+        "description": "Collabora Collabora Online \u2013 Built-in CODE Server when used within the NextCloud platform contains an OS command injection vulnerability that allows for remote code execution when the CODE server isn'",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-106931",
         "vendor": "EG Secure Solutions",
@@ -214,173 +234,153 @@
         "due_date": "2026-10-11",
         "description": "Strapi contains a cleartext storage of sensitive information vulnerability that could allow attackers with access to the admin panel to discover sensitive user details via the query filter. The impact",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2021-3199",
-        "vendor": "ONLYOFFICE",
-        "product": "Docs",
-        "name": "ONLYOFFICE Docs Server Path Traversal Vulnerability",
-        "date_added": "2026-10-08",
-        "due_date": "2026-10-11",
-        "description": "ONLYOFFICE Docs contains a path traversal vulnerability that can occur when JWT is used, via a /.. sequence in an image upload parameter and could allow for remote code execution.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2015-3306",
-        "vendor": "ProFTPD",
-        "product": "ProFTPD",
-        "name": "ProFTPD Improper Access Control Vulnerability",
-        "date_added": "2026-10-08",
-        "due_date": "2026-10-11",
-        "description": "ProFTPD contains an improper access control vulnerability that could allow remote attackers to read and write to arbitrary files via the site cpfr and site cpto commands.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 653,
-    "critical_count": 7,
-    "high_count": 23,
+    "total": 498,
+    "critical_count": 10,
+    "high_count": 21,
     "cves": [
       {
-        "cve_id": "CVE-2026-114612",
+        "cve_id": "CVE-2026-107861",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "LiteLLM is a proxy server (AI Gateway) to call LLM APIs in OpenAI (or native) format. From 1.87.0 until 1.100.4, 1.101.3, 1.102.2, 1.103.1, and 1.104.0-rc.2, the proxy reuses one cryptographic context",
-        "published": "2026-10-22T19:17:37.540"
+        "description": "The system control service on affected Kiloview E3 NDI encoder firmware fails to sanitize the hostname parameter accepted by its device naming endpoint, passing it unquoted into a shell command. An au",
+        "published": "2026-10-22T23:18:17.190"
       },
       {
-        "cve_id": "CVE-2026-115375",
+        "cve_id": "CVE-2026-110243",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "Incus 7.0.0 before 7.0.2 and 7.1.0 before 7.5.0 contains a path traversal vulnerability that allows clients able to create instances to write files on the host. The flaw stems from unvalidated depende",
-        "published": "2026-10-22T19:17:44.133"
+        "description": "The network management service on affected Kiloview E3 NDI encoder firmware fails to validate the network interface name accepted by its link maintenance address configuration endpoint before passing ",
+        "published": "2026-10-22T23:18:22.520"
       },
       {
-        "cve_id": "CVE-2026-115377",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Incus before 6.0.7, 6.1.0 before 7.0.2, and 7.1.0 before 7.5.0 contains an arbitrary file write vulnerability that allows malicious migration sources to write host files by planting symlinks in transf",
-        "published": "2026-10-22T19:17:44.460"
-      },
-      {
-        "cve_id": "CVE-2026-115384",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Wasmtime 39.0.0 before 48.0.4 and 49.0.0 before 49.0.2 contains a stack buffer overflow vulnerability that allows malicious guests to write ~16KB to the native stack via unvalidated async callback res",
-        "published": "2026-10-22T19:17:45.543"
-      },
-      {
-        "cve_id": "CVE-2022-51026",
+        "cve_id": "CVE-2026-63244",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Bytebase 0.12.0 before 1.0.1 contains an authentication bypass vulnerability that allows unauthenticated attackers to log in as any user. The flaw stems from trusting client-supplied GitLab provider c",
-        "published": "2026-10-22T19:17:30.883"
+        "description": "An authentication\nbypass vulnerability in WizLearn Technologies' Learning Management System (LMS)\ncould allow an unauthenticated remote attacker to bypass password\nauthentication and the OAuth authent",
+        "published": "2026-10-23T08:16:55.320"
       },
       {
-        "cve_id": "CVE-2026-114607",
+        "cve_id": "CVE-2026-112862",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Deserialization of Untrusted Data vulnerability in xnau webdesign Participants Database participants-database allows Object Injection.This issue affects Participants Database: from n/a through 2.7.8.5",
+        "published": "2026-10-23T09:17:06.393"
+      },
+      {
+        "cve_id": "CVE-2026-25784",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Initialization of a Resource with an Insecure Default vulnerability in Hallo Welt! GmbH BlueSpice (container image bluespice/wiki) allows privilege escalation. The default value of $mwsgTokenAuthentic",
+        "published": "2026-10-23T09:17:06.943"
+      },
+      {
+        "cve_id": "CVE-2026-54630",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Part-DB is an open source inventory management system for electronic components. Prior to version 2.12.1, the part attachment upload handler stores uploaded files under the web-served media directory ",
+        "published": "2026-10-23T04:18:17.007"
+      },
+      {
+        "cve_id": "CVE-2026-55981",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "A firmware verification vulnerability in Creative Sound\nBlaster Katana could allow an attacker to modify a legitimate firmware image\nand upload the modified firmware to an affected device.",
+        "published": "2026-10-23T07:16:38.420"
+      },
+      {
+        "cve_id": "CVE-2026-112860",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in xnau webdesign Participants Database participants-database allows Blind SQL Injection.This issue a",
+        "published": "2026-10-23T09:17:06.280"
+      },
+      {
+        "cve_id": "CVE-2026-115547",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Better Auth is an authentication and authorization library for TypeScript. From 1.4.0-beta.18 until 1.7.7, deployments that enable Magic Link with storeToken set to plain, or with storeToken set to ha",
-        "published": "2026-10-22T17:16:58.577"
+        "description": "An input validation issue in the Okta Access Gateway (OAG) Admin Console allows the processing of specially formatted configuration values. An authenticated administrator can leverage this to execute ",
+        "published": "2026-10-23T04:18:16.030"
       },
       {
-        "cve_id": "CVE-2026-114611",
+        "cve_id": "CVE-2026-94267",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "OCO-Server is a self-hosted endpoint management application for computer inventory, software deployment, and mobile device management. Prior to 1.2.3,the Apple MDM enrollment endpoint `frontend/api-md",
-        "published": "2026-10-22T18:17:28.377"
+        "base_score": 9.0,
+        "description": "The Advanced Custom Fields: Extended WordPress plugin before 0.9.2.8, Advanced Custom Fields: Extended PRO WordPress plugin before 0.9.2.8 does not perform any capability check when updating a post th",
+        "published": "2026-10-23T06:17:08.200"
       },
       {
-        "cve_id": "CVE-2026-115513",
+        "cve_id": "CVE-2026-112904",
         "severity": "HIGH",
         "base_score": 8.7,
-        "description": "OpenCATS before 0.12.0 contains a stored cross-site scripting vulnerability that allows a low-privileged authenticated user to inject HTML/JavaScript payloads by setting a Candidate, Company, Contact,",
-        "published": "2026-10-22T17:16:59.217"
+        "description": "Vvveb is a powerful and easy to use CMS with page builder to build websites, blogs or ecommerce stores. In versions 1.0.8.6 and prior, the nextRestore() and nextBackup() functions in the backup contro",
+        "published": "2026-10-23T12:18:11.050"
       },
       {
-        "cve_id": "CVE-2026-115353",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Mistune before 3.3.0 contains a path traversal vulnerability in the RST include directive that allows attackers to read arbitrary files by supplying relative or absolute paths. Attackers can submit ma",
-        "published": "2026-10-22T19:17:41.227"
-      },
-      {
-        "cve_id": "CVE-2026-115372",
+        "cve_id": "CVE-2026-112837",
         "severity": "HIGH",
         "base_score": 8.5,
-        "description": "Incus from 7.3.0 before 7.5.0 contains a project restriction bypass that allows restricted project users to set block.create_options through volume update, copy, and move operations. Attackers can set",
-        "published": "2026-10-22T19:17:43.670"
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Ruben Garcia GamiPress gamipress allows Blind SQL Injection.This issue affects GamiPress: from n/a",
+        "published": "2026-10-23T09:17:06.043"
       },
       {
-        "cve_id": "CVE-2026-113874",
+        "cve_id": "CVE-2026-115546",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "SmileCDR HAPI FHIR allows an untrusted bundle body to replace a partition identity previously established by a trusted source, and does not enforce storage partition entitlement by default. An attacke",
-        "published": "2026-10-22T18:17:27.237"
+        "description": "Okta Access Gateway (OAG) does not validate the selected authentication source during sign-on. An authenticated user with an active session can modify the authentication source parameter, which may ge",
+        "published": "2026-10-23T04:18:15.047"
       },
       {
-        "cve_id": "CVE-2026-97635",
+        "cve_id": "CVE-2026-94262",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "The Agent Zero Web UI before 1.15 does not correctly sanitize user-provided input in chat messages or file uploads. When Agent Zero reproduces content in the chat interface, any injected JavaScript is",
-        "published": "2026-10-22T18:17:32.337"
+        "description": "The Advanced Custom Fields: Extended WordPress plugin before 0.9.2.8, Advanced Custom Fields: Extended PRO WordPress plugin before 0.9.2.8 does not verify that the requester is authorised to edit the ",
+        "published": "2026-10-23T06:17:08.000"
       },
       {
-        "cve_id": "CVE-2026-13599",
+        "cve_id": "CVE-2026-94268",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Missing authentication for critical function vulnerability in ABB Ability Edgenius.\n\nThis issue affects Ability Edgenius: through 3.2.3.0.",
-        "published": "2026-10-22T18:17:28.663"
+        "base_score": 8.1,
+        "description": "The Advanced Custom Fields: Extended WordPress plugin before 0.9.2.8, Advanced Custom Fields: Extended PRO WordPress plugin before 0.9.2.8 does not resolve the target of the update-user action in its ",
+        "published": "2026-10-23T06:17:08.297"
       },
       {
-        "cve_id": "CVE-2026-115416",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Incorrect authorization checks in Amazon Athena engine version 3 query processing could have allowed an authenticated user to read AWS account identifiers and SQL statement text query metadata from ot",
-        "published": "2026-10-22T17:16:58.913"
-      },
-      {
-        "cve_id": "CVE-2026-115376",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Incus 7.0.1 before 7.0.2 and 7.2.0 before 7.5.0 contains an authorization bypass vulnerability that allows project-restricted clients to copy volumes by omitting source.type. Attackers can send crafte",
-        "published": "2026-10-22T19:17:44.320"
-      },
-      {
-        "cve_id": "CVE-2026-114648",
+        "cve_id": "CVE-2026-115484",
         "severity": "HIGH",
         "base_score": 7.6,
-        "description": "The MongoDB C# Driver does not neutralize dot and dollar characters in dictionary keys, field names and array-filter identifiers used in LINQ queries before placing them into the field paths it sends ",
-        "published": "2026-10-22T19:17:38.567"
+        "description": "A flaw was found in the iscsiuio component of open-iscsi. The DHCPv4 option parser incorrectly calculates the length of the options data, causing it to read beyond the allocated buffer into adjacent h",
+        "published": "2026-10-23T01:16:53.670"
       },
       {
-        "cve_id": "CVE-2026-115482",
+        "cve_id": "CVE-2026-110491",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "In lsquic before 4.9.0, the HTTP/3 implementation can use an excessive amount of memory because the number of buffered header sets is not limited, as demonstrated by a QPACK amplification attack. This",
-        "published": "2026-10-22T16:17:35.490"
+        "description": "The ONVIF service on the E3 can be rendered unresponsive by sending malformed or incomplete requests to certain operations. The affected service stops accepting new connections while the rest of the d",
+        "published": "2026-10-22T23:18:22.797"
       },
       {
-        "cve_id": "CVE-2026-114605",
+        "cve_id": "CVE-2026-110825",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "dnspython is a DNS toolkit for Python. Prior to 2.9.0, dns.name.from_wire_parser follows attacker-controlled DNS compression pointer chains without a hop limit. A malicious DNS wire-format message can",
-        "published": "2026-10-22T17:16:58.237"
+        "description": "The ONVIF device service on affected Kiloview E3 NDI encoder firmware accepts hostname, DNS, and NTP configuration write operations without requiring authentication, regardless of the device's configu",
+        "published": "2026-10-22T23:18:22.940"
       },
       {
-        "cve_id": "CVE-2026-75507",
+        "cve_id": "CVE-2026-92450",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "GraphQL-core is a Python port of the GraphQL.js reference implementation. From 3.0.0 until 3.2.12 and 3.3.0rc1, the OverlappingFieldsCanBeMerged rule in specified_rules repeatedly compares fields that",
-        "published": "2026-10-22T17:16:59.757"
+        "description": "The authentication framework used by affected Kiloview E3 NDI encoder firmware signs session JSON Web Tokens using an HMAC-SHA256 secret hardcoded as a static string within the firmware image, identic",
+        "published": "2026-10-22T23:20:33.703"
       },
       {
-        "cve_id": "CVE-2026-75508",
+        "cve_id": "CVE-2026-115497",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "GraphQL-core is a Python port of the GraphQL.js reference implementation. From 3.2.3 until 3.2.12 and 3.3.0rc1, the parser's max_tokens limit in Parser.advance_lexer counts only non-comment tokens ret",
-        "published": "2026-10-22T17:16:59.933"
+        "description": "The Music Store \u2013 WordPress eCommerce plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 1.4.7 via the 'f' parameter parameter. This makes it possible for ",
+        "published": "2026-10-23T05:17:15.063"
       }
     ]
   },
