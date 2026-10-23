@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T02:35:29.706972+00:00",
+  "generated_at": "2026-10-23T08:56:29.198794+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
+        "value": 6,
         "score": 2.5,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 381,
-    "critical_count": 7,
-    "high_count": 35,
+    "total": 388,
+    "critical_count": 6,
+    "high_count": 36,
     "cves": [
       {
         "cve_id": "CVE-2026-112241",
@@ -278,25 +278,11 @@
         "published": "2026-10-22T09:17:14.680"
       },
       {
-        "cve_id": "CVE-2026-114220",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "NT OneAPP developed by NewType Infortech has an Improper Certificate Validation vulnerability. Unauthenticated network-adjacent attackers can perform a man-in-the-middle attack by failing to validate ",
-        "published": "2026-10-22T05:16:50.020"
-      },
-      {
         "cve_id": "CVE-2022-51022",
         "severity": "CRITICAL",
         "base_score": 9.1,
         "description": "YiShaAdmin 2.2 through 3.1, fixed in commit 025b062, contains an unauthenticated path traversal vulnerability in the /admin/File/DownloadFile endpoint that allows attackers to read and delete arbitrar",
         "published": "2026-10-22T11:17:05.153"
-      },
-      {
-        "cve_id": "CVE-2026-114177",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Cross-Site Request Forgery (CSRF) vulnerability in Xpro Xpro Elementor Addons xpro-elementor-addons allows Cross Site Request Forgery.This issue affects Xpro Elementor Addons: from n/a through 1.7.10.",
-        "published": "2026-10-22T07:16:41.870"
       },
       {
         "cve_id": "CVE-2026-112242",
@@ -306,11 +292,46 @@
         "published": "2026-10-22T09:17:14.283"
       },
       {
+        "cve_id": "CVE-2026-115328",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "JSON-SCADA before 0.65-alpha contains an sql injection vulnerability in opcApi() in src/server_realtime_auth/index.js that allows authenticated users to inject SQL via HistoryReadRequest parameters. A",
+        "published": "2026-10-22T11:17:51.873"
+      },
+      {
+        "cve_id": "CVE-2026-115330",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Lotus through 0.10.2 contains an sql injection vulnerability that allows authenticated organization users to execute arbitrary SQL by appending stacked statements to custom metric queries. Attackers c",
+        "published": "2026-10-22T11:17:52.153"
+      },
+      {
+        "cve_id": "CVE-2026-115331",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Lotus through 0.10.2 contains an sql injection vulnerability that allows authenticated organization users to inject SQL by supplying crafted billable metric property_name or categorical filter values.",
+        "published": "2026-10-22T11:17:52.290"
+      },
+      {
+        "cve_id": "CVE-2026-115332",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Lotus through 0.10.2 contains an sql injection vulnerability that allows authenticated organization users to inject SQL by registering crafted subscription_filter_keys that bypass keyword-only validat",
+        "published": "2026-10-22T11:17:52.427"
+      },
+      {
         "cve_id": "CVE-2026-112822",
         "severity": "HIGH",
         "base_score": 8.5,
         "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in AmentoTech Workreap Core workreap_core allows Blind SQL Injection.This issue affects Workreap Core",
         "published": "2026-10-22T11:17:32.113"
+      },
+      {
+        "cve_id": "CVE-2026-115325",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "Netmaker through 1.7.0 contains an authorization bypass vulnerability in the updateExtClient handler that allows network-scoped users to modify external clients on other networks. Attackers with exter",
+        "published": "2026-10-22T11:17:51.400"
       },
       {
         "cve_id": "CVE-2026-112085",
@@ -360,27 +381,6 @@
         "base_score": 8.1,
         "description": "Improper Control of Filename for Include/Require Statement in PHP Program ('PHP Remote File Inclusion') vulnerability in Elated-Themes Academist Core academist-core allows PHP Local File Inclusion.Thi",
         "published": "2026-10-22T11:17:31.147"
-      },
-      {
-        "cve_id": "CVE-2026-111851",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection') vulnerability in WProyal Royal Elementor Addons royal-elementor-addons allows Code Injection.This issue affects Royal",
-        "published": "2026-10-22T09:17:13.843"
-      },
-      {
-        "cve_id": "CVE-2026-110353",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "HAProxy 3.2 before 3.4.6 allows a remote unauthenticated attacker to cause a denial of service (worker-thread CPU exhaustion) via a truncated HTTP/2 PING frame. h2c_handle_ping in src/mux_h2.c does no",
-        "published": "2026-10-22T03:16:31.270"
-      },
-      {
-        "cve_id": "CVE-2026-110354",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "HAProxy 3 before 3.4.6 allows a remote unauthenticated attacker to cause a denial of service (persistent worker-thread CPU exhaustion) via an HTTP/1.1 chunked request. Although the H1 multiplexer drai",
-        "published": "2026-10-22T03:16:31.427"
       }
     ]
   },
