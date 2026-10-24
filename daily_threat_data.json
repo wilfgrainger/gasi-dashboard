@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-24T18:26:57.385719+00:00",
+  "generated_at": "2026-10-24T22:07:14.589023+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 9,
-        "score": 2.5,
+        "value": 12,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 117,
-    "critical_count": 9,
-    "high_count": 31,
+    "total": 86,
+    "critical_count": 12,
+    "high_count": 27,
     "cves": [
       {
         "cve_id": "CVE-2026-115889",
@@ -262,6 +262,13 @@
         "base_score": 9.9,
         "description": "Postiz lets a signed-in user ask the backend to run a function on one of their connected channels. The backend did not restrict which functions can be requested, so a user could call internal helper f",
         "published": "2026-10-23T23:17:43.263"
+      },
+      {
+        "cve_id": "CVE-2026-115933",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Postiz signs its session, invitation and password reset tokens with one shared secret and without any marker of what a token is for. A route that refreshes the credentials of a browser-extension chann",
+        "published": "2026-10-24T15:17:33.957"
       },
       {
         "cve_id": "CVE-2026-115806",
@@ -292,6 +299,13 @@
         "published": "2026-10-24T08:16:52.790"
       },
       {
+        "cve_id": "CVE-2026-115932",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "When a post is published, Postiz treats a media path that is not a web address as a file on the server's disk, but it does not check that the file lies inside the upload directory. A registered user c",
+        "published": "2026-10-24T13:16:37.217"
+      },
+      {
         "cve_id": "CVE-2026-111402",
         "severity": "CRITICAL",
         "base_score": 9.3,
@@ -306,11 +320,11 @@
         "published": "2026-10-24T08:16:51.303"
       },
       {
-        "cve_id": "CVE-2026-79982",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Bluetooth HCI USB transport class of the new USB device stack, subsys/usb/device_next/class/bt_hci.c, copies every controller-to-host HCI packet into a USB transfer buffer before enqueuing it on a",
-        "published": "2026-10-23T20:17:28.167"
+        "cve_id": "CVE-2026-114820",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: JSSE).  Supported versions that are affected are Oracle Java SE: 8u",
+        "published": "2026-10-24T19:17:04.413"
       },
       {
         "cve_id": "CVE-2026-115895",
@@ -348,18 +362,11 @@
         "published": "2026-10-24T12:16:56.640"
       },
       {
-        "cve_id": "CVE-2026-58202",
+        "cve_id": "CVE-2026-116019",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "OpenReception's appointment booking software provides an end-to-end encrypted appointment booking platform. Prior to version 2.0.0, the account-confirmation link in emails is built from the request Ho",
-        "published": "2026-10-23T21:17:24.473"
-      },
-      {
-        "cve_id": "CVE-2026-79977",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "The WireGuard VPN service in subsys/net/lib/wireguard/wg.c updated the peer endpoint from a message it could not authenticate. In handle_transport_data(), when the 32-bit receiver index of an incoming",
-        "published": "2026-10-23T20:17:27.523"
+        "base_score": 8.8,
+        "description": "Grav 2.0.15 before 2.2.13 contains an allowlist bypass vulnerability that allows page editors to invoke arbitrary public static methods by relocating data-*@ directives with unset-name@ or integer key",
+        "published": "2026-10-24T12:16:58.473"
       },
       {
         "cve_id": "CVE-2026-116014",
@@ -369,18 +376,11 @@
         "published": "2026-10-24T12:16:57.607"
       },
       {
-        "cve_id": "CVE-2026-79979",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "The arm64 MMU backend invalidates a single virtual address from the TLB with invalidate_tlb_page() in arch/arm64/core/mmu.c, which issued TLBI VAE1{IS} with an operand of virt >> 12. That operand enco",
-        "published": "2026-10-23T20:17:27.783"
-      },
-      {
-        "cve_id": "CVE-2026-19741",
+        "cve_id": "CVE-2026-115887",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Zephyr's OpenThread integration defined CONFIG_OPENTHREAD_JOINER_PSKD with default \"J01NME\" in modules/openthread/Kconfig.thread (previously subsys/net/l2/openthread/Kconfig, then subsys/net/l2/openth",
-        "published": "2026-10-23T20:17:21.867"
+        "description": "GraphQL Scalars is a library of custom GraphQL scalars for creating precise type-safe GraphQL schemas. From 1.24.1 until 2.0.1, GraphQLPhoneNumber in src/scalars/PhoneNumber.ts uses ambiguous nested d",
+        "published": "2026-10-23T22:16:58.253"
       }
     ]
   },
