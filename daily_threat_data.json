@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T08:49:07.689616+00:00",
+  "generated_at": "2026-10-25T15:16:23.750857+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
+        "value": 3,
         "score": 2.0,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 65,
-    "critical_count": 4,
-    "high_count": 15,
+    "total": 126,
+    "critical_count": 3,
+    "high_count": 19,
     "cves": [
       {
         "cve_id": "CVE-2026-115933",
@@ -248,13 +248,6 @@
         "base_score": 9.9,
         "description": "Postiz signs its session, invitation and password reset tokens with one shared secret and without any marker of what a token is for. A route that refreshes the credentials of a browser-extension chann",
         "published": "2026-10-24T15:17:33.957"
-      },
-      {
-        "cve_id": "CVE-2026-115932",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "When a post is published, Postiz treats a media path that is not a web address as a file on the server's disk, but it does not check that the file lies inside the upload directory. A registered user c",
-        "published": "2026-10-24T13:16:37.217"
       },
       {
         "cve_id": "CVE-2026-115995",
@@ -271,46 +264,74 @@
         "published": "2026-10-24T19:17:04.413"
       },
       {
-        "cve_id": "CVE-2026-110018",
+        "cve_id": "CVE-2026-116068",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The aBlocks \u2013 Gutenberg Blocks, User Dashboard Builder, Popup Builder, Form Builder & Animation Builder plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including,",
-        "published": "2026-10-24T12:16:54.783"
+        "description": "Dokploy through 0.30.10 contains an authorization bypass vulnerability that allows owners or admins of any organization to control other tenants' applications by supplying foreign applicationId values",
+        "published": "2026-10-25T12:16:29.153"
       },
       {
-        "cve_id": "CVE-2026-116009",
+        "cve_id": "CVE-2026-116067",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Camaleon CMS before 2.9.3 contains a path traversal vulnerability that allows users with only the media permission to write arbitrary files by supplying ../ sequences in the name parameter. Attackers ",
-        "published": "2026-10-24T12:16:56.640"
+        "base_score": 8.2,
+        "description": "Paisa before 0.7.8 contains a path traversal vulnerability in the GetFile, GetSheet, DeleteBackups, and DeleteSheetBackups handlers that lets unauthenticated attackers read files and delete backups th",
+        "published": "2026-10-25T12:16:28.997"
       },
       {
-        "cve_id": "CVE-2026-116019",
+        "cve_id": "CVE-2026-116176",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Grav 2.0.15 before 2.2.13 contains an allowlist bypass vulnerability that allows page editors to invoke arbitrary public static methods by relocating data-*@ directives with unset-name@ or integer key",
-        "published": "2026-10-24T12:16:58.473"
+        "base_score": 8.2,
+        "description": "vLLM from 0.9.2 before 0.24.0 contains a server-side request forgery vulnerability that allows API callers to force outbound connections by embedding a decode address in the X-Request-Id header. Attac",
+        "published": "2026-10-25T14:16:57.160"
       },
       {
-        "cve_id": "CVE-2026-116014",
+        "cve_id": "CVE-2026-116149",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "open62541 1.5.0 before 1.5.7 contains an integer overflow in UA_DataType_fromStructureDescription() that wraps the 16-bit memSize field for large custom structure definitions. A malicious OPC UA serve",
-        "published": "2026-10-24T12:16:57.607"
+        "description": "ImageMagick before 6.9.13-58 and 7.x before 7.1.2-33 contains a stack-based buffer overflow in the handling of bzip2 compressed images. Attackers can supply a crafted image using bzip2 compression to ",
+        "published": "2026-10-25T14:16:53.123"
       },
       {
-        "cve_id": "CVE-2026-116011",
+        "cve_id": "CVE-2026-116180",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Crow before 1.3.4 contains an uncontrolled recursion vulnerability in crow::json::load() that allows remote unauthenticated attackers to crash the server by sending deeply nested JSON. Attackers can s",
-        "published": "2026-10-24T12:16:57.070"
+        "base_score": 7.7,
+        "description": "vLLM from 0.8.5 before 0.31.0 has a denial of service flaw. LogprobsTensors.empty_cpu() in vllm/v1/outputs.py allocates an uninitialized int32 tensor, and the V1 model runner leaves prompt positions r",
+        "published": "2026-10-25T14:16:57.760"
       },
       {
-        "cve_id": "CVE-2026-114191",
+        "cve_id": "CVE-2026-116171",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Missing Authorization vulnerability in Knit Pay UPI QR Code Payment Gateway for WooCommerce upi-qr-code-payment-for-woocommerce allows Exploiting Incorrectly Configured Access Control Security Levels.",
-        "published": "2026-10-24T14:16:38.870"
+        "description": "SiYuan 3.5.4 before 3.8.7 on Windows contains a sensitive-path denylist bypass in IsSensitivePath because the Windows extended-length prefix (\\\\?\\) survives filepath.Clean and matches no forbidden pre",
+        "published": "2026-10-25T14:16:56.413"
+      },
+      {
+        "cve_id": "CVE-2026-116177",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "vLLM from 0.10.2 before 0.25.0 contains an uncontrolled resource consumption vulnerability that allows unauthenticated attackers to exhaust memory because the Nemotron-VL processors globally set Image",
+        "published": "2026-10-25T14:16:57.317"
+      },
+      {
+        "cve_id": "CVE-2026-116179",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "vLLM from 0.18.0 before 0.31.0 contains a resource exhaustion vulnerability that allows API clients to bypass the video/jpeg frame-count cap by overriding num_frames through media_io_kwargs. Attackers",
+        "published": "2026-10-25T14:16:57.620"
+      },
+      {
+        "cve_id": "CVE-2026-116183",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "phpMyFAQ before 4.1.10 contains an object-level authorization bypass vulnerability that allows unauthenticated attackers to modify or delete any visitor question by supplying an arbitrary openQuestion",
+        "published": "2026-10-25T14:16:58.213"
+      },
+      {
+        "cve_id": "CVE-2026-116163",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "Parse Server before 8.6.102 and 9.0.0 before 9.10.5-alpha.2 contains an authentication bypass because the validateSetUp, validateLogin, and validateUpdate methods of custom adapters subclassing AuthAd",
+        "published": "2026-10-25T14:16:55.110"
       },
       {
         "cve_id": "CVE-2026-115969",
@@ -360,27 +381,6 @@
         "base_score": 7.3,
         "description": "A vulnerability was detected in krupalshah EmployeeRecruitmentSystem up to 922ff6d208278282e7c8e36d70d9ae356adec9fe. Affected by this vulnerability is the function mysql_query of the file /source/regi",
         "published": "2026-10-25T08:16:26.780"
-      },
-      {
-        "cve_id": "CVE-2026-114704",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "Deserialization of Untrusted Data vulnerability in Christoph Vielgrader Relevanssi  relevanssi allows Object Injection.This issue affects Relevanssi : from n/a through 4.28.4.",
-        "published": "2026-10-24T14:16:39.313"
-      },
-      {
-        "cve_id": "CVE-2026-116016",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "yudao-cloud through 2026.09 contains an authorization bypass vulnerability that allows authenticated users to evade row-level data scope restrictions by sending a data-permission-enable header set to ",
-        "published": "2026-10-24T12:16:57.960"
-      },
-      {
-        "cve_id": "CVE-2026-115993",
-        "severity": "MEDIUM",
-        "base_score": 6.8,
-        "description": "Stored XSS vulnerability in the \u201cNotes\u201d field of the Checklists in Cervantes version v1.3-beta could allow an attacker to execute arbitrary code in another user's browser with elevated privileges",
-        "published": "2026-10-24T09:16:44.270"
       }
     ]
   },
