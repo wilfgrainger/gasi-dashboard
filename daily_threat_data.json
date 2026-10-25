@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T22:07:14.589023+00:00",
+  "generated_at": "2026-10-25T02:21:19.442201+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 33,
+        "value": 30,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 12,
+        "value": 10,
         "score": 3.0,
         "max": 3
       },
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1756,
-    "recent_30d_count": 33,
+    "recent_30d_count": 30,
     "recent": [
       {
         "cve_id": "CVE-2026-114625",
@@ -238,31 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 86,
-    "critical_count": 12,
-    "high_count": 27,
+    "total": 77,
+    "critical_count": 10,
+    "high_count": 23,
     "cves": [
-      {
-        "cve_id": "CVE-2026-115889",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Wasmtime is a runtime for WebAssembly. Prior to 36.0.19 and 43.0.0, the Cranelift compiler backend bit-packs SSA value indices in a way that can silently overflow in release builds when compiling a su",
-        "published": "2026-10-23T22:16:58.400"
-      },
-      {
-        "cve_id": "CVE-2026-115893",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Wasmtime is a runtime for WebAssembly. Prior to 36.0.19, 48.0.7, and 49.0.4, the Cranelift compiler backend on aarch64 can compile a Wasm br_table instruction with more than approximately 256,000 targ",
-        "published": "2026-10-23T22:16:58.820"
-      },
-      {
-        "cve_id": "CVE-2026-115931",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Postiz lets a signed-in user ask the backend to run a function on one of their connected channels. The backend did not restrict which functions can be requested, so a user could call internal helper f",
-        "published": "2026-10-23T23:17:43.263"
-      },
       {
         "cve_id": "CVE-2026-115933",
         "severity": "CRITICAL",
@@ -306,6 +285,13 @@
         "published": "2026-10-24T13:16:37.217"
       },
       {
+        "cve_id": "CVE-2026-115995",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "A security vulnerability has been detected in Unitree Robotics Unitree Go2 up to 1.1.11.4. The impacted element is the function set_volume of the file gpt_thread.py of the component chat_go. Such mani",
+        "published": "2026-10-24T23:16:58.323"
+      },
+      {
         "cve_id": "CVE-2026-111402",
         "severity": "CRITICAL",
         "base_score": 9.3,
@@ -325,27 +311,6 @@
         "base_score": 9.1,
         "description": "Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of Oracle Java SE (component: JSSE).  Supported versions that are affected are Oracle Java SE: 8u",
         "published": "2026-10-24T19:17:04.413"
-      },
-      {
-        "cve_id": "CVE-2026-115895",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Happy DOM is a JavaScript implementation of a web browser without its graphical user interface. From 17.0.0 until 21.0.4, packages/happy-dom/src/module/ECMAScriptModuleCompiler.ts accepts a named ESM ",
-        "published": "2026-10-23T22:16:58.987"
-      },
-      {
-        "cve_id": "CVE-2026-115935",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The\u00a0app/process-api-response-headers\u00a0action accepts fake Craft API response headers from any authenticated control panel user.\n\n\n\nA non-admin user with only\u00a0accessCp\u00a0can place newline characters in\u00a0X-",
-        "published": "2026-10-23T22:16:59.290"
-      },
-      {
-        "cve_id": "CVE-2026-115938",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Craft CMS allows any authenticated control panel user to submit an element-search condition whose element selector is evaluated as a sandboxed Twig object template. Craft\u2019s allowed\u00a0column\u00a0filter deleg",
-        "published": "2026-10-23T22:16:59.597"
       },
       {
         "cve_id": "CVE-2026-110018",
@@ -376,11 +341,46 @@
         "published": "2026-10-24T12:16:57.607"
       },
       {
-        "cve_id": "CVE-2026-115887",
+        "cve_id": "CVE-2026-116011",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "GraphQL Scalars is a library of custom GraphQL scalars for creating precise type-safe GraphQL schemas. From 1.24.1 until 2.0.1, GraphQLPhoneNumber in src/scalars/PhoneNumber.ts uses ambiguous nested d",
-        "published": "2026-10-23T22:16:58.253"
+        "description": "Crow before 1.3.4 contains an uncontrolled recursion vulnerability in crow::json::load() that allows remote unauthenticated attackers to crash the server by sending deeply nested JSON. Attackers can s",
+        "published": "2026-10-24T12:16:57.070"
+      },
+      {
+        "cve_id": "CVE-2026-114191",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Missing Authorization vulnerability in Knit Pay UPI QR Code Payment Gateway for WooCommerce upi-qr-code-payment-for-woocommerce allows Exploiting Incorrectly Configured Access Control Security Levels.",
+        "published": "2026-10-24T14:16:38.870"
+      },
+      {
+        "cve_id": "CVE-2026-115969",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A flaw has been found in Travisun Opptrix 0.4.0. This affects an unknown function of the file /api/auth/setup of the component Schedule API. This manipulation causes command injection. It is possible ",
+        "published": "2026-10-24T16:16:25.343"
+      },
+      {
+        "cve_id": "CVE-2026-115970",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability has been found in Travisun Opptrix 0.4.0. This impacts an unknown function of the file /api/system-update/import of the component Import Endpoint. Such manipulation leads to code injec",
+        "published": "2026-10-24T18:16:48.367"
+      },
+      {
+        "cve_id": "CVE-2026-115973",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was identified in FaveoSuite Faveo Helpdesk 2.0.3. Affected by this issue is the function ForgotPasswordController::sendResetLinkEmail/PasswordController::reset of the file app/Http/Co",
+        "published": "2026-10-24T19:17:04.553"
+      },
+      {
+        "cve_id": "CVE-2026-115999",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability has been found in mansi-k Restaurant_IMS d7ad49f61ab7cc1ec6eb359ac2b5378bdbde0694. Affected is the function mysqli_connect of the file lsmodal.php. The manipulation of the argument log",
+        "published": "2026-10-25T02:16:26.913"
       }
     ]
   },
