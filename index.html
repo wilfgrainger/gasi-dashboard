@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GASI — Global Attack Surface Index</title>
   <meta name="description" content="Daily threat intelligence dashboard. Aggregates CISA KEV, NIST NVD, AbuseIPDB, URLhaus and AlienVault OTX into a single pane of glass." />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-inline'; connect-src 'self'; form-action 'none';" />
 
   <!--
     DESIGN SYSTEM: THE INTELLIGENCE BRIEF
@@ -1107,6 +1108,32 @@
 
     // ─── Helpers ──────────────────────────────────────────────────────────────
 
+    const ALLOWED_LEVELS = new Set(['critical', 'high', 'elevated', 'moderate']);
+
+    function escapeHtml(value) {
+      return String(value ?? '').replace(/[&<>"']/g, char => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;'
+      }[char]));
+    }
+
+    function numberOr(value, fallback = 0) {
+      const number = Number(value);
+      return Number.isFinite(number) ? number : fallback;
+    }
+
+    function clampPercent(value) {
+      return Math.min(100, Math.max(0, numberOr(value)));
+    }
+
+    function safeLevel(value) {
+      const level = String(value || '').toLowerCase();
+      return ALLOWED_LEVELS.has(level) ? level : 'moderate';
+    }
+
     function flag(cc) {
       if (!cc || cc.length !== 2) return '🌐';
       return String.fromCodePoint(...[...cc.toUpperCase()].map(c => 0x1F1E6 + c.charCodeAt(0) - 65));
@@ -1124,6 +1151,7 @@
     }
 
     function countUp(el, target, ms, isFloat) {
+      target = numberOr(target);
       const t0 = performance.now();
       (function step(now) {
         const p  = Math.min((now - t0) / ms, 1);
@@ -1140,8 +1168,8 @@
     function renderThermo(data) {
       const ts = data.threat_score;
       if (!ts) return;
-      const lv = (ts.level_color || 'moderate').toLowerCase();
-      const sc = ts.score || 0;
+      const lv = safeLevel(ts.level_color);
+      const sc = numberOr(ts.score);
 
       const numEl = document.getElementById('thermoNum');
       numEl.className = 'thermo-number ' + lv;
@@ -1153,7 +1181,7 @@
 
       const fill = document.getElementById('thermoFill');
       fill.className = 'thermo-fill ' + lv;
-      setTimeout(() => fill.style.width = ((sc / 10) * 100) + '%', 350);
+      setTimeout(() => fill.style.width = clampPercent((sc / 10) * 100) + '%', 350);
 
       const badge = document.getElementById('hdrBadge');
       badge.textContent = ts.level || '—';
@@ -1161,17 +1189,21 @@
 
       const factors = ts.factors || [];
       if (factors.length) {
-        document.getElementById('thermoFactors').innerHTML = factors.map(f => `
-          <div class="factor">
-            <div class="factor-lbl">
-              <span>${f.name}</span>
-              <span>${f.value}</span>
+        document.getElementById('thermoFactors').innerHTML = factors.map(f => {
+          const max = numberOr(f.max, 1);
+          const width = max > 0 ? clampPercent((numberOr(f.score) / max) * 100) : 0;
+          return `
+            <div class="factor">
+              <div class="factor-lbl">
+                <span>${escapeHtml(f.name)}</span>
+                <span>${escapeHtml(f.value)}</span>
+              </div>
+              <div class="factor-rail">
+                <div class="factor-fill" style="width:${width}%"></div>
+              </div>
             </div>
-            <div class="factor-rail">
-              <div class="factor-fill" style="width:${(f.score / f.max) * 100}%"></div>
-            </div>
-          </div>
-        `).join('');
+          `;
+        }).join('');
       }
     }
 
@@ -1198,13 +1230,13 @@
               <span class="kev-badge ${isRsw ? 'ransomware' : ''}">${isRsw ? '⚠ RANSOMWARE' : 'ACTIVE'}</span>
             </div>
             <div>
-              <span class="kev-cve">${it.cve_id}</span>
-              <span class="kev-name">${it.name || 'Unknown Vulnerability'}</span>
-              <span class="kev-vendor">${it.vendor} — ${it.product}</span>
+              <span class="kev-cve">${escapeHtml(it.cve_id)}</span>
+              <span class="kev-name">${escapeHtml(it.name || 'Unknown Vulnerability')}</span>
+              <span class="kev-vendor">${escapeHtml(it.vendor)} — ${escapeHtml(it.product)}</span>
             </div>
             <div class="kev-date-col">
-              ${it.date_added}<br>
-              <span style="opacity:.5">Due: ${it.due_date}</span>
+              ${escapeHtml(it.date_added)}<br>
+              <span style="opacity:.5">Due: ${escapeHtml(it.due_date)}</span>
             </div>
           </div>
         `;
@@ -1226,9 +1258,10 @@
 
       const sevClass = { CRITICAL: 'sc', HIGH: 'sh', MEDIUM: 'sm' };
       const items = [...cves, ...cves].map(c => {
-        const sc = sevClass[c.severity] || '';
+        const severity = String(c.severity || 'UNKNOWN').toUpperCase();
+        const sc = sevClass[severity] || '';
         const desc = (c.description || '').substring(0, 70);
-        return `<span class="nvd-tick-item"><span class="${sc}">[${c.severity}]</span> ${c.cve_id} — ${desc}…</span>`;
+        return `<span class="nvd-tick-item"><span class="${sc}">[${escapeHtml(severity)}]</span> ${escapeHtml(c.cve_id)} — ${escapeHtml(desc)}…</span>`;
       }).join('');
 
       document.getElementById('nvdTicker').innerHTML = items;
@@ -1247,21 +1280,26 @@
         return;
       }
 
-      tbody.innerHTML = ips.map((ip, i) => `
-        <tr>
-          <td style="color:var(--ink-ghost);font-size:.58rem;">${String(i + 1).padStart(2, '0')}</td>
-          <td class="ip-addr">${ip.ip}</td>
-          <td>${flag(ip.country)} ${ip.country}</td>
-          <td>
-            <div class="conf-bar-wrap">
-              <div class="conf-bar"><div class="conf-fill" style="width:${ip.confidence}%"></div></div>
-              <span>${ip.confidence}%</span>
-            </div>
-          </td>
-          <td>${(ip.total_reports || 0).toLocaleString()}</td>
-          <td class="isp-cell">${ip.isp || '—'}</td>
-        </tr>
-      `).join('');
+      tbody.innerHTML = ips.map((ip, i) => {
+        const confidence = clampPercent(ip.confidence);
+        const reports = Math.max(0, Math.floor(numberOr(ip.total_reports)));
+        const country = String(ip.country || '??').slice(0, 2).toUpperCase();
+        return `
+          <tr>
+            <td style="color:var(--ink-ghost);font-size:.58rem;">${String(i + 1).padStart(2, '0')}</td>
+            <td class="ip-addr">${escapeHtml(ip.ip)}</td>
+            <td>${escapeHtml(flag(country))} ${escapeHtml(country)}</td>
+            <td>
+              <div class="conf-bar-wrap">
+                <div class="conf-bar"><div class="conf-fill" style="width:${confidence}%"></div></div>
+                <span>${confidence}%</span>
+              </div>
+            </td>
+            <td>${reports.toLocaleString()}</td>
+            <td class="isp-cell">${escapeHtml(ip.isp || '—')}</td>
+          </tr>
+        `;
+      }).join('');
     }
 
     // ─── Render: Malware Cloud ───────────────────────────────────────────────
@@ -1279,9 +1317,10 @@
       const hot  = maxC * 0.45;
 
       cloud.innerHTML = families.map(f => {
-        const size = (0.58 + (f.count / maxC) * 0.52).toFixed(2);
-        return `<span class="m-tag ${f.count >= hot ? 'hot' : ''}" style="font-size:${size}rem" title="${f.count} reports">
-          ${f.name}<span class="m-tag-count">${f.count}</span>
+        const count = Math.max(0, Math.floor(numberOr(f.count)));
+        const size = (0.58 + (count / maxC) * 0.52).toFixed(2);
+        return `<span class="m-tag ${count >= hot ? 'hot' : ''}" style="font-size:${size}rem" title="${count} reports">
+          ${escapeHtml(f.name)}<span class="m-tag-count">${count}</span>
         </span>`;
       }).join('');
     }
@@ -1321,12 +1360,13 @@
       let html = '';
 
       ips.forEach(ip => {
-        const cc = (ip.country || '').toUpperCase();
+        const cc = String(ip.country || '').slice(0, 2).toUpperCase();
         const center = COUNTRY_CENTERS[cc];
         if (!center) return;
 
         const pos = toSvg(center[0], center[1]);
-        const conf = ip.confidence || 0;
+        const conf = clampPercent(ip.confidence);
+        const reports = Math.max(0, Math.floor(numberOr(ip.total_reports)));
         // Radius scales linearly: 3 to 10 SVG units (responsive)
         const r = 3 + (conf / 100) * 7;
         const isHigh = conf >= 90;
@@ -1338,10 +1378,10 @@
           + 'cy="' + pos.y.toFixed(1) + '" '
           + 'r="' + r.toFixed(1) + '" '
           + 'fill="' + fillColor + '" '
-          + 'data-ip="' + (ip.ip || '') + '" '
-          + 'data-cc="' + cc + '" '
+          + 'data-ip="' + escapeHtml(ip.ip || '') + '" '
+          + 'data-cc="' + escapeHtml(cc) + '" '
           + 'data-conf="' + conf + '" '
-          + 'data-reports="' + (ip.total_reports || 0) + '" '
+          + 'data-reports="' + reports + '" '
           + 'style="pointer-events:all;" />';
       });
 
