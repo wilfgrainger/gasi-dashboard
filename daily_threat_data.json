@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T17:55:32.172965+00:00",
+  "generated_at": "2026-10-26T23:27:42.786013+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,7 +7,7 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 30,
+        "value": 32,
         "score": 3.0,
         "max": 3
       },
@@ -32,9 +32,29 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1756,
-    "recent_30d_count": 30,
+    "total_catalog_count": 1758,
+    "recent_30d_count": 32,
     "recent": [
+      {
+        "cve_id": "CVE-2026-109618",
+        "vendor": "PHP Group",
+        "product": "PHP",
+        "name": "PHP Memory Corruption Vulnerability",
+        "date_added": "2026-10-26",
+        "due_date": "2026-10-29",
+        "description": "PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code execution.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-109619",
+        "vendor": "PHP Group",
+        "product": "PHP",
+        "name": "PHP Stale Internal Request-State Vulnerability",
+        "date_added": "2026-10-26",
+        "due_date": "2026-10-29",
+        "description": "PHP contains a stale internal request-state vulnerability that allows for unauthenticated remote code execution.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-114625",
         "vendor": "Arista",
@@ -214,33 +234,13 @@
         "due_date": "2026-10-11",
         "description": "ISC BIND contains a data processing errors vulnerability that could allow remote attackers to cause a denial of service via TKEY queries.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2016-3081",
-        "vendor": "Apache",
-        "product": "Struts",
-        "name": "Apache Struts Command Injection Vulnerability",
-        "date_added": "2026-10-08",
-        "due_date": "2026-10-11",
-        "description": "Apache Struts contains a command injection vulnerability that could allow remote attackers to execute arbitrary code via method:prefix when Dynamic Method Invocation is enabled.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2023-22894",
-        "vendor": "Strapi",
-        "product": "Strapi",
-        "name": "Strapi Cleartext Storage of Sensitive Information Vulnerability",
-        "date_added": "2026-10-08",
-        "due_date": "2026-10-11",
-        "description": "Strapi contains a cleartext storage of sensitive information vulnerability that could allow attackers with access to the admin panel to discover sensitive user details via the query filter. The impact",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 299,
+    "total": 759,
     "critical_count": 5,
-    "high_count": 23,
+    "high_count": 22,
     "cves": [
       {
         "cve_id": "CVE-2026-116231",
@@ -290,6 +290,20 @@
         "base_score": 8.8,
         "description": "SOEM version 2.0.0 and earlier contains a vulnerability in multi-segment data transfers where a malicious device can overflow memory buffers. The software checks the total size only once at the beginn",
         "published": "2026-10-26T09:16:36.140"
+      },
+      {
+        "cve_id": "CVE-2026-115608",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Crocoblock JetEngine jet-engine allows SQL Injection.This issue affects JetEngine: from n/a throug",
+        "published": "2026-10-26T11:16:35.190"
+      },
+      {
+        "cve_id": "CVE-2026-115948",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in David Lingren Media LIbrary Assistant media-library-assistant allows Blind SQL Injection.This issu",
+        "published": "2026-10-26T11:16:35.550"
       },
       {
         "cve_id": "CVE-2026-116237",
@@ -367,20 +381,6 @@
         "base_score": 7.8,
         "description": "V-SFT provided by FUJI ELECTRIC CO., LTD. contains an out-of-bounds read vulnerability in VS6ComFile!CCheck::ItemCheck. Opening a crafted V7 file may lead to information exposure or arbitrary code exe",
         "published": "2026-10-26T07:17:08.360"
-      },
-      {
-        "cve_id": "CVE-2026-116061",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was identified in SourceCodester Performance Indicator System 1.0. This vulnerability affects unknown code of the file /opils/staff/edit_dealer.php. The manipulation of the argument Co",
-        "published": "2026-10-25T18:16:46.790"
-      },
-      {
-        "cve_id": "CVE-2026-116062",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security flaw has been discovered in SourceCodester Performance Indicator System 1.0. This issue affects some unknown processing of the file /opils/staff/save_profile.php. The manipulation of the ar",
-        "published": "2026-10-25T18:16:46.950"
       }
     ]
   },
