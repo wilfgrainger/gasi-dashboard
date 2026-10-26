@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-26T02:21:17.498278+00:00",
+  "generated_at": "2026-10-26T09:29:40.332513+00:00",
   "threat_score": {
-    "score": 5.0,
+    "score": 5.5,
     "level": "ELEVATED",
     "level_color": "elevated",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 1.0,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -238,16 +238,30 @@
     ]
   },
   "nvd": {
-    "total": 141,
-    "critical_count": 0,
-    "high_count": 18,
+    "total": 176,
+    "critical_count": 1,
+    "high_count": 20,
     "cves": [
+      {
+        "cve_id": "CVE-2026-116207",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "YesWiki 4.6.0 before 4.7.0 and 5.0.0-alpha1 before 5.0.0-alpha4 contains an unauthenticated SQL injection vulnerability in SearchManager::prepareSearchRequest(). Field names from the query and searchf",
+        "published": "2026-10-25T14:17:01.847"
+      },
       {
         "cve_id": "CVE-2026-116068",
         "severity": "HIGH",
         "base_score": 8.8,
         "description": "Dokploy through 0.30.10 contains an authorization bypass vulnerability that allows owners or admins of any organization to control other tenants' applications by supplying foreign applicationId values",
         "published": "2026-10-25T12:16:29.153"
+      },
+      {
+        "cve_id": "CVE-2026-116201",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Snipe-IT before 8.5.0 contains a SAML assertion replay vulnerability that allows attackers to reuse captured assertions by exploiting a non-atomic nonce check in the SAML acs handler. Attackers can se",
+        "published": "2026-10-25T14:17:00.877"
       },
       {
         "cve_id": "CVE-2026-116067",
@@ -264,6 +278,13 @@
         "published": "2026-10-25T14:16:57.160"
       },
       {
+        "cve_id": "CVE-2026-116211",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "YesWiki 4.5.0 before 4.7.0 contains an SQL injection vulnerability in PageManager::save(), where the date_maj_fiche field of a Bazar entry-creation request is concatenated unescaped into an INSERT sta",
+        "published": "2026-10-25T14:17:02.187"
+      },
+      {
         "cve_id": "CVE-2026-116149",
         "severity": "HIGH",
         "base_score": 8.1,
@@ -276,6 +297,20 @@
         "base_score": 8.1,
         "description": "Snipe-IT before 8.6.3 contains an authentication bypass in GoogleAuthController::handleGoogleCallback, which logs in the user whose username matches the Google account email without enforcing the acti",
         "published": "2026-10-25T14:17:00.593"
+      },
+      {
+        "cve_id": "CVE-2026-116204",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "YesWiki before 4.7.0 contains a cross-site request forgery vulnerability in the despam action (tools/security/actions/despam.php) that lets unauthenticated attackers delete or restore pages through an",
+        "published": "2026-10-25T14:17:01.350"
+      },
+      {
+        "cve_id": "CVE-2026-116208",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "YesWiki from 4.6.2 before 4.7.0 contains a missing authorization vulnerability in ActivityPubService::syncActorPosts that lets malicious ActivityPub servers manipulate other actors' mirrored entries. ",
+        "published": "2026-10-25T14:17:02.010"
       },
       {
         "cve_id": "CVE-2026-116180",
@@ -334,53 +369,18 @@
         "published": "2026-10-25T14:16:55.110"
       },
       {
-        "cve_id": "CVE-2026-116000",
+        "cve_id": "CVE-2026-116060",
         "severity": "HIGH",
         "base_score": 7.3,
-        "description": "A security flaw has been discovered in Zylon PrivateGPT 1.0.0/1.0.1. This vulnerability affects the function load_file_from_uri of the file private_gpt/server/ingest/uri_loader.py of the component URI",
-        "published": "2026-10-25T03:16:26.617"
+        "description": "A vulnerability was determined in SourceCodester Performance Indicator System 1.0. This affects an unknown part of the file /opils/staff/adddealer.php. Executing a manipulation of the argument Contact",
+        "published": "2026-10-25T17:17:02.123"
       },
       {
-        "cve_id": "CVE-2026-116006",
+        "cve_id": "CVE-2026-116061",
         "severity": "HIGH",
         "base_score": 7.3,
-        "description": "A vulnerability was detected in YunaiV/zhijiantianya ruoyi-vue-pro up to 2026.09. The affected element is an unknown function of the file AuthController.java of the component SMS Code Verification. Th",
-        "published": "2026-10-25T04:17:34.083"
-      },
-      {
-        "cve_id": "CVE-2026-116048",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was detected in krupalshah EmployeeRecruitmentSystem up to 922ff6d208278282e7c8e36d70d9ae356adec9fe. Affected by this vulnerability is the function mysql_query of the file /source/regi",
-        "published": "2026-10-25T08:16:26.780"
-      },
-      {
-        "cve_id": "CVE-2026-116049",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A flaw has been found in krupalshah EmployeeRecruitmentSystem up to 922ff6d208278282e7c8e36d70d9ae356adec9fe. Affected by this issue is the function mysql_query of the file /source/registerform2.php o",
-        "published": "2026-10-25T09:16:27.543"
-      },
-      {
-        "cve_id": "CVE-2026-116050",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability has been found in krupalshah Employee Recruitment System up to 922ff6d208278282e7c8e36d70d9ae356adec9fe. This affects an unknown part of the file /source/registerform3.php of the compo",
-        "published": "2026-10-25T09:16:27.740"
-      },
-      {
-        "cve_id": "CVE-2026-116066",
-        "severity": "MEDIUM",
-        "base_score": 6.8,
-        "description": "Firecrawl before 2.11.586 contains a server-side request forgery vulnerability in the Playwright service SSRF proxy that allows attackers to bypass isInternalHost checks via DNS rebinding. Attackers c",
-        "published": "2026-10-25T12:16:27.370"
-      },
-      {
-        "cve_id": "CVE-2026-116166",
-        "severity": "MEDIUM",
-        "base_score": 6.8,
-        "description": "SiYuan 3.6.0 before 3.8.7 accepts and persists the networkServeTLS setting but never enforces it, so the kernel port keeps serving full API access over plain HTTP alongside HTTPS. Network-adjacent att",
-        "published": "2026-10-25T14:16:55.517"
+        "description": "A vulnerability was identified in SourceCodester Performance Indicator System 1.0. This vulnerability affects unknown code of the file /opils/staff/edit_dealer.php. The manipulation of the argument Co",
+        "published": "2026-10-25T18:16:46.790"
       }
     ]
   },
