@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-26T09:29:40.332513+00:00",
+  "generated_at": "2026-10-26T17:55:32.172965+00:00",
   "threat_score": {
-    "score": 5.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.5,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 5,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,142 +238,135 @@
     ]
   },
   "nvd": {
-    "total": 176,
-    "critical_count": 1,
-    "high_count": 20,
+    "total": 299,
+    "critical_count": 5,
+    "high_count": 23,
     "cves": [
       {
-        "cve_id": "CVE-2026-116207",
+        "cve_id": "CVE-2026-116231",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A security flaw has been discovered in Oray Pugongying X5 Pro 7.6.1. The impacted element is an unknown function of the component Ser2net. Performing a manipulation of the argument regmsg results in c",
+        "published": "2026-10-26T08:17:17.620"
+      },
+      {
+        "cve_id": "CVE-2026-116232",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A weakness has been identified in Oray Pugongying X5 Pro 7.6.1. This affects the function snmp_set of the component SNMP Handler. Executing a manipulation of the argument info.community can lead to cr",
+        "published": "2026-10-26T08:17:17.837"
+      },
+      {
+        "cve_id": "CVE-2026-116233",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "YesWiki 4.6.0 before 4.7.0 and 5.0.0-alpha1 before 5.0.0-alpha4 contains an unauthenticated SQL injection vulnerability in SearchManager::prepareSearchRequest(). Field names from the query and searchf",
-        "published": "2026-10-25T14:17:01.847"
+        "description": "A security vulnerability has been detected in Oray Pugongying X5 Pro 7.6.1. This impacts an unknown function of the component Dnsmasq. The manipulation of the argument rent_time leads to crlf injectio",
+        "published": "2026-10-26T09:16:34.787"
       },
       {
-        "cve_id": "CVE-2026-116068",
+        "cve_id": "CVE-2026-116234",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "A vulnerability was detected in Oray Pugongying X5 Pro 7.6.1. Affected is an unknown function of the file /etc/ipsec.conf of the component IPsec Policy Handler. The manipulation of the argument secpro",
+        "published": "2026-10-26T09:16:34.953"
+      },
+      {
+        "cve_id": "CVE-2026-116235",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "A flaw has been found in Oray Pugongying X5 Pro 7.6.1. Affected by this vulnerability is an unknown functionality of the component L2TP Authentication. This manipulation of the argument Username cause",
+        "published": "2026-10-26T09:16:35.163"
+      },
+      {
+        "cve_id": "CVE-2026-111841",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Dokploy through 0.30.10 contains an authorization bypass vulnerability that allows owners or admins of any organization to control other tenants' applications by supplying foreign applicationId values",
-        "published": "2026-10-25T12:16:29.153"
+        "description": "Cross-Site Request Forgery (CSRF) vulnerability in Aman FunnelKit Automations wp-marketing-automations allows Cross Site Request Forgery.This issue affects FunnelKit Automations: from n/a through 3.8.",
+        "published": "2026-10-26T09:16:34.207"
       },
       {
-        "cve_id": "CVE-2026-116201",
+        "cve_id": "CVE-2026-82944",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Snipe-IT before 8.5.0 contains a SAML assertion replay vulnerability that allows attackers to reuse captured assertions by exploiting a non-atomic nonce check in the SAML acs handler. Attackers can se",
-        "published": "2026-10-25T14:17:00.877"
+        "description": "SOEM version 2.0.0 and earlier contains a vulnerability in multi-segment data transfers where a malicious device can overflow memory buffers. The software checks the total size only once at the beginn",
+        "published": "2026-10-26T09:16:36.140"
       },
       {
-        "cve_id": "CVE-2026-116067",
+        "cve_id": "CVE-2026-116237",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "A vulnerability was found in Oray Pugongying X5 Pro 7.6.1. This affects an unknown part of the component Dnsmasq. Performing a manipulation results in crlf injection. Remote exploitation of the attack",
+        "published": "2026-10-26T10:16:52.477"
+      },
+      {
+        "cve_id": "CVE-2026-70388",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "SOEM version 2.0.0 and earlier contains vulnerabilities where a malicious device on the network can send specially crafted messages that cause the master to write data outside allocated memory boundar",
+        "published": "2026-10-26T09:16:35.860"
+      },
+      {
+        "cve_id": "CVE-2026-116116",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "Paisa before 0.7.8 contains a path traversal vulnerability in the GetFile, GetSheet, DeleteBackups, and DeleteSheetBackups handlers that lets unauthenticated attackers read files and delete backups th",
-        "published": "2026-10-25T12:16:28.997"
+        "description": "A vulnerability was detected in Yoosee GM8135S Camera 21.00.01.36. Affected is an unknown function of the component Secure Boot. Performing a manipulation results in improper verification of cryptogra",
+        "published": "2026-10-26T04:17:55.047"
       },
       {
-        "cve_id": "CVE-2026-116176",
+        "cve_id": "CVE-2026-113345",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "vLLM from 0.9.2 before 0.24.0 contains a server-side request forgery vulnerability that allows API callers to force outbound connections by embedding a decode address in the X-Request-Id header. Attac",
-        "published": "2026-10-25T14:16:57.160"
+        "base_score": 7.8,
+        "description": "Electronic delivery item Inspection Support System provided by Japan's Ministry of Land, Infrastructure, Transport and Tourism contains an improper file access permission vulnerability. Files in the i",
+        "published": "2026-10-26T05:17:54.020"
       },
       {
-        "cve_id": "CVE-2026-116211",
+        "cve_id": "CVE-2026-107894",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "YesWiki 4.5.0 before 4.7.0 contains an SQL injection vulnerability in PageManager::save(), where the date_maj_fiche field of a Bazar entry-creation request is concatenated unescaped into an INSERT sta",
-        "published": "2026-10-25T14:17:02.187"
+        "base_score": 7.8,
+        "description": "V-SFT provided by FUJI ELECTRIC CO., LTD. contains a stack-based buffer overflow vulnerability. Opening a crafted V7 file may lead to information exposure or arbitrary code execution on the affected p",
+        "published": "2026-10-26T07:17:07.397"
       },
       {
-        "cve_id": "CVE-2026-116149",
+        "cve_id": "CVE-2026-107895",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "ImageMagick before 6.9.13-58 and 7.x before 7.1.2-33 contains a stack-based buffer overflow in the handling of bzip2 compressed images. Attackers can supply a crafted image using bzip2 compression to ",
-        "published": "2026-10-25T14:16:53.123"
+        "base_score": 7.8,
+        "description": "V-SFT provided by FUJI ELECTRIC CO., LTD. contains an out-of-bounds write vulnerability. Opening a crafted V7 file may lead to information exposure or arbitrary code execution on the affected product.",
+        "published": "2026-10-26T07:17:07.570"
       },
       {
-        "cve_id": "CVE-2026-116199",
+        "cve_id": "CVE-2026-107896",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Snipe-IT before 8.6.3 contains an authentication bypass in GoogleAuthController::handleGoogleCallback, which logs in the user whose username matches the Google account email without enforcing the acti",
-        "published": "2026-10-25T14:17:00.593"
+        "base_score": 7.8,
+        "description": "V-SFT provided by FUJI ELECTRIC CO., LTD. contains an out-of-bounds read vulnerability in VS6ComFile!load_gr_item. Opening a crafted V7 file may lead to information exposure or arbitrary code executio",
+        "published": "2026-10-26T07:17:07.700"
       },
       {
-        "cve_id": "CVE-2026-116204",
+        "cve_id": "CVE-2026-107897",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "YesWiki before 4.7.0 contains a cross-site request forgery vulnerability in the despam action (tools/security/actions/despam.php) that lets unauthenticated attackers delete or restore pages through an",
-        "published": "2026-10-25T14:17:01.350"
+        "base_score": 7.8,
+        "description": "V-SFT provided by FUJI ELECTRIC CO., LTD. contains an out-of-bounds read vulnerability in VS6MemInIF!set_temp_type_default. Opening a crafted V7 file may lead to information exposure or arbitrary code",
+        "published": "2026-10-26T07:17:07.827"
       },
       {
-        "cve_id": "CVE-2026-116208",
+        "cve_id": "CVE-2026-107898",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "YesWiki from 4.6.2 before 4.7.0 contains a missing authorization vulnerability in ActivityPubService::syncActorPosts that lets malicious ActivityPub servers manipulate other actors' mirrored entries. ",
-        "published": "2026-10-25T14:17:02.010"
+        "base_score": 7.8,
+        "description": "V-SFT provided by FUJI ELECTRIC CO., LTD. contains an out-of-bounds read vulnerability in VS6EditData!CDataRomErrorCheck::MacroCommandCheck. Opening a crafted V7 file may lead to information exposure ",
+        "published": "2026-10-26T07:17:07.950"
       },
       {
-        "cve_id": "CVE-2026-116180",
+        "cve_id": "CVE-2026-107899",
         "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "vLLM from 0.8.5 before 0.31.0 has a denial of service flaw. LogprobsTensors.empty_cpu() in vllm/v1/outputs.py allocates an uninitialized int32 tensor, and the V1 model runner leaves prompt positions r",
-        "published": "2026-10-25T14:16:57.760"
+        "base_score": 7.8,
+        "description": "V-SFT provided by FUJI ELECTRIC CO., LTD. contains an out-of-bounds read vulnerability in VS6EditData!CDataRomErrorCheck::CheckSymbolMacroParam. Opening a crafted V7 file may lead to information expos",
+        "published": "2026-10-26T07:17:08.223"
       },
       {
-        "cve_id": "CVE-2026-116171",
+        "cve_id": "CVE-2026-107900",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "SiYuan 3.5.4 before 3.8.7 on Windows contains a sensitive-path denylist bypass in IsSensitivePath because the Windows extended-length prefix (\\\\?\\) survives filepath.Clean and matches no forbidden pre",
-        "published": "2026-10-25T14:16:56.413"
-      },
-      {
-        "cve_id": "CVE-2026-116177",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "vLLM from 0.10.2 before 0.25.0 contains an uncontrolled resource consumption vulnerability that allows unauthenticated attackers to exhaust memory because the Nemotron-VL processors globally set Image",
-        "published": "2026-10-25T14:16:57.317"
-      },
-      {
-        "cve_id": "CVE-2026-116179",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "vLLM from 0.18.0 before 0.31.0 contains a resource exhaustion vulnerability that allows API clients to bypass the video/jpeg frame-count cap by overriding num_frames through media_io_kwargs. Attackers",
-        "published": "2026-10-25T14:16:57.620"
-      },
-      {
-        "cve_id": "CVE-2026-116183",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "phpMyFAQ before 4.1.10 contains an object-level authorization bypass vulnerability that allows unauthenticated attackers to modify or delete any visitor question by supplying an arbitrary openQuestion",
-        "published": "2026-10-25T14:16:58.213"
-      },
-      {
-        "cve_id": "CVE-2026-116189",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "rclone from 1.55.0 before 1.75.2 contains a signature verification bypass in stable selfupdate that trusts checksums from unsigned bytes preceding the PGP-clearsigned SHA256SUMS block. Attackers contr",
-        "published": "2026-10-25T14:16:59.120"
-      },
-      {
-        "cve_id": "CVE-2026-116191",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Rclone before 1.75.2 contains a path traversal vulnerability in serve webdav that allows unauthenticated attackers to write above the served root by sending an unvalidated '..' path component. Attacke",
-        "published": "2026-10-25T14:16:59.400"
-      },
-      {
-        "cve_id": "CVE-2026-116163",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "Parse Server before 8.6.102 and 9.0.0 before 9.10.5-alpha.2 contains an authentication bypass because the validateSetUp, validateLogin, and validateUpdate methods of custom adapters subclassing AuthAd",
-        "published": "2026-10-25T14:16:55.110"
-      },
-      {
-        "cve_id": "CVE-2026-116060",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was determined in SourceCodester Performance Indicator System 1.0. This affects an unknown part of the file /opils/staff/adddealer.php. Executing a manipulation of the argument Contact",
-        "published": "2026-10-25T17:17:02.123"
+        "base_score": 7.8,
+        "description": "V-SFT provided by FUJI ELECTRIC CO., LTD. contains an out-of-bounds read vulnerability in VS6ComFile!CCheck::ItemCheck. Opening a crafted V7 file may lead to information exposure or arbitrary code exe",
+        "published": "2026-10-26T07:17:08.360"
       },
       {
         "cve_id": "CVE-2026-116061",
@@ -381,6 +374,13 @@
         "base_score": 7.3,
         "description": "A vulnerability was identified in SourceCodester Performance Indicator System 1.0. This vulnerability affects unknown code of the file /opils/staff/edit_dealer.php. The manipulation of the argument Co",
         "published": "2026-10-25T18:16:46.790"
+      },
+      {
+        "cve_id": "CVE-2026-116062",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A security flaw has been discovered in SourceCodester Performance Indicator System 1.0. This issue affects some unknown processing of the file /opils/staff/save_profile.php. The manipulation of the ar",
+        "published": "2026-10-25T18:16:46.950"
       }
     ]
   },
