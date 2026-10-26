@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-10-25T22:10:09.022682+00:00",
+  "generated_at": "2026-10-26T02:21:17.498278+00:00",
   "threat_score": {
-    "score": 5.5,
+    "score": 5.0,
     "level": "ELEVATED",
     "level_color": "elevated",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 0,
+        "score": 1.0,
         "max": 3
       },
       {
@@ -238,17 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 135,
-    "critical_count": 1,
+    "total": 141,
+    "critical_count": 0,
     "high_count": 18,
     "cves": [
-      {
-        "cve_id": "CVE-2026-115995",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "A security vulnerability has been detected in Unitree Robotics Unitree Go2 up to 1.1.11.4. The impacted element is the function set_volume of the file gpt_thread.py of the component chat_go. Such mani",
-        "published": "2026-10-24T23:16:58.323"
-      },
       {
         "cve_id": "CVE-2026-116068",
         "severity": "HIGH",
@@ -276,6 +269,13 @@
         "base_score": 8.1,
         "description": "ImageMagick before 6.9.13-58 and 7.x before 7.1.2-33 contains a stack-based buffer overflow in the handling of bzip2 compressed images. Attackers can supply a crafted image using bzip2 compression to ",
         "published": "2026-10-25T14:16:53.123"
+      },
+      {
+        "cve_id": "CVE-2026-116199",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Snipe-IT before 8.6.3 contains an authentication bypass in GoogleAuthController::handleGoogleCallback, which logs in the user whose username matches the Google account email without enforcing the acti",
+        "published": "2026-10-25T14:17:00.593"
       },
       {
         "cve_id": "CVE-2026-116180",
@@ -334,13 +334,6 @@
         "published": "2026-10-25T14:16:55.110"
       },
       {
-        "cve_id": "CVE-2026-115999",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability has been found in mansi-k Restaurant_IMS d7ad49f61ab7cc1ec6eb359ac2b5378bdbde0694. Affected is the function mysqli_connect of the file lsmodal.php. The manipulation of the argument log",
-        "published": "2026-10-25T02:16:26.913"
-      },
-      {
         "cve_id": "CVE-2026-116000",
         "severity": "HIGH",
         "base_score": 7.3,
@@ -381,6 +374,13 @@
         "base_score": 6.8,
         "description": "Firecrawl before 2.11.586 contains a server-side request forgery vulnerability in the Playwright service SSRF proxy that allows attackers to bypass isInternalHost checks via DNS rebinding. Attackers c",
         "published": "2026-10-25T12:16:27.370"
+      },
+      {
+        "cve_id": "CVE-2026-116166",
+        "severity": "MEDIUM",
+        "base_score": 6.8,
+        "description": "SiYuan 3.6.0 before 3.8.7 accepts and persists the networkServeTLS setting but never enforces it, so the kernel port keeps serving full API access over plain HTTP alongside HTTPS. Network-adjacent att",
+        "published": "2026-10-25T14:16:55.517"
       }
     ]
   },
