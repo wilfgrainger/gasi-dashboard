@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T17:39:08.049676+00:00",
+  "generated_at": "2026-10-28T23:43:36.580267+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 32,
+        "value": 34,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
+        "value": 4,
         "score": 2.0,
         "max": 3
       },
@@ -32,9 +32,29 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1760,
-    "recent_30d_count": 32,
+    "total_catalog_count": 1762,
+    "recent_30d_count": 34,
     "recent": [
+      {
+        "cve_id": "CVE-2026-41709",
+        "vendor": "Broadcom",
+        "product": "VMware ESX",
+        "name": "Broadcom VMWare ESX Insufficient Logging Vulnerability",
+        "date_added": "2026-10-28",
+        "due_date": "2026-11-11",
+        "description": "Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain operations without being logged.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-46300",
+        "vendor": "Linux",
+        "product": "Kernel",
+        "name": "Linux Kernel Missing Initialization of a Variable Vulnerability",
+        "date_added": "2026-10-28",
+        "due_date": "2026-10-31",
+        "description": "Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed data via failure to preserve the shared-fragment marker dur",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-48356",
         "vendor": "Adobe",
@@ -214,173 +234,153 @@
         "due_date": "2026-10-17",
         "description": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component\u2019s checkSysPwd",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-0322",
-        "vendor": "Palo Alto Networks",
-        "product": "PAN-OS",
-        "name": "Palo Alto Networks PAN-OS Code Injection Vulnerability",
-        "date_added": "2026-10-14",
-        "due_date": "2026-10-17",
-        "description": "Palo Alto Networks PAN-OS contains a code injection vulnerability that could allow an authenticated attacker with network access to execute arbitrary code with root privileges on the firewall.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-104935",
-        "vendor": "Ivanti",
-        "product": "Connect Secure",
-        "name": "Ivanti Connect Secure Authentication Bypass by Spoofing Vulnerability",
-        "date_added": "2026-10-13",
-        "due_date": "2026-10-16",
-        "description": "Ivanti Connect Secure contains an authentication bypass by spoofing vulnerability that allows a remote unauthenticated attacker to execute arbitrary commands.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 800,
-    "critical_count": 2,
-    "high_count": 29,
+    "total": 796,
+    "critical_count": 4,
+    "high_count": 21,
     "cves": [
       {
-        "cve_id": "CVE-2026-116692",
+        "cve_id": "CVE-2026-110879",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "MLflow is an open source AI engineering platform for agents, large language models, and machine learning models. From 3.12.0rc0 until 3.17.0, third-party scorer deserialization in mlflow/genai/scorers",
-        "published": "2026-10-27T21:18:05.013"
+        "description": "jackson-databind validates the outer class of a class-name type ID but accepts attacker-selected classes inside its generic arguments, even when those classes violate the declared type or would be rej",
+        "published": "2026-10-28T01:16:55.180"
       },
       {
-        "cve_id": "CVE-2026-112352",
+        "cve_id": "CVE-2026-106013",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Sunhillo SureLine before 9.1.5 contains an authentication bypass vulnerability that allows an unauthenticated remote attacker to impersonate any user with an active web session by forging a session co",
-        "published": "2026-10-27T20:17:12.997"
+        "base_score": 9.8,
+        "description": "The Jupiter X Core plugin for WordPress is vulnerable to Authentication Bypass via the Twitter/X Social Login handler in all versions up to and including 4.61.0. The vulnerability exists within the ve",
+        "published": "2026-10-28T02:17:01.303"
       },
       {
-        "cve_id": "CVE-2026-108303",
+        "cve_id": "CVE-2026-84999",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Pie Register Premium plugin for WordPress is vulnerable to Unrestricted File Type Upload in all versions up to, and including, 3.8.4.0 via the piereg_file_upload function. This is due to the plugi",
+        "published": "2026-10-28T03:17:16.157"
+      },
+      {
+        "cve_id": "CVE-2026-103688",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Checkout Files Upload for WooCommerce WordPress plugin before 2.4.0 does not validate uploaded file types when its accepted file types setting is left empty, which it documents as the way to accep",
+        "published": "2026-10-28T06:16:32.123"
+      },
+      {
+        "cve_id": "CVE-2014-125138",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Tanium addressed an unauthorized code execution vulnerability in Certificate Manager.",
-        "published": "2026-10-27T18:17:31.777"
+        "description": "C97net qEngine CMS through 6.0.0, Kemana Directory through 1.5.6, and Cart Engine through 3.0.0 contain an unrestricted file upload vulnerability in administrative image fields. Editor-role users can ",
+        "published": "2026-10-28T03:17:08.043"
       },
       {
-        "cve_id": "CVE-2026-108329",
+        "cve_id": "CVE-2015-20129",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Tanium addressed an unauthorized code execution vulnerability in Threat Response.",
-        "published": "2026-10-27T18:17:33.530"
+        "description": "CrushFTP before 7.3.0 contains a cross-site request forgery vulnerability that allows attackers to perform administrative actions because CSRF protection is disabled by default. Attackers can lure an ",
+        "published": "2026-10-28T03:17:08.223"
       },
       {
-        "cve_id": "CVE-2026-116676",
+        "cve_id": "CVE-2026-1928",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Atlantis is a self-hosted golang application that listens for Terraform pull request events via webhooks. From version 0.4.0 until 0.47.1, Atlantis passes the pull-request-controlled workspace value f",
-        "published": "2026-10-27T18:17:35.220"
+        "description": "The Rank Math SEO \u2013 AI SEO Tools to Dominate SEO Rankings plugin for WordPress is vulnerable to PHP Object Injection in all versions up to, and including, 1.0.276 via deserialization of untrusted inpu",
+        "published": "2026-10-28T04:18:02.320"
       },
       {
-        "cve_id": "CVE-2026-112351",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Sunhillo SureLine before 9.1.5 contains an OS command injection vulnerability in the networkDiag.cgi endpoint that allows an authenticated remote attacker with any web account to execute arbitrary com",
-        "published": "2026-10-27T20:17:12.853"
-      },
-      {
-        "cve_id": "CVE-2026-83831",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Double free in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
-        "published": "2026-10-27T21:19:08.030"
-      },
-      {
-        "cve_id": "CVE-2026-85898",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Access of resource using incompatible type ('type confusion') in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
-        "published": "2026-10-27T21:19:34.117"
-      },
-      {
-        "cve_id": "CVE-2026-116682",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "FileBrowser Quantum is a free, self-hosted, web-based file manager. Prior to 1.5.2-stable and 2.0.1-beta, file read handling in backend/pkg/indexing/indexingFiles.go resolves symbolic links through Ge",
-        "published": "2026-10-27T18:17:36.003"
-      },
-      {
-        "cve_id": "CVE-2026-57202",
+        "cve_id": "CVE-2026-118375",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Asterisk is an open source private branch exchange and telephony toolkit. Prior to Asterisk 20.20.1, 21.12.3, 22.10.1, 23.4.1 and Certified Asterisk 20.7-cert11, 22.8-cert3, an authenticated Asterisk ",
-        "published": "2026-10-27T18:17:37.550"
+        "description": "llama.cpp b8841 before b11865 contains an out-of-bounds write vulnerability in the ggml-rpc RDMA transport rdma_recv() function that allows unauthenticated peers to overflow the rpc-server stack. Atta",
+        "published": "2026-10-28T03:17:14.077"
       },
       {
-        "cve_id": "CVE-2026-116688",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "CKEditor 5 is a modern JavaScript rich-text editor with an MVC architecture. From 45.0.0 until 47.7.4 and 48.5.1, the engine uses a vulnerable es-toolkit version whose prototype-pollution behavior can",
-        "published": "2026-10-27T20:17:14.037"
-      },
-      {
-        "cve_id": "CVE-2026-108304",
+        "cve_id": "CVE-2026-118378",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "Tanium addressed a local privilege escalation vulnerability in End-User Notifications.",
-        "published": "2026-10-27T18:17:31.907"
+        "description": "Tabularis before 0.28.0 contains an SQL injection vulnerability in its SQLite driver that allows MCP clients to execute stacked statements by supplying a crafted table_name to the describe_table tool.",
+        "published": "2026-10-28T03:17:14.570"
       },
       {
-        "cve_id": "CVE-2026-108305",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Tanium addressed a local privilege escalation vulnerability in End-User Notifications.",
-        "published": "2026-10-27T18:17:32.037"
-      },
-      {
-        "cve_id": "CVE-2026-108306",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Tanium addressed a local privilege escalation vulnerability in End-User Notifications.",
-        "published": "2026-10-27T18:17:32.163"
-      },
-      {
-        "cve_id": "CVE-2026-108307",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Tanium addressed a heap-based buffer overflow vulnerability in Index.",
-        "published": "2026-10-27T18:17:32.297"
-      },
-      {
-        "cve_id": "CVE-2026-88812",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A double free in\u00a0XKB SetGeometryin X.Org X Server before 21.1.25 and X Wayland before 24.1.14 could be used by attached clients to cause a crash or potentially code in the x server context.",
-        "published": "2026-10-27T18:17:38.120"
-      },
-      {
-        "cve_id": "CVE-2026-115413",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Missing token audience validation in the OAuth authentication mode of AWS API MCP Server before version 1.6.0 might allow local users to run AWS operations with the server's configured AWS credentials",
-        "published": "2026-10-27T19:17:10.593"
-      },
-      {
-        "cve_id": "CVE-2026-116656",
+        "cve_id": "CVE-2026-104016",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Tanium addressed an uncontrolled resource consumption vulnerability in Enforce.",
-        "published": "2026-10-27T18:17:34.487"
+        "description": "ProtobufParser parses length-prefixed protobuf string and bytes fields by checking (_inputPtr + len) <= _inputEnd and then, on the fast path, calling _finishShortText(len). Both use 32-bit signed inte",
+        "published": "2026-10-28T00:17:10.530"
       },
       {
-        "cve_id": "CVE-2026-116662",
+        "cve_id": "CVE-2026-104895",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Tanium addressed a compression bomb vulnerability in Enforce.",
-        "published": "2026-10-27T18:17:35.100"
+        "description": "The asynchronous Smile parser (NonBlockingByteArrayParser) uses a raw-binary length prefix taken from untrusted input to allocate a byte[] before the body is read, with no upper bound and no overflow ",
+        "published": "2026-10-28T00:17:11.357"
       },
       {
-        "cve_id": "CVE-2026-87086",
+        "cve_id": "CVE-2026-110747",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Tanium addressed a denial of service vulnerability in Provision.",
-        "published": "2026-10-27T18:17:38.000"
+        "description": "ProtobufParser._readStringKey() reads the length prefix of a protobuf map entry's string key into an attacker-controlled int and then checks (_inputPtr + len) <= _inputEnd using signed arithmetic. For",
+        "published": "2026-10-28T01:16:55.017"
+      },
+      {
+        "cve_id": "CVE-2026-118377",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "mews/pos through 2.0.0 contains an insufficient verification of data authenticity vulnerability that allows unauthenticated attackers to forge payment results by submitting unverified callbacks. Garan",
+        "published": "2026-10-28T03:17:14.410"
+      },
+      {
+        "cve_id": "CVE-2026-111255",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The affiliate-toolkit \u2013 Multi-Network Affiliate & Amazon Product Display plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 3.9.2 via the upload_image fu",
+        "published": "2026-10-28T04:17:56.390"
+      },
+      {
+        "cve_id": "CVE-2026-116613",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Animated Text Block plugin for WordPress is vulnerable to Sensitive Information Exposure in versions up to, and including, 1.2.6 via the 'animated-text' shortcode. This is due to the atb_shortcode",
+        "published": "2026-10-28T04:17:57.390"
+      },
+      {
+        "cve_id": "CVE-2026-105972",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Menu Cart for WooCommerce WordPress plugin before 3.2.1 does not sanitise and escape cart item variation data before outputting it in its cart slide-out, allowing unauthenticated users to store a ",
+        "published": "2026-10-28T06:16:32.353"
+      },
+      {
+        "cve_id": "CVE-2026-15323",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Product Designer for WooCommerce WordPress | Lumise plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 2.1.2 via the process_checkout function. This ma",
+        "published": "2026-10-28T06:16:36.043"
+      },
+      {
+        "cve_id": "CVE-2013-20007",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "Linksys WAG200G through 1.01.06 contains an OS command injection vulnerability that allows authenticated attackers to execute commands by injecting backtick-delimited input into the timer_interval par",
+        "published": "2026-10-28T03:17:07.210"
+      },
+      {
+        "cve_id": "CVE-2026-109999",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The AI Marketing Expert \u2014 AI Email Marketing, AI Content Generator, SEO Analyzer, AI Workflow Automation, Social Media & Ai Chatbot plugin for WordPress is vulnerable to Stored DOM-Based Cross-Site Sc",
+        "published": "2026-10-28T03:17:09.630"
+      },
+      {
+        "cve_id": "CVE-2026-111314",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The affiliate-toolkit \u2013 Multi-Network Affiliate & Amazon Product Display plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'atkp_product_producturl' parameter in all versions u",
+        "published": "2026-10-28T03:17:09.817"
       }
     ]
   },
