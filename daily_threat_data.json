@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T23:21:02.914536+00:00",
+  "generated_at": "2026-10-28T03:06:38.417869+00:00",
   "threat_score": {
     "score": 7.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 11,
+        "value": 21,
         "score": 3.0,
         "max": 3
       },
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 658,
-    "critical_count": 11,
-    "high_count": 21,
+    "total": 614,
+    "critical_count": 21,
+    "high_count": 19,
     "cves": [
       {
         "cve_id": "CVE-2026-18450",
@@ -285,6 +285,48 @@
         "published": "2026-10-27T10:16:55.680"
       },
       {
+        "cve_id": "CVE-2026-82117",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Authentication Bypass by Spoofing Vulnerability in HiRDB.\n\nThis issue affects HiRDB Server Version 10: from 10-00 before 10-12-01; HiRDB Server Version 9: from 09-00 through 09-66-22; HiRDB Server wit",
+        "published": "2026-10-27T10:16:55.797"
+      },
+      {
+        "cve_id": "CVE-2026-82118",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Stack-based Buffer Overflow Vulnerability in HiRDB.\n\n\nThis issue affects HiRDB Server Version 10: from 10-00 before 10-12-01; HiRDB Server Version 9: from 09-00 through 09-66-22; HiRDB Server with Add",
+        "published": "2026-10-27T10:16:55.917"
+      },
+      {
+        "cve_id": "CVE-2026-82119",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "OS Command Injection Vulnerability in HiRDB.\n\n\nThis issue affects HiRDB Server Version 10: from 10-00 before 10-12-01; HiRDB Server Version 9: from 09-00 through 09-66-22; HiRDB Server with Additional",
+        "published": "2026-10-27T10:16:56.033"
+      },
+      {
+        "cve_id": "CVE-2026-82120",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Heap-based Buffer Overflow Vulnerability in HiRDB.\n\n\nThis issue affects HiRDB Server Version 10: from 10-00 before 10-12-01; HiRDB Server Version 9: from 09-00 through 09-66-22; HiRDB Server with Addi",
+        "published": "2026-10-27T10:16:56.147"
+      },
+      {
+        "cve_id": "CVE-2026-86574",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Heap-based Buffer Overflow Vulnerability in JP1/Base.\n\nThis issue affects JP1/Base: from 11-00 before 12-50-54.",
+        "published": "2026-10-27T10:16:56.643"
+      },
+      {
+        "cve_id": "CVE-2026-117532",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "REDAXO core from 5.3.0 before 5.21.4 contains an authentication bypass vulnerability in the structure/history plugin that allows unauthenticated attackers to forge temporary login tokens. Attackers ca",
+        "published": "2026-10-27T11:17:33.597"
+      },
+      {
         "cve_id": "CVE-2026-76932",
         "severity": "CRITICAL",
         "base_score": 9.4,
@@ -320,67 +362,25 @@
         "published": "2026-10-27T10:16:55.337"
       },
       {
-        "cve_id": "CVE-2026-116811",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenPanel before 3.0.0 contains a sandbox escape vulnerability in the js-runtime validator that allows a project member to bypass the AST allowlist by aliasing the Function constructor. Attackers with",
-        "published": "2026-10-27T00:17:14.263"
+        "cve_id": "CVE-2026-82122",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "Stack-based Buffer Overflow Vulnerability in HiRDB.\n\n\nThis issue affects HiRDB Server Version 10: from 10-00 before 10-12-01; HiRDB Server Version 9: from 09-00 through 09-66-22; HiRDB Server with Add",
+        "published": "2026-10-27T10:16:56.380"
       },
       {
-        "cve_id": "CVE-2026-116836",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A malicious actor with access to the adjacent network and under certain conditions could exploit a Stored Cross-Site Scripting (XSS) vulnerability found in airMAX M devices to escalate privileges on t",
-        "published": "2026-10-27T01:19:06.733"
+        "cve_id": "CVE-2026-86575",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "Stack-based Buffer Overflow Vulnerability in JP1 Products.\n\nThis issue affects JP1/Integrated Management 3 - Manager: from 13-00 before 13-50-31; JP1/Automatic Job Management System 3 - Manager: from ",
+        "published": "2026-10-27T10:16:56.760"
       },
       {
-        "cve_id": "CVE-2026-116837",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A malicious actor with access to the adjacent network could exploit a Heap-based Buffer Overflow vulnerability found in airMAX M, LTU, SolarPoint, and SolarSwitch devices to execute arbitrary code on ",
-        "published": "2026-10-27T01:19:06.860"
-      },
-      {
-        "cve_id": "CVE-2026-116838",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A malicious actor who lures an authenticated user to a malicious page could exploit a Cross-Site Request Forgery (CSRF) vulnerability found in airMAX M devices to execute a Command Injection on the de",
-        "published": "2026-10-27T01:19:06.973"
-      },
-      {
-        "cve_id": "CVE-2026-116843",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Mistral Vibe before 3.0.3 contains a remote code execution vulnerability that allows attackers to run commands by defining git filter drivers in an untrusted repository's .git/config. When started wit",
-        "published": "2026-10-27T01:19:07.730"
-      },
-      {
-        "cve_id": "CVE-2026-75891",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Kirki plugin for WordPress is vulnerable to Privilege Escalation via PHP Object Injection in all versions up to, and including, 6.2.5 via deserialization of untrusted input through the 'get-single",
-        "published": "2026-10-27T07:16:32.500"
-      },
-      {
-        "cve_id": "CVE-2026-65220",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A logic flaw in the BMC IPMI implementation may allow an attacker to send specially crafted RAKP+ messages and escalate an account to administrator privileges.",
-        "published": "2026-10-27T08:16:54.487"
-      },
-      {
-        "cve_id": "CVE-2026-116819",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "OpenPanel before 3.0.0 contains an information disclosure vulnerability that allows read-level project members to obtain plaintext integration secrets because the notification.rules query skips redact",
-        "published": "2026-10-27T00:17:16.293"
-      },
-      {
-        "cve_id": "CVE-2026-116818",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "OpenPanel before 3.0.0 contains an unauthenticated ClickHouse sql injection vulnerability that allows remote attackers to inject SQL through the projectId parameter of the /live/visitors/:projectId We",
-        "published": "2026-10-27T00:17:16.007"
+        "cve_id": "CVE-2026-86576",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "Heap-based Buffer Overflow Vulnerability in JP1 Products.\n\nThis issue affects JP1/Integrated Management 3 - Manager: from 13-00 before 13-50-31; JP1/Automatic Job Management System 3 - Manager: from 1",
+        "published": "2026-10-27T10:16:56.880"
       }
     ]
   },
