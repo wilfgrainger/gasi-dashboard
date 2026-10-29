@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T23:43:36.580267+00:00",
+  "generated_at": "2026-10-29T03:32:22.547184+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 34,
+        "value": 33,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
+        "value": 2,
         "score": 2.0,
         "max": 3
       },
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1762,
-    "recent_30d_count": 34,
+    "recent_30d_count": 33,
     "recent": [
       {
         "cve_id": "CVE-2026-41709",
@@ -238,31 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 796,
-    "critical_count": 4,
-    "high_count": 21,
+    "total": 767,
+    "critical_count": 2,
+    "high_count": 16,
     "cves": [
-      {
-        "cve_id": "CVE-2026-110879",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "jackson-databind validates the outer class of a class-name type ID but accepts attacker-selected classes inside its generic arguments, even when those classes violate the declared type or would be rej",
-        "published": "2026-10-28T01:16:55.180"
-      },
-      {
-        "cve_id": "CVE-2026-106013",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Jupiter X Core plugin for WordPress is vulnerable to Authentication Bypass via the Twitter/X Social Login handler in all versions up to and including 4.61.0. The vulnerability exists within the ve",
-        "published": "2026-10-28T02:17:01.303"
-      },
-      {
-        "cve_id": "CVE-2026-84999",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Pie Register Premium plugin for WordPress is vulnerable to Unrestricted File Type Upload in all versions up to, and including, 3.8.4.0 via the piereg_file_upload function. This is due to the plugi",
-        "published": "2026-10-28T03:17:16.157"
-      },
       {
         "cve_id": "CVE-2026-103688",
         "severity": "CRITICAL",
@@ -271,18 +250,11 @@
         "published": "2026-10-28T06:16:32.123"
       },
       {
-        "cve_id": "CVE-2014-125138",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "C97net qEngine CMS through 6.0.0, Kemana Directory through 1.5.6, and Cart Engine through 3.0.0 contain an unrestricted file upload vulnerability in administrative image fields. Editor-role users can ",
-        "published": "2026-10-28T03:17:08.043"
-      },
-      {
-        "cve_id": "CVE-2015-20129",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "CrushFTP before 7.3.0 contains a cross-site request forgery vulnerability that allows attackers to perform administrative actions because CSRF protection is disabled by default. Attackers can lure an ",
-        "published": "2026-10-28T03:17:08.223"
+        "cve_id": "CVE-2026-109218",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Contact Manager plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 9.1.2 via the add_message function. This is due to an incomplete extension blackli",
+        "published": "2026-10-28T07:16:44.120"
       },
       {
         "cve_id": "CVE-2026-1928",
@@ -292,46 +264,32 @@
         "published": "2026-10-28T04:18:02.320"
       },
       {
-        "cve_id": "CVE-2026-118375",
+        "cve_id": "CVE-2026-109384",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "llama.cpp b8841 before b11865 contains an out-of-bounds write vulnerability in the ggml-rpc RDMA transport rdma_recv() function that allows unauthenticated peers to overflow the rpc-server stack. Atta",
-        "published": "2026-10-28T03:17:14.077"
+        "base_score": 8.8,
+        "description": "The The Innovative Form Builder \u2013 IvyForms plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 1.5.1 via the filterFiletypeAndExt function. This is due to",
+        "published": "2026-10-28T07:16:44.570"
       },
       {
-        "cve_id": "CVE-2026-118378",
+        "cve_id": "CVE-2026-111120",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Tabularis before 0.28.0 contains an SQL injection vulnerability in its SQLite driver that allows MCP clients to execute stacked statements by supplying a crafted table_name to the describe_table tool.",
-        "published": "2026-10-28T03:17:14.570"
+        "base_score": 8.8,
+        "description": "The VikRentCar Car Rental Management System plugin for WordPress is vulnerable to Cross-Site Request Forgery in all versions up to, and including, 1.4.8. This is due to missing or incorrect nonce vali",
+        "published": "2026-10-28T07:16:46.837"
       },
       {
-        "cve_id": "CVE-2026-104016",
+        "cve_id": "CVE-2026-92797",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "ProtobufParser parses length-prefixed protobuf string and bytes fields by checking (_inputPtr + len) <= _inputEnd and then, on the fast path, calling _finishShortText(len). Both use 32-bit signed inte",
-        "published": "2026-10-28T00:17:10.530"
+        "base_score": 8.8,
+        "description": "The MemberPress plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions up to, and including, 1.14.1. This is due to a bypassable nonce verification check in the save_profile_fiel",
+        "published": "2026-10-28T08:16:30.250"
       },
       {
-        "cve_id": "CVE-2026-104895",
+        "cve_id": "CVE-2026-86396",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The asynchronous Smile parser (NonBlockingByteArrayParser) uses a raw-binary length prefix taken from untrusted input to allocate a byte[] before the body is read, with no upper bound and no overflow ",
-        "published": "2026-10-28T00:17:11.357"
-      },
-      {
-        "cve_id": "CVE-2026-110747",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "ProtobufParser._readStringKey() reads the length prefix of a protobuf map entry's string key into an attacker-controlled int and then checks (_inputPtr + len) <= _inputEnd using signed arithmetic. For",
-        "published": "2026-10-28T01:16:55.017"
-      },
-      {
-        "cve_id": "CVE-2026-118377",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "mews/pos through 2.0.0 contains an insufficient verification of data authenticity vulnerability that allows unauthenticated attackers to forge payment results by submitting unverified callbacks. Garan",
-        "published": "2026-10-28T03:17:14.410"
+        "base_score": 8.8,
+        "description": "Dell PowerProtect Data Domain, Feature Release versions 7.7.1.0 through 8.8, LTS2024 release versions 7.13.1.0 through 7.13.1.80, LTS2025 release versions 8.3.1.0 through 8.3.1.40, LTS2026 release ver",
+        "published": "2026-10-28T09:17:07.540"
       },
       {
         "cve_id": "CVE-2026-111255",
@@ -362,25 +320,67 @@
         "published": "2026-10-28T06:16:36.043"
       },
       {
-        "cve_id": "CVE-2013-20007",
+        "cve_id": "CVE-2026-111577",
         "severity": "HIGH",
         "base_score": 7.2,
-        "description": "Linksys WAG200G through 1.01.06 contains an OS command injection vulnerability that allows authenticated attackers to execute commands by injecting backtick-delimited input into the timer_interval par",
-        "published": "2026-10-28T03:17:07.210"
+        "description": "The GoSMTP  WordPress plugin before 1.2.5 does not perform a settings-management authorization check on its SMTP configuration page, which is gated only on the GoSMTP  WordPress plugin before 1.2.5-ac",
+        "published": "2026-10-28T06:16:34.507"
       },
       {
-        "cve_id": "CVE-2026-109999",
+        "cve_id": "CVE-2026-109381",
         "severity": "HIGH",
         "base_score": 7.2,
-        "description": "The AI Marketing Expert \u2014 AI Email Marketing, AI Content Generator, SEO Analyzer, AI Workflow Automation, Social Media & Ai Chatbot plugin for WordPress is vulnerable to Stored DOM-Based Cross-Site Sc",
-        "published": "2026-10-28T03:17:09.630"
+        "description": "The Mage Eventpress plugin for WordPress is vulnerable to privilege escalation in versions up to, and including, 5.7.8 This is due to the mep_grant_shop_manager_access() function hooking user_has_cap ",
+        "published": "2026-10-28T07:16:44.423"
       },
       {
-        "cve_id": "CVE-2026-111314",
+        "cve_id": "CVE-2026-110662",
         "severity": "HIGH",
         "base_score": 7.2,
-        "description": "The affiliate-toolkit \u2013 Multi-Network Affiliate & Amazon Product Display plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'atkp_product_producturl' parameter in all versions u",
-        "published": "2026-10-28T03:17:09.817"
+        "description": "The MxChat \u2013 AI Chatbot & Content Generation for WordPress plugin for WordPress is vulnerable to Stored DOM-Based Cross-Site Scripting via the 'feedback' parameter in all versions up to, and including",
+        "published": "2026-10-28T07:16:46.357"
+      },
+      {
+        "cve_id": "CVE-2026-111111",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The Prime Slider \u2013 Hero Slider, Carousel, WooCommerce & Post Slider Elementor Addons plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'comment' parameter in all versions up to",
+        "published": "2026-10-28T07:16:46.680"
+      },
+      {
+        "cve_id": "CVE-2026-86395",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "Dell PowerProtect Data Domain Virtual Edition, Feature Release versions 7.7.1.0 through 8.8, LTS2024 release versions 7.13.1.0 through 7.13.1.80, LTS2025 release versions 8.3.1.0 through 8.3.1.40, LTS",
+        "published": "2026-10-28T09:17:07.400"
+      },
+      {
+        "cve_id": "CVE-2026-111021",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "The \u0627\u0641\u0632\u0648\u0646\u0647 \u067e\u06cc\u0627\u0645\u06a9 \u0648\u0648\u06a9\u0627\u0645\u0631\u0633 | Persian WooCommerce SMS WordPress plugin before 7.3.2 does not sanitise and escape a parameter before reflecting it back into an HTML attribute, leading to Reflected Cross-S",
+        "published": "2026-10-28T06:16:34.080"
+      },
+      {
+        "cve_id": "CVE-2026-63286",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "Database backups are vulnerable to offline attacks. Backups created using a version prior to the patched version are still vulnerable. AXIS Camera Station Pro automatically creates one more such backu",
+        "published": "2026-10-28T07:16:48.550"
+      },
+      {
+        "cve_id": "CVE-2026-104694",
+        "severity": "MEDIUM",
+        "base_score": 6.8,
+        "description": "The Thrive Automator WordPress plugin before 11.2 does not properly sanitize and escape a parameter's array key before using it in a SQL query, allowing authenticated attackers with editor-level acces",
+        "published": "2026-10-28T06:16:32.240"
+      },
+      {
+        "cve_id": "CVE-2026-107098",
+        "severity": "MEDIUM",
+        "base_score": 6.8,
+        "description": "The Royal Addons for Elementor  WordPress plugin before 1.7.1070 does not sanitise and escape one of its map widget's size settings before concatenating it into an HTML attribute, allowing users with ",
+        "published": "2026-10-28T06:16:33.020"
       }
     ]
   },
