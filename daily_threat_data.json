@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-29T10:34:05.805717+00:00",
+  "generated_at": "2026-10-29T17:46:45.892597+00:00",
   "threat_score": {
-    "score": 6.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
-        "score": 2.0,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 714,
-    "critical_count": 3,
-    "high_count": 4,
+    "total": 610,
+    "critical_count": 1,
+    "high_count": 23,
     "cves": [
       {
-        "cve_id": "CVE-2026-103780",
+        "cve_id": "CVE-2026-117574",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Dell PowerProtect Data Domain, Feature Release versions 7.7.1.0 through 8.8, LTS2024 release versions 7.13.1.0 through 7.13.1.80, LTS2025 release versions 8.3.1.0 through 8.3.1.40, LTS2026 release ver",
-        "published": "2026-10-28T11:17:14.113"
+        "base_score": 9.1,
+        "description": "A flaw was found in ai-gateway-payload-processing. An authenticated remote attacker can exploit this vulnerability by submitting a request specifying another tenant's model identifier in the request b",
+        "published": "2026-10-28T20:17:21.417"
       },
       {
-        "cve_id": "CVE-2026-103792",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Dell PowerProtect Data Domain Management Center, Feature Release versions 7.7.1.0 through 8.8, LTS2024 release versions 7.13.1.0 through 7.13.1.80, LTS2025 release versions 8.3.1.0 through 8.3.1.40, L",
-        "published": "2026-10-28T11:17:14.250"
+        "cve_id": "CVE-2026-118683",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "MONAI from 1.2.0 before 1.6.1 contains a remote code execution vulnerability in ConfigWorkflow.__init__, which passes a bundle's configs/logging.conf to logging.config.fileConfig that eval()s handler ",
+        "published": "2026-10-28T19:17:35.160"
       },
       {
-        "cve_id": "CVE-2026-103799",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Dell PowerProtect Data Domain Management Center, Feature Release versions 7.7.1.0 through 8.8, LTS2024 release versions 7.13.1.0 through 7.13.1.80, LTS2025 release versions 8.3.1.0 through 8.3.1.40, L",
-        "published": "2026-10-28T11:17:14.390"
+        "cve_id": "CVE-2026-118645",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "n8n before 1.123.85, 2.x before 2.43.5, and 2.44.x before 2.44.1 contains a filter injection vulnerability in the Quick Base node, which sends the Where filter to the Quick Base API as raw query text.",
+        "published": "2026-10-28T19:17:32.597"
       },
       {
-        "cve_id": "CVE-2026-103779",
+        "cve_id": "CVE-2026-118649",
         "severity": "HIGH",
         "base_score": 8.3,
-        "description": "Dell PowerProtect Data Domain, Feature Release versions 7.7.1.0 through 8.8, LTS2024 release versions 7.13.1.0 through 7.13.1.80, LTS2025 release versions 8.3.1.0 through 8.3.1.40, LTS2026 release ver",
-        "published": "2026-10-28T11:17:13.977"
+        "description": "n8n before 2.43.5 and 2.44.x before 2.44.1 accepts a client-supplied workflow ID and caches each workflow's owner project in memory by that ID, so a crafted ID such as __proto__ makes the Data Table p",
+        "published": "2026-10-28T19:17:33.263"
       },
       {
-        "cve_id": "CVE-2026-110541",
+        "cve_id": "CVE-2025-14260",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "Due to the improper implementation of access control rules, the WSO2 product accepts user-supplied input related to resource location without enforcing expected validation constraints. This can be exp",
+        "published": "2026-10-28T20:17:14.790"
+      },
+      {
+        "cve_id": "CVE-2026-118643",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "n8n before 1.123.85, 2.x before 2.43.5, and 2.44.x before 2.44.1 stores credential secrets in execution error data when operations fail in the Git, MongoDB Atlas Vector Store, and Google Cloud Storage",
+        "published": "2026-10-28T19:17:32.247"
+      },
+      {
+        "cve_id": "CVE-2026-118647",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "n8n before 1.123.85, 2.x before 2.43.5, and 2.44.x before 2.44.1 saves the SeaTable Trigger node's API token in error execution data, because failed poll requests store raw request headers. Users who ",
+        "published": "2026-10-28T19:17:32.927"
+      },
+      {
+        "cve_id": "CVE-2026-84725",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "when EAP runs with -secmgr, the openjdk-orb's JDKBridge honours attacker-supplied CDR codebase URLs during object unmarshalling on :3528, allowing an unauthenticated attacker to load and instantiate a",
+        "published": "2026-10-28T18:17:20.420"
+      },
+      {
+        "cve_id": "CVE-2026-118633",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "A path traversal vulnerability allows a remote unauthenticated attacker to execute arbitrary code as root in Sophos UTM (all versions) after winning a race condition by sustaining repeated attacks for",
+        "published": "2026-10-28T19:17:31.537"
+      },
+      {
+        "cve_id": "CVE-2026-109411",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "An access control bypass flaw was identified in Samba's vfs_ceph_rgw module in it's openat() function. An authenticated user can bypass access controls to read or overwrite restricted files on shares ",
+        "published": "2026-10-28T20:17:17.007"
+      },
+      {
+        "cve_id": "CVE-2026-118688",
+        "severity": "HIGH",
+        "base_score": 7.9,
+        "description": "wasmtime-wasi in Wasmtime before 36.0.18, 37.0.0 before 48.0.6, and 49.0.0 before 49.0.3 re-appends a trailing slash to rename source paths, causing renameat on macOS and FreeBSD hosts to follow direc",
+        "published": "2026-10-28T19:17:35.973"
+      },
+      {
+        "cve_id": "CVE-2026-118644",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "n8n before 2.41.5 and 2.42.x before 2.42.2 passes a failed workflow's full execution context, including the identity of the user who started the run, to the configured error workflow. A project editor",
+        "published": "2026-10-28T19:17:32.420"
+      },
+      {
+        "cve_id": "CVE-2026-13451",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "A flaw was found in KServe. A namespace-scoped user with create/update permissions on InferenceService custom resources can exploit this vulnerability by providing a malicious `storageUri`. This Serve",
+        "published": "2026-10-28T20:17:23.037"
+      },
+      {
+        "cve_id": "CVE-2026-116795",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "RE2JS is the JavaScript port of RE2, a regular expression engine that provides linear time matching. From 2.2.0 until 2.8.7, enabling LOOKBEHINDS and using repeated matching through matcher().find(), ",
+        "published": "2026-10-28T18:17:14.303"
+      },
+      {
+        "cve_id": "CVE-2026-118641",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "n8n before 1.123.85, 2.x before 2.43.5, and 2.44.x before 2.44.1 contains an OData $filter injection vulnerability in the Microsoft Outlook contact lookup and Microsoft SharePoint v1 item update nodes",
+        "published": "2026-10-28T19:17:31.897"
+      },
+      {
+        "cve_id": "CVE-2026-118679",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "n8n before 1.123.83, 2.41.4, and 2.42.1 contains a server-side request forgery vulnerability in the Slack Trigger webhook that allows unauthenticated attackers to exfiltrate Slack tokens by bypassing ",
+        "published": "2026-10-28T19:17:34.120"
+      },
+      {
+        "cve_id": "CVE-2026-118686",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "EspoCRM before 9.3.11 and 10.x before 10.0.8 contains a denial of service vulnerability in which the password-redaction regular expression applied during API error handling consumes excessive CPU on l",
+        "published": "2026-10-28T19:17:35.633"
+      },
+      {
+        "cve_id": "CVE-2026-118650",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Echo is a Go web framework. Prior to 4.16.0 and 5.4.0, a globally mounted middleware.Static instance can interpret an encoded request path differently from Echo's router because the router matches the",
+        "published": "2026-10-28T20:17:21.850"
+      },
+      {
+        "cve_id": "CVE-2026-118648",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "n8n before 1.123.85, 2.x before 2.43.5, and 2.44.x before 2.44.1 contains a stored cross-site scripting vulnerability because some webhook response paths, such as error responses and responses without",
+        "published": "2026-10-28T19:17:33.093"
+      },
+      {
+        "cve_id": "CVE-2026-118257",
         "severity": "HIGH",
         "base_score": 7.2,
-        "description": "Dell PowerProtect Data Domain, Feature Release versions 7.7.1.0 through 8.8, LTS2024 release versions 7.13.1.0 through 7.13.1.80, LTS2025 release versions 8.3.1.0 through 8.3.1.40, LTS2026 release ver",
-        "published": "2026-10-28T11:17:14.937"
-      },
-      {
-        "cve_id": "CVE-2025-30414",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Local privilege escalation due to improper authentication. The following products are affected: Acronis Cyber Protect Cloud Agent (Windows) before build 42569, Acronis Cyber Protect 17 (Windows) befor",
-        "published": "2026-10-28T11:17:12.427"
-      },
-      {
-        "cve_id": "CVE-2026-110540",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Dell PowerProtect Data Domain Management Center, Feature Release versions 7.7.1.0 through 8.8, LTS2024 release versions 7.13.1.0 through 7.13.1.80, LTS2025 release versions 8.3.1.0 through 8.3.1.40, L",
-        "published": "2026-10-28T11:17:14.803"
-      },
-      {
-        "cve_id": "CVE-2026-103313",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "The BitPay Gateway for WooCommerce WordPress plugin through 4.1.3 does not bind the payment provider's transaction confirmation to the order it completes, nor verify the confirmed amount, allowing an ",
-        "published": "2026-10-28T11:17:13.717"
-      },
-      {
-        "cve_id": "CVE-2026-103330",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "The Sadad QA Payment WordPress plugin through 1.28 does not correctly verify the authenticity of incoming payment notifications, as the verification is keyed on a merchant secret that is empty by defa",
-        "published": "2026-10-28T11:17:13.857"
-      },
-      {
-        "cve_id": "CVE-2026-106648",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "The Royal Elementor Addons WordPress plugin before 1.7.1070 does not validate submitted form field values before substituting them into the recipient addresses of its form notification emails, allowin",
-        "published": "2026-10-28T11:17:14.527"
-      },
-      {
-        "cve_id": "CVE-2026-110508",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "The Essential Addons for Elementor WordPress plugin before 6.8.7 does not apply its administrator approval requirement to accounts registered through its email one-time-password flow, which could allo",
-        "published": "2026-10-28T11:17:14.680"
-      },
-      {
-        "cve_id": "CVE-2026-115223",
-        "severity": "MEDIUM",
-        "base_score": 4.9,
-        "description": "The Smart Popup by Supsystic WordPress plugin before 2.0.2 does not prevent template-injection payloads from being stored in a popup text block and later evaluated by its template engine, because the ",
-        "published": "2026-10-28T11:17:15.800"
-      },
-      {
-        "cve_id": "CVE-2026-101272",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "The mechanism binding files generated during a shredding process to the authentication method is not working correctly and the same session token is used for all token-based API users. This is similar",
-        "published": "2026-10-28T11:17:13.273"
-      },
-      {
-        "cve_id": "CVE-2026-101273",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "Some of our API endpoints allowed to create order payments referencing a gift card by using the auto-incremented internal ID. This ID was not checked and allowed creating payments that reference gift ",
-        "published": "2026-10-28T11:17:13.430"
-      },
-      {
-        "cve_id": "CVE-2026-101274",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "When pretix is used as the identity provider in a Single-Sign-On (SSO) setup for customer accounts, the system did not properly validate the `response_type` requested in an authorization request again",
-        "published": "2026-10-28T11:17:13.577"
-      },
-      {
-        "cve_id": "CVE-2026-112197",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "Vulnerability due to a lack of authentication in critical functions of the NoviGest Desktop App's Java RMI service. An attacker with network access to the service can invoke remote methods without aut",
-        "published": "2026-10-28T11:17:15.073"
-      },
-      {
-        "cve_id": "CVE-2026-112198",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "XML External Entity (XXE) injection vulnerability in the SAFT import feature of the NoviGest Desktop App. The application processes user-controlled XML files using a JAXB Unmarshaller without properly",
-        "published": "2026-10-28T11:17:15.220"
-      },
-      {
-        "cve_id": "CVE-2026-117692",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "Rejected reason: Reserved in error; never associated with a vulnerability.",
-        "published": "2026-10-28T11:17:15.927"
-      },
-      {
-        "cve_id": "CVE-2026-117693",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "Rejected reason: Reserved in error; never associated with a vulnerability.",
-        "published": "2026-10-28T11:17:16.027"
-      },
-      {
-        "cve_id": "CVE-2026-117694",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "Rejected reason: Reserved in error; never associated with a vulnerability.",
-        "published": "2026-10-28T11:17:16.083"
+        "description": "Vue I18n is the internationalization plugin for Vue.js. From 11.1.10 until 11.4.14 and from 12.0.0-alpha.4 until 12.0.0-alpha.5, sanitizeTranslatedHtml() escapes markup and event-handler text inside a",
+        "published": "2026-10-28T19:17:30.207"
       }
     ]
   },
