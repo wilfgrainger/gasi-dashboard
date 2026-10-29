@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-10-29T17:46:45.892597+00:00",
+  "generated_at": "2026-10-29T23:42:23.195777+00:00",
   "threat_score": {
-    "score": 5.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.5,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 33,
+        "value": 35,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 6,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -32,9 +32,29 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1762,
-    "recent_30d_count": 33,
+    "total_catalog_count": 1764,
+    "recent_30d_count": 35,
     "recent": [
+      {
+        "cve_id": "CVE-2026-97229",
+        "vendor": "GitLab",
+        "product": "Community Edition and Enterprise Edition",
+        "name": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
+        "date_added": "2026-10-29",
+        "due_date": "2026-11-01",
+        "description": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a spe",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-76418",
+        "vendor": "Cisco",
+        "product": "Secure Firewall ASA Software and Cisco Secure FTD Software",
+        "name": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability",
+        "date_added": "2026-10-29",
+        "due_date": "2026-11-01",
+        "description": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software contains an unchecked return value to NULL pointer dereference vulnerability that could allow an unauthenticated, remote attacker to ca",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-41709",
         "vendor": "Broadcom",
@@ -214,173 +234,153 @@
         "due_date": "2026-10-17",
         "description": "Ahsay AhsayCBS contains a command injection vulnerability that could allow a remote attacker to execute operating system commands via manipulation of the random parameter in the Replication Receiver c",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-76519",
-        "vendor": "Cisco",
-        "product": "Secure Email Gateway",
-        "name": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
-        "date_added": "2026-10-14",
-        "due_date": "2026-10-17",
-        "description": "Cisco Secure Email Gateway contains a relative path traversal vulnerability that could allow an unauthenticated, remote attacker to write arbitrary files on the underlying operating system.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-105133",
-        "vendor": "Ahsay",
-        "product": "AhsayCBS",
-        "name": "Ahsay AhsayCBS Improper Authentication Vulnerability",
-        "date_added": "2026-10-14",
-        "due_date": "2026-10-17",
-        "description": "Ahsay AhsayCBS contains an improper authentication vulnerability that could allow a remote attacker to bypass authentication via manipulation of the random parameter in the API component\u2019s checkSysPwd",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 610,
-    "critical_count": 1,
-    "high_count": 23,
+    "total": 545,
+    "critical_count": 6,
+    "high_count": 25,
     "cves": [
       {
-        "cve_id": "CVE-2026-117574",
+        "cve_id": "CVE-2026-113617",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A flaw was found in ai-gateway-payload-processing. An authenticated remote attacker can exploit this vulnerability by submitting a request specifying another tenant's model identifier in the request b",
-        "published": "2026-10-28T20:17:21.417"
+        "base_score": 9.9,
+        "description": "The Automated Import Products to Cart WordPress plugin before 1.0.4 does not sanitize a user-supplied file path before using it to read and delete files, allowing users with minimal permissions, such ",
+        "published": "2026-10-29T06:17:18.857"
       },
       {
-        "cve_id": "CVE-2026-118683",
+        "cve_id": "CVE-2026-109516",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Bot for Telegram on WooCommerce plugin for WordPress is vulnerable to Authentication Bypass leading to Account Takeover in all versions up to, and including, 1.3.0. The `/wp-json/woo-telegram/v1/m",
+        "published": "2026-10-29T04:18:22.763"
+      },
+      {
+        "cve_id": "CVE-2026-42922",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A authorization bypass vulnerability exists in the /nodered functionality of FUXA (version(s): 1.3.2-2809). A specially crafted HTTP request can lead to a arbitrary code execution. An attacker can mak",
+        "published": "2026-10-29T04:18:36.777"
+      },
+      {
+        "cve_id": "CVE-2026-113616",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The LogixFast Auth WordPress plugin before 1.0.4 does not deliver its password-reset one-time code to the resolved account's own email address, mailing it to the address supplied in the request instea",
+        "published": "2026-10-29T06:17:18.740"
+      },
+      {
+        "cve_id": "CVE-2026-115245",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Chat AI with Dispatcher WordPress plugin before 2.4 does not properly validate uploaded files, relying only on a spoofable client-supplied content type, allowing unauthenticated attackers to uploa",
+        "published": "2026-10-29T06:17:19.407"
+      },
+      {
+        "cve_id": "CVE-2026-103693",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "The Frontend Dashboard WordPress plugin before 3.0.5, ProfileGrid  WordPress plugin before 6.0.0.5 do not prevent an unauthenticated user from storing a serialized PHP object in user metadata that is ",
+        "published": "2026-10-29T06:17:17.197"
+      },
+      {
+        "cve_id": "CVE-2026-86794",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "MONAI from 1.2.0 before 1.6.1 contains a remote code execution vulnerability in ConfigWorkflow.__init__, which passes a bundle's configs/logging.conf to logging.config.fileConfig that eval()s handler ",
-        "published": "2026-10-28T19:17:35.160"
+        "description": "The Community Events WordPress plugin before 1.6.0 does not have authorisation or nonce checks when processing public event submissions, and does not escape several of the submitted values before outp",
+        "published": "2026-10-29T06:17:24.350"
       },
       {
-        "cve_id": "CVE-2026-118645",
+        "cve_id": "CVE-2026-113387",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "n8n before 1.123.85, 2.x before 2.43.5, and 2.44.x before 2.44.1 contains a filter injection vulnerability in the Quick Base node, which sends the Where filter to the Quick Base API as raw query text.",
-        "published": "2026-10-28T19:17:32.597"
+        "base_score": 8.6,
+        "description": "The Ortto plugin for WordPress before 1.0.25 did not authenticate configuration update requests, relying only on a secret exposed in public HTML. An unauthenticated threat actor could overwrite the pl",
+        "published": "2026-10-29T02:16:49.937"
       },
       {
-        "cve_id": "CVE-2026-118649",
+        "cve_id": "CVE-2026-89216",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "n8n before 2.43.5 and 2.44.x before 2.44.1 accepts a client-supplied workflow ID and caches each workflow's owner project in memory by that ID, so a crafted ID such as __proto__ makes the Data Table p",
-        "published": "2026-10-28T19:17:33.263"
+        "base_score": 8.6,
+        "description": "The vTables  WordPress plugin before 0.3 does not properly sanitise and escape a parameter before using it in a SQL statement, which allows unauthenticated attackers to perform SQL injection attacks a",
+        "published": "2026-10-29T06:17:24.800"
       },
       {
-        "cve_id": "CVE-2025-14260",
+        "cve_id": "CVE-2026-111419",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Due to the improper implementation of access control rules, the WSO2 product accepts user-supplied input related to resource location without enforcing expected validation constraints. This can be exp",
-        "published": "2026-10-28T20:17:14.790"
+        "base_score": 8.6,
+        "description": "A sensitive information exposure vulnerability exists on the Foxit official website because JavaScript code contains third-party authorization information. This may allow unauthorized parties to obtai",
+        "published": "2026-10-29T10:17:03.440"
       },
       {
-        "cve_id": "CVE-2026-118643",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "n8n before 1.123.85, 2.x before 2.43.5, and 2.44.x before 2.44.1 stores credential secrets in execution error data when operations fail in the Git, MongoDB Atlas Vector Store, and Google Cloud Storage",
-        "published": "2026-10-28T19:17:32.247"
-      },
-      {
-        "cve_id": "CVE-2026-118647",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "n8n before 1.123.85, 2.x before 2.43.5, and 2.44.x before 2.44.1 saves the SeaTable Trigger node's API token in error execution data, because failed poll requests store raw request headers. Users who ",
-        "published": "2026-10-28T19:17:32.927"
-      },
-      {
-        "cve_id": "CVE-2026-84725",
+        "cve_id": "CVE-2026-96228",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "when EAP runs with -secmgr, the openjdk-orb's JDKBridge honours attacker-supplied CDR codebase URLs during object unmarshalling on :3528, allowing an unauthenticated attacker to load and instantiate a",
-        "published": "2026-10-28T18:17:20.420"
+        "description": "SSL Wireless SMS Notification for WordPress is vulnerable to Authentication Bypass in all versions up to, and including, 3.8.1. The public final_login_ajax_action handler resolves a user and issues an",
+        "published": "2026-10-29T04:18:45.110"
       },
       {
-        "cve_id": "CVE-2026-118633",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "A path traversal vulnerability allows a remote unauthenticated attacker to execute arbitrary code as root in Sophos UTM (all versions) after winning a race condition by sustaining repeated attacks for",
-        "published": "2026-10-28T19:17:31.537"
-      },
-      {
-        "cve_id": "CVE-2026-109411",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "An access control bypass flaw was identified in Samba's vfs_ceph_rgw module in it's openat() function. An authenticated user can bypass access controls to read or overwrite restricted files on shares ",
-        "published": "2026-10-28T20:17:17.007"
-      },
-      {
-        "cve_id": "CVE-2026-118688",
-        "severity": "HIGH",
-        "base_score": 7.9,
-        "description": "wasmtime-wasi in Wasmtime before 36.0.18, 37.0.0 before 48.0.6, and 49.0.0 before 49.0.3 re-appends a trailing slash to rename source paths, causing renameat on macOS and FreeBSD hosts to follow direc",
-        "published": "2026-10-28T19:17:35.973"
-      },
-      {
-        "cve_id": "CVE-2026-118644",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "n8n before 2.41.5 and 2.42.x before 2.42.2 passes a failed workflow's full execution context, including the identity of the user who started the run, to the configured error workflow. A project editor",
-        "published": "2026-10-28T19:17:32.420"
-      },
-      {
-        "cve_id": "CVE-2026-13451",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "A flaw was found in KServe. A namespace-scoped user with create/update permissions on InferenceService custom resources can exploit this vulnerability by providing a malicious `storageUri`. This Serve",
-        "published": "2026-10-28T20:17:23.037"
-      },
-      {
-        "cve_id": "CVE-2026-116795",
+        "cve_id": "CVE-2026-93757",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "RE2JS is the JavaScript port of RE2, a regular expression engine that provides linear time matching. From 2.2.0 until 2.8.7, enabling LOOKBEHINDS and using repeated matching through matcher().find(), ",
-        "published": "2026-10-28T18:17:14.303"
+        "description": "The Wild Apricot Login plugin for WordPress is vulnerable to Authentication Bypass via SSO Email-Collision Account Binding in all versions up to, and including, 1.0.18. When no WildApricot contact-ID ",
+        "published": "2026-10-29T04:18:43.763"
       },
       {
-        "cve_id": "CVE-2026-118641",
+        "cve_id": "CVE-2026-93855",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "n8n before 1.123.85, 2.x before 2.43.5, and 2.44.x before 2.44.1 contains an OData $filter injection vulnerability in the Microsoft Outlook contact lookup and Microsoft SharePoint v1 item update nodes",
-        "published": "2026-10-28T19:17:31.897"
+        "description": "The SendPress Newsletters plugin for WordPress is vulnerable to time-based SQL Injection via the 'subscriberid' parameter in all versions up to, and including, 1.26.1.20 due to insufficient escaping o",
+        "published": "2026-10-29T04:18:43.923"
       },
       {
-        "cve_id": "CVE-2026-118679",
+        "cve_id": "CVE-2026-93904",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "n8n before 1.123.83, 2.41.4, and 2.42.1 contains a server-side request forgery vulnerability in the Slack Trigger webhook that allows unauthenticated attackers to exfiltrate Slack tokens by bypassing ",
-        "published": "2026-10-28T19:17:34.120"
+        "description": "The Social Web Suite \u2013 Social Media Auto Post, Social Media Auto Publish plugin for WordPress is vulnerable to generic SQL Injection via the 'exclude_posts' parameter in all versions up to, and includ",
+        "published": "2026-10-29T04:18:44.543"
       },
       {
-        "cve_id": "CVE-2026-118686",
+        "cve_id": "CVE-2026-111739",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "EspoCRM before 9.3.11 and 10.x before 10.0.8 contains a denial of service vulnerability in which the password-redaction regular expression applied during API error handling consumes excessive CPU on l",
-        "published": "2026-10-28T19:17:35.633"
+        "description": "The Two Factor Authentication WordPress plugin before 1.17.0, All-In-One Security (AIOS)  WordPress plugin before 5.5.0 do not bind the account whose two-factor code is verified to the account being a",
+        "published": "2026-10-29T06:17:18.627"
       },
       {
-        "cve_id": "CVE-2026-118650",
+        "cve_id": "CVE-2026-111417",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Echo is a Go web framework. Prior to 4.16.0 and 5.4.0, a globally mounted middleware.Static instance can interpret an encoded request path differently from Echo's router because the router matches the",
-        "published": "2026-10-28T20:17:21.850"
+        "description": "A broken access control vulnerability exists in the Foxit official website\u2019s HTML-to-PDF conversion service due to the use of a shared token for submitted conversion documents. This may allow unauthor",
+        "published": "2026-10-29T10:17:03.160"
       },
       {
-        "cve_id": "CVE-2026-118648",
+        "cve_id": "CVE-2026-111418",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "n8n before 1.123.85, 2.x before 2.43.5, and 2.44.x before 2.44.1 contains a stored cross-site scripting vulnerability because some webhook response paths, such as error responses and responses without",
-        "published": "2026-10-28T19:17:33.093"
+        "base_score": 7.5,
+        "description": "A server-side request forgery (SSRF) vulnerability exists in the Foxit official website\u2019s HTML-to-PDF conversion service. Support for ZIP-formatted input can bypass restrictions on requests to interna",
+        "published": "2026-10-29T10:17:03.313"
       },
       {
-        "cve_id": "CVE-2026-118257",
+        "cve_id": "CVE-2026-114193",
         "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "Vue I18n is the internationalization plugin for Vue.js. From 11.1.10 until 11.4.14 and from 12.0.0-alpha.4 until 12.0.0-alpha.5, sanitizeTranslatedHtml() escapes markup and event-handler text inside a",
-        "published": "2026-10-28T19:17:30.207"
+        "base_score": 7.5,
+        "description": "Missing Authorization vulnerability in Eyal Fitoussi GEO my WordPress geo-my-wp allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects GEO my WordPress: from n/a th",
+        "published": "2026-10-29T11:17:28.080"
+      },
+      {
+        "cve_id": "CVE-2026-115599",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Missing Authorization vulnerability in ThimPress LearnPress learnpress allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects LearnPress: from n/a through 4.4.11.",
+        "published": "2026-10-29T11:17:30.070"
+      },
+      {
+        "cve_id": "CVE-2026-114488",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "A flaw was found in Wildfly. A remote attacker can bypass authentication on IIOP EJB invocations as the CSIv2 security interceptor accepts ITTPrincipalName identity assertions in the service context w",
+        "published": "2026-10-29T06:17:19.103"
       }
     ]
   },
