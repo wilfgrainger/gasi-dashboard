@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-10-30T23:22:04.912502+00:00",
+  "generated_at": "2026-10-31T03:19:41.585764+00:00",
   "threat_score": {
-    "score": 6.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 36,
+        "value": 35,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
-        "score": 2.0,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1766,
-    "recent_30d_count": 36,
+    "recent_30d_count": 35,
     "recent": [
       {
         "cve_id": "CVE-2026-118527",
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 677,
-    "critical_count": 3,
-    "high_count": 16,
+    "total": 644,
+    "critical_count": 1,
+    "high_count": 0,
     "cves": [
       {
         "cve_id": "CVE-2026-107249",
@@ -250,137 +250,137 @@
         "published": "2026-10-30T04:17:43.030"
       },
       {
-        "cve_id": "CVE-2026-119261",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Improper input validation in Skia in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium securit",
-        "published": "2026-10-30T01:16:44.797"
-      },
-      {
-        "cve_id": "CVE-2026-119263",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Memory corruption in GarbageCollection in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium se",
-        "published": "2026-10-30T01:16:45.047"
-      },
-      {
-        "cve_id": "CVE-2026-119260",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in Frames in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-10-30T01:16:44.663"
-      },
-      {
-        "cve_id": "CVE-2026-119262",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Improper input validation in V8 in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security s",
-        "published": "2026-10-30T01:16:44.920"
-      },
-      {
-        "cve_id": "CVE-2026-119264",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Memory corruption in Dawn in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severit",
-        "published": "2026-10-30T01:16:45.177"
-      },
-      {
-        "cve_id": "CVE-2026-119265",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Memory corruption in Quota in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severi",
-        "published": "2026-10-30T01:16:45.303"
-      },
-      {
-        "cve_id": "CVE-2026-119266",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in Quota in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity:",
-        "published": "2026-10-30T01:16:45.430"
-      },
-      {
-        "cve_id": "CVE-2026-119267",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Memory corruption in DOM in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity",
-        "published": "2026-10-30T01:16:45.553"
-      },
-      {
-        "cve_id": "CVE-2026-119268",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Integer overflow in Editing in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security sever",
-        "published": "2026-10-30T01:16:45.680"
-      },
-      {
-        "cve_id": "CVE-2026-119269",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in Blink in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-10-30T01:16:45.807"
-      },
-      {
-        "cve_id": "CVE-2026-119270",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Improper input validation in CacheStorage in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium ",
-        "published": "2026-10-30T01:16:45.937"
-      },
-      {
-        "cve_id": "CVE-2026-119271",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in Skia in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-10-30T01:16:46.063"
-      },
-      {
-        "cve_id": "CVE-2026-76025",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in FileSystem in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-10-30T01:16:46.970"
-      },
-      {
-        "cve_id": "CVE-2026-76026",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Memory corruption in Autofill in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-10-30T01:16:47.093"
-      },
-      {
-        "cve_id": "CVE-2026-76028",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in FileSystem in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-10-30T01:16:47.337"
-      },
-      {
-        "cve_id": "CVE-2026-76029",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Memory corruption in Network in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security seve",
-        "published": "2026-10-30T01:16:47.467"
-      },
-      {
-        "cve_id": "CVE-2026-76030",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Memory corruption in FileSystem in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security s",
-        "published": "2026-10-30T01:16:47.593"
-      },
-      {
-        "cve_id": "CVE-2026-76031",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in Input in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
-        "published": "2026-10-30T01:16:47.717"
-      },
-      {
-        "cve_id": "CVE-2026-76024",
+        "cve_id": "CVE-2026-107251",
         "severity": "MEDIUM",
         "base_score": 6.5,
-        "description": "Memory corruption in MediaStream in Google Chrome prior to 156.0.8078.79 allowed a remote attacker to potentially read memory inside the sandbox via a crafted HTML page. (Chromium security severity: C",
-        "published": "2026-10-30T01:16:46.840"
+        "description": "Incorrect Authorization vulnerability in Drupal Entity Reference Manager (Merge entities) allows Forceful Browsing. This issue affects Entity Reference Manager (Merge entities) versions: from 0.0.0 to",
+        "published": "2026-10-30T04:17:45.453"
+      },
+      {
+        "cve_id": "CVE-2026-107257",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Incorrect Authorization vulnerability in Drupal Actstream allows Forceful Browsing. This issue affects Actstream versions: from 0.0.0 to 2.0.1, from 2.1.0 to 2.1.1.",
+        "published": "2026-10-30T04:17:53.833"
+      },
+      {
+        "cve_id": "CVE-2026-118539",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Missing Authorization vulnerability in Drupal Commerce Core allows Forceful Browsing. This issue affects Commerce Core versions: from 0.0.0 to 2.41, from 3.0.0 to 3.3.13.",
+        "published": "2026-10-30T04:18:18.830"
+      },
+      {
+        "cve_id": "CVE-2026-107250",
+        "severity": "MEDIUM",
+        "base_score": 5.9,
+        "description": "Vulnerability in Drupal ECA Helper. This issue affects ECA Helper versions: *.*.",
+        "published": "2026-10-30T04:17:45.330"
+      },
+      {
+        "cve_id": "CVE-2026-107253",
+        "severity": "MEDIUM",
+        "base_score": 5.9,
+        "description": "Vulnerability in Drupal Orphans Media. This issue affects Orphans Media versions: *.*.",
+        "published": "2026-10-30T04:17:47.927"
+      },
+      {
+        "cve_id": "CVE-2026-107252",
+        "severity": "MEDIUM",
+        "base_score": 5.4,
+        "description": "Improper Neutralization of Input During Web Page Generation (\"Cross-site Scripting\") vulnerability in Drupal MathJax: LaTeX for Drupal allows Cross-Site Scripting (XSS). This issue affects MathJax: La",
+        "published": "2026-10-30T04:17:47.337"
+      },
+      {
+        "cve_id": "CVE-2026-107258",
+        "severity": "MEDIUM",
+        "base_score": 5.4,
+        "description": "Incorrect Authorization vulnerability in Drupal Inline Entity Form Dialog allows Forceful Browsing. This issue affects Inline Entity Form Dialog versions: from 0.0.0 to 1.0.6.",
+        "published": "2026-10-30T04:17:54.913"
+      },
+      {
+        "cve_id": "CVE-2026-107259",
+        "severity": "MEDIUM",
+        "base_score": 5.4,
+        "description": "Improper Neutralization of Special Elements Used in a Template Engine vulnerability in Drupal Linked Field allows Code Injection. This issue affects Linked Field versions: from 0.0.0 to 1.8.0.",
+        "published": "2026-10-30T04:17:55.090"
+      },
+      {
+        "cve_id": "CVE-2026-107263",
+        "severity": "MEDIUM",
+        "base_score": 5.4,
+        "description": "Incorrect Authorization vulnerability in Drupal Gutenberg allows Forceful Browsing. This issue affects Gutenberg versions: from 0.0.0 to 2.15.0, from 3.0.0 to 3.0.7.",
+        "published": "2026-10-30T04:17:55.993"
+      },
+      {
+        "cve_id": "CVE-2026-107264",
+        "severity": "MEDIUM",
+        "base_score": 5.4,
+        "description": "Improper Neutralization of Special Elements Used in a Template Engine vulnerability in Drupal Inline Formatter Field allows Code Injection. This issue affects Inline Formatter Field versions: from 0.0",
+        "published": "2026-10-30T04:17:56.113"
+      },
+      {
+        "cve_id": "CVE-2026-107265",
+        "severity": "MEDIUM",
+        "base_score": 5.4,
+        "description": "Improper Neutralization of Input During Web Page Generation (\"Cross-site Scripting\") vulnerability in Drupal Leaflet allows Stored XSS. This issue affects Leaflet versions: from 0.0.0 to 10.4.13.",
+        "published": "2026-10-30T04:17:56.237"
+      },
+      {
+        "cve_id": "CVE-2026-114572",
+        "severity": "MEDIUM",
+        "base_score": 5.4,
+        "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in Drupal Domain Login Restrict allows Authentication Bypass. This issue affects Domain Login Restrict versions: from 0.0.0 to 1.",
+        "published": "2026-10-30T04:18:17.563"
+      },
+      {
+        "cve_id": "CVE-2026-107262",
+        "severity": "MEDIUM",
+        "base_score": 5.3,
+        "description": "Cross-Site Request Forgery (CSRF) vulnerability in Drupal Advanced Filesystem allows Cross Site Request Forgery. This issue affects Advanced Filesystem versions: from 0.0.0 to 1.0.28.",
+        "published": "2026-10-30T04:17:55.620"
+      },
+      {
+        "cve_id": "CVE-2026-107267",
+        "severity": "MEDIUM",
+        "base_score": 5.3,
+        "description": "Missing Authorization vulnerability in Drupal DKAN allows Forceful Browsing. This issue affects DKAN versions: from 0.0.0 to 4.0.4, from 4.1.0 to 4.1.5.",
+        "published": "2026-10-30T04:17:58.113"
+      },
+      {
+        "cve_id": "CVE-2026-107254",
+        "severity": "MEDIUM",
+        "base_score": 4.8,
+        "description": "Authentication Bypass Using an Alternate Path or Channel vulnerability in Drupal Authenticator Login Plus (2FA) allows Authentication Bypass. This issue affects Authenticator Login Plus (2FA) versions",
+        "published": "2026-10-30T04:17:48.483"
+      },
+      {
+        "cve_id": "CVE-2026-107268",
+        "severity": "MEDIUM",
+        "base_score": 4.3,
+        "description": "Insertion of Sensitive Information Into Sent Data vulnerability in Drupal Two Factor Authentication - TFA / Passwordless Login allows Forceful Browsing. This issue affects Two Factor Authentication - ",
+        "published": "2026-10-30T04:17:58.230"
+      },
+      {
+        "cve_id": "CVE-2026-107307",
+        "severity": "MEDIUM",
+        "base_score": 4.3,
+        "description": "Incorrect Authorization vulnerability in Drupal SmartLinker AI allows Forceful Browsing. This issue affects SmartLinker AI versions: from 0.0.0 to 1.0.3.",
+        "published": "2026-10-30T04:17:58.483"
+      },
+      {
+        "cve_id": "CVE-2026-107310",
+        "severity": "MEDIUM",
+        "base_score": 4.3,
+        "description": "Server-Side Request Forgery (SSRF) vulnerability in Drupal Freelinking allows Server Side Request Forgery. This issue affects Freelinking versions: from 0.0.0 to 4.0.3.",
+        "published": "2026-10-30T04:17:58.833"
+      },
+      {
+        "cve_id": "CVE-2026-107312",
+        "severity": "MEDIUM",
+        "base_score": 4.3,
+        "description": "Allocation of Resources Without Limits or Throttling vulnerability in Drupal Examples for Developers allows Excessive Allocation. This issue affects Examples for Developers versions: from 0.0.0 to 4.0",
+        "published": "2026-10-30T04:17:59.090"
       }
     ]
   },
