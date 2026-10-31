@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-31T10:02:20.563548+00:00",
+  "generated_at": "2026-10-31T16:31:19.851619+00:00",
   "threat_score": {
-    "score": 5.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.5,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 7,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 570,
-    "critical_count": 1,
-    "high_count": 20,
+    "total": 347,
+    "critical_count": 7,
+    "high_count": 36,
     "cves": [
       {
-        "cve_id": "CVE-2025-31704",
+        "cve_id": "CVE-2026-61826",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Bazarr is a companion application to Sonarr and Radarr. Prior to 1.5.7-beta.14, the `api_ns_plex` namespace in `bazarr/api/plex/oauth.py` omits `@authenticate` on its Resource handlers, while normal A",
+        "published": "2026-10-30T17:17:27.497"
+      },
+      {
+        "cve_id": "CVE-2026-116386",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "A vulnerability has been found in the Dahua Intelligent Connection Center. A remote attacker could send a specially crafted request to the affected system, allowing the attacker to execute arbitrary c",
-        "published": "2026-10-30T11:17:31.450"
+        "description": "Unauthenticated Privilege Escalation in SMS Alert Order Notifications <= 4.0.2 versions.",
+        "published": "2026-10-30T19:18:13.640"
       },
       {
-        "cve_id": "CVE-2026-111505",
+        "cve_id": "CVE-2026-119526",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Deserialization of Untrusted Data vulnerability in ThemeREX Royal Event allows Object Injection.\n\nThis issue affects Royal Event: from n/a through 2.0.",
+        "published": "2026-10-30T19:18:20.673"
+      },
+      {
+        "cve_id": "CVE-2026-39738",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Unauthenticated PHP Object Injection in FunnelKit Automations <= 3.8.6.1 versions.",
+        "published": "2026-10-30T19:18:24.427"
+      },
+      {
+        "cve_id": "CVE-2026-39732",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Unauthenticated SQL Injection in Transliterator <= 2.5.13 versions.",
+        "published": "2026-10-30T19:18:24.137"
+      },
+      {
+        "cve_id": "CVE-2026-116852",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Author Remote Code Execution (RCE) in Widget Options <= 4.2.5 versions.",
+        "published": "2026-10-30T19:18:15.020"
+      },
+      {
+        "cve_id": "CVE-2026-118697",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "In JetBrains Toolbox App before 3.9.1 and 3.8.2; IntelliJ IDEA before 2026.3 and 2026.2.4, the jetbrainsd daemon trusted compromised intermediate certificates",
+        "published": "2026-10-30T18:17:24.687"
+      },
+      {
+        "cve_id": "CVE-2026-65566",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Dell OpenManage Enterprise, versions prior to 4.8.0, contains an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. A low privileged attacker wit",
-        "published": "2026-10-30T12:16:35.070"
+        "description": "Cross-Site Request Forgery (CSRF) vulnerability in Meow Apps AI Engine ai-engine allows Cross Site Request Forgery.This issue affects AI Engine: from n/a through 3.8.8.",
+        "published": "2026-10-30T17:17:27.793"
       },
       {
-        "cve_id": "CVE-2026-119408",
+        "cve_id": "CVE-2026-105894",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "n8n before 2.42.6, 2.43.x before 2.43.3, and 3.x before 3.0.1 contains a remote code execution vulnerability via deprecated Function, Function Item, and LangChain Code nodes running outside task runne",
-        "published": "2026-10-30T12:16:37.283"
+        "description": "The Ak Framework plugin for WordPress, included in the Newsy - Viral News & Magazine WordPress Theme, is vulnerable to Privilege Escalation in all versions up to, and including, 2.9.8. This is due to ",
+        "published": "2026-10-30T18:17:16.483"
       },
       {
-        "cve_id": "CVE-2026-119420",
+        "cve_id": "CVE-2026-119979",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Lago through 1.55.0 contains an authentication bypass vulnerability that allows organization administrators to obtain session tokens for existing accounts via the acceptInvite mutation without a passw",
-        "published": "2026-10-30T12:16:38.717"
+        "description": "LM Studio before 0.4.22+1 contains a path traversal vulnerability in the model downloader's resolveDownloadRequest that allows attackers to write files outside the models directory using backslash-sep",
+        "published": "2026-10-30T18:17:27.760"
       },
       {
-        "cve_id": "CVE-2026-118992",
+        "cve_id": "CVE-2026-118086",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "CallBackery versions before 0.62.0 for Perl allow OS command execution via sqlite3 shell commands in a restored configuration backup.\n\nrestoreConfigBlob() feeds the database dump in a backup to the sq",
-        "published": "2026-10-30T13:18:31.990"
+        "base_score": 8.8,
+        "description": "Subscriber Privilege Escalation in WP BASE Booking <= 6.5.2 versions.",
+        "published": "2026-10-30T19:18:17.257"
       },
       {
-        "cve_id": "CVE-2026-119418",
+        "cve_id": "CVE-2026-118090",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Subscriber PHP Object Injection in MasterStudy LMS <= 3.7.55 versions.",
+        "published": "2026-10-30T19:18:17.527"
+      },
+      {
+        "cve_id": "CVE-2025-8574",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "The Database Cleaner plugin for WordPress is vulnerable to arbitrary table deletion in all versions up to, and including, 1.4.7. This is due to a lack of restriction on database tables that can be del",
+        "published": "2026-10-30T18:17:13.960"
+      },
+      {
+        "cve_id": "CVE-2026-119978",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "Flowise through 3.1.4 contains a sandbox escape vulnerability that allows authenticated users to execute OS commands by abusing allowlisted langchain and mammoth modules when ALLOW_BUILTIN_DEP=true. A",
+        "published": "2026-10-30T18:17:27.577"
+      },
+      {
+        "cve_id": "CVE-2026-115642",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "In OpenStack keystonemiddleware before 13.0.2, by supplying a custom X-Service-Token header in a request, anyone in possession of an access-restricted application credential may bypass those restricti",
+        "published": "2026-10-30T17:17:15.053"
+      },
+      {
+        "cve_id": "CVE-2026-61804",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "CakePHP through 5.4.3 contains an sql injection vulnerability that allows attackers to inject SQL by supplying unvalidated frame offsets and directions to WindowExpression::range() and frame(). Attack",
-        "published": "2026-10-30T12:16:38.390"
+        "description": "myTinyWMS is a free, open-source warehouse management system. Prior to version 1.6.4, `Product (Artikel)` and `Category` management store the `name` parameter without adequate backend sanitization and",
+        "published": "2026-10-30T17:17:27.073"
       },
       {
-        "cve_id": "CVE-2026-119419",
+        "cve_id": "CVE-2026-115346",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "CakePHP through 5.4.3 contains an sql injection vulnerability that allows attackers to inject SQL by supplying unvalidated collation values to StringExpression and IdentifierExpression. Attackers cont",
-        "published": "2026-10-30T12:16:38.550"
+        "description": "The Avada | Website Builder For WordPress & WooCommerce theme for WordPress is vulnerable to Arbitrary File Upload in versions up to, and including, 7.16.2 via the convert_palette_images_to_truecolor(",
+        "published": "2026-10-30T18:17:22.220"
       },
       {
-        "cve_id": "CVE-2026-101213",
+        "cve_id": "CVE-2026-118696",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "In JetBrains IntelliJ IDEA, PyCharm, PhpStorm, RubyMine and WebStorm before 2026.3, 2026.2.4, 2026.1.5.1, and 2025.3.6.2; GoLand before 2026.3, 2026.2.4, 2026.1.5.1, and 2025.3.5.2; Rider before 2026.",
+        "published": "2026-10-30T18:17:24.530"
+      },
+      {
+        "cve_id": "CVE-2026-119116",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "Dell OpenManage Enterprise, versions prior to 4.8.0, contains an Improper Privilege Management vulnerability. A low privileged attacker with local access could potentially exploit this vulnerability, ",
-        "published": "2026-10-30T12:16:34.130"
+        "description": "A use-after-free and double-free issue in the SetClient command handler of the kmstool-enclave sample application of AWS aws-nitro-enclaves-sdk-c before 0.4.6 may allow an application that runs on the",
+        "published": "2026-10-30T17:17:16.343"
       },
       {
-        "cve_id": "CVE-2026-119373",
+        "cve_id": "CVE-2026-119777",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "SQLite before 3.54.0 built with FTS5 contains a heap buffer overflow in fts5MergeRowidLists() that undersizes the output buffer when merging detail=none prefix doclists. Attackers who can populate a d",
-        "published": "2026-10-30T12:16:36.027"
-      },
-      {
-        "cve_id": "CVE-2026-119374",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "SQLite before 3.54.0 built with FTS5 contains a heap buffer overflow in fts5DoSecureDelete() that allows attackers to write past the leaf page buffer via crafted footer key offsets. Attackers can supp",
-        "published": "2026-10-30T12:16:36.187"
-      },
-      {
-        "cve_id": "CVE-2026-119379",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "SQLite before 3.54.0 built with the session extension contains a heap buffer overflow vulnerability in sqlite3changeset_apply() that allows attackers to corrupt heap memory by supplying crafted change",
-        "published": "2026-10-30T12:16:36.967"
-      },
-      {
-        "cve_id": "CVE-2026-119586",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "SQLite command-line shell through 3.54.1 contains a command injection vulnerability in the .recover command that emits attacker-planted dot-commands stored in sqlite_schema.sql values verbatim. Attack",
-        "published": "2026-10-30T12:16:44.730"
-      },
-      {
-        "cve_id": "CVE-2026-119426",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "phpMyAdmin through 5.2.3 contains a cross-site request forgery vulnerability that allows remote attackers to execute arbitrary SQL by bypassing CSRF token checks on non-AJAX POST requests. Attackers c",
-        "published": "2026-10-30T12:16:39.683"
-      },
-      {
-        "cve_id": "CVE-2026-119568",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "vsftpd through 3.0.5 contains an authentication bypass vulnerability in ssl_data_accept() that allows unauthenticated attackers to hijack FTPS data connections by resuming their own TLS session ticket",
-        "published": "2026-10-30T12:16:44.580"
-      },
-      {
-        "cve_id": "CVE-2026-101210",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "Dell OpenManage Enterprise, versions prior to 4.8.0, contains an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. A high privileged attacker wi",
-        "published": "2026-10-30T12:16:34.000"
-      },
-      {
-        "cve_id": "CVE-2026-101214",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "Dell OpenManage Enterprise, versions prior to 4.8.0, contains an Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability. A high privileged attacker wi",
-        "published": "2026-10-30T12:16:34.260"
-      },
-      {
-        "cve_id": "CVE-2026-111504",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "Dell OpenManage Enterprise, versions prior to 4.8.0, contains an Improper Neutralization of Argument Delimiters in a Command ('Argument Injection') vulnerability. A high privileged attacker with remot",
-        "published": "2026-10-30T12:16:34.943"
-      },
-      {
-        "cve_id": "CVE-2026-119409",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "OPNsense before 26.7.8 contains a command injection vulnerability that allows authenticated users with the System: Firmware privilege to execute commands as root by storing a malicious firmware mirror",
-        "published": "2026-10-30T12:16:37.510"
-      },
-      {
-        "cve_id": "CVE-2026-119407",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Element Web and Element Desktop before 1.12.32 accept guest credentials from URL fragment parameters in loadSession, allowing remote unauthenticated attackers to log out users and clear local stores. ",
-        "published": "2026-10-30T12:16:37.120"
-      },
-      {
-        "cve_id": "CVE-2026-119549",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Jellyfin through 12.4 contains a server-side request forgery vulnerability that lets authenticated users bypass SvgSecurityValidator by embedding gzip-compressed SVG in non-SVG image data URIs. Attack",
-        "published": "2026-10-30T12:16:41.330"
+        "description": "A flaw was found in GStreamer's gst-plugins-bad H.266/VVC parser. When processing a malformed H.266 media file or stream, an integer overflow while parsing profile, tier, and level fields can lead to ",
+        "published": "2026-10-30T18:17:27.427"
       }
     ]
   },
