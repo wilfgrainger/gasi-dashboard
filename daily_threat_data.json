@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T22:55:49.909259+00:00",
+  "generated_at": "2026-11-01T03:19:20.944731+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,7 +7,7 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 35,
+        "value": 33,
         "score": 3.0,
         "max": 3
       },
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1766,
-    "recent_30d_count": 35,
+    "recent_30d_count": 33,
     "recent": [
       {
         "cve_id": "CVE-2026-118527",
@@ -238,17 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 130,
+    "total": 123,
     "critical_count": 8,
     "high_count": 33,
     "cves": [
-      {
-        "cve_id": "CVE-2026-63377",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "TAKO AI Agent for Okta is a local-first AI agent that helps Okta administrators query tenant data using natural language. Prior to 3.0.1-beta, `POST /api/auth/setup` in `src/api/routers/auth.py` allow",
-        "published": "2026-10-30T23:17:14.267"
-      },
       {
         "cve_id": "CVE-2026-109220",
         "severity": "CRITICAL",
@@ -278,6 +271,13 @@
         "published": "2026-10-31T09:16:33.620"
       },
       {
+        "cve_id": "CVE-2026-120201",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Jpom 2.10.0 through 2.11.12 contains an authentication bypass vulnerability that allows unauthenticated attackers to gain super-administrator access by injecting query conditions into the JPOM-USER-TO",
+        "published": "2026-10-31T18:17:07.890"
+      },
+      {
         "cve_id": "CVE-2026-116557",
         "severity": "CRITICAL",
         "base_score": 9.1,
@@ -297,20 +297,6 @@
         "base_score": 9.1,
         "description": "The Acadlix LMS \u2013 AI Quiz Maker, Online Exam & Course Plugin for WordPress plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the post_delete_ass",
         "published": "2026-10-31T09:16:32.510"
-      },
-      {
-        "cve_id": "CVE-2026-63339",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "IXP Manager is a full-stack web application for managing Internet Exchange Points. Prior to version 7.3.0, an authenticated, non-administrative user can elevate their privileges to administrator statu",
-        "published": "2026-10-30T23:17:13.537"
-      },
-      {
-        "cve_id": "CVE-2026-63378",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "TAKO AI Agent for Okta is a local-first AI agent that helps Okta administrators query tenant data using natural language. Prior to 3.0.1-beta, any authenticated user with a valid `fctr_session` cookie",
-        "published": "2026-10-30T23:17:14.410"
       },
       {
         "cve_id": "CVE-2026-104012",
@@ -334,6 +320,20 @@
         "published": "2026-10-31T09:16:33.223"
       },
       {
+        "cve_id": "CVE-2026-76010",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "The Photo Gallery, Sliders, Proofing and Themes \u2013 NextGEN Gallery plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 4.4.1 via the render_image function.",
+        "published": "2026-10-31T10:16:38.547"
+      },
+      {
+        "cve_id": "CVE-2026-120203",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "ShowDoc 2.8.14 before 3.9.6 contains a code injection vulnerability in its Mock feature that allows authenticated users to execute shell commands through mockjs templates. Attackers can store a templa",
+        "published": "2026-10-31T18:17:08.237"
+      },
+      {
         "cve_id": "CVE-2026-114217",
         "severity": "HIGH",
         "base_score": 8.6,
@@ -346,13 +346,6 @@
         "base_score": 8.4,
         "description": "A flaw was found in konflux-ci. An attacker with repository write access can achieve arbitrary code execution within the Continuous Integration and Continuous Delivery (CI/CD) workflow environment. By",
         "published": "2026-10-31T09:16:33.357"
-      },
-      {
-        "cve_id": "CVE-2026-63338",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "IXP Manager is a full-stack web application for managing Internet Exchange Points. Prior to version 7.3.0, an authenticated user can view and edit a resource belonging to another user without authoriz",
-        "published": "2026-10-30T23:17:13.377"
       },
       {
         "cve_id": "CVE-2026-119977",
@@ -376,11 +369,18 @@
         "published": "2026-10-31T09:16:33.487"
       },
       {
-        "cve_id": "CVE-2026-63341",
+        "cve_id": "CVE-2026-120205",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "Thelia before 3.1.0 contains a stored cross-site scripting vulnerability in ForSomeCustomers::getSummary() that allows unauthenticated attackers to inject scripts via unescaped customer names. Attacke",
+        "published": "2026-10-31T18:17:08.570"
+      },
+      {
+        "cve_id": "CVE-2026-119163",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Aedes is an MQTT broker that can run on any stream server. Prior to 1.1.1, the MQTT broker does not bound topic depth or structural complexity before passing topics through `mqemitter` into `qlobber`.",
-        "published": "2026-10-30T23:17:13.690"
+        "description": "The FunnelKit Automations \u2013 Email Marketing Automation and CRM for WordPress & WooCommerce plugin for WordPress is vulnerable to time-based SQL Injection via the 'bwfan_cart_id' parameter in all versi",
+        "published": "2026-10-31T07:16:36.600"
       }
     ]
   },
