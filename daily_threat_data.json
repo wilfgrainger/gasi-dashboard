@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-01T10:54:09.814663+00:00",
+  "generated_at": "2026-11-01T17:24:41.742982+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
-        "score": 2.5,
+        "value": 20,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 70,
-    "critical_count": 8,
-    "high_count": 6,
+    "total": 87,
+    "critical_count": 20,
+    "high_count": 8,
     "cves": [
       {
         "cve_id": "CVE-2026-120189",
@@ -264,6 +264,13 @@
         "published": "2026-11-01T05:18:57.620"
       },
       {
+        "cve_id": "CVE-2026-120338",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Prefab UI's Generative UI sandbox runs caller-supplied Python inside Pyodide, Python compiled to WebAssembly, in a Deno subprocess. The feature is documented as isolation for untrusted code, including",
+        "published": "2026-11-01T16:18:14.970"
+      },
+      {
         "cve_id": "CVE-2026-120196",
         "severity": "CRITICAL",
         "base_score": 9.9,
@@ -276,6 +283,62 @@
         "base_score": 9.9,
         "description": "A flaw has been found in WAVLINK WL-WN530HG4B M_V260724. This impacts the function port_forward of the file /cgi-bin/wapi.cgi. This manipulation of the argument Name causes os command injection. It is",
         "published": "2026-11-01T04:18:47.147"
+      },
+      {
+        "cve_id": "CVE-2026-120224",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A security flaw has been discovered in Oray Pugongying X5 Pro up to 7.6.1. Affected is the function run_apis_by_json/run_async_task of the component API Authorization. The manipulation results in impr",
+        "published": "2026-11-01T11:18:57.437"
+      },
+      {
+        "cve_id": "CVE-2026-120227",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A vulnerability was detected in WAVLINK WN701AE M01AE_V260105. This affects the function del_staticrule of the file static_route_setting.sh of the component ioos Web Backend. Performing a manipulation",
+        "published": "2026-11-01T13:18:00.643"
+      },
+      {
+        "cve_id": "CVE-2026-120306",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Beta9 turns each shell command in a tenant image definition into a Dockerfile RUN line and executes it with Buildah on the build worker. The worker image sets BUILDAH_ISOLATION=chroot, and no buildah ",
+        "published": "2026-11-01T13:18:01.300"
+      },
+      {
+        "cve_id": "CVE-2026-120307",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "The Beta9 worker serves the sandbox file API from outside the container. getHostPathFromContainerPath turns the tenant's container path into a worker path. If the unresolved path starts with a mount d",
+        "published": "2026-11-01T13:18:01.497"
+      },
+      {
+        "cve_id": "CVE-2026-120308",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A Beta9 tenant can attach a volume when deploying a function, endpoint, or task queue. The gateway builds the host path by joining the shared volumes root, the workspace name, and the volume identifie",
+        "published": "2026-11-01T13:18:01.670"
+      },
+      {
+        "cve_id": "CVE-2026-120228",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A flaw has been found in WAVLINK WN553X1-B V260403_2.0.0. This vulnerability affects the function sub_416D88 of the file /bin/ioos of the component ioos Service. Executing a manipulation of the argume",
+        "published": "2026-11-01T14:18:52.883"
+      },
+      {
+        "cve_id": "CVE-2026-120230",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A vulnerability was found in WAVLINK WN701AE 260105. Impacted is the function del_vlan_group of the component ioos Web Backend. The manipulation of the argument vlan_name results in os command injecti",
+        "published": "2026-11-01T15:17:22.830"
+      },
+      {
+        "cve_id": "CVE-2026-120231",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "A vulnerability was determined in WAVLINK WN553X1-B V260403_2.0.0. The affected element is the function sub_416568 of the file /bin/ioos of the component OpenVPN CLI Handler. This manipulation of the ",
+        "published": "2026-11-01T15:17:23.053"
       },
       {
         "cve_id": "CVE-2026-120201",
@@ -299,88 +362,25 @@
         "published": "2026-10-31T21:16:53.203"
       },
       {
-        "cve_id": "CVE-2026-120203",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "ShowDoc 2.8.14 before 3.9.6 contains a code injection vulnerability in its Mock feature that allows authenticated users to execute shell commands through mockjs templates. Attackers can store a templa",
-        "published": "2026-10-31T18:17:08.237"
+        "cve_id": "CVE-2026-62048",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Liquid Web / StellarWP BookIt bookit allows SQL Injection.This issue affects BookIt: from n/a thro",
+        "published": "2026-11-01T16:18:15.170"
       },
       {
-        "cve_id": "CVE-2026-120205",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "Thelia before 3.1.0 contains a stored cross-site scripting vulnerability in ForSomeCustomers::getSummary() that allows unauthenticated attackers to inject scripts via unescaped customer names. Attacke",
-        "published": "2026-10-31T18:17:08.570"
+        "cve_id": "CVE-2026-120225",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "A weakness has been identified in Oray Pugongying X5 Pro up to 7.6.1. Affected by this vulnerability is the function config_restore_ex of the file /etc/openwrt_release. This manipulation of the argume",
+        "published": "2026-11-01T11:18:57.843"
       },
       {
-        "cve_id": "CVE-2026-120208",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "libheif 1.18.0 before 1.23.3 contains a heap-based buffer overflow vulnerability in unc_decoder_mixed_interleave::processTile() that allows attackers to write out of bounds by supplying chroma compone",
-        "published": "2026-10-31T18:17:09.083"
-      },
-      {
-        "cve_id": "CVE-2026-118147",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "Improper certificate validation in Visual Studio allows an unauthorized attacker to perform spoofing over a network.",
-        "published": "2026-10-31T19:16:47.213"
-      },
-      {
-        "cve_id": "CVE-2026-120191",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A weakness has been identified in Presenton up to 0.9.11-beta. Affected by this issue is some unknown functionality of the component API. This manipulation causes missing authentication. It is possibl",
-        "published": "2026-11-01T01:17:17.383"
-      },
-      {
-        "cve_id": "CVE-2026-120207",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Thelia Page Module before 2.0.4 contains a cross-site request forgery vulnerability that allows remote attackers to delete page tags, documents and images by abusing back-office delete routes lacking ",
-        "published": "2026-10-31T18:17:08.920"
-      },
-      {
-        "cve_id": "CVE-2026-15272",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "The Web 2.0 Directory plugin for WordPress is vulnerable to time-based SQL Injection via the 'w2dc_level_filter' parameter in all versions up to, and including, 2.10.12 due to insufficient escaping on",
-        "published": "2026-10-31T12:16:27.790"
-      },
-      {
-        "cve_id": "CVE-2026-120202",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Highflame ramparts 0.8.1 through 0.8.10 contains a security scan bypass vulnerability that allows attackers to hide malicious payloads because collect_bundle_siblings and walk_bundle_subdir skip neste",
-        "published": "2026-10-31T18:17:08.080"
-      },
-      {
-        "cve_id": "CVE-2026-120249",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Thelia Back-office Default Twig Template before 1.1.1 contains a cross-site request forgery vulnerability in the /admin/product/combinations/update and /admin/product/default-price/update routes, whic",
-        "published": "2026-11-01T01:17:18.683"
-      },
-      {
-        "cve_id": "CVE-2026-120206",
-        "severity": "MEDIUM",
-        "base_score": 5.9,
-        "description": "Thelia before 3.2.0 contains a cross-site request forgery vulnerability in the back office that allows attackers to forge administrative actions because per-session CSRF tokens leak via URL query stri",
-        "published": "2026-10-31T18:17:08.747"
-      },
-      {
-        "cve_id": "CVE-2026-120204",
-        "severity": "MEDIUM",
-        "base_score": 5.6,
-        "description": "DeepInfer through 0.1.0 contains a path traversal vulnerability in the unauthenticated /profile endpoint that allows remote attackers to create arbitrary directories via the output_dir parameter. Atta",
-        "published": "2026-10-31T18:17:08.403"
-      },
-      {
-        "cve_id": "CVE-2026-120243",
-        "severity": "MEDIUM",
-        "base_score": 5.5,
-        "description": "FFmpeg 2.0 through 9.0.2 contains a use of uninitialized variable vulnerability in the Go2Meeting decoder that allows attackers to leak stack memory through out-of-range palette indices. Attackers can",
-        "published": "2026-11-01T01:17:17.593"
+        "cve_id": "CVE-2026-120229",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "A vulnerability has been found in WAVLINK WN553X1-B 260403_2.0.0. This issue affects the function sub_416B50 of the file /bin/ioos. The manipulation of the argument file_id leads to os command injecti",
+        "published": "2026-11-01T14:18:53.123"
       }
     ]
   },
