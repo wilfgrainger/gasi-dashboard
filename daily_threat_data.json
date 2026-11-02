@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-02T11:50:41.753419+00:00",
+  "generated_at": "2026-11-02T21:05:30.796357+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 21,
-        "score": 3.0,
+        "value": 8,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,17 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 178,
-    "critical_count": 21,
-    "high_count": 9,
+    "total": 471,
+    "critical_count": 8,
+    "high_count": 20,
     "cves": [
-      {
-        "cve_id": "CVE-2026-120338",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Prefab UI's Generative UI sandbox runs caller-supplied Python inside Pyodide, Python compiled to WebAssembly, in a Deno subprocess. The feature is documented as isolation for untrusted code, including",
-        "published": "2026-11-01T16:18:14.970"
-      },
       {
         "cve_id": "CVE-2026-120276",
         "severity": "CRITICAL",
@@ -292,76 +285,6 @@
         "published": "2026-11-02T01:17:27.500"
       },
       {
-        "cve_id": "CVE-2026-120227",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A vulnerability was detected in WAVLINK WN701AE M01AE_V260105. This affects the function del_staticrule of the file static_route_setting.sh of the component ioos Web Backend. Performing a manipulation",
-        "published": "2026-11-01T13:18:00.643"
-      },
-      {
-        "cve_id": "CVE-2026-120306",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Beta9 turns each shell command in a tenant image definition into a Dockerfile RUN line and executes it with Buildah on the build worker. The worker image sets BUILDAH_ISOLATION=chroot, and no buildah ",
-        "published": "2026-11-01T13:18:01.300"
-      },
-      {
-        "cve_id": "CVE-2026-120307",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "The Beta9 worker serves the sandbox file API from outside the container. getHostPathFromContainerPath turns the tenant's container path into a worker path. If the unresolved path starts with a mount d",
-        "published": "2026-11-01T13:18:01.497"
-      },
-      {
-        "cve_id": "CVE-2026-120308",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A Beta9 tenant can attach a volume when deploying a function, endpoint, or task queue. The gateway builds the host path by joining the shared volumes root, the workspace name, and the volume identifie",
-        "published": "2026-11-01T13:18:01.670"
-      },
-      {
-        "cve_id": "CVE-2026-120228",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A flaw has been found in WAVLINK WN553X1-B V260403_2.0.0. This vulnerability affects the function sub_416D88 of the file /bin/ioos of the component ioos Service. Executing a manipulation of the argume",
-        "published": "2026-11-01T14:18:52.883"
-      },
-      {
-        "cve_id": "CVE-2026-120230",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A vulnerability was found in WAVLINK WN701AE 260105. Impacted is the function del_vlan_group of the component ioos Web Backend. The manipulation of the argument vlan_name results in os command injecti",
-        "published": "2026-11-01T15:17:22.830"
-      },
-      {
-        "cve_id": "CVE-2026-120231",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A vulnerability was determined in WAVLINK WN553X1-B V260403_2.0.0. The affected element is the function sub_416568 of the file /bin/ioos of the component OpenVPN CLI Handler. This manipulation of the ",
-        "published": "2026-11-01T15:17:23.053"
-      },
-      {
-        "cve_id": "CVE-2026-120238",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A vulnerability has been found in WAVLINK WN553X1-B 260403_2.0.0. This affects the function sub_4162A8 of the file /bin/ioos of the component ovpn_file Handler. Such manipulation of the argument file_",
-        "published": "2026-11-01T18:17:13.720"
-      },
-      {
-        "cve_id": "CVE-2026-120239",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A vulnerability was found in WAVLINK WN553X1-B V260403_2.0.0. This vulnerability affects the function sub_419DA8 of the file /bin/ioos of the component WireGuard CLI Handler. Performing a manipulation",
-        "published": "2026-11-01T18:17:13.920"
-      },
-      {
-        "cve_id": "CVE-2026-120240",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A vulnerability was determined in WAVLINK WN553X1-B V260403_2.0.0. This issue affects the function sub_41A748 of the file /bin/ioos of the component WireGuard CLI Group Handler. Executing a manipulati",
-        "published": "2026-11-01T19:16:57.950"
-      },
-      {
         "cve_id": "CVE-2026-120282",
         "severity": "CRITICAL",
         "base_score": 9.9,
@@ -376,11 +299,88 @@
         "published": "2026-11-02T02:18:47.550"
       },
       {
-        "cve_id": "CVE-2026-62048",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Liquid Web / StellarWP BookIt bookit allows SQL Injection.This issue affects BookIt: from n/a thro",
-        "published": "2026-11-01T16:18:15.170"
+        "cve_id": "CVE-2026-120311",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Network-AI from 5.13.4 before 5.15.5 contains a path traversal vulnerability in FileJobStore that allows attackers to read or delete arbitrary .json files by supplying traversal sequences in the job i",
+        "published": "2026-11-02T03:17:28.663"
+      },
+      {
+        "cve_id": "CVE-2026-120312",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Network-AI from 5.13.4 before 5.15.5 contains a path traversal vulnerability in AgentVCR that allows attackers controlling the cassette name to read or write arbitrary .json files. Attackers can pass ",
+        "published": "2026-11-02T03:17:28.863"
+      },
+      {
+        "cve_id": "CVE-2026-120315",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "LobeHub Chat from 1.84.26 before 2.1.49 contains a path traversal vulnerability that allows authenticated users to write arbitrary files by supplying unsanitized file names to writeTempFile(). Attacke",
+        "published": "2026-11-02T03:17:29.457"
+      },
+      {
+        "cve_id": "CVE-2026-20558",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "In GPU pdma, there is a possible escalation of privilege due to use after free. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not",
+        "published": "2026-11-02T03:17:32.947"
+      },
+      {
+        "cve_id": "CVE-2026-20565",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "In Modem, there is a possible out of bounds write due to an incorrect bounds check. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is",
+        "published": "2026-11-02T03:17:33.830"
+      },
+      {
+        "cve_id": "CVE-2026-20591",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "In GPU pdma, there is a possible escalation of privilege due to a missing permission check. This could lead to local escalation of privilege with no additional execution privileges needed. User intera",
+        "published": "2026-11-02T03:17:36.537"
+      },
+      {
+        "cve_id": "CVE-2026-120324",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "A weakness has been identified in Aklivity Zilla up to 1.3.4/2.4.7/2.5.0-rc2. The affected element is the function Path.resolve of the file FileSystemServerFactory of the component http-filesystem Bin",
+        "published": "2026-11-02T03:17:30.157"
+      },
+      {
+        "cve_id": "CVE-2026-20559",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "In GPU pdma, there is a possible memory corruption due to use after free. This could lead to local escalation of privilege with User execution privileges needed. User interaction is not needed for exp",
+        "published": "2026-11-02T03:17:33.073"
+      },
+      {
+        "cve_id": "CVE-2026-120313",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Network-AI before 5.15.5 contains a path traversal vulnerability in InputSanitizer.sanitizePath() that allows attackers to escape the base directory using sibling-directory paths. Attackers can supply",
+        "published": "2026-11-02T03:17:29.053"
+      },
+      {
+        "cve_id": "CVE-2026-20499",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the atta",
+        "published": "2026-11-02T03:17:31.090"
+      },
+      {
+        "cve_id": "CVE-2026-20545",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "In Modem, there is a possible out of bounds write due to a missing bounds check. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the atta",
+        "published": "2026-11-02T03:17:31.257"
+      },
+      {
+        "cve_id": "CVE-2026-20546",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "In Modem, there is a possible out of bounds write due to an incorrect bounds check. This could lead to remote escalation of privilege, if a UE has connected to a rogue base station controlled by the a",
+        "published": "2026-11-02T03:17:31.390"
       }
     ]
   },
