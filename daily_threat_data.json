@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T15:37:18.755708+00:00",
+  "generated_at": "2026-11-03T21:21:17.533303+00:00",
   "threat_score": {
     "score": 6.5,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 32,
+        "value": 33,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
+        "value": 5,
         "score": 2.5,
         "max": 3
       },
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1766,
-    "recent_30d_count": 32,
+    "total_catalog_count": 1767,
+    "recent_30d_count": 33,
     "recent": [
+      {
+        "cve_id": "CVE-2026-119977",
+        "vendor": "WordPress",
+        "product": "WordPress Core",
+        "name": "WordPress WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability",
+        "date_added": "2026-11-03",
+        "due_date": "2026-11-06",
+        "description": "WordPress WordPress Core contains a time-of-check time-of-use (TOCTOU) race condition vulnerability that could allow unauthenticated attackers to execute code on the server during the upgrade window. ",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-118527",
         "vendor": "Ivanti",
@@ -224,163 +234,153 @@
         "due_date": "2026-10-19",
         "description": "BeyondTrust Remote Support contains an authentication bypass by spoofing vulnerability that could allow a remote attacker to perform file operations on the appliance.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2025-61624",
-        "vendor": "Fortinet",
-        "product": "Multiple Products",
-        "name": "Fortinet Multiple Products Path Traversal Vulnerability",
-        "date_added": "2026-10-16",
-        "due_date": "2026-10-19",
-        "description": "FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager contain a path traversal vulnerability that may allow an authenticated attacker with admin profile and at least read-write permissions to write or",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 485,
-    "critical_count": 6,
-    "high_count": 37,
+    "total": 692,
+    "critical_count": 5,
+    "high_count": 23,
     "cves": [
       {
-        "cve_id": "CVE-2026-77876",
+        "cve_id": "CVE-2026-86596",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Control Web Panel (CWP) before webpanel_version 1.16 contains an OS command injection vulnerability in the protected_directory user panel module that allows attackers to execute arbitrary commands by ",
-        "published": "2026-11-02T16:17:43.293"
+        "description": "The s2Member plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, <= 260927 via the 'item_name' parameter parameter. This is due to insufficient sanitizati",
+        "published": "2026-11-02T22:17:23.490"
       },
       {
-        "cve_id": "CVE-2026-106803",
+        "cve_id": "CVE-2026-120534",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "A stack-based buffer overflow exists in Kamailio v6.1.3 and v6.1.4 in the ims_registrar_pcscf module. When processing a crafted application/reginfo+xml NOTIFY message, process_contact() copies an atta",
-        "published": "2026-11-02T17:17:33.270"
+        "description": "The Advanced Custom Fields: Extended PRO plugin for WordPress is vulnerable to Limited Code Injection in all versions up to, and including, 0.9.2.6 via the render_field function. This is due to insuff",
+        "published": "2026-11-03T05:18:31.987"
       },
       {
-        "cve_id": "CVE-2026-102435",
+        "cve_id": "CVE-2026-4052",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "The Ultra Addons for Contact Form 7 plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the _getObjAttr function in all versions up to, and includ",
-        "published": "2026-11-02T20:17:26.287"
+        "description": "This issue only impacts deployments where WSO2 Identity Server is configured as a Resident Key Manager with database sharing. In such environments, a self-registered user may gain access to the System",
+        "published": "2026-11-03T08:17:15.530"
       },
       {
-        "cve_id": "CVE-2026-105769",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "kaniko before 1.25.20 can send a Microsoft Entra ID (Azure AD) access token for Azure Resource Manager to an attacker-controlled registry host. kaniko uses the Azure Container Registry credential help",
-        "published": "2026-11-02T17:17:32.670"
-      },
-      {
-        "cve_id": "CVE-2026-94290",
+        "cve_id": "CVE-2026-120518",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "SUSE Rancher Fleet clusters reference a kubeconfig secret that the controller uses to install and manage a Fleet agent on the target cluster. The controller did not sufficiently restrict which kubecon",
-        "published": "2026-11-02T16:17:45.190"
+        "description": "The BuddyPress XProfile Image Field plugin for WordPress is vulnerable to arbitrary file deletion in all versions up to, and including, 3.1.0. This is due to bpxp_image_field_update_on_user_activation",
+        "published": "2026-11-03T05:18:31.380"
       },
       {
-        "cve_id": "CVE-2026-88811",
+        "cve_id": "CVE-2026-13594",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Missing filtering in the SUSE\u00a0Rancher Manager meta proxy could cause passed in rancher credentials to be leaked to cloud providers. This affects SUSE Rancher 2.15.0 up to 2.15.3, 2.14.0 up to 2.14.7, ",
-        "published": "2026-11-02T17:17:45.793"
+        "description": "Zoho Corporation's ManageEngine Log360 and EventLog Analyzer versions 13062 and below are vulnerable to an issue that could allow an adversary to gain unauthorized access to the product.",
+        "published": "2026-11-03T08:17:15.203"
       },
       {
-        "cve_id": "CVE-2026-119085",
+        "cve_id": "CVE-2026-107441",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Improper neutralization of special elements used in a template engine in the publishing component of Amazon Virtual Engineering Workbench (VEW) could allow a remote authenticated third party to run ar",
-        "published": "2026-11-02T18:18:44.283"
+        "description": "An out-of-bounds write vulnerability in the CGI program of Zyxel GS1900-24E firmware versions through 2.90(AAHK.2)C0 could allow an unauthenticated adjacent attacker  to exploit the flaw and potential",
+        "published": "2026-11-03T02:16:52.617"
       },
       {
-        "cve_id": "CVE-2026-104080",
+        "cve_id": "CVE-2026-76955",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Control Web Panel (CWP) before webpanel_version 1.30 contains an OS command injection vulnerability in the loopback API /valid_token/ route that allows unauthenticated attackers to execute arbitrary c",
-        "published": "2026-11-02T16:17:22.740"
+        "base_score": 8.8,
+        "description": "A buffer overflow vulnerability in the zdp_wtp binary in Zyxel NWA110AX firmware versions through 7.12(ABTG.0)C0 could allow a LAN-based attacker to escalate privileges on an affected device.",
+        "published": "2026-11-03T02:16:53.720"
       },
       {
-        "cve_id": "CVE-2026-109140",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "The vulnerability is that Krill encrypts every login-session token with a nonce built from a counter that is reset to 0 on every Krill restart, so the same (key, nonce) pair is used again after each r",
-        "published": "2026-11-02T16:17:26.953"
-      },
-      {
-        "cve_id": "CVE-2026-109141",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "The vulnerability gives a role that is restricted to a list of CAs (cas = [...]) its full permission set for every request that is not tied to a CA, including the bulk import endpoint POST /api/v1/bul",
-        "published": "2026-11-02T16:17:27.120"
-      },
-      {
-        "cve_id": "CVE-2026-109142",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "When a CA's parent lives on the same Krill server: instead of building and verifying a signed CMS message, it runs the RFC 6492 provisioning exchange in-process and trusts the child identity (child_ha",
-        "published": "2026-11-02T16:17:27.267"
-      },
-      {
-        "cve_id": "CVE-2026-77877",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Control Web Panel (CWP) before webpanel_version 1.30 contains a missing authentication vulnerability that allows attackers able to reach the loopback API service to invoke root-privileged API routes w",
-        "published": "2026-11-02T16:17:43.473"
-      },
-      {
-        "cve_id": "CVE-2026-77878",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Control Web Panel (CWP) before webpanel_version 1.30 contains an OS command injection vulnerability in the loopback API database restore route /v1/restoredatabase/, where the restoreDBBackup() handler",
-        "published": "2026-11-02T16:17:43.640"
-      },
-      {
-        "cve_id": "CVE-2026-77880",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Control Web Panel (CWP) before webpanel_version 1.16 contains an OS command injection vulnerability in the loopback API password change route /newpass/, which runs as root. An attacker can inject arbi",
-        "published": "2026-11-02T16:17:43.973"
-      },
-      {
-        "cve_id": "CVE-2026-119736",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Attendo (formerly Petpooja Payroll) Admin Android application version 3.0.13 and earlier contains a hard-coded credentials vulnerability that allows attackers to extract production MQTT broker credent",
-        "published": "2026-11-02T19:18:02.537"
-      },
-      {
-        "cve_id": "CVE-2026-119733",
+        "cve_id": "CVE-2026-120538",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Munshi (by Petpooja) before 2026-07-07 contained a missing authorization vulnerability in its company deletion workflow at DELETE /api/companies/{company_id}, where the application fails to enforce th",
-        "published": "2026-11-02T19:18:02.037"
+        "description": "The Easy Digital Downloads plugin for WordPress is vulnerable to authentication bypass leading to administrator account takeover in all versions up to, and including, 3.7.2. During a PayPal guest chec",
+        "published": "2026-11-03T05:18:32.193"
       },
       {
-        "cve_id": "CVE-2026-119301",
+        "cve_id": "CVE-2026-120574",
         "severity": "HIGH",
-        "base_score": 7.9,
-        "description": "Improper neutralization of quoting syntax in SQL identifier construction in the Apache Iceberg write component in AWS SDK for pandas (also published as awswrangler) 3.5.2 through 3.17.0 might allow an",
-        "published": "2026-11-02T17:17:39.273"
+        "base_score": 8.1,
+        "description": "The SureCart plugin for WordPress is vulnerable to unauthenticated account takeover in all versions up to, and including, 4.9.5. The passwordless one-time-code login REST route (VerificationCodeContro",
+        "published": "2026-11-03T05:18:33.840"
       },
       {
-        "cve_id": "CVE-2026-99227",
+        "cve_id": "CVE-2026-120577",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The FluentCart A New Era of eCommerce \u2013 Faster, Lighter, and Simpler plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the deleteFile function i",
+        "published": "2026-11-03T05:18:34.257"
+      },
+      {
+        "cve_id": "CVE-2026-121022",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Use of Default Password (CWE-1393) in the web client in AxxonSoft Axxon One before 3.0.0 on Windows and Linux allows a remote unauthenticated attacker to log in as the built-in administrator with the ",
+        "published": "2026-11-03T09:17:11.980"
+      },
+      {
+        "cve_id": "CVE-2026-77691",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "ZohoCorp ManageEngine Key Manager Plus versions before 7151 allow authenticated users to enter malicious input when configuring a Microsoft CA",
+        "published": "2026-11-03T10:17:18.890"
+      },
+      {
+        "cve_id": "CVE-2026-99246",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ntipc: protect node reset trace dump with node lock\n\nThe tipc_node_reset_links trace event asks tipc_node_dump() to walk the\nnode's ",
+        "published": "2026-11-03T12:17:31.030"
+      },
+      {
+        "cve_id": "CVE-2026-120833",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nio_uring/waitid: prevent cancel reference wrap\n\nio_waitid packs the cancellation state into bit 31 of ->refs and uses\nbits 30:0 as ",
-        "published": "2026-11-02T16:17:47.420"
+        "description": "labbench before 0.46.1 contains a deserialization of untrusted data vulnerability in read() and read_relational() that passes any file with a .p or .pickle extension to pandas.read_pickle based on the",
+        "published": "2026-11-03T01:16:52.260"
       },
       {
-        "cve_id": "CVE-2026-99231",
+        "cve_id": "CVE-2026-77800",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nio_uring/waitid: own the request before clearing ->head\n\nio_waitid_remove_wq() only takes the wait queue lock if ->head is set.\nio_",
-        "published": "2026-11-02T16:17:48.060"
+        "base_score": 7.7,
+        "description": "ManageEngine Key Manager Plus versions before 7151 are vulnerable to a SAML authentication bypass that allows attackers to log in using SAML assertions meant for another service provider.",
+        "published": "2026-11-03T05:18:52.577"
       },
       {
-        "cve_id": "CVE-2026-99233",
+        "cve_id": "CVE-2026-120752",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ntracing/histograms: Verify event_call identity when updating synth_event refcount\n\nIn event_hist_trigger_parse() and hist_unreg_all",
-        "published": "2026-11-02T16:17:48.390"
+        "base_score": 7.5,
+        "description": "PyMuPDF 1.25.3 before 2.0 contains a stack-based buffer overflow vulnerability in JM_set_annot_callout_line() that copies a caller-supplied number of callout points into a fixed three-element stack ar",
+        "published": "2026-11-02T23:17:20.243"
+      },
+      {
+        "cve_id": "CVE-2026-120559",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Contact Form Extender for Divi Builder plugin for WordPress is vulnerable to Arbitrary File Deletion due to insufficient file path validation in the cfefd_remove_uploaded_file() function in all ve",
+        "published": "2026-11-03T05:18:33.230"
+      },
+      {
+        "cve_id": "CVE-2026-16900",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Zohocorp ManageEngine Log360 and EventLog Analyzer versions 13071 and below are vulnerable to an authentication bypass in local collector registration, allowing unauthenticated actor to register a loc",
+        "published": "2026-11-03T08:17:15.370"
+      },
+      {
+        "cve_id": "CVE-2026-120830",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "A flaw was found in libslirp in icmp_forward_error(). When building an ICMP error response, the length of the quoted original IPv4 packet was taken from the IP header without clamping it to the actual",
+        "published": "2026-11-03T00:17:18.947"
+      },
+      {
+        "cve_id": "CVE-2026-77799",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "ManageEngine Key Manager Plus versions before 7150 are vulnerable to a Two-Factor Authentication bypass that allows attackers with valid credentials to log in without a verification code.",
+        "published": "2026-11-03T05:18:52.380"
       }
     ]
   },
