@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-03T21:21:17.533303+00:00",
+  "generated_at": "2026-11-04T03:57:25.703819+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 5,
-        "score": 2.5,
+        "value": 4,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,17 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 692,
-    "critical_count": 5,
-    "high_count": 23,
+    "total": 801,
+    "critical_count": 4,
+    "high_count": 20,
     "cves": [
-      {
-        "cve_id": "CVE-2026-86596",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The s2Member plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, <= 260927 via the 'item_name' parameter parameter. This is due to insufficient sanitizati",
-        "published": "2026-11-02T22:17:23.490"
-      },
       {
         "cve_id": "CVE-2026-120534",
         "severity": "CRITICAL",
@@ -276,20 +269,6 @@
         "base_score": 9.1,
         "description": "Zoho Corporation's ManageEngine Log360 and EventLog Analyzer versions 13062 and below are vulnerable to an issue that could allow an adversary to gain unauthorized access to the product.",
         "published": "2026-11-03T08:17:15.203"
-      },
-      {
-        "cve_id": "CVE-2026-107441",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "An out-of-bounds write vulnerability in the CGI program of Zyxel GS1900-24E firmware versions through 2.90(AAHK.2)C0 could allow an unauthenticated adjacent attacker  to exploit the flaw and potential",
-        "published": "2026-11-03T02:16:52.617"
-      },
-      {
-        "cve_id": "CVE-2026-76955",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A buffer overflow vulnerability in the zdp_wtp binary in Zyxel NWA110AX firmware versions through 7.12(ABTG.0)C0 could allow a LAN-based attacker to escalate privileges on an affected device.",
-        "published": "2026-11-03T02:16:53.720"
       },
       {
         "cve_id": "CVE-2026-120538",
@@ -334,11 +313,18 @@
         "published": "2026-11-03T12:17:31.030"
       },
       {
-        "cve_id": "CVE-2026-120833",
+        "cve_id": "CVE-2026-99264",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "labbench before 0.46.1 contains a deserialization of untrusted data vulnerability in read() and read_relational() that passes any file with a .p or .pickle extension to pandas.read_pickle based on the",
-        "published": "2026-11-03T01:16:52.260"
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nio_uring/net: don't retry recv on uncommitted buffers\n\nCommit 41b70df5b38b (\"io_uring/net: commit partial buffers on retry\")\ncommit",
+        "published": "2026-11-03T12:17:33.490"
+      },
+      {
+        "cve_id": "CVE-2026-99269",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nsched_ext: Wait for SCX_OPSS_DISPATCHING before moving tasks off DSQs\n\nA task can be found on a non-local DSQ while the CPU which d",
+        "published": "2026-11-03T12:17:34.117"
       },
       {
         "cve_id": "CVE-2026-77800",
@@ -346,13 +332,6 @@
         "base_score": 7.7,
         "description": "ManageEngine Key Manager Plus versions before 7151 are vulnerable to a SAML authentication bypass that allows attackers to log in using SAML assertions meant for another service provider.",
         "published": "2026-11-03T05:18:52.577"
-      },
-      {
-        "cve_id": "CVE-2026-120752",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "PyMuPDF 1.25.3 before 2.0 contains a stack-based buffer overflow vulnerability in JM_set_annot_callout_line() that copies a caller-supplied number of callout points into a fixed three-element stack ar",
-        "published": "2026-11-02T23:17:20.243"
       },
       {
         "cve_id": "CVE-2026-120559",
@@ -369,18 +348,39 @@
         "published": "2026-11-03T08:17:15.370"
       },
       {
-        "cve_id": "CVE-2026-120830",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "A flaw was found in libslirp in icmp_forward_error(). When building an ICMP error response, the length of the quoted original IPv4 packet was taken from the IP header without clamping it to the actual",
-        "published": "2026-11-03T00:17:18.947"
-      },
-      {
         "cve_id": "CVE-2026-77799",
         "severity": "HIGH",
         "base_score": 7.4,
         "description": "ManageEngine Key Manager Plus versions before 7150 are vulnerable to a Two-Factor Authentication bypass that allows attackers with valid credentials to log in without a verification code.",
         "published": "2026-11-03T05:18:52.380"
+      },
+      {
+        "cve_id": "CVE-2026-120558",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The Advanced Shipment Tracking for WooCommerce plugin for WordPress is vulnerable to SQL Injection via the `tracking_provider` parameter of the `POST /wp-json/wc-ast/v3/orders/<order_id>/shipment-trac",
+        "published": "2026-11-03T05:18:33.030"
+      },
+      {
+        "cve_id": "CVE-2026-105978",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "Improper input validation in management control functions may allow a remote attacker with high privileges to inject operating system commands and execute them with root privileges.",
+        "published": "2026-11-03T09:17:09.747"
+      },
+      {
+        "cve_id": "CVE-2026-105979",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "Improper input validation in the ZeroTier VPN function may allow a remote attacker with high privileges to inject system commands and execute them with root privileges.",
+        "published": "2026-11-03T09:17:09.930"
+      },
+      {
+        "cve_id": "CVE-2026-105980",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "Improper input validation in the WireGuard VPN function may allow a remote attacker with high privileges to inject system commands and execute them with root privileges.",
+        "published": "2026-11-03T09:17:10.073"
       }
     ]
   },
