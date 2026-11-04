@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-04T03:57:25.703819+00:00",
+  "generated_at": "2026-11-04T11:49:55.379330+00:00",
   "threat_score": {
-    "score": 6.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.0,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 0,
+        "score": 1.0,
         "max": 3
       },
       {
@@ -238,72 +238,30 @@
     ]
   },
   "nvd": {
-    "total": 801,
-    "critical_count": 4,
-    "high_count": 20,
+    "total": 838,
+    "critical_count": 0,
+    "high_count": 16,
     "cves": [
       {
-        "cve_id": "CVE-2026-120534",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Advanced Custom Fields: Extended PRO plugin for WordPress is vulnerable to Limited Code Injection in all versions up to, and including, 0.9.2.6 via the render_field function. This is due to insuff",
-        "published": "2026-11-03T05:18:31.987"
-      },
-      {
-        "cve_id": "CVE-2026-4052",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "This issue only impacts deployments where WSO2 Identity Server is configured as a Resident Key Manager with database sharing. In such environments, a self-registered user may gain access to the System",
-        "published": "2026-11-03T08:17:15.530"
-      },
-      {
-        "cve_id": "CVE-2026-120518",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The BuddyPress XProfile Image Field plugin for WordPress is vulnerable to arbitrary file deletion in all versions up to, and including, 3.1.0. This is due to bpxp_image_field_update_on_user_activation",
-        "published": "2026-11-03T05:18:31.380"
-      },
-      {
-        "cve_id": "CVE-2026-13594",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Zoho Corporation's ManageEngine Log360 and EventLog Analyzer versions 13062 and below are vulnerable to an issue that could allow an adversary to gain unauthorized access to the product.",
-        "published": "2026-11-03T08:17:15.203"
-      },
-      {
-        "cve_id": "CVE-2026-120538",
+        "cve_id": "CVE-2026-76124",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Easy Digital Downloads plugin for WordPress is vulnerable to authentication bypass leading to administrator account takeover in all versions up to, and including, 3.7.2. During a PayPal guest chec",
-        "published": "2026-11-03T05:18:32.193"
+        "base_score": 8.8,
+        "description": "The BuddyBoss App plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 3.2.1 via the send_feedback function. This is due to insufficient file type validati",
+        "published": "2026-11-03T13:17:23.413"
       },
       {
-        "cve_id": "CVE-2026-120574",
+        "cve_id": "CVE-2026-120572",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The SureCart plugin for WordPress is vulnerable to unauthenticated account takeover in all versions up to, and including, 4.9.5. The passwordless one-time-code login REST route (VerificationCodeContro",
-        "published": "2026-11-03T05:18:33.840"
+        "base_score": 8.8,
+        "description": "Incorrect boundary conditions in the Layout: Block and Inline component. This vulnerability was fixed in Firefox 159.0.1.",
+        "published": "2026-11-03T14:17:35.447"
       },
       {
-        "cve_id": "CVE-2026-120577",
+        "cve_id": "CVE-2026-85035",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The FluentCart A New Era of eCommerce \u2013 Faster, Lighter, and Simpler plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the deleteFile function i",
-        "published": "2026-11-03T05:18:34.257"
-      },
-      {
-        "cve_id": "CVE-2026-121022",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Use of Default Password (CWE-1393) in the web client in AxxonSoft Axxon One before 3.0.0 on Windows and Linux allows a remote unauthenticated attacker to log in as the built-in administrator with the ",
-        "published": "2026-11-03T09:17:11.980"
-      },
-      {
-        "cve_id": "CVE-2026-77691",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "ZohoCorp ManageEngine Key Manager Plus versions before 7151 allow authenticated users to enter malicious input when configuring a Microsoft CA",
-        "published": "2026-11-03T10:17:18.890"
+        "base_score": 8.8,
+        "description": "The can_add_rx_filter_msgq() system call installs a CAN RX filter whose callback (can_msgq_put() in drivers/can/can_common.c) is handed the caller's struct k_msgq * as user_data. The controller driver",
+        "published": "2026-11-03T14:17:39.290"
       },
       {
         "cve_id": "CVE-2026-99246",
@@ -311,6 +269,20 @@
         "base_score": 8.1,
         "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ntipc: protect node reset trace dump with node lock\n\nThe tipc_node_reset_links trace event asks tipc_node_dump() to walk the\nnode's ",
         "published": "2026-11-03T12:17:31.030"
+      },
+      {
+        "cve_id": "CVE-2026-99270",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\ntcp: Fix potential UAF in reqsk_timer_handler().\n\nWhen TCP socket migration fails at inet_ehash_insert() in\nreqsk_timer_handler(), ",
+        "published": "2026-11-03T13:17:24.097"
+      },
+      {
+        "cve_id": "CVE-2026-121419",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "SurrealDB from 3.1.0 before 3.3.0 contains an improper authentication vulnerability where the MCP BoundSubject fingerprint uses the access method name instead of per-user identity for JWT/Bearer acces",
+        "published": "2026-11-03T15:17:31.953"
       },
       {
         "cve_id": "CVE-2026-99264",
@@ -327,60 +299,88 @@
         "published": "2026-11-03T12:17:34.117"
       },
       {
-        "cve_id": "CVE-2026-77800",
+        "cve_id": "CVE-2026-121417",
         "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "ManageEngine Key Manager Plus versions before 7151 are vulnerable to a SAML authentication bypass that allows attackers to log in using SAML assertions meant for another service provider.",
-        "published": "2026-11-03T05:18:52.577"
+        "base_score": 7.8,
+        "description": "SurrealDB before 3.3.0 contains a use-after-free vulnerability in surrealdb-core KV backends that pass borrowed transaction state into affinitypool::spawn_local closures relying on future Drop for saf",
+        "published": "2026-11-03T15:17:31.553"
       },
       {
-        "cve_id": "CVE-2026-120559",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Contact Form Extender for Divi Builder plugin for WordPress is vulnerable to Arbitrary File Deletion due to insufficient file path validation in the cfefd_remove_uploaded_file() function in all ve",
-        "published": "2026-11-03T05:18:33.230"
-      },
-      {
-        "cve_id": "CVE-2026-16900",
+        "cve_id": "CVE-2026-118489",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Zohocorp ManageEngine Log360 and EventLog Analyzer versions 13071 and below are vulnerable to an authentication bypass in local collector registration, allowing unauthenticated actor to register a loc",
-        "published": "2026-11-03T08:17:15.370"
+        "description": "In Eclipse Vert.x versions [4.0.0,4.5.35] or [5.0.0,5.2.2], when one\u00a0`CachingWebClient`\u00a0is shared across users \u2014 the documented pattern of a per-user\u00a0`WebClientSession`\u00a0over a shared caching client \u2014 ",
+        "published": "2026-11-03T15:17:24.780"
       },
       {
-        "cve_id": "CVE-2026-77799",
+        "cve_id": "CVE-2026-121386",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "FreeRDP before 3.32.2 contains a denial of service vulnerability in WinPR's winpr_read_png_from_buffer() and winpr_convert_from_jpeg(), which lack libpng/libjpeg error handling. A malicious RDP server",
+        "published": "2026-11-03T15:17:25.543"
+      },
+      {
+        "cve_id": "CVE-2026-121392",
         "severity": "HIGH",
         "base_score": 7.4,
-        "description": "ManageEngine Key Manager Plus versions before 7150 are vulnerable to a Two-Factor Authentication bypass that allows attackers with valid credentials to log in without a verification code.",
-        "published": "2026-11-03T05:18:52.380"
+        "description": "FreeRDP before 3.32.2 contains an improper certificate validation vulnerability in tls_verify_certificate() that accepts Common Name fallback despite non-matching SAN entries and matches IP literals a",
+        "published": "2026-11-03T15:17:26.710"
       },
       {
-        "cve_id": "CVE-2026-120558",
+        "cve_id": "CVE-2026-119742",
         "severity": "HIGH",
         "base_score": 7.2,
-        "description": "The Advanced Shipment Tracking for WooCommerce plugin for WordPress is vulnerable to SQL Injection via the `tracking_provider` parameter of the `POST /wp-json/wc-ast/v3/orders/<order_id>/shipment-trac",
-        "published": "2026-11-03T05:18:33.030"
+        "description": "Nagios XI before 2026R2 contains an OS command injection vulnerability in the MIB upload feature where the install_mib() function in mibs.php sanitizes uploaded filenames with an incomplete character-",
+        "published": "2026-11-03T14:17:34.843"
       },
       {
-        "cve_id": "CVE-2026-105978",
+        "cve_id": "CVE-2026-106991",
         "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "Improper input validation in management control functions may allow a remote attacker with high privileges to inject operating system commands and execute them with root privileges.",
-        "published": "2026-11-03T09:17:09.747"
+        "base_score": 7.1,
+        "description": "hustoj >=24.09.10 and <=26.08.19 is vulnerable to Incorrect Access Control. Any registered user can delete, lock, or sticky any forum thread (including admins' announcements) via threadadmin.php. The ",
+        "published": "2026-11-03T15:17:19.590"
       },
       {
-        "cve_id": "CVE-2026-105979",
+        "cve_id": "CVE-2026-121416",
         "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "Improper input validation in the ZeroTier VPN function may allow a remote attacker with high privileges to inject system commands and execute them with root privileges.",
-        "published": "2026-11-03T09:17:09.930"
+        "base_score": 7.1,
+        "description": "SurrealDB 2.0.0 before 3.3.1 does not enforce --deny-funcs restrictions on method-style function calls in the streaming engine, because MethodPart::evaluate invokes resolved functions without a capabi",
+        "published": "2026-11-03T15:17:31.367"
       },
       {
-        "cve_id": "CVE-2026-105980",
+        "cve_id": "CVE-2026-119179",
         "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "Improper input validation in the WireGuard VPN function may allow a remote attacker with high privileges to inject system commands and execute them with root privileges.",
-        "published": "2026-11-03T09:17:10.073"
+        "base_score": 7.0,
+        "description": "A flaw in the connection management layer of the MongoDB Node.js driver can leave a pooled network connection in the pool for reuse while data from an earlier operation is still outstanding on it. In ",
+        "published": "2026-11-03T14:17:33.617"
+      },
+      {
+        "cve_id": "CVE-2026-85034",
+        "severity": "MEDIUM",
+        "base_score": 6.7,
+        "description": "The Bluetooth host's GATT client passed the value of a received Handle Value Notification, Handle Value Indication or Multiple Handle Value Notification to bt_gatt_subscribe_params::notify callbacks u",
+        "published": "2026-11-03T14:17:39.100"
+      },
+      {
+        "cve_id": "CVE-2026-121458",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Instatic before 0.0.21 contains a missing authorization vulnerability in its AI/MCP content read tools that allows low-privileged authenticated users with ai.chat and content.edit.own capabilities to ",
+        "published": "2026-11-03T13:17:21.997"
+      },
+      {
+        "cve_id": "CVE-2026-110265",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "A specially crafted malformed search query could return results from outside a user's organization. Log analysis of runZero's hosted environment found only testing of the issue and no adversary traffi",
+        "published": "2026-11-03T15:17:23.297"
+      },
+      {
+        "cve_id": "CVE-2026-121388",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "FreeRDP from 3.0.0 before 3.32.2 contains an uncontrolled resource allocation vulnerability that allows malicious RDP servers to force large client allocations through the DRDYNVC DATA_FIRST Length fi",
+        "published": "2026-11-03T15:17:25.970"
       }
     ]
   },
