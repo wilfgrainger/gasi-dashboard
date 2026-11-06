@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-11-06T18:40:59.849328+00:00",
+  "generated_at": "2026-11-06T23:52:31.283995+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 34,
+        "value": 35,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
-        "score": 2.5,
+        "value": 12,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1768,
-    "recent_30d_count": 34,
+    "total_catalog_count": 1769,
+    "recent_30d_count": 35,
     "recent": [
+      {
+        "cve_id": "CVE-2026-19868",
+        "vendor": "SonicWall",
+        "product": "SonicOS SSLVPN",
+        "name": "SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability",
+        "date_added": "2026-11-06",
+        "due_date": "2026-11-20",
+        "description": "SonicWall SonicOS SSLVPN contains a use of single-factor authentication vulnerability that may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication ",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2024-27834",
         "vendor": "Apple",
@@ -224,163 +234,153 @@
         "due_date": "2026-11-03",
         "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to include a full URL in the 'protocol' parameter and force the",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-110936",
-        "vendor": "Siemens",
-        "product": "Software Center",
-        "name": "Siemens Software Center Uncontrolled Search Path Element Vulnerability",
-        "date_added": "2026-10-20",
-        "due_date": "2026-11-03",
-        "description": "Siemens Software Center contains an uncontrolled search path element vulnerability that could allow an authenticated local attacker to place a specially crafted DLL in a directory that the application",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 507,
-    "critical_count": 6,
-    "high_count": 47,
+    "total": 465,
+    "critical_count": 12,
+    "high_count": 24,
     "cves": [
       {
-        "cve_id": "CVE-2026-71550",
+        "cve_id": "CVE-2026-118423",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the workflow controller uses a path-traversal-capable aow_action v",
-        "published": "2026-11-05T19:17:26.357"
+        "base_score": 10.0,
+        "description": "The WP Libre Form WordPress plugin 1.5.0.1 does not validate the type of files uploaded through its form submissions, allowing unauthenticated attackers to upload PHP files to a web-accessible locatio",
+        "published": "2026-11-06T08:17:18.550"
       },
       {
-        "cve_id": "CVE-2026-123198",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "LMFDB before commit 01829bd contains a server-side template injection vulnerability in the render_knowl function that allows unauthenticated attackers to inject Jinja expressions via request parameter",
-        "published": "2026-11-05T19:17:18.393"
-      },
-      {
-        "cve_id": "CVE-2026-116779",
+        "cve_id": "CVE-2026-110955",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software implementation that runs on any commodity hardware. Prior to 1.11.3, ",
-        "published": "2026-11-05T20:17:44.790"
+        "description": "The Wurdey WordPress plugin through 1.0.0 does not verify a request signature before logging a user in, allowing unauthenticated attackers to authenticate as an administrator knowing only the administ",
+        "published": "2026-11-06T06:16:39.830"
       },
       {
-        "cve_id": "CVE-2026-102940",
+        "cve_id": "CVE-2026-113584",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "OpenEMR is a free and open source electronic health records and medical practice management application. Prior to 8.4.0, controllers/C_Document.class.php write actions, including move_action_process()",
-        "published": "2026-11-05T20:17:37.543"
+        "base_score": 9.8,
+        "description": "The placester WordPress plugin through 1.4.3 does not perform any capability, nonce or ownership check on an AJAX action that updates account details, allowing unauthenticated attackers to overwrite a",
+        "published": "2026-11-06T06:16:39.943"
       },
       {
-        "cve_id": "CVE-2026-116785",
+        "cve_id": "CVE-2026-113615",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The GS JWT Authentication for WP REST API WordPress plugin through 1.0.0 does not sanitize or parameterize a request value before using it in SQL queries on several unauthenticated REST routes, allowi",
+        "published": "2026-11-06T06:16:40.053"
+      },
+      {
+        "cve_id": "CVE-2026-115230",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The WHIZZ WordPress plugin through 1.1.8 does not validate the password-reset key before updating a user's password, relying only on a nonce that is exposed to unauthenticated visitors, allowing attac",
+        "published": "2026-11-06T06:16:40.270"
+      },
+      {
+        "cve_id": "CVE-2026-116533",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Static Snapshot WordPress plugin through 0.2.1 does not sanitise shell metacharacters in a user-supplied value before concatenating it into operating-system commands run by the server, allowing un",
+        "published": "2026-11-06T06:16:40.480"
+      },
+      {
+        "cve_id": "CVE-2026-119516",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Deserialization of Untrusted Data vulnerability in Mamunur Rashid Radius Booking \u2014 Booking Calendar for Appointments &amp; Services radius-booking allows Object Injection.This issue affects Radius Boo",
+        "published": "2026-11-06T08:17:19.227"
+      },
+      {
+        "cve_id": "CVE-2026-120844",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Incorrect Privilege Assignment vulnerability in miniOrange OAuth Single Sign On \u2013 SSO (OAuth Client) miniorange-login-with-eve-online-google-facebook allows Privilege Escalation.This issue affects OAu",
+        "published": "2026-11-06T08:17:19.657"
+      },
+      {
+        "cve_id": "CVE-2026-83493",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software implementation that runs on any commodity hardware. Prior to 1.11.2, ",
-        "published": "2026-11-05T20:17:45.730"
+        "description": "A flaw was found in distributed-workloads. A remote attacker could exploit a vulnerability in the pull_request_target workflow by submitting a specially crafted pull request. This workflow processes u",
+        "published": "2026-11-06T07:17:52.420"
       },
       {
-        "cve_id": "CVE-2026-116790",
+        "cve_id": "CVE-2026-88800",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software implementation that runs on any commodity hardware. Prior to 1.11.2, ",
-        "published": "2026-11-05T20:17:46.557"
+        "description": "The MDJM Event Management and Mobile Events Manager WordPress plugins through 1.7.8.7 act on a role deletion request on every page load with no capability check and no nonce, and the guard meant to pr",
+        "published": "2026-11-06T08:17:38.283"
       },
       {
-        "cve_id": "CVE-2026-100363",
+        "cve_id": "CVE-2026-63017",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "Incorrect authorization in PowerSYSTEM Center allows a low-privileged, authenticated user to access resources normally limited to administrators.",
+        "published": "2026-11-06T01:17:50.297"
+      },
+      {
+        "cve_id": "CVE-2026-63774",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "Insufficient input validation in the PowerSYSTEM Center report designer allows an authenticated user to execute unauthorized SQL commands.",
+        "published": "2026-11-06T01:17:50.470"
+      },
+      {
+        "cve_id": "CVE-2026-110525",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the V8 module API exposes CRUD operations for administrator-only m",
-        "published": "2026-11-05T19:16:58.207"
+        "description": "The MCB  WordPress plugin through 1.0.0 does not sanitise or escape request header values before storing them and later rendering them in the administrator statistics grid, allowing unauthenticated at",
+        "published": "2026-11-06T06:16:39.460"
       },
       {
-        "cve_id": "CVE-2026-100365",
+        "cve_id": "CVE-2026-87784",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, AOR report generation concatenates an attacker-controlled stored f",
-        "published": "2026-11-05T19:16:59.133"
+        "description": "The Cool Media Filter WordPress plugin through 1.0.1 does not perform any capability or nonce check when updating the capabilities of a role, allowing any authenticated user, such as a subscriber, to ",
+        "published": "2026-11-06T06:16:44.363"
       },
       {
-        "cve_id": "CVE-2026-123208",
+        "cve_id": "CVE-2026-88799",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "noname Electron desktop build v1.11.2 through v1.11.6.1 contains an unauthenticated local file server with wildcard CORS that allows malicious websites to read, overwrite, or delete installation files",
-        "published": "2026-11-05T19:17:20.380"
+        "description": "The MDJM Event Management and Mobile Events Manager WordPress plugins through 1.7.8.7 do not check ownership or capability on the identifier supplied to their client profile update, allowing any authe",
+        "published": "2026-11-06T08:17:38.130"
       },
       {
-        "cve_id": "CVE-2026-63214",
+        "cve_id": "CVE-2026-119432",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, legacy REST methods append an authenticated caller's query paramet",
-        "published": "2026-11-05T19:17:23.557"
+        "base_score": 8.7,
+        "description": "A stored cross-site scripting (XSS) vulnerability exists in the Foxit Workspace's file share preview functionality. An attacker could upload a crafted file and share it with a victim. When the victim ",
+        "published": "2026-11-06T05:18:20.830"
       },
       {
-        "cve_id": "CVE-2026-69134",
+        "cve_id": "CVE-2026-118045",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the REST v4 JSON handler reads the pre-filter RAW_REQUEST value an",
-        "published": "2026-11-05T19:17:24.533"
+        "base_score": 8.7,
+        "description": "The Ever Accounting  WordPress plugin before 2.3.3 does not restrict the file path supplied to its CSV import routine to an allowed directory, allowing users with its custom Accounting Manager role (w",
+        "published": "2026-11-06T06:16:40.593"
       },
       {
-        "cve_id": "CVE-2026-69142",
+        "cve_id": "CVE-2026-110532",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the jjwg_Maps map marker endpoint uses the authenticated caller's ",
-        "published": "2026-11-05T19:17:25.660"
+        "base_score": 8.6,
+        "description": "The Mail Mage WordPress plugin through 0.0.25 does not properly sanitise and escape a user-supplied value before using it in a SQL statement, allowing unauthenticated attackers to perform SQL injectio",
+        "published": "2026-11-06T06:16:39.597"
       },
       {
-        "cve_id": "CVE-2026-71548",
+        "cve_id": "CVE-2026-33379",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, AOR_Report::build_report_query_where incorporates a report editor'",
-        "published": "2026-11-05T19:17:26.183"
+        "base_score": 8.5,
+        "description": "A user with any role, including Viewer or a service account with no permissions, can create, externally publish, and delete dashboard snapshots (missing authorization). Only Grafana OSS and Grafana En",
+        "published": "2026-11-06T10:16:37.943"
       },
       {
-        "cve_id": "CVE-2026-97377",
+        "cve_id": "CVE-2026-120408",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the legacy SOAP portal method portal_get_entry_list propagates cal",
-        "published": "2026-11-05T19:17:29.280"
-      },
-      {
-        "cve_id": "CVE-2026-116786",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software implementation that runs on any commodity hardware. Prior to 1.11.2, ",
-        "published": "2026-11-05T20:17:45.900"
-      },
-      {
-        "cve_id": "CVE-2026-61648",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, a user-controllable Multi report condition passes parameter_value ",
-        "published": "2026-11-05T19:17:22.203"
-      },
-      {
-        "cve_id": "CVE-2026-61651",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the get_end_date action in Projects Controller concatenates an aut",
-        "published": "2026-11-05T19:17:22.737"
-      },
-      {
-        "cve_id": "CVE-2026-61653",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, modules/Campaigns/PopupCampaignRoi.php interpolates $_REQUEST['id'",
-        "published": "2026-11-05T19:17:22.937"
-      },
-      {
-        "cve_id": "CVE-2026-63215",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, the REST API v4.1 get_entry_list method is vulnerable to time-base",
-        "published": "2026-11-05T19:17:23.750"
-      },
-      {
-        "cve_id": "CVE-2026-69140",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "SuiteCRM is an open-source, enterprise-ready Customer Relationship Management (CRM) software application. Prior to 7.15.2 and 8.10.2, GetLatestRevision.php interpolates get_latest_for_id directly into",
-        "published": "2026-11-05T19:17:25.313"
+        "base_score": 8.0,
+        "description": "The All-in-One Video Gallery  WordPress plugin before 5.1.0 does not escape a video's stored thumbnail URL before outputting it in the admin video list, and does not sanitise that value when it is wri",
+        "published": "2026-11-06T06:16:41.790"
       }
     ]
   },
