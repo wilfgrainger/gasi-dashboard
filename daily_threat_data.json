@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-06T00:36:45.379534+00:00",
+  "generated_at": "2026-11-06T11:41:20.118708+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
-        "score": 2.5,
+        "value": 3,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 675,
-    "critical_count": 7,
-    "high_count": 18,
+    "total": 724,
+    "critical_count": 3,
+    "high_count": 20,
     "cves": [
       {
-        "cve_id": "CVE-2026-122303",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Kyverno from 1.17.0 before 1.19.2 contains an authorization bypass vulnerability that allows namespace tenants to overwrite resources in other namespaces via NamespacedMutatingPolicy mutate-existing t",
-        "published": "2026-11-05T03:17:22.197"
-      },
-      {
-        "cve_id": "CVE-2026-122304",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Kyverno from 1.17.0 before 1.19.2 contains an authorization bypass vulnerability that allows namespace admins to escape namespace confinement because the cleanup controller builds its context loader w",
-        "published": "2026-11-05T03:17:22.353"
-      },
-      {
-        "cve_id": "CVE-2026-122310",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Kyverno from 1.19.1 before 1.19.2 validates a Policy's context.apiCall urlPath after cleaning it but executes the raw path, whose fragment or query the Kubernetes client discards. A namespace-scoped u",
-        "published": "2026-11-05T03:17:23.337"
-      },
-      {
-        "cve_id": "CVE-2026-122311",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Kyverno from 1.16.0 before 1.19.2 fails to validate path segments in the resource argument of resource.get() and resource.post(), allowing namespaced CEL policies to escape their namespace. Tenants wh",
-        "published": "2026-11-05T03:17:23.497"
-      },
-      {
-        "cve_id": "CVE-2026-122313",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Kyverno from 1.17.0 before 1.19.2 contains a privilege escalation vulnerability that allows namespace-scoped tenants to modify resources in other namespaces through NamespacedMutatingPolicy targetMatc",
-        "published": "2026-11-05T03:17:23.853"
-      },
-      {
-        "cve_id": "CVE-2026-122302",
+        "cve_id": "CVE-2026-82907",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Kyverno before 1.19.2 contains a privilege escalation vulnerability that allows namespace admins to create resources beyond their RBAC because generate-rule admission checks verify the controller's pe",
-        "published": "2026-11-05T03:17:22.030"
+        "description": "Authentication Bypass by Capture-replay in ExternalLoginKeysManager in Apache OFBiz 24.09 before 24.09.08 on all platforms allows a remote unauthenticated attacker who captures a live externalLoginKey",
+        "published": "2026-11-05T14:17:05.700"
       },
       {
-        "cve_id": "CVE-2026-122321",
+        "cve_id": "CVE-2026-83542",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Improper Control of Generation of Code ('Code Injection') in Apache OFBiz 24.09 before 24.09.08 on all platforms allows a remote unauthenticated attacker to execute arbitrary code on the server by sta",
+        "published": "2026-11-05T14:17:06.820"
+      },
+      {
+        "cve_id": "CVE-2026-117691",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Kyverno 1.18.0 before 1.19.2 contains a signature verification bypass in verifyImages because cached verification results are keyed by the image reference string (such as a tag) rather than bound to t",
-        "published": "2026-11-05T03:17:25.023"
+        "description": "A flaw was found in the SAML HTTP-Redirect binding implementation of Keycloak. The issue occurs because the server processes percent-encoded parameter names (like %53AMLResponse) while the signature v",
+        "published": "2026-11-05T14:17:01.320"
       },
       {
-        "cve_id": "CVE-2026-118193",
+        "cve_id": "CVE-2026-82910",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The GiveWP \u2013 Donation Plugin and Fundraising Platform plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 4.19.1 via the `donor_default_user_role` paramete",
-        "published": "2026-11-05T05:18:19.427"
+        "description": "Improper Neutralization of Special Elements Used in a Template Engine ('Server-Side Template Injection') in MacroScreenRenderer in Apache OFBiz 24.09 before 24.09.08 on all platforms allows a remote a",
+        "published": "2026-11-05T14:17:05.860"
       },
       {
-        "cve_id": "CVE-2026-122308",
+        "cve_id": "CVE-2026-82912",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Kyverno before 1.19.2 contains an authorization bypass vulnerability in the Generation Handler that allows users with create/update permissions to trigger synchronized generate policies by spoofing in",
-        "published": "2026-11-05T03:17:23.000"
+        "base_score": 8.8,
+        "description": "Improper Neutralization of Special Elements Used in an Expression Language Statement ('Expression Language Injection') in EmailServices in Apache OFBiz 24.09 before 24.09.08 on all platforms allows a ",
+        "published": "2026-11-05T14:17:06.200"
       },
       {
-        "cve_id": "CVE-2026-122316",
+        "cve_id": "CVE-2026-82960",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Kyverno from 1.17.0 before 1.19.2 contains a missing authorization vulnerability in the mutate-existing background processor that allows namespaced tenants to modify resources outside their namespace.",
-        "published": "2026-11-05T03:17:24.360"
+        "base_score": 8.8,
+        "description": "Improper Control of Generation of Code ('Code Injection') in ModelFormField in the Apache OFBiz cms plugin before 24.09.08 on all platforms allows a remote authenticated attacker holding only CMS cont",
+        "published": "2026-11-05T14:17:06.540"
       },
       {
-        "cve_id": "CVE-2026-93389",
+        "cve_id": "CVE-2026-84183",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "The LiteSpeed Cache plugin for WordPress is vulnerable to unauthenticated disclosure of sensitive WooCommerce customer data in all versions up to, and including, 7.9.1 With Cache REST enabled (the shi",
-        "published": "2026-11-05T05:18:40.127"
+        "base_score": 8.8,
+        "description": "Incorrect Authorization in the updateLayout simple-method in applications/content/minilang/layout/LayoutEvents.xml in Apache OFBiz 24.09 before 24.09.08 on all platforms allows a remote authenticated ",
+        "published": "2026-11-05T14:17:06.953"
       },
       {
-        "cve_id": "CVE-2026-116617",
+        "cve_id": "CVE-2026-119744",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Cendio ThinLinc contains an improper authentication vulnerability in its browser-based web client (tlwebaccess) that allows an authenticated attacker to impersonate any other user, including root, by ",
+        "published": "2026-11-05T15:17:20.557"
+      },
+      {
+        "cve_id": "CVE-2026-123018",
+        "severity": "HIGH",
+        "base_score": 8.3,
+        "description": "A security flaw has been discovered in eosphoros-ai DB-GPT up to 0.8.2. This issue affects the function execute_code of the file code_utils.py of the component CodeAction. Performing a manipulation re",
+        "published": "2026-11-05T12:17:49.940"
+      },
+      {
+        "cve_id": "CVE-2026-71901",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "The Motors \u2013 Car Dealership & Classified Listings Plugin plugin for WordPress is vulnerable to File Deletion in all versions up to, and including, 1.4.128 The vulnerability exists because `stm_save_us",
-        "published": "2026-11-05T05:18:19.240"
+        "description": "Improper Control of Resource Identifiers ('Resource Injection') vulnerability in Apache OFBiz.\n\n\n\nAn authenticate user with access to sfa component can override the service to use on vcard import and ",
+        "published": "2026-11-05T15:17:22.220"
       },
       {
-        "cve_id": "CVE-2026-122305",
+        "cve_id": "CVE-2026-107912",
         "severity": "HIGH",
         "base_score": 7.7,
-        "description": "Kyverno before 1.19.2 contains a denial of service vulnerability in substituteVariablesIfAny that allows low-privileged users to hang the admission webhook via self-referential variable templates. Att",
-        "published": "2026-11-05T03:17:22.527"
+        "description": "A flaw was found in the management interface of the Quarkus framework, specifically within the quarkus-vertx-http component. The issue occurs when the framework incorrectly combines the management roo",
+        "published": "2026-11-05T14:16:59.697"
       },
       {
-        "cve_id": "CVE-2026-122306",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Kyverno before 1.19.2 contains a denial of service vulnerability that allows namespaced policy authors to exhaust admission controller CPU by submitting pathological wildcard patterns. Attackers can c",
-        "published": "2026-11-05T03:17:22.680"
-      },
-      {
-        "cve_id": "CVE-2026-122307",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Kyverno before 1.19.2 contains a policy bypass vulnerability in the admissionpolicygenerator controller, which folds PolicyExceptions into generated ValidatingAdmissionPolicies while ignoring the --en",
-        "published": "2026-11-05T03:17:22.840"
-      },
-      {
-        "cve_id": "CVE-2026-122312",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Kyverno from 1.19.1 before 1.19.2 contains a namespace isolation bypass in APICall Fetch() in pkg/engine/apicall/apiCall.go because path.Clean treats '?' as a path character, letting the namespace reg",
-        "published": "2026-11-05T03:17:23.653"
-      },
-      {
-        "cve_id": "CVE-2026-122318",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Kyverno before 1.19.2 contains an authentication bypass in matchCertificateData that skips verifyImages subject and subjectRegExp checks when the signing certificate has no Subject Alternative Name. A",
-        "published": "2026-11-05T03:17:24.523"
-      },
-      {
-        "cve_id": "CVE-2026-122320",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Kyverno before 1.19.2 contains a missing authorization vulnerability that allows namespaced Policy authors to read resources in other namespaces by templating generate.clone or cloneList namespace val",
-        "published": "2026-11-05T03:17:24.867"
-      },
-      {
-        "cve_id": "CVE-2026-122314",
+        "cve_id": "CVE-2026-123047",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Kyverno before 1.19.2 contains an unchecked type assertion in its variable-substitution engine that allows users who can submit resources to crash the policy engine. Attackers can submit resources wit",
-        "published": "2026-11-05T03:17:24.037"
+        "description": "In Eclipse BaSyx Helm Charts versions 3.0.0-rc.1 to 3.12.1 of the `basyx` chart, deployments with the bundled Keycloak enabled store the passwords of the Keycloak users that the chart creates in clear",
+        "published": "2026-11-05T13:17:07.493"
       },
       {
-        "cve_id": "CVE-2026-122315",
+        "cve_id": "CVE-2026-104720",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Kyverno before 1.19.2 contains an unchecked type assertion in buildStatementMap that allows unauthenticated attackers to crash the policy engine via crafted attestation statements. Attackers can push ",
-        "published": "2026-11-05T03:17:24.200"
+        "description": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Kobikom Telecommunications and Informatics Services Inc. Kobikom allows Path Traversal.\n\nThis issue affe",
+        "published": "2026-11-05T14:16:59.003"
+      },
+      {
+        "cve_id": "CVE-2026-105321",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability in Kobikom Telecommunications and Informatics Services Inc. Kobikom allows SQL Injection.\n\nThis issue",
+        "published": "2026-11-05T14:16:59.153"
+      },
+      {
+        "cve_id": "CVE-2026-123059",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "In Eclipse BaSyx Helm Charts version 2.2.0 of the `aas-basyx-v2-full` chart, deployments with the bundled Keycloak enabled store the client secret of the `basyx-technical-user` OAuth2 client in cleart",
+        "published": "2026-11-05T14:17:04.940"
+      },
+      {
+        "cve_id": "CVE-2026-82904",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Uncontrolled Resource Consumption in ServiceMultiEventHandler in Apache OFBiz 24.09 before 24.09.08 on all platforms allows a remote unauthenticated attacker to pin a server request thread for an atta",
+        "published": "2026-11-05T14:17:05.530"
+      },
+      {
+        "cve_id": "CVE-2026-123019",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A weakness has been identified in eosphoros-ai DB-GPT up to 0.8.2. Impacted is the function exec_module of the file hf_adapter.py of the component HuggingFace Adapter. Executing a manipulation of the ",
+        "published": "2026-11-05T12:17:50.193"
+      },
+      {
+        "cve_id": "CVE-2026-123022",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was detected in agentscope-ai AgentScope up to 2.0.11. The impacted element is the function subprocess.Popen of the file src/agentscope/mcp/_config.py of the component MCP Workspace AP",
+        "published": "2026-11-05T14:17:04.003"
+      },
+      {
+        "cve_id": "CVE-2026-123023",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A flaw has been found in agentscope-ai AgentScope up to 2.0.8. This affects the function check_permissions of the file src/agentscope/tool/_builtin/_bash.py of the component Bash Tool. This manipulati",
+        "published": "2026-11-05T14:17:04.237"
+      },
+      {
+        "cve_id": "CVE-2026-123024",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability has been found in agentscope-ai AgentScope up to 2.0.11. This impacts the function get_current_user_id of the file src/agentscope/app/deps.py of the component Agent Service. Such manip",
+        "published": "2026-11-05T14:17:04.470"
       }
     ]
   },
