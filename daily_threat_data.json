@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-07T17:10:42.800545+00:00",
+  "generated_at": "2026-11-07T23:15:13.964077+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 19,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 646,
-    "critical_count": 4,
-    "high_count": 32,
+    "total": 484,
+    "critical_count": 19,
+    "high_count": 27,
     "cves": [
       {
-        "cve_id": "CVE-2026-122193",
+        "cve_id": "CVE-2026-109469",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "Authorization bypass through user-controlled key in Entra Device Registration allows an unauthorized attacker to elevate privileges over a network.",
+        "published": "2026-11-06T23:17:20.557"
+      },
+      {
+        "cve_id": "CVE-2026-16884",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "OS command injection in the example SSM document provisioning script in Trusted Remote Execution (REX) before 2026-07-28 might allow an authenticated remote user who is permitted to invoke the Rex-RO ",
-        "published": "2026-11-06T17:17:20.313"
+        "description": "IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote attacker to obtain sensitive information due to an XML external entity (XXE) injection.",
+        "published": "2026-11-07T05:18:22.440"
       },
       {
-        "cve_id": "CVE-2026-119923",
+        "cve_id": "CVE-2026-16920",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to bypass security restrictions due to a confused deputy vulnerability.",
+        "published": "2026-11-07T05:18:22.990"
+      },
+      {
+        "cve_id": "CVE-2026-17049",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information and modify arbitrary documents due to authorization bypass through user-controlled",
+        "published": "2026-11-07T05:18:23.173"
+      },
+      {
+        "cve_id": "CVE-2026-17117",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to execute arbitrary code due to improperly controlled modification of object attri",
+        "published": "2026-11-07T05:18:25.647"
+      },
+      {
+        "cve_id": "CVE-2026-17132",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to execute arbitrary SQL commands due to improper neutralization of special elements used in an SQL command.",
+        "published": "2026-11-07T05:18:26.430"
+      },
+      {
+        "cve_id": "CVE-2026-17134",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to execute arbitrary SQL commands due to SQL injection.",
+        "published": "2026-11-07T05:18:26.630"
+      },
+      {
+        "cve_id": "CVE-2026-17146",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to execute arbitrary JavaScript and obtain sensitive information due to improper in",
+        "published": "2026-11-07T05:18:27.843"
+      },
+      {
+        "cve_id": "CVE-2026-17147",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to execute arbitrary code and perform unauthorized administrative actions due to a ",
+        "published": "2026-11-07T05:18:28.037"
+      },
+      {
+        "cve_id": "CVE-2026-17150",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to execute arbitrary code and access sensitive information from other tenants due t",
+        "published": "2026-11-07T05:18:28.230"
+      },
+      {
+        "cve_id": "CVE-2026-17158",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to gain elevated privileges due to improper authentication.",
+        "published": "2026-11-07T05:18:28.853"
+      },
+      {
+        "cve_id": "CVE-2026-93754",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "A heap-based buffer overflow in the TDS prelogin parser in the Babelfish for PostgreSQL extension versions 1.0-1.5, 2.1-2.15, 3.1-3.12, 4.0-4.8, 5.1-5.4 and in Amazon Aurora PostgreSQL with Babelfish ",
-        "published": "2026-11-06T19:17:39.360"
+        "description": "The payever \u2013 WooCommerce Gateway plugin for WordPress is vulnerable to arbitrary file upload leading to remote code execution in various versions up to, and including, 4.8.0. Three WooCommerce-API ca",
+        "published": "2026-11-07T03:17:08.410"
       },
       {
-        "cve_id": "CVE-2026-123831",
+        "cve_id": "CVE-2026-123218",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "In JetBrains CLion before 2026.2, \n2026.1.4 code execution was possible in Safe Mode via Meson project settings",
-        "published": "2026-11-06T17:17:21.240"
+        "base_score": 9.8,
+        "description": "IBM Aspera Faspex 5.0.0 through 5.0.19 could allow an authorized user to craft a specific message to bypass user authorization and gain full administrative privileges.",
+        "published": "2026-11-07T04:17:28.900"
       },
       {
-        "cve_id": "CVE-2026-123832",
+        "cve_id": "CVE-2026-17362",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "In JetBrains CLion before 2026.2 code execution was possible in Safe Mode via JSON compilation database",
-        "published": "2026-11-06T17:17:21.387"
+        "base_score": 9.8,
+        "description": "IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote attacker to create, modify, or delete tenants due to missing authorization.",
+        "published": "2026-11-07T04:17:29.070"
       },
       {
-        "cve_id": "CVE-2026-123836",
+        "cve_id": "CVE-2026-19803",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Printcart Store \u2013 Web to Print Product Designer for WooCommerce plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 2.13.2. This is due to the `nbu_cr",
+        "published": "2026-11-07T04:17:29.233"
+      },
+      {
+        "cve_id": "CVE-2026-16720",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote attacker to obtain valid access tokens for other users due to improper authentication. Authentication agai",
+        "published": "2026-11-07T05:18:21.883"
+      },
+      {
+        "cve_id": "CVE-2026-16918",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "IBM API Connect 10.0.8.0 through 10.0.8.12 and 12.1.0.0 through 12.1.1.2 could allow a remote attacker to access internal network resources due to server-side request forgery.",
+        "published": "2026-11-07T05:18:22.803"
+      },
+      {
+        "cve_id": "CVE-2026-17131",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote attacker to obtain sensitive information due to server-side request forgery. Restrictions on outbound requests can be bypassed, so the se",
+        "published": "2026-11-07T05:18:26.230"
+      },
+      {
+        "cve_id": "CVE-2026-17066",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "IBM API Connect 12.1.0.0 through 12.1.1.2 could allow a remote authenticated attacker to obtain sensitive information and modify or delete data belonging to other tenants due to missing authorization.",
+        "published": "2026-11-07T05:18:23.787"
+      },
+      {
+        "cve_id": "CVE-2026-104913",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "In JetBrains Datalore before 2026.4 workspace collaborators could obtain the owner's SSH private key via Git backup",
-        "published": "2026-11-06T17:17:21.963"
-      },
-      {
-        "cve_id": "CVE-2026-118670",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OHIF Viewers is a zero-footprint DICOM viewer with shared extension packages. From 3.5.0-beta.0 until 3.12.15, 3.13.7, and 3.14.0-beta.19, the dicom-pdf extension reads the attacker-controlled MIMETyp",
-        "published": "2026-11-06T18:17:57.340"
-      },
-      {
-        "cve_id": "CVE-2026-107154",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A session validation vulnerability has been identified in the SonicOS management interface, which in specific conditions could potentially enable a remote unauthenticated attacker to perform unauthori",
-        "published": "2026-11-06T19:17:06.440"
-      },
-      {
-        "cve_id": "CVE-2026-107155",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A permissive cross-domain policy vulnerability has been identified in the SonicOS management interface, which in specific conditions could potentially enable a remote unauthenticated attacker to perfo",
-        "published": "2026-11-06T19:17:06.623"
-      },
-      {
-        "cve_id": "CVE-2026-123993",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Hisense VIDAA Smart TV firmware V0000.01.00a.P0220 contains an unauthenticated access vulnerability where a QA build of the Google Cobalt browser engine exposes the WebDriver automation server on TCP ",
-        "published": "2026-11-06T19:17:44.550"
-      },
-      {
-        "cve_id": "CVE-2026-123962",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "In FreedomBox before 26.15, unprivileged user accounts can read/write files for which they lack permissions by setting the authorized_keys file to be a symlink. NOTE: FreedomBox is a Debian Pure Blend",
-        "published": "2026-11-06T17:17:25.483"
-      },
-      {
-        "cve_id": "CVE-2026-123998",
-        "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Hisense VIDAA Smart TV firmware V0000.01.00a.P0220 contains an authentication bypass vulnerability in its remote-control MQTT broker on TCP port 36669, which accepts publicly documented default creden",
-        "published": "2026-11-06T19:17:45.427"
-      },
-      {
-        "cve_id": "CVE-2026-85743",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "FreeScout is a self-hosted help desk and shared mailbox. Prior to 1.8.230, multiple outbound paths in Helper::downloadRemoteFile(), Helper::checkPort(), Helper::sanitizeRemoteUrl(), MailboxesControlle",
-        "published": "2026-11-06T17:20:02.567"
-      },
-      {
-        "cve_id": "CVE-2026-123859",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "When identifier escaping is disabled through a non-default configuration, the write_pandas() data-loading functionality in the Snowflake Connector for Python and the Snowflake Connector for Python (Un",
-        "published": "2026-11-06T17:17:25.323"
-      },
-      {
-        "cve_id": "CVE-2026-119924",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "An out-of-bounds read in the TDS RPC procedure-name parser in the Babelfish for PostgreSQL extension versions 1.0-1.5, 2.1-2.15, 3.1-3.12, 4.0-4.8, 5.1-5.4 and in Amazon Aurora PostgreSQL with Babelfi",
-        "published": "2026-11-06T19:17:39.593"
-      },
-      {
-        "cve_id": "CVE-2026-123837",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "In JetBrains IntelliJ IDEA before 2026.3, \n2026.2.1 command injection was possible in untrusted projects via Tomcat run configurations on WSL",
-        "published": "2026-11-06T17:17:22.097"
-      },
-      {
-        "cve_id": "CVE-2026-123838",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "In JetBrains IntelliJ IDEA before 2026.3 code execution was possible in Safe Mode via UI Designer form file",
-        "published": "2026-11-06T17:17:22.247"
-      },
-      {
-        "cve_id": "CVE-2026-123841",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "In JetBrains IntelliJ IDEA before 2026.3 code execution was possible via symlinks in an imported settings archive",
-        "published": "2026-11-06T17:17:22.693"
-      },
-      {
-        "cve_id": "CVE-2026-123853",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "In JetBrains IntelliJ IDEA before 2026.3, \n2026.2.2 code execution was possible in Safe Mode via project-controlled JVM options of the build process",
-        "published": "2026-11-06T17:17:24.430"
-      },
-      {
-        "cve_id": "CVE-2026-62856",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "FreeScout is a self-hosted help desk and shared mailbox application. Prior to version 1.8.226, the \u00a0polycast/receive\u00a0 endpoint fails to escape SQL LIKE wildcards in supplied channel names, while chann",
-        "published": "2026-11-06T17:18:34.047"
-      },
-      {
-        "cve_id": "CVE-2026-62854",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "FreeScout is a self-hosted help desk and shared mailbox. Prior to 1.8.225, a user who can edit a mailbox signature can combine a scriptable file uploaded through /uploads/upload with nested tag fragme",
-        "published": "2026-11-06T17:18:33.700"
+        "description": "The Interactive Real Estate \u2013 Floor Plan & Building Visualizer plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 2.6.0 via the extract_zip_data function",
+        "published": "2026-11-07T03:16:59.167"
       }
     ]
   },
