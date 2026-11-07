@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-07T03:46:26.422251+00:00",
+  "generated_at": "2026-11-07T10:47:16.042625+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 11,
-        "score": 3.0,
+        "value": 4,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,79 +238,30 @@
     ]
   },
   "nvd": {
-    "total": 484,
-    "critical_count": 11,
-    "high_count": 23,
+    "total": 714,
+    "critical_count": 4,
+    "high_count": 28,
     "cves": [
       {
-        "cve_id": "CVE-2026-118423",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "The WP Libre Form WordPress plugin 1.5.0.1 does not validate the type of files uploaded through its form submissions, allowing unauthenticated attackers to upload PHP files to a web-accessible locatio",
-        "published": "2026-11-06T08:17:18.550"
-      },
-      {
-        "cve_id": "CVE-2026-110955",
+        "cve_id": "CVE-2026-107622",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "The Wurdey WordPress plugin through 1.0.0 does not verify a request signature before logging a user in, allowing unauthenticated attackers to authenticate as an administrator knowing only the administ",
-        "published": "2026-11-06T06:16:39.830"
+        "description": "The BuddyForms plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 2.10.5 via a form-type confusion attack through the `bf_post_type` parameter. This is du",
+        "published": "2026-11-06T12:17:16.020"
       },
       {
-        "cve_id": "CVE-2026-113584",
+        "cve_id": "CVE-2026-123294",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The placester WordPress plugin through 1.4.3 does not perform any capability, nonce or ownership check on an AJAX action that updates account details, allowing unauthenticated attackers to overwrite a",
-        "published": "2026-11-06T06:16:39.943"
+        "base_score": 9.6,
+        "description": "In JetBrains Hub before 2026.2.52556 privilege escalation was possible by changing email authentication details during the verification flow",
+        "published": "2026-11-06T11:17:08.140"
       },
       {
-        "cve_id": "CVE-2026-113615",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The GS JWT Authentication for WP REST API WordPress plugin through 1.0.0 does not sanitize or parameterize a request value before using it in SQL queries on several unauthenticated REST routes, allowi",
-        "published": "2026-11-06T06:16:40.053"
-      },
-      {
-        "cve_id": "CVE-2026-115230",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The WHIZZ WordPress plugin through 1.1.8 does not validate the password-reset key before updating a user's password, relying only on a nonce that is exposed to unauthenticated visitors, allowing attac",
-        "published": "2026-11-06T06:16:40.270"
-      },
-      {
-        "cve_id": "CVE-2026-116533",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Static Snapshot WordPress plugin through 0.2.1 does not sanitise shell metacharacters in a user-supplied value before concatenating it into operating-system commands run by the server, allowing un",
-        "published": "2026-11-06T06:16:40.480"
-      },
-      {
-        "cve_id": "CVE-2026-119516",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Deserialization of Untrusted Data vulnerability in Mamunur Rashid Radius Booking \u2014 Booking Calendar for Appointments &amp; Services radius-booking allows Object Injection.This issue affects Radius Boo",
-        "published": "2026-11-06T08:17:19.227"
-      },
-      {
-        "cve_id": "CVE-2026-120844",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Incorrect Privilege Assignment vulnerability in miniOrange OAuth Single Sign On \u2013 SSO (OAuth Client) miniorange-login-with-eve-online-google-facebook allows Privilege Escalation.This issue affects OAu",
-        "published": "2026-11-06T08:17:19.657"
-      },
-      {
-        "cve_id": "CVE-2026-83493",
+        "cve_id": "CVE-2026-114630",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "A flaw was found in distributed-workloads. A remote attacker could exploit a vulnerability in the pull_request_target workflow by submitting a specially crafted pull request. This workflow processes u",
-        "published": "2026-11-06T07:17:52.420"
-      },
-      {
-        "cve_id": "CVE-2026-88800",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The MDJM Event Management and Mobile Events Manager WordPress plugins through 1.7.8.7 act on a role deletion request on every page load with no capability check and no nonce, and the guard meant to pr",
-        "published": "2026-11-06T08:17:38.283"
+        "description": "The ELEX WordPress HelpDesk & Customer Ticketing System plugin for WordPress is vulnerable to arbitrary file deletion due to insufficient file path validation in the factory_reset function in all vers",
+        "published": "2026-11-06T12:17:16.503"
       },
       {
         "cve_id": "CVE-2026-123279",
@@ -320,67 +271,116 @@
         "published": "2026-11-06T11:17:06.140"
       },
       {
-        "cve_id": "CVE-2026-110525",
+        "cve_id": "CVE-2026-116624",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The MCB  WordPress plugin through 1.0.0 does not sanitise or escape request header values before storing them and later rendering them in the administrator statistics grid, allowing unauthenticated at",
-        "published": "2026-11-06T06:16:39.460"
+        "description": "The Advanced Members for ACF plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 1.3.0 via the `acf[_amem_local_user_password]` parameter of the `[advanced",
+        "published": "2026-11-06T12:17:17.340"
       },
       {
-        "cve_id": "CVE-2026-87784",
+        "cve_id": "CVE-2026-123323",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The Cool Media Filter WordPress plugin through 1.0.1 does not perform any capability or nonce check when updating the capabilities of a role, allowing any authenticated user, such as a subscriber, to ",
-        "published": "2026-11-06T06:16:44.363"
+        "base_score": 8.4,
+        "description": "In JetBrains YouTrack before 2025.3.170763, \n2026.1.14150, \n2026.2.19656 improper URL validation in the app widget host allowed apps to send REST requests without user confirmation",
+        "published": "2026-11-06T11:17:11.983"
       },
       {
-        "cve_id": "CVE-2026-88799",
+        "cve_id": "CVE-2026-123301",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "The MDJM Event Management and Mobile Events Manager WordPress plugins through 1.7.8.7 do not check ownership or capability on the identifier supplied to their client profile update, allowing any authe",
-        "published": "2026-11-06T08:17:38.130"
+        "base_score": 8.2,
+        "description": "In JetBrains IntelliJ IDEA before 2026.3 dOM-based XSS in the OpenAPI preview error view was possible",
+        "published": "2026-11-06T11:17:09.067"
       },
       {
-        "cve_id": "CVE-2026-119432",
+        "cve_id": "CVE-2026-123280",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "A stored cross-site scripting (XSS) vulnerability exists in the Foxit Workspace's file share preview functionality. An attacker could upload a crafted file and share it with a victim. When the victim ",
-        "published": "2026-11-06T05:18:20.830"
+        "base_score": 8.1,
+        "description": "In JetBrains Datalore before 2026.2.4 unauthenticated users could execute code via published interactive reports",
+        "published": "2026-11-06T11:17:06.270"
       },
       {
-        "cve_id": "CVE-2026-118045",
+        "cve_id": "CVE-2026-123295",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "The Ever Accounting  WordPress plugin before 2.3.3 does not restrict the file path supplied to its CSV import routine to an allowed directory, allowing users with its custom Accounting Manager role (w",
-        "published": "2026-11-06T06:16:40.593"
+        "base_score": 8.1,
+        "description": "In JetBrains Hub before 2026.2.52519 enforced two-factor authentication could be disabled via the profile update endpoint",
+        "published": "2026-11-06T11:17:08.273"
       },
       {
-        "cve_id": "CVE-2026-110532",
+        "cve_id": "CVE-2026-123317",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "The Mail Mage WordPress plugin through 0.0.25 does not properly sanitise and escape a user-supplied value before using it in a SQL statement, allowing unauthenticated attackers to perform SQL injectio",
-        "published": "2026-11-06T06:16:39.597"
+        "base_score": 8.1,
+        "description": "In JetBrains Ktor before 3.6.1 session forgery was possible via tampered encrypted session cookies",
+        "published": "2026-11-06T11:17:11.170"
       },
       {
-        "cve_id": "CVE-2026-33379",
+        "cve_id": "CVE-2026-92895",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "A user with any role, including Viewer or a service account with no permissions, can create, externally publish, and delete dashboard snapshots (missing authorization). Only Grafana OSS and Grafana En",
-        "published": "2026-11-06T10:16:37.943"
+        "base_score": 8.1,
+        "description": "The Live2DWebCanvas plugin for WordPress is vulnerable to Arbitrary File Upload in all versions up to, and including, 2.2.1 via the download_one_file function. This is due to missing file extension wh",
+        "published": "2026-11-06T12:17:24.820"
       },
       {
-        "cve_id": "CVE-2026-120408",
+        "cve_id": "CVE-2026-123276",
         "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "The All-in-One Video Gallery  WordPress plugin before 5.1.0 does not escape a video's stored thumbnail URL before outputting it in the admin video list, and does not sanitise that value when it is wri",
-        "published": "2026-11-06T06:16:41.790"
+        "base_score": 7.8,
+        "description": "In JetBrains CLion before 2026.3, \n2026.2.4.1 code execution was possible in Safe Mode via a crafted GDB server debug profile",
+        "published": "2026-11-06T11:17:05.740"
       },
       {
-        "cve_id": "CVE-2026-88801",
+        "cve_id": "CVE-2026-123293",
         "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "The MDJM Event Management and Mobile Events Manager WordPress plugins through 1.7.8.7 do not check a capability or a nonce before creating a WordPress role from a name supplied in the request, and sto",
-        "published": "2026-11-06T08:17:38.410"
+        "base_score": 7.8,
+        "description": "In JetBrains IntelliJ IDEA before 2026.3, \n2026.2.4 code execution was possible in untrusted projects  via the Terraform tool path setting",
+        "published": "2026-11-06T11:17:08.013"
+      },
+      {
+        "cve_id": "CVE-2026-123302",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "In JetBrains IntelliJ IDEA before 2026.3, \n2026.2.4, \n2026.1.5.1, \n2025.3.6.2 code execution was possible in untrusted projects via script engine discovery",
+        "published": "2026-11-06T11:17:09.200"
+      },
+      {
+        "cve_id": "CVE-2026-123304",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "In JetBrains IntelliJ IDEA before 2026.3 code execution in untrusted projects via a configured ShellCheck path",
+        "published": "2026-11-06T11:17:09.340"
+      },
+      {
+        "cve_id": "CVE-2026-123321",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "In JetBrains WebStorm before 2026.3, \n2026.2.3 code execution via Grunt and Gulp task loading was possible in untrusted projects",
+        "published": "2026-11-06T11:17:11.723"
+      },
+      {
+        "cve_id": "CVE-2026-123324",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "In JetBrains YouTrack before 2026.2.19562 information disclosure via shared mailbox message history was possible",
+        "published": "2026-11-06T11:17:12.120"
+      },
+      {
+        "cve_id": "CVE-2026-103479",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "The Pubjet | \u067e\u0627\u0628\u200c\u062c\u062a plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 5.4.8. This is due to the `checkToken()` AJAX handler \u2014 registered under `wp_ajax_p",
+        "published": "2026-11-06T12:17:15.440"
+      },
+      {
+        "cve_id": "CVE-2026-123281",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "In JetBrains Datalore before 2026.4 notebook code could execute commands in the sidecar container via the mount broker",
+        "published": "2026-11-06T11:17:06.390"
+      },
+      {
+        "cve_id": "CVE-2026-123296",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "In JetBrains Hub before 2026.2.52519 privilege escalation via forged email verification was possible",
+        "published": "2026-11-06T11:17:08.400"
       }
     ]
   },
