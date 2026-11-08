@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-08T17:23:51.015916+00:00",
+  "generated_at": "2026-11-08T23:17:28.257754+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 7,
-        "score": 2.5,
+        "value": 3,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 271,
-    "critical_count": 7,
-    "high_count": 25,
+    "total": 320,
+    "critical_count": 3,
+    "high_count": 27,
     "cves": [
       {
         "cve_id": "CVE-2026-123551",
@@ -262,34 +262,6 @@
         "base_score": 9.8,
         "description": "OpenAM before 16.1.4 contains an authentication bypass vulnerability in its SAML v2.0 service provider that accepts unsigned assertions on the ECP (PAOS) and HTTP-Artifact bindings when WantAssertions",
         "published": "2026-11-08T02:16:46.410"
-      },
-      {
-        "cve_id": "CVE-2026-124057",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A security flaw has been discovered in TOTOLINK CA300-PoE 6.2c.884. This impacts the function setWiFiMultipleConfig of the file /cgi-bin/cstecgi.cgi. Performing a manipulation of the argument Key1Str1",
-        "published": "2026-11-07T18:17:21.607"
-      },
-      {
-        "cve_id": "CVE-2026-124058",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A weakness has been identified in TOTOLINK CA300-PoE 6.2c.884. Affected is the function setWiFiRepeaterConfig of the file /cgi-bin/cstecgi.cgi. Executing a manipulation of the argument ApCliKeyStr can",
-        "published": "2026-11-07T19:17:28.263"
-      },
-      {
-        "cve_id": "CVE-2026-124059",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A security vulnerability has been detected in TOTOLINK CA300-PoE 6.2c.884. Affected by this vulnerability is the function setWiFiWdsAddConfig of the file /cgi-bin/cstecgi.cgi. The manipulation of the ",
-        "published": "2026-11-07T19:17:28.480"
-      },
-      {
-        "cve_id": "CVE-2026-124060",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A vulnerability was detected in TOTOLINK CA300-PoE 6.2c.884. Affected by this issue is the function UploadCustomModule of the file /cgi-bin/cstecgi.cgi. The manipulation of the argument File results i",
-        "published": "2026-11-07T21:17:00.150"
       },
       {
         "cve_id": "CVE-2026-123531",
@@ -381,6 +353,34 @@
         "base_score": 7.5,
         "description": "The devalue package for npm before 5.6.3 can consume excessive CPU and memory when serializing sparse arrays with uneval or stringify. An attacker who manages to get a sparse array created on the serv",
         "published": "2026-11-08T02:16:49.673"
+      },
+      {
+        "cve_id": "CVE-2026-123570",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The DNS wire-format message parser in hickory-proto (Hickory DNS) 0.18 before 0.26.2 preallocates record vectors sized by the untrusted ANCOUNT, NSCOUNT, and ARCOUNT header fields before reading recor",
+        "published": "2026-11-08T02:16:49.830"
+      },
+      {
+        "cve_id": "CVE-2026-123571",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Hickory DNS from 0.26.0 before 0.26.2 contains an integer underflow vulnerability in TSIG RDATA decoding that allows remote attackers to trigger a panic via malformed records. Attackers can send a cra",
+        "published": "2026-11-08T02:16:49.990"
+      },
+      {
+        "cve_id": "CVE-2026-123572",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Hickory-dns from 0.20.1 before 0.26.2 contains a denial of service vulnerability in the hickory-proto SVCB and HTTPS record presentation format parser, which panics on malformed alpn values. Attackers",
+        "published": "2026-11-08T02:16:50.140"
+      },
+      {
+        "cve_id": "CVE-2026-123573",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "hickory-dns from 0.20.1 before 0.26.2 contains a denial of service vulnerability in the hickory-proto SVCB and HTTPS record presentation format parser. Attackers can supply untrusted zone files where ",
+        "published": "2026-11-08T02:16:50.297"
       }
     ]
   },
