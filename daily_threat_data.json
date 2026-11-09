@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-08T23:17:28.257754+00:00",
+  "generated_at": "2026-11-09T03:43:30.186881+00:00",
   "threat_score": {
-    "score": 6.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 4.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
-        "score": 2.0,
+        "value": 0,
+        "score": 0.5,
         "max": 3
       },
       {
@@ -238,151 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 320,
-    "critical_count": 3,
-    "high_count": 27,
-    "cves": [
-      {
-        "cve_id": "CVE-2026-123551",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "OpenAM from 14.0.0 before 16.1.4 contains an information disclosure vulnerability that allows unauthenticated attackers to read live session tokens from the notification WebSocket. Attackers can bypas",
-        "published": "2026-11-08T02:16:46.603"
-      },
-      {
-        "cve_id": "CVE-2026-123549",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "OpenAM before 16.1.4 fails to enforce the Valid Creation Attributes list during self-registration, allowing anonymous attackers to set restricted attributes including group membership. Attackers can r",
-        "published": "2026-11-08T02:16:46.247"
-      },
-      {
-        "cve_id": "CVE-2026-123550",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "OpenAM before 16.1.4 contains an authentication bypass vulnerability in its SAML v2.0 service provider that accepts unsigned assertions on the ECP (PAOS) and HTTP-Artifact bindings when WantAssertions",
-        "published": "2026-11-08T02:16:46.410"
-      },
-      {
-        "cve_id": "CVE-2026-123531",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Vikunja from 1.0.0 before 2.7.1 contains an uncontrolled resource consumption vulnerability that allows authenticated users to bypass service.maxitemsperpage by sending page=0 to /api/v1 list endpoint",
-        "published": "2026-11-08T02:16:43.190"
-      },
-      {
-        "cve_id": "CVE-2026-123543",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "OpenAM before 16.1.4 contains a denial of service vulnerability that allows unauthenticated attackers to exhaust server resources by sending serialized Java data without size or structure limits. Atta",
-        "published": "2026-11-08T02:16:45.253"
-      },
-      {
-        "cve_id": "CVE-2026-123554",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Zebra zebrad 6.4.0 before 7.0.0 performs quadratic work in the mempool coinbase-maturity check because Transaction::coinbase_spend_restriction() rebuilds the transaction's output list once per spent o",
-        "published": "2026-11-08T02:16:47.120"
-      },
-      {
-        "cve_id": "CVE-2026-123555",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Zebra from 2.3.0 before 7.0.0 contains a denial of service vulnerability that allows unauthenticated peers to evade misbehavior scoring by sending transactions or blocks with invalid transparent scrip",
-        "published": "2026-11-08T02:16:47.313"
-      },
-      {
-        "cve_id": "CVE-2026-123558",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Zebra zebrad before 7.0.0 contains a denial of service vulnerability that allows a malicious peer to stall checkpoint sync by cancelling the verifier rewind after a failed commit. Attackers can serve ",
-        "published": "2026-11-08T02:16:47.863"
-      },
-      {
-        "cve_id": "CVE-2026-123559",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Zebra before 7.0.0 contains an inefficient algorithmic complexity vulnerability that allows unauthenticated peers to exhaust verification threads by submitting transactions with many transparent input",
-        "published": "2026-11-08T02:16:48.047"
-      },
-      {
-        "cve_id": "CVE-2026-123560",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Zebra before 7.0.0 contains an incomplete cleanup vulnerability that allows unauthenticated peers to stall initial sync by serving a forged checkpoint block body. Attackers can supply a body with forg",
-        "published": "2026-11-08T02:16:48.227"
-      },
-      {
-        "cve_id": "CVE-2026-123562",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "devalue (sveltejs/devalue) 5.8.0 before 5.9.3 contains an unhandled promise rejection in stringifyAsync: when serializing multiple promises, a later promise rejecting before an earlier one settles lea",
-        "published": "2026-11-08T02:16:48.567"
-      },
-      {
-        "cve_id": "CVE-2026-123563",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Devalue before 5.9.3 contains a validation bypass vulnerability that allows custom ArrayBuffer revivers to skip typed-array allocation checks in the parse function. Attackers can supply very small cra",
-        "published": "2026-11-08T02:16:48.720"
-      },
-      {
-        "cve_id": "CVE-2026-123564",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Sveltejs devalue from 1.0.0 before 5.9.3 contains a memory exhaustion flaw in uneval, whose generated code for sparse arrays allocates memory proportional to the array's declared length when evaluated",
-        "published": "2026-11-08T02:16:48.877"
-      },
-      {
-        "cve_id": "CVE-2026-123565",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Sveltejs devalue before 5.9.3 contains a resource exhaustion vulnerability where repeated primitive strings cause quadratic expansion in the uneval function. Attackers can supply a small crafted paylo",
-        "published": "2026-11-08T02:16:49.040"
-      },
-      {
-        "cve_id": "CVE-2026-123566",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Sveltejs devalue before 5.9.3 contains a denial of service vulnerability that allows attackers to cause CPU amplification by supplying sparse arrays to uneval. Attackers who influence sparse values pa",
-        "published": "2026-11-08T02:16:49.197"
-      },
-      {
-        "cve_id": "CVE-2026-123569",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The devalue package for npm before 5.6.3 can consume excessive CPU and memory when serializing sparse arrays with uneval or stringify. An attacker who manages to get a sparse array created on the serv",
-        "published": "2026-11-08T02:16:49.673"
-      },
-      {
-        "cve_id": "CVE-2026-123570",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The DNS wire-format message parser in hickory-proto (Hickory DNS) 0.18 before 0.26.2 preallocates record vectors sized by the untrusted ANCOUNT, NSCOUNT, and ARCOUNT header fields before reading recor",
-        "published": "2026-11-08T02:16:49.830"
-      },
-      {
-        "cve_id": "CVE-2026-123571",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Hickory DNS from 0.26.0 before 0.26.2 contains an integer underflow vulnerability in TSIG RDATA decoding that allows remote attackers to trigger a panic via malformed records. Attackers can send a cra",
-        "published": "2026-11-08T02:16:49.990"
-      },
-      {
-        "cve_id": "CVE-2026-123572",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Hickory-dns from 0.20.1 before 0.26.2 contains a denial of service vulnerability in the hickory-proto SVCB and HTTPS record presentation format parser, which panics on malformed alpn values. Attackers",
-        "published": "2026-11-08T02:16:50.140"
-      },
-      {
-        "cve_id": "CVE-2026-123573",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "hickory-dns from 0.20.1 before 0.26.2 contains a denial of service vulnerability in the hickory-proto SVCB and HTTPS record presentation format parser. Attackers can supply untrusted zone files where ",
-        "published": "2026-11-08T02:16:50.297"
-      }
-    ]
+    "total": 0,
+    "critical_count": 0,
+    "high_count": 0,
+    "cves": []
   },
   "top_ips": {
     "ips": [],
