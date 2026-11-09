@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-11-09T12:20:04.913119+00:00",
+  "generated_at": "2026-11-09T23:54:13.224232+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 30,
+        "value": 34,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 10,
-        "score": 3.0,
+        "value": 8,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -32,9 +32,49 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1769,
-    "recent_30d_count": 30,
+    "total_catalog_count": 1773,
+    "recent_30d_count": 34,
     "recent": [
+      {
+        "cve_id": "CVE-2026-102895",
+        "vendor": "GPUStack",
+        "product": "GPUStack",
+        "name": "GPUStack Improper Authentication Vulnerability",
+        "date_added": "2026-11-09",
+        "due_date": "2026-11-12",
+        "description": "GPUStack contains an improper authentication vulnerability which could allow unauthenticated administrative access, including user and model changes, persistent administrator API-key creation, disclos",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-123158",
+        "vendor": "OpenBSD",
+        "product": "OpenSSH",
+        "name": "OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability",
+        "date_added": "2026-11-09",
+        "due_date": "2026-11-12",
+        "description": "OpenBSD OpenSSH on Linux contains an unexpected status code or return value vulnerability that could allow for authentication bypass.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-116779",
+        "vendor": "SignalWire",
+        "product": "FreeSwitch",
+        "name": "SignalWire FreeSwitch Code Injection Vulnerability",
+        "date_added": "2026-11-09",
+        "due_date": "2026-11-12",
+        "description": "SignalWire FreeSwitch contains a code injection vulnerability that permits configuration and credential disclosure, arbitrary call control, and command execution.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-123218",
+        "vendor": "IBM",
+        "product": "Aspera Faspex",
+        "name": "IBM Aspera Faspex Incorrect Authorization Vulnerability",
+        "date_added": "2026-11-09",
+        "due_date": "2026-11-12",
+        "description": "IBM Aspera Faspex contains an incorrect authorization vulnerability that could allow an authenticated user to craft a specific message to bypass authorization, causing privilege escalations.",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-19868",
         "vendor": "SonicWall",
@@ -194,193 +234,153 @@
         "due_date": "2026-10-23",
         "description": "EG Secure Solutions SiteGuard Server Edition contains an OS command injection vulnerability which may allow an attacker to execute arbitrary OS commands with root or SYSTEM privileges on the system ru",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-96656",
-        "vendor": "Plex",
-        "product": "Media Server",
-        "name": "Plex Media Server External Control of File Name or Path Vulnerability",
-        "date_added": "2026-10-20",
-        "due_date": "2026-10-23",
-        "description": "Plex Media Server contains an external control of file name or path vulnerability which can allow an admin user to write arbitrary files that may be executed on load. This vulnerability can be chained",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-96655",
-        "vendor": "Plex",
-        "product": "Media Server",
-        "name": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
-        "date_added": "2026-10-20",
-        "due_date": "2026-11-03",
-        "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability that could allow an authenticated user to request arbitrary internal or external addresses via the '/video/:/transcode/uni",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-96654",
-        "vendor": "Plex",
-        "product": "Media Server",
-        "name": "Plex Media Server Improper Neutralization of Encoded URI Schemes in a Web Page Vulnerability",
-        "date_added": "2026-10-20",
-        "due_date": "2026-10-23",
-        "description": "Plex Media Server contains an improper neutralization of encoded URI schemes in a web page vulnerability that could allow an attacker to call other plugins' functions and supply their own parameters. ",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-96652",
-        "vendor": "Plex",
-        "product": "Media Server",
-        "name": "Plex Media Server Server-Side Request Forgery (SSRF) Vulnerability",
-        "date_added": "2026-10-20",
-        "due_date": "2026-11-03",
-        "description": "Plex Media Server contains a server-side request forgery (SSRF) vulnerability which could allow an attacker using any X-Plex-Token value to include a full URL in the 'protocol' parameter and force the",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 325,
-    "critical_count": 10,
-    "high_count": 42,
+    "total": 396,
+    "critical_count": 8,
+    "high_count": 34,
     "cves": [
       {
-        "cve_id": "CVE-2026-124440",
+        "cve_id": "CVE-2026-124580",
         "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "Kyverno from 1.19.1 before 1.19.2 contains an authorization bypass vulnerability in the apiCall namespace clamp that allows namespace tenants to issue cross-namespace and cluster-scoped API requests b",
-        "published": "2026-11-08T14:18:10.633"
+        "base_score": 10.0,
+        "description": "A vulnerability was found in Chengdu Feiyuxing Technology VW2100 and VEC10GP 1.0 B-MB3W202-210825-r11775. This impacts the function handle_wechat_cn_wifi of the file var/html/webserver of the componen",
+        "published": "2026-11-09T08:17:02.923"
       },
       {
-        "cve_id": "CVE-2026-124450",
+        "cve_id": "CVE-2026-124585",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "OpenEMR before 8.3.0 contains a broken access control and path traversal vulnerability in the fax/sms module disposeDocument action via an unvalidated file_path parameter. Authenticated low-privilege ",
-        "published": "2026-11-08T14:18:12.260"
+        "description": "A vulnerability was found in Chengdu Feiyuxing Technology VW2100 and VEC10GP 1.0 B-MB3W202-210825-r11775. This issue affects the function add_expmac of the file var/html/webserver of the component Web",
+        "published": "2026-11-09T09:16:59.517"
       },
       {
-        "cve_id": "CVE-2026-124469",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "OpenEMR before 8.3.0 contains an SQL injection vulnerability in the Fee Sheet drug-inventory lookup (DrugSalesService::sellDrug) that interpolates the prod[N][warehouse] POST field into an ORDER BY cl",
-        "published": "2026-11-08T14:18:15.130"
-      },
-      {
-        "cve_id": "CVE-2026-107331",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "IBM DataStage on Cloud Pak for Data 5.4.0.0 could allow a remote authenticated attacker to obtain sensitive information due to an absolute-path traversal vulnerability.",
-        "published": "2026-11-08T17:16:35.550"
-      },
-      {
-        "cve_id": "CVE-2026-124427",
+        "cve_id": "CVE-2026-124560",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Craft CMS from 5.0.0 before 5.11.2 contains an authorization bypass vulnerability that allows anonymous GraphQL clients to read out-of-scope section entries via prev/next fields. Attackers can chain n",
-        "published": "2026-11-08T14:18:08.517"
+        "description": "A vulnerability was found in D-Link DIR-878 1.20B05. This affects the function GetCAPTCHAsetting of the file bin/prog.cgi of the component HNAP Handler. Performing a manipulation of the argument uid r",
+        "published": "2026-11-09T03:16:38.117"
       },
       {
-        "cve_id": "CVE-2026-124445",
+        "cve_id": "CVE-2026-115213",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "OpenEMR from 7.0.1 before 8.4.0 contains a flaw in src/Common/Auth/OneTimeAuth.php that ignores the enforce_onetime_use and max_access_count flags, never revokes consumed service_auth tokens, and chec",
-        "published": "2026-11-08T14:18:11.487"
+        "description": "The EASY-JS-WPAPI Client HANDLE for the WordPress REST-API WordPress plugin through 2.0 does not prevent the administrator credentials it stores from being disclosed to unauthenticated users and does ",
+        "published": "2026-11-09T07:17:27.953"
       },
       {
-        "cve_id": "CVE-2026-109900",
+        "cve_id": "CVE-2026-115237",
         "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "Incorrect Privilege Assignment vulnerability in Melapress Melapress Role Editor melapress-role-editor allows Privilege Escalation.This issue affects Melapress Role Editor: from n/a through 1.3.0.",
-        "published": "2026-11-08T16:16:36.773"
+        "base_score": 9.8,
+        "description": "The Grand Job WordPress plugin through 1.2.1 does not correctly verify the password reset code before updating a user's password, allowing unauthenticated attackers to set the password of arbitrary ac",
+        "published": "2026-11-09T07:17:28.087"
       },
       {
-        "cve_id": "CVE-2026-114464",
+        "cve_id": "CVE-2026-123751",
         "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "IBM Process Mining 2.0.0 through 2.2.1 could allow a remote attacker to obtain sensitive information due to improper access control.",
-        "published": "2026-11-08T17:16:36.583"
+        "base_score": 9.8,
+        "description": "The WP Duplicate  WordPress plugin through 1.1.11 does not properly verify a request authentication value and does not validate the path or type of uploaded files, making it possible for unauthenticat",
+        "published": "2026-11-09T07:17:30.213"
       },
       {
-        "cve_id": "CVE-2026-124490",
+        "cve_id": "CVE-2026-124577",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "A weakness has been identified in Intelbras SG 2404 PoE L2+ 1.00.70/1.00.72. The affected element is an unknown function of the file /EXCU_SHELL of the component Web Management Interface. Executing a ",
+        "published": "2026-11-09T08:17:02.350"
+      },
+      {
+        "cve_id": "CVE-2026-119506",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "OpenEMR before 8.3.0 contains a path traversal vulnerability in the RingCentral RCFaxClient disposeDocument() method of oe-module-faxsms that allows authenticated attackers to read and write arbitrary",
-        "published": "2026-11-08T14:18:18.667"
+        "description": "Incorrect Privilege Assignment vulnerability in DynamiApps Frontend Admin by DynamiApps acf-frontend-form-element allows Privilege Escalation.This issue affects Frontend Admin by DynamiApps: from n/a ",
+        "published": "2026-11-09T01:17:01.197"
       },
       {
-        "cve_id": "CVE-2026-101117",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "IBM WebSphere Extreme Scale 8.6.1.0 through 8.6.2.2 could allow a remote attacker to bypass security restrictions due to improper Content Security Policy configuration.",
-        "published": "2026-11-08T16:16:36.103"
-      },
-      {
-        "cve_id": "CVE-2026-124430",
+        "cve_id": "CVE-2026-115204",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Craft CMS from 5.10.0 before 5.11.2 contains a remote code execution vulnerability that allows non-administrator control panel users to obtain HMAC-signed Twig templates via the app/render-elements en",
-        "published": "2026-11-08T14:18:08.990"
+        "description": "The AZEXO Store Locator WordPress plugin through 1.4 does not perform capability or nonce checks on its AJAX actions and does not sanitise a request header used to build a file path, allowing any auth",
+        "published": "2026-11-09T07:17:27.353"
       },
       {
-        "cve_id": "CVE-2026-124441",
+        "cve_id": "CVE-2026-115212",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Kyverno before 1.19.2 contains an authorization bypass vulnerability that allows namespaced tenants to generate any resource kind in any namespace by templating the generate rule's kind and namespace ",
-        "published": "2026-11-08T14:18:10.800"
+        "description": "The mView \u8c46\u74e3\u7535\u5f71 WordPress plugin through 1.0.3 does not validate the type, name, or source of a remotely fetched file, nor perform any capability or authorization check, before saving it to a web-acces",
+        "published": "2026-11-09T07:17:27.820"
       },
       {
-        "cve_id": "CVE-2026-124446",
+        "cve_id": "CVE-2026-123064",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "OpenEMR before 8.3.0 contains a path traversal vulnerability in the FaxSMS module's RCFaxClient and SignalWireClient disposeDocument functions that allows authenticated low-privilege users to read and",
-        "published": "2026-11-08T14:18:11.650"
+        "description": "The WP BASE Booking of Appointments, Services and Events WordPress plugin before 6.5.1 does not properly restrict access to one of its user-creation actions, allowing authenticated users with Subscrib",
+        "published": "2026-11-09T07:17:29.210"
       },
       {
-        "cve_id": "CVE-2026-124467",
+        "cve_id": "CVE-2026-111421",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "OpenEMR before 8.4.0 contains a local file inclusion in the ESign router (library/ESign/Router.php), which passes the unsanitized module parameter into a require_once of '<module>/Controller.php', and",
-        "published": "2026-11-08T14:18:14.823"
+        "description": "Apache Airflow's Task Execution API stored XCom values written by a task without the reserved-key check applied elsewhere, so a Dag author's task could write an XCom that, when a user later viewed it ",
+        "published": "2026-11-09T10:17:03.773"
       },
       {
-        "cve_id": "CVE-2026-124477",
+        "cve_id": "CVE-2026-94249",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenEMR before 8.3.0 contains a missing authorization vulnerability that allows low-privileged authenticated users to delete arbitrary patient recall records via the delete_Recall action. Attackers ca",
-        "published": "2026-11-08T14:18:16.653"
+        "base_score": 8.1,
+        "description": "Missing Authorization vulnerability in T\u00dcB\u0130TAK B\u0130LGEM Software Technologies Research Institute Liderahenk allows Privilege Abuse.\n\nThis issue affects Liderahenk: before 2.0.3.",
+        "published": "2026-11-09T09:16:59.927"
       },
       {
-        "cve_id": "CVE-2026-124480",
+        "cve_id": "CVE-2026-124561",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenEMR before 8.4.0 contains an authorization bypass vulnerability that allows low-privileged authenticated users to read cross-patient FHIR QuestionnaireResponse data by sending the APICSRFTOKEN hea",
-        "published": "2026-11-08T14:18:17.147"
+        "base_score": 7.5,
+        "description": "A vulnerability was determined in D-Link DIR-878 1.20B05. This impacts the function SetVLANSettings of the file prog.cgi of the component HNAP Handler. Executing a manipulation of the argument VID can",
+        "published": "2026-11-09T04:17:06.317"
       },
       {
-        "cve_id": "CVE-2026-124484",
+        "cve_id": "CVE-2026-124562",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenEMR before 8.4.0 contains a missing authorization vulnerability in portal onsite-document APIs that allows any authenticated core user to access cross-patient documents. Attackers can omit the pat",
-        "published": "2026-11-08T14:18:17.773"
+        "base_score": 7.5,
+        "description": "A vulnerability was identified in D-Link DIR-878 1.20B05. Affected is the function SetWanSettings of the component HNAP Handler. The manipulation of the argument ConfigDNS/Primary/ConfigDNS/Secondary ",
+        "published": "2026-11-09T04:17:06.560"
       },
       {
-        "cve_id": "CVE-2026-124486",
+        "cve_id": "CVE-2026-124563",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "OpenEMR before 8.3.0 contains a missing authorization vulnerability in the classic document controller that allows low-privilege authenticated users to recategorize other patients' documents. Attacker",
-        "published": "2026-11-08T14:18:18.073"
+        "base_score": 7.5,
+        "description": "A security flaw has been discovered in D-Link DIR-878 1.20B05. Affected by this vulnerability is the function SetWanSettings of the component HNAP Handler. The manipulation of the argument Primary/Sec",
+        "published": "2026-11-09T04:17:06.773"
       },
       {
-        "cve_id": "CVE-2026-110273",
+        "cve_id": "CVE-2026-115256",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "IBM TRIRIGA Application Platform 5.0.0 through 5.0.9 IBM TRIRIGA could allow a remote authenticated attacker to execute arbitrary code due to improper neutralization of special elements used in an OS ",
-        "published": "2026-11-08T17:16:36.130"
+        "base_score": 7.5,
+        "description": "The Mail Debug for WooCommerce WordPress plugin through 1.3.0 does not perform any capability, authentication, or nonce check on one of its email-logging actions, which is exposed to unauthenticated u",
+        "published": "2026-11-09T07:17:28.223"
       },
       {
-        "cve_id": "CVE-2026-124463",
+        "cve_id": "CVE-2026-118201",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "OpenEMR before 8.3.0 contains a stored cross-site scripting vulnerability that allows authenticated users with CAMOS access to inject HTML by saving malicious CAMOS content through ajax_save.php. Atta",
-        "published": "2026-11-08T14:18:14.167"
+        "base_score": 7.5,
+        "description": "The Limit Login Attempts Security  WordPress plugin before 3.4.1 does not enforce its two-factor authentication on every password-authentication route, so an attacker who already knows a protected use",
+        "published": "2026-11-09T07:17:28.357"
+      },
+      {
+        "cve_id": "CVE-2026-118202",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Limit Login Attempts Security  WordPress plugin before 3.4.1 does not confirm that its two-factor authentication step succeeded before completing a login and treats a failure to build that step as",
+        "published": "2026-11-09T07:17:28.490"
+      },
+      {
+        "cve_id": "CVE-2026-123091",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Vigilant  WordPress plugin before 2.11.0 does not enforce its two-factor authentication on login forms other than the default WordPress one, allowing an attacker who knows a user's password to ski",
+        "published": "2026-11-09T07:17:29.480"
       }
     ]
   },
