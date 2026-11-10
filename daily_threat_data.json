@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T15:56:29.164796+00:00",
+  "generated_at": "2026-11-10T21:36:12.980409+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 34,
+        "value": 40,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
+        "value": 4,
         "score": 2.0,
         "max": 3
       },
@@ -32,9 +32,69 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1773,
-    "recent_30d_count": 34,
+    "total_catalog_count": 1779,
+    "recent_30d_count": 40,
     "recent": [
+      {
+        "cve_id": "CVE-2026-124194",
+        "vendor": "Microsoft",
+        "product": "Office",
+        "name": "Microsoft Office Outlook Missing User Interaction for Potentially Unsafe Action Vulnerability",
+        "date_added": "2026-11-10",
+        "due_date": "2026-11-24",
+        "description": "Microsoft Office Outlook contains a missing user interaction for potentially unsafe action vulnerability that allows an unauthorized attacker to perform spoofing over a network.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-111793",
+        "vendor": "Openwave Messaging Limited",
+        "product": "Webtop Media Transcoder",
+        "name": "Openwave Messaging Limited Webtop Media Transcoder Incorrect Resource Transfer Between Spheres Vulnerability",
+        "date_added": "2026-11-10",
+        "due_date": "2026-11-24",
+        "description": "Openwave Messaging Limited Webtop Media Transcoder contains an incorrect resource transfer between spheres vulnerability that may allow an authenticated user to process and convert unintended document",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-20320",
+        "vendor": "Cisco",
+        "product": "BroadWorks",
+        "name": "Cisco BroadWorks Improper Restriction of XML External Entity Reference Vulnerability",
+        "date_added": "2026-11-10",
+        "due_date": "2026-11-24",
+        "description": "Cisco BroadWorks contains an improper restriction of XML external entity reference vulnerability that could allow an unauthenticated, remote attacker to read sensitive configuration information on an ",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-111560",
+        "vendor": "Barracuda Networks",
+        "product": "Multiple Products",
+        "name": "Barracuda Networks Multiple Products OS Command Injection Vulnerability",
+        "date_added": "2026-11-10",
+        "due_date": "2026-11-13",
+        "description": "Barracuda Networks Email Security Gateway (ESG), Load Balancer, Application Delivery Controller (ADC), Message Archiver (BMA), WAF Control Center (WCC), Web Application Firewall (WAF), and Web Securit",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-116606",
+        "vendor": "Barracuda Networks",
+        "product": "Barracuda Email Security Gateway (ESG)",
+        "name": "Barracuda Networks Email Security Gateway (ESG) Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+        "date_added": "2026-11-10",
+        "due_date": "2026-11-13",
+        "description": "Barracuda Networks Email Security Gateway (ESG) contains an authentication bypass using an alternate path or channel that could allow an unauthenticated remote attacker to invoke a configuration-impor",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-125350",
+        "vendor": "Google",
+        "product": "Chromium",
+        "name": "Google Chromium Use-After-Free Vulnerability",
+        "date_added": "2026-11-10",
+        "due_date": "2026-11-24",
+        "description": "Google Chromium contains a use-after-free vulnerability in the XML component that could allow a remote attacker to execute arbitrary code inside the sandbox via a specially crafted webpage. This vulne",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-102895",
         "vendor": "GPUStack",
@@ -174,213 +234,153 @@
         "due_date": "2026-11-10",
         "description": "Adobe Commerce and Magento contain an unrestricted upload of file with dangerous type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gainin",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-111497",
-        "vendor": "Google",
-        "product": "Brotli",
-        "name": "Google Brotli Unchecked Return Value Vulnerability",
-        "date_added": "2026-10-27",
-        "due_date": "2026-11-10",
-        "description": "Google Brotli contains an unchecked return value vulnerability that allows a remote unauthenticated attacker to corrupt adjacent decoder state memory, disclose sensitive memory contents, cause a denia",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-109618",
-        "vendor": "PHP Group",
-        "product": "PHP",
-        "name": "PHP Memory Corruption Vulnerability",
-        "date_added": "2026-10-26",
-        "due_date": "2026-10-29",
-        "description": "PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code execution.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-109619",
-        "vendor": "PHP Group",
-        "product": "PHP",
-        "name": "PHP Stale Internal Request-State Vulnerability",
-        "date_added": "2026-10-26",
-        "due_date": "2026-10-29",
-        "description": "PHP contains a stale internal request-state vulnerability that allows for unauthenticated remote code execution.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-114625",
-        "vendor": "Arista",
-        "product": "VeloCloud Orchestrator",
-        "name": "Arista VeloCloud Orchestrator SQL Injection Vulnerability",
-        "date_added": "2026-10-23",
-        "due_date": "2026-10-26",
-        "description": "Arista VeloCloud Orchestrator on-prem contains a SQL injection vulnerability that may allow a remote attacker to access privileged internal functionality and impact the VCO host. Successful exploitati",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-110447",
-        "vendor": "Collabora",
-        "product": "Collabora Online \u2013 Built-in CODE Server",
-        "name": "Collabora Online \u2013 Built-in CODE Server OS Command Injection Vulnerability",
-        "date_added": "2026-10-23",
-        "due_date": "2026-10-26",
-        "description": "Collabora Collabora Online \u2013 Built-in CODE Server when used within the NextCloud platform contains an OS command injection vulnerability that allows for remote code execution when the CODE server isn'",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-106931",
-        "vendor": "EG Secure Solutions",
-        "product": "SiteGuard Server Edition",
-        "name": "EG Secure Solutions SiteGuard Server Edition OS Command Injection Vulnerability",
-        "date_added": "2026-10-20",
-        "due_date": "2026-10-23",
-        "description": "EG Secure Solutions SiteGuard Server Edition contains an OS command injection vulnerability which may allow an attacker to execute arbitrary OS commands with root or SYSTEM privileges on the system ru",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 614,
-    "critical_count": 3,
-    "high_count": 27,
+    "total": 2090,
+    "critical_count": 4,
+    "high_count": 28,
     "cves": [
       {
-        "cve_id": "CVE-2026-123800",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "SuperTokens Core is an open source authentication server. From 6.0.0 until 6.0.24, 7.0.23, 8.0.7, 9.0.6, 9.1.6, 9.2.7, 9.3.5, 10.0.8, 10.1.9, 11.0.9, 11.1.4, 11.2.4, 11.3.8, 11.4.8, 12.0.11, 12.1.2, 1",
-        "published": "2026-11-09T19:16:46.647"
-      },
-      {
-        "cve_id": "CVE-2026-119756",
+        "cve_id": "CVE-2026-123807",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Tasmota through 16.0.0, fixed in commit e97e1e4, contains a heap out-of-bounds write vulnerability in SendReceiveDeviceGroupMessage() that allows unauthenticated attackers on the local network to corr",
-        "published": "2026-11-09T18:17:22.320"
+        "description": "Signal K Server is a server application that runs on a central hub in a boat. From 2.0.0 until 2.34.0 for Signal K Server and from 1.0.0 until 1.5.3 for @signalk/resources-provider, the v2 REST route ",
+        "published": "2026-11-09T22:18:36.663"
       },
       {
-        "cve_id": "CVE-2026-123270",
+        "cve_id": "CVE-2026-115934",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Redpanda Connect versions 4.39 to 4.110 contain a missing authentication vulnerability that enables unauthenticated remote code execution (RCE). In streams mode, the management HTTP API is exposed on ",
-        "published": "2026-11-09T18:17:25.207"
+        "description": "An unauthenticated SQL injection can occur on the front end of any site that uses\u00a0craft.search\u00a0to perform a search, allowing stacked query execution and enabling escalation to an administrator.\n\n\n\nNot",
+        "published": "2026-11-09T23:17:12.470"
       },
       {
-        "cve_id": "CVE-2026-121576",
+        "cve_id": "CVE-2026-125120",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Mongoose is a MongoDB object modeling tool designed to work in an asynchronous environment. Prior to 6.13.11, 7.8.12, 8.24.3, and 9.9.2, Mongoose countDocuments() does not apply the configured sanitiz",
+        "published": "2026-11-09T23:17:22.587"
+      },
+      {
+        "cve_id": "CVE-2026-125370",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Kubero 3.0.0 through 3.1.1 contains an authentication bypass vulnerability that allows unauthenticated remote attackers to forge administrative JWTs by using a hardcoded fallback signing secret when J",
+        "published": "2026-11-10T00:17:09.237"
+      },
+      {
+        "cve_id": "CVE-2026-102643",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Incorrect Privilege Assignment vulnerability in AtlasAiDev MCP Server for WordPress ai-workflow-automation-ai-agent-hub allows Privilege Escalation.This issue affects MCP Server for WordPress: from n/",
-        "published": "2026-11-09T17:17:14.493"
+        "description": "AsyncSSH is a Python package which provides an asynchronous client and server implementation of the SSHv2 protocol on top of the Python asyncio framework. Prior to 2.24.1, SFTPServer.map_path() uses p",
+        "published": "2026-11-09T22:18:21.920"
       },
       {
-        "cve_id": "CVE-2026-121769",
+        "cve_id": "CVE-2026-113970",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A use-after-free issue was addressed with improved memory management. This issue is fixed in iOS 18.7.12 and iPadOS 18.7.12, iOS 26.7.3 and iPadOS 26.7.3, iOS 27.2.1 and iPadOS 27.2.1, macOS Golden Ga",
+        "published": "2026-11-09T22:18:26.903"
+      },
+      {
+        "cve_id": "CVE-2026-56712",
         "severity": "HIGH",
         "base_score": 8.5,
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in axew3.com WP w3all phpBB wp-w3all-phpbb-integration allows SQL Injection.This issue affects WP w3a",
-        "published": "2026-11-09T19:16:46.130"
+        "description": "Replicate Cog through 0.23.1 contains a server-side request forgery vulnerability that allows attackers to cause the Cog process to make server-side HTTP requests by submitting prediction inputs with ",
+        "published": "2026-11-09T22:18:52.290"
       },
       {
-        "cve_id": "CVE-2026-19706",
+        "cve_id": "CVE-2026-125117",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "During ABI bootstrap, the bootstrap node's approve-csr.service approves and signs every CSR without identity validation.\n\nAn attacker on the install network can retrieve the unauthenticated Ignition f",
-        "published": "2026-11-09T18:17:27.583"
+        "base_score": 8.2,
+        "description": "Mongoose is a MongoDB object modeling tool designed to work in an asynchronous environment. Prior to 6.13.12, 7.8.13, 8.24.7, and 9.11.4, Mongoose can descend into inherited properties while loading d",
+        "published": "2026-11-09T23:17:22.080"
       },
       {
-        "cve_id": "CVE-2026-115338",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Insufficient protection of communications in Progress WS_FTP Server versions prior to 2025.0.5 could allow a network attacker to intercept sensitive information or modify requests when unencrypted con",
-        "published": "2026-11-09T17:17:11.240"
-      },
-      {
-        "cve_id": "CVE-2026-123798",
+        "cve_id": "CVE-2026-119759",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "SuperTokens Core is an open source authentication server. From 11.3.0 until 11.3.7, 11.4.7, and 12.0.10, SAML.verifySamlResponseSignature calls OpenSAML SignatureValidator.validate without first apply",
-        "published": "2026-11-09T19:16:46.280"
+        "description": "TrailBase 0.28.2 before 0.35.10 contains an insecure direct object reference vulnerability that allows authenticated attackers to manipulate the object-store id metadata within std.FileUpload columns ",
+        "published": "2026-11-09T22:18:28.620"
       },
       {
-        "cve_id": "CVE-2026-123802",
+        "cve_id": "CVE-2026-123816",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "SuperTokens Core is an open source authentication server. From 11.3.0 until 11.3.8, 11.4.8, 12.0.11, 12.1.2, 12.2.1, and 12.3.1, a licensed deployment with a configured SAML client can authenticate an",
-        "published": "2026-11-09T19:16:47.083"
+        "description": "pyLoad is a free and open-source download manager written in Python. Prior to 0.5.0b3.dev101, Api.check_apikey caches successful validation in self._apikey_cache using only the attacker-controlled key",
+        "published": "2026-11-09T22:18:38.110"
       },
       {
-        "cve_id": "CVE-2026-123803",
+        "cve_id": "CVE-2026-125358",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "SuperTokens Core is an open source authentication server. From 10.1.0 until 11.0.9, 11.1.4, 11.2.4, 11.3.8, 11.4.8, 12.0.11, 12.1.2, 12.2.1, and 12.3.1, loadOptionsById_Transaction and getUserInfoByCr",
-        "published": "2026-11-09T19:16:47.273"
+        "description": "Universal-modder before commit e88f6876745427321eb755ebc98276063a962d8a contains a missing WebSocket Origin validation vulnerability in the HostLink class of its passthrough example mods that allows r",
+        "published": "2026-11-10T00:17:07.180"
       },
       {
-        "cve_id": "CVE-2026-124001",
+        "cve_id": "CVE-2026-125364",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "NASA JPL ION-DTN 2.2.1b through 4.2.0 contains an integer overflow vulnerability in the Datagram Retransmission (DGR) convergence layer that allows attackers to corrupt heap memory by sending a malici",
-        "published": "2026-11-09T19:16:48.003"
+        "description": "frab through 0.9.1 contains a privilege escalation vulnerability that allows authenticated crew users to grant themselves orga roles by submitting unchecked nested conference_users_attributes. Attacke",
+        "published": "2026-11-10T00:17:08.220"
       },
       {
-        "cve_id": "CVE-2026-115341",
+        "cve_id": "CVE-2026-114031",
         "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Improper access restrictions in the Thin Client Web Transfer component of Progress Software WS_FTP Server versions prior to 2025.0.5 on Windows could allow an authenticated FTP user to access files ou",
-        "published": "2026-11-09T17:17:11.663"
+        "base_score": 7.8,
+        "description": "Incorrect permission assignment allows local privilege escalation to SYSTEM on affected releases of the Illumio VEN for Windows. Code execution as NT AUTHORITY\\LOCAL SERVICE on the Windows host is req",
+        "published": "2026-11-09T22:18:27.257"
       },
       {
-        "cve_id": "CVE-2026-115339",
+        "cve_id": "CVE-2026-114032",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Insufficient resource limits in Progress Software WS_FTP Server releases prior to 2025.0.5 on Windows could allow an unauthenticated remote attacker to cause denial of service.",
-        "published": "2026-11-09T17:17:11.380"
+        "base_score": 7.8,
+        "description": "The OpenSSL library bundled with the Illumio VEN for Windows is affected by an uncontrolled search path vulnerability. A low-privileged, authenticated local attacker could potentially leverage this vu",
+        "published": "2026-11-09T22:18:27.397"
       },
       {
-        "cve_id": "CVE-2026-119755",
+        "cve_id": "CVE-2026-63496",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Tasmota through 16.0.0, fixed in commit 1cb7ebc, contains a cross-site request forgery vulnerability that allows unauthenticated attackers to bypass Referer-based CSRF protection in HttpCheckPriviledg",
-        "published": "2026-11-09T18:17:22.163"
+        "base_score": 7.8,
+        "description": "augment-vir is a collection of helper functions. Prior to version 31.73.5, the grep() function exported by @augment-vir/node inserts caller-controlled search patterns directly into a double-quoted she",
+        "published": "2026-11-09T22:18:53.473"
       },
       {
-        "cve_id": "CVE-2026-123797",
+        "cve_id": "CVE-2026-90586",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "SuperTokens Core is an open source authentication server. Prior to 11.3.6, 11.4.6, and 12.0.8, app-specific management requests using an unknown tenant path and an older supported cdi-version can bypa",
-        "published": "2026-11-09T18:17:26.890"
+        "base_score": 7.8,
+        "description": "The Xtensa MMU userspace port never initialized the per-thread page-table pointer thread->arch.ptables during thread setup, while arch_mem_domain_thread_add() in arch/xtensa/core/ptables.c uses a non-",
+        "published": "2026-11-09T22:18:56.813"
       },
       {
-        "cve_id": "CVE-2026-112314",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "clnttcp_call() in lib/rpc/clnt_tcp.c in MIT Kerberos 5 (aka krb5) does not free the RPC reply verifier between retries, which allows remote attackers to cause a denial of service (memory leak in GSS-R",
-        "published": "2026-11-09T19:16:39.867"
-      },
-      {
-        "cve_id": "CVE-2026-112320",
+        "cve_id": "CVE-2026-113961",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "The GSS-RPC transport layer in MIT Kerberos 5 (aka krb5) 1.4 and later does not release the previous authentication context when a client switches from an RPCSEC_GSS or AUTH_GSSAPI flavor to a non-GSS",
-        "published": "2026-11-09T19:16:40.887"
+        "description": "An authorization issue was addressed with improved validation. This issue is fixed in iOS 26.7.3 and iPadOS 26.7.3, iOS 27.2.1 and iPadOS 27.2.1, macOS Golden Gate 27.2.1, macOS Sequoia 15.8.3, macOS ",
+        "published": "2026-11-09T22:18:25.917"
       },
       {
-        "cve_id": "CVE-2026-112321",
+        "cve_id": "CVE-2026-123811",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "The AUTH_GSSAPI handler in lib/rpc/svc_auth_gssapi.c in MIT Kerberos 5 (aka krb5) does not free decoded arguments on certain error paths, which allows remote attackers to cause a denial of service (me",
-        "published": "2026-11-09T19:16:41.050"
+        "description": "Dynatrace MCP Server is an MCP server for Dynatrace Observability. Prior to 2.0.0, a server started with the --http option accepts JSON-RPC tools/call requests without authentication, session validati",
+        "published": "2026-11-09T22:18:37.287"
       },
       {
-        "cve_id": "CVE-2026-112322",
+        "cve_id": "CVE-2026-123813",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "clean_client() in lib/rpc/svc_auth_gssapi.c in MIT Kerberos 5 (aka krb5) restarts its scan from the head of the client list after each removal, resulting in quadratic CPU cost. Remote attackers can ca",
-        "published": "2026-11-09T19:16:41.207"
+        "description": "pyLoad is a free and open-source download manager written in Python. Prior to 0.5.0b3.dev102, pyLoad does not invalidate existing Flask sessions when an administrator changes a user's permissions or p",
+        "published": "2026-11-09T22:18:37.587"
       },
       {
-        "cve_id": "CVE-2026-112323",
+        "cve_id": "CVE-2026-123818",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "The AUTH_GSSAPI handler in lib/rpc/svc_auth_gssapi.c in MIT Kerberos 5 (aka krb5) 1.5.2 and later allows remote attackers to cause a denial of service (memory exhaustion in kadmind) by sending repeate",
-        "published": "2026-11-09T19:16:41.360"
+        "description": "LMDeploy is a toolkit for compressing, deploying, and serving large language models. From 0.12.3 until 0.15.0, _is_safe_url validates remote media URLs with urlparse while requests.Session().get inter",
+        "published": "2026-11-09T22:18:38.437"
       }
     ]
   },
