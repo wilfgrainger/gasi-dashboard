@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-12T01:43:59.821140+00:00",
+  "generated_at": "2026-11-12T11:58:58.140784+00:00",
   "threat_score": {
-    "score": 6.5,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 8,
-        "score": 2.5,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 658,
-    "critical_count": 8,
-    "high_count": 19,
+    "total": 619,
+    "critical_count": 1,
+    "high_count": 15,
     "cves": [
       {
-        "cve_id": "CVE-2026-64678",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "NOsql Object (NO2 a.k.a Nitrite) database is an open source nosql embedded document store. Prior to version 4.4.1, when Nitrite opens a database file, MVStoreUtils.openOrCreate() automatically checks ",
-        "published": "2026-11-11T05:19:51.937"
-      },
-      {
-        "cve_id": "CVE-2026-64682",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "AstroBlocks is a block-first CMS for Astro projects. Prior to version 3.4.0, admin session tokens can be forged due to a hard-coded fallback JWT secret and a mismatched environment variable name. An a",
-        "published": "2026-11-11T05:19:52.120"
-      },
-      {
-        "cve_id": "CVE-2026-121497",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The AskAny  WordPress plugin before 2.2.0 does not validate the extension or content of files attached to chat messages, trusting the browser-supplied file type instead, which allows unauthenticated u",
-        "published": "2026-11-11T06:17:16.570"
-      },
-      {
-        "cve_id": "CVE-2026-123695",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The Security For WooCommerce WordPress plugin through 1.0.16 does not restrict access to several of its REST API routes, allowing unauthenticated users to generate login tokens for every user and then",
-        "published": "2026-11-11T06:17:18.470"
-      },
-      {
-        "cve_id": "CVE-2026-115734",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "The Pay with a tweet WordPress plugin through 1.0.5 does not validate a file path before deleting it, nor does it restrict access to the relevant administration screens, allowing users with a role as ",
-        "published": "2026-11-11T06:17:13.753"
-      },
-      {
-        "cve_id": "CVE-2026-115735",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "The Somatic Framework WordPress plugin through 1.8.14 does not perform an authorization check or validate a user-supplied file path before deleting it, allowing any authenticated user, such as a subsc",
-        "published": "2026-11-11T06:17:13.893"
-      },
-      {
-        "cve_id": "CVE-2026-64670",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Waline is a comment system with backend support. In versions 3.15.2 and prior, @waline/client renders the comment editor's live preview with marked and no sanitizer (utils/markdown.ts), and the previe",
-        "published": "2026-11-11T05:19:51.527"
-      },
-      {
-        "cve_id": "CVE-2026-115733",
+        "cve_id": "CVE-2026-126537",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "The Printaura-Woocommerce WordPress plugin through 4.0.2 does not properly restrict access to the WooCommerce REST API, causing every WooCommerce REST route to accept unauthenticated requests, which a",
-        "published": "2026-11-11T06:17:13.607"
+        "description": "The Ninja Forms - File Uploads add-on for WordPress is vulnerable to Arbitrary File Deletion (and arbitrary file read via S3/Dropbox/Google Drive exfiltration) in versions up to, and including, 3.3.36",
+        "published": "2026-11-11T13:17:23.810"
       },
       {
-        "cve_id": "CVE-2026-118041",
+        "cve_id": "CVE-2026-103883",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The Contest Gallery  WordPress plugin before 34.0.3 does not sanitise the name of files uploaded through its e-commerce sale file-replacement feature, allowing authenticated users with Author-level ac",
-        "published": "2026-11-11T06:17:14.767"
+        "description": "The 6Storage Rentals plugin for WordPress is vulnerable to Authentication Bypass leading to Administrator Account Takeover in all versions up to, and including, 2.31.0. The vulnerability exists becaus",
+        "published": "2026-11-11T12:18:14.700"
       },
       {
-        "cve_id": "CVE-2026-121862",
+        "cve_id": "CVE-2026-119615",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The Knowledge Building WordPress plugin before 0.7.3 does not sanitise and escape comments submitted through its reply feature, and publishes them without moderation, allowing unauthenticated users to",
-        "published": "2026-11-11T06:17:16.710"
+        "description": "The Reset Database plugin for WordPress is vulnerable to privilege escalation in versions up to, and including, 1.1.3. This is due to the process_reset() function being registered on admin_init with n",
+        "published": "2026-11-11T12:19:15.223"
       },
       {
-        "cve_id": "CVE-2026-121998",
+        "cve_id": "CVE-2026-125784",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The iChart  WordPress plugin before 2.2.4 does not perform capability or ownership checks in several of its AJAX actions, relying only on a nonce that any logged-in user can obtain, allowing users wit",
-        "published": "2026-11-11T06:17:17.270"
+        "description": "Cross-Site Request Forgery (CSRF) vulnerability in Magnigenie RestroPress restropress allows Cross Site Request Forgery.This issue affects RestroPress: from n/a through 3.4.11.",
+        "published": "2026-11-11T12:19:50.867"
       },
       {
-        "cve_id": "CVE-2026-123134",
+        "cve_id": "CVE-2026-118411",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The Smoove abandoned cart trigger for WooCommerce WordPress plugin before 4.3.6 does not sanitise and escape abandoned-cart data submitted by visitors before outputting it in the admin dashboard, allo",
-        "published": "2026-11-11T06:17:17.693"
+        "description": "Cross-Site Request Forgery (CSRF) in Apache Roller 5.0.1 through 6.1.6 allows an unauthenticated attacker to create an administrator account if a logged-in Roller administrator opens a link that the a",
+        "published": "2026-11-11T13:17:16.313"
       },
       {
-        "cve_id": "CVE-2026-63660",
+        "cve_id": "CVE-2026-125446",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "node-fontnik is a library that delivers a range of glyphs rendered as SDFs (signed distance fields) in a protocol buffer. Prior to version 0.7.7, a crafted font could trigger a heap out-of-bounds writ",
-        "published": "2026-11-11T03:16:52.367"
+        "base_score": 8.8,
+        "description": "Cross-Site Request Forgery (CSRF) vulnerability in WisdmLabs Edwiser Bridge edwiser-bridge allows Cross Site Request Forgery.This issue affects Edwiser Bridge: from n/a through 4.3.4.",
+        "published": "2026-11-11T13:17:21.387"
       },
       {
-        "cve_id": "CVE-2026-109870",
+        "cve_id": "CVE-2026-125838",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The User Registration & Membership  WordPress plugin before 5.3.2 does not verify that a discount coupon applied to a paid membership plan is actually valid for that plan before treating a fully disco",
-        "published": "2026-11-11T06:17:10.727"
+        "base_score": 8.8,
+        "description": "Cross-Site Request Forgery (CSRF) vulnerability in webriti Quality quality allows Cross Site Request Forgery.This issue affects Quality: from n/a through 3.3.",
+        "published": "2026-11-11T14:17:35.563"
       },
       {
-        "cve_id": "CVE-2026-111579",
+        "cve_id": "CVE-2026-125839",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Forminator Forms  WordPress plugin before 1.58.4 does not enforce payment on the server side when a form's configured payment gateway is unavailable, allowing unauthenticated visitors to complete ",
-        "published": "2026-11-11T06:17:11.617"
+        "base_score": 8.8,
+        "description": "Cross-Site Request Forgery (CSRF) vulnerability in webriti ElitePress elitepress allows Cross Site Request Forgery.This issue affects ElitePress: from n/a through 3.2.1.",
+        "published": "2026-11-11T14:17:35.750"
       },
       {
-        "cve_id": "CVE-2026-126570",
+        "cve_id": "CVE-2026-125840",
         "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "Padloc 4.0.0 before 4.3.1 contains a prototype pollution vulnerability that allows SCIM token holders to modify Object.prototype by sending crafted SCIM PATCH paths to ScimServer._handleScimUsersPatch",
-        "published": "2026-11-11T03:16:51.627"
+        "base_score": 8.8,
+        "description": "Cross-Site Request Forgery (CSRF) vulnerability in webriti Rambo rambo allows Cross Site Request Forgery.This issue affects Rambo: from n/a through 3.0.",
+        "published": "2026-11-11T14:17:35.923"
       },
       {
-        "cve_id": "CVE-2026-121870",
+        "cve_id": "CVE-2026-125841",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Cross-Site Request Forgery (CSRF) vulnerability in webriti Heroic heroic allows Cross Site Request Forgery.This issue affects Heroic: from n/a through 1.4.2.",
+        "published": "2026-11-11T14:17:36.083"
+      },
+      {
+        "cve_id": "CVE-2026-125842",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Cross-Site Request Forgery (CSRF) vulnerability in webriti Wallstreet Agency wallstreet-agency allows Cross Site Request Forgery.This issue affects Wallstreet Agency: from n/a through 1.3.4.",
+        "published": "2026-11-11T14:17:36.257"
+      },
+      {
+        "cve_id": "CVE-2026-125843",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Cross-Site Request Forgery (CSRF) vulnerability in webriti Spasalon spasalon allows Cross Site Request Forgery.This issue affects Spasalon: from n/a through 3.0.",
+        "published": "2026-11-11T14:17:36.417"
+      },
+      {
+        "cve_id": "CVE-2026-123040",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "An attacker who gains the ability to execute arbitrary code on a system with TrueConf Server (Linux) versions from 4.7.2 up to, but not including, 5.5.6 installed, running as the user trueconf (by exp",
+        "published": "2026-11-11T14:17:32.280"
+      },
+      {
+        "cve_id": "CVE-2026-105153",
+        "severity": "HIGH",
+        "base_score": 7.7,
+        "description": "Improper Restriction of XML External Entity Reference in Apache Roller 4.0 through 6.1.6 allows an authenticated user with no weblog permissions to read files readable by the Roller process and cause ",
+        "published": "2026-11-11T13:17:12.957"
+      },
+      {
+        "cve_id": "CVE-2026-126659",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "The Simpler Checkout WordPress plugin before 1.5.4 does not properly restrict who can create orders and checks its automatic login link with a key that stays empty until the store owner configures the",
-        "published": "2026-11-11T06:17:17.020"
+        "description": "BlueprintUE Self-Hosted Edition 1.0.0 before 4.3.5 contains a resource exhaustion vulnerability that allows unauthenticated attackers to fill server storage by repeatedly creating anonymous blueprints",
+        "published": "2026-11-11T13:17:24.167"
       },
       {
-        "cve_id": "CVE-2026-123696",
+        "cve_id": "CVE-2026-126662",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Security For WooCommerce WordPress plugin through 1.0.16 does not check that the requester is authorised before resetting two-factor authentication enrolment, allowing unauthenticated users to rem",
-        "published": "2026-11-11T06:17:18.607"
+        "base_score": 7.1,
+        "description": "Contao 4.0.0 before 5.3.54, 5.4.0 before 5.7.17, and 6.0.0 before 6.0.6 contains an access control bypass vulnerability that allows filemount-restricted backend users to modify folders outside their f",
+        "published": "2026-11-11T13:17:24.337"
       },
       {
-        "cve_id": "CVE-2026-123697",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Security For WooCommerce WordPress plugin through 1.0.16 does not restrict who can request a user's current two-factor code or two-factor secret, allowing unauthenticated users to obtain them for ",
-        "published": "2026-11-11T06:17:18.730"
+        "cve_id": "CVE-2026-121773",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in GeneratePress GenerateBlocks generateblocks allows Stored XSS.This issue affects GenerateBlocks: f",
+        "published": "2026-11-11T12:19:35.417"
       },
       {
-        "cve_id": "CVE-2026-123700",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Security For WooCommerce WordPress plugin through 1.0.16 does not check that the requester is authorised before running several of its comment cleanup actions, allowing unauthenticated users to pe",
-        "published": "2026-11-11T06:17:19.163"
+        "cve_id": "CVE-2026-122671",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Missing Authorization vulnerability in E2Pdf.com e2pdf e2pdf allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects e2pdf: from n/a through 1.32.65.",
+        "published": "2026-11-11T12:19:39.553"
+      },
+      {
+        "cve_id": "CVE-2026-123473",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in weDevs Happy Addons for Elementor happy-elementor-addons allows Stored XSS.This issue affects Happ",
+        "published": "2026-11-11T12:19:42.287"
+      },
+      {
+        "cve_id": "CVE-2026-124752",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in BdThemes Element Pack Elementor Addons bdthemes-element-pack-lite allows Stored XSS.This issue aff",
+        "published": "2026-11-11T12:19:48.183"
       }
     ]
   },
