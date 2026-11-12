@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-11-11T19:00:30.090986+00:00",
+  "generated_at": "2026-11-12T01:43:59.821140+00:00",
   "threat_score": {
-    "score": 5.0,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.5,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 40,
+        "value": 38,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 1.0,
+        "value": 8,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1779,
-    "recent_30d_count": 40,
+    "recent_30d_count": 38,
     "recent": [
       {
         "cve_id": "CVE-2026-124194",
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 1922,
-    "critical_count": 0,
-    "high_count": 80,
+    "total": 658,
+    "critical_count": 8,
+    "high_count": 19,
     "cves": [
       {
-        "cve_id": "CVE-2026-105020",
+        "cve_id": "CVE-2026-64678",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "NOsql Object (NO2 a.k.a Nitrite) database is an open source nosql embedded document store. Prior to version 4.4.1, when Nitrite opens a database file, MVStoreUtils.openOrCreate() automatically checks ",
+        "published": "2026-11-11T05:19:51.937"
+      },
+      {
+        "cve_id": "CVE-2026-64682",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "AstroBlocks is a block-first CMS for Astro projects. Prior to version 3.4.0, admin session tokens can be forged due to a hard-coded fallback JWT secret and a mismatched environment variable name. An a",
+        "published": "2026-11-11T05:19:52.120"
+      },
+      {
+        "cve_id": "CVE-2026-121497",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The AskAny  WordPress plugin before 2.2.0 does not validate the extension or content of files attached to chat messages, trusting the browser-supplied file type instead, which allows unauthenticated u",
+        "published": "2026-11-11T06:17:16.570"
+      },
+      {
+        "cve_id": "CVE-2026-123695",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The Security For WooCommerce WordPress plugin through 1.0.16 does not restrict access to several of its REST API routes, allowing unauthenticated users to generate login tokens for every user and then",
+        "published": "2026-11-11T06:17:18.470"
+      },
+      {
+        "cve_id": "CVE-2026-115734",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "The Pay with a tweet WordPress plugin through 1.0.5 does not validate a file path before deleting it, nor does it restrict access to the relevant administration screens, allowing users with a role as ",
+        "published": "2026-11-11T06:17:13.753"
+      },
+      {
+        "cve_id": "CVE-2026-115735",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "The Somatic Framework WordPress plugin through 1.8.14 does not perform an authorization check or validate a user-supplied file path before deleting it, allowing any authenticated user, such as a subsc",
+        "published": "2026-11-11T06:17:13.893"
+      },
+      {
+        "cve_id": "CVE-2026-64670",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Waline is a comment system with backend support. In versions 3.15.2 and prior, @waline/client renders the comment editor's live preview with marked and no sanitizer (utils/markdown.ts), and the previe",
+        "published": "2026-11-11T05:19:51.527"
+      },
+      {
+        "cve_id": "CVE-2026-115733",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The Printaura-Woocommerce WordPress plugin through 4.0.2 does not properly restrict access to the WooCommerce REST API, causing every WooCommerce REST route to accept unauthenticated requests, which a",
+        "published": "2026-11-11T06:17:13.607"
+      },
+      {
+        "cve_id": "CVE-2026-118041",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Heap-based buffer overflow in Windows Advanced Rasterization Platform allows an authorized attacker to elevate privileges locally.",
-        "published": "2026-11-10T19:17:42.113"
+        "description": "The Contest Gallery  WordPress plugin before 34.0.3 does not sanitise the name of files uploaded through its e-commerce sale file-replacement feature, allowing authenticated users with Author-level ac",
+        "published": "2026-11-11T06:17:14.767"
       },
       {
-        "cve_id": "CVE-2026-105021",
+        "cve_id": "CVE-2026-121862",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Heap-based buffer overflow in Windows Advanced Rasterization Platform allows an authorized attacker to elevate privileges locally.",
-        "published": "2026-11-10T19:17:42.303"
+        "description": "The Knowledge Building WordPress plugin before 0.7.3 does not sanitise and escape comments submitted through its reply feature, and publishes them without moderation, allowing unauthenticated users to",
+        "published": "2026-11-11T06:17:16.710"
       },
       {
-        "cve_id": "CVE-2026-105023",
+        "cve_id": "CVE-2026-121998",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Heap-based buffer overflow in Windows Advanced Rasterization Platform allows an authorized attacker to elevate privileges locally.",
-        "published": "2026-11-10T19:17:43.077"
+        "description": "The iChart  WordPress plugin before 2.2.4 does not perform capability or ownership checks in several of its AJAX actions, relying only on a nonce that any logged-in user can obtain, allowing users wit",
+        "published": "2026-11-11T06:17:17.270"
       },
       {
-        "cve_id": "CVE-2026-105026",
+        "cve_id": "CVE-2026-123134",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Heap-based buffer overflow in Windows Advanced Rasterization Platform allows an authorized attacker to elevate privileges locally.",
-        "published": "2026-11-10T19:17:43.697"
+        "description": "The Smoove abandoned cart trigger for WooCommerce WordPress plugin before 4.3.6 does not sanitise and escape abandoned-cart data submitted by visitors before outputting it in the admin dashboard, allo",
+        "published": "2026-11-11T06:17:17.693"
       },
       {
-        "cve_id": "CVE-2026-105490",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Stack-based buffer overflow in Windows Advanced Rasterization Platform allows an authorized attacker to elevate privileges locally.",
-        "published": "2026-11-10T19:17:46.357"
-      },
-      {
-        "cve_id": "CVE-2026-105491",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Heap-based buffer overflow in Windows Advanced Rasterization Platform allows an authorized attacker to elevate privileges locally.",
-        "published": "2026-11-10T19:17:46.540"
-      },
-      {
-        "cve_id": "CVE-2026-105493",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Stack-based buffer overflow in Windows Advanced Rasterization Platform allows an authorized attacker to elevate privileges locally.",
-        "published": "2026-11-10T19:17:46.910"
-      },
-      {
-        "cve_id": "CVE-2026-105495",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Heap-based buffer overflow in Windows Advanced Rasterization Platform allows an authorized attacker to elevate privileges locally.",
-        "published": "2026-11-10T19:17:47.213"
-      },
-      {
-        "cve_id": "CVE-2026-105496",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Double free in Windows Advanced Rasterization Platform allows an authorized attacker to elevate privileges locally.",
-        "published": "2026-11-10T19:17:47.393"
-      },
-      {
-        "cve_id": "CVE-2026-105497",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Heap-based buffer overflow in Windows Advanced Rasterization Platform allows an authorized attacker to elevate privileges locally.",
-        "published": "2026-11-10T19:17:47.623"
-      },
-      {
-        "cve_id": "CVE-2026-105498",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Heap-based buffer overflow in Windows Advanced Rasterization Platform allows an authorized attacker to elevate privileges locally.",
-        "published": "2026-11-10T19:17:47.830"
-      },
-      {
-        "cve_id": "CVE-2026-105499",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Out-of-bounds read in Windows Advanced Rasterization Platform allows an authorized attacker to elevate privileges locally.",
-        "published": "2026-11-10T19:17:48.043"
-      },
-      {
-        "cve_id": "CVE-2026-105518",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in Windows iSCSI allows an unauthorized attacker to execute code over a network.",
-        "published": "2026-11-10T19:17:50.957"
-      },
-      {
-        "cve_id": "CVE-2026-105534",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Heap-based buffer overflow in Windows Storage allows an unauthorized attacker to execute code over a network.",
-        "published": "2026-11-10T19:17:54.677"
-      },
-      {
-        "cve_id": "CVE-2026-105542",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Untrusted pointer dereference in Windows NTFS allows an unauthorized attacker to execute code over a network.",
-        "published": "2026-11-10T19:17:55.947"
-      },
-      {
-        "cve_id": "CVE-2026-105581",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Stack-based buffer overflow in Desktop Window Manager allows an authorized attacker to elevate privileges locally.",
-        "published": "2026-11-10T19:18:00.837"
-      },
-      {
-        "cve_id": "CVE-2026-108401",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Heap-based buffer overflow in Windows Remote Desktop Services allows an authorized attacker to execute code over a network.",
-        "published": "2026-11-10T19:18:02.807"
-      },
-      {
-        "cve_id": "CVE-2026-102236",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Improper restriction of rendered ui layers or frames in Visual Studio Code allows an unauthorized attacker to bypass a security feature locally.",
-        "published": "2026-11-10T19:17:40.657"
-      },
-      {
-        "cve_id": "CVE-2026-102224",
-        "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "Improper neutralization of special elements used in an os command ('os command injection') in Azure CycleCloud allows an authorized attacker to elevate privileges over a network.",
-        "published": "2026-11-10T19:17:40.010"
-      },
-      {
-        "cve_id": "CVE-2026-102219",
+        "cve_id": "CVE-2026-63660",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Inadequate encryption strength in Windows Modern Device Management (MDM) allows an unauthorized attacker to execute code over a network.",
-        "published": "2026-11-10T19:17:39.797"
+        "description": "node-fontnik is a library that delivers a range of glyphs rendered as SDFs (signed distance fields) in a protocol buffer. Prior to version 0.7.7, a crafted font could trigger a heap out-of-bounds writ",
+        "published": "2026-11-11T03:16:52.367"
+      },
+      {
+        "cve_id": "CVE-2026-109870",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The User Registration & Membership  WordPress plugin before 5.3.2 does not verify that a discount coupon applied to a paid membership plan is actually valid for that plan before treating a fully disco",
+        "published": "2026-11-11T06:17:10.727"
+      },
+      {
+        "cve_id": "CVE-2026-111579",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The Forminator Forms  WordPress plugin before 1.58.4 does not enforce payment on the server side when a form's configured payment gateway is unavailable, allowing unauthenticated visitors to complete ",
+        "published": "2026-11-11T06:17:11.617"
+      },
+      {
+        "cve_id": "CVE-2026-126570",
+        "severity": "HIGH",
+        "base_score": 7.6,
+        "description": "Padloc 4.0.0 before 4.3.1 contains a prototype pollution vulnerability that allows SCIM token holders to modify Object.prototype by sending crafted SCIM PATCH paths to ScimServer._handleScimUsersPatch",
+        "published": "2026-11-11T03:16:51.627"
+      },
+      {
+        "cve_id": "CVE-2026-121870",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Simpler Checkout WordPress plugin before 1.5.4 does not properly restrict who can create orders and checks its automatic login link with a key that stays empty until the store owner configures the",
+        "published": "2026-11-11T06:17:17.020"
+      },
+      {
+        "cve_id": "CVE-2026-123696",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Security For WooCommerce WordPress plugin through 1.0.16 does not check that the requester is authorised before resetting two-factor authentication enrolment, allowing unauthenticated users to rem",
+        "published": "2026-11-11T06:17:18.607"
+      },
+      {
+        "cve_id": "CVE-2026-123697",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Security For WooCommerce WordPress plugin through 1.0.16 does not restrict who can request a user's current two-factor code or two-factor secret, allowing unauthenticated users to obtain them for ",
+        "published": "2026-11-11T06:17:18.730"
+      },
+      {
+        "cve_id": "CVE-2026-123700",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Security For WooCommerce WordPress plugin through 1.0.16 does not check that the requester is authorised before running several of its comment cleanup actions, allowing unauthenticated users to pe",
+        "published": "2026-11-11T06:17:19.163"
       }
     ]
   },
