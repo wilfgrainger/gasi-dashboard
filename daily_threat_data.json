@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-11-12T19:37:36.269865+00:00",
+  "generated_at": "2026-11-13T00:47:35.225079+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 38,
+        "value": 34,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 10,
-        "score": 3.0,
+        "value": 6,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1779,
-    "recent_30d_count": 38,
+    "recent_30d_count": 34,
     "recent": [
       {
         "cve_id": "CVE-2026-124194",
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 550,
-    "critical_count": 10,
-    "high_count": 63,
+    "total": 392,
+    "critical_count": 6,
+    "high_count": 47,
     "cves": [
       {
-        "cve_id": "CVE-2026-126797",
+        "cve_id": "CVE-2026-124815",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "The Clockinator Lite WordPress plugin before 1.1.0 does not restrict access to several of its record deletion actions, and uses a user-supplied table name in a SQL query without validating or escaping",
+        "published": "2026-11-12T06:17:13.853"
+      },
+      {
+        "cve_id": "CVE-2026-12591",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "Zohocorp ManageEngine\u00a0M365 Manager Plus\u00a0versions below\u00a04818\u00a0is affected by\u00a0an authenticated technician may exploit insufficient permission validation in the delegated administration interface to escal",
+        "published": "2026-11-12T07:16:47.260"
+      },
+      {
+        "cve_id": "CVE-2026-76954",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "NextScan 1.1.0 through 1.2.0 contains an authentication bypass vulnerability in ns-admin that allows unauthenticated attackers to forge administrator tokens using a hardcoded JWT signing key. Attacker",
-        "published": "2026-11-11T21:16:43.027"
+        "description": "An improper neutralization of special elements used in an SQL command vulnerability in the Auth API in Synology DiskStation Manager (DSM) before 7.2.1-69057-13, 7.2.2-72806-10, 7.3.2-86009-5, and 7.4.",
+        "published": "2026-11-12T04:17:20.407"
       },
       {
-        "cve_id": "CVE-2026-126812",
+        "cve_id": "CVE-2026-110959",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "blueprintUE Self-Hosted Edition before 4.3.7 contains an insecure default configuration in its Docker Compose examples that sets MYSQL_ALLOW_EMPTY_PASSWORD=yes in database.env and publishes MariaDB on",
-        "published": "2026-11-11T21:16:45.690"
+        "description": "The Descope WordPress plugin before 1.2.0 does not validate the authentication token it receives before creating a WordPress session, accepting any non-empty token, so an unauthenticated attacker can ",
+        "published": "2026-11-12T06:17:11.100"
       },
       {
-        "cve_id": "CVE-2026-126147",
+        "cve_id": "CVE-2026-124814",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "A improper limitation of a pathname to a restricted directory ('path traversal') vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6, FortiMail 7.4.0 through 7.4.8, ",
-        "published": "2026-11-11T22:17:11.880"
+        "description": "The Ultimate Addons for Elementor Forms WordPress plugin before 1.0.8 does not properly validate the extension of uploaded files in its bundled file upload field, allowing unauthenticated users to upl",
+        "published": "2026-11-12T06:17:13.743"
       },
       {
-        "cve_id": "CVE-2026-126148",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6 may allow an unauthe",
-        "published": "2026-11-11T22:17:12.010"
-      },
-      {
-        "cve_id": "CVE-2026-126170",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "A improper encoding or escaping of output vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.2, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer Cloud 8.0.1 through 8.0.2, FortiAnalyzer Cloud 7",
-        "published": "2026-11-11T22:17:15.340"
-      },
-      {
-        "cve_id": "CVE-2026-126164",
-        "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "A improper neutralization of special elements used in an sql command ('sql injection') vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6, FortiMail 7.4.0 through 7",
-        "published": "2026-11-11T22:17:14.537"
-      },
-      {
-        "cve_id": "CVE-2026-126150",
+        "cve_id": "CVE-2026-12507",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "A weak password recovery mechanism for forgotten password vulnerability in Fortinet FortiMail 8.0.0, FortiMail 7.6.0 through 7.6.5, FortiMail 7.4.0 through 7.4.7, FortiMail 7.2.0 through 7.2.9 may all",
-        "published": "2026-11-11T22:17:12.543"
+        "description": "Zohocorp ManageEngine AssetExplorer versions below 7860, ServiceDesk Plus versions below 15290, ServiceDesk Plus MSP versions below 15150, and SupportCenter Plus versions below 15150 are affected by a",
+        "published": "2026-11-12T07:16:46.750"
       },
       {
-        "cve_id": "CVE-2026-126155",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A incorrect authorization vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6, FortiMail 7.4.0 through 7.4.8, FortiMail 7.2 all versions may allow an unauthenticated",
-        "published": "2026-11-11T22:17:13.323"
-      },
-      {
-        "cve_id": "CVE-2026-126156",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A authorization bypass through user-controlled key vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6, FortiMail 7.4.0 through 7.4.8, FortiMail 7.2 all versions may",
-        "published": "2026-11-11T22:17:13.450"
-      },
-      {
-        "cve_id": "CVE-2026-126157",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "A improper authentication vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6, FortiMail 7.4.0 through 7.4.8, FortiMail 7.2 all versions may allow an unauthenticated",
-        "published": "2026-11-11T22:17:13.587"
-      },
-      {
-        "cve_id": "CVE-2026-100307",
+        "cve_id": "CVE-2026-126785",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Missing authorization in the external management API in Amazon mcp-gateway-registry 1.0.9 through 1.24.7 might allow an authenticated remote user to assign the registry administrator scope to their ow",
-        "published": "2026-11-11T21:16:41.933"
+        "description": "A vulnerability has been found in rmalright TR-VISION HOME 2.0.5. Impacted is the function sub_11504 in the library WFanManager.sys of the component IOCTL Handler. Such manipulation leads to incorrect",
+        "published": "2026-11-12T01:17:11.603"
       },
       {
-        "cve_id": "CVE-2026-126801",
+        "cve_id": "CVE-2026-122044",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Rote 1.2.0 through 2.6.0 contains an authorization bypass in the OAuth bind/merge endpoint that allows authenticated users to merge any OAuth-bound account into their own. Attackers can submit a publi",
-        "published": "2026-11-11T21:16:43.670"
+        "description": "Philips Hue Bridge Pro Protection Mechanism Failure Authentication Bypass Vulnerability. This vulnerability allows network-adjacent attackers to bypass authentication on affected installations of Phil",
+        "published": "2026-11-12T03:17:11.247"
       },
       {
-        "cve_id": "CVE-2026-126144",
+        "cve_id": "CVE-2026-13672",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A improper neutralization of special elements used in an os command ('os command injection') vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.4, FortiMail 7.4.0 thr",
-        "published": "2026-11-11T22:17:11.400"
+        "description": "An authorization bypass through user-controlled key vulnerability in the SSOAuth in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to read ",
+        "published": "2026-11-12T04:17:18.343"
       },
       {
-        "cve_id": "CVE-2026-126175",
+        "cve_id": "CVE-2026-18792",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A improper neutralization of special elements used in an sql command ('sql injection') vulnerability in Fortinet FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.",
-        "published": "2026-11-11T22:17:15.747"
+        "description": "An improper limitation of a pathname to a restricted directory vulnerability in the Sharing API in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated",
+        "published": "2026-11-12T04:17:19.127"
       },
       {
-        "cve_id": "CVE-2026-126800",
+        "cve_id": "CVE-2026-74857",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "Hydro @hydrooj/ui-default before 4.59.1 contains a stored cross-site scripting vulnerability that allows registered users to inject script by placing double quotes in language- class tokens within mar",
-        "published": "2026-11-11T21:16:43.507"
+        "base_score": 8.8,
+        "description": "A missing critical step in authentication vulnerability in the Auth API in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to read or write ",
+        "published": "2026-11-12T04:17:20.040"
       },
       {
-        "cve_id": "CVE-2026-126806",
+        "cve_id": "CVE-2026-122003",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "WWBN AVideo 14.3 through 29.7.1 contains a stored cross-site scripting vulnerability that allows uploaders to inject scripts via the videoDownloadedLink value stored unescaped through objects/aVideoEn",
-        "published": "2026-11-11T21:16:44.583"
+        "base_score": 8.8,
+        "description": "The Abilities Bridge WordPress plugin before 1.4.2 does not require a valid nonce before re-authenticating a REST API request from the logged-in session cookie, allowing attackers to make a logged-in ",
+        "published": "2026-11-12T06:17:12.810"
       },
       {
-        "cve_id": "CVE-2026-126162",
+        "cve_id": "CVE-2026-125836",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "A xml injection (aka blind xpath injection) vulnerability in Fortinet FortiMail 8.0.0 through 8.0.1, FortiMail 7.6.0 through 7.6.6 may allow a remote unauthenticated attacker to execute unauthorized c",
-        "published": "2026-11-11T22:17:14.270"
+        "base_score": 8.8,
+        "description": "Cross-Site Request Forgery (CSRF) vulnerability in Nicu Micle Simple JWT Login simple-jwt-login allows Cross Site Request Forgery.This issue affects Simple JWT Login: from n/a through 3.6.8.",
+        "published": "2026-11-12T08:16:41.267"
       },
       {
-        "cve_id": "CVE-2026-126183",
+        "cve_id": "CVE-2026-111433",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "A authorization bypass through user-controlled key vulnerability in Fortinet FortiManager 8.0.0 through 8.0.1, FortiManager 7.6.0 through 7.6.7, FortiManager 7.4.0 through 7.4.11, FortiManager 7.2.0 t",
-        "published": "2026-11-11T22:17:17.330"
+        "base_score": 8.6,
+        "description": "UNIX symbolic link (symlink) following vulnerability in openEuler iSulad on Linux.\n\nThis vulnerability is associated with program file src/daemon/modules/spec/specs_mount.c.\n\n\n\nThis issue affects iSul",
+        "published": "2026-11-12T04:17:17.160"
       },
       {
-        "cve_id": "CVE-2026-126217",
+        "cve_id": "CVE-2026-85101",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "A incorrect authorization vulnerability in Fortinet FortiAnalyzer 8.0.0 through 8.0.1, FortiAnalyzer 7.6.0 through 7.6.7, FortiAnalyzer 7.4.0 through 7.4.11, FortiAnalyzer 7.2.0 through 7.2.12, FortiA",
-        "published": "2026-11-11T22:17:19.240"
+        "base_score": 8.6,
+        "description": "An authentication bypass using an alternate path or channel vulnerability in the rsync in Synology DiskStation Manager (DSM) before 7.2.1-69057-13, 7.2.2-72806-10, 7.3.2-86009-5, and 7.4.1-90080-1 all",
+        "published": "2026-11-12T04:17:21.617"
       },
       {
-        "cve_id": "CVE-2026-125926",
+        "cve_id": "CVE-2026-124647",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Server-side request forgery (SSRF) in the server registration and update API in Amazon mcp-gateway-registry before 1.35.0 might allow an authenticated remote user to send requests from the gateway to ",
-        "published": "2026-11-11T21:16:42.867"
+        "base_score": 8.6,
+        "description": "The TI WooCommerce Wishlist WordPress plugin before 2.0.7 does not sanitise and escape user input before using it in a SQL statement in a front-end endpoint, allowing unauthenticated users to perform ",
+        "published": "2026-11-12T06:17:13.150"
+      },
+      {
+        "cve_id": "CVE-2026-18596",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "An authentication bypass using an alternate path or channel vulnerability in the OTP in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote attackers with valid use",
+        "published": "2026-11-12T04:17:18.880"
+      },
+      {
+        "cve_id": "CVE-2026-19048",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "An improper link resolution before file access vulnerability in the thumb in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote authenticated users to write arbitr",
+        "published": "2026-11-12T04:17:19.253"
+      },
+      {
+        "cve_id": "CVE-2026-81584",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "An improper neutralization of special elements used in an SQL command vulnerability in the User API in Synology DiskStation Manager (DSM) before 7.3.2-86009-5 and 7.4.1-90080-1 allows remote attackers",
+        "published": "2026-11-12T04:17:21.157"
+      },
+      {
+        "cve_id": "CVE-2026-76792",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The User Verification by PickPlugins WordPress plugin before 2.0.49 does not rate limit the verification step of its one-time-password login, and does not expire the generated code, allowing unauthent",
+        "published": "2026-11-12T06:17:14.937"
       }
     ]
   },
