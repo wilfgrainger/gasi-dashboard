@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-11-13T11:43:10.592238+00:00",
+  "generated_at": "2026-11-13T18:56:52.748598+00:00",
   "threat_score": {
-    "score": 5.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.5,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 34,
+        "value": 36,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 6,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -32,9 +32,29 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1779,
-    "recent_30d_count": 34,
+    "total_catalog_count": 1781,
+    "recent_30d_count": 36,
     "recent": [
+      {
+        "cve_id": "CVE-2026-114713",
+        "vendor": "UnrealIRCd",
+        "product": "UnrealIRCd",
+        "name": "UnrealIRCd Improper Neutralization of Delimiters Vulnerability",
+        "date_added": "2026-11-13",
+        "due_date": "2026-11-16",
+        "description": "UnrealIRCd UnrealIRCd contains an improper neutralization of delimiters vulnerability that allows any user on a network with two or more linked servers to inject server-to-server commands that are exe",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-123039",
+        "vendor": "Check Point",
+        "product": "Multiple Products",
+        "name": "Check Point Multiple Products Incorrect Permission Assignment for Critical Resource Vulnerability",
+        "date_added": "2026-11-13",
+        "due_date": "2026-11-16",
+        "description": "Check Point Firewall, Multi-Domain Security Management Server, Scalable Platforms, Security Gateway, and Security Management Server contain an incorrect permissions assignment for critical resources v",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-124194",
         "vendor": "Microsoft",
@@ -214,173 +234,153 @@
         "due_date": "2026-11-11",
         "description": "Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain operations without being logged.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-46300",
-        "vendor": "Linux",
-        "product": "Kernel",
-        "name": "Linux Kernel Missing Initialization of a Variable Vulnerability",
-        "date_added": "2026-10-28",
-        "due_date": "2026-10-31",
-        "description": "Linux Kernel contains a missing initialization of a variable vulnerability that could allow for unintended modification of page-cache-backed data via failure to preserve the shared-fragment marker dur",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-48356",
-        "vendor": "Adobe",
-        "product": "Commerce and Magento",
-        "name": "Adobe Commerce and Magento Unrestricted Upload of File with Dangerous Type Vulnerability",
-        "date_added": "2026-10-27",
-        "due_date": "2026-11-10",
-        "description": "Adobe Commerce and Magento contain an unrestricted upload of file with dangerous type vulnerability that could result in arbitrary code execution in the context of the current user, potentially gainin",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 703,
-    "critical_count": 1,
-    "high_count": 57,
+    "total": 782,
+    "critical_count": 6,
+    "high_count": 27,
     "cves": [
       {
-        "cve_id": "CVE-2026-19422",
+        "cve_id": "CVE-2026-124002",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "XWEB EVO versions 5.2.3 through before 5.7.0 contains a pre-authentication OS command injection vulnerability that allows unauthenticated remote attackers to execute arbitrary OS commands by injecting",
+        "published": "2026-11-12T20:18:21.597"
+      },
+      {
+        "cve_id": "CVE-2026-124004",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "XWEB EVO before 5.6.2 contains a hardcoded backdoor password vulnerability that allows unauthenticated remote attackers to gain full administrative access to the built-in Administrator account. Attack",
+        "published": "2026-11-12T20:18:22.367"
+      },
+      {
+        "cve_id": "CVE-2026-124010",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "XWEB EVO before 5.6.2 contains a command injection vulnerability that allows unauthenticated remote attackers to execute arbitrary commands as root by exploiting the setuid-root CGI xwconsole.cgi. Att",
+        "published": "2026-11-12T20:18:24.263"
+      },
+      {
+        "cve_id": "CVE-2026-107360",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "A flaw was found in rubygem-safemode. Compound assignment expressions in sandboxed code are evaluated without mediating method calls through the Jail allow-list. An authenticated attacker who can supp",
+        "published": "2026-11-12T20:18:14.907"
+      },
+      {
+        "cve_id": "CVE-2026-68548",
+        "severity": "CRITICAL",
+        "base_score": 9.4,
+        "description": "Algernon is a small self-contained pure-Go web server. Prior to version 1.17.10, Algernon's URL-prefix authorization gate matches its protected prefixes (/admin, /repo, /data) with case-sensitive stri",
+        "published": "2026-11-12T20:18:51.307"
+      },
+      {
+        "cve_id": "CVE-2026-124014",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "Zohocorp ManageEngine\u00a0DDI Central\u00a0versions below\u00a06301\u00a0is affected by\u00a0an authentication bypass vulnerability in Windows DNS and DHCP agent synchronization APIs, allowing unauthenticated user to imperso",
-        "published": "2026-11-12T13:17:16.347"
+        "description": "XWEB EVO 4.3.0 through 5.8.8 contains an unauthenticated arbitrary file write vulnerability that allows remote attackers to modify the system configuration file /etc/xwebconfig.json by sending a craft",
+        "published": "2026-11-12T20:18:25.590"
       },
       {
-        "cve_id": "CVE-2026-13764",
+        "cve_id": "CVE-2026-18379",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The Masterstudy - Education WordPress Theme theme for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 4.8.151. This is due to missing authorization and nonce vali",
-        "published": "2026-11-12T12:18:23.753"
+        "description": "A flaw was found in yggdrasil-worker-package-manager. An authenticated attacker can exploit this issue to achieve arbitrary file modification or potential privilege escalation. The vulnerability exist",
+        "published": "2026-11-12T19:17:04.040"
       },
       {
-        "cve_id": "CVE-2026-15309",
+        "cve_id": "CVE-2026-124013",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The CourseCure Courses plugin for WordPress is vulnerable to Privilege Escalation in versions up to, and including, 1.5.1. This is due to a missing capability check in the ajax_save_settings() functio",
-        "published": "2026-11-12T12:18:23.920"
+        "description": "XWEB EVO 5.6.2 through 5.8.8 contains an authenticated OS command injection vulnerability in the api.lua import_preconfiguration and restore actions, where server_url and related server credential fie",
+        "published": "2026-11-12T20:18:25.237"
       },
       {
-        "cve_id": "CVE-2026-16135",
+        "cve_id": "CVE-2026-127208",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The VibeBP plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 1.9.9.8.1. This is due to the plugin allowing arbitrary user meta updates through the set_em",
-        "published": "2026-11-12T12:18:24.087"
+        "description": "datamodel-code-generator before 0.84.0 contains a code injection vulnerability that allows attackers to achieve arbitrary code execution by supplying a malicious JSON Schema with a crafted x-python-ty",
+        "published": "2026-11-12T21:17:22.933"
       },
       {
-        "cve_id": "CVE-2026-19421",
+        "cve_id": "CVE-2026-86322",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Zohocorp ManageEngine\u00a0DDI Central\u00a0versions below\u00a06301\u00a0is affected by\u00a0a PowerShell injection vulnerability due to insufficient validation of user-supplied TXT record values in Windows DNS operations.",
-        "published": "2026-11-12T12:18:24.260"
+        "description": "A flaw was found in Foreman\u2019s Api::V2::PersonalAccessTokensController, where Foreman::Controller::UserAware#find_user resolves the target account using User.find(params[:user_id]) without applying the",
+        "published": "2026-11-12T21:17:33.057"
       },
       {
-        "cve_id": "CVE-2026-75869",
+        "cve_id": "CVE-2026-47711",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Zohocorp ManageEngine\u00a0DDI Central\u00a0versions below\u00a06301\u00a0is affected by\u00a0an authorization bypass and PowerShell command injection vulnerability that allowed authenticated non-administrative users to targe",
-        "published": "2026-11-12T13:17:16.900"
+        "base_score": 8.6,
+        "description": "BACnet Stack is a BACnet open source protocol stack C library for embedded systems. Prior to versions 1.4.4, 1.5.1, and 1.6.0, the current master demo server can be crashed remotely over BACnet/IP by ",
+        "published": "2026-11-12T20:18:41.220"
       },
       {
-        "cve_id": "CVE-2026-116304",
+        "cve_id": "CVE-2026-45265",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in PostgreSQL coordination of anonymous RECORD type identifiers among parallel workers allows a database user to execute arbitrary code as the operating system user running the database",
-        "published": "2026-11-12T15:17:38.043"
+        "base_score": 8.2,
+        "description": "BACnet Stack is a BACnet open source protocol stack C library for embedded systems. Prior to versions 1.4.4 and 1.5.1, there is a stack-based out-of-bounds write / stack-buffer-overflow in bacnet-stac",
+        "published": "2026-11-12T20:18:38.380"
       },
       {
-        "cve_id": "CVE-2026-116306",
+        "cve_id": "CVE-2026-47258",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Type confusion in PostgreSQL composite-value field assignment allows an object creator to execute arbitrary code as the operating system user running the database, via changing a composite type betwee",
-        "published": "2026-11-12T15:17:38.193"
+        "base_score": 8.2,
+        "description": "BACnet Stack is a BACnet open source protocol stack C library for embedded systems. Prior to versions 1.4.4, 1.5.1, and 1.6.0, a stack-based out-of-bounds write exists in the Notification Class object",
+        "published": "2026-11-12T20:18:40.260"
       },
       {
-        "cve_id": "CVE-2026-116307",
+        "cve_id": "CVE-2026-47259",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in PostgreSQL plperl allows an object creator to execute arbitrary code as the operating system user running the database, via re-entering plperl and freeing a prepared query while an o",
-        "published": "2026-11-12T15:17:38.340"
+        "base_score": 8.2,
+        "description": "BACnet Stack is a BACnet open source protocol stack C library for embedded systems. Prior to versions 1.4.4, 1.5.1, and 1.6.0, a RemoveListElement request targeting Notification-Class.recipient-list c",
+        "published": "2026-11-12T20:18:40.483"
       },
       {
-        "cve_id": "CVE-2026-116309",
+        "cve_id": "CVE-2026-47710",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Type confusion in PostgreSQL plperl may allow an object creator to execute arbitrary code, via blessing a non-hash reference into PostgreSQL::InServer::ARRAY.  We have not confirmed or ruled out a way",
-        "published": "2026-11-12T15:17:38.647"
+        "base_score": 8.2,
+        "description": "BACnet Stack is a BACnet open source protocol stack C library for embedded systems. Prior to versions 1.4.4, 1.5.1, and 1.6.0, a stack-buffer-overflow can be triggered in the current master branch whe",
+        "published": "2026-11-12T20:18:40.747"
       },
       {
-        "cve_id": "CVE-2026-116314",
+        "cve_id": "CVE-2026-124005",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Improper input validation in PostgreSQL pg_restore allows a non-plain archive provider to execute arbitrary code as the operating system user running pg_restore, via a crafted archive.  Note a contras",
-        "published": "2026-11-12T15:17:39.500"
+        "base_score": 8.1,
+        "description": "XWEB EVO 4.3.0 through 5.8.8 contains a weak password generation vulnerability that allows remote attackers to derive the Administrator code-of-the-day password using only the device MAC address and d",
+        "published": "2026-11-12T20:18:22.673"
       },
       {
-        "cve_id": "CVE-2026-116315",
+        "cve_id": "CVE-2026-124006",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Heap-based buffer overflow in PostgreSQL tsvector_delete() allows a database user to execute arbitrary code as the operating system user running the database, via a tsvector whose lexeme data uses a n",
-        "published": "2026-11-12T15:17:39.683"
+        "base_score": 8.1,
+        "description": "XWEB EVO through 5.8.8 contains a predictable credential generation vulnerability that allows attackers to derive the Linux root password by computing a fixed prefix combined with a daily password val",
+        "published": "2026-11-12T20:18:23.033"
       },
       {
-        "cve_id": "CVE-2026-116316",
+        "cve_id": "CVE-2026-124007",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Improper protection of alternate path in PostgreSQL security-restricted operations allows an object creator to execute arbitrary SQL as the operation's caller, via a domain, enum, or range type create",
-        "published": "2026-11-12T15:17:39.837"
+        "base_score": 8.1,
+        "description": "XWEB EVO before 5.6.2 contains a pre-authentication OS command injection vulnerability that allows unauthenticated remote attackers to execute arbitrary commands by injecting shell metacharacters into",
+        "published": "2026-11-12T20:18:23.387"
       },
       {
-        "cve_id": "CVE-2026-116317",
+        "cve_id": "CVE-2026-124012",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Heap-based buffer overflow in PostgreSQL ts_rank_cd() may allow a database user to execute arbitrary code as the operating system user running the database, via an invalid tsvector containing duplicat",
-        "published": "2026-11-12T15:17:39.993"
+        "base_score": 8.1,
+        "description": "XWEB EVO 5.6.2 through 5.8.8 contains a hardcoded credential vulnerability where the Administrator web account is configured to use password_mode daily_password with no stored password, as the Users.a",
+        "published": "2026-11-12T20:18:24.970"
       },
       {
-        "cve_id": "CVE-2026-116318",
+        "cve_id": "CVE-2026-47257",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "SQL injection in PostgreSQL pg_dump allows an object creator to execute arbitrary SQL as the user restoring the dump, via an inherited column having a child-local not-null constraint whose name requir",
-        "published": "2026-11-12T15:17:40.147"
-      },
-      {
-        "cve_id": "CVE-2026-116319",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in PostgreSQL plperl allows an object creator to execute arbitrary code as the operating system user running the database, via reentrant return_next() calls.  Versions before PostgreSQL",
-        "published": "2026-11-12T15:17:40.313"
-      },
-      {
-        "cve_id": "CVE-2026-116320",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in PostgreSQL plperl allows an object creator to execute arbitrary code as the operating system user running the database, via dropping the final reference to a Perl array or hash while",
-        "published": "2026-11-12T15:17:40.430"
-      },
-      {
-        "cve_id": "CVE-2026-116323",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Use after free in PostgreSQL pltcl allows an object creator to execute arbitrary code as the operating system user running the database, via a domain CHECK that re-enters the Tcl interpreter and frees",
-        "published": "2026-11-12T15:17:40.823"
-      },
-      {
-        "cve_id": "CVE-2026-116326",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Uncaught exceptions in PostgreSQL plperl allow an object creator to cause use of a stale sigjmp_buf, via a tied Perl object, or a Perl object whose overloaded conversion throws while plperl is handlin",
-        "published": "2026-11-12T15:17:41.077"
-      },
-      {
-        "cve_id": "CVE-2026-116328",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Integer wraparound in PostgreSQL generation memory contexts allows a database user to execute arbitrary code as the operating system user running the database, via freeing an allocation larger than 1 ",
-        "published": "2026-11-12T15:17:41.313"
+        "base_score": 8.1,
+        "description": "BACnet Stack is a BACnet open source protocol stack C library for embedded systems. In versions 1.5.0 and 1.6.0-rc1, there is a restore logic flaw in bacnet-stack that is reachable through the officia",
+        "published": "2026-11-12T20:18:40.020"
       }
     ]
   },
