@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-11-13T18:56:52.748598+00:00",
+  "generated_at": "2026-11-14T00:32:50.097627+00:00",
   "threat_score": {
-    "score": 6.5,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 4.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 36,
+        "value": 35,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
-        "score": 2.5,
+        "value": 0,
+        "score": 0.5,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1781,
-    "recent_30d_count": 36,
+    "recent_30d_count": 35,
     "recent": [
       {
         "cve_id": "CVE-2026-114713",
@@ -238,151 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 782,
-    "critical_count": 6,
-    "high_count": 27,
-    "cves": [
-      {
-        "cve_id": "CVE-2026-124002",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "XWEB EVO versions 5.2.3 through before 5.7.0 contains a pre-authentication OS command injection vulnerability that allows unauthenticated remote attackers to execute arbitrary OS commands by injecting",
-        "published": "2026-11-12T20:18:21.597"
-      },
-      {
-        "cve_id": "CVE-2026-124004",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "XWEB EVO before 5.6.2 contains a hardcoded backdoor password vulnerability that allows unauthenticated remote attackers to gain full administrative access to the built-in Administrator account. Attack",
-        "published": "2026-11-12T20:18:22.367"
-      },
-      {
-        "cve_id": "CVE-2026-124010",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "XWEB EVO before 5.6.2 contains a command injection vulnerability that allows unauthenticated remote attackers to execute arbitrary commands as root by exploiting the setuid-root CGI xwconsole.cgi. Att",
-        "published": "2026-11-12T20:18:24.263"
-      },
-      {
-        "cve_id": "CVE-2026-107360",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "A flaw was found in rubygem-safemode. Compound assignment expressions in sandboxed code are evaluated without mediating method calls through the Jail allow-list. An authenticated attacker who can supp",
-        "published": "2026-11-12T20:18:14.907"
-      },
-      {
-        "cve_id": "CVE-2026-68548",
-        "severity": "CRITICAL",
-        "base_score": 9.4,
-        "description": "Algernon is a small self-contained pure-Go web server. Prior to version 1.17.10, Algernon's URL-prefix authorization gate matches its protected prefixes (/admin, /repo, /data) with case-sensitive stri",
-        "published": "2026-11-12T20:18:51.307"
-      },
-      {
-        "cve_id": "CVE-2026-124014",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "XWEB EVO 4.3.0 through 5.8.8 contains an unauthenticated arbitrary file write vulnerability that allows remote attackers to modify the system configuration file /etc/xwebconfig.json by sending a craft",
-        "published": "2026-11-12T20:18:25.590"
-      },
-      {
-        "cve_id": "CVE-2026-18379",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw was found in yggdrasil-worker-package-manager. An authenticated attacker can exploit this issue to achieve arbitrary file modification or potential privilege escalation. The vulnerability exist",
-        "published": "2026-11-12T19:17:04.040"
-      },
-      {
-        "cve_id": "CVE-2026-124013",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "XWEB EVO 5.6.2 through 5.8.8 contains an authenticated OS command injection vulnerability in the api.lua import_preconfiguration and restore actions, where server_url and related server credential fie",
-        "published": "2026-11-12T20:18:25.237"
-      },
-      {
-        "cve_id": "CVE-2026-127208",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "datamodel-code-generator before 0.84.0 contains a code injection vulnerability that allows attackers to achieve arbitrary code execution by supplying a malicious JSON Schema with a crafted x-python-ty",
-        "published": "2026-11-12T21:17:22.933"
-      },
-      {
-        "cve_id": "CVE-2026-86322",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "A flaw was found in Foreman\u2019s Api::V2::PersonalAccessTokensController, where Foreman::Controller::UserAware#find_user resolves the target account using User.find(params[:user_id]) without applying the",
-        "published": "2026-11-12T21:17:33.057"
-      },
-      {
-        "cve_id": "CVE-2026-47711",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "BACnet Stack is a BACnet open source protocol stack C library for embedded systems. Prior to versions 1.4.4, 1.5.1, and 1.6.0, the current master demo server can be crashed remotely over BACnet/IP by ",
-        "published": "2026-11-12T20:18:41.220"
-      },
-      {
-        "cve_id": "CVE-2026-45265",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "BACnet Stack is a BACnet open source protocol stack C library for embedded systems. Prior to versions 1.4.4 and 1.5.1, there is a stack-based out-of-bounds write / stack-buffer-overflow in bacnet-stac",
-        "published": "2026-11-12T20:18:38.380"
-      },
-      {
-        "cve_id": "CVE-2026-47258",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "BACnet Stack is a BACnet open source protocol stack C library for embedded systems. Prior to versions 1.4.4, 1.5.1, and 1.6.0, a stack-based out-of-bounds write exists in the Notification Class object",
-        "published": "2026-11-12T20:18:40.260"
-      },
-      {
-        "cve_id": "CVE-2026-47259",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "BACnet Stack is a BACnet open source protocol stack C library for embedded systems. Prior to versions 1.4.4, 1.5.1, and 1.6.0, a RemoveListElement request targeting Notification-Class.recipient-list c",
-        "published": "2026-11-12T20:18:40.483"
-      },
-      {
-        "cve_id": "CVE-2026-47710",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "BACnet Stack is a BACnet open source protocol stack C library for embedded systems. Prior to versions 1.4.4, 1.5.1, and 1.6.0, a stack-buffer-overflow can be triggered in the current master branch whe",
-        "published": "2026-11-12T20:18:40.747"
-      },
-      {
-        "cve_id": "CVE-2026-124005",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "XWEB EVO 4.3.0 through 5.8.8 contains a weak password generation vulnerability that allows remote attackers to derive the Administrator code-of-the-day password using only the device MAC address and d",
-        "published": "2026-11-12T20:18:22.673"
-      },
-      {
-        "cve_id": "CVE-2026-124006",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "XWEB EVO through 5.8.8 contains a predictable credential generation vulnerability that allows attackers to derive the Linux root password by computing a fixed prefix combined with a daily password val",
-        "published": "2026-11-12T20:18:23.033"
-      },
-      {
-        "cve_id": "CVE-2026-124007",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "XWEB EVO before 5.6.2 contains a pre-authentication OS command injection vulnerability that allows unauthenticated remote attackers to execute arbitrary commands by injecting shell metacharacters into",
-        "published": "2026-11-12T20:18:23.387"
-      },
-      {
-        "cve_id": "CVE-2026-124012",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "XWEB EVO 5.6.2 through 5.8.8 contains a hardcoded credential vulnerability where the Administrator web account is configured to use password_mode daily_password with no stored password, as the Users.a",
-        "published": "2026-11-12T20:18:24.970"
-      },
-      {
-        "cve_id": "CVE-2026-47257",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "BACnet Stack is a BACnet open source protocol stack C library for embedded systems. In versions 1.5.0 and 1.6.0-rc1, there is a restore logic flaw in bacnet-stack that is reachable through the officia",
-        "published": "2026-11-12T20:18:40.020"
-      }
-    ]
+    "total": 0,
+    "critical_count": 0,
+    "high_count": 0,
+    "cves": []
   },
   "top_ips": {
     "ips": [],
