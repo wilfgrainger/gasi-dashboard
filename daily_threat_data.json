@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-16T03:52:49.594111+00:00",
+  "generated_at": "2026-11-16T12:16:26.602440+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 10,
-        "score": 3.0,
+        "value": 8,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -238,24 +238,10 @@
     ]
   },
   "nvd": {
-    "total": 109,
-    "critical_count": 10,
-    "high_count": 35,
+    "total": 128,
+    "critical_count": 8,
+    "high_count": 38,
     "cves": [
-      {
-        "cve_id": "CVE-2026-129444",
-        "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "A vulnerability was identified in D-Link DSL-6740C 20131126. This affects an unknown function of the file /etc/templates/ftpd/ftpd_conf.php of the component FTP Daemon. Such manipulation leads to hard",
-        "published": "2026-11-15T09:16:44.570"
-      },
-      {
-        "cve_id": "CVE-2026-129449",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "A security vulnerability has been detected in DrayTek Vigor2960 up to 1.5.1.6. Affected by this vulnerability is the function sub_14914 of the file /cgi-bin/mainfunction.cgi. The manipulation of the a",
-        "published": "2026-11-15T11:17:10.620"
-      },
       {
         "cve_id": "CVE-2026-129450",
         "severity": "CRITICAL",
@@ -320,18 +306,25 @@
         "published": "2026-11-15T14:17:24.497"
       },
       {
+        "cve_id": "CVE-2026-129540",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "VoAPI 1.0.0 through 1.2.0 contains a sql injection vulnerability that allows authenticated users to inject SQL by supplying crafted column names as search[...] filter keys on list endpoints such as GE",
+        "published": "2026-11-16T02:17:12.100"
+      },
+      {
+        "cve_id": "CVE-2026-82156",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Dell PowerStore contains an authorization-bypass vulnerability. A low-privileged attacker could exploit it, potentially leading to elevation of privilege to administrator.",
+        "published": "2026-11-16T04:16:44.230"
+      },
+      {
         "cve_id": "CVE-2026-125832",
         "severity": "HIGH",
         "base_score": 8.5,
         "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Passionate Programmer Peter WP Data Access wp-data-access allows SQL Injection.This issue affects ",
         "published": "2026-11-15T14:17:26.137"
-      },
-      {
-        "cve_id": "CVE-2026-129445",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "A security flaw has been discovered in D-Link DIR-850L FW1.20WWb03. This impacts an unknown function of the file /usr/sbin/consolepwd of the component Console Login. Performing a manipulation results ",
-        "published": "2026-11-15T10:16:53.970"
       },
       {
         "cve_id": "CVE-2026-129091",
@@ -341,18 +334,11 @@
         "published": "2026-11-15T19:17:16.730"
       },
       {
-        "cve_id": "CVE-2026-82568",
+        "cve_id": "CVE-2026-102448",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Give - Peer-to-Peer plugin for WordPress is vulnerable to time-based SQL Injection via the 'sort' parameter in all versions up to, and including, 2.9.3 due to insufficient escaping on the user sup",
-        "published": "2026-11-15T10:16:54.217"
-      },
-      {
-        "cve_id": "CVE-2026-82663",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Give - Peer-to-Peer plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 2.9.5. This is due to the plugin not properly verifying that a user is authoriz",
-        "published": "2026-11-15T10:16:54.410"
+        "base_score": 7.8,
+        "description": "A vulnerability has been identified in Rexroth IndraWorks. This flaw allows an attacker to execute arbitrary code on the user\u2019s system by parsing a manipulated file, because the file parser fails to p",
+        "published": "2026-11-16T10:16:45.307"
       },
       {
         "cve_id": "CVE-2026-125780",
@@ -376,11 +362,25 @@
         "published": "2026-11-15T19:17:16.273"
       },
       {
-        "cve_id": "CVE-2026-129360",
+        "cve_id": "CVE-2026-129493",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Bolo (bolo-solo) 1.7 through 2.6.4 contains an information disclosure vulnerability that allows unauthenticated attackers to read article view passwords via the public GET /articles endpoint. Attacker",
+        "published": "2026-11-16T01:17:19.897"
+      },
+      {
+        "cve_id": "CVE-2026-129494",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "CloudPaste 1.1.0 through 1.9.1 contains an information disclosure vulnerability that allows unauthenticated attackers to obtain WebDAV storage credentials through the unauthenticated /api/proxy/link e",
+        "published": "2026-11-16T01:17:20.053"
+      },
+      {
+        "cve_id": "CVE-2026-124672",
         "severity": "HIGH",
         "base_score": 7.3,
-        "description": "A weakness has been identified in Linux Foundation Magma up to 1.9.0. The impacted element is an unknown function of the file orc8r/cloud/go/services/obsidian/access/operator.go of the component Obsid",
-        "published": "2026-11-15T04:16:45.090"
+        "description": "The Burst Statistics WordPress plugin before 3.7.5 does not verify that a request is actually being routed to its own REST API before unloading every other active plugin for that request, allowing una",
+        "published": "2026-11-16T09:17:13.160"
       }
     ]
   },
