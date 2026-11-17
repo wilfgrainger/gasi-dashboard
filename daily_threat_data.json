@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T23:54:28.386231+00:00",
+  "generated_at": "2026-11-17T05:45:22.710901+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 357,
+    "total": 439,
     "critical_count": 2,
-    "high_count": 11,
+    "high_count": 9,
     "cves": [
       {
         "cve_id": "CVE-2026-129552",
@@ -255,20 +255,6 @@
         "base_score": 9.1,
         "description": "Tensei through 0.11.5 contains a privilege escalation vulnerability in @tensei/auth that allows unauthenticated or authenticated users to assign themselves arbitrary roles via the exposed User Roles f",
         "published": "2026-11-16T12:17:53.033"
-      },
-      {
-        "cve_id": "CVE-2026-129540",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "VoAPI 1.0.0 through 1.2.0 contains a sql injection vulnerability that allows authenticated users to inject SQL by supplying crafted column names as search[...] filter keys on list endpoints such as GE",
-        "published": "2026-11-16T02:17:12.100"
-      },
-      {
-        "cve_id": "CVE-2026-82156",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Dell PowerStore contains an authorization-bypass vulnerability. A low-privileged attacker could exploit it, potentially leading to elevation of privilege to administrator.",
-        "published": "2026-11-16T04:16:44.230"
       },
       {
         "cve_id": "CVE-2026-129545",
@@ -292,25 +278,18 @@
         "published": "2026-11-16T10:16:45.307"
       },
       {
-        "cve_id": "CVE-2026-129493",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Bolo (bolo-solo) 1.7 through 2.6.4 contains an information disclosure vulnerability that allows unauthenticated attackers to read article view passwords via the public GET /articles endpoint. Attacker",
-        "published": "2026-11-16T01:17:19.897"
-      },
-      {
-        "cve_id": "CVE-2026-129494",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "CloudPaste 1.1.0 through 1.9.1 contains an information disclosure vulnerability that allows unauthenticated attackers to obtain WebDAV storage credentials through the unauthenticated /api/proxy/link e",
-        "published": "2026-11-16T01:17:20.053"
-      },
-      {
         "cve_id": "CVE-2026-129547",
         "severity": "HIGH",
         "base_score": 7.5,
         "description": "Kalmia through 0.2.0 contains an authentication bypass vulnerability in RsPressMiddleware that allows unauthenticated attackers to access private documentation by supplying any non-empty viewToken coo",
         "published": "2026-11-16T12:17:52.550"
+      },
+      {
+        "cve_id": "CVE-2026-110710",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "@fastify/multipart is the official Fastify plugin for handling multipart/form-data uploads. In versions 3.0.0 through 10.1.3, temporary files written by the saveRequestFiles helper are removed only by",
+        "published": "2026-11-16T13:17:18.527"
       },
       {
         "cve_id": "CVE-2026-124672",
@@ -327,6 +306,13 @@
         "published": "2026-11-16T11:16:46.710"
       },
       {
+        "cve_id": "CVE-2026-67250",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A local privilege escalation (LPE) vulnerability in Pebble\u2019s installers could allow a local attacker with low privilege access to place a malicious Dynamic Link Library (DLL) where a privileged execut",
+        "published": "2026-11-16T12:17:59.303"
+      },
+      {
         "cve_id": "CVE-2026-129606",
         "severity": "HIGH",
         "base_score": 7.1,
@@ -339,13 +325,6 @@
         "base_score": 6.8,
         "description": "Mattermost Desktop App versions <=6.3 6.0.3 6.3.2.0 fail to monitor secondary browser windows in the local network access filter which allows an attacker-controlled server to access private network re",
         "published": "2026-11-16T12:17:41.753"
-      },
-      {
-        "cve_id": "CVE-2026-129539",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "SSCMS 7.2.0 through 7.4.0 contains an arbitrary file read vulnerability that allows any registered user-center account to copy server files by supplying source paths to the layerImageUpload endpoint. ",
-        "published": "2026-11-16T02:17:11.940"
       },
       {
         "cve_id": "CVE-2026-85240",
@@ -369,18 +348,39 @@
         "published": "2026-11-16T12:17:53.190"
       },
       {
-        "cve_id": "CVE-2026-129543",
-        "severity": "MEDIUM",
-        "base_score": 6.4,
-        "description": "Access of resource using incompatible type ('type confusion') vulnerability in Samsung Open Source Starfish allows Input Data Manipulation.",
-        "published": "2026-11-16T02:17:12.557"
-      },
-      {
-        "cve_id": "CVE-2026-129492",
+        "cve_id": "CVE-2026-129549",
         "severity": "MEDIUM",
         "base_score": 6.1,
-        "description": "Bolo (bolo-solo) 1.7 through 2.6.4 contains a stored cross-site scripting vulnerability that allows unauthenticated attackers to inject scripts via the unsanitized commentOriginalCommentName parameter",
-        "published": "2026-11-16T01:17:19.737"
+        "description": "Tensei through 0.11.5 contains an unrestricted file upload vulnerability in the @tensei/media plugin that allows unauthenticated attackers to upload dangerous file types via the files/upload route. At",
+        "published": "2026-11-16T12:17:52.860"
+      },
+      {
+        "cve_id": "CVE-2026-129553",
+        "severity": "MEDIUM",
+        "base_score": 6.1,
+        "description": "Tensei through 0.11.5 contains an open redirect vulnerability in the @tensei/social-auth SocialAuthCallbackController that allows unauthenticated attackers to redirect users by supplying an unvalidate",
+        "published": "2026-11-16T12:17:53.490"
+      },
+      {
+        "cve_id": "CVE-2026-129548",
+        "severity": "MEDIUM",
+        "base_score": 5.4,
+        "description": "Kalmia through 0.2.0 contains a stored cross-site scripting vulnerability that allows read-only authenticated users to upload HTML or SVG files via the upload-file endpoint without type restrictions. ",
+        "published": "2026-11-16T12:17:52.707"
+      },
+      {
+        "cve_id": "CVE-2026-121786",
+        "severity": "MEDIUM",
+        "base_score": 5.3,
+        "description": "The Social Viral Downloader WordPress plugin through 2.0.3 does not have authorisation or nonce checks on a log export action available to unauthenticated users, which could allow them to export the d",
+        "published": "2026-11-16T06:16:48.253"
+      },
+      {
+        "cve_id": "CVE-2026-121787",
+        "severity": "MEDIUM",
+        "base_score": 5.3,
+        "description": "The Social Viral Downloader WordPress plugin through 2.0.3 does not have authorisation or nonce checks on a log deletion action available to unauthenticated users, which could allow them to delete the",
+        "published": "2026-11-16T06:16:49.073"
       }
     ]
   },
