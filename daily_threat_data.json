@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-17T05:45:22.710901+00:00",
+  "generated_at": "2026-11-17T17:12:56.887904+00:00",
   "threat_score": {
-    "score": 6.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
-        "score": 2.0,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 439,
-    "critical_count": 2,
-    "high_count": 9,
+    "total": 375,
+    "critical_count": 1,
+    "high_count": 18,
     "cves": [
       {
-        "cve_id": "CVE-2026-129552",
+        "cve_id": "CVE-2026-53998",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Tensei through 0.11.5 contains an authentication bypass vulnerability in @tensei/auth that falls back to the hard-coded JWT signing key 'auth-secret-key' when JWT_SECRET is unset. Unauthenticated atta",
-        "published": "2026-11-16T12:17:53.337"
+        "base_score": 10.0,
+        "description": "Phoenix is an AI observability and evaluation platform. From 13.0.0 until 15.7.0, the applyChatTemplate GraphQL query passed attacker-controlled F-string templates to FStringTemplateFormatter._format,",
+        "published": "2026-11-16T20:19:06.807"
       },
       {
-        "cve_id": "CVE-2026-129550",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Tensei through 0.11.5 contains a privilege escalation vulnerability in @tensei/auth that allows unauthenticated or authenticated users to assign themselves arbitrary roles via the exposed User Roles f",
-        "published": "2026-11-16T12:17:53.033"
-      },
-      {
-        "cve_id": "CVE-2026-129545",
+        "cve_id": "CVE-2026-91115",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Kalmia through 0.2.0 contains a privilege escalation vulnerability that allows low-privileged authenticated users to modify any account via the /kal-api/auth/user/edit endpoint. Attackers holding only",
-        "published": "2026-11-16T12:17:52.203"
+        "description": "Silverstripe Framework is a PHP framework which powers the Silverstripe CMS. From 6.0.0 until 6.2.13, the writer option of i18nTextCollectorTask is passed to the dependency injector without validating",
+        "published": "2026-11-16T17:17:37.480"
       },
       {
-        "cve_id": "CVE-2026-129784",
+        "cve_id": "CVE-2026-124223",
         "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "The httpx Ruby gem parses JSON response bodies through its transcoder layer. HTTPX::Response#json delegates to Transcoder::JSON.decode, and when the oj gem is loaded and multi_json is absent, the deco",
-        "published": "2026-11-16T11:16:45.537"
+        "base_score": 8.8,
+        "description": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
+        "published": "2026-11-16T20:18:56.737"
       },
       {
-        "cve_id": "CVE-2026-102448",
+        "cve_id": "CVE-2026-126526",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Heap-based buffer overflow in Microsoft Office OneNote allows an unauthorized attacker to execute code over a network.",
+        "published": "2026-11-16T20:19:00.043"
+      },
+      {
+        "cve_id": "CVE-2026-83816",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "CodeWhale is a DeepSeek and MiMo coding agent for the terminal. Prior to 0.9.0, the ExecShellTool::approval_requirement_for path used is_parallel_readonly_command to downgrade commands to automatic ap",
+        "published": "2026-11-16T19:17:53.433"
+      },
+      {
+        "cve_id": "CVE-2026-121708",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "OpenCTI is an open source platform for managing cyber threat intelligence knowledge and observables. Prior to 7.260513.0, Draft Workspace identifiers are accepted without verifying that the authentica",
+        "published": "2026-11-16T21:17:21.137"
+      },
+      {
+        "cve_id": "CVE-2026-111760",
+        "severity": "HIGH",
+        "base_score": 8.0,
+        "description": "Git is a fast, scalable, distributed revision control system with an unusually rich command set that provides both high-level operations and full access to internals. Prior to 2.50.2, 2.51.3, 2.52.1, ",
+        "published": "2026-11-16T21:17:18.907"
+      },
+      {
+        "cve_id": "CVE-2026-113630",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "A vulnerability has been identified in Rexroth IndraWorks. This flaw allows an attacker to execute arbitrary code on the user\u2019s system by parsing a manipulated file, because the file parser fails to p",
-        "published": "2026-11-16T10:16:45.307"
+        "description": "Command injection in the documentserver-flush-cache.sh maintenance helper in ONLYOFFICE Docs (Document Server) 9.4.0-129 on the official onlyoffice/documentserver container allows a local attacker wit",
+        "published": "2026-11-16T17:17:29.080"
       },
       {
-        "cve_id": "CVE-2026-129547",
+        "cve_id": "CVE-2026-101327",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "A maliciously crafted DLL placed in a predictable, attacker-writable temporary directory used by the Autodesk Installer can lead to privilege escalation to NT AUTHORITY\\SYSTEM due to insufficient vali",
+        "published": "2026-11-16T19:17:23.323"
+      },
+      {
+        "cve_id": "CVE-2026-124019",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "VB-Audio VB-CABLE virtual audio device kernel streaming driver (vbaudio_cable64_win10.sys 10.0.10011.16384) contains out-of-bounds read and write vulnerabilities in its KSPROPSETID_Audio MUTE, VOLUMEL",
+        "published": "2026-11-16T20:18:55.690"
+      },
+      {
+        "cve_id": "CVE-2026-129295",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Kalmia through 0.2.0 contains an authentication bypass vulnerability in RsPressMiddleware that allows unauthenticated attackers to access private documentation by supplying any non-empty viewToken coo",
-        "published": "2026-11-16T12:17:52.550"
+        "description": "mail-parser is a tool that parses emails by enhancing the Python standard library and extracting message details into a comprehensive object. From 4.2.0 until 4.6.1, attacker-controlled email headers ",
+        "published": "2026-11-16T18:17:30.183"
       },
       {
-        "cve_id": "CVE-2026-110710",
+        "cve_id": "CVE-2026-129297",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "@fastify/multipart is the official Fastify plugin for handling multipart/form-data uploads. In versions 3.0.0 through 10.1.3, temporary files written by the saveRequestFiles helper are removed only by",
-        "published": "2026-11-16T13:17:18.527"
+        "description": "mail-parser is a tool that parses emails by enhancing the Python standard library and extracting message details into a comprehensive object. Prior to 4.6.2, get_server_ipaddress() can select an attac",
+        "published": "2026-11-16T18:17:30.590"
       },
       {
-        "cve_id": "CVE-2026-124672",
+        "cve_id": "CVE-2026-127218",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "The Burst Statistics WordPress plugin before 3.7.5 does not verify that a request is actually being routed to its own REST API before unloading every other active plugin for that request, allowing una",
-        "published": "2026-11-16T09:17:13.160"
+        "base_score": 7.5,
+        "description": "Axigen Mail Server 10.3.3.67 through 10.3.3.x, 10.4.42 through 10.4.x, 10.5.29 through 10.5.x, 10.6.x before 10.6.41, and 10.7.x before 10.7.3 contains an unauthenticated denial of service vulnerabili",
+        "published": "2026-11-16T19:17:35.103"
       },
       {
-        "cve_id": "CVE-2026-63245",
+        "cve_id": "CVE-2026-129266",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A local privilege escalation (LPE)\u00a0vulnerability in the Audigy Rx driver\u2019s Emupia2k.sys file could allow a local attacker with low privilege access to gain higher privileges, such as administrator rig",
-        "published": "2026-11-16T11:16:46.710"
+        "base_score": 7.5,
+        "description": "External control of a file path in Amazon Deep Java Library (DJL) versions 0.7.0 through 0.38.0 might allow a remote unauthenticated third party to read arbitrary files that the library process can ac",
+        "published": "2026-11-16T19:17:40.477"
       },
       {
-        "cve_id": "CVE-2026-67250",
+        "cve_id": "CVE-2026-83817",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A local privilege escalation (LPE) vulnerability in Pebble\u2019s installers could allow a local attacker with low privilege access to place a malicious Dynamic Link Library (DLL) where a privileged execut",
-        "published": "2026-11-16T12:17:59.303"
+        "base_score": 7.5,
+        "description": "CodeWhale is a DeepSeek and MiMo coding agent for the terminal. Prior to 0.9.0, DEFAULT_AUTOMATION_AUTO_APPROVE caused AutomationRecord::task_auto_approve to resolve an omitted setting to true, and th",
+        "published": "2026-11-16T19:17:53.590"
       },
       {
-        "cve_id": "CVE-2026-129606",
+        "cve_id": "CVE-2026-129302",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Guard Core is an API security core engine for the FastAPI-Guard, FlaskAPI Guard, and DjAPI Guard adapters. From 3.5.0 until 3.13.0, built-in penetration-detection patterns in guard_core/handlers/suspa",
+        "published": "2026-11-16T20:19:01.030"
+      },
+      {
+        "cve_id": "CVE-2026-115563",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Model Context Protocol Python SDK is the official Python SDK for Model Context Protocol servers and clients. From 1.9.1 until 1.30.0 and 2.2.0, OAuth client support in mcp.client.auth can send cre",
+        "published": "2026-11-16T21:17:20.683"
+      },
+      {
+        "cve_id": "CVE-2026-129236",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "Kubeshark is an eBPF-powered network observability tool for Kubernetes. From 53.1.0 until 53.4.0, the start_kubeshark MCP tool in cmd/mcpRunner.go uses callStartKubeshark to append caller-controlled p",
+        "published": "2026-11-16T17:17:31.313"
+      },
+      {
+        "cve_id": "CVE-2026-86046",
         "severity": "HIGH",
         "base_score": 7.1,
-        "description": "Buffer Copy without Checking Size of Input ('Classic Buffer Overflow') vulnerability in Samsung Open Source mTower allows Overflow Buffers.",
-        "published": "2026-11-16T06:16:49.183"
+        "description": "termux-sync is an open source tool for backing up and restoring a Termux environment across devices. Prior to 1.2.4, termux-sync restore uses the parent directory of the untrusted manifest.json files.",
+        "published": "2026-11-16T17:17:35.707"
       },
       {
-        "cve_id": "CVE-2026-110941",
+        "cve_id": "CVE-2026-91112",
         "severity": "MEDIUM",
         "base_score": 6.8,
-        "description": "Mattermost Desktop App versions <=6.3 6.0.3 6.3.2.0 fail to monitor secondary browser windows in the local network access filter which allows an attacker-controlled server to access private network re",
-        "published": "2026-11-16T12:17:41.753"
-      },
-      {
-        "cve_id": "CVE-2026-85240",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Mattermost Desktop App versions <=6.3 6.0.3 6.3.2.0 fail to handle filesystem errors that can occur when finalizing certain file downloads, which allows a malicious or compromised server to cause a de",
-        "published": "2026-11-16T11:16:46.850"
-      },
-      {
-        "cve_id": "CVE-2026-129546",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Kalmia through 0.2.0 contains an information disclosure vulnerability that allows authenticated read-only users to retrieve Git deployment credentials via documentation API responses. Attackers can qu",
-        "published": "2026-11-16T12:17:52.383"
-      },
-      {
-        "cve_id": "CVE-2026-129551",
-        "severity": "MEDIUM",
-        "base_score": 6.5,
-        "description": "Tensei through 0.11.5 contains a prototype pollution vulnerability in parseSortFromStringToObject of @tensei/rest that allows unauthenticated attackers to set Object.prototype properties via the sort ",
-        "published": "2026-11-16T12:17:53.190"
-      },
-      {
-        "cve_id": "CVE-2026-129549",
-        "severity": "MEDIUM",
-        "base_score": 6.1,
-        "description": "Tensei through 0.11.5 contains an unrestricted file upload vulnerability in the @tensei/media plugin that allows unauthenticated attackers to upload dangerous file types via the files/upload route. At",
-        "published": "2026-11-16T12:17:52.860"
-      },
-      {
-        "cve_id": "CVE-2026-129553",
-        "severity": "MEDIUM",
-        "base_score": 6.1,
-        "description": "Tensei through 0.11.5 contains an open redirect vulnerability in the @tensei/social-auth SocialAuthCallbackController that allows unauthenticated attackers to redirect users by supplying an unvalidate",
-        "published": "2026-11-16T12:17:53.490"
-      },
-      {
-        "cve_id": "CVE-2026-129548",
-        "severity": "MEDIUM",
-        "base_score": 5.4,
-        "description": "Kalmia through 0.2.0 contains a stored cross-site scripting vulnerability that allows read-only authenticated users to upload HTML or SVG files via the upload-file endpoint without type restrictions. ",
-        "published": "2026-11-16T12:17:52.707"
-      },
-      {
-        "cve_id": "CVE-2026-121786",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "The Social Viral Downloader WordPress plugin through 2.0.3 does not have authorisation or nonce checks on a log export action available to unauthenticated users, which could allow them to export the d",
-        "published": "2026-11-16T06:16:48.253"
-      },
-      {
-        "cve_id": "CVE-2026-121787",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "The Social Viral Downloader WordPress plugin through 2.0.3 does not have authorisation or nonce checks on a log deletion action available to unauthenticated users, which could allow them to delete the",
-        "published": "2026-11-16T06:16:49.073"
+        "description": "Silverstripe Framework is a PHP framework which powers the Silverstripe CMS. Prior to 6.2.13, a user with CMS_ACCESS_SecurityAdmin but without ADMIN can edit or reparent a group that grants ADMIN-equi",
+        "published": "2026-11-16T17:17:36.797"
       }
     ]
   },
