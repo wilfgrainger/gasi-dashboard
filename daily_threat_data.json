@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-11-17T17:12:56.887904+00:00",
+  "generated_at": "2026-11-18T01:57:13.964581+00:00",
   "threat_score": {
-    "score": 5.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 33,
+        "value": 34,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 2,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -32,9 +32,19 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1781,
-    "recent_30d_count": 33,
+    "total_catalog_count": 1782,
+    "recent_30d_count": 34,
     "recent": [
+      {
+        "cve_id": "CVE-2026-115731",
+        "vendor": "Perforce",
+        "product": "Puppet Enterprise",
+        "name": "Perforce Puppet Enterprise Deserialization of Untrusted Data Vulnerability",
+        "date_added": "2026-11-17",
+        "due_date": "2026-12-01",
+        "description": "Perforce Puppet Enterprise contains a deserialization of untrusted data vulnerability in Puppet\u2019s report-processing code that allows a client with any CA-signed agent certificate to execute arbitrary ",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-114713",
         "vendor": "UnrealIRCd",
@@ -224,163 +234,153 @@
         "due_date": "2026-11-01",
         "description": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software contains an unchecked return value to NULL pointer dereference vulnerability that could allow an unauthenticated, remote attacker to ca",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-41709",
-        "vendor": "Broadcom",
-        "product": "VMware ESX",
-        "name": "Broadcom VMWare ESX Insufficient Logging Vulnerability",
-        "date_added": "2026-10-28",
-        "due_date": "2026-11-11",
-        "description": "Broadcom VMWare ESX contains an insufficient logging vulnerability that could allow a malicious actor with admin access to perform certain operations without being logged.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 375,
-    "critical_count": 1,
-    "high_count": 18,
+    "total": 1274,
+    "critical_count": 2,
+    "high_count": 19,
     "cves": [
       {
-        "cve_id": "CVE-2026-53998",
+        "cve_id": "CVE-2026-79614",
         "severity": "CRITICAL",
-        "base_score": 10.0,
-        "description": "Phoenix is an AI observability and evaluation platform. From 13.0.0 until 15.7.0, the applyChatTemplate GraphQL query passed attacker-controlled F-string templates to FStringTemplateFormatter._format,",
-        "published": "2026-11-16T20:19:06.807"
+        "base_score": 9.8,
+        "description": "An out-of-bounds write vulnerability in \u201clibclinkc.so\u201d in Zyxel DX3301-T0/EX3301-T0 firmware versions through 5.50(ABVY.8.3)C0 could allow an unauthenticated attacker to elevate privileges and potenti",
+        "published": "2026-11-17T02:17:22.743"
       },
       {
-        "cve_id": "CVE-2026-91115",
+        "cve_id": "CVE-2026-107904",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Joomla Extension - valorapps.com - Unauthenticated Remote Code Execution in Easy File Uploader < 2.9.7 - An unauthenticated remote attacker can upload a PHP-executable file to the Joomla web root with",
+        "published": "2026-11-17T07:17:23.257"
+      },
+      {
+        "cve_id": "CVE-2026-130361",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Silverstripe Framework is a PHP framework which powers the Silverstripe CMS. From 6.0.0 until 6.2.13, the writer option of i18nTextCollectorTask is passed to the dependency injector without validating",
-        "published": "2026-11-16T17:17:37.480"
+        "description": "AdminNeo before 5.9.1 contains a parameter injection vulnerability in its ClickHouse driver that allows attackers to inject ClickHouse HTTP query parameters through an unencoded db GET parameter. Atta",
+        "published": "2026-11-17T02:17:18.690"
       },
       {
-        "cve_id": "CVE-2026-124223",
+        "cve_id": "CVE-2026-130382",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Deserialization of untrusted data in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
-        "published": "2026-11-16T20:18:56.737"
+        "description": "AdminNeo before 5.9.1 contains an authentication bypass vulnerability in OtpLoginPlugin that allows attackers knowing the database password to skip TOTP verification by abusing the permanent-login coo",
+        "published": "2026-11-17T02:17:22.380"
       },
       {
-        "cve_id": "CVE-2026-126526",
+        "cve_id": "CVE-2026-105739",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Heap-based buffer overflow in Microsoft Office OneNote allows an unauthorized attacker to execute code over a network.",
-        "published": "2026-11-16T20:19:00.043"
+        "base_score": 8.7,
+        "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 17.2 before 19.3.9, 19.4 before 19.4.8, and 19.5 before 19.5.6 that under certain conditions could have allowed an authentica",
+        "published": "2026-11-17T05:18:29.513"
       },
       {
-        "cve_id": "CVE-2026-83816",
+        "cve_id": "CVE-2026-108153",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 16.1 before 19.3.9, 19.4 before 19.4.8, and 19.5 before 19.5.6 that under certain conditions could have allowed an authentica",
+        "published": "2026-11-17T05:18:30.500"
+      },
+      {
+        "cve_id": "CVE-2026-18241",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 9.3 before 19.3.9, 19.4 before 19.4.8, and 19.5 before 19.5.6 that under certain conditions could have allowed an authenticat",
+        "published": "2026-11-17T05:18:36.843"
+      },
+      {
+        "cve_id": "CVE-2026-130366",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "CodeWhale is a DeepSeek and MiMo coding agent for the terminal. Prior to 0.9.0, the ExecShellTool::approval_requirement_for path used is_parallel_readonly_command to downgrade commands to automatic ap",
-        "published": "2026-11-16T19:17:53.433"
+        "description": "AdminNeo before 5.9.1 contains an authentication bypass vulnerability in the ClickHouse driver that allows remote attackers to log in to passwordless accounts without the configured defaultPasswordHas",
+        "published": "2026-11-17T02:17:19.593"
       },
       {
-        "cve_id": "CVE-2026-121708",
+        "cve_id": "CVE-2026-130369",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "OpenCTI is an open source platform for managing cyber threat intelligence knowledge and observables. Prior to 7.260513.0, Draft Workspace identifiers are accepted without verifying that the authentica",
-        "published": "2026-11-16T21:17:21.137"
+        "description": "phpMyFAQ 4.1.9 before 4.1.12 and 4.2.0-alpha before 4.2.0-RC.2 contains an authorization bypass vulnerability in multisite deployments that allows attackers to overwrite passkeys of accounts on other ",
+        "published": "2026-11-17T02:17:20.130"
       },
       {
-        "cve_id": "CVE-2026-111760",
+        "cve_id": "CVE-2026-130371",
         "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "Git is a fast, scalable, distributed revision control system with an unusually rich command set that provides both high-level operations and full access to internals. Prior to 2.50.2, 2.51.3, 2.52.1, ",
-        "published": "2026-11-16T21:17:18.907"
+        "base_score": 8.1,
+        "description": "phpMyFAQ before 4.1.12 and 4.2.0-alpha before 4.2.0-RC.2 contains an authentication bypass vulnerability because the web installer ignores the legacy config/database.php during 3.x upgrades. Unauthent",
+        "published": "2026-11-17T02:17:20.490"
       },
       {
-        "cve_id": "CVE-2026-113630",
+        "cve_id": "CVE-2026-130380",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "AdminNeo before 5.9.1 contains an authentication bypass vulnerability in the sqlsrv-based MS SQL driver that allows unauthenticated attackers to log in by submitting an empty username. Attackers can s",
+        "published": "2026-11-17T02:17:22.037"
+      },
+      {
+        "cve_id": "CVE-2026-121684",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The Soledad theme for WordPress is vulnerable to unauthenticated Remote Code Execution in versions up to, and including, 8.7.7 The public penci_more_post_ajax AJAX action feeds infeedads[ads_code] (ba",
+        "published": "2026-11-17T05:18:33.697"
+      },
+      {
+        "cve_id": "CVE-2026-107902",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "Command injection in the documentserver-flush-cache.sh maintenance helper in ONLYOFFICE Docs (Document Server) 9.4.0-129 on the official onlyoffice/documentserver container allows a local attacker wit",
-        "published": "2026-11-16T17:17:29.080"
+        "description": "TELLUS and TELLUS Lite provided by FUJI ELECTRIC CO., LTD. contain a use after free vulnerability. Opening a specially crafted V9 file may lead to information exposure or arbitrary code execution on t",
+        "published": "2026-11-17T04:17:26.497"
       },
       {
-        "cve_id": "CVE-2026-101327",
+        "cve_id": "CVE-2026-107493",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A maliciously crafted DLL placed in a predictable, attacker-writable temporary directory used by the Autodesk Installer can lead to privilege escalation to NT AUTHORITY\\SYSTEM due to insufficient vali",
-        "published": "2026-11-16T19:17:23.323"
+        "base_score": 7.7,
+        "description": "Issue summary: When an application passes a stack to\nPEM_X509_INFO_read_bio_ex() to add entries to, and reading fails,\nOpenSSL frees every entry in the stack, both the old ones and any new\nones, but l",
+        "published": "2026-11-17T09:17:25.870"
       },
       {
-        "cve_id": "CVE-2026-124019",
+        "cve_id": "CVE-2026-97187",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "VB-Audio VB-CABLE virtual audio device kernel streaming driver (vbaudio_cable64_win10.sys 10.0.10011.16384) contains out-of-bounds read and write vulnerabilities in its KSPROPSETID_Audio MUTE, VOLUMEL",
-        "published": "2026-11-16T20:18:55.690"
+        "base_score": 7.6,
+        "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 17.6 before 19.3.9, 19.4 before 19.4.8, and 19.5 before 19.5.6 that under certain conditions could have allowed an authentica",
+        "published": "2026-11-17T05:18:39.370"
       },
       {
-        "cve_id": "CVE-2026-129295",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "mail-parser is a tool that parses emails by enhancing the Python standard library and extracting message details into a comprehensive object. From 4.2.0 until 4.6.1, attacker-controlled email headers ",
-        "published": "2026-11-16T18:17:30.183"
-      },
-      {
-        "cve_id": "CVE-2026-129297",
+        "cve_id": "CVE-2026-12487",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "mail-parser is a tool that parses emails by enhancing the Python standard library and extracting message details into a comprehensive object. Prior to 4.6.2, get_server_ipaddress() can select an attac",
-        "published": "2026-11-16T18:17:30.590"
+        "description": "An incorrect authorization vulnerability in the SNMP parameter of Zyxel EE5301-00 customized firmware version 5.63(ACLD.2)b3_D0 could allow an unauthenticated attacker to cause a denial-of-service (Do",
+        "published": "2026-11-17T02:17:13.527"
       },
       {
-        "cve_id": "CVE-2026-127218",
+        "cve_id": "CVE-2026-130374",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Axigen Mail Server 10.3.3.67 through 10.3.3.x, 10.4.42 through 10.4.x, 10.5.29 through 10.5.x, 10.6.x before 10.6.41, and 10.7.x before 10.7.3 contains an unauthenticated denial of service vulnerabili",
-        "published": "2026-11-16T19:17:35.103"
+        "description": "AdminNeo before 5.9.1 contains an sql injection vulnerability that allows remote attackers to inject SQL by supplying crafted IN and NOT IN search values that process_length() passes unescaped. Attack",
+        "published": "2026-11-17T02:17:21.003"
       },
       {
-        "cve_id": "CVE-2026-129266",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "External control of a file path in Amazon Deep Java Library (DJL) versions 0.7.0 through 0.38.0 might allow a remote unauthenticated third party to read arbitrary files that the library process can ac",
-        "published": "2026-11-16T19:17:40.477"
-      },
-      {
-        "cve_id": "CVE-2026-83817",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "CodeWhale is a DeepSeek and MiMo coding agent for the terminal. Prior to 0.9.0, DEFAULT_AUTOMATION_AUTO_APPROVE caused AutomationRecord::task_auto_approve to resolve an omitted setting to true, and th",
-        "published": "2026-11-16T19:17:53.590"
-      },
-      {
-        "cve_id": "CVE-2026-129302",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Guard Core is an API security core engine for the FastAPI-Guard, FlaskAPI Guard, and DjAPI Guard adapters. From 3.5.0 until 3.13.0, built-in penetration-detection patterns in guard_core/handlers/suspa",
-        "published": "2026-11-16T20:19:01.030"
-      },
-      {
-        "cve_id": "CVE-2026-115563",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Model Context Protocol Python SDK is the official Python SDK for Model Context Protocol servers and clients. From 1.9.1 until 1.30.0 and 2.2.0, OAuth client support in mcp.client.auth can send cre",
-        "published": "2026-11-16T21:17:20.683"
-      },
-      {
-        "cve_id": "CVE-2026-129236",
+        "cve_id": "CVE-2026-130351",
         "severity": "HIGH",
         "base_score": 7.2,
-        "description": "Kubeshark is an eBPF-powered network observability tool for Kubernetes. From 53.1.0 until 53.4.0, the start_kubeshark MCP tool in cmd/mcpRunner.go uses callStartKubeshark to append caller-controlled p",
-        "published": "2026-11-16T17:17:31.313"
+        "description": "phpMyFAQ from 4.2.0-alpha before 4.2.0-RC.2 contains an authorization bypass vulnerability in the multisite Redis configuration store that is not tenant-scoped. As a result, tenant administrators can ",
+        "published": "2026-11-17T02:17:16.963"
       },
       {
-        "cve_id": "CVE-2026-86046",
+        "cve_id": "CVE-2026-130375",
         "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "termux-sync is an open source tool for backing up and restoring a Termux environment across devices. Prior to 1.2.4, termux-sync restore uses the parent directory of the untrusted manifest.json files.",
-        "published": "2026-11-16T17:17:35.707"
+        "base_score": 7.2,
+        "description": "AdminNeo before 5.9.1 contains a remote code execution vulnerability that allows authenticated SQLite users to bypass the check_sqlite_name() extension guard using PDO_SQLite file: URI database names.",
+        "published": "2026-11-17T02:17:21.180"
       },
       {
-        "cve_id": "CVE-2026-91112",
-        "severity": "MEDIUM",
-        "base_score": 6.8,
-        "description": "Silverstripe Framework is a PHP framework which powers the Silverstripe CMS. Prior to 6.2.13, a user with CMS_ACCESS_SecurityAdmin but without ADMIN can edit or reparent a group that grants ADMIN-equi",
-        "published": "2026-11-16T17:17:36.797"
+        "cve_id": "CVE-2026-86676",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "A post-authentication command injection vulnerability in the \u201cDescription\u201d parameter of a CGI program  in Zyxel DX3300-T0 firmware versions through 5.50(ABVY.8.3)C0 could allow an authenticated attack",
+        "published": "2026-11-17T02:17:22.880"
       }
     ]
   },
