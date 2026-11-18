@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-11-18T12:28:25.322723+00:00",
+  "generated_at": "2026-11-18T22:46:04.539578+00:00",
   "threat_score": {
-    "score": 7.0,
+    "score": 6.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 34,
+        "value": 38,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 10,
-        "score": 3.0,
+        "value": 4,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -32,9 +32,49 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1782,
-    "recent_30d_count": 34,
+    "total_catalog_count": 1786,
+    "recent_30d_count": 38,
     "recent": [
+      {
+        "cve_id": "CVE-2024-10441",
+        "vendor": "Synology",
+        "product": "DiskStation Manager (DSM)",
+        "name": "Synology DiskStation Manager (DSM) Improper Encoding or Escaping of Output Vulnerability",
+        "date_added": "2026-11-18",
+        "due_date": "2026-11-21",
+        "description": "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code ",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-40217",
+        "vendor": "BerriAI",
+        "product": "LiteLLM",
+        "name": "BerriAI LiteLLM Unprotected Alternate Channel Vulnerability",
+        "date_added": "2026-11-18",
+        "due_date": "2026-12-02",
+        "description": "BerriAI LiteLLM contains an unprotected alternate channel vulnerability that could allow remote attackers to execute arbitrary code via bytecode rewriting at the /guardrails/test_custom_code URI.",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-90817",
+        "vendor": "Vanderbilt University",
+        "product": "Research Electronic Data Capture (REDCap)",
+        "name": "Vanderbilt University Research Electronic Data Capture (REDCap) Code Injection Vulnerability",
+        "date_added": "2026-11-18",
+        "due_date": "2026-11-21",
+        "description": "Vanderbilt University Research Electronic Data Capture (REDCap) contains a code injection vulnerability which could allow an unauthenticated attacker to execute arbitrary code on the server. An attack",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-90436",
+        "vendor": "Apache",
+        "product": "Axis",
+        "name": "Apache Axis Unsafe Reflection Vulnerability",
+        "date_added": "2026-11-18",
+        "due_date": "2026-11-21",
+        "description": "Apache Axis contains an unsafe reflection vulnerability that could allow an unauthenticated remote attacker to execute arbitrary code via a crafted SOAP fault message that causes Axis to load and inst",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-115731",
         "vendor": "Perforce",
@@ -194,193 +234,153 @@
         "due_date": "2026-11-06",
         "description": "WordPress WordPress Core contains a time-of-check time-of-use (TOCTOU) race condition vulnerability that could allow unauthenticated attackers to execute code on the server during the upgrade window. ",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-118527",
-        "vendor": "Ivanti",
-        "product": "Connect Secure",
-        "name": "Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability",
-        "date_added": "2026-10-30",
-        "due_date": "2026-11-13",
-        "description": "Ivanti Connect Secure contains a generation of predictable numbers or identifiers vulnerability that allows a remote authenticated attacker to upload files with attacker-controlled content to a known ",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-111357",
-        "vendor": "Ivanti",
-        "product": "Connect Secure",
-        "name": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
-        "date_added": "2026-10-30",
-        "due_date": "2026-11-02",
-        "description": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chai",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-97229",
-        "vendor": "GitLab",
-        "product": "Community Edition and Enterprise Edition",
-        "name": "GitLab Community Edition and Enterprise Edition Integer Overflow or Wraparound Vulnerability",
-        "date_added": "2026-10-29",
-        "due_date": "2026-11-01",
-        "description": "GitLab Community Edition and Enterprise Edition contain a integer overflow or wraparound vulnerability that could allow an unauthenticated user to execute arbitrary code on the GitLab server via a spe",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-76418",
-        "vendor": "Cisco",
-        "product": "Secure Firewall ASA Software and Cisco Secure FTD Software",
-        "name": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability",
-        "date_added": "2026-10-29",
-        "due_date": "2026-11-01",
-        "description": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software contains an unchecked return value to NULL pointer dereference vulnerability that could allow an unauthenticated, remote attacker to ca",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 1384,
-    "critical_count": 10,
-    "high_count": 28,
+    "total": 748,
+    "critical_count": 4,
+    "high_count": 24,
     "cves": [
       {
-        "cve_id": "CVE-2026-130587",
-        "severity": "CRITICAL",
-        "base_score": 9.9,
-        "description": "OpenFunction through 1.2.0 contains a privilege escalation vulnerability that allows namespace tenants to create privileged host-access pods by supplying unrestricted PodSpec templates in Function and",
-        "published": "2026-11-17T14:17:45.317"
-      },
-      {
-        "cve_id": "CVE-2026-122055",
+        "cve_id": "CVE-2026-130020",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "ICRTouch PocketTouch version 1.700 build 2025.3726 contains a default socket password set to the literal value password. Where the default value remains unchanged and is accepted by a TouchPoint POS t",
-        "published": "2026-11-17T16:17:39.663"
+        "description": "Privilege escalation due to incorrect boundary conditions in the Graphics: CanvasWebGL component on Android. This vulnerability was fixed in Firefox 160.0.1.",
+        "published": "2026-11-17T23:17:52.080"
       },
       {
-        "cve_id": "CVE-2026-122142",
+        "cve_id": "CVE-2026-129892",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "ICRTouch Commander administrative login interface does not adequately restrict repeated authentication attempts. The interface also returns distinguishable responses for multiple authentication states",
-        "published": "2026-11-17T16:17:40.287"
+        "description": "IO::Socket::SSL::PublicSuffix versions through 2.099 for Perl allow code injection via a fetched list line that closes the built-in data heredoc when update_self_from_url rewrites the module's source.",
+        "published": "2026-11-18T00:18:40.417"
       },
       {
-        "cve_id": "CVE-2026-122147",
+        "cve_id": "CVE-2026-131852",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "ICRTouch PocketTouch version 1.700 build 2025.3726 defines hard-coded default values for multiple credential fields, including a socket password and configuration and shutdown passwords. An additional",
-        "published": "2026-11-17T16:17:40.643"
+        "description": "OwnTracks Recorder before 1.0.5 contains a format string vulnerability in json_response() and related output functions that allows unauthenticated attackers to execute code by storing a malicious tid ",
+        "published": "2026-11-18T00:18:43.127"
       },
       {
-        "cve_id": "CVE-2026-130801",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "The device's command parser does not require asymmetric cryptographic signatures to validate incoming APDU packets. This enables an attacker to inject forged, unauthorized commands to manipulate devic",
-        "published": "2026-11-17T17:18:05.647"
-      },
-      {
-        "cve_id": "CVE-2026-130583",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "Rootways Authorize.net CIM Pro extension for Magento 2 before 4.1.5 contains an unauthenticated server-side request forgery vulnerability in the Apple Pay merchant validation controller. Attackers can",
-        "published": "2026-11-17T14:17:44.847"
-      },
-      {
-        "cve_id": "CVE-2026-122122",
+        "cve_id": "CVE-2026-126969",
         "severity": "CRITICAL",
         "base_score": 9.1,
-        "description": "The order-tracking functionality in ICRTouch ByTable and TouchTakeaway does not adequately verify that a requester is authorized to access the specified order. An unauthenticated remote attacker can m",
-        "published": "2026-11-17T16:17:39.963"
+        "description": "SmarterTools SmarterMail Insufficient Entropy Authentication Bypass Vulnerability. This vulnerability allows remote attackers to bypass authentication on affected installations of SmarterTools Smarter",
+        "published": "2026-11-18T00:18:37.280"
       },
       {
-        "cve_id": "CVE-2026-122149",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The PocketTouch and TouchPoint POS protocol includes a `SAVECONFIG` command that appears capable of overwriting till configuration files remotely. \r\nAn attacker with network access to the POS socket s",
-        "published": "2026-11-17T16:17:40.747"
-      },
-      {
-        "cve_id": "CVE-2026-122150",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The PocketTouch and TouchPoint POS `CHECKPAYMENT` workflow accepts a caller-supplied clerk number without adequately verifying that the requesting client is authorized to act as that clerk.\r\nAn attack",
-        "published": "2026-11-17T16:17:40.853"
-      },
-      {
-        "cve_id": "CVE-2026-130802",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "The NFC authentication handshake relies on a fixed, static challenge instead of a unique, random value for every session. This allows an attacker to perform a \"replay attack,\" successfully authenticat",
-        "published": "2026-11-17T17:18:05.750"
-      },
-      {
-        "cve_id": "CVE-2026-12239",
+        "cve_id": "CVE-2026-129025",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "The WP Abstracts plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 2.7.6. This is due to a missing capability check on the wpabs_save_regform AJAX action",
-        "published": "2026-11-17T13:17:34.240"
+        "description": "Cross-Site Request Forgery (CSRF) vulnerability in Brainstorm Force ZIP AI zip-ai allows Cross Site Request Forgery.This issue affects ZIP AI: from n/a through 0.0.19.",
+        "published": "2026-11-17T23:17:48.237"
       },
       {
-        "cve_id": "CVE-2026-67455",
+        "cve_id": "CVE-2026-118630",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "NVIDIA Model Optimizer for Linux and Windows contains a vulnerability where an attacker could cause a deserialization of untrusted data. A successful exploit of this vulnerability might lead to code e",
-        "published": "2026-11-17T17:18:09.013"
+        "description": "Winmate HotTab Exposed Dangerous Function Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of Winmate devices. An at",
+        "published": "2026-11-18T00:18:36.207"
       },
       {
-        "cve_id": "CVE-2026-104100",
+        "cve_id": "CVE-2026-126962",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Teable is an AI spreadsheet for business. Prior to release.2026-07-21T11-27-40Z.2320, a registered user can supply path traversal sequences in the hash field accepted by POST /api/attachments/signatur",
-        "published": "2026-11-17T18:17:46.003"
+        "description": "open62541 Subscription Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of open62541. Authentication i",
+        "published": "2026-11-18T00:18:36.357"
       },
       {
-        "cve_id": "CVE-2026-110782",
+        "cve_id": "CVE-2026-126966",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "The SimpleSAMLphp SAML2 library is a PHP library for SAML2 related functionality. From 6.2.2 until 6.2.4 and 7.0.0-rc2, HTTPArtifact::receive() in src/Binding/HTTPArtifact.php verifies a signed outer ",
-        "published": "2026-11-17T18:17:46.387"
+        "base_score": 8.8,
+        "description": "SmarterTools SmarterMail Missing Authorization Privilege Escalation Vulnerability. This vulnerability allows remote attackers to escalate privileges on affected installations of SmarterTools SmarterMa",
+        "published": "2026-11-18T00:18:36.867"
       },
       {
-        "cve_id": "CVE-2026-100971",
+        "cve_id": "CVE-2026-126967",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "NVIDIA OpenShell for Linux contains a vulnerability in the L7 path allowlist enforcement component where a local attacker with low privileges could cause path traversal by using semicolon-dot path seq",
-        "published": "2026-11-17T16:17:34.043"
+        "base_score": 8.8,
+        "description": "SmarterTools SmarterMail File Edit API Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Smarte",
+        "published": "2026-11-18T00:18:36.993"
       },
       {
-        "cve_id": "CVE-2026-130584",
+        "cve_id": "CVE-2026-126978",
         "severity": "HIGH",
-        "base_score": 8.3,
-        "description": "Xibo CMS before 4.5.3 contains an insecure direct object reference vulnerability that allows authenticated users to access other DataSets' RSS feeds by pairing their own DataSet id with a foreign RSS ",
-        "published": "2026-11-17T14:17:45.013"
+        "base_score": 8.8,
+        "description": "Philips Hue Bridge hap_pair_setup_handler Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on affected ins",
+        "published": "2026-11-18T00:18:38.467"
       },
       {
-        "cve_id": "CVE-2026-130589",
+        "cve_id": "CVE-2026-126979",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Philips Hue Bridge HomeKit Accessory Protocol chacha20_decrypt Integer Underflow Remote Code Execution Vulnerability. This vulnerability allows network-adjacent attackers to execute arbitrary code on ",
+        "published": "2026-11-18T00:18:38.590"
+      },
+      {
+        "cve_id": "CVE-2026-131851",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "ILIAS before 9.25, 10.13, and 11.6 contains an SQL injection vulnerability in ilPRGAssignmentFilter::toConditions() that allows authenticated users to inject SQL through the StudyProgramme members lis",
+        "published": "2026-11-18T00:18:42.930"
+      },
+      {
+        "cve_id": "CVE-2026-92182",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Netgate pfSense CE XMLRPC Incorrect Authorization Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of Netgate pfSense",
+        "published": "2026-11-18T00:18:49.280"
+      },
+      {
+        "cve_id": "CVE-2026-126977",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Emitter through 3.1 contains a privilege escalation vulnerability that allows any channel key holder to forge a master key because channel keys use bare XOR Salsa20 encryption without a MAC or signatu",
-        "published": "2026-11-17T14:17:45.653"
+        "description": "Philips Hue Bridge HomeKit Pair-Setup Default Password Authentication Bypass Vulnerability. This vulnerability allows network-adjacent attackers to bypass authentication on affected installations of P",
+        "published": "2026-11-18T00:18:38.347"
       },
       {
-        "cve_id": "CVE-2026-100963",
+        "cve_id": "CVE-2026-105929",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "NVIDIA TensorRT for Linux contains a vulnerability where a user could cause an integer overflow issue. A successful exploit of this vulnerability might lead to denial of service and data tampering.",
-        "published": "2026-11-17T16:17:33.753"
+        "description": "A path traversal vulnerability (CWE-22) was found in ansible-core's ansible-galaxy role installation. An explicit role \"name\" taken from a role's meta/requirements.yml is used to construct the on-disk",
+        "published": "2026-11-18T02:17:38.693"
       },
       {
-        "cve_id": "CVE-2026-100972",
+        "cve_id": "CVE-2026-126970",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "NVIDIA OpenShell for Linux contains a vulnerability in resource-level authorization for create, read, update, and delete operations where an authenticated remote attacker with low privileges could acc",
-        "published": "2026-11-17T16:17:34.173"
+        "base_score": 7.8,
+        "description": "KiCad Altium SCHLIB File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of KiCad. User ",
+        "published": "2026-11-18T00:18:37.417"
       },
       {
-        "cve_id": "CVE-2026-122141",
+        "cve_id": "CVE-2026-126971",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The wallet top-up functionality in ICRTouch ByTable and TouchTakeaway does not adequately protect state-changing requests against CSRF. An attacker-controlled website can cause an authenticated custom",
-        "published": "2026-11-17T16:17:40.183"
+        "base_score": 7.8,
+        "description": "KiCad Project Archive File Handling Directory Traversal Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of KiCad. Us",
+        "published": "2026-11-18T00:18:37.570"
+      },
+      {
+        "cve_id": "CVE-2026-126972",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "KiCad Plugin Directory Traversal Remote Code Execution   Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of KiCad. User interaction is req",
+        "published": "2026-11-18T00:18:37.690"
+      },
+      {
+        "cve_id": "CVE-2026-126973",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "KDE Gwenview PNG File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of KDE Gwenview. User",
+        "published": "2026-11-18T00:18:37.807"
+      },
+      {
+        "cve_id": "CVE-2026-126974",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "llama.cpp GGUF File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of llama.cpp. User inte",
+        "published": "2026-11-18T00:18:37.943"
       }
     ]
   },
