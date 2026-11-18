@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-18T01:57:13.964581+00:00",
+  "generated_at": "2026-11-18T12:28:25.322723+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
-        "score": 2.0,
+        "value": 10,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 1274,
-    "critical_count": 2,
-    "high_count": 19,
+    "total": 1384,
+    "critical_count": 10,
+    "high_count": 28,
     "cves": [
       {
-        "cve_id": "CVE-2026-79614",
+        "cve_id": "CVE-2026-130587",
+        "severity": "CRITICAL",
+        "base_score": 9.9,
+        "description": "OpenFunction through 1.2.0 contains a privilege escalation vulnerability that allows namespace tenants to create privileged host-access pods by supplying unrestricted PodSpec templates in Function and",
+        "published": "2026-11-17T14:17:45.317"
+      },
+      {
+        "cve_id": "CVE-2026-122055",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "An out-of-bounds write vulnerability in \u201clibclinkc.so\u201d in Zyxel DX3301-T0/EX3301-T0 firmware versions through 5.50(ABVY.8.3)C0 could allow an unauthenticated attacker to elevate privileges and potenti",
-        "published": "2026-11-17T02:17:22.743"
+        "description": "ICRTouch PocketTouch version 1.700 build 2025.3726 contains a default socket password set to the literal value password. Where the default value remains unchanged and is accepted by a TouchPoint POS t",
+        "published": "2026-11-17T16:17:39.663"
       },
       {
-        "cve_id": "CVE-2026-107904",
+        "cve_id": "CVE-2026-122142",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Joomla Extension - valorapps.com - Unauthenticated Remote Code Execution in Easy File Uploader < 2.9.7 - An unauthenticated remote attacker can upload a PHP-executable file to the Joomla web root with",
-        "published": "2026-11-17T07:17:23.257"
+        "description": "ICRTouch Commander administrative login interface does not adequately restrict repeated authentication attempts. The interface also returns distinguishable responses for multiple authentication states",
+        "published": "2026-11-17T16:17:40.287"
       },
       {
-        "cve_id": "CVE-2026-130361",
+        "cve_id": "CVE-2026-122147",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "ICRTouch PocketTouch version 1.700 build 2025.3726 defines hard-coded default values for multiple credential fields, including a socket password and configuration and shutdown passwords. An additional",
+        "published": "2026-11-17T16:17:40.643"
+      },
+      {
+        "cve_id": "CVE-2026-130801",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "The device's command parser does not require asymmetric cryptographic signatures to validate incoming APDU packets. This enables an attacker to inject forged, unauthorized commands to manipulate devic",
+        "published": "2026-11-17T17:18:05.647"
+      },
+      {
+        "cve_id": "CVE-2026-130583",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Rootways Authorize.net CIM Pro extension for Magento 2 before 4.1.5 contains an unauthenticated server-side request forgery vulnerability in the Apple Pay merchant validation controller. Attackers can",
+        "published": "2026-11-17T14:17:44.847"
+      },
+      {
+        "cve_id": "CVE-2026-122122",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The order-tracking functionality in ICRTouch ByTable and TouchTakeaway does not adequately verify that a requester is authorized to access the specified order. An unauthenticated remote attacker can m",
+        "published": "2026-11-17T16:17:39.963"
+      },
+      {
+        "cve_id": "CVE-2026-122149",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The PocketTouch and TouchPoint POS protocol includes a `SAVECONFIG` command that appears capable of overwriting till configuration files remotely. \r\nAn attacker with network access to the POS socket s",
+        "published": "2026-11-17T16:17:40.747"
+      },
+      {
+        "cve_id": "CVE-2026-122150",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The PocketTouch and TouchPoint POS `CHECKPAYMENT` workflow accepts a caller-supplied clerk number without adequately verifying that the requesting client is authorized to act as that clerk.\r\nAn attack",
+        "published": "2026-11-17T16:17:40.853"
+      },
+      {
+        "cve_id": "CVE-2026-130802",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "The NFC authentication handshake relies on a fixed, static challenge instead of a unique, random value for every session. This allows an attacker to perform a \"replay attack,\" successfully authenticat",
+        "published": "2026-11-17T17:18:05.750"
+      },
+      {
+        "cve_id": "CVE-2026-12239",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "AdminNeo before 5.9.1 contains a parameter injection vulnerability in its ClickHouse driver that allows attackers to inject ClickHouse HTTP query parameters through an unencoded db GET parameter. Atta",
-        "published": "2026-11-17T02:17:18.690"
+        "description": "The WP Abstracts plugin for WordPress is vulnerable to Privilege Escalation in all versions up to, and including, 2.7.6. This is due to a missing capability check on the wpabs_save_regform AJAX action",
+        "published": "2026-11-17T13:17:34.240"
       },
       {
-        "cve_id": "CVE-2026-130382",
+        "cve_id": "CVE-2026-67455",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "AdminNeo before 5.9.1 contains an authentication bypass vulnerability in OtpLoginPlugin that allows attackers knowing the database password to skip TOTP verification by abusing the permanent-login coo",
-        "published": "2026-11-17T02:17:22.380"
+        "description": "NVIDIA Model Optimizer for Linux and Windows contains a vulnerability where an attacker could cause a deserialization of untrusted data. A successful exploit of this vulnerability might lead to code e",
+        "published": "2026-11-17T17:18:09.013"
       },
       {
-        "cve_id": "CVE-2026-105739",
+        "cve_id": "CVE-2026-104100",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Teable is an AI spreadsheet for business. Prior to release.2026-07-21T11-27-40Z.2320, a registered user can supply path traversal sequences in the hash field accepted by POST /api/attachments/signatur",
+        "published": "2026-11-17T18:17:46.003"
+      },
+      {
+        "cve_id": "CVE-2026-110782",
         "severity": "HIGH",
         "base_score": 8.7,
-        "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 17.2 before 19.3.9, 19.4 before 19.4.8, and 19.5 before 19.5.6 that under certain conditions could have allowed an authentica",
-        "published": "2026-11-17T05:18:29.513"
+        "description": "The SimpleSAMLphp SAML2 library is a PHP library for SAML2 related functionality. From 6.2.2 until 6.2.4 and 7.0.0-rc2, HTTPArtifact::receive() in src/Binding/HTTPArtifact.php verifies a signed outer ",
+        "published": "2026-11-17T18:17:46.387"
       },
       {
-        "cve_id": "CVE-2026-108153",
+        "cve_id": "CVE-2026-100971",
         "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 16.1 before 19.3.9, 19.4 before 19.4.8, and 19.5 before 19.5.6 that under certain conditions could have allowed an authentica",
-        "published": "2026-11-17T05:18:30.500"
+        "base_score": 8.4,
+        "description": "NVIDIA OpenShell for Linux contains a vulnerability in the L7 path allowlist enforcement component where a local attacker with low privileges could cause path traversal by using semicolon-dot path seq",
+        "published": "2026-11-17T16:17:34.043"
       },
       {
-        "cve_id": "CVE-2026-18241",
+        "cve_id": "CVE-2026-130584",
         "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 9.3 before 19.3.9, 19.4 before 19.4.8, and 19.5 before 19.5.6 that under certain conditions could have allowed an authenticat",
-        "published": "2026-11-17T05:18:36.843"
+        "base_score": 8.3,
+        "description": "Xibo CMS before 4.5.3 contains an insecure direct object reference vulnerability that allows authenticated users to access other DataSets' RSS feeds by pairing their own DataSet id with a foreign RSS ",
+        "published": "2026-11-17T14:17:45.013"
       },
       {
-        "cve_id": "CVE-2026-130366",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "AdminNeo before 5.9.1 contains an authentication bypass vulnerability in the ClickHouse driver that allows remote attackers to log in to passwordless accounts without the configured defaultPasswordHas",
-        "published": "2026-11-17T02:17:19.593"
-      },
-      {
-        "cve_id": "CVE-2026-130369",
+        "cve_id": "CVE-2026-130589",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "phpMyFAQ 4.1.9 before 4.1.12 and 4.2.0-alpha before 4.2.0-RC.2 contains an authorization bypass vulnerability in multisite deployments that allows attackers to overwrite passkeys of accounts on other ",
-        "published": "2026-11-17T02:17:20.130"
+        "description": "Emitter through 3.1 contains a privilege escalation vulnerability that allows any channel key holder to forge a master key because channel keys use bare XOR Salsa20 encryption without a MAC or signatu",
+        "published": "2026-11-17T14:17:45.653"
       },
       {
-        "cve_id": "CVE-2026-130371",
+        "cve_id": "CVE-2026-100963",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "phpMyFAQ before 4.1.12 and 4.2.0-alpha before 4.2.0-RC.2 contains an authentication bypass vulnerability because the web installer ignores the legacy config/database.php during 3.x upgrades. Unauthent",
-        "published": "2026-11-17T02:17:20.490"
+        "description": "NVIDIA TensorRT for Linux contains a vulnerability where a user could cause an integer overflow issue. A successful exploit of this vulnerability might lead to denial of service and data tampering.",
+        "published": "2026-11-17T16:17:33.753"
       },
       {
-        "cve_id": "CVE-2026-130380",
+        "cve_id": "CVE-2026-100972",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "AdminNeo before 5.9.1 contains an authentication bypass vulnerability in the sqlsrv-based MS SQL driver that allows unauthenticated attackers to log in by submitting an empty username. Attackers can s",
-        "published": "2026-11-17T02:17:22.037"
+        "description": "NVIDIA OpenShell for Linux contains a vulnerability in resource-level authorization for create, read, update, and delete operations where an authenticated remote attacker with low privileges could acc",
+        "published": "2026-11-17T16:17:34.173"
       },
       {
-        "cve_id": "CVE-2026-121684",
+        "cve_id": "CVE-2026-122141",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "The Soledad theme for WordPress is vulnerable to unauthenticated Remote Code Execution in versions up to, and including, 8.7.7 The public penci_more_post_ajax AJAX action feeds infeedads[ads_code] (ba",
-        "published": "2026-11-17T05:18:33.697"
-      },
-      {
-        "cve_id": "CVE-2026-107902",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "TELLUS and TELLUS Lite provided by FUJI ELECTRIC CO., LTD. contain a use after free vulnerability. Opening a specially crafted V9 file may lead to information exposure or arbitrary code execution on t",
-        "published": "2026-11-17T04:17:26.497"
-      },
-      {
-        "cve_id": "CVE-2026-107493",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Issue summary: When an application passes a stack to\nPEM_X509_INFO_read_bio_ex() to add entries to, and reading fails,\nOpenSSL frees every entry in the stack, both the old ones and any new\nones, but l",
-        "published": "2026-11-17T09:17:25.870"
-      },
-      {
-        "cve_id": "CVE-2026-97187",
-        "severity": "HIGH",
-        "base_score": 7.6,
-        "description": "GitLab has remediated an issue in GitLab CE/EE affecting all versions from 17.6 before 19.3.9, 19.4 before 19.4.8, and 19.5 before 19.5.6 that under certain conditions could have allowed an authentica",
-        "published": "2026-11-17T05:18:39.370"
-      },
-      {
-        "cve_id": "CVE-2026-12487",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "An incorrect authorization vulnerability in the SNMP parameter of Zyxel EE5301-00 customized firmware version 5.63(ACLD.2)b3_D0 could allow an unauthenticated attacker to cause a denial-of-service (Do",
-        "published": "2026-11-17T02:17:13.527"
-      },
-      {
-        "cve_id": "CVE-2026-130374",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "AdminNeo before 5.9.1 contains an sql injection vulnerability that allows remote attackers to inject SQL by supplying crafted IN and NOT IN search values that process_length() passes unescaped. Attack",
-        "published": "2026-11-17T02:17:21.003"
-      },
-      {
-        "cve_id": "CVE-2026-130351",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "phpMyFAQ from 4.2.0-alpha before 4.2.0-RC.2 contains an authorization bypass vulnerability in the multisite Redis configuration store that is not tenant-scoped. As a result, tenant administrators can ",
-        "published": "2026-11-17T02:17:16.963"
-      },
-      {
-        "cve_id": "CVE-2026-130375",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "AdminNeo before 5.9.1 contains a remote code execution vulnerability that allows authenticated SQLite users to bypass the check_sqlite_name() extension guard using PDO_SQLite file: URI database names.",
-        "published": "2026-11-17T02:17:21.180"
-      },
-      {
-        "cve_id": "CVE-2026-86676",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "A post-authentication command injection vulnerability in the \u201cDescription\u201d parameter of a CGI program  in Zyxel DX3300-T0 firmware versions through 5.50(ABVY.8.3)C0 could allow an authenticated attack",
-        "published": "2026-11-17T02:17:22.880"
+        "description": "The wallet top-up functionality in ICRTouch ByTable and TouchTakeaway does not adequately protect state-changing requests against CSRF. An attacker-controlled website can cause an authenticated custom",
+        "published": "2026-11-17T16:17:40.183"
       }
     ]
   },
