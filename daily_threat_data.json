@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T12:19:48.126885+00:00",
+  "generated_at": "2026-11-20T22:26:18.736725+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -7,13 +7,13 @@
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 32,
+        "value": 36,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
+        "value": 2,
         "score": 2.0,
         "max": 3
       },
@@ -32,9 +32,49 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1786,
-    "recent_30d_count": 32,
+    "total_catalog_count": 1790,
+    "recent_30d_count": 36,
     "recent": [
+      {
+        "cve_id": "CVE-2026-129448",
+        "vendor": "Apache",
+        "product": "Roller",
+        "name": "Apache Roller Deserialization of Untrusted Data Vulnerability",
+        "date_added": "2026-11-20",
+        "due_date": "2026-11-23",
+        "description": "Apache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via the XML-RPC endpoint, which accepts and deserializ",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-123890",
+        "vendor": "Broadcom",
+        "product": "VMware vCenter",
+        "name": "VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+        "date_added": "2026-11-20",
+        "due_date": "2026-11-23",
+        "description": "Broadcom VMware vCenter contains an authentication bypass using an alternate path or channel vulnerability in the VMware Directory Service that allows an unauthenticated attacker with network access t",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2025-42884",
+        "vendor": "SAP",
+        "product": "NetWeaver",
+        "name": "SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability",
+        "date_added": "2026-11-20",
+        "due_date": "2026-11-23",
+        "description": "SAP NetWeaver Enterprise Portal contains an improper neutralization of special elements in data query logic vulnerability that allows an unauthenticated attacker to disclose or modify server informati",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-76466",
+        "vendor": "Cisco",
+        "product": "Expressway Series",
+        "name": "Cisco Expressway Series Use of Hard-coded Credentials Vulnerability",
+        "date_added": "2026-11-20",
+        "due_date": "2026-11-23",
+        "description": "Cisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2024-10441",
         "vendor": "Synology",
@@ -194,193 +234,153 @@
         "due_date": "2026-11-12",
         "description": "SignalWire FreeSwitch contains a code injection vulnerability that permits configuration and credential disclosure, arbitrary call control, and command execution.",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-123218",
-        "vendor": "IBM",
-        "product": "Aspera Faspex",
-        "name": "IBM Aspera Faspex Incorrect Authorization Vulnerability",
-        "date_added": "2026-11-09",
-        "due_date": "2026-11-12",
-        "description": "IBM Aspera Faspex contains an incorrect authorization vulnerability that could allow an authenticated user to craft a specific message to bypass authorization, causing privilege escalations.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-19868",
-        "vendor": "SonicWall",
-        "product": "SonicOS SSLVPN",
-        "name": "SonicWall SonicOS SSLVPN Use of Single-factor Authentication Vulnerability",
-        "date_added": "2026-11-06",
-        "due_date": "2026-11-20",
-        "description": "SonicWall SonicOS SSLVPN contains a use of single-factor authentication vulnerability that may allow a user with valid credentials for an alternate authentication method to bypass SAML authentication ",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2024-27834",
-        "vendor": "Apple",
-        "product": "Multiple Products",
-        "name": "Apple Multiple Products Improper Authentication Vulnerability",
-        "date_added": "2026-11-04",
-        "due_date": "2026-11-18",
-        "description": "Apple iOS, iPadOS, macOS, Safari, tvOS and watchOS 10.5 contain an improper authentication vulnerability which could allow an attacker with arbitrary read and write capability to bypass pointer authen",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-119977",
-        "vendor": "WordPress",
-        "product": "WordPress Core",
-        "name": "WordPress WordPress Core Time-of-check Time-of-use (TOCTOU) Race Condition Vulnerability",
-        "date_added": "2026-11-03",
-        "due_date": "2026-11-06",
-        "description": "WordPress WordPress Core contains a time-of-check time-of-use (TOCTOU) race condition vulnerability that could allow unauthenticated attackers to execute code on the server during the upgrade window. ",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 1311,
-    "critical_count": 4,
-    "high_count": 32,
+    "total": 750,
+    "critical_count": 2,
+    "high_count": 16,
     "cves": [
       {
-        "cve_id": "CVE-2026-116439",
+        "cve_id": "CVE-2026-121385",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Dell PowerStore SDNAS contains a path traversal vulnerability that could allow an unauthenticated attacker to read, modify, or delete arbitrary files on the NAS node.",
-        "published": "2026-11-19T13:17:27.837"
+        "description": "The User Registration Aide WordPress plugin through 1.5.3.8 does not verify the current password or a reset token before changing a user's password, allowing unauthenticated attackers who know a user'",
+        "published": "2026-11-20T06:17:19.693"
       },
       {
-        "cve_id": "CVE-2026-116440",
+        "cve_id": "CVE-2026-65094",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Dell PowerStore SDNAS contains a buffer overflow vulnerability that could allow an unauthenticated remote attacker to cause a denial of service or potential code execution on the NAS node.",
-        "published": "2026-11-19T13:17:27.983"
+        "base_score": 9.0,
+        "description": "NVIDIA VIRTIO-Net for Bluefield contains a vulnerability in Virtio-Net where a VM user may cause a Write-What-Where condition by crafted message. A successful exploit of this vulnerability may lead to",
+        "published": "2026-11-20T03:17:36.693"
       },
       {
-        "cve_id": "CVE-2026-123890",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "VMware vCenter contains an authentication bypass vulnerability in the VMware Directory Service.\nAffected versions: 9.1.x (fixed in 9.1.1.0200); 9.0.x (fixed in 9.0.2.0200); 8.0 (fixed in 8.0 U3m); 5.x",
-        "published": "2026-11-19T15:17:25.407"
-      },
-      {
-        "cve_id": "CVE-2026-111509",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "Dell PowerStore SDNAS contains a cryptographically weak PRNG vulnerability that could allow a network attacker to decrypt or tamper with NAS SSH/SFTP sessions.",
-        "published": "2026-11-19T13:17:27.513"
-      },
-      {
-        "cve_id": "CVE-2026-133080",
+        "cve_id": "CVE-2026-133528",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "In JetBrains TeamCity before 2026.2.2, 2026.1.6 remote code execution was possible via Maven repository settings",
-        "published": "2026-11-19T13:17:28.947"
+        "base_score": 8.6,
+        "description": "BeamNG.drive before 0.40.6 contains an out-of-bounds write vulnerability because JIT-compiled LuaJIT traces omit FFI array bounds checks, letting untrusted Lua escape the sandbox. Attackers supplying ",
+        "published": "2026-11-20T01:17:10.633"
       },
       {
-        "cve_id": "CVE-2026-133086",
+        "cve_id": "CVE-2026-122676",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "In JetBrains TeamCity before 2026.2.2, 2026.1.6 remote code execution was possible via a URL stream handler in the Kotlin DSL sandbox",
-        "published": "2026-11-19T13:17:29.717"
+        "base_score": 8.5,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in PublishPress PublishPress Authors publishpress-authors allows Blind SQL Injection.This issue affec",
+        "published": "2026-11-19T23:19:24.940"
       },
       {
-        "cve_id": "CVE-2026-133087",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "In JetBrains TeamCity before 2026.2.2, 2026.1.6 remote code execution was possible via a time zone callback in the Kotlin DSL sandbox",
-        "published": "2026-11-19T13:17:29.843"
-      },
-      {
-        "cve_id": "CVE-2026-133092",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "In JetBrains TeamCity before 2026.2.2, 2026.1.6 remote code execution was possible via Git submodule URLs",
-        "published": "2026-11-19T13:17:30.490"
-      },
-      {
-        "cve_id": "CVE-2026-111506",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Dell PowerStore contains a Missing Authentication vulnerability that a network-adjacent attacker could exploit to bypass authentication and authorization, leading to information disclosure and denial ",
-        "published": "2026-11-19T14:17:23.843"
-      },
-      {
-        "cve_id": "CVE-2026-133172",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Cozy Cloud cozy-stack 1.6.62 before 1.6.69 contains an authorization bypass vulnerability in the shared-drive move handler that allows authenticated users to access other instances' files. Attackers o",
-        "published": "2026-11-19T15:17:37.253"
-      },
-      {
-        "cve_id": "CVE-2026-133117",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "WebToffee Product Feed before 2.4.4 for WordPress contains a use of hard-coded cryptographic key vulnerability that allows unauthenticated attackers to bypass the URL-cron signature check by computing",
-        "published": "2026-11-19T13:17:32.840"
-      },
-      {
-        "cve_id": "CVE-2026-133089",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "In JetBrains TeamCity before 2026.2.2, 2026.1.6 the TFS helper process exposed an unauthenticated command server",
-        "published": "2026-11-19T13:17:30.103"
-      },
-      {
-        "cve_id": "CVE-2026-133095",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "In JetBrains TeamCity before 2026.2.2, 2026.1.6 a CSRF attack was possible on the Hub integration settings",
-        "published": "2026-11-19T13:17:30.863"
-      },
-      {
-        "cve_id": "CVE-2026-123891",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "SDDC Manager contains an SQL-injection vulnerability due to improper sanitization of user-supplied input.\nAffected versions: 9.1.x.x (fixed in 9.1.1.0200); 9.0.x.x (fixed in 9.0.2.0100); 5.x (fixed in",
-        "published": "2026-11-19T15:17:25.543"
-      },
-      {
-        "cve_id": "CVE-2026-133083",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "In JetBrains TeamCity before 2026.2.2, 2026.1.6 stored XSS in Server Health reports was possible",
-        "published": "2026-11-19T13:17:29.330"
-      },
-      {
-        "cve_id": "CVE-2026-133091",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "In JetBrains TeamCity before 2026.2.2, 2026.1.6 stored XSS on the Users page was possible",
-        "published": "2026-11-19T13:17:30.360"
-      },
-      {
-        "cve_id": "CVE-2026-126826",
+        "cve_id": "CVE-2026-133553",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "A maliciously crafted SBSAR file, when imported or loaded through the Substance in 3ds Max plugin in Autodesk 3ds Max, can trigger an Out-of-Bounds Write vulnerability. A malicious actor may leverage ",
-        "published": "2026-11-19T14:17:27.037"
+        "description": "A flaw was found in crun. When copying files onto a tmpfs mounted with tmpcopyup, crun opens the destination a second time by name. A container that shares a writable volume with the container being c",
+        "published": "2026-11-20T04:17:10.250"
       },
       {
-        "cve_id": "CVE-2026-132858",
+        "cve_id": "CVE-2026-126540",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A flaw was found in gdm. The CreateRemoteDisplay D-Bus method fails to perform proper authorization checks when initiating a remote display session. A local attacker with access to the login screen en",
-        "published": "2026-11-19T14:17:28.057"
+        "base_score": 7.5,
+        "description": "Convert::ASN1 versions before 0.37 for Perl allow CPU exhaustion via quadratic bigint loop in os2ip.\n\nEvery INTEGER or ENUMERATED longer than four content octets reaches os2ip, which iterates over eac",
+        "published": "2026-11-20T01:17:08.843"
       },
       {
-        "cve_id": "CVE-2026-133168",
+        "cve_id": "CVE-2026-126568",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "OFFIS DCMTK 3.7.1 contains a heap buffer overflow vulnerability in togglePlanarConfiguration8 and togglePlanarConfiguration16 in djcodece.cc, which compute row offsets using rows instead of columns. A",
-        "published": "2026-11-19T15:17:36.650"
+        "base_score": 7.5,
+        "description": "Convert::ASN1 versions before 0.37 for Perl allow memory exhaustion via unbounded MSG_PEEK buffer doubling in asn_recv.\n\nasn_recv peeks the socket in a loop, doubling the buffer size on each pass unti",
+        "published": "2026-11-20T01:17:08.970"
       },
       {
-        "cve_id": "CVE-2026-133084",
+        "cve_id": "CVE-2026-126576",
         "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "In JetBrains TeamCity before 2026.2.2, 2026.1.6 vCS root credentials could be exposed via change viewer links",
-        "published": "2026-11-19T13:17:29.457"
+        "base_score": 7.5,
+        "description": "Convert::ASN1 versions before 0.37 for Perl allow CPU exhaustion via unchecked exponent length in binary REAL decoding.\n\nBinary REAL decoding never bounds-checks the exponent length against the availa",
+        "published": "2026-11-20T01:17:09.083"
+      },
+      {
+        "cve_id": "CVE-2026-126682",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Convert::ASN1 versions before 0.37 for Perl allow CPU exhaustion via exponent-notation string in INTEGER encoding.\n\nThe encoder routes any value with abs >= 2**31 to i2osp without validating that it i",
+        "published": "2026-11-20T01:17:09.197"
+      },
+      {
+        "cve_id": "CVE-2026-126819",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Convert::ASN1 versions before 0.37 for Perl allow memory exhaustion via zero-length BIT STRING content.\n\nA BIT STRING with zero content octets passes -1 to substr as the length. Perl reads a negative ",
+        "published": "2026-11-20T01:17:09.313"
+      },
+      {
+        "cve_id": "CVE-2026-126956",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Convert::ASN1 versions before 0.37 for Perl allow memory exhaustion via unlimited recursion depth in constructed-form string decoding.\n\nAny constructed-form string element causes the decoder to recurs",
+        "published": "2026-11-20T01:17:09.427"
+      },
+      {
+        "cve_id": "CVE-2026-131868",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Convert::ASN1 versions before 0.37 for Perl allow memory exhaustion via a declared element length passed unchecked to sysread in asn_read and asn_get.\n\nThe length an element declares in its BER header",
+        "published": "2026-11-20T01:17:09.543"
+      },
+      {
+        "cve_id": "CVE-2026-131877",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Convert::ASN1 versions before 0.37 for Perl allow CPU exhaustion via unbounded arc length in OBJECT IDENTIFIER decoding and encoding.\n\nThe content of an OBJECT IDENTIFIER or RELATIVE-OID element is pa",
+        "published": "2026-11-20T01:17:09.660"
+      },
+      {
+        "cve_id": "CVE-2026-133534",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "PowerLink developed by Neotroni Lighting has a SQL Injection vulnerability, allowing unauthenticated remote attackers to inject arbitrary SQL commands to read database contents.",
+        "published": "2026-11-20T03:17:35.377"
+      },
+      {
+        "cve_id": "CVE-2026-125695",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "The Lightbox with PhotoSwipe WordPress plugin before 5.19.0 does not escape image link URLs before outputting them in the attributes of the lightbox share menu, allowing unauthenticated users to perfo",
+        "published": "2026-11-20T06:17:20.073"
+      },
+      {
+        "cve_id": "CVE-2026-133415",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability has been found in sumiie24 School-Management-System up to d946d649c7c95e101fc5679ecd91999533bb10d7. The affected element is an unknown function of the file parent_Registration.php. Suc",
+        "published": "2026-11-20T02:17:17.740"
+      },
+      {
+        "cve_id": "CVE-2026-133478",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A security vulnerability has been detected in rajesh2211 Doctor-Appointment-System up to ee974dcf4c50da85e6ea026e27f4370e9468b3cc. Affected is an unknown function of the file AppointmentSystem/Appoint",
+        "published": "2026-11-20T03:17:34.977"
+      },
+      {
+        "cve_id": "CVE-2026-113347",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "Multiple products produced by Ruijie Networks Co., Ltd. contain an OS command injection vulnerability that may lead to arbitrary OS commands being executed by an attacker with the administrative privi",
+        "published": "2026-11-20T04:17:09.277"
+      },
+      {
+        "cve_id": "CVE-2026-133228",
+        "severity": "MEDIUM",
+        "base_score": 6.8,
+        "description": "A flaw was found in Keycloak. When a client application enforces step-up authentication or multi-factor authentication (MFA) via a minimum authentication level, Keycloak fails to apply this requiremen",
+        "published": "2026-11-20T02:17:17.127"
+      },
+      {
+        "cve_id": "CVE-2026-133537",
+        "severity": "MEDIUM",
+        "base_score": 6.8,
+        "description": "A flaw was found in Keycloak. When evaluating access permissions, Keycloak Authorization Services improperly matches resource paths containing wildcard file extensions by evaluating only the file exte",
+        "published": "2026-11-20T04:17:10.103"
       }
     ]
   },
