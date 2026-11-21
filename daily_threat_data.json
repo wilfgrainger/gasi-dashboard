@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-21T15:47:06.096567+00:00",
+  "generated_at": "2026-11-21T21:20:21.312675+00:00",
   "threat_score": {
-    "score": 6.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 340,
-    "critical_count": 4,
-    "high_count": 44,
+    "total": 371,
+    "critical_count": 1,
+    "high_count": 14,
     "cves": [
       {
-        "cve_id": "CVE-2026-133968",
+        "cve_id": "CVE-2026-120539",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "monailabel (aka MONAI Label) through 0.8.5 allows directory traversal, with resultant remote code execution, via the image parameter to the PUT /datastore/image endpoint, as exploited in the wild star",
-        "published": "2026-11-20T19:18:51.670"
+        "description": "The Restrictions for BuddyPress plugin for WordPress is vulnerable to Remote Code Execution in all versions up to, and including, 1.5.4 This is due to the plugin splicing the attacker-controlled reque",
+        "published": "2026-11-21T06:16:33.227"
       },
       {
-        "cve_id": "CVE-2026-125273",
-        "severity": "CRITICAL",
-        "base_score": 9.6,
-        "description": "No replay or command-integrity protection. Commands lack sequence numbers, nonces, or session tokens; captured commands can be replayed, and the last command persists across sessions.",
-        "published": "2026-11-20T19:18:39.320"
-      },
-      {
-        "cve_id": "CVE-2026-94565",
-        "severity": "CRITICAL",
-        "base_score": 9.3,
-        "description": "NukeViet CMS is a multi Content Management System. From the 3.x release line until 4.6.01, an unauthenticated visitor can submit a Contact module message containing an event-handler attribute prefixed",
-        "published": "2026-11-20T19:18:56.500"
-      },
-      {
-        "cve_id": "CVE-2026-133212",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "@fastify/reply-from is a Fastify plugin that forwards an incoming HTTP request to an upstream server. In versions before 12.9.1, when the plugin forwards a request whose body is not written to the ups",
-        "published": "2026-11-20T18:18:47.127"
-      },
-      {
-        "cve_id": "CVE-2026-77309",
+        "cve_id": "CVE-2026-19793",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "AIT GUI provides a framework for building custom websites for real-time telemetry monitoring, commanding, and other mission operations. From 1.0.0 until 2.5.1, POST /tlm/query in ait/gui/__init__.py w",
-        "published": "2026-11-20T18:18:55.847"
+        "description": "The WP Import Export Lite plugin for WordPress is vulnerable to Limited Code Injection in all versions up to, and including, 3.9.32 via the 'comment' parameter. This is due to a two-stage shortcode ch",
+        "published": "2026-11-21T04:17:20.800"
       },
       {
-        "cve_id": "CVE-2026-129995",
+        "cve_id": "CVE-2026-129220",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "mcp-ssh-manager is an MCP server for managing servers over SSH with human approval, an encrypted vault, and a live audit trail. Prior to 3.8.5, ssh_backup_create, ssh_backup_restore, ssh_backup_schedu",
-        "published": "2026-11-20T19:18:44.467"
+        "description": "The Everest Forms \u2013 Contact Form, Payment Form, Quiz, Survey & Custom Form Builder with AI plugin for WordPress is vulnerable to Missing Authorization in all versions up to, and including, 3.6.4 This ",
+        "published": "2026-11-21T07:16:41.030"
       },
       {
-        "cve_id": "CVE-2026-77355",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "isomorphic-git is a pure JavaScript implementation of Git for Node.js and browsers. Prior to 1.38.7, tree-entry validation in src/models/GitTree.js does not reject the Windows NTFS reserved pathname a",
-        "published": "2026-11-20T19:18:54.933"
-      },
-      {
-        "cve_id": "CVE-2026-49259",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "NukeViet CMS is a multi Content Management System. From the 4.x release line until 4.5.09, a low-privileged authenticated user can store script-breaking content in the first_name and last_name profile",
-        "published": "2026-11-20T19:18:52.127"
-      },
-      {
-        "cve_id": "CVE-2026-54064",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "NukeViet CMS is a multi Content Management System. Prior to 4.5.09, a user with news-posting permission can bypass NukeViet\\Core\\Request::filterAttr() by prefixing an event-handler attribute with an A",
-        "published": "2026-11-20T19:18:52.283"
-      },
-      {
-        "cve_id": "CVE-2026-54065",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "NukeViet CMS is a multi Content Management System. Prior to 4.5.09, an authenticated administrator can submit a crafted attach value to modules/comment/admin/edit.php. The handler removed a fixed-leng",
-        "published": "2026-11-20T19:18:52.453"
-      },
-      {
-        "cve_id": "CVE-2026-125132",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "libumqtt\u00a0is vulnerable to an integer underflow which may allow a remote attacker to cause a denial of service, memory corruption, or information disclosure.",
-        "published": "2026-11-20T19:18:39.127"
-      },
-      {
-        "cve_id": "CVE-2026-77326",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "MapServer is a system for developing web-based GIS applications. From 8.2.0 until 8.6.5, an unauthenticated attacker can send a WMS GetLegendGraphic request with a nonempty BBOX and repeated LAYER par",
-        "published": "2026-11-20T19:18:54.110"
-      },
-      {
-        "cve_id": "CVE-2026-133199",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Incorrect privilege assignment in the user and group reconciliation logic in AWS ssosync before 2.9.5 might allow an authenticated remote user who is assigned a reused Google Workspace e-mail address ",
-        "published": "2026-11-20T17:18:17.783"
-      },
-      {
-        "cve_id": "CVE-2026-122247",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "Budibase is an open-source low-code platform. Prior to 3.50.0, the public POST /api/global/users/init endpoint on a self-hosted single-tenant deployment accepts an attacker-controlled tenantId and eva",
-        "published": "2026-11-20T17:18:08.170"
-      },
-      {
-        "cve_id": "CVE-2026-48118",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "NukeViet CMS is a multi Content Management System. Prior to 4.5.09, the Comment module accepts attacker-controlled base64 content in the status_comment parameter through modules/comment/funcs/main.php",
-        "published": "2026-11-20T19:18:51.957"
-      },
-      {
-        "cve_id": "CVE-2026-94564",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "NukeViet CMS is a multi Content Management System. Prior to 4.6.01, an unauthenticated visitor can submit Contact module content containing numeric HTML entities with more than eight leading zeros in ",
-        "published": "2026-11-20T19:18:56.357"
-      },
-      {
-        "cve_id": "CVE-2026-133874",
+        "cve_id": "CVE-2026-123086",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Iceburg CRM through 5.0.0 contains an incorrect authorization vulnerability in Module::saveRecord() that allows authenticated users to write to unauthorized modules by prefixing request body keys with",
-        "published": "2026-11-20T17:18:24.647"
+        "description": "The PublishPress Revisions: Duplicate Posts, Submit, Approve and Schedule Content Changes plugin for WordPress is vulnerable to authorization bypass in all versions up to, and including, 4.3.4 This is",
+        "published": "2026-11-21T07:16:39.647"
       },
       {
-        "cve_id": "CVE-2026-82675",
+        "cve_id": "CVE-2026-134172",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The GiveWP \u2013 Donation Plugin and Fundraising Platform plugin for WordPress is vulnerable to donor account account takeover in all versions up to, and including, 4.17.0. This is due to the plugin not p",
-        "published": "2026-11-20T17:18:27.703"
+        "base_score": 7.8,
+        "description": "audio-separator before 0.47.2 contains an insecure deserialization vulnerability that allows attackers to execute code by supplying malicious Demucs .th model files loaded via torch.load with weights_",
+        "published": "2026-11-20T23:16:59.420"
       },
       {
-        "cve_id": "CVE-2026-55216",
+        "cve_id": "CVE-2026-134164",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Logto is the modern, open-source auth infrastructure for SaaS and AI apps. Prior to 1.46.0, social account linking can use an unverified email returned by the standard OAuth 2.0 or Azure AD connector ",
-        "published": "2026-11-20T18:18:54.100"
+        "base_score": 7.5,
+        "description": "probe-image-size before 7.5.0 contains an algorithmic-complexity denial of service vulnerability in lib/exif_utils.js that allows remote unauthenticated attackers to exhaust CPU by supplying self-refe",
+        "published": "2026-11-20T23:16:58.120"
       },
       {
-        "cve_id": "CVE-2026-84693",
+        "cve_id": "CVE-2026-134167",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The WPvivid \u2014 Backup, Migration & Staging plugin for WordPress is vulnerable to Arbitrary File Deletion in version up to, and including, 0.9.134. This is due to a timing side channel in the bundled RS",
-        "published": "2026-11-20T18:18:56.847"
+        "base_score": 7.5,
+        "description": "devpi-web before 5.2.0 contains an unauthenticated path traversal vulnerability in the +doc documentation route because docs_file_exists and docs_file_path in doczip.py never confine relpath to the do",
+        "published": "2026-11-20T23:16:58.563"
+      },
+      {
+        "cve_id": "CVE-2026-134169",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Qwik City before 1.20.3 (@builder.io/qwik-city) and @qwik.dev/router before 2.0.0-rc.4 contain an improperly controlled object modification vulnerability in formToObj that allows unauthenticated attac",
+        "published": "2026-11-20T23:16:58.873"
+      },
+      {
+        "cve_id": "CVE-2026-133835",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A flaw has been found in hankcs HanLP up to 2.1.6. Impacted is the function uncompress of the file hanlp/utils/io_util.py of the component TAR Archive Extraction Handler. This manipulation causes path",
+        "published": "2026-11-20T22:17:50.137"
+      },
+      {
+        "cve_id": "CVE-2026-107713",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The Flutterwave Payments plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'form_id' parameter in all versions up to, and including, 1.0.7 due to insufficient input sanitizatio",
+        "published": "2026-11-21T08:16:37.443"
+      },
+      {
+        "cve_id": "CVE-2026-116619",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The MetForm \u2013 Contact Form, Survey, Quiz, Conditional Forms, Form Templates & Custom Form Builder for Elementor plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'mf-te (the fo",
+        "published": "2026-11-21T08:16:37.610"
+      },
+      {
+        "cve_id": "CVE-2026-119632",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The Forminator Forms \u2013 Contact Form, Payment Form & Custom Form Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'textarea-N (rich-text draft value, saved as Save-and-",
+        "published": "2026-11-21T08:16:37.920"
+      },
+      {
+        "cve_id": "CVE-2026-120485",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The Admin Columns plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'url' parameter in all versions up to, and including, 7.1.8 due to insufficient input sanitization and outpu",
+        "published": "2026-11-21T08:16:38.073"
+      },
+      {
+        "cve_id": "CVE-2026-120529",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The Admin Columns plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'HTTP_USER_AGENT' parameter in all versions up to, and including, 7.1.7 due to insufficient input sanitizati",
+        "published": "2026-11-21T08:16:38.377"
+      },
+      {
+        "cve_id": "CVE-2026-120676",
+        "severity": "HIGH",
+        "base_score": 7.2,
+        "description": "The Forminator Forms \u2013 Contact Form, Payment Form & Custom Form Builder plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'upload-1 (the File Upload field's element_id)' parame",
+        "published": "2026-11-21T08:16:38.523"
+      },
+      {
+        "cve_id": "CVE-2026-104904",
+        "severity": "MEDIUM",
+        "base_score": 6.5,
+        "description": "The Shortcodes Ultimate plugin for WordPress is vulnerable to Local File Inclusion in versions up to, and including, 7.9.1 This is due to su_get_current_url() interpolating the raw Host request header",
+        "published": "2026-11-21T08:16:37.247"
+      },
+      {
+        "cve_id": "CVE-2026-131651",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "The rtMedia for WordPress, BuddyPress and bbPress plugin for WordPress is vulnerable to Stored DOM-Based Cross-Site Scripting via the 'media_title' parameter in all versions up to, and including, 4.7.",
+        "published": "2026-11-21T04:17:20.330"
+      },
+      {
+        "cve_id": "CVE-2026-125932",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "The Coupon Creator plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'metavalue (with metakeyinput=cctor_expiration)' parameter in all versions up to, and including, 3.6.5 due ",
+        "published": "2026-11-21T06:16:34.117"
+      },
+      {
+        "cve_id": "CVE-2026-132781",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "The Booking Calendar plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the plugin's 'booking' shortcode in all versions up to, and including, 12.0 due to insufficient input sanitiz",
+        "published": "2026-11-21T06:16:36.443"
+      },
+      {
+        "cve_id": "CVE-2026-133439",
+        "severity": "MEDIUM",
+        "base_score": 6.4,
+        "description": "The Coupon Creator plugin for WordPress is vulnerable to Stored Cross-Site Scripting via the 'post_title' parameter in all versions up to, and including, 3.6.5 due to insufficient input sanitization a",
+        "published": "2026-11-21T06:16:36.593"
       }
     ]
   },
