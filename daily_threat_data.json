@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-21T04:50:15.803319+00:00",
+  "generated_at": "2026-11-21T15:47:06.096567+00:00",
   "threat_score": {
-    "score": 5.5,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 1,
-        "score": 1.5,
+        "value": 4,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 738,
-    "critical_count": 1,
-    "high_count": 1,
+    "total": 340,
+    "critical_count": 4,
+    "high_count": 44,
     "cves": [
       {
-        "cve_id": "CVE-2026-121385",
+        "cve_id": "CVE-2026-133968",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "The User Registration Aide WordPress plugin through 1.5.3.8 does not verify the current password or a reset token before changing a user's password, allowing unauthenticated attackers who know a user'",
-        "published": "2026-11-20T06:17:19.693"
+        "description": "monailabel (aka MONAI Label) through 0.8.5 allows directory traversal, with resultant remote code execution, via the image parameter to the PUT /datastore/image endpoint, as exploited in the wild star",
+        "published": "2026-11-20T19:18:51.670"
       },
       {
-        "cve_id": "CVE-2026-125695",
+        "cve_id": "CVE-2026-125273",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "No replay or command-integrity protection. Commands lack sequence numbers, nonces, or session tokens; captured commands can be replayed, and the last command persists across sessions.",
+        "published": "2026-11-20T19:18:39.320"
+      },
+      {
+        "cve_id": "CVE-2026-94565",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "NukeViet CMS is a multi Content Management System. From the 3.x release line until 4.6.01, an unauthenticated visitor can submit a Contact module message containing an event-handler attribute prefixed",
+        "published": "2026-11-20T19:18:56.500"
+      },
+      {
+        "cve_id": "CVE-2026-133212",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "@fastify/reply-from is a Fastify plugin that forwards an incoming HTTP request to an upstream server. In versions before 12.9.1, when the plugin forwards a request whose body is not written to the ups",
+        "published": "2026-11-20T18:18:47.127"
+      },
+      {
+        "cve_id": "CVE-2026-77309",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "The Lightbox with PhotoSwipe WordPress plugin before 5.19.0 does not escape image link URLs before outputting them in the attributes of the lightbox share menu, allowing unauthenticated users to perfo",
-        "published": "2026-11-20T06:17:20.073"
+        "base_score": 8.8,
+        "description": "AIT GUI provides a framework for building custom websites for real-time telemetry monitoring, commanding, and other mission operations. From 1.0.0 until 2.5.1, POST /tlm/query in ait/gui/__init__.py w",
+        "published": "2026-11-20T18:18:55.847"
       },
       {
-        "cve_id": "CVE-2026-133486",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A vulnerability was identified in hasan-py Hayroo up to fd0fbe763153f72bfaa04ed1e1e4a1bb6f7c61df. Affected by this issue is the function Product.deleteImages of the file server/controller/products.js ",
-        "published": "2026-11-20T05:18:54.053"
+        "cve_id": "CVE-2026-129995",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "mcp-ssh-manager is an MCP server for managing servers over SSH with human approval, an encrypted vault, and a live audit trail. Prior to 3.8.5, ssh_backup_create, ssh_backup_restore, ssh_backup_schedu",
+        "published": "2026-11-20T19:18:44.467"
       },
       {
-        "cve_id": "CVE-2026-133487",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A security flaw has been discovered in nodejs undici up to 7.24.0. This affects the function Object.assign of the file balanced-pool.js of the component BalancedPool. The manipulation results in impro",
-        "published": "2026-11-20T05:18:54.247"
+        "cve_id": "CVE-2026-77355",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "isomorphic-git is a pure JavaScript implementation of Git for Node.js and browsers. Prior to 1.38.7, tree-entry validation in src/models/GitTree.js does not reject the Windows NTFS reserved pathname a",
+        "published": "2026-11-20T19:18:54.933"
       },
       {
-        "cve_id": "CVE-2026-133488",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A weakness has been identified in XiangLi1999 Diffusion-LM up to 759889d58ef38e2eed41a8c34db8032e072826f4. This vulnerability affects the function os.system of the file improved-diffusion/scripts/infi",
-        "published": "2026-11-20T06:17:21.167"
+        "cve_id": "CVE-2026-49259",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "NukeViet CMS is a multi Content Management System. From the 4.x release line until 4.5.09, a low-privileged authenticated user can store script-breaking content in the first_name and last_name profile",
+        "published": "2026-11-20T19:18:52.127"
       },
       {
-        "cve_id": "CVE-2026-133490",
-        "severity": "MEDIUM",
-        "base_score": 6.3,
-        "description": "A vulnerability was detected in declare-lab tango up to 34ecd38898508017ca937508a047b42817d2b070. Impacted is the function Tango.__init__ of the file tango.py of the component Model Loading. Performin",
-        "published": "2026-11-20T06:17:21.600"
+        "cve_id": "CVE-2026-54064",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "NukeViet CMS is a multi Content Management System. Prior to 4.5.09, a user with news-posting permission can bypass NukeViet\\Core\\Request::filterAttr() by prefixing an event-handler attribute with an A",
+        "published": "2026-11-20T19:18:52.283"
       },
       {
-        "cve_id": "CVE-2026-133484",
-        "severity": "MEDIUM",
-        "base_score": 5.3,
-        "description": "A vulnerability was found in ByteDance Lark Desktop 8.0.0.14. This vulnerability affects the function FUN_18001b770/FUN_18001ba40 in the library backend.dll. Performing a manipulation of the argument ",
-        "published": "2026-11-20T05:18:53.680"
+        "cve_id": "CVE-2026-54065",
+        "severity": "HIGH",
+        "base_score": 8.7,
+        "description": "NukeViet CMS is a multi Content Management System. Prior to 4.5.09, an authenticated administrator can submit a crafted attach value to modules/comment/admin/edit.php. The handler removed a fixed-leng",
+        "published": "2026-11-20T19:18:52.453"
       },
       {
-        "cve_id": "CVE-2026-133489",
-        "severity": "MEDIUM",
-        "base_score": 4.3,
-        "description": "A security vulnerability has been detected in XiangLi1999 Diffusion-LM up to 759889d58ef38e2eed41a8c34db8032e072826f4. This issue affects the function main of the file improved-diffusion/scripts/text_",
-        "published": "2026-11-20T06:17:21.407"
+        "cve_id": "CVE-2026-125132",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "libumqtt\u00a0is vulnerable to an integer underflow which may allow a remote attacker to cause a denial of service, memory corruption, or information disclosure.",
+        "published": "2026-11-20T19:18:39.127"
       },
       {
-        "cve_id": "CVE-2026-130493",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "A hard-coded cryptographic key vulnerability exists in affected Ethernet swiches. The use of a shared cryptographic key with insufficient key strength could allow an unauthenticated remote attacker, u",
-        "published": "2026-11-20T06:17:20.200"
+        "cve_id": "CVE-2026-77326",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "MapServer is a system for developing web-based GIS applications. From 8.2.0 until 8.6.5, an unauthenticated attacker can send a WMS GetLegendGraphic request with a nonempty BBOX and repeated LAYER par",
+        "published": "2026-11-20T19:18:54.110"
       },
       {
-        "cve_id": "CVE-2026-130494",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "An improper firmware authenticity verification vulnerability exists in the affected Ethernet Switches products. An authenticated remote attacker with administrative privileges could exploit the lack o",
-        "published": "2026-11-20T06:17:20.453"
+        "cve_id": "CVE-2026-133199",
+        "severity": "HIGH",
+        "base_score": 8.5,
+        "description": "Incorrect privilege assignment in the user and group reconciliation logic in AWS ssosync before 2.9.5 might allow an authenticated remote user who is assigned a reused Google Workspace e-mail address ",
+        "published": "2026-11-20T17:18:17.783"
       },
       {
-        "cve_id": "CVE-2026-99566",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nassoc_array: keep gc's cleanup out of the live tree on allocation failure\n\nassoc_array_gc() builds a copy of the tree.  Where the c",
-        "published": "2026-11-20T06:17:47.403"
+        "cve_id": "CVE-2026-122247",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "Budibase is an open-source low-code platform. Prior to 3.50.0, the public POST /api/global/users/init endpoint on a self-hosted single-tenant deployment accepts an attacker-controlled tenantId and eva",
+        "published": "2026-11-20T17:18:08.170"
       },
       {
-        "cve_id": "CVE-2026-99567",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nassoc_array: don't chain a new shortcut onto an existing one\n\nWhen a full node's leaves and the new key all share the node's segmen",
-        "published": "2026-11-20T06:17:47.540"
+        "cve_id": "CVE-2026-48118",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "NukeViet CMS is a multi Content Management System. Prior to 4.5.09, the Comment module accepts attacker-controlled base64 content in the status_comment parameter through modules/comment/funcs/main.php",
+        "published": "2026-11-20T19:18:51.957"
       },
       {
-        "cve_id": "CVE-2026-99568",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\niommufd/iova_bitmap: Ensure that iova_bitmap_set() handles the full IOVA\n\nGenerally userspace is going to step the dirty bitmap thr",
-        "published": "2026-11-20T06:17:47.670"
+        "cve_id": "CVE-2026-94564",
+        "severity": "HIGH",
+        "base_score": 8.2,
+        "description": "NukeViet CMS is a multi Content Management System. Prior to 4.6.01, an unauthenticated visitor can submit Contact module content containing numeric HTML entities with more than eight leading zeros in ",
+        "published": "2026-11-20T19:18:56.357"
       },
       {
-        "cve_id": "CVE-2026-99569",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nf2fs: release a removed xattr node in roll-forward recovery\n\nWhen xattrs shrink enough to fit in the inline xattr area,\nwrite_all_x",
-        "published": "2026-11-20T06:17:47.793"
+        "cve_id": "CVE-2026-133874",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Iceburg CRM through 5.0.0 contains an incorrect authorization vulnerability in Module::saveRecord() that allows authenticated users to write to unauthorized modules by prefixing request body keys with",
+        "published": "2026-11-20T17:18:24.647"
       },
       {
-        "cve_id": "CVE-2026-99570",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nf2fs: fix to invalidate curseg if change_curseg() fails\n\nOur consistency stress test (fsstress + fio + atomic write workers +\n\"f2fs",
-        "published": "2026-11-20T06:17:47.923"
+        "cve_id": "CVE-2026-82675",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The GiveWP \u2013 Donation Plugin and Fundraising Platform plugin for WordPress is vulnerable to donor account account takeover in all versions up to, and including, 4.17.0. This is due to the plugin not p",
+        "published": "2026-11-20T17:18:27.703"
       },
       {
-        "cve_id": "CVE-2026-99571",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnvme-tcp: Validate the queue state under the queue lock in the address attribute\n\nReading the \"address\" sysfs attribute calls kerne",
-        "published": "2026-11-20T06:17:48.093"
+        "cve_id": "CVE-2026-55216",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Logto is the modern, open-source auth infrastructure for SaaS and AI apps. Prior to 1.46.0, social account linking can use an unverified email returned by the standard OAuth 2.0 or Azure AD connector ",
+        "published": "2026-11-20T18:18:54.100"
       },
       {
-        "cve_id": "CVE-2026-99572",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nf2fs: fix to avoid potential reference count leak in do_garbage_collect()\n\nIn do_garbage_collect(), we have reserved reference coun",
-        "published": "2026-11-20T06:17:48.217"
-      },
-      {
-        "cve_id": "CVE-2026-99573",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nKVM: arm64: vgic: Stop the target vcpu when disabling LPIs\n\nDisabling LPIs is pretty nasty, as it directly messes with the AP list\n",
-        "published": "2026-11-20T06:17:48.337"
-      },
-      {
-        "cve_id": "CVE-2026-99574",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nf2fs: bound the SIT/NAT bitmaps by the checkpoint pack\n\nsit_ver_bitmap_bytesize and nat_ver_bitmap_bytesize are used as memcpy\nleng",
-        "published": "2026-11-20T06:17:48.457"
-      },
-      {
-        "cve_id": "CVE-2026-99575",
-        "severity": "UNKNOWN",
-        "base_score": null,
-        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nf2fs: return -EIO for a lost inode block after cp_error\n\nAfter cp_error, dirty node caches are dropped without being written.\nIf su",
-        "published": "2026-11-20T06:17:48.577"
+        "cve_id": "CVE-2026-84693",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "The WPvivid \u2014 Backup, Migration & Staging plugin for WordPress is vulnerable to Arbitrary File Deletion in version up to, and including, 0.9.134. This is due to a timing side channel in the bundled RS",
+        "published": "2026-11-20T18:18:56.847"
       }
     ]
   },
