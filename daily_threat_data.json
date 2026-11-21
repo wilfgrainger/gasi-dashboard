@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-20T22:26:18.736725+00:00",
+  "generated_at": "2026-11-21T04:50:15.803319+00:00",
   "threat_score": {
-    "score": 6.0,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.5,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
-        "score": 2.0,
+        "value": 1,
+        "score": 1.5,
         "max": 3
       },
       {
@@ -238,9 +238,9 @@
     ]
   },
   "nvd": {
-    "total": 750,
-    "critical_count": 2,
-    "high_count": 16,
+    "total": 738,
+    "critical_count": 1,
+    "high_count": 1,
     "cves": [
       {
         "cve_id": "CVE-2026-121385",
@@ -250,97 +250,6 @@
         "published": "2026-11-20T06:17:19.693"
       },
       {
-        "cve_id": "CVE-2026-65094",
-        "severity": "CRITICAL",
-        "base_score": 9.0,
-        "description": "NVIDIA VIRTIO-Net for Bluefield contains a vulnerability in Virtio-Net where a VM user may cause a Write-What-Where condition by crafted message. A successful exploit of this vulnerability may lead to",
-        "published": "2026-11-20T03:17:36.693"
-      },
-      {
-        "cve_id": "CVE-2026-133528",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "BeamNG.drive before 0.40.6 contains an out-of-bounds write vulnerability because JIT-compiled LuaJIT traces omit FFI array bounds checks, letting untrusted Lua escape the sandbox. Attackers supplying ",
-        "published": "2026-11-20T01:17:10.633"
-      },
-      {
-        "cve_id": "CVE-2026-122676",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in PublishPress PublishPress Authors publishpress-authors allows Blind SQL Injection.This issue affec",
-        "published": "2026-11-19T23:19:24.940"
-      },
-      {
-        "cve_id": "CVE-2026-133553",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "A flaw was found in crun. When copying files onto a tmpfs mounted with tmpcopyup, crun opens the destination a second time by name. A container that shares a writable volume with the container being c",
-        "published": "2026-11-20T04:17:10.250"
-      },
-      {
-        "cve_id": "CVE-2026-126540",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Convert::ASN1 versions before 0.37 for Perl allow CPU exhaustion via quadratic bigint loop in os2ip.\n\nEvery INTEGER or ENUMERATED longer than four content octets reaches os2ip, which iterates over eac",
-        "published": "2026-11-20T01:17:08.843"
-      },
-      {
-        "cve_id": "CVE-2026-126568",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Convert::ASN1 versions before 0.37 for Perl allow memory exhaustion via unbounded MSG_PEEK buffer doubling in asn_recv.\n\nasn_recv peeks the socket in a loop, doubling the buffer size on each pass unti",
-        "published": "2026-11-20T01:17:08.970"
-      },
-      {
-        "cve_id": "CVE-2026-126576",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Convert::ASN1 versions before 0.37 for Perl allow CPU exhaustion via unchecked exponent length in binary REAL decoding.\n\nBinary REAL decoding never bounds-checks the exponent length against the availa",
-        "published": "2026-11-20T01:17:09.083"
-      },
-      {
-        "cve_id": "CVE-2026-126682",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Convert::ASN1 versions before 0.37 for Perl allow CPU exhaustion via exponent-notation string in INTEGER encoding.\n\nThe encoder routes any value with abs >= 2**31 to i2osp without validating that it i",
-        "published": "2026-11-20T01:17:09.197"
-      },
-      {
-        "cve_id": "CVE-2026-126819",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Convert::ASN1 versions before 0.37 for Perl allow memory exhaustion via zero-length BIT STRING content.\n\nA BIT STRING with zero content octets passes -1 to substr as the length. Perl reads a negative ",
-        "published": "2026-11-20T01:17:09.313"
-      },
-      {
-        "cve_id": "CVE-2026-126956",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Convert::ASN1 versions before 0.37 for Perl allow memory exhaustion via unlimited recursion depth in constructed-form string decoding.\n\nAny constructed-form string element causes the decoder to recurs",
-        "published": "2026-11-20T01:17:09.427"
-      },
-      {
-        "cve_id": "CVE-2026-131868",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Convert::ASN1 versions before 0.37 for Perl allow memory exhaustion via a declared element length passed unchecked to sysread in asn_read and asn_get.\n\nThe length an element declares in its BER header",
-        "published": "2026-11-20T01:17:09.543"
-      },
-      {
-        "cve_id": "CVE-2026-131877",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Convert::ASN1 versions before 0.37 for Perl allow CPU exhaustion via unbounded arc length in OBJECT IDENTIFIER decoding and encoding.\n\nThe content of an OBJECT IDENTIFIER or RELATIVE-OID element is pa",
-        "published": "2026-11-20T01:17:09.660"
-      },
-      {
-        "cve_id": "CVE-2026-133534",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "PowerLink developed by Neotroni Lighting has a SQL Injection vulnerability, allowing unauthenticated remote attackers to inject arbitrary SQL commands to read database contents.",
-        "published": "2026-11-20T03:17:35.377"
-      },
-      {
         "cve_id": "CVE-2026-125695",
         "severity": "HIGH",
         "base_score": 7.5,
@@ -348,39 +257,130 @@
         "published": "2026-11-20T06:17:20.073"
       },
       {
-        "cve_id": "CVE-2026-133415",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability has been found in sumiie24 School-Management-System up to d946d649c7c95e101fc5679ecd91999533bb10d7. The affected element is an unknown function of the file parent_Registration.php. Suc",
-        "published": "2026-11-20T02:17:17.740"
-      },
-      {
-        "cve_id": "CVE-2026-133478",
-        "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A security vulnerability has been detected in rajesh2211 Doctor-Appointment-System up to ee974dcf4c50da85e6ea026e27f4370e9468b3cc. Affected is an unknown function of the file AppointmentSystem/Appoint",
-        "published": "2026-11-20T03:17:34.977"
-      },
-      {
-        "cve_id": "CVE-2026-113347",
-        "severity": "HIGH",
-        "base_score": 7.2,
-        "description": "Multiple products produced by Ruijie Networks Co., Ltd. contain an OS command injection vulnerability that may lead to arbitrary OS commands being executed by an attacker with the administrative privi",
-        "published": "2026-11-20T04:17:09.277"
-      },
-      {
-        "cve_id": "CVE-2026-133228",
+        "cve_id": "CVE-2026-133486",
         "severity": "MEDIUM",
-        "base_score": 6.8,
-        "description": "A flaw was found in Keycloak. When a client application enforces step-up authentication or multi-factor authentication (MFA) via a minimum authentication level, Keycloak fails to apply this requiremen",
-        "published": "2026-11-20T02:17:17.127"
+        "base_score": 6.3,
+        "description": "A vulnerability was identified in hasan-py Hayroo up to fd0fbe763153f72bfaa04ed1e1e4a1bb6f7c61df. Affected by this issue is the function Product.deleteImages of the file server/controller/products.js ",
+        "published": "2026-11-20T05:18:54.053"
       },
       {
-        "cve_id": "CVE-2026-133537",
+        "cve_id": "CVE-2026-133487",
         "severity": "MEDIUM",
-        "base_score": 6.8,
-        "description": "A flaw was found in Keycloak. When evaluating access permissions, Keycloak Authorization Services improperly matches resource paths containing wildcard file extensions by evaluating only the file exte",
-        "published": "2026-11-20T04:17:10.103"
+        "base_score": 6.3,
+        "description": "A security flaw has been discovered in nodejs undici up to 7.24.0. This affects the function Object.assign of the file balanced-pool.js of the component BalancedPool. The manipulation results in impro",
+        "published": "2026-11-20T05:18:54.247"
+      },
+      {
+        "cve_id": "CVE-2026-133488",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A weakness has been identified in XiangLi1999 Diffusion-LM up to 759889d58ef38e2eed41a8c34db8032e072826f4. This vulnerability affects the function os.system of the file improved-diffusion/scripts/infi",
+        "published": "2026-11-20T06:17:21.167"
+      },
+      {
+        "cve_id": "CVE-2026-133490",
+        "severity": "MEDIUM",
+        "base_score": 6.3,
+        "description": "A vulnerability was detected in declare-lab tango up to 34ecd38898508017ca937508a047b42817d2b070. Impacted is the function Tango.__init__ of the file tango.py of the component Model Loading. Performin",
+        "published": "2026-11-20T06:17:21.600"
+      },
+      {
+        "cve_id": "CVE-2026-133484",
+        "severity": "MEDIUM",
+        "base_score": 5.3,
+        "description": "A vulnerability was found in ByteDance Lark Desktop 8.0.0.14. This vulnerability affects the function FUN_18001b770/FUN_18001ba40 in the library backend.dll. Performing a manipulation of the argument ",
+        "published": "2026-11-20T05:18:53.680"
+      },
+      {
+        "cve_id": "CVE-2026-133489",
+        "severity": "MEDIUM",
+        "base_score": 4.3,
+        "description": "A security vulnerability has been detected in XiangLi1999 Diffusion-LM up to 759889d58ef38e2eed41a8c34db8032e072826f4. This issue affects the function main of the file improved-diffusion/scripts/text_",
+        "published": "2026-11-20T06:17:21.407"
+      },
+      {
+        "cve_id": "CVE-2026-130493",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "A hard-coded cryptographic key vulnerability exists in affected Ethernet swiches. The use of a shared cryptographic key with insufficient key strength could allow an unauthenticated remote attacker, u",
+        "published": "2026-11-20T06:17:20.200"
+      },
+      {
+        "cve_id": "CVE-2026-130494",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "An improper firmware authenticity verification vulnerability exists in the affected Ethernet Switches products. An authenticated remote attacker with administrative privileges could exploit the lack o",
+        "published": "2026-11-20T06:17:20.453"
+      },
+      {
+        "cve_id": "CVE-2026-99566",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nassoc_array: keep gc's cleanup out of the live tree on allocation failure\n\nassoc_array_gc() builds a copy of the tree.  Where the c",
+        "published": "2026-11-20T06:17:47.403"
+      },
+      {
+        "cve_id": "CVE-2026-99567",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nassoc_array: don't chain a new shortcut onto an existing one\n\nWhen a full node's leaves and the new key all share the node's segmen",
+        "published": "2026-11-20T06:17:47.540"
+      },
+      {
+        "cve_id": "CVE-2026-99568",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\niommufd/iova_bitmap: Ensure that iova_bitmap_set() handles the full IOVA\n\nGenerally userspace is going to step the dirty bitmap thr",
+        "published": "2026-11-20T06:17:47.670"
+      },
+      {
+        "cve_id": "CVE-2026-99569",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nf2fs: release a removed xattr node in roll-forward recovery\n\nWhen xattrs shrink enough to fit in the inline xattr area,\nwrite_all_x",
+        "published": "2026-11-20T06:17:47.793"
+      },
+      {
+        "cve_id": "CVE-2026-99570",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nf2fs: fix to invalidate curseg if change_curseg() fails\n\nOur consistency stress test (fsstress + fio + atomic write workers +\n\"f2fs",
+        "published": "2026-11-20T06:17:47.923"
+      },
+      {
+        "cve_id": "CVE-2026-99571",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nnvme-tcp: Validate the queue state under the queue lock in the address attribute\n\nReading the \"address\" sysfs attribute calls kerne",
+        "published": "2026-11-20T06:17:48.093"
+      },
+      {
+        "cve_id": "CVE-2026-99572",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nf2fs: fix to avoid potential reference count leak in do_garbage_collect()\n\nIn do_garbage_collect(), we have reserved reference coun",
+        "published": "2026-11-20T06:17:48.217"
+      },
+      {
+        "cve_id": "CVE-2026-99573",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nKVM: arm64: vgic: Stop the target vcpu when disabling LPIs\n\nDisabling LPIs is pretty nasty, as it directly messes with the AP list\n",
+        "published": "2026-11-20T06:17:48.337"
+      },
+      {
+        "cve_id": "CVE-2026-99574",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nf2fs: bound the SIT/NAT bitmaps by the checkpoint pack\n\nsit_ver_bitmap_bytesize and nat_ver_bitmap_bytesize are used as memcpy\nleng",
+        "published": "2026-11-20T06:17:48.457"
+      },
+      {
+        "cve_id": "CVE-2026-99575",
+        "severity": "UNKNOWN",
+        "base_score": null,
+        "description": "In the Linux kernel, the following vulnerability has been resolved:\n\nf2fs: return -EIO for a lost inode block after cp_error\n\nAfter cp_error, dirty node caches are dropped without being written.\nIf su",
+        "published": "2026-11-20T06:17:48.577"
       }
     ]
   },
