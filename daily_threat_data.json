@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-22T15:47:06.677923+00:00",
+  "generated_at": "2026-11-22T21:24:13.732131+00:00",
   "threat_score": {
-    "score": 6.5,
-    "level": "HIGH",
-    "level_color": "high",
+    "score": 5.0,
+    "level": "ELEVATED",
+    "level_color": "elevated",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
-        "score": 2.5,
+        "value": 0,
+        "score": 1.0,
         "max": 3
       },
       {
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 312,
-    "critical_count": 6,
-    "high_count": 33,
+    "total": 137,
+    "critical_count": 0,
+    "high_count": 20,
     "cves": [
       {
-        "cve_id": "CVE-2026-134292",
-        "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "SurrealDB 1.0.0 before 4.0.0 contains a capability check bypass in its embedded JavaScript scripting engine, where the surrealdb.functions bridge calls the internal fnc::synchronous() and fnc::asynchr",
-        "published": "2026-11-21T17:16:48.897"
-      },
-      {
-        "cve_id": "CVE-2026-124626",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "@fastify/express is a compatibility layer that lets Express middleware run inside the Fastify web framework. In versions 4.0.5 through 4.0.9, the plugin matches path-scoped Express middleware with a m",
-        "published": "2026-11-21T17:16:39.777"
-      },
-      {
-        "cve_id": "CVE-2026-129504",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "@fastify/express is a compatibility layer that lets Express middleware run inside the Fastify web framework. In versions 4.0.0 through 4.0.9, the plugin joins a path-scoped middleware's mount path to ",
-        "published": "2026-11-21T17:16:39.920"
-      },
-      {
-        "cve_id": "CVE-2026-133120",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "@fastify/express is a compatibility layer that lets Express middleware run inside the Fastify web framework. In versions before 4.0.10, the plugin passes Express a request URL that does not always mat",
-        "published": "2026-11-21T17:16:40.170"
-      },
-      {
-        "cve_id": "CVE-2026-133250",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "@fastify/middie is the middleware engine for the Fastify web framework. In versions up to and including 9.3.7, middie matches path-scoped middleware against its own reading of the request path, which ",
-        "published": "2026-11-21T17:16:40.293"
-      },
-      {
-        "cve_id": "CVE-2026-133867",
-        "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "@fastify/express is a compatibility layer that lets Express middleware run inside the Fastify web framework. In versions 4.0.7 through 4.0.9, the plugin does not rewrite regular-expression mount paths",
-        "published": "2026-11-21T17:16:40.663"
-      },
-      {
-        "cve_id": "CVE-2026-133985",
+        "cve_id": "CVE-2026-131707",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A flaw has been found in TRENDnet TEW-657BRM 1.00.1. Affected by this issue is some unknown functionality of the file /usr/sbin/restore_config.cgi. Executing a manipulation can lead to out-of-bounds r",
-        "published": "2026-11-21T16:16:38.730"
+        "description": "Deserialization of Untrusted Data vulnerability in Metagauss ProfileGrid profilegrid-user-profiles-groups-and-communities allows Object Injection.This issue affects ProfileGrid: from n/a through 6.0.0",
+        "published": "2026-11-22T10:16:39.993"
       },
       {
-        "cve_id": "CVE-2026-134253",
+        "cve_id": "CVE-2026-131705",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Grav API plugin from 1.0.0 before 1.1.4 contains a remote code execution vulnerability that allows publishers with media and page write rights to write theme template files through the blueprint-uploa",
-        "published": "2026-11-21T17:16:42.870"
+        "base_score": 8.5,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Metagauss ProfileGrid profilegrid-user-profiles-groups-and-communities allows SQL Injection.This i",
+        "published": "2026-11-22T10:16:39.683"
       },
       {
-        "cve_id": "CVE-2026-134295",
+        "cve_id": "CVE-2026-131701",
         "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "SurrealDB 3.0.0 before 4.0.0 contains a path traversal vulnerability in direct filesystem buckets because BucketController::check_permission evaluates key-based ACLs against the un-normalized object k",
-        "published": "2026-11-21T17:16:49.393"
+        "base_score": 8.5,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in JoomUnited WP Media folder wp-media-folder allows Blind SQL Injection.This issue affects WP Media ",
+        "published": "2026-11-22T11:16:45.960"
       },
       {
-        "cve_id": "CVE-2026-134309",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "SurrealDB 1.0.0 before 4.0.0 contains an authorization bypass vulnerability that allows authenticated users to shadow protected $access, $auth, and $token variables by binding them as FOR loop variabl",
-        "published": "2026-11-21T17:16:50.990"
-      },
-      {
-        "cve_id": "CVE-2026-134337",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "ArcadeDB native-image server builds 26.8.1 before 26.11.1 contain an authorization bypass vulnerability that allows authenticated clients to perform writes through read-only query paths by nesting sta",
-        "published": "2026-11-21T17:16:54.557"
-      },
-      {
-        "cve_id": "CVE-2026-134338",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "ArcadeDB 25.8.1 before 26.11.1 contains an incorrect authorization vulnerability because per-type ACLs are keyed by type name, renames are not propagated to the permission configuration, and requestAc",
-        "published": "2026-11-21T17:16:54.730"
-      },
-      {
-        "cve_id": "CVE-2026-134339",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "ArcadeDB from 26.11.1-SNAPSHOT before 26.11.1 contains an authorization bypass vulnerability that allows authenticated users to skip per-type ACL checks when a database is opened on demand. Attackers ",
-        "published": "2026-11-21T17:16:54.900"
-      },
-      {
-        "cve_id": "CVE-2026-134258",
-        "severity": "HIGH",
-        "base_score": 8.7,
-        "description": "Admidio 5.0.0 before 5.0.18 contains a path traversal vulnerability in the Documents & Files renameFile() action that allows authenticated users with folder upload rights to move files outside adm_my_",
-        "published": "2026-11-21T17:16:43.747"
-      },
-      {
-        "cve_id": "CVE-2026-134293",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "SurrealDB 3.1.0 before 4.0.0 contains an SQL injection vulnerability in its Model Context Protocol (MCP) server because the identifier validator (consume_backtick_ident and validate_identifier) treats",
-        "published": "2026-11-21T17:16:49.057"
-      },
-      {
-        "cve_id": "CVE-2026-134262",
+        "cve_id": "CVE-2026-134654",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Admidio 5.0.0 before 5.0.18 contains a stored cross-site scripting vulnerability that allows role administrators to inject JavaScript by placing quote-breaking payloads in role names rendered unencode",
-        "published": "2026-11-21T17:16:44.420"
+        "description": "Mailflare before 48957fb contains a host header injection vulnerability in the password-reset request handler that allows unauthenticated attackers to poison reset links when APP_URL is unset. Attacke",
+        "published": "2026-11-22T02:17:00.790"
       },
       {
-        "cve_id": "CVE-2026-134282",
+        "cve_id": "CVE-2026-134694",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Vikunja from 0.14.0 before 2.8.0 contains a mass assignment vulnerability that allows authenticated users to set json-hidden fields by sending XML request bodies to the v1 API. Attackers can set Backg",
-        "published": "2026-11-21T17:16:47.537"
+        "base_score": 7.8,
+        "description": "Gammapy through 2.1 contains a code injection vulnerability in WcsGeom.from_header() that passes the WCSSHAPE FITS header card to eval(). Attackers can supply a crafted .fits file with a Python expres",
+        "published": "2026-11-22T02:17:07.790"
       },
       {
-        "cve_id": "CVE-2026-134300",
+        "cve_id": "CVE-2026-134704",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "SurrealDB from 2.2.0 before 4.0.0 contains an authorization bypass vulnerability in Document::purge_references that lets authenticated users bypass target table PERMISSIONS by triggering REFERENCE ON ",
-        "published": "2026-11-21T17:16:49.917"
+        "base_score": 7.8,
+        "description": "OpenShot Video Editor (openshot-qt) through 4.1.1 contains an unsafe deserialization vulnerability in ProjectDataStore.load() and read_legacy_project_file() that passes non-JSON project files to pickl",
+        "published": "2026-11-22T02:17:09.620"
       },
       {
-        "cve_id": "CVE-2026-134316",
+        "cve_id": "CVE-2026-134679",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "@better-auth/electron 1.5.0-beta.12 before 1.7.16 and 1.8.0-beta.0 before 1.8.0-beta.5 accepts any validly signed value as its transfer cookie and returns the full endpoint context, including the auth",
-        "published": "2026-11-21T17:16:52.550"
+        "base_score": 7.5,
+        "description": "WeddingShare through 1.8.2 contains a missing authorization vulnerability in the anonymous MediaViewerController.GalleryItem action that allows unauthenticated attackers to retrieve item upload paths ",
+        "published": "2026-11-22T02:17:05.103"
       },
       {
-        "cve_id": "CVE-2026-134322",
+        "cve_id": "CVE-2026-131706",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "better-auth 0.4.12-beta.7 before 1.7.16 and 1.8.0-beta.0 before 1.8.0-beta.5 contains an improper authentication vulnerability in the phone number plugin that lets sign-up and other flows save unverif",
-        "published": "2026-11-21T17:16:53.363"
+        "base_score": 7.5,
+        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Metagauss ProfileGrid profilegrid-user-profiles-groups-and-communities allows Blind SQL Injection.",
+        "published": "2026-11-22T10:16:39.840"
+      },
+      {
+        "cve_id": "CVE-2026-131720",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Insertion of Sensitive Information Into Sent Data vulnerability in Liquid Web / StellarWP BookIt bookit allows Retrieve Embedded Sensitive Data.This issue affects BookIt: from n/a through 2.6.0.8.",
+        "published": "2026-11-22T10:16:40.293"
+      },
+      {
+        "cve_id": "CVE-2026-134541",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A vulnerability was detected in Surya2Developer Online Shopping System 1.0. This impacts an unknown function of the file product.php of the component GET Parameter Handler. Performing a manipulation o",
+        "published": "2026-11-22T00:16:59.950"
+      },
+      {
+        "cve_id": "CVE-2026-134623",
+        "severity": "HIGH",
+        "base_score": 7.3,
+        "description": "A flaw has been found in Microweber up to 2.0.20. This impacts the function UserManager::make_logged of the file src/MicroweberPackages/App/Http/Controllers/ApiController.php of the component Generic ",
+        "published": "2026-11-22T05:18:43.323"
+      },
+      {
+        "cve_id": "CVE-2026-134543",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "A flaw has been found in jprocms up to 1.7.7. Affected is the function StrUtil.format of the component Database Backup Module. Executing a manipulation of the argument host/port/username/password/dbNa",
+        "published": "2026-11-22T00:17:00.150"
+      },
+      {
+        "cve_id": "CVE-2026-129016",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Andrea Tarantini Menubar menubar allows Reflected XSS.This issue affects Menubar: from n/a through",
+        "published": "2026-11-22T10:16:38.553"
+      },
+      {
+        "cve_id": "CVE-2026-131700",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Dylan Kuhn  Geo Mashup geo-mashup allows Reflected XSS.This issue affects  Geo Mashup: from n/a th",
+        "published": "2026-11-22T10:16:39.523"
+      },
+      {
+        "cve_id": "CVE-2026-131708",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Metagauss ProfileGrid profilegrid-user-profiles-groups-and-communities allows Reflected XSS.This i",
+        "published": "2026-11-22T10:16:40.140"
+      },
+      {
+        "cve_id": "CVE-2026-131702",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in NextScripts NextScripts social-networks-auto-poster-facebook-twitter-g allows Stored XSS.This issu",
+        "published": "2026-11-22T11:16:46.110"
+      },
+      {
+        "cve_id": "CVE-2026-131714",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Kaliforms Kali Forms kali-forms allows Reflected XSS.This issue affects Kali Forms: from n/a throu",
+        "published": "2026-11-22T11:16:46.260"
+      },
+      {
+        "cve_id": "CVE-2026-131718",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Liquid Web / StellarWP Event Tickets event-tickets allows Reflected XSS.This issue affects Event T",
+        "published": "2026-11-22T11:16:46.413"
+      },
+      {
+        "cve_id": "CVE-2026-131724",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Liquid Web / StellarWP Event Tickets event-tickets allows Stored XSS.This issue affects Event Tick",
+        "published": "2026-11-22T11:16:46.860"
+      },
+      {
+        "cve_id": "CVE-2026-131742",
+        "severity": "HIGH",
+        "base_score": 7.1,
+        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in PluginUs.Net Active Products Tables for WooCommerce profit-products-tables-for-woocommerce allows ",
+        "published": "2026-11-22T11:16:47.007"
       }
     ]
   },
