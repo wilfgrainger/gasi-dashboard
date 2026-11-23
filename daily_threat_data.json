@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-22T21:24:13.732131+00:00",
+  "generated_at": "2026-11-23T04:47:47.497717+00:00",
   "threat_score": {
-    "score": 5.0,
-    "level": "ELEVATED",
-    "level_color": "elevated",
+    "score": 6.0,
+    "level": "HIGH",
+    "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
@@ -13,8 +13,8 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 0,
-        "score": 1.0,
+        "value": 2,
+        "score": 2.0,
         "max": 3
       },
       {
@@ -238,16 +238,51 @@
     ]
   },
   "nvd": {
-    "total": 137,
-    "critical_count": 0,
-    "high_count": 20,
+    "total": 153,
+    "critical_count": 2,
+    "high_count": 45,
     "cves": [
+      {
+        "cve_id": "CVE-2026-131754",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Deserialization of Untrusted Data vulnerability in Pierre Lannoy APCu Manager apcu-manager allows Object Injection.This issue affects APCu Manager: from n/a through 4.6.1.",
+        "published": "2026-11-22T15:17:12.247"
+      },
+      {
+        "cve_id": "CVE-2026-131782",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Deserialization of Untrusted Data vulnerability in mra13 / Team Tips and Tricks HQ Simple Shopping Cart wordpress-simple-paypal-shopping-cart allows Object Injection.This issue affects Simple Shopping",
+        "published": "2026-11-22T15:17:12.543"
+      },
       {
         "cve_id": "CVE-2026-131707",
         "severity": "HIGH",
         "base_score": 8.8,
         "description": "Deserialization of Untrusted Data vulnerability in Metagauss ProfileGrid profilegrid-user-profiles-groups-and-communities allows Object Injection.This issue affects ProfileGrid: from n/a through 6.0.0",
         "published": "2026-11-22T10:16:39.993"
+      },
+      {
+        "cve_id": "CVE-2026-134804",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Portainer 2.39.0 before 2.39.9, 2.40.0 before 2.45.4, and 3.0.0 before 3.1.0 contains an authorization bypass vulnerability that allows Standard users to access other users' containers via the WebSock",
+        "published": "2026-11-22T22:17:34.037"
+      },
+      {
+        "cve_id": "CVE-2026-129024",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Everest Forms Everest Forms everest-forms allows Path Traversal.This issue affects Everest Forms: from n",
+        "published": "2026-11-22T16:16:39.513"
+      },
+      {
+        "cve_id": "CVE-2026-131750",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Everest Forms Everest Forms everest-forms allows Path Traversal.This issue affects Everest Forms: from n",
+        "published": "2026-11-22T16:16:40.857"
       },
       {
         "cve_id": "CVE-2026-131705",
@@ -264,32 +299,39 @@
         "published": "2026-11-22T11:16:45.960"
       },
       {
-        "cve_id": "CVE-2026-134654",
+        "cve_id": "CVE-2026-134803",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Mailflare before 48957fb contains a host header injection vulnerability in the password-reset request handler that allows unauthenticated attackers to poison reset links when APP_URL is unset. Attacke",
-        "published": "2026-11-22T02:17:00.790"
+        "description": "DBHub before 1.7.0 contains a read-only mode bypass vulnerability that allows MCP clients restricted to readonly execute_sql to run write and DDL statements via backslash-escaped quotes. Attackers can",
+        "published": "2026-11-22T22:17:33.857"
       },
       {
-        "cve_id": "CVE-2026-134694",
+        "cve_id": "CVE-2026-134814",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "binary-parser before 2.3.1 contains a code injection vulnerability that allows attackers controlling parser definitions to inject JavaScript through string-typed options passed unvalidated by Context.",
+        "published": "2026-11-22T22:17:35.660"
+      },
+      {
+        "cve_id": "CVE-2026-134815",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "simple-git before 4.1.0 contains an argument injection vulnerability that allows attackers to bypass the allowUnsafePack guard by supplying the --exec option to non-push git operations. Attackers who ",
+        "published": "2026-11-22T22:17:35.807"
+      },
+      {
+        "cve_id": "CVE-2026-134793",
         "severity": "HIGH",
         "base_score": 7.8,
-        "description": "Gammapy through 2.1 contains a code injection vulnerability in WcsGeom.from_header() that passes the WCSSHAPE FITS header card to eval(). Attackers can supply a crafted .fits file with a Python expres",
-        "published": "2026-11-22T02:17:07.790"
+        "description": "Electerm before 5.9.0 on Windows contains an OS command injection vulnerability that allows attackers to execute PowerShell code via crafted file or folder names containing Unicode quote characters. A",
+        "published": "2026-11-22T22:17:32.177"
       },
       {
-        "cve_id": "CVE-2026-134704",
+        "cve_id": "CVE-2026-134765",
         "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "OpenShot Video Editor (openshot-qt) through 4.1.1 contains an unsafe deserialization vulnerability in ProjectDataStore.load() and read_legacy_project_file() that passes non-JSON project files to pickl",
-        "published": "2026-11-22T02:17:09.620"
-      },
-      {
-        "cve_id": "CVE-2026-134679",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "WeddingShare through 1.8.2 contains a missing authorization vulnerability in the anonymous MediaViewerController.GalleryItem action that allows unauthenticated attackers to retrieve item upload paths ",
-        "published": "2026-11-22T02:17:05.103"
+        "base_score": 7.7,
+        "description": "Kirby 5.0.0 before 5.6.4 contains a race condition in Kirby\\Api\\Upload::processChunk() that allows authenticated users with upload permission to bypass SVG sanitization. Attackers can race concurrent ",
+        "published": "2026-11-22T22:17:31.983"
       },
       {
         "cve_id": "CVE-2026-131706",
@@ -306,81 +348,39 @@
         "published": "2026-11-22T10:16:40.293"
       },
       {
-        "cve_id": "CVE-2026-134541",
+        "cve_id": "CVE-2026-129085",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was detected in Surya2Developer Online Shopping System 1.0. This impacts an unknown function of the file product.php of the component GET Parameter Handler. Performing a manipulation o",
-        "published": "2026-11-22T00:16:59.950"
+        "base_score": 7.5,
+        "description": "Missing Authorization vulnerability in Aguila Technologies WP Customer Area customer-area allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WP Customer Area: f",
+        "published": "2026-11-22T15:17:12.093"
       },
       {
-        "cve_id": "CVE-2026-134623",
+        "cve_id": "CVE-2026-131786",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A flaw has been found in Microweber up to 2.0.20. This impacts the function UserManager::make_logged of the file src/MicroweberPackages/App/Http/Controllers/ApiController.php of the component Generic ",
-        "published": "2026-11-22T05:18:43.323"
+        "base_score": 7.5,
+        "description": "Insertion of Sensitive Information Into Sent Data vulnerability in myCred myCred mycred allows Retrieve Embedded Sensitive Data.This issue affects myCred: from n/a through 4.0.3.",
+        "published": "2026-11-22T16:16:43.683"
       },
       {
-        "cve_id": "CVE-2026-134543",
+        "cve_id": "CVE-2026-134808",
         "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "A flaw has been found in jprocms up to 1.7.7. Affected is the function StrUtil.format of the component Database Backup Module. Executing a manipulation of the argument host/port/username/password/dbNa",
-        "published": "2026-11-22T00:17:00.150"
+        "base_score": 7.5,
+        "description": "Gogs before 0.14.4 on Windows contains a path equivalence vulnerability in isRepositoryGitPath that allows authenticated users with write access to bypass .git directory protection using NTFS aliases.",
+        "published": "2026-11-22T22:17:34.697"
       },
       {
-        "cve_id": "CVE-2026-129016",
+        "cve_id": "CVE-2026-134812",
         "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Andrea Tarantini Menubar menubar allows Reflected XSS.This issue affects Menubar: from n/a through",
-        "published": "2026-11-22T10:16:38.553"
+        "base_score": 7.5,
+        "description": "msgpackr before 2.1.4 contains an inefficient algorithmic complexity vulnerability that allows remote attackers to cause denial of service by repeatedly re-decoding buffered incomplete values. Attacke",
+        "published": "2026-11-22T22:17:35.343"
       },
       {
-        "cve_id": "CVE-2026-131700",
+        "cve_id": "CVE-2026-134813",
         "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Dylan Kuhn  Geo Mashup geo-mashup allows Reflected XSS.This issue affects  Geo Mashup: from n/a th",
-        "published": "2026-11-22T10:16:39.523"
-      },
-      {
-        "cve_id": "CVE-2026-131708",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Metagauss ProfileGrid profilegrid-user-profiles-groups-and-communities allows Reflected XSS.This i",
-        "published": "2026-11-22T10:16:40.140"
-      },
-      {
-        "cve_id": "CVE-2026-131702",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in NextScripts NextScripts social-networks-auto-poster-facebook-twitter-g allows Stored XSS.This issu",
-        "published": "2026-11-22T11:16:46.110"
-      },
-      {
-        "cve_id": "CVE-2026-131714",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Kaliforms Kali Forms kali-forms allows Reflected XSS.This issue affects Kali Forms: from n/a throu",
-        "published": "2026-11-22T11:16:46.260"
-      },
-      {
-        "cve_id": "CVE-2026-131718",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Liquid Web / StellarWP Event Tickets event-tickets allows Reflected XSS.This issue affects Event T",
-        "published": "2026-11-22T11:16:46.413"
-      },
-      {
-        "cve_id": "CVE-2026-131724",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in Liquid Web / StellarWP Event Tickets event-tickets allows Stored XSS.This issue affects Event Tick",
-        "published": "2026-11-22T11:16:46.860"
-      },
-      {
-        "cve_id": "CVE-2026-131742",
-        "severity": "HIGH",
-        "base_score": 7.1,
-        "description": "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerability in PluginUs.Net Active Products Tables for WooCommerce profit-products-tables-for-woocommerce allows ",
-        "published": "2026-11-22T11:16:47.007"
+        "base_score": 7.5,
+        "description": "Faye websocket-driver 0.5.0 before 0.8.0, permessage-deflate before 0.2.0, and websocket-extensions before 0.2.0 contain a decompression bomb vulnerability because messages are fully inflated before m",
+        "published": "2026-11-22T22:17:35.497"
       }
     ]
   },
