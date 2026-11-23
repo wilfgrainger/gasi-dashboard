@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T04:47:47.497717+00:00",
+  "generated_at": "2026-11-23T19:39:14.714561+00:00",
   "threat_score": {
     "score": 6.0,
     "level": "HIGH",
@@ -13,7 +13,7 @@
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 2,
+        "value": 4,
         "score": 2.0,
         "max": 3
       },
@@ -83,7 +83,7 @@
         "date_added": "2026-11-18",
         "due_date": "2026-11-21",
         "description": "Synology DSM contains an improper encoding or escaping of output vulnerability in the system plugin daemon in Synology BeeStation OS (BSM) that could allow a remote attacker to execute arbitrary code ",
-        "ransomware_use": "Unknown"
+        "ransomware_use": "Known"
       },
       {
         "cve_id": "CVE-2026-40217",
@@ -238,30 +238,37 @@
     ]
   },
   "nvd": {
-    "total": 153,
-    "critical_count": 2,
-    "high_count": 45,
+    "total": 369,
+    "critical_count": 4,
+    "high_count": 23,
     "cves": [
       {
-        "cve_id": "CVE-2026-131754",
+        "cve_id": "CVE-2026-115873",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Deserialization of Untrusted Data vulnerability in Pierre Lannoy APCu Manager apcu-manager allows Object Injection.This issue affects APCu Manager: from n/a through 4.6.1.",
-        "published": "2026-11-22T15:17:12.247"
+        "base_score": 9.9,
+        "description": "A remote attacker must authenticate with Read Only (GroupRead) access to at least one Worker Group and reach the Leader API. A crafted expression can exploit the nested compiler to bypass expression r",
+        "published": "2026-11-23T09:17:04.820"
       },
       {
-        "cve_id": "CVE-2026-131782",
+        "cve_id": "CVE-2026-120382",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "Deserialization of Untrusted Data vulnerability in mra13 / Team Tips and Tricks HQ Simple Shopping Cart wordpress-simple-paypal-shopping-cart allows Object Injection.This issue affects Simple Shopping",
-        "published": "2026-11-22T15:17:12.543"
+        "description": "An improper neutralization of argument delimiters in a command vulnerability in the OAuth API in Synology DiskStation Manager (DSM) before 7.1.1-42962-10, 7.2.1-69057-14, 7.2.2-72806-11, 7.3.2-86009-6",
+        "published": "2026-11-23T08:17:14.183"
       },
       {
-        "cve_id": "CVE-2026-131707",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Deserialization of Untrusted Data vulnerability in Metagauss ProfileGrid profilegrid-user-profiles-groups-and-communities allows Object Injection.This issue affects ProfileGrid: from n/a through 6.0.0",
-        "published": "2026-11-22T10:16:39.993"
+        "cve_id": "CVE-2026-115899",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "An attacker must control pagination data returned by an upstream API or service queried by an existing REST Collector. The Collector must use affected response-based pagination and process the crafted",
+        "published": "2026-11-23T09:17:05.010"
+      },
+      {
+        "cve_id": "CVE-2026-115901",
+        "severity": "CRITICAL",
+        "base_score": 9.0,
+        "description": "Exploitation requires an identity admitted to a configured trusted IdP application, control of claims selected as the OIDC user identifier, acceptance by configured SSO filters, and a victim with an a",
+        "published": "2026-11-23T09:17:05.293"
       },
       {
         "cve_id": "CVE-2026-134804",
@@ -271,32 +278,11 @@
         "published": "2026-11-22T22:17:34.037"
       },
       {
-        "cve_id": "CVE-2026-129024",
+        "cve_id": "CVE-2026-115900",
         "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Everest Forms Everest Forms everest-forms allows Path Traversal.This issue affects Everest Forms: from n",
-        "published": "2026-11-22T16:16:39.513"
-      },
-      {
-        "cve_id": "CVE-2026-131750",
-        "severity": "HIGH",
-        "base_score": 8.6,
-        "description": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in Everest Forms Everest Forms everest-forms allows Path Traversal.This issue affects Everest Forms: from n",
-        "published": "2026-11-22T16:16:40.857"
-      },
-      {
-        "cve_id": "CVE-2026-131705",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Metagauss ProfileGrid profilegrid-user-profiles-groups-and-communities allows SQL Injection.This i",
-        "published": "2026-11-22T10:16:39.683"
-      },
-      {
-        "cve_id": "CVE-2026-131701",
-        "severity": "HIGH",
-        "base_score": 8.5,
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in JoomUnited WP Media folder wp-media-folder allows Blind SQL Injection.This issue affects WP Media ",
-        "published": "2026-11-22T11:16:45.960"
+        "base_score": 8.8,
+        "description": "An attacker must possess a valid Worker distribution credential, reach the Leader distribution listener, and send crafted authenticated Worker heartbeats. Where mTLS client authentication is enforced,",
+        "published": "2026-11-23T09:17:05.157"
       },
       {
         "cve_id": "CVE-2026-134803",
@@ -320,11 +306,25 @@
         "published": "2026-11-22T22:17:35.807"
       },
       {
+        "cve_id": "CVE-2026-134836",
+        "severity": "HIGH",
+        "base_score": 8.1,
+        "description": "Dashy 4.0.0 before 4.9.12 contains a credential disclosure vulnerability in isLocalRequest that attaches user credentials to lookalike hosts due to prefix-only origin checks. Attackers can lure logged",
+        "published": "2026-11-22T22:17:39.237"
+      },
+      {
         "cve_id": "CVE-2026-134793",
         "severity": "HIGH",
         "base_score": 7.8,
         "description": "Electerm before 5.9.0 on Windows contains an OS command injection vulnerability that allows attackers to execute PowerShell code via crafted file or folder names containing Unicode quote characters. A",
         "published": "2026-11-22T22:17:32.177"
+      },
+      {
+        "cve_id": "CVE-2026-134861",
+        "severity": "HIGH",
+        "base_score": 7.8,
+        "description": "Assimp through 6.0.6 contains an out-of-bounds write vulnerability in glTFAsset.inl that allows attackers to corrupt memory via oversized glTF 1.0 accessor elements. Attackers can supply a crafted glT",
+        "published": "2026-11-22T22:17:40.990"
       },
       {
         "cve_id": "CVE-2026-134765",
@@ -334,32 +334,11 @@
         "published": "2026-11-22T22:17:31.983"
       },
       {
-        "cve_id": "CVE-2026-131706",
+        "cve_id": "CVE-2026-134827",
         "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability in Metagauss ProfileGrid profilegrid-user-profiles-groups-and-communities allows Blind SQL Injection.",
-        "published": "2026-11-22T10:16:39.840"
-      },
-      {
-        "cve_id": "CVE-2026-131720",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Insertion of Sensitive Information Into Sent Data vulnerability in Liquid Web / StellarWP BookIt bookit allows Retrieve Embedded Sensitive Data.This issue affects BookIt: from n/a through 2.6.0.8.",
-        "published": "2026-11-22T10:16:40.293"
-      },
-      {
-        "cve_id": "CVE-2026-129085",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Missing Authorization vulnerability in Aguila Technologies WP Customer Area customer-area allows Exploiting Incorrectly Configured Access Control Security Levels.This issue affects WP Customer Area: f",
-        "published": "2026-11-22T15:17:12.093"
-      },
-      {
-        "cve_id": "CVE-2026-131786",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Insertion of Sensitive Information Into Sent Data vulnerability in myCred myCred mycred allows Retrieve Embedded Sensitive Data.This issue affects myCred: from n/a through 4.0.3.",
-        "published": "2026-11-22T16:16:43.683"
+        "base_score": 7.7,
+        "description": "Lightdash before 3.212.0 contains an insufficiently protected credentials vulnerability in getGitlabInstallationRepoReadAccess that sends the organization GitLab app token to unverified hosts. Project",
+        "published": "2026-11-22T22:17:37.707"
       },
       {
         "cve_id": "CVE-2026-134808",
@@ -381,6 +360,27 @@
         "base_score": 7.5,
         "description": "Faye websocket-driver 0.5.0 before 0.8.0, permessage-deflate before 0.2.0, and websocket-extensions before 0.2.0 contain a decompression bomb vulnerability because messages are fully inflated before m",
         "published": "2026-11-22T22:17:35.497"
+      },
+      {
+        "cve_id": "CVE-2026-134821",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Gunicorn 25.2.0 before 27.0.0 contains a memory exhaustion vulnerability in the pure-Python ASGI HTTP/1 parser that buffers protocol lines without size limits. Unauthenticated remote attackers can sen",
+        "published": "2026-11-22T22:17:36.770"
+      },
+      {
+        "cve_id": "CVE-2026-134830",
+        "severity": "HIGH",
+        "base_score": 7.5,
+        "description": "Casdoor before 4.27.1 contains an uncontrolled resource consumption vulnerability in decodeSamlMessage that allows unauthenticated attackers to exhaust memory by sending unbounded DEFLATE-compressed S",
+        "published": "2026-11-22T22:17:38.227"
+      },
+      {
+        "cve_id": "CVE-2026-134838",
+        "severity": "HIGH",
+        "base_score": 7.4,
+        "description": "Weblate before 2026.11 contains an account takeover vulnerability in the reset_password view that allows unauthenticated attackers to reset victim passwords by abusing case-insensitive Unicode e-mail ",
+        "published": "2026-11-22T22:17:39.607"
       }
     ]
   },
