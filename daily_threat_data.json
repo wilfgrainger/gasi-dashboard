@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-11-23T19:39:14.714561+00:00",
+  "generated_at": "2026-11-24T04:30:54.151480+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 34,
+        "value": 36,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 4,
-        "score": 2.0,
+        "value": 6,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -32,9 +32,29 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1790,
-    "recent_30d_count": 34,
+    "total_catalog_count": 1792,
+    "recent_30d_count": 36,
     "recent": [
+      {
+        "cve_id": "CVE-2026-133968",
+        "vendor": "Project MONAI",
+        "product": "MONAI Label",
+        "name": "Project MONAI MONAI Label Path Traversal Vulnerability",
+        "date_added": "2026-11-23",
+        "due_date": "2026-11-26",
+        "description": "Project MONAI MONAI Label contains a path traversal vulnerability that allows an unauthenticated remote attacker to write arbitrary files outside the intended datastore directory, potentially resultin",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-134624",
+        "vendor": "N-able",
+        "product": "MailAssure",
+        "name": "N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability",
+        "date_added": "2026-11-23",
+        "due_date": "2026-11-26",
+        "description": "N-able MailAssure (SpamExperts) contains a server-side request forgery vulnerability in the LDAP synchronization connection check that allows an authenticated API user to connect to arbitrary internal",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-129448",
         "vendor": "Apache",
@@ -214,34 +234,21 @@
         "due_date": "2026-11-12",
         "description": "GPUStack contains an improper authentication vulnerability which could allow unauthenticated administrative access, including user and model changes, persistent administrator API-key creation, disclos",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-123158",
-        "vendor": "OpenBSD",
-        "product": "OpenSSH",
-        "name": "OpenBSD OpenSSH Unexpected Status Code or Return Value Vulnerability",
-        "date_added": "2026-11-09",
-        "due_date": "2026-11-12",
-        "description": "OpenBSD OpenSSH on Linux contains an unexpected status code or return value vulnerability that could allow for authentication bypass.",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-116779",
-        "vendor": "SignalWire",
-        "product": "FreeSwitch",
-        "name": "SignalWire FreeSwitch Code Injection Vulnerability",
-        "date_added": "2026-11-09",
-        "due_date": "2026-11-12",
-        "description": "SignalWire FreeSwitch contains a code injection vulnerability that permits configuration and credential disclosure, arbitrary call control, and command execution.",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 369,
-    "critical_count": 4,
-    "high_count": 23,
+    "total": 467,
+    "critical_count": 6,
+    "high_count": 26,
     "cves": [
+      {
+        "cve_id": "CVE-2026-134882",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "A weakness has been identified in TOTOLINK A7100RU 7.4cu.2313_B20191024. This issue affects the function exportOvpn of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. This manipulation of ",
+        "published": "2026-11-23T09:17:05.653"
+      },
       {
         "cve_id": "CVE-2026-115873",
         "severity": "CRITICAL",
@@ -264,18 +271,18 @@
         "published": "2026-11-23T09:17:05.010"
       },
       {
+        "cve_id": "CVE-2026-121613",
+        "severity": "CRITICAL",
+        "base_score": 9.8,
+        "description": "Missing authentication and authorization on an exposed interface allows an unauthenticated remote attacker to send arbitrary commands to the affected component, which can force a device reboot or let ",
+        "published": "2026-11-23T10:17:15.397"
+      },
+      {
         "cve_id": "CVE-2026-115901",
         "severity": "CRITICAL",
         "base_score": 9.0,
         "description": "Exploitation requires an identity admitted to a configured trusted IdP application, control of claims selected as the OIDC user identifier, acceptance by configured SSO filters, and a victim with an a",
         "published": "2026-11-23T09:17:05.293"
-      },
-      {
-        "cve_id": "CVE-2026-134804",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Portainer 2.39.0 before 2.39.9, 2.40.0 before 2.45.4, and 3.0.0 before 3.1.0 contains an authorization bypass vulnerability that allows Standard users to access other users' containers via the WebSock",
-        "published": "2026-11-22T22:17:34.037"
       },
       {
         "cve_id": "CVE-2026-115900",
@@ -285,102 +292,95 @@
         "published": "2026-11-23T09:17:05.157"
       },
       {
-        "cve_id": "CVE-2026-134803",
+        "cve_id": "CVE-2026-80466",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "A vulnerability in the Web-Based Management (WBM) routing configuration allows a low-privileged remote attacker to inject shell commands into routing parameters. Due to insufficient input validation, ",
+        "published": "2026-11-23T10:17:16.393"
+      },
+      {
+        "cve_id": "CVE-2026-123886",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Spring Data Elasticsearch replaces positional placeholders in string-based @Query methods with the method arguments before it evaluates SpEL expressions in the resulting query string.\n\n\n\nAs a result, ",
+        "published": "2026-11-23T11:16:58.460"
+      },
+      {
+        "cve_id": "CVE-2026-86312",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Under some configurations a request to the ping endpoint could carry out more than a simple health check. In deployments that rely on Solr's rule-based authorization, a client granted only the low-pri",
+        "published": "2026-11-23T13:17:06.350"
+      },
+      {
+        "cve_id": "CVE-2026-93585",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "An improper authorization vulnerability in the EasyVistas\u00a0EV Reach Client Agent allows authenticated users with low privileges to execute arbitrary commands on a remote Windows endpoint with LocalSyst",
+        "published": "2026-11-23T14:17:27.077"
+      },
+      {
+        "cve_id": "CVE-2026-135164",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Formance Ledger 2.2.0-beta.3 before 2.4.18 contains an SQL injection vulnerability that allows remote API callers to execute SQL by supplying unvalidated account expand values. Attackers can inject co",
+        "published": "2026-11-23T15:17:45.153"
+      },
+      {
+        "cve_id": "CVE-2026-93584",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "An SQL injection vulnerability in OTRS versions 2024.3.1 through 2026.8.1 allows unauthenticated remote attackers to inject arbitrary SQL expressions through the Survey\u00a0endpoint.\n\nThe vulnerability ex",
+        "published": "2026-11-23T09:17:08.873"
+      },
+      {
+        "cve_id": "CVE-2026-135161",
+        "severity": "HIGH",
+        "base_score": 8.6,
+        "description": "Interstellar before 6.3.0 contains a server-side request forgery vulnerability that allows unauthenticated attackers to reach internal services by enabling allow_loopback_ips and allow_private_ips in ",
+        "published": "2026-11-23T15:17:44.680"
+      },
+      {
+        "cve_id": "CVE-2026-119068",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "An rsync server can send diagnostic data to the client which is mirrored to stdout and collected by Routinator line by line. If an excessive amount of data is sent without a line break, Routinator wil",
+        "published": "2026-11-23T14:17:22.543"
+      },
+      {
+        "cve_id": "CVE-2026-119069",
+        "severity": "HIGH",
+        "base_score": 8.4,
+        "description": "When rejecting a publication point midway during processing amd falling back to the stored version of the publication point, Routinator will keep the data it had processed for the publication point so",
+        "published": "2026-11-23T14:17:22.687"
+      },
+      {
+        "cve_id": "CVE-2026-88850",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "DBHub before 1.7.0 contains a read-only mode bypass vulnerability that allows MCP clients restricted to readonly execute_sql to run write and DDL statements via backslash-escaped quotes. Attackers can",
-        "published": "2026-11-22T22:17:33.857"
+        "description": "The Web-Based Management (WBM) authorization model does not properly enforce permissions for all PROFIBUS configuration operations. A low-privileged remote attacker can abuse an exposed configuration ",
+        "published": "2026-11-23T10:17:16.633"
       },
       {
-        "cve_id": "CVE-2026-134814",
+        "cve_id": "CVE-2026-135157",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "binary-parser before 2.3.1 contains a code injection vulnerability that allows attackers controlling parser definitions to inject JavaScript through string-typed options passed unvalidated by Context.",
-        "published": "2026-11-22T22:17:35.660"
+        "description": "Future AGI before 1.51.0 contains an authentication bypass vulnerability in ACSView.post that allows authenticated members of any organization to take over accounts in other organizations by asserting",
+        "published": "2026-11-23T15:17:43.687"
       },
       {
-        "cve_id": "CVE-2026-134815",
+        "cve_id": "CVE-2026-135171",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "simple-git before 4.1.0 contains an argument injection vulnerability that allows attackers to bypass the allowUnsafePack guard by supplying the --exec option to non-push git operations. Attackers who ",
-        "published": "2026-11-22T22:17:35.807"
+        "description": "Wing FTP Server before 8.2.8 contains a predictable session identifier vulnerability that allows unauthenticated attackers to hijack administrator sessions by deriving identifiers from process, time, ",
+        "published": "2026-11-23T15:17:46.237"
       },
       {
-        "cve_id": "CVE-2026-134836",
+        "cve_id": "CVE-2026-135174",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Dashy 4.0.0 before 4.9.12 contains a credential disclosure vulnerability in isLocalRequest that attaches user credentials to lookalike hosts due to prefix-only origin checks. Attackers can lure logged",
-        "published": "2026-11-22T22:17:39.237"
-      },
-      {
-        "cve_id": "CVE-2026-134793",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Electerm before 5.9.0 on Windows contains an OS command injection vulnerability that allows attackers to execute PowerShell code via crafted file or folder names containing Unicode quote characters. A",
-        "published": "2026-11-22T22:17:32.177"
-      },
-      {
-        "cve_id": "CVE-2026-134861",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Assimp through 6.0.6 contains an out-of-bounds write vulnerability in glTFAsset.inl that allows attackers to corrupt memory via oversized glTF 1.0 accessor elements. Attackers can supply a crafted glT",
-        "published": "2026-11-22T22:17:40.990"
-      },
-      {
-        "cve_id": "CVE-2026-134765",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Kirby 5.0.0 before 5.6.4 contains a race condition in Kirby\\Api\\Upload::processChunk() that allows authenticated users with upload permission to bypass SVG sanitization. Attackers can race concurrent ",
-        "published": "2026-11-22T22:17:31.983"
-      },
-      {
-        "cve_id": "CVE-2026-134827",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "Lightdash before 3.212.0 contains an insufficiently protected credentials vulnerability in getGitlabInstallationRepoReadAccess that sends the organization GitLab app token to unverified hosts. Project",
-        "published": "2026-11-22T22:17:37.707"
-      },
-      {
-        "cve_id": "CVE-2026-134808",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Gogs before 0.14.4 on Windows contains a path equivalence vulnerability in isRepositoryGitPath that allows authenticated users with write access to bypass .git directory protection using NTFS aliases.",
-        "published": "2026-11-22T22:17:34.697"
-      },
-      {
-        "cve_id": "CVE-2026-134812",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "msgpackr before 2.1.4 contains an inefficient algorithmic complexity vulnerability that allows remote attackers to cause denial of service by repeatedly re-decoding buffered incomplete values. Attacke",
-        "published": "2026-11-22T22:17:35.343"
-      },
-      {
-        "cve_id": "CVE-2026-134813",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Faye websocket-driver 0.5.0 before 0.8.0, permessage-deflate before 0.2.0, and websocket-extensions before 0.2.0 contain a decompression bomb vulnerability because messages are fully inflated before m",
-        "published": "2026-11-22T22:17:35.497"
-      },
-      {
-        "cve_id": "CVE-2026-134821",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Gunicorn 25.2.0 before 27.0.0 contains a memory exhaustion vulnerability in the pure-Python ASGI HTTP/1 parser that buffers protocol lines without size limits. Unauthenticated remote attackers can sen",
-        "published": "2026-11-22T22:17:36.770"
-      },
-      {
-        "cve_id": "CVE-2026-134830",
-        "severity": "HIGH",
-        "base_score": 7.5,
-        "description": "Casdoor before 4.27.1 contains an uncontrolled resource consumption vulnerability in decodeSamlMessage that allows unauthenticated attackers to exhaust memory by sending unbounded DEFLATE-compressed S",
-        "published": "2026-11-22T22:17:38.227"
-      },
-      {
-        "cve_id": "CVE-2026-134838",
-        "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "Weblate before 2026.11 contains an account takeover vulnerability in the reset_password view that allows unauthenticated attackers to reset victim passwords by abusing case-insensitive Unicode e-mail ",
-        "published": "2026-11-22T22:17:39.607"
+        "description": "Softaculous Virtualizor before 3.2.9 contains an SQL injection vulnerability in enduser/auth_callback.php that allows unauthenticated attackers to bypass authentication via OAuth-returned email addres",
+        "published": "2026-11-23T15:17:46.683"
       }
     ]
   },
