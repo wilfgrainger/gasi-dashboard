@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-11-24T04:30:54.151480+00:00",
+  "generated_at": "2026-11-24T19:12:41.954700+00:00",
   "threat_score": {
-    "score": 6.5,
+    "score": 7.0,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 36,
+        "value": 39,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 6,
-        "score": 2.5,
+        "value": 12,
+        "score": 3.0,
         "max": 3
       },
       {
@@ -32,9 +32,39 @@
     ]
   },
   "cisa_kev": {
-    "total_catalog_count": 1792,
-    "recent_30d_count": 36,
+    "total_catalog_count": 1795,
+    "recent_30d_count": 39,
     "recent": [
+      {
+        "cve_id": "CVE-2026-132224",
+        "vendor": "Optimizely",
+        "product": "Web Experimentation",
+        "name": "Optimizely Web Experimentation External Control of Critical State Data Vulnerability",
+        "date_added": "2026-11-24",
+        "due_date": "2026-11-27",
+        "description": "Optimizely Web Experimentation contains an external control of critical state data vulnerability in its account signup flow that could allow an attacker to impersonate existing customer users and modi",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-131914",
+        "vendor": "Idunno",
+        "product": "AntiCsrf",
+        "name": "Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability",
+        "date_added": "2026-11-24",
+        "due_date": "2026-11-27",
+        "description": "Idunno AntiCsrf contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via object injection. The impacted product(s) could ",
+        "ransomware_use": "Unknown"
+      },
+      {
+        "cve_id": "CVE-2026-132165",
+        "vendor": "Drupal",
+        "product": "Core",
+        "name": "Drupal Core Remote Code Execution Vulnerability",
+        "date_added": "2026-11-24",
+        "due_date": "2026-11-27",
+        "description": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific ",
+        "ransomware_use": "Unknown"
+      },
       {
         "cve_id": "CVE-2026-133968",
         "vendor": "Project MONAI",
@@ -204,183 +234,153 @@
         "due_date": "2026-11-13",
         "description": "Barracuda Networks Email Security Gateway (ESG), Load Balancer, Application Delivery Controller (ADC), Message Archiver (BMA), WAF Control Center (WCC), Web Application Firewall (WAF), and Web Securit",
         "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-116606",
-        "vendor": "Barracuda Networks",
-        "product": "Barracuda Email Security Gateway (ESG)",
-        "name": "Barracuda Networks Email Security Gateway (ESG) Authentication Bypass Using an Alternate Path or Channel Vulnerability",
-        "date_added": "2026-11-10",
-        "due_date": "2026-11-13",
-        "description": "Barracuda Networks Email Security Gateway (ESG) contains an authentication bypass using an alternate path or channel that could allow an unauthenticated remote attacker to invoke a configuration-impor",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-125350",
-        "vendor": "Google",
-        "product": "Chromium",
-        "name": "Google Chromium Use-After-Free Vulnerability",
-        "date_added": "2026-11-10",
-        "due_date": "2026-11-24",
-        "description": "Google Chromium contains a use-after-free vulnerability in the XML component that could allow a remote attacker to execute arbitrary code inside the sandbox via a specially crafted webpage. This vulne",
-        "ransomware_use": "Unknown"
-      },
-      {
-        "cve_id": "CVE-2026-102895",
-        "vendor": "GPUStack",
-        "product": "GPUStack",
-        "name": "GPUStack Improper Authentication Vulnerability",
-        "date_added": "2026-11-09",
-        "due_date": "2026-11-12",
-        "description": "GPUStack contains an improper authentication vulnerability which could allow unauthenticated administrative access, including user and model changes, persistent administrator API-key creation, disclos",
-        "ransomware_use": "Unknown"
       }
     ]
   },
   "nvd": {
-    "total": 467,
-    "critical_count": 6,
+    "total": 714,
+    "critical_count": 12,
     "high_count": 26,
     "cves": [
       {
-        "cve_id": "CVE-2026-134882",
+        "cve_id": "CVE-2026-62841",
         "severity": "CRITICAL",
         "base_score": 10.0,
-        "description": "A weakness has been identified in TOTOLINK A7100RU 7.4cu.2313_B20191024. This issue affects the function exportOvpn of the file /cgi-bin/cstecgi.cgi of the component CGI Handler. This manipulation of ",
-        "published": "2026-11-23T09:17:05.653"
+        "description": "Improper authentication in Azure Event Grid allows an unauthorized attacker to elevate privileges over a network.",
+        "published": "2026-11-23T22:20:39.293"
       },
       {
-        "cve_id": "CVE-2026-115873",
+        "cve_id": "CVE-2026-130169",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. In versions 0.6.26 through 0.7.4, AutoGPT Platform ships a publicly known, ha",
+        "published": "2026-11-23T23:17:04.220"
+      },
+      {
+        "cve_id": "CVE-2026-50691",
         "severity": "CRITICAL",
         "base_score": 9.9,
-        "description": "A remote attacker must authenticate with Read Only (GroupRead) access to at least one Worker Group and reach the Leader API. A crafted expression can exploit the nested compiler to bypass expression r",
-        "published": "2026-11-23T09:17:04.820"
+        "description": "Improper authorization in M365 Copilot allows an authorized attacker to elevate privileges over a network.",
+        "published": "2026-11-23T22:20:16.553"
       },
       {
-        "cve_id": "CVE-2026-120382",
+        "cve_id": "CVE-2026-70193",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An improper neutralization of argument delimiters in a command vulnerability in the OAuth API in Synology DiskStation Manager (DSM) before 7.1.1-42962-10, 7.2.1-69057-14, 7.2.2-72806-11, 7.3.2-86009-6",
-        "published": "2026-11-23T08:17:14.183"
+        "base_score": 9.9,
+        "description": "Improper limitation of a pathname to a restricted directory ('path traversal') in Microsoft Office SharePoint allows an authorized attacker to execute code over a network.",
+        "published": "2026-11-23T22:22:36.660"
       },
       {
-        "cve_id": "CVE-2026-115899",
+        "cve_id": "CVE-2026-109480",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "An attacker must control pagination data returned by an upstream API or service queried by an existing REST Collector. The Collector must use affected response-based pagination and process the crafted",
-        "published": "2026-11-23T09:17:05.010"
+        "base_score": 9.6,
+        "description": "Server-side request forgery in Profile Data Roaming Service (PDRS) allows an authorized attacker to elevate privileges over a network.",
+        "published": "2026-11-23T22:18:29.133"
       },
       {
-        "cve_id": "CVE-2026-121613",
+        "cve_id": "CVE-2026-118285",
         "severity": "CRITICAL",
-        "base_score": 9.8,
-        "description": "Missing authentication and authorization on an exposed interface allows an unauthenticated remote attacker to send arbitrary commands to the affected component, which can force a device reboot or let ",
-        "published": "2026-11-23T10:17:15.397"
+        "base_score": 9.6,
+        "description": "Server-side request forgery in Azure Machine Learning allows an authorized attacker to elevate privileges over a network.",
+        "published": "2026-11-23T22:19:30.710"
       },
       {
-        "cve_id": "CVE-2026-115901",
+        "cve_id": "CVE-2026-70305",
+        "severity": "CRITICAL",
+        "base_score": 9.6,
+        "description": "Improper neutralization of input during web page generation ('cross-site scripting') in Azure Portal allows an unauthorized attacker to perform spoofing over a network.",
+        "published": "2026-11-23T22:22:50.890"
+      },
+      {
+        "cve_id": "CVE-2026-109490",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "Improper neutralization of input during web page generation ('cross-site scripting') in Authentication Methods Portal Extension allows an unauthorized attacker to elevate privileges over a network.",
+        "published": "2026-11-23T22:18:30.130"
+      },
+      {
+        "cve_id": "CVE-2026-113824",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Authorization bypass through user-controlled key in Microsoft Clarity allows an unauthorized attacker to elevate privileges over a network.",
+        "published": "2026-11-23T22:19:04.970"
+      },
+      {
+        "cve_id": "CVE-2026-118286",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Improper access control in Azure Site Recovery allows an unauthorized attacker to elevate privileges over a network.",
+        "published": "2026-11-23T22:19:30.903"
+      },
+      {
+        "cve_id": "CVE-2026-69899",
+        "severity": "CRITICAL",
+        "base_score": 9.1,
+        "description": "Authentication bypass by spoofing in Azure DevTest Labs allows an unauthorized attacker to perform spoofing over a network.",
+        "published": "2026-11-23T22:22:11.980"
+      },
+      {
+        "cve_id": "CVE-2026-93700",
         "severity": "CRITICAL",
         "base_score": 9.0,
-        "description": "Exploitation requires an identity admitted to a configured trusted IdP application, control of claims selected as the OIDC user identifier, acceptance by configured SSO filters, and a victim with an a",
-        "published": "2026-11-23T09:17:05.293"
+        "description": "An authenticated WHMCS client could potentially leverage this flaw to read sensitive configuration files on the WHMCS host, including database credentials, and to execute code on the server.",
+        "published": "2026-11-23T22:24:54.840"
       },
       {
-        "cve_id": "CVE-2026-115900",
+        "cve_id": "CVE-2026-95793",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "An attacker must possess a valid Worker distribution credential, reach the Leader distribution listener, and send crafted authenticated Worker heartbeats. Where mTLS client authentication is enforced,",
-        "published": "2026-11-23T09:17:05.157"
+        "description": "An arbitrary remote code execution vulnerability exists in HPE Morpheus Manager.",
+        "published": "2026-11-23T20:18:05.050"
       },
       {
-        "cve_id": "CVE-2026-80466",
+        "cve_id": "CVE-2026-101862",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "A vulnerability in the Web-Based Management (WBM) routing configuration allows a low-privileged remote attacker to inject shell commands into routing parameters. Due to insufficient input validation, ",
-        "published": "2026-11-23T10:17:16.393"
+        "description": "EUSurvey through 1.6, prior to commit 0669a36, contains a path traversal vulnerability in the survey import function that allows authenticated attackers with the Form Manager role to execute arbitrary",
+        "published": "2026-11-23T23:17:01.047"
       },
       {
-        "cve_id": "CVE-2026-123886",
+        "cve_id": "CVE-2026-101863",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "Spring Data Elasticsearch replaces positional placeholders in string-based @Query methods with the method arguments before it evaluates SpEL expressions in the resulting query string.\n\n\n\nAs a result, ",
-        "published": "2026-11-23T11:16:58.460"
+        "description": "EUSurvey 1.5.5 through 1.6, prior to commit d5295d5, contains a missing authorization vulnerability in the POST /forms/bulkchange endpoint that allows any authenticated user to take over or delete oth",
+        "published": "2026-11-23T23:17:01.233"
       },
       {
-        "cve_id": "CVE-2026-86312",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Under some configurations a request to the ping endpoint could carry out more than a simple health check. In deployments that rely on Solr's rule-based authorization, a client granted only the low-pri",
-        "published": "2026-11-23T13:17:06.350"
-      },
-      {
-        "cve_id": "CVE-2026-93585",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "An improper authorization vulnerability in the EasyVistas\u00a0EV Reach Client Agent allows authenticated users with low privileges to execute arbitrary commands on a remote Windows endpoint with LocalSyst",
-        "published": "2026-11-23T14:17:27.077"
-      },
-      {
-        "cve_id": "CVE-2026-135164",
-        "severity": "HIGH",
-        "base_score": 8.8,
-        "description": "Formance Ledger 2.2.0-beta.3 before 2.4.18 contains an SQL injection vulnerability that allows remote API callers to execute SQL by supplying unvalidated account expand values. Attackers can inject co",
-        "published": "2026-11-23T15:17:45.153"
-      },
-      {
-        "cve_id": "CVE-2026-93584",
+        "cve_id": "CVE-2026-69437",
         "severity": "HIGH",
         "base_score": 8.6,
-        "description": "An SQL injection vulnerability in OTRS versions 2024.3.1 through 2026.8.1 allows unauthenticated remote attackers to inject arbitrary SQL expressions through the Survey\u00a0endpoint.\n\nThe vulnerability ex",
-        "published": "2026-11-23T09:17:08.873"
+        "description": "Missing authorization in Azure AI Foundry allows an unauthorized attacker to disclose information over a network.",
+        "published": "2026-11-23T22:21:30.760"
       },
       {
-        "cve_id": "CVE-2026-135161",
+        "cve_id": "CVE-2026-81962",
         "severity": "HIGH",
         "base_score": 8.6,
-        "description": "Interstellar before 6.3.0 contains a server-side request forgery vulnerability that allows unauthenticated attackers to reach internal services by enabling allow_loopback_ips and allow_private_ips in ",
-        "published": "2026-11-23T15:17:44.680"
+        "description": "Incorrect authorization in Azure Machine Learning allows an unauthorized attacker to disclose information over a network.",
+        "published": "2026-11-23T22:23:40.260"
       },
       {
-        "cve_id": "CVE-2026-119068",
+        "cve_id": "CVE-2026-65817",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "An rsync server can send diagnostic data to the client which is mirrored to stdout and collected by Routinator line by line. If an excessive amount of data is sent without a line break, Routinator wil",
-        "published": "2026-11-23T14:17:22.543"
+        "base_score": 8.3,
+        "description": "Improper neutralization of special elements used in an os command ('os command injection') in Azure Managed Instance for Apache Cassandra allows an unauthorized attacker to execute code over an adjace",
+        "published": "2026-11-23T22:20:52.977"
       },
       {
-        "cve_id": "CVE-2026-119069",
+        "cve_id": "CVE-2026-101866",
         "severity": "HIGH",
-        "base_score": 8.4,
-        "description": "When rejecting a publication point midway during processing amd falling back to the stored version of the publication point, Routinator will keep the data it had processed for the publication point so",
-        "published": "2026-11-23T14:17:22.687"
+        "base_score": 8.2,
+        "description": "EUSurvey through 1.6, prior to commit 118facd, contains an authorization bypass vulnerability in the public POST /runner/draft/runner endpoint that allows unauthenticated attackers to overwrite anothe",
+        "published": "2026-11-23T23:17:01.517"
       },
       {
-        "cve_id": "CVE-2026-88850",
+        "cve_id": "CVE-2026-132257",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "The Web-Based Management (WBM) authorization model does not properly enforce permissions for all PROFIBUS configuration operations. A low-privileged remote attacker can abuse an exposed configuration ",
-        "published": "2026-11-23T10:17:16.633"
-      },
-      {
-        "cve_id": "CVE-2026-135157",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Future AGI before 1.51.0 contains an authentication bypass vulnerability in ACSView.post that allows authenticated members of any organization to take over accounts in other organizations by asserting",
-        "published": "2026-11-23T15:17:43.687"
-      },
-      {
-        "cve_id": "CVE-2026-135171",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Wing FTP Server before 8.2.8 contains a predictable session identifier vulnerability that allows unauthenticated attackers to hijack administrator sessions by deriving identifiers from process, time, ",
-        "published": "2026-11-23T15:17:46.237"
-      },
-      {
-        "cve_id": "CVE-2026-135174",
-        "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Softaculous Virtualizor before 3.2.9 contains an SQL injection vulnerability in enduser/auth_callback.php that allows unauthenticated attackers to bypass authentication via OAuth-returned email addres",
-        "published": "2026-11-23T15:17:46.683"
+        "base_score": 8.2,
+        "description": "AutoGPT is a workflow automation platform for creating, deploying, and managing continuous artificial intelligence agents. From versions 0.6.23 and above, before 0.8.0, AutoGPT Platform ships a hardco",
+        "published": "2026-11-23T23:17:04.380"
       }
     ]
   },
