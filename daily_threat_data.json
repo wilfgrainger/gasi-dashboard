@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-11-26T17:58:28.742568+00:00",
+  "generated_at": "2026-11-27T02:32:39.311263+00:00",
   "threat_score": {
-    "score": 6.0,
+    "score": 6.5,
     "level": "HIGH",
     "level_color": "high",
     "factors": [
       {
         "name": "Active Exploits (CISA KEV)",
-        "value": 45,
+        "value": 43,
         "score": 3.0,
         "max": 3
       },
       {
         "name": "Critical CVEs (24h)",
-        "value": 3,
-        "score": 2.0,
+        "value": 5,
+        "score": 2.5,
         "max": 3
       },
       {
@@ -33,7 +33,7 @@
   },
   "cisa_kev": {
     "total_catalog_count": 1805,
-    "recent_30d_count": 45,
+    "recent_30d_count": 43,
     "recent": [
       {
         "cve_id": "CVE-2026-103406",
@@ -238,149 +238,149 @@
     ]
   },
   "nvd": {
-    "total": 659,
-    "critical_count": 3,
+    "total": 502,
+    "critical_count": 5,
     "high_count": 23,
     "cves": [
       {
-        "cve_id": "CVE-2026-133467",
+        "cve_id": "CVE-2026-137043",
+        "severity": "CRITICAL",
+        "base_score": 10.0,
+        "description": "A security vulnerability has been detected in TOTOLINK N350RT 9.3.5u.6468_B20250827/9.3.5u.6466_B20250825. The affected element is the function setLanguageCfg of the file /cgi-bin/cstecgi.cgi. Such ma",
+        "published": "2026-11-26T03:16:39.110"
+      },
+      {
+        "cve_id": "CVE-2026-123903",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "CodeSafe is an open-source Python library for code encryption, decryption, and safe evaluation using Python's AST module. From versions 0.0.1 through 0.0.4, the safe_eval() function can be bypassed wi",
-        "published": "2026-11-25T20:18:34.460"
+        "description": "VMware vCenter contains an authentication bypass vulnerability in the VMware Directory Service. Broadcom has evaluated the severity of this issue to be in the\u00a0Critical severity range with a maximum CV",
+        "published": "2026-11-26T11:17:00.283"
       },
       {
-        "cve_id": "CVE-2026-137090",
+        "cve_id": "CVE-2026-123910",
         "severity": "CRITICAL",
         "base_score": 9.8,
-        "description": "build-git-clone before 1.0.4 contains an OS command injection vulnerability in the clone() function that allows attackers to execute commands by supplying crafted repository URLs. Attackers can embed ",
-        "published": "2026-11-25T20:18:46.220"
+        "description": "ESX contains a heap out-of-bounds write vulnerability in the I/O filter service. Broadcom has evaluated the severity of this issue to be in the Critical severity range with a maximum CVSSv3 base score",
+        "published": "2026-11-26T11:17:01.373"
       },
       {
-        "cve_id": "CVE-2026-133464",
+        "cve_id": "CVE-2026-123911",
         "severity": "CRITICAL",
-        "base_score": 9.1,
-        "description": "SeaweedFS is a distributed storage system for files and blobs. Prior to version 4.46, FileStore.ValidatePassword in the SFTP server does not reject zero-length secrets before comparing them, causing a",
-        "published": "2026-11-25T19:17:32.660"
+        "base_score": 9.8,
+        "description": "ESX contains a use-after-free vulnerability in the I/O filter service. Broadcom has evaluated the severity of this issue to be in the Critical severity range with a maximum CVSSv3 base score of 9.8.\nA",
+        "published": "2026-11-26T11:17:01.500"
       },
       {
-        "cve_id": "CVE-2026-137056",
+        "cve_id": "CVE-2026-123912",
+        "severity": "CRITICAL",
+        "base_score": 9.3,
+        "description": "VMware ESXi, Workstation, and Fusion contain an out-of-bounds write vulnerability in the XHCI USB controller. Broadcom has evaluated the severity of this issue to be in the\u00a0Critical severity range wit",
+        "published": "2026-11-26T11:17:01.620"
+      },
+      {
+        "cve_id": "CVE-2026-123685",
         "severity": "HIGH",
         "base_score": 8.8,
-        "description": "DeepSeek-Reasonix before 2.53.0 contains a command execution vulnerability that allows attackers to run commands without user approval because the shellsafe classifier treats git blame and git whatcha",
-        "published": "2026-11-25T20:18:39.143"
+        "description": "A remote code execution vulnerability exists in the patch apply functionality of StellarProtect Linux and Stellar Agent (Linux) due to insufficient validation of uploaded patch packages before extract",
+        "published": "2026-11-26T03:16:35.517"
       },
       {
-        "cve_id": "CVE-2026-135227",
+        "cve_id": "CVE-2026-133525",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Deserialization of Untrusted Data vulnerability in ThemeFusion Fusion Builder fusion-builder allows Object Injection.This issue affects Fusion Builder: from n/a before 3.17.1.",
+        "published": "2026-11-26T08:17:07.253"
+      },
+      {
+        "cve_id": "CVE-2026-137389",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "MailGates/MailAudit developed by Openfind has a Command Injection vulnerability.Authenticated remote attackers can inject commands and execute them on the server.",
+        "published": "2026-11-26T09:17:09.937"
+      },
+      {
+        "cve_id": "CVE-2026-137390",
+        "severity": "HIGH",
+        "base_score": 8.8,
+        "description": "Mail2000 developed by Openfind has an OS Command Injection vulnerability.Authenticated remote attackers can inject arbitrary OS commands and execute them on the server.",
+        "published": "2026-11-26T09:17:10.090"
+      },
+      {
+        "cve_id": "CVE-2026-123913",
         "severity": "HIGH",
         "base_score": 8.2,
-        "description": "An improper restriction of dynamically determined object attributes in the object-document mapping library's association handling allows structured input supplied in place of a simple identifier value",
-        "published": "2026-11-25T18:18:51.020"
+        "description": "VMware ESX contains a stack-based buffer-overflow vulnerability in the VMkernel. Broadcom has evaluated the severity of this issue to be in the Important severity range with a maximum CVSSv3 base scor",
+        "published": "2026-11-26T11:17:01.743"
       },
       {
-        "cve_id": "CVE-2026-135898",
-        "severity": "HIGH",
-        "base_score": 8.2,
-        "description": "An out-of-bounds read in the native C BSON decoding extension of the MongoDB Python Driver may allow an unauthenticated party who can supply crafted BSON data to the decoder to cause the application p",
-        "published": "2026-11-25T18:18:51.163"
-      },
-      {
-        "cve_id": "CVE-2026-135141",
+        "cve_id": "CVE-2026-123689",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "A logic flaw in the query-building layer of the Mongoid object-document mapper causes a model-level default restriction that is meant to return no records to be silently discarded when it is combined ",
-        "published": "2026-11-25T18:18:50.443"
+        "description": "A SQL injection vulnerability exists in the Search Agents API of StellarOne due to improper sanitization of user-supplied input. An authenticated attacker with Viewer privileges can send crafted reque",
+        "published": "2026-11-26T04:17:09.570"
       },
       {
-        "cve_id": "CVE-2026-77230",
+        "cve_id": "CVE-2026-130805",
         "severity": "HIGH",
         "base_score": 8.1,
-        "description": "Camunda 8.8.0 before 8.8.47, 8.9.0 before 8.9.29, 8.10.0 before 8.10.10, and 8.11.0-alpha1 contain an insecure deserialization vulnerability in the persistent web session feature, which stores session",
-        "published": "2026-11-25T19:17:39.077"
+        "description": "The Groundhogg plugin for WordPress is vulnerable to Cross-Site Request Forgery in versions up to, and including, 4.11 This is due to the Admin_Page::page() callback dispatching methods named directly",
+        "published": "2026-11-26T10:17:07.597"
       },
       {
-        "cve_id": "CVE-2026-137086",
+        "cve_id": "CVE-2026-135772",
         "severity": "HIGH",
-        "base_score": 8.1,
-        "description": "Teracom TCW122B-CM firmware before 4.07 contains a predictable session cookie vulnerability that allows unauthenticated remote attackers to hijack administrator sessions by guessing tick-counter-deriv",
-        "published": "2026-11-25T20:18:45.607"
+        "base_score": 7.6,
+        "description": "RTL8762C MCU developed by Realtek Semiconductor Corporation has an Improper Protection Against Voltage and Clock Glitches vulnerability. Unauthenticated attackers with physical access can use speciali",
+        "published": "2026-11-26T08:17:07.410"
       },
       {
-        "cve_id": "CVE-2026-134070",
-        "severity": "HIGH",
-        "base_score": 8.0,
-        "description": "Improper input validation in the AWS-managed AWS Systems Manager Automation runbook AWSConfigRemediation-EnableSystemsManagerSessionManagerAuditLogsToS3 might allow an authenticated remote user who is",
-        "published": "2026-11-25T20:18:36.187"
-      },
-      {
-        "cve_id": "CVE-2026-137060",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "paramz through 0.10.0 contains an insecure deserialization vulnerability that allows attackers to execute code by supplying crafted model files to paramz.load(), which calls pickle.load() without rest",
-        "published": "2026-11-25T20:18:40.283"
-      },
-      {
-        "cve_id": "CVE-2026-137093",
-        "severity": "HIGH",
-        "base_score": 7.8,
-        "description": "Assimp before 6.0.6 contains an out-of-bounds write vulnerability in MD5Importer::LoadMD5MeshFile() that allows attackers to corrupt heap memory via unvalidated weight ranges and bone indices. Attacke",
-        "published": "2026-11-25T20:18:46.683"
-      },
-      {
-        "cve_id": "CVE-2026-102957",
-        "severity": "HIGH",
-        "base_score": 7.7,
-        "description": "z_impl_pwm_capture_cycles() in drivers/pwm/pwm_capture.c stores its capture context (struct z_pwm_capture_cb_data, including a struct k_sem) on its own stack and registers a pointer to it as the drive",
-        "published": "2026-11-25T21:17:15.793"
-      },
-      {
-        "cve_id": "CVE-2026-135226",
+        "cve_id": "CVE-2026-124211",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "A type-confusion weakness in the Extended JSON parsing component of BSON for Ruby allows a party who can supply parser input to influence how a serialized document is framed. Content placed in one val",
-        "published": "2026-11-25T18:18:50.880"
+        "description": "The Ninja Tables \u2013 Responsive Table Builder for Data, Pricing & Product Tables plugin for WordPress is vulnerable to SQL Injection via the 'dateFormat' column metadata parameter in versions up to, and",
+        "published": "2026-11-26T10:17:06.910"
       },
       {
-        "cve_id": "CVE-2026-137057",
+        "cve_id": "CVE-2026-135151",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "llama.cpp from b7118 before b12604 contains an integer underflow vulnerability in llama_grammar_parser::parse_sequence() that allows unauthenticated remote attackers to cause denial of service by supp",
-        "published": "2026-11-25T20:18:39.307"
+        "description": "The Download Manager plugin for WordPress is vulnerable to Local File Inclusion in all versions up to, and including, 3.3.78 via the 'file[page_template]' parameter parameter. This makes it possible f",
+        "published": "2026-11-26T10:17:08.653"
       },
       {
-        "cve_id": "CVE-2026-137058",
+        "cve_id": "CVE-2026-135266",
         "severity": "HIGH",
         "base_score": 7.5,
-        "description": "Cron-parser through 5.10.0 contains an unbounded memory allocation vulnerability in CronExpressionParser.parse() that allows unauthenticated attackers to exhaust memory by supplying oversized cron fie",
-        "published": "2026-11-25T20:18:39.500"
+        "description": "The Music Player for WooCommerce plugin for WordPress is vulnerable to Directory Traversal in all versions up to, and including, 1.9.4 via the '_downloadable_files' parameter parameter. This makes it ",
+        "published": "2026-11-26T10:17:08.823"
       },
       {
-        "cve_id": "CVE-2026-135146",
+        "cve_id": "CVE-2026-123904",
         "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "An improper certificate revocation check in the MongoDB Python Driver's optional TLS revocation-checking support allows an unauthenticated party that operates the network endpoint a client connects to",
-        "published": "2026-11-25T18:18:50.597"
+        "base_score": 7.5,
+        "description": "VMware vCenter contains an arbitrary file write vulnerability while processing certain archives. Broadcom has evaluated the severity of this issue to be in the Important severity range with a maximum ",
+        "published": "2026-11-26T11:17:00.617"
       },
       {
-        "cve_id": "CVE-2026-137077",
+        "cve_id": "CVE-2026-123905",
         "severity": "HIGH",
-        "base_score": 7.4,
-        "description": "FreeRDP before 3.33.0 contains a heap out-of-bounds write in h264_context_reset() in libfreerdp/codec/h264.c, which stores new dimensions before the YUV planes are reallocated. Remote peers can trigge",
-        "published": "2026-11-25T20:18:44.107"
+        "base_score": 7.5,
+        "description": "VMware vCenter contains multiple denial-of-service vulnerabilities in the VMware Directory Service. Broadcom has evaluated the severity of these issues to be in the Important severity range with a max",
+        "published": "2026-11-26T11:17:00.747"
       },
       {
-        "cve_id": "CVE-2026-136722",
+        "cve_id": "CVE-2026-123906",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A vulnerability was identified in Zhengzhou Weiwei Information Technology mayicms up to 5.8E. This vulnerability affects unknown code of the file member.php. Such manipulation of the argument code lea",
-        "published": "2026-11-25T18:18:52.230"
+        "base_score": 7.5,
+        "description": "VMware vCenter contains multiple denial-of-service vulnerabilities in the VMware Directory Service. Broadcom has evaluated the severity of these issues to be in the Important severity range with a max",
+        "published": "2026-11-26T11:17:00.873"
       },
       {
-        "cve_id": "CVE-2026-136733",
+        "cve_id": "CVE-2026-123907",
         "severity": "HIGH",
-        "base_score": 7.3,
-        "description": "A weakness has been identified in EduardoPires EquinoxProject up to 1.10. This vulnerability affects the function BuildToken of the file src/Equinox.Services.Api/appsettings.Development.json of the co",
-        "published": "2026-11-25T20:18:38.927"
+        "base_score": 7.5,
+        "description": "VMware vCenter contains multiple denial-of-service vulnerabilities in the VMware Directory Service. Broadcom has evaluated the severity of these issues to be in the Important severity range with a max",
+        "published": "2026-11-26T11:17:01.000"
       }
     ]
   },
